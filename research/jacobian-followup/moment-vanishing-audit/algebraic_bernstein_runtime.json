@@ -1,0 +1,11 @@
+{
+  "Singular_version": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00",
+  "Singular_binary_sha256": "90ab699b7a28486944a167e797d7c8dd38f8f949960b93ee7a6d08ff1c7c46f4",
+  "fixed_random_seed": 1,
+  "primary_library_sha256": {
+    "dmodapp.lib": "d5536daf90640a8f742fd9028e0e2dd99abf4e26e36b3f110e02cef583a41793",
+    "bfun.lib": "8f61da0ae91b1a331086c89d4a3434810fe57f5f20d885d2a1ea32f30dd747c9",
+    "nctools.lib": "8441e00938207864f5209a56b0d9b1c8a1e99e54508101ad9d8cb6564e67e93e"
+  },
+  "note": "Primary graph/linear-syzygy library files pinned;this is not a complete transitive installation snapshot. Returned graph identities are separately checked without Singular."
+}

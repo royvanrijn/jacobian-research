@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/marked-end-lattice/weidmann-root-adjoined.pdf",
+      "url": "https://www.math.uni-kiel.de/algebra/de/weidmann/research/material-research/rootadjoined-pdf",
+      "title": "Weidmann, Adjoining a root does not decrease the rank (2005)",
+      "bytes": 157731,
+      "sha256": "d09adb02baad1b15cd678d830e747adbfa9b7c148e34e9a1db311f5d55acc6be",
+      "used_statement": "Retain the already inspected complete PDF1 Corollary1 annular root-amalgam proof; no rank theorem imported.",
+      "prior_complete_page_audit_reused": true,
+      "original_manifest": "sources/marked-end-lattice/manifest.json",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+      "url": "https://researchers.ms.unimelb.edu.au/~norbury@unimelb/papers/orevkov.pdf",
+      "title": "Neumann--Norbury, The Orevkov invariant of an affine plane curve",
+      "bytes": 232604,
+      "sha256": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+      "used_statement": "Retain complete PDF6-7 and12-13 audits of infinity cabling and canonical recurrence. In the actual-binomial trefoil class eta=k-w-1.",
+      "prior_complete_page_audit_reused": true,
+      "original_manifest": "sources/peripheral-zero-control/manifest.json",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "sources/quartic-colouring/livingston-melvin-1985.pdf",
+      "url": "https://pmelvin.blogs.brynmawr.edu/files/2021/09/1985LivingstonMelvin.pdf",
+      "title": "Livingston-Melvin, Abelian invariants of satellite knots",
+      "bytes": 319220,
+      "sha256": "d045314f7c3af26696f382cfda15bda9dfdfa095ab9f5414c4ff05dbdbf6422d",
+      "used_statement": "Retain complete PDF6-7 Theorem2/Seifert-corollary audit of the satellite Alexander formula, specializing exactly at -1.",
+      "prior_complete_page_audit_reused": true,
+      "original_manifest": "sources/quartic-colouring/manifest.json",
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_claims": [
+    "PF2RULED54",
+    "PF2RULED55",
+    "PF2RULED59",
+    "PF2RULED60",
+    "PF2RULED61"
+  ],
+  "new_written_proofs": [
+    "cover-component orbits give complete graph of lifted torus pieces",
+    "Mayer Vietoris gives a free graph-homology quotient at any degree and cabling length",
+    "smooth affine source end forces entire orbit graph tree",
+    "transitive peripheral abelian action is regular; mixed cycle lengths forbid two transitive pieces",
+    "quartic normally-generated companion image excludes double transposition",
+    "exact exponent12 reduces every eta0 binomial-trefoil winding",
+    "CRT with determinant9 gives odd3mod6 or even8mod18"
+  ],
+  "external_graph_manifold_or_symplectic_classification_imported": false,
+  "all_passing_knots_realized": false,
+  "full_quartic_exclusion": false,
+  "research_goal_completed": false
+}

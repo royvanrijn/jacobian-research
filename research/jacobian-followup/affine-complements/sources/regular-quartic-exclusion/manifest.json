@@ -1,0 +1,104 @@
+{
+  "as_of": "2026-11-14",
+  "primary_sources": [
+    {
+      "path_relative_to_affine_complements": "sources/borderline-regular-end/waldhausen-1968.pdf",
+      "url": "https://www.maths.gla.ac.uk/~mpowell/Waldhausen-Irreducible3ManifoldsSufficiently-1968.pdf",
+      "title": "Friedhelm Waldhausen, On irreducible 3-manifolds which are sufficiently large, Ann.Math.87(1968),56-88",
+      "used_statement": "Theorem6.1 printed77/PDF23, complete statement and boundary-relative conclusion visually rechecked: irreducible and boundary-irreducible source and target, sufficiently large target, nonzero source pi1, injective map of pairs implies a covering except for a product over a closed orientable surface. Source has one boundary, excluding that product, and the pi1 isomorphism gives degree one. Peripheral map construction is proved using asphericity; no unrestricted group recognition is imported.",
+      "sha256": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+      "bytes": 2860358,
+      "imported_not_independently_reproved": true,
+      "relevant_statement_visually_checked": true,
+      "new_visual_audit_PDF_pages": [
+        23
+      ]
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Allen Hatcher, Notes on Basic 3-Manifold Topology",
+      "used_statement": "Prime decomposition Theorem1.5 and prime/irreducible Proposition1.4; Seifert irreducibility Proposition1.12; essential surfaces Proposition1.13 on printed19/PDF20; essential-annulus and boundary-fiber uniqueness Lemmas1.14-1.15 on printed20/PDF21, with all four product/Klein exceptions explicitly excluded by negative orbifold Euler characteristic; JSJ uniqueness Theorem1.9 and asphericity Corollary3.9. Complete printed19-20 pages rendered and visually inspected. Free-product indecomposability and annulus slope arguments are separately written, not inferred from H1.",
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "bytes": 384715,
+      "imported_not_independently_reproved": true,
+      "relevant_statement_visually_checked": true,
+      "new_visual_audit_PDF_pages": [
+        20,
+        21
+      ]
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-cabling/ito-cable-slopes.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/690DE16138573D0051FF223F9269C77C/S0008439520000338a.pdf/note_on_chirally_cosmetic_surgery_on_cable_knots.pdf",
+      "title": "Tetsuya Ito, A Note on Chirally Cosmetic Surgery on Cable Knots, Canad.Math.Bull.64(2021),163-173",
+      "used_statement": "Section2 printed165/PDF3, already visually audited: cable fiber slopes, distance-one companion filling n/p^2, and distance>1 genuine terminal Seifert JSJ piece. Winding p in the new proof is winding q in the source. Used for marked source surgery collapse and radial model decomposition; no cosmetic-surgery conclusion is imported.",
+      "sha256": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+      "bytes": 404165,
+      "imported_not_independently_reproved": true,
+      "relevant_statement_visually_checked": false
+    },
+    {
+      "path_relative_to_affine_complements": "sources/torus-infinity/scott-geometries.pdf",
+      "url": "https://www.maths.gla.ac.uk/~mpowell/Scott%20-%20Geometries_of_three-manifolds.pdf",
+      "title": "Peter Scott, The geometries of 3-manifolds, Bull. London Math. Soc.15(1983),401-487",
+      "used_statement": "Seifert presentations, negative base-orbifold geometry and Theorem3.6 unbranched fiber/base covering behavior. The ordinary simple/index-three branched fiber extension is the separately proved local model retained in PF2RULED34, not claimed as a consequence of the unbranched theorem alone.",
+      "sha256": "a95c7eaf766544642fbe1ba3dd41734a5832794ec75c17781cd83a87b1121603",
+      "bytes": 9369447,
+      "imported_not_independently_reproved": true,
+      "relevant_statement_visually_checked": false
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-cabling/perelman-finite-extinction.pdf",
+      "url": "https://arxiv.org/pdf/math/0307245",
+      "title": "Grisha Perelman, Finite extinction time for the solutions to the Ricci flow on certain three-manifolds (2003)",
+      "used_statement": "Section1.4 only for Poincare: a simply connected prime closed summand is S3. No general spherical, graph-manifold or H1-only recognition is assumed in the new radial argument.",
+      "sha256": "460606386f35a6b719970471a94452ecea7769e8c2caeff8820b8a483aebe0c6",
+      "bytes": 110519,
+      "imported_not_independently_reproved": true,
+      "relevant_statement_visually_checked": false
+    },
+    {
+      "path_relative_to_affine_complements": "sources/universal-regular-end/lokteva-iterated-surgery-2023.pdf",
+      "url": "https://eprints.gla.ac.uk/302069/2/302069.pdf",
+      "title": "Lisa Lokteva, Surgeries on Iterated Torus Knots Bounding Rational Homology 4-Balls, Proc. Edinburgh Math. Soc.66(2023),557-578, author version",
+      "used_statement": "Proposition5, printed8/PDF9, already visually audited: positive algebraic iterated cabling and alpha_i>p_i*p_(i-1)*alpha_(i-1). It applies to the local source reference branch. For target exteriors homeomorphic to it, only absolute slope growth is transferred by the new JSJ/fiber-homology argument. No positivity assumption is imposed on arbitrary target infinity cabling.",
+      "sha256": "67da15dccaf283d4e6423f748f7777c083f95efa67c1e38926525fbc702c5d0b",
+      "bytes": 2314876,
+      "imported_not_independently_reproved": true,
+      "visually_inspected_PDF_pages": [
+        9,
+        11,
+        12
+      ]
+    }
+  ],
+  "new_visual_audits": [
+    {
+      "path": "sources/borderline-regular-end/waldhausen-1968.pdf",
+      "printed_pages": [
+        77
+      ],
+      "PDF_pages": [
+        23
+      ],
+      "complete_theorem_statement": true,
+      "boundary_relative_conclusion_checked": true
+    },
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "printed_pages": [
+        19,
+        20
+      ],
+      "PDF_pages": [
+        20,
+        21
+      ],
+      "complete_essential_annulus_and_boundary_fiber_statements": true,
+      "all_product_Klein_exceptions_recorded": true
+    }
+  ],
+  "retained_scope": "No new primary downloads required; exact retained source files are reused read-only. New all-depth lemmas and all-case quartic proof are written in the canonical note.",
+  "novelty_priority_claimed": false
+}

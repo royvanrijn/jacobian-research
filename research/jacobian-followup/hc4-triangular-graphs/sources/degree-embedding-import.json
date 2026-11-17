@@ -1,0 +1,22 @@
+{
+  "import": "Degree divisibility for an actual closed polynomial embedding of A1 in the plane",
+  "authors": ["Evelia R. Garcia Barroso", "Arkadiusz Ploski"],
+  "title": "An approach to plane algebroid branches",
+  "source_url": "https://arxiv.org/html/1208.0913v1#S6",
+  "paper_url": "https://arxiv.org/abs/1208.0913v1",
+  "location": "Theorem 6.9, Abhyankar-Moh Embedding Line Theorem, second formulation",
+  "retained_file": "plane-branches-1208.0913v1.pdf",
+  "sha256": "f9af327748bbc4f3f4d31934510ec0fcbf3c547dc39f79d61278962cab69cc15",
+  "reviewed": "2026-11-14",
+  "used_implication": "For a closed polynomial embedding t maps to (P(t),Q(t)) over a characteristic-zero field, if both coordinate polynomials are nonconstant, one coordinate degree divides the other.",
+  "original_attribution": "S. S. Abhyankar and T. T. Moh, Embeddings of the line in the plane, J. Reine Angew. Math. 276 (1975), 148-166",
+  "same_retained_source_previously_used_for": "The local normalization statements in critical-normalization-import.json; Theorem 6.9 is an additional explicit input here.",
+  "original_1975_article_downloaded": false,
+  "not_imported": [
+    "Degree divisibility for a merely rational curve or a nonembedded parameterization",
+    "An affine-line conclusion from a normalization alone",
+    "A generic-rational-fibre theorem inferred from one special fibre",
+    "A plane Keller surjectivity or singleton-zero properness theorem"
+  ],
+  "assurance": "The exact degree statement and its proof were inspected in the primary v1 research manuscript. The already retained v1 PDF bytes are reused and pinned. Exact controls do not reprove the imported theorem."
+}

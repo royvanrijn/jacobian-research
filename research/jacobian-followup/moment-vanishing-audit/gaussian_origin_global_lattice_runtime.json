@@ -1,0 +1,6 @@
+{
+  "Python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "Sympy_version": "1.14.0",
+  "execution": "Exact rational and dual-number polynomial IBP contraction, PBW left/right point tests and finite original marker/jet identities. No general image-kernel computation, integration backend or capped-job restart.",
+  "imported_project_code": []
+}

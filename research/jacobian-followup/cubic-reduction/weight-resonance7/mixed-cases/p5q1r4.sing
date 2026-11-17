@@ -1,0 +1,30 @@
+ring rr=0,(c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10),dp;
+short=0;
+ideal I=(-14)*c2*c6*c10,(-21)*c1*c6*c10+(7)*c2*c5*c10+(-28)*c2*c6*c9,(-11)*c0*c6*c10+(-10)*c2*c6*c8,(-35)*c1*c6*c9+(28)*c2*c4*c10+(-7)*c2*c5*c9,(6)*c0*c5*c10+(-24)*c0*c6*c9+(-18)*c1*c6*c8+(6)*c2*c3*c10+(6)*c2*c5*c8+(-24)*c2*c6*c7,(-7)*c0*c6*c8+(-6)*c2*c6+(-8)*c6*c10,(21)*c1*c4*c10+(-14)*c1*c5*c9+(14)*c2*c4*c9,(23)*c0*c4*c10+(-7)*c0*c5*c9+(3)*c1*c3*c10+(-2)*c1*c5*c8+(-32)*c1*c6*c7+(-3)*c2*c3*c9+(22)*c2*c4*c8+(-8)*c2*c5*c7,(5)*c0*c3*c10+(5)*c0*c5*c8+(-20)*c0*c6*c7+(-15)*c1*c6+(5)*c2*c3*c8+(5)*c2*c5+(5)*c2*c10+(5)*c5*c10+(-20)*c6*c9,(-3)*c0*c6+(-4)*c6*c8,(7)*c1*c4*c9,(10)*c0*c4*c9+(-6)*c1*c3*c9+(14)*c1*c4*c8+(-16)*c1*c5*c7+(8)*c2*c4*c7,(-3)*c0*c3*c9+(17)*c0*c4*c8+(-8)*c0*c5*c7+(1)*c1*c3*c8+(-4)*c1*c5+(6)*c1*c10+(-4)*c2*c3*c7+(16)*c2*c4+(1)*c2*c9+(18)*c4*c10+(-7)*c5*c9,(4)*c0*c3*c8+(4)*c0*c5+(4)*c0*c10+(4)*c2*c3+(4)*c2*c8+(4)*c3*c10+(4)*c5*c8+(-16)*c6*c7,(4)*c0*c4*c7+(-8)*c1*c3*c7+(7)*c1*c4+(2)*c1*c9+(6)*c4*c9,(-4)*c0*c3*c7+(11)*c0*c4+(1)*c0*c9+(-1)*c1*c3+(4)*c1*c8+(-3)*c3*c9+(12)*c4*c8+(-8)*c5*c7,(3)*c0*c3+(3)*c0*c8+(3)*c2+(3)*c3*c8+(3)*c5+(3)*c10,(2)*c1+(-4)*c3*c7+(6)*c4+(1)*c9,(2)*c0+(2)*c3+(2)*c8;
+ideal G=std(I);
+int i;int k;poly target;matrix M;poly pp;
+k=1;target=c0;
+while(k<=32 && reduce(target,G)!=0){k=2*k;target=c0^k;}
+if(k>32){print("MISS:0");}else{
+print("TARGET:0:"+string(k));
+M=lift(I,ideal(target));
+if((matrix(I)*M)[1,1]!=target){print("ERROR");quit;}
+for(i=1;i<=nrows(M);i++){print("GEN:"+string(i));pp=M[i,1];while(pp!=0){print("COEF:"+string(leadcoef(pp)));print("EXP:"+string(leadexp(pp)));pp=pp-lead(pp);}print("END");}
+}
+k=1;target=c1;
+while(k<=32 && reduce(target,G)!=0){k=2*k;target=c1^k;}
+if(k>32){print("MISS:1");}else{
+print("TARGET:1:"+string(k));
+M=lift(I,ideal(target));
+if((matrix(I)*M)[1,1]!=target){print("ERROR");quit;}
+for(i=1;i<=nrows(M);i++){print("GEN:"+string(i));pp=M[i,1];while(pp!=0){print("COEF:"+string(leadcoef(pp)));print("EXP:"+string(leadexp(pp)));pp=pp-lead(pp);}print("END");}
+}
+k=1;target=c2;
+while(k<=32 && reduce(target,G)!=0){k=2*k;target=c2^k;}
+if(k>32){print("MISS:2");}else{
+print("TARGET:2:"+string(k));
+M=lift(I,ideal(target));
+if((matrix(I)*M)[1,1]!=target){print("ERROR");quit;}
+for(i=1;i<=nrows(M);i++){print("GEN:"+string(i));pp=M[i,1];while(pp!=0){print("COEF:"+string(leadcoef(pp)));print("EXP:"+string(leadexp(pp)));pp=pp-lead(pp);}print("END");}
+}
+quit;

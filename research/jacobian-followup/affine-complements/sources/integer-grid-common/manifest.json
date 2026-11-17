@@ -1,0 +1,107 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/integer-grid-common/rasmussen-1511.04413v3.html",
+      "url": "https://arxiv.org/html/1511.04413v3",
+      "title": "Sarah Dean Rasmussen, L-space intervals for Graph Manifolds and Cables, arXiv1511.04413v3, 21 October2016",
+      "bytes": 1515339,
+      "sha256": "e3f18268d0c502237ba3033dcae378943d1e0498d9c1e99838678e9d9e2b65ed",
+      "complete_HTML_sections_read": [
+        "Definition3.7",
+        "Section4.2",
+        "Section4.3 Theorem4.6 and Proposition4.7",
+        "Corollary6.1"
+      ],
+      "used_statement": "NEW Theorem4.6 graph-root recursion with Section4.2 integer Seifert coefficients and actual oriented daughter endpoint conventions. Applied contrapositively only under assumed interior membership, so nonempty/Floer-simple hypothesis holds then. Finite denominator witnesses suffice; no claim to classify emptiness. Definition3.7 circular endpoints including equal finite endpoints; retained Corollary6.1 matched missing interiors, no Floer-simplicity hypothesis. No use of Section5.4 rewritten zero tests.",
+      "new_deep_graph_interval_import": true,
+      "independently_reproved": false,
+      "complete_primary_HTML_read": true,
+      "fresh_PDF_audit": false
+    },
+    {
+      "path": "sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+      "url": "https://arxiv.org/pdf/1510.07128v1",
+      "title": "Nemethi, Links of rational singularities, L-spaces and LO fundamental groups, arXiv1510.07128v1",
+      "bytes": 116484,
+      "sha256": "ec6e0f8d0d96fc9f3dfb194c23fffac6f41eb2057ae4e60765e0194f3998f594",
+      "complete_PDF_pages_visually_inspected": [
+        2,
+        3
+      ],
+      "printed_pages": [
+        2,
+        3
+      ],
+      "used_statement": "Theorem1.5 closed connected orientable graph-manifold non-L-space/LO equivalence, used after actual irreducibility checks. PF76 endpoint hypotheses and PF74 source no-LO-image theorem retained. No general L-space conjecture assumed.",
+      "imported_not_independently_reproved": true,
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Retained complete PF65/72/73/74/77-81/85 audits, reused at PF90; no fresh PDF visual audit asserted",
+      "prior_complete_audit_reused_at_PF93": true,
+      "fresh_PDF_audit_at_PF93": false
+    },
+    {
+      "path": "sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html",
+      "url": "https://arxiv.org/html/1205.7053",
+      "version_markers": [
+        "1205.7053v2"
+      ],
+      "bytes": 506784,
+      "sha256": "fcba6587adc621738f382cea63a287e92ddaa1de1dec54957de21c8a3f859b30",
+      "title": "Ni--Wu, Heegaard Floer correction terms and rational genus bounds, arXiv1205.7053v2",
+      "sections": [
+        "1 Theorem1.2",
+        "2 Theorem2.2",
+        "5.1 Proposition5.1 with complete proof and proof of Theorem1.2"
+      ],
+      "used_statement": "For an integrally null-homologous Floer-simple knot in an L-space, Proposition5.1 gives zero correction-term difference and genus0. Together with the interior-core criterion this obstructs an incompressible exterior meridian from the L-space interior.",
+      "imported_not_independently_reproved": true,
+      "new_deep_Floer_import": true,
+      "complete_relevant_primary_HTML_read": true,
+      "prior_complete_audit_reused_at_PF93": true,
+      "fresh_PDF_audit_at_PF93": false
+    },
+    {
+      "path": "sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html",
+      "url": "https://arxiv.org/html/1508.05900",
+      "version_markers": [
+        "1508.05900v2"
+      ],
+      "bytes": 2186177,
+      "sha256": "c03db0c810e3b6e07cf158e499307628a9e1a8200c4fbae4d5b0edcbabe40e66",
+      "title": "Rasmussen--Rasmussen, Floer simple manifolds and L-space intervals, arXiv1508.05900v2",
+      "sections": [
+        "3.1 Lemmas3.2-3.5, complete proofs and following mirror/interior argument",
+        "3.1 proof of Proposition1.3"
+      ],
+      "used_statement": "A filling slope in the L-space interior has Floer-simple filling core: another L-space filling gives coherent chains; a non-simple coherent chain forces that slope to an endpoint. No gluing conjecture from this version is imported; the graph gluing theorem is the retained published1511.04413 Corollary6.1.",
+      "imported_not_independently_reproved": true,
+      "new_deep_Floer_import": true,
+      "complete_relevant_primary_HTML_read": true,
+      "prior_complete_audit_reused_at_PF93": true,
+      "fresh_PDF_audit_at_PF93": false
+    },
+    {
+      "path": "sources/genus-final-s3/hom-0912.4046v1.html",
+      "url": "https://arxiv.org/html/0912.4046",
+      "bytes": 108307,
+      "sha256": "4e0895d2ad5d8f71ed1f2dd1ee82b9e7ae690ceb556a9bfda26ec9ab162cce74",
+      "version_markers": [
+        "0912.4046v1"
+      ],
+      "title": "Hom, A Note on Cabling and L-space surgeries, arXiv0912.4046v1",
+      "complete_relevant_primary_HTML_read": true,
+      "sections": [
+        "Section1 full Theorem and conventions",
+        "Section2 complete rank formula and proof"
+      ],
+      "used_statement": "Positive L-space cabling iff companion positive L-space and k/w>=2g-1 (forward construction due to Hedden); Section2 displayed all-slope hat-rank formula for tau=g and s_K=0 gives exact [2g-1,infinity] filling interval, with included genus endpoint.",
+      "imported_not_independently_reproved": true,
+      "new_deep_Floer_import": true,
+      "prior_complete_audit_reused_at_PF93": true,
+      "fresh_PDF_audit_at_PF93": false
+    }
+  ],
+  "retained_topology_and_peripheral_inputs": "PF81/PF82/PF85-PF92 sealed primary manifests and written proofs; reused, not independently reproved",
+  "finite_controls_not_universal_proof": true
+}

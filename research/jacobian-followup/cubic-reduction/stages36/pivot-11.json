@@ -1,0 +1,16 @@
+{
+  "boundary": "Complete raw polynomial target space through degree3. Zero mixed projection proves no such raw cubic-pullback relation; eligible candidates are elementary first steps, not completed dimension reductions.",
+  "candidates": [],
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "matrix_columns": 363,
+  "matrix_rows": 5611,
+  "mixed_kernel_basis_vectors": 0,
+  "nullity": 10,
+  "obstructed_component": 3,
+  "pivot": 11,
+  "rank": 353,
+  "seconds": 1.694,
+  "source_sha256": "cec32feed4b4c250cb5704298b87368ea5e33974fa8ec1a79f218111ae6c663e",
+  "status": "complete",
+  "target_degree_bound": 3
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-16",
+  "previous_goal_turn": "progress",
+  "current_goal_turn": "progress",
+  "previous_evidence": "Every source hash in all seven earlier pass receipts matches, including the1154-check mixed-prime packet. Repeated residual branches and the remaining two-moment exponent-six gap are unchanged.",
+  "canonical_proof": "jacobian-followup/factorial-image-rigidity/HYPERGEOMETRIC_MONOMIAL_WINDOWS.tex",
+  "progress": [
+    "uniform all-starting-index D+1 window for every constant-plus-monomial Gamma phase and all positive real shapes",
+    "every polynomial marker gives an exact R(t); zero R decides the whole zero sequence, otherwise window D+deg(R)+1",
+    "Dirichlet extension for all positive real shapes: the extra singularity is checked and its indicial exponent N+beta exceeds degree N",
+    "original Gaussian polynomial markers transfer by actual Reynolds averaging, including half-shapes and exact zero averages",
+    "ordinary window ideal contains an exhibited binary regular subideal; all-ring nilpotence exponent at most2n+D-1",
+    "actual expanded support proves full SFC for disjoint block-sum monomial products when C>=D+1, including every exponent with all block sizes>=2",
+    "a+b*(Y1+Y2)^6 receives a seven-moment window within its eight actual monomials at every start"
+  ],
+  "boundaries": [
+    "D+1 windows do not establish two-monomial SFC when D>1; a+b*Y^6 still requires two instead of seven",
+    "the equation controls root multiplicity up to D+deg(R), not simplicity",
+    "constant phases use marker mass separately; the one-coordinate Dirichlet point law is excluded",
+    "executable shapes are rational although the theorem allows all positive real shapes",
+    "ordinary regular-subideal length is an upper bound for the full window quotient; no sharpness asserted",
+    "no SFC for arbitrary powers of the whole phase or independent Gaussian linear adjunction is inferred",
+    "full FC>=3, unrestricted SFC and remaining literature/source audits stay open"
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "whole_goal_complete": false
+}

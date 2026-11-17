@@ -1,0 +1,1070 @@
+{
+  "status": "COMPLETE",
+  "input_sha256": {
+    "double_transposition_degree9_plan.json": "4ace2d88225ee69d542a52640ee8248e59f19e1ef47e34d30cfa3fbc68122cdd",
+    "double_transposition_plan.json": "0703e3dbfea4e7348811f448122f0cb344fab7b562e10b74e3599ccb60471e31",
+    "audit_double_transpositions9.py": "5a7736f563e3cf6872bebd2a7e9f1f8ba253b2ad1e2a634557f389d84b683da0",
+    "double_transpositions.py": "ba0446bdea9889ed90fa7fde737cbed4d71f35598314b4281fcb2b2771f8f88c",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "parabolic_panel_results.json": "2633b94cfaa829e620bc775a8f4b600205a9c8202428ced88fb4b4a918b48bad",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "search_lift_panel.py": "52e08aa7e034e1cf66e25892ec8fcc3844a0b166b44dff48e6b8a5e4c8799b8e",
+    "double_transposition_results.json": "2e68be9e4f4251424add15cf09f954f47bd64be3b36e498e9ca81cf7e118cee0"
+  },
+  "results": [
+    {
+      "name": "13a_129",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        8
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          11,
+          5,
+          6
+        ],
+        [
+          6,
+          9,
+          10
+        ],
+        [
+          10,
+          8,
+          7
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.006616
+    },
+    {
+      "name": "13a_135",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          11,
+          5,
+          6
+        ],
+        [
+          6,
+          9,
+          8
+        ],
+        [
+          10,
+          8,
+          7
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.006023
+    },
+    {
+      "name": "13a_136",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          11,
+          9,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          10,
+          8,
+          7
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.005838
+    },
+    {
+      "name": "13a_137",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          5,
+          11,
+          10
+        ],
+        [
+          11,
+          9,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          10,
+          8,
+          7
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.005471
+    },
+    {
+      "name": "13a_194",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          8,
+          12,
+          11
+        ],
+        [
+          11,
+          5,
+          6
+        ],
+        [
+          6,
+          8,
+          9
+        ],
+        [
+          7,
+          11,
+          10
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.005837
+    },
+    {
+      "name": "13a_196",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          7,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          3,
+          10,
+          9
+        ],
+        [
+          11,
+          5,
+          6
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.005971
+    },
+    {
+      "name": "13a_197",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          7,
+          12,
+          11
+        ],
+        [
+          11,
+          8,
+          9
+        ],
+        [
+          3,
+          9,
+          10
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.006626
+    },
+    {
+      "name": "13a_198",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          6,
+          12,
+          11
+        ],
+        [
+          7,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.006654
+    },
+    {
+      "name": "13a_233",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          6,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.006355
+    },
+    {
+      "name": "13a_234",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          6,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.006201
+    },
+    {
+      "name": "13a_239",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          10,
+          3,
+          4
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          7,
+          10,
+          11
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.005533
+    },
+    {
+      "name": "13a_242",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          7,
+          9,
+          10
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          10,
+          3,
+          4
+        ],
+        [
+          4,
+          7,
+          8
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.005714
+    },
+    {
+      "name": "13a_243",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          5,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.006356
+    },
+    {
+      "name": "13a_244",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          5,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.006167
+    },
+    {
+      "name": "13a_253",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          7,
+          3,
+          4
+        ],
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          8,
+          10,
+          11
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.005672
+    },
+    {
+      "name": "13a_265",
+      "status": "COMPLETE",
+      "seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          7,
+          3,
+          4
+        ],
+        [
+          4,
+          9,
+          10
+        ],
+        [
+          8,
+          10,
+          11
+        ]
+      ],
+      "bridge_upper_bound": 4,
+      "transitive_seed_orbits_tested": 6561,
+      "certificates": [],
+      "seconds": 0.005707
+    }
+  ],
+  "graph_control": [
+    [
+      1,
+      0,
+      3,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4,
+      6,
+      7,
+      8
+    ],
+    [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5,
+      7,
+      6,
+      8
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      5,
+      8,
+      7
+    ]
+  ],
+  "tuple_catalogue": {
+    "class_size": 378,
+    "centralizer_size": 960,
+    "prefix_counts": [
+      1,
+      10,
+      508,
+      86231
+    ],
+    "four_tuple_orbits": 86231,
+    "raw_normalized_tuples": 54010152,
+    "transitive_orbits": 6561,
+    "transitive_raw_normalized_tuples": 6298560,
+    "stabilizer_histogram": {
+      "1": 34342,
+      "2": 38666,
+      "4": 6351,
+      "6": 5049,
+      "8": 771,
+      "12": 391,
+      "16": 64,
+      "24": 528,
+      "32": 22,
+      "48": 26,
+      "64": 7,
+      "480": 13,
+      "960": 1
+    }
+  },
+  "catalogue_sha256": "9f4d65ceaa85c26672d546d05fc8d2541d5e28dc8b7ea3290dcc5e2bfb6212ea",
+  "sharp_names": [],
+  "seconds_total": 1.226895
+}

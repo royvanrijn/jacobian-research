@@ -1,0 +1,96 @@
+{
+  "status": "pass",
+  "claim": "KCUB30",
+  "checker_sha256": "4e5fa4e84ca93e19c6ffe285e4d5236ac9b5a04cf22b49e36c2d992ff24476a2",
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "witness_sha256": "79dff2cd278f4cc249bcfce11f7fa6df92411968ab88f8329c20b00792568c7d",
+  "producer_sha256": "c808072bcc19ed13f423a73ed65aaa31cf656d46ef8629cdc6a1c402d3c515a1",
+  "base_validation_sha256": "b9944075af344302ebe0a972e571f18f369a96440eaef4856da67bbee9d420be",
+  "dimension": 12,
+  "degree": 3,
+  "integral_coefficients_and_collision": true,
+  "full_symbolic_determinant_one": true,
+  "linear_part_unipotent_nonidentity": true,
+  "linear_occurrences": 17,
+  "nonlinear_occurrences": 31,
+  "total_occurrences": 48,
+  "nonlinear_source_columns": 30,
+  "full_source_columns": 42,
+  "exceptional_projective_columns": 3,
+  "block_column_sizes": [
+    5,
+    13,
+    13,
+    5,
+    2,
+    2,
+    2
+  ],
+  "block_total_lower_bounds": [
+    5,
+    15,
+    16,
+    6,
+    2,
+    2,
+    2
+  ],
+  "second_block_light_triple_minors": [
+    "8",
+    "8",
+    "-40",
+    "-8"
+  ],
+  "pareto_pairs_linear_nonlinear": [
+    [
+      12,
+      36
+    ],
+    [
+      13,
+      35
+    ],
+    [
+      14,
+      34
+    ],
+    [
+      15,
+      33
+    ],
+    [
+      16,
+      32
+    ],
+    [
+      17,
+      31
+    ]
+  ],
+  "universal_output_only_lower_bounds": {
+    "linear": 12,
+    "nonlinear": 31,
+    "total": 48
+  },
+  "identity_linear_part_bound_unchanged": 36,
+  "checked_identity_normalized_conjugate_nonlinear_total": 74,
+  "checked_identity_normalized_conjugate_counts": [
+    7,
+    12,
+    22,
+    6,
+    10,
+    1,
+    3,
+    6,
+    1,
+    1,
+    2,
+    3
+  ],
+  "source_frame_fixed": true,
+  "goal_complete": false,
+  "scope": "Finite exact premises for a written all-output-GL counting theorem. No arbitrary source-frame, identity-normalized improvement, smaller dimension, total-term improvement or global optimality claim.",
+  "proof_sha256": "2d5f426064336ebbe0dccdbe3464bda25996c404af637793892fdda2002c8736"
+}

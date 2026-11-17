@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "purpose": "Primary tame Smith fixed-locus and classical branching inputs, plus the retained source-deck and earlier linear/fixed-space proofs.",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/monodromy-theory/GENERAL_DECK_RIGIDITY.md",
+      "sha256": "d99a141ff87cb768763e691462d06be0aa2bffe7f31880f77450f9ec90df4015"
+    },
+    {
+      "path": "jacobian-followup/monodromy-theory/verify_regular_deck.py",
+      "sha256": "be0348de8326f5fa3a60e154c348ad79982668a7280a2422a92975f7175697f0"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-symmetry/PROOF.md",
+      "sha256": "4ec671bfa02796c638d6be4ad62844cc596ee5c6194fa7001d3f9500e1857b3e"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-costs/PROOF.md",
+      "sha256": "9aa869ff86366e92831b8aaaab32d441bea9d55b8ef0c1688acea28677299c66"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-quadrics/PROOF.md",
+      "sha256": "fde6467d51215e780a321862264e9f4ee969c9b276a78a848ec0bb465a4e8d21"
+    },
+    {
+      "path": "archive/non-elliptic/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-compression/PROOF.md",
+      "sha256": "cf7c048fc2c107d261d5fb74ee3ae36409d5f4a1b54da21284a6e3758ad998f3"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-sextic/PROOF.md",
+      "sha256": "c45c7d6b32bb4bff768d5a60bfc50cf8e472e6fe4f4a50e0812ab7d8dfe41d3f"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-trace/PROOF.md",
+      "sha256": "aaebb6eb315c569068f3064fb19bc217da514c3b2ff725b13cd05b785c5ae2c2"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/haution-fixed-points.html",
+      "url": "https://arxiv.org/html/1507.04582",
+      "locator": "Proposition3.2.1 and Section2.3: tame prime-group fixed schemes are smooth, geometrically connected and etale-cohomologically acyclic; arXiv v4, 2016, journal2017.",
+      "bytes": 396270,
+      "sha256": "5c86bf7a145f6a99181684d12240324c9572e4e1b0729a4f16f9210396d381e0"
+    },
+    {
+      "path": "sources/weighted-hook-formula.pdf",
+      "url": "https://www.math.ucla.edu/~pak/papers/whl.pdf",
+      "locator": "Ciocan-Fontanine--Konvalinka--Pak, Introduction, HLF and BR; classical irreducible dimension and Young branching formulas, not their new weighted theorem.",
+      "bytes": 213377,
+      "sha256": "f4837638bf8aa4a7c65e48bcebc0b7f08916f375b9ff23c00fb022a99e5c1e95"
+    }
+  ]
+}

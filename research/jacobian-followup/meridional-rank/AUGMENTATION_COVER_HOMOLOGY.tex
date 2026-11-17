@@ -1,0 +1,297 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Z}{\mathbb Z}
+\title{Augmentation-module bounds from cover homology}
+\author{Internal research working proof}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+The user's proposed homology-gain test is valid. For an epimorphism
+$G=\pi_1(\Sigma_2K)\twoheadrightarrow A_5$ and the inverse image
+$H$ of a point stabilizer $A_4$, it gives
+\[
+ b_1(H;\F_p)-b_1(G;\F_p)\ge5,\quad p\ne5
+ \quad\Longrightarrow\quad \mr(K)\ge4.
+\]
+It sharpens the earlier absolute Schreier threshold and does not
+require a meridian-root lift to the knot group. All sixteen quotient
+kernel classes on the retained sixteen-knot panel have now been
+tested, including the four classes beyond the twelve old first maps.
+Every cover has $H_1(H;\Z)=\Z/(3D)$ while $H_1(G;\Z)=\Z/D$,
+with $\gcd(D,30)=1$. The gain is one at three and zero at every
+other prime. None passes. A completeness argument below covers
+\emph{every} connected index-five cover of these particular groups.
+The full conjecture and all sixteen cases remain unsettled here.
+
+\section{The general augmentation bound}
+
+Let $H\le G$ have finite index $n>1$, and let $F$ be a field whose
+characteristic does not divide $n$. The permutation module
+$P=F[G/H]$ splits as
+\[
+ P=F\mathbf{1}\oplus V,\qquad
+ V=\ker\bigl(\textstyle\sum:P\to F\bigr),\quad \dim V=n-1.
+\]
+Indeed the splitting of the sum map sends $a$ to $(a/n)\mathbf{1}$.
+Transitivity makes $P^G=F\mathbf{1}$, and the sum of a constant
+vector is $n$ times its coefficient, so $V^G=0$. No semisimplicity
+assumption on the entire image group is needed.
+
+\begin{theorem}\label{thm:gain}
+Put $\Delta_F=b_1(H;F)-b_1(G;F)$. Then
+\[
+ \Delta_F=\dim_F H^1(G,V)\ge0,\qquad
+ \rk G\ge1+\left\lceil\frac{\Delta_F}{n-1}\right\rceil.
+\]
+If $G=\pi_1(Y_\phi)$ is the simple degree-$r$ branched cover of a
+knot associated to a transposition quotient, then
+\[
+ \mr(K)\ge r+\left\lceil\frac{\Delta_F}{n-1}\right\rceil.
+\]
+\end{theorem}
+\begin{proof}
+For finite index, the permutation module is the induced, equivalently
+coinduced, trivial module of $H$. Shapiro's lemma gives
+$H^1(G,P)\cong H^1(H,F)$. Apply cohomology to the displayed direct
+sum to obtain the dimension identity. First cohomology with trivial
+coefficients is dual to first homology over a field.
+
+If $d$ arbitrary elements generate $G$, evaluation on those elements
+injects the cocycle space $Z^1(G,V)$ into $V^d$: the cocycle rule
+determines its values on every word. Thus $\dim Z^1\le d(n-1)$.
+Principal cocycles have dimension $\dim V-\dim V^G=n-1$.
+Subtracting gives $\Delta_F\le(d-1)(n-1)$, proving the rank bound.
+Combine it with the companion cover inequality
+$\mr(K)\ge r-1+\rk G$.
+\end{proof}
+
+For the five-point $A_5$ action, $n=5$ and $\dim V=4$. Thus
+$\Delta_F\ge5$ forces $\rk G\ge3$. With $r=2$ this gives
+$\mr(K)\ge4$; a four-seed bridge upper certificate gives equality.
+Primes two and three are allowed, despite dividing $|A_5|$.
+Only the index five needs to be invertible for this argument.
+
+\paragraph{Comparison with Schreier.}
+If $G$ were two-generated, Schreier gives $b_1(H;F)\le6$.
+The new test improves this to
+$b_1(H;F)\le b_1(G;F)+4$.
+For $b_1(G;F)=0,1,2$, its respective sharp-four thresholds are
+$b_1(H;F)\ge5,6,7$. The earlier absolute threshold seven is therefore
+strictly weaker when the base Betti number is zero or one.
+
+\section{Complete result on the retained panel}
+
+The frozen selection is exactly the first sixteen names of the pinned
+uncertainty panel, with every retained $A_5$ quotient-kernel class and
+no adaptive target or map replacement. Their exact integral homology
+and kernel counts are as follows; $\kappa$ is counted separately for
+each knot.
+\begin{center}
+\begin{tabular}{lrr|lrr}
+\toprule
+Knot & $D$ & $\kappa$ & Knot & $D$ & $\kappa$\\
+\midrule
+$13a129$&391&1&$13a233$&403&0\\
+$13a135$&401&2&$13a234$&389&1\\
+$13a136$&391&1&$13a239$&361&0\\
+$13a137$&401&2&$13a242$&359&1\\
+$13a194$&391&1&$13a243$&337&0\\
+$13a196$&401&2&$13a244$&311&1\\
+$13a197$&391&1&$13a253$&337&0\\
+$13a198$&401&2&$13a265$&311&1\\
+\bottomrule
+\end{tabular}
+\end{center}
+The base homology is $\Z/D$. For every one of the sixteen classes
+on twelve knots, the index-five subgroup has homology $\Z/(3D)$.
+In particular the four extra maps on $13a135,13a137,13a196,13a198$
+do not change the outcome. Since every $D$ is coprime to thirty,
+\[
+\begin{array}{c|ccc}
+ p&3&p\mid D&\text{all other primes}\\\hline
+ b_1(G;\F_p)&0&1&0\\
+ b_1(H;\F_p)&1&1&0\\
+ \Delta_{\F_p}&1&0&0.
+\end{array}
+\]
+This is an all-prime conclusion from integral Smith forms, not a
+finite prime sweep. The four knots with $\kappa=0$ have no $A_5$
+map from which to form the proposed cover.
+
+\begin{proposition}\label{prop:allfive}
+For these sixteen base groups, every connected index-five cover is
+represented by the tested classes. Consequently no such cover
+satisfies the user's Betti-gain criterion over any prime field with
+$p\ne5$.
+\end{proposition}
+\begin{proof}
+An index-five subgroup gives a transitive coset action $G\to S_5$.
+Its sign is trivial because the abelianization $\Z/D$ has odd order,
+so its image lies in $A_5$. Every proper nontrivial subgroup of
+$A_5$ has a nontrivial abelian quotient of order divisible by two,
+three or five. This elementary finite subgroup fact is checked on
+the complete 59-subgroup lattice in the retained arithmetic receipt.
+Such an image would give $G$ a nontrivial abelian quotient at one
+of these primes, contrary to $\gcd(D,30)=1$. Transitivity rules out
+the trivial image. The image is therefore all of $A_5$.
+
+All five subgroups $A_4\le A_5$ are conjugate. Postcomposing an
+epimorphism with an automorphism of $A_5$ changes its point-stabilizer
+preimage only by conjugacy in $G$. Hence one representative per
+quotient kernel suffices for the unbased connected covers. The
+earlier complete enumeration gave exactly the classes tested here.
+\end{proof}
+
+The cyclic abelianizations do not imply that the subgroups themselves
+are cyclic. The proposition excludes this particular homological
+certificate in degree five, not other cover degrees, nonabelian
+subgroup information or new representations.
+
+\section{Replay, controls and comparison with old exclusions}
+
+The producer builds all 70 relation rows of the five-sheeted cover
+of the normalized thirteen-generator core presentation, collapses a
+four-edge spanning tree, and computes Smith certificates on the
+remaining 61 columns. It checkpoints after every cover under a frozen
+sixteen-cover cap. Previous first-witness evidence is retained.
+
+The verifier independently builds the integer matrix by evaluated
+Fox prefixes and replays every elementary Smith operation. It also
+constructs a separate cocycle matrix directly on the basis
+$e_i-e_5$, $1\le i\le4$, of the augmentation module. For each
+relator, the coefficient of a positive letter is its prefix action;
+for an inverse letter it is minus the action after that inverse.
+Every prime dividing a retained torsion factor and one generic
+prime are checked, with five excluded. The cocycle dimension minus
+four agrees with the homology gain in each case. The integral Smith
+data handle all other primes. The PD parser and Smith replay are
+shared; the three matrix constructions are not described as wholly
+independent software.
+
+Three controls show the threshold and its boundary:
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Base group & Index-five $H_1(H;\Z)$ & $b_1(G;\F_3)$ & $\Delta_{\F_3}$\\
+\midrule
+$F_2$ & $\Z^6$ &2&4\\
+$C_3*C_3$ & $(\Z/3)^4$ &2&2\\
+$C_3*C_3*C_3$ & $\Z^2\oplus(\Z/3)^6$ &3&5\\
+\bottomrule
+\end{tabular}
+\end{center}
+The third is the double-cover group of a connected sum of three
+trefoils, an already-known sharp four-bridge control. The first
+attains the upper bound four for a two-generated group.
+
+At characteristic five, the same $F_2$ action gives a necessary
+negative control: the augmentation module contains the constant
+vector, has a one-dimensional invariant space and three-dimensional
+principal cocycles. Therefore $\dim H^1(F_2,V)=8-3=5$, although
+$b_1(H)-b_1(F_2)=6-2=4$. The claimed splitting identity fails there;
+the prime restriction cannot simply be dropped.
+
+The user's distinction from the old exclusions is correct. Those
+concern specific knot-group representations with prescribed meridian
+defect and root geometry. Here the group is the \emph{double-cover}
+group, and the module is its four-dimensional permutation
+augmentation module. No knot-group extension is imposed. The old
+$H_3$ root rigidity and the statement comparing full versus
+restricted cocycles on the \emph{same} representation do not exclude
+this new test. The direct computation above supplies its negative
+result. The receipts are \path{augmentation_cover_verification.json}
+and the unchanged earlier \path{joint_a5_verification.json}.
+
+\section{Whitehead dependency and a peripheral obstruction}
+
+A fresh retrieval of the external project's open-list blob agrees
+with the retained 293-name file. All sixteen targets are in it,
+and none is among the separate 243 certificates. This supports the
+user's status correction within that release; it is not an assertion
+that all subsequent literature is exhausted. The unrefereed
+certificates retain their earlier algebra, name and bridge replay.
+
+The new preprint of Gao--Gu--Li--Wang supplies a different mechanism
+for iterated untwisted Whitehead doubles of two-bridge knots
+\cite{gglw}. Its peripheral curve condition uses orders
+$\nu(\mu)=-p$, $\nu(\eta)=q$ with $p>0$ and either $q>p$ or $q<0$,
+where $\eta=\lambda^2$. The points must come from actual
+augmentations. This is not an arbitrary choice of peripheral
+eigenvalues or a closure of the sixteen targets. The one-step
+construction in Section 2.3 requires $\eta\ne1$.
+
+\begin{proposition}\label{prop:orthogonal}
+Over a field of characteristic different from two, suppose a knot
+representation preserves a nondegenerate symmetric form, and its
+meridian is diagonalizable with nonidentity defect of rank one.
+On its distinguished eigenline, the longitude eigenvalue $\lambda$
+satisfies $\lambda^2=1$. Thus this representation lies on the
+excluded $\eta=1$ locus of that Whitehead construction.
+\end{proposition}
+\begin{proof}
+Write $V=L\oplus F$ for the nonidentity meridian eigenline and its
+fixed hyperplane. Invariance of the form makes $L$ orthogonal to
+$F$. Nondegeneracy then makes its restriction to $L$ nonzero;
+otherwise $L$ would be orthogonal to all of $V$. Since the longitude
+commutes with the meridian, it preserves $L$. Preservation of the
+form on this line gives $\lambda^2=1$.
+\end{proof}
+
+Consequently a fixed orthogonal reflection base cannot simply seed
+the peripheral construction. Any useful deformation must leave this
+orthogonal constraint and supply actual representation data.
+Transvections are a separate excluded input: their meridian eigenvalue
+is one, whereas the cited construction requires a diagonalizable
+nonidentity eigenvalue. These observations do not prohibit
+deformations to other representations; no such deformation has been
+constructed here.
+
+\paragraph{Original Dutra lemma.}
+The reported gap can be checked directly in \cite[p.~7]{dutra}.
+In the stated free group on $x_1,x_2$, its embeddings give
+\[
+ \alpha(y_1y_2)=\omega(y_1y_2)
+   =x_2x_1^{-1}x_2^{-1}x_1\ne1.
+\]
+This freely reduced four-letter word belongs to both $U_\alpha$
+and $U_\omega$, contradicting the trivial intersection claimed in
+Lemma 3.1 at conjugator one. Page twelve explicitly uses that lemma
+in the proof of Lemma 3.8(2). Both complete pages were visually
+checked and the free reduction is retained in the dependency audit.
+This disproves the lemma as stated, not the main Whitehead-double
+MRC conclusion. No proved record in this programme uses Dutra's
+2022 Theorem 1.1 as a dependency. Its source row remains flagged;
+the published 2017 graph-manifold/braid-pattern result is a distinct
+earlier theorem. The new preprint explicitly avoids these subgroup
+lemmas. The complete 44-page proof remains unaudited here.
+
+Uniform arguments in this note are working proofs without formal
+verification or external specialist review. The finite all-index-five
+exclusion and peripheral obstruction are progress boundaries, not
+a full MRC proof or a new resolved knot. Further work requires
+another degree or module with a structural rank-gain reason, or an
+actual peripheral representation curve outside the stated constraints.
+
+\clearpage
+\begin{thebibliography}{9}
+\bibitem{gglw} Gao--Gu--Li--Wang, Meridional ranks of iterated
+Whitehead doubles, preprint, 11 November 2026. Introduction footnote;
+Sections 2.3--2.4; Definition 4.1, Theorem 4.2 and Corollary 4.5.
+\url{https://arxiv.org/html/2611.15673v1}.
+\bibitem{dutra} Dutra, Meridional rank of Whitehead doubles,
+preprint v1, 26 December 2022, pp.~7 and 12.
+\url{https://arxiv.org/abs/2212.13081v1}.
+\bibitem{core} Silver--Traldi--Williams, Core groups (2024),
+Section 7. \url{https://arxiv.org/abs/2311.02048v2}.
+\end{thebibliography}
+\end{document}

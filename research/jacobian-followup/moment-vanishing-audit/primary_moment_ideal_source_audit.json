@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md",
+  "canonical_proof_sha256": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+  "claims": [
+    "MVPRIMARYZERO20261115",
+    "MVORDINARYDECIDE20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_primary_moment_ideal_algorithm.py",
+  "checker_sha256": "87d6048b0e319f8a4a56fa81893595b5760e679f8f1bf236cb741ac60a9df393",
+  "receipt": "jacobian-followup/moment-vanishing-audit/primary_moment_ideal_verification.json",
+  "receipt_sha256": "5f2c34507294e1abca9f773e2993dd967b995a48454bbd86c3dfa0c005c2b79a",
+  "prior_frontier": "jacobian-followup/moment-vanishing-audit/primary_moment_ideal_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "GENERIC_POINT_FINITE_MOMENT_ALGORITHM.md": "3529684d1c4b173beb6b3ee9f2dc6cc580dbec3f4fb0c1785e5b8848eac26900",
+    "generic_point_moment_source_audit.json": "08701f53d139e90c79b119e4b2892a8596f613938f54679d8486830769967112",
+    "generic_point_moment_verification.json": "c7c6b818db5870a0af5eeb98588f38b04df6ac3bbba356d5b0264e809408b968",
+    "verify_generic_point_moment_algorithm.py": "7d2d6480ff4b641d4eed9bc2c990c3cb903caed7192082cf319a353d540cf0f5",
+    "ACTUAL_DIRECTION_RANK_ONE_RIGIDITY.md": "525a5a306c59f2d24a9f7eb5e9a715d56f57b3acdbccbfeec7c8e082c7d0c90b",
+    "ALL_DEGREE_STRUCTURE_AND_BARRIERS.md": "f6c93353723419d9e308f2ae1d1bc7da8264f15040f8e13bc2ee366cdfac4625",
+    "GAUSSIAN_SHEAR_NORMAL_FORM_AND_TRANSFERS.md": "20043bb3f092918fa8b1d6a55c8c5d03cc9fa9c403683cf1c66a7ab1e40388cb",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "CUBIC_FRAME_AND_PREFIX_COMPUTABILITY.md": "4668e01d20d8b55357c72c51211c8c0beb5516ac239a4d855d3bc93e1de64b89"
+  },
+  "software": "SymPy1.14.0;general algorithm not implemented",
+  "primary_scope_audit": [
+    {
+      "url": "https://www.math.utah.edu/~milicic/Eprints/dmodules.pdf",
+      "paper": "Milicic,Lectures on Algebraic Theory of D-Modules,author notes",
+      "read": "Chapter V section2 theorem2.1 and proof/corollary2.2;chapter I section13 lemma13.4 and proof/theorem13.5",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/milicic_dmodules_primary.pdf",
+      "sha256": "d2671c7bf7b9c29987d2c7b8ec7f010e5395d07bfe09874ba831a071c51fdb17",
+      "imported_fact": "Finite-rank integrable connections are holonomic;algebraic direct images preserve holonomicity",
+      "boundary": "Characteristic-zero field extension descends finite linear identities;no regularity or convergent-integral assertion"
+    },
+    {
+      "url": "https://www.lab.twcu.ac.jp/oaku/Oaku2013.pdf",
+      "paper": "Oaku integration author preprint",
+      "read": "Section3 algebraic integration module,definition4,theorem1 and proof,revisited",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/oaku_integration_author_preprint.pdf",
+      "sha256": "1d28e3f8e19070a2e3883f54b48d2acb4e916f482cb2740f84063b532bf8664a",
+      "use": "Polynomial total-derivative certificates;formal Gaussian IBP replaces analytic well-defined-integral clause"
+    },
+    {
+      "url": "https://doi.org/10.1016/S0747-7171(88)80040-3",
+      "paper": "Gianni--Trager--Zacharias1988",
+      "read": "Prior bibliographic audit retained;publisher full body not freshly proof-audited",
+      "use": "Classical effective rational primary decomposition;all embedded components retained"
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.25409",
+      "version_url": "https://arxiv.org/html/2609.25409v1",
+      "paper": "Jacob Miller,Primary decompositions via exponent matrices,v1,21September2026",
+      "read": "Sections1--3 including theorem3.1/proof and algorithm3.4;appendix code viewed",
+      "use": "Monomial decomposition and embedded-component source boundary;no theorem imported",
+      "boundary": "General Gaussian moment ideals need not be monomial;does not supply Gaussian stopping theorem",
+      "producer_package_executed": false
+    },
+    {
+      "path": "/usr/share/singular/LIB/primdec.lib",
+      "sha256": "de2466651d5ea8e6511fd3c8b22203b532a86deb5d83b0650645b0837fc03b6a",
+      "read": "Previous installed rational-characteristic-zero library-header audit retained",
+      "implementation_executed": false
+    }
+  ],
+  "primary_oracle": {
+    "input": "Any ordinary ideal I in Q[c] and polynomial Gaussian family P",
+    "decomposition": "All primary components,including embedded",
+    "normalization": "For Q p-primary choose B=Q[y] normalizing R/p;R/Q finite overB",
+    "injectivity": "Every nonzero B-element is outsidep and regular onR/Q",
+    "finite_algebra": "A=Frac(B) tensor R/Q finite dimensional and possibly nonreduced",
+    "holonomic_connection": "A[t,X] as finite free module with commuting polynomial connection",
+    "certificate": "Scalar coefficients in Frac(B),amplitudes in A[t,X];exact polynomial Gaussian IBP",
+    "zero_test": "Nonzero scalar indicial polynomial;test every A-vector coordinate through its finite integer-root bound",
+    "output": "All moments inI,or a concrete M_k notinI"
+  },
+  "ordinary_construction": {
+    "loop": "Start0,ask ordinary membership oracle,adjoin a violating moment",
+    "termination": "Strict ascending ordinary ideals and ACC",
+    "output": "I_infinity itself and finite sufficient ordinary prefix",
+    "least_prefix": "Finite monotone ordinary Groebner membership tests against computed ideal",
+    "nonreduced_parameter_families": true,
+    "GMC_positive_assumption_used": false,
+    "radical_primary_decomposition_computable_afterwards": true,
+    "specific_full_cubic_scheme_computed": false
+  },
+  "small_replay": {
+    "polynomial": "a+bX",
+    "ordinary_ideal": [
+      "a",
+      "b^2"
+    ],
+    "radical": [
+      "a",
+      "b"
+    ],
+    "cut_indices": [
+      1,
+      2
+    ],
+    "generic_bounds": [
+      1,
+      2
+    ],
+    "final_indicial_bound": 0,
+    "least_ordinary_prefix": 2,
+    "nonreduced_final_algebra_dimension": 2,
+    "full_small_loop_checked": true,
+    "polynomial_telescoping_certificate_checked": true,
+    "auxiliary_moments_checked": 8
+  },
+  "controls": {
+    "nilpotent_control": {
+      "quotient": "Q[b]/(b^3)",
+      "series_minus_one": "b^2*t^2/2",
+      "scalar_operator": "Dt^3",
+      "bound": 2,
+      "radical_shortcut_rejected": true
+    },
+    "embedded_control": {
+      "ideal": "(a^2,ab)",
+      "primary_intersection": "(a) intersect (a^2,b)",
+      "polynomial": "a",
+      "series_in_embedded_algebra": "a*t",
+      "bound": 1,
+      "intersection_checked": true,
+      "minimal_components_only_shortcut_rejected": true,
+      "nonprimary_localization_shortcut_rejected": true
+    },
+    "positive_dimensional_primary_control": {
+      "primary_ideal": "(a^3) in Q[a,b]",
+      "normalization": "Q[b]",
+      "localized_algebra": "Q(b)[a]/(a^3)",
+      "dimension": 3,
+      "nilpotent_multiplication_table_checked": true
+    },
+    "zero_divisor_coefficient_operator_shortcut_rejected": true
+  },
+  "new_external_theorem_imported": true,
+  "external_input": "Classical holonomic connection/direct-image theorem and effective rational primary decomposition/Noether normalization",
+  "fresh_exhaustive_literature_coverage": false,
+  "producer_package_executed": false,
+  "numeric_frontier_changed": false,
+  "new_cubic_prefix_computed": false,
+  "general_algorithm_implemented": false,
+  "general_algorithm_executed": false,
+  "full_cubic_coefficient_search_executed": false,
+  "universal_termination_proof_certified_by_checker": false,
+  "analytic_contour_input_used": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Independent review of the primary finite-algebra oracle and ordinary ACC synthesis",
+    "General implementation and complexity remain unaddressed;no coefficient campaign started",
+    "Specific unresolved coefficient schemes and numeric invariants are not computed",
+    "Higher-rank rational quotients,normal-form G,mixed safety and valid operator transfers remain open"
+  ]
+}

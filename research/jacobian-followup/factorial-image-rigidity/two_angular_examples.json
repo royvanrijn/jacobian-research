@@ -1,0 +1,165 @@
+[
+  {
+    "status": "nonzero_transcendental_period",
+    "scale": "101*I/5",
+    "remainder": [
+      "1",
+      "0"
+    ],
+    "specialized_remainder": [
+      "1",
+      "0"
+    ],
+    "stokes_P": "0",
+    "stokes_Q": "0",
+    "identity_verified": true,
+    "boundary_term_retained": true,
+    "period_is_zero": false,
+    "theorem": "FIRTWOANGLINEAR20261116",
+    "block_shapes": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "status": "nonzero_transcendental_period",
+    "scale": "101*I/5",
+    "remainder": [
+      "-h**2/288 - 19*h/768 - 13/512",
+      "h**2/384 + 7*h/256 + 7/256"
+    ],
+    "specialized_remainder": [
+      "-1193117/47006208 + 95*I/77568",
+      "214171/7834368 - 35*I/25856"
+    ],
+    "stokes_P": "-X**4/1536 + X**3/256 - X**2*h/768 - 13*X**2/1536 + X*h/288 + 7*X/768 - h/192 - 13/1536",
+    "stokes_Q": "X**5/512 + X**4*Y/256 - X**4/128 - X**3*Y**2/128 - X**3*Y/128 + X**3*h/128 + X**3/128",
+    "identity_verified": true,
+    "boundary_term_retained": true,
+    "period_is_zero": false,
+    "theorem": "FIRTWOANGLINEAR20261116",
+    "block_shapes": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "status": "nonzero_transcendental_period",
+    "scale": "101*I/5",
+    "remainder": [
+      "-3*h**2/64 + h/96 + 41/256",
+      "-h/384 - 5/32"
+    ],
+    "specialized_remainder": [
+      "418541/2611456 - 5*I/9696",
+      "-5/32 + 5*I/38784"
+    ],
+    "stokes_P": "X**2/768 - X/96 + 25/768",
+    "stokes_Q": "X**3/128 - 3*X**2/64 - X*Y**2/32 + X*h/32 + 3*X/32 - Y**3/32 + Y**2/16 + 3*Y*h/64 - h/16 - 1/16",
+    "identity_verified": true,
+    "boundary_term_retained": true,
+    "period_is_zero": false,
+    "theorem": "FIRTWOANGLINEAR20261116",
+    "block_shapes": [
+      4,
+      2,
+      1
+    ]
+  },
+  {
+    "status": "zero_remainder_no_period_decision",
+    "scale": "1",
+    "remainder": [
+      "1 - h",
+      "0"
+    ],
+    "specialized_remainder": [
+      "0",
+      "0"
+    ],
+    "stokes_P": "0",
+    "stokes_Q": "Y",
+    "identity_verified": true,
+    "boundary_term_retained": true,
+    "period_is_zero": null,
+    "theorem": null
+  },
+  {
+    "status": "eventually_every_pure_moment_nonzero",
+    "phase": "b0**4 + 4*b0**3*b1 + 4*b0**3*b2 + 4*b0**3*b3 + 404*I*b0**3/5 + 6*b0**2*b1**2 + 12*b0**2*b1*b2 + 12*b0**2*b1*b3 - 404*I*b0**2*b1/5 + 6*b0**2*b2**2 + 12*b0**2*b2*b3 - 404*I*b0**2*b2 + 6*b0**2*b3**2 - 404*I*b0**2*b3 + 4*b0*b1**3 + 12*b0*b1**2*b2 + 12*b0*b1**2*b3 - 404*I*b0*b1**2/5 + 12*b0*b1*b2**2 + 24*b0*b1*b2*b3 - 5656*I*b0*b1*b2/5 + 12*b0*b1*b3**2 - 5656*I*b0*b1*b3/5 + 4*b0*b2**3 + 12*b0*b2**2*b3 - 4848*I*b0*b2**2/5 + 12*b0*b2*b3**2 - 9696*I*b0*b2*b3/5 + 4*b0*b3**3 - 4848*I*b0*b3**2/5 + b0*b3 + b1**4 + 4*b1**3*b2 + 4*b1**3*b3 + 404*I*b1**3/5 + 6*b1**2*b2**2 + 12*b1**2*b2*b3 - 404*I*b1**2*b2 + 6*b1**2*b3**2 - 404*I*b1**2*b3 + 4*b1*b2**3 + 12*b1*b2**2*b3 - 4848*I*b1*b2**2/5 + 12*b1*b2*b3**2 - 9696*I*b1*b2*b3/5 + 4*b1*b3**3 - 4848*I*b1*b3**2/5 + I*b1 + b2**4 + 4*b2**3*b3 + 808*I*b2**3/5 + 6*b2**2*b3**2 + 2424*I*b2**2*b3/5 + 4*b2*b3**3 + 2424*I*b2*b3**2/5 + b3**4 + 808*I*b3**3/5 + 2",
+    "block_shapes": [
+      1,
+      1,
+      3
+    ],
+    "degree": 4,
+    "normalizer": "(sum shapes)_(D*m)",
+    "period_certificate": {
+      "status": "nonzero_for_all_integer_block_shapes",
+      "scale": "101*I/5",
+      "monic_minimal_polynomial": "t**2 + 10201/25",
+      "coefficient_valuations_at_5": [
+        0,
+        null,
+        -2
+      ],
+      "critical_point": [
+        "1",
+        "0"
+      ],
+      "barycentric_values": [
+        "1/4",
+        "1/4",
+        "1/2"
+      ],
+      "prime": 5,
+      "uniform_mechanism": "h=1/scale reduces to zero at a place above five",
+      "period_is_zero": false,
+      "theorem": "FIRTWOANGSHAPES20261116",
+      "scope": "Written all-exponent theorem; failed test makes no zero-period or FC decision."
+    },
+    "first_nonzero_index": null,
+    "strong_factorial_window": null,
+    "theorem": "FIRTWOANGGAMMA20261116"
+  },
+  {
+    "status": "eventually_every_pure_moment_nonzero",
+    "phase": "b0**4 + 4*b0**3*b1 + 4*b0**3*b2 + 4*b0**3*b3 + 404*I*b0**3/5 + 6*b0**2*b1**2 + 12*b0**2*b1*b2 + 12*b0**2*b1*b3 + 1212*I*b0**2*b1/5 + 6*b0**2*b2**2 + 12*b0**2*b2*b3 - 404*I*b0**2*b2/5 + 6*b0**2*b3**2 - 404*I*b0**2*b3 + 4*b0*b1**3 + 12*b0*b1**2*b2 + 12*b0*b1**2*b3 + 1212*I*b0*b1**2/5 + 12*b0*b1*b2**2 + 24*b0*b1*b2*b3 - 808*I*b0*b1*b2/5 + 12*b0*b1*b3**2 - 808*I*b0*b1*b3 + 4*b0*b2**3 + 12*b0*b2**2*b3 - 404*I*b0*b2**2/5 + 12*b0*b2*b3**2 - 5656*I*b0*b2*b3/5 + 4*b0*b3**3 - 4848*I*b0*b3**2/5 + b0*b3 + b1**4 + 4*b1**3*b2 + 4*b1**3*b3 + 404*I*b1**3/5 + 6*b1**2*b2**2 + 12*b1**2*b2*b3 - 404*I*b1**2*b2/5 + 6*b1**2*b3**2 - 404*I*b1**2*b3 + 4*b1*b2**3 + 12*b1*b2**2*b3 - 404*I*b1*b2**2/5 + 12*b1*b2*b3**2 - 5656*I*b1*b2*b3/5 + 4*b1*b3**3 - 4848*I*b1*b3**2/5 + I*b1 + b2**4 + 4*b2**3*b3 + 404*I*b2**3/5 + 6*b2**2*b3**2 - 404*I*b2**2*b3 + 4*b2*b3**3 - 4848*I*b2*b3**2/5 + b3**4 + 808*I*b3**3/5 + 2",
+    "block_shapes": [
+      3,
+      1,
+      3
+    ],
+    "degree": 4,
+    "normalizer": "(sum shapes)_(D*m)",
+    "period_certificate": {
+      "status": "nonzero_for_all_integer_block_shapes",
+      "scale": "101*I/5",
+      "monic_minimal_polynomial": "t**2 + 10201/25",
+      "coefficient_valuations_at_5": [
+        0,
+        null,
+        -2
+      ],
+      "critical_point": [
+        "1",
+        "0"
+      ],
+      "barycentric_values": [
+        "1/4",
+        "1/4",
+        "1/2"
+      ],
+      "prime": 5,
+      "uniform_mechanism": "h=1/scale reduces to zero at a place above five",
+      "period_is_zero": false,
+      "theorem": "FIRTWOANGSHAPES20261116",
+      "scope": "Written all-exponent theorem; failed test makes no zero-period or FC decision."
+    },
+    "first_nonzero_index": null,
+    "strong_factorial_window": null,
+    "theorem": "FIRTWOANGGAMMA20261116"
+  }
+]

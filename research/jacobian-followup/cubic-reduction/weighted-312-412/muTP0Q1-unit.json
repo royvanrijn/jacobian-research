@@ -1,0 +1,45 @@
+{
+  "status": "exact-primary-unit",
+  "source_sha256": "ecd304623ef4ffce338df1ab98dfcd997d757e1e1400083f7accf047a00b1653",
+  "input_sha256": "b633505b7e09d89d9fb0124fd84b832708e9eb7b1465382fa669924b19a32f4e",
+  "script_sha256": "a46d341042feea6f14ac58499fa17405e70b43960d1c634eb3f49c3da6df6287",
+  "multipliers": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1/7"
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1/3"
+      }
+    ],
+    [],
+    []
+  ]
+}

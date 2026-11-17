@@ -1,0 +1,10 @@
+{
+  "Python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "Sympy_version": "1.14.0",
+  "execution": "Finite rational block-critical recursion,filtered triangular Morse maps with inverse/original-volume identities,original Wick controls,ordinary purity numerator and local algebraic slope valuations. No image-kernel backend,integration producer or capped-job restart.",
+  "imports_sha256": {
+    "gaussian_generic_cutoff_producer.py": "c9b1a84b8502f339af464f044dbbf523cf93c8c7edaec79bd81f0cabd6d8dfc7",
+    "verify_semipositive_gaussian_reduction.py": "bd3f6922d7b38e4814f4bdbd723cff1c70db53694bf84adaa648cf29ed9ff7a8",
+    "verify_algebraic_gaussian_lifts.py": "569f446cd10882867875de2271468b9c03e41f31480fb8adda61cccb62a5ed25"
+  }
+}

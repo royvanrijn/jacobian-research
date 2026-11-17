@@ -1,0 +1,8 @@
+{
+  "case": "nu-zero",
+  "input_sha256": "7a44d25eff4282ac65966e1953138f4d75c83aa74476bf8bd5f924f1ab5e2178",
+  "mode": "graph",
+  "seconds": 0.005,
+  "source_sha256": "badbdbe04086b7d7d8e1b0b8a697c7f8853d8feed882d2b2d96e5caaacb02ebe",
+  "status": "primary-parameter-basis"
+}

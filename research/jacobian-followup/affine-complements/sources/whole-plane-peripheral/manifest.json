@@ -1,0 +1,91 @@
+{
+  "as_of": "2026-11-16",
+  "sources": [
+    {
+      "path": "NORMAL_RESOLUTION_CHERN_GATE_AND_ADE_END_EXCLUSION.md",
+      "bytes": 12565,
+      "sha256": "bdd3b8f32792da69b9e86d28d95fd7d339da294a4fe9ae0d4a0634bbeed9aeaf",
+      "used_statement": "PF109wholeactualnormalN/minimalresolution,freealgebraicboundaryPicardbasis,actualconnectedradialcore,positivecanonicalvector;BODChern-preservingSteindeformationonlyforuniversalthetaformula. NewintegralThomproofdoesnotneeddeformation/rationality.",
+      "source_kind": "sealed canonical predecessor",
+      "fresh_primary_PDF_audit_this_turn": false
+    },
+    {
+      "path": "MULTIPLE_BOUNDARY_CANONICAL_CONTACT_AND_A_TYPE_END_EXCLUSION.md",
+      "bytes": 10195,
+      "sha256": "396d2d5747a37b617ee1685b0e0f33c5feef022600ae4d017a85d87206520ac5",
+      "used_statement": "PF103smoothsourceHodgeindex/compactificationandcanonicalthetafacts;newproofextendsEXACTintegrallattice/allboundarygenerationtoNORMALsourceswithcompactexceptionals.",
+      "source_kind": "sealed canonical predecessor",
+      "fresh_primary_PDF_audit_this_turn": false
+    },
+    {
+      "path": "FULL_PERIPHERAL_RATIONAL_LINKING_AND_LONGITUDE_JOINING_RECURSION.md",
+      "bytes": 15021,
+      "sha256": "cdac815c9fdc8085f94e45d8dfdd7e5d0f2cebaaa15b3950c39480b03c53b9f5",
+      "used_statement": "PF101actualjointtoruslattices,preferredliftedlongitude/Fconventions,integerlinkingdefect,actualtrefoil/cablewordpresentation;arbitraryFdoesNOTrecoverfulltorsion. Newcoveragehypothesis/proofsuppliesprecisemissingcondition;predecessornotrewritten.",
+      "source_kind": "sealed canonical predecessor",
+      "fresh_primary_PDF_audit_this_turn": false
+    },
+    {
+      "path": "FIBRE_TRANSITIVE_SHEAR_RECURSION_AND_SPIN_BUDGET_EXCLUSION.md",
+      "bytes": 16229,
+      "sha256": "b0d8f8a644401b21bb4496aa54d30795c2f8ebc083731a9594986d5c249548d9",
+      "used_statement": "PF104exactfibre-transitivecable-spaceZ2/injectivepushforward/twoportbasisproofandgeneralMayerVietoristransfer. Newbsectorz=mu^b*lambda,r1/kbmodMprovedhere;notjustoldb1hypothesis.",
+      "source_kind": "sealed canonical predecessor",
+      "fresh_primary_PDF_audit_this_turn": false
+    },
+    {
+      "path": "PROPER_FINITE_MARKED_END_AND_COMPONENT_OPEN_AUDIT.md",
+      "bytes": 17406,
+      "sha256": "1aa1fd1d61ec122189c0cb7914d41b67619145f3ac1b8fca24e56791c9fa0d6e",
+      "used_statement": "PF98originalfiniteproperradialcore/connectedactualorientedendandcompactificationpullbackHpositive;component-openNOTfinitegateguard.",
+      "source_kind": "sealed canonical predecessor",
+      "fresh_primary_PDF_audit_this_turn": false
+    },
+    {
+      "path": "../jc2-omitted-divisors/RESIDUE_LEDGER.md",
+      "bytes": 9598,
+      "sha256": "b0c207ffb6fe2736937cdabffb1fe5266f4f936143b2807dd571f431df08a8b9",
+      "used_statement": "PF2OMIT6R3exactALLNORMALfiniteflatEulerledger d-1=sum e*f+sum eta,eta>=0. Sixsheetknownramifiede5/f1costs5andforeclosesoutsideprime;zeroexcessconsequencecreditednotassumed.",
+      "source_kind": "sealed canonical predecessor",
+      "fresh_primary_PDF_audit_this_turn": false
+    },
+    {
+      "path": "UNRAMIFIED_PACKET_AND_OREVKOV_GATE.md",
+      "bytes": 20494,
+      "sha256": "ab3d49c55d52cb0af79a15265b6f5b516c404cdbf5f4a52429c7dd5b1c505784",
+      "used_statement": "PF46 retained Orevkov final Remark already excludes index d-1 in every degree. The six-sheet e5 application is a consistency check by a different topological proof, NOT a new exclusion class. New PF111 scope is universal normal-source Thom lattice, complete F reconstruction and partial-coverage budget.",
+      "source_kind": "sealed canonical predecessor",
+      "fresh_primary_PDF_audit_this_turn": false
+    }
+  ],
+  "new_written_unbounded_proofs": [
+    "integralThom/supportspairsequencePicardChernISOonWHOLEplaneextensionsincludingnormalresolutionexceptionals",
+    "EXACTrankr+m/negativecompactlattice/finiteendhomology/universalnormalcanonicalenergyformula",
+    "actualSTRICTomittedendknotsgenerateALLH1end;compactexceptionalclassesrestrictzero",
+    "foranyQHSlink TorH1exterior=annihilatorofcore-subgroup,sofullgenerationiffexteriortorsionfree",
+    "fullcoregenerationmakesFcompleteintegralperipheralmoduleM=Z^s+FZ^s;fulltorsionlinkingandallfillingsrecovered",
+    "partialcoveragehiddenquotientrequiresoutsideminimalgeneratornumberofactualomittedprimes/finiteEulerbudget",
+    "arbitraryb-sectorfibretransitivecablingwithgcd(e,f*b-a)1,r1/kbmodM,z=mu^b*lambda,alllengthtransfer",
+    "actualsixsheetPSL2F5trefoilseedandALLr1/k0mod5iteratedfamiliesexcludedbyhiddenquotientpluszerooutsidebudget"
+  ],
+  "new_deep_classification_imported": false,
+  "standard_Thom_and_Poincare_Lefschetz_duality_used": true,
+  "six_sheet_application_already_excluded_by_retained_maximal_index_gate": true,
+  "predecessor_BOD_deformation_retained_only_for_theta": true,
+  "new_primary_PDF_audit_claimed": false,
+  "prior_primary_peripheral_and_Hodge_audits_retained": true,
+  "investigated_but_not_imported": [
+    "FossatiarXiv1906.09162alllensfillingrank",
+    "EtnyreRoyarXiv2006.16687alllensfillingclassification"
+  ],
+  "coverage_of_all_omitted_knots_required_for_complete_F_reconstruction": true,
+  "arbitrary_rational_matrix_realization_claimed": false,
+  "all_six_sheet_maps_excluded": false,
+  "uncolored_iterated_knots_excluded_without_matching_representation": false,
+  "all_other_unramified_omitted_images_assumed_absent": false,
+  "global_finite_algebra_closed": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true,
+  "research_goal_completed": false
+}

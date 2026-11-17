@@ -1,0 +1,42 @@
+{
+  "completed": true,
+  "gapped_b_function_certificate": {
+    "b": "s*(s-3)",
+    "root_degrees": [
+      0,
+      3
+    ],
+    "root_amplitudes_used": 5,
+    "amplitudes_reconstructed": 36,
+    "gap_degrees_not_used_as_bases": [
+      1,
+      2
+    ]
+  },
+  "other_branch_residue_module_checks": 63,
+  "direct_moving_residue_checks": 5,
+  "other_branch_seed_image": "-1",
+  "other_branch_Z_image": "-1/t",
+  "safe_Z2W_moment_controls": 147,
+  "positive_root_not_sufficient_for_failure_written_proof": true,
+  "parametric_Z_only_certificate_degree_checked": 4,
+  "parametric_Z_only_tail_ideal": "(c0)",
+  "parametric_Z_only_uniform_pure_cutoff": "1",
+  "nonconstructible_holonomic_control_degrees": [
+    0,
+    1,
+    5
+  ],
+  "nonconstructibility_proved_by_checker": false,
+  "universal_Gaussian_chart_cover_constructed": false,
+  "universal_fixed_n_D_cutoff_proved": false,
+  "universal_Gaussian_constructibility_proved": false,
+  "general_tail_ideal_solver_implemented": false,
+  "general_b_function_search_executed": false,
+  "producer_package_executed": false,
+  "new_cubic_prefix_computed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "e6b9a437cbcda0577eb44624ef50ebdda40604ad1a015e5c5655ea5de6b14f73"
+}

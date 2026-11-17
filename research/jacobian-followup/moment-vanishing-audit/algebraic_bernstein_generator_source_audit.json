@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-16",
+  "new_claim": "GVCALGEBRAICGEN20261116",
+  "new_lesson": "METHOD-GVC-OAKU-GRAPH-CERTIFICATES-20261116",
+  "retained_lessons_updated": [
+    "METHOD-GVC-RATIONAL-ACTUAL-SURVIVAL-20261116",
+    "METHOD-GVC-GENERIC-BERNSTEIN-ACTUAL-GAP-CLOSURE-20261116",
+    "METHOD-GVC-FORMAL-ALLRING-CONSTRUCTIBLE-DESCENT-20261116",
+    "METHOD-GVC-EFFECTIVE-BERNSTEIN-SLOPE-SELECTION-20261116"
+  ],
+  "owned_work": "WORK-GAUSSIAN-FORMAL-GENERAL",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/OAKU_GRAPH_CERTIFICATES_AND_ACTUAL_POLYNOMIAL_DECISION.md",
+  "canonical_proof_sha256": "dd0a050d4bc8538b40f2ec2aafbbe5842179b21ef70c58c157af734a50595229",
+  "generator": "jacobian-followup/moment-vanishing-audit/algebraic_bernstein_generator.py",
+  "generator_sha256": "8340a3e1b8260231fa40321e6c7a3e934a0bfb0adbc7541c38a8e54b08cb4be8",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_algebraic_bernstein_generator.py",
+  "checker_sha256": "e1f4153c68169c39dc35baf85a153ee132a283d3e98de93efaaa1d050d704d4f",
+  "receipt": "jacobian-followup/moment-vanishing-audit/algebraic_bernstein_generator_verification.json",
+  "receipt_sha256": "19c5f522a90017e68dcca4c39465381d2b306737cb90fb8c987704d99513b957",
+  "credit_note": "jacobian-followup/moment-vanishing-audit/BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md",
+  "credit_note_sha256": "a2cff821b7cee9629235dec935ad231b3db389a03b3fca650b9a35c935451cd9",
+  "frontier": "jacobian-followup/moment-vanishing-audit/GENERAL_GAUSSIAN_RESEARCH_FRONTIER.md",
+  "frontier_sha256": "3beca02f49e1912f85385ee4aa6d63c496a4bcc6846b491c5e773ea13735a3ca",
+  "runtime": "jacobian-followup/moment-vanishing-audit/algebraic_bernstein_runtime.json",
+  "runtime_sha256": "bbe101082d87f9ef01895969bddd0c7cccfe64b25b986320b0051f75732d71ea",
+  "primary_sources": [
+    {
+      "author": "Toshinori Oaku",
+      "title": "Localization,local cohomology,and the b-function of a D-module with respect to a polynomial",
+      "url": "https://arxiv.org/abs/1609.04676v1",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/oaku_2016_generalized_bfunction_160904676.pdf",
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "visually_read_pages": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "exact_import": "Theorems1.3/3.3,Lemmas3.4/3.5,Algorithms3.6-3.8,and especially Proposition3.7:graph b-function multiples exist without f-saturatedness. Exact localized annihilator Algorithm3.6 removes torsion;we instead retain graph multiples,explicit torsion factor and witnesses. Generic-power module holonomic over the central parameter field.",
+      "sha256": "d74758fe304d67a44a0d18ca1d79367126f56816b34346b07c5b937fe1ddf2c0",
+      "bytes": 307549
+    },
+    {
+      "author": "Claude Sabbah",
+      "title": "Proximite evanescente II.Equations fonctionnelles pour plusieurs fonctions analytiques",
+      "url": "https://www.numdam.org/item/CM_1987__64_2_213_0/",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/sabbah_1987_proximite_II_bernstein_credit.pdf",
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "visually_read_pages": [
+        3,
+        4
+      ],
+      "exact_import": "Classical credit:printed214-216,graph/Euler framework and componentwise functional equations with finitely many primitive integral linear-form directions. No novelty claim for the convergent rational-slope mechanism. Regular characteristic-geometry refinements are not silently applied to arbitrary Fourier exponentials.",
+      "sha256": "8f85baa314f1baa4d4691c35169dd7945619f69a6ed027b7d634a28ddf0a97ec",
+      "bytes": 2586748
+    },
+    {
+      "author": "Philippe Maisonobe",
+      "title": "Filtration relative,l ideal de Bernstein et ses pentes",
+      "url": "https://doi.org/10.4171/RSMUP/101",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/maisonobe_2023_relative_bernstein_slopes.pdf",
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "visually_read_pages": [
+        3,
+        5
+      ],
+      "exact_import": "Classical credit:published2023 printed81-86;Sabbah product-of-linear-forms provenance,relative Bernstein characteristic structure and minimal slope directions. General holonomic statements distinguished from regular-holonomic geometric identification. The exact first-survival/nonconvergent/all-ring applications are not attributed wholesale to this source.",
+      "sha256": "0134e1b01453915b3c18aaa490832c7ee4c630aa4aa9884b3c1ce596713a5e5d",
+      "bytes": 569329
+    }
+  ],
+  "retained_example_files_sha256": {
+    "algebraic_bernstein_examples/unary_homogeneous/certificate.json": "6b0fb00fb67866a9a176a8658b296f25aee6873c871dc70af04903c9af96336f",
+    "algebraic_bernstein_examples/unary_homogeneous/pipeline.json": "539242de22e963d0c72c97b4c0344b9f05820cca29d5471ae9323400e666d348",
+    "algebraic_bernstein_examples/unary_homogeneous/input.json": "77af6b2a22147f1f25dff9f6afdb25d38fe8ea919c5a2e509b8a9c8676bf4712",
+    "algebraic_bernstein_examples/unary_homogeneous/cas/second.stdout": "373adfa5b8ed73fddc9d948ce04b6a9e2e180f7038c09aac4653640de4f28558",
+    "algebraic_bernstein_examples/unary_homogeneous/cas/second.sing": "43b9853a825f3148d55b53e49760dab42bca195fde9bed7ce8b7494c2752efa7",
+    "algebraic_bernstein_examples/unary_homogeneous/cas/first.sing": "b4a4a2f8bec4f1e1af6f0362f21adb169d4bb6efeb6b047557bcc62a2c919eb4",
+    "algebraic_bernstein_examples/unary_homogeneous/cas/first.stdout": "03ad36a62a4a894d353840985ab2634c689202b54dd73755ad1cc49da8735c11",
+    "algebraic_bernstein_examples/unary_inhomogeneous/certificate.json": "c455d81d658af1445434bc5d0b0b1ea4ba1cc9ade467ec9afebbf6d842f4f012",
+    "algebraic_bernstein_examples/unary_inhomogeneous/pipeline.json": "fc96ecce71769ed17ec636fea019cec5ccc1573c5efe130103111957c68b99be",
+    "algebraic_bernstein_examples/unary_inhomogeneous/input.json": "a62d03017298fab8e184a17b98118723f65c3b862c58a4f3071979c6a32062d9",
+    "algebraic_bernstein_examples/unary_inhomogeneous/cas/second.stdout": "497c20c918cffe9cf6cd8f9795de51e74f30aad1b8f6153040f4f2ad89959fb9",
+    "algebraic_bernstein_examples/unary_inhomogeneous/cas/second.sing": "10027115c1bac8028a004564815ef1b6ecd5ed912031a110b31d6e3c96b084b1",
+    "algebraic_bernstein_examples/unary_inhomogeneous/cas/first.sing": "87d35a7dced4fa49501909cde259982c2eb63525939f8bb5db36263d4bf514af",
+    "algebraic_bernstein_examples/unary_inhomogeneous/cas/first.stdout": "a2d10a542c1b8fc85ae558991d1490a70a1c2d6d2531618282ecf0a189a33cee",
+    "algebraic_bernstein_examples/inactive_direction/certificate.json": "5d49bce4abfc63d5ff4e479d0315e7991e08ca6b71795425f84f186919e23843",
+    "algebraic_bernstein_examples/inactive_direction/pipeline.json": "54695cc798690c20e36df6f93a68d2277ccedf84a51e6b81a85d60466c4a0c59",
+    "algebraic_bernstein_examples/inactive_direction/input.json": "c2ca7c6abfb12e1a318713be29868f1ec2c454c41a37358d2c3ed1092ed3abc2",
+    "algebraic_bernstein_examples/inactive_direction/cas/second.stdout": "af632afaeb587fac184ac2b8cf66ea4e7ec787ae6a267132fdb1d402465ce9ee",
+    "algebraic_bernstein_examples/inactive_direction/cas/second.sing": "9cb18a4eaffa8969e56708c0832c55253b651a608e2b6c08bf7f311cdb932aed",
+    "algebraic_bernstein_examples/inactive_direction/cas/first.sing": "1ff30b380b0e5f12f867dec26f50d570557b6cd7d41b5c9c515d7d295b434e2e",
+    "algebraic_bernstein_examples/inactive_direction/cas/first.stdout": "6c4b14f121e6d051ea9017ebbaeb0658b86a7b9a268b491ab766dccb0ae5ccb8",
+    "algebraic_bernstein_examples/coupled_phase_symbol/certificate.json": "0b7107208010bf457971a35df468638484f30e753b79cfc15d89b9e0652bdfd8",
+    "algebraic_bernstein_examples/coupled_phase_symbol/pipeline.json": "261c608f80ddc4265adf98d8f3e7791fb07d83916a70bdb84c49176592c76ffc",
+    "algebraic_bernstein_examples/coupled_phase_symbol/input.json": "09eb7ef10a478e29d1a25c2f7e64e5d7b1cfe8965ed52c48a05aed6c861d8c11",
+    "algebraic_bernstein_examples/coupled_phase_symbol/cas/second.stdout": "c797fd35fb72bff845031594a34c2d16f29e110654dee043a085c0ce652bd64f",
+    "algebraic_bernstein_examples/coupled_phase_symbol/cas/second.sing": "94a338ce82bedcb279e78be4d720410025bfbd5589ec57a10629f047b25b32be",
+    "algebraic_bernstein_examples/coupled_phase_symbol/cas/first.sing": "0cfb943dd2976a81538a707049b57b7b53cd0d930530eb6e5a8484af830841f6",
+    "algebraic_bernstein_examples/coupled_phase_symbol/cas/first.stdout": "f2036a07f8e9bea486031c5b33466b4d0cd6acdcd114f921d1ed11b9023a6f7e"
+  },
+  "retained_dependency_sha256": {
+    "jacobian-followup/moment-vanishing-audit/GENERIC_BERNSTEIN_EQUATIONS_AND_FORMAL_GAP_CLOSURE.md": "9f3f8f003dae69abe255bcddf03606c00bcc5a4245028163a8c1750adfca4e2f",
+    "jacobian-followup/moment-vanishing-audit/FORMAL_SAFETY_OVER_ALL_COEFFICIENT_RINGS.md": "3b8cd0768af6fedf4e312cca06ccf1cb919ae2ba1c7acca7358215e3142b738e",
+    "jacobian-followup/moment-vanishing-audit/BOUNDED_BERNSTEIN_STEPS_AND_RATIONAL_SURVIVAL_SLOPES.md": "4a7d6bd50a5f789c27e75a9e54fd408ec83134eecb4545785328a58de0e45289",
+    "jacobian-followup/moment-vanishing-audit/EFFECTIVE_BERNSTEIN_SLOPE_SELECTION_AND_CUTOFFS.md": "c77f107ebe3f1518d93d4dae121bda1afc7143988a94774d9aa477697cc138da",
+    "jacobian-followup/moment-vanishing-audit/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md": "b1dd4488fe3832a56108302340c8327251c8fbcdf90baf32c1c3aaac8696db27"
+  },
+  "proof_audit": {
+    "ambient": "Explicit algebraic Fourier transform of exponentialconnection is holonomic and sendsgenerator to1inE. Identity direction needs no imagekernel.",
+    "Oaku": "Algorithms3.6-3.8 checked with their saturation distinction;Proposition3.7 graph multiple avoids illegal torsion-free assumption. SDLoc interpreted asgraphann elimination;returned identities additionally checked against originalgenerators.",
+    "specialization": "D_base[S]-linearPhi_k uses fallingfactorialsumj<=k;boundaryj=kandj>kchecked. Ordinary relation validunlocalized for EVERYk>=0,no shift.",
+    "generic_kernel": "Graph-to-fpower kernel has finite t-torsion per element,hence scalarS torsion byDt^Lt^L=(-1)^L(S)_L. GenericcentralS module isholonomic;eta graphb exists. Clearedrelationlifted byfinite h(S).",
+    "exact_witness": "Two full LEFT membership identities retained and rechecked coefficientwise by sparseQQ PBW multiplication fromoriginalP/lambda. OperatorDeta is correctly lifted bysecondgraphauxiliaryderivative forordinaryidentity.",
+    "thresholds": "Both graph identities/orderconstraint validfrom0;nondeath/stepindexpast allnonnegativeintegerroots ofordinaryB;J recomputedfrommaxDetaorderQ. p=h*b(s,-tau-1) verified,includingvertical factors.",
+    "execution": "Four minimal structurally different graphinputs,four elementaryboundaries,five tamperrejections andthreeCLI modes. Nilprototype exposed an initial omission of h(S)in finalvariable substitution;fixed before registration. All final witnesses/summarychecks pass.",
+    "novelty": "No claim for classicalpolynomial/convergent slopes orOaku algorithms. Arbitrary nonconvergentformalextension/allringdescent isolated as scope differences,not establishedpriority."
+  },
+  "exact_controls": {
+    "graph_inputs": 4,
+    "elementary_cases": 4,
+    "Weyl_commutators": 4,
+    "associativity": 1,
+    "tamper_rejections": 5,
+    "CLI": 3,
+    "retained_example_files": 28
+  },
+  "latest_online_lead": {
+    "url": "https://arxiv.org/abs/2609.05215v2",
+    "authors": "Andras C.Lorincz,Ruijie Yang",
+    "title": "Filtrations on D-modules and multiplicities of roots of Bernstein-Sato polynomials",
+    "revision": "11November2026",
+    "scope_checked": "official abstract/version metadata ONLY;no theorem imported",
+    "disposition": "mod-b/weight refinements are not needed to fill the classical Oaku certificate-generation gate"
+  },
+  "next_full_obligation": "Construct full EXACT UNLOCALIZED Gaussian integration presentation and normalized polynomialHom for arbitrarypolynomial phases,retaining everyoriginal amplitude. Broader Gaussian classifications/ordinary-ideal/least-cutoff questions remain;effective algebraic/formal extensions are separate. No direct exceptionalMZ search asdefault.",
+  "general_QQ_polynomial_generator_implemented": true,
+  "arbitrary_nonconvergent_formal_generator_implemented": false,
+  "actual_image_kernel_computed": false,
+  "polynomial_convergent_novelty_claimed": false,
+  "formal_allring_priority_established": false,
+  "user_goal": "work on completely solving general Gaussian;published knowledge and new general/all-degree bridges;avoid ever-deepening calculations",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

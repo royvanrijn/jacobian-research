@@ -1,0 +1,153 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Hatcher, Notes on Basic 3-Manifold Topology, retained version",
+      "bytes": 384715,
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "complete_PDF_pages_visually_rechecked": [
+        20,
+        21
+      ],
+      "printed_pages": [
+        19,
+        20
+      ],
+      "used_statement": "Proposition1.13 essential vertical annulus in the trefoil, Lemmas1.14-1.15 boundary fibre uniqueness with all exceptions; PF77 retains the complete PDF15 Theorem1.9 JSJ audit. Terminal Klein alternative is handled explicitly by its boundary group, not fibre uniqueness.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Complete retained PF65/66/72/73/77-79/85 primary audits reused at PF89; no fresh visual audit asserted"
+    },
+    {
+      "path": "sources/borderline-regular-end/waldhausen-1968.pdf",
+      "url": "https://www.maths.gla.ac.uk/~mpowell/Waldhausen-Irreducible3ManifoldsSufficiently-1968.pdf",
+      "title": "Waldhausen, On irreducible 3-manifolds which are sufficiently large, Ann Math87(1968),56-88",
+      "bytes": 2860358,
+      "sha256": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+      "complete_PDF_pages_visually_rechecked": [
+        5,
+        23
+      ],
+      "printed_pages": [
+        59,
+        77
+      ],
+      "used_statement": "Definition1.1.7 sufficiently large means existence of an incompressible surface; the trefoil essential vertical annulus supplies one. Theorem6.1 relative covering recognition as in PF77, full peripheral map, irreducible/boundary-irreducible exteriors, aspherical sufficiently-large target, one boundary excludes closed-surface product, pi1 isomorphism forces degree1.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Complete retained PF65/66/72/73/77-79/85 primary audits reused at PF89; no fresh visual audit asserted"
+    },
+    {
+      "path": "sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/neumraym.pdf",
+      "title": "Neumann--Raymond, Seifert manifolds, plumbing, mu-invariant and orientation reversing maps, LNM664(1978),163-196",
+      "bytes": 893752,
+      "sha256": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13
+      ],
+      "principal_used_complete_PDF_pages": [
+        3,
+        4,
+        6,
+        11,
+        12,
+        13
+      ],
+      "printed_pages": [
+        165,
+        166,
+        168,
+        173,
+        174,
+        175
+      ],
+      "used_statement": "Theorem1.2 Euler naturality for oriented fibre-preserving maps, including branched maps; signed inverse slice convention and Euler definition; Theorem5.1 star plumbing and signed continued fractions, intersection form, and Theorem5.2 Schur/definiteness convention. Convert the paper signed leg parameter to minus the positive beta in a normalized negative leg. The proof derives the model, Euler number, selected inverse entry and mod3 mismatch; no contact/filling classification or full satellite plumbing theorem imported.",
+      "imported_not_independently_reproved": true,
+      "prior_manifest": "sources/fibre-order-transfer/manifest.json",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Complete retained PF65/66/72/73/77-79/85 primary audits reused at PF89; no fresh visual audit asserted"
+    },
+    {
+      "path": "sources/cyclic-companion/hillman-sakuma-1997.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2708EB475754CCA2A78C72C606D13E63/S0008439500002046a.pdf/on_the_homology_of_finite_abelian_coverings_of_links.pdf",
+      "title": "Hillman--Sakuma, On the homology of finite abelian coverings of links, Canadian Mathematical Bulletin40(1997),309-315",
+      "bytes": 85021,
+      "sha256": "455a770f76f95dd189132cf99f7964e1775621e48169f6d8501e68b2dd88900b",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        6
+      ],
+      "printed_pages": [
+        314
+      ],
+      "used_statement": "For knots the cyclic exterior homology splits integrally as the branched-cover homology plus Z; the page also warns that equal Alexander polynomials do not determine homology-group structure in general. PF65 reproves the integral split with explicit peripheral maps and computes the full torus Alexander module, not only its order.",
+      "used_as_primary_cross_check": true,
+      "full_paper_independently_reproved": false,
+      "page_audit_origin": "Complete retained PF65/66/72/73/77-79/85 primary audits reused at PF89; no fresh visual audit asserted"
+    },
+    {
+      "path": "sources/binomial-periodic/clay-watson-2011v1.pdf",
+      "url": "https://arxiv.org/pdf/1103.2358v1",
+      "title": "Clay--Watson, On cabled knots, Dehn surgery, and left-orderable fundamental groups (2011v1)",
+      "bytes": 172042,
+      "sha256": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b",
+      "used_statement": "Retained complete PDF6 audit: root-amalgam and BOTH cable peripheral words. PF65 uses exactly PF63 conventions, k=rc+1, beta=M^-c L^-1, mu=z beta, lambda=h mu^-rk. No new surgery, Seifert or orderability theorem imported.",
+      "imported_not_independently_reproved": true,
+      "prior_complete_page_audit_reused": true,
+      "original_manifest": "sources/binomial-periodic/manifest.json",
+      "page_audit_origin": "Complete retained PF65/66/72/73/77-79/85 primary audits reused at PF89; no fresh visual audit asserted"
+    }
+  ],
+  "related_primary_web_records_consulted": [
+    {
+      "url": "https://www.math.columbia.edu/~neumann/preprints/graphmans.pdf",
+      "title": "Neumann, Graph3-manifolds, splice diagrams, singularities",
+      "scope": "Primary-author search record consulted for edge-determinant route; no imported theorem or fresh full-page audit",
+      "additional_theorem_imported": false
+    },
+    {
+      "url": "https://www.jstor.org/stable/j.ctt1bgzb9w",
+      "title": "Eisenbud--Neumann, Three-Dimensional Link Theory and Invariants of Plane Curve Singularities",
+      "scope": "Primary publisher record/search excerpt on splicing consulted; no additional theorem imported",
+      "additional_theorem_imported": false
+    }
+  ],
+  "retained_inputs": [
+    "PF87 all A4 common closure, actual cyclic3 mark/homology transfers and initial trefoil residual",
+    "PF88 symbolic unimodular first-nonsolid strategy and whole-source marked recognition",
+    "PF77/79 actual two-line source path and normal-meridian fibres, whole-piece and Klein recognition",
+    "PF82/83 genuine cyclic3/simple-tail pieces, canonical fibre determinants, full source contact formula and terminal modulus",
+    "PF85 normalized winding/free coefficients and correct local fibre-cover direction"
+  ],
+  "new_written_proofs": [
+    "All-depth exact primitive last-gcd strip nD=a^2(nDprime-1)+a-(a-1)kappa for arbitrary fixed nR,q",
+    "All final-stage A4 first arrivals excluded at arbitrary companiondepth/no prefixeta",
+    "Coefficient2 cap/normalized residue comparison gives exact finite terminal list2,4/2,8/4,10",
+    "Ordered path/strip parity separates still-solid arrival from earlier reset",
+    "Marked root lower bound forces last simple-tail winding5mod6",
+    "Normalized root cone plus true internal fibre intersection excludes the still-solid-arrival single-tail case"
+  ],
+  "limits": {
+    "actual_smooth_exact_two_line_whole_source_hypotheses_required": true,
+    "stripped_local_chart_not_assumed_affine_source": true,
+    "arbitrary_coefficient2_cap_A_and_source_depth": true,
+    "all_final_stage_A4_arrivals_closed": true,
+    "all_later_A4_tails_closed": false,
+    "determinant2_internal2_countercontrols_retained": true,
+    "local_chart_not_full_topological_or_affine_match": true,
+    "all_state2_closed": false,
+    "full_quartic_exclusion": false,
+    "full_goal_open": true
+  }
+}

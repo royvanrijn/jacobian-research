@@ -1,0 +1,51 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path_relative_to_affine_complements": "sources/coordinate-pencil-matrix/xie-valuation-intersections.pdf",
+      "url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/423/9433-affinegeo20140928.pdf",
+      "title": "Junyi Xie, Intersections of valuation rings in k[x,y], author postprint dated December28,2015; published PLMS111(2015),240-274",
+      "used_statement": "Theorem1.2 on complete PDF3: transcendence degree2 of polynomial intersection of divisorial valuation rings iff the UNNORMALIZED dual-divisor intersection matrix is negative definite. The complete main-proof conclusion on PDF32 is also checked; the Section2 incomplete sketch is not imported as a proof.",
+      "bytes": 521592,
+      "sha256": "c6d983764df0dffa7d899ed5b72a74c29dd3876272a6b0f3d7b702ddf1ec9b7e",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        3,
+        32
+      ],
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_whole_chart_and_normal_form_claims": [
+    "PF2RULED38",
+    "PF2RULED43",
+    "PF2RULED45",
+    "PF2RULED46",
+    "PF2RULED48",
+    "PF2RULED49",
+    "PF2OMIT7"
+  ],
+  "new_written_steps": [
+    "dual diagonal from full norm curvette local intersection",
+    "cross pairing m*q*p for arbitrary distinct polynomial coordinate pencils",
+    "sharp universal exact-unramified bound n<=p^2",
+    "index-two bound n<=3q^2 and leading-character refinement forcing q=r-1",
+    "all unramified primes share a coordinate pencil",
+    "index-two versus unramified coordinates common or complementary"
+  ],
+  "not_claimed": [
+    "negative definiteness proves affineness",
+    "common pencil boundary constants equal",
+    "arbitrary higher-index coordinate existence or smoothness",
+    "finite Keller map on the actual common-ruling controls",
+    "full quartic or higher-degree exclusion"
+  ],
+  "other_literature_audits": {
+    "integral_coordinate_not_normal_generation": "Already retained PF2RULED38 norm/conductor gate; no such implication imported.",
+    "web_rational_curves": "Trivial normal bundles after extra infinity extraction do not prove positivity on the original simultaneous model; no web-classification theorem imported.",
+    "pinchuk_surface": "Peretz2011 Theorem2.9 is a restricted real-function-ring statement, and Remark2.10 explicitly distinguishes it from full complex etale exoticity. It is not imported as an obstruction to all exact unramified component models."
+  },
+  "formal_verification": false,
+  "independent_full_reproof": false,
+  "external_review": false,
+  "novelty_priority": false
+}

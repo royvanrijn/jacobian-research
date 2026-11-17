@@ -1,0 +1,121 @@
+{
+  "completed": true,
+  "checker_sha256": "26806d397949f765f92636e1e5b0d84c1fbd4bdf010336fd599a0e23eca1ac21",
+  "prior_squarefree_checker_sha256": "44e513f38579dbb840b84c66a6364076f8acb90dcd1cc7a170f93835957eec26",
+  "quartic_identity": "t^2*(p.p-2t*(tr(A)*p.p-p.A.p))/(2 det(I-2tA))",
+  "quartic_zero_frame": "For p!=0, identically zero iff p.p=p.A.p=0, giving an isotropic singular direction with F2=0",
+  "degree_drop_balances": [
+    {
+      "degree": 4,
+      "leading_degree": 1,
+      "powers": [
+        1,
+        0
+      ],
+      "escape_scale": "1/3",
+      "escape_action_power": "4/3",
+      "escape_count": 3,
+      "bounded_rank": 0
+    },
+    {
+      "degree": 4,
+      "leading_degree": 2,
+      "powers": [
+        1,
+        0
+      ],
+      "escape_scale": "1/2",
+      "escape_action_power": "2",
+      "escape_count": 2,
+      "bounded_rank": 1
+    },
+    {
+      "degree": 4,
+      "leading_degree": 3,
+      "powers": [
+        1,
+        0
+      ],
+      "escape_scale": "1",
+      "escape_action_power": "4",
+      "escape_count": 1,
+      "bounded_rank": 2
+    },
+    {
+      "degree": 4,
+      "leading_degree": 2,
+      "powers": [
+        2,
+        1
+      ],
+      "escape_scale": "1/2",
+      "escape_action_power": "3",
+      "escape_count": 2,
+      "bounded_rank": 1
+    },
+    {
+      "degree": 3,
+      "leading_degree": 2,
+      "powers": [
+        2,
+        1
+      ],
+      "escape_scale": "1",
+      "escape_action_power": "4",
+      "escape_count": 1,
+      "bounded_rank": 1
+    },
+    {
+      "degree": 3,
+      "leading_degree": 2,
+      "powers": [
+        3,
+        1
+      ],
+      "escape_scale": "2",
+      "escape_action_power": "7",
+      "escape_count": 1,
+      "bounded_rank": 1
+    },
+    {
+      "degree": 3,
+      "leading_degree": 1,
+      "powers": [
+        2,
+        1
+      ],
+      "escape_scale": "1/2",
+      "escape_action_power": "5/2",
+      "escape_count": 2,
+      "bounded_rank": 0
+    }
+  ],
+  "sharp_shear_regressions": [
+    {
+      "multiplier_degree": 1,
+      "power": 3,
+      "mixed": "-3"
+    },
+    {
+      "multiplier_degree": 2,
+      "power": 6,
+      "mixed": "180"
+    },
+    {
+      "multiplier_degree": 3,
+      "power": 9,
+      "mixed": "-45360"
+    }
+  ],
+  "Long_regressions": {
+    "orders": 5,
+    "three_variable_degree": 4,
+    "four_variable_degree": 3,
+    "mixed": "m!"
+  },
+  "resolved": "Every complex polynomial of total degree at most3 in three Gaussian coordinates satisfies GMC. Pure nullity forces a Gaussian W-linear frame; sufficient mixed cutoff m>3*deg Q is sharp.",
+  "minimal_failure_consequence": "Degree4 is minimal for a three-variable GMC failure; four variables are minimal for a cubic GMC failure, using Long\u2019s explicit examples and the quadratic theorem.",
+  "written_proof_certified_by_checker": false,
+  "proof_boundary": "Universal resolvent/quartic and isotropic elimination identities, model degree/action/count arithmetic and stated bounded Wick regressions. The one-variable period exclusions, exhaustive normal-form coverage and all-order closure/corollaries are written proofs, not machine verified.",
+  "remaining": "Independent specialist replay and external review; explicit global pure prefixes and global term-count optimality; coefficient schemes and lower-power GVC."
+}

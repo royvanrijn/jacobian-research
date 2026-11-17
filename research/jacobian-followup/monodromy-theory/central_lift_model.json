@@ -1,0 +1,291 @@
+{
+  "claims": [
+    "KMFI65",
+    "KMFI66",
+    "KMFI67",
+    "KMFI68"
+  ],
+  "universal_necessary_condition": "prime l not dividing |H| implies H^2(G,C_l)=0",
+  "all_affine_inertia_prime_to_l": true,
+  "universal_geometric_proof": "local unique coprime complement, unramified Brauer obstruction, purity and Br(A^d)[l]=0, proper central lift, UFD Kummer twisting, forbidden cyclic etale source cover",
+  "finite_checks_are_not_formal_geometry_proof": true,
+  "A4_absolute_occurrence": "excluded in every faithful transitive action",
+  "natural_PSL2_q_congruence3mod4_absolute_occurrence": "excluded for every odd prime power q",
+  "natural_PSL2_11_degree12_absolute_occurrence": "excluded",
+  "exceptional_PSL2_11_degree11_absolute_occurrence_decided": false,
+  "natural_A4_decided": true,
+  "family_controls": [
+    {
+      "q": 3,
+      "degree": 4,
+      "SL_order": 24,
+      "PSL_order": 12,
+      "stabilizer_order": 3,
+      "preimage_stabilizer_order": 6,
+      "central_double_cover_nonsplit": true,
+      "odd_stabilizer_obstruction_applies": true,
+      "absolute_exclusion_proved": true
+    },
+    {
+      "q": 5,
+      "degree": 6,
+      "SL_order": 120,
+      "PSL_order": 60,
+      "stabilizer_order": 10,
+      "preimage_stabilizer_order": 20,
+      "central_double_cover_nonsplit": true,
+      "odd_stabilizer_obstruction_applies": false,
+      "absolute_exclusion_proved": false
+    },
+    {
+      "q": 7,
+      "degree": 8,
+      "SL_order": 336,
+      "PSL_order": 168,
+      "stabilizer_order": 21,
+      "preimage_stabilizer_order": 42,
+      "central_double_cover_nonsplit": true,
+      "odd_stabilizer_obstruction_applies": true,
+      "absolute_exclusion_proved": true
+    },
+    {
+      "q": 11,
+      "degree": 12,
+      "SL_order": 1320,
+      "PSL_order": 660,
+      "stabilizer_order": 55,
+      "preimage_stabilizer_order": 110,
+      "central_double_cover_nonsplit": true,
+      "odd_stabilizer_obstruction_applies": true,
+      "absolute_exclusion_proved": true
+    },
+    {
+      "q": 13,
+      "degree": 14,
+      "SL_order": 2184,
+      "PSL_order": 1092,
+      "stabilizer_order": 78,
+      "preimage_stabilizer_order": 156,
+      "central_double_cover_nonsplit": true,
+      "odd_stabilizer_obstruction_applies": false,
+      "absolute_exclusion_proved": false
+    },
+    {
+      "q": 19,
+      "degree": 20,
+      "SL_order": 6840,
+      "PSL_order": 3420,
+      "stabilizer_order": 171,
+      "preimage_stabilizer_order": 342,
+      "central_double_cover_nonsplit": true,
+      "odd_stabilizer_obstruction_applies": true,
+      "absolute_exclusion_proved": true
+    }
+  ],
+  "cohomology_controls": {
+    "A4": {
+      "order": 12,
+      "normalized_C2_dimension": 121,
+      "cocycle_constraint_rank": 109,
+      "coboundary_rank": 11,
+      "H2_dimension": 1
+    },
+    "actual_binary8": {
+      "order": 24,
+      "normalized_C2_dimension": 529,
+      "cocycle_constraint_rank": 506,
+      "coboundary_rank": 23,
+      "H2_dimension": 0
+    }
+  },
+  "averaging_controls": [
+    {
+      "group_order": 3,
+      "prime": 2,
+      "complete_cocycles": 4
+    },
+    {
+      "group_order": 2,
+      "prime": 3,
+      "complete_cocycles": 3
+    }
+  ],
+  "tame_twist_controls": [
+    {
+      "prime": 2,
+      "inertia": 1,
+      "twist": 1
+    },
+    {
+      "prime": 2,
+      "inertia": 3,
+      "twist": 1
+    },
+    {
+      "prime": 2,
+      "inertia": 5,
+      "twist": 1
+    },
+    {
+      "prime": 2,
+      "inertia": 7,
+      "twist": 1
+    },
+    {
+      "prime": 3,
+      "inertia": 1,
+      "twist": 2
+    },
+    {
+      "prime": 3,
+      "inertia": 2,
+      "twist": 1
+    },
+    {
+      "prime": 3,
+      "inertia": 4,
+      "twist": 2
+    },
+    {
+      "prime": 3,
+      "inertia": 5,
+      "twist": 1
+    },
+    {
+      "prime": 3,
+      "inertia": 7,
+      "twist": 2
+    },
+    {
+      "prime": 5,
+      "inertia": 1,
+      "twist": 4
+    },
+    {
+      "prime": 5,
+      "inertia": 2,
+      "twist": 2
+    },
+    {
+      "prime": 5,
+      "inertia": 3,
+      "twist": 3
+    },
+    {
+      "prime": 5,
+      "inertia": 4,
+      "twist": 1
+    },
+    {
+      "prime": 5,
+      "inertia": 7,
+      "twist": 2
+    }
+  ],
+  "faithful_A4_action_controls": [
+    {
+      "degree": 6,
+      "stabilizer_order": 2,
+      "normal_closure_order": 4,
+      "normal_generation_passes": false,
+      "central_cover_excluded": false
+    },
+    {
+      "degree": 4,
+      "stabilizer_order": 3,
+      "normal_closure_order": 12,
+      "normal_generation_passes": true,
+      "central_cover_excluded": true
+    },
+    {
+      "degree": 6,
+      "stabilizer_order": 2,
+      "normal_closure_order": 4,
+      "normal_generation_passes": false,
+      "central_cover_excluded": false
+    },
+    {
+      "degree": 4,
+      "stabilizer_order": 3,
+      "normal_closure_order": 12,
+      "normal_generation_passes": true,
+      "central_cover_excluded": true
+    },
+    {
+      "degree": 12,
+      "stabilizer_order": 1,
+      "normal_closure_order": 1,
+      "normal_generation_passes": false,
+      "central_cover_excluded": false
+    },
+    {
+      "degree": 4,
+      "stabilizer_order": 3,
+      "normal_closure_order": 12,
+      "normal_generation_passes": true,
+      "central_cover_excluded": true
+    },
+    {
+      "degree": 6,
+      "stabilizer_order": 2,
+      "normal_closure_order": 4,
+      "normal_generation_passes": false,
+      "central_cover_excluded": false
+    },
+    {
+      "degree": 4,
+      "stabilizer_order": 3,
+      "normal_closure_order": 12,
+      "normal_generation_passes": true,
+      "central_cover_excluded": true
+    }
+  ],
+  "small_degree_complete_spectrum": [
+    {
+      "degree": 1,
+      "all_transitive_types": [
+        "1"
+      ],
+      "Keller_action_types": [
+        "1"
+      ]
+    },
+    {
+      "degree": 2,
+      "all_transitive_types": [
+        "C2"
+      ],
+      "Keller_action_types": []
+    },
+    {
+      "degree": 3,
+      "all_transitive_types": [
+        "C3",
+        "S3"
+      ],
+      "Keller_action_types": [
+        "S3"
+      ]
+    },
+    {
+      "degree": 4,
+      "all_transitive_types": [
+        "A4",
+        "C4",
+        "D8",
+        "S4",
+        "V4"
+      ],
+      "Keller_action_types": [
+        "S4"
+      ]
+    }
+  ],
+  "exceptional_preimage": {
+    "order": 120,
+    "perfect": true,
+    "criterion_applies": false
+  },
+  "actual_binary_occurrence_preserved": true,
+  "full_action_classification_complete": false
+}

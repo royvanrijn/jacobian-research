@@ -1,0 +1,11 @@
+{
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sealed_imports_sha256": {
+    "gaussian_saddle_arithmetic.py": "307f0a412cc2d1a327773bbc5796241b2965cdfba63cb6f2bebcd9fd418b154d",
+    "CRITICAL_NORMALIZATION_AND_RANK_ONE_ARITHMETIC.md": "fa0b5a57eee4afc90960ebc9470ce42a1df15b63cf06be53a61152f6ae7d1dba",
+    "gaussian_saddle_arithmetic_verification.json": "69cfd2de0c23eb2230cc12e95c3298b31f2e9f8b12742d76dc4ddd04ff26e8ab",
+    "GAUSSIAN_KLOOSTERMAN_QUOTIENTS_AND_FAITHFUL_SYMMETRIC_IMAGES.md": "4807af9edb1b4c1a8d529244c692d8eb5c0b38fc0b31b5147f8fa0e45aed496f",
+    "ALGEBRAIC_FIXED_POINT_LIFTS_AND_UNIVERSAL_GAUSSIAN_IMAGES.md": "5c4d210def0d05b8bf098e12532b97c98f220e92dc1f1ef9fe0617958f245080"
+  }
+}

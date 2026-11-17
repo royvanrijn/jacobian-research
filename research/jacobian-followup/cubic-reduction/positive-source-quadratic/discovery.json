@@ -1,0 +1,92 @@
+{
+  "modulus": 1000000007,
+  "degree_cap": 7,
+  "models": [
+    {
+      "parameters": [
+        0,
+        0,
+        0
+      ],
+      "primary_rank_mod_prime": 116,
+      "source_columns": 120,
+      "points": 58,
+      "proof_scope": "This one fixed parameter triple only,not a universal exclusion."
+    },
+    {
+      "parameters": [
+        1,
+        0,
+        0
+      ],
+      "primary_rank_mod_prime": 118,
+      "source_columns": 120,
+      "points": 59,
+      "proof_scope": "This one fixed parameter triple only,not a universal exclusion."
+    },
+    {
+      "parameters": [
+        0,
+        1,
+        0
+      ],
+      "primary_rank_mod_prime": 118,
+      "source_columns": 120,
+      "points": 59,
+      "proof_scope": "This one fixed parameter triple only,not a universal exclusion."
+    },
+    {
+      "parameters": [
+        0,
+        0,
+        1
+      ],
+      "primary_rank_mod_prime": 118,
+      "source_columns": 120,
+      "points": 59,
+      "proof_scope": "This one fixed parameter triple only,not a universal exclusion."
+    },
+    {
+      "parameters": [
+        1,
+        2,
+        3
+      ],
+      "primary_rank_mod_prime": 118,
+      "source_columns": 120,
+      "points": 59,
+      "proof_scope": "This one fixed parameter triple only,not a universal exclusion."
+    },
+    {
+      "parameters": [
+        1,
+        0,
+        1
+      ],
+      "primary_rank_mod_prime": 118,
+      "source_columns": 120,
+      "points": 59,
+      "proof_scope": "This one fixed parameter triple only,not a universal exclusion."
+    },
+    {
+      "parameters": [
+        1,
+        2,
+        1
+      ],
+      "primary_rank_mod_prime": 118,
+      "source_columns": 120,
+      "points": 59,
+      "proof_scope": "This one fixed parameter triple only,not a universal exclusion."
+    }
+  ],
+  "seconds": 0.516018455993617,
+  "scope": "Early fixed-parameter finite-rank pilots to discover rank stratification. No universal field or parameter exclusion is inferred.",
+  "source_input_sha256": "c420c4b98f84b90258b22dbf1709cb12156d265be1d34232e0082962248c4c1f",
+  "operator": "Full original cubic field normal form after replacing source a by a-q(b,c);two nonconstant field-basis coefficients.",
+  "interpretation": "Seven fixed-coefficient rank pilots are discovery only. Universal coverage is supplied separately by a written weighted-degeneration/Taylor argument and a new exact base-field9 minor.",
+  "seed": 20261115,
+  "target_point_recipe": "LCG next=(1664525*seed+1013904223) mod2^32;each coordinate=next mod97+1;skip noninvertible cubic derivative.",
+  "source_basis_recipe": "All120 source monomials of degree<=7,graded descending a then b.",
+  "primary_arithmetic_recipe": "Use the original cubic polynomial-triple normal form;replace source a by a-q(b,c);incremental row elimination over1000000007."
+}

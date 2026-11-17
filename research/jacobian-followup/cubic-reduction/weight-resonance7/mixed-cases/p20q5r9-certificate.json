@@ -1,0 +1,95 @@
+{
+  "status": "exact-primary-coefficient-powers",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "input_sha256": "4738977e3ece620df89299a70b7cd5b84a8f7ad43c43414cce10327f07e449ff",
+  "script_sha256": "f0bf32c773124e22e8b1590415b1aba66a6f7aeeb2bcba07630b08dee8b210c2",
+  "targets": [
+    {
+      "parameter": 0,
+      "power": 4,
+      "multipliers": [
+        [],
+        [
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/12"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-25/48"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-5/144"
+          }
+        ],
+        [],
+        [
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-5/12"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1/12"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              3,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1/6"
+          },
+          {
+            "exponent": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "5/8"
+          }
+        ]
+      ]
+    }
+  ],
+  "unresolved_parameters": []
+}

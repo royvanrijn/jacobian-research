@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "characteristic": 65521,
+  "algorithm": "homogeneous truncated degree16 membership probe",
+  "time_limit_seconds": 25,
+  "elapsed_seconds": 2.976,
+  "conclusion": "Modular only; no rational witness bound or exclusion."
+}

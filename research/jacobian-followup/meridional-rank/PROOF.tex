@@ -1,0 +1,312 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\F}{\mathbb F}
+\newcommand{\mr}{\operatorname{mr}}
+\title{Affine quadratic bounds and signed transposition quotients of knot groups}
+\author{Internal research working proof}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+The quadratic-refinement bound has explicit sharp knot representations in
+arbitrarily large dimension. The representations below have image the finite
+Coxeter group $W(D_r)$ and apply to a subfamily of pretzel knots already
+covered by established meridional-rank theorems. They turn the conditional
+criterion into concrete cases, without claiming new cases of the conjecture.
+An exact linear lifting test provides a way to seek further examples from
+symmetric quotients. The full conjecture remains open. All uniform results
+below rest on written proofs; the accompanying finite controls are not formal
+verification or external review. Priority of the elementary reformulation
+has not been established.
+
+\section{The quadratic bound with a possibly degenerate form}
+
+Let $V=\F_2^k$, and let $B$ be a fixed \emph{nonzero} alternating bilinear
+form on $V$. Nondegeneracy is not required. Suppose a group $H$ acts
+transitively on $V$ and has generators
+\[
+ T_i(x)=x+(B(u_i,x)+a_i)u_i,
+ \qquad 0\ne u_i\in V,\quad a_i\in\F_2.                 \tag{1}
+\]
+When $B(u_i,-)\ne0$, these are affine transvections. Every linear part
+preserves $B$. The formula is stable under affine conjugation with
+$B$-preserving linear part: conjugating by $h(x)=Lx+t$ replaces
+$(u,a)$ by $(Lu,a+B(Lu,t))$.
+
+\begin{theorem}\label{thm:quadratic}
+Any generating family of the form (1) for a transitive $H$ has at least
+$k+1$ members. In particular, a knot group with such a transitive
+representation, with every meridian of the form (1), satisfies
+$\mr(K)\ge k+1$, and $b(K)\ge k+1$.
+\end{theorem}
+\begin{proof}
+Each generator moves points only within cosets of
+$U=\langle u_1,\ldots,u_w\rangle$. Transitivity forces $U=V$, hence
+$w\ge k$. If $w=k$, these directions are a basis. Every alternating form,
+including a degenerate one, has quadratic refinements $q$ with $q(0)=0$;
+their values on a basis can be prescribed arbitrarily. Prescribe
+$q(u_i)=1+a_i$. Writing $b=B(u_i,x)$ gives
+\[
+ q(T_ix)+q(x)=(b+a_i)(q(u_i)+b)
+             =(b+a_i)(1+a_i+b)=0.
+\]
+Thus $H$ preserves $q$. The polar form of a constant normalized $q$ is zero,
+whereas $B\ne0$. Consequently $q$ has two nonempty level sets, contradicting
+transitivity. Apply this to images of any meridional generating family.
+The standard bridge presentation gives $\mr(K)\le b(K)$.
+\end{proof}
+
+This extends the nondegenerate argument in
+\href{../cross-programme-connections/BREAKTHROUGH_SEARCH_TOPOLOGICAL_COUPLING_2026_11_16.tex}{the original coupling proof}.
+The condition $B\ne0$ is necessary: for $B=0$, $k$ independent translations
+act transitively. Inconsistency of the refinement equations only rules out
+this particular obstruction; it does not prove transitivity for arbitrary
+affine transvection groups.
+
+\section{Signed transpositions and the exact transitivity criterion}
+
+For $r\ge3$, set
+\[
+ V_r=\{x\in\F_2^r:\textstyle\sum_jx_j=0\},\quad
+ B(x,y)=\textstyle\sum_jx_jy_j,\quad k=r-1.
+\]
+On $V_r$, $B$ is alternating and nonzero. Its radical is zero for odd $r$,
+and $\langle(1,\ldots,1)\rangle$ for even $r$.
+For $p\ne q$ put $u_{pq}=e_p+e_q$ and
+\[
+ s_{pq}^a(x)=x+(x_p+x_q+a)(e_p+e_q)
+            =(pq)x+a(e_p+e_q),\qquad a\in\F_2.          \tag{2}
+\]
+These are involutions preserving $V_r$. They are of the form (1) and have
+$2^{r-2}$ fixed points. They lie in
+\[
+ D_r=V_r\rtimes S_r=W(D_r),\qquad |D_r|=2^{r-1}r!.
+\]
+For $r=3$, $W(D_3)\cong W(A_3)\cong S_4$.
+The action is faithful: a coordinate permutation fixing every $e_p+e_q$
+is the identity when $r\ge3$, and a translation fixing zero is zero.
+
+Make a multigraph on $\{1,\ldots,r\}$ from generators $s_{p_iq_i}^{a_i}$,
+allowing repeated edges. Call its signing \emph{balanced} if there is
+$b\in\F_2^r$ with $a_i=b_{p_i}+b_{q_i}$ on every edge. Equivalently every
+cycle, including a length-two parallel-edge cycle, has sign sum zero.
+The underlying graph is connected exactly when the projected transpositions
+generate $S_r$.
+
+\begin{theorem}\label{thm:signedgraph}
+For a connected underlying graph and $r\ge3$, the following are equivalent:
+the signing is unbalanced; the generated group is all of $D_r$; the action
+on $V_r$ is transitive.
+\end{theorem}
+\begin{proof}
+Choose a spanning tree. An ambient translation $x\mapsto x+b$, with
+$b\in\F_2^r$, changes edge signs to $a_i+b_{p_i}+b_{q_i}$.
+Choose $b$ to make every tree sign zero. The resulting tree swaps generate
+the entire linear $S_r$. If the signing is unbalanced there is a remaining
+sign-one edge. Multiply its signed swap by the corresponding linear swap
+to obtain translation by $e_p+e_q$. Conjugation by $S_r$ supplies all
+root translations; they span $V_r$. Thus the translated group is $D_r$.
+Ambient translations normalize $D_r$ (since $b+\sigma b\in V_r$), so the
+original group is also $D_r$ and is transitive.
+
+If the signing is balanced, the original group preserves the Hamming
+weight of $x+b$. As $x$ runs through $V_r$, $x+b$ runs through a parity
+coset. An even coset has weights zero and two; an odd coset has weights
+one and three. For $r\ge3$, each has at least two weights, precluding
+transitivity. This also justifies the argument when $b$ is odd and hence
+is not an origin shift inside $V_r$.
+\end{proof}
+
+\begin{corollary}
+If a knot group surjects onto $D_r$ with meridians signed transpositions,
+then $\mr(K)\ge r$. A certified upper bound $b(K)\le r$ proves equality.
+For odd $r$ this uses the original nondegenerate theorem; even $r$ uses
+Theorem~\ref{thm:quadratic} with one-dimensional radical.
+\end{corollary}
+
+This is also a Coxeter quotient bound. The usual real reflection
+representation of $W(D_r)$ gives the same lower bound directly: fewer
+than $r$ reflecting hyperplanes have a nonzero common fixed vector.
+Thus this family of affine representations implements a known quotient
+method, rather than bypassing its scope limitations.
+
+\section{Explicit sharp pretzel representations in every rank}
+
+\begin{theorem}\label{thm:pretzel}
+Let $r\ge3$, $m\in\mathbb Z\setminus\{0\}$ and
+$h_1,\ldots,h_{r-1}\in\mathbb Z$. The pretzel knot
+\[
+ K=P\bigl(2m,\,3(2h_1+1),\ldots,3(2h_{r-1}+1)\bigr)    \tag{3}
+\]
+admits a transitive signed-transposition representation on $2^{r-1}$
+sheets. Its meridional rank and bridge number are both $r$.
+\end{theorem}
+\begin{proof}
+There is exactly one even pretzel parameter; following the strand
+connections therefore gives one component. All parameters have absolute
+value at least two. Section 2 of Baader--Blair--Kjuchukova
+\cite{bbk} supplies a meridian-preserving epimorphism onto the cycle group
+\[
+ C=\langle t_0,\ldots,t_{r-1}\mid t_i^2=1,
+       (t_it_{i+1})^{|p_i|}=1\ (i\bmod r)\rangle.       \tag{4}
+\]
+Pairs not consecutive have no imposed relation in (4).
+In particular, one must not add commutation relations on those pairs.
+The same pretzel diagram has $r$ maxima, giving $b(K)\le r$.
+
+Use coordinates numbered $0,\ldots,r-1$ and define
+\[
+ t_0\longmapsto s_{0,r-1}^0,\quad
+ t_1\longmapsto s_{0,r-1}^1,\quad
+ t_j\longmapsto s_{j-1,r-1}^0\quad(2\le j\le r-1).
+                                                               \tag{5}
+\]
+The first pair multiplies to a root translation of order two. Every other
+consecutive pair uses distinct roots sharing the last coordinate and
+has product of order three. To check the latter, any two such signed
+swaps can be made ordinary swaps by an ambient translation, so their
+product is conjugate to a three-cycle. Thus all relations (4) hold for
+the parameters (3), including negative twists.
+
+The multigraph in (5) is connected, and its repeated edge has opposite
+signs. It is unbalanced. Theorem~\ref{thm:signedgraph} proves that the
+image is $D_r$, with a transitive action on $2^{r-1}$ sheets.
+Theorem~\ref{thm:quadratic} gives $\mr(K)\ge r$, matching the upper bound.
+\end{proof}
+
+For example, $P(2,3,3,3,3)$ has an explicit transitive 16-sheet
+affine-symplectic representation proving $\mr=b=5$;
+$P(2,3,3,3,3,3,3)$ has a 64-sheet example proving $\mr=b=7$.
+The even-rank example $P(2,3,3,3)$ uses eight sheets and the degenerate
+extension, proving $\mr=b=4$.
+These equalities already follow from the pretzel and Montesinos literature;
+the contribution here is explicit realization of the proposed affine bound.
+
+\section{A linear test that raises a symmetric quotient bound by one}
+
+Suppose a presentation $G=\langle m_1,\ldots,m_s\mid R\rangle$ is supplied,
+every generator is a meridian, and a specified quotient
+$\phi:G\twoheadrightarrow S_r$ sends $m_i$ to $(p_iq_i)$.
+Seek images $m_i\mapsto s_{p_iq_i}^{a_i}$.
+Multiplication in $V_r\rtimes S_r$ is
+$(z,P)(w,Q)=(z+Pw,PQ)$. Evaluating relators therefore imposes homogeneous
+linear equations $Ma=0$ over $\F_2$. The permutation part of every
+relator must be checked first. Negative letters cause no ambiguity since
+all proposed generator images are involutions.
+
+Let $Z=\ker M\subset\F_2^s$, and let
+\[
+ C_\phi=\{(b_{p_i}+b_{q_i})_{i=1}^s:b\in\F_2^r\}.
+\]
+Every ambient cut vector lies in $Z$ by affine conjugation of the linear
+quotient. Connectedness gives $\dim C_\phi=r-1$.
+\begin{corollary}\label{cor:algorithm}
+The specified symmetric quotient admits a transitive signed-transposition
+lift if and only if $\dim Z>r-1$. Any vector in $Z\setminus C_\phi$ is
+a certificate. For a knot group such a certificate raises the usual
+transposition quotient bound $\mr\ge r-1$ to $\mr\ge r$.
+\end{corollary}
+\begin{proof}
+The relator equations are necessary and sufficient for a homomorphism
+from the supplied presentation. Theorem~\ref{thm:signedgraph} says exactly
+which homomorphisms are transitive.
+\end{proof}
+
+For even $r$, quotienting only by coboundaries from $b\in V_r$ is
+incorrect. An odd ambient potential can produce a balanced action with
+no common fixed point in $V_r$ but several orbits. For $r=4$, the
+generators $s_{03}^1,s_{13}^0,s_{23}^0$ have no common fixed point on eight
+sheets, yet have two four-point orbits. The correct cut space uses the
+whole ambient $\F_2^r$.
+
+\section{A uniform obstruction to the entire affine criterion}
+
+\begin{lemma}\label{lem:torus}
+Let $G_{p,q}=\langle x,y\mid x^p=y^q\rangle$ be a torus knot group and
+let $\rho:G_{p,q}\to H$ have finite image. If $\gcd(q,|H|)=1$, the image
+is abelian. If moreover meridians map to involutions, its order is at
+most two.
+\end{lemma}
+\begin{proof}
+The element $z=x^p=y^q$ is central. Since $q$ is relatively prime to
+the order of $\rho(y)$, the latter is a power of $\rho(y)^q=\rho(z)$
+and is therefore central. The image is generated by $\rho(x)$ and the
+central $\rho(y)$, so is abelian. A knot group has abelianization $\mathbb Z$
+generated by a meridian; an abelian image generated by a meridian
+involution has order at most two.
+\end{proof}
+
+\begin{theorem}\label{thm:nouniversal}
+For every $p\ge3$ and every prime $q>2^{p-1}-1$, the knot $T(p,q)$
+has no transitive representation satisfying Theorem~\ref{thm:quadratic}
+in any dimension. In particular, neither the original nondegenerate
+criterion nor its degenerate extension is universal for knots.
+\end{theorem}
+\begin{proof}
+The prime $q$ is greater than $p$, so these are coprime torus parameters.
+The usual $p$-strand diagram gives $b(T(p,q))\le p$. If a representation
+in dimension $k$ existed, Theorem~\ref{thm:quadratic} would give
+$k+1\le\mr\le p$, hence $2\le k\le p-1$ (a nonzero alternating form
+requires dimension at least two). But
+\[
+ |\operatorname{AGL}(k,2)|
+   =2^{k+k(k-1)/2}\prod_{j=1}^{k}(2^j-1).
+\]
+Every odd prime divisor is at most $2^k-1\le2^{p-1}-1<q$.
+The image order therefore is coprime to $q$.
+Every map (1) is an involution because $B(u_i,u_i)=0$.
+Lemma~\ref{lem:torus} forces image order at most two, which cannot
+act transitively on $2^k\ge4$ points.
+\end{proof}
+
+For example $T(3,5)$ admits no representation of the stipulated type
+in any dimension, though its known meridional rank and bridge number
+are both three. This obstruction applies to arbitrary affine images,
+not only Coxeter images. It is a limitation of the proposed criterion,
+not a counterexample to MRC. The elementary group-order deduction is
+recorded without a novelty claim.
+
+\section{Verification and the remaining conjecture}
+
+\texttt{signed\_lifts.py} implements Corollary~\ref{cor:algorithm} using
+standard-library integer bit arithmetic. Its input must carry independent
+provenance for the group presentation and the meridian labels. The saved
+pretzel example is a presentation of the published \emph{quotient} (4),
+not a full presentation of a knot group; composition with the published
+epimorphism is the reason its certificate applies to the knot.
+
+\texttt{verify\_signed\_lifts.py} exhausts connected simple signed graphs
+on three and four vertices, checks repeated-edge graphs and the pretzel
+quotients in ranks 3 through 14, independently enumerates the groups in
+ranks 3 through 5, and retains negative controls. Changing the first
+twist from two to three forces the two parallel signs to agree and
+removes every transitive lift of that \emph{fixed} symmetric quotient.
+This is not nonexistence of all possible quotients of that knot.
+
+No arbitrary knot is proved to possess a sharp representation. The next
+concrete gate is to obtain certified symmetric transposition colourings
+and matching bridge upper bounds for knots outside existing resolved
+families, then run the linear test. If it fails, other symmetric
+colourings, other quotient groups, or an entirely different lower-bound
+method may still succeed. Finite Coxeter quotients are not universal:
+known torus knots with no nontrivial Coxeter quotient already rule out
+a proof of the full conjecture restricted to the $W(D_r)$ construction
+\cite{bkm}. Theorem~\ref{thm:nouniversal} gives an independent obstruction
+to universality even after admitting arbitrary affine-symplectic images.
+
+\begin{thebibliography}{9}
+\bibitem{bbk} S. Baader, R. Blair, A. Kjuchukova,
+Coxeter groups and meridional rank of links,
+Math. Ann. 379 (2021), 1533--1551, especially Section 2.
+\url{https://doi.org/10.1007/s00208-020-02124-z}.
+\bibitem{bkm} R. Blair, A. Kjuchukova, N. Morrison,
+Coxeter quotients of knot groups through 16 crossings,
+especially Section 5 and Theorem 5.3.
+\url{https://arxiv.org/abs/2208.09032}.
+\end{thebibliography}
+\end{document}

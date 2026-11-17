@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Lemma 10.157.4 (031S): Serre&#39;s criterion for normality&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELQ" data-tag="0ELQ">1</a>: Preliminaries
+    
+  
+    <li>Chapter <a href="/tag/00AO" data-tag="00AO">10</a>: Commutative Algebra
+    
+  
+    <li>Section <a href="/tag/031O" data-tag="031O">10.157</a>: Serre's criterion for normality
+    
+  
+    <li class="active">Lemma <a href="/tag/031S" data-tag="031S">10.157.4</a>: Serre's criterion for normality
+    <span id="citation">(<a href="/tag/031S/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/031R">previous lemma</a>
+  
+  
+    <li class="right"><a href="/tag/0567">next lemma</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+    <hr>
+
+    <div class="information">
+      
+  <ul class="tag-info">
+    <li class="tag-history"><a href="/tag/031S/history">history</a>
+    <li class="tag-statistics"><a href="/tag/031S/statistics">statistics</a>
+    
+      <li class="tag-dependencies"><a href="/tag/031S/statistics#dependencies">20 tags refer to this tag</a>
+    
+  </ul>
+
+    </div>
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+    <p class="slogan alert alert-primary"><strong> Normal equals R1 plus S2. </strong>
+  
+
+  
+    <p class="reference alert alert-info"> <span class="cite">[<span class="postnote">IV, Theorem 5.8.6</span>, <a href="/bibliography/EGA">EGA</a>]</span> 
+  
+
+  
+
+  <article class="env-lemma" id="031S">
+        
+      
+      
+  <p><a class="environment-identifier" href="/tag/031S">Lemma <span data-tag="031S">10.157.4</span> <span class="named">(Serre's criterion for normality)</span>.</a> Let $R$ be a Noetherian ring. The following are equivalent: </p>
+  <p><ol>
+  <li><p>
+$R$ is a normal ring, and 
+</p>
+</li><li><p>
+$R$ has properties $(R_1)$ and $(S_2)$. 
+</p>
+</li>
+</ol></p>
+</article><article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Proof of (1) $\Rightarrow $ (2). Assume $R$ is normal, i.e., all localizations $R_{\mathfrak p}$ at primes are normal domains. In particular we see that $R$ has $(R_0)$ and $(S_1)$ by Lemma <a href="/tag/031R" data-tag="031R">10.157.3</a>. Hence it suffices to show that a local Noetherian normal domain $R$ of dimension $d$ has depth $\geq \min (2, d)$ and is regular if $d = 1$. The assertion if $d = 1$ follows from Lemma <a href="/tag/00PD" data-tag="00PD">10.119.7</a>. 
+    <p>
+      Let $R$ be a local Noetherian normal domain with maximal ideal $\mathfrak m$ and dimension $d \geq 2$. Apply Lemma <a href="/tag/0BHZ" data-tag="0BHZ">10.119.2</a> to $R$. It is clear that $R$ does not fall into cases (1) or (2) of the lemma. Let $R \to R'$ as in (4) of the lemma. Since $R$ is a domain we have $R \subset R'$. Since $\mathfrak m$ is not an associated prime of $R'$ there exists an $x \in \mathfrak m$ which is a nonzerodivisor on $R'$. Then $R_ x = R'_ x$ so $R$ and $R'$ are domains with the same fraction field. But finiteness of $R \subset R'$ implies every element of $R'$ is integral over $R$ (Lemma <a href="/tag/00GK" data-tag="00GK">10.36.3</a>) and we conclude that $R = R'$ as $R$ is normal. This means (4) does not happen. Thus we get the remaining possibility (3), i.e., $\text{depth}(R) \geq 2$ as desired. 
+    <p>
+      Proof of (2) $\Rightarrow $ (1). Assume $R$ satisfies $(R_1)$ and $(S_2)$. By Lemma <a href="/tag/031R" data-tag="031R">10.157.3</a> we conclude that $R$ is reduced. Hence it suffices to show that if $R$ is a reduced local Noetherian ring of dimension $d$ satisfying $(S_2)$ and $(R_1)$ then $R$ is a normal domain. If $d = 0$, the result is clear. If $d = 1$, then the result follows from Lemma <a href="/tag/00PD" data-tag="00PD">10.119.7</a>. 
+    <p>
+      Let $R$ be a reduced local Noetherian ring with maximal ideal $\mathfrak m$ and dimension $d \geq 2$ which satisfies $(R_1)$ and $(S_2)$. By Lemma <a href="/tag/030C" data-tag="030C">10.37.16</a> it suffices to show that $R$ is integrally closed in its total ring of fractions $Q(R)$. Pick $x \in Q(R)$ which is integral over $R$. Then $R' = R[x]$ is a finite ring extension of $R$ (Lemma <a href="/tag/02JJ" data-tag="02JJ">10.36.5</a>). Because $\dim (R_\mathfrak p) < d$ for every nonmaximal prime $\mathfrak p \subset R$ we have $R_\mathfrak p = R'_\mathfrak p$ by induction. Hence the support of $R'/R$ is $\{ \mathfrak m\} $. It follows that $R'/R$ is annihilated by a power of $\mathfrak m$ (Lemma <a href="/tag/00L6" data-tag="00L6">10.62.4</a>). By Lemma <a href="/tag/0BHZ" data-tag="0BHZ">10.119.2</a> this contradicts the assumption that the depth of $R$ is $\geq 2 = \min (2, d)$ and the proof is complete. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (3)</h2>
+
+  
+    <a id="comment-847" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/031S#comment-847">Comment #847</a>
+        by
+        <cite><a href="http://www.math.sunysb.edu/jstarr/index.htm" rel="author">Jason Starr</a></cite>
+        
+        on <time datetime="2014-07-24 20:20:13">July 24, 2014 at 20:20 </time>
+      </header>
+
+      <blockquote><p>Suggested slogan: Normal equals R1 plus S2.</p></blockquote>
+    </article>
+  
+    <a id="comment-2729" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/031S#comment-2729">Comment #2729</a>
+        by
+        <cite>Ariyan Javanpeykar</cite>
+        on <time datetime="2017-08-01 23:54:43">August 01, 2017 at 23:54 </time>
+      </header>
+
+      <blockquote><p>A reference for Serre's criterion: EGA IV2 Theorem 5.8.6</p></blockquote>
+    </article>
+  
+    <a id="comment-2854" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/031S#comment-2854">Comment #2854</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2017-10-04 15:42:19">October 04, 2017 at 15:42 </time>
+      </header>
+
+      <blockquote><p>Thanks added the reference <a href="https://github.com/stacks/stacks-project/commit/edda76cb747f7f4986127fba2da5af97f3882355">here</a>.</p></blockquote>
+    </article>
+  
+
+  
+    <p>There are also:
+    <ul>
+      
+        <li>4 comment(s) on Section <a href="/tag/031O#comments" data-tag="031O">10.157</a>: Serre's criterion for normality
+      
+    </ul>
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-031S",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">031S</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="031S"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">031S</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/031R">previous lemma</a>
+  
+  
+    <li class="right"><a href="/tag/0567">next lemma</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/algebra.pdf#nameddest=031S">View Lemma <span data-tag="031S">10.157.4</span> as pdf</a>
+  
+
+  
+
+    <hr>
+
+    <div class="information">
+      
+  <ul class="tag-info">
+    <li class="tag-history"><a href="/tag/031S/history">history</a>
+    <li class="tag-statistics"><a href="/tag/031S/statistics">statistics</a>
+    
+      <li class="tag-dependencies"><a href="/tag/031S/statistics#dependencies">20 tags refer to this tag</a>
+    
+  </ul>
+
+    </div>
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

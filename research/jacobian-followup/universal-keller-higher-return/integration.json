@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T05:03:47.950205+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UAMULTIKER1",
+    "UABASICTIME1",
+    "UAMARKEDDEF1",
+    "UARETURNESC1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAALLATOM1",
+    "UACANFIB1",
+    "UACANVOL1",
+    "UAFILTER1",
+    "UAGEOMFEED1",
+    "UAJOINTFACT1",
+    "UAJOINTKER1",
+    "UAM1",
+    "UAPARALLEL1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UAMULTIKER1",
+    "UABASICTIME1",
+    "UAMARKEDDEF1",
+    "UARETURNESC1"
+  ],
+  "old_entry_count": 2391,
+  "new_entry_count": 2395,
+  "unchanged_existing_entry_count": 2381,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "8c724c74c60b8845c81ed4b48bf55cf1d7a04011249c57693a51123518fb5787",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "97ea252bf2057d0d",
+    "UAMULTIKER1": "05ca4053209278dd",
+    "UABASICTIME1": "250b6687b26b9372",
+    "UAMARKEDDEF1": "e12d2cc112b0940f",
+    "UARETURNESC1": "65e0e6fbadc04c48"
+  },
+  "updated_lessons": [
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "54182f8423db939cef1aa231f1628644897041035612afadd6ed72b219f107cf",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "Exact common rational/polynomial kernels in every constant return rank, including codimension-zero/one auxiliary polynomial kernels.",
+    "Descended higher-rank time Keller families have actual factors without assuming JC(r), including cyclic nilpotent and nonlinear recent time examples.",
+    "Universal divisor-preserving all-degree atomic auxiliary profiles and canonical same-fibre non-atomic deformations.",
+    "Sharp non-descended rank-two and full-rank examples, a hyperbola source-leaf boundary and the native rank-three span obstruction."
+  ],
+  "assurance": "Four written general theorem claims with 61 selected exact controls. No independent universal proof replay, formal verification, external review or publication-priority certificate. Canonical absolute atomicity remains open.",
+  "finite_order_extension": "UAMARKEDDEF1 retains the complete restricted morphism over V(I(a)^ell), for every prescribed finite ell, while auxiliary generic degree ranges over all d>=3. No simultaneous full-formal-completion agreement is asserted."
+}

@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "abe6e47e820d24e4f723ed29f63654c0c6d7978fa49b51e6225a31c0542985cf",
+  "adapter_sha256": "4120bcd01fde636a632cba35f1d724f4ed451c10c5e758f83053a0c72b1e1521",
+  "gaussian_backend_sha256": "894f60d1977efe347881b0d514ce88659d5556b4cce72a710b9acced8521bd1a",
+  "sympy_version": "1.14.0",
+  "decided_reused_certificate_controls": [
+    {
+      "example": "2O_zero.json",
+      "sha256": "bf8c7a92156fcf6a4bb63267070f5aa8fb3587d2cfe41239ab05f99714bc8c16",
+      "status": "DECIDED",
+      "safe": true
+    },
+    {
+      "example": "2O_constant.json",
+      "sha256": "acf1485ef3af11f64d02165bbba7a940b0f5e7a4a440c727f7e2d4cc0038525d",
+      "status": "DECIDED",
+      "safe": false
+    },
+    {
+      "example": "2O_sphere_zero.json",
+      "sha256": "43bd96a037406765775bfc1ffdf2d19c04c824fa19a69fa31908101ef82d2422",
+      "status": "DECIDED",
+      "safe": true
+    },
+    {
+      "example": "2I_zero.json",
+      "sha256": "7a08c5f6ef1c2fbc1a03709d6cffd57001e0facaeb7aa7096b974cb2a461fa08",
+      "status": "DECIDED",
+      "safe": true
+    },
+    {
+      "example": "2I_constant.json",
+      "sha256": "d2c3268cd36dac3bb1e78445fb4c756483ca9e5895fd1b2de7d21ea7935eaadb",
+      "status": "DECIDED",
+      "safe": false
+    },
+    {
+      "example": "2I_sphere_zero.json",
+      "sha256": "be538ac2093cc28a4e893e253f2f366d87cccb60cdb7c087750d04c78664c13a",
+      "status": "DECIDED",
+      "safe": true
+    }
+  ],
+  "nonconstant_original_invariant_preparation": {
+    "example": "2O_degree8_preparation.json",
+    "sha256": "d1b49a863c036bb801104c38ddca7e8817806896995b1230882e0084c593c296",
+    "status": "PREPARED only"
+  },
+  "homogeneous_Reynolds_marker_radial_factor_controls": [
+    {
+      "group": "2O",
+      "ambient_marker_degree": 2,
+      "Reynolds_marker": "r\u00b2/4",
+      "original_sphere_marker": "1/4",
+      "radial_factor": 4,
+      "Gaussian_moment": 1
+    },
+    {
+      "group": "2I",
+      "ambient_marker_degree": 2,
+      "Reynolds_marker": "r\u00b2/4",
+      "original_sphere_marker": "1/4",
+      "radial_factor": 4,
+      "Gaussian_moment": 1
+    }
+  ],
+  "mutation_rejections": [
+    "odd noninvariant original phase",
+    "even but noninvariant original phase",
+    "wrong phase Gaussian certificate",
+    "wrong coefficient field Gaussian certificate",
+    "invalid timeout",
+    "nonpure unsafe phase mislabeled MZ failure",
+    "incomplete fixed Reynolds marker",
+    "wrong radial homogenization degree",
+    "mutated backend safety certificate",
+    "wrong original cutoff"
+  ],
+  "CLI_retained_certificate_consumption_pass": true,
+  "UNKNOWN_propagates_without_decision": true,
+  "new_CAS_constructions": 0,
+  "new_Gaussian_source_algorithm_implemented": false,
+  "pointwise_ALL_degree_input_and_ALL_marker_certificate_transfer_written_proof": true,
+  "fixed_original_marker_kept_homogeneous": true,
+  "original_filtration_cutoff_transferred": true,
+  "unit_period_selected_independently_of_zero_Hom": true,
+  "new_nonconstant_phase_safety_decisions_run": false,
+  "full_phase_family_decision_implemented": false,
+  "actual_period_kernel_computed": false,
+  "arbitrary_transcendental_coefficients_implemented": false,
+  "new_pure_exceptional_failure_produced": false,
+  "full_exceptional_purity_implies_extension_zero_proved": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_next_task": false,
+  "new_degree_support_or_parameter_campaign": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients"
+}

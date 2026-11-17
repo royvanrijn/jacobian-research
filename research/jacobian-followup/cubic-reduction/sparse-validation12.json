@@ -1,0 +1,47 @@
+{
+  "all_variables_symbolic": true,
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "base_sha256": "dce5f85f0b8b80cc76ac38a845c928cddb1bd971c530272ab26e2016fcb9e3fd",
+  "base_source_sha256": "5219d9bcbadf726436af9c3276e2c6427858727e18043a17250f049ddc29c6cf",
+  "baseline_and_final_full_polynomial_determinants": true,
+  "baseline_nonlinear_total": 40,
+  "both_carrier_inverse_identities": true,
+  "carrier_nilpotence_exponent": 3,
+  "collision_points": 2,
+  "conjugations": [
+    {
+      "i": 8,
+      "j": 7,
+      "t": "3/2"
+    },
+    {
+      "i": 10,
+      "j": 9,
+      "t": "3/2"
+    }
+  ],
+  "degree": 3,
+  "determinant_one": true,
+  "dimension": 12,
+  "identity_derivative": true,
+  "nonlinear_counts": [
+    4,
+    10,
+    10,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2
+  ],
+  "nonlinear_total": 36,
+  "primary_source_sha256": "36754ddf9074356271207afa1da117d6214f440d873e2e298f09a2f1ee16bf2a",
+  "scope": "Sparsity improvement40 to36 in the already verified BCRDB1 twelve-variable cubic map. No dimension improvement, global optimum or priority claim. Three-variable normalized bounds [10,48] unchanged.",
+  "source_sha256": "ee52f15b7ed8f8531d91916dccfa30b1574e276f520cbad870b48ce292dda786",
+  "status": "pass",
+  "witness_sha256": "3d52826216914d3ff7f6dc3be41272c5807df8f75d4fc796bd85e22200edb6fb"
+}

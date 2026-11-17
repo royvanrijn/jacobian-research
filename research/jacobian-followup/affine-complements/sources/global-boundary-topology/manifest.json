@@ -1,0 +1,42 @@
+{
+  "as_of": "2026-11-14",
+  "primary_sources": [
+    {
+      "path": "chau-1999-vitushkin.pdf",
+      "url": "https://math.ac.vn/uploads/files/9901109.pdf",
+      "title": "Nguyen Van Chau, A remark on Vitushkin\u2019s covering, Acta Math. Vietnam.24(1999),109\u2013115, Theorem1.1",
+      "sha256": "2a6fc2fd9077737d0bb43d0f4998e0d6090a2c6a94e8482981c6ea29b208b77f",
+      "accessed": "2026-11-14",
+      "used_as": "explicit imported theorem, not independently re-proved"
+    },
+    {
+      "path": "chau-2003-two-remarks.pdf",
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/84523",
+      "title": "Nguyen Van Chau, Two remarks on non-zero constant Jacobian polynomial maps of C2, Ann. Polon. Math.82.1(2003),39\u201344, Theorem2 and Corollary3",
+      "sha256": "7889bd17c97509d7bd804e2eb2c7938c2083af1bcd4d006ed7433c01c360e36e",
+      "accessed": "2026-11-14",
+      "used_as": "explicit imported theorem, not independently re-proved"
+    }
+  ],
+  "novelty_claim": false,
+  "imports": {
+    "chau_1999": {
+      "theorem": "1.1",
+      "hypotheses": [
+        "polynomial map of C2",
+        "nonzero constant Jacobian",
+        "covering outside a curve homeomorphic to C"
+      ],
+      "conclusion": "bijective"
+    },
+    "chau_2003": {
+      "theorem": "2; Corollary3",
+      "hypotheses": [
+        "polynomial Keller map of C2",
+        "whole exceptional curve has the stated parametrization type"
+      ],
+      "conclusion": "exceptional curve cannot have components of the simultaneous form (t^k,q(t)); in particular it is not simply connected"
+    },
+    "independently_reproved": false
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "arity": 3,
+  "boundary": "The interval [10,49] concerns the normalized raw-degree-at-most-seven frame; 49 is sharp only among the specified boundary frames.",
+  "claims": [
+    "GLDC4",
+    "KFRAME1"
+  ],
+  "controls_rerun": true,
+  "controls_sha256": "a8091c352cf3214f541a08b3951642f8542b4ddad4fb79e5a1d449212ef0e3c9",
+  "coverage_sha256": "8c4d41d6b06d08be49791a14f17e194527f972a17101452e921011ca41382b90",
+  "degree_bound": 7,
+  "excluded_nine_term_ideals": 0,
+  "frame_certificate_independent": {
+    "complete_coefficient_factorization": true,
+    "generic_support": 67,
+    "independent_coefficient_inputs": true,
+    "minimum": 49,
+    "pairwise_coprime_factors": 30,
+    "proof_uses_irreducibility_labels": false,
+    "unique_minimizing_parameter": -2
+  },
+  "independent_visits": 7228226,
+  "lower_bound": 10,
+  "manifest_sha256": "3ce3599777375f2a97deec9724a808f59f32c685e1e2542a4d65db677d0dfc5f",
+  "normalized_witness_independent": {
+    "collision_0_e1": true,
+    "coordinate_degrees": [
+      4,
+      6,
+      7
+    ],
+    "determinant_one": true,
+    "nonlinear_counts": [
+      5,
+      18,
+      26
+    ],
+    "tangent_identity": true
+  },
+  "production_visits": 6040767,
+  "proof_dependency": "KPAIR1 and Moh degree-100 plane theorem",
+  "retained_candidates": 0,
+  "source_sha256": "d0756e78b38979fc350ee3734e1d785649a0e9e93e416dcd962ecdfcffaa5173",
+  "status": "pass",
+  "upper_bound": 49
+}

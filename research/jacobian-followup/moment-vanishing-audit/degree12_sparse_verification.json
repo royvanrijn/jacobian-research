@@ -1,0 +1,118 @@
+{
+  "checker_sha256": "250e3263a8fbf3977ba0c8b2513fb5f59082c2a5c6a14e6aba138700a2a0e3b9",
+  "certificate_sha256": "50282ca49c0b8c93e3a498ce6070b528bd4ca065831028e654e6e7e49dd03797",
+  "cases": {
+    "2O": {
+      "support_counts": {
+        "2": {
+          "crossing_supports": 36,
+          "weyl_representatives": 21
+        },
+        "3": {
+          "crossing_supports": 216,
+          "weyl_representatives": 111
+        },
+        "4": {
+          "crossing_supports": 645,
+          "weyl_representatives": 330
+        }
+      },
+      "certificate_orders": {
+        "2": {
+          "2": 6,
+          "3": 3,
+          "4": 2,
+          "5": 3,
+          "6": 1,
+          "7": 3,
+          "8": 1,
+          "9": 1,
+          "11": 1
+        },
+        "3": {
+          "2": 45,
+          "3": 34,
+          "4": 14,
+          "5": 12,
+          "6": 4,
+          "8": 1,
+          "10": 1
+        },
+        "4": {
+          "2": 180,
+          "3": 87,
+          "4": 46,
+          "5": 12,
+          "6": 4,
+          "9": 1
+        }
+      },
+      "certificates": 462,
+      "zero_weight_square": "32/13",
+      "controls": {
+        "prefix11": "-43987763200000/23813095609334142593573",
+        "marked_sharp": "-536540715417600/436092044389001"
+      },
+      "cached_balanced_integrals": 167
+    },
+    "2I": {
+      "support_counts": {
+        "2": {
+          "crossing_supports": 36,
+          "weyl_representatives": 21
+        },
+        "3": {
+          "crossing_supports": 216,
+          "weyl_representatives": 111
+        },
+        "4": {
+          "crossing_supports": 645,
+          "weyl_representatives": 330
+        }
+      },
+      "certificate_orders": {
+        "2": {
+          "2": 6,
+          "3": 3,
+          "4": 2,
+          "5": 3,
+          "6": 1,
+          "7": 3,
+          "8": 1,
+          "9": 1,
+          "11": 1
+        },
+        "3": {
+          "2": 45,
+          "3": 34,
+          "4": 14,
+          "5": 12,
+          "6": 4,
+          "8": 1,
+          "10": 1
+        },
+        "4": {
+          "2": 180,
+          "3": 87,
+          "4": 44,
+          "5": 13,
+          "6": 5,
+          "9": 1
+        }
+      },
+      "certificates": 462,
+      "zero_weight_square": "275/13",
+      "controls": {
+        "prefix11": "23788050537109375/807223579977428562494",
+        "marked_sharp": "17610926850000000/39644731308091"
+      },
+      "cached_balanced_integrals": 169
+    }
+  },
+  "all_exact_identities_pass": true,
+  "full_V12_decided": false,
+  "full_exceptional_MZ_decided": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

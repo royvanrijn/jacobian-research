@@ -1,0 +1,65 @@
+{
+  "claims": [
+    "KMFI153",
+    "KMFI154"
+  ],
+  "previous_goal_turn": "progress: KMFI151--152 closed the entire arbitrary-matrix chained-square family.",
+  "fixed_hypersurface_lemma": {
+    "dimensions": "every n>=3",
+    "map": "u*M*p+a*ell^2",
+    "M": "invertible",
+    "Mb": "a",
+    "u(b)": 0,
+    "u(a)": "nonzero",
+    "exterior_coefficient_kernels_checked": [
+      {
+        "dimension": 3,
+        "linear_two_form_kernel": 3,
+        "constant_two_form_kernel": 0
+      },
+      {
+        "dimension": 4,
+        "linear_two_form_kernel": 4,
+        "constant_two_form_kernel": 0
+      }
+    ],
+    "degree2_fixed_form": "L*p+D*c",
+    "higher_degree_fixed_form": "L*p",
+    "rank_one_M_contradiction": true,
+    "nontransverse_square_fixed_quadric_control_retained": true
+  },
+  "single_square_family": {
+    "direction": "A*(u^2,ux,uy,uz+x^2)",
+    "A": "arbitrary GL4",
+    "matched_critical_hyperplane_branch_closed": true,
+    "variable_base_ruling": "skew directrices produce a limiting line in u0 sent outside it",
+    "whole_offending_critical_value": "M03*Delta^2",
+    "constant_base_ruling": "invariant cone vertex gives fixed nonlinear quotient curve, excluded by the n3 lemma",
+    "all_nonlinear_scalar_factors_excluded": true,
+    "individual_factor_degree_bound_used": false,
+    "linear_factors": "D(a)=D(b)=0 and D*M=cD",
+    "whole_scalar": "partial_a F=partial_b F=0",
+    "differentiated_trace": "u(a)*F=0, contradiction"
+  },
+  "actual_normalized_control": {
+    "coefficient_field": "Q(beta), beta^2-beta+1=0",
+    "lambda": "1+beta",
+    "F": "y",
+    "A": "diag(1,lambda,beta,lambda)",
+    "rankDX": 3,
+    "entire_sweep_Jacobian": "gamma^4",
+    "P_generically_regular_nilpotent": true,
+    "minor": "2*lambda^2*u*x*y^3"
+  },
+  "remaining_primitive_quadratic_families": [
+    "K_B mixed chain",
+    "K_D product shear"
+  ],
+  "remaining_scalar_form": "nonconstant, coprime to u, irreducible degrees1..3 and unbounded multiplicities",
+  "all_quadratic_directions_closed": false,
+  "new_occurrence_action_claimed": false,
+  "actual_PSL11_input_supplied": false,
+  "absolute_exceptional_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

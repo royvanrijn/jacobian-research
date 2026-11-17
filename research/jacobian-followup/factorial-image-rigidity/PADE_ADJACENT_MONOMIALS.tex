@@ -1,0 +1,319 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Pad\'e strip separation for adjacent nonconstant monomial supports}
+\author{Internal algebraic proof and symbolic positivity certificates; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+All moments use ordinary factorials. We study
+$f(X)=X^a(A+BX)$, where $a$ is a nonnegative integer and $A,B$ are
+complex, with a nonzero polynomial. This changes the support family:
+when $a>0$ both monomials are nonconstant and the Gamma shape in the
+$n$th moment is $an+1$, varying with $n$. The fixed-shape Appell
+squarefreeness equivalence is not used.
+
+\begin{theorem}\label{thm:family}
+For every $a\in\{1,2,3,4,5,6\}$, $X^a(A+BX)$ satisfies Strong Factorial
+at every starting index. The case $a=0$ is already covered by the
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{constant-plus-power theorem}.
+More generally, for every pair of integers $n\ge2$, $a\ge1$ with
+\[
+                            a\ge2n-3,                 \tag{1}
+\]
+the two moments at orders $n-1,n$ cannot both vanish.
+\end{theorem}
+The retained \href{sources/rocks-2015-author-preprint.pdf}{Rocks 2015 author manuscript},
+Proposition 3.14, already gives
+the $a=0,1,2$ cases; Proposition 3.15 and Remarks 3.18--3.19 give partial
+statements for general $a\ge3$. This is a scope comparison with the pinned
+author draft, not a novelty claim or complete final-publication audit.
+The general $a$ assertion, arbitrary monomial pairs and unrestricted
+FC/SFC remain open beyond the conclusions proved here.
+
+\section{Exact Pad\'e polynomials, proved from coefficients}
+For integers $M,N\ge0$, put
+\[
+ P_{M,N}(z)=\sum_{j=0}^M
+ \frac{(M+N-j)!M!}{(M+N)!(M-j)!j!}z^j,
+\quad
+ Q_{M,N}(z)=\sum_{j=0}^N
+ \frac{(-1)^j(M+N-j)!N!}{(M+N)!(N-j)!j!}z^j.
+                                                               \tag{2}
+\]
+Both constant terms are one, and their degrees are exactly $M,N$.
+They satisfy
+\[
+                  e^zQ_{M,N}(z)-P_{M,N}(z)=O(z^{M+N+1}). \tag{3}
+\]
+For a direct coefficient proof, multiply $[z^j]e^zQ$ by
+$(M+N)!j!/N!$. For $0\le j\le M+N$, the result is
+\[
+ \sum_{k=0}^{j}(-1)^k\binom jk(M+N-k)_{\underline M}.
+\]
+Terms with $k>N$ vanish, so extending the original sum to $j$ is valid.
+The finite difference is zero for $j>M$, and otherwise equals
+$(M)_{\underline j}(M+N-j)_{\underline{M-j}}$.
+This is exactly the coefficient of $P$ in (2), proving (3) without
+an imported Pad\'e normality theorem.
+
+For the normalized factorial moment set
+\[
+ B_{n,a}(t)=\sum_{k=0}^n\binom nk(an+1)_k t^k.
+\]
+Then
+\[
+ \mathcal L(f^n)=A^n(an)!B_{n,a}(B/A),\qquad
+ Q_{an,n}(z)=\frac{(-1)^n(an)!}{((a+1)n)!}
+                  z^nB_{n,a}(-1/z).                 \tag{4}
+\]
+Thus, for nonzero $A,B$, the adjacent obstruction at terminal $n$ is
+exactly a common zero of $Q_{an,n}$ and $Q_{a(n-1),n-1}$.
+No zero at $z=0$ occurs. If either coefficient vanishes, $f$ is a monomial
+and all its positive moments are nonzero.
+
+\section{A sharp elementary strip for the denominators}
+\begin{lemma}\label{lem:strip}
+Every zero $\zeta$ of $Q_{M,N}$, for $N\ge1$, satisfies
+\[
+          M-N+2\le\operatorname{Re}\zeta\le M+N.       \tag{5}
+\]
+Both inequalities are strict when $N\ge2$.
+\end{lemma}
+\begin{proof}
+Write $S=M+N$ and consider the $N$ by $N$ complex symmetric tridiagonal
+matrix $T$ with
+\[
+ T_{jj}=S+2-2j,\qquad
+ T_{j,j+1}=T_{j+1,j}=i\sqrt{j(S+1-j)}\quad(1\le j<N).
+\]
+All square roots are positive real. Its leading principal characteristic
+polynomials $D_j$ satisfy
+\[
+ D_0=1,\quad D_1=z-S,\quad
+ D_j=(z-S-2+2j)D_{j-1}+(j-1)(S+2-j)D_{j-2}.
+\]
+Substitution of
+\[
+ D_j(z)=\sum_{k=0}^j(-1)^{j-k}\frac{j!}{k!}
+                      \binom{S-k}{j-k}z^k
+\]
+verifies the recurrence and its initial values. At $j=N$ it gives
+\[
+            Q_{M,N}(z)=\frac{(-1)^N M!}{(M+N)!}\det(zI-T).
+\]
+The Hermitian part $(T+T^*)/2$ is the real diagonal matrix with entries
+$S,S-2,\ldots,S+2-2N$. For an eigenvector $u$,
+$\operatorname{Re}\zeta=u^*((T+T^*)/2)u/(u^*u)$, proving (5).
+When $N\ge2$, equality at an extreme would force $u$ to be supported
+on the first or last coordinate only. The nonzero neighboring matrix
+entry makes this impossible for an eigenvector. This proves strictness.
+\end{proof}
+Applying the strict lower bound to $Q_{an,n}$ and the upper bound to
+$Q_{a(n-1),n-1}$ gives (1), since the two strip endpoints differ by
+$a+3-2n$. Equality is harmless because the first lower bound is strict.
+
+\section{The exact auxiliary polynomial}
+Fix $a\ge1,n\ge2$ and put
+\[
+ \ell=(a+1)(n-1)+1,\qquad
+ C_{a,n}=\frac{n!}{((a+1)n)!}
+         \frac{(-1)^{n-1}(a(n-1))!}{((a+1)(n-1))!}\ne0.
+\]
+Equations (2)--(3) imply the polynomial identity
+\[
+ P_{an,n}Q_{a(n-1),n-1}-P_{a(n-1),n-1}Q_{an,n}
+       =C_{a,n}z^\ell H_{a,n}(z).                    \tag{6}
+\]
+For $a\ge2$, $H$ is monic of degree $a-1$; for $a=1$, $H=2$.
+Indeed the cross determinant vanishes to order at least $\ell$ by (3).
+Its degree is at most $(a+1)n-1$, and its highest coefficients are obtained
+from the two product expansions. Explicitly, if
+$H=\sum_{k=0}^{a-1}h_kz^{a-1-k}$, then
+\[
+ h_k=\sum_{i+j=k}
+ \frac{(n+1)_i(an)_{\underline i}}{i!}
+ \frac{(-1)^j(a(n-1)+1)_j(n-1)_{\underline j}}{j!}
+ +\mathbf1_{\{k=a-1\}}\frac{(an)_{\underline a}}n.     \tag{7}
+\]
+The final term is the contribution of the leading term of the second
+product, which first appears at degree $\ell$. These computations prove
+(6)--(7) for all parameters; small-index replay is only a bookkeeping check.
+
+Any common denominator zero must be a zero of $H$, since $z\ne0$.
+By Lemma~\ref{lem:strip}, a sufficient separation condition is
+\[
+ H_{a,n}(c+w)\text{ has all roots in }\operatorname{Re}w<0,
+                    \qquad c=(a-1)n+2.               \tag{8}
+\]
+This is sufficient, not claimed necessary for the SFC assertion.
+It reduces an $n$-dependent degree-$n$ obstruction to an explicit
+polynomial of degree $a-1$.
+
+For later exact verification, (7) gives
+\[
+ H_{2,n}=z+9n-3,
+\quad H_{3,n}=z^2+2(4n-1)z+8(2n-1)(4n-1),
+\]
+\[
+ \begin{split}
+ H_{4,n}={}&z^3+(11n-3)z^2+3(5n-2)(5n-1)z\\
+          &+5(5n-3)(5n-2)(5n-1),
+ \end{split}
+\]
+\[
+ \begin{split}
+ H_{5,n}={}&z^4+2(7n-2)z^3+6(3n-1)(7n-2)z^2\\
+ &+24(2n-1)(3n-1)(6n-1)z\\
+ &+72(2n-1)(3n-2)(3n-1)(6n-1),
+ \end{split}
+\]
+\[
+ \begin{split}
+ H_{6,n}={}&z^5+(17n-5)z^4+10(19n^2-12n+2)z^3\\
+ &+2(7n-3)(7n-2)(17n-5)z^2\\
+ &+5(7n-4)(7n-3)(7n-2)(7n-1)z\\
+ &+7(7n-5)(7n-4)(7n-3)(7n-2)(7n-1).
+ \end{split}
+\]
+
+\section{All-index shifted separation by dissipative matrices}
+\begin{lemma}\label{lem:schwarz}
+Let a real monic polynomial $p$ of degree $d\ge1$ be generated by
+\[
+ D_0=1,\quad D_1=w+b_0,\quad
+ D_{j+1}=wD_j+b_jD_{j-1}\ (1\le j<d),\quad D_d=p,
+                                                               \tag{9}
+\]
+with every $b_j>0$. Then all roots of $p$ have strictly negative real part.
+\end{lemma}
+\begin{proof}
+Take the real tridiagonal matrix with diagonal $(-b_0,0,\ldots,0)$,
+upper entries $-\sqrt{b_j}$ and lower entries $\sqrt{b_j}$.
+Its characteristic polynomial is (9). Its Hermitian part is
+$\operatorname{diag}(-b_0,0,\ldots,0)$, so every eigenvalue has nonpositive
+real part. Equality forces the first eigenvector coordinate to vanish;
+the first row and then successive rows force every coordinate to vanish,
+a contradiction. For $d=1$ the only root is $-b_0$.
+\end{proof}
+
+For each $a=2,3,4,5,6$, set $p(w)=H_{a,n}(w+(a-1)n+2)$.
+The accompanying \href{pade_shift_positive_certificates.json}{exact symbolic
+certificate} gives rational functions $b_0(n),\ldots,b_{a-2}(n)$ with
+both of these properties:
+\begin{enumerate}
+\item Substitution into the finite recurrence (9) gives $p$ identically
+      as a polynomial in $w$ over $\mathbb Q(n)$.
+\item On writing $u=n-2$, the numerator and denominator of each $b_j$
+      are polynomials in $u$ with nonnegative integer coefficients and
+      strictly positive constant coefficient.
+\end{enumerate}
+Thus every parameter is strictly positive at every real $n\ge2$, with
+no pole or omitted integer, and Lemma~\ref{lem:schwarz} proves (8).
+For example the first two certificates are
+\[
+ a=2:\ b_0=10n-1;\qquad
+ a=3:\ b_0=2(6n+1),\ b_1=4(21n^2-7n+2).
+\]
+For $a=4$ they are
+\[
+ \begin{split}
+ b_0&=20n+3,\\
+ b_1&=4(596n^3+355n^2-19n+10)/(20n+3),\\
+ b_2&=(976n^3-576n^2+247n-22)/(20n+3).
+ \end{split}
+\]
+The higher two certificates have numerator/denominator degrees at most
+$11$ and $9$, respectively; all their exact coefficient lists are retained
+in the certificate file and verified by polynomial multiplication.
+These finite identities are universal evidence in $n$, not a finite scan
+of moment indices.
+For $a=1$, the nonzero constant $H=2$ already excludes every common root.
+Together with (4)--(8), this proves Theorem~\ref{thm:family}.
+
+The certificate can be constructed from the parity parts of $p$:
+set $E$ to its leading-degree parity part, $O$ to the other part divided
+by its leading coefficient $b_0$. Repeatedly normalize the remainder
+$E-wO$ to recover $b_1,b_2,\ldots$. The written certificates check the
+reconstruction (9) independently, so a successful result does not rely
+on an unproved assertion that this procedure always yields positive data.
+For any supplied $a$ where both exact conditions hold, the same theorem
+certifies all moment indices; positivity for every $a$ is not established.
+
+\section{A small explicit matrix pencil for the uniform gate}
+There is an independent necessary polynomial condition with especially
+simple matrix entries. Define
+\[
+ R_d(t,z)=\sum_{k=0}^d(-1)^k\binom dk(t+1)_k z^{d-k},\qquad
+ \sum_{d\ge0}R_d(t,z)\frac{u^d}{d!}
+              =e^{zu}(1+u)^{-t-1}.
+\]
+For nonnegative integer $t$, $Q_{t,d}$ is a nonzero constant multiple of
+$R_d(t,z)$. Direct differentiation of the generating function gives
+\[
+ (t+1)R_d(t+1,z)=(t+d+1+z)R_d(t,z)-zR_d(t-1,z),
+\]
+\[
+ R_d(t,z)=zR_{d-1}(t-1,z)-(t+d)R_{d-1}(t,z).          \tag{10}
+\]
+Suppose $a\ge2$ and $z$ is a common denominator zero, and write
+$M=an$, $l=a(n-1)$, $D=a-1$, $S_t=R_{n-1}(t,z)$.
+Then $S_l=0$ and $zS_{M-1}=(M+n)S_M$.
+The vector $v_j=S_{l+j}$, $1\le j\le D$, is nonzero: otherwise
+$S_l=S_{l+1}=0$, and the first recurrence propagates zeros to every
+larger integer $t$. That contradicts the nonzero leading coefficient
+$(-1)^{n-1}$ of the degree-$n-1$ polynomial $S_t$ in $t$.
+
+Eliminate $S_M$ with the boundary relation. Equations (10) become
+\[
+                    (\mathsf A+z\mathsf B)v=0,        \tag{11}
+\]
+where $\mathsf A$ is upper bidiagonal, $\mathsf B$ is lower bidiagonal,
+and, for $1\le j\le D$,
+\[
+ \mathsf A_{jj}=l+j+n,\qquad
+ \mathsf A_{j,j+1}=-(l+j+1),\qquad
+ \mathsf B_{jj}=\begin{cases}1,&j<D,\\1/(a+1),&j=D,\end{cases}
+ \quad \mathsf B_{j,j-1}=-1.
+\]
+Consequently every genuine adjacent obstruction must satisfy
+$\det(\mathsf A+z\mathsf B)=0$.
+This is a polynomial of degree $a-1$, since
+$\det\mathsf B=1/(a+1)\ne0$.
+For the verified cases $2\le a\le6$, direct polynomial identities give
+$(a+1)\det(\mathsf A+z\mathsf B)=H_{a,n}(z)$; the necessary-condition
+argument does not require asserting this identity for unbounded $a$.
+
+A sufficient unbounded target, now an explicit finite-matrix inequality, is
+\[
+ \operatorname{Re}\lambda(-\mathsf B^{-1}\mathsf A)<(a-1)n+2
+                  \quad(a\ge2,\ n\ge2).              \tag{12}
+\]
+The matrix dimension depends on $a$, not on the moment index $n$, and
+$\mathsf A$ is affine in $n$. Equation (12) remains unproved here.
+No conclusion for all $a$ is inferred from the finite symbolic certificates
+or the additional exact terminal diagnostics.
+
+\section{The genuine remaining boundary}
+The blanket unshifted shortcuts fail:
+$H_{3,2}=z^2+14z+168$ has no real roots, and
+$H_{5,2}=z^4+24z^3+360z^2+3960z+47520$ has negative third Hurwitz
+determinant $24\cdot360\cdot3960-3960^2-24^2\cdot47520$.
+Neither refutes SFC or the shifted target (8).
+The uniform assertion (8) for all $a\ge2$ remains unproved here.
+After the registered ranges, a residual gate is $a\ge7$,
+$n>(a+3)/2$, unless a supplied positive shifted certificate closes a
+particular $a$. The generic exporter is a sufficient certificate test;
+failure is not a counterexample or an irreducibility claim.
+
+No general $X^a(A+BX^d)$ result for $d>1$, arbitrary monomial pairs,
+other Gamma shapes, general Factorial or unrestricted Strong Factorial
+is inferred. The overarching goal stays open. Independent replay,
+formal verification and external review remain false. All proofs in
+this note are algebraic; no zero-distribution inference or unproved
+asymptotic cutoff enters.
+\end{document}

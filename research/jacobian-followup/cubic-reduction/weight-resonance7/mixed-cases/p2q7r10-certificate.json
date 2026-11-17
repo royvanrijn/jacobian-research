@@ -1,0 +1,131 @@
+{
+  "status": "exact-primary-coefficient-powers",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "input_sha256": "1afe4a104b21fe4b9ccbe263b84283911fb8d97b51adf9e45a462dac8bccd71c",
+  "script_sha256": "ff0e5f0ce1b1b121a7857232c368b6a54498fd7fb22d468d2cdf95f0e6aa6d3e",
+  "targets": [
+    {
+      "parameter": 0,
+      "power": 4,
+      "multipliers": [
+        [
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "11/315"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "1553/317520"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "179/22680"
+          }
+        ],
+        [],
+        [
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-1/36"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-11/270"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-179/22680"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "-179/11340"
+          }
+        ],
+        [],
+        [
+          {
+            "exponent": [
+              3,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/6"
+          },
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-5/216"
+          },
+          {
+            "exponent": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "17/1296"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "179/3240"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "coefficient": "179/11340"
+          }
+        ]
+      ]
+    }
+  ],
+  "unresolved_parameters": []
+}

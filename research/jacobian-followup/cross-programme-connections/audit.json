@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-15",
+  "status": "unregistered_internal_deductions_for_review",
+  "scope": "non-EC cross-programme audit",
+  "proof": "PROOF_DRAFT.tex",
+  "deductions": [
+    {
+      "id": "thin_exceptional_degree_and_markers",
+      "conclusion": "Nonzero pure thin-image phases have matrix degree at least 24 on SL2/2O and 36 on SL2/2I; a fixed bad marker has degree at most D-8 or D-12. At the endpoint the phase is cubic in a real minimum-degree seed.",
+      "inputs": [
+        "GEXCEPTIONALDEGREES20261115",
+        "GCOMPLEXHEIGHTGEOM20261115",
+        "GFINITEMODULEMARKER20261115",
+        "GTHINPUREFAIL20261115"
+      ],
+      "new_step": "Associated graded matrix-degree ring is a domain; normalized curve degrees convert exactly to matrix degrees.",
+      "boundary": "Thin PHASE images only; no restriction on full-image failures or inference from thin auxiliary heights."
+    },
+    {
+      "id": "gaussian_thin_image_marker",
+      "conclusion": "Any nonzero pure Gaussian polynomial with one-dimensional real image in C has a fixed bad polynomial marker of degree at most deg(P)-1.",
+      "inputs": [
+        "GFINITEMODULEMARKER20261115",
+        "G3CUBICALL20261115",
+        "GMCCUBICORBIT20261115"
+      ],
+      "new_step": "Adapt the curve-normalization proof to the Gaussian real locus; compactness is unnecessary for the finite-module argument.",
+      "boundary": "No existence of such pure phases; excludes them in proved safe classes."
+    },
+    {
+      "id": "hyperbola_torus_factorization",
+      "conclusion": "Every map U x A^a -> T/F factors through r=1-SY for U=A2 minus {SY=1} and free finite torus quotient T/F.",
+      "inputs": [
+        "UAPRODUCTTOPO1",
+        "UAINFRASELF1"
+      ],
+      "new_step": "All connected finite covers are cyclic r-root covers and have unit group C* times v^Z.",
+      "boundary": "Over C; native surface exclusion already follows from log dimension. Virtually abelian targets in general are not classified."
+    },
+    {
+      "id": "octahedral_lowest_type_all_rings",
+      "conclusion": "The full degree<=11 octahedral positive field theorem extends to arbitrary complex coefficient algebras, with ordinary cutoff stabilization and a common uncomputed integer slope.",
+      "inputs": [
+        "GOCTAHEDRALPREFIX20261115",
+        "GOCTAHEDRALIDEAL20261115",
+        "GEXCEPTIONALRADIAL20261115",
+        "MVPOSITIVEIDEAL20261115"
+      ],
+      "boundary": "No sharp nonreduced slope, new numeric bound, degree-12 field closure or all-degree MZ conclusion."
+    }
+  ],
+  "already_adopted": [
+    "GEXCEPTIONALRADIAL20261115",
+    "GEXCEPTIONALUNIFORM20261115"
+  ],
+  "not_promoted": [
+    "Critical Gorensteinness of an HC4 plinth does not follow from Gaussian nilpotent lifting.",
+    "Ordinary moment ideals cannot be replaced by their radicals over nonreduced coefficient algebras."
+  ],
+  "independent_review": false,
+  "formal_verification": false,
+  "novelty_established": false,
+  "registry_modified": false
+}

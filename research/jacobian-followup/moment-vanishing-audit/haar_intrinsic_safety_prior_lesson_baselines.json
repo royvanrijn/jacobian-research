@@ -1,0 +1,133 @@
+{
+  "METHOD-HAAR-INTRINSIC-GLOBAL-UNIT-AND-CONSTANT-GENUS-20261116": {
+    "id": "METHOD-HAAR-INTRINSIC-GLOBAL-UNIT-AND-CONSTANT-GENUS-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Separate intrinsic GLOBAL unit failure from the constant-genus translation/relation test",
+    "when": "Continuing the COMPLETE exceptional all-phase theorem after canonical boundary reduction,without independent varying-genus or recomposition campaigns.",
+    "use": "Every phase has intrinsic source-unit NONSPLIT or SPLIT. Nonsplit certifies any eventual-pure failure and reflects every H. If split,W5 is globally semisimple;remove canonical nontrivial genus C5 without changing actual unit Hom. Residual source is constant F(rank1+c) by finite Tate top;its radical image R is an ABELIAN finite-cover translation span,J2=0,u notinR. Actual safety iff u notinR+K for the ACTUAL relation kernel K in F. c,F,R are unchanged for every H;K_H retained. Zero constant genus closes residual even with arbitrary varying genus. Actual Cauchy semisimplicity itself reflects H,rank cannot drop,and semisimple rank>1 excludes ALL eventual-pure composites.",
+    "avoid": "Treating source splitting as actual safety;throwing away K or replacing it by a Hodge subspace;claiming constant genus always zero;assuming K_H fixed;confusing a quotient with scalar-function realization;inferring global square-zero from local N2 alone;discarding nontrivial physical relations;promoting Long to right-exceptional invariance.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN at intrinsic GLOBAL source-unit splitting plus actual constant-space u outside R+K. This covers EVERY phase by exhaustive alternatives,not a narrower sector. No general monodromy/relation/1-motive producer or arbitrary-ring topological promotion. Genuine Long control is an existing nonexceptional pure failure;no new search/pure producer or universal machine proof. Review deferred.",
+    "reopen_when": "Prove the intrinsic source unit splits for EVERY exceptional eventual-pure phase and actual u stays outsideR+K,or realize an admissible failure. Keep fixed genus F/R across all H and actual K_H;use actual primitive semisimplicity/rank exclusion before asking for primitive purity. Do not deepen varying-genus/quadratic-log or moment-prefix campaigns.",
+    "claims": [
+      "GHAARCONSTGENUS20261116",
+      "GHAARACTRECOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/CONSTANT_GENUS_TRANSLATIONS_AND_ACTUAL_RECOMPOSITION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_constant_genus_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_constant_genus.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "intrinsic global unit",
+      "constant genus",
+      "abelian translation",
+      "actual relation kernel",
+      "actual Cauchy recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARCONSTGENUS20261116": "da637aebf190d4fd",
+      "GHAARACTRECOMP20261116": "6a0b2593a96c4447"
+    }
+  },
+  "METHOD-HAAR-CANONICAL-BOUNDARY-REDUCTION-AND-LOWEST-WEIGHT-20261116": {
+    "id": "METHOD-HAAR-CANONICAL-BOUNDARY-REDUCTION-AND-LOWEST-WEIGHT-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Remove ALL compact-middle cohomology canonically while preserving the exact ACTUAL unit obstruction",
+    "when": "Seeking the full exceptional all-phase theorem after global Haar-orbit splitting;avoid independent compact-middle or quadratic-log campaigns.",
+    "use": "Deleting ANY divisor from H2-acyclic X leaves W2H2 zero. NONPROPER Leray/MHS over the graph base proves global compact-middle invariants zero,hence W4B=L directsum canonical nontrivial C_f. Quotient B/C_f has only level-one types after twist2 and N2=0 at EVERY P1 puncture. In actual M,the image I is semisimple with no trivial factors,so unit survives and Hom(M/I,trivial)=Hom(M,trivial). Eventual-pure full safety is EXACTLY unit splitting in this reduced boundary quotient. Reduction and reduced GLOBAL semisimplicity reflect EVERY H. With fibre GrW3H2 zero,reduced source semisimplicity is also NECESSARY and gives the intrinsic all-composite dichotomy.",
+    "avoid": "Using projective-only Leray for this nonproper map;confusing global invariants with local/finite-cover invariants;assuming actual quotient is a Hodge or scalar-function submodule;deleting literal quadratic coefficients from original periods;calling all reduced coefficients algebraic;making local N2 imply global radical square zero;inferring pure-composite existence from a nonsplit source.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. The compact-middle removal is universal,but reduced genus/graph unit coupling is not proved zero. Deep Ivorra-Morel nonproper Leray is imported with exact hypotheses,not independently reproved. Full original quadratic logs can remain. Reduced source semisimplicity necessary only with genus weight3 absent. No algebraic1-motive/curve producer,all-ring topological promotion or universal machine verification;review deferred. The next exact reduction covers EVERY phase:intrinsic GLOBAL source-unit nonsplitting certifies eventual-pure failure and reflects every H. If split,remove canonical nontrivial genus;constant F(rank1+c) and finite top leave an abelian translation radical R,J2=0,u notinR. Actual safety iff u notinR+K for ACTUAL constant relation kernel. c,F,R are fixed across H,not K_H. Actual Cauchy GLOBAL semisimplicity also reflects EVERY H and rank cannot drop;semisimple rank>1 excludes ALL eventually pure composites. Known Long pure failure sits in intrinsic nonsplit genus-free branch,not on exceptional quotients.",
+    "reopen_when": "Prove the rational unit splits in M_boundary for EVERY actual exceptional eventually pure phase,or realize a genuine original failure. Work on the level-one genus/graph coupling;do not reopen compact-middle or log-squared calculations as independent targets. Preserve EVERY original marker,primitive branch,H degree and actual orbit. Target intrinsic unit splitting and actual u outsideR+K for EVERY exceptional pure phase;varying genus is removable in the split-source branch. Preserve actual K_H and all original markers/branches.",
+    "claims": [
+      "GHAARLOWFIX20261116",
+      "GHAARLEVELONE20261116",
+      "GHAARLEVELRECOMP20261116",
+      "GHAARCONSTGENUS20261116",
+      "GHAARACTRECOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_reduction_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/CONSTANT_GENUS_TRANSLATIONS_AND_ACTUAL_RECOMPOSITION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_constant_genus_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_reduction.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "lowest weight",
+      "nonproper Leray",
+      "canonical boundary quotient",
+      "level one",
+      "unit splitting",
+      "polynomial recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARLOWFIX20261116": "175fa090f01d81eb",
+      "GHAARLEVELONE20261116": "0971dc423388739b",
+      "GHAARLEVELRECOMP20261116": "1a9c298cd0104c5a",
+      "GHAARCONSTGENUS20261116": "da637aebf190d4fd",
+      "GHAARACTRECOMP20261116": "6a0b2593a96c4447"
+    }
+  },
+  "METHOD-HAAR-GLOBAL-ORBIT-SPLITTING-AND-BOUNDARY-RADICAL-20261116": {
+    "id": "METHOD-HAAR-GLOBAL-ORBIT-SPLITTING-AND-BOUNDARY-RADICAL-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use GLOBAL splitting INSIDE the physical Haar orbit and isolate the boundary-lowering radical",
+    "when": "Seeking a full all-degree exceptional theorem after local xi/beta and Jordan bounds,without discarding nonsemisimple or high-rank compact-middle cases.",
+    "use": "Actual Cauchy FUNCTIONS before polynomial quotient form a finite quotient of full complement connection,dual to the entire Haar orbit W. A GLOBAL invariant ambient lift INSIDE W gives a rational retraction;PP0 and actual indecomposability make eventual-pure safety equivalent to its existence and to dimW1. Global full-complement semisimplicity suffices and reflects EVERY polynomial H before purity. Pure geometric weight grades are globally semisimple,so the monodromy algebra radical J strictly lowers weights4/5/6 and J3=0. Failure is exactly actual rational unit u in JM. Generic fibre H2 PURE weight2,of any rank,closes ALL eventual-pure composites and all original markers.",
+    "avoid": "Confusing global semisimplicity with each local matrix;using a full-extension fixed lift outside W or separate local lifts;quotienting Cauchy functions by polynomials before preserving the rational unit;using ordinary generic GM/exponential localization;equating global radical with local N or coefficient-state ideal;inferring failure from large boundary ranks or universal safety from compact-middle size3 alone.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. Global actual unit splitting and generic H2 purity are not universal. A failure needs higher fibre weights3/4 AND nonsplit mixed-weight GLOBAL monodromy putting u in JM. Actual pure safe phases have unbounded such boundary spaces. Full source semisimplicity sufficient not necessary;actual quotient need not inherit a Hodge structure. Deep Deligne semisimplicity is imported,not independently reproved. No all-ring topological promotion,general monodromy/orbit producer or universal machine proof; review deferred. ALL compact-middle cohomology can now be removed canonically for EVERY phase:global W2 fibre invariants vanish,so W4B=L directsum nontrivial C_f. In actual M,image I has no trivial factors and Hom(M/I,trivial)=Hom(M,trivial),retaining unit. The geometric boundary source has level-one types and N2=0 at every P1 puncture. Full original quadratic logs may remain,but are not an independent global unit target. Reduction reflects every H;with genus weight3 absent,reduced source semisimplicity is also necessary. The next exact reduction covers EVERY phase:intrinsic GLOBAL source-unit nonsplitting certifies eventual-pure failure and reflects every H. If split,remove canonical nontrivial genus;constant F(rank1+c) and finite top leave an abelian translation radical R,J2=0,u notinR. Actual safety iff u notinR+K for ACTUAL constant relation kernel. c,F,R are fixed across H,not K_H. Actual Cauchy GLOBAL semisimplicity also reflects EVERY H and rank cannot drop;semisimple rank>1 excludes ALL eventually pure composites. Known Long pure failure sits in intrinsic nonsplit genus-free branch,not on exceptional quotients.",
+    "reopen_when": "Prove every actual exceptional eventually pure phase has u outside JM,equivalently a GLOBAL invariant lift INSIDE its physical orbit,or realize an admissible failure. Retain all branches and H degrees;global complement semisimplicity now reflects H,and pure-middle arbitrary-rank systems are closed. Remaining geometry is actual mixed-weight boundary coupling,not arbitrary compact-middle monodromy. Use the exact canonical level-one actual quotient to target genus/graph unit splitting in EVERY phase. Do not assume scalar-function realization of that quotient,or confuse global/local/finite-cover invariants. Target intrinsic unit splitting and actual u outsideR+K for EVERY exceptional pure phase;varying genus is removable in the split-source branch. Preserve actual K_H and all original markers/branches.",
+    "claims": [
+      "GHAARGLOBALSPLIT20261116",
+      "GHAARGLOBRECOMP20261116",
+      "GHAARBOUNDARYRAD20261116",
+      "GHAARLOWFIX20261116",
+      "GHAARLEVELONE20261116",
+      "GHAARLEVELRECOMP20261116",
+      "GHAARCONSTGENUS20261116",
+      "GHAARACTRECOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/GLOBAL_HAAR_ORBIT_SPLITTING_AND_BOUNDARY_RADICAL.md",
+      "jacobian-followup/moment-vanishing-audit/haar_global_radical_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_reduction_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/CONSTANT_GENUS_TRANSLATIONS_AND_ACTUAL_RECOMPOSITION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_constant_genus_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_global_radical.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "global monodromy",
+      "Haar orbit",
+      "rational unit splitting",
+      "Jacobson radical",
+      "pure middle cohomology",
+      "polynomial recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARGLOBALSPLIT20261116": "e09d8f73543f3de1",
+      "GHAARGLOBRECOMP20261116": "b97deb153eb5fcf3",
+      "GHAARBOUNDARYRAD20261116": "17d9b9a5bac2f582",
+      "GHAARLOWFIX20261116": "175fa090f01d81eb",
+      "GHAARLEVELONE20261116": "0971dc423388739b",
+      "GHAARLEVELRECOMP20261116": "1a9c298cd0104c5a",
+      "GHAARCONSTGENUS20261116": "da637aebf190d4fd",
+      "GHAARACTRECOMP20261116": "6a0b2593a96c4447"
+    }
+  }
+}

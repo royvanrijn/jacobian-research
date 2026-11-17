@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/binomial-periodic/clay-watson-2011v1.pdf",
+      "url": "https://arxiv.org/pdf/1103.2358v1",
+      "title": "Clay--Watson, On cabled knots, Dehn surgery, and left-orderable fundamental groups (2011v1)",
+      "bytes": 172042,
+      "sha256": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        6
+      ],
+      "used_statement": "Section2 general root amalgam and meridian/longitude for arbitrary coprime winding r and coefficient k, with ru-kv1. No orderability or surgery theorem imported.",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+      "url": "https://researchers.ms.unimelb.edu.au/~norbury@unimelb/papers/orevkov.pdf",
+      "title": "Neumann--Norbury, The Orevkov invariant of an affine plane curve",
+      "bytes": 232604,
+      "sha256": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+      "used_statement": "Section4 Figure1 ordinary cable/linking convention and semigroup/infinity constraints; Theorem5.1 complete statement/proof distinguishes corrected keys from literal binomials; Section5.2 canonical recurrence d2=k-r(pq-p-q), valid independently of key coefficients. No moduli connectedness imported.",
+      "imported_not_independently_reproved": true,
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "retained_inputs": [
+    "PF59 eta<=0 for the actual quartic",
+    "PF60 preferred longitude identity on the whole packet",
+    "PF79 marked end obstruction for eta0 binomial model, reused after actual-splice transfer",
+    "PF77/78/79 full source, terminal/Klein, fibre-distance and peripheral Waldhausen hypotheses",
+    "PF67 common-source nonzero mark",
+    "PF72 closed companion homology/fibre order, independent of cable",
+    "PF62/69 cycle/genus obstructions"
+  ],
+  "new_unbounded_arguments": [
+    "Actual two-stage splice fixes the positive cable and preferred peripherals without global key normalization",
+    "General eta0 end-model transfer closes all genuine two-stage eta0 packets with lower-weight terms",
+    "Arbitrary cable parameter k gives exact period12 in four parameters, modular Bezout independence",
+    "Odd rk has nonidentity fibre, forces S4/C2 with new fibre-degree2 main cable and R distance2",
+    "Full odd target H1Zt and zero R mark; all common sources excluded",
+    "All complementary odd sources excluded by terminal/marked collar contacts and both solid cap signs",
+    "Remaining general two-stage packets have strictly negative EVEN eta, parameter h>=1 and period6"
+  ],
+  "limits": {
+    "literal_binomial_required": false,
+    "all_general_eta0_two_stage_closed": true,
+    "all_general_odd_product_two_stage_closed": true,
+    "negative_even_two_stage_closed": false,
+    "global_key_normalization_proved": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "research_goal_completed": false
+  },
+  "primary_web_records_consulted": [
+    "https://researchers.ms.unimelb.edu.au/~norbury@unimelb/papers/orevkov.pdf",
+    "https://arxiv.org/abs/math/0110286"
+  ],
+  "deep_topology_not_independently_reproved": true,
+  "new_primary_downloads_required": false
+}

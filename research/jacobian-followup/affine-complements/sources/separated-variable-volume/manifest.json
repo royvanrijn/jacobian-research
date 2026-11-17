@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED137",
+  "sources": [
+    {
+      "path": "../universal-keller-log-picard/PROOF.md",
+      "url": "retained:UADANVOL1",
+      "used": "Section3 explicit global higher-power primitive and ordinary-period boundary.",
+      "bytes": 17270,
+      "sha256": "ed4302aacae26a7a7b97259555d80859fa704b2055d5a94009a6887b91a539a6"
+    },
+    {
+      "path": "../universal-keller-plane-charts/PROOF.md",
+      "url": "retained:UADANCHART1",
+      "used": "Section2 classical whole-plane atlas and remaining compatible target problem.",
+      "bytes": 13196,
+      "sha256": "3e779300763ab77d264ffe7653dcdfc0e8b6fb0c56b950b7921de94a53c25483"
+    },
+    {
+      "path": "RELATIVE_EULER_DEFECT_AND_RULED_CHART_COMPRESSION.md",
+      "url": "retained:PF2RULED130",
+      "used": "Section5 x-dependent exact mixed2,3 control, explicitly not excluded.",
+      "bytes": 11072,
+      "sha256": "76daee69adff1d99747feceab13c72f28ca194b3957dfd2b16bd04d68eec93e7"
+    },
+    {
+      "path": "../hc4-triangular-graphs/COMMON_UNRAMIFIED_PENCIL_AND_AUTOMATIC_ADDITIVE_COMPLETION.md",
+      "url": "retained:HC4MYMP0",
+      "used": "Current actual-completion additive and cyclic deck reduction; scope only.",
+      "bytes": 11446,
+      "sha256": "54575bcc5e76ae85aba8ab39ec50b0dd37f5dc4e8565cbe6ddadbacf3f22be39"
+    },
+    {
+      "path": "../hc4-triangular-graphs/CYCLIC_DECK_SOURCE_IMAGE_AND_THE_UNIQUE_MULTIPLE_FIBRE.md",
+      "url": "retained:HC4MYMQ0",
+      "used": "Actual cyclic source-image and remaining global target conditions; no separated equation assumed.",
+      "bytes": 12115,
+      "sha256": "6aed131bcfed114b4b6d6ce4480826f6a9a853c5b0655dcb0c0ec4842fb8efbd"
+    },
+    {
+      "path": "sources/separated-variable-volume/source-review.json",
+      "url": "local:source-review",
+      "used": "No new theorem import or novelty claim; exact retained boundaries.",
+      "bytes": 1100,
+      "sha256": "95dc506e79f251c9bbb0c26beb01fc3b33ec3c59becdc7b2ed648cb04536c284"
+    }
+  ],
+  "new_external_theorem_import": false,
+  "registered_predecessor_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,39 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Critical-factor unit support and subset rank constraints",
+  "new_external_theorem_imports": [],
+  "proof_inputs": [
+    "HC4MYIC1: polynomial normalized root label and exact vertical-Jacobian identity; only its algebraic part is needed",
+    "HC4MYHZ0: exact direct sum of localized-unit fibre component lattices",
+    "HC4MYHY1 and HC4MYHZ2: root-transitivity transfer and global filtered output argument",
+    "HC4MYIC1 and valuation-critical-import.json: retained Jelonek-Lason arXiv:1411.5011v2 Theorem 3.2 qualitative polynomial parametrization of nonproperness sets, used explicitly for the fixed-model second polynomial chart"
+  ],
+  "literature_context_only": [
+    {
+      "url": "https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/abs/sunit-equation-over-function-fields/9B161552525443A16DFB399982F3B8AB",
+      "author": "Joseph H. Silverman",
+      "title": "The S-unit equation over function fields",
+      "publication": "Mathematical Proceedings of the Cambridge Philosophical Society 95 (1984), 3-4",
+      "doi": "10.1017/S0305004100061235",
+      "review_extent": "Publisher metadata and extract only; full proof not inspected",
+      "role": "Context for considering S-unit methods. No Mason bound, height estimate or theorem from this paper is imported. The present support and rank proof uses only UFD factorization, specialization and independence in C(f)[U]."
+    }
+  ],
+  "critical_factor_support_and_subset_ranks_proved_directly": true,
+  "singleton_support_pencil_and_simple_level_reducedness_proved_directly": true,
+  "two_level_constant_gap_output_normal_form_proved_directly": true,
+  "fixed_model_second_chart_identities_proved_directly": true,
+  "retained_nonproperness_theorem_reused_for_fixed_model": true,
+  "nonproperness_theorem_fully_reproved": false,
+  "function_field_S_unit_height_bound_imported": false,
+  "Hall_matching_theorem_imported": false,
+  "all_critical_factors_asserted_linear": false,
+  "allowed_leading_levels_asserted_actual_zeros": false,
+  "critical_factor_count_after_parameter_extension_used": false,
+  "no_rational_root_asserted_higher_degree_irreducibility": false,
+  "all_square_critical_discriminant_cubics_asserted_closed": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

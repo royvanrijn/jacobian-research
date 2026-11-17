@@ -1,0 +1,1975 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 84,
+  "checks": [
+    "predecessor PASS coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json verify_coordinate_pencil_matrix.py",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json GLOBAL_COORDINATE_PENCIL_AND_MATRIX.md",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json sources/coordinate-pencil-matrix/manifest.json",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json two_sided_norm_receipt.json",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json unramified_sheet_pair_receipt.json",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json exact_coordinate_bridge_receipt.json",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json coordinate_regular_sector_receipt.json",
+    "sealed predecessor coordinate_pencil_matrix_receipt.json sources/coordinate-pencil-matrix/xie-valuation-intersections.pdf",
+    "predecessor PASS peripheral_zero_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json verify_peripheral_zero.py",
+    "sealed predecessor peripheral_zero_receipt.json PERIPHERAL_LONGITUDE_AND_ZERO_NORMAL_CONTROL.md",
+    "sealed predecessor peripheral_zero_receipt.json sources/peripheral-zero-control/manifest.json",
+    "sealed predecessor peripheral_zero_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json quartic_colouring_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json sign_square_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json canonical_quadrics_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json nodal_deformation_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor peripheral_zero_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "sealed predecessor peripheral_zero_receipt.json sources/peripheral-zero-control/pakovich-zvonkin-2015.pdf",
+    "sealed predecessor peripheral_zero_receipt.json verify_quartic_colouring.py",
+    "primary pin weidmann-root-adjoined.pdf",
+    "primary pin ito-cable-slopes.pdf",
+    "known branched cover unknot2",
+    "known branched cover trefoil2",
+    "known branched cover trefoil3",
+    "known branched cover cyclic3trefoil",
+    "full binary determinant",
+    "canonical marking inverse",
+    "complementary nR modulo3",
+    "minus one is not a square modulo3",
+    "odd complementary order forces even cross",
+    "marked zero determinant3 and nR0 forces determinant0 modulo9",
+    "w3 exhaustive representation and orbit counts",
+    "w3 orbit0 conjugacy size",
+    "w3 orbit0 root amalgam relators",
+    "w3 orbit0 equivalent root homology and marking",
+    "w3 orbit0 spanning tree invariance",
+    "w3 orbit1 conjugacy size",
+    "w3 orbit1 root amalgam relators",
+    "w3 orbit1 equivalent root homology and marking",
+    "w3 orbit1 spanning tree invariance",
+    "w3 orbit2 conjugacy size",
+    "w3 orbit2 root amalgam relators",
+    "w3 orbit2 equivalent root homology and marking",
+    "w3 orbit2 spanning tree invariance",
+    "all three control ends have order1 or3",
+    "all three control ramification classes zero",
+    "w8 exhaustive representation and orbit counts",
+    "w8 orbit0 conjugacy size",
+    "w8 orbit0 root amalgam relators",
+    "w8 orbit0 equivalent root homology and marking",
+    "w8 orbit0 spanning tree invariance",
+    "w8 orbit1 conjugacy size",
+    "w8 orbit1 root amalgam relators",
+    "w8 orbit1 equivalent root homology and marking",
+    "w8 orbit1 spanning tree invariance",
+    "w8 orbit2 conjugacy size",
+    "w8 orbit2 root amalgam relators",
+    "w8 orbit2 equivalent root homology and marking",
+    "w8 orbit2 spanning tree invariance",
+    "w8 orbit3 conjugacy size",
+    "w8 orbit3 root amalgam relators",
+    "w8 orbit3 equivalent root homology and marking",
+    "w8 orbit3 spanning tree invariance",
+    "w8 orbit4 conjugacy size",
+    "w8 orbit4 root amalgam relators",
+    "w8 orbit4 equivalent root homology and marking",
+    "w8 orbit4 spanning tree invariance",
+    "w8 orbit5 conjugacy size",
+    "w8 orbit5 root amalgam relators",
+    "w8 orbit5 equivalent root homology and marking",
+    "w8 orbit5 spanning tree invariance",
+    "w8 orbit6 conjugacy size",
+    "w8 orbit6 root amalgam relators",
+    "w8 orbit6 equivalent root homology and marking",
+    "w8 orbit6 spanning tree invariance",
+    "three w8 covers fail finite end homology",
+    "four remaining w8 covers have finite homology",
+    "w3 infinity determinant9",
+    "w8 infinity determinant9"
+  ],
+  "source_lattice": {
+    "any_boundary_count": true,
+    "all_smooth_affine_extensions_with_disjoint_A1": true,
+    "whole_integral_intersection_matrix": true,
+    "negative_definite": true,
+    "end_H1_cokernel": true,
+    "linking_inverse_retained": true,
+    "canonical_marking_retained": true,
+    "smoothness_assumed_in_higher_degrees": true
+  },
+  "quartic": {
+    "all_source_orders_and_contacts": true,
+    "canonical_covector": [
+      1,
+      0
+    ],
+    "ramified_diagonal_odd": true,
+    "unramified_diagonal_even": true,
+    "canonical_zero_iff_determinant_divides_nD_and_cross": true
+  },
+  "control": {
+    "3": {
+      "total_representations": 72,
+      "orbits": [
+        {
+          "rho": [
+            [
+              0,
+              1,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              2,
+              3
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 0,
+            "torsion": []
+          },
+          "quotient_by_ramification": {
+            "free": 0,
+            "torsion": []
+          },
+          "root_presentation_matrix": [
+            [
+              2,
+              0,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0,
+              -14,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              -7,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              7,
+              -3,
+              0,
+              -7,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              11,
+              0,
+              0,
+              -14,
+              0,
+              0,
+              3
+            ],
+            [
+              3,
+              0,
+              0,
+              -5,
+              -2,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              -1,
+              0,
+              -3,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0,
+              0,
+              -5,
+              0,
+              0,
+              1
+            ]
+          ],
+          "root_ramification_row": [
+            -26,
+            0,
+            0,
+            44,
+            12,
+            0,
+            -6,
+            0,
+            0
+          ]
+        },
+        {
+          "rho": [
+            [
+              0,
+              1,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              2,
+              1,
+              0,
+              3
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 0,
+            "torsion": []
+          },
+          "quotient_by_ramification": {
+            "free": 0,
+            "torsion": []
+          },
+          "root_presentation_matrix": [
+            [
+              2,
+              0,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0,
+              -14,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              -7,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              7,
+              -3,
+              0,
+              -7,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              11,
+              0,
+              0,
+              -14,
+              0,
+              0,
+              3
+            ],
+            [
+              3,
+              3,
+              -1,
+              -5,
+              -3,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              -2,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0,
+              0,
+              -5,
+              0,
+              0,
+              1
+            ]
+          ],
+          "root_ramification_row": [
+            -26,
+            -18,
+            6,
+            44,
+            18,
+            0,
+            0,
+            -6,
+            0
+          ]
+        },
+        {
+          "rho": [
+            [
+              1,
+              2,
+              3,
+              0
+            ],
+            [
+              2,
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              3,
+              2
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 0,
+            "torsion": [
+              3
+            ]
+          },
+          "quotient_by_ramification": {
+            "free": 0,
+            "torsion": [
+              3
+            ]
+          },
+          "root_presentation_matrix": [
+            [
+              1,
+              -2,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -2,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0,
+              -2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              -1,
+              0,
+              -2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              -2,
+              -5,
+              -5,
+              -2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              2,
+              -2,
+              -2,
+              -5,
+              -5,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              5,
+              -5,
+              -2,
+              -2,
+              -5,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              2,
+              -5,
+              -5,
+              -2,
+              -2,
+              0,
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              -1,
+              -1,
+              -2,
+              -1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              -1,
+              -1,
+              -1,
+              -2,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              -3,
+              -3,
+              -2,
+              -2,
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "root_ramification_row": [
+            -17,
+            23,
+            20,
+            14,
+            17,
+            0,
+            0,
+            -6,
+            -6
+          ]
+        }
+      ]
+    },
+    "8": {
+      "total_representations": 168,
+      "orbits": [
+        {
+          "rho": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              2,
+              3
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 0,
+            "torsion": [
+              2,
+              6
+            ]
+          },
+          "quotient_by_ramification": {
+            "free": 0,
+            "torsion": [
+              2,
+              6
+            ]
+          },
+          "root_presentation_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              23,
+              0,
+              0,
+              0,
+              -39,
+              0,
+              2,
+              2,
+              2
+            ],
+            [
+              0,
+              -3,
+              13,
+              13,
+              0,
+              -13,
+              2,
+              2,
+              2
+            ],
+            [
+              0,
+              13,
+              -3,
+              13,
+              0,
+              -13,
+              2,
+              2,
+              2
+            ],
+            [
+              0,
+              13,
+              13,
+              -3,
+              0,
+              -13,
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              -1,
+              2,
+              2,
+              -5,
+              -2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              -1,
+              2,
+              0,
+              -1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              2,
+              -1,
+              0,
+              -2,
+              0,
+              0,
+              1
+            ]
+          ],
+          "root_ramification_row": [
+            -131,
+            36,
+            -72,
+            -72,
+            219,
+            72,
+            -36,
+            0,
+            0
+          ]
+        },
+        {
+          "rho": [
+            [
+              1,
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              3,
+              2
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 1,
+            "torsion": [
+              26
+            ]
+          },
+          "quotient_by_ramification": {
+            "free": 1,
+            "torsion": [
+              26
+            ]
+          },
+          "root_presentation_matrix": [
+            [
+              1,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              13,
+              -8,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              -39,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              -2,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1,
+              -2,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              3,
+              -2,
+              -2,
+              -5,
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "root_ramification_row": [
+            -85,
+            -100,
+            85,
+            85,
+            180,
+            0,
+            0,
+            -36,
+            -36
+          ]
+        },
+        {
+          "rho": [
+            [
+              1,
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              2,
+              1,
+              3
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 0,
+            "torsion": [
+              2,
+              4
+            ]
+          },
+          "quotient_by_ramification": {
+            "free": 0,
+            "torsion": [
+              2,
+              4
+            ]
+          },
+          "root_presentation_matrix": [
+            [
+              1,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              4,
+              0,
+              4,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              13,
+              -8,
+              -13,
+              -13,
+              0,
+              4,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              -39,
+              0,
+              0,
+              0,
+              8
+            ],
+            [
+              1,
+              0,
+              -2,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              -1,
+              -3,
+              -4,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0,
+              -5,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "root_ramification_row": [
+            -77,
+            36,
+            121,
+            157,
+            0,
+            0,
+            -36,
+            -36,
+            0
+          ]
+        },
+        {
+          "rho": [
+            [
+              1,
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              3,
+              2,
+              1
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 1,
+            "torsion": [
+              26
+            ]
+          },
+          "quotient_by_ramification": {
+            "free": 1,
+            "torsion": [
+              26
+            ]
+          },
+          "root_presentation_matrix": [
+            [
+              1,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              13,
+              -8,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              -39,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              -2,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              -1,
+              -2,
+              -5,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              -1,
+              -2,
+              -2,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "root_ramification_row": [
+            -5,
+            -144,
+            49,
+            85,
+            180,
+            0,
+            -36,
+            0,
+            -36
+          ]
+        },
+        {
+          "rho": [
+            [
+              1,
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              2,
+              3
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 0,
+            "torsion": [
+              2,
+              4
+            ]
+          },
+          "quotient_by_ramification": {
+            "free": 0,
+            "torsion": [
+              2,
+              4
+            ]
+          },
+          "root_presentation_matrix": [
+            [
+              1,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              0,
+              4,
+              4,
+              0
+            ],
+            [
+              13,
+              -8,
+              -13,
+              -13,
+              0,
+              0,
+              4,
+              4,
+              0
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              -39,
+              0,
+              0,
+              0,
+              8
+            ],
+            [
+              1,
+              0,
+              -3,
+              -3,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              -1,
+              -2,
+              -2,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0,
+              -5,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "root_ramification_row": [
+            -41,
+            0,
+            121,
+            121,
+            0,
+            -36,
+            -36,
+            0,
+            0
+          ]
+        },
+        {
+          "rho": [
+            [
+              1,
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              2,
+              1,
+              0,
+              3
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 0,
+            "torsion": [
+              2,
+              4
+            ]
+          },
+          "quotient_by_ramification": {
+            "free": 0,
+            "torsion": [
+              2,
+              4
+            ]
+          },
+          "root_presentation_matrix": [
+            [
+              1,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              13,
+              -8,
+              -13,
+              -13,
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              -39,
+              0,
+              0,
+              0,
+              8
+            ],
+            [
+              3,
+              -1,
+              -4,
+              -3,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1,
+              -2,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0,
+              -5,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "root_ramification_row": [
+            -113,
+            36,
+            157,
+            121,
+            0,
+            -36,
+            0,
+            -36,
+            0
+          ]
+        },
+        {
+          "rho": [
+            [
+              1,
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              3,
+              1,
+              2,
+              0
+            ]
+          ],
+          "orbit_size": 24,
+          "H1": {
+            "free": 1,
+            "torsion": [
+              26
+            ]
+          },
+          "quotient_by_ramification": {
+            "free": 1,
+            "torsion": [
+              26
+            ]
+          },
+          "root_presentation_matrix": [
+            [
+              1,
+              0,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              5,
+              0,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              13,
+              -8,
+              -13,
+              -13,
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              -39,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              1,
+              4,
+              -2,
+              -1,
+              -5,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              -1,
+              -2,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              -1,
+              -2,
+              -2,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "root_ramification_row": [
+            -41,
+            -144,
+            85,
+            49,
+            180,
+            -36,
+            0,
+            0,
+            -36
+          ]
+        }
+      ]
+    }
+  },
+  "exclusions": {
+    "entire_target_knot_C34_trefoil_if_nR_divisible3": true,
+    "common_pencil_included_when_nR_divisible3": true,
+    "all_odd_complementary_r_and_r1": true,
+    "all_complementary_r_congruent2_mod3": true,
+    "minimal_complementary_r2_q1_all_unramified_orders": true,
+    "remaining_complementary_r_mod6": [
+      0,
+      4
+    ],
+    "three_w8_representation_classes_positive_b1": true,
+    "all_C34_source_sectors_excluded": false,
+    "all_w8_representations_excluded": false
+  },
+  "assurance": {
+    "written_unbounded_topology": true,
+    "finite_group_enumeration_exhaustive_for_two_fixed_knots": true,
+    "matrices_are_not_independent_topological_review": true,
+    "symplectic_filling_classification_imported": false,
+    "named_boundary_manifold_identification_used": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "finite_Keller_map": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_marked_end_lattice.py": "9db57d963fd6cd7b01d4a70969c8c958e074cf8ffcf35069506875802b937267",
+    "MARKED_END_LATTICE_AND_CABLE_CONTROL.md": "18568193cf235e096575bb2b6a9ae8e02b1c08645203fa0d05c8a12901a1147e",
+    "sources/marked-end-lattice/manifest.json": "655308283c91cede3f0d51ad5fd0b3c759c0b9e2d810b3dda1f92203f06a88c0",
+    "coordinate_pencil_matrix_receipt.json": "0a02ada5ccaef4d69a680dea96538ac7d80edc8f0cfa9ef6a8d3a3bcbdbedd73",
+    "peripheral_zero_receipt.json": "1fe0848c93917e4f951e8254257e7076a3d2ea3fd6fee05eeb8ad93edba24b22",
+    "sources/marked-end-lattice/weidmann-root-adjoined.pdf": "d09adb02baad1b15cd678d830e747adbfa9b7c148e34e9a1db311f5d55acc6be",
+    "sources/quartic-cabling/ito-cable-slopes.pdf": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

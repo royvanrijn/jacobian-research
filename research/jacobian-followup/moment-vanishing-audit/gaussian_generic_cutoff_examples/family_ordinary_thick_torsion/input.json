@@ -1,0 +1,25 @@
+{
+  "dimension": 1,
+  "parameter_count": 2,
+  "phase_terms": [
+    [
+      [
+        1,
+        1,
+        0
+      ],
+      "1"
+    ]
+  ],
+  "parameter_ideal": [
+    [
+      [
+        [
+          2,
+          2
+        ],
+        "1"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-16",
+  "status": "unregistered candidate corollary for mathematical audit",
+  "proof": "research/jacobian-followup/cross-programme-connections/BOUNDED_BERNSTEIN_STEPS_AND_RATIONAL_APOLAR_SLOPES_2026_11_16.tex",
+  "dependency": "research/jacobian-followup/moment-vanishing-audit/GENERIC_BERNSTEIN_EQUATIONS_AND_FORMAL_GAP_CLOSURE.md",
+  "dependency_sha256": "9f3f8f003dae69abe255bcddf03606c00bcc5a4245028163a8c1750adfca4e2f",
+  "candidate_results": [
+    "ordinary Bernstein relation yields eventual bounded first-survival increments",
+    "integer polynomial-curve sequence with bounded steps has rational affine asymptotics with bounded error",
+    "actual formal-symbol first-survival orders have rational bounded-error slope, or are eventually infinite",
+    "passively suspended heights have reciprocal rational bounded-error slope; original heights have reciprocal rational limsup"
+  ],
+  "not_claimed": [
+    "full Mathieu safety",
+    "pure-to-safe GVC",
+    "original unsuspended heights bounded-error law",
+    "eventual periodicity",
+    "all-ring slope theorem",
+    "universal numeric cutoff or denominator bound",
+    "independent or external verification"
+  ],
+  "primary_bridge": "Jarnik1926 latticepoint bound, elementary arc proof included",
+  "primary_url": "https://www.dml.cz/handle/10338.dmlcz/500690",
+  "other_imports": [
+    "classical convergent Newton-Puiseux expansions at infinity",
+    "retained Mebkhout--Narvaez-Macarro actual module and polynomial-order theorem"
+  ],
+  "controls": [
+    {
+      "N": 2,
+      "M": 3,
+      "indices": 80,
+      "rho": "6/5",
+      "max_error": "6/5",
+      "step_bound": 3
+    },
+    {
+      "N": 3,
+      "M": 4,
+      "indices": 80,
+      "rho": "12/7",
+      "max_error": "12/7",
+      "step_bound": 4
+    },
+    {
+      "N": 4,
+      "M": 5,
+      "indices": 80,
+      "rho": "20/9",
+      "max_error": "20/9",
+      "step_bound": 5
+    },
+    {
+      "N": 7,
+      "M": 8,
+      "indices": 80,
+      "rho": "56/15",
+      "max_error": "56/15",
+      "step_bound": 8
+    }
+  ],
+  "source_scan": "no bounded-step/rational-asymptotic version found in active moment subtree; monomial rational Newton result and retired scalar-time gate are already retained",
+  "messages": [
+    {
+      "threadId": "01a1d97f-80d4-7403-a25b-30d4eee1c7c9",
+      "confirmed": true,
+      "scope": "candidate bounded-step/rational-rate corollary and explicit audit obligations, at a natural checkpoint"
+    }
+  ],
+  "registry_modified": false
+}

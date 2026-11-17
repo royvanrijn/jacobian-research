@@ -1,0 +1,22 @@
+{
+  "case": 10,
+  "case_sha256": "fcacd1b708f70d46761a1d8bc964bd04ccb6a4197e71dce8734d4c6f3d7e6075",
+  "nodes": [
+    {
+      "basis": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "kind": "leaf"
+    }
+  ],
+  "root": 0,
+  "scope": "Exact factor-splitting tree; independent coefficient replay is required before classifying all cube points.",
+  "source_sha256": "5274f76002519b9501b1a9d362aaa66359a2db3735028490f19d56441b419c0a"
+}

@@ -2,6 +2,140 @@
 
 ## 1. Status
 
+17 November2026: the [nilpotent contraction-zero classification and three global targets](../../../jacobian-followup/moment-vanishing-audit/NILPOTENT_CONTRACTION_ZERO_AND_THREE_GLOBAL_TARGETS.md)
+now close the pure points of the full closed container p=r=0,
+Delta^2(H2*H3)=0, with every H1 coefficient retained: all are one-sided
+or Rodrigues and have full marked cutoff3. Nonzero B needs first12
+moments under this contraction condition; B0 imports all-order odd
+classification. The largest four-variable exclusion replays exactly
+over QQ with a Singular dependency; direct unit export stopped at40s.
+The preferred global gate is now three radical memberships, degrees
+(2,3,2), weights(6,9,5). A finite nine-rotation argument recovers the
+whole contraction vector. All three memberships remain OPEN. The cyclic
+nilpotent gate also reduces to three linear tests at N>=12. Full Image
+remains OPEN and the overarching goal ACTIVE.
+
+17 November2026: the [complete highest-cubic chart and graded finite-module proof](../../../jacobian-followup/moment-vanishing-audit/HIGHEST_CUBIC_GLOBALIZATION_AND_GRADED_GATE.md)
+give a global result: the first14 zero locus and the all-order pure locus
+both have dimension7. Seven fixed rational rotation charts retain every
+quadratic type and D0 case. Each normalized chart is finite over five
+base parameters, with generator bounds15,638 at prefix14 and15,528 at18.
+The exact modular-to-rational upper-bound proof uses positive homogeneity;
+its finite-field standard basis retains a Singular dependency. Every
+cubic pure component contains z^3. Neither the component decomposition
+nor generic marked safety is supplied. The
+[cyclic nilpotent reduction](../../../jacobian-followup/moment-vanishing-audit/NILPOTENT_CYCLIC_SLICE_AND_FIVE_TARGET_GATE.md)
+also gives five degree-one global targets with reduced local length1;
+their memberships remain open. Full(3,3) remains OPEN, goal ACTIVE.
+
+17 November 2026: [complete quadratic field normal forms](../../../jacobian-followup/moment-vanishing-audit/QUADRATIC_ORBIT_NORMAL_FORMS.md)
+now cover the entire coefficient space by four fixed forms and one full
+eta-family, retaining all H1/H3 coefficients and all D0 cases. Maximal
+input dimension is11, with exact factored D equations. This does not
+classify pure components or identify ordinary quotient lengths. The new
+[zero-linear axial exclusion](../../../jacobian-followup/moment-vanishing-audit/AXIAL_QUADRATIC_ZERO_LINEAR_EXCLUSION.md)
+closes all semisimple repeated-eigenvalue quadratics at prefix10 and gives
+seven cubic equations for a closed harmonic-square safe container. Its
+largest chart retains an exact QQ Singular dependency. The normalized
+non-nilpotent rank2 rational exclusion is still OPEN; finite-field units,
+modular h^16 membership and all preserved rational/tracking timeouts are
+not promoted. Full(3,3) remains OPEN, overarching goal ACTIVE.
+
+17 November 2026: the [entire zero-linear nilpotent-quadratic container](../../../jacobian-followup/moment-vanishing-audit/NILPOTENT_QUADRATIC_ZERO_LINEAR_BOUNDARY.md)
+is now pure-safe with unrestricted cubic. Regular nilpotent rank2 pure
+phases are one-sided after H2=zt normalization; prefix8 is least
+set-theoretically, and full Image cutoff is m>coordinate-degree Q.
+The largest exclusion retains an exact QQ Singular dependency and
+three failed independent-witness exports; smaller units verify directly.
+Rank1 and the odd B=0 theorem complete this closed container. The next
+zero-linear cases have non-nilpotent B. Full(3,3) remains OPEN.
+
+17 November 2026: the explicitly requested [overarching goal](../../../jacobian-followup/moment-vanishing-audit/IMAGE_33_OVERARCHING_GOAL.md)
+remains ACTIVE. A new [complete rank-one quadratic boundary proof](../../../jacobian-followup/moment-vanishing-audit/RANK_ONE_QUADRATIC_BOUNDARY.md)
+classifies every pure H1=0, nonzero rank1 B phase with unrestricted H3:
+all are one-sided and full-Image safe with cutoff m>coordinate-degree Q.
+The least consecutive set-theoretic prefix is10; two first-nine false
+positives fail at10. Explicit polynomial unit identities certify the
+exhaustive charts, without msolve. Including B=0 via the odd theorem
+closes the pure points in H1=0, rank B<=1. Ordinary prefix-ideal equality,
+other D0 ranks and full(3,3) remain open.
+
+17 November 2026: the [field-valued strategy](../../../jacobian-followup/moment-vanishing-audit/FIELD_COVER_AND_GENERIC_COMPONENT_STRATEGY.md)
+now makes safe coverage the primary finish line. Allow later prefixes,
+arbitrary radical exponents, and additional pure components with generic
+all-marker safety; the retained finite-family theorem extends their
+polynomial tail identities to every specialization. A14 length51 is an
+optional sharper benchmark. At a fixed N>=14 Rodrigues-only reduced
+exhaustion already forces length51 by the known local data. Seven separate
+graded Rabinowitsch inputs are prepared, with no verified unit identity.
+D0-contained components and uncovered boundary strata remain open.
+
+17 November 2026: the [seven low-degree certificate](../../../jacobian-followup/moment-vanishing-audit/SEVEN_LOW_DEGREE_GLOBAL_GATE.md)
+replays exactly and is now the preferred global length51 gate. The new
+selected-locus identity is I9+(Z)=I9+(K1,...,K7)=P, with support already
+at prefix6 and reducedness at9. Actual normalized local exponents and
+the cubic replacement give seven targets of degrees(3,3,5,3,2,3,4).
+The mod12 grading filters each finite witness ansatz over Q. All seven
+unrestricted I14 memberships, witness degrees and global finiteness
+remain open. Keep both mu13 and mu14 in the full source ideal.
+
+17 November 2026: the [supplied actual Rodrigues local certificate](../../../jacobian-followup/moment-vanishing-audit/RODRIGUES_LENGTH17_AND_GLOBAL51.md)
+replays exactly and proves d13=18, d14=d_infinity=17, minimal consecutive
+local prefix14, nilpotence index7 and the actual multiplication matrices.
+The next global cyclic target is dim_C A14=51. Equivalently, the fourteen
+linear forms have seventh powers in I14, a rank-three/48-column module
+problem. Global finiteness and support remain open; local thickness and
+infinite-tail questions are closed. Keep both mu13 and mu14 globally.
+
+16 November 2026: the [full anti-halfturn scheme-length transfer](../../../jacobian-followup/moment-vanishing-audit/ANTI_HALFTURN_SCHEME_LENGTH_AND_A14_GATE.md)
+strengthens the cyclic first12 bound to dim_C A12>=13818. The entire
+modular chart length9168 survives as a characteristic-zero lower bound;
+the rank6/rank4 finite etale covers give a normalized contribution>=13752.
+The inherited anti-Weyl theorem removes its full thickening at mu14.
+The next global target is now A14 against51 with mu13 retained, using
+the later local result above. Exact moment input through14 is prepared;
+global lengths remain uncomputed.
+
+16 November 2026: the [fourteen-certificate gate](../../../jacobian-followup/moment-vanishing-audit/CYCLIC_NILPOTENCE_GATE_AND_PREFIX12_OUTSIDERS.md)
+has the negative outcome s0^10 not in I12. A retained exact modular
+seven-equation complete intersection and DVR regular-sequence flatness
+prove characteristic-zero first12 points on D!=0 with non-null H1;
+scaling gives at least three new normalized points, so dim_C A12>=69.
+The full exact length and finiteness remain uncomputed. This entire
+half-turn chart is already excluded at mu14 by the anti-Weyl theorem
+in Section5.15. No additional all-order pure component is claimed.
+
+16 November 2026: the [complete cyclic-frame model](../../../jacobian-followup/moment-vanishing-audit/CYCLIC_FRAME_GLOBAL_EXHAUSTION_AND_HILBERT_OBSTRUCTION.md)
+now presents the entire D=det(v,Bv,B^2v)!=0 quotient with no spectral or
+additional Gram normalization. At D=1/8 the full first12 moment input is
+retained in15 variables/four relations. Its global dimension/length is
+uncomputed; its initial length66 target is now disproved above. A Hilbert residue
+obstruction proves additional first12 semistable candidates globally,
+but does not locate them relative to D or prove all-order purity.
+
+16 November 2026: [full coefficient-space Rodrigues local rigidity](../../../jacobian-followup/moment-vanishing-audit/RODRIGUES_FINITE_JETS_AND_FULL_LOCAL_RIGIDITY.md)
+now rules out every additional reduced pure branch through this orbit.
+The first twelve moment equations already isolate its reduced germ in
+all sixteen coefficients; their transverse algebra has length22 and
+nilpotence index10. The full ordinary local moment algebra is a quotient,
+with sufficient prefix90. This closes the local deformation gate, while
+other semistable pure components elsewhere remain unresolved.
+
+16 November 2026: the [conformal Euler classification](../../../jacobian-followup/moment-vanishing-audit/CONFORMAL_EULER_MIXED_CUBIC_CLASSIFICATION.md)
+exhausts mixed-parity phases admitting a supplied linear conformal Euler
+grading. Pure phases there are one-sided or scalar/orthogonal Rodrigues
+shears, with sharp full Image cutoff3. A rational full-coefficient adapter
+tests the grading by linear algebra. Any new semistable pure orbit must
+lie outside this architecture. This does not prove the complementary
+locus empty or settle the full (3,3) problem.
+
+16 November 2026: the [odd Hopf cubic transfer](../../../jacobian-followup/moment-vanishing-audit/ODD_HOPF_CUBIC_IMAGE_TRANSFER.md)
+closes the entire ten-dimensional Sym^6 + Sym^2 slice, including mixtures,
+with the sharp cutoff m>deg_(Z,Y) Q. It uses the retained homogeneous
+ternary cubic theorem, exact polar factors and coefficient balancing.
+The unresolved structural coupling involves the spherical degree-two
+component H_2 with H_3+H_1; the full mixed problem remains open.
+
 This note treats the first genuinely new two-pair bidegree after the
 complete bidegree-\((2,2)\) theorem.  Unequal bidegrees are already
 one-sided for the total dual-minus-coordinate grading, so the next balanced
@@ -702,9 +836,12 @@ Indeed, (5.4) contradicts \(c\ne0\) whenever the five displayed moments
 vanish.
 
 The analogous \(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\) branch
-has also been sharply reduced, but not yet promoted to characteristic
-zero.  Over \(\mathbb F_{32003}\), the homogeneous ideal generated by the
-even moments
+is now closed in characteristic zero by the
+[odd Hopf cubic transfer](../../../jacobian-followup/moment-vanishing-audit/ODD_HOPF_CUBIC_IMAGE_TRANSFER.md),
+including its null-quadratic boundary. The following finite-field
+calculation is retained historical evidence, rather than a remaining
+safety gate. Over \(\mathbb F_{32003}\), the homogeneous ideal generated
+by the even moments
 
 \[
  \mu_2,\mu_4,\mu_6,\mu_8,\mu_{10},\mu_{12},\mu_{14}
@@ -716,11 +853,11 @@ has dimension four and a Gröbner basis of size \(7576\), with
  c^{25}\in I,\qquad c^{24}\notin I.                       \tag{5.5}
 \]
 
-This is finite-field computation, not a theorem over \(\mathbb Q\).
-Ordinary rational Gröbner reduction and exact modular reconstruction did
-not finish within the recorded bounded runs.  Equation (5.5) identifies a
-specific characteristic-zero membership certificate to reconstruct; it
-does not justify silently transferring the modular result.
+The specific ideal membership and exponent in (5.5) remain finite-field
+results. Ordinary rational Gröbner reduction and exact modular
+reconstruction did not finish within the recorded bounded runs. The new
+all-order safety theorem needs neither their reconstruction nor a claim
+that this particular exponent works in characteristic zero.
 
 ### 5.1 The five full mixed anchor charts
 

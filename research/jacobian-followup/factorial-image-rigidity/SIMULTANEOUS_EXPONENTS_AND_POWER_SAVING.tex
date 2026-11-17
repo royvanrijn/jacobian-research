@@ -1,0 +1,293 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\title{Simultaneous factorial exponents, a dense-preprint power saving, and harmonic sparsity}
+\author{User-supplied strengthening checked and integrated; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+Write $F_{n,m}(T)=\sum_{j=0}^n\binom nj(mj)!T^j$ in ordinary Gamma shape one,
+and let $\mathcal D$ be the set of positive integers $n$ for which some
+positive integer $m\le n^{1/16}$ gives a nonsquarefree $F_{n,m}$ over $\Q$.
+Put $D(X)=|\mathcal D\cap[1,X]|$ and $\varepsilon=10^{-18}$.
+
+\begin{theorem}\label{thm:simultaneous}
+There is one common exceptional set for all the indicated exponents.
+\begin{enumerate}
+\item Using the published 2016 Matom\"aki--Radziwi\l\l theorem,
+$D(X)\ll X/(\log X)^{1/50}$ with an absolute implied constant.
+\item Importing additionally the dense Theorem~9.2(ii) of the pinned
+MR~II preprint, $D(X)\ll X^{1-\varepsilon}$ with an absolute implied constant.
+\end{enumerate}
+The second assertion uses a preprint analytic input, distinguished below
+from the independent published-input first assertion. Neither numerical
+constants nor starting thresholds are extracted. All-index SFC is open.
+\end{theorem}
+
+\section{A common dense irreducible-offset set}
+Work on an integer dyadic block $X<n\le2X$ and put
+\[
+ M=\lfloor(2X)^{1/16}\rfloor,\qquad H=\lfloor X^{1/5}\rfloor,
+ \qquad Y=\sqrt{2MX},\qquad Z=\sqrt{MH}.
+\]
+These are deterministic functions of $X$, with no separately varying $m$.
+For $q_i$ the largest prime at most $i$, select
+\[
+ \mathcal J=\{1\le i\le H:i>(M+1)^2,\ i-q_i<\sqrt i,\ P^+(i)>Z\}.
+\]
+\begin{lemma}\label{lem:common}
+For every $i\in\mathcal J$ and every $1\le m\le M$, $F_{i,m}$ is irreducible
+in characteristic zero. Moreover
+\[
+ |\mathcal J|=(c_J+o(1))H,\qquad c_J=\log(32/21).
+\]
+This common-set statement does not apply a fixed-$m$ irreducibility-density
+theorem with a growing value of $m$.
+\end{lemma}
+\begin{proof}
+Set $p=P^+(i)>Z$. Since $p^2>MH\ge mi$ and $p\mid i$, the
+\href{QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex}{general local lemma}
+at offset zero gives a single edge of denominator $p$; every rational
+factor has degree divisible by $p$.
+Writing $i=q_i+d$, the conditions $d<\sqrt i$ and $i>(M+1)^2$ imply
+$q_i>m\max(1,d)$ simultaneously for every $m\le M$.
+The $q_i$-polygon has a nonhorizontal edge of width $q_i$ and denominator
+$q_i$. Newton multiplication therefore supplies an irreducible rational
+factor of degree at least $q_i$. Its complementary degree is at most
+$d<\sqrt i<p$ and is also divisible by $p$, so is zero.
+
+Since $Z^2=MH\ge H$, integers at most $H$ have at most one prime factor
+strictly above $Z$. Disjoint prime multiples and PNT partial summation give
+\[
+ \#\{i\le H:P^+(i)>Z\}
+ =H\sum_{Z<p\le H}\frac1p+O(\pi(H))
+ =(\log(32/21)+o(1))H,
+\]
+using $\log H\sim(1/5)\log X$ and $\log Z\sim(21/160)\log X$.
+The small-index deletion costs $O(M^2)=o(H)$.
+The credited Filaseta--Rocks equation~(3.1) gives $O(H^{2/3})=o(H)$
+bad preceding-gap indices, including intervals crossing the endpoint.
+This proves the density of the common set, with absolute asymptotics.
+\end{proof}
+
+For $f_X(u)=\mathbf1_{\{P^+(u)\le Y\}}$, $f_X(1)=1$, disjoint large-prime
+multiples are again valid because $Y^2\ge2X$. PNT gives
+\[
+ \mu_X(f_X):=\frac1X\sum_{X<u\le2X}f_X(u)
+ =1-\log(32/17)+o(1)=:c_f+o(1),
+\]
+where $\log Y\sim(17/32)\log X$.
+Only eventual strict margins are needed; no quantitative PNT error is assumed.
+The available margin satisfies
+\[
+ \Delta=c_J-c_f=\log(1024/357)-1>1/20. \tag{1}
+\]
+For an exact certificate, the elementary positive exponential series gives
+$e<2719/1000$, and $e^{1/20}<20/19$ by a geometric-series bound. Thus
+\[
+ e^{21/20}<\frac{2719}{1000}\frac{20}{19}<\frac{1024}{357},
+\]
+proving (1) without rounded transcendental numerics.
+
+\section{Source qualification and the precise dense input}
+The power-saving input is MR~II,
+\href{sources/mr-ii-2007.04290v1.pdf}{arXiv:2007.04290v1, 8 July 2020},
+Theorem~9.2(ii), page~44, with its Section~9 conditions, pages~42--43.
+It is listed as a preprint on the author's
+\href{sources/matomaki-publications-20261117.html}{publication page checked 17 November 2026}.
+No published or corrected MR~II version is asserted to have been obtained.
+
+Matom\"aki's published 2022
+\href{https://doi.org/10.1112/jlms.12592}{Almost primes in almost all very short intervals}
+flags an incorrect sparse-sieve calculation in the first MR~II arXiv version.
+The same warning is pinned in the
+\href{sources/matomaki-2022-almost-primes-accepted-v3.pdf}{accepted author version},
+Section~6 footnote before Lemma~6.1; Remark~6.2 explains the missing
+coprimality and resulting off-diagonal terms in the related sieve calculation.
+We exclude the entire MR~II Section~10 sparse-sieve branch, including
+Lemma~10.3. The selected route is the dense Theorem~9.2(ii), whose proof
+on pages~45--51 uses Proposition~8.3 and earlier inputs, followed by the
+separate ordinary linear sieve, Lemma~4.3, as applied in equation~(78).
+At the end of the dense proof the specified replacements for part~(ii)
+use Lemmas~5.4(ii), 5.5(ii) and equation~(29), rather than sparse
+nonvanishing estimates. This application/dependency audit is not a
+reconstruction or validation of the entire preprint. Its dense theorem
+and the analytic sieve result are credited imports.
+We do not use Theorem~1.7's advertised exceptional exponent.
+
+Take exactly
+\[
+ \nu_1=10^{-5},\quad\nu_2=3/20,\quad\eta=1/150,
+ \quad\rho=1/10,\quad\delta=1/2000,\quad J_{\rm MR}=1.
+\]
+Define three intervals by
+\[
+ P_1=X^{10^{-8}},\quad Q_1=P_2=X^{\nu_1},\quad
+ Q_2=P_3=X^{\sqrt{\nu_1\nu_2}},\quad Q_3=X^{\nu_2}.
+\]
+All Section~9 conditions hold eventually:
+$0<\nu_1<\nu_2<1/6$, $\nu_1>(\log X)^{-1/10}$,
+$0<\eta<1/6-\nu_2/3$, $P_1\ge(\log X)^{2/\eta}=(\log X)^{300}$,
+and $(P_1,Q_1]\subset(3/2,H]$, $2\le H\le X^{1/2}$.
+The condition on $Q_J$ has a $J=1$ alternative, and spacing conditions
+(50)--(51) are empty. Also
+$\rho<\rho_1=1/3-2/(3\pi)$, already following from $\pi>3$, and
+$0<\delta<1/1000$.
+
+Let $\mathcal S$ require a prime divisor in each of the three intervals.
+For nonnegative multiplicative $g$, the minimizing twist in the dense
+statement can be chosen to be zero: for every prime,
+$1-g(p)\cos(t\log p)\ge1-g(p)$.
+Thus applying Theorem~9.2(ii) separately to $f_X$ and to $1$ gives
+\[
+ |A_x(g\mathbf1_{\mathcal S})-\mu_X(g\mathbf1_{\mathcal S})|
+ \le e_X:=\frac1{2000}+\frac{10^5}{(\log X)^{1/120}},
+ \quad g=f_X,1,
+\]
+where $A_x(g)=H^{-1}\sum_{x<u\le x+H}g(u)$, except at most
+\[
+ O\left(X^{1-33/10^{10}}(\log X)^2
+            +X^{1-5\cdot10^{-18}}\right) \tag{2}
+\]
+integer starts. There are two functions, absorbed in the absolute constant;
+there is no union over $m$.
+Indeed the displayed Theorem~9.2(ii) exception is
+$O_{\eta,\rho}(X\delta^{-2}(\log H)^2/P_1^{1/2-\nu_2-3\eta}
++X^{1-\nu_1^3/200})$.
+Direct substitution gives the two savings in (2); $\rho/12=1/120$.
+
+\section{The ordinary sieve and the single complement loss}
+The linear sieve of MR~II Lemma~4.3 and its application in (78) give,
+using $D=X^{\nu_2(3-1/1000)}$, $z=X^{\nu_2}$,
+\[
+ \mu_X(\mathcal S^c)
+ \le\frac65\left(\frac1{1000}+2\sqrt{\frac1{15000}}\right)+o(1)
+ <\frac{13}{625}+o(1). \tag{3}
+\]
+Here the three logarithmic interval ratios are
+$1/1000,\sqrt{\nu_1/\nu_2},\sqrt{\nu_1/\nu_2}$.
+The source uses the ordinary linear upper sieve $F(3-1/1000)<1.19$
+and absorbs the remainder with $1.195<6/5$.
+The level is a fixed power below $X$, so the floor remainders are $o(X)$.
+The rational check $(49/6000)^2>1/15000$ proves the last bound in (3).
+This argument does not use the sparse-sieve weights of Section~10.
+
+Nonnegativity gives a sharper transfer than the generic absolute-value
+triangle inequality:
+\[
+ \begin{aligned}
+ A_x(f_X)&\le A_x(f_X\mathbf1_{\mathcal S})+1-A_x(\mathbf1_{\mathcal S})\\
+ &\le\mu_X(f_X)+\mu_X(\mathcal S^c)+2e_X\\
+ &\le\mu_X(f_X)+\frac{109}{5000}+o(1).
+ \end{aligned}
+\]
+The complement occurs once. Combining this with (1) yields
+\[
+ \Delta-\frac{109}{5000}>
+ \frac{141}{5000}>\frac1{50}. \tag{4}
+\]
+Choose $x=n-H-1$ for integer $n$. Then $(x,x+H]$ contains exactly
+$n-H,\ldots,n-1$; discard only $O(H)$ bottom endpoint indices so that
+$x\in[X,2X]$. By pigeonhole, every remaining index has at least $H/50$
+distinct offsets $i\in\mathcal J$ with $P^+(n-i)>Y$.
+No independence between offsets is used.
+
+\section{Bad incidences across all exponents}
+For $i\in\mathcal J$, $m\le M$, put
+$R_{i,m}=\operatorname{Res}(F_{i,m},F'_{i,m})\ne0$.
+The retained exact Hadamard bound gives, with an absolute constant,
+\[
+ \log|R_{i,m}|\le5mi^2\log(2mi),\qquad
+ \sum_{m\le M}\sum_{i\in\mathcal J}\log|R_{i,m}|
+ \le5M^2H^3\log(2MH). \tag{5}
+\]
+For example, take logarithms of
+$i^i[2^i(mi)!]^{2i-1}$ and use $(mi)!\le(mi)^{mi}$.
+
+Discard the $O(X^{2/3})$ indices with $n-q_n\ge\sqrt n$, using the pinned
+Filaseta--Rocks equation~(3.1). This is one common gap condition.
+For large $X$, $n>(M+1)^2$, and $Y>MH$ since
+$X/(MH^2)\to\infty$. Thus every usable $p=P^+(n-i)>Y$ satisfies
+$p^2>2MX\ge mn$ and $p>mH$, simultaneously for $m\le M$.
+The general local transfer gives square-divisor degree
+$k<\sqrt n/2<p$ and degree-preserving horizontal reduction.
+
+If such an index fails squarefreeness for an exponent $m=m(n)\le M$,
+select one failing exponent. For every one of its at least $H/50$ usable
+offsets, the transfer forces $p\mid R_{i,m(n)}$.
+An incidence retains the offset label even if primes coincide.
+Each triple $(i,m,p)$ affects at most $X/p+1$ indices in the block,
+and each $R_{i,m}$ has at most $\log|R_{i,m}|/\log Y$ large prime divisors.
+Counting incidences, rather than discarding every bad triple once, gives
+\[
+ \begin{aligned}
+ |\mathcal E_{\rm res}|
+ &\ll\frac1H\frac{X/Y+1}{\log Y}
+       \sum_{m\le M}\sum_{i\in\mathcal J}\log|R_{i,m}|\\
+ &\ll\sqrt X\,M^{3/2}H^2\ll X^{159/160}.
+ \end{aligned} \tag{6}
+\]
+The factor $1/H$ is essential. All constants are absolute: $M,H$ and the
+analytic parameters are fixed explicit functions of $X$, and (5) retains
+the full dependence on $m$. The analytic error (2) is never multiplied by $M$.
+
+Combining (2), (6), common gaps and endpoints gives
+\[
+ D(2X)-D(X)\ll X^{1-33/10^{10}}(\log X)^2
+ +X^{1-5\cdot10^{-18}}+X^{159/160}+X^{2/3}+X^{1/5}.
+\]
+Every term is $O(X^{1-10^{-18}})$, with room to absorb the logarithm.
+Dyadic geometric summation proves part~(ii) of Theorem~\ref{thm:simultaneous}.
+The exponent range on the whole block covers $m\le n^{1/16}$ because
+$\lfloor n^{1/16}\rfloor\le M$.
+
+\section{Independent published-2016 route}
+For part~(i), retain the common $\mathcal J$, $f_X$, and incidence argument,
+but use the published 2016 MR Theorem~1 directly, with $h=H$ and $\delta=1/100$.
+Its short-mean error is eventually below $1/50$; (1) then again leaves
+more than $H/50$ usable offsets.
+Its exception is
+\[
+ O\left(X^{1-1/12500}(\log X)^{1/3}
+                  +\frac{X}{(\log X)^{1/50}}\right).
+\]
+Together with (6), gaps and endpoints, dyadic summation yields part~(i),
+with absolute constants and no MR~II or sparse-sieve input.
+A rate for the convergence in the common density and long mean is
+unnecessary: they only furnish eventual strict margins.
+The 2016 result alone does not supply the reciprocal-sum consequence below.
+
+\section{Harmonic sparsity and remaining boundary}
+\begin{corollary}\label{cor:harmonic}
+With the dense-preprint input of part~(ii),
+\[
+ \sum_{n\in\mathcal D}\frac1n<\infty.
+\]
+For each fixed $m\ge1$, the set of nonsquarefree $F_{n,m}$ also has a
+convergent reciprocal sum.
+\end{corollary}
+\begin{proof}
+Partial summation reduces the tail to an integral bounded by a constant
+multiple of $\int_N^\infty t^{-1-\varepsilon}\,dt$, which converges.
+For fixed $m$, every $n\ge m^{16}$ in its exceptional set belongs to
+$\mathcal D$; the remaining initial indices are finite.
+\end{proof}
+The same common exceptional set controls adjacent nonzero-moment windows
+for every nonzero complex $A+BY^m$ and all $m\le n^{1/16}$, by
+$F_{n-1,m}=F_{n,m}-(T/n)F'_{n,m}$.
+A convergent reciprocal sum does not imply finitely many exceptions or
+all-index SFC. No irreducibility-density-one, arbitrary Gamma-shape,
+full-preprint validation, numerical implied-constant or priority claim is made.
+
+\href{simultaneous_squarefree.py}{Exact certificates} retain rational
+parameters, error exponents and pointwise common-offset criteria.
+\href{verify_simultaneous_squarefree.py}{Finite controls and source-route audit}
+check these and source pins, not a numerical frequency claim.
+Independent replay, formal verification and external review remain unclaimed.
+\end{document}

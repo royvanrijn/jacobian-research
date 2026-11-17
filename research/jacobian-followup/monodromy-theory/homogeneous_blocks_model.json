@@ -1,0 +1,371 @@
+{
+  "claims": [
+    "KMFI62",
+    "KMFI63",
+    "KMFI64"
+  ],
+  "all_ell_family": "l>=2, actual ordinary-affine4 degree4l; binary8 for l2 and even signed V_(2l):A_(2l) for l>=3",
+  "all_ell_coefficient_degree_bound": "4l-6",
+  "arithmetic_constants_for_l_at_least3": "K0(sqrt((-1)^(l-1)(2l-1)),sqrt(-(2l-1)))",
+  "all_pair_block_fields_independently_curve_induced": true,
+  "all_pair_block_fields_have_Keller_model": false,
+  "both_block_source_and_target_fields_rational": true,
+  "block_stabilizers_normally_generate": true,
+  "normal_generation_plus_rational_fields_is_a_sufficient_general_criterion": false,
+  "obstruction_scope": "exact intermediate fields, all independent stabilization and birational recharts; not every abstract quotient action",
+  "curve_controls": [
+    {
+      "ell": 2,
+      "degree": 8,
+      "group": "SL2(F3) on8",
+      "tail": "q + 3",
+      "coefficient_degree_bound": 2,
+      "block_degree": 4,
+      "block_curve": "(-u**2/24 + u/2 + 1/2)**2/u",
+      "passport": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "fiber_gcd_lcm": 2
+    },
+    {
+      "ell": 3,
+      "degree": 12,
+      "group": "2^5:A6 on12",
+      "tail": "2*q**3 + 6*q**2 + 12*q + 10",
+      "coefficient_degree_bound": 6,
+      "block_degree": 6,
+      "block_curve": "(-2*u**2/45 + u/3 + 1/2)**3/u",
+      "passport": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          1,
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "fiber_gcd_lcm": 3
+    },
+    {
+      "ell": 4,
+      "degree": 16,
+      "group": "2^7:A8 on16",
+      "tail": "3*q**5 + 9*q**4 + 18*q**3 + 30*q**2 + 31*q + 21",
+      "coefficient_degree_bound": 10,
+      "block_degree": 8,
+      "block_curve": "(-9*u**2/224 + u/4 + 1/2)**4/u",
+      "passport": [
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "fiber_gcd_lcm": 4
+    },
+    {
+      "ell": 6,
+      "degree": 24,
+      "group": "2^11:A12 on24",
+      "tail": "5*q**9 + 15*q**8 + 30*q**7 + 50*q**6 + 75*q**5 + 105*q**4 + 118*q**3 + 114*q**2 + 93*q + 55",
+      "coefficient_degree_bound": 18,
+      "block_degree": 12,
+      "block_curve": "(-25*u**2/792 + u/6 + 1/2)**6/u",
+      "passport": [
+        [
+          6,
+          6
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "fiber_gcd_lcm": 6
+    },
+    {
+      "ell": 8,
+      "degree": 32,
+      "group": "2^15:A16 on32",
+      "tail": "7*q**13 + 21*q**12 + 42*q**11 + 70*q**10 + 105*q**9 + 147*q**8 + 196*q**7 + 252*q**6 + 285*q**5 + 295*q**4 + 282*q**3 + 246*q**2 + 187*q + 105",
+      "coefficient_degree_bound": 26,
+      "block_degree": 16,
+      "block_curve": "(-49*u**2/1920 + u/8 + 1/2)**8/u",
+      "passport": [
+        [
+          8,
+          8
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          15,
+          1
+        ]
+      ],
+      "fiber_gcd_lcm": 8
+    }
+  ],
+  "complete_marked_stage_controls": [
+    {
+      "ell": 2,
+      "minimum": "r**2 + 3",
+      "theta0": [
+        "4*r/3",
+        "r/4 + 3/4",
+        "r/2"
+      ],
+      "L": [
+        [
+          "-8",
+          "-32*r/3",
+          "56/3"
+        ],
+        [
+          "3/2 - r",
+          "2*r + 4",
+          "5*r/2 - 7/2"
+        ],
+        [
+          "r/4 + 15/4",
+          "5*r",
+          "-10"
+        ]
+      ],
+      "f20": "10*r - 18"
+    },
+    {
+      "ell": 3,
+      "minimum": "2*r**6 + 6*r**4 + 12*r**2 + 10",
+      "theta0": [
+        "-4*r**5/5 - 2*r**3/5 - 4*r/5",
+        "-r**5/5 - 3*r**4/10 - 3*r**3/10 - 7*r**2/10 - r/2 - 1",
+        "r/4"
+      ],
+      "L": [
+        [
+          "r**4 - 2*r**2 - 9",
+          "6*r**5/5 - 62*r**3/5 - 54*r/5",
+          "-36*r**4/5 + 32*r**2/5 + 164/5"
+        ],
+        [
+          "5/4 - r",
+          "-r**5 - 2*r**4 - r**3/2 - 4*r**2 - r - 4",
+          "-4*r**5/5 + 4*r**4/5 - 6*r**3/5 + 6*r**2/5 + 2*r - 3"
+        ],
+        [
+          "-r**5/5 - 37*r**4/40 - 3*r**3/10 - 39*r**2/20 - r/2 - 9/4",
+          "-r**5/4 + r**3/2 + 13*r/4",
+          "9*r**4/2 + 9*r**2 + 9"
+        ]
+      ],
+      "f20": "-9*r**5/8 + 25*r**4/16 + 9*r**3/4 - 25*r**2/8 + 81*r/8 - 225/16"
+    }
+  ],
+  "PSL2_11_subgroup_targets": [
+    {
+      "embedding": "natural12",
+      "subgroup_order": 660,
+      "coset_degree": 362880,
+      "genus": 74038,
+      "inertia": [
+        {
+          "profile": [
+            6,
+            6
+          ],
+          "fixed_powers": [
+            362880,
+            6,
+            162,
+            1920,
+            162,
+            6
+          ],
+          "cycle_count": 60856,
+          "index": 302024
+        },
+        {
+          "profile": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fixed_powers": [
+            362880,
+            0,
+            0
+          ],
+          "cycle_count": 120960,
+          "index": 241920
+        },
+        {
+          "profile": [
+            11,
+            1
+          ],
+          "fixed_powers": [
+            362880,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cycle_count": 32990,
+          "index": 329890
+        }
+      ],
+      "full_target_not_stably_rational": true,
+      "exact_independent_spectators": [
+        "Y1",
+        "e",
+        "C"
+      ]
+    },
+    {
+      "embedding": "exceptional11plus1",
+      "subgroup_order": 660,
+      "coset_degree": 362880,
+      "genus": 74226,
+      "inertia": [
+        {
+          "profile": [
+            6,
+            6
+          ],
+          "fixed_powers": [
+            362880,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cycle_count": 60480,
+          "index": 302400
+        },
+        {
+          "profile": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fixed_powers": [
+            362880,
+            0,
+            0
+          ],
+          "cycle_count": 120960,
+          "index": 241920
+        },
+        {
+          "profile": [
+            11,
+            1
+          ],
+          "fixed_powers": [
+            362880,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cycle_count": 32990,
+          "index": 329890
+        }
+      ],
+      "full_target_not_stably_rational": true,
+      "exact_independent_spectators": [
+        "Y1",
+        "e",
+        "C"
+      ]
+    }
+  ],
+  "generic_pencil_genus_used_as_total_rationality_proof": false,
+  "source_and_target_field_reconstructions_explicit": true,
+  "absolute_natural_A4_decided": false,
+  "arbitrary_Keller_PSL2_11_actions_decided": false,
+  "full_action_classification_complete": false
+}

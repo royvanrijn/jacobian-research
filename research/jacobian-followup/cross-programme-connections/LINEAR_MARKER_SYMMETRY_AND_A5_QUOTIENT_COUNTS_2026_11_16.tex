@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\title{Two explicit bridges: centred weighted Gaussian phases and simple-quotient counts}
+\author{Coordinator working deductions}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status.}
+These are unregistered working deductions, conditional where stated on
+existing internal proofs. No independent review, formal verification or
+novelty is claimed. No agent goals or authoritative status records are changed.
+
+\section{A centred weighted Gaussian corollary}
+Use the exact hypotheses of
+\href{../moment-vanishing-audit/SEMIPOSITIVE_WEIGHTED_GAUSSIAN_REDUCTION_AND_SAFE_NORMAL_FORMS.md}
+{the nonnegative weighted Gaussian reduction}: a nonsingular Gaussian
+quadratic form and a phase both have weight two in supplied nonnegative
+rational linear-coordinate weights. In its notation,
+\[
+ P=W\cdot H(Z)+F(Z,T),\qquad g=tH(g).
+\]
+The residual polynomial $F$ has no constant or linear term in the
+positive-weight variables $T$. Over every commutative $\mathbb Q$-algebra,
+the internal theorem says that, under purity, all-marker safety is
+equivalent to polynomiality of all the coordinate series $g_i$.
+
+\begin{proposition}
+Assume the cited internal reduction theorem. If in addition the ordinary
+linear part of $P$ vanishes, every pure such phase is safe for all original
+polynomial markers, over every coefficient $\mathbb Q$-algebra.
+\end{proposition}
+\begin{proof}
+The ordinary linear terms in the displayed phase are precisely
+$W\cdot H(0)$. Thus $H(0)=0$. The zero vector solves $g=tH(g)$, and
+coefficient recursion gives uniqueness of its solution in $tR[[t]]^n$.
+Hence $g=0$, and the cited safety criterion applies.
+\end{proof}
+
+In particular, an even phase has no ordinary linear part. The homogeneous
+four-Gaussian invariant lift of an exceptional Haar phase is even.
+Consequently the radial-transfer theorem gives pure-to-safe inclusion for
+every exceptional phase whose actual homogeneous lift admits the supplied
+nonnegative weighting. Equivalently, the internal minimum bad-marker
+degree bounds (eight for $2O$, twelve for $2I$) contradict the linear
+witness required by the weighted theorem.
+
+\textbf{Coverage limitation.}
+This does not prove that unrestricted exceptional phases admit such weights.
+It does not establish that this corollary extends already closed torus
+families. In the homogeneous invariant setting, linear orthogonal grading
+symmetries should be compared with the existing left-torus classification
+before claiming a larger class or new priority. The algebraic Gaussian
+periods here are exponential generating functions; they must not be
+substituted for the ordinary Cauchy resolvents in the resolvent-splitting
+criterion.
+
+\section{A sharper finite-quotient rank test}
+Let $\operatorname{rk}H$ denote the minimum number of group generators.
+
+\begin{lemma}
+If a group $H$ has twenty distinct normal subgroups with quotient $A_5$,
+then $\operatorname{rk}H\ge3$.
+\end{lemma}
+\begin{proof}
+A two-generated group has at most as many epimorphisms onto $A_5$ as
+$A_5$ has ordered generating pairs, namely $2280$.
+Each distinct quotient kernel contributes exactly
+$|\operatorname{Aut}(A_5)|=120$ epimorphisms.
+Twenty kernels would therefore contribute $2400>2280$, a contradiction.
+The same conclusion follows from Hall's direct-power formula:
+$A_5^{19}$ is two-generated but $A_5^{20}$ is not.
+\end{proof}
+
+The classical threshold and Hall formula are recorded in
+\href{https://seis.bristol.ac.uk/~tb13602/docs/BC_1.pdf}
+{Burness--Crestani, On the generating graph of direct powers of a simple
+group}, introduction, page two. An exact permutation enumeration of all
+sixty even permutations on five letters independently gave $2280$ ordered
+generating pairs, $120$ conjugation automorphisms and $19$ orbits.
+These finite counts do not certify any knot representation.
+
+\begin{proposition}
+Assume the internal branched-cover bound
+$\operatorname{mr}(K)\ge1+\operatorname{rk}\pi_1(\Sigma_2K)$.
+If $\pi_1(\Sigma_2K)$ has twenty distinct $A_5$ quotient kernels and $K$
+has a certified four-bridge presentation, then
+$\operatorname{mr}(K)=b(K)=4$.
+\end{proposition}
+\begin{proof}
+The lemma and cover bound give $\operatorname{mr}(K)\ge4$.
+The four-bridge certificate gives $\operatorname{mr}(K)\le b(K)\le4$.
+\end{proof}
+
+\textbf{Application limitation.}
+The twenty quotient kernels must all belong to the same double-cover group,
+and are distinguished modulo target automorphisms, not just conjugacy.
+The existing first $A_5$ maps on twelve different knots do not meet this
+threshold. No new knot case is certified by this note. A complete count or
+twenty retained distinct-kernel certificates would be the next obligation;
+a broad representation search has not been launched. This refines the
+existing all-homomorphism counting bound by counting epimorphisms and their
+kernels instead.
+
+\end{document}

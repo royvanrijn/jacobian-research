@@ -1,0 +1,2101 @@
+{
+  "status": "COMPLETE",
+  "input_sha256": {
+    "compact_cover_plan.json": "d8ed708f21b5d4d2bbf13a66ac518790b120589f1627ca825108d3e365d377c2",
+    "compact_cover_groups.py": "88c975a276373a242f18d1ab3cce300cc1ca8755a5ad4ae0aea58069b7f4da77",
+    "audit_compact_covers.py": "a6d05c4454af463f3953077e4515b27f25084e9983702fc3aa876e4471a980c0",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18",
+    "mutation_cover_verification.json": "5a925d1c5b9c008156becfe3aae921ceb87699f1ed0355cee06c055c8b7c3ec1",
+    "core_generator_results.json": "3534b0663f15dc647ca1235c265db33217b6cc568a45bb8f972cb26e16d64437"
+  },
+  "controls": [
+    {
+      "name": "C3*C3*C3",
+      "initial": {
+        "generators": [
+          1,
+          2,
+          3
+        ],
+        "relators": [
+          [
+            -3,
+            -3,
+            -3
+          ],
+          [
+            -2,
+            -2,
+            -2
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ]
+      },
+      "trace": [],
+      "final": {
+        "generators": [
+          1,
+          2,
+          3
+        ],
+        "relators": [
+          [
+            -3,
+            -3,
+            -3
+          ],
+          [
+            -2,
+            -2,
+            -2
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ]
+      },
+      "original_generators_in_final": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ]
+      },
+      "final_generators_in_original": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ]
+      },
+      "status": "LOCAL_MINIMUM",
+      "seconds": 0.001042
+    },
+    {
+      "name": "C3*C3",
+      "initial": {
+        "generators": [
+          1,
+          2
+        ],
+        "relators": [
+          [
+            -2,
+            -2,
+            -2
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ]
+      },
+      "trace": [],
+      "final": {
+        "generators": [
+          1,
+          2
+        ],
+        "relators": [
+          [
+            -2,
+            -2,
+            -2
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ]
+      },
+      "original_generators_in_final": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ]
+      },
+      "final_generators_in_original": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ]
+      },
+      "status": "LOCAL_MINIMUM",
+      "seconds": 0.000133
+    },
+    {
+      "name": "rebased_C3*C3_extra_generator",
+      "initial": {
+        "generators": [
+          1,
+          2,
+          3
+        ],
+        "relators": [
+          [
+            -3,
+            1,
+            2
+          ],
+          [
+            -2,
+            -2,
+            -2
+          ],
+          [
+            -2,
+            -1,
+            -2,
+            -1,
+            -2,
+            -1
+          ]
+        ]
+      },
+      "trace": [
+        {
+          "kind": "eliminate",
+          "generator": 1,
+          "relator": 0,
+          "solved_word": [
+            3,
+            -2
+          ]
+        }
+      ],
+      "final": {
+        "generators": [
+          2,
+          3
+        ],
+        "relators": [
+          [
+            -3,
+            -3,
+            -3
+          ],
+          [
+            -2,
+            -2,
+            -2
+          ]
+        ]
+      },
+      "original_generators_in_final": {
+        "1": [
+          3,
+          -2
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ]
+      },
+      "final_generators_in_original": {
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ]
+      },
+      "status": "LOCAL_MINIMUM",
+      "seconds": 0.000164
+    }
+  ],
+  "targets": [
+    {
+      "name": "13a_129",
+      "pd": [
+        [
+          3,
+          1,
+          4,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          11,
+          5,
+          12,
+          4
+        ],
+        [
+          5,
+          11,
+          6,
+          10
+        ],
+        [
+          15,
+          9,
+          16,
+          8
+        ],
+        [
+          9,
+          17,
+          10,
+          16
+        ],
+        [
+          19,
+          13,
+          20,
+          12
+        ],
+        [
+          13,
+          24,
+          14,
+          25
+        ],
+        [
+          21,
+          14,
+          22,
+          15
+        ],
+        [
+          17,
+          22,
+          18,
+          23
+        ],
+        [
+          23,
+          18,
+          24,
+          19
+        ],
+        [
+          25,
+          21,
+          26,
+          20
+        ]
+      ],
+      "base_arc": 0,
+      "crossings": [
+        [
+          12,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          4,
+          5,
+          0
+        ],
+        [
+          4,
+          1,
+          2,
+          0
+        ],
+        [
+          3,
+          6,
+          7,
+          0
+        ],
+        [
+          7,
+          3,
+          4,
+          0
+        ],
+        [
+          5,
+          8,
+          9,
+          0
+        ],
+        [
+          11,
+          5,
+          6,
+          1
+        ],
+        [
+          6,
+          9,
+          10,
+          1
+        ],
+        [
+          10,
+          7,
+          8,
+          1
+        ],
+        [
+          8,
+          10,
+          11,
+          1
+        ],
+        [
+          9,
+          11,
+          12,
+          0
+        ]
+      ],
+      "raw_relators": [
+        [
+          13,
+          13,
+          -2
+        ],
+        [
+          3,
+          -13,
+          3
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          2,
+          -5,
+          2,
+          -6
+        ],
+        [
+          5,
+          -2,
+          5,
+          -3
+        ],
+        [
+          4,
+          -7,
+          4,
+          -8
+        ],
+        [
+          8,
+          -4,
+          8,
+          -5
+        ],
+        [
+          6,
+          -9,
+          6,
+          -10
+        ],
+        [
+          12,
+          -6,
+          12,
+          -7
+        ],
+        [
+          7,
+          -10,
+          7,
+          -11
+        ],
+        [
+          11,
+          -8,
+          11,
+          -9
+        ],
+        [
+          9,
+          -11,
+          9,
+          -12
+        ],
+        [
+          10,
+          -12,
+          10,
+          -13
+        ]
+      ],
+      "graph_core": {
+        "trace": [
+          {
+            "kind": "parallel",
+            "edges": [
+              3,
+              4
+            ],
+            "ends": [
+              1,
+              3
+            ],
+            "new_edge": 13
+          },
+          {
+            "kind": "parallel",
+            "edges": [
+              10,
+              11
+            ],
+            "ends": [
+              3,
+              6
+            ],
+            "new_edge": 14
+          },
+          {
+            "kind": "series",
+            "vertex": 2,
+            "edges": [
+              1,
+              2
+            ],
+            "ends": [
+              1,
+              0
+            ],
+            "new_edge": 15
+          },
+          {
+            "kind": "parallel",
+            "edges": [
+              0,
+              15
+            ],
+            "ends": [
+              0,
+              1
+            ],
+            "new_edge": 16
+          },
+          {
+            "kind": "series",
+            "vertex": 1,
+            "edges": [
+              13,
+              16
+            ],
+            "ends": [
+              3,
+              0
+            ],
+            "new_edge": 17
+          },
+          {
+            "kind": "series",
+            "vertex": 4,
+            "edges": [
+              5,
+              6
+            ],
+            "ends": [
+              0,
+              3
+            ],
+            "new_edge": 18
+          },
+          {
+            "kind": "parallel",
+            "edges": [
+              17,
+              18
+            ],
+            "ends": [
+              0,
+              3
+            ],
+            "new_edge": 19
+          }
+        ],
+        "vertices": [
+          0,
+          3,
+          5,
+          6
+        ],
+        "edges": {
+          "7": [
+            3,
+            5
+          ],
+          "8": [
+            5,
+            6
+          ],
+          "9": [
+            0,
+            6
+          ],
+          "12": [
+            5,
+            0
+          ],
+          "14": [
+            3,
+            6
+          ],
+          "19": [
+            0,
+            3
+          ]
+        },
+        "conclusion": "Abstract K4 series/parallel core only; no manifold/tangle decomposition is inferred."
+      },
+      "initial": {
+        "generators": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "relators": [
+          [
+            -13,
+            -13,
+            2
+          ],
+          [
+            -13,
+            3,
+            3
+          ],
+          [
+            -13,
+            10,
+            -12,
+            10
+          ],
+          [
+            -12,
+            6,
+            -12,
+            7
+          ],
+          [
+            -12,
+            9,
+            -11,
+            9
+          ],
+          [
+            -11,
+            7,
+            -10,
+            7
+          ],
+          [
+            -11,
+            8,
+            -11,
+            9
+          ],
+          [
+            -10,
+            6,
+            -9,
+            6
+          ],
+          [
+            -8,
+            4,
+            -8,
+            5
+          ],
+          [
+            -8,
+            4,
+            -7,
+            4
+          ],
+          [
+            -6,
+            2,
+            -5,
+            2
+          ],
+          [
+            -5,
+            2,
+            -5,
+            3
+          ],
+          [
+            -4,
+            -3
+          ]
+        ]
+      },
+      "trace": [
+        {
+          "kind": "eliminate",
+          "generator": 3,
+          "relator": 12,
+          "solved_word": [
+            -4
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 2,
+          "relator": 0,
+          "solved_word": [
+            13,
+            13
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 8,
+          "relator": 10,
+          "solved_word": [
+            4,
+            -7,
+            4
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 11,
+          "relator": 5,
+          "solved_word": [
+            9,
+            -12,
+            9
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 5,
+          "relator": 0,
+          "solved_word": [
+            13,
+            13,
+            -6,
+            13,
+            13
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 10,
+          "relator": 7,
+          "solved_word": [
+            6,
+            -9,
+            6
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 7,
+          "relator": 4,
+          "solved_word": [
+            12,
+            -6,
+            12
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 13,
+          "relator": 2,
+          "solved_word": [
+            -4,
+            -4
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 12,
+          "relator": 3,
+          "solved_word": [
+            6,
+            -9,
+            6,
+            4,
+            4,
+            6,
+            -9,
+            6
+          ]
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 2,
+          "source": 3,
+          "source_sign": 1,
+          "source_rotation": 1,
+          "target_rotation": 10,
+          "matched": 10
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 1,
+          "source": 0,
+          "source_sign": 1,
+          "source_rotation": 18,
+          "target_rotation": 2,
+          "matched": 19
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              4
+            ],
+            "6": [
+              6
+            ],
+            "9": [
+              9,
+              6
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              4
+            ],
+            "6": [
+              6
+            ],
+            "9": [
+              9,
+              -6
+            ]
+          }
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 0,
+          "source": 1,
+          "source_sign": -1,
+          "source_rotation": 7,
+          "target_rotation": 8,
+          "matched": 14
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              4
+            ],
+            "6": [
+              -4,
+              6
+            ],
+            "9": [
+              -4,
+              9,
+              4
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              4
+            ],
+            "6": [
+              4,
+              6
+            ],
+            "9": [
+              4,
+              9,
+              -4
+            ]
+          }
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              4
+            ],
+            "6": [
+              -4,
+              6
+            ],
+            "9": [
+              -4,
+              9,
+              4
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              4
+            ],
+            "6": [
+              4,
+              6
+            ],
+            "9": [
+              4,
+              9,
+              -4
+            ]
+          }
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              -9,
+              4,
+              9
+            ],
+            "6": [
+              6,
+              9
+            ],
+            "9": [
+              9
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              9,
+              4,
+              -9
+            ],
+            "6": [
+              6,
+              -9
+            ],
+            "9": [
+              9
+            ]
+          }
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              4
+            ],
+            "6": [
+              6
+            ],
+            "9": [
+              9,
+              6
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              4
+            ],
+            "6": [
+              6
+            ],
+            "9": [
+              9,
+              -6
+            ]
+          }
+        }
+      ],
+      "final": {
+        "generators": [
+          4,
+          6,
+          9
+        ],
+        "relators": [
+          [
+            -9,
+            -9,
+            -6,
+            -9,
+            -9,
+            -6,
+            -9,
+            -9,
+            6
+          ],
+          [
+            -9,
+            -4,
+            -4,
+            -6,
+            -6,
+            -9,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -6,
+            -6
+          ],
+          [
+            -9,
+            4,
+            4,
+            4,
+            -6,
+            -6,
+            9,
+            4,
+            4,
+            4,
+            -6,
+            -6,
+            9,
+            -6,
+            -6
+          ]
+        ]
+      },
+      "original_generators_in_final": {
+        "2": [
+          -6,
+          -9,
+          -4,
+          -4,
+          -4,
+          -4,
+          9,
+          6
+        ],
+        "3": [
+          -6,
+          -9,
+          -4,
+          9,
+          6
+        ],
+        "4": [
+          -6,
+          -9,
+          4,
+          9,
+          6
+        ],
+        "5": [
+          -6,
+          -9,
+          -4,
+          -4,
+          -4,
+          -4,
+          -6,
+          -6,
+          -9,
+          -4,
+          -4,
+          9,
+          6
+        ],
+        "6": [
+          -6,
+          -9,
+          -4,
+          -4,
+          9,
+          6,
+          6,
+          9,
+          6
+        ],
+        "7": [
+          -6,
+          -9,
+          -4,
+          -4,
+          -9,
+          6,
+          6,
+          9,
+          6
+        ],
+        "8": [
+          -6,
+          -9,
+          4,
+          -6,
+          -6,
+          9,
+          4,
+          4,
+          4,
+          9,
+          6
+        ],
+        "9": [
+          -6,
+          -9,
+          -4,
+          -4,
+          9,
+          6,
+          9,
+          6,
+          6,
+          9,
+          6
+        ],
+        "10": [
+          -6,
+          -9,
+          -4,
+          -4,
+          6,
+          9,
+          6
+        ],
+        "11": [
+          -6,
+          -9,
+          -4,
+          -4,
+          9,
+          6,
+          9,
+          9,
+          6,
+          9,
+          6,
+          6,
+          9,
+          6
+        ],
+        "12": [
+          -6,
+          -9,
+          -4,
+          -4,
+          6,
+          6,
+          9,
+          6
+        ],
+        "13": [
+          -6,
+          -9,
+          -4,
+          -4,
+          9,
+          6
+        ]
+      },
+      "final_generators_in_original": {
+        "4": [
+          4,
+          4,
+          9,
+          -6,
+          4,
+          6,
+          -9,
+          -4,
+          -4
+        ],
+        "6": [
+          4,
+          4,
+          6,
+          4,
+          4,
+          6,
+          -9,
+          -4,
+          -4
+        ],
+        "9": [
+          4,
+          4,
+          9,
+          -6,
+          9,
+          -6,
+          -4,
+          -4,
+          -6,
+          -4,
+          -4
+        ]
+      },
+      "status": "LOCAL_MINIMUM",
+      "seconds": 0.052891
+    },
+    {
+      "name": "13a_135",
+      "pd": [
+        [
+          3,
+          1,
+          4,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          11,
+          5,
+          12,
+          4
+        ],
+        [
+          5,
+          11,
+          6,
+          10
+        ],
+        [
+          15,
+          9,
+          16,
+          8
+        ],
+        [
+          9,
+          17,
+          10,
+          16
+        ],
+        [
+          21,
+          12,
+          22,
+          13
+        ],
+        [
+          13,
+          24,
+          14,
+          25
+        ],
+        [
+          19,
+          15,
+          20,
+          14
+        ],
+        [
+          17,
+          23,
+          18,
+          22
+        ],
+        [
+          23,
+          19,
+          24,
+          18
+        ],
+        [
+          25,
+          20,
+          26,
+          21
+        ]
+      ],
+      "base_arc": 0,
+      "crossings": [
+        [
+          12,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          4,
+          5,
+          0
+        ],
+        [
+          4,
+          1,
+          2,
+          0
+        ],
+        [
+          3,
+          6,
+          7,
+          0
+        ],
+        [
+          7,
+          3,
+          4,
+          0
+        ],
+        [
+          5,
+          9,
+          10,
+          1
+        ],
+        [
+          11,
+          5,
+          6,
+          1
+        ],
+        [
+          6,
+          8,
+          9,
+          0
+        ],
+        [
+          10,
+          7,
+          8,
+          0
+        ],
+        [
+          8,
+          10,
+          11,
+          0
+        ],
+        [
+          9,
+          11,
+          12,
+          1
+        ]
+      ],
+      "raw_relators": [
+        [
+          13,
+          13,
+          -2
+        ],
+        [
+          3,
+          -13,
+          3
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          2,
+          -5,
+          2,
+          -6
+        ],
+        [
+          5,
+          -2,
+          5,
+          -3
+        ],
+        [
+          4,
+          -7,
+          4,
+          -8
+        ],
+        [
+          8,
+          -4,
+          8,
+          -5
+        ],
+        [
+          6,
+          -10,
+          6,
+          -11
+        ],
+        [
+          12,
+          -6,
+          12,
+          -7
+        ],
+        [
+          7,
+          -9,
+          7,
+          -10
+        ],
+        [
+          11,
+          -8,
+          11,
+          -9
+        ],
+        [
+          9,
+          -11,
+          9,
+          -12
+        ],
+        [
+          10,
+          -12,
+          10,
+          -13
+        ]
+      ],
+      "graph_core": {
+        "trace": [
+          {
+            "kind": "parallel",
+            "edges": [
+              1,
+              2
+            ],
+            "ends": [
+              0,
+              2
+            ],
+            "new_edge": 13
+          },
+          {
+            "kind": "parallel",
+            "edges": [
+              5,
+              6
+            ],
+            "ends": [
+              2,
+              4
+            ],
+            "new_edge": 14
+          },
+          {
+            "kind": "parallel",
+            "edges": [
+              10,
+              11
+            ],
+            "ends": [
+              4,
+              5
+            ],
+            "new_edge": 15
+          },
+          {
+            "kind": "series",
+            "vertex": 0,
+            "edges": [
+              0,
+              13
+            ],
+            "ends": [
+              1,
+              2
+            ],
+            "new_edge": 16
+          },
+          {
+            "kind": "series",
+            "vertex": 3,
+            "edges": [
+              3,
+              4
+            ],
+            "ends": [
+              1,
+              2
+            ],
+            "new_edge": 17
+          },
+          {
+            "kind": "parallel",
+            "edges": [
+              16,
+              17
+            ],
+            "ends": [
+              1,
+              2
+            ],
+            "new_edge": 18
+          },
+          {
+            "kind": "series",
+            "vertex": 2,
+            "edges": [
+              14,
+              18
+            ],
+            "ends": [
+              4,
+              1
+            ],
+            "new_edge": 19
+          }
+        ],
+        "vertices": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "edges": {
+          "7": [
+            1,
+            5
+          ],
+          "8": [
+            5,
+            6
+          ],
+          "9": [
+            4,
+            6
+          ],
+          "12": [
+            6,
+            1
+          ],
+          "15": [
+            4,
+            5
+          ],
+          "19": [
+            4,
+            1
+          ]
+        },
+        "conclusion": "Abstract K4 series/parallel core only; no manifold/tangle decomposition is inferred."
+      },
+      "initial": {
+        "generators": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "relators": [
+          [
+            -13,
+            -13,
+            2
+          ],
+          [
+            -13,
+            3,
+            3
+          ],
+          [
+            -13,
+            10,
+            -12,
+            10
+          ],
+          [
+            -12,
+            6,
+            -12,
+            7
+          ],
+          [
+            -12,
+            9,
+            -11,
+            9
+          ],
+          [
+            -11,
+            6,
+            -10,
+            6
+          ],
+          [
+            -11,
+            8,
+            -11,
+            9
+          ],
+          [
+            -10,
+            7,
+            -9,
+            7
+          ],
+          [
+            -8,
+            4,
+            -8,
+            5
+          ],
+          [
+            -8,
+            4,
+            -7,
+            4
+          ],
+          [
+            -6,
+            2,
+            -5,
+            2
+          ],
+          [
+            -5,
+            2,
+            -5,
+            3
+          ],
+          [
+            -4,
+            -3
+          ]
+        ]
+      },
+      "trace": [
+        {
+          "kind": "eliminate",
+          "generator": 3,
+          "relator": 12,
+          "solved_word": [
+            -4
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 2,
+          "relator": 0,
+          "solved_word": [
+            13,
+            13
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 8,
+          "relator": 10,
+          "solved_word": [
+            4,
+            -7,
+            4
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 11,
+          "relator": 5,
+          "solved_word": [
+            9,
+            -12,
+            9
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 5,
+          "relator": 0,
+          "solved_word": [
+            13,
+            13,
+            -6,
+            13,
+            13
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 10,
+          "relator": 7,
+          "solved_word": [
+            7,
+            -9,
+            7
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 6,
+          "relator": 4,
+          "solved_word": [
+            12,
+            -7,
+            12
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 13,
+          "relator": 2,
+          "solved_word": [
+            -4,
+            -4
+          ]
+        },
+        {
+          "kind": "eliminate",
+          "generator": 7,
+          "relator": 4,
+          "solved_word": [
+            4,
+            -9,
+            12,
+            -9,
+            12,
+            -9,
+            4
+          ]
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 2,
+          "source": 3,
+          "source_sign": 1,
+          "source_rotation": 18,
+          "target_rotation": 9,
+          "matched": 23
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 0,
+          "source": 1,
+          "source_sign": 1,
+          "source_rotation": 16,
+          "target_rotation": 17,
+          "matched": 17
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 0,
+          "source": 1,
+          "source_sign": 1,
+          "source_rotation": 15,
+          "target_rotation": 20,
+          "matched": 12
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              4,
+              9
+            ],
+            "9": [
+              9
+            ],
+            "12": [
+              12,
+              9
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              4,
+              -9
+            ],
+            "9": [
+              9
+            ],
+            "12": [
+              12,
+              -9
+            ]
+          }
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 2,
+          "source": 0,
+          "source_sign": 1,
+          "source_rotation": 8,
+          "target_rotation": 3,
+          "matched": 9
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              4
+            ],
+            "9": [
+              -4,
+              9
+            ],
+            "12": [
+              12
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              4
+            ],
+            "9": [
+              4,
+              9
+            ],
+            "12": [
+              12
+            ]
+          }
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 1,
+          "source": 0,
+          "source_sign": 1,
+          "source_rotation": 0,
+          "target_rotation": 0,
+          "matched": 8
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              -12,
+              4
+            ],
+            "9": [
+              -12,
+              9,
+              12
+            ],
+            "12": [
+              12
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              12,
+              4
+            ],
+            "9": [
+              12,
+              9,
+              -12
+            ],
+            "12": [
+              12
+            ]
+          }
+        },
+        {
+          "kind": "automorphism",
+          "images": {
+            "4": [
+              -12,
+              4
+            ],
+            "9": [
+              -12,
+              9,
+              12
+            ],
+            "12": [
+              12
+            ]
+          },
+          "inverse_images": {
+            "4": [
+              12,
+              4
+            ],
+            "9": [
+              12,
+              9,
+              -12
+            ],
+            "12": [
+              12
+            ]
+          }
+        },
+        {
+          "kind": "relator_dehn",
+          "target": 1,
+          "source": 0,
+          "source_sign": 1,
+          "source_rotation": 7,
+          "target_rotation": 0,
+          "matched": 7
+        }
+      ],
+      "final": {
+        "generators": [
+          4,
+          9,
+          12
+        ],
+        "relators": [
+          [
+            -12,
+            -12,
+            -12,
+            -9,
+            -9,
+            -9,
+            -4,
+            -12,
+            -12,
+            -12,
+            4,
+            4
+          ],
+          [
+            -12,
+            -12,
+            4,
+            4,
+            4,
+            9,
+            9,
+            9,
+            12,
+            4,
+            9,
+            9,
+            9,
+            4,
+            4
+          ],
+          [
+            -9,
+            -9,
+            -9,
+            -9,
+            -9,
+            4,
+            4,
+            -9,
+            -9,
+            4,
+            4
+          ]
+        ]
+      },
+      "original_generators_in_final": {
+        "2": [
+          -12,
+          -12,
+          -9,
+          -9,
+          -9,
+          -9,
+          12,
+          12
+        ],
+        "3": [
+          -12,
+          -12,
+          -9,
+          12,
+          12
+        ],
+        "4": [
+          -12,
+          -12,
+          9,
+          12,
+          12
+        ],
+        "5": [
+          -12,
+          -12,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          4,
+          -12,
+          -12,
+          -12,
+          4,
+          4,
+          -12,
+          -12,
+          -12,
+          -9,
+          -9,
+          -9,
+          -9,
+          12,
+          12
+        ],
+        "6": [
+          12,
+          -4,
+          -4,
+          12,
+          12,
+          12,
+          -4,
+          9,
+          12,
+          12
+        ],
+        "7": [
+          -12,
+          -12,
+          4,
+          9,
+          12,
+          12
+        ],
+        "8": [
+          -12,
+          -12,
+          -4,
+          9,
+          12,
+          12
+        ],
+        "9": [
+          -4,
+          9,
+          12,
+          12
+        ],
+        "10": [
+          -12,
+          -12,
+          4,
+          4,
+          -12,
+          -12,
+          4,
+          9,
+          12,
+          12
+        ],
+        "11": [
+          -12,
+          -4,
+          9,
+          12,
+          12
+        ],
+        "12": [
+          12,
+          -4,
+          9,
+          12,
+          12
+        ],
+        "13": [
+          -12,
+          -12,
+          -9,
+          -9,
+          12,
+          12
+        ]
+      },
+      "final_generators_in_original": {
+        "4": [
+          12,
+          -9,
+          12,
+          -9,
+          4,
+          -9
+        ],
+        "9": [
+          12,
+          -9,
+          12,
+          -9,
+          4,
+          9,
+          -12,
+          9,
+          -12
+        ],
+        "12": [
+          12,
+          -9
+        ]
+      },
+      "status": "LOCAL_MINIMUM",
+      "seconds": 0.051958
+    }
+  ],
+  "seconds": 0.108497,
+  "assurance": "Every accepted presentation move is exact; independent replay required. A local minimum/cap proves no rank lower bound. Abstract graph K4 reduction does not imply a geometric splitting."
+}

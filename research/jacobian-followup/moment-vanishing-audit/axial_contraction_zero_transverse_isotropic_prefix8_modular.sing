@@ -1,0 +1,4 @@
+ring R=1073741827,(d,e),dp;
+option(redSB);
+ideal I=3159*d^2+198*d*e^2+286*e^2,-729*d^2+27*d*e^2-143*e^2,-166212*d^3+22464*d^2*e^2+1020357*d^2-12920*d*e^2+5168*e^4,-9234*d^3-288*d^2*e^2-78489*d^2+1292*d*e^2-608*e^4,61115715*d^5+7946100*d^4*e^2+169992*d^3*e^4+6371460*d^3*e^2+3039680*d^2*e^4+5520*d*e^6+297160*d*e^4+960*e^8;
+ideal K=std(I);print("BASIS_SIZE");print(size(K));print("DIM");print(dim(K));print("VDIM");print(vdim(K));if(size(K)<15){print("BASIS_BEGIN");K;print("BASIS_END");};quit;

@@ -1,0 +1,15 @@
+{
+  "review_date": "2026-11-14",
+  "primary_metadata_url": "https://www.sciencedirect.com/science/article/pii/0021869380902331",
+  "title": "A Jacobian criterion for separability",
+  "author": "Stuart Sui-Sheng Wang",
+  "journal": "Journal of Algebra 65(2), 453-494, August 1980",
+  "doi": "10.1016/0021-8693(80)90233-1",
+  "primary_metadata_inspected": "Publisher metadata and table of contents, including section 5.7 Quadratic case. The DOI redirect was inaccessible, but the direct publisher search result exposed the metadata. No full-text proof is claimed inspected.",
+  "role": "Classical context for quadratic Keller invertibility. The present note reproduces its needed two-variable case directly and does not import the general-dimensional theorem.",
+  "one_variable_linear_component_argument": "Proved directly by subtracting powers of the affine component, in all degrees of the other component.",
+  "new_external_classification_imported": false,
+  "secondary_AI_exposition_used_as_mathematical_input": false,
+  "full_text_proof_claimed_reviewed": false,
+  "novelty_priority_asserted": false
+}

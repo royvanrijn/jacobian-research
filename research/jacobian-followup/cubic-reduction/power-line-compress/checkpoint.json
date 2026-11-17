@@ -1,0 +1,15 @@
+{
+  "algebraic_trials": 0,
+  "best": 89,
+  "fixed_points": 178,
+  "full_binary_lines": 8,
+  "input_sha256": "773143fa2d8d2417c4d87ef1d0f2a2cddaa7a11ae25511f0f657b0e452a2887f",
+  "outside_rejected": 3333,
+  "pairs": 3916,
+  "rational_trials": 215,
+  "residual_rejected": 357,
+  "scope": "Lines through pairs of the89 saved forms; possible replacements lie in the saved89-cube span. Includes irreducible rational parameter factors of degree up to3. No full Veronese intersection or global optimality claim.",
+  "seconds": 7.707,
+  "source_sha256": "4192f7ec83bab7a247a6590b169a6ce2311812c773206ad25904d161b728972d",
+  "status": "completed-no-compression"
+}

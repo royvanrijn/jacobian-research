@@ -1,0 +1,69 @@
+LQ_NONISO_D1ZERO_H1_GATE
+6
+LQ_NONISO_D1ZERO_H1_BASIS_SIZE
+3
+LQ_NONISO_D1ZERO_H1_BASIS
+4494*d2*d3+3087*d3^2-6420*d2-14212*d3,
+7*d2^2+20*d2+40*d3,
+9529569*d3^3+1637622*d3^2+62928840*d2+156922504*d3
+LQ_NONISO_D1ZERO_H1_POWER
+1
+1
+// ** redefining remainderPoly (O_H1_POWER");print(pp);print(size(remainderPoly));if(remainderPoly==0){break;}) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:7
+LQ_NONISO_D1ZERO_H1_POWER
+2
+1
+// ** redefining remainderPoly (O_H1_POWER");print(pp);print(size(remainderPoly));if(remainderPoly==0){break;}) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:7
+LQ_NONISO_D1ZERO_H1_POWER
+3
+3
+// ** redefining remainderPoly (O_H1_POWER");print(pp);print(size(remainderPoly));if(remainderPoly==0){break;}) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:7
+LQ_NONISO_D1ZERO_H1_POWER
+4
+3
+LQ_NONISO_D1ZERO_H1_SATURATED
+453789*d3^2+2097628*d2+1518876*d3+838880,
+3087*d2*d3-14212*d2-16860*d3-3920,
+7*d2^2+20*d2+40*d3
+// ** redefining I (ideal I=0;for(int jj=1;jj<=kk;jj++){I=I,All[jj];}) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:5
+// ** redefining jj (int jj=1;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:4
+LQ_NONISO_D1ZERO_H1_GATE
+8
+// ** redefining G (RO_H1_BASIS_SIZE");print(size(G));print("LQ_NONISO_D1ZERO_H1_BASIS");print(G);) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:6
+LQ_NONISO_D1ZERO_H1_BASIS_SIZE
+2
+LQ_NONISO_D1ZERO_H1_BASIS
+d3,
+d2
+// ** redefining pp (int pp=1;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:6
+// ** redefining remainderPoly (O_H1_POWER");print(pp);print(size(remainderPoly));if(remainderPoly==0){break;}) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:7
+LQ_NONISO_D1ZERO_H1_POWER
+1
+0
+// ** redefining Sat (print("LQ_NONISO_D1ZERO_H1_SATURATED");print(Sat);if(reduce(1,Sat)==0){break;}) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:8
+LQ_NONISO_D1ZERO_H1_SATURATED
+1
+// ** redefining kk (int kk=2;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:16
+// ** redefining jj (int jj=1;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:16
+LQ_NONISO_D1H1ZERO_D2_GATE
+6
+LQ_NONISO_D1H1ZERO_D2_BASIS_SIZE
+1
+LQ_NONISO_D1H1ZERO_D2_BASIS
+1
+// ** redefining pp (int pp=1;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/linear_quadratic_other_invariant_charts.sing:18
+LQ_NONISO_D1H1ZERO_D2_POWER
+1
+0
+LQ_NONISO_D1H1ZERO_D2_SATURATED
+1
+LQ_ISO_H1_BASIS
+d3^2,
+d2*d3,
+d1*d3,
+d2^2,
+30*d1*d2+49*d3,
+7*d1^2+20*d2
+LQ_ISO_H1_D3_POWER
+0
+END

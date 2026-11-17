@@ -1,0 +1,29 @@
+{
+  "field_trace_f_p3_set_to_zero": true,
+  "parameters": [
+    "kap",
+    "A",
+    "D",
+    "h",
+    "i",
+    "e",
+    "rho",
+    "a",
+    "b",
+    "c",
+    "d",
+    "g",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "C"
+  ],
+  "witnesses": {
+    "y7": "-64*(256*A*D*c - 160*A*c*kap - 4096*A*c*rho - 24064*A*c + 64*D**2*a + 4*D**2*rho + 126*D**2 - 20*D*a*kap - 1024*D*a*rho - 5696*D*a + 8192*D*b*c - 1024*D*c*i - 30*D*kap + 96*D*rho**2 - 404*D*rho - 5193*D + 480*a*kap*rho + 2858*a*kap + 4096*a*rho**2 + 45568*a*rho + 126736*a - 5120*b*c*kap - 65536*b*c*rho - 364544*b*c + 320*c*i*kap + 8192*c*i*rho + 45568*c*i - 40*e*kap*rho - 246*e*kap - 80*kap*rho**2 - 276*kap*rho + 1182*kap - 1024*rho**3 - 11952*rho**2 - 38111*rho - 18423)",
+    "y5p": "32*(576*A*D*c + 12288*A*a*c - 3072*A*c*e - 2048*A*c*rho + 3456*A*c + 96*D**2*a + 144*D**2 + 3072*D*a**2 - 1024*D*a*e - 1664*D*a*rho - 1632*D*a + 11264*D*b*c + 2048*D*c*d - 1536*D*c*i + 64*D*e**2 + 80*D*e*rho - 876*D*e + 120*D*rho**2 - 960*D*rho - 4338*D - 960*a**2*kap - 24576*a**2*rho - 136704*a**2 + 196608*a*b*c - 24576*a*c*i + 160*a*e*kap + 8192*a*e*rho + 45568*a*e + 80*a*kap*rho - 2232*a*kap + 7168*a*rho**2 + 18752*a*rho - 117480*a - 49152*b*c*e - 1280*b*c*kap - 40960*b*c*rho + 14848*b*c - 1280*c*d*kap - 16384*c*d*rho - 91136*c*d + 6144*c*e*i + 160*c*i*kap + 6144*c*i*rho + 3840*c*i - 512*e**2*rho - 2848*e**2 + 240*e*kap - 960*e*rho**2 - 488*e*rho + 26940*e + 120*kap*rho - 1185*kap - 256*rho**3 + 5124*rho**2 + 42828*rho + 35622)",
+    "y4q": "-16*(6144*A*a*c - 1408*A*c*rho + 720*A*c + 512*D*a**2 - 32*D*a*e - 144*D*a*rho + 612*D*a + 3072*D*b*c + 2048*D*c*d - 160*D*c*i - 48*D*e - 216*D*rho - 234*D - 80*a**2*kap - 4096*a**2*rho - 22784*a**2 + 147456*a*b*c - 18432*a*c*i + 256*a*e*rho + 1424*a*e - 240*a*kap + 1792*a*rho**2 + 9384*a*rho - 3150*a - 12288*b*c*e - 55296*b*c*rho - 122880*b*c + 98304*c**2*g - 36864*c**2*h - 786432*c**2*l - 6709248*c**2 - 320*c*d*kap - 16384*c*d*rho - 91136*c*d + 1536*c*e*i + 5120*c*i*rho + 5392*c*i + 384*e*rho + 2136*e - 180*kap - 240*rho**3 - 1704*rho**2 - 3519*rho - 7812)"
+  },
+  "elapsed_seconds": 0.618664514971897
+}

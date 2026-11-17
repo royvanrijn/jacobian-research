@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "version": "v004",
+  "pages": 24,
+  "pdf_sha256": "083bd7d4e0bc30f3b98ea41d543830862905beb37844fdd749abbc0892206655",
+  "manuscript_inputs_sha256": {
+    "manuscript.tex": "8ce7f69816b1eb79e74561adcd66318726cfc37248e5d8b41c321fd3378eaa55",
+    "formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+    "punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+    "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+    "analytic_core.tex": "a8fb4da61c1f39ea1f9bd941ae1d65702eadc62be23ab305e1d463d2409f4a32"
+  },
+  "layout_verified": true,
+  "method": "Two pdflatex passes;all24pages rendered through Poppler85dpi;two all-page contact sheets and full-page new theorem,logarithm,transport/application inspected.",
+  "overfull_boxes": 0,
+  "undefined_references": false,
+  "visual_defects_found": false,
+  "submission_ready": false,
+  "mathematical_completeness_verified_by_layout": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

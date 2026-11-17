@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "kind": "finite exact controls;universal field/arithmetic descent is written mathematics",
+  "canonical_proof_sha256": "fa0b5a57eee4afc90960ebc9470ce42a1df15b63cf06be53a61152f6ae7d1dba",
+  "producer_sha256": "307f0a412cc2d1a327773bbc5796241b2965cdfba63cb6f2bebcd9fd418b154d",
+  "checker_sha256": "016320f58626cc65f69e7e9bdb4fa2b1fbbfff541d2930664e5919426fd42f61",
+  "certificate_sha256": "7e8c109fddf3a5e25ed12db6d81e76fbb5ad58a321fbcb18bbe994e22c879b43",
+  "runtime_sha256": "3d6b555940fe2038a1fecda9f6d6e516a076ce0e7531866b4bfcaedf4a324fd8",
+  "exact_controls": {
+    "critical_normalizations": 8,
+    "matrix_controls": 1,
+    "occupation_controls": 5,
+    "no_linear_denominator_controls": 3,
+    "critical_conjugate_obstructions": 1,
+    "Kummer_models": 4,
+    "pcurvature_controls": 9,
+    "rejections": 5
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "pre_registration_proof_scope_clarification": {
+    "previous_proof_sha256": "821165b1309b2f6ea46ab64907bd9e4efc2a96ff877b193aac16ac64daa4ce7c",
+    "previous_unregistered_receipt_sha256": "540a7f1487403c1c96d488c875802e877a34e7d14afd739937c8083585ddfad9",
+    "change": "Reduction lemma explicitly requires a common finite arithmetic model for BOTH h and psi;the Gaussian critical recursion supplies it. Added primitive-polynomial branch injection detail. Finite exact algebra and certificate unchanged;checker not rerun."
+  }
+}

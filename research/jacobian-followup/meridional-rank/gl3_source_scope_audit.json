@@ -1,0 +1,30 @@
+{
+  "status": "PASS source seals and explicit search guards",
+  "commit": "06cbbb7e2737e1a11085b64e0ead021d63c550c3",
+  "files": [
+    {
+      "path": "sources/current13/search/glsearch.py",
+      "url": "https://github.com/anaxia-research/conjecture-to-choose/blob/06cbbb7e2737e1a11085b64e0ead021d63c550c3/search/glsearch.py",
+      "sha256": "52155ca6d1c67456b45a97eaadc234980a2227f155e88ef46e8fb8c20f500cc5",
+      "computed_git_blob_sha1": "9580c6eff27e80504f0bea6f07c6d261bb6c790a",
+      "provenance": "Pinned GitHub connector raw content; blob hash computed locally, not supplied by connector"
+    },
+    {
+      "path": "sources/current13/search/w3.py",
+      "url": "https://github.com/anaxia-research/conjecture-to-choose/blob/06cbbb7e2737e1a11085b64e0ead021d63c550c3/search/w3.py",
+      "sha256": "24f270b58b6c7c64a8ec4a9d3b9e1b19aad12d72dedbda6ff2178591c4f7e4ad",
+      "computed_git_blob_sha1": "465ada31115275de0d59f633c257231c8faf70d3",
+      "provenance": "Pinned GitHub connector raw content; blob hash computed locally, not supplied by connector"
+    }
+  ],
+  "coverage_finding": "Four seed image directions are assumed independent, and singular seed pairings discarded. Homogeneous affine3 extensions have rank at most3 for every four-direction pairing and lie outside this search even when the common fixed space is zero.",
+  "certificate_validity": "No challenge to any243 replayed deposited certificates or the rank-one fixed-space criterion.",
+  "three_seed_boundary": "Bounded random diagram moves, not an exhaustive three-bridge exclusion.",
+  "ATLAS_import": "Primary L32 page lists natural3,dual3,Steinberg8 in characteristic2. Full matrix-algebra spans and four2-regular classes are independently checked; Brauer class-count theorem imported.",
+  "assurance": "Source content inspected and mathematical scope argued in the canonical proof; text guards are not a substitute for that argument.",
+  "input_sha256": {
+    "audit_gl3_sources.py": "abbb1b8a45520d2f6de76c9a202e3cc9efa106153c7cfbe55b3ba6caa41957ba",
+    "sources/atlas-l32.html": "1df061049290b684d90227a4f1e5c3fa67214e6d8914d3450f369cf955e4ce16",
+    "sources/current13/manifest.json": "efecf0543ffe588f85fcdfe496677ace2d3fd135795b59834c949cc625b0086f"
+  }
+}

@@ -1839,9 +1839,9 @@
       "id": "KIG7",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "The four-term derivative inverse, even orientation split and generic primitive-field recovery are exact. The actual rational root chart needs H^3/(4K^3L), not merely 1/P'(T).",
-      "remaining": "Construct a different root chart or nontriangular coupled pair using the actual chart reciprocal, while preserving the degree-four field and giving polynomial affine coordinates. KIG8 already computes the reciprocal; the Hhat route through KIG13-17 is closed.",
-      "disposition": "open-obligation",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The primitive and pole identities remain partial local results, not an affine-space realization. Wright A4 boundary states remain separate.",
+      "disposition": "historical-route",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "Retained KIG1-2 and the external generic-quartic input: the comparison uses the ordinary root chart and its determinant, not only the finite free algebra.",
       "evidence": [
@@ -1852,22 +1852,29 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "Consequently the corrected total mask (6.28) is closed, not merely its\nfirst factorization.  Every factorization retains the genuine strict\n\\(\\widehat H\\) pole, hence the genus-thirteen divisor at infinity; the\ncurvette split also retains the genus-twenty divisor \\(D_{14}\\).  A\npolynomial affine-space construction must replace the corrected selector\nitself by a principal mask whose horizontal prime components are rational,\nor leave this root chart entirely."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
-        "KIG7": "60c4333e90b526508d5a609e58344b42d46d0e0d5a074e7e7552c87135c355b6",
-        "KIG8": "b9250b99af2831b2de5cc421e88435a66b0199f51cca5d1632a7b759785d1c2e",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG7": "02abd54a2207782b85e2f408afcb31237c050589d7980e72ec9f0a43bc3d3b1f",
+        "KIG8": "f973f6f86cefc17204ef5f56aa9f5da77c361b92c91bb93003be9e8bfa10479a",
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_chart_unit_rank_four.py": "9ad234ef649bcd0eced0900880b5c9bf3f40a9e2a1b5ae19e6c1aa871f466448",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
         "archive/non-elliptic/scripts/verify_a4_root_incidence_derivative_split.py": "005d982a619a766bb51ba1e37cdfbae404a048546f79ca8dc602638d140f0e2e",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -1875,9 +1882,9 @@
       "id": "KIG8",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "Four-branch interpolation gives the correct reciprocal, with irreducible pairwise-coprime factors B, rho and sigma. The localized fourfold suspension has determinant one and unchanged generic degree four, but both coordinates have genuine poles.",
-      "remaining": "Give a new affine source realization or genuinely coupled contraction-module pair that clears the correct divisor ledger. Original polynomial masks, the forced quotients and the Hhat boundary have already been tested and closed by KIG11-12 and KIG17.",
-      "disposition": "open-obligation",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The exact reciprocal and genuine poles remain valid; no new affine source is sought for this objective. Wright A4 boundary states remain separate.",
+      "disposition": "historical-route",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG7 supplies the selected-root chart comparison; later obstructions constrain continuation and are not prerequisites for the interpolation identity.",
       "evidence": [
@@ -1888,23 +1895,30 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "Consequently the corrected total mask (6.28) is closed, not merely its\nfirst factorization.  Every factorization retains the genuine strict\n\\(\\widehat H\\) pole, hence the genus-thirteen divisor at infinity; the\ncurvette split also retains the genus-twenty divisor \\(D_{14}\\).  A\npolynomial affine-space construction must replace the corrected selector\nitself by a principal mask whose horizontal prime components are rational,\nor leave this root chart entirely."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
-        "KIG8": "b9250b99af2831b2de5cc421e88435a66b0199f51cca5d1632a7b759785d1c2e",
-        "KIG11": "f6f6004a14a69b2261dc34d37bcc49e847cbe00436aca90e4fdb38ce8b614f3d",
-        "KIG12": "95a8450c6e8a24e945cdadf1c30c307e6d0b338c35f11240e4879f2235c65882",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG8": "f973f6f86cefc17204ef5f56aa9f5da77c361b92c91bb93003be9e8bfa10479a",
+        "KIG11": "4b9b6a85b0296f9c02444eb74029d32563abe8677e087d8a5998df7415a87b04",
+        "KIG12": "7adf6d5b7240bfb3b48665e2a733365a409f4d1b70372b240a1fea92594b5b57",
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_affine_modification_obstruction.py": "e695cb4c2c9eb38ddf2efcdf5ee5f0fbc2f711a2705403e041a704b4b87cae25",
         "archive/non-elliptic/scripts/verify_a4_chart_unit_rank_four.py": "9ad234ef649bcd0eced0900880b5c9bf3f40a9e2a1b5ae19e6c1aa871f466448",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -1912,9 +1926,9 @@
       "id": "KIG9",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "The common nontransverse cluster and exact local orders are known: Sing(sigma)=(a^2,rho), triple intersection=(a^3,rho), mask denominator orders two and three, numerator coefficient order one.",
-      "remaining": "The cluster-resolution step is already KIG10. A new source model must address the branch-dependent divisor allocation and affine recognition left after KIG11-17, rather than reinterpret this necessary local screen as a global exclusion.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The local screen does not itself classify every modification; its cluster resolution already exists as KIG10. Wright A4 boundary states remain separate.",
       "disposition": "historical-route",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG8 supplies the particular masks being screened; KIG10 is the completed successor, not a missing prerequisite.",
       "evidence": [
@@ -1925,22 +1939,29 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "This gives a first contraction screen.  The residual orders differ among\nroot branches over the same \\(E_1,E_2\\), and \\(F\\).  Consequently they\ncannot be supplied by monomials pulled back from the resolved target.  A\npolynomial contraction would have to construct root-dependent principal\nCartier masks on the normalized incidence, prove that they glue across the\nfour charts, and only then test an affine contraction. Sections 6.5–6.8\nconstruct rational masks with these divisors; Section 6.9 closes their\ncorrected-selector route. The valuation table alone does not settle that\naffine-source requirement."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
-        "KIG9": "9a44eb12985d0b3545f7ba0dde44493cf200140812a755339875a4ac2f4ba4a3",
-        "KIG10": "0210f8e3549014d3bb16ec6672310f2a70fb1a817baeed422d7be9dd3950d94f",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG9": "3745aa579a50a640949ab278018dcc3f85ba1e0bb5cffb59c9ae64ee32cc07d4",
+        "KIG10": "c4570b7f1039114e396e1ba17a4b61e7de28f5d1550b51d989a6235d9f8fc3eb",
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_chart_unit_rank_four.py": "9ad234ef649bcd0eced0900880b5c9bf3f40a9e2a1b5ae19e6c1aa871f466448",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
         "archive/non-elliptic/scripts/verify_a4_two_mask_local_viability.py": "25a58662477100ce50f161ba80abf2c2a56e6a69dc6a49e3abd091c5a7c0ebdd",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -1948,9 +1969,9 @@
       "id": "KIG10",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "Four coefficient-plane blowups, full numerator Newton branch orders and all residual divisor-allocation intervals are explicit. Strict sigma cancels divisorially after normalization; a target-monomial mask cannot distinguish the residual branches.",
-      "remaining": "Exact rational masks with these valuations already exist in KIG13. Their Hhat affine-plane route is closed by KIG17. A different selector or coupled source model must supply gluing and actual affine-space coordinates; coefficientwise divisibility in the nonnormal algebra cannot replace normalized divisorial cancellation.",
-      "disposition": "open-obligation",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The resolved valuation data and masks of KIG13 are retained; these do not constitute a global affine-space identification. Wright A4 boundary states remain separate.",
+      "disposition": "historical-route",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG8-9 define the numerator and cluster. Distinguished the four-curve coefficient resolution from the seven-curve normalized-incidence lattice of KIG15.",
       "evidence": [
@@ -1961,23 +1982,30 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "These are exactly the residual orders in (6.11), including the previously\nmissing simple-\\(F\\) cancellation.  Along the strict transforms, \\(T\\) has\ntarget-normalized order \\(1/2\\) on all four \\(B_0\\)-branches, \\(G\\) has\norder \\(1/3\\) on the three ramified \\(\\rho\\)-branches, and\n\\(\\widehat H\\) is a unit on \\(B_0,\\rho,\\sigma\\).  After root normalization,\n(6.28) therefore has exactly the complete residual mask divisor."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
-        "KIG10": "0210f8e3549014d3bb16ec6672310f2a70fb1a817baeed422d7be9dd3950d94f",
+        "KIG10": "c4570b7f1039114e396e1ba17a4b61e7de28f5d1550b51d989a6235d9f8fc3eb",
         "KIG13": "739da7c1d4c5b7facdd4db1c4e19a8e496b7824494e2236433e8d76c13082fc8",
-        "KIG15": "b02459d7687c69331a0c515f24e13991ca1bd9c9b69ebc2c797e65d4ccb4fcfd",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG15": "98dc050ccaf17e975a08f0797761db7806a789e17b1a2d5351c0af9e9493a804",
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_chart_unit_rank_four.py": "9ad234ef649bcd0eced0900880b5c9bf3f40a9e2a1b5ae19e6c1aa871f466448",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_selector.py": "f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -1985,9 +2013,9 @@
       "id": "KIG11",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "The forced triple-rho selector is G=T+a^3. Every regular polynomial mask in (rho,G) vanishes at the cluster and therefore on all E1 branches, contradicting the required zero on the distinguished branch. This is an all-degree exclusion in the original polynomial root algebra.",
-      "remaining": "No polynomial-descent calculation remains in this model. KIG12 has tested the displayed exceptional quotients. Only a different modification, boundary divisor or genuinely coupled construction can reopen affine realization.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. No polynomial-descent calculation remains in the original model; KIG12 already audits its exceptional quotients. Wright A4 boundary states remain separate.",
       "disposition": "historical-route",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG10 supplies the exact residual vector needed for the contradiction; later modifications are scoped continuations, not evidence that the original exclusion was bounded.",
       "evidence": [
@@ -1998,22 +2026,29 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "This is an all-degree local obstruction to direct polynomial descent.  It\ndoes not exclude every affine modification. Section 6.4 tests the forced\nquotients in (6.17); they are no longer an unexamined continuation."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
-        "KIG11": "f6f6004a14a69b2261dc34d37bcc49e847cbe00436aca90e4fdb38ce8b614f3d",
-        "KIG12": "95a8450c6e8a24e945cdadf1c30c307e6d0b338c35f11240e4879f2235c65882",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG11": "4b9b6a85b0296f9c02444eb74029d32563abe8677e087d8a5998df7415a87b04",
+        "KIG12": "7adf6d5b7240bfb3b48665e2a733365a409f4d1b70372b240a1fea92594b5b57",
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_affine_modification_obstruction.py": "e695cb4c2c9eb38ddf2efcdf5ee5f0fbc2f711a2705403e041a704b4b87cae25",
         "archive/non-elliptic/scripts/verify_a4_chart_unit_rank_four.py": "9ad234ef649bcd0eced0900880b5c9bf3f40a9e2a1b5ae19e6c1aa871f466448",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2021,9 +2056,9 @@
       "id": "KIG12",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "The displayed exceptional-quotient charts are nonnormal or singular. Completing a full proper resolution retains complete exceptional curves and is nonaffine. The four coefficient-plane curves and seven normalized-incidence curves are different lattices.",
-      "remaining": "A continuation must delete a new codimension-one boundary or change the source. KIG13 already tried Hhat and KIG17 closed that total mask; neither the forced quotients nor the coarse four-divisor deletion is an untested repair.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The forced-quotient and full-chain calculations are retained; new boundary deletions cannot evade the absolute theorem. Wright A4 boundary states remain separate.",
       "disposition": "historical-route",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG11 forces the displayed quotients. Clarified that the (-3,-1,-3,-1) matrix is downstairs; the normalized root-incidence chain is supplied by KIG15.",
       "evidence": [
@@ -2034,23 +2069,30 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "This four-curve coefficient chain is distinct from the seven-curve\nnormalized-incidence chain computed in Section 6.7. A full proper\nresolution of the normalized root incidence also retains complete\nexceptional curves, and proper birational descent to that normalization\nadds no global regular functions. Gluing a full resolution therefore does\nnot supply the required affine chart; a boundary deletion is essential."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
-        "KIG12": "95a8450c6e8a24e945cdadf1c30c307e6d0b338c35f11240e4879f2235c65882",
+        "KIG12": "7adf6d5b7240bfb3b48665e2a733365a409f4d1b70372b240a1fea92594b5b57",
         "KIG13": "739da7c1d4c5b7facdd4db1c4e19a8e496b7824494e2236433e8d76c13082fc8",
-        "KIG15": "b02459d7687c69331a0c515f24e13991ca1bd9c9b69ebc2c797e65d4ccb4fcfd",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG15": "98dc050ccaf17e975a08f0797761db7806a789e17b1a2d5351c0af9e9493a804",
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_affine_modification_obstruction.py": "e695cb4c2c9eb38ddf2efcdf5ee5f0fbc2f711a2705403e041a704b4b87cae25",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_selector.py": "f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2058,9 +2100,9 @@
       "id": "KIG13",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "Hhat has the exact simple/triple branch orders and produces T(T+a^3)/Hhat with the complete residual mask divisor. The first split passes only the coarse coefficient-plane unit/class/ampleness test.",
-      "remaining": "No affine-assembly step remains for this corrected total mask: KIG14 rejects the original normalized deletion, KIG15 excludes B-containing enlargements, and KIG17 closes every Hhat factorization. Preserve the valuation identity as a regression; a new candidate needs a different rational-horizontal selector or root chart.",
-      "disposition": "superseded-test-family",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The exact coarse candidate is retained; KIG14-17 close its normalized and Hhat factorizations locally. Wright A4 boundary states remain separate.",
+      "disposition": "historical-route",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "Replaced KIG12 with KIG10: Hhat is derived from the quartic and residual valuation vectors; the failed exceptional-quotient experiment is historical motivation, not a premise.",
       "evidence": [
@@ -2071,22 +2113,29 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "Consequently the corrected total mask (6.28) is closed, not merely its\nfirst factorization.  Every factorization retains the genuine strict\n\\(\\widehat H\\) pole, hence the genus-thirteen divisor at infinity; the\ncurvette split also retains the genus-twenty divisor \\(D_{14}\\).  A\npolynomial affine-space construction must replace the corrected selector\nitself by a principal mask whose horizontal prime components are rational,\nor leave this root chart entirely."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
         "KIG13": "739da7c1d4c5b7facdd4db1c4e19a8e496b7824494e2236433e8d76c13082fc8",
         "KIG14": "36d653bfe7c2a6824b4053caf1f684c4f99f28465cb2d739f11cdc864646e18d",
-        "KIG15": "b02459d7687c69331a0c515f24e13991ca1bd9c9b69ebc2c797e65d4ccb4fcfd",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG15": "98dc050ccaf17e975a08f0797761db7806a789e17b1a2d5351c0af9e9493a804",
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_selector.py": "f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2094,9 +2143,9 @@
       "id": "KIG14",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "Normalization splits retained E1 and E2 into simple/triple primes, while B and Hhat each contribute only one deleted horizontal prime. The divisor sequence leaves class rank at least two, also obstructing polynomial stabilization.",
-      "remaining": "Adding more boundary primes while retaining strict B is already excluded by KIG15. The B-free repair exists in KIG16 and fails genus in KIG17; only a changed selector/source outside this total-mask route remains.",
-      "disposition": "superseded-test-family",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The normalized class-rank obstruction is retained; KIG15 closes B-containing enlargements and KIG17 closes the B-free repair. Wright A4 boundary states remain separate.",
+      "disposition": "historical-route",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG13 specifies the deletion being rejected. The rank-count obstruction and KIG15 index obstruction have different hypotheses; their scopes were kept separate.",
       "evidence": [
@@ -2107,22 +2156,29 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "This closes the proposed boundary-enlargement repair, not just the original\nfour-divisor choice.  In the local divisor exact sequence, simultaneous\ntriviality of boundary units and of the relative class group requires the\nboundary-class map to be an isomorphism.  Its columns would form a basis\nand would include the forced strict \\(B_0\\) class, which is impossible.\nEquivalently, every rank-seven boundary matrix containing this column has\neven determinant.  Therefore"
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
         "KIG14": "36d653bfe7c2a6824b4053caf1f684c4f99f28465cb2d739f11cdc864646e18d",
-        "KIG15": "b02459d7687c69331a0c515f24e13991ca1bd9c9b69ebc2c797e65d4ccb4fcfd",
+        "KIG15": "98dc050ccaf17e975a08f0797761db7806a789e17b1a2d5351c0af9e9493a804",
         "KIG16": "0c3d7be5d3d634fc51913a592636aff1be7408671d69094d28c5da785201dcfd",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_selector.py": "f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2130,9 +2186,9 @@
       "id": "KIG15",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "The normalized seven-curve lattice contracts to A3 with discriminant Z/4. An odd curvette is explicit, but the forced strict B prime has content two in the full dual lattice and cannot be part of any boundary basis.",
-      "remaining": "The B-containing split is closed in every boundary enlargement. KIG16 already removes B and passes the lattice test; KIG17 then closes the total Hhat mask by genus. A new rational-horizontal selector or source model is needed, not another B-containing basis search.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The lattice theorem remains valid; KIG16-17 already audit the B-free repair. Wright A4 boundary states remain separate.",
       "disposition": "historical-route",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG14 identifies the actual normalized prime components; the full lattice is not the coarse four-curve matrix. The content-two obstruction closes only presentations retaining B, whereas the later genus argument closes Hhat.",
       "evidence": [
@@ -2143,21 +2199,28 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "The obstruction is the order-two quotient inside the \\(A_3\\)\ndiscriminant lattice.  Adding simple- or triple-branch selectors cannot\nremove it; the defect already belongs to the forced strict \\(B_0\\) prime.\nSection 6.8 changes the mask presentation so that \\(B_0\\) is no longer\na boundary prime. That repair passes this lattice screen but fails the\nindependent genus obstruction in Section 6.9."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
-        "KIG15": "b02459d7687c69331a0c515f24e13991ca1bd9c9b69ebc2c797e65d4ccb4fcfd",
+        "KIG15": "98dc050ccaf17e975a08f0797761db7806a789e17b1a2d5351c0af9e9493a804",
         "KIG16": "0c3d7be5d3d634fc51913a592636aff1be7408671d69094d28c5da785201dcfd",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_selector.py": "f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2165,9 +2228,9 @@
       "id": "KIG16",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "The B-free curvette split has a primitive four-column class sublattice, a unique seven-prime unimodular completion, and a positive effective boundary divisor. These are necessary screens, not an affine-space recognition theorem.",
-      "remaining": "The coordinate-ring reconstruction suggested at this stage is obsolete: KIG17 proves the indispensable Hhat and q14 boundary components have genera 13 and 20. The complement is not A2; a continuation needs a different selector or source.",
-      "disposition": "superseded-test-family",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The local lattice/ampleness pass remains valid, while KIG17 proves that the complement is not A2. Wright A4 boundary states remain separate.",
+      "disposition": "historical-route",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG15 supplies L_chi and the full normalized lattice. The later genus rejection is an independent screen and is not a hidden assumption in the lattice computation.",
       "evidence": [
@@ -2178,20 +2241,27 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "Consequently the corrected total mask (6.28) is closed, not merely its\nfirst factorization.  Every factorization retains the genuine strict\n\\(\\widehat H\\) pole, hence the genus-thirteen divisor at infinity; the\ncurvette split also retains the genus-twenty divisor \\(D_{14}\\).  A\npolynomial affine-space construction must replace the corrected selector\nitself by a principal mask whose horizontal prime components are rational,\nor leave this root chart entirely."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
         "KIG16": "0c3d7be5d3d634fc51913a592636aff1be7408671d69094d28c5da785201dcfd",
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe"
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_genus.sing": "c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
         "archive/non-elliptic/scripts/verify_a4_corrected_boundary_selector.py": "f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2199,9 +2269,9 @@
       "id": "KIG17",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "The linear-root Hhat and L_chi primes are birational to their norm components, of genera 13 and 20. The common-resolution argument excludes the proposed A2 complement and every factorization retaining the genuine Hhat pole.",
-      "remaining": "Replace Hhat with a selector whose every indispensable horizontal component is rational, or change the root chart. KIG18-19 and KIG23-27 already provide the low-degree jet space, sampled genus failures, moving curve, conic closure, affine-line theorem and first corrected-jet genus failure; those calculations are not new targets. Higher selectors and genuinely coupled contraction-module pairs remain open.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. Higher-selector and coupled-module classifications remain unresolved as local geometry; no global Keller construction continuation survives. Wright A4 boundary states remain separate.",
       "disposition": "historical-route",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "Retained KIG16 and the stated external genus/surface-resolution inputs. This A2 boundary-genus argument was not silently promoted to a general stable-cancellation theorem.",
       "evidence": [
@@ -2212,21 +2282,27 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "Each must pass the same\nnormalization/conductor test before any affine contraction.  It is not a\nrational degeneration inside \\((q_2,\\ell)\\), nor polynomial contraction of\neither existing split."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
-        "KIG17": "5933b64f2b6dcf98b21d44ff031afb0748de65ec3f5c2ea9449650532a2080fe",
+        "KIG17": "677804bbad40463505b5dec100b6b851564db811b400d91a75b9fa8c7455eff4",
         "KIG18": "67acfcbfade933f3194138c1b8fcd462980070b469937e2433d624959741731a",
         "KIG19": "a74ee5fd30b882f746c39c4843c432e3999d58ac555377c08cde526e694e650c",
         "KIG23": "97821ecd7389ccd141ea28f6ccd3ef654e19b6e2af7da8582ec790ecdcb6f5d2",
         "KIG24": "383427882268c12759f82c4d7f6714c510d5b04c1d917c6200b4abb3005b6520",
-        "KIG25": "3eeba3a69154342b5ec01d7fbf6a70d26b0e93c4a38d2651c3b8d3aa832a9142",
+        "KIG25": "37e443b239b1d43dcbe86476de0f1840be6b6d72d0ac4dd78ccfdead74c86113",
         "KIG26": "1b13e53679664b7a532e1fc017532c2681d5399354ae60bb012d2a40a545f16d",
-        "KIG27": "7e45b95fda5545bf6169dffd8cbe0b016257c10f1bfe1d55ead5556b2f55ea15"
+        "KIG27": "7e45b95fda5545bf6169dffd8cbe0b016257c10f1bfe1d55ead5556b2f55ea15",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_conic_principal_obstruction.py": "94b4d0e798bb0112841aa883611f4c902b8c3154b325c3b7e095cf2ad8a7ae52",
@@ -2236,7 +2312,8 @@
         "archive/non-elliptic/scripts/verify_a4_genus_zero_selector_search.py": "96f56858f5a42296c2204a57c2e6ab416d495567ee461bde309aababe94bcbae",
         "archive/non-elliptic/scripts/verify_a4_genus_zero_selector_search.sing": "7312fa65918d4af42a8a7b58992dd9ed6a99ecbdffc9e3989bb2c3eecfcfaf0d",
         "archive/non-elliptic/scripts/verify_a4_sharp_selector_plane.py": "bb3f57e37b0f6163317fa7bb2de5435fc98b3066c902ee806bbf00ddc4990471",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2244,9 +2321,9 @@
       "id": "KIG23",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "Removing fixed K^3 gives a degree-ten strict net birational to the horizontal norm. Generic absolute integrality and the rational fixed-infinity terminal members of genera 10 and 9 are exact. The 864 factor and 144 genus rows are bounded experiments.",
-      "remaining": "The moving discriminant is no longer wholly unknown: KIG24 gives D23 and its generic kernel map. Determine its full parameter image or an exact chart cover and analyze other degenerations. KIG25 closes the first rational conic; repeating the two finite height boxes cannot classify the parameter plane.",
-      "disposition": "bounded-only",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The full D23 parameter image and other local degenerations remain unresolved; bounded height boxes do not classify them. Wright A4 boundary states remain separate.",
+      "disposition": "historical-route",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "Removed KIG19: the four earlier genus probes are not inputs to the strict-model, generic-integrality or infinity calculations. KIG18 supplies the sharp parameter plane; the external Singular algorithms remain explicit.",
       "evidence": [
@@ -2257,23 +2334,30 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "This census is not a\nclassification of the rational parameter plane.  In particular it does\nnot exclude a larger-height member with extra moving singularities (or a\nfurther degeneration of the affine cluster).  The deepest degeneration\nforced by the fixed-infinity hierarchy still has genus nine, so this fixed\nstratification produces no all-rational horizontal selector, affine-space\ncomplement, or Keller map."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
         "KIG23": "97821ecd7389ccd141ea28f6ccd3ef654e19b6e2af7da8582ec790ecdcb6f5d2",
         "KIG18": "67acfcbfade933f3194138c1b8fcd462980070b469937e2433d624959741731a",
         "KIG24": "383427882268c12759f82c4d7f6714c510d5b04c1d917c6200b4abb3005b6520",
-        "KIG25": "3eeba3a69154342b5ec01d7fbf6a70d26b0e93c4a38d2651c3b8d3aa832a9142"
+        "KIG25": "37e443b239b1d43dcbe86476de0f1840be6b6d72d0ac4dd78ccfdead74c86113",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_conic_principal_obstruction.py": "94b4d0e798bb0112841aa883611f4c902b8c3154b325c3b7e095cf2ad8a7ae52",
         "archive/non-elliptic/scripts/verify_a4_genus_zero_selector_search.py": "96f56858f5a42296c2204a57c2e6ab416d495567ee461bde309aababe94bcbae",
         "archive/non-elliptic/scripts/verify_a4_sharp_selector_plane.py": "bb3f57e37b0f6163317fa7bb2de5435fc98b3066c902ee806bbf00ddc4990471",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2281,9 +2365,9 @@
       "id": "KIG24",
       "source": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
       "completed": "The value-gradient determinant is -54*M^2*D23, with irreducible degree-23 D23 and kernel-map degrees (19,18,18). The M locus gives no exact rational selector. Two D23 members are known; S103 has one rational conic component and a positive-genus residual.",
-      "remaining": "Compute the full image of D23 or a complete parameter chart cover and locate an admissible different degeneration with all rational horizontal components. KIG25 excludes principal isolation of the known conic at every positive multiplicity; neither its rational factor nor a finite-height miss solves the affine-source problem.",
-      "disposition": "open-obligation",
-      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed.",
+      "remaining": "The A4-preserving affine-space Keller construction objective is closed by KMFI66 and KIG28, subject to the internal proof. The full D23 image and local rational-component classifications remain unresolved; KIG25 closes the known conic at every positive multiplicity. Wright A4 boundary states remain separate.",
+      "disposition": "historical-route",
+      "source_review": "Read the complete canonical note, including the final nonlinear and coupled-pair frontier, and checked the relevant explicit source formulas, branch/degree declarations and replay control flow. Reconciled discovery-stage next steps with later obstructions; no mathematical replay was performed. Reconciled the global continuation with the 15 November KMFI66/KIG28 bridge; this is a source/status review, not an independent proof replay.",
       "input_review": "The reviewed A4 programs embed the quartic, charts, exact matrices and bounded parameter universes; no external point file is needed. Python/SymPy versions are declared locally. Genus/absolute-factor claims rely on the stated Singular libraries, with 4.4.1 named for the historical genus results. The 4.3.2 cleanup probe only verified error handling. Three Python callers and canonical standalone commands now reject interpreter errors and incomplete output through singular_runner.py. Expensive genus, resultant and census replays were not run; the sharp-plane default includes both censuses, and the degree-twenty script computes before --help.",
       "dependency_review": "KIG23 supplies the strict net. KIG25 is a downstream obstruction to reusing S103 and does not exhaust the D23 image frontier.",
       "evidence": [
@@ -2294,22 +2378,29 @@
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
           "quote": "Thus the second pair is not a missing finite Cartier-index computation: it\nis a nonnormal conductor obstruction, and every positive multiplicity is\nexcluded.  The rational conic route is closed."
+        },
+        {
+          "path": "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md",
+          "quote": "Thus the entire A4-preserving affine-space Keller construction objective\nis closed, including architectures beyond the particular masks already\nexcluded."
         }
       ],
       "reviewed_claims": {
         "KIG24": "383427882268c12759f82c4d7f6714c510d5b04c1d917c6200b4abb3005b6520",
-        "KIG25": "3eeba3a69154342b5ec01d7fbf6a70d26b0e93c4a38d2651c3b8d3aa832a9142",
-        "KIG26": "1b13e53679664b7a532e1fc017532c2681d5399354ae60bb012d2a40a545f16d"
+        "KIG25": "37e443b239b1d43dcbe86476de0f1840be6b6d72d0ac4dd78ccfdead74c86113",
+        "KIG26": "1b13e53679664b7a532e1fc017532c2681d5399354ae60bb012d2a40a545f16d",
+        "KMFI66": "79176d01ce5eb12d63fb5fb0b9d5521d722ef9a8548a6082722ff59d23d79edb",
+        "KIG28": "6071b01a425172ee032755302781b15854c6798549fa16fa9a534efd510b0134"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
-        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "20460221065afaa89fb7767a24ec7a7597ac6b0162caa432cc2b29540874ed3e",
+        "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md": "55db9537ad603f71cd9720f1faeccd722d0887f00f7b2b1073e9444b35cb45d4",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62",
         "scripts/singular_runner.py": "568a8c41f4bb46a0630ab71645aaf0ca20a5cc6c2ba518d41854aa6b68d9d5f6",
         "archive/non-elliptic/scripts/verify_a4_conic_principal_obstruction.py": "94b4d0e798bb0112841aa883611f4c902b8c3154b325c3b7e095cf2ad8a7ae52",
         "archive/non-elliptic/scripts/verify_a4_degree_twenty_line_selectors.py": "04bcb680f9625f20d63e784139135c573d6c7f98b821b22d7e5fb043ca422f93",
         "archive/non-elliptic/scripts/verify_a4_sharp_selector_plane.py": "bb3f57e37b0f6163317fa7bb2de5435fc98b3066c902ee806bbf00ddc4990471",
-        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6"
+        "tests/test_singular_runner.py": "e5d27f0c6b12f5f6086bc78889914e1673fc99a7af374da58c3680c9cbdc23b6",
+        "jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md": "dcd845832bcaacf05fde8ba1e34e37f26651e0933bad6f0d269146ef0b612df2"
       },
       "missing_inputs": []
     },
@@ -2319,13 +2410,13 @@
       "completed": "The named SL2, resultant-level and repeated-root Bezout affine-source candidates fail exact independent gates. The fixed coefficient block forces a J factor; at least one of p,q,r must receive feedback. Rational/logarithmic lifts and the decomposable group-only solution are already known.",
       "remaining": "For an explicitly fixed degree and support, construct an asymmetric coupled source/target incidence with adjusted adjugate divisibilities, constant full Jacobian, preserved degree-six S4 edge field, mask recovery and an actual affine-space isomorphism. There is no universal degree bound; neither two modified coefficient outputs nor sufficiency of matching UFD/ML/Derksen/motivic invariants has been proved.",
       "disposition": "open-obligation",
-      "source_review": "Read all thirteen sections, including the primitive-conductor distinction, relative p-inverted Saito basis, motivic/class-group counterexamples and five-part remaining target; inspected the self-contained checker identities and its finite-field regression loop.",
+      "source_review": "Read all thirteen sections, including the primitive-conductor distinction, relative p-inverted Saito basis, motivic/class-group counterexamples and five-part remaining target; inspected the self-contained checker identities and its finite-field regression loop. Reviewed the KMFI66/KIG28 cross-reference correction: A4 global completion is closed, while this source retains its own stated local or S4 scope.",
       "input_review": "All maps, relations and primes 3,5,7 are declared in the checker. The point counts regress the displayed motivic classes; the class-group, topology and all-degree arguments remain in the written proof with external theorem dependencies. The script expands F composed with F before its small controls, so it was inspected without import or execution.",
       "dependency_review": "Retained KIG21 and the explicitly cited BCI1/H14M1/COND3/KIG6 architecture closures, plus Nagata, flexibility and Hodge-Deligne inputs. No claim of atomicity was inferred from the existing decomposable degree-nine map.",
       "evidence": [
         {
           "path": "archive/non-elliptic/extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md",
-          "quote": "These results leave the same qualitative architecture: asymmetric mixed\nRees relations and a conductor ledger distributed between source and target.\nThey do not prove a universal no-go theorem for that architecture."
+          "quote": "For the S4 collision-frame field studied here, asymmetric mixed Rees\nrelations and distributed conductor ledgers remain a separate architecture.\nThe A4 exclusion does not decide this S4 construction objective."
         },
         {
           "path": "archive/non-elliptic/extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md",
@@ -2337,7 +2428,7 @@
         "KIG21": "48e393296133f38fdf28e55efa315cc7d3b7de64f0cf34ce0472f1ae78ec483c"
       },
       "reviewed_files": {
-        "archive/non-elliptic/extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md": "6f3b1d36df18eece8fbcac4d30788a15a77b3113100b2ae42f6a3da355659b4e",
+        "archive/non-elliptic/extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md": "7682852d449d4f3d9bdb94dbaf79779d6f36585f487e26de74b68727cda016fe",
         "archive/non-elliptic/scripts/verify_s4_collision_frame_keller_frontier.py": "48789924f91cb840f82adc18552e5381452db6a4cd4027487bfe67a6cbc1ba75",
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
         "requirements.txt": "db3801701df6378270acaa628b1a1a872408ab0af9859c9579f6f54d1c369b62"
@@ -6209,6 +6300,404 @@
   ],
   "checker_absence_reviews": [
     {
+      "id": "OP-MRC",
+      "source": "jacobian-followup/meridional-rank/LITERATURE.tex",
+      "completed": "Broad35-source primary map, known sharp pretzel/Montesinos certificates, infinite affine obstruction, lift-dimension and radical towers, and the written branched-cover rank/homology/nonabelian-count connection. On current13 first16, exact degree and Smith arguments exclude every symmetric root-lift degree/field and all original binary common-form actions; A5 count has no sharp result. Exact many-twig and numerical Lustig-Moriah scopes extracted. Quadratic-coefficient all-field reduction and fixed H3 finite-image rigidity now add exact bounds on twelve bases; the original nondegenerate conditional theorem is recovered by principal versus nonprincipal cocycles. Hall's kernel-capacity argument now gives the user's same-cover twenty-A5-kernel criterion. All293 candidates are replayed, max5. A known23-kernel/2901-Hom pretzel control proves a strict improvement over raw counts, with known Montesinos family extensions. The user's augmentation-module bound strengthens Schreier without knot-root geometry. All16 quotient classes and all primes are checked; sign and proper-image arguments cover every connected index5 subgroup. Original Dutra subgroup contradiction and dependency scope are directly verified. The A5 six-point action is independently replayed on16 kernels. New invariant-form lifting proof extends the orthogonal peripheral obstruction to all fixed-involution formal deformations at their complex icosahedral points. Nonsplit primes close V4/V5 ordinary-rank cocycle estimates over all fields. Uniform actual companion-matrix torus curves and Cornwell2017's full-rank braid curve now give a GGLW-dependent corollary for Whitehead iterates, including ar=mr=b=p*2^N for positive torus companions. This is a derived application without a novelty or panel-closure claim. All16 retained H3 bases now have exactly1 varying-mu tangent modulo conjugation, fixed-mu formal rigidity, and vanishing of both restricted Ext modules. A uniform all-order splitting theorem rules out higher-rank irreducible deformations through these bases plus arbitrary finite trivial summands. Residue-field degree3 jets pass on32 embeddings, without a char0 integrability claim. The ordinary cocycle coefficient route through every single retained A5 map is now exhausted in all fields and arbitrary dimensions, including indecomposables, by simple-module reduction and exact missing3/2-dimensional models. All A5-induced covers fail the rank gates and have zero rational b1. The separate16 natural tensor-product tests on4 two-kernel knots also fall below threshold. Explicit homogeneous binary matrices give sharp certificates for the known infinite torus family T(4,7*(2r+1)), despite singular seed pairings. The mathematically motivated complete293-name GL3 epimorphism panel and both-deck F7 root panel supply no new open-case closure. The rank2 original affine criterion now has an exact iff characterization and construction by simple3-cover binary homology, including all radicals; relative S4 quotient count2^h-1 gives lower4 from two kernels over one common S3 kernel. All293 symmetric scalar and binary3 affine bases have no sharp4 result;272 names have no original representation in any dimension. The nonlinear degree3 follow-up proves19 cover groups cyclic and retains7 unresolved two-generator groups. Four named sharp equalities mr=bridge4 are now established here for13a_3145,13a_3147,13a_3148,13a_3149, by nonabelian trefoil-amalgam cover groups and matching upper certificates. This resolves the seven-group nonlinear checkpoint:22 cyclic and4 rank2 simple3cover groups. All21 simple4cover groups are trivial, completing the simple-cover rank route in degrees>=3 on this panel. Worldwide novelty and known-family exclusion remain unestablished. Explicit25point finite permutation certificates now independently prove nonabelianity of all4 retained rank2 covers; no additional named equality. Four explicit infinite periodic-twist families now have uniform working proofs of mr=bridge4 and positive affine determinant formulas separating their members. General all-knots(-1)additivity of maximal simple-cover rank C and fixed-field homology A_k is now a written working theorem. It gives sharp sums of the retained families, and the exact T47 boundary proves nonuniversality with unbounded deficits on known graph-manifold controls. The elementary permutation-index bound and fullA8 double-transposition torus family control now have a written proof; independent degree8/9 exclusions exhaust that transitive graph-bound gate on the original16. No additional open target closes. Both ternary3 rank-one meridian classes now have full original16 base/root exclusions, with all admissible lifts proved principal. Explicit sharp known triple-trefoil affine controls pass;16 fullGL3 representations induce new cover quotients. Natural/dual3 cover cohomology is negative; the13point projective positive control passes its gain threshold, with target homology still uncomputed. The new13point target homology and direct exceptional-characteristic calculation now close that exact induced augmentation-module gate over every field; virtual b1=2 is established, no target closure. Faithful projective aliases establish one retained quotient kernel per source knot among the two representation orbits. The Betti-gain rank bound now holds for every finite-index subgroup over every field, including degree-dividing characteristics. A known all-odd-prime Schreier control and independent degree13/characteristic13 positive certificate separate the inequality from the false unsplit equality. Six exact Tait2isomorphisms now prove actual mutation within two4knot blocks and common double covers, reducing8 ordinary rank problems to2 without a rank3 or knot equality claim. Both common cover roots now have short exact3generator presentations and exact assemblies from the same formal groups P,Q with four retained port identifications. Nine compact/port corruptions reject; no actual rank or target equality follows. Eight original target equalities now follow: both shared double-cover groups have rank3 by four canonical Seifert pieces and classical rank2 JSJ exclusion; all8members' individual upper4 traces replay. Twelve of293panel names are now certified in this programme. Three further original targets233,239,253 now have exact cover rank3 and mr=bridge4. Eleven original targets and15of293names certified here; five originals remain. Five further direct source models prove234,242,243,244,265, completing all16original targets with cover rank3 and mr=bridge4. Twenty of293panel names certified here,273without a certificate here. FullMRC remains open. The original16known-family audit now closes positively: each actual double cover is a prime graph manifold by classical closed rigidity, so all16fall within published BJW18 Cor1.3. Exact rank3/b4 cases remain valid, but they do not establish MRC outside known families.",
+      "remaining": "Full classical MRC, genuinely new unresolved cases, and the listed source and recent-proof audits.",
+      "disposition": "research-objective",
+      "source_review": "Read the original quadratic proof, PROOF.tex, LITERATURE.tex and the complete lift-dimension/tower proof; checked the counting injection, vector-valued signed-graph argument and the precise nondegenerate low-dimensional boundary. Read the full new cover proof: checked elimination of both fixed-sheet and square meridian cycles, integral cycle-lattice splitting, full ambient vertex cuts, rooted nonabelian gauge normalization, and b<=4 degree/dimension exclusion. General priority remains unaudited; r2 core-group credit is explicit. Checked the index-d Schreier deduction and the threshold7 for an index5 subgroup of the double-cover group. Read the full new quadratic-coefficient working proof, checked etale split/inert residue ranks with separate5, universal H3 root parameters, split pullback/left-inverse factorization and characteristic2 no-fixed-point orbit example. Read GGLW Lemma6.2 and full elementary proof, and checked the general restricted/unrestricted cocycle comparison. Full paper not adopted as audited. Read the complete joint-kernel working proof and checked the injection on Aut-orbits, Goursat induction, single-domain requirement, central-fibre epimorphism correspondence and divisible-denominator family. Read Burness-Crestani p2 and visually inspected Poudel-Saveliev section7.3 printed2671; original Hall and full articles not audited. Read the complete augmentation working proof: checked Shapiro splitting using only invertibility of index, principal dimension, all-index5 monodromy completeness, Aut-invariance of point stabilizer preimages and the orthogonal longitude constraint. Inspected original Dutra pp7,12 and reduced the common word. Examined GGLW2.3/2.4, Definition4.1 and selected valuation steps; full44-page paper remains unaudited. Read the complete new formal proof. Checked the left action rho^-T B rho^-1, order-j cocycle identity, sign of the form correction, convergence/nondegeneracy, symmetric-square character identity, Shapiro, injective index2 restriction and formal meridian idempotents. The conclusion keeps mu^2=1 and does not assert rigidity with varying meridian eigenvalues. Read the full new torus proof, checked companion exponents, rank-one meridian, cyclic-vector generic irreducibility and preferred longitude sign. Read Cornwell2017 Theorem1.10 proof in full, including the polynomial determinant ensuring actual rank-n points outside a finite set. Read and checked required GGLW one-step/peripheral and iterable valuation arguments; topology and the cited preprint result remain explicit imports. Full microlocal/two-bridge proof is not certified. Read the complete new deformation proof: checked projector normalization, both oriented derivative signs, rank-one tangent projector equation, residual centralizer action, fixed-mu order-by-order conjugation, transverse-gauge implicit curve/obstruction alternative, and the two restricted cocycles in the stabilization induction. Checked the off-diagonal conjugation signs and bottom-right rank-one pivot argument. The generic irreducibility exclusion concerns only these special fibres, not global higher-rank existence. Read the full new simple-module/exhaustion proof. Checked the left-exact Z1 composition-series inequality, scalar extension, ordinary-rank normalization, imported absolute-simple classification, ramified5 versus etale residue ranks, proper-image/Aut invariance, Shapiro/permutation invariants and the all-induced-cover consequences. Read and retained the primary ATLAS A5 page, including its absolute versus merely base-field irreducible lists; classification remains imported and no ATLAS MRC result is inferred. Product-module scope is confined to the tested natural tensors. Read the full singular-affine/GL3 working proof: checked the fixed-space argument, torus meridian congruences and upper bound, original common-form exclusion on the3-coprime subfamily, and rank(FU)<=3 for every seed choice. Inspected pinned external glsearch independent roots/det guard and w3 bounded random moves; no certificate-validity criticism inferred. Read primary ATLAS L32 ordinary/modular lists, distinguishing split affine1344 from linked nonsplit extension. Simple completeness imports Brauer class-count theorem, with independent four2-regular classes and absolute model spans. Read the full new uniform proof. Checked H2(Gamma;Z)=0 from the exterior homology and classifying-cell attachments, UCT and meridian H1 evaluation; coefficient lifting plus homogeneous conjugacy proves the radical lemma in every field. Checked the explicit dependent quadratic invariant, construction of independent classes, ordinary inflation-restriction injection, H1(S3,W)=0, End(W)=F2 and semisimplicity only of W^h, full joint image and central commutator transitivity. Checked S4 kernel classification over a fixed lower quotient, the mod2 cover identity, absence of cross-knot pooling and all higher-dimension exclusions from the certified upper4 bound. No novelty or full-source completeness claim. Read the full new five-page proof and checked the graph-based meridional rank inequality for arbitrary generating meridians, including why all fixed-sheet/square filling loops are valid conjugates of boundary meridians. Rechecked BKVV20 Theorem1.3 in the primary PDF, not just metadata. Verified the trefoil peripheral Z2 argument via central infinite fibre and infinite-order reduced C2*C3 meridian, both A/B model elimination directions, epsilon signs and determinant+-1 edge matrices. Serre normal form is explicit classical input; official publisher metadata/chapter scope checked, full book not audited. Reconciled obsolete duplicate BBKM23 source record with the fully scoped retained entry and separate Serre background, giving35 distinct IDs. Fetched upstream project open list contains all4; archived source intervals and independent census checked, without inferring global novelty or non-membership from blank family metadata. Checked the F5^2 formulas: delta^2=alpha^3 is the vertical translation, delta*alpha^-1 is the diagonal translation, and F_e sends these peripheral vectors to the required gluing vectors. Checked all original-basis transports, including both B models. Finite nonabelianity supplies an alternative proof without Serre normal form or residual finiteness; infinity still uses the retained amalgam proof. Updated proof and literature PDFs reviewed. Read the full periodic-family proof: spanning-tree simultaneous fibre gauges, exact non-tree stabilizer generation, conjugacy-invariance of exchanges, T^2 conjugation and T^6 periodicity, preservation of every original image outside the crossing, uniform two-input tangle coloring and odd endpoint pairing. Checked the parallel-edge tree-count proof and positive coefficients. Read published Stoimenow Lemmas3.14/3.21 and Remark6.4 source scope; the6star warning prevents a false arborescence shortcut. Read preprint JP25 Section3 and sharpness scope; published metadata checked, full published comparison not claimed. Two supplementary snapshots separately sealed, frozen18snapshot manifest unchanged;37distinct catalogue IDs. Checked both directions of the normal-generation orbit lemma, every restricted support, gluing of compatible meridians, all R-1 lifted spheres, capped component counts, graph cycle beta, and orientable S1xS2 handles. Maximization covers every simple coloring and realizes individual maxima. Rank additivity is explicitly imported from Grushko-Wagner as stated by Stallings1971 Theorem1.B.5; official1965 paper metadata checked, original proof not audited. Read primary Schultens Theorem1/connected-sum argument and credited Schubert; geometric lemma verification remains an import. BDJW17 class/Corollary1 reread for known sums of torus knots. The live KnotInfo descriptive sentence has no all-knots quantifier or named coverage list and is not used to close the retained panel. Catalogue39distinct IDs, frozen18snapshot main manifest unchanged. Read the primary ATLAS A8=L4(2) identification, group order and4dimensional characteristic2 list. Proved class210 versus105 directly, without importing a higher-field representation classification. Retained Cornwell preferred-meridian convention gives x^-1*y^(15j+4) for T(4,60j+15); standard torus/known-family imports and BK20/JP25 precedents explicitly credited. Supplementary snapshot sealed, main18snapshot manifest unchanged; current catalogue40distinct IDs. Read the complete new uniform proof: admissible evaluation injectivity on arbitrary meridional generators; homogeneous fixed-space argument; two rank-one ternary class classification; braid expansion and rebase/source-PD constructions; principal-space equality; orbifold/core double-cover kernel and determinant-parity surjectivity. Retained BKVV upper and core-group sources are explicit imports. Checked the13point subgroup-graph/Kurosh count using retained Serre input, distinguishing finite cycle/graph verification from the classical subgroup theorem. No new source added; catalogue remains40. Read the complete new13point proof and checked the UCT/split augmentation cocycle rank gate, invariants0 outside13 and1 at13, and why characteristic13 H1=3 differs from Betti gain2. Read archived2026.11.2 polynomial/genus/notation/symmetry columns for exactly8 names, with original wheel and CSV hashes checked;40source IDs retained and supplementary subset sealed. Equal invariants are only structural cues; no mutation, common manifold/group, live classification or family exclusion is inferred. Checked the full uniform cocycle sum argument: finite-index Shapiro for P in any characteristic; principal dimensionr-1 from transitivity; exact kernelZ1(aug) of cocycle epsilon; image rank<=b1G; generator-evaluation bound. No p!=r assumption or module splitting enters the inequality. Direct coset representatives1,a,...,a^(p-1) give2p independent Cp factors in the every-odd-prime control. The involutive2strand presentation and connected-sum cover identify the known knot source. No theorem is inferred from one finite sample or claimed novel globally. Read Greene author preprint Section4.1-4.2 Cor4.3/Lemma4.4/Cor4.5, including parallel-edge and checkerboard qualifications; official Springer metadata confirms doi10.1007/s00222-012-0421-4. Classical Whitney/plane drawing inputs remain explicit imports, and the full Floer/lattice proof is not used. Read Morton2014 Theorem3 complete torus-lift proof, crediting Viro1976; primary original publication metadata checked, full original proof not audited. Pinned8name Jones/signature/Conway fields agree by block but remain screening cues. Catalogue42distinct IDs. Read the complete new elementary proof: generator-singleton elimination; explicit inverse free-basis maps; relator replacement T'=S^-1*T after cyclic choices; normal-closure-preserving normalization; right base-change invariance of core crossings;17fragment arc classes joined by4independent identifications to13source arcs; explicit inverse normalization at fullarc5 versus0. Retained STW core-cover identification is credited. Ito Brunner and Boileau-Weidmann papers remain leads only, not new audited classification imports; catalogue remains42. Official/local SnapPy3.3.2 and Regina7.4.1 filling/constructor/recognition docs read for bounded exploratory cues, respecting loss-of-peripheral-data warning. Read every necessary type in Boileau-Weidmann author Theorem2 and its separating/no-Klein-bundle proof Section3.1 pp16-20, plus Lemma2 pp5-6. The necessary list has at most3JSJpieces; original exceptional hyperbolic-cover type has2 and is irrelevant to the count; Millichap-Worden2016 Cor5.4 removes that type. Crossref verifies Topology44(2)(2005),283-320, doi10.1016/j.top.2004.10.008. Full theorem proof and published-version comparison are not claimed; the classification is imported. Read Hatcher Section1.2 Theorem1.9, Propositions1.11-1.13, Lemmas1.14-1.15 and uniqueness proof, and Section2.1 explicit circle-bundle/filling models. Checked all exceptional fiber cases are excluded by negative-base types. Original Jaco-Shalen/Johannson credit retained through that exposition. Three snapshots sealed, catalogue45. Read Millichap-Worden2016 Cor5.3-5.4 statement and short deduction as current refinement context; full hidden-symmetry proof not audited and the older necessary piece bound remains the proof input. Re-read all10BW05 Theorem2 cases, specifically the only three-piece case6 and its required two-bridge central meridians. Classification is imported; full theorem/published comparison not claimed. Same Hatcher Seifert/JSJ source scope reused, catalogue45 unchanged. Checked the elementary two-component two-bridge one-bridge-per-component unknot argument and meridian filling complement; no additional external family theorem is assumed. Reused the sealed BW05 case6 necessary central two-bridge meridional condition and Hatcher negative-base Seifert/JSJ scope. No new catalogue entry;45IDs retained. The elementary unknot-component and solid-torus meridian filling fact is written explicitly. Original/recent full proofs and worldwide family/priority audit remain open. Read and visually checked AFW final-author printedpp30-31/PDF34-35, Theorems2.1.1-2.1.3 including arbitrary-closed lens/orientation exceptions and boundary warning; compared earlier author-v3 Theorems2.1-2.3 only at that scope. EMS metadata identifies2015book DOI10.4171/154; final184page manuscript distinguished from230printed book. Read BJW publishedpp61-64, prime graph-manifold definition, Theorem1.2 and Cor1.3; original full proofs remain imported. One new scoped record gives catalogue46, published BJW snapshot added without changing frozen18snapshot manifest.",
+      "input_review": "Eighteen primary snapshots and pinned official data retained. Nine full directed-edge homology controls, independent projected permutations/Smith replay for16 current targets, and a separate PSL2(F5) coefficient-group reproduction of A5 core counts pass. Shared PD parser and Smith producer/replay are disclosed; uniform proofs are not inferred from checks. Earlier512 lift matrices,16 exact Montesinos/census transfers and243 author certificates retain separate replays. Twelve retained first A5 witnesses have full image60 and index5 cover matrices70x61. Independent Fox-prefix construction, Smith replay and free/Kurosh controls agree; no alternate witnesses were substituted. New independent6x6 integer model and reverse affine-point replay give twenty unit Smith factors on all12 fixed H3 bases. All3-dimensional residue bases, integral split factorizations and no-fixed-point F4 orbit control pass. Frozen plan and unchanged first-map selection retained. Independent PSL2/PGL2(F5) exhaustive tuple-orbit marking and iterative crossing closure reproduce all293 per-knot counts and40 cone-order patterns. Full raw count2901 and23 kernels for the known pretzel agree from diagram and cone group. Paired-endpoint and Spherogram diagrams match by exact dart bijection; three-trefoil49/two-trefoil1, F2 nineteen and F3 sixteen-hundred-sixty-eight capacity controls pass. Shared PD parser disclosed. The frozen all16-kernel audit has independent Fox-prefix Smith replay and a third four-dimensional cocycle construction over every torsion prime and a generic prime, with all-prime Smith classification. F2 gain4, double-trefoil2 and triple-trefoil5 controls pass; characteristic5 countercontrol has H1(V4)=5 versus Betti gain4. Current GitHub open-list blob equals the pinned293 names and contains all16;243 closures are disjoint. Shared PD parser/Smith replay disclosed. Independent PSL2(F5) projective-line action is identified explicitly with the Sylow5 action, transporting tree/row/column indices before Smith replay. Direct V5 cocycles, knot-orbifold descent and nonsplit2,3/oldV4-at5 dimensions pass on all16. F2 and two/three-trefoil controls have gains5,3,7 at5. The primitive-word probe's substitutions/inverse automorphisms and controls are checked; its failed444-candidate searches are exploratory, not independently established group-rank statements. Frozen13 torus pairs times3 finite samples give39 exact full-matrix-algebra controls. Symbolic Q(tau)(s) T(3,5) identities and120-element H3 specialization pass. Symbolic 2x2 boundary and longitude identities modulo R and all2976 finite triples agree, with0/4/64/88 valid blocks over5/7/11/13; no target replacement. No16-panel tangent or curve campaign was executed. Frozen16 normalized matrices144x28 have rank23, certified by exact Q(tau) kernels and split modular ranks. Independent Fraction arithmetic/dual-number relators rebuild every crossing block, check all minors and prove residual gauge rank4; independent control matrices give T35 nullities5/4. All32 restricted matrices39x13 have kernel3 spanned by explicit independent principal cocycles, with direct affine-column reconstruction. The frozen32 degree3 residue jets have separate entrywise-polynomial adjugate/inverse and all-minor replay. Shared PD parser and H3 coefficient inputs are explicit; none of the finite-jet successes proves a complex curve. New ordinary W3 expansions have Smith factors1^71,5 or1^70,7,35, eight each; invariant factors1^4,2,2. Independent integer H3 construction and reverse affine-word columns reproduce them and replay every Smith operation. All isolated residues including ramified5, characteristic2 quotient/Frobenius models, absolute matrix-algebra spans, conjugate traces, nonsplit-extension and freeF2/F3 controls pass. Four joint images have order3600; all16 natural product modules have Z1=6,H1=2 and full matrix-algebra spans. Shared inputs/PD parser/Smith replay and source classification limits are explicit. Independent PSL2(F7)/PGL2(F7) Mobius model verifies all products and Aut336, pair/triple orbits57/13368, iterative closures on293 diagrams and all191 maps. Reverse affine-point matrices and exact nullspaces verify natural/dual/Steinberg ordinary data,58 binary root matrices and191 F7 negative-adjoint matrices. The Fano-building8 model intertwines with traceless-endomorphism8 on all168 elements; algebra spans9/64 pass. Explicit T47 matrix relations, meridian rank1, common fixed codimension4, eight-point affine group order1344 and selected full-rank functionals with singular pairing pass. Shared PD parser/conventions and no actual rank2 conclusion are explicit. Independent full tuple orbit marking yields1/13/39/25 four-seed orbits in degrees2/3/4/5; closure and affine-point integer/Smith replay on293 PDs reproduce bases293/26/21/0 and binary S3 dimensions2x5,3x21. Independent PSL2F5 transport verifies170 inner decks; explicit T45 control verifies the odd extension gate. All512 binary matrices and179-subgroup lattice extensions, normal involution generation and natural module fixed-space types are checked, reusing58 sealed full GL3 root tests. Three actual pretzel diagrams give transitive group orders24,192,1536 and every basis-pair relator/invariant check. Independently reconstructed signed branch-edge words and Tietze substitutions prove19 cyclic cover groups; exhaustive noncommuting pairs in5 separately generated finite targets are negative for7 remaining groups. Three coset actions pass direct original relators as cyclic quotient images only; four caps and all7 actual source ranks remain explicit. Exact structural rewrite steps preserve normal closures and Nielsen inverses;3 previous cyclic-image candidates become actual C2,C2,C4. Four capped presentations match A+,A-,B+,B-, with explicit targeted3148 basis change and two further relator shortenings. Independent planar under-to-under arcs regenerate every3sheet branch-word multiset and four-seed trace; source parser is used only for index transport. Every named PD agrees literally in both KnotInfo releases and HT census(+1 labels). Independent Schreier full-edge/retained-tree matrices and Smith replay give H1 of universal abelian covers0 in degrees37/35, proving perfect commutators and all-solvable-quotient cyclicity. Independent folded-word/Tietze replay eliminates every generator in all21 four-sheet groups. No numerical recognition or new blind field/coset sweep used. All4 degree25 pairs pass all6 original checkpoint words and all39 original11generator branched relators. The independent checker applies letters pointwise rightmost first and rebuilds branch words from planar under-to-under arc traces, using the producer parser only for old index transport. Vertex image order300 and all25 peripheral translations are explicitly enumerated. Four malformed/false/commuting/wrong-witness controls reject. Exact3cyclic controls remain2,2,4; all receipt input hashes are sealed. Full image order and minimum degree uncomputed. All4 induced75point actions satisfy every source relation and exchange/fixed-block condition, with explicit noncommuting block-stabilizer words. Separate reverse-letter pointwise evaluation checks all expanded meridian relators for12PDs N0,1,2. BFS outside arcs and trace replay differ from producer union-find; corner-region identification differs from face permutation. Direct tree enumeration reproduces deleted/contracted counts247/296 and257/280; rational Fox determinants independently match543+1776N and537+1680N. Four false image/period/trace/slope controls reject. Source parser retained only for old arc-index transport. No approximate recognition or full finite-group order computation. Eight literal PD sums compare shared versus expanded supports, two/three seed factors, trefoils and unknot. Independent under-to-under arc tracing and planar walks, direct endpoint monodromy, reverse lifted words and unimodular Smith replay reproduce free ranks0/1/2 and torsion3,3;1295;37,1295;111;3885;35. The graph cycles distinguish shared3covers from degree4/5 constructions with identical meridional lower bounds. T47 Schreier rewriting gives two relators with exponent matrix[-3,4;4,-3], and separate eight-vector evaluation proves a noncommuting image. Enumeration confirms only identity solves p^7=1 in S3/S4/S5. Four incompatible-palette/lost-cycle/altered-Smith-step/false-torus controls reject. Actual ordinary rank of the sums uses the written theorem and classical import, not the homology checks. Producer enumerates support-pairing meridians and successive centralizer stabilizers. Independent verifier instead filters all permutations, reconstructs full centralizers, marks every raw normalized tuple orbit without overlap or omissions, and recomputes transitivity. Geometric under-to-under paths check source parser index transport; one-pass upper traces and pointwise crossing tests differ from iterative early-rejection propagation. Both16target degrees are negative. All29 retained torus pairs satisfy direct relations and meridian equations; independent left-multiplication enumeration confirms1344/20160 image orders. Six false stabilizer, transitivity, meridian and upper-trace inputs reject. Historical preliminary8receipt retained; current receipt seals the generalized model. Independent all3^9 matrix filtering differs from direction-functional production. Full centralizer orbit marking covers1124864/1601613 tails and21632/34084 orbits, including scalar conjugation kernel. Geometric orientation and one-pass traces differ from iterative signed propagation. Direct affine-point word evaluation reconstructs every root and ordinary coefficient matrix, with exact ranks/bases and principal-subspace columns. Permutations on27vectors independently give image orders3/2/11232 and control linear orders5616/24; explicit translation orbit spans justify151632/648 affine orders. Three source trefoil PDs restore literally through recorded edge renumberings. All32 ordinary cover modules have Z1=4,H1=1, no imposed root/meridian-extension condition. Four independent replays reject10 altered inputs. Projective13 control cycle pattern1^4*3^3 gives connected V34/E39 graph; target covers untested. Deterministic verifier receipts avoid invalidating dependent source hashes merely by elapsed-time changes. All32 source actions retained; explicit same-domain13sheet intertwiners reduce to16 covers. Independent annihilator-plane dual actions and paired permutation closure5616 with point stabilizer432 fixing no dual point establish faithfulness/inequivalence. Independent Fox coefficients, boundary/tree checks and every unimodular Smith step give H1free2 with torsion2,882878 or2,3128602; base391/401. Exact small prime factors independently check all exceptional Betti gains and generic characteristic, maximum4 at2. Full13coordinate affine word evaluation reconstructs12dimensional augmentation matrices; exact rank/basis completeness gives Z1=14 at13, and direct mod2 gives16. Controls independently have free6,12torsion3, gain15, Z1=27/18 at3/13. Four altered actual Smith-step/free-rank/kernel/intertwiner controls reject. No producer edge walk or block coefficient implementation is imported into the independent reconstruction; legacy index transport and Smith replay helpers disclosed. Additional nonsplit positive control has integer Smith26 factors13 and no free part, baseF13b1=3, coverb1=26 and gain23. Independent13coordinate cocycle replay givesZ1=36,H1=25,invariants1, while split prediction35 fails. Omitted torsion and incomplete kernel controls reject, in addition to the4 main projective corruptions. Independent corner unions differ from producer face permutation; actual pinned source PDs, single alternating knot walk, Euler sphere and checkerboard convention pass. Tree enumeration proves reduced connected graphs with391/401 trees; every named graph has128 cycle vectors. All8192 edge-subsets are enumerated per graph, every Whitney side intersects its complement in the stated2vertices, and final vertex/edge maps transport complete cycle spaces. Six pairs, synthetic genuine switch and literal positive pretzel pair pass; wrong boundary, bijective wrong edge map, wrong vertex map and single crossing-change corruptions reject. No producer graph/canonical/search routine is imported. Independent compact replay imports no simplifier/search routine and verifies every move, both maps, Smith factors391/401 and transported13point nonabelian group closures5616. Three known algebraic controls pass,5corruptions reject. Independent fragment overpass path traversal and exact port/source class gluing differ from producer union classes; all4fragment and2assembly reductions pass with4additional corruptions. Outer ribbon reflection preserves all darts/ports; both formal groups match after explicit renaming. Initial outer words and closure trace stall exactly onsource arcs0..4, with a false completion corruption rejected. K4 series/parallel moves and tree/separating-forest recursions give(19,14)/(14,19), coefficients11/13 and391/401. Frozen3case candidate triangulation probe matches H1 and recognizes4_1controlL(5,2), but neither target receives standard recognition; no geometry inferred. Independent free-stack/cyclic checks establish P basis s=u^2v^-1 with inversev=s^-1u^2 and Q power presentation. Complete H central+C3*C2 normal form and root-amalgam edge-membership reduction verify every original port word and commuting pair, while [h,s] stays nontrivial. All3matrices are integral unimodular and fibers intersect1; determinant5-396epsilon independently reproduces391/401. Every one of8actual source PDs passes its own4seed/9step upper trace. Five corruptions reject fiber matching, determinant2, changed port, false free inverse and wrong endpoint sign. Source catalogue refresh required only cheap bounded2root/fragment provenance replays; no broad quotient/module campaign repeated. Independent physical arcs/core traces cover5full reductions and14fragment reductions, all balanced cuts and17to13joins. Three root models pass cyclic relator/inverse elimination checks and complete H*_(d=s^m)<s> normal forms with m2/3 and abelian exponent+-1 membership. Every port, including Q233 common conjugation, two primitive matrices per root, both port-to-edge directions, nonparallel fibers and S3 central-filling images pass. Eight named uppers replay separately. Five altered-port/slope/conjugation/arc/false-transfer controls reject. All5proposed transfer pairs have unequal exact tree counts; no transfer or shared rank is claimed. All8literal PDs pass direct physical core/fragment and selected checkerboard checks, full3generator/32fragment exact traces, every balanced4port cut and17to13joins. Three old controls reproduce their sealed models. Five Q_R/Q_L/Q_S power identities/inverse eliminations, complete H*_(d=s^m)<s> normal forms, common conjugations, outer ks/sk orders and inner fiber sign at265 pass. Primitive matrices and both port-to-edge directions, actual fillingS3images of order6, five separate upper4 traces and6altered-port/order/conjugation/sign/arc/false-meridian controls pass. No new graph transfer claimed. Finite scope binding checks exactly16literal PDs, every individual upper4 trace, all retained model/lower receipt seals and six mutation aliases for the first8only. Root groups remain direct for the other8; equal homology does not transfer groups. The catalogue change required29cheap frozen source/provenance/replay recipes in8seconds, no293/base/module campaign. Updated source audits retain their45checkpoint count and track the current46catalogue.",
+      "dependency_review": "The first result uses the published pretzel epimorphism and elementary torus obstruction. The extension uses the nonzero-form bound, with independent counting and signed-graph proofs. The fixed-panel failure supplies no all-knot existence theorem. New cover formulas use actual meridian fillings and the retained all-field lift construction. The all-degree panel exclusion uses a certified four-seed upper bound, not an arbitrary degree cutoff. Rank-versus-Heegaard-genus equality is a sufficient gate, not an assumed theorem. Whitehead-iterate equality is explicitly a direct consequence of Cornwell and GGLW Corollary4.5; the maximal torus branch was already known. It has no dependence on the affected Dutra2022 lemma. Specialist/formal assurance and broad priority remain open; full MRC is not marked complete. New formal splitting and rigidity arguments are elementary working proofs using the exact retained pointwise hypotheses, without a Whitehead preprint dependency. The earlier torus corollary remains separate. Other special fibres, representations, formal/specialist assurance and full MRC remain open. The all-module exclusion combines the new simple-module reduction with prior complete V4/V5 data and the primary ATLAS classification. It implies no actual group-rank upper bound and no global finite-quotient or restricted-meridional exclusion. The rational60-sheet kernel-cover conclusion uses characteristic0 semisimplicity and Shapiro. Full MRC stays open. New uniform affine and composition-series arguments use elementary linear algebra; torus topology and Brauer classification are explicit imports. The known torus-family result has no GGLW/Dutra dependency or novelty claim. Proper-image/other-characteristic/full-MRC exclusions are not inferred from the finite panel. New equivalence uses the retained branched-cover identity and elementary knot/coefficient cohomology, with no GGLW/Dutra dependency. The binary3 completion uses the earlier sealed GL3 full-image result, not a rerun. Neither a cyclic quotient action nor cover group cyclicity is promoted to a knot3bridge certificate. Uniform arguments remain unformalized and specialist-unreviewed; full MRC remains the completion condition. The new named equalities require the written general branched-cover rank bound, classical amalgam normal form and published Wirtinger-number/bridge equality; none uses GGLW or Dutra. Exact inputs/provenance and algebra pass, uniform proofs remain unformalized/externally unreviewed. The original16 prefix is not closed; full MRC remains open. Previous nonlinear receipts are historical checkpoints, not current unresolved-rank assertions. The new finite route retains named-PD, general cover-rank and four-seed/BKVV upper dependencies. It does not import the amalgam normal-form theorem for nonabelianity. It strengthens the same4 cases, leaves original16/full MRC and global priority open, and is unformalized/externally unreviewed. Uniform family theorem imports only prior finite certificate provenance, BKVV upper-bound equality and the classical alternating determinant interpretation. Finite gauge/Hurwitz/tangle proofs are written directly, not inferred from finite samples. JP25 is credited precedent, not an assumed membership theorem. Original16, global priority/family exclusion, specialist/formal verification and full MRC remain open. New C additivity does not imply general meridional additivity or full MRC. Fixed-field A_k equality does not permit separate field choices on summands. Bridge-minus-bound defect equality uses Schubert. Known torus-sum mr equality uses the distinct published2017 graph-manifold theorem. Original rank-two criterion exclusion on those sums does not cover higher-rank forms. Worldwide priority and full source audits remain open; no specialist/formal verification claim. No uniform theorem is inferred from the bounded panel: all-knots graph bound and all-j torus family are written separately. Negative claim only excludes this transitive degree8/9 double-transposition graph bound, not enhanced cover ranks or other cycle types. Torus equalities are known, original16 and full MRC open; no formal/external/global-priority claim. Proposed order3 SL3F3 next control is unexecuted and unproved. New finite exclusions cover only GL3(F3) rank-one bases and natural/dualF3 cover modules at their exact scopes; principal affine lifts do not exclude other fields, dimensions or modules. Representation orbits are not pooled as distinct kernels. Trivial linear bases have only cyclic translations. Triple-trefoil equalities are known controls. The13point control's H1 gain15 uses the stated Kurosh decomposition, while the target gate requires a future frozen test and p!=13. Full MRC, all original16 and global priority remain open; no specialist/formal verification claim. No new kernel count is pooled across knots or treated as all SL3 epimorphisms. The all-field statement covers only these induced augmentation modules; negative results do not establish actual rank2, bridge3 or full MRC. The earlier target13uncomputed checkpoint is explicitly superseded while its original base/module proofs remain. New structural questions are unproved work proposals. Uniform classical/cochain reasoning remains unformalized and externally unreviewed. The classical graph-to-diagram theorem supplies existence of mutation sequences; a literal planar movie/Tietze map is not claimed. Homeomorphism transfers ordinary cover rank only. Individual upper4 and retained nonabelian SL3 quotients give each shared rank interval[2,3]; actual rank3 remains open. The two groups differ by their abelianizations, and other8 original targets are untouched. Earlier common-cover-unproved checkpoints are explicitly superseded at this scope. The exact algebraic assembly is not an injective boundary amalgam or JSJ theorem. Two2generated fragment groups do not imply2generated closure. A stalled coloring propagation is not rank3. Tait conductance is not a certified rational-tangle slope, and no target peripheral/core-to-triangulation transport is claimed. Both shared ranks remain[2,3], other8 original targets unchanged, all16 and fullMRC open. Read the complete new uniform proof: explicit D(2,3) models with correct distinct peripheral sections, A(2) boundary bases, normal-form Z2 injections, reversible source-to-torus-amalgam identity, tree orientation choices, irreducibility under incompressible gluing, unique negative-base fibers and minimal four-piece JSJ. A constructed manifold with exactly the source group suffices for group rank, so no source-cover homeomorphism is assumed. Boileau-Weidmann excludes rank2; exact3generator presentations give upper3; even-meridian subgroup bound and8individual BKVVuppers close mr=bridge4. Earlier all16-open/undecided-rank checkpoints are explicitly superseded for these8only. FullMRC, remaining8original, worldwide prior-family/priority, formal/external verification and exhaustive literature remain open. Read the full new proof: exact source assembly, explicit cone sections for D(2,3), both A(m) boundary bases, injective normal forms, tree orientation, irreducibility and canonical three-piece JSJ. Three pieces alone do not imply rank3; only BW case6 applies, contradicted by the actual nonabelian filling quotient C_m*C_abs(r). This yields rank3 from the exact upper3 and embedded H; cover inequality plus individual upper4 proves each knot equality. Constructed model group suffices without a source-cover homeomorphism. Five other originals, global prior-family/priority, full MRC and formal/external/exhaustive source review remain open. Read the full final-five working proof: source normalization/gluing is an exact group identity, H and C boundaries inject, conjugate outer markings are geometric base-path changes, and inner fiber reversal is unimodular. Closed oriented tree gluing, irreducibility, negative-base unique fibers and nonparallel slopes give canonical3piece models with the exact source groups. Actual nonabelian central fillings contradict BW05 case6; three pieces alone do not. Embedded H and upper3 give exact rank3, then cover bound plus5individual upper4 closes the knots. FullMRC, worldwide novelty/known-family exclusion, exhaustive literature and formal/external review are unestablished. Read the full family-scope proof. A closed orientable irreducible prime infinite-group model has no nontrivial lens summands and one prime factor; AFW's arbitrary-closed classification identifies the source cover up to orientation, proving source primeness rather than assuming it. No involution-compatible homeomorphism is needed for graph-manifold membership. With exact bridge4, BJW18 applies; with only upper4 its known rank1/2/3 consequences already give MRC, leaving exact value separate. No boundary/finite-lens/rank-genus shortcut. All16are known-family cases; named computational priority,4other sharp seeds' family audits, fullMRC and formal/external/exhaustive review remain open.",
+      "evidence": [
+        {
+          "path": "jacobian-followup/meridional-rank/LITERATURE.tex",
+          "quote": "The classical meridional rank conjecture remains open."
+        }
+      ],
+      "reviewed_claims": {
+        "MRC-AFFINE-SIGNED-LIFTS-20261116": "8a4ca36274ca55c93e92039439ca39c6a2eb156472ada57a907bb21dfcd06156",
+        "MRC-LIFT-DIMENSION-RADICAL-20261116": "5df620bc70f8c22d2208721adf7d5cd7389f3d9fd7eeed3d1e102b9dca6bffab",
+        "MRC-ALL-CHARACTERISTIC-LIFTS-20261116": "e79f1a446d96171458bfd1460f625f4526cc0908d21bfdc2a0cbf5ffcc77be19",
+        "MRC-BRANCHED-COVER-LIFTS-20261116": "0e1d50590f63b7e3662668ce3e9b02fa14ff036a8c2fc3db34dc81e3f04c22e6",
+        "MRC-QUADRATIC-COEFFICIENT-LIFTS-20261116": "b6ef07ac225c95ac21efe7269163ac2ab097ad958f0d0364c208de57c5eb02d5",
+        "MRC-JOINT-SIMPLE-QUOTIENT-KERNELS-20261116": "aa8d60608deee4f39cd06ea2587bd54defd0b23cb1fe481cc40082e6ebf5ea16",
+        "MRC-AUGMENTATION-COVER-HOMOLOGY-20261116": "837e043791ce803124ae7633cf34af1b4038391dfb34c748fceace807b337f36",
+        "MRC-FORMAL-ORTHOGONALITY-20261116": "70d338b9193e2e7aa8952b44d301aef3a17781cbca8e9566b9a81b0d57feba0d",
+        "MRC-TORUS-WHITEHEAD-CURVES-20261116": "00dda960d19814cb5fd68b2d850567dcede7bdcf5fa399764ef73871d46e110f",
+        "MRC-MERIDIAN-DEFORMATIONS-STABILIZATION-20261116": "c9be686fadcd993bdfba602585d1b3142ab8dfd849441af6770e4b8c08fd54de",
+        "MRC-SIMPLE-MODULE-A5-EXHAUSTION-20261116": "1c6c3fcf630f08ee4a4ca6d79594e5032b2002220677000f82d9db588c9ed1cd",
+        "MRC-GL3-SINGULAR-AFFINE-CERTIFICATES-20261116": "d0d76f001a80a629414af3502d3661640a70467ef105ee043c2b4823d8eb7a3b",
+        "MRC-RANK-TWO-AFFINE-EQUIVALENCE-20261117": "3949a089904f92fe626d2d595c662016068ed2a877853a868b3877e464743369",
+        "MRC-TREFOIL-AMALGAM-SHARP-FOUR-20261117": "ccd6c484eef4fa4da7e333340219d71ce6f7b27c4ce744d66cabdec533e5077f",
+        "MRC-FINITE-COVER-COMMUTATOR-CERTIFICATES-20261117": "6db4f73c56809f39a1c7efe5fe8c879681bb28778425db84765dea5e08de9883",
+        "MRC-PERIODIC-TWIST-FAMILIES-20261117": "85e8b602abd562f026ea68133cf3f18c3dbbca41a73fca3357a720ed03f77f4c",
+        "MRC-SIMPLE-COVER-RANK-ADDITIVITY-20261117": "4a1452a66a2f538024ae6be0f28d41350ad924bbdddceabc040f7b7ad47322fc",
+        "MRC-DOUBLE-TRANSPOSITION-INDEX-GATE-20261117": "5e289ccab37389badc32a9996d5165922f46ea5c7f69afaa96889eebe13f5d4d",
+        "MRC-TERNARY-AFFINE-COVER-20261117": "e9dd607b63f57ee1252e43e85ef97f41b27777a4e91c32b034eaa0f0bcf89e41",
+        "MRC-SL3-PROJECTIVE13-HOMOLOGY-20261117": "b0d360a0efa305d2792b4c791aa63e0ad1ea5b655bdaed03f7b3c90ec9eb4e32",
+        "MRC-MUTATION-COMMON-DOUBLE-COVERS-20261117": "cf7e3118006a4ad16f2425151b7f134240a8091b3bd4d0c1d79472da2acdf017",
+        "MRC-COMPACT-FOUR-PORT-COVER-GROUPS-20261117": "8c81c36bc7a7ef5f9126286b736014f4c6f16fe4283c36ceff198a3f385b56ef",
+        "MRC-FOUR-PIECE-DOUBLE-COVER-SHARP-FOUR-20261117": "dc52d827fdf56df372901560826aa6443650b53b54f5f3b3896fe8055d3f1aec",
+        "MRC-THREE-PIECE-DOUBLE-COVER-SHARP-FOUR-20261117": "979ac4734437d264787a18802eb58fb5f27193178c853623ffcfe7a7fc5d9890",
+        "MRC-ORIGINAL-SIXTEEN-DOUBLE-COVER-SHARP-FOUR-20261117": "f5a5c6d95fbe3f6fa15c2893fb6f53ac40a9307d27a4860fceafa08f98a9c2ee",
+        "MRC-ORIGINAL-SIXTEEN-KNOWN-GRAPH-COVER-FAMILY-20261117": "7f5da0d1c5e3e855f2ae3b0e50c3f1db8743fb84014c074338beb1d2d40e426d",
+        "OP-MRC": "154eec2a83be451b2e96a32371421c682d38095cbc3748ae9cefa4f1c3d9ffc7"
+      },
+      "reviewed_files": {
+        "jacobian-followup/meridional-rank/PROOF.tex": "2a7b19a71576a07804741aa7cd09c896e787bb86a89ce98fa92ce009a5fbc7a7",
+        "jacobian-followup/meridional-rank/LITERATURE.tex": "cc263e39d55b35d25b9fa592d41fe70ef88dfe49548c9ec58be0f9aec9b8c61b",
+        "jacobian-followup/meridional-rank/LIFT_DIMENSION_AND_RADICAL_TOWERS.tex": "f1a7f9552d2deb2e2770bd0c02056c40bc7ac67913519e388a6577e7ac5bee0a",
+        "jacobian-followup/meridional-rank/signed_lifts.py": "7230a5d6ab30786e372149caf3d9119b222bea274fde291a7ef5a4b32b23888f",
+        "jacobian-followup/meridional-rank/radical_towers.py": "fa1bc39feaa86233cdb00fab170fc46f1d9742a3a7b11981120722526b4a7fa2",
+        "jacobian-followup/meridional-rank/verify_signed_lifts.py": "57890d690d85e90e12bbfd2b953bbd49fb5951c38a09df50f7062932d0d7f0e5",
+        "jacobian-followup/meridional-rank/verify_lift_dimension.py": "a55d7ac5d63fc0c29e763458b1258240aadd8f5543b8441c7e1fee10dca17c5e",
+        "jacobian-followup/meridional-rank/sources.json": "315cda0ef9a35830017da858e3a5f0ed7c0775aaec6e1a1ec3f04a17cab89f99",
+        "jacobian-followup/meridional-rank/ALL_CHARACTERISTIC_LIFTS.tex": "28238d0fe162fd99da3c44774891e946876484d5127d7b4664ca47f8a501db4f",
+        "jacobian-followup/meridional-rank/integer_lifts.py": "8f6d8280001a9d76897b2db69c12244b964fdc58abfccd41b415b5ac90d02c31",
+        "jacobian-followup/meridional-rank/verify_integer_lifts.py": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309",
+        "jacobian-followup/meridional-rank/verify_current13.py": "7c0afa1981be8f544db6f1c2dd1c634b36c2d5cadc398477939107038285bf10",
+        "jacobian-followup/meridional-rank/verify_diagram_audit.py": "41f7bb9e96b6863e845feaac2870fc7a734946715c82cda33055e7e7a276aec3",
+        "jacobian-followup/meridional-rank/diagram_audit_verification.json": "1cfa8585cf772ed7b0958fd2fc218ca298a9570591281dee51d7710b53a60b05",
+        "jacobian-followup/meridional-rank/audit_current13_names.py": "e726826ad4ee5f50315639e75e63ba7e8869d731b2bdf548b419e2eeb878b2f4",
+        "jacobian-followup/meridional-rank/current13_name_audit.json": "6668168096d69d64687ba1b6ab8d4bff57ed436b09f666692ccaa747538937d8",
+        "jacobian-followup/meridional-rank/audit_knotinfo_snapshots.py": "5fc1f6ad178d180bd4d498b6563ab0cce14160f856ef8c845c27bf938296c855",
+        "jacobian-followup/meridional-rank/knotinfo_snapshot_audit.json": "f06daf7625ab9fd9f7f524334231bf414e4480c5d13fa4b0531a6144f32b3e87",
+        "jacobian-followup/meridional-rank/parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+        "jacobian-followup/meridional-rank/verify_parabolic_panel.py": "05e1db5562b949404b75553a4ff8acd51961f87f5cc6ed584aeecf5b0f5f4dd2",
+        "jacobian-followup/meridional-rank/parabolic_panel_verification.json": "68f9a1000a57ff5a3761fbaec35bf96dc9160545af10bbf0cfbfb12ecb74cf0e",
+        "jacobian-followup/meridional-rank/BRANCHED_COVER_LIFT_BOUNDS.tex": "9cccf9d55331b7651de2a08218825f8d89cecd4c1a9d7d90f88040151c68306b",
+        "jacobian-followup/meridional-rank/branched_cover_homology.py": "7a9ff5a6099dd235c18667833adb3f5431d76b6649d229e5bff0d39b965a0dee",
+        "jacobian-followup/meridional-rank/verify_branched_cover_bounds.py": "7c069214cd897dce681a7eb3a74123d74cfb7a1076d3c09534ab7780fc830de3",
+        "jacobian-followup/meridional-rank/branched_cover_verification.json": "5dcfded79c85542440c05c81167643643c171ec8d33c2abc2667b2e58d5d0340",
+        "jacobian-followup/meridional-rank/verify_nonabelian_core.py": "7dbacca5c296664d2e35d87cb06d875e24872e6661676b02ba0d1a746ad01565",
+        "jacobian-followup/meridional-rank/nonabelian_core_verification.json": "4c880aa7e83bd1d446912beda27055a37a1ec70f0115c2e21d1f6bc2cd3f1a53",
+        "jacobian-followup/meridional-rank/all_symmetric_degrees_plan.json": "91040a47d51c059cbc9780e606222c23ea1c03b505f45a89a21d9ac5b4eca211",
+        "jacobian-followup/meridional-rank/all_symmetric_degrees_results.json": "7fda301a82eeaaa86df6bc5e9a0931af5bcd147677ca257f9d2bff6099b368e5",
+        "jacobian-followup/meridional-rank/nonabelian_core_plan.json": "6fe82f59a3c41412e07281187f5e1fe666add29ffe89657e567b172ec322ce49",
+        "jacobian-followup/meridional-rank/nonabelian_core_results.json": "2b34c2ae9ab42cade51f993512ff2c7dc6e519f8b327d226b18b655ee72033dc",
+        "jacobian-followup/meridional-rank/sources/manifest.json": "bbf7c571e13910d1321c867badfe86a96d34558bc9e9da99de946629b8bb0566",
+        "jacobian-followup/meridional-rank/audit_core_subgroup_homology.py": "545e2a0b13ccc1bae0b8c07a477bb818ab05e099cf79a475b779c9462a3c5cac",
+        "jacobian-followup/meridional-rank/core_subgroup_homology_plan.json": "4a7e0e119a76fad44e1b8b528b8266a7fb84d184a2f36cae47e62fd243d2faf4",
+        "jacobian-followup/meridional-rank/core_subgroup_homology_results.json": "bcacf8980c1773f86b8505466f5aef78a4bdf7f3af4ca3588274f531ee5c771c",
+        "jacobian-followup/meridional-rank/verify_core_subgroup_homology.py": "a7b4334409e747425af8ca87270b4b8a4efc07e75334e5fd63f76dc19922cf38",
+        "jacobian-followup/meridional-rank/core_subgroup_homology_verification.json": "0e29b07feed3b8295883cc880ecb8eed26db11ed81c25a2dc667acea17398106",
+        "jacobian-followup/meridional-rank/ICOSAHEDRAL_LIFTS_AND_QUADRATIC_COEFFICIENTS.tex": "64b5691b6db30c135cebd517fa4fa3ac5a11b36701209c7e6ea18d1a1dffea43",
+        "jacobian-followup/meridional-rank/audit_core_involutions.py": "f87a421aca499d21a8ca254944b1a8d24c2e020a3908c845c32afbe1494df0e0",
+        "jacobian-followup/meridional-rank/core_involution_audit.json": "171d158d0cd15d7a56f4bd25e2f374c1a9f2fd23dbade5ec59b76d39d1f4f623",
+        "jacobian-followup/meridional-rank/quadratic_integer_lifts.py": "6826d7b043e684cd48c7c60f32edf82e78cb2bbd9a63e424b1de91da3c57ddd5",
+        "jacobian-followup/meridional-rank/audit_icosahedral_lifts.py": "aac12ad5938e58baf22c841b160810ab25aea1e17b1eb412d5eeb3aa74082cf5",
+        "jacobian-followup/meridional-rank/icosahedral_lift_plan.json": "997a160020b41057a5fdc43e0318a5073eba5032d5f07107cc8680d4f8c4a376",
+        "jacobian-followup/meridional-rank/icosahedral_lift_results.json": "a6728236bc6ed807fcb7ac1692652e6474387460c4ebc593565d549396410428",
+        "jacobian-followup/meridional-rank/icosahedral_factorization.py": "fd13c975daec43ff2aca40563d9c4485231732cf152a9c289bf9773567556c5c",
+        "jacobian-followup/meridional-rank/icosahedral_factorization.json": "60d93590bc9fed1be010167ea818e985834613cbd46c072c992735cdb220f139",
+        "jacobian-followup/meridional-rank/verify_icosahedral_lifts.py": "670a2b7a309b7ff2fa6f6b5d529ca9154d33da7eea4747bcf3df912ccf76be8a",
+        "jacobian-followup/meridional-rank/icosahedral_lift_verification.json": "daf740d9157bbdd8732d8b5135f0628f9524c5bcb772f550c8234ec8e199800d",
+        "jacobian-followup/meridional-rank/JOINT_SIMPLE_QUOTIENT_KERNELS.tex": "e2478a518cd4090d191ff614b4654678baeff1d2f9c083a0c48628d57e2c7ad2",
+        "jacobian-followup/meridional-rank/joint_a5.py": "2a3b8c615697430687d7136e8bc37a93898b472df47cf4e5d851448a44c26237",
+        "jacobian-followup/meridional-rank/build_joint_a5_catalogue.py": "3461fba7db05489752426cb3ca2a1e60873f69b692e4b49191ee73024a13af1a",
+        "jacobian-followup/meridional-rank/joint_a5_catalogue.json": "3e0e2aff354d05c5916a675668d5f6072d562bb77b91810f45b789d0f9e0a6ee",
+        "jacobian-followup/meridional-rank/joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
+        "jacobian-followup/meridional-rank/joint_a5_results.json": "6f2be622f64e34ba47127f5126f56bcc0f72cc98d4c29bb6d69e8a28ef623a9f",
+        "jacobian-followup/meridional-rank/verify_joint_a5.py": "49345472c71d5d4d938fdd255a26b386166a8b81cf180830d4a9bbf3af1e1874",
+        "jacobian-followup/meridional-rank/joint_a5_verification.json": "0e5f6d5cbb5e7d5974557e64a1c952b513c17cb80108cf7883c42dcca982bb99",
+        "jacobian-followup/meridional-rank/joint_a5_orbifold_plan.json": "f63bfe9206af738a5b9a2ea297eb3da7bca41e85c0e6e6ff1a4a7bf8a48281d0",
+        "jacobian-followup/meridional-rank/joint_a5_orbifold_results.json": "01505f4db4ac09cf7951873b2a30ae990efeca73a44a368abf64c9a80021c12e",
+        "jacobian-followup/meridional-rank/joint_a5_pretzel_control.json": "4e284b88ec6c6022a65dd82e783e3ba0ce15dc5c545059e2d75e7bcee171ea12",
+        "jacobian-followup/meridional-rank/joint_a5_geometry_control.json": "87a6a0042d235d79952c3984ce6c7866b5096add2a40d1d63d7b6cb90d37a165",
+        "jacobian-followup/meridional-rank/AUGMENTATION_COVER_HOMOLOGY.tex": "7fa5861aeedc4363434f63d92ee156824e40781f0e63ea095cf0d0301547b9e3",
+        "jacobian-followup/meridional-rank/audit_augmentation_covers.py": "353d2d04f7b4f2e6fa4eb8098772e6df9afc30d96c3fc85137992de4a94cf884",
+        "jacobian-followup/meridional-rank/augmentation_cover_plan.json": "8f326de84c6a6d85b532f775976d2ea2867cc735ca73de7ccecba331f9e16d52",
+        "jacobian-followup/meridional-rank/augmentation_cover_results.json": "ac1ebb2b6e5a996e73b8cd45e85e137dff95f766f95fe961c87e89dda0f650b4",
+        "jacobian-followup/meridional-rank/verify_augmentation_covers.py": "53162ea925ab01f0e897d1ae6b519eeffa9854a2a1e9531114d51eede7d83156",
+        "jacobian-followup/meridional-rank/augmentation_cover_verification.json": "e1e613d3fa073959cfbb5537afaff613495173100b07b88b9fcd8c8b8af5b505",
+        "jacobian-followup/meridional-rank/audit_whitehead_dependencies.py": "b43b438e54be4e88a90f972b3128a6fa9bba156e22d9efa022de3405f7aa2eed",
+        "jacobian-followup/meridional-rank/whitehead_dependency_audit.json": "84fdfcfc7aba8621f94a64ca161cfd82d545c7f0f54927366a8dd302b4886ce5",
+        "jacobian-followup/meridional-rank/source_status_observations.json": "a1465c96fb192cf03d14f4dbe137bea66c94dbe6706a3695579eb44e2b55d02f",
+        "jacobian-followup/meridional-rank/SIX_POINT_COVERS_AND_FORMAL_ORTHOGONALITY.tex": "9fc5e26fe9f59bfa41a5b3620f264614ef54261dd5cdfe7ecb6b589cc97e391d",
+        "jacobian-followup/meridional-rank/audit_six_point_covers.py": "61ed95a793100d0f90fe5bfd07690501c73d2f0ab393431d7708ec578b288d7a",
+        "jacobian-followup/meridional-rank/six_point_cover_plan.json": "bf9a919fffa3c8dcc068fed0bdf3e87c17b9a2ad5d830163b8fb74ff2c4ddf01",
+        "jacobian-followup/meridional-rank/six_point_cover_results.json": "fc0983471973040d3b0fdf1ea3390f830af178c095560f133268406bc0e0870a",
+        "jacobian-followup/meridional-rank/verify_six_point_covers.py": "2006ffd8f37e7a56b4c25501334d536be699040e81b466eb3ef32806a9c3704c",
+        "jacobian-followup/meridional-rank/six_point_cover_verification.json": "0d292bb63a86441b8db303444c8e8a0bfc94976b658d725b18bad5dfb692eb3e",
+        "jacobian-followup/meridional-rank/audit_core_generators.py": "79d186b5d54edff187be37945ec0f8925550b5a448032fb5ddf6804504d09d14",
+        "jacobian-followup/meridional-rank/core_generator_plan.json": "24f1700e7b2bebf3fa6c306b1b566a89d58d8099d19e34e457834261a231ebac",
+        "jacobian-followup/meridional-rank/core_generator_results.json": "3534b0663f15dc647ca1235c265db33217b6cc568a45bb8f972cb26e16d64437",
+        "jacobian-followup/meridional-rank/verify_core_generator_probe.py": "320f959ac425073403d74b08b826e23749fcbe4e65b30484b2f25597677d5bb0",
+        "jacobian-followup/meridional-rank/core_generator_probe_verification.json": "e8b89e2cdc46cbf35c0802e98bfd4ec724d18f737ce02c73520fb47a599504fc",
+        "jacobian-followup/meridional-rank/TORUS_WHITEHEAD_PERIPHERAL_CURVES.tex": "225f2aee20bd15a0766fc732326633188d4ddba46d1d8f14b07a4ad984b3e96d",
+        "jacobian-followup/meridional-rank/verify_torus_whitehead.py": "9a6c8b3549d1f19a8fcfc94e29f0f1f18088df32cbe4c94801f7a9c67f6fb966",
+        "jacobian-followup/meridional-rank/torus_whitehead_plan.json": "c2ca3c5600b5ad0ed69c5db4f046e78189d6ae5fc4ab617127f5dab850da34e5",
+        "jacobian-followup/meridional-rank/torus_whitehead_verification.json": "bac2df628aefb03794199321be6f227109d9bac255684e54faa41293c1c30037",
+        "jacobian-followup/meridional-rank/torus_whitehead_source_audit.json": "0b7d4f733b1efb6bbdf31c38c2482cbcb3a17d84f2731374f0b5b9d434d371a2",
+        "jacobian-followup/meridional-rank/sources/cornwell-knot-groups-v5.pdf": "cf6cb851e1b4748b89dcfcf3608f5a261309f6d1a73ef447b8c0fd88cab1acc6",
+        "jacobian-followup/meridional-rank/sources/cornwell-kch-v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+        "jacobian-followup/meridional-rank/sources/whitehead-v1.pdf": "50831e7525fa71bed1c3eba7d5cf27b79af86f52f54002e29b90b28e64464dbd",
+        "jacobian-followup/meridional-rank/MERIDIAN_DEFORMATIONS_AND_STABILIZATION.tex": "387829b9463f130b16703472ab6546c19b481776c003930a03c6fc4a01df1148",
+        "jacobian-followup/meridional-rank/meridian_tangent_plan.json": "e4b265d84761d6e3eb54a31a788d7a6eebc3cc07b040e8f3739397243875dc95",
+        "jacobian-followup/meridional-rank/audit_meridian_tangents.py": "ea6ac7414ad115f5af2615f07c4acc74c73e0d9a4736a5f119da2df942566667",
+        "jacobian-followup/meridional-rank/meridian_tangent_results.json": "ec65467e3dbd77b9db554b46f04c5f1096bb81c8f214668b3d07652de256c817",
+        "jacobian-followup/meridional-rank/verify_meridian_tangents.py": "7b35d2c36b9957c9464bcb678bc7a8767567d3e92883c1be13a3bf7db8e24e88",
+        "jacobian-followup/meridional-rank/meridian_tangent_verification.json": "a22f80f01d71c55b4b19576042fcf4943f9a0fca7ff6a23e3584fdb7ed1633bc",
+        "jacobian-followup/meridional-rank/stabilization_plan.json": "df2383b5f9d9f47c53dd565c452a53e35dbf7b1f606532d4537ce6ea10775629",
+        "jacobian-followup/meridional-rank/audit_stabilization.py": "3853788605d188bdceba8267edea9250a89cb586c14f941cf76fe5ca426aa498",
+        "jacobian-followup/meridional-rank/stabilization_results.json": "4d0a8af7afc529e284c14701d6731f3eb2693ce3552d6b7ffc6ed96e6d2e7101",
+        "jacobian-followup/meridional-rank/meridian_jet_plan.json": "6080a13d14a3f9d9dd51119edb696692c5a8c10a643d941c92d0078c3496eda0",
+        "jacobian-followup/meridional-rank/audit_meridian_jets.py": "0b715e916cccd8c390e8e9b43662acaec7ffa66c91b1239587ec1ef956d521fa",
+        "jacobian-followup/meridional-rank/meridian_jet_results.json": "b4a006090e97cb7bc701842dd829964aac71ba25e4f40e8b2a2d3ad7e68e7336",
+        "jacobian-followup/meridional-rank/verify_meridian_jets.py": "c325365137de9ced525440ad0d81ccaa4a6055c530c6e2ee28429ee6a12e4fca",
+        "jacobian-followup/meridional-rank/meridian_jet_verification.json": "356ef8a4d9d93955d3a874c450c684410d8295befb65541ddbd00d832c815718",
+        "jacobian-followup/meridional-rank/SIMPLE_MODULE_BOUNDS_AND_A5_EXHAUSTION.tex": "4677569151553d7b24e6a9046c4e718a10e731c2bf07ab604a63edff6a689208",
+        "jacobian-followup/meridional-rank/a5_all_modules_plan.json": "c8c0afc14be879c3d9990ee097877860029d2bfb9176375c56db1f3f39902a0d",
+        "jacobian-followup/meridional-rank/audit_a5_all_modules.py": "3b5ce16b8cd611a7e4ad04edbfa926cffc810d0478cebd0fe49aa280c1b45920",
+        "jacobian-followup/meridional-rank/a5_all_modules_results.json": "fc4f149c59e8d0ed4f5ca170eea6e121b41885156e5b14a45a0a26bb97a7fbb9",
+        "jacobian-followup/meridional-rank/verify_a5_all_modules.py": "048602b66e907e143989ba8fa09426c546bd03937081dd99fe7291df324f4f86",
+        "jacobian-followup/meridional-rank/a5_all_modules_verification.json": "a1a67db252b0cdebce0994e1b264995e33d4d454eb8dcfab1f946af667b344d9",
+        "jacobian-followup/meridional-rank/a5_tensor_pair_plan.json": "9bc713c6e51ba5b44218927f50a9584e7ca7f472baa928096008f53c952d7c6d",
+        "jacobian-followup/meridional-rank/audit_a5_tensor_pairs.py": "b861111ec29c55e5d3ea4fd7ffc8e7ee1f77e05dc30cd9b90506980b7f49c1a4",
+        "jacobian-followup/meridional-rank/a5_tensor_pair_results.json": "1e628ecab9e5dbd818b941b8112f9ab8f33a4cdfb0e16eb0023c8b9ea97c300e",
+        "jacobian-followup/meridional-rank/sources/atlas-a5.html": "2a4bd88bf4d5b8e755f2b2f023dae74d7f110d836d079ceca759b957aae12d76",
+        "jacobian-followup/meridional-rank/GL3_QUOTIENTS_AND_SINGULAR_AFFINE_CERTIFICATES.tex": "9a1b30c546087c15eb1a9e1361f005749b3c3d3997eecf42e1e09281d5514c22",
+        "jacobian-followup/meridional-rank/gl3f2.py": "141f14a6810f694a508bb38b091a7882ce4b1ec5a14a32d818756e026a6f7fbe",
+        "jacobian-followup/meridional-rank/gl3f2_plan.json": "556f24b02c605c0407183ed7eeda6b3acb75b54e99dc9f7c7a68b2e2ee2e7157",
+        "jacobian-followup/meridional-rank/audit_gl3f2.py": "db3934af19cc5bb49397ed20aa6fb940ef0ce5899cc9cf65e3d25a4839f597e1",
+        "jacobian-followup/meridional-rank/gl3f2_catalogue.json": "f46244d037194b031c1ef9f5dfc5c035aa536bfedc4a80ac29f9647305056c4c",
+        "jacobian-followup/meridional-rank/gl3f2_results.json": "0a939672ebfe0ba83131487be68ded1530f9095ce9db714e53d1c58968d2a45f",
+        "jacobian-followup/meridional-rank/outer_reflection7_plan.json": "f264d09bce126337e9bdb4e6c30fda50f91b6f3449f554d92ba4d005f48369ad",
+        "jacobian-followup/meridional-rank/audit_outer_reflection7.py": "693c4a282216c2c23f976e5c5f010460da331fbdea97f3e7d23885265aea7c44",
+        "jacobian-followup/meridional-rank/outer_reflection7_results.json": "5ceb696bdff7d8f8b8f7b28e9131174f81b9ca8c52b21e89906da6760994efb4",
+        "jacobian-followup/meridional-rank/gl3f2_full_panel_plan.json": "780f784a4d10051d792af18e58f3e55f878236bc19c607dfc84ddacce557c608",
+        "jacobian-followup/meridional-rank/audit_gl3f2_full_panel.py": "a4602a07d6d29c55d5ae52170ccf4761419c0c55b35f4b2779ff2bcdd302765a",
+        "jacobian-followup/meridional-rank/gl3f2_full_panel_results.json": "610569eb3ac0a17bd19730769c77523a2e9f2036ea68c027db5e8b0b92be2a60",
+        "jacobian-followup/meridional-rank/reflection7_full_panel_plan.json": "adda0e25775f378144cf7d5378f661c908327b4845301a900af0c2464d397f05",
+        "jacobian-followup/meridional-rank/audit_reflection7_full_panel.py": "744e955fe05430ac8938e75ccbd19a14ae5644688e5681c98916d322fcab62fa",
+        "jacobian-followup/meridional-rank/reflection7_full_panel_results.json": "5cbd549cfe252996ca36e68c7aa9abba67e3c5b3e3cf3b2f12fee762370348c5",
+        "jacobian-followup/meridional-rank/verify_gl3f2.py": "a879f7ff37432c81a41b882eb5f7e286cb9be78df97f3bba07377ffe7d2b2710",
+        "jacobian-followup/meridional-rank/gl3f2_verification.json": "49ccff422b7ccd771bd4019a8170b6b85d83cd449667599f7d95df628239703f",
+        "jacobian-followup/meridional-rank/audit_gl3_sources.py": "abbb1b8a45520d2f6de76c9a202e3cc9efa106153c7cfbe55b3ba6caa41957ba",
+        "jacobian-followup/meridional-rank/gl3_source_scope_audit.json": "a3c3ad1320b38359f99689b95bbede6697ed00bc50a52212bf9ec18e9ce50491",
+        "jacobian-followup/meridional-rank/sources/atlas-l32.html": "1df061049290b684d90227a4f1e5c3fa67214e6d8914d3450f369cf955e4ce16",
+        "jacobian-followup/meridional-rank/sources/current13/search/glsearch.py": "52155ca6d1c67456b45a97eaadc234980a2227f155e88ef46e8fb8c20f500cc5",
+        "jacobian-followup/meridional-rank/sources/current13/search/w3.py": "24f270b58b6c7c64a8ec4a9d3b9e1b19aad12d72dedbda6ff2178591c4f7e4ad",
+        "jacobian-followup/meridional-rank/RANK_TWO_AFFINE_EQUIVALENCE.tex": "8173f6b81cedea25dcc9d8af6586dcc46c646ba751363887608fd82031d45121",
+        "jacobian-followup/meridional-rank/small_symmetric_full_panel_plan.json": "c52a5a44620d90979a723ddd741d4344f0ed5955c0af97dfb88ce12202de72fd",
+        "jacobian-followup/meridional-rank/audit_small_symmetric_full_panel.py": "4094ae2bb94a3afb130ece6ae99939bedbcab45cf8acb7dbc059dd8a3427f363",
+        "jacobian-followup/meridional-rank/small_symmetric_full_panel_results.json": "c03f855c9929e288e421506215732320b23345dee98314e91d6488d2ee335bff",
+        "jacobian-followup/meridional-rank/rank_two_equivalence_plan.json": "64714c5cfba8fa4439c95ae4f69854992da61aabbcda4f82787e40f6e9a13dd1",
+        "jacobian-followup/meridional-rank/build_rank_two_controls.py": "5f2ae703124248a66c63a01d21cbabb34a445f15f092ea7eca72ef3c845a7a97",
+        "jacobian-followup/meridional-rank/rank_two_control_diagrams.json": "865df4bf046ecee54089eb4216d0829e2ee06e90a4f437dafddb8c599c25dd7c",
+        "jacobian-followup/meridional-rank/verify_rank_two_equivalence.py": "f867375f4eee941a629a8dddcc8710885b42c04b80e26267cf15a323391c479f",
+        "jacobian-followup/meridional-rank/rank_two_equivalence_verification.json": "7877d47e516ce68b789a8d3c656df5c266f4ab96422617290ea457de32c3876e",
+        "jacobian-followup/meridional-rank/three_sheet_nonabelian_plan.json": "2d8216db2ccf6fd4df7de194d9a34ce45fbf4b4d03148434c271ef5d00231730",
+        "jacobian-followup/meridional-rank/audit_three_sheet_nonabelian.py": "788cd64ff55dd41bfb5d0ef3e157916412ad935be46618a4505c9dda81a562cf",
+        "jacobian-followup/meridional-rank/three_sheet_nonabelian_results.json": "a542b07fec8d73b6d2be21251fb977a3d41e175fff0c4601a5f3eee8d917c040",
+        "jacobian-followup/meridional-rank/verify_three_sheet_nonabelian.py": "65590d13bfc417a667d18f12191b0f3142135dfe911e27c153b0dd5698e049f4",
+        "jacobian-followup/meridional-rank/three_sheet_nonabelian_verification.json": "6572df4f35bf9f4bd4908dce32889621529287fbb48462587a2124bbaf69e1dd",
+        "jacobian-followup/meridional-rank/three_sheet_coset_plan.json": "c36b0854eb169e08b5331e58c90eb3492b912248a7ba4db09c14aa9e43b29b20",
+        "jacobian-followup/meridional-rank/audit_three_sheet_cosets.py": "c6767a5d02ec61b3a30f4e1c2b20656a6252517d71297833d40f723f59de5ad5",
+        "jacobian-followup/meridional-rank/three_sheet_coset_results.json": "57e3ce0770aa3e2a5796c5893bd5bd55cf77e872b757220dfe89baf97e94b6b2",
+        "jacobian-followup/meridional-rank/TREFOIL_AMALGAMS_SHARP_FOUR.tex": "ce96a7ef0686698fa394c0b525518ff57ec3fd0ef7a43a7e9f6b72da37ffa030",
+        "jacobian-followup/meridional-rank/three_sheet_structural_plan.json": "9ebe311bc54aaef9aedec18cc56d36f52a168b44f136ce105436ffc07b5815cf",
+        "jacobian-followup/meridional-rank/audit_three_sheet_structure.py": "8f12b63237672c00123e709bae9d09f3262af9f6b419e944ca931419f56f83b8",
+        "jacobian-followup/meridional-rank/three_sheet_structural_results.json": "7c5bb164817542758d523abb0d4138dfd220ec7ee3f6acc812cc4e8bb8748cc6",
+        "jacobian-followup/meridional-rank/verify_three_sheet_structure.py": "72a9667a2613c8c5fe5d8d02a107bafeb1d251cedac1fc4deea3a1541d9a9a36",
+        "jacobian-followup/meridional-rank/three_sheet_structure_verification.json": "aedd9549aed67422c38b37987750abbd68138c024acdd779f5bb75c741e468be",
+        "jacobian-followup/meridional-rank/three_sheet_metabelian_plan.json": "3f245376e1c44a648745bdb01654e4cfe6aee0c44890529a5321c5d9e9f8892f",
+        "jacobian-followup/meridional-rank/audit_three_sheet_metabelian.py": "ebc5302d96704a70a46762398310801b3a15bd5ae6bc9c68434816b7c3f82ba9",
+        "jacobian-followup/meridional-rank/three_sheet_metabelian_results.json": "d7d7ae686da6afd5341b85ad695faf9b622ebca7ded8b83602c8b9830bba9ada",
+        "jacobian-followup/meridional-rank/three_sheet_splice_plan.json": "3060b3bcc63b7895b392108be37d3972872ca7ca4f88a6ed9ef6ce59c0f2c19f",
+        "jacobian-followup/meridional-rank/audit_three_sheet_splices.py": "3ba2517b0c2cd8f1c4f92fd8c790fb51e7b1388f0217888121db85c0e2476024",
+        "jacobian-followup/meridional-rank/three_sheet_splice_results.json": "fe01dc4bce6716570613df01ab859a03ea3b428e698c9fa51791818ea53c0d06",
+        "jacobian-followup/meridional-rank/audit_splice_knot_provenance.py": "a657947b09fee4f74fc75fe95a6987d138013385f098ddae885bde468683d7f6",
+        "jacobian-followup/meridional-rank/splice_knot_provenance.json": "36e39ebd6e1cc41779ec6b644af94d59e6bb2200dd5e5619b1a12a4acdd011a3",
+        "jacobian-followup/meridional-rank/verify_three_sheet_splices.py": "1839f4b8ad69788222f2a61ca98b0190ee43cc0f0c9a7bc93d8e1634d789ee60",
+        "jacobian-followup/meridional-rank/three_sheet_splice_verification.json": "cdf76193af77a03c594f85a68b3feef1246a9f309c0fc04bd433529f9e9b923f",
+        "jacobian-followup/meridional-rank/four_sheet_group_plan.json": "60481434c29071fac1eda362e698dab2209e67ced6fb8a2507f60e87e69356ee",
+        "jacobian-followup/meridional-rank/audit_four_sheet_groups.py": "6a60940f8393d8fa6622739a1a0ff38efe5983eb06c5cea8b5bc91ac27721995",
+        "jacobian-followup/meridional-rank/four_sheet_group_results.json": "8cc118a28bd395f99cfb84c6d30456adab1cab2f0ae0ef9d1f273d88863de958",
+        "jacobian-followup/meridional-rank/verify_four_sheet_groups.py": "eda162280df3695dd069ef0b71aec8f324575d96b71074b12b0fc310eda63ab6",
+        "jacobian-followup/meridional-rank/four_sheet_group_verification.json": "280d3b07fb95db2b18f1afefd641224649f89dca4432fecc8f2417cef86cd1eb",
+        "jacobian-followup/meridional-rank/sources/current13/still_open_2026-11-17.json": "59da540abebd4ea28b67ad86d24a946f7c6856abe79dba2fca613037e0800f16",
+        "jacobian-followup/meridional-rank/finite_cover_quotient_plan.json": "2798c720b1e542daef955775536fdbcd5f6cd3e6329434aa3f5b2719b38e436b",
+        "jacobian-followup/meridional-rank/build_finite_cover_quotients.py": "a674237bf8aa5c70b0adce2808967f6ab2886c7b044283f0e8214f3218bd3d13",
+        "jacobian-followup/meridional-rank/finite_cover_certificates.json": "e10516536879ce4d92eadeb350864ac76c95962bbd72a694f6e532c6f6f533eb",
+        "jacobian-followup/meridional-rank/check_finite_cover_certificates.py": "336f3297412ae19ab96cc4c2572eb972f18da4d555dcc7ed37b9d7897902911f",
+        "jacobian-followup/meridional-rank/finite_cover_full_results.json": "61bf5630294e2d8c80044f79797bff122cb4f1b38afabb03303c4d90f7a152bb",
+        "jacobian-followup/meridional-rank/verify_finite_cover_quotients.py": "f2cf8bcc595533988f2e41ea18b347ed1a40aa276f240936dd86f26e0b235075",
+        "jacobian-followup/meridional-rank/finite_cover_quotient_verification.json": "d63fe0242cf61aaaad82f873307b57d5d0c50cfe80789e193e0b9e7865c0f8da",
+        "jacobian-followup/meridional-rank/PERIODIC_TWIST_FAMILIES.tex": "c7176017856c1a3834a88c55e05ba13201bd5ec3e6ac7c5f5425a47fc0e514d0",
+        "jacobian-followup/meridional-rank/periodic_twist_family_plan.json": "9b0fe7e409d2c56cd5f388e62d235b0afc506c915f01e0247ae8384dccc68a69",
+        "jacobian-followup/meridional-rank/audit_periodic_twist_families.py": "5fb58740ddec3c73f40fd65bf865eb6da54c8c4d66f06957189e221b288dfbc1",
+        "jacobian-followup/meridional-rank/periodic_twist_family_results.json": "5ad360f85b1ad8376bc58d7a3fd75df3e60a63279e9c9e9f7e483e355c099d56",
+        "jacobian-followup/meridional-rank/verify_periodic_twist_families.py": "4ccc1a31e20cadb2931d056d92ba9ac355136c09e6f520166b213e1c1d42893b",
+        "jacobian-followup/meridional-rank/periodic_twist_family_verification.json": "a16f81ffc762e90272ad77828aacd6646d4cd1012bbf23050e6ba5c5ad8fb3ad",
+        "jacobian-followup/meridional-rank/audit_periodic_twist_sources.py": "35a76cffeda4b291bd05c64e512cc0c46d85fb52fbd5bec09bef65e7fa6ebcd8",
+        "jacobian-followup/meridional-rank/periodic_twist_source_audit.json": "99649295570aa12e194388b63348d7349c78d3bb5e595d87a91bc848a0d54084",
+        "jacobian-followup/meridional-rank/sources/stoimenow-graphs-2007.pdf": "da3459289af54b1be6da79e2084745a4f95120b01d4add7b97cbd00d4a4bcfbb",
+        "jacobian-followup/meridional-rank/sources/joseph-pongtanapaisan-v2.html": "69d1e152c7806fd732950e599a240192749a0d36cb1d078906ff0818bbb6b0d4",
+        "jacobian-followup/meridional-rank/SIMPLE_COVER_RANK_ADDITIVITY.tex": "d3c0af8f51289062153c87e0378e95cb05d5cd8d146d200ad4e044f13d0e8ac7",
+        "jacobian-followup/meridional-rank/cover_sum_plan.json": "3c3482e3f101061d3aefadb0310073f51432a1ec4a7826aa6732529f6e7ca194",
+        "jacobian-followup/meridional-rank/audit_cover_sums.py": "b3bc8f873ef51e3c2b33106703d96058c8877d379dd0b7c5ba1e1968b7ed50c4",
+        "jacobian-followup/meridional-rank/cover_sum_results.json": "6d05cf4ff00d88c794bbbd7008907d594db626ace26cdd8ed586382960446181",
+        "jacobian-followup/meridional-rank/verify_cover_sums.py": "a8f0ec81120b0d2adaf7504c1c546b7b951336ee09ef2bba4611c84d4eb7a6fc",
+        "jacobian-followup/meridional-rank/cover_sum_verification.json": "f6194785bd316f5c8a24446a2538c962df919b85af480c1f7ea31f3824f67b3e",
+        "jacobian-followup/meridional-rank/audit_cover_sum_sources.py": "687ddd3dedf673f92201d91368881f7190249f63095e264aaf83e212f9155efd",
+        "jacobian-followup/meridional-rank/cover_sum_source_audit.json": "a02f5b53e835023c5fb6bb61cbea60b36b34ee2927cfc21e0c9a42193145d3ce",
+        "jacobian-followup/meridional-rank/sources/stallings-1971.pdf": "da9af1134bca41c5e87c76954596e93a56268e496c73dda27660d7de2d8874b7",
+        "jacobian-followup/meridional-rank/sources/schultens-bridge-additivity.pdf": "ea7b9acb96ddd962b4363ec51c95514aba5544eeded1d7fdf8d461f5f71d375b",
+        "jacobian-followup/meridional-rank/sources/bdjw-graph-manifold-v1.html": "320b0d79011bdc5df2a29d58ad13b25592bc09fc5796204bc040da40a6c726b8",
+        "jacobian-followup/meridional-rank/sources/knotinfo-bridge-description-2026-11-17.html": "cd767b25e94621709a262ab613365d82966c23f68337f79bfa1e87ed79193959",
+        "jacobian-followup/meridional-rank/PERMUTATION_INDEX_GATE.tex": "735fe67e11ea4f3b076e1e95840d5eb60a7eabe182a31dff5f7baff7139b0618",
+        "jacobian-followup/meridional-rank/double_transposition_plan.json": "0703e3dbfea4e7348811f448122f0cb344fab7b562e10b74e3599ccb60471e31",
+        "jacobian-followup/meridional-rank/double_transposition_degree9_plan.json": "4ace2d88225ee69d542a52640ee8248e59f19e1ef47e34d30cfa3fbc68122cdd",
+        "jacobian-followup/meridional-rank/double_transpositions.py": "ba0446bdea9889ed90fa7fde737cbed4d71f35598314b4281fcb2b2771f8f88c",
+        "jacobian-followup/meridional-rank/audit_double_transpositions.py": "ee61eb12120bcbdf7ccb8ebc06b024e20e38d7d7ad94eab196123f9e5d5f408e",
+        "jacobian-followup/meridional-rank/audit_double_transpositions9.py": "5a7736f563e3cf6872bebd2a7e9f1f8ba253b2ad1e2a634557f389d84b683da0",
+        "jacobian-followup/meridional-rank/double_transposition_results.json": "2e68be9e4f4251424add15cf09f954f47bd64be3b36e498e9ca81cf7e118cee0",
+        "jacobian-followup/meridional-rank/double_transposition9_results.json": "17c89d680ea918bd74f69091a49979ed3535959e591c4eede24c1d337270225a",
+        "jacobian-followup/meridional-rank/double_transposition_catalogue.json": "156323e53b794c3da0f4f19f24cc98c3e734704118f000af42d6b8dcd7eb6752",
+        "jacobian-followup/meridional-rank/double_transposition9_catalogue.json": "9f4d65ceaa85c26672d546d05fc8d2541d5e28dc8b7ea3290dcc5e2bfb6212ea",
+        "jacobian-followup/meridional-rank/verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+        "jacobian-followup/meridional-rank/double_transposition_verification.json": "7df96b62d6a81fb3e35cde81a69f46555df3578f0851b977f68450a9731be742",
+        "jacobian-followup/meridional-rank/audit_double_transposition_sources.py": "2879f947aa9c079fbef51cced6a33bedc2daea023940c9dc4bad5f9006f2aeba",
+        "jacobian-followup/meridional-rank/double_transposition_source_audit.json": "0b1c321f4f28768236ba227c8775ba5c04f03d835279e031340ae7a4e20bd125",
+        "jacobian-followup/meridional-rank/sources/atlas-a8.html": "b631d9d4a0f7a0aeea98f7b347a7b7f9f128e99abfeac3faedbea8a2c62c4742",
+        "jacobian-followup/meridional-rank/output/pdf/PERMUTATION_INDEX_GATE.pdf": "41d1402c49bdaf13cd9abe37a5a2318d11f7c646a03898bb8db3e6f3e93b4c84",
+        "jacobian-followup/meridional-rank/TERNARY_AFFINE_AND_COVER_CERTIFICATES.tex": "86c3934737c910c1efcd15e89666562d0c0b6288b24aefb74e948131e288f937",
+        "jacobian-followup/meridional-rank/ternary_transvection_control_plan.json": "ca5d8a2abdcedc1c76dc0deae5272b984474b1cd73aff852daa27e4873a7fb6d",
+        "jacobian-followup/meridional-rank/ternary_transvections.py": "440acbb6d60ce867c81e9c640a16008d3125ecd4da3662d1021cc04aa919a22d",
+        "jacobian-followup/meridional-rank/audit_ternary_transvection_control.py": "1f9b076192e76a93c85bce37800c54118371b2bfe6adeb560d519923f7b10f7f",
+        "jacobian-followup/meridional-rank/ternary_transvection_control.json": "b1c2a6cb15c49845512e0606644d12dc3f6e90745429735ab642b8fb9e694a59",
+        "jacobian-followup/meridional-rank/verify_ternary_transvection_control.py": "f289f0b97ff61037ceeafc2022dd415c40e9f86e4554f365c0241a57b9eaf67b",
+        "jacobian-followup/meridional-rank/ternary_transvection_control_verification.json": "2cd8b2728bc7a38ed22525be7edecb813ab5ae4f4b83e2bb9dd57cadb496c177",
+        "jacobian-followup/meridional-rank/ternary_transvection_plan.json": "1ae54a045b165066c47d95878476722423957aa452f1afde658870ac56c62ea8",
+        "jacobian-followup/meridional-rank/audit_ternary_transvections.py": "8a5f5f134de74d849b64a541fd24831f93b0cbac25a10aa74e153560c60d8939",
+        "jacobian-followup/meridional-rank/ternary_transvection_results.json": "7b90e4c5a5956a6b1c1356dc04c1cdb53a5b38223af59bc53201a7f364b8abfd",
+        "jacobian-followup/meridional-rank/ternary_transvection_catalogue.json": "8abce248e8f3f864dfea64b2b76046876459ff2360a2b8777a23d2a485e13835",
+        "jacobian-followup/meridional-rank/ternary_reflection_plan.json": "36e555cbd8d69f307e918152a2187dd979b22b83a66ad0e0e2df3fdd6d01cec7",
+        "jacobian-followup/meridional-rank/ternary_reflections.py": "401b1926031c9207caa83ffa797f0f66cde1840a20c96329e3f8a9282c056e98",
+        "jacobian-followup/meridional-rank/audit_ternary_reflection_control.py": "9bab2523dfa453a0591c884e6d9bc9f914d5a71c127ab1c7c05d1345a519e78d",
+        "jacobian-followup/meridional-rank/ternary_reflection_control.json": "d76fd1d72459b41ea2cba52172956659bb34618b7ae4b9e8a39952fbc97ac35a",
+        "jacobian-followup/meridional-rank/verify_ternary_reflection_control.py": "e81787540e1aafd477ae0db66483c2c1a76ba33aee01d1963a3985dca5e5587f",
+        "jacobian-followup/meridional-rank/ternary_reflection_control_verification.json": "3800e7528392a0279c47f54f72132a765c3e4d024c45f2e36cc1b309a3230757",
+        "jacobian-followup/meridional-rank/audit_ternary_reflections.py": "04342c039de244dd1bdbe7a0f8d100cc6ec7912649b30dcc31a42033ad749a2f",
+        "jacobian-followup/meridional-rank/ternary_reflection_results.json": "f23802c76c63a294029d4d823f1127b8e45d101d580167bf9f0647f7c3b8b0ef",
+        "jacobian-followup/meridional-rank/ternary_reflection_catalogue.json": "c038b65b95fe58808a1230e64f4d013b2a755f680652d9d768bea07fdb9565e3",
+        "jacobian-followup/meridional-rank/verify_ternary_bases.py": "39f8e7c13d01a0d2ee9871348e767a534ddb046f9b1b4671edf712e394ba6de7",
+        "jacobian-followup/meridional-rank/ternary_base_verification.json": "e1b0b17fcbc79b777fda02911d3e3f2e80eaff842e51f82293b630dbeb4419e6",
+        "jacobian-followup/meridional-rank/ternary_cover_module_plan.json": "51fde845d3ba5df735f1738e5a1b5143ade669fcd5c157774d8a3861c8233a4a",
+        "jacobian-followup/meridional-rank/audit_ternary_cover_modules.py": "bb6486b513400367dcde0d61e40ba4a6ac2d3dc43e30fd1e1671b86509264945",
+        "jacobian-followup/meridional-rank/ternary_cover_module_results.json": "aac00533b2f3fb30a75afcd0f73945d2aa456eaa76d9999e551559cf39968f27",
+        "jacobian-followup/meridional-rank/verify_ternary_cover_modules.py": "d559381f710ec900b8fff789b680ee8ad1aeeb563658eaa1a8542c178dff687c",
+        "jacobian-followup/meridional-rank/ternary_cover_module_verification.json": "24c9f9b2b3046313f0916280e5e1ebc00e8d7b98c44bb6ec9b668377a59815af",
+        "jacobian-followup/meridional-rank/verify_ternary_certificates.py": "4c5a2f3a8750e346f2c55be98ea7ad9e93f7eca2c663b5725e79e87911f6ae22",
+        "jacobian-followup/meridional-rank/ternary_certificate_verification.json": "2375a0d73e1c5e8d17671a7a3d5ccd48ce9d66b88487a60428a3f0aad519ec0e",
+        "jacobian-followup/meridional-rank/output/pdf/TERNARY_AFFINE_AND_COVER_CERTIFICATES.pdf": "534b2d98f12bcb2e53ba7104cc7c4d16caad31d82c3b35bea4d9428fdfc8f02a",
+        "jacobian-followup/meridional-rank/PROJECTIVE_THIRTEEN_COVER_HOMOLOGY.tex": "6b3d75fac7beba3b66dd30a05fb89e6a6355b68d8d443714f728452f45f43216",
+        "jacobian-followup/meridional-rank/projective13_cover_plan.json": "9f72cc186d8a98578e496615804f21f000a1fd77f3fddf6a4883180cdc247578",
+        "jacobian-followup/meridional-rank/audit_projective13_covers.py": "51b3a240cf575f8d9d48c9f32a2a4c9dd4af7ee2c5e124b9e165257191c41c89",
+        "jacobian-followup/meridional-rank/projective13_cover_results.json": "bd8c6261109e409d36f92221f5d63d1cbda618836924434014c667c31e54899c",
+        "jacobian-followup/meridional-rank/verify_projective13_covers.py": "a4a1b9b30df34ffcb825d4b1055863e219e5fa3fb107d3289a6715c41a500ff1",
+        "jacobian-followup/meridional-rank/projective13_cover_verification.json": "b535807e0c1b8528bbbb636c96bded6b79ca7fed681f2a49b04584c8375fe013",
+        "jacobian-followup/meridional-rank/audit_projective13_sources.py": "ab3bb73ad523767fa655411730e5e413140b7f7a8dafb9bd5906c8c6b2041d6c",
+        "jacobian-followup/meridional-rank/projective13_source_audit.json": "f8570743c1e94c75fde895f4d2067de60de83268099ebf3f57821ba7a131e8ea",
+        "jacobian-followup/meridional-rank/sources/knotinfo/2026.11.2_projective13_geometry_subset.json": "ce76849e826e9cadcc483796c048446903cf01041c6274dc499609c91004dff4",
+        "jacobian-followup/meridional-rank/output/pdf/PROJECTIVE_THIRTEEN_COVER_HOMOLOGY.pdf": "8b27b880c20663ba7a6e882171c33437aba3842f6fefa11de167553dcb5dc37e",
+        "jacobian-followup/meridional-rank/characteristic_degree_control_plan.json": "5891d60d85313a301dff5eb11972656a7124db4ef9baaeed6d57888971030e24",
+        "jacobian-followup/meridional-rank/audit_characteristic_degree_control.py": "53f415623ba3cba7d19bbaaaf473a95ac9b387046b6b8e61e8052cda034d28f3",
+        "jacobian-followup/meridional-rank/characteristic_degree_control.json": "9ecd49b1963ba0429438455c29a889dfff73a59fa3c7799fd465099dbdefa171",
+        "jacobian-followup/meridional-rank/verify_characteristic_degree_control.py": "3093958bcfd2bc07eb0aaeeafa91dc5fdfbfab4d83fb74a2288a3e0953e669a7",
+        "jacobian-followup/meridional-rank/characteristic_degree_control_verification.json": "bca16f18617537237ff917acb36d5d478ff9415b22666651445be62880870952",
+        "jacobian-followup/meridional-rank/MUTATION_COMMON_DOUBLE_COVERS.tex": "a9b99df6902c6bea3e93809c22e327d870898c8d3cf5f532202a44322d219e9a",
+        "jacobian-followup/meridional-rank/mutation_cover_plan.json": "53997bb367890006c42c6aee10e570ce69e4f1fa933af3823f05899daf692220",
+        "jacobian-followup/meridional-rank/mutation_graphs.py": "fa13588c69b13b385b28e2ecd20ff36813d73be1f7bdc4958dad745fb17be504",
+        "jacobian-followup/meridional-rank/audit_mutation_covers.py": "b6d0250884a01ad07bbd7b6c9d3b1972c7b8d55c04184a3a5b7cbe8b88539d28",
+        "jacobian-followup/meridional-rank/mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18",
+        "jacobian-followup/meridional-rank/verify_mutation_covers.py": "92020c13f5e7b533fbe5df0e2071959c6032f2e6b70e58fb8e2f0e1eab676871",
+        "jacobian-followup/meridional-rank/mutation_cover_verification.json": "5a925d1c5b9c008156becfe3aae921ceb87699f1ed0355cee06c055c8b7c3ec1",
+        "jacobian-followup/meridional-rank/audit_mutation_sources.py": "c8d36cf8049de7e649e2dd814c93fd1c134e349a9b078e662fb8ad09e885e40f",
+        "jacobian-followup/meridional-rank/mutation_source_audit.json": "a832227ce9aa139e8d89133db454563c6461d48d36a9e40fddf16dfc42a0701b",
+        "jacobian-followup/meridional-rank/sources/knotinfo/2026.11.2_mutation_subset.json": "9c8ef90774529a3cf3c08b5b70268fc063b7884b04727007966d5b47e2ba5c53",
+        "jacobian-followup/meridional-rank/sources/greene-mutation-v1.pdf": "1a902cfbcef30f7fe39f632ec428b01747f6c5fe208083c6248a9c12af7bc96e",
+        "jacobian-followup/meridional-rank/sources/morton-mutant-knots-2014.pdf": "a78dc26613cf020515c649f88e092836e743339403c4febb91a327c43ac31436",
+        "jacobian-followup/meridional-rank/output/pdf/MUTATION_COMMON_DOUBLE_COVERS.pdf": "2a61a2aed8cc50e038408d996969c6f72dedf79282657bf90c54174e931fbfa2",
+        "jacobian-followup/meridional-rank/COMPACT_DOUBLE_COVER_PRESENTATIONS.tex": "a47ab355b0f9a4646deca9097f842c0594c08c91ffcbd6e3539cd3823b7e430d",
+        "jacobian-followup/meridional-rank/compact_cover_plan.json": "d8ed708f21b5d4d2bbf13a66ac518790b120589f1627ca825108d3e365d377c2",
+        "jacobian-followup/meridional-rank/compact_cover_groups.py": "88c975a276373a242f18d1ab3cce300cc1ca8755a5ad4ae0aea58069b7f4da77",
+        "jacobian-followup/meridional-rank/audit_compact_covers.py": "a6d05c4454af463f3953077e4515b27f25084e9983702fc3aa876e4471a980c0",
+        "jacobian-followup/meridional-rank/compact_cover_results.json": "f8e7cb7b1c1e17e0fe83d006642397c6c26438517cbbaaaa5e3e496253160e88",
+        "jacobian-followup/meridional-rank/verify_compact_covers.py": "a3791df7d81a6ce3f072cc19bf52efab78395376fae4d91ce0f12dce03770a2f",
+        "jacobian-followup/meridional-rank/compact_cover_verification.json": "4001bed48608d37ea613dc5a538c1581035c780a94b278b24f2abea807490be6",
+        "jacobian-followup/meridional-rank/outer_tangle_plan.json": "852d8b6f6e60009cc1d458a3fdd05035d577273693b73c3bbda6240871261e0e",
+        "jacobian-followup/meridional-rank/probe_outer_tangles.py": "e26bfb3ea2a5e9f4e5dcbabc61eb073f2190e2eaed942630edbc835b4b8717cf",
+        "jacobian-followup/meridional-rank/outer_tangle_results.json": "dd873f3cd53845bf25d49885f409d4a0bdf13ed5bb3f08ffafef634b83b692cb",
+        "jacobian-followup/meridional-rank/outer_tangle_transport_plan.json": "0a307ec91b34a6515c43f325a450b9be717c146805ae37024ef5133a563ea61c",
+        "jacobian-followup/meridional-rank/probe_outer_transport.py": "d1da49cb2c4ff64c9a152799b66e7f50312f708a2bfad14ba6d5521738cf29c3",
+        "jacobian-followup/meridional-rank/outer_tangle_transport.json": "af570cd552d3e2310d5f706ba702556a0cf6d0481dd716575bc54caf5de90172",
+        "jacobian-followup/meridional-rank/inner_tangle_plan.json": "1b5fdcc73642e1ad3b2186a324f894d0889f0afc7139a166ca59e08d78072bb3",
+        "jacobian-followup/meridional-rank/probe_inner_tangles.py": "412d17fbdea6047f732c823e2b7a96c331652217c5b52937c6d60de6f0477477",
+        "jacobian-followup/meridional-rank/inner_tangle_results.json": "79d331681824dd48c75a7b89a74add0ed7af3f5eaf16ddbc2dd4e8a346bb4c4d",
+        "jacobian-followup/meridional-rank/port_assembly_plan.json": "39f44849a5ce7e6f0d2ef816d31a20a4f2ccfa14cffab08672c8470fd1df8d7e",
+        "jacobian-followup/meridional-rank/build_port_assemblies.py": "7b7b7613132a01636846f5b8a4d58aa0c7e948ba0ff552c32d7950d491a95df5",
+        "jacobian-followup/meridional-rank/port_assembly_results.json": "7ba49e1af708bdaf299e67faaff92a907c71396c4be773a45a1457dc8dd93eb9",
+        "jacobian-followup/meridional-rank/verify_port_assemblies.py": "d05cb9773dc4145bec2e88d3a2aadb2d86ec5c59d55d5030ba29fa0e036b07e2",
+        "jacobian-followup/meridional-rank/port_assembly_verification.json": "5c955675b1689e45f3cd075022c3b17027abdd4736a8c1fc78010b20f6941e44",
+        "jacobian-followup/meridional-rank/compact_cover_geometry_plan.json": "00350437995d49e8a5b406c7fb7c8616048ed9fba97df8f372dfc3d4eb90b500",
+        "jacobian-followup/meridional-rank/probe_compact_cover_geometry.py": "3c01a276b86ead5dd83a0a08aace0b83c901fa548e67683342ca8d404a316e40",
+        "jacobian-followup/meridional-rank/compact_cover_geometry_cues.json": "fcd9c8f37990ff686214781be9f6d2e52696d8aa8739e770f874496e0150d061",
+        "jacobian-followup/meridional-rank/compact_cover_recognition_plan.json": "1b3e0cb256df8dd72ad5b5f85a496f7364cbee29a0665f5d86edd97563c9ef63",
+        "jacobian-followup/meridional-rank/probe_compact_cover_recognition.py": "33a015ce9c8287de4a90bc53af06e817c43da0647db224d4a3cf9cc900c50cc9",
+        "jacobian-followup/meridional-rank/compact_cover_recognition_cues.json": "9dbcc6e2fa75af7aa27d98704b732745573b2e9095dc13fdb4160a054f88b463",
+        "jacobian-followup/meridional-rank/output/pdf/COMPACT_DOUBLE_COVER_PRESENTATIONS.pdf": "3904f2c1ca28a864b14be6673281f122453b4370e8c62bf0f554e01d6012b6b7",
+        "jacobian-followup/meridional-rank/FOUR_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex": "35b7b96c069a26c987ca95c936ccbb95754c0fc679e2795a80d2aabc02bfc08d",
+        "jacobian-followup/meridional-rank/four_piece_cover_plan.json": "48940e388419323f6437a0c19760dd130895ecbc57fa05164a22c7c7a61fbffa",
+        "jacobian-followup/meridional-rank/audit_four_piece_covers.py": "c9160544a9d7ef51b5f48a67ba558d0ea400c15a402d1d2595a5fc6e8b63a37b",
+        "jacobian-followup/meridional-rank/four_piece_cover_results.json": "4b7d110b06ae51a07daf1ec861f9e91c6f2adce84286404aaed60a93d5549394",
+        "jacobian-followup/meridional-rank/verify_four_piece_covers.py": "87b9307ec2ecffcc37e84ea2110a61cbc1f7a5ecf73fff768a73c0159c151b5f",
+        "jacobian-followup/meridional-rank/four_piece_cover_verification.json": "dddc607adcc99ff2f70af609b1b01a4d5cf5884bb489496eff84cccc203ed56a",
+        "jacobian-followup/meridional-rank/audit_four_piece_sources.py": "fbdb8007d0cbf50dfe592700135063789a6995e0e40fc69aaa0499aa6330289a",
+        "jacobian-followup/meridional-rank/four_piece_source_audit.json": "b009240f8f5f7321c794d921c038657613840a680596d7f1bd4504bf1316d39b",
+        "jacobian-followup/meridional-rank/sources/boileau-weidmann-structure-author.pdf": "4b2a632ef6fcaf1819ef5649b36d0a14085bd693a85841195619bee8557e70b7",
+        "jacobian-followup/meridional-rank/sources/hatcher-basic-3manifold.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+        "jacobian-followup/meridional-rank/output/pdf/FOUR_PIECE_DOUBLE_COVERS_SHARP_FOUR.pdf": "c6d687a3fceb6d0f7f2c19ef28fe7ea233ee9de7ee18c5c1cd212a899c0ca87e",
+        "jacobian-followup/meridional-rank/sources/millichap-worden-2bridge-2016.pdf": "9c6edd4d6fb8ff300e3b49aaed5309bbb95492e36e1d42140f163c234a81150a",
+        "jacobian-followup/meridional-rank/THREE_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex": "91853bbc4566a7e7c2eda280f4373bef780b6731353aa5f7055cb557981c261d",
+        "jacobian-followup/meridional-rank/three_piece_cover_plan.json": "ae30c9e01b70de6027574a4fdd4083b5eb6da39401c1fdb0f2211068a9d33ab3",
+        "jacobian-followup/meridional-rank/audit_three_piece_covers.py": "f660d6755d971ab5a18446d972010fe278c41761bc90058e5ec8753399615713",
+        "jacobian-followup/meridional-rank/three_piece_cover_results.json": "99670469712c25013ec9e22c1737d2714342a3938a9091905b5cfe6f9076ac46",
+        "jacobian-followup/meridional-rank/verify_three_piece_covers.py": "a94454954c5a238b83cf3e45c5026834630ea5bb5ed762286783aade36f9b8cd",
+        "jacobian-followup/meridional-rank/three_piece_cover_verification.json": "27158329f35b1a03302a1fa5af431cc3d6888386e2ba9a055ef5965cc73bb91b",
+        "jacobian-followup/meridional-rank/audit_three_piece_sources.py": "55c3d6ab5a20970e4100ed5a8a3d618012ed174583201469d00b9b21d6b97c30",
+        "jacobian-followup/meridional-rank/three_piece_source_audit.json": "dce7410ebebefcc8303d39118064cbcc117af50108e042a0dd47e47c44335dd5",
+        "jacobian-followup/meridional-rank/remaining_cover_structure_plan.json": "fc3d0ed698f83cf1fbe6e7820da6e28e034cd89dbd95ced945fcf3caf0497715",
+        "jacobian-followup/meridional-rank/audit_remaining_cover_structure.py": "885015493f826a726389b22d2db8cb0f9f92a0f59668c8ff7682b871d74af6f9",
+        "jacobian-followup/meridional-rank/remaining_cover_structure_results.json": "b3ef719785eb85dc798c09cb80c3c5a8c304c1df641c47de05dcc2d287d7ce7e",
+        "jacobian-followup/meridional-rank/output/pdf/THREE_PIECE_DOUBLE_COVERS_SHARP_FOUR.pdf": "0d3443e84d2cc9b0bd2644f29e40b644c060e2da523ee821dfcccf3620b30dbb",
+        "jacobian-followup/meridional-rank/FINAL_FIVE_DOUBLE_COVERS_SHARP_FOUR.tex": "24ad7b74f6df77bb9c67297b4fef9431487fc179e571c23d10b422a1d72b22af",
+        "jacobian-followup/meridional-rank/final_five_structure_plan.json": "b695e03110c0c5024effec70389792846b1c74d49a1f0acf1470a81ae73d9b50",
+        "jacobian-followup/meridional-rank/audit_final_five_structure.py": "ef193e3e66d8e5059302f376911559c95d588af3c0665a581a5bbf667a58e8ed",
+        "jacobian-followup/meridional-rank/final_five_structure_results.json": "2082c86b695df0b0ef291d3c783b91418e125ec41d0db072697c0297b9b61a5d",
+        "jacobian-followup/meridional-rank/final_five_peripheral_plan.json": "2b3401e23303a9e838fdca5ae83289adc4552ba1c22810bf76b7ca649f11a21c",
+        "jacobian-followup/meridional-rank/audit_final_five_peripherals.py": "4e9c2c4eb6485d949875777818c37ac1e21a74e04a9d9e543b437d0c29048751",
+        "jacobian-followup/meridional-rank/final_five_peripheral_results.json": "0e435c0abf4a7e15d32f95be71329a8081283d7f3a293983b43670ba9aaf778f",
+        "jacobian-followup/meridional-rank/verify_final_five_covers.py": "95c2a99ae34e7a971c77db4f302706849e3073f68b899970d700abcc768b9c40",
+        "jacobian-followup/meridional-rank/final_five_cover_verification.json": "e8e32a459fe1ac7f1b5faeb50ec21afa4ac7b03387d96dd3a11fc6f47e58532a",
+        "jacobian-followup/meridional-rank/audit_final_five_sources.py": "efd6366ecf6f98196483fbb1d48db1c07cb42286a62433d217ac225549835bf6",
+        "jacobian-followup/meridional-rank/final_five_source_audit.json": "dea10bb735deae27517eea502b19fe5f0c8621264791893e67af15c151092576",
+        "jacobian-followup/meridional-rank/output/pdf/FINAL_FIVE_DOUBLE_COVERS_SHARP_FOUR.pdf": "835f0244dc44b7de61d4ce4e3df6bd2ae6bcf75b83f6b79d93228c9d6ef76922",
+        "jacobian-followup/meridional-rank/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex": "3a973b743b54fcd47842ab3542eac6c97cc7d4213a2609343293cd47996abe47",
+        "jacobian-followup/meridional-rank/graph_cover_family_scope_plan.json": "105e0232f68e85b5a868f60914dbf45625a01d2f3e8f0ce33d5c983d7cef16a0",
+        "jacobian-followup/meridional-rank/audit_graph_cover_family_scope.py": "88667e5d47a23b3488d42b37797d19a4d7fcb86722e0ae414ad3af126d9ff4f8",
+        "jacobian-followup/meridional-rank/graph_cover_family_scope_verification.json": "3780d3b5efcb3dff54f682446c7c4df71c6f8a69097e875bc1edf07ea2409316",
+        "jacobian-followup/meridional-rank/audit_graph_cover_family_sources.py": "bd490c09ebabcea24d1ca60f1617d88813367f9b4eaf437977ad17008cf7e6da",
+        "jacobian-followup/meridional-rank/graph_cover_family_source_audit.json": "db210add237f50f26edf134027a1b32140f1fae77d76784890c56a2ed531e4a4",
+        "jacobian-followup/meridional-rank/sources/afw-3manifold-groups-final-author-2015.pdf": "31551e1a7cb6ce01026ba33e56806bfecf2c3e4d3afbec4dbf6c6bf0b7ef28ae",
+        "jacobian-followup/meridional-rank/sources/afw-3manifold-groups-author-v3.pdf": "c3c897d787bb9c07681439c862dd736da7711ea4cfe539b2b014fcae17be5feb",
+        "jacobian-followup/meridional-rank/sources/bjw-graph-cover-published-2018.pdf": "7db561c9b53a64beb222884719d8f2fab6280a8337879bd5c9fb848930868dc6",
+        "jacobian-followup/meridional-rank/output/pdf/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.pdf": "d3c95f6375a9135b9fe6a10d48892d140ec58c253c7f47924ea7dd6dc726fe5d"
+      },
+      "missing_inputs": []
+    },
+    {
       "id": "EC-DET1092-COMPLETE-SMOOTH-BISECTION-ATLAS-NONUNIVERSAL-20260909",
       "source": "elliptic-curves/notes/DET1092_NORM8_DEGENERATION_AND_SMOOTH_ATLAS_OBSTRUCTION_2026-09-09.md",
       "disposition": "written-proof",
@@ -7461,6 +7950,43 @@
       },
       "external_sources": [],
       "reviewed_on": "2026-09-15"
+    },
+    {
+      "id": "QFL3",
+      "source": "jacobian-followup/dixmier-formal-lifting/ARITHMETIC_COTANGENT_EXCLUSION.md",
+      "disposition": "written-proof",
+      "completed": "Arithmetic center compatibility of the complete generator class and closure under arbitrary finite composition give the stated conditional exclusion for Long.",
+      "remaining": "No missing finite witness. The arithmetic nonlifting input is a preprint theorem assumed here; arbitrary bounded formal lifts and non-compatible canonical changes remain outside scope.",
+      "source_review": "Read the complete proof, including the order-less-than-p centralizer argument, inverse-Jacobian restricted derivations, gradient p-power identity and common arithmetic coefficient model.",
+      "input_review": "Pure written implication; finite PBW samples would not certify arbitrary degrees or word lengths.",
+      "dependency_review": "Theorem4.2 is used as an explicit external assumption, not independently reproved. Bavula Theorem1.3 was checked in the author PDF and applies over reduced coefficient rings; good arithmetic residue fields satisfy that hypothesis.",
+      "evidence": [
+        {
+          "path": "jacobian-followup/dixmier-formal-lifting/ARITHMETIC_COTANGENT_EXCLUSION.md",
+          "quote": "This conclusion is conditional on the cited preprint theorem."
+        }
+      ],
+      "reviewed_claims": {
+        "QFL3": "7bbf9fffadbcc91675256bfac41c5f84424a7a9a779794b9cc09a211908d9fa3"
+      },
+      "reviewed_files": {
+        "jacobian-followup/dixmier-formal-lifting/ARITHMETIC_COTANGENT_EXCLUSION.md": "87021975badce3b14f98164d26574c0faad364da873eb691eb81cef38a4e7436"
+      },
+      "external_sources": [
+        {
+          "title": "Kanel-Belov and Fedorov, The generalized Dixmier conjecture and the two-dimensional Jacobian conjecture",
+          "url": "https://arxiv.org/html/2610.33919v1",
+          "version": "24 October2026 v1, Theorem4.2; inspected 14 November2026.",
+          "checked": "Excludes matrix Weyl endomorphisms with Long's prescribed Frobenius center maps on a Zariski-dense arithmetic set."
+        },
+        {
+          "title": "Bavula, The group of automorphisms of the first Weyl algebra in prime characteristic and the restriction map",
+          "url": "https://eprints.whiterose.ac.uk/id/eprint/8651/3/Bavula_automorphisms.pdf",
+          "version": "Author version of Glasgow Mathematical Journal51(2009), Theorem1.3; inspected 14 November2026.",
+          "checked": "Over a reduced F_p-algebra, (partial+g)^p=partial^p+g^p+partial^(p-1)g. For an exact polynomial derivative the last term is zero."
+        }
+      ],
+      "reviewed_on": "2026-11-14"
     }
   ]
 }

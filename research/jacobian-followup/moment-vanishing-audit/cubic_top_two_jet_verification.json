@@ -1,0 +1,35 @@
+{
+  "claim": "SIC2B33TOPTWOGATE20261117",
+  "status": "PASS_ALGEBRAIC_CONTROLS",
+  "checker_sha256": "377d41fb45ef93462c6af002ba469a7befcf78322041cc6689800714adbcf72e",
+  "model_sha256": "c90069825fbb1d912bd7836e0bf3669b9c0790ae4ff9d9918b119200d9132234",
+  "proof_sha256": "71150c0c43157592caa474ae014f91ed30f8df757ad1914240913ade006a4f6e",
+  "pole_units_sha256": "50e56a65e69527fc20411b1e06e60224ff1aa0d6b89f03a9a75e68f1a02c1bc8",
+  "closed_safe_container_sha256": "b2090ca23440c5cb1c730a892d2985f79dba3bee752a4af6a61e21f934af93e1",
+  "boundary_charts": "Explicit conic chart, quadric identity, volume Jacobian, and top-two jets; reciprocal polynomial checks infinity.",
+  "pole_unit_multiplier_term_counts": {
+    "minus_pole": [
+      2,
+      2,
+      1
+    ],
+    "plus_pole": [
+      2,
+      2,
+      1
+    ]
+  },
+  "first3_solve": {
+    "a*c": "-16/105",
+    "b^2": "-31/105"
+  },
+  "new_Singular_or_msolve_oracle": false,
+  "analytic_dependency": "GPROPERHOLPERIOD20261115: internal written holomorphic-period theorem; not machine certified here.",
+  "assurance": "The checker verifies algebra only. Smooth proper graph, finite critical set, volume extension and the period application are internal written geometric/analytic arguments. No independent specialist/external/formal verification.",
+  "finite_prefix": "Six suffices on the two pole patterns. No unconditional full axial C0 consecutive-prefix bound asserted.",
+  "mixed_axial_C0_all_order_pure_case": "EXCLUDED",
+  "mixed_axial_C0_unconditional_first8_ordinary_unit": "UNCOMPUTED; failed large computations retained",
+  "full_Image33": "OPEN",
+  "three_global_radical_memberships": "ALL OPEN",
+  "elapsed_seconds": 0.287
+}

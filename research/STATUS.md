@@ -4,11 +4,11 @@
 
 [MATH_STATUS.json](MATH_STATUS.json) is the sole mathematical-status authority. This is a compact navigation view. Read a claim's full scope before using it; a proved bounded experiment does not become an unrestricted theorem.
 
-**711 claims:** 607 proved, 78 partial, 3 open, 5 parked, 16 archived, 2 falsified.
+**738 claims:** 633 proved, 78 partial, 4 open, 5 parked, 16 archived, 2 falsified.
 
 [Complete catalogue](index/README.md) · [Algorithmic lessons](knowledge/ALGORITHMS.md) · [Scoped failed routes](knowledge/FAILED_ROUTES.md) · [Replay guide](REPRODUCE.md)
 
-The active programme is elliptic curves and supporting K3 constructions. [Other programmes](archive/non-elliptic/README.md) retain 1075 claims in the same authority with `programme_status: archived`; their mathematical states are unchanged.
+The active programme is elliptic curves and supporting K3 constructions. [Other programmes](archive/non-elliptic/README.md) retain 2731 claims in the same authority with `programme_status: archived`; their mathematical states are unchanged.
 
 From the repository root, read full scope, proof type, assurance, checkers, software locks, dependencies and replacements without executing anything:
 
@@ -22,6 +22,7 @@ The `artifact_hash` field pins checker source, not its generated output. Indepen
 
 | ID | State | Result / canonical source |
 |---|---|---|
+| `OP-MRC` | open | [Prove or disprove the Meridional Rank Conjecture](jacobian-followup/meridional-rank/LITERATURE.tex) |
 | `OP-EC-NEXT` | open | [Select productive candidates toward a certified rank32 subgroup](elliptic-curves/README.md) |
 | `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17` | open | [Classify arithmetic realization of different-NS geometric MW17 lattices](elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
 | `OP-K3-CORRELATED-QUADRATIC-GAINS-20260912` | open | [Construct two independent new sections on one quadratic cover with infinitely many rational specializations](elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
@@ -47,6 +48,7 @@ The `artifact_hash` field pins checker source, not its generated output. Indepen
 
 | Area | Registered claims |
 |---|---:|
+| [Keller core, cancellation and arithmetic](index/core.md) | 27 |
 | [Elliptic curves and rank jumps](index/elliptic-curves.md) | 375 |
 | [K3 constructions and lattice algorithms](index/elkies-k3.md) | 336 |
 

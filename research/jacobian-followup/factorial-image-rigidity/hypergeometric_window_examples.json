@@ -1,0 +1,1102 @@
+[
+  {
+    "law": "gamma",
+    "shapes": [
+      "1"
+    ],
+    "exponents": [
+      6
+    ],
+    "monomial_total_degree": 6,
+    "marker": "1",
+    "homogenization_degree": null,
+    "literal_marker_polynomial": "1",
+    "Q_coefficients": [
+      "720",
+      "10584",
+      "58464",
+      "158760",
+      "226800",
+      "163296",
+      "46656"
+    ],
+    "S_coefficients": [
+      "1"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 7,
+    "marker_degree": 0,
+    "start": 4,
+    "terminal": 10,
+    "theta_operator_P": [
+      "0",
+      "1"
+    ],
+    "theta_operator_B": [
+      "720*N",
+      "10584*N - 720",
+      "58464*N - 10584",
+      "158760*N - 58464",
+      "226800*N - 158760",
+      "163296*N - 226800",
+      "46656*N - 163296",
+      "-46656"
+    ],
+    "constant_phase_marker_mass": "1",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0"
+    ]
+  },
+  {
+    "law": "gamma",
+    "shapes": [
+      "13/2"
+    ],
+    "exponents": [
+      6
+    ],
+    "monomial_total_degree": 6,
+    "marker": "y0**2 - 195/4",
+    "homogenization_degree": null,
+    "literal_marker_polynomial": "36*_t**2 + 84*_t",
+    "Q_coefficients": [
+      "30421755/64",
+      "7897689/4",
+      "13561731/4",
+      "3081240",
+      "1563300",
+      "419904",
+      "46656"
+    ],
+    "S_coefficients": [
+      "1"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 9,
+    "marker_degree": 2,
+    "start": 4,
+    "terminal": 12,
+    "theta_operator_P": [
+      "0",
+      "-48",
+      "12",
+      "36"
+    ],
+    "theta_operator_B": [
+      "456326325*N/8",
+      "4977339165*N/16 - 456326325/8",
+      "11711584611*N/16 - 4977339165/16",
+      "969735510*N - 11711584611/16",
+      "790325019*N - 969735510",
+      "405187920*N - 790325019",
+      "127382544*N - 405187920",
+      "22394880*N - 127382544",
+      "1679616*N - 22394880",
+      "-1679616"
+    ],
+    "constant_phase_marker_mass": "0",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0"
+    ]
+  },
+  {
+    "law": "gamma",
+    "shapes": [
+      "1/2",
+      "3/2",
+      "2/3"
+    ],
+    "exponents": [
+      2,
+      1,
+      0
+    ],
+    "monomial_total_degree": 3,
+    "marker": "y0**2 + I*y1 - 3*y2/2 + 1",
+    "homogenization_degree": null,
+    "literal_marker_polynomial": "4*_t**2 + _t*(4 + I) + 3/4 + 3*I/2",
+    "Q_coefficients": [
+      "9/8",
+      "27/4",
+      "10",
+      "4"
+    ],
+    "S_coefficients": [
+      "1"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 6,
+    "marker_degree": 2,
+    "start": 4,
+    "terminal": 9,
+    "theta_operator_P": [
+      "0",
+      "3/4 + I/2",
+      "-4 + I",
+      "4"
+    ],
+    "theta_operator_B": [
+      "N*(315/32 + 45*I/16)",
+      "N*(1161/16 + 18*I) - 315/32 - 45*I/16",
+      "N*(173 + 127*I/4) - 1161/16 - 18*I",
+      "N*(182 + 20*I) - 173 - 127*I/4",
+      "N*(88 + 4*I) - 182 - 20*I",
+      "16*N - 88 - 4*I",
+      "-16"
+    ],
+    "constant_phase_marker_mass": "3/4 + 3*I/2",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0"
+    ]
+  },
+  {
+    "law": "gamma",
+    "shapes": [
+      "1",
+      "1"
+    ],
+    "exponents": [
+      1,
+      1
+    ],
+    "monomial_total_degree": 2,
+    "marker": "y0 - y1",
+    "homogenization_degree": null,
+    "literal_marker_polynomial": "0",
+    "Q_coefficients": [
+      "1",
+      "2",
+      "1"
+    ],
+    "S_coefficients": [
+      "1"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "marked_zero_sequence_identity",
+    "includes_index_zero": true,
+    "window_length": null,
+    "marker_degree": null
+  },
+  {
+    "law": "gamma",
+    "shapes": [
+      "1"
+    ],
+    "exponents": [
+      1
+    ],
+    "monomial_total_degree": 1,
+    "marker": "y0**3 - 9*y0**2 + 18*y0 - 6",
+    "homogenization_degree": null,
+    "literal_marker_polynomial": "_t**3 - 3*_t**2 + 2*_t",
+    "Q_coefficients": [
+      "1",
+      "1"
+    ],
+    "S_coefficients": [
+      "1"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 5,
+    "marker_degree": 3,
+    "start": 4,
+    "terminal": 8,
+    "theta_operator_P": [
+      "0",
+      "-6",
+      "11",
+      "-6",
+      "1"
+    ],
+    "theta_operator_B": [
+      "0",
+      "-N",
+      "1 - N",
+      "N + 1",
+      "N - 1",
+      "-1"
+    ],
+    "constant_phase_marker_mass": "0",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0"
+    ]
+  },
+  {
+    "law": "gamma",
+    "shapes": [
+      "1/2"
+    ],
+    "exponents": [
+      2
+    ],
+    "monomial_total_degree": 2,
+    "marker": "sqrt(2)*y0 + sqrt(3)*I",
+    "homogenization_degree": null,
+    "literal_marker_polynomial": "2*sqrt(2)*_t + sqrt(2)/2 + sqrt(3)*I",
+    "Q_coefficients": [
+      "3/4",
+      "4",
+      "4"
+    ],
+    "S_coefficients": [
+      "1"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 4,
+    "marker_degree": 1,
+    "start": 4,
+    "terminal": 7,
+    "theta_operator_P": [
+      "0",
+      "-3*sqrt(2)/2 + sqrt(3)*I",
+      "2*sqrt(2)"
+    ],
+    "theta_operator_B": [
+      "15*sqrt(2)*N/8 + 3*sqrt(3)*I*N/4",
+      "23*sqrt(2)*N/2 + 4*sqrt(3)*I*N - 15*sqrt(2)/8 - 3*sqrt(3)*I/4",
+      "18*sqrt(2)*N + 4*sqrt(3)*I*N - 23*sqrt(2)/2 - 4*sqrt(3)*I",
+      "8*sqrt(2)*N - 18*sqrt(2) - 4*sqrt(3)*I",
+      "-8*sqrt(2)"
+    ],
+    "constant_phase_marker_mass": "sqrt(2)/2 + sqrt(3)*I",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0"
+    ]
+  },
+  {
+    "law": "dirichlet",
+    "shapes": [
+      "1/2",
+      "1/3"
+    ],
+    "exponents": [
+      6,
+      0
+    ],
+    "monomial_total_degree": 6,
+    "marker": "1",
+    "homogenization_degree": 0,
+    "literal_marker_polynomial": "1",
+    "Q_coefficients": [
+      "10395/64",
+      "14643/4",
+      "109251/4",
+      "93960",
+      "163620",
+      "139968",
+      "46656"
+    ],
+    "S_coefficients": [
+      "21827575/46656",
+      "414965/54",
+      "554993/12",
+      "134800",
+      "204660",
+      "155520",
+      "46656"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 7,
+    "marker_degree": 0,
+    "start": 4,
+    "terminal": 10,
+    "theta_operator_P": [
+      "0",
+      "1339975/46656",
+      "-37538/27",
+      "173393/12",
+      "-61760",
+      "126900",
+      "-124416",
+      "46656"
+    ],
+    "theta_operator_B": [
+      "10395*N/64",
+      "14643*N/4 - 10395/64",
+      "109251*N/4 - 14643/4",
+      "93960*N - 109251/4",
+      "163620*N - 93960",
+      "139968*N - 163620",
+      "46656*N - 139968",
+      "-46656"
+    ],
+    "constant_phase_marker_mass": "1",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0",
+      "-1"
+    ],
+    "extra_singular_indicial_exponent": "N + 1/3",
+    "extra_singular_beta": "1/3",
+    "extra_singular_beta_positive": true,
+    "extra_singular_exponent_exceeds_polynomial_degree": true
+  },
+  {
+    "law": "dirichlet",
+    "shapes": [
+      "1",
+      "3/2",
+      "2/3"
+    ],
+    "exponents": [
+      2,
+      1,
+      0
+    ],
+    "monomial_total_degree": 3,
+    "marker": "y0 - I*y1*y2 + 1",
+    "homogenization_degree": 2,
+    "literal_marker_polynomial": "15*_t**2 + _t*(100/3 - 2*I/3) + 625/36 - I",
+    "Q_coefficients": [
+      "3",
+      "11",
+      "12",
+      "4"
+    ],
+    "S_coefficients": [
+      "49321/216",
+      "1357/4",
+      "333/2",
+      "27"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 6,
+    "marker_degree": 2,
+    "start": 4,
+    "terminal": 9,
+    "theta_operator_P": [
+      "0",
+      "-216125/7776 - 6175*I/648",
+      "13565/1296 - 7799*I/162",
+      "22915/36 - 260*I/3",
+      "3135/2 - 66*I",
+      "2745/2 - 18*I",
+      "405"
+    ],
+    "theta_operator_B": [
+      "N*(2365/12 - 5*I)",
+      "N*(32855/36 - 61*I/3) - 2365/12 + 5*I",
+      "N*(1530 - 82*I/3) - 32855/36 + 61*I/3",
+      "N*(10690/9 - 44*I/3) - 1530 + 82*I/3",
+      "N*(1300/3 - 8*I/3) - 10690/9 + 44*I/3",
+      "60*N - 1300/3 + 8*I/3",
+      "-60"
+    ],
+    "constant_phase_marker_mass": "25/19 - 36*I/475",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0",
+      "-27/4"
+    ],
+    "extra_singular_indicial_exponent": "N + 7/6",
+    "extra_singular_beta": "7/6",
+    "extra_singular_beta_positive": true,
+    "extra_singular_exponent_exceeds_polynomial_degree": true
+  },
+  {
+    "law": "dirichlet",
+    "shapes": [
+      "1",
+      "1"
+    ],
+    "exponents": [
+      1,
+      1
+    ],
+    "monomial_total_degree": 2,
+    "marker": "y0 - y1",
+    "homogenization_degree": 1,
+    "literal_marker_polynomial": "0",
+    "Q_coefficients": [
+      "1",
+      "2",
+      "1"
+    ],
+    "S_coefficients": [
+      "12",
+      "14",
+      "4"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "marked_zero_sequence_identity",
+    "includes_index_zero": true,
+    "window_length": null,
+    "marker_degree": null
+  },
+  {
+    "law": "dirichlet",
+    "shapes": [
+      "1",
+      "1"
+    ],
+    "exponents": [
+      2,
+      0
+    ],
+    "monomial_total_degree": 2,
+    "marker": "y0 + y1 - 1",
+    "homogenization_degree": 1,
+    "literal_marker_polynomial": "0",
+    "Q_coefficients": [
+      "2",
+      "6",
+      "4"
+    ],
+    "S_coefficients": [
+      "12",
+      "14",
+      "4"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "marked_zero_sequence_identity",
+    "includes_index_zero": true,
+    "window_length": null,
+    "marker_degree": null
+  },
+  {
+    "law": "dirichlet",
+    "shapes": [
+      "1",
+      "1"
+    ],
+    "exponents": [
+      1,
+      1
+    ],
+    "monomial_total_degree": 2,
+    "marker": "(y0 - y1)**2",
+    "homogenization_degree": 2,
+    "literal_marker_polynomial": "2*_t + 2",
+    "Q_coefficients": [
+      "1",
+      "2",
+      "1"
+    ],
+    "S_coefficients": [
+      "20",
+      "18",
+      "4"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 4,
+    "marker_degree": 1,
+    "start": 4,
+    "terminal": 7,
+    "theta_operator_P": [
+      "0",
+      "0",
+      "12",
+      "20",
+      "8"
+    ],
+    "theta_operator_B": [
+      "4*N",
+      "10*N - 4",
+      "8*N - 10",
+      "2*N - 8",
+      "-2"
+    ],
+    "constant_phase_marker_mass": "1/3",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0",
+      "-4"
+    ],
+    "extra_singular_indicial_exponent": "N + 3/2",
+    "extra_singular_beta": "3/2",
+    "extra_singular_beta_positive": true,
+    "extra_singular_exponent_exceeds_polynomial_degree": true
+  },
+  {
+    "law": "dirichlet",
+    "shapes": [
+      "1",
+      "1"
+    ],
+    "exponents": [
+      2,
+      0
+    ],
+    "monomial_total_degree": 2,
+    "marker": "y0 - 1/2",
+    "homogenization_degree": 1,
+    "literal_marker_polynomial": "_t",
+    "Q_coefficients": [
+      "2",
+      "6",
+      "4"
+    ],
+    "S_coefficients": [
+      "12",
+      "14",
+      "4"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 4,
+    "marker_degree": 1,
+    "start": 4,
+    "terminal": 7,
+    "theta_operator_P": [
+      "0",
+      "-2",
+      "-4",
+      "2",
+      "4"
+    ],
+    "theta_operator_B": [
+      "2*N",
+      "8*N - 2",
+      "10*N - 8",
+      "4*N - 10",
+      "-4"
+    ],
+    "constant_phase_marker_mass": "0",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0",
+      "-1"
+    ],
+    "extra_singular_indicial_exponent": "N + 1",
+    "extra_singular_beta": "1",
+    "extra_singular_beta_positive": true,
+    "extra_singular_exponent_exceeds_polynomial_degree": true
+  },
+  {
+    "law": "dirichlet",
+    "shapes": [
+      "1/2",
+      "3/4",
+      "2"
+    ],
+    "exponents": [
+      1,
+      1,
+      1
+    ],
+    "monomial_total_degree": 3,
+    "marker": "-2*y0 + sqrt(2)*y1**2 + 1",
+    "homogenization_degree": 2,
+    "literal_marker_polynomial": "_t**2*(sqrt(2) + 3) + _t*(5*sqrt(2)/2 + 11) + 21*sqrt(2)/16 + 153/16",
+    "Q_coefficients": [
+      "3/4",
+      "23/8",
+      "13/4",
+      "1"
+    ],
+    "S_coefficients": [
+      "15225/64",
+      "5577/16",
+      "675/4",
+      "27"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 6,
+    "marker_degree": 2,
+    "start": 4,
+    "terminal": 9,
+    "theta_operator_P": [
+      "0",
+      "49725/1024 - 5967*sqrt(2)/1024",
+      "76605/256 - 441*sqrt(2)/256",
+      "1941*sqrt(2)/32 + 22101/32",
+      "1047*sqrt(2)/8 + 6057/8",
+      "405*sqrt(2)/4 + 1593/4",
+      "27*sqrt(2) + 81"
+    ],
+    "theta_operator_B": [
+      "231*sqrt(2)*N/64 + 1131*N/64",
+      "2203*sqrt(2)*N/128 + 10303*N/128 - 1131/64 - 231*sqrt(2)/64",
+      "1877*sqrt(2)*N/64 + 8173*N/64 - 10303/128 - 2203*sqrt(2)/128",
+      "357*sqrt(2)*N/16 + 1399*N/16 - 8173/64 - 1877*sqrt(2)/64",
+      "31*sqrt(2)*N/4 + 107*N/4 - 1399/16 - 357*sqrt(2)/16",
+      "sqrt(2)*N + 3*N - 107/4 - 31*sqrt(2)/4",
+      "-3 - sqrt(2)"
+    ],
+    "constant_phase_marker_mass": "21*sqrt(2)/221 + 9/13",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0",
+      "-27"
+    ],
+    "extra_singular_indicial_exponent": "N + 1",
+    "extra_singular_beta": "1",
+    "extra_singular_beta_positive": true,
+    "extra_singular_exponent_exceeds_polynomial_degree": true
+  },
+  {
+    "law": "dirichlet",
+    "shapes": [
+      "1/2",
+      "3/2"
+    ],
+    "exponents": [
+      1,
+      0
+    ],
+    "monomial_total_degree": 1,
+    "marker": "y0 + y1",
+    "homogenization_degree": 1,
+    "literal_marker_polynomial": "_t + 2",
+    "Q_coefficients": [
+      "1/2",
+      "1"
+    ],
+    "S_coefficients": [
+      "3",
+      "1"
+    ],
+    "executable_shape_domain": "positive rational",
+    "theorem_shape_domain": "positive real",
+    "phase_requirement": "a+b*Z with b!=0; all complex a,b",
+    "all_starting_indices": true,
+    "two_term_sfc_claimed": false,
+    "counterexample_claimed": false,
+    "status": "uniform_moment_window_certified",
+    "window_length": 3,
+    "marker_degree": 1,
+    "start": 4,
+    "terminal": 6,
+    "theta_operator_P": [
+      "0",
+      "2",
+      "3",
+      "1"
+    ],
+    "theta_operator_B": [
+      "3*N/2",
+      "7*N/2 - 3/2",
+      "N - 7/2",
+      "-1"
+    ],
+    "constant_phase_marker_mass": "1",
+    "constant_phase_rule": "b=0: moments equal a^n times the marker mass",
+    "singular_parameters": [
+      "0",
+      "-1"
+    ],
+    "extra_singular_indicial_exponent": "N + 3/2",
+    "extra_singular_beta": "3/2",
+    "extra_singular_beta_positive": true,
+    "extra_singular_exponent_exceeds_polynomial_degree": true
+  },
+  {
+    "status": "ordinary_window_ideal_bound_certified",
+    "start": 2,
+    "terminal": 3,
+    "selected_integer": 0,
+    "selection_integer_upper_bound": 0,
+    "regular_subideal_degrees": [
+      2,
+      3
+    ],
+    "dehomogenized_first": "3*x**2/4 + x + 1",
+    "dehomogenized_second": "15*x**3/8 + 9*x**2/4 + 3*x/2 + 1",
+    "gcd_is_one": true,
+    "projective_infinity_excluded_by_first": true,
+    "regular_subideal_length": 6,
+    "window_ideal_length_upper_bound": 6,
+    "window_nilpotence_exponent_upper_bound": 4,
+    "all_Q_algebras": true,
+    "ordinary_not_radical": true,
+    "window_ideal_is_complete_intersection_claimed": false,
+    "sharpness_claimed": false
+  },
+  {
+    "status": "ordinary_window_ideal_bound_certified",
+    "start": 1,
+    "terminal": 7,
+    "selected_integer": 0,
+    "selection_integer_upper_bound": 5,
+    "regular_subideal_degrees": [
+      1,
+      7
+    ],
+    "dehomogenized_first": "10395*x/64 + 1",
+    "dehomogenized_second": "316234143225*x**2/4096 + 10395*x/32 + 1",
+    "gcd_is_one": true,
+    "projective_infinity_excluded_by_first": true,
+    "regular_subideal_length": 7,
+    "window_ideal_length_upper_bound": 7,
+    "window_nilpotence_exponent_upper_bound": 7,
+    "all_Q_algebras": true,
+    "ordinary_not_radical": true,
+    "window_ideal_is_complete_intersection_claimed": false,
+    "sharpness_claimed": false
+  },
+  {
+    "status": "ordinary_window_ideal_bound_certified",
+    "start": 2,
+    "terminal": 5,
+    "selected_integer": 0,
+    "selection_integer_upper_bound": 4,
+    "regular_subideal_degrees": [
+      2,
+      5
+    ],
+    "dehomogenized_first": "315*x**2/8 + 3*x + 1",
+    "dehomogenized_second": "31185*x**3/8 + 945*x**2/8 + 9*x/2 + 1",
+    "gcd_is_one": true,
+    "projective_infinity_excluded_by_first": true,
+    "regular_subideal_length": 10,
+    "window_ideal_length_upper_bound": 10,
+    "window_nilpotence_exponent_upper_bound": 6,
+    "all_Q_algebras": true,
+    "ordinary_not_radical": true,
+    "window_ideal_is_complete_intersection_claimed": false,
+    "sharpness_claimed": false
+  },
+  {
+    "status": "ordinary_window_ideal_bound_certified",
+    "start": 2,
+    "terminal": 5,
+    "selected_integer": 0,
+    "selection_integer_upper_bound": 4,
+    "regular_subideal_degrees": [
+      2,
+      5
+    ],
+    "dehomogenized_first": "x**2/105 + x/6 + 1",
+    "dehomogenized_second": "x**3/840 + x**2/35 + x/4 + 1",
+    "gcd_is_one": true,
+    "projective_infinity_excluded_by_first": true,
+    "regular_subideal_length": 10,
+    "window_ideal_length_upper_bound": 10,
+    "window_nilpotence_exponent_upper_bound": 6,
+    "all_Q_algebras": true,
+    "ordinary_not_radical": true,
+    "window_ideal_is_complete_intersection_claimed": false,
+    "sharpness_claimed": false
+  },
+  {
+    "status": "expanded_block_sum_sfc_certified",
+    "block_sizes": [
+      2
+    ],
+    "exponents": [
+      6
+    ],
+    "extra_independent_linear_terms": 0,
+    "actual_expanded_support_when_a_b_nonzero": 8,
+    "proved_window_length": 7,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "expanded_block_sum_sfc_certified",
+    "block_sizes": [
+      2
+    ],
+    "exponents": [
+      6
+    ],
+    "extra_independent_linear_terms": 2,
+    "actual_expanded_support_when_a_b_nonzero": 10,
+    "proved_window_length": 9,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "support_budget_insufficient_no_decision",
+    "block_sizes": [
+      1
+    ],
+    "exponents": [
+      6
+    ],
+    "extra_independent_linear_terms": 0,
+    "actual_expanded_support_when_a_b_nonzero": 2,
+    "proved_window_length": 7,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "support_budget_insufficient_no_decision",
+    "block_sizes": [
+      1
+    ],
+    "exponents": [
+      6
+    ],
+    "extra_independent_linear_terms": 2,
+    "actual_expanded_support_when_a_b_nonzero": 4,
+    "proved_window_length": 9,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "expanded_block_sum_sfc_certified",
+    "block_sizes": [
+      2,
+      2
+    ],
+    "exponents": [
+      2,
+      3
+    ],
+    "extra_independent_linear_terms": 0,
+    "actual_expanded_support_when_a_b_nonzero": 13,
+    "proved_window_length": 6,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "expanded_block_sum_sfc_certified",
+    "block_sizes": [
+      2,
+      2
+    ],
+    "exponents": [
+      2,
+      3
+    ],
+    "extra_independent_linear_terms": 2,
+    "actual_expanded_support_when_a_b_nonzero": 15,
+    "proved_window_length": 8,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "support_budget_insufficient_no_decision",
+    "block_sizes": [
+      2,
+      1
+    ],
+    "exponents": [
+      1,
+      6
+    ],
+    "extra_independent_linear_terms": 0,
+    "actual_expanded_support_when_a_b_nonzero": 3,
+    "proved_window_length": 8,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "support_budget_insufficient_no_decision",
+    "block_sizes": [
+      2,
+      1
+    ],
+    "exponents": [
+      1,
+      6
+    ],
+    "extra_independent_linear_terms": 2,
+    "actual_expanded_support_when_a_b_nonzero": 5,
+    "proved_window_length": 10,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "expanded_block_sum_sfc_certified",
+    "block_sizes": [
+      3,
+      2
+    ],
+    "exponents": [
+      4,
+      2
+    ],
+    "extra_independent_linear_terms": 0,
+    "actual_expanded_support_when_a_b_nonzero": 46,
+    "proved_window_length": 7,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "expanded_block_sum_sfc_certified",
+    "block_sizes": [
+      3,
+      2
+    ],
+    "exponents": [
+      4,
+      2
+    ],
+    "extra_independent_linear_terms": 2,
+    "actual_expanded_support_when_a_b_nonzero": 48,
+    "proved_window_length": 9,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": false,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "expanded_block_sum_sfc_certified",
+    "block_sizes": [
+      1
+    ],
+    "exponents": [
+      1
+    ],
+    "extra_independent_linear_terms": 0,
+    "actual_expanded_support_when_a_b_nonzero": 2,
+    "proved_window_length": 2,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": true,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  },
+  {
+    "status": "expanded_block_sum_sfc_certified",
+    "block_sizes": [
+      1
+    ],
+    "exponents": [
+      1
+    ],
+    "extra_independent_linear_terms": 2,
+    "actual_expanded_support_when_a_b_nonzero": 4,
+    "proved_window_length": 4,
+    "all_starting_indices": true,
+    "applies_to_factorial_moments": true,
+    "base_Gaussian_moment_analogue": true,
+    "Gaussian_linear_adjunction_claimed": false,
+    "full_two_term_sfc_claimed": true,
+    "powers_of_entire_phase_claimed": false,
+    "counterexample_claimed": false,
+    "degenerate_a_or_b_zero": "base moments nonzero directly; factorial linear adjunctions still apply"
+  }
+]

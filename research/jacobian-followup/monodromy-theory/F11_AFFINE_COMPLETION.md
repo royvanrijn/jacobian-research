@@ -269,16 +269,159 @@ rational parameter in (6) has numerator degree eleven and denominator
 degree ten; it passes the square-denominator and fifth-multiplicity
 gates. No degree-minimality assertion is made.
 
-The next affine-completion task is now specific: realize the extension
-in (6)--(7) on ordinary affine source and target spaces with full
-constant Jacobian, or prove that extension impossible. An approach
-retaining a,c as literal independent source coordinates and using one
-polynomial remaining output cannot work: its Jacobian is the derivative
-of that output in r, so constancy forces degree one in r. Source
-coordinates must change essentially, or additional genuinely coupled
-coordinates must be used. All degree, group and affine-space
-conditions still have to be proved. Passing the necessary divisor
-tests in (6) does not supply those proofs.
+This model passes the local tests but is excluded by the stronger
+field obstruction below. It is retained as an explicit control:
+rational source and target fields, exact prescribed group, square
+denominator and admissible affine-divisor inertia are still insufficient.
+
+## 6. A global obstruction to stabilization of a curve cover
+
+**KMFI8, general form.** Let k(r)/k(t) be a finite rational curve
+extension of degree n. Suppose one fiber of the corresponding map
+P^1_r -> P^1_t has ramification indices e_1,...,e_s, and put
+
+\[
+ e=\gcd(e_1,\ldots,e_s)>1,\qquad d=n/e .
+\]
+
+If the extension, after adjoining the same independent variables on
+both sides, admits any polynomial Keller model on ordinary affine
+space, then necessarily
+
+\[
+ \gcd(e_i,d)\ \text{divides}\ e_i/e
+ \quad\text{for every }i.
+ \tag{9}
+\]
+
+Equivalently, every such fiber must satisfy
+
+\[
+ \boxed{\gcd(e,n/e)=1.}
+ \tag{10}
+\]
+
+This includes uniform fibers e^s. To see the equivalence, put
+f_i=e_i/e, so gcd(f_1,...,f_s)=1. If gcd(e,d)=1, then
+gcd(e_i,d)=gcd(f_i,d) divides f_i. If a prime divides both e and d,
+some f_i is not divisible by it, contradicting (9).
+
+This is an obstruction to the embedded field pair, preserved under
+arbitrary birational identifications of source and target and further
+identity stabilization. It does not assume that the offending fiber
+stays on an affine target divisor.
+
+To prove it, move the chosen target value to infinity, and choose a
+source coordinate r whose infinity is outside the selected fiber.
+Write the rational cover in reduced degree-n homogeneous form, with
+
+\[
+ t=N(r)/Q(r),\quad Q(r)=cR(r)^e,\quad
+ \deg R=d,\quad
+ \operatorname{ord}_{r_i}R=e_i/e .
+\]
+
+The original source infinity can be chosen outside finitely many points,
+so this coordinate choice is always possible over k. Suppose a Keller
+model exists for
+
+\[
+ K=k(t,u_1,\ldots,u_j)\subset L=k(r,u_1,\ldots,u_j).
+\]
+
+In its actual polynomial coordinates, write t=P(y)/Q_t(y) reduced and
+r=a(x)/b(x) reduced. Exactly the reduced-fraction and divisor-pullback
+argument in Section 4 gives
+
+\[
+ Q_t(F)=\mu R_h(a,b)^e.
+\]
+
+KMFI1's power-injectivity implies Q_t is an e-th power up to a scalar.
+Taking e-th roots over algebraically closed k, some S in K* satisfies
+
+\[
+ S=\nu R_h(a,b)=\nu b^dR(r),\qquad
+ \boxed{S/R(r)\in L^{*d}.}
+ \tag{11}
+\]
+
+Now use the valuation v_i of L at r=r_i, keeping every u_l
+independent and of valuation zero. Its restriction to K has value
+group e_i Z: a rational function of t and the independent u_l has
+valuation a multiple of e_i, since t has pole order e_i.
+Applying v_i to (11) therefore yields integers m,h with
+
+\[
+ e_i m-dh=e_i/e .
+\]
+
+This congruence forces (9). The valuation may lie on the boundary of
+the putative target affine model; it remains a valuation of the same
+field pair and cannot be discarded by a birational rechart.
+This proves the obstruction.
+
+For F11, the involution fiber is 2^6, so n=12,e=2,d=6. Equation (11)
+would give S/R(r) a sixth power, while v_i(S) is even and v_i(R)=1.
+An odd integer cannot be divisible by six. Thus **no stabilization of
+the F11 curve-cover field pair has an absolute Keller realization in
+any birational affine source and target coordinates**.
+
+In particular, the locally admissible extension (6)--(7) is impossible
+as a Keller extension, even after further identity stabilization.
+Its source field is k(r,a,c) and target field k(t,a,c), exactly the
+pair used in the argument. Locally killing the pole inertia on the
+affine target did not change the obstructing valuation at the old
+curve boundary. This is the additional obstruction missing from the
+local inertia sieve.
+
+## 7. Every natural degree-twelve curve input is excluded
+
+The obstruction is not specific to the displayed F11 formula.
+Every nonidentity element in the natural PSL2(11) action has index
+6,8 or 10: order two gives 6, orders three and five give 8,
+and orders six and eleven give 10. A connected genus-zero cover of
+degree twelve satisfies
+
+\[
+ \sum_b\operatorname{ind}(\sigma_b)=22 .
+\]
+
+There can be at most three branch values, since each index is at
+least six. The only index multisets are (6,6,10) and (6,8,8), so
+there is always an involution branch of type 2^6. Equation (10)
+excludes stabilization of every such cover. In fact the first
+multiset has two involutions generating a dihedral group, and the
+(2,3,3) and (2,3,5) triangle quotients have orders at most 12 and 60.
+Thus full PSL2(11) leaves the familiar (2,5,5) passport. The checker
+independently exhausts the finite matrix-group order-three pair
+cases; passport agreement alone is never used to identify a group.
+
+A positive-genus curve input cannot help by ordinary stabilization:
+a rational function field dominating that curve would give a
+dominant rational map from affine space to the curve. Restrict to
+a general line where the map is nonconstant, extend to P^1 and apply
+Riemann--Hurwitz; the curve must have genus zero.
+
+Consequently **no curve cover at all in the natural degree-twelve
+PSL2(11) action can be converted into an absolute Keller map merely
+by independent affine stabilization and birational source/target
+recharts**. This closes that whole curve-first route, not just one
+ansatz or one chosen target boundary.
+
+The action-level question remains open. A realization could arise
+from a higher-dimensional field extension not isomorphic to any
+such stabilized curve pair. This proof does not rule that out.
+The exceptional degree-eleven actions also survive this particular
+test: their totally ramified eleven-cycle fiber has d=1, and their
+other fibers contain unramified sheets, so no common-index
+congruence above fails.
+
+The next action is therefore to work with a genuinely different
+higher-dimensional natural-action cover, or to return to a
+degree-eleven action and its unresolved polynomial-completion
+equations. Repeating stabilization or birational completion of the
+natural F11 field cannot solve the absolute problem.
 
 ## Reproduction and assurance
 
@@ -290,7 +433,9 @@ The checker expands the two- and three-variable Jacobians over the exact
 cyclotomic coefficient field, verifies the target-divisor identity,
 the binary homogenization and boundary coprimality, tests the first
 blowdown, and verifies (6)--(8), the target-factor irreducibility and
-the tame branch-index ledger. Small counterexamples check why rational
+the tame branch-index ledger. It checks the global valuation congruence,
+the complete genus-zero index budget and the finite-group exclusions.
+Small counterexamples check why rational
 parameters, characteristic zero and the Keller condition matter.
 Universal exclusions have the written proofs above. Finite controls do
 not constitute formal verification, a coefficient search, or an

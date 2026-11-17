@@ -1,0 +1,3309 @@
+{
+  "counts_by_degree": {
+    "1": 238,
+    "2": 489,
+    "3": 69,
+    "4": 28
+  },
+  "factors": [
+    {
+      "degree": 1,
+      "polynomial": "w"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 10"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 10/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 100"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 102/13"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 109/6"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 11/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 110/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 118/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 12"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 120"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 128/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 1291/110"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 14"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 14/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 140/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 15"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 150/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 16"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 16/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 18"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 18/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 180/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 20"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 20/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 2182/55"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 22"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 22/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 23"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 243/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 25"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 25/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 27/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 27/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 28"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 30"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 31/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 32"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 33/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 34"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 34/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 35"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 36"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 37/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 4"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 4/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 40"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 42"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 45"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 46"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 49/6"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 50"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 50/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 50/13"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 50/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 50/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 51/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 54"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 55/6"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 6"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 60"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 60/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 60/13"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 601/55"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 613/15"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 64/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 64/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 68/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 72/13"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 74/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 76"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 8/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 8/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 80/33"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 81/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 81/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 86"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 87/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 9/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w + 98/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 1"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 1/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 10"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 100/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 101/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 102/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 1025/76"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 104/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 1062/67"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 107/6"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 11/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 110/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 1102/81"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 112/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 114/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 115/6"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 115/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 118/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 118/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 12"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 120/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 121/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 122/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 127/8"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 130/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 130/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 1302/83"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 134/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 135/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 138/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 14"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 140/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 140/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 1465/101"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 147/8"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 15"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 15/4"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 150/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 150/13"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 16"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 160/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 17"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 17/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 170/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 172/13"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 175/12"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 179/12"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 18"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 180/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 180/13"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 187/14"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 19"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 190/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 20"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 20/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 205/12"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 206/15"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 21"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 210/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 217/18"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 218/13"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 22"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 22/9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 227/14"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 232/17"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 235/12"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 24"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 24/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 25/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 26"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 262/19"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 267/14"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 27/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 275/19"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 28/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 280/23"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 281/15"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 286/21"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 29/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 295/19"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 298/21"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 30"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 310/21"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 32/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 329/25"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 331/20"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 3322/243"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 34"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 342/25"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 3498/221"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 35/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 35/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 366/23"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 37"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 37/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 37/4"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 370/27"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 38"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 38/15"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 38/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 381/20"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 39/2"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 4"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 4/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 40"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 40/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 404/27"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 410/21"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 42/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 43/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 44"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 450/31"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 460/27"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 470/27"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 49/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 50/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 50/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 52/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 520/27"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 530/27"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 55/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 56"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 56/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 58/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 6"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 60/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 61/4"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 614/45"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 636/47"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 65/4"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 65/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 67/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 678/43"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 681/35"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 70/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 73/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 74/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 75/4"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 76/11"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 76/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 8"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 8/21"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 8/3"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 8/7"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 81/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 83/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 84/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 88/5"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 9"
+    },
+    {
+      "degree": 1,
+      "polynomial": "w - 98/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 10*w + 244/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 10*w - 280"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 10*w - 408"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 10*w/3 + 232/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 100*w/11 - 3760/11"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 102*w + 1384/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 104*w/3 - 8032/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 106*w - 1944"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 106*w - 4928/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 11*w + 100"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 11*w - 35"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 11*w - 370"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 11*w - 452"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 11*w - 50"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 11*w/3 - 50/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 110*w - 872"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 1112*w/37 + 6736/37"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 113*w - 1850"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 121*w/14 + 131/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 123*w - 150"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 128*w + 2822"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 13*w - 100"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 13*w - 362"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 13*w - 400"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 13*w/2 - 605/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 133*w - 2150"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w + 146"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w + 16"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w + 16/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w - 104"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w - 16"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w - 16/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w - 16/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w - 344"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w - 376"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w - 38"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w - 408"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w/3 + 16/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w/3 + 16/27"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 14*w/3 - 16/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 140*w - 2028"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 142*w + 8704/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 144*w - 2532"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 146*w/3 + 6064/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 148*w/17 - 5056/17"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 15*w - 1260"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 154*w - 2712"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 16*w + 38"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 16*w - 404"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 16*w/17 + 64/51"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 16*w/3 + 112/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 16*w/3 + 38/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 160*w - 528"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 163*w + 2710"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 17*w/2 - 522"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 17*w/5 - 260"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 18*w - 472"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 182*w - 1078/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 188*w - 3464"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 19*w + 130"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 19*w + 50"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 19*w/3 - 374"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 2*w + 112/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 2*w - 1072/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 2*w - 244"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 2*w - 56"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 21*w/2 - 474"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 22*w + 112/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 22*w + 504"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 22*w - 486"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 22*w - 488"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 23*w + 140"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 23*w/3 + 140/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 24*w + 368/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 242*w/27 - 8344/27"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 248*w/7 + 3760/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 26*w - 544"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 26*w - 732"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 26*w/3 + 328/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 26*w/3 - 1528/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 26*w/7 + 64/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 270*w - 2992"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 278*w - 4656"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 28*w + 320"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 282*w/7 + 2880/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 29*w/3 - 350"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 298*w - 5016"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 30*w + 1156"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 30*w + 244"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 30*w + 3424/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 304"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 308*w/5 + 976"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 31*w - 598"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 310*w + 2808"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 32*w + 22"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 32*w/3 + 496/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 32*w/3 - 172/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 32*w/5 - 100"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 33*w - 420"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 33*w - 450"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 34*w + 136"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 34*w - 732"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 34*w/3 - 32/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 355*w/13 + 7700/13"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 36*w - 2036/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 36*w - 92"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 37*w + 905/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 37*w - 750"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 38*w - 32"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 38*w/3 - 3248/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 39*w + 760"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 4*w + 40"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 4*w + 64/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 4*w - 264"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 4*w - 38/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 41*w - 748"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 42*w + 48"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 42*w - 144"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 42*w - 144/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 42*w - 16"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 43*w - 700"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 44*w - 114"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 44*w - 644/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 44*w/23 - 4"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 44*w/9 - 1792/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 45*w/2 - 54"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 456*w/23 + 2250/23"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 46*w + 10052/19"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 46*w - 2456/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 46*w/5 - 343"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 464*w/19 + 400/19"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 47*w - 170"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 47*w/4 - 845/4"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 48*w + 342"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 49*w + 150"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 5*w - 140"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 51*w - 950"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 56*w + 368"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 56*w + 400"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 56*w - 500"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 57*w + 450"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 58*w/3 - 1352/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 58*w/3 - 814/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 58*w/7 - 3768/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 6*w - 212"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 6*w - 232"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 6*w - 808/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 61*w - 1100"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 64*w + 976/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 64*w/5 + 184/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 664*w/33 + 676/11"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 69*w + 1260"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 69*w/2 - 2655/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 7*w - 310"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 7*w - 625/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 7*w/5 - 230"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 74*w/9 - 896/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 76*w + 160"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 76*w/27 - 32/81"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 776*w/25 + 6736/25"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 78*w - 1234"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 78*w/7 - 3208/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 79*w + 1940"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 79*w/5 + 313/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w + 140"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w + 404/19"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w - 305"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w - 325"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w/15 + 64/45"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w/3 + 656/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w/3 - 668/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w/5 + 80"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 8*w/61 - 644/61"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 82*w + 1224"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 832*w/29 + 4016/29"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 85*w/4 + 155"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 854*w/33 - 472/11"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 86*w - 4088/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 870*w/61 + 9304/183"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 88*w + 662"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 9*w + 50/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 9*w/2 + 7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 9*w/2 - 275"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 90*w + 2196"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 92*w/5 + 64"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 92*w/5 - 2188/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 98*w - 1534"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + 998*w/33 - 29312/33"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + w - 225"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 + w - 50/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 10*w + 196"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 10*w + 956"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 10*w - 408"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 10*w/3 - 136/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1019*w/28 + 2315/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 102*w + 1224"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 103*w/3 + 2660/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 104*w/9 - 18944/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 107*w/7 - 530/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 11*w + 102"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 11*w + 60"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 11*w - 140/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 11*w - 50"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 11*w/2 + 70"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 110*w/3 + 3044/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1102*w/37 + 8232/37"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 111*w/4 + 197"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 111*w/4 + 375/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 114*w/7 + 16/21"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 115*w/4 + 210"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 115*w/4 + 25625/124"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 11634*w/397 + 84656/397"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 117*w/5 + 130"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 12*w + 16"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 12*w - 114"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 12*w - 2532/43"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 121*w/4 + 469/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 122*w/7 + 138/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1226*w/61 + 2752/61"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 123*w/4 + 1895/8"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 125*w/4 + 245"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 127*w/5 + 160"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 13*w/2 - 97"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 131*w/4 + 2105/8"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 133*w + 1716"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 134*w/7 + 16/21"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 13428*w/443 + 101628/443"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1372*w/55 + 784/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 138*w/5 + 196"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w + 108"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w + 16"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w + 16/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w + 28"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w + 48/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w + 8"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w - 16"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w - 16/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w - 16/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w - 16/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14*w - 38"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 140"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 140*w/3 + 452"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 141*w/14 - 299/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 142*w/7 + 158/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 143*w/4 + 320"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 144*w/5 + 3128/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1468*w/57 + 28268/171"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 14748*w/467 + 116460/467"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 148*w/5 + 224"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 15*w + 110"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1527*w/49 + 11898/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 15540*w/521 + 115524/521"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 156*w/5 + 1176/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1575*w/58 + 5325/29"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 16*w + 36"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 16*w + 38"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 16*w + 4/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 16*w/5 + 28/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1650*w/59 + 11525/59"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1668*w/61 + 102628/549"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 167*w/6 + 195"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 169*w/2 + 1171"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 17*w/3 - 326/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 1726*w/63 + 11416/63"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 174*w/5 + 1259/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 178*w/7 + 1136/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 18*w + 112"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 18*w + 136"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 18*w + 16/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 18*w + 84"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 18*w + 92"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 184*w/15 + 224/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 19*w + 202"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 19*w + 50"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 19*w/2 - 62"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 190*w/7 + 8592/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 191*w/18 + 106/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 191*w/2 + 4474/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 191*w/6 + 2224/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 193*w/9 + 734/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 19404*w/635 + 29628/127"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 197*w/7 + 1220/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 198*w/7 + 1392/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 198*w/7 + 4216/21"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 2*w + 16"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 2*w + 176"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 2*w + 548/19"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 2*w - 244"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 2*w/3 + 64/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 20*w + 364"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 20*w + 404"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 20*w - 276"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 201*w/20 + 71/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 201*w/7 + 1450/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 206*w/7 + 1538/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 206*w/7 + 4336/21"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 207*w/7 + 220"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 211*w/7 + 11050/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 214*w/7 + 1644/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 214*w/7 + 4888/21"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 216*w/7 + 11638/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 218*w/7 + 1752/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 218*w/7 + 5056/21"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 218*w/9 + 425/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 2188*w/75 + 47668/225"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 219*w/4 + 897/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 22*w + 104"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 22*w + 172"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 22*w + 176"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 22*w + 576/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 22*w/3 - 1288/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 22*w/3 - 776/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 221*w/7 + 250"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 223*w/7 + 12440/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 223*w/8 + 196"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 226*w/7 + 1838/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 226*w/7 + 1844/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 227*w/7 + 260"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 23*w + 125"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 23*w + 140"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 230*w/7 + 12792/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 230*w/7 + 1892/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 233*w/7 + 3785/14"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 234*w/7 + 1924/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 24*w + 428/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 24*w + 560"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 241*w/7 + 2102/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 244*w/9 + 1604/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 246*w/7 + 2164/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 246*w/7 + 32176/105"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 25*w + 295/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 251*w/7 + 15670/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 254*w/7 + 48256/147"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 256*w/7 + 16358/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 26*w + 118"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 26*w + 2176/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 26*w + 308"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 26*w/3 - 244/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 263*w/7 + 17300/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 268*w/5 + 634"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 27*w + 150"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 27*w + 500/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 27*w + 550/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 270*w/7 + 18244/49"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 274*w/7 + 2792/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 277*w + 2608"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 28*w + 276"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 28*w/3 - 70/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 281*w/9 - 5324/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 284*w/9 + 2230/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 2848*w/105 + 11588/63"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 29*w + 1669/8"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 29*w + 3995/19"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 29*w + 425/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 29*w + 634/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 29*w/4 - 173/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 3*w - 150"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 3*w/2 + 62"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 30*w + 244"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 30*w + 3376/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 30*w - 3672"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 303*w/13 + 1758/13"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 3057*w/118 + 9917/59"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 317*w/19 + 620/19"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 32*w + 2278/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 32*w + 261"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 32*w + 280"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 32*w + 824/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 32*w/5 + 128/45"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 3235*w/108 + 6050/27"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 33*w + 271"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 33*w/2 + 196/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 333*w/11 + 2526/11"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 34*w + 2299/8"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 34*w + 884/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 34*w/3 - 244/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 341*w/10 + 290"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 35*w/2 + 70"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 353*w/12 + 435/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 36*w + 300"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 37*w/2 + 4/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 37*w/2 + 91"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 381*w/13 + 2800/13"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 391*w/14 + 1325/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 398*w/27 + 40/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 4*w - 132"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 40*w/21 + 128/63"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 42*w + 1216/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 4264*w/153 + 89092/459"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 43*w/3 - 70"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 44*w/3 - 38/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 45*w/2 + 199/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 452*w/17 + 2912/17"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 457*w/10 + 488/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 46*w/3 + 140/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 464*w/45 - 2036/45"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 47*w/2 + 123"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 49*w/3 + 50/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 49*w/4 - 125/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 493*w/20 + 275/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 496*w/21 + 956/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 5*w + 20"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 5*w - 118"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 5*w - 140"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 5*w/4 + 165"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 52*w/5 + 116"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 526*w/21 + 1032/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 527*w/14 + 2392/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 53*w/2 + 529/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 532*w/39 + 80/13"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 55*w/2 + 162"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 55*w/2 + 170"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 56*w + 680"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 56*w/3 - 16/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 57*w/2 + 210"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 57*w/2 + 557/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 57*w/2 + 601/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 58*w/3 + 26"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 58*w/7 - 512/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 5806*w/215 + 39244/215"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 583*w/20 + 196"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 59*w/10 - 527/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 59*w/2 + 218"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 59*w/4 + 35"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 59*w/4 - 145/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 6*w + 166"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 6*w + 28"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 6*w + 64/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 6*w + 74"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 6*w - 114"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 6*w - 138"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 6*w - 1568/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 604*w/21 + 1452/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 61*w/2 + 236"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 62*w + 786"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 622*w/21 + 22816/105"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 6244*w/237 + 40768/237"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 64*w/3 - 112/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 65*w/2 + 1061/4"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 65*w/2 + 790/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 652*w/21 + 4996/21"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 66*w + 696"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 669*w/20 + 4019/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 67*w/2 + 1667/6"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 67*w/3 + 358/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 672*w/25 + 4312/25"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 676*w/21 + 260"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 682*w/21 + 16096/63"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 69*w/2 + 301"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 69*w/4 + 22"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 69*w/4 + 70"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 692*w/19 + 6164/19"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 7*w + 76"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 7*w + 80"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 7*w - 100"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 7*w - 82"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 7*w - 86"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 7*w - 90"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 7*w/9 - 1454/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 70*w/3 + 88"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 728*w/45 + 316/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 73*w/3 + 134"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 744*w/43 + 1092/43"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 75*w/2 + 1411/4"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 76*w/9 - 212/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 79*w/3 + 445/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 79*w/4 + 49/2"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 79*w/5 + 266/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 8*w/5 - 17/10"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 82*w/3 + 136"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 82*w/3 + 1696/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 82*w/3 + 2816/15"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 82*w/5 + 56"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 83*w/5 + 391/5"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 86*w/3 + 638/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 869*w/28 + 1685/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 87*w/7 - 450/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 884*w/29 + 6804/29"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 903*w/34 + 2940/17"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 91*w/3 + 1990/9"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 91*w/3 + 700/3"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 94*w/3 + 6496/27"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 98*w/3 + 268"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - 998*w/63 + 16/7"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - w + 10"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - w + 110"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - w + 50"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - w + 92"
+    },
+    {
+      "degree": 2,
+      "polynomial": "w**2 - w - 140"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 14*w**2 - 460*w + 2128"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 15*w**2 - 466*w + 1048"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 170*w**2/3 + 2368*w/3 + 8096/3"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 19*w**2/2 + 45*w - 1436"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 2*w**2 - 1144*w + 13280"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 20*w + 508"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 20*w**2 - 360*w - 1336"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 21*w**2 - 804*w + 1840"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 22*w**2/3 + 112*w - 256/9"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 23*w**2 + 196*w + 580"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 23*w**2 - 306*w - 2632"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 27*w**2/2 + 20*w - 22"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 39*w**2 + 408*w + 5104"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 39*w**2 - 158*w - 8920"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 43*w**2 + 464*w + 2384"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 44*w**2 + 24*w - 344"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 5*w**2 - 530*w + 3776"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 50*w**2 - 64*w - 10976"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 64*w**2 + 1116*w + 5888"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 7*w**2 - 356*w + 670"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 + 7*w**2 - 946*w/3 + 80"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 10*w**2 + 292*w - 6608"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 1000*w**2/21 + 15508*w/21 - 236336/63"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 1006*w**2/21 + 4996*w/7 - 22872/7"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 115*w**2/3 + 4130*w/9 - 14800/9"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 12*w**2 - 277*w + 3500"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 12*w**2 - 581*w/3 + 6860/3"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 13*w**2 - 230*w + 3040"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 13*w**2 - 8*w + 420"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 15*w**2/2 - 102*w + 258"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 16*w**2 - 34*w + 908"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 1688*w**2/21 + 12332*w/7 - 82032/7"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 18*w**2 + 236*w/3 + 224/3"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 18*w**2 + 64*w + 252"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 1892*w**2/21 + 13948*w/7 - 90624/7"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 19*w**2/2 - 191*w + 464"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 2*w**2 + 213*w - 2680"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 2*w**2 - 387*w + 3000"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 2*w**2 - 640*w + 6576"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 21*w**2 - 22*w/3 + 1480"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 223*w**2/10 + 406*w/5 + 2352/5"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 23*w**2 + 12*w + 1580"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 2332*w**2/43 + 37836*w/43 - 185472/43"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 26*w**2 + 2552"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 26*w**2 - 90*w + 3712"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 27*w**2 + 122*w + 824"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 287*w**2/9 + 2555*w/9 - 4150/9"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 291*w**2/14 - 35*w + 1789"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 31*w**2 + 271*w - 470"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 34*w**2 + 352*w - 1064"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 357*w**2/13 + 1728*w/13 + 9472/13"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 37*w**2 + 438*w - 1640"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 4*w**2 - 1256*w + 16024"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 427*w**2/13 + 4522*w/13 - 15680/13"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 46*w**2 + 708*w - 3668"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 5*w**2 - 486*w + 5060"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 5*w**2/2 - 128*w - 318"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 51*w**2 + 866*w - 4900"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 52*w**2/5 - 1176*w/5 + 12544/5"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 53*w**2 + 8110*w/9 - 44750/9"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 53*w**2 + 854*w - 4320"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 57*w**2/2 + 192*w + 146"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 616*w**2/13 + 720*w - 46204/13"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 737*w**2/26 + 2487*w/13 + 1468/13"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 78*w**2 + 1656*w - 10752"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 80*w**2/13 - 5745*w/13 + 60500/13"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 88*w**2 + 1868*w - 11712"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 9*w**2 - 442*w + 5260"
+    },
+    {
+      "degree": 3,
+      "polynomial": "w**3 - 944*w**2/45 + 28*w/15 + 180848/135"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 + 16*w**3 - 567*w**2 - 5770*w + 109900"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 + 18*w**3 - 500*w**2 - 6376*w + 99712"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 + 18*w**3 - 692*w**2 - 2408*w + 81280"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 + 2*w**3 - 465*w**2 + 340*w + 42550"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 + 32*w**3 - 476*w**2 - 15056*w + 178112"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 + 4*w**3 - 516*w**2 + 2080*w + 22880"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 + 8*w**3 - 487*w**2 - 2190*w + 65600"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 + 9*w**3 - 517*w**2 - 2685*w + 76000"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 13*w**3 - 147*w**2 + 1128*w + 10340"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 1361*w**2/3 + 1310*w + 32200"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 14*w**3 - 284*w**2 + 5824*w - 26656"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 16*w**3 - 387*w**2 + 8310*w - 34600"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 20*w**3 - 5*w**2/2 + 1142*w + 1030"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 24*w**3 - 339*w**2 + 13590*w - 96800"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 3*w**3 - 340*w**2 + 900*w + 23984"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 33*w**3 + 250*w**2 + 1612*w - 19368"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 33*w**3/2 - 75*w**2 + 1142*w + 5636"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 34*w**3 + 448*w**2 - 2912*w + 8624"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 36*w**3 - 700*w**2 + 28768*w - 205440"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 45*w**3/2 + 91*w**2/2 + 1248*w - 3002"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 48*w**3 + 886*w**2 - 7336*w + 23128"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 48*w**3 - 844*w**2 + 41008*w - 315136"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 50*w**3 + 2836*w**2/3 - 23632*w/3 + 73696/3"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 53*w**3 + 1028*w**2 - 8512*w + 25480"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 57*w**3/2 + 184*w**2 + 1022*w - 10456"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 6*w**3 - 588*w**2 + 9816*w - 43872"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 68*w**3 + 1560*w**2 - 14728*w + 50176"
+    },
+    {
+      "degree": 4,
+      "polynomial": "w**4 - 74*w**3 + 1636*w**2 - 13776*w + 37632"
+    }
+  ],
+  "family_sha256": "6757f33875ffd769fc675fd3fda6475e6c2440fb6dfa2a8428dcb29b75bcae07",
+  "source_sha256": "e4cbeda86ea51e5bdc349d35b07a8ee5b5b800a3cb888d7940da9df39c0032f1",
+  "status": "complete"
+}

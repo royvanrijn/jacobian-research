@@ -1,0 +1,8 @@
+{
+  "terminal": true,
+  "completed": false,
+  "exit_code": 1,
+  "input": "nodal_gaussian_critical_v2_checker_input.py",
+  "input_sha256": "e1f517094a81c155b6ad2a71a6cc27980ba9cc9963b6e6dd95c10104778d497b",
+  "failure": "The action extractor retained the common additive t*k before taking r->0 for fractional escape powers. This produced zoo*k and failed exact coefficient conversion. Subtract t*k before extracting the fractional term; the true action is t*k plus the recorded nonzero fractional action. No exclusion was registered from this failed run."
+}

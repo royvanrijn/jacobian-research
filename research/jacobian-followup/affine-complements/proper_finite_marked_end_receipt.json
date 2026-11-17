@@ -1,0 +1,395 @@
+{
+  "as_of": "2026-11-16",
+  "outcome": "PASS",
+  "check_count": 70,
+  "checks": [
+    "predecessor PASS unit_peripheral_coverage_receipt.json",
+    "sealed predecessor unit_peripheral_coverage_receipt.json verify_unit_peripheral_coverage.py",
+    "sealed predecessor unit_peripheral_coverage_receipt.json UNIT_PERIPHERAL_REDUCTION_AND_TARGET_COVERAGE.md",
+    "sealed predecessor unit_peripheral_coverage_receipt.json composed_peripheral_cover.py",
+    "sealed predecessor unit_peripheral_coverage_receipt.json sources/unit-peripheral-coverage/manifest.json",
+    "sealed predecessor unit_peripheral_coverage_receipt.json prefix_excess_closure_receipt.json",
+    "sealed predecessor unit_peripheral_coverage_receipt.json sources/unit-peripheral-coverage/neumann-norbury-math0110286v1.html",
+    "predecessor PASS marked_end_lattice_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor marked_end_lattice_receipt.json MARKED_END_LATTICE_AND_CABLE_CONTROL.md",
+    "sealed predecessor marked_end_lattice_receipt.json sources/marked-end-lattice/manifest.json",
+    "sealed predecessor marked_end_lattice_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json peripheral_zero_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json sources/marked-end-lattice/weidmann-root-adjoined.pdf",
+    "sealed predecessor marked_end_lattice_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "predecessor PASS complementary_corner_jsj_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor complementary_corner_jsj_receipt.json COMPLEMENTARY_CORNER_AND_BOUNDARY_JSJ_ENDPOINT.md",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/complementary-corner-jsj/manifest.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json regular_quartic_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "retained primary pin BGV160.pdf",
+    "complete primary pages freshly visually read BGV160.pdf",
+    "retained primary pin neumann-plumbing-1981.pdf",
+    "complete primary pages freshly visually read neumann-plumbing-1981.pdf",
+    "source audit not whole-chain reproof",
+    "projective squared norm equals reciprocal affine squared radius",
+    "target radius R corresponds to alpha 1/(1+R2)",
+    "crossing blowup adds POSITIVE exceptional polar multiplicity",
+    "smooth-face blowup retains positive support",
+    "uniform smooth positive factor cannot cancel thin-face transversality",
+    "positive two-face corner derivative dominates bounded metric term",
+    "actual power-map radial derivative in first positive radius",
+    "actual power-map radial derivative in second positive radius",
+    "whole-map properness countercontrol exact bounded image",
+    "nonfinite whole-map control cannot supply compact radial cores",
+    "exhaustive commuting peripheral table degree1",
+    "exhaustive commuting peripheral table degree2",
+    "exhaustive commuting peripheral table degree3",
+    "exhaustive commuting peripheral table degree4",
+    "exhaustive commuting peripheral table degree5",
+    "nonzero actual peripheral shear retained",
+    "noncommuting pair not accepted as torus action",
+    "finite power-map residue longitude joins all meridian cycles (2, 2)",
+    "finite power-map residue longitude joins all meridian cycles (2, 3)",
+    "finite power-map residue longitude joins all meridian cycles (3, 4)",
+    "transitive V4 does NOT satisfy single-transposition hypothesis",
+    "actual cyclic finite-map S3 end and null core (2, False)",
+    "actual cyclic finite-map S3 end and null core (2, True)",
+    "actual cyclic finite-map S3 end and null core (3, False)",
+    "actual cyclic finite-map S3 end and null core (3, True)",
+    "actual cyclic finite-map S3 end and null core (4, False)",
+    "actual cyclic finite-map S3 end and null core (4, True)",
+    "actual cyclic finite-map S3 end and null core (5, False)",
+    "actual cyclic finite-map S3 end and null core (5, True)",
+    "actual cyclic finite-map S3 end and null core (7, False)",
+    "actual cyclic finite-map S3 end and null core (7, True)",
+    "actual cyclic finite-map S3 end and null core (12, False)",
+    "actual cyclic finite-map S3 end and null core (12, True)",
+    "complete connected transposition graph controls degree2",
+    "complete connected transposition graph controls degree3",
+    "complete connected transposition graph controls degree4"
+  ],
+  "geometry": {
+    "primary_component_open_affineness_and_disjoint_entire_lines_verified": true,
+    "actual_exact_volume_primitive_restricts_without_deleting_finite_map": true,
+    "original_finite_normalization_compactifies_with_positive_entire_polar_support": true,
+    "actual_radial_section_is_oriented_marked_plumbing_boundary": true,
+    "curve_marks_normal_meridians_and_actual_full_peripheral_maps_retained": true,
+    "Hodge_index_gives_connected_end_in_every_degree": true,
+    "single_transposition_meridians_force_full_infinity_Sd": true,
+    "no_abstract_group_or_determinant_recognition_substituted": true
+  },
+  "peripheral": {
+    "arbitrary_commuting_actions_full_orbits_classify_boundary_tori": true,
+    "exact_integral_stabilizer_basis_e0_af_index_ef": true,
+    "longitudinal_residue_degree_and_nonzero_shear_retained": true,
+    "identity_longitude_not_assumed_in_general": true,
+    "flow_helper_itself_still_requires_identity_longitude": true
+  },
+  "commuting_action_census": [
+    {
+      "degree": 1,
+      "commuting_pairs": 1,
+      "boundary_components": 1
+    },
+    {
+      "degree": 2,
+      "commuting_pairs": 4,
+      "boundary_components": 5
+    },
+    {
+      "degree": 3,
+      "commuting_pairs": 18,
+      "boundary_components": 29
+    },
+    {
+      "degree": 4,
+      "commuting_pairs": 120,
+      "boundary_components": 218
+    },
+    {
+      "degree": 5,
+      "commuting_pairs": 840,
+      "boundary_components": 1814
+    }
+  ],
+  "nonzero_shear_control": [
+    {
+      "sheets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seed": 0,
+      "normal_index": 5,
+      "longitudinal_degree": 1,
+      "shear": 3,
+      "lattice": [
+        [
+          5,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "degree": 5
+    }
+  ],
+  "actual_finite_power_map_Hopf_controls": [
+    {
+      "normal_index": 2,
+      "residue_degree": 2,
+      "mu": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "longitude": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "boundaries": [
+        {
+          "sheets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "seed": 0,
+          "normal_index": 2,
+          "longitudinal_degree": 2,
+          "shear": 0,
+          "lattice": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "degree": 4
+        }
+      ],
+      "image_order": 4
+    },
+    {
+      "normal_index": 2,
+      "residue_degree": 3,
+      "mu": [
+        3,
+        4,
+        5,
+        0,
+        1,
+        2
+      ],
+      "longitude": [
+        1,
+        2,
+        0,
+        4,
+        5,
+        3
+      ],
+      "boundaries": [
+        {
+          "sheets": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "seed": 0,
+          "normal_index": 2,
+          "longitudinal_degree": 3,
+          "shear": 0,
+          "lattice": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "degree": 6
+        }
+      ],
+      "image_order": 6
+    },
+    {
+      "normal_index": 3,
+      "residue_degree": 4,
+      "mu": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        0,
+        1,
+        2,
+        3
+      ],
+      "longitude": [
+        1,
+        2,
+        3,
+        0,
+        5,
+        6,
+        7,
+        4,
+        9,
+        10,
+        11,
+        8
+      ],
+      "boundaries": [
+        {
+          "sheets": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "seed": 0,
+          "normal_index": 3,
+          "longitudinal_degree": 4,
+          "shear": 0,
+          "lattice": [
+            [
+              3,
+              0
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "degree": 12
+        }
+      ],
+      "image_order": 12
+    }
+  ],
+  "actual_cyclic_finite_map_controls": [
+    {
+      "degree": 2,
+      "closed_H1": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "degree": 3,
+      "closed_H1": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "degree": 4,
+      "closed_H1": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "degree": 5,
+      "closed_H1": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "degree": 7,
+      "closed_H1": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "degree": 12,
+      "closed_H1": {
+        "free": 0,
+        "torsion": []
+      }
+    }
+  ],
+  "connected_transposition_graph_controls": [
+    {
+      "degree": 2,
+      "connected_graphs": 1
+    },
+    {
+      "degree": 3,
+      "connected_graphs": 4
+    },
+    {
+      "degree": 4,
+      "connected_graphs": 38
+    }
+  ],
+  "assurance": {
+    "written_all_degree_geometric_and_lattice_proofs": true,
+    "finite_controls_not_universal_topology_or_realization_proof": true,
+    "original_proper_finite_map_essential_countercontrol_retained": true,
+    "complete_primary_PDF_pages_rendered_and_visually_read": true,
+    "earlier_whole_chart_key_form_passport_and_exclusion_chain_audit_required": true,
+    "all_earlier_source_and_exclusion_implications_independently_reproved": false,
+    "arbitrary_abstract_plumbing_realized_as_finite_map": false,
+    "component_open_restriction_inferred_finite": false,
+    "full_quartic_Keller_exclusion_registered": false,
+    "arbitrary_higher_degree_packets_excluded": false,
+    "full_compatible_completion_goal_solved": false,
+    "formal_verification": false,
+    "external_review": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_proper_finite_marked_end.py": "bd41c492f95950263d05da2979135209e533d77568d5918bd0c502253b12e8b4",
+    "PROPER_FINITE_MARKED_END_AND_COMPONENT_OPEN_AUDIT.md": "1aa1fd1d61ec122189c0cb7914d41b67619145f3ac1b8fca24e56791c9fa0d6e",
+    "peripheral_boundary_lattices.py": "b754ee4a560fbef593e38a45b2a98b319dc8548f85dc6eeba8ca34419d2e9215",
+    "composed_peripheral_cover.py": "0e803ef1da3d429b6a6d20dba114992f6af6bb7760d80673722218824d29eedf",
+    "sources/proper-finite-end/manifest.json": "6751cd3eeec5d9774572d4e0835094541ee6e60e37eb75177d00763f8255c8d2",
+    "unit_peripheral_coverage_receipt.json": "b05b36bbe66600ba68aa6f2c9b29d7e32f64b55d0a15a1504b574f72c86975c4",
+    "marked_end_lattice_receipt.json": "0d0e1f435fa04818a1c3d6b8951e21d21b0234135588a91f462b92a33b951e31",
+    "complementary_corner_jsj_receipt.json": "059a8771cfb326b9e37e9d45658a7e49568b49fc596ff1bf2a4502fbd65ed9a2",
+    "sources/intrinsic-normalization/BGV160.pdf": "fadbe8149ce9ed9c746042cb9944ab2553ade857f264b8bf95587ac090341d04",
+    "sources/regular-sector-end/neumann-plumbing-1981.pdf": "61a02e73da4a47216f39dceb22887b2bd3d584ba2418049458d90b3dedd1657b"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

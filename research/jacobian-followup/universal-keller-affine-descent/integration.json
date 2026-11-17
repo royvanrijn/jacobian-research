@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T10:40:56.714193+00:00",
+  "new_claims": [
+    "UAMLFACTOR1",
+    "UAAFFDESC1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAARITHRULING1",
+    "UADANVOL1",
+    "UAGEOPIC1",
+    "UAINTERSURF1",
+    "UALOGVOL1",
+    "UARELPLANE1",
+    "UAUNITFACT1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UAMLFACTOR1",
+    "UAAFFDESC1"
+  ],
+  "old_entry_count": 2593,
+  "new_entry_count": 2595,
+  "unchanged_existing_entry_count": 2585,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "d697b5067ae633c0b9099fd50dab1b491bc28db62c4ee509988cb00aaccd74d3",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "4f1e9b9b70d7b74b",
+    "UAMLFACTOR1": "e6813d980bc17c6e",
+    "UAAFFDESC1": "afe55ac80a209897"
+  },
+  "updated_lessons": [
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "c3f93d68b087b7c7e19a3cdc50c84dc11b12e6d07620e0faec4dc17f2106a1b1",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "Trivial geometric ML of an actual retained-signal intermediate forces a plane and, in the native/witness class, exactly whole target invertibility.",
+    "Every affine-type geometric ruling of a proper native intermediate is unique and explicitly descends, together with its volume-defined additive action.",
+    "The arbitrary-averaging shortcut is disproved by conjugate centered polynomial coordinates whose trace has generic fibre Gm."
+  ],
+  "verification_design_note": "42 selected exact weighted-trace, conjugate-coordinate inverse, generic-Gm-fibre, Hamiltonian, Picard-orbit and source-pin controls accompany two written general proofs. They do not prove the imported classification or universal descent theorem by bounded testing.",
+  "assurance": "Written proofs using explicit primary imports; no independent whole-proof replay, formal verification, external review or novelty certificate. Complete-type descent and canonical absolute stable atomicity remain open."
+}

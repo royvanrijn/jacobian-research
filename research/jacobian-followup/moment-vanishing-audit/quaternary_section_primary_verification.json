@@ -1,0 +1,15 @@
+{
+  "claim": "G4SECTIONPRIMARY20261114",
+  "completed": true,
+  "primary_components": 7,
+  "origin_power": 35,
+  "regularity_bound": 34,
+  "origin_torsion_length_interval": [
+    1635,
+    2576
+  ],
+  "checker_sha256": "5b7798f15cc8bdb1cf290f1bf110364d9ebbaa16b1a86f93dcf152e82b7fb63c",
+  "certificate_sha256": "ccd77dc5dcddac61e5775f45799778c5b29969cb21e21b32b6283d8c3c3e7447",
+  "elapsed_seconds": 0.4971285489737056,
+  "assurance": "Internal written proof and exact CAS/symbolic/combinatorial inputs; no independent replay, external review or formal verification."
+}

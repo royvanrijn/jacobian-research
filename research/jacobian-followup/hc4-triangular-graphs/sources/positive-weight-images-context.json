@@ -1,0 +1,22 @@
+{
+  "review_date": "2026-11-14",
+  "primary_url": "https://www.math.univ-toulouse.fr/~slamy/stock/lamy_venereau.pdf",
+  "retained_file": "lamy-venereau-quadric-automorphisms-2013.pdf",
+  "sha256": "cb41b3536e5e88351aea843c1649a805461977a3f647402d46ab8955e7e9073f",
+  "title": "The tame and the wild automorphisms of an affine quadric threefold",
+  "authors": [
+    "Stephane Lamy",
+    "Stephane Venereau"
+  ],
+  "publication": "Journal of the Mathematical Society of Japan 65(1), 299-320 (2013)",
+  "doi": "10.2969/jmsj/06510299",
+  "portions_inspected": "Introduction and Section 2.1: elementary polynomial automorphisms of the quadric arise from triangular matrix operations with coefficients in fixed coordinates.",
+  "role": "Primary context for the explicitly written quadratic-preserving shears. Neither the tame/wild classification nor a generation theorem is used as a proof input.",
+  "all_rectification_and_positive_weight_arguments_proved_in_note": true,
+  "external_embedding_or_group_generation_classification_imported": false,
+  "universal_positive_action_linearization_assumed": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

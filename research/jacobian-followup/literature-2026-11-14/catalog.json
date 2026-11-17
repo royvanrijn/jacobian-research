@@ -322,5 +322,45 @@
       "gate": "Does not exclude arbitrary dependent increments, general pairs or every deformation; manual campaign cross-review is not formal or external human verification",
       "new_to_48_record_catalog": true
     }
+  ],
+  "snapshot_note": "Original20-record screening counts and review depths are historical; later local theorem audits/imports below updateMATH_STATUS separately.",
+  "subsequent_ledger_updates": [
+    {
+      "claims": [
+        "GLDC5",
+        "GLDC6"
+      ],
+      "source": "../small-component-gate/CLASSICAL_CUBIC_IMPORT.md",
+      "effect": "classical cubic import and small-component deduction closed48 profiles at that stage"
+    },
+    {
+      "claims": [
+        "GLDC7",
+        "GLDC8"
+      ],
+      "source": "../quartic-three-audit/README.md",
+      "effect": "written quartic invertibility audit and degree5 cubic-component extension give54 excluded/20 remaining,3D degree[5,7]; no new positive witness"
+    },
+    {
+      "claims": [
+        "GLDC9"
+      ],
+      "source": "../quartic-three-audit/DEGREE6_COMPONENT_EXCLUSION.md",
+      "effect": "Four degree6 cubic-component profiles closed; current58 excluded/16 remaining.3D ordinary degree[5,7] unchanged, cubic-component subclass[7,9]."
+    },
+    {
+      "claims": [
+        "GLDC10"
+      ],
+      "source": "../quartic-three-audit/DEGREE7_COMPONENT_EXCLUSION.md",
+      "effect": "Four degree7 cubic-component profiles closed; current62 excluded/12 remaining. Global3D degree[5,7] unchanged, cubic-component subclass[8,9]. No smaller positive witness."
+    },
+    {
+      "claims": [
+        "GLDC11"
+      ],
+      "source": "../quartic-three-audit/DEGREE8_COMPONENT_MINIMUM.md",
+      "effect": "Degree8 cubic-component exclusion plus direct degree9 witness reconstruction prove subclass minimum9. No additional strict profile:62/12 unchanged; global3D degree[5,7] and positive construction bounds unchanged."
+    }
   ]
 }

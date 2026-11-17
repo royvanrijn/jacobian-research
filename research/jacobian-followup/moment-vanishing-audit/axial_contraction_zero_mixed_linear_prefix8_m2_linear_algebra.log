@@ -1,0 +1,46 @@
+ -- warning: gb algorithm requested is experimental
+grevlex order
+DEGREE 7 (npairs 2)
+Internal error: array out of order
+Internal error: array out of order
+ # GB elements   = 0
+DEGREE 10 (npairs 2)
+Internal error: array out of order
+Internal error: array out of order
+ # GB elements   = 0
+DEGREE 14 (npairs 1)
+Internal error: array out of order
+ # GB elements   = 0
+number of spairs removed by criterion = 0
+monomial info
+  nvars  = 4  nslots = 6  mask   = 268435456  hash values for each variable
+    1804289383
+    846930886
+    1681692777
+    1714636915
+  #calls compare = 1925
+  #calls mult    = 0
+  #calls get comp= 343
+  #calls fromexp = 452
+  #calls toexp   = 0
+  #calls fromvp  = 0
+  #calls tovp    = 0
+  #calls is equal= 109
+  #calls eq true = 109
+  #calls divide  = 0
+  #calls weight  = 452
+  #calls unneeded= 0
+  #calls vp quot = 0
+START_EXACT_QQ_LINEAR_ALGEBRA
+GB_FINISHED
+status: not started; all S-pairs handled up to degree 0
+.00150908
+ONE_REMAINDER
+/usr/share/Macaulay2/Core/gb.m2:229:78:(1):[9]: error: unknown engine error
+/usr/share/Macaulay2/Core/gb.m2:231:63:(1):[7]: --back trace--
+research/jacobian-followup/moment-vanishing-audit/axial_contraction_zero_mixed_linear_prefix8_m2_linear_algebra.m2:16:11:(3):[6]: --back trace--
+/usr/share/Macaulay2/Core/startup.m2:66:17:(0):[5]: --back trace--
+/usr/share/Macaulay2/Core/Core.m2:101:55:(1):[4]: --back trace--
+/usr/share/Macaulay2/Core/Core.m2:113:22:(1):[2]: --back trace--
+/usr/share/Macaulay2/Core/startup.m2:552:63:(0):[1]: --back trace--
+/usr/share/Macaulay2/Core/startup.m2:662:6:(0): --back trace--

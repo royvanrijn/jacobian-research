@@ -1,0 +1,12 @@
+{
+  "prime": 41,
+  "status": "nonzero-exit",
+  "returncode": -9,
+  "wall_seconds": 42.01870506501291,
+  "limits": {
+    "wall_seconds": 45,
+    "cpu_seconds": 42,
+    "address_space_bytes": 2147483648
+  },
+  "scope": "Directed anti-involution candidate search, not global exhaustion; no outsider without full Jacobian certificate."
+}

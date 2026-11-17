@@ -1,0 +1,11 @@
+{
+  "status": "timeout-or-error",
+  "exit_code": 1,
+  "elapsed_seconds": 0.18725100700976327,
+  "algorithm": "Macaulay2 1.22 exact QQ homogeneous LinearAlgebra",
+  "source": "axial_contraction_zero_mixed_linear_homogeneous_m2_linear_algebra.m2",
+  "source_sha256": "bb6c4f13f535dbe7809071faf79a2441e27fad5aae226e327d29c3f88dcc4c76",
+  "output": "axial_contraction_zero_mixed_linear_homogeneous_m2_linear_algebra.log",
+  "output_sha256": "f113854bfb53fc8ee56d005aba53860fc7578cfa4d466a4cda7e7263b4081def",
+  "claim": "No exclusion until full rational result inspected; no modular-unit lifting."
+}

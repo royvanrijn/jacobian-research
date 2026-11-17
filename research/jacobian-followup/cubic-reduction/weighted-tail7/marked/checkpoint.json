@@ -1,0 +1,10 @@
+{
+  "equations": 21,
+  "input_sha256": "4144428a7d98e73a75734451eb765a67b51bb63ed5887265000c73e8f9aa8e64",
+  "mode": "marked",
+  "scope": "Weighted tail coefficient calculation; a basis requires parameter extraction and exact full-map verification before a smaller construction is claimed.",
+  "seconds": 0.006,
+  "source_sha256": "dccbb47cb24a42172c36ec035967bab1e9652aa6b0adb414ad924f9ca8cb0c9e",
+  "status": "primary-basis",
+  "variables": 10
+}

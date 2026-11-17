@@ -1,0 +1,18 @@
+{
+  "claim": "QCL1",
+  "status": "PASS",
+  "nonzero_scalar_cubic_Moyal_correction": "-3*h**2/2",
+  "mixed_cubic_full_rank_two_relations": 6,
+  "exact_rational_skew_matrix_normalization": true,
+  "normalization_regular_and_identity_at_zero": true,
+  "homogeneous_square_zero_and_inverse_controls": true,
+  "triangular_index_three_cotangent_degree": 5,
+  "coverage_boundary": "Exact symbolic identities only. The all-rank scalar-anomaly criterion, cubic bounded lifting, all-degree homogeneous symplectic invertibility and the nilpotency-index degree formula use written proofs. No noninvertible cubic symplectic map or bounded Long lift is constructed.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "SCALAR_ANOMALY_AND_CUBIC_LIFTS.md": "f5393170157dd74f26fd489b97ed35d3da718cbd881af630fcc5487cdef3c14e",
+    "check_scalar_anomaly.py": "0d0d9cb6caff7b55a54dfea607cb7fd6e0f789d54a9628d6e99018bce854faa1"
+  }
+}

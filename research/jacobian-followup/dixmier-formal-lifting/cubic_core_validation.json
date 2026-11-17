@@ -1,0 +1,23 @@
+{
+  "claim": "QCC1",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "new_method_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "exact_Poisson_PBW_and_eigenbasis_control_receipt": "PASS",
+  "python_compile": "PASS",
+  "changed_tracked_files_diff_check": "PASS",
+  "local_markdown_links_checked": 124,
+  "status_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+  },
+  "proof_sha256": "9a1b83560a95cf39e2d6bf119e7bb548a7be6ade19a700d43afbcb0c73bcc2c8",
+  "boundary": "Written proofs establish the full toric centralizer, the stronger D0 component obstruction, all-degree fiber-shear classification and classical and quantum stable centralizer-capacity criteria. The quantum family is normally ordered and resonant; it excludes no arbitrary ordering or corrected Long operator. No bounded Long lift, independent theorem replay, external review, formal verification or DC2 solution.",
+  "previous_goal_turn": "progress: QCL1 established a positive bounded carrier for all cubic symplectic maps and excluded a single homogeneous nonlinear symplectic layer in every degree",
+  "goal_status": "active"
+}

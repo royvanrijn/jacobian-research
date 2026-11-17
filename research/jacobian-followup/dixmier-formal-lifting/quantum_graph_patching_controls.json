@@ -1,0 +1,53 @@
+{
+  "claim": "QPG1",
+  "status": "PASS",
+  "noncommutative_patching": {
+    "free_ring_stabilized_identity": "PASS",
+    "precision_control": {
+      "pole_bound": 1,
+      "prefix_order": 6,
+      "minimum_formal_unit_contact": 6
+    },
+    "finite_idempotent": "PASS",
+    "idempotent_spatial_degree": 20,
+    "idempotent_has_no_t_poles": true,
+    "two_sided_integral_rank_one_split": "PASS",
+    "full_corner_Weyl_relation": "PASS",
+    "special_idempotent": "e11",
+    "overlap_unit": "t^-1*(1-t*x)^-1",
+    "unbounded_positive_spatial_tail": true
+  },
+  "formal_graph_jets": {
+    "inner_control": "p -> p-h*t/(1-t*x)",
+    "inner_difference_divisible_by": "h*t",
+    "noninner_first_quantum_control": "p -> p+h*x",
+    "exact_mixed_linear_quantum_shear": "PASS",
+    "repeated_form_polarization": "PASS",
+    "all_orders_finite_jet_theorem": "written full-frame H1 proof",
+    "all_ramification_orders": "written proof, no e census"
+  },
+  "sources": [
+    {
+      "url": "https://doi.org/10.3390/math14050861",
+      "used": "Karoubi square patching context; the needed case is proved directly"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BNI",
+      "used": "Commutative Beauville-Laszlo comparison only"
+    }
+  ],
+  "proof_boundary": "Exact controls verify universal elementary identities and one full patched corner from an unbounded overlap frame. The general noncommutative patching, precision estimate, generic-to-integral rank-one freeness, inner finite-jet classification and finite shear reduction use written proofs. Exact overlap admission and C-freeness are required, not inferred from finite jets or division-ring frames. No finite generic Long action or Dixmier counterexample is constructed.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "CENTRAL_PATCHING_AND_QUANTUM_GRAPH_JETS.md": "40ba3425935deeb5a4a302556c052c9261706d56380d1883359f89d36f3db40f",
+    "check_quantum_graph_patching.py": "e9ecebd45669ea38d3aca809953faf88b80769a9d9be6b1be704bf50ef7866ae",
+    "check_projective_frame.py": "88b1e30c916e6a8271f94079b3f90e4b0cf7b837bdb9ac4929288e58bd63a2bc",
+    "INTEGRAL_GRAPH_PROJECTIVITY_AND_LATTICE_RIGIDITY.md": "53b0bbaf7b67ff025306ef895f79dee6104d0a6a621a8623946aa7c17b2f825f",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "PROOF.md": "63a17ea378a997162eb1a6e4656e44b36d296c0b0b43483a54bde2d38a8753f9",
+    "PROJECTIVE_FRAME_BOUNDARY.md": "ae7a87e48775f567d86ff320d9de685d4573547311ece60549579e7b447745b4",
+    "FORMAL_GRAPH_BOUNDARY_MODEL.md": "724d077bd7e504db48a5b2d57ff1833145ab64cb7859df44bfb560f094c58acd"
+  }
+}

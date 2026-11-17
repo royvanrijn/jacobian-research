@@ -1,0 +1,10 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "motivation":"The rank implication of the Betti-gain gate should hold in every characteristic even when the permutation module does not split. Z1(G,ker epsilon) is the kernel of Z1(G,k^r)->Z1(G,k), so its dimension is at least r-1+b1(H)-b1(G). Verify a positive control whose only Betti gain is at the excluded degree prime.",
+  "group":"G0=C13*C13*C13, the double-cover group of the known connected sum of three T(2,13) knots",
+  "presentation":[[1,1,1,1,1,1,1,1,1,1,1,1,1],[2,2,2,2,2,2,2,2,2,2,2,2,2],[3,3,3,3,3,3,3,3,3,3,3,3,3]],
+  "action":"First generator is a13cycle; other two are identity. Index13 subgroup has presentation with26 independent generators of order13 by direct Schreier rewriting.",
+  "acceptance":"Integer Smith H1=(C13)^26, base b1(F13)=3, gain23>=13 and direct augmentation Z1=36. Split identity would predict35 and is not used. Independent Fox/Smith and13coordinate affine coefficient replay required.",
+  "limits":{"controls":1,"degree":13,"generators":3,"rows":39,"columns":27,"seconds":30},
+  "scope":"Known composite positive control; uniform all-field rank inequality and all-odd-prime generalization require a separate written cochain/Schreier proof. No target closure or priority claim."
+}

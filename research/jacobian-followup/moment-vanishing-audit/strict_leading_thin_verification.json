@@ -1,0 +1,127 @@
+{
+  "completed": true,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "7790f2ccb00b78cb6747264e7a1498bfd2119d2283af9a1c651ac3bfdfe7211a",
+  "PGL2_original_volume_and_SL2_pullback_exact": true,
+  "critical_pole_and_tame_pullback_equalities_exact": true,
+  "local_multiplicity_boundary_controls": [
+    {
+      "k": 2,
+      "subcritical_multiplicity": 1,
+      "critical_multiplicity": 2,
+      "critical_first_blowup_volume_order": -1
+    },
+    {
+      "k": 4,
+      "subcritical_multiplicity": 1,
+      "critical_multiplicity": 4,
+      "critical_first_blowup_volume_order": -1
+    },
+    {
+      "k": 6,
+      "subcritical_multiplicity": 1,
+      "critical_multiplicity": 6,
+      "critical_first_blowup_volume_order": -1
+    }
+  ],
+  "Puiseux_root_order_controls": [
+    {
+      "polynomial": "z^2+v",
+      "cover_v": "t^2",
+      "root_orders": [
+        1,
+        1
+      ],
+      "required_orders_for_finite_log_pole": [
+        2,
+        2
+      ],
+      "excluded": true
+    },
+    {
+      "polynomial": "z^2+v^2",
+      "cover_v": "t",
+      "root_orders": [
+        1,
+        1
+      ],
+      "required_orders_for_finite_log_pole": [
+        1,
+        1
+      ],
+      "excluded": false
+    }
+  ],
+  "left_weight_to_numerator_multiplicity_controls": [
+    {
+      "k": 4,
+      "numerator_order": 2,
+      "left_weight": 4
+    },
+    {
+      "k": 4,
+      "numerator_order": 4,
+      "left_weight": 0
+    },
+    {
+      "k": 6,
+      "numerator_order": 4,
+      "left_weight": 4
+    },
+    {
+      "k": 6,
+      "numerator_order": 6,
+      "left_weight": 0
+    }
+  ],
+  "actual_W8_Haar_coefficient_derivative_identity_exact": true,
+  "real_seed_positive_second_moment": "16/15",
+  "epsilon_real_seed_mod_epsilon_cubed_eventually_pure_but_not_pure": true,
+  "nullcone_incidence_dimension_controls": [
+    {
+      "D": 8,
+      "right_multiplicity": 1,
+      "ambient_dimension": 9,
+      "nullcone_dimension": 5,
+      "codimension": 4
+    },
+    {
+      "D": 12,
+      "right_multiplicity": 1,
+      "ambient_dimension": 13,
+      "nullcone_dimension": 7,
+      "codimension": 6
+    },
+    {
+      "D": 24,
+      "right_multiplicity": 2,
+      "ambient_dimension": 50,
+      "nullcone_dimension": 25,
+      "codimension": 25
+    },
+    {
+      "D": 60,
+      "right_multiplicity": 2,
+      "ambient_dimension": 122,
+      "nullcone_dimension": 61,
+      "codimension": 61
+    }
+  ],
+  "ordinary_depth_cutoff_arithmetic_exact": true,
+  "full_eventual_pure_leading_condition": "STRICT common left root multiplicity>D/2",
+  "full_thin_eventual_pure_radical": "ZERO on BOTH models,ALL degrees",
+  "all_regular_real_seed_polynomial_subalgebras": "eventual radical0 overC;nilpotents overANY commutativeC-algebra;all-original-marker safety",
+  "all_single_isotypic_nonreduced_families": "safe overANY commutativeC-algebra;2m>degQ+(D+2)(eta*nu-1),with certificate J^nu subset first-N pure ideal",
+  "ordinary_V12_quartic_deficit_preserved": true,
+  "ordinary_pure_ideal_equal_to_invariant_ideal_or_assumed_reduced": false,
+  "computed_actual_N_nu_prefix_or_intercept": false,
+  "field_cutoff_copied_without_intercept_to_nonreduced_rings": false,
+  "full_phase_unstable_inferred_from_leading_instability": false,
+  "independent_symmetrized_height_condition_closed": false,
+  "universal_root_valuation_lc_centre_period_and_symbolic_proofs_machine_verified": false,
+  "new_degree_support_density_or_prefix_campaign": false,
+  "full_exceptional_MZ_decisions": "OPEN on BOTH models:mixed-isotypic image-interior marked safety",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

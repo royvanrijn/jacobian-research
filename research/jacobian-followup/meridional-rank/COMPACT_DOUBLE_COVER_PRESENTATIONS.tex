@@ -1,0 +1,214 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\rank}{\operatorname{rank}}
+\title{Compact presentations and exact four-port assemblies for two double covers}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The preceding mutation theorem reduces eight retained ordinary cover-rank
+questions to two. This note supplies short, independently replayed
+presentations for those groups and identifies a common pair of formal
+fragment groups whose four port identifications reconstruct each source.
+The problem is now concentrated in those identifications. Neither rank
+two nor rank three is proved; no new knot equality follows. The uniform
+algebra below is a written working proof, unformalized and externally
+unreviewed. No worldwide novelty claim is made.
+
+\section{The two short source presentations}
+
+Write $G_A=\pi_1(\Sigma_2(13a_{129}))$ and
+$G_B=\pi_1(\Sigma_2(13a_{135}))$. The retained mutation theorem transfers
+their ordinary ranks to the respective blocks
+$\{129,136,194,197\}$ and $\{135,137,196,198\}$, where every name has
+prefix $13a$. Each member retains its own four-bridge upper certificate.
+
+\begin{theorem}\label{thm:short}
+The source groups have the following exact presentations:
+\begin{align*}
+G_A=\langle a,b,c\mid{}&
+c^{-2}b^{-1}c^{-2}b^{-1}c^{-2}b,\\[-2pt]
+&c^{-1}a^{-2}b^{-2}c^{-1}a^{-5}b^{-2},\\[-2pt]
+&c^{-1}a^3b^{-2}ca^3b^{-2}cb^{-2}\rangle;\\[4pt]
+G_B=\langle a,b,c\mid{}&
+c^{-3}b^{-3}a^{-1}c^{-3}a^2,\\[-2pt]
+&c^{-2}a^3b^3cab^3a^2,\\[-2pt]
+&b^{-5}a^2b^{-2}a^2\rangle.
+\end{align*}
+Their relator lengths are respectively $(9,13,15)$ and $(12,15,11)$.
+Their abelianizations are $C_{391}$ and $C_{401}$, and each maps onto
+the retained nonabelian group of order $5616$. Consequently
+$2\le\rank G_A,\rank G_B\le3$; the actual ranks remain undetermined.
+\end{theorem}
+
+The input is the literal pinned thirteen-crossing PD code for each
+source. With legacy arc indices $0,\ldots,12$, the normalized core
+presentation has $x_0=1$ and one relation
+\[
+ x_o x_a^{-1}x_o x_b^{-1}=1
+\]
+at each crossing with overarc $o$ and underarcs $a,b$. Its identification
+with the double-cover group is the previously retained classical
+core-group input, credited through Silver--Traldi--Williams. It is
+not inferred from the new simplification.
+
+Every accepted move is recorded: solving a relator for a generator
+occurring once; applying a free automorphism with an explicit inverse;
+or replacing a cyclic relator subword $U$ by $V^{-1}$ using another
+relator $UV$. The last replacement is precisely multiplication by
+$(UV)^{-1}$ after choosing the displayed cyclic representatives.
+Free reduction, cyclic conjugation, inversion, and removal of trivial
+or duplicate relators preserve the normal closure. These are exact
+Tietze and free-basis changes. A strictly decreasing length search
+chooses moves but supplies no rank lower bound when it stops.
+
+For $G_A$ the trace has nine eliminations, five automorphisms and three
+relator replacements. For $G_B$ the counts are nine, four and six.
+\texttt{verify\_compact\_covers.py} independently reconstructs the core
+words, replays every move, and checks both recorded generator maps.
+The surviving labels $(4,6,9)$ and $(4,9,12)$ are renamed $(a,b,c)$
+in Theorem~\ref{thm:short}; these are changed free-basis generators,
+not assertions that the final generators equal the original arcs.
+Integral determinantal divisors give Smith factors $(1,1,391)$ and
+$(1,1,401)$. Transported projective permutations satisfy every original
+and final relation and generate groups of order $5616$.
+These checks prove the finite identities used in the theorem.
+
+\section{A common pair of formal fragment groups}
+
+For each root, split its source PD into the first seven and last six
+crossings. Each part has four boundary edge labels, exactly
+$12,15,17,26$. Identifying only overpassing edge pairs gives nine arc
+classes on the inner fragment and eight on the outer fragment. Normalize
+the first class in each part to one and impose its core crossing
+relations. These formal groups have independently replayed presentations
+\begin{align*}
+ P&=\langle u,v\mid v^{-2}u^2v^{-1}u^{-3}v^{-1}u^2\rangle,\\
+ Q&=\langle x,y\mid y^{-2}x^{-2}y^{-2}x\rangle.
+\end{align*}
+Both roots give exactly these two abstract presentations after the
+recorded renamings. Each group has abelianization $\mathbb Z$.
+A retained cyclic-order-reversing ribbon map identifies the two outer
+fragments with their ports tracked. It is not an orientation-preserving
+diagram identification or an independently certified torus decomposition.
+
+Define $w=v u^{-2}v$. The normalized port words are:
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+Edge & Inner $p_e$ & Outer $q_e$ for $A$ & Outer $q_e$ for $B$\\
+\midrule
+$12$ & $w^3u$ & $1$ & $1$\\
+$15$ & $u^2v^{-1}u^3$ & $y^2$ & $y^2$\\
+$17$ & $vu$ & $x^{-3}y$ & $x^3y$\\
+$26$ & $1$ & $y^{-1}xy^{-2}x$ & $y^{-1}x^{-2}y^{-2}x^{-2}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+All words are in the fixed bases of $P,Q$ above. The internal labels
+used to obtain those bases differ between sources; the retained
+generator maps account for this.
+
+\begin{theorem}[Exact algebraic assembly]\label{thm:assembly}
+For $X=A,B$, with the corresponding outer column in the table,
+\[
+ G_X\cong
+ (P*Q*\langle z\rangle)\big/
+ \langle\!\langle p_e zq_e^{-1}:e=12,15,17,26\rangle\!\rangle.
+\]
+This is an exact group-presentation identity. No injectivity of a
+boundary subgroup or topological JSJ assertion is included.
+\end{theorem}
+
+\begin{proof}
+First undo the recorded fragment reductions. Write the inner normalized
+arc variables as $u_i$, with $u_1=1$, and the outer ones as $v_j$, with
+$v_1=1$. Introduce $z$ and set the unnormalized inner variables to
+$s_i=u_i z$. This is a free-basis change: $s_1=z$ and
+$u_i=s_i s_1^{-1}$. At every inner crossing, the right factors cancel:
+\[
+ (u_o z)(u_a z)^{-1}(u_o z)(u_b z)^{-1}
+ =u_o u_a^{-1}u_o u_b^{-1}.
+\]
+The four port relations now simply identify the incident inner $s_i$
+and outer $v_j$ variables. Independent edge-path reconstruction checks
+that the seventeen fragment arc classes, joined by these four
+independent identifications, are exactly the thirteen complete source
+arc classes. Thus the remaining thirteen crossing relators are the
+full source core relations, normalized at the outer base arc.
+
+The outer base is source arc $5$, rather than arc $0$ used earlier.
+Changing the normalized base from $j$ to $k$ sends each arc variable
+$x_i$ to $y_i y_j^{-1}$, where $y_k=1$. The inverse sends $y_i$ to
+$x_i x_k^{-1}$. Their compositions freely reduce to the identity, and
+the same displayed cancellation checks every crossing relation.
+Therefore the two normalizations give isomorphic source groups.
+Reapplying the independently replayed compact fragment moves gives
+the displayed assembly.
+\end{proof}
+
+The assembly initially has five generators and six relators. Its own
+recorded reductions return three-generator presentations with cyclic
+abelianizations $391$ and $401$. The direct presentations in
+Theorem~\ref{thm:short} and the port assemblies are two exact descriptions
+of each source; neither asserts minimality.
+
+\section{Independent checks and the boundary of the result}
+
+The compact verifier imports no producer simplification routine.
+The assembly verifier reuses that independent word replay and builds
+fragment arc classes by graph traversal, rather than the producer's
+union construction. It checks all four literal ports and their words,
+all fragment and assembly traces, and the seventeen-to-thirteen arc
+identification. A legacy PD parser is shared only for old arc names,
+with geometric paths checked; this dependence is disclosed.
+
+Three known algebraic controls check ranks two and three
+through exact simplification and $\mathbb F_3$ homology: two and three
+free factors $C_3$, and a rebased two-factor presentation with an extra
+eliminable generator. Five compact corruptions and four additional
+port/assembly corruptions are rejected, including a false assertion
+that all source arcs have been generated from the outer fragment.
+
+Indeed, initializing the known outer arc words and using only
+$x_b=x_o x_a^{-1}x_o$ whenever the overarc and one underarc are known
+stalls on source arcs $0,1,2,3,4$ in both roots. That verifies the limit
+of this particular deduction. It proves neither rank three nor absence
+of another two-generator certificate. Two-generated pieces alone do
+not make the assembled group two-generated.
+
+The selected abstract Tait graphs also admit exact series/parallel
+reductions to $K_4$. One branch contains seven original crossings,
+another adjacent branch two, and the other four one each. The seven-edge
+network has tree/separating-forest counts $(19,14)$ for $A$ and $(14,19)$
+for $B$. Enumerating the sixteen $K_4$ spanning trees gives the whole
+tree-count formula $11T+13F$, hence $391$ and $401$. These are graph
+network data. Their ratios have not been certified as rational-tangle
+slopes; series/parallel arithmetic alone does not establish the needed
+geometric filling model.
+
+Small, separately frozen software probes give only leads. Candidate
+cyclic-double-cover fillings have the expected homology, but numerical
+shapes are degenerate and a single Regina standard-recognition pass
+recognizes neither target. The figure-eight control is recognized as
+$L(5,2)$. Neither target's peripheral filling provenance or exact
+core-to-triangulation transport is certified by those probes. No
+hyperbolicity, graph-manifold, Seifert or JSJ conclusion is drawn.
+
+The next rank question is to determine the boundary peripheral words
+and the nature of the two pieces, then certify the relevant gluing
+and injectivity before using a manifold or group-amalgamation rank
+theorem. Brunner/Ito presentations and Boileau--Weidmann rank papers
+are source leads, not imported classifications in this result.
+The finite packages are \texttt{compact\_cover\_verification.json} and
+\texttt{port\_assembly\_verification.json}. The catalogue remains at
+42 sources. All original sixteen target equalities, full MRC and the
+broader source and priority audits remain open.
+
+\end{document}

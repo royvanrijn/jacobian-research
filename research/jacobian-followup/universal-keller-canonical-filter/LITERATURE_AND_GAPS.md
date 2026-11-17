@@ -1,0 +1,15 @@
+# Literature transfer and what the canonical filter changes
+
+Reviewed15 November2026. [Written proof](PROOF.md), [primary source pins](sources.json) and exact controls distinguish imported facts from the new all-rank construction. Publication priority is unverified.
+
+T. Shaska, [Graded Keller maps and the Jacobian Conjecture](https://arxiv.org/html/2607.20210v2), v2, gives the announced cubic in equations1-2 and discusses its inverse cubic and image in Sections4-5. Its introduction explicitly attributes the2026 discovery to Levent Alpoge and the AI system Fable. The [Archive of Formal Proofs entry](https://isa-afp.org/entries/Jacobian_Counterexample.html) independently verifies the original determinant and rational collision; its note also identifies AI-assisted proof engineering. These are specific author attributions. They do not formally certify the new receiver, seed-fibre identities or all-rank descent.
+
+The repository already retained that cubic, its complete image calculation and the normalized compiler. The useful transfer is its actual EMPTY fibre together with a SINGLETON fibre. They turn an invariant polynomial on a finite fibre into a whole-source Keller filter. Nonproperness alone would not supply an empty-fibre certificate. The exact empty, singleton and split triple fibres are proved directly over Z[1/6] in the new proof and controlled by exact ideal arithmetic.
+
+The [Stacks Project, Section97.11](https://stacks.math.columbia.edu/tag/05Y8), Lemmas1-3, supplies restriction-of-scalars descent, base change and etaleness. Here the underlying receiver is explicitly the vector bundle A^3 plus three trivial coordinates. Its trace formula and split finite fibre computation prove descent even over nonreduced bases. Reynolds averaging and finite-set interpolation in the general orbit-filter lemma are classical; no new invariant-theory theorem is claimed.
+
+The new deductions are the equivariant whole-affine filter, its fixed trace selector for every rank, a canonical bundle SELF-MAP over B S_N with the exact input cover, simultaneous whole affine subgroup-fixed restrictions, and the quantitative degree/dimension/volume package. A narrow search for equivariant Keller fibre filters did not establish a publication-priority conclusion.
+
+The construction escapes the previous primitive-line inertia obstruction by using the algebra itself, and the full-degree obstruction by increasing generic degree to3^(N+1). It does not escape the published all-scheme fixed-receiver obstruction: the bundle map varies functorially with A and retains stack inertia. It also has two explicit nontrivial canonical self-factors, so its atomicity is FALSE. Atomic canonical realization and smaller bounds remain research questions; non-atomic canonical polynomial-bundle existence is now constructed.
+
+A frame invariant under all input automorphisms is separately impossible even after trivial identity stabilization: split S_N acts faithfully on A^3. This is the elementary inertia boundary of framed descent. It does not obstruct the constructed stack-valued bundle map or noncanonical coordinates over a field.

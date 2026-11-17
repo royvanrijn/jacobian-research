@@ -1,0 +1,72 @@
+[
+  {
+    "file": "MATH_STATUS.json",
+    "id": "PF2RULED117",
+    "sha256": "b823dc51b09b05990f8642e0a48fe3ccf9f29a178d65a622b63e52982ca125f4",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-NILRADICAL-TRACE-RESTRICTION-AND-CYCLIC-DESCENT",
+    "sha256": "b9cc962dce099f7623e6fae562cd19c0c0969a635536f8d901359cda9bd73759",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-QUARTIC-RULED-COMPATIBILITY",
+    "sha256": "e40d47c07eebe7d3e13dd60468f4b684be540c8615cb7af0da16b21e50d3afe7",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-MOMENT-ALL-DEGREE",
+    "sha256": "a2f6a29fc8f892740f859da385f2b0bec020770976a8703c323bb22dbe59a9d4",
+    "changed_fields": [
+      "next_step"
+    ]
+  }
+]

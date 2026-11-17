@@ -1,0 +1,238 @@
+{
+  "fixed_offsets": [
+    {
+      "offset": 0,
+      "characteristic_zero_squarefree": true,
+      "integer_discriminant": "1",
+      "safe_all_larger_primes_threshold": 1,
+      "irreducibility_claimed": false,
+      "all_offsets_claimed": false,
+      "numerical_density_evidence": false
+    },
+    {
+      "offset": 1,
+      "characteristic_zero_squarefree": true,
+      "integer_discriminant": "1",
+      "safe_all_larger_primes_threshold": 6,
+      "irreducibility_claimed": false,
+      "all_offsets_claimed": false,
+      "numerical_density_evidence": false
+    },
+    {
+      "offset": 2,
+      "characteristic_zero_squarefree": true,
+      "integer_discriminant": "-1913932800",
+      "safe_all_larger_primes_threshold": 1913932800,
+      "irreducibility_claimed": false,
+      "all_offsets_claimed": false,
+      "numerical_density_evidence": false
+    },
+    {
+      "offset": 3,
+      "characteristic_zero_squarefree": true,
+      "integer_discriminant": "-1106394917442496176945364992000000",
+      "safe_all_larger_primes_threshold": 1106394917442496176945364992000000,
+      "irreducibility_claimed": false,
+      "all_offsets_claimed": false,
+      "numerical_density_evidence": false
+    },
+    {
+      "offset": 13,
+      "characteristic_zero_squarefree": true,
+      "integer_discriminant": "1347072737373677907506226202139127512990886669270425472773708393459301743295129213865654389334294644489093346518663156337737518820211880345706330172832153179176689885330930537633937218880419453493957980265569388386783946534128939905023028160907150867165140761763013446802712215068066620419997335346198180336940532568883730074601018474494041679223607681193008600929458181149594233396526190165437565183698540133515555136436657511131922833084681524891514087483171096089577155561185178947692033571070060817528603485701473379715962433053031445878025977161061004721495203588024982745530403942404516175274092876864217078604675688271154047176085999572899789277639959728486721714903182717925497395693630130440016781727642025633777544429519650736259880607622381339135319251664092838081690925745841578404830205806324313691164374872754846011970080054783254226729774142345682679776477218622604154112730248996622655397440770700822481517249270712386472224444790639591884527956452674081975844817942611469369857870342331299017372593467069730464992528133102256336989274272736383971170220236834526130017949083550390658843038969291611748331514889893507376413876002481552629918789393334780126727519444573075374650844774400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "safe_all_larger_primes_threshold": 1347072737373677907506226202139127512990886669270425472773708393459301743295129213865654389334294644489093346518663156337737518820211880345706330172832153179176689885330930537633937218880419453493957980265569388386783946534128939905023028160907150867165140761763013446802712215068066620419997335346198180336940532568883730074601018474494041679223607681193008600929458181149594233396526190165437565183698540133515555136436657511131922833084681524891514087483171096089577155561185178947692033571070060817528603485701473379715962433053031445878025977161061004721495203588024982745530403942404516175274092876864217078604675688271154047176085999572899789277639959728486721714903182717925497395693630130440016781727642025633777544429519650736259880607622381339135319251664092838081690925745841578404830205806324313691164374872754846011970080054783254226729774142345682679776477218622604154112730248996622655397440770700822481517249270712386472224444790639591884527956452674081975844817942611469369857870342331299017372593467069730464992528133102256336989274272736383971170220236834526130017949083550390658843038969291611748331514889893507376413876002481552629918789393334780126727519444573075374650844774400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+      "irreducibility_claimed": false,
+      "all_offsets_claimed": false,
+      "numerical_density_evidence": false
+    }
+  ],
+  "local_windows": [
+    {
+      "status": "shifted_good_offset_certified",
+      "terminal_index": 45,
+      "multiplier": 1,
+      "prime": 43,
+      "offset": 2,
+      "preceding_prime": 43,
+      "gap": 2,
+      "square_divisor_degree_bound": 1,
+      "degree_bound_below_shifted_prime": true,
+      "residual_coefficients": [
+        1,
+        21,
+        4
+      ],
+      "residual_degree": 2,
+      "residual_gcd_coefficients": [
+        1
+      ],
+      "residual_gcd_degree": 0,
+      "residual_squarefree": true,
+      "bezout_left": [
+        29
+      ],
+      "bezout_right": [
+        13,
+        7
+      ],
+      "squarefree_certified": true,
+      "counterexample_claimed": false,
+      "degree_preservation_reason": "g(0)=+-1 and all factor slopes horizontal when degree<p",
+      "all_index_SFC_claimed": false,
+      "numerical_density_evidence": false,
+      "gamma_shape": "1",
+      "theorem": "FIRDENSITYONE20261116"
+    },
+    {
+      "status": "shifted_good_offset_certified",
+      "terminal_index": 115,
+      "multiplier": 3,
+      "prime": 37,
+      "offset": 4,
+      "preceding_prime": 113,
+      "gap": 2,
+      "square_divisor_degree_bound": 1,
+      "degree_bound_below_shifted_prime": true,
+      "residual_coefficients": [
+        1,
+        31,
+        5,
+        13,
+        21
+      ],
+      "residual_degree": 4,
+      "residual_gcd_coefficients": [
+        1
+      ],
+      "residual_gcd_degree": 0,
+      "residual_squarefree": true,
+      "bezout_left": [
+        25,
+        2,
+        24
+      ],
+      "bezout_right": [
+        4,
+        19,
+        25,
+        31
+      ],
+      "squarefree_certified": true,
+      "counterexample_claimed": false,
+      "degree_preservation_reason": "g(0)=+-1 and all factor slopes horizontal when degree<p",
+      "all_index_SFC_claimed": false,
+      "numerical_density_evidence": false,
+      "gamma_shape": "1",
+      "theorem": "FIRDENSITYONE20261116"
+    },
+    {
+      "status": "shifted_good_offset_certified",
+      "terminal_index": 465,
+      "multiplier": 4,
+      "prime": 113,
+      "offset": 13,
+      "preceding_prime": 463,
+      "gap": 2,
+      "square_divisor_degree_bound": 1,
+      "degree_bound_below_shifted_prime": true,
+      "residual_coefficients": [
+        1,
+        94,
+        64,
+        9,
+        81,
+        40,
+        6,
+        1,
+        81,
+        62,
+        2,
+        23,
+        87,
+        110
+      ],
+      "residual_degree": 13,
+      "residual_gcd_coefficients": [
+        1
+      ],
+      "residual_gcd_degree": 0,
+      "residual_squarefree": true,
+      "bezout_left": [
+        58,
+        38,
+        30,
+        34,
+        97,
+        31,
+        18,
+        84,
+        66,
+        67,
+        17,
+        102
+      ],
+      "bezout_right": [
+        3,
+        101,
+        11,
+        63,
+        87,
+        49,
+        38,
+        19,
+        18,
+        76,
+        95,
+        63,
+        53
+      ],
+      "squarefree_certified": true,
+      "counterexample_claimed": false,
+      "degree_preservation_reason": "g(0)=+-1 and all factor slopes horizontal when degree<p",
+      "all_index_SFC_claimed": false,
+      "numerical_density_evidence": false,
+      "gamma_shape": "1",
+      "theorem": "FIRDENSITYONE20261116"
+    },
+    {
+      "status": "this_local_witness_unresolved",
+      "terminal_index": 217,
+      "multiplier": 2,
+      "prime": 107,
+      "offset": 3,
+      "preceding_prime": 211,
+      "gap": 6,
+      "square_divisor_degree_bound": 3,
+      "degree_bound_below_shifted_prime": true,
+      "residual_coefficients": [
+        1,
+        20,
+        43,
+        83
+      ],
+      "residual_degree": 3,
+      "residual_gcd_coefficients": [
+        19,
+        1
+      ],
+      "residual_gcd_degree": 1,
+      "residual_squarefree": false,
+      "bezout_left": [
+        42
+      ],
+      "bezout_right": [
+        47,
+        93
+      ],
+      "squarefree_certified": false,
+      "counterexample_claimed": false,
+      "degree_preservation_reason": "g(0)=+-1 and all factor slopes horizontal when degree<p",
+      "all_index_SFC_claimed": false,
+      "numerical_density_evidence": false,
+      "gamma_shape": "1",
+      "theorem": "FIRDENSITYONE20261116"
+    }
+  ],
+  "finite_controls_are_not_numerical_density_evidence": true,
+  "all_index_SFC_claimed": false
+}

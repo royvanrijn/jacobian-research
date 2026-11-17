@@ -1,6 +1,13 @@
 # The two-mask \(A_4\) factorization frontier
 
-## 1. How the construction continues
+**Construction status, 15 November 2026:** [KMFI66 and the construction-closure bridge](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+exclude the proposed A4-preserving polynomial Keller completion on ordinary
+affine space in every dimension and faithful transitive action, subject to
+the internal central-cover proof. All local calculations below are retained.
+Construction continuations are historical; unresolved local classifications
+do not reopen this objective. Wright's A4 boundary states remain separate.
+
+## 1. How the construction continues (historical; global objective closed)
 
 The [pure-target lift](A4_PURE_TARGET_LEDGER_LIFT.md) gives
 

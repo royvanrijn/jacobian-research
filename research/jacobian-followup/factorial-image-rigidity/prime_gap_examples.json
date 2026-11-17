@@ -1,0 +1,2015 @@
+{
+  "certificates": [
+    {
+      "terminal_index": 30,
+      "prime": 17,
+      "gap": 13,
+      "support_index": 11,
+      "edge_left": [
+        11,
+        3
+      ],
+      "edge_right": [
+        28,
+        9
+      ],
+      "width": 17,
+      "height": 6,
+      "reduced_denominator": 17,
+      "minimum_adjusted_height_numerator": -15,
+      "adjusted_height_denominator": 17,
+      "remaining_polygon_width": 13,
+      "square_divisor_degree_bound": 6,
+      "even_square_divisor_degree_bound": 6,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 30,
+      "prime": 19,
+      "gap": 11,
+      "support_index": 3,
+      "edge_left": [
+        3,
+        0
+      ],
+      "edge_right": [
+        22,
+        6
+      ],
+      "width": 19,
+      "height": 6,
+      "reduced_denominator": 19,
+      "minimum_adjusted_height_numerator": -18,
+      "adjusted_height_denominator": 19,
+      "remaining_polygon_width": 11,
+      "square_divisor_degree_bound": 5,
+      "even_square_divisor_degree_bound": 4,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 30,
+      "prime": 23,
+      "gap": 7,
+      "support_index": 7,
+      "edge_left": [
+        7,
+        1
+      ],
+      "edge_right": [
+        30,
+        7
+      ],
+      "width": 23,
+      "height": 6,
+      "reduced_denominator": 23,
+      "minimum_adjusted_height_numerator": -19,
+      "adjusted_height_denominator": 23,
+      "remaining_polygon_width": 7,
+      "square_divisor_degree_bound": 3,
+      "even_square_divisor_degree_bound": 2,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 30,
+      "prime": 29,
+      "gap": 1,
+      "support_index": 1,
+      "edge_left": [
+        1,
+        0
+      ],
+      "edge_right": [
+        30,
+        6
+      ],
+      "width": 29,
+      "height": 6,
+      "reduced_denominator": 29,
+      "minimum_adjusted_height_numerator": -6,
+      "adjusted_height_denominator": 29,
+      "remaining_polygon_width": 1,
+      "square_divisor_degree_bound": 0,
+      "even_square_divisor_degree_bound": 0,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 31,
+      "prime": 17,
+      "gap": 14,
+      "support_index": 14,
+      "edge_left": [
+        14,
+        4
+      ],
+      "edge_right": [
+        31,
+        10
+      ],
+      "width": 17,
+      "height": 6,
+      "reduced_denominator": 17,
+      "minimum_adjusted_height_numerator": -16,
+      "adjusted_height_denominator": 17,
+      "remaining_polygon_width": 14,
+      "square_divisor_degree_bound": 7,
+      "even_square_divisor_degree_bound": 6,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 31,
+      "prime": 19,
+      "gap": 12,
+      "support_index": 3,
+      "edge_left": [
+        3,
+        0
+      ],
+      "edge_right": [
+        22,
+        6
+      ],
+      "width": 19,
+      "height": 6,
+      "reduced_denominator": 19,
+      "minimum_adjusted_height_numerator": -18,
+      "adjusted_height_denominator": 19,
+      "remaining_polygon_width": 12,
+      "square_divisor_degree_bound": 6,
+      "even_square_divisor_degree_bound": 6,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 31,
+      "prime": 23,
+      "gap": 8,
+      "support_index": 7,
+      "edge_left": [
+        7,
+        1
+      ],
+      "edge_right": [
+        30,
+        7
+      ],
+      "width": 23,
+      "height": 6,
+      "reduced_denominator": 23,
+      "minimum_adjusted_height_numerator": -19,
+      "adjusted_height_denominator": 23,
+      "remaining_polygon_width": 8,
+      "square_divisor_degree_bound": 4,
+      "even_square_divisor_degree_bound": 4,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 31,
+      "prime": 29,
+      "gap": 2,
+      "support_index": 2,
+      "edge_left": [
+        2,
+        0
+      ],
+      "edge_right": [
+        31,
+        6
+      ],
+      "width": 29,
+      "height": 6,
+      "reduced_denominator": 29,
+      "minimum_adjusted_height_numerator": -12,
+      "adjusted_height_denominator": 29,
+      "remaining_polygon_width": 2,
+      "square_divisor_degree_bound": 1,
+      "even_square_divisor_degree_bound": 0,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 31,
+      "prime": 31,
+      "gap": 0,
+      "support_index": 0,
+      "edge_left": [
+        0,
+        0
+      ],
+      "edge_right": [
+        31,
+        6
+      ],
+      "width": 31,
+      "height": 6,
+      "reduced_denominator": 31,
+      "minimum_adjusted_height_numerator": 0,
+      "adjusted_height_denominator": 31,
+      "remaining_polygon_width": 0,
+      "square_divisor_degree_bound": 0,
+      "even_square_divisor_degree_bound": 0,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 37,
+      "prime": 19,
+      "gap": 18,
+      "support_index": 3,
+      "edge_left": [
+        3,
+        0
+      ],
+      "edge_right": [
+        22,
+        6
+      ],
+      "width": 19,
+      "height": 6,
+      "reduced_denominator": 19,
+      "minimum_adjusted_height_numerator": -18,
+      "adjusted_height_denominator": 19,
+      "remaining_polygon_width": 18,
+      "square_divisor_degree_bound": 9,
+      "even_square_divisor_degree_bound": 8,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 37,
+      "prime": 23,
+      "gap": 14,
+      "support_index": 11,
+      "edge_left": [
+        11,
+        2
+      ],
+      "edge_right": [
+        34,
+        8
+      ],
+      "width": 23,
+      "height": 6,
+      "reduced_denominator": 23,
+      "minimum_adjusted_height_numerator": -20,
+      "adjusted_height_denominator": 23,
+      "remaining_polygon_width": 14,
+      "square_divisor_degree_bound": 7,
+      "even_square_divisor_degree_bound": 6,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 37,
+      "prime": 29,
+      "gap": 8,
+      "support_index": 4,
+      "edge_left": [
+        4,
+        0
+      ],
+      "edge_right": [
+        33,
+        6
+      ],
+      "width": 29,
+      "height": 6,
+      "reduced_denominator": 29,
+      "minimum_adjusted_height_numerator": -24,
+      "adjusted_height_denominator": 29,
+      "remaining_polygon_width": 8,
+      "square_divisor_degree_bound": 4,
+      "even_square_divisor_degree_bound": 4,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 37,
+      "prime": 31,
+      "gap": 6,
+      "support_index": 5,
+      "edge_left": [
+        5,
+        0
+      ],
+      "edge_right": [
+        36,
+        6
+      ],
+      "width": 31,
+      "height": 6,
+      "reduced_denominator": 31,
+      "minimum_adjusted_height_numerator": -30,
+      "adjusted_height_denominator": 31,
+      "remaining_polygon_width": 6,
+      "square_divisor_degree_bound": 3,
+      "even_square_divisor_degree_bound": 2,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 37,
+      "prime": 37,
+      "gap": 0,
+      "support_index": 0,
+      "edge_left": [
+        0,
+        0
+      ],
+      "edge_right": [
+        37,
+        6
+      ],
+      "width": 37,
+      "height": 6,
+      "reduced_denominator": 37,
+      "minimum_adjusted_height_numerator": 0,
+      "adjusted_height_denominator": 37,
+      "remaining_polygon_width": 0,
+      "square_divisor_degree_bound": 0,
+      "even_square_divisor_degree_bound": 0,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 42,
+      "prime": 23,
+      "gap": 19,
+      "support_index": 19,
+      "edge_left": [
+        19,
+        4
+      ],
+      "edge_right": [
+        42,
+        10
+      ],
+      "width": 23,
+      "height": 6,
+      "reduced_denominator": 23,
+      "minimum_adjusted_height_numerator": -22,
+      "adjusted_height_denominator": 23,
+      "remaining_polygon_width": 19,
+      "square_divisor_degree_bound": 9,
+      "even_square_divisor_degree_bound": 8,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 42,
+      "prime": 29,
+      "gap": 13,
+      "support_index": 9,
+      "edge_left": [
+        9,
+        1
+      ],
+      "edge_right": [
+        38,
+        7
+      ],
+      "width": 29,
+      "height": 6,
+      "reduced_denominator": 29,
+      "minimum_adjusted_height_numerator": -25,
+      "adjusted_height_denominator": 29,
+      "remaining_polygon_width": 13,
+      "square_divisor_degree_bound": 6,
+      "even_square_divisor_degree_bound": 6,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 42,
+      "prime": 31,
+      "gap": 11,
+      "support_index": 5,
+      "edge_left": [
+        5,
+        0
+      ],
+      "edge_right": [
+        36,
+        6
+      ],
+      "width": 31,
+      "height": 6,
+      "reduced_denominator": 31,
+      "minimum_adjusted_height_numerator": -30,
+      "adjusted_height_denominator": 31,
+      "remaining_polygon_width": 11,
+      "square_divisor_degree_bound": 5,
+      "even_square_divisor_degree_bound": 4,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 42,
+      "prime": 37,
+      "gap": 5,
+      "support_index": 5,
+      "edge_left": [
+        5,
+        0
+      ],
+      "edge_right": [
+        42,
+        6
+      ],
+      "width": 37,
+      "height": 6,
+      "reduced_denominator": 37,
+      "minimum_adjusted_height_numerator": -30,
+      "adjusted_height_denominator": 37,
+      "remaining_polygon_width": 5,
+      "square_divisor_degree_bound": 2,
+      "even_square_divisor_degree_bound": 2,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 42,
+      "prime": 41,
+      "gap": 1,
+      "support_index": 1,
+      "edge_left": [
+        1,
+        0
+      ],
+      "edge_right": [
+        42,
+        6
+      ],
+      "width": 41,
+      "height": 6,
+      "reduced_denominator": 41,
+      "minimum_adjusted_height_numerator": -6,
+      "adjusted_height_denominator": 41,
+      "remaining_polygon_width": 1,
+      "square_divisor_degree_bound": 0,
+      "even_square_divisor_degree_bound": 0,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 64,
+      "prime": 37,
+      "gap": 27,
+      "support_index": 6,
+      "edge_left": [
+        6,
+        0
+      ],
+      "edge_right": [
+        43,
+        6
+      ],
+      "width": 37,
+      "height": 6,
+      "reduced_denominator": 37,
+      "minimum_adjusted_height_numerator": -36,
+      "adjusted_height_denominator": 37,
+      "remaining_polygon_width": 27,
+      "square_divisor_degree_bound": 13,
+      "even_square_divisor_degree_bound": 12,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 64,
+      "prime": 41,
+      "gap": 23,
+      "support_index": 20,
+      "edge_left": [
+        20,
+        2
+      ],
+      "edge_right": [
+        61,
+        8
+      ],
+      "width": 41,
+      "height": 6,
+      "reduced_denominator": 41,
+      "minimum_adjusted_height_numerator": -38,
+      "adjusted_height_denominator": 41,
+      "remaining_polygon_width": 23,
+      "square_divisor_degree_bound": 11,
+      "even_square_divisor_degree_bound": 10,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 64,
+      "prime": 43,
+      "gap": 21,
+      "support_index": 7,
+      "edge_left": [
+        7,
+        0
+      ],
+      "edge_right": [
+        50,
+        6
+      ],
+      "width": 43,
+      "height": 6,
+      "reduced_denominator": 43,
+      "minimum_adjusted_height_numerator": -42,
+      "adjusted_height_denominator": 43,
+      "remaining_polygon_width": 21,
+      "square_divisor_degree_bound": 10,
+      "even_square_divisor_degree_bound": 10,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 64,
+      "prime": 47,
+      "gap": 17,
+      "support_index": 15,
+      "edge_left": [
+        15,
+        1
+      ],
+      "edge_right": [
+        62,
+        7
+      ],
+      "width": 47,
+      "height": 6,
+      "reduced_denominator": 47,
+      "minimum_adjusted_height_numerator": -43,
+      "adjusted_height_denominator": 47,
+      "remaining_polygon_width": 17,
+      "square_divisor_degree_bound": 8,
+      "even_square_divisor_degree_bound": 8,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 64,
+      "prime": 53,
+      "gap": 11,
+      "support_index": 8,
+      "edge_left": [
+        8,
+        0
+      ],
+      "edge_right": [
+        61,
+        6
+      ],
+      "width": 53,
+      "height": 6,
+      "reduced_denominator": 53,
+      "minimum_adjusted_height_numerator": -48,
+      "adjusted_height_denominator": 53,
+      "remaining_polygon_width": 11,
+      "square_divisor_degree_bound": 5,
+      "even_square_divisor_degree_bound": 4,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 64,
+      "prime": 59,
+      "gap": 5,
+      "support_index": 5,
+      "edge_left": [
+        5,
+        0
+      ],
+      "edge_right": [
+        64,
+        6
+      ],
+      "width": 59,
+      "height": 6,
+      "reduced_denominator": 59,
+      "minimum_adjusted_height_numerator": -30,
+      "adjusted_height_denominator": 59,
+      "remaining_polygon_width": 5,
+      "square_divisor_degree_bound": 2,
+      "even_square_divisor_degree_bound": 2,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 64,
+      "prime": 61,
+      "gap": 3,
+      "support_index": 3,
+      "edge_left": [
+        3,
+        0
+      ],
+      "edge_right": [
+        64,
+        6
+      ],
+      "width": 61,
+      "height": 6,
+      "reduced_denominator": 61,
+      "minimum_adjusted_height_numerator": -18,
+      "adjusted_height_denominator": 61,
+      "remaining_polygon_width": 3,
+      "square_divisor_degree_bound": 1,
+      "even_square_divisor_degree_bound": 0,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 53,
+      "gap": 47,
+      "support_index": 44,
+      "edge_left": [
+        44,
+        4
+      ],
+      "edge_right": [
+        97,
+        10
+      ],
+      "width": 53,
+      "height": 6,
+      "reduced_denominator": 53,
+      "minimum_adjusted_height_numerator": -52,
+      "adjusted_height_denominator": 53,
+      "remaining_polygon_width": 47,
+      "square_divisor_degree_bound": 23,
+      "even_square_divisor_degree_bound": 22,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 59,
+      "gap": 41,
+      "support_index": 39,
+      "edge_left": [
+        39,
+        3
+      ],
+      "edge_right": [
+        98,
+        9
+      ],
+      "width": 59,
+      "height": 6,
+      "reduced_denominator": 59,
+      "minimum_adjusted_height_numerator": -57,
+      "adjusted_height_denominator": 59,
+      "remaining_polygon_width": 41,
+      "square_divisor_degree_bound": 20,
+      "even_square_divisor_degree_bound": 20,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 61,
+      "gap": 39,
+      "support_index": 10,
+      "edge_left": [
+        10,
+        0
+      ],
+      "edge_right": [
+        71,
+        6
+      ],
+      "width": 61,
+      "height": 6,
+      "reduced_denominator": 61,
+      "minimum_adjusted_height_numerator": -60,
+      "adjusted_height_denominator": 61,
+      "remaining_polygon_width": 39,
+      "square_divisor_degree_bound": 19,
+      "even_square_divisor_degree_bound": 18,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 67,
+      "gap": 33,
+      "support_index": 11,
+      "edge_left": [
+        11,
+        0
+      ],
+      "edge_right": [
+        78,
+        6
+      ],
+      "width": 67,
+      "height": 6,
+      "reduced_denominator": 67,
+      "minimum_adjusted_height_numerator": -66,
+      "adjusted_height_denominator": 67,
+      "remaining_polygon_width": 33,
+      "square_divisor_degree_bound": 16,
+      "even_square_divisor_degree_bound": 16,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 71,
+      "gap": 29,
+      "support_index": 23,
+      "edge_left": [
+        23,
+        1
+      ],
+      "edge_right": [
+        94,
+        7
+      ],
+      "width": 71,
+      "height": 6,
+      "reduced_denominator": 71,
+      "minimum_adjusted_height_numerator": -67,
+      "adjusted_height_denominator": 71,
+      "remaining_polygon_width": 29,
+      "square_divisor_degree_bound": 14,
+      "even_square_divisor_degree_bound": 14,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 73,
+      "gap": 27,
+      "support_index": 12,
+      "edge_left": [
+        12,
+        0
+      ],
+      "edge_right": [
+        85,
+        6
+      ],
+      "width": 73,
+      "height": 6,
+      "reduced_denominator": 73,
+      "minimum_adjusted_height_numerator": -72,
+      "adjusted_height_denominator": 73,
+      "remaining_polygon_width": 27,
+      "square_divisor_degree_bound": 13,
+      "even_square_divisor_degree_bound": 12,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 79,
+      "gap": 21,
+      "support_index": 13,
+      "edge_left": [
+        13,
+        0
+      ],
+      "edge_right": [
+        92,
+        6
+      ],
+      "width": 79,
+      "height": 6,
+      "reduced_denominator": 79,
+      "minimum_adjusted_height_numerator": -78,
+      "adjusted_height_denominator": 79,
+      "remaining_polygon_width": 21,
+      "square_divisor_degree_bound": 10,
+      "even_square_divisor_degree_bound": 10,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 83,
+      "gap": 17,
+      "support_index": 13,
+      "edge_left": [
+        13,
+        0
+      ],
+      "edge_right": [
+        96,
+        6
+      ],
+      "width": 83,
+      "height": 6,
+      "reduced_denominator": 83,
+      "minimum_adjusted_height_numerator": -78,
+      "adjusted_height_denominator": 83,
+      "remaining_polygon_width": 17,
+      "square_divisor_degree_bound": 8,
+      "even_square_divisor_degree_bound": 8,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 89,
+      "gap": 11,
+      "support_index": 11,
+      "edge_left": [
+        11,
+        0
+      ],
+      "edge_right": [
+        100,
+        6
+      ],
+      "width": 89,
+      "height": 6,
+      "reduced_denominator": 89,
+      "minimum_adjusted_height_numerator": -66,
+      "adjusted_height_denominator": 89,
+      "remaining_polygon_width": 11,
+      "square_divisor_degree_bound": 5,
+      "even_square_divisor_degree_bound": 4,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 97,
+      "gap": 3,
+      "support_index": 3,
+      "edge_left": [
+        3,
+        0
+      ],
+      "edge_right": [
+        100,
+        6
+      ],
+      "width": 97,
+      "height": 6,
+      "reduced_denominator": 97,
+      "minimum_adjusted_height_numerator": -18,
+      "adjusted_height_denominator": 97,
+      "remaining_polygon_width": 3,
+      "square_divisor_degree_bound": 1,
+      "even_square_divisor_degree_bound": 0,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116"
+    },
+    {
+      "terminal_index": 30,
+      "prime": 29,
+      "gap": 1,
+      "branch": "q>6n/7: exposed width-q edge",
+      "expected_slope_edges": [
+        {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            1,
+            0
+          ],
+          "e": 1,
+          "h": 0
+        },
+        {
+          "left": [
+            1,
+            0
+          ],
+          "right": [
+            30,
+            6
+          ],
+          "e": 29,
+          "h": 6
+        }
+      ],
+      "square_divisor_degree_bound": 0,
+      "even_square_divisor_degree_bound": 0,
+      "uniform_bound": "degree<n/14 for every n>=30",
+      "published_prime_input": "Nagura1952 at5n/6>=25",
+      "gamma_shape": "1",
+      "theorem": "FIRFOURTEENTH20261116"
+    },
+    {
+      "terminal_index": 31,
+      "prime": 29,
+      "gap": 2,
+      "branch": "q>6n/7: exposed width-q edge",
+      "expected_slope_edges": [
+        {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            2,
+            0
+          ],
+          "e": 1,
+          "h": 0
+        },
+        {
+          "left": [
+            2,
+            0
+          ],
+          "right": [
+            31,
+            6
+          ],
+          "e": 29,
+          "h": 6
+        }
+      ],
+      "square_divisor_degree_bound": 1,
+      "even_square_divisor_degree_bound": 0,
+      "uniform_bound": "degree<n/14 for every n>=30",
+      "published_prime_input": "Nagura1952 at5n/6>=25",
+      "gamma_shape": "1",
+      "theorem": "FIRFOURTEENTH20261116"
+    },
+    {
+      "terminal_index": 35,
+      "prime": 31,
+      "gap": 4,
+      "branch": "q>6n/7: exposed width-q edge",
+      "expected_slope_edges": [
+        {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            4,
+            0
+          ],
+          "e": 1,
+          "h": 0
+        },
+        {
+          "left": [
+            4,
+            0
+          ],
+          "right": [
+            35,
+            6
+          ],
+          "e": 31,
+          "h": 6
+        }
+      ],
+      "square_divisor_degree_bound": 2,
+      "even_square_divisor_degree_bound": 2,
+      "uniform_bound": "degree<n/14 for every n>=30",
+      "published_prime_input": "Nagura1952 at5n/6>=25",
+      "gamma_shape": "1",
+      "theorem": "FIRFOURTEENTH20261116"
+    },
+    {
+      "terminal_index": 37,
+      "prime": 31,
+      "gap": 6,
+      "branch": "q<=6n/7: two primitive nonhorizontal edges",
+      "expected_slope_edges": [
+        {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            5,
+            0
+          ],
+          "e": 1,
+          "h": 0
+        },
+        {
+          "left": [
+            5,
+            0
+          ],
+          "right": [
+            36,
+            6
+          ],
+          "e": 31,
+          "h": 6
+        },
+        {
+          "left": [
+            36,
+            6
+          ],
+          "right": [
+            37,
+            7
+          ],
+          "e": 1,
+          "h": 1
+        }
+      ],
+      "square_divisor_degree_bound": 2,
+      "even_square_divisor_degree_bound": 2,
+      "uniform_bound": "degree<n/14 for every n>=30",
+      "published_prime_input": "Nagura1952 at5n/6>=25",
+      "gamma_shape": "1",
+      "theorem": "FIRFOURTEENTH20261116"
+    },
+    {
+      "terminal_index": 42,
+      "prime": 37,
+      "gap": 5,
+      "branch": "q>6n/7: exposed width-q edge",
+      "expected_slope_edges": [
+        {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            5,
+            0
+          ],
+          "e": 1,
+          "h": 0
+        },
+        {
+          "left": [
+            5,
+            0
+          ],
+          "right": [
+            42,
+            6
+          ],
+          "e": 37,
+          "h": 6
+        }
+      ],
+      "square_divisor_degree_bound": 2,
+      "even_square_divisor_degree_bound": 2,
+      "uniform_bound": "degree<n/14 for every n>=30",
+      "published_prime_input": "Nagura1952 at5n/6>=25",
+      "gamma_shape": "1",
+      "theorem": "FIRFOURTEENTH20261116"
+    },
+    {
+      "terminal_index": 64,
+      "prime": 59,
+      "gap": 5,
+      "branch": "q>6n/7: exposed width-q edge",
+      "expected_slope_edges": [
+        {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            5,
+            0
+          ],
+          "e": 1,
+          "h": 0
+        },
+        {
+          "left": [
+            5,
+            0
+          ],
+          "right": [
+            64,
+            6
+          ],
+          "e": 59,
+          "h": 6
+        }
+      ],
+      "square_divisor_degree_bound": 2,
+      "even_square_divisor_degree_bound": 2,
+      "uniform_bound": "degree<n/14 for every n>=30",
+      "published_prime_input": "Nagura1952 at5n/6>=25",
+      "gamma_shape": "1",
+      "theorem": "FIRFOURTEENTH20261116"
+    },
+    {
+      "terminal_index": 100,
+      "prime": 89,
+      "gap": 11,
+      "branch": "q>6n/7: exposed width-q edge",
+      "expected_slope_edges": [
+        {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            11,
+            0
+          ],
+          "e": 1,
+          "h": 0
+        },
+        {
+          "left": [
+            11,
+            0
+          ],
+          "right": [
+            100,
+            6
+          ],
+          "e": 89,
+          "h": 6
+        }
+      ],
+      "square_divisor_degree_bound": 5,
+      "even_square_divisor_degree_bound": 4,
+      "uniform_bound": "degree<n/14 for every n>=30",
+      "published_prime_input": "Nagura1952 at5n/6>=25",
+      "gamma_shape": "1",
+      "theorem": "FIRFOURTEENTH20261116"
+    },
+    {
+      "terminal_index": 1000000,
+      "prime": 999983,
+      "gap": 17,
+      "support_index": 17,
+      "edge_left": [
+        17,
+        0
+      ],
+      "edge_right": [
+        1000000,
+        6
+      ],
+      "width": 999983,
+      "height": 6,
+      "reduced_denominator": 999983,
+      "minimum_adjusted_height_numerator": -102,
+      "adjusted_height_denominator": 999983,
+      "remaining_polygon_width": 17,
+      "square_divisor_degree_bound": 8,
+      "even_square_divisor_degree_bound": 8,
+      "full_polygon_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRPRIMEGAP20261116",
+      "preceding_prime": 999983,
+      "candidate_even_degrees": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "all_n_ge_30_theorem": true,
+      "all_index_SFC_claimed": false
+    },
+    {
+      "status": "all_r_shifted_family_certified",
+      "multiplier": 1,
+      "prime": 7,
+      "offset": 0,
+      "gamma_shape": "1",
+      "terminal_indices": "1*7^r+0, EVERY integer r>=1",
+      "raw_even_patterns": [],
+      "small_kernel_removed_patterns": [],
+      "full_square_removed_patterns": [],
+      "fourteenth_removed_patterns": [],
+      "remaining_patterns": [],
+      "all_powers_r_ge1_certified": true,
+      "eventual_fixed_multiplier_squarefree_theorem": true,
+      "eventual_statement_uses": "preceding-prime gap o(n) from PNT, plus retained horizontal kernel",
+      "effective_cutoff": null,
+      "all_indices_SFC_claimed": false,
+      "counterexample_claimed": false,
+      "theorem": "FIRGAPKERNELFAMILY20261116"
+    },
+    {
+      "status": "all_r_shifted_family_certified",
+      "multiplier": 1,
+      "prime": 73,
+      "offset": 12,
+      "gamma_shape": "1",
+      "terminal_indices": "1*73^r+12, EVERY integer r>=1",
+      "raw_even_patterns": [
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 0
+        }
+      ],
+      "small_kernel_removed_patterns": [
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 0
+        }
+      ],
+      "full_square_removed_patterns": [],
+      "fourteenth_removed_patterns": [],
+      "remaining_patterns": [],
+      "all_powers_r_ge1_certified": true,
+      "eventual_fixed_multiplier_squarefree_theorem": true,
+      "eventual_statement_uses": "preceding-prime gap o(n) from PNT, plus retained horizontal kernel",
+      "effective_cutoff": null,
+      "all_indices_SFC_claimed": false,
+      "counterexample_claimed": false,
+      "theorem": "FIRGAPKERNELFAMILY20261116"
+    },
+    {
+      "status": "all_r_shifted_family_certified",
+      "multiplier": 14,
+      "prime": 89,
+      "offset": 0,
+      "gamma_shape": "1",
+      "terminal_indices": "14*89^r+0, EVERY integer r>=1",
+      "raw_even_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 6
+        }
+      ],
+      "small_kernel_removed_patterns": [],
+      "full_square_removed_patterns": [],
+      "fourteenth_removed_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 6
+        }
+      ],
+      "remaining_patterns": [],
+      "all_powers_r_ge1_certified": true,
+      "eventual_fixed_multiplier_squarefree_theorem": true,
+      "eventual_statement_uses": "preceding-prime gap o(n) from PNT, plus retained horizontal kernel",
+      "effective_cutoff": null,
+      "all_indices_SFC_claimed": false,
+      "counterexample_claimed": false,
+      "theorem": "FIRGAPKERNELFAMILY20261116"
+    },
+    {
+      "status": "all_r_shifted_family_certified",
+      "multiplier": 14,
+      "prime": 89,
+      "offset": 12,
+      "gamma_shape": "1",
+      "terminal_indices": "14*89^r+12, EVERY integer r>=1",
+      "raw_even_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 6
+        }
+      ],
+      "small_kernel_removed_patterns": [
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 6
+        }
+      ],
+      "full_square_removed_patterns": [],
+      "fourteenth_removed_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 6
+        }
+      ],
+      "remaining_patterns": [],
+      "all_powers_r_ge1_certified": true,
+      "eventual_fixed_multiplier_squarefree_theorem": true,
+      "eventual_statement_uses": "preceding-prime gap o(n) from PNT, plus retained horizontal kernel",
+      "effective_cutoff": null,
+      "all_indices_SFC_claimed": false,
+      "counterexample_claimed": false,
+      "theorem": "FIRGAPKERNELFAMILY20261116"
+    },
+    {
+      "status": "all_r_test_unresolved",
+      "multiplier": 28,
+      "prime": 173,
+      "offset": 1,
+      "gamma_shape": "1",
+      "terminal_indices": "28*173^r+1, EVERY integer r>=1",
+      "raw_even_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 8
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 10
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 12
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 14
+        }
+      ],
+      "small_kernel_removed_patterns": [],
+      "full_square_removed_patterns": [],
+      "fourteenth_removed_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 8
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 10
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 12
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 14
+        }
+      ],
+      "remaining_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 2
+        }
+      ],
+      "all_powers_r_ge1_certified": false,
+      "eventual_fixed_multiplier_squarefree_theorem": true,
+      "eventual_statement_uses": "preceding-prime gap o(n) from PNT, plus retained horizontal kernel",
+      "effective_cutoff": null,
+      "all_indices_SFC_claimed": false,
+      "counterexample_claimed": false,
+      "theorem": "FIRGAPKERNELFAMILY20261116"
+    },
+    {
+      "status": "all_r_test_unresolved",
+      "multiplier": 15,
+      "prime": 97,
+      "offset": 12,
+      "gamma_shape": "1",
+      "terminal_indices": "15*97^r+12, EVERY integer r>=1",
+      "raw_even_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 6
+        }
+      ],
+      "small_kernel_removed_patterns": [
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 1
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 0
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 6
+        }
+      ],
+      "full_square_removed_patterns": [],
+      "fourteenth_removed_patterns": [
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 0,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 2,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 3,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 4,
+          "sloped_residual_degree": 6
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 3
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 5
+        },
+        {
+          "horizontal_degree": 5,
+          "sloped_residual_degree": 7
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 2
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 4
+        },
+        {
+          "horizontal_degree": 6,
+          "sloped_residual_degree": 6
+        }
+      ],
+      "remaining_patterns": [
+        {
+          "horizontal_degree": 1,
+          "sloped_residual_degree": 1
+        }
+      ],
+      "all_powers_r_ge1_certified": false,
+      "eventual_fixed_multiplier_squarefree_theorem": true,
+      "eventual_statement_uses": "preceding-prime gap o(n) from PNT, plus retained horizontal kernel",
+      "effective_cutoff": null,
+      "all_indices_SFC_claimed": false,
+      "counterexample_claimed": false,
+      "theorem": "FIRGAPKERNELFAMILY20261116"
+    }
+  ],
+  "million_index_has_no_large_polynomial": true
+}

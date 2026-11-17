@@ -1,0 +1,94 @@
+{
+  "METHOD-WEIGHTED-TORUS-COVERS-AND-ALL-ZERO-WEIGHT-TRIPLES-20261116": {
+    "id": "METHOD-WEIGHTED-TORUS-COVERS-AND-ALL-ZERO-WEIGHT-TRIPLES-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use weighted torus curves to close every zero-containing triple and keep the FULL residual preservation obligation explicit",
+    "when": "Unequal opposite torus weights plus a neutral term,or a proposed full exceptional compact-period bridge.",
+    "use": "ALL ZERO-CONTAINING THREE-WEIGHT SECTORS NOW CLOSED,ALL DEGREES/RINGS: on BOTH exceptional quotients,P=p+U+V of weights0,a,-b,a,b>0,g=gcdab,r=a/g,s=b/g,M=r+s. Exact balanced q=U^s V^r. Normalized weighted torus curve A^s B^r=q,S=p+A+B,ORIGINAL Theta=Omega dA/(rA),has compact rational cycle mass1 and EVERY EXACT ORIGINAL UNWEIGHTED polynomial moment. Full t^r=q branched-cycle trace keeps ALL components;no marker/weight transfer. Actual charged minimum degrees8/12 force sphereD_q/M>=4/6. Orbit6/12 anddiscrepancy give ALL-valuation stronger bound k+1+pole(q)/M>0. Resolve[1:p^M:q]:q-dominant strict charts rootq and etale sheets, p-dominant charts have ONLY ONE nonzero SIMPLE critical value c=s^s*r^r/M^M. Its doublebranch v2=eta+f L(S,f),f1/p,partialSLunit,becomesSNCafterprincipalizing(f,eta); retained half-polep bound controlscorners. Finite monomial normalization has log-volume rayorder v(x)+v(y)-1>=0. Proper auxiliary ORIGINAL-volume model therefore excludes ALL nonzero H(P) ifU,Vnonzero. FIELD all-H law H(P)eventpure IFF H0 OR [UV0,p=c constant,Hc0],all safe. Over EVERY commutative C-algebra,Peventpure IFF p ANDq NILPOTENT; ifp^nu0,q^kappa0,fullmarkercutoff m>=nu-1+M*kappa+ceil(BQ/minab). SAME-SIGN charged terms instead require onlyp nilpotent and areone-sided safe. Hence EVERY support contained{0,a,b} isCLOSED,notonlysymmetric. A full failure musthave>=4weights OR THREE WITH NO ZERO afterEVERYautomorphism/torus;zero-free threeweights NOT closed. FULL target remains everyactualpurephase correctedlocalorders0,oractualinvariantpurefailurefixedoriginalmarker. MissingFULLbridge explicitly: coverEVERYresidualLaurentphase by ALL-marker safety certificate OR proper original-volume period preserving h(Rf)forEVERYR; alternatively preserve FULL actualunit/markedmodule andglobalrelations toforceorders0 underunweightedpurity. Multi-term/torsor-section poles andcollidingcriticalbranches NOT controlled;scalarCauchymatchingaloneinsufficient. Originalsafeweightphasesforbidblanketpropermodels. Directownership FULLexceptionalMZ;Gaussianthread ownsformal-symbol/rational-slope/effectivity audits,usedasinputsnotduplicated. Both FULL MZ cases remain OPEN;External review is DEFERRED and NOT the next task.",
+    "avoid": "Assuming arbitraryfractionalneutralheightbounds;omittingcyclicbasecomponents/branchcycletransfer;claiming allthreeweightsclosed;using scalarCauchymatchingforfullmarkersafety;propermodelsforallpuresafephases;duplicatingGaussianBernsteineffectivity or treating restricted closures asfullcompletion.",
+    "boundary": "BOTH full exceptional MZcasesOPEN. Every zero-containing threeweight sectorclosedALLdegrees/rings;zero-free triples andlargersupportsremain. Fullcoverage/preservationlemmaNOTproved. Fieldall-H lawandringphase-nilpotencelawdifferent. Internalproof/finitecontrols,nouniversal machineverification/externalreview. SUBSEQUENT FULL-BUNDLE PRESERVATION AND SAFE-POLE CONTROL: FULL-CLASS GLOBAL BUNDLE PRESERVATION AND FINITE-BASE UNIT-VOLUME GATE NOW CLOSED: ENTIRE original exceptional phase algebra and EVERY marker,ALL degrees,are covered by PGL2=L^times overQ2, L=Hom(ell2,ell1)=O(-1,1),compactifiedZ=P(O+L) overP1xP1. No rational fibre frame;actual compact SO3 circle bundle retained,not a product. Original normalized Theta=dxi deta/(eta-xi)^2 wedge dt/t has div=-2pi*B-D0-Dinf. ALL h(QR(f)),ALL Cauchy germs/continuations/globalFUNCTIONrelations andliteral1 BEFORE C[s] quotient are EXACTLY preserved;finiteGamma markeraveraging addsnoextraactualfunctions. SAMEglobalmodelcoversEVERYpolynomialH(f),no purityreflection. For EVERY phasewithBOTHpositiveANDnegativeweights,bothgenericfibresectionsmapf infinity;anyfinite-base finite-phaseboundaryE haspropercentreinsmoothsection, A>a0+ai,soordTheta=A-1-a0-ai>=0. ALLfinite-basecriticalcollisions/coeffvanishing harmlessforUNITvolume,notjusttrinomialbranches. Remainingunitvolume polesONLYoverbase infinityB,exactordTheta=A-1-2b-a0-ai. But RIGHTGamma actsTRIVIALLYonHom-fibresoverB,soorbit6/12doesNOTspreadfixedleftfibreroots. ACTUAL pureSAFE phasesf_F=F(x+z,y+w),Fbinaryinvariantdegree2D,haveintrinsicE fromblowup(R=eta-xi,W=t+1):W=Rv,ord_Ef=D>0,ord_ETheta=-1,ALLdegrees8k/12k,andALLnonzeroHwithH0zero remainpureSAFE/poleover0. Correctedlocalunitcomponent0 byretainedfullcriterion. NEWpolecomputationnotnewsafeclass. Thus barevolume/logpole order isNOT actualcorrectedtorusgluingorder;blanketpropermodelsforallmixedphasesFALSE. FULL source-unit/markedmodule bridge STILL OPEN:finite-baseThetaregularity NOTprovedtoeliminatecorrespondingACTUALunitdirections;markersmayretainpoles. Need distinguishunit-invisible/obstructinginfinitydirections WITHglobalrelations andunweightedpurity,oractualinvariantpurefailurefixedbadmarker. Fullmoments/framepreservationnowCLOSED,notfullunitvanishing;scalarCauchyaloneinsufficient. ThisNEXTfull-classcoupling,notanotherrestrictedsector,iscurrentobligation. Both FULL MZ cases remain OPEN;directexceptionalownershipretained,GaussianBernsteinworkseparate;External review is DEFERRED and NOT the next task.",
+    "reopen_when": "DoNOTrequeuezero-containingtriples/symmetricorunequalneutralcircuits. NextFULLobligation:coverEVERYresidualmixedphasebyALL-markersafetycertificateORproperoriginal-volumeALL-polynomialmomentmodel,orforcecorrectedorders0throughFULLactualglobalunit/markedmodule. Neednewcontrolforsectionpoles/multiplecriticalbranches;oractualinvariantpurefailure. ReviewDEFERRED,notnexttask. CURRENT:fullglobalframe/markedFUNCTIONpreservationandALLfinitebaseUNITvolumepolesCLOSED. FullACTUALunitcomponentelimination/infinitycouplingNOTproved. ActualpureSAFElogpolehasZEROcorrectedcomponent;neveridentifyrawvolumeorderwithcorrectedgluingorder.",
+    "claims": [
+      "GHAARWEIGHTEDCOVER20261116",
+      "GZEROWEIGHTTRIPLES20261116",
+      "GZEROWEIGHTRINGSAFE20261116",
+      "GHAARFULLBUNDLE20261116",
+      "GHAARFINITEBASE20261116",
+      "GHAARSAFELOGPOLE20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/WEIGHTED_TORUS_COVERS_AND_ALL_ZERO_WEIGHT_TRIPLES.md",
+      "jacobian-followup/moment-vanishing-audit/haar_weighted_conic_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/exceptional_mz_ownership_20261116.json",
+      "jacobian-followup/moment-vanishing-audit/GLOBAL_TORUS_BUNDLE_AND_UNIT_INVISIBLE_INFINITY_POLES.md",
+      "jacobian-followup/moment-vanishing-audit/haar_bundle_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_weighted_conic.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "weighted torus curve",
+      "unequal weights",
+      "zero-containing triples",
+      "full coverage lemma",
+      "nilpotence",
+      "original unweighted moments"
+    ],
+    "reviewed_claims": {
+      "GHAARWEIGHTEDCOVER20261116": "814de4792c270a71",
+      "GZEROWEIGHTTRIPLES20261116": "8f6d7682696d63f5",
+      "GZEROWEIGHTRINGSAFE20261116": "ba84a1f95ab61ff2",
+      "GHAARFULLBUNDLE20261116": "ddc1f1fb44ece12f",
+      "GHAARFINITEBASE20261116": "10576b03f3ecc0ae",
+      "GHAARSAFELOGPOLE20261116": "cbdce04b76ddf7a8"
+    }
+  },
+  "METHOD-FULL-TORUS-BUNDLE-FINITE-BASE-EXTENSION-AND-SAFE-LOG-POLES-20261116": {
+    "id": "METHOD-FULL-TORUS-BUNDLE-FINITE-BASE-EXTENSION-AND-SAFE-LOG-POLES-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use the global original torus bundle for the FULL algebra;separate unit-invisible volume poles from corrected gluing orders",
+    "when": "Full exceptional mixed phases,torus-section framing,collidingcriticalbranches,or attempts to detect MZunitobstructions from originalvolume poles.",
+    "use": "FULL-CLASS GLOBAL BUNDLE PRESERVATION AND FINITE-BASE UNIT-VOLUME GATE NOW CLOSED: ENTIRE original exceptional phase algebra and EVERY marker,ALL degrees,are covered by PGL2=L^times overQ2, L=Hom(ell2,ell1)=O(-1,1),compactifiedZ=P(O+L) overP1xP1. No rational fibre frame;actual compact SO3 circle bundle retained,not a product. Original normalized Theta=dxi deta/(eta-xi)^2 wedge dt/t has div=-2pi*B-D0-Dinf. ALL h(QR(f)),ALL Cauchy germs/continuations/globalFUNCTIONrelations andliteral1 BEFORE C[s] quotient are EXACTLY preserved;finiteGamma markeraveraging addsnoextraactualfunctions. SAMEglobalmodelcoversEVERYpolynomialH(f),no purityreflection. For EVERY phasewithBOTHpositiveANDnegativeweights,bothgenericfibresectionsmapf infinity;anyfinite-base finite-phaseboundaryE haspropercentreinsmoothsection, A>a0+ai,soordTheta=A-1-a0-ai>=0. ALLfinite-basecriticalcollisions/coeffvanishing harmlessforUNITvolume,notjusttrinomialbranches. Remainingunitvolume polesONLYoverbase infinityB,exactordTheta=A-1-2b-a0-ai. But RIGHTGamma actsTRIVIALLYonHom-fibresoverB,soorbit6/12doesNOTspreadfixedleftfibreroots. ACTUAL pureSAFE phasesf_F=F(x+z,y+w),Fbinaryinvariantdegree2D,haveintrinsicE fromblowup(R=eta-xi,W=t+1):W=Rv,ord_Ef=D>0,ord_ETheta=-1,ALLdegrees8k/12k,andALLnonzeroHwithH0zero remainpureSAFE/poleover0. Correctedlocalunitcomponent0 byretainedfullcriterion. NEWpolecomputationnotnewsafeclass. Thus barevolume/logpole order isNOT actualcorrectedtorusgluingorder;blanketpropermodelsforallmixedphasesFALSE. FULL source-unit/markedmodule bridge STILL OPEN:finite-baseThetaregularity NOTprovedtoeliminatecorrespondingACTUALunitdirections;markersmayretainpoles. Need distinguishunit-invisible/obstructinginfinitydirections WITHglobalrelations andunweightedpurity,oractualinvariantpurefailurefixedbadmarker. Fullmoments/framepreservationnowCLOSED,notfullunitvanishing;scalarCauchyaloneinsufficient. ThisNEXTfull-classcoupling,notanotherrestrictedsector,iscurrentobligation. Both FULL MZ cases remain OPEN;directexceptionalownershipretained,GaussianBernsteinworkseparate;External review is DEFERRED and NOT the next task.",
+    "avoid": "RationallytrivializingtheHopfbundleanddiscardingframepoles;replacingSO3circlebundlebyS2xS1;assumingallmarkerformsextend;identifyingfullgeometriccohomologywithactualFUNCTIONmodule;usingvolume-poleordersasactualcorrectedtorusorders;blanketpropermodelsforALLmixedphases.",
+    "boundary": "BOTHFULLexceptionalMZcasesOPEN. ENTIREphase/markerFUNCTIONpreservationandfinite-baseUNITvolumeregularityCLOSED;fullsourceunit-compatibleeliminationandgeneralinfinitycouplingstillOPEN. ActualpureSAFEfamilyhasintrinsiclogpole/component0. No newpureclass/failure/ringpromotion/universalmachineproof/reviewgate. SUBSEQUENT CONSTANT-VOLUME TRANSFER AND ACTUAL MARKER DEFECT: CONSTANT-VOLUME TRANSFER AND ACTUAL ORIGINAL MARKER DEFECT NOW PROVED: for smooth original sources a projective finite-phase model carrying the SAME holomorphic top form exists iff EVERY divisorial valuation with finite phase has nonnegative form order. Under a finite field correspondence Omega1=c*pullback(Omega0),c nonzero CONSTANT,the exact order is e*(k+1)-1;nonnegative iff k>=0,so original-volume proper models transfer BOTH directions. Any original LOG pole remains -1 after EVERY finite cover;changing Jacobian weight changes the problem. Applied to retained weighted-torus W:A^sB^r=U^sV^r,S=p+A+B,Theta=Omega2*dA/(rA),the ORIGINAL SL2 map (pi,U,V) has generic degree gcd(a,b) and CONSTANT volume ratio a/r=gcd(a,b). Hence EVERY opposite-charge+neutral exceptional P=p+U+V already closed by weightedcovers has an ORIGINAL-source proper volume model on SL2 and SL2/Gamma,ALL degrees and ALL nonconstant H(P). This is stronger GEOMETRY,not a new purity exclusion. Odd dimension3 implies the actual UNIT Cauchy submodule D<1,A1> globally unit-SPLIT. ACTUAL equivariant Bezout Long phases g_b=(1+Y_b)(1+F0+Y_bF0),wtb=n+m,have p=1+2Y_bF0,A=Y_b(1+Y_bF0),B=F0 weights0,n,-n. They therefore have ORIGINAL proper-volume models and globally split UNIT submodules,yet SAME original regular marker C_b=W_b(1+Y_b) has h(C_bR(g_b))=integral_0^1R(-t)dt,actual Cauchy log((s+1)/s),nonzero residues at0,-1. FULL original marked module locally unit-NONSPLIT at BOTH values before purity. Marker log is OUTSIDE EVERY proper-model actual regular de Rham compact-orbit period image,even modulo exact forms/global relations. Thus unconditional full-marked replacement by proper regular-period image is FALSE on actual exceptional quotients. Unit-SPLIT SUBMODULE is not a global unit-retaining QUOTIENT;Bezout Phi_b has NONCONSTANT Jacobian2W_b and H3scalar2,distinct from this correspondence. These actual controls and ALL nonconstant H(g_b) already proved NOT eventually pure;NOT MZ failures. NO localization of marker defect to finitebase versus infinity claimed;raw residue may be exact. FULL purity-sensitive finitebase/unit elimination and infinity coupling remain OPEN. NEXT ENTIRE-class obligation is use actual unweighted eventual-purity identities and global marked relations to force corrected local torus-component vector0 for EVERY original exceptional phase,or actual invariant pure phase with fixed original bad marker. Both FULL MZ cases remain OPEN;directexceptionalownershipretained,GaussianBernsteinworkseparate;External review is DEFERRED and NOT the next task.",
+    "reopen_when": "NEXT FULL-CLASS OBLIGATION:prove whetherfinite-baseThetaextension permitsfunctorialeliminationfromACTUALunitextension/globalperiodkernel,anddistinguishunit-invisiblevsobstructinginfinitydirectionsunderunweightedpurity. Oractualinvariantpurefailurefixedbadmarker. DoNOTreopenglobalframe/momentpreservationorfinitebaseunitcollisiongates;doNOTsubstituteanotherrestrictedpositiveclassforfulltarget. CURRENT:unconditional fullmarked replacement by proper regular-period source is FALSE even for actualexceptional proper-volume phases;pure-specific boundary coupling still OPEN. Finitebase-specific defect localization NOT proved.",
+    "claims": [
+      "GHAARFULLBUNDLE20261116",
+      "GHAARFINITEBASE20261116",
+      "GHAARSAFELOGPOLE20261116",
+      "GHAARFINITEVOLUMEMODEL20261116",
+      "GHAARACTUALPROPER20261116",
+      "GHAARMARKERDEFECT20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/GLOBAL_TORUS_BUNDLE_AND_UNIT_INVISIBLE_INFINITY_POLES.md",
+      "jacobian-followup/moment-vanishing-audit/haar_bundle_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/exceptional_mz_ownership_20261116.json",
+      "jacobian-followup/moment-vanishing-audit/CONSTANT_VOLUME_MODELS_AND_ACTUAL_MARKER_DEFECTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_source_models_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_bundle.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "full algebra",
+      "global torus bundle",
+      "finite base",
+      "unit invisible log pole",
+      "actual marked module",
+      "corrected gluing"
+    ],
+    "reviewed_claims": {
+      "GHAARFULLBUNDLE20261116": "ddc1f1fb44ece12f",
+      "GHAARFINITEBASE20261116": "10576b03f3ecc0ae",
+      "GHAARSAFELOGPOLE20261116": "cbdce04b76ddf7a8",
+      "GHAARFINITEVOLUMEMODEL20261116": "9b75403785a093ad",
+      "GHAARACTUALPROPER20261116": "731760e21b18fa26",
+      "GHAARMARKERDEFECT20261116": "f7d4ab0c0174e7a2"
+    }
+  }
+}

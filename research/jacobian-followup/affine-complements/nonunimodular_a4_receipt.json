@@ -1,0 +1,2117 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 223,
+  "checks": [
+    "predecessor PASS unimodular_initial_s4_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json verify_unimodular_initial_s4.py",
+    "sealed predecessor unimodular_initial_s4_receipt.json UNIMODULAR_SOLID_PREFIX_AND_INITIAL_S4_CLOSURE.md",
+    "sealed predecessor unimodular_initial_s4_receipt.json sources/unimodular-initial-s4/manifest.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor unimodular_initial_s4_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor unimodular_initial_s4_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor unimodular_initial_s4_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor unimodular_initial_s4_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor unimodular_initial_s4_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "predecessor PASS cyclic_pattern_a4_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json verify_cyclic_pattern_a4.py",
+    "sealed predecessor cyclic_pattern_a4_receipt.json CYCLIC_PATTERN_MARK_TRANSFER_AND_A4_REDUCTION.md",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/cyclic-pattern-a4/manifest.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json meridian_cycle_s4_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "predecessor PASS iterated_peripheral_tail_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json verify_iterated_peripheral_tail.py",
+    "sealed predecessor iterated_peripheral_tail_receipt.json ITERATED_PERIPHERAL_STATES_AND_ABSORBING_TAILS.md",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/iterated-peripheral-tail/manifest.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json rational_end_orderability_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "predecessor PASS persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json verify_persistent_jsj_terminal_modulus.py",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json PERSISTENT_ROOTED_JSJ_AND_TERMINAL_MODULUS.md",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/persistent-jsj-terminal-modulus/manifest.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS terminal_cone_twists_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json verify_terminal_cone_twists.py",
+    "sealed predecessor terminal_cone_twists_receipt.json TERMINAL_CONE_TWISTS_AND_CYCLIC_ARRIVAL_CLOSURE.md",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/terminal-cone-twists/manifest.json",
+    "sealed predecessor terminal_cone_twists_receipt.json cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "predecessor PASS fibre_order_transfer_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json verify_fibre_order_transfer.py",
+    "sealed predecessor fibre_order_transfer_receipt.json FIBRE_ORDER_AND_NONCYCLIC_ZERO_MARKS.md",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/fibre-order-transfer/manifest.json",
+    "sealed predecessor fibre_order_transfer_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS complementary_corner_jsj_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor complementary_corner_jsj_receipt.json COMPLEMENTARY_CORNER_AND_BOUNDARY_JSJ_ENDPOINT.md",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/complementary-corner-jsj/manifest.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json regular_quartic_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_trefoil_complementary_fusion.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json TREFOIL_CAPS_AND_COMPLEMENTARY_FIBRE_FUSION.md",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/trefoil-complementary-fusion/manifest.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "retained complete primary pin hatcher-3M.pdf",
+    "retained complete primary pin waldhausen-1968.pdf",
+    "retained complete primary pin neumann-raymond-1978.pdf",
+    "retained complete primary pin hillman-sakuma-1997.pdf",
+    "retained complete primary pin clay-watson-2011v1.pdf",
+    "exact arbitrary nR q last-gcd determinant strip identity",
+    "two residual strip deltas exactly8",
+    "internal cone2 makes2,4 stripped determinant parity impossible",
+    "complete finite DIVISOR list is exactly three ordered pairs",
+    "all-depth root minus-branch contact lower bound identity",
+    "rho3 zero-mark source determinant2 has no square solution",
+    "rho2 rootcone2 source has strict determinant lower bound",
+    "one simple tail normalized cone and edge conditions force bminus2 or4",
+    "all-depth exact contact diagonal even (2, [10, 5])",
+    "actual primitive local chart exact diagonal strip (2, [10, 5])",
+    "actual primitive local chart determinant strip (2, [10, 5])",
+    "all-depth exact contact diagonal even (6, [22, 9])",
+    "actual primitive local chart exact diagonal strip (6, [22, 9])",
+    "actual primitive local chart determinant strip (6, [22, 9])",
+    "all-depth exact contact diagonal even (8, [28, 26, 15])",
+    "actual primitive local chart exact diagonal strip (8, [28, 26, 15])",
+    "actual primitive local chart determinant strip (8, [28, 26, 15])",
+    "all-depth exact contact diagonal even (16, [80, 28, 25])",
+    "actual primitive local chart exact diagonal strip (16, [80, 28, 25])",
+    "actual primitive local chart determinant strip (16, [80, 28, 25])",
+    "all-depth exact contact diagonal even (28, [140, 48, 46, 35])",
+    "actual primitive local chart exact diagonal strip (28, [140, 48, 46, 35])",
+    "actual primitive local chart determinant strip (28, [140, 48, 46, 35])",
+    "all-depth exact contact diagonal even (14, [70, 24, 23])",
+    "actual primitive local chart exact diagonal strip (14, [70, 24, 23])",
+    "actual primitive local chart determinant strip (14, [70, 24, 23])",
+    "delta2 internal cone2 and rootdistance2 are NOT a universal obstruction",
+    "actual full small cluster has predicted root5 and terminal2,4",
+    "actual full small cluster fibre edge determinant is pminusj5",
+    "full actual first-cone coefficient is INVERSE b up to sign",
+    "full root coefficient control excludes wrong b direction",
+    "actual initial coefficient2 cap is odd and solid",
+    "actual solid A4 chain retains H1Z2 and cap coefficient2 0",
+    "actual unrestricted solid loop cap distance1 0",
+    "actual solid A4 chain retains H1Z2 and cap coefficient2 1",
+    "actual unrestricted solid loop cap distance1 1",
+    "actual solid A4 chain retains H1Z2 and cap coefficient2 2",
+    "actual unrestricted solid loop cap distance1 2",
+    "actual solid-at-arrival target full marked H1 (0, [])",
+    "actual solid-at-arrival target full marked H1 (0, [(5, 3)])",
+    "actual solid-at-arrival target full marked H1 (0, [(5, 3), (11, 3)])",
+    "actual solid-at-arrival target full marked H1 (2, [])",
+    "actual solid-at-arrival target full marked H1 (2, [(5, 3)])",
+    "actual solid-at-arrival target full marked H1 (2, [(5, 3), (11, 3)])",
+    "actual solid-at-arrival target full marked H1 (4, [])",
+    "actual solid-at-arrival target full marked H1 (4, [(5, 3)])",
+    "actual solid-at-arrival target full marked H1 (4, [(5, 3), (11, 3)])",
+    "actual nonsolid reset primitive cap (2, 4)",
+    "actual reset arrival/tail Rzero and full H1 (2, 4, 2, [])",
+    "actual reset arrival/tail Rzero and full H1 (2, 4, 2, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (2, 4, 2, [(5, 3), (11, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (2, 4, 10, [])",
+    "actual reset arrival/tail Rzero and full H1 (2, 4, 10, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (2, 4, 10, [(5, 3), (11, 3)])",
+    "actual nonsolid reset primitive cap (2, 8)",
+    "actual reset arrival/tail Rzero and full H1 (2, 8, 2, [])",
+    "actual reset arrival/tail Rzero and full H1 (2, 8, 2, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (2, 8, 2, [(5, 3), (11, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (2, 8, 10, [])",
+    "actual reset arrival/tail Rzero and full H1 (2, 8, 10, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (2, 8, 10, [(5, 3), (11, 3)])",
+    "actual nonsolid reset primitive cap (8, 2)",
+    "actual reset arrival/tail Rzero and full H1 (8, 2, 2, [])",
+    "actual reset arrival/tail Rzero and full H1 (8, 2, 2, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (8, 2, 2, [(5, 3), (11, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (8, 2, 10, [])",
+    "actual reset arrival/tail Rzero and full H1 (8, 2, 10, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (8, 2, 10, [(5, 3), (11, 3)])",
+    "actual nonsolid reset primitive cap (4, 10)",
+    "actual reset arrival/tail Rzero and full H1 (4, 10, 2, [])",
+    "actual reset arrival/tail Rzero and full H1 (4, 10, 2, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (4, 10, 2, [(5, 3), (11, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (4, 10, 10, [])",
+    "actual reset arrival/tail Rzero and full H1 (4, 10, 10, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (4, 10, 10, [(5, 3), (11, 3)])",
+    "actual nonsolid reset primitive cap (10, 4)",
+    "actual reset arrival/tail Rzero and full H1 (10, 4, 2, [])",
+    "actual reset arrival/tail Rzero and full H1 (10, 4, 2, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (10, 4, 2, [(5, 3), (11, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (10, 4, 10, [])",
+    "actual reset arrival/tail Rzero and full H1 (10, 4, 10, [(5, 3)])",
+    "actual reset arrival/tail Rzero and full H1 (10, 4, 10, [(5, 3), (11, 3)])",
+    "actual signed cap coefficient integral congruence (1, 2, 4)",
+    "actual signed cap coefficient integral congruence (1, 2, 8)",
+    "actual signed cap coefficient integral congruence (1, 8, 2)",
+    "actual signed cap coefficient integral congruence (1, 4, 10)",
+    "actual signed cap coefficient integral congruence (1, 10, 4)",
+    "actual signed cap coefficient integral congruence (3, 2, 4)",
+    "actual signed cap coefficient integral congruence (3, 2, 8)",
+    "actual signed cap coefficient integral congruence (3, 8, 2)",
+    "actual signed cap coefficient integral congruence (3, 4, 10)",
+    "actual signed cap coefficient integral congruence (3, 10, 4)",
+    "actual signed cap coefficient integral congruence (7, 2, 4)",
+    "actual signed cap coefficient integral congruence (7, 2, 8)",
+    "actual signed cap coefficient integral congruence (7, 8, 2)",
+    "actual signed cap coefficient integral congruence (7, 4, 10)",
+    "actual signed cap coefficient integral congruence (7, 10, 4)"
+  ],
+  "general": {
+    "exact_last_gcd_local_chart_strip_any_nR_q": true,
+    "all_source_depths_and_no_support_bound": true,
+    "stripped_chart_not_assumed_separate_affine_packet": true,
+    "unramified_chart_diagonal_even": true,
+    "all_depth_contact_lower_bound": true,
+    "odd_coefficient2_solid_caps_left_symbolic": true,
+    "rootdistance_and_normalized_edge_coefficient_comparison_retained": true
+  },
+  "quartic": {
+    "all_final_stage_A4_arrivals_closed_both_pencils": true,
+    "no_prefix_eta_condition": true,
+    "arbitrary_A4_companion_depth": true,
+    "remaining_A4_requires_later_simple_tails": true,
+    "complete_terminal_pairs_2_4_2_8_4_10": true,
+    "solid_at_arrival_requires2_4_and_at_least2_simple_tails": true,
+    "earlier_reset_requires2_8_or4_10_and_internal_arrival2": true,
+    "one_simple_tail_no_intervening_C3_loop_reset_closed": true,
+    "final_simple_tail_winding5mod6": true
+  },
+  "ordered_terminal_pairs": [
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      4,
+      10
+    ]
+  ],
+  "exact_source_contact_controls": [
+    {
+      "sigma": 2,
+      "p": 10,
+      "support": [
+        10,
+        5
+      ],
+      "S": 15,
+      "nD": 34,
+      "delta": 2,
+      "windings": [
+        5,
+        2
+      ],
+      "kappa": 4,
+      "root_distance": 2,
+      "drops": [
+        [
+          2,
+          1,
+          5
+        ]
+      ],
+      "stripped": {
+        "sigma": 1,
+        "p": 5,
+        "support": [
+          5
+        ],
+        "S": 0,
+        "nD": 10,
+        "delta": 5,
+        "windings": [
+          5
+        ],
+        "kappa": 5,
+        "root_distance": 2,
+        "drops": []
+      }
+    },
+    {
+      "sigma": 6,
+      "p": 22,
+      "support": [
+        22,
+        9
+      ],
+      "S": 123,
+      "nD": 162,
+      "delta": 2,
+      "windings": [
+        11,
+        2
+      ],
+      "kappa": 4,
+      "root_distance": 2,
+      "drops": [
+        [
+          2,
+          1,
+          9
+        ]
+      ],
+      "stripped": {
+        "sigma": 3,
+        "p": 11,
+        "support": [
+          11
+        ],
+        "S": 22,
+        "nD": 42,
+        "delta": 5,
+        "windings": [
+          11
+        ],
+        "kappa": 9,
+        "root_distance": 2,
+        "drops": []
+      }
+    },
+    {
+      "sigma": 8,
+      "p": 28,
+      "support": [
+        28,
+        26,
+        15
+      ],
+      "S": 213,
+      "nD": 262,
+      "delta": 2,
+      "windings": [
+        7,
+        2,
+        2
+      ],
+      "kappa": 8,
+      "root_distance": 1,
+      "drops": [
+        [
+          4,
+          2,
+          26
+        ],
+        [
+          2,
+          1,
+          15
+        ]
+      ],
+      "stripped": {
+        "sigma": 4,
+        "p": 14,
+        "support": [
+          14,
+          13
+        ],
+        "S": 43,
+        "nD": 68,
+        "delta": 8,
+        "windings": [
+          7,
+          2
+        ],
+        "kappa": 10,
+        "root_distance": 1,
+        "drops": [
+          [
+            2,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "sigma": 16,
+      "p": 80,
+      "support": [
+        80,
+        28,
+        25
+      ],
+      "S": 1989,
+      "nD": 2134,
+      "delta": 2,
+      "windings": [
+        5,
+        4,
+        4
+      ],
+      "kappa": 10,
+      "root_distance": 2,
+      "drops": [
+        [
+          16,
+          4,
+          28
+        ],
+        [
+          4,
+          1,
+          25
+        ]
+      ],
+      "stripped": {
+        "sigma": 4,
+        "p": 20,
+        "support": [
+          20,
+          7
+        ],
+        "S": 99,
+        "nD": 136,
+        "delta": 8,
+        "windings": [
+          5,
+          4
+        ],
+        "kappa": 4,
+        "root_distance": 2,
+        "drops": [
+          [
+            4,
+            1,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "sigma": 28,
+      "p": 140,
+      "support": [
+        140,
+        48,
+        46,
+        35
+      ],
+      "S": 6281,
+      "nD": 6534,
+      "delta": 2,
+      "windings": [
+        5,
+        7,
+        2,
+        2
+      ],
+      "kappa": 8,
+      "root_distance": 2,
+      "drops": [
+        [
+          28,
+          4,
+          48
+        ],
+        [
+          4,
+          2,
+          46
+        ],
+        [
+          2,
+          1,
+          35
+        ]
+      ],
+      "stripped": {
+        "sigma": 14,
+        "p": 70,
+        "support": [
+          70,
+          24,
+          23
+        ],
+        "S": 1509,
+        "nD": 1636,
+        "delta": 8,
+        "windings": [
+          5,
+          7,
+          2
+        ],
+        "kappa": 10,
+        "root_distance": 2,
+        "drops": [
+          [
+            14,
+            2,
+            24
+          ],
+          [
+            2,
+            1,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "sigma": 14,
+      "p": 70,
+      "support": [
+        70,
+        24,
+        23
+      ],
+      "S": 1509,
+      "nD": 1636,
+      "delta": 8,
+      "windings": [
+        5,
+        7,
+        2
+      ],
+      "kappa": 10,
+      "root_distance": 2,
+      "drops": [
+        [
+          14,
+          2,
+          24
+        ],
+        [
+          2,
+          1,
+          23
+        ]
+      ],
+      "stripped": {
+        "sigma": 7,
+        "p": 35,
+        "support": [
+          35,
+          12
+        ],
+        "S": 348,
+        "nD": 412,
+        "delta": 11,
+        "windings": [
+          5,
+          7
+        ],
+        "kappa": 6,
+        "root_distance": 2,
+        "drops": [
+          [
+            7,
+            1,
+            12
+          ]
+        ]
+      }
+    }
+  ],
+  "actual_solid_C3_controls": [
+    {
+      "step": 0,
+      "cables": [],
+      "actual_A": 1,
+      "next_loop": [
+        5,
+        7
+      ]
+    },
+    {
+      "step": 1,
+      "cables": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_A": 25,
+      "next_loop": [
+        7,
+        262
+      ]
+    },
+    {
+      "step": 2,
+      "cables": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          262
+        ]
+      ],
+      "actual_A": 1225,
+      "next_loop": [
+        5,
+        9187
+      ]
+    }
+  ],
+  "full_target_controls": [
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        3
+      ],
+      "J_final": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        3
+      ],
+      "J_final": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        3
+      ],
+      "J_final": 0,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        9
+      ],
+      "J_final": 4,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        9
+      ],
+      "J_final": 4,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        9
+      ],
+      "J_final": 4,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        15
+      ],
+      "J_final": 8,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        15
+      ],
+      "J_final": 8,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "solid_at_arrival",
+      "arrival": [
+        2,
+        15
+      ],
+      "J_final": 8,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        5
+      ],
+      "terminal": [
+        2,
+        4
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        5
+      ],
+      "terminal": [
+        2,
+        4
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        5
+      ],
+      "terminal": [
+        2,
+        4
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        5
+      ],
+      "terminal": [
+        2,
+        4
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        5
+      ],
+      "terminal": [
+        2,
+        4
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        5
+      ],
+      "terminal": [
+        2,
+        4
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        7
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        7
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        7
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        7
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        7
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        2,
+        7
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        8,
+        13
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        8,
+        13
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        8,
+        13
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        8,
+        13
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        8,
+        13
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        8,
+        13
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        4,
+        11
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        4,
+        11
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        4,
+        11
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        4,
+        11
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        4,
+        11
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        4,
+        11
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        10,
+        17
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        10,
+        17
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        10,
+        17
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        10,
+        17
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        10,
+        17
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "reset": [
+        10,
+        17
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "arrival": [
+        10,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    }
+  ],
+  "cap_coefficient_controls": [
+    {
+      "A": 1,
+      "r": 2,
+      "k": 5,
+      "J": 4,
+      "beta": 1
+    },
+    {
+      "A": 1,
+      "r": 2,
+      "k": 7,
+      "J": 8,
+      "beta": 7
+    },
+    {
+      "A": 1,
+      "r": 8,
+      "k": 13,
+      "J": 2,
+      "beta": 1
+    },
+    {
+      "A": 1,
+      "r": 4,
+      "k": 11,
+      "J": 10,
+      "beta": 1
+    },
+    {
+      "A": 1,
+      "r": 10,
+      "k": 17,
+      "J": 4,
+      "beta": 1
+    },
+    {
+      "A": 3,
+      "r": 2,
+      "k": 11,
+      "J": 4,
+      "beta": 1
+    },
+    {
+      "A": 3,
+      "r": 2,
+      "k": 13,
+      "J": 8,
+      "beta": 7
+    },
+    {
+      "A": 3,
+      "r": 8,
+      "k": 37,
+      "J": 2,
+      "beta": 1
+    },
+    {
+      "A": 3,
+      "r": 4,
+      "k": 23,
+      "J": 10,
+      "beta": 1
+    },
+    {
+      "A": 3,
+      "r": 10,
+      "k": 47,
+      "J": 4,
+      "beta": 1
+    },
+    {
+      "A": 7,
+      "r": 2,
+      "k": 23,
+      "J": 4,
+      "beta": 1
+    },
+    {
+      "A": 7,
+      "r": 2,
+      "k": 25,
+      "J": 8,
+      "beta": 7
+    },
+    {
+      "A": 7,
+      "r": 8,
+      "k": 85,
+      "J": 2,
+      "beta": 1
+    },
+    {
+      "A": 7,
+      "r": 4,
+      "k": 47,
+      "J": 10,
+      "beta": 1
+    },
+    {
+      "A": 7,
+      "r": 10,
+      "k": 107,
+      "J": 4,
+      "beta": 1
+    }
+  ],
+  "completed_small_cluster_control": {
+    "matrix": [
+      [
+        -3,
+        10
+      ],
+      [
+        10,
+        -34
+      ]
+    ],
+    "bridges": [
+      {
+        "nodes": [
+          9,
+          13
+        ],
+        "weights": [
+          -2,
+          -3
+        ],
+        "transported_fibre": [
+          -3,
+          5
+        ],
+        "internal_D": true
+      }
+    ],
+    "legs": {
+      "9": [
+        5
+      ],
+      "13": [
+        2,
+        4
+      ]
+    }
+  },
+  "actual_root_coefficient_control": {
+    "sigma": 4,
+    "p": 14,
+    "support": [
+      14,
+      13
+    ],
+    "alpha": 7,
+    "b": 2,
+    "cofactor": 3,
+    "weights": [
+      -3,
+      -2,
+      -2
+    ]
+  },
+  "assurance": {
+    "written_unbounded_cap_strip_root_and_three_pair_proofs": true,
+    "actual_full_CW_and_exact_contact_controls": true,
+    "complete_retained_primary_audits_reused": true,
+    "deep_JSJ_and_full_peripheral_rigidity_imported": true,
+    "finite_divisors_follow_proved_unbounded_congruences": true,
+    "local_countercontrols_not_affine_or_full_topological_matches": true,
+    "finite_controls_not_universal_proof": true,
+    "all_A4_complementary_closed": false,
+    "all_determinant2_or8_sources_excluded": false,
+    "all_state2_closed": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_packet_classification": false,
+    "finite_Keller_map": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_full_reproof": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_nonunimodular_a4.py": "962dc71790384cb1f30abe6709e7ccc0f2ffabab00e6c0cf08d59c314a6430ef",
+    "NONUNIMODULAR_A4_CAPS_AND_THREE_TERMINAL_PAIRS.md": "b1c5e2e55392ba8691390e8bed68f0192f99a86c3aee13308b45efa46ef3cf35",
+    "sources/nonunimodular-a4/manifest.json": "c95cf53c226576d2b01ce1ad3f38a5651c07d3cd67d4df70da103b7e74e58dac",
+    "unimodular_initial_s4_receipt.json": "72a4ce0fe81ca1fac92c6d8b07f6954c344af4e62147e71a6df7960cbef4c2bf",
+    "cyclic_pattern_a4_receipt.json": "9eb9cf65aa72f21fb8d12bae08768ea4ad1f66eed21f948bae0024e68f29411a",
+    "iterated_peripheral_tail_receipt.json": "7a21fd2fd7b87cc8bff42b5a9993b3edc7c46fe560269a1ce24291b8784ec24c",
+    "persistent_jsj_terminal_modulus_receipt.json": "fddc27f470c56b0175a263e0544c44fee29177a436699cf8748ae147732dfdc3",
+    "terminal_cone_twists_receipt.json": "735f5a8e3ba69916e37fee530d839e4167f30a02db1551d5a8fe6de839119f11",
+    "fibre_order_transfer_receipt.json": "a256433f7c46d52c5cd3063082ca36dada24808c6043ac9dc8b0207a965ea38b",
+    "complementary_corner_jsj_receipt.json": "059a8771cfb326b9e37e9d45658a7e49568b49fc596ff1bf2a4502fbd65ed9a2",
+    "trefoil_complementary_fusion_receipt.json": "c0250bee54f22ab4ae126958727918cc081b84cf1dec529c25ab7b5e5d7d6ae5",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/borderline-regular-end/waldhausen-1968.pdf": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+    "sources/oriented-pattern-linking/neumann-raymond-1978.pdf": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+    "sources/cyclic-companion/hillman-sakuma-1997.pdf": "455a770f76f95dd189132cf99f7964e1775621e48169f6d8501e68b2dd88900b",
+    "sources/binomial-periodic/clay-watson-2011v1.pdf": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

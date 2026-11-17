@@ -1,0 +1,12 @@
+{
+  "status": "planned",
+  "scope": "Full negative-axis homogeneous quadratic source E=(a,b+r*a^2+s*a*c+h*c^2,c),all coefficient strata and s=-1/3 resonance. Desired uncapped rational target repair throughsource7.",
+  "reduction": "P in V7 gives Z=P composed E^-1 in K intersect V14;compute this original-field finite space then symbolic high-degree constraints on Z composed E. No target degree or denominator cap.",
+  "source_cap": 14,
+  "columns": 680,
+  "rank_point_limit": 400,
+  "basis_generation": "All products of H1,H2,H3,S,T with additive source degrees4,6,7,8,8 at most14,then exact independent row selection.",
+  "old_control": "KCUB23 saved source-shear-validation.json;read and preserve,not a new candidate.",
+  "candidate_parameter_grid": false,
+  "universal_exclusion_requires": "Full original-field rank matching explicit exact basis plus parameter-complete symbolic constraint proof;no conclusion from fixed parameter points."
+}

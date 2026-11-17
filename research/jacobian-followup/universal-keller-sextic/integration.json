@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "new_claims": [
+    "UASEXT1",
+    "UASPARSE1",
+    "UATRACEMOD1"
+  ],
+  "changed_existing_claims": [
+    "OP-KCOMP",
+    "OP-KDESC"
+  ],
+  "existing_entries_preserved": 1812,
+  "existing_entries_before": 1814,
+  "new_lesson": "METHOD-COPRIME-SECTIONS-SPARSE-FITTING",
+  "updated_work": [
+    "WORK-KCOMP",
+    "WORK-KDESC"
+  ],
+  "scope_fingerprints": {
+    "UASEXT1": "5521a5148ad0c32c",
+    "UASPARSE1": "d87c726d44d7d9cf",
+    "UATRACEMOD1": "c02843a82f0182e5",
+    "OP-KCOMP": "d29e4ef41dcd2d3a",
+    "OP-KDESC": "d624a750f6fc0a23"
+  },
+  "status": "focused validation passed; full navigation blocked"
+}

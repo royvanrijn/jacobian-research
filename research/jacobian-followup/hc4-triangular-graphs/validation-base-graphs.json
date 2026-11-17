@@ -1,0 +1,79 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYGB0 schema, source hash, evidence paths, dependencies and assurance",
+    "HC4MYGB1 schema, source hash, evidence paths, dependencies and assurance",
+    "HC4MYGB2 schema, source hash, evidence paths, dependencies and assurance",
+    "broader objective remains open and native-chart closure has reciprocal scope/dependency references",
+    "nine new and updated method lessons have valid sources and current reviewed scopes",
+    "WORK-HC4-SCHUR retires all native degree searches and preserves nonlinear/normalization gates",
+    "WORK-HC4-RESIDUAL-AUDIT retires all native degree searches and preserves nonlinear/normalization gates",
+    "receipt-base-graphs.json matches its current proof/checker and retained imported evidence",
+    "receipt-critical-jet.json matches its current proof/checker and retained imported evidence",
+    "receipt-square-axis.json matches its current proof/checker and retained imported evidence",
+    "receipt-curve-trace.json matches its current proof/checker and retained imported evidence",
+    "receipt-automorphic-trace.json matches its current proof/checker and retained imported evidence",
+    "new and maintained canonical-proof/entry-point local links"
+  ],
+  "exact_replay_checks": {
+    "receipt-base-graphs.json": 43,
+    "receipt-critical-jet.json": 52,
+    "receipt-square-axis.json": 50,
+    "receipt-curve-trace.json": 59,
+    "receipt-automorphic-trace.json": 73
+  },
+  "previous_goal_turn": "Progress: the preceding 52-check first-jet proof was revalidated from the current tree before classifying the remaining native base graphs.",
+  "new_claims": [
+    "HC4MYGB0",
+    "HC4MYGB1",
+    "HC4MYGB2"
+  ],
+  "written_proof_coverage": [
+    "complete all-degree affine-direction classification of both boundary traces",
+    "both free-base projection ranks for each native base chart",
+    "x-chart unit-Hessian affine-plane exclusion",
+    "y-chart rank-zero line-injective residual map",
+    "full adapted first x jet with all chain-rule terms",
+    "unbounded degree 4m-1 cubic residual-Jacobian argument",
+    "triangular full-gradient reconstruction and characteristic-zero descent"
+  ],
+  "external_mathematical_inputs": [
+    "HCTANG2 reproduced Tang alternative",
+    "HC4MYGL0 line theorem for the y-chart rank-zero branch"
+  ],
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/geometry.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "native_coordinate_graph_charts_closed": [
+    "x",
+    "y",
+    "p",
+    "q",
+    "r"
+  ],
+  "q_and_r_all_base_and_relative_dual_automorphisms_closed": true,
+  "nonlinear_reparameterizations_of_base_eliminated_charts_closed": false,
+  "nonlinear_p_endpoint_exactly_singleton_zero_problem": true,
+  "singleton_zero_properness_resolved": false,
+  "arbitrary_nonlinear_base_dual_mixing_closed": false,
+  "general_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "final_checks": {
+    "python_compilation": "PASS",
+    "scoped_git_diff_whitespace": "PASS",
+    "new_proof_and_checker_whitespace": "PASS",
+    "render_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "check_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check_require_partial_review": "FAIL: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+  }
+}

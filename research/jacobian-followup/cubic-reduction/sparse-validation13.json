@@ -1,0 +1,49 @@
+{
+  "all_variables_symbolic": true,
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "base_determinant_verified": true,
+  "base_sha256": "f945c2202c9a5c73ce73c4a4842c4b174063dba3784b3c1ae12f4e3443591d9e",
+  "carrier_nilpotence_exponent": 3,
+  "collision_points": 3,
+  "conjugations": [
+    {
+      "i": 6,
+      "j": 10,
+      "t": "-3"
+    }
+  ],
+  "degree": 3,
+  "determinant_one": true,
+  "dimension": 13,
+  "discovery_sha256": "da85163c9de30f219d199cb0e76cd9c2df4aa371b214f2a3cb38ba34e146f645",
+  "elementary_base_moves": {
+    "carrier": 10,
+    "linear": 4,
+    "product": 13
+  },
+  "entire_transformations_replayed": true,
+  "full_polynomial_schur_determinant": true,
+  "identity_derivative": true,
+  "nonlinear_counts": [
+    4,
+    12,
+    15,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "nonlinear_total": 42,
+  "primary_source_sha256": "28c38cb3203399496c31003856e106c723e3659ba3ae0d07fc84e721365c24ac",
+  "replay_sha256": "d9c4f915be292c1c867d132deb8f715fe08a60a8e9a85beedb0ddbcbd31681d1",
+  "scope": "Cubic dimension13 upper bound with42 nonlinear occurrences in displayed tangent-normalized coordinates; collision fibre is not the origin fibre. No minimum dimension or support claim. Three-variable bounds [10,48] unchanged.",
+  "source_sha256": "8e2e77c93e99294c793af4a799ccbc908de46704651b3e2aa52bf311572b4113",
+  "status": "pass",
+  "witness_sha256": "71d2c7ebff307b47503a9a1a3c336270f44d1aade738f79929537472527078c0"
+}

@@ -1,0 +1,21 @@
+{
+  "affine_linear_component_deletion_excluded_in_class": true,
+  "claims": [
+    "KCUB20"
+  ],
+  "complete_original_order_atoms": 135,
+  "exploratory_changed_orders": 10,
+  "exploratory_runs_used_as_global_proof": false,
+  "global_minima_closed": false,
+  "links": true,
+  "minimum_standard_companion_in_class": 18,
+  "positive_bounds_unchanged": true,
+  "primary_smt_unsat_not_proof_premise": true,
+  "rank5_locus_tensor_not_new": true,
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "source_hashes": true,
+  "status": "pass",
+  "umbrella_status": "open",
+  "validation_sha256": "146b3a874ebb500599156d8cb2e7c450084643c1ee67ca38889c21b69a010420"
+}

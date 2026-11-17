@@ -615,9 +615,12 @@ The adapter proves the following matches.
    so it preserves the conductor pair and the three-puncture set.
 
 The replay therefore upgrades the \(A_4\) package from a purely discrete
-fixture to an exact **symbolic-core match**.  Its overall status remains
-`unknown`, but the selected generic double-transposition profile can now be
-sharpened.
+fixture to an exact **symbolic-core match**. Its retained compiler output
+`unknown` is a historical necessary-test result, not the current A4
+occurrence status: [KMFI66/KIG28](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+now exclude every A4-preserving characteristic-zero affine-space Keller
+completion. The selected generic double-transposition profile below is
+still valid local data.
 
 The residue calculation corrects the coarser degree count in the first
 version of this replay.  The affine \(L\)-prime contributes
@@ -693,13 +696,14 @@ does not replay those certificates.  The benchmark
 matrices in the current script are inputs to the necessary tests, not proofs
 that the corresponding normalizations exist.
 
-After that, the first symbolic target should be the \(A_4\) package.  A
+The historical first symbolic target was the \(A_4\) package.  A
 first adapter now recovers the known root equation and residual \(WL\)
 ledger, recognizes the pure-target log-Keller lift, and computes the complete
 generic branch datum as one affine \((e,f)=(2,2)\) \(L\)-prime whose geometric
-splitting gives the double transposition.  The next \(A_4\) task is to split
-or replace that global prime with two residue-degree-one boundary primes and
-solve the boundary-coloring mismatch.
+splitting gives the double transposition.  The former task of replacing that global prime to solve the boundary-coloring
+mismatch is superseded as an A4-preserving affine-space Keller construction
+by KMFI66. It may be studied as local geometry only; the compiler fixture
+and its necessary-test outputs are preserved.
 The second monodromy target is the Fano package from
 [`ABSOLUTE_SUNADA_KELLER_RESEARCH.md`](ABSOLUTE_SUNADA_KELLER_RESEARCH.md).
 

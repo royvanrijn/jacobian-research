@@ -1,0 +1,10275 @@
+{
+  "products": [
+    {
+      "constant": "1",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          120,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          132,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          158,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          232,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          240,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          493,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          596,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": []
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          240,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          493,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          596,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          120,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          132,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          158,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          232,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          240,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          240,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          493,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          493,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          596,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          596,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": []
+    },
+    {
+      "constant": "1",
+      "factors": []
+    },
+    {
+      "constant": "23416",
+      "factors": []
+    },
+    {
+      "constant": "1/2",
+      "factors": []
+    },
+    {
+      "constant": "-33/4",
+      "factors": [
+        [
+          425,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/2",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": []
+    },
+    {
+      "constant": "315328/9",
+      "factors": []
+    },
+    {
+      "constant": "7072/9",
+      "factors": []
+    },
+    {
+      "constant": "61/12",
+      "factors": [
+        [
+          416,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": []
+    },
+    {
+      "constant": "-32",
+      "factors": [
+        [
+          696,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-32/9",
+      "factors": [
+        [
+          363,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/18",
+      "factors": [
+        [
+          730,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "64/27",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": []
+    },
+    {
+      "constant": "-8",
+      "factors": [
+        [
+          435,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-8/9",
+      "factors": [
+        [
+          377,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          745,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/27",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/27",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": []
+    },
+    {
+      "constant": "39068",
+      "factors": []
+    },
+    {
+      "constant": "1654",
+      "factors": []
+    },
+    {
+      "constant": "23/4",
+      "factors": [
+        [
+          364,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1564/9",
+      "factors": []
+    },
+    {
+      "constant": "40/9",
+      "factors": [
+        [
+          706,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10/9",
+      "factors": [
+        [
+          387,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": []
+    },
+    {
+      "constant": "36832",
+      "factors": []
+    },
+    {
+      "constant": "3820",
+      "factors": []
+    },
+    {
+      "constant": "5",
+      "factors": [
+        [
+          19,
+          2
+        ]
+      ]
+    },
+    {
+      "constant": "14392/9",
+      "factors": []
+    },
+    {
+      "constant": "56/9",
+      "factors": [
+        [
+          256,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14/9",
+      "factors": [
+        [
+          322,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "842",
+      "factors": []
+    },
+    {
+      "constant": "1/2",
+      "factors": []
+    },
+    {
+      "constant": "-18",
+      "factors": [
+        [
+          586,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2",
+      "factors": [
+        [
+          390,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "13/8",
+      "factors": [
+        [
+          341,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          515,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10/9",
+      "factors": [
+        [
+          10,
+          1
+        ],
+        [
+          81,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          244,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/2",
+      "factors": [
+        [
+          577,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/2",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": []
+    },
+    {
+      "constant": "33104",
+      "factors": []
+    },
+    {
+      "constant": "6940",
+      "factors": []
+    },
+    {
+      "constant": "19/4",
+      "factors": [
+        [
+          365,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "43792/9",
+      "factors": []
+    },
+    {
+      "constant": "80/9",
+      "factors": [
+        [
+          401,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20/9",
+      "factors": [
+        [
+          329,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3740",
+      "factors": []
+    },
+    {
+      "constant": "932",
+      "factors": []
+    },
+    {
+      "constant": "5",
+      "factors": [
+        [
+          495,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "-408",
+      "factors": []
+    },
+    {
+      "constant": "-50",
+      "factors": []
+    },
+    {
+      "constant": "-15/2",
+      "factors": [
+        [
+          26,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/3",
+      "factors": []
+    },
+    {
+      "constant": "-28/3",
+      "factors": [
+        [
+          189,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-14/3",
+      "factors": [
+        [
+          231,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "38",
+      "factors": []
+    },
+    {
+      "constant": "140",
+      "factors": []
+    },
+    {
+      "constant": "-7",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "244",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": []
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          430,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          251,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          33,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          266,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/12",
+      "factors": [
+        [
+          268,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/12",
+      "factors": [
+        [
+          265,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          285,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          309,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/4",
+      "factors": [
+        [
+          16,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          326,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": []
+    },
+    {
+      "constant": "9/16",
+      "factors": [
+        [
+          431,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/16",
+      "factors": [
+        [
+          252,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/16",
+      "factors": [
+        [
+          427,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/16",
+      "factors": [
+        [
+          276,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/16",
+      "factors": [
+        [
+          24,
+          1
+        ],
+        [
+          75,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/16",
+      "factors": [
+        [
+          275,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/16",
+      "factors": [
+        [
+          289,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/16",
+      "factors": [
+        [
+          310,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/16",
+      "factors": [
+        [
+          71,
+          1
+        ],
+        [
+          26,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/16",
+      "factors": [
+        [
+          238,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/4",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": []
+    },
+    {
+      "constant": "1/16",
+      "factors": [
+        [
+          598,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/16",
+      "factors": [
+        [
+          337,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/16",
+      "factors": [
+        [
+          378,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/16",
+      "factors": [
+        [
+          354,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/48",
+      "factors": [
+        [
+          356,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/48",
+      "factors": [
+        [
+          355,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/16",
+      "factors": [
+        [
+          371,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/16",
+      "factors": [
+        [
+          389,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/16",
+      "factors": [
+        [
+          283,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/16",
+      "factors": [
+        [
+          421,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "-72",
+      "factors": []
+    },
+    {
+      "constant": "-8",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          24,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/3",
+      "factors": []
+    },
+    {
+      "constant": "16/3",
+      "factors": []
+    },
+    {
+      "constant": "16/3",
+      "factors": []
+    },
+    {
+      "constant": "10",
+      "factors": []
+    },
+    {
+      "constant": "14",
+      "factors": []
+    },
+    {
+      "constant": "14",
+      "factors": []
+    },
+    {
+      "constant": "20",
+      "factors": []
+    },
+    {
+      "constant": "-14",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          14,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          15,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          49,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "-33",
+      "factors": []
+    },
+    {
+      "constant": "10",
+      "factors": []
+    },
+    {
+      "constant": "10",
+      "factors": []
+    },
+    {
+      "constant": "61/3",
+      "factors": []
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          38,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          51,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "23",
+      "factors": []
+    },
+    {
+      "constant": "20",
+      "factors": []
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          32,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "19",
+      "factors": []
+    },
+    {
+      "constant": "-15",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          17,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          53,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          50,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "96",
+      "factors": []
+    },
+    {
+      "constant": "76",
+      "factors": []
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          83,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "232/3",
+      "factors": []
+    },
+    {
+      "constant": "8/3",
+      "factors": [
+        [
+          6,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          48,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "74",
+      "factors": []
+    },
+    {
+      "constant": "50",
+      "factors": []
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          71,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "28",
+      "factors": []
+    },
+    {
+      "constant": "-18",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          21,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          62,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          60,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4",
+      "factors": []
+    },
+    {
+      "constant": "-3",
+      "factors": []
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "192",
+      "factors": []
+    },
+    {
+      "constant": "130",
+      "factors": []
+    },
+    {
+      "constant": "5/2",
+      "factors": [
+        [
+          39,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "376/3",
+      "factors": []
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          12,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "118",
+      "factors": []
+    },
+    {
+      "constant": "80",
+      "factors": []
+    },
+    {
+      "constant": "3",
+      "factors": [
+        [
+          26,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "44",
+      "factors": []
+    },
+    {
+      "constant": "-20",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          25,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          26,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          63,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-6",
+      "factors": []
+    },
+    {
+      "constant": "-5",
+      "factors": []
+    },
+    {
+      "constant": "-2",
+      "factors": []
+    },
+    {
+      "constant": "-3/2",
+      "factors": []
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          253,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          369,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          248,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          346,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/12",
+      "factors": [
+        [
+          318,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/12",
+      "factors": [
+        [
+          270,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          332,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          247,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          441,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          428,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          48,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/4",
+      "factors": [
+        [
+          46,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          25,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          138,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          201,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": []
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          290,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          395,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/18",
+      "factors": [
+        [
+          422,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          386,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          333,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/9",
+      "factors": [
+        [
+          311,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          375,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          321,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/18",
+      "factors": [
+        [
+          409,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          328,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          63,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13/12",
+      "factors": [
+        [
+          65,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/12",
+      "factors": [
+        [
+          23,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          46,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          104,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": []
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          331,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          291,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          344,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          279,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/36",
+      "factors": [
+        [
+          327,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/12",
+      "factors": [
+        [
+          281,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          258,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          400,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          413,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          325,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          11,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          17,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-11/12",
+      "factors": [
+        [
+          64,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/12",
+      "factors": [
+        [
+          44,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          28,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          17,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          211,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": []
+    },
+    {
+      "constant": "9/4",
+      "factors": [
+        [
+          697,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/4",
+      "factors": [
+        [
+          717,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          703,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/4",
+      "factors": [
+        [
+          719,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/4",
+      "factors": [
+        [
+          573,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/4",
+      "factors": [
+        [
+          533,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/4",
+      "factors": [
+        [
+          602,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/4",
+      "factors": [
+        [
+          434,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          677,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/4",
+      "factors": [
+        [
+          442,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          191,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          86,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/4",
+      "factors": [
+        [
+          140,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/4",
+      "factors": [
+        [
+          104,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          132,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          207,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          210,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/6",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/3",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": []
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          648,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          461,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10/9",
+      "factors": [
+        [
+          658,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          681,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "8/9",
+      "factors": [
+        [
+          653,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          516,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          611,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          482,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10/9",
+      "factors": [
+        [
+          614,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          701,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          120,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          104,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/12",
+      "factors": [
+        [
+          212,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "13/12",
+      "factors": [
+        [
+          134,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          180,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          225,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          187,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/6",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/3",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": []
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          558,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          569,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/9",
+      "factors": [
+        [
+          560,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          570,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/12",
+      "factors": [
+        [
+          685,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "35/36",
+      "factors": [
+        [
+          567,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          571,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          576,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/9",
+      "factors": [
+        [
+          432,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          581,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          105,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          120,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/12",
+      "factors": [
+        [
+          104,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/12",
+      "factors": [
+        [
+          133,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          112,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          113,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          114,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/3",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "-363/4",
+      "factors": []
+    },
+    {
+      "constant": "-65/4",
+      "factors": []
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          52,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-17/12",
+      "factors": []
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          181,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          201,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "17/4",
+      "factors": []
+    },
+    {
+      "constant": "47/4",
+      "factors": []
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          106,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "85/4",
+      "factors": []
+    },
+    {
+      "constant": "-27/2",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          34,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          82,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          78,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": []
+    },
+    {
+      "constant": "3/2",
+      "factors": []
+    },
+    {
+      "constant": "9/2",
+      "factors": []
+    },
+    {
+      "constant": "13/2",
+      "factors": []
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          85,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          62,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          59,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          93,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          119,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          157,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "328/9",
+      "factors": []
+    },
+    {
+      "constant": "400/9",
+      "factors": []
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "448/9",
+      "factors": []
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "8/9",
+      "factors": [
+        [
+          9,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "442/9",
+      "factors": []
+    },
+    {
+      "constant": "310/9",
+      "factors": []
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          61,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "196/9",
+      "factors": []
+    },
+    {
+      "constant": "-50/3",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          57,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          58,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          54,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-8/3",
+      "factors": []
+    },
+    {
+      "constant": "-5/3",
+      "factors": []
+    },
+    {
+      "constant": "4/3",
+      "factors": []
+    },
+    {
+      "constant": "10/3",
+      "factors": []
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          86,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          140,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          128,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          100,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          193,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-19/6",
+      "factors": []
+    },
+    {
+      "constant": "-4/3",
+      "factors": []
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          278,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          377,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/18",
+      "factors": [
+        [
+          335,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          360,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          24,
+          1
+        ],
+        [
+          148,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/9",
+      "factors": [
+        [
+          334,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          343,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          402,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/18",
+      "factors": [
+        [
+          643,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          528,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          54,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13/12",
+      "factors": [
+        [
+          56,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/12",
+      "factors": [
+        [
+          18,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          211,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          86,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          147,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          167,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "40/9",
+      "factors": []
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          109,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-11/6",
+      "factors": [
+        [
+          144,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/3",
+      "factors": [
+        [
+          210,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          206,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          188,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": []
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          319,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          257,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          24,
+          1
+        ],
+        [
+          33,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          243,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/36",
+      "factors": [
+        [
+          316,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/12",
+      "factors": [
+        [
+          19,
+          1
+        ],
+        [
+          73,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          417,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          348,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          642,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/36",
+      "factors": [
+        [
+          429,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          33,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-11/12",
+      "factors": [
+        [
+          55,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/12",
+      "factors": [
+        [
+          37,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          24,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          201,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          155,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          190,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          201,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          26,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "35/9",
+      "factors": []
+    },
+    {
+      "constant": "-5/3",
+      "factors": [
+        [
+          136,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          205,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          151,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          7,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": []
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          629,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          445,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10/9",
+      "factors": [
+        [
+          637,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          654,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "8/9",
+      "factors": [
+        [
+          699,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          565,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          589,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          457,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10/9",
+      "factors": [
+        [
+          120,
+          1
+        ],
+        [
+          223,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          676,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          154,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          86,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/12",
+      "factors": [
+        [
+          203,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "13/12",
+      "factors": [
+        [
+          123,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          124,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          216,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          126,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          176,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/6",
+      "factors": [
+        [
+          137,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/3",
+      "factors": [
+        [
+          204,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          199,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          86,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-10/9",
+      "factors": []
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          222,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          108,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/3",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": []
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          513,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          535,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/9",
+      "factors": [
+        [
+          621,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          537,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/12",
+      "factors": [
+        [
+          501,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "35/36",
+      "factors": [
+        [
+          673,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          538,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          551,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/9",
+      "factors": [
+        [
+          713,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "49/36",
+      "factors": [
+        [
+          559,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          87,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          154,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/12",
+      "factors": [
+        [
+          86,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/12",
+      "factors": [
+        [
+          122,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          99,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          101,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          102,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          105,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/3",
+      "factors": [
+        [
+          126,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          198,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          141,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          120,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          191,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/9",
+      "factors": []
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          149,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          202,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": []
+    },
+    {
+      "constant": "411/25",
+      "factors": []
+    },
+    {
+      "constant": "856/25",
+      "factors": []
+    },
+    {
+      "constant": "3/5",
+      "factors": [
+        [
+          67,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3073/75",
+      "factors": []
+    },
+    {
+      "constant": "22/15",
+      "factors": [
+        [
+          13,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/15",
+      "factors": [
+        [
+          27,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1031/25",
+      "factors": []
+    },
+    {
+      "constant": "746/25",
+      "factors": []
+    },
+    {
+      "constant": "11/10",
+      "factors": [
+        [
+          66,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "511/25",
+      "factors": []
+    },
+    {
+      "constant": "-81/5",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          79,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          35,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          31,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-11/5",
+      "factors": []
+    },
+    {
+      "constant": "-6/5",
+      "factors": []
+    },
+    {
+      "constant": "9/5",
+      "factors": []
+    },
+    {
+      "constant": "19/5",
+      "factors": []
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          195,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          153,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          40,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          162,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          186,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          220,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-27/10",
+      "factors": []
+    },
+    {
+      "constant": "7/15",
+      "factors": []
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          224,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          218,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          171,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          233,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          36,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "96",
+      "factors": [
+        [
+          240,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "76",
+      "factors": [
+        [
+          368,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3/2",
+      "factors": [
+        [
+          729,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "232/3",
+      "factors": [
+        [
+          412,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "8/3",
+      "factors": [
+        [
+          741,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          19,
+          1
+        ],
+        [
+          376,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "74",
+      "factors": [
+        [
+          254,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "50",
+      "factors": [
+        [
+          397,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          739,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "28",
+      "factors": [
+        [
+          313,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-18",
+      "factors": [
+        [
+          70,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          10,
+          1
+        ],
+        [
+          41,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          338,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          411,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4",
+      "factors": [
+        [
+          46,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3",
+      "factors": [
+        [
+          188,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "96",
+      "factors": []
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          74,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          267,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          46,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          306,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          317,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          292,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          381,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-9/2",
+      "factors": [
+        [
+          26,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          196,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          383,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          303,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          250,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          399,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-9/5",
+      "factors": [
+        [
+          227,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          132,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "96",
+      "factors": [
+        [
+          240,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1042",
+      "factors": [
+        [
+          489,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-43/2",
+      "factors": [
+        [
+          769,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3544/3",
+      "factors": [
+        [
+          464,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-28",
+      "factors": [
+        [
+          750,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-14",
+      "factors": [
+        [
+          761,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1270",
+      "factors": [
+        [
+          518,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1568",
+      "factors": [
+        [
+          488,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-21",
+      "factors": [
+        [
+          758,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1868",
+      "factors": [
+        [
+          485,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "28",
+      "factors": [
+        [
+          89,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          173,
+          1
+        ],
+        [
+          104,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          707,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          433,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "42",
+      "factors": [
+        [
+          96,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "43",
+      "factors": [
+        [
+          219,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "46",
+      "factors": [
+        [
+          178,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "48",
+      "factors": [
+        [
+          124,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          245,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          284,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          324,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          544,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          104,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          539,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "83/2",
+      "factors": [
+        [
+          111,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "134/3",
+      "factors": [
+        [
+          92,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          280,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          320,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          634,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          520,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "221/5",
+      "factors": [
+        [
+          175,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "46",
+      "factors": [
+        [
+          240,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          46,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-33",
+      "factors": [
+        [
+          388,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "61/3",
+      "factors": [
+        [
+          410,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          738,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          742,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "23",
+      "factors": [
+        [
+          361,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20",
+      "factors": [
+        [
+          419,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          736,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "19",
+      "factors": [
+        [
+          403,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-15",
+      "factors": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          298,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          418,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          372,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          211,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10",
+      "factors": []
+    },
+    {
+      "constant": "3",
+      "factors": [
+        [
+          29,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5",
+      "factors": [
+        [
+          62,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          722,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          349,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          297,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          627,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          662,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          436,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          230,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/3",
+      "factors": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          211,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          724,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          636,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          714,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6/5",
+      "factors": [
+        [
+          45,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3",
+      "factors": [
+        [
+          241,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-43",
+      "factors": [
+        [
+          453,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          120,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-432",
+      "factors": [
+        [
+          607,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-19/2",
+      "factors": [
+        [
+          165,
+          1
+        ],
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "232/3",
+      "factors": [
+        [
+          491,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-12",
+      "factors": [
+        [
+          773,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-6",
+      "factors": [
+        [
+          751,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "118",
+      "factors": [
+        [
+          496,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "248",
+      "factors": [
+        [
+          448,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-9",
+      "factors": [
+        [
+          786,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "380",
+      "factors": [
+        [
+          590,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          154,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          511,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          635,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          578,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "18",
+      "factors": [
+        [
+          110,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "19",
+      "factors": [
+        [
+          159,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "22",
+      "factors": [
+        [
+          125,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "24",
+      "factors": [
+        [
+          130,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          345,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          385,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          263,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          580,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          591,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          550,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "35/2",
+      "factors": [
+        [
+          88,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "62/3",
+      "factors": [
+        [
+          197,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          374,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          255,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          154,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          531,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "101/5",
+      "factors": [
+        [
+          118,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "22",
+      "factors": [
+        [
+          242,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-24",
+      "factors": [
+        [
+          616,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "19",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          120,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          809,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          440,
+          1
+        ],
+        [
+          404,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5",
+      "factors": [
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          805,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/12",
+      "factors": [
+        [
+          807,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/12",
+      "factors": [
+        [
+          802,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          799,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          803,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "13/4",
+      "factors": [
+        [
+          792,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          796,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          692,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          154,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          511,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          594,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          391,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          405,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          249,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          261,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          426,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          293,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          392,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          556,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          459,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          591,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          262,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          323,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          393,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          420,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          450,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          154,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          367,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          740,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          787,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          30,
+          1
+        ],
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          120,
+          1
+        ],
+        [
+          440,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          817,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          821,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/18",
+      "factors": [
+        [
+          798,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          271,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/9",
+      "factors": [
+        [
+          274,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "32/9",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          801,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          797,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/18",
+      "factors": [
+        [
+          814,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          800,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          468,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          473,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/12",
+      "factors": [
+        [
+          475,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/12",
+      "factors": [
+        [
+          228,
+          1
+        ],
+        [
+          211,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          272,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          286,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          308,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          314,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          301,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          384,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          347,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          503,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          708,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          597,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          260,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          379,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          408,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          394,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          104,
+          1
+        ],
+        [
+          103,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          709,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          423,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          744,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          793,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          733,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          778,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          754,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-72",
+      "factors": [
+        [
+          396,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-8",
+      "factors": [
+        [
+          340,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          735,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/3",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "32/9",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10",
+      "factors": [
+        [
+          606,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          624,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "34/3",
+      "factors": [
+        [
+          287,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20",
+      "factors": [
+        [
+          406,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-14",
+      "factors": [
+        [
+          229,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          269,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          277,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          357,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/3",
+      "factors": []
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          20,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          47,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6",
+      "factors": [
+        [
+          76,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          522,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          350,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          305,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          506,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          618,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          463,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          169,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "8/3",
+      "factors": [
+        [
+          24,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          665,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          300,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          494,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          446,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/5",
+      "factors": [
+        [
+          77,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          288,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-42",
+      "factors": [
+        [
+          721,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          526,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-18",
+      "factors": [
+        [
+          622,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          747,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          36,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-408",
+      "factors": [
+        [
+          626,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-50",
+      "factors": [
+        [
+          542,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-15/2",
+      "factors": [
+        [
+          795,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/3",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-28/3",
+      "factors": [
+        [
+          166,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-14/3",
+      "factors": [
+        [
+          168,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "38",
+      "factors": [
+        [
+          484,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "140",
+      "factors": [
+        [
+          588,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7",
+      "factors": [
+        [
+          749,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "244",
+      "factors": [
+        [
+          497,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/3",
+      "factors": []
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          474,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          476,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          473,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          163,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "15",
+      "factors": [
+        [
+          214,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "18",
+      "factors": [
+        [
+          182,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20",
+      "factors": [
+        [
+          142,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          314,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          366,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          246,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          708,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          592,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          540,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "27/2",
+      "factors": [
+        [
+          97,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "50/3",
+      "factors": [
+        [
+          174,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          342,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          415,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          646,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          521,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "81/5",
+      "factors": [
+        [
+          172,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "18",
+      "factors": [
+        [
+          312,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-28",
+      "factors": [
+        [
+          670,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "15",
+      "factors": [
+        [
+          633,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4",
+      "factors": [
+        [
+          498,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          766,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/9",
+      "factors": [
+        [
+          811,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/9",
+      "factors": [
+        [
+          815,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          820,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/9",
+      "factors": [
+        [
+          694,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/9",
+      "factors": [
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/9",
+      "factors": [
+        [
+          693,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/9",
+      "factors": [
+        [
+          808,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/9",
+      "factors": [
+        [
+          812,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/9",
+      "factors": [
+        [
+          810,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/9",
+      "factors": [
+        [
+          804,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          472,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          468,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/12",
+      "factors": [
+        [
+          473,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/12",
+      "factors": [
+        [
+          471,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          695,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          460,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          640,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          623,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7/6",
+      "factors": [
+        [
+          656,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          549,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          669,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          547,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          562,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          708,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          593,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          500,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          702,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          548,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          682,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          104,
+          1
+        ],
+        [
+          103,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          659,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          737,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          86,
+          1
+        ],
+        [
+          617,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          783,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          775,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          778,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          71,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          469,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          84,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-33",
+      "factors": [
+        [
+          414,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10",
+      "factors": [
+        [
+          631,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          295,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "61/3",
+      "factors": [
+        [
+          456,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          762,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          734,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "23",
+      "factors": [
+        [
+          493,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20",
+      "factors": [
+        [
+          530,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          732,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "19",
+      "factors": [
+        [
+          524,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-15",
+      "factors": [
+        [
+          184,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          273,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          352,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          359,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          152,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "23",
+      "factors": []
+    },
+    {
+      "constant": "3",
+      "factors": [
+        [
+          26,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5",
+      "factors": [
+        [
+          22,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          666,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          725,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          264,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          655,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          704,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          481,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          200,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/3",
+      "factors": [
+        [
+          69,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          437,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          663,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          687,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          455,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6/5",
+      "factors": [
+        [
+          5,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "3",
+      "factors": [
+        [
+          407,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-43",
+      "factors": [
+        [
+          700,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "13",
+      "factors": [
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-19",
+      "factors": [
+        [
+          601,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          746,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          728,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          651,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-15",
+      "factors": [
+        [
+          698,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          756,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          120,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-397",
+      "factors": [
+        [
+          449,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-60",
+      "factors": [
+        [
+          680,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7",
+      "factors": [
+        [
+          774,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-23/3",
+      "factors": [
+        [
+          679,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-26/3",
+      "factors": [
+        [
+          790,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13/3",
+      "factors": [
+        [
+          777,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "23",
+      "factors": [
+        [
+          493,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "118",
+      "factors": [
+        [
+          600,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13/2",
+      "factors": [
+        [
+          789,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "215",
+      "factors": [
+        [
+          657,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          183,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          477,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          628,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          452,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "13",
+      "factors": [
+        [
+          129,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          135,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "17",
+      "factors": [
+        [
+          150,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "19",
+      "factors": [
+        [
+          156,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          307,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          353,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          424,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          712,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          454,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          553,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "25/2",
+      "factors": [
+        [
+          170,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "47/3",
+      "factors": [
+        [
+          215,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          330,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          398,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          444,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          532,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "76/5",
+      "factors": [
+        [
+          90,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "17",
+      "factors": [
+        [
+          282,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-29",
+      "factors": [
+        [
+          715,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          480,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5",
+      "factors": [
+        [
+          120,
+          1
+        ],
+        [
+          235,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          120,
+          1
+        ],
+        [
+          668,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          772,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "13",
+      "factors": [
+        [
+          647,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          479,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          788,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          493,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-237",
+      "factors": [
+        [
+          674,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-68",
+      "factors": [
+        [
+          716,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3",
+      "factors": [
+        [
+          753,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-119/3",
+      "factors": [
+        [
+          630,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-10/3",
+      "factors": [
+        [
+          767,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/3",
+      "factors": [
+        [
+          785,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-25",
+      "factors": [
+        [
+          683,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/2",
+      "factors": [
+        [
+          234,
+          1
+        ],
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "55",
+      "factors": [
+        [
+          465,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-9",
+      "factors": [
+        [
+          117,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          641,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          439,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          120,
+          1
+        ],
+        [
+          36,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5",
+      "factors": [
+        [
+          209,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6",
+      "factors": [
+        [
+          177,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9",
+      "factors": [
+        [
+          98,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11",
+      "factors": [
+        [
+          116,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          726,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          239,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          358,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          718,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          458,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          555,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9/2",
+      "factors": [
+        [
+          237,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "23/3",
+      "factors": [
+        [
+          161,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          478,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          104,
+          1
+        ],
+        [
+          43,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          447,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          534,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "36/5",
+      "factors": [
+        [
+          145,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "9",
+      "factors": [
+        [
+          362,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-37",
+      "factors": [
+        [
+          443,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6",
+      "factors": [
+        [
+          585,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13",
+      "factors": [
+        [
+          620,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          752,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          351,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5",
+      "factors": [
+        [
+          509,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-9",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          192,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          512,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6",
+      "factors": [
+        [
+          609,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-8",
+      "factors": [
+        [
+          552,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          236,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-72",
+      "factors": [
+        [
+          514,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-8",
+      "factors": [
+        [
+          370,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          763,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/3",
+      "factors": [
+        [
+          543,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4",
+      "factors": [
+        [
+          380,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          583,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10",
+      "factors": [
+        [
+          502,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20",
+      "factors": [
+        [
+          711,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-14",
+      "factors": [
+        [
+          86,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          373,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          53,
+          1
+        ],
+        [
+          160,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          336,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": []
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          53,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          95,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6",
+      "factors": [
+        [
+          140,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          438,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          639,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          259,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          579,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          649,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          519,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          179,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "8/3",
+      "factors": [
+        [
+          121,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          487,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          691,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          568,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          124,
+          1
+        ],
+        [
+          217,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/5",
+      "factors": [
+        [
+          164,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          595,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-42",
+      "factors": [
+        [
+          644,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          723,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-18",
+      "factors": [
+        [
+          541,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          764,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          743,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "26/3",
+      "factors": [
+        [
+          72,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-14",
+      "factors": [
+        [
+          638,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          757,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          510,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13",
+      "factors": [
+        [
+          599,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          823,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          819,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13/4",
+      "factors": [
+        [
+          780,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          818,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/12",
+      "factors": [
+        [
+          806,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/12",
+      "factors": [
+        [
+          822,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          816,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          557,
+          1
+        ],
+        [
+          504,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "7",
+      "factors": [
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          813,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          604,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-9/2",
+      "factors": [
+        [
+          117,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          641,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/4",
+      "factors": [
+        [
+          143,
+          1
+        ],
+        [
+          139,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          507,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          86,
+          1
+        ],
+        [
+          221,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          470,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          104,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          615,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          710,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          661,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          652,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          486,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          458,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          619,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          632,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "5/6",
+      "factors": [
+        [
+          86,
+          1
+        ],
+        [
+          194,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          688,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/6",
+      "factors": [
+        [
+          466,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          447,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          705,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          727,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          791,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          755,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          784,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13/2",
+      "factors": [
+        [
+          620,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          173,
+          1
+        ],
+        [
+          124,
+          1
+        ],
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          759,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          605,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/6",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          351,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          760,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          781,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          188,
+          1
+        ],
+        [
+          557,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          115,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "8",
+      "factors": [
+        [
+          462,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "30",
+      "factors": [
+        [
+          625,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          779,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "112/3",
+      "factors": [
+        [
+          645,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4/3",
+      "factors": [
+        [
+          771,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          731,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "38",
+      "factors": [
+        [
+          689,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "28",
+      "factors": [
+        [
+          564,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          770,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20",
+      "factors": [
+        [
+          596,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-16",
+      "factors": [
+        [
+          213,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          302,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          575,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          339,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2",
+      "factors": [
+        [
+          152,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          173,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          188,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          236,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          545,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          505,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          664,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          720,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          608,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          561,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5/2",
+      "factors": [
+        [
+          147,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2/3",
+      "factors": [
+        [
+          19,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          584,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          574,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          671,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          536,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/5",
+      "factors": [
+        [
+          80,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          563,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-44",
+      "factors": [
+        [
+          610,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          529,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-20",
+      "factors": [
+        [
+          660,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          782,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          294,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2",
+      "factors": [
+        [
+          675,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-16",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          131,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          667,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          152,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-15",
+      "factors": [
+        [
+          483,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          91,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2",
+      "factors": [
+        [
+          572,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          492,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1",
+      "factors": [
+        [
+          124,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-72",
+      "factors": [
+        [
+          517,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-8",
+      "factors": [
+        [
+          304,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          748,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "16/3",
+      "factors": [
+        [
+          499,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-8",
+      "factors": [
+        [
+          299,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          296,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "10",
+      "factors": [
+        [
+          650,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "14",
+      "factors": [
+        [
+          582,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          672,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20",
+      "factors": [
+        [
+          596,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-14",
+      "factors": [
+        [
+          107,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          525,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/4",
+      "factors": [
+        [
+          613,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/4",
+      "factors": [
+        [
+          315,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "20",
+      "factors": []
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          46,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          94,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6",
+      "factors": [
+        [
+          185,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/2",
+      "factors": [
+        [
+          508,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          451,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          382,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-3/2",
+      "factors": [
+        [
+          612,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          686,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          566,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          208,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "8/3",
+      "factors": [
+        [
+          127,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/3",
+      "factors": [
+        [
+          546,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1/6",
+      "factors": [
+        [
+          467,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-4/3",
+      "factors": [
+        [
+          603,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-7/6",
+      "factors": [
+        [
+          554,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "11/5",
+      "factors": [
+        [
+          226,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "4",
+      "factors": [
+        [
+          690,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-42",
+      "factors": [
+        [
+          684,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          523,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-18",
+      "factors": [
+        [
+          587,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          794,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/3",
+      "factors": [
+        [
+          765,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "44/3",
+      "factors": [
+        [
+          68,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-14",
+      "factors": [
+        [
+          678,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-2/3",
+      "factors": [
+        [
+          768,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "1",
+      "factors": [
+        [
+          527,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-13",
+      "factors": [
+        [
+          115,
+          1
+        ],
+        [
+          146,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-5",
+      "factors": [
+        [
+          490,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "6",
+      "factors": [
+        [
+          29,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "-1/2",
+      "factors": [
+        [
+          776,
+          1
+        ]
+      ]
+    },
+    {
+      "constant": "2",
+      "factors": [
+        [
+          596,
+          1
+        ]
+      ]
+    }
+  ],
+  "projection_sha256": "5be14475070c57f39e32b146ff1b77fadb01792181996215f40cab9932cfd77c",
+  "source_sha256": "fd8cbab014f796473c6bd397ecc00986b2e347387d1a64b815d82bf092552c91",
+  "status": "pass"
+}

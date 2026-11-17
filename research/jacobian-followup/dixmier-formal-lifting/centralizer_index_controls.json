@@ -1,0 +1,215 @@
+{
+  "claim": "QCI1",
+  "status": "PASS",
+  "commutative_valued_tower_control": {
+    "u_of_z": "z**3 + z",
+    "t_of_u": "h*u**3 + u",
+    "t_of_z": "h*z**9 + 3*h*z**7 + 3*h*z**5 + h*z**3 + z**3 + z",
+    "generic_centralizer_analogue_degree": 3,
+    "generic_residual_degree": 3,
+    "generic_total_degree": 9,
+    "completed_residue_degree": 3,
+    "index_loss": 6,
+    "selected_intermediate_completion_degree": "one, written Hensel proof",
+    "formal_inverse_prefix_through_h6": "PASS",
+    "inverse_coefficient_spatial_degrees": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "Weyl_tuple": false,
+    "Long_lift": false
+  },
+  "field_basis_derivative_control": {
+    "basis": [
+      "1",
+      "u",
+      "u^2"
+    ],
+    "minimal_polynomial": "h*u**3 - t + u",
+    "multiplication_matrix": "Matrix([[0, 0, t/h], [1, 0, -1/h], [0, 1, 0]])",
+    "derivation_extended_by_minimal_polynomial": "PASS",
+    "connection_multiplication_compatibility": "PASS"
+  },
+  "positional_recovery_control": {
+    "positions": [
+      "x^2+y",
+      "y"
+    ],
+    "Jacobian": "2*x",
+    "rational_mates": [
+      "-p_x/(2*x)",
+      "p_x/(2*x)-p_y"
+    ],
+    "all_first_order_relations": "PASS",
+    "recover_p_x": "-2*x*T1",
+    "recover_p_y": "-T1-T2",
+    "position_centralizer_is_self_polynomial": false,
+    "Long_lift": false
+  },
+  "positive_delta1_shear": {
+    "retained_full_PBW_relations": "PASS",
+    "actual_polynomial_inverse": "PASS",
+    "classical_degree": 1,
+    "residual_index": 1
+  },
+  "retained_rescaled_cotangent_control": {
+    "claim": "QNI1",
+    "rank": 3,
+    "delta": 1,
+    "d": 3,
+    "M": 1,
+    "N": 3,
+    "full_relations": 15,
+    "Long_lift": false
+  },
+  "unscaled_cotangent_boundary": {
+    "classical_degree": 3,
+    "classical_position_centralizer": "K[x], larger than K[f]",
+    "violates_joint_centralizer_hypothesis": true,
+    "actual_hypotheses_not_satisfied": true
+  },
+  "genuine_rational_residual_family_controls": [
+    {
+      "m": 2,
+      "F": "x^(1-m)*p/m",
+      "T": "x^m",
+      "exact_Weyl_relation": "PASS",
+      "recover_ambient_p": "PASS",
+      "Bernstein_degree_F": 0,
+      "power_degrees_k1_to_6": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fractional_two_by_two_frame_all_checked_powers": "PASS",
+      "whole_left_right_indices": "m, written differential-field basis proof",
+      "position_F_d_and_M": [
+        1,
+        2
+      ],
+      "position_T_d_and_M": [
+        2,
+        1
+      ],
+      "completed_index": "m, written residue-basis proof",
+      "no_finite_lattice_any_positive_rank": "written bounded-powers proof",
+      "Long_lift": false
+    },
+    {
+      "m": 3,
+      "F": "x^(1-m)*p/m",
+      "T": "x^m",
+      "exact_Weyl_relation": "PASS",
+      "recover_ambient_p": "PASS",
+      "Bernstein_degree_F": -1,
+      "power_degrees_k1_to_6": [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6
+      ],
+      "fractional_two_by_two_frame_all_checked_powers": "PASS",
+      "whole_left_right_indices": "m, written differential-field basis proof",
+      "position_F_d_and_M": [
+        1,
+        3
+      ],
+      "position_T_d_and_M": [
+        3,
+        1
+      ],
+      "completed_index": "m, written residue-basis proof",
+      "no_finite_lattice_any_positive_rank": "written bounded-powers proof",
+      "Long_lift": false
+    },
+    {
+      "m": 5,
+      "F": "x^(1-m)*p/m",
+      "T": "x^m",
+      "exact_Weyl_relation": "PASS",
+      "recover_ambient_p": "PASS",
+      "Bernstein_degree_F": -3,
+      "power_degrees_k1_to_6": [
+        -3,
+        -6,
+        -9,
+        -12,
+        -15,
+        -18
+      ],
+      "fractional_two_by_two_frame_all_checked_powers": "PASS",
+      "whole_left_right_indices": "m, written differential-field basis proof",
+      "position_F_d_and_M": [
+        1,
+        5
+      ],
+      "position_T_d_and_M": [
+        5,
+        1
+      ],
+      "completed_index": "m, written residue-basis proof",
+      "no_finite_lattice_any_positive_rank": "written bounded-powers proof",
+      "Long_lift": false
+    }
+  ],
+  "bounded_matrix_powers_boundary": {
+    "negative_degree_nilpotent": "((0,x^-1),(0,0))",
+    "minimal_scalar_polynomial": "t^2",
+    "finite_free_lattice_basis": [
+      "(x,0)",
+      "(0,1)"
+    ],
+    "polynomial_right_action_after_frame": "PASS",
+    "Weyl_mate": false,
+    "positive_polynomial_pair": "x,-p",
+    "positive_power_degrees_k1_to_6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "arbitrary_rank_theorem": "written proof, no finite rank search"
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/math/0401263",
+      "used": "Corollary3.10 provides coordinate-field maximality context. Lemma3.7, also retained in QPD1, clears curve rational commutants for the rational residual family; its finite operator centralizer is proved directly by differential order."
+    }
+  ],
+  "hashes": {
+    "CENTRALIZER_INDEX_AND_RATIONAL_POLARIZATION.md": "da43867c6fa1043f77224c44af39ce38a6842fc177c461631125eb5ac0566490",
+    "check_centralizer_index_factorization.py": "89e0cc68277e0c8c8391071869808612ad40665a8d648e44f352df264f3ead7c",
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "3293e179bc90ec35d3c16fce45bc64aadd261b38987a8b40159bc01ed788e786",
+    "division_index_controls.json": "81eff70d7e4ee39ea642b1b6a7f2befb0838b5214f2d8da3726df7101523a6ed",
+    "SPECTRAL_DENOMINATORS_AND_PROJECTIVE_CENTRALIZERS.md": "891b9ec6cd97a853b064b2816026947ecdbcfbb38b0c7c2a3798d0f833d12d31",
+    "spectral_projective_denominator_controls.json": "5d79d7598ff1315f7a61a8b43f69599203227d9c563a6827b1d7f10d3fb5c49d",
+    "LONG_SPECTRAL_CURVATURE_AND_SCALARIZATION.md": "09ea45c50f3baceb46e25218cef940e7c79c77eb933e56b6dc2a81695f123e21",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "ETALE_CENTRALIZERS_AND_GALOIS_COMPLETION.md": "350e3343c4e6a14e19c527c891af9c43fa640269c11aad5c1805f03d456274c9",
+    "TAYLOR_BRANCHES_AND_CENTRALIZER_RIGIDITY.md": "90eb4bce42aa85f86b8574a192d3a89ca507972f23c6240cb7ca713c0993c752",
+    "IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md": "d6438f6730204ef55411826b9583b0194829534f4e8db25b68101a3014476bb4",
+    "identity_lift_controls.json": "09f6e098fa9b9673558acce783b496e22563d7918d5235dd3285e917e0be82e7",
+    "FINITE_CENTRALIZERS_AND_COMPLETION.md": "c49883cefa77ea977ff347c7eab25172d6d1543dc9d5e423c2db70d047f5e217",
+    "finite_centralizer_controls.json": "b9e7802e8bfdb623edcfcb3539a2848499236d9fcbb973e33e1f492ef08d6da6",
+    "ELLIPTIC_RAMIFICATION_AND_STABLE_POLARIZATION.md": "0bf816775042f66b0baf1e7f18e77c8ed4780767431db20355ee510aa10e3d90",
+    "ELLIPTIC_ISOGENY_MATRIX_MODULE.md": "7e179d9d0c8d05bba108f4751bca3a0902c630351794a85ff0622a2e87dd2ea4",
+    "BOUNDED_REALIZATION.md": "85860fda7138b1e38a41341f2f9e830a516793f0c66e3c4778f9e1adf151b8b9",
+    "HAMILTONIAN_IDEALIZER_CRITERION.md": "5a1bb6b699c6a3d93dad9b4e96302ad77b227f39abfef0814de6e4c093e2dfbc"
+  },
+  "coverage_boundary": "Declared exact commutative valued-field tower, finite formal inverse prefix, multiplication/connection matrices, rational inverse-Jacobian vector fields, symbol witnesses, retained actual delta1 PBW/shear and full cotangent inputs. The toy tower is not a Weyl or Long realization. Universal finite H/C, left/right index factorization, containment of the full rational centralizer in the completed image, residual lower bound, fixed-position rational target polarization obstruction and all identity stabilizations use written proofs and the retained QDI1/QMC1/QPD1 theorems. No equality of generic left/right indices, mixed source normalization exclusion, new Long lift or all-representative nonlifting is certified. Exact Ore controls for m=2,3,5 check the rational Weyl family, powers and fractional matrix frames. The arbitrary-rank bounded-powers/finite-lattice equivalence, all-m indices, residual role reversal, completed degrees and finite-lattice exclusions use written proofs. A negative-degree nilpotent with a finite free lattice prevents extension to arbitrary matrix entries without the algebraicity condition.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

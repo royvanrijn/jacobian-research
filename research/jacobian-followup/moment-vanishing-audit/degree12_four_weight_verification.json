@@ -1,0 +1,105 @@
+{
+  "completed": true,
+  "cases": {
+    "2O": {
+      "sector_parameter_moment_coefficients_checked": 15,
+      "kappa": "-1/495",
+      "lambda": "122/963765",
+      "delta": "47243853824/58274314498849449",
+      "gamma": "1699200/7436429",
+      "full_quartic_moment_terms": 86,
+      "full_quartic_coordinates": [
+        "8192/156165009",
+        "-44032/1093155063",
+        "16992/364385021"
+      ],
+      "full_quartic_invariant_dimension": 3,
+      "moment_ideal_invariant_quartic_dimension": 2,
+      "explicit_missing_quartic": "A=((f,f)_10,(f,f)_10)_4,in the primitive convention",
+      "sharp_sector_set_and_ordinary_prefix": 6,
+      "sector_pure_locus": "a=b=0 or c=d=0",
+      "sector_ordinary_ideal": "(v+u/495,z-lambda*u^2,u^3)",
+      "sharp_uniform_marker_coefficient": "1/4",
+      "marker_p12_times_p4_cubed": "424800/7436429",
+      "algebraic_sharp_prefix_control": {
+        "sextic_coefficients_ascending": [
+          "-1/121287375",
+          "0",
+          "0",
+          "-122/963765",
+          "0",
+          "0",
+          "1"
+        ],
+        "squarefree": true,
+        "b_inverse_and_c_relations": true,
+        "first_five_pure_moments_zero": true,
+        "sixth_moment": "47243853824/58274314498849449",
+        "all_six_algebraic_roots_give_valid_witnesses": true
+      },
+      "full_V12_prefix_lower_bound": 11,
+      "first_ten_moments_p0_plus_p11_zero_by_weight": true,
+      "eleventh_moment_p0_plus_p11": "-43987763200000/23813095609334142593573"
+    },
+    "2I": {
+      "sector_parameter_moment_coefficients_checked": 15,
+      "kappa": "-1/495",
+      "lambda": "-98/408375",
+      "delta": "80800000/67461255771",
+      "gamma": "-17015625/676039",
+      "full_quartic_moment_terms": 84,
+      "full_quartic_coordinates": [
+        "38125/4368252",
+        "15125/198755466",
+        "-680625/132503644"
+      ],
+      "full_quartic_invariant_dimension": 3,
+      "moment_ideal_invariant_quartic_dimension": 2,
+      "explicit_missing_quartic": "A=((f,f)_10,(f,f)_10)_4,in the primitive convention",
+      "sharp_sector_set_and_ordinary_prefix": 6,
+      "sector_pure_locus": "a=b=0 or c=d=0",
+      "sector_ordinary_ideal": "(v+u/495,z-lambda*u^2,u^3)",
+      "sharp_uniform_marker_coefficient": "1/4",
+      "marker_p12_times_p4_cubed": "-17015625/2704156",
+      "algebraic_sharp_prefix_control": {
+        "sextic_coefficients_ascending": [
+          "-1/121287375",
+          "0",
+          "0",
+          "98/408375",
+          "0",
+          "0",
+          "1"
+        ],
+        "squarefree": true,
+        "b_inverse_and_c_relations": true,
+        "first_five_pure_moments_zero": true,
+        "sixth_moment": "80800000/67461255771",
+        "all_six_algebraic_roots_give_valid_witnesses": true
+      },
+      "full_V12_prefix_lower_bound": 11,
+      "first_ten_moments_p0_plus_p11_zero_by_weight": true,
+      "eleventh_moment_p0_plus_p11": "23788050537109375/807223579977428562494"
+    }
+  },
+  "symmetric_power_invariant_dimensions_degrees_0_to_4": [
+    1,
+    0,
+    1,
+    1,
+    3
+  ],
+  "all_order_sector_proof": "Weyl-fixed torus invariants C[u,v,z] and graded normal form in the written proof",
+  "full_ordinary_moment_ideal_equals_full_invariant_nullcone_ideal": false,
+  "full_V12_pure_locus_classified": false,
+  "any_global_exceptional_MZ_decision": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "6d8f784b266a069852bac1a2abde295c6e95c29efea8b241d5242661104ab444",
+  "relations_sha256": "18c44316850eb731bf66d30dfb014aa071144d1a88f502225fa87a4ef37f5829",
+  "imported_arithmetic_sha256": {
+    "verify_haar_shear_witnesses.py": "e154855aa1e255c2910a0ea657323c6737ba5f1f7cadf2169ef3a8e19195d5d9",
+    "verify_octahedral_minimal_type.py": "ce191d717ee429c17517e261f77ea013988e9920ddc3565be3ff752c9c86cb47"
+  }
+}

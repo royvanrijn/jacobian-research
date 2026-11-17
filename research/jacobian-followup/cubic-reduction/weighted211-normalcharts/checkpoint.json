@@ -1,0 +1,263 @@
+{
+  "status": "complete",
+  "source_sha256": "047064758b044bbb1de0d2ffe31cea4a9722f1d9e03d6422215b5f6ebe0b0fbf",
+  "cases": [
+    {
+      "family": "quartic-first",
+      "chart": "bb",
+      "parameters": 5,
+      "generators": 6,
+      "model": "quartic-first-bb.json",
+      "model_sha256": "19b6ad0bf96b9c59747896026d85f966e7afa80a76e92b25534b4fc1f9a6de35",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "quartic-first",
+      "chart": "bc",
+      "parameters": 5,
+      "generators": 9,
+      "model": "quartic-first-bc.json",
+      "model_sha256": "663e2c782afb184c7b27b5f1a505b2256575353f67d8d2f2acf384913cdd0586",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "quartic-first",
+      "chart": "b-bc",
+      "parameters": 5,
+      "generators": 11,
+      "model": "quartic-first-b-bc.json",
+      "model_sha256": "88e9f29e78d302b4ec9a0b6779419edf3f0e16ff482d127440f7cd3079dfc0dd",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "quartic-first",
+      "chart": "cc",
+      "parameters": 5,
+      "generators": 3,
+      "model": "quartic-first-cc.json",
+      "model_sha256": "0f6bcb766d2486fd8df74e11a70eb41eeb85ec38ec9eb7e41c26ce50ae4eee8c",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "quartic-first",
+      "chart": "cb",
+      "parameters": 5,
+      "generators": 8,
+      "model": "quartic-first-cb.json",
+      "model_sha256": "abd0b1ff1694babd06979cc63e38654a5c721e179432be31242d21df58ea086d",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "mixed",
+      "chart": "bb",
+      "parameters": 8,
+      "generators": 14,
+      "model": "mixed-bb.json",
+      "model_sha256": "1ed5eb10705334f502e8963762005635e8c7ea74a22e877924b0c658d9745628",
+      "status": "primary-unit",
+      "seconds": 0.042,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "mixed",
+      "chart": "bc",
+      "parameters": 8,
+      "generators": 17,
+      "model": "mixed-bc.json",
+      "model_sha256": "5d9ebc05989fe76464aa22f969f14370835b48e2686634f30d4bf43c3eae9612",
+      "status": "primary-unit",
+      "seconds": 0.036,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "mixed",
+      "chart": "b-bc",
+      "parameters": 8,
+      "generators": 20,
+      "model": "mixed-b-bc.json",
+      "model_sha256": "bd5abb0e8cb2696acd5f48ae7a4d0f45cc142ca16f1a8ee1e305ffd4b41a6671",
+      "status": "primary-unit",
+      "seconds": 0.077,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "mixed",
+      "chart": "cc",
+      "parameters": 8,
+      "generators": 14,
+      "model": "mixed-cc.json",
+      "model_sha256": "ae837ee0405159c1e3aeccc8e529fe079bbc5df5bf36e2a16a86fd3180aa379d",
+      "status": "primary-unit",
+      "seconds": 0.029,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "family": "mixed",
+      "chart": "cb",
+      "parameters": 8,
+      "generators": 16,
+      "model": "mixed-cb.json",
+      "model_sha256": "0ac095aabc9c2e8727619456a53793c8a53112e147b095c83ba14c6d97f9e654",
+      "status": "primary-unit",
+      "seconds": 0.012,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "seconds": 0.558,
+  "scope": "Exact primary discovery only. Full binary normalization and independent unit replay required before exclusion."
+}

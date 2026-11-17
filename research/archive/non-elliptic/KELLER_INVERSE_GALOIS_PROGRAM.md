@@ -1,5 +1,13 @@
 # A Keller inverse-Galois program
 
+**Current A4 status:** [KMFI66 and KIG28](../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md) close every A4-preserving characteristic-zero polynomial Keller construction on ordinary affine space, in every dimension/action, subject to the internal proof. The A4 next steps below are historical. Local calculations remain valid; Wright A4 boundary states remain separate. The full action spectrum remains open.
+
+The [global denominator-descent theorem](../../jacobian-followup/monodromy-theory/CURVE_DESCENT_LCM.md)
+now excludes curve-generated affine Keller realization for every natural
+odd-q PSL2(q) action, including the genus-zero inputs at q=7 and 13.
+Exceptional degree-eleven curve inputs must have the retained polynomial
+(2,3,11) passport. Higher-dimensional realizations outside the absolute action exclusions remain open.
+
 The [current symmetry theory](../../jacobian-followup/monodromy-theory/THEORY.md)
 adds fixed-sheet affine inertia, normal generation by point stabilizers,
 and absolute exclusions for all nontrivial nilpotent groups and even-degree
@@ -7,6 +15,10 @@ natural dihedral actions. The [F11 audit](../../jacobian-followup/monodromy-theo
 gives a known rational natural PSL2(11) cover with admissible finite inertia,
 an explicit chart, and a separate arithmetic constant-field enlargement.
 The complete action spectrum and absolute proper-simple realization remain open.
+[KMFI8](../../jacobian-followup/monodromy-theory/F11_AFFINE_COMPLETION.md)
+now excludes all natural degree-twelve curve-cover inputs under independent
+stabilization and arbitrary birational recharts. KMFI67 now excludes the natural degree-twelve action in every dimension;
+the exceptional degree-eleven action remains open.
 
 
 ## 1. The stretch beyond fiber transfer
@@ -47,7 +59,7 @@ generic polynomial for the action on \(G/H\) has a universal
 derivative-unit suspension: one determinant-one morphism of smooth affine
 charts preserves the generic \(G\)-cover and realizes every point field
 \(L^H\) as a complete fiber.  This settles the chart version for
-\(A_4,D_5,F_{20},A_5\); absolute affine-space completion remains open in
+\(A_4,D_5,F_{20},A_5\); absolute affine-space completion was the historical objective in
 all four cases.
 
 This is not a claim that the general inverse Galois problem has been solved.
@@ -317,7 +329,7 @@ The systematic queue is:
 | stage | groups or actions | first model to audit | current repository state |
 |---:|---|---|---|
 | 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | all nontrivial nilpotent and even-degree natural dihedral actions excluded absolutely by KMFI2; odd dihedral chart/completion frontier retained |
-| 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) has the advanced frontier below; \(S_4\) has a six-edge collision core and a decomposable absolute group-only checkpoint, but its ordinary collision-frame algebraization is open; \(A_5\) absolute descent is queued |
+| 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) is excluded absolutely by KMFI66 (the frontier below is historical); \(S_4\) has a six-edge collision core and a decomposable absolute group-only checkpoint, but its ordinary collision-frame algebraization is open; \(A_5\) absolute descent is queued |
 | 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart, a complete finite exceptional-color audit, and a rational connected \(q\)-conductor cover; the complete packet closure compresses to \(3D_d+D_q+D_r=\operatorname{div}(P_X)\), while the natural incidence algebra and its finite normalization fail the value-one gate; thirteen controlled-transform chart types supply primitive exceptional variables for every positive exceptional color and verify literal local \((3,1,1)\) cancellation; seven bivariate corner charts close the exceptional cusp and \(q\)-\(r\) intersections, and weighted Taylor--Cox charts now attach cusp \(E_4\) to strict \(r\), triple \(E_2\) to strict \(d\), and the \(q\)-\(r\) \(A\)-packet to strict \(q\); the \(q\)-node incidence is proved conductor-degenerate, the apparent positive triple \(E_1\)-\(E_2\) edge is deleted by root-center separation, and a compact residue product passes on the punctured conductor; the remaining strict-\(r\)/conductor attachments, global Cox ring, affine completion, and absolute descent remain open |
 | 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | natural projective-line and low-index subgroup torsors | the natural prime-triangle genus is explicit and gives \(0,1,0\) at \(q=7,11,13\); at \(q=11\), the degree-12 quotient is \(X_0(11)\), the two exceptional degree-11 \(A_5\)-coset actions form a Gassmann pair with Shabat and determinant-one chart outputs, their degree-5/6 correspondences normalize to genus 1/2, all residual masks are explicit in the normalization algebras, and a descended infinity imbalance obstructs uniform poles on three genus-two classes; boundary audits at \(7,13\), ambient polynomial assembly, and absolute descent are open |
 | 5 | affine linear groups | natural affine actions and additive-polynomial invariants | \(F_{20}\) is the first overlap with stage 3; its \((4,1)\), unramified-crossing, and \((2,2,1)\) boundary colors are compiled, while higher-rank audits are queued |
@@ -476,7 +488,7 @@ extension on a proper target section while the ambient generic group is
 \(S_N\), if it loses inverse sheets at the completion boundary, or if a
 marking base change silently enlarges the arithmetic group.
 
-## 9. Immediate research tasks
+## 9. Historical research tasks (A4 objective closed)
 
 1. Write the root-engineered quadratic-gauge construction over a coefficient
    base and compute the generic function-field group before and after each
@@ -484,7 +496,7 @@ marking base change silently enlarges the arithmetic group.
 2. Formulate a cover-preservation lemma for controlled-boundary suspensions:
    the reconstructed root algebra should be the original finite cover after
    restriction to the common open.
-3. Search for a nonradial, nonautomorphic incidence map
+3. **Closed by KMFI66:** the former proposal was to search for a nonradial, nonautomorphic incidence map
    \(\alpha:\mathbb A^5\to\mathbb A^5\) satisfying
    \[
    \mathcal B(\operatorname{pr}_{1,2,3}\alpha)

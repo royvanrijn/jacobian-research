@@ -1,0 +1,13 @@
+{
+  "both_searches_terminal": true,
+  "claim": "KCUB6",
+  "fixed_tensor_lower_bound": 34,
+  "fixed_tensor_upper_bound": 89,
+  "global_dimension_lower_bound": false,
+  "links": true,
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "source_hashes": true,
+  "status": "pass",
+  "validation_sha256": "2a2454571d3db81f544ac254e6d20a61591ff64736e526601d70b0f12de3144a"
+}

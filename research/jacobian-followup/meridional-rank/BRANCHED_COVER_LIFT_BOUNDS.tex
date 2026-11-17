@@ -1,0 +1,452 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\title{Meridional lift bounds through branched covers}
+\author{Internal research working proof}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+For a transposition quotient $\phi:G_K\twoheadrightarrow S_r$, the
+restricted affine lift space has a topological interpretation:
+\[
+ \dim_F Z_\phi(F)=r-1+\dim_F H_1(Y_\phi;F),
+\]
+where $Y_\phi$ is its connected simple $r$-sheeted branched cover of
+$S^3$. A graph argument strengthens the resulting homological bound to
+\[
+                 \mr(K)\ge r-1+\rk\pi_1(Y_\phi).
+\]
+Here rank of a group means its minimum number of arbitrary generators.
+These are written proofs, with finite controls described below; they
+have not received formal verification or external specialist review.
+No priority claim is made. In degree two the nonabelian construction is
+the classical Kelly--Wada core-group method \cite{core}.
+
+The new interpretation also closes a route on the retained sixteen
+thirteen-crossing targets: no symmetric root lift over any field or
+degree can be sharp there. The original binary common-form criterion
+is impossible on these targets in every dimension. Neither conclusion
+resolves their MRC status. The full conjecture remains open.
+
+\section{The branched-cover group bound}
+
+Fix $r\ge2$. Complete the natural connected $r$-sheeted cover of the
+knot exterior defined by $\phi$ by filling every lifted meridian cycle.
+A meridian has one cycle of length two and $r-2$ fixed sheets. The
+corresponding filling slopes are its square on the first component and
+its first power on each fixed-sheet component. The resulting closed
+oriented manifold is $Y_\phi$.
+
+\begin{theorem}\label{thm:group}
+For every such quotient,
+\[
+                     \mr(K)\ge r-1+\rk\pi_1(Y_\phi).
+\]
+\end{theorem}
+\begin{proof}
+Choose any $w$ meridional generators of $G_K$, and a presentation on
+these generators. Its lifted presentation complex has $r$ vertices
+and, for each generator with image $(pq)$, $r$ directed edges. On each
+fixed sheet the edge is a loop killed by the meridian filling. The two
+remaining edges run from $p$ to $q$ and back. Filling the lifted square
+identifies these two edges as inverse paths. This leaves a graph with
+$r$ vertices and precisely $w$ unoriented edges, one per generator.
+The graph is connected because these transpositions generate $S_r$.
+
+A maximal tree uses $r-1$ edges. Collapsing it leaves $w-r+1$ potential
+generators. Lifted presentation relators and all other filling relations
+can only impose relations, so $\pi_1(Y_\phi)$ is a quotient of a free
+group on these $w-r+1$ generators. Minimizing over $w$ proves the claim.
+The argument is unchanged if some chosen meridians have inverse
+orientation: their projected transpositions and filled cycles are the
+same. A presentation complex suffices for this computation of the
+fundamental group; no asphericity assertion is needed.
+\end{proof}
+
+\section{What the integer lift matrix computes}
+
+Let $m_1,\ldots,m_s$ be meridional presentation generators and
+$\phi(m_i)=(p_iq_i)$, with $p_i<q_i$. For a field $F$ put
+$E_r(F)=\{x\in F^r:\sum_jx_j=0\}$. The companion all-characteristic
+note defines $Z_\phi(F)$ by the lifts
+\[
+ m_i\longmapsto (a_i(e_{p_i}-e_{q_i}),(p_iq_i))
+                       \quad\hbox{in }E_r(F)\rtimes S_r.
+\]
+The translation coordinates of all relators give an integer matrix
+$M_\phi$ with $s$ columns, and $Z_\phi(F)=\ker(M_\phi\otimes F)$.
+The matrix need not have a square or minimal form.
+
+\begin{theorem}\label{thm:homology}
+There is an exact sequence of vector spaces
+\[
+ 0\longrightarrow F^r/F\mathbf1
+   \longrightarrow Z_\phi(F)
+   \longrightarrow H^1(Y_\phi;F)\longrightarrow0.
+\]
+Thus $\dim Z_\phi(F)=r-1+\dim H_1(Y_\phi;F)$ in every characteristic,
+including those dividing $r$. The nonunit Smith invariant factors of
+$M_\phi$ are exactly the torsion invariant factors of
+$H_1(Y_\phi;\Z)$. If $t=\rk_\Z M_\phi$, then
+\[
+       \rk_\Z H_1(Y_\phi;\Z)=s-r+1-t.
+\]
+\end{theorem}
+\begin{proof}
+Use the lifted edges and fillings in Theorem~\ref{thm:group}. After
+eliminating the fixed loops and one edge from each moved pair, their
+integral chain group in degree one is $\Z^s$. Its boundary sends the
+$i$th oriented edge to $e_{q_i}-e_{p_i}$. Write this connected
+multigraph as $\Gamma$ and its cycle lattice as
+$L=\ker(\partial:\Z^s\to\Z^r)$.
+
+A scalar $a_i$ assigns opposite translations to the two orientations
+of this edge, and zero to the killed fixed-sheet loops. These are
+precisely the displayed root translations, up to the harmless choice
+of edge orientation. Evaluating a lifted relator adds its edge values
+along the lifted path. Its vanishing on every starting sheet is
+exactly the corresponding affine relator equation. Path conventions
+may reverse a relator or an edge; these change neither relation lattice
+nor kernel. Thus the rows of $M_\phi$, up to these choices, generate
+the subgroup $R\subset L$ of lifted relator chains.
+
+Over $F$, the solutions are the cellular one-cocycles of this filled
+complex. The coboundary of a vertex potential $b\in F^r$ assigns the
+edge difference $b_{q_i}-b_{p_i}$. Connectivity makes its kernel
+exactly $F\mathbf1$, yielding the exact sequence. These are cuts from
+\emph{all} vertex potentials. Restricting potentials to $E_r(F)$ would
+lose cuts when the characteristic divides $r$ and would give a wrong
+formula.
+
+For the integral assertion, choose a spanning tree in $\Gamma$.
+Projection from $L$ to the $s-r+1$ chord coordinates is an integral
+isomorphism: a chord assignment has a unique integral completion to a
+cycle, obtained along the tree. Also $L$ is a direct summand of
+$\Z^s$, since $\Z^s/L\cong\operatorname{im}\partial$ is free. Hence an
+integral change of basis puts the row presentation into $r-1$ zero
+columns followed by a presentation of $L/R=H_1(Y_\phi;\Z)$. This proves
+both Smith and free-rank assertions.
+
+The fillings are essential: merely abelianizing the unfilled exterior
+cover computes a different group. Since every displayed meridian lift
+is an involution, replacing inverse meridian letters by positive ones
+in $M_\phi$ is valid. The signed lifted paths in the exterior become
+equivalent only after the stated meridian-cycle fillings.
+\end{proof}
+
+In particular, the all-characteristic maximum equals
+\[
+ r-1+\rk_\Z H_1(Y_\phi;\Z)
+       +\#\{\hbox{nonunit torsion invariant factors of }H_1(Y_\phi;\Z)\}.
+\]
+A prime divisor of the first nonunit factor attains it, by divisibility
+of the invariant factors. Linear lifts see the abelianization of the
+cover group, while Theorem~\ref{thm:group} retains its nonabelian rank.
+
+\section{A nonabelian lift count}
+
+Let $A$ be a finite group with $|A|>1$. In the wreath product
+$A^r\rtimes S_r$, restrict a meridian over $(pq)$ to have coordinates
+$a$ at $p$, $a^{-1}$ at $q$ and identity elsewhere. Its square is the
+identity. These elements form a conjugation-invariant set, with
+exactly $|A|$ choices over each transposition. Inversion preserves it.
+Let $\mathcal L_\phi(A)$ denote the homomorphisms lifting the fixed
+$\phi$ subject to this restriction.
+
+\begin{theorem}\label{thm:nonabelian}
+\[
+ |\mathcal L_\phi(A)|=|A|^{r-1}|\Hom(\pi_1(Y_\phi),A)|,
+ \qquad
+ \mr(K)\ge r-1+
+ \left\lceil\log_{|A|}|\Hom(\pi_1(Y_\phi),A)|\right\rceil.
+\]
+\end{theorem}
+\begin{proof}
+The coordinates are group-valued transports along the edges of
+$\Gamma$, with inverse transports along reverse edges. The wreath
+relator equations say exactly that every lifted relator has trivial
+transport. The fixed-sheet and square conditions are the meridian
+fillings. Thus these lifts are flat $A$-valued edge assignments on the
+filled complex.
+
+Fix a root vertex and a spanning tree. Vertex changes of trivialization
+with identity at the root form a group of order $|A|^{r-1}$. They act
+freely: preservation of the edge assignment propagates the identity
+from the root along the tree. Every assignment has a unique such
+change making every tree transport the identity. The remaining chord
+transports then give exactly a homomorphism $\pi_1(Y_\phi)\to A$,
+without quotienting by conjugacy. This proves the count.
+
+Evaluation on any $w$ meridional generators injects
+$\mathcal L_\phi(A)$ into a set of size $|A|^w$. Taking logarithms and
+minimizing $w$ proves the bound. It also follows from
+Theorem~\ref{thm:group}, since a $d$-generated group has at most $|A|^d$
+homomorphisms to $A$.
+\end{proof}
+
+For $r=2$ every knot has the cyclic transposition quotient, and
+$Y_\phi=\Sigma_2(K)$. A crossing with over-colour $b$ and incoming
+under-colour $a$ has outgoing colour $ba^{-1}b$. These are the
+nonabelian core colourings. The core group is
+$\pi_1(\Sigma_2(K))*\Z$; fixing any one arc colour to the identity
+counts $\Hom(\pi_1(\Sigma_2(K)),A)$ \cite{core}. This historical result
+is not a new theorem of the present work.
+
+\section{A geometric sharpness gate}
+
+A $b$-bridge decomposition lifts to a Heegaard decomposition of
+$Y_\phi$ of genus $b-r+1$. Each side is the cover of a trivial
+$b$-string tangle. It is connected since its bridge meridians generate
+$G_K$ and hence $S_r$; the cover is a handlebody obtained from $r$
+balls and $b$ one-handles. Consequently
+\[
+       \rk\pi_1(Y_\phi)\le g(Y_\phi)\le b(K)-r+1.
+\]
+Here $g$ denotes minimum Heegaard genus. A certified lower bound
+$\rk\pi_1(Y_\phi)\ge b-r+1$ therefore proves MRC when accompanied by
+a $b$-bridge upper certificate. A sufficient homological condition is
+$\dim_FH_1(Y_\phi;F)=b-r+1$.
+
+Neither equality in this chain is established for arbitrary knot
+covers. Turning this gate into a universal existence theorem would
+require additional mathematics. The original affine criterion already
+fails on the infinite torus family proved in the companion note.
+
+For any subgroup $J\le\pi_1(Y_\phi)$ of finite index $d$, there is also
+the bound
+\[
+                 \mr(K)\ge r+\left\lceil\frac{\dim_F H_1(J;F)-1}{d}\right\rceil.
+\]
+Indeed, a $t$-generator presentation for $\pi_1(Y_\phi)$ lifts to a
+connected $d$-vertex graph with $dt$ edges. Collapsing a spanning tree
+gives at most $d(t-1)+1$ generators for $J$, the usual Schreier bound.
+Hence $\dim H_1(J;F)\le d(t-1)+1$, and Theorem~\ref{thm:group}
+gives the formula. This does not assume that $J$ is normal or that
+homology detects its rank. For $r=2,d=5$, dimension at least seven
+suffices for $\mr\ge4$.
+
+\section{Complete exclusions on the retained current panel}
+
+The same sixteen targets were frozen from the first sixteen names in
+the pinned October 2026 uncertainty list \cite{deposit}. Their oriented
+PD data come from the independent KnotInfo 2026.11.2 archive. Every
+diagram has a retained four-seed bridge certificate. The results below
+concern these inputs; the uncertainty-list label is not a novelty proof.
+
+\begin{proposition}\label{prop:all}
+For these sixteen diagrams no symmetric transposition root lift over
+any field or any degree gives a lower bound exceeding two. No
+transitive binary common-form affine representation satisfying the
+original quadratic criterion exists in any dimension.
+\end{proposition}
+\begin{proof}
+If $w\le4$ meridians generate $G_K$, their $S_r$ transpositions form
+a connected graph on $r$ vertices with $w$ edges. Therefore $r\le5$.
+It suffices to test $r=2,3,4,5$, without an arbitrary degree cutoff.
+The retained exhaustive normalized four-seed searches find one $S_2$
+colouring and no surjective $S_3,S_4,S_5$ colouring in every case.
+An independent permutation enumeration and propagation replay checks
+this conclusion. Each $S_2$ root matrix has thirteen columns and
+nonzero Smith factors $1^{11},D$, with $D>1$ below. Its maximum
+nullity over all fields is therefore exactly two. Higher-degree
+transposition quotients cannot exist, and no choice of characteristic
+can improve this method's bound on the stated panel.
+
+For the original binary criterion, write its vector-space dimension
+as $k$. Its proved lower bound and the four-seed upper bound give
+$k+1\le\mr(K)\le b(K)\le4$, so $k\le3$. A nonzero alternating form
+in those dimensions necessarily has rank two. The unlimited-radical
+proposition in the companion all-characteristic note shows that such
+a transitive action forces an $S_3$ transposition quotient, absent
+here. Thus the original route is excluded in every dimension. The
+earlier suggestion that higher-rank binary forms might work on these
+sixteen targets is incorrect and is withdrawn.
+\end{proof}
+
+\begin{center}
+\begin{tabular}{rrrrrr}
+\toprule
+Knot & $D$ & $|\Hom(\pi_1\Sigma_2,A_5)|$ &
+Knot & $D$ & $|\Hom(\pi_1\Sigma_2,A_5)|$\\
+\midrule
+$13a129$&391&121&$13a233$&403&1\\
+$13a135$&401&241&$13a234$&389&121\\
+$13a136$&391&121&$13a239$&361&1\\
+$13a137$&401&241&$13a242$&359&121\\
+$13a194$&391&121&$13a243$&337&1\\
+$13a196$&401&241&$13a244$&311&121\\
+$13a197$&391&121&$13a253$&337&1\\
+$13a198$&401&241&$13a265$&311&121\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In each case $H_1(\Sigma_2;\Z)=\Z/D$. The $A_5$ counts use a separately
+frozen search: normalize the first seed to the identity and enumerate
+all $60^3=216000$ assignments on the remaining three seeds, per case.
+To prove $\mr\ge4$ by this count requires strictly more than
+$60^2=3600$ normalized colourings. The observed counts $1,121,241$
+do not do so. A separate $\operatorname{PSL}_2(\F_5)$ matrix
+implementation reproduces all sixteen counts. These finite results
+exclude this particular counting certificate, not other coefficient
+groups or the stronger nonabelian cover-rank gate.
+
+The user's subsequent joint-kernel test strengthens this approach:
+twenty distinct $A_5$ quotient kernels of one double-cover group
+force its rank to be at least three, hence $\mr\ge4$. The classical
+capacity is nineteen generating-pair automorphism classes, stated
+explicitly by Burness--Crestani with credit to Hall \cite[p.~2]{bc}.
+The companion \path{JOINT_SIMPLE_QUOTIENT_KERNELS.tex} proves the
+general capacity bound and separately replays all 293 retained
+uncertain names: the maximum is five kernels on one knot, so none
+is sharp. The twelve first witnesses above cannot be combined across
+knots. A known positive control, $P(2,3,3,5)$, has 23 kernels and
+2901 homomorphisms. The kernel test gives sharp four there, while
+the raw count gives only three. It is already a settled Montesinos
+case, not a new resolution.
+
+A second frozen test uses exactly the first nonconstant $A_5$ witness
+already retained for each target, without replacing witnesses after
+failure. Twelve targets have such a witness, with image all of $A_5$;
+the other four have no nonconstant map by the complete count above.
+The natural action on five letters supplies an index-five subgroup
+$J\le\pi_1(\Sigma_2K)$. Its presentation is computed from the core
+presentation after killing the normalized first arc. All twelve
+degree-five covers have $H_1(J;\Z)=\Z/(3D)$, with $D$ in the table.
+Their maximum homology dimension over every field is only one,
+so none reaches the Schreier threshold seven. Only these retained
+first witnesses are excluded; other covers remain untested.
+
+The user's stronger augmentation-module test now completes this
+degree-five boundary. For an index-$n$ subgroup $J\le\pi_1Y$ and a
+field with characteristic not dividing $n$, Shapiro and the splitting
+of the permutation module give
+\[
+ \mr(K)\ge r+\left\lceil
+ \frac{b_1(J;F)-b_1(\pi_1Y;F)}{n-1}\right\rceil.
+\]
+For $r=2,n=5$, gain at least five suffices for sharp four. The
+companion \path{AUGMENTATION_COVER_HOMOLOGY.tex} tests all sixteen
+$A_5$ kernel classes on these same sixteen knots, including four
+classes beyond the twelve earlier witnesses. Every subgroup has
+$H_1=\Z/(3D)$, giving gain one at three and zero at every other
+prime. Since every $D$ is coprime to thirty, any transitive
+$G\to S_5$ has image exactly $A_5$: sign is trivial and proper
+$A_5$ images would force an absent abelian quotient at two, three
+or five. Thus every connected index-five cover is represented.
+The proposed Betti-gain certificate fails in degree five on this
+panel; other degrees and nonabelian subgroup information remain open.
+
+These same Smith certificates also exclude the explicit
+Lustig--Moriah gcd plat criterion in bridge index $n\ge3$ on this
+panel. To see this directly, propagate Fox colours through a
+$2n$-plat: the unreduced Burau matrix at $t=-1$ gives the strand
+colours, $M$ duplicates the $n$ upper-pair colours, and $L$ tests
+equality at the lower pairs, with $L,M$ as in the literature note
+\cite{moriah}. Thus the Fox-colouring space is
+$\ker(L\widehat\rho(B)M)$ over its coefficient field. If a prime
+divides every matrix entry, this space has dimension $n$. That is
+the degree-two root-lift space, whose all-field dimension is at most
+two here. A nonunit gcd therefore cannot occur for $n\ge3$.
+This is a consequence of the linear obstruction, not an audit of
+every geometric generalized-Montesinos convention.
+
+\section{Verification, provenance and limits}
+
+\texttt{verify\_branched\_cover\_bounds.py} independently enumerates
+the projected groups and checks all crossings after seed propagation.
+It replays the $S_2$ Smith operations against direct Fox rows
+$2a_{\rm over}-a_{\rm in}-a_{\rm out}$, and checks dimensions in
+characteristics $2,3,5,7,11$. The all-degree conclusion additionally
+uses the proved $r\le5$ bound, and the all-field conclusion uses
+integer Smith factors, not these five sample primes.
+
+For homology controls, \texttt{branched\_cover\_homology.py} uses all
+$rs$ directed presentation-cover edges and retains the signs of the
+supplied relator words, then adds every fixed-sheet meridian and
+moved-pair square filling. Diagram relators may first be rewritten
+using the meridian-square relations, valid for this filled complex.
+It does not construct the scalar root matrix. After collapsing
+a spanning tree, the full-chain Smith computation agrees with the
+root-matrix torsion and free-rank formula on nine controls:
+\begin{itemize}
+\item For the connected sum of $t=1,2,3,4$ trefoils, the double cover
+has $H_1=(\Z/3)^t$ and the specified $S_3$ cover has
+$H_1=\Z^{t-1}$.
+\item For the retained sharp $S_4$ colouring of $15a1381$, the cover
+has $H_1=\Z\oplus\Z/5$. Thus the root-lift dimensions are four in
+characteristic zero and five in characteristic five, explaining the
+earlier sharp certificate on this already-known Montesinos knot.
+\end{itemize}
+Every Smith computation is checked by replaying its elementary
+unimodular operations. The two homology paths share the Smith producer
+and replay routine; their agreement is a chain-construction control,
+not independent verification of the uniform topological proof.
+
+The nonabelian verifier instead constructs
+$\operatorname{PSL}_2(\F_5)$ from $2\times2$ matrices modulo $\pm I$,
+using its standard isomorphism with $A_5$. It checks order sixty and
+element-order multiplicities $1,15,20,24$ for orders $1,2,3,5$.
+The trefoil control gives twenty-one normalized core colourings,
+as required by $\Hom(\Z/3,A_5)$. Its coefficient group and propagation
+implementation are separate from the permutation producer; the PD
+parser is shared. Receipts seal all inputs in
+\texttt{branched\_cover\_verification.json} and
+\texttt{nonabelian\_core\_verification.json}.
+
+For the twelve index-five covers,
+\texttt{verify\_core\_subgroup\_homology.py} checks the $A_5$ image,
+every core relation and the normalization directly with permutations.
+It constructs a separate integer chain matrix from evaluated Fox
+prefix derivatives and replays every Smith step. The positive edge
+action is the right monodromy $j\cdot g=\phi(g)^{-1}j$, so inverse
+letters are retained. Matrices have seventy rows and sixty-one
+columns after collapsing the four-edge tree. A free-group control
+recovers rank six in an index-five subgroup of $F_2$; a Kurosh control
+for $C_3*C_3$ gives $H_1=(\Z/3)^4$. An invalid relator is rejected.
+The PD parser and Smith producer/replay are shared. The receipt
+\texttt{core\_subgroup\_homology\_verification.json} seals the frozen
+plan, the first-witness choice and all inputs. This finite negative
+test is separate from the proof of the uniform Schreier inequality.
+
+The exact known-family scopes added to the literature note close
+specific audit gaps: the many-twig theorem requires at least three
+added twigs at each vertex of the core tree and excludes weights
+$0,\pm1$; the Lustig--Moriah plat criterion requires its integer gcd
+to differ from one. Neither is an all-arborescent theorem. No new
+previously unresolved knot is settled here. Further progress needs
+a new lower-bound certificate or a uniform mechanism beyond the
+excluded routes, together with the remaining literature and proof
+audits.
+
+\begin{thebibliography}{9}
+\small
+\setlength{\itemsep}{2pt}
+\bibitem{bc} Burness--Crestani, On the generating graph of direct
+powers of a simple group, J. Algebraic Combinatorics 38 (2013),
+329--350, author manuscript p.~2.
+\url{https://seis.bristol.ac.uk/~tb13602/docs/BC_1.pdf}.
+\bibitem{moriah} Moriah, Heegaard splittings of knot exteriors,
+Geometry \& Topology Monographs 12 (2007), 191--232, Theorem 4.20.
+\url{https://doi.org/10.2140/gtm.2007.12.191}.
+\bibitem{core} Silver--Traldi--Williams, Core groups, J. Knot Theory
+Ramifications 33 (2024), 2450013, introduction and Section 7.
+The core-group construction is credited there to Kelly (1991) and
+Wada (1992). \url{https://arxiv.org/abs/2311.02048v2}.
+\bibitem{deposit} Bhattacharjee, The bridge index and the nonorientable
+four-genus of knots with at most thirteen crossings, unrefereed release
+1.3.0 (2026). \url{https://doi.org/10.5281/zenodo.23561157}.
+Official data: \url{https://github.com/anaxia-research/conjecture-to-choose}.
+\end{thebibliography}
+\end{document}

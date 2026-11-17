@@ -1,0 +1,130 @@
+{
+  "claim": "QET1",
+  "status": "PASS",
+  "retained_cubic_field_control": {
+    "minimal_polynomial": "-2*A + B*w + C*w**3 - 2*w**2",
+    "field_degree": 3,
+    "discriminant": "-4*(27*A**2*C**2 - 18*A*B*C + 16*A + B**3*C - B**2)",
+    "discriminant_as_quadratic_in_A": "-64*(3*B*C - 4)**3",
+    "discriminant_squarefree_in_A": true,
+    "normal_closure": "S3",
+    "exact_degree_and_irreducibility": "retained QDI1 written cubic map proof",
+    "rank": 3,
+    "Long_candidate": false
+  },
+  "inertia_controls": {
+    "transposition_fixed_sheet_counts": [
+      1,
+      1,
+      1
+    ],
+    "three_cycle_fixed_sheet_counts": [
+      0,
+      0
+    ],
+    "two_fixed_sheet_generators_generate_S3": true,
+    "global_common_fixed_sheet": false,
+    "nontrivial_quadratic_inertia_fixed_sheets": 0
+  },
+  "actual_parameter_pole_descent": {
+    "positions": [
+      "x+h^2*p_x^2",
+      "y+h^2*p_y^2"
+    ],
+    "pole_orders_removed": [
+      -3,
+      -1
+    ],
+    "algorithmic_normalization": "PASS",
+    "flatness_preserved": true,
+    "prescribed_classical_shift_removed_finitely": true,
+    "nonzero_integral_curvature_preserved": "-2*h^3*F1*F2",
+    "rational_operator_denominators_removed": false,
+    "Long_candidate": false
+  },
+  "Galois_boundary_with_units": {
+    "ring": "R0[t1,t2,z,z^-1,(z+1)^-1]/(z^2-1-h*t1)",
+    "field_degree": 2,
+    "nonconstant_base_unit": "1+h*t1=z^2",
+    "relation_preserved_by_connections": true,
+    "connections_commute": true,
+    "classical_branch": "z=1",
+    "formal_root_prefix_coefficient_degrees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "full_flat_Ore_tuple": "positions t_i, mates -p_i",
+    "scalar_finite_Weyl_algebra": false
+  },
+  "leading_field_boundary": {
+    "map": [
+      "x^2*y+y",
+      "x*y"
+    ],
+    "leading_field_degree": 1,
+    "actual_field_degree": 2,
+    "actual_discriminant": "(u - 2*v)*(u + 2*v)",
+    "Jacobian": "y*(x^2-1)",
+    "Keller": false
+  },
+  "scalar_quadratic_position_control": {
+    "positions": [
+      "x+h^2*x^2",
+      "y"
+    ],
+    "classical_positions": [
+      "x",
+      "y"
+    ],
+    "centralizer": "L[x,y], written leading-order proof",
+    "centralizer_field_degree": 2,
+    "field_involution": "-h^-2-x",
+    "finite_individual_mate": "excluded by QET1 and direct written leading-order argument",
+    "rational_mate": "-(1+2*h^2*x)^-1*p_x",
+    "all_rational_Weyl_relations": "PASS",
+    "Long_candidate": false
+  },
+  "external_dependencies": [
+    {
+      "source": "https://arxiv.org/html/math/0401263",
+      "used": "Corollary1.6: commutative Weyl subalgebras have transcendence degree at most the rank; algebraic-closure base change covers L."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/02LR",
+      "used": "Normalization form of Zariski Main: the actual etale centralizer is open in the finite normalization."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/09E3",
+      "used": "Galois transitivity and equal ramification indices over a DVR."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/0BMB",
+      "used": "Purity upgrades absence of codimension-one branch to finite etaleness."
+    },
+    {
+      "source": "https://www.jmilne.org/math/CourseNotes/LECc.pdf#page=27",
+      "used": "Characteristic-zero finite etale affine-space covers are constant, as in QFC1."
+    }
+  ],
+  "hashes": {
+    "ETALE_CENTRALIZERS_AND_GALOIS_COMPLETION.md": "350e3343c4e6a14e19c527c891af9c43fa640269c11aad5c1805f03d456274c9",
+    "check_etale_centralizers.py": "7ba92f6854f5a6dfc617420d22302789f8036b282de4d59e4647e6d3fa6f9b19",
+    "FINITE_CENTRALIZERS_AND_COMPLETION.md": "c49883cefa77ea977ff347c7eab25172d6d1543dc9d5e423c2db70d047f5e217",
+    "finite_centralizer_controls.json": "b9e7802e8bfdb623edcfcb3539a2848499236d9fcbb973e33e1f492ef08d6da6",
+    "LONG_SPECTRAL_CURVATURE_AND_SCALARIZATION.md": "09ea45c50f3baceb46e25218cef940e7c79c77eb933e56b6dc2a81695f123e21",
+    "IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md": "d6438f6730204ef55411826b9583b0194829534f4e8db25b68101a3014476bb4",
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "3293e179bc90ec35d3c16fce45bc64aadd261b38987a8b40159bc01ed788e786",
+    "division_index_controls.json": "81eff70d7e4ee39ea642b1b6a7f2befb0838b5214f2d8da3726df7101523a6ed",
+    "BOUNDED_REALIZATION.md": "85860fda7138b1e38a41341f2f9e830a516793f0c66e3c4778f9e1adf151b8b9"
+  },
+  "coverage_boundary": "Declared discriminants, field charts, permutation inertia, Ore connection and formal branch identities, a leading-versus-actual degree countercontrol and a scalar quadratic rational mate and actual parameter-pole normalization. Differential simplicity, etaleness, height-one boundary retention, birational/Galois polynomiality, all-rank integral completion and the scalar dimension/unit facts use written proofs and explicit external geometric inputs. No finite-generation theorem for all Long centralizers or actual Long field certificate is supplied. Centralizer field degree is not identified with a full quantum division index.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

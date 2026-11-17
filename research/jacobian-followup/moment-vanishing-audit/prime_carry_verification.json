@@ -1,0 +1,131 @@
+{
+  "completed": true,
+  "checker_sha256": "74f3f69a43163976ec9a1f902a5bef0a995c95fc5ce8c53cab4c98273636b9c6",
+  "supporting_checker_hashes": {
+    "verify_prime_drift.py": "5cbadb649af6282ba863848726f2aa22c6b47e04fb244824075b0ef307aba883",
+    "verify_formal_apolar_gaps.py": "ff0775510e26ed25d1a3b53071fa2b482766e574f812fbc496e7fafcb5991ebd"
+  },
+  "exact_carry_controls": [
+    {
+      "prime": 2,
+      "symbol": "X*Y + X*Z + Y*Z",
+      "phase": "x**2 + y**2 + z**2",
+      "residue": "0",
+      "carry_residue": "0"
+    },
+    {
+      "prime": 3,
+      "symbol": "X**2 + Y**2 + Z**2",
+      "phase": "x**2 + y**2 + z**2",
+      "residue": "2",
+      "carry_residue": "2"
+    },
+    {
+      "prime": 5,
+      "symbol": "X**2 + Y**2 + Z**2",
+      "phase": "x**2 + y**2 + z**2",
+      "residue": "2",
+      "carry_residue": "1"
+    },
+    {
+      "prime": 3,
+      "symbol": "X*Y + Z**3",
+      "phase": "x**2 + x*y*z + y**2 + z**2",
+      "residue": "z**3",
+      "carry_residue": "0"
+    }
+  ],
+  "sharp_valuation_controls": [
+    {
+      "n": 1,
+      "r": 4,
+      "prime": 7,
+      "profile": [
+        7
+      ],
+      "valuation": 4
+    },
+    {
+      "n": 3,
+      "r": 5,
+      "prime": 7,
+      "profile": [
+        7
+      ],
+      "valuation": 5
+    },
+    {
+      "n": 4,
+      "r": 3,
+      "prime": 149,
+      "profile": [
+        38,
+        37,
+        37,
+        37
+      ],
+      "valuation": 2
+    },
+    {
+      "n": 4,
+      "r": 4,
+      "prime": 197,
+      "profile": [
+        89,
+        36,
+        36,
+        36
+      ],
+      "valuation": 3
+    },
+    {
+      "n": 5,
+      "r": 4,
+      "prime": 409,
+      "profile": [
+        85,
+        81,
+        81,
+        81,
+        81
+      ],
+      "valuation": 2
+    },
+    {
+      "n": 8,
+      "r": 3,
+      "prime": 149,
+      "profile": [
+        38,
+        37,
+        37,
+        37
+      ],
+      "valuation": 2
+    }
+  ],
+  "cubic_higher_tail_profile": [
+    2,
+    2,
+    2,
+    1
+  ],
+  "cubic_higher_tail_normalized_coefficient": "34992000",
+  "cubic_higher_tail_residue_mod7": 1,
+  "cubic_order_normalized_valuation": -1,
+  "nonreduced_coefficient_identity_pass": true,
+  "guard_refusals": 2,
+  "exact_bounded_calculator_implemented": true,
+  "universal_sharpness_proved_by_samples": false,
+  "carry_can_be_omitted": false,
+  "higher_symbol_orders_discarded": false,
+  "order_normalization_integral_in_all_dimensions": false,
+  "general_apolar_nesting_proved": false,
+  "general_formal_gap_decided": false,
+  "full_exceptional_MZ_decided": false,
+  "unrestricted_frontier_endpoint_changed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "novelty_claimed": false
+}

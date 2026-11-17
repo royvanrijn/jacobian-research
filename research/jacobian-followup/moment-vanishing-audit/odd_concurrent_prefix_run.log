@@ -1,0 +1,51 @@
+{
+  "completed": true,
+  "checker_sha256": "e15607363f8f19376edab216968fbb6045b53ec556cdc19fe08c748d06531bdd",
+  "certificate_sha256": "e04207e029bf2b01c8b3a732468b3cf52eebc55d8800896db81d947f98e819d9",
+  "runtime_seconds": 3.142,
+  "sympy_version": "1.14.0",
+  "binary_source_gauge_identities": 15,
+  "binary_principal_identities": 62,
+  "cubic_frame_gauge_identities": 9,
+  "cubic_frame_principal_identities": 11,
+  "binary_models": 4,
+  "binary_seed_identities": 16,
+  "cubic_frame_models": 4,
+  "cubic_frame_seed_identities": 12,
+  "Gaussian_flat_models": 4,
+  "Gaussian_flat_direct_positive_moments": 32,
+  "odd_nonisotropic_concurrent_gate": 36,
+  "odd_nonisotropic_h_zero_gate": 26,
+  "odd_isotropic_cubic_height_gate": 16,
+  "odd_isotropic_flat_gate": 8,
+  "odd_concurrent_full_gate": 36,
+  "odd_sufficient_pure_prefix": 100,
+  "global_sufficient_pure_prefix_unchanged": 130,
+  "homogeneous_sufficient_pure_prefix_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    130
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    100
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "odd_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 100,
+    "cusp": 94,
+    "transverse": 98,
+    "tangent": 94,
+    "triangle": 96,
+    "concurrent": 36,
+    "repeated": 98
+  },
+  "optimality_proved": false,
+  "written_analytic_or_global_proof_certified_by_checker": false,
+  "boundary": "Exact centered completion, rescaling/Schur identity, radial Euler source and principal divisions,28 actual seed identities in eight models, flat Gaussian logarithmic derivative and32 direct moment checks, cofactor/cover arithmetic. All-degree reduction and full vertex/class/frame cover, retained nonisotropic no-constant-period and formal Airy Riccati obstruction remain written inputs. No independent replay, external review, formal verification or expanded radical cofactors."
+}

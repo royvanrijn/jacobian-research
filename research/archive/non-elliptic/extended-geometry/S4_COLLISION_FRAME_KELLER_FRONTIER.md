@@ -619,10 +619,13 @@ The collision frame does not reopen the routes already closed elsewhere.
   incidence recharts are excluded by the
   [two-mask frontier](A4_TWO_MASK_FACTORIZATION_FRONTIER.md) and
   [normalized-boundary audit](A4_NORMALIZED_BOUNDARY_ASSEMBLY_AUDIT.md).
+  [KMFI66/KIG28](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+  now close the entire A4-preserving affine-space Keller construction,
+  including nonautomorphic and mixed constructions beyond those tests.
 
-These results leave the same qualitative architecture: asymmetric mixed
-Rees relations and a conductor ledger distributed between source and target.
-They do not prove a universal no-go theorem for that architecture.
+For the S4 collision-frame field studied here, asymmetric mixed Rees
+relations and distributed conductor ledgers remain a separate architecture.
+The A4 exclusion does not decide this S4 construction objective.
 
 ## 11. Exact remaining target
 

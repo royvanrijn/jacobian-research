@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/.venv/lib/python3.12/site-packages/sympy/polys/polyutils.py", line 231, in _parallel_dict_from_expr_if_gens
+    monom[indices[base]] = exp
+          ~~~~~~~^^^^^^
+KeyError: 1/f4
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/weighted_newfirst7_boundary.py", line 28, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/weighted_newfirst7_boundary.py", line 23, in main
+    (out/'input.json').write_text(json.dumps(payload,indent=2,sort_keys=True)+'\n');script=out/'model.sing';script.write_text('\n'.join(['ring r=(0,'+str(parameter)+'),('+','.join(map(str,Z))+'),dp;','short=0;','ideal I='+','.join(sing(f) for f in reduced)+';','ideal G=std(I);','print("DIM:"+string(dim(G)));','print(G);','quit;'])+'\n');started=time.monotonic()
+                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/weighted_newfirst7_boundary.py", line 23, in <genexpr>
+    (out/'input.json').write_text(json.dumps(payload,indent=2,sort_keys=True)+'\n');script=out/'model.sing';script.write_text('\n'.join(['ring r=(0,'+str(parameter)+'),('+','.join(map(str,Z))+'),dp;','short=0;','ideal I='+','.join(sing(f) for f in reduced)+';','ideal G=std(I);','print("DIM:"+string(dim(G)));','print(G);','quit;'])+'\n');started=time.monotonic()
+                                                                                                                                                                                                                                       ^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power_single_compress.py", line 28, in sing
+    for e,c in sp.Poly(poly,*variables).terms():
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/.venv/lib/python3.12/site-packages/sympy/polys/polytools.py", line 190, in __new__
+    return cls._from_expr(rep, opt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/.venv/lib/python3.12/site-packages/sympy/polys/polytools.py", line 319, in _from_expr
+    rep, opt = _dict_from_expr(rep, opt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/.venv/lib/python3.12/site-packages/sympy/polys/polyutils.py", line 388, in _dict_from_expr
+    rep, gens = _dict_from_expr_if_gens(expr, opt)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/.venv/lib/python3.12/site-packages/sympy/polys/polyutils.py", line 327, in _dict_from_expr_if_gens
+    (poly,), gens = _parallel_dict_from_expr_if_gens((expr,), opt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/.venv/lib/python3.12/site-packages/sympy/polys/polyutils.py", line 236, in _parallel_dict_from_expr_if_gens
+    raise PolynomialError("%s contains an element of "
+sympy.polys.polyerrors.PolynomialError: 1/f4 contains an element of the set of generators.

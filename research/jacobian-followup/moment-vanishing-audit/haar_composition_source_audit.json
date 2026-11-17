@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/CAPACITY_AMPLIFICATION_UNDER_POLYNOMIAL_COMPOSITION.md",
+  "proof_sha256": "66afbf5605206d62af6915e5cb60c46a8b2884e87a42ccd77cd80c5674c91166",
+  "proof_mode": "Written all-degree argument,no finite extrapolation and no new mathematical checker",
+  "coordinator_input": {
+    "source": "jacobian-followup/cross-programme-connections/INWARD_COUPLED_RESTRICTIONS_2026_11_16.tex",
+    "sha256": "ee63437f179b169fbdaf848e04bde3070245e38964d49253a8bddeccf5b00d18",
+    "selected_section": "Invariant-degree gaps sharpen the Mathieu capacity restriction",
+    "adoption": "Audited directly against retained capacity/degree theorems;adopt only low-PW-side localization.",
+    "not_imported": [
+      "surface/Keller claims",
+      "Factorial/EIT conclusions",
+      "controls as independent proof"
+    ],
+    "author_controls_executed": false
+  },
+  "retained_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/LOGARITHMIC_JETS_AND_SPARSE_ALL_RING_SAFETY.md",
+      "sha256": "4363280c1f346b62086d090f744367d317389a55455946ac30c55eb5ba298580",
+      "selected_use": "All-valuation capacity criterion,original proper-volume model and all-recomposition nonpurity; all-ring transfer at its retained fixed linear scopes."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/NONSPHERICAL_PAIRS_AND_EXCEPTIONAL_SL2.md",
+      "sha256": "88895898edf9d6cb9973be9136bf6e8edbd51765b9db9b36ef4a4f7f0bb3a8ef",
+      "selected_use": "Exact character series,minimal degrees8/12 and2T degree6; binary generator gaps."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/PRIMITIVE_BASE_CHARACTERS_AND_FIBRE_EULER_CONSTRAINTS.md",
+      "sha256": "93a5e0b91ec4075b82d09fa4557075752bcc462380e78c4c7bc7113b3f7f4788",
+      "selected_use": "Canonical original primitive factor and trivial/sign upstairs character; quadratic2O branch retained."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/INTRINSIC_SOURCE_SPLITTING_AND_FULL_HAAR_SAFETY.md",
+      "sha256": "74036934113a01fc8e5959bff89e7f0f091399a84395165c43331a9752606b10",
+      "selected_use": "Context only: full eventual-pure to source-splitting target remains open."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/PURE_MOMENT_CONORMAL_AMPLIFICATION.md",
+      "sha256": "73535dd66be7dcfc1f498d3c56f2c48c436211419875be917e5764c60ebecee0",
+      "selected_use": "Context only: ordinary moment-ideal amplification remains unproved."
+    }
+  ],
+  "reviewed_claims": {
+    "GHAARLOGJET20261116": "e2ca33b3d0fbd06f",
+    "GSPARSEEXCEPTIONAL20261116": "95ad9c634354176a",
+    "GEXCEPTIONALDEGREES20261115": "5ab35b19a4647b39",
+    "GHAARPRIMITIVECHAR20261116": "1d399329af53059d"
+  },
+  "new_proof_steps": [
+    "Associated graded SL2 determinant-cone domain gives exact additivity of minimum matrix degree.",
+    "Extreme components of H(r) are exact d-th powers with no possible lower-power cancellation.",
+    "Capacity of a j-th power is j(D-M) for j>=2;the simple-root bonus is not incorrectly multiplied.",
+    "Character-semi-invariant binary zero divisors are invariant under full projective group;2O sign root min degree6 gives4d bound."
+  ],
+  "primary_sources_newly_imported": [],
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients",
+  "external_review_deferred": true,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

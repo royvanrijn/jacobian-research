@@ -1,0 +1,9 @@
+ring rr=0,(q0,q1,q2,s,t,h,r,rho),dp;
+short=0;
+ideal I=(-1/1)*q1*r+(-4/1)*q2^2,(-2/1)*q0*r+(-6/1)*q1*q2,(-4/1)*q0*q2+(-3/1)*q1^2+(-9/1)*s*r,(-16/3)*q0*q1+(10/1)*q2*s,(-8/3)*q0^2+(2/1)*q1*s+(3/1)*t+(5/1)*h,(-12/1)*q2*s*r,(-12/1)*q1*s*r+(16/1)*q2^2*s+(-4/1)*t*r,(-12/1)*q0*s*r+(20/1)*q1*q2*s+(2/1)*q2*t+(10/1)*q2*h,(16/1)*q0*q2*s+(4/1)*q1^2*s+(-2/1)*q1*t+(8/1)*q1*h,(4/1)*q0*q1*s+(-10/3)*q0*t+(6/1)*q0*h,(-15/1)*s*t*r,(20/1)*q2*s*t+(2/1)*q2*s*h,(5/1)*q1*s*t+(1/1)*q1*s*h+(7/1)*t*h,(1/1)*s*t*h*rho+(-1/1);
+matrix M=lift(I,ideal(1));
+matrix CC=matrix(I)*M;
+if(CC[1,1]!=1){print("ERROR");quit;}
+int i;poly pp;
+for(i=1;i<=nrows(M);i++){print("GEN:"+string(i));pp=M[i,1];while(pp!=0){print("COEF:"+string(leadcoef(pp)));print("EXP:"+string(leadexp(pp)));pp=pp-lead(pp);}print("END");}
+quit;

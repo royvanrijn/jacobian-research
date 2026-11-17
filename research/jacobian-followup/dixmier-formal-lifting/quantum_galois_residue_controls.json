@@ -1,0 +1,98 @@
+{
+  "claim": "QGD1",
+  "status": "PASS",
+  "Long_classical_cubic": {
+    "polynomial": "a**3*r - 2*a**2 + a*s + 4*t",
+    "discriminant": "-432*r**2*t**2 - 4*r*s**3 - 144*r*s*t + 4*s**2 + 128*t",
+    "discriminant_in_t": "-256*(3*r*s - 4)**3",
+    "squarefree_in_t": "PASS",
+    "degree": 3,
+    "irreducibility": "written cubic function-field degree proof, retained QDI1 chart",
+    "Galois_closure_group": "S3, written irreducible-cubic criterion",
+    "classical_deck_group_order": 1,
+    "independent_fourth_output": "retained QDI1 birational chart"
+  },
+  "cyclic_rational_positive_control": {
+    "F": "p/(3*x^2)",
+    "T": "x^3",
+    "automorphism": [
+      "x -> omega*x",
+      "p -> omega^-1*p"
+    ],
+    "exact_Weyl_relation": "PASS",
+    "fixed_generators": "PASS",
+    "group_order": 3,
+    "valuation_stabilizer_order": 3,
+    "valuation_branches": 1,
+    "generic_index": 3,
+    "completed_index": 3,
+    "residue_extension_Galois": true,
+    "finite_carrier": "excluded separately by QCI1 bounded powers",
+    "Long_lift": false
+  },
+  "pole_bearing_rational_involution_control": {
+    "U": "h*x**2 + x",
+    "V_coefficient_of_p": "1/(2*h*x + 1)",
+    "sigma_x": "-x - 1/h",
+    "sigma_p": "-p",
+    "order_two": "PASS",
+    "exact_Weyl_relation": "PASS",
+    "fixed_generators": "PASS",
+    "v_x": 0,
+    "v_sigma_x": -1,
+    "branch_selector": "1/(h*x**2 + 1)",
+    "selector_valuations": [
+      0,
+      1
+    ],
+    "selector_residues": [
+      "1",
+      "0"
+    ],
+    "selected_lift": "x/(h*x**2 + 1)**2",
+    "averaged_invariant": "selected_lift + sigma(selected_lift)",
+    "averaged_invariance_and_residue_x": "PASS",
+    "group_order": 2,
+    "valuation_stabilizer_order": 1,
+    "valuation_branches": 2,
+    "generic_index": 2,
+    "completed_index": 1,
+    "residue_extension_Galois": true,
+    "Bernstein_degree_V": 0,
+    "finite_carrier": "excluded separately by QCI1 bounded powers",
+    "Long_lift": false
+  },
+  "finite_monodromy_controls": {
+    "S3_order": 6,
+    "point_stabilizer_order": 2,
+    "point_stabilizer_normalizer_order": 2,
+    "cubic_source_deck_order": 1,
+    "cyclic_regular_deck_order": 3,
+    "larger_Galois_closure_with_intermediate_source_excluded": false,
+    "quantum_realizations": false
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/1708.07923",
+      "used": "Tikaradze Theorem1 is comparison context for actual invariant orders; it is not used to infer division-ring quotient rigidity."
+    },
+    {
+      "source": "https://arxiv.org/html/2610.15469v2",
+      "used": "General Weyl index symmetry is context only. The finite-quotient left/right equality is proved directly here using Artin bounds and valuation-branch residue independence."
+    }
+  ],
+  "hashes": {
+    "FINITE_QUANTUM_SYMMETRIES_AND_GALOIS_RESIDUES.md": "d710f7f46dbae04eed41962ba33250095d83a9b11f0e2fae374329e3f5ad6565",
+    "check_quantum_galois_residues.py": "8c2c03fe97d377bbc1a11d00fd3844c747c8688cf6174c84e553832f2d98a6d0",
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "3293e179bc90ec35d3c16fce45bc64aadd261b38987a8b40159bc01ed788e786",
+    "division_index_controls.json": "81eff70d7e4ee39ea642b1b6a7f2befb0838b5214f2d8da3726df7101523a6ed",
+    "CENTRALIZER_INDEX_AND_RATIONAL_POLARIZATION.md": "da43867c6fa1043f77224c44af39ce38a6842fc177c461631125eb5ac0566490",
+    "centralizer_index_controls.json": "92a8eefb268d6fa4d92fcbfc4f1f3b460fcb6a523f38e48b038b0710fe087a2f",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "PROOF.md": "63a17ea378a997162eb1a6e4656e44b36d296c0b0b43483a54bde2d38a8753f9"
+  },
+  "coverage_boundary": "Exact discriminants and squarefreeness, retained classical cubic chart, first-order rational Weyl and finite-group action identities, a cyclic Galois residue control, a pole-bearing valuation-moving involution, branch selectors, averaged residues and finite subgroup normalizers. Universal branch approximation, residue Galois descent, characteristic-zero kernel rigidity, Artin dimension bounds, generic/completed index accounting, centralizer and automorphism rigidity, all-degree Long exclusion, stabilization and rational source/target transport use written proofs. The controls do not prove group or operator exhaustion. The conclusion excludes direct finite fixed-division-ring models; a larger Galois closure with an intermediate subgroup-fixed source, different nonsymmetric embeddings, and general higher-rank matrix actions remain open. No actual Long carrier is built.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

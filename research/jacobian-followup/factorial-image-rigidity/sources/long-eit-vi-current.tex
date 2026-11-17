@@ -1,0 +1,760 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1.04in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,amsthm}
+\usepackage{aliascnt}
+\usepackage{mathrsfs}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=green!35!black,
+  urlcolor=blue!55!black,
+  pdftitle={Exponential Periods and Factorial Moments},
+  pdfauthor={Christopher D. Long; Antoine-Auguste Le Blanc},
+  pdfsubject={Factorial moments, simplex exponential periods, radial asymptotics, characteristic-five certificates},
+  pdfkeywords={factorial conjecture, exponential period, simplex, asymptotic limit, twisted de Rham remainder}
+}
+
+\numberwithin{equation}{section}
+\setlength{\emergencystretch}{3em}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\newaliascnt{proposition}{theorem}
+\newtheorem{proposition}[proposition]{Proposition}
+\aliascntresetthe{proposition}
+
+\newaliascnt{lemma}{theorem}
+\newtheorem{lemma}[lemma]{Lemma}
+\aliascntresetthe{lemma}
+
+\newaliascnt{corollary}{theorem}
+\newtheorem{corollary}[corollary]{Corollary}
+\aliascntresetthe{corollary}
+
+\theoremstyle{definition}
+\newaliascnt{definition}{theorem}
+\newtheorem{definition}[definition]{Definition}
+\aliascntresetthe{definition}
+
+\newaliascnt{example}{theorem}
+\newtheorem{example}[example]{Example}
+\aliascntresetthe{example}
+
+\theoremstyle{remark}
+\newaliascnt{remark}{theorem}
+\newtheorem{remark}[remark]{Remark}
+\aliascntresetthe{remark}
+
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Qbar}{\overline{\mathbb Q}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Aone}{\mathbb A^1}
+\newcommand{\Atwo}{\mathbb A^2}
+\newcommand{\Gm}{\mathbb G_m}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\trdeg}{\operatorname{trdeg}}
+\newcommand{\per}{\operatorname{per}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Lie}{\operatorname{Lie}}
+\newcommand{\Frac}{\operatorname{Frac}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\Div}{\operatorname{Div}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Crit}{\operatorname{Crit}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Ecal}{\mathcal E}
+\newcommand{\Fcal}{\mathcal F}
+\newcommand{\Hcal}{\mathcal H}
+\newcommand{\Lcal}{\mathcal L}
+\newcommand{\Mcal}{\mathcal M}
+\newcommand{\Ocal}{\mathcal O}
+\newcommand{\Pcal}{\mathcal P}
+\newcommand{\Rcal}{\mathcal R}
+\newcommand{\Vcal}{\mathcal V}
+\newcommand{\dd}{\,d}
+\newcommand{\KZ}{\mathrm{KZ}}
+
+\title{Exponential Periods and Factorial Moments}
+\author{Christopher D. Long \and Antoine-Auguste Le Blanc\thanks{Le Blanc cryptographic author identifier: \texttt{b6048125\allowbreak{}30b3535b\allowbreak{}23d6dbb0\allowbreak{}f5abe32d\allowbreak{}1ed1a9de\allowbreak{}35fb4f7d\allowbreak{}04d62cff\allowbreak{}08ea19c8}}}
+\date{October 2026}
+
+
+\newcommand{\Hq}{H_q^2}
+\newcommand{\M}{\mathscr M}
+\newcommand{\Ncal}{\mathcal N}
+\newcommand{\Tcal}{\mathcal T}
+\newcommand{\A}{\mathbb A}
+
+\newcommand{\PGL}{\operatorname{PGL}}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\Bcal}{\mathcal B}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\small
+\texttt{galizur@gmail.com}
+\end{center}
+
+\begin{abstract}
+We relate factorial moments of complex polynomials to compact exponential
+periods on simplices. An exact radial limit depends only on the highest two
+homogeneous layers and tolerates arbitrary complex lower-degree terms.
+Using the linear comparison theorem of Paper V, we obtain explicit families
+with eventually nonzero factorial moments in every dimension. One family
+allows every nonzero algebraic phase parameter, with degree increasing with
+dimension. A second family has degree four in every dimension; a
+characteristic-five twisted-remainder argument supplies one parameter class
+uniformly in the dimension. Exact coprimality calculations remove its
+parameter exceptions through dimension 103.
+
+A block-radial limit gives nonflat families with arbitrarily many active
+angular variables and arbitrary lower-degree cross-block couplings. Algebraic
+specialization extends the Factorial-Conjecture conclusion to the indicated
+complex-parameter families; power closure gives infinitely many nonzero
+moments there. These conclusions are distinguished from eventual
+nonvanishing of moments, which follows from a nonzero limiting period.
+No unrestricted Factorial Conjecture or arbitrary-simplex nonvanishing
+theorem is asserted.
+\end{abstract}
+
+\medskip
+\noindent\textit{2020 Mathematics Subject Classification.}
+Primary 11J91; Secondary 13N10, 33E30, 41A60.
+\tableofcontents
+
+\section{Introduction and scope}
+For $n\ge1$ define the factorial functional
+\[
+ \Lcal_n:\C[x_1,\ldots,x_n]\longrightarrow\C,
+ \qquad \Lcal_n(x_1^{e_1}\cdots x_n^{e_n})=\prod_{i=1}^n e_i!.
+\]
+Equivalently,
+\begin{equation}\label{eq:gamma-integral}
+ \Lcal_n(f)=\int_{\R_{\ge0}^n} f(x)e^{-(x_1+\cdots+x_n)}\,dx.
+\end{equation}
+The Factorial Conjecture asks whether
+$\Lcal_n(f^m)=0$ for all integers $m\ge1$ forces $f=0$; see
+\cite{EdoEssen}. We say that a nonzero polynomial \emph{satisfies the FC
+conclusion} when at least one of these moments is nonzero. This paper proves
+that conclusion for structured families, not for all polynomials in any new
+dimension. It does not address the consecutive-moment assertion of the
+Strong Factorial Conjecture.
+
+The principal distinction is between three statements:
+\[
+ \text{eventually every moment is nonzero}
+ \ \Longrightarrow\
+ \text{infinitely many are nonzero}
+ \ \Longrightarrow\
+ \text{the FC conclusion}.
+\]
+A nonzero radial limit proves the first. Algebraic specialization alone
+proves the last; power closure supplies the middle statement in our families.
+
+\paragraph{Results.}
+Theorem~\ref{thm:radial} identifies the normalized radial limit.
+Theorem~\ref{thm:odd-family} gives an all-dimensional family for every
+algebraic scale, using an interior extremum and no critical-root separation.
+Theorems~\ref{thm:modfive} and~\ref{thm:elliptic-family} give a quartic family
+with a parameter class uniform in dimension. Proposition~\ref{prop:finite}
+records the exact finite exception-free range. Theorem~\ref{thm:block-limit}
+and Corollary~\ref{cor:block-family} give nonflat analogues. Finally,
+Section~\ref{sec:complex} treats complex parameters without claiming
+nonzero limiting periods at every transcendental scale.
+
+\paragraph{Dependency.}
+Our analytic limits and finite algebraic certificates are proved here.
+The arithmetic nonvanishing input is the linear comparison theorem and
+elliptic example of Paper V \cite{PaperV}, with the assumptions restated in
+Section~\ref{sec:input}. That manuscript is a working research draft;
+the present applications do not independently re-prove its geometric and
+transcendence arguments. Products of individually nonzero periods below do
+not require multicolumn algebraic independence or Paper IV.
+
+Algebraic coefficients belong to $\Qbar$. Write
+\[
+ S=x_1+\cdots+x_n,\qquad
+ \Delta_{n-1}=\{t_i\ge0:\ \textstyle\sum_i t_i=1\}.
+\]
+The measure $dt=dt_1\cdots dt_{n-1}$ is coordinate measure after eliminating
+$t_n$; its volume is $1/(n-1)!$. A zero-dimensional simplex has mass one.
+This normalization is used in every slicing and limit formula.
+
+\section{A radial factorial-moment limit}
+\begin{theorem}\label{thm:radial}
+Let $n,D\ge1$ and
+\[
+ f=S^D+f_{D-1}+\cdots+f_0,
+\]
+where $f_j$ is homogeneous of degree $j$, with arbitrary complex
+coefficients. Then
+\begin{equation}\label{eq:radial-limit}
+ \lim_{m\to\infty}\frac{\Lcal_n(f^m)}{\Gamma(Dm+n)}
+ =\int_{\Delta_{n-1}}\exp\bigl(f_{D-1}(t)/D\bigr)\,dt.
+\end{equation}
+If the integral is nonzero, $\Lcal_n(f^m)\ne0$ for every sufficiently large
+integer $m$.
+\end{theorem}
+\begin{proof}
+Put $x_i=rt_i$ in \eqref{eq:gamma-integral}. The Jacobian is $r^{n-1}$.
+Write $A_j(t)=f_{D-j}(t)$ and expand
+\[
+ f(rt)=r^D+A_1(t)r^{D-1}+\cdots+A_D(t).
+\]
+For a multi-index $\mathbf k=(k_1,\ldots,k_D)$ set
+$K=\sum_j k_j$ and $J=\sum_j jk_j$. After radial integration the coefficient
+of $\prod_j A_j(t)^{k_j}/k_j!$ in the normalized moment is
+\[
+ C_{m,\mathbf k}=
+ \frac{m!}{(m-K)!}\frac{\Gamma(Dm-J+n)}{\Gamma(Dm+n)}
+ \quad(K\le m),
+\]
+and it is zero for $K>m$. Since $K\le J\le DK\le Dm$, every denominator
+factor is a positive integer. The first $K$ factors of the gamma ratio's
+denominator dominate $m(m-1)\cdots(m-K+1)$, and the remaining factors are
+at least one. Thus $0\le C_{m,\mathbf k}\le1$.
+For fixed $\mathbf k$,
+\[
+ C_{m,\mathbf k}\sim D^{-J}m^{K-J}.
+\]
+Only $k_2=\cdots=k_D=0$ survive, and their sum is $e^{A_1(t)/D}$.
+On the compact simplex the absolute terms are bounded by the summable
+series $\prod_j\|A_j\|_\infty^{k_j}/k_j!$. Dominated summation, followed by
+integration, proves \eqref{eq:radial-limit}. A sequence converging to a
+nonzero complex number stays nonzero eventually.
+\end{proof}
+
+\begin{remark}\label{rem:scalars}
+Adding $D\beta S^{D-1}$, $\beta\in\C$, to the displayed family multiplies
+the limit by $e^\beta$. Multiplication of $f$ by $\lambda\ne0$ multiplies
+its $m$th moment by $\lambda^m$. Both operations preserve the indicated
+nonvanishing conclusions. No sign assumption on the coefficients of $f$
+or on its lower layers is used.
+\end{remark}
+
+\section{The exponential-period input}\label{sec:input}
+For a real algebraic polynomial phase
+\[
+ q(X,Y)=\alpha X^a+\beta Y^b+q_<,
+ \quad\gcd(a,b)=1,\quad a,b\ge2,
+\]
+assume lower weighted degree for $q_<$ and distinct nondegenerate critical
+values. Paper V proves irreducibility of the polynomial twisted module.
+For a positive polynomial domain with a strict interior phase minimum or
+maximum relative to the specified faces, its linear comparison theorem
+implies the following consequence:
+\begin{equation}\label{eq:scalar-input}
+ 0\ne r\in\operatorname{span}_{\Qbar}
+ \{X^iY^j:0\le i\le a-2,\ 0\le j\le b-2\}
+ \quad\Longrightarrow\quad
+ \int_T r e^{\xi q}\,dX\,dY\notin\Qbar
+ \quad(\xi\in\Qbar^\times).
+\end{equation}
+More generally a nonzero \emph{specialized} twisted remainder suffices.
+The detector may also be a saddle or the specified continuation of a density
+germ. Critical-difference separation and boundary-field disjointness are not
+needed for this linear conclusion. Its specialization uses Beukers'
+Theorem~3.2 \cite{Beukers}; these stronger hypotheses are used only for
+algebraic independence over the boundary field in Paper V.
+
+For the elliptic phase used below, Paper V's continued-density example
+provides the same conclusion on the fixed triangle even though its real
+saddle is outside that triangle. Only the specified faces are used. The
+stronger elliptic independence theorem also implies transcendence over
+their value field when the interior remainder is nonzero, but absolute
+nonvanishing is sufficient for all moment arguments here.
+
+\section{Every algebraic scale in every dimension}
+Fix $n\ge3$ and choose odd $a\ge\max(3,n-1)$. Put
+\[
+ q_a(X,Y)=X^a-aX+Y^2,
+ \qquad T=\{0\le X\le2,\ |Y|\le1-X/2\}.
+\]
+Its critical points satisfy $X^{a-1}=1$, $Y=0$, and their values
+$-(a-1)X$ are distinct. On $T$ the minimum is uniquely attained at $(1,0)$,
+strictly below every boundary value. Thus \eqref{eq:scalar-input} applies to
+$X^{n-3}$, whose exponent is at most $a-2$.
+
+\begin{theorem}\label{thm:odd-family}
+Let $\sigma=x_3+\cdots+x_n$, $D\ge a+1$, $\xi\in\Qbar^\times$, and
+$\deg R\le D-2$, with arbitrary complex coefficients in $R$. Define
+\begin{align}\label{eq:odd-family}
+ f={}&S^D+D\xi\bigl(
+ 2^a\sigma^a S^{D-1-a}
+ -2a\sigma S^{D-2}
+ +(x_2-x_1)^2 S^{D-3}\bigr)+R.
+\end{align}
+Then
+\[
+ \lim_{m\to\infty}\frac{\Lcal_n(f^m)}{\Gamma(Dm+n)}
+ =\frac{1}{2^{n-1}(n-3)!}
+   \int_T X^{n-3}e^{\xi q_a(X,Y)}\,dX\,dY\ne0.
+\]
+Consequently every such $f$ has eventually nonzero factorial moments.
+At $\xi=0$ the same conclusion holds with limit $1/(n-1)!$.
+\end{theorem}
+\begin{proof}
+Write $u=t_1$, $v=t_2$. Integrating the remaining $n-2$ simplex coordinates
+gives the weight $(1-u-v)^{n-3}/(n-3)!$ on
+$u,v\ge0$, $u+v\le1$. The affine map
+\[
+ X=2(1-u-v),\qquad Y=v-u
+\]
+has absolute Jacobian four and maps this triangle onto $T$. Thus
+\begin{align*}
+ &\int_{\Delta_{n-1}}
+   e^{\xi q_a(2\sum_{j\ge3}t_j,t_2-t_1)}\,dt\\
+ &\hspace{1cm}=
+ \frac{1}{2^{n-1}(n-3)!}\int_T X^{n-3}e^{\xi q_a(X,Y)}\,dX\,dY.
+\end{align*}
+The homogeneous layer of degree $D-1$ in \eqref{eq:odd-family}, divided by
+$D$ on $S=1$, is exactly this phase. Apply Theorem~\ref{thm:radial} and
+\eqref{eq:scalar-input}. At zero the integrand is one.
+\end{proof}
+
+For $a\ge5$ the critical values contain two different opposite pairs,
+so ordered critical differences are not separated. This family therefore
+uses the weaker linear theorem, not the full-independence theorem disguised
+as a scalar corollary. The price of allowing every algebraic scale uniformly
+is increasing degree as $n$ increases.
+
+\section{A characteristic-five theorem for the elliptic family}
+Take
+\[
+ q(X,Y)=Y^2-X^3+3X,
+ \quad T=\operatorname{conv}\{(-\tfrac12,-1),(\tfrac12,0),(-\tfrac12,1)\},
+ \quad \ell=\frac{1-2X-2Y}{4}.
+\]
+The form $\ell$ is a barycentric coordinate on this triangle. Put
+\[
+ J_k(z)=\int_T\ell^k e^{zq}\,dX\,dY,
+ \qquad M_0=\int_Te^{zq},\qquad M_1=\int_TXe^{zq}.
+\]
+For $h=1/z$ the twisted operators are
+\[
+ D_X=h\partial_X+3(1-X^2),\qquad D_Y=h\partial_Y+2Y.
+\]
+Their additive quotient has basis $1,X$ over $\Z[1/6,h]$. Write
+$N_h(r)=a_r(h)+b_r(h)X$ for the unique remainder. The reductions are
+\begin{align}
+ [X^uY^v]&=[X^{u-2}Y^v]+\frac{h(u-2)}3[X^{u-3}Y^v]
+ &&(u\ge2),\label{eq:x-reduction}\\
+ [X^uY^v]&=-\frac{h(v-1)}2[X^uY^{v-2}]
+ &&(v\ge1),\label{eq:y-reduction}
+\end{align}
+where zero-coefficient terms are omitted. In particular odd $Y$ powers
+reduce to zero. The two reductions commute, and their leading coefficients
+are units; the resulting normal form remains free after reduction modulo
+five. This is an additive quotient by twisted derivatives, \emph{not} a
+quotient algebra.
+
+Set $a_k=a_{\ell^k}$, $b_k=b_{\ell^k}$. Literal Stokes gives
+\begin{equation}\label{eq:elliptic-remainder}
+ J_k(\xi)=a_k(1/\xi)M_0(\xi)+b_k(1/\xi)M_1(\xi)+B_k(\xi),
+\end{equation}
+where $B_k(\xi)$ is in the fixed boundary span. A nonzero remainder vector
+therefore implies $J_k(\xi)\ne0$ by Paper V.
+
+\begin{theorem}[Uniform nonexactness in characteristic five]\label{thm:modfive}
+Let $\xi\in\Qbar^\times$. Suppose that at some nonarchimedean place above five,
+\begin{equation}\label{eq:valuation-condition}
+ v(\xi)\le0.
+\end{equation}
+Then $(a_k(1/\xi),b_k(1/\xi))\ne(0,0)$ and $J_k(\xi)\ne0$ for every
+integer $k\ge0$.
+\end{theorem}
+\begin{proof}
+In characteristic five, multiplication by $\ell^5$ commutes with both
+twisted operators because its two partial derivatives vanish. Unlike
+multiplication by $\ell$, it descends to the additive quotient. In the basis
+$1,X$, reductions \eqref{eq:x-reduction}--\eqref{eq:y-reduction} give
+\[
+ A(h)=\begin{pmatrix}h-1&2h^2+2\\2&-h-1\end{pmatrix},
+ \qquad \det A(h)=2\quad\text{in }\mathbb F_5[h].
+\]
+For $v_k=(a_k,b_k)^T$ modulo five the first five vectors are
+\begin{align*}
+ v_0&=(1,0)^T,&v_1&=(-1,2)^T,&v_2&=(-2h,1)^T,\\
+ v_3&=(2h+2,-2h-1)^T,&v_4&=(2h^2+h+1,2h)^T.
+\end{align*}
+Each is nonzero at every specialization over every extension of
+$\mathbb F_5$. For $v_3$ its coordinates sum to one; for $v_4$, the first
+plus $(2-h)$ times the second is one modulo five. For $k=5b+r$, $0\le r<5$,
+\[
+ v_k(h)=A(h)^b v_r(h).
+\]
+Invertibility proves the assertion for every exponent in characteristic
+five. No extrapolation from a finite scan is involved.
+
+Choose a number field containing $\xi$ and the stated valuation. Its element
+$h=1/\xi$ is integral at that place, as are the remainder coefficients.
+If both specialized coefficients were zero, reduction in the residue field
+would contradict the preceding identity. Finally apply
+\eqref{eq:elliptic-remainder} and the scalar comparison input.
+\end{proof}
+
+Examples include $\xi=i$, $101i$, and $Ni$ for any integer $N$ not divisible
+by five. Thus the result includes arbitrarily large purely imaginary phases;
+it is not limited to a small-oscillation positivity range.
+
+\section{Degree four in every dimension}
+Define the cubic homogeneous polynomial
+\begin{equation}\label{eq:Hn}
+ H_n=S(x_1+2x_2-S)^2-(x_1-S/2)^3+3S^2(x_1-S/2).
+\end{equation}
+\begin{theorem}\label{thm:elliptic-family}
+Let $n\ge3$, $D\ge4$, and let $\xi\in\Qbar^\times$ satisfy
+\eqref{eq:valuation-condition}. For any complex polynomial $R$ of degree at
+most $D-2$, put
+\begin{equation}\label{eq:elliptic-family}
+ f=S^D+D\xi S^{D-4}H_n+R.
+\end{equation}
+Then
+\begin{equation}\label{eq:elliptic-limit}
+ \lim_{m\to\infty}\frac{\Lcal_n(f^m)}{\Gamma(Dm+n)}
+ =\frac{J_{n-3}(\xi)}{2(n-3)!}\ne0.
+\end{equation}
+In particular $D=4$ and the same $\xi=101i$ work in every dimension.
+\end{theorem}
+\begin{proof}
+Write $Q(u,v)=q(u-1/2,u+2v-1)$, so $H_n=S^3Q(x_1/S,x_2/S)$.
+Simplex slicing gives
+\[
+ \int_{\Delta_{n-1}}e^{\xi Q(t_1,t_2)}\,dt
+ =\frac1{(n-3)!}\int_{u,v\ge0,\,u+v\le1}
+ (1-u-v)^{n-3}e^{\xi Q(u,v)}\,du\,dv.
+\]
+The map $(X,Y)=(u-1/2,u+2v-1)$ has positive Jacobian two, maps the standard
+triangle onto $T$, and takes $1-u-v$ to $\ell$. This gives the right side of
+\eqref{eq:elliptic-limit}. Theorem~\ref{thm:radial} supplies the limit and
+Theorem~\ref{thm:modfive} makes it nonzero.
+\end{proof}
+
+For example
+\[
+ f=S^4+404i\bigl(S(x_1+2x_2-S)^2-(x_1-S/2)^3
+                   +3S^2(x_1-S/2)\bigr)+R_{\le2}
+\]
+has eventually nonzero factorial moments for every $n\ge3$. The quadratic
+perturbation may involve every variable with arbitrary complex coefficients.
+These are not merely polynomials in three variables with unused coordinates
+adjoined.
+
+\section{Finite exceptions and an exact recurrence}\label{sec:exceptions}
+For a fixed exponent define
+\[
+ E_k=\{\xi\in\Qbar^\times:a_k(1/\xi)=b_k(1/\xi)=0\}.
+\]
+This is finite. At $h=0$ the quotient is reduction modulo $X^2-1,Y$, and
+$\ell(1,0)=-1/4$, $\ell(-1,0)=3/4$; hence its remainder vector is not
+identically zero for any exponent. Every parameter outside $E_k$ has a
+nonzero specialized remainder, whether or not it satisfies the valuation
+test. Any member of $E_k$ must be strictly divisible by five at every place
+above five. Membership in $E_k$ only defeats this interior-remainder
+certificate: it does not prove $J_k(\xi)=0$.
+
+\begin{proposition}[Integer recurrence]\label{prop:recurrence}
+Set
+\[
+ W_k(t)=4^k(a_k(3t),b_k(3t)),\quad W_0=(1,0),\quad W_1=(1,-2).
+\]
+Its coordinates are in $\Z[t]$, and
+\begin{align}\label{eq:recurrence}
+ W_{k+2}={}&2W_{k+1}+[3-6(2k+1)t]W_k\\
+ &+4ktW_{k-1}-36k(k-1)t^2W_{k-2},\nonumber
+\end{align}
+with every zero-prefactor term omitted.
+\end{proposition}
+\begin{proof}
+Work coefficientwise in the formal series
+$F(s)=N_h(e^{s\ell})$. Twisted integration by parts gives
+\[
+ N_h(Ye^{s\ell})=\frac{hs}{4}F,\quad
+ N_h(X^2e^{s\ell})=(1-hs/6)F,\quad
+ N_h(Y^2e^{s\ell})=(h^2s^2/16-h/2)F.
+\]
+Also $N_h(XYe^{s\ell})=(hs/4)N_h(Xe^{s\ell})$ and
+$N_h(Xe^{s\ell})=(1/2-hs/4)F-2F'$. Substituting into $F''$ yields
+\[
+ F''=(\tfrac12-\tfrac{hs}{4})F'
+ +(\tfrac3{16}-\tfrac h8+\tfrac{hs}{48}-\tfrac{h^2s^2}{64})F.
+\]
+Equate exponential-generating coefficients, put $h=3t$, and multiply by
+$4^{k+2}$. This is \eqref{eq:recurrence}; integrality follows by induction.
+\end{proof}
+
+\begin{proposition}[Finite exact verification]\label{prop:finite}
+For $0\le k\le100$ the two coordinates of $W_k$ have gcd one over $\Q[t]$.
+Thus $E_k=\varnothing$ in this range. Consequently
+Theorem~\ref{thm:elliptic-family} holds for every nonzero algebraic $\xi$
+when $3\le n\le103$. At $\xi=0$ its limit is the simplex volume.
+\end{proposition}
+\begin{proof}
+The supplied script constructs \eqref{eq:recurrence} in exact integer
+polynomial arithmetic and performs the 101 Euclidean gcd computations.
+All gcd degrees are zero; the maximum coordinate degree is 50. It also
+compares the recurrence against independent monomial Stokes reduction
+through $k=12$. The recurrence was proved above, so the gcd calculation is
+a finite reproducible certificate for exactly the stated range. A constant
+gcd excludes simultaneous roots over $\C$, giving the consequence.
+\end{proof}
+
+No uniform coprimality assertion for every $k$ is inferred from this test.
+The all-exponent theorem is instead the characteristic-five argument of
+Theorem~\ref{thm:modfive}.
+
+\section{Block-radial limits and nonflat families}
+Partition the variables into nonempty blocks of sizes $n_j$, $1\le j\le r$,
+and let $S_j$ denote their sums. Fix integers $d_j\ge1$, and put
+\[
+ F_0=\prod_{j=1}^r S_j^{d_j},\qquad D=\sum_jd_j,\qquad
+ C_d=\prod_jd_j^{d_j}.
+\]
+A block angular variable $t^{(j)}$ belongs to $\Delta_{n_j-1}$.
+
+\begin{theorem}[Block-radial limit]\label{thm:block-limit}
+For a homogeneous $G$ of degree $D-1$ and $\deg R\le D-2$, both with
+arbitrary complex coefficients, let $f=F_0+G+R$. Then
+\begin{equation}\label{eq:block-limit}
+ \lim_{m\to\infty}\frac{\Lcal_n(f^m)}{\prod_j\Gamma(d_jm+n_j)}
+ =\int_{\prod_j\Delta_{n_j-1}}
+  \exp\!\left(\frac{G(d_1t^{(1)},\ldots,d_rt^{(r)})}{C_d}\right)
+  \prod_jdt^{(j)}.
+\end{equation}
+A nonzero integral again gives eventual nonvanishing.
+\end{theorem}
+\begin{proof}
+Use block polar coordinates $x^{(j)}=s_jt^{(j)}$, whose Jacobian is
+$\prod_js_j^{n_j-1}$, and set $s_j=mu_j$. On a fixed compact neighborhood
+$V$ of $d=(d_1,\ldots,d_r)$ inside the positive orthant,
+\[
+ m^{-D}f(mu_1t^{(1)},\ldots,mu_rt^{(r)})
+ =\prod_ju_j^{d_j}\left(1+\frac{G(u_1t^{(1)},\ldots,u_rt^{(r)})}
+ {m\prod_ju_j^{d_j}}+O(m^{-2})\right),
+\]
+uniformly in $u\in V$ and the angular variables. Raising the relative
+factor to the $m$th power converges uniformly to the corresponding
+exponential. Independent gamma random variables of shapes $d_jm+n_j$,
+after division by $m$, converge in probability to $d_j$ (their means are
+$d_j+n_j/m$ and variances are $d_j/m+n_j/m^2$). Thus the part on $V$ has
+the required limit.
+
+We must control the complement without dividing by $F_0$ near a coordinate
+boundary. Put $U=\sum_ju_j$ and
+\[
+ H_m(u,t)=e^{-U}\bigl|m^{-D}f(mu_1t^{(1)},\ldots,mu_rt^{(r)})\bigr|.
+\]
+On every compact radial set, including its coordinate boundary,
+$H_m$ converges uniformly to
+$H_0(u)=e^{-U}\prod_ju_j^{d_j}$. This function has a unique global maximum
+$M=e^{-D}C_d$ at $d$, and vanishes at the coordinate boundary. Hence on a
+compact complement of $V$ its maximum is at most $M e^{-\eta}$ for some
+$\eta>0$, for all sufficiently large $m$.
+
+Uniformly for $m\ge1$ there is a constant $C$ with
+$H_m\le C e^{-U}(1+U)^D$. For sufficiently large $U$ this is bounded by
+$M e^{-\eta}e^{-U/2}$. The resulting tail integral of
+$H_m^m\prod_ju_j^{n_j-1}$ is at most a constant times
+$M^m e^{-\eta m}m^{-n}$, where $n=\sum_jn_j$.
+By Stirling's formula the normalization
+$\prod_j\Gamma(d_jm+n_j)/m^{Dm+n}$ is $M^m$ times a nonzero constant and
+$m^{-r/2}(1+o(1))$. Both complementary regions are therefore exponentially
+negligible after normalization. This proves the limit and justifies the
+local gamma argument without an unsafe denominator estimate on the boundary.
+\end{proof}
+
+\begin{corollary}[Several active angular blocks]\label{cor:block-family}
+For each block choose a polynomial $Q_j$ of degree $a_j\le d_j-1$ and a
+scale $\xi_j$ such that
+\[
+ I_j=\int_{\Delta_{n_j-1}}e^{\xi_jQ_j(t)}\,dt\ne0.
+\]
+Let $\widetilde Q_j(x^{(j)})=S_j^{a_j}Q_j(x^{(j)}/S_j)$, and set
+\[
+ G=\sum_j d_j\xi_j\left(\prod_{l\ne j}S_l^{d_l}\right)
+ S_j^{d_j-1-a_j}\widetilde Q_j(x^{(j)}).
+\]
+For every $\deg R\le D-2$, the polynomial $f=F_0+G+R$ has limiting ratio
+$\prod_jI_j\ne0$ in \eqref{eq:block-limit}. In particular the odd-degree and
+elliptic constructions may be assigned independently to arbitrarily many
+blocks. Inactive singleton blocks contribute mass one.
+\end{corollary}
+\begin{proof}
+At $x^{(j)}=d_jt^{(j)}$, the quotient $G/C_d$ is
+$\sum_j\xi_jQ_j(t^{(j)})$. The integral in \eqref{eq:block-limit} factors.
+\end{proof}
+
+The top $F_0$ is genuinely nonflat when there are at least two blocks.
+Lower-degree cross-block couplings in $R$ are unrestricted. The degree-$D-1$
+correction in this corollary is deliberately block-separable; arbitrary
+coupled angular phases at that degree would require a new nonvanishing
+argument. No several-phase comparison theorem is used to multiply the
+individual nonzero numbers.
+
+\section{Complex parameters and power closure}\label{sec:complex}
+\begin{lemma}[Algebraic specialization of moment equations]\label{lem:specialization}
+Let a polynomial family $f_\theta$ be defined over $\Qbar$ on an affine
+finite-type parameter space, and let $U$ be a Zariski-open subset defined
+over $\Qbar$. If no $\Qbar$-point of $U$ has all its positive factorial moments zero,
+then no $\C$-point of $U$ does.
+\end{lemma}
+\begin{proof}
+A hypothetical complex point lies in a principal affine open contained in
+$U$. Adjoin an inverse to its defining nonvanishing polynomial. The moment
+polynomials generate an ideal in this finitely generated $\Qbar$-algebra.
+The complex point makes it proper. The weak Nullstellensatz gives a
+$\Qbar$-valued point of its zero set, at which every moment still vanishes and
+the same open condition holds, a contradiction. No finite uniform moment
+bound is required: Noetherianity applies to the ideal of all moments.
+\end{proof}
+
+\begin{theorem}\label{thm:complex}
+The odd-degree family \eqref{eq:odd-family} satisfies the FC conclusion for
+every $\xi\in\C$. The elliptic family \eqref{eq:elliptic-family} satisfies it
+for every $\xi\in\C\setminus E_{n-3}$, with zero included. For
+$3\le n\le103$ it therefore holds for every complex scale. In all these
+families there are infinitely many nonzero factorial moments.
+Analogous conclusions hold for the block-separable families when each scale
+lies outside its indicated finite algebraic exception set.
+\end{theorem}
+\begin{proof}
+For the odd-degree family all algebraic scales give a nonzero limit by
+Theorem~\ref{thm:odd-family}, including zero. Apply
+Lemma~\ref{lem:specialization}, allowing the coefficients of $R$ as additional
+parameters. For the elliptic family at a nonzero scale outside $E_{n-3}$,
+at least one specialized remainder coordinate is nonzero. After clearing
+powers of $\xi$, invert that coordinate and $\xi$. At every algebraic point
+in this open set, scalar comparison and Theorem~\ref{thm:radial} give a
+nonzero limit. The lemma applies. At $\xi=0$ the radial limit is directly
+the simplex volume, for arbitrary complex $R$. The block argument uses the
+product of the selected nonvanishing conditions and Corollary~\ref{cor:block-family}.
+
+These families are closed under positive powers with the same angular phase
+and scales. For a flat top,
+\[
+ (S^D+f_{D-1}+R)^N
+ =S^{DN}+N S^{D(N-1)}f_{D-1}+R',\qquad \deg R'\le DN-2.
+\]
+Thus $D$ changes to $DN$ while $f_{D-1}/D$ on $S=1$ is unchanged.
+For the block family $d_j$ changes to $Nd_j$ and $G$ to
+$NF_0^{N-1}G$, preserving the same block angular correction.
+If only finitely many moments of $f$ were nonzero, choose $N$ larger than
+all their indices. Then every positive moment of $f^N$ would vanish,
+contradicting its FC conclusion.
+\end{proof}
+
+\begin{remark}
+The specialization theorem does not show that the limiting exponential
+period is nonzero for every transcendental scale. Its conclusion concerns
+the polynomial moment equations. Eventual nonvanishing is asserted where a
+nonzero limit was proved; infinitely many nonzero moments is the conclusion
+obtained from specialization and power closure alone.
+\end{remark}
+
+\section{General transfers, verification, and remaining problems}
+\begin{proposition}[A finite exceptional set for each slicing exponent]
+\label{prop:transfer}
+Suppose a triangular phase satisfies Paper V's scalar comparison and has
+a Laurent Stokes basis with $h=1/z$ reduction regular at $h=0$, specializing
+to its Jacobian quotient. Let $\ell$ be a barycentric linear form which is
+nonzero at at least one critical point. For each $k\ge0$, the integral
+$\int_T\ell^k e^{\xi q}$ is nonzero for all but finitely many
+$\xi\in\Qbar^\times$.
+\end{proposition}
+\begin{proof}
+The Jacobian class of $\ell^k$ is nonzero, by evaluation at that critical
+point. Thus its polynomial remainder vector is not identically zero in
+$h$. Outside the finite common-zero set its specialization is nonzero;
+apply scalar comparison. A hypothetical exceptional parameter would only
+be a failure of this certificate, not a proven zero of the integral.
+\end{proof}
+
+The characteristic-five theorem adds a uniform arithmetic certificate for
+all exponents to this finite-exception argument. More generally, in good
+characteristic $p$, multiplication by a $p$th power commutes with the
+twisted derivatives. An invertible induced matrix and nonzero initial
+vectors for exponents $0,\ldots,p-1$ give an all-exponent nonexactness test.
+It must be proved in the actual free twisted quotient; multiplication by an
+arbitrary amplitude need not descend.
+
+\paragraph{Verification.}
+Run the exact script from the repository root:
+\begin{verbatim}
+python3 scripts/check_comparison_factorial.py \
+    --max-k 100 --output .build/comparison-factorial.json
+\end{verbatim}
+It checks the two-coordinate mod-five matrix, its unit determinant and five
+initial vectors, the integer recurrence against direct normal forms, all 101
+finite gcds, affine Jacobians and low-degree normalization identities, and
+related Paper V examples. The tests use exact arithmetic, not oscillatory
+quadrature. The finite range in Proposition~\ref{prop:finite} is
+computational; Theorem~\ref{thm:modfive} is an all-exponent proof.
+
+\paragraph{Boundaries.}
+The explicit families do not establish unrestricted FC$(n)$, arbitrary
+flat-top phases, or unrestricted simplex exponential nonvanishing. Neither
+does a zero leading radial limit disprove FC: higher asymptotic coefficients
+may be nonzero. Uniform emptiness of every $E_k$ and nonvanishing for coupled
+angular phases remain separate targets. The companion simplex candidate
+\cite{SimplexCandidate} records these distinctions and a counterexample to
+the overly broad positive-amplitude induction. The multicolumn project is
+separate from the product argument of Corollary~\ref{cor:block-family}.
+
+\paragraph{AI assistance and responsibility.}
+OpenAI ChatGPT and Anthropic Claude were used for proof exploration,
+drafting, symbolic checks, and adversarial review. They are not authors.
+The authors are responsible for the statements, proofs, citations, and
+remaining errors. Compilation and finite certificates do not constitute
+independent peer review or formal verification.
+
+\small
+\begin{thebibliography}{99}
+\bibitem{Beukers} F.~Beukers,
+\emph{A refined version of the Siegel--Shidlovskii theorem},
+Ann. of Math. (2) \textbf{163} (2006), 369--379.
+\href{https://doi.org/10.4007/annals.2006.163.369}{doi:10.4007/annals.2006.163.369}.
+
+\bibitem{EdoEssen} E.~Edo and A.~van den Essen,
+\emph{The Strong Factorial Conjecture},
+preprint, 2013, \href{https://arxiv.org/abs/1304.3956}{arXiv:1304.3956}.
+We use its definition of the Factorial Conjecture, not a Strong-Factorial
+conclusion.
+
+\bibitem{PaperV} C.~D.~Long and A.-A.~Le~Blanc,
+\emph{Relative Exponential Periods on Polynomial Chains:
+Algebraic Independence over Fixed Boundary Fields}, Paper~V,
+September 2026, two-level revision October 2026, working manuscript.
+\href{https://github.com/long-mathematics/exponential-integral-theorem/blob/main/papers/05-polynomial-flags/polynomial-flag-exponential-periods.tex}{Repository source}.
+
+\bibitem{SimplexCandidate} C.~D.~Long and A.-A.~Le~Blanc,
+\emph{Simplex Exponential Periods: Reductions and Open Comparison Problems},
+unnumbered candidate note, October 2026, in the same repository.
+\end{thebibliography}
+\end{document}

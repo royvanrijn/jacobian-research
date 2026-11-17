@@ -1,0 +1,8 @@
+{
+  "status": "invalid",
+  "reason": "Formal algebraic root symbol reused across different moduli; SymPy cached fields were incorrectly identified.",
+  "preserved_manifest": "specialization-manifest-invalid-v1.json",
+  "preserved_sha256": "2620a3eec5b0076fb7a4af763c6f3e10e6230b5fcc247348c2bcd658b35e351a",
+  "invalid_source_sha256": "4d928e908b6f203d440770d446dd3473f5bb9acc2285099c7ec9305da72339cd",
+  "replacement": "specialization-manifest-v2.json"
+}

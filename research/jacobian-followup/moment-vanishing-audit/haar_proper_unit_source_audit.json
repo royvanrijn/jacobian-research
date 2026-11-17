@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/PROPER_VOLUME_UNIT_PERIODS_AND_COMPLEX_HOPF_CLOSURE.md",
+  "proof_sha256": "8b8e48ca89949509c2e05d096fe25c613ba486e4adb920154aea0d5003903ec9",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_haar_proper_unit.py",
+  "checker_sha256": "1acd4b5ce1dfcc621df61ca6914106f6b0b0e3bec8eb19735a7d615a80231075",
+  "receipt": "jacobian-followup/moment-vanishing-audit/haar_proper_unit_verification.json",
+  "receipt_sha256": "03e141be748e1b25641adfc69b7ff926def4d9f68bfaba33453cac47f1bd5f12",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/TATE_GRAPH_NECESSITY_AND_SEMISIMPLE_BOUNDARY_QUOTIENTS.md",
+      "sha256": "37e51b8589ea1cef18e3b3d5c3db5761033e3b03ea0c9fcea20c9a910942352b",
+      "use": "Elementary GLOBALunit-retainingquotientlemma:kernelinjectspureSSquotient andsplitsglobalE. ActualquotientkernelneednotHodge;localgenusneednotSS. WeightconnectingmapkerNP toL(-1) killedbyadjacentweights."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/UNIPOTENT_HAAR_EXTENSIONS_AND_GENERAL_RECOMPOSITION.md",
+      "sha256": "beac9f1af54c16ad746b2dd527ca9bc2526a742459bab75871d721682a077c4d",
+      "use": "Actual geometriclimitMHS exactness/strictness andpositive-grade boundkerNP<=centre,notarbitraryrelativefilteredabelianclaim. ApplytoauxiliarygeometricE_Y."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "sha256": "42bab0af00fe9821dba3121de2a559f88711a0b79eb3ab4d3aad00a8b184dc78",
+      "use": "Sections2-3 givePROJECTIVE smoothgraphmodelwithORIGINALvolumeholomorphicforEVERYcomplexexceptionalTORUS-FIXEDheight,viaorbit6/12 andvolumeorders. Thisstrongerconstruction,notmerelynoradicalconclusion,isusedforheighttauandsquaretau2."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/HOPF_HEIGHT_CRITERION_AND_REAL_OBSTRUCTION.md",
+      "sha256": "7c7a0114263d40b4f68d483760e408c943cf5c0d4a855463b1132b8e1d01fc05",
+      "use": "RetainedweightzeroC_m/B_m allordermomentsandpureuniform-evencriterion. NEWRodriguesargumentextendsEVENTUALpuritytoarbitrarypolynomialdensity;complexheightgatepreviouslyOPENnowCLOSEDwithoutreality."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "sha256": "2d1c207085783207b425af26636fb05d0ebd07bdff3ac4ddd350c32056d52ae7",
+      "use": "Properoriginal-volumeperiodtheoremscopeandall-dimensionalprojectivemodel. KnownpureSAFEweightphasescannotallhavesuchmodels;newmodelusedONLYforauxiliarytorus-fixedheight,notassumedforarbitrarypurephase."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/REGULAR_BEZOUT_MAPS_AND_WEIGHTED_HAAR_TAILS.md",
+      "sha256": "e0cd185839bf0c16d94b2e8f77a2624f50376b822f484e965ffa5e3fff17cfc7",
+      "use": "ALLbofweightL=n+m giveoppositeweightHopftriple. NewtheoremexcludesEVENTUALpurityofEVERYsuchP_b,allbdegrees. Otherhomogeneous/mixedweightsnotexcluded."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/ACTUAL_TORUS_CORRECTIONS_AND_RAMIFIED_COMPONENT_VALUATIONS.md",
+      "sha256": "772248620bb00e6e8c294ac560f5204bc9e056dc53d5a7d3bbaec8734de9d09d",
+      "use": "WHOLEremainingtarget staysunweightedexceptionalpurity=>actualcorrectedgluingorders0,oractualinvariantpurefailure. NewarchitectureclosuredoesNOTsettlefulltarget."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/COHOMOLOGICAL_PULLBACK_AND_A_UNIFORM_ORIGINAL_MARKER.md",
+      "sha256": "d5e88b14fefd865b3b1b1b918efc2160209545d56c077c866e7666980f5562e6",
+      "use": "Actualnonzeroallbcomponents/uniformmarkerretained. ItsprimitiveLongg_b DIFFERSnewHopfP_b;noallb/allHpurityexclusiontransferred."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Pierre Deligne",
+      "title": "Theorie de Hodge.II,pure global semisimplicity",
+      "url": "https://www.numdam.org/item/10.1007/BF02684692.pdf",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/deligne_hodge_II_1971.pdf",
+      "sha256": "748edefb44fded8af67869abfed87062d66977d25b5d12f7d014f1810a063c3f",
+      "read": "Retained originalPDF26-36 strictMHS/logresidue/weights andPDF39-43 pureglobalSSfullproofwithhypotheses;previouslyrendered. Notfreshwholepaperreread.",
+      "exact_import": "GeometricMHSfunctoriality/strictquotients andGLOBALsemisimplicityofpurepolarizablealgebraicvariations. ForprojectivefibresPweightN+1pure;oddNE_Ypureofsameweight. No localSSinference."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "La conjecture de Weil.II,relative monodromy linear algebra",
+      "url": "https://www.numdam.org/item/10.1007/BF02684780.pdf",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/deligne_weil_II_numdam.pdf",
+      "sha256": "b06eea61bf9cb2b596c162f5befcf85d1be69828910a6107c8aa3a99c4afcc71",
+      "read": "Retained complete PDF30-35/printed165-170 and full1.6.13 proof from prior strict-limit audit. Not freshly reread whole source.",
+      "exact_import": "PuremonodromyfiltrationcentredatN+1 haskerNPweights<=N+1. CombinedwithACTUALgeometricstrictlimitMHS,connectingtoL(-1)weightN+2 vanishesforEVENN. No M=W shortcut."
+    },
+    {
+      "author": "Joseph Steenbrink and Steven Zucker",
+      "title": "Variation of mixed Hodge structure.I,1985,Proposition4.19",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0080/LOG_0032.pdf",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/steenbrink_zucker_vmhs_I_1985.pdf",
+      "sha256": "d8a41457f4174ac5844ca2129c3db842e5f0ae37e8e8c4ec3bcdb006627e88ad",
+      "read": "Retained original scanned primary visual audit PDF23-24/Properties3.13,PDF29-31/Proposition4.19 and rigidity proof,AppendixA. No fresh claim of rereading entire proof of fixed part.",
+      "exact_import": "Retained admissiblegeometricVMHS/actuallimitMHS functoriality andstrictness frompreviousgeometriclimitproof. AuxiliaryquotientB_Y/imageK isHodgegeometric,whereasactualperiodkernelneednotbeHodge. No abstractrelativefilteredexactness."
+    }
+  ],
+  "new_written_arguments": [
+    "ForANYaffinequadricN>=2withPROJECTIVEoriginalholomorphic-volumephase model,killkernelK=kerH^NY->H^NXincomplementvariationB. GysinimageI liesKbecausecompactMavoidsgenericX_sandrank1ambientinjectscomplement. OmegaYrestrictsnonzero,sorestrictionsurj. QuotientE_Y hasONLYambientTateL andpureprojectivefibrePweightN+1. EvenNunitweightN giveslocaldelta<=N+1 toweightN+2zero;oddNunitweightN+1 makesE_YpureglobalSS.",
+    "Actualcompactorbitperiodquotient killsimageKonALLcontinuationsbecauseambientH_NYclassfixed;unitretainsmass1. GLOBALSSquotientlemmahandlesnonHodgeactualkernelandtransferslocalunitretraction. UnitCauchyformOmegaY/(s-f)REGULARonYminusF_s belongs,asdoesliteral1. DerivativeunitCauchymoduleinheritsmeromorphicunitfunctional. Allpuncturesinclinfinity,allpolynomialreparams;NOTalloriginalmarkerformsassumedextendY.",
+    "HopfC_m hasRodriguesD^m[T^m(1-T2)^m]/m!. PairingwithT^kzero fork<m,nonzerodiagonal(-1)^m integralT^m(1-T2)^m. ThusHIGHHopfmomenttailzeroIFFevenheightfunctionalcomesfromUNIQUEpolynomialdensityq,mass1. Complexqallowed. ConverselydegqKkillallm>K;notjustfiniteprefixinference.",
+    "WeightzeroformulaB_m,s=t^-s D^(m-s)[t^m(1-t2)^m]/(m-s)!,integrationbypartsonq/t^s. Firstnonzeroqindexk givess=k+1,tailqk integralT^k(1-T2)^m NONZEROeverym>K. P^(K+1)usualall-positivepurecounterexampleifabstractdensityrealized. Notanexceptionalproducer.",
+    "AnyNONZEROcomplexpolynomialq yieldsAq(s)=q_e(s)A0+q_o(s)A1+polynomial. Onw2=s,algebraiclogcoeffaodd/beven. Ifbothnonzero,b/a nonconstantodd;derivativeextractsL2.Ifone,extractL1orL2directly. Bothderivativesresidue-1atw1;no meromorphicunitfunctionalfixing1. Endpointzerosq1doNOTremoveobstruction;finitelymanylowmomentchangesonlyrationalcorrection.",
+    "EVERYcomplexexceptionaltorus-fixedtau hasalreadyprovedproperoriginal-volumemodel;composewithtau2. ItsunitCauchymodulelocalunitScontradictsANYpolynomialdensitylawforcedbyeventHopfpurity. ConstanttauCauchyrationalalsocontradictslogprofile. ThusENTIREopposite-weightHopfarchitectureonBOTHquotientsNOTEVENeventuallypure,ALLdegrees,NOREALITY. ALLbweightL regularBezoutbranchCLOSED. Otherweights,mixedb,H(P_b)purityreflectionnotasserted;fullMZOPEN."
+  ],
+  "essential_boundaries": [
+    "Both COMPLETE exceptional MZcasesOPEN. Closedcomplexheighttorus-equivariantHopfarchitectureisproperclass,notENTIREpurelocus. Fulltargetcorrectedorders0underunweightedpurityremains.",
+    "Projectivepropermodel mustcarryORIGINALregularvolumeonSMOOTHY. Notautomaticforpureinvariantphases;knownsafeweightphasesalreadyblockthatblanketassumption. ModelisforAUXILIARYtau,notassumedforP_b.",
+    "AuxiliaryE_YunitCauchymoduleisNOTfulloriginalmarkermodule. ActualkernelGLOBALinvariant,notHodge.LocalSSnotrequired,arbitraryLOCALquotientsexcluded.",
+    "Densityqcomplexnotpositive,taunotreal. No finiteprefix/degreecampaign. EveryH(P_b)puritydoesNOTreflectP_b;onlyoriginalP_beventpurityexcludedhere.",
+    "NamedHodgeinputsretained;newuniversalRodrigues/geometricdescent/logproofswrittennotmachineuniversal. No arbitraryringpromotion/externalreviewgate."
+  ]
+}

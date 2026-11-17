@@ -1,0 +1,4564 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 147,
+  "checks": [
+    "PF96 predecessor PASS",
+    "sealed PF96 predecessor verify_prefix_excess_closure.py",
+    "sealed PF96 predecessor PREFIX_EXCESS_AND_ALL_GENUINE_ITERATED_QUARTIC_CLOSURE.md",
+    "sealed PF96 predecessor composed_peripheral_cover.py",
+    "sealed PF96 predecessor sources/prefix-excess-closure/manifest.json",
+    "sealed PF96 predecessor terminal_bridge_closure_receipt.json",
+    "sealed PF96 predecessor cyclic_solid_cap_genus_receipt.json",
+    "sealed PF96 predecessor integer_grid_common_receipt.json",
+    "sealed PF96 predecessor nonunimodular_a4_receipt.json",
+    "sealed PF96 predecessor persistent_jsj_terminal_modulus_receipt.json",
+    "sealed PF96 predecessor iterated_peripheral_tail_receipt.json",
+    "sealed PF96 predecessor meridian_cycle_s4_receipt.json",
+    "sealed PF96 predecessor terminal_cone_twists_receipt.json",
+    "sealed PF96 predecessor unimodular_initial_s4_receipt.json",
+    "sealed PF96 predecessor cyclic_pattern_a4_receipt.json",
+    "sealed PF96 predecessor sources/terminal-bridge-closure/neumann-wightwick-math9911104v1.html",
+    "sealed PF96 predecessor sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed PF96 predecessor sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed PF96 predecessor sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed PF96 predecessor sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "primary HTML pin neumann-norbury-math0110286v1.html",
+    "primary classification explicitly imported",
+    "source audit does not claim earlier whole-chain reproof",
+    "r1 meridian M exponent for ALL Bezout choices",
+    "r1 meridian L exponent for ALL Bezout choices",
+    "r1 preferred longitude M exponent",
+    "r1 preferred longitude L exponent",
+    "every integral filling slope coefficient retained",
+    "unknot parameter+1 meridian exponent after elimination",
+    "unknot parameter-1 meridian exponent after elimination",
+    "unknot parameter+1 preferred longitude exponent",
+    "unknot parameter-1 preferred longitude exponent",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [-7], False)",
+    "no expanded recursive peripheral words ('trefoil S3', [-7], False)",
+    "oriented trefoil full framing matrix unchanged ([-7], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [-7], True)",
+    "no expanded recursive peripheral words ('trefoil S3', [-7], True)",
+    "oriented trefoil full framing matrix unchanged ([-7], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [0], False)",
+    "no expanded recursive peripheral words ('trefoil S3', [0], False)",
+    "oriented trefoil full framing matrix unchanged ([0], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [0], True)",
+    "no expanded recursive peripheral words ('trefoil S3', [0], True)",
+    "oriented trefoil full framing matrix unchanged ([0], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [1], False)",
+    "no expanded recursive peripheral words ('trefoil S3', [1], False)",
+    "oriented trefoil full framing matrix unchanged ([1], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [1], True)",
+    "no expanded recursive peripheral words ('trefoil S3', [1], True)",
+    "oriented trefoil full framing matrix unchanged ([1], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [1000000000000000000000039], False)",
+    "no expanded recursive peripheral words ('trefoil S3', [1000000000000000000000039], False)",
+    "oriented trefoil full framing matrix unchanged ([1000000000000000000000039], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [1000000000000000000000039], True)",
+    "no expanded recursive peripheral words ('trefoil S3', [1000000000000000000000039], True)",
+    "oriented trefoil full framing matrix unchanged ([1000000000000000000000039], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [-1000000000000000000000039], False)",
+    "no expanded recursive peripheral words ('trefoil S3', [-1000000000000000000000039], False)",
+    "oriented trefoil full framing matrix unchanged ([-1000000000000000000000039], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [-1000000000000000000000039], True)",
+    "no expanded recursive peripheral words ('trefoil S3', [-1000000000000000000000039], True)",
+    "oriented trefoil full framing matrix unchanged ([-1000000000000000000000039], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [-5, 0, 7, -11, 13, 17], False)",
+    "no expanded recursive peripheral words ('trefoil S3', [-5, 0, 7, -11, 13, 17], False)",
+    "oriented trefoil full framing matrix unchanged ([-5, 0, 7, -11, 13, 17], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('trefoil S3', [-5, 0, 7, -11, 13, 17], True)",
+    "no expanded recursive peripheral words ('trefoil S3', [-5, 0, 7, -11, 13, 17], True)",
+    "oriented trefoil full framing matrix unchanged ([-5, 0, 7, -11, 13, 17], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [-7], False)",
+    "no expanded recursive peripheral words ('torus full S4', [-7], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [-7], True)",
+    "no expanded recursive peripheral words ('torus full S4', [-7], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [0], False)",
+    "no expanded recursive peripheral words ('torus full S4', [0], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [0], True)",
+    "no expanded recursive peripheral words ('torus full S4', [0], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [1], False)",
+    "no expanded recursive peripheral words ('torus full S4', [1], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [1], True)",
+    "no expanded recursive peripheral words ('torus full S4', [1], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [1000000000000000000000039], False)",
+    "no expanded recursive peripheral words ('torus full S4', [1000000000000000000000039], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [1000000000000000000000039], True)",
+    "no expanded recursive peripheral words ('torus full S4', [1000000000000000000000039], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [-1000000000000000000000039], False)",
+    "no expanded recursive peripheral words ('torus full S4', [-1000000000000000000000039], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [-1000000000000000000000039], True)",
+    "no expanded recursive peripheral words ('torus full S4', [-1000000000000000000000039], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [-5, 0, 7, -11, 13, 17], False)",
+    "no expanded recursive peripheral words ('torus full S4', [-5, 0, 7, -11, 13, 17], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('torus full S4', [-5, 0, 7, -11, 13, 17], True)",
+    "no expanded recursive peripheral words ('torus full S4', [-5, 0, 7, -11, 13, 17], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [-7], False)",
+    "no expanded recursive peripheral words ('cyclic degree5', [-7], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [-7], True)",
+    "no expanded recursive peripheral words ('cyclic degree5', [-7], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [0], False)",
+    "no expanded recursive peripheral words ('cyclic degree5', [0], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [0], True)",
+    "no expanded recursive peripheral words ('cyclic degree5', [0], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [1], False)",
+    "no expanded recursive peripheral words ('cyclic degree5', [1], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [1], True)",
+    "no expanded recursive peripheral words ('cyclic degree5', [1], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [1000000000000000000000039], False)",
+    "no expanded recursive peripheral words ('cyclic degree5', [1000000000000000000000039], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [1000000000000000000000039], True)",
+    "no expanded recursive peripheral words ('cyclic degree5', [1000000000000000000000039], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [-1000000000000000000000039], False)",
+    "no expanded recursive peripheral words ('cyclic degree5', [-1000000000000000000000039], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [-1000000000000000000000039], True)",
+    "no expanded recursive peripheral words ('cyclic degree5', [-1000000000000000000000039], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [-5, 0, 7, -11, 13, 17], False)",
+    "no expanded recursive peripheral words ('cyclic degree5', [-5, 0, 7, -11, 13, 17], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree5', [-5, 0, 7, -11, 13, 17], True)",
+    "no expanded recursive peripheral words ('cyclic degree5', [-5, 0, 7, -11, 13, 17], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [-7], False)",
+    "no expanded recursive peripheral words ('cyclic degree7', [-7], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [-7], True)",
+    "no expanded recursive peripheral words ('cyclic degree7', [-7], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [0], False)",
+    "no expanded recursive peripheral words ('cyclic degree7', [0], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [0], True)",
+    "no expanded recursive peripheral words ('cyclic degree7', [0], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [1], False)",
+    "no expanded recursive peripheral words ('cyclic degree7', [1], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [1], True)",
+    "no expanded recursive peripheral words ('cyclic degree7', [1], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [1000000000000000000000039], False)",
+    "no expanded recursive peripheral words ('cyclic degree7', [1000000000000000000000039], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [1000000000000000000000039], True)",
+    "no expanded recursive peripheral words ('cyclic degree7', [1000000000000000000000039], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [-1000000000000000000000039], False)",
+    "no expanded recursive peripheral words ('cyclic degree7', [-1000000000000000000000039], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [-1000000000000000000000039], True)",
+    "no expanded recursive peripheral words ('cyclic degree7', [-1000000000000000000000039], True)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [-5, 0, 7, -11, 13, 17], False)",
+    "no expanded recursive peripheral words ('cyclic degree7', [-5, 0, 7, -11, 13, 17], False)",
+    "all unfilled/signed filled marked groups and cycles retained ('cyclic degree7', [-5, 0, 7, -11, 13, 17], True)",
+    "no expanded recursive peripheral words ('cyclic degree7', [-5, 0, 7, -11, 13, 17], True)",
+    "parameter1 is NOT winding1, exact coloring linking countercontrol False",
+    "parameter1 is NOT winding1, exact coloring linking countercontrol True",
+    "leading signed unit-parameter unknot remains cyclic 3",
+    "leading signed unit-parameter unknot remains cyclic 4",
+    "leading signed unit-parameter unknot remains cyclic 5",
+    "cyclic transposition image cannot be full S4",
+    "retained PF96 closure BOTH pencils all lengths"
+  ],
+  "general": {
+    "all_signed_unit_winding_stages_preserve_both_preferred_generators": true,
+    "all_Bezout_choices_and_all_integral_slopes_preserved": true,
+    "every_degree_representation_and_colored_cover_linking_preserved": true,
+    "initial_unknot_signed_unit_parameter_reduction": true,
+    "first_nontrivial_positive_cable_resets_actual_torus_stage": true,
+    "parameter1_on_nontrivial_companion_NOT_erased": true,
+    "unknot_cannot_have_full_S4_image": true
+  },
+  "coverage": {
+    "primary_reduced_nontrivial_positive_splice_classification_imported": true,
+    "ordinary_winding_q_parameter_p_and_strict_infinity_conditions_retained": true,
+    "positive_genuine_prefix_semigroup_excludes_parameter1": true,
+    "target_degenerate_escape_closed_UNDER_WHOLE_PACKET_HYPOTHESES": true,
+    "no_transfer_of_coordinate_dependent_canonical_coefficients_assumed": true
+  },
+  "signed_unit_winding_cover_controls": [
+    {
+      "label": "trefoil S3",
+      "degree": 3,
+      "parameters": [
+        -7
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "trefoil S3",
+      "degree": 3,
+      "parameters": [
+        0
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "trefoil S3",
+      "degree": 3,
+      "parameters": [
+        1
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "trefoil S3",
+      "degree": 3,
+      "parameters": [
+        1000000000000000000000039
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "trefoil S3",
+      "degree": 3,
+      "parameters": [
+        -1000000000000000000000039
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "trefoil S3",
+      "degree": 3,
+      "parameters": [
+        -5,
+        0,
+        7,
+        -11,
+        13,
+        17
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 2,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              26
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              11
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "torus full S4",
+      "degree": 4,
+      "parameters": [
+        -7
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "torus full S4",
+      "degree": 4,
+      "parameters": [
+        0
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "torus full S4",
+      "degree": 4,
+      "parameters": [
+        1
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "torus full S4",
+      "degree": 4,
+      "parameters": [
+        1000000000000000000000039
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "torus full S4",
+      "degree": 4,
+      "parameters": [
+        -1000000000000000000000039
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "torus full S4",
+      "degree": 4,
+      "parameters": [
+        -5,
+        0,
+        7,
+        -11,
+        13,
+        17
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 3,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 1": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "longitude plus marked L 2": {
+            "free": 1,
+            "torsion": [
+              3,
+              6
+            ]
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2,
+              850
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2,
+              34
+            ]
+          },
+          "slope2m3L plus marked L 1": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope2m3L plus marked L 2": {
+            "free": 0,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": [
+              475
+            ]
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              25
+            ]
+          },
+          "slope-m2L plus marked L 1": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 2": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              2,
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                3
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            0,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree5",
+      "degree": 5,
+      "parameters": [
+        -7
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree5",
+      "degree": 5,
+      "parameters": [
+        0
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree5",
+      "degree": 5,
+      "parameters": [
+        1
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree5",
+      "degree": 5,
+      "parameters": [
+        1000000000000000000000039
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree5",
+      "degree": 5,
+      "parameters": [
+        -1000000000000000000000039
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree5",
+      "degree": 5,
+      "parameters": [
+        -5,
+        0,
+        7,
+        -11,
+        13,
+        17
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              5,
+              [
+                0,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree7",
+      "degree": 7,
+      "parameters": [
+        -7
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree7",
+      "degree": 7,
+      "parameters": [
+        0
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree7",
+      "degree": 7,
+      "parameters": [
+        1
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree7",
+      "degree": 7,
+      "parameters": [
+        1000000000000000000000039
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree7",
+      "degree": 7,
+      "parameters": [
+        -1000000000000000000000039
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cyclic degree7",
+      "degree": 7,
+      "parameters": [
+        -5,
+        0,
+        7,
+        -11,
+        13,
+        17
+      ],
+      "signatures": [
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        },
+        {
+          "unfilled": {
+            "free": 1,
+            "torsion": []
+          },
+          "normal": {
+            "free": 0,
+            "torsion": []
+          },
+          "normal plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "longitude": {
+            "free": 1,
+            "torsion": []
+          },
+          "longitude plus marked L 0": {
+            "free": 1,
+            "torsion": []
+          },
+          "slope2m3L": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope2m3L plus marked L 0": {
+            "free": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "slope-m2L": {
+            "free": 0,
+            "torsion": []
+          },
+          "slope-m2L plus marked L 0": {
+            "free": 0,
+            "torsion": []
+          },
+          "boundary_cycles": [
+            [
+              7,
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          ],
+          "meridian_monodromy": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "parameter1_countercontrol": {
+    "before": {
+      "matrix": [
+        [
+          -1,
+          2
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "closed_H1": {
+        "free": 0,
+        "torsion": []
+      },
+      "all_cores_integrally_zero": true,
+      "preferred_diagonal_framings_retained": true
+    },
+    "after": [
+      {
+        "matrix": [
+          [
+            -9,
+            18
+          ],
+          [
+            18,
+            -36
+          ]
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "all_cores_integrally_zero": true,
+        "preferred_diagonal_framings_retained": true
+      },
+      {
+        "matrix": [
+          [
+            -9,
+            18
+          ],
+          [
+            18,
+            -36
+          ]
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "all_cores_integrally_zero": true,
+        "preferred_diagonal_framings_retained": true
+      }
+    ]
+  },
+  "leading_unknot_controls": [
+    {
+      "degree": 3,
+      "cables": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          -1
+        ]
+      ],
+      "unfilled_H1": {
+        "free": 1,
+        "torsion": []
+      }
+    },
+    {
+      "degree": 4,
+      "cables": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          -1
+        ]
+      ],
+      "unfilled_H1": {
+        "free": 1,
+        "torsion": []
+      }
+    },
+    {
+      "degree": 5,
+      "cables": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          -1
+        ]
+      ],
+      "unfilled_H1": {
+        "free": 1,
+        "torsion": []
+      }
+    }
+  ],
+  "assurance": {
+    "written_degree_free_peripheral_and_geometric_proofs": true,
+    "finite_cover_controls_not_universal_or_classification_proof": true,
+    "earlier_whole_source_chain_and_finite_completion_audit_required": true,
+    "no_invented_residual_unit_stage_family": true,
+    "primary_classification_independently_reproved": false,
+    "full_quartic_Keller_exclusion_registered": false,
+    "full_compatible_completion_goal_solved": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_full_reproof": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_unit_peripheral_coverage.py": "bf1f6c651a0221eb02c64b758195ea4c388c10ea3133b4fdffca46011b5eef4d",
+    "UNIT_PERIPHERAL_REDUCTION_AND_TARGET_COVERAGE.md": "d24a1f7324dea3b584534173bb7f7caa0e0abf0da2bc9a4cdf1e5ac79d059ba8",
+    "composed_peripheral_cover.py": "0e803ef1da3d429b6a6d20dba114992f6af6bb7760d80673722218824d29eedf",
+    "sources/unit-peripheral-coverage/manifest.json": "54f481455f0ef2a15c69befb68700e603d22a3747cb82dcdc57de23c8e98e9be",
+    "prefix_excess_closure_receipt.json": "b24fdd1ec8c320aa081008f3fcc5e541cf49ca726a88840356cfd73883608132",
+    "sources/unit-peripheral-coverage/neumann-norbury-math0110286v1.html": "f4b1c3112e1877b1c1d5a51a42e49970acf7f9d19e7d5f6668c32b91fbb50b0e"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

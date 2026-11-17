@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T05:30:34.429430+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UAROOTDAG1",
+    "UAROOTFACT1",
+    "UAROOTSYM1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAALLATOM1",
+    "UABASICTIME1",
+    "UACANFIB1",
+    "UAM1",
+    "UAMARKEDDEF1",
+    "UAPARALLEL1",
+    "UAQTILT1",
+    "UARETURNESC1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UAROOTDAG1",
+    "UAROOTFACT1",
+    "UAROOTSYM1"
+  ],
+  "old_entry_count": 2410,
+  "new_entry_count": 2413,
+  "unchanged_existing_entry_count": 2401,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "1f256eef8c8d3a16863be9d6efeddc040a69a5be4ac07d9f28f55b45ab698903",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "7a639f71f4356723",
+    "UAROOTDAG1": "cc783864f7e79725",
+    "UAROOTFACT1": "991bc87318b0929e",
+    "UAROOTSYM1": "74e4666463b437da"
+  },
+  "updated_lessons": [
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "72762aa8a4fbe30d722d439b8803816eb2670bba5462e79c403cd9b96f6a8111",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "All-degree classification of every retained-signal root-polynomial correction by independent-diagonal principal minors, the exact self normal form and effective acyclicity.",
+    "Whole-affine atomic block stages and polynomial models for dependency order ideals, including a genuinely non-descended rank-two degree4-times4 example.",
+    "Equivariant orbit factors and the complete transitive fixed-target product-fibre obstruction."
+  ],
+  "verification_design_note": "57 selected exact controls accompany written general proofs. Whole-source formula, actual maps, nilpotence distinction, Frobenius and square-zero base boundaries are checked. No bounded census is used to infer acyclicity or atomicity.",
+  "assurance": "Three written general theorem claims with 57 selected exact controls. No independent whole-proof replay, formal verification, external review or publication-priority certificate. OP-KDESC remains open."
+}

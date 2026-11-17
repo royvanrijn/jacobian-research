@@ -1,0 +1,52 @@
+\section{The missing conversion from curve degree to matrix degree}
+Give $R=\C[x,y,z,w]/(xw-yz-1)$ its minimum representative total-degree
+filtration. For a finite right subgroup $\Gamma\subset SL_2$ give
+$A=R^\Gamma$ the induced filtration.
+\begin{lemma}
+The associated graded rings of $R$ and $A$ are domains. Consequently, for
+nonzero $f,g\in A$, $\deg(fg)=\deg f+\deg g$. If $h$ is nonconstant and
+$p\in\C[T]$ has degree $d>0$, then $\deg p(h)=d\deg h$.
+\end{lemma}
+\begin{proof}
+The highest part of $(xw-yz-1)b$ is $(xw-yz)b_{\rm top}$. Thus
+$\operatorname{gr}R=\C[x,y,z,w]/(xw-yz)$, a domain. The group action preserves
+the filtration. Averaging over the finite group makes invariants exact
+on each filtration quotient, so
+$\operatorname{gr}(R^\Gamma)=(\operatorname{gr}R)^\Gamma$, also a domain.
+The highest product symbol is nonzero. In $p(h)$ its top power has
+strictly greater degree than every other power and cannot cancel.
+\end{proof}
+
+The existing normalization theorem in
+\texttt{COMPLEX\_HEIGHT\_IMAGES\_AND\_CAUCHY\_RIGIDITY.md} says that a
+nonconstant phase on either full exceptional quotient with one-dimensional
+compact image is $P=p(h)$ for a regular real-valued seed $h$. Its finite
+curve-marker theorem says that a nonzero pure such phase has an infinite
+nonzero marked tail for one fixed $h^j$, $1\le j<d=\deg p$.
+The existing Cauchy-transform exclusion says its image $p(h(M))$ must
+separate the complex plane.
+
+\begin{proposition}
+Let $P\ne0$ be pure-null on $SL_2/2O$ or $SL_2/2I$, and suppose its compact
+image has real dimension at most one. Put $D=\deg P$ in matrix entries.
+Then $D\ge24$ for $2O$, and $D\ge36$ for $2I$. A fixed bad marker $Q$ exists
+with $\deg Q\le D-8$, respectively $\deg Q\le D-12$.
+At the first possible degree the normalized polynomial $p$ is cubic and
+$\deg h$ is exactly $8$, respectively $12$; a bad marker is $h$ or $h^2$.
+\end{proposition}
+\begin{proof}
+Write $P=p(h)$ and $H=\deg h$. The existing exact character/Molien input
+GEXCEPTIONALDEGREES20261115 gives $H\ge8$, respectively $H\ge12$.
+A polynomial of degree at most two maps a real interval to a segment or
+an injective arc: for a quadratic,
+$p(t)-p(s)=(t-s)(a(t+s)+b)$. If $a,b$ are real-linearly independent it is
+injective; otherwise its image lies in an affine real line. Such an image
+does not separate the plane. The retained Cauchy exclusion therefore
+forces $d\ge3$. The lemma gives $D=dH\ge3H$. For the existing fixed bad
+marker $h^j$, $\deg h^j=jH\le(d-1)H=D-H$. Equality of $D$ with $24$ or $36$
+forces $d=3$ and the minimum $H$.
+\end{proof}
+These bounds concern thin images of the PHASE, not of its auxiliary Hopf
+height, and do not exclude full-image counterexamples in smaller degrees.
+The thresholds are necessary, not existence statements.
+

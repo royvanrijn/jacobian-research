@@ -1,0 +1,552 @@
+{
+  "as_of": "2026-11-17",
+  "coverage": "Broad primary-source map, with explicit audit depth; not a claim that every publication or knot-table entry has been exhausted.",
+  "sources": [
+    {
+      "id": "ATLAS-L32",
+      "title": "ATLAS: Linear group L2(7), linear group L3(2)",
+      "authors": "R A Wilson, R A Parker and J N Bray, ATLAS of Finite Group Representations",
+      "year": 2004,
+      "version_dates": "Version2 created14Sep2004; footer last updated16Sep2004; snapshot retrieved16Nov2026",
+      "url": "https://brauer.maths.qmul.ac.uk/Atlas/lin/L32/",
+      "snapshot": "sources/atlas-l32.html",
+      "location": "Order, automorphisms, representations, maximal subgroups and conjugacy classes",
+      "audit": "Primary complete legacy page read, retained and hashed. Q has order168 and outer automorphism group2; characteristic2 faithful simple models are natural3, dual3 and Steinberg8, all overF2. Independent full matrix-algebra spans9/64 prove absolute simplicity; four independently counted2-regular classes prove completeness with the imported Brauer class-count theorem and trivial module. Group catalogue/orbits and new knot cocycle counts independently replayed, not taken from ATLAS.",
+      "scope": "Imported finite-group representation background for the characteristic2 all-module exclusion through the191 retained epimorphisms to GL3(F2). Supplies no MRC theorem, no proper-image exclusion on all293 targets and no all-characteristic result. The split affine control AGL3(F2) is distinct from the page's linked nonsplit2^3.L3(2)."
+    },
+    {
+      "id": "ATLAS-A5",
+      "title": "ATLAS: Alternating group A5, linear groups L2(4) and L2(5)",
+      "authors": "R A Wilson, R A Parker and J N Bray, ATLAS of Finite Group Representations",
+      "year": 1999,
+      "version_dates": "Version2.0 created23Apr1999; page footer last updated13Dec2001; snapshot retrieved16Nov2026",
+      "url": "https://brauer.maths.qmul.ac.uk/Atlas/alt/A5/",
+      "snapshot": "sources/atlas-a5.html",
+      "location": "Representations section: complete faithful ordinary and modular irreducible lists; also standard generators, maximal subgroups and conjugacy classes",
+      "audit": "Primary page read, retained and hashed. Absolute simple degrees0/cross-characteristic1,3,3,4,5; characteristic2 degrees1,2,2,4; characteristic3 degrees1,3,3,4; characteristic5 degrees1,3,5. The listed4-dimensional char2 and6-dimensional char3 models reducible over larger fields are distinguished from absolute simples. Completeness and standard cross-characteristic reduction imported; supplied modular models separately identified by full matrix-algebra spans and conjugate traces. No downloaded ATLAS matrix file is substituted for the retained coefficient model.",
+      "scope": "Representation-theoretic background for reducing an ordinary G-cocycle coefficient search through a fixed A5 quotient to all simple modules. Supplies no knot cohomology counts or MRC theorem by itself. New exact counts and composition-series arguments are in the companion working proof."
+    },
+    {
+      "id": "K3-2026",
+      "title": "K3 A New Problem List in Low Dimensional Topology",
+      "authors": "Baykur Kirby Ruberman editors",
+      "year": 2026,
+      "url": "https://bpb-us-e2.wpmucdn.com/websites.umass.edu/dist/b/22144/files/2026/04/K3-problem-list-watermarked.pdf",
+      "location": "Problem 1.18, printed page 27",
+      "audit": "problem and remarks read",
+      "scope": "MRC remains open; finite quotient detection, domination, and meridional subgroup freeness questions"
+    },
+    {
+      "id": "BZ85",
+      "title": "Nombre de ponts et generateurs meridiens des entrelacs de Montesinos",
+      "authors": "Boileau Zieschang",
+      "year": 1985,
+      "url": "https://doi.org/10.1007/BF02567413",
+      "location": "original Comment Math Helv 60 270-279; cited as reference 7 by BBK21",
+      "audit": "Original publication metadata checked; Theorem1.1 explicitly restated as Musick2012 Theorem1 and applied to the independently identified sixteen five-tangle Montesinos knots. Original proof not fully audited.",
+      "scope": "Montesinos links with r>=3 noninteger rational tangles have meridional rank=bridge=r; integer twist parameter allowed. Exact later generalized-Montesinos variants still need their own hypotheses."
+    },
+    {
+      "id": "RZ87",
+      "title": "Meridional Generators and Plat Presentations of Torus Links",
+      "authors": "Rost Zieschang",
+      "year": 1987,
+      "url": "https://doi.org/10.1112/jlms/s2-35.3.551",
+      "audit": "primary abstract and introduction read",
+      "scope": "all torus links: meridional rank equals bridge number min(abs(p),abs(q))"
+    },
+    {
+      "id": "BUR88",
+      "title": "Links covering knots with two bridges",
+      "authors": "Burde",
+      "year": 1988,
+      "url": "https://da.lib.kobe-u.ac.jp/da/kernel/E0034692/E0034692.pdf",
+      "audit": "introduction read; exact MRC application not extracted",
+      "scope": "historical dihedral branched covering and linking results; do not silently treat as an all-link MRC theorem"
+    },
+    {
+      "id": "BZ89",
+      "title": "The pi-orbifold group of a link",
+      "authors": "Boileau Zimmermann",
+      "year": 1989,
+      "url": "https://doi.org/10.1007/BF01230281",
+      "location": "Corollary 3.3",
+      "audit": "low-rank statement cross-checked in BJW18 and BBK21; original proof not fully audited",
+      "scope": "meridional rank two characterizes two-bridge links"
+    },
+    {
+      "id": "LM93",
+      "title": "Generalized Montesinos knots tunnels and N-torsion",
+      "authors": "Lustig Moriah",
+      "year": 1993,
+      "url": "https://eudml.org/doc/165037",
+      "audit": "Exact numerical equality hypotheses extracted from coauthor Moriah2007 Theorems3.6 and4.20, including Burau evaluation at t=-1 visually checked in the source. Full original geometric definition and proof not audited.",
+      "scope": "Generalized Montesinos2n-plats with gcd of constituent2bridge numerators alpha!=1 have ordinary group rank=exterior Heegaard genus=bridge=n. More generally, the explicit Burau plat-matrix gcd criterion in Moriah2007 Theorem4.20 gives that equality. Extra beta determinant conditions concern distinct tunnel systems, not the equality. No all-arborescent or alpha1 claim."
+    },
+    {
+      "id": "BRU92",
+      "title": "Geometric quotients of link groups",
+      "authors": "Brunner",
+      "year": 1992,
+      "url": "https://link.springer.com/article/10.1007/s00208-020-02124-z",
+      "location": "original Topology Appl 48 245-262, reference 9 in BBK21",
+      "audit": "historical role documented by BBK21; original not audited",
+      "scope": "precursor Artin and Coxeter quotient constructions"
+    },
+    {
+      "id": "COR14",
+      "title": "Knot contact homology and representations of knot groups",
+      "authors": "Cornwell",
+      "year": 2014,
+      "url": "https://arxiv.org/abs/1303.4943",
+      "snapshot_url": "https://arxiv.org/pdf/1303.4943v5",
+      "audit": "Primary abstract, Theorems1.1/1.3 and complete Section5.1 torus construction read. Standard meridian and preferred longitude conventions checked on p14; maximal-rank peripheral branch and eigenvalue formula checked through p16. Independent companion-matrix family written with its own generic irreducibility proof. Other sections, including the pretzel proof, not fully audited.",
+      "scope": "Augmentation/representation lower bounds; torus knots and a family of three-bridge pretzels. The actual maximal torus peripheral branch lambda=(-1)^(p+1)*mu^(-(p-1)q) supplies the GGLW iterable-curve gate. Torus MRC itself is already known; no priority claim for this application."
+    },
+    {
+      "id": "COR17",
+      "title": "KCH representations, augmentations, and A-polynomials",
+      "authors": "Cornwell",
+      "year": 2017,
+      "url": "https://arxiv.org/abs/1310.7526v3",
+      "snapshot_url": "https://arxiv.org/pdf/1310.7526v3",
+      "publication": "Journal of Symplectic Geometry 15(4) (2017), 983-1017",
+      "location": "Theorems1.2/1.10, Corollary1.7; full proof of Theorem1.10 on arXiv p18",
+      "audit": "Primary statements read and original proof of Theorem1.10 read in full and visually checked. Its final determinant paragraph explicitly gives actual rank-n augmentations for all but finitely many meridian eigenvalues, stronger than a bare polynomial-factor assertion. The full representation/augmentation correspondence proof and the rest of the paper are imported, not independently audited.",
+      "scope": "KCH/augmentation correspondence and maximal-braid-index peripheral curve lambda=(-mu)^(-w). With nonzero writhe, a rank-n augmentation on an n-strand closure meets the recent GGLW iteration criterion; equality n*2^N is a source-derived corollary, dependent on that preprint."
+    },
+    {
+      "id": "CH16",
+      "title": "Augmentation Rank of Satellites with Braid Pattern",
+      "authors": "Cornwell Hemminger",
+      "year": 2016,
+      "url": "https://arxiv.org/abs/1408.4110",
+      "audit": "primary introduction and satellite scope read",
+      "scope": "augmentation-rank multiplication under specified braid-pattern hypotheses, including large iterated torus families; not arbitrary satellites"
+    },
+    {
+      "id": "BDJW17",
+      "title": "Meridional Rank of Knots Whose Exterior is a Graph Manifold",
+      "authors": "Boileau Dutra Jang Weidmann",
+      "year": 2017,
+      "url": "https://arxiv.org/abs/1608.01570",
+      "location": "Theorem 1, Corollary 1",
+      "audit": "Primary introduction, Theorem1, Corollary1 and class closure reread for connected sums of torus knots. Full graph-of-groups proof remains an explicit published import. Distinct from Dutra2022 with the separately checked gap.",
+      "scope": "class generated from meridionally tame knots by connected sums and braid-pattern satellite operations; all graph-manifold knot exteriors included",
+      "snapshot": "sources/bdjw-graph-manifold-v1.html"
+    },
+    {
+      "id": "BJW18",
+      "title": "Meridional rank and bridge number for a class of links",
+      "authors": "Boileau Jang Weidmann",
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1510.00816",
+      "location": "Published PacificJ.Math292(1)(2018), printedpp61-64, especially p62 Theorem1.2, Cor1.3 and prime graph-manifold definition; proof architecture read, full proof imported.",
+      "audit": "Published introduction and all relevant hypotheses re-read, including the graph-manifold definition as prime, and explicit treatment of both arborescent and non-arborescent branches. Cor1.3 assumes bridge exactly4; it does not by itself turn an upper4 into equality. Theorem1.2 plus the known meridional ranks1/2 equivalences gives MRC throughout this cover class with bridge at most4. Full rank3 inversion and branch-involution classification proof not independently audited.",
+      "scope": "Graph-manifold double branched cover and meridional rank3 imply bridge3; exact bridge4 in that class gives meridional rank4. Hence this existing theorem covers the sixteen programme cases once actual-cover graph-manifold membership is proved by closed rigidity. This is distinct from the2017 theorem about graph-manifold knot exteriors. Prime nontrivial-JSJ knot exteriors have meridional rank at least4.",
+      "doi": "10.2140/pjm.2018.292.61",
+      "snapshot": "sources/bjw-graph-cover-published-2018.pdf",
+      "snapshot_url": "https://msp.org/pjm/2018/292-1/pjm-v292-n1-p03-s.pdf"
+    },
+    {
+      "id": "BK20",
+      "title": "Symmetric quotients of knot groups and a filtration of the Gordian graph",
+      "authors": "Baader Kjuchukova",
+      "year": 2020,
+      "url": "https://arxiv.org/abs/1711.08144",
+      "audit": "primary abstract read",
+      "scope": "transposition symmetric quotients and an unknotting-number-one family of unbounded bridge number satisfying MRC"
+    },
+    {
+      "id": "BKVV20",
+      "title": "Wirtinger systems of generators of knot groups",
+      "authors": "Blair Kjuchukova Velazquez Villanueva",
+      "year": 2020,
+      "url": "https://archive.intlpress.com/site/pub/files/_fulltext/journals/cag/2020/0028/0002/CAG-2020-0028-0002-a002.pdf",
+      "location": "Theorem 1.3",
+      "audit": "primary abstract and introduction read",
+      "scope": "minimum diagram Wirtinger number equals bridge number, not unrestricted meridional rank"
+    },
+    {
+      "id": "BBK21",
+      "title": "Coxeter groups and meridional rank of links",
+      "authors": "Baader Blair Kjuchukova",
+      "year": 2021,
+      "url": "https://doi.org/10.1007/s00208-020-02124-z",
+      "snapshot_url": "https://arxiv.org/pdf/1907.02982",
+      "location": "Section 2, Proposition 1, pretzel cycle presentation; Theorems 1 and 2",
+      "audit": "quotient convention, exact pretzel relations, reflection bound and class scopes read",
+      "scope": "twisted links; even-weight bipartite arborescent links; recovers pretzel and Montesinos cases; absent graph edges mean no added relation The introduction also records(-1)additivity of meridional rank for knots detected by Coxeter quotients, without assuming bridge equality; this conditional precedent is credited, not generalized to all knots."
+    },
+    {
+      "id": "SERRE80",
+      "title": "Trees",
+      "authors": "Jean-Pierre Serre; English translation by John Stillwell",
+      "year": 1980,
+      "url": "https://link.springer.com/book/10.1007/978-3-642-61856-7",
+      "doi": "10.1007/978-3-642-61856-7",
+      "location": "Chapter I, Trees and Amalgams: normal form for free products with amalgamation",
+      "audit": "Official publisher metadata and chapter scope checked17Nov2026. Standard normal-form theorem is an explicit imported background theorem, with its needed reduced-word argument stated in the new trefoil-amalgam proof. Full book text not independently audited or retained. This replaces an obsolete duplicate BBKM23 record; the later fully scoped BBKM23 entry is retained.",
+      "scope": "Injective edge maps into two groups give canonical embeddings of the vertex groups into their amalgam. Used after independently proving the trefoil peripheral Z2 injections; supplies no knot identification, cover presentation or MRC theorem on its own."
+    },
+    {
+      "id": "DUT22",
+      "title": "Meridional rank of Whitehead doubles",
+      "authors": "Dutra",
+      "year": 2022,
+      "url": "https://arxiv.org/abs/2212.13081v1",
+      "snapshot": "sources/dutra-whitehead-v1.pdf",
+      "location": "Original v1 pp7,12: embeddings alpha,omega, Lemma3.1 and its use in Lemma3.8(2)",
+      "audit": "Original complete relevant pages visually inspected. Direct free-word reduction verifies alpha(y1*y2)=omega(y1*y2)=x2*x1^-1*x2^-1*x1, a nontrivial reduced word in the free group on x1,x2. This contradicts Lemma3.1 at g=1. Its invocation in Lemma3.8(2) is explicit on p12. No repair or full proof audit is asserted.",
+      "scope": "Claims once Whitehead doubles of prime algebraically tame knots. The gap flagged by GGLW26 is now independently checked in the original source. No proved programme record adopts the2022 theorem as a known-family dependency; the distinct2017 graph-manifold/braid-pattern theorem is retained.",
+      "status": "preprint with directly checked proof gap; main MRC conclusion not disproved"
+    },
+    {
+      "id": "BKM24",
+      "title": "Coxeter quotients of knot groups through 16 crossings",
+      "authors": "Blair Kjuchukova Morrison",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2208.09032",
+      "snapshot_url": "https://arxiv.org/html/2208.09032",
+      "audit": "abstract, definitions, computational scope, Section 5 limitations read",
+      "scope": "595515 of 1701936 knots through 16 crossings have explicit maximal rank Coxeter quotients in this computation; not all knots through 16",
+      "limits": "12a210 requires an infinite rather than finite maximal rank Coxeter quotient; Ryffel theorem supplies torus knots without nontrivial Coxeter quotients"
+    },
+    {
+      "id": "BKP26A",
+      "title": "Adding a suitable unknot to any link equates bridge number and meridional rank",
+      "authors": "Blair Kjuchukova Pfaff",
+      "year": 2026,
+      "url": "https://doi.org/10.1017/S030500412610214X",
+      "snapshot_url": "https://arxiv.org/html/2411.10642",
+      "location": "Theorem 1.1, Proposition 1.4, distance discussion",
+      "audit": "primary introduction, theorem and fishnet quotient read; 2024 arXiv version distinguished from 2026 publication",
+      "scope": "suitable fishnets include high-distance knots; for a b-bridge position with b>1 an added unknot gives bridge=meridional rank=ordinary rank=2b-1; does not imply MRC for the original sublink"
+    },
+    {
+      "id": "BKP26B",
+      "title": "The plain sphere number of a link",
+      "authors": "Blair Kjuchukova Pfaff",
+      "year": 2026,
+      "url": "https://msp.org/pjm/2026/342-2/pjm-v342-n2-p.pdf",
+      "audit": "primary abstract and introduction read",
+      "scope": "bridge number is the minimum size of presentations with relations witnessed by the specified embedded plain spheres; restriction on relations remains essential"
+    },
+    {
+      "id": "BKN25",
+      "title": "A preorder on the set of links defined via orbifolds",
+      "authors": "Boileau Kitano Nozaki",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2510.12372v1",
+      "location": "Section 8.2, Questions 8.4 and 8.7, Remarks 8.8 and 8.9",
+      "audit": "orbifold-generator inequalities and open-question scope read",
+      "scope": "stronger bridge=torsion-generator-rank question for prime links with infinite orbifold group; relation to meridional and Coxeter ranks"
+    },
+    {
+      "id": "GGLW26",
+      "title": "Meridional ranks of iterated Whitehead doubles",
+      "authors": "Gao Gu Li Wang",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2611.15673v1",
+      "snapshot_url": "https://arxiv.org/html/2611.15673v1",
+      "pdf_snapshot_url": "https://arxiv.org/pdf/2611.15673v1",
+      "location": "Theorems1.1-1.3, introduction footnote, Sections2.3-2.4/4.1 and Lemma6.2",
+      "audit": "Complete one-step linear-algebra proof, peripheral calculation, iteration definitions/induction and Section4.1 iterable-branch proof read. Checked order/cancellation and nonvanishing calculations; exact symbolic boundary-commutator and longitude-word identities pass. Cornwell's actual torus and maximal-braid-rank curves meet Corollary4.5, giving explicitly labelled corollaries without priority claims. Pattern topology, bridge construction and the cited theorem remain imported. Full44-page microlocal theory, two-bridge curve existence and other sections are not independently certified. Earlier Lemma6.2 proof/Remark6.3 and independent original Dutra gap check retained. Immutable HTML/PDF have different author dates (Nov11/Nov13), both preserved without inferring a repair.",
+      "scope": "claims all iterated untwisted Whitehead doubles of nontrivial two-bridge knots have augmentation rank=meridional rank=bridge=2^(N+1); first Whitehead double of square knot has augmentation rank at most5 and meridional rank=bridge=6",
+      "status": "new preprint submitted 2026-11-11"
+    },
+    {
+      "id": "BHAT26",
+      "title": "The bridge index and the nonorientable four-genus of knots with at most thirteen crossings",
+      "authors": "Bhattacharjee",
+      "year": 2026,
+      "url": "https://zenodo.org/records/23561157",
+      "repository": "https://github.com/anaxia-research/conjecture-to-choose",
+      "commit": "06cbbb7e2737e1a11085b64e0ead021d63c550c3",
+      "audit": "All243 algebraic/four-seed certificates pass separate standard-library replay and exact named-diagram matching to an independent HT census. All243 PDs match literally in KnotInfo snapshots2026.10.5 and2026.11.2; both uncertainty sets equal the author243+293 partition. Full paper and publication priority not independently audited.",
+      "scope": "Author-deposited243 cases with mr=bridge=4 via transvections/reflections are independently replayed as named knot types;293 cases remain in that study. Both archived KnotInfo snapshots still list all536 as bridge[3,4], so database lag is distinguished from the certificate proof.",
+      "status": "Unrefereed author release; credit retained with author, named finite certificates independently checked, full paper not certified."
+    },
+    {
+      "id": "CESY14",
+      "title": "Quandle Colorings of Knots and Applications",
+      "authors": "Clark Elhamdadi Saito Yeatman",
+      "year": 2014,
+      "url": "https://arxiv.org/html/1312.3307v2",
+      "doi": "10.1142/S0218216514500357",
+      "location": "Section 6 Definition 6.1 and examples; Section 7 bridge index",
+      "audit": "primary definitions of colouring-lift fibres and colouring-count bridge bound read; full article not independently audited",
+      "scope": "fixed quandle-colouring lift counts are established invariants; total finite-quandle colourings give bridge-index lower bounds; relevant precedent for the restricted homomorphism lift-count method, with no local priority claim"
+    },
+    {
+      "id": "MUSICK12",
+      "title": "Minimal bridge projections for 11-crossing prime knots",
+      "authors": "Chad Musick",
+      "year": 2012,
+      "url": "https://arxiv.org/abs/1208.4233v3",
+      "location": "Page1 Theorem1 and page2 Montesinos definition",
+      "audit": "Relevant first two pages read; explicit Boileau-Zieschang theorem statement extracted. Full86-page diagram appendix not audited.",
+      "scope": "Prime11crossing bridge classification and explicit Montesinos r>=3 noninteger-tangle bridge/meridional theorem statement; used as primary later source for the known-family audit."
+    },
+    {
+      "id": "KL04",
+      "title": "On the classification of rational tangles",
+      "authors": "Kauffman Lambropoulou",
+      "year": 2004,
+      "url": "https://arxiv.org/html/math/0311499v2",
+      "doi": "10.1016/j.aam.2003.06.002",
+      "location": "Theorem1, Lemma2(iii), continued-fraction constructions",
+      "audit": "Definitions, classification statement and flipping lemma read; full article not independently audited.",
+      "scope": "Rational-tangle fraction classification and invariance under a planar half-turn; justifies the fixed half-turn variants in the exact five-Montesinos identity audit."
+    },
+    {
+      "id": "HT-CENSUS",
+      "title": "SnapPy independently packaged Hoste-Thistlethwaite named link census",
+      "authors": "SnapPy and Spherogram contributors; Hoste Thistlethwaite census",
+      "year": 2026,
+      "url": "https://snappy.computop.org/censuses.html",
+      "versions": {
+        "snappy": "3.3.2",
+        "spherogram": "2.4.1",
+        "snappy_15_knots": "1.2.1",
+        "snappy_manifolds": "1.4"
+      },
+      "audit": "Selected named PD/DT records and original installed census file hashes retained. All16 five-bridge certificates transferred directly; all243 October diagrams matched by exact dart bijections. No numerical isometry acceptance.",
+      "scope": "Second-source name/diagram verification for the retained finite cases, not a whole-census or software correctness audit."
+    },
+    {
+      "id": "KNOTINFO-SNAPSHOTS",
+      "title": "Database KnotInfo snapshots 2026.10.5 and 2026.11.2",
+      "authors": "KnotInfo curators; Sebastian Oehms snapshot packaging",
+      "year": 2026,
+      "url": "https://pypi.org/project/database-knotinfo/2026.11.2/",
+      "versions": [
+        "2026.10.5",
+        "2026.11.2"
+      ],
+      "audit": "Pinned wheel SHA256 and CSV SHA256 checked; all536 selected name/bridge/PD rows retained read-only. In both versions exactly536 thirteen-crossing entries are[3,4], exactly the pinned author partition; all243 certificate PDs agree literally.",
+      "scope": "Archived source status, not a claim about every later live KnotInfo update or an independent proof of lower bounds.",
+      "projective13_supplementary_read": {
+        "snapshot": "sources/knotinfo/2026.11.2_projective13_geometry_subset.json",
+        "columns": [
+          "name",
+          "conway_polynomial",
+          "three_genus",
+          "conway_notation",
+          "montesinos_notation",
+          "symmetry_type"
+        ],
+        "assurance": "Pinned archived polynomial/genus/notation/symmetry fields read. Two4knot blocks have equal Conway polynomials and the new homology types. Blank notation is not a family exclusion; neither mutation nor common branched covers nor bridge value follows from these invariants."
+      }
+    },
+    {
+      "id": "BBKM23",
+      "title": "The bridge number of arborescent links with many twigs",
+      "authors": "Baader Blair Kjuchukova Misev",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2008.00763",
+      "doi": "10.2140/agt.2023.23.75",
+      "snapshot": "sources/many-twigs.pdf",
+      "location": "Theorems1,2; definitions of many twigs, flattening number and m(T); inductive proof architecture",
+      "audit": "Exact tree and weight hypotheses read, relevant page visually checked. Not an independent full proof audit.",
+      "scope": "If weighted plane tree T is obtained from a subtree T0 by adding at least3 twigs to every vertex of T0 and all weights avoid0,+1,-1, then mr=bridge=m(T)=f(T)+2. A twig is a straight leaf-to-branch-point branch; f(T) is minimum edges deleted to leave a forest with maximum valence2. No all-arborescent theorem."
+    },
+    {
+      "id": "MORIAH07",
+      "title": "Heegaard splittings of knot exteriors",
+      "authors": "Yoav Moriah",
+      "year": 2007,
+      "url": "https://doi.org/10.2140/gtm.2007.12.191",
+      "snapshot": "sources/moriah-heegaard-2007.pdf",
+      "location": "Theorems3.6,4.19,4.20; definitions of generalized Montesinos plats and the integral Burau matrices",
+      "audit": "Coauthor primary survey's numerical equality criterion extracted. Burau parameter visually checked as -1 because text extraction drops its minus sign. Original LM93 full proof not certified.",
+      "scope": "For a2n-plat braid B, let R be unreduced Burau at t=-1, L rows paired differences, M columns paired sums. If gcd entries of LRM is not1, then ordinary knot-group rank=exterior genus=bridge=n, hence MRC. Generalized Montesinos numerator-gcd condition is a specialization; beta congruences apply to additional tunnel inequivalence claims."
+    },
+    {
+      "id": "STW24",
+      "title": "Core groups",
+      "authors": "Silver Traldi Williams",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2311.02048v2",
+      "snapshot": "sources/core-groups-v2.html",
+      "location": "Introduction; Section7 especially Theorem7.5 and Remark7.11",
+      "audit": "Core-group history, free-product description and branched-complex normalization read. Full article not independently audited.",
+      "scope": "Classical core group, introduced by Kelly1991 and Wada1992, is pi1(double branched cover) free product Z. Fixing one arc to identity gives homomorphisms from the cover group. Historical credit for the r2 nonabelian lift-count method is retained."
+    },
+    {
+      "id": "BC13",
+      "title": "On the generating graph of direct powers of a simple group",
+      "authors": "Timothy C. Burness and Eleonora Crestani",
+      "year": 2013,
+      "url": "https://seis.bristol.ac.uk/~tb13602/docs/BC_1.pdf",
+      "doi": "10.1007/s10801-012-0405-x",
+      "snapshot": "sources/burness-crestani-direct-powers.pdf",
+      "location": "Author manuscript p2 introduction, Hall formula and explicit delta(A5)=19; reference18 Hall1936",
+      "audit": "Relevant primary page read. Separate even-permutation and PSL2/PGL2(F5) enumerations reproduce2280 generating pairs,120 automorphisms and19 orbits. Full18-page generating-graph diameter proof and original Hall article not independently audited.",
+      "scope": "For nonabelian finite simple S, the maximal two-generated direct power is delta(S)=number of ordered generating pairs divided by |Aut S|, credited to Philip Hall1936. Distinct S quotient kernels on one source group jointly give a direct-power quotient. The user's twenty-A5-kernel cover-rank application is recorded without a novelty claim. Do not confuse delta(A5)=19 with the paper's different diameter invariant Delta(A5)=2."
+    },
+    {
+      "id": "PS17",
+      "title": "Link homology and equivariant gauge theory",
+      "authors": "Prayat Poudel and Nikolai Saveliev",
+      "year": 2017,
+      "url": "https://msp.org/agt/2017/17-5/agt-v17-n5-p03-p.pdf",
+      "doi": "10.2140/agt.2017.17.2635",
+      "snapshot": "sources/poudel-saveliev-2017.pdf",
+      "location": "Section7.3, printed2671, PDFpage37: unnormalized Seifert presentation of the Montesinos double branched cover",
+      "audit": "Complete relevant page visually inspected; exponent sign h^(-bi) confirmed. Presentation and quotient by central fibre read, with Burde-Zieschang credit retained. Full52-page gauge-theory article not independently audited.",
+      "scope": "The double-cover group has central h, xi^ai=h^(-bi), product xi=1 in unnormalized conventions. Every epimorphism to centerless A5 kills h, identifying its A5 quotient kernels with those of the sphere-cone orbifold group. This supports known four-tangle Montesinos controls, not a new MRC family."
+    },
+    {
+      "id": "STOIM07",
+      "title": "Graphs, determinants of knots and hyperbolic volume",
+      "authors": "Alexander Stoimenow",
+      "year": 2007,
+      "doi": "10.2140/pjm.2007.232.423",
+      "url": "https://msp.org/pjm/2007/232-2/pjm-v232-n2-p11-p.pdf",
+      "snapshot": "sources/stoimenow-graphs-2007.pdf",
+      "location": "Published PDF pp431,433: Lemmas3.14,3.21; pp446-447: Proposition6.3 and Remark6.4",
+      "audit": "Primary published statements and their elementary spanning-tree arguments read. Exact region graphs and determinant counts independently checked here. Full volume estimates and the cited Thistlethwaite arborescent classification are not audited.",
+      "scope": "Alternating-link determinant equals checkerboard spanning-tree count; deletion-contraction. The explicit6star exception prevents inferring knot nonarborescence from failure of series-parallel diagram reduction alone. Supplies no MRC or global novelty theorem."
+    },
+    {
+      "id": "JP25",
+      "title": "Meridional rank and bridge number of knotted 2-spheres",
+      "authors": "Jason Joseph and Puttipong Pongtanapaisan",
+      "year": 2025,
+      "doi": "10.4153/S0008414X23000883",
+      "url": "https://doi.org/10.4153/S0008414X23000883",
+      "published": "Canadian Journal of Mathematics77(1),282-299; online27Dec2023",
+      "snapshot": "sources/joseph-pongtanapaisan-v2.html",
+      "version_dates": "arXiv2111.09233v2,6Feb2023, under the title Bridge number and meridional rank of knotted surfaces; publication metadata checked separately",
+      "location": "Preprint Section3, especially Construction3.5, Definition3.6 and Corollary3.12",
+      "audit": "Classical construction, periodic twist-box rules and sharpness argument read. The finite-cycle generation-capacity theorem remains an explicit source import. Entire published proof and four-dimensional/welded extensions not independently audited.",
+      "scope": "Specified classical families K_(p,n) have mr=bridge=n via symmetric/alternating quotients with meridians p-cycles. Periodic finite-quotient twist labellings have this precedent. No proof that our four seeds belong to or lie outside these families; knotted-sphere nonadditivity is not a classical MRC counterexample."
+    },
+    {
+      "id": "STALL71",
+      "title": "Group Theory and Three-Dimensional Manifolds",
+      "authors": "John Stallings",
+      "year": 1971,
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stallings1.pdf",
+      "snapshot": "sources/stallings-1971.pdf",
+      "location": "Theorem1.B.5, printedp6; author discussion and references23/24",
+      "original_proof_metadata": "A topological proof of Grushko's theorem on free products, Math.Z.90(1965),1-8; DOI10.1007/BF01112046, verified on official Springer page",
+      "audit": "Author primary statement read. Rank additivity is derived from its free-group lifting form in the new note. Grushko/Wagner/Neumann credit retained; the original1965 full proof is a classical import and is not independently certified.",
+      "scope": "Finite ordinary group rank adds under free products. This supplies the rank step after the explicit lifted-sphere decomposition; it is not a meridional-additivity or full MRC theorem."
+    },
+    {
+      "id": "SCHULT03",
+      "title": "Additivity of bridge numbers of knots",
+      "authors": "Jennifer Schultens",
+      "year": 2003,
+      "doi": "10.1017/S0305004103006832",
+      "url": "https://doi.org/10.1017/S0305004103006832",
+      "snapshot": "sources/schultens-bridge-additivity.pdf",
+      "location": "Theorem1 and connected-sum argument, author manuscript printedpp4-5; published135(3),539-544",
+      "audit": "Primary author manuscript theorem and connected-sum argument read; Cambridge publication metadata checked. Credit to Schubert1954 retained. No independent certification of every geometric foliation lemma or the original1954 proof.",
+      "scope": "Bridge number has Schubert(-1)additivity for classical knots. This does not assert general meridional-rank additivity; used for additive nonnegative bridge-minus-cover-bound defects and known controls."
+    },
+    {
+      "id": "ATLASA8",
+      "title": "ATLAS: Alternating group A8, Linear group L4(2)",
+      "authors": "ATLAS of Finite Group Representations",
+      "year": 2026,
+      "url": "https://brauer.maths.qmul.ac.uk/Atlas/v3/alt/A8/",
+      "snapshot": "sources/atlas-a8.html",
+      "location": "Group order, standard-generator heading and characteristic-two representation list",
+      "audit": "Primary group order20160 and identification A8=L4(2) read, together with the two dimension4 characteristic2 models in the list. No full representation classification or model transport is imported. Conjugacy-class sizes210 and105 are separately proved and enumerated in this programme.",
+      "scope": "Identification of the full alternating-group control and binary linear group. Distinct meridian classes prove a precise difference from the pinned binary rank-one search. No higher-field exclusion, new knot case or global priority conclusion."
+    },
+    {
+      "id": "GRE13",
+      "title": "Lattices, graphs, and Conway mutation",
+      "authors": "Joshua Evan Greene",
+      "year": 2013,
+      "doi": "10.1007/s00222-012-0421-4",
+      "url": "https://doi.org/10.1007/s00222-012-0421-4",
+      "snapshot": "sources/greene-mutation-v1.pdf",
+      "location": "Author preprint arXiv1103.0487v1, Section4.1-4.2 printedpp19-23, Corollary4.3, Lemma4.4, Corollary4.5; published Invent.Math.192,717-750 (2013), online11August2012",
+      "audit": "Primary graph/drawing/mutation arguments read, including parallel-edge qualification and chosen checkerboard convention; official Springer publication metadata checked. Classical Whitney2isomorphism and plane-drawing results remain explicit imports. Full lattice/Floer proof and published-version comparison not audited.",
+      "scope": "Connected reduced alternating diagrams with2isomorphic Tait graphs in the same crossing/checkerboard convention are related by Conway mutations. Only this elementary Section4 implication is imported; no rank, bridge, meridional-rank or priority conclusion."
+    },
+    {
+      "id": "MOR14",
+      "title": "Mutant knots",
+      "authors": "H. R. Morton",
+      "year": 2014,
+      "url": "https://www.liverpool.ac.uk/~su14/papers/mutantchapter.pdf",
+      "snapshot": "sources/morton-mutant-knots-2014.pdf",
+      "location": "Author manuscript16March2014, definitions printedpp3-4 and Theorem3 with full short proof printedp6",
+      "audit": "Read the torus-gluing proof: a chosen lift of each Conway halfturn is isotopic to identity on the branched-cover boundary torus. Credit Viro1976 retained. This survey supplies the audited argument, not a claim to have read the full original Russian proof or exhaustive mutation history.",
+      "original_credit": "O.Ya.Viro, Nonprojecting isotopies and knots with homeomorphic coverings, Zap.Nauchn.Sem.LOMI66(1976),133-147; English J.SovietMath12(1)(1979),86-96, doi10.1007/BF01098418; primary MathNet metadata checked, original full proof not audited.",
+      "scope": "Conway mutation preserves the homeomorphism type of the double branched cover, hence its fundamental group and group rank. No mutation invariance of bridge number or meridional rank is assumed."
+    },
+    {
+      "id": "BW05",
+      "title": "The structure of 3-manifolds with two-generated fundamental group",
+      "authors": "Michel Boileau and Richard Weidmann",
+      "year": 2005,
+      "doi": "10.1016/j.top.2004.10.008",
+      "url": "https://doi.org/10.1016/j.top.2004.10.008",
+      "snapshot": "sources/boileau-weidmann-structure-author.pdf",
+      "location": "Author manuscript42pp, Theorem2 printedp3 and all10necessary cases; Lemma2 printedp5; Section3.1 separating-torus argument printedpp16-20. Published Topology44(2)(2005),283-320; Crossref DOI metadata read.",
+      "audit": "Read every necessary type in Theorem2 and the relevant separating/no-Klein-bundle case proof. The necessary list has at most3JSJpieces; original exceptional irregular-hyperbolic-cover case10 has only2 and does not affect this consequence. Millichap-Worden2016 Cor5.4 eliminates that original type, separately recorded as current literature. This classical theorem is imported, not independently reproved or formally certified. Full42page theorem proof and full published-version comparison not claimed; publication metadata checked via Crossref. A bounded erratum/gap search found no correction to the theorem, not an exhaustive historical audit.",
+      "scope": "A compact orientable irreducible3manifold of rank2 with nontrivial JSJ cannot have4canonical JSJpieces. Used as a necessary condition only, without rank=Heegaard-genus or sufficiency/priority assumptions."
+    },
+    {
+      "id": "HAT00",
+      "title": "Notes on Basic 3-Manifold Topology",
+      "authors": "Allen Hatcher",
+      "year": 2000,
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "snapshot": "sources/hatcher-basic-3manifold.pdf",
+      "location": "Online notes61pp, introduction dates small revisions1999/2000; Section1.2 Theorem1.9, Propositions1.11-1.13, Lemmas1.14-1.15 and proof of uniqueness pp14,16-23; Section2.1 explicit Seifert construction pp24-26",
+      "audit": "Read Seifert circle-bundle/filling construction, irreducibility argument, boundary-fiber uniqueness and its exceptional list, and relevant JSJ uniqueness proof. Classical Jaco-Shalen/Johannson theory credited through this exposition; original monographs and all61pages not independently audited. Boundary-group injectivity in the actual four-piece construction is separately proved by explicit amalgam normal forms.",
+      "scope": "Realize D(2,3) and A(2) pieces, glue incompressible tori, and certify canonical JSJ using nonparallel unique fiber slopes. Negative orbifold Euler characteristics exclude solid-torus/product/Klein-bundle exceptions. Does not identify source-cover homeomorphism from a group isomorphism; only a constructed manifold model with that group is needed."
+    },
+    {
+      "id": "MW16",
+      "title": "Hidden symmetries and commensurability of 2-bridge link complements",
+      "authors": "Christian Millichap and William Worden",
+      "year": 2016,
+      "doi": "10.2140/pjm.2016.285.453",
+      "url": "https://doi.org/10.2140/pjm.2016.285.453",
+      "snapshot": "sources/millichap-worden-2bridge-2016.pdf",
+      "location": "Published PacificJ.Math285(2)(2016), Corollaries1.3 and5.3-5.4; printedpp455 and479",
+      "audit": "Read revised rank2 characterization and its short deduction from the irregular-cover obstruction, including arithmetic/nonarithmetic cases and stated dependencies. Full canonical-cusp/hidden-symmetry proof not independently audited; treated as a published source for current literature context. The eight-case rank proof already uses the necessary JSJpiece bound from the older Boileau-Weidmann theorem and does not require this refinement.",
+      "scope": "Eliminates the original exceptional irregular hyperbolic2bridge-cover case in the Boileau-Weidmann rank2 list. Records the current refinement instead of leaving the original conjectural type open; not a new result of this programme."
+    },
+    {
+      "id": "AFW15",
+      "title": "3-Manifold Groups",
+      "authors": "Matthias Aschenbrenner, Stefan Friedl and Henry Wilton",
+      "year": 2015,
+      "doi": "10.4171/154",
+      "url": "https://ems.press/books/elm/217",
+      "snapshot": "sources/afw-3manifold-groups-final-author-2015.pdf",
+      "snapshot_url": "https://www.maths.gla.ac.uk/~mpowell/Aschenbrenner-Friedl-Wilton-3-manifold-groups-final-version-031115.pdf",
+      "comparison_snapshot": "sources/afw-3manifold-groups-author-v3.pdf",
+      "comparison_url": "https://friedl.app.uni-regensburg.de/papers/3-manifold-groups-v3.pdf",
+      "location": "Final author book184pp, printedpp29-31/PDF33-35, Theorems2.1.1-2.1.3 and Section2.2 boundary warning; compared earlier149pp author-v3 Theorems2.1-2.3, printedpp21-22. EMS publisher metadata gives20Aug2015, DOI10.4171/154,230printed pages.",
+      "audit": "Read the prime closed rigidity theorem and full arbitrary-closed classification statement with lens/orientation exceptions and nearby attribution to geometrization, Mostow, Waldhausen and Scott. Read the Kneser converse and boundary-peripheral warning. Compared only these scopes across the two retained author versions. Full184/149page manuscripts, constituent rigidity proofs and full published-version comparison not audited; imported classical results.",
+      "scope": "Closed orientable3manifolds with isomorphic groups differ only by orientations of prime factors and lens-space ambiguity. A closed orientable prime irreducible infinite-group graph-manifold model therefore determines any closed orientable manifold with its group up to homeomorphism and orientation; no boundary-manifold or finite lens-group rigidity shortcut."
+    }
+  ],
+  "unresolved_scope_extractions": [
+    "Original Hall1936 source and full Burness-Crestani2013 proof; the primary manuscript p2 formula and A5 threshold19 have been read, independently counted and credited",
+    "Original LM93 geometric family definition and full proof; numerical gcd and general plat criterion extracted through Moriah07",
+    "Independent full proof audit of BBKM23; exact many-twig and weight hypotheses extracted",
+    "Original low-rank orbifold proof audit",
+    "A repair or alternate proof for Dutra2022's broader main theorem; its original Lemma3.1 gap and invocation in Lemma3.8(2) are now directly checked",
+    "Full proof audits of November and October2026 releases; October243 algebra, named-diagram and archived KnotInfo checks completed",
+    "Priority scope of fixed-fibre meridional bounds and general branched-cover rank inequalities; r2 core-group precedent identified and credited"
+  ],
+  "not_exhaustive_claims": [
+    "No all-knot proof",
+    "No complete knot table census",
+    "No all-satellite theorem",
+    "No all-arborescent theorem",
+    "No universal finite quotient detection theorem"
+  ]
+}

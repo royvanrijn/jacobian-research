@@ -1,0 +1,205 @@
+{
+  "status": "exact-primary-coefficient-powers",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "input_sha256": "7d54fe23157c1f46c9e45b7a5b012a9cdeea56b99ed9d1869f7c1f876fd51b5e",
+  "script_sha256": "50e524d3574098a273221783177cbd0b02ab202da6881be6a37e9eb231ee25a6",
+  "targets": [
+    {
+      "parameter": 0,
+      "power": 4,
+      "multipliers": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-1/640"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-9/256"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1/256"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "21/1280"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "7/1280"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-9/128"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-9/256"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "-1/256"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/4"
+          },
+          {
+            "exponent": [
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-3/16"
+          },
+          {
+            "exponent": [
+              1,
+              2,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "9/64"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-15/128"
+          },
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1/16"
+          },
+          {
+            "exponent": [
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "3/32"
+          },
+          {
+            "exponent": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "9/128"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "-11/1280"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "1/64"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "3/256"
+          }
+        ]
+      ]
+    }
+  ],
+  "unresolved_parameters": []
+}

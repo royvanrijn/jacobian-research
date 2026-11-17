@@ -1,0 +1,40 @@
+{
+  "all_variables_symbolic": true,
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "base_determinant_verified": true,
+  "carrier_nilpotence_exponent": 3,
+  "collision_points": 3,
+  "degree": 3,
+  "determinant_one": true,
+  "dimension": 13,
+  "discovery_sha256": "da85163c9de30f219d199cb0e76cd9c2df4aa371b214f2a3cb38ba34e146f645",
+  "elementary_moves": {
+    "carrier": 10,
+    "linear": 4,
+    "product": 13
+  },
+  "entire_transformation_replayed": true,
+  "full_polynomial_schur_determinant": true,
+  "identity_derivative": true,
+  "nonlinear_counts": [
+    4,
+    14,
+    19,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "nonlinear_total": 47,
+  "primary_source_sha256": "1b0eedfc58088ab1a6c9f07aa3b0b77815bc98b9aed9e68f92929d7f3b6af8a0",
+  "scope": "Explicit cubic dimension13 upper bound and47 displayed nonlinear occurrences; no minimum dimension or support claim; no change to the three-variable interval [10,48].",
+  "source_sha256": "d9c4f915be292c1c867d132deb8f715fe08a60a8e9a85beedb0ddbcbd31681d1",
+  "status": "pass",
+  "witness_sha256": "f945c2202c9a5c73ce73c4a4842c4b174063dba3784b3c1ae12f4e3443591d9e"
+}

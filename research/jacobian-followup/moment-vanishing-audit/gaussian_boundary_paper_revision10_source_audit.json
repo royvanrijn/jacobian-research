@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-17",
+  "revision": "REVISION10 REGULAR-PART REDUCTION AND ALL SQUAREFREE ROWS17November2026:50-page paper completes CUSP,TANGENT and CONCURRENT,so EVERY SQUAREFREE leading cubic type is now written. Only DOUBLE-LINE/TRIPLE-LINE remain. New formal positive-seed criterion requires a full frame ONLY for M0;nonzero exponential blocks may retain arbitrary regular extensions. Optional log-field case explicit. General all-degree polynomial/quadratic application under fixed-phase complex coercivity and nonisotropic leading critical directions excludes every escape from any pure alpha*t block. Roucairol nonzero ranks AFTER graph ramification plus full tame rank determine the ENTIRE regular rank from bounded branches. Five fixed bounded models and isolated power characters fill it,with explicit scaled bounds,all Milnor multiplicities,polynomial separation and positive ORIGINAL marker volumes. Full Gaussian data retained;no explicit escape profiles,actual-period or image-kernel computation. Classical Sabbah/Roucairol/Pham mechanisms credited. Formal module lemma allows nonconvergent coefficients;geometric family remains algebraic/convergent;no all-ring inference. No new checker,old replay,novelty or assurance promotion. General safe-to-pure and realization gaps remain;paper and broad goals ACTIVE.",
+  "new_claim": {
+    "id": "GBOUNDEDREGULAR20261117",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Bounded regular Gaussian reduction and complete squarefree-leading cubic consolidation",
+    "scope": "FORMAL SEED CRITERION:for a finite connection over C((rho)),only the zero-exponential summand M0 must have a complete horizontal dual frame with strictly positive values on the projected original seed. Nonzero exponential blocks may have arbitrary regular extensions;no whole-module semisimplicity is assumed. Functorial exact Turrittin-Levelt decomposition makes any rational unit quotient use M0. Optional frame over C((rho))(logrho) with positive-order polynomial-log seed values also suffices;valuation preservation and constant fieldC are proved. This conditional module lemma admits nonconvergent formal coefficients;the following GEOMETRIC RANK APPLICATION is algebraic/convergent. For polynomial P of ANY degreeD>=2 and quadratic q,assume local-in-parameter COMPLEX linear coercivity of S=P/epsilon-q outside a compact set and q2(w)!=0 at EVERY projective leading critical direction gradFD(w)=0. Then every escaping critical branch has action polar part other than alpha/epsilon for EVERY constantalpha,by q=-S-epsilon*Sprime. Full zero-exponential rank equals the generic Milnor multiplicity of BOUNDED phase-critical branches with limiting P value0. Proof identifies full tame rank,checks complete outer parameter lifts on bounded target fibers,and applies Roucairol NONRAMIFIED nonzero ranks AFTER all critical-value curves are graphs,with all conjugate/equal-action multiplicities. Subtraction determines the whole regular rank. Five explicit bounded models and isolated A_mu characters then complete the nonisotropic zero-F2 CUSP,TANGENT and CONCURRENT ternary cubic normal forms with every original Gaussian marker,mean,cross term,degeneracy,coincident value and degree drop retained. Fixed ranks are quartic line3,Gaussian line1,cusp quartic-cubic6,tangent weighted quartic5,and quartic parabola3. For each model critical equations prove all scaled coordinates bounded,local intersection conservation counts every bounded branch,and a polynomial leading evaluation matrix with high-order separating cutoffs proves full REGULAR independence. Moving volume orders are strictly positive. No irrelevant escape character,actual-period realization or full marker-image kernel is computed or presumed. Every nonzero original marked period of these NONISOTROPIC models is not finite exponential-polynomial;constant-coefficient operator isolation remains within original markers. With the explicit nonzero-F2 gradient gates and isotropic frame test plus the already written affine-W theorem,this completes all THREE cusp/tangent/concurrent geometric rows and hence EVERY SQUAREFREE leading cubic in the standalone boundary paper,with m>3degQ. Smooth and ordinary rows retained. Only DOUBLE-LINE and TRIPLE-LINE PAPER-A types remain;standalone paper is still incomplete. Classical Sabbah Section3/Cor3.3 decomposition,Roucairol0.1(2),0.3 NONRAMIFIED1.2,and Pham tame Milnor rank credited. No novel convergent rational-slope mechanism,arbitrary nonconvergent geometric-family theorem,all-ring inference,general Gaussian safety-to-purity or regular/wild realization claimed. No mathematical checker,old replay,independent/formal/external verification or novelty claim.",
+    "canonical_source": "jacobian-followup/moment-vanishing-audit/BOUNDED_REGULAR_GAUSSIAN_REDUCTION.tex",
+    "dependencies": [
+      "G3ORDINARYFINITE20261117",
+      "GGAUSSGRAD20261117",
+      "G3WLINEAR20261114",
+      "external: C.Sabbah,arXiv0706.3570v2,Section3 Corollary3.3/proof,classical functorial exact formal exponential decomposition",
+      "external: C.Roucairol,ManuscriptaMath124(2007),299-318,Theorems0.1(2),0.3 and NONRAMIFIED Section1.2 after all critical-value graph base changes",
+      "external: F.Pham,Asterisque130(1985),11-47,PartI Sections1-4,full tame Milnor rank"
+    ],
+    "checker": null,
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": null,
+    "software_lock": [
+      "jacobian-followup/moment-vanishing-audit/BOUNDED_REGULAR_GAUSSIAN_REDUCTION.tex",
+      "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/sources/bounded_regular_primary_manifest.json",
+      "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/sources/sabbah_0706_3570v2.html",
+      "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/sources/roucairol_formal_math0604134v2.html",
+      "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/sources/pham_asterisque130_1985.pdf",
+      "jacobian-followup/moment-vanishing-audit/gaussian_boundary_paper_revision10_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/gaussian_boundary_paper_revision10_preupdate_20261117.json"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [
+      "OP-MV-ALL-DEGREE"
+    ],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived",
+    "programme_status": "archived"
+  },
+  "canonical_proof_sha256": "434e46f2edc7e3df123aa3c1fe6e03847f9848d0d4fdcfd1b3b9555bebf10f13",
+  "proof_mode": "Written regular-part-only formal seed and all-degree geometric rank reduction,with complete cusp/tangent/concurrent bounded model accounting and precise classical inputs;no new mathematical checker or assurance promotion.",
+  "old_whole_records_unchanged": true,
+  "mutable_draft_files_snapshot_sha256": {
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/manuscript.tex": "f1386d27e8ddfc73ee1a44433c8f438cda83e99d086a7044446795914c104e1a",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/manuscript.pdf": "77819bf0f5140c1739ac560ccb44603a544d8169a96fd39d833fb031a07b3f8c",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/analytic_core.tex": "1f4373227172699d006ca0f88489cf12b8c4242df0ef985f62d9473ed9ddad1a",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/ordinary_finite_exclusion.tex": "9da1cd85ef769a7218e728b8a01907f1b8eea60c7487ed716d02f8bd40c6077d",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/hyperbolic_suspension.tex": "b9ab71326fa699dc1b4e9cc188f04a410394c9b912b9d3caf88aa72d47a1ca83",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/uniform_cut_decay.tex": "cbf2c3410561ecf1bec88e1cb6821e8df44a5b84e7ee68abf7a3e00a0b2828c2",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/ordinary_axis_exclusion.tex": "1a6386300ace0a134963fab8a0b138068849b6d3fd4bd2d35619330d4a0f86c3",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/bounded_regular_reduction.tex": "ee25cfb685b6dea7ad965a2002396afd77daa67206fcf89e56af99ce73b730c5",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/cusp_tangent_exclusion.tex": "3c009a2b6ee209fae6e7b93a4e48d81d20d00ca8f84226c5f12d959f2e951bb2",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/concurrent_regular_exclusion.tex": "ae0579bbe1252d072e9a21c3e9e5ff0dce7b4e144938f11ceacb9bd39f48f866",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/frame_extraction_case_audit.json": "739f34fde5af2e52b7b0d372f3e740473ad138da0d1430b8126cf427fe211501",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/resolved_laurent_written_audit.json": "e699f57baa407990f85cfc582727e966e4388744f1941320c99dd45ac27eb002",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/proof_audit.json": "bcadb6197d6203693ea73c1fb27e2ad7dad4ba03ecd1c85fb9d6ee6469f14991",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/paper_goal.json": "76a2e406639142cf12665696125cd1542e455c8e8884712e02911453f838124c",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/adversarial_audit.json": "65c0445e3ee1de6078fab05b40dd08de608b9c1cbc5fa09ddefbfce282b27090",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/literature_audit.json": "67fa42d65869a1e245ae23f42616bd67189c8c6c2529f98e178ca26cee1874e7",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/pdf_quality_check.json": "898f9c76b450b99d337ff208ed4b9fcad8548240aa5d6ad3f211754b90209d7c",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/check_stationary_ball_controls.py": "5d4dd147915ae0748b88d82b7a53e8836620f9aa692f6eebcf32d497bac151d6",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/stationary_ball_controls.json": "41fe862668b0af5c3df72ff86d91ff6fd3aebd9e32b522b302a560b23e35b32f",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/check_punctured_controls.py": "6f306c21e23d59f408b1b405d34f35cac0bed009c785a0cc6160dd0a5d029f88",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/punctured_controls.json": "61fffbb94e24939171eeffb56ee029557a943628c52fdc423ebd61bae91c1c84"
+  },
+  "mutable_policy": "Working paper files remain editable;v010 snapshot retained separately. New standalone canonical proof and all old sealed proof packets immutable.",
+  "new_primary_sources": {
+    "date": "2026-11-17",
+    "primary_sources": [
+      {
+        "author": "Sabbah",
+        "url": "https://arxiv.org/html/0706.3570v2",
+        "cached_file": "sabbah_0706_3570v2.html",
+        "sha256": "6878d0845b69730e58c4cdc64ff32737f986c0173b4873974f650b4b9d55b71e",
+        "locations": [
+          "Section3 Corollary3.3 and proof"
+        ],
+        "use": "Unique formal typical components,no horizontal cross-type maps,and functorial exact decomposition;do not assume nonzero regular factors are semisimple."
+      },
+      {
+        "author": "Roucairol",
+        "url": "https://arxiv.org/html/math/0604134v2",
+        "cached_file": "roucairol_formal_math0604134v2.html",
+        "sha256": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
+        "locations": [
+          "Theorems0.1(2),0.3",
+          "NONRAMIFIED Section1.2/Proposition1.2"
+        ],
+        "use": "Apply after every critical-value curve is a graph. Count every conjugate graph and conormal Milnor multiplicity,including equal polar parts. Only nonzero ranks imported;zero rank obtained by full-rank subtraction. No Theorem0.2 monodromy formula used."
+      },
+      {
+        "author": "Pham",
+        "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+        "cached_file": "pham_asterisque130_1985.pdf",
+        "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+        "locations": [
+          "PartI Sections1-4"
+        ],
+        "use": "Full tame Milnor rank;all isolated degeneracies retained. Fixed-phase and power character constructions are explicit internal algebra."
+      }
+    ],
+    "scope_split": {
+      "formal_seed_lemma": "Finite formal connections over C((rho)),including nonconvergent coefficients;conditional on the stated full REGULAR frame,optionally over log extension. Classical decomposition credited.",
+      "geometric_rank_application": "Complex polynomial P and quadratic q;locally uniform fixed-parameter complex coercivity and nonisotropic leading critical directions explicitly assumed. Algebraic/convergent parameter family.",
+      "all_ring_extension": false
+    },
+    "not_claimed": [
+      "Semisimplicity of all exponential blocks",
+      "Zero rank from an Euler characteristic or a partial point count",
+      "Every ambient factor appears in the actual marker image",
+      "Actual-period or full image-kernel computation",
+      "General Gaussian safe-to-pure or regular/wild realization solution",
+      "Repeated-line completion",
+      "Novelty or independent/formal/external verification"
+    ],
+    "new_mathematical_checker_run": false
+  },
+  "protected_prior_whole_records": 217,
+  "retained_proof_files": 387,
+  "retained_example_counts": [
+    211,
+    11,
+    37
+  ],
+  "paper_pages": 50,
+  "standalone_paper_complete": false,
+  "submission_ready": false,
+  "closed_paper_obligations": [
+    "PAPER-B-R",
+    "PAPER-B-L"
+  ],
+  "partially_closed_paper_obligations": {
+    "PAPER-A": "ALL squarefree leading types proved;only double-line and triple-line remain."
+  },
+  "remaining_paper_obligations": [
+    "PAPER-A"
+  ],
+  "nonconvergent_formal_coefficients": false,
+  "arbitrary_ring_statement": false,
+  "novelty_assessed": false,
+  "old_terminal_UNKNOWN_jobs_restarted": false,
+  "old_sealed_checkers_replayed": false,
+  "actual_image_kernel_computed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "broader_goal_status": "active"
+}

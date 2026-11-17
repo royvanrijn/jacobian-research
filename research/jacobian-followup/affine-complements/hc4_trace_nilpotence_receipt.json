@@ -1,0 +1,470 @@
+{
+  "claim": "PF2RULED153",
+  "outcome": "PASS",
+  "check_count": 70,
+  "checks": [
+    "retained source pin archive/non-elliptic/HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
+    "retained source pin jacobian-followup/hc4-polynomial-graphs/PROOF.md",
+    "retained source pin jacobian-followup/affine-complements/RODRIGUES_NILPOTENCE_TRANSFER_AND_HC4_LINEARIZED_TAIL.md",
+    "retained source pin jacobian-followup/affine-complements/NORMAL_FORM_COVERAGE_AND_COMMON_LEADING_DIVISORS.md",
+    "retained source pin jacobian-followup/moment-vanishing-audit/RODRIGUES_LENGTH17_AND_GLOBAL51.md",
+    "retained source pin jacobian-followup/moment-vanishing-audit/rodrigues_local_length17_certificate/certificate_data.json",
+    "actual plane mixed Hessian entry 0",
+    "actual plane mixed Hessian entry 1",
+    "actual plane mixed Hessian entry 2",
+    "actual normal Hessian entry",
+    "actual lower plane Hessian block",
+    "lower plane Hessian block has unit determinant",
+    "plane coefficient formula from actual adjugate",
+    "actual first-normal multiplier",
+    "actual trace parameter counts",
+    "finite plane equation recipe count",
+    "source degree of universal plane formula at most ten",
+    "degree ten actual square face",
+    "degree eight actual square face modulo J1",
+    "degree seven actual product face modulo J2",
+    "quartic evaluation determinant",
+    "quartic actual coefficient recovery",
+    "every quartic coefficient recovered over Q",
+    "square-zero evaluation pigeonhole exponent",
+    "integrated T5 differentiates to eight yQ",
+    "actual cubic product second factor",
+    "actual triangular square relation q3",
+    "actual triangular square relation q2",
+    "actual triangular square relation q1",
+    "actual triangular square relation q0",
+    "cone ideal coefficient unit (0, 0, 4)",
+    "cone ideal coefficient unit (0, 0, 5)",
+    "cone ideal coefficient unit (0, 1, 3)",
+    "cone ideal coefficient unit (0, 1, 4)",
+    "cone ideal coefficient unit (0, 2, 2)",
+    "cone ideal coefficient unit (0, 2, 3)",
+    "cone ideal coefficient unit (0, 3, 1)",
+    "cone ideal coefficient unit (0, 3, 2)",
+    "cone ideal coefficient unit (0, 4, 1)",
+    "cone ideal coefficient unit (0, 5, 0)",
+    "cone ideal coefficient unit (1, 0, 3)",
+    "cone ideal coefficient unit (1, 0, 4)",
+    "cone ideal coefficient unit (1, 1, 2)",
+    "cone ideal coefficient unit (1, 1, 3)",
+    "cone ideal coefficient unit (1, 2, 1)",
+    "cone ideal coefficient unit (1, 2, 2)",
+    "cone ideal coefficient unit (1, 3, 1)",
+    "cone ideal coefficient unit (1, 4, 0)",
+    "cone ideal coefficient unit (2, 0, 2)",
+    "cone ideal coefficient unit (2, 0, 3)",
+    "cone ideal coefficient unit (2, 1, 1)",
+    "cone ideal coefficient unit (2, 1, 2)",
+    "cone ideal coefficient unit (2, 2, 1)",
+    "cone ideal coefficient unit (2, 3, 0)",
+    "cone ideal coefficient unit (3, 0, 1)",
+    "cone ideal coefficient unit (3, 0, 2)",
+    "cone ideal coefficient unit (3, 1, 1)",
+    "cone ideal coefficient unit (3, 2, 0)",
+    "cone ideal coefficient unit (4, 0, 1)",
+    "cone ideal coefficient unit (4, 1, 0)",
+    "uniform lifted ideal-power exponent",
+    "retained nonzero first-jet point",
+    "forced first-normal jet degree bound",
+    "actual Frechet derivative formula",
+    "actual fiber coefficient Jacobian full column rank",
+    "actual fiber retained minor nonzero",
+    "first-jet determinant is desired constant",
+    "retained actual second-jet obstruction",
+    "forced formal second coefficient outside degree-five box",
+    "tail and reduced-body obligations remain open"
+  ],
+  "elapsed_seconds": 0.4645685220020823,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "99f225b43a88398d298b10923d550b47e938d9dba4675efa8895a58cb83a411f",
+  "checker_sha256": "1095273758e69b322966404544e68702b7adaf4f574393ac8147f352e57a6ec8",
+  "context_sha256": "80b5739b4aa6010ae3cc04ebb2fc70bb4628215c7e86cfd2ae0138413b506faf",
+  "trace_parameter_count": 56,
+  "cone_ideal_generator_count": 30,
+  "complementary_trace_parameter_count": 26,
+  "uniform_actual_cone_ideal_nilpotence_bound": 4096,
+  "quartic_evaluation_determinant": "47775744",
+  "quartic_evaluation_grid": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      0
+    ]
+  ],
+  "exact_fiber_bad_parameter_exponents": [
+    [
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      5
+    ],
+    [
+      0,
+      1,
+      3
+    ],
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      0,
+      3,
+      1
+    ],
+    [
+      0,
+      3,
+      2
+    ],
+    [
+      0,
+      4,
+      1
+    ],
+    [
+      0,
+      5,
+      0
+    ],
+    [
+      1,
+      0,
+      3
+    ],
+    [
+      1,
+      0,
+      4
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      1,
+      3
+    ],
+    [
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      1,
+      3,
+      1
+    ],
+    [
+      1,
+      4,
+      0
+    ],
+    [
+      2,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      3
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      2
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      2,
+      3,
+      0
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      3,
+      0,
+      2
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      0
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      4,
+      1,
+      0
+    ]
+  ],
+  "exact_fiber_selected_row_exponents": [
+    [
+      0,
+      0,
+      5
+    ],
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      0,
+      2,
+      4
+    ],
+    [
+      0,
+      3,
+      2
+    ],
+    [
+      0,
+      4,
+      1
+    ],
+    [
+      0,
+      4,
+      2
+    ],
+    [
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      5,
+      1
+    ],
+    [
+      0,
+      6,
+      0
+    ],
+    [
+      1,
+      0,
+      4
+    ],
+    [
+      1,
+      1,
+      3
+    ],
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      1,
+      3,
+      1
+    ],
+    [
+      1,
+      4,
+      0
+    ],
+    [
+      1,
+      4,
+      1
+    ],
+    [
+      1,
+      5,
+      0
+    ],
+    [
+      2,
+      0,
+      3
+    ],
+    [
+      2,
+      1,
+      2
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      2,
+      3,
+      0
+    ],
+    [
+      2,
+      3,
+      1
+    ],
+    [
+      2,
+      4,
+      0
+    ],
+    [
+      3,
+      0,
+      2
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      0
+    ],
+    [
+      3,
+      2,
+      1
+    ],
+    [
+      3,
+      3,
+      0
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      4,
+      1,
+      0
+    ]
+  ],
+  "exact_fiber_minor_determinant": "15623077943671371475765857728041204218037948559592050069897372818650327629060876955568769278672896/625",
+  "fixed_Tstar_complement_fiber_length": 1,
+  "known_second_normal_y7_coefficient": "459/500",
+  "actual_relations_not_radical_or_initial_quotient": true,
+  "normal_tail_power_containment_proved": false,
+  "reduced_polynomial_body_proved": false,
+  "HC4_termination_proved": false,
+  "global_coverage_proved": false,
+  "new_external_theorem_imports": [],
+  "registered_predecessor_checkers_replayed": [],
+  "full_goal_complete": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

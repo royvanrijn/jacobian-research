@@ -1,0 +1,68 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Reflexive pencil descent removes global free frames on a plane target",
+  "newly_used_primary_inputs": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0B3N",
+      "retained_file": "stacks-reflexive-surface-0B3N.html",
+      "sha256": "3bebe4c6882a06627316480b963ff9f47ac06ce387a7b85725c02cc2fcecd691",
+      "exact_import": "Stacks Lemma 31.13.15, tag 0B3N: on a regular scheme of dimension at most two a coherent module is reflexive if and only if it is finite locally free.",
+      "role": "Make the finite reflexive rank-two pencil lattice locally free on Spec C[T,V]. The nowhere-zero constant section then has invertible quotient.",
+      "portions_inspected": "Complete lemma statement and proof on the primary tag page; hypotheses checked in the canonical proof.",
+      "theorem_fully_reproved": false,
+      "new_source_bytes_downloaded": true
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00R4",
+      "retained_file": "stacks-pencil-flatness-00R4.html",
+      "sha256": "cc7f1947308a6c8db0d6d0d406bfecc4ef2363d710f694b1cc5fe9bb0ba8219f",
+      "exact_import": "Stacks Lemma 10.128.1, tag 00R4: a local map of Noetherian local rings is flat when the source is regular, the target is Cohen-Macaulay and the target dimension is the source dimension plus the closed-fibre dimension.",
+      "role": "Prove flatness of the ambient suspension observable map at height-two target points from its regular sequence and expected dimension. Nonempty closed fibres give faithfulness separately.",
+      "portions_inspected": "Complete lemma statement and proof on the primary tag page; hypotheses checked in the canonical proof.",
+      "theorem_fully_reproved": false,
+      "new_source_bytes_downloaded": true
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/PARAMETER_STABILITY_AND_MOVING_MULTIPLIERS.md": "7769fd6859c95184591b3a9fa7baf1c92e381ef78b21fe767df1eaa4d586faf9",
+    "jacobian-followup/hc4-triangular-graphs/verify_parameter_stability.py": "002bddd83f246f93db5604dd5d99d50bec99bee3b65af37dc981ae5329368977",
+    "jacobian-followup/hc4-triangular-graphs/receipt-parameter-stability.json": "d8fe0b40ef4e8501b692123364dd2890ac995687ec7e271ddcb841b8257bad70",
+    "jacobian-followup/hc4-triangular-graphs/sources/parameter-stability-import.json": "c414b74ffa39998bc81c980b322349322d2d0207ece06e49dc7f7cf92c0370cb",
+    "jacobian-followup/hc4-triangular-graphs/MULTIVARIABLE_SUSPENSIONS_AND_FIXED_MULTIPLIERS.md": "66a879db85c96347f7483c55c4c873792e50073090e2eddee64a03535911fb92",
+    "jacobian-followup/hc4-triangular-graphs/verify_multivariable_suspensions.py": "5c92e0dcc1724d24256f626e4d8d4804af3d5cd38caa48e8a2df737c3f1ce9ab",
+    "jacobian-followup/hc4-triangular-graphs/receipt-multivariable-suspensions.json": "09c6198f338652b12b03fddd0dc6ecd7233d577feca65cf4141ed2bdcf89f348",
+    "jacobian-followup/hc4-triangular-graphs/sources/multivariable-suspension-import.json": "488b35f1d0a1e3be8c58db812389785e9e3bdeaeb028a668e4d002ff9b7a182c",
+    "jacobian-followup/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md": "3a10bcc44350ae155d73f1786dbd1dc081c86b20d469e7efd0edfa408981462f",
+    "jacobian-followup/hc4-triangular-graphs/SMOOTH_INFINITY_OUTPUT_OBSTRUCTION.md": "7ee0a9b293ca95a8f037cfdef0b5c0630f0fb169ec728df5b18c4dc2fb5638db",
+    "jacobian-followup/hc4-triangular-graphs/LEADING_FIBRE_UNIT_GATE.md": "1d054ba8762ea657be879b6e3568aa58c9ccb65e14ab642d45e0865e8f6382f0",
+    "jacobian-followup/hc4-triangular-graphs/sources/stacks-reflexive-surface-0B3N.html": "3bebe4c6882a06627316480b963ff9f47ac06ce387a7b85725c02cc2fcecd691",
+    "jacobian-followup/hc4-triangular-graphs/sources/stacks-pencil-flatness-00R4.html": "cc7f1947308a6c8db0d6d0d406bfecc4ef2363d710f694b1cc5fe9bb0ba8219f"
+  },
+  "direct_proof_arguments": [
+    "faithful flatness and integral generic height-one fibres make every target prime pull back to a prime divisor with the same scalar valuation",
+    "one relative derivation bounds all coefficients of the rank-two pencil lattice inside a fixed finite free fractional lattice",
+    "normality identifies the lattice with the intersection of its height-one localizations, proving reflexivity by the double-dual criterion",
+    "the constant section is nowhere zero by faithful flatness, its quotient is invertible and the factorial target trivializes it",
+    "the resulting primitive coordinate is transcendental on every geometric generic height-one fibre and gives global polynomial saturation",
+    "the generic component-pencil proof needs only a generic filtration; saturation and the smooth unit derivative close the carried Keller pair",
+    "all disjoint moving multipliers satisfying the exact content-level criterion are faithfully flat and have the needed generic filtration and zero source-fixed classes"
+  ],
+  "common_global_free_filtration_required": false,
+  "global_monic_presentation_required": false,
+  "faithful_flatness_required": true,
+  "geometric_height_one_integrality_required": true,
+  "generic_positive_filtration_required": true,
+  "reflexive_base_dimension_at_most_two_required": true,
+  "all_primitive_disjoint_moving_multipliers_covered": true,
+  "exact_closed_content_levels_covered": true,
+  "quillen_suslin_imported": false,
+  "parameter_cover_source_assumed_affine_plane": false,
+  "composite_content_levels_asserted_covered": false,
+  "overlapping_variables_asserted_covered": false,
+  "full_splitting_group_preservation_inferred": false,
+  "arbitrary_observable_existence_asserted": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

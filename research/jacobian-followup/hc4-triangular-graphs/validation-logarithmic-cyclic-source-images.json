@@ -1,0 +1,64 @@
+{
+  "outcome": "PASS",
+  "claim": "HC4MYMX0",
+  "metadata_groups": [
+    "Registered MX0 frozen proof/checker/context/receipt:62 supporting controls35 algebraic",
+    "Six retained claims12 proof-checker pins plus2 existing primary pins;no new import/cache/download",
+    "First failed checker/prereg retained;distinct second PASS;written proof/context unchanged;no registered mathematical replay",
+    "Parent full trace goal open;PF142 minimal mixed retirement retained;no target pair/Picard-to-trace/assurance upgrade",
+    "New method and all changed-parent lesson/work fingerprints current",
+    "Root and related work records retain original full target,prior history and deferred review",
+    "All generated navigation matches repository renderer output",
+    "Known unrelated missing-artifact baseline[2,2,1,0];affected whitespace clean"
+  ],
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 515, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 504, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "check_count": 62,
+  "algebraic_controls": 35,
+  "retained_claims": 6,
+  "retained_pins": 12,
+  "retained_primary_pins": 2,
+  "preregistration_outcomes": [
+    "FAIL",
+    "PASS"
+  ],
+  "registered_mathematical_checkers_executed": [],
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "frozen_files_sha256": {
+    "research/jacobian-followup/hc4-triangular-graphs/LOGARITHMIC_DESCENT_AND_CYCLIC_EXACT_SOURCE_IMAGES.md": "7ae5a64bbb585dc486238e9dcff447d8bcb2979196c469fffca70c3180a025bd",
+    "research/jacobian-followup/hc4-triangular-graphs/verify_logarithmic_cyclic_source_images.py": "963a4b3f5300578a3c6a4a0d0be1a6ba5220da8059636e2c24abcef693c1c81d",
+    "research/jacobian-followup/hc4-triangular-graphs/sources/logarithmic-cyclic-source-images-context.json": "c39318ab4338b81bf44646aab3a7ca87dbf97ce4515dcea1d49af7bdd5c34eac",
+    "research/jacobian-followup/hc4-triangular-graphs/receipt-logarithmic-cyclic-source-images.json": "0f03ecc58bb6230cba2ee4cb328c3a75d310f3bbce49ac2860e2caeb8e8d962a",
+    "tmp/logarithmic-cyclic-source-images-preregistration.json": "deebf45b23ce3df78cbef556fb64aaf7812a6597b2f3ce0f62ea5633d36c5b43",
+    "tmp/logarithmic-cyclic-source-images-attempt2-preregistration.json": "1bd9f40cf6be4546bc73a911b3eb26ca706168bc9bb8588dc93a6e26189d1bd1",
+    "tmp/logarithmic-cyclic-source-images-attempt1/verify_logarithmic_cyclic_source_images.py": "0147e3126b962ca166dce8f5955a52f4c7cb643904bec0464f2143cb25a12163",
+    "tmp/logarithmic-cyclic-source-images-attempt1/preregistration.json": "e7165cfd9760d4fa2bf38268bd92b5cb8356a041a1339f21d3a92f0119a7120b"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "original_goal_complete": false,
+  "user_cleared_autonomous_goal": true
+}

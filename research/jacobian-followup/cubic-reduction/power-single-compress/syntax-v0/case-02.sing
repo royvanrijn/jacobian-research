@@ -1,0 +1,20 @@
+ring r=0,(u1,u2,u3,u4,u5),dp;
+option(redSB);
+ideal I=u1*u2*u3,u1*u3*u4,u1*u3*u5,u2*u4*u5 - u4^2*u5,u2^2*u4 - u4^3,u2^2*u4 + u2*u4*u5/3 - u4^2*u5/3 - u4*u5^2,u2*u3*u4 - u3*u4^2,u2*u3*u4 - u3^2*u4,u1^2*u2 - u1^2*u4 + u2^2*u4 + u2*u3^2 - u2*u3*u4 - u2*u5^2,u2^2*u4 - u2*u4^2,u1^3 + u1^2*u2/9 - u1^2*u3 - 2*u1^2*u4/9 + u1*u2^2/9 - u1*u5^2,u1^2*u4 - u1*u4^2,u1^2*u2 - 2*u1^2*u4 + u1*u2^2,u1^2*u3 - u1*u3^2,u1^2*u2 - u1^2*u4 + u1*u2^2 - u1*u2*u4;
+ideal J; ideal G;
+J=I,-u1^2*u2/2 + u1^2*u4/2 + u1*u2*u5/2 - u1*u4*u5/2 - 1,-u1^2*u2/2 + u1^2*u4/2 - u1*u2*u5/2 + u1*u4*u5/2 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:77:78");}else{print("OPEN:77:78");print(G);}
+J=I,-u2^2*u4/27 - u2*u4*u5/9 + u4^3/27 + u4^2*u5/9 - 1,u2*u4*u5/9 - u4^2*u5/9 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:17:55");}else{print("OPEN:17:55");print(G);}
+J=I,u2*u3*u4/2 + u3*u4*u5/2 - 1,u2*u3*u4/2 - u3*u4*u5/2 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:35:72");}else{print("OPEN:35:72");print(G);}
+J=I,-u1^2*u3 + u3^3 - u3*u5^2 - 1,u1^2*u3 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:27:46");}else{print("OPEN:27:46");print(G);}
+J=I,-u1^2*u2/3 + 2*u1^2*u4/3 - u1*u2^2/3 - 1,-u1^2*u2/3 + 2*u1^2*u4/3 - u1*u2^2/3 - 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:73:76");}else{print("OPEN:73:76");print(G);}
+quit;

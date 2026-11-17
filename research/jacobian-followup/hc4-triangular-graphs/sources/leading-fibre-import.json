@@ -1,0 +1,31 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Leading-fibre gate: Riemann-Hurwitz and an excluded boundary shortcut",
+  "sources": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "retained_file": "stacks-leading-riemann-hurwitz-0C1B.html",
+      "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+      "role": "Proof input: characteristic-zero Riemann-Hurwitz, Section 53.12 and Lemmas 53.12.2/4. The finite-affine-line constant-field descent consequence is proved in the note."
+    },
+    {
+      "url": "https://aimspress.com/aimspress-data/math/2024/11/PDF/math-09-11-1467.pdf",
+      "retained_file": "tian-sun-weak-jacobian-2024-audited.pdf",
+      "sha256": "934b254d40ebc73b1396f730bc49cb617879ccae46be62d92d7232b8846ec1b3",
+      "role": "Audited but excluded as a proof input: Theorem 2.8 proof on printed pages 30409-30410 identifies every boundary puncture with the fibre over infinity without establishing finiteness of the affine curve map. A Gm-to-A1 control disproves that implication from etaleness alone. No conclusion of this article is imported."
+    }
+  ],
+  "primary_Riemann_Hurwitz_statement_reviewed": true,
+  "affine_line_constant_field_descent_proved_in_note": true,
+  "localized_unit_lattice_and_resultant_gate_proved_in_note": true,
+  "Riemann_Hurwitz_theorem_fully_reproved": false,
+  "Tian_Sun_2024_claims_imported": false,
+  "all_Keller_component_fibres_asserted_irreducible": false,
+  "Kaliman_target_coordinate_reduction_imported": false,
+  "Kaliman_1993_primary_access": "The AMS primary PDF route returned HTTP 403 in this audit. Its proof is not claimed inspected or imported; the fixed-observable fibre hypothesis remains explicit.",
+  "arbitrary_etale_affine_curve_maps_asserted_finite": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

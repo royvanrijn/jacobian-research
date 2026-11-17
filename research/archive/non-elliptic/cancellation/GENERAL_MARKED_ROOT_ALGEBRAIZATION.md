@@ -560,7 +560,12 @@ For each existing degree-four and degree-five root family:
 This distinguishes a new cover from a representation of the old
 single-root field.
 
-### Package C -- the \(A_4\) orientation tower
+### Package C -- the \(A_4\) orientation tower (construction objective closed)
+
+[KMFI66/KIG28](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+close this A4-preserving affine-space Keller construction in every
+dimension/action, subject to the internal proof. The following tower-ledger
+questions are retained as historical local geometry, not realization gates.
 
 Use the subgroup structure
 

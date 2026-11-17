@@ -1,0 +1,147 @@
+{
+  "METHOD-HAAR-CANONICAL-BOUNDARY-REDUCTION-AND-LOWEST-WEIGHT-20261116": {
+    "id": "METHOD-HAAR-CANONICAL-BOUNDARY-REDUCTION-AND-LOWEST-WEIGHT-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Remove ALL compact-middle cohomology canonically while preserving the exact ACTUAL unit obstruction",
+    "when": "Seeking the full exceptional all-phase theorem after global Haar-orbit splitting;avoid independent compact-middle or quadratic-log campaigns.",
+    "use": "Deleting ANY divisor from H2-acyclic X leaves W2H2 zero. NONPROPER Leray/MHS over the graph base proves global compact-middle invariants zero,hence W4B=L directsum canonical nontrivial C_f. Quotient B/C_f has only level-one types after twist2 and N2=0 at EVERY P1 puncture. In actual M,the image I is semisimple with no trivial factors,so unit survives and Hom(M/I,trivial)=Hom(M,trivial). Eventual-pure full safety is EXACTLY unit splitting in this reduced boundary quotient. Reduction and reduced GLOBAL semisimplicity reflect EVERY H. With fibre GrW3H2 zero,reduced source semisimplicity is also NECESSARY and gives the intrinsic all-composite dichotomy.",
+    "avoid": "Using projective-only Leray for this nonproper map;confusing global invariants with local/finite-cover invariants;assuming actual quotient is a Hodge or scalar-function submodule;deleting literal quadratic coefficients from original periods;calling all reduced coefficients algebraic;making local N2 imply global radical square zero;inferring pure-composite existence from a nonsplit source.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. The compact-middle removal is universal,but reduced genus/graph unit coupling is not proved zero. Deep Ivorra-Morel nonproper Leray is imported with exact hypotheses,not independently reproved. Full original quadratic logs can remain. Reduced source semisimplicity necessary only with genus weight3 absent. No algebraic1-motive/curve producer,all-ring topological promotion or universal machine verification;review deferred.",
+    "reopen_when": "Prove the rational unit splits in M_boundary for EVERY actual exceptional eventually pure phase,or realize a genuine original failure. Work on the level-one genus/graph coupling;do not reopen compact-middle or log-squared calculations as independent targets. Preserve EVERY original marker,primitive branch,H degree and actual orbit.",
+    "claims": [
+      "GHAARLOWFIX20261116",
+      "GHAARLEVELONE20261116",
+      "GHAARLEVELRECOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_reduction_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_reduction.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "lowest weight",
+      "nonproper Leray",
+      "canonical boundary quotient",
+      "level one",
+      "unit splitting",
+      "polynomial recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARLOWFIX20261116": "175fa090f01d81eb",
+      "GHAARLEVELONE20261116": "0971dc423388739b",
+      "GHAARLEVELRECOMP20261116": "1a9c298cd0104c5a"
+    }
+  },
+  "METHOD-HAAR-GLOBAL-ORBIT-SPLITTING-AND-BOUNDARY-RADICAL-20261116": {
+    "id": "METHOD-HAAR-GLOBAL-ORBIT-SPLITTING-AND-BOUNDARY-RADICAL-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use GLOBAL splitting INSIDE the physical Haar orbit and isolate the boundary-lowering radical",
+    "when": "Seeking a full all-degree exceptional theorem after local xi/beta and Jordan bounds,without discarding nonsemisimple or high-rank compact-middle cases.",
+    "use": "Actual Cauchy FUNCTIONS before polynomial quotient form a finite quotient of full complement connection,dual to the entire Haar orbit W. A GLOBAL invariant ambient lift INSIDE W gives a rational retraction;PP0 and actual indecomposability make eventual-pure safety equivalent to its existence and to dimW1. Global full-complement semisimplicity suffices and reflects EVERY polynomial H before purity. Pure geometric weight grades are globally semisimple,so the monodromy algebra radical J strictly lowers weights4/5/6 and J3=0. Failure is exactly actual rational unit u in JM. Generic fibre H2 PURE weight2,of any rank,closes ALL eventual-pure composites and all original markers.",
+    "avoid": "Confusing global semisimplicity with each local matrix;using a full-extension fixed lift outside W or separate local lifts;quotienting Cauchy functions by polynomials before preserving the rational unit;using ordinary generic GM/exponential localization;equating global radical with local N or coefficient-state ideal;inferring failure from large boundary ranks or universal safety from compact-middle size3 alone.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. Global actual unit splitting and generic H2 purity are not universal. A failure needs higher fibre weights3/4 AND nonsplit mixed-weight GLOBAL monodromy putting u in JM. Actual pure safe phases have unbounded such boundary spaces. Full source semisimplicity sufficient not necessary;actual quotient need not inherit a Hodge structure. Deep Deligne semisimplicity is imported,not independently reproved. No all-ring topological promotion,general monodromy/orbit producer or universal machine proof; review deferred. ALL compact-middle cohomology can now be removed canonically for EVERY phase:global W2 fibre invariants vanish,so W4B=L directsum nontrivial C_f. In actual M,image I has no trivial factors and Hom(M/I,trivial)=Hom(M,trivial),retaining unit. The geometric boundary source has level-one types and N2=0 at every P1 puncture. Full original quadratic logs may remain,but are not an independent global unit target. Reduction reflects every H;with genus weight3 absent,reduced source semisimplicity is also necessary.",
+    "reopen_when": "Prove every actual exceptional eventually pure phase has u outside JM,equivalently a GLOBAL invariant lift INSIDE its physical orbit,or realize an admissible failure. Retain all branches and H degrees;global complement semisimplicity now reflects H,and pure-middle arbitrary-rank systems are closed. Remaining geometry is actual mixed-weight boundary coupling,not arbitrary compact-middle monodromy. Use the exact canonical level-one actual quotient to target genus/graph unit splitting in EVERY phase. Do not assume scalar-function realization of that quotient,or confuse global/local/finite-cover invariants.",
+    "claims": [
+      "GHAARGLOBALSPLIT20261116",
+      "GHAARGLOBRECOMP20261116",
+      "GHAARBOUNDARYRAD20261116",
+      "GHAARLOWFIX20261116",
+      "GHAARLEVELONE20261116",
+      "GHAARLEVELRECOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/GLOBAL_HAAR_ORBIT_SPLITTING_AND_BOUNDARY_RADICAL.md",
+      "jacobian-followup/moment-vanishing-audit/haar_global_radical_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_reduction_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_global_radical.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "global monodromy",
+      "Haar orbit",
+      "rational unit splitting",
+      "Jacobson radical",
+      "pure middle cohomology",
+      "polynomial recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARGLOBALSPLIT20261116": "e09d8f73543f3de1",
+      "GHAARGLOBRECOMP20261116": "b97deb153eb5fcf3",
+      "GHAARBOUNDARYRAD20261116": "17d9b9a5bac2f582",
+      "GHAARLOWFIX20261116": "175fa090f01d81eb",
+      "GHAARLEVELONE20261116": "0971dc423388739b",
+      "GHAARLEVELRECOMP20261116": "1a9c298cd0104c5a"
+    }
+  },
+  "METHOD-HAAR-PRIMITIVE-VARIATION-20261116": {
+    "id": "METHOD-HAAR-PRIMITIVE-VARIATION-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Control all polynomial composites by the actual primitive Haar variations; purity reflection is unnecessary",
+    "when": "Handling every recomposition degree after canonical primitive factorization in the complete exceptional MZ problem.",
+    "use": "Retain every induced primitive branch and its physical Haar continuation. After L turns the actual composite tube variation projects to S_(L/e_a)(T_a)d_a. On the eventually pure locus, all-marker safety iff every primitive eigenvalue-1 variation vanishes. If finite local monodromy on the full Haar orbit span W_f is semisimple at 1, all eventually pure composites are safe, and unique-centre reflection classifies them exactly as H(c)=0, or none when no safe centre exists.",
+    "avoid": "Assuming a pure composite has a pure primitive factor; forgetting root permutations or branches; substituting an arbitrary fixed lift; testing only generic fibre monodromy; applying the safety equivalence without eventual purity; confusing finite unit jets with a uniform original-marker cutoff.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. The theorem is valid in every f and H degree but its uniform W_f condition is not established for every exceptional primitive factor. It controls all original markers and all composites without primitive purity reflection. The abstract ramification countercontrol is not an exceptional phase. This is complex topology, not an all-ring promotion. Universal proofs remain internal; review deferred. Mixed Hodge weights now confine the actual variation, when fibre1 is semisimple, to the invariant Tate boundary-graph part W_-4 H_2(F), excluding the genus graded piece. The symmetric weight4 parity step is essential before M=W. The same actual safe biform family has unbounded invariant Tate dimension>=2k/N-1, so even this smaller space cannot be eliminated uniformly on the entire pure locus. Control its ACTUAL coupling. The semisimple-fibre1 coefficient is now an EXACT algebraic double-residue pairing in ONE finite field for ALL original Q. A finite original-marker basis separates every Tate vector. Unit Wronskians suffice only when nonzero; actual pure safe exceptional phases have unbounded unit-invisible dimension>=2k/N-2, and a genuine nonpure SL2 square composite hides a marked logarithm from the unit. Algebraic coefficients are not algebraic full resolvents. Under semisimple fibre1 the projected Haar class is now proved lift INDEPENDENT and zero iff the FULL complement is semisimple at1; canonical zero-residue data give a finite algebraic test with supplied systems. Exact polynomial ramification contributes c_a/e_a on every branch, with no cross-root cancellation. A nonzero general connecting delta certifies failure; zero delta does not solve nonsemisimple actual-lift motion. This refines, rather than universally removes, the earlier actual-lift warning. The INTRINSIC coinvariant obstruction is now Tate WITHOUT fibre semisimplicity: its connecting delta factors through J=image(local invariants -> top Tate weight), not necessarily the entire graph space. Zero xi leaves the canonical ACTUAL residual beta in F1/ker(A-I). General recomposition sends xi to the tuple of primitive classes by branch SUM with factor1 and no cancellation; the old semisimple fixed-vector1/e rule is unchanged.",
+    "reopen_when": "Prove the actual W_f eigenvalue-1 condition for EVERY remaining canonical primitive factor, or directly prove the induced branch variations zero for every eventually pure H(f). Alternatively realize a genuine exceptional phase with nonzero branch variation and an original marked tail. Preserve the full quotient finish line and the primitive original-unit defect; do not replace it with a growing sector campaign or external review. Retain the Tate graph coupling and all nonsemisimple fibre1 cases, as well as every primitive branch and composite. Do not substitute universal zero graph space for cycle vanishing. Retain the full original residue pairing and actual rational graph vector; neither universal unit cyclicity nor its reflection through polynomial recomposition is available. In the semisimple case control the INTRINSIC full complement extension, without a separate Haar-selection task. Keep actual selection in nonsemisimple delta0 cases, and all canonical-lattice/branch hypotheses. Retain both general gates delta_J and residual beta. Intrinsic polynomial transfer no longer needs semisimplicity; actual residual selection still does.",
+    "claims": [
+      "GHAARRECOMPCYCLE20261116",
+      "GHAARUNARYCLASS20261116",
+      "GHAARTATEVAR20261116",
+      "GHAARTATEEXCESS20261116",
+      "GHAARALGLOG20261116",
+      "GHAARUNITWRONSK20261116",
+      "GHAARINTRINSICMON20261116",
+      "GHAARRAMCLASS20261116",
+      "GHAARUNIPTATE20261116",
+      "GHAARCOINRECOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/PRIMITIVE_HAAR_VARIATION_AND_ALL_POLYNOMIAL_COMPOSITES.md",
+      "jacobian-followup/moment-vanishing-audit/haar_recomposition_cycle_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/HODGE_WEIGHTS_OF_HAAR_VARIATION_AND_BOUNDARY_GRAPHS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_tate_variation_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_HAAR_LOG_COEFFICIENTS_AND_ORIGINAL_RESIDUES.md",
+      "jacobian-followup/moment-vanishing-audit/haar_residue_log_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/INTRINSIC_COMPLEMENT_MONODROMY_AND_RAMIFIED_HAAR_CLASSES.md",
+      "jacobian-followup/moment-vanishing-audit/haar_intrinsic_monodromy_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/UNIPOTENT_HAAR_EXTENSIONS_AND_GENERAL_RECOMPOSITION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_unipotent_tate_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_recomposition_cycle.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "primitive phase",
+      "recomposition",
+      "Haar cycle",
+      "monodromy orbit",
+      "integer logarithm",
+      "safe centre",
+      "all original markers",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARRECOMPCYCLE20261116": "9f1d6d39e81738b8",
+      "GHAARUNARYCLASS20261116": "14db022d3d5fc667",
+      "GHAARTATEVAR20261116": "301f19b8f57316d6",
+      "GHAARTATEEXCESS20261116": "d9f841a2ac792ad0",
+      "GHAARALGLOG20261116": "cd7569b60951cbdc",
+      "GHAARUNITWRONSK20261116": "94ad1de97154fa76",
+      "GHAARINTRINSICMON20261116": "23244e827e978126",
+      "GHAARRAMCLASS20261116": "30c2261beb87d3d2",
+      "GHAARUNIPTATE20261116": "cf1e470fffbb3735",
+      "GHAARCOINRECOMP20261116": "29e2ca93100a1729"
+    }
+  }
+}

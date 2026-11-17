@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "canonical_proof": "GAP_THREE_POLAR_AND_CONTINUANT.tex",
+  "uniform_real_rooted_polar_companion_proved": true,
+  "companion_roots_simple_below_minus1_proved": true,
+  "generic_inverse_transfer_to_real_rooted_individual_section_refuted": true,
+  "nonzero_pivot_backward_coprimality_criterion_proved": true,
+  "positive_weights_required_for_coprimality": false,
+  "zero_pivot_fail_closed": true,
+  "native_prime_squarefree_residual_shortcut_refuted": true,
+  "uniform_pivot_nonvanishing_proved": false,
+  "uniform_section_existence_proved": false,
+  "all_index_gap_three_SFC_closed": false,
+  "general_FC_closed": false,
+  "unrestricted_SFC_closed": false,
+  "finite_extrapolation": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "source_scope": "Iskander-Jain arXiv v1 Theorems1.1/1.2 and finite/infinite zero-free hypotheses inspected. The needed polar lemma is reproved independently. No full-paper/dependency or priority audit.",
+  "boundary": "The arithmetic-progression Gamma structure still needs a valid transfer or uniform nonzero pivots. Generic companion counterexample is not a Gamma moment pair or SFC counterexample."
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-11-16",
+  "new_external_theorem_import": false,
+  "retained_primary_rechecked": {
+    "url": "https://arxiv.org/html/1911.00628v1",
+    "scope": "TheoremA reduced/set-theoretic inverse image and Section2.2 reducible union convention; reuse existing PF123 cached bytes and original import assurance. No fresh download or independent reproof."
+  },
+  "new_proof_scope": "Apply the retained smooth inverse-image theorem to the wholly missed divisor union. First prove full boundary images avoid lower Q-Cartier critical axes, so curves are whole A1s, not punctured images. After smoothness, local finite map with only one critical axis has form (u^e,v); a small uniformization group preserving that map must be trivial. This proves unit residues and zero excess across the whole packet.",
+  "transfer_boundary": "Canonical maximal source image T=Spec(R intersect E) is entire eta V with disjoint missed lines removed. General source image can still miss FINITE POINTS inside T. Removing those curves does not replace finite normal M or full original N.",
+  "replica_boundary": "MR0 supplies actual surjectivity and h-fibre multiplicities. PF139 mixed fibre forces two distinct values with at least two multiplicity types, hence chiT>=3. Apply PF129 ONLY to original entire eta V, then exact Euler drop gives quotient b>=r+5. No equation treats selected T as a finite cover.",
+  "shared_MS0_credit": "Read complete first-source-derivative/finite-lattice theorem. Its maximal additive open is distinct; neither its first derivative integrality nor full trace-lattice invariance is made automatic here.",
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false
+}

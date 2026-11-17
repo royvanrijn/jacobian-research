@@ -1,0 +1,157 @@
+{
+  "status": "FROZEN_BEFORE_AUGMENTATION_TEST",
+  "targets": [
+    "13a_129",
+    "13a_135",
+    "13a_136",
+    "13a_137",
+    "13a_194",
+    "13a_196",
+    "13a_197",
+    "13a_198",
+    "13a_233",
+    "13a_234",
+    "13a_239",
+    "13a_242",
+    "13a_243",
+    "13a_244",
+    "13a_253",
+    "13a_265"
+  ],
+  "selected_kernels": [
+    {
+      "name": "13a_129",
+      "source_group": "13a_129:double-cover:f20387cb8a04584a49102645c46f8d249de88b45b660b1e8a6c0d9ab511a436f",
+      "orbit_indices": [
+        976
+      ]
+    },
+    {
+      "name": "13a_135",
+      "source_group": "13a_135:double-cover:443e684321d35ab56c4f85cca93f43cd6588aa0b9fa9a8a97a32116ac92c9355",
+      "orbit_indices": [
+        498,
+        968
+      ]
+    },
+    {
+      "name": "13a_136",
+      "source_group": "13a_136:double-cover:790b66ad18a87a7b63d56a9709a3ada56898749eadb42cc345d961960e058d67",
+      "orbit_indices": [
+        976
+      ]
+    },
+    {
+      "name": "13a_137",
+      "source_group": "13a_137:double-cover:194a594217c576f9883f9984fcee65dd7c736b67f842ecddc0105168ffc4213e",
+      "orbit_indices": [
+        463,
+        972
+      ]
+    },
+    {
+      "name": "13a_194",
+      "source_group": "13a_194:double-cover:8f20b4d6fcdea28196e23d19f52d069ce087375d9c676b262d9c71fb8d4bff8b",
+      "orbit_indices": [
+        969
+      ]
+    },
+    {
+      "name": "13a_196",
+      "source_group": "13a_196:double-cover:1edb84cd205778067912609d0c3fb0e88d4afe3fd0da6f7c6db2fbc71fd3c94c",
+      "orbit_indices": [
+        495,
+        969
+      ]
+    },
+    {
+      "name": "13a_197",
+      "source_group": "13a_197:double-cover:843f560260ccf4a8a955727aff83a94c35c4037ba690b098977116af4e1e9515",
+      "orbit_indices": [
+        974
+      ]
+    },
+    {
+      "name": "13a_198",
+      "source_group": "13a_198:double-cover:01a6ac91d361c46d6331b9a3943769430c6889315e53c40c51357e333201c73d",
+      "orbit_indices": [
+        495,
+        974
+      ]
+    },
+    {
+      "name": "13a_233",
+      "source_group": "13a_233:double-cover:1008875ffdc421b8b7d90cef07875a4071669ebe2058ce746beec6acd553fb58",
+      "orbit_indices": []
+    },
+    {
+      "name": "13a_234",
+      "source_group": "13a_234:double-cover:54f7779c05e0d190ad7fd85b7989bc0a6802c04f37d37963c3e714a30a8d68dd",
+      "orbit_indices": [
+        35
+      ]
+    },
+    {
+      "name": "13a_239",
+      "source_group": "13a_239:double-cover:0a2687d1b20f43d588efff462bd223138168fc47cb250dbeafec33c99f4d7f50",
+      "orbit_indices": []
+    },
+    {
+      "name": "13a_242",
+      "source_group": "13a_242:double-cover:c6612e68c7705f82d976a0434bcf01689234d1389513e6149b1d8d8a20f2232a",
+      "orbit_indices": [
+        495
+      ]
+    },
+    {
+      "name": "13a_243",
+      "source_group": "13a_243:double-cover:db1349e7b2c9c5d3925825bb2538cdb1e47039ec83a7e666f068fdf1d4ed0b1b",
+      "orbit_indices": []
+    },
+    {
+      "name": "13a_244",
+      "source_group": "13a_244:double-cover:4a2fbf080966887f08969d6d76dcd3182291c10ffd35e0fb7f9df1c3a8549f01",
+      "orbit_indices": [
+        35
+      ]
+    },
+    {
+      "name": "13a_253",
+      "source_group": "13a_253:double-cover:deea0e9026e22f63d163963623b2e8a58fe6788489346cd53e063d79650e39ce",
+      "orbit_indices": []
+    },
+    {
+      "name": "13a_265",
+      "source_group": "13a_265:double-cover:a2b67fb255ee889bbf6f2d3390f37d8a142f3bbadc0021f306f4b690512d98f1",
+      "orbit_indices": [
+        479
+      ]
+    }
+  ],
+  "selection": "All A5 quotient-kernel classes on exactly the retained first16 knots, with no adaptive map or target replacement",
+  "motivation": "For p!=5, b1(H;Fp)-b1(G;Fp)>=5 forces rank G>=3 via the four-dimensional augmentation module; this is stronger than the previous absolute Schreier threshold7",
+  "cover_degree": 5,
+  "maximum_covers": 16,
+  "maximum_matrix_rows": 70,
+  "maximum_matrix_columns": 61,
+  "limits": {
+    "total_seconds": 60,
+    "seconds_per_cover": 10,
+    "checkpoint_after_each_cover": true
+  },
+  "characteristics": "All primes except5, classified by integral Smith factors; no blind prime sweep",
+  "controls": [
+    "F2",
+    "C3*C3",
+    "C3*C3*C3"
+  ],
+  "input_sha256": {
+    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
+    "joint_a5_results.json": "6f2be622f64e34ba47127f5126f56bcc0f72cc98d4c29bb6d69e8a28ef623a9f",
+    "joint_a5_verification.json": "0e5f6d5cbb5e7d5974557e64a1c952b513c17cb80108cf7883c42dcca982bb99",
+    "joint_a5_catalogue.json": "3e0e2aff354d05c5916a675668d5f6072d562bb77b91810f45b789d0f9e0a6ee",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "branched_cover_verification.json": "5dcfded79c85542440c05c81167643643c171ec8d33c2abc2667b2e58d5d0340"
+  },
+  "scope": "One representative per Aut(A5) orbit suffices: all order12 A4 subgroups are conjugate in A5 and Aut(A5) permutes them. This does not test other finite targets, actions or cover degrees."
+}

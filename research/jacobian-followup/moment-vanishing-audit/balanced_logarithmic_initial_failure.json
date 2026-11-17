@@ -1,0 +1,9 @@
+{
+  "terminal": true,
+  "completed": false,
+  "timed_out": false,
+  "exit_code": 1,
+  "input": "balanced_logarithmic_initial_input.py",
+  "input_sha256": "a720976e7bd6b09afcb41a126432db5711b35474267078c93a73e9945769149d",
+  "failure": "Laurent parser did not extract y from a factored parameter denominator; SymPy PolynomialError before the support checks. Correct by cancelling the rational expression and extracting its monomial y denominator, without changing the proposed mathematics."
+}

@@ -1,0 +1,72 @@
+{
+  "as_of": "2026-11-16",
+  "sources": [
+    {
+      "path": "sources/fibre-transitive-spin/van-der-blij-1959.pdf",
+      "bytes": 273756,
+      "sha256": "1ea182d404c3b1388fbdb46112bea669d0ec19e8d9471e9a44b42f6145ce0858",
+      "title": "F. van der Blij, An invariant of quadratic forms mod 8, Indagationes Math.21(1959),291-293",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/vdb.pdf",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        1,
+        2,
+        3
+      ],
+      "used_statement": "Entire three-page primary paper read, including Gauss-sum derivation, Theorem2 and unimodular specialization (7): characteristic square congruent signature mod8. Apply zero characteristic vector to positive definite even unimodular source lattice. Classical theorem imported, not independently reproved by finite matrix tests."
+    },
+    {
+      "path": "sources/full-peripheral-linking/clay-watson-11032358v1.html",
+      "bytes": 283210,
+      "sha256": "4cdff593b461694b0282f57a1726aa78b7795c31757a2b0182c25e4a1baf998f",
+      "title": "Clay--Watson, On cabled knots, Dehn surgery, and left-orderable fundamental groups, arXiv1103.2358v1",
+      "url": "https://arxiv.org/html/1103.2358v1",
+      "used_statement": "Retained PF101 primary Section2 full root-amalgam and BOTH preferred meridian/longitude words. Same signed Bezout convention and exact primary hash. No new classification of Seifert fillings/orderability/Puiseux realizations imported.",
+      "fresh_source_audit": false,
+      "prior_complete_passage_audit_retained": "PF2RULED101"
+    },
+    {
+      "path": "../jc2-omitted-divisors/GLOBAL_LEDGER.md",
+      "bytes": 10046,
+      "sha256": "e3b6fa954ecd67be226a87992707a67207aa377c37bad6257b5f3cbad0476ecb",
+      "used_statement": "Full canonical all-prime finite-flat Euler ledger and residue/Riemann-Hurwitz refinement read this turn. Mathematical dependencies PF2OMIT2/PF2OMIT6; budget rederived explicitly in new note, including unknown unramified primes and nonnegative finite excess."
+    },
+    {
+      "path": "../jc2-omitted-divisors/RESIDUE_LEDGER.md",
+      "bytes": 9598,
+      "sha256": "b0c207ffb6fe2736937cdabffb1fe5266f4f936143b2807dd571f431df08a8b9",
+      "used_statement": "Full canonical all-prime finite-flat Euler ledger and residue/Riemann-Hurwitz refinement read this turn. Mathematical dependencies PF2OMIT2/PF2OMIT6; budget rederived explicitly in new note, including unknown unramified primes and nonnegative finite excess."
+    },
+    {
+      "path": "../jc2-omitted-divisors/sources/orevkov-three-sheeted-jc86.pdf",
+      "bytes": 163174,
+      "sha256": "f80d4a7d7e04987ce7dece58f33cff20ea9210183ca3ffd4488f39a2147532db",
+      "url": "https://www.math.univ-toulouse.fr/~orevkov/jc86.pdf",
+      "used_statement": "Retained Orevkov primary Lemma4.2 Euler/length identity and Section4 Stein comparison, primary pages7-9 audited in PF2OMIT6; no fresh visual audit claimed. Our full residue budget is explicitly rederived from finite-flat Euler/Riemann-Hurwitz in new note.",
+      "fresh_source_audit": false,
+      "prior_complete_PDF_pages_audited": [
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "new_written_unbounded_proofs": [
+    "fibre-transitive cyclic cable cover kernel presentation, torsion-free rank2 H1, integral pushforward image and actual port basis",
+    "all-parameter full-shear correction, integral closed-H1/core transfer and arbitrary-length telescoping",
+    "smooth whole-source even-unimodular rank and global degree/residue budget",
+    "all-length natural8 smooth and regular24 normal ACTUAL colored-cover exclusions with arbitrary extra unramified primes",
+    "finite degree8 polynomial countercontrol, exact branch factor, integrality and wrong-source diagnosis"
+  ],
+  "imported_not_independently_reproved": [
+    "van der Blij characteristic/signature congruence",
+    "retained plane boundary geometry and actual marked radial-end comparison PF2BATT1/PF98"
+  ],
+  "independent_new_fibre_cover_proof": true,
+  "nonzero_shear_diagonal_correction_required": true,
+  "exact_previous_Zt_certificates_retained": true,
+  "all_cable_representations_claimed": false,
+  "topological_cover_existence_preserved": true,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true
+}

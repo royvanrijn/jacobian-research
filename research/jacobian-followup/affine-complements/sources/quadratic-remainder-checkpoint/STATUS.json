@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-11-14",
+  "state": "historical checkpoint after user priority changed to all-degree geometry",
+  "process_status": "terminal",
+  "exact_I3_reduction_rules_retained": true,
+  "modular_probe_is_not_characteristic_zero_exclusion": true,
+  "quadratic_M_stratum_excluded": false,
+  "next_action": "Do not deepen this calculation by default; prioritize the global boundary topology and finite-map obstruction"
+}

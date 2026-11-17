@@ -1,0 +1,62 @@
+{
+  "claim": "FIRQUANTDENSITY20261116",
+  "canonical_proof": "QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex",
+  "scope": "E_m(X)<<_m X/(log X)^(1/50), every FIXED positive integer m, ordinary Gamma shape1",
+  "analytic_inputs": [
+    {
+      "source": "Filaseta-Rocks2016 Theorem1.1",
+      "scope": "irreducible offset lower density>=log2 for each fixed m",
+      "imported_not_reproved": true
+    },
+    {
+      "source": "Filaseta-Rocks2016 equation3.1 page6",
+      "scope": "sum of consecutive gaps exceeding sqrt(left endpoint), with left endpoint<=Z, is O(Z^(2/3)); yields O(X^(2/3)) exceptional indices",
+      "imported_not_reproved": true
+    },
+    {
+      "source": "Matomaki-Radziwill2016 Annals Theorem1 pp1015-1016",
+      "scope": "uniform h,delta,f; delta1/4 and H~X^(1/8) give X^(799/800)*(log X)^(1/3)+X/(log X)^(1/50)",
+      "imported_not_reproved": true
+    },
+    {
+      "source": "classical PNT, retained DLMF27.2.3 reference",
+      "scope": "eventual smooth-indicator mean1-log2, fixed m; no quantitative PNT error needed",
+      "imported_not_reproved": true
+    }
+  ],
+  "local_valuation": "m*b+floor(m*c/p)+indicator(c>i), j=b*p+c; m*n<p^2",
+  "local_occupancy": "degree=u+v*p, 2u<=i,2v<=a; no parity assumption",
+  "preceding_prime_local_condition": "q_n>m*max(1,n-q_n); eventually follows from n-q_n<sqrt(n)",
+  "H": "floor(X^(1/8))",
+  "Y": "sqrt(2mX)",
+  "MR_delta": "1/4",
+  "resultant_bound": "abs R_i<=i^i*(2^i*(m*i)!)^(2i-1)",
+  "bad_prime_union": "sum over i in I_H of primes p>Y dividing R_i, n=i modp; O_m(X^(7/8))",
+  "error_terms": [
+    "X/(log X)^(1/50)",
+    "X^(799/800)*(log X)^(1/3)",
+    "X^(7/8)",
+    "X^(2/3)",
+    "X^(1/8)"
+  ],
+  "dyadic_summation": "split at sqrt(X), freeze log on the larger blocks, bound the lower indices trivially",
+  "old_density_one_theorem_used": false,
+  "bootstrap_used": false,
+  "parity_used": false,
+  "all_offsets_squarefree_assumed": false,
+  "all_C_smoothness_required": false,
+  "uniform_in_growing_m_claimed": false,
+  "numerical_constant_or_starting_threshold_extracted": false,
+  "all_index_SFC_closed": false,
+  "finite_controls_are_not_numerical_density_evidence": true,
+  "source_pins": {
+    "sources/filaseta-rocks-2016-published.pdf": "a2885c831b92a23ce45695df9f40840246a6f26b5a0a5ce4820c54be7f227255",
+    "sources/filaseta-rocks-2016-published.txt": "363739660206e2438c136fe0e2c84cead7757f779e140c97884d1fa4f5e6185d",
+    "sources/matomaki-radziwill-2016-annals.pdf": "7e8c60df09683c4eb762d521e583cdabef70b5366bc98953159e471ebb02496a",
+    "sources/matomaki-radziwill-2016-annals.txt": "25cff55da449bd4651394615f5d6886272d233ae430a2ca49661c306c18b9cb9"
+  },
+  "provenance": "User-supplied quantitative refinement checked and integrated; no novelty claim",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

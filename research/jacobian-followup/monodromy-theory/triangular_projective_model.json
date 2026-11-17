@@ -1,0 +1,222 @@
+{
+  "claims": [
+    "KMFI128",
+    "KMFI129"
+  ],
+  "previous_goal_turn": "progress: KMFI127 closed all homogeneous one-curved-coordinate architectures in every rank and degree.",
+  "affine_eigen_coordinate_lemma": {
+    "hypotheses": "B=Dv,W=v-x cyclic; dq*B=c*dq; W(q)=(c-1)q, constantc",
+    "conclusion": "q affine",
+    "triangularity_required": false,
+    "cyclicity_countercontrol_retained": true
+  },
+  "homogeneous_architecture": "V0=u^d,Vi=ai*u^(d-1)*xi+u^d*Qi(x1/u,...,x(i-1)/u); eachdegQi<=d",
+  "unbounded_result": "all Qi affine under normalization and full rank; primitive degree1",
+  "all_ranks_and_all_scalar_and_direction_degrees": true,
+  "repeated_and_resonant_parameters_covered": true,
+  "generic_whole_identity_controls": [
+    {
+      "r": 2,
+      "d": 3,
+      "Q": [
+        "q"
+      ],
+      "last_graph": "p1 + q/(a0 - 1)",
+      "last_adjugate": "a0**2*p1 - a0*p1 + a0*q",
+      "Krylov_unit_column_identity": true
+    },
+    {
+      "r": 3,
+      "d": 2,
+      "Q": [
+        "q",
+        "p1**2*r + p1*q"
+      ],
+      "last_graph": "p2 + (-a0*p1**2*r - a1*p1**2*r - a1*p1*q + 2*p1**2*r - 2*p1*q*r + p1*q - q**2)/(a0*a1 - a0 - a1**2 + a1)",
+      "last_adjugate": "-a0*a1**2*p2 + a0*a1*p1**2*r + a0*a1*p2 + a1**3*p2 + a1**2*p1**2*r + a1**2*p1*q - a1**2*p2 - 2*a1*p1**2*r + 2*a1*p1*q*r - a1*p1*q + a1*q**2",
+      "Krylov_unit_column_identity": true
+    },
+    {
+      "r": 4,
+      "d": 3,
+      "Q": [
+        "q",
+        "p1**3*r + p1**2*r + p1*q",
+        "p1**3*r + p1*p2*q + p1*q + p2**2*r"
+      ],
+      "last_graph": "p3 + (-2*a0*a1*p1**3*r - a0*a1*p1*p2*q - a0*a1*p2**2*r + 2*a0*a2*p1**3*r - a0*a2*p2**2*r + 2*a0*p1**4*q*r + 4*a0*p1**3*p2*r**2 + a0*p1**3*q*r + 2*a0*p1**2*p2*r**2 + a0*p1*p2*q + 2*a0*p2**2*r - a1*a2*p1**3*r - a1*a2*p1*q + a1*a2*p2**2*r + 3*a1*p1**3*r - 3*a1*p1**2*q*r + a1*p1*p2*q + a1*p1*q - a1*p2*q**2 - a1*q**2 + a2**2*p1**3*r + a2**2*p1*p2*q + a2**2*p1*q + a2**2*p2**2*r + a2*p1**4*q*r + 2*a2*p1**3*p2*r**2 + a2*p1**3*q*r - 3*a2*p1**3*r + 2*a2*p1**2*p2*r**2 + a2*p1**2*q**2 + 3*a2*p1**2*q*r + 2*a2*p1*p2*q*r - 2*a2*p1*p2*q - a2*p1*q - 2*a2*p2**2*r + a2*p2*q**2 + a2*q**2 - 3*p1**4*q*r - 6*p1**3*p2*r**2 + 3*p1**3*q**2*r - 2*p1**3*q*r + 6*p1**2*p2*q*r**2 - 4*p1**2*p2*r**2 + 2*p1**2*q**2*r - p1**2*q**2 + 4*p1*p2*q*r**2 - 2*p1*p2*q*r + p1*q**3 + 2*p2*q**2*r)/(a0*a1*a2 - a0*a1 - a0*a2**2 + a0*a2 - a1*a2**2 + a1*a2 + a2**3 - a2**2)",
+      "last_adjugate": "a0*a1*a2**2*p3 - 2*a0*a1*a2*p1**3*r - a0*a1*a2*p1*p2*q - a0*a1*a2*p2**2*r - a0*a1*a2*p3 - a0*a2**3*p3 + 2*a0*a2**2*p1**3*r - a0*a2**2*p2**2*r + a0*a2**2*p3 + 2*a0*a2*p1**4*q*r + 4*a0*a2*p1**3*p2*r**2 + a0*a2*p1**3*q*r + 2*a0*a2*p1**2*p2*r**2 + a0*a2*p1*p2*q + 2*a0*a2*p2**2*r - a1*a2**3*p3 - a1*a2**2*p1**3*r - a1*a2**2*p1*q + a1*a2**2*p2**2*r + a1*a2**2*p3 + 3*a1*a2*p1**3*r - 3*a1*a2*p1**2*q*r + a1*a2*p1*p2*q + a1*a2*p1*q - a1*a2*p2*q**2 - a1*a2*q**2 + a2**4*p3 + a2**3*p1**3*r + a2**3*p1*p2*q + a2**3*p1*q + a2**3*p2**2*r - a2**3*p3 + a2**2*p1**4*q*r + 2*a2**2*p1**3*p2*r**2 + a2**2*p1**3*q*r - 3*a2**2*p1**3*r + 2*a2**2*p1**2*p2*r**2 + a2**2*p1**2*q**2 + 3*a2**2*p1**2*q*r + 2*a2**2*p1*p2*q*r - 2*a2**2*p1*p2*q - a2**2*p1*q - 2*a2**2*p2**2*r + a2**2*p2*q**2 + a2**2*q**2 - 3*a2*p1**4*q*r - 6*a2*p1**3*p2*r**2 + 3*a2*p1**3*q**2*r - 2*a2*p1**3*q*r + 6*a2*p1**2*p2*q*r**2 - 4*a2*p1**2*p2*r**2 + 2*a2*p1**2*q**2*r - a2*p1**2*q**2 + 4*a2*p1*p2*q*r**2 - 2*a2*p1*p2*q*r + a2*p1*q**3 + 2*a2*p2*q**2*r",
+      "Krylov_unit_column_identity": true
+    },
+    {
+      "r": 5,
+      "d": 2,
+      "Q": [
+        "q",
+        "p1**2*r + p1*q",
+        "p1*p2*q + p1*q + p2**2*r",
+        "p1*p3*q + p1*q + p3**2*r"
+      ],
+      "last_graph": "p4 + (-a0*a1*a2*p1*p3*q - a0*a1*a2*p3**2*r - a0*a1*a3*p3**2*r + a0*a1*p1**2*p2*q**2 + a0*a1*p1*p2**2*q*r + 2*a0*a1*p1*p2*p3*q*r + a0*a1*p1*p3*q + 2*a0*a1*p2**2*p3*r**2 + 2*a0*a1*p3**2*r + a0*a2*a3*p1*p3*q + a0*a2*a3*p3**2*r + a0*a3**2*p3**2*r + a0*a3*p1*p2**2*q*r - a0*a3*p1*p3*q + 2*a0*a3*p2**2*p3*r**2 - 2*a0*a3*p3**2*r - a0*p1**4*q**2*r - 2*a0*p1**3*p2*q*r**2 - 2*a0*p1**3*p3*q*r**2 - 4*a0*p1**2*p2*p3*r**3 - a0*p1**2*p2*q**2 - 2*a0*p1*p2**2*q*r - 2*a0*p1*p2*p3*q*r - 4*a0*p2**2*p3*r**2 - a1*a2*a3*p1*q + a1*a2*a3*p3**2*r + a1*a2*p1*p3*q + a1*a2*p1*q - a1*a2*p3*q**2 - a1*a2*q**2 + a1*a3**2*p1*p3*q + a1*a3**2*p1*q + a1*a3**2*p3**2*r + a1*a3*p1**2*q**2 - a1*a3*p1*p2**2*q*r + 2*a1*a3*p1*p3*q*r - 2*a1*a3*p1*p3*q - a1*a3*p1*q - 2*a1*a3*p2**2*p3*r**2 - 2*a1*a3*p3**2*r + a1*a3*p3*q**2 + a1*a3*q**2 - a1*p1**2*p2*q**2 - a1*p1**2*q**2 - 2*a1*p1*p2*p3*q*r + a1*p1*p2*q**3 - 2*a1*p1*p3*q*r + a1*p1*q**3 + 2*a1*p2*p3*q**2*r + 2*a1*p3*q**2*r + a2*a3**2*p1*q - a2*a3**2*p3**2*r - a2*a3*p1*p3*q - a2*a3*p1*q + a2*a3*p3*q**2 + a2*a3*q**2 - a3**3*p1*p3*q - a3**3*p1*q - a3**3*p3**2*r - a3**2*p1**2*p2*q**2 - a3**2*p1**2*q**2 - a3**2*p1*p2**2*q*r - 2*a3**2*p1*p2*p3*q*r - 2*a3**2*p1*p3*q*r + 2*a3**2*p1*p3*q + a3**2*p1*q - 2*a3**2*p2**2*p3*r**2 + 2*a3**2*p3**2*r - a3**2*p3*q**2 - a3**2*q**2 - a3*p1**4*q**2*r - 2*a3*p1**3*p2*q*r**2 - 2*a3*p1**3*p3*q*r**2 - a3*p1**3*q**3 - 4*a3*p1**2*p2*p3*r**3 - 2*a3*p1**2*p2*q**2*r + 2*a3*p1**2*p2*q**2 - 2*a3*p1**2*p3*q**2*r + a3*p1**2*q**2 + 2*a3*p1*p2**2*q*r - 4*a3*p1*p2*p3*q*r**2 + 4*a3*p1*p2*p3*q*r - a3*p1*p2*q**3 + 2*a3*p1*p3*q*r - a3*p1*q**3 + 4*a3*p2**2*p3*r**2 - 2*a3*p2*p3*q**2*r - 2*a3*p3*q**2*r + 2*p1**4*q**2*r + 4*p1**3*p2*q*r**2 + 4*p1**3*p3*q*r**2 - 2*p1**3*q**3*r + p1**3*q**3 + 8*p1**2*p2*p3*r**3 - 4*p1**2*p2*q**2*r**2 + 2*p1**2*p2*q**2*r - 4*p1**2*p3*q**2*r**2 + 2*p1**2*p3*q**2*r - p1**2*q**4 - 8*p1*p2*p3*q*r**3 + 4*p1*p2*p3*q*r**2 - 2*p1*p2*q**3*r - 2*p1*p3*q**3*r - 4*p2*p3*q**2*r**2)/(a0*a1*a2*a3 - a0*a1*a2 - a0*a1*a3**2 + a0*a1*a3 - a0*a2*a3**2 + a0*a2*a3 + a0*a3**3 - a0*a3**2 - a1*a2*a3**2 + a1*a2*a3 + a1*a3**3 - a1*a3**2 + a2*a3**3 - a2*a3**2 - a3**4 + a3**3)",
+      "last_adjugate": "-a0*a1*a2*a3**2*p4 + a0*a1*a2*a3*p1*p3*q + a0*a1*a2*a3*p3**2*r + a0*a1*a2*a3*p4 + a0*a1*a3**3*p4 + a0*a1*a3**2*p3**2*r - a0*a1*a3**2*p4 - a0*a1*a3*p1**2*p2*q**2 - a0*a1*a3*p1*p2**2*q*r - 2*a0*a1*a3*p1*p2*p3*q*r - a0*a1*a3*p1*p3*q - 2*a0*a1*a3*p2**2*p3*r**2 - 2*a0*a1*a3*p3**2*r + a0*a2*a3**3*p4 - a0*a2*a3**2*p1*p3*q - a0*a2*a3**2*p3**2*r - a0*a2*a3**2*p4 - a0*a3**4*p4 - a0*a3**3*p3**2*r + a0*a3**3*p4 - a0*a3**2*p1*p2**2*q*r + a0*a3**2*p1*p3*q - 2*a0*a3**2*p2**2*p3*r**2 + 2*a0*a3**2*p3**2*r + a0*a3*p1**4*q**2*r + 2*a0*a3*p1**3*p2*q*r**2 + 2*a0*a3*p1**3*p3*q*r**2 + 4*a0*a3*p1**2*p2*p3*r**3 + a0*a3*p1**2*p2*q**2 + 2*a0*a3*p1*p2**2*q*r + 2*a0*a3*p1*p2*p3*q*r + 4*a0*a3*p2**2*p3*r**2 + a1*a2*a3**3*p4 + a1*a2*a3**2*p1*q - a1*a2*a3**2*p3**2*r - a1*a2*a3**2*p4 - a1*a2*a3*p1*p3*q - a1*a2*a3*p1*q + a1*a2*a3*p3*q**2 + a1*a2*a3*q**2 - a1*a3**4*p4 - a1*a3**3*p1*p3*q - a1*a3**3*p1*q - a1*a3**3*p3**2*r + a1*a3**3*p4 - a1*a3**2*p1**2*q**2 + a1*a3**2*p1*p2**2*q*r - 2*a1*a3**2*p1*p3*q*r + 2*a1*a3**2*p1*p3*q + a1*a3**2*p1*q + 2*a1*a3**2*p2**2*p3*r**2 + 2*a1*a3**2*p3**2*r - a1*a3**2*p3*q**2 - a1*a3**2*q**2 + a1*a3*p1**2*p2*q**2 + a1*a3*p1**2*q**2 + 2*a1*a3*p1*p2*p3*q*r - a1*a3*p1*p2*q**3 + 2*a1*a3*p1*p3*q*r - a1*a3*p1*q**3 - 2*a1*a3*p2*p3*q**2*r - 2*a1*a3*p3*q**2*r - a2*a3**4*p4 - a2*a3**3*p1*q + a2*a3**3*p3**2*r + a2*a3**3*p4 + a2*a3**2*p1*p3*q + a2*a3**2*p1*q - a2*a3**2*p3*q**2 - a2*a3**2*q**2 + a3**5*p4 + a3**4*p1*p3*q + a3**4*p1*q + a3**4*p3**2*r - a3**4*p4 + a3**3*p1**2*p2*q**2 + a3**3*p1**2*q**2 + a3**3*p1*p2**2*q*r + 2*a3**3*p1*p2*p3*q*r + 2*a3**3*p1*p3*q*r - 2*a3**3*p1*p3*q - a3**3*p1*q + 2*a3**3*p2**2*p3*r**2 - 2*a3**3*p3**2*r + a3**3*p3*q**2 + a3**3*q**2 + a3**2*p1**4*q**2*r + 2*a3**2*p1**3*p2*q*r**2 + 2*a3**2*p1**3*p3*q*r**2 + a3**2*p1**3*q**3 + 4*a3**2*p1**2*p2*p3*r**3 + 2*a3**2*p1**2*p2*q**2*r - 2*a3**2*p1**2*p2*q**2 + 2*a3**2*p1**2*p3*q**2*r - a3**2*p1**2*q**2 - 2*a3**2*p1*p2**2*q*r + 4*a3**2*p1*p2*p3*q*r**2 - 4*a3**2*p1*p2*p3*q*r + a3**2*p1*p2*q**3 - 2*a3**2*p1*p3*q*r + a3**2*p1*q**3 - 4*a3**2*p2**2*p3*r**2 + 2*a3**2*p2*p3*q**2*r + 2*a3**2*p3*q**2*r - 2*a3*p1**4*q**2*r - 4*a3*p1**3*p2*q*r**2 - 4*a3*p1**3*p3*q*r**2 + 2*a3*p1**3*q**3*r - a3*p1**3*q**3 - 8*a3*p1**2*p2*p3*r**3 + 4*a3*p1**2*p2*q**2*r**2 - 2*a3*p1**2*p2*q**2*r + 4*a3*p1**2*p3*q**2*r**2 - 2*a3*p1**2*p3*q**2*r + a3*p1**2*q**4 + 8*a3*p1*p2*p3*q*r**3 - 4*a3*p1*p2*p3*q*r**2 + 2*a3*p1*p2*q**3*r + 2*a3*p1*p3*q**3*r + 4*a3*p2*p3*q**2*r**2",
+      "Krylov_unit_column_identity": true
+    }
+  ],
+  "nonlinear_feedback_controls": [
+    {
+      "name": "coupled_quadratic",
+      "r": 4,
+      "d": 2,
+      "weights": [
+        3,
+        4,
+        5
+      ],
+      "Q": [
+        "0",
+        "v**2",
+        "v*w + w**2"
+      ],
+      "condition": "1"
+    },
+    {
+      "name": "early_curvature_with_diagonal_spectator",
+      "r": 4,
+      "d": 2,
+      "weights": [
+        3,
+        4,
+        5
+      ],
+      "Q": [
+        "0",
+        "v**2",
+        "0"
+      ],
+      "condition": "(lam - 4)**4"
+    },
+    {
+      "name": "repeated_last",
+      "r": 4,
+      "d": 2,
+      "weights": [
+        3,
+        4,
+        4
+      ],
+      "Q": [
+        "0",
+        "v**2",
+        "v*w"
+      ],
+      "condition": "(lam - 4)**3"
+    },
+    {
+      "name": "repeated_earlier",
+      "r": 4,
+      "d": 2,
+      "weights": [
+        3,
+        3,
+        5
+      ],
+      "Q": [
+        "0",
+        "v**2",
+        "v*w"
+      ],
+      "condition": "1"
+    },
+    {
+      "name": "coupled_cubic_resonance_a_equals_d",
+      "r": 4,
+      "d": 3,
+      "weights": [
+        3,
+        4,
+        5
+      ],
+      "Q": [
+        "0",
+        "v**3",
+        "v*w**2"
+      ],
+      "condition": "1"
+    },
+    {
+      "name": "coupled_lower_terms",
+      "r": 4,
+      "d": 3,
+      "weights": [
+        3,
+        4,
+        6
+      ],
+      "Q": [
+        "1",
+        "v**2 + v + 1",
+        "v*w + v + w**2 + 1"
+      ],
+      "condition": "1"
+    },
+    {
+      "name": "rank5_coupled",
+      "r": 5,
+      "condition": "1"
+    }
+  ],
+  "affine_coupled_full_rank_survivor": {
+    "r": 3,
+    "d": 2,
+    "F": "(u+v)*(3*u+2*v+w)",
+    "h": "2*u",
+    "linear_frame": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ]
+    ],
+    "rankDX": 3,
+    "whole_Jacobian": "gam^3"
+  },
+  "nonlinear_coupled_rank_deficient_control": {
+    "r": 4,
+    "d": 2,
+    "weights": [
+      2,
+      2,
+      2
+    ],
+    "Q": [
+      "0",
+      "v^2",
+      "v*w"
+    ],
+    "F": "1",
+    "rankDX": 3,
+    "whole_Jacobian": "gam^4"
+  },
+  "degree11_groups": [
+    "S11",
+    "A11",
+    "regular C11"
+  ],
+  "nonconstant_projective_diagonal_classified": false,
+  "arbitrary_nontriangular_directions_classified": false,
+  "new_abstract_action_claimed": false,
+  "actual_PSL11_input_supplied": false,
+  "absolute_exceptional_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

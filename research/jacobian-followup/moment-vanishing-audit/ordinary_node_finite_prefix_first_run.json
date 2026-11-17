@@ -1,0 +1,11 @@
+{
+  "terminal": true,
+  "completed": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "seconds": 3.949,
+  "input": "ordinary_node_finite_prefix_first_input.py",
+  "input_sha256": "f602defac102555fd4bd4f0537b86f8e41f929ab11baf290e63fde819b307023",
+  "stdout_sha256": "0c8c3b77fe405b9b9767dac5e28d69a028ff94a64b3b44441bb49690c456883b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

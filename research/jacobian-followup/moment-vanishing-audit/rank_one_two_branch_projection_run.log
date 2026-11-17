@@ -1,0 +1,55 @@
+Two Hensel branches,Jacobian,phase and Hermite determinant passed
+Full rank-five model regular_b1 passed
+Full rank-five model constant_q passed
+Full rank-five model double_branch passed
+{
+  "completed": true,
+  "checker_sha256": "9431b3907c0974a81be7b29f8e01cf56a6bf1bf9227482ce2d58ec6b3b61bf47",
+  "certificate_sha256": "238789f16580cc884de590057e804cff13fa4e75cbaf2592a84cc1d9e213bf60",
+  "runtime_seconds": 26.361,
+  "sympy_version": "1.14.0",
+  "formal_branches": 2,
+  "branch_identity_order": 4,
+  "comparison_q_order": 2,
+  "full_rank_five_models": 3,
+  "exact_original_twisted_seed_identities": 15,
+  "full_scalar_cofactor_relations": 3,
+  "scalar_coefficient_checks": 18,
+  "degree6_common_scalar_q_power": 38,
+  "degree6_gate": 57,
+  "rank_one_full_gate": 57,
+  "conic_gate_retained": 94,
+  "full_W_linear_gate": 94,
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 94,
+    "cusp": 92,
+    "transverse": 94,
+    "tangent": 92,
+    "triangle": 94,
+    "concurrent": 92,
+    "repeated": 92
+  },
+  "global_sufficient_pure_prefix": 94,
+  "odd_sufficient_pure_prefix_unchanged": 94,
+  "homogeneous_sufficient_pure_prefix_unchanged": 94,
+  "least_prefix_interval": [
+    20,
+    94
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    94
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    94
+  ],
+  "least_prefix_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "boundary": "Finite two-branch Hensel/Jacobian identities,exact full phase rescaling and joint source bounds,leading Hermite comparison determinant,15 original twisted seed identities,three full scalar relations/18 coefficients and all rank/row/valuation arithmetic. Models include constant q and merging quadratic roots. Universal formal finite quotient/regular branch connection,complementary-minor induction,joint-grade specialization,polynomial extension and complete analytic/frame cover remain independently unreviewed written mathematics. No old checker main,radical search,external package or fresh literature review."
+}

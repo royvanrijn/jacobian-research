@@ -1,0 +1,341 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\vp}{v_p}
+\title{A prime-power two-term Strong Factorial theorem via Newton residuals}
+\author{Internal written proof and exact certificates; no priority claim}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Result.}
+For every prime $p$, $a\ge1$, $d=p^a$ and complex $A,B$, the nonzero
+polynomial $A+BY^d$ has a nonzero factorial moment in every pair of
+consecutive positive exponents. More generally this holds for the
+$\operatorname{Gamma}(\alpha,1)$ functional with integer $1\le\alpha\le d$.
+Thus the two-term SFC case is proved for every prime-power exponent,
+uniformly in the starting index. The proof is not an irreducibility-density
+argument and does not infer an all-index result from a finite test.
+
+\textbf{Credit and scope.}
+The factorial-unit congruence and Newton-polygon vertices are in
+\href{sources/rocks-2015-author-preprint.pdf}{Rocks's 2015 author preprint,
+Lemma 3.8 and Proposition 3.22}. That source explicitly states the
+constant-plus-square case in Theorem 3.24. Here the residual polynomial
+on \emph{each} edge is computed, and its squarefreeness is used with the
+adjacent-moment derivative identity from
+\href{SFC_WINDOWS_AND_ROCKS_AUDIT.tex}{the preceding audit}.
+The source's full final 2017 journal text remains unavailable; no novelty
+or priority claim is made. This is an internal proof, not outside review
+or formal verification. General non-prime-power exponents and unrestricted
+SFC remain open here.
+
+\section{Why residual squarefreeness excludes a square factor}
+Normalize the valuation on $\Q_p$ by $\vp(p)=1$.
+For $P(X)=\sum c_kX^k$ with $c_0c_n\ne0$, use the lower Newton polygon
+with coordinates $(k,\vp(c_k))$. Let an edge run from $(L,V)$ with slope
+$h/e$ in lowest terms, $e>0$, and horizontal length $me$.
+Its normalized residual polynomial is
+\[
+ R(T)=\sum_{j=0}^{m}
+ \overline{\frac{c_{L+je}}{p^{V+jh}}}\,
+ \overline{\frac{c_L}{p^V}}^{-1}T^j\in\F_p[T].       \tag{1}
+\]
+Terms strictly above the edge contribute zero; the two end coefficients
+are nonzero. All coefficients of factors in $\Q_p[X]$ have integer
+valuations, which is important in the following argument.
+
+\begin{lemma}\label{lem:residual}
+If every edge residual (1) is squarefree, then $P$ is squarefree in
+$\Q_p[X]$.
+\end{lemma}
+\begin{proof}
+For a rational slope $\lambda=h/e$ define the weighted minimum
+$w_\lambda(H)=\min_k(\vp(h_k)-\lambda k)$.
+The weighted initial form of a product is the product of the weighted
+initial forms. One can verify this in a valued extension with an element
+$\pi$ satisfying $\pi^e=p$: substitute $X=\pi^{-h}Z$, normalize by the
+smallest coefficient valuation, and reduce. The nonzero initial
+polynomials multiply over the residue field, an integral domain, so their
+product does not vanish. This proves both multiplicativity and the usual
+addition of Newton edges, without a factor-lifting assumption.
+
+For a polynomial over $\Q_p$, two indices attaining this same weighted
+minimum differ by a multiple of $e$, because $\gcd(h,e)=1$ and their
+coefficient valuations are integers. After removing its lowest monomial,
+its initial form therefore has the form $R_H(Z^e)$, up to a nonzero scalar,
+and (1) is exactly the polynomial $R_H(T)$, normalized at its constant.
+Residual polynomials consequently multiply, up to nonzero constants, at
+any fixed slope. A nontrivial edge gives a positive-degree residual with
+nonzero constant coefficient.
+
+If $P=H^2J$ for a nonconstant $H\in\Q_p[X]$, then $H(0)\ne0$.
+Choose any edge of $H$. Multiplicativity makes its slope an edge slope of
+$P$, and its positive-degree residual occurs squared in the residual of
+$P$ at that slope. This contradicts the hypothesis. Hence $P$ has no
+nonconstant square divisor.
+\end{proof}
+
+This lemma uses residual polynomials, not just distinct edge slopes.
+Repeated factors on one edge are precisely why a list of slopes alone is
+insufficient. No separability of $Z^e$ in characteristic $p$ is assumed;
+the polynomial being tested is in the variable $T$, before replacing it
+by $Z^e$. In our application $e$ is often divisible by $p$.
+
+\section{A falling-factorial unit deformation theorem}
+For an integer $n\ge1$ put $n^{\underline k}=n!/(n-k)!$.
+Suppose $u_0,\ldots,u_n\in\Z_p^\times$ and
+\[
+ u_k/u_0\equiv\gamma^k\pmod p
+ \qquad(\gamma\in\F_p^\times).
+\]
+Define $P_n(X)=\sum_{k=0}^n n^{\underline k}u_kX^k$.
+Write $n=\sum_i a_i p^i$, with $0\le a_i<p$; set
+$s_i=\sum_{j\le i}a_jp^j$ and $s_{-1}=0$.
+Only indices $i$ with $a_i>0$ give edges. Put
+\[
+ e_i=p^i,\qquad h_i=(p^i-1)/(p-1).
+\]
+
+\begin{lemma}\label{lem:edges}
+The edge for digit $a_i$ has horizontal length $a_ie_i$, vertical length
+$a_ih_i$ and slope $h_i/e_i$. Its residual polynomial is
+\[
+ R_i(T)=\sum_{j=0}^{a_i}
+       \frac{a_i!}{(a_i-j)!}(\epsilon_iT)^j,
+ \qquad \epsilon_i=(-1)^{h_i}\gamma^{e_i}\in\F_p^\times. \tag{2}
+\]
+\end{lemma}
+\begin{proof}
+The units do not affect valuations, so
+$\vp(c_k)=\vp(n!)-\vp((n-k)!)$.
+Legendre's formula at the vertices $s_i$ gives successive slopes
+$h_i/e_i$, which strictly increase with $i$.
+For $s_{i-1}<k<s_i$, put $\delta=s_i-k$.
+The base-$p$ digits of $n-s_i$ and $\delta$ occupy disjoint places, whence
+\[
+ \vp(c_k)-\left\{\vp(c_{s_i})-\delta h_i/e_i\right\}
+ =\frac{\operatorname{digitsum}_p(\delta)-\delta/p^i}{p-1}\ge0.
+\]
+Equality holds exactly when $\delta$ is a multiple of $p^i$, since every
+lower digit has weight strictly less than one after division by $p^i$.
+Thus the stated segments really are the lower hull, with exactly the
+edge lattice indices $k=s_{i-1}+jp^i$, $0\le j\le a_i$.
+
+It remains to compute their units. Let
+$U_p(m!)=p^{-\vp(m!)}m!$. Splitting off multiples of $p$ and applying
+Wilson at each step gives, for base-$p$ digits $m_\ell$,
+\[
+ \overline{U_p(m!)}=(-1)^{\vp(m!)}\prod_\ell m_\ell!\in\F_p^\times.
+\]
+Set $N=n-s_{i-1}$. For the ratio of the falling-factorial units at the
+edge indices, only digit $a_i$ changes, so
+\[
+ \frac{U_p(N!)}{U_p((N-jp^i)!)}
+   \equiv(-1)^{jh_i}\frac{a_i!}{(a_i-j)!}\pmod p.
+\]
+The ratio $u_{s_{i-1}+jp^i}/u_{s_{i-1}}$ is $\gamma^{jp^i}$ modulo $p$.
+Combining these two ratios proves (2), with the normalization in (1).
+\end{proof}
+
+\begin{theorem}\label{thm:deformation}
+Every $P_n$ in this unit deformation class is squarefree over $\Q_p$.
+\end{theorem}
+\begin{proof}
+For $0\le m<p$, the truncated exponential
+$E_m(Z)=\sum_{j=0}^m Z^j/j!$ is squarefree over $\F_p$.
+For $m\ge1$, $E_m'=E_{m-1}$ and
+$E_m-E_{m-1}=Z^m/m!$; a common root would be zero, but $E_m(0)=1$.
+The case $m=0$ is constant. The residual (2) is the reversal
+\[
+ R_i(T)=a_i!(\epsilon_iT)^{a_i}
+                 E_{a_i}((\epsilon_iT)^{-1}).
+\]
+It has nonzero constant, and inversion and scaling preserve its simple
+nonzero roots. All residuals are therefore squarefree, and
+Lemma~\ref{lem:residual} applies.
+\end{proof}
+
+This is a theorem over $\Q_p$, whose coefficient valuation group is
+$\Z$. The statement is not silently extended to arbitrary ramified
+coefficient fields. Our factorial, Gamma and marker applications below
+have rational parameter-polynomial coefficients, so this field boundary
+causes no restriction on the eventual complex phase parameters.
+
+\section{Prime-power factorial and Gamma polynomials}
+For $d=p^a$, set $b=(d-1)/(p-1)$. The factorial splitting used in the
+preceding audit proves
+\[
+ U_k=\frac{(dk)!}{p^{bk}k!}\in\Z_p^\times,
+ \qquad U_k\equiv(-1)^{bk}\pmod p.                 \tag{3}
+\]
+Consequently
+\[
+ f_{n,d}(x)=\sum_{k=0}^n\binom nk(dk)!x^k,
+ \qquad f_{n,d}(X/p^b)=
+       \sum_{k=0}^n n^{\underline k}U_kX^k
+\]
+is in Theorem~\ref{thm:deformation}, with $\gamma=(-1)^b$.
+It is squarefree for \emph{every} $n$, not just a set of indices of
+positive density.
+
+For the Gamma shape $\alpha$, let
+\[
+ f_{n,d,\alpha}(x)=\sum_{k=0}^n\binom nk(\alpha)_{dk}x^k.
+\]
+If $1\le\alpha\le d$ is an integer, then
+\[
+ \frac{(\alpha)_{dk}}{(dk)!}
+ =\prod_{j=1}^{\alpha-1}(1+dk/j)\equiv1\pmod p.      \tag{4}
+\]
+Each factor is a $p$-adic unit: $j<d=p^a$ implies $\vp(j)<a$.
+The product is interpreted in $\Z_p$, with empty product one.
+Multiplying $U_k$ by (4) preserves the same geometric unit residues.
+Thus $f_{n,d,\alpha}$ is also squarefree over $\Q_p$, hence over $\Q$
+and $\C$. Here ``over $\C$'' refers to the rational polynomial's root
+multiplicities after extending constants.
+
+\section{The exact two-consecutive-moment consequence}
+For any sequence $m_k$, the binomial polynomials
+$F_n(x)=\sum_{k=0}^n\binom nk m_kx^k$ satisfy
+\[
+ nF_{n-1}=nF_n-xF_n'.                              \tag{5}
+\]
+For $m_k=(\alpha)_{dk}$, these are precisely the moments
+$f_{n,d,\alpha}(x)=\mathbb E[(1+xY^d)^n]$ with
+$Y\sim\operatorname{Gamma}(\alpha,1)$.
+Since $f_{n,d,\alpha}(0)=1$, any common root of adjacent polynomials
+would by (5) be a multiple root of the higher one. Conversely every
+multiple root is common with its predecessor. The established
+squarefreeness therefore proves:
+
+\begin{theorem}\label{thm:sfc}
+For every prime power $d=p^a\ge2$, integer $1\le\alpha\le d$, every
+complex $A,B$ with $A+BY^d\ne0$, and every $n\ge1$,
+\[
+ \bigl(\mathbb E[(A+BY^d)^n],
+       \mathbb E[(A+BY^d)^{n+1}]\bigr)\ne(0,0).
+\]
+For $\alpha=1$ this is Strong Factorial for the whole constant-plus-
+prime-power-monomial family. If one coefficient is zero its moments are
+directly all nonzero; otherwise factor out $A^n$ and use $x=B/A$.
+\end{theorem}
+
+By the checked independent-linear adjunction theorem, adding $t$ new
+nonzero linear variable terms to a two-term member gives a window of
+length $t+2$, equal to its factorial monomial count. The coefficients may
+be arbitrary complex numbers. This produces all-dimensional SFC classes
+with one prime-power term and otherwise constant and independent linear
+terms; no powers of this entire inhomogeneous phase are inferred to
+have their own monomial-count windows.
+
+\section{Low-degree marked moments}
+Write a rational marker in divided powers as
+\[
+ M(Y)=\sum_{e=0}^{d-1}a_eY^e/e!,\qquad C=\sum_e a_e=\mathbb E[M(Y)].
+\]
+Assume $C\ne0$ and each $a_e/C$ is $p$-integral. For $Y$ exponential,
+\[
+ \frac{\mathbb E[M(Y)Y^{dk}]}{C(dk)!}
+ =\sum_e\frac{a_e}{C}\prod_{j=1}^{e}(1+dk/j)
+ \equiv1\pmod p.                                  \tag{6}
+\]
+The same unit deformation theorem applies to
+$C^{-1}\mathbb E[M(Y)(1+xY^d)^n]$. Its constant is one and it is
+squarefree for every $n$. Identity (5), valid for any fixed marker,
+then proves a two-consecutive-moment bound for these marked moments
+of every nonzero $A+BY^d$. In particular every monomial marker $Y^e$
+with $0\le e<d$ is allowed after harmless scaling by $e!$; this also
+explains the Gamma shape range above.
+If $A=0$, (6) directly makes each positive marked moment nonzero; if
+$B=0$, the nonzero marker mass $C$ does the same. Thus neither degenerate
+coefficient case requires division by a zero phase parameter.
+
+The condition on the rational divided-power coefficients is sufficient,
+not a decision outside the class. A zero-mass marker may have an
+identically zero sequence at constant phase, so it cannot be included in
+this theorem without a separate branch. Markers of degree at least $d$
+and arbitrary combinations with $p$-adic cancellation are not covered.
+The Gaussian bridge gives the corresponding even-block radial phases
+and these specified averaged markers. No all-marker or universal
+Gaussian-purity assertion is added.
+
+\section{The two moment equations retain ordinary nilpotent structure}
+Let $d,\alpha$ be in Theorem~\ref{thm:sfc}, and define the universal
+homogeneous moment polynomial
+\[
+ \mu_k(A,B)=\sum_{j=0}^k\binom kj(\alpha)_{dj}A^{k-j}B^j.
+\]
+For a fixed $n\ge1$, put
+$I_n=(\mu_n,\mu_{n+1})\subset\Q[A,B]$ and $J=(A,B)$.
+The theorem shows that the two generators have no common zero in
+$\mathbb P^1(\C)$, hence no common polynomial factor. In the UFD
+$\Q[A,B]$ they form a regular sequence of degrees $n,n+1$.
+The exact graded multiplication sequences give the Hilbert series
+\[
+ \operatorname{Hilb}_{\Q[A,B]/I_n}(t)
+  =\frac{(1-t^n)(1-t^{n+1})}{(1-t)^2}
+  =(1+t+\cdots+t^{n-1})(1+t+\cdots+t^n).          \tag{7}
+\]
+It follows that this is a local Artinian complete intersection of length
+$n(n+1)$, with highest nonzero degree $2n-1$ of dimension one. In particular
+\[
+ J^{2n}\subset I_n,\qquad J^{2n-1}\not\subset I_n. \tag{8}
+\]
+
+\begin{corollary}\label{cor:ordinary}
+Over every commutative $\Q$-algebra $R$, two vanishing consecutive moments
+$\mu_n(A,B)=\mu_{n+1}(A,B)=0$ force $(A,B)^{2n}=0$.
+Thus $(A+BY^d)^{2n}=0$ as a polynomial, and every original marked moment
+vanishes at every exponent at least $2n$. This universal exponent is sharp.
+\end{corollary}
+\begin{proof}
+Specialize the polynomial containments (8). For sharpness use
+$R=\Q[A,B]/I_n$. In that ring $J^{2n-1}\ne0$. The coefficients of
+$(A+BY^d)^m$ are the distinct monomials
+$\binom mj A^{m-j}B^j$; the binomial coefficients are units in every
+$\Q$-algebra. They generate exactly $J^m$. Hence the phase's
+$(2n-1)$st power is nonzero in the universal quotient.
+\end{proof}
+
+This is ordinary, potentially nonreduced scheme data, not merely the
+radical assertion $\sqrt{I_n}=J$. Over rings the two equations need not
+force $A=B=0$. The even-block Gaussian substitution retains the actual
+coefficient ideal $J$: the constant coefficient is $A$, and a pure
+coordinate term of the radial $d$th power has coefficient a nonzero
+rational multiple of $B$. Thus the same pair ideal and sharp nilpotence
+bound apply to the corresponding Gaussian coefficient families.
+
+\section{Exact certificates and open cases}
+\href{prime_power_windows.py}{The exporter} recognizes a prime-power
+exponent and the stated shape/marker range. For any supplied $n$ it also
+constructs the actual moment polynomial, scales its parameter, builds
+its Newton hull from the coefficient valuations, and compares every
+literal residual against (2). It exports an all-index class certificate
+only under the written theorem's hypotheses. Unsupported exponents and
+shapes are rejected, and failed marker criteria make no zero decision.
+The same certificate records the consecutive-pair complete-intersection
+degrees, length and sharp coefficient nilpotence bound from (7)--(8).
+
+Controls include independent rational gcd/B\'ezout identities, direct
+Gamma moments, generic geometric-unit deformations, explicit repeated
+factor countercontrols, digit vertices, edge lattice points and residual
+coefficients, truncated exponential separability, marker conditions and
+Gaussian/disjoint-variable translations. A finite collection checks the
+implementation; all $n,p,a$ quantifiers use the written proof above.
+Finite Groebner controls also check ordinary quotient lengths, all degree-
+$2n$ monomial containments and a surviving degree-$2n-1$ coefficient.
+
+For a non-prime-power exponent such as $d=6$, our coefficient-unit
+argument has not supplied an analogous theorem. General two-term SFC,
+unrestricted SFC, higher-dimensional FC outside the closed classes,
+remaining EIT V/VI audits and the complete primary bibliography remain
+open. The full original goal stays active.
+\end{document}

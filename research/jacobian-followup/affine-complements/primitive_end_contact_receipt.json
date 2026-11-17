@@ -1,0 +1,776 @@
+{
+  "as_of": "2026-11-16",
+  "outcome": "PASS",
+  "check_count": 117,
+  "checks": [
+    "predecessor PASS full_peripheral_linking_receipt.json",
+    "sealed predecessor full_peripheral_linking_receipt.json verify_full_peripheral_linking.py",
+    "sealed predecessor full_peripheral_linking_receipt.json full_peripheral_linking.py",
+    "sealed predecessor full_peripheral_linking_receipt.json longitude_joining_transfer_certificate.py",
+    "sealed predecessor full_peripheral_linking_receipt.json FULL_PERIPHERAL_RATIONAL_LINKING_AND_LONGITUDE_JOINING_RECURSION.md",
+    "sealed predecessor full_peripheral_linking_receipt.json sources/full-peripheral-linking/manifest.json",
+    "sealed predecessor full_peripheral_linking_receipt.json composed_peripheral_cover.py",
+    "sealed predecessor full_peripheral_linking_receipt.json peripheral_boundary_lattices.py",
+    "sealed predecessor full_peripheral_linking_receipt.json dihedral_author_comparison.json",
+    "sealed predecessor full_peripheral_linking_receipt.json sources/recursive-linking-endpoints/author_code_pin.json",
+    "sealed predecessor full_peripheral_linking_receipt.json sources/recursive-linking-endpoints/cahn-dihedrallinking-bcb80912ad35.py",
+    "sealed predecessor full_peripheral_linking_receipt.json polynomial_key_chain_receipt.json",
+    "sealed predecessor full_peripheral_linking_receipt.json proper_finite_marked_end_receipt.json",
+    "sealed predecessor full_peripheral_linking_receipt.json recursive_linking_endpoints_receipt.json",
+    "sealed predecessor full_peripheral_linking_receipt.json sources/full-peripheral-linking/clay-watson-11032358v1.html",
+    "sealed predecessor full_peripheral_linking_receipt.json sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html",
+    "predecessor PASS proper_finite_marked_end_receipt.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json verify_proper_finite_marked_end.py",
+    "sealed predecessor proper_finite_marked_end_receipt.json PROPER_FINITE_MARKED_END_AND_COMPONENT_OPEN_AUDIT.md",
+    "sealed predecessor proper_finite_marked_end_receipt.json peripheral_boundary_lattices.py",
+    "sealed predecessor proper_finite_marked_end_receipt.json composed_peripheral_cover.py",
+    "sealed predecessor proper_finite_marked_end_receipt.json sources/proper-finite-end/manifest.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json unit_peripheral_coverage_receipt.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json sources/intrinsic-normalization/BGV160.pdf",
+    "sealed predecessor proper_finite_marked_end_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "predecessor PASS polynomial_key_chain_receipt.json",
+    "sealed predecessor polynomial_key_chain_receipt.json verify_polynomial_key_chain.py",
+    "sealed predecessor polynomial_key_chain_receipt.json key_sequence_obstruction.py",
+    "sealed predecessor polynomial_key_chain_receipt.json POLYNOMIAL_KEY_CHAIN_OBSTRUCTION_AND_LAURENT_TERMINAL_NECESSITY.md",
+    "sealed predecessor polynomial_key_chain_receipt.json sources/polynomial-key-chain/manifest.json",
+    "sealed predecessor polynomial_key_chain_receipt.json monic_key_chart_audit_receipt.json",
+    "sealed predecessor polynomial_key_chain_receipt.json sources/monic-key-chart-audit/mondal-13075577v4.html",
+    "sealed predecessor polynomial_key_chain_receipt.json sources/coordinate-negative-canonical/mondal-sign-mmj-2017.pdf",
+    "predecessor PASS torus_infinity_receipt.json",
+    "sealed predecessor torus_infinity_receipt.json verify_torus_infinity.py",
+    "sealed predecessor torus_infinity_receipt.json TORUS_INFINITY_OBSTRUCTION.md",
+    "sealed predecessor torus_infinity_receipt.json residual_cover_receipt.json",
+    "sealed predecessor torus_infinity_receipt.json RESIDUAL_DOUBLE_COVER.md",
+    "sealed predecessor torus_infinity_receipt.json GLOBAL_BOUNDARY_OBSTRUCTION.md",
+    "sealed predecessor torus_infinity_receipt.json PROOF.md",
+    "sealed predecessor torus_infinity_receipt.json WRIGHT_MARKED_MODEL.md",
+    "sealed predecessor torus_infinity_receipt.json PRIMITIVE_QUARTIC_FIELD.md",
+    "sealed predecessor torus_infinity_receipt.json sources/torus-infinity/borodzik-morse.pdf",
+    "sealed predecessor torus_infinity_receipt.json sources/torus-infinity/leidy-maxim-hoA.pdf",
+    "sealed predecessor torus_infinity_receipt.json sources/torus-infinity/manifest.json",
+    "sealed predecessor torus_infinity_receipt.json sources/torus-infinity/scott-geometries.pdf",
+    "predecessor PASS canonical_formats_receipt.json",
+    "sealed predecessor canonical_formats_receipt.json verify_canonical_formats.py",
+    "sealed predecessor canonical_formats_receipt.json CANONICAL_FORMATS_AND_BINARY_CONDUCTOR.md",
+    "sealed predecessor canonical_formats_receipt.json sources/canonical-formats/manifest.json",
+    "sealed predecessor canonical_formats_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor canonical_formats_receipt.json trace_dual_pencil_receipt.json",
+    "sealed predecessor canonical_formats_receipt.json power_difference_receipt.json",
+    "sealed predecessor canonical_formats_receipt.json ../jc2-omitted-divisors/global_receipt.json",
+    "sealed predecessor canonical_formats_receipt.json ../jc2-omitted-divisors/discriminant_receipt.json",
+    "sealed predecessor canonical_formats_receipt.json sources/canonical-formats/stacks-0B4A.html",
+    "sealed predecessor canonical_formats_receipt.json sources/canonical-formats/wood-binary-quartic-2012.pdf",
+    "sealed predecessor canonical_formats_receipt.json sources/canonical-formats/wood-quartic-base-2011.pdf",
+    "sealed predecessor canonical_formats_receipt.json ../jc2-omitted-divisors/sources/orevkov-three-sheeted-jc86.pdf",
+    "primary contact PDF exact pin honda-tight-I-2000.pdf",
+    "primary contact PDF exact pin honda-erratum-2001.pdf",
+    "primary contact PDF exact pin gompf-stein-9803019.pdf",
+    "published erratum scope and weak radial Levi distinction retained",
+    "unbounded rank-one canonical theta with chi2 signature-1",
+    "unbounded tight lens spin classes are consecutive nonzero residues",
+    "theta matching is exactly equality of canonical and allowed rotation squares",
+    "RP3 index1 allowed and triple-index theta contradiction exact",
+    "lens bound permits index3 order4 equality and does not overexclude it",
+    "fixed-spin contact classes exhaust exact Honda count 2",
+    "fixed-spin contact classes exhaust exact Honda count 3",
+    "fixed-spin contact classes exhaust exact Honda count 4",
+    "fixed-spin contact classes exhaust exact Honda count 5",
+    "fixed-spin contact classes exhaust exact Honda count 8",
+    "fixed-spin contact classes exhaust exact Honda count 13",
+    "exact local transverse Levi coefficient e=2",
+    "strict perturbation restores missing branch-normal direction e=2",
+    "exact local transverse Levi coefficient e=3",
+    "strict perturbation restores missing branch-normal direction e=3",
+    "exact local transverse Levi coefficient e=7",
+    "strict perturbation restores missing branch-normal direction e=7",
+    "actual affine quadric relation",
+    "index1 affine quadric nonvanishing source volume",
+    "all two-cycle partitions of six are the three stated types",
+    "possible even positive cycle-count split from RH is only2+2",
+    "UNBOUNDED complete torus homology order ((5, 1), (4, 2))",
+    "fiber order from cycle gcds ((5, 1), (4, 2))",
+    "source parity or RP3 excludes minimal case ((5, 1), (4, 2))",
+    "UNBOUNDED complete torus homology order ((5, 1), (3, 3))",
+    "fiber order from cycle gcds ((5, 1), (3, 3))",
+    "source parity or RP3 excludes minimal case ((5, 1), (3, 3))",
+    "UNBOUNDED complete torus homology order ((4, 2), (3, 3))",
+    "fiber order from cycle gcds ((4, 2), (3, 3))",
+    "source parity or RP3 excludes minimal case ((4, 2), (3, 3))",
+    "two-overlap/one-overlap triple support examples generate alternating 4",
+    "two-overlap/one-overlap triple support examples generate alternating 5",
+    "actual connected full A6 torus cover (5, 4)",
+    "actual meridian single3 and target core order (5, 4, False)",
+    "actual full longitude/shear balance retained (5, 4, False)",
+    "actual meridian single3 and target core order (5, 4, True)",
+    "actual full longitude/shear balance retained (5, 4, True)",
+    "both maximal trees retain all exact marks (5, 4)",
+    "actual connected full A6 torus cover (5, 3)",
+    "actual meridian single3 and target core order (5, 3, False)",
+    "actual full longitude/shear balance retained (5, 3, False)",
+    "actual meridian single3 and target core order (5, 3, True)",
+    "actual full longitude/shear balance retained (5, 3, True)",
+    "both maximal trees retain all exact marks (5, 3)",
+    "actual connected full A6 torus cover (4, 3)",
+    "actual meridian single3 and target core order (4, 3, False)",
+    "actual full longitude/shear balance retained (4, 3, False)",
+    "actual meridian single3 and target core order (4, 3, True)",
+    "actual full longitude/shear balance retained (4, 3, True)",
+    "both maximal trees retain all exact marks (4, 3)",
+    "unbounded twist gate essential: even end order4 but ramification core order2",
+    "target torus contact step uses a proven lens topology not homology alone"
+  ],
+  "general": {
+    "actual_smooth_one_line_source": true,
+    "primitive_omitted_end_generator": true,
+    "negative_rank_one_intersection": true,
+    "end_order_parity_equals_index_minus_one": true,
+    "canonical_contact_theta_formula": true,
+    "oriented_Yh_lens_bound_h_at_least_e_plus_one": true,
+    "actual_RP3_end_excluded_all_degrees": true,
+    "actual_centre_free_monodromy_proved": true,
+    "torus_end_order_divides_actual_field_degree": true,
+    "odd_degree_odd_index_torus_packets_excluded": true
+  },
+  "six_sheet_triple_torus": {
+    "full_actual_smooth_one_prime_index3_scope": true,
+    "residue_degree1": true,
+    "full_monodromy": "A6",
+    "all_torus_parameters_exhausted": true,
+    "unbounded_multiplier_order_table": [
+      {
+        "alpha_partition": [
+          5,
+          1
+        ],
+        "beta_partition": [
+          4,
+          2
+        ],
+        "base_torus": [
+          5,
+          4
+        ],
+        "source_orders": [
+          "A",
+          "5*A",
+          "B",
+          "2*B"
+        ],
+        "H1_order": "3*A*B",
+        "fiber_order": 3,
+        "primitive_source_forces": "A=B=1",
+        "exclusion": "canonical parity"
+      },
+      {
+        "alpha_partition": [
+          5,
+          1
+        ],
+        "beta_partition": [
+          3,
+          3
+        ],
+        "base_torus": [
+          5,
+          3
+        ],
+        "source_orders": [
+          "A",
+          "5*A",
+          "B",
+          "B"
+        ],
+        "H1_order": "2*A*B",
+        "fiber_order": 2,
+        "primitive_source_forces": "A=B=1",
+        "exclusion": "RP3 contact theta -3 versus -1"
+      },
+      {
+        "alpha_partition": [
+          4,
+          2
+        ],
+        "beta_partition": [
+          3,
+          3
+        ],
+        "base_torus": [
+          4,
+          3
+        ],
+        "source_orders": [
+          "A",
+          "2*A",
+          "B",
+          "B"
+        ],
+        "H1_order": "A*B",
+        "fiber_order": 1,
+        "primitive_source_forces": "A=B=1",
+        "exclusion": "canonical parity"
+      }
+    ],
+    "primitive_mark_forces_minimal_cases": true,
+    "two_cases_excluded_by_parity": true,
+    "remaining_case_RP3_proved_by_Seifert_topology": true,
+    "remaining_case_excluded_by_canonical_contact_theta": true,
+    "unknot_excluded": true,
+    "finite_image_immersion_or_zero_excess_assumed": false
+  },
+  "primary_audit": {
+    "Honda_lens_Theorem21_imported": true,
+    "erratum_scope_checked": true,
+    "Gompf_theta_and_Gamma_exact_quantifiers_imported": true,
+    "complete_selected_PDF_pages_rendered_and_read": true,
+    "radial_boundary_strict_psh_perturbation_proved": true
+  },
+  "contact_lens_controls": [
+    {
+      "h": 2,
+      "rotations": [
+        0
+      ],
+      "Gamma": [
+        1
+      ],
+      "theta_values": [
+        "-1"
+      ]
+    },
+    {
+      "h": 3,
+      "rotations": [
+        -1,
+        1
+      ],
+      "Gamma": [
+        1,
+        2
+      ],
+      "theta_values": [
+        "-4/3"
+      ]
+    },
+    {
+      "h": 4,
+      "rotations": [
+        -2,
+        0,
+        2
+      ],
+      "Gamma": [
+        1,
+        2,
+        3
+      ],
+      "theta_values": [
+        "-2",
+        "-1"
+      ]
+    },
+    {
+      "h": 5,
+      "rotations": [
+        -3,
+        -1,
+        1,
+        3
+      ],
+      "Gamma": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "theta_values": [
+        "-14/5",
+        "-6/5"
+      ]
+    },
+    {
+      "h": 8,
+      "rotations": [
+        -6,
+        -4,
+        -2,
+        0,
+        2,
+        4,
+        6
+      ],
+      "Gamma": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "theta_values": [
+        "-11/2",
+        "-3",
+        "-3/2",
+        "-1"
+      ]
+    },
+    {
+      "h": 13,
+      "rotations": [
+        -11,
+        -9,
+        -7,
+        -5,
+        -3,
+        -1,
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "Gamma": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "theta_values": [
+        "-134/13",
+        "-94/13",
+        "-62/13",
+        "-38/13",
+        "-22/13",
+        "-14/13"
+      ]
+    }
+  ],
+  "actual_A6_torus_cover_controls": [
+    {
+      "torus": [
+        5,
+        4
+      ],
+      "rho": [
+        [
+          4,
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          0,
+          5,
+          2,
+          3,
+          4
+        ]
+      ],
+      "group_order": 360,
+      "result": {
+        "matrix": [
+          [
+            "-8/3",
+            "10/3",
+            "10/3",
+            "10/3"
+          ],
+          [
+            "10/3",
+            "-50/3",
+            "10/3",
+            "10/3"
+          ],
+          [
+            "10/3",
+            "10/3",
+            "-50/3",
+            "10/3"
+          ],
+          [
+            "10/3",
+            "10/3",
+            "10/3",
+            "-50/3"
+          ]
+        ],
+        "core_orders": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "all_cores_integrally_zero": false,
+        "rational_row_denominators": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "normal_indices": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "shears": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      },
+      "as_actual_smooth_one_prime_Keller_packet_excluded": true,
+      "topological_cover_itself_excluded": false
+    },
+    {
+      "torus": [
+        5,
+        3
+      ],
+      "rho": [
+        [
+          3,
+          4,
+          0,
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          2,
+          0,
+          4,
+          5,
+          3
+        ]
+      ],
+      "group_order": 360,
+      "result": {
+        "matrix": [
+          [
+            "-5/2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          [
+            "5/2",
+            "-25/2",
+            "5/2",
+            "5/2"
+          ],
+          [
+            "5/2",
+            "5/2",
+            "-25/2",
+            "5/2"
+          ],
+          [
+            "5/2",
+            "5/2",
+            "5/2",
+            "-25/2"
+          ]
+        ],
+        "core_orders": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "all_cores_integrally_zero": false,
+        "rational_row_denominators": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "normal_indices": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "shears": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      },
+      "as_actual_smooth_one_prime_Keller_packet_excluded": true,
+      "topological_cover_itself_excluded": false
+    },
+    {
+      "torus": [
+        4,
+        3
+      ],
+      "rho": [
+        [
+          3,
+          0,
+          1,
+          2,
+          5,
+          4
+        ],
+        [
+          2,
+          0,
+          1,
+          4,
+          5,
+          3
+        ]
+      ],
+      "group_order": 360,
+      "result": {
+        "matrix": [
+          [
+            "-2",
+            "2",
+            "2",
+            "2"
+          ],
+          [
+            "2",
+            "-10",
+            "2",
+            "2"
+          ],
+          [
+            "2",
+            "2",
+            "-10",
+            "2"
+          ],
+          [
+            "2",
+            "2",
+            "2",
+            "-10"
+          ]
+        ],
+        "core_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_cores_integrally_zero": true,
+        "rational_row_denominators": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "normal_indices": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "shears": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      },
+      "as_actual_smooth_one_prime_Keller_packet_excluded": true,
+      "topological_cover_itself_excluded": false
+    }
+  ],
+  "nonprimitive_even_order_twist_control": {
+    "matrix": [
+      [
+        "-5",
+        "5",
+        "5",
+        "5"
+      ],
+      [
+        "5",
+        "-25",
+        "5",
+        "5"
+      ],
+      [
+        "5",
+        "5",
+        "-25",
+        "5"
+      ],
+      [
+        "5",
+        "5",
+        "5",
+        "-25"
+      ]
+    ],
+    "core_orders": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "all_cores_integrally_zero": false,
+    "rational_row_denominators": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "cleared_relation_torsion_orders": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "closed_H1": {
+      "free": 0,
+      "torsion": [
+        4
+      ]
+    },
+    "normal_indices": [
+      3,
+      1,
+      1,
+      1
+    ],
+    "shears": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "longitudinal_degrees": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "weighted_balance": "F*e=a",
+    "integral_lifted_surface_balance_verified": true,
+    "complete_filled_manifold_torsion_linking_form_computed": false
+  },
+  "affine_index1_quadric_countercontrol": {
+    "e": 1,
+    "end": "RP3",
+    "canonical_class": 0,
+    "theta": "-1",
+    "allowed": true,
+    "finite_Keller_target_claimed": false
+  },
+  "assurance": {
+    "written_unbounded_source_contact_and_torus_proofs": true,
+    "actual_new_higher_degree_boundary_exclusion": true,
+    "finite_controls_not_universal_proof": true,
+    "published_quartic_retirement_preserved": true,
+    "singular_normalizations_excluded": false,
+    "multiple_prime_normalizations_excluded": false,
+    "all_genuine_iterated_triple_knots_excluded": false,
+    "all_six_sheet_Keller_maps_excluded": false,
+    "global_Laurent_finite_algebra_gap_closed": false,
+    "external_contact_classification_independently_reproved": false,
+    "formal_verification": false,
+    "external_review": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_primitive_end_contact.py": "a1e9b68dab6ded93851df888976f823e72827eef001695ac23010a5c93dc1b61",
+    "PRIMITIVE_END_CANONICAL_CONTACT_AND_TRIPLE_TORUS_EXCLUSION.md": "845428d5b7dff0c5216a70abd0f35307b2f825e1c963f6d551f458069b14a3cf",
+    "sources/primitive-end-contact/manifest.json": "3d4293c37468f039dc58b07b035f52c5778f5acc28c9ff99e8df4fd69a6f0283",
+    "full_peripheral_linking_receipt.json": "21a6cb8cd5827730a18e8a9b95973781f2d0f44492658776d7cd41210931cee6",
+    "proper_finite_marked_end_receipt.json": "3417c0758eaf1a296cbf0bce2c4bcc4e2ead5a4cb5931e024f84ed254ca751fa",
+    "polynomial_key_chain_receipt.json": "2e1948b2553a8117e4540c1f14d1b2781f0c89c8d8db05f9ecfd74f42f61cec1",
+    "torus_infinity_receipt.json": "4f281288978e2c1538345d50b2b10a4af3ba77953fee958b69fd7cb84465d94b",
+    "canonical_formats_receipt.json": "b09cc1b37893ead1230d2fc516afe103911675efc61e4d4c779e52ebbf793965",
+    "sources/primitive-end-contact/honda-tight-I-2000.pdf": "c6cf0ec6ab0dff7ac32ce8be1f6f406266952f96f18f5405120a75f0b0898051",
+    "sources/primitive-end-contact/honda-erratum-2001.pdf": "b9d42a001e34e86ca25b1f4b70f721840d80c222fbd7fa9a004dd16bff13f670",
+    "sources/primitive-end-contact/gompf-stein-9803019.pdf": "a22de88156f42c8d0fdfec22bdcb0943fd6782bc03a20f67d82d122b4f2bb352"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "status": "PASS independent four-piece peripheral and upper4 inputs",
+  "roots": [
+    {
+      "name": "13a_129",
+      "epsilon": 1,
+      "edge_maps": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ]
+      ],
+      "fiber_intersections": [
+        1,
+        1,
+        1
+      ],
+      "abelian_gluing_determinant": -391,
+      "source_H1_order": 391,
+      "proposed_JSJ_pieces": 4,
+      "algebra_and_slope_checks": "PASS"
+    },
+    {
+      "name": "13a_135",
+      "epsilon": -1,
+      "edge_maps": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            -1
+          ]
+        ]
+      ],
+      "fiber_intersections": [
+        1,
+        1,
+        1
+      ],
+      "abelian_gluing_determinant": 401,
+      "source_H1_order": 401,
+      "proposed_JSJ_pieces": 4,
+      "algebra_and_slope_checks": "PASS"
+    }
+  ],
+  "upper4": [
+    {
+      "name": "13a_129",
+      "seeds": [
+        0,
+        1,
+        4,
+        8
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_136",
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_194",
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_197",
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_135",
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_137",
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_196",
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_198",
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    }
+  ],
+  "controls": {
+    "two_piece_P_Q_presentations_generators": [
+      2,
+      2
+    ],
+    "H_relation_positive": true,
+    "H_noncommuting_positive": true,
+    "root_relation_P_positive": true,
+    "root_relation_Q_positive": true
+  },
+  "corruptions_rejected": [
+    "fiber matching cannot certify4JSJpieces",
+    "determinant2 is not a torus isomorphism",
+    "changed root port word",
+    "wrong free basis inverse",
+    "wrong endpoint fiber sign"
+  ],
+  "assurance": "Exact free-basis/cyclic relator identities, complete cyclic-amalgam identity reductions, port/commutation checks and unimodular nonparallel slopes. Existing geometric arc parser used only for legacy labels and upper4 replay, disclosed. Four canonical JSJ pieces, rank>=3 via classical Boileau-Weidmann, and knot equalities require the written manifold realization/JSJ/classification proof; finite checks alone do not establish these uniform imports.",
+  "input_sha256": {
+    "verify_four_piece_covers.py": "87b9307ec2ecffcc37e84ea2110a61cbc1f7a5ecf73fff768a73c0159c151b5f",
+    "four_piece_cover_plan.json": "48940e388419323f6437a0c19760dd130895ecbc57fa05164a22c7c7a61fbffa",
+    "four_piece_cover_results.json": "4b7d110b06ae51a07daf1ec861f9e91c6f2adce84286404aaed60a93d5549394",
+    "port_assembly_results.json": "7ba49e1af708bdaf299e67faaff92a907c71396c4be773a45a1457dc8dd93eb9",
+    "port_assembly_verification.json": "5c955675b1689e45f3cd075022c3b17027abdd4736a8c1fc78010b20f6941e44",
+    "compact_cover_verification.json": "4001bed48608d37ea613dc5a538c1581035c780a94b278b24f2abea807490be6",
+    "mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18",
+    "mutation_cover_verification.json": "5a925d1c5b9c008156becfe3aae921ceb87699f1ed0355cee06c055c8b7c3ec1",
+    "joint_a5_results.json": "6f2be622f64e34ba47127f5126f56bcc0f72cc98d4c29bb6d69e8a28ef623a9f",
+    "joint_a5_verification.json": "0e5f6d5cbb5e7d5974557e64a1c952b513c17cb80108cf7883c42dcca982bb99",
+    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+  }
+}

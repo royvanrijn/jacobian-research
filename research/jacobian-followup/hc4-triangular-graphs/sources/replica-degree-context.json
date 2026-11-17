@@ -1,0 +1,66 @@
+{
+  "claim": "HC4MYMR0",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKV0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/DIFFERENTIAL_SUBALGEBRA_CLASSIFICATION.md"
+    },
+    {
+      "claim": "HC4MYKX0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md"
+    },
+    {
+      "claim": "HC4MYLO0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/FULL_NORMALIZATION_ADDITIVE_PENCIL_AND_TRACE_DUAL_STABILIZER.md"
+    },
+    {
+      "claim": "HC4MYMQ0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CYCLIC_DECK_SOURCE_IMAGE_AND_THE_UNIQUE_MULTIPLE_FIBRE.md"
+    },
+    {
+      "claim": "PF2RULED53",
+      "canonical_source": "jacobian-followup/affine-complements/TRACE_DUAL_PENCIL_AND_EXCESS.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/DIFFERENTIAL_SUBALGEBRA_CLASSIFICATION.md": "4d6bbc5074b4a0949e9171660b30854ad7fd7052a7fae06b1dd72cf98c4dae96",
+    "jacobian-followup/hc4-triangular-graphs/verify_differential_subalgebras.py": "ce9eccaf72195b813e4801354c997258434f523bbc6a6a318a4e0d42e04d1329",
+    "jacobian-followup/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md": "beaced18024b06fc918d9e665929ff2ef4820e3cffa5a18493c5f9ac2bcd53e9",
+    "jacobian-followup/hc4-triangular-graphs/verify_algebraic_flow_descent.py": "a2317510797200b71dad4d6dd7d730555f88e3abcc7e55f0d157954fb3613c2f",
+    "jacobian-followup/hc4-triangular-graphs/FULL_NORMALIZATION_ADDITIVE_PENCIL_AND_TRACE_DUAL_STABILIZER.md": "ee6a6a5f59e2a49d1e8f94baed3850e7e42eca650afe65e79a4836ed477fc565",
+    "jacobian-followup/hc4-triangular-graphs/verify_full_additive_stabilizer.py": "67f439f2b85711ab68188ada2f7ec562bceedb65e2fe94d3302123b0faf6559f",
+    "jacobian-followup/hc4-triangular-graphs/CYCLIC_DECK_SOURCE_IMAGE_AND_THE_UNIQUE_MULTIPLE_FIBRE.md": "6aed131bcfed114b4b6d6ce4480826f6a9a853c5b0655dcb0c0ec4842fb8efbd",
+    "jacobian-followup/hc4-triangular-graphs/verify_cyclic_deck_source_image.py": "155fa4556df9f9e06e7ad58a0f1880e537a81ca0b310da948230e68d8b7e122c",
+    "jacobian-followup/affine-complements/TRACE_DUAL_PENCIL_AND_EXCESS.md": "e90436c16bef59ca3f0324570ef1446e60941b583474c819ce4ceda62433a3e7",
+    "jacobian-followup/affine-complements/verify_trace_dual_pencil.py": "4dbee3ea4658cf7e2f3ad29c8339a0cdef01f668dac14952665c3bcd240fd576"
+  },
+  "scope_flags": {
+    "all_degrees_and_source_coordinate_frames": true,
+    "polynomial_volume_factorization": true,
+    "exact_replica_degree_divisibility": true,
+    "bare_translation_no_proper_intermediate": true,
+    "actual_equivariant_source_image_surjective": true,
+    "monomial_replica_cyclic_fixed_field": true,
+    "finite_source_direction_derivatives_generate_full_field": true,
+    "all_replicas_have_no_proper_intermediate": false,
+    "general_replica_fixed_field_is_cyclic": false,
+    "raw_derivative_algebra_normal": false,
+    "field_reconstruction_implies_inverse": false,
+    "source_action_descends_to_target": false,
+    "full_trace_integrality_automatic": false,
+    "unrestricted_HC4_or_JC2_resolved": false
+  },
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "source_audit": {
+    "retained_reading": "Complete KV0/KX0/LO0/MQ0/PF53 canonical proofs read. General coordinate-primitive lemma in PF53 Section1 is independent of its later restricted ramification row. KV0 supplies the actual smooth algebra R intersect E; LO0 supplies the explicitly reproduced local-slice argument; retained MQ0/PF46 fibre package keeps its adopted proof-sketch assurance boundary.",
+    "primary_screen_only": "Primary local-slice and bracket-width literature screened through web excerpts; no new theorem imported, primary PDF downloaded or cached. Documenta Math26(2021)1601-1627 concerns ordinary Danielewski surfaces and does not solve the needed global Darboux-pair or finite-lattice problem.",
+    "corrected_passage": "Never divide the replica coefficient p(y) inside an unknown E. The slice expression holds in L; only after the volume argument is r(h)=p/hprime known to lie in E. General replica index divides degp+1; only bare translation forces E=L. Monomial replicas give cyclic fixed fields; arbitrary polynomial replicas need not.",
+    "global_boundary": "Finite fixed-source-direction derivative field generation is distinct from target-Weyl algebra generation and the whole-jet map K times identity. No normality, pointwise injectivity, inverse, integral primitive coordinate, source action on target, full finite-normalization preservation or trace-dual integrality is inferred."
+  },
+  "registered_mathematical_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

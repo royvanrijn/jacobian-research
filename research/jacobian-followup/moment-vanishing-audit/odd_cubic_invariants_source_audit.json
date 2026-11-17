@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-15",
+  "primary_source": {
+    "author": "Aryaman Maithani",
+    "title": "Splitting the difference: Computations of the Reynolds operator in classical invariant theory",
+    "version": "2412.18841v2",
+    "revised": "2025-09-11",
+    "submitted": "2024-12-25",
+    "url": "https://arxiv.org/html/2412.18841v2",
+    "cache": "sources/maithani_reynolds_2412_18841v2.html",
+    "sha256": "8f05d056849653d042c6946b769e3d821a5a7a2a3b43bd214a2a0baf17d40a98",
+    "read": "Introduction, Definition4.1, Theorem4.2, Example4.5 and compact-averaging discussion in sections4-5.",
+    "import": "A degree-preserving invariant-ring-linear Reynolds projection exists for every rational orthogonal representation in characteristic zero.",
+    "boundary": "The standard/dual-copy computational algorithms are not imported for Sym^3(C^3) plus C^3. This is a 2025 revision verified in the current literature audit, not a new2026 classification or moment theorem."
+  },
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/ODD_CUBIC_CLASSIFICATION_AND_PREFIX_LOWER_BOUND.md",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_odd_cubic_invariants.py",
+  "checker_sha256": "cae451ab3b5ba2e0ada24e9a566b5c0c22fca11d038a3f7ca83810667df75f11",
+  "receipt_sha256": "31dc3ed384c6f571778a0f0d8abfd28bc50cd293bda337a2e8d2d62e7df0df62",
+  "prior_frontier": {
+    "path": "jacobian-followup/moment-vanishing-audit/odd_cubic_invariants_preupdate_20261115.json",
+    "sha256": "bcd1e564c6db71e75bf0cc000d90194e8c9c49fa55bf1c40893e0ab5f4218675"
+  },
+  "retained_inputs": {
+    "cubic_frame_prefix_verification.json": "f15bf811cd86fdf0355a11fb2531a81835704477a4c6a492f090458a10f3b1fa",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "cubic_height_verification.json": "9a8fc5a5c6c579399f79a2aa61d7255c5a09cc2b5288813751909d1a78a5da7b",
+    "reducible_cubic_moments_verification.json": "3f046506f8ab1513c951b71beae954e15c6f6ea2a7de58e5e4dcd0bddfdb0586",
+    "ordinary_node_finite_prefixes_verification.json": "4ac4c1b9afb21d7ee6f7e534dbd551693624da024255c9b4520505dbe6f2efb0",
+    "odd_cubic_hilbert_exploration.py": "e75a53799d06335cb771be4238800b36f0ec366e666e21cbb71e6bdacf04a6d1",
+    "odd_cubic_hilbert_exploration.json": "a23501b8f02c4febfe3d5dc39d9fca7c1462e9cb003decc2db5ade454893dbf4",
+    "affine_w_verification.json": "c4cc3d5e5fd6f5e4abc6c6b00a5fea9a2c0f70abbb1807c67a95e121ffa54893",
+    "cubic_gmc_closure_verification.json": "8a3975cddb1b3eef5965b9100a3c58f815b4cb344d0f0f604bed9cdeb14ac7d1",
+    "verify_cubic_height_obstruction.py": "004dbf9dcdf60b159e25b9625cd1d3ee152b8553f86431262e798fb871a325c4",
+    "verify_affine_w_classification.py": "a86ec524ee7ca785f9c5489f0e3ecfa6d9095135c1334db39d27f1e17f7cc52a",
+    "verify_rank_one_wt2.py": "632aa6e6ae7c2fc8249df9b4faefef7840a65b42f39c41e063b0781622b2cff1",
+    "verify_cubic_gmc_closure.py": "26806d397949f765f92636e1e5b0d84c1fbd4bdf010336fd599a0e23eca1ac21"
+  },
+  "claims": [
+    "G3ODDPURE20261115",
+    "G3PURELOWER20261115",
+    "G3HOMLOWER20261115"
+  ],
+  "odd_normal_form": "Z*(a*Z^2+b*Z*T+c*T^2+d*Z*W+e), circular covariance E(ZW)=E(T^2)=1",
+  "odd_null_locus_dimension": 6,
+  "sharp_odd_mixed_cutoff": "deg Q",
+  "global_least_prefix_interval": [
+    20,
+    1855
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    1854
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    1854
+  ],
+  "odd_invariant_lower_transcendence_degree": 10,
+  "homogeneous_invariant_lower_transcendence_degree": 7,
+  "existence_witnesses": {
+    "odd_initial_zero_moments": 19,
+    "homogeneous_initial_zero_moments": 13,
+    "coefficients_can_be_algebraic": true,
+    "explicit_coefficients_displayed": false,
+    "first_nonzero_orders_known": false,
+    "M20_nonzero_proved": false,
+    "M14_nonzero_proved": false
+  },
+  "method": "Positive circular weight makes every positive-degree invariant vanish on the classified pure-null locus. Nullstellensatz and Reynolds turn hypothetical sufficiency of nine/six even moments into a finite invariant-ring module over at most nine/six generators, contradicting ten/seven independent invariants.",
+  "auxiliary_exact_checks": {
+    "universal_Lie_derivatives": 30,
+    "universal_reflection_identities": 10,
+    "odd_Jacobian_minor": "560/2187",
+    "homogeneous_Jacobian_minor": "1431014859795988480/387420489",
+    "null_rotation_preserves_metric": true,
+    "normal_form_Jacobian_rank": 6,
+    "normal_form_weights": [
+      1,
+      2,
+      3
+    ]
+  },
+  "exploration": {
+    "script": "odd_cubic_hilbert_exploration.py",
+    "receipt": "odd_cubic_hilbert_exploration.json",
+    "boundary": "Truncated weight counts through140 and no observed negative numerator coefficient do not prove a full Hilbert series, system of parameters, regularity or20-moment sufficiency. None is used in the new lower-bound proof."
+  },
+  "written_boundary": "Frame forcing, rank-two exclusion, rank-one and height classification are retained internal analytic results. Finite generation, Nullstellensatz, integral transcendence degree and algebraic-point existence are written arguments. The auxiliary checker does not certify the whole theorem or produce the existence witnesses.",
+  "remaining": [
+    "Least global and homogeneous prefixes",
+    "Explicit19-zero and13-zero coefficient witnesses and first nonzero orders",
+    "Expanded global radical cofactors",
+    "Independent specialist review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ],
+  "least_prefix_computed": false,
+  "prefix20_sufficiency_proved": false,
+  "full_global_prefix_search_executed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

@@ -1,0 +1,2049 @@
+[
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-HC4-SCHUR",
+    "kind": "changed",
+    "sha256": "2b98055078b43ea4e3bbe6a3898f1bea32815187285944b67867f0f101b191fd",
+    "changed_fields": [
+      "dependencies",
+      "forbidden_attack_classes",
+      "scope"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-MV-ALL-DEGREE",
+    "kind": "changed",
+    "sha256": "7953b6762af4376a26cd33bd750d89468f13e97b32103097fb847d76b0cac78d",
+    "changed_fields": [
+      "dependencies",
+      "scope"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCHARMONICHEAT20261115",
+    "kind": "added",
+    "sha256": "f0b4761e57901e335f1fd2c4b15f6d83ec39db51f1e28b457da4686f94f29399",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCHARMONICGATE20261115",
+    "kind": "added",
+    "sha256": "09085e67a6870ffc3945c0ab05a0f3de7b3d298c50bc0c30c77fab46c741e286",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCHARMONICCORE20261115",
+    "kind": "added",
+    "sha256": "63a9792c2d9c2a01dfd6f4521be2d9d72e9b8f698334ca13ee62accaca285013",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GVCHARMONICCORE20261115",
+    "kind": "added",
+    "sha256": "8e8c5d64c03d878fa4523a976c512a53880623691f6e6850d90c3c7a1736f9e6",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "PF2RULED94",
+    "kind": "added",
+    "sha256": "c27a911016dcb8154928b20515af61fcffe8276ec79ae25520d9a9431c0ac37f",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYKN0",
+    "kind": "added",
+    "sha256": "73c76484931ab86390f0e7013aa0398d6091cbc790cc8424ff7320574abe854b",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYKN1",
+    "kind": "added",
+    "sha256": "ee08aab0318b37bb59f1338edda1df672af1b33ae6fe991979ce6a4fc41708e0",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYKN2",
+    "kind": "added",
+    "sha256": "ca56d3a0464499954b9d5036f51d46c34fc43dc3ac1fbea504380d16600cf4ee",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCGAUSSAUT20261115",
+    "kind": "added",
+    "sha256": "a4ed1774e09fe0d6c55b59e809a259c6c6dda0cf941830f7c13935d192e4b29f",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCORTHAUT20261115",
+    "kind": "added",
+    "sha256": "174ddef1a1897530b8ebc0d103a381cb686514e9fbc7cb7447d172f90b1f3935",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCFULLORBIT20261115",
+    "kind": "added",
+    "sha256": "1fbcf3419448ac9e1d784316282def9c3b97f299c0209b09acfd79690e3629dd",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCINVARIANTTIME20261115",
+    "kind": "added",
+    "sha256": "bd475bd34969e5cecf23cd3f29dbf5728a4e6f9bbbe9e689f7ecb6cd7613bd4c",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STRUCTURAL-RECOGNITION-20261113",
+    "kind": "changed",
+    "sha256": "254dd66ee8ed2915ad4c5eb4c1d5b0357ffb1dc71f6b23970c37dc5902e16b33",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GRAPH-AFFINE-PLANE-20261113",
+    "kind": "changed",
+    "sha256": "7f07bbc6287e81fdbe0a21c21877af6be670f4decdade829c181075cde437cce",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DUAL-TWO-DIVISORS-20261113",
+    "kind": "changed",
+    "sha256": "b9d360fbac6410508095d9a1abc90684b2886e6c46c9b59e9a54ebb83a2ddc9e",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ROW-ORBIT-20261113",
+    "kind": "changed",
+    "sha256": "cc86743e9b731b9885c6df5570f26c8c309a65918e23240ef279ca7a672f69d1",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-POINTED-PENCIL-20261113",
+    "kind": "changed",
+    "sha256": "ea54f42ae08a63be081c9dc76f195a183dd6933a19b0be71b57bc4a35e451574",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADIAL-INTERSECTION-20261113",
+    "kind": "changed",
+    "sha256": "5b2c09956202137cb722f0530e567ccae068b9c464abd08781f72e56ca936e88",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-PLANE-BORISOV-ATTACHMENT-20261113",
+    "kind": "changed",
+    "sha256": "aad8964757ab3f1bb805fcc975886f1af8adcd1ec73954ed2cddde9531351c5f",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AUTOMORPHIC-TRACE-20261114",
+    "kind": "changed",
+    "sha256": "cdf5590d80e26e6836cc4d57bf60d0d17d1da2542b4b147e195b50bf2ae13ed9",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RATIONAL-CURVE-TRACE-20261114",
+    "kind": "changed",
+    "sha256": "f24a86f614617470966c9fb2b10c1d74607097169581553f96904db48a6aa650",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SQUARE-AXIS-20261114",
+    "kind": "changed",
+    "sha256": "29380fa69ee7c108b9c255ac734565a5b46efcd0a76e7c56fdea6f5562f1ccce",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FIXED-GRAPH-ROW-ORBIT-20261114",
+    "kind": "changed",
+    "sha256": "aa64a72ae96bbfb02e9d5354c5b10fb91f224fe575343194e133bd6c5eba7a89",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-COORDINATE-JET-20261114",
+    "kind": "changed",
+    "sha256": "5068bea84dda7bfd59c029a3cf4bab79ee72988f19c8e5b750c01a41e1bb974d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NATIVE-BASE-GRAPHS-20261114",
+    "kind": "changed",
+    "sha256": "426fe60f9e9d9bf41dbd1d9b81b3892957da80ea18daa2db1690437bfb4f8ebf",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMPOSITE-HYPERPLANE-20261114",
+    "kind": "changed",
+    "sha256": "4bc7665ec4c8bd14081012a635cb9ee5ebe6d37222a3e60275692480b7d00de4",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-COORDINATE-UNIT-IDEAL-20261114",
+    "kind": "changed",
+    "sha256": "088f6023959df380011119e3ca13754029fa7008090a6e18c7d2464ac922baf4",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-CRITICAL-LOCUS-20261114",
+    "kind": "changed",
+    "sha256": "086e42ccd894b2f776ada7a492c94aebc8f9f29b733835f7a26e1beb09b395b0",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-COMPONENTS-20261114",
+    "kind": "changed",
+    "sha256": "0a7b1a74db8b2d8e2eca2975b53a0f897c4828e15e3db7808e4ceb84ecf5abf7",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-TARGET-LINE-20261114",
+    "kind": "changed",
+    "sha256": "382c6ac9e995c79f91a564bf6444d9273238178aad7992d1bb9f9a09ab22da6e",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NEWTON-CRITICAL-GATES-20261114",
+    "kind": "changed",
+    "sha256": "03646aca50a6fe3cbbc3a7f7c0baf22517fbbd8392f82dc4e270aec4a6fd2c92",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-NORMALIZATION-20261114",
+    "kind": "changed",
+    "sha256": "4fb1009c6554f1d5f2cf67edf5a70472374c69a70d10c6733e632d93ca8141f3",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-CRITICAL-BUDGET-20261114",
+    "kind": "changed",
+    "sha256": "843c347af89d2aab84bd9efa2df8fea4643002483eb30050c112fa411a3aaff8",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FULL-Y-GRAPH-CLOSURE-20261114",
+    "kind": "changed",
+    "sha256": "ef07fe56e7897cb1621dfd246b59c46d075e105ee996ff8350bbfbe79d4986a3",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-OPPOSITE-NONLINEAR-FRONTIER-20261114",
+    "kind": "changed",
+    "sha256": "52394a49ebf1fd08966fdc0c5b480156527e69b4d56aaa7d97306fbe0a5f4fcf",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-EXCEPTIONAL-FIBRE-CLOSURE-20261114",
+    "kind": "changed",
+    "sha256": "bc2fa4dae133539eea643e2f86046841d4ee80c6489e2514c7cc823dadc25a70",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CYLINDRICAL-TRACE-CLOSURE-20261114",
+    "kind": "changed",
+    "sha256": "8375a3e360d73a515fe25748a15d1bcdea3dab9ed6fa7fb82ea9d0ba054df81d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ISOLATED-TRACE-MIXING-20261114",
+    "kind": "changed",
+    "sha256": "725b56b53ab0368e086e11a8486eb18ea148ea51655a5b864660ad1380fb5761",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-HODGE-TRACE-CLOSURE-20261114",
+    "kind": "changed",
+    "sha256": "ffd07c3786ded17f1424456afb45379f8769088b6e71227cd4d2be3e7f2a1467",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DIRECTIONAL-BASE-CLOSURE-20261114",
+    "kind": "changed",
+    "sha256": "de6c162742ce12a55116cddd8509d1c21b481645194e15376ddd79bd8d943b27",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-TRACE-COMPATIBILITY-20261114",
+    "kind": "changed",
+    "sha256": "77e7462b78067df792aa3e7ad03c468e68ea3246f440798eb186e08b2a7eb3d3",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-AFFINE-PLANE-20261114",
+    "kind": "changed",
+    "sha256": "b4ca5b9df2d4bf8066e895864cab1f930fc6a91986e93b7f64ac9a4f6f923b07",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-VALUE-ORBITS-20261114",
+    "kind": "changed",
+    "sha256": "326ce53769781ea9146e8566873e24f8999ceda4146980c323945308596fa63d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FINITE-FIBRE-NORMAL-FORM-20261114",
+    "kind": "changed",
+    "sha256": "adda2fe888468ddc85afb7346823dfb6dc114b884583a4a5510fbeca1639e0a1",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-RECONSTRUCTION-EMBEDDING-20261114",
+    "kind": "changed",
+    "sha256": "74378061d6d17558ca2ce30cbfbd8d2ea7bafeb05820e8e8b233f1108c14dad7",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STABLE-HYPERSURFACE-20261114",
+    "kind": "changed",
+    "sha256": "953c09ae2af40350d8071624bd2adf398eb9d1a53f637bf15383d39e79f56d36",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "implementation",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-MIXED-PROJECTION-PROFILE-20261114",
+    "kind": "changed",
+    "sha256": "6b306aee4730ef8febcd1364ee48037e34e34a58cb5d6157fb3c7b4da2e1d3a8",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FIXED-POTENTIAL-PROJECTION-20261114",
+    "kind": "changed",
+    "sha256": "07ed7594e20b1ad087a147f0736108da298bfb5e9a8aea1fcff00e59eb3f4f3f",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AMBIENT-QUADRIC-GRAPHS-20261114",
+    "kind": "changed",
+    "sha256": "ba55d0dc541c61bfda921d02152cc501b97723b91e4be6680c7490fa439bda06",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-THREE-AFFINE-PROJECTIONS-20261114",
+    "kind": "changed",
+    "sha256": "87c15698bc5b9da10283da334e0caadf8371449609f1c414840d2a07e843adf2",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-AFFINE-ENDPOINT-GEOMETRY-20261114",
+    "kind": "changed",
+    "sha256": "fe5b9f5e79e2ae1eb8c4cdc7a8091bf959cb64fe4f85279d5c2b39d8f53abcff",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRATIC-SYMMETRY-SATURATION-20261114",
+    "kind": "changed",
+    "sha256": "d82da187a27ba2ad9203947d064459361a9255ad86e753a867fe95925b764033",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRIC-OUTPUT-BASE-20261114",
+    "kind": "changed",
+    "sha256": "3e7c5f7900f5f350f799bf90f0f94970c37faf5651e245e182f7df77551e0e75",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-CRITICAL-GRAPH-20261114",
+    "kind": "changed",
+    "sha256": "80bcd0ce5058e2b720957ff4b7aca81271c569c1f731346409b0568529fa5d6c",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PROPER-MORSE-BOUNDARY-20261114",
+    "kind": "changed",
+    "sha256": "ed5a3a4120f378e5e0523cf6a4758f0687bc200fea341d4427d3a2c77481700b",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRATIC-PLANE-FIBRE-AFFINE-20261114",
+    "kind": "changed",
+    "sha256": "c8dc3f9bdb39f7e7fc4152869ef536cb839b335f0131967bbe35f142d29f0409",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-POSITIVE-WEIGHT-IMAGE-20261114",
+    "kind": "changed",
+    "sha256": "3887179a16497368494a5b92893bd2bd07be269744583757551fa4e4a71d8645",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SMOOTH-INFINITY-OUTPUT-20261114",
+    "kind": "changed",
+    "sha256": "54bfeca111b39837c7159709027798c2b3e6326aba3faf969e4b7ec1200405f6",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ABELIAN-CLASSGROUP-20261114",
+    "kind": "changed",
+    "sha256": "1357b82f696d17d7affbed30e7e015099d0af1c3a9b32bfccc59fa57f1a0e115",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REGULAR-PARAMETER-20261114",
+    "kind": "changed",
+    "sha256": "76c37384cdb3143ede273571e1ae86fb6ae2cf8c944eac5479d00cf45209c86f",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NORMAL-MONOGENIC-COVER-20261114",
+    "kind": "changed",
+    "sha256": "fa4a7728e368e0c9f1ac9f94ab947f2dae53977b0fcc9289d3794b37e6bc7324",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "implementation",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-LEADING-FIBRE-UNIT-GATE-20261115",
+    "kind": "changed",
+    "sha256": "3248c135cdd311ff5820bb582a41ce5cedeae39e99f87143423e560429085b1d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NILPOTENT-COVER-MONODROMY-20261115",
+    "kind": "changed",
+    "sha256": "f555bc6f50b0fde539e300e38d44db607118ac8baca4b4f29439e577f751e799",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NORMAL-QUOTIENT-BOUNDARY-20261115",
+    "kind": "changed",
+    "sha256": "3375ac46a4a040288288ea0aeaa8b0c81c3d23cbb4aaa7fb010c77a1ed8d697f",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-VALUATION-CRITICAL-CURVE-20261115",
+    "kind": "changed",
+    "sha256": "7e9f8a0b7bcf6648576c9e02ac1435f08dc0d2595315463eb763db63aaa51b61",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-FACTOR-SUPPORT-20261115",
+    "kind": "changed",
+    "sha256": "bab29650e0bbe8d4c118665394e96ff917ec6718213ac2d36be9d6d049dbf3de",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DERIVATIVE-POWER-MODIFICATION-20261115",
+    "kind": "changed",
+    "sha256": "ee8eacc3d2f91357da2fbdee38a648505a5a84f46eb18a33dde40889be4a3ca1",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FACTOR-RESULTANT-BARRIER-20261115",
+    "kind": "changed",
+    "sha256": "aed3f419720fd472c549da2333dd849ffd2bf8e28297e2fb517f80ec7d63c76a",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REDUCED-PENCIL-RATIONAL-MONODROMY-20261115",
+    "kind": "changed",
+    "sha256": "b9f4c1cae4190896337633d39d4a94eb6e67e861c5621e25d7c2cf3081b0cfa7",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PENCIL-MULTIPLICITY-BOUND-20261115",
+    "kind": "changed",
+    "sha256": "3c629102d93ed323cabe7482fe677d45ed64c28aaa361805f127a13198a3ca46",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PLANE-BRANCH-PARAMETERS-20261115",
+    "kind": "changed",
+    "sha256": "fb4c00ec6651742b02696fc50bdc3ece6009e23c59bbfa7119248f5c8f1bc4f5",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CENTRAL-GEOMETRIC-QUOTIENT-20261115",
+    "kind": "changed",
+    "sha256": "f263c754bc10c1a1ff4de7595c31a955e61915d6aba5c40dd6fe2946a0401fc3",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PARAMETER-NORMS-ALL-OUTPUTS-20261115",
+    "kind": "changed",
+    "sha256": "fefebea056d82395fd556a948b38b6231259c7be8d4cc9a75ce3f4b2de6bd242",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-MULTIVARIABLE-FIXED-MULTIPLIERS-20261115",
+    "kind": "changed",
+    "sha256": "23dc331afa4e7b3c058e225cd5c8e3e8c1f62179ba383221038813beaba14c1a",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PARAMETER-STABILITY-MOVING-MULTIPLIERS-20261115",
+    "kind": "changed",
+    "sha256": "24f9a5df7c1dae077114d1269e741de2165cbbd9362cd01659e728aee9c47403",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REFLEXIVE-PENCIL-DESCENT-20261115",
+    "kind": "changed",
+    "sha256": "6088684782bc2a528de4ff7bee83287e6449f9013358078645c8201d1f31e538",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INDEPENDENT-COEFFICIENTS-OVERLAPPING-OUTPUTS-20261115",
+    "kind": "changed",
+    "sha256": "241970d2591badbf496b0754a868523fbcf71fa0ef565f7ebc388acc344616e4",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ADDITIVE-ACTIONS-IMAGE-INVARIANCE-20261115",
+    "kind": "changed",
+    "sha256": "c263b17a8df2c3c2f00901f5b1243c093e7d0460f090e7c77fb621e61ec25278",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ONE-HELPER-OVERLAP-CLOSURE-20261115",
+    "kind": "changed",
+    "sha256": "28040ec1547aeb47f217a534a2628458a9565b023321707616f5dae52a4c8f8d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-HELPER-CURVES-20261115",
+    "kind": "changed",
+    "sha256": "7464d752bae1514f9cbbb367f89b21fa5379a2ea1230f3555426bc53f80f0c4e",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-UNIVERSAL-MODIFICATION-BOUNDARY-20261115",
+    "kind": "changed",
+    "sha256": "bbfb73bd8fc55b5dd7c580e301d09c4c97f31b25159ed60692a690712fadecf5",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-NAMBU-DIRECTIONS-20261115",
+    "kind": "changed",
+    "sha256": "0481c53ee7054354fca7bf1bc8cd37c6a38df4a668727915707467815786c2f6",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FREE-PROJECTION-TRACE-20261115",
+    "kind": "changed",
+    "sha256": "5eae50135f80a15a0a4313e61f0baecbba73f7894bada4180779f4be0610f8bd",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PRIMITIVE-HELPER-NORMALITY-20261115",
+    "kind": "changed",
+    "sha256": "f5e3c9ad613b2fbff1b6b1dab4dfb13bf609bd5528503711b28710a5477e43fe",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "implementation",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRIC-MIDDLE-CYCLE-20261115",
+    "kind": "changed",
+    "sha256": "0405a1246a6f46b605dd06ebdc35f02d9bd9afe7082b3b4d92df76dacbe742b8",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADICAL-TRACE-20261115",
+    "kind": "changed",
+    "sha256": "dd3f8999360df7e733e7f2ab1debdfdac3c080b892537958b26a8ea3684873ba",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CONTRACTIBLE-PENCIL-20261115",
+    "kind": "changed",
+    "sha256": "ef7ee028116936d89c397f99505548ff3830de80e4b6fc557c40448cd9524361",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ONE-PLACE-DESCENT-20261115",
+    "kind": "changed",
+    "sha256": "c4ac2dc1097bc5e7b8e046041bf42997c60d1ca6a93a75fe8e9f3c4dfd854514",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-EXTRA-PRIME-EXCISION-20261115",
+    "kind": "changed",
+    "sha256": "8b82dd7c51666f57d21b87073bad2e3996c6146aa28c48fa24bcea33aa0ea3f9",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FORMAL-DIVISOR-RATIONALITY-20261115",
+    "kind": "changed",
+    "sha256": "aa0a9faf494e46f3d08c700d619eb876eb09bc7ab71fa3b310a54b5a345a0383",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SEMISIMPLE-PENCIL-ORBITS-20261115",
+    "kind": "changed",
+    "sha256": "a63d5ed364950832a0b9f0debd824287e5694602132bb77168db209e9bf000c3",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NILPOTENT-PENCIL-ENDPOINT-20261115",
+    "kind": "changed",
+    "sha256": "c6bc6db5bfd324dd7e5e400d3945f5ddc33dd6eec6010799662247e635ae3e19",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ALL-CENTERED-JORDAN-IMAGES-20261115",
+    "kind": "changed",
+    "sha256": "bbf2cad585089700248c2ecba4eba558fb84efeed931aa166e921881bb206bbf",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AFFINE-PENCIL-RESIDUES-20261115",
+    "kind": "changed",
+    "sha256": "3c605033ea0327a7fda98cf072004bcc7a02bbb7545b95a0c508a3299c0f3a2f",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ELLIPTIC-CONE-CYCLIC-CLOSURE-20261115",
+    "kind": "changed",
+    "sha256": "491f002ca94fcefd54a7877df16d30d2754d1145aaa881d31a2f291b380cb6ff",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ALL-DEGREE-QUANTIFIERS-20261115",
+    "kind": "changed",
+    "sha256": "c25cdcc4f6b2e6c409f2a853526994f2a62d0d76e51c158e42771bb21051f1a1",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STATIONARY-POLE-KRYLOV-20261115",
+    "kind": "changed",
+    "sha256": "f4f7ada7acb9db34bc72566a9a2e33d9000b7d2eb61ce276b3a9e0e4c12b2a3d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-LOGARITHMIC-CURVE-DESCENT-20261115",
+    "kind": "changed",
+    "sha256": "659ba3e1eb84de14a39c4c33d4a36e40fcc030b424cbff6e1f7681a8cdfc03c5",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-SQUAREFREE-VOLUME-ARCHITECTURE-20261115",
+    "kind": "changed",
+    "sha256": "99ec3a1a8e29d8372af4d0f955d66a9994bc9a6ebf35b5d7c0f537d559dd1d20",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AFFINE-POLAR-SEMISIMPLE-20261115",
+    "kind": "changed",
+    "sha256": "c080c7f10e3446296305165483060172781b36d81161ea4ec9eda061722339f8",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-NEUTRAL-FACE-RESOLVENT-20261115",
+    "kind": "changed",
+    "sha256": "753e52fd2282ae125759ceb2d328198311373a069d0301c1c64a4034768c7f75",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-GAUSSIAN-SHEAR-NORMAL-FORM-20261115",
+    "kind": "changed",
+    "sha256": "1f8a2fde31e0785af5db97c843bc0deb6a01f2ac042286a4eb29e4bfe2752aaf",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SUSPENDED-MULTIPLIER-20261115",
+    "kind": "changed",
+    "sha256": "ab83eddb4dfd155794e3bfc21d87673ff32ebee871235c3a73afd94314e4b3b9",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ACTUAL-DIRECTION-RANK-ONE-20261115",
+    "kind": "changed",
+    "sha256": "aadb39a29217a6078e5e2386351d35a9b3d6e1e9d86e9c6b41d0c52e6d2efc01",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-JORDAN-POLAR-INVERTIBLE-20261115",
+    "kind": "changed",
+    "sha256": "7b4631b5f4b1eaa5e6bd85221b875a162a157ffd5dff9ecc3c894265c55c9944",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-GENERIC-POINT-HOLONOMIC-DESCENT-20261115",
+    "kind": "changed",
+    "sha256": "aacc707610872c994e6f8508c9ec78a714a5cb1d794e06642b9133da84de7175",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ZERO-EIGENVECTOR-RANK-ONE-20261115",
+    "kind": "changed",
+    "sha256": "6155e91124a5145aba7622ff95f02ddeb42261e473241b6c450a309bfb85d5a9",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-PRIMARY-THICKENING-ORACLE-20261115",
+    "kind": "changed",
+    "sha256": "aef15af8a22a532b6674e0dd8f114d186aecf1ca5253148a6bbb5fe33b7e68b7",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMPATIBLE-INNER-COORDINATE-20261115",
+    "kind": "changed",
+    "sha256": "ac79b42f4057026b9e06602b6ca389297aa25022016cae2c2f8f3b5890624a36",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-FULL-MODULE-FINITE-MULTIPLIERS-20261115",
+    "kind": "changed",
+    "sha256": "a7b9ba240a6d8f16be1f055a407cae1ae3f84e96aa1cd442629282d030b1ae0a",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-B-FUNCTION-LINEAR-CUTOFF-20261115",
+    "kind": "changed",
+    "sha256": "c2fa3a58668456d2c8b7d8ad96a36aac22d85859ca04de30a7a3c068847d020e",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ISOTROPIC-KERNEL-QUARTIC-20261115",
+    "kind": "changed",
+    "sha256": "e3247706f2ba03aa1d91ed20981f2224fe57f023996f7b5982f0c55d73611ceb",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RESONANCE-CHART-UNIFORMITY-20261115",
+    "kind": "changed",
+    "sha256": "adbc20286d8d13c5e9f8a44981bfaea5a42fdf12a9b7bfa46952ae73c2a2c01d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ALL-AFFINE-RESONANT-CUBIC-20261115",
+    "kind": "changed",
+    "sha256": "c95c420c665cfbd5cb2e4f2430611ca4856556b6071a12f3a6179d1416ffdf3e",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-OPERATOR-GAUSSIAN-LAURENT-20261115",
+    "kind": "changed",
+    "sha256": "01dc1c4974bf7f4b5a795860bc90e35d738a4150d6efdce6967794845f49c474",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-NORMAL-MODELS-20261115",
+    "kind": "changed",
+    "sha256": "86e1940cef9ae61d55ead4af675d4209f608e7c269fe6989e5aff47ccd9ece52",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-FINITE-FAMILY-SPECIALIZATION-20261115",
+    "kind": "changed",
+    "sha256": "6da31ad4577f702c7c047c78a9ba8538a3a478e5f5f9ea7ce5829df5d677416f",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-CYLINDER-ONE-COORDINATE-20261115",
+    "kind": "changed",
+    "sha256": "e2926f131406718cc35c9b7450edd1b71e8563224e6d4df96741338b4753ad77",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-HOLONOMIC-SOURCE-CUTOFF-20261115",
+    "kind": "changed",
+    "sha256": "935572225c9b6313f6532d18cfb3da6723b79f569602ddfac727db81b7e70801",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-ADDITIVE-K2-BARRIER-20261115",
+    "kind": "changed",
+    "sha256": "574e581f12b7ced3fcc8e8988087ee4c5d33ab369d79be59700b59b0298a2639",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RANKONE-ARTIN-20261115",
+    "kind": "changed",
+    "sha256": "27283fe1ceee2498d545fb62ff8a229e6c8aff6b3095204a292917b23ba287d2",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PRIMITIVE-QUOTIENT-CERTIFICATE-20261115",
+    "kind": "changed",
+    "sha256": "18b6f394271d3eba98c172c467b5c19a9ddf55c44951471a4071fde8cece674c",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUOTIENT-HOLES-PERIOD-BARRIER-20261115",
+    "kind": "changed",
+    "sha256": "7ecf24c79cb7f64ae277f5372eef2b29bf37b5ada54d515648a8edc9a52e1f8e",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ACTUAL-PERIOD-KERNEL-20261115",
+    "kind": "changed",
+    "sha256": "84b29a917383d9566c9ecf34c18081e8eee16c25802eadf2736391a88205e973",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-SLICE-ORIENTED-RECOVERY-20261115",
+    "kind": "changed",
+    "sha256": "dc0721b2b88a7fb5d55dfa50856bfbd437cd66ab4792906cb543c10b53c7c48d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RATIONAL-CORE-BOUNDARY-20261115",
+    "kind": "changed",
+    "sha256": "49af106dbea32f96c3e5d6467d00ba6f82bca72e210ebebef624ceb03fd2d647",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-LEADING-DECAY-CONSTANTB-20261115",
+    "kind": "changed",
+    "sha256": "3d3c8a5b50f8a9385d7c435181fb1b76241f32bb193a4f03d5b81510dd909bfc",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GENERIC-COORDINATE-SPECIALIZATION-20261115",
+    "kind": "changed",
+    "sha256": "20891ae66978a1dc39160db8e030794114d383b4c55f293f1be18beae12456ee",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-SIGN-TWISTS-20261115",
+    "kind": "changed",
+    "sha256": "3a882109a6ee57d59410b23cfe6ed1bb740f15e0885d8b83f8628c65a1dfdfa9",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RATIONAL-PULLBACK-RANK-20261115",
+    "kind": "changed",
+    "sha256": "344bd7b5f0fba44556fc12a10bf109124e9371508fe3c8231f2b3a8a416d081b",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TORUS-COORDINATE-VISIBILITY-20261115",
+    "kind": "changed",
+    "sha256": "92ea06bc10a8c449e590df4b0303cb30f3963889f7d5728a207f1306b3840028",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-INVERSE-CLOSED-SAFE-20261115",
+    "kind": "changed",
+    "sha256": "289a2c42fc3e7cae2349437192fbd1022c72719ed5335b374d91bf922cca2df5",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-MOTIVIC-FAMILY-BARRIER-20261115",
+    "kind": "changed",
+    "sha256": "6c93a33f563c9e9677ab789f6cb863236d56f124eb0b6898aa48f43c7134561a",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-QUADRATIC-AFFINE-SAFETY-20261115",
+    "kind": "changed",
+    "sha256": "eb2f2af930d0e3842f75c26f157c6f4d4224fd05fe4c4c8164e3376b14572af0",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTEGRAL-GLOBAL-VOLUME-PERIOD-BARRIER-20261115",
+    "kind": "changed",
+    "sha256": "0d703d0e44232f53b2639cc6b372348f745e797abc8bec31f0c99b2b721a4b8a",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-ORDER-TWO-DRIFT-20261115",
+    "kind": "changed",
+    "sha256": "ae9591a9523df81273fafeea3a05de2cbd8e497f37350ef2b62c269b46dc77b7",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-QUADRATIC-PHASE-ALL-ORDERS-20261115",
+    "kind": "changed",
+    "sha256": "a5b89c48ee43d446be443baef287b1c4420f5715169b3c5f0d2abce44c6ca6ea",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-NORMAL-FORMS-SEIFERT-20261115",
+    "kind": "changed",
+    "sha256": "cd1d7307da9cb5a5e4a500e23aa478fb0d0986221640351af67bd9997238c1b0",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FILTERED-PRINCIPAL-PAIR-20261115",
+    "kind": "changed",
+    "sha256": "b8927de688ca4da84aaa3dd97e2f567478868047691eb3a2e62ca1e5b0803b87",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-FLEXIBILITY-20261115",
+    "kind": "changed",
+    "sha256": "3fac43fd32336e99fd190963e436f2229e5953d889eda03469163e3d8ead11e8",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADICAL-PLINTH-RIGIDITY-20261115",
+    "kind": "changed",
+    "sha256": "b5b256da10e74712e2caf189726c302cc27f73c2d6d79ca3c1159bb921d87ab5",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-AMBIENT-COEFFICIENT-RESTRICTION-20261115",
+    "kind": "changed",
+    "sha256": "523d92b9971ed9c0ba39bc3c22bc5a3f1f6badb732c53bba43fa77841d4de486",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FINITE-PLINTH-DESCENT-20261115",
+    "kind": "changed",
+    "sha256": "62a42805872700713597608a601e92cf83688431413d5f831345f3e01ffa592a",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-EXACT-SOURCE-POLYNOMIAL-HOM-20261115",
+    "kind": "changed",
+    "sha256": "3436400b9cf0be45afd972dcdf579375ad00d6660b51eb4b7d3a7d2a460af5d8",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FLAT-PLINTH-ONE-VALUE-20261115",
+    "kind": "changed",
+    "sha256": "b07714e91863c225729337b690df484aad10f6bbbc350800e7d7af8c0c65a856",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-DERIVED-STRATA-FIELD-UNIFORMITY-20261115",
+    "kind": "changed",
+    "sha256": "69def871fa40942ac5a18cdc033dbb1f4623d9bc7272d3c1baed094da8d0fa8b",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-THREE-POINT-QUOTIENT-BARRIER-20261115",
+    "kind": "changed",
+    "sha256": "45af879db29c883404c8473d9f48acffa007781b74d0622784ee8ea800871c33",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-POLYNOMIAL-GAUSSIAN-TRANSFERS-20261115",
+    "kind": "changed",
+    "sha256": "db01bb88e1a88c7774ef98bab23fc99dfd4db7d52061b394767b502314e0d7fa",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-WEIGHTED-PERIOD-GLOBAL-NILPOTENCE-20261115",
+    "kind": "changed",
+    "sha256": "ed46667b2439fc8f3181dc88cb8e206ca3365fa9e2741f1cc833f62b34d6d996",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-NILPOTENT-SAFE-COMPLETION-20261115",
+    "kind": "changed",
+    "sha256": "fb359c3a0890d372f0fd050a9d908e6b22235edcccccc2f450404c1a6031142e",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-POSITIVE-CUTOFF-STABILIZATION-20261115",
+    "kind": "changed",
+    "sha256": "9d21a2fe4bf1f0b84961a8f2c6f62f32dcfa26478b8f253a18ec2d1d9cf352ce",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-TYPE-FIRST-ORBIT-MODULE-20261115",
+    "kind": "changed",
+    "sha256": "29f71dcf7c77d6b9224d490db42bcc9f0209d11906559a6ccfd4aa8d09f723d2",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FORMAL-FINITE-SEED-20261115",
+    "kind": "changed",
+    "sha256": "c6fb28a379d9601967dde81059cd8ecef494b1e908f40ac7efe9c2580c3f3eb8",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RAMIFIED-DIVIDED-HESSIAN-20261115",
+    "kind": "changed",
+    "sha256": "66a01c2c9d160127ae83ed09f3627203811d8c1e30a1d51ef2fdec601504cd8d",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-EFFECTIVE-RING-BOUNDS-20261115",
+    "kind": "changed",
+    "sha256": "abac821b229cbd4b6116887f3fc0ea242d90fae0d763b1a4511a65561cb9247c",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SATURATED-PLANE-FROBENIUS-SHEAR-20261115",
+    "kind": "changed",
+    "sha256": "4a70d67c7acf91b379e77e1f177c6057b6c8bfd17347826e185a43928ad45a6c",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTEGRAL-COTANGENT-LIFT-EQUIVALENCE-20261115",
+    "kind": "changed",
+    "sha256": "3a272f1cbf13609a8a76645aa13dc7a95b2e9bb348b7181df43ea9c914bde5ef",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-OPERATOR-TAIL-SAFETY-20261115",
+    "kind": "changed",
+    "sha256": "48b12e1a3a63d2ecd257a6c060934e3ca7a724ede33d7807585657bbeda056bc",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-HORIZONTAL-COEFFICIENT-COMPONENT-PRIME-20261115",
+    "kind": "changed",
+    "sha256": "24628beb09686308edfa5ea43c331e22b03cab652d10ac6ac98ada34ac13aca8",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-REAL-CURVE-MARKERS-20261115",
+    "kind": "changed",
+    "sha256": "5cdef9f4fea0eeef519f106e127095f2ccd77b50a38dfabc4b83359e379e3083",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-HARMONIC-ALGEBRA-20261115",
+    "kind": "added",
+    "sha256": "99c768fba938da5b7ffc149f505a99886428b692e912f5af22e5cd59c0e7d9a6",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-SOLID-CAP-GENUS-AND-CYCLIC-PRIME-MARK",
+    "kind": "added",
+    "sha256": "257e613229f6fc7616f52b3889be512e2b55ac88f1f9b818d3dc90ffe8af362c",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CANONICAL-INTERMEDIATE-STABLE-CI-20261115",
+    "kind": "added",
+    "sha256": "988c5a3ff0a297123d5a7647f4f364fbbcd5247172485db70e6a2e3086d15d83",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-FULL-POLYNOMIAL-SYMMETRY-20261115",
+    "kind": "added",
+    "sha256": "2c299738f3c139845fda45640833ac60a142db6befb6f50998003b027798fbdc",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-SCHUR",
+    "kind": "changed",
+    "sha256": "c389784ef28ebac5ada658b1e3b30caf58c62defd1d9d15efbb7124694633777",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-RESIDUAL-AUDIT",
+    "kind": "changed",
+    "sha256": "67aedf7f5a40b81f3bc5b7f33257e1ae7327167f00d7e0c33633b52389b10a02",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-TANG-20261113",
+    "kind": "changed",
+    "sha256": "42e9e804213e1ff7b50635403222403d63535c73fdf955a3f295ab1202e99ec3",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-QUARTIC-RULED-COMPATIBILITY",
+    "kind": "changed",
+    "sha256": "4efe2d80ccbf07f017144198f7785df8cd9f599c284216d9f849cfc2546cbfea",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-MOMENT-ALL-DEGREE",
+    "kind": "changed",
+    "sha256": "d6133c978d7c7c8ce5b1c57b87fa9a44200f6e6d1c88e3410befb6d964b04ce0",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structurally inspected or reviewed-claim fingerprint only; preserved without mathematical certification; disjoint dependency closure checked by scoped validator"
+  }
+]

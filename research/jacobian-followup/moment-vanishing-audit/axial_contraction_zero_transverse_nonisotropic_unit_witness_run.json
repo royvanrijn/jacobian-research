@@ -1,0 +1,8 @@
+{
+  "status": "EXACT_QQ_OUTPUT",
+  "returncode": 0,
+  "elapsed_seconds": 0.009327012987341732,
+  "input_sha256": "4612aa9d112ac42f13e848a34653339a6cb95f4e6bc5cf8e24b2ec31a704ae5a",
+  "output_sha256": "fe1e95f131d404c27e9f286bf593cc8e95f093f1846273034dbfe8346fd10944",
+  "output_bytes": 60612
+}

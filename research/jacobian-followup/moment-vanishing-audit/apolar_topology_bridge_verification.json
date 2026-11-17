@@ -1,0 +1,152 @@
+{
+  "completed": true,
+  "checker_sha256": "053ead83398292fff467d6345874446d43dac05345a18bb6f579aba48ff54ae9",
+  "hermite_controls": [
+    {
+      "n": 1,
+      "H": "X",
+      "killed_power": 0,
+      "square_surviving_power": 1,
+      "square_output": "2"
+    },
+    {
+      "n": 2,
+      "H": "-2*E + X**2",
+      "killed_power": 1,
+      "square_surviving_power": 2,
+      "square_output": "16"
+    },
+    {
+      "n": 3,
+      "H": "-6*E*X + X**3",
+      "killed_power": 2,
+      "square_surviving_power": 3,
+      "square_output": "288"
+    },
+    {
+      "n": 4,
+      "H": "12*E**2 - 12*E*X**2 + X**4",
+      "killed_power": 3,
+      "square_surviving_power": 4,
+      "square_output": "9216"
+    },
+    {
+      "n": 5,
+      "H": "60*E**2*X - 20*E*X**3 + X**5",
+      "killed_power": 4,
+      "square_surviving_power": 5,
+      "square_output": "460800"
+    },
+    {
+      "n": 6,
+      "H": "-120*E**3 + 180*E**2*X**2 - 30*E*X**4 + X**6",
+      "killed_power": 5,
+      "square_surviving_power": 6,
+      "square_output": "33177600"
+    }
+  ],
+  "contracted_controls": [
+    {
+      "n": 1,
+      "R": "-2*E**2 + L",
+      "killed_power": 2,
+      "square_surviving_power": 4,
+      "square_output": "192"
+    },
+    {
+      "n": 2,
+      "R": "12*E**4 - 12*E**2*L + L**2",
+      "killed_power": 5,
+      "square_surviving_power": 8,
+      "square_output": "15482880"
+    },
+    {
+      "n": 3,
+      "R": "-120*E**6 + 180*E**4*L - 30*E**2*L**2 + L**3",
+      "killed_power": 8,
+      "square_surviving_power": 12,
+      "square_output": "22072393728000"
+    },
+    {
+      "n": 4,
+      "R": "1680*E**8 - 3360*E**6*L + 840*E**4*L**2 - 56*E**2*L**3 + L**4",
+      "killed_power": 11,
+      "square_surviving_power": 16,
+      "square_output": "215963363400744960000"
+    }
+  ],
+  "full_passive_suspension_controls": [
+    {
+      "n": 1,
+      "full_passive_suspension": true,
+      "square_output": "192"
+    },
+    {
+      "n": 2,
+      "full_passive_suspension": true,
+      "square_output": "15482880"
+    }
+  ],
+  "actual_profiles": [
+    {
+      "m": 1,
+      "height": 0,
+      "deficit": 1,
+      "boundary_output": "2"
+    },
+    {
+      "m": 2,
+      "height": 1,
+      "deficit": 1,
+      "boundary_output": "48"
+    },
+    {
+      "m": 3,
+      "height": 1,
+      "deficit": 2,
+      "boundary_output": "4320"
+    },
+    {
+      "m": 4,
+      "height": 2,
+      "deficit": 2,
+      "boundary_output": "967680"
+    },
+    {
+      "m": 5,
+      "height": 2,
+      "deficit": 3,
+      "boundary_output": "435456000"
+    },
+    {
+      "m": 6,
+      "height": 3,
+      "deficit": 3,
+      "boundary_output": "344881152000"
+    },
+    {
+      "m": 7,
+      "height": 3,
+      "deficit": 4,
+      "boundary_output": "439378587648000"
+    },
+    {
+      "m": 8,
+      "height": 4,
+      "deficit": 4,
+      "boundary_output": "843606888284160000"
+    }
+  ],
+  "cutoff": "1",
+  "height_gap_fraction": "1/2",
+  "guard_refusals": 3,
+  "all_index_proof": "Written simultaneous-translation identity and exact factorial formula,not bounded checks.",
+  "general_actual_gap_decided": false,
+  "actual_eventual_but_nonlinear_constructed": false,
+  "fixed_symbol_height_subadditivity_refuted": false,
+  "all_swanson_representations_excluded": false,
+  "finite_symbolic_rees_generation_required_by_swanson": false,
+  "external_review": false,
+  "independent_replay": false,
+  "formal_verification": false
+}

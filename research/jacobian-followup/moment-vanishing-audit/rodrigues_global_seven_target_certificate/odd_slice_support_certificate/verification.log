@@ -1,0 +1,7 @@
+Oriented cyclic adapter, all ten cubic slots and trace equations: PASS
+Moments 2 through 6 agree with independent direct expansion: PASS
+Odd moments 3,5,7,9 have Jacobian determinant 49411883664: PASS
+h_g Bezout identity mod101: -48*x - 46 ; -11*x**2 + 10*x + 1
+P8_Q10 Bezout identity mod101: -34*x**9 - 24*x**8 + 23*x**7 + 17*x**6 + 23*x**5 - 43*x**4 + 12*x**3 + 6*x**2 - 2*x + 6 ; -39*x**7 - 22*x**6 - 13*x**5 - 3*x**4 - 30*x**3 + 26*x**2 - 40*x + 10
+ALL ASSERTIONS PASSED: first-six support is the Rodrigues origin.
+Elapsed seconds: 3.026623408000887

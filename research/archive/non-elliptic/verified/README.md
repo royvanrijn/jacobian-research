@@ -11,6 +11,10 @@ reduces the universal map from N to N-1 coordinates for N>=5, retaining
 complete fibres and stable atomicity. Its scaling section does not resolve
 primitive-presentation descent or global dimension minima.
 
+The [trace extension](../../../jacobian-followup/universal-keller-trace/README.md)
+further gives N-2 coordinates for N>=7 and canonical rational spaces of
+realizing generator lines, with explicit characteristic and boundary limits.
+
 The [typed claim ledger](../../../MATH_STATUS.json) records the exact scope and
 assurance of each result. [All core, cancellation and arithmetic claims](../../../index/core.md)
 are indexed together; this page gives a short reading path.

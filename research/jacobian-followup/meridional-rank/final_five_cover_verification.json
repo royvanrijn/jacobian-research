@@ -1,0 +1,666 @@
+{
+  "status": "PASS independent final-five source, peripheral, filling and upper4 inputs",
+  "source_audit": [
+    {
+      "name": "13a_233",
+      "H1_smith": [
+        1,
+        1,
+        403
+      ],
+      "source_generators": 3,
+      "balanced_cuts": 2,
+      "fragment_reductions": 4
+    },
+    {
+      "name": "13a_239",
+      "H1_smith": [
+        1,
+        1,
+        361
+      ],
+      "source_generators": 3,
+      "balanced_cuts": 1,
+      "fragment_reductions": 2
+    },
+    {
+      "name": "13a_253",
+      "H1_smith": [
+        1,
+        1,
+        337
+      ],
+      "source_generators": 3,
+      "balanced_cuts": 2,
+      "fragment_reductions": 4
+    },
+    {
+      "name": "13a_234",
+      "H1_smith": [
+        1,
+        1,
+        389
+      ],
+      "source_generators": 3,
+      "balanced_cuts": 2,
+      "fragment_reductions": 4
+    },
+    {
+      "name": "13a_242",
+      "H1_smith": [
+        1,
+        1,
+        359
+      ],
+      "source_generators": 3,
+      "balanced_cuts": 1,
+      "fragment_reductions": 2
+    },
+    {
+      "name": "13a_243",
+      "H1_smith": [
+        1,
+        1,
+        337
+      ],
+      "source_generators": 3,
+      "balanced_cuts": 3,
+      "fragment_reductions": 6
+    },
+    {
+      "name": "13a_244",
+      "H1_smith": [
+        1,
+        1,
+        311
+      ],
+      "source_generators": 3,
+      "balanced_cuts": 3,
+      "fragment_reductions": 6
+    },
+    {
+      "name": "13a_265",
+      "H1_smith": [
+        1,
+        1,
+        311
+      ],
+      "source_generators": 3,
+      "balanced_cuts": 2,
+      "fragment_reductions": 4
+    }
+  ],
+  "positive_controls": [
+    {
+      "name": "13a_233",
+      "root_degree": 2,
+      "P_to_C_matrix": [
+        [
+          2,
+          3
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "C_to_Q_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "fiber_intersections": [
+        3,
+        1
+      ],
+      "H1_order": 403,
+      "central_filling_slope_a_f": [
+        3,
+        -2
+      ],
+      "central_filling_nonabelian_S3": {
+        "root": [
+          1,
+          0,
+          2
+        ],
+        "k": [
+          0,
+          2,
+          1
+        ],
+        "a": [
+          1,
+          2,
+          0
+        ]
+      },
+      "JSJ_pieces": 3,
+      "finite_inputs": "PASS"
+    },
+    {
+      "name": "13a_239",
+      "root_degree": 3,
+      "P_to_C_matrix": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "C_to_Q_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "fiber_intersections": [
+        2,
+        1
+      ],
+      "H1_order": 361,
+      "central_filling_slope_a_f": [
+        -2,
+        -1
+      ],
+      "central_filling_nonabelian_S3": {
+        "root": [
+          1,
+          2,
+          0
+        ],
+        "k": [
+          2,
+          1,
+          0
+        ],
+        "a": [
+          1,
+          0,
+          2
+        ]
+      },
+      "JSJ_pieces": 3,
+      "finite_inputs": "PASS"
+    },
+    {
+      "name": "13a_253",
+      "root_degree": 2,
+      "P_to_C_matrix": [
+        [
+          -1,
+          -3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "C_to_Q_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "fiber_intersections": [
+        3,
+        1
+      ],
+      "H1_order": 337,
+      "central_filling_slope_a_f": [
+        -3,
+        2
+      ],
+      "central_filling_nonabelian_S3": {
+        "root": [
+          1,
+          0,
+          2
+        ],
+        "k": [
+          0,
+          2,
+          1
+        ],
+        "a": [
+          1,
+          2,
+          0
+        ]
+      },
+      "JSJ_pieces": 3,
+      "finite_inputs": "PASS"
+    }
+  ],
+  "targets": [
+    {
+      "name": "13a_234",
+      "root_degree": 2,
+      "source_H1_order": 389,
+      "P_to_C": [
+        [
+          2,
+          3
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "C_to_Q": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "central_outer_order": "ks",
+      "inner_fiber_sign": 1,
+      "fiber_intersections": [
+        3,
+        1
+      ],
+      "central_filling_slope_c_f": [
+        3,
+        -2
+      ],
+      "nonabelian_filling_certificate": {
+        "s": [
+          1,
+          0,
+          2
+        ],
+        "k": [
+          2,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          0
+        ],
+        "fiber": [
+          0,
+          1,
+          2
+        ],
+        "image_order": 6,
+        "noncommuting_words": [
+          "s",
+          "c"
+        ],
+        "filling_relation_passes": true
+      },
+      "proposed_JSJ_pieces": 3,
+      "finite_inputs": "PASS"
+    },
+    {
+      "name": "13a_242",
+      "root_degree": 3,
+      "source_H1_order": 359,
+      "P_to_C": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "C_to_Q": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "central_outer_order": "sk",
+      "inner_fiber_sign": 1,
+      "fiber_intersections": [
+        2,
+        1
+      ],
+      "central_filling_slope_c_f": [
+        -2,
+        1
+      ],
+      "nonabelian_filling_certificate": {
+        "s": [
+          1,
+          2,
+          0
+        ],
+        "k": [
+          0,
+          2,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          2
+        ],
+        "fiber": [
+          0,
+          1,
+          2
+        ],
+        "image_order": 6,
+        "noncommuting_words": [
+          "s",
+          "c"
+        ],
+        "filling_relation_passes": true
+      },
+      "proposed_JSJ_pieces": 3,
+      "finite_inputs": "PASS"
+    },
+    {
+      "name": "13a_243",
+      "root_degree": 2,
+      "source_H1_order": 337,
+      "P_to_C": [
+        [
+          -1,
+          -3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "C_to_Q": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "central_outer_order": "sk",
+      "inner_fiber_sign": 1,
+      "fiber_intersections": [
+        3,
+        1
+      ],
+      "central_filling_slope_c_f": [
+        -3,
+        2
+      ],
+      "nonabelian_filling_certificate": {
+        "s": [
+          1,
+          0,
+          2
+        ],
+        "k": [
+          0,
+          2,
+          1
+        ],
+        "c": [
+          1,
+          2,
+          0
+        ],
+        "fiber": [
+          0,
+          1,
+          2
+        ],
+        "image_order": 6,
+        "noncommuting_words": [
+          "s",
+          "c"
+        ],
+        "filling_relation_passes": true
+      },
+      "proposed_JSJ_pieces": 3,
+      "finite_inputs": "PASS"
+    },
+    {
+      "name": "13a_244",
+      "root_degree": 2,
+      "source_H1_order": 311,
+      "P_to_C": [
+        [
+          -1,
+          -3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "C_to_Q": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "central_outer_order": "ks",
+      "inner_fiber_sign": 1,
+      "fiber_intersections": [
+        3,
+        1
+      ],
+      "central_filling_slope_c_f": [
+        -3,
+        2
+      ],
+      "nonabelian_filling_certificate": {
+        "s": [
+          1,
+          0,
+          2
+        ],
+        "k": [
+          2,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          0
+        ],
+        "fiber": [
+          0,
+          1,
+          2
+        ],
+        "image_order": 6,
+        "noncommuting_words": [
+          "s",
+          "c"
+        ],
+        "filling_relation_passes": true
+      },
+      "proposed_JSJ_pieces": 3,
+      "finite_inputs": "PASS"
+    },
+    {
+      "name": "13a_265",
+      "root_degree": 2,
+      "source_H1_order": 311,
+      "P_to_C": [
+        [
+          -1,
+          -3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "C_to_Q": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "central_outer_order": "sk",
+      "inner_fiber_sign": -1,
+      "fiber_intersections": [
+        3,
+        1
+      ],
+      "central_filling_slope_c_f": [
+        -3,
+        2
+      ],
+      "nonabelian_filling_certificate": {
+        "s": [
+          1,
+          0,
+          2
+        ],
+        "k": [
+          0,
+          2,
+          1
+        ],
+        "c": [
+          1,
+          2,
+          0
+        ],
+        "fiber": [
+          0,
+          1,
+          2
+        ],
+        "image_order": 6,
+        "noncommuting_words": [
+          "s",
+          "c"
+        ],
+        "filling_relation_passes": true
+      },
+      "proposed_JSJ_pieces": 3,
+      "finite_inputs": "PASS"
+    }
+  ],
+  "upper4": [
+    {
+      "name": "13a_234",
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_242",
+      "seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_243",
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_244",
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    },
+    {
+      "name": "13a_265",
+      "seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "propagation_steps": 9,
+      "upper4_input_checked": true
+    }
+  ],
+  "corruptions_rejected": [
+    "changed source port",
+    "outer ks replaced by sk without its conjugation",
+    "lost Q242 base-path conjugation",
+    "wrong Q265 inner fiber sign",
+    "wrong physical source arc",
+    "genuine meridian slope r1 has no claimed nonabelian filling obstruction"
+  ],
+  "cyclic_meridian_filling_control": "k=1 or sk=1 leaves <s> with no relation",
+  "actual_rank_transfers": 0,
+  "assurance": "All eight literal sources checked directly; all5new lower inputs and individual uppers pass. No mutation or cross-knot rank transfer. Finite normal forms, primitive slopes and nonabelian filling quotients are independently replayed without producer imports; legacy parser retained only for index transport. Manifold realization, canonical JSJ and imported BW05 case6 necessity remain the separate written uniform proof, unformalized and externally unreviewed.",
+  "input_sha256": {
+    "verify_final_five_covers.py": "95c2a99ae34e7a971c77db4f302706849e3073f68b899970d700abcc768b9c40",
+    "final_five_structure_plan.json": "b695e03110c0c5024effec70389792846b1c74d49a1f0acf1470a81ae73d9b50",
+    "final_five_structure_results.json": "2082c86b695df0b0ef291d3c783b91418e125ec41d0db072697c0297b9b61a5d",
+    "final_five_peripheral_plan.json": "2b3401e23303a9e838fdca5ae83289adc4552ba1c22810bf76b7ca649f11a21c",
+    "final_five_peripheral_results.json": "0e435c0abf4a7e15d32f95be71329a8081283d7f3a293983b43670ba9aaf778f",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "verify_compact_covers.py": "a3791df7d81a6ce3f072cc19bf52efab78395376fae4d91ce0f12dce03770a2f",
+    "verify_port_assemblies.py": "d05cb9773dc4145bec2e88d3a2aadb2d86ec5c59d55d5030ba29fa0e036b07e2",
+    "verify_mutation_covers.py": "92020c13f5e7b533fbe5df0e2071959c6032f2e6b70e58fb8e2f0e1eab676871",
+    "verify_three_piece_covers.py": "a94454954c5a238b83cf3e45c5026834630ea5bb5ed762286783aade36f9b8cd",
+    "verify_four_piece_covers.py": "87b9307ec2ecffcc37e84ea2110a61cbc1f7a5ecf73fff768a73c0159c151b5f",
+    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "three_piece_cover_results.json": "99670469712c25013ec9e22c1737d2714342a3938a9091905b5cfe6f9076ac46",
+    "three_piece_cover_verification.json": "27158329f35b1a03302a1fa5af431cc3d6888386e2ba9a055ef5965cc73bb91b",
+    "three_piece_source_audit.json": "dce7410ebebefcc8303d39118064cbcc117af50108e042a0dd47e47c44335dd5",
+    "joint_a5_results.json": "6f2be622f64e34ba47127f5126f56bcc0f72cc98d4c29bb6d69e8a28ef623a9f",
+    "joint_a5_verification.json": "0e5f6d5cbb5e7d5974557e64a1c952b513c17cb80108cf7883c42dcca982bb99"
+  }
+}

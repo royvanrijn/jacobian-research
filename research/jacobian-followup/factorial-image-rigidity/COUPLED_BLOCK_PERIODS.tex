@@ -1,0 +1,418 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Qb}{\overline{\mathbb Q}}
+\newcommand{\E}{\mathbb E}
+\newcommand{\fall}[2]{#1^{\underline{#2}}}
+\title{Coupled angular products and Gamma block-radial limits}
+\author{Internal proofs and exact certificates; no priority claim}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Progress and boundary.}
+The \href{HYPERGEOMETRIC_MONOMIAL_WINDOWS.tex}{uniform monomial-window proof}
+and its source pins are revalidated. Its multiplicity bound does not prove
+simple roots or full two-term SFC. This note takes a different step toward
+higher-dimensional FC: it checks the complete block-radial limit of
+\href{sources/long-eit-vi-current.tex}{Long--Le Blanc, EIT VI,
+Theorem ``Block-radial limit''}, extends it to every positive real Gamma
+shape and polynomial markers, allows additional inactive variables with
+arbitrary strictly lower-degree couplings, and proves a genuinely coupled angular
+nonvanishing family with arbitrarily many active coordinates.
+The source's odd-degree geometric and elliptic continued-density inputs
+remain outside the completed audit; the limit and its product corollary
+do not require those inputs. No novelty, external-review or formal-verification
+claim is made. General FC and unrestricted SFC remain open.
+
+\section{A complete block limit, including inactive variables and markers}
+Partition the active independent $X_i\sim\operatorname{Gamma}(\alpha_i,1)$,
+$\alpha_i>0$, into nonempty blocks $B_1,\ldots,B_r$, $r\geq1$. Write
+\[
+ S_j=\sum_{i\in B_j}X_i,\quad A_j=\sum_{i\in B_j}\alpha_i,
+ \quad F_0=\prod_j S_j^{d_j},\quad D=\sum_jd_j,
+ \quad C_d=\prod_jd_j^{d_j},\qquad d_j\geq1.
+\]
+Let $T^{(j)}$ be the independent Dirichlet angular variables of these
+blocks and abbreviate $dT=(d_1T^{(1)},\ldots,d_rT^{(r)})$.
+Allow also any finite tuple of inactive independent variables
+$Z_l\sim\operatorname{Gamma}(\beta_l,1)$, $\beta_l>0$, independent of
+all active blocks.
+
+The empty inactive tuple is allowed.
+For a nonzero polynomial marker $H(X,Z)$ let $e=\deg_XH$ and let
+$H_{[e]}$ be its part of active degree $e$, retaining its full dependence
+on $Z$. The zero marker is identically zero.
+
+\begin{theorem}\label{thm:block}
+For arbitrary complex coefficients, $c\ne0$, homogeneous $G(X,Z)$ of
+\emph{total} degree $D-1$, and $\deg R\leq D-2$, put
+$F=cF_0+G+R$. Then
+\[
+ \lim_{m\to\infty}
+ \frac{\E[H(X,Z)F(X,Z)^m]}{m^e c^m\prod_j(A_j)_{d_jm}}
+ =\E_{T,Z}\left[H_{[e]}(dT,Z)
+ \exp\!\left(\frac{G(dT,0)}{cC_d}\right)\right]. \tag{1}
+\]
+For $D=1$ the remainder is zero. Every shape may be any positive real.
+A nonzero limit implies every sufficiently large marked moment is nonzero.
+A zero limit makes no zero-sequence decision. With no inactive variables
+and $H=1$, this is the probability-normalized pinned block-radial theorem.
+\end{theorem}
+\begin{proof}
+Tilt only the active block radii by $F_0^m$, dividing by
+$\E F_0^m=\prod_j(A_j)_{d_jm}$. Under this probability law the radii
+are independent $\operatorname{Gamma}(d_jm+A_j,1)$, and their angles
+retain their original Dirichlet laws. The inactive variables retain
+exactly their fixed Gamma laws. Thus $S_j/m\to d_j$ in probability
+(the variance is $d_j/m+A_j/m^2$), whereas $Z/m\to0$.
+
+Choose a compact neighborhood $V$ of $d=(d_1,\ldots,d_r)$ inside
+the positive orthant and fix $\delta>0$. Uniformly for $u\in V$,
+$\sum_l v_l\leq\delta$, and all angles,
+\[
+ \frac{F(muT,mv)}{c\,m^D\prod u_j^{d_j}}
+ =1+\frac{G(uT,v)}{cm\prod u_j^{d_j}}+O(m^{-2}).
+\]
+Its $m$th power is bounded by a constant independent of $m,u,v,T$.
+For every fixed $Z$, put $v=Z/m$: uniformly for $u\in V$ and all
+angles the power tends to
+\[
+ \exp\!\left(\frac{G(uT,0)}{c\prod u_j^{d_j}}\right),
+ \qquad m^{-e}H(muT,Z)\longrightarrow H_{[e]}(uT,Z).
+\]
+Moreover, on $V$,
+\[
+ |m^{-e}H(muT,Z)|\leq C(1+\textstyle\sum_l Z_l)^L
+\]
+for some fixed integer $L$. This is integrable under the unchanged
+inactive Gamma law. Conditional on fixed $T,Z$, concentration in $u$
+gives the asserted integrand at $d$. Dominated convergence in $T,Z$
+then proves the contribution from $u\in V$, $\sum Z_l/m\leq\delta$.
+
+We now bound its complement in absolute value, including near zeros
+of $F_0$, without dividing by $F_0$ there. Scale all radial variables
+as $(S,Z)=m(u,v)$, and set
+\[
+ W=\sum_j u_j+\sum_l v_l,\qquad
+ K_m(u,v,T)=e^{-W}|m^{-D}F(muT,mv)/c|.
+\]
+Uniformly on every compact set, including coordinate boundaries,
+$K_m\to K_0=e^{-W}\prod u_j^{d_j}$.
+The function $K_0$ has the unique global maximum
+$M=e^{-D}C_d>0$ at $(u,v)=(d,0)$. It need not vanish when an
+\emph{inactive} coordinate is zero. On a compact complement of
+$V\times\{\sum v_l\leq\delta\}$ there is therefore a fixed $\rho<M$
+such that $K_m\leq\rho$ for all sufficiently large $m$.
+For the unbounded tail, the uniform polynomial bound gives, after
+increasing a fixed threshold for $W$,
+\[
+ K_m\leq C e^{-W}(1+W)^D\leq\rho e^{-W/2}.
+\]
+The remaining radial weight is
+$w(u,v)=\prod u_j^{A_j-1}\prod v_l^{\beta_l-1}$.
+Its compact mass is finite even for shapes below one. If $h=\deg H$,
+then $|m^{-e}H(muT,mv)|\leq C m^{h-e}(1+W)^h$.
+Consequently the complementary scaled integral is bounded by a fixed
+power of $m$ times $\rho^m$: on the tail use
+$\int(1+W)^h e^{-mW/2}w(u,v)\,du\,dv=O(m^{-A-B})$,
+where $A=\sum A_j$ and $B=\sum\beta_l$.
+All angular measures are probability measures, including their faces.
+Finally the scaled normalization is, by Stirling,
+\[
+ N_m:=\frac{\prod_j\Gamma(d_jm+A_j)}{m^{Dm+A+B}}
+   =C_* M^m m^{-r/2-B}(1+o(1)),\qquad C_*>0.
+\]
+The additional fixed factors $\prod_l\Gamma(\beta_l)$ do not affect
+the estimate. Dividing the complementary bound by $N_m$ makes it
+exponentially small. This proves (1) for arbitrary complex lower
+coefficients and every positive shape.
+\end{proof}
+
+\begin{corollary}[A single top monomial]\label{cor:monomialtop}
+Suppose the highest ordinary homogeneous part of $F(Y)$ is a single
+nonconstant monomial $cY^a$, with $a_i\geq0$ and $c\ne0$. Put
+$I=\{i:a_i>0\}$, $D=\sum_i a_i$, $C_a=\prod_{i\in I}a_i^{a_i}$,
+and let $G$ be the degree-$D-1$ homogeneous part of $F$.
+For independent Gamma variables of arbitrary positive real shapes,
+\[
+ \frac{\E[F(Y)^m]}{c^m\prod_{i\in I}(\alpha_i)_{a_i m}}
+ \longrightarrow \exp\!\left(\frac{G(a)}{cC_a}\right)\ne0.
+\]
+Thus every sufficiently large pure moment is nonzero, for arbitrary
+complex strictly lower-degree terms in \emph{all} variables. For a
+marker of active degree $e$, its normalized limit is this exponential
+times $\E_Z H_{[e]}((a_i)_{i\in I},Z)$. If this amplitude is nonzero,
+every sufficiently large marked moment is nonzero as well.
+\end{corollary}
+\begin{proof}
+Take the positive-exponent variables as active singleton blocks and
+the zero-exponent variables as inactive. The singleton angular laws
+are point masses, so (1) gives both formulas.
+\end{proof}
+In particular, for the factorial functional
+$\mathcal L(Y^b)=\prod_i b_i!$, all shapes equal one and
+\[
+ F=X^3+Q_{\leq2}(X,Y,Z)
+ \quad\Longrightarrow\quad
+ \frac{\mathcal L(F^m)}{(3m)!}
+ \longrightarrow
+ \exp\!\left(\frac{Q_2(3,0,0)}{27}\right)\ne0. \tag{1a}
+\]
+This allows arbitrary complex $XY,XZ,YZ,Y^2,Z^2$ couplings and
+all affine terms. Likewise $X^2Y+Q_{\leq2}(X,Y,Z,W)$ has denominator
+$(2m)!m!$ and limit $\exp(Q_2(2,1,0,0)/4)$.
+The all-active example $XYZ+Q_{\leq2}$ remains included.
+Inactive variables have ordinary fixed Gamma scale; their next-layer
+couplings disappear from the exponential, while their marker moments remain.
+For example, a unit-exponential inactive marker $Z-1$ has zero leading
+amplitude, but for $F=X^3+XZ$ one has $\E[(Z-1)F]=1$.
+Orthogonal Gaussian block lifts preserve the statement and original
+markers after their actual angular averaging.
+
+More generally, any proved nonzero unmarked block limit survives
+adjoining inactive variables and arbitrary lower-degree couplings,
+provided $G(X,0)$ remains in that proved angular family. In particular,
+the source's block-separable next layer
+\[
+ G(X,0)=\sum_j d_j\xi_j\left(\prod_{l\ne j}S_l^{d_l}\right)
+       S_j^{d_j-1-a_j}\widetilde Q_j(X^{(j)}),\qquad a_j\leq d_j-1,
+\]
+has $G(dT,0)/C_d=\sum_j\xi_jQ_j(T^{(j)})$. Its unit limit is the
+product of the actual individual periods, independent of the inactive
+couplings. Nonvanishing follows for the previously proved inputs, such as
+\href{SIMPLEX_PENCILS_AND_AFFINE_LIMITS.tex}{integer-shape affine} and
+\href{TWO_ANGULAR_COORDINATES.tex}{specified cubic} periods. The extension
+does not audit the remaining geometric and elliptic inputs of EIT VI.
+
+\section{An arbitrary number of coupled angular coordinates}
+Let $U_1,\ldots,U_r$ be independent uniforms on $[0,1]$, $r\geq1$.
+For $j\geq1$ define the entire functions
+\[
+ J_j(z)=\sum_{n\geq1}\frac{z^n}{n!n^j},\qquad J_0(z)=e^z-1.
+\]
+Their differential system is
+\[
+ (e^z)'=e^z,\quad 1'=0,\quad J_1'=(e^z-1)/z,
+ \quad J_j'=J_{j-1}/z\quad(j\geq2).                  \tag{2}
+\]
+It has no finite pole except zero.
+
+\begin{lemma}\label{lem:indep}
+For every $k\geq0$, the functions $1,e^z,J_1,\ldots,J_k$ are
+$E$-functions and linearly independent over $\C(z)$. At every
+$\xi\in\Qb\setminus\{0\}$ their values are linearly independent over $\Qb$.
+\end{lemma}
+\begin{proof}
+The normalized Taylor coefficients of $J_j$ are $1/n^j$ for $n\geq1$
+and zero at zero. They are bounded rational numbers, with common
+denominator dividing $\operatorname{lcm}(1,\ldots,N)^j\leq16^{jN}$.
+For completeness, the quotient of the lcm through $2N$ by that through
+$N$ divides $\binom{2N}{N}$: every newly appearing highest prime power
+lies in $(N,2N]$ and contributes at least one to the binomial valuation.
+Iterate this bound at powers of two and round up to get the displayed
+exponential estimate. System (2) supplies the required differential
+equations. Thus the arithmetic and analytic $E$-function conditions hold.
+
+The functions $1,e^z$ are independent. If $J_1=a(z)e^z+b(z)$ with
+rational $a,b$, differentiation and independence force $b'=-1/z$,
+impossible for a rational function. Inductively, suppose the list through
+$J_{k-1}$ is independent and express $J_k$ as a rational combination
+of it. For $k\geq2$, comparison of the coefficient of $J_{k-1}$ after
+differentiation gives $a_{k-1}'=1/z$, again impossible. A derivative of
+a rational function has zero residue at every finite point.
+
+Apply \href{https://arxiv.org/html/math/0405549}{Beukers, Theorem 3.2
+and Lemma 3.1}, in the exact linear-lifting form checked in the
+\href{LONG_EIT_AND_FC2_AUDIT.tex}{Long/EIT audit}. Every nonzero algebraic
+$\xi$ is ordinary for (2). An algebraic linear relation of the values
+would lift to a nonzero polynomial-coefficient functional relation with
+the prescribed specialization, contradicting functional independence.
+\end{proof}
+
+\begin{theorem}\label{thm:product}
+For every $r\geq1$ and $\xi\in\Qb\setminus\{0\}$,
+\[
+ \Phi_r(\xi):=\int_{[0,1]^r}e^{\xi\prod U_j}\,dU
+       =\frac{J_{r-1}(\xi)}{\xi}
+\]
+is transcendental, hence nonzero. At zero it equals one.
+\end{theorem}
+\begin{proof}
+Termwise integration gives
+$\Phi_r(z)=\sum_{k\geq0}z^k/[k!(k+1)^r]=J_{r-1}(z)/z$,
+with the removable value at zero. Lemma~\ref{lem:indep} proves the claim,
+including $r=1$ where $J_0=e^z-1$.
+\end{proof}
+For $r\geq2$ the angular phase $\prod U_j$ is coupled; it is not a sum
+of phases from the separate blocks. We do not multiply individual
+periods to prove its nonvanishing.
+
+\section{Exact decisions for every algebraic polynomial marker}
+For $P(U)=\sum_a p_aU^a\in\Qb[U]$, put
+\[
+ W_P(t)=\sum_a p_a\prod_{i=1}^r\frac1{t+a_i+1},\qquad
+ I_P(z)=\int_{[0,1]^r}P(U)e^{z\prod U_i}\,dU.
+\]
+Then $I_P(z)=\sum_{k\geq0}W_P(k)z^k/k!$.
+All poles of the proper rational function $W_P$ are negative integers.
+In its partial fractions write
+$W_P(t)=\sum_{j,h}A_{j,h}/(t+j)^h$, $j\geq1$, $h\leq r$.
+For signed Stirling numbers of the first kind $s(j,l)$,
+\[
+ \sum_{k\geq0}\frac{z^k}{k!(k+j)^h}
+   =z^{-j}\sum_{l=1}^j s(j,l)J_{h-l}(z).             \tag{3}
+\]
+For negative indices use $J_{-b}=\theta^b(e^z-1)
+=e^z\sum_l\left\{{b\atop l}\right\}z^l$, $b\geq1$.
+Formula (3) follows by setting $n=k+j$ and expanding
+$\fall nj=\sum_l s(j,l)n^l$. Extending the resulting sum down to $n=1$
+adds zero, because $\fall nj=0$ for $1\leq n<j$.
+Therefore, exactly,
+\[
+ I_P(z)=a_0(z)+a_e(z)e^z+\sum_{l=1}^{r-1}a_l(z)J_l(z),             \tag{4}
+\]
+with algebraic-coefficient Laurent polynomials $a_l(z)$.
+At every nonzero algebraic $\xi$, Lemma~\ref{lem:indep} gives
+\[
+ I_P(\xi)=0\quad\Longleftrightarrow\quad
+       a_0(\xi)=a_e(\xi)=a_1(\xi)=\cdots=a_{r-1}(\xi)=0.          \tag{5}
+\]
+If any coefficient other than $a_0(\xi)$ is nonzero, the period is
+transcendental. Otherwise its value is the algebraic number $a_0(\xi)$.
+At $\xi=0$ use the direct mass $W_P(0)$ instead of Laurent substitution.
+
+This is an exact single-period zero test, not a test for a whole marked
+power sequence. For example, at $r=2$, $\xi=1$,
+\[
+ P(u,v)=1-2u+u(1-u)v
+\]
+is a nonzero marker with $I_P(1)=0$, since
+$P e^{uv}=\partial_u[u(1-u)e^{uv}]$. But $\E[P]=1/12\ne0$.
+In a block limit, such a zero only removes the leading asymptotic
+coefficient; lower corrections may survive.
+
+\section{Higher-dimensional factorial and Gaussian families}
+Take disjoint pairs of factorial variables $(X_j,Y_j)$ and write
+$S_j=X_j+Y_j$. For $d_1\geq2$, $d_j\geq1$ otherwise, let
+\[
+ \begin{split}
+ F_0&=\prod_{j=1}^r S_j^{d_j},\\
+ G_\xi&=d_1\xi\,S_1^{d_1-2}
+           \prod_{j=2}^rS_j^{d_j-1}\prod_{j=1}^r X_j,\\
+ F&=F_0+G_\xi+K(X,Y,Z)+R(X,Y,Z),\qquad \deg R\leq D-2.
+ \end{split}
+ \tag{6}
+\]
+Here $Z$ is any finite independent tuple of positive-shape Gamma
+variables, and $K$ is any homogeneous polynomial of total degree $D-1$
+with $K(X,Y,0)=0$, with arbitrary complex coefficients. Thus every
+strictly lower-degree coupling to inactive variables is allowed.
+The variables named $X,Y$ in (6) are exponential/factorial variables,
+not standard Gaussians. In the block limit each $U_j=X_j/S_j$ is uniform,
+and $G_\xi(dT)/C_d=\xi\prod U_j$.
+
+\begin{corollary}\label{cor:FC}
+For every algebraic $\xi$, every polynomial (6), with arbitrary complex
+coefficients in $K,R$, has all sufficiently large Gamma moments nonzero
+(and factorial moments when all shapes are one).
+For every complex $\xi$ and fixed algebraic inactive shapes, it
+satisfies FC and has infinitely many nonzero moments. No all-start short SFC window is asserted.
+\end{corollary}
+\begin{proof}
+For algebraic scales the unit limit is $\Phi_r(\xi)\ne0$.
+For arbitrary complex scales an all-moment counterexample in this
+finite-type family, defined over the algebraic number field of the
+fixed inactive shapes, would specialize to an algebraic one. Explicitly, the ideal of all moment polynomials is finitely
+generated; a proper such ideal has a $\Qb$-point by Nullstellensatz.
+The leading part $F_0$ is fixed and nonzero. This contradicts the
+algebraic-scale conclusion.
+
+Powers preserve the displayed class: replace $d_j$ by $k d_j$ and
+$G_\xi$ by $kF_0^{k-1}G_\xi$, which is exactly the new formula at the
+same $\xi$. The new inactive next layer is $kF_0^{k-1}K$,
+which still vanishes at $Z=0$; all other terms have degree at most $kD-2$.
+An eventual zero tail would therefore contradict FC for a positive power.
+\end{proof}
+
+\begin{corollary}[Ordinary tails over every rational algebra]\label{cor:rings}
+For each fixed $r,d$ and every starting index $N\geq1$, the universal
+ideal generated by all moments of (6) at indices $m\geq N$ is the
+\emph{ordinary unit ideal} in the rational polynomial ring of $\xi$ and
+all coefficients of $K,R$ (for any fixed finite tuple of inactive
+variables with positive rational shapes). Consequently, over every nonzero commutative
+$\Q$-algebra such a normalized family has no eventual pure zero tail.
+Its actual scalar normalization ideal for all marked periods is zero.
+\end{corollary}
+\begin{proof}
+A proper tail ideal would have a complex point by Nullstellensatz,
+contradicting Corollary~\ref{cor:FC}. A unit radical implies the ideal
+itself contains one, so some finite ordinary Bezout combination of
+the tail moments equals one. This identity persists under every base
+change. In particular a scalar annihilating all pure moments eventually
+is zero; the unit marker is among all actual markers. A unit overall
+scalar multiplying $F$ gives the same conclusion. No explicit uniform
+cutoff, short consecutive window or SFC assertion follows from this
+existence argument.
+\end{proof}
+The same ordinary tail-unit and zero scalar-normalization conclusions
+hold for the normalized single-top-monomial family with fixed positive
+rational shapes, by Corollary~\ref{cor:monomialtop} and the identical
+ordinary ideal argument.
+For $r=2,d=(2,1)$ the concrete new coupled example is
+\[
+ (X_1+Y_1)^2(X_2+Y_2)+2\xi X_1X_2+R_{\leq1}.       \tag{7}
+\]
+It has four active factorial variables. With inactive variables, add
+any quadratic $K$ vanishing at $Z=0$ and any affine $R$. For example,
+$K=Z(X_1+Y_2)+Z^2$ gives genuine active--inactive coupling without
+changing the limiting period.
+The nonzero algebraic-scale limit is $J_1(\xi)/\xi$, not a product of
+one-block periods.
+For the subfamily $K=R=0$, the first two moments are
+$\mu_1=12+2\xi$, $\mu_2=720+144\xi+16\xi^2$ and
+$\mu_2-(8\xi+24)\mu_1=432$, an explicit ordinary witness in this
+restricted subfamily. It is not a claimed cutoff for arbitrary $K,R$.
+
+Each $X_j,Y_j$ can also be a sum of independent Gamma variables whose
+shapes total one in each arm; the unit statement and arbitrary lower
+terms still follow for every algebraic scale. The complex-scale
+specialization statement applies when these fixed individual shapes are
+algebraic. Standard Gaussian lifts use
+$X_j=(x_{j1}^2+x_{j2}^2)/2$ and
+$Y_j=(y_{j1}^2+y_{j2}^2)/2$, giving $4r$ active Gaussian coordinates.
+Each inactive shape $k/2$, $k$ a positive integer, adds $k$ Gaussian
+coordinates through its half squared norm.
+Every original Gaussian marker is first averaged over these orthogonal
+groups. Theorem~\ref{thm:block} retains the averaged marker's actual top
+active-degree part, first taking the unchanged inactive Gamma
+expectation; (4)--(5) then decide its leading cube period when the
+resulting coefficients are algebraic.
+An exact zero average is a whole zero-sequence identity; a zero leading
+period alone is not.
+
+\section{Executable scope and remaining gap}
+\href{coupled_block_periods.py}{The exact implementation} verifies literal
+block tops on a nonempty subset of the actual variables, active-degree
+marker parts and exact inactive Gamma expectations for positive rational shapes,
+reduces every algebraic cube marker by (3), and decides (5) at exact
+algebraic scales. It exports the actual family (6), leading marker
+periods, and the distinction between a zero period and a zero sequence.
+\href{verify_coupled_block_periods.py}{Controls} compare independent
+Gamma, Dirichlet and original Gaussian moments, the exponential Taylor
+coefficients, Stokes zero controls, block-power identities and source
+normalizations. Numerical limit samples are labeled diagnostics only.
+The all-$r$ theorem uses the written independence and arithmetic lifting
+proof, not a bounded rank or moment scan.
+
+This adds coupled products on products of intervals, not every polynomial
+of two angular coordinates on a triangle. Arbitrary coupled simplex
+phases, the remaining EIT V geometric/elliptic audit, general FC and
+unrestricted SFC remain open. There is no implication that all complex
+scales have nonzero leading limits: already $\Phi_1(2\pi i)=0$.
+\end{document}

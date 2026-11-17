@@ -1,0 +1,85 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED120",
+  "sources": [
+    {
+      "path": "sources/primitive-product-action/burness-guralnick-author-fpr.pdf",
+      "url": "https://seis.bristol.ac.uk/~tb13602/docs/BG_fpr_final.pdf",
+      "title": "Burness--Guralnick, Fixed point ratios for finite primitive groups and applications",
+      "used": "COMPLETE printed pages4-5 rendered/read; Theorem4 and Table2 p5 IMPORTED CFSGclassification. Author-hosted66pagePDF, printedfirst-pageDate7Dec2021; bibliographicreferencearXiv2112.03967v2(8Nov2022), no byteidentity/versiondate conflation.",
+      "bytes": 810135,
+      "sha256": "ef27f67ce5a8fe6aa4369692c507ac42c561e31aed7b7dc5938687f8d2ad1adb"
+    },
+    {
+      "path": "TORUS_CUSP_SOLID_TORUS_EXCESS_AND_FIVE_SIXTHS_BOUND.md",
+      "url": "retained:PF2RULED114",
+      "title": "Strict high-image support mass cap",
+      "used": "Section5, eta_C>=sumceil(f(e+2)/5),6w<=5d-15-2F, ONLYhighmasscontractibletoruscusp scope.",
+      "bytes": 13172,
+      "sha256": "a8f5a9e6ef317dfb03c915b0eaf33e6e7136616e1d2d35c130e2be4bdb204420"
+    },
+    {
+      "path": "LOCAL_MONODROMY_CAPACITY_AND_WEIGHTED_BRANCH_EXCLUSION.md",
+      "url": "retained:PF2RULED113",
+      "title": "Whole branch, high image cost and purity foundation",
+      "used": "HighmassrequiresotherRAMimage, eachresidue1primeownexcess; originalfiniteN/allprimes.",
+      "bytes": 15001,
+      "sha256": "d110e04fd99ed7b94bf448b869a77b22a90602489c94f3207ef50d398d920010"
+    },
+    {
+      "path": "HIGH_INDEX_COLLISION_EXCESS_AND_NEAR_MAXIMAL_EXCLUSION.md",
+      "url": "retained:PF2RULED112",
+      "title": "Highmasscontractibility and own excess",
+      "used": "Do notidentifylargestcyclewithtotalmovedsupport.",
+      "bytes": 17893,
+      "sha256": "f4fa4bdcd3b13c19d44d4a257105328c30460e07e86e895e7f074f51918ff9f6"
+    },
+    {
+      "path": "HALF_SUPPORT_INERTIA_AND_PLANE_MONODROMY_EXCLUSIONS.md",
+      "url": "retained:PF2RULED118",
+      "title": "Some half-support inertia in everydegree",
+      "used": "Globalnormalizedsupportbudget/PF113FULLirreducibleimagehalfbound.",
+      "bytes": 11205,
+      "sha256": "7b4214be20d10569189acfa6eed54eafd8ce8836932c06802f235ea3d4125eff"
+    },
+    {
+      "path": "SIMPLE_RAMIFICATION_MULTIPLICITY_LEDGER_AND_HALF_SUPPORT_CUSPS.md",
+      "url": "retained:PF2RULED119",
+      "title": "Simple image excess repetition",
+      "used": "Only localindex2positivecuspcostneededforstrictinvolutioncap; noall-simpleglobalassumptionmade.",
+      "bytes": 8656,
+      "sha256": "ce347428cffcad1405eb7dc7e40287890e96ae5d16bfa87c0575678106f62a6f"
+    },
+    {
+      "path": "../monodromy-theory/LOCAL_IMAGE_AND_MARKS.md",
+      "url": "retained:KMFI94",
+      "title": "Finite normalization/purity/local images",
+      "used": "Normalfinitequotient unramifiedin codim1 etale overregularplane; nointermediatepolynomialrecognition.",
+      "bytes": 13155,
+      "sha256": "65db57362d88399be778d3f2f57091802f4938fabc229f63ea7fcddcdaa886e7"
+    },
+    {
+      "path": "sources/primitive-product-action/stacks-0BMB.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BMB",
+      "title": "Stacks purity of branch locus",
+      "used": "NormalfinitequotientoverregularA2, unramifiedcodim1 givesetale; connectedfiniteetaleA2trivialityretained.",
+      "bytes": 18578,
+      "sha256": "37a491b9ddf1fed9ccbc333dfd635731e6394e64c0d1d5a27a323a63b65e8585"
+    }
+  ],
+  "CFSG_classification_imported": true,
+  "author_PDF_pages_rendered_and_read": [
+    4,
+    5
+  ],
+  "author_PDF_pages": 66,
+  "original_Guralnick_Magaard_PDF_audited": false,
+  "subset_parameters_taken_from_modern_Table2_and_Theorem4": true,
+  "old_OCR_subset_parameter_bound_used": false,
+  "small_isomorphisms_triality_retained": true,
+  "independent_CFSG_proof_claimed": false,
+  "product_action_exclusion_CFSG_free": true,
+  "historical_priority_claimed": false,
+  "formal_verification": false,
+  "external_review": false
+}

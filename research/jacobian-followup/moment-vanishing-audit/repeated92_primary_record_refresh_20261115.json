@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-15",
+  "coverage": "Targeted primary arXiv abstract and submission-history refresh; not an exhaustive search and not a fresh body/proof read. Previously retained body audits remain separate.",
+  "records": [
+    {
+      "arxiv_id": "2607.18186",
+      "url": "https://arxiv.org/abs/2607.18186",
+      "title": "Small Counterexamples to the Gaussian Moments Conjecture",
+      "authors": [
+        "Christopher D. Long"
+      ],
+      "latest_version_observed": "v1",
+      "submission_time": "2026-07-20 17:24:43 UTC",
+      "abstract_and_submission_history_read": true,
+      "fresh_body_read": false
+    },
+    {
+      "arxiv_id": "2607.19012",
+      "url": "https://arxiv.org/abs/2607.19012",
+      "title": "Counterexamples to the xz-Conjecture and the Mathieu Conjecture for SU(2)",
+      "authors": [
+        "Christopher D. Long"
+      ],
+      "latest_version_observed": "v1",
+      "submission_time": "2026-07-21 11:54:10 UTC",
+      "abstract_and_submission_history_read": true,
+      "fresh_body_read": false
+    },
+    {
+      "arxiv_id": "2607.23887",
+      "url": "https://arxiv.org/abs/2607.23887",
+      "title": "A face-isolation proof of the two-variable Gaussian Moments Conjecture",
+      "authors": [
+        "Michael Wilson"
+      ],
+      "latest_version_observed": "v1",
+      "submission_time": "2026-07-26 23:14:19 UTC",
+      "abstract_and_submission_history_read": true,
+      "fresh_body_read": false
+    },
+    {
+      "arxiv_id": "2608.07338",
+      "url": "https://arxiv.org/abs/2608.07338",
+      "title": "An Explicit Five-Variable Counterexample to the Generalized Vanishing Conjecture",
+      "authors": [
+        "Alexander Dvorsky"
+      ],
+      "latest_version_observed": "v1",
+      "submission_time": "2026-08-07 15:33:13 UTC",
+      "abstract_and_submission_history_read": true,
+      "fresh_body_read": false
+    },
+    {
+      "arxiv_id": "2610.16157",
+      "url": "https://arxiv.org/abs/2610.16157",
+      "title": "Cubic moments of eigenfunctions on surfaces",
+      "authors": [
+        "Xing Wang",
+        "Cheng Zhang"
+      ],
+      "latest_version_observed": "v1",
+      "submission_time": "2026-10-12 04:31:22 UTC",
+      "abstract_and_submission_history_read": true,
+      "fresh_body_read": false
+    }
+  ],
+  "targeted_queries": [
+    "site:arxiv.org 2026 Gaussian Moments Conjecture",
+    "site:arxiv.org 2026 Generalized Vanishing Conjecture",
+    "site:arxiv.org 2026 Mathieu conjecture counterexample"
+  ],
+  "search_results": "Selected results return the retained Wilson,Long Gaussian,Long xz/SU(2),and Dvorsky records; no claim of complete current-literature coverage.",
+  "scope_boundary": "Wang-Zhang concerns spatial eigenfunction moments and curvature; it is not an exact Gaussian-polynomial pure/mixed moment theorem. No new external theorem or package is imported into the repeated-line refinement.",
+  "new_external_theorems_imported": false,
+  "external_package_executed": false
+}

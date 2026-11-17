@@ -1,10 +1,14 @@
 # Plane Jacobian programme
 
+Published [Domrina degree-four exclusion](../../../jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md) is now imported as HC4MYKR0:all quartic plane Keller realizations are excluded. Earlier quartic compatibility and internal completion chains remain controls or independent-proof work;they are no longer counterexample-realization gates. This does not certify those internal chains or settle full HC4/JC2.
+
+
 [Current open problems and literature review](../../../jacobian-followup/OPEN_PROBLEMS_AND_LITERATURE_2026-11-14.md)
 reconciles this archive with the14 November follow-ups. The normal-r7
 single-ramified-prime stratum is excluded under its stated hypotheses;
-additional-image configurations, the full F2 coefficient system and
-quartic compatible-normalization realization remain open. See the
+additional-image configurations and the full F2 coefficient system
+remain open. Quartic compatible-normalization realization is excluded by
+the published theorem linked above. See the
 [omitted-divisor ledger](../../../jacobian-followup/jc2-omitted-divisors/README.md),
 [current contact gate](../../../jacobian-followup/jc2-cusp-contact/README.md)
 and [quartic frontier](../../../jacobian-followup/affine-complements/README.md).

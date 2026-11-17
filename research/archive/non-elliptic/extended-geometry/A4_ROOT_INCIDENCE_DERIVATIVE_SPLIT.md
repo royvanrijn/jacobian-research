@@ -1,5 +1,12 @@
 # The root-incidence derivative split for \(A_4\)
 
+**Construction status, 15 November 2026:** [KMFI66 and the construction-closure bridge](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+exclude the proposed A4-preserving polynomial Keller completion on ordinary
+affine space in every dimension and faithful transitive action, subject to
+the internal central-cover proof. All local calculations below are retained.
+Construction continuations are historical; unresolved local classifications
+do not reopen this objective. Wright's A4 boundary states remain separate.
+
 ## 1. Scope
 
 The cone construction has already isolated the determinant
@@ -21,7 +28,8 @@ The outcome is an exact partial construction:
 
 These are the initial quotient-algebra results, not the current endpoint.
 No construction in this note gives an affine polynomial Keller map. The
-later results determine which continuations are still meaningful:
+later local results give the retained calculation boundaries below. None
+is a surviving affine-space Keller construction route after KMFI66:
 
 | Route | Current result | Reference |
 |---|---|---|
@@ -2297,7 +2305,7 @@ must lose degree modulo five, become reducible there, or enter this
 nontransverse \(H\)-adic neighborhood.  That neighborhood, rather than the
 generic cubic layer, is the next cubic-factor search.
 
-## 7. Structured next search
+## 7. Structured next search (historical; global objective closed)
 
 Both corrected-selector factorizations are closed, (6.48) gives a sharp
 first lower bound for their replacement, and Sections 6.11--6.15 identify

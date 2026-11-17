@@ -1,0 +1,14 @@
+ring r=0,(u1,u2),dp;
+option(redSB);
+ideal I=0;
+ideal J; ideal G;
+J=I,(-1/2)*u1^2*u2+(1/2)*u1*u2^2+(-1),(1)*u1^3+(-1)*u1*u2^2+(2);
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:7:8");}else{print("OPEN:7:8");print(G);}
+J=I,(-1/2)*u1^2*u2+(1/2)*u1*u2^2+(-1),(1/2)*u1^2*u2+(1/2)*u1*u2^2+(-1);
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:7:9");}else{print("OPEN:7:9");print(G);}
+J=I,(1)*u1^3+(-1)*u1*u2^2+(-1),(1/2)*u1^2*u2+(1/2)*u1*u2^2+(1/2);
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:8:9");}else{print("OPEN:8:9");print(G);}
+quit;

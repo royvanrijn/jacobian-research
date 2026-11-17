@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED125",
+  "sources": [
+    {
+      "path": "HEREDITARY_BLOCK_QUOTIENT_MONODROMY_REDUCTION.md",
+      "url": "retained:PF2RULED122",
+      "used": "Genuine quotient, one visible branch, affine transvection; all original primes retained",
+      "bytes": 12384,
+      "sha256": "7a1f416ae6958019e408828d5990477e4348224e38e3d75f6dca9cb7be0d90b3"
+    },
+    {
+      "path": "INTERMEDIATE_CRITICAL_AXIS_DESCENT_AND_AFFINE_CUSP_PROFILES.md",
+      "url": "retained:PF2RULED123",
+      "used": "Smooth intermediate, r critical A1s mapping isomorphically to C normalization, double and cusp local factors",
+      "bytes": 11841,
+      "sha256": "82f1db79cf1b6ccbb686d70a4334f6763aa0084425c54798e4682d59f6f6f921"
+    },
+    {
+      "path": "INTERMEDIATE_CHERN_BETTI_AND_END_OBSTRUCTIONS.md",
+      "url": "retained:PF2RULED124",
+      "used": "End restrictions and degree4 one-cusp survivor, not a new exclusion here",
+      "bytes": 12629,
+      "sha256": "0c3266ccd67adb7a773d21a006a0dde236da838ca7919ea8052f167dba3b6dca"
+    },
+    {
+      "path": "PERIPHERAL_LONGITUDE_AND_ZERO_NORMAL_CONTROL.md",
+      "url": "retained:PF2RULED60",
+      "used": "Prior original immersive quartic residual parity and preferred longitude argument, credited extension to intermediates/cusp",
+      "bytes": 11119,
+      "sha256": "a9835fe929f3b44652bc8f259fbd6f563732440b7421fe053688b670ee4e8d13"
+    },
+    {
+      "path": "FULL_PERIPHERAL_RATIONAL_LINKING_AND_LONGITUDE_JOINING_RECURSION.md",
+      "url": "retained:PF2RULED101",
+      "used": "Actual joint peripheral orbit lattice, rational linking and shear; longitude joining recursion",
+      "bytes": 15021,
+      "sha256": "cdac815c9fdc8085f94e45d8dfdd7e5d0f2cebaaa15b3950c39480b03c53b9f5"
+    },
+    {
+      "path": "WHOLE_PLANE_THOM_LATTICE_AND_COMPLETE_PERIPHERAL_OBSTRUCTION.md",
+      "url": "retained:PF2RULED111",
+      "used": "Complete integral coverage applies to original whole-plane normalization, not automatically intermediate",
+      "bytes": 17490,
+      "sha256": "006da8c3c8b7bf2c1f264bd43908f450ee6a6ab1b3c78fcbec10fa1946635bad"
+    },
+    {
+      "path": "dihedral_author_comparison.json",
+      "url": "retained:PF2RULED92",
+      "used": "Sealed prior unmodified authors-code comparison, not rerun or applied to binary affine covers",
+      "bytes": 17255,
+      "sha256": "9fd1947a790299c443846ea4af14dbc1930068a881d0886977180dd6f21a8087"
+    }
+  ],
+  "prior_PF60_rank_two_argument_credited": true,
+  "new_external_theorem_import": false,
+  "new_authors_code_run": false,
+  "new_PDF_visual_audit": false,
+  "original_coverage_transferred_to_intermediate": false,
+  "finite_samples_prove_theorem": false,
+  "formal_verification": false,
+  "external_review": false,
+  "web_comparison_consulted": [
+    {
+      "url": "https://arxiv.org/abs/2112.14790",
+      "scope": "Paper abstract: odd-dihedral linking algorithm, not arbitrary permutation covers"
+    },
+    {
+      "url": "https://github.com/patriciacahn/DihedralLinkingInvariants/blob/main/README.md",
+      "scope": "Authors code and pseudo-branch linking extension; existing sealed comparison retained"
+    },
+    {
+      "url": "https://arxiv.org/html/math/0110286",
+      "scope": "Orevkov-invariant conditional abelianity considered; already covered by PF46/59, no new import or claim here"
+    }
+  ]
+}

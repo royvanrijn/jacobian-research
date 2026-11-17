@@ -1,0 +1,39 @@
+{
+  "claim": "QIM1",
+  "status": "PASS",
+  "coefficient_scope": "Q[b,b^-1,h], every b!=0",
+  "monic_etale_cubic": "w^3-3*u*w/4+v/4",
+  "discriminant": "729*b/16",
+  "norm_x": "-4*b",
+  "rank_three_curve_module": "explicit basis 1,w,w^2; full differential action checked",
+  "rank_six_polynomial_matrix_degrees": {
+    "w": 3,
+    "x": 3,
+    "y": 4,
+    "inverse_x": 4,
+    "h_delta": 4
+  },
+  "uniform_matrix_generator_degree_bound": 4,
+  "matrix_generator_count": 5,
+  "actual_finite_matrix_Weyl_pair": {
+    "relation": "[Q,Y]=h*I6",
+    "Y_degree": 4,
+    "Q_degree": 5,
+    "Q_formula": "-(2/3)*X_inverse^2*Z"
+  },
+  "curve_and_isogeny_relations": "PASS",
+  "full_first_order_matrix_derivation_relations": "PASS",
+  "total_family_Jacobian": 27,
+  "singular_energy_boundary_split": "x^2*(x-u)",
+  "retained_Long_isogeny_hash_chain": "PASS",
+  "hashes": {
+    "ELLIPTIC_ISOGENY_MATRIX_MODULE.md": "7e179d9d0c8d05bba108f4751bca3a0902c630351794a85ff0622a2e87dd2ea4",
+    "check_isogeny_module.py": "d9d2f33de00be0dd95d33a92942d41acb2070a9672378bc8922f63c99ebe43fa",
+    "ELLIPTIC_ISOGENY_AND_QUANTUM_ENERGY.md": "e1a4004e24f868f89a1598c2e05c5a31d73345597e9d8fe431b7ef7cab45f577",
+    "quantum_elliptic_energy_controls.json": "bd5c27d0346bd6cab012550733bd6bd212ef17669b5741d9e530456094c9f9c2"
+  },
+  "coverage_boundary": "Exact identities for the parameterized curve-module matrix construction. Freeness, faithfulness in every operator degree, the scalar genus obstruction intrinsic boundary nonfiniteness and the all-matrix-size central-energy trace obstruction use written proofs. This is not a full Weyl lift of Long; the central energy parameter and elliptic curve differential operators cannot be identified with its noncentral quantum energy.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

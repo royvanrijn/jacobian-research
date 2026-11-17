@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-17",
+  "primary_sources": [
+    {
+      "author": "Pham",
+      "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+      "cached_file": "pham_asterisque130_1985.pdf",
+      "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+      "locations": [
+        "PartI Sections1-4"
+      ],
+      "application": "Full rank equals total isolated critical Milnor number under explicit complex gradient coercivity. The new proof establishes uniformity over compact coefficient paths before a generic count."
+    }
+  ],
+  "classical_mechanisms": [
+    "Gaussian integration by parts and stationary phase",
+    "One-variable power-phase characters",
+    "Laurent logarithmic twisted quotient",
+    "Conservation of local gradient-intersection multiplicity"
+  ],
+  "new_written_scope": "Every polynomial degree in F for P=wxy+F(w)+k under explicit AB/Fprime(0) conditions;full Gaussian retained. Valued-field formal frame,not all-ring statement.",
+  "assurance": {
+    "new_mathematical_checker_run": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "novelty_assessed": false
+  }
+}

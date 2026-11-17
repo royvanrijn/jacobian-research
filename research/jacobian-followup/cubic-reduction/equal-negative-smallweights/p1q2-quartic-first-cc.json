@@ -1,0 +1,319 @@
+{
+  "name": "p1q2-quartic-first-cc",
+  "weights": [
+    1,
+    -2,
+    -2
+  ],
+  "family": "quartic-first",
+  "chart": "cc",
+  "parameter_names": [
+    "q",
+    "s",
+    "t",
+    "r",
+    "rho"
+  ],
+  "source_sha256": "e97ec98b78ca7fd79f0e32ed43e0585df4442a5e9a2d08ce05e8c95affc04d6b",
+  "binary_lines": [
+    "c",
+    "c"
+  ],
+  "Q": [
+    {
+      "exponent": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "S": [
+    {
+      "exponent": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "T": [],
+  "U": [
+    {
+      "exponent": [
+        0,
+        3,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "R": [
+    {
+      "exponent": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "exponent": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "-2"
+    },
+    {
+      "exponent": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "-3"
+    }
+  ],
+  "outputs": [
+    [
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          3,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          2,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-2"
+      },
+      {
+        "exponent": [
+          2,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-3"
+      },
+      {
+        "exponent": [
+          4,
+          0,
+          3,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          2,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ]
+  ],
+  "generator_monomials": [
+    [
+      4,
+      0,
+      2
+    ],
+    [
+      6,
+      0,
+      3
+    ],
+    "saturation"
+  ],
+  "generators": [
+    [
+      {
+        "exponent": [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-4"
+      },
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-8"
+      },
+      {
+        "exponent": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-9"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-8"
+      },
+      {
+        "exponent": [
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-12"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "exponent": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "1"
+      }
+    ]
+  ]
+}

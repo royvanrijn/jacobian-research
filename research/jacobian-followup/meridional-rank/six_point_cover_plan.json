@@ -1,0 +1,124 @@
+{
+  "status": "FROZEN_BEFORE_SIX_POINT_AUDIT",
+  "selection": [
+    {
+      "name": "13a_129",
+      "orbit_indices": [
+        976
+      ]
+    },
+    {
+      "name": "13a_135",
+      "orbit_indices": [
+        498,
+        968
+      ]
+    },
+    {
+      "name": "13a_136",
+      "orbit_indices": [
+        976
+      ]
+    },
+    {
+      "name": "13a_137",
+      "orbit_indices": [
+        463,
+        972
+      ]
+    },
+    {
+      "name": "13a_194",
+      "orbit_indices": [
+        969
+      ]
+    },
+    {
+      "name": "13a_196",
+      "orbit_indices": [
+        495,
+        969
+      ]
+    },
+    {
+      "name": "13a_197",
+      "orbit_indices": [
+        974
+      ]
+    },
+    {
+      "name": "13a_198",
+      "orbit_indices": [
+        495,
+        974
+      ]
+    },
+    {
+      "name": "13a_233",
+      "orbit_indices": []
+    },
+    {
+      "name": "13a_234",
+      "orbit_indices": [
+        35
+      ]
+    },
+    {
+      "name": "13a_239",
+      "orbit_indices": []
+    },
+    {
+      "name": "13a_242",
+      "orbit_indices": [
+        495
+      ]
+    },
+    {
+      "name": "13a_243",
+      "orbit_indices": []
+    },
+    {
+      "name": "13a_244",
+      "orbit_indices": [
+        35
+      ]
+    },
+    {
+      "name": "13a_253",
+      "orbit_indices": []
+    },
+    {
+      "name": "13a_265",
+      "orbit_indices": [
+        479
+      ]
+    }
+  ],
+  "action": "Conjugation of A5 on its six Sylow5 subgroups; point stabilizer is D5 of order10",
+  "motivation": "The dimension5 augmentation character is irreducible over C and orthogonal to the old dimension4 character. Index6 allows characteristic5, unavailable for the old split index5 module. This tests a structurally different coefficient module, not a larger unmotivated degree sweep.",
+  "sharp_four_gain_threshold": 6,
+  "characteristics": "All primes other than2,3, by integral Smith data",
+  "limits": {
+    "covers": 16,
+    "seconds_total": 60,
+    "seconds_per_cover": 10,
+    "rows": 84,
+    "columns": 73,
+    "checkpoint_after_each_cover": true
+  },
+  "controls": [
+    "F2 index6 F7",
+    "C3*C3 index6 F3",
+    "C3*C3*C3 index6 F7"
+  ],
+  "scope": "All A5-induced index6 covers on these same targets. No claim about other degree6 monodromy such as A6. No adaptive replacements.",
+  "input_sha256": {
+    "joint_a5_catalogue.json": "3e0e2aff354d05c5916a675668d5f6072d562bb77b91810f45b789d0f9e0a6ee",
+    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
+    "joint_a5_results.json": "6f2be622f64e34ba47127f5126f56bcc0f72cc98d4c29bb6d69e8a28ef623a9f",
+    "joint_a5_verification.json": "0e5f6d5cbb5e7d5974557e64a1c952b513c17cb80108cf7883c42dcca982bb99",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "branched_cover_verification.json": "5dcfded79c85542440c05c81167643643c171ec8d33c2abc2667b2e58d5d0340",
+    "augmentation_cover_verification.json": "e1e613d3fa073959cfbb5537afaff613495173100b07b88b9fcd8c8b8af5b505"
+  }
+}

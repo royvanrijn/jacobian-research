@@ -1,0 +1,15 @@
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-12.sing line 5: `J=I,-u1^2*u2/2 + u1*u2^2/2 - 1,u1^3 - u1*u2^2 + 2;`
+OPEN:7:8
+0
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-12.sing line 8: `J=I,-u1^2*u2/2 + u1*u2^2/2 - 1,u1^2*u2/2 + u1*u2^2/2 - 1;`
+OPEN:7:9
+0
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-12.sing line 11: `J=I,u1^3 - u1*u2^2 - 1,u1^2*u2/2 + u1*u2^2/2 + 1/2;`
+OPEN:8:9
+0

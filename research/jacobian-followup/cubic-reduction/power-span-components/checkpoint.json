@@ -1,0 +1,298 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "component_count": 21,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.11,
+      "status": "primary-components"
+    },
+    {
+      "case": 1,
+      "component_count": 20,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.2,
+      "status": "primary-components"
+    },
+    {
+      "case": 2,
+      "component_count": 14,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.256,
+      "status": "primary-components"
+    },
+    {
+      "case": 3,
+      "component_count": 21,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.347,
+      "status": "primary-components"
+    },
+    {
+      "case": 4,
+      "component_count": 23,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.455,
+      "status": "primary-components"
+    },
+    {
+      "case": 5,
+      "component_count": 11,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.496,
+      "status": "primary-components"
+    },
+    {
+      "case": 6,
+      "component_count": 11,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.536,
+      "status": "primary-components"
+    },
+    {
+      "case": 7,
+      "component_count": 10,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.573,
+      "status": "primary-components"
+    },
+    {
+      "case": 8,
+      "component_count": 10,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.611,
+      "status": "primary-components"
+    },
+    {
+      "case": 9,
+      "component_count": 10,
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_equation_degree": 1,
+      "seconds": 0.648,
+      "status": "primary-components"
+    },
+    {
+      "case": 10,
+      "component_count": 1,
+      "dimensions": [
+        2
+      ],
+      "max_equation_degree": 0,
+      "seconds": 0.659,
+      "status": "primary-components"
+    },
+    {
+      "case": 11,
+      "component_count": 1,
+      "dimensions": [
+        2
+      ],
+      "max_equation_degree": 0,
+      "seconds": 0.669,
+      "status": "primary-components"
+    },
+    {
+      "case": 12,
+      "component_count": 1,
+      "dimensions": [
+        2
+      ],
+      "max_equation_degree": 0,
+      "seconds": 0.678,
+      "status": "primary-components"
+    },
+    {
+      "case": 13,
+      "component_count": 1,
+      "dimensions": [
+        2
+      ],
+      "max_equation_degree": 0,
+      "seconds": 0.688,
+      "status": "primary-components"
+    },
+    {
+      "case": 14,
+      "component_count": 1,
+      "dimensions": [
+        2
+      ],
+      "max_equation_degree": 0,
+      "seconds": 0.698,
+      "status": "primary-components"
+    }
+  ],
+  "scope": "Discovery decomposition of the cubed-form membership ideals; no minimality or smaller Keller witness claimed.",
+  "source_sha256": "cce7ee79d15adf327f4ae26342836e23ee4ca4d290002b53b0f420408da61e96",
+  "status": "primary-components"
+}

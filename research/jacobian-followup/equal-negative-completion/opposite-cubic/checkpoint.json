@@ -1,0 +1,11 @@
+{
+  "status": "terminal",
+  "exit_code": 0,
+  "seconds": 0.008,
+  "time_budget_seconds": 40,
+  "unit_marker": true,
+  "certificate_complete": true,
+  "log_sha256": "28b3110e4574d5b950d7a9644f8e18fc900c36e42ba79516c78b8c085f1031df",
+  "script_sha256": "0274046aaefa1bfb8d6b2d0488a8ef9f57fed0e50e40cd52e2887eff3ad27ba2",
+  "scope": "Primary exact computation; nonunit basis is not a counterexample, unit needs independent multiplication."
+}

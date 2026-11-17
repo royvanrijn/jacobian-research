@@ -1,0 +1,360 @@
+{
+  "completed": true,
+  "checker_sha256": "f2488cb30d127656365c0772e049e949b897115eba2645d497ef4f17ec97f87f",
+  "sympy_version": "1.14.0",
+  "cases": [
+    {
+      "name": "zero",
+      "degree": 0,
+      "zero": true,
+      "constant": true,
+      "real_image_has_interior": false,
+      "thin_image": true,
+      "nonzero_minors": [],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "nonzero constant",
+      "degree": 0,
+      "zero": false,
+      "constant": true,
+      "real_image_has_interior": false,
+      "thin_image": true,
+      "nonzero_minors": [],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "real linear",
+      "degree": 1,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": false,
+      "thin_image": true,
+      "nonzero_minors": [],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "pure circular linear",
+      "degree": 1,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": true,
+      "thin_image": false,
+      "nonzero_minors": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "minor": "-2*I"
+        }
+      ],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "circular power 2",
+      "degree": 2,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": true,
+      "thin_image": false,
+      "nonzero_minors": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "minor": "-8*I*X**2 - 8*I*Y**2"
+        }
+      ],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "circular power 3",
+      "degree": 3,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": true,
+      "thin_image": false,
+      "nonzero_minors": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "minor": "-18*I*X**4 - 36*I*X**2*Y**2 - 18*I*Y**4"
+        }
+      ],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "circular power 5",
+      "degree": 5,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": true,
+      "thin_image": false,
+      "nonzero_minors": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "minor": "-50*I*X**8 - 200*I*X**6*Y**2 - 300*I*X**4*Y**4 - 200*I*X**2*Y**6 - 50*I*Y**8"
+        }
+      ],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "real seed composition 2",
+      "degree": 4,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": false,
+      "thin_image": true,
+      "nonzero_minors": [],
+      "conditional_bad_monomial_degree_bound": 3,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "real seed composition 3",
+      "degree": 6,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": false,
+      "thin_image": true,
+      "nonzero_minors": [],
+      "conditional_bad_monomial_degree_bound": 5,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "real seed composition 4",
+      "degree": 8,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": false,
+      "thin_image": true,
+      "nonzero_minors": [],
+      "conditional_bad_monomial_degree_bound": 7,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "unary complex phase",
+      "degree": 3,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": false,
+      "thin_image": true,
+      "nonzero_minors": [],
+      "conditional_bad_monomial_degree_bound": 2,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "safe shear 1",
+      "degree": 3,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": true,
+      "thin_image": false,
+      "nonzero_minors": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "minor": "-2*I*T**2 - 6*I*T*X**2 + 6*I*T*Y**2 - 9*I*X**4/2 - 9*I*X**2*Y**2 - 9*I*Y**4/2 + I/2"
+        },
+        {
+          "coordinates": [
+            0,
+            2
+          ],
+          "minor": "-2*I*T*Y + 3*I*X**2*Y + 3*I*Y**3 + I*Y"
+        },
+        {
+          "coordinates": [
+            1,
+            2
+          ],
+          "minor": "2*I*T*X + 3*I*X**3 + 3*I*X*Y**2 + I*X"
+        }
+      ],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "safe shear 2",
+      "degree": 5,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": true,
+      "thin_image": false,
+      "nonzero_minors": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "minor": "-8*I*T**2*X**2 - 8*I*T**2*Y**2 - 20*I*T*X**5 + 40*I*T*X**3*Y**2 + 60*I*T*X*Y**4 - 25*I*X**8/2 - 50*I*X**6*Y**2 - 75*I*X**4*Y**4 - 50*I*X**2*Y**6 - 25*I*Y**8/2 + I/2"
+        },
+        {
+          "coordinates": [
+            0,
+            2
+          ],
+          "minor": "-4*I*T*X**2*Y - 4*I*T*Y**3 + 10*I*X**5*Y + 20*I*X**3*Y**3 + 10*I*X*Y**5 + 2*I*X*Y"
+        },
+        {
+          "coordinates": [
+            1,
+            2
+          ],
+          "minor": "4*I*T*X**3 + 4*I*T*X*Y**2 + 5*I*X**6 + 5*I*X**4*Y**2 - 5*I*X**2*Y**4 + I*X**2 - 5*I*Y**6 - I*Y**2"
+        }
+      ],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "safe shear 3",
+      "degree": 7,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": true,
+      "thin_image": false,
+      "nonzero_minors": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "minor": "-18*I*T**2*X**4 - 36*I*T**2*X**2*Y**2 - 18*I*T**2*Y**4 - 42*I*T*X**8 + 168*I*T*X**6*Y**2 + 420*I*T*X**4*Y**4 + 168*I*T*X**2*Y**6 - 42*I*T*Y**8 - 49*I*X**12/2 - 147*I*X**10*Y**2 - 735*I*X**8*Y**4/2 - 490*I*X**6*Y**6 - 735*I*X**4*Y**8/2 - 147*I*X**2*Y**10 - 49*I*Y**12/2 + I/2"
+        },
+        {
+          "coordinates": [
+            0,
+            2
+          ],
+          "minor": "-6*I*T*X**4*Y - 12*I*T*X**2*Y**3 - 6*I*T*Y**5 + 21*I*X**8*Y + 56*I*X**6*Y**3 + 42*I*X**4*Y**5 + 3*I*X**2*Y - 7*I*Y**9 - I*Y**3"
+        },
+        {
+          "coordinates": [
+            1,
+            2
+          ],
+          "minor": "6*I*T*X**5 + 12*I*T*X**3*Y**2 + 6*I*T*X*Y**4 + 7*I*X**9 - 42*I*X**5*Y**4 - 56*I*X**3*Y**6 + I*X**3 - 21*I*X*Y**8 - 3*I*X*Y**2"
+        }
+      ],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    },
+    {
+      "name": "retained quartic failure with interior",
+      "degree": 4,
+      "zero": false,
+      "constant": false,
+      "real_image_has_interior": true,
+      "thin_image": false,
+      "nonzero_minors": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "minor": "-2*I*T**4*X**2 - 6*I*T**4*X - 2*I*T**4*Y**2 - 9*I*T**4/2 + 2*I*T**2*X**2 + 3*I*T**2*X - 2*I*T**2*Y**2 + I*X + I/2"
+        },
+        {
+          "coordinates": [
+            0,
+            2
+          ],
+          "minor": "-2*I*T**3*X**2*Y - 6*I*T**3*X*Y - 2*I*T**3*Y**3 - 5*I*T**3*Y + 4*I*T*X**2*Y + 8*I*T*X*Y + 3*I*T*Y"
+        },
+        {
+          "coordinates": [
+            1,
+            2
+          ],
+          "minor": "2*I*T**3*X**3 + 9*I*T**3*X**2 + 2*I*T**3*X*Y**2 + 13*I*T**3*X + 3*I*T**3*Y**2 + 6*I*T**3 + I*T*X**2 + 4*I*T*X*Y**2 + 3*I*T*X + 5*I*T*Y**2 + 2*I*T"
+        }
+      ],
+      "conditional_bad_monomial_degree_bound": null,
+      "conditional_bound_requires_all_order_purity": true,
+      "purity_tested": false,
+      "safety_decided": false,
+      "witness_selected": false
+    }
+  ],
+  "affine_involution_controls": [
+    "-I",
+    "-1",
+    "1"
+  ],
+  "module_division_controls": 10,
+  "long_marked_controls": [
+    "1",
+    "2",
+    "6"
+  ],
+  "exact_Q_i_rank_filter_implemented": true,
+  "conditional_degree_bound_implemented": true,
+  "normalization_algorithm_implemented": false,
+  "all_order_purity_solver_implemented": false,
+  "general_holonomic_endpoint_solver_implemented": false,
+  "bad_monomial_selector_implemented": false,
+  "universal_theorem_verified_by_controls": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "thin_pure_Gaussian_example_constructed": false,
+  "interior_implies_safety": false
+}

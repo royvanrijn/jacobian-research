@@ -1,0 +1,101 @@
+{
+  "claim": "QZM1",
+  "status": "PASS",
+  "finite_trace_controls": [
+    {
+      "cover_degree": 2,
+      "test_function": "(w**2 + 2*w + 1)/(w + 2)",
+      "normalized_trace": "-2/(v - 4)",
+      "derivative_commutation": "PASS",
+      "order2_operator_commutation": "PASS"
+    },
+    {
+      "cover_degree": 3,
+      "test_function": "(w**2 + 2*w + 1)/(w + 2)",
+      "normalized_trace": "4/(v + 8)",
+      "derivative_commutation": "PASS",
+      "order2_operator_commutation": "PASS"
+    }
+  ],
+  "monomial_action_orders": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "linear_primitive_nonzero_residue": "-c1*kap/(h*lam**2)",
+  "shifted_polynomial_G_controls": [
+    {
+      "case": "quadratic_Long",
+      "G_degree": 2,
+      "root": "-2/h",
+      "zero_mode": "PASS",
+      "forced_polynomial_primitive": "v/h",
+      "nonzero_defect": "(3*h**2*r + 4*h*v**2 + 12*r*v**2)/(h*v**3)",
+      "lowest_v_exponent": -3,
+      "lowest_coefficient": "3*h*r"
+    },
+    {
+      "case": "linear_H_cubic",
+      "G_degree": 3,
+      "root": "-2/h",
+      "zero_mode": "PASS",
+      "forced_polynomial_primitive": "v/h",
+      "nonzero_defect": "(3*h**5 + 6*h**3*v**2 + 3*h**2*r*v**2 + 16*h*v**4 + 12*r*v**4)/(h*v**5)",
+      "lowest_v_exponent": -5,
+      "lowest_coefficient": "3*h**4"
+    },
+    {
+      "case": "tuned_derivative_zero",
+      "G_degree": 3,
+      "root": "-2/h",
+      "zero_mode": "PASS",
+      "forced_polynomial_primitive": "v/h",
+      "nonzero_defect": "-h*(h**3 + 3*h**2*r + 2*h*v**2 + 3*r*v**2)/v**5",
+      "lowest_v_exponent": -5,
+      "lowest_coefficient": "-h**3*(h + 3*r)"
+    },
+    {
+      "case": "degree5",
+      "G_degree": 5,
+      "root": "-5/3",
+      "zero_mode": "PASS",
+      "forced_polynomial_primitive": "v/3",
+      "nonzero_defect": "h*(8505*h**4 + 10125*h**3*v**2 + 6750*h**2*v**4 + 3588*h*v**6 + 2666*v**8)/(243*v**9)",
+      "lowest_v_exponent": -9,
+      "lowest_coefficient": "35*h**5"
+    }
+  ],
+  "constant_G_positive_pair": "PASS",
+  "canonical_transport": {
+    "Fourier": "exact transported action x_old*D_old",
+    "polynomial_Weyl_shear": "exact transported action x_old*D_old",
+    "residue_functional": "Res(f*dx/x), value1 on zero mode",
+    "new_position_localization_can_kill_zero_mode": true
+  },
+  "parameter_connection_mixed_flatness": "PASS",
+  "auxiliary_value": "(-8*h*r**2 - 8*h - 12*r**2)/(h**2*r**3)",
+  "cleared_denominator": "h**2*r**3",
+  "cleared_numerator": "-8*h*r**2 - 8*h - 12*r**2",
+  "cleared_commutator_identity": "h*f(R)",
+  "hashes": {
+    "QUANTUM_ZERO_MODE_TRANSPORT.md": "e6736efef0516eef5d89dc9c8ff89098f9d547712666c668f950e328ca14ce56",
+    "check_zero_mode_transport.py": "62619fee27ddc148e4425c3f17e9b9ab5ef5231ffbc42baf3fa5e0f8c7aae186",
+    "ALGEBRAIC_INFINITY_LIMITS.md": "71a4f107941fd6ee0abc7fc236829f6cafcba7d2f40c5b0bb50e3f379091b669",
+    "infinity_limits_controls.json": "7b7cd0ae606db8f0ef264d9fed8384667407601d49bd7bda04b3d2d27ff616e0",
+    "CYCLIC_INFINITY_MATE_OBSTRUCTION.md": "55350e7dde471f16e5993452cf2697439f58ba530e8b4778ad285bab36b3bb65",
+    "infinity_mate_controls.json": "44361af3db55b7e42899bfc107382217e1300177fe325948a196fcb94ff61226",
+    "QUINTIC_PHASE_AND_BRANCH_OBSTRUCTION.md": "8829fba45a6dc41a80fa8b81fda33cb1c1d0d6dee17971f1144b456ef09e2355"
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/0808.0699",
+      "used": "Section4.4 first-order connection deformations and self-Ext context. The cyclic resolution and cokernel computation are written directly."
+    }
+  ],
+  "coverage_boundary": "Exact trace/derivative and order2 operator controls on covers2,3, monomial identities through order5, shifted G examples of degrees2,3,5, a derivative-tuned example, rational residue, positive mate, actual Fourier/shear module transport with residue functional, parameter connection and denominator clearing. Universal nonzero cokernel, all degrees, all finite covers, automorphism covariance and identity stabilization use written proofs. A new localization may kill a transported supported vector. The polynomial separable theorem does not include arbitrary negative-v corrections or H constant. No identification with QRF2 or all-representative nonlifting is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

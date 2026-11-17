@@ -1,0 +1,10 @@
+{
+  "terminal": true,
+  "completed": false,
+  "timed_out": false,
+  "exit_code": 1,
+  "input": "common_time_seed_factor_initial_input.py",
+  "input_sha256": "2f448c20611b0a4c6b68dc6dd60731b9f9733ddf18b6708ebb4b0bfac3dc1dfc",
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_common_time_seed_factor.py\", line 139, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_common_time_seed_factor.py\", line 121, in main\n    started=time.monotonic();universal=universal_sources();print('Universal source divisibility, recurrence and homogeneous73 passed',flush=True)\n                                       ^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_common_time_seed_factor.py\", line 26, in universal_sources\n    assert s.cancel(delta**2/t)==t**3*D**2\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

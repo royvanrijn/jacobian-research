@@ -1,0 +1,20 @@
+{
+  "coefficient_field": "QQ",
+  "linear_harmonic": "h1_z*z+h1_t*t+h1_w*w",
+  "quadratic_harmonic": "h2_t2minuszw*(t**2 - w*z) + h2_w2*w**2 + h2_wt*t*w + h2_z2*z**2 + h2_zt*t*z",
+  "cubic_harmonic": "unrestricted",
+  "defining_equations": [
+    "h1_z",
+    "h1_t",
+    "h1_w",
+    "3*h2_t2minuszw**2/4 + h2_w2*h2_z2 + h2_wt*h2_zt/2",
+    "h2_t2minuszw**3/4 - h2_t2minuszw*h2_w2*h2_z2 + h2_t2minuszw*h2_wt*h2_zt/4 + h2_w2*h2_zt**2/4 + h2_wt**2*h2_z2/4"
+  ],
+  "interpretation": "H1=0 and B nilpotent; rank2 new theorem, rank1 previous exact theorem, B=0 odd theorem.",
+  "scope": "Every all-order pure characteristic-zero FIELD point of this closed container is full-Image safe. The container need not be pure; it is not asserted to exhaust the pure locus.",
+  "full_Image_cutoff": "m>coordinate_degree Q",
+  "nonzero_B_minimal_consecutive_set_theoretic_prefix": 10,
+  "B_zero_prefix": "No new prefix assertion; existing odd theorem supplies safety.",
+  "ordinary_ideal_stabilization": "NOT ASSERTED",
+  "assurance": "Rank2 largest exclusion retains exact QQ Singular dependency; B=0 imports odd theorem assurance. No msolve."
+}

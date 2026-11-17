@@ -1,0 +1,26 @@
+{
+  "proof": "DYADIC_BINOMIAL_SFC.tex",
+  "lower_one_equivalence": "For all positive n,e, SFC adjacent moments for X*(A+B*X^e) are equivalent to simplicity of T_(n,e)=sum binom(n,k)*(n)_(e*k)*t^k; identity only, universal simplicity unproved.",
+  "conditional_cubic_scope": "For prime n<q<=3(n-1)/2,n>=6, every common factor of moments n-1,n of X*(A+B*X^2) has even degree<=floor((q-n-1)/2); degree-preserving reduction divides gcd(H_(q-n),H_(q-n+1)). No uniform all-index coverage proved.",
+  "all_index_scope": "q=2^r,r>=0; X^q(A+B*X^q); integer Gamma shape1<=beta<=2q; all complex A,B giving a nonzero polynomial",
+  "uniform_input": "arbitrary rational 2-adic unit sequences multiplying (L+h)!,h0 or1",
+  "resultant_valuation": "3q*n*(n-1)-(n-1)*s2(n)-n*s2(n-1), independent of beta in the proved integer range",
+  "mechanism": "one common variable scaling; integral normalized coefficient polynomials; odd leading coefficients; Bessel/Fibonacci consecutive reductions; resultant odd",
+  "source_scope": "Rocks2015 author draft Lemma3.8 for unshifted factorial units compared; every input rederived; no full final-publication or priority audit",
+  "independent_of": [
+    "prior contour/simplicity results",
+    "parabola separation",
+    "MR/density",
+    "prime gaps",
+    "finite-prefix searches"
+  ],
+  "finite_parameter_extrapolation": false,
+  "other_lower_exponents_or_gaps_proved": false,
+  "all_positive_Gamma_shapes": false,
+  "general_FC_closed": false,
+  "unrestricted_SFC_closed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false
+}

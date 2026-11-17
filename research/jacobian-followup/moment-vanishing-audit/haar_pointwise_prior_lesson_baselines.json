@@ -1,0 +1,86 @@
+{
+  "METHOD-HAAR-ENTIRE-PERIOD-DECISION-20261115": {
+    "id": "METHOD-HAAR-ENTIRE-PERIOD-DECISION-20261115",
+    "area": "geometry",
+    "title": "Use entire actual Haar periods and a full joint source for exceptional MZ tests",
+    "when": "A compact Haar problem asks for eventual marked tails,finite exact decisions,or descent to a finite invariant subalgebra.",
+    "use": "Compactness makes all fixed exponential periods entire. For pure-null P,actual period rank1 is equivalent to all-marker safety;any bad marker has a transcendental entire period. Build the explicit five-operator SL2 source,retain its holonomic b-lift and every root-degree multiplier,then apply finite scalar indicial tests. Average ambient markers over Gamma. For finite-family existence use ordinary primary ideals and generic-component tests with all-integer algebraic specialization.",
+    "avoid": "Treating abstract cohomology rank as actual period-image rank,trying to descend a noninvariant failure by an unproved norm/power,or importing the Gaussian finite-pole defect into an entire Haar image. A single pure annihilator or rational basis does not test all markers. Finite jets certify tails only together with a valid scalar annihilator and both endpoint bounds.",
+    "boundary": "Pointwise and fixed-family decisions and linear cutoffs are internal theoretical proofs;the general solvers are unimplemented. Exact source,normalizer recurrence and exceptional ab-family controls pass. The whole three-parameter opposite-weight shear family has moment ideal(ab) and only safe pure points. Both full exceptional MZ models remain OPEN. The lowest-type invariant calculation now closes the full octahedral degree<=11 space with pure prefix7 and ideal prefix10;this is an executed exact calculation separate from the unimplemented general source solver. The later Gaussian radial bridge GEXCEPTIONALUNIFORM20261115 separately closes fixed-matrix-degree uniform slopes and closed pure-safe loci on both exceptional quotients;it also transfers ordinary coefficient ideals and nilpotent lifting.",
+    "reopen_when": "A new pure-null family has certified actual period-rank excess or a bad scalar period,or a general positive theorem decides an entire exceptional model. Do not reopen the closed ab-family by coefficient or shear-time changes.",
+    "claims": [
+      "GHAARPERIODRANK20261115",
+      "GHAARDECIDE20261115",
+      "GEXCEPTIONALNODE20261115",
+      "GEXCEPTIONALRADIAL20261115",
+      "GEXCEPTIONALUNIFORM20261115"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/ENTIRE_HAAR_PERIODS_AND_EXCEPTIONAL_DECISION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_period_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/GAUSSIAN_RADIAL_TRANSFER_AND_EXCEPTIONAL_UNIFORMITY.md"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_period_decision.py"
+    ],
+    "keywords": [
+      "Haar",
+      "Mathieu",
+      "entire",
+      "period rank",
+      "holonomic",
+      "finite family",
+      "binary polyhedral"
+    ],
+    "reviewed_claims": {
+      "GHAARPERIODRANK20261115": "26f1e08f7d0e11d2",
+      "GHAARDECIDE20261115": "fcd697239cbf086a",
+      "GEXCEPTIONALNODE20261115": "032f1f6a0049cad5",
+      "GEXCEPTIONALRADIAL20261115": "d6fc233b4b570b97",
+      "GEXCEPTIONALUNIFORM20261115": "f596d3e22b7d35c0"
+    },
+    "programme_status": "archived"
+  },
+  "METHOD-EXCEPTIONAL-GAUSSIAN-RADIAL-20261115": {
+    "id": "METHOD-EXCEPTIONAL-GAUSSIAN-RADIAL-20261115",
+    "area": "geometry",
+    "title": "Homogenize even exceptional invariants before Gaussian radial transfer",
+    "when": "Transferring Gaussian field uniformity,ordinary cutoff ideals or nilpotent lifting to SL2/2O or SL2/2I at fixed matrix-entry degree.",
+    "use": "Average representatives over Gamma;use -I to remove odd terms;homogenize using det1. The standard R4 quaternion Gaussian has det=r2 and radial factor2^((Dm+E)/2)((Dm+E)/2+1)!. Average arbitrary Gaussian markers and decompose by homogeneous degree. The factor is a characteristic-zero unit,so ordinary moment/cutoff ideals agree with the pulled-back Gaussian family. Apply existing closed-safe-field and nilpotent results. Before transferring a radial cancellation circuit to a finite SU2 quotient,test whether it requires the ENTIRE two-complex-coordinate factorial law with actual conjugates. The new critical-dimensional theorem forces a sphere covering and excludes that law on EVERY nontrivial finite quotient,even for arbitrary nonlinear coordinates in every degree.",
+    "avoid": "Using a bounded list of identities as an all-order proof,averaging a failure phase and assuming purity survives,omitting the Gaussian variance factor,or measuring degree only in invariant generators. Pointwise Haar cutoffs alone did not establish this fixed-degree uniform bridge. Do not assume a coherent highest-weight coordinate pair descends through an arbitrary finite right action,or fit longer finite moment prefixes for a law now excluded globally. Do not identify this quotient-coordinate law with the FOUR-ambient-Gaussian homogenization bridge. Pure alternating circuit equations and holomorphic moments alone do not imply full isotropy.",
+    "boundary": "Homogeneity and Reynolds supply the all-order proof;eight exact even-sector controls only check transcription. Safe pure-null phases at fixed degree share a field slope on both quotients,and their safe locus is closed. Gaussian coefficient algorithms remain theoretical. Nilpotent lifting gives thickness-dependent bounds,not ordinary stabilization or a thickness-independent nonreduced bound. Both global MZ decisions remain open and independent review remains outstanding. GRADIALCRITDIM20261116 requires positive compact connected source,actual conjugates and the full mixed moment law;at d=2q-1 it yields a sphere diffeomorphism for q>=2. GFINITESU2RADIALNO20261116 excludes every nontrivial finite SU2 quotient but does NOT exclude arbitrary phase-invariant circuit tables or decide full exceptional MZ. The retained actual radial bridge and real-height scalar theorems remain valid.",
+    "reopen_when": "Closure-first:resolve the ACTUAL exceptional complement-logarithm coupling or a general positive/negative MZ theorem. A different circuit law needs its actual quotient realization and marked outputs,not a finite prefix or unjustified invariant averaging. General formal apolar gaps remain the other major target. External review/outreach stays deferred.",
+    "claims": [
+      "GEXCEPTIONALRADIAL20261115",
+      "GEXCEPTIONALUNIFORM20261115",
+      "GRADIALCRITDIM20261116",
+      "GFINITESU2RADIALNO20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/GAUSSIAN_RADIAL_TRANSFER_AND_EXCEPTIONAL_UNIFORMITY.md",
+      "jacobian-followup/moment-vanishing-audit/gaussian_radial_transfer_verification.json",
+      "jacobian-followup/moment-vanishing-audit/RADIAL_MOMENT_LAWS_AND_SPHERICAL_COVERING_OBSTRUCTION.md",
+      "jacobian-followup/moment-vanishing-audit/radial_covering_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_gaussian_radial_transfer.py"
+    ],
+    "keywords": [
+      "Gaussian",
+      "radial",
+      "determinant",
+      "homogenization",
+      "Mathieu",
+      "exceptional",
+      "uniform cutoff",
+      "nilpotent"
+    ],
+    "reviewed_claims": {
+      "GEXCEPTIONALRADIAL20261115": "d6fc233b4b570b97",
+      "GEXCEPTIONALUNIFORM20261115": "f596d3e22b7d35c0",
+      "GRADIALCRITDIM20261116": "459d1b9d59339f33",
+      "GFINITESU2RADIALNO20261116": "1f058db333a3b615"
+    },
+    "programme_status": "archived"
+  }
+}

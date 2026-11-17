@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-17",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/NONHOMOGENEOUS_LEADING_DIVISORS_AND_POSITIVE_GA_GLOBALIZATION.md",
+  "proof_sha256": "e26367e4139f517ea22d4bf7709c7d9be487fc8ebec4dc055c587f9f89c6174f",
+  "all_affine_nonhomogeneous_invariant_divisor_multiplicity_bound_written": true,
+  "arbitrary_regular_endpoints_leading_degree_globalization_criterion_written": true,
+  "entire_strict_positive_cone_arbitrary_PW_mixtures_globalization_written": true,
+  "all_original_markers_and_full_corrected_extension_retained": true,
+  "all_polynomial_recompositions_classified": true,
+  "multiple_negative_seed_weights_claimed_covered": false,
+  "new_safe_points_outside_old_aut_nullcone_claimed": false,
+  "all_surviving_mixed_pure_phases_covered": false,
+  "actual_exceptional_pure_fixed_original_bad_marker_constructed": false,
+  "full_exceptional_cases": "OPEN on BOTH quotients",
+  "goal_status": "active",
+  "all_prior_capacity_aut_primitive_relative_Ga_branch_family_transfer_goals_results_preserved": true,
+  "new_degree_campaign": false,
+  "new_holonomic_CAS": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true,
+  "full_repository_validated": false,
+  "scoped_proof_sources_metadata_links": "PASS",
+  "all_prior_claims_preserved_at_integration": true,
+  "unrelated_lessons_work_preserved_at_integration": true,
+  "owned_prior_work_history_preserved": true,
+  "prior_rational_shear_lesson_updated_only_boundary_and_links": true,
+  "unrelated_mathematics_imported": false,
+  "rendered_views": [
+    "index/README.md",
+    "index/geometry.md",
+    "index/documents.tsv",
+    "knowledge/ALGORITHMS.md",
+    "knowledge/WORK_LEDGER.md",
+    "knowledge/work/geometry.md",
+    "STATUS.md"
+  ],
+  "git_diff_check": "PASS",
+  "full_repository_navigation": "FAIL pre-existing KDSQ6 missing document consumer research/artifacts/generated-results/README.md",
+  "every_eventual_pure_phase_all_but_one_Ga_directions_globalize_written": true,
+  "single_possible_nonglobal_comparison_direction_annihilates_unique_leading_factor_written": true,
+  "comparison_direction_localization_claimed_intrinsic_Neron_support": false,
+  "universal_safe_endpoint_normal_form_exists_proved": false,
+  "all_three_newclaim_consumer_fingerprints": "PASS",
+  "current_seven_views": "PASS",
+  "owned_amendment_preservation_guards": "PASS",
+  "current_owned_prior_work_history_and_protected_Gaussian_paragraph": "PASS",
+  "current_owned_navigation_paragraphs": "PASS",
+  "later_parallel_changes_retained": {
+    "claims": [
+      "OP-FACTORIAL-GENERAL20261116",
+      "FIRPADESEPARATION20261117",
+      "FIRADJACENTMONOSFC20261117",
+      "PF2RULED155"
+    ],
+    "lessons": [
+      "METHOD-HC4-ARTINIAN-TAIL-PROPAGATION",
+      "METHOD-FACTORIAL-RADIAL-PURITY",
+      "METHOD-HC4-SCHEMATIC-CONE-NILPOTENCE",
+      "METHOD-HC4-QUINTIC-FIELD-COVERAGE"
+    ],
+    "work": [
+      "WORK-HC4-RODRIGUES-TRANSFER",
+      "WORK-HC4-COVERAGE",
+      "WORK-HC4-SCHUR",
+      "WORK-HC4-D5",
+      "WORK-HC4-RESIDUAL-AUDIT",
+      "WORK-FACTORIAL-GENERAL"
+    ],
+    "documents": [
+      "KNOWLEDGE_BASE.md"
+    ]
+  }
+}

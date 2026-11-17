@@ -1,0 +1,12 @@
+{
+  "case": 13,
+  "case_sha256": "a8e37c90cb9ac0e2dc6139b8d5aad91806dd0d4b63b42006aa17c24db40b3368",
+  "components": [
+    {
+      "dimension": 2,
+      "equations": []
+    }
+  ],
+  "scope": "Primary minimal primes over Q; no independent radical decomposition certificate yet.",
+  "source_sha256": "cce7ee79d15adf327f4ae26342836e23ee4ca4d290002b53b0f420408da61e96"
+}

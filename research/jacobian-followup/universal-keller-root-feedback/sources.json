@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T05:26:34.723084+00:00",
+  "purpose": "Classical principal-minor criterion and retained complete-source compiler formulas; no novelty certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-structure/PROOF.md",
+      "locator": "UAQTILT1 general quadratic tilt and UAALLATOM1 primitive self-atomicity argument.",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-feedback-rigidity/PROOF.md",
+      "locator": "UAPARALLEL1 partial processing and transitive product-fibre boundary.",
+      "sha256": "132ad2cc9384e5ba1e3a9bce4afceebe86d904478c6cc01dcf676fe85ab9919f"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-higher-return/PROOF.md",
+      "locator": "UAMARKEDDEF1 finite-order restrictions; UARETURNESC1 source-leaf chart and non-descended rank-two profile.",
+      "sha256": "9d8ee01e5b83532f86409f5b402b6c92752491049c193821b51824e81fec3c4b"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-canonical-filter/PROOF.md",
+      "locator": "UACANFIB1 exact canonical receiver; its auxiliary first-output shift lies outside the new theorem.",
+      "sha256": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-compression/verify.py",
+      "locator": "Pure source_map constructor.",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "archive/non-elliptic/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "locator": "UAM1 source reconstruction and inverse polynomial.",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/berson-2012.html",
+      "url": "https://arxiv.org/html/1201.1137v2",
+      "locator": "Lemma5.7 and Remark5.8, vanishing principal minors over a domain and permutation triangularity; application here is distinct from the paper no-mixed-term maps.",
+      "bytes": 623976,
+      "sha256": "f9bf9cf60aa729ead568251f692876a2b9806d330f81725bd950313427b851d7"
+    }
+  ]
+}

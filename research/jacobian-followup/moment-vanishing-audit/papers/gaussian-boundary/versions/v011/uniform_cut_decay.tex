@@ -1,0 +1,223 @@
+\subsection{A uniform cut criterion in any degree}
+\label{sec:uniformcutdecay}
+
+Intersecting critical curves need not admit a simple formal normal
+form. The following criterion avoids choosing one. Its hypothesis
+concerns the full phase $tP-q$, uniformly in large complex $t$;
+bounded critical points alone would not suffice.
+
+\begin{theorem}\label{thm:uniformcuts}
+Let $P,q\in\C[x_1,\ldots,x_n]$, with $P$ nonconstant. Suppose
+there are fixed $c,R_0,t_0>0$ such that
+\begin{equation}\label{eq:uniformphasegradient}
+ \|\nabla_x(tP-q)(x)\|\ge c\|x\|
+       \quad(|t|\ge t_0,\ \|x\|\ge R_0).
+\end{equation}
+Along every fixed ray $t=Re^{i\theta}$, the full rapid-decay
+homology has a flat cut basis $\Gamma_i(t)$, attached to the
+critical values $c_i(t)$ of $tP-q$, such that for every fixed
+polynomial $a$,
+\begin{equation}\label{eq:normalizedcutdecay}
+ e^{-c_i(t)}\int_{\Gamma_i(t)}a(x)e^{tP-q}\,
+                 dx_1\cdots dx_n\longrightarrow0.
+\end{equation}
+Each $c_i(t)=\alpha_i t+O(1)$, where $\alpha_i$ is a critical
+value of $P$. If all critical values of $P$ lie in a closed
+half-plane through zero, a supporting $t$ ray makes every flat
+period of every such fixed form tend to zero.
+\end{theorem}
+
+We give the completeness, tail and limiting-form arguments separately.
+None follows just from counting the phase-critical points.
+
+\begin{proof}
+For every sufficiently large $t$, \eqref{eq:uniformphasegradient}
+makes the phase-critical set finite and contained in one fixed
+ball. It also gives complex tameness at infinity. Pham's tame
+Milnor decomposition~\cite[Part~I and Appendix]{Pham} identifies
+the complete middle rapid-decay homology with the local vanishing
+homologies carried along cuts from its critical values. The rank
+is the sum of their Milnor numbers, including degenerate points.
+If this rank is zero the conclusion is immediate. Otherwise
+retain all these local generators; identical critical values
+are grouped, not discarded.
+
+On the chosen ray, the critical points and values are algebraic
+functions of $R$, after a finite cover. Enlarge $R_1$ so branches
+and multiplicities stabilize. Choose $|\eta|=1$ with
+$\Re\eta\ge1/2$ so the cuts
+\[
+ S_t(x)=c_i(t)-\eta s,\qquad s\ge0,\quad S_t=tP-q,
+\]
+are disjoint for $R>R_1$, except at identical grouped endpoints.
+There are only finitely many forbidden choices: every nonzero
+difference of two algebraic critical values has one limiting
+direction. The cut angle is independent of $\theta$. In
+particular a supporting $t$ ray need not be a generic ray.
+
+Along a cut, normalized complex gradient transport is
+\[
+ x_s=-\eta\,\overline{\nabla S_t}/\|\nabla S_t\|^2,
+               \qquad S_t(x(s))_s=-\eta.
+\]
+Outside the fixed ball,
+$|d\|x\|^2/ds|\le2/c$. All local vanishing generators start
+in that ball. With fixed sufficiently large $A$ and $B>2/c$,
+they therefore have representatives inside the carrier
+\begin{equation}\label{eq:uniformcarrier}
+ \|x\|^2\le A+Bs.
+\end{equation}
+At its outer boundary the transport points strictly inward
+relative to this inequality. No trajectory escapes at finite
+cut length, and the cuts avoid all other critical values.
+
+We must control a single family of representatives. The gradient
+flow itself need not be semialgebraic. Instead compactify $x$
+by $x/\sqrt{1+\|x\|^2}$ and $s$ by $s/(1+s)$. Take the closure
+of each constrained cut carrier and mark its rapid boundary
+$G$, where $s=\infty$. Inequality~\eqref{eq:uniformcarrier}
+forbids spatial infinity at finite $s$. For fixed $R$, the
+relative chains of this compact pair are precisely locally
+finite cut chains with their ends allowed only at rapid
+infinity. This follows also by a compatible triangulation of
+the compact pair: its relative simplices restrict to the usual
+locally finite chain model in the open carrier. The exponential
+there is exactly $e^{c_i-\eta s}$.
+
+For the full unconstrained cut carrier, mark and remove any
+spatial boundary at finite $s$; it is not a rapid boundary.
+The constrained carrier, the full carrier, their rapid boundaries
+and this excluded boundary form a finite family of semialgebraic
+subsets in the same compactification. Apply the compatible
+finite-family form of Hardt triviality to projection onto $R$.
+It gives one trivialization on an unbounded interval, preserving
+these subsets and their inclusions. The precise form is stated
+in Drusvyatskiy--Lewis~\cite[Theorem~2.25]{DrusvyatskiyLewis};
+it is Hardt's theorem. Semialgebraic triangulation and the
+chain-current boundary rule are as in
+Hardt--Lambrechts--Turchin--Voli\'c~\cite[Sections~2.1 and~3,
+especially Theorem~3.5]{HLTV}.
+
+Gradient transport already showed that the constrained inclusion
+contains every local vanishing generator. At one parameter choose
+finitely many integral relative chains whose images are a basis
+over $\C$ of the full rapid-decay space. A nonprimitive integral
+image causes no problem over $\C$. Transport these chains by
+the compatible trivialization. They form a jointly semialgebraic
+family with fixed integer multiplicities and supports satisfying
+\eqref{eq:uniformcarrier}. Their images are a flat basis of the
+actual homology local system: on each compact parameter interval
+the transport preserves the relative pairs and is proper on
+every finite phase band. Thus this is a completeness statement
+for actual cycles, not an identification of presumed formal blocks.
+
+Here is the needed uniform mass bound. In a fixed semialgebraic
+family of $d$-chains with bounded multiplicities, the mass inside
+a ball of radius $L\ge1$ is at most $C L^d$, uniformly in the
+parameters. Partition tangent planes by their largest coordinate
+$d$-minor. The Cauchy--Binet identity gives a lower bound
+$\binom Nd^{-1/2}$ for some such minor in ambient dimension $N$.
+The area formula then bounds that piece by its coordinate
+projection volume times the number of preimages. Semialgebraic
+uniform finiteness bounds those finite fibers independently of
+the parameters; see, for example,
+\cite[Theorem~2.32]{DrusvyatskiyLewis}. Sum the finitely many
+pieces and multiplicities. Apply the same argument to boundary
+chains. This proves uniformity, rather than merely pointwise
+finite volume.
+
+Lift the cut chains to $(x,s)$. Their bands $j\le s\le j+1$
+lie in balls of radius $O(1+j)$ by
+\eqref{eq:uniformcarrier}. Their fixed semialgebraic descriptions
+and the mass estimate give, with constants independent of $R$,
+\begin{equation}\label{eq:uniformcuttail}
+ \left|e^{-c_i(t)}\int_{s\ge L}a e^{S_t}\,dx_1\cdots dx_n\right|
+ \le C\sum_{j\ge\lfloor L\rfloor}(1+j)^M e^{-j/2}.
+\end{equation}
+The polynomial amplitude changes only $M$. This tail tends to
+zero uniformly in $R$.
+
+It remains to bound a fixed phase band. A bounded critical branch
+$x(r)$, $r=1/t$, satisfies
+\[
+ q(x(r))=-c_i(r)-r c_i'(r).
+\]
+At a stationary point the chain rule gives $c_i'(r)=-P(x(r))/r^2$;
+eliminating $P$ gives this identity. Since $q(x(r))$ is
+bounded, its Puiseux expansion forces the only possible polar
+term of $c_i$ to be $\alpha_i/r$. Its coefficient is
+$\alpha_i=P(x(0))$, and $\nabla P(x(0))=0$. Hence
+$c_i(t)=\alpha_i t+O(1)$ even at critical collisions.
+
+Choose a generic fixed truncation level $L$. The truncated lifted
+chains have compact supports and uniformly bounded mass and
+boundary mass. The latter follows from the same semialgebraic
+estimate applied to their slices; after a finite stratification
+there is an arbitrarily large sequence of such levels. By the
+Federer--Fleming compactness theorem, every sequence $R\to\infty$
+has a subsequence converging to an integral $n$-current. We use
+the version with both mass and boundary-mass bounds,
+Simon~\cite[Chapter~6, Section~3, Theorem~3.15]{SimonGMT}.
+Its rectifiability conclusion is essential.
+
+On the lifted chain,
+\[
+ P(x)-\alpha_i=
+       \frac{c_i(t)-\alpha_i t+q(x)-\eta s}{t}.
+\]
+Every limiting current is therefore supported in
+$\{P=\alpha_i\}\times[0,L]$. Stratify this complex algebraic
+level set into smooth complex strata. Almost everywhere for the
+rectifiable limiting current, its tangent plane projects into
+the tangent of one of these strata. Each has complex dimension
+less than $n$. The holomorphic $n$-form $dx_1\cdots dx_n$ thus
+vanishes on that tangent plane. Lower-dimensional strata carry
+no $n$-mass; the same argument covers singular strata of larger
+real dimension. Testing with the fixed smooth form
+$e^{-\eta s}a(x)dx_1\cdots dx_n$, with a compact cutoff, gives
+zero on every subsequential limit. Consequently the normalized
+integral on $0\le s\le L$ tends to zero. This does not assert
+that the real volume of the chains tends to zero.
+
+First let $R\to\infty$, then let $L\to\infty$ through the
+allowed levels in \eqref{eq:uniformcuttail}. This proves
+\eqref{eq:normalizedcutdecay}. Finally choose $\theta$ with
+$\Re(e^{i\theta}\alpha)\le0$ for all critical values $\alpha$
+of $P$. The factors $e^{c_i(t)}$ are then bounded, so every basis
+period tends to zero. A flat cycle is a constant linear
+combination of this full basis, proving the last assertion.
+\end{proof}
+
+\begin{corollary}\label{cor:twocriticalvalues}
+Let $q$ be a full affine Gaussian quadratic and assume
+\eqref{eq:uniformphasegradient}. If $P$ has at most two critical
+values, every original marked Gaussian period is either zero or
+is not a finite exponential-polynomial. In particular $P$ is
+neither pure nor safe.
+\end{corollary}
+\begin{proof}
+Any two complex numbers lie in a closed half-plane through zero.
+For two nonzero values normalize them to $z_1,z_2$ on the unit
+circle. If $z_1+z_2\ne0$, use the direction
+$-\overline{z_1+z_2}/|z_1+z_2|$; if their sum is zero, use
+$i\overline{z_1}$. Zero or missing values add no condition.
+
+A nonzero constant original marked period would, by the rational
+seed restriction and actual-period extension in
+Lemma~\ref{lem:seedfunctional}, be represented by a flat period
+of that fixed polynomial form. Its generic exponential system
+has $f=t$, $g=tP-q$ on smooth affine space and regular input
+$\mathcal O$; $f,g$ are algebraically independent because $P$
+is nonconstant. Remove the finite exceptional parameter set of
+the Hien--Roucairol comparison. Theorem~\ref{thm:uniformcuts}
+makes the resulting constant period tend to zero, a contradiction.
+No convergence of the formal moment series was assumed.
+
+A constant-coefficient operator reduces a nonzero finite
+exponential-polynomial to $c e^{\beta t}$ while replacing its
+original marker by another fixed polynomial in $P$ times that
+marker. Shift $P$ by $-\beta$ and normalize. Its gradient is
+unchanged and its critical values are still at most two. The
+same contradiction applies. Since $\Phi_1(0)=1$, it cannot be
+a polynomial, proving also the safety exclusion.
+\end{proof}

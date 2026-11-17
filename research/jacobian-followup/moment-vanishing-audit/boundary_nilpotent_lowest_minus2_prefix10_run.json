@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "time_limit_seconds": 25,
+  "elapsed_seconds": 0.005,
+  "source": "boundary_nilpotent_lowest_minus2_prefix10.sing",
+  "log": "boundary_nilpotent_lowest_minus2_prefix10.log",
+  "conclusion": "Exploratory exact CAS output only; not a global classification without complete charts and checked witness identities."
+}

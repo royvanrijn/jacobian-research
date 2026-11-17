@@ -1,0 +1,7 @@
+{
+  "completed": false,
+  "returncode": 1,
+  "input_sha256": "d43cb8f72954835a8988ae256e258f10227bff0c5be7a52f0d8237e0e6710722",
+  "log": "Universal tangent filtration passed\nUniversal parent filtration passed\nRetained tangent seeds passed\nConstant-D full Gaussian tangent passed\nParent seed identities passed\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_pole_filtered_seed_bounds.py\", line 361, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_pole_filtered_seed_bounds.py\", line 351, in main\n    conics.append(conic_model('synthetic_p2_K'+str(kd)+'_A'+str(Ap),s.expand(W),K))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_pole_filtered_seed_bounds.py\", line 270, in conic_model\n    assert value.degree()<=bound,(label,j,k,value.degree(),bound)\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('synthetic_p2_K2_A-t**2 + (t + 1)*(5*t - 1)/4', 1, -3, 10, 9)\n",
+  "reason": "Shared-factor fixture A2=K had degree2 on degreeK2, outside the required degreeA2<=1. The valid shared-factor cases are retained and a K=t(t+1), A2=t case is added."
+}

@@ -2,7 +2,13 @@
 
 ## Status and exact result
 
-The [14 November 2026 eight-term follow-up](../../../jacobian-followup/sparse-eight/PROOF.md), GLDC3, completely excludes support eight and raises the normalized raw-degree-at-most-seven lower bound to **nine**. GLDC2 preserves the seven-term exclusion. The six-term census below is preserved as their historical predecessor; its former seven-term attainment question is closed.
+Current [GLDC10 degree7 component frontier](../../../jacobian-followup/quartic-three-audit/DEGREE7_COMPONENT_EXCLUSION.md):62 full profiles excluded,12 remaining; every degree<=7 candidate needs minimum invariant entry>=4. GLDC11 now proves [exact cubic-component minimum degree9](../../../jacobian-followup/quartic-three-audit/DEGREE8_COMPONENT_MINIMUM.md); global3D degree remains[5,7]. The predecessors below keep their original stage counts.
+
+Current [GLDC7/8 frontier](../../../jacobian-followup/quartic-three-audit/README.md):54 full profiles excluded,20 remaining and3D ordinary degree[5,7]. The smaller dense counts in this historical note and its intermediate handoffs describe earlier stages.
+
+The later [GLDC5 small-component corollary](../../../jacobian-followup/small-component-gate/PROOF.md) excludes all47 profiles with smallest invariant entry at most2, without a support bound, leaving27 dense profiles with smallest entry at least3. The separate [GLDC6 classical cubic import](../../../jacobian-followup/small-component-gate/CLASSICAL_CUBIC_IMPORT.md) also closes333, so the combined current dense status is48 excluded/26 remaining. The four-profile dense closure below is the historical original calculation; its statements about no other full profile describe that predecessor only.
+
+The [14 November 2026 nine-term gated follow-up](../../../jacobian-followup/sparse-nine/PROOF.md), GLDC4, raises the normalized raw-degree-at-most-seven lower bound to **ten**, importing the plane degree theorem through KPAIR1. GLDC2 and GLDC3 preserve the rational seven- and eight-term exclusions. An [explicit normalized 48-term example](../../../jacobian-followup/collision-frame-search/PROOF.md) gives the current upper bound, at profile exactly (7,6,4). The six-term census below remains their historical predecessor.
 
 This note introduces a support-first, valuation-aware pipeline for polynomial
 Keller collisions in dimension three.  It makes no weighted, equivariant, or
@@ -33,15 +39,15 @@ coefficient boxes.  This is a lower bound: no support of size seven is
 constructed or claimed to exist.
 
 A separate dense calculation proves that the complete degree-at-most-two
-collision ideal is the unit ideal.  Consequently exactly the following four
-profiles in the requested range are currently eliminated without a support
-bound:
+collision ideal is the unit ideal.  Consequently the following four
+profiles were eliminated without a support
+bound by this original calculation:
 
 \[
 (1,1,1),\quad(2,1,1),\quad(2,2,1),\quad(2,2,2).
 \]
 
-No other full degree profile is declared empty.  No smaller counterexample,
+This original calculation declares no other full degree profile empty; the later GLDC5 result above extends that dense closure.  No smaller counterexample,
 unrestricted Pareto frontier, or cardinality-unbounded no-go theorem is
 claimed.
 

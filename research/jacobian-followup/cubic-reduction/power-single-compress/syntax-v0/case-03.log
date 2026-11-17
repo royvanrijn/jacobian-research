@@ -1,0 +1,37 @@
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-03.sing line 3: `1^2*u2 + 3*u1^2*u3 + u1*u2^2 + 6*u1*u2*u3 + 9*u1*u3^2,u1*u2*u4 + 3*u1*u2*u5/2;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? can not convert $INVALID$(I) -> matrix
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-03.sing line 5: `u2/2 - 3*u1^2*u3/2 + u1*u2*u6/2 - 1,-u1^2*u2/2 - 3*u1^2*u3/2 - u1*u2*u6/2 + 1;`
+OPEN:77:78
+0
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-03.sing line 8: `J=I,-2*u2^2*u3/9 - 2*u2*u3^2/3 - 1,-u2^2*u3/6 - u2*u3^2/2 - 1;`
+OPEN:17:58
+0
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-03.sing line 11: `/2 + 3*u4*u5*u6/4 - 1,u1^2*u4/2 + 3*u1^2*u5/4 + u1*u4*u6/2 + 3*u1*u5*u6/4 + 1;`
+OPEN:18:44
+0
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-03.sing line 14: `J=I,u2^2*u3/3 + 4*u2*u3^2/3 + u3^3 - u3^2*u6 - 1,u3^2*u6 + 1;`
+OPEN:20:21
+0
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-03.sing line 17: `+ u2^2*u3/2 + 3*u2*u3^2/2 - 1,-u1^2*u2/3 - u1^2*u3 - u1*u2^2/3 - u1*u2*u3 - 1;`
+OPEN:73:76
+0
+   ? can not convert $INVALID$(I) -> matrix
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-03.sing line 20: `J=I,-u1*u2*u4/9 - u2^2*u4/27 - 1,-u1*u2*u4/9 - 1;`
+OPEN:36:75
+0
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-03.sing line 23: `/2 - 3*u4*u5*u6/4 - 1,u1^2*u4/2 + 3*u1^2*u5/4 - u1*u4*u6/2 - 3*u1*u5*u6/4 + 1;`
+OPEN:56:81
+0

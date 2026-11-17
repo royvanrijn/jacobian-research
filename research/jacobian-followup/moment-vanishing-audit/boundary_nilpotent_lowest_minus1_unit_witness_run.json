@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "time_limit_seconds": 45,
+  "elapsed_seconds": 0.005,
+  "source": "boundary_nilpotent_lowest_minus1_unit_witness.sing",
+  "witness_log": "boundary_nilpotent_lowest_minus1_unit_witness.log",
+  "output_bytes": 58,
+  "output_sha256": "add696eae0b164fe754a8835e5e280c3a08936b1056aed6def516abd20e6ef1d",
+  "conclusion": "Witness requires independent exact polynomial verification."
+}

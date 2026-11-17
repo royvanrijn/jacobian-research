@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 108.9 (0DMD): Properties of the Picard functor&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELR" data-tag="0ELR">8</a>: Topics in Moduli Theory
+    
+  
+    <li>Chapter <a href="/tag/0DLT" data-tag="0DLT">108</a>: Moduli Stacks
+    
+  
+    <li class="active">Section <a href="/tag/0DMD" data-tag="0DMD">108.9</a>: Properties of the Picard functor
+    <span id="citation">(<a href="/tag/0DMD/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0DM9">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0DPL">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="moduli-section-picard-functor" class="tex-section"><span data-tag="0DMD">108.9</span> Properties of the Picard functor</h2>
+
+<p>
+Let $f : X \to B$ be a morphism of algebraic spaces which is flat, proper, and of finite presentation such that moreover for every $T/B$ the canonical map 
+</p>
+<div class="equation">
+  \[  \mathcal{O}_ T \longrightarrow f_{T, *}\mathcal{O}_{X_ T}  \]
+</div>
+<p>
+ is an isomorphism. Then the Picard functor $\mathrm{Pic}_{X/B}$ is an algebraic space, see Quot, Proposition <a href="/tag/0D2C" data-tag="0D2C">99.11.8</a>. There is a closed relationship with the Picard stack. 
+</p>
+<p>
+<article class="env-lemma" id="0DME">
+  <p><a class="environment-identifier" href="/tag/0DME">Lemma <span data-tag="0DME">108.9.1</span>.</a> The morphism $\mathcal{P}\! \mathit{ic}_{X/B} \to \mathrm{Pic}_{X/B}$ turns the Picard stack into a gerbe over the Picard functor. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The definition of $\mathcal{P}\! \mathit{ic}_{X/B} \to \mathrm{Pic}_{X/B}$ being a gerbe is given in Morphisms of Stacks, Definition <a href="/tag/06QC" data-tag="06QC">101.28.1</a>, which in turn refers to Stacks, Definition <a href="/tag/06P2" data-tag="06P2">8.11.4</a>. To prove it, we will check conditions (2)(a) and (2)(b) of Stacks, Lemma <a href="/tag/06P1" data-tag="06P1">8.11.3</a>. This follows immediately from Quot, Lemma <a href="/tag/0D26" data-tag="0D26">99.11.2</a>; here is a detailed explanation. 
+    <p>
+      Condition (2)(a). Suppose that $\xi \in \mathrm{Pic}_{X/B}(U)$ for some scheme $U$ over $B$. Since $\mathrm{Pic}_{X/B}$ is the fppf sheafification of the rule $T \mapsto \mathop{\mathrm{Pic}}\nolimits (X_ T)$ on schemes over $B$ (Quot, Situation <a href="/tag/0D25" data-tag="0D25">99.11.1</a>), we see that there exists an fppf covering $\{ U_ i \to U\} $ such that $\xi |_{U_ i}$ corresponds to some invertible module $\mathcal{L}_ i$ on $X_{U_ i}$. Then $(U_ i \to B, \mathcal{L}_ i)$ is an object of $\mathcal{P}\! \mathit{ic}_{X/B}$ over $U_ i$ mapping to $\xi |_{U_ i}$. 
+    <p>
+      Condition (2)(b). Suppose that $U$ is a scheme over $B$ and $\mathcal{L}, \mathcal{N}$ are invertible modules on $X_ U$ which map to the same element of $\mathrm{Pic}_{X/B}(U)$. Then there exists an fppf covering $\{ U_ i \to U\} $ such that $\mathcal{L}|_{X_{U_ i}}$ is isomorphic to $\mathcal{N}|_{X_{U_ i}}$. Thus we find isomorphisms between $(U \to B, \mathcal{L})|_{U_ i} \to (U \to B, \mathcal{N})|_{U_ i}$ as desired. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0DMF">
+  <p><a class="environment-identifier" href="/tag/0DMF">Lemma <span data-tag="0DMF">108.9.2</span>.</a> The diagonal of $\mathrm{Pic}_{X/B}$ over $B$ is a quasi-compact immersion. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The diagonal is an immersion by Quot, Lemma <a href="/tag/0D2D" data-tag="0D2D">99.11.9</a>. To finish we show that the diagonal is quasi-compact. The diagonal of $\mathcal{P}\! \mathit{ic}_{X/B}$ is quasi-compact by Lemma <a href="/tag/0DMA" data-tag="0DMA">108.8.1</a> and $\mathcal{P}\! \mathit{ic}_{X/B}$ is a gerbe over $\mathrm{Pic}_{X/B}$ by Lemma <a href="/tag/0DME" data-tag="0DME">108.9.1</a>. We conclude by Morphisms of Stacks, Lemma <a href="/tag/0DQL" data-tag="0DQL">101.28.14</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0DNI">
+  <p><a class="environment-identifier" href="/tag/0DNI">Lemma <span data-tag="0DNI">108.9.3</span>.</a> The morphism $\mathrm{Pic}_{X/B} \to B$ is quasi-separated and locally of finite presentation. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      To check $\mathrm{Pic}_{X/B} \to B$ is quasi-separated we have to show that its diagonal is quasi-compact. This is immediate from Lemma <a href="/tag/0DMF" data-tag="0DMF">108.9.2</a>. Since the morphism $\mathcal{P}\! \mathit{ic}_{X/B} \to \mathrm{Pic}_{X/B}$ is surjective, flat, and locally of finite presentation (by Lemma <a href="/tag/0DME" data-tag="0DME">108.9.1</a> and Morphisms of Stacks, Lemma <a href="/tag/06QI" data-tag="06QI">101.28.8</a>) it suffices to prove that $\mathcal{P}\! \mathit{ic}_{X/B} \to B$ is locally of finite presentation, see Morphisms of Stacks, Lemma <a href="/tag/06Q9" data-tag="06Q9">101.27.12</a>. This follows from Lemma <a href="/tag/0DMB" data-tag="0DMB">108.8.2</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0DNJ">
+  <p><a class="environment-identifier" href="/tag/0DNJ">Lemma <span data-tag="0DNJ">108.9.4</span>.</a> Assume the geometric fibres of $X \to B$ are integral in addition to the other assumptions in this section. Then $\mathrm{Pic}_{X/B} \to B$ is separated. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Since $\mathrm{Pic}_{X/B} \to B$ is quasi-separated, it suffices to check the uniqueness part of the valuative criterion, see Morphisms of Spaces, Lemma <a href="/tag/03KV" data-tag="03KV">67.43.2</a>. This immediately reduces to the following problem: given 
+    <p>
+      <ol>
+  <li><p>
+a valuation ring $R$ with fraction field $K$, 
+</p>
+</li><li><p>
+an algebraic space $X$ proper and flat over $R$ with integral geometric fibre, 
+</p>
+</li><li><p>
+an element $a \in \mathrm{Pic}_{X/R}(R)$ with $a|_{\mathop{\mathrm{Spec}}(K)} = 0$, 
+</p>
+</li>
+</ol>
+    <p>
+       then we have to prove $a = 0$. Applying Morphisms of Stacks, Lemma <a href="/tag/0DN5" data-tag="0DN5">101.25.6</a> to the surjective flat morphism $\mathcal{P}\! \mathit{ic}_{X/R} \to \mathrm{Pic}_{X/R}$ (surjective and flat by Lemma <a href="/tag/0DME" data-tag="0DME">108.9.1</a> and Morphisms of Stacks, Lemma <a href="/tag/06QI" data-tag="06QI">101.28.8</a>) after replacing $R$ by an extension we may assume $a$ is given by an invertible $\mathcal{O}_ X$-module $\mathcal{L}$. Since $a|_{\mathop{\mathrm{Spec}}(K)} = 0$ we find $\mathcal{L}_ K \cong \mathcal{O}_{X_ K}$ by Quot, Lemma <a href="/tag/0D27" data-tag="0D27">99.11.3</a>. 
+    <p>
+      Denote $f : X \to \mathop{\mathrm{Spec}}(R)$ the structure morphism. Let $\eta , 0 \in \mathop{\mathrm{Spec}}(R)$ be the generic and closed point. Consider the perfect complexes $K = Rf_*\mathcal{L}$ and $M = Rf_*(\mathcal{L}^{\otimes -1})$ on $\mathop{\mathrm{Spec}}(R)$, see Derived Categories of Spaces, Lemma <a href="/tag/0CTM" data-tag="0CTM">75.25.4</a>. Consider the functions $\beta _{K, i}, \beta _{M, i} : \mathop{\mathrm{Spec}}(R) \to \mathbf{Z}$ of Derived Categories of Spaces, Lemma <a href="/tag/0D1Y" data-tag="0D1Y">75.26.1</a> associated to $K$ and $M$. Since the formation of $K$ amd $M$ commutes with base change (see lemma cited above) we find $\beta _{K, 0}(\eta ) = \beta _{M, 0}(\eta ) = 1$ by Spaces over Fields, Lemma <a href="/tag/0DMY" data-tag="0DMY">72.14.3</a> and our assumption on the fibres of $f$. By upper semi-continuity we find $\beta _{K, 0}(0) \geq 1$ and $\beta _{M, 0}(0) \geq 1$. By Spaces over Fields, Lemma <a href="/tag/0DMZ" data-tag="0DMZ">72.14.4</a> we conclude that the restriction of $\mathcal{L}$ to the special fibre $X_0$ is trivial. In turn this gives $\beta _{K, 0}(0) = \beta _{M, 0} = 1$ as above. Then by More on Algebra, Lemma <a href="/tag/0BCC" data-tag="0BCC">15.77.6</a> we can represent $K$ by a complex of the form 
+    <p>
+      <div class="equation">
+  \[  \ldots \to 0 \to R \to R^{\oplus \beta _{K, 1}(0)} \to R^{\oplus \beta _{K, 2}(0)} \to \ldots  \]
+</div>
+    <p>
+       Now $R \to R^{\oplus \beta _{K, 1}(0)}$ is zero because $\beta _{K, 0}(\eta ) = 1$. In other words $K = R \oplus \tau _{\geq 1}(K)$ in $D(R)$ where $\tau _{\geq 1}(K)$ has tor amplitude in $[1, b]$ for some $b \in \mathbf{Z}$. Hence there is a global section $s \in H^0(X, \mathcal{L})$ whose restriction $s_0$ to $X_0$ is nonvanishing (again because formation of $K$ commutes with base change). Then $s : \mathcal{O}_ X \to \mathcal{L}$ is a map of invertible sheaves whose restriction to $X_0$ is an isomorphism and hence is an isomorphism as desired. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0DPK">
+  <p><a class="environment-identifier" href="/tag/0DPK">Lemma <span data-tag="0DPK">108.9.5</span>.</a> Assume $f : X \to B$ has relative dimension $\leq 1$ in addition to the other assumptions in this section. Then $\mathrm{Pic}_{X/B} \to B$ is smooth. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Lemma <a href="/tag/0DPJ" data-tag="0DPJ">108.8.5</a> we know that $\mathcal{P}\! \mathit{ic}_{X/B} \to B$ is smooth. The morphism $\mathcal{P}\! \mathit{ic}_{X/B} \to \mathrm{Pic}_{X/B}$ is surjective and smooth by combining Lemma <a href="/tag/0DME" data-tag="0DME">108.9.1</a> with Morphisms of Stacks, Lemma <a href="/tag/0DN8" data-tag="0DN8">101.33.8</a>. Thus if $U$ is a scheme and $U \to \mathcal{P}\! \mathit{ic}_{X/B}$ is surjective and smooth, then $U \to \mathrm{Pic}_{X/B}$ is surjective and smooth and $U \to B$ is surjective and smooth (because these properties are preserved by composition). Thus $\mathrm{Pic}_{X/B} \to B$ is smooth for example by Descent on Spaces, Lemma <a href="/tag/0AHD" data-tag="0AHD">74.8.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-0DMD",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">0DMD</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="0DMD"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">0DMD</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0DM9">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0DPL">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/moduli.pdf#nameddest=0DMD">View Section <span data-tag="0DMD">108.9</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

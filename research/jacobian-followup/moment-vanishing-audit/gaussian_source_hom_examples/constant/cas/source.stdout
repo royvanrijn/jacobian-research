@@ -1,0 +1,80 @@
+// ** redefining testdmodapp (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining engine (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining poly2list (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining fl2poly (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining insertGenerator (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining deleteGenerator (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining bFactor (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining isInt (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining intRoots (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining sortIntvec (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining isFsat (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining annRat (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining annPoly (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining DLoc (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining DLoc0 (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining SDLoc (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining GBWeight (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining inForm (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining initialIdealW (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining initialMalgrange (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining restrictionModule (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining restrictionIdeal (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining fourier (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining inverseFourier (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining integralModule (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining integralIdeal (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining deRhamCohomIdeal (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining deRhamCohom (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining appelF1 (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining appelF2 (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining appelF4 (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining charVariety (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+// ** redefining charInfo (nishing-audit/gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib";) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/cas/source.sing:2
+CUTOFF|0
+POLY|IB|1
+ENDPOLY
+POLY|IB|2
+TERM|1|0,0,0,0
+ENDPOLY
+POLY|B_RAW|1
+TERM|1|0,0,0,0
+ENDPOLY
+POLY|B|1
+TERM|1|0,0,0,0
+ENDPOLY
+POLY|G|1
+TERM|1|0,0,0,1
+TERM|-1|0,0,0,0
+ENDPOLY
+POLY|G|2
+TERM|-1|1,0,0,0
+TERM|1|0,0,1,0
+ENDPOLY
+POLY|UNPROJECTED_RELATION|1
+TERM|1|0,0,0,1
+TERM|-1|0,0,0,0
+ENDPOLY
+POLY|RECURRENCE
+TERM|-1|1,0,1,0
+TERM|-1|0,0,2,0
+TERM|-1|0,0,0,0
+ENDPOLY
+POLY|RECURRENCE_WITNESS|1
+TERM|-1|0,0,1,0
+ENDPOLY
+POLY|RECURRENCE_WITNESS|2
+ENDPOLY
+SHAPE|1|1
+POLY|M|1|1
+TERM|1|0,1
+TERM|-1|0,0
+ENDPOLY
+POLY|A|1
+TERM|1|0,1
+TERM|-1|0,0
+ENDPOLY
+POLY|W|1|1
+TERM|1|0,0
+ENDPOLY
+GAUSSIAN_SOURCE_COMPLETE

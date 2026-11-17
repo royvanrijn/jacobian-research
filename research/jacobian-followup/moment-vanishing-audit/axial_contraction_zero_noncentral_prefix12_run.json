@@ -1,0 +1,9 @@
+{
+  "status": "STOPPED_WITHOUT_CERTIFICATE",
+  "returncode": 124,
+  "elapsed_seconds": 45.00619095598813,
+  "input_sha256": "9484550bb12d21edd3cbdc1dece4b0c48538fb0d9e28515dde7189fbef4ad9e6",
+  "output_sha256": "13e3271c6c2c9a751f30a3a380b1c70b0fcb0b97dddd093e0e41452dfe2edeed",
+  "time_limit_seconds": 45,
+  "memory_limit_bytes": 2147483648
+}

@@ -1,0 +1,119 @@
+{
+  "claims": [
+    "KMFI92",
+    "KMFI93"
+  ],
+  "finite_cover_roots": [
+    "s*z",
+    "s*(s - z)",
+    "-z*(s - z)"
+  ],
+  "finite_cover_coefficients": {
+    "h": "s**2*z**2*(s - z)**2",
+    "r_minus_c": "-s*z - s*(s - z) + z*(s - z)"
+  },
+  "residue_multiplier": "(-s + 2*z)*(s + z)*(2*s - z)",
+  "finite_case_exhaustion": [
+    {
+      "region": "q!=0, root-cover origin",
+      "resolution": "ordinary crepant blowup, smooth(2,2) exceptional surface"
+    },
+    {
+      "region": "q!=0, nonzero two-zero-root axis",
+      "resolution": "implicit elimination, smooth or cA"
+    },
+    {
+      "region": "q!=0, all nonzero roots and no participating critical root",
+      "resolution": "original norm cover cDV as in KMFI91"
+    },
+    {
+      "region": "q!=0, one participating critical root",
+      "resolution": "root-cover Jacobian full rank"
+    },
+    {
+      "region": "q!=0, two critical roots, third y unit",
+      "resolution": "cA_(e-1) slice"
+    },
+    {
+      "region": "q!=0, two critical roots plus unramified third",
+      "resolution": "Morse cA_k; multiset reciprocal identity rules out k infinite"
+    },
+    {
+      "region": "q!=0, three critical roots, e=2",
+      "resolution": "crepant ordinary complete-intersection blowup; smooth/A1 exceptional charts"
+    },
+    {
+      "region": "q!=0, three critical roots, e=3",
+      "resolution": "crepant weighted blowup; index2 cDV and index3 scalar-volume charts"
+    },
+    {
+      "region": "q=0, h*r!=0",
+      "resolution": "etale ordered binary roots, compound-A equation"
+    },
+    {
+      "region": "q=h=0, r!=0",
+      "resolution": "smooth for b!=0; A3 section at b=0"
+    },
+    {
+      "region": "q=r=0, h!=0",
+      "resolution": "constant norm, smooth"
+    }
+  ],
+  "weighted_cases": [
+    {
+      "ramification": 2,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "equation_weights": [
+        2,
+        2
+      ],
+      "residue_exponent": 0,
+      "exceptional_singularities_on_index_cover": "smooth or A1",
+      "nonzero_hessian_certificate": "8*C**3*alpha*beta*(alpha + beta*t)**4/t**2"
+    },
+    {
+      "ramification": 3,
+      "weights": [
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "equation_weights": [
+        6,
+        6
+      ],
+      "residue_exponent": 0,
+      "exceptional_singularities_on_index_cover": "smooth or A1",
+      "nonzero_hessian_certificate": "27*C**3*alpha*beta*(alpha + beta*t)**7/t**2"
+    }
+  ],
+  "geometric_genus": 3,
+  "global_form_basis_numerators": [
+    "q^3",
+    "q^2*r",
+    "q*r^2"
+  ],
+  "global_regular_three_form_proved": true,
+  "global_form": "q^3 db wedge dq wedge dr/Y",
+  "norm_field_nonunirational_proved": true,
+  "norm_field_not_stably_rational": true,
+  "dominant_rational_target_cofactor_degree11_descent_excluded": true,
+  "both_exceptional_actions_covered": true,
+  "additional_independent_target_variables_covered": true,
+  "non_dominant_specializations_excluded": false,
+  "forgetting_the_mark_excluded": false,
+  "different_Keller_architectures_excluded": false,
+  "exceptional11_absolute_action_decided": false,
+  "full_action_classification_complete": false,
+  "proof_basis": "Written exhaustive finite-root and projective-boundary proof, both crepant blowup chart classifications, previous infinity extension and primary cDV input. Finite controls supplement the argument.",
+  "three_order3_critical_roots_required_to_be_absent": false,
+  "fractional_epsilon_count_alone_used_as_resolution": false
+}

@@ -1,0 +1,63 @@
+{
+  "completed": true,
+  "linear_family": {
+    "polynomial": "a+bX",
+    "ordinary_ideal": [
+      "a",
+      "b^2"
+    ],
+    "radical": [
+      "a",
+      "b"
+    ],
+    "cut_indices": [
+      1,
+      2
+    ],
+    "generic_bounds": [
+      1,
+      2
+    ],
+    "final_indicial_bound": 0,
+    "least_ordinary_prefix": 2,
+    "nonreduced_final_algebra_dimension": 2,
+    "full_small_loop_checked": true,
+    "polynomial_telescoping_certificate_checked": true,
+    "auxiliary_moments_checked": 8
+  },
+  "nilpotent_control": {
+    "quotient": "Q[b]/(b^3)",
+    "series_minus_one": "b^2*t^2/2",
+    "scalar_operator": "Dt^3",
+    "bound": 2,
+    "radical_shortcut_rejected": true
+  },
+  "zero_divisor_coefficient_operator_shortcut_rejected": true,
+  "embedded_control": {
+    "ideal": "(a^2,ab)",
+    "primary_intersection": "(a) intersect (a^2,b)",
+    "polynomial": "a",
+    "series_in_embedded_algebra": "a*t",
+    "bound": 1,
+    "intersection_checked": true,
+    "minimal_components_only_shortcut_rejected": true,
+    "nonprimary_localization_shortcut_rejected": true
+  },
+  "positive_dimensional_primary_control": {
+    "primary_ideal": "(a^3) in Q[a,b]",
+    "normalization": "Q[b]",
+    "localized_algebra": "Q(b)[a]/(a^3)",
+    "dimension": 3,
+    "nilpotent_multiplication_table_checked": true
+  },
+  "general_algorithm_implemented": false,
+  "general_algorithm_executed": false,
+  "universal_termination_proof_certified_by_checker": false,
+  "full_cubic_coefficient_search_executed": false,
+  "producer_package_executed": false,
+  "new_cubic_prefix_computed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "87d6048b0e319f8a4a56fa81893595b5760e679f8f1bf236cb741ac60a9df393"
+}

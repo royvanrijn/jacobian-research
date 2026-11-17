@@ -1,0 +1,11 @@
+{
+  "date":"2026-11-17",
+  "frozen_before_execution":true,
+  "selection":"Exactly the same original16 targets/PDs/four-seed traces as ternary_transvection_plan.json; no293-name extension",
+  "motivation":"The order3 transvection class is negative, with only cyclic bases. A nonidentity rank-one matrix I+vf in GL3(F3) has f(v)=0 or1: the remaining f(v)=1 class consists of involutive reflections. Completing both classes exhausts this3dimensional ternary base architecture, without an all-field assertion.",
+  "control":{"knot":"Known connected sum of three trefoils, same literal9crossing PD and four-seed trace as the independently verified order3 control","directions":[[1,0,0],[0,1,0],[0,0,1],[1,1,1]],"functionals":[[1,1,0,0],[1,1,1,0],[0,1,1,0],[2,0,2,1]],"test":"Check homogeneous order2, rank-one differences, all three chain braid relations and zero common fixed space. Rebase factors to the first meridian, transport to the same source PD, and require root-nullity4 plus independent pointwise replay before target search."},
+  "test":"Enumerate117 rank-one involutions, normalize first seed to diag(2,1,1), quotient four-tuples by its96-element GL3(F3) centralizer, propagate every signed Wirtinger relation and compute every admissible affine-root space. For negative letters use -A^-1*r, which equals+r for these reflections; do not reuse the order3 negative coefficient.",
+  "limits":{"targets":16,"seconds_total":180,"seconds_per_target":15,"tuple_orbit_cap":150000,"class_size":117,"centralizer_size":96,"raw_normalized_tuples":1601613,"checkpoint_each_target":true},
+  "acceptance":"Independent positive control, full raw-tuple orbit marking, geometric signed crossing/upper-trace and affine-point kernel replay required. Any cap leaves the target UNKNOWN. No named closure without exact lower/upper/source/prior-family replay.",
+  "scope":"Only rank-one GL3(F3) reflection bases and admissible affine-root lifts on these16 knots, including proper images. Together with order3 class covers rank-one ternary3 bases, not all coefficient fields, higher dimensions, unrestricted cocycles, nonlinear components or full MRC. Known composite control adds no new knot case."
+}

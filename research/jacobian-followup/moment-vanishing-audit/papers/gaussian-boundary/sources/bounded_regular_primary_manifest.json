@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-17",
+  "primary_sources": [
+    {
+      "author": "Sabbah",
+      "url": "https://arxiv.org/html/0706.3570v2",
+      "cached_file": "sabbah_0706_3570v2.html",
+      "sha256": "6878d0845b69730e58c4cdc64ff32737f986c0173b4873974f650b4b9d55b71e",
+      "locations": [
+        "Section3 Corollary3.3 and proof"
+      ],
+      "use": "Unique formal typical components,no horizontal cross-type maps,and functorial exact decomposition;do not assume nonzero regular factors are semisimple."
+    },
+    {
+      "author": "Roucairol",
+      "url": "https://arxiv.org/html/math/0604134v2",
+      "cached_file": "roucairol_formal_math0604134v2.html",
+      "sha256": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
+      "locations": [
+        "Theorems0.1(2),0.3",
+        "NONRAMIFIED Section1.2/Proposition1.2"
+      ],
+      "use": "Apply after every critical-value curve is a graph. Count every conjugate graph and conormal Milnor multiplicity,including equal polar parts. Only nonzero ranks imported;zero rank obtained by full-rank subtraction. No Theorem0.2 monodromy formula used."
+    },
+    {
+      "author": "Pham",
+      "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+      "cached_file": "pham_asterisque130_1985.pdf",
+      "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+      "locations": [
+        "PartI Sections1-4"
+      ],
+      "use": "Full tame Milnor rank;all isolated degeneracies retained. Fixed-phase and power character constructions are explicit internal algebra."
+    }
+  ],
+  "scope_split": {
+    "formal_seed_lemma": "Finite formal connections over C((rho)),including nonconvergent coefficients;conditional on the stated full REGULAR frame,optionally over log extension. Classical decomposition credited.",
+    "geometric_rank_application": "Complex polynomial P and quadratic q;locally uniform fixed-parameter complex coercivity and nonisotropic leading critical directions explicitly assumed. Algebraic/convergent parameter family.",
+    "all_ring_extension": false
+  },
+  "not_claimed": [
+    "Semisimplicity of all exponential blocks",
+    "Zero rank from an Euler characteristic or a partial point count",
+    "Every ambient factor appears in the actual marker image",
+    "Actual-period or full image-kernel computation",
+    "General Gaussian safe-to-pure or regular/wild realization solution",
+    "Repeated-line completion",
+    "Novelty or independent/formal/external verification"
+  ],
+  "new_mathematical_checker_run": false
+}

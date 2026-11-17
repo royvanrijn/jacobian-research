@@ -267,9 +267,36 @@ completely audited here. No messages have been sent to the author.
 ## What would be worth trying next
 
 The most direct open improvement target is a different simultaneous cube
-decomposition of the same 18-output tensor, with fewer than 90 linear forms.
+decomposition of the same 18-output tensor, with fewer than the89 forms now certified in the [shared-basis follow-up](../cubic-reduction/POWER89.md).
 The new rank-five cubic map is also a better starting point than the archived
 rank-six map for nonliteral source-coordinate/target-completion work. The
 nine literal deletions above should not be rerun unchanged. An improvement
 requires an exact reconstruction and collision/determinant certificate;
 neither a greedy miss nor a flattening bound settles the remaining cases.
+
+
+## Coordinate-support follow-up
+
+The [36-term integral conjugate](../cubic-reduction/PROOF12.md), KCUB3,
+simplifies the displayed support of the existing12-variable map from40
+to36 nonlinear occurrences. Two elementary source/target conjugations
+align repeated carrier combinations, and diagonal conjugation clears
+denominators. Its determinant and integer collision are independently
+replayed. This changes neither the12/18/90 dimension bounds nor any
+minimality conclusion.
+
+## Shared-cube89-variable follow-up
+
+The [exact89-form basis](../cubic-reduction/POWER89.md), KCUB5, improves
+the audited cubic-linear construction from90 to89 variables. It replaces
+the fixed cube list with a different shared basis, allows temporary
+support growth during discovery, and retains the necessary padding
+target shear. Its integer matrix, determinant factorization and complete
+rational collision have an independent exact replay. The original
+90-variable theorem and fixed-list independence result remain valid;
+neither is a global minimum statement.
+
+For the36-term coordinate frame, [KCUB4](../cubic-reduction/GRAPH_DELETION_OBSTRUCTION.md)
+also strengthens the fixed-graph target-repair test to arbitrary polynomial
+degree by explicit finite dual certificates. General source and target
+sequences remain outside these construction-specific obstructions.

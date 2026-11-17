@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "purpose": "Pins retained compiler, monodromy and fixed-space arguments; scopes established finite-presentation, trace and Hilbert90 inputs. No novelty-priority or independent-proof-replay claim.",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-receiver/PROOF.md",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-structure/PROOF.md",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-trace/PROOF.md",
+      "sha256": "aaebb6eb315c569068f3064fb19bc217da514c3b2ff725b13cd05b785c5ae2c2"
+    },
+    {
+      "path": "archive/non-elliptic/verified/PRIMITIVE_MONODROMY_ATOMICITY.md",
+      "sha256": "baac592016eef8ff4874081310826dd845f629c98bbd7dc0f3899e6ca697836f"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Stacks Project, finite-type Jacobson rings and closed residue extensions",
+      "url": "https://stacks.math.columbia.edu/tag/00GB",
+      "scope": "Proposition10.35.19: finite residue-field specialization over localized integers."
+    },
+    {
+      "title": "Stacks Project, finite-type integer algebras are Jacobson",
+      "url": "https://stacks.math.columbia.edu/tag/00GC",
+      "scope": "Lemma10.35.20, together with the preceding proposition."
+    },
+    {
+      "title": "Stacks Project, descending relative objects",
+      "url": "https://stacks.math.columbia.edu/tag/01ZL",
+      "scope": "Section32.10: finitely presented maps and their inverse identities descend to a finite coefficient model."
+    },
+    {
+      "title": "Stacks Project, trace discriminant and etaleness",
+      "url": "https://stacks.math.columbia.edu/tag/0BJF",
+      "scope": "Perfect trace pairing for a finite etale algebra, used for the intrinsic cubic generator proof."
+    },
+    {
+      "title": "Jensen--Ledet--Yui, Generic Polynomials (MSRI45,2002)",
+      "url": "https://library.slmath.org/books/Book45/files/book45.pdf",
+      "scope": "Section2.1 cubic generic-polynomial context, Chapter5 positive-characteristic additive-polynomial framework, AppendixA.1.2 additive Hilbert90. We give the explicit affine-line cocycle and Keller-bundle formulas."
+    }
+  ]
+}

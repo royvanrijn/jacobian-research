@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/PURE_SAFE_PHASES_WITH_UNIPOTENT_GEOMETRIC_COMPLEMENT.md",
+  "proof_sha256": "7d716c93903c4fc8c479b5de4ca1e87903925f8fbcec4ce0560196114368138b",
+  "proof_mode": "Allkactualinvariantpencil/doublecover construction,propersemistableweightSS,finiteTatepolarization/birational/openkernel argument,allorderweightsafety.",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/UNBOUNDED_SAFE_BOUNDARY_HOMOLOGY_ON_EXCEPTIONAL_QUOTIENTS.md",
+      "sha256": "54a0812fe98e67394b108d962a2010fd3bb0df0f2213626f3d9b0b3dd6627156",
+      "selected_use": "ReadFULL:allk invariantbiformfirstjets/smoothquotientgenus/rationalprojectivequotient/effectiveweight1torsor. Oldone-weightphasehasIDENTITYmonodromy;newa+b\u00b2phase isdifferent."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/HODGE_WEIGHTS_OF_HAAR_VARIATION_AND_BOUNDARY_GRAPHS.md",
+      "sha256": "ef25b07db54186598299c3acf20296857a9ade955863fccdcd9e807ca5a1b3d0",
+      "selected_use": "ReadFULL:actualfullgeometricGysinsequence/complementH\u00b3->fibreH\u00b2(-1),notselectedactualperiodmodule."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/INTRINSIC_SOURCE_SPLITTING_AND_FULL_HAAR_SAFETY.md",
+      "sha256": "74036934113a01fc8e5959bff89e7f0f091399a84395165c43331a9752606b10",
+      "selected_use": "Completedinput:fullSAFEpurecontrols implyintrinsicSOURCEUNITsplit;noassertionallsourceNvanishes."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_RESOLVENT_SPLITTING_AND_ZERO_VALUE_LOGARITHMS.md",
+      "sha256": "11cc315c4ca4499ee8cb16089c329d0aa206152dbfdf73fee8ebd529c977a601",
+      "selected_use": "ReadFULL:WHOLEcomplement eigenvalue1SSisSUFFICIENT,notnecessary;actualmarkedC_qintegerlogscriterionretained."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/ORDINARY_RESOLVENTS_AND_HOMOGENEOUS_GAUSSIAN_CONVERGENCE.md",
+      "sha256": "636c11388b9d27221c9901c210d5434f1dd4b2d8a2acfe352e01ddf5fdb67482",
+      "selected_use": "Ordinary/exponentialuserguardunchanged;newtheoremusesACTUALordinaryfunctions andWHOLEgeometriccohomologydistinction."
+    }
+  ],
+  "reviewed_claims": {
+    "GHAARBOUNDARYEXCESS20261116": "5fe9b2d2d0922270",
+    "GHAARTATEVAR20261116": "301f19b8f57316d6",
+    "GHAARINTRINSICSAFE20261116": "2e37ad62e89795e2",
+    "GHAARZEROLOG20261116": "fb896c1e421b4c38"
+  },
+  "proof_dependency_closure": [
+    "G2Q",
+    "G3AFFINEW20261114",
+    "GCOMPACTALL20261114",
+    "GEXCEPTIONALDEGREES20261115",
+    "GHAARBOUNDARYEXCESS20261116",
+    "GHAARBOUNDARYRAD20261116",
+    "GHAARCONSTGENUS20261116",
+    "GHAARCUBEMON20261116",
+    "GHAARCYCLE20261116",
+    "GHAARGLOBALSPLIT20261116",
+    "GHAARGLOBRECOMP20261116",
+    "GHAARINTRINSIC20261115",
+    "GHAARINTRINSICMON20261116",
+    "GHAARINTRINSICSAFE20261116",
+    "GHAARLEVELONE20261116",
+    "GHAARLEVELRECOMP20261116",
+    "GHAARLINKBOUND20261116",
+    "GHAARLOWFIX20261116",
+    "GHAARPERIODRANK20261115",
+    "GHAARQUADLOG20261116",
+    "GHAARRECOMPCYCLE20261116",
+    "GHAARSEPARATEDCORE20261116",
+    "GHAARSHEAR20261115",
+    "GHAARTATEVAR20261116",
+    "GHAARTOPSTATE20261116",
+    "GHAARUNARYCLASS20261116",
+    "GHAARUNIPTATE20261116",
+    "GHAARUNITEXT20261116",
+    "GHAARZEROLOG20261116",
+    "GL1",
+    "GMCFORMALCOMP20261115",
+    "GMCLINEARCUTOFF20261115",
+    "GMCMIXEDDECIDE20261115",
+    "GMCORIGINSAT20261116",
+    "GMCPOLEQUOT20261115",
+    "GNULLCONEALL20261115",
+    "GREDUCTIVENONSPH20261115",
+    "GREDUCTIVETWOMODEL20261115",
+    "GSPHERICALCOMP20261115",
+    "GVC2ERU",
+    "GVC2FCG",
+    "GVC2FTS",
+    "GVC2GSD",
+    "GVC2HLC",
+    "GVC2QG",
+    "GVC2RUT",
+    "GVC2TTD",
+    "GVC2UFT",
+    "GVCEXACTENC20261115",
+    "GVCPOINTDECIDE20261115",
+    "GVCSS",
+    "LONGCOMPACT20261114",
+    "LONGSPHERICAL20261115",
+    "LSO3",
+    "MVACTUALKERNEL20261115",
+    "MVALGORDSAFE20261116",
+    "MVBOUNDARYSPACE20261115",
+    "MVCOMPACTREGULAR20261116",
+    "MVFIELDMIN20261115",
+    "MVHOLONOMICZERO20261115",
+    "MVHOLPOLY20261115",
+    "MVHOLRATIONAL20261115",
+    "MVLINEARCERT20261115",
+    "MVORDINARYDECIDE20261115",
+    "MVPRIMARYZERO20261115",
+    "MVRANKONEIMAGE20261115",
+    "MVRATIONALCORE20261115",
+    "MVRECOMPREFLECT20261116",
+    "SIC2C4",
+    "SICEXACTDECIDE20261115"
+  ],
+  "new_primary_imports": [
+    {
+      "author": "Sukjoo Lee",
+      "title": "Semistable degenerations of Calabi-Yau manifolds and mirror P=W conjectures",
+      "published": "Forum of Mathematics,Sigma12(2024),e94;online7November2024",
+      "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/semistable-degenerations-of-calabiyau-manifolds-and-mirror-pw-conjectures/9A7E93052B2CB9C09A02C48DACF2620D",
+      "doi": "10.1017/fms.2024.79",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/lee_semistable_sigma_2024_20261116.html",
+      "sha256": "c7b0483bc38f749812eaaa12027aaf890499e46969dd166a414ef45a4b230ac7",
+      "bytes": 3977789,
+      "read": "Complete Section2.2 monodromyweight background,Theorems2.6-2.7 and full E1 formula/differential description/E2 degeneration,5282parsedcharacters. Adjacent Section2.1 examined for distinction fromopenboundaryweights.",
+      "exact_import": "ClassicalpropersemistableweightSS and monodromyweightfiltration/degeneration,creditedthere toPeters-Steenbrink. Applytoexplicitprojectivesmooth-totalfamily withtwo rationalcomponents. NOCalabi-Yau/Fano/mirrorP=W theorem orconjecture imported. Nearby-fibrecohomology used,not total-spacecohomology.",
+      "proof_assurance": "Namedclassicalstatement/application,notindependentreproof ofthegeneraltheorem."
+    }
+  ],
+  "primary_read_fallback": "webfirstopenworked,laterfetches timedout;authoritativepublisherHTML thenfetchedreadonlyandcached. CachedscannedSteenbrinkPDFhadNOextractedtextandwasNOTusedasfreshmathematicalsource;noPDFauthored.",
+  "symbolic_controls": "jacobian-followup/moment-vanishing-audit/haar_safe_unipotent_symbolic_controls.json",
+  "symbolic_controls_sha256": "03af8d7b3cdb0e9ee1336c0b9a675518df969249b99b0f02bddc3074cc4e5cd9",
+  "new_steps": [
+    "Twooriginalpositive-weightbiforms a,b givePURESAFEoriginalf=a+b\u00b2,allk;resolveinvariantquotientpencil,notassuminginitialbasepointfreeness.",
+    "Originalgenericfibrefield v\u00b2+rho*v=s isgeometricallyconnectedandbirationaltopropersemistabledoublecoveromega\u00b2=A\u00b2+4sB\u00b2.",
+    "Centralfibrehas2rationalcomponentsmeetinggenusgcurve;weightSSgivesrankN2g,originaleigen1.",
+    "ProperbirationalchangesandopengeometricrestrictionhavefiniteTateHodgekernel/cokernel;properpolarization splits them andpreservesunipotentblocks.",
+    "WholeoriginalcomplementNrank>=2g unboundedwhileALLactualmarkedordinaryresolventsarefiniteLaurent,unitS."
+  ],
+  "boundary": "Disprovesblanketwhole-geometricSSonENTIREpurelocus,NOTsufficientSSrestrictedtoafurtherunresolvedcandidatefamily. ALREADYSAFEcontrols,notMZfailures ornewcandidateclosure.",
+  "concurrent_preservation_review": "Originalsnapshot retained; reviewedlateFIRreal-rootparity/indexedNewtonboundary/adoption andHC4MU0actualmixed2+3trace-pole scope/work updates forPRESERVATIONONLY. Dependencyclosuredisjoint;no mathematical import/certification.",
+  "not_proved": [
+    "Fullpure-to-safe/intrinsicunitsplittingonALLpurephases.",
+    "Actualpurefixed-original-markerfailure.",
+    "FullgeometricSSonALLremainingcandidatepurephases.",
+    "Everypurephasecoveredbyoldnullcone/Autsafeclasses."
+  ],
+  "new_holonomic_CAS_or_degree_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true,
+  "postintegration_author_updates": {
+    "records_snapshot": "tmp/haar_safe_unipotent_late_author_records_20261116.json",
+    "changed_claims": [
+      "OP-MRC"
+    ],
+    "scope": "Later MRC scope/lesson/work adoption preserved only;not mathematical proof input or certification. No authority record restored to an old baseline.",
+    "unrelated_mathematics_certified": false
+  }
+}

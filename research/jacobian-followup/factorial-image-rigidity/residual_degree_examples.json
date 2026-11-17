@@ -1,0 +1,884 @@
+{
+  "actual_moment_kernels": [
+    {
+      "prime": 7,
+      "coefficients": [
+        1
+      ],
+      "factor_branches": [],
+      "square_part_coefficients": [
+        1
+      ],
+      "possible_divisor_degrees": [
+        0
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false,
+      "moment_kernel_offset": 0
+    },
+    {
+      "prime": 7,
+      "coefficients": [
+        1,
+        6
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            6,
+            1
+          ],
+          "residual_degree": 1,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 1,
+          "max_copies_in_square_divisor": 0
+        }
+      ],
+      "square_part_coefficients": [
+        1
+      ],
+      "possible_divisor_degrees": [
+        0
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false,
+      "moment_kernel_offset": 1
+    },
+    {
+      "prime": 13,
+      "coefficients": [
+        1,
+        10,
+        12
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            8,
+            1
+          ],
+          "residual_degree": 1,
+          "multiplicity": 2,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 1,
+          "max_copies_in_square_divisor": 1
+        }
+      ],
+      "square_part_coefficients": [
+        8,
+        1
+      ],
+      "possible_divisor_degrees": [
+        0,
+        1
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false,
+      "moment_kernel_offset": 2
+    },
+    {
+      "prime": 19,
+      "coefficients": [
+        1,
+        13,
+        11,
+        18
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            1,
+            1
+          ],
+          "residual_degree": 1,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 1,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            18,
+            7,
+            1
+          ],
+          "residual_degree": 2,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 2,
+          "max_copies_in_square_divisor": 0
+        }
+      ],
+      "square_part_coefficients": [
+        1
+      ],
+      "possible_divisor_degrees": [
+        0
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false,
+      "moment_kernel_offset": 3
+    },
+    {
+      "prime": 73,
+      "coefficients": [
+        1,
+        26,
+        53,
+        18,
+        56,
+        67,
+        55,
+        8,
+        58,
+        4,
+        28,
+        45,
+        72
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            25,
+            1
+          ],
+          "residual_degree": 1,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 1,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            59,
+            46,
+            8,
+            1
+          ],
+          "residual_degree": 3,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 3,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            44,
+            19,
+            38,
+            1
+          ],
+          "residual_degree": 3,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 3,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            24,
+            45,
+            11,
+            46,
+            30,
+            1
+          ],
+          "residual_degree": 5,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 5,
+          "max_copies_in_square_divisor": 0
+        }
+      ],
+      "square_part_coefficients": [
+        1
+      ],
+      "possible_divisor_degrees": [
+        0
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false,
+      "moment_kernel_offset": 12
+    },
+    {
+      "prime": 79,
+      "coefficients": [
+        1,
+        38,
+        48,
+        75,
+        62,
+        20,
+        62,
+        61,
+        17,
+        66,
+        67,
+        51,
+        60,
+        78
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            68,
+            49,
+            1
+          ],
+          "residual_degree": 2,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 2,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            22,
+            62,
+            32,
+            72,
+            9,
+            1
+          ],
+          "residual_degree": 5,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 5,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            16,
+            74,
+            0,
+            36,
+            50,
+            40,
+            1
+          ],
+          "residual_degree": 6,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 6,
+          "max_copies_in_square_divisor": 0
+        }
+      ],
+      "square_part_coefficients": [
+        1
+      ],
+      "possible_divisor_degrees": [
+        0
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false,
+      "moment_kernel_offset": 13
+    },
+    {
+      "prime": 103,
+      "coefficients": [
+        1,
+        86,
+        4,
+        35,
+        24,
+        12,
+        57,
+        64,
+        56,
+        22,
+        70,
+        19,
+        29,
+        25,
+        2,
+        11,
+        17,
+        102
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            46,
+            1
+          ],
+          "residual_degree": 1,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 1,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            94,
+            1
+          ],
+          "residual_degree": 1,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 1,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            74,
+            86,
+            80,
+            6,
+            24,
+            48,
+            19,
+            1
+          ],
+          "residual_degree": 7,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 7,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            87,
+            28,
+            45,
+            20,
+            17,
+            33,
+            32,
+            30,
+            1
+          ],
+          "residual_degree": 8,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 8,
+          "max_copies_in_square_divisor": 0
+        }
+      ],
+      "square_part_coefficients": [
+        1
+      ],
+      "possible_divisor_degrees": [
+        0
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false,
+      "moment_kernel_offset": 17
+    }
+  ],
+  "nearby_index_certificates": [
+    {
+      "status": "nearby_residual_window_certified",
+      "terminal_index": 15,
+      "moment_indices": [
+        14,
+        15
+      ],
+      "profiles": [
+        {
+          "nearby_prime": 13,
+          "offset": 2,
+          "prime": 13,
+          "coefficients": [
+            1,
+            10,
+            12
+          ],
+          "factor_branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                8,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 1
+            }
+          ],
+          "square_part_coefficients": [
+            8,
+            1
+          ],
+          "possible_divisor_degrees": [
+            0,
+            1
+          ],
+          "parity_applied": false,
+          "characteristic_zero_squarefree_claimed": false,
+          "moment_kernel_offset": 2
+        }
+      ],
+      "global_even_degree_bound": 6,
+      "remaining_degrees": [
+        0
+      ],
+      "squarefree_certified": true,
+      "counterexample_claimed": false,
+      "uniform_all_indices_coverage_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRRESIDUALDEGREES20261116"
+    },
+    {
+      "status": "nearby_residual_window_certified",
+      "terminal_index": 118,
+      "moment_indices": [
+        117,
+        118
+      ],
+      "profiles": [
+        {
+          "nearby_prime": 113,
+          "offset": 5,
+          "prime": 113,
+          "coefficients": [
+            1,
+            97,
+            14,
+            58,
+            14,
+            42
+          ],
+          "factor_branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                112,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                35,
+                75,
+                40,
+                1
+              ],
+              "residual_degree": 3,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            }
+          ],
+          "square_part_coefficients": [
+            112,
+            1
+          ],
+          "possible_divisor_degrees": [
+            0,
+            1
+          ],
+          "parity_applied": false,
+          "characteristic_zero_squarefree_claimed": false,
+          "moment_kernel_offset": 5
+        }
+      ],
+      "global_even_degree_bound": 2,
+      "remaining_degrees": [
+        0
+      ],
+      "squarefree_certified": true,
+      "counterexample_claimed": false,
+      "uniform_all_indices_coverage_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRRESIDUALDEGREES20261116"
+    },
+    {
+      "status": "nearby_residual_window_certified",
+      "terminal_index": 126,
+      "moment_indices": [
+        125,
+        126
+      ],
+      "profiles": [
+        {
+          "nearby_prime": 109,
+          "offset": 17,
+          "prime": 109,
+          "coefficients": [
+            1,
+            32,
+            52,
+            72,
+            92,
+            99,
+            20,
+            93,
+            93,
+            99,
+            104,
+            47,
+            101,
+            45,
+            43,
+            72,
+            31,
+            71
+          ],
+          "factor_branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                16,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                64,
+                82,
+                12,
+                2,
+                70,
+                105,
+                54,
+                49,
+                97,
+                42,
+                18,
+                23,
+                52,
+                70,
+                9,
+                9,
+                1
+              ],
+              "residual_degree": 16,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 16,
+              "max_copies_in_square_divisor": 0
+            }
+          ],
+          "square_part_coefficients": [
+            1
+          ],
+          "possible_divisor_degrees": [
+            0
+          ],
+          "parity_applied": false,
+          "characteristic_zero_squarefree_claimed": false,
+          "moment_kernel_offset": 17
+        },
+        {
+          "nearby_prime": 113,
+          "offset": 13,
+          "prime": 113,
+          "coefficients": [
+            1,
+            94,
+            64,
+            9,
+            81,
+            40,
+            6,
+            1,
+            81,
+            62,
+            2,
+            23,
+            87,
+            110
+          ],
+          "factor_branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                49,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                103,
+                38,
+                28,
+                87,
+                83,
+                48,
+                82,
+                16,
+                66,
+                112,
+                10,
+                35,
+                1
+              ],
+              "residual_degree": 12,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 12,
+              "max_copies_in_square_divisor": 0
+            }
+          ],
+          "square_part_coefficients": [
+            1
+          ],
+          "possible_divisor_degrees": [
+            0
+          ],
+          "parity_applied": false,
+          "characteristic_zero_squarefree_claimed": false,
+          "moment_kernel_offset": 13
+        }
+      ],
+      "global_even_degree_bound": 6,
+      "remaining_degrees": [
+        0
+      ],
+      "squarefree_certified": true,
+      "counterexample_claimed": false,
+      "uniform_all_indices_coverage_claimed": false,
+      "gamma_shape": "1",
+      "theorem": "FIRRESIDUALDEGREES20261116"
+    }
+  ],
+  "synthetic_residual_controls": [
+    {
+      "fixture_only_not_a_moment_kernel": true,
+      "prime": 2,
+      "coefficients": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "residual_degree": 3,
+          "multiplicity": 2,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 3,
+          "max_copies_in_square_divisor": 1
+        }
+      ],
+      "square_part_coefficients": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "possible_divisor_degrees": [
+        0,
+        3
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false
+    },
+    {
+      "fixture_only_not_a_moment_kernel": true,
+      "prime": 2,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            1,
+            1,
+            1
+          ],
+          "residual_degree": 2,
+          "multiplicity": 2,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 2,
+          "max_copies_in_square_divisor": 1
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "residual_degree": 3,
+          "multiplicity": 2,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 3,
+          "max_copies_in_square_divisor": 1
+        }
+      ],
+      "square_part_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "possible_divisor_degrees": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false
+    }
+  ],
+  "fixed_prime_offset_family": {
+    "status": "fixed_prime_all_r_family_certified",
+    "prime": 113,
+    "offset": 13,
+    "kernel_data": {
+      "prime": 113,
+      "coefficients": [
+        1,
+        94,
+        64,
+        9,
+        81,
+        40,
+        6,
+        1,
+        81,
+        62,
+        2,
+        23,
+        87,
+        110
+      ],
+      "factor_branches": [
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            49,
+            1
+          ],
+          "residual_degree": 1,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 1,
+          "max_copies_in_square_divisor": 0
+        },
+        {
+          "edge_left": 0,
+          "e": 1,
+          "residual_factor": [
+            103,
+            38,
+            28,
+            87,
+            83,
+            48,
+            82,
+            16,
+            66,
+            112,
+            10,
+            35,
+            1
+          ],
+          "residual_degree": 12,
+          "multiplicity": 1,
+          "factor_irreducibility_verified": true,
+          "square_divisor_degree_step": 12,
+          "max_copies_in_square_divisor": 0
+        }
+      ],
+      "square_part_coefficients": [
+        1
+      ],
+      "possible_divisor_degrees": [
+        0
+      ],
+      "parity_applied": false,
+      "characteristic_zero_squarefree_claimed": false,
+      "moment_kernel_offset": 13
+    },
+    "remaining_even_degrees": [
+      0
+    ],
+    "all_r_ge1_certified": true,
+    "all_primes_or_offsets_claimed": false,
+    "uniform_C_smoothness_claimed": false,
+    "counterexample_claimed": false,
+    "theorem": "FIRRESIDUALDEGREES20261116"
+  },
+  "all_offset_C_smoothness_claimed": false,
+  "uniform_nearby_prime_coverage_claimed": false
+}

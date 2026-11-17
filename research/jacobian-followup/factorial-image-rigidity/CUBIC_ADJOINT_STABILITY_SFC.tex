@@ -1,0 +1,221 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{All-index cubic Strong Factorial by adjoint half-plane separation}
+\author{Internal proof and exact replay; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+For $(\gamma)_j=\gamma(\gamma+1)\cdots(\gamma+j-1)$ put
+\[
+ T_{n,\gamma}(t)=\sum_{k=0}^n\binom nk(\gamma)_{2k}t^k.
+\]
+\begin{theorem}\label{thm:simple}
+If $n\ge1$, $\gamma>0$ and $\gamma\ge n-2$, then $T_{n,\gamma}$
+has only simple complex roots.
+\end{theorem}
+\begin{corollary}\label{cor:sfc}
+For every positive Gamma shape $\beta$, every nonzero
+$f(X)=X(A+BX^2)$ with complex coefficients has no two consecutive
+zero moments. This holds at every starting index. Multiplication by
+monomials in other independent variables preserves the assertion,
+with arbitrary positive shapes in those variables.
+\end{corollary}
+The proof is uniform: there is no asymptotic cutoff or finite-prefix
+obligation. It closes this cubic family, not unrestricted Strong Factorial
+or the general Factorial Conjecture. The previously retained prime-power
+index and fold results are independent earlier-stage evidence.
+
+\section{A half-plane estimate and its convolution consequence}
+Define the monic Gamma moment polynomial
+\[
+ G_{n,\alpha}(z)=\sum_{k=0}^n\binom nk(\alpha)_kz^{n-k},\qquad \alpha>0.
+\]
+\begin{lemma}\label{lem:gamma}
+Every zero of $G_{n,\alpha}$ has real part at most
+$-(\alpha-n+1)$. The inequality is strict when $n\ge2$.
+\end{lemma}
+\begin{proof}
+Put $S=\alpha+n-1$ and form a complex symmetric tridiagonal matrix
+$J$, with entries $J_{jj}=S+2-2j$ and
+$J_{j,j+1}=J_{j+1,j}=i\sqrt{j(S+1-j)}$, $1\le j<n$.
+The radicands are positive. Its leading principal characteristic
+polynomials obey
+\[
+ D_0=1,\quad D_1=z-S,\quad
+ D_j=(z-S-2+2j)D_{j-1}+(j-1)(S+2-j)D_{j-2}.
+\]
+The coefficient formula
+\[
+ D_j(z)=\sum_{k=0}^j(-1)^{j-k}\frac{j!}{k!}
+                         \binom{S-k}{j-k}z^k
+\]
+verifies this recurrence directly. At $j=n$ it gives
+$G_{n,\alpha}(z)=\det(zI+J)$, also for noninteger $\alpha$.
+The Hermitian part of $J$ is its real diagonal, whose smallest entry
+is $\alpha-n+1$. Thus each eigenvalue of $-J$ has real part at most
+the negative of this entry. Equality for $n\ge2$ would require an
+eigenvector supported solely in its last coordinate. The nonzero last
+off-diagonal entry rules that out.
+\end{proof}
+
+We use the following classical input, in precisely its half-plane case:
+the Grace--Walsh--Szeg\H{o} coincidence theorem says that the symmetric
+multiaffine polarization of a degree-$n$ polynomial nonvanishing on an
+open half-plane is nonvanishing whenever all $n$ arguments belong to
+that half-plane. A source with statement and proof is Wagner,
+\emph{Multivariate stable polynomials: theory and applications},
+Theorem 4.1 and Section 4, in the
+\href{sources/wagner-multivariate-stable-polynomials-2011.pdf}{cached author PDF}
+(\href{https://www.math.uwaterloo.ca/~dgwagner/ceb_wagner.pdf}{author URL}).
+Only this stated classical input is imported; the application below is explicit.
+
+For monic degree-$n$ polynomials define their additive convolution by
+\[
+ (f\boxplus g)(z)=\frac1{n!}\sum_{k=0}^n f^{(k)}(z)g^{(n-k)}(0).
+                                                               \tag{1}
+\]
+If $s_1,\ldots,s_n$ are the roots of $g$ and $F$ is the symmetric
+multiaffine polarization of $f$, coefficient comparison gives
+\[
+ (f\boxplus g)(z)=F(z-s_1,\ldots,z-s_n).                         \tag{2}
+\]
+In particular, if $f$ has no roots in $\Re z>A$ and all roots of $g$
+have $\Re s<B$, then $f\boxplus g$ has no roots in $\Re z\ge A+B$:
+all the arguments in (2) then belong to $\Re z>A$, so the classical
+input applies. This uses polarization, not closure of a convex average
+of stable polynomials.
+
+Let $U,V$ be independent unit-rate Gamma variables of shapes
+$\gamma$ and $n+1$. Define
+\[
+ B(z)=\mathbb E(z+U+V/2)^n
+     =\sum_{j=0}^n n_{\underline j}c_j z^{n-j},\qquad
+ \sum_{j\ge0}c_jx^j=(1-x)^{-\gamma}(1-x/2)^{-(n+1)}.             \tag{3}
+\]
+Here $n_{\underline j}=n!/(n-j)!$. This is
+$G_{n,\gamma}\boxplus [2^{-n}G_{n,n+1}(2z)]$, by expansion of
+(1), or by independence of $U,V$. Lemma \ref{lem:gamma} and (2) show
+\[
+ \Re z<n-\gamma-2\quad\hbox{at every root of $B$, if $n\ge2$}.   \tag{4}
+\]
+For $n=1$, $B(z)=z+\gamma+1$ has a strictly negative root directly.
+Under the hypotheses of Theorem \ref{thm:simple}, $B$ is therefore
+strictly Hurwitz: every root has negative real part. Consequently
+$B(z)$ and $B(-z)$ have disjoint zero sets.
+
+\section{The exact differential and adjoint equations}
+Put $M=\gamma+2n$, and reverse $T$ after a quadratic substitution:
+\[
+ R(z)=z^{2n}T_{n,\gamma}(-z^{-2}).                              \tag{5}
+\]
+It is monic with $R(0)=(-1)^n(\gamma)_{2n}\ne0$.
+The coefficient recurrence of $T$ gives, with $\theta=tD_t$,
+\[
+ [D_t+(\theta-n)(2\theta+\gamma)(2\theta+\gamma+1)]T=0.
+\]
+Putting $\delta=zD_z$ in (5) transforms this into
+\[
+ [\delta(\delta-M)(\delta-M-1)-z^2(\delta-2n)]R=0,
+\]
+or $LR=0$, where
+\[
+ L=D_z^3+aD_z^2+bD_z+c,\quad
+ a=\frac{2-2M}{z},\quad b=\frac{M(M-1)}{z^2}-1,\quad c=\frac{2n}{z}.
+                                                               \tag{6}
+\]
+All nonzero finite points are ordinary points. A repeated root of $R$
+at such a point has multiplicity exactly two: a multiplicity $\ge3$
+would give an uncancelled lowest Taylor term in the monic third derivative.
+
+The generating function $C(x)$ in (3) satisfies
+\[
+ (2-3x+x^2)C'(x)=[(2\gamma+n+1)-(\gamma+n+1)x]C(x).
+\]
+Equivalently, with $c_{-1}=0$,
+\[
+ 2(j+1)c_{j+1}=(3j+2M-3n+1)c_j-(j+M-n)c_{j-1}.
+\]
+Substitution in (3), including both end coefficients, gives
+\[
+ \mathcal EB:=zB'''-(3z+M-1)B''+(2z+2M-2)B'-2nB=0.            \tag{7}
+\]
+The formal adjoint of (6) is
+\[
+ L^*f=-f'''+(af)''-(bf)'+cf.
+\]
+On any local branch away from zero, let
+\[
+ f_+(z)=e^{-z}z^{1-M}B(z),\qquad
+ f_-(z)=e^{z}z^{1-M}B(-z).                                    \tag{8}
+\]
+Both solve $L^*f=0$. For $f_+$ the exact gauge identity is
+\[
+ L^*(e^{-z}z^{1-M}B)=-\frac{e^{-z}z^{1-M}}z\mathcal EB.
+                                                               \tag{9}
+\]
+It follows by differentiating with logarithmic derivative
+$-1+(1-M)/z$. Reflection gives $f_-$, because $a,c$ are odd and $b$
+is even. Powers with noninteger $M$ need only be defined locally;
+reflection changes the chosen power by a nonzero constant.
+
+\section{The zero concomitant rules out every repeated root}
+For a solution of $LR=0$ and a solution of $L^*f=0$, the Lagrange
+concomitant
+\[
+ \mathcal C(f,R)=fR''+(af-f')R'+[f''-(af)'+bf]R                \tag{10}
+\]
+has derivative $fLR-RL^*f=0$. In (8), each value of (10) is
+$e^{\mp z}z^{1-M}V_\pm(z)$ for a rational function $V_\pm$.
+It must in fact vanish identically. Otherwise its constancy implies
+\[
+ V_\pm'/V_\pm=\pm1+(M-1)/z,
+\]
+an impossible rational identity: the left side tends to zero at infinity,
+whereas the right side tends to $1$ or $-1$. This argument works equally
+for integer and noninteger $\gamma$; it does not assert that $f_\pm$
+itself is rational.
+
+If $z_0$ were a repeated root of $R$, then $z_0\ne0$ and
+$R(z_0)=R'(z_0)=0$, $R''(z_0)\ne0$. Evaluating the two zero
+concomitants gives
+\[
+ B(z_0)=B(-z_0)=0,
+\]
+contradicting the half-plane separation (4). Thus $R$ is squarefree.
+The substitution $t=-z^{-2}$ is unramified away from zero and
+$T(0)=1$, so a repeated root of $T$ would be a repeated root of $R$.
+This proves Theorem \ref{thm:simple}.
+
+\section{Consecutive Gamma moments}
+For terminal order $n\ge1$ put $\gamma=n+\beta-1>0$ and
+$\vartheta=tD_t$. Exact coefficient identities give
+\[
+ T_{n,\gamma+1}=T_{n,\gamma}+\frac2\gamma\vartheta T_{n,\gamma},
+ \qquad
+ T_{n-1,\gamma}=T_{n,\gamma}-\frac1n\vartheta T_{n,\gamma}.      \tag{11}
+\]
+The determinant of this two-by-two linear system is
+$-(\gamma+2n)/(\gamma n)\ne0$.
+For $AB\ne0$, the moments at orders $n,n-1$ of $X(A+BX^2)$ are
+nonzero scalar multiples of $T_{n,\gamma+1}(B/A)$ and
+$T_{n-1,\gamma}(B/A)$, respectively. Since $\gamma>n-1$, Theorem
+\ref{thm:simple} and (11) exclude simultaneous zeros. Monomial cases
+are immediate, and independent-variable monomials have nonzero Gamma
+moments at every order. This proves Corollary \ref{cor:sfc}.
+
+\section{Verification and boundaries}
+The paired module and checker replay the exact differential, gauge,
+concomitant, convolution, matrix, and moment identities. Symbolic
+operator identities check arbitrary parameters; bounded rational cases
+are regression controls, not the proof of the universal claim.
+The classical input is pinned by a source hash and its theorem-level
+application was reviewed. Independent replay, formal verification,
+external review and novelty claims are all false.
+No statement for arbitrary $\gamma>0$ below $n-2$, all lower exponents,
+all gaps, general supports or unrestricted FC/SFC follows here.
+\end{document}

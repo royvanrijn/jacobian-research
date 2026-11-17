@@ -1,0 +1,32 @@
+{
+  "outcome": "PASS",
+  "scope": "Two targeted finite certificate replays after amplitude-sign correction; no Singular invocation or blanket independent theorem assurance",
+  "producer_sha256": "70796ff8da138f993f2f768db57f8085ebbbbedd3a7e74567bf7fd42fe8a0b74",
+  "examples": [
+    {
+      "example": "isotropic_cubic",
+      "replay_passed": true,
+      "safe": true,
+      "cutoff": {
+        "slope": "1/3",
+        "intercept": "0",
+        "convention": "For every original Q, E(Q P^m)=0 for every integer m > slope*deg(Q)+intercept.",
+        "all_positive_pure": true,
+        "pure_linear_slope": "1/3",
+        "proof": "checked degree-lowering recurrence plus normalized periods of ALL cutoff monomials"
+      },
+      "elapsed_seconds": 0.104,
+      "input_certificate_sha256": "ba1403e78f9f2590a8061f454eb8b0b3b0df656dedb7e938c8ebc92f2cf90c45"
+    },
+    {
+      "example": "quartic_whole_source",
+      "replay_passed": true,
+      "safe": false,
+      "cutoff": null,
+      "elapsed_seconds": 0.017,
+      "input_certificate_sha256": "bc36eeb717f51dc08213b1573e0093a3c1a3bb146b369463d2672eae27ef36cb"
+    }
+  ],
+  "formal_verification": false,
+  "external_review": false
+}

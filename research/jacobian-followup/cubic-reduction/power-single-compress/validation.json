@@ -1,0 +1,203 @@
+{
+  "all_cancellation_pairs_covered": true,
+  "all_coordinate_maps_verified_mod_membership": true,
+  "all_coordinate_supports_covered": true,
+  "all_membership_constraints_reconstructed": true,
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "cases": [
+    {
+      "case": 0,
+      "certificate_sha256": "1389112456b0ed7befdd97f817f6564bbc42383d705e87ac7c80590a9a15db75",
+      "identities": 6,
+      "membership_rank": 34,
+      "support": [
+        0,
+        1,
+        2,
+        9,
+        10,
+        17
+      ]
+    },
+    {
+      "case": 1,
+      "certificate_sha256": "8d610526fb8d8c88f126b818fb59c6d9f55816daab9443a0fb25e92fccdeaf1e",
+      "identities": 12,
+      "membership_rank": 30,
+      "support": [
+        0,
+        1,
+        3,
+        7,
+        8,
+        17
+      ]
+    },
+    {
+      "case": 2,
+      "certificate_sha256": "2bb07cc5d54e82763f3a19663b15e80710aab3933ce33d730f6b008e190b51d0",
+      "identities": 5,
+      "membership_rank": 15,
+      "support": [
+        0,
+        1,
+        3,
+        9,
+        17
+      ]
+    },
+    {
+      "case": 3,
+      "certificate_sha256": "7be7176335ab8b483f17c8061c5ad212ad94a1b2321e0577fe896faa251d9809",
+      "identities": 7,
+      "membership_rank": 34,
+      "support": [
+        0,
+        1,
+        6,
+        7,
+        8,
+        17
+      ]
+    },
+    {
+      "case": 4,
+      "certificate_sha256": "2467716087c7d1bc3e18e4e8c487d1082ca990b0309e52937556c6b2ae77beb6",
+      "identities": 10,
+      "membership_rank": 32,
+      "support": [
+        0,
+        1,
+        6,
+        9,
+        10,
+        17
+      ]
+    },
+    {
+      "case": 5,
+      "certificate_sha256": "4eac318dfb305ccff4d7c418014af80ea9512707b9eefcff7d1f4ae851e73094",
+      "identities": 6,
+      "membership_rank": 8,
+      "support": [
+        0,
+        2,
+        5,
+        17
+      ]
+    },
+    {
+      "case": 6,
+      "certificate_sha256": "1c18d7d0ded95838c15de9facc4df846e62b12a02a3eab791cf9bb79d979ab0c",
+      "identities": 6,
+      "membership_rank": 8,
+      "support": [
+        0,
+        2,
+        11,
+        17
+      ]
+    },
+    {
+      "case": 7,
+      "certificate_sha256": "00d3b42b6fc26bed48db632caab34e03c3e90398bee00a138ff1e02b652d0382",
+      "identities": 4,
+      "membership_rank": 7,
+      "support": [
+        0,
+        3,
+        4,
+        17
+      ]
+    },
+    {
+      "case": 8,
+      "certificate_sha256": "36f4a95d796c7051ef545d510c7a9ae838354d481144bc910dfe48280de600e2",
+      "identities": 7,
+      "membership_rank": 10,
+      "support": [
+        0,
+        5,
+        6,
+        17
+      ]
+    },
+    {
+      "case": 9,
+      "certificate_sha256": "90cfcdfa4069c36626f9a96be3f355dbf38ca8c935f7608f242f3366f3bf531f",
+      "identities": 8,
+      "membership_rank": 10,
+      "support": [
+        0,
+        6,
+        11,
+        17
+      ]
+    },
+    {
+      "case": 10,
+      "certificate_sha256": "a5c6aca55d94d86798d4ff073d822f2ae6f677eab7f699cd7ec15fd02cd6da45",
+      "identities": 3,
+      "membership_rank": 0,
+      "support": [
+        12,
+        17
+      ]
+    },
+    {
+      "case": 11,
+      "certificate_sha256": "173f26ba29b69ef7ab689e6fa627aa212759838f88b08e36e064a12a13a7b213",
+      "identities": 3,
+      "membership_rank": 0,
+      "support": [
+        13,
+        17
+      ]
+    },
+    {
+      "case": 12,
+      "certificate_sha256": "13644b74250d9d08d6f3f65ad8e63ac008d80a13fb0db5febddc508330f4619e",
+      "identities": 3,
+      "membership_rank": 0,
+      "support": [
+        14,
+        17
+      ]
+    },
+    {
+      "case": 13,
+      "certificate_sha256": "d5ad403834450d12a482476a1e2f157c535c48988ff486969fb5132ed81abba1",
+      "identities": 3,
+      "membership_rank": 0,
+      "support": [
+        15,
+        17
+      ]
+    },
+    {
+      "case": 14,
+      "certificate_sha256": "a2e6cf6f777823a23caf4649d051c629c213a9e1aff9e7f1ce03b5550a54b03f",
+      "identities": 3,
+      "membership_rank": 0,
+      "support": [
+        16,
+        17
+      ]
+    }
+  ],
+  "certification_sha256": "004375bebf7786b1c71cc35067ec19642a4faecbdfc66427d053bb66c37fab33",
+  "construction_validation_sha256": "3186125dc2a3e045572f097c5a7912f020f78e18b0a4051cb8d5d36fa8e3e28e",
+  "coordinate_support_cases": 15,
+  "covered_nonempty_cliques": 225,
+  "independent_cube_rank": 89,
+  "input_sha256": "773143fa2d8d2417c4d87ef1d0f2a2cddaa7a11ae25511f0f657b0e452a2887f",
+  "max_multiplier_degree": 3,
+  "positive_compression_control": true,
+  "primary_checkpoint_sha256": "0acd29848a0d542481b68685bcff5f1032e7f8cfb99e71de2944eb2f4852380b",
+  "proportional_coefficient_pairs": 134,
+  "scope": "The saved89-form padded companion identity cannot be shortened by removing at least two selected forms, adding one arbitrary new linear cube, and re-solving all retained coefficients. All characteristic-zero extensions are covered. Other decompositions using two or more new forms and arbitrary smaller Keller constructions remain open.",
+  "seconds": 0.076,
+  "source_sha256": "b1b1eac866a9b3ade13552291cfe83b85ff9fbb2f6fc00435a14b72b1a9ead47",
+  "status": "pass",
+  "unit_identities": 86
+}

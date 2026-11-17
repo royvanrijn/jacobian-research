@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-11-16",
+  "primary_sources": [
+    {
+      "path": "sources/monic-key-chart-audit/mondal-13075577v4.html",
+      "url": "https://arxiv.org/html/1307.5577v4",
+      "title": "Mondal, Analytic compactifications of C2 part II, arXiv1307.5577v4",
+      "bytes": 1715796,
+      "sha256": "5c79d375c3f83339faeaaaadd3276f09782cf56299a8aa03444f92c046eb5f64",
+      "used_statement": "General signed key sequences/forms, leading coefficient and restricted monomial structure; Definitions2.8/2.10, Remark2.9, Theorem2.11, Algorithm2.12, Example2.13, PropositionA.1 and full LemmaA.2 including its proof. No primitive/positive terminal restriction imposed.",
+      "imported_not_independently_reproved": true,
+      "complete_HTML_sections_read": [
+        "Definitions2.8/2.10 and Remark2.9",
+        "Theorem2.11 and Algorithm2.12",
+        "Example2.13",
+        "PropositionA.1",
+        "LemmaA.2 full statement and proof"
+      ],
+      "fresh_PDF_audit": false
+    },
+    {
+      "path": "sources/coordinate-negative-canonical/mondal-sign-mmj-2017.pdf",
+      "url": "https://pinakimondal.org/papers/mmj.pdf",
+      "title": "Mondal, How to Determine the Sign of a Valuation on C[x,y], MMJ66(2017),227-244",
+      "bytes": 227480,
+      "sha256": "d0e2f3d0fa88084034b723b42f2c66cdbbe9f387f62cff3735b99d616c0a66f1",
+      "used_statement": "Selected import Proposition2.11 terminal polynomial iff all key forms polynomial, under general Proposition2.10 hypotheses delta != degree and delta(x)>0; no positive terminal assumption. Theorem1.4(1) sign criterion retained through PF99. Literal unrestricted Theorem1.8(2)/Corollary1.10(1) negative-range cone/attainment inference NOT imported; exact countercontrol retained, consistent with own Example3.1 calculation.",
+      "imported_not_independently_reproved": true,
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        4,
+        5,
+        9,
+        10,
+        15,
+        16
+      ],
+      "fresh_PDF_audit": true
+    }
+  ],
+  "canonical_sign": "delta=-v",
+  "full_polynomial_chain_proof_independent_of_cone_criterion": true,
+  "terminal_polynomial_equivalence_imported": true,
+  "primitive_or_positive_terminal_assumption_used": false,
+  "unrestricted_negative_range_cone_or_attainment_criterion_imported": false,
+  "closed_cone_actual_affine_countercontrol_retained": true,
+  "non_finite_generation_claimed": false,
+  "erratum_search_claimed_exhaustive": false,
+  "new_priority": "Genuinely Laurent terminal keys, canonical budget and actual finite target algebra; no deeper coefficient campaigns; published quartic retirement retained."
+}

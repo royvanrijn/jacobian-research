@@ -1,0 +1,73 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED136",
+  "sources": [
+    {
+      "path": "COTANGENT_DECK_NORMAL_FORM_AND_RELATIVE_TRACE.md",
+      "url": "retained:PF2RULED135",
+      "used": "Generic field normal form is not a global finite order; current proof returns to actual whole-plane geometry.",
+      "bytes": 8129,
+      "sha256": "2595b840076a182a225172ba4664114035a088bc3213200286e5f2fe09c3bb16"
+    },
+    {
+      "path": "DECK_NORMALIZED_EULER_AND_UNRESTRICTED_RADICAL_TOWER_EXCLUSION.md",
+      "url": "retained:PF2RULED133",
+      "used": "Exact deck-normalized Euler budget and zero-excess saturation.",
+      "bytes": 8939,
+      "sha256": "4721256fb3ba068c7737b6169e4db97417b5a6d5644cacc7ad10461b60f3fbd4"
+    },
+    {
+      "path": "LOW_EULER_CYCLICITY_AND_DECORATED_RADICAL_TOWER_EXCLUSION.md",
+      "url": "retained:PF2RULED132",
+      "used": "Noncyclic exact-volume finite-pi1 quotient has Euler>=3.",
+      "bytes": 10351,
+      "sha256": "242866422a398e0311249b2ebb236c62763c322dc17a217ab6e5b4042e6755e5"
+    },
+    {
+      "path": "FINITE_ORBIFOLD_GROUPS_AND_UNIVERSAL_COMPLETE_RULINGS.md",
+      "url": "retained:PF2RULED134",
+      "used": "Mixed Euler3 ruling profile and distinction from irreducible-fibre Platonic space.",
+      "bytes": 10296,
+      "sha256": "1af643b2608376dee33a332d1966607b8209ca3fd04f6959599427528d1314c2"
+    },
+    {
+      "path": "../hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md",
+      "url": "retained:HC4MYLA0/1",
+      "used": "Actual free deck action, boundary A1 topology, Picard transfer and retained cyclic atlas/action.",
+      "bytes": 13791,
+      "sha256": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d"
+    },
+    {
+      "path": "../hc4-triangular-graphs/COMPLETE_RULING_PLANE_CHARTS_AND_THE_LOW_EULER_MULTIPLICITY_PAIR.md",
+      "url": "retained:HC4MYMO0",
+      "used": "Shared ruling plane chart/divisibility result credited; open chart need not be almost surjective.",
+      "bytes": 12404,
+      "sha256": "693906a52634f542c19de745e4dedd8f2835f78ba122af86ce0125528a10f106"
+    },
+    {
+      "path": "../hc4-triangular-graphs/SOURCE_BASE_CHANGE_AND_RESIDUAL_DIFFERENT.md",
+      "url": "retained:HC4MYMA0",
+      "used": "Residual discriminant not removed by diagonal splitting, no false finite-order deletion.",
+      "bytes": 11010,
+      "sha256": "08e61d5c064c43c7439c3eefb182c8ed04739e253d9cd0189ae610713c869415"
+    },
+    {
+      "path": "../hc4-triangular-graphs/sources/miyanishi-pseudocover-report-2005.pdf",
+      "url": "https://ems.press/content/serial-article-files/45993",
+      "used": "Primary definition printed1110/PDF38 and subsequent irreducible-fibre context; no full blocked article adoption.",
+      "bytes": 439019,
+      "sha256": "1e991cb0af2ff013c1ced61fb5c3ea849d6305f100aa486dcc3d955c3e948ef0"
+    },
+    {
+      "path": "sources/common-omitted-orbits/source-review.json",
+      "url": "local:source-review",
+      "used": "Exact primary and shared-proof boundaries.",
+      "bytes": 811,
+      "sha256": "27fcbba08a9e4e26dca8777c48086b0d2d9343526ef04f96840b3fc18ead1f37"
+    }
+  ],
+  "new_external_theorem_import": false,
+  "registered_predecessor_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

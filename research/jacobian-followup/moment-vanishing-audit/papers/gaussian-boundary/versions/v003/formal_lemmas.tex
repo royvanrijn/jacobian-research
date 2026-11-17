@@ -1,0 +1,186 @@
+\subsection{Removing the cubic height without asymptotics}\label{sec:airyformal}
+
+The extra term $T^3$ can be dealt with algebraically. This avoids
+using an asymptotic formula for a cubic Gaussian integral.
+
+\begin{lemma}[An algebraic Riccati obstruction]\label{lem:airyriccati}
+The equation $f_x=x-f^2$ has no solution algebraic over $\C(x)$.
+\end{lemma}
+\begin{proof}
+At a finite point, a finite branch of $f$ satisfies a regular analytic
+first-order equation and cannot branch. At a pole, put $g=1/f$.
+Then $g_x=1-xg^2$, again a regular equation; a zero of $g$ is simple.
+Thus the normalized algebraic curve of $\C(x,f)$ is unramified over
+every finite $x$. If its degree is $d$ and there are $r$ points over
+infinity, Riemann--Hurwitz gives $2g-2=-d-r$. This forces $d=r=1$.
+So $f$ would be rational. An integer-order pole of $f$ at infinity
+makes $f^2$ dominate both $x$ and $f_x$; if $f$ is bounded there,
+the term $x$ cannot cancel. Both possibilities are impossible.
+\end{proof}
+
+\begin{lemma}[Cubic Gaussian obstruction]\label{lem:cubicgaussian}
+Let $A,B,C\in\C(z)$ be regular at zero, with $A(0)=C(0)=0$,
+$B(0)=-1/2$ and $A\ne0$. Define the formal unit
+\[
+ I=\E_T\exp\bigl(AT^3+(B+1/2)T^2+CT\bigr).
+\]
+Then $I'/I$ is not rational in $z$.
+\end{lemma}
+\begin{proof}
+Write $M_j=\E[T^j\exp(AT^3+(B+1/2)T^2+CT)]$ and $J=M_1$.
+Gaussian integration by parts gives, for $j\geq0$,
+\begin{equation}\label{eq:momentrec}
+ 3A M_{j+2}+2B M_{j+1}+C M_j+jM_{j-1}=0,
+\end{equation}
+where the last term is zero for $j=0$. Also
+$I'=A'M_3+B'M_2+C'J$ and $J'=A'M_4+B'M_3+C'M_2$.
+For clarity, the first two eliminations are
+\[
+ M_2=-\frac{2BJ+CI}{3A},\qquad
+ M_3=\frac{(4B^2-3AC)J+(2BC-3A)I}{9A^2}.
+\]
+The case $j=2$ of \eqref{eq:momentrec} supplies $M_4$.
+
+In an algebraic extension choose $a^3=3A$ and put
+\[
+ X=\frac{B^2-3AC}{a^4},\qquad F=\frac JI,
+ \qquad f=-aF-\frac B{a^2}.
+\]
+Substitution in these three recurrences, using $a'=A'/a^2$, gives
+\begin{align}
+ \frac{I'}I&=U-aX'F,
+ &U&=\frac{A'(2BC-3A)}{9A^2}-\frac{B'C}{3A},\label{eq:airyfirst}\\
+ f'&=X'(X-f^2).\label{eq:airypullback}
+\end{align}
+These identities follow by differentiation and polynomial substitution;
+they do not involve an integration contour or a limit of a Gaussian
+integral. They can also be checked by substituting $A=a^3/3$ in
+\eqref{eq:momentrec} before differentiating.
+
+If $A$ has order $q>0$, then $X$ has a pole of order $4q/3$,
+because $B^2-3AC$ is a unit. Thus $X'\ne0$ and $aX'$ is a nonzero
+rational function. If $I'/I$ were rational, \eqref{eq:airyfirst}
+would make $F$ rational and $f$ algebraic over $\C(z)$. The function
+field $\C(z,a)$ is finite over $\C(X)$, so $f$ would be algebraic
+over $\C(X)$. Equation~\eqref{eq:airypullback} contradicts
+Lemma~\ref{lem:airyriccati}.
+\end{proof}
+
+\begin{proposition}[The thirteen-coefficient case]\label{prop:height}
+Suppose a cubic has the form
+\[
+ P=Wh(Z)+sT^3+v(Z)T^2+u(Z)T+r(Z),
+\]
+where $s$ is constant. If it is pure, then $s=0$; it is one of the
+pure cases described in Section~\ref{sec:algebraic}, and obeys
+$m>3\deg Q$.
+\end{proposition}
+\begin{proof}
+If $h(0)\ne0$, use $z=g$, $t=z/h(z)$ in the formal Lagrange
+identity. The remaining cubic Gaussian series has
+\[
+ A=\frac{zs}{h},\quad B=-\frac12+\frac{zv}{h},\quad C=\frac{zu}{h}.
+\]
+Purity would give $I=H e^{-R}$, where
+$H=(h-zh')/h$ and $R=zr/h$. If $s\ne0$, this has rational
+logarithmic derivative, contradicting Lemma~\ref{lem:cubicgaussian}.
+If $h(0)=0$, the fixed point is zero. Use instead
+$A=ts$, $B=-1/2+tv(0)$, $C=tu(0)$, $H=1-th'(0)$ and $R=tr(0)$.
+The same contradiction applies. Thus $s=0$ in both cases, and the
+already proved algebraic subcase finishes the argument.
+\end{proof}
+
+\begin{corollary}[The affine coefficient of $W$]\label{cor:linearwt}
+If $P=W(a+bZ+cT)+G(Z,T)$ is a pure cubic, it satisfies
+$m>3\deg Q$. If $c\ne0$, it is in fact quadratic.
+\end{corollary}
+\begin{proof}
+Put $q=1-bt$ and $g=at/q+(ct/q)T$. Circular contraction gives
+\[
+ \Phi_1=q^{-1}\E_T[e^{tG(g,T)}].
+\]
+The coefficient of $T^3$ in the exponent is
+$A(t)=tG_3(ct/q,1)$. If it is nonzero, the cubic Gaussian
+obstruction applies, whereas purity makes the remaining Gaussian
+series equal to $q$, after removing a rational scalar exponential.
+For $c\ne0$, the rational function $ct/q$ is nonconstant, so
+$A=0$ forces $G_3=0$. Proposition~\ref{prop:quadratic} applies.
+If $c=0$, use Proposition~\ref{prop:height}.
+\end{proof}
+
+\subsection{What purity gives in a differential module}\label{sec:seedbridge}
+
+The following lemma is the precise passage from the formal Gaussian
+functional to an analytic period. Its hypotheses must be verified
+after each change of variables or localization.
+
+\begin{lemma}[The seed functional]\label{lem:seedfunctional}
+Let $M$ be a finite-dimensional differential module over $K=\C(t)$,
+let $s\in M$, and suppose a $K$-linear horizontal map
+$J:M\longrightarrow\C((t))$ satisfies $J(s)=1$. Then the differential
+submodule $U=K\langle\partial_t\rangle s$ has a horizontal quotient
+$L:U\longrightarrow K$ with $L(s)=1$.
+
+At an ordinary base point, $L$ extends locally to an analytic horizontal
+functional on $M$. For the period conclusion, assume explicitly that
+$M$ is the generic exponential de Rham system of regular functions
+$f,g$ on a smooth affine complex variety, where $f$ is the base
+projection and $f,g$ are algebraically independent. Remove the finite
+exceptional base set in the Hien--Roucairol comparison theorem.
+Then the extension is represented by a flat rapid-decay cycle, and its
+period evaluated on $s$ is identically one.
+\end{lemma}
+\begin{proof}
+On the generators $s,\nabla s,\nabla^2s,\ldots$, the values of $J$
+are $1,0,0,\ldots$. Therefore its restriction takes values in $K$.
+Every rational relation between these generators is respected because
+$J$ was defined on $M$, so this restriction is well defined and
+horizontal. Its value at $s$ makes it surjective.
+
+Choose a point where $M$, $U$ and $L$ are ordinary, extend the fiber
+functional from $U$ to $M$, and solve the dual analytic ODE.
+Uniqueness preserves its restriction to $U$. The perfect period
+pairing and solution representation in
+Hien--Roucairol~\cite[Theorems~2.4 and~3.7]{HienRoucairol} give the
+asserted cycle. A scalar rational normalization is an invertible gauge
+away from its zeros and poles and must be retained in the period.
+\end{proof}
+
+There are three distinct verifications here. First, integration by
+parts must make $J$ descend to the exact displayed de Rham quotient.
+Second, every inverted spatial coordinate must be a valid formal
+Laurent unit on the selected branch. Third, the comparison theorem
+requires a smooth affine total space and regular functions after
+removing the finite set of poles in the parameter. The theorem gives
+a representation, not a bound at infinity. In particular, it gives
+no shrinking estimate on its own.
+
+There is also a useful purely formal way to obtain a contradiction.
+
+\begin{lemma}[A full formal frame and a positive seed]\label{lem:positiveformal}
+Assume the hypotheses of the first paragraph of
+Lemma~\ref{lem:seedfunctional}. Suppose that, after a finite ramification
+$r=t^{-1/N}$ at infinity, $M$ has a full formal frame of rank-one
+exponential factors. For every factor with zero exponential part,
+assume its horizontal functional takes $s$ into $r\C[[r]]$.
+Then $J(s)=1$ is impossible.
+\end{lemma}
+\begin{proof}
+Enlarge the ramification to include the rational powers in the frame.
+The module over $\C((r))$ is then a direct sum of rank-one modules,
+so the quotient on $U$ extends to a horizontal map from the whole
+module to $\C((r))$. A nonzero exponential factor has no such map:
+the logarithmic derivative of a Laurent series has at most a simple
+logarithmic pole and cannot equal the derivative of a nonzero
+negative-power exponential part. On the zero part, all horizontal
+functionals are constant linear combinations of the supplied frame.
+Their values on $s$ have strictly positive $r$-order and cannot sum
+to one.
+\end{proof}
+
+The word \emph{full} is essential. Counting some critical points or
+writing a few scalar asymptotic expansions does not supply this lemma's
+hypothesis. The finite and escaping pieces must together give an
+invertible period matrix of the full de Rham rank. Also, a fractional
+power becomes an integer after ramification; the proof uses its
+strictly positive order, not an unsupported monodromy inference.

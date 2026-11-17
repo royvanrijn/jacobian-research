@@ -1,0 +1,33 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Valuation factor degrees and critical-curve obstruction",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/1411.5011v2",
+      "retained_file": "jelonek-lason-nonproper-1411.5011v2.html",
+      "sha256": "7a00a58a0d03ca9a24dfebbb9b7c25bae2c5ac0087d472614f873c2d9b968714",
+      "title": "Quantitative properties of the non-properness set of a polynomial map",
+      "authors": [
+        "Zbigniew Jelonek",
+        "Michal Lason"
+      ],
+      "version": "arXiv:1411.5011v2",
+      "role": "Explicit proof input: Definition 2.1, Proposition 2.2, Definition 2.3, and Theorem 3.2. For a generically finite polynomial map from complex affine space, its nonproperness set is covered by nonconstant polynomial images of A1. Only this qualitative conclusion is used, not the degree bound."
+    }
+  ],
+  "primary_nonproperness_statement_and_applicability_reviewed": true,
+  "nonproperness_parametric_curve_theorem_fully_reproved": false,
+  "primary_degree_bound_used": false,
+  "failed_older_source_access": "The 1993 ICM and Biblioteka Nauki PDF URLs returned HTTP 403 in this audit; no inspection of those PDF bytes is claimed. The explicit input is the accessible 1411.5011v2 theorem instead.",
+  "retained_imports": "leading-fibre-import.json: characteristic-zero Riemann-Hurwitz, Stacks 0C1B; the degree-two critical-curve consequences are proved in the note",
+  "valuation_root_slope_and_factor_degree_argument_proved_directly": true,
+  "normalized_rational_label_and_vertical_Jacobian_identity_proved_directly": true,
+  "critical_discriminant_confused_with_cubic_root_discriminant": false,
+  "rational_root_exclusion_asserted_full_irreducibility_in_arbitrary_degree": false,
+  "all_nonmonic_cubic_outputs_asserted_closed": false,
+  "all_Keller_component_fibres_asserted_irreducible": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

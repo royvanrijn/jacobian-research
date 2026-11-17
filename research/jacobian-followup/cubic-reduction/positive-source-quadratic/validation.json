@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "claim": "KCUB44",
+  "checker_sha256": "8cfb416b93d5414942c2281b3a24e3900317a89c5c6f17e46030fbfb6ae96cf8",
+  "producer_sha256": "f1e6d7add3f5b51cf837754589dfa70ed670ea0df64c61f05e6a2c89b2c8918f",
+  "degree9_producer_sha256": "a0c6513c86296fe2d2673687c87bf1a15210c71d9dc0ec5a63b5a99eaa14942f",
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "companion_helper_sha256": "b1e22d2e1c7127cf03f62ce8696b68cb3f118c7f6c8fa7dd09b49f00a08b4a95",
+  "input_sha256": "f11aef10be5e89e3e29e68b9b6bec77674bf2624d24e26f768d26aac6ea3e5de",
+  "checkpoint_sha256": "ac2652e86d0f207417cbdff04b92994049ba8bbcc4423267652c9af958b64f7b",
+  "degree9_input_sha256": "143fcf8499fc53a1b9ea807d5b3c5401ac392a8a6e1b3c522c5df91da6a53074",
+  "degree9_checkpoint_sha256": "d587cc958e9479c8ae2a4f4ba7bdbb16cef259e03de200707b5ddb93c063ea4d",
+  "discovery_sha256": "76228a65866e6d951a36b2a20cecd6dd4a5c2388ef17c3e394caa99e38a39978",
+  "degree9_base_source_columns": 220,
+  "degree9_base_field_kernel_dimension": 7,
+  "degree9_base_field_kernel_basis": [
+    "1",
+    "H1",
+    "H2",
+    "H3",
+    "H1^2",
+    "S",
+    "T"
+  ],
+  "degree9_independent_minor_size": 213,
+  "exact_rational_specialization_points": 107,
+  "prime": 1000000007,
+  "prime_checked": true,
+  "minor_determinant_mod_prime": 116435059,
+  "minor_sha256": "8a86ba1014d55db4d9576cb9bffa8afb6fecf9a82c812705d2a4839bd8b5908b",
+  "all_specialization_E_determinants_nonzero": true,
+  "all_source_quadratic_parameters_retained": true,
+  "exact_source_inverse_and_conjugacy_weights_checked": true,
+  "five_Taylor_obstruction_heads_checked": true,
+  "obstruction_a_exponents": [
+    5,
+    2,
+    3,
+    1,
+    0
+  ],
+  "formal_leading_order_cases": [
+    {
+      "leading_order": 3,
+      "last_order_used": 9
+    },
+    {
+      "leading_order": 4,
+      "last_order_used": 12
+    },
+    {
+      "leading_order": 5,
+      "last_order_used": 15
+    }
+  ],
+  "universal_formal_induction_and_weighted_initial_space_proof_written_not_formalized": true,
+  "every_nonzero_quadratic_low_source8_field_intersection_dimension": 2,
+  "intersection_basis": [
+    "1",
+    "H1 composed E_q"
+  ],
+  "source_degree7_intersection_also_dimension2": true,
+  "target_degree_cap": null,
+  "target_denominator_cap": null,
+  "no_Keller_rational_target_repair_through_source_degree8": true,
+  "extends_to_lower_affine_terms_and_affine_frames_after_the_source_shear": true,
+  "does_not_classify_nonlinear_source_shears_in_arbitrary_intermediate_frames": true,
+  "zero_quadratic_base_kernel_dimensions_degree7_8_9": [
+    4,
+    7,
+    7
+  ],
+  "transformed_source_degree9_not_classified": true,
+  "endpoint_degree_interval_for_nonzero_source_quadratic": [
+    9,
+    10
+  ],
+  "matching_degree10_control": {
+    "source_shear": "a->a+b^2",
+    "row_degrees": [
+      7,
+      9,
+      10
+    ],
+    "nonlinear_counts": [
+      8,
+      14,
+      15
+    ],
+    "full_determinant_one": true,
+    "points": [
+      [
+        -1,
+        1,
+        -8
+      ],
+      [
+        -2,
+        1,
+        4
+      ]
+    ],
+    "image": [
+      0,
+      1,
+      0
+    ],
+    "global_improvement": false
+  },
+  "all_parameter_collision_transport_checked": true,
+  "pilot_parameter_triples_are_discovery_only": true,
+  "imports": {
+    "KCUB42": {
+      "scope_fingerprint": "b03e25cdad005943",
+      "proof_sha256": "ce9f082d2fa330fa95619a0fde9df155a585914cc8500dd3ef16492a4d1193dd"
+    },
+    "KCUB43": {
+      "scope_fingerprint": "ae6205c7e3b85c32",
+      "proof_sha256": "3b35e34941e06eae2c275bcd9b7e7a134ae909273201577f4e77a418228173b1"
+    }
+  },
+  "goal_complete": false,
+  "global_positive_bounds_and_unrestricted_profiles_unchanged": true,
+  "trust_boundary": "Exact full source family,inverse,weight conjugacy,five Taylor heads,all finite induction index cases and one213-square rational rank minor are independently checked. Coefficientwise target-field descent,formal induction and finite weighted-filtration dimension argument are written,not formal or externally reviewed. The universal parameter theorem is not inferred from fixed-coefficient pilots. The original base field degree9 lemma is not transferred to the transformed field at degree9;only source cap8 is closed. KCUB42 supplies the generic cubic field presentation;KCUB43 preserves the zero-shear/global affine baseline boundaries.",
+  "seconds": 0.37649480599793606,
+  "proof_sha256": "255304a6b09558fd72764813f13c4e6c951c16d0d31287ab4825c0ed3418dd84"
+}

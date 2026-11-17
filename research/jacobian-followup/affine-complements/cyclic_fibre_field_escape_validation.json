@@ -1,0 +1,34 @@
+{
+  "claim": "PF2RULED144",
+  "outcome": "PASS_TARGETED",
+  "exact_controls": 101,
+  "checked": [
+    "registry schema and dependencies",
+    "all registered local locks exist",
+    "proof/checker/context hashes match PASS receipt",
+    "seven retained source hashes unchanged",
+    "three reviewed work fingerprints",
+    "lesson fingerprint",
+    "canonical proof local links and whitespace",
+    "previous PF143 PASS92 proof/checker preserved"
+  ],
+  "previous_goal_turn": "progress: PF143 authoritative proof and successful exact receipt preserved",
+  "global_navigation_outcome": "PREEXISTING_MISSING_ARTIFACTS_REVALIDATED",
+  "render_status_error": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "research_render_error": "METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json",
+  "generated_navigation_updated": false,
+  "completion_audit": {
+    "MX0_scaling_preserving_target_architecture_excluded": true,
+    "classical_pseudo_plane_scaling_preserving_target_architecture_excluded": true,
+    "unrestricted_cyclic_targets_excluded": false,
+    "generic_first_derivative_integrality_supplied": false,
+    "original_ramified_primes_retained": true,
+    "PF142_minimal_mixed_retirement_retained": true,
+    "HC4_JC2_proved": false,
+    "actual_counterexample_constructed": false
+  },
+  "goal_status": "active",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

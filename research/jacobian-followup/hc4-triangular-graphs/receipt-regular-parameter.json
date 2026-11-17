@@ -1,0 +1,113 @@
+{
+  "outcome": "PASS",
+  "check_count": 52,
+  "checks": [
+    "a nonsingular parameter has an explicit global gradient Bezout identity",
+    "its special zero fibre is the stated product",
+    "the two special components are disjoint by a polynomial ideal certificate",
+    "its generic fibre has literal Laurent recovery",
+    "the generic inverse of s is explicit on the fibre",
+    "a nonlinear polynomial composition creates an actual critical point",
+    "the noncyclic cubic has the exact discriminant with two simple branch values",
+    "both discriminant zeros have odd valuation over the complex rational field",
+    "the root-cover equation is primitive linear in V",
+    "that triangular equation has a literal polynomial inverse",
+    "the actual quotient-lattice root action is nonabelian",
+    "the full S3 root action has no nonzero invariant class over the rationals",
+    "a proper root stabilizer still fixes a nonzero component class",
+    "the nonzero conjugate class orbit sums to zero",
+    "polynomial degree 1: the full-target relation has a monic xy leading term",
+    "polynomial degree 1: standard monomials survive in the common free basis",
+    "polynomial degree 1: the geometric generic Danielewski equation is smooth",
+    "polynomial degree 1: the embedding has literal complete source recovery",
+    "polynomial degree 1: an independent ambient quadratic gives actual unit HC4 Hessian",
+    "polynomial degree 1: the written gradient inverse is a left inverse",
+    "polynomial degree 1: the same formula is a right inverse",
+    "polynomial degree 3: the full-target relation has a monic xy leading term",
+    "polynomial degree 3: standard monomials survive in the common free basis",
+    "polynomial degree 3: the geometric generic Danielewski equation is smooth",
+    "polynomial degree 3: the embedding has literal complete source recovery",
+    "polynomial degree 3: an independent ambient quadratic gives actual unit HC4 Hessian",
+    "polynomial degree 3: the written gradient inverse is a left inverse",
+    "polynomial degree 3: the same formula is a right inverse",
+    "polynomial degree 5: the full-target relation has a monic xy leading term",
+    "polynomial degree 5: standard monomials survive in the common free basis",
+    "polynomial degree 5: the geometric generic Danielewski equation is smooth",
+    "polynomial degree 5: the embedding has literal complete source recovery",
+    "polynomial degree 5: an independent ambient quadratic gives actual unit HC4 Hessian",
+    "polynomial degree 5: the written gradient inverse is a left inverse",
+    "polynomial degree 5: the same formula is a right inverse",
+    "the T-dependent lower-term correction is globally polynomial",
+    "the relative Y shear removes every T-dependent coefficient literally",
+    "the relative shear has the opposite translation as polynomial inverse",
+    "its full ambient Jacobian is one",
+    "the arbitrary two-variable suspension carries the desired output pair",
+    "that suspension embedding has literal polynomial source recovery",
+    "its generic ambient fibre eliminates Y exactly",
+    "the special T=0 relation has a nonzero right-hand polynomial over C(V)",
+    "even a constant B has a literal integral-special-fibre Laurent parameterization",
+    "the two-parameter countercontrol is explicitly outside Keller",
+    "its two-parameter cover nevertheless acquires a source square root",
+    "the excluded constant first-type polynomial leaves nonconstant Laurent units",
+    "retained mathematical or primary import pin jacobian-followup/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md",
+    "retained mathematical or primary import pin jacobian-followup/hc4-triangular-graphs/SMOOTH_INFINITY_OUTPUT_OBSTRUCTION.md",
+    "retained mathematical or primary import pin jacobian-followup/hc4-relative-row-orbit/PROOF.md",
+    "retained mathematical or primary import pin jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md",
+    "retained mathematical or primary import pin jacobian-followup/hc4-triangular-graphs/sources/arzhantsev-petravchuk-closed-math-0608157v2.html"
+  ],
+  "source_sha256": {
+    "verify_regular_parameter.py": "640f2b1f303d9fc6232028ac6a744addd0de0380f5522ec7c11b52a30a6f175d",
+    "REGULAR_PARAMETER_MONODROMY.md": "b010d2e4c62906a8a79da9dbc41ef7d0e3d5edefb4520cf487ba09ded5d86956",
+    "sources/regular-parameter-import.json": "e287cadeda4d6c1518f2ec35a8a75f3396804c847ac08dc3e744a30f195279f3"
+  },
+  "dependencies": {
+    "jacobian-followup/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md": "3a10bcc44350ae155d73f1786dbd1dc081c86b20d469e7efd0edfa408981462f",
+    "jacobian-followup/hc4-triangular-graphs/SMOOTH_INFINITY_OUTPUT_OBSTRUCTION.md": "7ee0a9b293ca95a8f037cfdef0b5c0630f0fb169ec728df5b18c4dc2fb5638db",
+    "jacobian-followup/hc4-relative-row-orbit/PROOF.md": "d3f528180c732f2a9c65af0cba4a405a37e34437d48e350e78748eaff61ecb36",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/hc4-triangular-graphs/sources/arzhantsev-petravchuk-closed-math-0608157v2.html": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9"
+  },
+  "polynomial_output_controls": [
+    {
+      "polynomial": "z + 2",
+      "degree": 1,
+      "generic_class_group_rank": 0
+    },
+    {
+      "polynomial": "z**3 - 3*z",
+      "degree": 3,
+      "generic_class_group_rank": 2
+    },
+    {
+      "polynomial": "z**5 + 2*z**2 + 7",
+      "degree": 5,
+      "generic_class_group_rank": 4
+    }
+  ],
+  "written_not_finite_exhaustion": [
+    "nowhere-critical polynomial parameter regularity in every dimension, with an explicit classical closed-polynomial import",
+    "arbitrary finite one-parameter monodromy is preserved by the Keller source field",
+    "the torsion-free class-group output criterion does not require abelian action when it descends from that parameter",
+    "all nonconstant P(z) and every two-variable suspension T*Y+xy-B(T,z) are covered in all degrees"
+  ],
+  "closed_polynomial_import_fully_reproved": false,
+  "every_special_parameter_fibre_asserted_irreducible": false,
+  "entire_Keller_field_extension_asserted_trivial": false,
+  "arbitrary_two_parameter_class_actions_asserted_covered": false,
+  "source_or_target_submersion_asserted_coordinate": false,
+  "generic_Danielewski_rings_asserted_factorial": false,
+  "arbitrary_low_rank_or_constant_first_type_asserted_covered": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false,
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "elapsed_seconds": 0.077
+}

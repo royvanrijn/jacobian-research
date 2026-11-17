@@ -1,0 +1,109 @@
+{
+  "result": "focused global surface-form integration passes",
+  "previous_goal_turn": "progress",
+  "new_claim_ids": [
+    "KMFI19"
+  ],
+  "changed_claim_ids": [
+    "OP-KMON",
+    "KMFI18"
+  ],
+  "reviewed_claim_ids": [
+    "OP-KMON",
+    "KMFI1",
+    "KMFI2",
+    "KMFI3",
+    "KMFI4",
+    "KMFI5",
+    "KMFI6",
+    "KMFI7",
+    "KMFI8",
+    "KMFI9",
+    "KMFI10",
+    "KMFI11",
+    "KMFI12",
+    "KMFI13",
+    "KMFI14",
+    "KMFI15",
+    "KMFI16",
+    "KMFI17",
+    "KMFI18",
+    "KMFI19"
+  ],
+  "claim_schema_checker_hashes_paths_dependencies_and_scope_acknowledgments": "pass",
+  "monodromy_dependency_closure_acyclic": true,
+  "dependency_closure_claim_count": 54,
+  "full_registry_graph_audit": {
+    "dependencies": "unrelated registry issue: dependencies contains a cycle through EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL",
+    "replaced_by": "pass"
+  },
+  "all_registry_ids_unique": true,
+  "updated_lesson_schema_paths_and_reviews": "pass",
+  "updated_work_sources_and_reviews": "pass",
+  "python_sources_parse": true,
+  "document_links_checked": 46,
+  "receipts": [
+    {
+      "path": "receipt.json",
+      "checks": 197,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "affine_completion_receipt.json",
+      "checks": 82,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "curve_descent_receipt.json",
+      "checks": 67,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "alternating_realizations_receipt.json",
+      "checks": 43,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "all_alternating_receipt.json",
+      "checks": 94,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "subgroup_reduction_receipt.json",
+      "checks": 694,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "surface_forms_receipt.json",
+      "checks": 78,
+      "source_hashes": "pass"
+    }
+  ],
+  "total_exact_checks": 1255,
+  "completion_audit": {
+    "global_form_definitions": "explicit invariant orbit sums on actual restricted root families",
+    "finite_branch_coverage": "exact full critical resultants and squarefree coprime collision packets",
+    "exceptional_and_boundary_extension": "written weighted-root analysis of all local types, with exact weights and cut bounds",
+    "form_nonzero": "good-prime exact residues 473 and 173+114h with unit denominators",
+    "target_surface_obstruction": "nonzero global two-forms on smooth projective quotient models; both not stably rational",
+    "all_five_audited_subgroup_reductions": "excluded under independent stabilization and birational affine recharts",
+    "independent_Klein_Shabat_affine_completion": "unresolved",
+    "abstract_PSL2_11_actions": "neither realized nor excluded absolutely",
+    "full_action_spectrum": "not classified",
+    "goal_complete": false
+  },
+  "proof_assurance": "Written global proof with exact local and nonzero controls; not formal verification or independent whole-proof review.",
+  "goal_status": "active",
+  "full_navigation": [
+    {
+      "command": "make render-navigation",
+      "result": "blocked",
+      "reason": "Pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": "make check-navigation",
+      "result": "blocked",
+      "reason": "Pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md"
+    }
+  ]
+}

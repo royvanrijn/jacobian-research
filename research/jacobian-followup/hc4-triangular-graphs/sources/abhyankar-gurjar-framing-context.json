@@ -1,0 +1,74 @@
+{
+  "claim": "HC4MYMM0",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYMK0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/UNIVERSAL_KELLER_FRAMING_AND_PASCAL_ENERGY_NONTERMINATION.md",
+      "role": "Retained preserving-B framing"
+    },
+    {
+      "claim": "GS1",
+      "canonical_source": "archive/non-elliptic/extended-geometry/FIXED_GMC_SIC_PROOF.md",
+      "role": "Retained classical coefficient inversion/Wick conventions; existing checker not replayed"
+    },
+    {
+      "claim": "GL1",
+      "canonical_source": "archive/non-elliptic/extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md",
+      "role": "Retained classical coefficient inversion/Wick conventions; existing checker not replayed"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/UNIVERSAL_KELLER_FRAMING_AND_PASCAL_ENERGY_NONTERMINATION.md": "4a7a1b9dc7c845a3574949576f182f6d1910c51d2bf2f98c48bedbf8abc9cd55",
+    "jacobian-followup/hc4-triangular-graphs/verify_pascal_energy_framing.py": "8c6e444244a195c64253de7ebce35742056058b8dcdb235ae742024a3c2ad6d7",
+    "archive/non-elliptic/extended-geometry/FIXED_GMC_SIC_PROOF.md": "7d4d9d1d9ca1833fc2d714c104ab112aee36406250d67a8b6affbd0af5df690c",
+    "archive/non-elliptic/scripts/verify_fixed_gmc_sic_bridge.py": "d9d6e697c912ecd31ae2a7ce3d98ab93235d99528524826aae84f5096e42214c",
+    "archive/non-elliptic/extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md": "1299752c6b71392bb00580ca3104b2ed813490034e43cf90dfbc0e0b8f573061",
+    "archive/non-elliptic/scripts/verify_formal_gaussian_lagrange.py": "095c5432f7af8babe7b8118e00f1ffc02dd0f65f6a8bdc7d118560c20ea7ff45"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "every_actual_plane_Keller_extension": true,
+    "all_generic_sheet_degrees": true,
+    "all_M_N_ge_two": true,
+    "every_nonzero_polynomial_amplitude": true,
+    "all_inversion_term_orders": true,
+    "embedded_target_ring_and_full_trace_gap_unchanged": true,
+    "exact_term_degree_formula": true,
+    "formal_polynomial_sums_can_have_all_nonzero_terms": true,
+    "unshifted_Gaussian_safety_precedes_Keller_condition": true,
+    "generic_translated_pure_moments_all_nonzero": true,
+    "binary_factorial_transfer_not_automatic": true,
+    "same_dimension_homogeneous_reduction_proved": false,
+    "nontermination_called_nonpolynomial_sum": false,
+    "Nambu_termination_refuted": false,
+    "HC4_counterexample_constructed": false,
+    "unrestricted_HC4_or_JC2_resolved": false
+  },
+  "external_imports": [],
+  "new_primary_caches": [],
+  "registered_mathematical_checkers_replayed": [],
+  "literature_context_only": [
+    {
+      "url": "https://arxiv.org/html/0907.3991v2",
+      "reading": "Section3 Theorems3.1-3.5/Corollary3.6 and Section4 Lemma4.1/Propositions4.2-4.5 pertinent complete proofs read.",
+      "boundary": "Weyl-symbol/formal-logarithm foundations not newly reproduced. Formula needed here uses retained GS1 formal-residue proof; no new external input."
+    }
+  ],
+  "shared_scope_screens": [
+    {
+      "claim": "FIRFC2FULL20261116",
+      "role": "Current ledger scope only; theorem not imported or independently re-audited for MM0."
+    },
+    {
+      "claim": "GMCORDINARYCUTOFF20261116",
+      "role": "Current producer ledger scope only; no execution, mathematical import or source reconstruction."
+    },
+    {
+      "claim": "KPC1",
+      "role": "Retained provenance note Section3 prior first-contraction distinction for a particular mixed-degree 3D input credited; no BCW circuit calculation replayed."
+    }
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

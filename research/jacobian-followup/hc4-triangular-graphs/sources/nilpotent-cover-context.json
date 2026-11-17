@@ -1,0 +1,30 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Nilpotent-cover context and independently proved tower construction",
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/2306.14386v1",
+      "retained_file": "barquero-calvo-wreath-2306.14386v1.pdf",
+      "sha256": "4acba15f7a29fa14121c87f6b955d917d56423c9a075b7e74f787a2e34b21441",
+      "authors": [
+        "Adrian Barquero-Sanchez",
+        "Jimmy Calvo-Monge"
+      ],
+      "title": "On the embedding of Galois groups into wreath products",
+      "version": "arXiv:2306.14386v1",
+      "reviewed_statements": "Theorem 1.11 and Corollaries 1.13/1.14, printed pages 5-6",
+      "role": "Primary context only. Cyclic/Kummer and quadratic towers admit wreath-product embeddings. The restricted common-prime radical-tree construction needed here is proved directly in the HC4 note; the paper is not a new theorem import."
+    }
+  ],
+  "full_primary_general_wreath_embedding_theorem_imported": false,
+  "common_prime_radical_tree_p_group_bound_proved_in_note": true,
+  "p_group_maximal_subgroup_and_nilpotent_group_lemmas_proved_in_note": true,
+  "Keller_squarefree_and_cyclic_obstruction_reused_from": "HC4MYHW0",
+  "arbitrary_finite_solvable_group_preservation_asserted": false,
+  "arbitrary_finite_Galois_group_preservation_asserted": false,
+  "mixed_prime_radical_towers_asserted_nilpotent": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

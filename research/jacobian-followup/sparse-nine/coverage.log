@@ -9,3 +9,19 @@
 {"stage": "independent", "status": "incomplete", "visited": 2930674, "pending": 188, "retained": 0, "elapsed_seconds": 204.15229131298838}
 {"stage": "independent", "status": "incomplete", "visited": 3271208, "pending": 156, "retained": 0, "elapsed_seconds": 230.31744028400863}
 {"stage": "independent", "status": "incomplete", "visited": 3391790, "pending": 80, "retained": 0, "elapsed_seconds": 240.00013513100566}
+{"stage": "compiled", "buckets": 1329}
+{"stage": "independent", "status": "incomplete", "visited": 3737278, "pending": 225, "retained": 0, "elapsed_seconds": 265.00228475700715}
+{"stage": "independent", "status": "incomplete", "visited": 4107254, "pending": 69, "retained": 0, "elapsed_seconds": 291.32196556500276}
+{"stage": "independent", "status": "incomplete", "visited": 4474838, "pending": 177, "retained": 0, "elapsed_seconds": 317.82988154600025}
+{"stage": "independent", "status": "incomplete", "visited": 4763882, "pending": 82, "retained": 0, "elapsed_seconds": 344.4549209680117}
+{"stage": "independent", "status": "incomplete", "visited": 5054512, "pending": 271, "retained": 0, "elapsed_seconds": 371.2048353019927}
+{"stage": "independent", "status": "incomplete", "visited": 5353495, "pending": 102, "retained": 0, "elapsed_seconds": 398.0890806330135}
+{"stage": "independent", "status": "incomplete", "visited": 5654043, "pending": 240, "retained": 0, "elapsed_seconds": 425.10725403099786}
+{"stage": "independent", "status": "incomplete", "visited": 5973020, "pending": 181, "retained": 0, "elapsed_seconds": 452.2137962609995}
+{"stage": "independent", "status": "incomplete", "visited": 6296877, "pending": 73, "retained": 0, "elapsed_seconds": 479.66536954799085}
+{"stage": "independent", "status": "incomplete", "visited": 6296877, "pending": 73, "retained": 0, "elapsed_seconds": 482.0459457040124}
+{"stage": "compiled", "buckets": 1329}
+{"stage": "independent", "status": "incomplete", "visited": 6618306, "pending": 153, "retained": 0, "elapsed_seconds": 507.0493703680113}
+{"stage": "independent", "status": "incomplete", "visited": 6962432, "pending": 29, "retained": 0, "elapsed_seconds": 534.4253076750028}
+{"stage": "independent", "status": "complete", "visited": 7228226, "pending": 0, "retained": 0, "elapsed_seconds": 554.9450480030209}
+{"status": "pass", "degree": 7, "bound": 9, "source_sha256": "d4209ce4f368560ce30d88ce360eef66d07850f46939220a481d5e93e923b5f7", "manifest_sha256": "3ce3599777375f2a97deec9724a808f59f32c685e1e2542a4d65db677d0dfc5f", "visited": 7228226, "retained": 0, "elapsed_seconds": 554.9450480030209, "independent_gates": "Direct row predicates and graph reachability", "independent_lower_bound": "Per-row repair-set intersection, no production case split", "coverage": "Exact equality of the gated candidate cover, not a raw balanced-support census."}

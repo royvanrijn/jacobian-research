@@ -1,0 +1,119 @@
+{
+  "claim": "QPD1",
+  "status": "PASS",
+  "charge_one_projective_control": {
+    "module_generators": [
+      "u",
+      "v+u^-1"
+    ],
+    "nonfree": "retained QPF1 written theorem",
+    "right_multiplier_memberships_in_two_fractional_frames": 16,
+    "position": "u^2",
+    "rational_commutant": "u",
+    "commutant_spectral_denominator": "F",
+    "cleared_commutant": "u^3",
+    "rational_mate": "-v/(2*u)",
+    "mate_spectral_denominator": "F",
+    "cleared_mate": "-u*v/2",
+    "spectral_class_nonzero": "retained QHI1 all-partner exclusion and QPD1 field argument",
+    "exact_spectral_annihilator": "(xi), written ideal proof",
+    "centralizer": "L[u^2,u^3], written all-degree proof",
+    "rational_centralizer": "L(u)",
+    "fraction_field_degree_over_positions": 2,
+    "actual_radical_certificate": "(u^3)^2=F*(u^2)^2"
+  },
+  "finite_adjoint_orbit_control": {
+    "operator": "T^2",
+    "successive_commutators": [
+      "2*T",
+      "2",
+      "0"
+    ],
+    "spectral_denominator": "F^2",
+    "cleared_numerator": "(H0^2-2*H0)/4",
+    "all_identities": "PASS"
+  },
+  "shifted_and_cubic_scalar_controls": {
+    "shifted_position": "u^2+a",
+    "spectral_denominator": "xi-a",
+    "cubic_position": "u^3",
+    "cubic_denominator": "xi",
+    "identities": "PASS"
+  },
+  "fractional_frame_transport": {
+    "g": "u",
+    "new_module_generators": [
+      "u^2",
+      "u*v+2"
+    ],
+    "endomorphisms": "q -> u^-1*q*u",
+    "spectral_clearing_preserved": true,
+    "scalar_free_frame_constructed": false
+  },
+  "cusp_declared_semigroup_degrees": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    8
+  ],
+  "division_symbol_controls": [
+    {
+      "operator": "1/u",
+      "degree": -1,
+      "symbol": "1/u"
+    },
+    {
+      "operator": "v/u",
+      "degree": 0,
+      "symbol": "v/u"
+    },
+    {
+      "operator": "v**2 - 2/u**2",
+      "degree": 2,
+      "symbol": "v**2"
+    },
+    {
+      "operator": "3",
+      "degree": 0,
+      "symbol": "3"
+    }
+  ],
+  "higher_rank_unit_boundary": {
+    "matrix": "Matrix([[1, u], [0, 1]])",
+    "nonconstant_unit": true
+  },
+  "source_boundary_correction": {
+    "claim": "QST1",
+    "change": "Later spectral clearing supplies the rational-mate/torsion converse; prior residue proofs and scope remain unchanged."
+  },
+  "external_dependencies": [
+    {
+      "source": "https://arxiv.org/html/math/0401263",
+      "used": "Theorems1.2,1.4,3.3 give module dimension bounds; Lemma3.7 is the scalar spectral-clearing model, extended here through rank-one Morita equivalence."
+    }
+  ],
+  "hashes": {
+    "SPECTRAL_DENOMINATORS_AND_PROJECTIVE_CENTRALIZERS.md": "891b9ec6cd97a853b064b2816026947ecdbcfbb38b0c7c2a3798d0f833d12d31",
+    "check_spectral_projective_denominators.py": "1e256be0a5a6da38118af24449a6ace36ee5a9e0c6cfd81c32a35332d0ddcecf",
+    "HAMILTONIAN_IDEALIZER_CRITERION.md": "5a1bb6b699c6a3d93dad9b4e96302ad77b227f39abfef0814de6e4c093e2dfbc",
+    "check_hamiltonian_idealizer.py": "91d2ce5bdd3c38d9290c169d88112a63d84d28d333694d7724e95c7c2c1e0356",
+    "hamiltonian_idealizer_controls.json": "89770558a3f4f9c2d10aaf8064a0c819f979f15d83a2a340314e94cba44b1a7c",
+    "PROJECTIVE_FRAME_BOUNDARY.md": "ae7a87e48775f567d86ff320d9de685d4573547311ece60549579e7b447745b4",
+    "projective_frame_controls.json": "8e962809e0c7affb3c7124634b3da24877f01fa636a858d882fe680278cfa72c",
+    "TAYLOR_BRANCHES_AND_CENTRALIZER_RIGIDITY.md": "90eb4bce42aa85f86b8574a192d3a89ca507972f23c6240cb7ca713c0993c752",
+    "taylor_centralizer_controls.json": "220205b1b1aab262e0839750602fcd31c1167e08fdae583fc9b35b7183fc9ca5",
+    "ETALE_CENTRALIZERS_AND_GALOIS_COMPLETION.md": "350e3343c4e6a14e19c527c891af9c43fa640269c11aad5c1805f03d456274c9",
+    "FINITE_CENTRALIZERS_AND_COMPLETION.md": "c49883cefa77ea977ff347c7eab25172d6d1543dc9d5e423c2db70d047f5e217",
+    "LONG_SPECTRAL_CURVATURE_AND_SCALARIZATION.md": "09ea45c50f3baceb46e25218cef940e7c79c77eb933e56b6dc2a81695f123e21",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "RATIONAL_SPECTRAL_OBSTRUCTIONS.md": "834e37b79b5c78e9ab3deeebe5161c8db43c977427d2da7729f59fa6439b1e99",
+    "rational_spectral_controls.json": "2ff747bb92fee5bb1f7fa91fe4272bf440b676fb0dec8b303ef219e04d5dd90e",
+    "BOUNDED_REALIZATION.md": "85860fda7138b1e38a41341f2f9e830a516793f0c66e3c4778f9e1adf151b8b9"
+  },
+  "coverage_boundary": "Declared charge-one rational Ore identities, actual multiplier memberships, a finite adjoint orbit, exact spectral numerators, cusp semigroup samples, fractional transport, scalar shift/cubic examples, division symbols and a matrix-unit boundary only. Scalar idealizer units reuse QHI1. Universal Morita denominator clearing, rational centralizer saturation, torsion iff rational individual admission, coefficient-curve application, algebraicity and horizontal constants, and projective birational/Galois/radical transfer use written proofs with explicit external dimension results. No denominator degree bound, actual full Long carrier or all-representative nonlifting is certified. Torsion is not actual vanishing or full flat completion.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

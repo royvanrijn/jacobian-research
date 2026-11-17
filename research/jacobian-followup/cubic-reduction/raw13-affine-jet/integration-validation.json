@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "claim": "KCUB41",
+  "integration_checker_sha256": "dd2e10e5e88ff0a5527ce42c0cf0ca6ade453348256179e8a9b79849d8dcaffe",
+  "main_receipt_sha256": "c95263ac4af5766a2c0f7006328e4a5c402a2ffceece316e662284f33f74261d",
+  "proof_sha256": "eb2b1bce70e3280dcce170d5852e66773f885a835cc47ca3e23cf9ef452730a4",
+  "all_models_imports_and_parent_receipt_pins_current": true,
+  "complete_jet_entries": 348,
+  "unit_generators": 7,
+  "unit_multiplier_terms": 31,
+  "max_multiplier_degree": 4,
+  "exact_centre_rank_profiles_checked": true,
+  "full_affine_orbit_minimum": 13,
+  "equality_original_centre_and_monomial_linear_frames": true,
+  "existing_upper_control": {
+    "source_input_sha256": "c420c4b98f84b90258b22dbf1709cb12156d265be1d34232e0082962248c4c1f",
+    "counts": [
+      2,
+      5,
+      6
+    ],
+    "degree": 7,
+    "identity_linear_part": true,
+    "full_determinant_one": true,
+    "points": [
+      [
+        0,
+        1,
+        -8
+      ],
+      [
+        -1,
+        1,
+        4
+      ]
+    ],
+    "common_image": [
+      0,
+      1,
+      0
+    ],
+    "new_witness": false
+  },
+  "three_preliminary_small_solver_answers_preserved_unused": true,
+  "no_solver_in_producer_or_checker": true,
+  "affected_method_reviews": 27,
+  "work_fingerprints_current": true,
+  "dependency_graph_acyclic": true,
+  "links_compilation_whitespace": true,
+  "previous_goal_turn_classification": "progress:KCUB40",
+  "this_goal_turn_classification": "progress:KCUB41 complete affine raw13 orbit and equality rigidity",
+  "goal_complete": false,
+  "no_global_positive_bound_or_unrestricted_profile_change": true,
+  "next_routes": "Genuinely nonlinear coordinated changes or a changed/unweighted construction. The12-variable cubic affine orbit remains outside this3D closure.",
+  "navigation_attempts_current_parent_state": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    }
+  ],
+  "navigation_boundary": "Same final mathematical/metadata state as the freshly rerun KCUB40 audit;the two unrelated missing artifacts still block renderers. No generated-status hand edit or reconstruction."
+}

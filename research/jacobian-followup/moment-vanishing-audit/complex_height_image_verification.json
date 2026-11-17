@@ -1,0 +1,51 @@
+{
+  "completed": true,
+  "checker_sha256": "fe086d4e2b9e076e263f4235a59f7bb4711a0a1b4a79648bde2d1fc0952db36b",
+  "sympy_version": "1.14.0",
+  "target_Cauchy_derivative": "-1/(z^2-1)",
+  "target_residues": {
+    "-1": "1/2",
+    "1": "-1/2"
+  },
+  "pure_Cauchy_derivative_residue": "0",
+  "polynomial_path_loop_area": "8/3",
+  "loop_example_is_flat_moment_height": false,
+  "canonical_height_rank_controls": {
+    "2O": {
+      "rank_two": true,
+      "bracket_terms": 337,
+      "bracket_bidegree": [
+        38,
+        38
+      ]
+    },
+    "2I": {
+      "rank_two": true,
+      "bracket_terms": 787,
+      "bracket_bidegree": [
+        62,
+        62
+      ]
+    }
+  },
+  "maps_sha256": "39eb8a332c0f634af0a8610d99d83d9dcb3f0565a8af16d50e1926a95b637187",
+  "imports_sha256": {
+    "verify_exceptional_bezout_maps.py": "8562941915b14af9ff682dae74cd190b5f327fbb7dc479b9a46899700d3db09e",
+    "verify_haar_shear_witnesses.py": "e154855aa1e255c2910a0ea657323c6737ba5f1f7cadf2169ef3a8e19195d5d9"
+  },
+  "universal_normalization_positive_graph_and_geometry_proofs_machine_verified": false,
+  "all_complex_line_valued_equivariant_heights": "EXCLUDED",
+  "remaining_height_architectures": [
+    "image has interior",
+    "unary polynomial of a regular real seed with a separating SYMMETRIZED image graph"
+  ],
+  "remaining_nonzero_pure_phase_architectures": [
+    "image has interior",
+    "unary polynomial of a regular real seed with a separating UNSYMMETRIZED image graph"
+  ],
+  "either_remaining_architecture_sufficient": false,
+  "exceptional_MZ_decisions": "OPEN on both models",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

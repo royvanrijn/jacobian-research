@@ -1,0 +1,59 @@
+{
+  "claims": [
+    "KMFI136",
+    "KMFI137",
+    "KMFI138"
+  ],
+  "previous_goal_turn": "progress: KMFI133--135 reduced the remaining quadratic direction class to two shapes, closed a coupled companion family and excluded completely split multipliers.",
+  "quadratic_factor_invariance": {
+    "ranks_and_direction_degrees": "all",
+    "projective_v_polynomial_automorphism": true,
+    "full_rank_needed_for_invariance_lemma": false,
+    "uses_feedback_residues": [
+      0,
+      1
+    ],
+    "conclusion": "every irreducible factor of Fbar of degree1 or2 satisfies q(v)=constant*q"
+  },
+  "quadratic_factor_obstruction": {
+    "architecture": "rank4 quadratic,V0=u^2,nonaffine projective direction",
+    "q2_ranks_exhausted": [
+      1,
+      2,
+      3
+    ],
+    "rank3": "dense quadratic image plane cannot be isotropic for nondegenerate q2",
+    "rank1": "square displacement divisible by q forces a fixed affine direction",
+    "rank2": "degree of product forces two coordinate images affine; residue forces a fixed affine direction",
+    "all_total_scalar_degrees": true
+  },
+  "linear_factor_obstruction": {
+    "non_u_factors_only": true,
+    "all_other_factors_may_be_nonlinear": true,
+    "arbitrary_M_and_affine_constants_retained": true,
+    "d0_branch": "constant-diagonal triangular",
+    "square_nonzero_d": "negative constant-derivative eigenvalue",
+    "mixed_nonzero_d": "negative Euler eigenvalue",
+    "u_factor_excluded": false
+  },
+  "necessary_remaining_scalar_form": "F=constant*u^e*product D_i^bi, e>=0,bi>0,eachirreducibledegDi>=3,atleastoneDi",
+  "actual_rank_deficient_boundary": {
+    "coefficient_relation": "alpha^2-alpha+1=0",
+    "F": "x",
+    "v": [
+      "alpha*x",
+      "x**2 + y*(alpha + 1)",
+      "x*y + z*(alpha + 1)"
+    ],
+    "rankDX": 3,
+    "whole_Jacobian": "tgam^4",
+    "new_Keller_action_claimed": false
+  },
+  "necessary_factor_form_control_claimed_realization": false,
+  "arbitrary_higher_irreducible_factors_classified": false,
+  "new_abstract_action_claimed": false,
+  "actual_PSL11_input_supplied": false,
+  "absolute_exceptional_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

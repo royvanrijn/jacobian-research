@@ -1,0 +1,310 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}[proposition]{Theorem}
+\newcommand{\F}{\mathbb F}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\mr}{\operatorname{mr}}
+\title{Betti-gain bounds in every characteristic and exact thirteen-sheet homology}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The thirteen-point test proposed in the preceding ternary
+working note is now complete. All $32$ point/dual actions
+from its sixteen representation orbits have been retained.
+They give sixteen inequivalent covers, two per source knot.
+Every cover has rational first Betti number two and exactly
+two nontrivial integral torsion factors. The largest Betti
+gain is four, below the required thirteen. A separate direct
+augmentation calculation handles characteristic thirteen.
+No additional target closes. A uniform refinement removes
+the prime restriction from the rank implication itself:
+the Betti-gain bound holds in every characteristic, although
+the split-module equality need not hold.
+
+The all-field exclusion applies only to these induced covers
+and their twelve-dimensional augmentation modules. Other
+quotients, modules, subgroups and actual cover ranks remain
+open. Uniform arguments are written working proofs,
+unformalized and externally unreviewed; global novelty is
+not claimed.
+
+\section{The group, subgroup and rank gates}
+
+For each source knot let $G=\pi_1(\Sigma_2(K))$. The retained
+full $\mathrm{GL}_3(\F_3)$ reflection representations of its
+knot group induce epimorphisms
+$\rho:G\twoheadrightarrow\mathrm{SL}_3(\F_3)$ of order $5616$.
+Determinant is meridian parity, so its kernel is precisely
+the image of the double-cover group. Both actions on thirteen
+projective points and dual points are transitive. Let
+$H=\rho^{-1}(P)$ for a stabilizer in either action.
+
+\begin{proposition}[All-characteristic Betti-gain bound]
+For any finitely generated group $G$, subgroup $H$ of finite
+index $r\ge2$, and field $k$,
+\[
+ \rank G\ \ge\ 1+\left\lceil
+       \frac{b_1(H;k)-b_1(G;k)}{r-1}\right\rceil.
+\]
+In particular a gain at least $r$ forces rank at least three,
+including characteristics dividing $r$.
+\end{proposition}
+\begin{proof}
+Let $P=k[G/H]$, let $\epsilon:P\to k$ be coordinate sum,
+and put $V=\ker\epsilon$, of dimension $r-1$. Transitivity
+gives $\dim P^G=1$. Shapiro and the principal-cocycle
+dimension therefore give
+$\dim Z^1(G,P)=b_1(H;k)+r-1$. The kernel of
+$\epsilon_*:Z^1(G,P)\to Z^1(G,k)$ is exactly $Z^1(G,V)$.
+Its image has dimension at most $b_1(G;k)$, so
+\[
+ \dim Z^1(G,V)\ge r-1+b_1(H;k)-b_1(G;k).
+\]
+For $d$ generators, a cocycle into $V$ is determined by $d$
+vectors, so $\dim Z^1(G,V)\le d(r-1)$. Rearranging proves
+the assertion. No module splitting or division by $r$ occurs.
+\end{proof}
+
+For $r=13$, gain at least thirteen forces cover rank three
+over every field. With the retained four-bridge upper and
+$\mr(K)\ge1+\rank G$, this proves $\mr(K)=b(K)=4$.
+When the characteristic does not divide $r$, the cocycle sum
+map is onto and the displayed dimension inequality is an
+equality. In a dividing characteristic it may be strict.
+The same argument removes the prime restriction from the
+earlier index-five rank implication, while retaining the
+restriction on its split-module identity. No worldwide
+priority claim is made for this elementary consequence.
+
+In characteristic thirteen we also compute $Z^1(G,V)$ directly;
+$\dim Z^1\ge25$ would still force $\rank G\ge3$. The invariant
+space of $V$ now has dimension one, so principal cocycles
+have dimension eleven. The unsplit case is not inferred
+from a Betti-number difference.
+
+\section{A positive control exactly at the degree prime}
+
+For every odd prime $p$, take
+$G_0=C_p*C_p*C_p=\langle a,b,c\mid a^p,b^p,c^p\rangle$.
+Let $a$ act by a $p$-cycle and $b,c$ trivially on $p$ sheets.
+The stabilizer preimage has Schreier representatives
+$1,a,\ldots,a^{p-1}$. The generator $a^p$ is killed by its
+relator; the remaining generators are
+$a^iba^{-i},a^ica^{-i}$, with only their order-$p$ relations.
+Consequently $H_0=*_{2p}C_p$ and
+\[
+ b_1(H_0;\F_p)-b_1(G_0;\F_p)=2p-3\ge p.
+\]
+The all-characteristic bound detects rank three exactly in
+the degree characteristic. On the augmentation module all
+three norm relations vanish: the full-cycle norm kills
+sum-zero vectors, and the other two norms are $pI=0$.
+Hence $\dim Z^1(G_0,V)=3(p-1)$, strictly larger than
+$(p-1)+(2p-3)=3p-4$ predicted by the split identity.
+
+For $p=13$ an independent integer Smith replay gives
+$H_1(H_0;\mathbb Z)=(C_{13})^{26}$. The gain is $23$ and
+the direct cocycle dimension is $36$, rather than $35$.
+Two altered homology/kernel controls reject. This supports
+the uniform proof with a genuine nonsplit positive example;
+the all-prime statement is proved by the preceding algebra
+and Schreier rewriting, not inferred from this sample.
+
+These are known knot controls. The involutory two-strand
+torus presentation gives the dihedral group of order $2p$,
+whose meridian-parity kernel is $C_p$. Thus $G_0$ is the
+double-cover group of the sum of three $T(2,p)$ knots.
+Joining their two-bridge positions gives upper four, and
+the new bound gives the matching meridional lower four.
+This re-proves known composite cases and claims no new knot.
+
+\section{Exact integral homology}
+
+Write $C_n=\mathbb Z/n\mathbb Z$. Set
+\begin{align*}
+ \mathcal A&=\{13a_{129},13a_{136},13a_{194},13a_{197}\},\\
+ \mathcal B&=\{13a_{135},13a_{137},13a_{196},13a_{198}\}.
+\end{align*}
+Each of the two induced covers of each knot in one block
+has the same homology shown below. Equality of homology
+does not identify the manifolds or groups.
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Block & $H_1(G;\mathbb Z)$ & $H_1(H;\mathbb Z)$\\
+\midrule
+$\mathcal A$ & $C_{391}$ & $\mathbb Z^2\oplus C_2\oplus C_{882878}$\\
+$\mathcal B$ & $C_{401}$ & $\mathbb Z^2\oplus C_2\oplus C_{3128602}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The relevant factorizations are
+\[
+391=17\cdot23,\quad
+882878=2\cdot17\cdot23\cdot1129,\quad
+3128602=2\cdot47\cdot83\cdot401.
+\]
+All displayed odd factors are prime, as checked by bounded
+trial division. Thus the gain is four at characteristic two,
+three at $1129$ in block $\mathcal A$ and at $47,83$ in block
+$\mathcal B$, and two at the other characteristics, including
+zero. These gains are stated for $p\ne13$ when used in the
+split-module rank gate.
+
+\begin{theorem}
+None of the retained point/dual thirteen-sheet covers passes
+the augmentation rank-three gate over any field. The maximum
+ordinary augmentation cocycle dimension is sixteen, below
+twenty-five. In characteristic thirteen it is fourteen.
+\end{theorem}
+\begin{proof}
+Integral Smith homology gives every field Betti number by
+the universal coefficient theorem. Away from thirteen,
+$\dim Z^1(G,V)=12+b_1(H)-b_1(G)\le16$, with equality at
+characteristic two. The separately reconstructed
+characteristic-thirteen matrix has $156$ columns, rank $142$
+and kernel dimension fourteen. Since $\dim V^G=1$, its first
+cohomology dimension is three, while the Betti difference is
+two. This exhibits the reason to keep that characteristic
+separate. Field extensions preserve all these ranks.
+\end{proof}
+
+\section{Representations, kernels and duplicate covers}
+
+The initial data contain two nonconstant reflection
+representation orbits per knot. For each orbit retain both
+thirteen-point actions. An explicit sheet permutation
+intertwines the second orbit's point action with the first
+orbit's dual action, and conversely. All generators are
+checked, and aliases are permitted only within the same
+named source group and normalized presentation.
+
+The first orbit's point and dual actions are inequivalent.
+The independent checker enumerates their paired permutation
+image of order $5616$. Its point stabilizer has order $432$
+and fixes no dual point. An equivariant isomorphism would
+have to send the chosen point to such a fixed dual point,
+which is impossible. Hence there are two inequivalent
+labelled covers per source knot, sixteen in total.
+
+Both projective actions are faithful on the matrix group
+$\mathrm{SL}_3(\F_3)$: the independently enumerated permutation
+image also has order $5616$. Therefore the intertwiners show
+that the two retained representations induce the same
+quotient kernel on each source $G$. Among these exact maps
+there is one kernel per knot. This neither pools different
+knots nor exhausts every possible $\mathrm{SL}_3(\F_3)$
+quotient kernel of any $G$.
+
+\section{Construction and independent verification}
+
+The source presentation is the retained double-cover core
+presentation \cite{core}, normalized by $x_0=1$:
+\[
+ \langle x_0,\ldots,x_{12}\mid x_0=1,
+   x_ox_a^{-1}x_ox_b^{-1}=1\text{ at each crossing}\rangle.
+\]
+The producer constructs the lifted edge boundary matrix and
+removes twelve edges forming a spanning tree. The resulting
+integer matrix has $182$ rows and $157$ columns. Every Smith
+reduction retains its elementary unimodular operations.
+Base abelianization is computed from the same normalized
+presentation.
+
+The independent verifier rebuilds geometric arcs and core
+words, constructs projective dual actions by their literal
+four-point annihilator planes, and evaluates Fox-prefix
+coefficients instead of walking the producer's lifted edges.
+It verifies the tree, boundary cancellation and every Smith
+operation. The previously shared PD parser supplies only
+legacy arc names, checked against geometric paths.
+
+For augmentation coefficients the verifier uses actual
+thirteen-coordinate sum-zero vectors. Give each generator
+each vector $e_i-e_{12}$ in turn, evaluate the complete affine
+word rightmost first at zero, and retain the first twelve
+coordinates. This reconstructs every coefficient separately
+from the producer's block Fox matrices. Exact modular row
+ranks and supplied bases prove kernel completeness at
+thirteen; a direct characteristic-two rank also checks the
+attained maximum sixteen. All other characteristics are
+covered by the Smith factors and the written split-module
+argument.
+
+The producer finds maxima for a cyclic base $C_D$ without
+an unbounded factorization step: if $p$ first divides Smith
+factor $d_j$, it divides every later factor. Its multiplicity
+is the number of those factors; subtract one exactly when
+$p\mid D$. Repeated gcd removes primes supported on $D$,
+and powers of thirteen are removed separately. For these
+actual inputs the independent verifier factors the small
+integers by trial division and checks every exceptional
+prime, plus a generic characteristic.
+
+Two known positive controls use
+$G_0=C_3*C_3*C_3$, the triple-trefoil double-cover group.
+The first three order-three ternary control matrices give
+the point and dual actions. Independent integer homology
+replay obtains
+\[
+ H_1(H_0;\mathbb Z)=\mathbb Z^6\oplus(C_3)^{12},\qquad
+ b_1(H_0;\F_3)-b_1(G_0;\F_3)=18-3=15.
+\]
+Their augmentation cocycle dimensions are $27$ at
+characteristic three and $18$ at thirteen, checked directly.
+These positive controls detect rank three as intended and
+add no new knot case. Four altered Smith-step, free-rank,
+characteristic-thirteen kernel and alias-intertwiner inputs
+are rejected.
+
+\section{Structural cues and the remaining problem}
+
+The pinned KnotInfo release of 2 November 2026 has the same
+Conway polynomial within each block:
+\[
+ \nabla_{\mathcal A}(z)=-3z^8-7z^6-4z^4+2z^2+1,
+ \qquad
+ \nabla_{\mathcal B}(z)=3z^8+7z^6+6z^4+4z^2+1.
+\]
+The retained source subset and archive/CSV hashes document
+this observation. The notation fields are blank in that
+snapshot, which is not a family exclusion. Neither these
+polynomials nor the computed homology prove mutation,
+homeomorphic branched covers or common group presentations.
+
+A focused structural question is whether each four-knot block
+admits explicit Conway mutations or a common double-cover
+presentation. Such a reduction requires geometric moves or
+certified group maps before it can reduce the rank problem.
+It is not an adopted theorem here.
+
+The completed exclusion concerns these exact covers and
+augmentation modules. It leaves other modules, quotient
+maps and subgroups available. Actual double-cover ranks,
+all original sixteen target equalities, wider priority and
+full classical MRC remain open. The retained four-bridge
+uppers use the Wirtinger-number theorem \cite{wirt}.
+
+\clearpage
+\begin{thebibliography}{9}
+\small
+\bibitem{core} D. Silver, L. Traldi and S. Williams, Core
+groups, J. Knot Theory Ramifications 33 (2024), 2450013.
+\url{https://arxiv.org/abs/2311.02048v2}.
+\bibitem{wirt} R. Blair, A. Kjuchukova, R. Velazquez and P.
+Villanueva, Wirtinger systems of generators of knot groups,
+Commun. Anal. Geom. 28 (2020), Theorem 1.3.
+\url{https://archive.intlpress.com/site/pub/files/_fulltext/journals/cag/2020/0028/0002/CAG-2020-0028-0002-a002.pdf}.
+\bibitem{knotinfo} KnotInfo, pinned database release 2026.11.2.
+Exact supplementary fields retained in
+\texttt{sources/knotinfo/2026.11.2\_projective13\_geometry\_subset.json}.
+Release and CSV hashes are in that subset; this is not a live
+classification claim. \url{https://knotinfo.org/}.
+\end{thebibliography}
+\end{document}

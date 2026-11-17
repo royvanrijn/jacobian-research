@@ -1,0 +1,23 @@
+{
+  "claim": "PF2RULED143",
+  "outcome": "PASS_TARGETED",
+  "exact_controls": 92,
+  "checked": [
+    "new registry schema and dependency references",
+    "all new software locks exist",
+    "proof/checker/context receipt hashes",
+    "six retained proof hashes unchanged",
+    "three reviewed work fingerprints",
+    "new lesson fingerprint",
+    "new proof relative links",
+    "new files whitespace"
+  ],
+  "global_navigation_outcome": "BLOCKED_BY_PREEXISTING_MISSING_ARTIFACTS",
+  "render_status_error": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "research_render_error": "METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json",
+  "generated_navigation_updated": false,
+  "theorem_status": "written conditional and exact-equivalence statements proved; automatic marked regularity open",
+  "HC4_JC2_status": "OPEN",
+  "goal_status": "active",
+  "previous_goal_turn_classification": "progress evidenced by retained PF142 and MX0 proof/receipt work; no live computation assumed"
+}

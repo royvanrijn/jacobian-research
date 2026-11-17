@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 10.153 (04GE): Henselian local rings&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELQ" data-tag="0ELQ">1</a>: Preliminaries
+    
+  
+    <li>Chapter <a href="/tag/00AO" data-tag="00AO">10</a>: Commutative Algebra
+    
+  
+    <li class="active">Section <a href="/tag/04GE" data-tag="04GE">10.153</a>: Henselian local rings
+    <span id="citation">(<a href="/tag/04GE/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0G1D">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0BSG">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="algebra-section-henselian" class="tex-section"><span data-tag="04GE">10.153</span> Henselian local rings</h2>
+
+<p>
+In this section we discuss a bit the notion of a henselian local ring. Let $(R, \mathfrak m, \kappa )$ be a local ring. For $a \in R$ we denote $\overline{a}$ the image of $a$ in $\kappa $. For a polynomial $f \in R[T]$ we often denote $\overline{f}$ the image of $f$ in $\kappa [T]$. Given a polynomial $f \in R[T]$ we denote $f'$ the derivative of $f$ with respect to $T$. Note that $\overline{f}' = \overline{f'}$. 
+</p>
+<p>
+<article class="env-definition" id="04GF">
+  <p><a class="environment-identifier" href="/tag/04GF">Definition <span data-tag="04GF">10.153.1</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a local ring. </p>
+  <p><ol>
+  <li><p>
+We say $R$ is <em>henselian</em> if for every monic $f \in R[T]$ and every root $a_0 \in \kappa $ of $\overline{f}$ such that $\overline{f'}(a_0) \not= 0$ there exists an $a \in R$ such that $f(a) = 0$ and $a_0 = \overline{a}$. 
+</p>
+</li><li><p>
+We say $R$ is <em>strictly henselian</em> if $R$ is henselian and its residue field is separably algebraically closed. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+Note that the condition $\overline{f'}(a_0) \not= 0$ is equivalent to the condition that $a_0$ is a simple root of the polynomial $\overline{f}$. In fact, it implies that the lift $a \in R$, if it exists, is unique. 
+</p>
+<p>
+<article class="env-lemma" id="06RR">
+  <p><a class="environment-identifier" href="/tag/06RR">Lemma <span data-tag="06RR">10.153.2</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a local ring. Let $f \in R[T]$. Let $a, b \in R$ such that $f(a) = f(b) = 0$, $a = b \bmod \mathfrak m$, and $f'(a) \not\in \mathfrak m$. Then $a = b$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Write $f(x + y) - f(x) = f'(x)y + g(x, y) y^2$ in $R[x, y]$ (this is possible as one sees by expanding $f(x + y)$; details omitted). Then we see that $0 = f(b) - f(a) = f(a + (b - a)) - f(a) = f'(a)(b - a) + c (b - a)^2$ for some $c \in R$. By assumption $f'(a)$ is a unit in $R$. Hence $(b - a)(1 + f'(a)^{-1}c(b - a)) = 0$. By assumption $b - a \in \mathfrak m$, hence $1 + f'(a)^{-1}c(b - a)$ is a unit in $R$. Hence $b - a = 0$ in $R$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Here is the characterization of henselian local rings. 
+</p>
+<p>
+<article class="env-lemma" id="04GG"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Characterizations of henselian local rings '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/04GG">Lemma <span data-tag="04GG">10.153.3</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a local ring. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+$R$ is henselian, 
+</p>
+</li><li><p>
+for every $f \in R[T]$ and every root $a_0 \in \kappa $ of $\overline{f}$ such that $\overline{f'}(a_0) \not= 0$ there exists an $a \in R$ such that $f(a) = 0$ and $a_0 = \overline{a}$, 
+</p>
+</li><li><p>
+for any monic $f \in R[T]$ and any factorization $\overline{f} = g_0 h_0$ with $\gcd (g_0, h_0) = 1$ there exists a factorization $f = gh$ in $R[T]$ such that $g_0 = \overline{g}$ and $h_0 = \overline{h}$, 
+</p>
+</li><li><p>
+for any monic $f \in R[T]$ and any factorization $\overline{f} = g_0 h_0$ with $\gcd (g_0, h_0) = 1$ there exists a factorization $f = gh$ in $R[T]$ such that $g_0 = \overline{g}$ and $h_0 = \overline{h}$ and moreover $\deg _ T(g) = \deg _ T(g_0)$, 
+</p>
+</li><li><p>
+for any $f \in R[T]$ and any factorization $\overline{f} = g_0 h_0$ with $\gcd (g_0, h_0) = 1$ there exists a factorization $f = gh$ in $R[T]$ such that $g_0 = \overline{g}$ and $h_0 = \overline{h}$, 
+</p>
+</li><li><p>
+for any $f \in R[T]$ and any factorization $\overline{f} = g_0 h_0$ with $\gcd (g_0, h_0) = 1$ there exists a factorization $f = gh$ in $R[T]$ such that $g_0 = \overline{g}$ and $h_0 = \overline{h}$ and moreover $\deg _ T(g) = \deg _ T(g_0)$, 
+</p>
+</li><li><p>
+for any étale ring map $R \to S$ and prime $\mathfrak q$ of $S$ lying over $\mathfrak m$ with $\kappa = \kappa (\mathfrak q)$ there exists a retraction $\tau : S \to R$ of $R \to S$, 
+</p>
+</li><li><p>
+for any étale ring map $R \to S$ and prime $\mathfrak q$ of $S$ lying over $\mathfrak m$ with $\kappa = \kappa (\mathfrak q)$ there exists a unique retraction $\tau : S \to R$ of $R \to S$ such that $\mathfrak q = \tau ^{-1}(\mathfrak m)$, 
+</p>
+</li><li><p>
+any finite $R$-algebra is a product of local rings, 
+</p>
+</li><li><p>
+any finite $R$-algebra is a finite product of local rings, 
+</p>
+</li><li><p>
+any finite type $R$-algebra $S$ can be written as $A \times B$ with $R \to A$ finite and $R \to B$ not quasi-finite at any prime lying over $\mathfrak m$, 
+</p>
+</li><li><p>
+any finite type $R$-algebra $S$ can be written as $A \times B$ with $R \to A$ finite such that each irreducible component of $\mathop{\mathrm{Spec}}(B \otimes _ R \kappa )$ has dimension $\geq 1$, and 
+</p>
+</li><li><p>
+any quasi-finite $R$-algebra $S$ can be written as $S = A \times B$ with $R \to A$ finite such that $B \otimes _ R \kappa = 0$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Here is a list of the easier implications: 
+    <p>
+      <ol>
+  <li><p>
+2$\Rightarrow $1 because in (2) we consider all polynomials and in (1) only monic ones, 
+</p>
+</li><li><p>
+5$\Rightarrow $3 because in (5) we consider all polynomials and in (3) only monic ones, 
+</p>
+</li><li><p>
+6$\Rightarrow $4 because in (6) we consider all polynomials and in (4) only monic ones, 
+</p>
+</li><li><p>
+4$\Rightarrow $3 is obvious, 
+</p>
+</li><li><p>
+6$\Rightarrow $5 is obvious, 
+</p>
+</li><li><p>
+8$\Rightarrow $7 is obvious, 
+</p>
+</li><li><p>
+10$\Rightarrow $9 is obvious, 
+</p>
+</li><li><p>
+11$\Leftrightarrow $12 by definition of being quasi-finite at a prime, 
+</p>
+</li><li><p>
+11$\Rightarrow $13 by definition of being quasi-finite, 
+</p>
+</li>
+</ol>
+    <p>
+      Proof of 1$\Rightarrow $8. Assume (1). Let $R \to S$ be étale, and let $\mathfrak q \subset S$ be a prime ideal such that $\kappa (\mathfrak q) \cong \kappa $. By Proposition <a href="/tag/00UE" data-tag="00UE">10.144.4</a> we can find a $g \in S$, $g \not\in \mathfrak q$ such that $R \to S_ g$ is standard étale. After replacing $S$ by $S_ g$ we may assume that $S = R[t]_ g/(f)$ is standard étale (details omitted). Since the prime $\mathfrak q$ has residue field $\kappa $ it corresponds to a root $a_0$ of $\overline{f}$ which is not a root of $\overline{g}$. By definition of a standard étale algebra this also means that $\overline{f'}(a_0) \not= 0$. Since also $f$ is monic by definition of a standard étale algebra again we may use that $R$ is henselian to conclude that there exists an $a \in R$ with $a_0 = \overline{a}$ such that $f(a) = 0$. This implies that $g(a)$ is a unit of $R$ and we obtain the desired map $\tau : S = R[t]_ g/(f) \to R$ by the rule $t \mapsto a$. By construction $\tau ^{-1}(\mathfrak m) = \mathfrak q$. By Lemma <a href="/tag/06RR" data-tag="06RR">10.153.2</a> the map $\tau $ is unique. This proves (8) holds. 
+    <p>
+      Proof of 7$\Rightarrow $8. (This is really unimportant and should be skipped.) Assume (7) holds and assume $R \to S$ is étale. Let $\mathfrak q_1, \ldots , \mathfrak q_ r$ be the other primes of $S$ lying over $\mathfrak m$. Then we can find a $g \in S$, $g \not\in \mathfrak q$ and $g \in \mathfrak q_ i$ for $i = 1, \ldots , r$. Namely, we can argue that $\bigcap _{i=1}^{r} \mathfrak {q}_{i} \not\subset \mathfrak {q}$ since otherwise $\mathfrak {q}_{i} \subset \mathfrak {q}$ for some $i$, but this cannot happen as the fiber of an étale morphism is discrete (use Lemma <a href="/tag/00U3" data-tag="00U3">10.143.4</a> for example). Apply (7) to the étale ring map $R \to S_ g$ and the prime $\mathfrak qS_ g$. This gives a retraction $\tau _ g : S_ g \to R$ such that the composition $\tau : S \to S_ g \to R$ has the property $\tau ^{-1}(\mathfrak m) = \mathfrak q$. Details omitted. 
+    <p>
+      Proof of 8$\Rightarrow $11. Assume (8) and let $R \to S$ be a finite type ring map. Apply Lemma <a href="/tag/00UK" data-tag="00UK">10.145.3</a>. We find an étale ring map $R \to R'$ and a prime $\mathfrak m' \subset R'$ lying over $\mathfrak m$ with $\kappa = \kappa (\mathfrak m')$ such that $R' \otimes _ R S = A' \times B'$ with $A'$ finite over $R'$ and $B'$ not quasi-finite over $R'$ at any prime lying over $\mathfrak m'$. Apply (8) to get a retraction $\tau : R' \to R$ with $\mathfrak m = \tau ^{-1}(\mathfrak m')$. Then use that 
+    <p>
+      <div class="equation">
+  \[  S = (S \otimes _ R R') \otimes _{R', \tau } R = (A' \times B') \otimes _{R', \tau } R = (A' \otimes _{R', \tau } R) \times (B' \otimes _{R', \tau } R)  \]
+</div>
+    <p>
+       which gives a decomposition as in (11). 
+    <p>
+      Proof of 8$\Rightarrow $10. Assume (8) and let $R \to S$ be a finite ring map. Apply Lemma <a href="/tag/00UK" data-tag="00UK">10.145.3</a>. We find an étale ring map $R \to R'$ and a prime $\mathfrak m' \subset R'$ lying over $\mathfrak m$ with $\kappa = \kappa (\mathfrak m')$ such that $R' \otimes _ R S = A'_1 \times \ldots \times A'_ n \times B'$ with $A'_ i$ finite over $R'$ having exactly one prime over $\mathfrak m'$ and $B'$ not quasi-finite over $R'$ at any prime lying over $\mathfrak m'$. Apply (8) to get a retraction $\tau : R' \to R$ with $\mathfrak m' = \tau ^{-1}(\mathfrak m)$. Then we obtain 
+    <p>
+      <div class="equation">
+  \begin{align*}  S &  = (S \otimes _ R R') \otimes _{R', \tau } R \\ &  = (A'_1 \times \ldots \times A'_ n \times B') \otimes _{R', \tau } R \\ &  = (A'_1 \otimes _{R', \tau } R) \times \ldots \times (A'_1 \otimes _{R', \tau } R) \times (B' \otimes _{R', \tau } R) \\ &  = A_1 \times \ldots \times A_ n \times B \end{align*}
+</div>
+    <p>
+       The factor $B$ is finite over $R$ but $R \to B$ is not quasi-finite at any prime lying over $\mathfrak m$. Hence $B = 0$. The factors $A_ i$ are finite $R$-algebras having exactly one prime lying over $\mathfrak m$, hence they are local rings. This proves that $S$ is a finite product of local rings. 
+    <p>
+      Proof of 9$\Rightarrow $10. This holds because if $S$ is finite over the local ring $R$, then it has at most finitely many maximal ideals. Namely, by going up for $R \to S$ the maximal ideals of $S$ all lie over $\mathfrak m$, and $S/\mathfrak mS$ is Artinian hence has finitely many primes. 
+    <p>
+      Proof of 10$\Rightarrow $1. Assume (10). Let $f \in R[T]$ be a monic polynomial and $a_0 \in \kappa $ a simple root of $\overline{f}$. Then $S = R[T]/(f)$ is a finite $R$-algebra. Applying (10) we get $S = A_1 \times \ldots \times A_ r$ is a finite product of local $R$-algebras. In particular we see that $S/\mathfrak mS = \prod A_ i/\mathfrak mA_ i$ is the decomposition of $\kappa [T]/(\overline{f})$ as a product of local rings. This means that one of the factors, say $A_1/\mathfrak mA_1$ is the quotient $\kappa [T]/(\overline{f}) \to \kappa [T]/(T - a_0)$. Since $A_1$ is a summand of the finite free $R$-module $S$ it is a finite free $R$-module itself. As $A_1/\mathfrak mA_1$ is a $\kappa $-vector space of dimension 1 we see that $A_1 \cong R$ as an $R$-module. Clearly this means that $R \to A_1$ is an isomorphism. Let $a \in R$ be the image of $T$ under the map $R[T] \to S \to A_1 \to R$. Then $f(a) = 0$ and $\overline{a} = a_0$ as desired. 
+    <p>
+      Proof of 13$\Rightarrow $1. Assume (13). Let $f \in R[T]$ be a monic polynomial and $a_0 \in \kappa $ a simple root of $\overline{f}$. Then $S_1 = R[T]/(f)$ is a finite $R$-algebra. Let $g \in R[T]$ be any element such that $\overline{g} = \overline{f}/(T - a_0)$. Then $S = (S_1)_ g$ is a quasi-finite $R$-algebra such that $S \otimes _ R \kappa \cong \kappa [T]_{\overline{g}}/(\overline{f}) \cong \kappa [T]/(T - a_0) \cong \kappa $. Applying (13) to $S$ we get $S = A \times B$ with $A$ finite over $R$ and $B \otimes _ R \kappa = 0$. In particular we see that $\kappa \cong S/\mathfrak mS = A/\mathfrak mA$. Since $A$ is a summand of the flat $R$-algebra $S$ we see that it is finite flat, hence free over $R$. As $A/\mathfrak mA$ is a $\kappa $-vector space of dimension 1 we see that $A \cong R$ as an $R$-module. Clearly this means that $R \to A$ is an isomorphism. Let $a \in R$ be the image of $T$ under the map $R[T] \to S \to A \to R$. Then $f(a) = 0$ and $\overline{a} = a_0$ as desired. 
+    <p>
+      Proof of 8$\Rightarrow $2. Assume (8). Let $f \in R[T]$ be any polynomial and let $a_0 \in \kappa $ be a simple root. Then the algebra $S = R[T]_{f'}/(f)$ is étale over $R$. Let $\mathfrak q \subset S$ be the prime generated by $\mathfrak m$ and $T - b$ where $b \in R$ is any element such that $\overline{b} = a_0$. Apply (8) to $S$ and $\mathfrak q$ to get $\tau : S \to R$. Then the image $\tau (T) = a \in R$ works in (2). 
+    <p>
+      At this point we see that (1), (2), (7), (8), (9), (10), (11), (12), (13) are all equivalent. The weakest assertion of (3), (4), (5) and (6) is (3) and the strongest is (6). Hence we still have to prove that (3) implies (1) and (1) implies (6). 
+    <p>
+      Proof of 3$\Rightarrow $1. Assume (3). Let $f \in R[T]$ be monic and let $a_0 \in \kappa $ be a simple root of $\overline{f}$. This gives a factorization $\overline{f} = (T - a_0)h_0$ with $h_0(a_0) \not= 0$, so $\gcd (T - a_0, h_0) = 1$. Apply (3) to get a factorization $f = gh$ with $\overline{g} = T - a_0$ and $\overline{h} = h_0$. Set $S = R[T]/(f)$ which is a finite free $R$-algebra. We will write $g$, $h$ also for the images of $g$ and $h$ in $S$. Then $gS + hS = S$ by Nakayama's Lemma <a href="/tag/00DV" data-tag="00DV">10.20.1</a> as the equality holds modulo $\mathfrak m$. Since $gh = f = 0$ in $S$ this also implies that $gS \cap hS = 0$. Hence by the Chinese Remainder theorem we obtain $S = S/(g) \times S/(h)$. This implies that $A = S/(g)$ is a summand of a finite free $R$-module, hence finite free. Moreover, the rank of $A$ is $1$ as $A/\mathfrak mA = \kappa [T]/(T - a_0)$. Thus the map $R \to A$ is an isomorphism. Setting $a \in R$ equal to the image of $T$ under the maps $R[T] \to S \to A \to R$ gives an element of $R$ with $f(a) = 0$ and $\overline{a} = a_0$. 
+    <p>
+      Proof of 1$\Rightarrow $6. Assume (1) or equivalently all of (1), (2), (7), (8), (9), (10), (11), (12), (13). Let $f \in R[T]$ be a polynomial. Suppose that $\overline{f} = g_0h_0$ is a factorization with $\gcd (g_0, h_0) = 1$. We may and do assume that $g_0$ is monic. Consider $S = R[T]/(f)$. Because we have the factorization we see that the coefficients of $f$ generate the unit ideal in $R$. This implies that $S$ has finite fibres over $R$, hence is quasi-finite over $R$. It also implies that $S$ is flat over $R$ by Lemma <a href="/tag/046Z" data-tag="046Z">10.128.5</a>. Combining (13) and (10) we may write $S = A_1 \times \ldots \times A_ n \times B$ where each $A_ i$ is local and finite over $R$, and $B \otimes _ R \kappa = 0$. After reordering the factors $A_1, \ldots , A_ n$ we may assume that 
+    <p>
+      <div class="equation">
+  \[  \kappa [T]/(g_0) = A_1/\mathfrak m A_1 \times \ldots \times A_ r/\mathfrak mA_ r, \  \kappa [T]/(h_0) = A_{r + 1}/\mathfrak mA_{r + 1} \times \ldots \times A_ n/\mathfrak mA_ n  \]
+</div>
+    <p>
+       as quotients of $\kappa [T]$. The finite flat $R$-algebra $A = A_1 \times \ldots \times A_ r$ is free as an $R$-module, see Lemma <a href="/tag/00NZ" data-tag="00NZ">10.78.5</a>. Its rank is $\deg _ T(g_0)$. Let $g \in R[T]$ be the characteristic polynomial of the $R$-linear operator $T : A \to A$. Then $g$ is a monic polynomial of degree $\deg _ T(g) = \deg _ T(g_0)$ and moreover $\overline{g} = g_0$. By Cayley-Hamilton (Lemma <a href="/tag/00DX" data-tag="00DX">10.16.1</a>) we see that $g(T_ A) = 0$ where $T_ A$ indicates the image of $T$ in $A$. Hence we obtain a well defined surjective map $R[T]/(g) \to A$ which is an isomorphism by Nakayama's Lemma <a href="/tag/00DV" data-tag="00DV">10.20.1</a>. The map $R[T] \to A$ factors through $R[T]/(f)$ by construction hence we may write $f = gh$ for some $h$. This finishes the proof. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="04GH">
+  <p><a class="environment-identifier" href="/tag/04GH">Lemma <span data-tag="04GH">10.153.4</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a henselian local ring. </p>
+  <p><ol>
+  <li><p>
+If $R \to S$ is a finite ring map then $S$ is a finite product of henselian local rings each finite over $R$. 
+</p>
+</li><li><p>
+If $R \to S$ is a finite ring map and $S$ is local, then $S$ is a henselian local ring and $R \to S$ is a (finite) local ring map. 
+</p>
+</li><li><p>
+If $R \to S$ is a finite type ring map, and $\mathfrak q$ is a prime of $S$ lying over $\mathfrak m$ at which $R \to S$ is quasi-finite, then $S_{\mathfrak q}$ is henselian and finite over $R$. 
+</p>
+</li><li><p>
+If $R \to S$ is quasi-finite then $S_{\mathfrak q}$ is henselian and finite over $R$ for every prime $\mathfrak q$ lying over $\mathfrak m$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Part (2) implies part (1) since $S$ as in part (1) is a finite product of its localizations at the primes lying over $\mathfrak m$ by Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a> part (10). Part (2) also follows from Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a> part (10) since any finite $S$-algebra is also a finite $R$-algebra (of course any finite ring map between local rings is local). 
+    <p>
+      Let $R \to S$ and $\mathfrak q$ be as in (3). Write $S = A \times B$ with $A$ finite over $R$ and $B$ not quasi-finite over $R$ at any prime lying over $\mathfrak m$, see Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a> part (11). Hence $S_\mathfrak q$ is a localization of $A$ at a maximal ideal and we deduce (3) from (1). Part (4) follows from part (3). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="04GJ">
+  <p><a class="environment-identifier" href="/tag/04GJ">Lemma <span data-tag="04GJ">10.153.5</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a henselian local ring. Any finite type $R$-algebra $S$ can be written as $S = A_1 \times \ldots \times A_ n \times B$ with $A_ i$ local and finite over $R$ and $R \to B$ not quasi-finite at any prime of $B$ lying over $\mathfrak m$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is a combination of parts (11) and (10) of Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="06DD">
+  <p><a class="environment-identifier" href="/tag/06DD">Lemma <span data-tag="06DD">10.153.6</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a strictly henselian local ring. Any finite type $R$-algebra $S$ can be written as $S = A_1 \times \ldots \times A_ n \times B$ with $A_ i$ local and finite over $R$ and $\kappa \subset \kappa (\mathfrak m_{A_ i})$ finite purely inseparable and $R \to B$ not quasi-finite at any prime of $B$ lying over $\mathfrak m$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      First write $S = A_1 \times \ldots \times A_ n \times B$ as in Lemma <a href="/tag/04GJ" data-tag="04GJ">10.153.5</a>. The field extension $\kappa (\mathfrak m_{A_ i})/\kappa $ is finite and $\kappa $ is separably algebraically closed, hence it is finite purely inseparable. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="04GK">
+  <p><a class="environment-identifier" href="/tag/04GK">Lemma <span data-tag="04GK">10.153.7</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a henselian local ring. The category of finite étale ring extensions $R \to S$ is equivalent to the category of finite étale algebras $\kappa \to \overline{S}$ via the functor $S \mapsto S/\mathfrak mS$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Denote $\mathcal{C} \to \mathcal{D}$ the functor of categories of the statement. Suppose that $R \to S$ is finite étale. Then we may write 
+    <p>
+      <div class="equation">
+  \[  S = A_1 \times \ldots \times A_ n  \]
+</div>
+    <p>
+       with $A_ i$ local and finite étale over $S$, use either Lemma <a href="/tag/04GJ" data-tag="04GJ">10.153.5</a> or Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a> part (10). In particular $A_ i/\mathfrak mA_ i$ is a finite separable field extension of $\kappa $, see Lemma <a href="/tag/00U4" data-tag="00U4">10.143.5</a>. Thus we see that every object of $\mathcal{C}$ and $\mathcal{D}$ decomposes canonically into irreducible pieces which correspond via the given functor. Next, suppose that $S_1$, $S_2$ are finite étale over $R$ such that $\kappa _1 = S_1/\mathfrak mS_1$ and $\kappa _2 = S_2/\mathfrak mS_2$ are fields (finite separable over $\kappa $). Then $S_1 \otimes _ R S_2$ is finite étale over $R$ and we may write 
+    <p>
+      <div class="equation">
+  \[  S_1 \otimes _ R S_2 = A_1 \times \ldots \times A_ n  \]
+</div>
+    <p>
+       as before. Then we see that $\mathop{\mathrm{Hom}}\nolimits _ R(S_1, S_2)$ is identified with the set of indices $i \in \{ 1, \ldots , n\} $ such that $S_2 \to A_ i$ is an isomorphism. To see this use that given any $R$-algebra map $\varphi : S_1 \to S_2$ the map $\varphi \times 1 : S_1 \otimes _ R S_2 \to S_2$ is surjective, and hence is equal to projection onto one of the factors $A_ i$. But in exactly the same way we see that $\mathop{\mathrm{Hom}}\nolimits _\kappa (\kappa _1, \kappa _2)$ is identified with the set of indices $i \in \{ 1, \ldots , n\} $ such that $\kappa _2 \to A_ i/\mathfrak mA_ i$ is an isomorphism. By the discussion above these sets of indices match, and we conclude that our functor is fully faithful. Finally, let $\kappa '/\kappa $ be a finite separable field extension. By Lemma <a href="/tag/00UD" data-tag="00UD">10.144.3</a> there exists an étale ring map $R \to S$ and a prime $\mathfrak q$ of $S$ lying over $\mathfrak m$ such that $\kappa \subset \kappa (\mathfrak q)$ is isomorphic to the given extension. By part (1) we may write $S = A_1 \times \ldots \times A_ n \times B$. Since $R \to S$ is quasi-finite we see that there exists no prime of $B$ over $\mathfrak m$. Hence $S_{\mathfrak q}$ is equal to $A_ i$ for some $i$. Hence $R \to A_ i$ is finite étale and produces the given residue field extension. Thus the functor is essentially surjective and we win. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="04GL">
+  <p><a class="environment-identifier" href="/tag/04GL">Lemma <span data-tag="04GL">10.153.8</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a strictly henselian local ring. Let $R \to S$ be an unramified ring map. Then </p>
+  <div class="equation">
+  \[  S = A_1 \times \ldots \times A_ n \times B  \]
+</div>
+  <p> with each $R \to A_ i$ surjective and no prime of $B$ lying over $\mathfrak m$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      First write $S = A_1 \times \ldots \times A_ n \times B$ as in Lemma <a href="/tag/04GJ" data-tag="04GJ">10.153.5</a>. Now we see that $R \to A_ i$ is finite unramified and $A_ i$ local. Hence the maximal ideal of $A_ i$ is $\mathfrak mA_ i$ and its residue field $A_ i / \mathfrak m A_ i$ is a finite separable extension of $\kappa $, see Lemma <a href="/tag/00UW" data-tag="00UW">10.151.5</a>. However, the condition that $R$ is strictly henselian means that $\kappa $ is separably algebraically closed, so $\kappa = A_ i / \mathfrak m A_ i$. By Nakayama's Lemma <a href="/tag/00DV" data-tag="00DV">10.20.1</a> we conclude that $R \to A_ i$ is surjective as desired. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="04GM"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Complete local rings are Henselian by Newton&#39;s method '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/04GM">Lemma <span data-tag="04GM">10.153.9</span>.</a> Let $(R, \mathfrak m, \kappa )$ be a complete local ring, see Definition <a href="/tag/0324" data-tag="0324">10.160.1</a>. Then $R$ is henselian. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $f \in R[T]$ be monic. Denote $f_ n \in R/\mathfrak m^{n + 1}[T]$ the image. Denote $f'_ n$ the derivative of $f_ n$ with respect to $T$. Let $a_0 \in \kappa $ be a simple root of $f_0$. We lift this to a solution of $f$ over $R$ inductively as follows: Suppose given $a_ n \in R/\mathfrak m^{n + 1}$ such that $a_ n \bmod \mathfrak m = a_0$ and $f_ n(a_ n) = 0$. Pick any element $b \in R/\mathfrak m^{n + 2}$ such that $a_ n = b \bmod \mathfrak m^{n + 1}$. Then $f_{n + 1}(b) \in \mathfrak m^{n + 1}/\mathfrak m^{n + 2}$. Set 
+    <p>
+      <div class="equation">
+  \[  a_{n + 1} = b - f_{n + 1}(b)/f'_{n + 1}(b)  \]
+</div>
+    <p>
+       (Newton's method). This makes sense as $f'_{n + 1}(b) \in R/\mathfrak m^{n + 2}$ is invertible by the condition on $a_0$. Then we compute $f_{n + 1}(a_{n + 1}) = f_{n + 1}(b) - f_{n + 1}(b) = 0$ in $R/\mathfrak m^{n + 2}$. Since the system of elements $a_ n \in R/\mathfrak m^{n + 1}$ so constructed is compatible we get an element $a \in \mathop{\mathrm{lim}}\nolimits R/\mathfrak m^ n = R$ (here we use that $R$ is complete). Moreover, $f(a) = 0$ since it maps to zero in each $R/\mathfrak m^ n$. Finally $\overline{a} = a_0$ and we win. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="06RS"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Local rings of dimension zero are henselian. '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/06RS">Lemma <span data-tag="06RS">10.153.10</span>.</a> Let $(R, \mathfrak m)$ be a local ring of dimension $0$. Then $R$ is henselian. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $R \to S$ be a finite ring map. By Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a> it suffices to show that $S$ is a product of local rings. By Lemma <a href="/tag/05DR" data-tag="05DR">10.36.21</a> $S$ has finitely many primes $\mathfrak m_1, \ldots , \mathfrak m_ r$ which all lie over $\mathfrak m$. There are no inclusions among these primes, see Lemma <a href="/tag/00GT" data-tag="00GT">10.36.20</a>, hence they are all maximal. Every element of $\mathfrak m_1 \cap \ldots \cap \mathfrak m_ r$ is nilpotent by Lemma <a href="/tag/00E0" data-tag="00E0">10.17.2</a>. It follows $S$ is the product of the localizations of $S$ at the primes $\mathfrak m_ i$ by Lemma <a href="/tag/00JA" data-tag="00JA">10.53.5</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+The following lemma will be the key to the uniqueness and functorial properties of henselization and strict henselization. 
+</p>
+<p>
+<article class="env-lemma" id="08HQ">
+  <p><a class="environment-identifier" href="/tag/08HQ">Lemma <span data-tag="08HQ">10.153.11</span>.</a> Let $R \to S$ be a ring map with $S$ henselian local. Given </p>
+  <p><ol>
+  <li><p>
+an étale ring map $R \to A$, 
+</p>
+</li><li><p>
+a prime $\mathfrak q$ of $A$ lying over $\mathfrak p = R \cap \mathfrak m_ S$, 
+</p>
+</li><li><p>
+a $\kappa (\mathfrak p)$-algebra map $\tau : \kappa (\mathfrak q) \to S/\mathfrak m_ S$, 
+</p>
+</li>
+</ol></p>
+  <p> then there exists a unique homomorphism of $R$-algebras $f : A \to S$ such that $\mathfrak q = f^{-1}(\mathfrak m_ S)$ and $f$ induces the map $\tau $ on residue fields. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Consider $A \otimes _ R S$. This is an étale algebra over $S$, see Lemma <a href="/tag/00U2" data-tag="00U2">10.143.3</a>. Moreover, the kernel 
+    <p>
+      <div class="equation">
+  \[  \mathfrak q' = \mathop{\mathrm{Ker}}(A \otimes _ R S \to \kappa (\mathfrak q) \otimes _{\kappa (\mathfrak p)} \kappa (\mathfrak m_ S) \xrightarrow {\tau \otimes 1} \kappa (\mathfrak m_ S))  \]
+</div>
+    <p>
+       is a prime ideal lying over $\mathfrak m_ S$ with residue field equal to the residue field of $S$. Hence by Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a> there exists a unique retraction $\sigma : A \otimes _ R S \to S$ with $\sigma ^{-1}(\mathfrak m_ S) = \mathfrak q'$. Set $f$ equal to the composition $A \to A \otimes _ R S \to S$. We omit the verification of the properties of $f$; the uniqueness of $f$ comes from the uniqueness of $\sigma $ (details omitted). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="04GX">
+  <p><a class="environment-identifier" href="/tag/04GX">Lemma <span data-tag="04GX">10.153.12</span>.</a> Let $\varphi : R \to S$ be a local homomorphism of strictly henselian local rings. Let $P_1, \ldots , P_ n \in R[x_1, \ldots , x_ n]$ be polynomials such that $R[x_1, \ldots , x_ n]/(P_1, \ldots , P_ n)$ is étale over $R$. Then the map </p>
+  <div class="equation">
+  \[  R^ n \longrightarrow S^ n, \quad (h_1, \ldots , h_ n) \longmapsto (\varphi (h_1), \ldots , \varphi (h_ n))  \]
+</div>
+  <p> induces a bijection between </p>
+  <div class="equation">
+  \[  \{  (r_1, \ldots , r_ n) \in R^ n \mid P_ i(r_1, \ldots , r_ n) = 0, \  i = 1, \ldots , n \}   \]
+</div>
+  <p> and </p>
+  <div class="equation">
+  \[  \{  (s_1, \ldots , s_ n) \in S^ n \mid P^\varphi _ i(s_1, \ldots , s_ n) = 0, \  i = 1, \ldots , n \}   \]
+</div>
+  <p> where $P^\varphi _ i \in S[x_1, \ldots , x_ n]$ are the images of the $P_ i$ under $\varphi $. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The first solution set is canonically isomorphic to the set 
+    <p>
+      <div class="equation">
+  \[  \mathop{\mathrm{Hom}}\nolimits _ R(R[x_1, \ldots , x_ n]/(P_1, \ldots , P_ n), R).  \]
+</div>
+    <p>
+       As $R$ is henselian the map $R \to R/\mathfrak m_ R$ induces a bijection between this set and the set of solutions in the residue field $R/\mathfrak m_ R$, see Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a>. The same is true for $S$. Now since $R[x_1, \ldots , x_ n]/(P_1, \ldots , P_ n)$ is étale over $R$ and $R/\mathfrak m_ R$ is separably algebraically closed we see that $R/\mathfrak m_ R[x_1, \ldots , x_ n]/(\overline{P}_1, \ldots , \overline{P}_ n)$ is a finite product of copies of $R/\mathfrak m_ R$ where $\overline{P}_ i$ is the image of $P_ i$ in $R/\mathfrak m_ R[x_1, \ldots , x_ n]$. Hence the tensor product 
+    <p>
+      <div class="equation">
+  \[  R/\mathfrak m_ R[x_1, \ldots , x_ n]/(\overline{P}_1, \ldots , \overline{P}_ n) \otimes _{R/\mathfrak m_ R} S/\mathfrak m_ S = S/\mathfrak m_ S[x_1, \ldots , x_ n]/ (\overline{P}^\varphi _1, \ldots , \overline{P}^\varphi _ n)  \]
+</div>
+    <p>
+       is also a finite product of copies of $S/\mathfrak m_ S$ with the same index set. This proves the lemma. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05D6">
+  <p><a class="environment-identifier" href="/tag/05D6">Lemma <span data-tag="05D6">10.153.13</span>.</a> Let $R$ be a henselian local ring. Any countably generated Mittag-Leffler module over $R$ is a direct sum of finitely presented $R$-modules. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $M$ be a countably generated and Mittag-Leffler $R$-module. We claim that for any element $x \in M$ there exists a direct sum decomposition $M = N \oplus K$ with $x \in N$, the module $N$ finitely presented, and $K$ Mittag-Leffler. 
+    <p>
+      Suppose the claim is true. Choose generators $x_1, x_2, x_3, \ldots $ of $M$. By the claim we can inductively find direct sum decompositions 
+    <p>
+      <div class="equation">
+  \[  M = N_1 \oplus N_2 \oplus \ldots \oplus N_ n \oplus K_ n  \]
+</div>
+    <p>
+       with $N_ i$ finitely presented, $x_1, \ldots , x_ n \in N_1 \oplus \ldots \oplus N_ n$, and $K_ n$ Mittag-Leffler. Repeating ad infinitum we see that $M = \bigoplus N_ i$. 
+    <p>
+      We still have to prove the claim. Let $x \in M$. By Lemma <a href="/tag/05D2" data-tag="05D2">10.92.2</a> there exists an endomorphism $\alpha : M \to M$ such that $\alpha $ factors through a finitely presented module, and $\alpha (x) = x$. Say $\alpha $ factors as 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ M \ar[r]^\pi &  P \ar[r]^ i &  M }  \]
+</div>
+    <p>
+       Set $a = \pi \circ \alpha \circ i : P \to P$, so $i \circ a \circ \pi = \alpha ^3$. By Lemma <a href="/tag/05BT" data-tag="05BT">10.16.2</a> there exists a monic polynomial $P \in R[T]$ such that $P(a) = 0$. Note that this implies formally that $\alpha ^2 P(\alpha ) = 0$. Hence we may think of $M$ as a module over $R[T]/(T^2P)$. Assume that $x \not= 0$. Then $\alpha (x) = x$ implies that $0 = \alpha ^2P(\alpha )x = P(1)x$ hence $P(1) = 0$ in $R/I$ where $I = \{ r \in R \mid rx = 0\} $ is the annihilator of $x$. As $x \not= 0$ we see $I \subset \mathfrak m_ R$, hence $1$ is a root of $\overline{P} = P \bmod \mathfrak m_ R \in R/\mathfrak m_ R[T]$. As $R$ is henselian we can find a factorization 
+    <p>
+      <div class="equation">
+  \[  T^2P = (T^2 Q_1) Q_2  \]
+</div>
+    <p>
+       for some $Q_1, Q_2 \in R[T]$ with $Q_2 = (T - 1)^ e \bmod \mathfrak m_ R R[T]$ and $Q_1(1) \not= 0 \bmod \mathfrak m_ R$, see Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a>. Let $N = \mathop{\mathrm{Im}}(\alpha ^2Q_1(\alpha ) : M \to M)$ and $K = \mathop{\mathrm{Im}}(Q_2(\alpha ) : M \to M)$. As $T^2Q_1$ and $Q_2$ generate the unit ideal of $R[T]$ we get a direct sum decomposition $M = N \oplus K$. Moreover, $Q_2$ acts as zero on $N$ and $T^2Q_1$ acts as zero on $K$. Note that $N$ is a quotient of $P$ hence is finitely generated. Also $x \in N$ because $\alpha ^2Q_1(\alpha )x = Q_1(1)x$ and $Q_1(1)$ is a unit in $R$. By Lemma <a href="/tag/059P" data-tag="059P">10.89.10</a> the modules $N$ and $K$ are Mittag-Leffler. Finally, the finitely generated module $N$ is finitely presented as a finitely generated Mittag-Leffler module is finitely presented, see Example <a href="/tag/059R" data-tag="059R">10.91.1</a> part (1). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (6)</h2>
+
+  
+    <a id="comment-341" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/04GE#comment-341">Comment #341</a>
+        by
+        <cite><a href="http://hlombardi.free.fr" rel="author">Henri Lombardi</a></cite>
+        
+        on <time datetime="2013-11-14 19:48:38">November 14, 2013 at 19:48 </time>
+      </header>
+
+      <blockquote><p>It should be nice to have the Multivariate Hensel Lemma
+and some ideas about related algorithms</p>
+<p>e.g. if K is a field and   A=K[X1,...,Xn]_m   where  m = (X1,...,Xn)
+then the elements of  A=K[[X1,………,Xn]]  which are algebraic over  Quot(A)=K(X1,………,Xn)  give a henselisation of  A</p>
+<p>(so there is an explicit isomorphism with the "standard" construction as colimit of étale algebras)</p>
+<p>Best</p></blockquote>
+    </article>
+  
+    <a id="comment-342" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/04GE#comment-342">Comment #342</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2013-11-14 22:14:22">November 14, 2013 at 22:14 </time>
+      </header>
+
+      <blockquote><p>For some reason I ended up strongly disliking the material on Henselian local rings as I was writing it. Probably because I did not start of with the more general notion of a Henselian couple. So, yes, I think there needs to be a lot more material in this section. In fact, we could have a whole chapter dedicated to this kind of thing as well as Weierstrass preparation, etc, etc.</p></blockquote>
+    </article>
+  
+    <a id="comment-5873" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/04GE#comment-5873">Comment #5873</a>
+        by
+        <cite>Dibya</cite>
+        on <time datetime="2021-01-06 09:03:08.658029">January 06, 2021 at 09:03 </time>
+      </header>
+
+      <blockquote><p>This note is really helpful, I just have a small query:
+Proving the "<script type="math/tex">8 \Rightarrow 10</script>" of lemma 152.3, when we have <script type="math/tex">R \rightarrow R'</script> an etale map and <script type="math/tex">\tau : R' \rightarrow R</script> as a section, should we not get <script type="math/tex">\tau^{-1} (m) = m'</script> instead of <script type="math/tex">\tau^{-1}(m') = m</script>. Since we are applying 8 on <script type="math/tex">R \rightarrow R'</script> and <script type="math/tex">m'</script> is the prime ideal of <script type="math/tex">R'</script> lying over <script type="math/tex">m</script>.</p></blockquote>
+    </article>
+  
+    <a id="comment-6084" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/04GE#comment-6084">Comment #6084</a>
+        by
+        <cite><a href="https://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2021-04-29 18:15:05.174854">April 29, 2021 at 18:15 </time>
+      </header>
+
+      <blockquote><p>Thanks and fixed <a href="https://github.com/stacks/stacks-project/commit/2330382c67d19ddb18f43548bdfbf315dbb0a828">here</a>.</p></blockquote>
+    </article>
+  
+    <a id="comment-7735" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/04GE#comment-7735">Comment #7735</a>
+        by
+        <cite>A.</cite>
+        on <time datetime="2022-09-06 17:27:52.879558">September 06, 2022 at 17:27 </time>
+      </header>
+
+      <blockquote><p>At the beginning of Section 04GE f' is the derivative of polynomial f. So if P is a polynomial in Lemma 04GX then P' is obviously ... sth else.</p></blockquote>
+    </article>
+  
+    <a id="comment-7984" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/04GE#comment-7984">Comment #7984</a>
+        by
+        <cite><a href="https://stacks.math.columbia.edu/" rel="author">Stacks Project</a></cite>
+        
+        on <time datetime="2023-01-14 11:38:17.286589">January 14, 2023 at 11:38 </time>
+      </header>
+
+      <blockquote><p>Appreciate how your formulated this. Thanks! Fixed in <a href="https://github.com/stacks/stacks-project/commit/012e5a43828dc90632c40dbb5494a4dfea68741f">this commit</a>.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-04GE",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">04GE</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="04GE"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">04GE</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0G1D">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0BSG">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/algebra.pdf#nameddest=04GE">View Section <span data-tag="04GE">10.153</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

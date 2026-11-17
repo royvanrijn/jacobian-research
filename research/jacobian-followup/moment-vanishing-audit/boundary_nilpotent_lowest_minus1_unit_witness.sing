@@ -1,0 +1,9 @@
+ring R=0,(g2,g3),dp;
+option(redSB);
+ideal I=39 - 2*g3,g2,g2^2,0,6*g3^2 + 54*g3 + 161,14*g2*g3 + 87*g2,148*g2^2*g3 + 3627*g2^2;
+ideal K=I[1],I[2],I[3],I[4],I[5];
+matrix T=lift(K,ideal(1));
+print("WITNESS_BEGIN");
+int j; for(j=1;j<=5;j++){print(string(T[j,1]));};
+print("WITNESS_END");
+quit;

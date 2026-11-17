@@ -1,0 +1,39 @@
+{
+  "claim": "QEM1",
+  "status": "PASS",
+  "normalized_isogeny_and_actual_Long_chart": "PASS",
+  "Moyal_defects": {
+    "third_commutator": "96*y**2/x**8",
+    "second_energy": "-6*(3*x**6 + 8*x**3*y**2 - 8*y**4)/x**8"
+  },
+  "universal_vector_field_linearizations": "PASS",
+  "relative_obstruction": {
+    "nonexact_coefficient": "-5/(72*b^2)",
+    "class": "[x dx/y]",
+    "exact_primitive": "4*y/(27*x**7) + y/(18*b*x**4) + 5*y/(36*b**2*x)",
+    "certificate": "direct rational differential identity; nonexactness is a written genus-one proof"
+  },
+  "arbitrary_univariate_correction_linearization": "PASS",
+  "explicit_unrestricted_escape": {
+    "U2": "-256*y**4/(27*x**10)",
+    "V2": "32*y**3*(3*x**3 - 8*y**2)/(9*x**11)",
+    "energy_G2": "-18/x**2 - 48*y**2/x**5 + 112*y**4/x**8",
+    "third_energy_commutator_coefficient": "8*y*(27*x**6 - 228*x**3*y**2 + 224*y**4)/x**9",
+    "commutator_through_h3": "PASS"
+  },
+  "Ore_bridge_central_and_diagonal_generator_relations": "PASS",
+  "retained_QIM1_QEI1_hash_chains": "PASS",
+  "hashes": {
+    "ELLIPTIC_QUANTUM_ENERGY_MOTION.md": "9c4e4dd41638d7225f468e08da2805bf45144123c67e82d4d6d3d96dbbb3d8c0",
+    "check_energy_motion.py": "c6f6d84789e629e1e0bbb4eaf122ca26ffb41c0dfae1fddf67a56bc3877304ff",
+    "ELLIPTIC_ISOGENY_MATRIX_MODULE.md": "7e179d9d0c8d05bba108f4751bca3a0902c630351794a85ff0622a2e87dd2ea4",
+    "isogeny_module_controls.json": "4886c5c7dc8e6078c8bd3d1b09466dbaf117e4c91f02f81ffbd5ff8d9672e477",
+    "ELLIPTIC_ISOGENY_AND_QUANTUM_ENERGY.md": "e1a4004e24f868f89a1598c2e05c5a31d73345597e9d8fe431b7ef7cab45f577",
+    "quantum_elliptic_energy_controls.json": "bd5c27d0346bd6cab012550733bd6bd212ef17669b5741d9e530456094c9f9c2",
+    "PROOF.md": "63a17ea378a997162eb1a6e4656e44b36d296c0b0b43483a54bde2d38a8753f9"
+  },
+  "coverage_boundary": "Exact finite Moyal, relative-differential and Ore-generator identities only. Nonexactness, rational logarithmic normalization, the universal h-valuation bound2..3, all-degree canonical transport and PBW flatness use written proofs. No spatial bound for a full Long lift or all-representative nonlifting is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

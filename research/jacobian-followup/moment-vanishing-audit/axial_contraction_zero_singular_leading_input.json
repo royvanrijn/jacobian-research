@@ -1,0 +1,20 @@
+{
+  "scope": "All-order pure points only: import GQUADRICTOPGATE20261115 at N2,D3. Smooth leading divisor impossible, so binary sextic discriminant vanishes. Not an eight-moment exclusion without this extra necessary equation.",
+  "binary_sextic": "-d + 2*e*s + 8*f*s**5 + 8*g*s**6",
+  "primitive_discriminant": "5832*d**5*g**5 + 9720*d**4*e*f*g**4 + 3125*d**4*f**6 - 270*d**3*e**2*f**2*g**3 + 410*d**2*e**3*f**3*g**2 - 640*d*e**4*f**4*g + 3125*e**6*g**4 + 1024*e**5*f**5",
+  "variables": [
+    "d",
+    "e",
+    "f",
+    "g"
+  ],
+  "moment_preconditioning": "Primitive of R4+3R5, then R5,R6,R7,R8; identical affine moment ideal before adding discriminant.",
+  "degrees": [
+    5,
+    7,
+    10,
+    10,
+    14,
+    10
+  ]
+}

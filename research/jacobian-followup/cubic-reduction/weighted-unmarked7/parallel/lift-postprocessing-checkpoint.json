@@ -1,0 +1,5 @@
+{
+  "status": "postprocessing-stopped",
+  "pid": 96688,
+  "reason": "Generic denominator has large unnecessary exceptional factors. Complete Singular export is retained; reduced full-ring saturation basis independently gives unit and will be certified directly. No generic exclusion inferred."
+}

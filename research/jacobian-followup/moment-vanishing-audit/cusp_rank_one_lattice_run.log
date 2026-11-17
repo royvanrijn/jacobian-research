@@ -1,0 +1,53 @@
+Structured source, strict filtration slack and rank-one residue passed
+Model linear_regular passed 36.5
+Model linear_zero passed 53.86
+Model constant1 passed 70.21
+Model constant2 passed 87.67
+Model q_shared_root passed 119.86
+Model q_identically_zero passed 146.22
+{
+  "completed": true,
+  "checker_sha256": "ab3b3d12d844f1de5777dec73834cbcede4786937fc0a137e120b20f471485a0",
+  "certificate_sha256": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+  "runtime_seconds": 146.218,
+  "sympy_version": "1.14.0",
+  "strict_principal_slack_identities": 100,
+  "rank_one_augmented_minors": 315,
+  "models": 6,
+  "exact_seed_identities": 36,
+  "full_scalar_cofactor_relations": 6,
+  "linear_D_models": 4,
+  "constant_D_models": 2,
+  "cusp_linear_D_gate": 125,
+  "cusp_constant_D_gate": 109,
+  "cusp_full_gate": 125,
+  "global_sufficient_pure_prefix": 129,
+  "odd_sufficient_pure_prefix_unchanged": 98,
+  "homogeneous_sufficient_pure_prefix_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    129
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    98
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 129,
+    "cusp": 125,
+    "transverse": 127,
+    "tangent": 120,
+    "triangle": 118,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "optimality_proved": false,
+  "written_analytic_or_global_proof_certified_by_checker": false,
+  "boundary": "Exact structured cusp source/residue and strict branch filtration slack,315 universal augmented minors,36 complete original twisted seed identities and six full scalar cofactor relations, all rank/row and scalar valuation checks. Universal all-degree lattice/seed/minor induction, constant-D degree/path proof, complete coefficient/frame cover and retained analytic exclusions remain written inputs. No independent replay, external review, formal verification or expanded radical cofactors."
+}

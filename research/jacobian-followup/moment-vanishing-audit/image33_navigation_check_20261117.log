@@ -1,0 +1,13 @@
+make -C research PYTHON="/home/royvanrijn/src/jacobian-research/.venv/bin/python" SYSTEM_PYTHON="python3" "check-navigation"
+make[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'
+python3 scripts/audit_status.py
+make[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py", line 8, in <module>
+    validate_index(index)
+  File "/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py", line 361, in validate_index
+    assert consumer_path.is_file(), (
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md
+make[1]: *** [Makefile:21: check-navigation] Error 1
+make: *** [Makefile:17: check-navigation] Error 2

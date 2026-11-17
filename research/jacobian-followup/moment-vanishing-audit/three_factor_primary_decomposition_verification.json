@@ -1,0 +1,16 @@
+{
+  "claim": "G3PRODUCTPRIMARY20261114",
+  "completed": true,
+  "primary_components": 10,
+  "origin_torsion_length": 77,
+  "generic_axis_torsion_length": 539,
+  "highest_degrees": {
+    "origin": 30,
+    "weighted_axis": 33
+  },
+  "checker_sha256": "a1652bc60f445713ba16df17bac38990a1205f35e96b3add7932f187057222f9",
+  "certificate_sha256": "74128da3fa241823622505d351c4ac0155beb6ddc3ff374d97dd7c856b521b4b",
+  "audit_existing_only": true,
+  "elapsed_seconds": 0.9828419019759167,
+  "assurance": "Constructive written full primary decomposition with exact Hilbert/saturation inputs; not a claim of expanded embedded Groebner bases or a raw full-intersection replay. Intrinsic torsion lengths77 and539 are distinct from noncanonical chosen primary-component lengths. No constrained-pullback or positive-characteristic conclusion, independent replay, external review or formal verification."
+}

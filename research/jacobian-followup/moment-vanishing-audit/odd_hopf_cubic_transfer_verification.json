@@ -1,0 +1,20 @@
+{
+  "claim": "SIC2B33ODD20261116",
+  "status": "PASS",
+  "checker_sha256": "b674cc7bb6d94846fd605cab656e9fb7f755c5c865278c051c3cf4f5922a4e33",
+  "sympy_version": "1.14.0",
+  "cubic_hopf_substitution_rank": 10,
+  "hopf_sphere_basis_checks": 70,
+  "gaussian_polar_monomial_checks": 165,
+  "coefficient_extraction_checks": 630,
+  "negative_output_degree_checks": 175,
+  "sharp_mixed_slice_values_at_m_equal_b": {
+    "1": "16",
+    "2": "9216",
+    "3": "33177600",
+    "4": "416179814400",
+    "5": "13484225986560000",
+    "6": "939796614359285760000"
+  },
+  "boundary": "Finite exact algebra only. The written all-order transfer imports G3HOMOGENEOUS20261114; no independent specialist, external or formal review."
+}

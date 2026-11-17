@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "1acd4b5ce1dfcc621df61ca6914106f6b0b0e3bec8eb19735a7d615a80231075",
+  "sympy_version": "1.14.0",
+  "Rodrigues_identity_and_triangular_density_pairing_controls": true,
+  "density_pairing_determinant": "1/2100",
+  "complex_density_reconstruction_and_eventual_marker_controls": [
+    {
+      "density": "1",
+      "degree": 0,
+      "first_nonzero_index": 0,
+      "marker_power": 1,
+      "checked_tail_order": 2,
+      "nonzero_marked_value": "8/15"
+    },
+    {
+      "density": "2*t",
+      "degree": 1,
+      "first_nonzero_index": 1,
+      "marker_power": 2,
+      "checked_tail_order": 3,
+      "nonzero_marked_value": "1/4"
+    },
+    {
+      "density": "3*t**2",
+      "degree": 2,
+      "first_nonzero_index": 2,
+      "marker_power": 3,
+      "checked_tail_order": 4,
+      "nonzero_marked_value": "128/1155"
+    },
+    {
+      "density": "2 - 2*t",
+      "degree": 1,
+      "first_nonzero_index": 0,
+      "marker_power": 1,
+      "checked_tail_order": 3,
+      "nonzero_marked_value": "32/35"
+    },
+    {
+      "density": "2*t/5 + 4*I*t/5 + 4/5 - 2*I/5",
+      "degree": 1,
+      "first_nonzero_index": 0,
+      "marker_power": 1,
+      "checked_tail_order": 3,
+      "nonzero_marked_value": "64/175 - 32*I/175"
+    }
+  ],
+  "even_odd_Cauchy_decomposition_exact": true,
+  "both_log_derivatives_have_nonzero_residue_at1": true,
+  "parity_forces_mixed_log_coefficient_ratio_nonconstant": true,
+  "density_endpoint_zero_does_not_remove_unit_log_control": true,
+  "uniform_even_profile_meromorphic_primitive_obstruction": true,
+  "proper_genus_weight3_and_punctured_Tate_weight4_distinguished": true,
+  "universal_written_result": "Proper ORIGINAL-volume quadric model gives locally split actual UNIT Cauchy module at everypuncture;oddNglobal. EventualHopfpurity iff polynomial-density even-heightlaw;allnonzero suchdensitylaws haveunitlogobstructionat1. Thus BOTHexceptional torus-equivariantcomplexHopf phases areNOTeventuallypure inANYdegree",
+  "height_or_density_assumed_real_or_positive": false,
+  "local_genus_semisimplicity_assumed": false,
+  "actual_period_kernel_claimed_Hodge": false,
+  "all_original_marker_forms_assumed_to_extend_to_Y": false,
+  "arbitrary_local_quotient_reflection_claimed": false,
+  "proper_original_volume_model_assumed_for_every_full_phase": false,
+  "purity_of_polynomial_composite_reflected_to_primitive": false,
+  "mixed_weight_Bezout_sections_claimed_excluded": false,
+  "all_polynomial_composites_of_Hopf_phase_claimed_excluded": false,
+  "all_Bezout_phases_or_composites_claimed_excluded": false,
+  "full_exceptional_pure_locus_component_vanishing_proved": false,
+  "arbitrary_coefficient_ring_promotion_claimed": false,
+  "universal_Hodge_or_MZ_proof_machine_verified": false,
+  "new_degree_support_or_parameter_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_next_task": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients"
+}

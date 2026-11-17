@@ -1,0 +1,90 @@
+{
+  "homogeneous_normalizations": "constant direction or two linear eigen-directions; primitive degree>=2 impossible for all scalars",
+  "homogeneous_controls": [
+    {
+      "r": 2,
+      "s": 0,
+      "tensor_degree": 2,
+      "projective_pair_degree": 1,
+      "scalar_degree": 0
+    },
+    {
+      "r": 4,
+      "s": 0,
+      "tensor_degree": 4,
+      "projective_pair_degree": 1,
+      "scalar_degree": 2
+    },
+    {
+      "r": 3,
+      "s": 1,
+      "tensor_degree": 4,
+      "projective_pair_degree": 1,
+      "scalar_degree": 2
+    },
+    {
+      "r": 2,
+      "s": 3,
+      "tensor_degree": 5,
+      "projective_pair_degree": 1,
+      "scalar_degree": 3
+    }
+  ],
+  "residue_controls": [
+    {
+      "R": "t**2/(t**2 + 1)",
+      "degree": 2,
+      "residue_sum": -1
+    },
+    {
+      "R": "(t**3 + t + 1)/(t**3 + 1)",
+      "degree": 3,
+      "residue_sum": -1
+    },
+    {
+      "R": "(2*t + 1)/(t + 3)",
+      "degree": 1,
+      "residue_sum": -1
+    }
+  ],
+  "rejected_entire_pairs": [
+    {
+      "b": "w**2 + z**2 + 1",
+      "c": "w*z + w + 1",
+      "reason": "primitive leading projective degree>=2"
+    },
+    {
+      "b": "w**3 + 1",
+      "c": "w + z**3 + 1",
+      "reason": "primitive leading projective degree>=2"
+    },
+    {
+      "b": "w**2 + z**2 + 1",
+      "c": "2*w**2 + w + 2*z**2",
+      "reason": "constant leading direction requires transverse common factor"
+    },
+    {
+      "b": "w*(w + z) + 1",
+      "c": "kappa*z*(w + z) + w",
+      "reason": "leading common factor is not supported on eigenlines"
+    },
+    {
+      "b": "w + z",
+      "c": "z",
+      "reason": "repeated projective fixed direction"
+    }
+  ],
+  "leading_filter_boundary": "necessary only; passing is not a polynomial wave or Keller realization",
+  "affine_primitive_pair": "coordinate reduction to completed chart; full groups natural alternating/symmetric",
+  "quadratic_primitive_pair_constant_scalar": {
+    "full_groups": [
+      "A5",
+      "A6",
+      "A8"
+    ],
+    "complete": true
+  },
+  "remaining_general_two_variable_pole_class_complete": false,
+  "abstract_PSL2_11_actions_decided": false,
+  "full_action_classification_complete": false
+}

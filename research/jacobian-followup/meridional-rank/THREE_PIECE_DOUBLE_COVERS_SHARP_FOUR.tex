@@ -1,0 +1,303 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\mr}{\operatorname{mr}}
+\title{Three further rank-four cases from a peripheral filling obstruction}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+Three source double-cover groups have exact models with three canonical
+Seifert pieces. Their number of pieces alone gives no rank obstruction.
+Instead, a specified central filling is nonabelian, contradicting the
+meridional requirement in the only three-piece type of the classical
+Boileau--Weidmann rank-two list. The finite inputs have independent replay;
+the manifold realization, JSJ and classification steps below use explicit
+classical imports. This working proof is unformalized and externally
+unreviewed. Worldwide novelty and prior-family exclusion are unestablished.
+
+\begin{theorem}
+For $K=13a_{233},13a_{239},13a_{253}$,
+\[
+ \rank\pi_1(\Sigma_2(K))=3,\qquad \mr(K)=b(K)=4.
+\]
+Together with the preceding eight original-target cases, eleven of the
+original sixteen targets are now proved in this programme. The other five
+are $13a_{234},13a_{242},13a_{243},13a_{244},13a_{265}$. The full classical
+meridional rank conjecture remains open.
+\end{theorem}
+
+\section{Exact source presentations and the rank-two condition}
+
+The normalized core presentation on the retained thirteen-crossing PD has
+one base arc set to $1$ and crossing relation $o a^{-1}o b^{-1}$.
+The retained core-group theorem identifies this group with the double
+branched cover group. Independent replay checks all generator eliminations,
+inverse free-basis changes and normal-closure-preserving relator replacements.
+Each of the three roots has a closed three-generator presentation.
+Their abelianizations have Smith factors $(1,1,D)$, where respectively
+$D=403,361,337$.
+
+The selected crossing subsets, indexed from zero, are
+\[
+ I_{233}=\{0,1,2,3,4,5,9\},\quad
+ I_{239}=\{0,1,2,3,4,5\},\quad
+ I_{253}=\{0,1,2,3,4,5,6\}.
+\]
+They have four shared physical edge labels, listed below. Independent
+overpass arc reconstruction checks each fragment presentation, and the
+seventeen fragment arc classes glue by four independent identifications to
+the thirteen full source arcs. Normalizing the two fragment base arcs gives
+the exact algebraic assembly
+\begin{equation}\label{eq:assembly}
+ G_i=(P*Q_i*\langle z\rangle)/
+ \langle\!\langle p_jzq_j^{-1}:j=1,2,3,4\rangle\!\rangle.
+\end{equation}
+Indeed the unnormalized inner arc word is its normalized word times $z$;
+the two right factors cancel in every core crossing relation. Gluing the
+arc classes and undoing the normalizations gives inverse presentations.
+A physical tangle sphere or numerical triangulation is not an input to
+this algebraic identity.
+
+In all three cases
+\[
+ P=\langle u,v\mid v^{-1}u^{-2}v^{-1}u\rangle,
+\]
+and the other fragment is respectively
+\begin{align*}
+ Q_{233}&=\langle x,y\mid y^{-2}x^{-2}yx^{-2}\rangle,\\
+ Q_{239}&=\langle x,y\mid y^{-2}x^3yx^3\rangle,\\
+ Q_{253}&=\langle x,y\mid y^{-2}x^{-2}y^{-2}x\rangle.
+\end{align*}
+All source words, generator maps and exact reductions are retained in
+\path{remaining_cover_structure_results.json}; the chosen ports and
+models are in \path{three_piece_cover_results.json}.
+
+The needed rank theorem is Boileau--Weidmann, \emph{The structure of
+3-manifolds with two-generated fundamental group}, Topology~44 (2005),
+283--320, \url{https://doi.org/10.1016/j.top.2004.10.008}.
+Theorem~2 of the read author manuscript lists ten necessary JSJ types for
+a compact orientable irreducible rank-two manifold with nontrivial JSJ.
+Only case~6 has three pieces. It requires two end Seifert pieces over
+$A(p)$ or $D(p,q)$ and a central two-bridge link exterior, with the end
+fibres glued to the central link meridians. We use this necessity only;
+no rank-equals-Heegaard-genus statement or full independent proof of that
+classification is asserted. The earlier exceptional irregular-cover type
+has two pieces and is irrelevant here.
+
+\section{Explicit Seifert models and injective boundaries}
+
+Put $H=\langle a,t\mid t^2=a^3\rangle$, with infinite central fibre
+$h=a^3=t^2$. In $P$, set $t=u^2v$. The relator is equivalent to
+$t^2=u^3$, and conversely $v=u^{-2}t$. Thus $P=H_P$, with
+\[
+ h_P=u^3,\qquad e_P=v h_P^{-1}=ut h_P^{-2}.
+\]
+Use a Seifert model over $D(2,3)$ with cone generators $u,t$, both with
+powers $h_P$. The remaining boundary section may be changed by an integral
+fibre twist; $(e_P,h_P)$ is a boundary basis.
+
+Each $Q_i$ is a root amalgam
+\begin{equation}\label{eq:root}
+ H_Q*_{\langle d\rangle=\langle s^m\rangle}\langle s\rangle
+ =\langle a,t,s\mid t^2=a^3,\ s^m=d\rangle.
+\end{equation}
+The inverse eliminations specifying it are
+\begin{center}
+\begin{tabular}{lllll}
+\toprule
+$i$ & $a,s$ & $t$ in old generators & $m$ & $d$\\
+\midrule
+$233$ & $y,x$ & $x^{-2}y$ & $2$ & $at^{-1}$\\
+$239$ & $y,x$ & $x^3y$ & $3$ & $ta^{-1}$\\
+$253$ & $x,y$ & $y^2x^2$ & $2$ & $ta^{-2}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Substitution makes the source relator a cyclic conjugate or inverse of
+$t^2a^{-3}$, so these are isomorphisms, not merely quotient maps.
+Choose the $H_Q$ peripheral section to be $e_Q=d$ for the first two
+rows and $e_Q=ta$ for the third. These are explicit $D(2,3)$ models:
+the cone pairs are $(a,t^{-1})$, $(t,a^{-1})$, and $(t,a)$ respectively,
+with fibre powers $h,h^{-1}$ in the first two cases and $h,h$ in the
+last. In the third row $d=e_Qh^{-1}$.
+
+Let the middle Seifert piece over $A(m)$ have group
+\[
+ C=\langle k,s\mid[k,s^m]=1\rangle,\qquad f=s^m.
+\]
+Its boundary bases are $(k,f)$ and $(c,f)$, where
+$c=s^\eta k$, and $\eta=1,-1,1$ in the three rows.
+This follows from the pair-of-pants times circle construction using
+cone generator $s^\eta$, with $(s^\eta)^m=f^\eta$, and the other two
+boundary words $k,(s^\eta k)^{-1}$.
+Glue the first boundary to $H_Q$ by
+\[
+ k=h_Q,\qquad f=d.
+\]
+This is a torus isomorphism: in $(e_Q,h_Q)$ its columns are
+$\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$ in the
+first two rows and
+$\left(\begin{smallmatrix}0&1\\1&-1\end{smallmatrix}\right)$ in the
+third. Eliminating $k,f$ gives \eqref{eq:root}; the relation
+$[h_Q,d]=1$ is already true in $H_Q$.
+
+Every displayed boundary injects as $\mathbb Z^2$.
+The quotient $H/\langle h\rangle=C_3*C_2$ makes each section a
+cyclically reduced word of length two, hence of infinite order; $h$
+is infinite by the map $a\mapsto2,t\mapsto3$ to $\mathbb Z$.
+Similarly $C/\langle f\rangle=\mathbb Z*C_m$ makes both $k$ and
+$s^\eta k$ infinite, and $f$ is infinite under $s\mapsto1,k\mapsto0$.
+These facts prove independence of the two commuting generators in each
+boundary. The amalgam normal-form theorem therefore injects all pieces
+and all boundary tori.
+
+\section{The exact ports and gluing slopes}
+
+Write $e=e_P$, $h=h_P$, and use the middle outer basis $(c,f)$.
+In increasing order of the physical boundary labels, the ports are
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+$i$ & Edge labels & $P$ ports & $Q_i$ ports\\
+\midrule
+$233$ & $9,12,16,25$ & $(h,eh,h^2e^{-1},e^2)$ &
+$(1,f^{-1}c^2,f^{-1}c,c)$\\[3pt]
+$239$ & $9,13,16,26$ & $(h,e,he^{-1},1)$ &
+$(1,fc,c,fc^2)$\\[3pt]
+$253$ & $10,13,17,26$ & $(he^{-2},e,he^{-1},1)$ &
+$(1,f,c^{-1}f,c)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For $233$, the isomorphism to the $Q$ model includes conjugating all
+old-generator images by $a^{-1}$. In the un-conjugated marking its old
+ports are $a$ times the displayed ports times $a^{-1}$. This common inner
+automorphism is a change of marking on $Q$ in the free-product assembly;
+it imposes no additional relation.
+
+The independent checker proves each port identity by the complete normal
+form in \eqref{eq:root}. In $H$, it retains a central power and alternating
+$C_3*C_2$ syllables. Cyclic edge membership is decided by its integer
+abelian exponent and then this exact $H$ normal form; the exponent of $d$
+is $-1,1,-1$. Divisible $s$ powers and intermediate $H$ words in
+$\langle d\rangle$ are reduced until the amalgam normal form is reached.
+The checker imports no source simplifier or graph search.
+
+Substituting the ports into \eqref{eq:assembly} gives exactly
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+$i$ & $e$ & $h$ & $z$\\
+\midrule
+$233$ & $c^2f^{-1}$ & $c^3f^{-2}$ & $h^{-1}$\\
+$239$ & $c^{-1}$ & $c^{-2}f^{-1}$ & $fc^2$\\
+$253$ & $c^{-1}f$ & $c^{-3}f^2$ & $c$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For the first row eliminate $z$ at edge~$9$; for the other two rows use
+edge~$26$. Two of the remaining port differences have determinant
+$\pm1$ in $(e,h)$, and the last relation is redundant. Conversely all
+four original port relations follow immediately from the displayed
+equalities. Hence the group is the injective torus amalgam with edge
+matrix, in columns $(e,h)$ expressed in $(c,f)$,
+\[
+ M_{233}=\begin{pmatrix}2&3\\-1&-2\end{pmatrix},\qquad
+ M_{239}=\begin{pmatrix}-1&-2\\0&-1\end{pmatrix},\qquad
+ M_{253}=\begin{pmatrix}-1&-3\\1&2\end{pmatrix}.
+\]
+All are unimodular. The two adjoining fibre intersection numbers are
+$(3,1),(2,1),(3,1)$ respectively.
+
+\section{Canonical pieces and the meridional filling obstruction}
+
+Glue the three orientable pieces in the chain
+\[
+ \underset{D(2,3)}{H_P}\;---\;
+ \underset{A(m)}{C}\;---\;
+ \underset{D(2,3)}{H_Q}.
+\]
+All boundary components are paired, and orientations can be chosen
+consistently along the tree, so this constructs a closed orientable
+manifold with exactly the source group. The pieces are irreducible with
+incompressible boundary, and gluing preserves irreducibility. Their base
+orbifold Euler characteristics are $-1/6$, $-1+1/m$, $-1/6$.
+Thus the solid-torus, product and twisted Klein-bundle exceptions to
+boundary-fibre uniqueness do not occur. The nonparallel fibre slopes make
+the two tori canonical JSJ tori, with exactly three Seifert pieces.
+We import these standard Seifert/JSJ facts as stated in Hatcher's
+\emph{Notes on Basic 3-Manifold Topology}, Sections~1.2--2.1,
+Theorem~1.9, Propositions~1.11--1.13 and Lemmas~1.14--1.15, retaining
+the original Jaco--Shalen/Johannson credit. The source cover need not be
+identified with this constructed manifold by a numerical recognition
+or a homeomorphism theorem: an exact group isomorphism is enough for rank.
+
+\begin{lemma}\label{lem:filling}
+Filling the $C$ outer boundary along the adjoining $H_P$ fibre does not
+give a solid torus in any of the three models.
+\end{lemma}
+\begin{proof}
+The filling slope is $c^rf^s$, with
+\[
+ (m;r,s)=(2;3,-2),\quad(3;-2,-1),\quad(2;-3,2).
+\]
+The filled group is $C/\langle\!\langle c^rf^s\rangle\!\rangle$.
+Quotient further by $f=1$. In the free basis $s,c=s^\eta k$ its
+presentation becomes
+\[
+ \langle s,c\mid s^m=1,\ c^r=1\rangle=C_m*C_{|r|}.
+\]
+It surjects onto the nonabelian group $S_3$: send $s$ to $(12)$ and
+$c$ to $(123)$ when $(m,|r|)=(2,3)$, and interchange these images when
+$(m,|r|)=(3,2)$. Thus the filled group has a nonabelian quotient and
+cannot be the infinite cyclic group of a solid torus. The finite checker
+verifies these permutations and the original filling relation directly.
+\end{proof}
+
+A two-component two-bridge link has unknotted components: each component
+has at least one bridge, and the two-bridge presentation therefore gives
+one bridge on each, making each an unknot. Filling either meridian of
+its exterior restores the complement of the other unknot, a solid torus.
+In the only three-piece rank-two type, BW05 case~6, the adjoining
+$H_P$ fibre must be such a meridian of the central two-bridge link
+exterior. Lemma~\ref{lem:filling} contradicts this necessary condition.
+The model has an embedded nonabelian $H_P$, so rank one is also impossible.
+Its rank is at least three, and the exact three-generator source
+presentation gives equality.
+
+\section{Knot conclusion, controls and retained failures}
+
+The even-meridian subgroup argument gives
+$\mr(K)\ge1+\rank\pi_1(\Sigma_2(K))=4$.
+Each of these three knots has its own independently replayed four-seed,
+nine-step Wirtinger-colouring certificate. The retained
+Blair--Kjuchukova--Velazquez--Villanueva colouring/bridge theorem gives
+$b(K)\le4$. Since $\mr(K)\le b(K)$, both equal four.
+
+Three pieces alone would have been insufficient. For comparison,
+$A(2)$ can be the $(2,4)$ torus-link exterior, with genuine meridians
+$k$ and $sk$, each having fibre intersection one. Killing either in
+$\langle k,s\mid[k,s^2]=1\rangle$ gives $\langle s\rangle$;
+the BW05 three-piece type allows rank-two examples with these meridian
+attachments. Our obstruction uses the actual attachment slope.
+The two preceding four-piece roots are retained positive controls.
+Independent replay covers five full core reductions, fourteen fragment
+reductions and all balanced four-port cuts in the small selection.
+Five altered-port, slope, conjugation, physical-arc and false-transfer
+controls reject.
+
+The five proposed transfers all failed, with unequal determinant pairs
+$403/389$, $361/359$, $361/337$, $361/311$, $337/311$.
+None is used here. Similar PD prefixes cannot identify these covers.
+The other five knots need separate lower certificates; their checked
+upper-four traces alone do not settle them. All source inputs and failed
+searches are retained.
+
+\end{document}

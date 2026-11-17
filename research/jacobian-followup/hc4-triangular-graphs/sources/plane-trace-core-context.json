@@ -1,0 +1,116 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Exact plane trace-image core and all-degree disjoint nodal inertia",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKO0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYKO1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYKO2",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYKO3",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md"
+    },
+    {
+      "claim": "KMFI94",
+      "canonical_source": "jacobian-followup/monodromy-theory/LOCAL_IMAGE_AND_MARKS.md"
+    },
+    {
+      "claim": "KMFI95",
+      "canonical_source": "jacobian-followup/monodromy-theory/LOCAL_IMAGE_AND_MARKS.md"
+    },
+    {
+      "claim": "KMFI96",
+      "canonical_source": "jacobian-followup/monodromy-theory/LOCAL_IMAGE_AND_MARKS.md"
+    },
+    {
+      "claim": "PFN2",
+      "canonical_source": "archive/non-elliptic/plane-jc/FINITE_NORMALIZATION_PROGRAM.md"
+    },
+    {
+      "claim": "MVBOUNDARYSPACE20261115",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/RATIONAL_CORES_AND_BOUNDARY_SUBSPACES.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "QCL4",
+      "canonical_source": "archive/non-elliptic/plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md"
+    },
+    {
+      "claim": "QLD4",
+      "canonical_source": "archive/non-elliptic/plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "jacobian-followup/hc4-triangular-graphs/verify_whole_source_traces.py": "aff5777ba2cd9ecaee1271884e73db74c185e1db04c36fef2a2c4a62d22f0a37",
+    "jacobian-followup/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md": "1ee4de68a03886a0412339b75e50256cd8dba66e16ad1402cb5626cf1e815804",
+    "jacobian-followup/hc4-triangular-graphs/verify_canonical_energy_traces.py": "ad8b9e8cba17b746cc8a4af592d2d8eb435ad1ea019a886b1bb0a7a270ebceba",
+    "jacobian-followup/monodromy-theory/LOCAL_IMAGE_AND_MARKS.md": "65db57362d88399be778d3f2f57091802f4938fabc229f63ea7fcddcdaa886e7",
+    "jacobian-followup/monodromy-theory/verify_local_image.py": "c879521329d95ab7d1087c750a7ed9f4c7fe3eb02426792a6e6bf4dd3e6fa414",
+    "archive/non-elliptic/plane-jc/FINITE_NORMALIZATION_PROGRAM.md": "3aeb952a5ed371653fb739ecbad8ea2018a520e82c3fae55c21e98e717b82475",
+    "jacobian-followup/moment-vanishing-audit/RATIONAL_CORES_AND_BOUNDARY_SUBSPACES.md": "3ab075933db65b79df4bbaaa411cc63fad9913e59a91f709636ffc97ae80aedb",
+    "jacobian-followup/moment-vanishing-audit/verify_period_boundary_geometry.py": "1be550857d692ecab55cbdd3ba02516fbd85ce84c5ead5862f85bfdb99705f3b",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "archive/non-elliptic/plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md": "21e160a90c05a9131d57cd87ab862667b80e45c47731b5a9b3b58427fb03a7b3",
+    "archive/non-elliptic/plane-jc/cas/test_plane_boundary_exclusion.py": "583c8c7c8956486ccdd2acca7fbea3ddf667567958b957aed9e926987cced5a8",
+    "archive/non-elliptic/plane-jc/cas/quartic_completed_deletion.sing": "cb3cc6a7906b415ab73424398202883ff03c416cda63307f540295d9be29ab4d",
+    "jacobian-followup/hc4-triangular-graphs/receipt-whole-source-traces.json": "a3ca22a6939654642a17654a1d3df5b60a25ac9217acd925c9f39c8b98554dfe",
+    "jacobian-followup/hc4-triangular-graphs/sources/whole-source-trace-context.json": "a11552510aba07b87be37acbc47fbbc9c13c3244444cb1b7fc778bc335a3af61",
+    "jacobian-followup/hc4-triangular-graphs/receipt-canonical-energy-traces.json": "663e6613cbb610d8a8aa7d12f41024f6e4c233f92335c70393ec84740c5ff143",
+    "jacobian-followup/hc4-triangular-graphs/sources/canonical-energy-trace-context.json": "21653418aeb1951c7fe020fd6763d948b3b9c45d719ed98ec9ecbc441a10725b",
+    "jacobian-followup/moment-vanishing-audit/sources/mustata_dmodules_winter2023.pdf": "bf4103231ac100f06416c7552d566bfc7472f4f6d0d49679015abc7acd3aec2a"
+  },
+  "newly_cached_primary_context": [],
+  "inspected_existing_primary_context": [
+    {
+      "url": "https://www-personal.umich.edu/~mmustata/DmodulesNotes.pdf",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/mustata_dmodules_winter2023.pdf",
+      "inspected_sections": "Theorems4.11 and4.15,Proposition6.18,Theorem6.20 and its explicit coordinate proof,pdf pages36-38,54-56. Screened Riemann-Hilbert Section7.4 but did not use it;no branch-count/curve-complement duality theorem is imported.",
+      "role": "Use finite Weyl generation of B_f from Theorem4.15. The point decomposition and support arguments are written explicitly,with the retained one-variable boundary-core method credited. No semisimplicity of the source or automatic trace regularity is inferred."
+    }
+  ],
+  "newly_imported_proved_external_statements": [
+    {
+      "source": "https://www-personal.umich.edu/~mmustata/DmodulesNotes.pdf",
+      "theorem": "Theorem4.15",
+      "statement": "For a polynomial ring B over a characteristic-zero field and nonzero f,the localization B_f is a finitely generated holonomic Weyl-algebra module.",
+      "use": "Only finite Weyl generation is required to make B_f/Tr(R) have finite closed support after its height-one localizations vanish."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "plane_trace_image_is_exact_maximal_point_quotient_kernel": true,
+  "whole_source_top_de_Rham_coinvariants_vanish": true,
+  "all_generic_boundary_pole_orders_present_in_trace_image": true,
+  "trace_core_depends_only_on_actual_nonproperness_curve": true,
+  "ordinary_node_trace_image_has_no_mixed_principal_part": true,
+  "nodal_trace_core_is_not_multiplicatively_closed": true,
+  "two_node_meridians_have_disjoint_moved_support": true,
+  "support_sum_bound_valid_in_every_plane_degree": true,
+  "exceptional_eleven_actions_have_no_two_ramified_branches_at_a_total_divisor_node": true,
+  "quartic_disjoint_transpositions_and_degree_six_disjoint_cycles_remain_allowed": true,
+  "universal_HC4_application_is_via_retained_Tang": true,
+  "finite_trace_image_or_source_semisimplicity_proved_automatic": false,
+  "trace_image_identified_with_full_localization_in_two_variables": false,
+  "general_branch_number_point_quotient_formula_imported": false,
+  "cusps_tangencies_or_extra_branches_subject_to_nodal_inertia_rule": false,
+  "higher_dimensional_Keller_sources_subject_to_plane_node_exclusion": false,
+  "plane_Keller_map_proved_surjective": false,
+  "exceptional_eleven_actions_excluded_entirely": false,
+  "retained_quartic_or_degree_six_packets_excluded": false,
+  "canonical_energy_integrality_proved_automatic": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

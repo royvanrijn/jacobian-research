@@ -1,0 +1,94 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "BCR2",
+      "canonical_source": "archive/non-elliptic/verified/TWELVE_VARIABLE_DEGREE_THREE_KELLER_COUNTEREXAMPLE.md"
+    },
+    {
+      "claim": "PCC3",
+      "canonical_source": "archive/non-elliptic/plane-jc/JC2_FINITE_NORMALIZATION_FRONTIER.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    },
+    {
+      "claim": "HC4MYLJ1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/PRIMITIVE_GAMMA_COORDINATE_AND_DARBOUX_BARRIER.md"
+    },
+    {
+      "claim": "HC4MYKO2",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYGS0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/OPPOSITE_AFFINE_ENDPOINT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "archive/non-elliptic/verified/TWELVE_VARIABLE_DEGREE_THREE_KELLER_COUNTEREXAMPLE.md": "66ca76270d8bfba8cc0279eaf2411958151027ed0f37f5e3bc4124fd627c1c71",
+    "archive/non-elliptic/scripts/verify_macfarlane_f12_suite.py": "554644ccaf0ed22c213f5e44e30288a54c677b698aa8feac24633eab74f632cd",
+    "archive/non-elliptic/plane-jc/JC2_FINITE_NORMALIZATION_FRONTIER.md": "1ab7918bfb8298cb8c258975c93118f63f180b38dada738fe2b8d35161ba87ff",
+    "archive/non-elliptic/plane-jc/cas/test_plane_boundary_exclusion.py": "583c8c7c8956486ccdd2acca7fbea3ddf667567958b957aed9e926987cced5a8",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "jacobian-followup/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f",
+    "jacobian-followup/hc4-triangular-graphs/PRIMITIVE_GAMMA_COORDINATE_AND_DARBOUX_BARRIER.md": "a1f2ef696f84d7117ab49633126e9c53aed61f623968ed74e2f1e95ec042f3ee",
+    "jacobian-followup/hc4-triangular-graphs/verify_gamma_coordinate.py": "f4ac7c0676ead2b73a6fc1f7c3084320c3faa24d31604dad24d26fb1bc44c67b",
+    "jacobian-followup/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "jacobian-followup/hc4-triangular-graphs/verify_whole_source_traces.py": "aff5777ba2cd9ecaee1271884e73db74c185e1db04c36fef2a2c4a62d22f0a37",
+    "jacobian-followup/hc4-triangular-graphs/OPPOSITE_AFFINE_ENDPOINT.md": "13ef6626947a8ddc04aed3e017d767eb973c1672bbb486dcb2d32d6a6bce9e00",
+    "jacobian-followup/hc4-triangular-graphs/verify_opposite_affine.py": "b0b3c318537441a766fd0bf3c90b8de52fbc4831ab052e18ac8984ec15129f85",
+    "jacobian-followup/jc2-omitted-divisors/sources/orevkov-three-sheeted-jc86.pdf": "f80d4a7d7e04987ce7dece58f33cff20ea9210183ca3ffd4488f39a2147532db",
+    "jacobian-followup/hc4-triangular-graphs/sources/opposite-affine-import.json": "a66e4633b3f60cc1a1c850f7b6e0c97262ab564141bfebe1ea98fc0506570dbe"
+  },
+  "new_primary_sha256": {},
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "retained_primary_reinspection": {
+    "url": "https://www.math.univ-toulouse.fr/~orevkov/jc86.pdf",
+    "path": "jacobian-followup/jc2-omitted-divisors/sources/orevkov-three-sheeted-jc86.pdf",
+    "inspection": "COMPLETE first PDFpage rendered and VISUALLY read:definition of generic multiplicity andTheorem1.1.This is PCC3/GS0existing proved import,not a new independent reproduction of the ten-page proof.",
+    "render": "tmp/hc4_orevkov_reaudit_page1.png"
+  },
+  "full_theorem_target": "Full HC4/JC2 proof or actual counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked-energy integrality;OPEN.",
+  "previous_goal_turn_classification": "progress",
+  "mathematical_development_boundary": "No new checker run yet.No registered checker replay.Studied radial/Moser possibility,but field-degree/common-coordinate obstruction retires the direct gamma map and global2+2chart queue before further calculations.Ordinary coordinate-pair restriction and cotangent fibre counts credited to BCR2/GS0.",
+  "all_degree_all_dimension_common_coordinate_specialization_proved": true,
+  "generic_specialization_preserves_full_field_degree_on_nonempty_open": true,
+  "n_minus_one_common_outputs_force_polynomial_inverse": true,
+  "small_excluded_plane_degrees_bound_common_outputs_by_n_minus_three": true,
+  "exact_common_output_count_for_every_identity_stabilization_of_three_dimensional_degree_three_or_four_seed": true,
+  "HC4_gradient_orbit_iff_plane_Keller_times_identity_two_proved": true,
+  "nonautomorphic_HC4_gradient_has_exactly_two_common_outputs": true,
+  "whole_marked_normalization_and_monodromy_product_necessity_proved": true,
+  "entire_gamma_fixed_map_HC4_polynomial_equivalence_route_excluded": true,
+  "every_gamma_global_two_plus_two_polynomial_graph_chart_excluded": true,
+  "published_full_plane_quartic_retirement_preserved": true,
+  "external_review_deferred": true,
+  "every_special_parameter_asserted_preserve_generic_degree": false,
+  "common_outputs_assumed_individually_coordinate_without_joint_completion": false,
+  "parameter_family_asserted_polynomial_product_automatically": false,
+  "common_output_count_additivity_asserted_for_arbitrary_stabilization": false,
+  "proper_degree_three_or_four_intermediate_excluded_without_polynomial_plane_source": false,
+  "gamma_symplectic_form_asserted_nonstandard": false,
+  "all_degree_changing_gamma_constructions_excluded": false,
+  "all_compositions_of_gamma_maps_excluded": false,
+  "nonlinear_potential_pullback_identified_with_separate_map_recoordination": false,
+  "new_degree_five_or_prime_degree_theorem_imported": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_requested": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

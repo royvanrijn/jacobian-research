@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-15",
+  "previous_goal_turn": "progress: current nonspherical proof, finite-group certificates and exceptional-model work item revalidated",
+  "current_goal_turn": "progress: complete averaged right-orbit-span theorem and full ordinary moment ideals; all-k spectral second-moment algorithm; ten exact higher-power exclusions",
+  "new_claims": [
+    "GEXCEPTIONALORBITSPAN20261115",
+    "GEXCEPTIONALSPECTRAL20261115",
+    "GEXCEPTIONALPOWER6TEST20261115"
+  ],
+  "new_schema_source_hash_dependencies": true,
+  "new_edges_acyclic": true,
+  "preserved_pre_existing_rows_except_named_work_item": {
+    "MATH_STATUS.json": 2642,
+    "knowledge/lessons.json": 623,
+    "knowledge/work_items.json": 53
+  },
+  "affected_work_item": "WORK-EXCEPTIONAL-SL2-MOMENTS",
+  "new_lesson_and_work_scope_fingerprints": true,
+  "source_checker_receipt_primary_and_failed_input_hashes": true,
+  "canonical_proof_local_links": 3,
+  "exact_checks": "PASS:342 independent coefficient integrations, group/zonal arithmetic, unipotent polynomial identities, six unprojected cancellations, pair-factor mutation, Fraction-only arithmetic",
+  "all_parameter_assurance": "Internal written proof, not formal or independent specialist verification",
+  "full_repository_navigation": "FAIL on executed make check-navigation: existing KDSQ6 missing document consumer artifacts/generated-results/README.md.",
+  "generated_views_via_existing_renderers": [
+    "index/README.md",
+    "index/geometry.md",
+    "index/documents.tsv",
+    "knowledge/ALGORITHMS.md",
+    "knowledge/WORK_LEDGER.md",
+    "knowledge/work/geometry.md",
+    "STATUS.md"
+  ],
+  "remaining_mathematics": "Both exceptional model classifications remain open. Higher-power translates or combinations, differing left orientations and other invariant families are not excluded.",
+  "goal_status": "active",
+  "git_diff_check": "PASS",
+  "full_repository_validated": false
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Classical context for the plane stable-coordinate boundary",
+  "authors": [
+    "Leonid Makar-Limanov",
+    "Peter van Rossum",
+    "Vladimir Shpilrain",
+    "Jie-Tai Yu"
+  ],
+  "publication": "The stable equivalence and cancellation problems, Comment. Math. Helv. 79 (2004), 341-349",
+  "source_url": "https://ems.press/content/serial-article-files/43009",
+  "retained_file": "stable-equivalence-cmh-2004.pdf",
+  "sha256": "8766565326fa4efef9ed66517dfafc89ad83fe6277dea0957d9bfcc64546bf24",
+  "inspected_location": "Theorem 1.1, printed page 342; definitions of stable equivalence and stable coordinate immediately before and after it",
+  "role": "Classical context and attribution only: plane stable equivalence implies plane equivalence. The needed Keller stable-coordinate implication is proved from retained smooth-curve Hodge data and the affine-line endpoint, without importing Theorem 1.1 as an unproved classification.",
+  "plane_stable_coordinate_fact_asserted_new": false,
+  "new_external_classification_imported": false,
+  "higher_dimensional_stable_coordinate_conjecture_assumed": false,
+  "fixed_Meng_Yang_potential_matching_inferred": false
+}

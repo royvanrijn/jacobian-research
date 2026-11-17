@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T00:22:47.312167+00:00",
+  "purpose": "Primary literature on versality and its scheme/Sylow boundaries; retained canonical structural inputs. No priority certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-holonomy-families/PROOF.md",
+      "locator": "UAS3END1 two atomicity notions, UAS3VERS1 norm-torsor family, UAS3CAN1 canonical limitation.",
+      "sha256": "5517a4664911c642d68cd714d77b6491d058037135eb45be59f99b3fc2b37626"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-rigid-base-reduction/PROOF.md",
+      "locator": "UA1RIGIDCYL1 cylinder rigidity, UATORUSDOM1 characteristic torus cover and dominant-map lifting.",
+      "sha256": "b940a9485119963c06220145fb0085fc076844b54c9fead56be99f87cc7263c8"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-torus-quotient-selfmaps/PROOF.md",
+      "locator": "UAKANLIFT1 canonical covolume-line functor; UAINFRASELF1 primitive affine monodromy.",
+      "sha256": "6190aee79c88adef5e807074c385e795f1882bcddf6478a47af292bbc5f4ee46"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-torus-receivers/PROOF.md",
+      "locator": "UAFINATOM1 finite factors and strong primitive atomicity; UATORUSCLASS1 normalizer/containment distinction.",
+      "sha256": "2f71f561ae8a687ab8a27a13027bb097c45dc14862ae315bb2a49efff72f29a3"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-homogeneous-receivers/verify.py",
+      "locator": "Pure exact finite-permutation helpers only.",
+      "sha256": "fc8f97b09967dab6f25e86ad629d07387500ac489a3965130ac0802aeaa876fe"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/duncan-reichstein-1109.6093v4.html",
+      "url": "https://arxiv.org/html/1109.6093v4",
+      "locator": "Theorem1.1: distinguish twist points, density, unirationality and stable linearizability.",
+      "bytes": 805306,
+      "sha256": "80306add4b0cc227b55900866561e18390f5d63d5f2bf75961eb19a56ff0bb98"
+    },
+    {
+      "path": "sources/first-florence-rosengarten-2401.04458v2.html",
+      "url": "https://arxiv.org/html/2401.04458v2",
+      "locator": "Theorem1.1 and Theorems6.3-6.4: unipotence criterion and quantitative all-affine obstruction; v2 dated15 December2025.",
+      "bytes": 814193,
+      "sha256": "5f816d6545b9c851e6c42ec03800fabb369585fe99c3f1934f9254c3e91d6b42"
+    },
+    {
+      "path": "sources/scavia-2607.25118v1.html",
+      "url": "https://arxiv.org/html/2607.25118v1",
+      "locator": "Theorem1.2 and its definitions: all Sylow restrictions very versal, full action not versal; do not equate with a counterexample to weak point-existence versality.",
+      "bytes": 153501,
+      "sha256": "d42dec8d54601e66268bf273fa1deb07debf858b6eb134af36bb30d85965898d"
+    },
+    {
+      "path": "sources/kresch-tschinkel-2606.10965v1.html",
+      "url": "https://arxiv.org/html/2606.10965v1",
+      "locator": "Theorem2.5, algebraically closed characteristic-zero base; one generic torsor from a genuinely versal action.",
+      "bytes": 399934,
+      "sha256": "dc0999e16550081db37985a968109324a2cd772b40cba01bb21ff64739bee3bb"
+    }
+  ]
+}

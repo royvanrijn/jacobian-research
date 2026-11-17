@@ -1,0 +1,1681 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 897,
+  "checks": [
+    "predecessor PASS binomial_periodic_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_binomial_periodic.py",
+    "sealed predecessor binomial_periodic_receipt.json ALL_BINOMIAL_KEYS_PERIODIC_GATE_AND_EXISTENCE.md",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/manifest.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_orbit_tree.py",
+    "sealed predecessor binomial_periodic_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor binomial_periodic_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/zannier-1995.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-colouring/livingston-melvin-1985.pdf",
+    "predecessor PASS cyclic_parity_receipt.json",
+    "sealed predecessor cyclic_parity_receipt.json verify_cyclic_parity.py",
+    "sealed predecessor cyclic_parity_receipt.json CYCLIC_COMPANIONS_ACROSS_PARITY.md",
+    "sealed predecessor cyclic_parity_receipt.json sources/cyclic-parity/manifest.json",
+    "sealed predecessor cyclic_parity_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor cyclic_parity_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor cyclic_parity_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor cyclic_parity_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor cyclic_parity_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor cyclic_parity_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor cyclic_parity_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor cyclic_parity_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor cyclic_parity_receipt.json sources/common-pencil-mark/stacks-0C5H.html",
+    "sealed predecessor cyclic_parity_receipt.json sources/common-pencil-mark/stacks-0C5R.html",
+    "sealed predecessor cyclic_parity_receipt.json sources/binomial-periodic/zannier-1995.pdf",
+    "sealed predecessor cyclic_parity_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor cyclic_parity_receipt.json sources/quartic-colouring/livingston-melvin-1985.pdf",
+    "predecessor PASS common_pencil_mark_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json verify_common_pencil_mark.py",
+    "sealed predecessor common_pencil_mark_receipt.json COMMON_PENCIL_GRAM_MARK_AND_ALL_ODD_EXCLUSION.md",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/manifest.json",
+    "sealed predecessor common_pencil_mark_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5H.html",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5R.html",
+    "predecessor PASS seifert_base_genus_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json verify_seifert_base_genus.py",
+    "sealed predecessor seifert_base_genus_receipt.json SEIFERT_BASE_GENUS_AND_COMPANION_TREE.md",
+    "sealed predecessor seifert_base_genus_receipt.json sources/seifert-base-genus/manifest.json",
+    "sealed predecessor seifert_base_genus_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json sources/seifert-base-genus/hatcher-3manifolds.pdf",
+    "predecessor PASS peripheral_cone_budget_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json verify_peripheral_cone_budget.py",
+    "sealed predecessor peripheral_cone_budget_receipt.json PERIPHERAL_CONE_TORSION_AND_MARKED_BUDGET.md",
+    "sealed predecessor peripheral_cone_budget_receipt.json sources/peripheral-cone-budget/manifest.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS fold_schur_s4_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json verify_fold_schur_and_s4.py",
+    "sealed predecessor fold_schur_s4_receipt.json FOLD_SCHUR_BOUND_AND_S4_COMMON_EXCLUSION.md",
+    "sealed predecessor fold_schur_s4_receipt.json sources/fold-schur-s4/manifest.json",
+    "sealed predecessor fold_schur_s4_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json sources/common-pencil-mark/stacks-0C5H.html",
+    "sealed predecessor fold_schur_s4_receipt.json sources/common-pencil-mark/stacks-0C5R.html",
+    "sealed predecessor fold_schur_s4_receipt.json sources/seifert-base-genus/hatcher-3manifolds.pdf",
+    "sealed predecessor fold_schur_s4_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS oriented_pattern_linking_receipt.json",
+    "sealed predecessor oriented_pattern_linking_receipt.json verify_oriented_pattern_linking.py",
+    "sealed predecessor oriented_pattern_linking_receipt.json ORIENTED_PATTERN_LINKING_AND_COMMON_SOURCE_GATE.md",
+    "sealed predecessor oriented_pattern_linking_receipt.json sources/oriented-pattern-linking/manifest.json",
+    "sealed predecessor oriented_pattern_linking_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor oriented_pattern_linking_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor oriented_pattern_linking_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor oriented_pattern_linking_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor oriented_pattern_linking_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "primary pin neumann-raymond-1978.pdf",
+    "primary pin cochran-tanner-1207.5042v1.pdf",
+    "integer lcm fibre relation certificate ([2, 3, 5], [1, 1, 1])",
+    "regular fibre exact order ([2, 3, 5], [1, 1, 1])",
+    "closed Seifert determinant ([2, 3, 5], [1, 1, 1])",
+    "cone count proves cyclic full group ([2, 3, 5], [1, 1, 1])",
+    "integer lcm fibre relation certificate ([2, 2, 3], [1, 1, 1])",
+    "regular fibre exact order ([2, 2, 3], [1, 1, 1])",
+    "closed Seifert determinant ([2, 2, 3], [1, 1, 1])",
+    "cone count proves cyclic full group ([2, 2, 3], [1, 1, 1])",
+    "integer lcm fibre relation certificate ([1], [1])",
+    "regular fibre exact order ([1], [1])",
+    "closed Seifert determinant ([1], [1])",
+    "cone count proves cyclic full group ([1], [1])",
+    "integer lcm fibre relation certificate ([4, 4, 9], [1, 3, 1])",
+    "regular fibre exact order ([4, 4, 9], [1, 3, 1])",
+    "closed Seifert determinant ([4, 4, 9], [1, 3, 1])",
+    "cone count proves cyclic full group ([4, 4, 9], [1, 3, 1])",
+    "integer lcm fibre relation certificate ([3, 3, 3], [1, 1, 1])",
+    "regular fibre exact order ([3, 3, 3], [1, 1, 1])",
+    "closed Seifert determinant ([3, 3, 3], [1, 1, 1])",
+    "zero Euler case is outside finite order formula",
+    "fibre divisibility Bezout (8, 3)",
+    "fibre divisibility Bezout (9, 2)",
+    "fibre divisibility Bezout (15, 7)",
+    "unit coefficient kills meridian torsion (4, 8, 3)",
+    "unit coefficient kills meridian torsion (5, 10, 2)",
+    "unit coefficient kills meridian torsion (3, 9, 4)",
+    "unit coefficient kills meridian torsion (9, 9, 2)",
+    "both sectors have identity companion fibre ('2,3,2', 0)",
+    "companion is one planar piece ('2,3,2', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('2,3,2', 0)",
+    "A4 cable orbit and root shape ('2,3,2', 0)",
+    "closed companion at most two divisible cones per prime ('2,3,2', 0)",
+    "both sectors have identity companion fibre ('2,3,2', 1)",
+    "companion is one planar piece ('2,3,2', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('2,3,2', 1)",
+    "A4 cable orbit and root shape ('2,3,2', 1)",
+    "closed companion at most two divisible cones per prime ('2,3,2', 1)",
+    "both sectors have identity companion fibre ('2,3,2', 2)",
+    "companion is one planar piece ('2,3,2', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('2,3,2', 2)",
+    "A4 cable orbit and root shape ('2,3,2', 2)",
+    "closed companion at most two divisible cones per prime ('2,3,2', 2)",
+    "both sectors have identity companion fibre ('2,3,8', 1)",
+    "companion is one planar piece ('2,3,8', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('2,3,8', 1)",
+    "A4 cable orbit and root shape ('2,3,8', 1)",
+    "closed companion at most two divisible cones per prime ('2,3,8', 1)",
+    "both sectors have identity companion fibre ('2,3,8', 2)",
+    "companion is one planar piece ('2,3,8', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('2,3,8', 2)",
+    "A4 cable orbit and root shape ('2,3,8', 2)",
+    "closed companion at most two divisible cones per prime ('2,3,8', 2)",
+    "both sectors have identity companion fibre ('2,3,8', 3)",
+    "companion is one planar piece ('2,3,8', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('2,3,8', 3)",
+    "A4 cable orbit and root shape ('2,3,8', 3)",
+    "closed companion at most two divisible cones per prime ('2,3,8', 3)",
+    "both sectors have identity companion fibre ('2,9,2', 0)",
+    "companion is one planar piece ('2,9,2', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('2,9,2', 0)",
+    "A4 cable orbit and root shape ('2,9,2', 0)",
+    "closed companion at most two divisible cones per prime ('2,9,2', 0)",
+    "both sectors have identity companion fibre ('2,9,2', 1)",
+    "companion is one planar piece ('2,9,2', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('2,9,2', 1)",
+    "A4 cable orbit and root shape ('2,9,2', 1)",
+    "closed companion at most two divisible cones per prime ('2,9,2', 1)",
+    "both sectors have identity companion fibre ('2,9,2', 2)",
+    "companion is one planar piece ('2,9,2', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('2,9,2', 2)",
+    "A4 cable orbit and root shape ('2,9,2', 2)",
+    "closed companion at most two divisible cones per prime ('2,9,2', 2)",
+    "both sectors have identity companion fibre ('2,9,8', 1)",
+    "companion is one planar piece ('2,9,8', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('2,9,8', 1)",
+    "A4 cable orbit and root shape ('2,9,8', 1)",
+    "closed companion at most two divisible cones per prime ('2,9,8', 1)",
+    "both sectors have identity companion fibre ('2,9,8', 2)",
+    "companion is one planar piece ('2,9,8', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('2,9,8', 2)",
+    "A4 cable orbit and root shape ('2,9,8', 2)",
+    "closed companion at most two divisible cones per prime ('2,9,8', 2)",
+    "both sectors have identity companion fibre ('2,9,8', 3)",
+    "companion is one planar piece ('2,9,8', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('2,9,8', 3)",
+    "A4 cable orbit and root shape ('2,9,8', 3)",
+    "closed companion at most two divisible cones per prime ('2,9,8', 3)",
+    "both sectors have identity companion fibre ('3,2,2', 0)",
+    "companion is one planar piece ('3,2,2', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('3,2,2', 0)",
+    "A4 cable orbit and root shape ('3,2,2', 0)",
+    "closed companion at most two divisible cones per prime ('3,2,2', 0)",
+    "both sectors have identity companion fibre ('3,2,2', 1)",
+    "companion is one planar piece ('3,2,2', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('3,2,2', 1)",
+    "A4 cable orbit and root shape ('3,2,2', 1)",
+    "closed companion at most two divisible cones per prime ('3,2,2', 1)",
+    "both sectors have identity companion fibre ('3,2,2', 2)",
+    "companion is one planar piece ('3,2,2', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('3,2,2', 2)",
+    "A4 cable orbit and root shape ('3,2,2', 2)",
+    "closed companion at most two divisible cones per prime ('3,2,2', 2)",
+    "both sectors have identity companion fibre ('3,2,8', 1)",
+    "companion is one planar piece ('3,2,8', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('3,2,8', 1)",
+    "A4 cable orbit and root shape ('3,2,8', 1)",
+    "closed companion at most two divisible cones per prime ('3,2,8', 1)",
+    "both sectors have identity companion fibre ('3,2,8', 2)",
+    "companion is one planar piece ('3,2,8', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('3,2,8', 2)",
+    "A4 cable orbit and root shape ('3,2,8', 2)",
+    "closed companion at most two divisible cones per prime ('3,2,8', 2)",
+    "both sectors have identity companion fibre ('3,2,8', 3)",
+    "companion is one planar piece ('3,2,8', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('3,2,8', 3)",
+    "A4 cable orbit and root shape ('3,2,8', 3)",
+    "closed companion at most two divisible cones per prime ('3,2,8', 3)",
+    "both sectors have identity companion fibre ('3,4,1', 0)",
+    "companion is one planar piece ('3,4,1', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,4,1', 0)",
+    "C2 cable orbit and identity root shape ('3,4,1', 0)",
+    "closed companion at most two divisible cones per prime ('3,4,1', 0)",
+    "both sectors have identity companion fibre ('3,4,3', 2)",
+    "companion is one planar piece ('3,4,3', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,4,3', 2)",
+    "C2 cable orbit and identity root shape ('3,4,3', 2)",
+    "closed companion at most two divisible cones per prime ('3,4,3', 2)",
+    "both sectors have identity companion fibre ('3,4,4', 1)",
+    "companion is one planar piece ('3,4,4', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('3,4,4', 1)",
+    "A4 cable orbit and root shape ('3,4,4', 1)",
+    "closed companion at most two divisible cones per prime ('3,4,4', 1)",
+    "both sectors have identity companion fibre ('3,4,4', 2)",
+    "companion is one planar piece ('3,4,4', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('3,4,4', 2)",
+    "A4 cable orbit and root shape ('3,4,4', 2)",
+    "closed companion at most two divisible cones per prime ('3,4,4', 2)",
+    "both sectors have identity companion fibre ('3,4,4', 3)",
+    "companion is one planar piece ('3,4,4', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('3,4,4', 3)",
+    "A4 cable orbit and root shape ('3,4,4', 3)",
+    "closed companion at most two divisible cones per prime ('3,4,4', 3)",
+    "both sectors have identity companion fibre ('3,4,5', 0)",
+    "companion is one planar piece ('3,4,5', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,4,5', 0)",
+    "C2 cable orbit and identity root shape ('3,4,5', 0)",
+    "closed companion at most two divisible cones per prime ('3,4,5', 0)",
+    "both sectors have identity companion fibre ('3,4,7', 0)",
+    "companion is one planar piece ('3,4,7', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,4,7', 0)",
+    "C2 cable orbit and identity root shape ('3,4,7', 0)",
+    "closed companion at most two divisible cones per prime ('3,4,7', 0)",
+    "both sectors have identity companion fibre ('3,4,9', 2)",
+    "companion is one planar piece ('3,4,9', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,4,9', 2)",
+    "C2 cable orbit and identity root shape ('3,4,9', 2)",
+    "closed companion at most two divisible cones per prime ('3,4,9', 2)",
+    "both sectors have identity companion fibre ('3,4,10', 0)",
+    "companion is one planar piece ('3,4,10', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('3,4,10', 0)",
+    "A4 cable orbit and root shape ('3,4,10', 0)",
+    "closed companion at most two divisible cones per prime ('3,4,10', 0)",
+    "both sectors have identity companion fibre ('3,4,10', 1)",
+    "companion is one planar piece ('3,4,10', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('3,4,10', 1)",
+    "A4 cable orbit and root shape ('3,4,10', 1)",
+    "closed companion at most two divisible cones per prime ('3,4,10', 1)",
+    "both sectors have identity companion fibre ('3,4,10', 2)",
+    "companion is one planar piece ('3,4,10', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('3,4,10', 2)",
+    "A4 cable orbit and root shape ('3,4,10', 2)",
+    "closed companion at most two divisible cones per prime ('3,4,10', 2)",
+    "both sectors have identity companion fibre ('3,4,11', 0)",
+    "companion is one planar piece ('3,4,11', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,4,11', 0)",
+    "C2 cable orbit and identity root shape ('3,4,11', 0)",
+    "closed companion at most two divisible cones per prime ('3,4,11', 0)",
+    "both sectors have identity companion fibre ('3,8,1', 0)",
+    "companion is one planar piece ('3,8,1', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,8,1', 0)",
+    "C2 cable orbit and identity root shape ('3,8,1', 0)",
+    "closed companion at most two divisible cones per prime ('3,8,1', 0)",
+    "both sectors have identity companion fibre ('3,8,2', 0)",
+    "companion is one planar piece ('3,8,2', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('3,8,2', 0)",
+    "A4 cable orbit and root shape ('3,8,2', 0)",
+    "closed companion at most two divisible cones per prime ('3,8,2', 0)",
+    "both sectors have identity companion fibre ('3,8,2', 1)",
+    "companion is one planar piece ('3,8,2', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('3,8,2', 1)",
+    "A4 cable orbit and root shape ('3,8,2', 1)",
+    "closed companion at most two divisible cones per prime ('3,8,2', 1)",
+    "both sectors have identity companion fibre ('3,8,2', 2)",
+    "companion is one planar piece ('3,8,2', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('3,8,2', 2)",
+    "A4 cable orbit and root shape ('3,8,2', 2)",
+    "closed companion at most two divisible cones per prime ('3,8,2', 2)",
+    "both sectors have identity companion fibre ('3,8,3', 2)",
+    "companion is one planar piece ('3,8,3', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,8,3', 2)",
+    "C2 cable orbit and identity root shape ('3,8,3', 2)",
+    "closed companion at most two divisible cones per prime ('3,8,3', 2)",
+    "both sectors have identity companion fibre ('3,8,5', 0)",
+    "companion is one planar piece ('3,8,5', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,8,5', 0)",
+    "C2 cable orbit and identity root shape ('3,8,5', 0)",
+    "closed companion at most two divisible cones per prime ('3,8,5', 0)",
+    "both sectors have identity companion fibre ('3,8,7', 0)",
+    "companion is one planar piece ('3,8,7', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,8,7', 0)",
+    "C2 cable orbit and identity root shape ('3,8,7', 0)",
+    "closed companion at most two divisible cones per prime ('3,8,7', 0)",
+    "both sectors have identity companion fibre ('3,8,8', 1)",
+    "companion is one planar piece ('3,8,8', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('3,8,8', 1)",
+    "A4 cable orbit and root shape ('3,8,8', 1)",
+    "closed companion at most two divisible cones per prime ('3,8,8', 1)",
+    "both sectors have identity companion fibre ('3,8,8', 2)",
+    "companion is one planar piece ('3,8,8', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('3,8,8', 2)",
+    "A4 cable orbit and root shape ('3,8,8', 2)",
+    "closed companion at most two divisible cones per prime ('3,8,8', 2)",
+    "both sectors have identity companion fibre ('3,8,8', 3)",
+    "companion is one planar piece ('3,8,8', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('3,8,8', 3)",
+    "A4 cable orbit and root shape ('3,8,8', 3)",
+    "closed companion at most two divisible cones per prime ('3,8,8', 3)",
+    "both sectors have identity companion fibre ('3,8,9', 2)",
+    "companion is one planar piece ('3,8,9', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,8,9', 2)",
+    "C2 cable orbit and identity root shape ('3,8,9', 2)",
+    "closed companion at most two divisible cones per prime ('3,8,9', 2)",
+    "both sectors have identity companion fibre ('3,8,11', 0)",
+    "companion is one planar piece ('3,8,11', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('3,8,11', 0)",
+    "C2 cable orbit and identity root shape ('3,8,11', 0)",
+    "closed companion at most two divisible cones per prime ('3,8,11', 0)",
+    "both sectors have identity companion fibre ('3,10,4', 1)",
+    "companion is one planar piece ('3,10,4', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('3,10,4', 1)",
+    "A4 cable orbit and root shape ('3,10,4', 1)",
+    "closed companion at most two divisible cones per prime ('3,10,4', 1)",
+    "both sectors have identity companion fibre ('3,10,4', 2)",
+    "companion is one planar piece ('3,10,4', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('3,10,4', 2)",
+    "A4 cable orbit and root shape ('3,10,4', 2)",
+    "closed companion at most two divisible cones per prime ('3,10,4', 2)",
+    "both sectors have identity companion fibre ('3,10,4', 3)",
+    "companion is one planar piece ('3,10,4', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('3,10,4', 3)",
+    "A4 cable orbit and root shape ('3,10,4', 3)",
+    "closed companion at most two divisible cones per prime ('3,10,4', 3)",
+    "both sectors have identity companion fibre ('3,10,10', 0)",
+    "companion is one planar piece ('3,10,10', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('3,10,10', 0)",
+    "A4 cable orbit and root shape ('3,10,10', 0)",
+    "closed companion at most two divisible cones per prime ('3,10,10', 0)",
+    "both sectors have identity companion fibre ('3,10,10', 1)",
+    "companion is one planar piece ('3,10,10', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('3,10,10', 1)",
+    "A4 cable orbit and root shape ('3,10,10', 1)",
+    "closed companion at most two divisible cones per prime ('3,10,10', 1)",
+    "both sectors have identity companion fibre ('3,10,10', 2)",
+    "companion is one planar piece ('3,10,10', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('3,10,10', 2)",
+    "A4 cable orbit and root shape ('3,10,10', 2)",
+    "closed companion at most two divisible cones per prime ('3,10,10', 2)",
+    "both sectors have identity companion fibre ('4,3,1', 0)",
+    "companion is one planar piece ('4,3,1', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,3,1', 0)",
+    "C2 cable orbit and identity root shape ('4,3,1', 0)",
+    "closed companion at most two divisible cones per prime ('4,3,1', 0)",
+    "both sectors have identity companion fibre ('4,3,3', 2)",
+    "companion is one planar piece ('4,3,3', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,3,3', 2)",
+    "C2 cable orbit and identity root shape ('4,3,3', 2)",
+    "closed companion at most two divisible cones per prime ('4,3,3', 2)",
+    "both sectors have identity companion fibre ('4,3,4', 1)",
+    "companion is one planar piece ('4,3,4', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('4,3,4', 1)",
+    "A4 cable orbit and root shape ('4,3,4', 1)",
+    "closed companion at most two divisible cones per prime ('4,3,4', 1)",
+    "both sectors have identity companion fibre ('4,3,4', 2)",
+    "companion is one planar piece ('4,3,4', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('4,3,4', 2)",
+    "A4 cable orbit and root shape ('4,3,4', 2)",
+    "closed companion at most two divisible cones per prime ('4,3,4', 2)",
+    "both sectors have identity companion fibre ('4,3,4', 3)",
+    "companion is one planar piece ('4,3,4', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('4,3,4', 3)",
+    "A4 cable orbit and root shape ('4,3,4', 3)",
+    "closed companion at most two divisible cones per prime ('4,3,4', 3)",
+    "both sectors have identity companion fibre ('4,3,5', 0)",
+    "companion is one planar piece ('4,3,5', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,3,5', 0)",
+    "C2 cable orbit and identity root shape ('4,3,5', 0)",
+    "closed companion at most two divisible cones per prime ('4,3,5', 0)",
+    "both sectors have identity companion fibre ('4,3,7', 0)",
+    "companion is one planar piece ('4,3,7', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,3,7', 0)",
+    "C2 cable orbit and identity root shape ('4,3,7', 0)",
+    "closed companion at most two divisible cones per prime ('4,3,7', 0)",
+    "both sectors have identity companion fibre ('4,3,9', 2)",
+    "companion is one planar piece ('4,3,9', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,3,9', 2)",
+    "C2 cable orbit and identity root shape ('4,3,9', 2)",
+    "closed companion at most two divisible cones per prime ('4,3,9', 2)",
+    "both sectors have identity companion fibre ('4,3,10', 0)",
+    "companion is one planar piece ('4,3,10', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('4,3,10', 0)",
+    "A4 cable orbit and root shape ('4,3,10', 0)",
+    "closed companion at most two divisible cones per prime ('4,3,10', 0)",
+    "both sectors have identity companion fibre ('4,3,10', 1)",
+    "companion is one planar piece ('4,3,10', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('4,3,10', 1)",
+    "A4 cable orbit and root shape ('4,3,10', 1)",
+    "closed companion at most two divisible cones per prime ('4,3,10', 1)",
+    "both sectors have identity companion fibre ('4,3,10', 2)",
+    "companion is one planar piece ('4,3,10', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('4,3,10', 2)",
+    "A4 cable orbit and root shape ('4,3,10', 2)",
+    "closed companion at most two divisible cones per prime ('4,3,10', 2)",
+    "both sectors have identity companion fibre ('4,3,11', 0)",
+    "companion is one planar piece ('4,3,11', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,3,11', 0)",
+    "C2 cable orbit and identity root shape ('4,3,11', 0)",
+    "closed companion at most two divisible cones per prime ('4,3,11', 0)",
+    "both sectors have identity companion fibre ('4,9,1', 0)",
+    "companion is one planar piece ('4,9,1', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,9,1', 0)",
+    "C2 cable orbit and identity root shape ('4,9,1', 0)",
+    "closed companion at most two divisible cones per prime ('4,9,1', 0)",
+    "both sectors have identity companion fibre ('4,9,3', 2)",
+    "companion is one planar piece ('4,9,3', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,9,3', 2)",
+    "C2 cable orbit and identity root shape ('4,9,3', 2)",
+    "closed companion at most two divisible cones per prime ('4,9,3', 2)",
+    "both sectors have identity companion fibre ('4,9,4', 1)",
+    "companion is one planar piece ('4,9,4', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('4,9,4', 1)",
+    "A4 cable orbit and root shape ('4,9,4', 1)",
+    "closed companion at most two divisible cones per prime ('4,9,4', 1)",
+    "both sectors have identity companion fibre ('4,9,4', 2)",
+    "companion is one planar piece ('4,9,4', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('4,9,4', 2)",
+    "A4 cable orbit and root shape ('4,9,4', 2)",
+    "closed companion at most two divisible cones per prime ('4,9,4', 2)",
+    "both sectors have identity companion fibre ('4,9,4', 3)",
+    "companion is one planar piece ('4,9,4', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('4,9,4', 3)",
+    "A4 cable orbit and root shape ('4,9,4', 3)",
+    "closed companion at most two divisible cones per prime ('4,9,4', 3)",
+    "both sectors have identity companion fibre ('4,9,5', 0)",
+    "companion is one planar piece ('4,9,5', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,9,5', 0)",
+    "C2 cable orbit and identity root shape ('4,9,5', 0)",
+    "closed companion at most two divisible cones per prime ('4,9,5', 0)",
+    "both sectors have identity companion fibre ('4,9,7', 0)",
+    "companion is one planar piece ('4,9,7', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,9,7', 0)",
+    "C2 cable orbit and identity root shape ('4,9,7', 0)",
+    "closed companion at most two divisible cones per prime ('4,9,7', 0)",
+    "both sectors have identity companion fibre ('4,9,9', 2)",
+    "companion is one planar piece ('4,9,9', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,9,9', 2)",
+    "C2 cable orbit and identity root shape ('4,9,9', 2)",
+    "closed companion at most two divisible cones per prime ('4,9,9', 2)",
+    "both sectors have identity companion fibre ('4,9,10', 0)",
+    "companion is one planar piece ('4,9,10', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('4,9,10', 0)",
+    "A4 cable orbit and root shape ('4,9,10', 0)",
+    "closed companion at most two divisible cones per prime ('4,9,10', 0)",
+    "both sectors have identity companion fibre ('4,9,10', 1)",
+    "companion is one planar piece ('4,9,10', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('4,9,10', 1)",
+    "A4 cable orbit and root shape ('4,9,10', 1)",
+    "closed companion at most two divisible cones per prime ('4,9,10', 1)",
+    "both sectors have identity companion fibre ('4,9,10', 2)",
+    "companion is one planar piece ('4,9,10', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('4,9,10', 2)",
+    "A4 cable orbit and root shape ('4,9,10', 2)",
+    "closed companion at most two divisible cones per prime ('4,9,10', 2)",
+    "both sectors have identity companion fibre ('4,9,11', 0)",
+    "companion is one planar piece ('4,9,11', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('4,9,11', 0)",
+    "C2 cable orbit and identity root shape ('4,9,11', 0)",
+    "closed companion at most two divisible cones per prime ('4,9,11', 0)",
+    "both sectors have identity companion fibre ('8,3,1', 0)",
+    "companion is one planar piece ('8,3,1', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,3,1', 0)",
+    "C2 cable orbit and identity root shape ('8,3,1', 0)",
+    "closed companion at most two divisible cones per prime ('8,3,1', 0)",
+    "both sectors have identity companion fibre ('8,3,2', 0)",
+    "companion is one planar piece ('8,3,2', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('8,3,2', 0)",
+    "A4 cable orbit and root shape ('8,3,2', 0)",
+    "closed companion at most two divisible cones per prime ('8,3,2', 0)",
+    "both sectors have identity companion fibre ('8,3,2', 1)",
+    "companion is one planar piece ('8,3,2', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('8,3,2', 1)",
+    "A4 cable orbit and root shape ('8,3,2', 1)",
+    "closed companion at most two divisible cones per prime ('8,3,2', 1)",
+    "both sectors have identity companion fibre ('8,3,2', 2)",
+    "companion is one planar piece ('8,3,2', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('8,3,2', 2)",
+    "A4 cable orbit and root shape ('8,3,2', 2)",
+    "closed companion at most two divisible cones per prime ('8,3,2', 2)",
+    "both sectors have identity companion fibre ('8,3,3', 2)",
+    "companion is one planar piece ('8,3,3', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,3,3', 2)",
+    "C2 cable orbit and identity root shape ('8,3,3', 2)",
+    "closed companion at most two divisible cones per prime ('8,3,3', 2)",
+    "both sectors have identity companion fibre ('8,3,5', 0)",
+    "companion is one planar piece ('8,3,5', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,3,5', 0)",
+    "C2 cable orbit and identity root shape ('8,3,5', 0)",
+    "closed companion at most two divisible cones per prime ('8,3,5', 0)",
+    "both sectors have identity companion fibre ('8,3,7', 0)",
+    "companion is one planar piece ('8,3,7', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,3,7', 0)",
+    "C2 cable orbit and identity root shape ('8,3,7', 0)",
+    "closed companion at most two divisible cones per prime ('8,3,7', 0)",
+    "both sectors have identity companion fibre ('8,3,8', 1)",
+    "companion is one planar piece ('8,3,8', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('8,3,8', 1)",
+    "A4 cable orbit and root shape ('8,3,8', 1)",
+    "closed companion at most two divisible cones per prime ('8,3,8', 1)",
+    "both sectors have identity companion fibre ('8,3,8', 2)",
+    "companion is one planar piece ('8,3,8', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('8,3,8', 2)",
+    "A4 cable orbit and root shape ('8,3,8', 2)",
+    "closed companion at most two divisible cones per prime ('8,3,8', 2)",
+    "both sectors have identity companion fibre ('8,3,8', 3)",
+    "companion is one planar piece ('8,3,8', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('8,3,8', 3)",
+    "A4 cable orbit and root shape ('8,3,8', 3)",
+    "closed companion at most two divisible cones per prime ('8,3,8', 3)",
+    "both sectors have identity companion fibre ('8,3,9', 2)",
+    "companion is one planar piece ('8,3,9', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,3,9', 2)",
+    "C2 cable orbit and identity root shape ('8,3,9', 2)",
+    "closed companion at most two divisible cones per prime ('8,3,9', 2)",
+    "both sectors have identity companion fibre ('8,3,11', 0)",
+    "companion is one planar piece ('8,3,11', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,3,11', 0)",
+    "C2 cable orbit and identity root shape ('8,3,11', 0)",
+    "closed companion at most two divisible cones per prime ('8,3,11', 0)",
+    "both sectors have identity companion fibre ('8,9,1', 0)",
+    "companion is one planar piece ('8,9,1', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,9,1', 0)",
+    "C2 cable orbit and identity root shape ('8,9,1', 0)",
+    "closed companion at most two divisible cones per prime ('8,9,1', 0)",
+    "both sectors have identity companion fibre ('8,9,2', 0)",
+    "companion is one planar piece ('8,9,2', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('8,9,2', 0)",
+    "A4 cable orbit and root shape ('8,9,2', 0)",
+    "closed companion at most two divisible cones per prime ('8,9,2', 0)",
+    "both sectors have identity companion fibre ('8,9,2', 1)",
+    "companion is one planar piece ('8,9,2', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('8,9,2', 1)",
+    "A4 cable orbit and root shape ('8,9,2', 1)",
+    "closed companion at most two divisible cones per prime ('8,9,2', 1)",
+    "both sectors have identity companion fibre ('8,9,2', 2)",
+    "companion is one planar piece ('8,9,2', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('8,9,2', 2)",
+    "A4 cable orbit and root shape ('8,9,2', 2)",
+    "closed companion at most two divisible cones per prime ('8,9,2', 2)",
+    "both sectors have identity companion fibre ('8,9,3', 2)",
+    "companion is one planar piece ('8,9,3', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,9,3', 2)",
+    "C2 cable orbit and identity root shape ('8,9,3', 2)",
+    "closed companion at most two divisible cones per prime ('8,9,3', 2)",
+    "both sectors have identity companion fibre ('8,9,5', 0)",
+    "companion is one planar piece ('8,9,5', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,9,5', 0)",
+    "C2 cable orbit and identity root shape ('8,9,5', 0)",
+    "closed companion at most two divisible cones per prime ('8,9,5', 0)",
+    "both sectors have identity companion fibre ('8,9,7', 0)",
+    "companion is one planar piece ('8,9,7', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,9,7', 0)",
+    "C2 cable orbit and identity root shape ('8,9,7', 0)",
+    "closed companion at most two divisible cones per prime ('8,9,7', 0)",
+    "both sectors have identity companion fibre ('8,9,8', 1)",
+    "companion is one planar piece ('8,9,8', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('8,9,8', 1)",
+    "A4 cable orbit and root shape ('8,9,8', 1)",
+    "closed companion at most two divisible cones per prime ('8,9,8', 1)",
+    "both sectors have identity companion fibre ('8,9,8', 2)",
+    "companion is one planar piece ('8,9,8', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('8,9,8', 2)",
+    "A4 cable orbit and root shape ('8,9,8', 2)",
+    "closed companion at most two divisible cones per prime ('8,9,8', 2)",
+    "both sectors have identity companion fibre ('8,9,8', 3)",
+    "companion is one planar piece ('8,9,8', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('8,9,8', 3)",
+    "A4 cable orbit and root shape ('8,9,8', 3)",
+    "closed companion at most two divisible cones per prime ('8,9,8', 3)",
+    "both sectors have identity companion fibre ('8,9,9', 2)",
+    "companion is one planar piece ('8,9,9', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,9,9', 2)",
+    "C2 cable orbit and identity root shape ('8,9,9', 2)",
+    "closed companion at most two divisible cones per prime ('8,9,9', 2)",
+    "both sectors have identity companion fibre ('8,9,11', 0)",
+    "companion is one planar piece ('8,9,11', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('8,9,11', 0)",
+    "C2 cable orbit and identity root shape ('8,9,11', 0)",
+    "closed companion at most two divisible cones per prime ('8,9,11', 0)",
+    "both sectors have identity companion fibre ('9,2,2', 0)",
+    "companion is one planar piece ('9,2,2', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('9,2,2', 0)",
+    "A4 cable orbit and root shape ('9,2,2', 0)",
+    "closed companion at most two divisible cones per prime ('9,2,2', 0)",
+    "both sectors have identity companion fibre ('9,2,2', 1)",
+    "companion is one planar piece ('9,2,2', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('9,2,2', 1)",
+    "A4 cable orbit and root shape ('9,2,2', 1)",
+    "closed companion at most two divisible cones per prime ('9,2,2', 1)",
+    "both sectors have identity companion fibre ('9,2,2', 2)",
+    "companion is one planar piece ('9,2,2', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('9,2,2', 2)",
+    "A4 cable orbit and root shape ('9,2,2', 2)",
+    "closed companion at most two divisible cones per prime ('9,2,2', 2)",
+    "both sectors have identity companion fibre ('9,2,8', 1)",
+    "companion is one planar piece ('9,2,8', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('9,2,8', 1)",
+    "A4 cable orbit and root shape ('9,2,8', 1)",
+    "closed companion at most two divisible cones per prime ('9,2,8', 1)",
+    "both sectors have identity companion fibre ('9,2,8', 2)",
+    "companion is one planar piece ('9,2,8', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('9,2,8', 2)",
+    "A4 cable orbit and root shape ('9,2,8', 2)",
+    "closed companion at most two divisible cones per prime ('9,2,8', 2)",
+    "both sectors have identity companion fibre ('9,2,8', 3)",
+    "companion is one planar piece ('9,2,8', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('9,2,8', 3)",
+    "A4 cable orbit and root shape ('9,2,8', 3)",
+    "closed companion at most two divisible cones per prime ('9,2,8', 3)",
+    "both sectors have identity companion fibre ('9,4,1', 0)",
+    "companion is one planar piece ('9,4,1', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,4,1', 0)",
+    "C2 cable orbit and identity root shape ('9,4,1', 0)",
+    "closed companion at most two divisible cones per prime ('9,4,1', 0)",
+    "both sectors have identity companion fibre ('9,4,3', 2)",
+    "companion is one planar piece ('9,4,3', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,4,3', 2)",
+    "C2 cable orbit and identity root shape ('9,4,3', 2)",
+    "closed companion at most two divisible cones per prime ('9,4,3', 2)",
+    "both sectors have identity companion fibre ('9,4,4', 1)",
+    "companion is one planar piece ('9,4,4', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('9,4,4', 1)",
+    "A4 cable orbit and root shape ('9,4,4', 1)",
+    "closed companion at most two divisible cones per prime ('9,4,4', 1)",
+    "both sectors have identity companion fibre ('9,4,4', 2)",
+    "companion is one planar piece ('9,4,4', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('9,4,4', 2)",
+    "A4 cable orbit and root shape ('9,4,4', 2)",
+    "closed companion at most two divisible cones per prime ('9,4,4', 2)",
+    "both sectors have identity companion fibre ('9,4,4', 3)",
+    "companion is one planar piece ('9,4,4', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('9,4,4', 3)",
+    "A4 cable orbit and root shape ('9,4,4', 3)",
+    "closed companion at most two divisible cones per prime ('9,4,4', 3)",
+    "both sectors have identity companion fibre ('9,4,5', 0)",
+    "companion is one planar piece ('9,4,5', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,4,5', 0)",
+    "C2 cable orbit and identity root shape ('9,4,5', 0)",
+    "closed companion at most two divisible cones per prime ('9,4,5', 0)",
+    "both sectors have identity companion fibre ('9,4,7', 0)",
+    "companion is one planar piece ('9,4,7', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,4,7', 0)",
+    "C2 cable orbit and identity root shape ('9,4,7', 0)",
+    "closed companion at most two divisible cones per prime ('9,4,7', 0)",
+    "both sectors have identity companion fibre ('9,4,9', 2)",
+    "companion is one planar piece ('9,4,9', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,4,9', 2)",
+    "C2 cable orbit and identity root shape ('9,4,9', 2)",
+    "closed companion at most two divisible cones per prime ('9,4,9', 2)",
+    "both sectors have identity companion fibre ('9,4,10', 0)",
+    "companion is one planar piece ('9,4,10', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('9,4,10', 0)",
+    "A4 cable orbit and root shape ('9,4,10', 0)",
+    "closed companion at most two divisible cones per prime ('9,4,10', 0)",
+    "both sectors have identity companion fibre ('9,4,10', 1)",
+    "companion is one planar piece ('9,4,10', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('9,4,10', 1)",
+    "A4 cable orbit and root shape ('9,4,10', 1)",
+    "closed companion at most two divisible cones per prime ('9,4,10', 1)",
+    "both sectors have identity companion fibre ('9,4,10', 2)",
+    "companion is one planar piece ('9,4,10', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('9,4,10', 2)",
+    "A4 cable orbit and root shape ('9,4,10', 2)",
+    "closed companion at most two divisible cones per prime ('9,4,10', 2)",
+    "both sectors have identity companion fibre ('9,4,11', 0)",
+    "companion is one planar piece ('9,4,11', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,4,11', 0)",
+    "C2 cable orbit and identity root shape ('9,4,11', 0)",
+    "closed companion at most two divisible cones per prime ('9,4,11', 0)",
+    "both sectors have identity companion fibre ('9,8,1', 0)",
+    "companion is one planar piece ('9,8,1', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,8,1', 0)",
+    "C2 cable orbit and identity root shape ('9,8,1', 0)",
+    "closed companion at most two divisible cones per prime ('9,8,1', 0)",
+    "both sectors have identity companion fibre ('9,8,2', 0)",
+    "companion is one planar piece ('9,8,2', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('9,8,2', 0)",
+    "A4 cable orbit and root shape ('9,8,2', 0)",
+    "closed companion at most two divisible cones per prime ('9,8,2', 0)",
+    "both sectors have identity companion fibre ('9,8,2', 1)",
+    "companion is one planar piece ('9,8,2', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('9,8,2', 1)",
+    "A4 cable orbit and root shape ('9,8,2', 1)",
+    "closed companion at most two divisible cones per prime ('9,8,2', 1)",
+    "both sectors have identity companion fibre ('9,8,2', 2)",
+    "companion is one planar piece ('9,8,2', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('9,8,2', 2)",
+    "A4 cable orbit and root shape ('9,8,2', 2)",
+    "closed companion at most two divisible cones per prime ('9,8,2', 2)",
+    "both sectors have identity companion fibre ('9,8,3', 2)",
+    "companion is one planar piece ('9,8,3', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,8,3', 2)",
+    "C2 cable orbit and identity root shape ('9,8,3', 2)",
+    "closed companion at most two divisible cones per prime ('9,8,3', 2)",
+    "both sectors have identity companion fibre ('9,8,5', 0)",
+    "companion is one planar piece ('9,8,5', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,8,5', 0)",
+    "C2 cable orbit and identity root shape ('9,8,5', 0)",
+    "closed companion at most two divisible cones per prime ('9,8,5', 0)",
+    "both sectors have identity companion fibre ('9,8,7', 0)",
+    "companion is one planar piece ('9,8,7', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,8,7', 0)",
+    "C2 cable orbit and identity root shape ('9,8,7', 0)",
+    "closed companion at most two divisible cones per prime ('9,8,7', 0)",
+    "both sectors have identity companion fibre ('9,8,8', 1)",
+    "companion is one planar piece ('9,8,8', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('9,8,8', 1)",
+    "A4 cable orbit and root shape ('9,8,8', 1)",
+    "closed companion at most two divisible cones per prime ('9,8,8', 1)",
+    "both sectors have identity companion fibre ('9,8,8', 2)",
+    "companion is one planar piece ('9,8,8', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('9,8,8', 2)",
+    "A4 cable orbit and root shape ('9,8,8', 2)",
+    "closed companion at most two divisible cones per prime ('9,8,8', 2)",
+    "both sectors have identity companion fibre ('9,8,8', 3)",
+    "companion is one planar piece ('9,8,8', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('9,8,8', 3)",
+    "A4 cable orbit and root shape ('9,8,8', 3)",
+    "closed companion at most two divisible cones per prime ('9,8,8', 3)",
+    "both sectors have identity companion fibre ('9,8,9', 2)",
+    "companion is one planar piece ('9,8,9', 2)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,8,9', 2)",
+    "C2 cable orbit and identity root shape ('9,8,9', 2)",
+    "closed companion at most two divisible cones per prime ('9,8,9', 2)",
+    "both sectors have identity companion fibre ('9,8,11', 0)",
+    "companion is one planar piece ('9,8,11', 0)",
+    "S4 C2 cone lcm fibre order and closed H1 order ('9,8,11', 0)",
+    "C2 cable orbit and identity root shape ('9,8,11', 0)",
+    "closed companion at most two divisible cones per prime ('9,8,11', 0)",
+    "both sectors have identity companion fibre ('9,10,4', 1)",
+    "companion is one planar piece ('9,10,4', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('9,10,4', 1)",
+    "A4 cable orbit and root shape ('9,10,4', 1)",
+    "closed companion at most two divisible cones per prime ('9,10,4', 1)",
+    "both sectors have identity companion fibre ('9,10,4', 2)",
+    "companion is one planar piece ('9,10,4', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('9,10,4', 2)",
+    "A4 cable orbit and root shape ('9,10,4', 2)",
+    "closed companion at most two divisible cones per prime ('9,10,4', 2)",
+    "both sectors have identity companion fibre ('9,10,4', 3)",
+    "companion is one planar piece ('9,10,4', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('9,10,4', 3)",
+    "A4 cable orbit and root shape ('9,10,4', 3)",
+    "closed companion at most two divisible cones per prime ('9,10,4', 3)",
+    "both sectors have identity companion fibre ('9,10,10', 0)",
+    "companion is one planar piece ('9,10,10', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('9,10,10', 0)",
+    "A4 cable orbit and root shape ('9,10,10', 0)",
+    "closed companion at most two divisible cones per prime ('9,10,10', 0)",
+    "both sectors have identity companion fibre ('9,10,10', 1)",
+    "companion is one planar piece ('9,10,10', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('9,10,10', 1)",
+    "A4 cable orbit and root shape ('9,10,10', 1)",
+    "closed companion at most two divisible cones per prime ('9,10,10', 1)",
+    "both sectors have identity companion fibre ('9,10,10', 2)",
+    "companion is one planar piece ('9,10,10', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('9,10,10', 2)",
+    "A4 cable orbit and root shape ('9,10,10', 2)",
+    "closed companion at most two divisible cones per prime ('9,10,10', 2)",
+    "both sectors have identity companion fibre ('10,3,4', 1)",
+    "companion is one planar piece ('10,3,4', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('10,3,4', 1)",
+    "A4 cable orbit and root shape ('10,3,4', 1)",
+    "closed companion at most two divisible cones per prime ('10,3,4', 1)",
+    "both sectors have identity companion fibre ('10,3,4', 2)",
+    "companion is one planar piece ('10,3,4', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('10,3,4', 2)",
+    "A4 cable orbit and root shape ('10,3,4', 2)",
+    "closed companion at most two divisible cones per prime ('10,3,4', 2)",
+    "both sectors have identity companion fibre ('10,3,4', 3)",
+    "companion is one planar piece ('10,3,4', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('10,3,4', 3)",
+    "A4 cable orbit and root shape ('10,3,4', 3)",
+    "closed companion at most two divisible cones per prime ('10,3,4', 3)",
+    "both sectors have identity companion fibre ('10,3,10', 0)",
+    "companion is one planar piece ('10,3,10', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('10,3,10', 0)",
+    "A4 cable orbit and root shape ('10,3,10', 0)",
+    "closed companion at most two divisible cones per prime ('10,3,10', 0)",
+    "both sectors have identity companion fibre ('10,3,10', 1)",
+    "companion is one planar piece ('10,3,10', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('10,3,10', 1)",
+    "A4 cable orbit and root shape ('10,3,10', 1)",
+    "closed companion at most two divisible cones per prime ('10,3,10', 1)",
+    "both sectors have identity companion fibre ('10,3,10', 2)",
+    "companion is one planar piece ('10,3,10', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('10,3,10', 2)",
+    "A4 cable orbit and root shape ('10,3,10', 2)",
+    "closed companion at most two divisible cones per prime ('10,3,10', 2)",
+    "both sectors have identity companion fibre ('10,9,4', 1)",
+    "companion is one planar piece ('10,9,4', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('10,9,4', 1)",
+    "A4 cable orbit and root shape ('10,9,4', 1)",
+    "closed companion at most two divisible cones per prime ('10,9,4', 1)",
+    "both sectors have identity companion fibre ('10,9,4', 2)",
+    "companion is one planar piece ('10,9,4', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('10,9,4', 2)",
+    "A4 cable orbit and root shape ('10,9,4', 2)",
+    "closed companion at most two divisible cones per prime ('10,9,4', 2)",
+    "both sectors have identity companion fibre ('10,9,4', 3)",
+    "companion is one planar piece ('10,9,4', 3)",
+    "A4 cone lcm fibre order and closed H1 order ('10,9,4', 3)",
+    "A4 cable orbit and root shape ('10,9,4', 3)",
+    "closed companion at most two divisible cones per prime ('10,9,4', 3)",
+    "both sectors have identity companion fibre ('10,9,10', 0)",
+    "companion is one planar piece ('10,9,10', 0)",
+    "A4 cone lcm fibre order and closed H1 order ('10,9,10', 0)",
+    "A4 cable orbit and root shape ('10,9,10', 0)",
+    "closed companion at most two divisible cones per prime ('10,9,10', 0)",
+    "both sectors have identity companion fibre ('10,9,10', 1)",
+    "companion is one planar piece ('10,9,10', 1)",
+    "A4 cone lcm fibre order and closed H1 order ('10,9,10', 1)",
+    "A4 cable orbit and root shape ('10,9,10', 1)",
+    "closed companion at most two divisible cones per prime ('10,9,10', 1)",
+    "both sectors have identity companion fibre ('10,9,10', 2)",
+    "companion is one planar piece ('10,9,10', 2)",
+    "A4 cone lcm fibre order and closed H1 order ('10,9,10', 2)",
+    "A4 cable orbit and root shape ('10,9,10', 2)",
+    "closed companion at most two divisible cones per prime ('10,9,10', 2)",
+    "all144 periodic representation types covered",
+    "actual unit coefficient in boundary word (2, 3, 8, (12, 6))",
+    "control passes prior determinant nine gate (2, 3, 8, (12, 6))",
+    "entire full ordinary satellite group and zero mark (2, 3, 8, (12, 6), 0)",
+    "independent spanning tree control (2, 3, 8, (12, 6))",
+    "entire full ordinary satellite group and zero mark (2, 3, 8, (12, 6), 1)",
+    "entire full ordinary satellite group and zero mark (2, 3, 8, (12, 6), 2)",
+    "actual unit coefficient in boundary word (2, 3, 26, (12, 6))",
+    "control passes prior determinant nine gate (2, 3, 26, (12, 6))",
+    "entire full ordinary satellite group and zero mark (2, 3, 26, (12, 6), 0)",
+    "independent spanning tree control (2, 3, 26, (12, 6))",
+    "entire full ordinary satellite group and zero mark (2, 3, 26, (12, 6), 1)",
+    "entire full ordinary satellite group and zero mark (2, 3, 26, (12, 6), 2)",
+    "actual unit coefficient in boundary word (4, 3, 16, (12, 6))",
+    "control passes prior determinant nine gate (4, 3, 16, (12, 6))",
+    "entire full ordinary satellite group and zero mark (4, 3, 16, (12, 6), 0)",
+    "independent spanning tree control (4, 3, 16, (12, 6))",
+    "entire full ordinary satellite group and zero mark (4, 3, 16, (12, 6), 1)",
+    "entire full ordinary satellite group and zero mark (4, 3, 16, (12, 6), 2)",
+    "actual unit coefficient in boundary word (8, 3, 20, (12, 6))",
+    "control passes prior determinant nine gate (8, 3, 20, (12, 6))",
+    "entire full ordinary satellite group and zero mark (8, 3, 20, (12, 6), 0)",
+    "independent spanning tree control (8, 3, 20, (12, 6))",
+    "entire full ordinary satellite group and zero mark (8, 3, 20, (12, 6), 1)",
+    "entire full ordinary satellite group and zero mark (8, 3, 20, (12, 6), 2)",
+    "actual unit coefficient in boundary word (10, 3, 10, (12, 6))",
+    "control passes prior determinant nine gate (10, 3, 10, (12, 6))",
+    "entire full ordinary satellite group and zero mark (10, 3, 10, (12, 6), 0)",
+    "independent spanning tree control (10, 3, 10, (12, 6))",
+    "entire full ordinary satellite group and zero mark (10, 3, 10, (12, 6), 1)",
+    "entire full ordinary satellite group and zero mark (10, 3, 10, (12, 6), 2)",
+    "actual unit coefficient in boundary word (2, 9, 32, (12, 6))",
+    "control passes prior determinant nine gate (2, 9, 32, (12, 6))",
+    "entire full ordinary satellite group and zero mark (2, 9, 32, (12, 6), 0)",
+    "independent spanning tree control (2, 9, 32, (12, 6))",
+    "entire full ordinary satellite group and zero mark (2, 9, 32, (12, 6), 1)",
+    "entire full ordinary satellite group and zero mark (2, 9, 32, (12, 6), 2)",
+    "actual unit coefficient in boundary word (4, 3, 3, (24, 2))",
+    "control passes prior determinant nine gate (4, 3, 3, (24, 2))",
+    "entire full ordinary satellite group and zero mark (4, 3, 3, (24, 2), 0)",
+    "independent spanning tree control (4, 3, 3, (24, 2))",
+    "actual unit coefficient in boundary word (4, 9, 3, (24, 2))",
+    "control passes prior determinant nine gate (4, 9, 3, (24, 2))",
+    "entire full ordinary satellite group and zero mark (4, 9, 3, (24, 2), 0)",
+    "independent spanning tree control (4, 9, 3, (24, 2))",
+    "actual unit coefficient in boundary word (8, 3, 9, (24, 2))",
+    "control passes prior determinant nine gate (8, 3, 9, (24, 2))",
+    "entire full ordinary satellite group and zero mark (8, 3, 9, (24, 2), 0)",
+    "independent spanning tree control (8, 3, 9, (24, 2))",
+    "actual unit coefficient in boundary word (4, 15, 9, (24, 2))",
+    "control passes prior determinant nine gate (4, 15, 9, (24, 2))",
+    "entire full ordinary satellite group and zero mark (4, 15, 9, (24, 2), 0)",
+    "independent spanning tree control (4, 15, 9, (24, 2))",
+    "actual unit coefficient in boundary word (16, 3, 3, (24, 2))",
+    "control passes prior determinant nine gate (16, 3, 3, (24, 2))",
+    "entire full ordinary satellite group and zero mark (16, 3, 3, (24, 2), 0)",
+    "independent spanning tree control (16, 3, 3, (24, 2))",
+    "old cone budget can pass a new full-group exclusion",
+    "entire trefoil new even family has r divisible4",
+    "entire trefoil new even family has target determinant nine",
+    "all seven trefoil classes exhausted",
+    "cyclic3 predecessor exclusion retained",
+    "two-boundary S3 countercontrol (3, 0)",
+    "two-boundary S3 countercontrol (3, 1)",
+    "two-boundary S3 countercontrol (15, 0)",
+    "two-boundary S3 countercontrol (15, 1)",
+    "S3 nonzero ramification mark prevents blanket closure"
+  ],
+  "general": {
+    "all_finite_cover_degrees": true,
+    "all_cabling_lengths_when_hypotheses_hold": true,
+    "closed_orientable_Seifert_base_required": true,
+    "nonzero_Euler_required": true,
+    "regular_fibre_exact_order": "abs(Euler*lcm(cone orders))",
+    "unit_transfer_two_cones_base_D_required": true,
+    "cone_u_divides_v_required": true,
+    "actual_boundary_basis_and_pushforward_required": true,
+    "unit_A_mod_u_required": true,
+    "integral_meridian_zero_proved": true,
+    "peripheral_and_marked_torsion_coordinates_zero": true,
+    "arbitrary_noncylclic_pieces_replaced": false,
+    "linking_form_splitting_asserted": false,
+    "two_remaining_boundary_tori_covered_by_unit_lemma": false
+  },
+  "quartic": {
+    "actual_primitive_binomial_two_stage_required": true,
+    "all_first_exponents_windings_source_orders_poles": true,
+    "all144_periodic_A4_S3_and_S4_C2_classes_covered": true,
+    "A4_S3_end_H1": "Z/(eo/3) plus Z/(r/2)",
+    "A4_S3_R_zero": true,
+    "A4_S3_common_entirely_excluded": true,
+    "A4_S3_necessary_gcd": "gcd(eo/3,r/2)=1",
+    "A4_S3_necessary_r_mod4": 2,
+    "S4_C2_end_H1": "Z/(o/3) plus Z/r",
+    "S4_C2_R_zero": true,
+    "S4_C2_common_entirely_excluded": true,
+    "remaining_common_sector": "S3/S3 only",
+    "S3_S3_common_entirely_excluded": false,
+    "trefoil_all_r8mod36_excluded_in_both_source_pencils": true,
+    "trefoil_remaining_even_winding_mod36": 26,
+    "passing_complementary_sectors_excluded": false
+  },
+  "Seifert_fibre_controls": [
+    {
+      "alpha": [
+        2,
+        3,
+        5
+      ],
+      "beta": [
+        1,
+        1,
+        1
+      ],
+      "epsilon": "-31/30",
+      "Lambda": 30,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          31
+        ]
+      },
+      "H_order": 31
+    },
+    {
+      "alpha": [
+        2,
+        2,
+        3
+      ],
+      "beta": [
+        1,
+        1,
+        1
+      ],
+      "epsilon": "-4/3",
+      "Lambda": 6,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          16
+        ]
+      },
+      "H_order": 8
+    },
+    {
+      "alpha": [
+        1
+      ],
+      "beta": [
+        1
+      ],
+      "epsilon": "-1",
+      "Lambda": 1,
+      "H1": {
+        "free": 0,
+        "torsion": []
+      },
+      "H_order": 1
+    },
+    {
+      "alpha": [
+        4,
+        4,
+        9
+      ],
+      "beta": [
+        1,
+        3,
+        1
+      ],
+      "epsilon": "-10/9",
+      "Lambda": 36,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          160
+        ]
+      },
+      "H_order": 40
+    },
+    {
+      "alpha": [
+        3,
+        3,
+        3
+      ],
+      "beta": [
+        1,
+        1,
+        1
+      ],
+      "epsilon": "-1",
+      "Lambda": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3,
+          9
+        ]
+      },
+      "H_order": 3
+    }
+  ],
+  "periodic_type_counts": {
+    "(12, 6)": 96,
+    "(24, 2)": 48
+  },
+  "full_satellite_controls": [
+    {
+      "e": 2,
+      "o": 3,
+      "r": 8,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 3,
+      "r": 8,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 3,
+      "r": 8,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 3,
+      "r": 26,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          26
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          26
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 3,
+      "r": 26,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          26
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          26
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 3,
+      "r": 26,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          26
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          26
+        ]
+      }
+    },
+    {
+      "e": 4,
+      "o": 3,
+      "r": 16,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "e": 4,
+      "o": 3,
+      "r": 16,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "e": 4,
+      "o": 3,
+      "r": 16,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "e": 8,
+      "o": 3,
+      "r": 20,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          40
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          40
+        ]
+      }
+    },
+    {
+      "e": 8,
+      "o": 3,
+      "r": 20,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          40
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          40
+        ]
+      }
+    },
+    {
+      "e": 8,
+      "o": 3,
+      "r": 20,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          40
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          40
+        ]
+      }
+    },
+    {
+      "e": 10,
+      "o": 3,
+      "r": 10,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5,
+          10
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "e": 10,
+      "o": 3,
+      "r": 10,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5,
+          10
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "e": 10,
+      "o": 3,
+      "r": 10,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5,
+          10
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 9,
+      "r": 32,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          48
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          48
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 9,
+      "r": 32,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          48
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          48
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 9,
+      "r": 32,
+      "images": [
+        12,
+        6
+      ],
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          48
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          48
+        ]
+      }
+    },
+    {
+      "e": 4,
+      "o": 3,
+      "r": 3,
+      "images": [
+        24,
+        2
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      }
+    },
+    {
+      "e": 4,
+      "o": 9,
+      "r": 3,
+      "images": [
+        24,
+        2
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3,
+          3
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "e": 8,
+      "o": 3,
+      "r": 9,
+      "images": [
+        24,
+        2
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          9
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          9
+        ]
+      }
+    },
+    {
+      "e": 4,
+      "o": 15,
+      "r": 9,
+      "images": [
+        24,
+        2
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          45
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          45
+        ]
+      }
+    },
+    {
+      "e": 16,
+      "o": 3,
+      "r": 3,
+      "images": [
+        24,
+        2
+      ],
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      }
+    }
+  ],
+  "S3_nonzero_mark_countercontrols": [
+    {
+      "e": 2,
+      "o": 3,
+      "r": 3,
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": []
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "e": 2,
+      "o": 3,
+      "r": 3,
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": []
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "e": 2,
+      "o": 3,
+      "r": 15,
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "e": 2,
+      "o": 3,
+      "r": 15,
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": []
+      }
+    }
+  ],
+  "assurance": {
+    "written_unbounded_fibre_order_and_integral_transfer_proofs": true,
+    "primary_Euler_naturality_complete_pages_rechecked": true,
+    "retained_Seifert_presentation_audit_reused": true,
+    "finite_controls_not_universal_proof": true,
+    "exterior_pushforward_assumed_after_meridian_filling": false,
+    "all_common_two_stage_sectors_closed": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "finite_Keller_map": false,
+    "PF63_polynomial_curves_declared_nonexistent": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_fibre_order_transfer.py": "5be903ec69ab966d4904eb170536177775c6ebdd1134992301b7c26f8da83775",
+    "FIBRE_ORDER_AND_NONCYCLIC_ZERO_MARKS.md": "11652a853f8ab50c412af41d10e3d9375f36b136d0bcb415faa5c10f3958b73b",
+    "sources/fibre-order-transfer/manifest.json": "f80278427f518b5c339594c79f397aee2f7f025bd9c72615c63185ad9d5276bc",
+    "binomial_periodic_receipt.json": "1915d4914d60fd87f0d09cad81f3b799297d83f19550558de4ac9e2dff3ae6d8",
+    "cyclic_parity_receipt.json": "1256414186e56ed257220d7142bd5ee012427ffa44458239fb35f8673a76a3bd",
+    "common_pencil_mark_receipt.json": "6782b2eed1a1b579c5d3ee8c2257e04f9b2f418073cd784d4b4144cd76c0f027",
+    "seifert_base_genus_receipt.json": "076b0c9a98adff1222b4dac472f4fa74d2496cb4cba70c110f056878af7ce789",
+    "peripheral_cone_budget_receipt.json": "3c3c63d23ee8a734bb386f7d91aae011a19879437d83c6b919e9a65ac71fa130",
+    "fold_schur_s4_receipt.json": "1347fb898542285b12346c9257a75705d84d0c939660dedeaf9ecc5fc99b649d",
+    "oriented_pattern_linking_receipt.json": "23e205731147f02ad4f0130b5c9c1f09ca17d78158d6463b74258c3e91d8a3ba",
+    "sources/oriented-pattern-linking/neumann-raymond-1978.pdf": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+    "sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf": "5fcab10871806ce8f3c9c70b3f2b06c6535a5e218a1aac56fd1de0a00a012704"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "reviewed": "2026-11-14",
+  "imports": [
+    {
+      "authors": "Evelia R. Garcia Barroso and Arkadiusz Ploski",
+      "title": "An approach to plane algebroid branches",
+      "source_url": "https://arxiv.org/pdf/1208.0913v1",
+      "location": "Theorem 1.6 (Normalization Theorem), PDF page 7; Theorem 1.7, PDF page 8",
+      "retained_file_from_research_root": "jacobian-followup/hc4-triangular-graphs/sources/plane-branches-1208.0913v1.pdf",
+      "sha256": "f9af327748bbc4f3f4d31934510ec0fcbf3c547dc39f79d61278962cab69cc15",
+      "used_implication": "A local irreducible plane curve has a primitive normalization parameter; orders along it compute intersection multiplicities. In characteristic zero a nonconstant x coordinate can be written x0+t^e after a formal change of parameter."
+    },
+    {
+      "authors": "A. Hefez, J. H. O. Rodrigues and R. Salomao",
+      "title": "The Milnor number of plane branches with tame semigroups of values",
+      "source_url": "https://arxiv.org/html/1708.07412v1",
+      "location": "Theorem 2.1, Section 2 (A fundamental formula)",
+      "retained_file_from_research_root": "jacobian-followup/hc4-triangular-graphs/sources/plane-branch-conductor-1708.07412v1.html",
+      "sha256": "f692f8d7ecc49550836eb31e6fa3b852899ddfd2f23aaeba25db5c20f372d520",
+      "used_implication": "For a primitive plane branch equation h and normalization parameter t, ord(h_p)=c(h)+ord(dx/dt). The paper explicitly states and proves this formula, attributing it to Gorenstein."
+    }
+  ],
+  "additional_retained_input": "HCTANG2 only for the abstract residual plane Keller-fibre realization in HC4MYGM3; the finite and escape valuation proofs do not use Tang.",
+  "not_imported": [
+    "A theorem identifying a single rational or punctured fibre with a generic rational fibre",
+    "An extension of an abstract affine-curve isomorphism to an automorphism of the ambient plane",
+    "A classification of all boundary singularities or all Puiseux types",
+    "Plane Keller surjectivity, singleton-zero properness, or JC2",
+    "Constant full Hessian inferred from one admissible boundary valuation"
+  ],
+  "assurance": "Specific standard local normalization and conductor statements are imported from retained primary research papers and byte-pinned. The finite controls do not independently prove or formally verify the imports. The original Gorenstein article is not asserted retained."
+}

@@ -1,0 +1,66 @@
+{
+  "claim": "SIC2B33SEVENGATE20261117",
+  "status": "PASS",
+  "checker_sha256": "4fdb8909d527144ef8e086f76b19498af5e61d837a24c7abeb096ccd4b6dc035",
+  "model_sha256": "14453c0fdfbea0fe5f307103ebf831d0960c4c3e9f119009e35cf2e3c5e9e296",
+  "archive_sha256": "5ac529c2338c5404bace25091c2623e9a75710a5660455e1d58dc52b0361b020",
+  "four_JSON_outputs_replayed_byte_for_byte": true,
+  "included_original_local_certificate_unchanged": true,
+  "adapted_least_local_nilpotence_exponents": [
+    3,
+    7,
+    5,
+    3,
+    2,
+    3,
+    2
+  ],
+  "cubic_five_vector_rank": 4,
+  "Psi_primitive_integer_coefficients": [
+    3814472897542065,
+    9204109983515700,
+    -9625759731192528,
+    -10061220068131439,
+    -5712042093615
+  ],
+  "augmented_ambient_ideal_equality": "(K1,...,K7)=(Z) modulo full structural relations",
+  "global_selected_locus_support_prefix": 6,
+  "global_selected_locus_reduced_ideal_prefix": 9,
+  "augmented_global_identity": "I9+(Z)=I9+(K1,...,K7)=P",
+  "primitive_integer_odd_moment_Jacobian_determinant": "49411883664",
+  "raw_normalized_odd_moment_Jacobian_determinant": "2048/676350675",
+  "primitive_Jacobian_row_scales": [
+    "105/2",
+    "9009/4",
+    "138567/2",
+    "15935205/8"
+  ],
+  "target_degrees": [
+    3,
+    3,
+    5,
+    3,
+    2,
+    3,
+    4
+  ],
+  "target_characters_mod12": [
+    6,
+    6,
+    3,
+    6,
+    4,
+    6,
+    8
+  ],
+  "moment_circuit_nodes_graded_gate_for_gate": 1341228,
+  "source_circuit_sha256": "9e57acaa45accc42ece068e3810e23326078027a85eb2a03c674498e88ebf18b",
+  "module_program_sha256": "ae89f92af50c664acd7fae8b149460d8b40738cd0c1b4a0d65759075082e47f3",
+  "source_column_recipes": 48,
+  "finite_ansatz_columns": "UNCOMPUTED",
+  "witness_degree_bound": "UNKNOWN",
+  "global_memberships_verified": 0,
+  "global_A14_finiteness_and_length": "UNCOMPUTED",
+  "msolve_dependency_for_this_reduction": false,
+  "boundary": "Proves a selected-locus augmented ideal identity and checks both equivalent seven-target gates, local powers and the exact mod12 exporter filter. No unrestricted I14 membership, witness-degree bound or global length51 is proved. The Jacobian integer value refers to primitive integer-scaled moment equations. No independent specialist or formal verification."
+}

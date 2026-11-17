@@ -1,0 +1,4 @@
+from pathlib import Path
+from flint import fmpq_mat,fmpq
+import gzip,json,time
+beg=time.monotonic();k=2;p=Path('/tmp/degree8_Mlinear_matrix_'+str(k)+'.json.gz');d=json.loads(gzip.decompress(p.read_bytes()));A=fmpq_mat([[fmpq(s) for s in row] for row in d['rows']]);b=fmpq_mat([[fmpq(s)] for s in d['rhs']]);print('start140 rational Dixon',flush=True);sol=A.solve(b,algorithm='dixon');assert A*sol==b;out=[str(sol[j,0]) for j in range(140)];Path('/tmp/degree8_Mlinear_inverse_'+str(k)+'.json').write_text(json.dumps(out));print('PASS exact140 rational inverse',time.monotonic()-beg,flush=True)

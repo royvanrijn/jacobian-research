@@ -1,0 +1,15 @@
+{
+  "status": "NO_COMPLETE_DEGREE18_CHECKPOINT",
+  "returncode": 124,
+  "elapsed_seconds": 600.0091238190071,
+  "source_sha256": "af4313c4d8185eabb5b9a6f65120a43fe4d53efc4754dfb89f3e01f50bc2c6b7",
+  "output_gzip_sha256": "e5c30875f9d69661922d9847859dd8d43d554e5059da05c1c68a442cdb48b856",
+  "output_uncompressed_sha256": "86398b14fd6d05e3f2e79680ba40bb8b7143e5079008ea6c0121d6c49a522dc5",
+  "output_uncompressed_bytes": 2113,
+  "output_compressed_bytes": 709,
+  "degree_bound": 18,
+  "time_limit_seconds": 600,
+  "reason": "The earlier bounded exact run continued through degree18 relations and retained degree17 basis. Omit the redundant original generators from the resumed initial list and increase a bounded stage budget; retain all original input for final certification.",
+  "stderr": "",
+  "boundary": "A partial basis remains insufficient. The final unbounded-degree GB, input containment, h-power and homogeneous leading-ideal rank comparison must pass."
+}

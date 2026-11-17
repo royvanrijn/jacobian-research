@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "claim": "KCUB26",
+  "scope": "Targeted new claim schema/hash/paths, reciprocal dependency,6175-column and12 inverse-derivation minor certificates, affected lesson/work scope reviews and current local links. Not a whole-repository or formal mathematical proof check.",
+  "checker_sha256": "0959a6a56223241bed40ce6eedb12d5e383fd75f67f20e8fd350da8088f5e779",
+  "proof_sha256": "1a19a5a426a29bfa664a14728e41b8dafbee2cc138b826ac7064b14c2769d1fc",
+  "validation_sha256": "c7f3248f59261425096553ac128d80bef07c94ed4b2c47e6845f93002dcb0c32",
+  "affected_lessons": 11,
+  "nonlinear_target_degree_bound_closed": 5,
+  "unbounded_rational_single_coordinate_scope": "displayed output axes only",
+  "new_smaller_positive_witness": false,
+  "global_positive_bounds_unchanged": true,
+  "full_profiles_excluded": 62,
+  "full_profiles_remaining": 12,
+  "umbrella_state": "open",
+  "goal_complete": false
+}

@@ -1,0 +1,52 @@
+{
+  "completed": true,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "173d43c33d7a727fd59bf3e16f46ba3e94dc3b909e900af224484523adee504e",
+  "symbolic_finite_transfer_Euler_identity_exact": true,
+  "nonsemisimple_residue_and_higher_Taylor_block_controls": [
+    {
+      "ramification": 2,
+      "nonsemisimple_source_residues": [
+        "-1/2",
+        "-1/2"
+      ],
+      "target_residues": [
+        "-3/4",
+        "-1/4"
+      ],
+      "all_strictly_above_minus_one": true
+    },
+    {
+      "ramification": 3,
+      "nonsemisimple_source_residues": [
+        "-1/2",
+        "-1/2"
+      ],
+      "target_residues": [
+        "-5/6",
+        "-1/2",
+        "-1/6"
+      ],
+      "all_strictly_above_minus_one": true
+    }
+  ],
+  "trace_square_Catalan_moments": [
+    "1",
+    "1",
+    "2",
+    "5",
+    "14",
+    "42",
+    "132"
+  ],
+  "raw_Brieskorn_quotient_distinguished_from_original_image": true,
+  "universal_direct_image_and_V_lattice_proofs_machine_verified": false,
+  "finite_original_image_identified_with_raw_Brieskorn_module": false,
+  "primitive_purity_reflection_claimed": false,
+  "all_coefficient_ring_topological_or_lattice_promotion_claimed": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "new_degree_support_or_prefix_campaign": false
+}

@@ -1,0 +1,13 @@
+{
+  "free_variables": [
+    "g8",
+    "h7",
+    "h8",
+    "h9"
+  ],
+  "input_sha256": "aa10c1d5fb6ee5d4f525e38804f558e3554a5659f500bafa9dca1fba10a2b8dc",
+  "linear_rank": 12,
+  "seconds": 0.007,
+  "source_sha256": "d9537749058e578af988ff047999b0e07e86d5b95b0dd8a317efc2c067155ce4",
+  "status": "primary-boundary-basis"
+}

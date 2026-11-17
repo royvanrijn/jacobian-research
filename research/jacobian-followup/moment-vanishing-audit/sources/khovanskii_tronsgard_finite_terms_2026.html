@@ -1,0 +1,1092 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=Windows-1251'>
+<META NAME='keywords' CONTENT='A. Khovanskii, A. Tronsgard, , On solvability of linear differential equations in finite terms, linear differential equations, solvability by quadratures, integration in finite terms, differential Galois theory.'>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/CommonHTML", "output/HTML-CSS","output/SVG", "output/PreviewHTML"],
+      tex2jax: {
+          inlineMath: [ ['$','$'] ],
+          displayMath: [ ['$$','$$'] ],
+          processEscapes: true
+          },
+
+
+      "HTML-CSS": {
+      	imageFont: null,
+        webFont: "STIX-Web",
+        availableFonts: ["TeX"],    // Or: ["STIX"], to allow local // ["TeX"]
+        preferredFont: ["TeX"]    // Or: "STIX", to allow local     // ["TeX"]
+      },
+
+      //"SVG": {
+      //  font: "STIX-Web"
+      //},
+
+      TeX: { 
+      	equationNumbers: { autoNumber: "AMS" },
+      	extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+
+      	Macros:	{
+      		le: ['\\leqslant'],
+      		ge: ['\\geqslant'],
+      		textup: ['\\text'],
+      		Box: ['\\unicode{x25A1}'],
+      		}
+      }
+
+    });
+
+    MathJax.Hub.Register.StartupHook('TeX Jax Ready', function () {
+       MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
+         data.math=data.math.replace(/\mathbb\{1\}/g,'unicode{x1D7D9}');
+         data.math=data.math.replace(/\mathbb\{2\}/g,'unicode{x1D7DA}');
+
+       });
+    });
+
+
+
+    MathJax.Hub.Register.StartupHook('TeX Jax Ready', function () {
+    	var TEX = MathJax.InputJax.TeX;
+    	var originalInternalText = TEX.Parse.prototype.InternalText;
+
+    	TEX.Parse.Augment({
+        	InternalText: function (text, def) {
+
+		    // \text{\bf ...}: весь текст блока — полужирный.            
+		    
+		    if (/^\s*\\bf\b/.test(text)) {
+		    	text = text.replace(/^\s*\\bf\b\s*/, '');                
+		    	def = MathJax.Hub.Insert({}, def || {});                
+		    	def.mathvariant = 'bold';            
+		    }
+            
+
+        	    text = text.replace(/\\[ ,]/g,' ');
+        	    return originalInternalText.call(this, text, def);
+        	}
+	});
+    });
+
+
+
+
+
+  </script>
+  
+  <script type="text/javascript" src="/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_HTML"></script>
+  
+
+<link title="Izvestiya Rossiiskoi Akademii Nauk. Seriya Matematicheskaya, Latest issue" rel="alternate" type="application/rss+xml" href="/rss/rssLastIssue.phtml?jrnid=im&option_lang=eng"><link title="Izvestiya Rossiiskoi Akademii Nauk. Seriya Matematicheskaya, Current issues" rel="alternate" type="application/rss+xml" href="/rss/rssRecentIssues.phtml?mode=current&jrnid=im&option_lang=eng"><link title="Izvestiya Rossiiskoi Akademii Nauk. Seriya Matematicheskaya, Issues of the historic archive" rel="alternate" type="application/rss+xml" href="/rss/rssRecentIssues.phtml?mode=archive&jrnid=im&option_lang=eng">
+
+	<title>A.&nbsp;Khovanskii, A.&nbsp;Tronsgard, &#x201C;On solvability of linear differential equations in finite terms&#x201D;, Izv. Math., 90:1 (2026), 238&ndash;254</title>
+	<link rel="canonical" href="https://www.mathnet.ru//php/archive.phtml?jrnid=im&option_lang=eng&paperid=9686&wshow=paper" />
+	<link href='/css/mathnet.css?v=1.19' rel='stylesheet' type='text/css'>
+	<link href='/css/webcard.css' rel='stylesheet' type='text/css'>
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+ 	</head>
+	<body class='mainInfo' >
+
+	<table border=0 width=100% cellspacing=0 cellpadding=0><tr><td><table
+        border=0 width=100% cellspacing=0 cellpadding=0>
+	<tr class=topPic>
+		
+	<td style="
+		background-image: url('/gifs/__mathnetru.jpg'); 
+		background-repeat:no-repeat; 
+		background-position: center center; 
+		text-align: center;
+		vertical-align: bottom;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 22pt;
+		padding-bottom:5px;
+		">
+	Izvestiya: Mathematics
+	</td>
+		</tr>
+	</table>
+
+
+
+		<table border=0 width=100% cellspacing=0 cellpadding=0>
+	<tr  >
+	
+	<td style='width:10%' valign=middle align=left class=fon13>
+		<nobr>
+		<a class=r1 href=/php/archive.phtml?jrnid=im&paperid=9686&wshow=paper&option_lang=rus>RUS</a>&nbsp;
+	    	<a class=r1 href=/php/archive.phtml?jrnid=im&paperid=9686&wshow=paper&option_lang=eng>ENG</a></nobr>
+	    	</nobr>
+			</td>
+	<td style='width:10%' align=left class=fon13>
+	<nobr>
+	<a title='Main page' href=/?option_lang=eng><img src=/images/home2.gif border=0></a>
+	<a title='Mobile version' href=http://m.mathnet.ru/php/archive.phtml?jrnid=im&option_lang=eng&paperid=9686&wshow=paper><img src=/images/mobile.gif border=0></a>
+	&nbsp;&nbsp;
+	<a title='Telegram' href='https://t.me/MathNetRu'><img src=/images/64px-Telegram_logo.svg.png height=20 vspace=2 border=0></a>
+	<!--<a title='Twitter' href='https://twitter.com/MathNetRu'><img src=/images/Twitter_Social_Icon_Circle_Color.png  height=20 vspace=2  border=0></a>-->
+	<a title='YouTube' href='https://www.youtube.com/channel/UC_fq8SDW37l86fdJxlprL1A'><img src=/images/youtube_social_circle_red.png vspace=2 height=20 border=0></a>
+	</nobr>
+
+	</td>
+
+	<td style='width:60%' class=fon13 align=center>
+	<nobr>
+		<a class=r1 href=/ej.phtml?option_lang=eng>JOURNALS</a>
+		&nbsp;	
+		<a class=r1 href=/php/person.phtml?option_lang=eng>PEOPLE</a>
+		&nbsp;
+		<a class=r1 href=/php/organisation.phtml?option_lang=eng>ORGANISATIONS</a>
+		&nbsp;
+		<a class=r1 href=/php/conference.phtml?option_lang=eng>CONFERENCES</a>
+		&nbsp;
+		<a class=r1 href=/php/seminars.phtml?option_lang=eng>SEMINARS</a>
+		&nbsp;
+		<a class=r1 href=/php/presentation.phtml?option_lang=eng>VIDEO LIBRARY</a>
+		&nbsp;
+		<a class=r1 href=/poffice/mirefmodule.phtml?wshow=mirefmodule&option_lang=eng>PACKAGE AMSBIB</a>
+
+	</nobr>
+	</td>
+
+	<td style='width:20%' class=fon13>&nbsp;</td>
+	
+	</tr>
+	</table>
+
+	<noscript>
+	<div style='margin: 10px; padding: 10px; text-align: center; border: 1px solid #A91818; background-color: lightyellow'>
+	<b>JavaScript is disabled in your browser. Please switch it on to enable full functionality of the website</b>
+	</div>
+	</noscript>
+
+
+
+	<script language="JavaScript" src="/js/func_string.js?v=8.7"></script>
+<script language="JavaScript" src="/js/phpjs.js?v=1"></script>
+<link rel="STYLESHEET" type="text/css" href="/css/calendar.css">
+<script language=JavaScript>
+var EDIT_DISABLED_BOOL;
+var CALENDAR_LANG;
+</script>
+ 
+
+	
+<script language=JavaScript src=/js/func_dates.js?v=2></script>  <script language=JavaScript src="/js/libmenu.js?v=3"></script>
+	<script language=JavaScript src="/js/md5.js"></script>
+	<script language=JavaScript src="/js/prototype.js?v=1"></script>
+        <script language=JavaScript src="/js/func_controls.js?v=3"></script>
+		
+	<table border=0 cellspacing=0 cellpadding=10 width=100%>
+	<tr>
+	<td valign=top class=leftcol>
+	  <script language=JavaScript>
+	function NavMOver(eItem,i){
+	//eItem.DefaultBgColor = eItem.style.backgroundColor;
+	//eItem.style.backgroundColor = 'lightyellow';
+	}
+
+	function NavMOut(eItem,i){
+	//eItem.style.backgroundColor = eItem.DefaultBgColor;
+	}
+	</script>
+
+	<table width=100%>
+		<tr>
+			<td valign=top align=right><IMG src="/gifs/ar9.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/php/journal.phtml?jrnid=im&wshow=details&option_lang=eng">General information</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/ar9.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/php/currentissue.phtml?jrnid=im&option_lang=eng">Latest issue</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/ar9.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/php/forthcom.phtml?jrnid=im&wshow=forthcom&option_lang=eng">Forthcoming papers</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/ar8.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry1" href="/php/archive.phtml?jrnid=im&wshow=contents&option_lang=eng">Archive</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/ar9.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/php/ifactor.phtml?jrnid=im&wshow=IF_details&option_lang=eng">Impact factor</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/ar9.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/eng/im/authornotes">Guidelines for authors</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/ar9.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/php/esubmission.phtml?jrnid=im&wshow=snote&option_lang=eng">Submit a manuscript</a></nobr></td>
+			</tr>
+				<tr>
+			<td><br></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/search.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/php/search.phtml?jrnid=im&tjrnid=im&wshow=search&option_lang=eng">Search papers</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/search.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/php/searchrefs.phtml?option_lang=eng">Search references</a></nobr></td>
+			</tr>
+				<tr>
+			<td><br></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/rss.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="ry" href="/rss/rssRecentIssues.phtml?jrnid=im&option_lang=eng">RSS</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/1pts.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="rys" href="/rss/rssLastIssue.phtml?jrnid=im&option_lang=eng">Latest issue</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/1pts.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="rys" href="/rss/rssRecentIssues.phtml?mode=current&jrnid=im&option_lang=eng">Current issues</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/1pts.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="rys" href="/rss/rssRecentIssues.phtml?mode=archive&jrnid=im&option_lang=eng">Archive issues</a></nobr></td>
+			</tr>
+				<tr>
+			<td valign=top align=right><IMG src="/gifs/1pts.gif" border=0></td>
+			<td valign=top align=left><nobr><a class="rys" href="/help.phtml?wshow=rss&option_lang=eng">What is RSS</a></nobr></td>
+			</tr>
+				</table>
+	<br>
+	<hr color=#AC4E4A>
+	<br>
+		
+	<table border=0 cellspacing=0 cellpadding=2>
+	<script language=JavaScript>
+	function fsubmit_findfast(){
+		myform=document.forms['findfast'];
+		if(myform.syear.value=='' && myform.svolume.value=='' && myform.sissue.value=='' && myform.spage.value==''){
+			alert('Please enter search terms');
+			return false;
+		}
+		return true;
+	}
+	
+	function fsubmit_findfast_do(){
+		if(fsubmit_findfast()){
+			document.forms['findfast'].submit();	
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	</script>
+	<form name='findfast' action=/php/journal.phtml method=GET onSubmit="return fsubmit_findfast()">
+	<input type=hidden name=jrnid value=im>
+	<input type=hidden name=option_lang value=eng>
+	<input type=hidden name=wshow value=fgo>
+	<tr>
+	<td colspan=2 class=x-bl><b>Izv. RAN. Ser. Mat.:</b></td>
+	</tr>
+	<tr>
+	<td align=right class=x-bl>Year:</td>
+	<td><input type=input class=ID size=10 name=syear value=></td>
+	</tr>
+	<tr>
+	<td align=right class=x-bl>Volume:</td>
+	<td><input type=input class=ID size=10 name=svolume value=></td>
+	</tr>
+	<tr>
+	<td align=right class=x-bl>Issue:</td>
+	<td><input type=input class=ID size=10 name=sissue value=></td>
+	</tr>
+	<tr>
+	<td align=right class=x-bl>Page:</td>
+	<td><input type=input class=ID size=10 name=spage value=></td>
+	</tr>
+
+	<tr>
+	<td align=right class=x-bl><input type=image src=/images/ar5.gif border=0></td>
+	<td><a class=ri href=# onClick="return fsubmit_findfast_do()">Find</a></td>
+	</tr>
+	</form>
+	</table>
+	
+	<br>
+	<hr color=#AC4E4A size=1>
+	<br>
+	
+<script>
+  (function() {
+    var cx = '016263596811403645603:nkhdtbysq40';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:')
+    +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only resultsUrl="/googlesitesearch.phtml?option_lang=eng" newWindow="false" queryParameterName="q"></gcse:searchbox-only>
+    
+<br>
+<hr color=#AC4E4A size=1>
+<br>
+	<table border=0 cellspacing=0 cellpadding=2>
+	<script language=JavaScript src=/js/md5.js></script>
+	<script language=JavaScript src=/js/func_string.js></script>
+	<script language=JavaScript>
+	function fsubmit_login(){
+		myform=document.forms['loginf'];
+		if(myform.login.value=='' && myform.password.value==''){
+			alert('Enter login and password');
+			return false;
+		}
+
+		if(!CheckStringReg(myform.login.value,regLogin,'Login')){return false;}
+		myform.phash.value=MD5(myform.password.value);
+		myform.password.value='';
+		return true;
+	}
+	
+	function fsubmit_login_do(){
+		if(fsubmit_login()){
+			document.forms['loginf'].submit();
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	</script>
+	<form name='loginf' action=/personal/plogin_do.phtml?option_lang=eng method=POST onSubmit="return fsubmit_login()">
+	<input type=hidden name=phash value=''>
+	<tr>
+	<td align=left colspan=2 class=x-bl><b><nobr>Personal entry:</nobr></b></td>
+	</tr>
+	<tr>
+	<td align=right class=x-bl>Login:</td>
+	<td align=left><input type=input class=ID size=10 name=login></td>
+	</tr>
+	<tr>
+	<td align=right class=x-bl>Password:</td>
+	<td align=left><input type=password class=ID size=10 name=password></td>
+	</tr>
+
+	<tr>
+	<td align=right class=x-bl><input type=checkbox name=if_savelogin></td>
+	<td align=left class=x-bl><nobr>Save password</nobr></td>
+	</tr>
+
+	<tr>
+	<td align=right class=x-bl><input type=image src=/images/ar5.gif border=0></td>
+	<td align=left><a class=ri href=# onClick="return fsubmit_login_do()">Enter</a></td>
+	</tr>
+
+	<tr>
+	<td align=right class=x-bl><img src=/images/ar5.gif border=0></td>
+	<td align=left><a class=ri href=/php/getpassword.phtml?option_lang=eng>Forgotten&nbsp;password?</a></td>
+	</tr>
+	
+	<tr>
+	<td align=right class=x-bl><img src=/images/ar5.gif border=0></td>
+	<td align=left><a class=ri href=/php/registration.phtml?option_lang=eng>Register</a></td>
+	</tr>
+	<input type=hidden name=qs value="/php/archive.phtml?jrnid=im&option_lang=eng&paperid=9686&wshow=paper">
+	<input type=hidden name=qsrw value="">
+	</form>
+	</table>
+	
+	
+	<br>
+		
+	<div align=center>
+
+	<a href="http://www.mathjax.org/">
+	<img hspace=35 title="Powered by MathJax" src="/gifs/mathjax.png" border="0" alt="Powered by MathJax"/ width=80 >
+	</a>
+	
+
+	<a href=http://www.crossref.org>
+	<img title='Crossref' width=100 hspace=35 src="/gifs/crossrefenabled.gif" border=0>
+	</a>
+
+	</div>
+		</td>
+	<td valign=top>
+		
+		<hr color=#AC4E4A size=1>
+
+		<table width=100% cellpadding=0 cellspacing=0 border=0>
+		<tr>
+		<td width=70%>
+		<i>Izvestiya: Mathematics, 2026, <a class=SLink href=/php/archive.phtml?wshow=contents&option_lang=eng&jrnid=im&yl=2026&vl=90&series=0#showvolume>Volume&nbsp;90</a>, <a class=SLink href=/php/contents.phtml?wshow=issue&jrnid=im&year=2026&volume=90&issue=1&series=0&option_lang=eng>Issue&nbsp;1</a>, Pages&nbsp;<nobr><nobr>238&ndash;254</nobr></nobr><br/>DOI:&nbsp;<a title="DOI: https://doi.org/10.4213/im9686e" class=SLink target=_blank href='https://doi.org/10.4213/im9686e'>https://doi.org/10.4213/im9686e</a><a title="DOI: https://doi.org/10.4213/im9686e" class=SLink target=_blank href='https://doi.org/10.4213/im9686e'><img hspace=4 src="/refsvg/svg/crossref.svg" align='absmiddle' height="15px" style="margin-bottom:3px" border=0></a></i>	
+		<span class=red><nobr>(Mi im9686)</nobr></span>
+			</td>
+		<td width=15% align=right>
+			<a title='Izv. RAN. Ser. Mat., 2026,  Volume&nbsp;90,  Issue&nbsp;1, Pages&nbsp;230&ndash;243'
+				href=/eng/im9720><img onmouseover="this.src='/images/prev1.gif'" onmouseout="this.src='/images/prev2.gif'" src=/images/prev2.gif border=0></a>	</td>
+		<td>&nbsp;</td>
+		<td width=15% align=left>
+			</td>
+		</tr>
+	
+		</table>
+                <hr color=#AC4E4A size=1>
+                	
+		<span class=red><font size=+1>On solvability of linear differential equations in finite terms</font></span>
+		<br/>
+			<br>
+			<a title="Khovanskii Askold Georgievich" class=SLink href=/php/person.phtml?option_lang=eng&personid=17360>A.&nbsp;Khovanskii</a><sup><i></i></sup><sup><script language="JavaScript">document.write(decode_email('DMEBCAHEGJHEGMGFDNCHEFCNGNGBGJGMDKCAGBHDGLGPGMGEEAGNGBHEGICOHEGPHCGPGOHEGPCOGFGEHFCHCAGDGMGBHDHDDNFDEMGJGOGLCAEIFCEFEGDNCCGNGBGJGMHEGPDKGBHDGLGPGMGEEAGNGBHEGICOHEGPHCGPGOHEGPCOGFGEHFCCDODMGJGNGHCAHDHEHJGMGFDNCCGNGBHCGHGJGOCNGMGFGGHEDKDDHAHICCCAGBGMGJGHGODNCCGBGCHDGNGJGEGEGMGFCCCAHDHCGDDNCCCPGGHEGJGDGPGOHDCPGFGNGBGJGMGJGDGPDBCOGKHAGHCCCAHHGJGEHEGIDNCCDBDIHAHICCCAGCGPHCGEGFHCDNCCDACCCPDODMCPEBDO'));</script><noscript>email</noscript></sup>, 	<a title="Tronsgard Aaron" class=SLink href=/php/person.phtml?option_lang=eng&personid=224910>A.&nbsp;Tronsgard</a><sup><i></i></sup><sup><script language="JavaScript">document.write(decode_email('DMEBCAHEGJHEGMGFDNCHEFCNGNGBGJGMDKCAGBGBHCGPGOCOHEHCGPGOHDGHGBHCGEEAGNGBGJGMCOHFHEGPHCGPGOHEGPCOGDGBCHCAGDGMGBHDHDDNFDEMGJGOGLCAEIFCEFEGDNCCGNGBGJGMHEGPDKGBGBHCGPGOCOHEHCGPGOHDGHGBHCGEEAGNGBGJGMCOHFHEGPHCGPGOHEGPCOGDGBCCDODMGJGNGHCAHDHEHJGMGFDNCCGNGBHCGHGJGOCNGMGFGGHEDKDDHAHICCCAGBGMGJGHGODNCCGBGCHDGNGJGEGEGMGFCCCAHDHCGDDNCCCPGGHEGJGDGPGOHDCPGFGNGBGJGMGJGDGPDBCOGKHAGHCCCAHHGJGEHEGIDNCCDBDIHAHICCCAGCGPHCGEGFHCDNCCDACCCPDODMCPEBDO'));</script><noscript>email</noscript></sup>	<br>	<br><sup><i></i></sup> <a class=SLink href=/php/organisation.phtml?option_lang=eng&orgid=4897><i>Department of Mathematics, University of Toronto, Toronto, ON, Canada</i></a>
+					<div class='around-button'>
+			
+			<a target=_blank title='' class='button_yellow' href="/php/getFT.phtml?jrnid=im&paperid=9686&what=fullteng&option_lang=eng">English version PDF (460&nbsp;kB) </a>
+				<a target=_blank title='' class='button_yellow' href="#fulltexthtml">HTML full-text</a>
+			  <a target=_blank title='Russian version article' class='button_green' href="/rus/im9686">Russian version article</a>
+				</div>
+			<div class='around-button' style='border: none; height: auto; overflow:auto; width:100%'>
+			<div class='refstitle'>
+			<b>References:</b>
+			</div>
+			<div class='refslink'>
+			<a target=_blank class=SLink href=/php/getRefFromDB.phtml?jrnid=im&paperid=9686&output=pdf&option_lang=eng>PDF</a>
+			</div>
+			<div class='refslink'>			
+			<a target=_blank class=SLink href=/php/getRefFromDB.phtml?jrnid=im&paperid=9686&output=htm&option_lang=eng>HTML</a>
+			</div>
+				</div>
+				
+			<div class='around-button'>
+			<b>DOI:</b>
+			<a title="DOI: https://doi.org/10.4213/im9686e" class=SLink target=_blank href='https://doi.org/10.4213/im9686e'>https://doi.org/10.4213/im9686e</a><a title="DOI: https://doi.org/10.4213/im9686e" class=SLink target=_blank href='https://doi.org/10.4213/im9686e'><img hspace=4 src="/refsvg/svg/crossref.svg" align='absmiddle' height="18px" style="margin-bottom:5px" border=0></a>
+			</div>
+				<div class='around-button'>
+			<b>Abstract:</b>
+			We consider the problem of solvability of linear differential equations over a&nbsp;differential field&nbsp;<nobr>$K$</nobr>. We introduce a&nbsp;class of special differential field extensions, which widely generalizes the classical class of extensions of differential fields by integrals and by exponentials of integrals and which has similar properties. We announce the following result: if a&nbsp;linear differential equation over <nobr>$K$</nobr> cannot be solved by generalized quadratures, then no special extension can help solve it. In the paper, we prove a&nbsp;weaker version of this result in which we consider only pure transcendental extensions of <nobr>$K$</nobr>. Our paper is self-contained and understandable for beginners. It demonstrates the power of Liouville&#39;s original approach to problems of solvability of equations in finite terms.
+			</div>
+				<div class='around-button'>
+			<b>Keywords:</b>
+			linear differential equations, solvability by quadratures, integration in finite terms, differential Galois theory.
+			</div>
+				<div class='around-button'>
+			<table cellspacing=1 cellpadding=5 style='border: 1px solid #dedede; background-color: #f9f9f9'>
+			<tr>
+			<td><b>Funding agency</b></td>
+			<td><b>Grant number	</b></td>
+			</tr>
+				<tr style='background-color: #fefefe'>
+				<td>Canadian Grant</td>
+				<td><nobr>156833-17</nobr></td>
+				</tr>
+					<tr style='background-color: #fefefe'>
+				<td><a target=_new class=SLink href="http://www.nserc-crsng.gc.ca" title="Natural Sciences and Engineering Research Council of Canada (NSERC)">Natural Sciences and Engineering Research Council of Canada (NSERC)</a> <a target=_new href="https://search.crossref.org/search/funders?id=501100000038&from_ui=yes" title="Crossref Funder Registry: 501100000038"><img src="/refsvg/svg/crossref-funder-registry-logo-200.svg" height="35px" align='absmiddle' style="margin-left:5px" border=0/></a></td>
+				<td><nobr>569475</nobr></td>
+				</tr>
+					<tr style='background-color: #fefefe'>
+				<td colspan=2 style='font-size: small'>The first author was partially supported by the Canadian Grant No.&nbsp;156833-17. The second author was partially supported by the NSERC post-graduate scholarship (PGS-D) 569475.</td>
+				</tr>
+					</table>
+			</div>
+				<div class='around-button'><b>Received:</b> 25.12.2024<br><b>Revised:</b> 12.03.2025	</div>  <div class='around-button'>
+			<b>Published</b>: 09.02.2026
+			</div>
+				<div class='around-button'>
+			<b>Bibliographic databases:</b>
+			<a title="MathSciNet bibliographic data: 5029258" class=SLink target=_blank href='https://mathscinet.ams.org/mathscinet-getitem?mr=5029258'><img hspace=4 src="/refsvg/svg/mathscinet.svg" align='absmiddle' height="18px" style="margin-bottom:7px"  border=0> </a><a title="Smithsonian/NASA Astrophysics Data System (ADS): 2026IzMat..90..238K" class=SLink target=_blank href='https://adsabs.harvard.edu/cgi-bin/bib_query?2026IzMat..90..238K'><img hspace=4 src="/refsvg/svg/adsnasa.svg" align='absmiddle' height="18px" style="margin-bottom:7px" border=0> </a><a title="Web of Science: 001704101100009" class=SLink target=_blank href='https://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcApp=Publons&SrcAuth=Publons_CEL&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=001704101100009'><img hspace=4 src="/refsvg/svg/isi.svg" align='absmiddle' height="15px" style="margin-bottom:0px" border=0> </a><a title="Scopus: 2-s2.0-105030448677" class=SLink target=_blank href='https://www.scopus.com/record/display.url?origin=inward&eid=2-s2.0-105030448677'><img hspace=4 src="/refsvg/svg/scopus.svg" align='absmiddle' height="20px" style="margin-top:3px" border=0> </a>	</div>	<div class='around-button' style='border: none; height: auto; overflow:auto; width:100%'>
+			<div class='msc'>
+			<b>Document Type:</b>
+			Article
+			</div>
+				<div class='msc'>
+			<b>MSC:</b> <a target=_blank style='cursor: help' class=SLink title='The Mathematics Subject Classification' href='https://mathscinet.ams.org/mathscinet/freetools/msc-search?text=12H20'>12H20</a>	</div>	<div class='msc'>
+			<b>Language:</b> English
+			</div>
+
+			<div class='msc'>
+			<b>Original paper language:</b> English
+			</div>
+			</div>	<a name="fulltexthtml"></a>
+<script>
+function toggleFN(id) {
+  console.log('toggleFN | id: '+id);
+  var x = document.getElementById(id);
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } 
+  else {
+    x.style.display = 'none';
+  }
+}
+
+function zoomImg(action,id){
+  
+  element=document.getElementById(id);
+  w=element.width;
+  h=element.height;
+  
+  if(action=='in'){
+    w=w*1.2;
+    h=h*1.2;
+  }
+  else{
+   w=w/1.2;
+   h=h/1.2; 
+  }
+  
+  element.width=w;
+  element.height=h;
+    
+  return false;
+}
+  
+  
+
+
+</script>
+<style xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">
+				p	{text-align:justify}
+
+				table.ftxml {
+					border: 1px solid #666666;
+				}
+
+				table.bordernull {
+					border: none;
+				}
+
+				tr.bordertopbottomnull>td,th{
+					border-top: none;
+					border-bottom: none;
+				}
+				tr.bordertopnull>td,th{
+					border-top: none;
+				}
+				tr.borderbottomnull>td,th{
+					border-bottom: none;
+
+				}
+				td.bordernull {
+					border: none;
+				}
+				td.bordertopnull {
+					border-top: none;
+				}
+				td.borderbottomnull {
+					border-bottom: none;
+				}
+				td.borderleftnull {
+					border-left: none;
+				}
+				td.borderleftrightnull {
+					border-left: none;
+					border-right: none;
+				}
+				td.borderrightnull {
+					border-right: none;
+				}
+				th.bordertopnull {
+					border-top: none;
+				}
+				th.borderbottomnull {
+					border-bottom: none;
+				}
+				th.borderleftnull {
+					border-left: none;
+				}
+				th.borderrightnull {
+					border-right: none;
+				}
+
+
+				button.zoomin {
+					background:url(/gifs/zoomin.svg) left no-repeat;
+					background-size: 20px;
+					background-color: #fefefe;
+					border: 1px solid #cccccc;
+					width: 100px;
+					padding: 3px 3px 3px 3px;
+					margin: 3px 3px 3px 3px;
+					text-align:center;
+				}
+
+				button.zoomout {
+					background:url(/gifs/zoomout.svg) left no-repeat;
+					background-size: 20px;
+					background-color: #fefefe;
+					border: 1px solid #cccccc;
+					width: 100px;
+					padding: 3px 3px 3px 3px;
+					margin: 3px 3px 3px 3px;
+					text-align:center;
+				}
+
+				
+			</style>
+
+
+
+
+
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686ded1"></a> </span><span> <em>To the memory of Andrei Bolibrukh</em> </span></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s1"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 1. Introduction</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In the 1830s, Liouville started to create a theory of solvability in finite terms. In some cases it answers the following question: is there a solution of an equation which is representable by a certain class of formulas? In other words, is there a solution representable in <em>finite terms</em>? </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  About the same time Galois theory was invented. It provides a criterion of solvability of algebraic equations in radicals. Liouville was inspired by Galois theory. Among his results there are two famous theorems. The First Liouville Theorem provides a criterion of integrability of elementary functions in elementary functions. The Second Liouville Theorem provides a criterion of solvability of second order linear differential equations by quadratures. Modern proofs of these theorems can be found respectively in [<a style="font-style: normal" class="SLink" href="#bib1">1</a>] and [<a style="font-style: normal" class="SLink" href="#bib2">2</a>]. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Liouville&rsquo;s brilliant and simple ideas were never properly understood (maybe, because Liouville did not carefully formalize them). Only in 1910, Picard and Vessiot generalized the Second Liouville Theorem for linear differential equations of an arbitrary order. To obtain this result they developed a new deep differential Galois theory. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  J. F. Ritt up to some extent formalized Liouville&rsquo;s method and generalized it (see [<a style="font-style: normal" class="SLink" href="#bib3">3</a>] and [<a style="font-style: normal" class="SLink" href="#bib4">4</a>]). Later J. F. Ritt, E. R. Kolchin and others developed differential algebra, which totally gets rid of multi-valued analytic functions and deals with abstract differential fields. It became a well established branch of pure algebra. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  If one wants to show that a solution of an equation is not representable by any formula of a certain type (for example, is not representable by quadratures), one has to deal with the collection of all functions representable by such formulas. Functions from this collection could be very complicated; they could be multi-valued, they could have complicated singularities, and so on. Such functions do not form a differential field, since arithmetic operations are not well defined for multi-valued functions. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In the framework of differential algebra, one can state and solve the problem of solvability of linear differential equations by quadratures. These results are applicable to analytic theory of differential equations in the following way. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$K$</span> be a subfield of the field <span xmlns="" style="white-space: nowrap;">$M$</span> of meromorphic functions on a connected open set <span xmlns="" style="white-space: nowrap;">$U$</span> on a complex line, which is closed under differentiation. Consider a homogeneous linear differential equation over the field <span xmlns="" style="white-space: nowrap;">$K$</span> <div><a name="im9686eqn1"></a>
+			$$
+			
+\begin{equation}
+  y^{(n)}+a_1y^{n-1}+\dots+ a_n y = 0,
+\end{equation}
+
+					\tag{1}
+				
+			$$
+		</div> where <span xmlns="" style="white-space: nowrap;">$a_i\in K$.</span> With a point <span xmlns="" style="white-space: nowrap;">$z\in U$</span> which is a regular point for all coefficients <span xmlns="" style="white-space: nowrap;">$a_i$,</span> one can associate: the differential field <span xmlns="" style="white-space: nowrap;">$K_z$</span> of germs at <span xmlns="" style="white-space: nowrap;">$z$</span> of functions from <span xmlns="" style="white-space: nowrap;">$K$,</span> the differential field <span xmlns="" style="white-space: nowrap;">$F_z$</span> generated over <span xmlns="" style="white-space: nowrap;">$K_z$</span> by germs at <span xmlns="" style="white-space: nowrap;">$z$</span> of all solutions of <a style="font-style: normal" class="SLink" href="#im9686eqn1">(1)</a>, and the differential field <span xmlns="" style="white-space: nowrap;">$M_z$</span> of all meromorphic germs at <span xmlns="" style="white-space: nowrap;">$z$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc1"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 1.1.</strong></span> </span><span>   An equation <a style="font-style: normal" class="SLink" href="#im9686eqn1">(1)</a> is solvable by quadratures over <span xmlns="" style="white-space: nowrap;">$K$</span> if there exists a  point <span xmlns="" style="white-space: nowrap;">$z\in U$,</span> such that inside the field <span xmlns="" style="white-space: nowrap;">$M_z$</span> there is a chain of extensions by quadratures of the field <span xmlns="" style="white-space: nowrap;">$K_z$</span> which contains the field <span xmlns="" style="white-space: nowrap;">$F_z$.</span> </span></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  One can show that the definition of solvability of an equation by quadratures which makes use of multi-valued analytic functions is equivalent to Definition <a style="font-style: normal" class="SLink" href="#im9686proc1">1.1</a> (see [<a style="font-style: normal" class="SLink" href="#bib2">2</a>], [<a style="font-style: normal" class="SLink" href="#bib5">5</a>]). </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Thus, results from differential algebra are applicable to the analytic theory of differential equations. Moreover, in differential algebra one can consider equations over arbitrary differential fields, not only over a field of meromorphic functions. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  On the other hand, there are operations over analytic functions which do not exist in differential algebra. For example, one can compose functions, and it is natural to use compositions in formulas. Problems on solvability of equations by formulas involving compositions cannot be stated and solved using a pure algebraic approach. Note that compositions with some functions can be defined in differential algebra (see Remark <a style="font-style: normal" class="SLink" href="#im9686proc5">2.1</a>). </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  A reduction of the Second Liouville Theorem (and its generalizations for linear differential equations of arbitrary order) to differential algebra should, in principal, significantly simplify it: it means that the result can be proved using only arithmetic operations and differentiation. Nevertheless, algebraic results on solvability of linear differential equations of arbitrary order, which uses differential Galois theory (see [<a style="font-style: normal" class="SLink" href="#bib6">6</a>]) and Rosenlicht&rsquo;s algebraic proof (see [<a style="font-style: normal" class="SLink" href="#bib7">7</a>]) of that result, which uses valuation theory, are rather involved. In [<a style="font-style: normal" class="SLink" href="#bib2">2</a>], the same result over functional differential fields is proved using Liouville&rsquo;s original method. This proof is relatively simple, but it uses analytic tools and is not applicable to abstract differential fields. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Our goal is to find an algebraic proof of that result which is as simple as the original proof of the Second Liouville&rsquo;s Theorem. We are also looking for possible generalizations of that result. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  We have achieved our goal. The result is announced in the next section. Currently, one step in our proof which deals with algebraic extensions is not polished and is too involved. We have decided in this first publication, to exclude algebraic extensions from consideration. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  This makes our result weaker than the classical criterion of solvability of linear differential equations by quadratures. But also our result in many ways is stronger than the classical criterion: we show that many extensions (which we call special transcendental extensions) cannot help to solve linear differential equations. Besides that, our result is understandable for beginners and it clearly demonstrates Liouville&rsquo;s original approach. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In subsequent publications we plan to present a proof of the announced theorem. It is not as elementary as the present paper. We need the theory of algebraic curves over (possibly very big) algebraically closed fields. We also plan to consider much more general special extensions which have similar properties with special transcendental extensions. </p>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s2"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 2. Solvability over differential fields</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  We begin with the definition of an abstract differential field. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc2"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 2.1.</strong></span> </span><span>   A differential field is a field <span xmlns="" style="white-space: nowrap;">$K$</span> along with a fixed additive map <span xmlns="" style="white-space: nowrap;">$K \to K$</span> sending <span xmlns="" style="white-space: nowrap;">$a \mapsto a'$</span> satisfying the Leibniz rule <span xmlns="" style="white-space: nowrap;">$(ab)' = a'b + ab'$.</span> The element <span xmlns="" style="white-space: nowrap;">$a'$</span> is called the derivative of <span xmlns="" style="white-space: nowrap;">$a \in K$.</span> </span></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let us present several examples of differential fields. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc3"></a><span style="font-weight: normal; font-style: normal "><strong>  Example 2.1.</strong></span> </span><span>  1. The field <span xmlns="" style="white-space: nowrap;">$M(U)$</span> of all meromorphic functions on a connected open set <span xmlns="" style="white-space: nowrap;">$U$</span> on the extended complex line <span xmlns="" style="white-space: nowrap;">$\mathbb C^1 \cup \{\infty\}=\mathbb CP^1$</span> with the natural differentiation. </span><p>  2. The field of meromorphic functions <span xmlns="" style="white-space: nowrap;">$M(S)$</span> on a connected Riemann surface <span xmlns="" style="white-space: nowrap;">$S$</span> equipped with non-constant meromorphic projection <span xmlns="" style="white-space: nowrap;">$\pi\colon S\to \mathbb CP^1$</span> with the following natural differentiation: for <span xmlns="" style="white-space: nowrap;">$f\in M(S)$</span> the derivative <span xmlns="" style="white-space: nowrap;">$f'$</span> is defined as the ratio <span xmlns="" style="white-space: nowrap;">$df/d\pi$</span> of meromorphic differential forms <span xmlns="" style="white-space: nowrap;">$d f$</span> and <span xmlns="" style="white-space: nowrap;">$d \pi$.</span> </p><p>  3. Any subfield of the fields <span xmlns="" style="white-space: nowrap;">$M(U)$</span> and <span xmlns="" style="white-space: nowrap;">$M(S)$</span> closed under differentiation. </p><p>  The differential field <span xmlns="" style="white-space: nowrap;">$\mathbb C(z)$</span> of rational functions of complex variable <span xmlns="" style="white-space: nowrap;">$z$</span> and the differential field <span xmlns="" style="white-space: nowrap;">$\mathbb C(S)$</span> of rational functions on an algebraic curve <span xmlns="" style="white-space: nowrap;">$S$</span> with non-constant rational projection <span xmlns="" style="white-space: nowrap;">$\pi\colon S\to \mathbb CP^1$</span> belong to these examples. </p></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  An element <span xmlns="" style="white-space: nowrap;">$c$</span> of a differential field <span xmlns="" style="white-space: nowrap;">$K$</span> is a <em>constant</em> if <span xmlns="" style="white-space: nowrap;">$c'=0$.</span> The collection of all constants in <span xmlns="" style="white-space: nowrap;">$K$</span> form the <em>field of constants</em>. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Throughout the paper, by a differential field we mean a differential field of characteristic 0 with the same fixed subfield of constants. For example, one can assume that all differential fields under consideration contain <span xmlns="" style="white-space: nowrap;">$\mathbb C$</span> as the subfield of constants. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Consider a nested pair <span xmlns="" style="white-space: nowrap;">$K\subset F$</span> of differential fields. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc4"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 2.2.</strong></span> </span><span>   An element <span xmlns="" style="white-space: nowrap;">$y\in F$</span> is called </span><p>  1) <em>algebraic over </em><span xmlns="" style="white-space: nowrap;">$K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> if <span xmlns="" style="white-space: nowrap;">$y$</span> is a root of a polynomial over <span xmlns="" style="white-space: nowrap;">$K$;</span> </p><p>  2) an <em>integral over </em><span xmlns="" style="white-space: nowrap;">$K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> (or <em>an integral of </em><span xmlns="" style="white-space: nowrap;">$a$</span><em> </em><span xmlns="" style="white-space: nowrap;">$\in K$<em xmlns="http://www.w3.org/1999/xhtml"></em>)</span> if <span xmlns="" style="white-space: nowrap;">$y'=a$</span> and <span xmlns="" style="white-space: nowrap;">$a\in K$;</span> </p><p>  3) an <em>exponential of an integral over </em><span xmlns="" style="white-space: nowrap;">$K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> (or <em>an exponential of integral of </em><span xmlns="" style="white-space: nowrap;">$a\in K$<em xmlns="http://www.w3.org/1999/xhtml"></em>)</span> if <span xmlns="" style="white-space: nowrap;">$y'=a y$</span> and <span xmlns="" style="white-space: nowrap;">$a\in K$.</span> </p></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc5"></a><span style="font-weight: normal; font-style: normal "><strong>  Remark 2.1.</strong></span> </span><span>   Many other natural definitions can be reformulated in such a way that they will make sense over differential fields. For example, the functions <span xmlns="" style="white-space: nowrap;">$u=\exp f$</span> and <span xmlns="" style="white-space: nowrap;">$v=\ln f$</span> satisfy the following relations: <span xmlns="" style="white-space: nowrap;">$u'=f'u$,</span> <span xmlns="" style="white-space: nowrap;">$v'=f'/f$.</span> Thus, one can say that the element <span xmlns="" style="white-space: nowrap;">$u$</span> of <span xmlns="" style="white-space: nowrap;">$F$</span> is an <em>exponential of </em><span xmlns="" style="white-space: nowrap;">$f\in K$</span><em> </em> if <span xmlns="" style="white-space: nowrap;">$u'=f'u$,</span> and the element <span xmlns="" style="white-space: nowrap;">$v$</span> of <span xmlns="" style="white-space: nowrap;">$F$</span> is a <em>logarithm</em> of <span xmlns="" style="white-space: nowrap;">$f$</span> if <span xmlns="" style="white-space: nowrap;">$v'=f'/f$.</span> </span><p>  Correspondingly, many different types of representability of functions in finite terms can be reformulated for differential fields. </p></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let us define a notion of solvability by quadratures in differential algebra. Consider a nested pair <span xmlns="" style="white-space: nowrap;">$K \subset F$</span> of differential fields. Let <span xmlns="" style="white-space: nowrap;">$E$</span> be an intermediate differential field, i.e., <span xmlns="" style="white-space: nowrap;">$K \subset E \subset F$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc6"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 2.3.</strong></span> </span><span>   An extension <span xmlns="" style="white-space: nowrap;">$K\subset E$</span> is an <em>extension by quadratures</em> if there is a chain of field extensions <div><a name="im9686eqn2"></a>
+			$$
+			
+\begin{equation}
+  K=K_0\subset\dots\subset K_n=E
+\end{equation}
+
+					\tag{2}
+				
+			$$
+		</div> such that, for each <span xmlns="" style="white-space: nowrap;">$0 \leqslant i&lt;n$,</span> the extension <span xmlns="" style="white-space: nowrap;">$K_i\subset K_{i+1} $</span> is either an extension by adjoining an integral over <span xmlns="" style="white-space: nowrap;">$K_i$,</span> or by adjoining an exponential of an integral over <span xmlns="" style="white-space: nowrap;">$K_i$.</span> </span><p>  1. An element <span xmlns="" style="white-space: nowrap;">$a\in F$</span> is <em>representable by quadratures over </em><span xmlns="" style="white-space: nowrap;">$K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> if there is an extension <span xmlns="" style="white-space: nowrap;">$K\subset E$</span> by quadratures such that <span xmlns="" style="white-space: nowrap;">$a\in E$.</span> </p><p>  2. An equation over <span xmlns="" style="white-space: nowrap;">$K$</span> is <em>solvable by quadratures over </em><span xmlns="" style="white-space: nowrap;">$K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> if there is an extension <span xmlns="" style="white-space: nowrap;">$K\subset E$</span> by quadratures which contains all solutions of the equation. </p></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In the same way, one defines other types of solvability of equations in differential algebra. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc7"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 2.4.</strong></span> </span><span>   An extension <span xmlns="" style="white-space: nowrap;">$K\subset E$</span> is an <em>extension by generalized quadratures</em> if there is a chain <a style="font-style: normal" class="SLink" href="#im9686eqn2">(2)</a> in which besides adjoining integrals and exponential of integrals, algebraic extensions are allowed. </span><p>  1. An element <span xmlns="" style="white-space: nowrap;">$a\in F$</span> is <em>representable by generalized quadratures over </em><span xmlns="" style="white-space: nowrap;">$K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> if there is an extension <span xmlns="" style="white-space: nowrap;">$K\subset E$</span> by generalized quadratures such that <span xmlns="" style="white-space: nowrap;">$a\in E$.</span> </p><p>  2. An equation over <span xmlns="" style="white-space: nowrap;">$K$</span> is <em>solvable by generalized quadratures over </em><span xmlns="" style="white-space: nowrap;">$K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> if there is an extension <span xmlns="" style="white-space: nowrap;">$K\subset E$</span> by generalized quadratures which contains all solutions of the equation. </p></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Each extension <span xmlns="" style="white-space: nowrap;">$K_i\subset K_{i+1}$</span> in a chain <a style="font-style: normal" class="SLink" href="#im9686eqn2">(2)</a> defining an extension by quadratures, or by generalized quadratures is generated over <span xmlns="" style="white-space: nowrap;">$K_i$</span> by one element <span xmlns="" style="white-space: nowrap;">$y_i$.</span> The element <span xmlns="" style="white-space: nowrap;">$y_i$</span> is either algebraic, or transcendental over <span xmlns="" style="white-space: nowrap;">$K_i$.</span> If <span xmlns="" style="white-space: nowrap;">$y_i$</span> is algebraic, one can consider the extension <span xmlns="" style="white-space: nowrap;">$K_i\subset K_{i+1} $</span> as an algebraic equation. Otherwise, <span xmlns="" style="white-space: nowrap;">$y_i$</span> has to satisfy an equation <span xmlns="" style="white-space: nowrap;">$y'_i=\mathcal R(y_i)$,</span> where <span xmlns="" style="white-space: nowrap;">$\mathcal R$</span> is a rational function over <span xmlns="" style="white-space: nowrap;">$K_i$</span> (see Lemma <a style="font-style: normal" class="SLink" href="#im9686proc38">6.3</a>). </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc8"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 2.5.</strong></span> </span><span>   An element <span xmlns="" style="white-space: nowrap;">$y$</span> is a <em>special transcendental element over </em><span xmlns="" style="white-space: nowrap;">$K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> if <span xmlns="" style="white-space: nowrap;">$y$</span> is a transcendental element over <span xmlns="" style="white-space: nowrap;">$K$</span> and it satisfies a differential equation <span xmlns="" style="white-space: nowrap;">$y'=\mathcal R(y)$,</span> where <span xmlns="" style="white-space: nowrap;">$\mathcal R$</span> is a rational function over <span xmlns="" style="white-space: nowrap;">$K$</span> which is divisible by <span xmlns="" style="white-space: nowrap;">$y$,</span> i.e., is representable in the form <span xmlns="" style="white-space: nowrap;">$\mathcal R= yP/Q$,</span> where the polynomials <span xmlns="" style="white-space: nowrap;">$yP$</span> and <span xmlns="" style="white-space: nowrap;">$Q$</span> are relatively prime. </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc9"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 2.1.</strong></span> </span><span>   If an element <span xmlns="" style="white-space: nowrap;">$y$</span> is transcendental over <span xmlns="" style="white-space: nowrap;">$K$</span> and either </span><p>  1) <span xmlns="" style="white-space: nowrap;">$y$</span> is an exponential of integral over <span xmlns="" style="white-space: nowrap;">$K$,</span> </p><p>  2) <span xmlns="" style="white-space: nowrap;">$y$</span> is representable as <span xmlns="" style="white-space: nowrap;">$y=u^{-1}$,</span> where <span xmlns="" style="white-space: nowrap;">$u$</span> is an integral over <span xmlns="" style="white-space: nowrap;">$K$,</span> </p><p>   then <span xmlns="" style="white-space: nowrap;">$y$</span> is a special transcendental element over <span xmlns="" style="white-space: nowrap;">$K$.</span> </p></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc10"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span>
+<span>  1) If <span xmlns="" style="white-space: nowrap;">$y'=ay$,</span> then <span xmlns="" style="white-space: nowrap;">$y'=\mathcal R(y)$,</span> where the rational function <span xmlns="" style="white-space: nowrap;">$\mathcal R(y)=ay$</span> is divisible by <span xmlns="" style="white-space: nowrap;">$y$.</span> </span>
+<p>  2) If <span xmlns="" style="white-space: nowrap;">$u'=a$,</span> then <span xmlns="" style="white-space: nowrap;">$y'=-ay^2$,</span> i.e., <span xmlns="" style="white-space: nowrap;">$y'=\mathcal R(y)$,</span> where the rational function <span xmlns="" style="white-space: nowrap;">$\mathcal R(y)=-ay^2$</span> is divisible by <span xmlns="" style="white-space: nowrap;">$y$.</span> </p>
+<p>  Lemma <a style="font-style: normal" class="SLink" href="#im9686proc9">2.1</a> is proved. </p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  The extension of <span xmlns="" style="white-space: nowrap;">$K$</span> by <span xmlns="" style="white-space: nowrap;">$u$</span> is identical to its extension by <span xmlns="" style="white-space: nowrap;">$u^{-1}$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc11"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 2.6.</strong></span> </span><span>   An extension <span xmlns="" style="white-space: nowrap;">$K\subset E$</span> is <em>admissible</em> if there is a chain <a style="font-style: normal" class="SLink" href="#im9686eqn2">(2)</a> such that each extension <span xmlns="" style="white-space: nowrap;">$K_i\subset K_{i+1}$</span> is obtained by adjoining to <span xmlns="" style="white-space: nowrap;">$K_i$</span> a special transcendental element over <span xmlns="" style="white-space: nowrap;">$K_i$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc12"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 2.7.</strong></span> </span><span>   An extension <span xmlns="" style="white-space: nowrap;">$K\subset E$</span> is a <em>generalized admissible extension</em> if there is a  chain <a style="font-style: normal" class="SLink" href="#im9686eqn2">(2)</a> such that each extension <span xmlns="" style="white-space: nowrap;">$K_i\subset K_{i+1}$</span> is either algebraic, or is obtained by adjoining to <span xmlns="" style="white-space: nowrap;">$K_i$</span> a special transcendental element over <span xmlns="" style="white-space: nowrap;">$K_i$.</span> </span></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  We announce the following theorem. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc13"></a><span style="font-weight: normal; font-style: normal "><strong>  Theorem 2.1</strong> (on strong non solvability of linear differential equations).</span> </span><span>      A homogeneous linear differential equation over <span xmlns="" style="white-space: nowrap;">$K$</span> can be solved by generalized admissible extensions if and only if it can be solved by generalized quadratures. </span><p>  In other words, if such an equation cannot be solved by generalized quadratures, then no special transcendental extensions can help solve it either. </p></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In the present paper, we prove a weaker version of Theorem <a style="font-style: normal" class="SLink" href="#im9686proc13">2.1</a> which provides a criterion of solvability of homogeneous linear differential equations over <span xmlns="" style="white-space: nowrap;">$K$</span> by admissible extension. It implies the following theorem. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc14"></a><span style="font-weight: normal; font-style: normal "><strong>  Theorem 2.2.</strong></span> </span><span>   If a homogeneous linear differential equation can be solved by admissible extensions, then it can be solved by a nested chain of extensions by integrals and by transcendental exponentials of integrals. </span></p></div>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s3"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 3. An illustrative example</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In this section, we present a simple example which illustrates our approach and Liouville&rsquo;s method. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$K$</span> be a differential field of meromorphic functions on some connected domain on a complex line which is closed under differentiation. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Consider the second order homogeneous equation <div><a name="im9686eqn3"></a>
+			$$
+			
+\begin{equation}
+  y''+ay'+by=0
+\end{equation}
+
+					\tag{3}
+				
+			$$
+		</div> over <span xmlns="" style="white-space: nowrap;">$K$,</span> i.e., <span xmlns="" style="white-space: nowrap;">$a=a(x)$</span> and <span xmlns="" style="white-space: nowrap;">$b=b(x)$</span> are functions from <span xmlns="" style="white-space: nowrap;">$K$.</span> It is well known that <span xmlns="" style="white-space: nowrap;"><em xmlns="http://www.w3.org/1999/xhtml"></em>$y$</span><em> is a  non-zero solution of <a style="font-style: normal" class="SLink" href="#im9686eqn3">(3)</a> if and only if its logarithmic derivative </em><span xmlns="" style="white-space: nowrap;">$u=y'/y$</span><em> satisfies the Riccati equation</em> <div><a name="im9686eqn4"></a>
+			$$
+			
+\begin{equation}
+  u'+ a u+b+u^2=0.
+\end{equation}
+
+					\tag{4}
+				
+			$$
+		</div> </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Thus, problems of solving equations <a style="font-style: normal" class="SLink" href="#im9686eqn3">(3)</a> and <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a> in finite terms are closely related, and for solvability by quadratures are in fact equivalent. If one wants to show that equation <a style="font-style: normal" class="SLink" href="#im9686eqn3">(3)</a> is not solvable by quadratures, one can try to show it instead for equation <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a>. Let us demonstrate how one can make one step in proving non-solvability by quadratures of equation <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a>. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Assume that there are no solutions of the Riccati equation <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a> in the differential field <span xmlns="" style="white-space: nowrap;">$K$.</span> Let us show that an addition to the field <span xmlns="" style="white-space: nowrap;">$K$,</span> say, an exponent <span xmlns="" style="white-space: nowrap;">$y $</span> cannot help in solving <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a>. Our goal is to prove the following theorem. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc15"></a><span style="font-weight: normal; font-style: normal "><strong>  Theorem 3.1.</strong></span> </span><span>   If an exponent <span xmlns="" style="white-space: nowrap;">$y$</span> (i.e., a solution of the equation <span xmlns="" style="white-space: nowrap;">$y'=y$)</span> is transcendental over <span xmlns="" style="white-space: nowrap;">$K$,</span> and the Riccati equation <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a> has a solution in the extension <span xmlns="" style="white-space: nowrap;">$K\langle y \rangle$</span> of the differential field <span xmlns="" style="white-space: nowrap;">$K$</span> by <span xmlns="" style="white-space: nowrap;">$y$,</span> then it has a solution in <span xmlns="" style="white-space: nowrap;">$K$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc16"></a><span style="font-weight: normal; font-style: normal "><strong>  Remark 3.1.</strong></span> </span><span>   Liouville&rsquo;s theory of integrability in finite terms has the following slogan: </span><p>  If a &ldquo;simple&rdquo; equation has a solution given by an &ldquo;allowed&rdquo; formula, then it has to have (another) solution given by a &ldquo;simple&rdquo; allowed formula. </p><p>  Theorem <a style="font-style: normal" class="SLink" href="#im9686proc15">3.1</a> demonstrates this slogan: here a simple equation is the equation <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a>, an allowed formula represents a solution as an element of <span xmlns="" style="white-space: nowrap;">$K\langle y\rangle$</span> and a simple allowed formula represents a solution as an element of <span xmlns="" style="white-space: nowrap;">$K$.</span> </p></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let us prove the first two lemmas. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc17"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 3.1</strong> (Liouville&rsquo;s principle for a transcendental exponent).</span> </span><span>    An element <span xmlns="" style="white-space: nowrap;">$a\in K\langle y \rangle$</span> is representable in a unique way as a rational function in <span xmlns="" style="white-space: nowrap;">$y$</span> over <span xmlns="" style="white-space: nowrap;">$K$.</span> The derivative <span xmlns="" style="white-space: nowrap;">$R'$</span> of <span xmlns="" style="white-space: nowrap;">$R=R(y)$</span> is given by <div><a name="im9686eqn5"></a>
+			$$
+			
+\begin{equation}
+  R' = R'_x + R'_y y,
+\end{equation}
+
+					\tag{5}
+				
+			$$
+		</div> where <span xmlns="" style="white-space: nowrap;">$R'_x=\partial R/\partial x$,</span> <span xmlns="" style="white-space: nowrap;">$R'_y= \partial R/\partial y$</span> and <span xmlns="" style="white-space: nowrap;">$\partial/\partial x$,</span> <span xmlns="" style="white-space: nowrap;">$\partial/\partial y$</span> are the following differentiations of the field <span xmlns="" style="white-space: nowrap;">$K(y)$</span>: </span><p>  1) <span xmlns="" style="white-space: nowrap;">$\partial/\partial x$</span> sends <span xmlns="" style="white-space: nowrap;">$y$</span> to zero and coincides with the differentiation in <span xmlns="" style="white-space: nowrap;">$K$</span> on coefficients; </p><p>  2) <span xmlns="" style="white-space: nowrap;">$\partial/\partial y$</span> sends <span xmlns="" style="white-space: nowrap;">$y$</span> to <span xmlns="" style="white-space: nowrap;">$1$</span> and sends to zero all elements of the differential field <span xmlns="" style="white-space: nowrap;">$K$.</span> </p></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc18"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Indeed, since <span xmlns="" style="white-space: nowrap;">$y'=y$,</span> any element of the differential field <span xmlns="" style="white-space: nowrap;">$K\langle y \rangle$</span> is representable as a rational function in <span xmlns="" style="white-space: nowrap;">$y$</span> over <span xmlns="" style="white-space: nowrap;">$K$.</span> If an element <span xmlns="" style="white-space: nowrap;">$a$</span> can be represented as a rational function in <span xmlns="" style="white-space: nowrap;">$y$</span> in two different ways, i.e., <span xmlns="" style="white-space: nowrap;">$a=R_1(y)$;</span> <span xmlns="" style="white-space: nowrap;">$a=R_2(y)$,</span> then <span xmlns="" style="white-space: nowrap;">$R_1(y)=R_2(y)$,</span> which means that <span xmlns="" style="white-space: nowrap;">$y$</span> is algebraic over <span xmlns="" style="white-space: nowrap;">$K$</span> and contradicts the assumption. One can check <a style="font-style: normal" class="SLink" href="#im9686eqn5">(5)</a> using the chain rule and the identity <span xmlns="" style="white-space: nowrap;">$y'=y$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc17">3.1</a> is proved. </span></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc19"></a><span style="font-weight: normal; font-style: normal "><strong>  Remark 3.2.</strong></span> </span><span>   If <span xmlns="" style="white-space: nowrap;">$y$</span> is algebraic element over <span xmlns="" style="white-space: nowrap;">$K$,</span> then, for different rational functions <span xmlns="" style="white-space: nowrap;">$R_1, R_2$,</span> the elements <span xmlns="" style="white-space: nowrap;">$R_1(y)$</span> and <span xmlns="" style="white-space: nowrap;">$R_2(y)$</span> could be equal. For some rational functions <span xmlns="" style="white-space: nowrap;">$R$</span> the element <span xmlns="" style="white-space: nowrap;">$R(y)$</span> is not defined. Assume that an element <span xmlns="" style="white-space: nowrap;">$y$</span> (either transcendental or algebraic over <span xmlns="" style="white-space: nowrap;">$K$)</span> satisfies the equation <span xmlns="" style="white-space: nowrap;">$y'=y$</span> and for some <span xmlns="" style="white-space: nowrap;">$R$</span> the element <span xmlns="" style="white-space: nowrap;">$a=R(y)$</span> is defined, then <span xmlns="" style="white-space: nowrap;">$a' = R'_x(y) + y R'_y (y)$</span> for its derivative <span xmlns="" style="white-space: nowrap;">$a'$.</span> </span></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  According to Lemma <a style="font-style: normal" class="SLink" href="#im9686proc17">3.1</a>, the field <span xmlns="" style="white-space: nowrap;">$K\langle y\rangle$</span> is isomorphic to the field <span xmlns="" style="white-space: nowrap;">$K(y)$</span> of rational functions over <span xmlns="" style="white-space: nowrap;">$K$</span> with the differentiation given by <a style="font-style: normal" class="SLink" href="#im9686eqn5">(5)</a>. In the field of rational functions <span xmlns="" style="white-space: nowrap;">$K(y)$,</span> the order of a rational function at the point <span xmlns="" style="white-space: nowrap;">$y=0$</span> is defined. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc20"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 3.1.</strong></span> </span><span>   A rational function <span xmlns="" style="white-space: nowrap;">$R(y)$</span> over <span xmlns="" style="white-space: nowrap;">$K$</span> has order <span xmlns="" style="white-space: nowrap;">$m$</span> at the point <span xmlns="" style="white-space: nowrap;">$y=0$</span> if it is representable as <span xmlns="" style="white-space: nowrap;">$R=y^mR_0$,</span> where <span xmlns="" style="white-space: nowrap;">$R_0$</span> is a rational function which is not divisible by any positive or negative degree of <span xmlns="" style="white-space: nowrap;">$y$.</span> </span></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Using <a style="font-style: normal" class="SLink" href="#im9686eqn5">(5)</a>, one can check the following lemma. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc21"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 3.2.</strong></span> </span><span>   If a rational function <span xmlns="" style="white-space: nowrap;">$R$</span> has order <span xmlns="" style="white-space: nowrap;">$m$</span> at the point <span xmlns="" style="white-space: nowrap;">$y=0$,</span> then its derivative <span xmlns="" style="white-space: nowrap;">$R'= R'_x+R'_y y$</span> has order at <span xmlns="" style="white-space: nowrap;">$y=0$</span> not smaller than <span xmlns="" style="white-space: nowrap;">$m$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc22"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> If <span xmlns="" style="white-space: nowrap;">$R=y^mR_0$,</span> then <div><a name="im9686ueqn1"></a>
+			$$
+			
+\begin{equation*}
+R'=my^mR_0 +y^{m+1}(R_0)'_y + y^m (R_0)'_x.
+\end{equation*}
+
+					\notag
+				
+			$$
+		</div> The function <span xmlns="" style="white-space: nowrap;">$R_0$</span> equals to <span xmlns="" style="white-space: nowrap;">$P/Q$,</span> where <span xmlns="" style="white-space: nowrap;">$Q$</span> is not divisible by <span xmlns="" style="white-space: nowrap;">$y$.</span> Thus, <span xmlns="" style="white-space: nowrap;">$(R_0)'_y$</span> and <span xmlns="" style="white-space: nowrap;">$(R_0)'_x$</span> are equal to <span xmlns="" style="white-space: nowrap;">$(P'_yQ-PQ'_y)/Q^2$</span> and <span xmlns="" style="white-space: nowrap;">$(P'_xQ-PQ'_x)/Q^2$,</span> where the polynomial <span xmlns="" style="white-space: nowrap;">$Q^2$</span> is not divisible by <span xmlns="" style="white-space: nowrap;">$y$.</span> So <span xmlns="" style="white-space: nowrap;">$(R_0)'_y$</span> and <span xmlns="" style="white-space: nowrap;">$(R_0)'_x$</span> have non-negative order, which implies Lemma <a style="font-style: normal" class="SLink" href="#im9686proc21">3.2</a>. </span></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc23"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof</strong> of Theorem <a style="font-style: normal" class="SLink" href="#im9686proc15">3.1</a>.</span><span>  Assume that <span xmlns="" style="white-space: nowrap;">$u=R(y)$</span> satisfies <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a>. If we plug in to the rational function <span xmlns="" style="white-space: nowrap;">$R$</span> any solution <span xmlns="" style="white-space: nowrap;">$y$</span> of the equation <span xmlns="" style="white-space: nowrap;">$y'=y$,</span> then we still will get a solution of <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a> under the assumption that the plugging in of <span xmlns="" style="white-space: nowrap;">$y$</span> to <span xmlns="" style="white-space: nowrap;">$R$</span> is well defined (see Remark <a style="font-style: normal" class="SLink" href="#im9686proc19">3.2</a>). </span>
+<p>  Let us try to plug in to <span xmlns="" style="white-space: nowrap;">$R$</span> the solution <span xmlns="" style="white-space: nowrap;">$y\equiv 0$.</span> If we succeed, then we will have a solution <span xmlns="" style="white-space: nowrap;">$R(0)$</span> of the Riccati equation <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a> in the field <span xmlns="" style="white-space: nowrap;">$K$.</span> One can do it only if the order of the rational function <span xmlns="" style="white-space: nowrap;">$R(y)$</span> at the point <span xmlns="" style="white-space: nowrap;">$y=0$</span> is non-negative. If <span xmlns="" style="white-space: nowrap;">$R$</span> has a pole at the point <span xmlns="" style="white-space: nowrap;">$y=0$,</span> then plugging <span xmlns="" style="white-space: nowrap;">$y= 0$</span> in to <span xmlns="" style="white-space: nowrap;">$R$</span> makes no sense. </p>
+<p>  Let us show that if <span xmlns="" style="white-space: nowrap;">$u=R(y)$</span> has a negative order <span xmlns="" style="white-space: nowrap;">$k$</span> at <span xmlns="" style="white-space: nowrap;">$y=0$,</span> then it cannot satisfy equation <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a>. Indeed, if <span xmlns="" style="white-space: nowrap;">$u$</span> has an order <span xmlns="" style="white-space: nowrap;">$k&lt;0$,</span> then <span xmlns="" style="white-space: nowrap;">$u^2$</span> has an order <span xmlns="" style="white-space: nowrap;">$2k&lt;0$.</span> The terms <span xmlns="" style="white-space: nowrap;">$u$</span> and <span xmlns="" style="white-space: nowrap;">$u'$</span> in <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a> have orders <span xmlns="" style="white-space: nowrap;">$\geqslant k$.</span> So the term <span xmlns="" style="white-space: nowrap;">$u^2$</span> cannot be cancelled and Riccati&rsquo;s equation cannot be satisfied. Thus, if <span xmlns="" style="white-space: nowrap;">$u=R$</span> satisfies <a style="font-style: normal" class="SLink" href="#im9686eqn4">(4)</a>, it cannot have negative order at <span xmlns="" style="white-space: nowrap;">$y=0$.</span> </p>
+<p>  The theorem is proved. </p></div>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s4"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 4. Generalized Riccati equation</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In this section, we recall classical results on the generalized Riccati equation (the presentation is borrowed from [<a style="font-style: normal" class="SLink" href="#bib2">2</a>]). Let <span xmlns="" style="white-space: nowrap;">$y$</span> be a non-zero element of a differential field and let <span xmlns="" style="white-space: nowrap;">$u$</span> be its logarithmic derivative, i.e., <span xmlns="" style="white-space: nowrap;">$y'=uy$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc24"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 4.1.</strong></span> </span><span>   Let <span xmlns="" style="white-space: nowrap;">$D_n$</span> be a polynomial in <span xmlns="" style="white-space: nowrap;">$u$</span> and in its derivatives <span xmlns="" style="white-space: nowrap;">$u', \dots, u^{(n-1)}$</span> up to order <span xmlns="" style="white-space: nowrap;">$(n - 1)$</span> defined inductively by the following conditions: <div><a name="im9686ueqn2"></a>
+			$$
+			
+\begin{equation*}
+D_0=1,\qquad D_{k+1}=\frac{d D_k}{d x} + uD_k.
+\end{equation*}
+
+					\notag
+				
+			$$
+		</div> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc25"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 4.1.</strong></span> </span><span>   1. The polynomial <span xmlns="" style="white-space: nowrap;">$D_n$</span> has integral coefficients and <span xmlns="" style="white-space: nowrap;">$\deg D_n =n$.</span> The degree <span xmlns="" style="white-space: nowrap;">$n$</span> homogeneous part of <span xmlns="" style="white-space: nowrap;">$D_n$</span> equals to <span xmlns="" style="white-space: nowrap;">$u^n$</span> (i.e., <span xmlns="" style="white-space: nowrap;">$D_n =u^n + \widetilde D_n$,</span> where <span xmlns="" style="white-space: nowrap;">$\deg \widetilde D_n &lt;  n$).</span> </span><p>  2. If <span xmlns="" style="white-space: nowrap;">$y$</span> is a function whose logarithmic derivative is equal to <span xmlns="" style="white-space: nowrap;">$u$</span> (i.e., if <span xmlns="" style="white-space: nowrap;">$y'=uy$),</span> then <span xmlns="" style="white-space: nowrap;">$y^{(n)} = D_n(u)y$</span> for any <span xmlns="" style="white-space: nowrap;">$n\geqslant 0$.</span> </p></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Both claims of the lemma can be easily checked by induction. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Consider a homogeneous linear differential equation whose coefficients <span xmlns="" style="white-space: nowrap;">$a_i$</span> belong to a differential field <span xmlns="" style="white-space: nowrap;">$K$</span>: <div><a name="im9686eqn6"></a>
+			$$
+			
+\begin{equation}
+   y^{(n)}+a_1y^{(n-1)}+\dots +a_n y=0.
+\end{equation}
+
+					\tag{6}
+				
+			$$
+		</div> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc26"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 4.2.</strong></span> </span><span>   The equation <div><a name="im9686eqn7"></a>
+			$$
+			
+\begin{equation}
+  D_n + a_1 D_{n-1} +\dots+ a_n D_0 = 0
+\end{equation}
+
+					\tag{7}
+				
+			$$
+		</div> of order <span xmlns="" style="white-space: nowrap;">$(n-1)$</span> is called the <em>generalized Riccati equation</em> for the homogeneous linear differential equation  <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a>. </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc27"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 4.2.</strong></span> </span><span>   A non-zero element <span xmlns="" style="white-space: nowrap;">$y$</span> satisfies the linear differential equation <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a> if and only if its logarithmic derivative <span xmlns="" style="white-space: nowrap;">$u=y'/y$</span> satisfies the corresponding generalized Riccati equation <a style="font-style: normal" class="SLink" href="#im9686eqn7">(7)</a>. </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc28"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> For proving Lemma <a style="font-style: normal" class="SLink" href="#im9686proc27">4.2</a> in one direction, one can divide <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a> by <span xmlns="" style="white-space: nowrap;">$y$</span> and use the identity <span xmlns="" style="white-space: nowrap;">$y^{(k)}/y=D_k(u)$.</span> </span>
+<p>  In the other direction, if <span xmlns="" style="white-space: nowrap;">$u$</span> is a solution of <a style="font-style: normal" class="SLink" href="#im9686eqn7">(7)</a>, then multiply <a style="font-style: normal" class="SLink" href="#im9686eqn7">(7)</a> by <span xmlns="" style="white-space: nowrap;">$y$</span> and use the identity <span xmlns="" style="white-space: nowrap;">$y^{k} = D_k(u)y$.</span> We obtain that <span xmlns="" style="white-space: nowrap;">$y$</span> is a non-zero solution of <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a>. Lemma <a style="font-style: normal" class="SLink" href="#im9686proc27">4.2</a> is proved. </p></div>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s5"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 5. Reduction of order</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In this section, we recall the classical procedure of order reduction for homogeneous linear differential equations (the presentation is borrowed from [<a style="font-style: normal" class="SLink" href="#bib5">5</a>]). </p><a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s5-1"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">5.1. Division with a remainder of differential operators</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  A linear differential operator of order <span xmlns="" style="white-space: nowrap;">$n$</span> over a differential field <span xmlns="" style="white-space: nowrap;">$K$</span> is an operator <span xmlns="" style="white-space: nowrap;">$L= a_nD^n+\dots +a_0$,</span> where <span xmlns="" style="white-space: nowrap;">$a_i\in K$</span> and <span xmlns="" style="white-space: nowrap;">$a_n\neq 0$,</span> acting on an element <span xmlns="" style="white-space: nowrap;">$y$</span> of any  differential  field <span xmlns="" style="white-space: nowrap;">$F$</span>  containing <span xmlns="" style="white-space: nowrap;">$k$</span> by the formula <div><a name="im9686ueqn3"></a>
+			$$
+			
+\begin{equation*}
+L(y)=a_ny^{(n)}+\dots +a_0y.
+\end{equation*}
+
+					\notag
+				
+			$$
+		</div> For operators <span xmlns="" style="white-space: nowrap;">$L_1$</span> and <span xmlns="" style="white-space: nowrap;">$L_2$</span> over <span xmlns="" style="white-space: nowrap;">$K$,</span> their product <span xmlns="" style="white-space: nowrap;">$L=L_1\circ L_2=L_1(L_2)$</span> is also an operator over <span xmlns="" style="white-space: nowrap;">$K$.</span> The multiplication of operators is, in general, non-commutative, but the leading term of the operator <span xmlns="" style="white-space: nowrap;">$L=L_1\circ L_2$</span> is equal to the product of the leading terms of the operators <span xmlns="" style="white-space: nowrap;">$L_1$</span> and <span xmlns="" style="white-space: nowrap;">$L_2$.</span> For operators <span xmlns="" style="white-space: nowrap;">$L$</span> and <span xmlns="" style="white-space: nowrap;">$L_2$</span> of orders <span xmlns="" style="white-space: nowrap;">$n$</span> and <span xmlns="" style="white-space: nowrap;">$k$</span> over <span xmlns="" style="white-space: nowrap;">$K$,</span> there exist unique operators <span xmlns="" style="white-space: nowrap;">$L_1$</span> and <span xmlns="" style="white-space: nowrap;">$R$</span> over <span xmlns="" style="white-space: nowrap;">$K$</span> such that <span xmlns="" style="white-space: nowrap;">$L=L_1\circ L_2+R$,</span> and the order of <span xmlns="" style="white-space: nowrap;">$R$</span> is strictly less than <span xmlns="" style="white-space: nowrap;">$k$.</span> The operator <span xmlns="" style="white-space: nowrap;">$R$</span> is called the <em>  remainder in the right division</em> of the operator <span xmlns="" style="white-space: nowrap;">$L$</span> by the operator <span xmlns="" style="white-space: nowrap;">$L_2$.</span> </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  The operators <span xmlns="" style="white-space: nowrap;">$L_1$</span> and <span xmlns="" style="white-space: nowrap;">$R$</span> can be constructed explicitly: the algorithm for the division of operators with a remainder is based on the formula for the leading term of the product and is very similar to the algorithm of the division with a remainder for polynomials in one variable. </p><a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s5-2"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">5.2. Procedure of order reduction</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$L$</span> be a linear differential operator over <span xmlns="" style="white-space: nowrap;">$K$,</span> <span xmlns="" style="white-space: nowrap;">$y_1$</span> a non-zero element of the field <span xmlns="" style="white-space: nowrap;">$K$,</span> <span xmlns="" style="white-space: nowrap;">$p=y_1'/y_1$</span> its logarithmic derivative and <span xmlns="" style="white-space: nowrap;">$L_2= D-p$</span> the first order operator annihilating <span xmlns="" style="white-space: nowrap;">$y_1$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc29"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 5.1.</strong></span> </span><span>   The operator <span xmlns="" style="white-space: nowrap;">$L$</span> is divisible by <span xmlns="" style="white-space: nowrap;">$L_2$</span> from the right if and only if the element <span xmlns="" style="white-space: nowrap;">$y_1$</span> satisfies the identity <span xmlns="" style="white-space: nowrap;">$L(y_1)\equiv 0$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc30"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> The remainder <span xmlns="" style="white-space: nowrap;">$R$</span> in the right division of <span xmlns="" style="white-space: nowrap;">$L$</span> by <span xmlns="" style="white-space: nowrap;">$L_2$</span> is the operator of multiplication by <span xmlns="" style="white-space: nowrap;">$c_0$,</span> where <span xmlns="" style="white-space: nowrap;">$c_0=(1/y_1)L(y_1)$.</span> Indeed, the desired equality can be obtained by plugging in <span xmlns="" style="white-space: nowrap;">$y=y_1$</span> to the identity <span xmlns="" style="white-space: nowrap;">$L(y)\equiv L_1\circ L_2(y)+c_0y$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc29">5.1</a> is proved. </span></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Using a non-zero solution <span xmlns="" style="white-space: nowrap;">$y_1$</span> of the equation <span xmlns="" style="white-space: nowrap;">$L(y)=0$</span> of order <span xmlns="" style="white-space: nowrap;">$n$,</span> one can reduce the order of this equation. To this end, one needs to represent the operator <span xmlns="" style="white-space: nowrap;">$L$</span> in the form <span xmlns="" style="white-space: nowrap;">$L=L_1\circ L_2$,</span> where <span xmlns="" style="white-space: nowrap;">$L_1$</span> is an operator of order <span xmlns="" style="white-space: nowrap;">$(n-1)$.</span> </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  The coefficients of the operator <span xmlns="" style="white-space: nowrap;">$L_1$</span> lie in an extension of the differential field <span xmlns="" style="white-space: nowrap;">$K$</span> obtained by adjoining the logarithmic derivative <span xmlns="" style="white-space: nowrap;">$p$</span> of the element <span xmlns="" style="white-space: nowrap;">$y_1$.</span> If one knows some solution <span xmlns="" style="white-space: nowrap;">$u$</span> of the equation <span xmlns="" style="white-space: nowrap;">$L_1(u)=0$,</span> then one can construct a certain solution <span xmlns="" style="white-space: nowrap;">$y$</span> of the initial equation <span xmlns="" style="white-space: nowrap;">$L(y)=0$.</span> To do that, it suffices to solve the equation <span xmlns="" style="white-space: nowrap;">$L_2(y)=y'-py=u$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc31"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 5.2.</strong></span> </span><span>   An element <span xmlns="" style="white-space: nowrap;">$y$</span> satisfies the equation <span xmlns="" style="white-space: nowrap;">$L_2(y)=u$</span> if and only if <span xmlns="" style="white-space: nowrap;">$y = y_1 z$,</span> where <span xmlns="" style="white-space: nowrap;">$z$</span> satisfies the equation <span xmlns="" style="white-space: nowrap;">$z' = u / y_1$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc32"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> The operator <span xmlns="" style="white-space: nowrap;">$L_2(y)=y'-(y_1'/y_1)y$</span> can be rewritten in the form <span xmlns="" style="white-space: nowrap;">$L_2(y)= y_1(y/y_1)'$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc31">5.2</a> is proved. </span></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  The procedure just described is called the <em>reduction of order</em> of a differential equation. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc33"></a><span style="font-weight: normal; font-style: normal "><strong>  Remark 5.1.</strong></span> </span><span>   An operator annihilating <span xmlns="" style="white-space: nowrap;">$y_1$</span> is defined up to a factor, which can be an arbitrary element of the field <span xmlns="" style="white-space: nowrap;">$K$,</span> and the procedure of the order reduction depends on the choice of this element. It is easier to divide <span xmlns="" style="white-space: nowrap;">$L$</span> from the right by the operator <span xmlns="" style="white-space: nowrap;">$\widetilde L_2=D\circ y_1^{-1}$</span> and represent <span xmlns="" style="white-space: nowrap;">$L$</span> in the form <span xmlns="" style="white-space: nowrap;">$L=\widetilde L_1 \widetilde L_2$</span> which reduces the initial equation <span xmlns="" style="white-space: nowrap;">$L(y)=0$</span> to the equation <span xmlns="" style="white-space: nowrap;">$\widetilde L_1(u)=0$</span> of smaller order. Usually, this very procedure of order reduction is given in textbooks on differential equations. Note that the coefficients of the operator <span xmlns="" style="white-space: nowrap;">$\widetilde L_1$</span> lie in the extension of the differential field <span xmlns="" style="white-space: nowrap;">$K$</span> obtained by adjoining the element <span xmlns="" style="white-space: nowrap;">$y_1$</span> itself, rather than its logarithmic derivative <span xmlns="" style="white-space: nowrap;">$p$.</span> This makes the operator <span xmlns="" style="white-space: nowrap;">$\widetilde L_1$</span> inconvenient for the purposes of our paper. </span></p></div>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s6"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 6. Pure transcendental extensions</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  A field extension <span xmlns="" style="white-space: nowrap;">$K\subset F$</span> is <em>pure transcendental</em> if any element <span xmlns="" style="white-space: nowrap;">$y\in F$,</span> which is algebraic over <span xmlns="" style="white-space: nowrap;">$K$,</span> belongs to <span xmlns="" style="white-space: nowrap;">$K$.</span> Let us start with the following example. Let <span xmlns="" style="white-space: nowrap;">$y$</span> be an integral over <span xmlns="" style="white-space: nowrap;">$K$,</span> i.e., <span xmlns="" style="white-space: nowrap;">$y'=a$</span> for some <span xmlns="" style="white-space: nowrap;">$a\in K$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc34"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 6.1.</strong></span> </span><span>   The integral <span xmlns="" style="white-space: nowrap;">$y$</span> either belongs to the field <span xmlns="" style="white-space: nowrap;">$K$</span> or is transcendental over <span xmlns="" style="white-space: nowrap;">$K$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc35"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Assume that an integral <span xmlns="" style="white-space: nowrap;">$y$</span> of an element <span xmlns="" style="white-space: nowrap;">$a\in K$</span> is algebraic over <span xmlns="" style="white-space: nowrap;">$K$</span> but does not belong to <span xmlns="" style="white-space: nowrap;">$K$.</span> Let <span xmlns="" style="white-space: nowrap;">$Q$</span> be a polynomial over <span xmlns="" style="white-space: nowrap;">$K$</span> of the smallest possible degree <span xmlns="" style="white-space: nowrap;">$n&gt;1$</span> such that <span xmlns="" style="white-space: nowrap;">$Q(y)=a_ny^n+\dots +a_0=0$.</span> We can assume that <span xmlns="" style="white-space: nowrap;">$a_n=1$.</span> Differentiating the identity <span xmlns="" style="white-space: nowrap;">$Q(y)=0$,</span> we obtain the equation <div><a name="im9686eqn8"></a>
+			$$
+			
+\begin{equation}
+  (na +a'_{n-1} )y^{n-1}+\dots+(a_1a+a'_0)=0.
+\end{equation}
+
+					\tag{8}
+				
+			$$
+		</div> The coefficient <span xmlns="" style="white-space: nowrap;">$n a+a'_{n-1}$</span> is not equal to zero. Indeed, otherwise the derivative of an element <span xmlns="" style="white-space: nowrap;">$-a_{n-1}/n$</span> is <span xmlns="" style="white-space: nowrap;">$a$.</span> It means that <span xmlns="" style="white-space: nowrap;">$y$</span> belongs to <span xmlns="" style="white-space: nowrap;">$K$,</span> since <span xmlns="" style="white-space: nowrap;">$y=-a_{n-1}/n+C$</span> for some constant <span xmlns="" style="white-space: nowrap;">$C$,</span> and all constants belong to <span xmlns="" style="white-space: nowrap;">$K$.</span> Equation <a style="font-style: normal" class="SLink" href="#im9686eqn8">(8)</a> for <span xmlns="" style="white-space: nowrap;">$y$</span> has degree <span xmlns="" style="white-space: nowrap;">$n-1&lt;n$.</span> The contradiction proves that <span xmlns="" style="white-space: nowrap;">$y$</span> is not algebraic over <span xmlns="" style="white-space: nowrap;">$K$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc34">6.1</a> is proved. </span></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Lemma <a style="font-style: normal" class="SLink" href="#im9686proc34">6.1</a> implies that any non-trivial extension by adjoining an integral is pure transcendental. Let us describe all pure transcendental extensions of transcendental degree one. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$K\subset F$</span> be a nested pair of differential fields. Assume that <span xmlns="" style="white-space: nowrap;">$y\in F$</span> is transcendental over <span xmlns="" style="white-space: nowrap;">$K$</span> and the algebraic field <span xmlns="" style="white-space: nowrap;">$K(y)\subset F$</span> generated by <span xmlns="" style="white-space: nowrap;">$y$</span> and <span xmlns="" style="white-space: nowrap;">$K$</span> is closed under differentiation, in particular, <span xmlns="" style="white-space: nowrap;">$y'$</span> belongs to the algebraic field <span xmlns="" style="white-space: nowrap;">$K(y)$,</span> i.e., <span xmlns="" style="white-space: nowrap;">$y'=R(y)$,</span> where <span xmlns="" style="white-space: nowrap;">$R$</span> is some rational function over <span xmlns="" style="white-space: nowrap;">$K$.</span> </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Liouville&rsquo;s principle shows that, for any <span xmlns="" style="white-space: nowrap;">$R\in K(y)$,</span> there is a pure transcendental extension <span xmlns="" style="white-space: nowrap;">$K\subset K\langle y\rangle$</span> in which the identity <span xmlns="" style="white-space: nowrap;">$y'=R(y)$</span> holds and the rational function <span xmlns="" style="white-space: nowrap;">$R$</span> together with differentiation in the field <span xmlns="" style="white-space: nowrap;">$K$</span> completely determine the differential field <span xmlns="" style="white-space: nowrap;">$K\langle y\rangle$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc36"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 6.2.</strong></span> </span><span>   Let <span xmlns="" style="white-space: nowrap;">$K$</span> be a differential field, and <span xmlns="" style="white-space: nowrap;">$K(t)\supset K$</span> the field of rational functions over <span xmlns="" style="white-space: nowrap;">$K$</span> in indeterminate <span xmlns="" style="white-space: nowrap;">$t$.</span> Then, for any choice of rational function <span xmlns="" style="white-space: nowrap;">$\mathcal{R} \in K(t)$,</span> there exists a unique differentiation on the field <span xmlns="" style="white-space: nowrap;">$K(t)\supset K$</span> which coincides with the differentiation on the subfield <span xmlns="" style="white-space: nowrap;">$K$</span> and is equal to <span xmlns="" style="white-space: nowrap;">$\mathcal R(t)$</span> on <span xmlns="" style="white-space: nowrap;">$t$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc37"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Consider the map sending <span xmlns="" style="white-space: nowrap;">$R\in K(t)$</span> to <span xmlns="" style="white-space: nowrap;">$R'\in K(t)$</span> given by the formula <div><a name="im9686eqn9"></a>
+			$$
+			
+\begin{equation}
+  R' = R'_K + \mathcal{R} R_t,
+\end{equation}
+
+					\tag{9}
+				
+			$$
+		</div> where <span xmlns="" style="white-space: nowrap;">$R'_K$</span> denotes the derivative of <span xmlns="" style="white-space: nowrap;">$R$</span> by the differentiation rule of <span xmlns="" style="white-space: nowrap;">$K$,</span> viewing <span xmlns="" style="white-space: nowrap;">$t$</span> as a constant. And <span xmlns="" style="white-space: nowrap;">$R_t$</span> denotes the usual partial derivative with respect to <span xmlns="" style="white-space: nowrap;">$t$,</span> viewing the elements of <span xmlns="" style="white-space: nowrap;">$K$</span> as constant. One can check that the map <span xmlns="" style="white-space: nowrap;">$R\to R'$</span> provides a differentiation of the field <span xmlns="" style="white-space: nowrap;">$K(t)$</span> which satisfies all needed conditions. Such differentiation is unique, since <span xmlns="" style="white-space: nowrap;">$K(t)$</span> is generated by <span xmlns="" style="white-space: nowrap;">$t$</span> and <span xmlns="" style="white-space: nowrap;">$K$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc36">6.2</a> is proved. </span></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc38"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 6.3</strong> (Liouville&rsquo;s Principle).</span> </span><span>    Let <span xmlns="" style="white-space: nowrap;">$F$</span> be some differential field extension of <span xmlns="" style="white-space: nowrap;">$K$,</span> and <span xmlns="" style="white-space: nowrap;">$y \in F$</span> transcendental over <span xmlns="" style="white-space: nowrap;">$K$.</span> Suppose that <span xmlns="" style="white-space: nowrap;">$y$</span> satisfies an equation <span xmlns="" style="white-space: nowrap;">$y' = \mathcal{R}(y)$,</span> where <span xmlns="" style="white-space: nowrap;">$\mathcal{R}$</span> is a rational function with coefficients in <span xmlns="" style="white-space: nowrap;">$K$.</span> Then <span xmlns="" style="white-space: nowrap;">$K \langle y \rangle$</span> is isomorphic to the field <span xmlns="" style="white-space: nowrap;">$K(t)$</span> of rational functions over <span xmlns="" style="white-space: nowrap;">$K$</span> with differentiation given <span xmlns="" style="white-space: nowrap;">$t'=\mathcal R(t)$</span> (see Lemma <a style="font-style: normal" class="SLink" href="#im9686proc36">6.2</a>). </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc39"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Consider the map from the field <span xmlns="" style="white-space: nowrap;">$K(t)$</span> of rational functions over <span xmlns="" style="white-space: nowrap;">$K$</span> to the field <span xmlns="" style="white-space: nowrap;">$K\langle y\rangle$</span> which fixes elements of <span xmlns="" style="white-space: nowrap;">$K$</span> and sends <span xmlns="" style="white-space: nowrap;">$t$</span> to <span xmlns="" style="white-space: nowrap;">$y$.</span> Since <span xmlns="" style="white-space: nowrap;">$y$</span> is transcendental over <span xmlns="" style="white-space: nowrap;">$K$,</span> this map is injective. Indeed, if <span xmlns="" style="white-space: nowrap;">$R_1(y)=R_2(y)$</span> for different functions <span xmlns="" style="white-space: nowrap;">$R_1,R_2\in K(t)$,</span> then the identity <span xmlns="" style="white-space: nowrap;">$R_1(y)=R_2(y)$</span> provides an algebraic equation over <span xmlns="" style="white-space: nowrap;">$K$</span> on <span xmlns="" style="white-space: nowrap;">$y$</span> which is impossible. </span>
+<p>  So, the field <span xmlns="" style="white-space: nowrap;">$K\langle y \rangle$</span> contains an isomorphic copy of (the algebraic field) <span xmlns="" style="white-space: nowrap;">$K(t)$,</span> and by Lemma <a style="font-style: normal" class="SLink" href="#im9686proc36">6.2</a>, <span xmlns="" style="white-space: nowrap;">$K(t)$</span> can be made a differential field with the choice <span xmlns="" style="white-space: nowrap;">$t' = \mathcal{R}(t)$.</span> Our map preserves differentiation between the differential field <span xmlns="" style="white-space: nowrap;">$K(t)$</span> and its image in <span xmlns="" style="white-space: nowrap;">$K \langle y \rangle$.</span> And since <span xmlns="" style="white-space: nowrap;">$K\langle y \rangle$</span> is the smallest differential field containing <span xmlns="" style="white-space: nowrap;">$K$</span> and <span xmlns="" style="white-space: nowrap;">$y$,</span> we must have that <span xmlns="" style="white-space: nowrap;">$K \langle y \rangle$</span> is precisely the image of <span xmlns="" style="white-space: nowrap;">$K(t)$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc38">6.3</a> is proved. </p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  The following lemma is obvious. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc40"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 6.4.</strong></span> </span><span>   Let <span xmlns="" style="white-space: nowrap;">$K=K_0\subset \dots\subset K_n=F$</span> be a chain of fields. If, for any <span xmlns="" style="white-space: nowrap;">$i=0,\dots,n-1,$</span> the extension <span xmlns="" style="white-space: nowrap;">$K_i\subset K_{i+1}$</span> is pure transcendental, then so is the extension <span xmlns="" style="white-space: nowrap;">$K\subset F$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc41"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Assume that <span xmlns="" style="white-space: nowrap;">$y\in K_{i+1}$</span> is algebraic over <span xmlns="" style="white-space: nowrap;">$K_0$.</span> Since <span xmlns="" style="white-space: nowrap;">$K_0\subset K_i$,</span> the element <span xmlns="" style="white-space: nowrap;">$y$</span> belongs to <span xmlns="" style="white-space: nowrap;">$K_i$.</span> By repeating this argument, one obtains that <span xmlns="" style="white-space: nowrap;">$y\in K_0$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc40">6.4</a> is proved. </span></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Consider a homogeneous linear differential equation <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a> over the field <span xmlns="" style="white-space: nowrap;">$\mathbb C(z)$</span> of complex rational functions with the usual differentiation. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc42"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 6.5.</strong></span> </span><span>   If all coefficients of equation <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a> are polynomials <span xmlns="" style="white-space: nowrap;">$a_i\in \mathbb C[z]$,</span> then the extension <span xmlns="" style="white-space: nowrap;">$M$</span> of the field <span xmlns="" style="white-space: nowrap;">$\mathbb C(z)$,</span> obtained by adjoining all solutions of <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a>, is pure transcendental. </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc43"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> The extension <span xmlns="" style="white-space: nowrap;">$M$</span> is contained in the field of meromorphic functions on the complex line. A meromorphic function is algebraic over <span xmlns="" style="white-space: nowrap;">$\mathbb C(z)$</span> if and only if it is rational. Lemma <a style="font-style: normal" class="SLink" href="#im9686proc42">6.5</a> is proved. </span></div>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s7"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 7. Adjoining a special transcendental element</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In this section, we prove Lemma <a style="font-style: normal" class="SLink" href="#im9686proc46">7.2</a> which provides an important property of special transcendental extensions. </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  For a rational function <span xmlns="" style="white-space: nowrap;">$R\in K(y)$</span> over a field <span xmlns="" style="white-space: nowrap;">$K$,</span> we denote by <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} R$</span> its order at the point <span xmlns="" style="white-space: nowrap;">$y=0$</span> (see Definition <a style="font-style: normal" class="SLink" href="#im9686proc20">3.1</a>). For any functions <span xmlns="" style="white-space: nowrap;">$R_1, R_2 \in K(y)$,</span> the following relations hold: </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  1) <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} (R_1 R_2)=\operatorname{ord} R_1+\operatorname{ord} R_2$;</span> </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  2) <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} (R_1+R_2) \geqslant \min (\operatorname{ord} R_1, \operatorname{ord} R_2)$,</span> and if <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} R_1\neq \operatorname{ord} R_2$;</span> </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">   then <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} (R_1+R_2)= \min (\operatorname{ord} R_1, \operatorname{ord} R_2)$.</span> </p><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$D\colon K(y)\to K(y)$</span> be any differentiation of the field <span xmlns="" style="white-space: nowrap;">$K(y)$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc44"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 7.1.</strong></span> </span><span>   Non-zero elements <span xmlns="" style="white-space: nowrap;">$f\in K(y)$</span> satisfying inequality <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} D(f)\geqslant \operatorname{ord} f$</span> form a multiplicative subgroup in the field <span xmlns="" style="white-space: nowrap;">$K(y)$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc45"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> The inequality <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} D(f)\geqslant \operatorname{ord} f$</span> can be rewritten as <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} (D f/f)\geqslant 0$.</span> The logarithmic derivative <span xmlns="" style="white-space: nowrap;">$Df/f$</span> provides a homomorphism of the multiplicative group of the field <span xmlns="" style="white-space: nowrap;">$K(y)$</span> to its additive group. An element <span xmlns="" style="white-space: nowrap;">$f$</span> satisfies <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} Df\geqslant \operatorname{ord} f$</span> if and only if it belongs to the pre-image of the additive subgroup of functions <span xmlns="" style="white-space: nowrap;">$g\in K(y)$</span> having non-negative order. Lemma <a style="font-style: normal" class="SLink" href="#im9686proc44">7.1</a> is proved. </span></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$y$</span> be a special transcendental element over a differential field <span xmlns="" style="white-space: nowrap;">$K$</span> satisfying the differential equation <span xmlns="" style="white-space: nowrap;">$y' = \mathcal R (y) = y R_0 (y)$,</span> where <span xmlns="" style="white-space: nowrap;">$R_0$</span> has non-negative order at <span xmlns="" style="white-space: nowrap;">$y=0$,</span> i.e., <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} R_0 \geqslant 0$.</span> The differential field <span xmlns="" style="white-space: nowrap;">$K\langle y\rangle$</span> is isomorphic to the field <span xmlns="" style="white-space: nowrap;">$K(y)$</span> with the differentiation <span xmlns="" style="white-space: nowrap;">$R' = R'_K + y R_0 R_y$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc46"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 7.2.</strong></span> </span><span>   For any element <span xmlns="" style="white-space: nowrap;">$R$</span> in the differential field <span xmlns="" style="white-space: nowrap;">$K\langle y\rangle$,</span> <div><a name="im9686eqn10"></a>
+			$$
+			
+\begin{equation}
+  \operatorname{ord} R'\geqslant \operatorname{ord} R.
+\end{equation}
+
+					\tag{10}
+				
+			$$
+		</div> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc47"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Indeed, <span xmlns="" style="white-space: nowrap;">$R' = R'_K + y R_0 R'_y$.</span> It is easy to check that <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} R'_K \geqslant \operatorname{ord} R$</span> and <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} y R_y' \geqslant \operatorname{ord} R$.</span> Indeed, these inequalities obviously hold for polynomials over <span xmlns="" style="white-space: nowrap;">$K$.</span> Now one can apply Lemma <a style="font-style: normal" class="SLink" href="#im9686proc44">7.1</a>, and the lemma follows from the properties of order listed above. Lemma <a style="font-style: normal" class="SLink" href="#im9686proc46">7.2</a> is proved. </span></div>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s8"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 8. Existence of a solution in an admissible extension</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In this section, we prove the following theorem. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc48"></a><span style="font-weight: normal; font-style: normal "><strong>  Theorem 8.1.</strong></span> </span><span>   A homogeneous linear differential equation <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a> has a solution in some admissible extension of the field <span xmlns="" style="white-space: nowrap;">$K$</span> if and only if it has a solution <span xmlns="" style="white-space: nowrap;">$y$</span> whose logarithmic derivative belongs to <span xmlns="" style="white-space: nowrap;">$K$,</span> and <span xmlns="" style="white-space: nowrap;">$y$</span> either belongs to <span xmlns="" style="white-space: nowrap;">$K$,</span> or is transcendental over <span xmlns="" style="white-space: nowrap;">$K$.</span> </span></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  The proof is based on the following lemma. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc49"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 8.1.</strong></span> </span><span>   Let <span xmlns="" style="white-space: nowrap;">$K\subset K\langle y\rangle$</span> be an extension by adjoining a special transcendental element <span xmlns="" style="white-space: nowrap;">$y$</span> over <span xmlns="" style="white-space: nowrap;">$K$.</span> Then the generalized Riccati equation <a style="font-style: normal" class="SLink" href="#im9686eqn7">(7)</a> for equation <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a> has a solution in <span xmlns="" style="white-space: nowrap;">$K\langle y\rangle$</span> if and only if it has a solution in the field <span xmlns="" style="white-space: nowrap;">$K$.</span> </span></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$T$</span> be a polynomial over <span xmlns="" style="white-space: nowrap;">$K$</span> in <span xmlns="" style="white-space: nowrap;">$u$</span> and in its derivatives <span xmlns="" style="white-space: nowrap;">$u, u', \dots, u^{(k)},\dots$</span> . </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc50"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 8.1.</strong></span> </span><span>   We say that <span xmlns="" style="white-space: nowrap;">$T$</span> of some degree <span xmlns="" style="white-space: nowrap;">$n$</span> is a <em>Rosenlicht type polynomial</em> if the degree <span xmlns="" style="white-space: nowrap;">$n$</span> homogeneous part of <span xmlns="" style="white-space: nowrap;">$T$</span> is equal to <span xmlns="" style="white-space: nowrap;">$u^n$</span> (i.e., <span xmlns="" style="white-space: nowrap;">$T =u^n + \widetilde T$,</span> where <span xmlns="" style="white-space: nowrap;">$\deg \widetilde T &lt; n$).</span> </span><p>  An equation <div><a name="im9686eqn11"></a>
+			$$
+			
+\begin{equation}
+  T(u,u',\dots, u^{(n)})=0,
+\end{equation}
+
+					\tag{11}
+				
+			$$
+		</div> where <span xmlns="" style="white-space: nowrap;">$T$</span> is a Rosenlicht type polynomial, is called a <em>Rosenlicht type equation</em>. </p></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  The generalized Riccati equation is a Rosenlicht type equation. This property of the generalized Riccati equation plays the key role in the classical approach (which goes back to Liouville and was specified by Rosenlicht) to the problem of solvability of homogeneous linear differential equations in finite terms. Thus, instead of Lemma <a style="font-style: normal" class="SLink" href="#im9686proc49">8.1</a>, we prove the following more general lemma. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc51"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 8.2.</strong></span> </span><span>   Let <span xmlns="" style="white-space: nowrap;">$K\subset K\langle y\rangle$</span> be an extension by adjoining a special transcendental element <span xmlns="" style="white-space: nowrap;">$y$</span> over <span xmlns="" style="white-space: nowrap;">$K$.</span> An equation <a style="font-style: normal" class="SLink" href="#im9686eqn11">(11)</a> has a solution in <span xmlns="" style="white-space: nowrap;">$K\langle y\rangle$</span> if and only if it has a solution in the field <span xmlns="" style="white-space: nowrap;">$K$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc52"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Let <span xmlns="" style="white-space: nowrap;">$R(y)\in K\langle y\rangle$</span> where <span xmlns="" style="white-space: nowrap;">$y$</span> is a special transcendental element over <span xmlns="" style="white-space: nowrap;">$K$.</span> Let us show that if <span xmlns="" style="white-space: nowrap;">$R(y)$</span> satisfies <a style="font-style: normal" class="SLink" href="#im9686eqn11">(11)</a>, then <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} R=m$</span> is non-negative. Indeed, if <span xmlns="" style="white-space: nowrap;">$m&lt;0$,</span> then <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} u^n=nm$</span> is strictly smaller than <span xmlns="" style="white-space: nowrap;">$\operatorname{ord} \widetilde T$,</span> which follows from the definition of Rosenlicht polynomial and Lemma <a style="font-style: normal" class="SLink" href="#im9686proc46">7.2</a>. Thus, <span xmlns="" style="white-space: nowrap;">$m\geqslant 0$.</span> So, one can evaluate both sides of <a style="font-style: normal" class="SLink" href="#im9686eqn11">(11)</a> at <span xmlns="" style="white-space: nowrap;">$y=0$</span> and obtain a solution of <a style="font-style: normal" class="SLink" href="#im9686eqn11">(11)</a> in the field <span xmlns="" style="white-space: nowrap;">$K$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc49">8.1</a> is proved. </span></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc53"></a><span style="font-weight: normal; font-style: normal "><strong>  Corollary 8.1.</strong></span> </span><span>   An equation <a style="font-style: normal" class="SLink" href="#im9686eqn11">(11)</a> has a solution in an admissible extension <span xmlns="" style="white-space: nowrap;">$E$</span> of the field <span xmlns="" style="white-space: nowrap;">$K$</span> if and only if it has a solution in the field <span xmlns="" style="white-space: nowrap;">$K$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc54"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Let <span xmlns="" style="white-space: nowrap;">$K_0\subset\dots \subset K_n=E$</span> be a chain in which each extension <span xmlns="" style="white-space: nowrap;">$K_i\subset K_{i+1}$</span> is obtained by adjoining a special transcendental element over <span xmlns="" style="white-space: nowrap;">$K_i$.</span> By Lemma <a style="font-style: normal" class="SLink" href="#im9686proc51">8.2</a>, if <a style="font-style: normal" class="SLink" href="#im9686eqn11">(11)</a> has a solution in <span xmlns="" style="white-space: nowrap;">$K_{i+1}$,</span> it also has a solution in <span xmlns="" style="white-space: nowrap;">$K_i$.</span> This argument proves corollary. Corollary <a style="font-style: normal" class="SLink" href="#im9686proc53">8.1</a> is proved. </span></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc55"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof</strong> of Theorem <a style="font-style: normal" class="SLink" href="#im9686proc48">8.1</a>.</span><span>  By Lemma <a style="font-style: normal" class="SLink" href="#im9686proc27">4.2</a>, the logarithmic derivative of any non-zero solution <span xmlns="" style="white-space: nowrap;">$y$</span> of <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a> has to satisfy its generalized Riccati equation. Assume that <span xmlns="" style="white-space: nowrap;">$y$</span> belongs to an admissible extension <span xmlns="" style="white-space: nowrap;">$E$</span> of <span xmlns="" style="white-space: nowrap;">$K$.</span> Corollary <a style="font-style: normal" class="SLink" href="#im9686proc53">8.1</a> implies that the generalized Riccati equation has a solution <span xmlns="" style="white-space: nowrap;">$u\in K$.</span> Thus, <a style="font-style: normal" class="SLink" href="#im9686eqn6">(6)</a> has a non-zero solution <span xmlns="" style="white-space: nowrap;">$z$</span> such that <span xmlns="" style="white-space: nowrap;">$z'/z=u\in K$.</span> If this element <span xmlns="" style="white-space: nowrap;">$z$</span> is algebraic over <span xmlns="" style="white-space: nowrap;">$K$,</span> it belongs to <span xmlns="" style="white-space: nowrap;">$K$,</span> since <span xmlns="" style="white-space: nowrap;">$E$</span> is a pure transcendental extension of <span xmlns="" style="white-space: nowrap;">$K$.</span> Theorem <a style="font-style: normal" class="SLink" href="#im9686proc48">8.1</a> is proved. </span></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  In &sect; <a style="font-style: normal" class="SLink" href="#im9686s9">9</a> and &sect; <a style="font-style: normal" class="SLink" href="#im9686s10">10</a>, we study extensions of a differential field <span xmlns="" style="white-space: nowrap;">$K$</span> by exponential of integrals over <span xmlns="" style="white-space: nowrap;">$K$.</span> Related material can be found in [<a style="font-style: normal" class="SLink" href="#bib8">8</a>]. </p>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s9"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 9. Algebraic relations between exponentials of integrals</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$K$</span> be a differential field. For <span xmlns="" style="white-space: nowrap;">$y$</span> belonging to the multiplicative group <span xmlns="" style="white-space: nowrap;">$K^*=K\setminus \{0\}$</span> of the field <span xmlns="" style="white-space: nowrap;">$K$,</span> the logarithmic derivative <span xmlns="" style="white-space: nowrap;">$y'/y$</span> is defined. It is easy to check the following lemma. </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc56"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 9.1.</strong></span> </span><span>   The map, which sends each element <span xmlns="" style="white-space: nowrap;">$y\in K^*$</span> to its logarithmic derivative, provides a homomorphism of the multiplicative group <span xmlns="" style="white-space: nowrap;">$K^*$</span> to the additive group <span xmlns="" style="white-space: nowrap;">$K_+$</span> of the field <span xmlns="" style="white-space: nowrap;">$K$,</span> i.e., for any <span xmlns="" style="white-space: nowrap;">$u,v\in K^*$</span> any integers <span xmlns="" style="white-space: nowrap;">$k,n$</span> the following identity holds: <div><a name="im9686ueqn4"></a>
+			$$
+			
+\begin{equation*}
+\frac{(u^kv^n)'}{u^kv^n}=k\frac{u'}{u}+n\frac{v'}{v}.
+\end{equation*}
+
+					\notag
+				
+			$$
+		</div> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc57"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 9.1.</strong></span> </span><span>   Let <span xmlns="" style="white-space: nowrap;">$F$</span> be any extension of a differential field <span xmlns="" style="white-space: nowrap;">$K$.</span> A non-zero element <span xmlns="" style="white-space: nowrap;">$y\in F$</span> is an <em>exponential of integral</em> of <span xmlns="" style="white-space: nowrap;">$a\in K$</span> if <span xmlns="" style="white-space: nowrap;">$y'=ay$.</span> In other words, <span xmlns="" style="white-space: nowrap;">$y\in F^*$</span> is an exponential of integral of <span xmlns="" style="white-space: nowrap;">$a\in K$</span> if <span xmlns="" style="white-space: nowrap;">$a$</span> is the logarithmic derivative of <span xmlns="" style="white-space: nowrap;">$y$.</span> </span></p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$F$</span> be an extension of <span xmlns="" style="white-space: nowrap;">$K$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc58"></a><span style="font-weight: normal; font-style: normal "><strong>  Lemma 9.2.</strong></span> </span><span>   Assume that a non-zero element <span xmlns="" style="white-space: nowrap;">$y\in F$</span> satisfies an equation <span xmlns="" style="white-space: nowrap;">$y'=ay$</span> for <span xmlns="" style="white-space: nowrap;">$a\in K$</span> and an element <span xmlns="" style="white-space: nowrap;">$u\in F$</span> is representable in a form <span xmlns="" style="white-space: nowrap;">$u=c y^m$,</span> where <span xmlns="" style="white-space: nowrap;">$c\in K$,</span> <span xmlns="" style="white-space: nowrap;">$m\in \mathbb Z$.</span> Then </span><p>  1) the derivative <span xmlns="" style="white-space: nowrap;">$u'$</span> of <span xmlns="" style="white-space: nowrap;">$u$</span> also is representable in the form <span xmlns="" style="white-space: nowrap;">$u' = \widetilde c y^m$,</span> where <span xmlns="" style="white-space: nowrap;">$\widetilde c=c'+ma$;</span> </p><p>  2) <span xmlns="" style="white-space: nowrap;">$u'=0$</span> if and only if <span xmlns="" style="white-space: nowrap;">$c=\lambda y^{-m}$,</span> where <span xmlns="" style="white-space: nowrap;">$\lambda$</span> is a constant, i.e., <span xmlns="" style="white-space: nowrap;">$\lambda'=0$.</span> If <span xmlns="" style="white-space: nowrap;">$u'=0$,</span> then <span xmlns="" style="white-space: nowrap;">$y^m\in K$.</span> </p></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc59"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> The first relation follows from a direct differentiation. If <span xmlns="" style="white-space: nowrap;">$u'=0$,</span> then <span xmlns="" style="white-space: nowrap;">$u$</span> is a constant <span xmlns="" style="white-space: nowrap;">$\lambda$.</span> Thus, <span xmlns="" style="white-space: nowrap;">$cy^m=\lambda$,</span> which implies that <span xmlns="" style="white-space: nowrap;">$c=\lambda y^{-m}$</span> and <span xmlns="" style="white-space: nowrap;">$y^m=c^{-1}\lambda$.</span> Lemma <a style="font-style: normal" class="SLink" href="#im9686proc58">9.2</a> is proved. </span></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc60"></a><span style="font-weight: normal; font-style: normal "><strong>  Definition 9.2.</strong></span> </span><span>   Let <span xmlns="" style="white-space: nowrap;">$F=K\langle y \rangle$</span> be an extension of a differential field <span xmlns="" style="white-space: nowrap;">$K$</span> by an element <span xmlns="" style="white-space: nowrap;">$y$.</span> Then <span xmlns="" style="white-space: nowrap;">$F$</span> is an <em>extension by exponential of integral of </em><span xmlns="" style="white-space: nowrap;">$a\in K$<em xmlns="http://www.w3.org/1999/xhtml"></em></span> (a <em>transcendental extension by exponential of integral of </em><span xmlns="" style="white-space: nowrap;">$a\in K$<em xmlns="http://www.w3.org/1999/xhtml"></em>)</span> if <span xmlns="" style="white-space: nowrap;">$y'=ay$</span> (if <span xmlns="" style="white-space: nowrap;">$y$</span> is transcendental over <span xmlns="" style="white-space: nowrap;">$K$</span> and <span xmlns="" style="white-space: nowrap;">$y'=ay$).</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc61"></a><span style="font-weight: normal; font-style: normal "><strong>  Theorem 9.1.</strong></span> </span><span>   Let <span xmlns="" style="white-space: nowrap;">$y_1,\dots,y_n\in F$</span> be the exponentials of integrals of elements <span xmlns="" style="white-space: nowrap;">$a_1,\dots, a_n \in K$,</span> where <span xmlns="" style="white-space: nowrap;">$K$</span> is a differential subfield of <span xmlns="" style="white-space: nowrap;">$F$.</span> Assume that there are no non-trivial  monomials <span xmlns="" style="white-space: nowrap;">$u=y_1^{k_1}\cdots y_n^{k_n}$,</span> where <span xmlns="" style="white-space: nowrap;">$k_1,\dots, k_n$</span> are not necessary positive integers (assuming that, at least, one <span xmlns="" style="white-space: nowrap;">$k_i\neq 0$)</span> such that a relation <span xmlns="" style="white-space: nowrap;">$u=c$</span> for some <span xmlns="" style="white-space: nowrap;">$c\in K$</span> holds. Then the elements <span xmlns="" style="white-space: nowrap;">$y_1,\dots,y_n$</span> are algebraically independent over the field <span xmlns="" style="white-space: nowrap;">$K$.</span> </span></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc62"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> Assume that <span xmlns="" style="white-space: nowrap;">$y_1,\dots,y_n$</span> are algebraically dependent and let <div><a name="im9686ueqn5"></a>
+			$$
+			
+\begin{equation*}
+P=\sum c_{m_1,\dots,m_n}x_1^{m_1}\dots x_n^{m_n}
+\end{equation*}
+
+					\notag
+				
+			$$
+		</div> be a non-zero Laurent polynomial over <span xmlns="" style="white-space: nowrap;">$K$</span> (i.e., <span xmlns="" style="white-space: nowrap;">$m_1,\dots,m_n$</span> are not necessarily positive integral numbers) which annihilates <span xmlns="" style="white-space: nowrap;">$y_1,\dots,y_n$,</span> i.e., <span xmlns="" style="white-space: nowrap;">$\sum c_{m_1,\dots,m_n}y_1^{m_1}\cdots y_n^{m_n}\,{=}\,0$.</span>   One can choose such a Laurent polynomial <span xmlns="" style="white-space: nowrap;">$P$</span> which contains the smallest possible number of non-zero terms <span xmlns="" style="white-space: nowrap;">$c_{m_1,\dots,m_n}y_1^{m_1}\cdots y_n^{m_n}$.</span> By dividing the relation <span xmlns="" style="white-space: nowrap;">$P=0$</span> by one of its terms, one obtains a Laurent polynomial <span xmlns="" style="white-space: nowrap;">$\widetilde P$</span> having the same number of terms as <span xmlns="" style="white-space: nowrap;">$P$,</span> but one of its terms is equal to <span xmlns="" style="white-space: nowrap;">$1$.</span> By Lemma <a style="font-style: normal" class="SLink" href="#im9686proc58">9.2</a>, the derivative <span xmlns="" style="white-space: nowrap;">$u'$</span> of the term <span xmlns="" style="white-space: nowrap;">$u=c_{m_1,\dots,m_n}y_1^{m_1}\cdots y_n^{m_n}$</span> has a form <span xmlns="" style="white-space: nowrap;">$u'=\widetilde c_{m_1,\dots,m_n}y_1^{m_1}\cdots y_n^{m_n}$</span> for some <span xmlns="" style="white-space: nowrap;">$ \widetilde c_{m_1,\dots,m_n}\in K$.</span> </span>
+<p>  Thus, by differentiating <span xmlns="" style="white-space: nowrap;">$\widetilde P\,{=}\,0$,</span>   one obtains a relation <span xmlns="" style="white-space: nowrap;">$\widetilde P'(y_1,\dots,y_n)\,{=}\,0$</span>   containing smaller number of terms (the derivative of the term <span xmlns="" style="white-space: nowrap;">$1$</span> is zero). Thus, the derivative of each term of the Laurent polynomial <span xmlns="" style="white-space: nowrap;">$\widetilde P$</span> is equal to zero. By Lemma <a style="font-style: normal" class="SLink" href="#im9686proc58">9.2</a>, this means that some non-trivial monomial <span xmlns="" style="white-space: nowrap;">$y_1^{m_1}\cdots y_n^{m_n}$</span> belongs to the field <span xmlns="" style="white-space: nowrap;">$K$.</span> Theorem <a style="font-style: normal" class="SLink" href="#im9686proc61">9.1</a> is proved. </p></div>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s10"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 10. Transcendental extensions by exponentials of integrals</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Assume that a differential field <span xmlns="" style="white-space: nowrap;">$F=K\langle y_1,\dots,y_n\rangle$</span> is generated over a field <span xmlns="" style="white-space: nowrap;">$K$</span> by non-zero elements <span xmlns="" style="white-space: nowrap;">$y_1,\dots, y_n$,</span> such that <span xmlns="" style="white-space: nowrap;">$y'_i=a_i y_i$,</span> where <span xmlns="" style="white-space: nowrap;">$a_i$</span> belong to <span xmlns="" style="white-space: nowrap;">$K$.</span> Let <span xmlns="" style="white-space: nowrap;">$G$</span> be the multiplicative subgroup in <span xmlns="" style="white-space: nowrap;">$F^*$</span> generated by elements <span xmlns="" style="white-space: nowrap;">$y_1,\dots, y_n$,</span> and let <span xmlns="" style="white-space: nowrap;">$G_0$</span> be its subgroup which is equal to the intersection of <span xmlns="" style="white-space: nowrap;">$G$</span> with the field <span xmlns="" style="white-space: nowrap;">$K$,</span> <span xmlns="" style="white-space: nowrap;">$G_0=G\cap K^*$.</span> Denote by <span xmlns="" style="white-space: nowrap;">$\Psi_0\subset \Psi$</span> the images of the multiplicative groups <span xmlns="" style="white-space: nowrap;">$G_0, G$</span> under the map which sends <span xmlns="" style="white-space: nowrap;">$y\in F^*$</span> to <span xmlns="" style="white-space: nowrap;">$y'/y\in F_+$.</span> By construction, the group <span xmlns="" style="white-space: nowrap;">$\Psi$</span> is generated by the elements <span xmlns="" style="white-space: nowrap;">$a_i\in K_+$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc63"></a><span style="font-weight: normal; font-style: normal "><strong>  Theorem 10.1.</strong></span> </span><span>   The factor group <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> has the following properties. </span><p>  1. If <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> is torsion free, then there is a chain of fields <span xmlns="" style="white-space: nowrap;">$K\,{=}\,K_0\subset \dots \subset K_m =  F$</span> such that, for <span xmlns="" style="white-space: nowrap;">$i=0,\dots, m-1$,</span> the field <span xmlns="" style="white-space: nowrap;">$K_{i+1}$</span> is equal to <span xmlns="" style="white-space: nowrap;">$K_i\langle u_{i+1}\rangle$,</span> where <span xmlns="" style="white-space: nowrap;">$u_{i+1}$</span> is an exponent of an integral over <span xmlns="" style="white-space: nowrap;">$K_i$,</span> transcendental over <span xmlns="" style="white-space: nowrap;">$K_i$.</span> </p><p>  2. If <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> has non-trivial torsion, then there is no chain of fields <span xmlns="" style="white-space: nowrap;">$K=K_0 \subset \dots \subset K_m \supset F$</span> such that, for <span xmlns="" style="white-space: nowrap;">$i=0,\dots, m-1$,</span> the field <span xmlns="" style="white-space: nowrap;">$K_{i+1}$</span> is a pure transcendental extension of the field <span xmlns="" style="white-space: nowrap;">$K_i$.</span> </p></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc64"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> 1. Let <span xmlns="" style="white-space: nowrap;">$u_1,\dots,u_m$</span> be generators of the factor group <span xmlns="" style="white-space: nowrap;">$G/G_0$.</span> The elements <span xmlns="" style="white-space: nowrap;">$u_1,\dots,u_m$</span> can be chosen to be exponentials of integrals over the field <span xmlns="" style="white-space: nowrap;">$K_0$.</span> Each monomial in <span xmlns="" style="white-space: nowrap;">$u_1,\dots,u_m$</span> does not belong to the subgroup <span xmlns="" style="white-space: nowrap;">$G_0=G\cap K_0$,</span> since the factor group is torsion free. Thus, by Theorem <a style="font-style: normal" class="SLink" href="#im9686proc61">9.1</a>, elements <span xmlns="" style="white-space: nowrap;">$u_1,\dots,u_m$</span> are algebraically independent over <span xmlns="" style="white-space: nowrap;">$K_0$.</span> Let <span xmlns="" style="white-space: nowrap;">$K_i$</span> for <span xmlns="" style="white-space: nowrap;">$i=1,\dots,m$</span> be the field <span xmlns="" style="white-space: nowrap;">$K_0\langle u_1,\dots,u_i\rangle$.</span> By construction, in the chain of fields, <span xmlns="" style="white-space: nowrap;">$K_0\subset K_1\subset\dots\subset K_m$,</span> for <span xmlns="" style="white-space: nowrap;">$i=0,\dots, m-1$,</span> the field <span xmlns="" style="white-space: nowrap;">$K_{i+1}$</span> is the extension of <span xmlns="" style="white-space: nowrap;">$K_i$</span> by exponent of integral <span xmlns="" style="white-space: nowrap;">$u_{i+1}$</span> over the field <span xmlns="" style="white-space: nowrap;">$K_0\subset K_i$.</span> The field <span xmlns="" style="white-space: nowrap;">$K_m$</span> is equal to the field <span xmlns="" style="white-space: nowrap;">$F$.</span> All these extensions <span xmlns="" style="white-space: nowrap;">$K_i\subset K_{i+1}$</span> are pure transcendental, since <span xmlns="" style="white-space: nowrap;">$u_1,\dots,u_m$</span> are algebraically independent over <span xmlns="" style="white-space: nowrap;">$K_0$.</span> </span>
+<p>  2. If the group <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> has non-trivial torsion, then there is a monomial <span xmlns="" style="white-space: nowrap;">$u$</span> in <span xmlns="" style="white-space: nowrap;">$y_1,\dots, y_n$</span> which does not belong to <span xmlns="" style="white-space: nowrap;">$G_0$</span> but some positive power of it does. Thus, <span xmlns="" style="white-space: nowrap;">$u$</span> does not belong to the field <span xmlns="" style="white-space: nowrap;">$K_0$</span> but some positive power of it does. </p>
+<p>  The monomial <span xmlns="" style="white-space: nowrap;">$u$</span> is an algebraic element over <span xmlns="" style="white-space: nowrap;">$K_0$</span> which does not belong to <span xmlns="" style="white-space: nowrap;">$K_0$.</span> Any chain <span xmlns="" style="white-space: nowrap;">$K_0\subset\dots\subset K_m$</span> of pure transcendental extensions provides a transcendental extension <span xmlns="" style="white-space: nowrap;">$K_0 \subset K_m$</span> which cannot contain the element <span xmlns="" style="white-space: nowrap;">$u\in F$.</span> Theorem <a style="font-style: normal" class="SLink" href="#im9686proc63">10.1</a> is proved. </p></div>
+
+<a xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" name="im9686s11"></a><h3 xmlns="http://www.w3.org/1999/xhtml" style=" padding-top: 35px;">&sect; 11. Criterion of solvability in admissible extensions</h3><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Let <span xmlns="" style="white-space: nowrap;">$L = a_n D^n + \dots + a_0$,</span> where <span xmlns="" style="white-space: nowrap;">$a_i\in K$</span> is a linear differential operator of order <span xmlns="" style="white-space: nowrap;">$n$</span> over <span xmlns="" style="white-space: nowrap;">$K$.</span> In this section, we will state and prove a criterion of solvability of the homogeneous equation <div><a name="im9686eqn12"></a>
+			$$
+			
+\begin{equation}
+  L(y)= a_ny^{(n)}+\dots + a_1y=0
+\end{equation}
+
+					\tag{12}
+				
+			$$
+		</div> over <span xmlns="" style="white-space: nowrap;">$K$</span> by an admissible extension <span xmlns="" style="white-space: nowrap;">$E$</span> of <span xmlns="" style="white-space: nowrap;">$K$.</span> </p><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="font-style: italic; padding-top: 5px; padding-bottom: 5px;"><p><span style="font-style: normal;"><a name="im9686proc65"></a><span style="font-weight: normal; font-style: normal "><strong>  Theorem 11.1.</strong></span> </span><span>   All solutions of <a style="font-style: normal" class="SLink" href="#im9686eqn12">(12)</a> belong to an admissible extension <span xmlns="" style="white-space: nowrap;">$E \supset K$</span> if and only if the following two conditions simultaneously hold. </span><p>  1. There is a sequence of non-zero elements <span xmlns="" style="white-space: nowrap;">$z_1,\dots, z_n$</span> which are exponential of integrals over <span xmlns="" style="white-space: nowrap;">$K$,</span> i.e., <span xmlns="" style="white-space: nowrap;">$z'_1=p_1 z_1,\dots, z'_n=p_nz_n$</span> and <span xmlns="" style="white-space: nowrap;">$p_1,\dots, p_n\in K$</span> such that the operator <span xmlns="" style="white-space: nowrap;">$L$</span> is representable in the form <div><a name="im9686eqn13"></a>
+			$$
+			
+\begin{equation}
+  L=a_nL_n\circ \dots\circ L_1,
+\end{equation}
+
+					\tag{13}
+				
+			$$
+		</div> where each operator <span xmlns="" style="white-space: nowrap;">$L_i$</span> is an operator of order one. Moreover, <span xmlns="" style="white-space: nowrap;">$L_i$</span> is equal to <span xmlns="" style="white-space: nowrap;">$D - p_i$.</span> </p><p>  2. Let <span xmlns="" style="white-space: nowrap;">$G$</span> be the multiplicative group generated by <span xmlns="" style="white-space: nowrap;">$z_1,\dots,z_n$</span> and let <span xmlns="" style="white-space: nowrap;">$G_0$</span> be the intersection of <span xmlns="" style="white-space: nowrap;">$G$</span> with <span xmlns="" style="white-space: nowrap;">$K$,</span> <span xmlns="" style="white-space: nowrap;">$G_0=G\cap K$.</span> Then the factor group <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> is torsion free. </p></p></div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-bottom: 15px"><a name="im9686proc66"></a><span style="font-weight: normal; font-style: normal "><strong>  Proof.</strong></span><span> If there is an admissible extension <span xmlns="" style="white-space: nowrap;">$E$</span> containing all solutions of <a style="font-style: normal" class="SLink" href="#im9686eqn13">(13)</a>, then by Theorem <a style="font-style: normal" class="SLink" href="#im9686proc48">8.1</a>, the equation has to have a solution <span xmlns="" style="white-space: nowrap;">$z_1$</span> whose logarithmic derivative <span xmlns="" style="white-space: nowrap;">$p_1$</span> belongs to <span xmlns="" style="white-space: nowrap;">$K$.</span> Let <span xmlns="" style="white-space: nowrap;">$L_1$</span> be the operator <span xmlns="" style="white-space: nowrap;">$y'-p_1y_1$.</span> Let us divide <span xmlns="" style="white-space: nowrap;">$L$</span> by <span xmlns="" style="white-space: nowrap;">$L_1$</span> from the right, <span xmlns="" style="white-space: nowrap;">$L=\widetilde L_1\circ L_1$.</span> The coefficients of <span xmlns="" style="white-space: nowrap;">$\widetilde L_1$</span> belongs to <span xmlns="" style="white-space: nowrap;">$K$,</span> since <span xmlns="" style="white-space: nowrap;">$p_1\in K$.</span> Each solution <span xmlns="" style="white-space: nowrap;">$u$</span> of <span xmlns="" style="white-space: nowrap;">$\widetilde L_1 (y) = 0$</span> is representable in the form <span xmlns="" style="white-space: nowrap;">$u=L_1(y)$,</span> where <span xmlns="" style="white-space: nowrap;">$y$</span> is a solution of the original equation. So all solutions of <span xmlns="" style="white-space: nowrap;">$\widetilde L_1 (y) = 0$</span> also belong to the admissible extension <span xmlns="" style="white-space: nowrap;">$E$</span> of the field <span xmlns="" style="white-space: nowrap;">$K$.</span> </span>
+<p>  Thus, one can apply Theorem <a style="font-style: normal" class="SLink" href="#im9686proc48">8.1</a> to the equation <span xmlns="" style="white-space: nowrap;">$\widetilde L_1 (y) = 0$</span> to find its solution <span xmlns="" style="white-space: nowrap;">$z_2$</span> whose logarithmic derivative <span xmlns="" style="white-space: nowrap;">$p_2$</span> belongs to <span xmlns="" style="white-space: nowrap;">$K$.</span> Let <span xmlns="" style="white-space: nowrap;">$L_2$</span> be the operator <span xmlns="" style="white-space: nowrap;">$D - p_2$</span> and let us represent <span xmlns="" style="white-space: nowrap;">$\widetilde L_1$</span> in the form <span xmlns="" style="white-space: nowrap;">$\widetilde L_1=\widetilde L_2\circ L_2$.</span> </p>
+<p>  Repeating this process, one obtains a sequence of exponentials of integrals of <span xmlns="" style="white-space: nowrap;">$p_1, \ldots , p_n \in K$</span> for which decomposition <a style="font-style: normal" class="SLink" href="#im9686eqn13">(13)</a> of the operator <span xmlns="" style="white-space: nowrap;">$L$</span> holds. </p>
+<p>  The exponential of integrals <span xmlns="" style="white-space: nowrap;">$z_1,\dots,z_n$</span> belong to an admissible extension <span xmlns="" style="white-space: nowrap;">$E$.</span> By Theorem <a style="font-style: normal" class="SLink" href="#im9686proc63">10.1</a>, the group <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> is torsion free. </p>
+<p>  The criterion for solvability is proved in one direction. Let us prove it in the opposite direction. If the group <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> is torsion free, by Theorem <a style="font-style: normal" class="SLink" href="#im9686proc63">10.1</a>, one can construct an admissible extension <span xmlns="" style="white-space: nowrap;">$E_1$</span> of <span xmlns="" style="white-space: nowrap;">$K$</span> which contains all the exponential of integrals <span xmlns="" style="white-space: nowrap;">$z_1,\dots, z_n$.</span> Over the field <span xmlns="" style="white-space: nowrap;">$E_1$</span> the operator <span xmlns="" style="white-space: nowrap;">$L$</span> is decomposed as a product of factors <span xmlns="" style="white-space: nowrap;">$D - p_i$.</span> Thus, the equation <span xmlns="" style="white-space: nowrap;">$L=0$</span> can solved step by step, thereby solving the equations <span xmlns="" style="white-space: nowrap;">$L_i(y)=u$.</span> Since <span xmlns="" style="white-space: nowrap;">$z_i\in E$,</span> solutions of these equation can be obtained in extensions by integrals (see Lemma <a style="font-style: normal" class="SLink" href="#im9686proc31">5.2</a>). By Lemma <a style="font-style: normal" class="SLink" href="#im9686proc34">6.1</a>, such extensions are pure transcendental. So, extending <span xmlns="" style="white-space: nowrap;">$E_1$</span> by a chain of extensions obtained by adjoining integrals one at a time, one obtains an admissible extension <span xmlns="" style="white-space: nowrap;">$E$</span> which contains all solutions of <a style="font-style: normal" class="SLink" href="#im9686eqn12">(12)</a>. </p></div><p xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">  Note that if the group <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> has non-trivial torsion, then the extension of <span xmlns="" style="white-space: nowrap;">$K$</span> by adjoining all solutions of <a style="font-style: normal" class="SLink" href="#im9686eqn12">(12)</a> is not pure transcendental. If it is pure transcendental (as in Lemma <a style="font-style: normal" class="SLink" href="#im9686proc42">6.5</a>), then the group <span xmlns="" style="white-space: nowrap;">$G/G_0$</span> automatically has no torsion. Such an equation is solvable by admissible extension if and only if the operator <span xmlns="" style="white-space: nowrap;">$L$</span> admits a decomposition <a style="font-style: normal" class="SLink" href="#im9686eqn13">(13)</a>. Theorem <a style="font-style: normal" class="SLink" href="#im9686proc65">11.1</a> is proved. </p>
+
+
+
+
+
+
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"></div>
+
+
+
+
+
+
+
+
+  <hr style='size:1px' width=100%/>
+  	
+			<table border=0 cellspacing=1 cellpadding=2 width=100%>
+			<tr>
+			<td></td>
+			<td></td>
+				</tr>
+			
+			<tr>
+			<td>
+				</td>
+				</tr>
+				<tr>
+				<td colspan=2>
+					<h4><b>Bibliography</b></h4>
+				</td>
+				<td></td>
+				</tr>
+				<tr>
+				<td>	</td>
+							</tr>
+								<tr>
+							<td valign=top align=right>1.</td>
+							<td>
+							<a name=bib1></a>
+							A.&nbsp;Khovanskii, &#x201C;Integrability in finite terms and actions of Lie groups&#x201D;, <span style="font-style: italic; font-weight: normal">Mosc. Math.&nbsp;J.</span>, <span style="font-style: normal; font-weight: bold">19</span>:2 (2019), <nobr>329&ndash;341</nobr> &nbsp;<a href="http://mi.mathnet.ru/eng/mmj737" target=_blank><img ALT="mathnet" border=0 title='http://mi.mathnet.ru/eng/mmj737' src='/refsvg/svg/mathnet.svg'  height="17px" align="bottom"></a> &nbsp;<a href="https://doi.org/10.17323/1609-4514-2019-19-2-329-341" target=_blank><img ALT="crossref" border=0 title='https://doi.org/10.17323/1609-4514-2019-19-2-329-341' src='/refsvg/svg/crossref.svg'  height="15px" align="absmiddle" style="margin-bottom:6px"></a> &nbsp;<a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3957811" target=_blank><img ALT="mathscinet" border=0 title='https://mathscinet.ams.org/mathscinet-getitem?mr=3957811' src='/refsvg/svg/mathscinet.svg'  height="17px" align=""></a> &nbsp;<a href="https://zbmath.org/?q=an:1473.12007" target=_blank><img ALT="zmath" border=0 title='https://zbmath.org/?q=an:1473.12007' src='/refsvg/svg/zmath.svg'  style="height:11px;" align=""></a>	</td>
+							</tr>
+								<tr>
+							<td valign=top align=right>2.</td>
+							<td>
+							<a name=bib2></a>
+							A.&nbsp;Khovanskii, &#x201C;Solvability of equations by quadratures and Newton&#39;s theorem&#x201D;, <span style="font-style: italic; font-weight: normal">Arnold Math.&nbsp;J.</span>, <span style="font-style: normal; font-weight: bold">4</span>:2 (2018), <nobr>193&ndash;211</nobr> &nbsp;<a href="https://doi.org/10.1007/s40598-018-0091-4" target=_blank><img ALT="crossref" border=0 title='https://doi.org/10.1007/s40598-018-0091-4' src='/refsvg/svg/crossref.svg'  height="15px" align="absmiddle" style="margin-bottom:6px"></a> &nbsp;<a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3861457" target=_blank><img ALT="mathscinet" border=0 title='https://mathscinet.ams.org/mathscinet-getitem?mr=3861457' src='/refsvg/svg/mathscinet.svg'  height="17px" align=""></a> &nbsp;<a href="https://zbmath.org/?q=an:1423.12006" target=_blank><img ALT="zmath" border=0 title='https://zbmath.org/?q=an:1423.12006' src='/refsvg/svg/zmath.svg'  style="height:11px;" align=""></a> &nbsp;<a href="http://adsabs.harvard.edu/cgi-bin/bib_query?2018ArnMJ...4..193K" target=_blank><img ALT="adsnasa" border=0 title='http://adsabs.harvard.edu/cgi-bin/bib_query?2018ArnMJ...4..193K' src='/refsvg/svg/adsnasa.svg'  height="16px" align=""></a>	</td>
+							</tr>
+								<tr>
+							<td valign=top align=right>3.</td>
+							<td>
+							<a name=bib3></a>
+							J.&nbsp;F.&nbsp;Ritt, <span style="font-style: italic; font-weight: normal">Integration in finite terms. Liouville&#39;s theory of elementary methods</span>, Columbia Univ. Press, New York, NY, 1948 &nbsp;<a href="https://doi.org/10.7312/ritt91596" target=_blank><img ALT="crossref" border=0 title='https://doi.org/10.7312/ritt91596' src='/refsvg/svg/crossref.svg'  height="15px" align="absmiddle" style="margin-bottom:6px"></a> &nbsp;<a href="https://mathscinet.ams.org/mathscinet-getitem?mr=0024949" target=_blank><img ALT="mathscinet" border=0 title='https://mathscinet.ams.org/mathscinet-getitem?mr=0024949' src='/refsvg/svg/mathscinet.svg'  height="17px" align=""></a> &nbsp;<a href="https://zbmath.org/?q=an:0031.20603" target=_blank><img ALT="zmath" border=0 title='https://zbmath.org/?q=an:0031.20603' src='/refsvg/svg/zmath.svg'  style="height:11px;" align=""></a>	</td>
+							</tr>
+								<tr>
+							<td valign=top align=right>4.</td>
+							<td>
+							<a name=bib4></a>
+							A.&nbsp;Khovanskii, &#x201C;Comments on J.&nbsp;F.&nbsp;Ritt&#39;s book &#x201C;Integration in finite terms&#x201D;&#x201D;, <span style="font-style: italic; font-weight: normal">Integration in finite terms: fundamental sources</span>, Texts Monogr. Symbol. Comput., Springer, Cham, 2022, <nobr>137&ndash;199</nobr> &nbsp;<a href="https://doi.org/10.1007/978-3-030-98767-1_4" target=_blank><img ALT="crossref" border=0 title='https://doi.org/10.1007/978-3-030-98767-1_4' src='/refsvg/svg/crossref.svg'  height="15px" align="absmiddle" style="margin-bottom:6px"></a> &nbsp;<a href="https://mathscinet.ams.org/mathscinet-getitem?mr=4461083" target=_blank><img ALT="mathscinet" border=0 title='https://mathscinet.ams.org/mathscinet-getitem?mr=4461083' src='/refsvg/svg/mathscinet.svg'  height="17px" align=""></a> &nbsp;<a href="https://zbmath.org/?q=an:1511.26004" target=_blank><img ALT="zmath" border=0 title='https://zbmath.org/?q=an:1511.26004' src='/refsvg/svg/zmath.svg'  style="height:11px;" align=""></a>	</td>
+							</tr>
+								<tr>
+							<td valign=top align=right>5.</td>
+							<td>
+							<a name=bib5></a>
+							A.&nbsp;Khovanskii, <span style="font-style: italic; font-weight: normal">Topological Galois theory. Solvability and unsolvability of equations in finite terms</span>, Springer Monogr. Math., Springer, Heidelberg, 2014 &nbsp;<a href="https://doi.org/10.1007/978-3-642-38871-2" target=_blank><img ALT="crossref" border=0 title='https://doi.org/10.1007/978-3-642-38871-2' src='/refsvg/svg/crossref.svg'  height="15px" align="absmiddle" style="margin-bottom:6px"></a> &nbsp;<a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3289210" target=_blank><img ALT="mathscinet" border=0 title='https://mathscinet.ams.org/mathscinet-getitem?mr=3289210' src='/refsvg/svg/mathscinet.svg'  height="17px" align=""></a> &nbsp;<a href="https://zbmath.org/?q=an:1331.12001" target=_blank><img ALT="zmath" border=0 title='https://zbmath.org/?q=an:1331.12001' src='/refsvg/svg/zmath.svg'  style="height:11px;" align=""></a>	</td>
+							</tr>
+								<tr>
+							<td valign=top align=right>6.</td>
+							<td>
+							<a name=bib6></a>
+							M.&nbsp;van der Put, M.&nbsp;F.&nbsp;Singer, <span style="font-style: italic; font-weight: normal">Galois theory of linear differential equations</span>, Grundlehren Math. Wiss., <span style="font-style: normal; font-weight: bold">328</span>, Springer-Verlag, Berlin, 2003 &nbsp;<a href="https://doi.org/10.1007/978-3-642-55750-7" target=_blank><img ALT="crossref" border=0 title='https://doi.org/10.1007/978-3-642-55750-7' src='/refsvg/svg/crossref.svg'  height="15px" align="absmiddle" style="margin-bottom:6px"></a> &nbsp;<a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1960772" target=_blank><img ALT="mathscinet" border=0 title='https://mathscinet.ams.org/mathscinet-getitem?mr=1960772' src='/refsvg/svg/mathscinet.svg'  height="17px" align=""></a> &nbsp;<a href="https://zbmath.org/?q=an:1036.12008" target=_blank><img ALT="zmath" border=0 title='https://zbmath.org/?q=an:1036.12008' src='/refsvg/svg/zmath.svg'  style="height:11px;" align=""></a>	</td>
+							</tr>
+								<tr>
+							<td valign=top align=right>7.</td>
+							<td>
+							<a name=bib7></a>
+							M.&nbsp;Rosenlicht, &#x201C;An&nbsp;analogue of l&#39;Hospital&#39;s rule&#x201D;, <span style="font-style: italic; font-weight: normal">Proc. Amer. Math. Soc.</span>, <span style="font-style: normal; font-weight: bold">37</span>:2 (1973), <nobr>369&ndash;373</nobr> &nbsp;<a href="https://doi.org/10.2307/2039441" target=_blank><img ALT="crossref" border=0 title='https://doi.org/10.2307/2039441' src='/refsvg/svg/crossref.svg'  height="15px" align="absmiddle" style="margin-bottom:6px"></a> &nbsp;<a href="https://mathscinet.ams.org/mathscinet-getitem?mr=318117" target=_blank><img ALT="mathscinet" border=0 title='https://mathscinet.ams.org/mathscinet-getitem?mr=318117' src='/refsvg/svg/mathscinet.svg'  height="17px" align=""></a> &nbsp;<a href="https://zbmath.org/?q=an:0253.12105" target=_blank><img ALT="zmath" border=0 title='https://zbmath.org/?q=an:0253.12105' src='/refsvg/svg/zmath.svg'  style="height:11px;" align=""></a>	</td>
+							</tr>
+								<tr>
+							<td valign=top align=right>8.</td>
+							<td>
+							<a name=bib8></a>
+							M.&nbsp;A.&nbsp;Rosenlicht, &#x201C;Differential extension fields of exponential type&#x201D;, <span style="font-style: italic; font-weight: normal">Pacific J.&nbsp;Math.</span>, <span style="font-style: normal; font-weight: bold">57</span>:1 (1975), <nobr>289&ndash;300</nobr> &nbsp;<a href="https://doi.org/10.2140/pjm.1975.57.289" target=_blank><img ALT="crossref" border=0 title='https://doi.org/10.2140/pjm.1975.57.289' src='/refsvg/svg/crossref.svg'  height="15px" align="absmiddle" style="margin-bottom:6px"></a> &nbsp;<a href="https://mathscinet.ams.org/mathscinet-getitem?mr=396512" target=_blank><img ALT="mathscinet" border=0 title='https://mathscinet.ams.org/mathscinet-getitem?mr=396512' src='/refsvg/svg/mathscinet.svg'  height="17px" align=""></a> &nbsp;<a href="https://zbmath.org/?q=an:0305.12104" target=_blank><img ALT="zmath" border=0 title='https://zbmath.org/?q=an:0305.12104' src='/refsvg/svg/zmath.svg'  style="height:11px;" align=""></a>	</td>
+			</tr>
+			</table>
+			
+<hr style='size:1px' width=100%/>
+	<div class='around-button'>
+				<b>Citation:</b>
+				A.&nbsp;Khovanskii, A.&nbsp;Tronsgard, &#x201C;On solvability of linear differential equations in finite terms&#x201D;, <span style="font-style: italic; font-weight: normal">Izv. Math.</span>, <span style="font-style: normal; font-weight: bold">90</span>:1 (2026), <nobr>238&ndash;254</nobr>
+				</div>	
+
+				<div class='around-button'>
+				
+				<script language=JavaScript>
+				function doCitShow(){
+					obj=document.getElementById('citPaperAMSBIBID');
+					pic=document.getElementById('citPaperButton');
+					
+					if(obj.style.display=='none'){
+						obj.style.display='';
+						pic.src='/gifs/flash.jpg';						
+					}
+					else{
+						obj.style.display='none';
+						pic.src='/gifs/flasha.jpg';
+					}
+				}
+				</script>				
+
+
+
+				<img src=/gifs/flash.jpg align=absmiddle id='citPaperButton' onClick="doCitShow()" style='display: '>
+				<b>Citation in format <a class=SLink target=_blank href=/poffice/amsbibpackage.phtml?wshow=amsbibpackage&option_lang=eng><b><i>AMSBIB</i></b></a></b>
+					<div ID='citPaperAMSBIBID' style='width:100%'>
+					<div class=showamsbib><code style=\"font-size: normal\">\Bibitem{KhoTro26}<br />
+\by A.~Khovanskii, A.~Tronsgard<br />
+\paper On solvability of linear differential equations in finite terms<br />
+\jour Izv. Math.<br />
+\yr 2026<br />
+\vol 90<br />
+\issue 1<br />
+\pages 238--254<br />
+\mathnet{http://mi.mathnet.ru/eng/im9686}<br />
+\crossref{https://doi.org/10.4213/im9686e}<br />
+\mathscinet{https://mathscinet.ams.org/mathscinet-getitem?mr=5029258}<br />
+\adsnasa{https://adsabs.harvard.edu/cgi-bin/bib_query?2026IzMat..90..238K}<br />
+\isi{https://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcApp=Publons&SrcAuth=Publons_CEL&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=001704101100009}<br />
+\scopus{https://www.scopus.com/record/display.url?origin=inward&eid=2-s2.0-105030448677}<br />
+</code></div>
+					</div>
+				</div>
+					<div class='around-button'>
+		<b>Linking options:</b>
+		<li>https://www.mathnet.ru/eng/im9686<li>https://doi.org/10.4213/im9686e	<li>https://www.mathnet.ru/eng/im/v90/i1/p244	</div>	<div class='around-button'>
+		<b>Citing articles in Google Scholar:</b>
+		<a class=SLink href='https://scholar.google.com/scholar?q=link:https://www.mathnet.ru/rus/im9686'>Russian citations</a>,
+		<a class=SLink href='https://scholar.google.com/scholar?q=link:https://www.mathnet.ru/eng/im9686'>English citations</a>
+		<br/>
+		<b>Related articles in Google Scholar:</b>
+		<a class=SLink href='https://scholar.google.com/scholar?q=related:https://www.mathnet.ru/rus/im9686'>Russian articles</a>,
+		<a class=SLink href='https://scholar.google.com/scholar?q=related:https://www.mathnet.ru/eng/im9686'>English articles</a>
+		</div>
+		
+		<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+		
+		<span style="margin: 10px 10px 10px 10px" title='Dimensions Badge: original paper version' class="__dimensions_badge_embed__" data-doi="10.4213/im9686" data-hide-zero-citations="true" data-style="small_circle" data-legend="always"></span>
+		
+		<span style="margin: 10px 10px 10px 10px" title='Dimensions Badge: translation paper version' class="__dimensions_badge_embed__" data-doi="10.4213/im9686e"  data-hide-zero-citations="true" data-style="small_circle" data-legend="always"></span>
+		
+		<div  style="margin: 10px 10px 10px 10px" title='Altmetric Badge: translation paper version' data-badge-details="right" data-badge-type="donut" data-doi="10.4213/im9686e" data-hide-no-mentions="true" data-condensed="true" class="altmetric-embed"></div>
+			</td>
+	 <td class=rightcol valign=top align=center>
+	  	<img  name=logo_0 vspace=10 hspace=20 alt="Известия Российской академии наук. Серия математическая" src='/JrnLogos/im/im2017_rus.svg' border=0 width='145px'>
+					<img  name=logo_0 vspace=10 hspace=20 alt="Izvestiya: Mathematics" src='/JrnLogos/im/im_e.svg' border=0 width='145px'>
+					<table style='width: 147px' title='Statistics &amp; downloads' border=0 class=StatJTable cellspacing=1 cellpadding=1 align=center>
+				<tr><td align=left colspan=2><nobr><b>Statistics &amp; downloads</b>:</nobr></td></td></tr>
+				<tr><td align=right><nobr>Abstract page:</nobr></td><td width=30%>507</td></tr><tr><td align=right><nobr>Russian version PDF:</nobr></td><td>5</td></tr><tr><td align=right><nobr>English version PDF:</nobr></td><td>144</td></tr><tr><td align=right><nobr>Russian version HTML:</nobr></td><td>6</td></tr><tr><td align=right><nobr>English version HTML:</nobr></td><td>217</td></tr><tr><td align=right><nobr>References:</nobr></td><td>103</td></tr><tr><td align=right><nobr>First page:</nobr></td><td>40</td></tr>	</table>
+				
+		
+		<div style='width: 147px; border: none; margin: 5px 5px 5px 5px; padding: 5px 5px 5px 5px' align=center>
+			<a href=https://www.mathnet.ru/eng/im9686><img border=0 style='border: 1px solid black' title='QR-код статьи im9686 для сканирования мобильным устройством' src="/qrcodes/papers/eng/im9686.png"></a>
+			<!--<div>
+			<a class=rys href=/help.phtml?wshow=qrcode&option_lang=eng>Что такое QR-код?</a>
+			</div>-->
+			
+		</div>
+		  </td>
+	   	</tr>
+	</table>
+		<table border=0 width=100% cellspacing=0 cellpadding=0>
+	<tr class=man1>
+	<td width=70%>&nbsp;</td>
+	<td width=30% valign=bottom><img src=/images/man1.jpg align=left>
+	</td>
+	</tr>
+	</table>
+		<DIV class=mian>
+	<TABLE width=100% class=mian cellSpacing=0 cellPadding=10 border=0 align="center">
+	<TR>
+
+	<td width=20% align=left>
+	<img src=/gifs/ar4.gif border=0>&nbsp;
+	Contact us:<br>
+	<script language="JavaScript">document.write(decode_email('DMEBCAHEGJHEGMGFDNCHEFCNGNGBGJGMDKCAGNGBHEGICNGOGFHEDCDADCDGFPDBDBEAGNGJCNHCGBHDCOHCHFCHCAGDGMGBHDHDDNFDEMGJGOGLCAEIFCEFEGDNCCGNGBGJGMHEGPDKGNGBHEGICNGOGFHEDCDADCDGFPDBDBEAGNGJCNHCGBHDCOHCHFCCDOGNGBHEGICNGOGFHEDCDADCDGFPDBDBEAGNGJCNHCGBHDCOHCHFDMCPEBDO'));</script><noscript>email</noscript>
+	</td>
+
+	<td valign=center width=30%  align=center>
+	<img src=/gifs/ar4.gif border=0>&nbsp;<a class=SLink href=/php/agreement.phtml?option_lang=eng>Terms of Use</a>
+	</td>
+
+	<td valign=center width=20%  align=center>
+	<img src=/gifs/ar4.gif border=0>&nbsp;<a class=SLink href=/php/registration.phtml?option_lang=eng>Registration to the website</a></td>
+
+	<td valign=center width=20%  align=center>
+	<img src=/gifs/ar4.gif border=0>&nbsp;<a class=SLink href=/supplement/logo_mathnet.zip>Logotypes</a></td>
+
+
+
+	<td align=left width=28%>
+	<nobr>&copy; <A class=SLink title="Steklov Mathematical Institute RAS" href="http://www.mi-ras.ru" target=_blank>
+	Steklov Mathematical Institute RAS</A>,&nbsp;2026</nobr>
+	</td>
+	</tr>
+	</TABLE>
+	</DIV>
+	<br><br>
+
+	
+		<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+		_uacct = "UA-3038033-1";
+		urchinTracker();
+		</script>
+		
+</body>
+
+</html>

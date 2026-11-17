@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/ODD_CUBIC_TWENTIETH_MOMENT_WITNESS.md",
+  "new_claim": "G3ODD20WITNESS20261115",
+  "previous_goal_turn_classification": "progress: the homogeneous13-zero witness was constructed and certified, with first nonzero order14 and smooth curve. The odd19-zero witness was still an invariant-ring existence result.",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_odd_prefix_witness.py",
+  "checker_sha256": "4909ec6b9808afb169a4f90526ebb1fd39511d548e27d079af544b1f090a6db6",
+  "certificate_sha256": "68c00b9c970c3ea71942c33633af21d4bb2b1fc4b6f0918f20ab09afc944561d",
+  "accepted_receipt_sha256": "a7fdbe5cd2cf493fecc18bec19af121616ed73e3532a1add5480fa05d5fe16b9",
+  "prior_frontier": {
+    "path": "jacobian-followup/moment-vanishing-audit/odd_twentieth_witness_preupdate_20261115.json",
+    "sha256": "ce614533b0ad6cb2afd1d6273e829709ae8e06f2facdf1071868371873f2a099"
+  },
+  "software_semantics": {
+    "previous_audit": "homogeneous_prefix_witness_source_audit.json",
+    "previous_audit_sha256": "d140251304780c8db69d90361970b91bafdc979a20baf4b435335ba7e0c8d6df",
+    "docstrings": "sources/python_flint_0_9_interval_docstrings.json",
+    "docstrings_sha256": "dcbb009d66525e89573e5ea3bee62658fb564cbc666a9600405f3d7d007f4003",
+    "documentation_url": "https://python-flint.readthedocs.io/en/latest/acb.html",
+    "python_flint": "0.9.0",
+    "FLINT": "3.6.0",
+    "precision_bits": 384,
+    "boundary": "Reuse the retained audited exact rational construction and directed complex-ball bounds. No Gaussian theorem is imported from software documentation."
+  },
+  "new_primary_source": {
+    "author": "Leonid Bedratyuk",
+    "title": "Projective Differential Moment Invariants from the Viewpoint of Classical Invariant Theory",
+    "version": "2610.13229v1",
+    "submitted": "2026-10-09",
+    "checked_current_revision": "2026-11-15",
+    "url": "https://arxiv.org/html/2610.13229v1",
+    "cache": "sources/bedratyuk_projective_moments_2610_13229v1.html",
+    "sha256": "fc0a9b6b64d05aa8c5f8cd42139fabe83d8f0e2b767ac05716b6d662b80754c9",
+    "read": "Introduction, section2.1, Theorem4.1 and proof, Theorem4.3 and selected proof, Theorem5.2 and proof, section5.5 theorem and initial proof.",
+    "scope": "Projective differential image moments and an infinite formal moment algebra; the SL(3) cubic submodule differs from our orthogonal coefficient representation.",
+    "import": "None. Neither its nonfinite-generation statement nor its two cubic generators supply a Gaussian pure-prefix certificate or contradict fixed finite-dimensional orthogonal invariant-ring finiteness."
+  },
+  "retained_inputs": {
+    "explore_odd_prefix_witness.py": "df72b62bf57461372a6cfcb9726f2adc4a5d60aec8b821634e5b2f6458c898c4",
+    "odd_prefix_witness_exploration.json": "a8b1b19a12ced70bb471161acc34fda0437e666191bbb737857849b2f60aee18",
+    "build_odd_prefix_witness.py": "edf7eecbded738e39395b7db0a269db36aacface827c89281e185612fc6a6357",
+    "odd_prefix_witness_certificate.json": "68c00b9c970c3ea71942c33633af21d4bb2b1fc4b6f0918f20ab09afc944561d",
+    "odd_prefix_witness_verification.json": "a7fdbe5cd2cf493fecc18bec19af121616ed73e3532a1add5480fa05d5fe16b9",
+    "homogeneous_prefix_witness_certificate.json": "e38c1913047deaa5ec0f70f889087c6b368569b0104185a39edaf818846d693d",
+    "homogeneous_prefix_witness_verification.json": "f043b4cf12006c22ff20d3067469a2f074b72a053422789b2ea6c14fe8c47352",
+    "odd_cubic_invariants_verification.json": "31dc3ed384c6f571778a0f0d8abfd28bc50cd293bda337a2e8d2d62e7df0df62"
+  },
+  "witness": {
+    "coefficient_order": [
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "h",
+      "u",
+      "v",
+      "w"
+    ],
+    "definition": "Unique root of nine rational polynomial Wick equations M2,...,M18 in the certified complex polydisc.",
+    "complex_sup_radius": "1e-40",
+    "eta_upper": "1e-65",
+    "q_upper": "1e-15",
+    "initial_zero_moments": 19,
+    "first_nonzero_moment": 20,
+    "odd": true,
+    "homogeneous": false,
+    "smooth_projective_leading_curve": true,
+    "algebraic_coefficients_isolated": true,
+    "minimal_polynomials_claimed": false,
+    "normalized_M20_real_interval": [
+      "2e-21",
+      "3e-21"
+    ],
+    "normalized_M20_imag_interval": [
+      "1e-21",
+      "2e-21"
+    ]
+  },
+  "smooth_leading_least_prefix_interval": [
+    20,
+    188
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    188
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    1854
+  ],
+  "global_least_prefix_interval": [
+    20,
+    1855
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    1854
+  ],
+  "method": "Lift the retained homogeneous seed by three linear coefficients. All total degrees in P^n contribute to Wick moments; the divisor(3n+1)!! is only a fixed equation scaling. Certified contraction isolates a simple algebraic root, a nonzero20th moment proves exact first order, and a15-column gradient minor proves the cubic leading form smooth.",
+  "numerical_search_boundary": "One seeded start produced one approximate candidate. Only the separate interval acceptance gate establishes exact zero moments and nonzero20th.",
+  "construction_depends_on_analytic_classification": false,
+  "homogeneous13_zero_witness_completed": true,
+  "odd19_zero_witness_completed": true,
+  "prefix20_sufficiency_proved": false,
+  "least_prefix_computed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "assurance": "Rational isolated-root representation, outward-rounded complex intervals and written contraction/smoothness proof. No all-order analytic theorem is required for the new finite-prefix obstruction. Independent replay, external review and formal verification remain outstanding.",
+  "remaining": [
+    "Least smooth-leading/homogeneous/global pure prefixes",
+    "Twenty-moment sufficiency",
+    "Expanded global radical cofactors",
+    "Independent review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

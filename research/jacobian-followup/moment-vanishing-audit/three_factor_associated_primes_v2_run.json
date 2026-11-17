@@ -1,0 +1,13 @@
+{
+  "scope": "Four symmetry-reduced localized socle tests for candidate embedded coordinate primes; coordinate-support theorem proved separately.",
+  "wall_limit_seconds": 50,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "completed": true,
+  "input_sha256": "e052a5400be8474a2f258e39971919577b4ccd5e3cd0936eaeb9bd9f0cf1288d",
+  "log_sha256": "9dac4be2987b5bf9dce0eab16046b5490cf52099515c653736d1289a70c003ae",
+  "elapsed_seconds": 9.324483181990217,
+  "stdout_tail": "PLANE_AD_START\nPLANE_AD_SOCLE_GENERATORS\n0\nPLANE_AD_FORWARD\n0\nPLANE_AD_REVERSE\n0\nPLANE_AD_WITNESS\nPLANE_AD_I_HILBERT\n1,\n0,\n0,\n-1,\n-2,\n-1,\n-2,\n7,\n3,\n-1,\n-8,\n4,\n0 \nPLANE_AD_K_HILBERT\n1,\n0,\n0,\n-1,\n-2,\n-1,\n-2,\n7,\n3,\n-1,\n-8,\n4,\n0 \nAXIS_A_START\nAXIS_A_SOCLE_GENERATORS\n13\nAXIS_A_FORWARD\n0\nAXIS_A_REVERSE\n0\nAXIS_A_WITNESS\n143920139571*b3c2e2f6-333187402232*b2ce2f8+180376507056*be2f10\nAXIS_A_I_HILBERT\n1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n-5,\n-2,\n-7,\n40,\n53,\n-144,\n52,\n41,\n-35,\n1,\n10,\n2,\n-4,\n0 \nAXIS_A_K_HILBERT\n1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n-5,\n-2,\n-7,\n38,\n62,\n-159,\n62,\n37,\n-18,\n-38,\n50,\n-18,\n0 \nAXIS_D_START\nAXIS_D_SOCLE_GENERATORS\n0\nAXIS_D_FORWARD\n0\nAXIS_D_REVERSE\n0\nAXIS_D_WITNESS\nAXIS_D_I_HILBERT\n1,\n0,\n0,\n-1,\n-1,\n-1,\n-1,\n-1,\n6,\n-4,\n21,\n-33,\n18,\n-7,\n4,\n-1,\n0 \nAXIS_D_K_HILBERT\n1,\n0,\n0,\n-1,\n-1,\n-1,\n-1,\n-1,\n6,\n-4,\n21,\n-33,\n18,\n-7,\n4,\n-1,\n0 \nORIGIN_START\nORIGIN_SOCLE_GENERATORS\n8\nORIGIN_FORWARD\n0\nORIGIN_REVERSE\n0\nORIGIN_WITNESS\na5be2f13\nORIGIN_I_HILBERT\n1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n1,\n0,\n0,\n3,\n3,\n3,\n-2,\n-15,\n-24,\n48,\n-6,\n-15,\n5,\n0,\n0,\n3,\n-3,\n-3,\n-6,\n21,\n-15,\n3,\n0 \nORIGIN_K_HILBERT\n1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n1,\n0,\n0,\n3,\n3,\n3,\n-7,\n15,\n-99,\n148,\n-81,\n15,\n0,\n0,\n0,\n0,\n15,\n-48,\n54,\n-24,\n3,\n0 \nEND\n"
+}

@@ -1,0 +1,16 @@
+DET_POWER_REMAINDER_SIZE
+1
+11
+// ** redefining remainderPoly (ta^k,G);print("DET_POWER_REMAINDER_SIZE");print(k);print(size(remainderPoly));) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/cuspidal_generic_small_powers_v2.sing:82
+DET_POWER_REMAINDER_SIZE
+2
+113
+// ** redefining remainderPoly (ta^k,G);print("DET_POWER_REMAINDER_SIZE");print(k);print(size(remainderPoly));) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/cuspidal_generic_small_powers_v2.sing:82
+DET_POWER_REMAINDER_SIZE
+3
+113
+// ** redefining remainderPoly (ta^k,G);print("DET_POWER_REMAINDER_SIZE");print(k);print(size(remainderPoly));) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/cuspidal_generic_small_powers_v2.sing:82
+DET_POWER_REMAINDER_SIZE
+4
+0
+END

@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "path": "sources/stacks-0BCQ.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BCQ",
+      "title": "The Stacks Project, Complements of affine opens",
+      "locator": "Section31.17: complement of a nonempty affine open in a normal separated variety is pure codimension1. A Hartogs proof is included.",
+      "bytes": 27587,
+      "sha256": "d88aa9065c868b9ff80fea457625f5a829a910d3b9a3d9796c965d235aba00e1"
+    },
+    {
+      "path": "sources/stacks-0BMB.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BMB",
+      "title": "The Stacks Project, Purity of branch locus",
+      "locator": "Lemma58.21.4: quasi-finite normal-to-regular morphisms unramified at all height-one generalizations are etale.",
+      "bytes": 18578,
+      "sha256": "37a491b9ddf1fed9ccbc333dfd635731e6394e64c0d1d5a27a323a63b65e8585"
+    },
+    {
+      "path": "sources/stacks-0EYG.html",
+      "url": "https://stacks.math.columbia.edu/tag/0EYG",
+      "title": "The Stacks Project, Abhyankar's lemma for regular divisor",
+      "locator": "Lemma58.31.5; iterating parameter-root base changes and purity gives the normal-crossing local Kummer description.",
+      "bytes": 20775,
+      "sha256": "a4c8f58c4c8f844bb05e5ab7f3d5f23aa497a143ade6c18c5e172e1768dbb7bd"
+    },
+    {
+      "path": "sources/stacks-04GE.html",
+      "url": "https://stacks.math.columbia.edu/tag/04GE",
+      "title": "The Stacks Project, Henselian local rings",
+      "locator": "Lemma10.153.3(8),(13): etale points have unique sections over a strictly henselian base, and quasi-finite algebras split into a finite part and a part missing the closed fiber.",
+      "bytes": 51560,
+      "sha256": "89d0ae2fc39e588308d217d5676c7960864aef11009514c68845392c02ee45e0"
+    }
+  ],
+  "scope": "The primary local/purity inputs are attributed; the image bounds, complete finite subgroup marks, arithmetic normalizer argument and cubic omission controls are proved in the note."
+}

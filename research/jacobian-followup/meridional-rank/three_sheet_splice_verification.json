@@ -1,0 +1,1103 @@
+{
+  "status": "PASS exact sharp-four evidence",
+  "sharp_named_knots": 4,
+  "results": [
+    {
+      "name": "13a_3145",
+      "independent_planar_arc_paths": [
+        [
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            7,
+            1
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        [
+          [
+            12,
+            1
+          ],
+          [
+            9,
+            0
+          ]
+        ],
+        [
+          [
+            9,
+            3
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        [
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            0
+          ]
+        ],
+        [
+          [
+            11,
+            3
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        [
+          [
+            8,
+            3
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "new_to_source_arc_indices": [
+        2,
+        0,
+        3,
+        1,
+        4,
+        6,
+        7,
+        9,
+        5,
+        10,
+        8,
+        11,
+        12
+      ],
+      "S3_arc_labels": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "four_bridge_seed_arcs": [
+        1,
+        3,
+        5,
+        10
+      ],
+      "four_bridge_seed_trace": [
+        [
+          5,
+          1,
+          12
+        ],
+        [
+          12,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          4,
+          10,
+          7
+        ],
+        [
+          8,
+          7,
+          9
+        ],
+        [
+          10,
+          9,
+          11
+        ]
+      ],
+      "branched_word_multiset_matches": true,
+      "splice_basis_transport": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ]
+      },
+      "model": "A",
+      "epsilon": 1,
+      "amalgam": {
+        "first_vertex": "<d,a | d^2=a^3>",
+        "second_vertex": "<e,b | e^2=b^3>",
+        "eliminated_vertex_generator_words": {
+          "3": [
+            -2,
+            -2,
+            -2,
+            1
+          ],
+          "4": [
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        "edge_basis_matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            0
+          ]
+        ],
+        "edge_injectivity": "Each (meridian,fibre) subgroup is Z^2: quotient by fibre is C2*C3 and meridian powers have nonempty reduced form; fibre has infinite order by abelianization. Amalgam normal form embeds each nonabelian vertex group.",
+        "cover_group_rank": 2
+      },
+      "abelian_cover": {
+        "cyclic_degree": 37,
+        "universal_abelian_cover_H1": "0",
+        "commutator_subgroup": "perfect",
+        "all_solvable_quotients": "cyclic"
+      },
+      "cover_group_rank": 2,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_3147",
+      "independent_planar_arc_paths": [
+        [
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        [
+          [
+            10,
+            1
+          ],
+          [
+            11,
+            0
+          ]
+        ],
+        [
+          [
+            9,
+            1
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        [
+          [
+            12,
+            3
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        [
+          [
+            11,
+            1
+          ],
+          [
+            9,
+            0
+          ]
+        ],
+        [
+          [
+            8,
+            3
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "new_to_source_arc_indices": [
+        2,
+        0,
+        3,
+        1,
+        4,
+        6,
+        7,
+        10,
+        5,
+        9,
+        8,
+        11,
+        12
+      ],
+      "S3_arc_labels": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "four_bridge_seed_arcs": [
+        1,
+        3,
+        5,
+        10
+      ],
+      "four_bridge_seed_trace": [
+        [
+          5,
+          1,
+          12
+        ],
+        [
+          12,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          8,
+          10,
+          9
+        ],
+        [
+          4,
+          9,
+          7
+        ],
+        [
+          10,
+          7,
+          11
+        ]
+      ],
+      "branched_word_multiset_matches": true,
+      "splice_basis_transport": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ]
+      },
+      "model": "A",
+      "epsilon": -1,
+      "amalgam": {
+        "first_vertex": "<d,a | d^2=a^3>",
+        "second_vertex": "<e,b | e^2=b^3>",
+        "eliminated_vertex_generator_words": {
+          "3": [
+            -2,
+            -2,
+            -2,
+            1
+          ],
+          "4": [
+            -1,
+            -1,
+            -1,
+            2
+          ]
+        },
+        "edge_basis_matrix": [
+          [
+            0,
+            -1
+          ],
+          [
+            -1,
+            0
+          ]
+        ],
+        "edge_injectivity": "Each (meridian,fibre) subgroup is Z^2: quotient by fibre is C2*C3 and meridian powers have nonempty reduced form; fibre has infinite order by abelianization. Amalgam normal form embeds each nonabelian vertex group.",
+        "cover_group_rank": 2
+      },
+      "abelian_cover": {
+        "cyclic_degree": 35,
+        "universal_abelian_cover_H1": "0",
+        "commutator_subgroup": "perfect",
+        "all_solvable_quotients": "cyclic"
+      },
+      "cover_group_rank": 2,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_3148",
+      "independent_planar_arc_paths": [
+        [
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        [
+          [
+            10,
+            1
+          ],
+          [
+            9,
+            0
+          ]
+        ],
+        [
+          [
+            9,
+            1
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        [
+          [
+            11,
+            3
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        [
+          [
+            8,
+            3
+          ],
+          [
+            11,
+            0
+          ]
+        ],
+        [
+          [
+            12,
+            3
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "new_to_source_arc_indices": [
+        2,
+        0,
+        3,
+        1,
+        4,
+        6,
+        7,
+        10,
+        5,
+        11,
+        8,
+        9,
+        12
+      ],
+      "S3_arc_labels": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "four_bridge_seed_arcs": [
+        1,
+        3,
+        5,
+        11
+      ],
+      "four_bridge_seed_trace": [
+        [
+          5,
+          1,
+          12
+        ],
+        [
+          12,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          4,
+          11,
+          7
+        ],
+        [
+          8,
+          7,
+          9
+        ],
+        [
+          7,
+          6,
+          10
+        ]
+      ],
+      "branched_word_multiset_matches": true,
+      "splice_basis_transport": {
+        "1": [
+          1
+        ],
+        "2": [
+          2,
+          -1,
+          -1
+        ]
+      },
+      "model": "B",
+      "epsilon": 1,
+      "amalgam": {
+        "first_vertex": "<d,a | d^2=a^3>",
+        "second_vertex": "<b,e | b^2=e^3>",
+        "eliminated_vertex_generator_words": {
+          "3": [
+            2,
+            2,
+            1
+          ],
+          "4": [
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        "edge_basis_matrix": [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "edge_injectivity": "Each (meridian,fibre) subgroup is Z^2: quotient by fibre is C2*C3 and meridian powers have nonempty reduced form; fibre has infinite order by abelianization. Amalgam normal form embeds each nonabelian vertex group.",
+        "cover_group_rank": 2
+      },
+      "abelian_cover": {
+        "cyclic_degree": 37,
+        "universal_abelian_cover_H1": "0",
+        "commutator_subgroup": "perfect",
+        "all_solvable_quotients": "cyclic"
+      },
+      "cover_group_rank": 2,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_3149",
+      "independent_planar_arc_paths": [
+        [
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            7,
+            1
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        [
+          [
+            11,
+            1
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        [
+          [
+            9,
+            3
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        [
+          [
+            10,
+            3
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        [
+          [
+            8,
+            3
+          ],
+          [
+            11,
+            0
+          ]
+        ],
+        [
+          [
+            12,
+            1
+          ],
+          [
+            9,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "new_to_source_arc_indices": [
+        2,
+        0,
+        3,
+        1,
+        4,
+        6,
+        7,
+        11,
+        5,
+        10,
+        8,
+        9,
+        12
+      ],
+      "S3_arc_labels": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "four_bridge_seed_arcs": [
+        1,
+        3,
+        5,
+        11
+      ],
+      "four_bridge_seed_trace": [
+        [
+          5,
+          1,
+          12
+        ],
+        [
+          12,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          8,
+          11,
+          9
+        ],
+        [
+          4,
+          9,
+          7
+        ],
+        [
+          9,
+          6,
+          10
+        ]
+      ],
+      "branched_word_multiset_matches": true,
+      "splice_basis_transport": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ]
+      },
+      "model": "B",
+      "epsilon": -1,
+      "amalgam": {
+        "first_vertex": "<d,a | d^2=a^3>",
+        "second_vertex": "<b,e | b^2=e^3>",
+        "eliminated_vertex_generator_words": {
+          "3": [
+            2,
+            2,
+            1
+          ],
+          "4": [
+            -1,
+            -1,
+            -1,
+            2
+          ]
+        },
+        "edge_basis_matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "edge_injectivity": "Each (meridian,fibre) subgroup is Z^2: quotient by fibre is C2*C3 and meridian powers have nonempty reduced form; fibre has infinite order by abelianization. Amalgam normal form embeds each nonabelian vertex group.",
+        "cover_group_rank": 2
+      },
+      "abelian_cover": {
+        "cyclic_degree": 35,
+        "universal_abelian_cover_H1": "0",
+        "commutator_subgroup": "perfect",
+        "all_solvable_quotients": "cyclic"
+      },
+      "cover_group_rank": 2,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    }
+  ],
+  "total_three_sheet_covers": 26,
+  "proved_cyclic_covers": 22,
+  "proved_rank2_covers": 4,
+  "unresolved_cover_groups": 0,
+  "proof_assurance": "Written uniform peripheral-Z2 injection and free-product-with-amalgamation normal-form arguments, unformalized and externally unreviewed. Exact presentation, named PD, upper seeds, branch words, peripheral elimination and homology replay pass. General meridional branched-cover rank theorem and published Wirtinger-number/bridge equality are explicit dependencies.",
+  "priority_scope": "Four named sharp certificates newly retained here; targets appear in the fetched external open list and pinned[3,4] data. Worldwide previously-unresolved status and known-family/priority exclusion are not established. No full MRC solution.",
+  "input_sha256": {
+    "verify_three_sheet_splices.py": "1839f4b8ad69788222f2a61ca98b0190ee43cc0f0c9a7bc93d8e1634d789ee60",
+    "three_sheet_splice_plan.json": "3060b3bcc63b7895b392108be37d3972872ca7ca4f88a6ed9ef6ce59c0f2c19f",
+    "three_sheet_splice_results.json": "fe01dc4bce6716570613df01ab859a03ea3b428e698c9fa51791818ea53c0d06",
+    "three_sheet_structure_verification.json": "aedd9549aed67422c38b37987750abbd68138c024acdd779f5bb75c741e468be",
+    "three_sheet_structural_results.json": "7c5bb164817542758d523abb0d4138dfd220ec7ee3f6acc812cc4e8bb8748cc6",
+    "three_sheet_nonabelian_results.json": "a542b07fec8d73b6d2be21251fb977a3d41e175fff0c4601a5f3eee8d917c040",
+    "three_sheet_metabelian_results.json": "d7d7ae686da6afd5341b85ad695faf9b622ebca7ded8b83602c8b9830bba9ada",
+    "splice_knot_provenance.json": "36e39ebd6e1cc41779ec6b644af94d59e6bb2200dd5e5619b1a12a4acdd011a3",
+    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
+    "small_symmetric_full_panel_results.json": "c03f855c9929e288e421506215732320b23345dee98314e91d6488d2ee335bff",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "verify_three_sheet_structure.py": "72a9667a2613c8c5fe5d8d02a107bafeb1d251cedac1fc4deea3a1541d9a9a36",
+    "verify_integer_lifts.py": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309"
+  }
+}

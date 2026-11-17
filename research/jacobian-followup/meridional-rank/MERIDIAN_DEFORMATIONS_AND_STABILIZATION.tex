@@ -1,0 +1,291 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\GL}{\operatorname{GL}}
+\title{Meridian-varying tangents and formal stabilization at icosahedral points}
+\author{Internal research working proof}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+All sixteen retained $A_5$ quotient-kernel classes, supported on
+twelve of the sixteen target knots, give complex three-dimensional
+$H_3$ reflection representations. Their meridian-varying KCH
+tangent spaces have now been computed exactly. After normalizing
+one meridian projector, each has dimension five: four residual
+conjugations and one direction with nonzero meridian-eigenvalue
+derivative. The fixed-eigenvalue formal representations are therefore
+conjugate to the original representation, strengthening the earlier
+formal-orthogonality boundary.
+
+A separate uniform splitting argument gives an all-order restriction
+even when the eigenvalue varies: adjoining any finite-dimensional
+trivial summand cannot deform these points into irreducible
+higher-dimensional KCH representations. Thus this particular route
+cannot raise the rank-three lower bound to four. It does not exclude
+other representations or components.
+
+The surviving rank-three tangent is not an actual curve certificate.
+Both embeddings modulo $11$ pass through degree three, with a separate
+polynomial replay, but characteristic-zero integrability remains open.
+No target knot is settled. The uniform arguments are written working
+proofs, unformalized and externally unreviewed, without a priority claim.
+
+\section{Exact normalized tangent spaces}
+
+Let $\Gamma$ be a knot group and $\rho_0:\Gamma\to\GL(W)$ one
+of the retained $H_3$ representations, with $\dim W=3$. Write
+$M_i=\rho_0(m_i)$ for the diagram meridians. Each $M_i$ is an
+involution with eigenvalues $(-1,1,1)$ over
+$\mathbb Q(\tau)$, where $\tau^2=\tau+1$.
+
+A KCH deformation means a representation for which every
+$\rho(m_i)-I$ has rank one and the nonidentity eigenvalue remains
+different from one. For a formal such family, put
+\[
+ P(t)=\frac{\rho_t(m_0)-I}{\mu(t)-1},\qquad
+ P_0=\frac{I-M_0}{2}.
+\]
+These are rank-one idempotents. The invertible matrix
+$S=P(t)P_0+(I-P(t))(I-P_0)$ reduces to $I$ and satisfies
+$P(t)S=SP_0$. Conjugation therefore normalizes the first meridian to
+\begin{equation}\label{eq:normalize}
+ M_0+s(t)(I-M_0),\qquad \mu(t)=-1+2s(t).
+\end{equation}
+No fixed-eigenvalue assumption is used in this normalization.
+
+The retained four-seed Wirtinger propagation expresses all thirteen
+arc matrices in terms of the four seed matrices. Use one variable
+$s$ for the first seed and nine unrestricted infinitesimal entries
+for each of the other three. There are $28$ variables. For a
+crossing $M_b=M_oM_aM_o^{-1}$, its derivative is
+\[
+ \dot M_b=\dot M_oM_aM_o+M_o\dot M_aM_o-M_b\dot M_oM_o.
+\]
+For $M_b=M_o^{-1}M_aM_o$, it is
+\[
+ \dot M_b=-M_o\dot M_oM_b+M_o\dot M_aM_o+M_oM_a\dot M_o.
+\]
+Reverse propagation exchanges the two formulas. The actual crossing
+signs are retained; involutivity of the base does not justify
+discarding signs in the derivative.
+
+Impose all thirteen crossing derivatives, giving $117$ scalar rows.
+The rank-one tangent condition on another seed is equivalently
+\[
+ (I+M_i)\dot M_i(I+M_i)=0.
+\]
+Its nine entries give another $27$ rows. This condition is the
+linearization of the rank-one minors, since $I+M_i$ projects, up
+to the nonzero scalar two, onto the two-dimensional fixed space.
+The resulting matrix is $144$ by $28$ over $\mathbb Q(\tau)$.
+
+\begin{proposition}\label{prop:tangent}
+For every retained base, that matrix has rank $23$ and nullity five.
+Its kernel with $\dot s=0$ consists exactly of the four-dimensional
+residual conjugation space. The quotient tangent space is
+one-dimensional and $d\mu=2\,ds$ is nonzero on it.
+\end{proposition}
+The receipt supplies exact quadratic-rational kernel bases and
+modular rank lower certificates in both split embeddings at
+$11,19,29,31$. Exact independent kernel evaluation and basis
+independence give the matching upper bound. The first-meridian
+centralizer has dimension five; its scalar subspace acts trivially,
+and its conjugation image has dimension four. Direct rational
+calculations check this image lies in the kernel. A kernel vector
+with $\dot s\ne0$ supplies the remaining direction.
+
+The verifier rebuilds the crossing derivative blocks using
+dual-number relator multiplication, with inverse derivative
+$-M^{-1}\dot M M^{-1}$. It also tests every rank-one minor.
+The PD parser and retained coefficient-group model are shared inputs;
+the derivative formulas and symbolic nullspace solver are not shared.
+The actual $T(3,5)$ family from the companion torus note gives a
+positive tangent control, while adding its meridian-square relation
+reduces the normalized nullity from five to four.
+
+\section{Fixed meridian eigenvalue and the integrability gate}
+
+\begin{corollary}\label{cor:fixed}
+Every complex formal representation through one of these rank-three
+points that keeps meridians involutive is formally conjugate to the
+constant representation.
+\end{corollary}
+\begin{proof}
+Formal involutions have the same eigenmultiplicities as their special
+fibre, by their idempotents $(I\pm M)/2$. Thus the meridians still
+satisfy the rank-one condition. Normalize the first as above, now
+with $s=0$. Suppose all coefficients below order $j$ have been
+removed by conjugation. At order $j$, the representation and
+rank-one identities give an element of the fixed-$s$ tangent kernel
+at $\rho_0$. By Proposition~\ref{prop:tangent}, it has the form
+$[A,M_i]$ for a matrix $A$ commuting with $M_0$.
+Conjugation by $I+t^jA$, with the sign chosen to remove this
+coefficient, fixes $M_0$ and removes it on every seed, hence every
+generator. The ordered product of these conjugations converges
+$t$-adically. It conjugates the entire family to $\rho_0$.
+\end{proof}
+
+There is a precise remaining existence problem for varying $s$.
+Choose four linear seed-coordinate conditions transverse to the
+residual conjugations. The implicit function theorem applied to
+the centralizer action puts all nearby deformations in this local
+slice. With those four conditions added, the Jacobian has rank
+$27$ in $28$ variables; its kernel is detected by $ds$.
+Select $27$ independent equations. The analytic implicit function
+theorem solves the other $27$ coordinates uniquely as convergent
+functions of $s$. Substitute these functions in the remaining
+equations. The result is a finite list of convergent functions
+$f_j(s)$, all vanishing through first order.
+
+Either every $f_j$ is identically zero, yielding an actual local
+rank-three curve with parameter $s$, or some $f_j$ has a first
+nonzero coefficient. In the latter case the local slice is an
+isolated thick point, with analytic local algebra
+$\C\{s\}/(s^e)$ for some $e\ge2$. This is a curve-or-obstruction
+alternative, not a decision that the curve exists. A ramified
+parameter change does not evade a nonzero $f_j$, because the
+power-series ring of an arc is an integral domain.
+
+\section{Restricted cocycles and a uniform stabilization theorem}
+
+For a meridian-generated group with representation $\rho$ on $W$,
+define
+\[
+ Z^1_{\rm adm}(\Gamma,W)=
+ \{z\in Z^1(\Gamma,W):z(m_i)\in\im(\rho(m_i)-I)
+ \text{ for every diagram meridian }m_i\}.
+\]
+Principal cocycles lie in this space. The admissibility condition
+also holds on every conjugate meridian, by the cocycle identity.
+Write $H^1_{\rm adm}=Z^1_{\rm adm}/B^1$ and use the analogous
+definition for the contragredient module $W^*$.
+
+\begin{theorem}[Formal splitting under restricted Ext vanishing]\label{thm:split}
+Let $\Gamma$ be generated by meridians, and let
+$\rho_0:\Gamma\to\GL(W)$ have rank-one meridian differences with
+nonidentity eigenvalue $\mu_0\ne1$. Suppose
+\[
+ H^1_{\rm adm}(\Gamma,W)=0,
+ \qquad H^1_{\rm adm}(\Gamma,W^*)=0.
+\]
+For any finite-dimensional trivial representation $T$, every
+formal KCH family specializing to $\rho_0\oplus I_T$ is formally
+conjugate, by a matrix reducing to $I$, to
+\[
+ \sigma_t\oplus I_T.
+\]
+The meridian eigenvalue of $\sigma_t$ is allowed to vary; no
+constancy assumption is imposed. The statement holds over any field in which the
+hypotheses hold.
+\end{theorem}
+\begin{proof}
+Induct on the first order $j\ge1$ at which the off-diagonal blocks
+or the lower-right deviation from $I_T$ have not yet been removed.
+Write the blocks of a meridian, modulo $t^{j+1}$, as
+\[
+ \begin{pmatrix} A_i(t)&t^jB_i\\t^jC_i&I_T+t^jE_i\end{pmatrix},
+ \qquad A_i(0)=\rho_0(m_i).
+\]
+A nonzero entry of $A_i(0)-I$ is a unit in the power-series ring.
+The two-by-two rank-one minors, using that pivot entry, force
+$E_i=0$, every column of $B_i$ to lie in
+$\im(\rho_0(m_i)-I)$, and every row of $C_i$ to lie in the row
+space of $\rho_0(m_i)-I$. Products of the two off-diagonal blocks
+have order at least $2j>j$.
+
+For a general group element, the first upper-right coefficient
+satisfies
+\[
+ B(gh)=\rho_0(g)B(h)+B(g).
+\]
+Thus its columns are admissible cocycles. The lower-left
+coefficient satisfies $C(gh)=C(g)\rho_0(h)+C(h)$.
+The row $C(g)\rho_0(g)^{-1}$ is a cocycle for the row form of the
+contragredient action, and its meridian rows are admissible.
+The two vanishing hypotheses give constant matrices $U,V$ with
+\[
+ B(g)=(\rho_0(g)-I)U,\qquad
+ C(g)=V(\rho_0(g)-I).
+\]
+Conjugation by
+\[
+ I+t^j\begin{pmatrix}0&-U\\V&0\end{pmatrix}
+\]
+removes both coefficients. It does not change the lower-right
+coefficient at order $j$. That coefficient vanishes on the
+meridians and is additive under products at this order, so it
+vanishes throughout $\Gamma$. This advances the induction.
+The product of the conjugating matrices converges $t$-adically.
+In the limit the off-diagonal blocks vanish and the lower-right
+block is $I_T$; the upper-left block is the required representation
+$\sigma_t$. The rank-one condition is preserved by conjugation.
+\end{proof}
+
+\section{Application to all retained bases}
+
+The restricted-cocycle matrix for $W$ has one scalar per meridian
+and three rows per crossing, hence size $39$ by $13$. The same
+construction is applied separately to $W^*$, whose meridian matrices
+are $M_i^{-T}=M_i^T$. On all sixteen bases both matrices have rank
+ten, so both restricted cocycle spaces have dimension three.
+Direct principal-cocycle construction gives three independent
+vectors in each. Consequently both restricted first cohomology
+spaces vanish.
+
+Exact quadratic-rational nullvectors and modular rank certificates
+are replayed. A separate affine-cocycle evaluator checks the full
+oriented knot relators and rebuilds every matrix column. It verifies
+the three independent principal vectors directly. These are
+characteristic-zero statements, covering both embeddings of
+$\mathbb Q(\tau)$; no all-characteristic conclusion is asserted here.
+
+\begin{corollary}
+For every retained base and every $d\ge1$, a formal rank-one-meridian
+family through $\rho_0\oplus I_d$ remains formally reducible.
+It cannot supply an irreducible dimension-$3+d$ KCH lower bound.
+\end{corollary}
+
+In particular, an algebraic family with generic irreducible fibre
+and this special fibre would give, after a local parameter change,
+such a formal family, contradicting the splitting theorem. One can
+see the contradiction by the full matrix-algebra criterion for
+absolute irreducibility: a nonzero determinant of spanning word
+matrices remains nonzero over the Laurent-series field, whereas a
+split representation has no such determinant. This conclusion
+concerns these special fibres only. A different component, another
+semisimplification, a different meridian eigenvalue or an unrelated
+rank-four representation remains possible.
+
+\section{Finite jets and what remains unproved}
+
+The frozen degree-three test uses both embeddings $\tau=4,8$
+modulo $11$. Four transverse gauge coordinates and four local
+rank-one minors per other seed are imposed together with every
+crossing. An invertible selected Jacobian gives a unique candidate
+jet with $s=t$. All $32$ candidates pass through degree three.
+An independent replay uses entrywise polynomial adjugates, scalar
+geometric-series inverses, all oriented relators and all rank-one
+minors, rather than the producer's matrix-inverse recurrence or
+four-minor subset.
+
+These are residue-field jets, without a characteristic-zero lifting
+or curve claim. A modular obstruction would additionally need a
+verified transverse gauge and Jacobian over the local coefficient
+ring. More modular success alone would not establish integrability.
+
+The authoritative receipts are
+\path{meridian_tangent_verification.json} and
+\path{meridian_jet_verification.json}, with frozen inputs and exact
+certificates retained. An actual curve requires proving the residual
+identities. Sharp higher-rank representations require another special
+fibre or mechanism. Full MRC and the sixteen target equalities stay open.
+\end{document}

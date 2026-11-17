@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "primary_sources": [
+    {
+      "author": "Roucairol",
+      "url": "https://arxiv.org/html/math/0604134v2",
+      "cached_file": "roucairol_formal_math0604134v2.html",
+      "sha256": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
+      "locations": [
+        "Theorem0.1(2)",
+        "Theorem0.3",
+        "Section1.2/Proposition1.2"
+      ],
+      "application": "First ramify ALL critical-value curves to graphs,then use NONRAMIFIED rank formula with their conormal multiplicities. Equal polar parts add. No monodromy formula or distinctness hypothesis imported."
+    },
+    {
+      "author": "Pham",
+      "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+      "cached_file": "pham_asterisque130_1985.pdf",
+      "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+      "locations": [
+        "PartI Sections1-4"
+      ],
+      "application": "Tame isolated Milnor decomposition,including multiplicities;local conservative deformation used with explicit exact A_mu model."
+    }
+  ],
+  "not_claimed": [
+    "Arbitrary nonconvergent formal multivariable pencil theorem",
+    "All-ring descent extension",
+    "Novelty of the classical rank mechanism",
+    "Positive-dimensional ordinary critical-set exclusion",
+    "Independent replay,formal verification or external review"
+  ],
+  "new_mathematical_checker_run": false
+}

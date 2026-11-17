@@ -1,0 +1,13 @@
+# Logarithmic volume, corrected surface classification and descent
+
+Reviewed 15 November 2026. [Proof](PROOF.md), [pins](sources.json). Compiler-application novelty remains unverified.
+
+[Hajra, Smooth affine surfaces properly dominated by C* times C*, version1 (2026)](https://arxiv.org/html/2608.04214v1), abstract and TheoremA, classifies FINITE surjective torus domination. This is relevant logarithmic context, but our source is a hyperbola complement and the factor maps may be nonfinite. Its classification is not imported. We instead prove logarithmic pullback directly on SNC completions, obtaining the multiplier r^(-2m) from the actual whole Keller volume.
+
+[Freudenburg--Kojima--Nagamine (2019)](https://arxiv.org/html/1910.03494v1) supplies the corrected warning that factorial, unit-free logarithmic-dimension-zero surfaces are not a two-element list. [Pelka--Razny, version2 (2021)](https://arxiv.org/html/2002.10995v2), introduction, recalls Miyanishi's negative-log-dimension affine-plane criterion (Open Algebraic Surfaces, III.2.2.1); their Theorem1.1 gives the corrected logarithmic-dimension-zero classification. We import the stated negative-dimension criterion. We do not assume factoriality alone forces a plane, and no classification in dimension zero is needed once the volume calculation excludes that entire branch.
+
+[Stacks tag023R](https://stacks.math.columbia.edu/tag/023R) gives effective descent for quasi-coherent/invertible sheaves. The proof spells out the rational-point normalization of conjugate line-bundle isomorphisms: constant geometric units make the normalized maps unique, so the cocycle condition holds. This proves vanishing of invariant geometric Picard classes from the actual arithmetic UFD ring. It does not say that every geometric class is defined over the retained function field.
+
+The Danielewski volume exclusion is proved by an explicit compact period, not imported from a finite-degree census. The higher-power family has an explicit regular primitive from Bezout for P,P' and polynomial integration; it passes that one test without supplying the two required etale maps. Its arithmetic/geometric Picard jump is computed by localization and the root-permutation action. Geometric factorial intermediates, all nonnegative-logarithmic branches and the ordinary exponent-one surfaces are closed. The proper negative-logarithmic, unit-free, geometrically nonfactorial whole-factor problem remains open.
+
+The displayed total polynomial model a=z^d-u^m*v has a critical zero fibre for every m>=1,d>=2, so it cannot itself be the whole smooth retained-base map. This excludes the raw global spread without excluding a different spread of the same generic surface.

@@ -1,0 +1,20 @@
+from sage.all import *
+from sage.libs.singular.function_factory import singular_function
+from pathlib import Path
+import json,time
+start=time.monotonic()
+for k in [2,4]:
+ data=json.loads(Path('/tmp/degree8_Mlinear_exact_'+str(k)+'.json').read_text());T=PolynomialRing(QQ,'t');K=NumberField(T(data['P4']),'t');A=PolynomialRing(K,names=data['variables'],order='degrevlex');V=PolynomialRing(A,'w');W,M,L=[V(data[x]) for x in ['W','M','L']];s=K(data['s']);I=A.ideal([A(f) for f in data['generators']]);G=[A(g) for g in data['GB']]
+ print('start lift35rules',k,time.monotonic()-start,flush=True)
+ lift=singular_function('lift');mat=lift(I,A.ideal(G));print('lift dimensions',mat.dimensions(),flush=True)
+ assert matrix(A,1,4,list(I.gens()))*mat==matrix(A,1,len(G),G)
+ data['GB_in_input']=[[str(mat[i,j]) for i in range(4)] for j in range(35)]
+ Q=A.quotient(I,names=['q4','q5','q6','q7']);VQ=PolynomialRing(Q,'w');w=VQ.gen();cv=lambda f:VQ([Q(c) for c in f]);WW,MM,LL=list(map(cv,[W,M,L]));ss=Q(s);hh=w-ss
+ wh,rem=WW.quo_rem(hh);assert rem==0
+ E=(MM*wh).quo_rem(LL)[1];e5=A(E[5].lift());data['reduced_E5']=str(e5)
+ print('E5 NF degree',e5.degree(),'terms',len(e5.monomials()),'elapsed',time.monotonic()-start,flush=True)
+ print('start inverse',flush=True)
+ inv=e5.inverse_mod(I);assert Q(inv*e5)==1
+ data['E5_inverse']=str(inv)
+ Path('/tmp/degree8_Mlinear_unit_'+str(k)+'.json').write_text(json.dumps(data,indent=2))
+ print('PASS exact unit on linearM',k,'inverse degree',inv.degree(),'elapsed',time.monotonic()-start,flush=True)

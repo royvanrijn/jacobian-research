@@ -1,0 +1,7 @@
+LIB "dmodapp.lib";
+ring R=(0,u,a),(x,t,dx,dt),dp;
+minpoly=a^2+1;
+def W=Weyl();setring W;
+ideal I=dx+x-t*u,dt-u*x;
+def N=integralModule(I,intvec(1,0));
+setring N;print(intMod);print("COMPLETE");quit;

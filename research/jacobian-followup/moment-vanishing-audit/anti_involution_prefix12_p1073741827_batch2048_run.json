@@ -1,0 +1,14 @@
+{
+  "prime": 1073741827,
+  "status": "completed",
+  "returncode": 0,
+  "wall_seconds": 45.133889415010344,
+  "limits": {
+    "wall_seconds": 95,
+    "cpu_seconds": 170,
+    "address_space_bytes": 3221225472
+  },
+  "saturation": "(bz-bw)*(bz+bw)",
+  "adaptation": "Prior log reached degree15 with mostly zero reductions in small128-pair batches; increase batch to2048 and use2 threads on the same input",
+  "scope": "Candidate chart only; no outsider without full verification."
+}

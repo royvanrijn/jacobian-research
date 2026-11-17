@@ -1,0 +1,84 @@
+{
+  "release": {
+    "version": "2026.11.2",
+    "url": "https://files.pythonhosted.org/packages/ec/db/4e62ca9f13d5cd1d53ef5cd2aaeda2d654f0d62d7cc2f66d8ca96a097fb6/database_knotinfo-2026.11.2-py3-none-any.whl",
+    "sha256": "5a91e8b77d24fb7d90a4a7048074acb97ca81cde205873983344a64458ad88a3"
+  },
+  "csv_member": "database_knotinfo/csv_data/knotinfo_data_complete.csv",
+  "csv_sha256": "ed4447ff81dc50e2561764760d631356186c34e2dd35f89cc84e0a4d8fedd3d0",
+  "selection": "Exactly8 source knots with new SL3(F3) quotients; archived release, not a live classification",
+  "columns_retained": [
+    "name",
+    "conway_polynomial",
+    "three_genus",
+    "conway_notation",
+    "montesinos_notation",
+    "symmetry_type"
+  ],
+  "records": [
+    {
+      "name": "13a_129",
+      "conway_polynomial": " -3*z^8 - 7*z^6 - 4*z^4 + 2*z^2 + 1 ",
+      "three_genus": "4",
+      "conway_notation": "",
+      "montesinos_notation": "",
+      "symmetry_type": "chiral"
+    },
+    {
+      "name": "13a_135",
+      "conway_polynomial": " 3*z^8 + 7*z^6 + 6*z^4 + 4*z^2 + 1 ",
+      "three_genus": "4",
+      "conway_notation": "",
+      "montesinos_notation": "",
+      "symmetry_type": "chiral"
+    },
+    {
+      "name": "13a_136",
+      "conway_polynomial": " -3*z^8 - 7*z^6 - 4*z^4 + 2*z^2 + 1 ",
+      "three_genus": "4",
+      "conway_notation": "",
+      "montesinos_notation": "",
+      "symmetry_type": "chiral"
+    },
+    {
+      "name": "13a_137",
+      "conway_polynomial": " 3*z^8 + 7*z^6 + 6*z^4 + 4*z^2 + 1 ",
+      "three_genus": "4",
+      "conway_notation": "",
+      "montesinos_notation": "",
+      "symmetry_type": "chiral"
+    },
+    {
+      "name": "13a_194",
+      "conway_polynomial": " -3*z^8 - 7*z^6 - 4*z^4 + 2*z^2 + 1 ",
+      "three_genus": "4",
+      "conway_notation": "",
+      "montesinos_notation": "",
+      "symmetry_type": "chiral"
+    },
+    {
+      "name": "13a_196",
+      "conway_polynomial": " 3*z^8 + 7*z^6 + 6*z^4 + 4*z^2 + 1 ",
+      "three_genus": "4",
+      "conway_notation": "",
+      "montesinos_notation": "",
+      "symmetry_type": "chiral"
+    },
+    {
+      "name": "13a_197",
+      "conway_polynomial": " -3*z^8 - 7*z^6 - 4*z^4 + 2*z^2 + 1 ",
+      "three_genus": "4",
+      "conway_notation": "",
+      "montesinos_notation": "",
+      "symmetry_type": "chiral"
+    },
+    {
+      "name": "13a_198",
+      "conway_polynomial": " 3*z^8 + 7*z^6 + 6*z^4 + 4*z^2 + 1 ",
+      "three_genus": "4",
+      "conway_notation": "",
+      "montesinos_notation": "",
+      "symmetry_type": "chiral"
+    }
+  ]
+}

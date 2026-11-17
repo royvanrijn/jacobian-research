@@ -1,0 +1,21 @@
+{
+  "completed": true,
+  "canonical_proof_sha256": "fd34a26465c0c89994025ecdd01be8ea257f96fa509da50357073638403debe9",
+  "checker_sha256": "16927c6d740d7c03a91cfa37cae48536f6aaf37add27b07a5ef2994f252083ac",
+  "certificate_sha256": "0ce105c94e9896abdcd678ee79f1ad3d403159ca73ef6b0c5802bef2b6b3a71a",
+  "runtime_sha256": "c41c29b094a31333df2573cfca6c14a92c9489271cbabddb6fa757c42a29ee55",
+  "original_models": 6,
+  "original_Wick_identities": 119,
+  "ordinary_ideal_controls": 18,
+  "polynomial_clock_ordinary_ideal_controls": 8,
+  "exact_height_controls": 65,
+  "single_series_boundary_controls": 1,
+  "nonunit_clock_boundary_controls": 1,
+  "monomial_generic_faithfulness_controls": 4,
+  "rejections": 8,
+  "historical_cusp_and_cone_restarted": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "assurance": "Exact finite Wick/source/individual-moment and ordinary ideal/height controls;universal all-phase/all-ring transport,descent and generic faithfulness use the written proofs."
+}

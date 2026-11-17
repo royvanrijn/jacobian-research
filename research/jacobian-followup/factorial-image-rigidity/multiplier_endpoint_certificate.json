@@ -1,0 +1,44 @@
+{
+  "multiplier_interval": [
+    15,
+    24000
+  ],
+  "exponential_partial_sum_last_index": 8,
+  "exponential_tail_upper": {
+    "numerator_hex": "0x1",
+    "denominator_hex": "0x4fbc0"
+  },
+  "e_rational_upper": {
+    "numerator_hex": "0x87767b",
+    "denominator_hex": "0x31d580"
+  },
+  "e_comparison_upper": {
+    "numerator_hex": "0xa9f",
+    "denominator_hex": "0x3e8"
+  },
+  "left_log_strict_lower": {
+    "numerator_hex": "0x6",
+    "denominator_hex": "0x1"
+  },
+  "left_log_integer_argument": 1170,
+  "left_H_strict_lower": {
+    "numerator_hex": "0x6f9",
+    "denominator_hex": "0x1"
+  },
+  "right_log_strict_lower": {
+    "numerator_hex": "0x107",
+    "denominator_hex": "0xc"
+  },
+  "right_log_integer_argument": 3455712000,
+  "right_exponential_rational_upper": {
+    "numerator_hex": "0x17ea71cfb383a0b59498da23d13827c4efea84a414fc705caeb5bc4ded9876c3",
+    "denominator_hex": "0x1edc4ff71e3853d996c3e06cee4560e701b95c450000000000000000"
+  },
+  "right_H_strict_lower": {
+    "numerator_hex": "0x4c9",
+    "denominator_hex": "0x48"
+  },
+  "analytic_extension": "H(a)=50*log(6a(a-2))^2-a is strictly concave for real a>=3",
+  "all_multipliers_in_interval_log_condition": true,
+  "outside_interval_claimed": false
+}

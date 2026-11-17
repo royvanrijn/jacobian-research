@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/CONSTANT_GENUS_TRANSLATIONS_AND_ACTUAL_RECOMPOSITION.md",
+  "proof_sha256": "7aa7b705df0d2663ffdd741422eda20ce497766118f2004353c9a364ffdf3c16",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_haar_constant_genus.py",
+  "checker_sha256": "04dea5cdf41ea20cdbb8ca41e098e5aee61dd28027986e6ca9d6b8d7206a97b8",
+  "receipt": "jacobian-followup/moment-vanishing-audit/haar_constant_genus_verification.json",
+  "receipt_sha256": "e263c6a18737832f0e56de1edbdaf9fa90d35e23337e1468562b727d0f0e6528",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+      "sha256": "5bba81a02bc817eb29835d76f6d5744973a5100b70f4f4fa39c90fed6f3584f8",
+      "use": "Canonical removal of ALL compact-middle cohomology and exact actual-unit Hom preservation; source E has weights4/5/6 with single local logs. Two stray-plus typos corrected with exact baseline retained and prior source audit hash refreshed."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/haar_boundary_reduction_source_audit.json",
+      "sha256": "89143343caa2b59956e09e6fb12a0334bb4265d59fb8aab559579784f1167d6f",
+      "use": "Prior geometric Leray/limit primary audit preserved except its canonical-proof hash update for those two typographic corrections."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/GLOBAL_HAAR_ORBIT_SPLITTING_AND_BOUNDARY_RADICAL.md",
+      "sha256": "1fc7386732d7062b879bdf02cc103cd256f214cee025905826d7f740800193c1",
+      "use": "Actual Cauchy function module, literal rational unit, global source/actual distinction and unit-in-radical safety criterion. Finite-cover induction/branch maps remain."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/POLYNOMIAL_RECOMPOSITION_REFLECTION_AND_UNIVERSAL_FAILURE.md",
+      "sha256": "8ceafda92c79a808344b89da84d36017db8767bc1d240e39b7c7d4a8df59aca6",
+      "use": "Exact divided-difference reconstruction, unique safe-centre theorem and known Long all-order input. The new trace direction supplies actual-connection semisimplicity reflection and rank bounds."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_HAAR_LOG_COEFFICIENTS_AND_ORIGINAL_RESIDUES.md",
+      "sha256": "f73ce4fe3587c95fc28f65db31c02818126fea4e18561bb51a0a7b59cf915aa3",
+      "use": "Top boundary Tate variation has finite global monodromy; retain failure of universal unit cyclicity and large safe unit-invisible spaces."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/INTRINSIC_HAAR_STATES_AND_NONSPLIT_PERIOD_EXTENSIONS.md",
+      "sha256": "0cd034bf1ec43510257756956bed0b401fdc394ccaf2889912c0be53aac8085c",
+      "use": "Actual entire indecomposability makes rational-unit retraction equivalent to all-original-marker safety under eventual purity."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Christopher D. Long",
+      "title": "Counterexamples to the xz-Conjecture and the Mathieu Conjecture for SU(2),v1",
+      "url": "https://arxiv.org/html/2607.19012v1",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/long_260719012v1_recomposition_20261116.html",
+      "sha256": "abeec76e95cba0e6244f4af31240634e28d657116c8afcf743b58db144dd7ebd",
+      "read": "Same versioned primary HTML cached in the earlier recomposition audit. URL freshly opened and full Theorem2.1, Lemma4.1 and Theorem4.2 WITH proofs reread. Determinant-coordinate conversion(a,b,c,d)=(x,z,y,w) checked. No unrelated Jacobian claim is imported.",
+      "exact_import": "ONLY the already-known all-order purity of F=(1+y)(1+z+yz) and fixed-marker law for Q=-y. The new generic-fibre isomorphism, rank2 actual connection and intrinsic global unit location are written deductions; no exceptional invariance or new counterexample is claimed."
+    },
+    {
+      "author": "MIT18.706, Roman Bezrukavnikov course",
+      "title": "Spring2023 Lecture5: Jacobson radical, primitive and semi-primitive rings",
+      "url": "https://ocw.mit.edu/courses/18-706-noncommutative-algebra-spring-2023/mit18_706_s23_lec05.pdf",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/mit_18706_2023_lecture05_radical.pdf",
+      "sha256": "4f3aef8de2d2e165c18f7279c649b36f9765098fbd78eeebecc6c09d07cff411",
+      "read": "Retained complete primary4-page audit,especially PDF2-3 Proposition5.6 and Corollary5.7 with proofs;not newly reread wholesale.",
+      "exact_import": "Finite monodromy is semisimple in characteristic0 by finite averaging; radical images and semisimple head give the unit test. The source-split constant-genus reduction, square-zero translation span, actual-relation condition and recomposition invariance are written proofs."
+    }
+  ],
+  "new_written_arguments": [
+    "A nonsplit intrinsic GLOBAL unit in the boundary source certifies full eventual-pure failure for EVERY actual quotient retaining the unit. Source-unit splitting reflects EVERY polynomial H by finite induction/SUM and primitive branch restriction,before purity.",
+    "In the source-split case W5 E is globally semisimple. Remove its canonical nontrivial isotypic C5;it has no trivial subquotients,so unit-Hom spaces remain EXACT for the actual quotient. The residual source has constant F of rank1+c,c=dim(global fixed genus),and finite Tate top T. No new Hodge/1-motive realization of this second quotient is assumed.",
+    "The radical image R is the span of finite-cover translations T_h-I into F. Its algebra has radical square zero;V/R has finite monodromy. Source splitting implies u notinR and dimR<=c. Actual all-marker safety under eventual purity iff u notin R+K,where K is the ACTUAL kernel intersect F. Source splitting alone does not remove this relation-space test.",
+    "The fixed genus rank c,F,and R are unchanged through EVERY H under branch SUM,although actual K_H is retained separately. Zero fixed genus closes the residual even with arbitrary varying genus;the intrinsic nonsplit alternative still certifies failure,not purity existence.",
+    "Trace/partial fractions give pi_* M_f ->> M_H(f) for ACTUAL Cauchy functions,while divided-difference reconstruction embeds M_f into pi^* M_H(f). Thus actual global semisimplicity reflects EVERY H before purity and ranks satisfy r_f<=r_H<=1+d(r_f-1).",
+    "A semisimple actual primitive system of rank>1 has NO eventually pure H(f) in ANY H degree. Rank1 has a unique safe centre;nonsemisimple primitive systems make EVERY eventually pure H(f),IF ANY,unsafe. No primitive-purity reflection.",
+    "Known Long generic fibre is A2 minus a hyperbola by a=1+y,U=ax,V=aw,UV=(s+1)a-s. Its H2 is pure weight4 rank1,full complement and actual connection rank2;the original unit and fixed marker give a nonsplit unipotent global unit. This is a genuine nonexceptional control,not a new phase search."
+  ],
+  "typographic_correction": {
+    "file": "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+    "before_sha256": "381eb8559ae79fdc9baa855d601feee67d77543be62c1ecd88ce1248550b86b4",
+    "after_sha256": "5bba81a02bc817eb29835d76f6d5744973a5100b70f4f4fa39c90fed6f3584f8",
+    "only_changes": [
+      "stray + between (1) and and strictness replaced by newline",
+      "stray + between algebra, and not these replaced by newline"
+    ],
+    "previous_claim_scopes_and_assurance_flags_changed": false
+  },
+  "essential_boundaries": [
+    "Both FULL exceptional MZ cases remain OPEN. Intrinsic source unit splitting and actual u outside R+K are not universally proved.",
+    "All phases are covered by intrinsic nonsplit or source-split residual cases. No independent compact-middle or varying-genus campaign is required;constant genus rank need not vanish.",
+    "The second residual quotient need not be a geometric Hodge or scalar-function submodule. Global radical square zero is proved ONLY in the source-split residual form,not inferred merely from each local N2.",
+    "Source-split F/R are fixed under H;the ACTUAL relation subspace K_H is NOT claimed fixed or computable generally. Source splitting alone is insufficient.",
+    "Long is not right2O/2I invariant. No algebraic1-motive/curve or relation producer,arbitrary-ring topological promotion,universal machine proof,pure-composite producer,new campaign or review gate."
+  ]
+}

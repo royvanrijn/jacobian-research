@@ -1,0 +1,55 @@
+{
+  "completed": true,
+  "checker_sha256": "cbba2998b52a4a13391bdf93a40cf8d238747a36cdf34e96d19558ddc4e53cec",
+  "sympy_version": "1.14.0",
+  "quadratic_images_sha256": "38129704e081768d4e1b8dbb8dbc8090d31f60f5b1d255bee500c2a1f7bd8c94",
+  "lowest_polarizations_sha256": "bae4254472d3f00c8e7a35bf8d8b696481e6c9162cbc2368e36cd8783ebe9bbe",
+  "imported_haar_arithmetic_sha256": "e154855aa1e255c2910a0ea657323c6737ba5f1f7cadf2169ef3a8e19195d5d9",
+  "cases": {
+    "2O": {
+      "n": 8,
+      "m": 12,
+      "p": 4,
+      "q": 3,
+      "middle_radial_degree": 4,
+      "middle_Laurent_window": [
+        -1,
+        1
+      ],
+      "middle_Haar_mean": "0",
+      "middle_Haar_second_moment": "112/3",
+      "direct_source_mean_and_norm_match": true,
+      "complete_lowest_window_linear_columns": 8,
+      "complete_lowest_window_rank": 6,
+      "complete_lowest_window_nullity": 2,
+      "old_unrestricted_Long_and_radial_height_admitted": false
+    },
+    "2I": {
+      "n": 12,
+      "m": 20,
+      "p": 3,
+      "q": 5,
+      "middle_radial_degree": 6,
+      "middle_Laurent_window": [
+        -1,
+        2
+      ],
+      "middle_Haar_mean": "0",
+      "middle_Haar_second_moment": "275/13",
+      "direct_source_mean_and_norm_match": true,
+      "complete_lowest_window_linear_columns": 14,
+      "complete_lowest_window_rank": 12,
+      "complete_lowest_window_nullity": 2,
+      "old_unrestricted_Long_and_radial_height_admitted": false
+    }
+  },
+  "extra_octahedral_G0_condition_detected": true,
+  "universal_global_regular_algebra_marker_and_filtration_proofs_machine_verified": false,
+  "lowest_window_pure_null_locus": "zero only on both models",
+  "larger_windows_and_complex_logarithmic_height_identity": "OPEN",
+  "all_original_phases_reduced_to_T_invariant": false,
+  "all_exceptional_MZ_decisions": "OPEN",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

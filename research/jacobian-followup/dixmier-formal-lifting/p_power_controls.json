@@ -1,0 +1,229 @@
+{
+  "claim": "QPC1",
+  "status": "PASS",
+  "full_sparse_Ore_power_controls": [
+    {
+      "case": "n2_p7",
+      "p": 7,
+      "G_coefficients_ascending": [
+        0,
+        0,
+        1
+      ],
+      "mu": 1,
+      "h": 1,
+      "target_v_exponent": -14,
+      "target_a_order": 2,
+      "coefficient": 4,
+      "predicted_coefficient": 4,
+      "two_v_word_sum": 4,
+      "gamma_n": 4,
+      "normal_order_terms": 4,
+      "nonzero_commutator_with_v": true
+    },
+    {
+      "case": "n2_p11",
+      "p": 11,
+      "G_coefficients_ascending": [
+        0,
+        0,
+        1
+      ],
+      "mu": 1,
+      "h": 1,
+      "target_v_exponent": -22,
+      "target_a_order": 6,
+      "coefficient": 9,
+      "predicted_coefficient": 9,
+      "two_v_word_sum": 9,
+      "gamma_n": 9,
+      "normal_order_terms": 12,
+      "nonzero_commutator_with_v": true
+    },
+    {
+      "case": "n3_p11",
+      "p": 11,
+      "G_coefficients_ascending": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "mu": 1,
+      "h": 1,
+      "target_v_exponent": -22,
+      "target_a_order": 15,
+      "coefficient": 5,
+      "predicted_coefficient": 5,
+      "two_v_word_sum": 5,
+      "gamma_n": 5,
+      "normal_order_terms": 28,
+      "nonzero_commutator_with_v": true
+    },
+    {
+      "case": "n4_p11",
+      "p": 11,
+      "G_coefficients_ascending": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mu": 1,
+      "h": 1,
+      "target_v_exponent": -22,
+      "target_a_order": 24,
+      "coefficient": 6,
+      "predicted_coefficient": 6,
+      "two_v_word_sum": 6,
+      "gamma_n": 6,
+      "normal_order_terms": 46,
+      "nonzero_commutator_with_v": true
+    },
+    {
+      "case": "n5_p13",
+      "p": 13,
+      "G_coefficients_ascending": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mu": 1,
+      "h": 1,
+      "target_v_exponent": -26,
+      "target_a_order": 41,
+      "coefficient": 8,
+      "predicted_coefficient": 8,
+      "two_v_word_sum": 8,
+      "gamma_n": 8,
+      "normal_order_terms": 19,
+      "nonzero_commutator_with_v": true
+    },
+    {
+      "case": "nonmonic_lower_terms",
+      "p": 11,
+      "G_coefficients_ascending": [
+        5,
+        7,
+        1,
+        3
+      ],
+      "mu": 2,
+      "h": 4,
+      "target_v_exponent": -22,
+      "target_a_order": 15,
+      "coefficient": 4,
+      "predicted_coefficient": 4,
+      "two_v_word_sum": 5,
+      "gamma_n": 5,
+      "normal_order_terms": 128,
+      "nonzero_commutator_with_v": true
+    }
+  ],
+  "symbolic_top_coefficient_identity": "-(n - 1)*(n + 1)/(96*n**3)",
+  "universal_gamma_identity": "(n - 1)*(n + 1)/(24*n)",
+  "positive_classification_families": [
+    "constant_H_affine_G_mu_nonzero",
+    "zero_H_affine_G_lambda_nonzero",
+    "linear_H_constant_G"
+  ],
+  "linear_trace_bimodule_controls": [
+    {
+      "cover_degree": 2,
+      "left_and_right_a_v": "PASS"
+    },
+    {
+      "cover_degree": 3,
+      "left_and_right_a_v": "PASS"
+    }
+  ],
+  "trace_of_projector_is_not_projector": true,
+  "small_prime_boundary": {
+    "p": 5,
+    "n": 2,
+    "target_a_order": 0,
+    "p_power_is_central": true
+  },
+  "scalar_split_fibers": {
+    "p": 7,
+    "dimension": 7,
+    "h": 4,
+    "bad_S_charpoly_coefficients": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      6,
+      6
+    ],
+    "bad_S_charpoly_derivative_zero": false,
+    "bad_S_p_power_scalar": false,
+    "positive_pair_commutator": "h*I",
+    "positive_pair_charpoly_coefficients": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5
+    ],
+    "positive_pair_p_power_scalar": true
+  },
+  "genuine_phase_matrix_boundary": {
+    "source": "QPH1 equation6",
+    "p": 7,
+    "dimension": 14,
+    "commutator": "I",
+    "charpoly_coefficients": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      6
+    ],
+    "charpoly_derivative_zero": true,
+    "p_power_scalar": false
+  },
+  "hashes": {
+    "UNIVERSAL_P_POWER_OBSTRUCTION.md": "3794d4c21f708b7adee8100524cc169ca4151b8b370b5cfdb7592a1379259e0a",
+    "check_p_power_obstruction.py": "8a7475a6e2126915fe0e6be3beda3fa6b3cef1bd3f2dcab242fc8da9c55a0d45",
+    "QUANTUM_ZERO_MODE_TRANSPORT.md": "e6736efef0516eef5d89dc9c8ff89098f9d547712666c668f950e328ca14ce56",
+    "zero_mode_controls.json": "c563eca154cb648f6158aa48e18f0c57cd43bb8a4fd1c88b7ed72a6d04fe95de",
+    "ALGEBRAIC_INFINITY_LIMITS.md": "71a4f107941fd6ee0abc7fc236829f6cafcba7d2f40c5b0bb50e3f379091b669",
+    "infinity_limits_controls.json": "7b7cd0ae606db8f0ef264d9fed8384667407601d49bd7bda04b3d2d27ff616e0",
+    "QUINTIC_PHASE_AND_BRANCH_OBSTRUCTION.md": "8829fba45a6dc41a80fa8b81fda33cb1c1d0d6dee17971f1144b456ef09e2355",
+    "phase_carrier_controls.json": "5d75b63181d21c80bfbe9c31aa4ecf05adbf159eb8d7514455d3dfa9541e5fc2"
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/1508.02499",
+      "used": "Sections1.2 and1.4: standard Weyl center and good reduction framework."
+    },
+    {
+      "source": "https://arxiv.org/html/2601.23110",
+      "used": "Section3.1: rank-one Weyl algebra splitting background. The p^2 lifting theorem is not used."
+    }
+  ],
+  "coverage_boundary": "Declared finite sparse powers, two-v word sums, symbolic rational top coefficients, positive mates, trace generator identities on covers2,3, projector countercontrol and actual p-by-p/2p-by-2p fibers. Universal word selection, finite-field summation, specialization, arbitrary finite covers and the complete separable classification use written proofs, including QVL1 and QZM1. No arbitrary matrix p-centrality, all-representative Long exclusion or actual finite carrier is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

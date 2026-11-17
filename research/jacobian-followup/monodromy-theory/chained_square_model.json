@@ -1,0 +1,63 @@
+{
+  "claims": [
+    "KMFI151",
+    "KMFI152"
+  ],
+  "previous_goal_turn": "progress: KMFI149--150 excluded every critical-boundary scalar factor, including mixed multipliers.",
+  "canonical_direction": "A*(u^2,ux,uy+x^2,uz+y^2)",
+  "A": "arbitrary GL4",
+  "scalar_cone_reduction": {
+    "unique_projective_base_point": "[0:0:0:1]",
+    "fixed_surface_excluded_by_curve_line_bundle_degrees": true,
+    "nonlinear_factor_degree_bound_used": false,
+    "selected_line_family_and_degree1_restriction_used": true,
+    "nonlinear_factors": "cones with vertex e3, independent of z",
+    "linear_factors": "span(u,x)",
+    "whole_F_independent_of_z": true,
+    "positive_dimensional_base_fixed_quadric_control_retained": true
+  },
+  "all_parameter_trace_reduction": {
+    "A03_nonzero": "negative Euler eigenvalue",
+    "A03=A13=A23=0": "last eigenvalue forces X independent of z",
+    "remaining_case": "A03=A13=0,A23 nonzero,F(u,x)",
+    "A02_zero": "invariant critical hyperplane forces matched square",
+    "A02_nonzero": "all scalar factors proportional to x+t*u",
+    "coordinate_change": "simultaneous source/output constant conjugacy, canonical family preserved",
+    "trace_forces": "b0",
+    "second_trace_x_square_coefficient": "2*(s+2)*c*d",
+    "c_and_d": "both nonzero"
+  },
+  "conclusion": "no homogeneous multiplier of any degree gives primitive quadratic chained-square rank4 full rank",
+  "rank3_normalized_controls": [
+    {
+      "s": 1,
+      "lambda": 3,
+      "A": "diag(1,lambda,lambda,lambda)",
+      "F": "u^1",
+      "rankDX": 3,
+      "whole_sweep_Jacobian": "gam^4",
+      "generic_P_regular_nilpotent": true
+    },
+    {
+      "s": 3,
+      "lambda": 5,
+      "A": "diag(1,lambda,lambda,lambda)",
+      "F": "u^3",
+      "rankDX": 3,
+      "whole_sweep_Jacobian": "gam^4",
+      "generic_P_regular_nilpotent": true
+    }
+  ],
+  "remaining_primitive_quadratic_families": [
+    "K_B mixed chain",
+    "K_C square shear",
+    "K_D product shear"
+  ],
+  "remaining_scalar_form": "nonconstant, coprime to u, factors of degree1..3, arbitrary multiplicities",
+  "all_quadratic_directions_closed": false,
+  "new_occurrence_action_claimed": false,
+  "actual_PSL11_input_supplied": false,
+  "absolute_exceptional_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

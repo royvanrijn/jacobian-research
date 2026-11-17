@@ -1,0 +1,14 @@
+{
+  "purpose": "Primary Riemann-Hurwitz input for KMFI86. The subgroup exhaustion and cycle indices are own exact finite calculations, not an external subgroup classification.",
+  "sources": [
+    {
+      "title": "The Stacks Project, Section53.12 Riemann-Hurwitz",
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "path": "sources/stacks-0C1B.html",
+      "bytes": 28889,
+      "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+      "locator": "Characteristic-zero ramification-index formula preceding Lemma53.12.1; Lemmas53.12.2 and53.12.4.",
+      "use": "For a rational degree n cover, the sum of branch permutation indices is2n-2."
+    }
+  ]
+}

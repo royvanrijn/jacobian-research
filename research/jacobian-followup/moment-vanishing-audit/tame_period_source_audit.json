@@ -1,0 +1,40 @@
+{
+  "review_date": "2026-11-14",
+  "sources": [
+    {
+      "id": "crew-feldbrugge-v2",
+      "url": "https://arxiv.org/html/2610.22767v2",
+      "version": "v2, 2 November 2026",
+      "read_scope": "Sections II and III, Appendix B, abstract/version identity; not full manuscript",
+      "used_for": "Twisted de Rham and Brieskorn framework. Appendix B assumes Morse, distinct critical values and tame; these formulas alone do not cover all degenerate critical points.",
+      "local_cache": "tmp/moment-vanishing-audit-sources/crew-feldbrugge-2610.22767v2.html",
+      "bytes": 867994,
+      "sha256": "66998a8556462df8786a10075e8aa982d87d91c8da030dabd4d5c6fbc90b3807"
+    },
+    {
+      "id": "sabbah-tame",
+      "url": "https://perso.pages.math.cnrs.fr/users/claude.sabbah/articles/sabbah_bbases.pdf",
+      "version": "June 1997",
+      "read_scope": "Introduction and relevant Section 8 tame criterion and finite vanishing cycles passages, printed pages 21-23; not full manuscript",
+      "used_for": "Gradient bounded away from zero outside compact implies cohomological tameness. Its Fourier parameter zero spectrum is not used for local large-parameter decay."
+    },
+    {
+      "id": "pham-1985",
+      "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+      "version": "Asterisque 130 (1985), pages 11-47",
+      "read_scope": "Selected Part I Sections 1-5 decomposition and Milnor passages; Part II Section 1.1 printed pages 23-25 including integrability footnote; not full manuscript",
+      "used_for": "Isolated degenerate local vanishing homology, density exponent alpha greater than minus one, decaying Laplace power-log asymptotics for analytic amplitude germs."
+    },
+    {
+      "id": "hien-roucairol",
+      "url": "https://arxiv.org/html/0704.1739v1",
+      "version": "v1",
+      "read_scope": "Sections 2 and 3 pairing and solution representation, previously inspected",
+      "used_for": "Analytic horizontal functionals are rapid-decay periods. The rational seed restriction extends analytically without requiring a cyclic seed or convergence of the Wick series."
+    }
+  ],
+  "producer_code_executed": false,
+  "assurance": "Scoped primary-source reading and internal written proof. No independent replay, external review or formal verification. The November paper does not assert the Gaussian theorem.",
+  "canonical_note": "COERCIVE_GRADIENT_MOMENTS.md",
+  "checker_sha256": "150b0f269e01b730dbb3a55e0cde3f68f61e2ac7353935cbaecd9d9eb134dc1a"
+}

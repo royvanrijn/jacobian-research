@@ -1,0 +1,1222 @@
+{
+  "cases": [
+    {
+      "name": "A11_higher_power_radical",
+      "ambient": "A11",
+      "PSL_group_order": 660,
+      "reduced_point_degree": 11,
+      "scope": "Fixed curve field; both target and source are not stably rational.",
+      "relative_ramification_degree": 90,
+      "target": {
+        "subgroup_order": 660,
+        "coset_degree": 30240,
+        "genus": 5678,
+        "inertia": [
+          {
+            "original_profile": [
+              5,
+              5,
+              1
+            ],
+            "order": 5,
+            "fixed_powers": [
+              30240,
+              10,
+              10,
+              10,
+              10
+            ],
+            "coset_cycles": {
+              "1": 10,
+              "5": 6046
+            },
+            "index": 24184
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              30240,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 10080
+            },
+            "index": 20160
+          },
+          {
+            "original_profile": [
+              11
+            ],
+            "order": 11,
+            "fixed_powers": [
+              30240,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "coset_cycles": {
+              "1": 1,
+              "11": 2749
+            },
+            "index": 27490
+          }
+        ]
+      },
+      "source": {
+        "subgroup_order": 60,
+        "coset_degree": 332640,
+        "genus": 62493,
+        "inertia": [
+          {
+            "original_profile": [
+              5,
+              5,
+              1
+            ],
+            "order": 5,
+            "fixed_powers": [
+              332640,
+              10,
+              10,
+              10,
+              10
+            ],
+            "coset_cycles": {
+              "1": 10,
+              "5": 66526
+            },
+            "index": 266104
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              332640,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 110880
+            },
+            "index": 221760
+          },
+          {
+            "original_profile": [
+              11
+            ],
+            "order": 11,
+            "fixed_powers": [
+              332640,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "11": 30240
+            },
+            "index": 302400
+          }
+        ]
+      }
+    },
+    {
+      "name": "S11_quadratic_beta",
+      "ambient": "S11",
+      "PSL_group_order": 660,
+      "reduced_point_degree": 11,
+      "scope": "Fixed curve field after explicit two-parameter birational reconstruction; no affine target.",
+      "relative_ramification_degree": 20,
+      "target": {
+        "subgroup_order": 660,
+        "coset_degree": 60480,
+        "genus": 7331,
+        "inertia": [
+          {
+            "original_profile": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            "order": 2,
+            "fixed_powers": [
+              60480,
+              0
+            ],
+            "coset_cycles": {
+              "2": 30240
+            },
+            "index": 30240
+          },
+          {
+            "original_profile": [
+              6,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 6,
+            "fixed_powers": [
+              60480,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "6": 10080
+            },
+            "index": 50400
+          },
+          {
+            "original_profile": [
+              11
+            ],
+            "order": 11,
+            "fixed_powers": [
+              60480,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "coset_cycles": {
+              "1": 2,
+              "11": 5498
+            },
+            "index": 54980
+          }
+        ]
+      },
+      "source": {
+        "subgroup_order": 60,
+        "coset_degree": 665280,
+        "genus": 80641,
+        "inertia": [
+          {
+            "original_profile": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            "order": 2,
+            "fixed_powers": [
+              665280,
+              0
+            ],
+            "coset_cycles": {
+              "2": 332640
+            },
+            "index": 332640
+          },
+          {
+            "original_profile": [
+              6,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 6,
+            "fixed_powers": [
+              665280,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "6": 110880
+            },
+            "index": 554400
+          },
+          {
+            "original_profile": [
+              11
+            ],
+            "order": 11,
+            "fixed_powers": [
+              665280,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "11": 60480
+            },
+            "index": 604800
+          }
+        ]
+      }
+    },
+    {
+      "name": "S11_degree_ten_radical",
+      "ambient": "S11",
+      "PSL_group_order": 660,
+      "reduced_point_degree": 11,
+      "scope": "Fixed curve field; no affine target.",
+      "relative_ramification_degree": 100,
+      "target": {
+        "subgroup_order": 660,
+        "coset_degree": 60480,
+        "genus": 9343,
+        "inertia": [
+          {
+            "original_profile": [
+              10,
+              1
+            ],
+            "order": 10,
+            "fixed_powers": [
+              60480,
+              0,
+              20,
+              0,
+              20,
+              0,
+              20,
+              0,
+              20,
+              0
+            ],
+            "coset_cycles": {
+              "2": 10,
+              "10": 6046
+            },
+            "index": 54424
+          },
+          {
+            "original_profile": [
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 2,
+            "fixed_powers": [
+              60480,
+              0
+            ],
+            "coset_cycles": {
+              "2": 30240
+            },
+            "index": 30240
+          },
+          {
+            "original_profile": [
+              11
+            ],
+            "order": 11,
+            "fixed_powers": [
+              60480,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "coset_cycles": {
+              "1": 2,
+              "11": 5498
+            },
+            "index": 54980
+          }
+        ]
+      },
+      "source": {
+        "subgroup_order": 60,
+        "coset_degree": 665280,
+        "genus": 102813,
+        "inertia": [
+          {
+            "original_profile": [
+              10,
+              1
+            ],
+            "order": 10,
+            "fixed_powers": [
+              665280,
+              0,
+              20,
+              0,
+              20,
+              0,
+              20,
+              0,
+              20,
+              0
+            ],
+            "coset_cycles": {
+              "2": 10,
+              "10": 66526
+            },
+            "index": 598744
+          },
+          {
+            "original_profile": [
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 2,
+            "fixed_powers": [
+              665280,
+              0
+            ],
+            "coset_cycles": {
+              "2": 332640
+            },
+            "index": 332640
+          },
+          {
+            "original_profile": [
+              11
+            ],
+            "order": 11,
+            "fixed_powers": [
+              665280,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "11": 60480
+            },
+            "index": 604800
+          }
+        ]
+      }
+    },
+    {
+      "name": "A12_level_two_cone",
+      "ambient": "A12",
+      "PSL_group_order": 660,
+      "reduced_point_degree": 12,
+      "scope": "Generic-pencil genera only; absolute rationality of the total surface is not decided.",
+      "relative_ramification_degree": 10,
+      "target": {
+        "subgroup_order": 660,
+        "coset_degree": 362880,
+        "genus": 527826,
+        "inertia": [
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              11,
+              1
+            ],
+            "order": 11,
+            "fixed_powers": [
+              362880,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "coset_cycles": {
+              "1": 1,
+              "11": 32989
+            },
+            "index": 329890
+          }
+        ]
+      },
+      "source": {
+        "subgroup_order": 55,
+        "coset_degree": 4354560,
+        "genus": 6333906,
+        "inertia": [
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              11,
+              1
+            ],
+            "order": 11,
+            "fixed_powers": [
+              4354560,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "coset_cycles": {
+              "1": 1,
+              "11": 395869
+            },
+            "index": 3958690
+          }
+        ]
+      }
+    },
+    {
+      "name": "A12_alternating_shear",
+      "ambient": "A12",
+      "PSL_group_order": 660,
+      "reduced_point_degree": 12,
+      "scope": "Generic-pencil genera only; relative reduced twelve-sheet curve is unramified; total surface rationality open.",
+      "relative_ramification_degree": 0,
+      "target": {
+        "subgroup_order": 660,
+        "coset_degree": 362880,
+        "genus": 524161,
+        "inertia": [
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              362880,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 120960
+            },
+            "index": 241920
+          },
+          {
+            "original_profile": [
+              9,
+              3
+            ],
+            "order": 9,
+            "fixed_powers": [
+              362880,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "9": 40320
+            },
+            "index": 322560
+          }
+        ]
+      },
+      "source": {
+        "subgroup_order": 55,
+        "coset_degree": 4354560,
+        "genus": 6289921,
+        "inertia": [
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "order": 3,
+            "fixed_powers": [
+              4354560,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "3": 1451520
+            },
+            "index": 2903040
+          },
+          {
+            "original_profile": [
+              9,
+              3
+            ],
+            "order": 9,
+            "fixed_powers": [
+              4354560,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coset_cycles": {
+              "9": 483840
+            },
+            "index": 3870720
+          }
+        ]
+      }
+    }
+  ],
+  "subgroup_censuses": {
+    "PSL11_exceptional": {
+      "(6, 3, 2)": 110,
+      "(5, 5, 1)": 264,
+      "(11,)": 120,
+      "(3, 3, 3, 1, 1)": 110,
+      "(2, 2, 2, 2, 1, 1, 1)": 55,
+      "(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)": 1
+    },
+    "A5_exceptional_point": {
+      "(3, 3, 3, 1, 1)": 20,
+      "(2, 2, 2, 2, 1, 1, 1)": 15,
+      "(5, 5, 1)": 24,
+      "(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)": 1
+    },
+    "PSL11_natural": {
+      "(6, 6)": 110,
+      "(5, 5, 1, 1)": 264,
+      "(11, 1)": 120,
+      "(3, 3, 3, 3)": 110,
+      "(2, 2, 2, 2, 2, 2)": 55,
+      "(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)": 1
+    },
+    "B55_natural_point": {
+      "(5, 5, 1, 1)": 44,
+      "(11, 1)": 10,
+      "(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)": 1
+    }
+  },
+  "fixed_curve_subgroup_reduction_to_affine_space": "excluded for all three degree-eleven inputs",
+  "generic_pencil_genus_implies_total_nonrationality": false,
+  "PSL2_11_affine_Keller_map_constructed": false,
+  "full_classification_complete": false
+}

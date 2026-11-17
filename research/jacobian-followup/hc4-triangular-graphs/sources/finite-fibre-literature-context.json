@@ -1,0 +1,16 @@
+{
+  "title": "Equivalent generating pairs of an ideal of a commutative ring",
+  "author": "Luc Guyot",
+  "version": "arXiv:2012.03056v2",
+  "url": "https://arxiv.org/html/2012.03056v2",
+  "retained_file": "guyot-generating-pairs-2012.03056v2.html",
+  "sha256": "6b4b56bf5e22a376770269a2130f2fa24e63178a000b3352df6894101fdaa91c",
+  "locations": [
+    "Theorem A / Theorem 3.5: determinant criterion for SL2-equivalence of two generating pairs",
+    "Lemma 3.6: determinant corrections preserving a generating row",
+    "Example 3.9: the point-ideal case"
+  ],
+  "role": "Related primary literature and attribution context; the finite reduced plane-ideal specialization is proved constructively in FINITE_FIBRE_NORMAL_FORM.md.",
+  "external_classification_imported": false,
+  "general_theorem_asserted_new": false
+}

@@ -1,0 +1,655 @@
+{
+  "date": "2026-11-17",
+  "universal_claims_use_written_proofs": true,
+  "actual_image_kernel_computed": false,
+  "unweighted_nonpure_safe_counterexample_claimed": false,
+  "field_safety_implies_purity_resolved": false,
+  "source_identities": [
+    {
+      "coefficient": "2",
+      "weight": "x**2 + 3*x + 2",
+      "index": [
+        0
+      ],
+      "amplitude": "x**2 + 1",
+      "phases": [
+        "x**3 + x"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "recovery_amplitude": "9*t**2*x**8/2 + 15*t**2*x**6/2 + 7*t**2*x**4/2 + t**2*x**2/2 - 3*t*x**7 + 14*t*x**5 + 16*t*x**3 + 3*t*x + x**6/2 - 5*x**4 + 13*x**2/2 + 3",
+      "Taylor_projection": "2",
+      "top_only": false,
+      "spatial_degree_bound": 8,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "16474*t**4 + 160*t**2 + 4",
+      "weighted_recovery_Wick": "16474*t**4 + 160*t**2 + 4"
+    },
+    {
+      "coefficient": "3",
+      "weight": "x**2 + 3*x + 2",
+      "index": [
+        1
+      ],
+      "amplitude": "x**2 + 1",
+      "phases": [
+        "x**3 + x"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "recovery_amplitude": "-9*t**2*x**7 - 15*t**2*x**5 - 7*t**2*x**3 - t**2*x + 6*t*x**6 - 19*t*x**4 - 20*t*x**2 - 3*t - x**5 + 7*x**3 - 4*x",
+      "Taylor_projection": "3",
+      "top_only": false,
+      "spatial_degree_bound": 7,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "24711*t**4 + 240*t**2 + 6",
+      "weighted_recovery_Wick": "24711*t**4 + 240*t**2 + 6"
+    },
+    {
+      "coefficient": "1",
+      "weight": "x**2 + 3*x + 2",
+      "index": [
+        2
+      ],
+      "amplitude": "x**2 + 1",
+      "phases": [
+        "x**3 + x"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "recovery_amplitude": "9*t**2*x**6/2 + 15*t**2*x**4/2 + 7*t**2*x**2/2 + t**2/2 - 3*t*x**5 + 5*t*x**3 + 4*t*x + x**4/2 - 2*x**2 + 1/2",
+      "Taylor_projection": "1",
+      "top_only": false,
+      "spatial_degree_bound": 6,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "8237*t**4 + 80*t**2 + 2",
+      "weighted_recovery_Wick": "8237*t**4 + 80*t**2 + 2"
+    },
+    {
+      "coefficient": "1",
+      "weight": "w*z + w + z + 1",
+      "index": [
+        0,
+        0
+      ],
+      "amplitude": "w**2 + z",
+      "phases": [
+        "w**2 + z"
+      ],
+      "variables": [
+        "z",
+        "w"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "recovery_amplitude": "2*t**2*w**6 + 4*t**2*w**4*z + 5*t**2*w**2*z**2/2 + t**2*z**3/2 - 4*t*w**5*z + 13*t*w**4 - 6*t*w**3*z**2 + 17*t*w**2*z - 2*t*w*z**3 + 5*t*z**2 + 2*w**4*z**2 - 13*w**3*z + 2*w**2*z**3 + 15*w**2 - 11*w*z**2 + 10*z",
+      "Taylor_projection": "1",
+      "top_only": false,
+      "spatial_degree_bound": 6,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "3*t**2",
+      "weighted_recovery_Wick": "3*t**2"
+    },
+    {
+      "coefficient": "1",
+      "weight": "w*z + w + z + 1",
+      "index": [
+        1,
+        0
+      ],
+      "amplitude": "w**2 + z",
+      "phases": [
+        "w**2 + z"
+      ],
+      "variables": [
+        "z",
+        "w"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "recovery_amplitude": "-2*t**2*w**4 - 3*t**2*w**2*z - t**2*z**2 + 2*t*w**5 + 5*t*w**3*z - 8*t*w**2 + 3*t*w*z**2 - 6*t*z - 2*w**4*z + 7*w**3 - 2*w**2*z**2 + 8*w*z - 4",
+      "Taylor_projection": "1",
+      "top_only": false,
+      "spatial_degree_bound": 5,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "3*t**2",
+      "weighted_recovery_Wick": "3*t**2"
+    },
+    {
+      "coefficient": "1",
+      "weight": "w*z + w + z + 1",
+      "index": [
+        0,
+        1
+      ],
+      "amplitude": "w**2 + z",
+      "phases": [
+        "w**2 + z"
+      ],
+      "variables": [
+        "z",
+        "w"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "recovery_amplitude": "-4*t**2*w**5 - 6*t**2*w**3*z - 2*t**2*w*z**2 + 6*t*w**4*z - 18*t*w**3 + 7*t*w**2*z**2 - 14*t*w*z + t*z**3 - 2*w**3*z**2 + 11*w**2*z - 2*w*z**3 - 10*w + 6*z**2",
+      "Taylor_projection": "1",
+      "top_only": false,
+      "spatial_degree_bound": 5,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "3*t**2",
+      "weighted_recovery_Wick": "3*t**2"
+    },
+    {
+      "coefficient": "1",
+      "weight": "w*z + w + z + 1",
+      "index": [
+        1,
+        1
+      ],
+      "amplitude": "w**2 + z",
+      "phases": [
+        "w**2 + z"
+      ],
+      "variables": [
+        "z",
+        "w"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "recovery_amplitude": "2*t**2*w**3 + 2*t**2*w*z - 2*t*w**4 - 3*t*w**2*z + 4*t*w - t*z**2 + w**3*z - 3*w**2 + w*z**2 - 2*z",
+      "Taylor_projection": "1",
+      "top_only": false,
+      "spatial_degree_bound": 4,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "3*t**2",
+      "weighted_recovery_Wick": "3*t**2"
+    },
+    {
+      "coefficient": "a",
+      "weight": "a + b*x + c*x**2",
+      "index": [
+        0
+      ],
+      "amplitude": "x + 1",
+      "phases": [
+        "x**2"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "2"
+        ]
+      ],
+      "recovery_amplitude": "2*t**2*x**5 + 2*t**2*x**4 - t*x**5 - t*x**4 + 9*t*x**3 + 7*t*x**2 + x**5/8 + x**4/8 - 9*x**3/4 - 7*x**2/4 + 6*x + 3",
+      "Taylor_projection": "a",
+      "top_only": false,
+      "spatial_degree_bound": 5,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "70*a*t**4 + 20*a*t**3 + 6*a*t**2 + 2*a*t + a",
+      "weighted_recovery_Wick": "70*a*t**4 + 20*a*t**3 + 6*a*t**2 + 2*a*t + a"
+    },
+    {
+      "coefficient": "b",
+      "weight": "a + b*x + c*x**2",
+      "index": [
+        1
+      ],
+      "amplitude": "x + 1",
+      "phases": [
+        "x**2"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "2"
+        ]
+      ],
+      "recovery_amplitude": "-4*t**2*x**4 - 4*t**2*x**3 + 2*t*x**4 + 2*t*x**3 - 12*t*x**2 - 8*t*x - x**4/4 - x**3/4 + 3*x**2 + 2*x - 3",
+      "Taylor_projection": "b",
+      "top_only": false,
+      "spatial_degree_bound": 4,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "70*b*t**4 + 20*b*t**3 + 6*b*t**2 + 2*b*t + b",
+      "weighted_recovery_Wick": "70*b*t**4 + 20*b*t**3 + 6*b*t**2 + 2*b*t + b"
+    },
+    {
+      "coefficient": "c",
+      "weight": "a + b*x + c*x**2",
+      "index": [
+        2
+      ],
+      "amplitude": "x + 1",
+      "phases": [
+        "x**2"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "2"
+        ]
+      ],
+      "recovery_amplitude": "2*t**2*x**3 + 2*t**2*x**2 - t*x**3 - t*x**2 + 3*t*x + t + x**3/8 + x**2/8 - 3*x/4 - 1/4",
+      "Taylor_projection": "c",
+      "top_only": false,
+      "spatial_degree_bound": 3,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "70*c*t**4 + 20*c*t**3 + 6*c*t**2 + 2*c*t + c",
+      "weighted_recovery_Wick": "70*c*t**4 + 20*c*t**3 + 6*c*t**2 + 2*c*t + c"
+    },
+    {
+      "coefficient": "1",
+      "weight": "x**2 + x + 1",
+      "index": [
+        0
+      ],
+      "amplitude": "x**3",
+      "phases": [
+        "x**2",
+        "x**3"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t",
+        "u"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "recovery_amplitude": "2*t**2*x**7 + 6*t*u*x**8 - 2*t*x**7 + 13*t*x**5 + 9*u**2*x**9/2 - 3*u*x**8 + 21*u*x**6 + x**7/2 - 13*x**5/2 + 15*x**3",
+      "Taylor_projection": "1",
+      "top_only": false,
+      "spatial_degree_bound": 9,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "3465*t**3*u/2 + 945*t**2*u/2 + 45045*t*u**3/2 + 105*t*u + 3465*u**3/2 + 15*u",
+      "weighted_recovery_Wick": "3465*t**3*u/2 + 945*t**2*u/2 + 45045*t*u**3/2 + 105*t*u + 3465*u**3/2 + 15*u"
+    },
+    {
+      "coefficient": "1",
+      "weight": "x**2 + x + 1",
+      "index": [
+        2
+      ],
+      "amplitude": "x**3",
+      "phases": [
+        "x**2",
+        "x**3"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t",
+        "u"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "recovery_amplitude": "2*t**2*x**5 + 6*t*u*x**6 - 2*t*x**5 + 7*t*x**3 + 9*u**2*x**7/2 - 3*u*x**6 + 12*u*x**4 + x**5/2 - 7*x**3/2 + 3*x",
+      "Taylor_projection": "1",
+      "top_only": false,
+      "spatial_degree_bound": 7,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": false,
+      "actual_image_kernel_computed": false,
+      "Wick_jet_order": 4,
+      "original_Wick": "3465*t**3*u/2 + 945*t**2*u/2 + 45045*t*u**3/2 + 105*t*u + 3465*u**3/2 + 15*u",
+      "weighted_recovery_Wick": "3465*t**3*u/2 + 945*t**2*u/2 + 45045*t*u**3/2 + 105*t*u + 3465*u**3/2 + 15*u"
+    }
+  ],
+  "top_coefficient_identities": [
+    {
+      "coefficient": "1",
+      "weight": "x**2 + 2",
+      "index": [
+        2
+      ],
+      "amplitude": "x + 1",
+      "phases": [
+        "x**3"
+      ],
+      "variables": [
+        "x"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "recovery_amplitude": "9*t**2*x**5/2 + 9*t**2*x**4/2 - 3*t*x**4 - 3*t*x**3 + 6*t*x**2 + 3*t*x + x**3/2 + x**2/2 - 3*x/2 - 1/2",
+      "Taylor_projection": "1",
+      "top_only": true,
+      "spatial_degree_bound": 5,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": true,
+      "actual_image_kernel_computed": false
+    },
+    {
+      "coefficient": "1",
+      "weight": "(w + 1)*(z + 1)",
+      "index": [
+        1,
+        1
+      ],
+      "amplitude": "w**2",
+      "phases": [
+        "z"
+      ],
+      "variables": [
+        "z",
+        "w"
+      ],
+      "times": [
+        "t"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "recovery_amplitude": "-t*w**2*z + 2*t*w + w**3*z - 3*w**2",
+      "Taylor_projection": "1",
+      "top_only": true,
+      "spatial_degree_bound": 4,
+      "time_degree_bound": 2,
+      "requires_coefficient_unit_to_divide": true,
+      "actual_image_kernel_computed": false
+    }
+  ],
+  "primitive_nonunit_content": {
+    "weight": "a + x*(1 - a)",
+    "coefficient_content_witness": "a+(1-a)=1",
+    "amplitude": "x**2 + 1",
+    "recovery": "2*t*x**4 - 2*t*x**3 + 2*t*x**2 - 2*t*x - x**4 + x**3 + 3*x**2 - x + 2",
+    "coefficient_units_assumed": false
+  },
+  "positive_tilt": {
+    "phase": "z",
+    "weight": "(1+z)*(1+w)",
+    "mass": "2",
+    "normalized_seed": "t/2 + 1",
+    "exact_controls": [
+      {
+        "exponents": [
+          0,
+          0
+        ],
+        "exact_period": "t/2 + 1",
+        "degree_bound": 1
+      },
+      {
+        "exponents": [
+          0,
+          1
+        ],
+        "exact_period": "t**2/2 + 3*t/2 + 1/2",
+        "degree_bound": 2
+      },
+      {
+        "exponents": [
+          1,
+          0
+        ],
+        "exact_period": "1/2",
+        "degree_bound": 2
+      },
+      {
+        "exponents": [
+          0,
+          2
+        ],
+        "exact_period": "t**3/2 + 2*t**2 + t",
+        "degree_bound": 3
+      },
+      {
+        "exponents": [
+          1,
+          1
+        ],
+        "exact_period": "t + 3/2",
+        "degree_bound": 3
+      },
+      {
+        "exponents": [
+          2,
+          0
+        ],
+        "exact_period": "0",
+        "degree_bound": 3
+      },
+      {
+        "exponents": [
+          1,
+          2
+        ],
+        "exact_period": "3*t**2/2 + 4*t + 1",
+        "degree_bound": 4
+      },
+      {
+        "exponents": [
+          0,
+          3
+        ],
+        "exact_period": "t**4/2 + 5*t**3/2 + 3*t**2/2",
+        "degree_bound": 4
+      }
+    ],
+    "sharp_C": "1",
+    "sharp_E": "1",
+    "finite_seed_shift_eigenvalue": "-1/2",
+    "unweighted_seed": "1",
+    "unweighted_E": "0",
+    "weighted_measure_is_unweighted_Gaussian": false
+  },
+  "zero_scalar_period_nonzero_full_ideal_image": true,
+  "ring_mask": {
+    "ring": "QQ[a,e]/(a*e,e**2)",
+    "phase": "a*x**2",
+    "weight": "e",
+    "normalization_ideal": "(e)",
+    "content": "(e)",
+    "weighted_normalization": "R",
+    "single_structural_annihilation_relation": "a*e=0",
+    "finite_controls": [
+      {
+        "power": 1,
+        "remainder": "0"
+      },
+      {
+        "power": 2,
+        "remainder": "0"
+      },
+      {
+        "power": 3,
+        "remainder": "0"
+      },
+      {
+        "power": 4,
+        "remainder": "0"
+      },
+      {
+        "power": 5,
+        "remainder": "0"
+      }
+    ]
+  },
+  "cutoff_transfers": [
+    {
+      "C": "1",
+      "E": "2",
+      "direction": "original_to_weighted",
+      "weight_degree": 2,
+      "phase_degree": 1,
+      "sufficient_only": true,
+      "requires_field_or_unit_top_coefficient": false,
+      "sharp_intercept_claimed": false
+    },
+    {
+      "C": "1",
+      "E": "5",
+      "direction": "weighted_to_original",
+      "weight_degree": 2,
+      "phase_degree": 1,
+      "sufficient_only": true,
+      "requires_field_or_unit_top_coefficient": true,
+      "sharp_intercept_claimed": false
+    },
+    {
+      "C": "3/2",
+      "E": "37/2",
+      "direction": "weighted_to_original",
+      "weight_degree": 3,
+      "phase_degree": 4,
+      "sufficient_only": true,
+      "requires_field_or_unit_top_coefficient": true,
+      "sharp_intercept_claimed": false
+    }
+  ],
+  "rejections": [
+    "zero weight",
+    "invalid covariance",
+    "invalid top index",
+    "noninteger multiindex",
+    "negative cutoff"
+  ],
+  "source_HTML_monomial_boundary": {
+    "n": 0,
+    "m": 1,
+    "correct_factor": 1,
+    "displayed_m_minus_one": 0,
+    "PDF_display_newly_checked": false
+  }
+}

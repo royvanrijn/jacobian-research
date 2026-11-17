@@ -1,0 +1,9 @@
+{
+  "date":"2026-11-16",
+  "frozen_before_execution":true,
+  "selection":"All sixteen H3 bases retained in the complete meridian tangent receipt, without replacement",
+  "motivation":"To increase the rank3 lower bound to4 by a representation curve through rho0 plus trivial summands, off-diagonal deformations must survive the restricted W and W* cocycle spaces. Vanishing modulo principal cocycles supports a separate uniform all-order splitting proof, even when the meridian eigenvalue varies.",
+  "computation":"For W and W*, impose meridian cocycles in the nonidentity eigenspace and all oriented knot relators; compute exact Q(tau) nullspaces with modular rank certificates. Verify principal cocycles span each kernel.",
+  "limits":{"bases":16,"modules_per_base":2,"rows":39,"columns":13,"seconds_total":60},
+  "boundary":"Only formal deformations whose special fibre is this rho0 plus a finite-dimensional trivial representation. Other special fibres, components and modules remain open; no all-field claim or new MRC closure."
+}

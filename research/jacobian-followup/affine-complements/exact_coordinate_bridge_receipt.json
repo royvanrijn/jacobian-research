@@ -1,0 +1,540 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 115,
+  "checks": [
+    "predecessor PASS regular_quartic_exclusion_receipt.json",
+    "predecessor seal regular_quartic_exclusion_receipt.json verify_regular_quartic_exclusion.py",
+    "predecessor seal regular_quartic_exclusion_receipt.json REGULAR_COORDINATE_QUARTIC_EXCLUSION.md",
+    "predecessor seal regular_quartic_exclusion_receipt.json sources/regular-quartic-exclusion/manifest.json",
+    "predecessor seal regular_quartic_exclusion_receipt.json verify_universal_regular_end.py",
+    "predecessor seal regular_quartic_exclusion_receipt.json verify_quartic_cabling.py",
+    "predecessor seal regular_quartic_exclusion_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor seal regular_quartic_exclusion_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "predecessor seal regular_quartic_exclusion_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "predecessor seal regular_quartic_exclusion_receipt.json sources/torus-infinity/scott-geometries.pdf",
+    "predecessor seal regular_quartic_exclusion_receipt.json sources/quartic-cabling/perelman-finite-extinction.pdf",
+    "predecessor seal regular_quartic_exclusion_receipt.json sources/universal-regular-end/lokteva-iterated-surgery-2023.pdf",
+    "predecessor seal regular_quartic_exclusion_receipt.json universal_regular_end_receipt.json",
+    "predecessor seal regular_quartic_exclusion_receipt.json coprime_regular_end_receipt.json",
+    "predecessor seal regular_quartic_exclusion_receipt.json borderline_regular_end_receipt.json",
+    "predecessor seal regular_quartic_exclusion_receipt.json quartic_cabling_receipt.json",
+    "predecessor seal regular_quartic_exclusion_receipt.json higher_regular_coordinate_receipt.json",
+    "predecessor seal regular_quartic_exclusion_receipt.json regular_sector_end_receipt.json",
+    "predecessor seal regular_quartic_exclusion_receipt.json intrinsic_normalization_receipt.json",
+    "predecessor PASS universal_regular_end_receipt.json",
+    "predecessor seal universal_regular_end_receipt.json verify_universal_regular_end.py",
+    "predecessor seal universal_regular_end_receipt.json UNIVERSAL_REGULAR_CLASSIFICATION_AND_END.md",
+    "predecessor seal universal_regular_end_receipt.json sources/universal-regular-end/manifest.json",
+    "predecessor seal universal_regular_end_receipt.json sources/universal-regular-end/dubouloz-dfs-0401225v3.pdf",
+    "predecessor seal universal_regular_end_receipt.json sources/universal-regular-end/garcia-barroso-ploski-milnor-2018.pdf",
+    "predecessor seal universal_regular_end_receipt.json sources/universal-regular-end/lokteva-iterated-surgery-2023.pdf",
+    "predecessor seal universal_regular_end_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "predecessor seal universal_regular_end_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "predecessor seal universal_regular_end_receipt.json coprime_regular_end_receipt.json",
+    "predecessor seal universal_regular_end_receipt.json higher_regular_coordinate_receipt.json",
+    "predecessor seal universal_regular_end_receipt.json torus_infinity_receipt.json",
+    "predecessor seal universal_regular_end_receipt.json regular_sector_end_receipt.json",
+    "predecessor PASS multiple_fiber_cyclic_receipt.json",
+    "predecessor seal multiple_fiber_cyclic_receipt.json verify_multiple_fiber_cyclic.py",
+    "predecessor seal multiple_fiber_cyclic_receipt.json MULTIPLE_FIBER_CYCLIC_REDUCTION.md",
+    "predecessor seal multiple_fiber_cyclic_receipt.json intrinsic_normalization_receipt.json",
+    "predecessor seal multiple_fiber_cyclic_receipt.json sources/multiple-fiber-cyclic/manifest.json",
+    "predecessor seal multiple_fiber_cyclic_receipt.json sources/intrinsic-normalization/BGV160.pdf",
+    "predecessor seal multiple_fiber_cyclic_receipt.json sources/global-boundary-topology/chau-1999-vitushkin.pdf",
+    "predecessor PASS coordinate_regular_sector_receipt.json",
+    "predecessor seal coordinate_regular_sector_receipt.json verify_coordinate_regular_sector.py",
+    "predecessor seal coordinate_regular_sector_receipt.json COORDINATE_POLE_AND_REGULAR_SECTOR.md",
+    "predecessor seal coordinate_regular_sector_receipt.json multiple_fiber_cyclic_receipt.json",
+    "predecessor seal coordinate_regular_sector_receipt.json sources/coordinate-pole-sector/manifest.json",
+    "predecessor seal coordinate_regular_sector_receipt.json sources/coordinate-pole-sector/neumann-wightwick-9911104v1.pdf",
+    "predecessor seal coordinate_regular_sector_receipt.json sources/coordinate-pole-sector/miyanishi-tifr60.pdf",
+    "predecessor seal coordinate_regular_sector_receipt.json sources/coordinate-pole-sector/gwozdziewicz-9305008v1.pdf",
+    "predecessor PASS intrinsic_normalization_receipt.json",
+    "predecessor seal intrinsic_normalization_receipt.json verify_intrinsic_normalization.py",
+    "predecessor seal intrinsic_normalization_receipt.json INTRINSIC_NORMALIZATION_GATE.md",
+    "predecessor seal intrinsic_normalization_receipt.json quartic_cabling_receipt.json",
+    "predecessor seal intrinsic_normalization_receipt.json sources/intrinsic-normalization/2403.02219v2.html",
+    "predecessor seal intrinsic_normalization_receipt.json sources/intrinsic-normalization/BGV160.pdf",
+    "predecessor seal intrinsic_normalization_receipt.json sources/intrinsic-normalization/manifest.json",
+    "six precise primary inputs",
+    "primary byte seal mondal-key-normal-13075577v4.pdf",
+    "primary format mondal-key-normal-13075577v4.pdf",
+    "primary byte seal mondal-sign-mmj-2017.pdf",
+    "primary format mondal-sign-mmj-2017.pdf",
+    "primary byte seal stacks-0B5X.html",
+    "primary format stacks-0B5X.html",
+    "primary byte seal stacks-0D2S.html",
+    "primary format stacks-0D2S.html",
+    "primary byte seal BGV160.pdf",
+    "primary format BGV160.pdf",
+    "primary byte seal neumann-wightwick-9911104v1.pdf",
+    "primary format neumann-wightwick-9911104v1.pdf",
+    "general canonical formula is used with the correct infinity sign",
+    "complete signed-key, normal-form and canonical pages inspected",
+    "complete published sign criterion inspected",
+    "strict key inequality is exactly strict defect monotonicity",
+    "initial canonical defect is the coprime conductor minus one",
+    "linear large-pole bound is an exact nonnegative factor",
+    "linear small-pole bound has an explicit nonnegative remainder",
+    "index one has no all-coordinate-polar initial pair",
+    "index two has only the exceptional pole pair three,two",
+    "index three retains exactly the two initial pole pairs",
+    "derived finite initial-type domain is respected e1",
+    "derived finite initial-type domain is respected e2",
+    "derived finite initial-type domain is respected e3",
+    "derived finite initial-type domain is respected e4",
+    "derived finite initial-type domain is respected e5",
+    "derived finite initial-type domain is respected e6",
+    "derived finite initial-type domain is respected e7",
+    "derived finite initial-type domain is respected e8",
+    "whole omitted-chart Jacobian is exactly the canonical simple zero",
+    "full residue difference retains every coefficient",
+    "exactness forces precisely the resonant coefficient b to vanish",
+    "both local primitives differentiate to the source two-form",
+    "affine x shear removes the pole-one lower term",
+    "affine x translation removes the order-one term",
+    "polynomial key form has first coefficient three*t when b vanishes",
+    "source polynomial division has its complete degree-three basis",
+    "equal leading value and equal t degree force unique reduced monomial",
+    "exact affinization relation is an all-parameter polynomial identity",
+    "whole source curve contracts under every affinization generator G",
+    "whole source curve contracts under every affinization generator X",
+    "whole source curve contracts under every affinization generator Y",
+    "whole hyperelliptic finite chart is the original polynomial plane",
+    "inverse finite-chart substitution is exact modulo its single relation",
+    "all-parameter finite-chart smoothness has a unit gradient certificate",
+    "control family critical locus cannot contain a moving curve",
+    "control family has only finitely many critical points",
+    "every fiber nonsquare proof starts with forced quadratic coefficient zero",
+    "every fiber nonsquare proof forces constant coefficient zero",
+    "nonzero linear coefficient excludes square fibers for every parameter",
+    "entire infinity chart is the same finite double cover of the projective base",
+    "two infinity sections remain disjoint and smooth for all parameters",
+    "canonical differential identity has its exact full Jacobian",
+    "canonical zero is simple at both infinity sections",
+    "constructed global T recovers the whole boundary affine coordinate",
+    "control volume has nonzero residue precisely on b!=0 family",
+    "Jung dominance has no initial cancellation at pole pair three,two",
+    "additive field extends in every regular-coordinate root chart",
+    "additive boundary exponent is nonnegative from r>=1"
+  ],
+  "general_index_bound": {
+    "all_indices": true,
+    "normal_affine_one_boundary": true,
+    "canonical_coefficient": "e-1",
+    "source_coordinate_negative_hypothesis": true,
+    "last_key_value_negative": true,
+    "normal_form_coprime_defect": "g*(a*b-a-b)<=e-1",
+    "maximum_reduced_pole": "3*(e-1)",
+    "minimum_reduced_pole": "2*(e-1)",
+    "e1_regular_coordinate_automatic": true,
+    "necessary_initial_type_controls": {
+      "1": [],
+      "2": [
+        [
+          3,
+          2,
+          1,
+          3,
+          2
+        ]
+      ],
+      "3": [
+        [
+          3,
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          2
+        ]
+      ],
+      "4": [
+        [
+          3,
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          5,
+          2,
+          1,
+          5,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          2
+        ],
+        [
+          9,
+          6,
+          3,
+          3,
+          2
+        ]
+      ],
+      "5": [
+        [
+          3,
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          5,
+          2,
+          1,
+          5,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          2
+        ],
+        [
+          9,
+          6,
+          3,
+          3,
+          2
+        ],
+        [
+          12,
+          8,
+          4,
+          3,
+          2
+        ]
+      ],
+      "6": [
+        [
+          3,
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          4,
+          3,
+          1,
+          4,
+          3
+        ],
+        [
+          5,
+          2,
+          1,
+          5,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          2
+        ],
+        [
+          7,
+          2,
+          1,
+          7,
+          2
+        ],
+        [
+          9,
+          6,
+          3,
+          3,
+          2
+        ],
+        [
+          12,
+          8,
+          4,
+          3,
+          2
+        ],
+        [
+          15,
+          10,
+          5,
+          3,
+          2
+        ]
+      ],
+      "7": [
+        [
+          3,
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          4,
+          3,
+          1,
+          4,
+          3
+        ],
+        [
+          5,
+          2,
+          1,
+          5,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          2
+        ],
+        [
+          7,
+          2,
+          1,
+          7,
+          2
+        ],
+        [
+          9,
+          6,
+          3,
+          3,
+          2
+        ],
+        [
+          10,
+          4,
+          2,
+          5,
+          2
+        ],
+        [
+          12,
+          8,
+          4,
+          3,
+          2
+        ],
+        [
+          15,
+          10,
+          5,
+          3,
+          2
+        ],
+        [
+          18,
+          12,
+          6,
+          3,
+          2
+        ]
+      ],
+      "8": [
+        [
+          3,
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          4,
+          3,
+          1,
+          4,
+          3
+        ],
+        [
+          5,
+          2,
+          1,
+          5,
+          2
+        ],
+        [
+          5,
+          3,
+          1,
+          5,
+          3
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          2
+        ],
+        [
+          7,
+          2,
+          1,
+          7,
+          2
+        ],
+        [
+          9,
+          2,
+          1,
+          9,
+          2
+        ],
+        [
+          9,
+          6,
+          3,
+          3,
+          2
+        ],
+        [
+          10,
+          4,
+          2,
+          5,
+          2
+        ],
+        [
+          12,
+          8,
+          4,
+          3,
+          2
+        ],
+        [
+          15,
+          10,
+          5,
+          3,
+          2
+        ],
+        [
+          18,
+          12,
+          6,
+          3,
+          2
+        ],
+        [
+          21,
+          14,
+          7,
+          3,
+          2
+        ]
+      ]
+    },
+    "higher_index_cases_excluded": false
+  },
+  "exact_coordinate_bridge": {
+    "smooth_affine_N": true,
+    "one_boundary_A1": true,
+    "div_source_volume": "R",
+    "global_exactness_required": true,
+    "regular_source_coordinate_exists": true,
+    "all_finite_field_degrees": true,
+    "only_coordinate_negative_initial_pair": [
+      3,
+      2
+    ],
+    "essential_key_sequence": [
+      3,
+      2,
+      -1
+    ],
+    "whole_root_chart": "x=u^-3; y=u^-2+a*u^2+b*u^3+c*u^4+u^5*t",
+    "residue": "3*b",
+    "exactness_forces": "b=0",
+    "affineness_forces": "b!=0",
+    "global_source_curve_contraction": "G=y^3-x^2-3a*y-3c",
+    "affinization_ring": "C[G,x*G^3,y*G^2]"
+  },
+  "nonexact_control_family": {
+    "actual_smooth_affine_models": true,
+    "all_a_c_complex": true,
+    "b_nonzero": true,
+    "one_boundary_A1": true,
+    "canonical_divisor": "R",
+    "every_source_coordinate_polar": true,
+    "global_volume_exact": false,
+    "proper_genus_two_family_with_one_section_removed": true,
+    "relative_ample_section_proof_written": true,
+    "normalized_boundary_coordinate": "T/(18*b)",
+    "complete_parametrized_normal_form_with_source_choices": true,
+    "unique_parameter_moduli_claimed": false,
+    "finite_Keller_map_constructed": false
+  },
+  "Keller_consequences": {
+    "one_index_two_prime_no_regular_coordinate_gap_closed": true,
+    "complete_regular_coordinate_geometric_classification_all_degrees": true,
+    "source_additive_action": true,
+    "source_additive_kernel": "C[y]",
+    "target_algebra_invariance_assumed": false,
+    "all_degree_primitive_odd_marked_end": true,
+    "all_degree_target_torus_and_prime_boundary_degree_exclusions": true,
+    "all_quartic_single_index_two_prime_normalizations_excluded": true,
+    "individual_e1_e2_primes_have_regular_coordinate_on_affine_open": true,
+    "common_coordinate_for_multiple_primes_claimed": false,
+    "removing_other_primes_preserves_finiteness": false
+  },
+  "assurance": {
+    "written_unbounded_canonical_and_global_proofs": true,
+    "general_signed_key_formula_imported": true,
+    "primitive_compactification_assumed": false,
+    "primary_statements_and_complete_page_audits": true,
+    "finite_controls_not_complete_geometric_proof": true,
+    "no_deep_coefficient_search": true,
+    "higher_index_normalizations_excluded": false,
+    "multiple_prime_quartic_packets_excluded": false,
+    "higher_finite_Keller_degrees_excluded": false,
+    "finite_Keller_map_constructed": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_exact_coordinate_bridge.py": "74a11a24c14e5c7e82a427fbd40d805d1476a1a0b9ee8b9b22bd6414dba31670",
+    "EXACT_VOLUME_COORDINATE_BRIDGE.md": "71a49b9a3295699283fe88631c7a0d7dff4864bf83a15e677870995d3c2d402e",
+    "sources/coordinate-negative-canonical/manifest.json": "80844cdbddab3215d1c2b3fa5b599479b789bb54d6d92396d7515b36a411ac54",
+    "sources/coordinate-negative-canonical/mondal-key-normal-13075577v4.pdf": "fb1aacdf01f166fd10b292d8d806d590162630445bc4e512ae22bce593ac6711",
+    "sources/coordinate-negative-canonical/mondal-sign-mmj-2017.pdf": "d0e2f3d0fa88084034b723b42f2c66cdbbe9f387f62cff3735b99d616c0a66f1",
+    "sources/coordinate-negative-canonical/stacks-0B5X.html": "8944cfa1c1770ce7a954fd41e09adfbd78f1b28ff0d3fa914a13792476e0e715",
+    "sources/coordinate-negative-canonical/stacks-0D2S.html": "5a7685694ed3d18d083f8ca6d7b3b60da33fbaeccabdbd801c82eaf7d203a8a1",
+    "sources/intrinsic-normalization/BGV160.pdf": "fadbe8149ce9ed9c746042cb9944ab2553ade857f264b8bf95587ac090341d04",
+    "sources/coordinate-pole-sector/neumann-wightwick-9911104v1.pdf": "abb8ebed530d48c0e1ecaf1e40703f8ba709da8f9f54719fa61815ae9d17dfe6",
+    "regular_quartic_exclusion_receipt.json": "4aedef21b93e20033b0f26fa758d254c79c9b7ca8885164fb1d454dad78beba3",
+    "universal_regular_end_receipt.json": "533cdfc1678723ec94ad5f7688293ca82ae277b2d7d2a19bad39e084ee27ba1a",
+    "multiple_fiber_cyclic_receipt.json": "44b5fee302759167dcda05a339aa93bd0ccf7e72a0a8c6e92be7c906e3b8b5fd",
+    "coordinate_regular_sector_receipt.json": "9cb633a9da23942676ced2999554eddd352a37d17c92492dc866469829cb8305",
+    "intrinsic_normalization_receipt.json": "274dd529b155071dc62993e9ab56c4481e7e42b56e5ebfe9d6729a18ba75321d"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

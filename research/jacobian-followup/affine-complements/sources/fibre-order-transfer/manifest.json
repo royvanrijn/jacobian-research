@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/neumraym.pdf",
+      "title": "Neumann--Raymond, Seifert manifolds, plumbing, mu-invariant and orientation reversing maps, LNM664(1978),163-196",
+      "bytes": 893752,
+      "sha256": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13
+      ],
+      "principal_used_complete_PDF_pages": [
+        3,
+        4,
+        6,
+        11,
+        12,
+        13
+      ],
+      "printed_pages": [
+        165,
+        166,
+        168,
+        173,
+        174,
+        175
+      ],
+      "used_statement": "Theorem1.2 Euler naturality for oriented fibre-preserving maps, including branched maps; signed inverse slice convention and Euler definition; Theorem5.1 star plumbing and signed continued fractions, intersection form, and Theorem5.2 Schur/definiteness convention. Convert the paper signed leg parameter to minus the positive beta in a normalized negative leg. The proof derives the model, Euler number, selected inverse entry and mod3 mismatch; no contact/filling classification or full satellite plumbing theorem imported.",
+      "imported_not_independently_reproved": true,
+      "prior_manifest": "sources/oriented-pattern-linking/manifest.json",
+      "current_complete_PDF_pages_visually_rechecked": [
+        3,
+        4
+      ],
+      "current_printed_pages": [
+        165,
+        166
+      ],
+      "current_used_statement": "Theorem1.2 rational Euler naturality for fibre-preserving maps, including transverse branch maps; used with base4/fibre1. Exact regular-fibre order and transfer lemmas are proved here."
+    },
+    {
+      "path": "sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+      "url": "https://arxiv.org/pdf/1207.5042v1",
+      "title": "Cochran--Tanner, Homology cobordism and Seifert fibered 3-manifolds, requested arXiv v1 PDF",
+      "bytes": 324837,
+      "sha256": "5fcab10871806ce8f3c9c70b3f2b06c6535a5e218a1aac56fd1de0a00a012704",
+      "complete_PDF_pages_visually_read": [
+        3,
+        4
+      ],
+      "printed_pages": [
+        3,
+        4
+      ],
+      "used_statement": "Section3 circle-bundle model and explicit orientable fundamental-group presentation, abelianized and quotiented by regular fibre and boundary loops in the new proof. No homology-cobordism or linking-realizability theorem imported.",
+      "source_presentation_imported_not_independently_reviewed_elsewhere": true,
+      "prior_manifest": "sources/peripheral-cone-budget/manifest.json",
+      "prior_complete_page_audit_reused": true
+    }
+  ],
+  "classification_theorem_imported": false,
+  "retained_inputs": [
+    "PF63 complete periodic peripheral classification",
+    "PF67 common source nonzero R mark",
+    "PF68 cyclic common closures",
+    "PF69 fibre-orbit cone computation and full satellite presentations",
+    "PF70 canonical marked budget",
+    "PF71 noncyclic peripheral precedent"
+  ],
+  "failed_approach": "Do not descend pre-filling exterior homology pushforward through a meridian filling with nonzero target image; do not apply a base-D one-boundary transfer to S3/S3 two-boundary cable pieces."
+}

@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 76.7 (04CR): Sheaf of differentials of a morphism&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELT" data-tag="0ELT">4</a>: Algebraic Spaces
+    
+  
+    <li>Chapter <a href="/tag/049F" data-tag="049F">76</a>: More on Morphisms of Spaces
+    
+  
+    <li class="active">Section <a href="/tag/04CR" data-tag="04CR">76.7</a>: Sheaf of differentials of a morphism
+    <span id="citation">(<a href="/tag/04CR/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/09RM">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/05ZG">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="spaces-more-morphisms-section-sheaf-differentials" class="tex-section"><span data-tag="04CR">76.7</span> Sheaf of differentials of a morphism</h2>
+
+<p>
+We suggest the reader take a look at the corresponding section in the chapter on commutative algebra (Algebra, Section <a href="/tag/00RM" data-tag="00RM">10.131</a>), the corresponding section in the chapter on morphism of schemes (Morphisms, Section <a href="/tag/01UM" data-tag="01UM">29.33</a>) as well as Modules on Sites, Section <a href="/tag/04BJ" data-tag="04BJ">18.33</a>. We first show that the notion of sheaf of differentials for a morphism of schemes agrees with the corresponding morphism of small étale (ringed) sites. 
+</p>
+<p>
+To clearly state the following lemma we temporarily go back to denoting $\mathcal{F}^ a$ the sheaf of $\mathcal{O}_{X_{\acute{e}tale}}$-modules associated to a quasi-coherent $\mathcal{O}_ X$-module $\mathcal{F}$ on the scheme $X$, see Descent, Definition <a href="/tag/03DU" data-tag="03DU">35.8.2</a>. 
+</p>
+<p>
+<article class="env-lemma" id="04CS">
+  <p><a class="environment-identifier" href="/tag/04CS">Lemma <span data-tag="04CS">76.7.1</span>.</a> Let $f : X \to Y$ be a morphism of schemes. Let $f_{small} : X_{\acute{e}tale}\to Y_{\acute{e}tale}$ be the associated morphism of small étale sites, see Descent, Remark <a href="/tag/070R" data-tag="070R">35.8.4</a>. Then there is a canonical isomorphism </p>
+  <div class="equation">
+  \[  (\Omega _{X/Y})^ a = \Omega _{X_{\acute{e}tale}/Y_{\acute{e}tale}}  \]
+</div>
+  <p> compatible with universal derivations. Here the first module is the sheaf on $X_{\acute{e}tale}$ associated to the quasi-coherent $\mathcal{O}_ X$-module $\Omega _{X/Y}$, see Morphisms, Definition <a href="/tag/01UQ" data-tag="01UQ">29.33.1</a>, and the second module is the one from Modules on Sites, Definition <a href="/tag/04BN" data-tag="04BN">18.33.3</a>. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $h : U \to X$ be an étale morphism. In this case the natural map $h^*\Omega _{X/Y} \to \Omega _{U/Y}$ is an isomorphism, see More on Morphisms, Lemma <a href="/tag/04BX" data-tag="04BX">37.9.9</a>. This means that there is a natural $\mathcal{O}_{Y_{\acute{e}tale}}$-derivation 
+    <p>
+      <div class="equation">
+  \[  \text{d}^ a : \mathcal{O}_{X_{\acute{e}tale}} \longrightarrow (\Omega _{X/Y})^ a  \]
+</div>
+    <p>
+       since we have just seen that the value of $(\Omega _{X/Y})^ a$ on any object $U$ of $X_{\acute{e}tale}$ is canonically identified with $\Gamma (U, \Omega _{U/Y})$. By the universal property of $\text{d}_{X/Y} : \mathcal{O}_{X_{\acute{e}tale}} \to \Omega _{X_{\acute{e}tale}/Y_{\acute{e}tale}}$ there is a unique $\mathcal{O}_{X_{\acute{e}tale}}$-linear map $c : \Omega _{X_{\acute{e}tale}/Y_{\acute{e}tale}} \to (\Omega _{X/Y})^ a$ such that $\text{d}^ a = c \circ \text{d}_{X/Y}$. 
+    <p>
+      Conversely, suppose that $\mathcal{F}$ is an $\mathcal{O}_{X_{\acute{e}tale}}$-module and $D : \mathcal{O}_{X_{\acute{e}tale}} \to \mathcal{F}$ is a $\mathcal{O}_{Y_{\acute{e}tale}}$-derivation. Then we can simply restrict $D$ to the small Zariski site $X_{Zar}$ of $X$. Since sheaves on $X_{Zar}$ agree with sheaves on $X$, see Descent, Remark <a href="/tag/03FG" data-tag="03FG">35.8.3</a>, we see that $D|_{X_{Zar}} : \mathcal{O}_ X \to \mathcal{F}|_{X_{Zar}}$ is just a “usual” $Y$-derivation. Hence we obtain a map $\psi : \Omega _{X/Y} \longrightarrow \mathcal{F}|_{X_{Zar}}$ such that $D|_{X_{Zar}} = \psi \circ \text{d}$. In particular, if we apply this with $\mathcal{F} = \Omega _{X_{\acute{e}tale}/Y_{\acute{e}tale}}$ we obtain a map 
+    <p>
+      <div class="equation">
+  \[  c' : \Omega _{X/Y} \longrightarrow \Omega _{X_{\acute{e}tale}/Y_{\acute{e}tale}}|_{X_{Zar}}  \]
+</div>
+    <p>
+       Consider the morphism of ringed sites $\text{id}_{small, {\acute{e}tale}, Zar} : X_{\acute{e}tale}\to X_{Zar}$ discussed in Descent, Remark <a href="/tag/070R" data-tag="070R">35.8.4</a> and Lemma <a href="/tag/070S" data-tag="070S">35.8.5</a>. Since the restriction functor $\mathcal{F} \mapsto \mathcal{F}|_{X_{Zar}}$ is equal to $\text{id}_{small, {\acute{e}tale}, Zar, *}$, since $\text{id}_{small, {\acute{e}tale}, Zar}^*$ is left adjoint to $\text{id}_{small, {\acute{e}tale}, Zar, *}$ and since $(\Omega _{X/Y})^ a = \text{id}_{small, {\acute{e}tale}, Zar}^*\Omega _{X/Y}$ we see that $c'$ is adjoint to a map 
+    <p>
+      <div class="equation">
+  \[  c'' : (\Omega _{X/Y})^ a \longrightarrow \Omega _{X_{\acute{e}tale}/Y_{\acute{e}tale}}.  \]
+</div>
+    <p>
+       We claim that $c''$ and $c'$ are mutually inverse. This claim finishes the proof of the lemma. To see this it is enough to show that $c''(\text{d}(f)) = \text{d}_{X/Y}(f)$ and $c(\text{d}_{X/Y}(f)) = \text{d}(f)$ if $f$ is a local section of $\mathcal{O}_ X$ over an open of $X$. We omit the verification. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+This clears the way for the following definition. For an alternative, see Remark <a href="/tag/04CW" data-tag="04CW">76.7.5</a>. 
+</p>
+<p>
+<article class="env-definition" id="04CT">
+  <p><a class="environment-identifier" href="/tag/04CT">Definition <span data-tag="04CT">76.7.2</span>.</a> Let $S$ be a scheme. Let $f : X \to Y$ be a morphism of algebraic spaces over $S$. The <em>sheaf of differentials $\Omega _{X/Y}$ of $X$ over $Y$</em> is sheaf of differentials (Modules on Sites, Definition <a href="/tag/04BQ" data-tag="04BQ">18.33.10</a>) for the morphism of ringed topoi </p>
+  <div class="equation">
+  \[  (f_{small}, f^\sharp ) : (X_{\acute{e}tale}, \mathcal{O}_ X) \to (Y_{\acute{e}tale}, \mathcal{O}_ Y)  \]
+</div>
+  <p> of Properties of Spaces, Lemma <a href="/tag/03G8" data-tag="03G8">66.21.3</a>. The <em>universal $Y$-derivation</em> will be denoted $\text{d}_{X/Y} : \mathcal{O}_ X \to \Omega _{X/Y}$. </p>
+</article> 
+</p>
+<p>
+By Lemma <a href="/tag/04CS" data-tag="04CS">76.7.1</a> this does not conflict with the already existing notion in case $X$ and $Y$ are representable. From now on, if $X$ and $Y$ are representable, we no longer distinguish between the sheaf of differentials defined above and the one defined in Morphisms, Definition <a href="/tag/01UQ" data-tag="01UQ">29.33.1</a>. We want to relate this to the usual modules of differentials for morphisms of schemes. Here is the key lemma. 
+</p>
+<p>
+<article class="env-lemma" id="04CU">
+  <p><a class="environment-identifier" href="/tag/04CU">Lemma <span data-tag="04CU">76.7.3</span>.</a> Let $S$ be a scheme. Let $f : X \to Y$ be a morphism of algebraic spaces over $S$. Consider any commutative diagram </p>
+  <div class="equation">
+  \[  \xymatrix{ U \ar[d]_ a \ar[r]_\psi &  V \ar[d]^ b \\  X \ar[r]^ f &  Y }  \]
+</div>
+  <p> where the vertical arrows are étale morphisms of algebraic spaces. Then </p>
+  <div class="equation">
+  \[  \Omega _{X/Y}|_{U_{\acute{e}tale}} = \Omega _{U/V}  \]
+</div>
+  <p> In particular, if $U$, $V$ are schemes, then this is equal to the usual sheaf of differentials of the morphism of schemes $U \to V$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Properties of Spaces, Lemma <a href="/tag/03LP" data-tag="03LP">66.18.11</a> and Equation (<a href="/tag/03LQ" data-tag="03LQ">66.18.11.1</a>) we may think of the restriction of a sheaf on $X_{\acute{e}tale}$ to $U_{\acute{e}tale}$ as the pullback by $a_{small}$. Similarly for $b$. By Modules on Sites, Lemma <a href="/tag/04BO" data-tag="04BO">18.33.6</a> we have 
+    <p>
+      <div class="equation">
+  \[  \Omega _{X/Y}|_{U_{\acute{e}tale}} = \Omega _{\mathcal{O}_{U_{\acute{e}tale}}/ a_{small}^{-1}f_{small}^{-1}\mathcal{O}_{Y_{\acute{e}tale}}}  \]
+</div>
+    <p>
+       Since $a_{small}^{-1}f_{small}^{-1}\mathcal{O}_{Y_{\acute{e}tale}} = \psi _{small}^{-1}b_{small}^{-1}\mathcal{O}_{Y_{\acute{e}tale}} = \psi _{small}^{-1}\mathcal{O}_{V_{\acute{e}tale}}$ we see that the lemma holds. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="04CV">
+  <p><a class="environment-identifier" href="/tag/04CV">Lemma <span data-tag="04CV">76.7.4</span>.</a> Let $S$ be a scheme. Let $f : X \to Y$ be a morphism of algebraic spaces over $S$. Then $\Omega _{X/Y}$ is a quasi-coherent $\mathcal{O}_ X$-module. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Choose a diagram as in Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a> with $a$ and $b$ surjective and $U$ and $V$ schemes. Then we see that $\Omega _{X/Y}|_ U = \Omega _{U/V}$ which is quasi-coherent (for example by Morphisms, Lemma <a href="/tag/08S2" data-tag="08S2">29.33.7</a>). Hence we conclude that $\Omega _{X/Y}$ is quasi-coherent by Properties of Spaces, Lemma <a href="/tag/03M0" data-tag="03M0">66.29.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-remark" id="04CW">
+  <p><a class="environment-identifier" href="/tag/04CW">Remark <span data-tag="04CW">76.7.5</span>.</a> Now that we know that $\Omega _{X/Y}$ is quasi-coherent we can attempt to construct it in another manner. For example we can use the result of Properties of Spaces, Section <a href="/tag/03M2" data-tag="03M2">66.32</a> to construct the sheaf of differentials by glueing. For example if $Y$ is a scheme and if $U \to X$ is a surjective étale morphism from a scheme towards $X$, then we see that $\Omega _{U/Y}$ is a quasi-coherent $\mathcal{O}_ U$-module, and since $s, t : R \to U$ are étale we get an isomorphism </p>
+  <div class="equation">
+  \[  \alpha : s^*\Omega _{U/Y} \to \Omega _{R/Y} \to t^*\Omega _{U/Y}  \]
+</div>
+  <p> by using Morphisms, Lemma <a href="/tag/02K4" data-tag="02K4">29.35.16</a>. You check that this satisfies the cocycle condition and you're done. If $Y$ is not a scheme, then you define $\Omega _{U/Y}$ as the cokernel of the map $(U \to Y)^*\Omega _{Y/S} \to \Omega _{U/S}$, and proceed as before. This two step process is a little bit ugly. Another possibility is to glue the sheaves $\Omega _{U/V}$ for any diagram as in Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a> but this is not very elegant either. Both approaches will work however, and will give a slightly more elementary construction of the sheaf of differentials. </p>
+</article> 
+</p>
+<p>
+<article class="env-lemma" id="04CX">
+  <p><a class="environment-identifier" href="/tag/04CX">Lemma <span data-tag="04CX">76.7.6</span>.</a> Let $S$ be a scheme. Let </p>
+  <div class="equation">
+  \[  \xymatrix{ X' \ar[d] \ar[r]_ f &  X \ar[d] \\  Y' \ar[r] &  Y }  \]
+</div>
+  <p> be a commutative diagram of algebraic spaces. The map $f^\sharp : \mathcal{O}_ X \to f_*\mathcal{O}_{X'}$ composed with the map $f_*\text{d}_{X'/Y'} : f_*\mathcal{O}_{X'} \to f_*\Omega _{X'/Y'}$ is a $Y$-derivation. Hence we obtain a canonical map of $\mathcal{O}_ X$-modules $\Omega _{X/Y} \to f_*\Omega _{X'/Y'}$, and by adjointness of $f_*$ and $f^*$ a canonical $\mathcal{O}_{X'}$-module homomorphism </p>
+  <div class="equation">
+  \[  c_ f : f^*\Omega _{X/Y} \longrightarrow \Omega _{X'/Y'}.  \]
+</div>
+  <p> It is uniquely characterized by the property that $f^*\text{d}_{X/Y}(t)$ maps to $\text{d}_{X'/Y'}(f^* t)$ for any local section $t$ of $\mathcal{O}_ X$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is a special case of Modules on Sites, Lemma <a href="/tag/04BR" data-tag="04BR">18.33.11</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05Z7">
+  <p><a class="environment-identifier" href="/tag/05Z7">Lemma <span data-tag="05Z7">76.7.7</span>.</a> Let $S$ be a scheme. Let </p>
+  <div class="equation">
+  \[  \xymatrix{ X'' \ar[d] \ar[r]_ g &  X' \ar[d] \ar[r]_ f &  X \ar[d] \\  Y'' \ar[r] &  Y' \ar[r] &  Y }  \]
+</div>
+  <p> be a commutative diagram of algebraic spaces over $S$. Then we have </p>
+  <div class="equation">
+  \[  c_{f \circ g} = c_ g \circ g^* c_ f  \]
+</div>
+  <p> as maps $(f \circ g)^*\Omega _{X/Y} \to \Omega _{X''/Y''}$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. Hint: Use the characterization of $c_ f, c_ g, c_{f \circ g}$ in terms of the effect these maps have on local sections. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05Z8">
+  <p><a class="environment-identifier" href="/tag/05Z8">Lemma <span data-tag="05Z8">76.7.8</span>.</a> Let $S$ be a scheme. Let $f : X \to Y$, $g : Y \to B$ be morphisms of algebraic spaces over $S$. Then there is a canonical exact sequence </p>
+  <div class="equation">
+  \[  f^*\Omega _{Y/B} \to \Omega _{X/B} \to \Omega _{X/Y} \to 0  \]
+</div>
+  <p> where the maps come from applications of Lemma <a href="/tag/04CX" data-tag="04CX">76.7.6</a>. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the schemes version, see Morphisms, Lemma <a href="/tag/01UX" data-tag="01UX">29.33.9</a>, of this result via étale localization, see Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05Z9">
+  <p><a class="environment-identifier" href="/tag/05Z9">Lemma <span data-tag="05Z9">76.7.9</span>.</a> Let $S$ be a scheme. If $X \to Y$ is an immersion of algebraic spaces over $S$ then $\Omega _{X/S}$ is zero. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the schemes version, see Morphisms, Lemma <a href="/tag/01UY" data-tag="01UY">29.33.14</a>, of this result via étale localization, see Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05ZA">
+  <p><a class="environment-identifier" href="/tag/05ZA">Lemma <span data-tag="05ZA">76.7.10</span>.</a> Let $S$ be a scheme. Let $B$ be an algebraic space over $S$. Let $i : Z \to X$ be an immersion of algebraic spaces over $B$. There is a canonical exact sequence </p>
+  <div class="equation">
+  \[  \mathcal{C}_{Z/X} \to i^*\Omega _{X/B} \to \Omega _{Z/B} \to 0  \]
+</div>
+  <p> where the first arrow is induced by $\text{d}_{X/B}$ and the second arrow comes from Lemma <a href="/tag/04CX" data-tag="04CX">76.7.6</a>. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is the algebraic spaces version of Morphisms, Lemma <a href="/tag/01UZ" data-tag="01UZ">29.33.15</a> and will be a consequence of that lemma by étale localization, see Lemmas <a href="/tag/04CU" data-tag="04CU">76.7.3</a> and <a href="/tag/04CO" data-tag="04CO">76.5.2</a>. However, we should make sure we can define the first arrow globally. Hence we explain the meaning of “induced by $\text{d}_{X/B}$” here. Namely, we may assume that $i$ is a closed immersion after replacing $X$ by an open subspace. Let $\mathcal{I} \subset \mathcal{O}_ X$ be the quasi-coherent sheaf of ideals corresponding to $Z \subset X$. Then $\text{d}_{X/S} : \mathcal{I} \to \Omega _{X/S}$ maps the subsheaf $\mathcal{I}^2 \subset \mathcal{I}$ to $\mathcal{I}\Omega _{X/S}$. Hence it induces a map $\mathcal{I}/\mathcal{I}^2 \to \Omega _{X/S}/\mathcal{I}\Omega _{X/S}$ which is $\mathcal{O}_ X/\mathcal{I}$-linear. By Morphisms of Spaces, Lemma <a href="/tag/04CJ" data-tag="04CJ">67.14.1</a> this corresponds to a map $\mathcal{C}_{Z/X} \to i^*\Omega _{X/S}$ as desired. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05ZB">
+  <p><a class="environment-identifier" href="/tag/05ZB">Lemma <span data-tag="05ZB">76.7.11</span>.</a> Let $S$ be a scheme. Let $B$ be an algebraic space over $S$. Let $i : Z \to X$ be an immersion of algebraic spaces over $B$, and assume $i$ (étale locally) has a left inverse. Then the canonical sequence </p>
+  <div class="equation">
+  \[  0 \to \mathcal{C}_{Z/X} \to i^*\Omega _{X/B} \to \Omega _{Z/B} \to 0  \]
+</div>
+  <p> of Lemma <a href="/tag/05ZA" data-tag="05ZA">76.7.10</a> is (étale locally) split exact. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Clarification: we claim that if $g : X \to Z$ is a left inverse of $i$ over $B$, then $i^*c_ g$ is a right inverse of the map $i^*\Omega _{X/B} \to \Omega _{Z/B}$. Having said this, the result follows from the corresponding result for morphisms of schemes by étale localization, see Lemmas <a href="/tag/04CU" data-tag="04CU">76.7.3</a> and <a href="/tag/04CO" data-tag="04CO">76.5.2</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05ZC">
+  <p><a class="environment-identifier" href="/tag/05ZC">Lemma <span data-tag="05ZC">76.7.12</span>.</a> Let $S$ be a scheme. Let $X \to Y$ be a morphism of algebraic spaces over $S$. Let $g : Y' \to Y$ be a morphism of algebraic spaces over $S$. Let $X' = X_{Y'}$ be the base change of $X$. Denote $g' : X' \to X$ the projection. Then the map </p>
+  <div class="equation">
+  \[  (g')^*\Omega _{X/Y} \to \Omega _{X'/Y'}  \]
+</div>
+  <p> of Lemma <a href="/tag/04CX" data-tag="04CX">76.7.6</a> is an isomorphism. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the schemes version, see Morphisms, Lemma <a href="/tag/01V0" data-tag="01V0">29.33.10</a> and étale localization, see Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05ZD">
+  <p><a class="environment-identifier" href="/tag/05ZD">Lemma <span data-tag="05ZD">76.7.13</span>.</a> Let $S$ be a scheme. Let $f : X \to B$ and $g : Y \to B$ be morphisms of algebraic spaces over $S$ with the same target. Let $p : X \times _ B Y \to X$ and $q : X \times _ B Y \to Y$ be the projection morphisms. The maps from Lemma <a href="/tag/04CX" data-tag="04CX">76.7.6</a> </p>
+  <div class="equation">
+  \[  p^*\Omega _{X/B} \oplus q^*\Omega _{Y/B} \longrightarrow \Omega _{X \times _ B Y/B}  \]
+</div>
+  <p> give an isomorphism. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the schemes version, see Morphisms, Lemma <a href="/tag/01V1" data-tag="01V1">29.33.11</a> and étale localization, see Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05ZE">
+  <p><a class="environment-identifier" href="/tag/05ZE">Lemma <span data-tag="05ZE">76.7.14</span>.</a> Let $S$ be a scheme. Let $f : X \to Y$ be a morphism of algebraic spaces over $S$. If $f$ is locally of finite type, then $\Omega _{X/Y}$ is a finite type $\mathcal{O}_ X$-module. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the schemes version, see Morphisms, Lemma <a href="/tag/01V2" data-tag="01V2">29.33.12</a> and étale localization, see Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05ZF">
+  <p><a class="environment-identifier" href="/tag/05ZF">Lemma <span data-tag="05ZF">76.7.15</span>.</a> Let $S$ be a scheme. Let $f : X \to Y$ be a morphism of algebraic spaces over $S$. If $f$ is locally of finite presentation, then $\Omega _{X/Y}$ is an $\mathcal{O}_ X$-module of finite presentation. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the schemes version, see Morphisms, Lemma <a href="/tag/01V3" data-tag="01V3">29.33.13</a> and étale localization, see Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0CK5">
+  <p><a class="environment-identifier" href="/tag/0CK5">Lemma <span data-tag="0CK5">76.7.16</span>.</a> Let $S$ be a scheme. Let $f : X \to Y$ be a smooth morphism of algebraic spaces over $S$. Then the module of differentials $\Omega _{X/Y}$ is finite locally free. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The statement is étale local on $X$ and $Y$ by Lemma <a href="/tag/04CU" data-tag="04CU">76.7.3</a>. Hence this follows from the case of schemes, see Morphisms, Lemma <a href="/tag/02G1" data-tag="02G1">29.35.12</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-04CR",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">04CR</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="04CR"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">04CR</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/09RM">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/05ZG">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/spaces-more-morphisms.pdf#nameddest=04CR">View Section <span data-tag="04CR">76.7</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

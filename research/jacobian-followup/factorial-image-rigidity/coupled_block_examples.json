@@ -1,0 +1,1787 @@
+{
+  "certificates": [
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 1,
+      "marker": "1",
+      "rational_moment": "1/(_t + 1)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 1,
+          "amplitude": "1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)"
+      ],
+      "coefficients": [
+        "-1/_z",
+        "1/_z"
+      ],
+      "specialized_coefficients": [
+        "-1",
+        "1"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": true,
+      "algebraic_value": null,
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 1,
+      "marker": "u0",
+      "rational_moment": "1/(_t + 2)",
+      "partial_fractions": [
+        {
+          "shift": 2,
+          "height": 1,
+          "amplitude": "1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)"
+      ],
+      "coefficients": [
+        "_z**(-2)",
+        "(_z - 1)/_z**2"
+      ],
+      "specialized_coefficients": [
+        "1",
+        "0"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": false,
+      "algebraic_value": "1",
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 1,
+      "marker": "u0**4 + 1",
+      "rational_moment": "(2*_t + 6)/(_t**2 + 6*_t + 5)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 1,
+          "amplitude": "1"
+        },
+        {
+          "shift": 5,
+          "height": 1,
+          "amplitude": "1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)"
+      ],
+      "coefficients": [
+        "(-_z**4 - 24)/_z**5",
+        "(2*_z**4 - 4*_z**3 + 12*_z**2 - 24*_z + 24)/_z**5"
+      ],
+      "specialized_coefficients": [
+        "-25",
+        "10"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": true,
+      "algebraic_value": null,
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 2,
+      "marker": "1",
+      "rational_moment": "1/(_t**2 + 2*_t + 1)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 2,
+          "amplitude": "1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)"
+      ],
+      "coefficients": [
+        "0",
+        "0",
+        "1/_z"
+      ],
+      "specialized_coefficients": [
+        "0",
+        "0",
+        "1"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": true,
+      "algebraic_value": null,
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 2,
+      "marker": "u0**2*u1",
+      "rational_moment": "1/(_t**2 + 5*_t + 6)",
+      "partial_fractions": [
+        {
+          "shift": 2,
+          "height": 1,
+          "amplitude": "1"
+        },
+        {
+          "shift": 3,
+          "height": 1,
+          "amplitude": "-1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)"
+      ],
+      "coefficients": [
+        "(_z + 2)/_z**3",
+        "(_z - 2)/_z**3",
+        "0"
+      ],
+      "specialized_coefficients": [
+        "3",
+        "-1",
+        "0"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": true,
+      "algebraic_value": null,
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 2,
+      "marker": "-u0**2*u1 + u0**2 + 2*u0*u1 - 2*u0 - u1 + 1",
+      "rational_moment": "2/(_t**5 + 9*_t**4 + 31*_t**3 + 51*_t**2 + 40*_t + 12)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 1,
+          "amplitude": "-5/2"
+        },
+        {
+          "shift": 1,
+          "height": 2,
+          "amplitude": "1"
+        },
+        {
+          "shift": 2,
+          "height": 1,
+          "amplitude": "2"
+        },
+        {
+          "shift": 2,
+          "height": 2,
+          "amplitude": "2"
+        },
+        {
+          "shift": 3,
+          "height": 1,
+          "amplitude": "1/2"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)"
+      ],
+      "coefficients": [
+        "(5*_z**2 - 2)/(2*_z**3)",
+        "(1 - _z)/_z**3",
+        "(_z - 2)/_z**2"
+      ],
+      "specialized_coefficients": [
+        "3/2",
+        "0",
+        "-1"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": true,
+      "algebraic_value": null,
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 2,
+      "marker": "sqrt(2)*u0 + I*u1**3",
+      "rational_moment": "(sqrt(2)*_t + _t*I + 4*sqrt(2) + 2*I)/(_t**3 + 7*_t**2 + 14*_t + 8)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 1,
+          "amplitude": "sqrt(2) + I/3"
+        },
+        {
+          "shift": 2,
+          "height": 1,
+          "amplitude": "-sqrt(2)"
+        },
+        {
+          "shift": 4,
+          "height": 1,
+          "amplitude": "-I/3"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)"
+      ],
+      "coefficients": [
+        "(-3*sqrt(2)*_z**3 - _z**3*I - 3*sqrt(2)*_z**2 - 6*I)/(3*_z**4)",
+        "(sqrt(2)*_z**2 + _z**2*I - 2*_z*I + 2*I)/_z**4",
+        "0"
+      ],
+      "specialized_coefficients": [
+        "-2*sqrt(2) - 7*I/3",
+        "sqrt(2) + I",
+        "0"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": true,
+      "algebraic_value": null,
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "zero_period_certified",
+      "scale": "1",
+      "dimension": 2,
+      "marker": "u0 - u1",
+      "rational_moment": "0",
+      "partial_fractions": [],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)"
+      ],
+      "coefficients": [
+        "0",
+        "0",
+        "0"
+      ],
+      "specialized_coefficients": [
+        "0",
+        "0",
+        "0"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": false,
+      "algebraic_value": "0",
+      "cube_marked_power_sequence_identically_zero": true,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 3,
+      "marker": "u0**2*u1**2*u2**2 + 1",
+      "rational_moment": "(2*_t**3 + 12*_t**2 + 30*_t + 28)/(_t**6 + 12*_t**5 + 57*_t**4 + 136*_t**3 + 171*_t**2 + 108*_t + 27)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 3,
+          "amplitude": "1"
+        },
+        {
+          "shift": 3,
+          "height": 3,
+          "amplitude": "1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)",
+        "J_2(z)"
+      ],
+      "coefficients": [
+        "-1/_z**3",
+        "_z**(-3)",
+        "-3/_z**3",
+        "(_z**2 + 2)/_z**3"
+      ],
+      "specialized_coefficients": [
+        "-1",
+        "1",
+        "-3",
+        "3"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": true,
+      "algebraic_value": null,
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 4,
+      "marker": "-u0**3*u1*u2*u3 - u0**3*u1 + u0**3*u2*u3 + u0**3",
+      "rational_moment": "(2*_t**2 + 6*_t + 5)/(_t**7 + 13*_t**6 + 69*_t**5 + 195*_t**4 + 318*_t**3 + 300*_t**2 + 152*_t + 32)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 1,
+          "amplitude": "22/27"
+        },
+        {
+          "shift": 1,
+          "height": 2,
+          "amplitude": "-4/9"
+        },
+        {
+          "shift": 1,
+          "height": 3,
+          "amplitude": "1/3"
+        },
+        {
+          "shift": 2,
+          "height": 1,
+          "amplitude": "-7/8"
+        },
+        {
+          "shift": 2,
+          "height": 2,
+          "amplitude": "-1/4"
+        },
+        {
+          "shift": 2,
+          "height": 3,
+          "amplitude": "-1/2"
+        },
+        {
+          "shift": 4,
+          "height": 1,
+          "amplitude": "13/216"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)",
+        "J_2(z)",
+        "J_3(z)"
+      ],
+      "coefficients": [
+        "(-176*_z**3 - 135*_z**2 + 78)/(216*_z**4)",
+        "(16*_z**2 + 13*_z - 13)/(36*_z**4)",
+        "(-16*_z - 9)/(36*_z**2)",
+        "(2*_z + 3)/(6*_z**2)",
+        "0"
+      ],
+      "specialized_coefficients": [
+        "-233/216",
+        "4/9",
+        "-25/36",
+        "5/6",
+        "0"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": true,
+      "algebraic_value": null,
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "zero_period_certified",
+      "scale": "1",
+      "dimension": 2,
+      "marker": "-u0**2*u1 + u0*u1 - 2*u0 + 1",
+      "rational_moment": "(-_t**3 - 4*_t**2 - 4*_t + 1)/(_t**5 + 9*_t**4 + 31*_t**3 + 51*_t**2 + 40*_t + 12)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 1,
+          "amplitude": "-2"
+        },
+        {
+          "shift": 1,
+          "height": 2,
+          "amplitude": "1"
+        },
+        {
+          "shift": 2,
+          "height": 1,
+          "amplitude": "1"
+        },
+        {
+          "shift": 2,
+          "height": 2,
+          "amplitude": "1"
+        },
+        {
+          "shift": 3,
+          "height": 1,
+          "amplitude": "1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)"
+      ],
+      "coefficients": [
+        "(2*_z**2 - 2)/_z**3",
+        "(2 - 2*_z)/_z**3",
+        "(_z - 1)/_z**2"
+      ],
+      "specialized_coefficients": [
+        "0",
+        "0",
+        "0"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": false,
+      "algebraic_value": "0",
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "zero_period_certified",
+      "scale": "1",
+      "dimension": 3,
+      "marker": "-u0**2*u1*u2 + u0*u1*u2 - 2*u0 + 1",
+      "rational_moment": "(-_t**4 - 6*_t**3 - 13*_t**2 - 9*_t + 1)/(_t**7 + 12*_t**6 + 60*_t**5 + 162*_t**4 + 255*_t**3 + 234*_t**2 + 116*_t + 24)",
+      "partial_fractions": [
+        {
+          "shift": 1,
+          "height": 1,
+          "amplitude": "2"
+        },
+        {
+          "shift": 1,
+          "height": 2,
+          "amplitude": "-2"
+        },
+        {
+          "shift": 1,
+          "height": 3,
+          "amplitude": "1"
+        },
+        {
+          "shift": 2,
+          "height": 1,
+          "amplitude": "-1"
+        },
+        {
+          "shift": 2,
+          "height": 2,
+          "amplitude": "-1"
+        },
+        {
+          "shift": 2,
+          "height": 3,
+          "amplitude": "1"
+        },
+        {
+          "shift": 3,
+          "height": 1,
+          "amplitude": "-1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)",
+        "J_1(z)",
+        "J_2(z)"
+      ],
+      "coefficients": [
+        "(2 - 2*_z**2)/_z**3",
+        "(2*_z - 2)/_z**3",
+        "(2 - 2*_z)/_z**2",
+        "(_z - 1)/_z**2"
+      ],
+      "specialized_coefficients": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": false,
+      "algebraic_value": "0",
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "nonzero_period_certified",
+      "scale": "1",
+      "dimension": 1,
+      "marker": "u0",
+      "rational_moment": "1/(_t + 2)",
+      "partial_fractions": [
+        {
+          "shift": 2,
+          "height": 1,
+          "amplitude": "1"
+        }
+      ],
+      "basis": [
+        "1",
+        "exp(z)"
+      ],
+      "coefficients": [
+        "_z**(-2)",
+        "(_z - 1)/_z**2"
+      ],
+      "specialized_coefficients": [
+        "1",
+        "0"
+      ],
+      "nonzero_ordinary_point_value_independence_used": true,
+      "transcendence_certified": false,
+      "algebraic_value": "1",
+      "cube_marked_power_sequence_identically_zero": false,
+      "full_Gamma_marked_sequence_zero_claimed": false,
+      "zero_period_alone_decides_whole_sequence": false,
+      "theorem": "FIRCOUPLEDPERIOD20261116"
+    },
+    {
+      "status": "block_limit_identity_certified",
+      "phase": "y0**2*y2*(sqrt(2) + I) + y0**2*y3*(sqrt(2) + I) + y0*y1*y2*(2*sqrt(2) + 2*I) + y0*y1*y3*(2*sqrt(2) + 2*I) + 2*y0*y2 + y1**2*y2*(sqrt(2) + I) + y1**2*y3*(sqrt(2) + I) + I*y1 + 1",
+      "scalar": "sqrt(2) + I",
+      "block_indices": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "exponents": [
+        2,
+        1
+      ],
+      "active_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "inactive_indices": [],
+      "shapes": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "block_shapes": [
+        "2",
+        "2"
+      ],
+      "next_layer": "2*y0*y2",
+      "remainder": "I*y1 + 1",
+      "angular_phase": "4*_T0*_T2/(4*sqrt(2) + 4*I)",
+      "angular_marker": "4*_T0**2",
+      "marker_top_active": "y0**2",
+      "angular_marker_with_inactive": "4*_T0**2",
+      "inactive_expectation_taken": true,
+      "marker_degree_convention": "active variables only",
+      "restricted_next_layer": "2*y0*y2",
+      "angular_variables": [
+        "_T0",
+        "_T1",
+        "_T2",
+        "_T3"
+      ],
+      "angular_constraints": [
+        "_T0 + _T1 = 1",
+        "_T2 + _T3 = 1"
+      ],
+      "marker_degree": 2,
+      "marker_is_zero": false,
+      "normalization": "m^marker_degree * scalar^m * product_j (block_shape_j)_(d_j*m)",
+      "theorem_shape_domain": "all positive real",
+      "executable_shape_domain": "positive rational",
+      "nonzero_leading_period_implies_eventual_nonzero": true,
+      "zero_leading_period_implies_zero_sequence": false,
+      "unit_nonvanishing_decision": null
+    },
+    {
+      "status": "block_limit_identity_certified",
+      "phase": "y0**2*y2*(sqrt(2) + I) + y0**2*y3*(sqrt(2) + I) + y0*y1*y2*(2*sqrt(2) + 2*I) + y0*y1*y3*(2*sqrt(2) + 2*I) + 2*y0*y2 + y1**2*y2*(sqrt(2) + I) + y1**2*y3*(sqrt(2) + I) + I*y1 + 1",
+      "scalar": "sqrt(2) + I",
+      "block_indices": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "exponents": [
+        2,
+        1
+      ],
+      "active_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "inactive_indices": [],
+      "shapes": [
+        "1/4",
+        "1/4",
+        "1/6",
+        "1/6"
+      ],
+      "block_shapes": [
+        "1/2",
+        "1/3"
+      ],
+      "next_layer": "2*y0*y2",
+      "remainder": "I*y1 + 1",
+      "angular_phase": "4*_T0*_T2/(4*sqrt(2) + 4*I)",
+      "angular_marker": "4*_T0**2",
+      "marker_top_active": "y0**2",
+      "angular_marker_with_inactive": "4*_T0**2",
+      "inactive_expectation_taken": true,
+      "marker_degree_convention": "active variables only",
+      "restricted_next_layer": "2*y0*y2",
+      "angular_variables": [
+        "_T0",
+        "_T1",
+        "_T2",
+        "_T3"
+      ],
+      "angular_constraints": [
+        "_T0 + _T1 = 1",
+        "_T2 + _T3 = 1"
+      ],
+      "marker_degree": 2,
+      "marker_is_zero": false,
+      "normalization": "m^marker_degree * scalar^m * product_j (block_shape_j)_(d_j*m)",
+      "theorem_shape_domain": "all positive real",
+      "executable_shape_domain": "positive rational",
+      "nonzero_leading_period_implies_eventual_nonzero": true,
+      "zero_leading_period_implies_zero_sequence": false,
+      "unit_nonvanishing_decision": null
+    },
+    {
+      "status": "block_limit_identity_certified",
+      "phase": "y0**2*y2*(sqrt(2) + I) + y0**2*y3*(sqrt(2) + I) + y0*y1*y2*(2*sqrt(2) + 2*I) + y0*y1*y3*(2*sqrt(2) + 2*I) + 2*y0*y2 + y1**2*y2*(sqrt(2) + I) + y1**2*y3*(sqrt(2) + I) + I*y1 + 1",
+      "scalar": "sqrt(2) + I",
+      "block_indices": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "exponents": [
+        2,
+        1
+      ],
+      "active_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "inactive_indices": [],
+      "shapes": [
+        "1/2",
+        "3/2",
+        "2/3",
+        "1/3"
+      ],
+      "block_shapes": [
+        "2",
+        "1"
+      ],
+      "next_layer": "2*y0*y2",
+      "remainder": "I*y1 + 1",
+      "angular_phase": "4*_T0*_T2/(4*sqrt(2) + 4*I)",
+      "angular_marker": "4*_T0**2",
+      "marker_top_active": "y0**2",
+      "angular_marker_with_inactive": "4*_T0**2",
+      "inactive_expectation_taken": true,
+      "marker_degree_convention": "active variables only",
+      "restricted_next_layer": "2*y0*y2",
+      "angular_variables": [
+        "_T0",
+        "_T1",
+        "_T2",
+        "_T3"
+      ],
+      "angular_constraints": [
+        "_T0 + _T1 = 1",
+        "_T2 + _T3 = 1"
+      ],
+      "marker_degree": 2,
+      "marker_is_zero": false,
+      "normalization": "m^marker_degree * scalar^m * product_j (block_shape_j)_(d_j*m)",
+      "theorem_shape_domain": "all positive real",
+      "executable_shape_domain": "positive rational",
+      "nonzero_leading_period_implies_eventual_nonzero": true,
+      "zero_leading_period_implies_zero_sequence": false,
+      "unit_nonvanishing_decision": null
+    },
+    {
+      "status": "coupled_factorial_family_certified",
+      "phase": "y0**2 + 2*y0*y1 + 2*y0 + 2*I*y0 + y1**2 + 1",
+      "variables": [
+        "y0",
+        "y1"
+      ],
+      "inactive_variables": [],
+      "inactive_shapes": [],
+      "coupling": "0",
+      "marker_degree_convention": "active variables only",
+      "inactive_expectation_taken": true,
+      "exponents": [
+        2
+      ],
+      "scale": "1 + I",
+      "angular_phase": "_U0 + _U0*I",
+      "marker_degree": 0,
+      "leading_cube_marker": "1",
+      "exact_zero_input_marker": false,
+      "whole_marked_sequence_zero_certified": false,
+      "unit_period": {
+        "status": "nonzero_period_certified",
+        "scale": "1 + I",
+        "dimension": 1,
+        "marker": "1",
+        "rational_moment": "1/(_t + 1)",
+        "partial_fractions": [
+          {
+            "shift": 1,
+            "height": 1,
+            "amplitude": "1"
+          }
+        ],
+        "basis": [
+          "1",
+          "exp(z)"
+        ],
+        "coefficients": [
+          "-1/_z",
+          "1/_z"
+        ],
+        "specialized_coefficients": [
+          "-1/2 + I/2",
+          "1/2 - I/2"
+        ],
+        "nonzero_ordinary_point_value_independence_used": true,
+        "transcendence_certified": true,
+        "algebraic_value": null,
+        "cube_marked_power_sequence_identically_zero": false,
+        "full_Gamma_marked_sequence_zero_claimed": false,
+        "zero_period_alone_decides_whole_sequence": false,
+        "theorem": "FIRCOUPLEDPERIOD20261116"
+      },
+      "leading_marker_period": {
+        "status": "nonzero_period_certified",
+        "scale": "1 + I",
+        "dimension": 1,
+        "marker": "1",
+        "rational_moment": "1/(_t + 1)",
+        "partial_fractions": [
+          {
+            "shift": 1,
+            "height": 1,
+            "amplitude": "1"
+          }
+        ],
+        "basis": [
+          "1",
+          "exp(z)"
+        ],
+        "coefficients": [
+          "-1/_z",
+          "1/_z"
+        ],
+        "specialized_coefficients": [
+          "-1/2 + I/2",
+          "1/2 - I/2"
+        ],
+        "nonzero_ordinary_point_value_independence_used": true,
+        "transcendence_certified": true,
+        "algebraic_value": null,
+        "cube_marked_power_sequence_identically_zero": false,
+        "full_Gamma_marked_sequence_zero_claimed": false,
+        "zero_period_alone_decides_whole_sequence": false,
+        "theorem": "FIRCOUPLEDPERIOD20261116"
+      },
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_marker_period_decides_full_sequence": false,
+      "arbitrary_complex_lower_terms_in_theorem": true,
+      "all_complex_scale_FC_and_infinitely_many_moments_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "all_Q_algebra_scalar_normalization_ideal_is_zero": true,
+      "effective_tail_cutoff_claimed": false,
+      "all_complex_scale_nonzero_limit_claimed": false,
+      "SFC_claimed": false,
+      "Gaussian_coordinate_count": 4,
+      "active_Gaussian_coordinate_count": 4,
+      "theorem": "FIRCOUPLEDBLOCKFC20261116"
+    },
+    {
+      "status": "coupled_factorial_family_certified",
+      "phase": "y0**2*y2 + y0**2*y3 + 2*y0*y1*y2 + 2*y0*y1*y3 + 2*y0*y2 + 2*I*y0*y2 + I*y0 + y1**2*y2 + y1**2*y3 + 1",
+      "variables": [
+        "y0",
+        "y1",
+        "y2",
+        "y3"
+      ],
+      "inactive_variables": [],
+      "inactive_shapes": [],
+      "coupling": "0",
+      "marker_degree_convention": "active variables only",
+      "inactive_expectation_taken": true,
+      "exponents": [
+        2,
+        1
+      ],
+      "scale": "1 + I",
+      "angular_phase": "_U0*_U1 + _U0*_U1*I",
+      "marker_degree": 0,
+      "leading_cube_marker": "1",
+      "exact_zero_input_marker": false,
+      "whole_marked_sequence_zero_certified": false,
+      "unit_period": {
+        "status": "nonzero_period_certified",
+        "scale": "1 + I",
+        "dimension": 2,
+        "marker": "1",
+        "rational_moment": "1/(_t**2 + 2*_t + 1)",
+        "partial_fractions": [
+          {
+            "shift": 1,
+            "height": 2,
+            "amplitude": "1"
+          }
+        ],
+        "basis": [
+          "1",
+          "exp(z)",
+          "J_1(z)"
+        ],
+        "coefficients": [
+          "0",
+          "0",
+          "1/_z"
+        ],
+        "specialized_coefficients": [
+          "0",
+          "0",
+          "1/2 - I/2"
+        ],
+        "nonzero_ordinary_point_value_independence_used": true,
+        "transcendence_certified": true,
+        "algebraic_value": null,
+        "cube_marked_power_sequence_identically_zero": false,
+        "full_Gamma_marked_sequence_zero_claimed": false,
+        "zero_period_alone_decides_whole_sequence": false,
+        "theorem": "FIRCOUPLEDPERIOD20261116"
+      },
+      "leading_marker_period": {
+        "status": "nonzero_period_certified",
+        "scale": "1 + I",
+        "dimension": 2,
+        "marker": "1",
+        "rational_moment": "1/(_t**2 + 2*_t + 1)",
+        "partial_fractions": [
+          {
+            "shift": 1,
+            "height": 2,
+            "amplitude": "1"
+          }
+        ],
+        "basis": [
+          "1",
+          "exp(z)",
+          "J_1(z)"
+        ],
+        "coefficients": [
+          "0",
+          "0",
+          "1/_z"
+        ],
+        "specialized_coefficients": [
+          "0",
+          "0",
+          "1/2 - I/2"
+        ],
+        "nonzero_ordinary_point_value_independence_used": true,
+        "transcendence_certified": true,
+        "algebraic_value": null,
+        "cube_marked_power_sequence_identically_zero": false,
+        "full_Gamma_marked_sequence_zero_claimed": false,
+        "zero_period_alone_decides_whole_sequence": false,
+        "theorem": "FIRCOUPLEDPERIOD20261116"
+      },
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_marker_period_decides_full_sequence": false,
+      "arbitrary_complex_lower_terms_in_theorem": true,
+      "all_complex_scale_FC_and_infinitely_many_moments_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "all_Q_algebra_scalar_normalization_ideal_is_zero": true,
+      "effective_tail_cutoff_claimed": false,
+      "all_complex_scale_nonzero_limit_claimed": false,
+      "SFC_claimed": false,
+      "Gaussian_coordinate_count": 8,
+      "active_Gaussian_coordinate_count": 8,
+      "theorem": "FIRCOUPLEDBLOCKFC20261116"
+    },
+    {
+      "status": "coupled_factorial_family_certified",
+      "phase": "y0**2*y2**2*y4 + y0**2*y2**2*y5 + 2*y0**2*y2*y3*y4 + 2*y0**2*y2*y3*y5 + y0**2*y3**2*y4 + y0**2*y3**2*y5 + 2*y0*y1*y2**2*y4 + 2*y0*y1*y2**2*y5 + 4*y0*y1*y2*y3*y4 + 4*y0*y1*y2*y3*y5 + 2*y0*y1*y3**2*y4 + 2*y0*y1*y3**2*y5 + 2*y0*y2**2*y4 + 2*I*y0*y2**2*y4 + 2*y0*y2*y3*y4 + 2*I*y0*y2*y3*y4 + I*y0 + y1**2*y2**2*y4 + y1**2*y2**2*y5 + 2*y1**2*y2*y3*y4 + 2*y1**2*y2*y3*y5 + y1**2*y3**2*y4 + y1**2*y3**2*y5 + 1",
+      "variables": [
+        "y0",
+        "y1",
+        "y2",
+        "y3",
+        "y4",
+        "y5"
+      ],
+      "inactive_variables": [],
+      "inactive_shapes": [],
+      "coupling": "0",
+      "marker_degree_convention": "active variables only",
+      "inactive_expectation_taken": true,
+      "exponents": [
+        2,
+        2,
+        1
+      ],
+      "scale": "1 + I",
+      "angular_phase": "_U0*_U1*_U2 + _U0*_U1*_U2*I",
+      "marker_degree": 0,
+      "leading_cube_marker": "1",
+      "exact_zero_input_marker": false,
+      "whole_marked_sequence_zero_certified": false,
+      "unit_period": {
+        "status": "nonzero_period_certified",
+        "scale": "1 + I",
+        "dimension": 3,
+        "marker": "1",
+        "rational_moment": "1/(_t**3 + 3*_t**2 + 3*_t + 1)",
+        "partial_fractions": [
+          {
+            "shift": 1,
+            "height": 3,
+            "amplitude": "1"
+          }
+        ],
+        "basis": [
+          "1",
+          "exp(z)",
+          "J_1(z)",
+          "J_2(z)"
+        ],
+        "coefficients": [
+          "0",
+          "0",
+          "0",
+          "1/_z"
+        ],
+        "specialized_coefficients": [
+          "0",
+          "0",
+          "0",
+          "1/2 - I/2"
+        ],
+        "nonzero_ordinary_point_value_independence_used": true,
+        "transcendence_certified": true,
+        "algebraic_value": null,
+        "cube_marked_power_sequence_identically_zero": false,
+        "full_Gamma_marked_sequence_zero_claimed": false,
+        "zero_period_alone_decides_whole_sequence": false,
+        "theorem": "FIRCOUPLEDPERIOD20261116"
+      },
+      "leading_marker_period": {
+        "status": "nonzero_period_certified",
+        "scale": "1 + I",
+        "dimension": 3,
+        "marker": "1",
+        "rational_moment": "1/(_t**3 + 3*_t**2 + 3*_t + 1)",
+        "partial_fractions": [
+          {
+            "shift": 1,
+            "height": 3,
+            "amplitude": "1"
+          }
+        ],
+        "basis": [
+          "1",
+          "exp(z)",
+          "J_1(z)",
+          "J_2(z)"
+        ],
+        "coefficients": [
+          "0",
+          "0",
+          "0",
+          "1/_z"
+        ],
+        "specialized_coefficients": [
+          "0",
+          "0",
+          "0",
+          "1/2 - I/2"
+        ],
+        "nonzero_ordinary_point_value_independence_used": true,
+        "transcendence_certified": true,
+        "algebraic_value": null,
+        "cube_marked_power_sequence_identically_zero": false,
+        "full_Gamma_marked_sequence_zero_claimed": false,
+        "zero_period_alone_decides_whole_sequence": false,
+        "theorem": "FIRCOUPLEDPERIOD20261116"
+      },
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_marker_period_decides_full_sequence": false,
+      "arbitrary_complex_lower_terms_in_theorem": true,
+      "all_complex_scale_FC_and_infinitely_many_moments_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "all_Q_algebra_scalar_normalization_ideal_is_zero": true,
+      "effective_tail_cutoff_claimed": false,
+      "all_complex_scale_nonzero_limit_claimed": false,
+      "SFC_claimed": false,
+      "Gaussian_coordinate_count": 12,
+      "active_Gaussian_coordinate_count": 12,
+      "theorem": "FIRCOUPLEDBLOCKFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "1",
+      "marker_degree": 0,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "1",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "24",
+      "marker_degree": 0,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "z**4",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "6",
+      "marker_degree": 1,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "x*z**2",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "0",
+      "marker_degree": 0,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "z - 1",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": false,
+      "marked_decision": "zero_leading_amplitude_no_decision",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "9",
+      "marker_degree": 2,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "w*x**2",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1/4",
+        "2/3",
+        "1/2",
+        "5/4"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "1",
+      "marker_degree": 0,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "1",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1/4",
+        "2/3",
+        "1/2",
+        "5/4"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "105/16",
+      "marker_degree": 0,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "z**4",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1/4",
+        "2/3",
+        "1/2",
+        "5/4"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "9/4",
+      "marker_degree": 1,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "x*z**2",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1/4",
+        "2/3",
+        "1/2",
+        "5/4"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "0",
+      "marker_degree": 0,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "z - 1/2",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": false,
+      "marked_decision": "zero_leading_amplitude_no_decision",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "sqrt(2)*a*w + a*x*(2 + I) + w**2 + w*z + w + x**3 + I*x**2 + 3*x*z + x + z**2 + z + 1",
+      "exponents": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "shapes": [
+        "1/4",
+        "2/3",
+        "1/2",
+        "5/4"
+      ],
+      "active_indices": [
+        0
+      ],
+      "inactive_indices": [
+        1,
+        2,
+        3
+      ],
+      "unit_limit_exponent": "I/3",
+      "leading_marker_amplitude": "45/4",
+      "marker_degree": 2,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "w*x**2",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": false,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "I*y0**2 + y0*y1*y2 + y0 + 2*y1*y2 - 1",
+      "exponents": [
+        1,
+        1,
+        1
+      ],
+      "shapes": [
+        "1",
+        "1",
+        "1"
+      ],
+      "active_indices": [
+        0,
+        1,
+        2
+      ],
+      "inactive_indices": [],
+      "unit_limit_exponent": "2 + I",
+      "leading_marker_amplitude": "1",
+      "marker_degree": 1,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "y0",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": true,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "single_top_monomial_eventual_nonzero_certified",
+      "phase": "I*y0**2 + y0*y1*y2 + y0 + 2*y1*y2 - 1",
+      "exponents": [
+        1,
+        1,
+        1
+      ],
+      "shapes": [
+        "1/4",
+        "1/3",
+        "1/2"
+      ],
+      "active_indices": [
+        0,
+        1,
+        2
+      ],
+      "inactive_indices": [],
+      "unit_limit_exponent": "2 + I",
+      "leading_marker_amplitude": "1",
+      "marker_degree": 1,
+      "marker_degree_convention": "active variables only",
+      "marker_top_active": "y0",
+      "inactive_expectation_taken": true,
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": true,
+      "marked_decision": "eventually_nonzero",
+      "zero_leading_amplitude_decides_whole_sequence": false,
+      "every_variable_occurs_in_top": true,
+      "all_complex_lower_coefficients_in_theorem": true,
+      "all_positive_real_shapes_in_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "SFC_claimed": false,
+      "theorem": "FIRMONOMIALTOPFC20261116"
+    },
+    {
+      "status": "coupled_factorial_family_certified",
+      "phase": "y0**2*y2 + y0**2*y3 + 2*y0*y1*y2 + 2*y0*y1*y3 + 2*y0*y2 + y1**2*y2 + y1**2*y3",
+      "variables": [
+        "y0",
+        "y1",
+        "y2",
+        "y3"
+      ],
+      "inactive_variables": [],
+      "inactive_shapes": [],
+      "coupling": "0",
+      "marker_degree_convention": "active variables only",
+      "inactive_expectation_taken": true,
+      "exponents": [
+        2,
+        1
+      ],
+      "scale": "1",
+      "angular_phase": "_U0*_U1",
+      "marker_degree": 3,
+      "leading_cube_marker": "-_U0**2*_U1 + _U0*_U1 - 2*_U0 + 1",
+      "exact_zero_input_marker": false,
+      "whole_marked_sequence_zero_certified": false,
+      "unit_period": {
+        "status": "nonzero_period_certified",
+        "scale": "1",
+        "dimension": 2,
+        "marker": "1",
+        "rational_moment": "1/(_t**2 + 2*_t + 1)",
+        "partial_fractions": [
+          {
+            "shift": 1,
+            "height": 2,
+            "amplitude": "1"
+          }
+        ],
+        "basis": [
+          "1",
+          "exp(z)",
+          "J_1(z)"
+        ],
+        "coefficients": [
+          "0",
+          "0",
+          "1/_z"
+        ],
+        "specialized_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "nonzero_ordinary_point_value_independence_used": true,
+        "transcendence_certified": true,
+        "algebraic_value": null,
+        "cube_marked_power_sequence_identically_zero": false,
+        "full_Gamma_marked_sequence_zero_claimed": false,
+        "zero_period_alone_decides_whole_sequence": false,
+        "theorem": "FIRCOUPLEDPERIOD20261116"
+      },
+      "leading_marker_period": {
+        "status": "zero_period_certified",
+        "scale": "1",
+        "dimension": 2,
+        "marker": "-_U0**2*_U1 + _U0*_U1 - 2*_U0 + 1",
+        "rational_moment": "(-_t**3 - 4*_t**2 - 4*_t + 1)/(_t**5 + 9*_t**4 + 31*_t**3 + 51*_t**2 + 40*_t + 12)",
+        "partial_fractions": [
+          {
+            "shift": 1,
+            "height": 1,
+            "amplitude": "-2"
+          },
+          {
+            "shift": 1,
+            "height": 2,
+            "amplitude": "1"
+          },
+          {
+            "shift": 2,
+            "height": 1,
+            "amplitude": "1"
+          },
+          {
+            "shift": 2,
+            "height": 2,
+            "amplitude": "1"
+          },
+          {
+            "shift": 3,
+            "height": 1,
+            "amplitude": "1"
+          }
+        ],
+        "basis": [
+          "1",
+          "exp(z)",
+          "J_1(z)"
+        ],
+        "coefficients": [
+          "(2*_z**2 - 2)/_z**3",
+          "(2 - 2*_z)/_z**3",
+          "(_z - 1)/_z**2"
+        ],
+        "specialized_coefficients": [
+          "0",
+          "0",
+          "0"
+        ],
+        "nonzero_ordinary_point_value_independence_used": true,
+        "transcendence_certified": false,
+        "algebraic_value": "0",
+        "cube_marked_power_sequence_identically_zero": false,
+        "full_Gamma_marked_sequence_zero_claimed": false,
+        "zero_period_alone_decides_whole_sequence": false,
+        "theorem": "FIRCOUPLEDPERIOD20261116"
+      },
+      "unit_moments_eventually_all_nonzero": true,
+      "marked_eventual_nonzero_certified": false,
+      "marked_decision": "zero_leading_period_no_decision",
+      "zero_leading_marker_period_decides_full_sequence": false,
+      "arbitrary_complex_lower_terms_in_theorem": true,
+      "all_complex_scale_FC_and_infinitely_many_moments_theorem": true,
+      "ordinary_universal_tail_moment_ideal_is_unit": true,
+      "all_Q_algebra_scalar_normalization_ideal_is_zero": true,
+      "effective_tail_cutoff_claimed": false,
+      "all_complex_scale_nonzero_limit_claimed": false,
+      "SFC_claimed": false,
+      "Gaussian_coordinate_count": 8,
+      "active_Gaussian_coordinate_count": 8,
+      "theorem": "FIRCOUPLEDBLOCKFC20261116"
+    }
+  ],
+  "limit_diagnostics": [
+    {
+      "angular_dimension": 1,
+      "scale": 1,
+      "unit_limit": "1.718281828459045235360287",
+      "samples": [
+        {
+          "index": 8,
+          "normalized_moment": "1.639647962785217687178471",
+          "absolute_error": "0.0786338656738"
+        },
+        {
+          "index": 32,
+          "normalized_moment": "1.697454717646006561585174",
+          "absolute_error": "0.020827110813"
+        },
+        {
+          "index": 96,
+          "normalized_moment": "1.71124885694768317210281",
+          "absolute_error": "0.00703297151136"
+        }
+      ],
+      "role": "numerical diagnostic only; not universal nonvanishing evidence"
+    },
+    {
+      "angular_dimension": 2,
+      "scale": 1,
+      "unit_limit": "1.317902151454403894860009",
+      "samples": [
+        {
+          "index": 8,
+          "normalized_moment": "1.288764116484315675103101",
+          "absolute_error": "0.0291380349701"
+        },
+        {
+          "index": 32,
+          "normalized_moment": "1.310227009733886436964188",
+          "absolute_error": "0.00767514172052"
+        },
+        {
+          "index": 96,
+          "normalized_moment": "1.315313387272398430074866",
+          "absolute_error": "0.00258876418201"
+        }
+      ],
+      "role": "numerical diagnostic only; not universal nonvanishing evidence"
+    },
+    {
+      "angular_dimension": 3,
+      "scale": 1,
+      "unit_limit": "1.146499072528642807901195",
+      "samples": [
+        {
+          "index": 8,
+          "normalized_moment": "1.134781932143450207465937",
+          "absolute_error": "0.0117171403852"
+        },
+        {
+          "index": 32,
+          "normalized_moment": "1.143422904076453373659119",
+          "absolute_error": "0.00307616845219"
+        },
+        {
+          "index": 96,
+          "normalized_moment": "1.145462228115022587318039",
+          "absolute_error": "0.00103684441362"
+        }
+      ],
+      "role": "numerical diagnostic only; not universal nonvanishing evidence"
+    }
+  ]
+}

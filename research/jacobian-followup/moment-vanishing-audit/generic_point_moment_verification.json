@@ -1,0 +1,60 @@
+{
+  "completed": true,
+  "telescoping_certificate": true,
+  "difference_from_one_operator": true,
+  "linear_family_descent": [
+    {
+      "prime_generators": [],
+      "indicial": "-a*z*(z - 1)",
+      "nonnegative_integer_roots": [
+        0,
+        1
+      ],
+      "bound": 1,
+      "first_nonzero_moment": 1,
+      "accepted": false
+    },
+    {
+      "prime_generators": [
+        "a"
+      ],
+      "indicial": "-z*(b**2 + c**2)*(z - 2)",
+      "nonnegative_integer_roots": [
+        0,
+        2
+      ],
+      "bound": 2,
+      "first_nonzero_moment": 2,
+      "accepted": false
+    },
+    {
+      "prime_generators": [
+        "a",
+        "b**2 + c**2"
+      ],
+      "indicial": "z",
+      "nonnegative_integer_roots": [
+        0
+      ],
+      "bound": 0,
+      "first_nonzero_moment": null,
+      "accepted": true
+    }
+  ],
+  "null_radical": [
+    "a",
+    "b**2+c**2"
+  ],
+  "least_linear_prefix": 2,
+  "generic_bound_specialization_mutation_detected": true,
+  "zero_operator_rejected": true,
+  "general_algorithm_implemented": false,
+  "general_algorithm_executed": false,
+  "universal_termination_proof_certified_by_checker": false,
+  "full_cubic_coefficient_search_executed": false,
+  "producer_package_executed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "7d2d6480ff4b641d4eed9bc2c990c3cb903caed7192082cf319a353d540cf0f5"
+}

@@ -1,0 +1,218 @@
+{
+  "degree10_Bezout": {
+    "M2_a_coefficient": "2*z**2 + 1",
+    "M4_a2_coefficient": "72*z**4 + 216*z**2 + 27",
+    "u": "4*z**2/7 + 10/7",
+    "v": "-1/63",
+    "identity": "u*t+v*h=1; degree9 zero kills every degree10 monomial containing d or e, so M2*a^4 and M4*a^3 kill a^5"
+  },
+  "scope": "QQ[z]-free normalized row algebra, weighted degrees 0..8 (a=2,d=e=1); degree9 and degree10 zero imply all later degrees zero",
+  "data": [
+    {
+      "weighted_degree": 0,
+      "relation_matrix_shape": [
+        1,
+        0
+      ],
+      "free_rank": 1,
+      "Smith_nonzero_diagonal": []
+    },
+    {
+      "weighted_degree": 1,
+      "relation_matrix_shape": [
+        2,
+        0
+      ],
+      "free_rank": 2,
+      "Smith_nonzero_diagonal": []
+    },
+    {
+      "weighted_degree": 2,
+      "relation_matrix_shape": [
+        4,
+        1
+      ],
+      "free_rank": 3,
+      "Smith_nonzero_diagonal": [
+        "2"
+      ]
+    },
+    {
+      "weighted_degree": 3,
+      "relation_matrix_shape": [
+        6,
+        2
+      ],
+      "free_rank": 4,
+      "Smith_nonzero_diagonal": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "weighted_degree": 4,
+      "relation_matrix_shape": [
+        9,
+        5
+      ],
+      "free_rank": 4,
+      "Smith_nonzero_diagonal": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "weighted_degree": 5,
+      "relation_matrix_shape": [
+        12,
+        8
+      ],
+      "free_rank": 4,
+      "Smith_nonzero_diagonal": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "weighted_degree": 6,
+      "relation_matrix_shape": [
+        16,
+        14
+      ],
+      "free_rank": 3,
+      "Smith_nonzero_diagonal": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "weighted_degree": 7,
+      "relation_matrix_shape": [
+        20,
+        20
+      ],
+      "free_rank": 2,
+      "Smith_nonzero_diagonal": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "weighted_degree": 8,
+      "relation_matrix_shape": [
+        25,
+        30
+      ],
+      "free_rank": 1,
+      "Smith_nonzero_diagonal": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "weighted_degree": 9,
+      "relation_matrix_shape": [
+        30,
+        40
+      ],
+      "free_rank": 0,
+      "Smith_nonzero_diagonal": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    }
+  ],
+  "length": 24,
+  "elapsed_seconds": 4.7275732749840245,
+  "checker_sha256": "464bd90ad873fa251b471df2b85c24b26067853ed63c4c9d3faaada13b397f41",
+  "terminal": true,
+  "completed": true,
+  "input_checker_sha256": "7254eff7dad198b2e15fa727da0703bab5f8e3b8704697b27a0ed212527821d6",
+  "assurance": "Internal symbolic calculation; no independent replay or formal verification"
+}

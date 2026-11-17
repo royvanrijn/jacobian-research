@@ -1,0 +1,20 @@
+{
+  "scope": "I8:M10 in the universal six-variable characteristic-zero Gram ring; a terminal resource limit is UNKNOWN, not a unit or theorem.",
+  "command": [
+    "/usr/bin/Singular",
+    "-q",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/three_factor_colon.sing"
+  ],
+  "wall_limit_seconds": 50,
+  "memory_limit_MiB": 768,
+  "process_pid": 4094113,
+  "terminal": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "completed": true,
+  "classification": "EXACT_OUTPUT_PENDING_AUDIT",
+  "input_sha256": "a084c1285c3dac8277c3c0eafd976a3392d32d40944fd52bd5067edf15f801a5",
+  "log_sha256": "e8340f13ff11c0d3c0dd1552705a0431ea94504242be7779e212ef2647609727",
+  "elapsed_seconds": 1.1523876420105807,
+  "last_stdout": "BEGIN_STD\nSTD_DONE\n815\nCOLON_DONE\n55\ndef,\ncd2+be2+af2,\nabc,\n5b2c2-12bcf2,\n5a2c2-12ace2,\n5a2b2-12abd2,\n71bcf3+100f5,\nbe3f+aef3,\n71ace3+100e5,\n12ad2e2+5a3f2,\n5bc2e2+5ac2f2-12ce2f2,\n5b3e2+12bd2f2,\nab2e2+a2bf2,\n71abd3+100d5,\nf6,\naf5,\ne3f3,\nd3f3,\na3f3,\ne6,\nbe5,\nb2e4+abe2f2+a2f4,\n12abe4-5a3cf2+12a2e2f2,\nd3e3,\nbd3e2+ad3f2,\nd6,\n71b2e2f3-100d2f5,\na2cef3,\nab2ef3,\nac2df3,\na2bdf3,\n71b3cef2-355b2ef4-338bdf5,\n5a3cef2-12a2e3f2,\n71bc3df2-355c2df4-338cef5,\n5a3bdf2-12a2d3f2,\n100d2e5-71a2e3f2,\n338ade5-71a3ce2f+355a2e4f,\n100d5e2-71a2d3f2,\n71ac3de2-355c2de4-338ce5f,\n338ad5e-71a3bd2f+355a2d4f,\n71ab3d2e-355b2d4e-338bd5f,\nce2f5,\nb2ef5,\nbd2f5,\nc2df5,\nce5f2,\na2e4f2,\na3e3f2,\nbd5f2,\na2d4f2,\na3d3f2,\na2e5f,\na2d5f,\nc2de5,\nb2d5e\nMULTIPLIER_CHECK\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0\nEND\n"
+}

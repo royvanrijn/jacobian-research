@@ -1,0 +1,12 @@
+{
+  "date":"2026-11-17",
+  "frozen_before_execution":true,
+  "targets":["13a_129","13a_135","13a_136","13a_137","13a_194","13a_196","13a_197","13a_198","13a_233","13a_234","13a_239","13a_242","13a_243","13a_244","13a_253","13a_265"],
+  "selection":"Exactly original16 parabolic_panel.json PDs and retained four-seed traces, unchanged order. No293-name extension.",
+  "positive_control":"The known triple-trefoil control has passed separate81-vector, literal-PD, oriented word, root-matrix and27-point linear-group replay. Normalize its same four seed matrices to a canonical GL3(F3) conjugacy orbit and require the target propagation/kernel pipeline to recover dimension4 before searching any target.",
+  "test":"Enumerate all104 nonidentity rank-one unipotent3x3 matrices overF3. Normalize first seed to I+E12 and quotient the remaining three by its108-element GL3(F3) centralizer, using successive stabilizers. Propagate every representative with the actual signed Wirtinger relations. For every valid base compute the entire admissible-root cocycle space with one scalar per arc; retain every basis and exact coefficient matrix. Root dimension>=4 is a candidate sharp4 certificate under the retained upper4.",
+  "motivation":"Order3 meridians do not factor through the earlier meridian-square cover bases. A nonprincipal admissible affine3 cocycle can homogenize to a rank-one4dimensional representation despite all image directions lying in one3space, outside the pinned independent-four-direction search. Uniform root-space dimension itself gives a meridional lower bound, including proper/reducible images; none are discarded.",
+  "limits":{"targets":16,"seconds_total":180,"seconds_per_target":15,"tuple_orbit_cap":100000,"class_size":104,"centralizer_size":108,"raw_normalized_tuples":1124864,"checkpoint_each_target":true},
+  "acceptance":"No named closure without independent geometric signed relator, pointwise affine kernel, upper trace, named-PD and prior-known-family replay. A negative requires complete raw tuple-orbit coverage, not just a sample/count. Any cap leaves the target UNKNOWN.",
+  "scope":"All3dimensional rank-one unipotent meridian bases overF3 and their specified admissible affine-root spaces on these16 diagrams, including proper images. No all-field, nonlinear, higher-dimensional, arbitrary affine, target-rank or full MRC exclusion. Known composite control is not a new knot case."
+}

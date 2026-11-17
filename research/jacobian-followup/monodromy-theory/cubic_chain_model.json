@@ -1,0 +1,74 @@
+{
+  "claims": [
+    "KMFI162",
+    "KMFI163"
+  ],
+  "previous_goal_turn": "progress: KMFI158--161 established strong normal and translation tests and exact cubic matrix restrictions.",
+  "last_coordinate_multiplicity_lemma": {
+    "rank": "every r>=2",
+    "V": "(v(q),c(q)z+R(q))",
+    "h": "independent of z",
+    "cyclic_DV_V_required": true,
+    "N_nilpotent_and_rankDX_full_required": true,
+    "W": "adj(cI-DV)V has only last component Kz+L",
+    "cyclicity_proves_W_nonzero_even_at_repeated_roots": true,
+    "all_rejected_branches_retained": [
+      "c=h",
+      "K=0"
+    ],
+    "positive_integer_degree": "nu=deg_zF",
+    "required_identity": "nu*K=-(c-h)^r",
+    "F_over_head_field": "scalar(q)*(z+L/K)^nu",
+    "global_denominator_clearing_not_assumed": true,
+    "actual_rank2_full_rank_control": {
+      "omega": "omega^2-omega+1=0",
+      "V": "(u,omega*z)",
+      "F": "u*z",
+      "h": "1+omega",
+      "K": -1,
+      "nu": 1,
+      "whole_sweep_Jacobian": "gamma^2"
+    }
+  },
+  "complete_cubic_family_closure": {
+    "K": "(u^3,u^2x,u^2y+ux^2,u^2z+xy^2)",
+    "A": "arbitrary GL4",
+    "all_scalar_degrees": true,
+    "previous_flags": [
+      "A02=0",
+      "A03=0",
+      "A13=0"
+    ],
+    "highest_y_trace_forces_A23": 0,
+    "whole_K": "n*u^8*det(nI-M3)+2*f*n^2*(a-n)*u^7*x+b*f*n^2*u^6*x^2",
+    "multiplicity_identity_forces_A12": 0,
+    "weighted_trace_forces_A01": 0,
+    "final_forced_A": "lower triangular",
+    "final_full_rank_contradiction": "KMFI129 and nonzero i/a*x^2",
+    "all_repeated_and_resonant_parameters_retained": true
+  },
+  "actual_normalized_cubic_rank3_controls": [
+    {
+      "s": 0,
+      "lambda": 3,
+      "rankDX": 3,
+      "lambda_equals_n": true,
+      "entire_sweep_Jacobian": "gamma^4"
+    },
+    {
+      "s": 2,
+      "lambda": 5,
+      "rankDX": 3,
+      "lambda_equals_n": true,
+      "entire_sweep_Jacobian": "gamma^4"
+    }
+  ],
+  "arbitrary_cubic_directions_closed": false,
+  "all_quadratic_h0_shapes_retained": true,
+  "genuinely_nonhomogeneous_inputs_solved": false,
+  "new_occurrence_action_claimed": false,
+  "actual_PSL11_input_supplied": false,
+  "absolute_exceptional_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

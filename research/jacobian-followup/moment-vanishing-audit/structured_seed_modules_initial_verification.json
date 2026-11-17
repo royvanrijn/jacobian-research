@@ -1,0 +1,58 @@
+{
+  "completed": true,
+  "checker_sha256": "626bc6abeffe3c4c41fb174659651b3b89d026b1bcd47da07819b0029839bfc2",
+  "certificate_sha256": "bc35c045f87387ae23ed69c097d5a883f8c7125c30e041de771508f484a55480",
+  "runtime_seconds": 21.941,
+  "sympy_version": "1.14.0",
+  "coordinate_support_cases": 12,
+  "conic_K_degree_cases": 3,
+  "conic_models": 9,
+  "conic_seed_columns": 27,
+  "parent_symbolic_connection_checks": 10,
+  "parent_models": 3,
+  "parent_seed_columns": 9,
+  "tangent_symbolic_connection_checks": 15,
+  "tangent_models": 4,
+  "tangent_connection_columns": 20,
+  "tangent_seed_columns": 12,
+  "conic_gates_by_K_degree": [
+    216,
+    199,
+    108
+  ],
+  "conic_full_gate": 216,
+  "mixed_parent_gate": 210,
+  "full_W_linear_gate": 216,
+  "tangent_complement_gate": 239,
+  "tangent_full_gate": 239,
+  "cusp_full_gate": 210,
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 227,
+    "cusp": 210,
+    "transverse": 220,
+    "tangent": 239,
+    "triangle": 216,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 239,
+  "least_prefix_interval": [
+    20,
+    239
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    238
+  ],
+  "all_homogeneous_sufficient_pure_prefix": 216,
+  "all_homogeneous_least_prefix_interval": [
+    14,
+    216
+  ],
+  "binary_search_rounds_max": 8,
+  "optimality_proved": false,
+  "written_analytic_or_global_proof_certified_by_checker": false,
+  "boundary": "Exact coordinate support/divisibility, per-cancellation polynomial Laurent module checks, parent Euler and tangent shear identities plus model seeds. Full coefficient/rank cover, all-degree reduction induction and retained analytic nonzero zeroth coefficients remain written and independently unreviewed. No expanded global radical cofactors or leastness computation."
+}

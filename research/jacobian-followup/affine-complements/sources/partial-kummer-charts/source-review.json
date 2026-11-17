@@ -1,0 +1,15 @@
+{
+  "claim": "PF2RULED142",
+  "primary_rechecked": "Dubouloz arXiv:2002.12838v1, Definition1, Proposition3, paragraph after Definition4 and its explicit proof-detail limitation in the Introduction",
+  "url": "https://arxiv.org/html/2002.12838v1",
+  "retained_input": "The same affine-line-fibration structure already adopted in HC4MYML0 and PF130; no new external theorem adopted. Existing primary PDF pinned without replacement.",
+  "new_argument": "Normalize a cyclic base cover of degree equal to one chosen component multiplicity, delete all ramified components and all unselected fibre components, obtain an affine A1-bundle over A1, and compose its plane with the actual intermediate target map.",
+  "whole_component_checks": "Local unit-root etale charts show normalization smooth everywhere, residual covers of whole A1 trivial, and etaleness along the entire retained component. No purity assertion for the whole branched cover.",
+  "comparison_only": "The new plane need not surject onto the intermediate. It defines another Keller map, not a replacement of the original normalization.",
+  "prior_scope_change": "PF139 mixed alternatives are removed only at minimal original generic degree. MU0 order and trace statements remain valid for arbitrary degree; its mixed model supplies a smaller comparison map if realized.",
+  "new_download": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claimed": false
+}

@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED116",
+  "sources": [
+    {
+      "path": "sources/log-pullback-dessin/pol-1410.2126v4.html",
+      "url": "https://arxiv.org/html/1410.2126v4",
+      "title": "Delphine Pol, On the values of logarithmic residues along curves, arXiv1410.2126v4 (5Sep2017)",
+      "used": "Sections3.1-3.2: log forms, Proposition3.4 Saito criterion and plane-curve rank2 freeness, Proposition3.10 residue/Jacobian duality. Theorem1.2 context not independently reproved; HTML render Date2026 is not substituted for fixed arXivv4 date.",
+      "bytes": 1025116,
+      "sha256": "9f2786e73e0a399d574a0996c299b93bb2bd72d43991530d9b5d54e0798fbc8f"
+    },
+    {
+      "path": "sources/log-pullback-dessin/abreu-hernandes-2104.11352v1.html",
+      "url": "https://arxiv.org/html/2104.11352v1",
+      "title": "de Abreu-Hernandes, On the Analytic Invariants and Semiroots of Plane Branches, arXiv2104.11352v1 (22Apr2021)",
+      "used": "Introduction and definitions: analytic differential values Lambda, mu-tau=#(Lambda minus Gamma). Only this standard charzero relation is used for the actual fixed germ; no unrestricted semiroot/binary transfer imported.",
+      "bytes": 795857,
+      "sha256": "5bc8259de0d1135960a93d709422934c1e0ba202a2b32ddf1322a8838e321753"
+    },
+    {
+      "path": "sources/dessin-sharp-cusp/adrianov-vatuzov-2401.00183v1.html",
+      "url": "https://arxiv.org/html/2401.00183v1",
+      "title": "Adrianov-Vatuzov, Belyi functions of special weighted trees of (2,3)-type, arXiv2401.00183v1 (30Dec2023)",
+      "used": "Introduction dessin/Belyi existence, genus0 and passport conventions; orbit10.1 degree10 polynomials. Compact beta-minus-one display has superfluous +1: exact difference checked independently. All-m family uses written looped-tree induction, not bounded table.",
+      "bytes": 430201,
+      "sha256": "99d48780ca75cde364fc50efa97be6ab63fc88a71fb09a196d7ed4fca822ddd6"
+    },
+    {
+      "path": "RESIDUAL_MILNOR_IDENTITY_AND_MINIMAL_EXCESS_CLASSIFICATION.md",
+      "url": "retained:PF2RULED115",
+      "title": "All-branch residual Milnor identity",
+      "used": "Actual higher-characteristic germ mu16/residualmu60 and normalizedexcess scope.",
+      "bytes": 14269,
+      "sha256": "f7cf8c6afb19c6c68d55173b93035e9e8a771a6dd1276df4f23e4c934d37f479"
+    },
+    {
+      "path": "TORUS_CUSP_SOLID_TORUS_EXCESS_AND_FIVE_SIXTHS_BOUND.md",
+      "url": "retained:PF2RULED114",
+      "title": "Local cusp bound and global index budget",
+      "used": "w<=5eta-2delta and q|delta; globalWrightbound not declaredoptimal bywrong-open family.",
+      "bytes": 13172,
+      "sha256": "a8f5a9e6ef317dfb03c915b0eaf33e6e7136616e1d2d35c130e2be4bdb204420"
+    },
+    {
+      "path": "WHOLE_PLANE_THOM_LATTICE_AND_COMPLETE_PERIPHERAL_OBSTRUCTION.md",
+      "url": "retained:PF2RULED111",
+      "title": "Whole-plane boundary lattice",
+      "used": "Constantunits/no boundaryrelation; no identification of curve residues with surface trace dual.",
+      "bytes": 17490,
+      "sha256": "006da8c3c8b7bf2c1f264bd43908f450ee6a6ab1b3c78fcbec10fa1946635bad"
+    },
+    {
+      "path": "COPRIME_LEADING_FORMS_AND_DEGENERATE_RESIDUE_BUDGET.md",
+      "url": "retained:PF2RULED107",
+      "title": "Retained Zannier passport construction",
+      "used": "Different homogeneous finite family credited; newfamily has commonleadingfactor.",
+      "bytes": 9797,
+      "sha256": "bd6c88e3048dc84de046bb1aed99f19afd35520eebc97fd1de5f1202ce60af1b"
+    },
+    {
+      "path": "../jc2-omitted-divisors/GLOBAL_LEDGER.md",
+      "url": "retained:PF2OMIT2",
+      "title": "All-prime Euler ledger",
+      "used": "OriginalfiniteN/wholeplane, not arbitraryfinitecovers.",
+      "bytes": 10046,
+      "sha256": "e3b6fa954ecd67be226a87992707a67207aa377c37bad6257b5f3cbad0476ecb"
+    },
+    {
+      "path": "../jc2-omitted-divisors/RESIDUE_LEDGER.md",
+      "url": "retained:PF2OMIT6",
+      "title": "Normalized excess ledger",
+      "used": "d-1=sumef+sumeta; wrong-open discrepancy retained.",
+      "bytes": 9598,
+      "sha256": "b0c207ffb6fe2736937cdabffb1fe5266f4f936143b2807dd571f431df08a8b9"
+    }
+  ],
+  "primary_HTML_sections_read": true,
+  "fresh_PDF_audit_claimed": false,
+  "Saito_freeness_and_residue_duality_imported": true,
+  "dessin_Belyi_correspondence_imported": true,
+  "all_parameter_graph_and_weighted_finite_map_proofs_written": true,
+  "source_trace_dual_identified_with_curve_residue": false,
+  "preprint_binary_tower_or_Bernstein_transport_imported": false,
+  "historical_priority_claimed": false,
+  "formal_verification": false,
+  "external_review": false
+}

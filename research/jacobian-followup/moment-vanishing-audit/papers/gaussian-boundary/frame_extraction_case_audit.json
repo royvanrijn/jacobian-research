@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-17",
+  "version": "v011",
+  "cases": [
+    {
+      "type": "smooth cubic",
+      "status": "proved exclusion",
+      "proof": "cor:smoothleading"
+    },
+    {
+      "type": "irreducible nodal cubic",
+      "status": "proved complete exclusion,including all finite/conic/hyperbola/center-axis cases",
+      "shared": "ORDINARY-UV",
+      "proof": "cor:ordinarycomplete"
+    },
+    {
+      "type": "irreducible cuspidal cubic",
+      "status": "proved frame extraction and mixed cutoff;full nonisotropic regular part completed",
+      "proof": "prop:cusptangentcomplete"
+    },
+    {
+      "type": "line and smooth conic,transverse",
+      "status": "proved complete exclusion,including all finite/conic/hyperbola/center-axis cases",
+      "shared": "ORDINARY-UV",
+      "proof": "cor:ordinarycomplete"
+    },
+    {
+      "type": "line and smooth conic,tangent",
+      "status": "proved frame extraction and mixed cutoff;full nonisotropic regular part completed",
+      "proof": "prop:cusptangentcomplete"
+    },
+    {
+      "type": "three nonconcurrent lines",
+      "status": "proved complete exclusion,including all finite/conic/hyperbola/center-axis cases",
+      "shared": "ORDINARY-UV",
+      "proof": "cor:ordinarycomplete"
+    },
+    {
+      "type": "three concurrent distinct lines",
+      "status": "proved frame extraction and mixed cutoff by bounded regular models",
+      "proof": "prop:concurrentcomplete"
+    },
+    {
+      "type": "double line and a distinct line",
+      "status": "proved frame extraction and mixed cutoff by exact quadratic elimination and valuation",
+      "proof": "prop:repeatedcomplete"
+    },
+    {
+      "type": "triple line",
+      "status": "proved frame extraction and mixed cutoff by exact quadratic elimination and valuation",
+      "proof": "prop:repeatedcomplete"
+    }
+  ],
+  "remaining_shared_tasks": [],
+  "ordinary_residual": "T(uv+h)+a*u^3+d*v^3+b*u^2+c*v^2+e*u+f*v+k,with full nondegenerate Gaussian quadratic and nonzero T-square coefficient.",
+  "all_original_markers_retained": true,
+  "full_frame_extraction_proved": true,
+  "new_mathematical_checker_run": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "ordinary_finite_critical_test": {
+    "h_nonzero": "finite iff (a,b,c,d,e,f)!=0;otherwise critical conic",
+    "h_zero": "finite iff (e,f)!=0,(a,b,e)!=0,(d,c,f)!=0;otherwise critical axis or hyperbola",
+    "all_isolated_degeneracies_included": true,
+    "all_equal_actions_included": true,
+    "all_a_d_zero_faces_included": true
+  },
+  "rank_precaution": "First ramify every critical-value curve;count all resulting graphs,including conjugates with equal polar parts. Use Roucairol Section1.2 nonramified rank formula;not Theorem0.2 monodromy formula.",
+  "ordinary_curve_closure": {
+    "conic": "proved by all-degree hyperbolic suspension theorem",
+    "hyperbolas": "proved by permutation into same all-degree theorem",
+    "center_axis": "proved by formal rank5 model when bc!=0;uniform full-phase cut decay when bc=0",
+    "proof": "hyperbolic_suspension.tex",
+    "all_degree_statement": "P=wxy+F(w)+k,F(0)=0,Fprime(0)!=0,full nondegenerate affine q,AB!=0;extra m!=0 only if degF=1. Every original marker zero or not finite exponential-polynomial."
+  },
+  "ordinary_all_complete": true,
+  "ordinary_center_axis_split": {
+    "bc_nonzero": "fixed full rank5 core plus all off-axis Morse characters;explicit cutoff matrix",
+    "bc_zero": "uniform complex gradient of full tP-q plus at most2 P-critical values;full cut/current proof",
+    "all_coefficient_zero_faces": true,
+    "all_Gaussian_means_and_cross_terms": true
+  },
+  "all_squarefree_leading_types_complete": true,
+  "bounded_regular_mechanism": "Every escaping critical branch approaches the unique nonisotropic leading direction;the action identity excludes all such branches from any pure alpha*t block. Complete zero rank follows from full tame rank minus Roucairol nonzero ranks AFTER graph ramification. Construct only bounded power/fixed models;nonzero blocks need not split.",
+  "bounded_model_ranks": {
+    "quartic_line": 3,
+    "Gaussian_line": 1,
+    "cusp_quartic_times_cubic": 6,
+    "tangent_weighted_quartic": 5,
+    "quartic_parabola": 3
+  },
+  "all_nine_leading_types_complete": true,
+  "repeated_proof_simplification": "No matrix-eigenstructure or escaping-profile list. Nonisotropic fibre:effective degree>=3 excluded by (r/2-1)degD+degN>0;vanishing quartic gives explicit null frame. Isotropic fibre:three exact coefficients and determinant valuations all strict."
+}

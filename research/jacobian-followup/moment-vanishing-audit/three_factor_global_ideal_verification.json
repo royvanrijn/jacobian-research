@@ -1,0 +1,35 @@
+{
+  "all_moment_ideal": "I_infinity=I10=(M2,M4,M6,M8,M10), strictly larger than I8",
+  "sharp_initial_ideal_cutoff": 10,
+  "set_theoretic_cutoff_retained": 8,
+  "all_moments_from_order12": "Already in I8 by the written invariant grading proof",
+  "symmetric_invariant_lengths": [
+    12,
+    11
+  ],
+  "balanced_lengths": [
+    72,
+    66
+  ],
+  "global_nilradical_index_bounds": {
+    "I8": [
+      9,
+      19
+    ],
+    "I10_equals_I_infinity": [
+      9,
+      17
+    ]
+  },
+  "embedded_structure": "Nonzero I10/I8 vanishes at all six generic components by the retained generic algebra proof, so I8 has embedded associated structure.",
+  "M10_remainder": "-225834448896000*E**5/92791",
+  "full_Gram_dual_certificates": 3,
+  "certificate_sha256": "80d6dbcedbe025795781f3c2d8b258ca3a5233d687b1fed93ec3f75d62c36e8c",
+  "checker_sha256": "36a9a7b045718c59b6a61bd6281b0314685891b492e5af565aae71fd9c264ed6",
+  "input_hashes": {
+    "verify_nodal_product_reduction.py": "7254eff7dad198b2e15fa727da0703bab5f8e3b8704697b27a0ed212527821d6"
+  },
+  "sympy_version": "1.14.0",
+  "elapsed_seconds": 3.150070459989365,
+  "assurance": "Internal written all-order invariant proof and exact algebra. No independent replay, external review or formal verification; new characteristic claims are not made."
+}

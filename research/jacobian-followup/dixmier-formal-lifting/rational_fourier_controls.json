@@ -1,0 +1,55 @@
+{
+  "claim": "QFT1",
+  "status": "PASS",
+  "Fourier_normal_order_generic_coefficient_control": "degree4",
+  "rational_behaviors_at_infinity": [
+    {
+      "denominator_degree": 4,
+      "generic_polynomial_part": "9*r**2/(8*h)",
+      "classical_coefficient_degree": 4,
+      "Fourier_order": 4,
+      "finite_singular_point": "9*r**2/(8*h)",
+      "indicial": "la*(la - 2)*(la - 1)*(h**2*la + h**2 + 3*r)/h**2",
+      "generic_apparent_poles": "none, by source-position dependence"
+    },
+    {
+      "denominator_degree": 5,
+      "generic_polynomial_part": "0",
+      "classical_coefficient_degree": 4,
+      "Fourier_order": 5,
+      "finite_singular_point": "0",
+      "indicial": "-la*(la - 3)*(la - 2)*(la - 1)*(-8*h**2*la - 8*h**2 + 9*r**2)/(8*h**2)",
+      "generic_apparent_poles": "none, by source-position dependence"
+    }
+  ],
+  "mixed_logarithmic_flatness_identities": 3,
+  "mixed_logarithmic_Fourier_order": 7,
+  "apparent_pole_raw_order": 5,
+  "clean_minimal_order": 4,
+  "rational_gauge_classical_reduction": "PASS",
+  "uniform_three_trace_identities": "symbolic N",
+  "rank_two_true_split_control": "PASS",
+  "post_Fourier_line_twist_endomorphism_identity": "PASS",
+  "generic_rank_two_special_rank_one_control": "PASS",
+  "hashes": {
+    "RATIONAL_LINE_FOURIER_OBSTRUCTION.md": "63bd45d3ef6db5c19e8d54fcb2c209d980f9ed281a6b5af3c278b88856388875",
+    "check_rational_fourier.py": "c8534e506675a1925f2922f9eee8f83ad423a0ffb5f998ca41fd3ca97445b13a",
+    "QUINTIC_PHASE_AND_BRANCH_OBSTRUCTION.md": "8829fba45a6dc41a80fa8b81fda33cb1c1d0d6dee17971f1144b456ef09e2355",
+    "phase_carrier_controls.json": "5d75b63181d21c80bfbe9c31aa4ecf05adbf159eb8d7514455d3dfa9541e5fc2",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b"
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/0712.4124",
+      "used": "Fundamental differential Galois correspondence, Corollary3.10 finite algebraic part, and Section6 entire-function argument"
+    },
+    {
+      "source": "https://arxiv.org/html/math/0312343",
+      "used": "Local Fourier and lattice context; no global finite-left conclusion imported"
+    }
+  ],
+  "coverage_boundary": "Exact finite operator, indicial, gauge, flatness, trace, low-rank and rank-jump controls. Universal minimal-extension identification, absolute irreducibility, all finite algebraic covers and exclusion of all rational line corrections with classical polynomial degree>=3 use written proofs and standard Picard-Vessiot theory. Minimal line extensions are the declared category; no all-carrier nonlifting or actual bounded Long carrier is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

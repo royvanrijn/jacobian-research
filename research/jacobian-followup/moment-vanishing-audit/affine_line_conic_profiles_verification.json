@@ -1,0 +1,554 @@
+{
+  "completed": true,
+  "checker_sha256": "44e513f38579dbb840b84c66a6364076f8acb90dcd1cc7a170f93835957eec26",
+  "prior_complete_formal_checker_sha256": "f14a86c8587aedaf054b62a62b74a3f08ab7b8d8a7d235cfe3c78cd3db811e11",
+  "transverse_rank": 6,
+  "transverse_patterns": [
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "axes"
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 0,
+      "escapes_T_v": [
+        5,
+        1
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "kind": "conic"
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 2,
+      "escapes_T_v": [
+        3,
+        1
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "kind": "axes"
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 1,
+      "escapes_T_v": [
+        5,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 2,
+      "escapes_T_v": [
+        4,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 3,
+      "escapes_T_v": [
+        3,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "kind": "axes"
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 1,
+      "escapes_T_v": [
+        4,
+        1
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "kind": "conic"
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 2,
+      "escapes_T_v": [
+        3,
+        1
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "kind": "axes"
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 2,
+      "escapes_T_v": [
+        4,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 2,
+      "escapes_T_v": [
+        4,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 3,
+      "escapes_T_v": [
+        3,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 0,
+      "escapes_T_v": [
+        1,
+        5
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 4,
+      "escapes_T_v": [
+        1,
+        1
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 2,
+      "escapes_T_v": [
+        1,
+        3
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 4,
+      "escapes_T_v": [
+        1,
+        1
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 5,
+      "escapes_T_v": [
+        1,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 5,
+      "escapes_T_v": [
+        1,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 5,
+      "escapes_T_v": [
+        1,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 5,
+      "escapes_T_v": [
+        1,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 1,
+      "escapes_T_v": [
+        1,
+        4
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 4,
+      "escapes_T_v": [
+        1,
+        1
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 2,
+      "escapes_T_v": [
+        1,
+        3
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 4,
+      "escapes_T_v": [
+        1,
+        1
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 5,
+      "escapes_T_v": [
+        1,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 5,
+      "escapes_T_v": [
+        1,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "kind": "finite",
+      "finite_rank": 5,
+      "escapes_T_v": [
+        1,
+        0
+      ]
+    },
+    {
+      "nonzero_h_b_c_e_f": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "kind": "finite",
+      "finite_rank": 5,
+      "escapes_T_v": [
+        1,
+        0
+      ]
+    }
+  ],
+  "tangent_rank": 5,
+  "tangent_profiles": [
+    {
+      "condition": "g!=0",
+      "ranks": [
+        4,
+        1
+      ],
+      "description": "finite4 plus one sextic-action escape"
+    },
+    {
+      "condition": "g=0,h!=0,c!=0,c^2+h!=0",
+      "ranks": [
+        2,
+        1,
+        2
+      ],
+      "description": "finite2, primary1, secondary2"
+    },
+    {
+      "condition": "g=c=0,h!=0,L!=0",
+      "ranks": [
+        2,
+        3
+      ],
+      "description": "finite2 plus three quartic-action corrections to a nonzero quadratic action"
+    },
+    {
+      "condition": "g=c=0,h!=0,L=0",
+      "ranks": [
+        2,
+        3
+      ],
+      "description": "finite2 plus fixed quartic block3 with nonzero quadratic action"
+    },
+    {
+      "condition": "g=0,c!=0,c^2+h=0,f!=0",
+      "ranks": [
+        1,
+        1,
+        3
+      ],
+      "description": "finite1, primary1, three t^(4/3) secondary actions"
+    },
+    {
+      "condition": "g=0,c!=0,c^2+h=0,f=0",
+      "ranks": [
+        1,
+        1,
+        3
+      ],
+      "description": "finite1, primary1, fixed parabola3 with t^-1 seed"
+    },
+    {
+      "condition": "g=h=0,c!=0,delta!=0",
+      "ranks": [
+        3,
+        2
+      ],
+      "description": "three nonzero t^(2/3) actions plus secondary2"
+    },
+    {
+      "condition": "g=h=0,c!=0,delta=0",
+      "ranks": [
+        3,
+        2
+      ],
+      "description": "fixed critical-line3 with t^-1 seed plus secondary2"
+    },
+    {
+      "condition": "g=h=c=0,f!=0",
+      "ranks": [
+        5
+      ],
+      "description": "five nonzero t^(6/5) actions"
+    },
+    {
+      "condition": "g=h=c=f=0,e!=0",
+      "ranks": [
+        2,
+        3
+      ],
+      "description": "two fixed critical-line Gaussians with t^-1 seed plus escape3"
+    },
+    {
+      "condition": "g=h=c=f=e=0",
+      "ranks": [
+        5
+      ],
+      "description": "fixed D5/Gaussian block5 with t^-3/4 seed"
+    }
+  ],
+  "resolved": "Every ternary cubic whose leading form is a line times a smooth conic is GMC-safe for arbitrary lower terms. All transverse cases and nonisotropic-tangency cases are pure-nonvanishing; isotropic zero-F2 tangencies use W-linear safety.",
+  "written_proof_certified_by_checker": false,
+  "proof_boundary": "Exact transverse support/rank arithmetic and tangent normal-model actions, Jacobians, quartic completions, parabola identity, D5 Jacobian basis and rank arithmetic. Formal completeness, uniform cut decay, local normal charts and quotient arguments are written mathematics.",
+  "remaining": "Only nonhomogeneous repeated-line leading ternary cubic GMC; numerical uniform gates; coefficient schemes; lower-power GVC; external review and formalization."
+}

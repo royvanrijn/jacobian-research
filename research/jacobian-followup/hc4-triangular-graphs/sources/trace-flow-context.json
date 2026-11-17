@@ -1,0 +1,109 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKX1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md"
+    },
+    {
+      "claim": "HC4MYLE0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/SCALAR_DIFFERENTIAL_RIGIDITY_AND_ONE_COMPONENT_DESCENT.md"
+    },
+    {
+      "claim": "HC4MYLE1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/SCALAR_DIFFERENTIAL_RIGIDITY_AND_ONE_COMPONENT_DESCENT.md"
+    },
+    {
+      "claim": "HC4MYKZ1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/COMPLETE_HOLOMORPHIC_FLOW_DESCENT.md"
+    },
+    {
+      "claim": "HC4MYKY1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/TARGET_BOUNDARY_SYMMETRY_AND_FINITE_STABILIZER.md"
+    },
+    {
+      "claim": "HC4MYKU0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYLD1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/ALL_CONJUGATE_LOCALIZATION_AND_UNIFORM_TRACE_LANDING.md"
+    },
+    {
+      "claim": "KMFI1",
+      "canonical_source": "jacobian-followup/monodromy-theory/THEORY.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md": "beaced18024b06fc918d9e665929ff2ef4820e3cffa5a18493c5f9ac2bcd53e9",
+    "jacobian-followup/hc4-triangular-graphs/verify_algebraic_flow_descent.py": "a2317510797200b71dad4d6dd7d730555f88e3abcc7e55f0d157954fb3613c2f",
+    "jacobian-followup/hc4-triangular-graphs/SCALAR_DIFFERENTIAL_RIGIDITY_AND_ONE_COMPONENT_DESCENT.md": "73837c8803402030740bdff525fde639314a1d60a3fca5452ac14d8f26621706",
+    "jacobian-followup/hc4-triangular-graphs/verify_scalar_descent.py": "b869b8eb6b0c3becf5d14f8821f0304ac5a033c95fa06e22825a44f3b1c3be68",
+    "jacobian-followup/hc4-triangular-graphs/COMPLETE_HOLOMORPHIC_FLOW_DESCENT.md": "3711cc20f414a854a116c0455a79c2980e9480e7ba79ccc45e8fd37a76683844",
+    "jacobian-followup/hc4-triangular-graphs/verify_complete_holomorphic_flow.py": "1db11472a6133a2b15753ec4072984b20e3868c06801c2146bbc110f4866c58c",
+    "jacobian-followup/hc4-triangular-graphs/TARGET_BOUNDARY_SYMMETRY_AND_FINITE_STABILIZER.md": "63e990c696349c5fcbd1daa35f63a57ef06e6aad29d08fcab2f7f96368b7ce8c",
+    "jacobian-followup/hc4-triangular-graphs/verify_target_boundary_symmetry.py": "80e5cedcc4b7fa5e8618d88afdcc908e81144e091a9612f89433bc52b8e9ba85",
+    "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "jacobian-followup/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "jacobian-followup/hc4-triangular-graphs/ALL_CONJUGATE_LOCALIZATION_AND_UNIFORM_TRACE_LANDING.md": "5d12ef897f00486ebbfb1d4c3f51ce422e6d6f13979baa2197d71a71e5a7d9e0",
+    "jacobian-followup/hc4-triangular-graphs/verify_conjugate_localization.py": "c8714efd2fb07abb2bd39c2828bc3b0b0c83cd29fd42f5cbf5dd4b3ce4228538",
+    "jacobian-followup/monodromy-theory/THEORY.md": "71de191500c3ac73298540d8ce8b5496243b2b1a34b20313e3ab42d332532cdc",
+    "jacobian-followup/monodromy-theory/verify.py": "f6538a84c4cb04c532be93647e808e978a165bc6dd90efef0024586ebbc80c47",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "jacobian-followup/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f"
+  },
+  "new_primary_sha256": {
+    "sources/stacks-trace-and-norm-0BIE.html": "1fe21ce54aba4cebd3afe798c443a0544a3734e761a6dc4dce3f6322a0931213"
+  },
+  "primary_context": [
+    {
+      "title": "Stacks Project,Section9.20 Trace and norm,tag0BIE",
+      "url": "https://stacks.math.columbia.edu/tag/0BIE",
+      "inspected": "Actual definitions9.20.1 and characteristic-polynomial/trace Lemmas9.20.2-3 plus their proofs read;conjugate-root formula and trace pairing context checked.",
+      "role": "Already retained standard trace foundations.No new major theorem imported.No claim a source asserts completeness preservation."
+    }
+  ],
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "full_theorem_target": "Full HC4/JC2 proof or actual counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked canonical-energy integrality;OPEN.",
+  "previous_goal_turn_classification": "progress",
+  "mathematical_development_boundary": "One preliminary exact trace calculation stopped on a Python matrix-sum initialization TypeError;corrected locally before deriving the k1-3 identities.The registered checker is run separately only before registration.No failed calculation is treated as evidence. The first pre-registration checker run rejected its cubic averaged-Q control because stored Python closures used the final loop parameter and companion matrix. Default-argument captures corrected the checker;the universal written formulas were unchanged. No registered mathematical artifact was rerun.",
+  "normalized_trace_of_source_derivation_is_target_polynomial_derivation_proved": true,
+  "exact_trace_divergence_formula_includes_logarithmic_Jacobian_term_proved": true,
+  "volume_preserving_normalization_actions_trace_to_Hamiltonian_fields_proved": true,
+  "every_odd_degree_finite_trace_flow_counterfamily_constructed": true,
+  "source_LND_preserves_finite_normalization_and_fixes_entire_ramification_pointwise": true,
+  "source_LND_preserves_exact_pulled_back_target_volume": true,
+  "averaged_target_field_has_explicit_finite_time_pole_for_every_odd_degree": true,
+  "counterfamily_has_no_nontrivial_Galois_intermediate_field": true,
+  "counterfamily_regular_P_constants_field_and_finite_image_complement_proved": true,
+  "trace_fails_Lie_bracket_for_commuting_source_LNDs_proved": true,
+  "averaged_time_operator_second_derivative_differs_from_generated_flow_proved": true,
+  "fixed_source_ramification_does_not_force_averaged_target_branch_logarithmicity_proved": true,
+  "external_review_deferred": true,
+  "trace_averaging_asserted_preserve_completeness_or_local_finiteness": false,
+  "counterfamily_claimed_whole_plane_etale_source": false,
+  "counterfamily_claimed_Keller_or_HC4_counterexample": false,
+  "exact_full_monodromy_group_assumed": false,
+  "all_degree_family_inferred_from_k1_3_controls": false,
+  "general_gamma_k_expanded_or_needed": false,
+  "regular_trace_average_identified_with_unaveraged_component_field_descent": false,
+  "new_major_external_theorem_imported": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "whole_surviving_higher_degree_packet_excluded": false,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

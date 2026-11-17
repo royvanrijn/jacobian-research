@@ -1,0 +1,288 @@
+\subsection{Ordinary nodes with a finite affine critical set}
+\label{sec:ordinaryfinite}
+
+The three ordinary-node families admit one argument whenever the
+critical set of $P$ is finite. In particular we need not solve for
+each escaping critical point, assume it is Morse, or separate its
+action from the actions of other escaping points. The Gaussian
+quadratic itself detects the unwanted contribution at infinity.
+
+Retain the notation and the full pair $(P,q)$ of
+Lemma~\ref{lem:ordinarynormal}. Write $q_2$ for the homogeneous
+quadratic part of $q$. The absence of a Gaussian frame is exactly
+the following condition at the leading nodes:
+\begin{equation}\label{eq:nodenoframe}
+ F_2(w)=0\quad\Longrightarrow\quad q_2(w)\ne0.
+\end{equation}
+Indeed the Gaussian bilinear form in these affine coordinates is
+$2q_2$; the value of $F_2$ at a leading singular direction is
+unchanged by translation. In the common normal form the $T$ node
+already satisfies this condition because $m\ne0$. The only extra
+conditions are $c\ne0$ or $B\ne0$ when $d=0$, and $b\ne0$ or
+$A\ne0$ when $a=0$.
+
+\begin{lemma}[The stationary action identity]\label{lem:actionidentity}
+Put $r=1/t$, and let $x(r)$ be an algebraic critical branch of
+$S=P/r-q$. A prime means total differentiation along the branch.
+Then
+\begin{equation}\label{eq:actionidentity}
+ S'=-P(x(r))/r^2,\qquad q(x(r))=-S-rS'.
+\end{equation}
+If $x(r)$ is bounded, the polar part of $S$ is $\alpha/r$, where
+$\alpha=P(x(0))$. If it escapes and \eqref{eq:nodenoframe} holds,
+its polar part is neither zero nor $\alpha/r$ for any constant
+$\alpha$.
+\end{lemma}
+\begin{proof}
+Use a finite Puiseux cover so every branch is meromorphic. At a
+critical point the chain-rule term $\nabla_x S\cdot x'$ vanishes,
+giving both identities. For a monomial $c r^{-\kappa}$ of the
+polar part of $S$, its contribution to $-S-rS'$ is
+$(\kappa-1)c r^{-\kappa}$. Thus bounded $q(x(r))$ permits only
+the pole $\alpha/r$ in $S$. Its coefficient is $P(x(0))$ when
+$x$ is bounded.
+
+For an escaping branch let $R=\|x\|$. The critical equation is
+$\nabla P=r\nabla q$, so $\|\nabla P\|/R\longrightarrow0$.
+The leading projective direction is a singular point of $F_3$.
+The ordinary-node argument in the proof of the preceding coercive
+lemma works at this one direction: write $x=sw+y$, $y=o(s)$,
+in a fixed complementary plane. The injectivity there of
+$H=\operatorname{Hess}F_3(w)$ forces $y$ bounded from
+\[
+ \nabla P/s=Hy+\nabla F_2(w)+O((1+\|y\|)^2/|s|)=o(1).
+\]
+Pairing with $w$ then gives $F_2(w)=0$. Condition
+\eqref{eq:nodenoframe} gives $q_2(w)\ne0$, so $q(x(r))$ has a
+pole: its leading quadratic term cannot be cancelled by its
+lower-degree terms. Identity~\eqref{eq:actionidentity} now rules
+out both claimed polar parts. This argument includes all escape
+scales and all coincident actions.
+\end{proof}
+
+We specify the classical rank input before using it. This is a
+convergent algebraic application of formal stationary phase, not
+an extension to arbitrary nonconvergent coefficients or rings.
+
+\begin{lemma}[Rank accounting for a tame algebraic pencil]
+\label{lem:tamepencilrank}
+For the present no-frame pencil, shrink a punctured $r$ disk to
+avoid its finitely many exceptional parameters. Its top twisted
+de Rham module has rank
+\[
+ N=\sum_{\text{critical points of }S_r}\mu.
+\]
+After a finite cover, the rank of its block with nonzero
+exponential polar part $\gamma$ is the sum of these generic local
+Milnor numbers over critical branches with action polar part
+$\gamma$. Equal actions add their multiplicities. Consequently
+the rank of the zero-exponential block is the sum of the generic
+Milnor numbers of the branches with bounded action.
+\end{lemma}
+\begin{proof}
+For fixed small nonzero $r$, the homogeneous quadratic term of
+$S_r$ at a leading node $w$ is $F_2(w)/r-q_2(w)$. It is nonzero
+at every node, by \eqref{eq:nodenoframe} and exclusion of finitely
+many parameters. The ordinary-node coercivity lemma gives
+$\|\nabla S_r\|\ge c_r\|x\|$ outside a compact set. The
+critical locus is therefore finite: a positive-dimensional affine
+algebraic component would be unbounded. Pham's tame Milnor
+decomposition~\cite[Part~I, Sections~1--4]{Pham} gives the displayed
+rank, retaining the Milnor number of every degenerate point.
+
+Here are the checks needed to apply the direct-image rank formula.
+Take $U=\C_r^*\times\C_x^3$, $f=r$, $g=S_r$, and the regular
+algebraic module $\mathcal O_U$. Form the ordinary direct image
+by $(f,g)$, followed by exponential integration in the $g$
+coordinate. All these are algebraic maps; $g$ is regular on $U$.
+The ordinary direct image is regular holonomic. Over the punctured
+$r$ disk its relevant cohomology is the middle, reduced
+Gauss--Manin module of the fibers of $S_r$. The other, constant
+fiber cohomology has zero exponential integral in the affine $g$
+line. Punctual parameter terms disappear on the punctured disk.
+
+There are no extra finite-$g$ singular curves from spatial infinity.
+The coercive estimate is locally uniform on a compact subset of
+the punctured $r$ disk. For $g$ in a compact set, the identity
+$P=r(g+q)$ on a fiber gives
+\[
+ \partial_r S_r=-(g+q)/r=O(1+\|x\|^2).
+\]
+Lifting $r$ variation by the normalized gradient therefore uses a
+vector field of at most linear growth. Lifting $g$ variation uses
+a field $O(1/\|x\|)$. These fields are complete outside a fixed
+ball on each such parameter neighborhood. They trivialize the
+outer fiber pairs, so all nonvertical finite-$g$ discriminant
+curves come from affine critical values. Along such a curve the
+conormal multiplicity of the middle Gauss--Manin module is the
+sum of the local Milnor numbers: a transverse target disk computes
+precisely the corresponding isolated vanishing cycles. This also
+applies to persistent degenerate points and equal critical values.
+
+First make a common finite Puiseux base change of all the
+critical-value curves. Apply the nonramified case of Roucairol's
+Theorem~0.1(2), proved in her Section~1.2, and Theorem~0.3
+\cite{RoucairolFormal} to this identified ordinary direct image.
+They give exactly the stated nonzero polar parts and ranks.
+Count every graph after this base change, including distinct
+conjugates with the same polar part. For example the two graphs
+$g=r^{-1}\pm r^{1/2}$ must contribute twice after $r=\rho^2$;
+retaining just their one polar expression would lose rank.
+Their rank statement requires no separation of the constant terms
+of equal polar parts. The additional separation hypothesis in her
+Theorem~0.2 concerns its monodromy formula, which we do not use.
+Vertical components at $r=0$ and the boundary $g=\infty$ do not
+add polar branches in Theorem~0.1. Subtracting the nonzero-block
+ranks from $N$ proves the last assertion. In particular we have
+not inferred the regular rank from an Euler characteristic alone.
+\end{proof}
+
+\begin{proposition}\label{prop:ordinaryfinite}
+Suppose the common ordinary-node pair satisfies
+\eqref{eq:nodenoframe} and $P$ has finite affine critical set.
+Then $P$ is not pure. More generally every original Gaussian
+marked period is either zero or is not a finite sum of
+polynomials in $t$ times exponentials $e^{\beta t}$.
+\end{proposition}
+\begin{proof}
+Every bounded critical branch of $S_r$ limits to a critical point
+of $P$. Disjoint small Milnor neighborhoods of these finitely many
+points contain, for the deformation $P-rq$, total critical
+multiplicity $\mu_p$ in the neighborhood of $p$. This is
+conservation of the local intersection multiplicity of the
+gradient, and does not require a Morse perturbation. By
+Lemma~\ref{lem:actionidentity} its action has polar part
+$P(p)/r$. Every escaping branch has nonzero polar part. Hence
+Lemma~\ref{lem:tamepencilrank} identifies the entire zero-exponential
+rank as
+\begin{equation}\label{eq:ordinaryzerorank}
+ \sum_{p:\,dP(p)=0,\,P(p)=0}\mu_p.
+\end{equation}
+
+We construct that many independent local formal functionals and
+compute their monodromy over the unramified field $\C((r))$.
+At an isolated critical point at least one of $u,v$ is nonzero.
+Indeed if both vanish, criticality requires $h=e=f=0$, in which
+case the whole $T$ axis is critical. In the chart $u\ne0$ put
+\[
+ s=uv+h,\quad R(u)=G(u,-h/u),\quad
+ T'=T+\frac{G(u,(s-h)/u)-G(u,-h/u)}s,
+\]
+where $G=P-T(uv+h)$. The quotient is analytic, and exactly
+$P=sT'+R(u)$. The coordinate Jacobian is $u\ne0$. At a critical
+point $p$ the one-variable critical multiplicity of $R$ is
+$\mu_p$. An analytic one-variable coordinate $y$, with
+$w=T'$, therefore gives the exact identity
+\[
+ P=\alpha+sw+y^k,\qquad k=\mu_p+1,\quad\alpha=P(p).
+\]
+The volume Jacobian and $e^{-q}$ multiply every amplitude by an
+analytic unit $V(y,s,w)$; no Gaussian mean or cross term has been
+discarded.
+
+For $j=1,\ldots,k-1$ define a formal local functional on an
+analytic monomial $y^a s^b w^c$ as zero unless $b=c$ and
+$a=j-1+\ell k$ for an integer $\ell\ge0$. Otherwise its value is
+\begin{equation}\label{eq:ordinarycharacters}
+ e^{\alpha/r}r^{1+j/k}
+       (-1)^{b+\ell}b!\,(j/k)_\ell\,r^{b+\ell}.
+\end{equation}
+Evaluate a polynomial form after multiplying its transformed
+amplitude by $V$. At each power of $r$ only finitely many Taylor
+terms contribute. The recurrences
+\[
+ I_{a+k}=-\frac{a+1}{k}r I_a,\qquad
+ J_{b+1,b+1}=-(b+1)rJ_{b,b}
+\]
+prove spatial integration by parts and parameter horizontality.
+Thus these are functionals on the full twisted quotient, not on
+an assumed cyclic image. They exist even if the corresponding
+asymptotic series diverge; their input coefficients here are the
+Taylor series of the stated analytic coordinates.
+
+They are independent. Prescribe, at each $p$, the jets
+$1,y,\ldots,y^{k-2}$ on the line $s=w=0$ and zero jets at the
+other points, using polynomial representatives of finite local
+jets and the Chinese remainder theorem. After dividing column
+$j$ by $e^{\alpha/r}r^{1+j/k}$, the leading evaluation matrix is
+the jet map multiplied by the analytic unit $V$. It is triangular
+with nonzero diagonal. Its higher terms are in $r\C[[r]]$.
+For $\alpha=0$ these independent characters fill exactly the rank
+in \eqref{eq:ordinaryzerorank}; there is no unaccounted regular
+piece. Their formal monodromy eigenvalues, or their inverses if
+one uses the dual module, are
+\[
+ \exp(2\pi i j/k),\qquad 1\le j<k.
+\]
+None is one. This conclusion is over $\C((r))$. We do not replace
+a noninteger residue by its integer multiple after ramification.
+The unique zero-exponential projector commutes with descent, and
+the displayed unramified coefficient matrices identify its whole
+block. Every other block has a nonzero exponential polar part.
+The ambient module therefore has no trivial composition factor.
+
+For completeness this excludes the formal Gaussian unit without
+choosing an actual analytic period. Formal Gaussian integration
+annihilates $\partial_i+tP_i-q_i$ coefficientwise. If its value
+on a fixed marker $A$ were a nonzero constant, restriction to the
+rational differential submodule generated by $A$ would give a
+surjection to the trivial module: apply the functional to every
+rational relation between $A,\nabla_tA,\ldots$. A relation has
+zero constant coefficient because all positive derivatives of
+that constant vanish. Exact formal extension at infinity would
+preserve this composition factor, contradicting what was proved.
+
+Finally a nonzero finite exponential-polynomial can be reduced
+to $c e^{\beta t}$ by a constant-coefficient differential
+operator. On an original marker this operator replaces $A$ by
+the fixed polynomial marker $T(P)A$. Replace $P$ by $P-\beta$
+and divide the marker by $c$. The hypotheses and finite critical
+set are unchanged, so the same contradiction applies. Taking
+$A=1$ proves the purity exclusion.
+\end{proof}
+
+\subsection{Exactly which ordinary-node cases remain}
+
+The finite-critical hypothesis in Proposition~\ref{prop:ordinaryfinite}
+has a short exhaustive coefficient test. This prevents a generic
+argument from silently discarding the positive-dimensional cases.
+
+If $h\ne0$, the critical locus lies on $uv=-h$, and the equations
+above identify it with $R'(u)=0$ in $\C^*$. The Laurent polynomial
+\[
+ R(u)=a u^3+b u^2+e u+k-fh/u+ch^2/u^2-dh^3/u^3
+\]
+is nonconstant unless $a=b=c=d=e=f=0$. A nonzero Laurent
+derivative has only finitely many roots in $\C^*$. In the constant
+case the critical set is the smooth conic $uv=-h$, $T=0$.
+
+If $h=0$, outside the center the critical equations are
+\[
+ \begin{array}{lll}
+ v=0,\ u\ne0:&3au^2+2bu+e=0,&T=-f/u,\\
+ u=0,\ v\ne0:&3dv^2+2cv+f=0,&T=-e/v.
+ \end{array}
+\]
+The center $u=v=0$ is critical exactly when $e=f=0$, and then
+the whole $T$ axis is critical. Consequently the following table
+is exhaustive and disjoint:
+\begin{center}\small
+\begin{tabular}{@{}p{0.51\textwidth}p{0.39\textwidth}@{}}
+\toprule
+Condition & Conclusion\\
+\midrule
+$h\ne0$, $(a,b,c,d,e,f)\ne0$ & Finite critical set; excluded above\\
+$h\ne0$, $a=b=c=d=e=f=0$ & Critical conic; still to be proved here\\
+$h=0$, $e=f=0$ & Critical center axis, possibly extra curves; open here\\
+$h=0$, $(e,f)\ne0$, $a=b=e=0$ & Critical hyperbola $v=0$, $uT=-f$; open here\\
+$h=0$, $(e,f)\ne0$, $d=c=f=0$ & Symmetric critical hyperbola; open here\\
+$h=0$, $(e,f)\ne0$, $(a,b,e)\ne0$, $(d,c,f)\ne0$
+ & Finite critical set; excluded above\\
+\bottomrule
+\end{tabular}
+\end{center}
+The two hyperbola rows cannot overlap because $(e,f)\ne0$.
+All isolated degeneracies in the finite rows have already been
+included through their Milnor multiplicities. The curve rows
+still need a full regular-block or homology argument; a critical
+point count or the action identity alone does not settle them.

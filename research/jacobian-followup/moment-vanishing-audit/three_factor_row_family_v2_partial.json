@@ -1,0 +1,201 @@
+[
+  {
+    "weighted_degree": 0,
+    "relation_matrix_shape": [
+      1,
+      0
+    ],
+    "free_rank": 1,
+    "Smith_nonzero_diagonal": []
+  },
+  {
+    "weighted_degree": 1,
+    "relation_matrix_shape": [
+      2,
+      0
+    ],
+    "free_rank": 2,
+    "Smith_nonzero_diagonal": []
+  },
+  {
+    "weighted_degree": 2,
+    "relation_matrix_shape": [
+      4,
+      1
+    ],
+    "free_rank": 3,
+    "Smith_nonzero_diagonal": [
+      "2"
+    ]
+  },
+  {
+    "weighted_degree": 3,
+    "relation_matrix_shape": [
+      6,
+      2
+    ],
+    "free_rank": 4,
+    "Smith_nonzero_diagonal": [
+      "2",
+      "2"
+    ]
+  },
+  {
+    "weighted_degree": 4,
+    "relation_matrix_shape": [
+      9,
+      5
+    ],
+    "free_rank": 4,
+    "Smith_nonzero_diagonal": [
+      "2",
+      "2",
+      "2",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "weighted_degree": 5,
+    "relation_matrix_shape": [
+      12,
+      8
+    ],
+    "free_rank": 4,
+    "Smith_nonzero_diagonal": [
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "1",
+      "1"
+    ]
+  },
+  {
+    "weighted_degree": 6,
+    "relation_matrix_shape": [
+      16,
+      14
+    ],
+    "free_rank": 3,
+    "Smith_nonzero_diagonal": [
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  {
+    "weighted_degree": 7,
+    "relation_matrix_shape": [
+      20,
+      20
+    ],
+    "free_rank": 2,
+    "Smith_nonzero_diagonal": [
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  {
+    "weighted_degree": 8,
+    "relation_matrix_shape": [
+      25,
+      30
+    ],
+    "free_rank": 1,
+    "Smith_nonzero_diagonal": [
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  {
+    "weighted_degree": 9,
+    "relation_matrix_shape": [
+      30,
+      40
+    ],
+    "free_rank": 0,
+    "Smith_nonzero_diagonal": [
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  }
+]

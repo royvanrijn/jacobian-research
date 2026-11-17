@@ -1,5 +1,11 @@
 # The Keller monodromy action spectrum: the \(\operatorname{PSL}_2(11)\) benchmark
 
+The [global denominator-descent theorem](../../../jacobian-followup/monodromy-theory/CURVE_DESCENT_LCM.md)
+now excludes curve-generated affine Keller realization for every natural
+odd-q PSL2(q) action, including the genus-zero inputs at q=7 and 13.
+Exceptional degree-eleven curve inputs must have the retained polynomial
+(2,3,11) passport. Arbitrary higher-dimensional realizations remain open.
+
 **14 November 2026 follow-up.** The [affine inertia theorem and synthesis](../../../jacobian-followup/monodromy-theory/THEORY.md)
 requires every affine-divisor inertia to fix a sheet and the point stabilizer
 to normally generate the group. The [F11 audit](../../../jacobian-followup/monodromy-theory/F11.md)
@@ -7,6 +13,11 @@ gives a known genus-zero natural degree-twelve alternative to the modular
 cover, with admissible finite (5,5) inertia and an exact arithmetic-group
 distinction. The genus-one obstruction below remains specific to the
 (2,3,11) presentation. Neither note constructs an absolute PSL2(11) Keller map.
+The subsequent [global common-index obstruction](../../../jacobian-followup/monodromy-theory/F11_AFFINE_COMPLETION.md)
+excludes every stabilized natural degree-twelve curve-cover field, including
+F11, even after arbitrary birational source and target changes. The
+exceptional degree-eleven actions and general higher-dimensional natural
+realization remain open.
 
 
 ## 1. Outcome and status

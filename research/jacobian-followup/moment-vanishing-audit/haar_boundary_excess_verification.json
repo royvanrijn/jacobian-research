@@ -1,0 +1,49 @@
+{
+  "completed": true,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "e25696e603dac7a16d9fc02562317fdc99ed9b133a4c2073491223253cdb7eb3",
+  "quotient_genus_Riemann_Hurwitz_identity_exact": true,
+  "bidegree_curve_Euler_characteristic_identity_exact": true,
+  "stabilizer_character_and_first_jet_exponents_exact": true,
+  "formula_transcriptions": [
+    {
+      "group": "2O",
+      "k": 48,
+      "matrix_degree": 96,
+      "quotient_boundary_genus": 92,
+      "radical_dimension_lower_bound": 184
+    },
+    {
+      "group": "2O",
+      "k": 60,
+      "matrix_degree": 120,
+      "quotient_boundary_genus": 145,
+      "radical_dimension_lower_bound": 290
+    },
+    {
+      "group": "2I",
+      "k": 120,
+      "matrix_degree": 240,
+      "quotient_boundary_genus": 236,
+      "radical_dimension_lower_bound": 472
+    },
+    {
+      "group": "2I",
+      "k": 150,
+      "matrix_degree": 300,
+      "quotient_boundary_genus": 370,
+      "radical_dimension_lower_bound": 740
+    }
+  ],
+  "actual_phase_coefficients_expanded_or_sampled": false,
+  "generic_invariant_jet_existence_and_boundary_tori_proofs_machine_verified": false,
+  "unbounded_boundary_space_on_actual_pure_safe_locus": "Internal all-degree written existence proof on BOTH quotients",
+  "universal_vanishing_of_invariant_boundary_space_on_pure_locus_possible": false,
+  "new_safety_sector_claimed": false,
+  "exceptional_failure_constructed": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "new_degree_support_or_prefix_campaign": false
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T07:12:46.534110+00:00",
+  "purpose": "Retained whole-source formula/normalizer proofs and classical quasi-finite/approximation scope. No independent proof or novelty certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-feedback-normal-form/PROOF.md",
+      "locator": "UANATIVE2GEN1 exact response module; UAAFFINER1 generic Laurent Wronskian; UASIGFIELD1 stable signal-field normalizer; UAETALEGAUGE1 tangent witness.",
+      "sha256": "0ca1ea3bf102f7fd464c3de44e6b5dd22aba041ada38812f0c2e4fc2b2b61033"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-joint-feedback/PROOF.md",
+      "locator": "UAJOINTKER1 etale polynomial saturation, extended here to quasi-finite affine-space self-maps.",
+      "sha256": "fb72132bcad15267cf2fde422afd8dbebc3bdacd834132405ede6bce10648766"
+    },
+    {
+      "path": "archive/non-elliptic/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "locator": "UAM1 whole source and cubic inverse field reconstruction.",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-compression/verify.py",
+      "locator": "Pure source_map constructor.",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-receiver/PROOF.md",
+      "locator": "UAPROFILE1 whole landing of rational profiles.",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-structure/PROOF.md",
+      "locator": "UAALLATOM1 retained-profile degrees, monodromy and birational-etale affine lemma.",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-scalar-self-feedback/PROOF.md",
+      "locator": "UASELFFORMAL1 source-dependent tangent and its all-order formal integration boundary.",
+      "sha256": "1733d22b72cd1bc36dcbcfc9767542ae78bd985e6badb54beac96e8c9895fa59"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-higher-return/PROOF.md",
+      "locator": "UAMARKEDDEF1 complete marked thickenings and generic leaf geometry.",
+      "sha256": "9d8ee01e5b83532f86409f5b402b6c92752491049c193821b51824e81fec3c4b"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-canonical-filter/PROOF.md",
+      "locator": "UACANFIB1 complete canonical receiver and surviving factors.",
+      "sha256": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/stacks-01TC.html",
+      "url": "https://stacks.math.columbia.edu/tag/01TC",
+      "locator": "Quasi-finite morphisms and finite fibres; elementary divisor-image dimension proof is supplied locally.",
+      "bytes": 38382,
+      "sha256": "cac02b8de915c3028aec779e4c2f27b45550f7f76a3769d5d3cf27dc76bfe790"
+    },
+    {
+      "path": "sources/stacks-02V5.html",
+      "url": "https://stacks.math.columbia.edu/tag/02V5",
+      "locator": "Unramified maps are locally quasi-finite; applies to polynomial Keller maps.",
+      "bytes": 13739,
+      "sha256": "ea8206e3b145ff8cac471e445f0f4b20e014011a97564bb4f747152f26703830"
+    },
+    {
+      "path": "sources/kanel-belov-et-al-2017-v1.html",
+      "url": "https://arxiv.org/html/1707.06450v1",
+      "locator": "Version1 introduction/main approximation statements and separate polynomiality issue; contextual, not a classification dependency.",
+      "bytes": 231052,
+      "sha256": "7bc05fd64ad94309a2f9aabd7a8e18fee40e5483acb59683bcd3268b2b4f13db"
+    }
+  ]
+}

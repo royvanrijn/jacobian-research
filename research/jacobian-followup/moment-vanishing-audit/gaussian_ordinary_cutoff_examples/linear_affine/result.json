@@ -1,0 +1,3802 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "dimension": 1,
+    "parameter_count": 2,
+    "phase_terms": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        "1"
+      ]
+    ]
+  },
+  "cutoff_slope": 1,
+  "cutoff_intercept": 1,
+  "pure_moments_only": false,
+  "ideal_lift": [
+    [
+      [
+        [
+          2,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        "1"
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          2
+        ],
+        "1"
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          4
+        ],
+        "1"
+      ]
+    ]
+  ],
+  "original_generating_moments": [
+    {
+      "marker": [
+        0
+      ],
+      "power": 2,
+      "polynomial": [
+        [
+          [
+            2,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "marker": [
+        0
+      ],
+      "power": 3,
+      "polynomial": [
+        [
+          [
+            3,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          "3"
+        ]
+      ]
+    }
+  ],
+  "stopping_trace": [
+    {
+      "proposed_ideal": [],
+      "oracle": {
+        "status": "DECIDED",
+        "zero": false,
+        "components": [
+          {
+            "algebra": {
+              "component": {
+                "primary_ideal": [],
+                "radical_ideal": [],
+                "prime_radical_checked": true,
+                "independent_indices": [
+                  0,
+                  1
+                ],
+                "dimension": 2
+              },
+              "scalar_parameters": [
+                "c0",
+                "c1",
+                "a0",
+                "a1"
+              ],
+              "dependent_variables": [],
+              "standard_monomials": [
+                []
+              ],
+              "rank": 1,
+              "unit": [
+                {
+                  "numerator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                }
+              ],
+              "multiplication_table": [
+                [
+                  [
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              "injectivity_contract": "Q is primary and nonzero polynomials in its maximal independent variables avoid radical(Q); localization is injective. Primary status is trusted CAS."
+            },
+            "zero": false,
+            "method": "original_nonzero_coefficient",
+            "witness": {
+              "marker": [
+                0
+              ],
+              "power": 2,
+              "value": [
+                {
+                  "numerator": [
+                    [
+                      [
+                        2,
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ],
+                    [
+                      [
+                        0,
+                        2,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "primary_components": [
+          {
+            "primary_ideal": [],
+            "radical_ideal": [],
+            "prime_radical_checked": true,
+            "independent_indices": [
+              0,
+              1
+            ],
+            "dimension": 2
+          }
+        ],
+        "witness": {
+          "marker": [
+            0
+          ],
+          "power": 2,
+          "polynomial": [
+            [
+              [
+                2,
+                0
+              ],
+              "1"
+            ],
+            [
+              [
+                0,
+                2
+              ],
+              "1"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "proposed_ideal": [
+        [
+          [
+            [
+              2,
+              0
+            ],
+            "1"
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "oracle": {
+        "status": "DECIDED",
+        "zero": false,
+        "components": [
+          {
+            "algebra": {
+              "component": {
+                "primary_ideal": [
+                  [
+                    [
+                      [
+                        2,
+                        0
+                      ],
+                      "1"
+                    ],
+                    [
+                      [
+                        0,
+                        2
+                      ],
+                      "1"
+                    ]
+                  ]
+                ],
+                "radical_ideal": [
+                  [
+                    [
+                      [
+                        2,
+                        0
+                      ],
+                      "1"
+                    ],
+                    [
+                      [
+                        0,
+                        2
+                      ],
+                      "1"
+                    ]
+                  ]
+                ],
+                "prime_radical_checked": true,
+                "independent_indices": [
+                  1
+                ],
+                "dimension": 1
+              },
+              "scalar_parameters": [
+                "c1",
+                "a0",
+                "a1"
+              ],
+              "dependent_variables": [
+                "c0"
+              ],
+              "standard_monomials": [
+                [
+                  0
+                ],
+                [
+                  1
+                ]
+              ],
+              "rank": 2,
+              "unit": [
+                {
+                  "numerator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                },
+                {
+                  "numerator": [],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                }
+              ],
+              "multiplication_table": [
+                [
+                  [
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                [
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [
+                        [
+                          [
+                            2,
+                            0,
+                            0
+                          ],
+                          "-1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              "injectivity_contract": "Q is primary and nonzero polynomials in its maximal independent variables avoid radical(Q); localization is injective. Primary status is trusted CAS."
+            },
+            "zero": false,
+            "method": "original_nonzero_coefficient",
+            "witness": {
+              "marker": [
+                0
+              ],
+              "power": 3,
+              "value": [
+                {
+                  "numerator": [],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                },
+                {
+                  "numerator": [
+                    [
+                      [
+                        2,
+                        0,
+                        0
+                      ],
+                      "2"
+                    ]
+                  ],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "primary_components": [
+          {
+            "primary_ideal": [
+              [
+                [
+                  [
+                    2,
+                    0
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    0,
+                    2
+                  ],
+                  "1"
+                ]
+              ]
+            ],
+            "radical_ideal": [
+              [
+                [
+                  [
+                    2,
+                    0
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    0,
+                    2
+                  ],
+                  "1"
+                ]
+              ]
+            ],
+            "prime_radical_checked": true,
+            "independent_indices": [
+              1
+            ],
+            "dimension": 1
+          }
+        ],
+        "witness": {
+          "marker": [
+            0
+          ],
+          "power": 3,
+          "polynomial": [
+            [
+              [
+                3,
+                0
+              ],
+              "1"
+            ],
+            [
+              [
+                1,
+                2
+              ],
+              "3"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "proposed_ideal": [
+        [
+          [
+            [
+              2,
+              0
+            ],
+            "1"
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            "1"
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              2
+            ],
+            "1"
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              4
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "oracle": {
+        "status": "DECIDED",
+        "zero": true,
+        "components": [
+          {
+            "algebra": {
+              "component": {
+                "primary_ideal": [
+                  [
+                    [
+                      [
+                        2,
+                        0
+                      ],
+                      "1"
+                    ],
+                    [
+                      [
+                        0,
+                        2
+                      ],
+                      "1"
+                    ]
+                  ],
+                  [
+                    [
+                      [
+                        1,
+                        2
+                      ],
+                      "1"
+                    ]
+                  ]
+                ],
+                "radical_ideal": [
+                  [
+                    [
+                      [
+                        0,
+                        1
+                      ],
+                      "1"
+                    ]
+                  ],
+                  [
+                    [
+                      [
+                        1,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                ],
+                "prime_radical_checked": true,
+                "independent_indices": [],
+                "dimension": 0
+              },
+              "scalar_parameters": [
+                "a0",
+                "a1"
+              ],
+              "dependent_variables": [
+                "c0",
+                "c1"
+              ],
+              "standard_monomials": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "rank": 6,
+              "unit": [
+                {
+                  "numerator": [
+                    [
+                      [
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                },
+                {
+                  "numerator": [],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                },
+                {
+                  "numerator": [],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                },
+                {
+                  "numerator": [],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                },
+                {
+                  "numerator": [],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                },
+                {
+                  "numerator": [],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                }
+              ],
+              "multiplication_table": [
+                [
+                  [
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                [
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                [
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                [
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                [
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "-1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "-1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                [
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "-1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    },
+                    {
+                      "numerator": [],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              "injectivity_contract": "Q is primary and nonzero polynomials in its maximal independent variables avoid radical(Q); localization is injective. Primary status is trusted CAS."
+            },
+            "zero": true,
+            "method": "finite_nilpotent_phase",
+            "nilpotence_exponent": 6,
+            "witness": null
+          }
+        ],
+        "primary_components": [
+          {
+            "primary_ideal": [
+              [
+                [
+                  [
+                    2,
+                    0
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    0,
+                    2
+                  ],
+                  "1"
+                ]
+              ],
+              [
+                [
+                  [
+                    1,
+                    2
+                  ],
+                  "1"
+                ]
+              ]
+            ],
+            "radical_ideal": [
+              [
+                [
+                  [
+                    0,
+                    1
+                  ],
+                  "1"
+                ]
+              ],
+              [
+                [
+                  [
+                    1,
+                    0
+                  ],
+                  "1"
+                ]
+              ]
+            ],
+            "prime_radical_checked": true,
+            "independent_indices": [],
+            "dimension": 0
+          }
+        ]
+      }
+    }
+  ],
+  "retains_ordinary_parameter_ideal": true,
+  "actual_image_kernel_computed": false,
+  "assurance": "Primary decomposition/injectivity contract uses trusted CAS; original moment witnesses and scalar IBP identities are finite exact certificates. No universal independent assurance.",
+  "least_generating_prefix": {
+    "least_total_index_prefix": 3,
+    "pure_moment_prefix": false,
+    "finite_membership_trials": [
+      {
+        "total_index_prefix": 3,
+        "full_ideal_generated": true
+      },
+      {
+        "total_index_prefix": 1,
+        "full_ideal_generated": false
+      },
+      {
+        "total_index_prefix": 2,
+        "full_ideal_generated": false
+      }
+    ],
+    "convention": "all forbidden (alpha,m) with |alpha|+m<=prefix; pure mode uses alpha=0"
+  }
+}

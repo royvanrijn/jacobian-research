@@ -1,0 +1,1070 @@
+{
+  "gate_controls": [
+    {
+      "name": "nonlinear safe",
+      "gate": {
+        "positions": [
+          "z"
+        ],
+        "H": [
+          "z**2"
+        ],
+        "residual_model": {
+          "variables": [
+            "x",
+            "y"
+          ],
+          "symbol_names": [
+            "t",
+            "x",
+            "y",
+            "z"
+          ],
+          "weights": [
+            "2/3",
+            "4/3"
+          ],
+          "phase": "x**3*z",
+          "precision": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          "critical_blocks": [
+            {
+              "weight": "2/3",
+              "indices": [
+                0
+              ],
+              "matrix": [
+                [
+                  "0"
+                ]
+              ],
+              "right_side": [
+                "0"
+              ],
+              "solution": [
+                "0"
+              ]
+            },
+            {
+              "weight": "4/3",
+              "indices": [
+                1
+              ],
+              "matrix": [
+                [
+                  "0"
+                ]
+              ],
+              "right_side": [
+                "3*x**2*z"
+              ],
+              "solution": [
+                "0"
+              ]
+            }
+          ],
+          "critical_point": [
+            "0",
+            "0"
+          ],
+          "sigma": "1",
+          "critical_action": "0",
+          "quadratic_precision": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          "map": [
+            "x",
+            "t*x**2*z + y"
+          ],
+          "inverse_map": [
+            "x",
+            "-t*x**2*z + y"
+          ],
+          "Morse_steps": [
+            {
+              "degree": 3,
+              "removed": "-t*x**3*z",
+              "correction": [
+                "0",
+                "t*x**2*z"
+              ]
+            }
+          ],
+          "Jacobian": "1",
+          "actual_generic_rank_without_zero_positions": 1,
+          "action_numerator": "0",
+          "action_denominator_power": 0,
+          "pure_gate_polynomial": "0",
+          "sufficient_ordinary_pure_prefix": 0,
+          "safe_invariant_generators": []
+        },
+        "polynomial_field_degree_bound": 3,
+        "truncation": [
+          "0"
+        ],
+        "fixedpoint_residual": [
+          "0"
+        ],
+        "J_at_truncation": "1",
+        "sigma_at_truncation": "1",
+        "action_numerator_at_truncation": "0",
+        "coefficient_blocks": {
+          "fixedpoint_residual": [],
+          "normal_Jacobian": [],
+          "residual_determinant": [],
+          "critical_action": []
+        },
+        "safe_ideal_generators": [],
+        "field_gate": "all generators equal zero",
+        "all_ring_gate": "generated ideal is nilpotent",
+        "normalization": "Gamma_I(R)",
+        "purity_premise_required": false,
+        "safe_field_phases_are_pure": true,
+        "universal_claims_use_written_proof": true
+      },
+      "expected_ordinary_ideal": []
+    },
+    {
+      "name": "pure unsafe",
+      "gate": {
+        "positions": [
+          "z"
+        ],
+        "H": [
+          "z + 1"
+        ],
+        "residual_model": {
+          "variables": [
+            "x",
+            "y"
+          ],
+          "symbol_names": [
+            "t",
+            "x",
+            "y",
+            "z"
+          ],
+          "weights": [
+            "2/3",
+            "4/3"
+          ],
+          "phase": "x**3*z - x*y*z - x*y",
+          "precision": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          "critical_blocks": [
+            {
+              "weight": "2/3",
+              "indices": [
+                0
+              ],
+              "matrix": [
+                [
+                  "-z - 1"
+                ]
+              ],
+              "right_side": [
+                "0"
+              ],
+              "solution": [
+                "0"
+              ]
+            },
+            {
+              "weight": "4/3",
+              "indices": [
+                1
+              ],
+              "matrix": [
+                [
+                  "-z - 1"
+                ]
+              ],
+              "right_side": [
+                "3*x**2*z"
+              ],
+              "solution": [
+                "0"
+              ]
+            }
+          ],
+          "critical_point": [
+            "0",
+            "0"
+          ],
+          "sigma": "(t*z + t + 1)**2",
+          "critical_action": "0",
+          "quadratic_precision": [
+            [
+              "0",
+              "t*z + t + 1"
+            ],
+            [
+              "t*z + t + 1",
+              "0"
+            ]
+          ],
+          "map": [
+            "x",
+            "t*x**2*z/(t*z + t + 1) + y"
+          ],
+          "inverse_map": [
+            "x",
+            "-t*x**2*z/(t*z + t + 1) + y"
+          ],
+          "Morse_steps": [
+            {
+              "degree": 3,
+              "removed": "-t*x**3*z",
+              "correction": [
+                "0",
+                "t*x**2*z/(t*z + t + 1)"
+              ]
+            }
+          ],
+          "Jacobian": "1",
+          "actual_generic_rank_without_zero_positions": 1,
+          "action_numerator": "0",
+          "action_denominator_power": 0,
+          "pure_gate_polynomial": "-2*t*z**2 - 4*t*z - 2*t - 2*z - 2",
+          "sufficient_ordinary_pure_prefix": 2,
+          "safe_invariant_generators": [
+            "2*z + 2",
+            "z**2 + 2*z + 1"
+          ]
+        },
+        "polynomial_field_degree_bound": 2,
+        "truncation": [
+          "t**2 + t"
+        ],
+        "fixedpoint_residual": [
+          "-t**3"
+        ],
+        "J_at_truncation": "1 - t",
+        "sigma_at_truncation": "t**6 + 2*t**5 + 3*t**4 + 4*t**3 + 3*t**2 + 2*t + 1",
+        "action_numerator_at_truncation": "0",
+        "coefficient_blocks": {
+          "fixedpoint_residual": [
+            "-1"
+          ],
+          "normal_Jacobian": [
+            "-1"
+          ],
+          "residual_determinant": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "critical_action": []
+        },
+        "safe_ideal_generators": [
+          "-1",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "field_gate": "all generators equal zero",
+        "all_ring_gate": "generated ideal is nilpotent",
+        "normalization": "Gamma_I(R)",
+        "purity_premise_required": false,
+        "safe_field_phases_are_pure": true,
+        "universal_claims_use_written_proof": true
+      },
+      "expected_ordinary_ideal": [
+        "1"
+      ]
+    },
+    {
+      "name": "constant and variance defects",
+      "gate": {
+        "positions": [
+          "z"
+        ],
+        "H": [
+          "1"
+        ],
+        "residual_model": {
+          "variables": [
+            "x"
+          ],
+          "symbol_names": [
+            "c",
+            "e",
+            "t",
+            "x"
+          ],
+          "weights": [
+            "1"
+          ],
+          "phase": "c + e*x**2/2",
+          "precision": [
+            [
+              "1"
+            ]
+          ],
+          "critical_blocks": [
+            {
+              "weight": "1",
+              "indices": [
+                0
+              ],
+              "matrix": [
+                [
+                  "e"
+                ]
+              ],
+              "right_side": [
+                "0"
+              ],
+              "solution": [
+                "0"
+              ]
+            }
+          ],
+          "critical_point": [
+            "0"
+          ],
+          "sigma": "-e*t + 1",
+          "critical_action": "c*t",
+          "quadratic_precision": [
+            [
+              "-e*t + 1"
+            ]
+          ],
+          "map": [
+            "x"
+          ],
+          "inverse_map": [
+            "x"
+          ],
+          "Morse_steps": [],
+          "Jacobian": "1",
+          "actual_generic_rank_without_zero_positions": 1,
+          "action_numerator": "c*t",
+          "action_denominator_power": 0,
+          "pure_gate_polynomial": "-2*c*e*t + 2*c + e",
+          "sufficient_ordinary_pure_prefix": 2,
+          "safe_invariant_generators": [
+            "-e",
+            "c"
+          ]
+        },
+        "polynomial_field_degree_bound": 1,
+        "truncation": [
+          "t"
+        ],
+        "fixedpoint_residual": [
+          "0"
+        ],
+        "J_at_truncation": "1",
+        "sigma_at_truncation": "-e*t + 1",
+        "action_numerator_at_truncation": "c*t",
+        "coefficient_blocks": {
+          "fixedpoint_residual": [],
+          "normal_Jacobian": [],
+          "residual_determinant": [
+            "-e"
+          ],
+          "critical_action": [
+            "c"
+          ]
+        },
+        "safe_ideal_generators": [
+          "-e",
+          "c"
+        ],
+        "field_gate": "all generators equal zero",
+        "all_ring_gate": "generated ideal is nilpotent",
+        "normalization": "Gamma_I(R)",
+        "purity_premise_required": false,
+        "safe_field_phases_are_pure": true,
+        "universal_claims_use_written_proof": true
+      },
+      "expected_ordinary_ideal": [
+        "e",
+        "c"
+      ]
+    },
+    {
+      "name": "residual alone false positive",
+      "gate": {
+        "positions": [
+          "z"
+        ],
+        "H": [
+          "e + z"
+        ],
+        "residual_model": {
+          "variables": [],
+          "symbol_names": [
+            "t"
+          ],
+          "weights": [],
+          "phase": "0",
+          "precision": [],
+          "critical_blocks": [],
+          "critical_point": [],
+          "sigma": "1",
+          "critical_action": "0",
+          "quadratic_precision": [],
+          "map": [],
+          "inverse_map": [],
+          "Morse_steps": [],
+          "Jacobian": "1",
+          "actual_generic_rank_without_zero_positions": 1,
+          "action_numerator": "0",
+          "action_denominator_power": 0,
+          "pure_gate_polynomial": "0",
+          "sufficient_ordinary_pure_prefix": 0,
+          "safe_invariant_generators": []
+        },
+        "polynomial_field_degree_bound": 2,
+        "truncation": [
+          "e*t**2 + e*t"
+        ],
+        "fixedpoint_residual": [
+          "-e*t**3"
+        ],
+        "J_at_truncation": "1 - t",
+        "sigma_at_truncation": "1",
+        "action_numerator_at_truncation": "0",
+        "coefficient_blocks": {
+          "fixedpoint_residual": [
+            "-e"
+          ],
+          "normal_Jacobian": [
+            "-1"
+          ],
+          "residual_determinant": [],
+          "critical_action": []
+        },
+        "safe_ideal_generators": [
+          "-e",
+          "-1"
+        ],
+        "field_gate": "all generators equal zero",
+        "all_ring_gate": "generated ideal is nilpotent",
+        "normalization": "Gamma_I(R)",
+        "purity_premise_required": false,
+        "safe_field_phases_are_pure": true,
+        "universal_claims_use_written_proof": true
+      },
+      "expected_ordinary_ideal": [
+        "1"
+      ]
+    },
+    {
+      "name": "nilpotent polynomial lift",
+      "gate": {
+        "positions": [
+          "z"
+        ],
+        "H": [
+          "e*z + 1"
+        ],
+        "residual_model": {
+          "variables": [],
+          "symbol_names": [
+            "t"
+          ],
+          "weights": [],
+          "phase": "0",
+          "precision": [],
+          "critical_blocks": [],
+          "critical_point": [],
+          "sigma": "1",
+          "critical_action": "0",
+          "quadratic_precision": [],
+          "map": [],
+          "inverse_map": [],
+          "Morse_steps": [],
+          "Jacobian": "1",
+          "actual_generic_rank_without_zero_positions": 1,
+          "action_numerator": "0",
+          "action_denominator_power": 0,
+          "pure_gate_polynomial": "0",
+          "sufficient_ordinary_pure_prefix": 0,
+          "safe_invariant_generators": []
+        },
+        "polynomial_field_degree_bound": 2,
+        "truncation": [
+          "e*t**2 + t"
+        ],
+        "fixedpoint_residual": [
+          "-e**2*t**3"
+        ],
+        "J_at_truncation": "-e*t + 1",
+        "sigma_at_truncation": "1",
+        "action_numerator_at_truncation": "0",
+        "coefficient_blocks": {
+          "fixedpoint_residual": [
+            "-e**2"
+          ],
+          "normal_Jacobian": [
+            "-e"
+          ],
+          "residual_determinant": [],
+          "critical_action": []
+        },
+        "safe_ideal_generators": [
+          "-e**2",
+          "-e"
+        ],
+        "field_gate": "all generators equal zero",
+        "all_ring_gate": "generated ideal is nilpotent",
+        "normalization": "Gamma_I(R)",
+        "purity_premise_required": false,
+        "safe_field_phases_are_pure": true,
+        "universal_claims_use_written_proof": true
+      },
+      "expected_ordinary_ideal": [
+        "e"
+      ]
+    },
+    {
+      "name": "nilpotent nonpure",
+      "gate": {
+        "positions": [
+          "z"
+        ],
+        "H": [
+          "e*z + 1"
+        ],
+        "residual_model": {
+          "variables": [
+            "x"
+          ],
+          "symbol_names": [
+            "e",
+            "t",
+            "x"
+          ],
+          "weights": [
+            "1"
+          ],
+          "phase": "e*x**2/2 - e/2",
+          "precision": [
+            [
+              "1"
+            ]
+          ],
+          "critical_blocks": [
+            {
+              "weight": "1",
+              "indices": [
+                0
+              ],
+              "matrix": [
+                [
+                  "e"
+                ]
+              ],
+              "right_side": [
+                "0"
+              ],
+              "solution": [
+                "0"
+              ]
+            }
+          ],
+          "critical_point": [
+            "0"
+          ],
+          "sigma": "-e*t + 1",
+          "critical_action": "-e*t/2",
+          "quadratic_precision": [
+            [
+              "-e*t + 1"
+            ]
+          ],
+          "map": [
+            "x"
+          ],
+          "inverse_map": [
+            "x"
+          ],
+          "Morse_steps": [],
+          "Jacobian": "1",
+          "actual_generic_rank_without_zero_positions": 1,
+          "action_numerator": "-e*t/2",
+          "action_denominator_power": 0,
+          "pure_gate_polynomial": "e**2*t",
+          "sufficient_ordinary_pure_prefix": 2,
+          "safe_invariant_generators": [
+            "-e",
+            "-e/2"
+          ]
+        },
+        "polynomial_field_degree_bound": 2,
+        "truncation": [
+          "e*t**2 + t"
+        ],
+        "fixedpoint_residual": [
+          "-e**2*t**3"
+        ],
+        "J_at_truncation": "-e*t + 1",
+        "sigma_at_truncation": "-e*t + 1",
+        "action_numerator_at_truncation": "-e*t/2",
+        "coefficient_blocks": {
+          "fixedpoint_residual": [
+            "-e**2"
+          ],
+          "normal_Jacobian": [
+            "-e"
+          ],
+          "residual_determinant": [
+            "-e"
+          ],
+          "critical_action": [
+            "-e/2"
+          ]
+        },
+        "safe_ideal_generators": [
+          "-e**2",
+          "-e",
+          "-e/2"
+        ],
+        "field_gate": "all generators equal zero",
+        "all_ring_gate": "generated ideal is nilpotent",
+        "normalization": "Gamma_I(R)",
+        "purity_premise_required": false,
+        "safe_field_phases_are_pure": true,
+        "universal_claims_use_written_proof": true
+      },
+      "expected_ordinary_ideal": [
+        "e"
+      ]
+    },
+    {
+      "name": "nonzero critical action",
+      "gate": {
+        "positions": [
+          "z"
+        ],
+        "H": [
+          "1"
+        ],
+        "residual_model": {
+          "variables": [
+            "x",
+            "y"
+          ],
+          "symbol_names": [
+            "t",
+            "x",
+            "y"
+          ],
+          "weights": [
+            "2/3",
+            "4/3"
+          ],
+          "phase": "x**3 + y",
+          "precision": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          "critical_blocks": [
+            {
+              "weight": "2/3",
+              "indices": [
+                0
+              ],
+              "matrix": [
+                [
+                  "0"
+                ]
+              ],
+              "right_side": [
+                "1"
+              ],
+              "solution": [
+                "t"
+              ]
+            },
+            {
+              "weight": "4/3",
+              "indices": [
+                1
+              ],
+              "matrix": [
+                [
+                  "0"
+                ]
+              ],
+              "right_side": [
+                "3*x**2"
+              ],
+              "solution": [
+                "3*t**3"
+              ]
+            }
+          ],
+          "critical_point": [
+            "t",
+            "3*t**3"
+          ],
+          "sigma": "1",
+          "critical_action": "t**4",
+          "quadratic_precision": [
+            [
+              "-6*t**2",
+              "1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          "map": [
+            "t + x",
+            "3*t**3 + t*x**2 + y"
+          ],
+          "inverse_map": [
+            "-t + x",
+            "-4*t**3 + 2*t**2*x - t*x**2 + y"
+          ],
+          "Morse_steps": [
+            {
+              "degree": 3,
+              "removed": "-t*x**3",
+              "correction": [
+                "0",
+                "t*x**2"
+              ]
+            }
+          ],
+          "Jacobian": "1",
+          "actual_generic_rank_without_zero_positions": 1,
+          "action_numerator": "t**4",
+          "action_denominator_power": 0,
+          "pure_gate_polynomial": "8*t**3",
+          "sufficient_ordinary_pure_prefix": 4,
+          "safe_invariant_generators": [
+            "1"
+          ]
+        },
+        "polynomial_field_degree_bound": 1,
+        "truncation": [
+          "t"
+        ],
+        "fixedpoint_residual": [
+          "0"
+        ],
+        "J_at_truncation": "1",
+        "sigma_at_truncation": "1",
+        "action_numerator_at_truncation": "t**4",
+        "coefficient_blocks": {
+          "fixedpoint_residual": [],
+          "normal_Jacobian": [],
+          "residual_determinant": [],
+          "critical_action": [
+            "1"
+          ]
+        },
+        "safe_ideal_generators": [
+          "1"
+        ],
+        "field_gate": "all generators equal zero",
+        "all_ring_gate": "generated ideal is nilpotent",
+        "normalization": "Gamma_I(R)",
+        "purity_premise_required": false,
+        "safe_field_phases_are_pure": true,
+        "universal_claims_use_written_proof": true
+      },
+      "expected_ordinary_ideal": [
+        "1"
+      ]
+    },
+    {
+      "name": "empty zero block",
+      "gate": {
+        "positions": [],
+        "H": [],
+        "residual_model": {
+          "variables": [
+            "x"
+          ],
+          "symbol_names": [
+            "e",
+            "t",
+            "x"
+          ],
+          "weights": [
+            "1"
+          ],
+          "phase": "e*x**2/2 - e/2",
+          "precision": [
+            [
+              "1"
+            ]
+          ],
+          "critical_blocks": [
+            {
+              "weight": "1",
+              "indices": [
+                0
+              ],
+              "matrix": [
+                [
+                  "e"
+                ]
+              ],
+              "right_side": [
+                "0"
+              ],
+              "solution": [
+                "0"
+              ]
+            }
+          ],
+          "critical_point": [
+            "0"
+          ],
+          "sigma": "-e*t + 1",
+          "critical_action": "-e*t/2",
+          "quadratic_precision": [
+            [
+              "-e*t + 1"
+            ]
+          ],
+          "map": [
+            "x"
+          ],
+          "inverse_map": [
+            "x"
+          ],
+          "Morse_steps": [],
+          "Jacobian": "1",
+          "actual_generic_rank_without_zero_positions": 1,
+          "action_numerator": "-e*t/2",
+          "action_denominator_power": 0,
+          "pure_gate_polynomial": "e**2*t",
+          "sufficient_ordinary_pure_prefix": 2,
+          "safe_invariant_generators": [
+            "-e",
+            "-e/2"
+          ]
+        },
+        "polynomial_field_degree_bound": 1,
+        "truncation": [],
+        "fixedpoint_residual": [],
+        "J_at_truncation": "1",
+        "sigma_at_truncation": "-e*t + 1",
+        "action_numerator_at_truncation": "-e*t/2",
+        "coefficient_blocks": {
+          "fixedpoint_residual": [],
+          "normal_Jacobian": [],
+          "residual_determinant": [
+            "-e"
+          ],
+          "critical_action": [
+            "-e/2"
+          ]
+        },
+        "safe_ideal_generators": [
+          "-e",
+          "-e/2"
+        ],
+        "field_gate": "all generators equal zero",
+        "all_ring_gate": "generated ideal is nilpotent",
+        "normalization": "Gamma_I(R)",
+        "purity_premise_required": false,
+        "safe_field_phases_are_pure": true,
+        "universal_claims_use_written_proof": true
+      },
+      "expected_ordinary_ideal": [
+        "e"
+      ]
+    }
+  ],
+  "vector_gate": {
+    "positions": [
+      "z",
+      "z2"
+    ],
+    "H": [
+      "1",
+      "z**2"
+    ],
+    "residual_model": {
+      "variables": [],
+      "symbol_names": [
+        "t"
+      ],
+      "weights": [],
+      "phase": "0",
+      "precision": [],
+      "critical_blocks": [],
+      "critical_point": [],
+      "sigma": "1",
+      "critical_action": "0",
+      "quadratic_precision": [],
+      "map": [],
+      "inverse_map": [],
+      "Morse_steps": [],
+      "Jacobian": "1",
+      "actual_generic_rank_without_zero_positions": 1,
+      "action_numerator": "0",
+      "action_denominator_power": 0,
+      "pure_gate_polynomial": "0",
+      "sufficient_ordinary_pure_prefix": 0,
+      "safe_invariant_generators": []
+    },
+    "polynomial_field_degree_bound": 3,
+    "truncation": [
+      "t",
+      "t**3"
+    ],
+    "fixedpoint_residual": [
+      "0",
+      "0"
+    ],
+    "J_at_truncation": "1",
+    "sigma_at_truncation": "1",
+    "action_numerator_at_truncation": "0",
+    "coefficient_blocks": {
+      "fixedpoint_residual": [],
+      "normal_Jacobian": [],
+      "residual_determinant": [],
+      "critical_action": []
+    },
+    "safe_ideal_generators": [],
+    "field_gate": "all generators equal zero",
+    "all_ring_gate": "generated ideal is nilpotent",
+    "normalization": "Gamma_I(R)",
+    "purity_premise_required": false,
+    "safe_field_phases_are_pure": true,
+    "universal_claims_use_written_proof": true
+  },
+  "polynomial_Newton_controls": [
+    {
+      "iteration": 1,
+      "polynomial": "e**3*t**4 + e**2*t**3 + e*t**2 + t",
+      "residual": "0"
+    },
+    {
+      "iteration": 2,
+      "polynomial": "e**3*t**4 + e**2*t**3 + e*t**2 + t",
+      "residual": "0"
+    }
+  ],
+  "original_nilpotent_Wick_controls": [
+    {
+      "power": 0,
+      "values": {
+        "unit": "1",
+        "Z": "0",
+        "W": "0",
+        "T2": "1",
+        "ZW": "1"
+      }
+    },
+    {
+      "power": 1,
+      "values": {
+        "unit": "e",
+        "Z": "1",
+        "W": "0",
+        "T2": "2*e",
+        "ZW": "2*e"
+      }
+    },
+    {
+      "power": 2,
+      "values": {
+        "unit": "0",
+        "Z": "4*e",
+        "W": "0",
+        "T2": "0",
+        "ZW": "0"
+      }
+    },
+    {
+      "power": 3,
+      "values": {
+        "unit": "0",
+        "Z": "0",
+        "W": "0",
+        "T2": "0",
+        "ZW": "0"
+      }
+    },
+    {
+      "power": 4,
+      "values": {
+        "unit": "0",
+        "Z": "0",
+        "W": "0",
+        "T2": "0",
+        "ZW": "0"
+      }
+    }
+  ],
+  "rational_pole_controls": [
+    {
+      "m": 0,
+      "period": "(t - 1)**2",
+      "pole_order": 0
+    },
+    {
+      "m": 1,
+      "period": "-t*(t - 1)",
+      "pole_order": 0
+    },
+    {
+      "m": 2,
+      "period": "t**2",
+      "pole_order": 0
+    },
+    {
+      "m": 3,
+      "period": "-t**3/(t - 1)",
+      "pole_order": 1
+    },
+    {
+      "m": 4,
+      "period": "t**4/(t - 1)**2",
+      "pole_order": 2
+    }
+  ],
+  "rejections": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "universal_claims_use_written_proofs": true,
+  "purity_premise_required": false,
+  "general_unfiltered_safety_implies_purity_resolved": false,
+  "actual_image_kernel_computed": false
+}

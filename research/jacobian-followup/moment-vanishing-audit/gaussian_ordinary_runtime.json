@@ -1,0 +1,26 @@
+{
+  "Macaulay2_version": "1.22",
+  "Dmodules_version": "1.4.1.1",
+  "BernsteinSato_version": "1.0",
+  "Python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "Sympy_version": "1.14.0",
+  "files": {
+    "/usr/bin/M2": "50f74bff4aa1e34093ee70550beee3eacc73ae7dbebd8fb0a406d38dd0576a76",
+    "/usr/share/Macaulay2/Dmodules.m2": "9a224a1e5f00f4053732591e83593fd120edc0acd6cafabb9247466c2aadbf2c",
+    "/usr/share/Macaulay2/BernsteinSato.m2": "2afe39a49bd9617029a030710d211add05b657ea0bc7808c6c6ec92221a07c62",
+    "/usr/share/Macaulay2/Dmodules/Dbasic.m2": "4ba8359b636c5355f1a6784d2e620689c0b89176aa5925a4926eda067f762c0e",
+    "/usr/share/Macaulay2/Dmodules/Gbw.m2": "3f0bb560dbcce272cab282a10f2bcdcd3d420563dda1da29b31d6fddfa67db3e",
+    "/usr/share/Macaulay2/BernsteinSato/DHom.m2": "e28687bf32982467687fb2703598c40180d7d16bd59a7dfd32aaf94a0be082cd",
+    "/usr/share/Macaulay2/BernsteinSato/Drestriction.m2": "ccd099a5698ade5d0283e3f018c00d1108ca9952eae37cf1e00ce8346dc1981a",
+    "/usr/share/Macaulay2/BernsteinSato/Dresolution.m2": "32b2a02c1a9c637a156830198eba21b7166c191b0889fbf1847ddfd083e763b3",
+    "/usr/share/Macaulay2/BernsteinSato/localCohom.m2": "4aa90c52b683143a506e053679fd04c94e6344bf03ad83d957e64f5c1a8fae65",
+    "/usr/share/Macaulay2/BernsteinSato/bFunction.module.m2": "505b959b4add6f98521161229ebdaab95bb35f7aa73fb0db43e2bbe19063c97d",
+    "/usr/share/Macaulay2/PrimaryDecomposition.m2": "3087529198db04fb07b4e23b674aabdb42648c056ad9f60a3afd3b2c2fb68044",
+    "/usr/share/Macaulay2/Elimination.m2": "37b77394f352b2ccf50d54a1c6d808335c12411d160f5301d57483fe9426e844",
+    "/usr/share/Macaulay2/JSON.m2": "5a122cdb47db42aacda13ac0eed6524a24282af388724c755436fcf957aaae9e",
+    "/usr/share/Macaulay2/BernsteinSato/bFunction.ideal.m2": "c7511c3a2f8401f6abbb0574ab98601ba5a3e1486adb67496184c15642ec9975",
+    "/usr/share/Macaulay2/PrimaryDecomposition/GTZ.m2": "bababd249992438c2932e64cef43d10f0ae0fedafe40d0e103a4351465675a69",
+    "/usr/share/Macaulay2/Core/monideal.m2": "39d4d47672c8d6406bde057bdf7175c67f01f1f45b8962030947aef51300d813"
+  },
+  "lock_boundary": "Principal executable/package files and exact SymPy version, not a transitive environment lock. Primary decomposition/status and independent-variable computation use trusted M2; rational polynomial, multiplication table, IBP and jet identities replay in Python."
+}

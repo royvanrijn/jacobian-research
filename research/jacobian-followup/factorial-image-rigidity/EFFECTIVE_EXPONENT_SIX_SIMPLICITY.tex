@@ -1,0 +1,342 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Effective simplicity for the ordinary exponent-six factorial polynomials}
+\author{Internal analytic proof and exact finite certificates; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+Throughout, the Gamma shape is one. Put
+\[
+ P_n(z)=\sum_{k=0}^n\binom nk(6k)!z^{n-k},\qquad
+ F_n(t)=\sum_{k=0}^n\binom nk(6k)!t^k.
+\]
+The overarching goal is to resolve Factorial and/or Strong Factorial.
+The result below concerns only the constant-plus-one-variable-sixth-power
+two-term family. It does not resolve either unrestricted conjecture.
+
+\begin{theorem}\label{thm:main}
+For every integer $n\ge1$, $P_n$ and $F_n$ have only simple complex roots.
+The analytic argument proves this for every $n\ge10000$, with every
+scaled root in $60<|z/n^6|<240$. The finite interval $1\le n<10000$
+is certified exactly by the accompanying modular B\'ezout certificates
+and the previously proved real-place parity lemma.
+\end{theorem}
+\begin{corollary}
+The Strong Factorial assertion holds for $A+BY^6$, for all complex $A,B$
+with a nonzero polynomial, at every starting index.
+\end{corollary}
+\begin{proof}[Reduction to the theorem]
+$P_n(z)=z^nF_n(1/z)$ has nonzero constant term, and
+$P'_{n+1}=(n+1)P_n$. Also
+$\mathcal L((A+BY^6)^n)=B^nP_n(A/B)$ when $B\ne0$.
+Thus consecutive vanishing moments would give a multiple root of
+$P_{n+1}$. The one-term cases are immediate.
+\end{proof}
+
+\section{An effective outer enclosure}
+Write $a_k=\binom nk(6k)!$, $\theta=k/n$. The entropy bound for a
+binomial coefficient and elementary factorial integral bounds give
+\[
+ \binom nk\le\theta^{-k}(1-\theta)^{-(n-k)},\qquad
+ (6k)!\le6ek(6k/e)^{6k},
+\]
+with the endpoint interpreted by continuity. Hence
+\[
+ \frac{a_k^{1/k}}{n^6}
+ \le(6/e)^6q(\theta)(6ek)^{1/k},\qquad
+ q(\theta)=\theta^5(1-\theta)^{-(1-\theta)/\theta}.       \tag{1}
+\]
+For $0<\theta\le1$,
+\[
+                          q(\theta)<300/299.           \tag{2}
+\]
+To see this, the derivative of $\log q$ has numerator
+$6\theta+\log(1-\theta)$, which is positive and then negative with
+exactly one zero $\theta_*$ in $(0,1)$. It is positive at $299/300$,
+since $\log300<299/50$. At its maximum, with $u=1-\theta_*<1/300$,
+\[
+ \log q(\theta_*)=5\log(1-u)+6u<u<1/300.
+\]
+Use $e^{1/300}\le300/299$.
+For clarity, $\log300<299/50$ follows from the entirely rational bound
+$(27/10)^5[1+49/50+(49/50)^2/2]>300$ and $e>27/10$.
+
+For $k\ge1000$, monotonicity of $(6ek)^{1/k}$ gives
+$(6ek)^{1/k}<101/100$, because $(101/100)^{1000}>18000>6000e$.
+Since $e>19/7$,
+\[
+ (6/e)^6(300/299)(101/100)
+ <(42/19)^6(300/299)(101/100)<120.                      \tag{3}
+\]
+For $3\le k<1000$ and $n\ge10000$, the cruder coefficient estimate
+from the \href{EFFECTIVE_SADDLE_ANNULUS.tex}{saddle-annulus note} gives
+\[
+ a_k^{1/k}/n^6<(177147/128)(k/n)^5<120.
+\]
+The cases $k=1,2$ also give $a_k^{1/k}/n^6<120$ for $n\ge10000$;
+indeed $720/3^5<120$ and $\sqrt{12!/2}/3^5<120$ already suffice.
+Thus $a_k^{1/k}<120n^6$ for every coefficient at these indices. The
+geometric-series argument applied to $P_n(z)/z^n$ excludes all
+$|z|\ge240n^6$.
+
+\section{An exact decomposition and the large saddle}
+Put
+\[
+ I_n(w)=\int_0^\infty(w+x^6)^ne^{-nx}\,dx
+       =K_n(w)+J_n(w),
+\]
+where $K_n$ integrates over $[0,3]$ and $J_n$ over $[3,\infty)$.
+Then $P_n(n^6w)=n^{6n+1}I_n(w)$, so multiplicities are unchanged.
+This decomposition is exact, and both pieces are polynomials in $w$.
+
+For $|w|\le250$, there is a unique saddle $s_0=\alpha+i\beta$ with
+$|s_0-6|<\delta=1/25$. Indeed
+$(6-\delta)^5\delta>250$, so Rouch\'e applies to
+$w=s^5(6-s)$. Near this saddle use
+\[
+ \Phi(s,w)=6\log s+\log(1+w/s^6)-s,\quad
+ \Phi_0=\Phi(s_0,w),\quad a=1-5/s_0.
+\]
+The functions are analytic in $w$ on a neighborhood of the closed disk.
+They satisfy
+\[
+ \Phi_s(s_0,w)=0,\quad \Phi_{ss}(s_0,w)=-a,\quad
+ \operatorname{Re}a>1/7,\quad |a|<1/5.                 \tag{4}
+\]
+Writing $G(x)=6\log x-x$ and $S=\operatorname{Re}\Phi_0$,
+\[
+ S-G(6)=5\operatorname{Re}\log(1+(s_0-6)/6)
+          -\operatorname{Re}(s_0-6)>-1/100.             \tag{5}
+\]
+This follows from
+$|\log(1+v)-v|\le|v|^2/[2(1-|v|)]$ and
+$\delta/6+5\delta^2/[72(1-\delta/6)]<1/100$.
+The rational lower bound $\log6>179/100$ gives $S>47/10$.
+
+\begin{lemma}\label{lem:J}
+For every $n\ge10000$ and $|w|\le250$,
+\[
+ J_n(w)=U_n(w)(1+\varepsilon_n(w)),\qquad
+ U_n=e^{n\Phi_0}\sqrt{2\pi/(na)},\qquad
+ |\varepsilon_n|<12/\sqrt n.                           \tag{6}
+\]
+The relative error is analytic on a neighborhood of that closed disk.
+In particular $J_n$ is nonzero there. On $|w|\le240$,
+\[
+ \left|J_n'/J_n-n\frac{6-s_0}{6w}\right|<1,             \tag{7}
+\]
+where the phase derivative at $w=0$ is interpreted by its removable limit.
+\end{lemma}
+\begin{proof}
+Deform $[3,\infty)$ to the vertical segment $[3,3+i\beta]$ followed by
+$[3+i\beta,\infty+i\beta]$. The integrand is entire, and the right side
+of the deformation rectangle vanishes at infinity. Thus all contour
+pieces are retained. Set $r=3/4$ and first integrate horizontally over
+$s=s_0+t$, $|t|\le r$. Here $|s|>5$ and $|w|\le250$ imply
+$|\Phi_{sss}|<1/4$. An explicit series upper bound is
+\[
+ \frac1{125}\left(12+
+ \frac{216x(1+x)}{(1-x)^3}+\frac{108x}{(1-x)^2}
+ +\frac{12x}{1-x}\right)<1/4,\quad x=250/5^6.           \tag{8}
+\]
+Taylor's remainder is therefore at most $|t|^3/24$.
+Since $1/14-r/24=9/224$, the error in replacing this local integral
+by the local Gaussian is at most
+\[
+ \frac{e^{nS}}{24n(9/224)^2}<\frac{26e^{nS}}n.
+\]
+Completing the Gaussian adds at most
+$[56/(3n)]e^{nS-9n/224}<19e^{nS-9n/224}/n$.
+The complete Gaussian is $U_n$, with $|U_n|>5e^{nS}/\sqrt n$.
+
+It remains to bound the entire complement of the local interval.
+For $s=x+i\beta$ and $4\le x\le8$, differentiate the real part of
+$\Phi=6\log s+\log(1+w/s^6)-s$. With $q=250/4^6$ and
+$|\beta|/x\le1/100$,
+\[
+ \frac{d^2}{dx^2}\operatorname{Re}\Phi(x+i\beta,w)
+ \le-\frac1{x^2}\left[
+ \frac{6(1-10^{-4})}{(1+10^{-4})^2}
+ -\frac{36q}{(1-q)^2}-\frac{6q}{1-q}\right]
+ <-\frac3{x^2}\le-\frac3{64}.                         \tag{9}
+\]
+This bound uses only $|w/s^6|\le q<1$, so the logarithmic chart is
+valid throughout the horizontal segment. Its real first derivative at
+$x=\alpha$ vanishes. Consequently, on $[4,8]$,
+\[
+ \operatorname{Re}\Phi(x+i\beta,w)
+ \le S-\frac3{128}(x-\alpha)^2.
+\]
+Outside $|x-\alpha|\le r$, the loss exceeds $1/100$.
+This part contributes at most $4e^{nS-n/100}$.
+
+On $[3,4]$, the upper envelope
+$[250+(x+\delta)^6]e^{-x}$ increases: its derivative has the sign of
+$u^5(6-u)-250>0$, for $u=x+\delta\in[3+\delta,4+\delta]$.
+Its maximum is less than $e^{9/2}$, since
+\[
+ 250+(101/25)^6<(27/10)^8(41/25)<e^{17/2}.
+\]
+Here $e>27/10$ and $(41/25)^2<27/10$.
+This interval contributes at most $e^{nS-n/5}$ by $S>47/10$.
+The vertical segment at $3$ contributes at most
+$\delta e^{nS-n/2}$, since
+$250+(76/25)^6<(27/10)^7<e^7$.
+
+For $x\ge8$, the same chart gives
+\[
+ \frac d{dx}\operatorname{Re}\Phi(x+i\beta,w)
+ \le\frac6{x(1-250/x^6)}-1<-1/5.
+\]
+By (9), its height at eight is at most
+$S-(3/128)(49/25)^2<S-1/20$. Thus this infinite tail contributes
+at most $5e^{nS-n/20}/n$.
+The absolute error after removing $U_n$ is bounded by $e^{nS}$ times
+\[
+ \frac{26}{n}+\frac{19}{n}e^{-9n/224}
+ +4e^{-n/100}+e^{-n/5}+\frac5n e^{-n/20}
+ +\delta e^{-n/2}<\frac{60}{n}\quad(n\ge10000).        \tag{10}
+\]
+For the last inequality, drop the exponentials on the $1/n$ terms
+and use $e^v\ge v^2/2$ on the others; the resulting coefficient is
+$50+(80000+50+8/25)/10000<60$. This proves (6).
+
+Analyticity follows since $J_n$ is a polynomial and $U_n$ is analytic
+and nonzero on a larger disk. Cauchy's estimate on radius-ten circles
+inside $|w|\le250$ gives
+$|\varepsilon_n'|\le12/(10\sqrt n)$ on $|w|\le240$.
+Furthermore
+\[
+ \frac{U_n'}{U_n}=n\frac{6-s_0}{6w}-\frac{a'}{2a},\quad
+ s_0'=\frac1{6s_0^4(5-s_0)},\quad
+ \left|\frac{a'}{2a}\right|<1/1000.
+\]
+The last bound follows from (4), $|s_0|>6-\delta$ and
+$|s_0-5|>1-\delta$. Finally
+\[
+ \frac1{1000}+
+ \frac{12/(10\sqrt n)}{1-12/\sqrt n}<1\quad(n\ge10000),
+\]
+which proves (7).
+\end{proof}
+
+\section{The endpoint and the inner root exclusion}
+\begin{lemma}\label{lem:K}
+For $n\ge10000$ and $|w|\ge50$,
+\[
+ K_n(w)=\frac{w^n}{n}(1+D_n(w)),\qquad
+ |D_n|\le\frac{720\cdot20^7}{50n^5}+e^{-3n}<1/1000,
+ \qquad |D_n'|\le\frac{720\cdot20^7}{2500n^5}<1/1000.   \tag{11}
+\]
+In particular, $K_n$ has no zero there and
+$|K_n'/K_n-n/w|<1$.
+\end{lemma}
+\begin{proof}
+For $0\le x\le3$,
+\[
+                   \log(1+x^6/50)\le19x/20.            \tag{12}
+\]
+Indeed $\log(1+x^6/50)/x$ increases: its derivative has the sign of
+$h(u)=6u/(1+u)-\log(1+u)$, for $0\le u\le729/50$.
+On $[0,5]$, $h'=(5-u)/(1+u)^2\ge0$; above five, use
+$6u/(1+u)\ge5$ and $\log(1+u)<3$. Finally
+$\log(779/50)<57/20$, as certified by
+$(27/10)^2[1+17/20+(17/20)^2/2]>779/50$.
+
+Subtract $n\int_0^\infty e^{-nx}dx=1$ from
+$nK_n/w^n$. The inequality
+$|(1+v)^n-1|\le n|v|(1+|v|)^{n-1}$ and (12) give
+\[
+ |D_n|\le\frac{n^2}{50}\int_0^\infty x^6e^{-nx/20}dx+e^{-3n}.
+\]
+The integral is $720(20/n)^7$. Differentiation under the finite integral
+gives the bound for $D_n'$, with $50$ replaced by $2500$.
+The logarithmic derivative estimate follows directly.
+\end{proof}
+
+For $|w|\le60$, a different absolute bound suffices:
+$|K_n(w)|\le3\cdot60^n$. In fact the maximum of
+$(60+x^6)e^{-x}$ on $[0,3]$ occurs at an endpoint, because
+$x^5(6-x)$ increases there. The endpoint values are $60$ and
+$789e^{-3}<60$. On the other hand Lemma~\ref{lem:J} gives
+\[
+ |J_n(w)|>4e^{nS}/\sqrt n>4\cdot100^n/\sqrt n,
+\]
+using $S>47/10$ and $e^{47/10}>100$.
+Thus $|K_n|<|J_n|$ for $n\ge10000$. For example
+$3\sqrt n(3/5)^n<4$ follows at $n=10000$ by an exact rational
+comparison and then decreases with the integer $n$.
+This excludes every zero with $|w|\le60$.
+
+\section{Every large-index zero is simple}
+By the outer enclosure and the inner exclusion, every zero has
+$60<|w|<240$. On this entire annulus, both $J_n$ and $K_n$ are nonzero.
+At a zero of $I_n=J_n+K_n$, differentiation gives
+\[
+ I_n'=J_n\left(\frac{J_n'}{J_n}-\frac{K_n'}{K_n}\right).
+\]
+The leading logarithmic derivative difference is
+\[
+ n\left(\frac{6-s_0}{6w}-\frac1w\right)
+                     =-\frac{ns_0}{6w}.
+\]
+By Lemmas~\ref{lem:J}--\ref{lem:K},
+\[
+ \left|\frac{J_n'}{J_n}-\frac{K_n'}{K_n}\right|
+ >\frac{5n}{6\cdot240}-2=\frac n{288}-2>0.
+\]
+Hence $I_n'$ is nonzero at every zero, for every $n\ge10000$.
+The exact split at three, rather than an unproved selection of formal
+saddle contributions, supplies the global two-contribution decomposition.
+All estimates apply on full disks or annuli, not just a bulk root region.
+
+\section{Exact verification of the finite prefix}
+The companion checker supplies certificates for $2\le n<10000$;
+$n=1$ is linear. There are two types.
+For $2\le n<30$, use prime $211>6n$. The full-degree reduction of
+$F_n$ has a B\'ezout combination with its derivative of degree at most one.
+For $30\le n<10000$, take the largest prime $q\le n$ and $d=n-q$.
+The exact sieve verifies $q>6\max(1,d)$ in every case (maximum $d=35$).
+The registered shifted-Newton lemma, applied with multiplier one, gives
+$\overline F_n=\overline F_d$ and forces every rational square divisor
+to reduce to a square divisor of $\overline F_d$, preserving its degree.
+The checker supplies a modular B\'ezout combination
+\[
+                U\overline F_d+V\overline F_d'=G,
+                \qquad \deg G\le1.
+\]
+For clarity, the two local inputs can also be read directly. The shifted
+$q$-polygon has a horizontal edge of length $d$ followed by an edge of
+length $q$ and reduced denominator $q$. A square divisor cannot use the
+latter: its doubled occupancy would have to be at least $2q$. Normalize
+a rational square divisor $g$ as a primitive integral polynomial with
+constant term one. Its horizontal polygon then makes its leading
+coefficient a $q$-unit, so its reduction preserves its degree and its
+square divides $\overline F_d$. For the small full-degree reductions,
+$211>6n$ makes the leading coefficient of $F_n$ a unit and also preserves
+every factor degree.
+
+Every real root of $F_n$ is simple. Indeed
+$F_n(t)=\mathbb E(1+tY^6)^n$, for positive exponential $Y$.
+For even $n$ this is strictly positive on the real axis; for odd $n$,
+$F_n'(t)=n\mathbb E[Y^6(1+tY^6)^{n-1}]>0$ there.
+Thus a repeated irreducible rational factor has no real root and has even
+degree. Any complex repeated root supplies such a rational factor, since
+$F_n$ has rational coefficients and characteristic zero.
+A positive square-divisor degree is therefore at least two and contradicts
+the B\'ezout identity of degree at most one after degree-preserving
+reduction. This establishes the entire prefix, not a sample of indices.
+
+The certificate checker verifies every supplied B\'ezout identity, prime
+and degree condition, along with the exact rational constants and symbolic
+identities in the analytic argument. The universal large-index evidence
+is the contour proof, not a finite scan. Independent replay, formal
+verification and external review remain false. No unrestricted SFC,
+higher-dimensional Factorial, other exponent, or other Gamma-shape theorem
+is claimed by this result.
+\end{document}

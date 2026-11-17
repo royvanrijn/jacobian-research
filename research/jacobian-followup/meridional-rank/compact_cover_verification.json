@@ -1,0 +1,341 @@
+{
+  "status": "PASS independent compact common-cover presentations",
+  "targets": [
+    {
+      "name": "13a_129",
+      "presentation": {
+        "generators": [
+          4,
+          6,
+          9
+        ],
+        "relators": [
+          [
+            -9,
+            -9,
+            -6,
+            -9,
+            -9,
+            -6,
+            -9,
+            -9,
+            6
+          ],
+          [
+            -9,
+            -4,
+            -4,
+            -6,
+            -6,
+            -9,
+            -4,
+            -4,
+            -4,
+            -4,
+            -4,
+            -6,
+            -6
+          ],
+          [
+            -9,
+            4,
+            4,
+            4,
+            -6,
+            -6,
+            9,
+            4,
+            4,
+            4,
+            -6,
+            -6,
+            9,
+            -6,
+            -6
+          ]
+        ]
+      },
+      "trace_steps": {
+        "eliminate": 9,
+        "relator_dehn": 3,
+        "automorphism": 5
+      },
+      "abelianization_smith": [
+        1,
+        1,
+        391
+      ],
+      "nonabelian_quotient": {
+        "order": 5616,
+        "generator_permutations": {
+          "4": [
+            5,
+            10,
+            9,
+            2,
+            4,
+            0,
+            6,
+            1,
+            11,
+            8,
+            7,
+            12,
+            3
+          ],
+          "6": [
+            10,
+            0,
+            11,
+            12,
+            4,
+            7,
+            1,
+            5,
+            9,
+            2,
+            6,
+            8,
+            3
+          ],
+          "9": [
+            6,
+            1,
+            9,
+            12,
+            10,
+            3,
+            8,
+            7,
+            2,
+            11,
+            4,
+            0,
+            5
+          ]
+        },
+        "all_original_and_final_relators_pass": true
+      },
+      "graph_network": {
+        "tetrahedral_vertices": [
+          0,
+          3,
+          5,
+          6
+        ],
+        "variable_branch_T_F": [
+          19,
+          14
+        ],
+        "variable_branch_crossings": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "tree_count_coefficients": [
+          11,
+          13
+        ],
+        "tree_count": 391,
+        "scope": "Exact abstract two-terminal graph network; T/F is conductance, not a certified rational-tangle slope."
+      },
+      "actual_rank_interval": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "13a_135",
+      "presentation": {
+        "generators": [
+          4,
+          9,
+          12
+        ],
+        "relators": [
+          [
+            -12,
+            -12,
+            -12,
+            -9,
+            -9,
+            -9,
+            -4,
+            -12,
+            -12,
+            -12,
+            4,
+            4
+          ],
+          [
+            -12,
+            -12,
+            4,
+            4,
+            4,
+            9,
+            9,
+            9,
+            12,
+            4,
+            9,
+            9,
+            9,
+            4,
+            4
+          ],
+          [
+            -9,
+            -9,
+            -9,
+            -9,
+            -9,
+            4,
+            4,
+            -9,
+            -9,
+            4,
+            4
+          ]
+        ]
+      },
+      "trace_steps": {
+        "eliminate": 9,
+        "relator_dehn": 6,
+        "automorphism": 4
+      },
+      "abelianization_smith": [
+        1,
+        1,
+        401
+      ],
+      "nonabelian_quotient": {
+        "order": 5616,
+        "generator_permutations": {
+          "4": [
+            8,
+            11,
+            1,
+            5,
+            2,
+            12,
+            4,
+            7,
+            0,
+            9,
+            6,
+            10,
+            3
+          ],
+          "9": [
+            0,
+            2,
+            1,
+            3,
+            8,
+            7,
+            9,
+            12,
+            11,
+            10,
+            4,
+            6,
+            5
+          ],
+          "12": [
+            8,
+            12,
+            2,
+            4,
+            1,
+            5,
+            11,
+            6,
+            3,
+            10,
+            9,
+            7,
+            0
+          ]
+        },
+        "all_original_and_final_relators_pass": true
+      },
+      "graph_network": {
+        "tetrahedral_vertices": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "variable_branch_T_F": [
+          14,
+          19
+        ],
+        "variable_branch_crossings": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "tree_count_coefficients": [
+          11,
+          13
+        ],
+        "tree_count": 401,
+        "scope": "Exact abstract two-terminal graph network; T/F is conductance, not a certified rational-tangle slope."
+      },
+      "actual_rank_interval": [
+        2,
+        3
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "name": "C3*C3*C3",
+      "generators": 3,
+      "F3_betti": 3,
+      "steps": 0
+    },
+    {
+      "name": "C3*C3",
+      "generators": 2,
+      "F3_betti": 2,
+      "steps": 0
+    },
+    {
+      "name": "rebased_C3*C3_extra_generator",
+      "generators": 2,
+      "F3_betti": 2,
+      "steps": 1
+    }
+  ],
+  "corruptions_rejected": [
+    "wrong solved Tietze word",
+    "noninverse alleged free automorphism",
+    "invalid relator subword replacement",
+    "altered compact final relator",
+    "wrong parallel network boundary"
+  ],
+  "rank3_proved": false,
+  "new_target_closures": 0,
+  "assurance": "Every accepted Tietze, inverse free automorphism and relator replacement is replayed without simplifier imports. Geometric arcs checked via legacy parser only for label transport, disclosed. Core-group identification is the retained classical STW input; mutation transfers only ordinary cover rank. Graph conductances do not certify rational-tangle slopes or JSJ data.",
+  "input_sha256": {
+    "verify_compact_covers.py": "a3791df7d81a6ce3f072cc19bf52efab78395376fae4d91ce0f12dce03770a2f",
+    "compact_cover_results.json": "f8e7cb7b1c1e17e0fe83d006642397c6c26438517cbbaaaa5e3e496253160e88",
+    "compact_cover_plan.json": "d8ed708f21b5d4d2bbf13a66ac518790b120589f1627ca825108d3e365d377c2",
+    "mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18",
+    "mutation_cover_verification.json": "5a925d1c5b9c008156becfe3aae921ceb87699f1ed0355cee06c055c8b7c3ec1",
+    "ternary_cover_module_results.json": "aac00533b2f3fb30a75afcd0f73945d2aa456eaa76d9999e551559cf39968f27",
+    "ternary_cover_module_verification.json": "24c9f9b2b3046313f0916280e5e1ebc00e8d7b98c44bb6ec9b668377a59815af",
+    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+  }
+}

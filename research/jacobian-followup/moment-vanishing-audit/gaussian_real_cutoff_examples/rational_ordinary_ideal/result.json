@@ -1,0 +1,103 @@
+{
+  "status": "UNKNOWN",
+  "input": {
+    "dimension": 2,
+    "parameter_count": 1,
+    "phase_terms": [
+      [
+        [
+          2,
+          0,
+          1
+        ],
+        "1"
+      ]
+    ],
+    "precision_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "C": "1/4",
+  "E": "0",
+  "clock_degree": 4,
+  "underlying_result": {
+    "status": "UNKNOWN",
+    "reason": "ordinary coefficient ideal timeout",
+    "input": {
+      "dimension": 4,
+      "parameter_count": 1,
+      "phase_terms": [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            3,
+            0,
+            2,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      "parameter_ideal": [],
+      "precision_matrix": [
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      ]
+    },
+    "cutoff_slope": 1,
+    "cutoff_intercept": 0,
+    "pure_moments_only": false,
+    "completed_strict_ascent": [
+      {
+        "proposed_ideal": [],
+        "oracle": {
+          "status": "UNKNOWN",
+          "reason": "ordinary coefficient oracle timeout"
+        }
+      }
+    ],
+    "original_generating_moments": []
+  },
+  "ideal_lift": null,
+  "retains_ordinary_nilpotents": true,
+  "equality_basis": "exact monomial-clock ordinary ideal law,not radical equality"
+}

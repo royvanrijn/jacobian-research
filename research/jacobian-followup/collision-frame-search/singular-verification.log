@@ -1,0 +1,130 @@
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/verify_singular.py", line 167, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/verify_singular.py", line 162, in main
+    family,projection=projection_check(folder)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/verify_singular.py", line 79, in projection_check
+    output=checked_run("\n".join(lines)+"\n",folder/"singular-replay/projection.sing")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/verify_singular.py", line 29, in checked_run
+    assert result.returncode==0 and "FAIL|" not in result.stdout and "error" not in result.stdout.lower(),result.stdout[-3000:]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError:    ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/projection.sing line 6: `39*w^3/19932318 - 566837191*w^2/67797 - 1435151740*w/474579 - 77180468/158193;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `Projection` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/projection.sing line 7: `list fact0=factorize(Projection[1]);`
+   ? `fact0` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/projection.sing line 8: `ideal ip0=fact0[1];`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `ip0` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/projection.sing line 9: `forif (!(k<=size(ip0))) break;`
+FAIL|projection irreducibility 0
+
+{"family": "collision-frame-search", "verified": 25, "total": 469}
+{"family": "collision-frame-search", "verified": 50, "total": 469}
+{"family": "collision-frame-search", "verified": 75, "total": 469}
+{"family": "collision-frame-search", "verified": 100, "total": 469}
+{"family": "collision-frame-search", "verified": 125, "total": 469}
+{"family": "collision-frame-search", "verified": 150, "total": 469}
+{"family": "collision-frame-search", "verified": 175, "total": 469}
+{"family": "collision-frame-search", "verified": 200, "total": 469}
+{"family": "collision-frame-search", "verified": 225, "total": 469}
+{"family": "collision-frame-search", "verified": 250, "total": 469}
+{"family": "collision-frame-search", "verified": 275, "total": 469}
+{"family": "collision-frame-search", "verified": 300, "total": 469}
+{"family": "collision-frame-search", "verified": 325, "total": 469}
+{"family": "collision-frame-search", "verified": 350, "total": 469}
+{"family": "collision-frame-search", "verified": 375, "total": 469}
+{"family": "collision-frame-search", "verified": 400, "total": 469}
+{"family": "collision-frame-search", "verified": 425, "total": 469}
+{"family": "collision-frame-search", "verified": 450, "total": 469}
+{"family": "collision-frame-search", "verified": 469, "total": 469}
+{"family": "full-transverse", "verified": 25, "total": 824}
+{"family": "full-transverse", "verified": 50, "total": 824}
+{"family": "full-transverse", "verified": 75, "total": 824}
+{"family": "full-transverse", "verified": 100, "total": 824}
+{"family": "full-transverse", "verified": 125, "total": 824}
+{"family": "full-transverse", "verified": 150, "total": 824}
+{"family": "full-transverse", "verified": 175, "total": 824}
+{"family": "full-transverse", "verified": 200, "total": 824}
+{"family": "full-transverse", "verified": 225, "total": 824}
+{"family": "full-transverse", "verified": 250, "total": 824}
+{"family": "full-transverse", "verified": 275, "total": 824}
+{"family": "full-transverse", "verified": 300, "total": 824}
+{"family": "full-transverse", "verified": 325, "total": 824}
+{"family": "full-transverse", "verified": 350, "total": 824}
+{"family": "full-transverse", "verified": 375, "total": 824}
+{"family": "full-transverse", "verified": 400, "total": 824}
+{"family": "full-transverse", "verified": 425, "total": 824}
+{"family": "full-transverse", "verified": 450, "total": 824}
+{"family": "full-transverse", "verified": 475, "total": 824}
+{"family": "full-transverse", "verified": 500, "total": 824}
+{"family": "full-transverse", "verified": 525, "total": 824}
+{"family": "full-transverse", "verified": 550, "total": 824}
+{"family": "full-transverse", "verified": 575, "total": 824}
+{"family": "full-transverse", "verified": 600, "total": 824}
+{"family": "full-transverse", "verified": 625, "total": 824}
+{"family": "full-transverse", "verified": 650, "total": 824}
+{"family": "full-transverse", "verified": 675, "total": 824}
+{"family": "full-transverse", "verified": 700, "total": 824}
+{"family": "full-transverse", "verified": 725, "total": 824}
+{"family": "full-transverse", "verified": 750, "total": 824}
+{"family": "full-transverse", "verified": 775, "total": 824}
+{"family": "full-transverse", "verified": 800, "total": 824}
+{"family": "full-transverse", "verified": 824, "total": 824}
+{"family": "collision-frame-search", "verified": 25, "total": 469}
+{"family": "collision-frame-search", "verified": 50, "total": 469}
+{"family": "collision-frame-search", "verified": 75, "total": 469}
+{"family": "collision-frame-search", "verified": 100, "total": 469}
+{"family": "collision-frame-search", "verified": 125, "total": 469}
+{"family": "collision-frame-search", "verified": 150, "total": 469}
+{"family": "collision-frame-search", "verified": 175, "total": 469}
+{"family": "collision-frame-search", "verified": 200, "total": 469}
+{"family": "collision-frame-search", "verified": 225, "total": 469}
+{"family": "collision-frame-search", "verified": 250, "total": 469}
+{"family": "collision-frame-search", "verified": 275, "total": 469}
+{"family": "collision-frame-search", "verified": 300, "total": 469}
+{"family": "collision-frame-search", "verified": 325, "total": 469}
+{"family": "collision-frame-search", "verified": 350, "total": 469}
+{"family": "collision-frame-search", "verified": 375, "total": 469}
+{"family": "collision-frame-search", "verified": 400, "total": 469}
+{"family": "collision-frame-search", "verified": 425, "total": 469}
+{"family": "collision-frame-search", "verified": 450, "total": 469}
+{"family": "collision-frame-search", "verified": 469, "total": 469}
+{"family": "full-transverse", "verified": 25, "total": 824}
+{"family": "full-transverse", "verified": 50, "total": 824}
+{"family": "full-transverse", "verified": 75, "total": 824}
+{"family": "full-transverse", "verified": 100, "total": 824}
+{"family": "full-transverse", "verified": 125, "total": 824}
+{"family": "full-transverse", "verified": 150, "total": 824}
+{"family": "full-transverse", "verified": 175, "total": 824}
+{"family": "full-transverse", "verified": 200, "total": 824}
+{"family": "full-transverse", "verified": 225, "total": 824}
+{"family": "full-transverse", "verified": 250, "total": 824}
+{"family": "full-transverse", "verified": 275, "total": 824}
+{"family": "full-transverse", "verified": 300, "total": 824}
+{"family": "full-transverse", "verified": 325, "total": 824}
+{"family": "full-transverse", "verified": 350, "total": 824}
+{"family": "full-transverse", "verified": 375, "total": 824}
+{"family": "full-transverse", "verified": 400, "total": 824}
+{"family": "full-transverse", "verified": 425, "total": 824}
+{"family": "full-transverse", "verified": 450, "total": 824}
+{"family": "full-transverse", "verified": 475, "total": 824}
+{"family": "full-transverse", "verified": 500, "total": 824}
+{"family": "full-transverse", "verified": 525, "total": 824}
+{"family": "full-transverse", "verified": 550, "total": 824}
+{"family": "full-transverse", "verified": 575, "total": 824}
+{"family": "full-transverse", "verified": 600, "total": 824}
+{"family": "full-transverse", "verified": 625, "total": 824}
+{"family": "full-transverse", "verified": 650, "total": 824}
+{"family": "full-transverse", "verified": 675, "total": 824}
+{"family": "full-transverse", "verified": 700, "total": 824}
+{"family": "full-transverse", "verified": 725, "total": 824}
+{"family": "full-transverse", "verified": 750, "total": 824}
+{"family": "full-transverse", "verified": 775, "total": 824}
+{"family": "full-transverse", "verified": 800, "total": 824}
+{"family": "full-transverse", "verified": 824, "total": 824}

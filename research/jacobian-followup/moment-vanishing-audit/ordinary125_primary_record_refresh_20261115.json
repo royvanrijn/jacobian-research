@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-15",
+  "read_scope": "Primary abstract records and complete visible submission histories only; no fresh body read or exhaustive search asserted.",
+  "records": [
+    {
+      "url": "https://arxiv.org/abs/2607.18186",
+      "title": "Small Counterexamples to the Gaussian Moments Conjecture",
+      "authors": [
+        "Christopher D. Long"
+      ],
+      "latest_visible_version": "v1",
+      "submission_history": [
+        "20 July 2026,17:24:43 UTC"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.07338",
+      "title": "An Explicit Five-Variable Counterexample to the Generalized Vanishing Conjecture",
+      "authors": [
+        "Alexander Dvorsky"
+      ],
+      "latest_visible_version": "v1",
+      "submission_history": [
+        "7 August 2026,15:33:13 UTC"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.16157",
+      "title": "Cubic moments of eigenfunctions on surfaces",
+      "authors": [
+        "Xing Wang",
+        "Cheng Zhang"
+      ],
+      "latest_visible_version": "v1",
+      "submission_history": [
+        "12 October 2026,04:31:22 UTC"
+      ]
+    }
+  ],
+  "consequence": "No new revision identified in these selected records; retained polynomial/spectral scope separation and previous selected body-read coverage unchanged. No theorem imported."
+}

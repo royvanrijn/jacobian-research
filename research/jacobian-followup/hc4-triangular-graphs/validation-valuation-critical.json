@@ -1,0 +1,92 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYIC0 schema, source, dependencies, locks, checker hash and assurance",
+    "HC4MYIC1 schema, source, dependencies, locks, checker hash and assurance",
+    "HC4MYIC2 schema, source, dependencies, locks, checker hash and assurance",
+    "combined valuation orders, normalized rational label, explicit nonproperness input and complementary cubic gates have exact scopes",
+    "open parent retires coprime leading drops and the newly closed S3 families while keeping the affine-line critical residual",
+    "forty-nine method records have current fingerprints and preserve root/critical discriminants and A1/rational distinctions",
+    "WORK-HC4-SCHUR records the valuation and critical-curve gates and the residual label problem",
+    "WORK-HC4-RESIDUAL-AUDIT records the valuation and critical-curve gates and the residual label problem",
+    "current and four retained receipts match every proof, checker and mathematical input byte pin",
+    "fifty-three finite controls accompany the unrestricted proofs with a qualitative nonproperness import and retained Hurwitz input",
+    "proof, replay, primary import and local navigation links and whitespace are valid"
+  ],
+  "new_claims": [
+    "HC4MYIC0",
+    "HC4MYIC1",
+    "HC4MYIC2"
+  ],
+  "previous_goal_turn_classification": "progress: arbitrary Galois-intermediate exclusion, exact free normalization-boundary class basis and subnormal class-stabilizer output gate",
+  "current_progress": "All-degree leading-drop factor divisibility and combined-gcd irreducibility; rational labels force A1 normalization of every normalized critical component and independent unit classes for rational critical branches; new nonmonic S3 cubic families close through critical discriminant or an independent no-pole gate, with unbounded parameter degrees.",
+  "exact_current_replay_checks": 53,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-normal-boundary.json": 45,
+    "receipt-nilpotent-covers.json": 46,
+    "receipt-leading-fibre.json": 43,
+    "receipt-monic-covers.json": 48
+  },
+  "generated_views_refreshed": [],
+  "new_primary_theorem_imports": [
+    "Jelonek-Lason arXiv:1411.5011v2 Theorem 3.2, qualitative polynomial parametrization of nonproperness sets; Definitions 2.1/2.3 and Proposition 2.2"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "remaining_frontier": [
+    "nonmonic cubics with a rational label, S3 group, critical D=b^2-3ac of square-free degree at most one and positive localized-unit defect (at least two when D is a nonzero square), failing the independent no-pole and older gates",
+    "higher-degree intransitive factorizations whose degrees survive all available leading-order divisibility constraints",
+    "rational-label cases with all normalized critical components of affine-line type",
+    "other output geometries and actual unit-Hessian parameterizations in the singleton and coordinate source orbits",
+    "both plane endpoints and unrestricted HC4/JC2"
+  ],
+  "nonproperness_parametric_curve_theorem_fully_reproved": false,
+  "primary_nonproperness_degree_bound_used": false,
+  "critical_discriminant_confused_with_cubic_root_discriminant": false,
+  "rational_root_exclusion_asserted_full_irreducibility_in_arbitrary_degree": false,
+  "all_nonmonic_cubic_outputs_asserted_closed": false,
+  "all_Keller_component_fibres_asserted_irreducible": false,
+  "full_splitting_group_preservation_asserted": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "command": "make render-navigation",
+      "chunk_id": "33d772",
+      "wall_time_seconds": 0.3391211,
+      "exit_code": 1,
+      "original_token_count": 242,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "command": "make check-navigation",
+      "chunk_id": "a353b8",
+      "wall_time_seconds": 0.3433288,
+      "exit_code": 1,
+      "original_token_count": 213,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "chunk_id": "017547",
+      "wall_time_seconds": 0.1330884,
+      "exit_code": 1,
+      "original_token_count": 180,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "command": "git diff --check -- research/MATH_STATUS.json research/knowledge/lessons.json research/knowledge/work_items.json research/jacobian-followup/hc4-triangular-graphs/README.md research/index research/knowledge/work research/knowledge/WORK_LEDGER.md research/STATUS.md",
+      "chunk_id": "ddc464",
+      "wall_time_seconds": 0.1621366,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "scoped_diff_whitespace_check": "PASS"
+}

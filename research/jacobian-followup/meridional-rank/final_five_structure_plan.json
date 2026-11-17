@@ -1,0 +1,10 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "targets":["13a_234","13a_242","13a_243","13a_244","13a_265"],
+  "controls":["13a_233","13a_239","13a_253"],
+  "motivation":"The preceding three source roots have sharp rank3 double-cover models by a peripheral filling obstruction, but all five proposed prefix-based transfers fail with unequal determinants. Inspect each remaining literal PD directly; do not transfer rank from prefixes or matching invariants.",
+  "method":"For each of the eight literal source PDs, construct checkerboard graphs and the normalized full core presentation, recording every exact simplifier move and both generator maps. Enumerate all balanced crossing partitions of sizes6/7 containing crossing0, with exactly4boundary labels and both crossing subgraphs connected. Retain the deterministic order from the preceding small audit, simplify at most16cuts per source, and keep each fragment arc class, crossing, raw relation and full trace. Controls must reproduce their previous full and selected fragment presentations. No rank or topology claim from presentation lengths or piece counts alone. A later frozen model audit must supply exact primitive boundary maps, canonical JSJ, BW case6 filling obstruction or an exact rank2 upper.",
+  "limits":{"source_PD_count":8,"candidate_partitions_each":1716,"fragment_cuts_reduced_each":16,"seconds_per_group":10,"seconds_per_source":20,"seconds_total":150,"maximum_steps":1000,"maximum_intermediate_total_length":100000,"maximum_automorphism_rank":3,"checkpoint_each_source":true},
+  "acceptance":"Independent geometric arc reconstruction and exact presentation replay required. A cap, local minimum or failed model proves no rank lower bound. No five-name mutation/group transfer without an actual certificate. No reuse of a negative full-module search as a rank2 conclusion.",
+  "scope":"Only five remaining original targets and three known positive controls. Preserve all previous proofs and failed transfers. No broad293 panel, no repeated quotient/module campaign, no worldwide novelty/priority or full-MRC closure from this audit."
+}

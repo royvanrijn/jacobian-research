@@ -1,0 +1,1406 @@
+On the Incompatability of Diophantine Equations Arising from the
+                                  Strong Factorial Conjecture
+
+                                                Brady Rocksa,1,∗
+
+  aDepartment of Mathematics, Washington University in St.  Louis, St.  Louis, MO 63130, United States
+
+
+
+
+Abstract
+In the present article, we establish new evidence in support of the Strong Factorial Conjecture
+of Edo and van den Essen [5] by proving it in several special cases.  In particular, we establish
+in Theorem 3.3 that powers of linear forms satisfy the conjecture and in Theorem 3.10 we
+also establish that sums of prime powers of variables also satisfy the conjecture.  In addition,
+Theorem  3.12  is  a  novel  result  which  shows  how  to  build  new  examples  of  polynomials
+satisfying the conjecture from known examples.  Finally, we we use the theory of resultants
+and Newton polygons to study the case whereF  is the sum of two monomials and prove the
+conjecture in some special cases and provide many partial results for others.
+Keywords:   Polynomial automorphisms, Jacobian Conjecture, Factorial Conjecture,
+Rigidity Conjecture, Newton Polygons, Irreducible Polynomials
+
+
+1.  Introduction
+    A problem of growing interest related to the famous Jacobian Conjecture (see [12] for
+a detailed account of this problem) is the Factorial Conjecture introduced in [13].  If true,
+the  result  would  provide  substantial  evidence  in  support  of  Zhao’s  Image  Conjecture  [14,
+Conjecture 1.3] which is known to imply the Jacobian Conjecture [14, Theorem 3.7].
+    Recently, in [5], Edo and van den Essen discovered a connection between the Factorial
+Conjecture [13] and the Rigidity Conjecture of Furter [6] which is known to imply the Length
+2 Polydegree Conjecture [6, Theorem 3].  As a result, Edo and Essen formulated the Strong
+Factorial Conjecture [5].
+    It is precisely because of its links to some of the most outstanding problems in the ﬁeld
+of Aﬃne Algebraic Geometry (those mentioned above) that the Strong Factorial Conjecture
+merits an investigation.
+    In Section 3 we prove that the Strong Factorial Conjecture holds in several special cases.
+In particular, we establish the conjecture for powers of linear forms and sums of prime powers
+of variables.  In addition, we provide a novel result which shows how to build new examples
+of  polynomials  satisfying  the  conjecture  from  old.   Finally,  using  the  theory  of  resultants
+and  Newton  Polygons  we  study  the  conjecture  for  polynomials  that  are  the  sum  of  two
+
+
+
+   ∗Corresponding author.
+    Email address:  rocks@maiboxl.sc.edu (Brady Rocks)
+   1Present Address:  Department of Mathematics, University of South Carolina, Columbia, SC 29208
+
+
+
+Preprint submitted to Journal of Algebra                                                                              September 6, 2015
+
+monomials by ﬁrst showing how the problem can be tackled by studying the solution sets of
+certain systems of diophantine equations.
+
+1.1.  Notation
+    The following notation and conventions will be in eﬀect throughout the rest of the article:
+
+   1.  Given a positive integer m we denote by C[m] = C [Z1,...,Zm] the C-algebra of com-
+      plex  polynomials  in m  variables.   Unless  otherwise  speciﬁed, Z  denotes  the  vector
+      (Z1,...,Zm).
+
+   2.  Given α = (α1,...,αm)∈ Nm we set|α| =∑mi=1αi.  We also denote by Zα and α! the
+                  m∏
+      products                    i=1αi!, respectively.
+                  i=1Zαii   and∏m
+   3.  Given α∈ Nm we denote by(|α|) the multinomial coeﬃcient.  That is,(|α|) =|α|!
+                                           α                                                 α       α! .
+
+   4.  For  any m-tuple H  =  (H1,...,Hm)  of  polynomials Hi∈ C[m]  and  any α∈ Nm  we
+      write Hα to denote the product∏mi=1Hαii  .
+
+   5.  IfG = (G1,...,Gm) is anotherm-tuple of elements of C[m] then we writeH∗G to de-
+      note them-tuple obtained by componentwise multiplication, i.e.,H∗G = (H1G1,...,HmGm).
+
+   6.  Given F∈ C[m] we denote byN (F ) the number of monomials that appear in F  with
+      a nonzero coeﬃcient.
+
+   7.  Given a ﬁeldK and a subsetS⊂∈K[m] we setZ(S) ={λ∈Km :F (λ) = 0 for all F∈S}.
+
+1.2.  The Strong Factorial Conjecture
+    Let us recall the deﬁnition of the factorial map (see [13, Deﬁnition 1.2]):
+
+Deﬁnition 1.1.  We denote byL the C-linear functional on C[m] deﬁned byL (Zα) =α!.
+
+Remark 1.2.  If we letDm denote the non-negative m-tantZ1≥ 0,...,Zm≥ 0 in Rm then
+for F∈ C[m]L(F ) can be realized as
+                                                   ∫
+                                         L(F ) =
+                                                    DmFe−|Z|dZ
+where dZ =dZ1···dZm and|Z| =Z1 +··· +Zm.
+
+Remark 1.3.  Let⟨·,·⟩ denote the Hermitian inner product deﬁned on C[m] by
+                                              ∫
+                                   ⟨F,G⟩ =                G(Z)e−|Z|dZ
+                                                DmF (Z)
+
+We  note  that  this  restricts  to  a  positive  deﬁnite  form  on R[m].   In  particular,  we  have
+L (F 2n)  =⟨Fn,Fn⟩  for  all n≥  1  and  for  all F ∈ R[m].   Moreover,L (F 2n) >  0  for  all
+n≥ 1 if F∈ R[m]\{0}.
+
+                                                      2
+
+Remark 1.4.  The mapL is not compatible with multiplication.  However, if F,G∈ C[m]
+are two polynomials such that there exists an I⊂{1,...,m} such that F∈ C [Zi : i∈I]
+and G∈ C [Zi : i /∈I] thenL(FG) =L(F )L(G).
+    We also recall the Factorial Conjecture [13, Conjecture 4.2].
+Conjeture 1.5 (Factorial Conjecture). Letm be a positive integer andF∈ C[m].  IfL (Fn) =
+0 for all n≥ 1 then F  = 0.
+    The  conjecture  remains  open  in  all  dimensions  greater  than  one.   To  give  a  stronger
+version of this conjecture, the authors of [5] introduced the following subsets of C[m]:
+Deﬁnition 1.6.  For all positive integers n we set
+
+          Fmn  ={F∈ C[m]\{0}|∃n≤k≤n +N (F )− 1 withL(Fk)⁄= 0}∪{0}.
+
+We deﬁne the strong factorial set as:
+
+                                               Fm =⋂       Fmn .
+                                                       n≥1
+
+We now recall the Strong Factorial Conjecture:
+Conjeture 1.7 (Strong Factorial Conjecture).Fm = C[m]  for all positive integers m.
+Remark 1.8. A non-zeroF∈ C[m] belongs to the strong factorial set if and only if for each
+positive integer n there exists 0≤i≤N (F )− 1 such thatL (Fn+i)⁄= 0.
+    The conjecture remains open in all dimensions.
+
+1.3.  The Strong Factorial Conjecture and Diophantine Eqautions
+    In  this  section  we  ﬁx  an  integer d≥  2  and  monomials M1,...,Md ∈ C[m].   In  order
+to  study  Conjecture  1.7  we  ask  whether  there  exists  a  non-zero  polynomial  of  the  form
+        d∑
+F  =
+       i=0λiZi  and  a  positive  integer n  such  that  one  ofL (Fn+i),  0≤ i≤N (F )− 1,  is
+non-zero.  If we we think ofλ1,...,λd as variables then for every positive integern the image
+L (Fn) is a homogeneous integer polynomial in the variables λ1,...,λd of degree n.
+Deﬁnition  1.9.  Given  a  positive  integers n ≥  1,  monomials M1,...,Md ∈ C[m]  and  a
+                                                                                 d∑
+non-zero multi-variate complex polynomial of the form F  =F  =
+                                                                                i=0λiZi we set
+
+                  Sn,F  ={L(Fn+i)| 0≤i≤n +N (F )− 1}⊂ Z [λi| λi⁄= 0].
+
+It  follows  from  the  preceeding  remarks  that F ∈Fmn   if  and  only  ifZ (Sn,F )  ={⃗0}.   By
+the Nullstellensatz,Z (Sn,F )  ={⃗0} if and only if Sn,F  generates a homogoeneous ideal of
+Q [λi| λi⁄= 0] whose radical is equal to the maximum homogeneous ideal.
+    The previous paragraph shows that Conjecture 1.7 can be viewed as an assertion about
+the  incompatibility  of  certain  systems  of  diophantine  equations  arising  from  the  factorial
+map.  It is this viewpoint that made it possible to obtain the main results of this article.
+
+                                                       3
+
+2.  Preliminaries
+    In this section we collect some basic facts and tools that will be used in the proofs of
+our main results.  Both the resultant and Newton polygon have been valuable tools for the
+studying Conjecture 1.7 in the case F  is a sum of two monomials.
+
+2.1.  Univarite Resultant
+    Throughout this section R will denote a UFD and f,g∈k[x] will denote polynomials of
+degree t> 0 and s> 0, respectively.  Write f  and g as
+
+                                              f =asxr +··· +a0
+                                              g =btxn +··· +b0                                                  (2.1)
+
+For  any l >  0  let Sl  denote  the R-module  of  polynomials  of  degree  at  most l.    The
+Sylvester  matrix  of f  and g,  denoted  by  Syl(f,g,x),  is  the  matrix  of  the  linear  trans-
+formation Ss−1⨁St−1 → Ss+t−1  deﬁned  by  (A,B)→ Af  +Bg  with  respect  to  the  or-
+dered bases{(xn−1, 0),..., (1, 0), (0,xm−1),..., (0, 1)} and{xm+n−1,..., 1}.  For example, if
+f = 1 + 2x + 3x2 and g =x + 3x3 then
+                                                        3   0   0   3   0  
+                                                      2   3   0   0   3.
+                                    Syl(f,g,x) =         1   2   3   1   0
+                                                         0   1   2   0   1
+                                                         0   0   1   0   0
+
+Deﬁnition 2.1. Givenf andg as in (2.1) the resultant off andg with respect tox, denoted
+by Res(f,g,x), is the determinant of Syl(f,g,x).
+    The following facts about the resultant are well known; see, for example, [3, 7].
+Proposition 2.2.  Let f,g  be as in  (2.1).  Then:
+  (i)  Res(f,g,x) = 0 if and only if f  and g  have no irreducible factors in common.
+ (ii)  Denote  by k  the  algebraic  closure  of  the  quotient  ﬁeld  of R.   If α1,...,αs ∈ k  and
+      β1,...,βt∈k  are the roots of f  and g, respectively, then
+                                         Res(f,g,x) =asrbrs     ∏    (αi−βj).
+
+
+                                                                 i,j
+
+(iii)  Res(f,g,x) = (−1)st Res(g,f,x).
+
+(iv)  Suppose s≥ t.  Write f  = qg +r  for  some  polynomials q  and r  with deg(r) = u < t.
+      Then Res(f,g,x) =bs−ut     Res(r,g,x).
+ (v)  Res(xl,g,x) =g(0)l  for all l≥ 1.
+(vi)  If h∈R[x] then Res(fh,g,x) = Res(f,g,x)· Res(h,g).
+
+(vii)  If λ∈R∗  then Res(f(λx),g(λx),x) =λst Res(f,g,x).
+
+                                                         4
+
+2.2.  The Newton Polygon
+    Let f(x) =∑ni=0aixi∈ Z[x] with a0an⁄= 0.  Let p be a prime.  For an integer j⁄= 0, we
+denote by νp(j) the exponent in the largest power of p dividing j.  We deﬁne νp(0) = +∞.
+LetS denote the set of points (i,νp (ai)), for 0≤i≤n, in the extended plane.  The Newton
+polygon of f  with respect to the prime p is the polygonal path along the lower edges of the
+convex hull of S  from (0,νp (a0), and the right-most edge has (n,νp (a0).  The endpoints of
+every edge belong to S, and each edge has a distinct slope that increases as we move along
+the polygonal path from left to right.
+    The following theorem, due to G. Dumas [4], connects the Newton polygon of f(x) to
+the Newton polyogns of it’s factors.
+
+Theorem  2.3.  Let g(x),h(x)∈ Z[x]  with g(0)h(0)⁄=  0,  and  let p  be  a  prime.   Let k  =
+νp(g(0)h(0).   Then  the  edges  of  the  Newton  polygon  for f(x) = g(x)h(x)  with  respect  to p
+can be formed by constructing a polygonal path beggining at (0,k) and using translates of the
+edges in the Newton polygons forg(x) andh(x) with respect to the primep, using exactly one
+translate for each edge of the Newton polygons for g(x) and h(x).  Necessarily, the translated
+edges  are  translated  in  such  a  way  as  to  form  a  polygonal  path  with  the  slopes  of  the  edges
+increasing as we move left to right.
+
+    The above theorem yields the following useful corrollaries that we will use later on (the
+proofs of which can be found in [9]).
+
+Corollary 2.4.  Let f(x) =∑ni=0aixi∈ Z[x] with a0an⁄= 0, and let p be a prime.  If the lat-
+tice points along the edges of the Newton polygon off(x) with respect top are (a1,b1),..., (ar,br)
+and di =ai−ai−1 for 1≤i≤r, then the set{1,...,r} can be written as a disjoint union of
+sets S1,...,St  where t  is  the  number  of  irreducible  factors  of f(x)  (counted  with  multiplic-
+ities)  and  the t  numbers ∑
+                                u∈Sidu,  for 1≤ i≤ t,  are  the  degrees  of  the  irreducible  factors  of
+f(x).2
+
+Corollary 2.5.  Let f(x) =∑ni=0aixi∈ Z[x] with a0an⁄= 0, and let p be a prime.  If d is a
+positive  integer  that  divides  the  denominator  of  each  slope  (in  lowest  terms)  of  the  Newton
+polygon of f  with respect to p then d divides the degree of each irreducible factor of f.
+
+Corollary 2.6.  Let f(x) =∑ni=0aixi, g(x) =∑li=0bixi  with a0an, b0bl⁄= 0,  and  let p  be  a
+prime.   If  the  slopes  of  the  Newton  polygon  of f(x)  with  respect  to p  are  distinct  from  the
+slopes of the Newton polygon of g  with respect to p then f(x) and g(x) are relatively prime.
+
+Remark 2.7.  The above theorem and its consequences hold in much more generality.  For
+example, the functionnp can be extended to Q and therefore Z[x] can be replaced with Q[x]
+in the above results.  Moreover, Z can also be replaced by any UFD.
+
+
+
+   2It is important to consider all lattice points along the edges and not just points of the form (i,νp (ai)).
+
+
+
+
+
+
+                                                         5
+
+3.  Main Results
+
+    In this section we present new evidence in support of the Strong Factorial Conjecture
+by proving it in several special cases.  First, we show that powers of linear forms satisfy the
+conjecture.  As a consequence, we extend this result to all linear polynomials.  Secondly, we
+show that sums of prime powers of the variables (each exponent involves the same prime)
+also  satisfy  the  conjecture.   Thirdly,  we  prove  a  novel  result  which  shows  one  instance  of
+how to uild new examples of poynomials satisfying the conjecture using known examples.
+Finally, we study the conjecture for polynomials that are the sum of two monomials.  Using
+the theory of resultants and Newton polygons we obtain several partial results and indicate
+how one might solve these cases completely.
+
+3.1.  Powers of Linear Forms
+    In this section we consider the following general polynomial:
+
+                                                          m∑
+                                              G(Z) =         λiZi                                                    (3.1)
+                                                         i=0
+whereλ = (λ1,...,λm)∈ Cn.  It was shown in [13] thatGr satisﬁes the Factorial Conjecture
+for all positive integers r  and m.  In the present article, we extend this result by showing
+that Gr satisﬁes the Strong Factorial Conjecture for all positive integers r and m.
+    Let x = (x1,...,xm) be m commuting variables.  The following two families of polyno-
+mials will be of use to us.
+
+Deﬁnition 3.1. LetK be a ﬁeld.  The complete homogeneous symmetric polynomial
+hn,m(x) of degree n≥ 0 in m variables is deﬁned by
+
+                                          hn,m(x) =  ∑             xα
+                                                       α∈Nm,|α|=n
+
+When n = 0 it should be understood that h0,m(x) = 1.
+
+Deﬁnition 3.2.  Let m be a positive integer and let K  be a ﬁeld.  For 1≤ k≤ m the kth
+elementary symmetric polynomial in m variables over K is given by
+
+                                                                   m∏
+                                       ek,m(x) =   ∑                  xijj
+                                                   1≤i1<···<ik≤m  j=1
+
+When k = 0 we set e0,m(x) = 1.
+
+    The  polynomials hn,m(x)  and ek,m(x)  are  related  to  each  other  in  the  following  way:
+                                                         m∏
+Let U  be an indeterminate and set P (U) =
+                                                        i=1 (1−xiU)∈ (K[x])[U].  Then P (U) has a
+mulitplicative  inverse  belonging  to K[x][[U]]  (since  its  constant  coeﬃcient  is  equal  to  1).
+
+
+
+
+                                                       6
+
+Furthermore, we have
+
+                                                    m∑
+                                         P (U) =       (−1)kek,m(x)Uk                                         (3.2)
+                                                   k=0
+                                                    ∞∑
+                                      P (U)−1 =         hn,m(x)Un                                                 (3.3)
+                                                   n=0
+
+From the equality P (U)P (U)−1  = 1 one obtains the following relation which holds for all
+n≥ 1 (with the caveat hn,m = 0 for n< 0).
+
+                                           m∑
+                                              (−1)kek,mhn−k,m = 0                                              (3.4)
+                                          k=0
+Theorem 3.3.  Let G  be  given  as  in  (3.1),  and  set F  = Gr  where r≥  1.   If  there  exists
+n≥ 1 such thatL (Fn+i) = 0 for each i∈{0, 1,...,m− 1} then F  = 0.
+Proof.  For any n> 0 we have Gn = ∑                (n)Zαλα.  Thus
+                                             |α|=n  α
+                                                           (n)
+                                         L (Gn) = ∑          α   α!λα
+                                                     |α|=n
+                                                  =n!∑        λα
+                                                        |α|=n
+                                                  =n!hn,m(λ)                                                     (3.5)
+
+Returning to F  = Gr  we see that ifL(Fl) =L(Glr) = 0 for some positive integer l then
+hnr,m(λ) = 0.  Therefore, to prove our claim, it suﬃces to show that the polynomialshnr,m(x),
+h(n+1)r,m(x)...,h(n+m−1)r,m(x) have no nontrivial common zeroes (over C) for alln≥ 1.  This
+is the content of Proposition 3.4.
+Proposition 3.4.  Let m≥ 2 be a positive integer and let K  be any ﬁeld.  For every n,r≥ 1
+the set of polynomials
+{hir,m : n≤i≤n +m− 1} have no nontrivial common zeroes.
+Proof.  Fix integers n≥ 1.  Set A = K[x] and let P (U) be the polynomial deﬁned in (3.2).
+Additionally, givenλ∈Km andH(U)∈A[[U]] letHλ(U) = evλ(H(U)), where evλ : A→K
+is the evaluation at λ extended to A[[U]] in the obvious way.
+    Supposer = 1, and ﬁxn≥ 1.  Equation (3.4) implies the following: Ifλ is a common root
+of hi,m for n≤i≤n +m− 1 then hi,m(λ) = 0 for all i≥n.  Thus Pλ(U)∈ (K[U])∗ =K∗.
+Therefore λi = 0 for 1≤i≤m which is what we wanted to show.
+    Now suppose r > 1.  First, we will show that the set{hkr,m : k≥ 1} satisﬁes a recursive
+formula  similar  to  the  one  found  in  Equation  (3.4).   For  each  0 ≤ i ≤ r− 1  let Bi  =∑
+
+
+k≥0hkr+i,m(x)Tnr∈A [[Ur]].  It follows from Equation (3.3) that
+
+                                P (U)−1 =B0 +B1U +··· +Br−1Ur−1.
+
+                                                       7
+
+                              m∏
+Next, we deﬁne Q(U) =
+                             i=1 (1−xriUr)∈ A [Ur].  A straightforward calculation then shows
+that                                                 (r−1∑       )
+                                                  m∏
+                               Q(U)/P (U) =                xjiUj    ∈A[U]
+                                                 i=1   j=0
+Furthermore deg(Q(U)/P (U) =mr−m.
+    WriteQ(U)/P (U) =Q0 +Q1U +··· +Qr−1Ur−1 for someQ0,Q1,...,Qr−1∈A[Ur].  We
+now have the following equality:
+
+                           r−1∑                              r−1∑
+                               QBjUj =Q(U)/P (U) =               QjUj∈A[U]                             (3.6)
+                           j=0                               j=0
+
+Since QBj,Qj  all lie in A[[Ur]] for 0≤ j≤ r− 1 there is neither cancellation amongst the
+summands of the left hand side of  (3.6) nor is there cancellation amongst the summands
+of the right hand side, and therefore QBj  = Qj∈ A [Ur] for each j.  Expanding Q(U) we
+obtainQ(U) =∑mj=0(−1)jej(xr)Ujr.  WriteQ0 =q0 +q1Ur +··· +qlUlr for someqj∈K[x],
+and some l∈ N.  Note that lr≤ deg(Q(U)/P (U)) =mr−m implies that l<m.  Equating
+Q0 to QB0 yields the following recursive relation which holds for all k≥ 1:
+                                                                           { qk k≤l
+                hkr−e1 (xr)hkr−k +··· + (−1)mem (xr)hkr−mr =                   0  k>l                 (3.7)
+
+    Now suppose λ is a common root of{hir,m : n≤i≤n +m− 1}.  Equation (3.7) implies
+that hkr(λ) = 0 for all k≥ n +m > l, and as a result (B0)λ∈ K[U].  Note that (B0)λ⁄= 0
+since it has constant coeﬃcient equal to one.  Finally, we consider the equality
+
+                   Qλ =Qλ(P−1λ Pλ) =(Qλ (B0)λ +··· +Qλ (Br−1)λUr−1)Pλ
+
+Recall that there is no cancellation amongst the summands of
+
+                                  Qλ (B0)λ +··· +Qλ (Br−1)λUr−1
+
+and  hence  the  sum  has  degree  at  least  the  degree  of Qλ (B0)λ.   Since  (B0)λ  is  a  nonzero
+polynomial it follows that the above sum has degree at least the degree of Qλ.  This shows
+that the degree of Pλ is equal to zero, i.e., Pλ = 1.  So once again ek(λ) = 0 for 1≤k≤m,
+and hence λ = (0,..., 0).
+
+Remark 3.5.  The problem of describing the subsets A⊂ N+ of size m such that the set of
+polynomialsha,m(x) witha∈A has no common nontrivial zeroes was considered by Conca,
+Krattenthaler, and Watanabe in [2].  Proposition 3.4 is a new example of such a subset A.
+    The following is an immediate consequence of the preceeding proposition.
+Corollary 3.6.  Let K  be  any  ﬁeld, P (U)∈ K[U]\K  a  polynomial  with  constant  term 1,
+deg(P ) =m≥ 1, and let P−1(U) = 1 +a1U +a2U 2 +···  be its multiplicative inverse in the
+power series ring K[[U]].  For each n,r≥ 1 there exists 0≤i≤m− 1 such that a(n+i)r⁄= 0.
+
+                                                     8
+
+Proof.  We write    K for the algebraic closure of K.  Since the constant term of P  is equal to
+1 there exists λ∈     Km\{(0,..., 0)} such that P (U) =∏mj=1 (1−λjU).  It now follows that
+P−1(U) =∑∞i=0hi,m(λ)Ui, and therefore ai =hi,m(λ).  Now apply the previous proposition
+to conclude that for all n≥ 1 there is some integer i∈ [n,n +m− 1] such that ai⁄= 0.
+    We conclude this section with the following result.
+
+Theorem 3.7.  Let G be as in (3.1) and set F  =λ0 +G where λ0∈ C.  If there exists n≥ 1
+such thatL (Fn+i) = 0 for each i∈{0, 1,...,m− 1} then F  = 0.
+
+Proof.  Ifλ0 = 0 then we are done by Theorem 3.3. So we assumeλ0⁄= 0. Setfn =L (Fn)/n!,
+n≥ 1, and let λ = (λ1,...,λm).  Without loss of generality we may assume each λi⁄= 0.
+Using Equation (3.5) we calculate fn:
+
+                                           n∑       1
+                                   fn =        k!(n−k)!L(Gn−k)λk0
+                                          k=0
+                                           n∑   (n−k)!
+                                       =       k!(n−k)!hn−k,m(λ)λk0
+                                          k=0
+                                           n∑  1
+                                       =       k!hn−k,m(λ)λk0
+                                          k=0
+Note thatN (F ) =m + 1, and so we must show that one of fn,...,fn+m is not zero for all
+n≥ 1.  Fix n≥ 1 and let g =∑mk=0(−1)kek,m(λ)fn+m−k and write g =∑n+mk=0 gkλk0.  Then
+
+                               m∑
+                     gk =  1k!    (−1)jej,m(λ)hn+m−k−j,m(λ),    0≤k≤n +m
+                              j=0
+
+Using  Equation  (3.4)  we  obtain gk  =  0  for  0 ≤ k ≤ n +m− 1  and gn+m  =  1.   Thus
+g  = λn+m0  /(n +m)!⁄= 0.  Since g  is a C-linear combination of fn,...,fn+m  it follows that
+one of fn,...,fn+m is not zero.
+
+3.2.   Sums of Prime Powers
+    In this section we ﬁx a prime p∈ Z.  Let λ = (λ1,...,λm)∈ Cm, β  = (β1,...,βm)∈
+(N+)m and consider the polynomial
+
+                              G(Z) =λ1Zpβ11    +λ2Zpβ22    +··· +λmZpβmm                                    (3.8)
+
+Recall that given f∈ Z[m] we denote by           f  the image of f  in F[m]p    under the canonical map.
+The following two lemmas will be important in the proofs that follow.
+
+Lemma 3.8.  If k  and l are positive integers then(plk)!/(pkak!)∈ Z where
+a = (pl− 1)/(p− 1).  Moreover,(plk)!/(pkak!)≡ (−1)ka   mod p.
+
+
+
+
+                                                     9
+
+Proof.  We ﬁrst consider the case l = 1.  Set Q(t) =∏p−1i=1 (pt−i).  Then
+
+                              (pk)! =pkQ(k)(pk−p)Q(k− 1)···pQ(1)
+                                         k∏       k∏
+                                     =      pj·     Q(j)
+                                        j=1     j=1
+                                              k∏
+                                     =pkk!       Q(j)                                                                 (3.9)
+                                             j=1
+
+So (pk)!/(pkk!) =∏kj=1Q(j)∈ Z.  Clearly,Q(j)≡ (−1)p−1(p− 1)!  mod p for all integersj.
+Noting (−1)p−1≡ 1  mod p for any prime and appealing to Wilson’s Theorem we see that
+Q(j)≡−1  mod p for all integers j.  Thus ∏kj=1Q(j)≡  (−1)k   mod p which is what we
+wanted to show.
+    For the general case we deﬁne P (n) =∏nj=1Q(j) where n∈ Z.  We also set kj =pl−jk,
+1≤j≤l.  Applying the l = 1 case we obtain
+
+                       (kj)! = (pkj+1)! =pkj+1kj+1!P (kj+1),    0≤j≤l− 1                     (3.10)
+
+It follows from Equation (3.10) that
+                                      (plk)! =p∑l              l∏
+
+                                                    j=1kjkl!     P (kj)
+
+                                                             j=1
+
+Now kl  = k  and∑lj=1kj  = k∑lj=1pl−j  = ka, and therefore(plk)!/(pkak!) =∏lj=1P (kj)
+is an  integer.  Finally,  since P (kj)≡  (−1)kj   mod p it follows that ∏lj=1P (kj)≡  (−1)ka
+mod p.
+
+Lemma 3.9.  SupposeI  is a proper homogeneous ideal of Z[m].  IfZFp(I) ={(0,..., 0)} then
+ZQ(I) ={(0,..., 0)}.
+
+Proof.  By the Projective Nullstellensatz we must show that I⨂Z Q contains all monomials
+of degree d for d>> 0.  Let Vd⊂ Z[m] be the Z-module of d-forms.  Let Id be the Z-module
+of d-forms  belonging  to I,  i.e, Id  = Vd∩I.   Note  that Id  and Vd  are  ﬁnitely  generated.∞⨁∞⨁
+Furthermore,  we  have  that Z[m]  =                                               Fp(I)  ={(0,..., 0)}  it
+                                            d=0Vd  and I  =     d=0Id.   SinceZ
+follows from the Nullstellensatz that
+
+                                     Vd =Id +pVd      d>> 0                                       (3.11)
+
+Now let S = Z\ (p), and denote by m the maximal ideal of the local ring S−1Z.  Localizing
+(3.11)  at  (p)  yields S−1Vd  = S−1Id + mS−1Vd  for d >>  0.   Thus, S−1Vd  = S−1Id  for
+d >> 0 by Nakayamas Lemma.  Since Vd⨂Q is a further localization of S−1Vd  we obtain
+Vd⨂Q =Id⨂Q for d>> 0.
+
+
+
+
+                                                      10
+
+Theorem 3.10.  Let G be as in (3.8) and set F  =Gr, r≥ 1.  If there exists n≥ 1 such that
+L (Fn+i) = 0 for 0≤i≤m− 1 then F  = 0.
+
+Proof.  Given γ  =  (γ1,...,γm) ∈ Zm  set pγ  =  (pγ1,...,pγm).   For  any n >  0  we  have(n)Tpβαλα where pβα =(pβ1α1,...,pβmαm).  Thus:
+Gn = ∑        α
+       |α|=n
+                                         L (Gn)            (pβα)!
+
+                                            n!     = ∑|α|=n   α!  λα
+
+Let x = (x1,...,xm) be m commuting variables.  For each n> 0 deﬁne
+                                                          (pβα)!
+                                          fn(x) = ∑          α!  xα
+                                                    |α|=n
+
+Then  the λ∈ Cm  for  whichL (Gn)  =  0  are  exactly  the  zeroes  of fn(x).   Let In  be  the
+homogeneous ideal of Z[x] generated by{f(n+i)r(x) : 0≤i≤n +m− 1}.  Our claim will be
+proven if we can show thatZC(In) ={(0,..., 0)} for each n> 0.
+    Using Lemma 3.8 we know that(pβjαj)! =pαjbjαj!Cαj wherebj =(pβj− 1)/(p− 1) and
+Cαj  is an integer congruent modulo p to (−1)αjbj.  So if we set γα = (α1b1,...,αmbm) then
+                                            (pβα)! =p|γα|α!Cα                                                (3.12)
+
+
+where Cα  = ∏mj=1Cαj.   Since  each Cαj ≡  (−1)αjbj   mod p  it  follows  that Cα ≡  (−1)|γα|
+mod p.
+    Let  ˜β  = (b1,...,bm),  ˜x = (−p)−˜βx, and for each n > 0 deﬁne gn(x) = fn (˜x).  If Jn  is
+the homogeneous ideal of Z[x] genearted by{g(n+i)r(x) : 0≤i≤n +m− 1} thenZC (Jn) =
+{(0,..., 0)}  if  and  only  ifZC (In)  ={(0,..., 0)}.   We  will  show  the  former.   Let  us  ﬁrst
+simplify the expression for gn.  Using Equation (3.12) we calculate
+                                                    (pβα)!   (           )α
+                                    gn(x) = ∑         α!      (−p)−˜βx
+                                              |α|=n
+                                                             (pβα)!
+                                           = ∑     (−1)|γα|  p|γα|α!xα
+                                              |α|=n
+
+                                           = ∑     (−1)|γα|p|γα|α!Cαp|γα|α! xα
+                                              |α|=n
+                                           = ∑     (−1)|γα|Cαxα                                                 (3.13)
+                                              |α|=n
+
+    Since Cα≡ (−1)|γα|   mod p it follows that gn(x)≡∑|α|=nxα =hn(x).  In particular, we(
+have  Jn =⟨hnr,...,h(n+m−1)r⟩.  It follows from Proposition 3.4 thatZFp                  Jn) ={(0,..., 0)}
+and henceZC (Jn) ={(0,..., 0)} by Lemma 3.9.
+
+
+                                                      11
+
+    We end this section with the following partial result.
+Proposition 3.11.  Let p>m be a prime integer, and let F  =λ0 +G where G is given in
+3.8.  IfL (Fn+j) = 0 for some n<p−m and 0≤j≤m then F  = 0.
+Proof.  NoteN (F ) =m + 1.  For n> 0 we have
+
+                                                  n∑ (n)
+                                    L (Fn) =           k   L(Gn−k)λk0
+                                                k=0
+Let y and x = (x1,...,xm) be indeterminates.  For each l> 0 deﬁne
+                                                 (l )(pβα)!
+                                  gl(x) =∑         α     α!  xα
+                                           |α|=l
+                                                l∑ (l )       (          )
+                               fl(y,x) =  1l!        k  gl−k   (−p)−˜βx     yk
+                                              k=0
+                                                                         (             )
+where  ˜β  =  (p− 1)−1(pβ1− 1,...,pβm− 1).   Note  that l!fl              λ0, (−p) ˜βλ    =L(Fl)  for  all
+l ≥  0.   So  our  claim  will  be  proven  if  we  can  show  that fn,...,fn+m  have  no  common
+nontrivial solutions over C.                                                              (           )
+    It follows from Lemma 3.8 and the proof of the previous theorem thatgl()                (−p)−˜βx    /l!∈
+Z[x] and gl    p−˜βx   /l!≡hl(x)  mod p where hn(x) is deﬁned in 3.1.  Therefore
+
+
+                                               n+j∑ 1
+                               fn+j(y,x)≡          k!hn+j−k(x)yk    mod p
+                                               k=0
+for  0≤ j≤ m  (Note  that  1/k!∈ Fp  since k < n +m < p).   Appealing  to  the  proof  of
+Theorem 3.7 we obtain the following:
+
+            fn+m(y,x)−e1(x)fn+m−1(y,x) +··· + (−1)mem(x)fn(y,x) =  yn+m(n +m)!
+
+
+    If  (λ0,λ)∈    Fm+1p      is  a  common  root  offn,...,  fn+m  then λ0  =  0  by  the  above  equal-
+ity.  So 0 =   fn+j (λ0,λ) = hn+j (λ) and therefore λ = (0..., 0) by Proposition 3.4.  Thus
+fn,...,  fn+m  have  no  nontrivial  common  zeroes  in        Fp  and  therefore fn,...,fn+m  have  no
+common zeroes over C by Lemma 3.9.
+
+3.3.  New Examples from Old
+    In this setion we ask whether there is a way of building up new examples of polynomials
+satisfying the conjecture from already known ones.  We detail detail one such way.  Remark
+1.4 is used in the proof of the following theorem.
+Theorem 3.12.  Set U  = U1.  Suppose F∈ C[m]  satisﬁes  the  Strong  Factorial  Conjecture.
+Then G =λU +F  also satisﬁes the conjecture.
+
+                                                     12
+
+Proof.  LetN =N (F ).  ThenN (G) =N + 1.  If we setfn =L (Fj)/n! andgn =L (Gn)/n!,
+n≥ 1, then
+                                        (      n∑ (n)               )
+                               gn =L       1            Fn−kUkλk
+                                           n! k=0    k
+
+                                       n∑       1
+                                   =       (n−k)!k!L(Fn−kUk)λk
+                                      k=0
+                                       n∑       1
+                                   =       (n−k)!k!L(Fn−k)L(Uk)λk
+                                      k=0
+                                       n∑
+                                   =      fn−kλk
+                                      k=0
+It easily follows from above that
+                                             gn =fn +λgn−1                                                  (3.14)
+for each n≥ 1.  Now suppose thatL (Gn+i) = 0 for some n≥ 1 and 0≤ i≤ n +N.  Then
+gn+i = 0 for 0≤i≤N.  It then follows from Equation (3.14) that fn+i = 0 for 1≤i≤N,
+and  thereforeL (Fj)  =  0  for n + 1≤ j≤ n +N.   Since F  satisﬁes  the  Strong  Factorial
+Conjecture it must be the case that F  = 0.  So G =λU  and sinceL (Gn) = 0 we must have
+λ = 0.
+
+Corollary 3.13.  Suppose L∈ C[l] := C [U1,...,Ul] is a linear form and F∈ C[m]  satisﬁes
+the Strong Factorial Conjecture.  Then G =L +F  also satisﬁes the conjecture.
+
+Proof.  By induction on l and the previous Theorem.
+
+3.4.  Sum of Two Monomials
+    Throughout this sectionx will denote a single variable, rather than a vector of variables.
+In this section we study Conjecture 1.7 in the case F  is of the form λ1M1 +λ2M2  where
+M1,M2∈ C[m] are monomials.  In order to show thatF satisﬁes the conjecture we must show
+that one ofL (Fn),L (Fn) is nonzero for alln≥ 2.  Since the conjecture obviously holds for
+monomials, we may assume that λ1,λ2⁄= 0.  Furthermore, sinceL (Fn) is homogeneous in
+λ1,λ2 we may assume, without loss of generality, that λ1 = 1.  For each n≥ 0 we deﬁne the
+following polynomial:                            (n)
+                                              n∑                      )xk.                                    (3.15)
+                                  fn(x) =          k   L(Mn−k1  Mk2
+                                             k=0
+Then fn (λ2)  = L (Fn).   From  this  we  see  that F  satisﬁes  the  conjecture  if  and  only  if
+fn(x),fn−1(x) have no common zeroes (over C) for all n≥ 2.
+    One way to attack the problem is to use Zeilberger’s algorithm (see [11]) to ﬁnd a re-
+currence relation between fn(x) and fn−1(x).  The algorithm has been implemented in both
+Mathematica and Maple.  For example, after downloading the  fastZeil  package (cf.  [10]) for
+Mathematica, the command
+
+
+
+                                                     13
+
+Zb [ Binomial [ n , k ]   (2   k ) !   xˆk ,{ k , 0 , n} ,n ] :
+SumCertificate [%]
+                                                                           n∑(n)(2k)!xk. In some special
+will produce a recurrence relation for the polynomialsfn(x) =                  k
+                                                                         k=0
+cases, the relation obtained by Zeilberger’s algorithm can be used in a very straightforward
+manner to show that fn and fn−1 have no common zeroes.
+Proposition 3.14.  For alln≥ 2 the polynomialsfn(x) andfn−1(x) have no common zeroes
+in the following cases:
+   1. F  = 1 +λZ1
+
+   2. F  =Z21 +λZ1
+
+   3. F  =Z31 +λZ21
+
+   4. F  =Z21 +λZ1Z2
+
+   5. F  =Z31 +λZ21Z2
+
+Proof.  We proceed case by case.
+
+                                         n∑ (n)Zk1λk  which gives fn(x) =         n∑   n!
+   1.  In this case we have Fn  =            k                                       (n−k)!xk.  Using Zeil-
+                                        k=0                                      k=0
+      berger’s lgorithm we obtain the relation: fn(x) =nxfn−1(x)+1.  Ifλ∈ C is a common
+      root of fn and fn−1 then 1 = 0 which is a contradiction.
+                                               (n)Z2n−k                                 n∑ (n)(2n−k)!xk.
+   2.  In this case we have Fn =∑nk=0           k    1  λk  which gives fn(x) =              k
+                                                                                       k=0
+      Using Zeilberger’s We have the following relation:
+
+                           fn(x)− 2n(2n− 1)fn−1(x)−n(n− 1)x2fn−2(x) = 0
+
+      Suppose λ ∈ C  is  a  common  root  of fn  and fn−1.   Since fl(0) ⁄=  0  for  all l ∈ N
+      follows that fn−2(λ) = 0.  Changing n to n− 1,..., 2 in the above recurrence relation
+      shows that λ is a root of fn,fn−1,...,f0.  But f0  is a nonzero constant and we get a
+      contradiction.
+                                         n∑                                      n∑ (n)(3n−k)!xk.  Zeil-
+   3.  In this case we have Fn =              1  λk  which gives fn(x) =              k
+                                        k=0Z3n−k                                k=0
+      berger’s algorithm produces the relation:
+
+                         (x− 9n + 12)fn(x)−pn(x)fn−1(x) +qn(x)fn−2(x) = 0
+
+      where
+
+           pn(x) =x3− 3(3n− 2)x2 + (27n2− 27n + 6)x− (243n3− 567n2 + 378n− 72)
+
+      and
+                                qn(x) = 2(2n− 3)n(n− 1)x3(x− 3(3n− 1))
+
+                                                     14
+
+      Suppose λ  is  a  common  root  of fn  and fn−1.   Then qn(λ)  =  0  or fn−2(λ)  =  0.   If
+      qn(λ) = 0 then λ = 0 or λ = 3(3n− 1).  Since fl(0)⁄= 0 for all l, λ cannot be equal to
+      zero.  Sincen orn− 1 is even it follows from Corollary ?? thatλ∈ C\R and therefore
+      λ⁄= 3(3n−1).  Sofn−2(λ) = 0.  Replacingn withn−1,..., 2 in the recurrence relation
+      and  repeating  the  same  argument  as  before  shows  that fl(λ)  =  0  for  0 ≤ l ≤ n.
+      However, f0 is a nonzero constant and we get a contradiction.
+   4.  In  this  case  we  have Fn  = ∑n        (n)Z2n−k                                      n∑    n!
+                                            k=0   k   1  Zk2λk  which  gives fn(x)  =        k=0  (n−k)!(2n−
+      k)!xk.  Using Zeilberger’s algorithm we obtain the relation:  (x− 1)fn(x)−n2x2fn−1 =
+      n(2n−1)!(x−2).  Ifλ is a common root offn andfn−1 thenλ = 2.  But this impossible
+      since fn(2)> 0 for all n.
+   5.  In  this  case  we  have Fn  = ∑n        (n)Z3n−k                                      n∑    n!
+                                            k=0   k   1  Zk2λk  which  gives fn(x)  =             (n−k)!(3n−
+                                                                                             k=0
+      k)!xk.  Using Zeilberger’s algorithm we obtain the relation:  (x− 1)2fn(x)− 2n2(2n−
+      1)x3fn−1 = (3n− 2)!npn(x) where pn(x) = (4n− 2)x2− 5(3n− 1)x + 3(3n− 1).  If λ
+      is a common root of fn  and fn−1  then λ is also a root of pn.  The discriminant of pn
+      is equal to 81n2− 30n + 1 which is positive for all n> 0.  Therefore λ∈ R∗.  Since n
+      or n− 1 is even this would contradict Corollary ??.  So fn and fn−1 have no common
+      zeroes.
+
+
+
+    Let us now turn our attention toF  =Zm1  (λ1 +λ2Z1) whereλ1,λ2∈ C∗.  From the above
+Proposition we know that F  satisﬁes Conjecture 1.7 for m = 0, 1, 2.  Once again assuming
+λ1 = 1 we have the following partial result for the general case.
+
+Proposition 3.15.  Let F  =Zm1  (1 +λZ1) where m≥ 3.  If m ∤ ((n− 1)!)n  thenL (Fn)⁄= 0
+orL (Fn−1)⁄= 0.
+Proof.  We  have Fn  = ∑n           (n)Znm+k                               n∑ (n)(nm +k)!λk.   For  each
+                               k=0   k   1   λk  and  soL (Fn)  =         k=0   k
+                                                                 n∑ (n)(nm +k)!
+n≥ 0 deﬁne a polynomial fn(x) by setting fn(x) =                      k    (nm)!  xk.  We have fn(λ) =
+                                                                k=0
+L (Fn)/(nm)!.  Note thatfn(x)∈ Z[x].  Introduce a new variablet and for eachk> 0 deﬁne
+             k∏
+Qn,k(t) =
+            j=1(nt +j).  For each n> 0 we deﬁne a bivariate polynomial Fn(t,x)∈ Z[t,x] by
+setting                                                  (n)
+                                                      n∑
+                                   Fn(t,x) = 1 +            k  Qn,k(t)xk.
+                                                     k=1
+Observe thatFn(m,x) =fn(x).  For eachn≥ 2 we wish to compute the resultant ofFn(t,x)
+and Fn−1(t,x) with respect to the variable x.  It is for this reason we deﬁne, for each n≥ 2,
+the  polynomial Rn(t)  =  Res (Fn(t,x),Fn−1(t,x),x).   It  follows  from  the  deﬁnition  of  the
+resultant that Rn(t)∈ Z[t].  Also, since Fn(m,x) = fn(x) it follows from the determinant
+
+
+                                                      15
+
+formula for the resultant that Rn(m) = Res (fn,fn−1).  So using Proposition 2.2 we see that
+F  satisﬁes the SFC  if and only if Rn(m)⁄= 0 for all n≥ 2.
+    Letpn(t) = (nt + 1) and letR = Z[t].  Sincepn is linear and primitive it is an irreducible
+elmement  of  the  ring R,  which  is  a  UFD.  Observe  that pn  does  not  divide  the  constant
+coeﬃcient ofFn(t,x) when regarded as an element ofR[x].  Also,pn(t) divides the coeﬃcients
+ofQn,k for 1≤k≤n, butp2n ∤Qn,n.  Thus, by applying Eisensteins criteria to the reciprocal
+polynomial F∗n(t,x)  = xnFn (t, 1/x)  we  see  that Fn(t,x)  is  an  irreducible  element  of R[t].
+Therefore Fn(t,x) and Fn−1(t,x) have no common factor over Q(t) by Gauss’s Lemma.  So
+it follows from Proposition ?? that Rn(t)⁄= 0.
+    Since Rn(t)∈ Z[t]\{0} we know that Rn(m)⁄= 0 if m ∤ Rn(0).  Therefore we calculate
+Rn(0).  Since the determinant commutes with the evaluation map we have
+                                                                                              n∑    n!
+Rn(0) = det (Syl (Fn(0,x),Fn−1(0,x))).  Now Qn,k(0) =k! and so Fn(0,x) =                         (n−k)!xk.
+                                                                                            k=0
+Since degxFn(0,x) =n for each n≥ 1 it follows that Rn(0) = Res (Fn(0,x),Fn−1(0,x)) for
+each n≥ 2.  Next, a straightforward calculation shows that Fn(0,x) =nxFn−1(0,x) + 1.  It
+now follows from part (ii) of Proposition 2.2 that
+
+      Rn(0) = Res (Fn(0,x),Fn−1(0,x)) = ((n− 1)!)n Res (1,Fn−1(0,x)) = ((n− 1)!)n.
+
+So Rn(0)⁄= 0 if m ∤ ((n− 1)!)n
+    The above method can also be applied to other polynomials to obtain similar results.
+
+Proposition 3.16.  Let F  =Zm1  (Z2 +λZ1Z3) where m> 0.  If m ∤ (n!)n−1 thenL (Fn)⁄= 0
+orL (Fn−1)⁄= 0.
+Proof.  Suppose n> 0.  We have Fn =∑n                (n)Znm+k
+                                                 k=0   k   1   Zn−k2  Tk3λk which gives
+
+                                            n∑ (n)
+                              L (Fn) =           k   (n−k)!k!(nm +k)!λk
+                                          k=0
+                                               n∑
+                                       =n!       (nm +k)!λk
+                                             k=0
+
+We  deﬁne fn(x)  = ∑nk=0(nm +k)!xk  and Fn(t,x)  =  1 +∑nk=1Qn,k(t)xk  where Qn,k  was
+deﬁned in the proof of Proposition 3.15.  Note fn(λ) = 0 if and only ifL (Fn) = 0.  Also
+Fn(m,x)  = fn(x)/(nm)!.  Now,  like in the proof of the previous proposition,  set Rn(t)  =
+Res (Fn,Fn−1,x).   Then Rn(0)  =  Res (gn(x),gn−1(x),x)  where gn(x)  = ∑nk=0k!xk.   Since
+gn =gn−1 +n!xn it follows from Proposition 2.2 (iii) that
+
+                                Rn(0) = Res (n!xn,gn−1,x) = (n!)n−1.
+
+If m ∤ (n!)n−1 then Rn(m)⁄= 0 and therefore fn and fn−1 have no common zeroes.
+
+Proposition 3.17.  Let F  = (Z1Z2)m (Z1 +λZ2)  where m > 0.   If l,n > 0  are  such  that
+gcd(l + 1,n + 1) = 1 and if m ∤ (l!)n(n!)l  thenL (Fn)⁄= 0 orL(Fl)⁄= 0.
+
+
+
+                                                     16
+
+Proof.  Suppose n,l> 0 satisfy the hypothesis.  For any s≥ 0 we have
+
+                                            s∑ (s)
+                                    Fs =         k   Zsm+s−k1    Zsm+k2   λk
+                                           k=0
+and therefore                            s∑ (s)
+                            L (Fs) =          k   (sm +k)!(sm +s−k)!λk.
+                                        k=0
+Let Qs,k(t) be the polynomial deﬁned in the proof of Proposition 3.15 and for each s≥ 0
+                       s∑ (s)Qs,k(t)Qs,s−k(t)xk  (here  we  deﬁne Qs,0  =  1).   Then Fs(m,λ)  =
+deﬁne Fs(t,x)  =           k
+                      k=0
+L (Fs)/((nm)!)2.   If  we  set R(t)  =  Res (Fn(t,x),Fl(t,x),x)  then R(m)  =  Res (fn,fl,x).
+Now R(0) = Res (gn(x),gl(x),x) where
+
+                                                 s∑ (s)
+                                      gs(x) =         k   k!(s−k)!xk
+                                                k=0
+                                                   s∑
+                                            =s!       xk
+                                                  k=0
+
+    Using the deﬁnition of the resultant we see thatR(0) = (n!)l(l!)n Res (gn(x)/n!,gl(x)/l!).
+Denote each gs(x)/s! by hs(x).  We claim that Res (ha(x),hb(x),x) = 1 whenever gcd(a +
+1,b+1) = 1.  Note thata orb is even since gcd(a+1,b+1) = 1, and therefore Res (ha,hb,x) =
+Res (hb,ha,x).We proceed by induction on a +b.  The base case a +b  =  1 holds because
+g0 = 1 and therefore Res (1,g1,x) = 1.  Now suppose a +b =d≥ 2 and assume the claim is
+true for all pairs (a′,b′) satisfying gcd((a′ + 1,b′ + 1) = 1 and n′ +m′ <d.
+    Without loss of generality we may assume a > b.  Write a + 1 = q(b + 1) +r for some
+positive integers q,r with r≤b + 1.  Now it is not too hard too see that
+
+                   ha(x) =(1 +xb+1 +··· +x(q−1)(b+1))hb(x) +xq(b+1)hr−1(x)
+
+Setting P  =xq(m+1)hr−1(x) and appealing to Proposition 2.2 we conclude that
+
+                             Res (ha,hb) = Res (P,hn)
+                                           = Res(xq(b+1,hb) Res (hr−1,hb)
+                                           = Res (hr−1,hb)
+
+Since gcd(a + 1,b + 1) = 1 it follows that gcd(b + 1,r) = 1.  Since a +r <d the result now
+follows from by the inductive hypothesis.
+    Since gcd(n + 1,l + 1) = 1 we can conclude that
+
+                       R(0) = (n!)l(l!)n Res (gn(x)/n!,gl(x)/l!) = (n!)l(l!)n.
+
+Since m ∤ (n!)n−1 it follows that R(m)⁄= 0 and thereforeL (Fn)⁄= 0 orL(Fl)⁄= 0.
+
+
+                                                     17
+
+Remark 3.18.  In each of the above proofs the idea was to express the resultant of fn and
+fn−1 as a polynomial inm.  While we haven’t succeeded in computing this polynomial in its
+entirety, we do have computational evidence that suggests that the polynomials Rn(t) are
+Hurwitz stable,  i.e.  has all  of its roots in the  left half-plane.  If this  were  true then each
+coeﬃcient ofRn(t) is positive (sinceRn(0)¿0), and thereforeF  satisﬁes the Strong Factorial
+Conjecture.
+
+Remark  3.19.  Let us brieﬂy return to the case F  = Zm1  (1 +λZ1).  In order to show F
+satisﬁes Conjecture 1.7 it is necessary and suﬃcient to show thatfn(x) andfn−1 are relatively
+                                     l∑ (n) (nm+k)!
+prime over Q where fn(x) =               k    (nm)! xk. Fix a positive integer n.  By Dirchlet’s prime
+                                    k=0
+number theorem we know that nm + 1 is prime for inﬁnitely many m.  For such m we can
+show,  using  Eisensteins  criteria,  that fn(x)  is  irreducible  over Q  and  therefore fn(x)  and
+fn−1 are relatively prime.  It is also straightforward to show thatfn(x) ∤fn+1(x) which shows
+that fn and fn+1 are relatively prime.  By ﬁxing m and applying the same analysis one also
+concludes thatfn is irreducible for inﬁnitely manyn yielding the same observations as those
+preceeding.  The same arguments can also be applied to F  = Zm1  (Z2 +λZ2Z3).  There is
+ample evidence that both these polynomials satisfy the conjecture.
+
+    For the rest of the chapter we will focus our eﬀorts on the special case F  = 1 +λZm1(n)(mk)!λk,  and so we are interested in determining
+where m >  0.  We have Fn  = ∑nk=0              k
+whether fn(x) and fn−1(x) have common zeroes, where
+
+                                                     n∑ (n)
+                                         fn(x) =          k   (mk)!xk                                           (3.16)
+                                                   k=0
+It is not hard to show that fn ∤fn+1 for all n≥ 1.
+    By  studying  the  Newton  polygon  of fn(x)  we  can  determine  values  of m  and n  for
+which fn  and fn−1  have  no  common  zeroes.   When m  =  2  we  solve  the  case  completely.
+Given a prime p, we denote by νp  the p-adic valuation.  Given k∈ N expand k  in base p:
+k =a0 +a1p +... +atpt.  Set sk =a0 +··· +at.  The following formulas are well known:
+
+                                                         ∞∑  ⌊k   ⌋
+                                             νp(k!) =          pj
+                                                         j=1                                              (3.17)
+                                                     = k−skp− 1
+
+Proposition  3.20.  Suppose n  = apr  where p  is  prime, r >  0  and ma < p.   Then  any
+irreducible factor of fn(x) over Q has degree divisible by pr.
+
+Proof.  We will show that Np (fn(x)) consists of a single edge.  We do this by showing that)(mk)!)≥ k
+νp((nk               nνp((mn)!)  for  each  0 < k < n.   Using  (3.17)  we  compute νp ((mn)!)  =
+
+
+
+
+
+                                                       18
+
+ma(pr−1)
+  p−1     Next, if 0<k<n then
+
+                                              ∞∑ ⌊apr−k     ⌋
+                             νp((n−k)!) =             pj
+                                              j=1
+                                               r∑⌊apr−k     ⌋
+                                           =          pj
+                                              j=1
+                                                             r∑⌊−k   ⌋
+                                           =νp ((apr)!) +         pj
+                                                            j=1
+
+
+In the second line, the sum stops at j =r because 0<n−k<n<pr+1.  Now
+
+                                     r∑ ⌊−k  ⌋     r∑ {⌊k   ⌋    ⌊−k⌋}
+                          νp(k!) +        pj   =          pj  +    pj
+                                    j=1           j=1
+                ⌊   ⌋   ⌊   ⌋                   ⌊   ⌋   ⌊   ⌋
+If k              k   +   −k   = 0.  Otherwise    k   +   −k   =−1.  It follows that
+  pj∈ Z then⌊     pj⌋     pj                      pj      pj
+νp(k!) +∑r       −k   =νp(k)−r, and thus
+            j=1  pj
+                       ((n))
+                    νp     k     =νp(n!)− (νp((n−k)! +νp(k!))
+                                             (                     r∑ ⌊−k   ⌋)
+                                 =νp(n!)−      νp(n!) +νp(k!) +         pj
+                                                                  j=1
+                                 =r−νp(k)
+
+   We now consider the quantity knνp(mn!):
+
+                             k                   ma (pr− 1)
+                             nνp((mn)!) = kapr      p− 1
+                                          = mk   (pr−1 +··· +p + 1)
+                                              pr
+                                          = mkp   +··· + mkpr
+
+                             ⌊   ⌋
+For 1≤j≤r write mk            mk   +aj where 0≤aj < 1.  Observe thataj = 0 if and only ifpj ∤
+                      pi   =   pi                                               ⌊mk  ⌊
+                                                                             r∑
+mk.  Butm<p and sopj ∤mk if and only ifpj ∤k.  Thus∑rj=1mkpj <                    pj   +r−νp(k).
+                                                       ⌊mk⌋                 j=1
+                                                     r∑
+Finally, mk<pr+1 since ma<p and therefore                 pj   =νp((mk)!).
+                                                   j=1
+
+                                                19
+
+    We have shown that the Newton polygon offn consists of a single edge connecting (0, 0)
+to (n,ma (pr−1 +··· + 1)).  The gcd of the height and width is equal to a and therefore any
+nontrivial irreducible factor offn(x) has degree equal toipr for some 1≤i≤a by Corollary
+2.5.
+
+Corollary 3.21.  If m<p then fn  is irreducible over Q[x] when n =pr  for any positive r.
+Moreover, fn  and fn−1  have no common zeroes.  The same is true for fn  and fn+1.
+
+Proof.  Thatfn is irreducible follows from the previous proposition.  Since Q[x] is a PID and
+since fn  is irreducible, fn  and fn−1  have no common roots.  Since fn  does not divide fn+1
+they do not have any common roots either.
+
+    Supposem =pr and setb = pr− 1p− 1 .  Thenνp ((prk)!) =kb +νp(k!) by 3.8.  This leads us
+to consider the polynomials gn(x) =fn(x/pb) for two reasons:
+
+   1. fn and fn−1 have a common zero if and only if gn and gn−1 have a common zero.
+         ((n) (prk)!)        (       )
+   2. νp               =νp       n!     and so gn has the same Newton polygon as∑n                    n!
+            k   pkb            (n−k)!                                                          k=0  (n−k)!xk
+Reason two is important because we can calculate the Newton polygon of∑n                        n!
+                                                                                          k=0 (n−k)!xk, and
+hence we can calculate the Newton polygon of gn.
+
+Proposition  3.22.  Let n≥  1  be  given  and  write n  = a1pn1 +a2pn2 +··· +atpnt  where
+0 < a1,a2,...,at≤ p− 1  and  0≤ n1 < n2 <··· < nt.   Set x0  =  0  and  for  1≤ s≤ t
+set xs = a1pn1 +··· +aspns.  The x-coordinates  of  the  vertices  of Np (gn(x))  are  located  at
+xs, 0≤s≤t.  If 1≤s≤t then the slope of the sth edge is given by ms =  pns−1pns(p−1).
+
+Proof.  We write ν  = νp.  From the observations above we know that the coeﬃcient of xk
+has  the  same p-adic  value  as   n!(n−k)!.   Since  multiplying gn  by  a  constant  has  the  eﬀect
+of shifting the polygon up or down, we may assume that the coeﬃcients are in fact       1(n−k)!.
+Using Equation (3.17) we calculate that
+
+                              ν ((n−xs)!) = n−xs− (as+1 +··· +at)p− 1
+
+and therefore the slope of the line segment connecting the (xs−1,−ν ((n−xs−1)!)) to
+(xs,−ν ((n−xs)!)) is equal to
+
+                                      xs−xs1−as
+                                   (xs−xs−1) (p− 1) =  pns− 1pns(p− 1).
+
+Since n1 <n2 <···<nt it follows that m1 <m2 <···<mt.  So all that remains to show
+is that (x,−ν((n−x)!)) lies on or above the edges connecting these points for each integer
+1≤x≤n that is not equal to some xs.  Choose 1≤s≤t so that xs−1 <x<xs.  It follows
+thatn−xs <n−x<n−xs−1.  Set ∆x =xs−x, and observe thatn−xs−1 =n−xs +aspns
+implies ∆x<aspns, and therefore the basep expansion of ∆x has no nonzero digit past the
+
+                                                     20
+
+pns-place.  Since ns < ns+1 and since n−xs = as+1pns+1 +··· +pntt   it now follows that the
+base p expansion of n−x is obtained by concatenating the base p expansions of n−xs and
+∆x.  Using Equation (3.17), one can obtain that ν((n−x)!) =ν ((n−xs)!) +ν((∆x)!)
+    Finally, the slope between the points (x,−ν((n−x)!)) and (xs,−ν ((n−xs)!)) is equal
+to
+                               −ν ((n−xs)!) +ν((n−x)!)
+                                              ∆x                     = ν((∆x)!)∆x
+                                                                  =  ∆x−s∆x∆x(p− 1)
+
+
+We claim that  ∆x−s∆x∆x(p− 1) < ms, or equivalently, pns (∆x−s∆x) < ∆x (pns− 1).  To prove
+this inequality, it suﬃces to show that ∆x < s∆xpns, and this follows easily from the fact
+∆x  = b0 +b1p +··· +bnspns  for  some  0≤ b0,b1,...,bns ≤ p− 1.   From  this,  one  can
+conclude  that  (x,−ν((n−x)!))  lies  above  the  line  connecting  (xs−1,−ν ((n−xs−1)!))  to
+(xs,−ν ((n−xs)!)).
+
+Corollary 3.23.  Let n≥ 1 and suppose m =pr  for some prime p and r≥ 1.  Then:
+
+   1.  If n is divisible by p then the degree of any irreducible factor of fn  is divisible by pν(n).
+
+   2.  If n =pl  for some l > 0 then fn  is irreducible.  Thus fn  has no roots in common with
+       fn−1  and it has no roots in common with fn+1
+
+   3.  If n = plqk  where l,k > 0  and q  is  a  prime  satisfying pr+l < q  then fn  is  irreducible.
+       Thus fn  has no roots in common with fn−1  and it has no roots in common with
+
+Proof.
+
+
+   1.  In Proposition 3.22 we computed the slopes of the Newton polygon offn.  The denom-
+       inator  of  each  slope  (in  lowest  terms)  is  equal  to ps  where s≥ νp(n).   If g(x)  is  an
+       irreducible factor of fn then pνp(n)| deg(g(x)) by 2.5
+
+   2.  If n =pl then pl divides the degree of any irreducible factor is divisible by pr by part
+       1.  Therefore fn is irreducible.  The second statement follows from the fact that fn is
+       irreducible and fn ∤fn+1.
+
+   3.  Let g(x) be an irreducible factor of fn(x).  Then pr| deg (g(x)) by (1).  Furthermore,
+       n  satisﬁes  the  hypothesis  of  3.20  and  therefore ql |  deg (g(x)).   We  conclude  that
+       n| deg(g(x)) and so fn is irreducible.  The second statement follows easily.
+
+
+
+    The main result of the section is the following.
+
+Theorem 3.24.  Let F (Z1) =λ1 +λ2Z21.  Then F  satisﬁes the Strong Factorial Conjecture.
+
+
+                                                       21
+
+Proof.  We  may  once  again  assume λ1  =  1.   Let fn(x)  be  the  polynomials  given  in  (3.16)
+wherem = 2 and letgn(x) =fn(x/2).  In order to prove our claim we must show that gn(x)
+and gn−1(x) have no common roots for each n≥ 1.  Following the usual convention (cf.  [8]
+or [1]) we deﬁne for each non-negative integer k the double factorial (2k− 1)!! by setting
+                                                 {  1         k = 0
+                                 (2k− 1)!! =         ∏k
+                                                       j=1(2j− 1) k≥ 1                                   (3.18)
+We also set bn,k =n!/(n−k)! for 0≤k≤n.  We then have
+
+                                                    n∑
+                                        gn(x) =       (2k− 1)!!bn,kxk                                          (3.19)
+                                                  k=0
+for each n≥ 1.  Note that g2 and g3 are irreducible by Corollary 3.23.  So we assume n≥ 5.
+We will prove the following claim:
+Claim 1.  For each 1≤j <n/2 there exists a rational polynomial
+
+                                rj(x) =Aj(x) + 22jbn,2j+1xjgn−(2j+1)(x)
+
+belonging to (gn,gn−1) such that the following holds:
+
+   1.  deg (Aj) =j− 1
+
+   2.  The 2-adic values of the coeﬃcient of xk  in Aj(x) are positive if 0≤ k≤ j− 2.  The
+       2-adic value of the coeﬃcient of xj−1 is equal to 0.  In particular, Aj(x)⁄= 0.
+
+    Asuming Claim 1 holds, let us prove the theorem. Supposen is even and setj = (n/2)−1.
+Then 2j =n− 2, 2j + 1 =n− 1 and n− (2j + 1) = 1 which yields
+
+                                   rj(x) =Aj(x) + 2n−2bn,n−1xjg1(x)
+                                          =Aj(x) + 2n−2n!xj(1 +x)
+                                          =Aj(x) + 2n−2n!(xj +xj+1)                                   (3.20)
+
+where g1  was  calculated  using  Equation  (3.19).   In  order  to  show  that gn  and gn−1  have
+no common roots it suﬃces to show that rj(x) has no roots in common with gn since rj∈
+(gn,gn−1).  The fact that the 2-adic value of rj(0) is positive includes the possibility that
+ν2 (rj(0)) =∞, i.e. rj(0) = 0.  So let us ﬁrst assume rj(0)⁄= 0.  From the claim, we know
+that  the  coeﬃcient  of xk  in Aj(x)  has  positive  2-adic  value  if  0≤ k ≤ j− 2  while  the
+2-adic valuation of the coeﬃcient of xj−1 is precisely zero.  Since the 2-adic value of 2n−2n!
+is clearly positive it follows that (j− 1, 0) is a vertex of Nν2 (rj).  Moreover, any edge to the
+left of the vertical line x =j− 1 has negative slope.  Using Equation (3.20) we see that the
+only edge of the Newton Polygon of rj having positive slope connects the point (j− 1, 0) to
+(j + 1,n− 2 +ν2(n!), and it has slope equal to (n− 2 +ν2(n!))/2> 1 (sincen≥ 5).  On the
+other hand the slopes of Nν2 (gn(x)) belong to the half open interval [0, 1) by Proposition
+3.22.  Therefore gn(x) and rj(x) have no common zeroes by Corollary ??.
+
+
+                                                       22
+
+    Now assume that rj(0) = 0.  Choose 1≤j≤j− 2 such that xk|rj(x) but xk+1 ∤rj(x).
+Since gn(0)⁄= 0 we need only show that gn(x) and sj(x) =rj(x)/xk have no common roots.
+The argument used above also works for sj(x).  This time, any edge of Nν2 (sj(x)) to left of
+the vertical line x = j− 1−k has non positive slope, while the only edge of postive slope
+connecting (j− 1−k, 0) to (j + 1−k,n− 2 +ν2(n!)) has slope greater than one.  Therefore
+gn(x) and sj(x) have no common zeroes by Corollary ??
+    Now supposen is odd, and setj = (n−1)/2.  A similar calculation to the one done above
+shows that
+                                        rj(x) =Aj(x) + 2n−1n!xj
+Once again, in order to prove the theorem, it suﬃces to show thatrj andgn have no roots in
+common.  Assume Aj(0⁄= 0.  Condition (2) from the claim shows that Nν2 (rj(x)) has only
+one edge of positive slope.  This edge,  which connects (j− 1, 0) to (j,n− 1 +ν2(n!),  has
+slope greater than 1.  So once again the Newton polygon of gn does not have any edges with
+slopes in common with that of rj(x) and therefore the two polynomials have no common
+zeroes by Corollary ??.  If Aj(0) = 0 we consider sj(x) = rj(x)/xk  where 1≤ k≤ j− 2 is
+chosen so that xk| rj(x) but xk+1 ∤ rj(x).  The same argument shows that Nν2 (sj(x)) has
+only one edge of positive slope, and that this slope is greater than one.  Therefore gn(x) and
+sj(x) have no common zeroes.
+    Let us now prove the claim using induction on j.  For the base case we will construct
+r1(x) andr2(x).  Then in the inductive step, we will show howrj+1(x) can be obtained from
+rj(x) and rj−1(x) assuming those polynomials exist.
+    We ﬁrst consider the case j  = 1.  The leading coeﬃcient of gn(x) is (2n− 1)!!n! while
+the  leading  coeﬃcient  of gn−1(x)  is  equal  to  (2n− 3)!!(n− 1)!.   We  therefore  set  ˜r1(x)  =
+fn(x)− (2n− 1)nxfn−1(x).  First of all, observe that
+
+                                            n−1∑
+                  (2n− 1)nxfn−1(x) =            (2k− 1)!!(2n− 1)n    (n− 1)!(n− 1−k)!xk+1
+                                            k=0
+                                             n∑
+                                         =      (2k− 3)!!(2n− 1)n(n− 1)!(n−k)!xk
+                                            k=1
+                                             n∑
+                                         =      (2k− 3)!!(2n− 1)bn,kxk
+                                            k=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     23
+
+Now calculating ˜r1(x) we have:
+
+                                      n∑
+                      ˜r1(x) = 1 +       ((2k− 1)!!− (2n− 1)(2n− 3)!!)bn,kxk
+                                     k=1
+                                      n∑
+                             = 1 +       (2k− 3)!!((2k− 1)− (2n− 1))bn,kxk
+                                     k=1
+                                       n−1∑
+                             = 1 + 2       (2k− 3)!!(k−n)bn,kxk
+                                       k=1
+                                         n−1∑
+                             = 1− 2n        (2k− 3)!!bn−1,kxk
+                                         k=1
+    Note that the leading coeﬃcient of ˜r1(x) is equal to−2n!(2n− 5)!!.  Next, we reduce the
+degree of ˜r1(x) by computing (2n− 3)˜r1(x) + 2ngn−1(x):
+
+
+
+                                                           n−2∑
+(2n− 3)˜r1(x) + 2ngn−1(x) = (2n− 3) + 2n + 2n                  [(2k− 1)!− (2n− 3)(2k− 3)!]bn−1,kxk
+                                                           k=1
+                                                  n−2∑
+                                = 4n− 3 + 2n          (2k− 3)!! [(2k− 1)− (2n− 3)]bn−1,kxk
+                                                  k=1
+                                                             n−2∑
+                                = (4n− 3)− 4n(n− 1)              (2k− 3)!!bn−2,kxk
+                                                             k=1
+                                                       n−2∑
+                                = (4n− 3)− 4bn,2           (2k− 3)!!bn−2,kxk
+                                                       k=1
+We setA1 = 3− 4n andr1(x) =−((2n− 3)˜r1(x) + 2ngn−1(x))∈ (gn,gn−1).  Note that A1 is
+an odd integer, and therefore has 2-adic value equal to zero.  If we factor out an x from the
+sum and reindex we ﬁnd that
+
+                                          n−2∑
+                  r1(x) =A1 + 4bn,2x          (2(k− 1)− 1)!!        (n− 2)!(n− 3− (k + 1))!xk−1
+                                          k=1
+                                          n−3∑
+                         =A1 + 4bn,3x         (2k− 1)!bn−3,kxk
+                                          k=0
+                         =A1 + 4bn,3gn−3(x)
+
+    Next,  we  use r1(x)  and gn−1(x)  to  construct r2(x).   We  ﬁrst  observe  that  the  leading
+coeﬃcient of r2(x) is equal to 4n(2n− 7)!!.  Therefore we set
+
+                            ˜r2(x) = 4ngn−1(x)− (2n− 3)(2n− 5)xr1(x)
+
+
+
+                                                     24
+
+Note that ˜r2(x)≡−A1x  mod 2≡x  mod 2.  It follows that
+
+                                n−2∑
+        ˜r2(x) =  ˜A2(x) + 4n       [(2k− 1)!!− (2n− 3)(2n− 5)(2k− 5)!!]bn−1,kxk            (3.21)
+                                k=2
+
+where  ˜A2(x)∈ Z[x] and  ˜A2(x)≡ x  mod 2.  The diﬀerence inside the brackets appearing
+in Equation (3.21) can be simpliﬁed as (2n− 5)!! [(2k− 1)(2k− 3)− (2n− 3)(2n− 5)] and
+simplifying further we ﬁnd that
+
+             (2k− 1)(2k− 3)− (2n− 3)(2n− 5) = (2k− 1) [(2k− 3)− (2n− 5)]
+                                                         + (2n− 5)[(2k− 1)(2k− 3)]
+                                                         = (2k− 2n + 2) [2k + 2n− 6]
+                                                         =−4(n− 1−k)(k +n− 3)
+
+Since (n− 1−k)bn−1,k = (n− 1)bn−2,k it follows that
+
+                                                 n−2∑
+                      ˜r2(x) =  ˜A2(x)− 16bn,2       (2k− 5)!!(k +n− 3)bn−2,kxk
+                                                 k=2
+
+    Next  we  calculate  ˜˜r2(x)  =  (2n− 7)˜r2(x) + 4(2n− 5)r1(x).   Observe  that  the  sum  is
+congruent modulo 2 to x.  Setting C(k) =k +n− 3 we have
+
+
+
+                                  n−3∑
+       ˜˜r2(x) =  ˜˜A2(x) + 16bn,2    [(2k− 3)!!(2n− 5)− (2n− 7)(2k− 5)!!C(k)]bn−2,kxk
+
+                                  k=2
+                                  n−3∑
+              =  ˜˜A2(x) + 16bn,2     (2k− 5)!! [(2k− 3)(2n− 5)− (2n− 7)C(k)]bn−2,kxk
+                                  k=2
+
+where   ˜˜A2(x)  is  a  linear  integer  polynomial  and   ˜˜A2(x)≡ x  mod 2.   Now  setting D(k)  =
+(2k− 3)(2n− 5)− (2n− 7)C(k) we calculate D(k):
+
+               D(k) = (2n− 5) [(2k− 3)− (2n− 7)] + (2n− 7) [(2n− 5)−C(k)]
+                     = (2n− 5)(2k− 2n + 4) + (2n− 7)(n− 2−k)
+                     =−(n− 2−k)(2n− 3)
+
+Since (n− 2−k)bn−2,k = (n− 2)bn−3,k it follows that
+
+                                                                            n−2∑
+        (2n− 7)˜r2(x) + 4(2n− 5)r1(x) =  ˜˜A2(x)− 16bn,3(2n− 3)                 (2k− 5)!!bn−3,kxk
+                                                                            k=2
+
+Set A2(x) =− ˜˜A2(x)/(2n− 3) and r2(x) =A2(x) + 16bn,3∑n−3k=2(2k− 5)!!bn−3,kxk.  It follows
+from above that r2(x)∈ (gn,gn−1) and that A2(x) is a rational linear polynomial satisfying
+
+
+                                                     25
+
+condition (2) of the claim above.  Moreover, dividing out x2  from the sum and reindexing
+gives r2(x) =A2(x) + 16bn,5gn−5(x).
+    Now assume that rj(x) and rj−1(x) have been constructed for some 2≤j < n2− 1.  We
+have
+
+                                                       n−j∑
+                   rj−1(x) =Aj−1(x) + 4j−1bn,j              (2k− (2j− 1))!!bn−j,kxk
+                                                      k=j−1
+                                                   n−j−1∑
+                      rj(x) =Aj(x) + 4jbn,j+1            (2k− (2j + 1))!!bn−(j+1),kxk
+                                                    k=j
+
+Observe that the leading coeﬃcient of rj−1(x) is equal to 4j−1n!(2n− 4j + 1)!! and that the
+leading coeﬃcient ofrj(x) is equal to 4jn!(2n−4j−3)!!.  We setB = (2n−4j+1)(2n−4j−1)
+and deﬁne ˜rj+1(x) = 4rj−1(x)−Bxrj(x).  If we let
+                 ˜Aj+1(x) = 4Aj−1(x) + 4jbn,j[bn−j,j−1xj−1 +bn−j,jxj] +BxAj(x)
+
+then
+
+                                     n−j−1∑
+         ˜rj+1 =  ˜Aj+1(x) + 4jbn,j         [(2k− (2j− 1))!!−B(2k− (2j + 3))!!]bn−j,kxk
+                                     k=j+1
+
+    Since B  is odd and since the 2-adic valuation of the leading coeﬃcient of Aj(x) is zero
+it follows that  ˜Aj+1(x) has degree j  and that the 2-adic valuation of its leading coeﬃcient
+is  zero.   Moreover,  the  other  coeﬃcients  of   ˜Aj+1(x)  are  sums  of  rational  numbers  having
+positive 2-adic valuation,  and therefore also have positive 2-adic valuation.  Now set C  =
+(2k− 2j + 1)(2k− 2j− 1) and observe that
+
+                      C−B = (2k− 2j + 1) [(2k− 2j− 1)− (2n− 4j− 1)]
+                              + (2n− 4j− 1) [2k− 2j + 1− (2n− 4j + 1)]
+                              = 2(k− (n−j)) [(2k− 2j + 1) + (2n− 4j− 1)]
+                              =−2(n−j−k)(2k + 2n− 6j)
+                              =−4(n−j−k)(k +n− 3j)
+
+If we set D(k) =k +n− 3j then it follows from above that
+
+                                           n−j−1∑
+                  ˜rj+1 =  ˜Aj+1 + 4jbn,j        (2k− 2j− 3)!!(C−B)bn−j,kxk
+                                           k=j+1
+                                                n−j−1∑
+                        =  ˜Aj+1− 4j+1bn,j+1          (2k− 2j− 3)!!D(k)bn−(j+1),kxk
+                                                k=j+1
+
+    Next, we set ˜˜rj+1(x) = (2n− 4j− 3)˜rj+1(x) + 4D(n−j− 1)rj(x).  If we set  ˜˜Aj+1(x) =
+
+
+                                                     26
+
+(2n− 4j− 3) ˜Aj+1(x) + 4D(n−j− 1)(Aj(x) + 4jbn,j+1·bn−j−1,jxj then
+
+                                                   n−j−2∑
+                 ˜˜rj+1 =  ˜˜Aj+1(x) + 4j+1bn,j+1        (2k− 2j− 3)!!E(k)bn−j−1,kxk
+
+                                                   k=j+1
+
+whereE(k) = (2k−2j−1)D(n−j−1)−(2n−4j−3)D(k).  Observer that since (2n−4j−3)
+is odd and since every coeﬃcient of 4D(n−j− 1)(Aj(x) + 4jbn,j+1·bn−j−1,jxj  has positive
+2-adic valuation the leading coeﬃcient of  ˜˜Aj+1(x) has 2 adic valuation equal to zero while
+the other coeﬃcients have positive 2-adic valuation.  Let us now simplify E(k):
+
+
+E(k) =D(n−j− 1) [(2k− 2j− 1)− (2n− 4j− 3)] + (2n− 4j− 3) [D(n−j− 1)−D(k)]
+       = 2(k− (n− (j + 1))D(n−j− 1) + (2n− 4j− 3) [(2n− 4j− 1)− (k +n− 3j)]
+       = 2(k− (n− (j + 1))D(n−j− 1) + (2n− 4j− 3)(n− (j + 1)−k)
+       = (k− (n− (j + 1))[2(2n− 4j− 1)− (2n− 4j− 3)]
+       =−(n− (j + 1)−k)(2n− 4j + 1)
+
+It now follows that
+
+                                                             n−j−2∑
+           ˜˜rj+1 =  ˜˜Aj+1(x)− 4j+1(2n− 4j + 1)bn,j+2             (2k− 2j− 3)!!bn−(j+2),kxk
+
+                                                             k=j+1
+
+Finally, we set Aj+1(x) =− ˜˜Aj+1(x)/(2n− 4j + 1) and rj+1(x) =−˜˜rj+1/(2n− 4j + 1).  It
+follows from above that
+
+
+
+                                                     n−j−2∑
+                rj+1(x) =Aj+1(x) + 4j+1bn,j+2              (2k− 2j− 3)!!bn−(j+2),kxk
+                                                     k=j+1
+                                                           n−(2j+3∑
+                          =Aj+1(x) + 4j+1bn,2j+3xj+1               (2k− 1)!!bn−(2j+3),kxk
+                                                              k=0
+                          =Aj+1(x) + 4j+1bn,2j+3xj+1gn−(2j+3)(x)
+
+Since 2n− 4j + 1 is an odd integer the 2-adic valuations of the coeﬃcients of  ˜˜Aj+1(x) are
+unaﬀected  when  passing  to Aj+1(x)  and  therefore Aj+1(x)  satisﬁes  the  conditions  of  the
+claim made at the beginning of the proof.
+
+
+ [1]  Callan,  D.,  2009.  A  combinatorial  survey  of  identities  for  the  double  factorial.  arXiv
+     preprint arXiv:0906.1317.
+
+ [2]  Conca,  A.,  Krattenthaler,  C.,  Watanabe,  J.,  2008.  Regular  sequences  of  symmetric
+     polynomials. arXiv preprint arXiv:0801.2662.
+
+                                                     27
+
+ [3]  Cox, D., Little, J., O’Shea, D., 1992. Ideals, varieties, and algorithms. Undergraduate
+     Texts  in  Mathematics.  Springer-Verlag,  New  York,  an  introduction  to  computational
+     algebraic geometry and commutative algebra.
+     URL http://dx.doi.org/10.1007/978-1-4757-2181-2
+
+ [4]  Dumas,  G.,  1906.  Sur  quelques  cas  d’irr´eductibilit´e  des  polynˆomes  `a  coeﬃcients  ra-
+     tionnels. Journal de Math´ematiques Pures et Appliqu´ees, 191–258.
+
+ [5]  Edo, E., van den Essen, A., 2014. The strong factorial conjecture. J. Algebra 397, 443–
+     456.
+     URL http://dx.doi.org/10.1016/j.jalgebra.2013.09.011
+
+ [6]  Furter,  J.-P.,  2013.  Polynomial  composition  rigidity  and  plane  polynomial  automor-
+     phisms. Unpublished preprint.
+     URL http://perso.univ-lr.fr/jpfurter
+
+ [7]  Gelfand,  I.  M.,  Kapranov,  M.,  Zelevinsky,  A.,  2008.  Discriminants,  resultants,  and
+     multidimensional determinants. Springer Science & Business Media.
+
+ [8]  Meserve, B. E., 1948. Classroom Notes: Double Factorials. Amer. Math. Monthly 55 (7),
+     425–426.
+     URL http://dx.doi.org/10.2307/2306136
+
+ [9]  Mott, J. L., 1995. Eisenstein-type irreducibility criteria. In:  Zero-dimensional commu-
+     tative rings (Knoxville, TN, 1994). Vol. 171 of Lecture Notes in Pure and Appl. Math.
+     Dekker, New York, pp. 307–329.
+
+[10]  Paule, P., Schorn, M., 1995. fastZeil package for Mathematica. http://www.risc.jku.
+     at/research/combinat/risc/software/.
+
+[11]  Petkovˇsek, M., Wilf, H. S., Zeilberger, D., 1996. A= B, AK Peters Ltd. Vol. 30.
+
+[12]  van den Essen, A., 2000. Polynomial automorphisms and the Jacobian conjecture. Vol.
+     190 of Progress in Mathematics. Birkh¨auser Verlag, Basel.
+     URL http://dx.doi.org/10.1007/978-3-0348-8440-2
+
+[13]  van den Essen, A., Wright, D., Zhao, W., 2011. On the image conjecture. J. Algebra
+     340, 211–224.
+     URL http://dx.doi.org/10.1016/j.jalgebra.2011.04.036
+
+[14]  Zhao, W., 2010. Images of commuting diﬀerential operators of order one with constant
+     leading coeﬃcients. J. Algebra 324 (2), 231–247.
+     URL http://dx.doi.org/10.1016/j.jalgebra.2010.04.022
+
+
+
+
+
+
+
+
+                                                     28

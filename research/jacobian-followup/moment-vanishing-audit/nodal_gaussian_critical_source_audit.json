@@ -1,0 +1,37 @@
+{
+  "claim": "G3NODALCRITICAL20261114",
+  "date": "2026-11-14",
+  "result_kind": "Algebraic critical-point and action classification; no new nonhomogeneous GMC exclusion.",
+  "retained_work_reviewed": [
+    "NODAL_NEWTON_EXCLUSION.md: completed homogeneous cubic theorem, exact seed rescaling and fixed-phase boundary.",
+    "NODAL_CUBIC_REDUCTION.md: affine critical partition and the width-t negative control.",
+    "COERCIVE_GRADIENT_MOMENTS.md: local finite-critical power-log framework and its separate complex coercivity hypothesis.",
+    "Current OP-GMC3-CUBIC and WORK-GMC3-CUBIC scopes."
+  ],
+  "primary_source": {
+    "author": "Frederic Pham",
+    "title": "La descente des cols par les onglets de Lefschetz, avec vues sur Gauss-Manin",
+    "publication": "Asterisque130 (1985),11-47",
+    "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+    "cache": "sources/pham_asterisque_1985_130_11.pdf",
+    "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+    "reading_coverage": "PartI opening and Section1 setup (printed11-12); PartII finite-critical family setup and Section1.1 local truncated Laplace/regular-singular expansion and integrability footnote (printed22-25); Appendix construction and convergence argument (printed41-44). These selected sections, not the whole manuscript, were read.",
+    "supported_boundary": "Local isolated-critical Laplace periods have power-log asymptotics with positive decay exponents; semialgebraic rapid-decay chains have fixed-phase convergence. The new algebraic profile theorem does not require an unproved global analytic transfer from these facts.",
+    "not_supplied": "A uniform-in-t global sectorial decomposition for the Gaussian nodal degeneration, polynomial tail bounds jointly in t and cut length, or a center-line weighted-period theorem."
+  },
+  "literature_search_boundary": "Targeted searches for Newton/subdiagram deformations, nodal Gaussian moments and Hardt triviality returned the retained Douai-Sabbah/Long/Wilson sources and Hardt metadata/secondary statements. No new general deformation theorem or Hardt theorem is imported; no full Hardt article read, exhaustive bibliographic sweep or priority claim.",
+  "new_exact_argument": "After full affine normalization and retention of the metric and means, the Gaussian-perturbed phase has seven finite critical points for every t!=0 by the simple projective infinity node and Bezout. Four normal-form profiles have finite Milnor sums6,4,3,2 and escaping branch counts1,3,4,5. Exact rescaling and the implicit function theorem give all branch actions and Morse Hessians. Their counts exhaust seven. On h=e=f=0 all phase-critical points stay bounded and their axis limits obey (m*T+l_T)*(T^2-4bc)=0.",
+  "compact_width": "Exact Gaussian completion gives Phi_ss->1/m on compact u in C* and bounded s. This rules out the old width-t model on that compact chart only; u endpoints and s=t*h remain outside the estimate.",
+  "critical_action_normalization": "For the fractional profiles the full action is k*t plus a nonzero t^(2/n) term. The common k*t must be removed before the scaled limit. Opposite fourth roots can have equal leading actions; no distinct-critical-value hypothesis is inferred.",
+  "failed_inputs": [
+    "nodal_gaussian_critical_initial_failure.json",
+    "nodal_gaussian_critical_v2_failure.json"
+  ],
+  "checker_sha256": "b74b10642556211a64cd2a2e1f0324f696d77672d3d81e94ba8d3077f4c6fd0c",
+  "proof_boundary": "The universal Bezout count, conservation of finite Milnor multiplicities, exhaustiveness from degree seven, and the center-line boundedness/limit argument remain written proofs. Symbolic identities and a single exact gradient quotient are not their formal verification.",
+  "analytic_boundary": "No new GMC class excluded. Counts, Puiseux actions and local Morse Hessians do not by themselves prove a uniform sectorial decomposition or eliminate a constant period. The center-line Gaussian-weighted analysis remains open.",
+  "next_gate": "Prove a uniform sectorial splitting of the finite Milnor and listed escape Morse blocks, with polynomial tail bounds jointly in t and cut length; separately control the Gaussian-weighted center line and transverse-Hessian degeneracies. Algebraic rank accounting and fixed-t convergence alone do not close this gate.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

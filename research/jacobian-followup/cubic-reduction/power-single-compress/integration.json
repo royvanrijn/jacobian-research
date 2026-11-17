@@ -1,0 +1,13 @@
+{
+  "all_single_new_forms_excluded": true,
+  "claim": "KCUB7",
+  "global_dimension_optimality": false,
+  "links": true,
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "source_hashes": true,
+  "status": "pass",
+  "umbrella_status": "open",
+  "unit_identities": 86,
+  "validation_sha256": "6b0cd0d825eaa1c1ceba036fcf97723eef4963e8249a5dfc58836527d4691c85"
+}

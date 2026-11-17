@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 47.15 (0A7A): Dualizing complexes&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELV" data-tag="0ELV">3</a>: Topics in Scheme Theory
+    
+  
+    <li>Chapter <a href="/tag/08XG" data-tag="08XG">47</a>: Dualizing Complexes
+    
+  
+    <li class="active">Section <a href="/tag/0A7A" data-tag="0A7A">47.15</a>: Dualizing complexes
+    <span id="citation">(<a href="/tag/0A7A/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0E28">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0A7M">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="dualizing-section-dualizing" class="tex-section"><span data-tag="0A7A">47.15</span> Dualizing complexes</h2>
+
+<p>
+In this section we define dualizing complexes for Noetherian rings. 
+</p>
+<p>
+<article class="env-definition" id="0A7B">
+  <p><a class="environment-identifier" href="/tag/0A7B">Definition <span data-tag="0A7B">47.15.1</span>.</a> Let $A$ be a Noetherian ring. A <em>dualizing complex</em> is a complex of $A$-modules $\omega _ A^\bullet $ such that </p>
+  <p><ol>
+  <li><p>
+$\omega _ A^\bullet $ has finite injective dimension, 
+</p>
+</li><li><p>
+$H^ i(\omega _ A^\bullet )$ is a finite $A$-module for all $i$, and 
+</p>
+</li><li><p>
+$A \to R\mathop{\mathrm{Hom}}\nolimits _ A(\omega _ A^\bullet , \omega _ A^\bullet )$ is a quasi-isomorphism. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+This definition takes some time getting used to. It is perhaps a good idea to prove some of the following lemmas yourself without reading the proofs. 
+</p>
+<p>
+<article class="env-lemma" id="0G4H">
+  <p><a class="environment-identifier" href="/tag/0G4H">Lemma <span data-tag="0G4H">47.15.2</span>.</a> Let $A$ be a Noetherian ring. Let $K, L \in D_{\textit{Coh}}(A)$ and assume $L$ has finite injective dimension. Then $R\mathop{\mathrm{Hom}}\nolimits _ A(K, L)$ is in $D_{\textit{Coh}}(A)$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Pick an integer $n$ and consider the distinguished triangle 
+    <p>
+      <div class="equation">
+  \[  \tau _{\leq n}K \to K \to \tau _{\geq n + 1}K \to \tau _{\leq n}K[1]  \]
+</div>
+    <p>
+       see Derived Categories, Remark <a href="/tag/08J5" data-tag="08J5">13.12.4</a>. Since $L$ has finite injective dimension we see that $R\mathop{\mathrm{Hom}}\nolimits _ A(\tau _{\geq n + 1}K, L)$ has vanishing cohomology in degrees $\geq c - n$ for some constant $c$. Hence, given $i$, we see that $\mathop{\mathrm{Ext}}\nolimits ^ i_ A(K, L) \to \mathop{\mathrm{Ext}}\nolimits ^ i_ A(\tau _{\leq n}K, L)$ is an isomorphism for some $n \gg - i$. By Derived Categories of Schemes, Lemma <a href="/tag/0D0C" data-tag="0D0C">36.11.5</a> applied to $\tau _{\leq n}K$ and $L$ we see conclude that $\mathop{\mathrm{Ext}}\nolimits ^ i_ A(K, L)$ is a finite $A$-module for all $i$. Hence $R\mathop{\mathrm{Hom}}\nolimits _ A(K, L)$ is indeed an object of $D_{\textit{Coh}}(A)$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0A7C">
+  <p><a class="environment-identifier" href="/tag/0A7C">Lemma <span data-tag="0A7C">47.15.3</span>.</a> Let $A$ be a Noetherian ring. If $\omega _ A^\bullet $ is a dualizing complex, then the functor </p>
+  <div class="equation">
+  \[  D : K \longmapsto R\mathop{\mathrm{Hom}}\nolimits _ A(K, \omega _ A^\bullet )  \]
+</div>
+  <p> is an anti-equivalence $D_{\textit{Coh}}(A) \to D_{\textit{Coh}}(A)$ which exchanges $D^+_{\textit{Coh}}(A)$ and $D^-_{\textit{Coh}}(A)$ and induces an anti-equivalence $D^ b_{\textit{Coh}}(A) \to D^ b_{\textit{Coh}}(A)$. Moreover $D \circ D$ is isomorphic to the identity functor. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $K$ be an object of $D_{\textit{Coh}}(A)$. From Lemma <a href="/tag/0G4H" data-tag="0G4H">47.15.2</a> we see $R\mathop{\mathrm{Hom}}\nolimits _ A(K, \omega _ A^\bullet )$ is an object of $D_{\textit{Coh}}(A)$. By More on Algebra, Lemma <a href="/tag/0A69" data-tag="0A69">15.100.2</a> and the assumptions on the dualizing complex we obtain a canonical isomorphism 
+    <p>
+      <div class="equation">
+  \[  K = R\mathop{\mathrm{Hom}}\nolimits _ A(\omega _ A^\bullet , \omega _ A^\bullet ) \otimes _ A^\mathbf {L} K \longrightarrow R\mathop{\mathrm{Hom}}\nolimits _ A(R\mathop{\mathrm{Hom}}\nolimits _ A(K, \omega _ A^\bullet ), \omega _ A^\bullet )  \]
+</div>
+    <p>
+       Thus our functor has a quasi-inverse and the proof is complete. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Let $R$ be a ring. Recall that an object $L$ of $D(R)$ is <em>invertible</em> if it is an invertible object for the symmetric monoidal structure on $D(R)$ given by derived tensor product. In More on Algebra, Lemma <a href="/tag/0FNT" data-tag="0FNT">15.128.4</a> we have seen this means $L$ is perfect, $L = \bigoplus H^ n(L)[-n]$, this is a finite sum, each $H^ n(L)$ is finite projective, and there is an open covering $\mathop{\mathrm{Spec}}(R) = \bigcup D(f_ i)$ such that $L \otimes _ R R_{f_ i} \cong R_{f_ i}[-n_ i]$ for some integers $n_ i$. 
+</p>
+<p>
+<article class="env-lemma" id="0A7E">
+  <p><a class="environment-identifier" href="/tag/0A7E">Lemma <span data-tag="0A7E">47.15.4</span>.</a> Let $A$ be a Noetherian ring. Let $F : D^ b_{\textit{Coh}}(A) \to D^ b_{\textit{Coh}}(A)$ be an $A$-linear equivalence of categories. Then $F(A)$ is an invertible object of $D(A)$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $\mathfrak m \subset A$ be a maximal ideal with residue field $\kappa $. Consider the object $F(\kappa )$. Since $\kappa = \mathop{\mathrm{Hom}}\nolimits _{D(A)}(\kappa , \kappa )$ we find that all cohomology groups of $F(\kappa )$ are annihilated by $\mathfrak m$. We also see that 
+    <p>
+      <div class="equation">
+  \[  \mathop{\mathrm{Ext}}\nolimits ^ i_ A(\kappa , \kappa ) = \text{Ext}^ i_ A(F(\kappa ), F(\kappa )) = \mathop{\mathrm{Hom}}\nolimits _{D(A)}(F(\kappa ), F(\kappa )[i])  \]
+</div>
+    <p>
+       is zero for $i < 0$. Say $H^ a(F(\kappa )) \not= 0$ and $H^ b(F(\kappa )) \not= 0$ with $a$ minimal and $b$ maximal (so in particular $a \leq b$). Then there is a nonzero map 
+    <p>
+      <div class="equation">
+  \[  F(\kappa ) \to H^ b(F(\kappa ))[-b] \to H^ a(F(\kappa ))[-b] \to F(\kappa )[a - b]  \]
+</div>
+    <p>
+       in $D(A)$ (nonzero because it induces a nonzero map on cohomology). This proves that $b = a$. We conclude that $F(\kappa ) = \kappa [-a]$. 
+    <p>
+      Let $G$ be a quasi-inverse to our functor $F$. Arguing as above we find an integer $b$ such that $G(\kappa ) = \kappa [-b]$. On composing we find $a + b = 0$. Let $E$ be a finite $A$-module which is annihilated by a power of $\mathfrak m$. Arguing by induction on the length of $E$ we find that $G(E) = E'[-b]$ for some finite $A$-module $E'$ annihilated by a power of $\mathfrak m$. Then $E[-a] = F(E')$. Next, we consider the groups 
+    <p>
+      <div class="equation">
+  \[  \mathop{\mathrm{Ext}}\nolimits ^ i_ A(A, E') = \text{Ext}^ i_ A(F(A), F(E')) = \mathop{\mathrm{Hom}}\nolimits _{D(A)}(F(A), E[-a + i])  \]
+</div>
+    <p>
+       The left hand side is nonzero if and only if $i = 0$ and then we get $E'$. Applying this with $E = E' = \kappa $ and using Nakayama's lemma this implies that $H^ j(F(A))_\mathfrak m$ is zero for $j > a$ and generated by $1$ element for $j = a$. On the other hand, if $H^ j(F(A))_\mathfrak m$ is not zero for some $j < a$, then there is a map $F(A) \to E[-a + i]$ for some $i < 0$ and some $E$ (More on Algebra, Lemma <a href="/tag/0A7D" data-tag="0A7D">15.67.7</a>) which is a contradiction. Thus we see that $F(A)_\mathfrak m = M[-a]$ for some $A_\mathfrak m$-module $M$ generated by $1$ element. However, since 
+    <p>
+      <div class="equation">
+  \[  A_\mathfrak m = \mathop{\mathrm{Hom}}\nolimits _{D(A)}(A, A)_\mathfrak m = \mathop{\mathrm{Hom}}\nolimits _{D(A)}(F(A), F(A))_\mathfrak m = \mathop{\mathrm{Hom}}\nolimits _{A_\mathfrak m}(M, M)  \]
+</div>
+    <p>
+       we see that $M \cong A_\mathfrak m$. We conclude that there exists an element $f \in A$, $f \not\in \mathfrak m$ such that $F(A)_ f$ is isomorphic to $A_ f[-a]$. This finishes the proof. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0A7F">
+  <p><a class="environment-identifier" href="/tag/0A7F">Lemma <span data-tag="0A7F">47.15.5</span>.</a> Let $A$ be a Noetherian ring. If $\omega _ A^\bullet $ and $(\omega '_ A)^\bullet $ are dualizing complexes, then $(\omega '_ A)^\bullet $ is quasi-isomorphic to $\omega _ A^\bullet \otimes _ A^\mathbf {L} L$ for some invertible object $L$ of $D(A)$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Lemmas <a href="/tag/0A7C" data-tag="0A7C">47.15.3</a> and <a href="/tag/0A7E" data-tag="0A7E">47.15.4</a> the functor $K \mapsto R\mathop{\mathrm{Hom}}\nolimits _ A(R\mathop{\mathrm{Hom}}\nolimits _ A(K, \omega _ A^\bullet ), (\omega _ A')^\bullet )$ maps $A$ to an invertible object $L$. In other words, there is an isomorphism 
+    <p>
+      <div class="equation">
+  \[  L \longrightarrow R\mathop{\mathrm{Hom}}\nolimits _ A(\omega _ A^\bullet , (\omega _ A')^\bullet )  \]
+</div>
+    <p>
+       Since $L$ has finite tor dimension, this means that we can apply More on Algebra, Lemma <a href="/tag/0A69" data-tag="0A69">15.100.2</a> to see that 
+    <p>
+      <div class="equation">
+  \[  R\mathop{\mathrm{Hom}}\nolimits _ A(\omega _ A^\bullet , (\omega '_ A)^\bullet ) \otimes _ A^\mathbf {L} K \longrightarrow R\mathop{\mathrm{Hom}}\nolimits _ A(R\mathop{\mathrm{Hom}}\nolimits _ A(K, \omega _ A^\bullet ), (\omega _ A')^\bullet )  \]
+</div>
+    <p>
+       is an isomorphism for $K$ in $D^ b_{\textit{Coh}}(A)$. In particular, setting $K = \omega _ A^\bullet $ finishes the proof. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0A7G">
+  <p><a class="environment-identifier" href="/tag/0A7G">Lemma <span data-tag="0A7G">47.15.6</span>.</a> Let $A$ be a Noetherian ring. Let $B = S^{-1}A$ be a localization. If $\omega _ A^\bullet $ is a dualizing complex, then $\omega _ A^\bullet \otimes _ A B$ is a dualizing complex for $B$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $\omega _ A^\bullet \to I^\bullet $ be a quasi-isomorphism with $I^\bullet $ a bounded complex of injectives. Then $S^{-1}I^\bullet $ is a bounded complex of injective $B = S^{-1}A$-modules (Lemma <a href="/tag/0A6I" data-tag="0A6I">47.3.8</a>) representing $\omega _ A^\bullet \otimes _ A B$. Thus $\omega _ A^\bullet \otimes _ A B$ has finite injective dimension. Since $H^ i(\omega _ A^\bullet \otimes _ A B) = H^ i(\omega _ A^\bullet ) \otimes _ A B$ by flatness of $A \to B$ we see that $\omega _ A^\bullet \otimes _ A B$ has finite cohomology modules. Finally, the map 
+    <p>
+      <div class="equation">
+  \[  B \longrightarrow R\mathop{\mathrm{Hom}}\nolimits _ A(\omega _ A^\bullet \otimes _ A B, \omega _ A^\bullet \otimes _ A B)  \]
+</div>
+    <p>
+       is a quasi-isomorphism as formation of internal hom commutes with flat base change in this case, see More on Algebra, Lemma <a href="/tag/0A6A" data-tag="0A6A">15.101.2</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0A7H">
+  <p><a class="environment-identifier" href="/tag/0A7H">Lemma <span data-tag="0A7H">47.15.7</span>.</a> Let $A$ be a Noetherian ring. Let $f_1, \ldots , f_ n \in A$ generate the unit ideal. If $\omega _ A^\bullet $ is a complex of $A$-modules such that $(\omega _ A^\bullet )_{f_ i}$ is a dualizing complex for $A_{f_ i}$ for all $i$, then $\omega _ A^\bullet $ is a dualizing complex for $A$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Consider the double complex 
+    <p>
+      <div class="equation">
+  \[  \prod \nolimits _{i_0} (\omega _ A^\bullet )_{f_{i_0}} \to \prod \nolimits _{i_0 < i_1} (\omega _ A^\bullet )_{f_{i_0}f_{i_1}} \to \ldots  \]
+</div>
+    <p>
+       The associated total complex is quasi-isomorphic to $\omega _ A^\bullet $ for example by Descent, Remark <a href="/tag/023O" data-tag="023O">35.3.10</a> or by Derived Categories of Schemes, Lemma <a href="/tag/08D2" data-tag="08D2">36.9.4</a>. By assumption the complexes $(\omega _ A^\bullet )_{f_ i}$ have finite injective dimension as complexes of $A_{f_ i}$-modules. This implies that each of the complexes $(\omega _ A^\bullet )_{f_{i_0} \ldots f_{i_ p}}$, $p > 0$ has finite injective dimension over $A_{f_{i_0} \ldots f_{i_ p}}$, see Lemma <a href="/tag/0A6I" data-tag="0A6I">47.3.8</a>. This in turn implies that each of the complexes $(\omega _ A^\bullet )_{f_{i_0} \ldots f_{i_ p}}$, $p > 0$ has finite injective dimension over $A$, see Lemma <a href="/tag/08XQ" data-tag="08XQ">47.3.2</a>. Hence $\omega _ A^\bullet $ has finite injective dimension as a complex of $A$-modules (as it can be represented by a complex endowed with a finite filtration whose graded parts have finite injective dimension). Since $H^ n(\omega _ A^\bullet )_{f_ i}$ is a finite $A_{f_ i}$ module for each $i$ we see that $H^ i(\omega _ A^\bullet )$ is a finite $A$-module, see Algebra, Lemma <a href="/tag/00EO" data-tag="00EO">10.23.2</a>. Finally, the (derived) base change of the map $A \to R\mathop{\mathrm{Hom}}\nolimits _ A(\omega _ A^\bullet , \omega _ A^\bullet )$ to $A_{f_ i}$ is the map $A_{f_ i} \to R\mathop{\mathrm{Hom}}\nolimits _ A((\omega _ A^\bullet )_{f_ i}, (\omega _ A^\bullet )_{f_ i})$ by More on Algebra, Lemma <a href="/tag/0A6A" data-tag="0A6A">15.101.2</a>. Hence we deduce that $A \to R\mathop{\mathrm{Hom}}\nolimits _ A(\omega _ A^\bullet , \omega _ A^\bullet )$ is an isomorphism and the proof is complete. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0AX0">
+  <p><a class="environment-identifier" href="/tag/0AX0">Lemma <span data-tag="0AX0">47.15.8</span>.</a> Let $A \to B$ be a finite ring map of Noetherian rings. Let $\omega _ A^\bullet $ be a dualizing complex. Then $R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet )$ is a dualizing complex for $B$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $\omega _ A^\bullet \to I^\bullet $ be a quasi-isomorphism with $I^\bullet $ a bounded complex of injectives. Then $\mathop{\mathrm{Hom}}\nolimits _ A(B, I^\bullet )$ is a bounded complex of injective $B$-modules (Lemma <a href="/tag/08XR" data-tag="08XR">47.3.4</a>) representing $R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet )$. Thus $R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet )$ has finite injective dimension. By Lemma <a href="/tag/0A72" data-tag="0A72">47.13.4</a> it is an object of $D_{\textit{Coh}}(B)$. Finally, we compute 
+    <p>
+      <div class="equation">
+  \[  \mathop{\mathrm{Hom}}\nolimits _{D(B)}(R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet ), R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet )) = \mathop{\mathrm{Hom}}\nolimits _{D(A)}(R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet ), \omega _ A^\bullet ) = B  \]
+</div>
+    <p>
+       and for $n \not= 0$ we compute 
+    <p>
+      <div class="equation">
+  \[  \mathop{\mathrm{Hom}}\nolimits _{D(B)}(R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet ), R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet )[n]) = \mathop{\mathrm{Hom}}\nolimits _{D(A)}(R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet ), \omega _ A^\bullet [n]) = 0  \]
+</div>
+    <p>
+       which proves the last property of a dualizing complex. In the displayed equations, the first equality holds by Lemma <a href="/tag/0A70" data-tag="0A70">47.13.1</a> and the second equality holds by Lemma <a href="/tag/0A7C" data-tag="0A7C">47.15.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0A7I">
+  <p><a class="environment-identifier" href="/tag/0A7I">Lemma <span data-tag="0A7I">47.15.9</span>.</a> Let $A \to B$ be a surjective homomorphism of Noetherian rings. Let $\omega _ A^\bullet $ be a dualizing complex. Then $R\mathop{\mathrm{Hom}}\nolimits (B, \omega _ A^\bullet )$ is a dualizing complex for $B$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Special case of Lemma <a href="/tag/0AX0" data-tag="0AX0">47.15.8</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0A7J">
+  <p><a class="environment-identifier" href="/tag/0A7J">Lemma <span data-tag="0A7J">47.15.10</span>.</a> Let $A$ be a Noetherian ring. If $\omega _ A^\bullet $ is a dualizing complex, then $\omega _ A^\bullet \otimes _ A A[x]$ is a dualizing complex for $A[x]$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Set $B = A[x]$ and $\omega _ B^\bullet = \omega _ A^\bullet \otimes _ A B$. It follows from Lemma <a href="/tag/0A6J" data-tag="0A6J">47.3.10</a> and More on Algebra, Lemma <a href="/tag/0A5V" data-tag="0A5V">15.71.5</a> that $\omega _ B^\bullet $ has finite injective dimension. Since $H^ i(\omega _ B^\bullet ) = H^ i(\omega _ A^\bullet ) \otimes _ A B$ by flatness of $A \to B$ we see that $\omega _ A^\bullet \otimes _ A B$ has finite cohomology modules. Finally, the map 
+    <p>
+      <div class="equation">
+  \[  B \longrightarrow R\mathop{\mathrm{Hom}}\nolimits _ B(\omega _ B^\bullet , \omega _ B^\bullet )  \]
+</div>
+    <p>
+       is a quasi-isomorphism as formation of internal hom commutes with flat base change in this case, see More on Algebra, Lemma <a href="/tag/0A6A" data-tag="0A6A">15.101.2</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-proposition" id="0A7K">
+  <p><a class="environment-identifier" href="/tag/0A7K">Proposition <span data-tag="0A7K">47.15.11</span>.</a> Let $A$ be a Noetherian ring which has a dualizing complex. Then any $A$-algebra essentially of finite type over $A$ has a dualizing complex. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This follows from a combination of Lemmas <a href="/tag/0A7G" data-tag="0A7G">47.15.6</a>, <a href="/tag/0A7I" data-tag="0A7I">47.15.9</a>, and <a href="/tag/0A7J" data-tag="0A7J">47.15.10</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0A7L">
+  <p><a class="environment-identifier" href="/tag/0A7L">Lemma <span data-tag="0A7L">47.15.12</span>.</a> Let $A$ be a Noetherian ring. Let $\omega _ A^\bullet $ be a dualizing complex. Let $\mathfrak m \subset A$ be a maximal ideal and set $\kappa = A/\mathfrak m$. Then $R\mathop{\mathrm{Hom}}\nolimits _ A(\kappa , \omega _ A^\bullet ) \cong \kappa [n]$ for some $n \in \mathbf{Z}$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is true because $R\mathop{\mathrm{Hom}}\nolimits _ A(\kappa , \omega _ A^\bullet )$ is a dualizing complex over $\kappa $ (Lemma <a href="/tag/0A7I" data-tag="0A7I">47.15.9</a>), because dualizing complexes over $\kappa $ are unique up to shifts (Lemma <a href="/tag/0A7F" data-tag="0A7F">47.15.5</a>), and because $\kappa $ is a dualizing complex over $\kappa $. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (2)</h2>
+
+  
+    <a id="comment-4850" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0A7A#comment-4850">Comment #4850</a>
+        by
+        <cite>Weixiao Lu</cite>
+        on <time datetime="2019-12-20 09:17:46.080845">December 20, 2019 at 09:17 </time>
+      </header>
+
+      <blockquote><p>In the proof of 0A7C, it should be "<script type="math/tex">\ge c - n</script>" instead of "<script type="math/tex">\ge n - c</script>" and "<script type="math/tex">p + q + n &gt; n</script>" instead of "<script type="math/tex">n &gt; p + q + c</script>". </p></blockquote>
+    </article>
+  
+    <a id="comment-5142" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0A7A#comment-5142">Comment #5142</a>
+        by
+        <cite><a href="https://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2020-06-08 15:30:21.294058">June 08, 2020 at 15:30 </time>
+      </header>
+
+      <blockquote><p>Thanks and fixed <a href="https://github.com/stacks/stacks-project/commit/29412b5d7a6c0c1f3ef54cb8004653fcb00b7702">here</a>.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-0A7A",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">0A7A</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="0A7A"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">0A7A</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0E28">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0A7M">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/dualizing.pdf#nameddest=0A7A">View Section <span data-tag="0A7A">47.15</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

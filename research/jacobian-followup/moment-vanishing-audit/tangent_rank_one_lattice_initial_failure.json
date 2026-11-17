@@ -1,0 +1,7 @@
+{
+  "completed": false,
+  "returncode": 1,
+  "input_sha256": "af98d58fe69950922089c2bd5ba63a02b4eac0539f3bd54d7fcb13d67e1c2e1f",
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_tangent_rank_one_lattice.py\", line 156, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_tangent_rank_one_lattice.py\", line 149, in main\n    start=time.monotonic();residue=generic_residue();const=constant_universal();print('Tangent generic residue and constant-D source/filtration passed',flush=True)\n                                   ^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_tangent_rank_one_lattice.py\", line 30, in generic_residue\n    assert s.expand(pole_limit(W,4)-Psi)==0 and s.expand(pole_limit(S,3)-Sigma)==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

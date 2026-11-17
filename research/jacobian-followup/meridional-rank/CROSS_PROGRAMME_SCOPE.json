@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-16",
+  "status": "group_lemma_audited_geometric_exclusion_not_promoted_here",
+  "handoff": "../cross-programme-connections/inward-coupled-restrictions-handoff-2026-11-16.json",
+  "proof": "../cross-programme-connections/INWARD_COUPLED_RESTRICTIONS_2026_11_16.tex",
+  "controls": "../cross-programme-connections/inward-coupled-restrictions-controls-2026-11-16.json",
+  "centralizer_review": {
+    "group": "H_q=Aff(F2^2,F2^q) semidirect S4 on F2^2 direct_sum F2^q",
+    "conclusion": "The permutation centralizer consists exactly of constant radical translations and is (C2)^q; it is trivial for q=0.",
+    "independent_written_check": "Commutation with constant radical translations forces a permutation to have shape (x,z)->(f(x),z+c(x)). For q>0, commutation with every affine function translation forces F(f(x))=F(x) for every affine F: F2^2->F2^q. These functions separate base points, so f(x)=x. Commutation with the transitive base S4 forces c(x) constant. Conversely those translations commute with the full action. For q=0 use the trivial centralizer of the natural S4 action.",
+    "assurance": "Written group argument checked locally; shared finite controls q=0,1,2,3 were inspected, not rerun; no formal or specialist external review."
+  },
+  "geometric_claim_boundary": {
+    "reported_exclusion": "An actual nonautomorphic complex plane Keller map cannot have natural H_q monodromy for q>=2 with every generic branch meridian in the specified edge-reflection class.",
+    "additional_inputs": ["original polynomial-plane source and full finite normalization", "PF128 residual-ramification and universal-cover hypotheses", "PF129 Euler/support budget", "smooth affine intermediate surface of negative logarithmic Kodaira dimension", "Euler characteristic at most two and finite fundamental group", "regular nowhere-zero exact two-form and HC4MYML0 ruling restriction"],
+    "local_adoption": "Centralizer lemma and scope separation only. The surface and Keller proof chain has not received a full independent audit in the knot programme and is not registered as a new knot obstruction.",
+    "not_excluded": ["the H_q knot-group representations already constructed", "the binary full lift-dimension lower bound", "the rank-two radical tower construction", "H_q monodromy with other inertia classes", "the q=1 geometric case", "general higher-rank binary affine actions", "the F5 lift certificates"]
+  },
+  "effect_on_MRC": "No knot target or valid theorem is removed. Preserve the full active MRC goal and pursue certified representations, matching bridge bounds, diagram identity and prior-family audits. No message was sent to another thread."
+}

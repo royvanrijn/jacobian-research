@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "source_sha256": "75261051f19bf6bcd4ec02463e5953223014ed3626d516b047989554ea1e6da3",
+  "producer_checkpoint_sha256": "c90c116a2fd8c5e1144a078cf9c1895a6878274489724d9ff8b00acc51bf7665",
+  "cases": [
+    {
+      "name": "m2q1-f0",
+      "input_sha256": "81b57401059b254e0132d97ca4a8446dcd2459753662410678eb437b9cad181c",
+      "script_sha256": "3c609806f77b26d5b61f0914641d544baca68950e439755628565b77ed66e44b",
+      "status": "exact-primary-unit-identity",
+      "certificate_sha256": "f4d6a9f5efbe9e6f913f55255821a3d7b1e7737095146728e3e77dccf744c4b7",
+      "multiplier_terms": 14440,
+      "max_multiplier_degree": 25,
+      "seconds": 3.734
+    },
+    {
+      "name": "m2q1-f1",
+      "input_sha256": "153ec86a352bd5e15e37dd9350b1636d3e36935119769cd9cc593ad7446ec402",
+      "script_sha256": "6007eae1b86f634690c2a4189da5e526ea22ecb2cae5f8a8fa90c9d770d48e2e",
+      "status": "exact-primary-unit-identity",
+      "certificate_sha256": "827ed4d03f3991930a7dd76817a5cd69854fe414ab794ddae7ccc3a2addaa893",
+      "multiplier_terms": 12,
+      "max_multiplier_degree": 6,
+      "seconds": 0.021
+    },
+    {
+      "name": "m2q1-f2",
+      "input_sha256": "06d11bae2a2dc8619cdbfd553c0616279b6b9ab2f3c25b4f042b404a2a370ab7",
+      "script_sha256": "ae3f99c3af80b01de8483eb6b27361aaca721afe6ec34153d9a1268b2a418164",
+      "status": "exact-primary-unit-identity",
+      "certificate_sha256": "451a69ea1ffd49c0bfe15efc2f2de27a5d8d5b18347b788c7f2ed95184b29952",
+      "multiplier_terms": 6830,
+      "max_multiplier_degree": 21,
+      "seconds": 0.889
+    },
+    {
+      "name": "m3q1-f0",
+      "input_sha256": "97755af171f4639e2b9226616caaf45e650d6c06e3a524d510289e69ed0fda63",
+      "script_sha256": "7df4849f2a39e2883cb3ea2d5de19c5c82e52b90955696da909e7b3c10d9227f",
+      "status": "exact-primary-unit-identity",
+      "certificate_sha256": "55d3f1dc3c7c2f5a06294009d907320b5ae065662d5efd52b036e1bd738d4119",
+      "multiplier_terms": 236,
+      "max_multiplier_degree": 12,
+      "seconds": 0.012
+    },
+    {
+      "name": "m3q1-f1",
+      "input_sha256": "aa026a3e1a8aed33e7d1c7171c1e7142daf9fe96ca084cc9b953789dc31684c3",
+      "script_sha256": "36fcb14695166dbf7ea11e65877269397ed418df077b109f09cf52d13ebb34bc",
+      "status": "exact-primary-unit-identity",
+      "certificate_sha256": "42e466cf402a365c4daa7857337e216e56bf7f758604ec1008174083d5d3fc38",
+      "multiplier_terms": 12,
+      "max_multiplier_degree": 6,
+      "seconds": 0.006
+    }
+  ],
+  "seconds": 4.698
+}

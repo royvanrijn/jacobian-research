@@ -1,0 +1,817 @@
+{
+  "date": "2026-11-17",
+  "manuscript": "manuscript.tex",
+  "manuscript_sha256": "3eb8536cc468ee2f2e793de12533048c06c135139486c0eafb3ee9ea59b85a85",
+  "status": "All internal standalone proof obligations are written:full affine-W proof and exhaustive nine-type frame extraction. Sharp boundary and cutoff proved with all-order witnesses. Classical inputs and assurance limits explicit.",
+  "boundary_deduction": "Self-contained ternary-cubic proof and sharp cutoff assembled below the exact credited Wilson/Liu/Long inputs. Written internal mathematical audit,not independent verification of either new or imported proofs.",
+  "core_claim_records": {
+    "G3CUBICALL20261115": {
+      "id": "G3CUBICALL20261115",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "All ternary cubics satisfy GMC with a sharp mixed cutoff and a finite frame certificate",
+      "scope": "Every complex polynomial P of total degree at most3 in three independent standard real Gaussian coordinates satisfies GMC. Pure nullity is equivalent to BOTH existence of nonzero v with B(v,v)=0,grad F3(v)=0,F2(v)=0 and E(P^j)=0 for j=1,...,888. Pure nullity therefore forces a Gaussian W-linear frame. The squarefree-leading case cover, repeated-line theorem and retained quadratic classification exhaust the degree<=3 space; the complete W-linear theorem then gives E(QP^m)=0 for every polynomial Q and m>3*deg Q. The coefficient3 is globally sharp: P=W+ZT-Z^3/2 is pure-null and E(W^D*P^(3D))=(3D)!*(-1/2)^D for all D>=1. This closes OP-GMC3-CUBIC internally. The original finite certificate included the projective frame condition; subsequent G3PURE888_20261115 now proves888 alone sufficient as an arbitrary-cubic pure-only gate. Subsequent G3PUREGLOBAL20261115 gives a sufficient numerical pure-only upper prefix1855; the least value remains uncomputed in[20,1855]. The original frame-plus888 certificate remains valid; the rescaled global proof makes its extra frame hypothesis unnecessary. Exact checks certify auxiliary algebra and bounded regressions, not written period exclusions or the exhaustive proof. No independent specialist replay, external review or formal verification is claimed; coefficient schemes, global term optimality and lower-power GVC remain separate. Current quantitative refinement G3PURE888_20261115 now proves a global888 pure-only sufficient gate without an extra frame condition, with least global K in[20,888], odd[20,888] and all-homogeneous[14,888]. G3RESCALEDSING20261115 gives ordinary complements353/334/304, full ordinary888 and cusp/tangent558/590; smooth94/homogeneous-smooth56 and both explicit lower witnesses are unchanged. Earlier1855/1854 bounds and statements withholding a global888 gate above record the prior coarser frontier. The new bound is sufficient, not optimal, and inherits the retained internal analytic assurance boundary. Current refinement G3CONIC336_20261115 gives cubic conic exclusion336, full f=0 gate336 and full W-linear425. G3HOM336_20261115 gives all-homogeneous336 with nonisotropic-node complement129. G3PURE590_20261115 proves global590 without an extra frame condition: least global/odd[20,590], all-homogeneous[14,336], smooth[20,94], homogeneous-smooth[14,56]. Ordinary full classes become nodal353,transverse336,triangle336; cusp558/tangent590 remain. Earlier888/1855 bounds and frame-plus888 statements above are retained coarser evidence; frame-plus425 now suffices, but425 is not claimed global. Both lower witnesses are complete. Leastness,20/14 sufficiency, expanded I590 cofactors and independent review remain open. Current joint-degree refinement G3POLYSEED20261115 gives rank-one140, mixed-parent255 and full W-linear336. G3WEIGHTEDSEED20261115 gives cusp complement225/full255 and tangent284. G3PURE353_20261115 proves global pure-only353 without a separate frame condition: least global[20,353], odd[20,352] by valid odd353 parity; all-homogeneous[14,336], smooth[20,94], homogeneous-smooth[14,56] remain. Ordinary full classes353/336/336 are unchanged and nodal353 is now the largest term. Earlier590/888/1855, rank-one425 and mixed-parent320 bounds above are historical valid coarser evidence; frame-plus336 now suffices, but336 is not claimed globally. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I353 cofactors and independent review remain open. Current exact-representative refinement G3EULERSEED20261115 gives ordinary complements297/271/244 and homogeneous nonisotropic-node101. G3CONIC258_20261115 gives conic258, full W-linear258 and all-homogeneous258, retaining original logarithmic normalization, trapped component and all actual endpoint cases. G3PURE297_20261115 proves global pure-only297 without a separate frame condition: least global[20,297], odd[20,296] by odd297 parity, all-homogeneous[14,258]. Smooth[20,94], homogeneous-smooth[14,56], rank-one140, mixed-parent255, cusp255 and tangent284 are unchanged. Earlier353/336/590 bounds above remain historical coarser evidence; frame-plus258 now suffices, but258 is not claimed globally. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I297 cofactors and independent review remain open. Current shared-divisor refinement G3SHAREDDIV20261115 gives ordinary complements227/220/204, with conic258 frame branches and full classes258. G3WEIGHTEULER20261115 gives cusp complement204/full255 and tangent complement254/full255. G3PURE258_20261115 proves global pure-only258 without a separate frame condition: least global/odd[20,258], homogeneous[14,258]; smooth[20,94] and homogeneous-smooth[14,56] are unchanged. Use I258 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactor computation has been run. Earlier297/284 and other larger gates above remain historical valid coarser evidence. Parity does not reduce even258 to257. Both lower witnesses and the qualitative case cover stay closed internally; leastness,20/14 sufficiency, expanded I258 cofactors and independent review remain open. Current structured-seed refinement G3STRUCTUREDSEED20261115 gives cubic conic216, mixed-parent210, full W-linear216 and all-homogeneous216, with polynomial-module cancellation only for actual p=q=3 seed amplitudes and all other endpoint cases retained. G3SHEARTANGENT20261115 gives tangent239 and full cusp210. G3PURE239_20261115 proves global pure-only239 without a separate frame condition: least global[20,239], odd[20,238] by odd239 parity, homogeneous[14,216]. Smooth[20,94] and homogeneous-smooth[14,56] are unchanged. Use I239 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors have been run. Earlier258/255 bounds above remain historical valid coarser evidence. Both lower witnesses stay complete; leastness,20/14 sufficiency and independent review remain open. Current common-time-factor refinement G3TIMEFACTOR20261115 gives ordinary complements199/199/189, cusp183, tangent224 and homogeneous nonisotropic-node72 by oddness from cofactor73. Conic/full-W-linear216 and mixed-parent210 are retained. G3PURE224_20261115 proves global pure-only224 without a separate frame condition: least global/odd[20,224], homogeneous[14,216], smooth[20,94], homogeneous-smooth[14,56]. Use I224 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactor computation has run. Earlier239/238 and larger gates above are historical valid coarser evidence. Even224 is not reduced to223 by parity. Both lower witnesses remain complete; leastness,20/14 sufficiency and independent review remain open. Current pole-filtered G3FILTEREDSEEDS20261115 gives conic/full-W-linear199, mixed-parent92 and homogeneous198. G3TANGENTPOLE20261115 gives tangent complement120/full132, including constant D and D(0)=0. G3PURE199_20261115 gives global199, odd198: least global[20,199], odd[20,198], homogeneous[14,198], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal199,cusp183,transverse199,tangent132,triangle199,concurrent104,repeated99. Use I199 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier224/216 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current formal multi-divisor refinement G3MULTIDIV20261115 gives ordinary complements174/166/142 and full cusp168. G3DISPLACECONIC20261115 gives conic/full-W-linear146 and all-homogeneous146. G3PURE174_20261115 gives global/odd174 without extra frame condition: least global/odd[20,174], homogeneous[14,146], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal174,cusp168,transverse166,tangent132,triangle146,concurrent104,repeated99. Both upper174/146 are even; no173/145 parity reduction. Use I174 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier199/198 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current normal-module refinement G3AXISMODULE20261115 gives ordinary complements129/132/118 from universal L,N divisibility by D; normal coefficients are polynomial while exact rational witnesses are retained in C(t). G3HALFCUSP20261115 gives cusp complement131/full140. G3PURE146_20261115 proves global/odd146 without extra frame condition: least global/odd[20,146], homogeneous[14,146], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal146,cusp140,transverse146,tangent132,triangle146,concurrent104,repeated99. Even146 gives no145 parity reduction. Conic/full-W-linear146 controls the bound, with mixed-parent92/tangent132/rank-one140 retained. Use I146 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier174/168 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current two-sided conic refinement G3TWOSIDEDCONIC20261115 gives conic130, full-W-linear140 and homogeneous130. G3PURE140_20261115 proves global/odd140 without extra frame condition: least global/odd[20,140], homogeneous[14,130], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal130,cusp140,transverse132,tangent132,triangle130,concurrent104,repeated99. Both140/130 are even; no139/129 parity deduction. Unrestricted rank-one140 controls the bound; ordinary complements129/132/118,cusp131,mixed-parent92 and tangent132 are retained. Use I140 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier146 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current phase-factor/stopped-budget refinement G3RANKFACTORS20261115 gives rank-one95; G3STOPBUDGET20261115 gives transverse127 and cusp130 complements. G3PURE130_20261115 proves global/odd130 without extra frame condition: least global/odd[20,130], homogeneous[14,130], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal130,cusp130,transverse130,tangent120,triangle130,concurrent104,repeated99. Full-W-linear130 follows from conic130,parent92,rank-one95; ordinary complements129/127/118 and tangent120 are retained. Even130 gives no129 parity deduction. Use I130 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier140/132 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current endpoint/odd refinement G3CONIC10820261115 gives conic/full-W-linear108 and homogeneous108. G3ODD12620261115 proves odd126 using constant-D centered node/cusp sources, cofactor101/75 and complements100/74, with a complete odd class cover; it is not parity from global130. Current least global[20,130],odd[20,126],homogeneous[14,108],smooth[20,94],homogeneous-smooth[14,56]. Unrestricted cover: quadratic7,smooth94,nodal129,cusp130,transverse127,tangent120,triangle118,concurrent104,repeated99. Odd cover: quadratic7,smooth94,nodal108,cusp94,transverse126,tangent120,triangle118,concurrent104,repeated98. Final130/126/108 are even. Use I130 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier homogeneous130 and odd130 bounds above are historical coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current weighted-odd refinement G3ODDWEIGHT20261115 gives odd transverse98,triangle78,tangent52 complements, with full odd tangent94 after frame faces. G3ODD10820261115 proves all-odd108 by complete centered coefficient/class cover, not parity from global130. Current least global[20,130],odd[20,108],homogeneous[14,108],smooth[20,94],homogeneous-smooth[14,56]. Odd cover: quadratic7,smooth94,nodal108,cusp94,transverse108,tangent94,triangle108,concurrent104,repeated98. General bounds and conic/full-W-linear108 remain unchanged. Even108 gives no107 parity deduction. Use I130 with at most7 radical-search rounds for least global K; no full coefficient-ring round or expanded global cofactors computed. Earlier odd126 above is historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current completed-row refinement G3CONIC9620261115 proves conic/full-W-linear96 from the full negative coefficient module, not endpoint divisibility alone. G3ODD104HOM9620261115 gives complete odd104 and homogeneous96, with least global[20,130],odd[20,104],homogeneous[14,96]; smooth[20,94] and homogeneous-smooth[14,56] stay unchanged. Odd cover is quadratic7,smooth94,node100,cusp94,transverse98,tangent94,triangle96,concurrent104,repeated98. Generic global130 remains controlled by cusp130/node129; odd concurrent104 and homogeneous conic96 now control their covers. Earlier108 bounds remain valid coarser historical evidence. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review stay open. Current odd-concurrent refinement G3ODDCONCURRENT3620261115 gives class36 with full isotropic vertex retained: nonisotropic36/26,constant-W cubic height16 and flat Gaussian8. G3ODD10020261115 gives complete odd100, with least global[20,130],odd[20,100],homogeneous[14,96]. Generic concurrent104/global130 and conic/full-W-linear/homogeneous96 stay unchanged. Odd cover: quadratic7,smooth94,node100,cusp94,transverse98,tangent94,triangle96,concurrent36,repeated98. Odd node100 now controls its cover; even100 gives no99 parity reduction. Earlier odd104 remains valid historical coarser evidence. Both lower witnesses stay complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review remain open. Current even-time refinement G3EVENTIME20261115 proves completed odd normal rows polynomial in t^2, with per-row even-degree rounding and exact determinant assignments giving complements node98,cusp72,transverse98,triangle78,tangent50. G3ODD9820261115 proves full odd98 with all coefficient/frame faces retained. Current least global[20,130],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and generic130 stay unchanged. Odd cover: quadratic7,smooth94,node98,cusp94,transverse98,tangent94,triangle96,concurrent36,repeated98. Earlier odd100 remains historical valid coarser evidence. Even98 gives no97 parity deduction. Both lower witnesses stay complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review remain open. Current cusp-lattice refinement G3CUSPLATTICE20261115 gives linear-D125,constant-D109 and full cusp125 from a universal rank-one residue and common scalar factor D^(s-1), retaining q0/shared roots and all scalar valuations. G3PURE129_20261115 proves general129 with no extra frame hypothesis. Current least global[20,129],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses stay unchanged. General cover: quadratic7,smooth94,node129,cusp125,transverse127,tangent120,triangle118,concurrent104,repeated99. Generic node129 and transverse127 now control; odd node/transverse/repeated98 and homogeneous conic96 remain separate. Use I129 with at most7 exact radical-search rounds; no full coefficient search or expanded cofactors computed. Earlier general130/cusp130 above is historical valid coarser evidence. Odd129 gives no128 deduction for arbitrary P. Leastness,20/14 sufficiency and independent analytic review remain open. Current ordinary Gaussian-square refinement G3ORDLATTICE20261115 gives full node123,transverse122,triangle114 from rank-one D residues and common scalar D^(s-1) cancellation, with constant-D101/106/103 and all shared-axis/zero-D valuations retained. G3PURE125_20261115 proves general125 without an extra frame hypothesis. Current least global[20,125],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses remain unchanged. General cover: quadratic7,smooth94,node123,cusp125,transverse122,tangent120,triangle114,concurrent104,repeated99. Cusp125/node123 now control. Use I125 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general129 and larger ordinary bounds above remain historical valid coarser evidence. Odd125 gives no124 deduction for arbitrary non-odd P. Leastness,20/14 sufficiency and independent review stay open. Current triangular-divisor refinement G3TRIANGULARFACT20261115 proves common scalar D^(s(s-1)/2) from a generic semisimple rank-one differential split, slow seed valuations and polynomial extension to zero-trace/shared-axis/D0 cases. Full classes become node108,cusp115,transverse112,triangle108; constant-D101/109/106/103 and all higher scalar valuations are retained. G3PURE120_20261115 gives general120 without extra frame hypothesis. Current least global[20,120],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses remain unchanged. General cover: quadratic7,smooth94,node108,cusp115,transverse112,tangent120,triangle108,concurrent104,repeated99. Tangent120/cusp115 now control. Use I120 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general125 and larger class bounds above are historical valid coarser evidence. Even120 gives no119 parity deduction. Leastness,20/14 sufficiency and independent review remain open. Current tangent pole-residue refinement G3TANGLATTICE20261115 gives full tangent110 from linear-D110 and a separate unsheared constant-D105 normalization, with full v-Euler source5/16 and complete Jacobi rank-one residue. Generic differential orders6/5, polynomial extension to q0/D0/shared roots and all scalar valuations are retained. G3PURE115_20261115 gives general115 with no extra frame hypothesis. Current least global[20,115],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both lower witnesses remain unchanged. General cover: quadratic7,smooth94,node108,cusp115,transverse112,tangent110,triangle108,concurrent104,repeated99. Cusp115/transverse112 now control. Use I115 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general120/tangent120 above is historical valid coarser evidence. Odd115 gives no114 deduction for arbitrary non-odd P. Leastness,20/14 sufficiency and independent review remain open. Current formal Gaussian projection G3GAUSSPROJ20261115 retains the full volume/determinant and all connection derivatives; regular finite ranks6/5/4/5/4 plus one restored direction give comparison losses0/2/6 and slow seed orders2j/4j-1/6j. Common scalar powers42/30/20/53/54 give linear-D node87,transverse97,triangle98,cusp77,tangent66; separate constant-D gates101/106/103/109/105 now dominate. Generic polynomial extension retains q0,r0,D0,zero traces/shared roots and all higher valuations>=3l. G3PURE109_20261115 gives general109 with no frame hypothesis,least global[20,109]; odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56],conic/full-W-linear96 and both lower witnesses stay unchanged. Use I109 with at most7 exact radical rounds; no full coefficient round or expanded cofactors computed. Earlier115/110/108/112/115 gates above are historical valid coarser evidence. General109 gives no108 parity deduction for arbitrary non-odd P. Constant-D cusp109/transverse106/tangent105 now control; leastness,20/14 sufficiency and independent review remain open. Current infinity projection G3INFTYPROJ20261115 centers the transverse critical point and uses a formal Morse coordinate before Gaussian heat integration at x=1/t. Full volume/determinant and all physical-time,basis,Euler,shear derivatives are retained. Regular physical-time connection gives numerator pole<=3j; completed slow orders j/3j-1/5j and restored-direction comparison losses0/2/6 give constant-D80/91/93/71/61. No scalar factor is cancelled; higher valuations>=3l remain. Polynomial extension retains zero leading coefficients and all identically zero-axis/D frames. With retained linear-D and frame gates,full node96,transverse97,triangle98,cusp95,tangent95 yield G3PURE104_20261115 general104. Concurrent104/repeated99 now control. Current least global[20,104],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both lower witnesses stay unchanged. Use I104 with at most7 exact radical rounds; no full coefficient search or expanded cofactors computed. Earlier general109 and larger class gates above remain historical valid coarser evidence. Even104 gives no103 parity deduction; leastness,20/14 sufficiency and independent review remain open. Current actual concurrent-seed refinement G3CONCURRENT9220261115 keeps full lower terms,means/metric and radial Euler volume/determinant derivatives:source5/4,amplitude2,depth2j-1 and row7j-1-|e|/6j-1-|e| give complements62/52 and full concurrent92 with the isotropic affine-W frame. G3REPEATED9620261115 uses actual H(0)=0 to keep higher scalar valuation>=j,removing the old extra rank allowance without cancelling scalar factors:repeated cubic39,quartic/full96 with frames35/92/93 retained. G3PURE9820261115 gives general98 with no frame hypothesis;triangle98 and transverse97 now control,with node/repeated/conic96. Current least global[20,98],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56];both lower witnesses and conic/full-W-linear96 stay unchanged. Use I98 with at most7 exact radical rounds;no full coefficient search or expanded cofactors computed. Earlier general104/concurrent104/repeated99 and other larger bounds above remain valid historical coarser evidence. General and odd sufficient98 does not prove their least prefixes equal;even98 gives no97 parity deduction. Leastness,20/14 sufficiency and independent review remain open. Current exact quadratic axis projection G3AXISGAUSS20261115 keeps full Gaussian means/cross terms,ordinary volume/determinant and all time/delta derivatives. Finite Laurent ranks5/4 plus one restored v^2 direction give comparison losses0/4 and axis column orders2j-2/2j;common Lf powers20/16 combine with retained independent D30/D20. Weighted joint polynomial division before affine or constant specialization gives uniform transverse77/triangle82 and full96 with retained conic frames. All scalar valuations>=3l,zero N0/slopes,constant divisors,D0/shared roots and identically zero-axis/D frames remain retained. G3PURE9620261115 gives general96 and therefore odd96;homogeneous96 stays unchanged. Current least global[20,96],odd[20,96],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses and conic/full-W-linear96 retained. Use I96 with at most7 exact radical rounds;no full coefficient search or expanded cofactors computed. Earlier general/odd98 and larger class bounds above remain valid historical coarser evidence. Equal upper bounds do not prove equal least thresholds;even96 gives no95 parity deduction. Conic/node/repeated96,rank-one95 and smooth94 now control;leastness,20/14 sufficiency and independent review remain open. Current repeated-line Euler refinement G3REPEATEDEULER9220261115 keeps full a/D/h derivatives,ordinary volume and Gaussian determinant while cancelling top amplitude before forming seeds. Source time7/amplitude d-1 and depth(d-1)j-(d-2) give cubic33/quartic78;actual a0/D0 valuation retains all higher scalar orders. Restricted adapted mixed quartic U=t^2 Phi,D=t^2,prefactor1/t also gives78;affine-W92/c-zero35 yield full repeated92. No scalar factor is cancelled or frame face dropped. General/odd/homogeneous96 and least intervals global[20,96],odd[20,96],homogeneous[14,96],I96 with at most7 exact rounds,both lower witnesses and conic96 remain unchanged. Earlier repeated96/99 and adapted93 above are historical valid coarser evidence. Conic/full-W-linear96 and its node/transverse/triangle frames now control,followed by rank-one95/smooth94. Leastness,20/14 sufficiency,expanded I96 cofactors,independent review,schemes,term minima and GVC remain open. Current conic CT refinement G3CONICCT9420261115 keeps the full negative K^k coefficient module and logarithmic volume. A coefficientwise formal CT functional with regular scalar time connection selects the unit row at K0;exact h_prime seed induction makes all positive completed seed unit rows divisible by K. Cancel the resulting common scalar K,retaining t^(3l)K^(l-1),all ranks,constant K and K0/shared roots. p3q3 gates72/83/94 and retained other strata give conic94;parent92/rank-one95 give full W-linear95. G3PURE9520261115 gives general95 and original odd/homogeneous parity gives94. Current least general[20,95],odd[20,94],homogeneous[14,94],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses retained. Use I95 with at most7 exact rounds;no full coefficient search or expanded cofactors computed. Earlier general/odd/homogeneous96,conic/full-W-linear96 and other larger gates above remain valid historical coarser evidence. General95 gives no94 parity deduction for non-odd P. Rank-one/full-W-linear95 and smooth/conic94 now control;leastness,20/14 sufficiency and independent review remain open. Current two-branch rank-one refinement G3RANKONE5720261115 retains the full fixed-point quadratic and its exact Jacobians/time/q/h derivatives. Two regular cubic rank-two branch quotients give slow q orders4j;restoring y4 costs Hermite determinant order2. Common scalar q38 and joint degree95 give uniform degree-six57,including constant q,with polynomial extension to merged roots and all lower-degree/parent/null faces retained. Rank-one57 plus conic94/parent92 gives full W-linear94. G3PURE9420261115 gives general94;odd/homogeneous94 stay unchanged. Current least general[20,94],odd[20,94],homogeneous[14,94],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses retained. Use I94 with at most7 exact rounds;no full coefficient search or expanded cofactors computed. Earlier rank-one95/full-W-linear95/general95 and larger bounds above are valid historical coarser evidence. Even94 gives no93 parity deduction. Smooth94 and conic94 now control;leastness,20/14 sufficiency and independent review remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md",
+      "dependencies": [
+        "G3REPEATED20261115",
+        "G3REDUCEDLEADING20261114",
+        "G3WLINEAR20261114",
+        "GQFINITE20261114",
+        "GQ3NORMAL20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_cubic_gmc_closure.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:26806d397949f765f92636e1e5b0d84c1fbd4bdf010336fd599a0e23eca1ac21",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/cubic_gmc_closure_verification.json",
+        "jacobian-followup/moment-vanishing-audit/cubic_gmc_closure_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/cubic_problem_preclosure_20261115.json",
+        "jacobian-followup/moment-vanishing-audit/rank_one_wt2_verification.json",
+        "jacobian-followup/moment-vanishing-audit/affine_line_conic_profiles_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3REPEATED20261115": {
+      "id": "G3REPEATED20261115",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Every repeated-line leading ternary cubic is GMC-safe and pure nullity forces a W-linear frame",
+      "scope": "Over C in characteristic zero, every ternary cubic with nonreduced leading homogeneous form L^2*M or L^3 is GMC-safe. Pure nullity forces a nonzero v with B(v,v)=0,grad F3(v)=0,F2(v)=0, hence a Gaussian W-linear frame. For nonisotropic L=u, arbitrary lower terms give P=Y^T A Y+(p*u^2+q*u+r)^T Y+g(u). Exact quadratic elimination gives determinant prefactor det(I-2tA)^(-1/2) and a degree<=4 one-variable phase. The quartic vanishes identically iff p.p=p.A.p=0, which directly supplies the frame. Otherwise the exhaustive invertible, semisimple rank1, nilpotent rank1 and zero matrix split yields full-degree shrinking, an explicit degree-drop escape model, or a fixed quartic with decaying prefactor. For L^3 the cubic coefficient remains nonzero, and all matrix cases exclude pure nullity. For isotropic L=Z, zero W^2 coefficient supplies the frame; with nonzero coefficient the three leading forms Z^2*W+aZ^3,Z^2*T,Z^3 admit exact generic-t W/T quadratic completion and exhaustive stable-degree or degree-drop exclusions. Determinant prefactors never grow, all bounded zero-exponential periods shrink, and escaping actions cannot cancel the stated scalar orders. The written proof imports the retained complete one-variable cut/local-block and rational seed-to-actual-period arguments; no seed cyclicity or Wick convergence is assumed. The checker verifies exact elimination identities and degree/action/count arithmetic, not analytic completeness. Independent replay, external review and formal verification remain outstanding.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md",
+      "dependencies": [
+        "G3WTRANKONE20261114",
+        "G3WLINEAR20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_cubic_gmc_closure.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:26806d397949f765f92636e1e5b0d84c1fbd4bdf010336fd599a0e23eca1ac21",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/cubic_gmc_closure_verification.json",
+        "jacobian-followup/moment-vanishing-audit/cubic_gmc_closure_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/cubic_problem_preclosure_20261115.json",
+        "jacobian-followup/moment-vanishing-audit/rank_one_wt2_verification.json",
+        "jacobian-followup/moment-vanishing-audit/affine_line_conic_profiles_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3REDUCEDLEADING20261114": {
+      "id": "G3REDUCEDLEADING20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Every squarefree-leading ternary cubic is GMC-safe and pure nullity forces a W-linear frame",
+      "scope": "Over C in characteristic zero, every ternary cubic of degree3 with squarefree homogeneous leading form satisfies GMC. The exhaustive written plane-cubic cover consists of smooth, irreducible nodal, irreducible cuspidal, transverse/tangent line-smooth-conic, and independent/concurrent distinct-line configurations. The retained theorems and G3LINECONIC20261114 cover every configuration with arbitrary lower terms. Smooth, nodal, triangle and transverse line-conic members are pure-nonvanishing; cusp, concurrent-line and tangent line-conic members are pure-nonvanishing unless their relevant singular direction is isotropic with F2=0. Hence any pure-null squarefree-leading member has a nonzero vector v satisfying B(v,v)=0,grad F3(v)=0,F2(v)=0. By the exact retained Gaussian W-linear criterion it admits a W-linear frame, so for every multiplier Q its mixed moments vanish whenever m>3*deg Q. This is a sufficient bound; sharpness of3 inside the squarefree-leading locus is not claimed. The criterion is a necessary condition for pure nullity, not an assertion that every such frame is pure-null. The auxiliary checker verifies the new line-conic algebra, while the leading-case cover and the corollary are written deductions from the named dependencies. No explicit arbitrary-squarefree numerical pure prefix, external review, independent replay or formal verification is claimed. Any remaining ternary cubic GMC failure has nonreduced leading form L^2*M or L^3. General repeated-line affine classes, coefficient schemes and lower-power GVC remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/LINE_CONIC_AFFINE_EXCLUSION.md",
+      "dependencies": [
+        "GSMOOTHFINITE20261114",
+        "G3NODALALL20261114",
+        "G3CUSPALL20261114",
+        "G3TRIANGLEAFFINE20261114",
+        "G3CONCURRENT20261114",
+        "G3LINECONIC20261114",
+        "G3WLINEAR20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_affine_line_conic_profiles.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:44e513f38579dbb840b84c66a6364076f8acb90dcd1cc7a170f93835957eec26",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/affine_line_conic_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/affine_line_conic_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/affine_triangle_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/concurrent_line_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_gaussian_critical_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_center_line_decay_verification.json",
+        "jacobian-followup/moment-vanishing-audit/cuspidal_affine_profiles_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3WLINEAR20261114": {
+      "id": "G3WLINEAR20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete sixteen-coefficient W-linear cubic GMC theorem and sharp mixed cutoff",
+      "scope": "Every pure-null polynomial P=W*(a+bZ+cT+dZ^2+eZT+fT^2)+G(Z,T), deg G<=3, satisfies GMC. This is the complete sixteen-coefficient W-linear cubic family. Nondegenerate e^2-4df!=0 is excluded by the logarithmic conic theorem; f=0 is the completed fifteen-coefficient family; f!=0 on the degenerate discriminant is reduced by a Gaussian null rotation to G3WTRANKONE20261114. The sufficient initial pure-moment gates are888,447,425 respectively, so888 suffices for all-order pure vanishing in the whole family. Every pure-null member has E(QP^m)=0 for m>3*deg Q, sharply by the previously registered cubic Gaussian shear; the new rank-one products and the one-sided/quadratic branches need only m>deg Q. There is an exact coordinate-free frame criterion: for P=F3+F2+F1+F0, a Gaussian W-linear frame exists if and only if a nonzero vector v satisfies B(v,v)=0, grad F3(v)=0 and F2(v)=0, since D_v^2P(x)=2 grad F3(v) dot x+2F2(v). Thus any global cubic GMC failure must have that projective intersection empty. No proof establishes that all pure-null cubics meet the criterion. W^2,W^3,W^2Z,W^2T and the empty-intersection case remain outside the theorem. Internal written period proofs and exact algebra checks have no external review or formal verification. Current refinement G3CONIC336_20261115 gives cubic conic exclusion336, full f=0 gate336 and full W-linear425. G3HOM336_20261115 gives all-homogeneous336 with nonisotropic-node complement129. G3PURE590_20261115 proves global590 without an extra frame condition: least global/odd[20,590], all-homogeneous[14,336], smooth[20,94], homogeneous-smooth[14,56]. Ordinary full classes become nodal353,transverse336,triangle336; cusp558/tangent590 remain. Earlier888/1855 bounds and frame-plus888 statements above are retained coarser evidence; frame-plus425 now suffices, but425 is not claimed global. Both lower witnesses are complete. Leastness,20/14 sufficiency, expanded I590 cofactors and independent review remain open. Current joint-degree refinement G3POLYSEED20261115 gives rank-one140, mixed-parent255 and full W-linear336. G3WEIGHTEDSEED20261115 gives cusp complement225/full255 and tangent284. G3PURE353_20261115 proves global pure-only353 without a separate frame condition: least global[20,353], odd[20,352] by valid odd353 parity; all-homogeneous[14,336], smooth[20,94], homogeneous-smooth[14,56] remain. Ordinary full classes353/336/336 are unchanged and nodal353 is now the largest term. Earlier590/888/1855, rank-one425 and mixed-parent320 bounds above are historical valid coarser evidence; frame-plus336 now suffices, but336 is not claimed globally. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I353 cofactors and independent review remain open. Current exact-representative refinement G3EULERSEED20261115 gives ordinary complements297/271/244 and homogeneous nonisotropic-node101. G3CONIC258_20261115 gives conic258, full W-linear258 and all-homogeneous258, retaining original logarithmic normalization, trapped component and all actual endpoint cases. G3PURE297_20261115 proves global pure-only297 without a separate frame condition: least global[20,297], odd[20,296] by odd297 parity, all-homogeneous[14,258]. Smooth[20,94], homogeneous-smooth[14,56], rank-one140, mixed-parent255, cusp255 and tangent284 are unchanged. Earlier353/336/590 bounds above remain historical coarser evidence; frame-plus258 now suffices, but258 is not claimed globally. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I297 cofactors and independent review remain open. Current shared-divisor refinement G3SHAREDDIV20261115 gives ordinary complements227/220/204, with conic258 frame branches and full classes258. G3WEIGHTEULER20261115 gives cusp complement204/full255 and tangent complement254/full255. G3PURE258_20261115 proves global pure-only258 without a separate frame condition: least global/odd[20,258], homogeneous[14,258]; smooth[20,94] and homogeneous-smooth[14,56] are unchanged. Use I258 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactor computation has been run. Earlier297/284 and other larger gates above remain historical valid coarser evidence. Parity does not reduce even258 to257. Both lower witnesses and the qualitative case cover stay closed internally; leastness,20/14 sufficiency, expanded I258 cofactors and independent review remain open. Current structured-seed refinement G3STRUCTUREDSEED20261115 gives cubic conic216, mixed-parent210, full W-linear216 and all-homogeneous216, with polynomial-module cancellation only for actual p=q=3 seed amplitudes and all other endpoint cases retained. G3SHEARTANGENT20261115 gives tangent239 and full cusp210. G3PURE239_20261115 proves global pure-only239 without a separate frame condition: least global[20,239], odd[20,238] by odd239 parity, homogeneous[14,216]. Smooth[20,94] and homogeneous-smooth[14,56] are unchanged. Use I239 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors have been run. Earlier258/255 bounds above remain historical valid coarser evidence. Both lower witnesses stay complete; leastness,20/14 sufficiency and independent review remain open. Current common-time-factor refinement G3TIMEFACTOR20261115 gives ordinary complements199/199/189, cusp183, tangent224 and homogeneous nonisotropic-node72 by oddness from cofactor73. Conic/full-W-linear216 and mixed-parent210 are retained. G3PURE224_20261115 proves global pure-only224 without a separate frame condition: least global/odd[20,224], homogeneous[14,216], smooth[20,94], homogeneous-smooth[14,56]. Use I224 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactor computation has run. Earlier239/238 and larger gates above are historical valid coarser evidence. Even224 is not reduced to223 by parity. Both lower witnesses remain complete; leastness,20/14 sufficiency and independent review remain open. Current pole-filtered G3FILTEREDSEEDS20261115 gives conic/full-W-linear199, mixed-parent92 and homogeneous198. G3TANGENTPOLE20261115 gives tangent complement120/full132, including constant D and D(0)=0. G3PURE199_20261115 gives global199, odd198: least global[20,199], odd[20,198], homogeneous[14,198], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal199,cusp183,transverse199,tangent132,triangle199,concurrent104,repeated99. Use I199 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier224/216 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current formal multi-divisor refinement G3MULTIDIV20261115 gives ordinary complements174/166/142 and full cusp168. G3DISPLACECONIC20261115 gives conic/full-W-linear146 and all-homogeneous146. G3PURE174_20261115 gives global/odd174 without extra frame condition: least global/odd[20,174], homogeneous[14,146], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal174,cusp168,transverse166,tangent132,triangle146,concurrent104,repeated99. Both upper174/146 are even; no173/145 parity reduction. Use I174 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier199/198 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current normal-module refinement G3AXISMODULE20261115 gives ordinary complements129/132/118 from universal L,N divisibility by D; normal coefficients are polynomial while exact rational witnesses are retained in C(t). G3HALFCUSP20261115 gives cusp complement131/full140. G3PURE146_20261115 proves global/odd146 without extra frame condition: least global/odd[20,146], homogeneous[14,146], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal146,cusp140,transverse146,tangent132,triangle146,concurrent104,repeated99. Even146 gives no145 parity reduction. Conic/full-W-linear146 controls the bound, with mixed-parent92/tangent132/rank-one140 retained. Use I146 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier174/168 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current two-sided conic refinement G3TWOSIDEDCONIC20261115 gives conic130, full-W-linear140 and homogeneous130. G3PURE140_20261115 proves global/odd140 without extra frame condition: least global/odd[20,140], homogeneous[14,130], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal130,cusp140,transverse132,tangent132,triangle130,concurrent104,repeated99. Both140/130 are even; no139/129 parity deduction. Unrestricted rank-one140 controls the bound; ordinary complements129/132/118,cusp131,mixed-parent92 and tangent132 are retained. Use I140 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier146 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current phase-factor/stopped-budget refinement G3RANKFACTORS20261115 gives rank-one95; G3STOPBUDGET20261115 gives transverse127 and cusp130 complements. G3PURE130_20261115 proves global/odd130 without extra frame condition: least global/odd[20,130], homogeneous[14,130], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal130,cusp130,transverse130,tangent120,triangle130,concurrent104,repeated99. Full-W-linear130 follows from conic130,parent92,rank-one95; ordinary complements129/127/118 and tangent120 are retained. Even130 gives no129 parity deduction. Use I130 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier140/132 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current endpoint/odd refinement G3CONIC10820261115 gives conic/full-W-linear108 and homogeneous108. G3ODD12620261115 proves odd126 using constant-D centered node/cusp sources, cofactor101/75 and complements100/74, with a complete odd class cover; it is not parity from global130. Current least global[20,130],odd[20,126],homogeneous[14,108],smooth[20,94],homogeneous-smooth[14,56]. Unrestricted cover: quadratic7,smooth94,nodal129,cusp130,transverse127,tangent120,triangle118,concurrent104,repeated99. Odd cover: quadratic7,smooth94,nodal108,cusp94,transverse126,tangent120,triangle118,concurrent104,repeated98. Final130/126/108 are even. Use I130 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier homogeneous130 and odd130 bounds above are historical coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current weighted-odd refinement G3ODDWEIGHT20261115 gives odd transverse98,triangle78,tangent52 complements, with full odd tangent94 after frame faces. G3ODD10820261115 proves all-odd108 by complete centered coefficient/class cover, not parity from global130. Current least global[20,130],odd[20,108],homogeneous[14,108],smooth[20,94],homogeneous-smooth[14,56]. Odd cover: quadratic7,smooth94,nodal108,cusp94,transverse108,tangent94,triangle108,concurrent104,repeated98. General bounds and conic/full-W-linear108 remain unchanged. Even108 gives no107 parity deduction. Use I130 with at most7 radical-search rounds for least global K; no full coefficient-ring round or expanded global cofactors computed. Earlier odd126 above is historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current completed-row refinement G3CONIC9620261115 proves conic/full-W-linear96 from the full negative coefficient module, not endpoint divisibility alone. G3ODD104HOM9620261115 gives complete odd104 and homogeneous96, with least global[20,130],odd[20,104],homogeneous[14,96]; smooth[20,94] and homogeneous-smooth[14,56] stay unchanged. Odd cover is quadratic7,smooth94,node100,cusp94,transverse98,tangent94,triangle96,concurrent104,repeated98. Generic global130 remains controlled by cusp130/node129; odd concurrent104 and homogeneous conic96 now control their covers. Earlier108 bounds remain valid coarser historical evidence. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review stay open. Current odd-concurrent refinement G3ODDCONCURRENT3620261115 gives class36 with full isotropic vertex retained: nonisotropic36/26,constant-W cubic height16 and flat Gaussian8. G3ODD10020261115 gives complete odd100, with least global[20,130],odd[20,100],homogeneous[14,96]. Generic concurrent104/global130 and conic/full-W-linear/homogeneous96 stay unchanged. Odd cover: quadratic7,smooth94,node100,cusp94,transverse98,tangent94,triangle96,concurrent36,repeated98. Odd node100 now controls its cover; even100 gives no99 parity reduction. Earlier odd104 remains valid historical coarser evidence. Both lower witnesses stay complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review remain open. Current even-time refinement G3EVENTIME20261115 proves completed odd normal rows polynomial in t^2, with per-row even-degree rounding and exact determinant assignments giving complements node98,cusp72,transverse98,triangle78,tangent50. G3ODD9820261115 proves full odd98 with all coefficient/frame faces retained. Current least global[20,130],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and generic130 stay unchanged. Odd cover: quadratic7,smooth94,node98,cusp94,transverse98,tangent94,triangle96,concurrent36,repeated98. Earlier odd100 remains historical valid coarser evidence. Even98 gives no97 parity deduction. Both lower witnesses stay complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review remain open. Current cusp-lattice refinement G3CUSPLATTICE20261115 gives linear-D125,constant-D109 and full cusp125 from a universal rank-one residue and common scalar factor D^(s-1), retaining q0/shared roots and all scalar valuations. G3PURE129_20261115 proves general129 with no extra frame hypothesis. Current least global[20,129],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses stay unchanged. General cover: quadratic7,smooth94,node129,cusp125,transverse127,tangent120,triangle118,concurrent104,repeated99. Generic node129 and transverse127 now control; odd node/transverse/repeated98 and homogeneous conic96 remain separate. Use I129 with at most7 exact radical-search rounds; no full coefficient search or expanded cofactors computed. Earlier general130/cusp130 above is historical valid coarser evidence. Odd129 gives no128 deduction for arbitrary P. Leastness,20/14 sufficiency and independent analytic review remain open. Current ordinary Gaussian-square refinement G3ORDLATTICE20261115 gives full node123,transverse122,triangle114 from rank-one D residues and common scalar D^(s-1) cancellation, with constant-D101/106/103 and all shared-axis/zero-D valuations retained. G3PURE125_20261115 proves general125 without an extra frame hypothesis. Current least global[20,125],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses remain unchanged. General cover: quadratic7,smooth94,node123,cusp125,transverse122,tangent120,triangle114,concurrent104,repeated99. Cusp125/node123 now control. Use I125 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general129 and larger ordinary bounds above remain historical valid coarser evidence. Odd125 gives no124 deduction for arbitrary non-odd P. Leastness,20/14 sufficiency and independent review stay open. Current triangular-divisor refinement G3TRIANGULARFACT20261115 proves common scalar D^(s(s-1)/2) from a generic semisimple rank-one differential split, slow seed valuations and polynomial extension to zero-trace/shared-axis/D0 cases. Full classes become node108,cusp115,transverse112,triangle108; constant-D101/109/106/103 and all higher scalar valuations are retained. G3PURE120_20261115 gives general120 without extra frame hypothesis. Current least global[20,120],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses remain unchanged. General cover: quadratic7,smooth94,node108,cusp115,transverse112,tangent120,triangle108,concurrent104,repeated99. Tangent120/cusp115 now control. Use I120 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general125 and larger class bounds above are historical valid coarser evidence. Even120 gives no119 parity deduction. Leastness,20/14 sufficiency and independent review remain open. Current tangent pole-residue refinement G3TANGLATTICE20261115 gives full tangent110 from linear-D110 and a separate unsheared constant-D105 normalization, with full v-Euler source5/16 and complete Jacobi rank-one residue. Generic differential orders6/5, polynomial extension to q0/D0/shared roots and all scalar valuations are retained. G3PURE115_20261115 gives general115 with no extra frame hypothesis. Current least global[20,115],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both lower witnesses remain unchanged. General cover: quadratic7,smooth94,node108,cusp115,transverse112,tangent110,triangle108,concurrent104,repeated99. Cusp115/transverse112 now control. Use I115 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general120/tangent120 above is historical valid coarser evidence. Odd115 gives no114 deduction for arbitrary non-odd P. Leastness,20/14 sufficiency and independent review remain open. Current formal Gaussian projection G3GAUSSPROJ20261115 retains the full volume/determinant and all connection derivatives; regular finite ranks6/5/4/5/4 plus one restored direction give comparison losses0/2/6 and slow seed orders2j/4j-1/6j. Common scalar powers42/30/20/53/54 give linear-D node87,transverse97,triangle98,cusp77,tangent66; separate constant-D gates101/106/103/109/105 now dominate. Generic polynomial extension retains q0,r0,D0,zero traces/shared roots and all higher valuations>=3l. G3PURE109_20261115 gives general109 with no frame hypothesis,least global[20,109]; odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56],conic/full-W-linear96 and both lower witnesses stay unchanged. Use I109 with at most7 exact radical rounds; no full coefficient round or expanded cofactors computed. Earlier115/110/108/112/115 gates above are historical valid coarser evidence. General109 gives no108 parity deduction for arbitrary non-odd P. Constant-D cusp109/transverse106/tangent105 now control; leastness,20/14 sufficiency and independent review remain open. Current infinity projection G3INFTYPROJ20261115 centers the transverse critical point and uses a formal Morse coordinate before Gaussian heat integration at x=1/t. Full volume/determinant and all physical-time,basis,Euler,shear derivatives are retained. Regular physical-time connection gives numerator pole<=3j; completed slow orders j/3j-1/5j and restored-direction comparison losses0/2/6 give constant-D80/91/93/71/61. No scalar factor is cancelled; higher valuations>=3l remain. Polynomial extension retains zero leading coefficients and all identically zero-axis/D frames. With retained linear-D and frame gates,full node96,transverse97,triangle98,cusp95,tangent95 yield G3PURE104_20261115 general104. Concurrent104/repeated99 now control. Current least global[20,104],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both lower witnesses stay unchanged. Use I104 with at most7 exact radical rounds; no full coefficient search or expanded cofactors computed. Earlier general109 and larger class gates above remain historical valid coarser evidence. Even104 gives no103 parity deduction; leastness,20/14 sufficiency and independent review remain open. Current actual concurrent-seed refinement G3CONCURRENT9220261115 keeps full lower terms,means/metric and radial Euler volume/determinant derivatives:source5/4,amplitude2,depth2j-1 and row7j-1-|e|/6j-1-|e| give complements62/52 and full concurrent92 with the isotropic affine-W frame. G3REPEATED9620261115 uses actual H(0)=0 to keep higher scalar valuation>=j,removing the old extra rank allowance without cancelling scalar factors:repeated cubic39,quartic/full96 with frames35/92/93 retained. G3PURE9820261115 gives general98 with no frame hypothesis;triangle98 and transverse97 now control,with node/repeated/conic96. Current least global[20,98],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56];both lower witnesses and conic/full-W-linear96 stay unchanged. Use I98 with at most7 exact radical rounds;no full coefficient search or expanded cofactors computed. Earlier general104/concurrent104/repeated99 and other larger bounds above remain valid historical coarser evidence. General and odd sufficient98 does not prove their least prefixes equal;even98 gives no97 parity deduction. Leastness,20/14 sufficiency and independent review remain open. Current exact quadratic axis projection G3AXISGAUSS20261115 keeps full Gaussian means/cross terms,ordinary volume/determinant and all time/delta derivatives. Finite Laurent ranks5/4 plus one restored v^2 direction give comparison losses0/4 and axis column orders2j-2/2j;common Lf powers20/16 combine with retained independent D30/D20. Weighted joint polynomial division before affine or constant specialization gives uniform transverse77/triangle82 and full96 with retained conic frames. All scalar valuations>=3l,zero N0/slopes,constant divisors,D0/shared roots and identically zero-axis/D frames remain retained. G3PURE9620261115 gives general96 and therefore odd96;homogeneous96 stays unchanged. Current least global[20,96],odd[20,96],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses and conic/full-W-linear96 retained. Use I96 with at most7 exact radical rounds;no full coefficient search or expanded cofactors computed. Earlier general/odd98 and larger class bounds above remain valid historical coarser evidence. Equal upper bounds do not prove equal least thresholds;even96 gives no95 parity deduction. Conic/node/repeated96,rank-one95 and smooth94 now control;leastness,20/14 sufficiency and independent review remain open. Current repeated-line Euler refinement G3REPEATEDEULER9220261115 keeps full a/D/h derivatives,ordinary volume and Gaussian determinant while cancelling top amplitude before forming seeds. Source time7/amplitude d-1 and depth(d-1)j-(d-2) give cubic33/quartic78;actual a0/D0 valuation retains all higher scalar orders. Restricted adapted mixed quartic U=t^2 Phi,D=t^2,prefactor1/t also gives78;affine-W92/c-zero35 yield full repeated92. No scalar factor is cancelled or frame face dropped. General/odd/homogeneous96 and least intervals global[20,96],odd[20,96],homogeneous[14,96],I96 with at most7 exact rounds,both lower witnesses and conic96 remain unchanged. Earlier repeated96/99 and adapted93 above are historical valid coarser evidence. Conic/full-W-linear96 and its node/transverse/triangle frames now control,followed by rank-one95/smooth94. Leastness,20/14 sufficiency,expanded I96 cofactors,independent review,schemes,term minima and GVC remain open. Current conic CT refinement G3CONICCT9420261115 keeps the full negative K^k coefficient module and logarithmic volume. A coefficientwise formal CT functional with regular scalar time connection selects the unit row at K0;exact h_prime seed induction makes all positive completed seed unit rows divisible by K. Cancel the resulting common scalar K,retaining t^(3l)K^(l-1),all ranks,constant K and K0/shared roots. p3q3 gates72/83/94 and retained other strata give conic94;parent92/rank-one95 give full W-linear95. G3PURE9520261115 gives general95 and original odd/homogeneous parity gives94. Current least general[20,95],odd[20,94],homogeneous[14,94],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses retained. Use I95 with at most7 exact rounds;no full coefficient search or expanded cofactors computed. Earlier general/odd/homogeneous96,conic/full-W-linear96 and other larger gates above remain valid historical coarser evidence. General95 gives no94 parity deduction for non-odd P. Rank-one/full-W-linear95 and smooth/conic94 now control;leastness,20/14 sufficiency and independent review remain open. Current two-branch rank-one refinement G3RANKONE5720261115 retains the full fixed-point quadratic and its exact Jacobians/time/q/h derivatives. Two regular cubic rank-two branch quotients give slow q orders4j;restoring y4 costs Hermite determinant order2. Common scalar q38 and joint degree95 give uniform degree-six57,including constant q,with polynomial extension to merged roots and all lower-degree/parent/null faces retained. Rank-one57 plus conic94/parent92 gives full W-linear94. G3PURE9420261115 gives general94;odd/homogeneous94 stay unchanged. Current least general[20,94],odd[20,94],homogeneous[14,94],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses retained. Use I94 with at most7 exact rounds;no full coefficient search or expanded cofactors computed. Earlier rank-one95/full-W-linear95/general95 and larger bounds above are valid historical coarser evidence. Even94 gives no93 parity deduction. Smooth94 and conic94 now control;leastness,20/14 sufficiency and independent review remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/RANK_ONE_WT2_CLASSIFICATION.md",
+      "dependencies": [
+        "G3WTRANKONE20261114",
+        "G3WZTFINITE20261114",
+        "G3SHEARCUTOFF20261114",
+        "GQFINITE20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_rank_one_wt2.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:632aa6e6ae7c2fc8249df9b4faefef7840a65b42f39c41e063b0781622b2cff1",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/verify_quadratic_w_log_periods.py",
+        "jacobian-followup/moment-vanishing-audit/verify_moment_transfers.py",
+        "jacobian-followup/moment-vanishing-audit/verify_mixed_period_infinity.py",
+        "jacobian-followup/moment-vanishing-audit/rank_one_wt2_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "GQFINITE20261114": {
+      "id": "GQFINITE20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Finite quadratic Gaussian classification and sharp mixed cutoff",
+      "scope": "For every centered complex quadratic P=X^T A X+l^T X-tr(A) in Gaussian covariance rank N>=1, with A symmetric, the first 2N+1 zero pure moments imply A^N=0 and l^T A^j l=0 for 0<=j<N. Conversely these identities imply all positive pure moments vanish, and E(QP^m)=0 for m>floor(N/2) deg(Q). The local source audits Liu v3 Theorems 2.1 and 2.2 and gives explicit circular chains attaining this mixed bound in every rank N>=2 and every multiplier degree. The optimality of the pure threshold 2N+1 in all ranks is reported separately from Liu and is outside this registered local proof audit. Rank zero is deterministic; rank one admits only the zero moment-null quadratic. The checker verifies finite examples independently, not the universal classification or realization theorem.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/QUADRATIC_GAUSSIAN.md",
+      "dependencies": [
+        "external: Zongmin Liu, Sharp finite Gaussian moments for quadratic polynomials, Zenodo 21688251 v3"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_moment_transfers.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d543ed356a45a6f51c8fd9ddd5a8fd235853127dffd665641326e41c68c6dc67",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "GQ3NORMAL20261114": {
+      "id": "GQ3NORMAL20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete ternary quadratic Gaussian moment-null normal form",
+      "scope": "Every complex polynomial of degree at most two in three standard real Gaussian variables with all positive pure moments zero has, in a complex orthogonal circular frame, the form P=Z*(a*Z+b*T+c), with E(ZW)=E(T^2)=1 and the other pairings zero. Conversely all such forms are moment-null and satisfy E(QP^m)=0 for m>deg(Q). The proof uses the dimension-one isotropic Krylov space and the rank-one or Jordan-(3) self-adjoint nilpotent cases; complex orthogonal invariance is invariance of the Wick functional. Equality is attained by P=Z,Q=W^d at m=d. This closes the quadratic layer only and does not exclude dense cubic failures or settle ordinary-Laplacian lifting.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/QUADRATIC_GAUSSIAN.md",
+      "dependencies": [
+        "GQFINITE20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_moment_transfers.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d543ed356a45a6f51c8fd9ddd5a8fd235853127dffd665641326e41c68c6dc67",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3DEGREEMIN20261115": {
+      "id": "G3DEGREEMIN20261115",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Global minimal degree and dimension of Gaussian-moment failures at the cubic boundary",
+      "scope": "Degree4 is the globally least possible degree of a three-variable GMC failure, and four independent Gaussian coordinates are the least possible dimension of a cubic GMC failure. G3CUBICALL20261115 excludes every degree<=3 ternary failure and, by extension with unused coordinates, every cubic failure in smaller dimension. Long supplies the sharp witnesses P3=(1+Z)*(W-(2+Z)*T^2/2) of degree4 in three coordinates and P4=(1+Z2)*(W1*(1-Z1)+W2) of degree3 in four coordinates. In each case formal contraction gives E(A(Z)*P^m)=m!*[z^m]A(z)*(1+z)^(m-1), with Z2 distinguished in P4; hence all positive pure moments vanish while the fixed distinguished linear multiplier has mixed moment m! for every m>=1. The all-dimension quadratic theorem also shows degree3 is globally minimal when dimension is unrestricted. The written all-order identity is included in the canonical note; the checker only verifies orders1..5. No global five-term minimum is proved: G3M retains its narrower normalized rank-one ansatz scope. Assurance remains internal written mathematics with exact auxiliary algebra, without independent specialist replay, external review or formal verification.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md",
+      "dependencies": [
+        "G3CUBICALL20261115",
+        "GQFINITE20261114",
+        "G3M",
+        "external: Long, arXiv:2607.18186v1, explicit ternary quartic and quaternary cubic GMC witnesses"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_cubic_gmc_closure.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:26806d397949f765f92636e1e5b0d84c1fbd4bdf010336fd599a0e23eca1ac21",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/cubic_gmc_closure_verification.json",
+        "jacobian-followup/moment-vanishing-audit/cubic_gmc_closure_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/cubic_problem_preclosure_20261115.json",
+        "jacobian-followup/moment-vanishing-audit/rank_one_wt2_verification.json",
+        "jacobian-followup/moment-vanishing-audit/affine_line_conic_profiles_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3WTRANKONE20261114": {
+      "id": "G3WTRANKONE20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete rank-one WT2 cubic pure-null classification and sufficient 425-moment gate",
+      "scope": "For P=W*(a+bZ+cT+fT^2)+G(Z,T), f!=0 and deg G<=3, all positive pure Gaussian moments vanish if and only if b=0 and G=0. Thus its pure-null members are W*(a+cT+fT^2) and satisfy E(QP^m)=0 for m>deg Q. Conditional GL1 gives g=t*A(T)/(1-bt). At b=0, highest Z degree of G yields a dominant polynomial phase and shrinking zero-action periods; the only degree-drop escape and the linear-G0 Gaussian escape have nonzero actions. At b!=0 divide G by bZ+A(T), with quotient linear and remainder R0(Z)+T*R1(Z). The remainder restricts triangularly to all T-degrees0..6, permitting complete stable/escape analysis. The exceptional alpha=beta=0,gamma=-b/(2f) quadratic limit is handled exactly: its coefficient is -1/(2q), and the constant-restriction Gaussian period is q^(-1/2)*exp(H), whose logarithmic derivative has residue -1/2. No nonzero constant period occurs off b=0,G=0. The analytic shrinking and period-comparison argument is written, not a computational contour certificate. Rational-connection numerator/denominator degrees are at most4d+4 for phase degree d<=6; minimal-seed cofactors give the sufficient pure prefix425. No optimality, external review, formalization or arbitrary-cubic frame reduction is claimed. Current joint-degree refinement G3POLYSEED20261115 gives rank-one140, mixed-parent255 and full W-linear336. G3WEIGHTEDSEED20261115 gives cusp complement225/full255 and tangent284. G3PURE353_20261115 proves global pure-only353 without a separate frame condition: least global[20,353], odd[20,352] by valid odd353 parity; all-homogeneous[14,336], smooth[20,94], homogeneous-smooth[14,56] remain. Ordinary full classes353/336/336 are unchanged and nodal353 is now the largest term. Earlier590/888/1855, rank-one425 and mixed-parent320 bounds above are historical valid coarser evidence; frame-plus336 now suffices, but336 is not claimed globally. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I353 cofactors and independent review remain open. Current exact-representative refinement G3EULERSEED20261115 gives ordinary complements297/271/244 and homogeneous nonisotropic-node101. G3CONIC258_20261115 gives conic258, full W-linear258 and all-homogeneous258, retaining original logarithmic normalization, trapped component and all actual endpoint cases. G3PURE297_20261115 proves global pure-only297 without a separate frame condition: least global[20,297], odd[20,296] by odd297 parity, all-homogeneous[14,258]. Smooth[20,94], homogeneous-smooth[14,56], rank-one140, mixed-parent255, cusp255 and tangent284 are unchanged. Earlier353/336/590 bounds above remain historical coarser evidence; frame-plus258 now suffices, but258 is not claimed globally. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I297 cofactors and independent review remain open. Current shared-divisor refinement G3SHAREDDIV20261115 gives ordinary complements227/220/204, with conic258 frame branches and full classes258. G3WEIGHTEULER20261115 gives cusp complement204/full255 and tangent complement254/full255. G3PURE258_20261115 proves global pure-only258 without a separate frame condition: least global/odd[20,258], homogeneous[14,258]; smooth[20,94] and homogeneous-smooth[14,56] are unchanged. Use I258 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactor computation has been run. Earlier297/284 and other larger gates above remain historical valid coarser evidence. Parity does not reduce even258 to257. Both lower witnesses and the qualitative case cover stay closed internally; leastness,20/14 sufficiency, expanded I258 cofactors and independent review remain open. Current structured-seed refinement G3STRUCTUREDSEED20261115 gives cubic conic216, mixed-parent210, full W-linear216 and all-homogeneous216, with polynomial-module cancellation only for actual p=q=3 seed amplitudes and all other endpoint cases retained. G3SHEARTANGENT20261115 gives tangent239 and full cusp210. G3PURE239_20261115 proves global pure-only239 without a separate frame condition: least global[20,239], odd[20,238] by odd239 parity, homogeneous[14,216]. Smooth[20,94] and homogeneous-smooth[14,56] are unchanged. Use I239 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors have been run. Earlier258/255 bounds above remain historical valid coarser evidence. Both lower witnesses stay complete; leastness,20/14 sufficiency and independent review remain open. Current common-time-factor refinement G3TIMEFACTOR20261115 gives ordinary complements199/199/189, cusp183, tangent224 and homogeneous nonisotropic-node72 by oddness from cofactor73. Conic/full-W-linear216 and mixed-parent210 are retained. G3PURE224_20261115 proves global pure-only224 without a separate frame condition: least global/odd[20,224], homogeneous[14,216], smooth[20,94], homogeneous-smooth[14,56]. Use I224 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactor computation has run. Earlier239/238 and larger gates above are historical valid coarser evidence. Even224 is not reduced to223 by parity. Both lower witnesses remain complete; leastness,20/14 sufficiency and independent review remain open. Current pole-filtered G3FILTEREDSEEDS20261115 gives conic/full-W-linear199, mixed-parent92 and homogeneous198. G3TANGENTPOLE20261115 gives tangent complement120/full132, including constant D and D(0)=0. G3PURE199_20261115 gives global199, odd198: least global[20,199], odd[20,198], homogeneous[14,198], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal199,cusp183,transverse199,tangent132,triangle199,concurrent104,repeated99. Use I199 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier224/216 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current formal multi-divisor refinement G3MULTIDIV20261115 gives ordinary complements174/166/142 and full cusp168. G3DISPLACECONIC20261115 gives conic/full-W-linear146 and all-homogeneous146. G3PURE174_20261115 gives global/odd174 without extra frame condition: least global/odd[20,174], homogeneous[14,146], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal174,cusp168,transverse166,tangent132,triangle146,concurrent104,repeated99. Both upper174/146 are even; no173/145 parity reduction. Use I174 with at most8 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier199/198 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current normal-module refinement G3AXISMODULE20261115 gives ordinary complements129/132/118 from universal L,N divisibility by D; normal coefficients are polynomial while exact rational witnesses are retained in C(t). G3HALFCUSP20261115 gives cusp complement131/full140. G3PURE146_20261115 proves global/odd146 without extra frame condition: least global/odd[20,146], homogeneous[14,146], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal146,cusp140,transverse146,tangent132,triangle146,concurrent104,repeated99. Even146 gives no145 parity reduction. Conic/full-W-linear146 controls the bound, with mixed-parent92/tangent132/rank-one140 retained. Use I146 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier174/168 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current two-sided conic refinement G3TWOSIDEDCONIC20261115 gives conic130, full-W-linear140 and homogeneous130. G3PURE140_20261115 proves global/odd140 without extra frame condition: least global/odd[20,140], homogeneous[14,130], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal130,cusp140,transverse132,tangent132,triangle130,concurrent104,repeated99. Both140/130 are even; no139/129 parity deduction. Unrestricted rank-one140 controls the bound; ordinary complements129/132/118,cusp131,mixed-parent92 and tangent132 are retained. Use I140 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier146 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current phase-factor/stopped-budget refinement G3RANKFACTORS20261115 gives rank-one95; G3STOPBUDGET20261115 gives transverse127 and cusp130 complements. G3PURE130_20261115 proves global/odd130 without extra frame condition: least global/odd[20,130], homogeneous[14,130], smooth[20,94], homogeneous-smooth[14,56]. Full cover: quadratic7,smooth94,nodal130,cusp130,transverse130,tangent120,triangle130,concurrent104,repeated99. Full-W-linear130 follows from conic130,parent92,rank-one95; ordinary complements129/127/118 and tangent120 are retained. Even130 gives no129 parity deduction. Use I130 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier140/132 bounds above are historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current endpoint/odd refinement G3CONIC10820261115 gives conic/full-W-linear108 and homogeneous108. G3ODD12620261115 proves odd126 using constant-D centered node/cusp sources, cofactor101/75 and complements100/74, with a complete odd class cover; it is not parity from global130. Current least global[20,130],odd[20,126],homogeneous[14,108],smooth[20,94],homogeneous-smooth[14,56]. Unrestricted cover: quadratic7,smooth94,nodal129,cusp130,transverse127,tangent120,triangle118,concurrent104,repeated99. Odd cover: quadratic7,smooth94,nodal108,cusp94,transverse126,tangent120,triangle118,concurrent104,repeated98. Final130/126/108 are even. Use I130 with at most7 radical-search rounds; no full coefficient-ring round or expanded global cofactors computed. Earlier homogeneous130 and odd130 bounds above are historical coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current weighted-odd refinement G3ODDWEIGHT20261115 gives odd transverse98,triangle78,tangent52 complements, with full odd tangent94 after frame faces. G3ODD10820261115 proves all-odd108 by complete centered coefficient/class cover, not parity from global130. Current least global[20,130],odd[20,108],homogeneous[14,108],smooth[20,94],homogeneous-smooth[14,56]. Odd cover: quadratic7,smooth94,nodal108,cusp94,transverse108,tangent94,triangle108,concurrent104,repeated98. General bounds and conic/full-W-linear108 remain unchanged. Even108 gives no107 parity deduction. Use I130 with at most7 radical-search rounds for least global K; no full coefficient-ring round or expanded global cofactors computed. Earlier odd126 above is historical valid coarser evidence. Both lower witnesses are complete; leastness,20/14 sufficiency and independent review remain open. Current completed-row refinement G3CONIC9620261115 proves conic/full-W-linear96 from the full negative coefficient module, not endpoint divisibility alone. G3ODD104HOM9620261115 gives complete odd104 and homogeneous96, with least global[20,130],odd[20,104],homogeneous[14,96]; smooth[20,94] and homogeneous-smooth[14,56] stay unchanged. Odd cover is quadratic7,smooth94,node100,cusp94,transverse98,tangent94,triangle96,concurrent104,repeated98. Generic global130 remains controlled by cusp130/node129; odd concurrent104 and homogeneous conic96 now control their covers. Earlier108 bounds remain valid coarser historical evidence. Both lower witnesses are complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review stay open. Current odd-concurrent refinement G3ODDCONCURRENT3620261115 gives class36 with full isotropic vertex retained: nonisotropic36/26,constant-W cubic height16 and flat Gaussian8. G3ODD10020261115 gives complete odd100, with least global[20,130],odd[20,100],homogeneous[14,96]. Generic concurrent104/global130 and conic/full-W-linear/homogeneous96 stay unchanged. Odd cover: quadratic7,smooth94,node100,cusp94,transverse98,tangent94,triangle96,concurrent36,repeated98. Odd node100 now controls its cover; even100 gives no99 parity reduction. Earlier odd104 remains valid historical coarser evidence. Both lower witnesses stay complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review remain open. Current even-time refinement G3EVENTIME20261115 proves completed odd normal rows polynomial in t^2, with per-row even-degree rounding and exact determinant assignments giving complements node98,cusp72,transverse98,triangle78,tangent50. G3ODD9820261115 proves full odd98 with all coefficient/frame faces retained. Current least global[20,130],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and generic130 stay unchanged. Odd cover: quadratic7,smooth94,node98,cusp94,transverse98,tangent94,triangle96,concurrent36,repeated98. Earlier odd100 remains historical valid coarser evidence. Even98 gives no97 parity deduction. Both lower witnesses stay complete; leastness,20/14 sufficiency, expanded I130 cofactors and independent review remain open. Current cusp-lattice refinement G3CUSPLATTICE20261115 gives linear-D125,constant-D109 and full cusp125 from a universal rank-one residue and common scalar factor D^(s-1), retaining q0/shared roots and all scalar valuations. G3PURE129_20261115 proves general129 with no extra frame hypothesis. Current least global[20,129],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses stay unchanged. General cover: quadratic7,smooth94,node129,cusp125,transverse127,tangent120,triangle118,concurrent104,repeated99. Generic node129 and transverse127 now control; odd node/transverse/repeated98 and homogeneous conic96 remain separate. Use I129 with at most7 exact radical-search rounds; no full coefficient search or expanded cofactors computed. Earlier general130/cusp130 above is historical valid coarser evidence. Odd129 gives no128 deduction for arbitrary P. Leastness,20/14 sufficiency and independent analytic review remain open. Current ordinary Gaussian-square refinement G3ORDLATTICE20261115 gives full node123,transverse122,triangle114 from rank-one D residues and common scalar D^(s-1) cancellation, with constant-D101/106/103 and all shared-axis/zero-D valuations retained. G3PURE125_20261115 proves general125 without an extra frame hypothesis. Current least global[20,125],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses remain unchanged. General cover: quadratic7,smooth94,node123,cusp125,transverse122,tangent120,triangle114,concurrent104,repeated99. Cusp125/node123 now control. Use I125 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general129 and larger ordinary bounds above remain historical valid coarser evidence. Odd125 gives no124 deduction for arbitrary non-odd P. Leastness,20/14 sufficiency and independent review stay open. Current triangular-divisor refinement G3TRIANGULARFACT20261115 proves common scalar D^(s(s-1)/2) from a generic semisimple rank-one differential split, slow seed valuations and polynomial extension to zero-trace/shared-axis/D0 cases. Full classes become node108,cusp115,transverse112,triangle108; constant-D101/109/106/103 and all higher scalar valuations are retained. G3PURE120_20261115 gives general120 without extra frame hypothesis. Current least global[20,120],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both completed witnesses remain unchanged. General cover: quadratic7,smooth94,node108,cusp115,transverse112,tangent120,triangle108,concurrent104,repeated99. Tangent120/cusp115 now control. Use I120 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general125 and larger class bounds above are historical valid coarser evidence. Even120 gives no119 parity deduction. Leastness,20/14 sufficiency and independent review remain open. Current tangent pole-residue refinement G3TANGLATTICE20261115 gives full tangent110 from linear-D110 and a separate unsheared constant-D105 normalization, with full v-Euler source5/16 and complete Jacobi rank-one residue. Generic differential orders6/5, polynomial extension to q0/D0/shared roots and all scalar valuations are retained. G3PURE115_20261115 gives general115 with no extra frame hypothesis. Current least global[20,115],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both lower witnesses remain unchanged. General cover: quadratic7,smooth94,node108,cusp115,transverse112,tangent110,triangle108,concurrent104,repeated99. Cusp115/transverse112 now control. Use I115 with at most7 exact radical-search rounds; no full coefficient round or expanded cofactors computed. Earlier general120/tangent120 above is historical valid coarser evidence. Odd115 gives no114 deduction for arbitrary non-odd P. Leastness,20/14 sufficiency and independent review remain open. Current formal Gaussian projection G3GAUSSPROJ20261115 retains the full volume/determinant and all connection derivatives; regular finite ranks6/5/4/5/4 plus one restored direction give comparison losses0/2/6 and slow seed orders2j/4j-1/6j. Common scalar powers42/30/20/53/54 give linear-D node87,transverse97,triangle98,cusp77,tangent66; separate constant-D gates101/106/103/109/105 now dominate. Generic polynomial extension retains q0,r0,D0,zero traces/shared roots and all higher valuations>=3l. G3PURE109_20261115 gives general109 with no frame hypothesis,least global[20,109]; odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56],conic/full-W-linear96 and both lower witnesses stay unchanged. Use I109 with at most7 exact radical rounds; no full coefficient round or expanded cofactors computed. Earlier115/110/108/112/115 gates above are historical valid coarser evidence. General109 gives no108 parity deduction for arbitrary non-odd P. Constant-D cusp109/transverse106/tangent105 now control; leastness,20/14 sufficiency and independent review remain open. Current infinity projection G3INFTYPROJ20261115 centers the transverse critical point and uses a formal Morse coordinate before Gaussian heat integration at x=1/t. Full volume/determinant and all physical-time,basis,Euler,shear derivatives are retained. Regular physical-time connection gives numerator pole<=3j; completed slow orders j/3j-1/5j and restored-direction comparison losses0/2/6 give constant-D80/91/93/71/61. No scalar factor is cancelled; higher valuations>=3l remain. Polynomial extension retains zero leading coefficients and all identically zero-axis/D frames. With retained linear-D and frame gates,full node96,transverse97,triangle98,cusp95,tangent95 yield G3PURE104_20261115 general104. Concurrent104/repeated99 now control. Current least global[20,104],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56]; conic/full-W-linear96 and both lower witnesses stay unchanged. Use I104 with at most7 exact radical rounds; no full coefficient search or expanded cofactors computed. Earlier general109 and larger class gates above remain historical valid coarser evidence. Even104 gives no103 parity deduction; leastness,20/14 sufficiency and independent review remain open. Current actual concurrent-seed refinement G3CONCURRENT9220261115 keeps full lower terms,means/metric and radial Euler volume/determinant derivatives:source5/4,amplitude2,depth2j-1 and row7j-1-|e|/6j-1-|e| give complements62/52 and full concurrent92 with the isotropic affine-W frame. G3REPEATED9620261115 uses actual H(0)=0 to keep higher scalar valuation>=j,removing the old extra rank allowance without cancelling scalar factors:repeated cubic39,quartic/full96 with frames35/92/93 retained. G3PURE9820261115 gives general98 with no frame hypothesis;triangle98 and transverse97 now control,with node/repeated/conic96. Current least global[20,98],odd[20,98],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56];both lower witnesses and conic/full-W-linear96 stay unchanged. Use I98 with at most7 exact radical rounds;no full coefficient search or expanded cofactors computed. Earlier general104/concurrent104/repeated99 and other larger bounds above remain valid historical coarser evidence. General and odd sufficient98 does not prove their least prefixes equal;even98 gives no97 parity deduction. Leastness,20/14 sufficiency and independent review remain open. Current exact quadratic axis projection G3AXISGAUSS20261115 keeps full Gaussian means/cross terms,ordinary volume/determinant and all time/delta derivatives. Finite Laurent ranks5/4 plus one restored v^2 direction give comparison losses0/4 and axis column orders2j-2/2j;common Lf powers20/16 combine with retained independent D30/D20. Weighted joint polynomial division before affine or constant specialization gives uniform transverse77/triangle82 and full96 with retained conic frames. All scalar valuations>=3l,zero N0/slopes,constant divisors,D0/shared roots and identically zero-axis/D frames remain retained. G3PURE9620261115 gives general96 and therefore odd96;homogeneous96 stays unchanged. Current least global[20,96],odd[20,96],homogeneous[14,96],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses and conic/full-W-linear96 retained. Use I96 with at most7 exact radical rounds;no full coefficient search or expanded cofactors computed. Earlier general/odd98 and larger class bounds above remain valid historical coarser evidence. Equal upper bounds do not prove equal least thresholds;even96 gives no95 parity deduction. Conic/node/repeated96,rank-one95 and smooth94 now control;leastness,20/14 sufficiency and independent review remain open. Current repeated-line Euler refinement G3REPEATEDEULER9220261115 keeps full a/D/h derivatives,ordinary volume and Gaussian determinant while cancelling top amplitude before forming seeds. Source time7/amplitude d-1 and depth(d-1)j-(d-2) give cubic33/quartic78;actual a0/D0 valuation retains all higher scalar orders. Restricted adapted mixed quartic U=t^2 Phi,D=t^2,prefactor1/t also gives78;affine-W92/c-zero35 yield full repeated92. No scalar factor is cancelled or frame face dropped. General/odd/homogeneous96 and least intervals global[20,96],odd[20,96],homogeneous[14,96],I96 with at most7 exact rounds,both lower witnesses and conic96 remain unchanged. Earlier repeated96/99 and adapted93 above are historical valid coarser evidence. Conic/full-W-linear96 and its node/transverse/triangle frames now control,followed by rank-one95/smooth94. Leastness,20/14 sufficiency,expanded I96 cofactors,independent review,schemes,term minima and GVC remain open. Current conic CT refinement G3CONICCT9420261115 keeps the full negative K^k coefficient module and logarithmic volume. A coefficientwise formal CT functional with regular scalar time connection selects the unit row at K0;exact h_prime seed induction makes all positive completed seed unit rows divisible by K. Cancel the resulting common scalar K,retaining t^(3l)K^(l-1),all ranks,constant K and K0/shared roots. p3q3 gates72/83/94 and retained other strata give conic94;parent92/rank-one95 give full W-linear95. G3PURE9520261115 gives general95 and original odd/homogeneous parity gives94. Current least general[20,95],odd[20,94],homogeneous[14,94],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses retained. Use I95 with at most7 exact rounds;no full coefficient search or expanded cofactors computed. Earlier general/odd/homogeneous96,conic/full-W-linear96 and other larger gates above remain valid historical coarser evidence. General95 gives no94 parity deduction for non-odd P. Rank-one/full-W-linear95 and smooth/conic94 now control;leastness,20/14 sufficiency and independent review remain open. Current two-branch rank-one refinement G3RANKONE5720261115 retains the full fixed-point quadratic and its exact Jacobians/time/q/h derivatives. Two regular cubic rank-two branch quotients give slow q orders4j;restoring y4 costs Hermite determinant order2. Common scalar q38 and joint degree95 give uniform degree-six57,including constant q,with polynomial extension to merged roots and all lower-degree/parent/null faces retained. Rank-one57 plus conic94/parent92 gives full W-linear94. G3PURE9420261115 gives general94;odd/homogeneous94 stay unchanged. Current least general[20,94],odd[20,94],homogeneous[14,94],smooth[20,94],homogeneous-smooth[14,56],with both lower witnesses retained. Use I94 with at most7 exact rounds;no full coefficient search or expanded cofactors computed. Earlier rank-one95/full-W-linear95/general95 and larger bounds above are valid historical coarser evidence. Even94 gives no93 parity deduction. Smooth94 and conic94 now control;leastness,20/14 sufficiency and independent review remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/RANK_ONE_WT2_CLASSIFICATION.md",
+      "dependencies": [
+        "GL1",
+        "G3MIXEDFULL20261114",
+        "GWNONSING20261114",
+        "external: Hien--Roucairol 0704.1739v1 Theorems 1.1/3.7 and 2.4"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_rank_one_wt2.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:632aa6e6ae7c2fc8249df9b4faefef7840a65b42f39c41e063b0781622b2cff1",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/verify_quadratic_w_log_periods.py",
+        "jacobian-followup/moment-vanishing-audit/verify_moment_transfers.py",
+        "jacobian-followup/moment-vanishing-audit/verify_mixed_period_infinity.py",
+        "jacobian-followup/moment-vanishing-audit/rank_one_wt2_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3HEIGHT20261114": {
+      "id": "G3HEIGHT20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete cubic-height Gaussian classification via formal Airy--Riccati obstruction",
+      "scope": "For P=W*h(Z)+s(Z)*T^3+v(Z)*T^2+u(Z)*T+r(Z) with arbitrary complex univariate polynomial coefficients and E(ZW)=E(T^2)=1, all positive pure moments zero force s=0 whenever h(0)!=0. The preceding complete affine-W classification then applies. On h(0)=0, pure vanishing is equivalent to h divisible by Z^2 and s,v,u,r divisible by Z, giving strictly one-sided support and GMC safety. In particular the entire thirteen-coefficient cubic family has s=0 on its pure-null locus and contains no GMC failure. In quartic degree the extended family has eighteen coefficients; its failures are precisely the preceding linear-h, linear-repair family with s=0. The proof derives a formal cubic-Gaussian two-by-two differential system, proves that rational logarithmic derivative would give an algebraic Airy Riccati solution, and excludes algebraic solutions by finite-point ODE uniqueness, Riemann--Hurwitz and rational behavior at infinity. It does not use a singular change of integration contour. The checker proves the universal rational identities and separately tests finite Wick regressions; formalization and external review remain absent. No general ternary frame reduction is claimed.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/CUBIC_HEIGHT_AIRY_OBSTRUCTION.md",
+      "dependencies": [
+        "GL1",
+        "G3AFFINEW20261114",
+        "external: Riemann--Hurwitz theorem for smooth projective curves"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_cubic_height_obstruction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:004dbf9dcdf60b159e25b9625cd1d3ee152b8553f86431262e798fb871a325c4",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/verify_moment_transfers.py",
+        "jacobian-followup/moment-vanishing-audit/verify_affine_w_classification.py",
+        "jacobian-followup/moment-vanishing-audit/cubic_height_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3AFFINEW20261114": {
+      "id": "G3AFFINEW20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "All-degree affine-W ternary Gaussian pure-moment classification",
+      "scope": "For P=W*h(Z)+v(Z)*T^2+u(Z)*T+r(Z) with arbitrary complex univariate polynomial coefficients and circular Wick pairings E(ZW)=E(T^2)=1, all positive pure moments vanish exactly in three branches. If h(0)=0, h is divisible by Z^2 and v,u,r by Z, giving strictly one-sided support and GMC safety. If h=a!=0 is constant, v=0 and r=-Z*u^2/(2a), giving a polynomial Gaussian triangular shear and GMC safety. If h=a+bZ with a*b!=0, v=(h-h^3/a^2)/(2Z), u=h^2*k and r=-(a^2/2)*Z*h*k^2 for an arbitrary polynomial k; then E(Z*P^m)=m!*a*b^(m-1) for every m>=1, so every member fails GMC. No higher-degree h with nonzero constant term is possible: its reduced logarithmic-derivative numerator has a root off h, contradicting the forced polynomial square identity. The proof uses GL1 and rational-exponential rigidity; exact finite regressions test both charts and nonconstant repaired failures, not the universal quantifiers. No global ternary classification or novelty claim.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md",
+      "dependencies": [
+        "GL1"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_affine_w_classification.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a86ec524ee7ca785f9c5489f0e3ecfa6d9095135c1334db39d27f1e17f7cc52a",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/verify_moment_transfers.py",
+        "jacobian-followup/moment-vanishing-audit/affine_w_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "GSMOOTHFINITE20261114": {
+      "id": "GSMOOTHFINITE20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Smooth leading Gaussian polynomials have explicit nonzero moment prefixes; ternary cubic bound188",
+      "scope": "For degree D>=3 in N independent standard real Gaussian variables, if the homogeneous leading form F_D has gradient zero only at0, some pure moment of order1 through K is nonzero, where mu=(D-1)^N, B=N*(D-2)+2 and K=B*mu*(mu+1)/2+mu. The proof uses uniform complex gradient growth, tame rapid-decay comparison, isolated degenerate local stationary phase, and a homogeneous regular-sequence twisted reduction retaining all derivative terms. For ternary cubics K=188, with arbitrary lower coefficients. This is sufficient, not optimal and not a global arbitrary-cubic gate. The optimal smooth-leading cubic prefix is at least2N by a root-of-unity sum of independent cubic Gaussian variables and positivity of even connected Wick cumulants. In three variables x^3+omega*y^3+omega^2*z^3 has first five moments zero and sixth96,665,400, which remains a valid all-dimension root-filter witness. Subsequent G3SMOOTH14WITNESS20261115 supplies an explicitly isolated algebraic smooth ternary cubic with moments1,...,13 zero and14th nonzero, improving the current smooth ternary interval to[14,188]. The upper188 argument is unchanged. Exact Hesse division witnesses,24 model connection columns, nodal patches and finite Wick/root-filter regressions support the written proof; they do not computationally prove its analytic or all-parameter assertions. No external review or formal verification. Subsequent G3ODD20WITNESS20261115 now supplies a nonhomogeneous odd smooth-leading cubic with moments1,...,19 zero and20th nonzero, improving the current smooth-leading interval to[20,188]. The earlier homogeneous smooth witness retains lower14 on its narrower homogeneous class; neither construction proves an optimal upper. The sufficient188 argument is unchanged. Subsequent GSMOOTHSEED20261115 sharpens cubic smooth-leading upper188 to94 by graded actual-seed and cofactor bounds; GHOMSMOOTHSEED20261115 gives homogeneous-smooth upper56. Current ternary intervals are[20,94] and[14,56]. Their all-N cubic bounds are mu*(3mu+3-N)/2-2 and mu*(mu-1), mu=2^N. The original general-degree bound remains valid and is not replaced for D>3. These new algebraic degree proofs retain this earlier analytic no-constant-period input and do not improve the global1855 cover maximum.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/COERCIVE_GRADIENT_MOMENTS.md",
+      "dependencies": [
+        "G3COERCIVE20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_tame_gaussian_moments.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:150b0f269e01b730dbb3a55e0cde3f68f61e2ac7353935cbaecd9d9eb134dc1a",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/tame_gaussian_verification.json",
+        "jacobian-followup/moment-vanishing-audit/tame_period_source_audit.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3NODALALL20261114": {
+      "id": "G3NODALALL20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete irreducible nodal-leading ternary cubic pure exclusion by an unramified formal frame",
+      "scope": "Over C in characteristic zero, every ternary cubic whose homogeneous leading projective curve is irreducible nodal has a nonzero positive pure Gaussian moment, for arbitrary lower-degree terms and the full transformed nondegenerate affine Gaussian, including its means. The isotropic-node/conic and F2(node)!=0 coercive alternatives are already excluded. In the remaining nonisotropic-node chart P=T*(uv+h)+a*u^3+d*v^3+b*u^2+c*v^2+e*u+f*v+k, a*d!=0, Q_TT=m!=0 and det Hess Q!=0, the h=e=f=0 critical-line case is covered by G3NODALCENTERALL20261114. For every finite-critical member, a smooth conic coordinate s=uv+h and an exact T shear give P=s*w+R(u); each finite singularity has analytic local type alpha+s*w+y^(mu+1),1<=mu<=6. Explicit formal integration-by-parts recurrences give mu horizontal power-phase characters with exponents1+j/(mu+1),1<=j<=mu, none integer, with exp(alpha*t). The retained1/3/4/5 escaping Morse branches supply formal Gaussian functionals with nonzero exponential factors, even when quartic opposite roots share their positive actions. Their multiplicities and finite Milnor ranks exhaust the full top twisted de Rham rank7. A generic linear form separates finite points and escape roots; a degree<F confluent finite Hermite basis multiplied by the eighth power of the normalized escape-product polynomial, together with degree6 escape interpolation polynomials, gives a full seven-row amplitude frame. Cross-block orders are at least r^(9-F) and r^F, positive for finite rank F<=6, while finite jet and escape Gaussian leading diagonal blocks are invertible. This proves the full formal frame rather than inferring scalar independence from a point count. The escape-product coefficients and finite rows descend to C((1/t)); projecting to the canonical zero-exponential component gives an unramified formal matrix times the finite noninteger character powers at alpha=0. Hence no trivial regular composition factor exists over the base Laurent field; even ramification must not erase that descent condition. Nonzero exponential factors cannot supply a trivial factor either. If all positive pure moments vanished, formal Wick relations would define a nonzero rational horizontal quotient of the differential seed submodule with values1,0,0,... on seed derivatives, yielding a forbidden trivial subquotient of the full module. No seed cyclicity, actual-period extension, convergence of the complete stationary-phase expansion or unidentified global formal Fourier/direct-image theorem is used. Finite critical degeneracies, coincident P-values and every quartic gamma/Xi resonance are included. Exact auxiliary checks cover normal coordinate identities, power/Gaussian recurrences, small confluent interpolation partitions, degree valuations and noninteger residues; completeness, descent and differential-module reasoning are internal written mathematics. No explicit uniform numerical pure prefix, independent specialist replay, external review or formal verification is asserted. General nonhomogeneous cuspidal/reducible-leading cubics, coefficient schemes and lower-power GVC remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/NODAL_FORMAL_FRAME.md",
+      "dependencies": [
+        "G3NODALCRITICAL20261114",
+        "G3NODALCENTERALL20261114",
+        "G3NODALMORSE20261114",
+        "G3NODALREDUCTION20261114",
+        "G3COERCIVE20261114",
+        "GWNONSING20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_nodal_formal_frame.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:df745e90d717d84074f75f2afd150c3c55e631e1f0881a963f383b6e3758205d",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/nodal_formal_frame_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_formal_frame_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_gaussian_critical_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_morse_dominance_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_double_resonance_exploration.py",
+        "jacobian-followup/moment-vanishing-audit/nodal_double_resonance_chi3.txt",
+        "jacobian-followup/moment-vanishing-audit/nodal_double_resonance_exploration_run.json",
+        "jacobian-followup/moment-vanishing-audit/sources/sabbah_stokes_0912_2762v5.pdf"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3CUSPALL20261114": {
+      "id": "G3CUSPALL20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete cuspidal-leading ternary cubic GMC safety and nonisotropic affine pure exclusion",
+      "scope": "Over C in characteristic zero, every ternary cubic with irreducible cuspidal homogeneous leading curve is GMC-safe, for arbitrary lower-degree terms. If F2(cusp)!=0, a direct sequence argument proves complex linear gradient coercivity, so some positive pure Gaussian moment is nonzero, regardless of cusp isotropy. If the cusp is isotropic with F2(cusp)=0, the retained exact Gaussian W-linear frame criterion and full sixteen-coefficient theorem give GMC safety with mixed cutoff m>3*deg Q; no separate pure-null classification is asserted for this alternative. If the cusp is nonisotropic and F2(cusp)=0, affine translations put P=T*(u^2+gamma*v+h)+v^3+buv+eu+fv+k with full nondegenerate affine Gaussian Q retained and m=Q_TT!=0. The three projective gradient quadrics have a unique length2 point at infinity, so every t!=0 Gaussian phase has affine critical length6 and the top twisted module has rank6 by linear coercivity. All seven profiles are included: gamma!=0 has finite A_mu rank5 and a single nonzero quartic-action Gaussian escape; gamma=0,h!=0 has finite rank4 and two cubic power escape characters with nonzero quadratic action; gamma=h=0,f!=0 has two rank3 groups, each a three-saddle nonzero-action hierarchy or a fixed quartic plus Gaussian pair when b*v_i+e=0; f=0,e*b!=0 has six two-level Gaussian escapes; f=b=0,e!=0 has three nonzero-action groups of fixed cubic rank2; f=e=0,b!=0 has a single six-Morse leading model with five nonzero actions and one positive-valuation origin; f=e=b=0 has a fixed quartic/cubic/Gaussian block of rank6 with seed prefactor t^-5/6. Weighted polynomial jet interpolation and leading block matrices give complete frames, including all coalescences and critical lines. Fixed phase blocks are formally lifted by ell(exp(F_r-F0)*a), a coefficientwise product-rule conjugacy with invertible leading matrix. After a finite cover the full formal module is semisimple, so any trivial quotient of the differential seed submodule extends to the full module. Every nonzero exponential factor has no horizontal map to the trivial module, and every zero-exponential scalar seed period has positive valuation: finite powers t^(-1-j/d), center factors t^-1, or t^-5/6. Their constant linear combinations cannot equal1. Formal Wick all-pure-zero relations would supply precisely such a rational seed quotient, a contradiction. This proves pure-nonvanishing for the entire nonisotropic-cusp class without a genericity, seed-cyclicity or actual-period convergence assumption. Exact checks verify the profile, action/Hessian, completion, rank and positive-valuation arithmetic; the full formal frame and quotient-extension argument are internal written mathematics. No explicit nonhomogeneous numerical pure prefix, independent specialist replay, external review or formal verification is asserted. Remaining possible ternary cubic GMC failures have nonhomogeneous reducible leading curves, including repeated lines. Coefficient schemes and lower-power GVC remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/CUSPIDAL_AFFINE_EXCLUSION.md",
+      "dependencies": [
+        "G3NODALALL20261114",
+        "G3WLINEAR20261114",
+        "G3COERCIVE20261114",
+        "G3CUSP10_20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_cuspidal_affine_profiles.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5bf0729729291edab9d547205422de16eb78148a2b4a47d481a0d52485ecd734",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/cuspidal_affine_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/cuspidal_affine_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/cuspidal_cubic_threshold_verification.json",
+        "jacobian-followup/moment-vanishing-audit/rank_one_wt2_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_formal_frame_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3TRIANGLEAFFINE20261114": {
+      "id": "G3TRIANGLEAFFINE20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete affine perturbation exclusion for three independent leading lines",
+      "scope": "Over C in characteristic zero, if the leading homogeneous form of a ternary cubic is a product of three linearly independent linear forms, some positive pure Gaussian moment is nonzero, for arbitrary lower terms. Full nondegenerate affine Gaussian metrics and means are retained under the linear/translation reduction. An isotropic ordinary node with F2=0 gives a nondegenerate quadratic W coefficient and is pure-excluded; if F2 is nonzero at all nodes the retained coercive criterion applies. Otherwise choose a nonisotropic zero-F2 node and normalize P=T*(uv+h)+b*u^2+c*v^2+eu+fv+k, with Q_TT=m!=0, Q_uu=A!=0 if b=0, and Q_vv=B!=0 if c=0. For sufficiently large t all three infinity nodes have length1 and the top twisted Gaussian phase rank is5. All32 support patterns in h,b,c,e,f split exactly into23 finite-critical,5 critical-conic and4 critical-axis patterns. On the finite locus every isolated point is alpha+s*w+y^(mu+1),mu<=4; finite Milnor ranks and explicit1/3/4 escaping Morse profiles at exposed nodes total5. Every escape has nonzero positive action and bounded physical Gaussian fluctuations; finite zero-exponential characters have positive seed valuation. A full degree<5 confluent numerator basis B(L)/(L-L_p)^(mu_p-j),B(L)/(L-L_i) has an invertible formal evaluation matrix after finite B_p(L_p) and escape B′(L_i) column normalizations, whose exact relative-factor identities remain small across different t scales. These are determinant normalizations, not changes to horizontal seed values. This proves a full semisimple formal frame and the positive seed criterion excludes pure zeros without distinct-value or action genericity. Every critical-conic pattern permutes to P=w*(xy+d*w+a)+k,a!=0. Balanced transverse scaling gives a fixed Laurent rank4 block on xy=-a, with nonzero quadratic poles from the nonisotropic zero-F2 x/y nodes, Gaussian normal determinant-1 and seed prefactor t^-1. A finite Morse point of value k-a^2/(4d) when d!=0, or a nonzero quadratic-action escape when d=0, supplies the fifth dimension. Polynomial cutoffs prove completeness, and positive seed valuation excludes constants. Critical axes are exactly e=f=h=0; all P-critical values equal k. Transverse2-by-2 systems at each leading node prove a common complex linear gradient bound for tP-Q outside one fixed ball for all large t. The retained semialgebraic carriers and current-limit argument, now rank5, gives normalized scalar cut decay; on a ray Re(kt)<=0 no nonzero constant actual period exists. This covers intersecting axes without asserting formal semisimplicity there. Exact auxiliary checks certify the support/rank arithmetic, local infinity Jacobians, escape action/Hessian identities, small numerator frames and conic/Laurent identities, not the full formal or analytic proof. No uniform numerical affine triangle prefix, independent replay, external review or formal verification is claimed. Three concurrent lines are outside the leading independence assumption. Remaining arbitrary-cubic GMC classes have nonhomogeneous line-smooth-conic, concurrent-line or repeated-line leading forms; coefficient schemes and lower-power GVC remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/AFFINE_TRIANGLE_EXCLUSION.md",
+      "dependencies": [
+        "GWNONSING20261114",
+        "G3WLINEAR20261114",
+        "G3COERCIVE20261114",
+        "G3NODALCRITICAL20261114",
+        "G3NODALCENTER20261114",
+        "G3CUSPALL20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_affine_triangle_profiles.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c56fd231648446d5e3cd0d1db9364c7d527a56680b51c34d0648bc9038191417",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/affine_triangle_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/affine_triangle_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/affine_triangle_initial_checker_input.py",
+        "jacobian-followup/moment-vanishing-audit/affine_triangle_initial_failure.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_gaussian_critical_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_center_line_decay_verification.json",
+        "jacobian-followup/moment-vanishing-audit/cuspidal_affine_profiles_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3CONCURRENT20261114": {
+      "id": "G3CONCURRENT20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete affine GMC safety for three concurrent distinct leading lines",
+      "scope": "Over C in characteristic zero, every ternary cubic with three distinct concurrent leading linear factors is GMC-safe, for arbitrary lower terms. If F2 at the common vertex is nonzero, the unique leading singular direction and its T gradient prove complex linear coercivity, hence pure-nonvanishing. If the vertex is isotropic and F2(vertex)=0, the exact W-linear Gaussian frame theorem gives GMC safety; no separate assertion that its entire pure-null locus is empty is made. For a nonisotropic vertex with F2(vertex)=0, write P=T*H(u,v)+G(u,v), deg H<=1, G3 a squarefree homogeneous binary cubic, and retain full nondegenerate affine Q with m=Q_TT!=0. Exact Gaussian completion gives Phi=tG-q2+(tH-J)^2/(2m), a binary cubic phase of full twisted rank4. Constant H reduces to a fixed binary cubic with finite total Milnor rank4 and nondegenerate Schur Gaussian, plus a nonzero scalar quadratic action if H!=0. Hessian-rank>=1 finite critical points have A_mu types; rank0 forces an exact homogeneous squarefree binary cubic block with fixed quotient rank4. Their full formal frames have positive scalar seed valuation when their exponential is zero. For nonconstant H normalize H=u and absorb lower divisible terms by affine T changes. If u does not divide G3, the normal form is uT+a*u^3+b*u^2*v+d*v^3+q*v^2+fv+k with d!=0 and27*a^2*d+4*b^3!=0. Finite A_mu rank2 plus two large-scale escape dimensions exhaust4. For b!=0 the two escapes are Morse with nonzero quartic action. For b=0 their A2 family has exact formal normal form C(r)+X^2+Y^3+A(r)Y, C(0)!=0, r=1/t: ord A=1 or2 yields two separated Gaussian expansions because2-3ord(A)/4>0; ord A>=3 or A=0 yields a fixed cubic rank2 because ord(A)-8/3>0. Polynomial leading amplitudes and coarse T cutoffs give a full4-by-4 frame and retain the nonzero quartic exponential, without unresolved unfolding genericity. If u divides G3, the normal form is uT+a*u^3+c*u*v^2+q*v^2+fv+k,a*c!=0. A common primary Morse escape has action t^4/(54*a^2*m^3). For q!=0, one finite Morse point and two quadratic-action escapes supply3 more dimensions; for q=0,f!=0, three t^(4/3)-action escapes supply3; for q=f=0, the critical parabola u=0,T=-cv^2 has a fixed quartic/Gaussian quotient rank3 and scalar seed prefactor t^-1. Confluent numerator frames or fixed-phase cutoffs prove completeness in all cases. Every zero-exponential scalar seed has strictly positive parameter valuation; after ramification the complete formal module is semisimple, so the rational seed quotient that all pure zeros would supply extends to it and cannot take that seed to1. This proves pure-nonvanishing for every nonisotropic-vertex member with all means/cross covariances retained. Exact checks verify completion, Schur determinant, Jacobian algebra, resultant, rescaling/action/Hessian and threshold arithmetic, not the written normal-form/completeness/quotient arguments. No numerical uniform pure gate, independent specialist replay, external review or formal verification is claimed. Remaining possible cubic GMC failures have nonhomogeneous line-smooth-conic or repeated-line leading curves; coefficient schemes and lower-power GVC remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/CONCURRENT_LINE_EXCLUSION.md",
+      "dependencies": [
+        "G3TRIANGLEAFFINE20261114",
+        "G3CUSPALL20261114",
+        "G3WLINEAR20261114",
+        "G3COERCIVE20261114",
+        "GSMOOTHFINITE20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_concurrent_line_profiles.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f14a86c8587aedaf054b62a62b74a3f08ab7b8d8a7d235cfe3c78cd3db811e11",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/concurrent_line_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/concurrent_line_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/concurrent_line_initial_checker_input.py",
+        "jacobian-followup/moment-vanishing-audit/concurrent_line_initial_failure.json",
+        "jacobian-followup/moment-vanishing-audit/concurrent_line_v2_checker_input.py",
+        "jacobian-followup/moment-vanishing-audit/concurrent_line_v2_failure.json",
+        "jacobian-followup/moment-vanishing-audit/affine_triangle_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/cuspidal_affine_profiles_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    },
+    "G3LINECONIC20261114": {
+      "id": "G3LINECONIC20261114",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete affine GMC safety for a line times a smooth conic",
+      "scope": "Over C in characteristic zero, every ternary cubic whose leading homogeneous form is a line times a smooth conic is GMC-safe for arbitrary lower terms. Every transverse member is pure-nonvanishing. After isotropic zero-F2 ordinary-node conic exclusion and all-nonzero-F2 coercive exclusion, its full affine form is P=T*(uv+h)+a*u^3+b*u^2+c*v^2+eu+fv+k,a!=0, with full nondegenerate affine Q retained,m=Q_TT!=0,and Q_vv!=0 if c=0. The generic Gaussian phase rank is6. All32 support patterns split26 finite,2 hyperbola and4 axes: finite A_mu characters and explicit exposed-node1/3/4/5 escapes exhaust6; the hyperbola gives fixed Laurent rank4 with positive t^-1 seed plus finite rank2; critical axes have at most two P-values and a proved uniform gradient bound, so retained normalized cut/current decay on a supporting ray excludes constants. Tangent members with F2(tangency)!=0 are gradient-coercive by uv=O(T),v^2+2Tu=O(T),u=O(T^(1/3)) and the nonzero T^2 coefficient. Isotropic zero-F2 tangencies use retained W-linear GMC safety, without a separate assertion here of empty pure-null locus. Nonisotropic zero-F2 tangencies normalize to P=T*(u^2+g*v+h)+(u+c)*v^2+eu+fv+k with full Q and m!=0; their length3 infinity point leaves full twisted rank5. All11 profiles exhaust5: g!=0 finite4 plus one sextic-action escape; h!=0 branches include finite2/primary1/secondary2, cubic trios or fixed quartic blocks when c=0, and finite1/primary1/secondary3 or a fixed parabola when c^2+h=0; h=0,c!=0 has escape3 or fixed critical-line3 plus secondary2; c=0,f!=0 has five Gaussian escapes; c=f=0,e!=0 has two fixed critical-line Gaussians plus escape3; c=f=e=0 has a fixed D5/Gaussian rank5 model. Correlated normal coordinates at the collapsing parabola justify the Gaussian hierarchy, not merely its Hessian. The final weighted phase U^4/(2m)+UV^2 has rank5 and volume t^-3/4. Complete numerator or fixed-phase frames and strictly positive zero-exponential seed valuations exclude a rational trivial seed quotient. All full Gaussian means, cross terms, critical degeneracies, equal actions and positive-dimensional critical sets are retained. Exact checks verify support/rank arithmetic and model actions, Jacobians and completions, not the written formal/analytic completeness. No explicit uniform numerical pure prefix, independent replay, external review or formal verification is asserted. Remaining possible cubic GMC failures have repeated-line leading forms; coefficient schemes and lower-power GVC remain open.",
+      "canonical_source": "jacobian-followup/moment-vanishing-audit/LINE_CONIC_AFFINE_EXCLUSION.md",
+      "dependencies": [
+        "GWNONSING20261114",
+        "G3COERCIVE20261114",
+        "G3WLINEAR20261114",
+        "G3NODALCRITICAL20261114",
+        "G3NODALCENTER20261114",
+        "G3CUSPALL20261114",
+        "G3TRIANGLEAFFINE20261114",
+        "G3CONCURRENT20261114"
+      ],
+      "checker": "jacobian-followup/moment-vanishing-audit/verify_affine_line_conic_profiles.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:44e513f38579dbb840b84c66a6364076f8acb90dcd1cc7a170f93835957eec26",
+      "software_lock": [
+        "jacobian-followup/moment-vanishing-audit/affine_line_conic_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/affine_line_conic_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/affine_triangle_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/concurrent_line_profiles_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_gaussian_critical_verification.json",
+        "jacobian-followup/moment-vanishing-audit/nodal_center_line_decay_verification.json",
+        "jacobian-followup/moment-vanishing-audit/cuspidal_affine_profiles_verification.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GMC3-CUBIC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference",
+      "programme_status": "archived"
+    }
+  },
+  "core_proofs_sha256": {
+    "jacobian-followup/moment-vanishing-audit/AFFINE_TRIANGLE_EXCLUSION.md": "52b81ec2ac43c41f3b5aaefde4b7dc11abaf209a8d6c7ac961b6258f97674e12",
+    "jacobian-followup/moment-vanishing-audit/COERCIVE_GRADIENT_MOMENTS.md": "627325eb7953f5dcedf8e3d06e4ca00ba699b072e533f42f4bff145bbc4f71c1",
+    "jacobian-followup/moment-vanishing-audit/CONCURRENT_LINE_EXCLUSION.md": "9a6f0f9e16b74daf0c20627d94c248b7e02128cd182b3c6152b0ca3385a4c056",
+    "jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "jacobian-followup/moment-vanishing-audit/CUBIC_HEIGHT_AIRY_OBSTRUCTION.md": "6450ba70bed52431953b2cfbe87189df5e9ab5780433cab3fe4be0cf30fab8e0",
+    "jacobian-followup/moment-vanishing-audit/CUSPIDAL_AFFINE_EXCLUSION.md": "fb658c229c95000321aa284c9dbb290ca205f5a317ef5f057cab3aa496712756",
+    "jacobian-followup/moment-vanishing-audit/LINE_CONIC_AFFINE_EXCLUSION.md": "b88ee273d9342c815142a05b38d096d4c4690d4f1c7f105b69445480f2e5a246",
+    "jacobian-followup/moment-vanishing-audit/NODAL_FORMAL_FRAME.md": "f32e91ed9154e3d7f1b378fe54f7a113fac286624527c59d4123627dce0aabe6",
+    "jacobian-followup/moment-vanishing-audit/QUADRATIC_GAUSSIAN.md": "a2c943843ea4b1c06d33796b038c22f5f351c688dbb2d2c4ecd064b98cace958",
+    "jacobian-followup/moment-vanishing-audit/RANK_ONE_WT2_CLASSIFICATION.md": "91bf42b4a6fc269ba929b51acfca4527aa03adb017192096c943bf43b2d15c30",
+    "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md": "0701fc552d1c30266281162fbc1bd62a7c9135c72e7c013a70d7241bb21224ca"
+  },
+  "fully_written_parts": [
+    "Precise purity/safety and G(n,d) definitions;dimension-degree table and exhaustive complement argument.",
+    "Formal Gaussian generating functions;one-sign weight lemma and linear circular contraction.",
+    "All-dimension quadratic classification and cutoff,credited to Liu,without finite-prefix machinery.",
+    "Both Long examples from one contraction identity,with all-order mixed moments m!.",
+    "Full shear source identity,weighted source-degree bound and sharp equality for every multiplier degree.",
+    "Algebraic isotropic frame TEST,distinct from existence.",
+    "Complete 12-coefficient W*h(Z)+v(Z)T2+u(Z)T+r(Z) cubic subcase by rational exponential rigidity and root divisibility."
+  ],
+  "unfinished_standalone_proof_obligations": [],
+  "leading_form_routes": [
+    {
+      "type": "smooth cubic",
+      "claim": "GSMOOTHFINITE20261114",
+      "source": "jacobian-followup/moment-vanishing-audit/COERCIVE_GRADIENT_MOMENTS.md"
+    },
+    {
+      "type": "irreducible nodal cubic",
+      "claim": "G3NODALALL20261114",
+      "source": "jacobian-followup/moment-vanishing-audit/NODAL_FORMAL_FRAME.md"
+    },
+    {
+      "type": "irreducible cuspidal cubic",
+      "claim": "G3CUSPALL20261114",
+      "source": "jacobian-followup/moment-vanishing-audit/CUSPIDAL_AFFINE_EXCLUSION.md"
+    },
+    {
+      "type": "line and smooth conic,transverse or tangent",
+      "claim": "G3LINECONIC20261114",
+      "source": "jacobian-followup/moment-vanishing-audit/LINE_CONIC_AFFINE_EXCLUSION.md"
+    },
+    {
+      "type": "three nonconcurrent distinct lines",
+      "claim": "G3TRIANGLEAFFINE20261114",
+      "source": "jacobian-followup/moment-vanishing-audit/AFFINE_TRIANGLE_EXCLUSION.md"
+    },
+    {
+      "type": "three concurrent distinct lines",
+      "claim": "G3CONCURRENT20261114",
+      "source": "jacobian-followup/moment-vanishing-audit/CONCURRENT_LINE_EXCLUSION.md"
+    },
+    {
+      "type": "double line with distinct remaining line,or triple line",
+      "claim": "G3REPEATED20261115",
+      "source": "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md"
+    }
+  ],
+  "deliberately_not_required": [
+    "Any numerical pure-moment prefix,including 888 or later94.",
+    "Least-prefix optimizations and expanded global cofactors.",
+    "Full nonreduced coefficient schemes.",
+    "Slope selectors,Oaku operators or higher-rank Gaussian realization.",
+    "Classification of every individual safe phase."
+  ],
+  "external_inputs": [
+    {
+      "author": "Wilson",
+      "type": "public preprint",
+      "version": "arXiv:2607.23887v1",
+      "url": "https://arxiv.org/html/2607.23887v1",
+      "checked": "Full Theorem1 and Sections2-6 source body,including algebraic specialization,prime isolation and mixed-edge argument."
+    },
+    {
+      "author": "Long",
+      "type": "public preprint",
+      "version": "arXiv:2607.18186v1",
+      "url": "https://arxiv.org/html/2607.18186v1",
+      "checked": "Sections3-5 all-order contraction proofs;unrelated Jacobian announcement not used."
+    },
+    {
+      "author": "Liu",
+      "type": "public preprint",
+      "version": "Zenodo21688251v3",
+      "url": "https://zenodo.org/records/21688251",
+      "checked": "Current primary record rechecked;full quadratic source and reproduction are retained in prior sealed audit. No new replay of sealed checker."
+    },
+    {
+      "author": "Derksen-van den Essen-Zhao",
+      "type": "journal article",
+      "journal": "Israel J.Math.219(2017),no.2,917-928",
+      "url": "https://arxiv.org/abs/1506.05192",
+      "checked": "Title/authors/publication record verified;historical formulation cited."
+    },
+    {
+      "author": "Celine Roucairol",
+      "type": "journal article and retained primary full text",
+      "url": "https://arxiv.org/html/math/0604134v2",
+      "checked": "Theorems0.1(2),0.3,nonramified Section1.2/Proposition1.2. Apply AFTER finite Puiseux base change of all critical-value curves. Conormal multiplicities count local Milnor numbers. No distinct-action or Theorem0.2 monodromy formula used."
+    },
+    {
+      "author": "Drusvyatskiy-Lewis,crediting Hardt",
+      "url": "https://people.orie.cornell.edu/aslewis/publications/13-semi.pdf",
+      "checked": "Theorems2.25 finite-family compatible Hardt triviality,2.32 uniform finiteness;printed14/PDF10 and printed16/PDF12."
+    },
+    {
+      "author": "Hardt-Lambrechts-Turchin-Volic",
+      "url": "https://arxiv.org/pdf/0806.0476",
+      "checked": "Sections2.1 and3,Theorems2.4 and3.5:compatible semialgebraic triangulation and chain-current boundary rule."
+    },
+    {
+      "author": "Simon,crediting Federer-Fleming",
+      "url": "https://math.stanford.edu/~lms/ntu-gmt-text.pdf",
+      "checked": "Chapter6 Section3 Theorem3.15,printed175/PDF91. Mass AND boundary-mass hypothesis and integer-multiplicity rectifiable conclusion verified."
+    },
+    {
+      "author": "Sabbah",
+      "url": "https://arxiv.org/html/0706.3570v2",
+      "checked": "Section3 Corollary3.3 and its proof:unique typical-component decomposition,no morphisms across exponential types;formal input may be nonconvergent. Geometric rank application remains algebraic/convergent."
+    }
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_assessed": false,
+  "all_prior_proof_packets_unchanged": true,
+  "version": "v011",
+  "manuscript_inputs_sha256": {
+    "manuscript.tex": "3eb8536cc468ee2f2e793de12533048c06c135139486c0eafb3ee9ea59b85a85",
+    "formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+    "punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+    "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+    "analytic_core.tex": "ee60e98852d2ec9d52603192345aee3ab58e18386c55c144c2852dd5c80a458e",
+    "laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
+    "gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
+    "ordinary_finite_exclusion.tex": "9da1cd85ef769a7218e728b8a01907f1b8eea60c7487ed716d02f8bd40c6077d",
+    "hyperbolic_suspension.tex": "b9ab71326fa699dc1b4e9cc188f04a410394c9b912b9d3caf88aa72d47a1ca83",
+    "uniform_cut_decay.tex": "cbf2c3410561ecf1bec88e1cb6821e8df44a5b84e7ee68abf7a3e00a0b2828c2",
+    "ordinary_axis_exclusion.tex": "1a6386300ace0a134963fab8a0b138068849b6d3fd4bd2d35619330d4a0f86c3",
+    "bounded_regular_reduction.tex": "ee25cfb685b6dea7ad965a2002396afd77daa67206fcf89e56af99ce73b730c5",
+    "cusp_tangent_exclusion.tex": "3c009a2b6ee209fae6e7b93a4e48d81d20d00ca8f84226c5f12d959f2e951bb2",
+    "concurrent_regular_exclusion.tex": "ae0579bbe1252d072e9a21c3e9e5ff0dce7b4e144938f11ceacb9bd39f48f866",
+    "repeated_line_exclusion.tex": "933184e1a5b438699d3c1ffa13d871257200184fd0c0dc7b6f5c0f9baa8d0ff7",
+    "constant_quadratic_fibres.tex": "a70695f11d7490fd07b3ec607e5c0d5256e57a20bcc8dfc3d85bf219280e985b"
+  },
+  "pages": 53,
+  "previous_version": "v010",
+  "new_fully_written_parts": [
+    "Airy Riccati no-algebraic-solution lemma and formal Gaussian obstruction with explicit moment recurrences.",
+    "Full13-coefficient univariate-h cubic-height family;linear WT family reduces to quadratics when its T coefficient is nonzero.",
+    "Formal seed-submodule quotient lemma;local analytic extension with exact Hien-Roucairol regularity and algebraic-independence hypotheses.",
+    "Positive-seed formal-frame criterion,with semisimplicity and ramification explained.",
+    "Entire W(a+T+Z2)+G cubic mixed family excluded by a complete formal frame:all degree drops,multiple finite critical points,all quartic escapes,and an explicit invertible interpolation matrix.",
+    "Exhaustive,disjoint six-branch affine-W coefficient split with explicit null rotations and scaling.",
+    "Nine leading plane-cubic types listed separately;frame-success versus no-frame obligations kept distinct.",
+    "Conditional shrinking/logarithmic estimates with explicit uniform flat-cut hypotheses;exact negative examples prevent bounded-critical-point or zero-action shortcuts.",
+    "Arbitrary-degree one-variable polynomial phase over C((r)):intrinsic critical balls,exact multiplicity count,finite cluster-tree polynomial separation,full invertible evaluation frame,parameter horizontality with moving volume,and explicit zero-exponential seed valuation bound v(h)-v(a_D)/D. Nonconvergent formal coefficients allowed;valued field only.",
+    "Leading-coefficient seed obstruction D*v(h)>v(a_D),with rational-seed restriction justified without an actual-period realization or image-kernel calculation.",
+    "Entire rank-one WT2 cubic family:purity iff b=0,G=0;all degree drops and flattened boundary handled by valuation of the ACTUAL leading coefficient,no conditional shrinking estimates.",
+    "Mixed chart proof shortened to an exhaustive degree calculation plus the general leading-coefficient criterion. Previous long full-frame proof preserved in versions/v002.",
+    "Full arbitrary-degree punctured-polynomial formal frame,including the central residue dimension and all moving logarithmic Jacobians. Zero-exponential seed order>=v(h),without a leading-coefficient assumption. Nonconvergent formal valued-field coefficients allowed;no all-ring claim.",
+    "Exact logarithmic Gaussian transport identity with X_T=t*kappa*X/D and w_t+w/t=partial_T(wR);all Laurent-unit checks retained.",
+    "One-ended Laurent-phase exclusion and all-degree removed-component Gaussian exclusion. Only two actual irregular ends remain in PAPER-B-L.",
+    "All-order Bessel rank-two logarithm control:theta2-4r2,explicit harmonic-number second solution and Wronskian1. This refutes semisimplicity for arbitrary two-ended Laurent phases,not the desired O(log) bound.",
+    "Full logarithmic Laurent seed bound for rational parameter families:marked0/1/infinity branches give a finite ramified reduced nodal model with phase morphism;phase-one marking is necessary.",
+    "Complete regular-part spanning via full moderate nearby-cycle complex with actual gluing maps and monodromy,component rapid-decay complexes and annulus Mayer-Vietoris;no rank-only or cyclic-seed inference.",
+    "Uniform logarithmic differential bounds on compact pieces and finite-finite necks,exact irregular-end phase coordinates,and global descending tails controlled by real algebraic curve lengths and Laurent transition scales.",
+    "All-degree nondegenerate quadratic W-coefficient exclusion now proved by exact formal Gaussian transport and the full logarithmic theorem. Six-row affine-W cubic theorem and sharp mixed cutoff now complete within manuscript.",
+    "All-degree fixed-amplitude period exclusion under gradP>=c*R^(J-1) and bounded HessP/gradP^2,for polynomial q of degree<=J. Full critical homology,controlled Gaussian/amplitude tails,complete q/t deformation of relative pairs,and degenerate local Pham exponents retained.",
+    "All original Gaussian markers are zero or not finite exponential-polynomial sums on the stated gradient locus. Operator isolation remains a fixed original polynomial marker;no t-dependent amplitude substituted.",
+    "Smooth leading forms excluded in every degreeD>=2 and every dimension,with arbitrary lower terms.",
+    "Ordinary-node coercivity gate in every dimension and exact ternary common residual normal form with full Gaussian quadratic/means;unifies three geometric types without yet excluding the residual family.",
+    "Exact scope controls:the pure linear null phase has an escaping zero-action critical point,so ordinary tameness alone is insufficient;the radial quadratic actual module contains1 via a time-dependent amplitude while original markers remain nonpolynomial.",
+    "Universal critical-branch action identity q=-S-rSprime;no-frame ordinary escaping branches have polar actions other than alpha/r,without a scale table or Morse assumption.",
+    "Full nonramified direct-image rank accounting after ramifying all critical-value curves;local uniform coercivity and a complete parameter lift exclude additional finite-target infinity discriminants.",
+    "Exact A_mu local characters,unramified regular monodromy and polynomial jet separation exhaust the full zero-exponential rank;all finite-critical ordinary no-frame cubics and every nonzero original finite exponential-polynomial marker are excluded.",
+    "Exhaustive coefficient test splits finite critical sets from all critical conic,center-axis and hyperbola cases;positive-dimensional cases remain explicit open obligations.",
+    "All-degree hyperbolic suspension P=wxy+F(w)+k with F(0)=0,Fprime(0)!=0,full affine Gaussian AB!=0 and extra m!=0 only for degF1. Every original nonzero marked period is not finite exponential-polynomial.",
+    "Fixed-t complex gradient coercivity is uniform on compact coefficient sets. Connected coefficient deformation and conservation of gradient-intersection multiplicity make the generic diagonal count a proof of full rankD+3(degF>=2),rank5(degF1),including every degeneracy.",
+    "Global critical conic gives four exact formal characters:Laurent poles of order2 at both ends,normal Gaussian determinant-1,moving volume t^-1,explicit Cartan parameter check. Polynomial finite-jet separation proves the complete matrix.",
+    "Every isolated root of Fprime gives its full A_mu characters. DegF1 instead has one explicit quadratic-action escaping Gaussian character with volume t^-2. All original markers have positive seed order in every zero-exponential character.",
+    "Permutation of the two critical hyperbola rows into the same theorem closes both,including every cubic/quadratic/linear degree drop. Only the ordinary center-axis row remains.",
+    "All-dimension/all-degree uniform cut criterion for grad(tP-q)>=c*normx outside one fixed ball for every large complex t. Full Pham cut homology,constrained compactified carriers,compatible Hardt inclusion pairs,uniform coordinate-minor mass bounds,uniform tails and Federer-Fleming rectifiable limits are written explicitly.",
+    "Precise finite-family Hardt compatibility is verified in Drusvyatskiy-Lewis Theorem2.25;uniform finiteness Theorem2.32. This strengthens the locator beyond the older general Basu statement without altering sealed sources.",
+    "At most2 P-critical values plus uniform full-phase coercivity excludes every nonzero original finite exponential-polynomial Gaussian marker,without a cyclic-seed or Wick-series convergence assumption.",
+    "Common center-axis family:uniform node-by-node phase gradient proof,full rank8-minus-simple-infinity-nodes,and disjoint bc!=0 versus bc=0 split.",
+    "For bc!=0,a fixed polynomial rank5 quotient supplies all central characters,including collisions;explicit high-order polynomial cutoffs separate every off-axis Morse character and prove the full matrix.",
+    "For bc=0,all extra or intersecting critical axes are retained;there are at most2 P-values and the general actual-cut criterion applies.",
+    "All irreducible nodal,transverse line-conic and nonconcurrent-line leading types are now completely pure-excluded;ordinary isotropic frames have nondegenerate quadratic W coefficient and are excluded by the written affine-W theorem.",
+    "Regular-part positive-seed criterion:only M0 needs a full horizontal frame;all nonzero exponential blocks may retain arbitrary regular extensions. Optional logarithmic coefficient-field version proved by valuation and constant-field calculation.",
+    "All-degree quadratic-amplitude rank reduction under explicit fixed-phase coercivity and nonisotropic leading singular directions. The stationary-action identity excludes every escape from any pure alpha*t block;nonramified Roucairol ranks after graph base change identify the FULL zero rank from bounded branches only.",
+    "Shared cusp/tangent gates,exact affine normal forms and infinity lengths2/3 give ranks6/5 without escape counts. Smooth-constraint isolated A_mu characters and exhaustive double-line coefficient tables retain all degeneracies.",
+    "Five fixed bounded models with positive moving volume:quartic line rank3,Gaussian line rank1,cusp quartic-cubic rank6,tangent weighted quartic rank5,and quartic parabola rank3. Explicit critical equations bound all scaled variables,so no bounded contribution is omitted.",
+    "Original polynomial jets and arbitrary high-order separating cutoffs prove independence of exactly the zero rank;no full image kernel or construction of irrelevant escape characters.",
+    "Concurrent-line family:constant/nonconstant affine H exhausted;isolated restrictions and one critical parabola supply the full regular part. Constant H=0 uses exact conditional Gaussian and binary gradient criterion.",
+    "Every squarefree leading cubic now has a proved Gaussian frame implication and m>3degQ cutoff. Isotropic branches retain the complete affine-W theorem;no extra pure classification asserted.",
+    "Generic Gaussian quadratic elimination preserves the seed,spatial quotient and parameter connection,with explicit determinant trace identity hprime/h. Algebraic square roots handled after finite cover;singular t0 null elimination uses rational seed quotient before elimination.",
+    "All-degree effective-degree lemma:constant quadratic fibres over one nonisotropic Gaussian base force degree<=2 under purity,by (r/2-1)degD+degN>0. This replaces the entire repeated-line escape and matrix-stratum tables.",
+    "Nonisotropic double quartic cancellation gives explicit p.p=p.Ap=0 null frame;nonisotropic triple always excluded. Isotropic repeated factor has exactly three Gaussian-normalized leading forms,with exact nonzero top coefficients and strict determinant-aware valuation inequalities.",
+    "Complete proof of frame-extraction proposition from the exhaustive nine-row table. No internal research-note proof chain or remaining geometric placeholder.",
+    "All-degree constant-fibre purity criterion by finite rational identities;every original marker rational with poles only on det(I-2tA)=0. If all nonzero eigenvalues are semisimple,exact specialization certificates cancel every pole,even with arbitrary nilpotent zero block. Explicit sufficient cutoff [s+(s+1)max(1,degB)]degQ. Defective nonzero single-Jordan-block case remains open.",
+    "Contributions/credit rechecked against Wilson Theorem1,Long Proposition4.1/Theorem5.1,Liu Theorems2.1/2.2. Analytic Bernstein rational-direction background explicitly credited to Sabbah/Maisonobe;no first-proof claim."
+  ],
+  "finite_symbolic_check": "Existing formal_identity_check.json retained without rerun;new stationary_ball_controls.json checks three critical-ball models,uneven-scale filter matrix and strict Gaussian threshold only. None establishes the written full-frame theorem.",
+  "replay_code_retained": "check_formal_identities.py (not rerun);check_stationary_ball_controls.py(new exact controls run once).",
+  "all_prior_core_claim_records_and_proof_hashes_unchanged": true,
+  "closed_standalone_obligations": [
+    {
+      "id": "PAPER-B-R",
+      "status": "closed by new written formal proof",
+      "proof": "polynomial_stationary_balls.tex",
+      "computational_proof": false
+    },
+    {
+      "id": "PAPER-B-L",
+      "status": "closed by written convergent resolved-curve proof",
+      "proof": "laurent_logarithmic_bound.tex",
+      "limits": "Uses explicit credited nearby-cycle/proper-image and period comparisons. Not a nonconvergent/all-ring Laurent theorem;no independent review."
+    },
+    {
+      "id": "PAPER-A",
+      "status": "closed by complete exhaustive written proof",
+      "proof": "analytic_core.tex;repeated_line_exclusion.tex and all preceding geometric sections",
+      "computational_proof": false
+    }
+  ],
+  "partially_closed_standalone_obligations": [],
+  "new_finite_identity_controls": "punctured_controls.json;universal recurrence,seed ODE,removed-chart transport and volume identities only;not full-frame proof.",
+  "no_new_finite_mathematical_checker_run": true
+}

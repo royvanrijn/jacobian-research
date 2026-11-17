@@ -1,0 +1,4440 @@
+{
+  "status": "PASS",
+  "targets": 293,
+  "PSL_to_GL_identification": {
+    "0": 0,
+    "21": 1,
+    "140": 2,
+    "101": 3,
+    "164": 4,
+    "125": 5,
+    "48": 6,
+    "69": 7,
+    "74": 8,
+    "58": 9,
+    "151": 10,
+    "105": 11,
+    "93": 12,
+    "133": 13,
+    "13": 14,
+    "41": 15,
+    "110": 16,
+    "149": 17,
+    "51": 18,
+    "78": 19,
+    "33": 20,
+    "18": 21,
+    "137": 22,
+    "92": 23,
+    "83": 24,
+    "156": 25,
+    "56": 26,
+    "111": 27,
+    "84": 28,
+    "11": 29,
+    "129": 30,
+    "38": 31,
+    "4": 32,
+    "29": 33,
+    "142": 34,
+    "104": 35,
+    "43": 36,
+    "67": 37,
+    "122": 38,
+    "160": 39,
+    "166": 40,
+    "117": 41,
+    "47": 42,
+    "63": 43,
+    "145": 44,
+    "97": 45,
+    "24": 46,
+    "6": 47,
+    "30": 48,
+    "88": 49,
+    "128": 50,
+    "16": 51,
+    "116": 52,
+    "76": 53,
+    "60": 54,
+    "154": 55,
+    "89": 56,
+    "127": 57,
+    "31": 58,
+    "15": 59,
+    "32": 60,
+    "17": 61,
+    "87": 62,
+    "126": 63,
+    "114": 64,
+    "153": 65,
+    "77": 66,
+    "62": 67,
+    "75": 68,
+    "61": 69,
+    "115": 70,
+    "155": 71,
+    "12": 72,
+    "134": 73,
+    "39": 74,
+    "95": 75,
+    "79": 76,
+    "147": 77,
+    "52": 78,
+    "108": 79,
+    "123": 80,
+    "49": 81,
+    "162": 82,
+    "71": 83,
+    "152": 84,
+    "57": 85,
+    "107": 86,
+    "72": 87,
+    "91": 88,
+    "19": 89,
+    "136": 90,
+    "35": 91,
+    "23": 92,
+    "139": 93,
+    "2": 94,
+    "100": 95,
+    "106": 96,
+    "59": 97,
+    "73": 98,
+    "150": 99,
+    "135": 100,
+    "20": 101,
+    "90": 102,
+    "34": 103,
+    "163": 104,
+    "70": 105,
+    "124": 106,
+    "50": 107,
+    "40": 108,
+    "132": 109,
+    "94": 110,
+    "14": 111,
+    "1": 112,
+    "99": 113,
+    "22": 114,
+    "138": 115,
+    "53": 116,
+    "148": 117,
+    "80": 118,
+    "109": 119,
+    "103": 120,
+    "27": 121,
+    "143": 122,
+    "5": 123,
+    "26": 124,
+    "96": 125,
+    "144": 126,
+    "8": 127,
+    "86": 128,
+    "36": 129,
+    "9": 130,
+    "130": 131,
+    "120": 132,
+    "68": 133,
+    "44": 134,
+    "159": 135,
+    "82": 136,
+    "113": 137,
+    "158": 138,
+    "55": 139,
+    "64": 140,
+    "118": 141,
+    "45": 142,
+    "165": 143,
+    "161": 144,
+    "66": 145,
+    "42": 146,
+    "121": 147,
+    "46": 148,
+    "119": 149,
+    "167": 150,
+    "65": 151,
+    "10": 152,
+    "131": 153,
+    "85": 154,
+    "37": 155,
+    "157": 156,
+    "54": 157,
+    "81": 158,
+    "112": 159,
+    "141": 160,
+    "28": 161,
+    "3": 162,
+    "102": 163,
+    "7": 164,
+    "98": 165,
+    "146": 166,
+    "25": 167
+  },
+  "pair_capacity": 57,
+  "triple_capacity": 13368,
+  "results": [
+    {
+      "name": "13a_129",
+      "kernels": 0
+    },
+    {
+      "name": "13a_135",
+      "kernels": 1
+    },
+    {
+      "name": "13a_136",
+      "kernels": 0
+    },
+    {
+      "name": "13a_137",
+      "kernels": 1
+    },
+    {
+      "name": "13a_194",
+      "kernels": 0
+    },
+    {
+      "name": "13a_196",
+      "kernels": 1
+    },
+    {
+      "name": "13a_197",
+      "kernels": 0
+    },
+    {
+      "name": "13a_198",
+      "kernels": 1
+    },
+    {
+      "name": "13a_233",
+      "kernels": 1
+    },
+    {
+      "name": "13a_234",
+      "kernels": 2
+    },
+    {
+      "name": "13a_239",
+      "kernels": 0
+    },
+    {
+      "name": "13a_242",
+      "kernels": 1
+    },
+    {
+      "name": "13a_243",
+      "kernels": 0
+    },
+    {
+      "name": "13a_244",
+      "kernels": 1
+    },
+    {
+      "name": "13a_253",
+      "kernels": 0
+    },
+    {
+      "name": "13a_265",
+      "kernels": 1
+    },
+    {
+      "name": "13a_268",
+      "kernels": 1
+    },
+    {
+      "name": "13a_269",
+      "kernels": 2
+    },
+    {
+      "name": "13a_270",
+      "kernels": 1
+    },
+    {
+      "name": "13a_271",
+      "kernels": 1
+    },
+    {
+      "name": "13a_272",
+      "kernels": 0
+    },
+    {
+      "name": "13a_304",
+      "kernels": 0
+    },
+    {
+      "name": "13a_309",
+      "kernels": 1
+    },
+    {
+      "name": "13a_338",
+      "kernels": 0
+    },
+    {
+      "name": "13a_362",
+      "kernels": 0
+    },
+    {
+      "name": "13a_365",
+      "kernels": 0
+    },
+    {
+      "name": "13a_366",
+      "kernels": 1
+    },
+    {
+      "name": "13a_369",
+      "kernels": 1
+    },
+    {
+      "name": "13a_373",
+      "kernels": 2
+    },
+    {
+      "name": "13a_375",
+      "kernels": 1
+    },
+    {
+      "name": "13a_387",
+      "kernels": 1
+    },
+    {
+      "name": "13a_391",
+      "kernels": 1
+    },
+    {
+      "name": "13a_392",
+      "kernels": 2
+    },
+    {
+      "name": "13a_471",
+      "kernels": 0
+    },
+    {
+      "name": "13a_483",
+      "kernels": 0
+    },
+    {
+      "name": "13a_487",
+      "kernels": 0
+    },
+    {
+      "name": "13a_516",
+      "kernels": 0
+    },
+    {
+      "name": "13a_518",
+      "kernels": 0
+    },
+    {
+      "name": "13a_530",
+      "kernels": 0
+    },
+    {
+      "name": "13a_623",
+      "kernels": 1
+    },
+    {
+      "name": "13a_629",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3145",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3147",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3148",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3149",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3167",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3168",
+      "kernels": 2
+    },
+    {
+      "name": "13a_3169",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3170",
+      "kernels": 2
+    },
+    {
+      "name": "13a_3188",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3189",
+      "kernels": 2
+    },
+    {
+      "name": "13a_3190",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3191",
+      "kernels": 2
+    },
+    {
+      "name": "13a_3204",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3205",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3207",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3208",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3209",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3210",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3213",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3216",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3219",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3220",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3221",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3222",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3223",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3232",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3234",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3248",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3259",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3261",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3262",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3263",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3264",
+      "kernels": 2
+    },
+    {
+      "name": "13a_3266",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3274",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3275",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3276",
+      "kernels": 2
+    },
+    {
+      "name": "13a_3291",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3292",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3293",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3294",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3295",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3298",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3301",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3302",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3303",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3317",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3320",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3323",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3330",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3331",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3335",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3345",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3346",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3347",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3348",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3351",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3354",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3355",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3356",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3363",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3365",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3368",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3374",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3375",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3388",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3390",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3393",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3394",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3395",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3396",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3399",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3400",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3401",
+      "kernels": 1
+    },
+    {
+      "name": "13a_3402",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3403",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3404",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3405",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3407",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3409",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3410",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3411",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3412",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3413",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3415",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3417",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3418",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3811",
+      "kernels": 0
+    },
+    {
+      "name": "13a_3812",
+      "kernels": 0
+    },
+    {
+      "name": "13n_326",
+      "kernels": 0
+    },
+    {
+      "name": "13n_329",
+      "kernels": 0
+    },
+    {
+      "name": "13n_330",
+      "kernels": 0
+    },
+    {
+      "name": "13n_341",
+      "kernels": 1
+    },
+    {
+      "name": "13n_344",
+      "kernels": 1
+    },
+    {
+      "name": "13n_345",
+      "kernels": 1
+    },
+    {
+      "name": "13n_348",
+      "kernels": 0
+    },
+    {
+      "name": "13n_351",
+      "kernels": 0
+    },
+    {
+      "name": "13n_352",
+      "kernels": 0
+    },
+    {
+      "name": "13n_355",
+      "kernels": 1
+    },
+    {
+      "name": "13n_357",
+      "kernels": 1
+    },
+    {
+      "name": "13n_358",
+      "kernels": 1
+    },
+    {
+      "name": "13n_510",
+      "kernels": 0
+    },
+    {
+      "name": "13n_513",
+      "kernels": 0
+    },
+    {
+      "name": "13n_514",
+      "kernels": 0
+    },
+    {
+      "name": "13n_518",
+      "kernels": 1
+    },
+    {
+      "name": "13n_520",
+      "kernels": 1
+    },
+    {
+      "name": "13n_521",
+      "kernels": 1
+    },
+    {
+      "name": "13n_524",
+      "kernels": 0
+    },
+    {
+      "name": "13n_525",
+      "kernels": 0
+    },
+    {
+      "name": "13n_526",
+      "kernels": 0
+    },
+    {
+      "name": "13n_529",
+      "kernels": 1
+    },
+    {
+      "name": "13n_530",
+      "kernels": 1
+    },
+    {
+      "name": "13n_531",
+      "kernels": 1
+    },
+    {
+      "name": "13n_582",
+      "kernels": 0
+    },
+    {
+      "name": "13n_590",
+      "kernels": 0
+    },
+    {
+      "name": "13n_591",
+      "kernels": 1
+    },
+    {
+      "name": "13n_598",
+      "kernels": 1
+    },
+    {
+      "name": "13n_599",
+      "kernels": 1
+    },
+    {
+      "name": "13n_600",
+      "kernels": 2
+    },
+    {
+      "name": "13n_627",
+      "kernels": 1
+    },
+    {
+      "name": "13n_632",
+      "kernels": 0
+    },
+    {
+      "name": "13n_633",
+      "kernels": 0
+    },
+    {
+      "name": "13n_644",
+      "kernels": 2
+    },
+    {
+      "name": "13n_647",
+      "kernels": 1
+    },
+    {
+      "name": "13n_648",
+      "kernels": 1
+    },
+    {
+      "name": "13n_651",
+      "kernels": 0
+    },
+    {
+      "name": "13n_652",
+      "kernels": 1
+    },
+    {
+      "name": "13n_661",
+      "kernels": 0
+    },
+    {
+      "name": "13n_662",
+      "kernels": 1
+    },
+    {
+      "name": "13n_663",
+      "kernels": 0
+    },
+    {
+      "name": "13n_694",
+      "kernels": 1
+    },
+    {
+      "name": "13n_695",
+      "kernels": 2
+    },
+    {
+      "name": "13n_696",
+      "kernels": 1
+    },
+    {
+      "name": "13n_704",
+      "kernels": 0
+    },
+    {
+      "name": "13n_705",
+      "kernels": 1
+    },
+    {
+      "name": "13n_706",
+      "kernels": 2
+    },
+    {
+      "name": "13n_707",
+      "kernels": 1
+    },
+    {
+      "name": "13n_708",
+      "kernels": 1
+    },
+    {
+      "name": "13n_709",
+      "kernels": 1
+    },
+    {
+      "name": "13n_712",
+      "kernels": 1
+    },
+    {
+      "name": "13n_713",
+      "kernels": 1
+    },
+    {
+      "name": "13n_716",
+      "kernels": 1
+    },
+    {
+      "name": "13n_717",
+      "kernels": 0
+    },
+    {
+      "name": "13n_718",
+      "kernels": 0
+    },
+    {
+      "name": "13n_834",
+      "kernels": 0
+    },
+    {
+      "name": "13n_838",
+      "kernels": 0
+    },
+    {
+      "name": "13n_839",
+      "kernels": 0
+    },
+    {
+      "name": "13n_857",
+      "kernels": 1
+    },
+    {
+      "name": "13n_926",
+      "kernels": 0
+    },
+    {
+      "name": "13n_991",
+      "kernels": 0
+    },
+    {
+      "name": "13n_992",
+      "kernels": 0
+    },
+    {
+      "name": "13n_993",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1000",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1001",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1004",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1005",
+      "kernels": 2
+    },
+    {
+      "name": "13n_1006",
+      "kernels": 2
+    },
+    {
+      "name": "13n_1007",
+      "kernels": 2
+    },
+    {
+      "name": "13n_1011",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1012",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1013",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1039",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1040",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1041",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1043",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1044",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1045",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1046",
+      "kernels": 2
+    },
+    {
+      "name": "13n_1047",
+      "kernels": 2
+    },
+    {
+      "name": "13n_1048",
+      "kernels": 2
+    },
+    {
+      "name": "13n_1175",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1178",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1179",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1200",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1201",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1202",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1210",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1211",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1212",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1270",
+      "kernels": 0
+    },
+    {
+      "name": "13n_1276",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1296",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1367",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1370",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1371",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1374",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1375",
+      "kernels": 1
+    },
+    {
+      "name": "13n_1376",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3739",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3742",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3745",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3748",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3770",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3773",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3776",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3779",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3814",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3840",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3842",
+      "kernels": 2
+    },
+    {
+      "name": "13n_3844",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3854",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3855",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3856",
+      "kernels": 2
+    },
+    {
+      "name": "13n_3870",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3871",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3872",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3873",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3874",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3897",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3898",
+      "kernels": 2
+    },
+    {
+      "name": "13n_3899",
+      "kernels": 2
+    },
+    {
+      "name": "13n_3900",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3901",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3903",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3904",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3905",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3911",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3914",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3916",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3918",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3919",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3920",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3921",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3922",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3924",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3925",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3928",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3929",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3931",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3932",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3933",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3934",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3935",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3936",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3937",
+      "kernels": 0
+    },
+    {
+      "name": "13n_3938",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3939",
+      "kernels": 2
+    },
+    {
+      "name": "13n_3940",
+      "kernels": 1
+    },
+    {
+      "name": "13n_3941",
+      "kernels": 2
+    },
+    {
+      "name": "13n_4587",
+      "kernels": 0
+    },
+    {
+      "name": "13n_4589",
+      "kernels": 0
+    },
+    {
+      "name": "13n_4633",
+      "kernels": 2
+    },
+    {
+      "name": "13n_4634",
+      "kernels": 2
+    },
+    {
+      "name": "13n_4637",
+      "kernels": 1
+    },
+    {
+      "name": "13n_4638",
+      "kernels": 1
+    },
+    {
+      "name": "13n_4639",
+      "kernels": 7
+    },
+    {
+      "name": "13n_4640",
+      "kernels": 2
+    },
+    {
+      "name": "13n_4641",
+      "kernels": 0
+    },
+    {
+      "name": "13n_4642",
+      "kernels": 0
+    },
+    {
+      "name": "13n_4643",
+      "kernels": 1
+    },
+    {
+      "name": "13n_4644",
+      "kernels": 1
+    },
+    {
+      "name": "13n_4645",
+      "kernels": 3
+    }
+  ],
+  "module_checks": [
+    {
+      "name": "13a_135",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_137",
+      "orbit_index": 7501,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_196",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_198",
+      "orbit_index": 7609,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_233",
+      "orbit_index": 10252,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_234",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_234",
+      "orbit_index": 10252,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_242",
+      "orbit_index": 7609,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_244",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_265",
+      "orbit_index": 7609,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_268",
+      "orbit_index": 10252,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_269",
+      "orbit_index": 5844,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_269",
+      "orbit_index": 10252,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_270",
+      "orbit_index": 5850,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_271",
+      "orbit_index": 9356,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_309",
+      "orbit_index": 6013,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_366",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_369",
+      "orbit_index": 9387,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_373",
+      "orbit_index": 16,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_373",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_375",
+      "orbit_index": 14,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_387",
+      "orbit_index": 7730,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_391",
+      "orbit_index": 26,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_392",
+      "orbit_index": 23,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_392",
+      "orbit_index": 6075,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_623",
+      "orbit_index": 5844,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_629",
+      "orbit_index": 9011,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3167",
+      "orbit_index": 13348,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3168",
+      "orbit_index": 6021,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3168",
+      "orbit_index": 13357,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3169",
+      "orbit_index": 13348,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3170",
+      "orbit_index": 6108,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3170",
+      "orbit_index": 13367,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3188",
+      "orbit_index": 13352,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3189",
+      "orbit_index": 6013,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3189",
+      "orbit_index": 13352,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3190",
+      "orbit_index": 13366,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3191",
+      "orbit_index": 6158,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3191",
+      "orbit_index": 13366,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3205",
+      "orbit_index": 6021,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3208",
+      "orbit_index": 6787,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3210",
+      "orbit_index": 6021,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3216",
+      "orbit_index": 7649,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3220",
+      "orbit_index": 5838,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3221",
+      "orbit_index": 5842,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3222",
+      "orbit_index": 8968,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3234",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3262",
+      "orbit_index": 6125,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3263",
+      "orbit_index": 9011,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3264",
+      "orbit_index": 211,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13a_3264",
+      "orbit_index": 6743,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3266",
+      "orbit_index": 175,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13a_3274",
+      "orbit_index": 6825,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3275",
+      "orbit_index": 347,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13a_3276",
+      "orbit_index": 306,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13a_3276",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3317",
+      "orbit_index": 12099,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3320",
+      "orbit_index": 12792,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3323",
+      "orbit_index": 12792,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3374",
+      "orbit_index": 5842,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3375",
+      "orbit_index": 9387,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3388",
+      "orbit_index": 10608,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3390",
+      "orbit_index": 13149,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3393",
+      "orbit_index": 13149,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3399",
+      "orbit_index": 10944,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3400",
+      "orbit_index": 12456,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13a_3401",
+      "orbit_index": 10944,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_341",
+      "orbit_index": 7538,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_344",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_345",
+      "orbit_index": 7538,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_355",
+      "orbit_index": 7501,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_357",
+      "orbit_index": 7501,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_358",
+      "orbit_index": 7501,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_518",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_520",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_521",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_529",
+      "orbit_index": 7576,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_530",
+      "orbit_index": 7609,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_531",
+      "orbit_index": 7576,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_591",
+      "orbit_index": 13357,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_598",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_599",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_600",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_600",
+      "orbit_index": 13354,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_627",
+      "orbit_index": 12561,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_644",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_644",
+      "orbit_index": 12561,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_647",
+      "orbit_index": 7609,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_648",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_652",
+      "orbit_index": 7538,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_662",
+      "orbit_index": 13357,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_694",
+      "orbit_index": 7687,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_695",
+      "orbit_index": 7609,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_695",
+      "orbit_index": 13354,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_696",
+      "orbit_index": 7687,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_705",
+      "orbit_index": 7609,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_706",
+      "orbit_index": 8930,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_706",
+      "orbit_index": 13351,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_707",
+      "orbit_index": 5850,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_708",
+      "orbit_index": 8930,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_709",
+      "orbit_index": 6685,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_712",
+      "orbit_index": 9356,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_713",
+      "orbit_index": 6685,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_716",
+      "orbit_index": 13351,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_857",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1001",
+      "orbit_index": 7609,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1004",
+      "orbit_index": 7538,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1005",
+      "orbit_index": 14,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1005",
+      "orbit_index": 7687,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1006",
+      "orbit_index": 16,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_1006",
+      "orbit_index": 7480,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1007",
+      "orbit_index": 14,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_1007",
+      "orbit_index": 7687,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1011",
+      "orbit_index": 22,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1012",
+      "orbit_index": 14,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_1013",
+      "orbit_index": 22,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_1039",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1040",
+      "orbit_index": 7576,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1041",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1043",
+      "orbit_index": 19,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1044",
+      "orbit_index": 26,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_1045",
+      "orbit_index": 19,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_1046",
+      "orbit_index": 19,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1046",
+      "orbit_index": 9305,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1047",
+      "orbit_index": 23,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_1047",
+      "orbit_index": 6075,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1048",
+      "orbit_index": 19,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_1048",
+      "orbit_index": 9305,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1276",
+      "orbit_index": 9580,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1296",
+      "orbit_index": 9580,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1367",
+      "orbit_index": 7687,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1370",
+      "orbit_index": 5844,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1371",
+      "orbit_index": 7687,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1374",
+      "orbit_index": 8968,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1375",
+      "orbit_index": 8968,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_1376",
+      "orbit_index": 8968,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3742",
+      "orbit_index": 6125,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3748",
+      "orbit_index": 6108,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3773",
+      "orbit_index": 6013,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3779",
+      "orbit_index": 6068,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3842",
+      "orbit_index": 1116,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3842",
+      "orbit_index": 6794,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3844",
+      "orbit_index": 211,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3854",
+      "orbit_index": 7462,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3855",
+      "orbit_index": 1117,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3856",
+      "orbit_index": 1117,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3856",
+      "orbit_index": 9033,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3871",
+      "orbit_index": 9294,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3872",
+      "orbit_index": 8911,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3873",
+      "orbit_index": 7687,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3897",
+      "orbit_index": 12242,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3898",
+      "orbit_index": 9317,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3898",
+      "orbit_index": 12242,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3899",
+      "orbit_index": 9247,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3899",
+      "orbit_index": 12253,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3900",
+      "orbit_index": 9363,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3901",
+      "orbit_index": 11763,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3904",
+      "orbit_index": 10608,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3911",
+      "orbit_index": 9294,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3914",
+      "orbit_index": 9356,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3924",
+      "orbit_index": 12099,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3925",
+      "orbit_index": 12143,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3934",
+      "orbit_index": 9294,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3935",
+      "orbit_index": 5852,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3936",
+      "orbit_index": 8968,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3938",
+      "orbit_index": 11427,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3939",
+      "orbit_index": 9301,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3939",
+      "orbit_index": 11427,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3940",
+      "orbit_index": 5852,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3941",
+      "orbit_index": 6106,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_3941",
+      "orbit_index": 9621,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_4633",
+      "orbit_index": 178,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_4633",
+      "orbit_index": 12684,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_4634",
+      "orbit_index": 33,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_4634",
+      "orbit_index": 175,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_4637",
+      "orbit_index": 263,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_4638",
+      "orbit_index": 263,
+      "Z1_dimensions": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 15,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 51,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 5039,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 7907,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 12133,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 13313,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 13348,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4640",
+      "orbit_index": 15,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4640",
+      "orbit_index": 12133,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4643",
+      "orbit_index": 263,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_4644",
+      "orbit_index": 15,
+      "Z1_dimensions": [
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "13n_4645",
+      "orbit_index": 9012,
+      "Z1_dimensions": [
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "name": "13n_4645",
+      "orbit_index": 12528,
+      "Z1_dimensions": [
+        4,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "13n_4645",
+      "orbit_index": 13108,
+      "Z1_dimensions": [
+        5,
+        5,
+        8
+      ]
+    }
+  ],
+  "characteristic2_regular_classes": [
+    {
+      "order": 1,
+      "size": 1
+    },
+    {
+      "order": 3,
+      "size": 56
+    },
+    {
+      "order": 7,
+      "size": 24
+    },
+    {
+      "order": 7,
+      "size": 24
+    }
+  ],
+  "absolute_simple_matrix_algebra_dimensions": {
+    "natural": 9,
+    "dual": 9,
+    "Steinberg": 64
+  },
+  "Steinberg_to_adjoint_intertwiner": [
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "reflection_checks": [
+    {
+      "name": "13a_135",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13a_137",
+      "orbit_index": 7501,
+      "dimension": 3
+    },
+    {
+      "name": "13a_196",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13a_198",
+      "orbit_index": 7609,
+      "dimension": 3
+    },
+    {
+      "name": "13a_233",
+      "orbit_index": 10252,
+      "dimension": 3
+    },
+    {
+      "name": "13a_234",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13a_234",
+      "orbit_index": 10252,
+      "dimension": 3
+    },
+    {
+      "name": "13a_242",
+      "orbit_index": 7609,
+      "dimension": 3
+    },
+    {
+      "name": "13a_244",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13a_265",
+      "orbit_index": 7609,
+      "dimension": 3
+    },
+    {
+      "name": "13a_268",
+      "orbit_index": 10252,
+      "dimension": 3
+    },
+    {
+      "name": "13a_269",
+      "orbit_index": 5844,
+      "dimension": 3
+    },
+    {
+      "name": "13a_269",
+      "orbit_index": 10252,
+      "dimension": 3
+    },
+    {
+      "name": "13a_270",
+      "orbit_index": 5850,
+      "dimension": 3
+    },
+    {
+      "name": "13a_271",
+      "orbit_index": 9356,
+      "dimension": 3
+    },
+    {
+      "name": "13a_309",
+      "orbit_index": 6013,
+      "dimension": 3
+    },
+    {
+      "name": "13a_366",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13a_369",
+      "orbit_index": 9387,
+      "dimension": 3
+    },
+    {
+      "name": "13a_373",
+      "orbit_index": 16,
+      "dimension": 3
+    },
+    {
+      "name": "13a_373",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13a_375",
+      "orbit_index": 14,
+      "dimension": 3
+    },
+    {
+      "name": "13a_387",
+      "orbit_index": 7730,
+      "dimension": 3
+    },
+    {
+      "name": "13a_391",
+      "orbit_index": 26,
+      "dimension": 3
+    },
+    {
+      "name": "13a_392",
+      "orbit_index": 23,
+      "dimension": 3
+    },
+    {
+      "name": "13a_392",
+      "orbit_index": 6075,
+      "dimension": 3
+    },
+    {
+      "name": "13a_623",
+      "orbit_index": 5844,
+      "dimension": 3
+    },
+    {
+      "name": "13a_629",
+      "orbit_index": 9011,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3167",
+      "orbit_index": 13348,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3168",
+      "orbit_index": 6021,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3168",
+      "orbit_index": 13357,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3169",
+      "orbit_index": 13348,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3170",
+      "orbit_index": 6108,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3170",
+      "orbit_index": 13367,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3188",
+      "orbit_index": 13352,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3189",
+      "orbit_index": 6013,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3189",
+      "orbit_index": 13352,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3190",
+      "orbit_index": 13366,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3191",
+      "orbit_index": 6158,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3191",
+      "orbit_index": 13366,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3205",
+      "orbit_index": 6021,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3208",
+      "orbit_index": 6787,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3210",
+      "orbit_index": 6021,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3216",
+      "orbit_index": 7649,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3220",
+      "orbit_index": 5838,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3221",
+      "orbit_index": 5842,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3222",
+      "orbit_index": 8968,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3234",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3262",
+      "orbit_index": 6125,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3263",
+      "orbit_index": 9011,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3264",
+      "orbit_index": 211,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3264",
+      "orbit_index": 6743,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3266",
+      "orbit_index": 175,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3274",
+      "orbit_index": 6825,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3275",
+      "orbit_index": 347,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3276",
+      "orbit_index": 306,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3276",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3317",
+      "orbit_index": 12099,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3320",
+      "orbit_index": 12792,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3323",
+      "orbit_index": 12792,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3374",
+      "orbit_index": 5842,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3375",
+      "orbit_index": 9387,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3388",
+      "orbit_index": 10608,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3390",
+      "orbit_index": 13149,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3393",
+      "orbit_index": 13149,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3399",
+      "orbit_index": 10944,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3400",
+      "orbit_index": 12456,
+      "dimension": 3
+    },
+    {
+      "name": "13a_3401",
+      "orbit_index": 10944,
+      "dimension": 3
+    },
+    {
+      "name": "13n_341",
+      "orbit_index": 7538,
+      "dimension": 3
+    },
+    {
+      "name": "13n_344",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13n_345",
+      "orbit_index": 7538,
+      "dimension": 3
+    },
+    {
+      "name": "13n_355",
+      "orbit_index": 7501,
+      "dimension": 3
+    },
+    {
+      "name": "13n_357",
+      "orbit_index": 7501,
+      "dimension": 3
+    },
+    {
+      "name": "13n_358",
+      "orbit_index": 7501,
+      "dimension": 3
+    },
+    {
+      "name": "13n_518",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13n_520",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13n_521",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13n_529",
+      "orbit_index": 7576,
+      "dimension": 3
+    },
+    {
+      "name": "13n_530",
+      "orbit_index": 7609,
+      "dimension": 3
+    },
+    {
+      "name": "13n_531",
+      "orbit_index": 7576,
+      "dimension": 3
+    },
+    {
+      "name": "13n_591",
+      "orbit_index": 13357,
+      "dimension": 3
+    },
+    {
+      "name": "13n_598",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13n_599",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13n_600",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13n_600",
+      "orbit_index": 13354,
+      "dimension": 3
+    },
+    {
+      "name": "13n_627",
+      "orbit_index": 12561,
+      "dimension": 3
+    },
+    {
+      "name": "13n_644",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13n_644",
+      "orbit_index": 12561,
+      "dimension": 3
+    },
+    {
+      "name": "13n_647",
+      "orbit_index": 7609,
+      "dimension": 3
+    },
+    {
+      "name": "13n_648",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13n_652",
+      "orbit_index": 7538,
+      "dimension": 3
+    },
+    {
+      "name": "13n_662",
+      "orbit_index": 13357,
+      "dimension": 3
+    },
+    {
+      "name": "13n_694",
+      "orbit_index": 7687,
+      "dimension": 3
+    },
+    {
+      "name": "13n_695",
+      "orbit_index": 7609,
+      "dimension": 3
+    },
+    {
+      "name": "13n_695",
+      "orbit_index": 13354,
+      "dimension": 3
+    },
+    {
+      "name": "13n_696",
+      "orbit_index": 7687,
+      "dimension": 3
+    },
+    {
+      "name": "13n_705",
+      "orbit_index": 7609,
+      "dimension": 3
+    },
+    {
+      "name": "13n_706",
+      "orbit_index": 8930,
+      "dimension": 3
+    },
+    {
+      "name": "13n_706",
+      "orbit_index": 13351,
+      "dimension": 3
+    },
+    {
+      "name": "13n_707",
+      "orbit_index": 5850,
+      "dimension": 3
+    },
+    {
+      "name": "13n_708",
+      "orbit_index": 8930,
+      "dimension": 3
+    },
+    {
+      "name": "13n_709",
+      "orbit_index": 6685,
+      "dimension": 3
+    },
+    {
+      "name": "13n_712",
+      "orbit_index": 9356,
+      "dimension": 3
+    },
+    {
+      "name": "13n_713",
+      "orbit_index": 6685,
+      "dimension": 3
+    },
+    {
+      "name": "13n_716",
+      "orbit_index": 13351,
+      "dimension": 3
+    },
+    {
+      "name": "13n_857",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1001",
+      "orbit_index": 7609,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1004",
+      "orbit_index": 7538,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1005",
+      "orbit_index": 14,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1005",
+      "orbit_index": 7687,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1006",
+      "orbit_index": 16,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1006",
+      "orbit_index": 7480,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1007",
+      "orbit_index": 14,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1007",
+      "orbit_index": 7687,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1011",
+      "orbit_index": 22,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1012",
+      "orbit_index": 14,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1013",
+      "orbit_index": 22,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1039",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1040",
+      "orbit_index": 7576,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1041",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1043",
+      "orbit_index": 19,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1044",
+      "orbit_index": 26,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1045",
+      "orbit_index": 19,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1046",
+      "orbit_index": 19,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1046",
+      "orbit_index": 9305,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1047",
+      "orbit_index": 23,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1047",
+      "orbit_index": 6075,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1048",
+      "orbit_index": 19,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1048",
+      "orbit_index": 9305,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1276",
+      "orbit_index": 9580,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1296",
+      "orbit_index": 9580,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1367",
+      "orbit_index": 7687,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1370",
+      "orbit_index": 5844,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1371",
+      "orbit_index": 7687,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1374",
+      "orbit_index": 8968,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1375",
+      "orbit_index": 8968,
+      "dimension": 3
+    },
+    {
+      "name": "13n_1376",
+      "orbit_index": 8968,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3742",
+      "orbit_index": 6125,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3748",
+      "orbit_index": 6108,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3773",
+      "orbit_index": 6013,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3779",
+      "orbit_index": 6068,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3842",
+      "orbit_index": 1116,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3842",
+      "orbit_index": 6794,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3844",
+      "orbit_index": 211,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3854",
+      "orbit_index": 7462,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3855",
+      "orbit_index": 1117,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3856",
+      "orbit_index": 1117,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3856",
+      "orbit_index": 9033,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3871",
+      "orbit_index": 9294,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3872",
+      "orbit_index": 8911,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3873",
+      "orbit_index": 7687,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3897",
+      "orbit_index": 12242,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3898",
+      "orbit_index": 9317,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3898",
+      "orbit_index": 12242,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3899",
+      "orbit_index": 9247,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3899",
+      "orbit_index": 12253,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3900",
+      "orbit_index": 9363,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3901",
+      "orbit_index": 11763,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3904",
+      "orbit_index": 10608,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3911",
+      "orbit_index": 9294,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3914",
+      "orbit_index": 9356,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3924",
+      "orbit_index": 12099,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3925",
+      "orbit_index": 12143,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3934",
+      "orbit_index": 9294,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3935",
+      "orbit_index": 5852,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3936",
+      "orbit_index": 8968,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3938",
+      "orbit_index": 11427,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3939",
+      "orbit_index": 9301,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3939",
+      "orbit_index": 11427,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3940",
+      "orbit_index": 5852,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3941",
+      "orbit_index": 6106,
+      "dimension": 3
+    },
+    {
+      "name": "13n_3941",
+      "orbit_index": 9621,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4633",
+      "orbit_index": 178,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4633",
+      "orbit_index": 12684,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4634",
+      "orbit_index": 33,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4634",
+      "orbit_index": 175,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4637",
+      "orbit_index": 263,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4638",
+      "orbit_index": 263,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 15,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 51,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 5039,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 7907,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 12133,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 13313,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4639",
+      "orbit_index": 13348,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4640",
+      "orbit_index": 15,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4640",
+      "orbit_index": 12133,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4643",
+      "orbit_index": 263,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4644",
+      "orbit_index": 15,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4645",
+      "orbit_index": 9012,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4645",
+      "orbit_index": 12528,
+      "dimension": 3
+    },
+    {
+      "name": "13n_4645",
+      "orbit_index": 13108,
+      "dimension": 3
+    }
+  ],
+  "binary_root_checks": 58,
+  "deck_type_histogram": {
+    "outer": 162,
+    "inner": 29
+  },
+  "T47_control": {
+    "homogeneous_X": [
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "homogeneous_Y": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "meridian": [
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "affine_group_order": 1344,
+    "root_lift_dimension": 4,
+    "global_fixed_codimension": 4,
+    "selected_conjugate_meridians": [
+      [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "directions": [
+      [
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ]
+    ],
+    "functionals": [
+      [
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ]
+    ],
+    "seed_pairing": [
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "seed_pairing_rank": 3
+  },
+  "kernel_histogram": {
+    "0": 139,
+    "1": 123,
+    "2": 29,
+    "7": 1,
+    "3": 1
+  },
+  "module_Z1_histograms": {
+    "natural": {
+      "4": 179,
+      "5": 12
+    },
+    "dual": {
+      "4": 179,
+      "5": 12
+    },
+    "Steinberg": {
+      "8": 165,
+      "10": 26
+    }
+  },
+  "new_sharp_cases": 0,
+  "scope": "Independent projective group, full tuple orbit marking, iterative crossing closure, adjoint8 transport and reverse affine module/root matrices. Same source PD parser and input coefficient conventions; no actual rank2 or all-field exclusion.",
+  "input_sha256": {
+    "verify_gl3f2.py": "a879f7ff37432c81a41b882eb5f7e286cb9be78df97f3bba07377ffe7d2b2710",
+    "gl3f2_catalogue.json": "f46244d037194b031c1ef9f5dfc5c035aa536bfedc4a80ac29f9647305056c4c",
+    "gl3f2_full_panel_results.json": "610569eb3ac0a17bd19730769c77523a2e9f2036ea68c027db5e8b0b92be2a60",
+    "reflection7_full_panel_results.json": "5cbd549cfe252996ca36e68c7aa9abba67e3c5b3e3cf3b2f12fee762370348c5",
+    "gl3f2_results.json": "0a939672ebfe0ba83131487be68ded1530f9095ce9db714e53d1c58968d2a45f",
+    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "sources/current13/search/glsearch.py": "52155ca6d1c67456b45a97eaadc234980a2227f155e88ef46e8fb8c20f500cc5",
+    "sources/current13/search/w3.py": "24f270b58b6c7c64a8ec4a9d3b9e1b19aad12d72dedbda6ff2178591c4f7e4ad"
+  }
+}

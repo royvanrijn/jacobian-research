@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/GAUSSIAN_SHEAR_NORMAL_FORM_AND_TRANSFERS.md",
+  "canonical_proof_sha256": "20043bb3f092918fa8b1d6a55c8c5d03cc9fa9c403683cf1c66a7ab1e40388cb",
+  "claims": [
+    "GMCSHEARNORMAL20261115",
+    "GMCCUBICORBIT20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_gaussian_shear_normal_form.py",
+  "checker_sha256": "9648c7f3f4e82d22b52bba8b47f910df868b6135b6e88e561f006a744d733bd1",
+  "receipt": "jacobian-followup/moment-vanishing-audit/gaussian_shear_normal_form_verification.json",
+  "receipt_sha256": "f6be037240614c1295a9e93c91f8c586ba34b839c477bc103dd5c4477203a36e",
+  "prior_frontier": "jacobian-followup/moment-vanishing-audit/gaussian_shear_normal_form_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "NEUTRAL_FACE_ALL_DEGREE_CLASSIFICATION.md": "a523751fa58617589e5b611243dcba5d21ac0d255583e85c774af03bdee9d8fb",
+    "neutral_face_source_audit.json": "41d9b0835d60801b44ecdde937e942757297ef9967e1b1d37e32eb38f849787a",
+    "SQUAREFREE_LINEAR_T_ALL_DEGREE.md": "803fc7c409c3713107d301c3c105d9f209ff07194efae4f0d1b14e13d5e1056a",
+    "LOGARITHMIC_CURVE_PERIOD_CRITERION.md": "c30318b771f2f91175a1c922ab197217d18b7fab124e4376b08ad513af40ffa2",
+    "CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "ALL_DEGREE_STRUCTURE_AND_BARRIERS.md": "f6c93353723419d9e308f2ae1d1bc7da8264f15040f8e13bc2ee366cdfac4625"
+  },
+  "software": "SymPy1.14.0 in repository venv",
+  "shear": {
+    "dimension": "one circular pair Z,W and arbitrary s>=1 real spectators",
+    "parameters": "arbitrary polynomial vector u(Z)",
+    "coordinates": [
+      "Z fixed",
+      "T_i maps to T_i+Z*u_i",
+      "W maps to W-u dot T-Z*(u dot u)/2"
+    ],
+    "group": "Phi_u Phi_v=Phi_(u+v),inverse Phi_(-u)",
+    "expectation": "Every polynomial Wick expectation preserved by locally nilpotent Gaussian-IBP flow"
+  },
+  "normal_form": {
+    "architecture": "P=W*(a(Z)+sum b_i(Z)T_i)+G(Z,T),at least one b_i nonzero",
+    "g": "monic gcd(b_i)",
+    "invariant": "a mod Z*g",
+    "construction": "a=Z*g*q+R,Bezout sum b_i*v_i=g,choose u_i=q*v_i",
+    "degree_remainder": "deg R<deg g+1",
+    "G": "Full polynomial transform retained;not classified by the coefficient invariant",
+    "all_b_zero": "separate;subgroup leaves a unchanged"
+  },
+  "valid_transfers": [
+    "All positive pure moments preserved at each index",
+    "Eventual pure vanishing and GMC safety/failure invariant",
+    "Counterexample multiplier Q transports to Q composed with Phi",
+    "A cutoff C*deg Q transports safely with the actual degree delta of the map/inverse",
+    "Pure-prefix lengths transfer unchanged within the admitted base class"
+  ],
+  "laplacian_boundary": {
+    "operator": "L=2*dZ*dW+sum dTi^2",
+    "commutator": "[L,D_u]=2 sum u_i_prime*(Z*dTiW-T_i*dWW)",
+    "finite_substitution_commutes_iff": "every u_i constant",
+    "w_squared_test": "L((W composed Phi)^2)=-4 sum u_i_prime*(T_i+Z*u_i)",
+    "counterexample": "u=Z,F=W^2:all original pure L^m(F^m) zero,but L(F composed Phi)=-4(T+Z^2)",
+    "conjugated_operator": "order2 with variable coefficients;not the original constant-coefficient GVC problem"
+  },
+  "cubic_orbit": {
+    "group": "finite compositions of admitted Gaussian shears and complex linear orthogonal maps",
+    "base": "all ternary polynomials degree<=3",
+    "orbit_degree": "unbounded",
+    "GMC": "safe by exact conjugacy transfer from internal cubic theorem",
+    "sufficient_pure_prefix": 94,
+    "least_prefix_interval": [
+      20,
+      94
+    ],
+    "least_prefix_equals_base_cubic": true,
+    "mixed_cutoff": "m>3*delta*deg Q",
+    "properness": [
+      "P_d=Z+W^d,d>=94,has first nonzero index d+1",
+      "Long affine-W quartic failure cannot be Gaussian-conjugate to a safe cubic"
+    ],
+    "assurance": "Base cubic analytic review remains open;algebraic transfer has no new contour hypothesis"
+  },
+  "literature_boundary": "No new external theorem or producer package imported. Targeted searches on Gaussian-preserving polynomial automorphisms/normal forms gave no new primary input used. The shear mechanism is explicitly credited as retained prior work;no novelty claim.",
+  "new_external_theorem_imported": false,
+  "fresh_exhaustive_literature_coverage": false,
+  "producer_package_executed": false,
+  "numeric_frontier_changed": false,
+  "new_prefix_reduction": false,
+  "normal_form_requires_contour_theorem": false,
+  "all_dimension_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Classify G after normalizing residual constant/repeated-root linear-T coefficients",
+    "Higher neutral radial degree and genuinely mixed angular signs",
+    "Independent analytic review of prior curve/cubic inputs",
+    "Other valid dimension/order/separability-preserving transfers;global cutoff and scheme questions remain separate"
+  ]
+}

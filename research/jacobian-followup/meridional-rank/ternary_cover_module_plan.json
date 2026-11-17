@@ -1,0 +1,12 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "selection":"All16 nonconstant GL3(F3)-reflection representation orbits just independently verified on the original8 admitting them; same source PDs and every map retained, no replacement or enlarged knot panel",
+  "motivation":"Each full GL3(F3) knot image induces a full SL3(F3) double-cover quotient. The earlier knot-root nullity3 only sees the admissible knot geometry; unrestricted cocycles on the cover can be larger. This finite group is outside earlier A5/GL3(F2) ordinary-module exclusions.",
+  "modules":["natural3 overF3","contragredient dual3 overF3"],
+  "presentation":"For meridian matrices Mi of order2 set gi=Mi*M0 and g0=1. Use the double-cover core presentation with words go*ga^-1*go*gb^-1 for every unsigned crossing and g0=1. For each module compute the full ordinary cocycle kernel, with three unrestricted coordinates per generator.",
+  "success":"dim Z1>=7 implies cover rank>=3, since two generators determine at most six coordinates. Then the retained double-cover inequality and upper4 give mr=bridge4. No meridian/root extension condition is imposed on these cover cocycles.",
+  "positive_control":"Same known triple-trefoil PD, with constant involutive meridian matrix diag(2,1,1), hence trivial cover action onF3^3. Its ordinary cocycle space must have dimension9, detecting cover rank3 and knot rank4.",
+  "limits":{"representation_orbits":16,"module_tests":32,"seconds_total":60,"dimension":3,"crossings":13,"checkpoint_each_representation":true},
+  "acceptance":"Independent affine-point Fox coefficient reconstruction, exact kernel completeness/rank, core relator and source-geometry replay required before a positive/negative claim. Representation orbits are not asserted to have distinct quotient kernels.",
+  "scope":"Only these natural/dual characteristic3 modules through the16 new representations, not every SL3(F3) module or field, every finite quotient, actual cover rank or full MRC. No additional open knot is presupposed."
+}

@@ -1,0 +1,131 @@
+{
+  "status": "complete",
+  "source_sha256": "1a95a77012a3b75a91bb3c599bd593e8200e1f6f05014c924502a02cc46adfe9",
+  "degree_cap": 7,
+  "r_values": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "models": [
+    {
+      "r": 4,
+      "input": "r4.json",
+      "input_sha256": "1f4f3b32f1b8a1171a6d4d4293e90cd5e297a6042695da641d8780533097b13c",
+      "slots": [
+        5,
+        5,
+        7
+      ],
+      "native_generators": 27
+    },
+    {
+      "r": 5,
+      "input": "r5.json",
+      "input_sha256": "9bc9cf813434a1e0ee60f465c30a3f637d8a2f8a72ab5e61f9940edc7cb436ce",
+      "slots": [
+        3,
+        4,
+        4
+      ],
+      "native_generators": 17
+    },
+    {
+      "r": 6,
+      "input": "r6.json",
+      "input_sha256": "8eefddd22a11ba950f874e247f546f8705615a213793860c4fc5dff1b3f1e13b",
+      "slots": [
+        3,
+        3,
+        4
+      ],
+      "native_generators": 15
+    },
+    {
+      "r": 7,
+      "input": "r7.json",
+      "input_sha256": "3e4981da3eedb7217927e5bfcef2018cd73033107c665d33eef344de9447f83b",
+      "slots": [
+        3,
+        4,
+        4
+      ],
+      "native_generators": 17
+    },
+    {
+      "r": 8,
+      "input": "r8.json",
+      "input_sha256": "1a40602dac77c2035a7b333cfeaeff884c54dffd1e925e7bc210dbb4e9cae7db",
+      "slots": [
+        3,
+        3,
+        3
+      ],
+      "native_generators": 15
+    },
+    {
+      "r": 9,
+      "input": "r9.json",
+      "input_sha256": "dd73b9632f897b9edb57ee94d2e88d460ab8280b6ba2f955b7306948618cd90a",
+      "slots": [
+        2,
+        3,
+        2
+      ],
+      "native_generators": 10
+    },
+    {
+      "r": 10,
+      "input": "r10.json",
+      "input_sha256": "20525ff0efdbb61008287cb8671850eedc8d13730d82f0840ccef360f839ee0d",
+      "slots": [
+        3,
+        3,
+        3
+      ],
+      "native_generators": 15
+    },
+    {
+      "r": 11,
+      "input": "r11.json",
+      "input_sha256": "fe4ffcef64fc70fcfbb2d91a14ae62eb6faea7f2ba8af64352ff8839867cc9f3",
+      "slots": [
+        2,
+        3,
+        2
+      ],
+      "native_generators": 10
+    },
+    {
+      "r": 12,
+      "input": "r12.json",
+      "input_sha256": "11052269555c9cc9ce2da7f972a0e51d439ca4efb54350a65f52c0b26291d466",
+      "slots": [
+        2,
+        2,
+        2
+      ],
+      "native_generators": 6
+    },
+    {
+      "r": 13,
+      "input": "r13.json",
+      "input_sha256": "bfd3549a2dacb99d4ce3e047c3c7225ba3b97e725543dfe2f314c2bb2571243d",
+      "slots": [
+        2,
+        3,
+        2
+      ],
+      "native_generators": 10
+    }
+  ],
+  "preflight": "KCUB32 r1,KCUB33 r2,KCUB17 r3 read as separate closed scopes; complete registry/source/archive scans find no r>=4 closure. KCUB34 has different positive weight1. No previous UNKNOWN/timeouts replayed.",
+  "elapsed_seconds": 0.798135219985852
+}

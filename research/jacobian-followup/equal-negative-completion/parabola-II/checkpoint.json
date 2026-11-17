@@ -1,0 +1,11 @@
+{
+  "status": "terminal",
+  "exit_code": 0,
+  "seconds": 0.165,
+  "time_budget_seconds": 40,
+  "unit_marker": true,
+  "certificate_complete": true,
+  "log_sha256": "ef4a755bbc34cd2b189083dd1c2434c493debe9e114b8f673d0b08b775894eb2",
+  "script_sha256": "317743a496b89cbab9afece19db3e0fbf5c2d9bff4cb3623c73d62d6f16085f0",
+  "scope": "Primary exact Singular result only; unit certificates need independent multiplication; a nonunit basis is not a counterexample."
+}

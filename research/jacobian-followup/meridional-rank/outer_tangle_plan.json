@@ -1,0 +1,9 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "targets":["13a_129","13a_135"],
+  "motivation":"Independent graph reduction identifies the first7crossings as the variable two-terminal branch, with tree/forest pairs(19,14) and(14,19). The remaining6crossings may define a common4ended tangle. An explicit2generator upper for its normalized core group, together with exact generation/quotient transport into the closed cover groups, would close rank3 on both blocks. Neither conductance nor a numerical triangulation certifies that transport.",
+  "method":"Cut exactly the first7crossings from each literal source PD. Require exactly4boundary edge labels and record all semiarc data. Enumerate ribbon graph dart isomorphisms of the two remaining6crossing fragments, preserving over/under parity, with global cyclic order optionally reversed and this distinction retained. Build the formal normalized core presentations of each fragment by identifying only overpassing edge pairs. Apply the already bounded exact presentation simplifier and retain all moves. A2generator output is provisional until independent replay and exact source-generation or topological filling transport are proved.",
+  "limits":{"targets":2,"outside_crossings":6,"seconds_per_group":25,"seconds_total":60,"maximum_isomorphism_starts":48},
+  "acceptance":"No rank or knot equality from a formal fragment presentation alone. A3generator output or no dart isomorphism changes the next action but supplies no lower bound. Certify disk separation, rational-tangle identity and filling slopes before any common once-cusped manifold theorem; otherwise keep this as algebraic/graph data only.",
+  "scope":"Exactly the two roots and fixed first7/last6 split. No new broad sweep, no inferred JSJ decomposition, no geometric rank theorem from degenerate numerical shapes."
+}

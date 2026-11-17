@@ -1,0 +1,14 @@
+{
+  "equations": 35,
+  "input_sha256": "e9a09e48968fba147ebdeb29a26d7bd3fa134e0c1064bafb086c2228415ca2a3",
+  "mode": "conic",
+  "parameters": [
+    "f3",
+    "f4"
+  ],
+  "scope": "A generic unit is not a global exclusion. A proper ideal requires actual coefficient extraction and full-map replay. No smaller map is claimed from basis status.",
+  "seconds": 0.013,
+  "source_sha256": "b3d213f300d150f1fb8289ef6d4c038d07a6c736fa582a1ec2818d262a63fd62",
+  "status": "primary-parameter-basis",
+  "variables": 16
+}

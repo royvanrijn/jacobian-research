@@ -1,0 +1,190 @@
+{
+  "outcome": "PASS",
+  "check_count": 59,
+  "checks": [
+    "the universal upper-construction control is explicitly non-Keller",
+    "pure output rows are independent with the asserted eta rank",
+    "pure pure intersection dimension equals row dimension minus eta rank",
+    "the pure projection has a six-coordinate polynomial source recovery",
+    "pure construction has the predicted total number of ambient coordinates",
+    "rank_one output rows are independent with the asserted eta rank",
+    "rank_one pure intersection dimension equals row dimension minus eta rank",
+    "the rank-one mixed projection has a five-coordinate polynomial source recovery",
+    "its hypersurface equation is exact and linear in an ambient target coordinate",
+    "that graph hypersurface has an explicit coordinate partial",
+    "rank_one construction has the predicted total number of ambient coordinates",
+    "rank_two output rows are independent with the asserted eta rank",
+    "rank_two pure intersection dimension equals row dimension minus eta rank",
+    "the rank-two mixed projection recovers both eta variables without a Keller inverse",
+    "the four-coordinate mixed construction has unit source Jacobian",
+    "its other coordinate composition is the identity",
+    "rank_two construction has the predicted total number of ambient coordinates",
+    "dimension stratum (0, 0) realizes its exact intersection rank",
+    "dimension stratum (0, 0) has exact helper budget and stable excess",
+    "dimension stratum (1, 0) realizes its exact intersection rank",
+    "dimension stratum (1, 0) has exact helper budget and stable excess",
+    "dimension stratum (2, 0) realizes its exact intersection rank",
+    "dimension stratum (2, 0) has exact helper budget and stable excess",
+    "dimension stratum (1, 1) realizes its exact intersection rank",
+    "dimension stratum (1, 1) has exact helper budget and stable excess",
+    "dimension stratum (2, 1) realizes its exact intersection rank",
+    "dimension stratum (2, 1) has exact helper budget and stable excess",
+    "dimension stratum (3, 1) realizes its exact intersection rank",
+    "dimension stratum (3, 1) has exact helper budget and stable excess",
+    "dimension stratum (2, 2) realizes its exact intersection rank",
+    "dimension stratum (2, 2) has exact helper budget and stable excess",
+    "dimension stratum (3, 2) realizes its exact intersection rank",
+    "dimension stratum (3, 2) has exact helper budget and stable excess",
+    "dimension stratum (4, 2) realizes its exact intersection rank",
+    "dimension stratum (4, 2) has exact helper budget and stable excess",
+    "adjoining free variables shifts only the helper count, not the excess",
+    "the relative minimum ambient dimension is source dimension plus intersection dimension",
+    "curve coefficient separation gives one component, genus zero and one puncture",
+    "the affine line gives precisely the required curve polynomial",
+    "punctured smooth-curve control cannot be canceled to an affine-space cylinder",
+    "positive_genus smooth-curve control cannot be canceled to an affine-space cylinder",
+    "disconnected smooth-curve control cannot be canceled to an affine-space cylinder",
+    "the cotangent source change has actual polynomial recovery",
+    "the cotangent control has actual unit full Hessian",
+    "the eta-plus-base source change is a polynomial automorphism",
+    "the positive control is automorphic, so conditional lower bounds are not inferred from it",
+    "retained mathematical or primary input pin jacobian-followup/hc4-triangular-graphs/STABLE_HYPERSURFACE_OBSTRUCTION.md",
+    "retained mathematical or primary input pin jacobian-followup/hc4-triangular-graphs/INTRINSIC_AFFINE_PLANE.md",
+    "retained mathematical or primary input pin jacobian-followup/hc4-triangular-graphs/TWO_TRACE_COMPATIBILITY.md",
+    "retained mathematical or primary input pin jacobian-followup/hc4-triangular-graphs/HODGE_TRACE_CLOSURE.md",
+    "retained mathematical or primary input pin jacobian-followup/hc4-triangular-graphs/CRITICAL_COMPONENTS.md",
+    "retained mathematical or primary input pin jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md",
+    "retained mathematical or primary input pin jacobian-followup/tang-hc4-audit/source-v1.pdf",
+    "retained mathematical or primary input pin jacobian-followup/hc4-triangular-graphs/sources/ricolfi-hodge-1907.08123v1.html",
+    "retained mathematical or primary input pin jacobian-followup/jc2-omitted-divisors/sources/jelonek-2011.03472v3.html",
+    "retained mathematical or primary input pin jacobian-followup/hc4-triangular-graphs/sources/critical-jet-import.json",
+    "retained mathematical or primary input pin jacobian-followup/hc4-triangular-graphs/sources/gwozdziewicz-injectivity-on-one-line-v1.pdf",
+    "the inspected classical plane stable-equivalence context is byte-pinned",
+    "classical stable-coordinate context is not claimed new or imported as a general cancellation theorem"
+  ],
+  "two_projection_rank_controls": {
+    "pure": {
+      "eta_rank": 0,
+      "pure_intersection_dimension": 2,
+      "conditional_minimum_ambient_dimension": 6,
+      "minimum_under_nonautomorphic_Keller_hypothesis_only": true
+    },
+    "rank_one": {
+      "eta_rank": 1,
+      "pure_intersection_dimension": 1,
+      "conditional_minimum_ambient_dimension": 5,
+      "minimum_under_nonautomorphic_Keller_hypothesis_only": true
+    },
+    "rank_two": {
+      "eta_rank": 2,
+      "pure_intersection_dimension": 0,
+      "conditional_minimum_ambient_dimension": 4,
+      "minimum_under_nonautomorphic_Keller_hypothesis_only": true
+    }
+  },
+  "four_output_dimension_table": [
+    {
+      "k": 0,
+      "ell": 0,
+      "helpers": 4,
+      "ambient": 4
+    },
+    {
+      "k": 1,
+      "ell": 0,
+      "helpers": 3,
+      "ambient": 4
+    },
+    {
+      "k": 2,
+      "ell": 0,
+      "helpers": 2,
+      "ambient": 4
+    },
+    {
+      "k": 1,
+      "ell": 1,
+      "helpers": 4,
+      "ambient": 5
+    },
+    {
+      "k": 2,
+      "ell": 1,
+      "helpers": 3,
+      "ambient": 5
+    },
+    {
+      "k": 3,
+      "ell": 1,
+      "helpers": 2,
+      "ambient": 5
+    },
+    {
+      "k": 2,
+      "ell": 2,
+      "helpers": 4,
+      "ambient": 6
+    },
+    {
+      "k": 3,
+      "ell": 2,
+      "helpers": 3,
+      "ambient": 6
+    },
+    {
+      "k": 4,
+      "ell": 2,
+      "helpers": 2,
+      "ambient": 6
+    }
+  ],
+  "source_sha256": {
+    "verify_projection_profile.py": "15d6c0f79db82840cfb62f1c8c08efe33853b1d0ded93dab3585e149f5dd49c9",
+    "MIXED_PROJECTION_PROFILE.md": "8c49e55ee8f904fc5f3e69690a5e312660bbf7f9fde652361ac08430dd918c98",
+    "sources/projection-profile-context.json": "e4545738291d0ba1246b9f020c9b42f560cb559a1ab7191bc68946a81e95229a"
+  },
+  "dependencies": {
+    "jacobian-followup/hc4-triangular-graphs/STABLE_HYPERSURFACE_OBSTRUCTION.md": "a169c8541cda91042b31a55b77c249c89d48170eba2fe4ba7b524ccfa4100c30",
+    "jacobian-followup/hc4-triangular-graphs/INTRINSIC_AFFINE_PLANE.md": "4499f2b096f9e1ce35f4eeb6f2ab0a6c216b03917848c2abf623185c6a2238e1",
+    "jacobian-followup/hc4-triangular-graphs/TWO_TRACE_COMPATIBILITY.md": "7df65ec6b7c541004e28e00f85d71ee7541a4a52428ca72b389b5de7d1de4888",
+    "jacobian-followup/hc4-triangular-graphs/HODGE_TRACE_CLOSURE.md": "b4958aa0e48775d39f790e8722314452b0d9852a1e98ebbfee2bd2afb2068171",
+    "jacobian-followup/hc4-triangular-graphs/CRITICAL_COMPONENTS.md": "76fc84214d34b62c804d72988c5a442403b1a3bd70e45c1d3cf6f89d480bd8af",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/source-v1.pdf": "bfcd8d2db0df78760c33b9c0b9e9a07c7d0d497a457b2547efeda13c917c29c2",
+    "jacobian-followup/hc4-triangular-graphs/sources/ricolfi-hodge-1907.08123v1.html": "c5fcfee336ea30011ae98d8c5d766aa41ee683b5fa98f08c7abb7ce1869147bc",
+    "jacobian-followup/jc2-omitted-divisors/sources/jelonek-2011.03472v3.html": "976068fa81837498fcb77bb91e6c4d28b4a6bc74ed940340d9771e807a5be249",
+    "jacobian-followup/hc4-triangular-graphs/sources/critical-jet-import.json": "ee08df853a8f8546504c7386a175cfccec2243ec2f15bacf48d4e7c88721a18d",
+    "jacobian-followup/hc4-triangular-graphs/sources/gwozdziewicz-injectivity-on-one-line-v1.pdf": "4cce6a7334640ea47036b1fb8c676e28da7946dbd15d0a48868b30d94c68585a",
+    "jacobian-followup/hc4-triangular-graphs/sources/stable-equivalence-cmh-2004.pdf": "8766565326fa4efef9ed66517dfafc89ad83fe6277dea0957d9bfcc64546bf24"
+  },
+  "written_not_finite_exhaustion": [
+    "no nonzero linear combination of a nonautomorphic plane Keller pair becomes a stable coordinate",
+    "exact generator count N-k+ell for every linear output subspace and every number of free variables",
+    "intrinsic HC4 projection minimum ambient dimensions four, five or six",
+    "all allowed A5 projection completions have explicit polynomial source recovery",
+    "noncoordinate directional derivatives recognize exactly the unique intrinsic cotangent plane"
+  ],
+  "finite_examples_asserted_to_prove_lower_bounds": false,
+  "nonautomorphic_Keller_example_constructed": false,
+  "unconditional_profile_asserted_for_automorphic_Keller_pair": false,
+  "plane_stable_coordinate_fact_asserted_new": false,
+  "higher_dimensional_cancellation_or_stable_coordinate_theorem_assumed": false,
+  "allowed_projection_embedding_asserted_to_match_fixed_Meng_Yang_potential": false,
+  "arbitrary_graph_physical_base_asserted_linear_gradient_projection": false,
+  "marked_gradient_covector_or_collision_transfer_asserted": false,
+  "relative_minimum_asserted_as_absolute_embedding_dimension": false,
+  "nonlinear_Hessian_invariance_used": false,
+  "universal_SL2_row_equation_solved": false,
+  "unit_ideal_plane_Keller_endpoint_resolved": false,
+  "singleton_zero_properness_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "novelty_priority_asserted": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "elapsed_seconds": 0.044
+}

@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {
+      "path": "../jc2-omitted-divisors/sources/fonollosa-2609.33491v1.html",
+      "url": "https://arxiv.org/html/2609.33491v1",
+      "title": "Coordinate descents, monodromy, and finite normalization of marked-root maps",
+      "author": "Jose A. R. Fonollosa",
+      "version": "v1, 27 September 2026",
+      "locator": "Sections2 and4, Proposition2.2 and Theorem1.2; Section3 has the separate dimension3 descent",
+      "sha256": "1af357ae6873d33817f93c16fc3972023fefdece0c50765f149527512dd0ee06",
+      "bytes": 720205,
+      "attribution": "The explicit construction is attributed by Fonollosa to Harish. The geometric group and coordinate descents are prior results. This turn reproduces the unsliced dimension-n family, then derives arithmetic constants and the full intermediate/block and atomicity statements."
+    }
+  ]
+}

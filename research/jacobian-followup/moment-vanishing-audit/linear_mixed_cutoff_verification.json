@@ -1,0 +1,37 @@
+{
+  "completed": true,
+  "exponential_amplitude_identities_checked": 3,
+  "normal_order_recurrences_checked": 108,
+  "W_degree_zero_base_certificate": {
+    "b": "s",
+    "base_bound": 0,
+    "slope": "1",
+    "pure_cutoff": "1"
+  },
+  "W_nonminimal_certificate": {
+    "b": "s*(s-1)",
+    "base_bound": 1,
+    "slope": "1",
+    "pure_cutoff": "1"
+  },
+  "zero_polynomial_certificate": {
+    "b": "s",
+    "base_bound": 0,
+    "slope": "0",
+    "pure_cutoff": "0"
+  },
+  "wrong_b_sign_mutation_detected": true,
+  "zero_b_rejected": true,
+  "nonlowering_remainder_rejected": true,
+  "rational_net_shift_arithmetic_only_control": "2/3,not an annihilator",
+  "general_b_function_search_executed": false,
+  "general_algorithm_implemented": false,
+  "general_algorithm_executed": false,
+  "universal_linear_cutoff_proof_certified_by_checker": false,
+  "producer_package_executed": false,
+  "new_cubic_prefix_computed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "9e010754c82fd4d0fd071923757f08b88c6824c15dfabeda968a0690b8a0386e"
+}

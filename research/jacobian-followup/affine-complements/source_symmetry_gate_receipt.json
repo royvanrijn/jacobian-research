@@ -1,0 +1,293 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 116,
+  "checks": [
+    "predecessor PASS boundary_fibre_models_receipt.json",
+    "predecessor seal boundary_fibre_models_receipt.json verify_boundary_fibre_models.py",
+    "predecessor seal boundary_fibre_models_receipt.json BOUNDARY_FIBRE_BUDGET_AND_GRADED_MODELS.md",
+    "predecessor seal boundary_fibre_models_receipt.json sources/boundary-fibre-models/manifest.json",
+    "predecessor seal boundary_fibre_models_receipt.json verify_coordinate_pencil_matrix.py",
+    "predecessor seal boundary_fibre_models_receipt.json coordinate_pencil_matrix_receipt.json",
+    "predecessor seal boundary_fibre_models_receipt.json two_sided_norm_receipt.json",
+    "predecessor seal boundary_fibre_models_receipt.json unramified_sheet_pair_receipt.json",
+    "predecessor seal boundary_fibre_models_receipt.json sources/boundary-fibre-models/stacks-0C1B.html",
+    "predecessor seal boundary_fibre_models_receipt.json sources/coordinate-pencil-matrix/xie-valuation-intersections.pdf",
+    "predecessor PASS unramified_orevkov_receipt.json",
+    "predecessor seal unramified_orevkov_receipt.json verify_unramified_orevkov.py",
+    "predecessor seal unramified_orevkov_receipt.json UNRAMIFIED_PACKET_AND_OREVKOV_GATE.md",
+    "predecessor seal unramified_orevkov_receipt.json sources/unramified-orevkov/manifest.json",
+    "predecessor seal unramified_orevkov_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "predecessor seal unramified_orevkov_receipt.json ../jc2-r7-global-cover/sources/nori-1983.pdf",
+    "predecessor seal unramified_orevkov_receipt.json ../jc2-omitted-divisors/sources/orevkov-three-sheeted-jc86.pdf",
+    "predecessor seal unramified_orevkov_receipt.json sources/universal-regular-end/dubouloz-dfs-0401225v3.pdf",
+    "predecessor seal unramified_orevkov_receipt.json sources/coordinate-pole-sector/miyanishi-tifr60.pdf",
+    "predecessor seal unramified_orevkov_receipt.json sources/intrinsic-normalization/BGV160.pdf",
+    "predecessor seal unramified_orevkov_receipt.json ../jc2-r7-global-cover/sources/orevkov-fg.pdf",
+    "predecessor seal unramified_orevkov_receipt.json exact_coordinate_bridge_receipt.json",
+    "predecessor seal unramified_orevkov_receipt.json universal_regular_end_receipt.json",
+    "predecessor seal unramified_orevkov_receipt.json higher_regular_coordinate_receipt.json",
+    "predecessor seal unramified_orevkov_receipt.json primitive_cover_receipt.json",
+    "predecessor PASS coordinate_regular_sector_receipt.json",
+    "predecessor seal coordinate_regular_sector_receipt.json verify_coordinate_regular_sector.py",
+    "predecessor seal coordinate_regular_sector_receipt.json COORDINATE_POLE_AND_REGULAR_SECTOR.md",
+    "predecessor seal coordinate_regular_sector_receipt.json multiple_fiber_cyclic_receipt.json",
+    "predecessor seal coordinate_regular_sector_receipt.json sources/coordinate-pole-sector/manifest.json",
+    "predecessor seal coordinate_regular_sector_receipt.json sources/coordinate-pole-sector/neumann-wightwick-9911104v1.pdf",
+    "predecessor seal coordinate_regular_sector_receipt.json sources/coordinate-pole-sector/miyanishi-tifr60.pdf",
+    "predecessor seal coordinate_regular_sector_receipt.json sources/coordinate-pole-sector/gwozdziewicz-9305008v1.pdf",
+    "exact complete primary source gwozdziewicz-9305008v1.pdf",
+    "exact Euler spectral projector (1, -2, 4)",
+    "exact Euler spectral projector (1, -2, 0)",
+    "exact Euler spectral projector (1, -2, -3)",
+    "exact Euler spectral projector (1, -2, 1)",
+    "exact Euler spectral projector (1, -2, -6)",
+    "exact Euler spectral projector (1, -2, -2)",
+    "nonzero tangent weight isolates a linear axis function (1, -2)",
+    "exact Euler spectral projector (2, 3, 8)",
+    "exact Euler spectral projector (2, 3, 7)",
+    "exact Euler spectral projector (2, 3, 2)",
+    "exact Euler spectral projector (2, 3, 9)",
+    "exact Euler spectral projector (2, 3, 3)",
+    "nonzero tangent weight isolates a linear axis function (2, 3)",
+    "exact Euler spectral projector (0, 1, 0)",
+    "exact Euler spectral projector (0, 1, 1)",
+    "exact Euler spectral projector (0, 1, 2)",
+    "exact Euler spectral projector (0, 1, 3)",
+    "nonzero tangent weight isolates a linear axis function (0, 1)",
+    "exact Euler spectral projector (-2, 0, -8)",
+    "exact Euler spectral projector (-2, 0, -4)",
+    "exact Euler spectral projector (-2, 0, -2)",
+    "exact Euler spectral projector (-2, 0, 0)",
+    "nonzero tangent weight isolates a linear axis function (-2, 0)",
+    "exact Euler spectral projector (-3, -1, -12)",
+    "exact Euler spectral projector (-3, -1, -7)",
+    "exact Euler spectral projector (-3, -1, -5)",
+    "exact Euler spectral projector (-3, -1, -3)",
+    "exact Euler spectral projector (-3, -1, -1)",
+    "nonzero tangent weight isolates a linear axis function (-3, -1)",
+    "exact Euler spectral projector (2, 2, 8)",
+    "exact Euler spectral projector (2, 2, 6)",
+    "exact Euler spectral projector (2, 2, 2)",
+    "nonzero tangent weight isolates a linear axis function (2, 2)",
+    "translation stability yields a generic affine-linear restriction degree1",
+    "translation stability yields a generic affine-linear restriction degree2",
+    "translation stability yields a generic affine-linear restriction degree4",
+    "translation stability yields a generic affine-linear restriction degree7",
+    "contracted-curve control has a polynomial source field element missing from the target algebra",
+    "finite non-Keller control has a monic source-coordinate equation",
+    "finite control target is deck invariant",
+    "finite control weight component is not in target field",
+    "finite control Euler derivative is not in target field",
+    "finite control is explicitly not a Keller map",
+    "mixed-weight automorphism has exact constant Jacobian",
+    "mixed-weight automorphism has a polynomial inverse",
+    "invariant target algebra need not have homogeneous chosen coordinates",
+    "automorphic Euler derivatives are target polynomials x + y**2",
+    "automorphic Euler derivatives are target polynomials y + (x + y**2)**2",
+    "nodal line control is immersive everywhere",
+    "nodal line control has an actual collision",
+    "nodal line control has full rational function field",
+    "missing positive component is globally in its B_n weight module n1",
+    "missing negative component is globally in its B_n weight module n1",
+    "positive missing component distinguishes every point of the source axis n1",
+    "negative missing component distinguishes every point of the source axis n1",
+    "three primitive choices have the exact coupling n1",
+    "complete source coordinate norm divisors multiply to div(h) n1",
+    "rational coordinate norms reproduce the h norm n1",
+    "missing positive component is globally in its B_n weight module n2",
+    "missing negative component is globally in its B_n weight module n2",
+    "positive missing component distinguishes every point of the source axis n2",
+    "negative missing component distinguishes every point of the source axis n2",
+    "three primitive choices have the exact coupling n2",
+    "complete source coordinate norm divisors multiply to div(h) n2",
+    "rational coordinate norms reproduce the h norm n2",
+    "missing positive component is globally in its B_n weight module n4",
+    "missing negative component is globally in its B_n weight module n4",
+    "positive missing component distinguishes every point of the source axis n4",
+    "negative missing component distinguishes every point of the source axis n4",
+    "three primitive choices have the exact coupling n4",
+    "complete source coordinate norm divisors multiply to div(h) n4",
+    "rational coordinate norms reproduce the h norm n4",
+    "two distinct point stabilizers generate a connected transposition graph d3",
+    "two distinct point stabilizers generate a connected transposition graph d4",
+    "two distinct point stabilizers generate a connected transposition graph d5",
+    "two distinct point stabilizers generate a connected transposition graph d8",
+    "imprimitive fourth-power field control has proper-power characteristic polynomial",
+    "trace-dual regularity for every regular multiplier control 1",
+    "trace-dual regularity for every regular multiplier control t + w",
+    "trace-dual regularity for every regular multiplier control t**2 + w**3 + w**2",
+    "trace-dual regularity for every regular multiplier control w**4 + w + 1",
+    "trace of the square need not be regular"
+  ],
+  "intersection": {
+    "target_field_intersect_source_polynomials_equals_target_algebra": true,
+    "quasi_finite_divisor_domination_required": true,
+    "generic_finiteness_alone_suffices": false
+  },
+  "descent": {
+    "all_Keller_field_degrees": true,
+    "all_polynomial_source_coordinate_systems": true,
+    "translation_derivation_field_stability_forces_automorphism": true,
+    "nonzero_integral_diagonal_Euler_field_stability_forces_automorphism": true,
+    "all_weight_sign_patterns": true,
+    "target_action_linearization_required": false,
+    "invariant_algebra_not_homogeneous_generators": true,
+    "automatic_descent_from_finiteness": false,
+    "source_action_existence_excluded": false,
+    "projector_controls": [
+      {
+        "weights": [
+          1,
+          -2
+        ],
+        "weight_support": [
+          -6,
+          -3,
+          -2,
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "weights": [
+          2,
+          3
+        ],
+        "weight_support": [
+          2,
+          3,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "weights": [
+          0,
+          1
+        ],
+        "weight_support": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "weights": [
+          -2,
+          0
+        ],
+        "weight_support": [
+          -8,
+          -4,
+          -2,
+          0
+        ]
+      },
+      {
+        "weights": [
+          -3,
+          -1
+        ],
+        "weight_support": [
+          -12,
+          -7,
+          -5,
+          -3,
+          -1
+        ]
+      },
+      {
+        "weights": [
+          2,
+          2
+        ],
+        "weight_support": [
+          2,
+          6,
+          8
+        ]
+      }
+    ]
+  },
+  "marked_models": {
+    "all_n": true,
+    "all_other_primes_retained": true,
+    "normalized_weight_components": [
+      "u=P_1=x*F_1(h), F_1(0)=1, h-C divides F_1",
+      "v=Q_-2=y*G_1(h), G_1(0)=1, H divides G_1"
+    ],
+    "both_components_outside_target_FIELD": true,
+    "at_least_one_Euler_coordinate_derivative_outside_target_field": true,
+    "every_target_polynomial_coordinate_max_weight_at_least": 2,
+    "every_target_polynomial_coordinate_min_weight_at_most": -4,
+    "primitive_components_require_no_intermediate_fields": true,
+    "retained_zero_excess_Sd_hypothesis_suffices": true,
+    "monic_norm_degree_under_primitive_hypothesis": "full actual Keller degree",
+    "normal_monogenic_algebra_claimed": false,
+    "coupling": "u^2*v=h*F_1(h)^2*G_1(h)",
+    "module_controls": [
+      {
+        "n": 1,
+        "positive_component_form": "-(-C + h)*(h + 1)/C",
+        "negative_component_form": "(1 - h/2)*(h**2 + 1)"
+      },
+      {
+        "n": 2,
+        "positive_component_form": "-(-C + h)*(h + 1)/C",
+        "negative_component_form": "(h - 3)*(h - 2)*(h**2 + 1)/6"
+      },
+      {
+        "n": 4,
+        "positive_component_form": "-(-C + h)*(h + 1)/C",
+        "negative_component_form": "(h - 5)*(h - 4)*(h - 3)*(h - 2)*(h**2 + 1)/120"
+      }
+    ]
+  },
+  "finite_gate": {
+    "rational_norm_x": "H_x*product(H_i)/G_R",
+    "rational_norm_y": "H_y*G_R^2/product(H_i)^2",
+    "residue_degree_one_required_for_displayed_norms": true,
+    "global_image_support_cancellations_allowed": true,
+    "trace_dual": "Tr(x*B_n) subset A",
+    "trace_x_squared_always_regular": false,
+    "trace_dual_implies_x_integral": false
+  },
+  "negative_controls": {
+    "contracted_curve_intersection_failure": true,
+    "finite_non_Keller_symmetry_failure": true,
+    "mixed_weight_automorphism": true,
+    "immersive_nodal_line": true,
+    "imprimitive_outside_element": true,
+    "tame_trace_square_pole": true
+  },
+  "assurance": {
+    "written_unbounded_proofs": true,
+    "finite_controls_not_universal_proof": true,
+    "imported_one_line_theorem_independently_reproved": false,
+    "finite_Keller_pair_supplied": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_source_symmetry_gate.py": "7c5d82a522f2631d50e15e5f8838f80b426cf22e47285442d3cb6c14fc2e6660",
+    "SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md": "553f95d8c66f8354d1c475bc2eb916f0b63c356d86466bd8603f8ef62452ceeb",
+    "sources/source-symmetry-gate/manifest.json": "80ab5c30c44be85b3877e24674a04ce8080b60370a175f5254d8dc25a0047ab1",
+    "boundary_fibre_models_receipt.json": "bed0e812dab8d3977e9fd05f85d827750aefc1d932834e3a5edfcd52afee5541",
+    "unramified_orevkov_receipt.json": "114dcfa8729acf11844332bc37474fb82390e60a288af70c22c6d58fddb9f852",
+    "coordinate_regular_sector_receipt.json": "9cb633a9da23942676ced2999554eddd352a37d17c92492dc866469829cb8305",
+    "sources/coordinate-pole-sector/gwozdziewicz-9305008v1.pdf": "4cce6a7334640ea47036b1fb8c676e28da7946dbd15d0a48868b30d94c68585a"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

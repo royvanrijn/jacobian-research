@@ -1,0 +1,17 @@
+{
+  "annihilator_premises": true,
+  "claim": "KCUB8",
+  "classification": true,
+  "finite_two_exchange": true,
+  "fixed_scalar_span_minimum": 89,
+  "global_Keller_dimension_minimum": false,
+  "global_tensor_rank_minimum": false,
+  "links": true,
+  "pair_validation_sha256": "433ee02e514cde3254ef7352473782b1abc061a98d3e6759e802e0e7fa7ef408",
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "source_hashes": true,
+  "status": "pass",
+  "umbrella_status": "open",
+  "validation_sha256": "26bb04724d424ec36ecd0240b592d3fc6095323694d639bd3f0d6dd7fd36c7ff"
+}

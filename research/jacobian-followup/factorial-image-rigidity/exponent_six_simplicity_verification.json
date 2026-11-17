@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "total": 10039,
+  "checks": {
+    "exact_analytic_inequalities": 35,
+    "symbolic_identities": 6,
+    "finite_prefix_Bezout_certificates": 9998
+  },
+  "files": {
+    "EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex": "673958f0dd9f69ba5d1e560eca531e3738b17622ab3fe3f0fcb0a44557274995",
+    "verify_exponent_six_simplicity.py": "b15ae6266cf5bc78f7126556dd6fa7a2081b8e7c6efdab7a65711646501cec24",
+    "exponent_six_prefix_certificates.json": "867c2b9024bd4d3fe21720b80c3da2c9ecac078bc1f312dfaf2f62731f9cdaa5",
+    "exponent_six_simplicity_audit.json": "c7d4e2fabccdab5ea8f6d9ac3ac232a66f3e55933b0a672a5db7b5c425798f76",
+    "EFFECTIVE_SADDLE_ANNULUS.tex": "ab91570d589fc95790090cfdd5770ae8c17c9ab14277a05c80d0a84f0e04ca26",
+    "PRIME_GAPS_AND_SMALL_KERNELS.tex": "9a55c63e460ace5a29aea2026ee630b11d1c8beb948646d90bd7c2c5dffb7787",
+    "MIXED_PRIME_RESIDUAL_WINDOWS.tex": "4e17be9cd0edc04edb13237e08f8768cd2ff9af87b2031933a491a8eb49c7a5e",
+    "QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex": "6c1ece0a10231625b875c40dc816bd2ad953e9ea3b80b9ef92e385f560202c83"
+  },
+  "effective_simplicity_cutoff": 10000,
+  "finite_prefix_complete": true,
+  "all_index_exponent_six_two_term_SFC": true,
+  "unrestricted_SFC_closed": false,
+  "general_FC_closed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

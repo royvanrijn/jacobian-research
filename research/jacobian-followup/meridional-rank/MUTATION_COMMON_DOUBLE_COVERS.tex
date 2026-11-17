@@ -1,0 +1,193 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\mr}{\operatorname{mr}}
+\title{Two common double covers for eight retained MRC targets}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The preceding thirteen-sheet homology calculation suggested two four-knot
+blocks. Exact graph certificates now prove Conway mutation inside each
+block. Consequently these eight ordinary double-cover rank questions
+reduce to two. Neither rank is determined here, and no additional knot
+equality is proved. The finite inputs have an independent replay; the
+topological implications are explicit classical imports. This working
+proof is unformalized and externally unreviewed, with no novelty claim.
+
+\begin{theorem}\label{thm:blocks}
+Let
+\[
+ \mathcal A=\{13a_{129},13a_{136},13a_{194},13a_{197}\},\qquad
+ \mathcal B=\{13a_{135},13a_{137},13a_{196},13a_{198}\}.
+\]
+Within each displayed block, the retained reduced alternating diagrams
+are related by Conway mutations. In particular their double branched
+covers are homeomorphic. Write the two fundamental groups as $G_A,G_B$.
+Then
+\[
+ H_1(G_A;\mathbb Z)=C_{391},\qquad H_1(G_B;\mathbb Z)=C_{401},
+ \qquad 2\le\rank G_A,\rank G_B\le3.
+\]
+If $\rank G_A=3$, every knot in $\mathcal A$ has $\mr(K)=b(K)=4$.
+The same conditional conclusion holds for $G_B$ and $\mathcal B$.
+\end{theorem}
+
+\section{Classical inputs and their exact scope}
+
+Greene's Corollary~4.5 states that connected reduced alternating
+diagrams are mutants precisely when their Tait graphs are
+2-isomorphic, with the fixed checkerboard convention of that paper.
+Section~4 obtains this through graph operations and changes of plane
+drawing. Parallel edges are permitted. We import that implication,
+including its classical Whitney and plane-drawing inputs; the paper's
+Floer and lattice classification is not needed. The read source is
+the author preprint, printed pages~19--23; the published metadata is
+\emph{Inventiones mathematicae}~192 (2013), 717--750,
+\url{https://doi.org/10.1007/s00222-012-0421-4}.
+
+The double-cover implication is Viro's classical observation, with
+the complete short proof read in Morton's \emph{Mutant knots},
+16~March~2014, Theorem~3, printed page~6. The two tangle covers
+meet along a torus. A chosen lift of the Conway halfturn is isotopic
+to the identity there, so mutation does not change the glued cover.
+Viro's original publication receives credit; its full original proof
+has not been audited. Morton's author manuscript is
+\url{https://www.liverpool.ac.uk/~su14/papers/mutantchapter.pdf}.
+
+These imports establish a homeomorphism and hence a group isomorphism.
+No claim about mutation invariance of bridge number or meridional rank
+is used. The machine certificate below is an abstract graph certificate,
+not a literal sequence of modified planar diagrams or Tietze maps.
+The classical graph-to-diagram theorem supplies that existence step.
+
+\section{Frozen diagrams and finite certificates}
+
+The frozen plan selects exactly the eight names in
+Theorem~\ref{thm:blocks}; no source is replaced. Literal PD codes come
+from the already pinned \texttt{parabolic\_panel.json}. Each has thirteen
+crossings. The producer constructs both checkerboard graphs and selects
+the smaller, with seven vertices and thirteen edges. Every source is a
+single alternating knot on a sphere, and the selected graph is connected
+with neither loops nor bridges. The other checkerboard graph is its
+plane dual, so these checks imply reducedness.
+
+Edges are numbered $0,\ldots,12$ in PD crossing order. For reproducibility,
+the selected root graphs have the following edge lists:
+\begin{align*}
+ E_A={}&(01,12,20,13,31,04,43,35,56,06,36,36,50),\\
+ E_B={}&(01,02,02,31,32,42,42,15,56,46,45,45,61).
+\end{align*}
+Here $uv$ denotes an undirected edge, and repeated entries are distinct
+parallel edges. Source $13a_{129}$ is the root for $\mathcal A$ and
+$13a_{135}$ for $\mathcal B$. Vertex names have no intrinsic meaning.
+
+A Whitney switch uses an edge partition whose two sides meet in exactly
+two vertices $u,v$, and interchanges $u,v$ on one side. The certificate
+retains every boundary and side, followed by vertex and crossing-edge
+bijections to the target graph. The search is bounded to $5000$ states
+and thirty seconds per comparison. All six comparisons succeed:
+\begin{center}
+\begin{tabular}{lllrr}
+\toprule
+Block & Root & Target & Switches & States visited\\
+\midrule
+$\mathcal A$ & $13a_{129}$ & $13a_{136}$ &1&2\\
+ & & $13a_{194}$ &1&2\\
+ & & $13a_{197}$ &0&1\\
+$\mathcal B$ & $13a_{135}$ & $13a_{137}$ &1&4\\
+ & & $13a_{196}$ &0&1\\
+ & & $13a_{198}$ &1&4\\
+\bottomrule
+\end{tabular}
+\end{center}
+Zero switches means that the abstract graphs are isomorphic. It does
+not assert that their plane embeddings or knot diagrams coincide.
+
+The local crossing convention is tracked explicitly. In the producer's
+face-dart coordinates, the selected opposite corners have parity zero
+throughout block $\mathcal A$ and parity one throughout block $\mathcal B$.
+Thus each comparison uses the same convention at every crossing.
+If that convention is the dual of Greene's choice, dualizing both
+graphs preserves their cycle-matroid isomorphism, since matroid duality
+preserves isomorphisms. No target needs mirroring. The independent corner
+construction below also checks this parity rather than assuming it.
+
+\section{Independent replay}
+
+\texttt{verify\_mutation\_covers.py} imports none of the producer's graph,
+canonicalization or search routines. It identifies regions by gluing
+corners across diagram arcs, rather than by the producer's face
+permutation. It checks the single alternating knot walk, Euler region
+count, checkerboard bipartition and source PD identity. Complete vertex
+stars align its independently constructed graph with the retained one.
+Enumeration of all spanning trees verifies connectedness and the
+absence of loops and bridges, giving $391$ trees for every graph in
+$\mathcal A$ and $401$ in $\mathcal B$.
+
+For a graph with edges $e_i=u_iv_i$, it enumerates all $2^{13}=8192$
+edge subsets and retains exactly those with even incidence at every
+vertex. These form its full binary cycle space, with
+$2^{13-7+1}=128$ elements for every named source. Every recorded switch
+has the claimed two-vertex boundary and preserves that space with edge
+labels fixed. The final edge bijection transports the entire space
+onto the target's, and the final vertex bijection is checked on every
+edge. Inclusion-minimal nonzero vectors are the graph circuits, so this
+proves the required cycle-matroid isomorphism, not just equality of
+polynomials or tree counts.
+
+Two positive controls replay: an explicit thirteen-edge graph with a
+genuine switch changing its degree multiset, and literal pretzel
+diagrams $P(2,3,3,5)$ and $P(2,3,5,3)$. Four corruptions are rejected:
+a wrong switch boundary, a bijective but wrong crossing transport, a
+wrong final vertex map, and a single crossing change breaking the
+alternating convention. The retained receipt reports eight named
+diagrams, six comparisons, two controls and four rejected corruptions.
+
+The finite certificate is in \texttt{mutation\_cover\_results.json};
+the independent receipt is \texttt{mutation\_cover\_verification.json}.
+\texttt{mutation\_source\_audit.json} seals the two read classical
+sources. The separate archived KnotInfo subset records equal Jones
+and Conway polynomials and signatures within the blocks. Those
+equalities motivated screening; they are not the mutation proof.
+
+\section{Rank consequence and remaining question}
+
+\begin{proof}[Proof of Theorem~\ref{thm:blocks}]
+The independently checked graph certificates, reduced alternating
+diagram checks and common crossing conventions satisfy Greene's
+Corollary~4.5. Hence the six root-to-member diagram pairs are mutants.
+Morton's Theorem~3, credited to Viro, identifies their double branched
+covers. The retained integral homology calculation gives the displayed
+cyclic groups, so the two blocks cannot have isomorphic cover groups.
+
+Each root has a retained epimorphism onto the nonabelian group
+$\mathrm{SL}_3(\mathbb F_3)$, proving rank at least two. The already
+certified four-meridian upper and the double-cover inequality give
+\[
+ \rank\pi_1(\Sigma_2(K))\le\mr(K)-1\le b(K)-1\le3.
+\]
+If either common rank is three, the same inequality forces
+$4\le\mr(K)\le b(K)\le4$ for every knot of its block.
+Each upper bound is an individual retained certificate; it is not
+transferred by an assumed mutation-invariance theorem.
+\end{proof}
+
+Neither a two-generator presentation nor a rank-three obstruction is
+provided here. Nonabelianness of these double-cover groups only proves
+rank at least two; it cannot give the rank-three threshold. The earlier
+nonabelian two-generator \emph{three}-sheet cover criterion is a
+different numerical gate. A productive next structural question is to
+extract a certified tangle/torus decomposition or a common presentation
+for each root, then seek a rank obstruction or explicit two-generator
+certificate. Negative quotient-module tests do not imply rank two.
+The other original eight targets are untouched, all original sixteen
+remain open, and the full classical MRC remains open.
+
+\end{document}

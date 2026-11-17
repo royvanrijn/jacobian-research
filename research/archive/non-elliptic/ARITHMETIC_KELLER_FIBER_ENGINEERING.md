@@ -170,7 +170,7 @@ two. See
 | one fixed map, infinitely many Hasse fibers | **settled by the quadratic-tilt family** | quantify and generalize the resulting target line |
 | real signatures plus Frobenius types | already proved for every degree and every finite set of unramified types | extend from unramified cycle types to ramified local etale algebras |
 | prescribed solvable Galois groups | arithmetic existence known for coverable solvable groups; weighted transfer needs normalization control | combine Sonn's realizations with tangent-admissible specialization or stabilization |
-| prescribed generic inverse monodromy | exact \(A_4\) occurs on determinant-one boundary-complement charts; a polynomial fourfold lift has Jacobian equal to one target-divisor pullback, and a puncture-adapted two-mask target blowdown is explicit; the normalized-boundary automorphic assembly is now excluded by exact divisibility and Jacobian tests | solve the nonautomorphic log-crepant incidence equation, both inverse-mask divisibilities, and \(A_4\) field reconstruction |
+| prescribed generic inverse monodromy | exact \(A_4\) occurs on determinant-one boundary-complement charts; a polynomial fourfold lift has Jacobian equal to one target-divisor pullback, and a puncture-adapted two-mask target blowdown is explicit; the normalized-boundary automorphic assembly is now excluded by exact divisibility and Jacobian tests | closed for full geometric generic A4 monodromy by KMFI66/KIG28; retain the chart and local calculations |
 | tangent-normalization restriction | exact generator criterion (3.1)-(3.2) obtained; existence classification open | study rational points on the primitive-element tangent hypersurface |
 
 ## 5. The minimal Hasse degree is five
@@ -426,27 +426,29 @@ Its first checkpoint is now the
 [oriented quartic \(A_4\) inverse cover](extended-geometry/A4_KELLER_INVERSE_COVER.md):
 a determinant-one degree-four morphism of smooth affine boundary complements
 with exact generic \(A_4\), a full totally real \(A_4\) fiber, and every
-unramified cycle type in the natural four-point action. Absolute affine-space
-completion remains open.
+unramified cycle type in the natural four-point action. Absolute A4-preserving affine-space Keller completion is now closed by
+[KMFI66/KIG28](../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md),
+subject to the internal central-cover proof. The local chronology below is
+retained as historical construction work; its proposed next steps are superseded.
 The
 [affine \(A_4\) follow-up](extended-geometry/A4_AFFINE_KELLER_FRONTIER.md)
 removes the orientation denominator, constructs a polynomial
 \(\mathbb A^3\to\mathbb A^3\) with exact generic \(A_4\), and factors its
 Jacobian as \(4W^2K^3L\). It also excludes every affine-linear ambient
 correction preserving the oriented surface. Constant-Jacobian cancellation
-of this explicit ledger is now the leading gate. The
+of this explicit ledger was the historical gate; KMFI66 now excludes every
+A4-preserving ordinary-affine Keller completion. The
 [ledger reduction](extended-geometry/A4_LEDGER_REDUCTION_AND_RIGIDITY.md)
 strengthens the obstruction to arbitrary-degree defect-multiple corrections,
 absorbs \(K^3L\) into an explicit target divisor, and leaves the two-factor
 residual boundary \(WL\). Polynomial cone reparametrizations and
-block-triangular stabilizations cannot remove it, so the leading gate is now
-a genuinely coupled affine modification. The
+block-triangular stabilizations cannot remove it, so a genuinely coupled affine modification was proposed. That global
+construction objective is now closed by KMFI66. The
 [pure-target lift](extended-geometry/A4_PURE_TARGET_LEDGER_LIFT.md)
 adjoins \(z\), maps it to \((WL/4)z\), and makes the complete determinant
 exactly the pullback of the homogeneous target \(B\)-divisor. It preserves
-generic degree four and \(A_4\) monodromy. The remaining ordinary-Keller
-factorization must modify at least two cone outputs using source-dependent
-masks. The
+generic degree four and \(A_4\) monodromy. The former ordinary-Keller proposal required modifying at least two cone
+outputs using source-dependent masks; KMFI66 also excludes that proposal. The
 [two-mask factorization frontier](extended-geometry/A4_TWO_MASK_FACTORIZATION_FRONTIER.md)
 constructs the required birational target blowdown with Jacobian
 \(\mathcal B\). Its normal-module theorem excludes every rechart preserving
@@ -456,9 +458,9 @@ assignments and the six elementary singular-line incidence charts. The
 constructs a determinant-one translated incidence along the polynomial
 normalization, but its inverse masks are not polynomial and its rational
 Jacobian is nonconstant. In fact every automorphic incidence route is
-excluded. The next test is a nonautomorphic map whose boundary pullback is
-the old boundary pullback times its Jacobian and whose two inverse-mask
-numerators are divisible.
+excluded. The proposed nonautomorphic next test is historical: even a different
+local ledger cannot produce an A4-preserving affine-space Keller map under
+KMFI66. Wright boundary A4 states and specialized A4 fibres remain separate.
 
 ## 9. Recommended paper sequence
 

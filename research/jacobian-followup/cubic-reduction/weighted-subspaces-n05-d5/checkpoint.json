@@ -1,0 +1,1562 @@
+{
+  "status": "complete",
+  "source_sha256": "75f681c9e3dd62f7b3857b8cd83014b7ff70c9dfe756179bbaa6a1d870d215ff",
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "retained_carrier_dimension": 2,
+  "target_degree": 5,
+  "charts_total": 36,
+  "charts_completed": 36,
+  "cases": [
+    {
+      "case": 0,
+      "kept": [
+        4,
+        5
+      ],
+      "deleted": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          12,
+          4
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 1,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 1,
+      "kept": [
+        4,
+        6
+      ],
+      "deleted": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          12,
+          4
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 2,
+      "kept": [
+        4,
+        7
+      ],
+      "deleted": [
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "parameter_count": 3,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 3,
+      "kept": [
+        4,
+        8
+      ],
+      "deleted": [
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          9,
+          8
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "parameter_count": 2,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "24"
+      }
+    },
+    {
+      "case": 4,
+      "kept": [
+        4,
+        9
+      ],
+      "deleted": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          12,
+          4
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 1,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 5,
+      "kept": [
+        4,
+        10
+      ],
+      "deleted": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "parameter_count": 2,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "24"
+      }
+    },
+    {
+      "case": 6,
+      "kept": [
+        4,
+        11
+      ],
+      "deleted": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          12,
+          4
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 7,
+      "kept": [
+        4,
+        12
+      ],
+      "deleted": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 8,
+      "kept": [
+        5,
+        6
+      ],
+      "deleted": [
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 1,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 9,
+      "kept": [
+        5,
+        7
+      ],
+      "deleted": [
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "parameter_count": 2,
+      "high_coefficient_equations": 1,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 10,
+      "kept": [
+        5,
+        8
+      ],
+      "deleted": [
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          9,
+          8
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 0,
+      "generic_degree": 5,
+      "status": "universal-degree-family"
+    },
+    {
+      "case": 11,
+      "kept": [
+        5,
+        9
+      ],
+      "deleted": [
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 1,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 12,
+      "kept": [
+        5,
+        10
+      ],
+      "deleted": [
+        4,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          11,
+          10
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 1,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 13,
+      "kept": [
+        5,
+        11
+      ],
+      "deleted": [
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 1,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 14,
+      "kept": [
+        5,
+        12
+      ],
+      "deleted": [
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 1,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 15,
+      "kept": [
+        6,
+        7
+      ],
+      "deleted": [
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "parameter_count": 2,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 16,
+      "kept": [
+        6,
+        8
+      ],
+      "deleted": [
+        4,
+        5,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          9,
+          8
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "24"
+      }
+    },
+    {
+      "case": 17,
+      "kept": [
+        6,
+        9
+      ],
+      "deleted": [
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 18,
+      "kept": [
+        6,
+        10
+      ],
+      "deleted": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          11,
+          10
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 19,
+      "kept": [
+        6,
+        11
+      ],
+      "deleted": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 20,
+      "kept": [
+        6,
+        12
+      ],
+      "deleted": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 21,
+      "kept": [
+        7,
+        8
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "parameter_count": 3,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "24"
+      }
+    },
+    {
+      "case": 22,
+      "kept": [
+        7,
+        9
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "parameter_count": 2,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 23,
+      "kept": [
+        7,
+        10
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "parameter_count": 2,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 24,
+      "kept": [
+        7,
+        11
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          10,
+          7
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 3,
+      "generic_degree": 6,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 25,
+      "kept": [
+        7,
+        12
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "parameter_pairs": [
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "parameter_count": 2,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "24"
+      }
+    },
+    {
+      "case": 26,
+      "kept": [
+        8,
+        9
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          3,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "8"
+      }
+    },
+    {
+      "case": 27,
+      "kept": [
+        8,
+        10
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          9,
+          8
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "parameter_count": 2,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "24"
+      }
+    },
+    {
+      "case": 28,
+      "kept": [
+        8,
+        11
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          9,
+          8
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "24"
+      }
+    },
+    {
+      "case": 29,
+      "kept": [
+        8,
+        12
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "parameter_pairs": [
+        [
+          9,
+          8
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 2,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 3,
+        "source_exponent": [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "24"
+      }
+    },
+    {
+      "case": 30,
+      "kept": [
+        9,
+        10
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12
+      ],
+      "parameter_pairs": [
+        [
+          11,
+          10
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 31,
+      "kept": [
+        9,
+        11
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 32,
+      "kept": [
+        9,
+        12
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 33,
+      "kept": [
+        10,
+        11
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 34,
+      "kept": [
+        10,
+        12
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "parameter_pairs": [
+        [
+          11,
+          10
+        ]
+      ],
+      "parameter_count": 1,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    },
+    {
+      "case": 35,
+      "kept": [
+        11,
+        12
+      ],
+      "deleted": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "parameter_pairs": [],
+      "parameter_count": 0,
+      "high_coefficient_equations": 3,
+      "generic_degree": 7,
+      "status": "constant-obstruction",
+      "constant_obstruction": {
+        "output": 2,
+        "source_exponent": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "12"
+      }
+    }
+  ],
+  "seconds": 0.05,
+  "scope": "Complete highest-pivot echelon charts for simultaneous linear zero relations within carrier weight blocks; no target repair, base-output relations, nonlinear graphs or global lower bound."
+}

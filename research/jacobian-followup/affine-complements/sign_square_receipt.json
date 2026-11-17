@@ -1,0 +1,314 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 55,
+  "checks": [
+    "PF54 receipt PASS",
+    "PF54 sealed input verify_quartic_colouring.py",
+    "PF54 sealed input QUARTIC_COLOURING_AND_ETALE_TRIPLE_GATE.md",
+    "PF54 sealed input sources/quartic-colouring/manifest.json",
+    "PF54 sealed input unramified_orevkov_receipt.json",
+    "PF54 sealed input torus_infinity_receipt.json",
+    "PF54 sealed input trace_dual_pencil_receipt.json",
+    "PF54 sealed input sources/torus-infinity/leidy-maxim-hoA.pdf",
+    "PF54 sealed input sources/quartic-colouring/przytycki-0608172v1.pdf",
+    "PF54 sealed input sources/quartic-colouring/livingston-melvin-1985.pdf",
+    "PF54 sealed input sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "PF54 sealed input sources/quartic-colouring/stacks-03PK.html",
+    "required triple is etale at singularities",
+    "pinned source ford-1303.5687v2.pdf",
+    "pinned source hamm-1983-p121.jpg",
+    "pinned source hamm-1983-p122.jpg",
+    "pinned source owens-strle-QHS.pdf",
+    "pinned source sga1-math0206203v2.pdf",
+    "pinned source kerner-2505.01906v1.pdf",
+    "Hamm original singular theorem scan retained",
+    "reducible branch admits nonconstant norm-one unit",
+    "coprime norm factors differ by two",
+    "halving the square factor gives a new constant norm",
+    "A2 cone invariant parametrization",
+    "cone localization is a Laurent polynomial ring",
+    "cone has only the singular vertex",
+    "cone cover fails to be etale at vertex",
+    "cone class group localization relation is3",
+    "Oka ab equals u cubed on sign surface",
+    "Oka torus inverse reconstructs x",
+    "Oka sign surface smooth at every affine point",
+    "Oka localization cokernel exactly Z3",
+    "Oka units lattice kernel zero",
+    "Oka involution reverses every boundary class",
+    "Oka branch is Cstar parametrized",
+    "anisotropic3-primary order9 form has only zero isotropic",
+    "split3-primary order9 form has nonzero isotropic",
+    "cyclic order9 linking form has isotropic subgroup of order3",
+    "square and Pic3 rank control ([], [3])",
+    "square and Pic3 rank control ([[-2, 0], [0, -2]], [3])",
+    "square and Pic3 rank control ([[2, 1], [1, 2]], [3])",
+    "square and Pic3 rank control ([[1]], [3, 3])",
+    "square and Pic3 rank control ([[1]], [9])",
+    "torsion order contains more information than Pic3 rank",
+    "all-stage square-gate Alexander identity [(3, 4)]",
+    "all-stage square-gate Alexander identity [(2, 9)]",
+    "all-stage square-gate Alexander identity [(3, 4), (3, 2)]",
+    "all-stage square-gate Alexander identity [(2, 9), (2, 3)]",
+    "all-stage square-gate Alexander identity [(3, 4), (2, -9)]",
+    "all-stage square-gate Alexander identity [(3, 4), (3, 2), (5, 7)]",
+    "all-stage square-gate Alexander identity [(2, 5), (9, 2)]",
+    "all-stage square-gate Alexander identity [(2, 9), (2, 5)]",
+    "T34 passes old determinant and exact S4 lift but fails new global gate",
+    "final even stage erases inner nine divisibility",
+    "odd winding can supply the second factor three"
+  ],
+  "scope": {
+    "entire_actual_quartic_packet": true,
+    "all_source_orders": true,
+    "all_target_degrees": true,
+    "all_rulings": true,
+    "both_omitted_primes_retained": true,
+    "underlying_sign_surface_theorem_all_branch_degrees": true,
+    "required_triple_supplied_for_higher_Keller_degrees": false
+  },
+  "units": {
+    "irreducible_branch_required": true,
+    "normal_singular_surface_allowed": true,
+    "all_units_constant": true,
+    "quadratic_degree_descent_written": true,
+    "Kummer_units_quotient_zero": true,
+    "Pic3_nonzero_required": true,
+    "tau_acts_minus_one": true,
+    "Pic_not_Cl": true
+  },
+  "topology": {
+    "singular_affine_Hamm_theorem_used": true,
+    "exceptional_rational_trees": true,
+    "H1_resolution_equals_H1_sign": true,
+    "H2_resolution_torsion_free": true,
+    "H3_resolution_zero": true,
+    "knot_double_boundary_rational_homology_sphere": true,
+    "H1_boundary_surjects_H1_filling": true,
+    "H1_sign_finite": true,
+    "negative_definiteness_required": false,
+    "rational_compactification_required": false
+  },
+  "determinant": {
+    "identity": "D=abs(det Q)*abs(H1(S,Z))^2",
+    "Pic_torsion_order_squared_divides_D": true,
+    "necessary_quartic": "9 divides abs(Delta_K(-1))",
+    "excludes_v3_zero_and_one": true,
+    "nonzero_isotropic_order3_subgroup_required": true,
+    "all_cable_stages": true,
+    "cable_controls": [
+      {
+        "stages": [
+          [
+            3,
+            4
+          ]
+        ],
+        "determinant": 3,
+        "v3": 1,
+        "passes_old_three_gate": true,
+        "passes_new_nine_gate": false,
+        "Keller_realization_asserted": false
+      },
+      {
+        "stages": [
+          [
+            2,
+            9
+          ]
+        ],
+        "determinant": 9,
+        "v3": 2,
+        "passes_old_three_gate": true,
+        "passes_new_nine_gate": true,
+        "Keller_realization_asserted": false
+      },
+      {
+        "stages": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "determinant": 9,
+        "v3": 2,
+        "passes_old_three_gate": true,
+        "passes_new_nine_gate": true,
+        "Keller_realization_asserted": false
+      },
+      {
+        "stages": [
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "determinant": 3,
+        "v3": 1,
+        "passes_old_three_gate": true,
+        "passes_new_nine_gate": false,
+        "Keller_realization_asserted": false
+      },
+      {
+        "stages": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            -9
+          ]
+        ],
+        "determinant": 9,
+        "v3": 2,
+        "passes_old_three_gate": true,
+        "passes_new_nine_gate": true,
+        "Keller_realization_asserted": false
+      },
+      {
+        "stages": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "determinant": 9,
+        "v3": 2,
+        "passes_old_three_gate": true,
+        "passes_new_nine_gate": true,
+        "Keller_realization_asserted": false
+      },
+      {
+        "stages": [
+          [
+            2,
+            5
+          ],
+          [
+            9,
+            2
+          ]
+        ],
+        "determinant": 45,
+        "v3": 2,
+        "passes_old_three_gate": true,
+        "passes_new_nine_gate": true,
+        "Keller_realization_asserted": false
+      },
+      {
+        "stages": [
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "determinant": 5,
+        "v3": 0,
+        "passes_old_three_gate": false,
+        "passes_new_nine_gate": false,
+        "Keller_realization_asserted": false
+      }
+    ]
+  },
+  "controls": {
+    "linking_order9_anisotropic": [
+      [
+        0,
+        0
+      ]
+    ],
+    "linking_order9_split": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "linking_cyclic9": [
+      [
+        0
+      ],
+      [
+        3
+      ],
+      [
+        6
+      ]
+    ],
+    "Oka_Picard_invariants": [
+      3
+    ],
+    "cone_Cl_invariants": [
+      3
+    ],
+    "cone_Picard_torsion_empty": true,
+    "reducible_branch_nonconstant_unit": true
+  },
+  "assurance": {
+    "written_unbounded_proofs": true,
+    "finite_controls_not_universal_proof": true,
+    "primary_imports_independently_reproved": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "all_nine_divisible_candidates_excluded": false,
+    "finite_Keller_pair_supplied": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_sign_square.py": "50eb8a5101490037116c5db111732a743efad6e8aa7bdf1c10009e1fd8302582",
+    "SIGN_SURFACE_PICARD_AND_SQUARE_DETERMINANT.md": "ed2015ebfb57c6a798b9dfa2f22f62b63782f2aef42aaba343b1780183d2d802",
+    "sources/sign-square/manifest.json": "8d59de429201e3db166c52c764ac1f8a4ebe8cdc46e6d9ae2b8b5f165a962795",
+    "quartic_colouring_receipt.json": "7026df3d436551a97d2cf13d94714f9eac578f153e2d1b8168d24e7f65ba40ff",
+    "sources/sign-square/ford-1303.5687v2.pdf": "e576f529a80516f4905e6d6fe80e40db9fc8364fcf138af4b615830e14f97021",
+    "sources/sign-square/hamm-1983-p121.jpg": "d7b86ad6d4d7edaf960ff31f42f0bc7bffd38a438b572cf717fd134750fe8a2b",
+    "sources/sign-square/hamm-1983-p122.jpg": "e3867909c5ca3957871616173069c04f948abd2c906d8b534dd47290ddef9fd0",
+    "sources/sign-square/owens-strle-QHS.pdf": "c40e7bcddb1d07022c854bd4bdb49b1c9665079bc1fa51067fc57ecb73326eab",
+    "sources/sign-square/sga1-math0206203v2.pdf": "8e64218d356456c534eebf996940f0f957e43b54f1a080241debe12cbaf60d3c",
+    "sources/sign-square/kerner-2505.01906v1.pdf": "08e6eeef5d94f8c76450f34618e0035f3763de2ced183165893fc4f51932ac5b"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

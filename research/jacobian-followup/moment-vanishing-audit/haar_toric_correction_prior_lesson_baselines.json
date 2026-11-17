@@ -1,0 +1,131 @@
+{
+  "METHOD-HAAR-LOCAL-TATE-NORMAL-FORM-AND-NERON-COMPONENTS-20261116": {
+    "id": "METHOD-HAAR-LOCAL-TATE-NORMAL-FORM-AND-NERON-COMPONENTS-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use local genus--Tate normal form and the Neron component of the actual algebraic section",
+    "when": "Testing the full exceptional all-degree local obstruction;removing the reduced invariant-image caveat;translating monodromy into algebraic specialization.",
+    "use": "LOCAL TATE NORMAL FORM AND NERON COMPONENT CRITERION: EVERY reducedE,EVERY puncture INCLUDING INFINITY,V splits LOCALLY P+T evenwhenGLOBALgenus-Tatecouplingnonsplit. StrictM4P=imageNP correctsEVERYtopTatelift;J_boundary=T^1 ENTIREoriginaleigen1topTate,NOT ALLTate/fullunreducedK. Unit-genusA locallysplitsbyweights5vs6. LocalE=P+E_T,N=N_P+rowbeta:T->L,rankexcess in{0,1} detectsxi;ANYe killingsemisimplepart usesrank(T_E^e-I)-rank(T_P^e-I). No localgenusSS/Hodgesplitting/globalSS assumed. Algebraic[Z->G_f] sigma_f hasxi_a=0 IFF TORSION NERON LFT COMPONENT,BEFOREpurity. IdentityR-points divisibleoverC,Kummerquotients=Phi/nPhi,Bettilogdivisiontorsorcomparison. SOME nonzero multiplemeetsidentitycomponent,NOTsectiontorsionoridentitywithoutmultiple;constant2allowed. Suppliedfinitepresentation givesrationalrelation-span/SNF test,NOTimplementedNeronproducer. Under EVENTUAL PURITY at0 theseareIFFfull ALL-original-marker safety andGLOBALconstantTYPE. EVERYH retainseveryroot/component/factor1,not scalarNorm. Wholeexceptionaltarget componenttorsiononENTIREpurelocus,or actualadmissiblepurefailure. Both FULL MZ cases remain OPEN;External review is DEFERRED and NOT the next task.",
+    "avoid": "Confusing local/Hodge/global splitting;requiring localgenusSS;fullunreducedK substitution;ALLTate instead oforiginalT^1;sectiontorsion/identitywithoutmultiple;finite-type torus model replacingNeronLFT;scalarNorm/arbitrarycoordinates for nonsplitG;one localtest forcingglobalconstancywithoutpurity.",
+    "boundary": "BOTH COMPLETE exceptional MZ casesOPEN. Exact FULL criterion,not exceptional pure-locus componenttorsion. NamedNeronexistence/finitegeneration imported;writtenKummerproof/exactcontrols notmachineuniversal. No generalNeron/Picardproducer,ringpromotion,newdegreecampaign/reviewgate. SUBSEQUENT FUNCTORIAL AND UNIFORM-MARKER REFINEMENT: COHOMOLOGICAL COMPONENT TRANSPORT AND ONE UNIFORM ORIGINAL MARKER: ANYregularPhi withnonzeroACTUALH3scalar d preservesnonzerotargetreducedlocalxi/component,EVERYpuncture INCLUDING INFINITY,BEFOREpurity. CanonicalE mapexistsbecauseGLOBALnontrivpure4C4 mapsbyweightsintosourceLtrivialandzero. Bad_targetSUBSETBad_source,NOTreverse. EVERY exceptionalBezoutb hasINTEGRALH3degree2 viaGa-torsorbottomdegree nm/|Gamma|;normalizedJ=2W,notgenericfielddegree/rawnm. ActualLongg_b hasnonzerocomponentsat0,-1,rankexcess1atboth,ALLb. Thereforeexceptionalinvariance/perfect2IaloneCANNOTforcecomponenttorsion. PuritymustenterWHOLEproof. ONEfixedoriginalC=(J/d)*(1-Q)Phi,orC_b=W_b(1+Y_b),satisfiesh(C R(g))=integral_0^1 R(-t)dt forALLR. MugerTuset giveslimsuprootmarked>0 forEVERYnonzeroCOMPLEXpolynomialH,ALLdegrees,SAMEC. Infinitelymanynonzeroorders,NOTeveryorder. ALLnonzeroH(g_b) nonsafeandALLsourcesgloballyunitnonsplit. ANYunweightedeventualpureH(g_b),IFexists,isgenuineexceptionalfailurewithCbprovided;primitivepurityunneeded. No unweightedpureproducer/entirefamilyexclusion. This sufficientfamilyisNOTwholequotient. FulltargetstaysEVERYexceptionalpurephasecomponenttorsionoractualpureinvariantfailure. Jacobianweightretained,notunweightedpurity. Both FULL MZ cases remain OPEN;External review is DEFERRED and NOT the next task.",
+    "reopen_when": "Prove EVERY actual eventual-pure2O/2I invariant phase hasTORSION Neroncomponentat0,or actualnonzerocomponent withpureinvariantphase/originalbadmarker. Use ambientrank1/Picardcocycle andpurity toforce componentrelations;do not reopen actualK/globalgenusSS/invariantIMAGE asindependentgates. Reviewdeferred. CURRENT:purityMUSTentercomponenttorsionproof;actualinvariantg_b nonzerocomponentsALLb. ONECb uniformlydetectsALLnonzeroH(g_b);marker/recompositionsearchclosed,unweightedpuritystillmissing. EntirefamilyNOTfullquotient.",
+    "claims": [
+      "GHAARLOCALNORMAL20261116",
+      "GHAARNERONCOMP20261116",
+      "GHAARCOMPTRANSFER20261116",
+      "GHAARUNIFORMMARKER20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/LOCAL_TATE_NORMAL_FORM_AND_NERON_COMPONENTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_neron_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/COHOMOLOGICAL_PULLBACK_AND_A_UNIFORM_ORIGINAL_MARKER.md",
+      "jacobian-followup/moment-vanishing-audit/haar_pullback_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_neron.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Neron lft",
+      "component torsion",
+      "Kummer comparison",
+      "local genus Tate",
+      "Jordan rank excess",
+      "all branches"
+    ],
+    "reviewed_claims": {
+      "GHAARLOCALNORMAL20261116": "d91d580cfbfaac0c",
+      "GHAARNERONCOMP20261116": "f3bd12bb7d113c4d",
+      "GHAARCOMPTRANSFER20261116": "fecac4db25151954",
+      "GHAARUNIFORMMARKER20261116": "7aa86685f7d25c95"
+    }
+  },
+  "METHOD-HAAR-ALGEBRAIC-BOUNDARY-SECTION-AND-FULL-BRANCH-RECOMPOSITION-20261116": {
+    "id": "METHOD-HAAR-ALGEBRAIC-BOUNDARY-SECTION-AND-FULL-BRANCH-RECOMPOSITION-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Construct the rank-one algebraic boundary section and retain Weil-restriction branches instead of scalar norm",
+    "when": "Continuing the COMPLETE exceptional intrinsic source-splitting theorem for every phase,without separate actual-K or fixed-genus campaigns.",
+    "use": "Every intrinsic source-unit gate now has a WRITTEN ALGEBRAIC boundary1-motive [Z->G_f] with ONE algebraic section sigma_f,from published BRS RELATIVE Picard/NS/gluing construction up to ISOGENY. H=(E(2))dual has rank1 lattice,full genus abelian part and finite-monodromy torus. Spread chosen generic data,not all fibre NS ranks;no blanket relative-equivalence/no-fixed-part import. Source splitting iff CONSTANT TYPE:[m]sigma_f=h(a) for a CONSTANT point of a constant semiabelian G0 and algebraic h. Constant nontorsion points are allowed;torsion/Hodge splitting or quotient-by-fixed-group alone is wrong. Any finite base cover reflects the gate by averaging. Under EVENTUAL PURITY this is full ALL-original-marker safety;no independent actual-K gate. For EVERY H the model is Weil restriction with DIAGONAL rank1 lattice and ALL-BRANCH section,NOT scalar norm. Genuine Long pure P=F(F+1) has SAME fixed bad marker tail(-1)^(n-1)(n!)\u00b2/(2n+1)!,while reciprocal branches have Norm1;full tuple moves. It is NOT right2O/2I invariant.",
+    "avoid": "Requiring torsion or Hodge splitting instead of constant TYPE;allowing a varying section of a constant group;collapsing Weil restriction to scalar norm;discarding Picard trivialization/triple gluing;asserting NS ranks never jump;promoting rational BRS0.1 to integral0.2 or importing an inapplicable no-fixed-part theorem.",
+    "boundary": "Both FULL exceptional MZ cases remain OPEN at proving this constant-type condition for EVERY exceptional eventually pure phase,or an actual admissible failure. This is a written finite geometric construction from a resolved pair,not implemented resolution/Picard/fixed-part code or a pure-locus constancy theorem. Full source/global and actual-kernel distinctions retained;no coefficient-ring promotion,machine-universal proof or raised review flags. SUBSEQUENT GENERAL NECESSITY: EVERY eventual-pure failure now REQUIRES NONZERO top Tate graph T=GrW4H2(F)(-1). If T0,the reduced fibre quotient V=E/L is pure genus weight5 and GLOBAL SS,with arbitrary genus/fixed part/compact-middle and nonsemisimple local monodromy. Intrinsic reduced xi_boundary vanishes at every puncture by the strict limit weight5-to6 argument. Any unit-retaining actual quotient is a direct summand when V GLOBAL SS,so its local unit retraction survives actual relations;PP0 and actual entire indecomposability close ALL original markers. This passes EVERY H without primitive purity. More generally with V GLOBAL SS,eventual-pure safety iff reduced xi_boundary,0=0. Finite Bad_boundary controls all roots with factor1/no cancellation;source-nonsplit H missing it cannot be eventually pure. Every pure failure with xi_boundary,0=0 must have V GLOBAL NONSEMISIMPLE,so BOTH genus and Tate are nonzero in a genuinely nonsplit extension. Reduced xi is NOT silently identified with full-source xi;global SS is NOT local SS. Full constant-TYPE sigma_f target stays unchanged. Both FULL exceptional cases remain OPEN;review deferred. SUBSEQUENT FULL CLOSURE SUPERSEDES the globalSS restriction and possible hiddenxi0 branch: FULL LOCAL CRITERION NOW PROVED for EVERY phase:under EVENTUAL PURITY,full ALL-original-marker safety iff REDUCED intrinsic xi_boundary,0=0,with NO globalSS ofV or local fibreSS. Hom(P_nontriv,W5E) fixed part is PURE0;Hodge evaluation gives canonical PURE5 lifted nontrivial socle C. Quotient byC preserves local unit test usingM4C=imageN. Remaining actual kernel intersectAbar is globallyTRIVIAL and lies inconstantfixedF;F intersectM4Ebar=L. A unit=Nx+kernel relation thereforehaszeroerror. Thus ANY GLOBAL unit-retaining quotient reflects LOCAL unit splitting at ALL punctures BEFORE purity,despite non-Hodge kernels. Arbitrary LOCAL quotients excluded. Actual local meromorphicfunctional/PP0 plus entireindecomposability closeseverymarker. Former hiddenxi0genus-Tatebranch is CLOSED,not a futuretask. FullTate invariantIMAGE carries theoneintrinsicclass. EveryH obeysall-root factor1tuple,nocancellation;underpureH,safetyiffrootsmissfiniteBad_boundary. Primitiveglobalsourcenonsplit plusmissingrootsforbidspureH;emptyfiniteBad+nonsplitexcludesALLdegrees. No pureproducer. Fullunreducedxi isNOTsubstituted. Both FULL exceptional casesOPEN atproving reducedxi0vanishing forEVERYexceptionaleventual-purephase,orexhibitinganactualadmissiblenonzeroclass. SUBSEQUENT LOCAL ALGEBRAIC REFINEMENT: LOCAL TATE NORMAL FORM AND NERON COMPONENT CRITERION: EVERY reducedE,EVERY puncture INCLUDING INFINITY,V splits LOCALLY P+T evenwhenGLOBALgenus-Tatecouplingnonsplit. StrictM4P=imageNP correctsEVERYtopTatelift;J_boundary=T^1 ENTIREoriginaleigen1topTate,NOT ALLTate/fullunreducedK. Unit-genusA locallysplitsbyweights5vs6. LocalE=P+E_T,N=N_P+rowbeta:T->L,rankexcess in{0,1} detectsxi;ANYe killingsemisimplepart usesrank(T_E^e-I)-rank(T_P^e-I). No localgenusSS/Hodgesplitting/globalSS assumed. Algebraic[Z->G_f] sigma_f hasxi_a=0 IFF TORSION NERON LFT COMPONENT,BEFOREpurity. IdentityR-points divisibleoverC,Kummerquotients=Phi/nPhi,Bettilogdivisiontorsorcomparison. SOME nonzero multiplemeetsidentitycomponent,NOTsectiontorsionoridentitywithoutmultiple;constant2allowed. Suppliedfinitepresentation givesrationalrelation-span/SNF test,NOTimplementedNeronproducer. Under EVENTUAL PURITY at0 theseareIFFfull ALL-original-marker safety andGLOBALconstantTYPE. EVERYH retainseveryroot/component/factor1,not scalarNorm. Wholeexceptionaltarget componenttorsiononENTIREpurelocus,or actualadmissiblepurefailure. Both FULL MZ cases remain OPEN;External review is DEFERRED and NOT the next task.",
+    "reopen_when": "Attack CONSTANT TYPE of the canonical algebraic sigma_f on the ENTIRE exceptional eventual-pure locus,or build an original admissible nonconstant-type pure phase with bad marker. Keep full Weil restriction across all H. Do not retry scalar norms,torsion-only criteria,extra-prefix campaigns or make external review the next task. Every remaining actual pure failure MUST have nonzero top Tate graph. Genus-only phases are safe in ALL degrees/all H;xi0-hidden failures require genuine global genus-Tate coupling. The full constant-TYPE target is not replaced by this necessary restriction. CURRENT FULL theorem CLOSES any hiddenxi0/genus-Tate/actualK prerequisite:target intrinsic REDUCED localTatexi0vanishing forEVERYexceptionaleventual-purephase,or actualadmissiblefailure. No globalSS condition remains. CURRENT exacttarget:torsionNeroncomponentforEVERYexceptionalpurephase;reducedJ=T^1 andlocalgenus-Tate splittingNOWPROVED,notfuturegates. Preserve fullunreducedcaveat/globalnonsplitpossibility.",
+    "claims": [
+      "GHAARBOUNDARYMOT20261116",
+      "GHAARSECTIONRECOMP20261116",
+      "GHAARSSLOCAL20261116",
+      "GHAARGRAPHNEC20261116",
+      "GHAARLOCALSOURCE20261116",
+      "GHAARLOCALALLH20261116",
+      "GHAARLOCALNORMAL20261116",
+      "GHAARNERONCOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_BOUNDARY_ONE_MOTIVE_AND_CONSTANT_SECTION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_motive_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/TATE_GRAPH_NECESSITY_AND_SEMISIMPLE_BOUNDARY_QUOTIENTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_graph_necessity_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/FULL_INTRINSIC_LOCAL_TATE_CRITERION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_local_source_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/LOCAL_TATE_NORMAL_FORM_AND_NERON_COMPONENTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_neron_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_motive.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "algebraic boundary1-motive",
+      "constant point",
+      "Picard complex",
+      "Weil restriction",
+      "diagonal lattice",
+      "norm cancellation"
+    ],
+    "reviewed_claims": {
+      "GHAARBOUNDARYMOT20261116": "25a35f5d8a5299e8",
+      "GHAARSECTIONRECOMP20261116": "45020a78a2809ffb",
+      "GHAARSSLOCAL20261116": "93eab6e6429def5c",
+      "GHAARGRAPHNEC20261116": "218391c1bd35ba14",
+      "GHAARLOCALSOURCE20261116": "a7755eb81b142fe9",
+      "GHAARLOCALALLH20261116": "2818511f3808c921",
+      "GHAARLOCALNORMAL20261116": "d91d580cfbfaac0c",
+      "GHAARNERONCOMP20261116": "f3bd12bb7d113c4d"
+    }
+  },
+  "METHOD-HAAR-COHOMOLOGICAL-PULLBACK-AND-UNIFORM-MARKER-20261116": {
+    "id": "METHOD-HAAR-COHOMOLOGICAL-PULLBACK-AND-UNIFORM-MARKER-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Transport nonzero components by ambient H3 and use one interval-functional original marker for all polynomial composites",
+    "when": "Testing whether exceptional invariance alone kills the local class,or transporting Long failure through an actual regular map and every polynomial recomposition.",
+    "use": "COHOMOLOGICAL COMPONENT TRANSPORT AND ONE UNIFORM ORIGINAL MARKER: ANYregularPhi withnonzeroACTUALH3scalar d preservesnonzerotargetreducedlocalxi/component,EVERYpuncture INCLUDING INFINITY,BEFOREpurity. CanonicalE mapexistsbecauseGLOBALnontrivpure4C4 mapsbyweightsintosourceLtrivialandzero. Bad_targetSUBSETBad_source,NOTreverse. EVERY exceptionalBezoutb hasINTEGRALH3degree2 viaGa-torsorbottomdegree nm/|Gamma|;normalizedJ=2W,notgenericfielddegree/rawnm. ActualLongg_b hasnonzerocomponentsat0,-1,rankexcess1atboth,ALLb. Thereforeexceptionalinvariance/perfect2IaloneCANNOTforcecomponenttorsion. PuritymustenterWHOLEproof. ONEfixedoriginalC=(J/d)*(1-Q)Phi,orC_b=W_b(1+Y_b),satisfiesh(C R(g))=integral_0^1 R(-t)dt forALLR. MugerTuset giveslimsuprootmarked>0 forEVERYnonzeroCOMPLEXpolynomialH,ALLdegrees,SAMEC. Infinitelymanynonzeroorders,NOTeveryorder. ALLnonzeroH(g_b) nonsafeandALLsourcesgloballyunitnonsplit. ANYunweightedeventualpureH(g_b),IFexists,isgenuineexceptionalfailurewithCbprovided;primitivepurityunneeded. No unweightedpureproducer/entirefamilyexclusion. This sufficientfamilyisNOTwholequotient. FulltargetstaysEVERYexceptionalpurephasecomponenttorsionoractualpureinvariantfailure. Jacobianweightretained,notunweightedpurity. Both FULL MZ cases remain OPEN;External review is DEFERRED and NOT the next task.",
+    "avoid": "Dropping nonzeroambientH3condition;confusingd withgenericfielddegree/rawnm/motiviclabel;claimingBadsets equal;droppingJacobianweight;markersearchforallH;claimingallmarkedordersnonzero;using arbitrarypositiveintervalmeasureinsteadofuniform;transferringHopfcanonicalmomentnumbers toprimitiveLongpullback;replacingwholequotienttargetwithfamily.",
+    "boundary": "BOTH COMPLETE exceptional MZ casesOPEN. ActualinvariantnonzerocomponentsareprovidedBEFOREpurity,notpurecounterexamples. No unweightedpureproducerorallfamilyexclusion. MugerTusetprimarytheoremreadinfull,nouniversalmachineverification/ringpromotion/newcampaign/reviewgate.",
+    "reopen_when": "Proveexceptionalinvariance PLUSactualunweightedpurity forcescomponenttorsionforEVERYphase,or actualinvariantpurefailure. For this sufficientfamily ONLYmissingconstructionstep isunweighted eventualpurityofsomeH(g_b);ONECb alreadyworksallH. Exclusionofthisfamilywouldnotsettlewholequotient. No b/H sweep.",
+    "claims": [
+      "GHAARCOMPTRANSFER20261116",
+      "GHAARUNIFORMMARKER20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/COHOMOLOGICAL_PULLBACK_AND_A_UNIFORM_ORIGINAL_MARKER.md",
+      "jacobian-followup/moment-vanishing-audit/haar_pullback_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_pullback.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "nonzero H3 pullback",
+      "uniform original marker",
+      "Muger Tuset",
+      "Neron component transport",
+      "Bezout maps",
+      "all polynomial composites"
+    ],
+    "reviewed_claims": {
+      "GHAARCOMPTRANSFER20261116": "fecac4db25151954",
+      "GHAARUNIFORMMARKER20261116": "7aa86685f7d25c95"
+    }
+  }
+}

@@ -1,5 +1,12 @@
 # All-degree obstruction for every base-preserving dual automorphism
 
+> The [rational-curve extension](CURVE_TRACE.md), `HC4MYGC1/2/3`, now
+> permits every polynomial base automorphism as well. It also closes
+> the standard graph eliminating p, with the stated relative affine
+> dual extension, and reduces its nonlinear-dual case to a globally
+> affine-dual Keller endpoint. The Hamiltonian and trace lemmas below
+> remain part of that proof.
+
 14 November 2026. **HC4MYGV2** closes every polynomial graph after an
 arbitrary dual automorphism over K[x,y], with unrestricted degrees and
 word lengths. It extends the [first-slice result](FIRST_SLICE_INVERTIBILITY.md)

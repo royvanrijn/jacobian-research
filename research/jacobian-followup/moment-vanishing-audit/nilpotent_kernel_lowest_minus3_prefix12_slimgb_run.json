@@ -1,0 +1,12 @@
+{
+  "status": "TIMEOUT",
+  "exit_code": null,
+  "time_limit_seconds": 60,
+  "memory_limit_bytes": 3221225472,
+  "elapsed_seconds": 60.088,
+  "algorithm": "exact QQ slimgb with later moments11,12",
+  "input_sha256": "ec8dd14c2d1147b0d9826a844788a581c2ebf1115561f6d49152818143ca1f64",
+  "output_bytes": 0,
+  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "conclusion": "Largest chart exclusion requires verified exact unit output; multiplier exports require independent identity checks."
+}

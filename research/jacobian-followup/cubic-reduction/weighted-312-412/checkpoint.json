@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "source_sha256": "57e33a1fce22805eaafab8cb2aa1078c2dad22b37d6981a0928139031a986928",
+  "models": [
+    {
+      "positive_weight": 3,
+      "input": "p3.json",
+      "input_sha256": "055729bd876084316e7bc2a719cefae57554b2085530b5c6fc433d184d0448e0",
+      "atoms": 15,
+      "generators": 26
+    },
+    {
+      "positive_weight": 4,
+      "input": "p4.json",
+      "input_sha256": "31e10ecd679dd11384570cb59416a914624387b2511247f3e1919f2171aa0647",
+      "atoms": 14,
+      "generators": 26
+    }
+  ],
+  "structural_identities_sha256": "320d722177c219f52d814bf36d8b7196487410fcffefda7e368441c504a06cad",
+  "old_timeouts_not_rerun": true
+}

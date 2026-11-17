@@ -1,0 +1,16 @@
+{
+  "created_date": "2026-11-17",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "sha256": {
+    "PROOF.md": "6b1d19140cbfd98d527240930fe8ca03d1829faf5c2e5e06ed789c2d989d7f02",
+    "README.md": "c2839e9a8213dc7104a92320a3b453580b1a6aadbe5f9321af3335c67c728a47",
+    "verify_certificate.py": "51e0851755cdbf2246b132a3cacea90b92e3e1c0ef1ccab3d43493b4c774ccbc",
+    "rod_local_taylor_quartic.py": "6d661a172d72fc8c0be9e97a61d13d49d17cc89a7b93427189011da3d784126a",
+    "rod_local_taylor_quintic.py": "08718c13a9e35d8c3ae4c5d30182c64398ff5074cf56be8fc87b6c92cb9537f9",
+    "rod_local_taylor_septic.py": "ebee269ec5ed3a78025d2763447f52186da52a09afd28303fcfc74194d24458f",
+    "rod_local_full_prefix28.py": "7efe37cd45076f5141f5f2708daa87f360c292e30a65832eceb94bae45832348",
+    "certificate_data.json": "bc17438be6954d88dcf0569f94cdf7fbe5cb7afa616cce16b78f27cfbe709194",
+    "verification.log": "b6b526c4047b021b2be4150d11cf5bc9e78702613356a40429866d1b988ad373"
+  }
+}

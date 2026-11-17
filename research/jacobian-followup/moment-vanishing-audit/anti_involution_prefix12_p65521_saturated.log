@@ -1,0 +1,23 @@
+
+--------------- INPUT DATA ---------------
+#variables                       6
+#equations                       6
+#invalid equations               0
+field characteristic    1073741827
+homogeneous input?               0
+signature-based computation      0
+monomial order                 DRL
+basis hash table resetting     OFF
+linear algebra option            2
+initial hash table size     131072 (2^17)
+max pair selection             128
+reduce gb                        1
+#threads                         1
+info level                       2
+generate pbm files               0
+------------------------------------------
+NOTE: Field characteristic is now corrected to 65521
+Error: not implemented yet (prime field of too low characteristic)
+------------------------------------------------------------------------------------
+msolve overall time           0.00 sec (elapsed) /  0.00 sec (cpu)
+------------------------------------------------------------------------------------

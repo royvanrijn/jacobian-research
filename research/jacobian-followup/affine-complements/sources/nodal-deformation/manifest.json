@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path_relative_to_affine_complements": "sources/nodal-deformation/dedieu-sernesi-author.pdf",
+      "url": "https://www.math.univ-toulouse.fr/~tdedieu/DSequigeneric.pdf",
+      "title": "Dedieu--Sernesi, Equigeneric and equisingular families of curves on surfaces, author version",
+      "used_statement": "Complete pages7-8: normal-sheaf deformation and obstruction spaces, relation to morphism spaces and absence of torsion for immersions. Complete pages10-11: Theorem2.8 and its proof, with distinct triple and tangent-pair arguments. The two-point-only eta1 use is derived for initially at-most-double-valued immersions, not claimed as their unrestricted nodal theorem.",
+      "bytes": 357593,
+      "sha256": "85486a62e3d7016cdb9b53c67e97f28bafe2cbf2a1c345efa8a24db58f586d70",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        7,
+        8,
+        10,
+        11
+      ],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+      "url": "https://researchers.ms.unimelb.edu.au/~norbury@unimelb/papers/orevkov.pdf",
+      "title": "Neumann--Norbury, The Orevkov invariant of an affine plane curve",
+      "used_statement": "Complete PDF2 Definition2/Theorem1 and complete proof PDF4-5: LCP preserves the Orevkov invariant. The end is preserved on a fixed compactification; no global moduli connectedness hypothesis is imported. The original tangential complement group is not asserted abelian.",
+      "bytes": 232604,
+      "sha256": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        4,
+        5
+      ],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "../jc2-r7-global-cover/sources/nori-1983.pdf",
+      "url": "https://www.numdam.org/article/ASENS_1983_4_16_2_305_0.pdf",
+      "title": "Nori, Zariski conjecture and related problems (1983)",
+      "used_statement": "Complete PDF28/printed331 Proposition3.27 and full proof: nodal union, transverse removed boundary and componentwise self-intersection greater than twice self-node count. Applied only AFTER the algebraic nodal deformation. Earlier WLT provenance retained in PF47.",
+      "bytes": 4546575,
+      "sha256": "1b848c19dcaaa016ff8070a7843cfd89db70cbbec3ce13cd9de080074739cc45",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        28
+      ],
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_claims": [
+    "PF2RULED46",
+    "PF2RULED47",
+    "PF2RULED48",
+    "PF2RULED56",
+    "PF2RULED58"
+  ],
+  "new_written_steps": [
+    "unobstructed immersed rational-map deformations on the fixed target compactification",
+    "eta1 two-point criterion under initial double-value hypothesis",
+    "eta>=2 unrestricted multiple-value nodal deformation and simultaneous union criterion",
+    "proper end isotopy and LCP verified without a global moduli connectedness assumption",
+    "normal-degree adjunction after deformation and full Orevkov quotient obstruction",
+    "whole quartic a_n<=1 for arbitrary contacts and all source rulings",
+    "all-degree sole-fold eta<=1, with eta1 forcing a triple value and d>=6"
+  ],
+  "original_complement_group_asserted_abelian": false,
+  "eta_nonpositive_excluded": false,
+  "all_Keller_packets_assumed_zero_excess": false,
+  "full_quartic_exclusion": false,
+  "independent_full_reproof": false,
+  "formal_verification": false,
+  "external_review": false
+}

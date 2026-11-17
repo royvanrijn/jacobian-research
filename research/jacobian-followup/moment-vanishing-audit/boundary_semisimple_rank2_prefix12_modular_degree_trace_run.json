@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 0.876,
+  "maximum_protocol_degree": 27,
+  "conclusion": "MODULAR ONLY; degree protocol is a performance hint, not a rational witness-degree theorem."
+}

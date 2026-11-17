@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+      "url": "https://arxiv.org/pdf/1207.5042v1",
+      "title": "Cochran--Tanner, Homology cobordism and Seifert fibered 3-manifolds, requested arXiv v1 PDF",
+      "bytes": 324837,
+      "sha256": "5fcab10871806ce8f3c9c70b3f2b06c6535a5e218a1aac56fd1de0a00a012704",
+      "complete_PDF_pages_visually_read": [
+        3,
+        4
+      ],
+      "printed_pages": [
+        3,
+        4
+      ],
+      "used_statement": "Section3 circle-bundle model and explicit orientable fundamental-group presentation, abelianized and quotiented by regular fibre and boundary loops in the new proof. No homology-cobordism or linking-realizability theorem imported.",
+      "source_presentation_imported_not_independently_reviewed_elsewhere": true
+    }
+  ],
+  "retained_inputs": [
+    "PF61 source lattice and canonical mark",
+    "PF65 primitive canonical-vector generator bound",
+    "PF69 integral gluing/base-genus quotient and fibre-orbit cone action",
+    "PF63 complete periodic permutation census"
+  ],
+  "failed_download": {
+    "url": "https://repository.rice.edu/bitstreams/891c5230-91aa-4e62-8574-3655c88c4a92/download",
+    "result": "empty file; not used as PDF or primary evidence",
+    "repository_relative_path": "tmp/wright70/rice-download-response.html"
+  }
+}

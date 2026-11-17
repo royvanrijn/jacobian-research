@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/EFFECTIVE_POINTWISE_EXCEPTIONAL_HAAR_CERTIFICATES.md",
+  "proof_sha256": "5b7d780c56f84e9f07a50be92a9d68bb5f0edae2ec5ea3b9eb36fdc135d12e2d",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_exceptional_haar_pointwise.py",
+  "checker_sha256": "abe6e47e820d24e4f723ed29f63654c0c6d7978fa49b51e6225a31c0542985cf",
+  "receipt": "jacobian-followup/moment-vanishing-audit/haar_pointwise_verification.json",
+  "receipt_sha256": "e983e3f56817d1964b8bbc6d467de4b055ce280aa97f5623920f34d9aed5648e",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/GAUSSIAN_RADIAL_TRANSFER_AND_EXCEPTIONAL_UNIFORMITY.md",
+      "sha256": "b2e468ccb68f4e904eceb8cd9015840695998213403be0dda1a3ea4c6bf7c1a0",
+      "use": "ALL-order canonicalhomolift/radialfactor/allGaussianmarkers and ORIGINALfiltrationtransfer. Newadapterimplementspointwisecertificateuse;doesNOTuseitsoldreview-nextparagraphascurrentinstruction."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md",
+      "sha256": "f9e9c716967669571dab994e4418a2d35900aa85f5d01d88c9bc2c713ef5a835",
+      "use": "SeparatelyownedimplementedGaussianwhole-sourceproducer;ORIGINALIBP/finiteACTUALjets/indicialbounds/ALLamplituderecurrencecertificate;fullsourcecompletenessnotneededfordecision."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/gaussian_source_hom_producer.py",
+      "sha256": "894f60d1977efe347881b0d514ce88659d5556b4cce72a710b9acced8521bd1a",
+      "use": "Backend importedUNCHANGED;exactField,decide,verify_algebraic_parts,originalselectedunitperiod. No duplicatedGaussianmechanism."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/verify_exceptional_sl2.py",
+      "sha256": "f55097d700fa72df143b9e71126b8ebdcfd02cc8cde70e35c57f91111b98eafd",
+      "use": "Exactstandard2O/2Iquaterniongeneratorsandfinitegroupclosure;groupfieldcomposituminputinvarianceandfixedmarkerorbitpresentation."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/ENTIRE_HAAR_PERIODS_AND_EXCEPTIONAL_DECISION.md",
+      "sha256": "358cae388137f595115162c181c385f9552b84d828052230eb0a920c71d73a8b",
+      "use": "Theoreticalpointwise/familydecisiondistinction;HaarentirenessandALLoriginalmarkers. NewpointwiseimplementationdoesNOTclaimoldjointsourceorfamilyproducerimplemented."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/LOGARITHMIC_JETS_AND_SPARSE_ALL_RING_SAFETY.md",
+      "sha256": "4363280c1f346b62086d090f744367d317389a55455946ac30c55eb5ba298580",
+      "use": "Four/sixallringclosureandALL-supportcapacity/fullresidualconstraintsretained;newalgorithmcoverssuppliedphaseswithoutweightcap,notfullMZproof."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/SATURATION_OF_REGULAR_PERIODS_AND_ACTUAL_BOUNDARY_EXTENSION.md",
+      "sha256": "680ce2dee220b383a3206dcf8b0d3ef14cd468fb29ee029717dfc74b4e70734d",
+      "use": "Intrinsicactualepsilon_f/fullmarkedsourceobligationretained;pointwisealgorithmdoesNOTproveuniversalpurity=>epsilon0."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/exceptional_haar_pointwise_producer.py",
+      "sha256": "4120bcd01fde636a632cba35f1d724f4ed451c10c5e758f83053a0c72b1e1521",
+      "use": "NeworiginalHaaradapter,canonicalquotientlift,homogeneousmarkerreturn,purityseparation,cutofftransfer,failclosedCLI."
+    }
+  ],
+  "primary_sources": [],
+  "primary_import_policy": "No new literature theorem imported. Retained radial/wholeGaussian/group/source theorems used through canonical audits. Newquotientadapter,homogeneousfixedmarkerreturn,independentunitselector,inactiveWickfactorizationandoriginalfiltrationcertificateinterpretationprovedexplicitly. GaussianbackendUNMODIFIED;newCASconstructionsZERO. No externalassurancepromotion.",
+  "reused_Gaussian_certificates": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/zero/result.json",
+      "sha256": "7baee4559d0f86b76b9878eeb9411641635d1bdb269de98e70cb8a3bc128ea81"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/gaussian_source_hom_examples/constant/result.json",
+      "sha256": "5f1186a5ab71d2c3f512a522bd3437facc3f6598ba1a237afa2d179d30aec035"
+    }
+  ],
+  "new_adapter_examples": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/haar_pointwise_examples/2O_zero.json",
+      "sha256": "bf8c7a92156fcf6a4bb63267070f5aa8fb3587d2cfe41239ab05f99714bc8c16",
+      "status": "DECIDED"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/haar_pointwise_examples/2O_constant.json",
+      "sha256": "acf1485ef3af11f64d02165bbba7a940b0f5e7a4a440c727f7e2d4cc0038525d",
+      "status": "DECIDED"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/haar_pointwise_examples/2O_sphere_zero.json",
+      "sha256": "43bd96a037406765775bfc1ffdf2d19c04c824fa19a69fa31908101ef82d2422",
+      "status": "DECIDED"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/haar_pointwise_examples/2I_zero.json",
+      "sha256": "7a08c5f6ef1c2fbc1a03709d6cffd57001e0facaeb7aa7096b974cb2a461fa08",
+      "status": "DECIDED"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/haar_pointwise_examples/2I_constant.json",
+      "sha256": "d2c3268cd36dac3bb1e78445fb4c756483ca9e5895fd1b2de7d21ea7935eaadb",
+      "status": "DECIDED"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/haar_pointwise_examples/2I_sphere_zero.json",
+      "sha256": "be538ac2093cc28a4e893e253f2f366d87cccb60cdb7c087750d04c78664c13a",
+      "status": "DECIDED"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/haar_pointwise_examples/2O_degree8_preparation.json",
+      "sha256": "d1b49a863c036bb801104c38ddca7e8817806896995b1230882e0084c593c296",
+      "status": "PREPARED only"
+    }
+  ],
+  "new_written_arguments": [
+    "Executablecanonical spherequotientreduction/evenhomoliftwithANY-degree exactgroupinvariancechecks.",
+    "ONEhomogeneousbadGaussianmonomialhasEXACTsameaveragehomogeneity,soONEoriginalregularinvariantmarkerandnonzeroradialfactorinEVERYorder;originaldegreeupperboundretained.",
+    "SelectedUNITperioddecidespurityindependentlyofzeroHom;unsafeunpurecontrolnotMZfailure.",
+    "ActivecoordinatecompressioncoversALLmarkersbyindependentWickfactorization;safe numericalcutofftransferswithORIGINALfiltration."
+  ],
+  "essential_boundaries": [
+    "BOTHFULLMZcasesOPEN. PointwisecompletionisNOTuniversalpurity=>epsilon0/failureexistenceproof.",
+    "QQ/simple-numberfieldexactinputsinfixedquaternionmodels;arbitrarytranscendental/familystratification/ordinaryidealproducersNOTimplemented.",
+    "Onlysixreusedzero/constantcontrols,newnonconstantdegree8OpreparationNOTsafetydecision;ZEROnewCASconstructions/nocampaign.",
+    "MarkeraveragingonlyAFTERphaseinvariance;phaseaveraging/normpurityNOTused.",
+    "Gaussianbackendseparatelyowned/UNCHANGED;allassuranceflagsfalse/reviewdeferred."
+  ]
+}

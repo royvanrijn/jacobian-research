@@ -1,0 +1,125 @@
+{
+  "METHOD-HAAR-TATE-GRAPH-NECESSITY-AND-SEMISIMPLE-QUOTIENT-20261116": {
+    "id": "METHOD-HAAR-TATE-GRAPH-NECESSITY-AND-SEMISIMPLE-QUOTIENT-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Eliminate genus-only failures and pass local unit retractions through actual quotients using global semisimplicity",
+    "when": "Pursuing the COMPLETE exceptional constant-section theorem with all original markers and polynomial degrees,after the algebraic1-motive construction.",
+    "use": "EVERY eventual-pure failure now REQUIRES NONZERO top Tate graph T=GrW4H2(F)(-1). If T0,the reduced fibre quotient V=E/L is pure genus weight5 and GLOBAL SS,with arbitrary genus/fixed part/compact-middle and nonsemisimple local monodromy. Intrinsic reduced xi_boundary vanishes at every puncture by the strict limit weight5-to6 argument. Any unit-retaining actual quotient is a direct summand when V GLOBAL SS,so its local unit retraction survives actual relations;PP0 and actual entire indecomposability close ALL original markers. This passes EVERY H without primitive purity. More generally with V GLOBAL SS,eventual-pure safety iff reduced xi_boundary,0=0. Finite Bad_boundary controls all roots with factor1/no cancellation;source-nonsplit H missing it cannot be eventually pure. Every pure failure with xi_boundary,0=0 must have V GLOBAL NONSEMISIMPLE,so BOTH genus and Tate are nonzero in a genuinely nonsplit extension. Reduced xi is NOT silently identified with full-source xi;global SS is NOT local SS. Full constant-TYPE sigma_f target stays unchanged.",
+    "avoid": "Passing a SOURCE local retraction through an arbitrary actual kernel;discarding the GLOBAL SS quotient hypothesis;assuming local SS from global SS;identifying reduced xi with full xi;using M=W for a nontrivial genus degeneration;asserting top graph always vanishes or counting a finite control as universal proof;turning a root-bad-value condition into a purity producer.",
+    "boundary": "Both FULL exceptional cases remain OPEN at constant TYPE of canonical sigma_f for EVERY exceptional eventual-pure phase,or original admissible failure. Graph-free phases are fully closed with arbitrary genus;all failures require nonzero graph. The hidden-xi-zero branch requires genuine global genus-Tate coupling. This does not remove the known unbounded SAFE Tate examples or prove exceptional graph vanishing. No all-ring topological promotion/universal machine proof/raised review flags.",
+    "reopen_when": "Attack the ENTIRE exceptional moving-section locus,now necessarily with nonzero Tate graph:intrinsic reduced xi0 obstruction,or xi0=0 with genuinely nonsplit global genus-Tate quotient. Retain all original markers and H roots. Do not reopen genus-only/no-top-graph or independent actual-K campaigns;external review deferred.",
+    "claims": [
+      "GHAARSSLOCAL20261116",
+      "GHAARGRAPHNEC20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/TATE_GRAPH_NECESSITY_AND_SEMISIMPLE_BOUNDARY_QUOTIENTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_graph_necessity_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_graph_necessity.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Tate graph necessary",
+      "arbitrary genus safety",
+      "global semisimple quotient",
+      "local unit functional",
+      "actual relations",
+      "all polynomial composites"
+    ],
+    "reviewed_claims": {
+      "GHAARSSLOCAL20261116": "93eab6e6429def5c",
+      "GHAARGRAPHNEC20261116": "218391c1bd35ba14"
+    }
+  },
+  "METHOD-HAAR-ALGEBRAIC-BOUNDARY-SECTION-AND-FULL-BRANCH-RECOMPOSITION-20261116": {
+    "id": "METHOD-HAAR-ALGEBRAIC-BOUNDARY-SECTION-AND-FULL-BRANCH-RECOMPOSITION-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Construct the rank-one algebraic boundary section and retain Weil-restriction branches instead of scalar norm",
+    "when": "Continuing the COMPLETE exceptional intrinsic source-splitting theorem for every phase,without separate actual-K or fixed-genus campaigns.",
+    "use": "Every intrinsic source-unit gate now has a WRITTEN ALGEBRAIC boundary1-motive [Z->G_f] with ONE algebraic section sigma_f,from published BRS RELATIVE Picard/NS/gluing construction up to ISOGENY. H=(E(2))dual has rank1 lattice,full genus abelian part and finite-monodromy torus. Spread chosen generic data,not all fibre NS ranks;no blanket relative-equivalence/no-fixed-part import. Source splitting iff CONSTANT TYPE:[m]sigma_f=h(a) for a CONSTANT point of a constant semiabelian G0 and algebraic h. Constant nontorsion points are allowed;torsion/Hodge splitting or quotient-by-fixed-group alone is wrong. Any finite base cover reflects the gate by averaging. Under EVENTUAL PURITY this is full ALL-original-marker safety;no independent actual-K gate. For EVERY H the model is Weil restriction with DIAGONAL rank1 lattice and ALL-BRANCH section,NOT scalar norm. Genuine Long pure P=F(F+1) has SAME fixed bad marker tail(-1)^(n-1)(n!)\u00b2/(2n+1)!,while reciprocal branches have Norm1;full tuple moves. It is NOT right2O/2I invariant.",
+    "avoid": "Requiring torsion or Hodge splitting instead of constant TYPE;allowing a varying section of a constant group;collapsing Weil restriction to scalar norm;discarding Picard trivialization/triple gluing;asserting NS ranks never jump;promoting rational BRS0.1 to integral0.2 or importing an inapplicable no-fixed-part theorem.",
+    "boundary": "Both FULL exceptional MZ cases remain OPEN at proving this constant-type condition for EVERY exceptional eventually pure phase,or an actual admissible failure. This is a written finite geometric construction from a resolved pair,not implemented resolution/Picard/fixed-part code or a pure-locus constancy theorem. Full source/global and actual-kernel distinctions retained;no coefficient-ring promotion,machine-universal proof or raised review flags. SUBSEQUENT GENERAL NECESSITY: EVERY eventual-pure failure now REQUIRES NONZERO top Tate graph T=GrW4H2(F)(-1). If T0,the reduced fibre quotient V=E/L is pure genus weight5 and GLOBAL SS,with arbitrary genus/fixed part/compact-middle and nonsemisimple local monodromy. Intrinsic reduced xi_boundary vanishes at every puncture by the strict limit weight5-to6 argument. Any unit-retaining actual quotient is a direct summand when V GLOBAL SS,so its local unit retraction survives actual relations;PP0 and actual entire indecomposability close ALL original markers. This passes EVERY H without primitive purity. More generally with V GLOBAL SS,eventual-pure safety iff reduced xi_boundary,0=0. Finite Bad_boundary controls all roots with factor1/no cancellation;source-nonsplit H missing it cannot be eventually pure. Every pure failure with xi_boundary,0=0 must have V GLOBAL NONSEMISIMPLE,so BOTH genus and Tate are nonzero in a genuinely nonsplit extension. Reduced xi is NOT silently identified with full-source xi;global SS is NOT local SS. Full constant-TYPE sigma_f target stays unchanged. Both FULL exceptional cases remain OPEN;review deferred.",
+    "reopen_when": "Attack CONSTANT TYPE of the canonical algebraic sigma_f on the ENTIRE exceptional eventual-pure locus,or build an original admissible nonconstant-type pure phase with bad marker. Keep full Weil restriction across all H. Do not retry scalar norms,torsion-only criteria,extra-prefix campaigns or make external review the next task. Every remaining actual pure failure MUST have nonzero top Tate graph. Genus-only phases are safe in ALL degrees/all H;xi0-hidden failures require genuine global genus-Tate coupling. The full constant-TYPE target is not replaced by this necessary restriction.",
+    "claims": [
+      "GHAARBOUNDARYMOT20261116",
+      "GHAARSECTIONRECOMP20261116",
+      "GHAARSSLOCAL20261116",
+      "GHAARGRAPHNEC20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_BOUNDARY_ONE_MOTIVE_AND_CONSTANT_SECTION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_motive_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/TATE_GRAPH_NECESSITY_AND_SEMISIMPLE_BOUNDARY_QUOTIENTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_graph_necessity_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_motive.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "algebraic boundary1-motive",
+      "constant point",
+      "Picard complex",
+      "Weil restriction",
+      "diagonal lattice",
+      "norm cancellation"
+    ],
+    "reviewed_claims": {
+      "GHAARBOUNDARYMOT20261116": "25a35f5d8a5299e8",
+      "GHAARSECTIONRECOMP20261116": "45020a78a2809ffb",
+      "GHAARSSLOCAL20261116": "93eab6e6429def5c",
+      "GHAARGRAPHNEC20261116": "218391c1bd35ba14"
+    }
+  },
+  "METHOD-HAAR-INTRINSIC-SOURCE-SPLITTING-IFF-FULL-SAFETY-20261116": {
+    "id": "METHOD-HAAR-INTRINSIC-SOURCE-SPLITTING-IFF-FULL-SAFETY-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Close the actual relation gate by admissible fixed part and a local functional on the actual Borel image",
+    "when": "Pursuing the COMPLETE exceptional MZ theorem for every phase and every original marker after constant-genus reduction.",
+    "use": "Under EVENTUAL PURITY,full ALL-original-marker safety iff intrinsic GLOBAL boundary source unit SPLITS. Mixed fixed part on W5E AND its DUAL gives canonical Hodge complement C5 and ADMISSIBLE residual V. Finite LOCAL monodromy at every P1 puncture follows from relative M=W plus split unit;GLOBAL handle translations may remain. Compose actual FUNCTION module M->actual quotient N->local meromorphic germs->PP0 to split the actual Borel unit. Actual K need NOT be Hodge compatible,and N need NOT embed as scalar functions. This proves u outsideR+K automatically for genuine actual kernels under eventual purity;it supersedes the prior separate residual-K gate. EVERY eventually pure H(f) safe iff primitive source unit splits. In source-split branch ANY actual rank>1,semisimple OR NOT,forbids ALL eventual-pure H;rank1 has unique safe centre c,H(c)=0. Source nonsplit certifies all existing pure composites fail,without producing one.",
+    "avoid": "Inferring finite GLOBAL monodromy or a global unit retraction merely from finite LOCAL monodromy;declaring actual kernels Hodge;embedding a quotient into scalar functions;using an arbitrary abstract translation/K model as an actual eventually pure phase;asserting M=W before checking zero monodromy on ALL grades and existence;discarding dual fixed part or good boundary hypotheses.",
+    "boundary": "Both FULL exceptional cases remain OPEN at proving intrinsic source-unit splitting for EVERY exceptional eventually pure phase,or realizing an actual admissible nonsplit pure failure. There is NO separate residual-K gate under eventual purity. Constant genus,R,K need not vanish;no pure producer,arbitrary-ring topological promotion or machine-universal proof. Fixed-part theorem is a named deep primary import. Long remains nonexceptional;review deferred. ALGEBRAIC GEOMETRIC PRODUCER NOW SUPPLIED: Every intrinsic source-unit gate now has a WRITTEN ALGEBRAIC boundary1-motive [Z->G_f] with ONE algebraic section sigma_f,from published BRS RELATIVE Picard/NS/gluing construction up to ISOGENY. H=(E(2))dual has rank1 lattice,full genus abelian part and finite-monodromy torus. Spread chosen generic data,not all fibre NS ranks;no blanket relative-equivalence/no-fixed-part import. Source splitting iff CONSTANT TYPE:[m]sigma_f=h(a) for a CONSTANT point of a constant semiabelian G0 and algebraic h. Constant nontorsion points are allowed;torsion/Hodge splitting or quotient-by-fixed-group alone is wrong. Any finite base cover reflects the gate by averaging. Under EVENTUAL PURITY this is full ALL-original-marker safety;no independent actual-K gate. For EVERY H the model is Weil restriction with DIAGONAL rank1 lattice and ALL-BRANCH section,NOT scalar norm. Genuine Long pure P=F(F+1) has SAME fixed bad marker tail(-1)^(n-1)(n!)\u00b2/(2n+1)!,while reciprocal branches have Norm1;full tuple moves. It is NOT right2O/2I invariant. Both full exceptional cases OPEN;universal constant type and computational producer not supplied. SUBSEQUENT GENERAL NECESSITY: EVERY eventual-pure failure now REQUIRES NONZERO top Tate graph T=GrW4H2(F)(-1). If T0,the reduced fibre quotient V=E/L is pure genus weight5 and GLOBAL SS,with arbitrary genus/fixed part/compact-middle and nonsemisimple local monodromy. Intrinsic reduced xi_boundary vanishes at every puncture by the strict limit weight5-to6 argument. Any unit-retaining actual quotient is a direct summand when V GLOBAL SS,so its local unit retraction survives actual relations;PP0 and actual entire indecomposability close ALL original markers. This passes EVERY H without primitive purity. More generally with V GLOBAL SS,eventual-pure safety iff reduced xi_boundary,0=0. Finite Bad_boundary controls all roots with factor1/no cancellation;source-nonsplit H missing it cannot be eventually pure. Every pure failure with xi_boundary,0=0 must have V GLOBAL NONSEMISIMPLE,so BOTH genus and Tate are nonzero in a genuinely nonsplit extension. Reduced xi is NOT silently identified with full-source xi;global SS is NOT local SS. Full constant-TYPE sigma_f target stays unchanged. Both FULL exceptional cases remain OPEN;review deferred.",
+    "reopen_when": "Prove the GLOBAL source unit splits on the ENTIRE exceptional eventual-pure locus,or construct a genuine original admissible failure. Retain every marker,branch and H degree. Do not reopen actual-K,fixed-genus or deeper-prefix campaigns as separate prerequisites;review remains deferred until a major endpoint. Current full target is constant type of ONE geometric algebraic boundary section for EVERY exceptional eventually pure phase,not scalar norm;the all-branch Weil-restriction law retains every H. Every remaining actual pure failure MUST have nonzero top Tate graph. Genus-only phases are safe in ALL degrees/all H;xi0-hidden failures require genuine global genus-Tate coupling. The full constant-TYPE target is not replaced by this necessary restriction.",
+    "claims": [
+      "GHAARINTRINSICSAFE20261116",
+      "GHAARINTRINSICCOMP20261116",
+      "GHAARBOUNDARYMOT20261116",
+      "GHAARSECTIONRECOMP20261116",
+      "GHAARSSLOCAL20261116",
+      "GHAARGRAPHNEC20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/INTRINSIC_SOURCE_SPLITTING_AND_FULL_HAAR_SAFETY.md",
+      "jacobian-followup/moment-vanishing-audit/haar_intrinsic_safety_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_BOUNDARY_ONE_MOTIVE_AND_CONSTANT_SECTION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_motive_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/TATE_GRAPH_NECESSITY_AND_SEMISIMPLE_BOUNDARY_QUOTIENTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_graph_necessity_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_intrinsic_safety.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "source splitting iff safety",
+      "mixed fixed part",
+      "dual invariant pairing",
+      "admissibility",
+      "actual Borel retraction",
+      "all polynomial composites"
+    ],
+    "reviewed_claims": {
+      "GHAARINTRINSICSAFE20261116": "2e37ad62e89795e2",
+      "GHAARINTRINSICCOMP20261116": "fc00eb4fd27f0183",
+      "GHAARBOUNDARYMOT20261116": "25a35f5d8a5299e8",
+      "GHAARSECTIONRECOMP20261116": "45020a78a2809ffb",
+      "GHAARSSLOCAL20261116": "93eab6e6429def5c",
+      "GHAARGRAPHNEC20261116": "218391c1bd35ba14"
+    }
+  }
+}

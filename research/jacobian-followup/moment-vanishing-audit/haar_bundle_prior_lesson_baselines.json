@@ -1,0 +1,75 @@
+{
+  "METHOD-WEIGHTED-TORUS-COVERS-AND-ALL-ZERO-WEIGHT-TRIPLES-20261116": {
+    "id": "METHOD-WEIGHTED-TORUS-COVERS-AND-ALL-ZERO-WEIGHT-TRIPLES-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use weighted torus curves to close every zero-containing triple and keep the FULL residual preservation obligation explicit",
+    "when": "Unequal opposite torus weights plus a neutral term,or a proposed full exceptional compact-period bridge.",
+    "use": "ALL ZERO-CONTAINING THREE-WEIGHT SECTORS NOW CLOSED,ALL DEGREES/RINGS: on BOTH exceptional quotients,P=p+U+V of weights0,a,-b,a,b>0,g=gcdab,r=a/g,s=b/g,M=r+s. Exact balanced q=U^s V^r. Normalized weighted torus curve A^s B^r=q,S=p+A+B,ORIGINAL Theta=Omega dA/(rA),has compact rational cycle mass1 and EVERY EXACT ORIGINAL UNWEIGHTED polynomial moment. Full t^r=q branched-cycle trace keeps ALL components;no marker/weight transfer. Actual charged minimum degrees8/12 force sphereD_q/M>=4/6. Orbit6/12 anddiscrepancy give ALL-valuation stronger bound k+1+pole(q)/M>0. Resolve[1:p^M:q]:q-dominant strict charts rootq and etale sheets, p-dominant charts have ONLY ONE nonzero SIMPLE critical value c=s^s*r^r/M^M. Its doublebranch v2=eta+f L(S,f),f1/p,partialSLunit,becomesSNCafterprincipalizing(f,eta); retained half-polep bound controlscorners. Finite monomial normalization has log-volume rayorder v(x)+v(y)-1>=0. Proper auxiliary ORIGINAL-volume model therefore excludes ALL nonzero H(P) ifU,Vnonzero. FIELD all-H law H(P)eventpure IFF H0 OR [UV0,p=c constant,Hc0],all safe. Over EVERY commutative C-algebra,Peventpure IFF p ANDq NILPOTENT; ifp^nu0,q^kappa0,fullmarkercutoff m>=nu-1+M*kappa+ceil(BQ/minab). SAME-SIGN charged terms instead require onlyp nilpotent and areone-sided safe. Hence EVERY support contained{0,a,b} isCLOSED,notonlysymmetric. A full failure musthave>=4weights OR THREE WITH NO ZERO afterEVERYautomorphism/torus;zero-free threeweights NOT closed. FULL target remains everyactualpurephase correctedlocalorders0,oractualinvariantpurefailurefixedoriginalmarker. MissingFULLbridge explicitly: coverEVERYresidualLaurentphase by ALL-marker safety certificate OR proper original-volume period preserving h(Rf)forEVERYR; alternatively preserve FULL actualunit/markedmodule andglobalrelations toforceorders0 underunweightedpurity. Multi-term/torsor-section poles andcollidingcriticalbranches NOT controlled;scalarCauchymatchingaloneinsufficient. Originalsafeweightphasesforbidblanketpropermodels. Directownership FULLexceptionalMZ;Gaussianthread ownsformal-symbol/rational-slope/effectivity audits,usedasinputsnotduplicated. Both FULL MZ cases remain OPEN;External review is DEFERRED and NOT the next task.",
+    "avoid": "Assuming arbitraryfractionalneutralheightbounds;omittingcyclicbasecomponents/branchcycletransfer;claiming allthreeweightsclosed;using scalarCauchymatchingforfullmarkersafety;propermodelsforallpuresafephases;duplicatingGaussianBernsteineffectivity or treating restricted closures asfullcompletion.",
+    "boundary": "BOTH full exceptional MZcasesOPEN. Every zero-containing threeweight sectorclosedALLdegrees/rings;zero-free triples andlargersupportsremain. Fullcoverage/preservationlemmaNOTproved. Fieldall-H lawandringphase-nilpotencelawdifferent. Internalproof/finitecontrols,nouniversal machineverification/externalreview.",
+    "reopen_when": "DoNOTrequeuezero-containingtriples/symmetricorunequalneutralcircuits. NextFULLobligation:coverEVERYresidualmixedphasebyALL-markersafetycertificateORproperoriginal-volumeALL-polynomialmomentmodel,orforcecorrectedorders0throughFULLactualglobalunit/markedmodule. Neednewcontrolforsectionpoles/multiplecriticalbranches;oractualinvariantpurefailure. ReviewDEFERRED,notnexttask.",
+    "claims": [
+      "GHAARWEIGHTEDCOVER20261116",
+      "GZEROWEIGHTTRIPLES20261116",
+      "GZEROWEIGHTRINGSAFE20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/WEIGHTED_TORUS_COVERS_AND_ALL_ZERO_WEIGHT_TRIPLES.md",
+      "jacobian-followup/moment-vanishing-audit/haar_weighted_conic_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/exceptional_mz_ownership_20261116.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_weighted_conic.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "weighted torus curve",
+      "unequal weights",
+      "zero-containing triples",
+      "full coverage lemma",
+      "nilpotence",
+      "original unweighted moments"
+    ],
+    "reviewed_claims": {
+      "GHAARWEIGHTEDCOVER20261116": "814de4792c270a71",
+      "GZEROWEIGHTTRIPLES20261116": "8f6d7682696d63f5",
+      "GZEROWEIGHTRINGSAFE20261116": "ba84a1f95ab61ff2"
+    }
+  },
+  "METHOD-HAAR-ACTUAL-TORUS-CORRECTIONS-AND-RAMIFIED-VALUATIONS-20261116": {
+    "id": "METHOD-HAAR-ACTUAL-TORUS-CORRECTIONS-AND-RAMIFIED-VALUATIONS-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Correct the actual section into its generic torus,then normalize all character valuations by the splitting-cover index",
+    "when": "Turning the full Neron component criterion into actual Picard gluing valuations,including nonsplit extensions/bad abelian reduction and every ramified polynomial recomposition.",
+    "use": "ACTUAL TORUS CORRECTION NOW PROVED forEVERYcanonicalsection:correctedHN Props1.1.3/3.3.1 giveG0R->A0R SURJECTIVE andactualPhiT->PhiG exactwithtorsionkernel. SplitACTUALgenericT hasfreePhiT,soINJECTIVEfinitecokernelPhiA. Killabeliancomponentbyn,lift[n]pi(sigma) tob inG0R,then t=[n]sigma-b isACTUALtoruspoint. ALLcharacterorders/(e*n) onz=u^e givecanonicalv independentofb/n/furthercover,basisGL/isogenycompatible. Characters evaluatedonT,needNOTextendG;GENERICtorusnotlargerspecialtorusfromabeliandegeneration. v liesORIGINALI-invariantcocharspaceandidentifiesPhiGQ;no goodA/splitGneeded. UnderEVENTUAL PURITY at0 FULL ALL-original-marker safetyIFFALLtheseordersZERO,equivalentlysigma inmaxquasicompactNeronopen,NOTsectiontorsionoridentitywithoutmultiple. WHOLEremainingimplication:exceptionalinvariancePLUSUNWEIGHTEDpurity forcesEVERYactualPicardgluingcorrectedorder0,oractualinvariantpurefailure. Correctedtheoremguaranteesidentitylift,NOTvanishingorimplementedproducer. EVERYH normalizedsplitbranches have e_a copiesv_a/e_a;within-cycleSUMrecoversintrinsicfactor1,no scalarNorm/cross-rootcancellation. Existingactualallbnonzerocomponents/ONEuniformmarkerallH retained;familyNOTwholequotient,no unweightedpureproducer. Both FULL MZ cases remain OPEN;External review is DEFERRED and NOT the next task.",
+    "avoid": "UsingflawedBX96Lemma4.2;assumingGsplit/Apotentialgood;charactersofGorNeronspecialtorus replacingactualT;forgettingb ordivisionsn/e;entire splitrankinsteadoforiginalinvariants;finitecomponenttorsionforbidden;scalarNormacrossdirections;factor1pernormalizedbranch;rigiduniformizinggroupdeclaredalgebraic;claimingpure-locusvanishingfromtheexistencelift.",
+    "boundary": "Both COMPLETE exceptional MZcasesOPEN. Exactall-phasevaluationrealization,NOTpurity=>orders0. CorrectedHNprimaryinputsread;no generalidentitylift/Neronproducer,pureproducer,ringpromotion/universalmachineproof/newcampaign/reviewgate.",
+    "reopen_when": "UseACTUALPicard/NS/trivializationcocycle tocontrolt=[n]sigma-b andproveUNWEIGHTEDpurity forcesALLcharacterorders0forEVERYexceptionalphase,oractualinvariantpurefailure. Do notreplacewholequotientbyBezoutfamilyornewmarker/Manincouplingcampaign;goodreductionisNOTneeded.",
+    "claims": [
+      "GHAARTORICCORR20261116",
+      "GHAARVALUERECOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/ACTUAL_TORUS_CORRECTIONS_AND_RAMIFIED_COMPONENT_VALUATIONS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_toric_correction_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_toric_correction.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "actual torus correction",
+      "Neron identity lift",
+      "Halle Nicaise corrected exactness",
+      "ramified valuations",
+      "all branches",
+      "component boundedness"
+    ],
+    "reviewed_claims": {
+      "GHAARTORICCORR20261116": "4fbc69836b94cdb4",
+      "GHAARVALUERECOMP20261116": "50a479d83e4aecd5"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED132",
+  "sources": [
+    {
+      "path": "../cross-programme-connections/INWARD_COUPLED_RESTRICTIONS_2026_11_16.tex",
+      "url": "retained:coordinator-handoff",
+      "used": "Sections1-2 low-Euler cyclicity and decorated tower deduction; other sections not adopted.",
+      "bytes": 15458,
+      "sha256": "ee63437f179b169fbdaf848e04bde3070245e38964d49253a8bddeccf5b00d18"
+    },
+    {
+      "path": "../cross-programme-connections/inward-coupled-restrictions-handoff-2026-11-16.json",
+      "url": "retained:coordinator-handoff",
+      "used": "User-authorized scope and critical cautions.",
+      "bytes": 5010,
+      "sha256": "1b854a3f493ea201f008106d749eea2efffa1e1fa99a4693f9f5b9cb51266072"
+    },
+    {
+      "path": "../cross-programme-connections/check_inward_coupled_restrictions_20261116.py",
+      "url": "retained:coordinator-controls",
+      "used": "Pinned without rerunning unrelated Mathieu calculations.",
+      "bytes": 6649,
+      "sha256": "c5d90c9e15910d29f44e3e9b94f899edfca59a9c35a70b6446545da0ae23b6fc"
+    },
+    {
+      "path": "../cross-programme-connections/inward-coupled-restrictions-controls-2026-11-16.json",
+      "url": "retained:coordinator-controls",
+      "used": "Prior exact relevant group/orbifold controls; finite checks do not prove theorems.",
+      "bytes": 4273,
+      "sha256": "e72ccc3c86be5ccbbe192d8ce39e37648d71dd76d0b7934a388e576bcfb189b0"
+    },
+    {
+      "path": "../meridional-rank/LIFT_DIMENSION_AND_RADICAL_TOWERS.tex",
+      "url": "retained:MRC-LIFT-DIMENSION-RADICAL-20261116",
+      "used": "Section2 full affine-function group and specified lifted transpositions; knot validity retained.",
+      "bytes": 15024,
+      "sha256": "f1a7f9552d2deb2e2770bd0c02056c40bc7ac67913519e388a6577e7ac5bee0a"
+    },
+    {
+      "path": "HEREDITARY_EULER_EXCESS_AND_QUOTIENT_DEGREE_BOUNDS.md",
+      "url": "retained:PF2RULED129",
+      "used": "All-intermediate Euler/support budget and chi(V)>=1.",
+      "bytes": 10953,
+      "sha256": "7865c9b4e415bbf3b404b616633f81a17b0597c91105f0290f166c4801ba7a1a"
+    },
+    {
+      "path": "MINIMAL_DEGREE_PSEUDOPLANE_COMPRESSION_AND_DECK_DICHOTOMY.md",
+      "url": "retained:PF2RULED128",
+      "used": "Finite pi1, residual-support criterion, whole-plane universal relative cover.",
+      "bytes": 10920,
+      "sha256": "eb2316539e1d5dec3aaf27b8f285e057f2456cc57e3a7f50f1b764df83c5ca5a"
+    },
+    {
+      "path": "RELATIVE_EULER_DEFECT_AND_RULED_CHART_COMPRESSION.md",
+      "url": "retained:PF2RULED130",
+      "used": "Entire etale equality and mixed-multiplicity caution.",
+      "bytes": 11072,
+      "sha256": "76daee69adff1d99747feceab13c72f28ca194b3957dfd2b16bd04d68eec93e7"
+    },
+    {
+      "path": "../hc4-triangular-graphs/EXACT_VOLUME_AND_COMPLETE_RULING_COMPONENTS.md",
+      "url": "retained:HC4MYML0",
+      "used": "FULL reduced component-selection exact-volume obstruction and prior structure adoption.",
+      "bytes": 11634,
+      "sha256": "70dab2944314ad0c6bcf4cce20feb17119eed87ba8ec5c790bf835ee3eeb7322"
+    },
+    {
+      "path": "../hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md",
+      "url": "retained:HC4MYLA0/1",
+      "used": "Generic deck quotient geometry, exact volume and negative log Kodaira argument.",
+      "bytes": 13791,
+      "sha256": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d"
+    },
+    {
+      "path": "sources/radical-tower-exclusion/dubouloz-kishimoto-1408.1328v1.pdf",
+      "url": "https://arxiv.org/pdf/1408.1328v1",
+      "used": "Section1.2/Theorem2 PDF3: existence of ruling on negative log Kodaira smooth affine complex surfaces.",
+      "bytes": 253350,
+      "sha256": "046d33d9d6ed753e205edb9898ebde47bdcda03d1b26928d61b0b9c822bd12cf"
+    },
+    {
+      "path": "sources/radical-tower-exclusion/Thurston13.pdf",
+      "url": "https://people.math.osu.edu/davis.12/courses/8800/Thurston13.pdf",
+      "used": "Chapter13 Theorem13.3.6 and table printed312/PDF18, good/bad and finite spherical covers.",
+      "bytes": 8385162,
+      "sha256": "cee7a903a310621cb8f6616473696131b8c52e20957054d6242472d5dd5fb843"
+    },
+    {
+      "path": "sources/radical-tower-exclusion/source-review.json",
+      "url": "local:source-review",
+      "used": "Explicit imported inputs, purity and split reduced fibres.",
+      "bytes": 1176,
+      "sha256": "d3fde4e38da416764c5d3f37612e187fe016efe01c2e7a8e32873eb652786ad7"
+    }
+  ],
+  "new_classification_input_explicitly_adopted": true,
+  "registered_predecessor_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

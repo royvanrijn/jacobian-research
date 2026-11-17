@@ -1,0 +1,166 @@
+{
+  "METHOD-GRAPH-HULL-BALAYAGE-20261115": {
+    "id": "METHOD-GRAPH-HULL-BALAYAGE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Reduce pure graph laws to one filled outer domain and retain interior harmonic sweeping",
+    "when": "A pure thin phase has a non-Jordan polynomial image,or a positivity-only argument attempts to remove its interior branches.",
+    "use": "Exclude exterior hairs,then fill bounded faces. Finite plane cycle blocks and positive-real Mergelyan lobe tests force one outer Jordan domain containing0. Purity is exactly boundary mass plus swept interior mass equals harmonic measure at0. Use the explicit disk cap bound to control parameters mapped to regular outer arcs.",
+    "avoid": "Identifying the entire law with boundary harmonic measure in the presence of interior mass,or leaving separate exterior lobes open. The irreducible quartic inward-branch polynomial has an exact abstract positive pure interval law;positivity and normalization alone cannot exclude all interior branches.",
+    "boundary": "Single-domain topology and exact sweeping are internally proved on both full thin architectures. The SPECIFIC quartic interval law g=1-|psi(p(t))| is now EXCLUDED from every C1 connected positive source in ANY dimension by its vanishing interior density. The polynomial graph and other densities/boundary remainders are NOT excluded. Actual Haar internal-graph sweeping remains OPEN,and every interior seed interval must dominate positive Lebesgue mass. Pole-compatible fixed-curve density classes are closed only when the representation and differential pole condition are actually proved. Regular outer arcs,singular vertices and the separate height law retain their boundaries.",
+    "reopen_when": "An actual exceptional real seed satisfies or contradicts the full sweeping equation,or an obstruction handles all one-domain internal graphs. Retain full rank2 phases and the separate height law.",
+    "claims": [
+      "GGRAPHONEHULL20261115",
+      "GGRAPHBALAYAGE20261115",
+      "GINWARDPOLYMODEL20261115",
+      "GSEEDINTERIORMASS20261115",
+      "GQUARTICLAWNOHAAR20261115",
+      "GSEEDPOLARCLASS20261115"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/POSITIVE_GRAPH_HULLS_AND_INTERIOR_BALAYAGE.md",
+      "jacobian-followup/moment-vanishing-audit/FILTERED_MATRIX_DEGREES_AND_CUBIC_THIN_PHASES.md",
+      "jacobian-followup/moment-vanishing-audit/graph_hull_degree_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/REAL_SEED_DENSITY_BOUNDS_AND_PERIOD_TRACE.md",
+      "jacobian-followup/moment-vanishing-audit/seed_density_trace_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_graph_hulls_and_matrix_degrees.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "thin phase",
+      "polynomial graph",
+      "original matrix degree"
+    ],
+    "reviewed_claims": {
+      "GGRAPHONEHULL20261115": "04e1bbad7384061f",
+      "GGRAPHBALAYAGE20261115": "4afa713c665faeeb",
+      "GINWARDPOLYMODEL20261115": "e0efc2f3bbad0dcb",
+      "GSEEDINTERIORMASS20261115": "4e1e67248cbd7dcc",
+      "GQUARTICLAWNOHAAR20261115": "584e985ce0534265",
+      "GSEEDPOLARCLASS20261115": "3211581ae3941fdc"
+    }
+  },
+  "METHOD-REAL-SEED-LAW-AND-TRACE-20261115": {
+    "id": "METHOD-REAL-SEED-LAW-AND-TRACE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Retain actual interior seed mass and differential poles when transporting a positive interval model",
+    "when": "A pure phase is modeled as p(h_real),an abstract positive graph law is proposed as Haar,or a fixed algebraic-density representation is used to exclude purity.",
+    "use": "A compact source tube proves that every interior seed interval has a positive Lebesgue lower bound,even at critical values;reject one-sided vanishing densities. Compute the full finite Stieltjes root trace and its divided-difference inverse for the complete seed-power basis. If a fixed compact-curve law with differential poles only over seed infinity is actually established,the pole criterion excludes ALL polynomial phases at once.",
+    "avoid": "Leaving the particular quartic g=1-|psi(p(t))| law open as a Haar candidate,excluding every different law on its graph,assuming arbitrary Haar periods have an algebraic fixed-curve representation,or replacing the actual differential pole condition by mere real positivity/algebraicity. Published compact-genus scope is closed-chain;finite endpoints are treated explicitly here.",
+    "boundary": "The chosen quartic law is impossible for every C1 connected positive source in any dimension;the graph and other distributions remain open. Trace identities retain every finite seed-basis marked germ but supply no finite prefix. Polynomial/piecewise-polynomial and stated hyperelliptic/Gegenbauer density classes are closed conditionally on an actual seed model,not as a classification of all Haar laws. Both exceptional MZ decisions remain OPEN.",
+    "reopen_when": "An actual exceptional seed distribution satisfies the exact trace/pure identity and interior lower bound,or has a valid pole-compatible model or a broader varying-period obstruction. Retain the original matrix degree marker bounds,all graph constraints,the full rank2/non-T-invariant scope and the separate even-height law.",
+    "claims": [
+      "GSEEDINTERIORMASS20261115",
+      "GQUARTICLAWNOHAAR20261115",
+      "GSEEDRESOLVENTTRACE20261115",
+      "GSEEDPOLARCLASS20261115"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/REAL_SEED_DENSITY_BOUNDS_AND_PERIOD_TRACE.md",
+      "jacobian-followup/moment-vanishing-audit/seed_density_trace_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_seed_density_and_trace.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "real seed",
+      "interior density",
+      "Stieltjes trace",
+      "differential poles",
+      "fixed curve"
+    ],
+    "reviewed_claims": {
+      "GSEEDINTERIORMASS20261115": "4e1e67248cbd7dcc",
+      "GQUARTICLAWNOHAAR20261115": "584e985ce0534265",
+      "GSEEDRESOLVENTTRACE20261115": "afe628760eb3a075",
+      "GSEEDPOLARCLASS20261115": "3211581ae3941fdc"
+    }
+  },
+  "METHOD-INTEGRABLE-PERIOD-DENSITY-20261115": {
+    "id": "METHOD-INTEGRABLE-PERIOD-DENSITY-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Check every finite-complex continuation branch of an actual seed density before refining polynomial phases",
+    "when": "A thin Haar phasep(h_real) has an actual finite-rank density or period equation;the fixed-algebraic-curve criterion does not apply.",
+    "use": "Prove all continuation branches have finite local exponentsRe>-1,allowing finite log powers. Polynomial ramification preserves subpolar Cauchy growth,so nonzero total mass excludes ALL polynomial phase degrees. Two-beta products satisfy the criterion for arbitrary positive parameters. The actual octahedral H=27a2b2c2 law is a transcendental hypergeometric example with a complete degree12degp exclusion.",
+    "avoid": "Assuming the physical integrable density controls every complex continuation;assuming any regular-holonomic period works;assuming algebraic edge densities for a moving period;inferring global composition from local jump cancellation;performing a phase-degree or moment-prefix search inside a seed class already closed in all degrees.",
+    "boundary": "A sufficient all-branch integrable-growth condition,not a classification of all Haar seeds. The physical -log(1-t)/t branch is integrable but another continuation has a finite pole. The octahedral coordinate-product seed is proved,not an icosahedral counterpart or arbitrary phase. Finite sums and polynomial tilts require nonzero total mass for exclusion. All universal analytic proofs remain internally written and await independent review;both MZ decisions remainOPEN.",
+    "reopen_when": "An actual remaining Haar seed has a supplied continuation system. Check its true cyclic continuation subspace and finite exponents. If a bad branch exists,track its global jump cocycle and possible rational pole;do not infer purity from the bad exponent alone. Preserve full non-T-invariant,image-interior and separate symmetrized-height gates.",
+    "claims": [
+      "GCONTINUEDSEEDCLASS20261115",
+      "GTWOBETAPRODUCT20261115",
+      "GOCTAHEDRALPRODUCTSEED20261115"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/INTEGRABLE_PERIOD_DENSITIES_AND_OCTAHEDRAL_SEED.md",
+      "jacobian-followup/moment-vanishing-audit/integrable_period_density_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_integrable_period_density.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "period density",
+      "all degree",
+      "complex continuation",
+      "Frobenius",
+      "beta product",
+      "octahedral"
+    ],
+    "reviewed_claims": {
+      "GCONTINUEDSEEDCLASS20261115": "1f0db40b79ad41a2",
+      "GTWOBETAPRODUCT20261115": "47d2b8a42fc955c5",
+      "GOCTAHEDRALPRODUCTSEED20261115": "e0e0188e38382a95"
+    }
+  },
+  "METHOD-PROPER-QUADRIC-LEADING-GATE-20261115": {
+    "id": "METHOD-PROPER-QUADRIC-LEADING-GATE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Build the proper graph and retain its volume divisor before refining exceptional phases",
+    "when": "A Haar phase or seed is a polynomial on the sphere or determinant quadric;seek an all-degree obstruction without calculating each density.",
+    "use": "For minimaldegreeD onQ_N,check whether the leading zero divisor on the projective boundary is smooth. IfD>=N,the closed graphH=t*u^D is smooth/proper with holomorphic residue volumeu^(D-N);its finite critical locus and local Gelfand-Leray bounds exclude every polynomial in the seed. Thus every full exceptional pure phase has singular leading divisor. Nonempty smooth invariant strata exist in degrees24k/60k;both minimal real sphere seeds are closed in all polynomial degrees.",
+    "avoid": "Assuming affine maps are proper,discarding boundary volume poles,applying the criterion whenD<N or a leading divisor is repeated,assumingp(F) remains smooth-leading,or treating leading singularity as purity/failure. Do not conflate the minimal-real-T-invariant seed class with every full phase of matrixdegree8/12.",
+    "boundary": "The proper-cycle global gluing and relative resolution estimate are INTERNAL WRITTEN;Malgrange supplies precisely the local isolated-singularity exponent bound. Selected algebraic controls do not verify the universal topology or analysis. Smoothness is a sufficient all-degree seed exclusion;the full singular-leading locus retains non-T-invariant thin and image-interior problems. Both MZ decisions stayOPEN.",
+    "reopen_when": "A remaining original phase lies in the singular-leading locus. Resolve its actual boundary graph and volume orders,or identify actual nonintegrable continuation branches;check whether a holomorphic proper model still survives before any degree/support campaign. Retain graph constraints,marker degree bounds and the separate symmetrized height law.",
+    "claims": [
+      "GPROPERHOLPERIOD20261115",
+      "GQUADRICTOPGATE20261115",
+      "GEXCEPTIONALLEADING20261115",
+      "GMINIMALSPHERESEEDS20261115"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/PROPER_QUADRIC_MODELS_AND_LEADING_DISCRIMINANTS.md",
+      "jacobian-followup/moment-vanishing-audit/proper_quadric_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_proper_quadric_gate.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "proper graph",
+      "quadric",
+      "volume divisor",
+      "leading discriminant",
+      "Milnor periods",
+      "minimal sphere seed"
+    ],
+    "reviewed_claims": {
+      "GPROPERHOLPERIOD20261115": "12ecbe536c4d4d18",
+      "GQUADRICTOPGATE20261115": "96effe53cfecac87",
+      "GEXCEPTIONALLEADING20261115": "e02c6d2add389fc9",
+      "GMINIMALSPHERESEEDS20261115": "5e39aaac343203fc"
+    }
+  }
+}

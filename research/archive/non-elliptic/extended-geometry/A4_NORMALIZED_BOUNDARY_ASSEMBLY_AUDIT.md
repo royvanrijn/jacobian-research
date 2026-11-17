@@ -1,5 +1,12 @@
 # Audit of the normalized-boundary \(A_4\) assembly
 
+**Construction status, 15 November 2026:** [KMFI66 and the construction-closure bridge](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+exclude the proposed A4-preserving polynomial Keller completion on ordinary
+affine space in every dimension and faithful transitive action, subject to
+the internal central-cover proof. All local calculations below are retained.
+Construction continuations are historical; unresolved local classifications
+do not reopen this objective. Wright's A4 boundary states remain separate.
+
 ## 1. Outcome
 
 The normalized-boundary incidence proposed at the
@@ -1272,6 +1279,8 @@ logarithmic frames
 ([Buchweitz--Ebeling--von Bothmer](https://arxiv.org/abs/math/0612119)), but
 none of these results supplies the required affine-five-space recognition
 or the \(A_4\) field reconstruction.
+
+Historical proposal, superseded as an affine-space Keller construction by KMFI66 (local questions and calculations are retained):
 
 The next bounded computation is therefore concrete:
 

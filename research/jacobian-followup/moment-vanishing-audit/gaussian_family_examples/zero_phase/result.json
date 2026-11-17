@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "exceptional_ideal": [
+        [
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "ambient_restricted_source_presentation": "matrix {{dc0, dt}}",
+      "dual_time_direct_image_H0": "matrix {}",
+      "dimension": 1,
+      "whole_closure_safe": true,
+      "codimension": 0,
+      "generic_polynomial_Hom_dimension": 1,
+      "conormal_multiplicity": {
+        "conormal_ideal": [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              "1"
+            ]
+          ]
+        ],
+        "numerator": 1,
+        "denominator": 1
+      },
+      "dual_time_direct_image_Hminus1": "matrix {{dc0}}",
+      "stratum_closure_ideal": [],
+      "children": []
+    }
+  ],
+  "status": "DECIDED",
+  "normalization_torsion_exponent": 1,
+  "coefficient_ring_phase_safe": true,
+  "safe_closed_components": [
+    []
+  ],
+  "polynomial_Hom_normalization_ideal_lift": [
+    [
+      [
+        [
+          0
+        ],
+        "1"
+      ]
+    ]
+  ],
+  "normalization_colon_stable": true,
+  "safe_radical_ideal": [],
+  "parameter_ideal": [],
+  "input": {
+    "dimension": 1,
+    "parameter_count": 1,
+    "phase_terms": []
+  },
+  "source_backend": "joint exponential connection and FULL unlocalized spatial integration",
+  "actual_image_kernel_computed": false,
+  "relative_Hom_base_change_assumed": false,
+  "ordinary_coefficient_nilpotents_retained": true,
+  "coefficient_ring": "QQ[c]/parameter_ideal; normalization ideal is its exact I-torsion",
+  "universal_numerical_cutoff_computed": false,
+  "assurance": "classical joint holonomic/local-cohomology/characteristic-multiplicity algorithms executed by Macaulay2; not independently certified finite operator proofs",
+  "core_sha256": "e71393d6a80729cd1343278e30e0e8fe251fb374dc2f2e592c764064299d1d6f",
+  "cas_files_sha256": {
+    "family.m2": "259c9a3e138f455848b56b36915a85002840ba5874e75a4501f17f4134615de8",
+    "family.stdout": "02473d48e952afbef72b2cc482103cdf865d86278d633e68302ab3c8d40b9238"
+  }
+}

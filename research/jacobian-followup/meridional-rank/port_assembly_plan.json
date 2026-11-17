@@ -1,0 +1,8 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "targets":["13a_129","13a_135"],
+  "motivation":"Both inner7crossing formal groups reduce to the same2generator1relator presentation of length11; both outer6crossing groups reduce to the same2generator1relator presentation of length7 after renaming. Neither2generated piece supplies a2generator closed upper: source propagation stalls on five arcs. Retain the exact four port words and assemble the closed core group algebraically.",
+  "method":"Use one base in each fragment. In global coordinates based at the outer base, inner unnormalized arc values are u_i*z and outer ones v_j. Form the free product of the two compact groups and free<z>, then impose u_port*z=v_port for all four boundary edge labels. Exactness follows by changing to unnormalized inner arc variables and gluing fragment arc classes:17classes minus4independent port identifications give13 full arcs. Verify this equivalence and the outer base's full-arc identity independently, replay all compact fragment moves, retain every assembly simplification and compare its abelianization/nonabelian quotient with the already certified source.",
+  "limits":{"targets":2,"ports_each":4,"seconds_per_simplification":25,"seconds_total":55},
+  "acceptance":"Exact group presentations via elementary base change and generator identifications only. No assertion of injective boundary groups, torus amalgamation, rational-tangle fillings, Seifert/JSJ pieces or a rank lower bound. An assembly on at most2 generators would close the rank3 route only after independent replay."
+}

@@ -1,0 +1,59 @@
+Formal CT Ward identities and retained unit rows passed
+Full rank-six model constant passed
+Full rank-six model linear_regular passed
+Full rank-six model linear_zero passed
+Full rank-six model quadratic_regular passed
+Full rank-six model double_zero passed
+{
+  "completed": true,
+  "checker_sha256": "90d942ca6184a146579fe06a541b6471f8714e6fccf4b20d132ef5bb89fe7246",
+  "certificate_sha256": "071b03b8cc35568e289b5e4dbacdb0c4833c6fdb561fe83d374956f07cd02f20",
+  "runtime_seconds": 3.371,
+  "sympy_version": "1.14.0",
+  "formal_CT_Ward_coefficient_checks": 36,
+  "retained_models": 11,
+  "retained_unit_row_checks": 33,
+  "new_full_rank_six_models": 5,
+  "new_original_logarithmic_seed_identities": 30,
+  "full_scalar_cofactor_relations": 5,
+  "scalar_coefficient_checks": 35,
+  "p3q3_gates_by_K_degree": [
+    72,
+    83,
+    94
+  ],
+  "conic_gate": 94,
+  "full_W_linear_gate": 95,
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 95,
+    "cusp": 95,
+    "transverse": 95,
+    "tangent": 95,
+    "triangle": 95,
+    "concurrent": 92,
+    "repeated": 92
+  },
+  "global_sufficient_pure_prefix": 95,
+  "odd_sufficient_pure_prefix": 94,
+  "homogeneous_sufficient_pure_prefix": 94,
+  "least_prefix_interval": [
+    20,
+    95
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    94
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    94
+  ],
+  "least_prefix_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "boundary": "Finite formal constant-term logarithmic Ward coefficients,33 retained unit-row divisions,30 full rank-six original logarithmic seed identities,five full scalar relations/35 coefficients,and all rank/row/valuation arithmetic. Universal formal CT/seed induction,full structured coefficient and endpoint/frame coverage,retained other conic strata,analytic nonzero-zeroth inputs and parity deduction remain independently unreviewed written mathematics. No old checker main,radical search,external package or fresh literature review."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "TIMEOUT",
+  "algorithm": "Exact QQ signature-based sba, later prefix12",
+  "time_limit_seconds": 45,
+  "elapsed_seconds": 45.12,
+  "input_sha256": "1e629668521e86bb2e50a6f2ebc566b6dc66db786eb3e12644f4981cf4bc6e2f",
+  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "conclusion": "No rational exclusion until successful exact unit result, with complete normalization and input checks."
+}

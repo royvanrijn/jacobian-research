@@ -1,0 +1,150 @@
+{
+  "completed": true,
+  "canonical_proof_sha256": "f9e9c716967669571dab994e4418a2d35900aa85f5d01d88c9bc2c713ef5a835",
+  "generator_sha256": "894f60d1977efe347881b0d514ce88659d5556b4cce72a710b9acced8521bd1a",
+  "checker_sha256": "6674be84ae5184e8f5bb4a7e952544e266d4be1b1775617b14fdb146a80d910a",
+  "runtime_sha256": "c45f126d4233cfe658c3a91af7e53da96ae9b37daa1b601ec1d0a7ae30cb4b83",
+  "source_controls": [
+    {
+      "name": "zero",
+      "safe": true,
+      "whole_module_generators": 1,
+      "integration_integer_roots": [
+        0
+      ],
+      "polynomial_hom_dimension": 1,
+      "all_marker_cutoff": {
+        "slope": "0",
+        "intercept": "0",
+        "convention": "For every original Q, E(Q P^m)=0 for every integer m > slope*deg(Q)+intercept.",
+        "all_positive_pure": true,
+        "pure_linear_slope": "0",
+        "proof": "checked degree-lowering recurrence plus normalized periods of ALL cutoff monomials"
+      }
+    },
+    {
+      "name": "constant",
+      "safe": false,
+      "whole_module_generators": 1,
+      "integration_integer_roots": [
+        0
+      ],
+      "polynomial_hom_dimension": 0,
+      "all_marker_cutoff": null
+    },
+    {
+      "name": "quartic_whole_source",
+      "safe": false,
+      "whole_module_generators": 2,
+      "integration_integer_roots": [
+        0,
+        1
+      ],
+      "polynomial_hom_dimension": 0,
+      "all_marker_cutoff": null
+    },
+    {
+      "name": "coupled_whole_source",
+      "safe": false,
+      "whole_module_generators": 3,
+      "integration_integer_roots": [
+        0,
+        1
+      ],
+      "polynomial_hom_dimension": 0,
+      "all_marker_cutoff": null
+    },
+    {
+      "name": "isotropic_cubic",
+      "safe": true,
+      "whole_module_generators": 1,
+      "integration_integer_roots": [
+        0
+      ],
+      "polynomial_hom_dimension": 1,
+      "all_marker_cutoff": {
+        "slope": "1/3",
+        "intercept": "0",
+        "convention": "For every original Q, E(Q P^m)=0 for every integer m > slope*deg(Q)+intercept.",
+        "all_positive_pure": true,
+        "pure_linear_slope": "1/3",
+        "proof": "checked degree-lowering recurrence plus normalized periods of ALL cutoff monomials"
+      }
+    },
+    {
+      "name": "quartic_coefficient_field",
+      "safe": true,
+      "whole_module_generators": 1,
+      "integration_integer_roots": [
+        0
+      ],
+      "polynomial_hom_dimension": 1,
+      "all_marker_cutoff": {
+        "slope": "1",
+        "intercept": "0",
+        "convention": "For every original Q, E(Q P^m)=0 for every integer m > slope*deg(Q)+intercept.",
+        "all_positive_pure": true,
+        "pure_linear_slope": "1",
+        "proof": "checked degree-lowering recurrence plus normalized periods of ALL cutoff monomials"
+      }
+    }
+  ],
+  "abstract_hom_controls": [
+    "coupled tuple (t,1)",
+    "missing cross-relation adds a polynomial map",
+    "exact exponential source",
+    "spurious larger exponential source",
+    "origin torsion is retained",
+    "cubic coefficient-field indicial norm has no integer root",
+    "original derivative jet rejects spurious constant solution of exp(t)"
+  ],
+  "original_marker_cutoff_checks": 113,
+  "rejection_controls": [
+    "recurrence_witness",
+    "coordinate_witness",
+    "root_threshold",
+    "amplitude_sign",
+    "Hom_value",
+    "cutoff",
+    "original_IBP_primitive",
+    "actual_jet",
+    "invalid input {'dimension': 0, 'phase_terms': []}",
+    "invalid input {'dimension': 1, 'phase_terms': [[[1], '0.5']]}",
+    "invalid input {'dimension': 1, 'field': {'kind': 'number_field', 'minimal_polynomial': 'a^2-1'}, 'phase_terms': []}"
+  ],
+  "CLI_executed_in_initial_generation": true,
+  "retained_example_files_sha256": {
+    "gaussian_source_hom_examples/zero/result.json": "7baee4559d0f86b76b9878eeb9411641635d1bdb269de98e70cb8a3bc128ea81",
+    "gaussian_source_hom_examples/zero/input.json": "c173ac2a69f17ed31fcd8088d2cfbd213ac9d9beae793e23779db2ff0243d740",
+    "gaussian_source_hom_examples/zero/cas/gaussian_dmodapp.lib": "5bbffb10b948b00364e1ff8857f0cc52eaefb6071f1316f2d029c30053354601",
+    "gaussian_source_hom_examples/zero/cas/source.stdout": "b3b4c0a2e82cffb2b62a2c15f3a22d53388fba1b3d6d9bb9873b61e3ebd5a424",
+    "gaussian_source_hom_examples/zero/cas/source.sing": "804ed2d9fa63fd9cad281a0a043da89d920199671de716ff72692921a0659a03",
+    "gaussian_source_hom_examples/constant/result.json": "5f1186a5ab71d2c3f512a522bd3437facc3f6598ba1a237afa2d179d30aec035",
+    "gaussian_source_hom_examples/constant/input.json": "abac1749f7e7e5292eadbe72230ce49246dc622f5a45cf82073badbf263ec218",
+    "gaussian_source_hom_examples/constant/cas/gaussian_dmodapp.lib": "5bbffb10b948b00364e1ff8857f0cc52eaefb6071f1316f2d029c30053354601",
+    "gaussian_source_hom_examples/constant/cas/source.stdout": "ca1a0e5e0f164e2dd0ebc35ba1a06be9a8f96e44f2d811fa2aada0976047434d",
+    "gaussian_source_hom_examples/constant/cas/source.sing": "f399aa1d336da6029f8b8b3206172cc4f74d5f7c74683d7aa898000518147a97",
+    "gaussian_source_hom_examples/quartic_whole_source/result.json": "f6788b5ed6e1fd84edee3b451076f29ca855a7755987069918b45abee0ce8414",
+    "gaussian_source_hom_examples/quartic_whole_source/input.json": "857c2bdcd702f53513c8228295f8e02c4870e5b489213833b8cd1c5675d8bfd4",
+    "gaussian_source_hom_examples/quartic_whole_source/cas/gaussian_dmodapp.lib": "5bbffb10b948b00364e1ff8857f0cc52eaefb6071f1316f2d029c30053354601",
+    "gaussian_source_hom_examples/quartic_whole_source/cas/source.stdout": "d5cfb73e7b6a9cca0934c067d5fc95ab530d296addc7a34188876519dcee2561",
+    "gaussian_source_hom_examples/quartic_whole_source/cas/source.sing": "5c765df0a68085c58ed4cd2c51835a73252b9f7bc49d001bf33bec0329e30ef5",
+    "gaussian_source_hom_examples/coupled_whole_source/result.json": "998fcc8c0d9963b434ac3441ec686bc90cd0ca0a346255a5be60a8c346bf6d51",
+    "gaussian_source_hom_examples/coupled_whole_source/input.json": "c60531b1df3ca5ceae60e92c9e58166177a096667fc287da9fba58620d1c9915",
+    "gaussian_source_hom_examples/coupled_whole_source/cas/gaussian_dmodapp.lib": "5bbffb10b948b00364e1ff8857f0cc52eaefb6071f1316f2d029c30053354601",
+    "gaussian_source_hom_examples/coupled_whole_source/cas/source.stdout": "3d6c805a84c96dde0cf419f2691eabd8645f381077986dd287912d910a23bbb8",
+    "gaussian_source_hom_examples/coupled_whole_source/cas/source.sing": "9f73b87909a36c7bf5150fcbf71f3e4040264309886a8a6ad4c7cbd2d881e2b1",
+    "gaussian_source_hom_examples/isotropic_cubic/result.json": "018fa7bd5d96096f9e879331093197704c2e9ec1ce95e4f370b60c2bfbcd3ccc",
+    "gaussian_source_hom_examples/isotropic_cubic/input.json": "a96e5800edc1c657cc655438ced5039480173cada36b516822efdff428d5f4cf",
+    "gaussian_source_hom_examples/isotropic_cubic/cas/gaussian_dmodapp.lib": "5bbffb10b948b00364e1ff8857f0cc52eaefb6071f1316f2d029c30053354601",
+    "gaussian_source_hom_examples/isotropic_cubic/cas/source.stdout": "041f5feb5e407baa7fa527c8ecc43d9fff4519ddc3632632c40522410ded5a25",
+    "gaussian_source_hom_examples/isotropic_cubic/cas/source.sing": "0ebcd882a4d916367447a0491e18cab68d4097d50047e52abfba93d4faa7ab41",
+    "gaussian_source_hom_examples/quartic_coefficient_field/result.json": "d45c509f5390f45972ad5f291aced2b97c7a860514a1f7c4999380de2cd89856",
+    "gaussian_source_hom_examples/quartic_coefficient_field/input.json": "914ec9ce3ba1921bc7e4ce83616fc45efc92d03a870c23ec842dcac853b303bf",
+    "gaussian_source_hom_examples/quartic_coefficient_field/cas/gaussian_dmodapp.lib": "5bbffb10b948b00364e1ff8857f0cc52eaefb6071f1316f2d029c30053354601",
+    "gaussian_source_hom_examples/quartic_coefficient_field/cas/source.stdout": "17b2e278994197cd05eccd8f9c6f19a9aade579aec1ec0039d6eeb42726dc9af",
+    "gaussian_source_hom_examples/quartic_coefficient_field/cas/source.sing": "c65dd2bd5c81e77d9e0178c9e41fde79ff1128414e09bb59c10bbe3c152743fd"
+  },
+  "scope": "finite controls of a general algorithm; no universal theorem inferred from these controls",
+  "assurance": "CAS integration completeness is not independently certified or needed for the decision: original IBP, actual origin jets, complete scalar indicial bounds and all-marker recurrence replayed exactly"
+}

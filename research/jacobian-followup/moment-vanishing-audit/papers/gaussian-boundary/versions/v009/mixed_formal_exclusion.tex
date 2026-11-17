@@ -1,0 +1,95 @@
+\subsection{A mixed chart with a complete formal proof}\label{sec:mixedformal}
+
+One of the previously analytic exclusions admits a direct formal proof.
+It is the whole family in the next proposition, not a generic choice
+of its coefficients.
+
+\begin{proposition}\label{prop:mixedformal}
+For every $a\in\C$ and every $G\in\C[Z,T]$ of total degree at most
+three, the polynomial
+\[
+ P=W(a+T+Z^2)+G(Z,T)
+\]
+has a nonzero positive pure Gaussian moment.
+\end{proposition}
+\begin{proof}
+We construct the exact formal seed functional and apply
+Corollary~\ref{cor:leadingobstruction}. No analytic integral is needed.
+
+\emph{The formal source.}
+The circular fixed point is $g=t(a+T+g^2)$, with determinant
+$D=1-2tg$. Make the formal Gaussian change
+\[
+ T=Y-t^2(a+Y)^2,\qquad z=t(a+Y).
+\]
+It has $g=z$ and $dT/dY=D$. For any change $T(Y)=Y+O(t)$ with
+polynomial formal coefficients, the identity
+\[
+ \E_T[F(T)]=\E_Y\!\left[F(T(Y))T'(Y)
+             e^{(Y^2-T(Y)^2)/2}\right]
+\]
+holds coefficientwise. To prove it, use the homotopy
+$T_u=Y+u(T-Y)$: its derivative is the Gaussian expectation of
+$(\partial_Y-Y)\{F(T_u)\dot T_u e^{(Y^2-T_u^2)/2}\}$, which is zero.
+Thus the determinant cancels and gives
+\[
+ \Phi_1=\E_Y[e^\Psi],\qquad
+ \Psi=tG(z,Y-z^2)+Yz^2-z^4/2.
+\]
+
+Define
+\[
+ F=z/t-a-z^2,\qquad \varphi(t,z)=tG(z,F)-F^2/2,
+\]
+and let
+\[
+ M=K[z]/(\partial_z+\varphi_z)K[z],\qquad
+ \nabla[q]=[q_t+(\varphi_t-1/t)q],\qquad K=\C(t).
+\]
+These are vector-space quotients. The formal map
+$J(q)=\E_Y[q(t(a+Y))e^\Psi]$ annihilates
+$(\partial_z+\varphi_z)K[z]$ by Gaussian integration by parts.
+Differentiating at fixed $Y$ differs from applying $\nabla$ by
+$J((\partial_z+\varphi_z)(zq/t))=0$.
+So $J$ is horizontal and $J(1)=\Phi_1$. The term $-1/t$ is the
+normalization $dz/t=dY$; removing it changes the problem.
+Leading-degree reduction gives $\dim_K M=\deg_z\varphi-1$.
+
+\emph{The exhaustive degree split.}
+Put
+\[
+ V(z)=G(z,-a-z^2),\quad L(z)=G_T(z,-a-z^2),\quad
+ B_1=z^2G_{TT}(z,-a-z^2)/2+z(a+z^2).
+\]
+If $s=[T^3]G$, direct Taylor expansion gives
+\begin{equation}\label{eq:mixedphi}
+ \varphi=tV+B_0+B_1/t+B_2/t^2,
+ \quad B_0=zL-(a+z^2)^2/2,\quad B_2=sz^3-z^2/2.
+\end{equation}
+To check every degree drop, write $v_1=[ZT^2]G$,
+$v_0=[T^2]G$ and $u_2=[Z^2T]G$. Then
+\[
+ [z^6]V=-s,\qquad [z^5]V=v_1,\qquad
+ [z^4]V=v_0-u_2-3as.
+\]
+If $n=\deg V\geq4$, the degree of $\varphi$ is $n$ and each $B_j$
+has degree at most $n$. If $n\leq3$, or $V$ is constant, these three
+identities force $s=v_1=0$ and $u_2=v_0$. Hence
+$B_0=-z^4/2+O(z^3)$, $\deg B_1\leq3$ and $B_2=-z^2/2$.
+In that case $\deg_z\varphi=4$. There is no omitted higher-degree
+term tending to zero at infinity.
+
+If $n\geq4$, the leading coefficient of $\varphi$ has a nonzero
+$tV_n$ term and therefore has order $-1$ at infinity. If $n\leq3$
+or $V$ is constant, its leading coefficient is exactly $-1/2$ and
+has order zero. In both cases $h=1/t$ has order one, so
+\[
+ v_\infty(h^D/a_D)>0.
+\]
+The leading-coefficient obstruction excludes $J(1)=1$. The degree
+calculation was exhaustive, so this proves the proposition even at
+multiple critical points and degree drops. The full formal frame,
+including every escaping dimension, is supplied by
+Theorem~\ref{thm:stationaryballs} rather than a new case-by-case
+saddle calculation.
+\end{proof}

@@ -1,0 +1,258 @@
+{
+  "status": "exact-primary-coefficient-powers",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "input_sha256": "82c9087aa391909b74f6968b76879616fca32e562ae7ae85cf9316f8c5480bb3",
+  "script_sha256": "b3b95a4be5e2381a5ec2ffc898fe28721802c5780de3b2ade2035c0059d15155",
+  "targets": [
+    {
+      "parameter": 0,
+      "power": 4,
+      "multipliers": [
+        [
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-457/1120"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-37/160"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-801/2240"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-1137/800"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-1813/1600"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-573/800"
+          }
+        ],
+        [],
+        [
+          {
+            "exponent": [
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "1/20"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "457/800"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "191/800"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "573/1600"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-1/5"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "573/400"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "1049/800"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "3/16"
+          },
+          {
+            "exponent": [
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-3/160"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "-171/640"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/4"
+          },
+          {
+            "exponent": [
+              2,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-3/16"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "9/80"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "-573/800"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              0,
+              2
+            ],
+            "coefficient": "-191/400"
+          }
+        ]
+      ]
+    }
+  ],
+  "unresolved_parameters": []
+}

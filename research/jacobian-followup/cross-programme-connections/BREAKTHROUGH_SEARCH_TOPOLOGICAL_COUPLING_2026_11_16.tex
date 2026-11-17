@@ -1,0 +1,384 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{corollary}[proposition]{Corollary}
+\newcommand{\F}{\mathbb F}
+\newcommand{\C}{\mathbb C}
+\newcommand{\A}{\mathbb A}
+\newcommand{\ind}{\operatorname{ind}}
+\newcommand{\SL}{\operatorname{SL}}
+\title{Background search: global topological coupling and exact scope gates}
+\author{Independent internal research audit}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+\noindent\textbf{Status.}
+This note records an independent background literature search and elementary
+deductions. It does not close either full exceptional Mathieu case or the
+Keller empty-fibre obstruction, and makes no novelty or priority claim.
+No agents were messaged. Existing canonical proofs and registry entries were
+not changed. The proofs below are written arguments, with small exact controls;
+they are not specialist-reviewed or formally verified.
+
+\section{Current progress and the remaining obligations}
+
+The registry entry \texttt{GMCSOURCEHOMGEN20261116} records a general pointwise
+Gaussian decision producer over the rationals and simple number fields, in
+arbitrary dimension and degree. It retains all original markers, exact
+integration-by-parts identities, finite actual Wick jets and sufficient
+numerical cutoffs. A safe result and a fixed bad-marker certificate are both
+possible outputs. This is an algorithmic result, not a positive universal
+Gaussian conjecture. The current Gaussian thread is pursuing
+specialization-valid coefficient-family machinery.
+
+The canonical Mathieu regular-period saturation note
+identifies the same unit-adjoined regular-period sector in every smooth proper
+phase model, for every original phase. In its notation,
+\[
+ R_f=\C(s)u\oplus I_f,\qquad
+ D_f=M_f/R_f,\qquad
+ \epsilon_f\in\operatorname{Ext}^1_D(D_f,\C(s)).
+\]
+Under eventual purity, the missing assertion is $\epsilon_f=0$ on the
+\emph{entire} exceptional pure locus, or an actual pure phase with nonzero
+$\epsilon_f$ and a fixed original bad marker. Choosing a different proper
+model cannot supply missing marked directions. This is a precise reduction,
+not evidence that the remaining theorem is small.
+
+A later update, \texttt{LOGARITHMIC\_JETS\_AND\_SPARSE\_ALL\_RING\_SAFETY.md},
+closes MZ for every phase supported on at most four left-torus weights
+on $\SL_2/2O$, and at most six on $\SL_2/2I$, in every degree and over
+all commutative $\C$-algebras. Any remaining failure needs at least five
+or seven weights, respectively, after every allowed automorphism and
+choice of maximal left torus. Its all-support capacity inequality forces
+one charged side to have small capacity relative to support size.
+The active Mathieu thread is now exploring that inequality under
+automorphisms; the intrinsic extension remains the full closure target.
+
+The Wright notes PF126 and PF127 constrain actual peripheral permutations
+and their cyclic orbits. They do not assert that the whole monodromy group
+is cyclic. The following deductions add global constraints, under explicit
+hypotheses, to those local restrictions.
+
+\section{Global meridional index and genus constraints}
+
+Let $B\subset\A^2_\C$ be a reduced branch curve. Choose a projection such
+that $B$ is finite over the projection line, and let a generic transverse
+fibre meet $B$ in $w$ distinct points. Assume that its geometric meridians
+generate the affine complement group. This is the usual affine
+Zariski--van Kamp situation. For a connected degree-$d$ finite cover,
+write their permutations as $\sigma_1,\ldots,\sigma_w$.
+
+For $\sigma\in S_d$ let $c(\sigma)$ count all cycles, including fixed points,
+and put $\ind(\sigma)=d-c(\sigma)$.
+\begin{proposition}
+Transitivity requires
+\[
+             \sum_{i=1}^w\ind(\sigma_i)\ge d-1.                 \tag{1}
+\]
+If component $B_j$ supplies $w_j$ meridians with index $r_j$, then
+$\sum_j w_jr_j\ge d-1$.
+\end{proposition}
+\begin{proof}
+A cycle of length $a$ is a product of $a-1$ transpositions. Decompose every
+$\sigma_i$ in this way. Make a graph on the $d$ sheets with these
+transpositions as edges. Each original generator preserves each graph
+component. A transitive group therefore forces a connected graph and at
+least $d-1$ edges.
+\end{proof}
+
+The genus version retains the product. Set
+$\sigma_\infty=(\sigma_1\cdots\sigma_w)^{-1}$ and
+$c_\infty=c(\sigma_\infty)$. If the tuple is transitive, the associated
+connected branched curve cover of $\mathbb P^1$ has genus
+\[
+ 2g=\sum_i\ind(\sigma_i)-d-c_\infty+2.                         \tag{2}
+\]
+Consequently the right side is a nonnegative even integer, and
+\[
+       \sum_i\ind(\sigma_i)\ge d+c_\infty-2.                 \tag{3}
+\]
+This is classical Riemann--Hurwitz/transitive-factorization theory
+\cite{gouldenjackson}, not a new general theorem. Without transitivity the
+corresponding disconnected Euler-characteristic identity has a different
+component term.
+
+For transpositions, (1) gives $w\ge d-1$; for $3$-cycles it gives
+$2w\ge d-1$. For example, three $3$-cycles on six sheets, if transitive,
+must have $c_\infty=2$ and $g=0$ by (2). This is a necessary condition,
+not exclusion of the $A_6$ case.
+
+The public, unreviewed \href{https://github.com/alok/jacobian-two/blob/main/docs/s6-trace-curve-topology.md}{Keller trace-curve notes} give a concrete
+motivation: their explicit six-sheet $S_6$ hostile trace curve has a
+four-strand projection and transposition inertia, so (1) excludes its
+connected cover before trace or multiplication data are considered.
+A separate width-five example is reported to have cyclic complement.
+Those reports eliminate their specified curves, not all degree-six
+Keller candidates. The independent general argument above does not rely
+on replaying their Sage computations.
+
+\section{Affine directions give a stronger dimension bound}
+
+Let $V=\F_2^k$ and suppose all chosen meridian images have the form
+\[
+ T_i(x)=x+(\ell_i(x)+a_i)u_i,\quad
+ 0\ne u_i\in V,\quad 0\ne\ell_i\in V^\vee,\quad\ell_i(u_i)=0.
+                                                               \tag{4}
+\]
+These affine transvections have $d/2$ fixed points and $d/4$ two-cycles,
+where $d=2^k$, so their permutation index is $d/4$.
+
+\begin{proposition}
+If the group generated by (4) is transitive on $V$, then
+\[
+              \langle u_1,\ldots,u_w\rangle=V,
+              \qquad w\ge k.                                  \tag{5}
+\]
+\end{proposition}
+\begin{proof}
+Every generator changes a vector by an element of
+$U=\langle u_1,\ldots,u_w\rangle$. Each coset of $U$ is invariant under
+all words in the generators. Transitivity forces $U=V$.
+\end{proof}
+
+Combining (1) and (5) gives
+\[
+         w\ge\max\{k,\lceil4-4/2^k\rceil\}.                     \tag{6}
+\]
+This uses a single set of generators of the \emph{whole} complement group,
+not just the peripheral subgroup of a knot. It cannot be applied from
+local longitude data alone.
+
+\section{A common symplectic form forces an extra meridian}
+
+Assume in addition that a fixed nondegenerate alternating form $B$ is
+preserved by all linear parts of (4). Then $k$ is even and, over $\F_2$,
+\[
+              \ell_i(x)=B(u_i,x).
+\]
+This is the same common-form hypothesis used in PF126, now coupled to
+global generation.
+
+\begin{proposition}
+Under these hypotheses, transitivity forces
+\[
+                         w\ge k+1.                            \tag{7}
+\]
+More generally, if there is a quadratic refinement $q$ of $B$ with
+\[
+                         q(u_i)=1+a_i\quad(1\le i\le w),        \tag{8}
+\]
+the meridian group is not transitive.
+\end{proposition}
+\begin{proof}
+A quadratic refinement has $q(0)=0$ and
+$q(x+y)+q(x)+q(y)=B(x,y)$. Write $b=B(u_i,x)$ and
+$t=b+a_i\in\F_2$. Then
+\[
+ q(T_i x)+q(x)
+   =t\bigl(q(u_i)+b\bigr)
+   =(b+a_i)(1+a_i+b)=0
+\]
+whenever (8) holds. Thus every $T_i$ preserves $q$. Nondegeneracy of $B$
+implies that $q$ is nonconstant, so its two level sets preclude transitivity.
+
+If $w<k$, (5) applies. If $w=k$ and the directions span, they are a basis.
+Quadratic refinements form an affine space over $V^\vee$, so their values
+can be prescribed arbitrarily on that basis. In particular (8) has a
+solution. This rules out equality in (5).
+\end{proof}
+
+There is an inexpensive exact test for arbitrary $w$. Fix any refinement
+$q_0$ and seek $L\in V^\vee$ satisfying
+\[
+           L(u_i)=1+a_i+q_0(u_i).                              \tag{9}
+\]
+A solution produces the invariant $q=q_0+L$ and excludes transitivity.
+Therefore actual transitivity requires an inconsistent system (9).
+Equivalently there must be a dependency $\sum_i e_i u_i=0$ with
+\[
+ \sum_i e_i(1+a_i)+
+ \sum_{i<j}e_i e_j B(u_i,u_j)=1.                               \tag{10}
+\]
+This follows by applying $q_0$ to the dependency. It is independent of the
+chosen affine origin: shifting the origin changes $a_i$ by $B(u_i,z)$,
+whose sum in a dependency is zero.
+
+For degree $16$, the index bound alone allows width four, whereas (7)
+requires at least five in the common-symplectic branch. For degree $64$
+it requires at least seven. An upper geometric width bound, or a
+geometrically forced compatible refinement in (9), would turn these
+necessary conditions into exclusions. Neither input has been proved here.
+
+The potential connection is to the \emph{whole marked source} and its
+trace or framing data: do they force compatible quadratic values for all
+global meridians? PF126's local Seifert-framing cancellation does not by
+itself provide that global refinement. Even a positive answer would close
+this branch, not every remaining Keller monodromy family.
+
+\section{Why tame coordinate reduction is not yet a Mathieu route}
+
+Bisi--Furter--Lamy prove elementary degree reduction for nonlinear
+\emph{tame automorphisms} of $\SL_2$ \cite{bfl}. Their square-complex
+vertices of component type are functions completable to such an
+automorphism. Neither statement covers every regular function.
+
+There is a stronger scope obstruction in the present problem.
+\begin{proposition}
+Let $1\ne\Gamma\subset\SL_2(\C)$ be finite, acting by right multiplication.
+No $\Gamma$-invariant regular function on $\SL_2$ can equal
+$x_{11}\circ\phi$ for any algebraic automorphism $\phi$ of $\SL_2$.
+\end{proposition}
+\begin{proof}
+For $a\ne0$, the fibre $x_{11}=a$ is $\A^2$: the remaining entries
+$x_{12},x_{21}$ are arbitrary and
+$x_{22}=(1+x_{12}x_{21})/a$. Thus the fibre of $x_{11}\circ\phi$ over $a$
+has compactly supported Euler characteristic one. If the function were
+$\Gamma$-invariant, the free right action of $\Gamma$ on $\SL_2$ would
+preserve that fibre. Its quotient is a finite etale cover of degree
+$|\Gamma|$, so multiplicativity gives
+$1=|\Gamma|\chi_c(\text{quotient})$, impossible. Multiplicativity can
+equally be proved from a finite triangulation of the covering
+\cite{euler}.
+\end{proof}
+
+Thus our original exceptional phases lie outside that coordinate-component
+input class, even allowing wild automorphisms. The existing strict-leading
+condition after \emph{every} Haar-preserving automorphism is still strong,
+but a new theorem for arbitrary invariant functions would be required to
+turn it into a terminating reduction. Its proof cannot be replaced by the
+published coordinate theorem. This does not disprove the possible
+function-reduction strategy.
+
+For every invariant phase and every fibre of its pullback,
+$\chi_c(\text{lifted fibre})$ is divisible by $|\Gamma|$. This observation
+can reject unsuitable coordinate models, but is not a Mathieu purity
+criterion.
+
+\section{The Gaussian family lead and the resonance trap}
+
+Walther's algorithm stratifies the base of a holonomic algebraic
+$D$-module so that the cohomology of each derived restriction is a
+connection \cite{walther}. Interpreting these ranks as the holomorphic
+solution complex uses regular holonomicity. Oaku--Takayama supply
+computable restriction and local-cohomology operations
+\cite{oaku}. These are relevant primary sources for the current Gaussian
+family task; neither abstract identifies a specialized Gaussian polynomial
+Hom space with those ranks.
+
+For $P(c,x)=\sum_\alpha c_\alpha x^\alpha$, the joint exponential source
+with exponent $F=-\sum x_i^2/2+tP$ has relations
+\[
+ \partial_{x_i}+x_i-tP_{x_i},\qquad
+ \partial_t-P,\qquad
+ \partial_{c_\alpha}-t x^\alpha.                              \tag{11}
+\]
+The last relations are essential. Formally,
+\[
+ \partial_{c_\alpha}\mathbb E[Qe^{tP}]
+       =t\,\mathbb E[x^\alpha Qe^{tP}].
+\]
+They retain all amplitudes without justifying division by $t$ at the
+origin.
+
+\begin{lemma}
+The central-parameter family $t\partial_t-c$ cannot be extended to a
+rank-one flat algebraic connection on a dense open subset of
+$\mathbb G_m\times\A^1_c$ while keeping its indicated $t$-connection.
+\end{lemma}
+\begin{proof}
+Such a connection would have $\partial_t y=(c/t)y$ and
+$\partial_c y=A(t,c)y$ with $A\in\C(t,c)$. Flatness implies
+$\partial_t A=1/t$. A derivative of a rational function has zero residue
+at every finite pole, whereas $1/t$ has residue one at zero. Contradiction.
+The same trace argument works for a scalar rank-$r$ connection.
+\end{proof}
+
+Accordingly, the infinitely many integer resonances in that central
+parameter example do not automatically refute a strategy using the
+\emph{joint} holonomic source (11). Conversely, holonomicity does not by
+itself establish all the required base-change identifications.
+
+A complete family producer still needs specialization-valid original
+amplitude coverage, the correct ordinary or derived restriction, and
+finite actual-jet selection and normalization $1$ on every stratum.
+Restriction to a nonlinear stratum must be proved to compute the intended
+family before connection ranks or local cohomology are used. This is
+aligned with the current Gaussian thread, rather than a replacement goal.
+
+\section{Other sources checked: useful boundaries rather than closure}
+
+Franks--Walter's positive-definite matrix-coefficient result
+\cite{fw} exploits
+$\int_K\langle v,\rho(k)v\rangle^m=\|\Pi_m v^{\otimes m}\|^2$.
+It does not cover arbitrary complex mixed-isotypic phases, where the
+positivity identity is absent. The already closed single-isotypic sector
+should not be re-proposed as the remaining full problem.
+
+Gavrilov--Pakovich \cite{gp} reduce moments on curves to inverse-branch
+cycles and use monodromy. Their methods were already partially adopted
+in the seed/period audits. A new application must identify the actual
+boundary curve map, cycle and marker, not just a matching permutation
+group.
+
+Payne's boundary-complex description \cite{payne} controls weight-graded
+cohomology. It does not determine the actual mixed extension
+$\epsilon_f$. A dual-complex calculation alone cannot supply the current
+Mathieu lifting step.
+
+\href{https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs}{Long's spherical-pair classification} was rechecked from the public repository. $\SL_2/\Gamma$ for finite $\Gamma$ has dimension three, whereas
+a Borel has dimension two, so these exceptional quotients are not
+spherical. His root-doublet construction remains useful within its
+hypotheses; the quoted classification does not close these quotients.
+
+\section{Priority after this search}
+
+The most concrete broad closure target remains the Gaussian
+specialization-valid family producer, now with a directly relevant
+published stratification algorithm. The Mathieu thread is exploring the all-support capacity inequality under
+automorphisms, following its four/six-weight closure. This is compatible
+with the intrinsic extension target and does not repeat model changes.
+For the Wright branch, the new coupling is (9)--(10): test whether genuine
+global source geometry forces a common invariant quadratic refinement.
+A purely local framing calculation or another hostile quadratic trace
+matrix is insufficient.
+
+These are ranked leads and proved necessary conditions, not solved
+conjectures. The scripts accompanying this note check small permutation
+and polynomial identities only; the all-degree claims rest on the
+arguments above.
+
+\begin{thebibliography}{10}
+\bibitem{bfl} C. Bisi, J.-P. Furter, S. Lamy,
+The tame automorphism group of an affine quadric threefold acting on a
+square complex, J. Ecole polytechnique Math. 1 (2014), 161--223.
+\url{https://numdam.org/articles/10.5802/jep.8/}.
+\bibitem{euler} S. Cappell, L. Maxim, J. Shaneson,
+Euler characteristics of algebraic varieties.
+\url{https://arxiv.org/abs/math/0606654}.
+\bibitem{gouldenjackson} I. P. Goulden, D. M. Jackson,
+Transitive factorizations in the symmetric group, and combinatorial
+aspects of singularity theory, European J. Combin. 21 (2000), 1001--1016.
+\url{https://uwaterloo.ca/math/sites/default/files/uploads/documents/gjeurjc2000.pdf}.
+\bibitem{walther} U. Walther,
+Algorithmic stratification of RHom for regular algebraic D-modules.
+\url{https://www.math.purdue.edu/~walther/research/reg.pdf}.
+\bibitem{oaku} T. Oaku, N. Takayama,
+Algorithms for D-modules---restriction, tensor product, localization,
+and local cohomology groups.
+\url{https://doi.org/10.1016/S0022-4049(00)00004-9}.
+\bibitem{fw} C. Franks, M. Walter,
+Minimal length in an orbit closure as a semiclassical limit.
+\url{https://arxiv.org/abs/2004.14872}.
+\bibitem{gp} L. Gavrilov, F. Pakovich,
+Moments on Riemann surfaces and hyperelliptic Abelian integrals.
+\url{https://arxiv.org/abs/1107.3029}.
+\bibitem{payne} S. Payne, Boundary complexes and weight filtrations.
+\url{https://arxiv.org/abs/1109.4286}.
+\end{thebibliography}
+\end{document}

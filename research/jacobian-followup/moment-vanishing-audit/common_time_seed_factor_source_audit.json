@@ -1,0 +1,192 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/COMMON_TIME_FACTOR_GLOBAL_224.md",
+  "canonical_proof_sha256": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+  "current_history_index": "jacobian-followup/moment-vanishing-audit/PREFIX_PROOF_HISTORY_CURRENT.md",
+  "claims": [
+    "G3TIMEFACTOR20261115",
+    "G3PURE224_20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_common_time_seed_factor.py",
+  "checker_sha256": "c4de47e6bd850561c3dc96e59c15ce083753351141baa694c21cfcfab528b653",
+  "certificate_sha256": "75922fd6cdc70a583edf181aafaf6cbd3c43d30e2de31736ed08769287468447",
+  "accepted_receipt_sha256": "6a4f452b49ca6e436bd2231483cca0fd89e8a691ca04189f76b08b3c4e1c3135",
+  "prior_frontier": {
+    "path": "jacobian-followup/moment-vanishing-audit/common224_preupdate_20261115.json",
+    "sha256": "cb4f26d40fda39548410d740ec80e7dd58c0dcf3f5c6d995e443498241be06f2"
+  },
+  "retained_inputs": {
+    "verify_euler_seed_bounds.py": "5d3cacf0542ec63f1da1e1c515e031bf7a9ab2b28ab458557126ac07ce4a0e63",
+    "euler_seed_bounds_verification.json": "dea437fc063aacf5322dc6f2729122bfcd02b1e559db80430a3d44728b18be52",
+    "verify_shared_divisor_weighted_seeds.py": "ede92f5c878fae2ed85083f6bfe56bfe57d84360d50a4b81b27521c80b9bb129",
+    "shared_divisor_weighted_seeds_certificate.json": "f9f7a94fafd7f4291787be0444bd9972be0bcd00060cec83cab20d2e0c32db63",
+    "shared_divisor_weighted_seeds_verification.json": "a27cfebdacdcc6e3d73f1348cc4f2ee28bea24526b3eb873fbda6ec52b769cec",
+    "verify_structured_seed_modules.py": "9be9d024e36b9dcd229bc799f5eb6a2d1e4ca75a9622bbc72bee6fae1323b5ba",
+    "structured_seed_modules_certificate.json": "62453d5b55b8f759d15ba10876216d1736f8e0783c24ddc4748efac4937b953f",
+    "structured_seed_modules_verification.json": "070f15e0993fbab1b3f6dd22bb6a4cc940c1927a6c6ad43df04d849030f5fa5b",
+    "structured_seed_modules_source_audit.json": "86c2cb3369bc827a8752d4f09d90dd352bc90eb29b91ecc44f93a65a8f00997f",
+    "balanced_logarithmic_seed_bounds_certificate.json": "74d869cf36b9758960d65c3a105cc0ff8cfee8e185a57c414b82013b9084e390",
+    "common_time_seed_factor_initial_input.py": "2f448c20611b0a4c6b68dc6dd60731b9f9733ddf18b6708ebb4b0bfac3dc1dfc",
+    "common_time_seed_factor_initial_failure.json": "ed308a3976f7a0ec979351fb97e5bbdf6358bc2d53a0242579901491cab09976",
+    "common_time_seed_factor_certificate.json": "75922fd6cdc70a583edf181aafaf6cbd3c43d30e2de31736ed08769287468447",
+    "common_time_seed_factor_verification.json": "6a4f452b49ca6e436bd2231483cca0fd89e8a691ca04189f76b08b3c4e1c3135"
+  },
+  "previous_goal_turn_classification": "progress: structured seed modules established global239, odd238, homogeneous/full-W-linear216, mixed-parent210 and tangent239, with all numerical class bounds quantified internally.",
+  "common_time_method": {
+    "same_quotient_connection": true,
+    "whole_cleared_operator_divisible_by_t": true,
+    "old_seed_factor": "R_j=t^j*Rbar_j",
+    "new_denominators": {
+      "ordinary": "t^3*D^2",
+      "cusp": "t^3*D^2",
+      "tangent_shear": "t^3*D^3"
+    },
+    "recurrence": "Rbar_(j+1)=hbar*Rbar_j_prime-j*hbar_prime*Rbar_j+Vbar(Rbar_j)+Sbar*Rbar_j",
+    "denominator_derivative_required": true,
+    "vertical_amplitude_derivatives_required": true,
+    "joint_seed_degrees": {
+      "ordinary": "5j",
+      "cusp": "5j",
+      "tangent_shear": "6j"
+    },
+    "same_reduction_depths": true,
+    "row_degrees": {
+      "nodal": "8j-2-d_i",
+      "transverse": "11j-4-d_i",
+      "triangle": "14j-3-d_i",
+      "cusp": "10j-3-d_i",
+      "tangent": "18j-8-d_i"
+    },
+    "higher_scalar_valuation": "at least3j",
+    "new_parameter_open": false
+  },
+  "class_bounds": {
+    "ordinary_complement_gates": {
+      "nodal": 199,
+      "transverse": 199,
+      "triangle": 189
+    },
+    "ordinary_full_gates": {
+      "nodal": 216,
+      "transverse": 216,
+      "triangle": 216
+    },
+    "cusp_complement_gate": 183,
+    "cusp_full_gate": 210,
+    "tangent_complement_gate": 224,
+    "tangent_full_gate": 224,
+    "homogeneous_nodal_cofactor_degree_bound": 73,
+    "homogeneous_nodal_complement_gate": 72
+  },
+  "homogeneous_parity_refinement": {
+    "checker_cofactor_derived_sufficient_bound": 73,
+    "homogeneous_cubic_is_odd": true,
+    "odd_bound_moment_automatically_zero": 73,
+    "sufficient_complement_prefix": 72,
+    "full_homogeneous_prefix_unchanged": 216
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 216,
+    "cusp": 210,
+    "transverse": 216,
+    "tangent": 224,
+    "triangle": 216,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 224,
+  "least_prefix_interval": [
+    20,
+    224
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    224
+  ],
+  "all_homogeneous_sufficient_pure_prefix": 216,
+  "all_homogeneous_least_prefix_interval": [
+    14,
+    216
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global224": false,
+  "binary_search_rounds_max": 8,
+  "exact_auxiliary_evidence": {
+    "universal_source_cases": 3,
+    "all_j_recurrence_identity": true,
+    "exact_models_replayed": 12,
+    "connection_columns_replayed": 68,
+    "seed_columns_replayed": 36
+  },
+  "external_source_boundary": "Primary Dvorsky v1 selected-body reading reconciled to existing DVG1; no new theorem or producer implementation imported. Rejected the unrelated primary identifier2610.02911 despite a secondary GVC title attribution.",
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c"
+  },
+  "initial_failure_boundary": "The first run stopped before replay because structural equality compared an expanded polynomial to a factored one. The accepted assertion expands their difference to zero; exact failed input and terminal receipt are retained.",
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "analytic_boundary": "Same rational quotient connection, original Wick functional, full ranks and coefficient cover. The retained analytic no-constant-period/nonzero-zeroth arguments are not established by the algebraic replay. Homogeneous72 adds the elementary Gaussian oddness deduction to the checker sufficient73.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "assurance": "Internal all-coefficient common-time-factor/recurrence/cofactor proof with retained complete analytic exclusions; three universal source factorizations, symbolic-j recurrence identity, homogeneous source degree and twelve model replays with68 connection/36 seed certificates. No independent replay, external review or formal verification.",
+  "remaining": [
+    "Least global/odd K in[20,224], homogeneous K in[14,216]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller tangent224 and conic216 gates",
+    "Expanded global I224 radical cofactors",
+    "Independent review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ],
+  "literature_reconciliation": {
+    "search_scope": "Two targeted Gaussian/vanishing queries; not exhaustive coverage.",
+    "dvorsky": {
+      "url": "https://arxiv.org/html/2608.07338v1",
+      "version": "v1",
+      "submitted": "2026-08-07",
+      "selected_body_read": [
+        "Theorem1.1 and its pure/mixed binomial proof",
+        "Corollary2.1 SIC transfer",
+        "Section3 operator and dimension limits"
+      ],
+      "existing_claim": "DVG1",
+      "canonical_source": "archive/non-elliptic/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md",
+      "retained_multiplier_sign": "Q=-c versus source Q=c; only the mixed sign changes.",
+      "new_result_imported": false,
+      "lower_power_or_compression_question_closed": false,
+      "existing_claim_fingerprint": "f9a5a2c3e277e431",
+      "existing_claim_replaced_by": [
+        "DVG3"
+      ],
+      "retained_canonical_sha256": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b"
+    },
+    "rejected_identifier": {
+      "secondary_listing": "https://aixiv.online/abs/2610.02911",
+      "incorrect_attribution": "A GVC two-variable/first-failing-dimension title",
+      "primary_record": "https://arxiv.org/abs/2610.02911",
+      "actual_title": "Probe the Harness: Setup Checks for Stale-Data RL Comparisons in Language Models",
+      "actual_author": "Taiheng Pan",
+      "date": "2026-10-02",
+      "use_as_GVC_source": false
+    }
+  }
+}

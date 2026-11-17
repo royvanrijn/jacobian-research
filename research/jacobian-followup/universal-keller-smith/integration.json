@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-14T18:02:45.077979+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UADECKWILD1",
+    "UASMITHFIX1",
+    "UANONLINEARCOST1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC"
+  ],
+  "old_entry_count": 2029,
+  "new_entry_count": 2032,
+  "unchanged_existing_entry_count": 2028,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "9784803fcfc6780704068d1c58a37307a79345411c25b27d29bc88f34df9cf07",
+  "changed_scope_fingerprints": {
+    "UADECKWILD1": "9ea209509e0cc9b3",
+    "UASMITHFIX1": "724644b5fe1064d4",
+    "UANONLINEARCOST1": "b8798360ec790249",
+    "OP-KDESC": "b90c0570fb9ec56f"
+  },
+  "updated_lessons": [
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-KELLER-RECEIVER-LANDING"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "95637b8e20dae10add00ba8c76b980679a96c977282abc3d9e74a3d3efdcc6b5",
+  "open_problems_closed": [],
+  "assurance": "Written all-characteristic deck/kernel and tame Smith arguments, all-rank Young branching proof and exact small exceptions. Classical inputs credited and primary sources pinned. No independent whole-proof replay, formal verification, external review or novelty certification. General characteristic-zero canonical receiver and unmarked minima remain open.",
+  "same_turn_refinements": [
+    "Combined the new arbitrary-action costs with the retained fixed universal atomic upper bounds to obtain the strict dimension gap in every characteristic-zero rank N>=3. Canonical existence and stabilization sufficiency remain open."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "source_sha256": "e414a31e01b069a75476032527a1b85b509444313219c9f8ed06daa5729b4abc",
+  "cases": [
+    {
+      "removed": "a2",
+      "raw_degree": 4,
+      "high_equations": 69,
+      "quadratic_products": 45,
+      "correctable": false,
+      "seconds": 0.018
+    },
+    {
+      "removed": "a3",
+      "raw_degree": 4,
+      "high_equations": 70,
+      "quadratic_products": 45,
+      "correctable": false,
+      "seconds": 0.035
+    },
+    {
+      "removed": "a5",
+      "raw_degree": 4,
+      "high_equations": 70,
+      "quadratic_products": 45,
+      "correctable": false,
+      "seconds": 0.052
+    },
+    {
+      "removed": "a6",
+      "raw_degree": 4,
+      "high_equations": 62,
+      "quadratic_products": 45,
+      "correctable": false,
+      "seconds": 0.067
+    },
+    {
+      "removed": "a7",
+      "raw_degree": 4,
+      "high_equations": 62,
+      "quadratic_products": 45,
+      "correctable": false,
+      "seconds": 0.082
+    },
+    {
+      "removed": "a8",
+      "raw_degree": 4,
+      "high_equations": 68,
+      "quadratic_products": 45,
+      "correctable": false,
+      "seconds": 0.097
+    },
+    {
+      "removed": "a9",
+      "raw_degree": 4,
+      "high_equations": 59,
+      "quadratic_products": 45,
+      "correctable": false,
+      "seconds": 0.111
+    },
+    {
+      "removed": "a10",
+      "raw_degree": 4,
+      "high_equations": 59,
+      "quadratic_products": 45,
+      "correctable": false,
+      "seconds": 0.125
+    }
+  ]
+}

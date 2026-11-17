@@ -1,0 +1,119 @@
+[
+  {
+    "file": "MATH_STATUS.json",
+    "id": "PF2RULED126",
+    "sha256": "fad6cb29c43f28b27ae38b4a57ba75b0939d60f8e3e513239820ec32f5ad26b1",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-IRREDUCIBLE-TARGET-FRAME-AND-PUNCTURE-EXTENSION-20261116",
+    "sha256": "bd1928b3fd23577c37d92be55009913c8c52b5d574dded8ff3a4ea5395b5822f",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GENERIC-EXACT-MARKS-AND-LIOUVILLE-BOUNDARY-20261116",
+    "sha256": "64752afd47d6ac913cb294882865008636f22e584525f2e325737700cf8a6d8d",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-SEIFERT-FRAMING-CANCELLATION-AND-RESIDUAL-TWO-COVERS",
+    "sha256": "0be1f9698971e968eca52585e8c49911629c8caab16a8bf665c94158ef6cea7b",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-KMON",
+    "sha256": "5e15775eb7bf995987fccc3e4ab8b2029f61258f198032d9d78a68016e24e611",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-SCHUR",
+    "sha256": "05b8bac629441997059a937a77563cba137d526458954012105e435d076ab360",
+    "changed_fields": [
+      "next_step",
+      "prerequisites",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-RESIDUAL-AUDIT",
+    "sha256": "da0ecf8ca8a3a16b8aa083e9d729858b7f3c9c634d1c44a5559d98a0f52c9139",
+    "changed_fields": [
+      "next_step",
+      "prerequisites",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-QUARTIC-RULED-COMPATIBILITY",
+    "sha256": "7cc69108eea7bf7a296b8b4721a512c438b7ae2479302a5894277c453b84a9ad",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ]
+  }
+]

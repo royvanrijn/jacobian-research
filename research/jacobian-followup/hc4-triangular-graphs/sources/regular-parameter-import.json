@@ -1,0 +1,24 @@
+{
+  "review_date": "2026-11-14",
+  "primary_url": "https://arxiv.org/html/math/0608157v2",
+  "retained_file": "arzhantsev-petravchuk-closed-math-0608157v2.html",
+  "sha256": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9",
+  "title": "Closed and Irreducible Polynomials in Several Variables",
+  "authors": [
+    "Ivan V. Arzhantsev",
+    "Anatoliy P. Petravchuk"
+  ],
+  "version": "arXiv:math/0608157v2, 20 May 2007",
+  "publication": "Ukrainian Mathematical Journal 59(12) (2007), 1783-1790 (English translation)",
+  "exact_import": "Theorem 1, implication (i) to (iii): a noncomposite polynomial f has C[f] integrally closed in the ambient polynomial algebra.",
+  "portions_inspected": "Section 2, Definition 1 and Theorem 1; Proposition 1 and its proof of the imported implication; Lemma 3 and its denominator-clearing proof relating polynomial closedness to relative algebraic closedness of C(f).",
+  "role": "An explicit proof input for relative algebraic closedness of a nowhere-critical polynomial parameter. The no-composition argument, the field denominator step (also in the source Lemma 3), finite-cover disjointness and the class-monodromy application are written in the new note.",
+  "imported_closed_polynomial_theorem_fully_reproved": false,
+  "field_denominator_step_reproduced": true,
+  "every_special_fibre_irreducibility_imported": false,
+  "monodromy_or_Danielewski_classification_imported": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

@@ -1,0 +1,190 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\DeclareMathOperator{\CV}{CV}
+\DeclareMathOperator{\ord}{ord}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Lfac}{\mathcal L}
+\title{Verification of the critical-value proof of polynomial composition rigidity}
+\author{Internal research verification; original argument credited below}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+\noindent\textbf{Credit and assurance.}
+The perturbation/critical-value argument is due to liqsweep,
+\emph{Polynomial composition rigidity via critical values}, September 2026,
+\href{https://github.com/blueberryvertigo/polynomial-composition-rigidity/blob/051c74aad9ef9bf8804c371964803aee099c5b63/rigidity.typ}{pinned source},
+Sections 2--5. This note checks the complete argument in its own notation,
+including the inverse-index conversion and the exact factorial/simplex
+translation. It is an internal written verification, not external refereeing,
+a proof-assistant verification, or an originality claim. Finite symbolic
+controls check transcription identities; the analytic proof below carries
+the universal quantifiers. The registry distinguishes these assurance levels.
+
+\begin{lemma}\label{lem:basins}
+A polynomial $P\in\C[z]$ of degree at least two has at most
+$\#\CV(P)$ distinct attracting fixed points. Here
+$\CV(P)=\{P(c):P'(c)=0\}$ counts distinct finite values.
+\end{lemma}
+\begin{proof}
+For an attracting fixed point $p$, let $B_p$ be its full basin of attraction.
+An escape radius for $P$ bounds $B_p$. We prove that $B_p$ contains a critical
+point. This is immediate if $P'(p)=0$. Otherwise suppose it contains none,
+and choose a disk $D$ centered at $p$ whose closure lies in $B_p$.
+
+For every integer $j\geq1$, all points of $P^{-j}(D)$ lie in $B_p$.
+The derivative of $P^{\circ j}$ is nonzero there: each factor in its chain
+rule is evaluated at another point of $B_p$. The restriction
+$P^{\circ j}:P^{-j}(D)\to D$ is proper and unramified. Each connected
+component maps onto $D$ (the image is open and closed), and is a covering
+of the simply connected disk. The component containing $p$ therefore
+provides a holomorphic inverse $u_j:D\to B_p$ fixing $p$. Consequently
+$u_j'(p)=P'(p)^{-j}$. Cauchy's derivative estimate bounds these derivatives
+uniformly, since every $u_j(D)$ lies inside the same escape disk. This
+contradicts $0<|P'(p)|<1$.
+
+Choose a critical point $c_p\in B_p$. Its value $P(c_p)$ belongs to $B_p$.
+Distinct full basins are disjoint, so these critical values are distinct.
+This proves the lemma, including collisions or multiplicities of other
+critical points. Only full basins are used; no assumption about the
+connectedness of the full basin is needed.
+\end{proof}
+
+\begin{lemma}\label{lem:contact}
+If $F(0)=0$, $F'(0)=1$ and $F\ne z$, then
+\[
+ \ord_0(F-z)-1\leq\#\CV(F).
+\]
+\end{lemma}
+\begin{proof}
+Write $F(z)=z+c z^{k+1}+z^{k+2}r(z)$, with $c\ne0$, $k\geq1$.
+For real $\delta>0$ tending to zero set
+$G_\delta=(1+\delta^k)F$. Its critical values are those of $F$ multiplied
+by $1+\delta^k$, so their number does not change.
+
+The equation $G_\delta(\delta w)=\delta w$ for $w\ne0$ becomes
+\[
+ 1+(1+\delta^k)c w^k+
+ \delta(1+\delta^k)w^{k+1}r(\delta w)=0.
+\]
+At $\delta=0$ its $k$ roots $\alpha_j$ are distinct and nonzero.
+The holomorphic implicit-function theorem gives distinct fixed points
+$z_j(\delta)=\delta\alpha_j+O(\delta^2)$. At any nonzero $z$ the exact
+identity is
+\[
+ G_\delta'(z)=1-k\delta^k+
+ (1+\delta^k)z^{k+1}(r(z)+zr'(z))
+ +(k+1)\frac{G_\delta(z)-z}{z}.
+\]
+Thus, uniformly over the finitely many branches,
+$G_\delta'(z_j)=1-k\delta^k+O(\delta^{k+1})$.
+For sufficiently small positive $\delta$, $k\delta^k<1$ and the error has
+absolute value less than $k\delta^k/2$. It follows that
+$|G_\delta'(z_j)|<1$. Lemma~\ref{lem:basins} counts these $k$ attracting
+fixed points and gives $k\leq\#\CV(F)$. The point $0$ is repelling and
+is not included in the count.
+\end{proof}
+
+\begin{theorem}[Composition contact bound]\label{thm:composition}
+For nonconstant complex polynomials $f_1,\ldots,f_s$, put
+$F=f_s\circ\cdots\circ f_1$. If $F(0)=0$, $F'(0)=1$, and $F\ne z$, then
+\[
+ \ord_0(F-z)\leq1+\sum_i\#\CV(f_i)
+ \leq1+\sum_i(\deg f_i-1).
+\]
+In particular, $\ord_0(a\circ b-z)\leq\deg a+\deg b-1$.
+\end{theorem}
+\begin{proof}
+The chain rule gives
+$\CV(a\circ b)\subseteq\CV(a)\cup a(\CV(b))$.
+Iterate this inclusion and apply Lemma~\ref{lem:contact}.
+The final inequality counts critical points with multiplicity as an upper
+bound on distinct values. Degree-one factors contribute zero.
+\end{proof}
+
+\begin{corollary}[Furter rigidity, with explicit indices]\label{cor:rigidity}
+Let $a(z)=z+O(z^2)$ be polynomial of degree at most $m+1$.
+If the coefficients of $z^{n+1},\ldots,z^{n+m}$ in $a^{-1}$ vanish for
+some $n\geq1$, then $a=z$. This is $R(m)_n$ in Edo--van den Essen's notation.
+\end{corollary}
+\begin{proof}
+Let $b$ be $a^{-1}$ truncated through degree $n$. The missing block gives
+$a^{-1}-b=O(z^{n+m+1})$. Polynomial substitution preserves this order,
+so $a\circ b-z=O(z^{n+m+1})$. If the composition is not $z$,
+Theorem~\ref{thm:composition} bounds its order by $m+n$, a contradiction.
+If it equals $z$, multiplicativity of degree forces $a,b$ to have degree
+one, and their normalizations give $a=b=z$. This also covers $n=1$.
+\end{proof}
+
+\begin{corollary}[Refinement retaining distinct critical values]\label{cor:refined}
+For a nonidentity $a(z)=z+O(z^2)$, put $c=\#\CV(a)$.
+Its inverse has no $c$ consecutive zero coefficients starting at any
+degree at least two.
+\end{corollary}
+\begin{proof}
+For a putative block at degrees $n+1,\ldots,n+c$, truncate at degree $n$.
+The order of contact is at least $n+c+1$, whereas the sharper bound gives
+$1+\#\CV(a)+\#\CV(b)\leq n+c$. Equality of the composition to $z$ again
+forces $a=z$.
+\end{proof}
+This refinement follows directly from the credited argument; no priority
+claim is made for it. It can improve the degree bound when critical values
+collide. All these characteristic-zero statements descend to any
+characteristic-zero field by embedding the finitely generated coefficient
+field in $\C$. They fail in characteristic $p$: $a=z+z^p$, $b=z-z^p$
+give $a\circ b-z=-z^{p^2}$.
+
+\section*{The factorial and simplex consequences}
+Fix $r\geq1$, $\mu=(\mu_1,\ldots,\mu_r)$, and set
+\[
+ a_\mu(z)=z\prod_{i=1}^r(1-\mu_i z),\qquad
+ f_\mu(y)=\Big(\prod_{i=1}^r y_i\Big)\sum_{i=1}^r\mu_i y_i.
+\]
+The following calculation reproduces the bridge of Edo--van den Essen,
+\href{https://arxiv.org/abs/1304.3956}{Theorem 2.25 and Lemma 2.26}.
+If $b_\mu=a_\mu^{-1}$, Lagrange inversion and direct expansion give
+\begin{align*}
+ [z^{k+1}]b_\mu
+ &=\frac1{k+1}\sum_{j_1+\cdots+j_r=k}
+       \prod_i\binom{k+j_i}{j_i}\mu_i^{j_i},\\
+ \Lfac(f_\mu^k)
+ &=k!\sum_{j_1+\cdots+j_r=k}
+       \prod_i\frac{(k+j_i)!}{j_i!}\mu_i^{j_i}\\
+ &=(k+1)(k!)^{r+1}[z^{k+1}]b_\mu.                 \tag{1}
+\end{align*}
+Every prefactor is nonzero. Therefore Corollary~\ref{cor:refined} forbids
+$\#\CV(a_\mu)$ consecutive zero factorial moments of $f_\mu$, when
+$\mu\ne0$. In particular it forbids $\mathcal N(f_\mu)$ consecutive zeros:
+if $s$ of the $\mu_i$ are nonzero, $\deg a_\mu=s+1$, so
+$\#\CV(a_\mu)\leq s=\mathcal N(f_\mu)$. Equivalently one can remove
+inactive variables using
+$\Lfac(f_\mu^k)=(k!)^{r-s}\Lfac(f_{\mu,\mathrm{active}}^k)$.
+This proves SFC for this particular family in every dimension, not SFC
+for arbitrary polynomials. The ordinary FC assertion for this family was
+already proved in Edo--van den Essen, Corollary 2.28.
+
+For $T\sim\operatorname{Dir}(1,\ldots,1)$ on the $(r-1)$-simplex, put
+$p_\mu(T)=(\prod_iT_i)\sum_i\mu_iT_i$. Homogeneity gives the additional
+exact identity
+\[
+ \Lfac(f_\mu^k)=(r)_{(r+1)k}\,\mathbb E[p_\mu(T)^k].          \tag{2}
+\]
+Consequently the same no-gap statement holds for this explicit family
+under uniform simplex integration. Substitution
+$y_i=(x_i^2+z_i^2)/2$ also gives it for a family of homogeneous Gaussian
+phases of degree $2(r+1)$, invariant under independent block rotations.
+This consequence uses the exact moments, without assuming Gaussian MZ.
+
+\section*{Limits}
+The proof does not establish FC for general multivariate polynomials,
+SFC outside the displayed family, or absence of all pure-null polynomials
+on triangles or higher simplices. Unrestricted Image is already false
+by the separately retained Dvorsky--Long witness. Long's FC(2) proof has
+different analytic and arithmetic dependencies. No claim about those
+dependencies follows from the dynamical argument above.
+\end{document}

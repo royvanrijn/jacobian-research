@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/FINITE_MULTIPLIER_MIXED_DECISION.md",
+  "canonical_proof_sha256": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+  "claims": [
+    "MVHOLPOLY20261115",
+    "GMCMIXEDDECIDE20261115",
+    "GMCPOLEQUOT20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_finite_multiplier_decision.py",
+  "checker_sha256": "0d9b2395c8bdaab2df60d876716f1323ad80659cb0c2974cbed474195158f7e8",
+  "receipt": "jacobian-followup/moment-vanishing-audit/finite_multiplier_verification.json",
+  "receipt_sha256": "9c7da97fe38e0ab2e66b49cd000cde079df384cb88b7046a58c0f3a93d268e46",
+  "prior_frontier": "jacobian-followup/moment-vanishing-audit/finite_multiplier_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "primary_moment_ideal_source_audit.json": "b6530ffd3df9a331f3b6e0e74cdf531213778afab0d3bf2e3e57a9dd60767665",
+    "primary_moment_ideal_verification.json": "5f2c34507294e1abca9f773e2993dd967b995a48454bbd86c3dfa0c005c2b79a",
+    "GENERIC_POINT_FINITE_MOMENT_ALGORITHM.md": "3529684d1c4b173beb6b3ee9f2dc6cc580dbec3f4fb0c1785e5b8848eac26900",
+    "ACTUAL_DIRECTION_RANK_ONE_RIGIDITY.md": "525a5a306c59f2d24a9f7eb5e9a715d56f57b3acdbccbfeec7c8e082c7d0c90b",
+    "ALL_DEGREE_STRUCTURE_AND_BARRIERS.md": "f6c93353723419d9e308f2ae1d1bc7da8264f15040f8e13bc2ee366cdfac4625",
+    "GAUSSIAN_SHEAR_NORMAL_FORM_AND_TRANSFERS.md": "20043bb3f092918fa8b1d6a55c8c5d03cc9fa9c403683cf1c66a7ab1e40388cb",
+    "CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "CUBIC_FRAME_AND_PREFIX_COMPUTABILITY.md": "4668e01d20d8b55357c72c51211c8c0beb5516ac239a4d855d3bc93e1de64b89"
+  },
+  "software": "SymPy1.14.0;general full-module generator algorithm not implemented or executed",
+  "primary_scope_audit": [
+    {
+      "url": "https://www.lab.twcu.ac.jp/oaku/Oaku2013.pdf",
+      "paper": "Oaku integration author preprint,front matter2May2012",
+      "read": "Section3 full algebraic integration-module quotient,b-function generator bound and finite module presentation before definition4,plus cyclic integration-ideal distinction",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/oaku_integration_author_preprint.pdf",
+      "sha256": "1d28e3f8e19070a2e3883f54b48d2acb4e916f482cb2740f84063b532bf8664a",
+      "imported_fact": "Full integrated polynomial Weyl module is holonomic and has computable finite monomial generators from its integration b-function",
+      "boundary": "Full module is required;annihilator of seed1 or K(t)-basis is not a replacement. Formal Gaussian IBP supplies evaluation without analytic integrability"
+    },
+    {
+      "url": "https://journals.rcsi.science/0132-3474/article/download/287079/264547",
+      "doi": "10.31857/S0132347425010066",
+      "paper": "Abramov--Ryabenko,Polynomial relations for bounds on exponents in solutions to operator equations,Programming2025,no1,pp51--58",
+      "read": "Sections2.1--2.2 and section4 theorem1/proof,differential degree and valuation portions",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/abramov_ryabenko_indicial_2025.pdf",
+      "sha256": "41b0c92132324568c0df86fdb4162ff5da16305507c031a684468f4820522985",
+      "use": "Classical endpoint indicial bound discipline;direct scalar differential proofs are written locally",
+      "boundary": "General composition theorem,difference/q-difference cases and producer code not imported"
+    },
+    {
+      "url": "https://github.com/long-mathematics/gaussian-moments-counterexamples/blob/main/gaussian_moments_counterexamples.tex",
+      "repository": "long-mathematics/gaussian-moments-counterexamples",
+      "path": "gaussian_moments_counterexamples.tex",
+      "retrieved_with": "GitHub connector fetch_file,main",
+      "git_blob_sha": "de4082caa41f537c9712a38b934a83172a6658d9",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/long_gaussian_de4082c.tex",
+      "sha256": "26b7d4ecf9fa79d708f199ee0598ef70e03f093da6301899f18b528f07637b28",
+      "read": "Introduction,ternary theorem and coefficient proof,half-pair generating identity/how examples were found",
+      "use": "Current primary source refresh for retained B and F_Z=t/(1-t);full source/image/pole quotient are internal extensions",
+      "boundary": "Older source sentence leaving n2 open is superseded by retained binary theorem;Jacobian discussion not imported or newly audited;producer code not executed"
+    },
+    {
+      "url": "https://www.ccas.ru/sabramov/ps/1-s2.0-S0041555389800023-main.pdf",
+      "read": "Fetch timed out;no body read or theorem imported from this fetch"
+    }
+  ],
+  "scalar_polynomiality": {
+    "input": "Computable formal series with nonzero scalar K[t]-differential annihilator",
+    "infinity_bound": "Largest nonnegative integer root of highest-degree falling-factorial indicial polynomial;none means only zero polynomial",
+    "candidate": "Truncate through infinity bound",
+    "tail_annihilator": "L if L(T)=0;otherwise(S Dt-S_prime)L,whereS=L(T)",
+    "zero_test": "Origin indicial roots give finite exact tail jet,also at singular/irregular zero",
+    "failure_certificate": "Valid scalar annihilator,infinity degree bound and detected nonzero coefficient above bound"
+  },
+  "finite_multiplier_criterion": {
+    "module": "H=K[t,X]/sum(partial_i+tP_i-X_i)K[t,X]",
+    "ring": "Polynomial Weyl algebra K[t]<Dt>,not its rational localization",
+    "generators": "Computable monomial amplitudes |alpha|<=integration b-function bound",
+    "Gaussian_map": "Formal coefficientwise Gaussian IBP gives D_t-linear Lambda",
+    "safe_criterion": "All finite generator images polynomial iff Lambda(H)=K[t] iff every multiplier has eventually zero mixed moments",
+    "failure_witness_degree": "Computable bound and least degree by finite monomial polynomiality tests",
+    "input_field": "Exactly presented effective finitely generated characteristic-zero field",
+    "pure_nullity": "Separate exact F1=1 test;not inferred from eventuality",
+    "fixed_degree_cutoff": "Exact last index for all degreeQ<=d computable after acceptance",
+    "uniform_linear_cutoff_claimed": false,
+    "coefficient_locus_constructibility_claimed": false,
+    "generic_positive_descends": "Every fixed monomial tail gives polynomial identities on entire prime component",
+    "generic_failure_specialization": "No finite mixed moment permits rejecting all specializations with later finite cutoffs"
+  },
+  "quartic_image": {
+    "B": "W(1+Z)-(1+3Z/2+Z^2/2)T^2",
+    "pure_series": "1",
+    "Z_series": "t/(1-t)",
+    "full_image": "K[t,(1-t)^(-1)]",
+    "generic_rank": 1,
+    "quotient_by_polynomial_submodule": "Simple point module delta_(t=1)",
+    "extension_splits": false,
+    "rank_one_or_rationality_implies_safety": false,
+    "classification_of_all_failure_images_claimed": false
+  },
+  "small_replay": {
+    "scalar_polynomiality_examples": {
+      "constant": {
+        "infinity_indicial": "z",
+        "polynomial_degree_bound": 0,
+        "origin_jet_bound": 0,
+        "polynomial": true,
+        "first_tail_index": null,
+        "candidate": "1"
+      },
+      "polynomial": {
+        "infinity_indicial": "z*(z - 5)*(z - 4)*(z - 3)*(z - 2)*(z - 1)",
+        "polynomial_degree_bound": 5,
+        "origin_jet_bound": 5,
+        "polynomial": true,
+        "first_tail_index": null,
+        "candidate": "t**5 + 2*t**2"
+      },
+      "exponential": {
+        "infinity_indicial": "-1",
+        "polynomial_degree_bound": -1,
+        "origin_jet_bound": 0,
+        "polynomial": false,
+        "first_tail_index": 0,
+        "candidate": "0"
+      },
+      "marked_quartic": {
+        "infinity_indicial": "-z",
+        "polynomial_degree_bound": 0,
+        "origin_jet_bound": 1,
+        "polynomial": false,
+        "first_tail_index": 1,
+        "candidate": "0"
+      },
+      "simple_pole": {
+        "infinity_indicial": "-z - 1",
+        "polynomial_degree_bound": -1,
+        "origin_jet_bound": 0,
+        "polynomial": false,
+        "first_tail_index": 0,
+        "candidate": "0"
+      },
+      "delayed_rational": {
+        "infinity_indicial": "4 - z",
+        "polynomial_degree_bound": 4,
+        "origin_jet_bound": 5,
+        "polynomial": false,
+        "first_tail_index": 5,
+        "candidate": "0"
+      },
+      "zero": {
+        "infinity_indicial": "1",
+        "polynomial_degree_bound": -1,
+        "origin_jet_bound": 0,
+        "polynomial": true,
+        "first_tail_index": null,
+        "candidate": "0"
+      }
+    },
+    "delayed_jet_shortcut_rejected": true,
+    "generic_specialization_shortcut_rejected": true,
+    "specialized_polynomial_degrees": [
+      0,
+      1,
+      7
+    ],
+    "quartic_source_identity_checked": true,
+    "quartic_exact_moments_checked": 49,
+    "principal_parts_checks": 6,
+    "safe_W_monomial_moments_checked": 168
+  },
+  "new_external_theorem_imported": true,
+  "external_input": "Classical computable full holonomic integration-module presentation and b-function generator bound",
+  "fresh_exhaustive_literature_coverage": false,
+  "producer_package_executed": false,
+  "numeric_frontier_changed": false,
+  "new_cubic_prefix_computed": false,
+  "general_algorithm_implemented": false,
+  "general_algorithm_executed": false,
+  "module_generator_algorithm_executed": false,
+  "universal_finite_multiplier_proof_certified_by_checker": false,
+  "analytic_contour_input_used": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Independent review of full-module finite-multiplier and endpoint polynomiality synthesis",
+    "General implementation,complexity,uniform coefficient-locus geometry and uniform linear cutoffs remain unaddressed",
+    "Structural higher-rank quotient/normal-form G and broader failure-image classification remain open",
+    "Valid operator-order transfers,independent old analytic review and particular scheme/cubic numeric frontiers remain separate"
+  ]
+}

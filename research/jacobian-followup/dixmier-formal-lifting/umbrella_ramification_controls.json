@@ -1,0 +1,60 @@
+{
+  "claim": "QUR1",
+  "status": "PASS",
+  "canonical_change": {
+    "matrix": "Matrix([\n[  1/4,     0, 3/4,    0],\n[-2/15,     0, 3/5,    0],\n[    0, -4/45,   0, 8/15],\n[    0,   1/9,   0,    1]])",
+    "determinant": "1/27",
+    "all_six_brackets": "PASS",
+    "right_target_sign": -27
+  },
+  "normalization": {
+    "image_ring": "k[x,w^2,xw,w^3]",
+    "missing_monomial": "w",
+    "conductor": "(x,w^2)",
+    "old_left_rank": 3,
+    "new_position_rank": 2,
+    "standard_umbrella_scaling": "PASS",
+    "singular_differential_rank": 1
+  },
+  "rank_two_obstruction": {
+    "traceless_syzygy_equations": "PASS",
+    "scalar_factor_jacobian": "-32/27",
+    "curvature_lower_left": "-4/9",
+    "universal_factorization": "PASS",
+    "moving_zero_commutator_divisibility": "a^2",
+    "derivative_valuation": "e",
+    "commutator_minimum_valuation": "2e",
+    "all_e_proof": "regular sequence modulo a and formal moving zero",
+    "persistent_block_required": false,
+    "spatial_degree_cutoff": null,
+    "quantum_order_census": false
+  },
+  "positive_controls": {
+    "q_local_full_flat_connection": "PASS",
+    "z_local_full_flat_connection": "PASS",
+    "zero_derivative_difference": "PASS"
+  },
+  "nonpersistent_projector": {
+    "exact_commuting_deformation": "PASS",
+    "unavoidable_linear_entries": [
+      -2,
+      2
+    ]
+  },
+  "source": {
+    "url": "https://msp.org/pjm/2002/203-1/pjm-v203-n1-p06-p.pdf",
+    "use": "standard open Whitney umbrella parametrization only"
+  },
+  "proof_boundary": "All quantum parameter orders for the single prescribed monic normalization module use the written regular-sequence, moving-zero and completed-repolarization proof. Exact controls verify the supporting universal identities. The higher-multiplicity case and arbitrary added summands are not covered by this rank-two argument. Localized connections allow poles and do not repair regular admission. The scalar forward Long graph is different and remains formally unobstructed. No actual finite Long carrier or Dixmier counterexample is claimed.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "REPOLARIZATION_AND_UMBRELLA_RAMIFICATION.md": "1a58ca39187c96b2d5a00c301e76e6cab5e19c1e879d56626913da7aca88d73c",
+    "check_umbrella_ramification.py": "719185aace0c92231e6cb4c53457458e1b842196b60fc11b09b66f1c215e7dff",
+    "FIBRE_RESIDUES_AND_MATRIX_CUSP_OBSTRUCTION.md": "f9f1c685445b450ee352f89beb74c905dc35e842c0b5f71c371021451ff10a8b",
+    "FINITE_MATRIX_ACTIONS_AND_PRIMITIVE_ADMISSION.md": "c6b1c9ab120e6991d38a026dc0109dcd69b00c8854775c4b2dfa484551ecdce3",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "PROOF.md": "63a17ea378a997162eb1a6e4656e44b36d296c0b0b43483a54bde2d38a8753f9"
+  }
+}

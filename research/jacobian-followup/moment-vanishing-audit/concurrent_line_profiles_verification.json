@@ -1,0 +1,68 @@
+{
+  "completed": true,
+  "checker_sha256": "f14a86c8587aedaf054b62a62b74a3f08ab7b8d8a7d235cfe3c78cd3db811e11",
+  "prior_numerator_frame_checker_sha256": "c56fd231648446d5e3cd0d1db9364c7d527a56680b51c34d0648bc9038191417",
+  "rank": 4,
+  "infinity_length": 4,
+  "constant_H_schur_complement": "det Q=m*det Schur",
+  "nonfactor_H": "finite A_mu rank2 plus escape rank2; b!=0 gives two Morse escapes, b=0 gives a complete A2 unfolding split",
+  "A2_unfolding_threshold": [
+    {
+      "ord_unfolding": 1,
+      "kind": "two shrinking Gaussian charts",
+      "Gaussian_width_over_separation_power": "5/4",
+      "fixed_cubic_perturbation_power": "-5/3"
+    },
+    {
+      "ord_unfolding": 2,
+      "kind": "two shrinking Gaussian charts",
+      "Gaussian_width_over_separation_power": "1/2",
+      "fixed_cubic_perturbation_power": "-2/3"
+    },
+    {
+      "ord_unfolding": 3,
+      "kind": "fixed cubic rank2 chart",
+      "Gaussian_width_over_separation_power": "-1/4",
+      "fixed_cubic_perturbation_power": "1/3"
+    },
+    {
+      "ord_unfolding": 4,
+      "kind": "fixed cubic rank2 chart",
+      "Gaussian_width_over_separation_power": "-1",
+      "fixed_cubic_perturbation_power": "4/3"
+    },
+    {
+      "ord_unfolding": 5,
+      "kind": "fixed cubic rank2 chart",
+      "Gaussian_width_over_separation_power": "-7/4",
+      "fixed_cubic_perturbation_power": "7/3"
+    }
+  ],
+  "factor_H_profiles": [
+    {
+      "condition": "q!=0",
+      "finite": 1,
+      "secondary_escapes": 2,
+      "primary_escape": 1,
+      "secondary_action": "q^2/(2*m*c^2)*t^2"
+    },
+    {
+      "condition": "q=0,f!=0",
+      "finite": 0,
+      "secondary_escapes": 3,
+      "primary_escape": 1,
+      "secondary_action": "3*f*V_i/4*t^(4/3)"
+    },
+    {
+      "condition": "q=f=0",
+      "fixed_parabolic_block": 3,
+      "primary_escape": 1,
+      "zero_exponential_seed_power": "t^-1"
+    }
+  ],
+  "primary_action": "t^4/(54*a^2*m^3)",
+  "resolved": "Every ternary cubic with three concurrent distinct leading lines is GMC-safe. Nonisotropic-vertex cases and F2(vertex)!=0 cases are pure-nonvanishing; isotropic F2(vertex)=0 uses the retained W-linear theorem.",
+  "written_proof_certified_by_checker": false,
+  "proof_boundary": "Exact Gaussian completion, binary Jacobian algebra, squarefree resultant, actions and Hessians, secondary rescalings, quartic restriction, positive powers and A2 threshold arithmetic. Formal normal forms, complete frames and the seed argument are written mathematics.",
+  "remaining": "Nonhomogeneous line-smooth-conic and repeated-line leading cubic GMC; numerical global pure gates; coefficient schemes; lower-power GVC; independent review/formalization."
+}

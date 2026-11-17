@@ -1,0 +1,46 @@
+[
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SOURCE-LAYERS-TRACE-KERNEL-20261115",
+    "sha256": "b24b33fdf55bc20096a5cbb55ff84db207008b8aaa5503979b9cdd7a8957c3fc",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CANONICAL-ETALE-RECONSTRUCTION-20261116",
+    "sha256": "43a6e783357348e25d0ea618ff7bbe6f568db2dfe6bf6fa154c3277eb2d857c9",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-SCHUR",
+    "sha256": "5290e0b24eb856ba7b37ab721cdcdc398ed58a22f8e3968f61cce30c7e0e90ad",
+    "changed_fields": [
+      "next_step",
+      "prerequisites",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-RESIDUAL-AUDIT",
+    "sha256": "6a54fba36433ad57df08754e9216c4df3bc5822736beab3f305170a9011c1bae",
+    "changed_fields": [
+      "next_step",
+      "prerequisites",
+      "sources"
+    ]
+  }
+]

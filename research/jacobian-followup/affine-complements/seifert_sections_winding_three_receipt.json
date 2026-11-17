@@ -1,0 +1,640 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 296,
+  "checks": [
+    "predecessor PASS rational_end_orderability_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json verify_rational_end_orderability.py",
+    "sealed predecessor rational_end_orderability_receipt.json RATIONAL_SOURCE_ENDS_AND_TREFOIL_COMMON_EXCLUSION.md",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/manifest.json",
+    "sealed predecessor rational_end_orderability_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/boyer-rolfsen-wiest-2005.pdf",
+    "predecessor PASS lifted_surface_s3_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json verify_lifted_surface_s3.py",
+    "sealed predecessor lifted_surface_s3_receipt.json LIFTED_SURFACE_BALANCES_AND_S3_MARKED_LINKING.md",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/lifted-surface-s3/manifest.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS fibre_order_transfer_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json verify_fibre_order_transfer.py",
+    "sealed predecessor fibre_order_transfer_receipt.json FIBRE_ORDER_AND_NONCYCLIC_ZERO_MARKS.md",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/fibre-order-transfer/manifest.json",
+    "sealed predecessor fibre_order_transfer_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS binomial_periodic_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_binomial_periodic.py",
+    "sealed predecessor binomial_periodic_receipt.json ALL_BINOMIAL_KEYS_PERIODIC_GATE_AND_EXISTENCE.md",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/manifest.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_orbit_tree.py",
+    "sealed predecessor binomial_periodic_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor binomial_periodic_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/zannier-1995.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-colouring/livingston-melvin-1985.pdf",
+    "predecessor PASS seifert_base_genus_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json verify_seifert_base_genus.py",
+    "sealed predecessor seifert_base_genus_receipt.json SEIFERT_BASE_GENUS_AND_COMPANION_TREE.md",
+    "sealed predecessor seifert_base_genus_receipt.json sources/seifert-base-genus/manifest.json",
+    "sealed predecessor seifert_base_genus_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json sources/seifert-base-genus/hatcher-3manifolds.pdf",
+    "predecessor PASS peripheral_cone_budget_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json verify_peripheral_cone_budget.py",
+    "sealed predecessor peripheral_cone_budget_receipt.json PERIPHERAL_CONE_TORSION_AND_MARKED_BUDGET.md",
+    "sealed predecessor peripheral_cone_budget_receipt.json sources/peripheral-cone-budget/manifest.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "retained primary pin nemethi-1510.07128v1.pdf",
+    "third section coefficient",
+    "positive determinant identity",
+    "non-trefoil positive V lower bound b>=2",
+    "non-trefoil positive V at b1",
+    "lifted disk forces relative Euler integer zero",
+    "annulus H1 is torsion-free rank2 (1, -2)",
+    "annulus H1 is torsion-free rank2 (3, 1)",
+    "annulus H1 is torsion-free rank2 (5, 7)",
+    "actual eta filling yields third cone relation",
+    "nonabelian central generator change is unimodular",
+    "exact relation exponent change",
+    "unrestricted normalized Euler identity",
+    "full star determinant identity",
+    "normalized root coefficient primitive identity",
+    "normalized second coefficient primitive identity",
+    "normalized third coefficient primitive identity",
+    "one-step Laufer intersection",
+    "single Pinkham witness l1",
+    "hyperbolic triangle quotient uniform upper bound",
+    "actual root and two beta sections ('2,3,3', 0)",
+    "base annulus one cone before companion fillings ('2,3,3', 0)",
+    "actual root and two beta sections ('2,3,3', 1)",
+    "base annulus one cone before companion fillings ('2,3,3', 1)",
+    "actual root and two beta sections ('2,3,9', 0)",
+    "base annulus one cone before companion fillings ('2,3,9', 0)",
+    "actual root and two beta sections ('2,3,9', 1)",
+    "base annulus one cone before companion fillings ('2,3,9', 1)",
+    "actual root and two beta sections ('2,9,3', 0)",
+    "base annulus one cone before companion fillings ('2,9,3', 0)",
+    "actual root and two beta sections ('2,9,3', 1)",
+    "base annulus one cone before companion fillings ('2,9,3', 1)",
+    "actual root and two beta sections ('2,9,9', 0)",
+    "base annulus one cone before companion fillings ('2,9,9', 0)",
+    "actual root and two beta sections ('2,9,9', 1)",
+    "base annulus one cone before companion fillings ('2,9,9', 1)",
+    "actual root and two beta sections ('3,2,3', 0)",
+    "base annulus one cone before companion fillings ('3,2,3', 0)",
+    "actual root and two beta sections ('3,2,3', 1)",
+    "base annulus one cone before companion fillings ('3,2,3', 1)",
+    "actual root and two beta sections ('3,2,9', 0)",
+    "base annulus one cone before companion fillings ('3,2,9', 0)",
+    "actual root and two beta sections ('3,2,9', 1)",
+    "base annulus one cone before companion fillings ('3,2,9', 1)",
+    "actual root and two beta sections ('3,4,3', 0)",
+    "base annulus one cone before companion fillings ('3,4,3', 0)",
+    "actual root and two beta sections ('3,4,3', 1)",
+    "base annulus one cone before companion fillings ('3,4,3', 1)",
+    "actual root and two beta sections ('3,4,9', 0)",
+    "base annulus one cone before companion fillings ('3,4,9', 0)",
+    "actual root and two beta sections ('3,4,9', 1)",
+    "base annulus one cone before companion fillings ('3,4,9', 1)",
+    "actual root and two beta sections ('3,8,3', 0)",
+    "base annulus one cone before companion fillings ('3,8,3', 0)",
+    "actual root and two beta sections ('3,8,3', 1)",
+    "base annulus one cone before companion fillings ('3,8,3', 1)",
+    "actual root and two beta sections ('3,8,9', 0)",
+    "base annulus one cone before companion fillings ('3,8,9', 0)",
+    "actual root and two beta sections ('3,8,9', 1)",
+    "base annulus one cone before companion fillings ('3,8,9', 1)",
+    "actual root and two beta sections ('3,10,3', 0)",
+    "base annulus one cone before companion fillings ('3,10,3', 0)",
+    "actual root and two beta sections ('3,10,3', 1)",
+    "base annulus one cone before companion fillings ('3,10,3', 1)",
+    "actual root and two beta sections ('3,10,9', 0)",
+    "base annulus one cone before companion fillings ('3,10,9', 0)",
+    "actual root and two beta sections ('3,10,9', 1)",
+    "base annulus one cone before companion fillings ('3,10,9', 1)",
+    "actual root and two beta sections ('4,3,3', 0)",
+    "base annulus one cone before companion fillings ('4,3,3', 0)",
+    "actual root and two beta sections ('4,3,3', 1)",
+    "base annulus one cone before companion fillings ('4,3,3', 1)",
+    "actual root and two beta sections ('4,3,9', 0)",
+    "base annulus one cone before companion fillings ('4,3,9', 0)",
+    "actual root and two beta sections ('4,3,9', 1)",
+    "base annulus one cone before companion fillings ('4,3,9', 1)",
+    "actual root and two beta sections ('4,9,3', 0)",
+    "base annulus one cone before companion fillings ('4,9,3', 0)",
+    "actual root and two beta sections ('4,9,3', 1)",
+    "base annulus one cone before companion fillings ('4,9,3', 1)",
+    "actual root and two beta sections ('4,9,9', 0)",
+    "base annulus one cone before companion fillings ('4,9,9', 0)",
+    "actual root and two beta sections ('4,9,9', 1)",
+    "base annulus one cone before companion fillings ('4,9,9', 1)",
+    "actual root and two beta sections ('8,3,3', 0)",
+    "base annulus one cone before companion fillings ('8,3,3', 0)",
+    "actual root and two beta sections ('8,3,3', 1)",
+    "base annulus one cone before companion fillings ('8,3,3', 1)",
+    "actual root and two beta sections ('8,3,9', 0)",
+    "base annulus one cone before companion fillings ('8,3,9', 0)",
+    "actual root and two beta sections ('8,3,9', 1)",
+    "base annulus one cone before companion fillings ('8,3,9', 1)",
+    "actual root and two beta sections ('8,9,3', 0)",
+    "base annulus one cone before companion fillings ('8,9,3', 0)",
+    "actual root and two beta sections ('8,9,3', 1)",
+    "base annulus one cone before companion fillings ('8,9,3', 1)",
+    "actual root and two beta sections ('8,9,9', 0)",
+    "base annulus one cone before companion fillings ('8,9,9', 0)",
+    "actual root and two beta sections ('8,9,9', 1)",
+    "base annulus one cone before companion fillings ('8,9,9', 1)",
+    "actual root and two beta sections ('9,2,3', 0)",
+    "base annulus one cone before companion fillings ('9,2,3', 0)",
+    "actual root and two beta sections ('9,2,3', 1)",
+    "base annulus one cone before companion fillings ('9,2,3', 1)",
+    "actual root and two beta sections ('9,2,9', 0)",
+    "base annulus one cone before companion fillings ('9,2,9', 0)",
+    "actual root and two beta sections ('9,2,9', 1)",
+    "base annulus one cone before companion fillings ('9,2,9', 1)",
+    "actual root and two beta sections ('9,4,3', 0)",
+    "base annulus one cone before companion fillings ('9,4,3', 0)",
+    "actual root and two beta sections ('9,4,3', 1)",
+    "base annulus one cone before companion fillings ('9,4,3', 1)",
+    "actual root and two beta sections ('9,4,9', 0)",
+    "base annulus one cone before companion fillings ('9,4,9', 0)",
+    "actual root and two beta sections ('9,4,9', 1)",
+    "base annulus one cone before companion fillings ('9,4,9', 1)",
+    "actual root and two beta sections ('9,8,3', 0)",
+    "base annulus one cone before companion fillings ('9,8,3', 0)",
+    "actual root and two beta sections ('9,8,3', 1)",
+    "base annulus one cone before companion fillings ('9,8,3', 1)",
+    "actual root and two beta sections ('9,8,9', 0)",
+    "base annulus one cone before companion fillings ('9,8,9', 0)",
+    "actual root and two beta sections ('9,8,9', 1)",
+    "base annulus one cone before companion fillings ('9,8,9', 1)",
+    "actual root and two beta sections ('9,10,3', 0)",
+    "base annulus one cone before companion fillings ('9,10,3', 0)",
+    "actual root and two beta sections ('9,10,3', 1)",
+    "base annulus one cone before companion fillings ('9,10,3', 1)",
+    "actual root and two beta sections ('9,10,9', 0)",
+    "base annulus one cone before companion fillings ('9,10,9', 0)",
+    "actual root and two beta sections ('9,10,9', 1)",
+    "base annulus one cone before companion fillings ('9,10,9', 1)",
+    "actual root and two beta sections ('10,3,3', 0)",
+    "base annulus one cone before companion fillings ('10,3,3', 0)",
+    "actual root and two beta sections ('10,3,3', 1)",
+    "base annulus one cone before companion fillings ('10,3,3', 1)",
+    "actual root and two beta sections ('10,3,9', 0)",
+    "base annulus one cone before companion fillings ('10,3,9', 0)",
+    "actual root and two beta sections ('10,3,9', 1)",
+    "base annulus one cone before companion fillings ('10,3,9', 1)",
+    "actual root and two beta sections ('10,9,3', 0)",
+    "base annulus one cone before companion fillings ('10,9,3', 0)",
+    "actual root and two beta sections ('10,9,3', 1)",
+    "base annulus one cone before companion fillings ('10,9,3', 1)",
+    "actual root and two beta sections ('10,9,9', 0)",
+    "base annulus one cone before companion fillings ('10,9,9', 0)",
+    "actual root and two beta sections ('10,9,9', 1)",
+    "base annulus one cone before companion fillings ('10,9,9', 1)",
+    "all64 S3/S3 incidence types retained",
+    "actual primitive coefficients even with shared cone primes (2, 9, 9)",
+    "negative definite normalized Euler (2, 9, 9)",
+    "unbounded l1 witness actual coefficients (2, 9, 9)",
+    "quotient full integral H1 (2, 9, 9)",
+    "all ordinary classes retained (2, 9, 9)",
+    "actual satellite retains full groups and R mark ('(2, 9, 9)', 0)",
+    "actual satellite retains full groups and R mark ('(2, 9, 9)', 1)",
+    "actual primitive coefficients even with shared cone primes (4, 3, 9)",
+    "negative definite normalized Euler (4, 3, 9)",
+    "unbounded l1 witness actual coefficients (4, 3, 9)",
+    "quotient full integral H1 (4, 3, 9)",
+    "all ordinary classes retained (4, 3, 9)",
+    "actual satellite retains full groups and R mark ('(4, 3, 9)', 0)",
+    "actual satellite retains full groups and R mark ('(4, 3, 9)', 1)",
+    "actual primitive coefficients even with shared cone primes (4, 9, 9)",
+    "negative definite normalized Euler (4, 9, 9)",
+    "unbounded l1 witness actual coefficients (4, 9, 9)",
+    "quotient full integral H1 (4, 9, 9)",
+    "all ordinary classes retained (4, 9, 9)",
+    "actual satellite retains full groups and R mark ('(4, 9, 9)', 0)",
+    "actual satellite retains full groups and R mark ('(4, 9, 9)', 1)",
+    "actual primitive coefficients even with shared cone primes (8, 3, 9)",
+    "negative definite normalized Euler (8, 3, 9)",
+    "unbounded l1 witness actual coefficients (8, 3, 9)",
+    "quotient full integral H1 (8, 3, 9)",
+    "all ordinary classes retained (8, 3, 9)",
+    "actual satellite retains full groups and R mark ('(8, 3, 9)', 0)",
+    "actual satellite retains full groups and R mark ('(8, 3, 9)', 1)",
+    "actual primitive coefficients even with shared cone primes (2, 15, 15)",
+    "negative definite normalized Euler (2, 15, 15)",
+    "unbounded l1 witness actual coefficients (2, 15, 15)",
+    "quotient full integral H1 (2, 15, 15)",
+    "all ordinary classes retained (2, 15, 15)",
+    "actual satellite retains full groups and R mark ('(2, 15, 15)', 0)",
+    "actual satellite retains full groups and R mark ('(2, 15, 15)', 1)",
+    "actual primitive coefficients even with shared cone primes (10, 9, 21)",
+    "negative definite normalized Euler (10, 9, 21)",
+    "unbounded l1 witness actual coefficients (10, 9, 21)",
+    "quotient full integral H1 (10, 9, 21)",
+    "all ordinary classes retained (10, 9, 21)",
+    "actual satellite retains full groups and R mark ('(10, 9, 21)', 0)",
+    "actual satellite retains full groups and R mark ('(10, 9, 21)', 1)",
+    "actual primitive coefficients even with shared cone primes (14, 45, 9)",
+    "negative definite normalized Euler (14, 45, 9)",
+    "unbounded l1 witness actual coefficients (14, 45, 9)",
+    "quotient full integral H1 (14, 45, 9)",
+    "all ordinary classes retained (14, 45, 9)",
+    "actual satellite retains full groups and R mark ('(14, 45, 9)', 0)",
+    "actual satellite retains full groups and R mark ('(14, 45, 9)', 1)",
+    "shared cone primes explicitly exercised",
+    "r3 actual outer boundary is a basis",
+    "r3 regular fibre word retained",
+    "r3 fixed beta section",
+    "r3 actual inner meridian inverse",
+    "r3 actual inner longitude shear",
+    "r3 gluing reverses boundary orientation",
+    "r3 mark is primitive",
+    "r3 quotient truly finite cyclic (2, 9)",
+    "r3 one-step witness correctly absent (2, 9)",
+    "r3 actual gluing retains independent torsion (2, 9)",
+    "r3 both ordinary classes retained (2, 9)",
+    "r3 actual full satellite independently checks marked gluing (2, 9, 0)",
+    "r3 actual full satellite independently checks marked gluing (2, 9, 1)",
+    "r3 quotient truly finite cyclic (4, 3)",
+    "r3 one-step witness correctly absent (4, 3)",
+    "r3 actual gluing retains independent torsion (4, 3)",
+    "r3 both ordinary classes retained (4, 3)",
+    "r3 actual full satellite independently checks marked gluing (4, 3, 0)",
+    "r3 actual full satellite independently checks marked gluing (4, 3, 1)",
+    "r3 quotient truly finite cyclic (14, 45)",
+    "r3 one-step witness correctly absent (14, 45)",
+    "r3 actual gluing retains independent torsion (14, 45)",
+    "r3 both ordinary classes retained (14, 45)",
+    "r3 actual full satellite independently checks marked gluing (14, 45, 0)",
+    "r3 actual full satellite independently checks marked gluing (14, 45, 1)",
+    "trefoil and all non-S3 common closures retained"
+  ],
+  "general": {
+    "PF74_all_degree_source_obstruction_retained": true,
+    "actual_peripheral_section_maps_required": true,
+    "closed_group_quotient_suffices": true,
+    "all_higher_degree_packets_assumed_common": false
+  },
+  "quartic": {
+    "actual_primitive_binomial_two_stage_required": true,
+    "all64_S3_S3_incidence_types": true,
+    "actual_annulus_relative_Euler_zero": true,
+    "root_and_boundary_sections_retained": true,
+    "normalized_star": "e0=-1;(s,s-1),(k,c),(B,V)",
+    "V": "c-2bt",
+    "B": "(3sV+1)/2",
+    "Euler": "-D/(skB)",
+    "pairwise_coprime_cone_orders_required": false,
+    "twists_inferred_from_H1": false,
+    "non_trefoil_s_at_least3_common_entirely_excluded": true,
+    "universal_Laufer_first_intersection": 2,
+    "universal_Pinkham_witness": 1,
+    "entire_actual_two_stage_common_requires_r": 3,
+    "trefoil_common_entirely_excluded": true,
+    "r3_non_trefoil_common_entirely_excluded": false,
+    "passing_complementary_sectors_excluded": false
+  },
+  "residual": {
+    "r": 3,
+    "virtual_quotient_group": "Z/D",
+    "virtual_quotient_not_LO_for_D_greater1": true,
+    "actual_main_cable_homeomorphic_T2_times_I": true,
+    "actual_companion_pieces_retained": true,
+    "actual_gluing_m": [
+      -1,
+      0
+    ],
+    "actual_gluing_L": "(k/2,1)",
+    "actual_R_mark": "(k,3)",
+    "exact_JSJ_classification_asserted": false,
+    "affine_source_realization_asserted": false
+  },
+  "full_satellite_controls": [
+    {
+      "e": 2,
+      "o": 9,
+      "r": 9,
+      "alpha": [
+        3,
+        64,
+        5
+      ],
+      "omega": [
+        2,
+        7,
+        1
+      ],
+      "e0": -1,
+      "D": 23,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          23
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "e": 4,
+      "o": 3,
+      "r": 9,
+      "alpha": [
+        3,
+        46,
+        5
+      ],
+      "omega": [
+        2,
+        5,
+        1
+      ],
+      "e0": -1,
+      "D": 17,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          34
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2
+        ]
+      }
+    },
+    {
+      "e": 4,
+      "o": 9,
+      "r": 9,
+      "alpha": [
+        3,
+        208,
+        50
+      ],
+      "omega": [
+        2,
+        23,
+        11
+      ],
+      "e0": -1,
+      "D": 86,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          86
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "e": 8,
+      "o": 3,
+      "r": 9,
+      "alpha": [
+        3,
+        118,
+        23
+      ],
+      "omega": [
+        2,
+        13,
+        5
+      ],
+      "e0": -1,
+      "D": 47,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          188
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          4
+        ]
+      }
+    },
+    {
+      "e": 2,
+      "o": 15,
+      "r": 15,
+      "alpha": [
+        5,
+        196,
+        23
+      ],
+      "omega": [
+        4,
+        13,
+        3
+      ],
+      "e0": -1,
+      "D": 73,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          73
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "e": 10,
+      "o": 9,
+      "r": 21,
+      "alpha": [
+        7,
+        1492,
+        431
+      ],
+      "omega": [
+        6,
+        71,
+        41
+      ],
+      "e0": -1,
+      "D": 641,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3205
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      }
+    },
+    {
+      "e": 14,
+      "o": 45,
+      "r": 9,
+      "alpha": [
+        3,
+        5140,
+        1625
+      ],
+      "omega": [
+        2,
+        571,
+        361
+      ],
+      "e0": -1,
+      "D": 2255,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          15785
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          35
+        ]
+      }
+    }
+  ],
+  "r3_controls": [
+    {
+      "e": 2,
+      "o": 9,
+      "r": 3,
+      "D": 8,
+      "quotient_group": "Z/8",
+      "m": [
+        -1,
+        0
+      ],
+      "L": [
+        11,
+        1
+      ],
+      "R": [
+        22,
+        3
+      ]
+    },
+    {
+      "e": 4,
+      "o": 3,
+      "r": 3,
+      "D": 6,
+      "quotient_group": "Z/6",
+      "m": [
+        -1,
+        0
+      ],
+      "L": [
+        8,
+        1
+      ],
+      "R": [
+        16,
+        3
+      ]
+    },
+    {
+      "e": 14,
+      "o": 45,
+      "r": 3,
+      "D": 752,
+      "quotient_group": "Z/752",
+      "m": [
+        -1,
+        0
+      ],
+      "L": [
+        857,
+        1
+      ],
+      "R": [
+        1714,
+        3
+      ]
+    }
+  ],
+  "assurance": {
+    "written_unbounded_section_and_winding_proofs": true,
+    "prior_complete_primary_page_audits_reused": true,
+    "imported_rational_link_orderability_results": true,
+    "finite_controls_not_universal_proof": true,
+    "deep_theorems_independently_reproved": false,
+    "group_quotient_claimed_actual_homeomorphism": false,
+    "r3_quotient_claimed_actual_target_group": false,
+    "uninspected_Rasmussen_theorem_imported": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "finite_Keller_map": false,
+    "PF63_polynomial_curves_declared_nonexistent": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_seifert_sections_winding_three.py": "cadf533be93d2f13e480427431f5115309cd17f04c0a1b60b51cd578098a9915",
+    "SEIFERT_SECTION_NORMALIZATION_AND_WINDING_THREE.md": "8dca121d6aa159ede5f3606fbb05edc8f232134551c88650dff0be906f86c0d7",
+    "sources/seifert-sections-winding-three/manifest.json": "b7c85a5f9e2c7afed288acd504c294439fe135d7f233a33008e747161314b537",
+    "rational_end_orderability_receipt.json": "de1ce1ae2febf3b3d5f31f54d93d39debdac61029313805ca2e9e27691edc9d7",
+    "lifted_surface_s3_receipt.json": "047f6b33e0849bb630525cc1e816e3371111217e0489905d65e64605b1634a5b",
+    "fibre_order_transfer_receipt.json": "a256433f7c46d52c5cd3063082ca36dada24808c6043ac9dc8b0207a965ea38b",
+    "binomial_periodic_receipt.json": "1915d4914d60fd87f0d09cad81f3b799297d83f19550558de4ac9e2dff3ae6d8",
+    "seifert_base_genus_receipt.json": "076b0c9a98adff1222b4dac472f4fa74d2496cb4cba70c110f056878af7ce789",
+    "peripheral_cone_budget_receipt.json": "3c3c63d23ee8a734bb386f7d91aae011a19879437d83c6b919e9a65ac71fa130",
+    "sources/rational-end-orderability/nemethi-1510.07128v1.pdf": "ec6e0f8d0d96fc9f3dfb194c23fffac6f41eb2057ae4e60765e0194f3998f594"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/regular-sector-end/neumann-plumbing-1981.pdf",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/neumann008.pdf",
+      "title": "Neumann, A calculus for plumbing, Trans AMS268(1981),299-344",
+      "bytes": 3507720,
+      "sha256": "61a02e73da4a47216f39dceb22887b2bd3d584ba2418049458d90b3dedd1657b",
+      "complete_PDF_pages_visually_inspected": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "printed_pages": [
+        302,
+        303,
+        304,
+        305,
+        306
+      ],
+      "used_statement": "Section1 disjoint plumbing graph means connected sum; Proposition2.1 R6 zero-end splitting with genus0,punctures0,one attaching edge per branch gives no extra S1xS2 summands. Complete current pages rechecked, not merely determinant elimination.",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+      "url": "https://arxiv.org/pdf/1510.07128v1",
+      "title": "Nemethi, Links of rational singularities, L-spaces and LO fundamental groups, arXiv1510.07128v1",
+      "bytes": 116484,
+      "sha256": "ec6e0f8d0d96fc9f3dfb194c23fffac6f41eb2057ae4e60765e0194f3998f594",
+      "complete_PDF_pages_visually_inspected": [
+        2,
+        3,
+        4
+      ],
+      "printed_pages": [
+        2,
+        3,
+        4
+      ],
+      "used_statement": "Theorem1.6 rationality versus nontrivial left-orderability; Example1.12 equation1.13 exact Seifert non-rationality criterion; Section2.1 Artin fundamental-cycle rationality and irreducibility of connected negative plumbing links. Deep classification is imported, not independently reproved or inferred from the unsettled general L-space conjecture.",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "sources/rational-end-orderability/boyer-rolfsen-wiest-2005.pdf",
+      "url": "https://www.numdam.org/item/10.5802/aif.2098.pdf",
+      "title": "Boyer--Rolfsen--Wiest, Orderable 3-manifold groups, Ann Inst Fourier55(2005),243-288",
+      "bytes": 646871,
+      "sha256": "2edb06961950dd663113cde36f0988eabfd45ab46a6a756cc66fdb6d11089d07",
+      "complete_PDF_pages_visually_inspected": [
+        3
+      ],
+      "printed_pages": [
+        244
+      ],
+      "used_statement": "Theorem1.1(1): compact connected P2-irreducible three-manifold with nontrivial fundamental group has LO group if it has a nontrivial homomorphism into any LO group. Used for each irreducible rational plumbing summand; whole source end need not be irreducible.",
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_inputs": [
+    "PF67 common-coordinate factorization outside N and whole-leaf boundary model",
+    "PF71 strict fold Schur bound",
+    "PF72 all non-S3 common representation closures",
+    "PF73 actual S3 peripheral maps, group pushout quotient and trefoil necessary gates"
+  ],
+  "new_elementary_proofs": [
+    "Pruning boundary blowups to finite-fibre ancestry, then zero-end splitting",
+    "Every integer total-transform coefficient has nonnegative triangular chi increment, proving all source exceptional subgraphs rational at any depth",
+    "Free products inherit the property that all homomorphisms into LO groups are trivial",
+    "Simultaneous companion abelianizations give actual S3 end group quotient with cones s,k,abs(k/2-rbt)",
+    "For every surviving trefoil D, pairwise-coprime cone normalization gives star e0=-2,omega1=1,omega2=k-1,omega3=J-1; l=s+1 satisfies Pinkham floor criterion with equality"
+  ],
+  "general_L_space_conjecture_assumed": false,
+  "all_source_groups_assumed_finite_or_cyclic": false,
+  "other_first_pairs_classified": false,
+  "research_goal_completed": false
+}

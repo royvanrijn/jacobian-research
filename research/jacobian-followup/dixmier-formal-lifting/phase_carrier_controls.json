@@ -1,0 +1,69 @@
+{
+  "claim": "QPH1",
+  "status": "PASS",
+  "phase_derivative_identities": 3,
+  "full_matrix_relations": 6,
+  "higher_degree_g_plus_h_a3_full_relations": 6,
+  "alternative_linear_g_scalar_quantization": "PASS",
+  "exact_rational_chart_relations": 6,
+  "actual_corrected_classical_fourth_image": "PASS",
+  "positive_branch_classical_seed_matches_QPL1": "PASS",
+  "negative_branch_trace_X_residue": -4,
+  "constant_g_algebraic_split_control": "PASS",
+  "weighted_symbol_determinants": [
+    "9*r^2*xi^4",
+    "r^2*xi^6/4"
+  ],
+  "Riccati_coefficients_checked": 4,
+  "Riccati_highest_momentum_coefficients": [
+    "3",
+    "-45/4",
+    "405/4",
+    "-89505/64"
+  ],
+  "scalar_full_normalized_relations_through_h4": "PASS",
+  "finite_global_admission_seed_terms": {
+    "S": 16,
+    "T": 35,
+    "D_minus_D0": 101
+  },
+  "leading_growth_samples": [
+    {
+      "n": 2,
+      "leading_momentum_order": 2,
+      "leading_spatial_degree": 19
+    },
+    {
+      "n": 3,
+      "leading_momentum_order": 3,
+      "leading_spatial_degree": 29
+    },
+    {
+      "n": 4,
+      "leading_momentum_order": 4,
+      "leading_spatial_degree": 39
+    }
+  ],
+  "hashes": {
+    "QUINTIC_PHASE_AND_BRANCH_OBSTRUCTION.md": "8829fba45a6dc41a80fa8b81fda33cb1c1d0d6dee17971f1144b456ef09e2355",
+    "check_phase_carrier.py": "c4795850c99cfd474dc45eb30c4245500e3de6664fe4973a621e89203a8875ce",
+    "phase_long_seed.json": "e1e8cf50c10adfb140a81f9d84e4e5cce0fd863a44e472f7fe0c8d435bd0f8f6",
+    "check_matrix_carrier.py": "2695a7c1038d49ffbd084887438fbd07bf19202408d7ff46b8c64139b14eda84",
+    "matrix_carrier_controls.json": "813d939bd72046215948d543ca32699b442f6c060597f2b1060d428c93ffc1ee",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "ALGEBRAIC_CURVE_STRING_OBSTRUCTION.md": "6a618dca62544527538e0cb8d11d688b703d82547672407bdc3cf87d41160fb4",
+    "PAINLEVE_GLOBAL_LONG_LIFT.md": "aabcac99d97fd824bd16f54ccbd38d1d5c7bcd59b0bc931de0f424284c0ab13e",
+    "check_painleve_long.py": "ab4e4c51a79254fc635dacce2730c448b667a4f193873ad80532d76e1d165870",
+    "painleve_long_seed.json": "dcf5a7b108c425abf7f6e7f0dae01779b7f3de166037f0afbe5dc2cd530734d5",
+    "painleve_long_controls.json": "5bf5fb8aae62b59754f93fdce2d1820af3b43311ca2b7ea92e3c0ba58bf57a4f"
+  },
+  "research_context": [
+    "https://msp.org/pjm/2011/254-1/pjm-v254-n1-p08-p.pdf",
+    "https://arxiv.org/html/math/0003009v2",
+    "https://arxiv.org/html/0712.4124"
+  ],
+  "coverage_boundary": "Finite exact phase, matrix, symbol, chart, admission seed and selected Riccati identities only. All-degree freeness, algebraic nonsplitting including arbitrary nonconstant polynomial g deformations and coefficient covers, formal diagonalization, global admission and sharp degree/order growth use written proofs. No finite-left rank-one Long carrier or matrix endomorphism counterexample is constructed.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

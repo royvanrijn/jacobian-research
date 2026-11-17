@@ -1,0 +1,234 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newcommand{\E}{\mathbb E}
+\newcommand{\K}{\mathbb K}
+\title{Further outward bridges: Stein operators, apolar Jordan blocks and Hessian duality}
+\author{Independent internal research note}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status.}
+These are transfer arguments and research leads. They inherit the assurance
+limits of their named repository inputs. No external conjecture, novelty or
+priority is claimed solved, no new theorem is promoted to the registry,
+and no agents were messaged.
+
+\section{Gaussian certificates become Stein identities}
+
+For a real polynomial $P(X)$ of independent real standard Gaussians, let
+$Y=P(X)$ and let $F(t)=\E[e^{tY}]$ denote a \emph{formal} moment series.
+Suppose an original Gaussian integration-by-parts certificate gives
+\[
+       L(t,\partial_t)F=0,\qquad
+       L=\sum_{i,j}a_{ij}t^i\partial_t^j.
+\]
+The anti-isomorphism $t\mapsto\partial_y$, $\partial_t\mapsto y$ sends
+this normal-ordered expression to
+\[
+       S=\sum_{i,j}a_{ij}y^j\partial_y^i.
+\]
+Coefficientwise, $\E[Sf(Y)]=0$ for every polynomial test $f$. If the
+retained original IBP certificate is transported term by term by the
+chain rule, the identity also holds for smooth test functions with the
+required polynomial-growth and Gaussian integrability conditions. That
+extension is a property of the IBP identity, not a consequence merely
+of having checked every polynomial moment.
+
+This is exactly the algebraic setting of
+\href{https://arxiv.org/abs/1912.04605}{Azmoodeh--Gasbarra--Gaunt,
+On algebraic Stein operators for Gaussian polynomials}, and their
+\href{https://arxiv.org/abs/2212.07321}{2025 revision on polynomial Stein
+operators and Weyl algebras}. Operator existence and bounded-order
+searches are already studied there. Our plausible contribution is
+replayable original identities and family specialization, not a new
+claim of generic existence.
+
+For an explicit control, take $Y=X^3$ and $\theta=y\partial_y$. Then
+\[
+ S=(3\theta+1)(3\theta+3)(3\theta+5)-y^2
+   =27y^3\partial_y^3+162y^2\partial_y^2+
+     177y\partial_y+15-y^2.                                  \tag{1}
+\]
+Indeed Gaussian IBP gives
+$\E[X^{2r}\psi]=\E[X^{2r-2}(X\partial_X+2r-1)\psi]$.
+Applying it successively with $r=3,2,1$ and $\psi(X)=f(X^3)$ proves
+$\E[Sf(X^3)]=0$ for admissible smooth $f$. Equivalently,
+\[
+ \mu_{n+2}=(3n+1)(3n+3)(3n+5)\mu_n,\quad
+ \mu_n=\E[X^{3n}].
+\]
+Its formal time operator is
+$27t^3\partial_t^3+(162t^2-1)\partial_t^2+
+177t\partial_t+15$.
+
+A Stein identity need not \emph{characterize} a distribution. Even all
+moments need not do so: odd Gaussian powers of degree at least three
+are moment-indeterminate. The latter fact is classical, summarized in
+\href{https://doi.org/10.1186/s40488-017-0059-2}{Lin's moment-problem survey}.
+Our finite formal-jet selectors do not determine an arbitrary probability
+law. Characterization requires an admissible analytic solution class,
+tail and singular-point conditions, or other distributional restrictions.
+The issue is explicitly studied in
+\href{https://alea.impa.br/articles/v20/20-06.pdf}{An asymptotic approach to
+proving sufficiency of Stein characterisations}.
+This is a precise future bridge rather than an already proved analytic
+classification.
+
+\section{Apolar algebras: a rational largest-Jordan-block envelope}
+
+Let $\K$ have characteristic zero, and choose a nonconstant polynomial
+$P\in\K[x_1,\ldots,x_n]$. Fix a nonzero formal symbol
+$\lambda\in(\xi)\K[[\xi_1,\ldots,\xi_n]]$.
+For $j\ge0$ form the finite local inverse-system algebra
+\[
+ A_j=\K[[\xi]]/\operatorname{Ann}(P^j),\qquad
+ \operatorname{Ann}(P^j)=\{a:a(\partial_x)P^j=0\}.
+\]
+It is the usual Artinian Gorenstein apolar algebra, with the possibly
+inhomogeneous polynomial $P^j$ as inverse-system generator.
+Multiplication by the image of $\lambda$ is nilpotent.
+Let $\nu_j$ be its nilpotence index, equivalently its largest Jordan-block
+size. This equality holds because multiplication is zero in the $k$th
+power exactly when $\lambda^k\cdot1=0$.
+
+The repository's first-survival theorem controls
+\[
+ \tau_k=\min\{j\ge0:\lambda(\partial)^kP^j\ne0\}.
+\]
+It states that either $\tau_N=\infty$ for some $N$, or all $\tau_k$
+are finite and $\tau_k=\rho k+O(1)$ for a positive rational $\rho$.
+
+\begin{proposition}
+The largest-block envelope $H(j)=\max_{0\le q\le j}\nu_q$ is either
+eventually constant, or
+\[
+                       H(j)=j/\rho+O(1)
+\]
+with positive rational slope. This holds for arbitrary formal $\lambda$
+under the retained first-survival theorem.
+\end{proposition}
+\begin{proof}
+Since a nonzero $k$th power of a nilpotent operator implies its previous
+powers are nonzero,
+\[
+ H(j)=1+\max\bigl(\{0\}\cup\{k\ge1:\tau_k\le j\}\bigr).        \tag{2}
+\]
+If $\tau_N=\infty$, all block sizes are bounded by $N$ and their
+nondecreasing integer envelope stabilizes. Otherwise
+$\rho k-B\le\tau_k\le\rho k+B$ for large $k$.
+Inverting these two inequalities in (2) gives the assertion.
+\end{proof}
+
+The envelope is essential: this argument does not prove the same
+asymptotic for each individual $\nu_j$, much less its entire Jordan type.
+
+For a direct example, $P=x^N+y^M$ and $\lambda=\xi\eta$ give
+\[
+ \tau_k=\lceil k/N\rceil+\lceil k/M\rceil,\qquad
+ \nu_j=1+\max_{0\le a\le j}\min(Na,M(j-a)).
+\]
+The envelope slope is $NM/(N+M)$.
+
+This connects our formal results to inverse systems, Jordan types and
+Lefschetz questions. A fresh specific target is Conjecture 6.4 of
+\href{https://arxiv.org/abs/2610.34517}{Buczynski--Teitler--Woo,
+Generators and Lefschetz properties of general hyperplane arrangement
+apolar algebras} (25 October 2026): strong Lefschetz for combinatorially
+general arrangements in the stated range $n\le d\le2n-2$.
+That conjecture concerns ranks of all relevant multiplication maps.
+Largest-block information alone does not prove those ranks, and for a
+linear $\lambda$ the largest block is elementary directional-degree data.
+Thus a transfer to strong Lefschetz requires genuinely new rank control;
+no Waring-rank or Lefschetz conjecture follows from this proposition.
+
+\section{An existing geometric theorem gives polynomial Legendre duality}
+
+The repository's Ricci-flat HC4 theorem, which uses the retained Tang
+classification, asserts: for $h\in\mathbb C[x_1,\ldots,x_4]$ with constant
+nonzero Hessian determinant, vanishing Levi-Civita Ricci tensor of its
+\emph{complex bilinear} Hessian metric implies that
+$\Phi=\nabla h$ is a polynomial automorphism.
+
+\begin{proposition}
+Under these hypotheses, $h$ has a global polynomial Legendre dual
+\[
+ h^*(p)=p\cdot\Phi^{-1}(p)-h(\Phi^{-1}(p)).
+\]
+It has constant nonzero Hessian determinant, its gradient is
+$\Phi^{-1}$, and its complex bilinear Hessian metric is again Ricci-flat.
+\end{proposition}
+\begin{proof}
+Differentiate the displayed expression to obtain
+\[\nabla h^*(p)=\Phi^{-1}(p),\qquad
+\operatorname{Hess}h^*(p)=
+(\operatorname{Hess}h(\Phi^{-1}(p)))^{-1}.\]
+The gradient map pulls this latter metric back to
+$\operatorname{Hess}h$, so they are isometric.
+\end{proof}
+
+This is a direct outward consequence for the polynomial Monge--Ampere
+equation $\det\operatorname{Hess}h=c$ and algebraic Legendre duality.
+It does not classify every such polynomial. Complex bilinear
+Levi-Civita Ricci-flatness must not be replaced by Hermitian Ricci
+flatness, scalar curvature zero, or the automatically vanishing
+expression $-\partial_i\partial_j\log\det\operatorname{Hess}h$.
+The separate repository examples already show that polynomial invertibility
+does not force the Hessian metric to be flat or geodesically complete.
+
+\section{Formal finite-dimensional physics and exact integration}
+
+The full Gaussian IBP source is the Schwinger--Dyson system of the
+formal finite-dimensional action
+$S(X)=\sum_iX_i^2/2-tP(X)$. Its amplitudes $Q$ are observable insertions.
+For each fixed observable,
+\[
+       Z_Q(t)=\E[Qe^{tP}]
+             =\sum_{m\ge0}\E[QP^m]t^m/m!.
+\]
+Thus Gaussian all-marker safety says that every fixed polynomial
+observable has a terminating formal interaction expansion. The field-safe
+ideal and its coefficient-ring normalization now classify that condition
+on specified finite coefficient families, subject to their implementation
+and assurance limits.
+
+The retained quartic counterexample has $Z_1(t)=1$ but, for its original
+marker $Q=Z$, $Z_Z(t)=t/(1-t)$. Hence cancellation of every positive
+vacuum coefficient does not imply termination with insertions.
+This is an interpretation of a known witness, not a new physical model.
+
+The IBP/Schwinger--Dyson identity is standard, for example in
+\href{https://www.damtp.cam.ac.uk/user/dbs26/AQFT/chaps1\%2B2.pdf}{Skinner's
+zero-dimensional field-theory notes}. Related D-module methods for genuine
+Feynman integrals are developed by
+\href{https://doi.org/10.1007/s11005-024-01835-7}{Henn--Pratt--Sattelberger--Zoia}.
+Passing to propagator denominators, singular integration cycles,
+renormalization or infinitely many field variables requires further work.
+No continuum field-theory result is asserted.
+
+\section{Singularities: a plausible transfer with an important status correction}
+
+Our log-discrepancy, boundary-pole and Bernstein machinery belongs to the
+same mathematical setting as monodromy conjectures for hypersurface
+singularities. It may be useful in selected classes beyond arrangements.
+However, the hyperplane-arrangement case is not a clean untouched target:
+May 2026 preprints by
+\href{https://arxiv.org/abs/2605.25335}{Wu} and
+\href{https://arxiv.org/abs/2605.25314}{Davis--Yang} claim the strong
+monodromy statement there. Their proofs were not audited here.
+An actual new application would have to specify a hypersurface class and
+prove the missing link from valuation data to the required Bernstein root.
+
+\section{Priority assessment}
+
+The closest useful new application is certified Stein identities and
+their specialization behavior. Distribution characterization is a separate
+analytic target. The apolar envelope and Ricci-flat polynomial Legendre
+duality are precise consequences, rather than speculative analogies.
+The Schwinger--Dyson reading is exact for formal finite-dimensional
+integrals. Larger Feynman, strong Lefschetz and general monodromy problems
+still require substantial new bridges.
+\end{document}

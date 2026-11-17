@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-17",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/FULL_REDUCTIVE_MATHIEU_CLASSIFICATION_AND_RECOMPOSITION_FAILURES.md",
+  "proof_sha256": "9af27c8a0b9fcfceb24d78809c679ef3605cecf539a9669f722eb8982a049b8e",
+  "all_reductive_groups_including_disconnected_MZ_classified": true,
+  "criterion": "MZ iff [G0,G0] subset H",
+  "both_full_exceptional_cases": "FALSE by original fixed counterexample pairs",
+  "every_complex_polynomial_recomposition_fixed_marker": true,
+  "marker_depends_only_on_degree": true,
+  "actual_ordinary_marked_resolvent_transcendence_proved": true,
+  "entire_unary_subalgebra_all_coefficient_algebras_classified": true,
+  "safe_RP_criterion": "all coefficients nilpotent iff phase nilpotent",
+  "eventual_purity_RP_criterion": "constant coefficient nilpotent",
+  "new_degree_campaign": false,
+  "external_review": false,
+  "external_review_deferred": true,
+  "independent_replay": false,
+  "formal_verification": false,
+  "other_goals_preserved": true,
+  "full_repository_validated": false,
+  "all_prior_claims_and_other_goals_preserved_at_integration": true,
+  "work_history_done_when_prerequisites_compute_preserved": true,
+  "unrelated_lessons_work_navigation_preserved": true,
+  "scoped_owned_metadata_sources_links": "PASS",
+  "rendered_views": [
+    "index/README.md",
+    "index/geometry.md",
+    "index/documents.tsv",
+    "knowledge/ALGORITHMS.md",
+    "knowledge/WORK_LEDGER.md",
+    "knowledge/work/geometry.md",
+    "STATUS.md"
+  ],
+  "git_diff_check": "PASS",
+  "full_repository_navigation": "FAIL: pre-existing KDSQ6 missing artifacts/generated-results/README.md consumer",
+  "owned_source_hashes_links_metadata_and_fp_consumers": "PASS",
+  "new_claim_fp_consumers": {
+    "GMZALLREDUCTIVE20261117": 3,
+    "GHAARRECOMPARITH20261117": 3
+  },
+  "all_prior_claims_preserved_at_integration": true,
+  "later_unrelated_concurrent_edits_retained": [
+    "MRC-SL3-PROJECTIVE13-HOMOLOGY-20261117",
+    "OP-MRC",
+    "OP-SIC2-B33"
+  ],
+  "own_work_history_done_when_prerequisites_compute": "PRESERVED",
+  "all_seven_current_views": "PASS at final render snapshot",
+  "completion_audit": "haar_full_classification_completion_audit.json",
+  "mathieu_classification_goal": "COMPLETE; update_goal returned complete after nine-requirement completion audit",
+  "other_programmes": "goals preserved",
+  "completion_audit_sha256": "3c5c657577ef3303b27a022e2e696560c40df037abdabd6f37d3216e8ff504d0",
+  "goal_usage": {
+    "tokens_used": 11932831,
+    "time_used_seconds": 143551,
+    "token_budget": null
+  }
+}

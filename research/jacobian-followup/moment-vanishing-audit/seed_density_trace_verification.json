@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-15",
+  "completed": true,
+  "checker_sha256": "6dd92b382454f2cc96890eb22e82eabea4ef57b06a8709fd3297b5ae833b7229",
+  "python_version": "3.12.3",
+  "sympy_version": "1.14.0",
+  "non_C1_circle_seed_density": "2*u/(pi*sqrt(1 - u**4))",
+  "non_C1_one_sided_mass": "asin(e**2)/pi",
+  "non_C1_mass_over_epsilon_limit": "0",
+  "divided_difference_controls": [
+    {
+      "degree": 3,
+      "leading_coefficient": "2",
+      "kernel_and_diagonal_exact": true
+    },
+    {
+      "degree": 4,
+      "leading_coefficient": "1",
+      "kernel_and_diagonal_exact": true
+    }
+  ],
+  "two_atom_nonmonic_trace_and_reconstruction_exact": true,
+  "two_atom_control_claimed_to_have_full_interval_support": false,
+  "pole_hypothesis_boundary_circle_zeroth_residue": 1,
+  "zero_mass_polynomial_density": "2*t - 1",
+  "hyperelliptic_branch_pullback_limit": "2",
+  "local_Cauchy_controls": [
+    {
+      "ramification": 2,
+      "worst_exponent": "-1/2",
+      "subpolar": true
+    },
+    {
+      "ramification": 3,
+      "worst_exponent": "-2/3",
+      "subpolar": true
+    },
+    {
+      "ramification": 5,
+      "worst_exponent": "-4/5",
+      "subpolar": true
+    }
+  ],
+  "universal_interior_seed_bound": "h_*measure >=c_J Lebesgue on every compact J inside h(M),including critical values",
+  "quartic_preceding_specific_law_Haar_realization": "IMPOSSIBLE for a C1 real seed on a connected positive smooth source,in ANY positive dimension",
+  "quartic_polynomial_graph_or_other_laws_excluded": false,
+  "seed_trace_formula": "F_j(s)=sum_(p(xi)=s) xi^j G(xi)/p_prime(xi),0<=j<deg p",
+  "seed_inverse_formula": "G(t)=sum_j b_j(t) F_j(p(t))",
+  "all_marked_basis_resolvents_may_be_finite_Laurent_under_nonzero_purity": false,
+  "compact_curve_pole_criterion": "poles(omega) subset f^-1(infinity);rational Cauchy period implies zero,including finite endpoint chains and finite sums",
+  "published_compact_genus_scope": "Gavrilov-Pakovich Section2 treats closed curves;finite endpoint subpolar argument is written here",
+  "all_algebraic_or_all_Haar_seed_laws_assumed_pole_compatible": false,
+  "new_degree_density_seed_or_moment_prefix_campaign": false,
+  "universal_tube_analytic_and_curve_period_proofs_machine_verified": false,
+  "either_exceptional_MZ_decision": "OPEN",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

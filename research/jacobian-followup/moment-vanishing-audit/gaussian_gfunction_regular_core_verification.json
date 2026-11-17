@@ -1,0 +1,21 @@
+{
+  "completed": true,
+  "kind": "exact finite Fuchsian witnesses and boundary controls;universal Gaussian/ACK deductions are written proofs",
+  "canonical_proof_sha256": "bf071e7ac5f8c544a804ab9794812bfb18e5155c9907f2812f122176c2aafaba",
+  "producer_sha256": "54e4fdaf1a8d9d30133c3cf0092d368993b0f833eac81bdc904fadc45f6a4444",
+  "checker_sha256": "3cdcf47bd7a4a616bf7cb03a16bbb0cbe0bbc2c86933c509c440c7dbceb32bfa",
+  "certificate_sha256": "14ad43b536cfc04bb6e5b8370976fd25e5cf4c5a8c526bbcab91565783108e34",
+  "runtime_sha256": "5b4a0438050134219d6e9d16faf3e924011925730e5164755b1b0be6cbd2fb50",
+  "exact_controls": {
+    "Fuchsian_models": 5,
+    "parameter_models": 3,
+    "elliptic_indicial": 3,
+    "original_Witt_markers": 4,
+    "linear_normalization": 1,
+    "divergent_boundary_families": 2,
+    "rejections": 5
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

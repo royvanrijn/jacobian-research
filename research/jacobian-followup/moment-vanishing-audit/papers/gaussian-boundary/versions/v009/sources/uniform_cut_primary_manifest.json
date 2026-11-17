@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-17",
+  "primary_sources": [
+    {
+      "author": "Drusvyatskiy-Lewis",
+      "url": "https://people.orie.cornell.edu/aslewis/publications/13-semi.pdf",
+      "cached_file": "drusvyatskiy_lewis_2013_semi.pdf",
+      "sha256": "1aa6d808b0de9f6f87ea503abe4745efdfff2cfd08631181aeea6d85c9eaf963",
+      "locations": [
+        "Theorem2.25,printed14/PDF10",
+        "Theorem2.32,printed16/PDF12"
+      ],
+      "use": "Explicit finite-family compatibility for Hardt triviality and semialgebraic uniform finiteness;Hardt credited."
+    },
+    {
+      "author": "Hardt-Lambrechts-Turchin-Volic",
+      "url": "https://arxiv.org/pdf/0806.0476",
+      "cached_file": "hardt_lambrechts_turchin_volic_0806_0476v3.pdf",
+      "sha256": "0a6e622208f3ceecf11b00c5b33a3eeeed8c376d4b1cb72b9b2c41eabea8b884",
+      "locations": [
+        "Sections2.1 and3",
+        "Theorems2.4 and3.5"
+      ],
+      "use": "Compatible triangulation,semialgebraic chains as currents,and boundary rule;flow itself is not assumed semialgebraic."
+    },
+    {
+      "author": "Simon",
+      "url": "https://math.stanford.edu/~lms/ntu-gmt-text.pdf",
+      "cached_file": "simon_gmt_2018.pdf",
+      "sha256": "ba7fd4a53bf0f1d0ac54aec50bb72c4bba196b8e784d65cd0a7fd85131a3bf03",
+      "locations": [
+        "Chapter6 Section3 Theorem3.15,printed175/PDF91"
+      ],
+      "use": "Federer-Fleming compactness with BOTH local mass and boundary-mass bounds and rectifiable integer-multiplicity conclusion."
+    },
+    {
+      "author": "Pham",
+      "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+      "cached_file": "pham_asterisque130_1985.pdf",
+      "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+      "locations": [
+        "PartI and Appendix"
+      ],
+      "use": "Complete tame critical-cut vanishing homology,including degenerate local Milnor multiplicities."
+    },
+    {
+      "author": "Hien-Roucairol",
+      "url": "https://doi.org/10.24033/bsmf.2564",
+      "locations": [
+        "Theorems2.4 and3.7"
+      ],
+      "use": "Retained actual-period comparison;new proof explicitly checks regular O input,smooth affine space,algebraic independence f=t,g=tP-q,and finite exceptional parameter removal."
+    }
+  ],
+  "precision_improvement": "The prior Basu Theorem1.1 locator states base triviality;new DL Theorem2.25 explicitly states compatibility with EVERY prescribed finite family. Old sealed source records are retained unchanged.",
+  "not_claimed": [
+    "A gradient flow is semialgebraic",
+    "Bounded critical points alone imply uniform cut bounds",
+    "Pointwise finite mass implies a uniform mass bound",
+    "Weak distributional limits alone are rectifiable",
+    "Real chain volume tends to zero",
+    "A general Gaussian safe-to-pure classification",
+    "Arbitrary nonconvergent formal/all-ring analytic extension",
+    "Independent/formal/external verification or novelty"
+  ],
+  "new_mathematical_checker_run": false
+}

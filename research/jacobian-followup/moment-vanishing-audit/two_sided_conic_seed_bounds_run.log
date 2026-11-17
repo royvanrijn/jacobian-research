@@ -1,0 +1,46 @@
+Seven universal source strata passed
+Twenty-three exact conic models passed
+{
+  "completed": true,
+  "checker_sha256": "60491c28ddbd1335807c4568047ced3298486ee1ff5e93fbcefad632431bc72c",
+  "certificate_sha256": "b80ece02e4437c45b1a8d2eb616b321114731d1ef3bd92aca5bfa7f59375c585",
+  "runtime_seconds": 13.668,
+  "sympy_version": "1.14.0",
+  "universal_source_strata": 7,
+  "positive_Euler_gauge_identities": 27,
+  "models": 23,
+  "actual_q2_conic_models": 3,
+  "direct_seed_identities": 69,
+  "conic_full_gate": 130,
+  "full_W_linear_gate": 140,
+  "unrestricted_rank_one_gate_unchanged": 140,
+  "global_sufficient_pure_prefix": 140,
+  "odd_sufficient_pure_prefix": 140,
+  "homogeneous_sufficient_pure_prefix": 130,
+  "least_prefix_interval": [
+    20,
+    140
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    140
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    130
+  ],
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 130,
+    "cusp": 140,
+    "transverse": 132,
+    "tangent": 132,
+    "triangle": 130,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "optimality_proved": false,
+  "written_analytic_or_global_proof_certified_by_checker": false,
+  "boundary": "Exact auxiliary seven source strata and27 positive logarithmic Euler gauge identities,23 model reductions with69 actual seed identities, endpoint-degree and all-rank/row arithmetic. Universal all-degree degree/module/path inductions, full coefficient/rank cover and retained analytic exclusions remain written inputs. No independent replay, external review, formal verification or expanded global radical cofactors."
+}

@@ -1,0 +1,336 @@
+{
+  "claim": "PF2RULED115",
+  "outcome": "PASS",
+  "check_count": 123,
+  "checks": [
+    "sealed predecessor PASS torus_cusp_excess_receipt.json",
+    "sealed predecessor torus_cusp_excess_receipt.json TORUS_CUSP_SOLID_TORUS_EXCESS_AND_FIVE_SIXTHS_BOUND.md",
+    "sealed predecessor torus_cusp_excess_receipt.json torus_cusp_excess.py",
+    "sealed predecessor torus_cusp_excess_receipt.json verify_torus_cusp_excess.py",
+    "sealed predecessor torus_cusp_excess_receipt.json sources/local-cusp-excess/manifest.json",
+    "sealed predecessor torus_cusp_excess_receipt.json local_monodromy_branch_receipt.json",
+    "sealed predecessor torus_cusp_excess_receipt.json triple_boundary_residue_receipt.json",
+    "sealed predecessor torus_cusp_excess_receipt.json cyclic_quotient_morse_receipt.json",
+    "sealed predecessor torus_cusp_excess_receipt.json coprime_leading_forms_receipt.json",
+    "sealed predecessor torus_cusp_excess_receipt.json sources/local-cusp-excess/brin-seifert-0711.1346v2.pdf",
+    "sealed predecessor torus_cusp_excess_receipt.json ../hc4-triangular-graphs/sources/palka-lin-zaidenberg-1405.5391v2.html",
+    "sealed predecessor torus_cusp_excess_receipt.json ../jc2-omitted-divisors/GLOBAL_LEDGER.md",
+    "sealed predecessor torus_cusp_excess_receipt.json ../jc2-omitted-divisors/RESIDUE_LEDGER.md",
+    "sealed predecessor torus_cusp_excess_receipt.json TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md",
+    "sealed predecessor torus_cusp_excess_receipt.json CYCLIC_QUOTIENT_ORDER_AND_MORSE_RESIDUE_BUDGET.md",
+    "sealed predecessor torus_cusp_excess_receipt.json COPRIME_LEADING_FORMS_AND_DEGENERATE_RESIDUE_BUDGET.md",
+    "sealed predecessor torus_cusp_excess_receipt.json SEIFERT_BASE_GENUS_AND_COMPANION_TREE.md",
+    "sealed predecessor torus_cusp_excess_receipt.json HIGH_INDEX_COLLISION_EXCESS_AND_NEAR_MAXIMAL_EXCLUSION.md",
+    "sealed predecessor torus_cusp_excess_receipt.json LOCAL_MONODROMY_CAPACITY_AND_WEIGHTED_BRANCH_EXCLUSION.md",
+    "sealed predecessor PASS cyclic_quotient_morse_receipt.json",
+    "sealed predecessor cyclic_quotient_morse_receipt.json CYCLIC_QUOTIENT_ORDER_AND_MORSE_RESIDUE_BUDGET.md",
+    "sealed predecessor cyclic_quotient_morse_receipt.json cyclic_quotient_morse.py",
+    "sealed predecessor cyclic_quotient_morse_receipt.json verify_cyclic_quotient_morse.py",
+    "sealed predecessor cyclic_quotient_morse_receipt.json sources/cyclic-quotient-morse/manifest.json",
+    "sealed predecessor cyclic_quotient_morse_receipt.json triple_boundary_residue_receipt.json",
+    "sealed predecessor cyclic_quotient_morse_receipt.json sources/universal-regular-end/garcia-barroso-ploski-milnor-2018.pdf",
+    "sealed predecessor cyclic_quotient_morse_receipt.json ../jc2-boundary-attachment/sources/borisov-stein-author.pdf",
+    "sealed predecessor cyclic_quotient_morse_receipt.json ../jc2-omitted-divisors/sources/orevkov-three-sheeted-jc86.pdf",
+    "sealed predecessor cyclic_quotient_morse_receipt.json TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md",
+    "sealed predecessor PASS triple_boundary_residue_receipt.json",
+    "sealed predecessor triple_boundary_residue_receipt.json TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md",
+    "sealed predecessor triple_boundary_residue_receipt.json triple_boundary_residue.py",
+    "sealed predecessor triple_boundary_residue_receipt.json verify_triple_boundary_residue.py",
+    "sealed predecessor triple_boundary_residue_receipt.json sources/triple-residue-excess/manifest.json",
+    "sealed predecessor triple_boundary_residue_receipt.json fibre_transitive_spin_receipt.json",
+    "sealed predecessor triple_boundary_residue_receipt.json ../jc2-boundary-attachment/sources/borisov-stein-author.pdf",
+    "sealed predecessor triple_boundary_residue_receipt.json ../jc2-omitted-divisors/sources/orevkov-three-sheeted-jc86.pdf",
+    "sealed predecessor triple_boundary_residue_receipt.json ../hc4-triangular-graphs/sources/alok-one-dicritical-source-smoothness.md",
+    "sealed predecessor triple_boundary_residue_receipt.json ../jc2-boundary-attachment/PROOF.md",
+    "sealed predecessor triple_boundary_residue_receipt.json ../jc2-omitted-divisors/SIMPLE_RAMIFICATION_AND_RADIAL.md",
+    "sealed predecessor triple_boundary_residue_receipt.json ../jc2-omitted-divisors/RESIDUE_LEDGER.md",
+    "sealed predecessor triple_boundary_residue_receipt.json ../hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md",
+    "sealed predecessor PASS coprime_leading_forms_receipt.json",
+    "sealed predecessor coprime_leading_forms_receipt.json COPRIME_LEADING_FORMS_AND_DEGENERATE_RESIDUE_BUDGET.md",
+    "sealed predecessor coprime_leading_forms_receipt.json coprime_leading_forms.py",
+    "sealed predecessor coprime_leading_forms_receipt.json verify_coprime_leading_forms.py",
+    "sealed predecessor coprime_leading_forms_receipt.json sources/coprime-leading-forms/manifest.json",
+    "sealed predecessor coprime_leading_forms_receipt.json cyclic_quotient_morse_receipt.json",
+    "sealed predecessor coprime_leading_forms_receipt.json sources/coprime-leading-forms/orevkov-germs-2026.pdf",
+    "sealed predecessor coprime_leading_forms_receipt.json CYCLIC_QUOTIENT_ORDER_AND_MORSE_RESIDUE_BUDGET.md",
+    "sealed predecessor coprime_leading_forms_receipt.json TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md",
+    "exact primary/context garcia-barroso-ploski-milnor-2018.pdf",
+    "exact primary/context hatcher-3M.pdf",
+    "exact primary/context lokteva-iterated-surgery-2023.pdf",
+    "exact primary/context ito-cable-slopes.pdf",
+    "exact primary/context GLOBAL_LEDGER.md",
+    "exact primary/context RESIDUE_LEDGER.md",
+    "exact primary/context TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md",
+    "exact primary/context CYCLIC_QUOTIENT_ORDER_AND_MORSE_RESIDUE_BUDGET.md",
+    "exact primary/context COPRIME_LEADING_FORMS_AND_DEGENERATE_RESIDUE_BUDGET.md",
+    "exact primary/context TORUS_CUSP_SOLID_TORUS_EXCESS_AND_FIVE_SIXTHS_BOUND.md",
+    "complete primary pages fresh Evelia R. Garcia Barroso and Arkadiusz Ploski, On the Milnor Formula in Arbitrary Characteristic (2018),119-133",
+    "complete primary pages fresh Allen Hatcher, Notes on Basic 3-Manifold Topology",
+    "complete primary pages fresh Lisa Lokteva, Surgeries on Iterated Torus Knots Bounding Rational Homology 4-Balls, author version (2023)",
+    "complete primary pages fresh Tetsuya Ito, A Note on Chirally Cosmetic Surgery on Cable Knots, Canad.Math.Bull64(2021),163-173",
+    "charzero imports and PF114 credit explicit",
+    "UNBOUNDED all residual branches Milnor summation",
+    "UNBOUNDED eta<q makes Milnor number negative",
+    "UNBOUNDED e>=4 minimalexcess contradicts torus cost",
+    "UNBOUNDED algebraic cabling fibre mismatch",
+    "UNBOUNDED torus-cover determinant retains mismatch",
+    "UNBOUNDED actual nonprimitive source budget",
+    "UNBOUNDED per-parameter excess charge",
+    "UNBOUNDED low-mass degree bound dominates PF114 residue floor",
+    "complete genuine minimal-excess numerical profile (2, 1, 1)",
+    "complete genuine minimal-excess numerical profile (3, 2, 1)",
+    "complete genuine minimal-excess numerical profile (3, 1, 2)",
+    "arbitrary singular branch minimal excess impossible at e>=4 (4, 1)",
+    "arbitrary singular branch minimal excess impossible at e>=4 (5, 2)",
+    "arbitrary singular branch minimal excess impossible at e>=4 (101, 37)",
+    "hypotheses must be certified before excluding a model",
+    "wrong Milnor divisibility rejected",
+    "genuine higher-residue finite A1 family remains arithmetically allowed",
+    "actual cubic full pullback factorization",
+    "actual cubic sole local critical branch",
+    "actual cubic residual is smooth",
+    "actual smooth e3 q2 full pullback factorization",
+    "actual e3 map descends through minusI in both coordinates",
+    "actual e3 second coordinate descends through minusI",
+    "actual smooth e3 q2 and A1 e3 q1 degree data retained",
+    "higher-characteristic exact parametrization",
+    "higher-characteristic actual unit Jacobian",
+    "higher-characteristic actual residual exact quotient",
+    "higher-characteristic image exact local conductor16 by Nakayama",
+    "higher-characteristic actual residual exact local Milnor60 by Nakayama",
+    "higher-characteristic arbitrary-branch identity passes",
+    "higher-characteristic first conductor intersection",
+    "higher-characteristic branch is genuinely not a torus cusp",
+    "genuine PF107 residual triple point",
+    "genuine PF107 ordinary triple point exact Milnor4",
+    "genuine PF107 finite A1 cover remains allowed",
+    "PF114 all-degree nonprimitive residue floor 2",
+    "PF114 all-degree nonprimitive residue floor 3",
+    "PF114 all-degree nonprimitive residue floor 5",
+    "PF114 all-degree nonprimitive residue floor 101",
+    "every omitted residue degree one through genericdegree15",
+    "arbitrary nonimmersive image parameter costs keep all preimages",
+    "written precise scope arbitrary irreducible singular image branch",
+    "written precise scope mu(h)=n*(eta-q)*(c-1)",
+    "written precise scope not the prime-index summand",
+    "written precise scope one local image branch",
+    "written precise scope ordinary preimage curves",
+    "written precise scope not extra omitted primes",
+    "written precise scope p need not be a generic linear source coordinate",
+    "written precise scope negative orbifold euler",
+    "written precise scope closed horizontal torus",
+    "written precise scope original local cyclic-axis pair",
+    "written precise scope no one-puiseux-pair assumption",
+    "written precise scope not a claim of a unique analytic equivalence class",
+    "written precise scope credited to it",
+    "written precise scope not inversion through degree15",
+    "written precise scope nakayama",
+    "written precise scope actual finite high-index cover remains allowed"
+  ],
+  "source_sha256": {
+    "RESIDUAL_MILNOR_IDENTITY_AND_MINIMAL_EXCESS_CLASSIFICATION.md": "f7cf8c6afb19c6c68d55173b93035e9e8a771a6dd1276df4f23e4c934d37f479",
+    "residual_milnor.py": "2930a9836880a76a3ff3655a670a243ea010944cc480f4d1253fda51881389a8",
+    "verify_residual_milnor.py": "f66dc7eb16f4d5056fd8c2db8b53b1c01edc1a96503060f9ab63bea069ad184c",
+    "sources/residual-milnor/manifest.json": "b2ca60ebd4b499f9ef5eb6899c69c94ce32838dc63b8b528b873d1db25473efd",
+    "torus_cusp_excess_receipt.json": "ac11a2637a923a33c1a136c82526a378aac8c185cea47bf56ee1138d9d0ffd9b",
+    "cyclic_quotient_morse_receipt.json": "560a538c50105b0e70d976656107c6043b5f26e96ff3841d044e0a38628a3dfa",
+    "triple_boundary_residue_receipt.json": "10fffe4e57ef2d4b6dae3f3194f9c82d410dbc8c2b2e229fd7bae2602af4080e",
+    "coprime_leading_forms_receipt.json": "89559cfdef1e2879f71d110117e99215efda271baaccb70c765f01c9eda4e566",
+    "sources/universal-regular-end/garcia-barroso-ploski-milnor-2018.pdf": "4de1abd582b340341feb2a3226de91dda2c1c7d14f63b1dd436a065a177b498b",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/universal-regular-end/lokteva-iterated-surgery-2023.pdf": "67da15dccaf283d4e6423f748f7777c083f95efa67c1e38926525fbc702c5d0b",
+    "sources/quartic-cabling/ito-cable-slopes.pdf": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+    "../jc2-omitted-divisors/GLOBAL_LEDGER.md": "e3b6fa954ecd67be226a87992707a67207aa377c37bad6257b5f3cbad0476ecb",
+    "../jc2-omitted-divisors/RESIDUE_LEDGER.md": "b0c207ffb6fe2736937cdabffb1fe5266f4f936143b2807dd571f431df08a8b9",
+    "TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md": "f1d141c5e0cc7eabd45a08225a7b90941adb5ca57bc8e7912181a629479ef818",
+    "CYCLIC_QUOTIENT_ORDER_AND_MORSE_RESIDUE_BUDGET.md": "a6ced3bb14419946acf2ee5318161e8fe02d85cc8fb931fcfc0b2a99223c4e13",
+    "COPRIME_LEADING_FORMS_AND_DEGENERATE_RESIDUE_BUDGET.md": "bd6c88e3048dc84de046bb1aed99f19afd35520eebc97fd1de5f1202ce60af1b",
+    "TORUS_CUSP_SOLID_TORUS_EXCESS_AND_FIVE_SIXTHS_BOUND.md": "a8f5a9e6ef317dfb03c915b0eaf33e6e7136616e1d2d35c130e2be4bdb204420"
+  },
+  "theorem": {
+    "all_degrees_indices_local_residues": true,
+    "any_singular_chosen_plane_branch": true,
+    "smooth_or_cyclic_axis_source_pair_required": true,
+    "sole_critical_branch_required": true,
+    "exact_residual_Milnor_identity": true,
+    "normalized_excess_at_least_local_residue": true,
+    "minimal_excess_complete_numerical_classification": true,
+    "index_at_least4_forces_excess_at_least_q_plus1": true,
+    "arbitrary_global_image_nonimmersion_costs": true,
+    "nonprimitive_omitted_residue_strict_excess": true,
+    "all_omitted_residues_one_through_degree15": true,
+    "degree15_corollary_already_follows_from_PF114": true
+  },
+  "minimal_excess_profiles": [
+    {
+      "e": 2,
+      "q": 1,
+      "n": 1,
+      "ell": 3,
+      "eta": 1
+    },
+    {
+      "e": 3,
+      "q": 2,
+      "n": 1,
+      "ell": 8,
+      "eta": 2
+    },
+    {
+      "e": 3,
+      "q": 1,
+      "n": 2,
+      "ell": 4,
+      "eta": 1
+    }
+  ],
+  "higher_characteristic_control": {
+    "image_characteristic": [
+      4,
+      6,
+      7
+    ],
+    "e": 3,
+    "q": 1,
+    "n": 1,
+    "ell": 8,
+    "eta": 5,
+    "exact_image_lengths": [
+      {
+        "order": 17,
+        "length": 16,
+        "leading_monomials": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            8
+          ]
+        ]
+      },
+      {
+        "order": 18,
+        "length": 16,
+        "leading_monomials": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            8
+          ]
+        ]
+      }
+    ],
+    "exact_residual_lengths": [
+      {
+        "order": 25,
+        "length": 60,
+        "leading_monomials": [
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            1,
+            18
+          ],
+          [
+            0,
+            25
+          ]
+        ]
+      },
+      {
+        "order": 26,
+        "length": 60,
+        "leading_monomials": [
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            1,
+            18
+          ],
+          [
+            0,
+            25
+          ]
+        ]
+      }
+    ],
+    "image_conductor": 16,
+    "residual_Milnor": 60,
+    "global_Keller_map": false,
+    "local_finite_germ_excluded": false
+  },
+  "genuine_finite_high_index_control": {
+    "degree": 12,
+    "index": 9,
+    "source": "A1",
+    "residual_Milnor": 4,
+    "excluded_locally": false
+  },
+  "assurance": {
+    "characteristic_zero_required": true,
+    "polar_Milnor_JSJ_inputs_imported": true,
+    "written_unbounded_proof": true,
+    "one_Puiseux_pair_assumed": false,
+    "scalar_Morse_assumed": false,
+    "source_P_coordinate_assumed_linear": false,
+    "residual_curve_assumed_smooth": false,
+    "global_image_assumed_contractible": false,
+    "ordinary_preimages_counted_as_omitted_primes": false,
+    "PF114_linear_mass_bound_extended_to_arbitrary_branch": false,
+    "finite_samples_prove_theorem": false,
+    "jet_stabilization_assumed_without_Nakayama": false,
+    "all_degree_residue_one_claimed": false,
+    "degree15_inversion_claimed": false,
+    "unique_analytic_equivalence_class_claimed": false,
+    "arithmetic_gates_realize_covers": false,
+    "actual_finite_algebra_closed": false,
+    "formal_verification": false,
+    "external_review": false,
+    "research_goal_completed": false
+  },
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

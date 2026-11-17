@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "elapsed_seconds": 1.435,
+  "exact_controls": {
+    "original_marker_controls": 30,
+    "filtration_controls": 12,
+    "power_controls": 3,
+    "transfer_controls": 3,
+    "recurrence_controls": 3,
+    "airy_controls": 3,
+    "rejections": 6
+  },
+  "all_degree_at_most_two_markers_checked": 36,
+  "canonical_proof_sha256": "8cf36d08ba77d14a4b8b02031903f95c9ec41508b21455290a516b314e931bc0",
+  "certificate_sha256": "713c2326f77a118e378bfe06f19a04348ba3c5d6e7598e7831929b9a7eb0a129",
+  "producer_sha256": "b9ee18bf250f900b4d86ea369202dd1733e45527873bada08cbbd84b62c380d5",
+  "checker_sha256": "394fd8281b3096185d943479aefce87337f0e41920797e9cd0faefc9e43f5178",
+  "runtime_sha256": "1f556145dd542c3d1933d02fb94993a9483861360111d508960bdcb375a1ca66",
+  "universal_claims_use_written_proofs": true,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "computed_Galois_groups": false
+}

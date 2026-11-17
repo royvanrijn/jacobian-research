@@ -1,0 +1,205 @@
+{
+  "status": "exact-primary-coefficient-powers",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "input_sha256": "82e5b8bd2a2dfa416e34aaa12e2a87757f16d6af10b7605f4405c34d81bcb71b",
+  "script_sha256": "96492b3444e15bac8fb8ad34ea5787eccb545dee6416e90d937e210ce3c2c5db",
+  "targets": [
+    {
+      "parameter": 0,
+      "power": 4,
+      "multipliers": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-1/7938"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-17/4536"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-59/63504"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "11/13608"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "11/27216"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-1/189"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-19/4536"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "-1/1296"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/6"
+          },
+          {
+            "exponent": [
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-1/18"
+          },
+          {
+            "exponent": [
+              1,
+              2,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/54"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-1/126"
+          },
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1/36"
+          },
+          {
+            "exponent": [
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1/54"
+          },
+          {
+            "exponent": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1/189"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "-13/6804"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "1/216"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ],
+            "coefficient": "1/648"
+          }
+        ]
+      ]
+    }
+  ],
+  "unresolved_parameters": []
+}

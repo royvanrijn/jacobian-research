@@ -1,0 +1,11 @@
+{
+  "claim": "G3CUSP10_20261114",
+  "completed": true,
+  "cuspidal_pure_threshold": 10,
+  "global_cubic_prefix_lower_bound": 10,
+  "witness_M10": 1508855040000,
+  "checker_sha256": "60afb4ac3af75d6fabffd4bc02b6dc79b6099fc3136687f0079a65235f42379a",
+  "certificate_sha256": "4069305c297f8891969eb6859546c43d77c14a5d0e6275fd31278c3460e4e80a",
+  "elapsed_seconds": 1.9975723570096307,
+  "assurance": "Internal elementary normalization and exact rational CAS/Wick/combinatorial proof; no independent replay, external review or formal verification."
+}

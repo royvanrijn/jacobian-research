@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "path": "sources/stacks-09E3.html",
+      "url": "https://stacks.math.columbia.edu/tag/09E3",
+      "title": "The Stacks Project, Galois extensions and ramification",
+      "locator": "Lemma15.114.4, Definition15.114.3: residue Galois group is the decomposition quotient; unramified specialization gives a subgroup",
+      "sha256": "c2c4b25576cbb893282e95eee882b9256a193cc5b3613a905bd3383946a2cde2",
+      "bytes": 40058
+    }
+  ],
+  "retained_prior_input": "sources/marked-wreath-manifest.json; Fonollosa Lemma3.1 supplies the polynomial completion lemma, used with the new graph first jets."
+}

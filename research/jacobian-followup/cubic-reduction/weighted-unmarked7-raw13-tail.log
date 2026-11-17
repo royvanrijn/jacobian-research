@@ -1,0 +1,10 @@
+{"status": "primary-tail-basis", "source_sha256": "2350d6a9d7408cbfa4302eb02040a08fae9740328d483f909443cca67b2f4a60", "input_sha256": "88c2713e56e43d75945f20c50af606ec4d1378b0798ec0da972c207bfa49f6e7", "mode": "raw13", "variables": 7, "seconds": 0.005}
+DIM:0
+h7-6,
+3*h5-h7-18,
+h4+3*h5-6*h7,
+3*h3-26*h7+72,
+g8-3,
+g6-6*g8+6,
+g4-9*g8-3*h7+21
+

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-14T21:02:12.004298+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UAFINATOM1",
+    "UATORUSSTABLE1",
+    "UATORUSCLASS1",
+    "UATORUSSYM1",
+    "UATORUSFIX1",
+    "UAPSEUDOSYM1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UACANATOM1",
+    "UAACYCLICRECV1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UAFINATOM1",
+    "UATORUSSTABLE1",
+    "UATORUSCLASS1",
+    "UATORUSSYM1",
+    "UATORUSFIX1",
+    "UAPSEUDOSYM1"
+  ],
+  "old_entry_count": 2110,
+  "new_entry_count": 2116,
+  "unchanged_existing_entry_count": 2107,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "144bccca9fba751ff8ae3c8b3d17246584adc5712c123fc569bc50d2683cea0a",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "d50ab60999d28353",
+    "UAFINATOM1": "34c7a2c40399be32",
+    "UATORUSSTABLE1": "aa8fa9fd26ac9a23",
+    "UATORUSCLASS1": "edb82d5b1c238d6d",
+    "UATORUSSYM1": "24805e90a3696a1c",
+    "UATORUSFIX1": "39e016ba723bbddf",
+    "UAPSEUDOSYM1": "4e07f3ffc6b5b5a4"
+  },
+  "updated_lessons": [
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-KELLER-RECEIVER-LANDING"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "30a81da2436745c4947e9447f5f6637c33081fa5ed1e27862b66de6e252ce112",
+  "open_problems_closed": [],
+  "assurance": "Six written structural results and exact finite controls, with classical torus and Hopf-Galois inputs credited. No independent whole-proof replay, formal verification, external review or priority certification. Torus receiver and unstabilized pseudo-plane symmetric routes classified; the original whole affine-space boundary and other receiver objective remain open.",
+  "same_turn_refinements": [
+    "The constructed minimal quartic family has an exact three-regime atomicity table from its cubic resolvent; no global imprimitive-monodromy converse is assumed.",
+    "The fixed symmetric universality obstruction extends to all finite etale endomorphisms of characteristic-zero torus-affine cylinders, so finite coefficient coupling does not evade it."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "claim": "QKR1",
+  "status": "PASS",
+  "polynomial_family_controls": [
+    {
+      "polynomial_degree": 1,
+      "Fourier_connection_rank": 2,
+      "inverse_Fourier_cyclic_order": 2,
+      "indicial_polynomial": "la*(2*la - 3)/2",
+      "two_algebraic_branch_remainders": "zero",
+      "special_equation": "-q*(-16*a**2 + 8*a*s + 8*a + 8*q - s**2 - 2*s - 1)",
+      "boundary_factor": "q**1",
+      "all_degree_rank_uses_written_Newton_and_Fourier_rank_proof": true
+    },
+    {
+      "polynomial_degree": 2,
+      "Fourier_connection_rank": 4,
+      "inverse_Fourier_cyclic_order": 3,
+      "indicial_polynomial": "la*(la - 1)*(2*la - 7)*(2*la - 5)/4",
+      "two_algebraic_branch_remainders": "zero",
+      "special_equation": "-q**2*(-9*a**4*r**2 + 24*a**3*r - 6*a**2*r*s - 16*a**2 + 8*a*s + 8*q - s**2)",
+      "boundary_factor": "q**2",
+      "all_degree_rank_uses_written_Newton_and_Fourier_rank_proof": true
+    },
+    {
+      "polynomial_degree": 3,
+      "Fourier_connection_rank": 6,
+      "inverse_Fourier_cyclic_order": 4,
+      "indicial_polynomial": "la*(la - 2)*(la - 1)*(2*la - 11)*(2*la - 9)*(2*la - 7)/8",
+      "two_algebraic_branch_remainders": "zero",
+      "special_equation": "-q**3*(-a**6 - 2*a**4 + 2*a**3*s - a**2 + 2*a*s + 8*q - s**2)",
+      "boundary_factor": "q**3",
+      "all_degree_rank_uses_written_Newton_and_Fourier_rank_proof": true
+    }
+  ],
+  "quadratic_branch_projectors": "horizontal and complementary, rank2 each",
+  "quadratic_branch_frames": "C0 plus/minus v*C1",
+  "quadratic_residue": [
+    "0",
+    "0",
+    "1/2",
+    "1/2"
+  ],
+  "uniform_self_twist_budget_identity": "symbolic N,e,horizontal_dimension",
+  "induced_cover_budget": "symbolic degree and branch rank",
+  "quadratic_naive_partner_defect": {
+    "1": "3*h**2*r/(2*v**3)",
+    "0": "-h**2*(3*h*r + v**2)/v**5"
+  },
+  "linear_full_pair": "PASS",
+  "sharp_N2_r1_control": "PASS",
+  "hashes": {
+    "FOURIER_CYCLIC_RANK_BUDGET.md": "3ab7401c3fcda7a8bc60b42ece8729a745be810605dc19a6118220ab608ea1ce",
+    "check_fourier_rank_budget.py": "07efdb4f8905d7eba6838da24351866609de6740fb933a347c84f9ba9d2bd47b",
+    "RATIONAL_LINE_FOURIER_OBSTRUCTION.md": "63bd45d3ef6db5c19e8d54fcb2c209d980f9ed281a6b5af3c278b88856388875",
+    "rational_fourier_controls.json": "5fe1a2aad592ed133ced018dd8d69308eff204631ac993ab50f59b62c70538aa",
+    "QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md": "7e1ff77f6b2a057a0ad9efc8cf00891043a650ffb01eaf085aed06d88aabb833",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b"
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/0808.0742",
+      "used": "Definition(3.1), Proposition3.5 Malgrange Fourier-rank formula; formal slope framework."
+    },
+    {
+      "source": "https://arxiv.org/html/0808.0699",
+      "used": "Lemma3.5 formal minimal vanishing cycles and Proposition5.1 Fourier rank; boundary accounting."
+    }
+  ],
+  "coverage_boundary": "Finite exact polynomial eliminations at degrees1,2,3, branch divisions, indicial roots, projector/frame identities, a naive Long mate defect, linear exact pair and rank-two equality control. General conductor bounds, cyclic descent, nonminimal extension accounting, all-degree Newton slopes and ranks use written proofs and cited external Fourier-rank/formal-connection theory. The exact-R Long application also depends on the registered QSO2 written theorem. No actual finite-left Long carrier or all-representative obstruction is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

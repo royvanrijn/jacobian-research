@@ -1,0 +1,5 @@
+usage: search_reuse_orders.py [-h] [--beam BEAM]
+                              [--max-dimension MAX_DIMENSION]
+                              [--term-order {grlex,grevlex,aux-first}]
+                              [--permutation PERMUTATION] --out OUT
+search_reuse_orders.py: error: argument --permutation: expected one argument

@@ -1,0 +1,1035 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 275,
+  "checks": [
+    "predecessor PASS coprime_regular_end_receipt.json",
+    "predecessor seal coprime_regular_end_receipt.json verify_coprime_regular_end.py",
+    "predecessor seal coprime_regular_end_receipt.json COPRIME_REGULAR_END_AND_EXCLUSION.md",
+    "predecessor seal coprime_regular_end_receipt.json sources/coprime-regular-end/manifest.json",
+    "predecessor seal coprime_regular_end_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor seal coprime_regular_end_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "predecessor seal coprime_regular_end_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "predecessor seal coprime_regular_end_receipt.json sources/torus-infinity/scott-geometries.pdf",
+    "predecessor seal coprime_regular_end_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "predecessor seal coprime_regular_end_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "predecessor seal coprime_regular_end_receipt.json sources/quartic-cabling/perelman-finite-extinction.pdf",
+    "predecessor seal coprime_regular_end_receipt.json borderline_regular_end_receipt.json",
+    "predecessor seal coprime_regular_end_receipt.json higher_regular_coordinate_receipt.json",
+    "predecessor seal coprime_regular_end_receipt.json regular_sector_end_receipt.json",
+    "predecessor seal coprime_regular_end_receipt.json quartic_cabling_receipt.json",
+    "predecessor seal coprime_regular_end_receipt.json torus_infinity_receipt.json",
+    "predecessor seal coprime_regular_end_receipt.json intrinsic_normalization_receipt.json",
+    "predecessor PASS higher_regular_coordinate_receipt.json",
+    "predecessor seal higher_regular_coordinate_receipt.json verify_higher_regular_coordinate.py",
+    "predecessor seal higher_regular_coordinate_receipt.json HIGHER_REGULAR_COORDINATE_CYCLIC_FORM.md",
+    "predecessor seal higher_regular_coordinate_receipt.json sources/coordinate-pole-sector/manifest.json",
+    "predecessor seal higher_regular_coordinate_receipt.json sources/coordinate-pole-sector/miyanishi-tifr60.pdf",
+    "predecessor seal higher_regular_coordinate_receipt.json coordinate_regular_sector_receipt.json",
+    "predecessor seal higher_regular_coordinate_receipt.json regular_sector_end_receipt.json",
+    "predecessor seal higher_regular_coordinate_receipt.json multiple_fiber_cyclic_receipt.json",
+    "predecessor PASS torus_infinity_receipt.json",
+    "predecessor seal torus_infinity_receipt.json verify_torus_infinity.py",
+    "predecessor seal torus_infinity_receipt.json TORUS_INFINITY_OBSTRUCTION.md",
+    "predecessor seal torus_infinity_receipt.json residual_cover_receipt.json",
+    "predecessor seal torus_infinity_receipt.json RESIDUAL_DOUBLE_COVER.md",
+    "predecessor seal torus_infinity_receipt.json GLOBAL_BOUNDARY_OBSTRUCTION.md",
+    "predecessor seal torus_infinity_receipt.json PROOF.md",
+    "predecessor seal torus_infinity_receipt.json WRIGHT_MARKED_MODEL.md",
+    "predecessor seal torus_infinity_receipt.json PRIMITIVE_QUARTIC_FIELD.md",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/borodzik-morse.pdf",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/leidy-maxim-hoA.pdf",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/manifest.json",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/scott-geometries.pdf",
+    "predecessor PASS regular_sector_end_receipt.json",
+    "predecessor seal regular_sector_end_receipt.json verify_regular_sector_end.py",
+    "predecessor seal regular_sector_end_receipt.json REGULAR_SECTOR_END_AND_QUARTIC_EXCLUSION.md",
+    "predecessor seal regular_sector_end_receipt.json sources/regular-sector-end/manifest.json",
+    "predecessor seal regular_sector_end_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "predecessor seal regular_sector_end_receipt.json quartic_cabling_receipt.json",
+    "predecessor seal regular_sector_end_receipt.json intrinsic_normalization_receipt.json",
+    "predecessor seal regular_sector_end_receipt.json coordinate_regular_sector_receipt.json",
+    "five primary sources with explicit restricted imports",
+    "primary bytes dubouloz-dfs-0401225v3.pdf",
+    "primary bytes garcia-barroso-ploski-milnor-2018.pdf",
+    "primary bytes lokteva-iterated-surgery-2023.pdf",
+    "primary bytes neumann-plumbing-1981.pdf",
+    "primary bytes ito-cable-slopes.pdf",
+    "admissible full Laurent data r2 support[1]",
+    "individual cyclic contacts equal gcd-block contacts r2 support[1]",
+    "both boundary directional translations are polar r2 support[1] a1",
+    "both source-boundary directional translations are polar r2 support[1]",
+    "independent Apery conductor and symmetry r2 support[1]",
+    "last cabling framing equals contact sum r2 support[1]",
+    "odd universal surgery and terminal-distance gap r2 support[1]",
+    "distance one iff essential lowest symmetry breaker r2 support[1]",
+    "single-pair formula agrees with PF2RULED42 r2 support[1]",
+    "admissible full Laurent data r3 support[2]",
+    "individual cyclic contacts equal gcd-block contacts r3 support[2]",
+    "both boundary directional translations are polar r3 support[2] a1",
+    "both boundary directional translations are polar r3 support[2] a2",
+    "both source-boundary directional translations are polar r3 support[2]",
+    "independent Apery conductor and symmetry r3 support[2]",
+    "last cabling framing equals contact sum r3 support[2]",
+    "odd universal surgery and terminal-distance gap r3 support[2]",
+    "distance one iff essential lowest symmetry breaker r3 support[2]",
+    "single-pair formula agrees with PF2RULED42 r3 support[2]",
+    "admissible full Laurent data r4 support[3]",
+    "individual cyclic contacts equal gcd-block contacts r4 support[3]",
+    "both boundary directional translations are polar r4 support[3] a1",
+    "both boundary directional translations are polar r4 support[3] a2",
+    "both boundary directional translations are polar r4 support[3] a3",
+    "both source-boundary directional translations are polar r4 support[3]",
+    "independent Apery conductor and symmetry r4 support[3]",
+    "last cabling framing equals contact sum r4 support[3]",
+    "odd universal surgery and terminal-distance gap r4 support[3]",
+    "distance one iff essential lowest symmetry breaker r4 support[3]",
+    "single-pair formula agrees with PF2RULED42 r4 support[3]",
+    "admissible full Laurent data r3 support[4]",
+    "individual cyclic contacts equal gcd-block contacts r3 support[4]",
+    "both boundary directional translations are polar r3 support[4] a1",
+    "both boundary directional translations are polar r3 support[4] a2",
+    "both source-boundary directional translations are polar r3 support[4]",
+    "independent Apery conductor and symmetry r3 support[4]",
+    "last cabling framing equals contact sum r3 support[4]",
+    "odd universal surgery and terminal-distance gap r3 support[4]",
+    "distance one iff essential lowest symmetry breaker r3 support[4]",
+    "single-pair formula agrees with PF2RULED42 r3 support[4]",
+    "admissible full Laurent data r4 support[6, 5]",
+    "individual cyclic contacts equal gcd-block contacts r4 support[6, 5]",
+    "both boundary directional translations are polar r4 support[6, 5] a1",
+    "both boundary directional translations are polar r4 support[6, 5] a2",
+    "both boundary directional translations are polar r4 support[6, 5] a3",
+    "both source-boundary directional translations are polar r4 support[6, 5]",
+    "independent Apery conductor and symmetry r4 support[6, 5]",
+    "last cabling framing equals contact sum r4 support[6, 5]",
+    "odd universal surgery and terminal-distance gap r4 support[6, 5]",
+    "distance one iff essential lowest symmetry breaker r4 support[6, 5]",
+    "admissible full Laurent data r4 support[6, 3]",
+    "individual cyclic contacts equal gcd-block contacts r4 support[6, 3]",
+    "both boundary directional translations are polar r4 support[6, 3] a1",
+    "both boundary directional translations are polar r4 support[6, 3] a2",
+    "both boundary directional translations are polar r4 support[6, 3] a3",
+    "both source-boundary directional translations are polar r4 support[6, 3]",
+    "independent Apery conductor and symmetry r4 support[6, 3]",
+    "last cabling framing equals contact sum r4 support[6, 3]",
+    "odd universal surgery and terminal-distance gap r4 support[6, 3]",
+    "distance one iff essential lowest symmetry breaker r4 support[6, 3]",
+    "distance-one collapse has reduced denominator and next distance at least seven r4 support[6, 3]",
+    "admissible full Laurent data r6 support[10, 8, 5]",
+    "individual cyclic contacts equal gcd-block contacts r6 support[10, 8, 5]",
+    "both boundary directional translations are polar r6 support[10, 8, 5] a1",
+    "both boundary directional translations are polar r6 support[10, 8, 5] a2",
+    "both boundary directional translations are polar r6 support[10, 8, 5] a3",
+    "both boundary directional translations are polar r6 support[10, 8, 5] a4",
+    "both boundary directional translations are polar r6 support[10, 8, 5] a5",
+    "both source-boundary directional translations are polar r6 support[10, 8, 5]",
+    "independent Apery conductor and symmetry r6 support[10, 8, 5]",
+    "last cabling framing equals contact sum r6 support[10, 8, 5]",
+    "odd universal surgery and terminal-distance gap r6 support[10, 8, 5]",
+    "distance one iff essential lowest symmetry breaker r6 support[10, 8, 5]",
+    "distance-one collapse has reduced denominator and next distance at least seven r6 support[10, 8, 5]",
+    "admissible full Laurent data r6 support[12, 10, 5]",
+    "individual cyclic contacts equal gcd-block contacts r6 support[12, 10, 5]",
+    "both boundary directional translations are polar r6 support[12, 10, 5] a1",
+    "both boundary directional translations are polar r6 support[12, 10, 5] a2",
+    "both boundary directional translations are polar r6 support[12, 10, 5] a3",
+    "both boundary directional translations are polar r6 support[12, 10, 5] a4",
+    "both boundary directional translations are polar r6 support[12, 10, 5] a5",
+    "both source-boundary directional translations are polar r6 support[12, 10, 5]",
+    "independent Apery conductor and symmetry r6 support[12, 10, 5]",
+    "last cabling framing equals contact sum r6 support[12, 10, 5]",
+    "odd universal surgery and terminal-distance gap r6 support[12, 10, 5]",
+    "distance one iff essential lowest symmetry breaker r6 support[12, 10, 5]",
+    "distance-one collapse has reduced denominator and next distance at least seven r6 support[12, 10, 5]",
+    "admissible full Laurent data r8 support[12, 10, 9]",
+    "individual cyclic contacts equal gcd-block contacts r8 support[12, 10, 9]",
+    "both boundary directional translations are polar r8 support[12, 10, 9] a1",
+    "both boundary directional translations are polar r8 support[12, 10, 9] a2",
+    "both boundary directional translations are polar r8 support[12, 10, 9] a3",
+    "both boundary directional translations are polar r8 support[12, 10, 9] a4",
+    "both boundary directional translations are polar r8 support[12, 10, 9] a5",
+    "both boundary directional translations are polar r8 support[12, 10, 9] a6",
+    "both boundary directional translations are polar r8 support[12, 10, 9] a7",
+    "both source-boundary directional translations are polar r8 support[12, 10, 9]",
+    "independent Apery conductor and symmetry r8 support[12, 10, 9]",
+    "last cabling framing equals contact sum r8 support[12, 10, 9]",
+    "odd universal surgery and terminal-distance gap r8 support[12, 10, 9]",
+    "distance one iff essential lowest symmetry breaker r8 support[12, 10, 9]",
+    "admissible full Laurent data r8 support[12, 10, 7]",
+    "individual cyclic contacts equal gcd-block contacts r8 support[12, 10, 7]",
+    "both boundary directional translations are polar r8 support[12, 10, 7] a1",
+    "both boundary directional translations are polar r8 support[12, 10, 7] a2",
+    "both boundary directional translations are polar r8 support[12, 10, 7] a3",
+    "both boundary directional translations are polar r8 support[12, 10, 7] a4",
+    "both boundary directional translations are polar r8 support[12, 10, 7] a5",
+    "both boundary directional translations are polar r8 support[12, 10, 7] a6",
+    "both boundary directional translations are polar r8 support[12, 10, 7] a7",
+    "both source-boundary directional translations are polar r8 support[12, 10, 7]",
+    "independent Apery conductor and symmetry r8 support[12, 10, 7]",
+    "last cabling framing equals contact sum r8 support[12, 10, 7]",
+    "odd universal surgery and terminal-distance gap r8 support[12, 10, 7]",
+    "distance one iff essential lowest symmetry breaker r8 support[12, 10, 7]",
+    "distance-one collapse has reduced denominator and next distance at least seven r8 support[12, 10, 7]",
+    "admissible full Laurent data r12 support[18, 16, 13]",
+    "individual cyclic contacts equal gcd-block contacts r12 support[18, 16, 13]",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a1",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a2",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a3",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a4",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a5",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a6",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a7",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a8",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a9",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a10",
+    "both boundary directional translations are polar r12 support[18, 16, 13] a11",
+    "both source-boundary directional translations are polar r12 support[18, 16, 13]",
+    "independent Apery conductor and symmetry r12 support[18, 16, 13]",
+    "last cabling framing equals contact sum r12 support[18, 16, 13]",
+    "odd universal surgery and terminal-distance gap r12 support[18, 16, 13]",
+    "distance one iff essential lowest symmetry breaker r12 support[18, 16, 13]",
+    "admissible full Laurent data r12 support[18, 16, 11]",
+    "individual cyclic contacts equal gcd-block contacts r12 support[18, 16, 11]",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a1",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a2",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a3",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a4",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a5",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a6",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a7",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a8",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a9",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a10",
+    "both boundary directional translations are polar r12 support[18, 16, 11] a11",
+    "both source-boundary directional translations are polar r12 support[18, 16, 11]",
+    "independent Apery conductor and symmetry r12 support[18, 16, 11]",
+    "last cabling framing equals contact sum r12 support[18, 16, 11]",
+    "odd universal surgery and terminal-distance gap r12 support[18, 16, 11]",
+    "distance one iff essential lowest symmetry breaker r12 support[18, 16, 11]",
+    "distance-one collapse has reduced denominator and next distance at least seven r12 support[18, 16, 11]",
+    "admissible full Laurent data r5 support[10, 9]",
+    "individual cyclic contacts equal gcd-block contacts r5 support[10, 9]",
+    "both boundary directional translations are polar r5 support[10, 9] a1",
+    "both boundary directional translations are polar r5 support[10, 9] a2",
+    "both boundary directional translations are polar r5 support[10, 9] a3",
+    "both boundary directional translations are polar r5 support[10, 9] a4",
+    "both source-boundary directional translations are polar r5 support[10, 9]",
+    "independent Apery conductor and symmetry r5 support[10, 9]",
+    "last cabling framing equals contact sum r5 support[10, 9]",
+    "odd universal surgery and terminal-distance gap r5 support[10, 9]",
+    "distance one iff essential lowest symmetry breaker r5 support[10, 9]",
+    "single-pair formula agrees with PF2RULED42 r5 support[10, 9]",
+    "admissible full Laurent data r6 support[18, 16, 15, 11]",
+    "individual cyclic contacts equal gcd-block contacts r6 support[18, 16, 15, 11]",
+    "both boundary directional translations are polar r6 support[18, 16, 15, 11] a1",
+    "both boundary directional translations are polar r6 support[18, 16, 15, 11] a2",
+    "both boundary directional translations are polar r6 support[18, 16, 15, 11] a3",
+    "both boundary directional translations are polar r6 support[18, 16, 15, 11] a4",
+    "both boundary directional translations are polar r6 support[18, 16, 15, 11] a5",
+    "both source-boundary directional translations are polar r6 support[18, 16, 15, 11]",
+    "independent Apery conductor and symmetry r6 support[18, 16, 15, 11]",
+    "last cabling framing equals contact sum r6 support[18, 16, 15, 11]",
+    "odd universal surgery and terminal-distance gap r6 support[18, 16, 15, 11]",
+    "distance one iff essential lowest symmetry breaker r6 support[18, 16, 15, 11]",
+    "actual reduced reference resultant polar (4, [6, 5])",
+    "actual reduced reference resultant polar (4, [6, 3])",
+    "actual reduced reference resultant polar (6, [12, 10, 5])",
+    "actual embedded-resolution exceptional tree is unimodular (2, [1])",
+    "last curvette has correct source orders and discrepancy (2, [1])",
+    "actual last curvette framing equals inverse marked entry (2, [1])",
+    "original deleted infinity curve has one exceptional attachment (2, [1])",
+    "actual whole end determinant and primitive marked cofactor (2, [1])",
+    "actual embedded-resolution exceptional tree is unimodular (3, [4])",
+    "last curvette has correct source orders and discrepancy (3, [4])",
+    "actual last curvette framing equals inverse marked entry (3, [4])",
+    "original deleted infinity curve has one exceptional attachment (3, [4])",
+    "actual whole end determinant and primitive marked cofactor (3, [4])",
+    "actual embedded-resolution exceptional tree is unimodular (4, [6, 5])",
+    "last curvette has correct source orders and discrepancy (4, [6, 5])",
+    "actual last curvette framing equals inverse marked entry (4, [6, 5])",
+    "original deleted infinity curve has one exceptional attachment (4, [6, 5])",
+    "actual whole end determinant and primitive marked cofactor (4, [6, 5])",
+    "actual embedded-resolution exceptional tree is unimodular (4, [6, 3])",
+    "last curvette has correct source orders and discrepancy (4, [6, 3])",
+    "actual last curvette framing equals inverse marked entry (4, [6, 3])",
+    "original deleted infinity curve has one exceptional attachment (4, [6, 3])",
+    "actual whole end determinant and primitive marked cofactor (4, [6, 3])",
+    "actual embedded-resolution exceptional tree is unimodular (6, [12, 10, 5])",
+    "last curvette has correct source orders and discrepancy (6, [12, 10, 5])",
+    "actual last curvette framing equals inverse marked entry (6, [12, 10, 5])",
+    "original deleted infinity curve has one exceptional attachment (6, [12, 10, 5])",
+    "actual whole end determinant and primitive marked cofactor (6, [12, 10, 5])",
+    "actual embedded-resolution exceptional tree is unimodular (8, [12, 10, 9])",
+    "last curvette has correct source orders and discrepancy (8, [12, 10, 9])",
+    "actual last curvette framing equals inverse marked entry (8, [12, 10, 9])",
+    "original deleted infinity curve has one exceptional attachment (8, [12, 10, 9])",
+    "actual whole end determinant and primitive marked cofactor (8, [12, 10, 9])",
+    "symbolic Schur determinant and marked cofactor k1",
+    "symbolic Schur determinant and marked cofactor k2",
+    "symbolic Schur determinant and marked cofactor k3",
+    "symbolic Schur determinant and marked cofactor k4",
+    "symbolic Schur determinant and marked cofactor k5",
+    "symbolic Schur determinant and marked cofactor k6",
+    "symbolic Schur determinant and marked cofactor k7",
+    "symbolic Schur determinant and marked cofactor k8",
+    "symbolic Schur determinant and marked cofactor k9",
+    "marked equivalence is an actual polynomial boundary chart substitution r2",
+    "marked equivalence is an actual polynomial boundary chart substitution r3",
+    "marked equivalence is an actual polynomial boundary chart substitution r4",
+    "marked equivalence is an actual polynomial boundary chart substitution r6"
+  ],
+  "affine_classification": {
+    "necessary_and_sufficient": true,
+    "all_Laurent_supports": true,
+    "r": "r>=2",
+    "range": "q>=r-1",
+    "support_gcd": 1,
+    "Dubouloz_section": "2.8",
+    "both_directions_all_pairs_polar": true,
+    "smooth_affine_quotient": true,
+    "marked_equivalence": "c'_j=b*a^j*c_j",
+    "all_polynomial_source_shears_extend": true,
+    "volume_exact_iff": "c_r=0",
+    "target_algebra_invariance_assumed": false
+  },
+  "universal_end": {
+    "source_reference": "Gamma: w=1/h(z), y=z^r",
+    "characteristic_beta": "2q-j_i at each strict support gcd drop",
+    "conductor": "2delta=sum_i(g_(i-1)-g_i)*beta_i-r+1",
+    "F": "sum_i(g_(i-1)-g_i)*beta_i+beta_last",
+    "kappa": "j_last-r+2",
+    "surgery": "n=2delta+2q+1",
+    "H1": "Z/n",
+    "n_odd": true,
+    "marked_class_primitive": true,
+    "plumbing_pair_identified": true,
+    "stable_peripheral_data_transfer_to_radial_section": true,
+    "arbitrary_multicharacteristic_radial_homeomorphism_claimed": false
+  },
+  "terminal_structure": {
+    "distance_two_impossible": true,
+    "distance_one_iff": "essential c_(r-1) and higher support gcd>1",
+    "multi_distance_one_companion_filling": "n/p_last^2",
+    "next_fiber_distance_at_least": 7,
+    "no_consecutive_distance_one_collapse": true,
+    "distance_at_least_three_model_piece": "Seifert D2(p_last,kappa)",
+    "actual_radial_JSJ_recognition_claimed": false
+  },
+  "all_degree_consequences": {
+    "entire_regular_coordinate_sector": true,
+    "target_torus_or_unknot_infinity_excluded": true,
+    "target_coprime_boundary_degrees_excluded": true,
+    "target_prime_boundary_degrees_excluded": true,
+    "all_Keller_maps_excluded": false
+  },
+  "controls": [
+    {
+      "r": 2,
+      "q": 1,
+      "support": [
+        1
+      ],
+      "chain": [
+        {
+          "j": 1,
+          "before": 2,
+          "after": 1,
+          "beta": 1
+        }
+      ],
+      "S": 1,
+      "conductor": 0,
+      "F": 2,
+      "kappa": 1,
+      "n": 3,
+      "pairs": [
+        [
+          2,
+          1
+        ]
+      ],
+      "generators": [
+        2,
+        1
+      ]
+    },
+    {
+      "r": 3,
+      "q": 2,
+      "support": [
+        2
+      ],
+      "chain": [
+        {
+          "j": 2,
+          "before": 3,
+          "after": 1,
+          "beta": 2
+        }
+      ],
+      "S": 4,
+      "conductor": 2,
+      "F": 6,
+      "kappa": 1,
+      "n": 7,
+      "pairs": [
+        [
+          3,
+          2
+        ]
+      ],
+      "generators": [
+        3,
+        2
+      ]
+    },
+    {
+      "r": 4,
+      "q": 3,
+      "support": [
+        3
+      ],
+      "chain": [
+        {
+          "j": 3,
+          "before": 4,
+          "after": 1,
+          "beta": 3
+        }
+      ],
+      "S": 9,
+      "conductor": 6,
+      "F": 12,
+      "kappa": 1,
+      "n": 13,
+      "pairs": [
+        [
+          4,
+          3
+        ]
+      ],
+      "generators": [
+        4,
+        3
+      ]
+    },
+    {
+      "r": 3,
+      "q": 4,
+      "support": [
+        4
+      ],
+      "chain": [
+        {
+          "j": 4,
+          "before": 3,
+          "after": 1,
+          "beta": 4
+        }
+      ],
+      "S": 8,
+      "conductor": 6,
+      "F": 12,
+      "kappa": 3,
+      "n": 15,
+      "pairs": [
+        [
+          3,
+          4
+        ]
+      ],
+      "generators": [
+        3,
+        4
+      ]
+    },
+    {
+      "r": 4,
+      "q": 6,
+      "support": [
+        6,
+        5
+      ],
+      "chain": [
+        {
+          "j": 6,
+          "before": 4,
+          "after": 2,
+          "beta": 6
+        },
+        {
+          "j": 5,
+          "before": 2,
+          "after": 1,
+          "beta": 7
+        }
+      ],
+      "S": 19,
+      "conductor": 16,
+      "F": 26,
+      "kappa": 3,
+      "n": 29,
+      "pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          13
+        ]
+      ],
+      "generators": [
+        4,
+        6,
+        13
+      ]
+    },
+    {
+      "r": 4,
+      "q": 6,
+      "support": [
+        6,
+        3
+      ],
+      "chain": [
+        {
+          "j": 6,
+          "before": 4,
+          "after": 2,
+          "beta": 6
+        },
+        {
+          "j": 3,
+          "before": 2,
+          "after": 1,
+          "beta": 9
+        }
+      ],
+      "S": 21,
+      "conductor": 18,
+      "F": 30,
+      "kappa": 1,
+      "n": 31,
+      "pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          15
+        ]
+      ],
+      "generators": [
+        4,
+        6,
+        15
+      ],
+      "collapsed_companion_slope": [
+        31,
+        4
+      ],
+      "next_fiber_distance": 7
+    },
+    {
+      "r": 6,
+      "q": 10,
+      "support": [
+        10,
+        8,
+        5
+      ],
+      "chain": [
+        {
+          "j": 10,
+          "before": 6,
+          "after": 2,
+          "beta": 10
+        },
+        {
+          "j": 5,
+          "before": 2,
+          "after": 1,
+          "beta": 15
+        }
+      ],
+      "S": 55,
+      "conductor": 50,
+      "F": 70,
+      "kappa": 1,
+      "n": 71,
+      "pairs": [
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          35
+        ]
+      ],
+      "generators": [
+        6,
+        10,
+        35
+      ],
+      "collapsed_companion_slope": [
+        71,
+        4
+      ],
+      "next_fiber_distance": 11
+    },
+    {
+      "r": 6,
+      "q": 12,
+      "support": [
+        12,
+        10,
+        5
+      ],
+      "chain": [
+        {
+          "j": 10,
+          "before": 6,
+          "after": 2,
+          "beta": 14
+        },
+        {
+          "j": 5,
+          "before": 2,
+          "after": 1,
+          "beta": 19
+        }
+      ],
+      "S": 75,
+      "conductor": 70,
+      "F": 94,
+      "kappa": 1,
+      "n": 95,
+      "pairs": [
+        [
+          3,
+          7
+        ],
+        [
+          2,
+          47
+        ]
+      ],
+      "generators": [
+        6,
+        14,
+        47
+      ],
+      "collapsed_companion_slope": [
+        95,
+        4
+      ],
+      "next_fiber_distance": 11
+    },
+    {
+      "r": 8,
+      "q": 12,
+      "support": [
+        12,
+        10,
+        9
+      ],
+      "chain": [
+        {
+          "j": 12,
+          "before": 8,
+          "after": 4,
+          "beta": 12
+        },
+        {
+          "j": 10,
+          "before": 4,
+          "after": 2,
+          "beta": 14
+        },
+        {
+          "j": 9,
+          "before": 2,
+          "after": 1,
+          "beta": 15
+        }
+      ],
+      "S": 91,
+      "conductor": 84,
+      "F": 106,
+      "kappa": 3,
+      "n": 109,
+      "pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          53
+        ]
+      ],
+      "generators": [
+        8,
+        12,
+        26,
+        53
+      ]
+    },
+    {
+      "r": 8,
+      "q": 12,
+      "support": [
+        12,
+        10,
+        7
+      ],
+      "chain": [
+        {
+          "j": 12,
+          "before": 8,
+          "after": 4,
+          "beta": 12
+        },
+        {
+          "j": 10,
+          "before": 4,
+          "after": 2,
+          "beta": 14
+        },
+        {
+          "j": 7,
+          "before": 2,
+          "after": 1,
+          "beta": 17
+        }
+      ],
+      "S": 93,
+      "conductor": 86,
+      "F": 110,
+      "kappa": 1,
+      "n": 111,
+      "pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          55
+        ]
+      ],
+      "generators": [
+        8,
+        12,
+        26,
+        55
+      ],
+      "collapsed_companion_slope": [
+        111,
+        4
+      ],
+      "next_fiber_distance": 7
+    },
+    {
+      "r": 12,
+      "q": 18,
+      "support": [
+        18,
+        16,
+        13
+      ],
+      "chain": [
+        {
+          "j": 18,
+          "before": 12,
+          "after": 6,
+          "beta": 18
+        },
+        {
+          "j": 16,
+          "before": 6,
+          "after": 2,
+          "beta": 20
+        },
+        {
+          "j": 13,
+          "before": 2,
+          "after": 1,
+          "beta": 23
+        }
+      ],
+      "S": 211,
+      "conductor": 200,
+      "F": 234,
+      "kappa": 3,
+      "n": 237,
+      "pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          2,
+          117
+        ]
+      ],
+      "generators": [
+        12,
+        18,
+        38,
+        117
+      ]
+    },
+    {
+      "r": 12,
+      "q": 18,
+      "support": [
+        18,
+        16,
+        11
+      ],
+      "chain": [
+        {
+          "j": 18,
+          "before": 12,
+          "after": 6,
+          "beta": 18
+        },
+        {
+          "j": 16,
+          "before": 6,
+          "after": 2,
+          "beta": 20
+        },
+        {
+          "j": 11,
+          "before": 2,
+          "after": 1,
+          "beta": 25
+        }
+      ],
+      "S": 213,
+      "conductor": 202,
+      "F": 238,
+      "kappa": 1,
+      "n": 239,
+      "pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          2,
+          119
+        ]
+      ],
+      "generators": [
+        12,
+        18,
+        38,
+        119
+      ],
+      "collapsed_companion_slope": [
+        239,
+        4
+      ],
+      "next_fiber_distance": 11
+    },
+    {
+      "r": 5,
+      "q": 10,
+      "support": [
+        10,
+        9
+      ],
+      "chain": [
+        {
+          "j": 9,
+          "before": 5,
+          "after": 1,
+          "beta": 11
+        }
+      ],
+      "S": 44,
+      "conductor": 40,
+      "F": 55,
+      "kappa": 6,
+      "n": 61,
+      "pairs": [
+        [
+          5,
+          11
+        ]
+      ],
+      "generators": [
+        5,
+        11
+      ]
+    },
+    {
+      "r": 6,
+      "q": 18,
+      "support": [
+        18,
+        16,
+        15,
+        11
+      ],
+      "chain": [
+        {
+          "j": 16,
+          "before": 6,
+          "after": 2,
+          "beta": 20
+        },
+        {
+          "j": 15,
+          "before": 2,
+          "after": 1,
+          "beta": 21
+        }
+      ],
+      "S": 101,
+      "conductor": 96,
+      "F": 122,
+      "kappa": 11,
+      "n": 133,
+      "pairs": [
+        [
+          3,
+          10
+        ],
+        [
+          2,
+          61
+        ]
+      ],
+      "generators": [
+        6,
+        20,
+        61
+      ]
+    }
+  ],
+  "resolution_graph_controls": [
+    {
+      "r": 2,
+      "support": [
+        1
+      ],
+      "exceptional_vertices": 2,
+      "F": 2,
+      "n": 3,
+      "marked_cofactor": 2
+    },
+    {
+      "r": 3,
+      "support": [
+        4
+      ],
+      "exceptional_vertices": 4,
+      "F": 12,
+      "n": 15,
+      "marked_cofactor": 14
+    },
+    {
+      "r": 4,
+      "support": [
+        6,
+        5
+      ],
+      "exceptional_vertices": 5,
+      "F": 26,
+      "n": 29,
+      "marked_cofactor": 28
+    },
+    {
+      "r": 4,
+      "support": [
+        6,
+        3
+      ],
+      "exceptional_vertices": 6,
+      "F": 30,
+      "n": 31,
+      "marked_cofactor": 30
+    },
+    {
+      "r": 6,
+      "support": [
+        12,
+        10,
+        5
+      ],
+      "exceptional_vertices": 9,
+      "F": 94,
+      "n": 95,
+      "marked_cofactor": 94
+    },
+    {
+      "r": 8,
+      "support": [
+        12,
+        10,
+        9
+      ],
+      "exceptional_vertices": 7,
+      "F": 106,
+      "n": 109,
+      "marked_cofactor": 108
+    }
+  ],
+  "assurance": {
+    "written_unbounded_proofs": true,
+    "primary_imports_explicit": true,
+    "finite_checks_not_complete_geometric_proof": true,
+    "general_affine_converse_closed": true,
+    "multi_characteristic_quartic_sector_excluded": false,
+    "no_regular_coordinate_case_excluded": false,
+    "extra_omitted_primes_excluded": false,
+    "finite_Keller_map_constructed": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_universal_regular_end.py": "7bce946b11775decee0ab19b5dde8e6b3d91a415a483507346698ec320246f60",
+    "UNIVERSAL_REGULAR_CLASSIFICATION_AND_END.md": "ec3a0d1944153d756e41bcd40dad8cbda3feff4d5c3ad5a2ccbf6385f5f6ff87",
+    "sources/universal-regular-end/manifest.json": "ab9cc19a5e6d01e08e6183f248faa1774c6034b4143ac8731d8758a03ba18a77",
+    "sources/universal-regular-end/dubouloz-dfs-0401225v3.pdf": "ab91bdee493de8fb111e8d0111b6b8f22bf21a0344ea42345615f11fe2ba9a23",
+    "sources/universal-regular-end/garcia-barroso-ploski-milnor-2018.pdf": "4de1abd582b340341feb2a3226de91dda2c1c7d14f63b1dd436a065a177b498b",
+    "sources/universal-regular-end/lokteva-iterated-surgery-2023.pdf": "67da15dccaf283d4e6423f748f7777c083f95efa67c1e38926525fbc702c5d0b",
+    "sources/regular-sector-end/neumann-plumbing-1981.pdf": "61a02e73da4a47216f39dceb22887b2bd3d584ba2418049458d90b3dedd1657b",
+    "sources/quartic-cabling/ito-cable-slopes.pdf": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+    "coprime_regular_end_receipt.json": "f3f5bf1b3709c73d94908fbab70337a99fe10c3c16dc2f063bb2c0cd2dfc1ab2",
+    "higher_regular_coordinate_receipt.json": "38dddf1b8eeec5289e0201cecd355abea874c987e14e0072cfd3c55b777b5af3",
+    "torus_infinity_receipt.json": "4f281288978e2c1538345d50b2b10a4af3ba77953fee958b69fd7cb84465d94b",
+    "regular_sector_end_receipt.json": "fce0acc05af98d2e9c087da57ed1d143ac765618c0df349788b2ee340fa14556"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

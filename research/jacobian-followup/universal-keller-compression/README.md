@@ -1,5 +1,7 @@
 # Universal Keller maps in one fewer dimension
 
+The [trace extension](../universal-keller-trace/README.md) further reduces the dimension to N-2 for N>=7, removes the infinite-field restriction p>N, and constructs canonical rational realization correspondences.
+
 For every N>=5, an explicit determinant-one map on A^(N-1) realizes every rank-N finite etale algebra over every characteristic-zero field as a complete fibre. It retains degree N, monodromy S_N and absolute stable atomicity. The former construction used A^N.
 
 The [proof](PROOF.md) removes one coefficient using the coprime weights five and six. It supplies explicit target formulas, a short Jacobian and full-fibre calculation, Zariski-local universality for families, and sufficient positive-characteristic and finite-field bounds. Its quotient section removes scaling choices; arbitrary primitive-presentation non-descent persists.

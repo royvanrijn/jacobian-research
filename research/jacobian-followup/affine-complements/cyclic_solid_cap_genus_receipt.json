@@ -1,0 +1,3947 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 419,
+  "checks": [
+    "predecessor PASS integer_grid_common_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json verify_integer_grid_common.py",
+    "sealed predecessor integer_grid_common_receipt.json INTEGER_SLOPE_GRID_AND_COMMON_ITERATED_CLOSURE.md",
+    "sealed predecessor integer_grid_common_receipt.json sources/integer-grid-common/manifest.json",
+    "sealed predecessor integer_grid_common_receipt.json composed_peripheral_cover.py",
+    "sealed predecessor integer_grid_common_receipt.json recursive_linking_endpoints_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json global_ruling_unfilled_cyclic_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json genus_final_s3_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json meridian_cycle_s4_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json unimodular_initial_s4_receipt.json",
+    "sealed predecessor integer_grid_common_receipt.json sources/integer-grid-common/rasmussen-1511.04413v3.html",
+    "sealed predecessor integer_grid_common_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor integer_grid_common_receipt.json sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html",
+    "sealed predecessor integer_grid_common_receipt.json sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html",
+    "sealed predecessor integer_grid_common_receipt.json sources/genus-final-s3/hom-0912.4046v1.html",
+    "predecessor PASS recursive_linking_endpoints_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json verify_recursive_linking_endpoints.py",
+    "sealed predecessor recursive_linking_endpoints_receipt.json RECURSIVE_LINKING_AND_ENDPOINT_TAIL_CLOSURE.md",
+    "sealed predecessor recursive_linking_endpoints_receipt.json composed_peripheral_cover.py",
+    "sealed predecessor recursive_linking_endpoints_receipt.json compare_dihedral_linking.py",
+    "sealed predecessor recursive_linking_endpoints_receipt.json dihedral_author_comparison.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/recursive-linking-endpoints/manifest.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/recursive-linking-endpoints/author_code_pin.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json genus_final_s3_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json global_ruling_unfilled_cyclic_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/global-ruling-unfilled-cyclic/dubouloz-kishimoto-1212.0521v1.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/genus-final-s3/hom-0912.4046v1.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/genus-final-s3/ozsvath-szabo-math0504404v1.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/recursive-linking-endpoints/cahn-kjuchukova-1611.10330v2.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/recursive-linking-endpoints/cahn-dihedrallinking-bcb80912ad35.py",
+    "predecessor PASS nonunimodular_a4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json verify_nonunimodular_a4.py",
+    "sealed predecessor nonunimodular_a4_receipt.json NONUNIMODULAR_A4_CAPS_AND_THREE_TERMINAL_PAIRS.md",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/nonunimodular-a4/manifest.json",
+    "sealed predecessor nonunimodular_a4_receipt.json unimodular_initial_s4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "predecessor PASS cyclic_pattern_a4_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json verify_cyclic_pattern_a4.py",
+    "sealed predecessor cyclic_pattern_a4_receipt.json CYCLIC_PATTERN_MARK_TRANSFER_AND_A4_REDUCTION.md",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/cyclic-pattern-a4/manifest.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json meridian_cycle_s4_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "predecessor PASS global_ruling_unfilled_cyclic_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json verify_global_ruling_unfilled_cyclic.py",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json COORDINATE_RULINGS_UNFILLED_CYCLIC_AND_S3_REDUCTION.md",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/manifest.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json nonunimodular_a4_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/dubouloz-kishimoto-1212.0521v1.html",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html",
+    "predecessor PASS genus_final_s3_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json verify_genus_final_s3.py",
+    "sealed predecessor genus_final_s3_receipt.json GENUS_FRAMING_AND_FINAL_S3_CLOSURE.md",
+    "sealed predecessor genus_final_s3_receipt.json sources/genus-final-s3/manifest.json",
+    "sealed predecessor genus_final_s3_receipt.json global_ruling_unfilled_cyclic_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json nonunimodular_a4_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json rational_end_orderability_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor genus_final_s3_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor genus_final_s3_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor genus_final_s3_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor genus_final_s3_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor genus_final_s3_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor genus_final_s3_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor genus_final_s3_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor genus_final_s3_receipt.json sources/global-ruling-unfilled-cyclic/dubouloz-kishimoto-1212.0521v1.html",
+    "sealed predecessor genus_final_s3_receipt.json sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html",
+    "sealed predecessor genus_final_s3_receipt.json sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html",
+    "sealed predecessor genus_final_s3_receipt.json sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html",
+    "sealed predecessor genus_final_s3_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor genus_final_s3_receipt.json sources/genus-final-s3/hom-0912.4046v1.html",
+    "sealed predecessor genus_final_s3_receipt.json sources/genus-final-s3/ozsvath-szabo-math0504404v1.html",
+    "predecessor PASS cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json verify_cyclic_loop_first_arrival.py",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json CYCLIC_LOOP_GEOMETRY_AND_FIRST_ARRIVAL_REDUCTION.md",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/cyclic-loop-first-arrival/manifest.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "predecessor PASS iterated_peripheral_tail_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json verify_iterated_peripheral_tail.py",
+    "sealed predecessor iterated_peripheral_tail_receipt.json ITERATED_PERIPHERAL_STATES_AND_ABSORBING_TAILS.md",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/iterated-peripheral-tail/manifest.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json rational_end_orderability_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "retained primary pin hatcher-3M.pdf",
+    "retained primary pin neumann-raymond-1978.pdf",
+    "retained primary pin clay-watson-2011v1.pdf",
+    "retained primary pin neumann-norbury-orevkov.pdf",
+    "retained primary pin hom-0912.4046v1.html",
+    "degree-free exact genus deficit recurrence",
+    "degree-free exact L-space cabling threshold margin",
+    "degree-free strict infinity obstruction after minus",
+    "last-minus closed genus deficit",
+    "all-degree cyclic exact unfilled bases (2, 1, 3, 5)",
+    "all-degree unit cap preserves coefficient b and squares A (2, 1, 3, 5)",
+    "all-degree cyclic exact unfilled bases (2, 1, 5, 11)",
+    "all-degree unit cap preserves coefficient b and squares A (2, 1, 5, 11)",
+    "all-degree cyclic exact unfilled bases (3, 2, 5, 7)",
+    "all-degree unit cap preserves coefficient b and squares A (3, 2, 5, 7)",
+    "all-degree cyclic exact unfilled bases (3, 2, 5, 8)",
+    "all-degree unit cap preserves coefficient b and squares A (3, 2, 5, 8)",
+    "all-degree cyclic exact unfilled bases (4, 3, 5, 7)",
+    "all-degree unit cap preserves coefficient b and squares A (4, 3, 5, 7)",
+    "all-degree cyclic exact unfilled bases (5, 2, 3, 7)",
+    "all-degree unit cap preserves coefficient b and squares A (5, 2, 3, 7)",
+    "all-degree cyclic exact unfilled bases (5, 2, 3, 8)",
+    "all-degree unit cap preserves coefficient b and squares A (5, 2, 3, 8)",
+    "all-degree cyclic exact unfilled bases (5, 3, 2, 3)",
+    "all-degree unit cap preserves coefficient b and squares A (5, 3, 2, 3)",
+    "all-degree cyclic exact unfilled bases (7, 2, 3, 11)",
+    "all-degree unit cap preserves coefficient b and squares A (7, 2, 3, 11)",
+    "all-degree cyclic exact unfilled bases (8, 3, 5, 13)",
+    "all-degree unit cap preserves coefficient b and squares A (8, 3, 5, 13)",
+    "all-degree cyclic exact unfilled bases (9, 2, 5, 23)",
+    "all-degree unit cap preserves coefficient b and squares A (9, 2, 5, 23)",
+    "complete initial trefoil A4 pairs form ONE conjugacy orbit (2, 3)",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((1, 0, 3, 2), (0, 2, 3, 1)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((1, 0, 3, 2), (0, 3, 1, 2)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((1, 0, 3, 2), (1, 2, 0, 3)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((1, 0, 3, 2), (1, 3, 2, 0)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((1, 0, 3, 2), (2, 0, 1, 3)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((1, 0, 3, 2), (2, 1, 3, 0)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((1, 0, 3, 2), (3, 0, 2, 1)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((1, 0, 3, 2), (3, 1, 0, 2)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((2, 3, 0, 1), (0, 2, 3, 1)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((2, 3, 0, 1), (0, 3, 1, 2)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((2, 3, 0, 1), (1, 2, 0, 3)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((2, 3, 0, 1), (1, 3, 2, 0)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((2, 3, 0, 1), (2, 0, 1, 3)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((2, 3, 0, 1), (2, 1, 3, 0)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((2, 3, 0, 1), (3, 0, 2, 1)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((2, 3, 0, 1), (3, 1, 0, 2)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((3, 2, 1, 0), (0, 2, 3, 1)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((3, 2, 1, 0), (0, 3, 1, 2)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((3, 2, 1, 0), (1, 2, 0, 3)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((3, 2, 1, 0), (1, 3, 2, 0)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((3, 2, 1, 0), (2, 0, 1, 3)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((3, 2, 1, 0), (2, 1, 3, 0)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((3, 2, 1, 0), (3, 0, 2, 1)))",
+    "initial actual primitive coefficient2 cap sign (2, 3, ((3, 2, 1, 0), (3, 1, 0, 2)))",
+    "complete initial trefoil A4 pairs form ONE conjugacy orbit (3, 2)",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((0, 2, 3, 1), (1, 0, 3, 2)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((0, 2, 3, 1), (2, 3, 0, 1)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((0, 2, 3, 1), (3, 2, 1, 0)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((0, 3, 1, 2), (1, 0, 3, 2)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((0, 3, 1, 2), (2, 3, 0, 1)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((0, 3, 1, 2), (3, 2, 1, 0)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((1, 2, 0, 3), (1, 0, 3, 2)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((1, 2, 0, 3), (2, 3, 0, 1)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((1, 2, 0, 3), (3, 2, 1, 0)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((1, 3, 2, 0), (1, 0, 3, 2)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((1, 3, 2, 0), (2, 3, 0, 1)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((1, 3, 2, 0), (3, 2, 1, 0)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((2, 0, 1, 3), (1, 0, 3, 2)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((2, 0, 1, 3), (2, 3, 0, 1)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((2, 0, 1, 3), (3, 2, 1, 0)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((2, 1, 3, 0), (1, 0, 3, 2)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((2, 1, 3, 0), (2, 3, 0, 1)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((2, 1, 3, 0), (3, 2, 1, 0)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((3, 0, 2, 1), (1, 0, 3, 2)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((3, 0, 2, 1), (2, 3, 0, 1)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((3, 0, 2, 1), (3, 2, 1, 0)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((3, 1, 0, 2), (1, 0, 3, 2)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((3, 1, 0, 2), (2, 3, 0, 1)))",
+    "initial actual primitive coefficient2 cap sign (3, 2, ((3, 1, 0, 2), (3, 2, 1, 0)))",
+    "all-depth actual A4 solid square cap without expanded words []",
+    "all-depth actual A4 ordinary genus deficit []",
+    "all-depth actual A4 solid square cap without expanded words [(5, 1)]",
+    "all-depth actual A4 ordinary genus deficit [(5, 1)]",
+    "all-depth actual A4 solid square cap without expanded words [(7, 1)]",
+    "all-depth actual A4 ordinary genus deficit [(7, 1)]",
+    "all-depth actual A4 solid square cap without expanded words [(5, 1), (7, 1)]",
+    "all-depth actual A4 ordinary genus deficit [(5, 1), (7, 1)]",
+    "all-depth actual A4 solid square cap without expanded words [(5, -1)]",
+    "all-depth actual A4 ordinary genus deficit [(5, -1)]",
+    "all-depth actual A4 solid square cap without expanded words [(7, -1)]",
+    "all-depth actual A4 ordinary genus deficit [(7, -1)]",
+    "all-depth actual A4 solid square cap without expanded words [(5, 1), (7, -1)]",
+    "all-depth actual A4 ordinary genus deficit [(5, 1), (7, -1)]",
+    "all-depth actual A4 solid square cap without expanded words [(7, 1), (5, -1)]",
+    "all-depth actual A4 ordinary genus deficit [(7, 1), (5, -1)]",
+    "all-depth actual A4 solid square cap without expanded words [(5, 1), (7, 1), (5, 1), (7, 1), (5, 1), (7, 1), (5, 1), (7, 1)]",
+    "all-depth actual A4 ordinary genus deficit [(5, 1), (7, 1), (5, 1), (7, 1), (5, 1), (7, 1), (5, 1), (7, 1)]",
+    "minus continuation exact infinity countercontrol (5, 5, 1)",
+    "minus continuation exact infinity countercontrol (5, 7, -1)",
+    "minus continuation exact infinity countercontrol (7, 5, -1)",
+    "complete reset assignments have ratio J/r at most4",
+    "last-minus still-solid arrival complete winding list is only5",
+    "last-minus reset impossible from exact bounded ratio (2, 8, -1)",
+    "last-minus reset impossible from exact bounded ratio (2, 8, 1)",
+    "last-minus reset impossible from exact bounded ratio (8, 2, -1)",
+    "last-minus reset impossible from exact bounded ratio (8, 2, 1)",
+    "last-minus reset impossible from exact bounded ratio (4, 10, -1)",
+    "last-minus reset impossible from exact bounded ratio (4, 10, 1)",
+    "last-minus reset impossible from exact bounded ratio (10, 4, -1)",
+    "last-minus reset impossible from exact bounded ratio (10, 4, 1)",
+    "still-solid arrival exact plus/minus classification ([], 1)",
+    "full actual A4 arrival/reset/tail marked cover ([], 1)",
+    "still-solid arrival exact plus/minus classification ([(5, 1)], -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], -1)",
+    "still-solid arrival exact plus/minus classification ([(5, 1), (7, 1)], -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], -1)",
+    "still-solid arrival exact plus/minus classification ([(5, 1), (7, 1)], 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 1)",
+    "still-solid arrival exact plus/minus classification ([(5, -1)], -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, -1)], -1)",
+    "still-solid arrival exact plus/minus classification ([(7, 1), (5, -1)], -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(7, 1), (5, -1)], -1)",
+    "exact all-plus reset genus table ([], 2, 8, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([], 2, 8, 1)",
+    "exact all-plus reset genus table ([], 8, 2, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([], 8, 2, -1)",
+    "exact all-plus reset genus table ([], 8, 2, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([], 8, 2, 1)",
+    "exact all-plus reset genus table ([], 4, 10, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([], 4, 10, 1)",
+    "exact all-plus reset genus table ([], 10, 4, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([], 10, 4, -1)",
+    "exact all-plus reset genus table ([], 10, 4, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([], 10, 4, 1)",
+    "exact all-plus reset genus table ([(5, 1)], 2, 8, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], 2, 8, -1)",
+    "exact all-plus reset genus table ([(5, 1)], 2, 8, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], 2, 8, 1)",
+    "exact all-plus reset genus table ([(5, 1)], 8, 2, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], 8, 2, -1)",
+    "exact all-plus reset genus table ([(5, 1)], 8, 2, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], 8, 2, 1)",
+    "exact all-plus reset genus table ([(5, 1)], 4, 10, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], 4, 10, -1)",
+    "exact all-plus reset genus table ([(5, 1)], 4, 10, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], 4, 10, 1)",
+    "exact all-plus reset genus table ([(5, 1)], 10, 4, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], 10, 4, -1)",
+    "exact all-plus reset genus table ([(5, 1)], 10, 4, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1)], 10, 4, 1)",
+    "exact all-plus reset genus table ([(5, 1), (7, 1)], 2, 8, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 2, 8, -1)",
+    "exact all-plus reset genus table ([(5, 1), (7, 1)], 2, 8, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 2, 8, 1)",
+    "exact all-plus reset genus table ([(5, 1), (7, 1)], 8, 2, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 8, 2, -1)",
+    "exact all-plus reset genus table ([(5, 1), (7, 1)], 8, 2, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 8, 2, 1)",
+    "exact all-plus reset genus table ([(5, 1), (7, 1)], 4, 10, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 4, 10, -1)",
+    "exact all-plus reset genus table ([(5, 1), (7, 1)], 4, 10, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 4, 10, 1)",
+    "exact all-plus reset genus table ([(5, 1), (7, 1)], 10, 4, -1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 10, 4, -1)",
+    "exact all-plus reset genus table ([(5, 1), (7, 1)], 10, 4, 1)",
+    "full actual A4 arrival/reset/tail marked cover ([(5, 1), (7, 1)], 10, 4, 1)",
+    "cyclic full lattice prime mark generates primary part (3, 1, 3, 4, 3)",
+    "exact unequal lattice valuation rule (3, 1, 3, 4, 3)",
+    "cyclic full lattice prime mark generates primary part (3, 1, 6, 14, 3)",
+    "exact unequal lattice valuation rule (3, 1, 6, 14, 3)",
+    "cyclic full lattice prime mark generates primary part (3, 1, 9, 28, 3)",
+    "exact unequal lattice valuation rule (3, 1, 9, 28, 3)",
+    "cyclic full lattice prime mark generates primary part (7, 2, 7, 29, 7)",
+    "exact unequal lattice valuation rule (7, 2, 7, 29, 7)",
+    "cyclic full lattice prime mark generates primary part (9, 1, 9, 10, 3)",
+    "exact unequal lattice valuation rule (9, 1, 9, 10, 3)",
+    "cyclic full lattice prime mark generates primary part (27, 1, 3, 4, 3)",
+    "exact unequal lattice valuation rule (27, 1, 3, 4, 3)",
+    "cyclic full lattice prime mark generates primary part (9, 1, 3, 4, 3)",
+    "exact unequal lattice valuation rule (9, 1, 3, 4, 3)",
+    "equal valuation CAN cancel so no unjustified equality",
+    "noncyclic source lattice invalidates single-factor conclusion",
+    "terminal trefoil source winding must3 at multiple nodes",
+    "product merger cone pair is NEVER consecutive at genuine odd tail windings",
+    "actual S3 target cyclic group and mark coefficient ([], 3, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([], 3, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([], 3, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([], 3, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([], 6, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([], 6, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([], 6, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([], 6, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([], 1, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([], 1, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(3, 1)], 1, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(3, 1)], 1, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], -3, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, 1)], -3, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], -3, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, 1)], -3, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], 3, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, 1)], 3, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], 3, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, 1)], 3, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], 6, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, 1)], 6, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], 6, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, 1)], 6, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], 9, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, 1)], 9, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], 9, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, 1)], 9, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], 1, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, 1)], 1, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], -3, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(7, 1)], -3, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], -3, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(7, 1)], -3, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], 3, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(7, 1)], 3, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], 3, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(7, 1)], 3, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], 6, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(7, 1)], 6, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], 6, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(7, 1)], 6, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], 9, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(7, 1)], 9, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], 9, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(7, 1)], 9, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], 1, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(7, 1)], 1, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], -3, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, -1)], -3, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], -3, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, -1)], -3, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], 3, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, -1)], 3, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], 3, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, -1)], 3, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], 6, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, -1)], 6, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], 6, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, -1)], 6, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], 9, [(5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, -1)], 9, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], 9, [(3, 5), (5, 3)])",
+    "source full cyclic lattice and marked quotient distinguish exact3 obstruction ([(5, -1)], 9, [(3, 5), (5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], 1, [(5, 3)])",
+    "actual S3 target cyclic group and mark coefficient ([(5, -1)], 1, [(3, 5), (5, 3)])"
+  ],
+  "general": {
+    "all_degree_actual_cyclic_unit_cap_Anew_r2A_coefficient_b_preserved": true,
+    "all_depth_genus_deficit_Dnew_rD_minus_rminus1epsilon": true,
+    "positive_deficit_positive_Lspace_companion_preserved": true,
+    "negative_solid_sign_must_be_LAST_by_strict_infinity": true,
+    "actual_topological_solid_model_not_H1_recognition": true,
+    "cyclic_two_line_lattice_common_prime_mark_generates_primary_part": true,
+    "unequal_prime_valuation_exact_equal_case_not_overclaimed": true
+  },
+  "quartic": {
+    "A4_initial_primitive_cap_EXACT_m_plus2L": true,
+    "A4_solid_A_EXACT_Wsquare_1mod24": true,
+    "all_A4_solid_ordinary_companions_positive_Lspace": true,
+    "earlier_nonsolid_reset_requires_ALLPLUS_solid_history": true,
+    "stillsolid_minus_arrival_ONLY_lastwinding5_KAminus2_eta2": true,
+    "allplus_stillsolid_arrival_eta_exact_plusminus6": true,
+    "all_remaining_complementary_S3_end_order_has_EXACT_single_factor3": true,
+    "all_remaining_S3_solid_and_later_tail_windings_prime_to3": true,
+    "S3_rge9_s_prime_to3_and_exact_arrival_mod9_gate": true,
+    "product_first_tail_fibre_mergers_excluded_before_terminal_match": true,
+    "postreset_nonsolid_loops_not_replaced_by_solid_recurrence": true,
+    "no_prefix_eta_bound_or_separate_affine_source_assumption": true
+  },
+  "all_degree_cyclic_cap_controls": [
+    {
+      "n": 2,
+      "b": 1,
+      "A": 1,
+      "r": 3,
+      "k": 5,
+      "sign": -1,
+      "J": 1,
+      "new_A": 9,
+      "primitive_images": [
+        1,
+        -9
+      ]
+    },
+    {
+      "n": 2,
+      "b": 1,
+      "A": 1,
+      "r": 5,
+      "k": 11,
+      "sign": 1,
+      "J": 1,
+      "new_A": 25,
+      "primitive_images": [
+        1,
+        -25
+      ]
+    },
+    {
+      "n": 3,
+      "b": 2,
+      "A": 1,
+      "r": 5,
+      "k": 7,
+      "sign": -1,
+      "J": 1,
+      "new_A": 25,
+      "primitive_images": [
+        2,
+        -25
+      ]
+    },
+    {
+      "n": 3,
+      "b": 2,
+      "A": 1,
+      "r": 5,
+      "k": 8,
+      "sign": 1,
+      "J": 1,
+      "new_A": 25,
+      "primitive_images": [
+        2,
+        -25
+      ]
+    },
+    {
+      "n": 4,
+      "b": 3,
+      "A": 1,
+      "r": 5,
+      "k": 7,
+      "sign": 1,
+      "J": 1,
+      "new_A": 25,
+      "primitive_images": [
+        3,
+        -25
+      ]
+    },
+    {
+      "n": 5,
+      "b": 2,
+      "A": 1,
+      "r": 3,
+      "k": 7,
+      "sign": -1,
+      "J": 1,
+      "new_A": 9,
+      "primitive_images": [
+        2,
+        -9
+      ]
+    },
+    {
+      "n": 5,
+      "b": 2,
+      "A": 1,
+      "r": 3,
+      "k": 8,
+      "sign": 1,
+      "J": 1,
+      "new_A": 9,
+      "primitive_images": [
+        2,
+        -9
+      ]
+    },
+    {
+      "n": 5,
+      "b": 3,
+      "A": 1,
+      "r": 2,
+      "k": 3,
+      "sign": -1,
+      "J": 1,
+      "new_A": 4,
+      "primitive_images": [
+        3,
+        -4
+      ]
+    },
+    {
+      "n": 7,
+      "b": 2,
+      "A": 1,
+      "r": 3,
+      "k": 11,
+      "sign": 1,
+      "J": 1,
+      "new_A": 9,
+      "primitive_images": [
+        2,
+        -9
+      ]
+    },
+    {
+      "n": 8,
+      "b": 3,
+      "A": 1,
+      "r": 5,
+      "k": 13,
+      "sign": -1,
+      "J": 1,
+      "new_A": 25,
+      "primitive_images": [
+        3,
+        -25
+      ]
+    },
+    {
+      "n": 9,
+      "b": 2,
+      "A": 1,
+      "r": 5,
+      "k": 23,
+      "sign": 1,
+      "J": 1,
+      "new_A": 25,
+      "primitive_images": [
+        2,
+        -25
+      ]
+    }
+  ],
+  "exhaustive_initial_A4_orbits": [
+    {
+      "p": 2,
+      "q": 3,
+      "labelled_pairs": 24,
+      "one_conjugacy_orbit": true,
+      "primitive_images": [
+        2,
+        -1
+      ]
+    },
+    {
+      "p": 3,
+      "q": 2,
+      "labelled_pairs": 24,
+      "one_conjugacy_orbit": true,
+      "primitive_images": [
+        2,
+        -1
+      ]
+    }
+  ],
+  "actual_A4_solid_histories": [
+    {
+      "steps": [],
+      "A": 1,
+      "B": 6,
+      "c": 1,
+      "D": 1,
+      "W": 1,
+      "cables": [],
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          5,
+          1
+        ]
+      ],
+      "A": 25,
+      "B": 40,
+      "c": 37,
+      "D": 1,
+      "W": 5,
+      "cables": [
+        [
+          5,
+          8
+        ]
+      ],
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          7,
+          1
+        ]
+      ],
+      "A": 49,
+      "B": 77,
+      "c": 73,
+      "D": 1,
+      "W": 7,
+      "cables": [
+        [
+          7,
+          11
+        ]
+      ],
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "A": 1225,
+      "B": 1841,
+      "c": 1837,
+      "D": 1,
+      "W": 35,
+      "cables": [
+        [
+          5,
+          8
+        ],
+        [
+          7,
+          263
+        ]
+      ],
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 25,
+      "B": 35,
+      "c": 33,
+      "D": 9,
+      "W": 5,
+      "cables": [
+        [
+          5,
+          7
+        ]
+      ],
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          7,
+          -1
+        ]
+      ],
+      "A": 49,
+      "B": 70,
+      "c": 67,
+      "D": 13,
+      "W": 7,
+      "cables": [
+        [
+          7,
+          10
+        ]
+      ],
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          -1
+        ]
+      ],
+      "A": 1225,
+      "B": 1834,
+      "c": 1831,
+      "D": 13,
+      "W": 35,
+      "cables": [
+        [
+          5,
+          8
+        ],
+        [
+          7,
+          262
+        ]
+      ],
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          7,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 1225,
+      "B": 1835,
+      "c": 1833,
+      "D": 9,
+      "W": 35,
+      "cables": [
+        [
+          7,
+          11
+        ],
+        [
+          5,
+          367
+        ]
+      ],
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "A": 2251875390625,
+      "B": 3377813085941,
+      "c": 3377813085937,
+      "D": 1,
+      "W": 1500625,
+      "cables": [
+        [
+          5,
+          8
+        ],
+        [
+          7,
+          263
+        ],
+        [
+          5,
+          9188
+        ],
+        [
+          7,
+          321563
+        ],
+        [
+          5,
+          11254688
+        ],
+        [
+          7,
+          393914063
+        ],
+        [
+          5,
+          13786992188
+        ],
+        [
+          7,
+          482544726563
+        ]
+      ],
+      "infinity_valid": true
+    }
+  ],
+  "forbidden_minus_continuations": [
+    {
+      "steps": [
+        [
+          5,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "A": 625,
+      "B": 940,
+      "c": 917,
+      "D": 41,
+      "W": 25,
+      "cables": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          188
+        ]
+      ],
+      "infinity_valid": false
+    },
+    {
+      "steps": [
+        [
+          5,
+          -1
+        ],
+        [
+          7,
+          -1
+        ]
+      ],
+      "A": 1225,
+      "B": 1834,
+      "c": 1803,
+      "D": 69,
+      "W": 35,
+      "cables": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          262
+        ]
+      ],
+      "infinity_valid": false
+    },
+    {
+      "steps": [
+        [
+          7,
+          -1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 1225,
+      "B": 1835,
+      "c": 1803,
+      "D": 69,
+      "W": 35,
+      "cables": [
+        [
+          7,
+          10
+        ],
+        [
+          5,
+          367
+        ]
+      ],
+      "infinity_valid": false
+    }
+  ],
+  "complete_reset_degree_table": [
+    {
+      "r": 2,
+      "J": 8,
+      "sign": -1,
+      "k_formula": "(6*A-8)/2",
+      "eta": -4
+    },
+    {
+      "r": 2,
+      "J": 8,
+      "sign": 1,
+      "k_formula": "(6*A+8)/2",
+      "eta": 4
+    },
+    {
+      "r": 8,
+      "J": 2,
+      "sign": -1,
+      "k_formula": "(24*A-2)/2",
+      "eta": 2
+    },
+    {
+      "r": 8,
+      "J": 2,
+      "sign": 1,
+      "k_formula": "(24*A+2)/2",
+      "eta": 4
+    },
+    {
+      "r": 4,
+      "J": 10,
+      "sign": -1,
+      "k_formula": "(12*A-10)/2",
+      "eta": -4
+    },
+    {
+      "r": 4,
+      "J": 10,
+      "sign": 1,
+      "k_formula": "(12*A+10)/2",
+      "eta": 6
+    },
+    {
+      "r": 10,
+      "J": 4,
+      "sign": -1,
+      "k_formula": "(30*A-4)/2",
+      "eta": 2
+    },
+    {
+      "r": 10,
+      "J": 4,
+      "sign": 1,
+      "k_formula": "(30*A+4)/2",
+      "eta": 6
+    }
+  ],
+  "full_actual_target_controls": [
+    {
+      "kind": "still_solid",
+      "history": [],
+      "arrival": [
+        2,
+        9
+      ],
+      "eta_arrival": 6,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "still_solid",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        2,
+        69
+      ],
+      "eta_arrival": -6,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "still_solid",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        2,
+        3669
+      ],
+      "eta_arrival": -6,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "still_solid",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        2,
+        3681
+      ],
+      "eta_arrival": 6,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "still_solid",
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        2,
+        69
+      ],
+      "eta_arrival": 2,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "still_solid",
+      "history": [
+        [
+          7,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        2,
+        3669
+      ],
+      "eta_arrival": 2,
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [],
+      "reset": [
+        2,
+        7
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "eta_reset": 4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [],
+      "reset": [
+        8,
+        11
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "eta_reset": 2,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [],
+      "reset": [
+        8,
+        13
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "eta_reset": 4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [],
+      "reset": [
+        4,
+        11
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "eta_reset": 6,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [],
+      "reset": [
+        10,
+        13
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "eta_reset": 2,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [],
+      "reset": [
+        10,
+        17
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "eta_reset": 6,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reset": [
+        2,
+        71
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "eta_reset": -4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reset": [
+        2,
+        79
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "eta_reset": 4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reset": [
+        8,
+        299
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "eta_reset": 2,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reset": [
+        8,
+        301
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "eta_reset": 4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reset": [
+        4,
+        145
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "eta_reset": -4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reset": [
+        4,
+        155
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "eta_reset": 6,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reset": [
+        10,
+        373
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "eta_reset": 2,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reset": [
+        10,
+        377
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "eta_reset": 6,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reset": [
+        2,
+        3671
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "eta_reset": -4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reset": [
+        2,
+        3679
+      ],
+      "terminal": [
+        2,
+        8
+      ],
+      "eta_reset": 4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reset": [
+        8,
+        14699
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "eta_reset": 2,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reset": [
+        8,
+        14701
+      ],
+      "terminal": [
+        8,
+        2
+      ],
+      "eta_reset": 4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reset": [
+        4,
+        7345
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "eta_reset": -4,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reset": [
+        4,
+        7355
+      ],
+      "terminal": [
+        4,
+        10
+      ],
+      "eta_reset": 6,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reset": [
+        10,
+        18373
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "eta_reset": 2,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "kind": "earlier_reset",
+      "history": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reset": [
+        10,
+        18377
+      ],
+      "terminal": [
+        10,
+        4
+      ],
+      "eta_reset": 6,
+      "postreset_C3": [
+        [
+          2,
+          5
+        ]
+      ],
+      "arrival": [
+        2,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    }
+  ],
+  "prime_mark_lattice_controls": [
+    {
+      "h": 3,
+      "q": 1,
+      "p": 3,
+      "nD": 4,
+      "prime": 3,
+      "delta": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "quotient_R": {
+        "free": 0,
+        "torsion": []
+      },
+      "valuation": 1,
+      "equal_valuation_case": false
+    },
+    {
+      "h": 3,
+      "q": 1,
+      "p": 6,
+      "nD": 14,
+      "prime": 3,
+      "delta": 6,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      },
+      "quotient_R": {
+        "free": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "valuation": 1,
+      "equal_valuation_case": false
+    },
+    {
+      "h": 3,
+      "q": 1,
+      "p": 9,
+      "nD": 28,
+      "prime": 3,
+      "delta": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "quotient_R": {
+        "free": 0,
+        "torsion": []
+      },
+      "valuation": 1,
+      "equal_valuation_case": false
+    },
+    {
+      "h": 7,
+      "q": 2,
+      "p": 7,
+      "nD": 29,
+      "prime": 7,
+      "delta": 7,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "quotient_R": {
+        "free": 0,
+        "torsion": []
+      },
+      "valuation": 1,
+      "equal_valuation_case": false
+    },
+    {
+      "h": 9,
+      "q": 1,
+      "p": 9,
+      "nD": 10,
+      "prime": 3,
+      "delta": 9,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          9
+        ]
+      },
+      "quotient_R": {
+        "free": 0,
+        "torsion": []
+      },
+      "valuation": 2,
+      "equal_valuation_case": false
+    },
+    {
+      "h": 27,
+      "q": 1,
+      "p": 3,
+      "nD": 4,
+      "prime": 3,
+      "delta": 99,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          99
+        ]
+      },
+      "quotient_R": {
+        "free": 0,
+        "torsion": []
+      },
+      "valuation": 2,
+      "equal_valuation_case": false
+    },
+    {
+      "h": 9,
+      "q": 1,
+      "p": 3,
+      "nD": 4,
+      "prime": 3,
+      "delta": 27,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          27
+        ]
+      },
+      "quotient_R": {
+        "free": 0,
+        "torsion": []
+      },
+      "valuation": 3,
+      "equal_valuation_case": true
+    }
+  ],
+  "S3_exact_3primary_controls": [
+    {
+      "history": [],
+      "arrival": [
+        3,
+        8
+      ],
+      "D0": 3,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 15,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        8
+      ],
+      "D0": 3,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 45,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        14
+      ],
+      "D0": 6,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 60,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        14
+      ],
+      "D0": 6,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 180,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        4
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 15,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        4
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 45,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        20
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 765,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        20
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 2295,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        44
+      ],
+      "D0": -3,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3975,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        44
+      ],
+      "D0": -3,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 11925,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        56
+      ],
+      "D0": 3,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3525,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        56
+      ],
+      "D0": 3,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 10575,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        62
+      ],
+      "D0": 6,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3300,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        62
+      ],
+      "D0": 6,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 9900,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        68
+      ],
+      "D0": 9,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3075,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        68
+      ],
+      "D0": 9,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 9225,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        52
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3675,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        52
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 11025,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        92
+      ],
+      "D0": -3,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 10605,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        92
+      ],
+      "D0": -3,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 31815,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        104
+      ],
+      "D0": 3,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 9975,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        104
+      ],
+      "D0": 3,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 29925,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        110
+      ],
+      "D0": 6,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 9660,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        110
+      ],
+      "D0": 6,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 28980,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        116
+      ],
+      "D0": 9,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 9345,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        116
+      ],
+      "D0": 9,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 28035,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        100
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 10185,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          7,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        100
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 30555,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        44
+      ],
+      "D0": -3,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3975,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        44
+      ],
+      "D0": -3,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 11925,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        56
+      ],
+      "D0": 3,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3525,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        56
+      ],
+      "D0": 3,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 10575,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        62
+      ],
+      "D0": 6,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3300,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": true,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        62
+      ],
+      "D0": 6,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 9900,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        68
+      ],
+      "D0": 9,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3075,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        68
+      ],
+      "D0": 9,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 9225,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        52
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 3675,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        52
+      ],
+      "D0": 1,
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "source_pole_candidate": 11025,
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      },
+      "passes_only_new_3primary_necessary_gate": false,
+      "not_affine_realization": true
+    }
+  ],
+  "assurance": {
+    "written_unbounded_cap_genus_infinity_and_frontier_proofs": true,
+    "finite_initial_A4_coloring_classification_EXHAUSTIVE": true,
+    "exact_integral_peripherals_and_composed_cover_controls": true,
+    "retained_deep_topology_and_primary_Floer_inputs_imported": true,
+    "finite_history_controls_not_universal_proof": true,
+    "all_complementary_A4_tails_closed": false,
+    "all_complementary_S3_tails_closed": false,
+    "all_degree_packet_classification": false,
+    "degenerate_stage_classification": false,
+    "full_quartic_exclusion": false,
+    "finite_Keller_map": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_full_reproof": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_cyclic_solid_cap_genus.py": "f759bc77044b338841865c53194576282830e9444d8cf1ddb6db70aff59fdf2b",
+    "CYCLIC_SOLID_CAP_GENUS_AND_A4_HISTORY_REDUCTION.md": "a133bb911e4ad209531b42d85dd68ce45e92a7dce6d96fdffd35f73e7c5af964",
+    "sources/cyclic-solid-cap-genus/manifest.json": "fbd61df5181857626387aeabde72b078fa504890846964da5b412f2b5360918a",
+    "composed_peripheral_cover.py": "0e803ef1da3d429b6a6d20dba114992f6af6bb7760d80673722218824d29eedf",
+    "integer_grid_common_receipt.json": "b245ac36fd963f2c9b70fc4d71b6266a31c911043b6cbd433beaf24d7104455d",
+    "recursive_linking_endpoints_receipt.json": "0f688227cbb9ee043b4933eeff75104bd0dd1e5cead248827ac86d45f2776c87",
+    "nonunimodular_a4_receipt.json": "492392d3200d97dbdac301a9e7fce22830c384a5a04642bcaedc225813ed80d3",
+    "cyclic_pattern_a4_receipt.json": "9eb9cf65aa72f21fb8d12bae08768ea4ad1f66eed21f948bae0024e68f29411a",
+    "global_ruling_unfilled_cyclic_receipt.json": "a42e35d20777a50fa41be0b819ecd1b48a5875524c5b0ce0241980a38656a100",
+    "genus_final_s3_receipt.json": "97d9aae5e46881e780825eb9c6d2302f709a90f18f0f48b732b69d4f07265c91",
+    "cyclic_loop_first_arrival_receipt.json": "4257cffaf4c764663bccd73b8469c9310a5a7c65a94696526354d7bf512951cd",
+    "iterated_peripheral_tail_receipt.json": "7a21fd2fd7b87cc8bff42b5a9993b3edc7c46fe560269a1ce24291b8784ec24c",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/oriented-pattern-linking/neumann-raymond-1978.pdf": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+    "sources/binomial-periodic/clay-watson-2011v1.pdf": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b",
+    "sources/quartic-cabling/neumann-norbury-orevkov.pdf": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+    "sources/genus-final-s3/hom-0912.4046v1.html": "4e0895d2ad5d8f71ed1f2dd1ee82b9e7ae690ceb556a9bfda26ec9ab162cce74"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

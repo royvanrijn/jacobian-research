@@ -1,0 +1,96 @@
+{
+  "status": "probes-complete",
+  "source_sha256": "3535f9fa59de3dc7a5b41f6d0574bf067e80f6e25928734e5af9d8d5c906a2a9",
+  "model_sha256": "127ac0dd64a7e4b60ed8940b248151677c2df3555c3e3defa3750675cbddb83a",
+  "probes": [
+    {
+      "t": "0",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 39
+    },
+    {
+      "t": "1",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 40
+    },
+    {
+      "t": "-1",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 40
+    },
+    {
+      "t": "2",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 40
+    },
+    {
+      "t": "-2",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 40
+    },
+    {
+      "t": "3",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 38
+    }
+  ],
+  "dual_support_union": 42,
+  "seconds": 0.591,
+  "dual_attempts": [
+    {
+      "parameter_degree": 0,
+      "equation_rows": 50,
+      "unknowns": 42,
+      "augmented_rank": 43,
+      "solvable": false
+    },
+    {
+      "parameter_degree": 1,
+      "equation_rows": 92,
+      "unknowns": 84,
+      "augmented_rank": 83,
+      "solvable": false
+    },
+    {
+      "parameter_degree": 2,
+      "equation_rows": 134,
+      "unknowns": 126,
+      "augmented_rank": 123,
+      "solvable": false
+    },
+    {
+      "parameter_degree": 3,
+      "equation_rows": 176,
+      "unknowns": 168,
+      "augmented_rank": 163,
+      "solvable": false
+    },
+    {
+      "parameter_degree": 4,
+      "equation_rows": 218,
+      "unknowns": 210,
+      "augmented_rank": 203,
+      "solvable": false
+    },
+    {
+      "parameter_degree": 5,
+      "equation_rows": 260,
+      "unknowns": 252,
+      "augmented_rank": 243,
+      "solvable": false
+    },
+    {
+      "parameter_degree": 6,
+      "equation_rows": 302,
+      "unknowns": 294,
+      "augmented_rank": 283,
+      "solvable": false
+    }
+  ]
+}

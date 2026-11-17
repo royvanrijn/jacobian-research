@@ -1,0 +1,76 @@
+{
+  "atoms": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      7,
+      7
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      9,
+      12
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      11,
+      11
+    ]
+  ],
+  "axis": 3,
+  "high_equations": 481,
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "low_slots": 80,
+  "model_sha256": "7cab70a86aefbf888b1571989aaedb4b51290c7d046aaf5bfd8511ddec78f831",
+  "parameter_count": 15,
+  "preparation_seconds": 0.612,
+  "scope": "Complete weight-compatible homogeneous quadratic q, independent of this one base axis, in H^-1 K H. Primary experiment only; no full affine-orbit/dimension result.",
+  "seconds": 0.617,
+  "solver_timeout_seconds": 20,
+  "source_sha256": "b61d232b3d3b3effe8074bdd2db448dfb5873c9f2f547c3e4da92fdfc4a153b6",
+  "status": "error"
+}

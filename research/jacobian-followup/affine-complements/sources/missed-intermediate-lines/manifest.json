@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED140",
+  "sources": [
+    {
+      "path": "../jc2-boundary-attachment/PROOF.md",
+      "url": "retained:PF2BATT1",
+      "used": "Original whole boundary disjointness and A1 normalizations; retained classical import.",
+      "bytes": 11414,
+      "sha256": "2cbbd8ead07f9e73f84b655940086369040cbcf55fc6578a5625744416ec6666"
+    },
+    {
+      "path": "INTERMEDIATE_CRITICAL_AXIS_DESCENT_AND_AFFINE_CUSP_PROFILES.md",
+      "url": "retained:PF2RULED123",
+      "used": "Whole cyclic quotient axes, Q-Cartier lower critical locus, and imported smooth reduced inverse-image theorem.",
+      "bytes": 11841,
+      "sha256": "82f1db79cf1b6ccbb686d70a4334f6763aa0084425c54798e4682d59f6f6f921"
+    },
+    {
+      "path": "intermediate_critical_axis_receipt.json",
+      "url": "retained:PF2RULED123 receipt",
+      "used": "PASS126 retained, original full primary theorem and proof seals; no mathematical replay.",
+      "bytes": 15218,
+      "sha256": "21b83b79164224e1d04f6fe41212b8ff939d7c4682411b2903d20427872e1f14"
+    },
+    {
+      "path": "sources/intermediate-critical-axis/giraldo-roeder-1911.00628v1.html",
+      "url": "https://arxiv.org/html/1911.00628v1",
+      "used": "Primary TheoremA and reduced union convention rechecked; existing cached bytes reused.",
+      "bytes": 298928,
+      "sha256": "70bbe40f16378cbb04959f9bca112611096be5bbaf4972d9be285215c6fc2bec"
+    },
+    {
+      "path": "HEREDITARY_EULER_EXCESS_AND_QUOTIENT_DEGREE_BOUNDS.md",
+      "url": "retained:PF2RULED129",
+      "used": "Exact entire-intermediate Euler ledger b=chiV+A+Eta.",
+      "bytes": 10953,
+      "sha256": "7865c9b4e415bbf3b404b616633f81a17b0597c91105f0290f166c4801ba7a1a"
+    },
+    {
+      "path": "RELATIVE_EULER_DEFECT_AND_RULED_CHART_COMPRESSION.md",
+      "url": "retained:PF2RULED130",
+      "used": "Q-Cartier axis avoidance and exact relative defect; no fake finiteness on selected source image.",
+      "bytes": 11072,
+      "sha256": "76daee69adff1d99747feceab13c72f28ca194b3957dfd2b16bd04d68eec93e7"
+    },
+    {
+      "path": "REPLICA_EQUIVARIANT_DEGREE_DESCENT_AND_THE_UNIQUE_MIXED_FIBRE.md",
+      "url": "retained:PF2RULED139",
+      "used": "Actual mixed source-image profile, at most one wholly critical h fibre, normalized degree>=5.",
+      "bytes": 11510,
+      "sha256": "422ba0cad443ea5de693720f49280546adffb81fda9e5b9250ad61ba59c2a817"
+    },
+    {
+      "path": "../hc4-triangular-graphs/DIFFERENTIAL_SUBALGEBRA_CLASSIFICATION.md",
+      "url": "retained:HC4MYKV0/1",
+      "used": "Maximal ring R intersect E and affine source image after removing all missed curves; prior note left their geometry unspecified.",
+      "bytes": 13931,
+      "sha256": "4d6bbc5074b4a0949e9171660b30854ad7fd7052a7fae06b1dd72cf98c4dae96"
+    },
+    {
+      "path": "../hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md",
+      "url": "retained:HC4MYMR0",
+      "used": "Actual surjective replica source image and exact source-line component multiplicities.",
+      "bytes": 11611,
+      "sha256": "de702213847238998a76c14ddeb48e414592cafdb6041e9c337c2b491ec5327d"
+    },
+    {
+      "path": "../hc4-triangular-graphs/FIRST_SOURCE_DERIVATIVES_AND_FINITE_LATTICE_STABILITY.md",
+      "url": "retained:HC4MYMS0",
+      "used": "Shared directional saturation and first-derivative tests credited; no automatic finite-lattice premise.",
+      "bytes": 12752,
+      "sha256": "d28cb576557607e8a4b65ce3f8bb087732df0733f507290df6e55249fd4c127b"
+    },
+    {
+      "path": "sources/missed-intermediate-lines/source-review.json",
+      "url": "local:source-review",
+      "used": "Exact whole-curve, point-gap, selected-open and shared-credit audit.",
+      "bytes": 1710,
+      "sha256": "14b3cdce029b202b844a4d3b4f88a8ce6523f4ecff684295ed690683329e0085"
+    }
+  ],
+  "new_external_theorem_import": false,
+  "new_primary_downloads": 0,
+  "registered_predecessor_mathematical_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

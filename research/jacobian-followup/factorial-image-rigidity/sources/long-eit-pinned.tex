@@ -1,0 +1,1220 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{aliascnt}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=green!35!black,
+  urlcolor=blue!55!black,
+  pdftitle={Algebraic Exponential Integrals: Transcendence and Linear Relations},
+  pdfauthor={Christopher D. Long; Antoine-Auguste Le Blanc}
+}
+
+\numberwithin{equation}{section}
+\setlength{\emergencystretch}{3em}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\newaliascnt{proposition}{theorem}
+\newtheorem{proposition}[proposition]{Proposition}
+\aliascntresetthe{proposition}
+
+\newaliascnt{lemma}{theorem}
+\newtheorem{lemma}[lemma]{Lemma}
+\aliascntresetthe{lemma}
+
+\newaliascnt{corollary}{theorem}
+\newtheorem{corollary}[corollary]{Corollary}
+\aliascntresetthe{corollary}
+
+\theoremstyle{definition}
+\newaliascnt{definition}{theorem}
+\newtheorem{definition}[definition]{Definition}
+\aliascntresetthe{definition}
+
+\theoremstyle{remark}
+\newaliascnt{remark}{theorem}
+\newtheorem{remark}[remark]{Remark}
+\aliascntresetthe{remark}
+
+\newcommand{\C}{\mathbb C}
+\newcommand{\Qbar}{\overline{\mathbb Q}}
+\newcommand{\Aone}{\mathbb A^1}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Mcal}{\mathcal M}
+\newcommand{\Ecal}{\mathcal E}
+\newcommand{\Rcal}{\mathcal R}
+\newcommand{\Lcal}{\mathcal L}
+\newcommand{\Dmod}{\mathcal D}
+\newcommand{\Ocal}{\mathcal O}
+
+\title{Algebraic Exponential Integrals:\\
+Transcendence and Linear Relations}
+\author{Christopher D. Long \and Antoine-Auguste Le Blanc\thanks{Le Blanc cryptographic author identifier: \texttt{b6048125\allowbreak{}30b3535b\allowbreak{}23d6dbb0\allowbreak{}f5abe32d\allowbreak{}1ed1a9de\allowbreak{}35fb4f7d\allowbreak{}04d62cff\allowbreak{}08ea19c8}}}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\small
+\texttt{galizur@gmail.com}
+\end{center}
+
+\begin{abstract}
+Let $q\in\Qbar[x]$ be nonconstant, and let
+$\Delta=\sum_\alpha d_\alpha[\alpha]$ be a finite degree-zero zero-cycle on
+$\Aone(\Qbar)$ with coefficients in $\Qbar$.  If $\Gamma$ is any finite
+piecewise $C^1$ one-chain in $\C$ with $\partial\Gamma=\Delta$, put
+\[
+  I_{q,\Delta}(z)=\int_\Gamma e^{zq(x)}\,dx.
+\]
+We prove that every nonzero function $I_{q,\Delta}$ is a purely
+transcendental $E$-function: for every $\xi\in\Qbar^\times$,
+$I_{q,\Delta}(\xi)$ is transcendental.  Equivalently,
+\[
+  I_{q,\Delta}(1)\in\Qbar
+  \quad\Longleftrightarrow\quad
+  I_{q,\Delta}\equiv0.
+\]
+In particular, $\int_A^B e^{q(x)}dx$ is transcendental for every pair of
+distinct algebraic endpoints.  For a fixed polynomial $q$, we also determine all $\Qbar$-linear
+relations among finite families of these values: they are exactly the
+specializations of constant-coefficient functional relations, and the latter
+are characterized by vanishing of explicit inverse-branch densities on a
+finite tree in the target of $q$.
+
+The proof combines Beukers' lifting theorem with a homogeneous moment
+connection.  A Fourier--Laplace description proves semisimplicity, while an
+explicit residue calculation shows that every rational horizontal
+endomorphism is constant.  An algebraic value therefore forces an
+exponential-polynomial identity.  Constant-coefficient annihilation and a
+Cauchy-transform argument then force the original exponential period
+function to vanish identically.
+\end{abstract}
+
+\medskip
+\noindent\textit{2020 Mathematics Subject Classification.}
+Primary 11J81; Secondary 14F10, 34M35.
+
+\noindent\textit{Keywords.}
+$E$-functions, exponential period functions, Siegel--Shidlovskii theorem,
+Fourier--Laplace transform, polynomial moments, Cauchy transforms,
+transcendence, linear relations.
+
+\section{Introduction and main results}
+
+Following Fres\'an and Jossen, we use \emph{exponential period function} for
+a parameter-dependent integral of the form $\int_\gamma e^{-zf}\omega$ with
+algebraic data \cite{FresanJossen}.  The present functions form a
+one-dimensional relative family: $X=\Aone$, the regular function is $-q$,
+the algebraic differential form is $dx$, and the integration chain has finite
+boundary.  This is compatible with the general terminology of exponential
+periods \cite{CommelinHabeggerHuber,FresanJossenExp}.  We refer simply to the polynomial $q$
+and to its values and critical values.
+
+\begin{definition}[Zero-cycles and exponential period functions]
+A finite zero-cycle on $\Aone(\Qbar)$ with coefficients in $\Qbar$ is a
+formal sum
+\[
+  \Delta=\sum_{\alpha\in S}d_\alpha[\alpha],
+  \qquad
+  S\subset\Qbar\text{ finite},\quad d_\alpha\in\Qbar.
+\]
+Its degree is $\deg\Delta=\sum_{\alpha\in S}d_\alpha$.  Suppose
+$\deg\Delta=0$.  Choose a finite piecewise $C^1$ one-chain $\Gamma$ in
+$\C$, with complex coefficients, such that $\partial\Gamma=\Delta$, and set
+\begin{equation}\label{eq:I}
+  I_{q,\Delta}(z)=\int_\Gamma e^{zq(x)}\,dx.
+\end{equation}
+For every $z$, the one-form $e^{zq(x)}dx$ has an entire primitive in $x$.
+Thus \eqref{eq:I} is independent of the chosen $\Gamma$, and compactness of
+$\Gamma$ shows that $I_{q,\Delta}$ is entire in $z$.
+\end{definition}
+
+\begin{theorem}[Algebraic-value rigidity]\label{thm:rigidity}
+Let $q\in\Qbar[x]$ be nonconstant, and let $\Delta$ be a finite degree-zero
+zero-cycle on $\Aone(\Qbar)$ with coefficients in $\Qbar$.  Then
+\begin{equation}\label{eq:rigidity}
+  I_{q,\Delta}(1)\in\Qbar
+  \quad\Longleftrightarrow\quad
+  I_{q,\Delta}(z)\equiv0.
+\end{equation}
+In the equivalent cases, $I_{q,\Delta}(1)=0$.
+\end{theorem}
+
+The fixed evaluation point $1$ entails no loss: a nonzero algebraic
+parameter is already part of the polynomial in the exponent.
+
+\begin{corollary}[Pure transcendence and algebraic zeros]
+\label{cor:purely-transcendental}
+If $I_{q,\Delta}$ is not identically zero, then
+\[
+  I_{q,\Delta}(\xi)\notin\Qbar
+  \qquad(\xi\in\Qbar^\times).
+\]
+In particular, $I_{q,\Delta}$ has no nonzero algebraic zero.  As an
+$E$-function, it is purely transcendental in the standard sense.
+\end{corollary}
+
+\begin{proof}
+For $\xi\in\Qbar^\times$,
+\[
+  I_{\xi q,\Delta}(z)=I_{q,\Delta}(\xi z).
+\]
+The right side is nonzero as an entire function if and only if
+$I_{q,\Delta}$ is nonzero.  Apply \cref{thm:rigidity} to the polynomial
+$\xi q$.
+\end{proof}
+
+\begin{corollary}[A single algebraic exponential integral]
+\label{cor:single}
+Let $q\in\Qbar[x]$ be nonconstant and let $A,B\in\Qbar$ with $A\ne B$.
+Then, for every $\xi\in\Qbar^\times$,
+\[
+  \int_A^B e^{\xi q(x)}\,dx
+\]
+is transcendental and nonzero.
+\end{corollary}
+
+\begin{proof}
+For $\Delta=[B]-[A]$, one has $I_{q,\Delta}(0)=B-A\ne0$, so
+$I_{q,\Delta}$ is not identically zero.  Apply
+\cref{cor:purely-transcendental}.
+\end{proof}
+
+For a fixed $E$-function, Adamczewski and Rivoal gave an algorithm that
+computes all nonzero algebraic arguments at which its value is algebraic
+\cite{AdamczewskiRivoal}; Bostan, Rivoal, and Salvy made the required
+minimal-equation computations effective in practice
+\cite{BostanRivoalSalvy}.  The point of \cref{thm:rigidity} is different:
+it gives a uniform answer for the entire family indexed by $(q,\Delta)$ and
+identifies exactly when the function itself vanishes.  Delaygue's
+Lindemann--Weierstrass theorem gives linear independence under a separation
+condition on the finite singularity sets of the associated $G$-series
+\cite{Delaygue}.  The functions attached to a fixed $q$ arise from one
+common moment connection and can have overlapping singularity data; the
+results below require no such separation and describe the whole relation
+space.
+
+There is classical overlap in special cases.  For example,
+\[
+  \int_0^A e^{cx^n}\,dx
+  =A\,{}_1F_1\!\left(\frac1n;1+\frac1n;cA^n\right),
+\]
+so monomial exponents belong to the hypergeometric $E$-function setting;
+see, for example, Delaygue's discussion of hypergeometric values
+\cite{Delaygue}.  The no-algebraic-zero consequence also connects with
+recent work of Fischler and Rivoal on zeros of $E$-functions
+\cite{FischlerRivoalZeros}.
+
+\paragraph{Prior work and the present contribution.}
+The use of parameter-dependent exponential periods and
+Siegel--Shidlovskii theory is established in the work of Fres\'an and
+Jossen.  Jossen's 2018 report develops polynomial-phase families with
+noncompact rapid-decay cycles and states the Andr\'e--Beukers lifting
+principle for polynomial relations \cite[\S\S2--3]{Jossen2018}.
+For compact loops on $\mathbb G_m$, Fres\'an and Jossen derive
+$E$-function systems from linearity, differentiation, and twisted Stokes
+\cite[\S12.7]{FresanJossenExp}.  They also identify the absolute
+polynomial-phase connection with the Fourier--Laplace transform of the
+reduced polynomial direct image \cite[Proposition~5.1]{FresanJossen}.
+
+In a 2025 lecture reporting joint work in progress with Fres\'an, Jossen
+presented the quadratic marked-point model, including
+$\int_0^a e^{-zx^2}\,dx$ at algebraic $a$ and the endpoint exponentials
+\cite{Jossen2025}.  He described its differential Galois group and explained
+the arithmetic independence obtained from Siegel--Shidlovskii theory,
+separating the additional $\sqrt\pi$-independence question for the full
+rapid-decay period field.  Our contribution is the uniform rigidity theorem
+for compact algebraic boundary data and arbitrary polynomial phase, together
+with the complete fixed-$q$ linear-relation criterion.  The argument uses
+constant-coordinate endomorphism rigidity and inverse-branch densities,
+without assuming simple critical points or distinct critical values.
+
+The proof has three parts.  First, moments of \eqref{eq:I} satisfy one
+explicit inhomogeneous $E$-function system.  Second, the homogeneous
+connection is semisimple and every rational horizontal endomorphism is
+constant; this converts a polynomial-coefficient relation supplied by
+Beukers' theorem into a constant-coordinate relation.  Third, an
+exponential-polynomial identity produces vanishing polynomial moments, and
+a Cauchy transform on a finite tree forces all inverse-branch densities to
+vanish.
+
+\paragraph{Scope of the differential form.}
+The fixed form $dx$ is essential.  For $q(x)=x(x-1)$ and
+$r(x)=2x^2-x+1$, one has
+\[
+  r(x)e^{q(x)}=\frac{d}{dx}\bigl(xe^{q(x)}\bigr),
+  \qquad \int_0^1 r(x)e^{q(x)}\,dx=1.
+\]
+Yet the function $\int_0^1 r(x)e^{zq(x)}\,dx$ is not identically zero:
+its value at $z=0$ is $7/6$.  Thus \cref{thm:rigidity} does not extend
+unchanged to arbitrary polynomial amplitudes.
+
+\section{The moment system}
+
+We use the standard definition: an entire function
+$F(z)=\sum_{m\ge0}a_m z^m/m!$ is an $E$-function if its coefficients are
+algebraic, $h(a_0,\ldots,a_m)=O(m)$, and $F$ satisfies a nonzero linear
+differential equation over $\Qbar[z]$.
+
+Assume throughout this section that $n=\deg q\ge2$, and put
+\[
+  V=\C[x]_{<n-1}.
+\]
+For $0\le j\le n-2$, divide
+\begin{equation}\label{eq:division}
+  q(x)x^j=h_j(x)q'(x)+r_j(x),
+  \qquad \deg r_j<n-1.
+\end{equation}
+Define endomorphisms $\mathsf C,\mathsf D$ of $V$ by
+\[
+  \mathsf C(x^j)=r_j,
+  \qquad
+  \mathsf D(x^j)=-h_j'.
+\]
+Let $C=\mathsf C^{\mathsf T}$ and $D=\mathsf D^{\mathsf T}$ in the
+monomial basis $1,x,\ldots,x^{n-2}$.
+
+\begin{lemma}[Residue spectrum]\label{lem:D-spectrum}
+The matrix $D$ is triangular, with
+\begin{equation}\label{eq:D-spectrum}
+  \Spec(D)=
+  \left\{-\frac1n,-\frac2n,\ldots,-\frac{n-1}{n}\right\}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Comparison of the leading terms in \eqref{eq:division} gives
+\[
+  h_j(x)=\frac{x^{j+1}}n+O(x^j).
+\]
+Consequently,
+$-h_j'(x)=-(j+1)x^j/n+O(x^{j-1})$.
+\end{proof}
+
+Fix a chain $\Gamma$ with boundary $\Delta$, and put
+\begin{equation}\label{eq:U}
+  U_j(z)=\int_\Gamma x^j e^{zq(x)}\,dx,
+  \qquad
+  \mathbf U=(U_0,\ldots,U_{n-2})^{\mathsf T}.
+\end{equation}
+Let
+\begin{equation}\label{eq:Lambda}
+  \Lambda=\{0\}\cup q(\supp\Delta),
+\end{equation}
+with repetitions removed, and define
+\[
+  \mathbf h(x)=(h_0(x),\ldots,h_{n-2}(x))^{\mathsf T},
+  \qquad
+  \mathbf b_\lambda=
+  \sum_{\substack{\alpha\in\supp\Delta\\q(\alpha)=\lambda}}
+     d_\alpha\mathbf h(\alpha)
+  \quad(\lambda\in\Lambda).
+\]
+
+\begin{proposition}[Moment system]\label{prop:moment-system}
+The moment vector satisfies
+\begin{equation}\label{eq:moment-system}
+  \mathbf U'
+  =\left(C+\frac Dz\right)\mathbf U
+   +\frac1z\sum_{\lambda\in\Lambda}
+      \mathbf b_\lambda e^{\lambda z}.
+\end{equation}
+Each $U_j$ is an $E$-function.
+\end{proposition}
+
+\begin{proof}
+Integration by parts in \eqref{eq:division} gives, for $z\ne0$,
+\[
+  U_j'
+  =\int_\Gamma\left(r_j-\frac{h_j'}z\right)e^{zq}\,dx
+   +\frac1z\sum_{\alpha\in\supp\Delta}
+      d_\alpha h_j(\alpha)e^{zq(\alpha)},
+\]
+which is \eqref{eq:moment-system}.  Both sides are meromorphic at $0$, and
+the identity holds there by continuation.
+
+Write
+\[
+  U_j(z)=\sum_{m\ge0}u_{j,m}\frac{z^m}{m!},
+  \qquad
+  u_{j,m}=\int_\Gamma x^j q(x)^m\,dx,
+\]
+and
+\[
+  q(x)^m=\sum_{k=0}^{nm}\gamma_{m,k}x^k.
+\]
+A polynomial primitive gives the exact formula
+\begin{equation}\label{eq:coefficient-formula}
+  u_{j,m}=\sum_{k=0}^{nm}\gamma_{m,k}
+  \frac{\displaystyle\sum_{\alpha\in\supp\Delta}
+        d_\alpha\alpha^{j+k+1}}{j+k+1}.
+\end{equation}
+Thus every $u_{j,m}$ is algebraic.
+
+We record the arithmetic growth explicitly.  Let $K$ be a number field
+containing the coefficients of $q$ and all $\alpha,d_\alpha$.  Uniformly
+over embeddings $\sigma:K\hookrightarrow\C$, integration of a primitive
+along the segment from $0$ to $\sigma(\alpha)$ gives
+\begin{equation}\label{eq:arch-bound}
+  |\sigma(u_{j,m})|\le A^{m+j+2}
+\end{equation}
+for a constant $A\ge1$.  Choose an integer $d\ge1$ such that $d$ times
+every coefficient of $q$, every $\alpha$, and every $d_\alpha$ is an
+algebraic integer.  For $m\ge0$, set
+\begin{equation}\label{eq:common-denominator}
+  \delta_m=
+  d^{(n+1)m+j+2}\operatorname{lcm}(1,2,\ldots,nm+j+1).
+\end{equation}
+Formula \eqref{eq:coefficient-formula} shows that
+$\delta_m u_{j,\ell}$ is an algebraic integer for every $0\le\ell\le m$:
+indeed, $d^\ell\gamma_{\ell,k}$, $d d_\alpha$, and
+$d^{j+k+1}\alpha^{j+k+1}$ are integral, while
+$k\le n\ell\le nm$, and the total exponent of $d$ needed for each term
+satisfies $\ell+j+k+2\le(n+1)m+j+2$.  Since
+$\log\operatorname{lcm}(1,\ldots,N)=O(N)$, \eqref{eq:arch-bound} and
+\eqref{eq:common-denominator} imply
+\[
+  h(u_{j,0},\ldots,u_{j,m})=O(m).
+\]
+
+Finally, \eqref{eq:moment-system} shows that the $\Qbar(z)$-span of the
+$U_j$ and the finitely many functions $e^{\lambda z}$ is stable under
+differentiation.  Hence each $U_j$ satisfies a nonzero scalar differential
+equation over $\Qbar[z]$.  This proves all defining properties of an
+$E$-function.
+\end{proof}
+
+When $q(x)=ax+b$ is linear, the explicit identity
+\begin{equation}\label{eq:linear-formula}
+  I_{q,\Delta}(z)
+  =\frac1{az}\sum_{\alpha\in\supp\Delta}
+       d_\alpha e^{zq(\alpha)}
+  \qquad(z\ne0)
+\end{equation}
+shows directly that $I_{q,\Delta}$ is also an $E$-function.
+
+We use the following linear form of Beukers' refinement of the
+Siegel--Shidlovskii theorem
+\cite[Theorem~3.2 and Lemma~3.1]{Beukers}.  No linear independence
+hypothesis on the coordinates is required.
+
+\begin{theorem}[Beukers, linear lifting]\label{thm:Beukers}
+Let $\mathbf F=(F_1,\ldots,F_N)^{\mathsf T}$ be a vector of $E$-functions
+satisfying $\mathbf F'=A(z)\mathbf F$ with
+$A(z)\in M_N(\Qbar(z))$, and suppose that $A$ has no pole at $z=1$.
+For every relation
+\[
+  a_1F_1(1)+\cdots+a_NF_N(1)=0,
+  \qquad a_i\in\Qbar,
+\]
+there are polynomials $p_i\in\Qbar[z]$ such that
+\[
+  \sum_{i=1}^N p_i(z)F_i(z)=0,
+  \qquad p_i(1)=a_i\quad(1\le i\le N).
+\]
+\end{theorem}
+
+\section{The homogeneous moment connection}
+
+The homogeneous part of \eqref{eq:moment-system} is
+\begin{equation}\label{eq:homogeneous}
+  \mathbf Y'=\left(C+\frac Dz\right)\mathbf Y.
+\end{equation}
+
+The Fourier--Laplace description used below is the polynomial direct-image
+construction of \cite[Proposition~5.1]{FresanJossen}, with the sign and dual
+conventions made explicit.  We recall it in the moment coordinates needed
+for the subsequent residue argument; the finite-monodromy proof of
+semisimplicity does not require genericity of $q$.
+
+\begin{proposition}[Semisimplicity]\label{prop:semisimplicity}
+The differential module over $\C(z)$ defined by
+\eqref{eq:homogeneous} is semisimple.
+\end{proposition}
+
+\begin{proof}
+Let $\Sigma$ be the finite set of critical values of $q$, and put
+$V_0=\Aone_t\setminus\Sigma$.  Over $V_0$, the finite map
+$q:q^{-1}(V_0)\to V_0$ defines a rank-$n$ permutation local system
+$\Lcal$.  Its monodromy group is finite, so $\Lcal$ is semisimple by
+Maschke's theorem.  The trace map splits it as
+\[
+  \Lcal\simeq\C_{V_0}\oplus\Lcal^0,
+  \qquad \Lcal^0=\ker(\Tr:\Lcal\to\C_{V_0}).
+\]
+
+The map $q$ is finite, hence proper and small.  The small-map
+intermediate-extension identity
+\cite[Remark~4.2.4]{deCataldoMigliorini} gives
+\begin{equation}\label{eq:small-map}
+  Rq_*\C_{\Aone_x}[1]\simeq\operatorname{IC}(\Lcal).
+\end{equation}
+Intermediate extension preserves direct sums and takes irreducible local
+systems to simple perverse sheaves.  Thus the semisimplicity of $\Lcal$
+makes this perverse sheaf semisimple.  Under the Riemann--Hilbert
+correspondence and
+its compatibility with proper direct image, the regular holonomic
+$\Dmod$-module $q_+\Ocal_{\Aone_x}$ is therefore semisimple; the constant
+summand of $\Lcal$ corresponds to $\Ocal_{\Aone_t}$
+\cite{HTT}.
+
+Use a Fourier variable $\tau$ and the Weyl-algebra convention
+\begin{equation}\label{eq:Fourier-convention}
+  t\longmapsto-\partial_\tau,
+  \qquad \partial_t\longmapsto\tau.
+\end{equation}
+This is the inverse convention to the transform with kernel $e^{t\tau}$
+in \cite[\S1.3.b]{SabbahFourier}; our convention corresponds to the
+kernel $e^{-t\tau}$.
+Fourier transformation is an exact equivalence on holonomic Weyl modules
+and preserves simple objects and direct sums.  The transform of
+$\Ocal_{\Aone_t}$ is supported at $\tau=0$, hence disappears after
+localization to $\C(\tau)$.  A nonzero generic localization of a simple
+Weyl module remains irreducible.  Indeed, its
+$\C[\tau]\setminus\{0\}$-torsion is a Weyl submodule: if
+$p(\tau)m=0$, then $p(\tau)^2\partial_\tau m=0$.  Thus a simple module
+whose localization is nonzero embeds in that localization.  Any nonzero
+$\C(\tau)$-differential submodule meets the original module after clearing
+a denominator, and simplicity then forces equality.  It follows that the
+generic Fourier transform of $q_+\Ocal_{\Aone_x}$ is semisimple.
+
+For completeness, we identify this generic transform explicitly.  Factor
+$q$ as its graph embedding followed by projection to the $t$-line.  A graph
+generator $\delta_q$ satisfies
+\[
+  (t-q(x))\delta_q=0,
+  \qquad
+  (\partial_x+q'(x)\partial_t)\delta_q=0.
+\]
+After \eqref{eq:Fourier-convention}, the transformed generator satisfies
+\[
+  (\partial_\tau+q(x))\widehat\delta_q=0,
+  \qquad
+  (\partial_x+\tau q'(x))\widehat\delta_q=0.
+\]
+In particular,
+$\partial_x(p\widehat\delta_q)=(p'-\tau q'p)\widehat\delta_q$:
+the relation on the generator induces a minus sign in the differential
+on coefficient polynomials.  The generic direct image along the $x$-line
+is therefore the degree-zero cohomology of
+\[
+  \C(\tau)[x]
+  \xrightarrow{\ \partial_x-\tau q'(x)\ }
+  \C(\tau)[x],
+\]
+with $\tau$-connection induced by $\partial_\tau-q(x)$.  The displayed
+map is injective: for nonzero $p$, the term $-\tau q'p$ has larger
+$x$-degree than $p'$.  Hence the generic transform is
+\begin{equation}\label{eq:generic-Fourier}
+  \C(\tau)[x]\big/
+  (\partial_x-\tau q'(x))\C(\tau)[x],
+  \qquad
+  \nabla_{\partial_\tau}[p]=[\partial_\tau p-qp].
+\end{equation}
+This is the algebraic Fourier--Laplace direct-image construction of
+\cite[\S1.3.b]{SabbahFourier}, with the inverse convention fixed in
+\eqref{eq:Fourier-convention}.
+
+Pulling \eqref{eq:generic-Fourier} back by $\tau=-z$ gives
+\begin{equation}\label{eq:twisted-module}
+  \Mcal_q=
+  \C(z)[x]\big/(\partial_x+zq'(x))\C(z)[x],
+  \qquad
+  \nabla_{\partial_z}[p]=[\partial_zp+qp].
+\end{equation}
+The connection descends to this quotient because
+\begin{equation}\label{eq:twisted-commutator}
+  [\partial_z+q,\partial_x+zq']=q'-q'=0.
+\end{equation}
+The classes of $1,x,\ldots,x^{n-2}$ form a basis: the relation
+$[zq'p]=-[p']$ reduces every higher monomial, while degree comparison proves
+independence.  In this basis, \eqref{eq:division} gives the connection
+matrix $\mathsf C+\mathsf D/z$.  The period system
+\eqref{eq:homogeneous} is the corresponding dual system, and duality
+preserves semisimplicity.
+\end{proof}
+
+\begin{proposition}[Rational endomorphism rigidity]
+\label{prop:endomorphism-rigidity}
+If $P(z)\in M_{n-1}(\C(z))$ satisfies
+\begin{equation}\label{eq:endomorphism}
+  P'=\left[C+\frac Dz,P\right],
+\end{equation}
+then $P$ is constant.  The horizontal endomorphism algebra of
+\eqref{eq:homogeneous} is therefore
+\[
+  Z(C)\cap Z(D).
+\]
+The same constancy conclusion holds for the dual module.
+\end{proposition}
+
+\begin{proof}
+A pole at $z_0\ne0$ is impossible: differentiation raises its order by
+one, whereas the right side of \eqref{eq:endomorphism} does not.  At $0$,
+a leading term $z^{-m}P_{-m}$ with $m\ge1$ would give
+\[
+  -mP_{-m}=[D,P_{-m}].
+\]
+By \eqref{eq:D-spectrum}, every eigenvalue of
+$\operatorname{ad}D$ lies strictly between $-1$ and $1$, so the negative
+integer $-m$ cannot occur.  Thus $P$ has no finite pole and is polynomial.
+
+It remains to exclude positive degree.  Transpose
+\eqref{eq:endomorphism} and write $Q=P^{\mathsf T}$.  The operator
+$\mathsf C$ is multiplication by $q$ on $\C[x]/(q')$.  For a critical
+point $\tau$, put
+\[
+  m_\tau=\ord_\tau q',
+  \qquad \lambda_\tau=q(\tau),
+\]
+and define
+\[
+  g_{\tau,k}(x)=\frac{q'(x)}{(x-\tau)^k},
+  \qquad 1\le k\le m_\tau.
+\]
+The Chinese remainder theorem shows that all the $g_{\tau,k}$ form a
+basis of $V$.  Moreover,
+\[
+  \mathsf Cg_{\tau,k}=\lambda_\tau g_{\tau,k},
+\]
+because
+\[
+  qg_{\tau,k}
+  =\frac{q-\lambda_\tau}{(x-\tau)^k}q'
+   +\lambda_\tau g_{\tau,k}.
+\]
+Thus $\mathsf C$ is semisimple, with eigenspaces indexed by critical
+values.
+
+Let $E_\lambda$ be the $\lambda$-eigenspace of $\mathsf C$, let
+$\pi_\lambda$ be its spectral projection, and put
+\[
+  \overline D_\lambda
+  =\pi_\lambda\mathsf D|_{E_\lambda}.
+\]
+Fix $\tau$ with $\lambda_\tau=\lambda$, and write $m=m_\tau$.
+Define
+\[
+  F_{\tau,0}=0,\qquad
+  F_{\tau,k}=\Span_\C\{g_{\tau,1},\ldots,g_{\tau,k}\}
+  \quad(1\le k\le m).
+\]
+We claim the explicit flag relation
+\begin{equation}\label{eq:local-flag}
+  \overline D_\lambda g_{\tau,k}
+  +\frac{m+1-k}{m+1}g_{\tau,k}
+  \in F_{\tau,k-1}
+  \qquad(1\le k\le m).
+\end{equation}
+To prove it, write $y=x-\tau$ and
+$q-\lambda=ay^{m+1}+O(y^{m+2})$, with $a\ne0$.  Euclidean division gives
+\[
+  \mathsf Dg_{\tau,k}
+  =-\left(\frac{q-\lambda}{(x-\tau)^k}\right)',
+\]
+so
+\begin{align*}
+  g_{\tau,k}&=(m+1)a y^{m-k}+O(y^{m-k+1}),\\
+  \mathsf Dg_{\tau,k}&=-(m+1-k)a y^{m-k}+O(y^{m-k+1}).
+\end{align*}
+Their combination in \eqref{eq:local-flag} therefore vanishes at $\tau$
+to order at least $m-k+1$.  If $\sigma\ne\tau$ has the same critical
+value, then $(x-\tau)^{-k}$ is regular at $\sigma$, while $q-\lambda$
+vanishes there to order $m_\sigma+1$.  Hence
+$\mathsf Dg_{\tau,k}$ vanishes at $\sigma$ to order at least $m_\sigma$,
+and its component in that factor of $\C[x]/(q')$ is zero.
+
+Under the Chinese remainder decomposition, $F_{\tau,k-1}$ consists
+precisely of the classes supported in the $\tau$-factor and divisible
+there by $y^{m-k+1}$.  Projection by $\pi_\lambda$ removes all factors
+over other critical values.  The preceding vanishing statements thus
+prove \eqref{eq:local-flag}.  In particular, every $F_{\tau,k}$ is
+$\overline D_\lambda$-invariant.  On each $F_{\tau,m}$ the matrix in the
+ordered basis $g_{\tau,1},\ldots,g_{\tau,m}$ is triangular, with diagonal
+\begin{equation}\label{eq:local-spectrum}
+  -\frac{m}{m+1},
+  -\frac{m-1}{m+1},\ldots,-\frac1{m+1}.
+\end{equation}
+As $\tau$ ranges over the critical points with value $\lambda$, these
+lists give the full spectrum of $\overline D_\lambda$, with
+multiplicities.  In particular, all its eigenvalues lie in $(-1,0)$,
+including when distinct critical points have the same value and different
+ramification indices.
+
+Suppose
+\[
+  Q(z)=Q_dz^d+Q_{d-1}z^{d-1}+\cdots,
+  \qquad d\ge1,\quad Q_d\ne0.
+\]
+The top two coefficients of the transposed equation give
+\begin{equation}\label{eq:top-coefficients}
+  [Q_d,\mathsf C]=0,
+  \qquad
+  dQ_d=[Q_{d-1},\mathsf C]+[Q_d,\mathsf D].
+\end{equation}
+The first identity makes $Q_d$ block diagonal for the eigenspace
+decomposition of $\mathsf C$.  Choose a critical value $\lambda$ for
+which $Q_{d,\lambda}\ne0$.
+Projecting the second identity to this block yields
+\[
+  dQ_{d,\lambda}
+  =[Q_{d,\lambda},\overline D_\lambda].
+\]
+After triangularizing $\overline D_\lambda$, the eigenvalues of the
+commutator operator on the right are pairwise differences of the numbers in
+\eqref{eq:local-spectrum}.  They all lie strictly between $-1$ and $1$,
+so none equals the positive integer $d$.  This contradiction proves that
+$d=0$.
+
+A constant solution of \eqref{eq:endomorphism} commutes with both $C$ and
+$D$, and the converse is immediate.  The calculation for a right-acting
+endomorphism of the dual gives the same equation.
+\end{proof}
+
+\begin{corollary}[Constant splitting]\label{cor:constant-splitting}
+Every differential submodule of the dual of \eqref{eq:homogeneous} has the
+form
+\[
+  W\otimes_\C\C(z)
+\]
+for a constant subspace $W\subseteq\C^{1\times(n-1)}$ invariant under
+right multiplication by $C$ and $D$.
+\end{corollary}
+
+\begin{proof}
+By \cref{prop:semisimplicity}, a differential submodule has a differential
+complement and hence a horizontal idempotent projector.  By
+\cref{prop:endomorphism-rigidity}, this projector is constant.  Its image
+is the required subspace $W$; substituting the constant projector into
+\eqref{eq:endomorphism} shows that $W$ is $C$- and $D$-invariant.
+\end{proof}
+
+\section{From an algebraic value to an exponential polynomial}
+
+Put
+\[
+  \Ecal=\Span_{\C(z)}\{e^{\lambda z}:\lambda\in\Lambda\}.
+\]
+
+\begin{proposition}\label{prop:exp-poly}
+If $U_0(1)\in\Qbar$, then
+\begin{equation}\label{eq:exp-poly}
+  U_0(z)=\sum_{\lambda\in\Lambda}p_\lambda(z)e^{\lambda z}
+\end{equation}
+with $p_\lambda\in\Qbar[z]$.
+\end{proposition}
+
+\begin{proof}
+Adjoin the exponential coordinates $e^{\lambda z}$ to the moment vector.
+By \eqref{eq:moment-system}, the resulting vector of $E$-functions
+satisfies a homogeneous block system whose only finite pole is at $z=0$.
+Let $a=U_0(1)\in\Qbar$.  Applying \cref{thm:Beukers} to
+$U_0(1)-a\cdot1=0$ gives a polynomial row
+$\boldsymbol\phi(z)$ and polynomials $c_\lambda(z)$ such that
+\begin{equation}\label{eq:lifted}
+  \boldsymbol\phi(z)\mathbf U(z)
+  +\sum_{\lambda\in\Lambda}c_\lambda(z)e^{\lambda z}=0,
+  \qquad
+  \boldsymbol\phi(1)=(1,0,\ldots,0).
+\end{equation}
+
+Define
+\[
+  \Rcal=
+  \{\boldsymbol\psi\in\C(z)^{1\times(n-1)}:
+    \boldsymbol\psi\mathbf U\in\Ecal\}.
+\]
+If $A(z)=C+D/z$ and
+$\mathbf f=z^{-1}\sum_\lambda\mathbf b_\lambda e^{\lambda z}$, then
+\[
+  (\boldsymbol\psi\mathbf U)'
+  =(\boldsymbol\psi'+\boldsymbol\psi A)\mathbf U
+   +\boldsymbol\psi\mathbf f.
+\]
+Since $\Ecal$ is stable under differentiation, this proves that $\Rcal$
+is a differential submodule of the dual homogeneous connection.  By
+\cref{cor:constant-splitting},
+$\Rcal=W\otimes_\C\C(z)$ for a constant $C$- and $D$-invariant subspace
+$W$.  Equation \eqref{eq:lifted} puts $\boldsymbol\phi$ in $\Rcal$.
+Every constant linear form annihilating $W$ therefore annihilates
+$\boldsymbol\phi(z)$ identically, and hence also annihilates
+$\boldsymbol\phi(1)$.  Thus $\boldsymbol\phi(1)\in W$, without
+specializing any rational basis.  Hence the constant row
+$\mathbf e_0=(1,0,\ldots,0)$ belongs to $W$, and
+$U_0=\mathbf e_0\mathbf U$ belongs to $\Ecal$.
+
+Choose a full-row-rank constant matrix $S$ whose rows form a basis of $W$,
+and put $\mathbf V=S\mathbf U$.  There are constant matrices $C_W,D_W$
+such that
+\[
+  SC=C_WS,
+  \qquad SD=D_WS.
+\]
+Every component of $\mathbf V$ belongs to $\Ecal$.  The functions
+$e^{\lambda z}$ are linearly independent over $\C(z)$, so there is a unique
+expansion
+\[
+  \mathbf V=\sum_{\lambda\in\Lambda}
+  \mathbf r_\lambda(z)e^{\lambda z},
+  \qquad \mathbf r_\lambda\in\C(z)^{\dim W}.
+\]
+Equating exponential coefficients in the restricted moment system gives
+\begin{equation}\label{eq:r-system}
+  \mathbf r_\lambda'
+  =\left(C_W-\lambda I+\frac{D_W}{z}\right)
+     \mathbf r_\lambda
+   +\frac{S\mathbf b_\lambda}{z}.
+\end{equation}
+A pole away from $0$ is impossible by order comparison.  If
+$\mathbf r_\lambda=z^{-m}v+O(z^{-m+1})$ at $0$, with $m\ge1$, then
+\eqref{eq:r-system} gives
+\[
+  -mv=D_Wv.
+\]
+The eigenvalues of the restriction $D_W$ are among those of $D$, hence lie
+strictly between $-1$ and $0$ by \eqref{eq:D-spectrum}; none is a negative
+integer.  Thus every $\mathbf r_\lambda$ is polynomial, and so are the
+coefficients $p_\lambda$ in \eqref{eq:exp-poly}.
+
+It remains to show that their coefficients are algebraic.  Choose an
+integer $d\ge0$ bounding the degrees of all the $p_\lambda$, write
+$p_\lambda(z)=\sum_{k=0}^d a_{\lambda,k}z^k$, and put
+$M=(d+1)|\Lambda|$.  Differentiating \eqref{eq:exp-poly} at $0$ gives
+\begin{equation}\label{eq:finite-descent}
+  U_0^{(m)}(0)
+  =\sum_{\lambda\in\Lambda}\sum_{k=0}^d
+     a_{\lambda,k}
+     \left.\frac{d^k}{dt^k}t^m\right|_{t=\lambda}
+  \qquad(0\le m<M).
+\end{equation}
+The square coefficient matrix has algebraic entries and is invertible.
+Indeed, its transpose is the Hermite evaluation map
+\[
+  \Qbar[t]_{<M}\longrightarrow\Qbar^M,
+  \qquad f\longmapsto
+  \bigl(f^{(k)}(\lambda)\bigr)_{\lambda\in\Lambda,\,0\le k\le d}.
+\]
+A polynomial in its kernel is divisible by
+$\prod_{\lambda\in\Lambda}(t-\lambda)^{d+1}$, of degree $M$, so must
+vanish.  Thus the map is injective and hence invertible.  All derivatives
+$U_0^{(m)}(0)$ are algebraic by \eqref{eq:coefficient-formula}; solving
+\eqref{eq:finite-descent} yields $a_{\lambda,k}\in\Qbar$.  Therefore
+$p_\lambda\in\Qbar[z]$.
+\end{proof}
+
+\section{Moments, Cauchy transforms, and functional relations}
+
+We first isolate the geometric representation used by the analytic
+argument.
+
+\begin{lemma}[Tree representation]\label{lem:tree-representation}
+Let $q\in\C[x]$ be nonconstant and let $\Delta$ be a finite degree-zero
+zero-cycle on $\C$ with complex coefficients.  There exist a finite
+embedded tree $T$ in the $t$-plane, containing all finite critical values
+of $q$ and all values $q(\alpha)$ for $\alpha\in\supp\Delta$, and a
+one-chain $\widetilde\Gamma$ in the graph $q^{-1}(T)$ such that
+$\partial\widetilde\Gamma=\Delta$.
+
+Orient every open edge $e$ of $T$.  Over $e$, write
+$\widetilde\Gamma$ as a linear combination of analytic inverse branches
+$x_{e,i}$ of $q$, with coefficients $f_{e,i}$, and set
+\begin{equation}\label{eq:edge-density}
+  \psi_e(t)=\sum_i f_{e,i}x_{e,i}'(t)
+  =\sum_i\frac{f_{e,i}}{q'(x_{e,i}(t))}.
+\end{equation}
+Then $\psi_e$ is analytic on the open edge, has at worst integrable
+singularities at its endpoints, and for every entire function $F$,
+\begin{equation}\label{eq:edge-decomposition}
+  \int_\Gamma F(q(x))\,dx
+  =\sum_e\int_e F(t)\psi_e(t)\,dt,
+\end{equation}
+where $\Gamma$ is any one-chain with boundary $\Delta$.
+\end{lemma}
+
+\begin{proof}
+Choose a regular value $c$ of $q$, distinct from all endpoint values, and
+join $c$ to the distinct finite critical values and endpoint values by
+simple analytic arcs with pairwise disjoint interiors.  Their union is a
+finite tree $T$.  The inverse image of the critical-value arms is the
+standard polynomial constellation.  It is connected because the monodromy
+of the polynomial covering on a regular fiber is transitive
+\cite[\S2.1]{PakovichMuzychuk}.  The remaining arms attach to this connected
+subgraph, so $q^{-1}(T)$ is connected.
+
+Subdivide the graph so that every point of $\supp\Delta$ is a vertex.  Fix
+a vertex $x_*$ and choose an edge path $P_\alpha$ from $x_*$ to each
+$\alpha\in\supp\Delta$.  Then
+\[
+  \widetilde\Gamma=
+  \sum_{\alpha\in\supp\Delta}d_\alpha P_\alpha
+\]
+has boundary $\Delta$, because $\deg\Delta=0$.  The inverse-branch
+description on open edges gives \eqref{eq:edge-density}.  Near a ramified
+endpoint of index $r$, one has
+$x_{e,i}'(t)=O(|t-t_0|^{1/r-1})$, which is integrable.
+
+The one-form $F(q(x))dx$ is entire in $x$, so its integral depends only on
+the boundary.  Replacing $\Gamma$ by $\widetilde\Gamma$ and changing
+variables $t=q(x)$ edge by edge gives \eqref{eq:edge-decomposition}.
+\end{proof}
+
+\begin{theorem}[Moment rigidity and the edge-density criterion]
+\label{thm:moment-rigidity}
+In the setting of \cref{lem:tree-representation}, let
+$0\ne H\in\C[t]$.  If
+\begin{equation}\label{eq:moments}
+  \int_\Gamma q(x)^mH(q(x))\,dx=0
+  \qquad(m\ge0),
+\end{equation}
+then every density $\psi_e$ in \eqref{eq:edge-density} vanishes
+identically.  Consequently,
+\[
+  I_{q,\Delta}(z)\equiv0.
+\]
+For any fixed tree representation,
+\begin{equation}\label{eq:edge-criterion}
+  I_{q,\Delta}\equiv0
+  \quad\Longleftrightarrow\quad
+  \psi_e\equiv0\text{ for every open edge }e\subset T.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Every differential $q(x)^mH(q(x))dx$ is polynomial and has a polynomial
+primitive, so \eqref{eq:moments} remains true after replacing $\Gamma$ by
+$\widetilde\Gamma$.  For $s\in\C\setminus T$, define
+\[
+  \mathcal C_H(s)=
+  \int_{\widetilde\Gamma}
+  \frac{H(q(x))}{s-q(x)}\,dx.
+\]
+For sufficiently large $|s|$, the geometric series for
+$(s-q(x))^{-1}$ converges uniformly on the compact chain, and
+\eqref{eq:moments} gives $\mathcal C_H(s)=0$.  The complement of a finite
+embedded tree is connected, so the identity theorem yields
+\begin{equation}\label{eq:Cauchy-zero}
+  \mathcal C_H\equiv0\qquad\text{on }\C\setminus T.
+\end{equation}
+By \eqref{eq:edge-decomposition},
+\begin{equation}\label{eq:edge-Cauchy}
+  \mathcal C_H(s)
+  =\sum_e\int_e\frac{H(t)\psi_e(t)}{s-t}\,dt.
+\end{equation}
+
+Fix an interior point $t_0$ of an edge $e$ with $H(t_0)\ne0$, and choose
+a compact analytic subarc $\eta\Subset e$ containing $t_0$.  Contributions
+to \eqref{eq:edge-Cauchy} from outside $\eta$ extend holomorphically across
+a small disk about $t_0$.  Put $\rho(t)=H(t)\psi_e(t)$ and
+\[
+  J(s)=\int_\eta\frac{\rho(t)}{s-t}\,dt.
+\]
+If $a,b$ are the oriented endpoints of $\eta$, then locally
+\[
+  J(s)=
+  \rho(s)\bigl(\log(s-a)-\log(s-b)\bigr)
+  -\int_\eta\frac{\rho(t)-\rho(s)}{t-s}\,dt.
+\]
+The second term is holomorphic across $\eta$, while the two lateral
+branches of the logarithmic term differ by
+$2\pi i\varepsilon_e\rho(t_0)$, where
+$\varepsilon_e\in\{\pm1\}$.  By \eqref{eq:Cauchy-zero}, both lateral
+values of the full Cauchy transform are zero.  Hence
+$H(t_0)\psi_e(t_0)=0$, and therefore $\psi_e(t_0)=0$.  The point $t_0$ was
+arbitrary outside the finite zero set of $H$; analyticity gives
+$\psi_e\equiv0$ on every open edge.
+
+Taking $F(t)=e^{zt}$ in \eqref{eq:edge-decomposition} now gives
+$I_{q,\Delta}\equiv0$.  Conversely, if $I_{q,\Delta}\equiv0$, its Taylor
+coefficients give \eqref{eq:moments} with $H=1$, so the preceding argument
+forces all densities to vanish.  The reverse implication in
+\eqref{eq:edge-criterion} follows directly from
+\eqref{eq:edge-decomposition}.
+\end{proof}
+
+This argument is a local Cauchy-transform form of techniques used in the
+polynomial moment problem and for Cauchy-type integrals of algebraic
+functions \cite{PakovichMuzychuk,PakovichRoytvarfYomdin,GavrilovPakovich}.
+
+\section{Proofs and linear relations}
+
+\begin{proof}[Proof of \cref{thm:rigidity}]
+The reverse implication is immediate.  Assume that
+$I_{q,\Delta}(1)=\gamma\in\Qbar$.
+
+Suppose first that $q(x)=ax+b$ is linear.  Formula
+\eqref{eq:linear-formula} at $z=1$ gives
+\begin{equation}\label{eq:linear-LW}
+  \sum_{\alpha\in\supp\Delta}d_\alpha e^{q(\alpha)}
+  -a\gamma e^0=0.
+\end{equation}
+The values $q(\alpha)$ are pairwise distinct.  Combine the two coefficients
+of $e^0$ if one endpoint satisfies $q(\alpha)=0$.  The linear form of the
+Lindemann--Weierstrass theorem \cite[Chapter~1]{Baker} then makes every
+coefficient in \eqref{eq:linear-LW} zero.  Thus
+$d_\alpha=0$ for all endpoints with $q(\alpha)\ne0$.  If
+$q(\alpha_0)=0$, then $d_{\alpha_0}=a\gamma$, while
+$\deg\Delta=0$ gives $d_{\alpha_0}=0$ and hence $\gamma=0$.  If no such
+endpoint exists, the coefficient of $e^0$ gives $\gamma=0$ directly.
+Therefore $\Delta=0$ and $I_{q,\Delta}\equiv0$.
+
+Now suppose $\deg q\ge2$.  By \cref{prop:exp-poly},
+\[
+  U_0(z)=I_{q,\Delta}(z)
+  =\sum_{\lambda\in\Lambda}p_\lambda(z)e^{\lambda z}.
+\]
+If $U_0\equiv0$, there is nothing to prove.  Otherwise set
+\[
+  N=1+\max_{p_\lambda\ne0}\deg p_\lambda,
+  \qquad
+  L=\prod_{\lambda\in\Lambda}(\partial_z-\lambda)^N,
+\]
+and
+\[
+  H(t)=\prod_{\lambda\in\Lambda}(t-\lambda)^N.
+\]
+Then $LU_0=0$, and differentiation under the integral sign gives
+\[
+  0=LU_0(z)
+  =\int_\Gamma H(q(x))e^{zq(x)}\,dx.
+\]
+Comparing Taylor coefficients at $z=0$ gives \eqref{eq:moments}.  Apply
+\cref{thm:moment-rigidity}.
+\end{proof}
+
+\begin{corollary}[Transfer of linear relations]\label{cor:transfer}
+Let $q\in\Qbar[x]$ be nonconstant, let
+$\Delta_1,\ldots,\Delta_r$ be finite degree-zero zero-cycles on
+$\Aone(\Qbar)$ with coefficients in $\Qbar$, and put
+$I_j(z)=I_{q,\Delta_j}(z)$.  For $a_0,\ldots,a_r\in\Qbar$,
+\begin{equation}\label{eq:transfer}
+  a_0+\sum_{j=1}^r a_jI_j(1)=0
+\end{equation}
+if and only if
+\[
+  a_0=0,
+  \qquad
+  \sum_{j=1}^r a_jI_j(z)\equiv0.
+\]
+Consequently,
+\[
+ \dim_{\Qbar}\Span_{\Qbar}\{1,I_1(1),\ldots,I_r(1)\}
+ =1+\dim_{\Qbar}\Span_{\Qbar}\{I_1,\ldots,I_r\}.
+\]
+\end{corollary}
+
+\begin{proof}
+Put $\Delta=\sum_j a_j\Delta_j$.  Relation \eqref{eq:transfer} says
+$I_{q,\Delta}(1)=-a_0\in\Qbar$.  By \cref{thm:rigidity},
+$I_{q,\Delta}\equiv0$, and then its value at $1$ gives $a_0=0$.  The
+converse and the dimension identity are immediate.
+\end{proof}
+
+The same equivalence holds with the common evaluation point $1$ replaced by
+any $\xi\in\Qbar^\times$: replace $q$ by $\xi q$ and then rescale the
+function variable.
+
+\begin{corollary}[Geometric description of the relation space]
+\label{cor:geometric-relations}
+In the setting of \cref{cor:transfer}, choose one tree $T$ containing all
+critical values of $q$ and all values
+$q(\supp\Delta_j)$.  For each $j$, choose a graph chain representing
+$\Delta_j$ as in \cref{lem:tree-representation}, and denote its density on
+an open edge $e$ by $\psi_{j,e}$.  Then
+\[
+  a_0+\sum_{j=1}^r a_jI_j(1)=0
+\]
+if and only if
+\[
+  a_0=0,
+  \qquad
+  \sum_{j=1}^r a_j\psi_{j,e}\equiv0
+  \quad\text{for every open edge }e\subset T.
+\]
+Thus all $\Qbar$-linear relations among the values are determined by a
+finite family of inverse-branch identities on $T$.
+\end{corollary}
+
+\begin{proof}
+The graph chain for $\Delta=\sum_j a_j\Delta_j$ is the same linear
+combination of the chosen graph chains, and its density on $e$ is
+$\sum_j a_j\psi_{j,e}$.  Combine \cref{cor:transfer} with the exact
+criterion \eqref{eq:edge-criterion}.
+\end{proof}
+
+\begin{corollary}[Linear independence over distinct regular values]
+\label{cor:regular}
+Let $q\in\Qbar[x]$ be nonconstant, and let $a_0,\ldots,a_r\in\Qbar$ be
+such that $q(a_0),\ldots,q(a_r)$ are pairwise distinct regular values of
+$q$.  Then, for every $\xi\in\Qbar^\times$,
+\[
+  1,\quad
+  \int_{a_0}^{a_1}e^{\xi q(x)}\,dx,\quad\ldots,\quad
+  \int_{a_0}^{a_r}e^{\xi q(x)}\,dx
+\]
+are linearly independent over $\Qbar$.
+\end{corollary}
+
+\begin{proof}
+Absorb $\xi$ into $q$.  It suffices to prove that the functions
+\[
+  I_j(z)=\int_{a_0}^{a_j}e^{zq(x)}\,dx,
+  \qquad 1\le j\le r,
+\]
+are linearly independent.  A functional relation produces a degree-zero
+zero-cycle
+\[
+  \Delta=\sum_{j=1}^r c_j[a_j]
+  -\left(\sum_{j=1}^r c_j\right)[a_0]
+\]
+whose exponential period function vanishes identically.  Choose the tree
+so that each $q(a_i)$ is the endpoint of a separate terminal arm.  Over the
+arm ending at $q(a_i)$, regularity and distinctness imply that the only
+nonzero terminal boundary coefficient can occur on the lift ending at
+$a_i$.  The density there is therefore
+\[
+  \frac{d_i}{q'(x_i(t))},
+\]
+where $d_i$ is the coefficient of $[a_i]$ in $\Delta$.  By
+\eqref{eq:edge-criterion}, this density vanishes, so $d_i=0$ for every
+$i$.  Hence all $c_j=0$.  Apply \cref{cor:transfer}.
+\end{proof}
+
+\section*{Acknowledgments and AI-assisted research disclosure}
+
+This manuscript was developed through interactive work between Christopher
+D. Long and ChatGPT 5.6 Pro.  ChatGPT 5.6 Pro assisted in proof discovery,
+organization, symbolic checking, reference verification, adversarial
+auditing, and drafting.  Claude Opus 5 contributed to the
+semisimple-projector strategy and independent audits.  The AI systems are
+not authors.  The authors bear full responsibility for all statements,
+proofs, citations, and any remaining errors.  This draft has not yet
+undergone independent peer review or formal verification.
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{AdamczewskiRivoal}
+B.~Adamczewski and T.~Rivoal,
+\emph{Exceptional values of $E$-functions at algebraic points},
+Bull. Lond. Math. Soc. \textbf{50} (2018), no.~4, 697--708.
+\href{https://doi.org/10.1112/blms.12168}{doi:10.1112/blms.12168}.
+
+\bibitem{Baker}
+A.~Baker,
+\emph{Transcendental Number Theory},
+Cambridge Mathematical Library,
+Cambridge University Press, Cambridge, 1990.
+
+\bibitem{Beukers}
+F.~Beukers,
+\emph{A refined version of the Siegel--Shidlovskii theorem},
+Ann. of Math. (2) \textbf{163} (2006), no.~1, 369--379.
+\href{https://doi.org/10.4007/annals.2006.163.369}{doi:10.4007/annals.2006.163.369}.
+
+\bibitem{BostanRivoalSalvy}
+A.~Bostan, T.~Rivoal, and B.~Salvy,
+\emph{Minimization of differential equations and algebraic values of
+$E$-functions},
+Math. Comp. \textbf{93} (2024), no.~347, 1427--1472.
+\href{https://doi.org/10.1090/mcom/3912}{doi:10.1090/mcom/3912}.
+
+\bibitem{CommelinHabeggerHuber}
+J.~Commelin, P.~Habegger, and A.~Huber,
+\emph{Exponential periods and o-minimality},
+arXiv:2007.08280v4 (2025), to appear in
+Ann. Inst. Fourier (Grenoble).
+
+\bibitem{deCataldoMigliorini}
+M.~A.~A. de~Cataldo and L.~Migliorini,
+\emph{The decomposition theorem, perverse sheaves and the topology of
+algebraic maps},
+Bull. Amer. Math. Soc. (N.S.) \textbf{46} (2009), no.~4, 535--633.
+\href{https://doi.org/10.1090/S0273-0979-09-01260-9}{doi:10.1090/S0273-0979-09-01260-9}.
+
+\bibitem{Delaygue}
+\'E.~Delaygue,
+\emph{A Lindemann--Weierstrass theorem for $E$-functions},
+J. Reine Angew. Math. \textbf{820} (2025), 75--85.
+\href{https://doi.org/10.1515/crelle-2024-0090}{doi:10.1515/crelle-2024-0090}.
+
+\bibitem{FischlerRivoalZeros}
+S.~Fischler and T.~Rivoal,
+\emph{Zeros of $E$-functions and of exponential polynomials defined over
+$\overline{\mathbb Q}$},
+arXiv:2503.20345 (2025).
+
+\bibitem{FresanJossen}
+J.~Fres\'an and P.~Jossen,
+\emph{A non-hypergeometric $E$-function},
+Ann. of Math. (2) \textbf{194} (2021), no.~3, 903--942.
+\href{https://doi.org/10.4007/annals.2021.194.3.7}{doi:10.4007/annals.2021.194.3.7}.
+
+\bibitem{FresanJossenExp}
+J.~Fres\'an and P.~Jossen,
+\emph{Exponential motives},
+preliminary book manuscript, 301-page version consulted October 5, 2026.
+\url{http://javier.fresan.perso.math.cnrs.fr/expmot.pdf}.
+
+\bibitem{GavrilovPakovich}
+L.~Gavrilov and F.~Pakovich,
+\emph{Moments on Riemann surfaces and hyperelliptic Abelian integrals},
+Comment. Math. Helv. \textbf{89} (2014), no.~1, 125--155.
+\href{https://doi.org/10.4171/CMH/314}{doi:10.4171/CMH/314}.
+
+\bibitem{HTT}
+R.~Hotta, K.~Takeuchi, and T.~Tanisaki,
+\emph{$D$-Modules, Perverse Sheaves, and Representation Theory},
+Progress in Mathematics, vol.~236,
+Birkh\"auser Boston, Boston, MA, 2008.
+\href{https://doi.org/10.1007/978-0-8176-4523-6}{doi:10.1007/978-0-8176-4523-6}.
+
+\bibitem{Jossen2018}
+P.~Jossen,
+\emph{Special values of $E$-functions as exponential periods},
+lecture report for \emph{Periods and $L$-values of Motives},
+Simons Foundation, May 2018, 11~pp.
+\href{https://simonsfoundation.s3.amazonaws.com/share/mps/symposia/2018/pdf/palvom/Report_Jossen.pdf}{Lecture report}.
+
+\bibitem{Jossen2025}
+P.~Jossen,
+\emph{Examples around the exponential period conjecture},
+CIRM, recorded lecture, February 20, 2025.
+\href{https://doi.org/10.24350/CIRM.V.20308403}{doi:10.24350/CIRM.V.20308403}.
+
+\bibitem{PakovichMuzychuk}
+F.~Pakovich and M.~Muzychuk,
+\emph{Solution of the polynomial moment problem},
+Proc. Lond. Math. Soc. (3) \textbf{99} (2009), no.~3, 633--657.
+\href{https://doi.org/10.1112/plms/pdp010}{doi:10.1112/plms/pdp010}.
+
+\bibitem{PakovichRoytvarfYomdin}
+F.~Pakovich, N.~Roytvarf, and Y.~Yomdin,
+\emph{Cauchy-type integrals of algebraic functions},
+Israel J. Math. \textbf{144} (2004), 221--291.
+\href{https://doi.org/10.1007/BF02916714}{doi:10.1007/BF02916714}.
+
+\bibitem{SabbahFourier}
+C.~Sabbah,
+\emph{Fourier transformation and Stokes structures},
+lecture notes, version of February 13, 2020,
+\url{https://perso.pages.math.cnrs.fr/users/claude.sabbah/livres/sabbah_chicago1205.pdf}.
+
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,19 @@
+{
+  "both_smt_unknowns_preserved": true,
+  "claims": [
+    "KCUB21"
+  ],
+  "conditional_tensor_bounds_only": true,
+  "dominated98_matrix_not_reported_as_improvement": true,
+  "finite_pool_optimum_proved": false,
+  "global_minima_closed": false,
+  "global_upper_bound_still89": true,
+  "links": true,
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "source_hashes": true,
+  "status": "pass",
+  "three_bounded_pools_preserved": true,
+  "umbrella_status": "open",
+  "validation_sha256": "0dfc4005be0d9482c3c2960db677a5470a9f6490fe6b7078867041a34c5f28b5"
+}

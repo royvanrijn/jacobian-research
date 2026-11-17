@@ -1,0 +1,8 @@
+verify_weighted_newfirst7 pass 282 
+verify_weighted_unmarked7 pass 647 
+verify_weighted_zero7 pass 650 
+verify_weighted_123 pass 186 
+verify_weighted_213 pass 73 
+verify_weighted_113 pass 344 
+verify_carrier_reparam12 pass 244 
+DOMAIN FAILURES 0 INTERCEPTED WRITES 7

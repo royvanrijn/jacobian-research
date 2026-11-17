@@ -1,0 +1,169 @@
+CASE|125|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:46
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:46
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:46
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:46
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:46
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:46
+CASE|126|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:86
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:86
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:86
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:86
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:86
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:86
+CASE|127|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:126
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:126
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:126
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:126
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:126
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:126
+CASE|128|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:166
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:166
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:166
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:166
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:166
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:166
+CASE|129|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:206
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:206
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:206
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:206
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:206
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:206
+CASE|130|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:246
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:246
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:246
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:246
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:246
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:246
+CASE|131|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:286
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:286
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:286
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:286
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:286
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:286
+CASE|132|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:326
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:326
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:326
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:326
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:326
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:326
+CASE|133|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:366
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:366
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:366
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:366
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:366
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:366
+CASE|134|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:406
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:406
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:406
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:406
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:406
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:406
+CASE|135|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:446
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:446
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:446
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:446
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:446
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:446
+CASE|136|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:486
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:486
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:486
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:486
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:486
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:486
+CASE|137|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:526
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:526
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:526
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:526
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:526
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:526
+CASE|138|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:566
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:566
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:566
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:566
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:566
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:566
+CASE|139|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:606
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:606
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:606
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:606
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:606
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:606
+CASE|140|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:646
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:646
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:646
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:646
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:646
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:646
+CASE|141|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:686
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:686
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:686
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:686
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:686
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:686
+CASE|142|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:726
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:726
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:726
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:726
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:726
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:726
+CASE|143|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:766
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:766
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:766
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:766
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:766
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:766
+CASE|144|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:806
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:806
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:806
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:806
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:806
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:806
+CASE|145|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:846
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:846
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:846
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:846
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:846
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:846
+CASE|146|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:886
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:886
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:886
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:886
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:886
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:886
+CASE|147|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:926
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:926
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:926
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:926
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:926
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:926
+CASE|148|65
+// ** redefining i (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:966
+// ** redefining j (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:966
+// ** redefining k (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:966
+// ** redefining count (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:966
+// ** redefining current (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:966
+// ** redefining best (int i;int j;int k;int count;int current;int best=0;poly q;poly b;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/collision-frame-search/singular-replay/cases-0125.sing:966
+CASE|149|65

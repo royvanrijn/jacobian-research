@@ -1,0 +1,255 @@
+{
+  "status": "complete",
+  "source_sha256": "fd01f50a497e6b9c669e53e8915ae4fa4856fd4bd6ae749a57dcb0036f13eed1",
+  "models": [
+    {
+      "name": "m2q1",
+      "input": "m2q1.json",
+      "input_sha256": "cd3643d3ccaf388f49d22deeee29bebddded8013efec96e9c2cdb05ac099ba0a",
+      "full_atoms": 20,
+      "reduced_atoms": 11,
+      "invariant_equations": 15
+    },
+    {
+      "name": "m3q1",
+      "input": "m3q1.json",
+      "input_sha256": "0fb4e8322f66682e47bb681f31f1a5f17689eb8d29b4244dfdeb99240f696530",
+      "full_atoms": 17,
+      "reduced_atoms": 8,
+      "invariant_equations": 11
+    },
+    {
+      "name": "m2q3",
+      "input": "m2q3.json",
+      "input_sha256": "83c2bb3efe11a926806c2725e578ad1af449597613a7201b0ba1b806db572ee2",
+      "full_atoms": 13,
+      "reduced_atoms": 4,
+      "invariant_equations": 3
+    },
+    {
+      "name": "m3q2",
+      "input": "m3q2.json",
+      "input_sha256": "9e070f411b934535372ea1ef717202d3cfeb49f8883928241f1ef4cefc41188d",
+      "full_atoms": 13,
+      "reduced_atoms": 4,
+      "invariant_equations": 3
+    },
+    {
+      "name": "m4q1",
+      "input": "m4q1.json",
+      "input_sha256": "ac7a89afd7bbc9d8e35644bba7b38c5168fb54509d8f45ae3710bb9e4c8dc71e",
+      "full_atoms": 13,
+      "reduced_atoms": 4,
+      "invariant_equations": 3
+    },
+    {
+      "name": "m5q1",
+      "input": "m5q1.json",
+      "input_sha256": "d1712f980634797337607af054a7981260c662cc6a96adeefddf8bff5e09080d",
+      "full_atoms": 13,
+      "reduced_atoms": 4,
+      "invariant_equations": 3
+    },
+    {
+      "name": "m2q5",
+      "input": "m2q5.json",
+      "input_sha256": "0736c9ee8e54d3fc814e555f46d84b0fe205724e37e3b434ad6d256c614197a0",
+      "full_atoms": 10,
+      "reduced_atoms": 1,
+      "invariant_equations": 0
+    },
+    {
+      "name": "m3q4",
+      "input": "m3q4.json",
+      "input_sha256": "9b1a7396ac92f56884a02cfa00bccb0a0edd7a5074ca249555999d3ed864da95",
+      "full_atoms": 10,
+      "reduced_atoms": 1,
+      "invariant_equations": 0
+    },
+    {
+      "name": "m4q3",
+      "input": "m4q3.json",
+      "input_sha256": "dc56d8be6af068640efadd1b06219f118d7117982aebd88e0cab2d7f7b37d084",
+      "full_atoms": 10,
+      "reduced_atoms": 1,
+      "invariant_equations": 0
+    },
+    {
+      "name": "m5q2",
+      "input": "m5q2.json",
+      "input_sha256": "aeebc7b2a44f895b2fd4b9514bb1f18e532b8bf318cde07bedf99e7f159841bd",
+      "full_atoms": 10,
+      "reduced_atoms": 1,
+      "invariant_equations": 0
+    },
+    {
+      "name": "m6q1",
+      "input": "m6q1.json",
+      "input_sha256": "54dc969134a8fb5cc15e61de91ba4f0314929bfc6339b5de599ea87bfa6fde1d",
+      "full_atoms": 10,
+      "reduced_atoms": 1,
+      "invariant_equations": 0
+    },
+    {
+      "name": "m3q5",
+      "input": "m3q5.json",
+      "input_sha256": "ceacd231c4289cd93d5e77d9ec02cc5069c40fda9c1df700e783315fa5879f1b",
+      "full_atoms": 10,
+      "reduced_atoms": 1,
+      "invariant_equations": 0
+    },
+    {
+      "name": "m5q3",
+      "input": "m5q3.json",
+      "input_sha256": "c4e85043a8f3b2a63ba51c2005f9fcbea02ecd2a6a2945f575d682c54899048d",
+      "full_atoms": 10,
+      "reduced_atoms": 1,
+      "invariant_equations": 0
+    },
+    {
+      "name": "m7q1",
+      "input": "m7q1.json",
+      "input_sha256": "0e90e28b813a1bdf77269510149e183ad5976531b44cb76cf614f44c33c28025",
+      "full_atoms": 10,
+      "reduced_atoms": 1,
+      "invariant_equations": 0
+    }
+  ],
+  "cases": [
+    {
+      "name": "m2q1-f0",
+      "input": "m2q1-f0.json",
+      "input_sha256": "81b57401059b254e0132d97ca4a8446dcd2459753662410678eb437b9cad181c",
+      "status": "primary-unit",
+      "seconds": 0.602,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "m2q1-f1",
+      "input": "m2q1-f1.json",
+      "input_sha256": "153ec86a352bd5e15e37dd9350b1636d3e36935119769cd9cc593ad7446ec402",
+      "status": "primary-unit",
+      "seconds": 0.019,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "m2q1-f2",
+      "input": "m2q1-f2.json",
+      "input_sha256": "06d11bae2a2dc8619cdbfd553c0616279b6b9ab2f3c25b4f042b404a2a370ab7",
+      "status": "primary-unit",
+      "seconds": 0.187,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "m3q1-f0",
+      "input": "m3q1-f0.json",
+      "input_sha256": "97755af171f4639e2b9226616caaf45e650d6c06e3a524d510289e69ed0fda63",
+      "status": "primary-unit",
+      "seconds": 0.022,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "m3q1-f1",
+      "input": "m3q1-f1.json",
+      "input_sha256": "aa026a3e1a8aed33e7d1c7171c1e7142daf9fe96ca084cc9b953789dc31684c3",
+      "status": "primary-unit",
+      "seconds": 0.012,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "seconds": 1.291
+}

@@ -1,0 +1,17 @@
+{
+  "claims": [
+    "KCUB9",
+    "KCUB10"
+  ],
+  "global_minimum_claimed": false,
+  "links": true,
+  "raw_pattern_identities": 15,
+  "raw_validation_sha256": "fdac5fc6f7c15e23806cd234e903e3ea6dae45cc173a7be54cd090e909b9186b",
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "secant_unit_identities": 607,
+  "secant_validation_sha256": "aba118e3866120b18fe171ba1ebf0169110ca1cc9869fbbe3a1c0eddb976b6a0",
+  "source_hashes": true,
+  "status": "pass",
+  "umbrella_status": "open"
+}

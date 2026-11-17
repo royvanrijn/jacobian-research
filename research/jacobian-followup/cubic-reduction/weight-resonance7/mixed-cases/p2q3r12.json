@@ -1,0 +1,133 @@
+{
+  "status": "complete-native-model",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "magnitudes": [
+    2,
+    3,
+    12
+  ],
+  "weights": [
+    2,
+    -3,
+    -12
+  ],
+  "canonical_census_weight": [
+    2,
+    -12,
+    -3
+  ],
+  "basis": [
+    {
+      "output": 0,
+      "exponent": [
+        4,
+        2,
+        0
+      ]
+    },
+    {
+      "output": 1,
+      "exponent": [
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "output": 2,
+      "exponent": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "output": 2,
+      "exponent": [
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "parameter_names": [
+    "c0",
+    "c1",
+    "c2",
+    "c3"
+  ],
+  "generators": [
+    [
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "6"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "6"
+      },
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "4"
+      },
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "3"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "4"
+      },
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "3"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "1"
+      }
+    ]
+  ],
+  "positive_output_parameters": [
+    0
+  ]
+}

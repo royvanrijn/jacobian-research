@@ -1,0 +1,59 @@
+{
+  "completed": true,
+  "checker_sha256": "ede92f5c878fae2ed85083f6bfe56bfe57d84360d50a4b81b27521c80b9bb129",
+  "certificate_sha256": "f9f7a94fafd7f4291787be0444bd9972be0bcd00060cec83cab20d2e0c32db63",
+  "runtime_seconds": 18.728,
+  "sympy_version": "1.14.0",
+  "shared_symbolic_divergence_identities": 135,
+  "axis_factor_checks": 4,
+  "ordinary_models_replayed": 6,
+  "ordinary_connection_columns_replayed": 36,
+  "ordinary_seed_columns_replayed": 18,
+  "weighted_symbolic_connection_identities": 30,
+  "weighted_models": 4,
+  "weighted_connection_columns": 22,
+  "weighted_seed_columns": 12,
+  "ordinary_complement_gates": {
+    "nodal": 227,
+    "transverse": 220,
+    "triangle": 204
+  },
+  "ordinary_full_gates": {
+    "nodal": 258,
+    "transverse": 258,
+    "triangle": 258
+  },
+  "cusp_complement_gate": 204,
+  "cusp_full_gate": 255,
+  "tangent_complement_gate": 254,
+  "tangent_full_gate": 255,
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 258,
+    "cusp": 255,
+    "transverse": 258,
+    "tangent": 255,
+    "triangle": 258,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 258,
+  "least_prefix_interval": [
+    20,
+    258
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    258
+  ],
+  "all_homogeneous_sufficient_pure_prefix": 258,
+  "all_homogeneous_least_prefix_interval": [
+    14,
+    258
+  ],
+  "binary_search_rounds_max": 8,
+  "optimality_proved": false,
+  "written_analytic_or_global_proof_certified_by_checker": false,
+  "boundary": "Exact135 shared-D symbolic divergence identities, universal axis factorization, six tighter ordinary connection/seed model replays,30 weighted Euler source identities and four full-Gaussian weighted connection/seed models. Complete class/rank coverage, all-coefficient degree induction and retained analytic nonzero zeroth coefficients remain written and independently unreviewed. No expanded global radical cofactors or numerical leastness computation."
+}

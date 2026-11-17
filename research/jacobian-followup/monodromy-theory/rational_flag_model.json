@@ -1,0 +1,96 @@
+{
+  "claims": [
+    "KMFI166",
+    "KMFI167",
+    "KMFI168"
+  ],
+  "previous_goal_turn": "progress: KMFI164--165 gave linear-head rational fiber rigidity and an irreducible one-kernel obstruction.",
+  "nonlinear_head_decoupling": {
+    "W": "(v(q),mu*z+T(q))",
+    "v_and_T": "rational homogeneous degree1",
+    "polynomial_normalized_X_full_rank_required": true,
+    "det_DW": "lambda^r/(degG+1)",
+    "head_B": "Dv, not assumed constant",
+    "whole_Hessian_identity_retains_sum_Si_Hvi": true,
+    "graph_shift_S": "constant linear Lq",
+    "fiber_term_T": "mu*Lq-Lv, not necessarily itself linear",
+    "allowed_equivalence": "simultaneous constant shear z_new=z+Lq",
+    "noncyclic_nonlinear_graph_control_is_actual_full_rank_input": false
+  },
+  "rational_flag_rigidity": {
+    "flag": "Wi=ai*pi+Ti(earlier variables)",
+    "diagonal": "constant, initially arbitrary",
+    "all_ranks_and_scalar_degrees": true,
+    "repeated_eigenvalue_zero_branches_retained": true,
+    "descending_shifts_do_not_recouple_separated_fibers": true,
+    "conclusion": "every Ti linear, ai distinct/nonzero and not lambda, exactly KMFI121"
+  },
+  "multi_fiber_classification": {
+    "Q": "any nonconstant homogeneous polynomial",
+    "U": "full constant translation kernel of Q, positive dimension",
+    "R": "one homogeneous degree degQ+1 component per basis vector, all invariant under all U",
+    "V": "M*(Qp+B0R)",
+    "M": "arbitrary GLr",
+    "whole_Jacobian": "(degQ+1)*detM*Q^r",
+    "translation_forces_MU_equals_U": true,
+    "constant_block_triangularization_gives_rational_flag": true,
+    "full_rank_forces": "Q divides every Ri",
+    "remaining_data": "V=Q*Mprime*p, G=FQ among KMFI121 data with Q dividing G",
+    "any_nonlinear_irreducible_factor_in_Q": "no full-rank input",
+    "determinant_controls": [
+      {
+        "rank": 4,
+        "fibers": 2,
+        "identity": "Q^r+Q^(r-1)*dQ*p"
+      },
+      {
+        "rank": 5,
+        "fibers": 2,
+        "identity": "Q^r+Q^(r-1)*dQ*p"
+      },
+      {
+        "rank": 5,
+        "fibers": 3,
+        "identity": "Q^r+Q^(r-1)*dQ*p"
+      }
+    ],
+    "invariance_under_one_kernel_direction_alone_claimed_sufficient": false
+  },
+  "explicit_split_quadric_cubic": {
+    "V": [
+      "u**2*x",
+      "2*u*x**2",
+      "3*u**3 + 3*u*x*y",
+      "4*u*x*z + 4*x**3"
+    ],
+    "Q": "u*x",
+    "whole_Jacobian": "72*u^4*x^4",
+    "unit_Krylov_determinant": 1056,
+    "all_basepoint_derivatives_zero": true,
+    "entire_primitive_family_all_scalar_degrees_excluded": true,
+    "last_graph_gradient_defect_at_unit": [
+      "4",
+      "-8/3",
+      "0"
+    ]
+  },
+  "accepted_fully_split_nonprimitive_boundary": {
+    "rank": 3,
+    "beta": "beta^2+1=0",
+    "Q": "x*y",
+    "R": 0,
+    "F": "z",
+    "G": "x*y*z",
+    "whole_sweep_Jacobian": "gamma^3 with source order gamma,x,y,z",
+    "unit_full_rank_minor": -1,
+    "new_occurrence_action": false
+  },
+  "arbitrary_rational_degree1_directions_solved": false,
+  "variable_diagonal_flags_solved": false,
+  "arbitrary_cubic_and_nondegenerate_critical_quadric_cases_solved": false,
+  "genuinely_nonhomogeneous_inputs_solved": false,
+  "actual_PSL11_input_supplied": false,
+  "absolute_exceptional_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

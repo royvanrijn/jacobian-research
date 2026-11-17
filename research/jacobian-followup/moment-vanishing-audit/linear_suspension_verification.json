@@ -1,0 +1,92 @@
+{
+  "completed": true,
+  "checker_sha256": "17ba2e68ae16533e9743a21f12e504606317870f48d1e5a26227ff8789508631",
+  "supporting_checker_hashes": {
+    "verify_formal_apolar_gaps.py": "ff0775510e26ed25d1a3b53071fa2b482766e574f812fbc496e7fafcb5991ebd",
+    "verify_scalar_time_gaps.py": "660fc5e4420359773a1024104800db7ddff2eb60c3b8192f94d8f8e40272b213",
+    "verify_gvc_false_gaps.py": "01201b342fd7d313475da58af72135ca31c62e53db76232aa7d5ea5757d3d09e",
+    "verify_phase_power_quotients.py": "c530772f7f93fe0959681ac8b3bc393b025b63c01a5cc8a7ee5ac7dbf1d28418"
+  },
+  "nonnesting_countercontrols": [
+    {
+      "degree": 3,
+      "symbol": "3*X**6 - 87*X**3*Y**3 + 3*Y**6",
+      "H": 27,
+      "square_output": "-1944",
+      "cube_output": "0",
+      "sharp_marker_output": "-972",
+      "heights": [
+        0,
+        1,
+        0
+      ],
+      "lifted_heights": [
+        0,
+        1,
+        1
+      ],
+      "sharp_cutoff": "1/3"
+    },
+    {
+      "degree": 4,
+      "symbol": "3*X**8 - 498*X**4*Y**4 + 3*Y**8",
+      "H": 288,
+      "square_output": "-331776",
+      "cube_output": "0",
+      "sharp_marker_output": "-165888",
+      "heights": [
+        0,
+        1,
+        0
+      ],
+      "lifted_heights": [
+        0,
+        1,
+        1
+      ],
+      "sharp_cutoff": "1/4"
+    }
+  ],
+  "binomial_controls": 6,
+  "ordinary_prefix_basis": [
+    "2*a + b",
+    "a**2"
+  ],
+  "ordinary_nilpotent_retained": true,
+  "reversed_source_gauge_coefficients": 4,
+  "scalar_time_gauge_pass": true,
+  "laurent_descent_unbounded_pole_model_pass": true,
+  "quadratic_radial_certificates": [
+    {
+      "power": 2,
+      "coefficients": [
+        "1/16",
+        "1/64"
+      ]
+    },
+    {
+      "power": 3,
+      "coefficients": [
+        "1/36",
+        "1/432",
+        "1/1296"
+      ]
+    }
+  ],
+  "polynomial_shear_controls": 3,
+  "zero_constant_boundary_pass": true,
+  "guard_refusals": 2,
+  "original_power_annihilators_always_nested": false,
+  "pure_safe_heights_always_monotone": false,
+  "nested_suspension_solves_general_gap": false,
+  "general_scalar_equation_produced": false,
+  "least_marked_cutoffs_identified": false,
+  "unrestricted_variable_coefficient_GVC_claimed": false,
+  "full_exceptional_MZ_decided": false,
+  "unrestricted_frontier_endpoint_changed": false,
+  "universal_proof_by_samples": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "novelty_claimed": false
+}

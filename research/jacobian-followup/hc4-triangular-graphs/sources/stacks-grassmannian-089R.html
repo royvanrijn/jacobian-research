@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 27.22 (089R): Grassmannians&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELP" data-tag="0ELP">2</a>: Schemes
+    
+  
+    <li>Chapter <a href="/tag/01LE" data-tag="01LE">27</a>: Constructions of Schemes
+    
+  
+    <li class="active">Section <a href="/tag/089R" data-tag="089R">27.22</a>: Grassmannians
+    <span id="citation">(<a href="/tag/089R/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/01OA">previous section</a>
+  
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="constructions-section-grassmannian" class="tex-section"><span data-tag="089R">27.22</span> Grassmannians</h2>
+
+<p>
+In this section we introduce the standard Grassmannian functors and we show that they are represented by schemes. Pick integers $k$, $n$ with $0 < k < n$. We will construct a functor 
+</p>
+<div class="equation" id="089S">
+    <span class="equation-label"><a href="/tag/089S" data-tag="089S">27.22.0.1</a></span>
+  <div>\begin{equation}  \label{constructions-equation-gkn} G(k, n) : \mathit{Sch}\longrightarrow \textit{Sets} \end{equation}</div>
+</div>
+<p>
+ which will loosely speaking parametrize $k$-dimensional subspaces of $n$-space. However, for technical reasons it is more convenient to parametrize $(n - k)$-dimensional quotients and this is what we will do. 
+</p>
+<p>
+More precisely, $G(k, n)$ associates to a scheme $S$ the set $G(k, n)(S)$ of isomorphism classes of surjections 
+</p>
+<div class="equation">
+  \[  q : \mathcal{O}_ S^{\oplus n} \longrightarrow \mathcal{Q}  \]
+</div>
+<p>
+ where $\mathcal{Q}$ is a finite locally free $\mathcal{O}_ S$-module of rank $n - k$. Note that this is indeed a set, for example by Modules, Lemma <a href="/tag/01BC" data-tag="01BC">17.9.8</a> or by the observation that the isomorphism class of the surjection $q$ is determined by the kernel of $q$ (and given a sheaf there is a set of subsheaves). Given a morphism of schemes $f : T \to S$ we let $G(k, n)(f) : G(k, n)(S) \to G(k, n)(T)$ which sends the isomorphism class of $q : \mathcal{O}_ S^{\oplus n} \longrightarrow \mathcal{Q}$ to the isomorphism class of $f^*q : \mathcal{O}_ T^{\oplus n} \longrightarrow f^*\mathcal{Q}$. This makes sense since (1) $f^*\mathcal{O}_ S = \mathcal{O}_ T$, (2) $f^*$ is additive, (3) $f^*$ preserves locally free modules (Modules, Lemma <a href="/tag/01C8" data-tag="01C8">17.14.3</a>), and (4) $f^*$ is right exact (Modules, Lemma <a href="/tag/01AJ" data-tag="01AJ">17.3.3</a>). 
+</p>
+<p>
+<article class="env-lemma" id="089T">
+  <p><a class="environment-identifier" href="/tag/089T">Lemma <span data-tag="089T">27.22.1</span>.</a> Let $0 < k < n$. The functor $G(k, n)$ of (<a href="/tag/089S" data-tag="089S">27.22.0.1</a>) is representable by a scheme. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Set $F = G(k, n)$. To prove the lemma we will use the criterion of Schemes, Lemma <a href="/tag/01JJ" data-tag="01JJ">26.15.4</a>. The reason $F$ satisfies the sheaf property for the Zariski topology is that we can glue sheaves, see Sheaves, Section <a href="/tag/00AK" data-tag="00AK">6.33</a> (some details omitted). 
+    <p>
+      The family of subfunctors $F_ i$. Let $I$ be the set of subsets of $\{ 1, \ldots , n\} $ of cardinality $n - k$. Given a scheme $S$ and $j \in \{ 1, \ldots , n\} $ we denote $e_ j$ the global section 
+    <p>
+      <div class="equation">
+  \[  e_ j = (0, \ldots , 0, 1, 0, \ldots , 0)\quad (1\text{ in }j\text{th spot})  \]
+</div>
+    <p>
+       of $\mathcal{O}_ S^{\oplus n}$. Of course these sections freely generate $\mathcal{O}_ S^{\oplus n}$. Similarly, for $j \in \{ 1, \ldots , n - k\} $ we denote $f_ j$ the global section of $\mathcal{O}_ S^{\oplus n - k}$ which is zero in all summands except the $j$th where we put a $1$. For $i \in I$ we let 
+    <p>
+      <div class="equation">
+  \[  s_ i : \mathcal{O}_ S^{\oplus n - k} \longrightarrow \mathcal{O}_ S^{\oplus n}  \]
+</div>
+    <p>
+       which is the direct sum of the coprojections $\mathcal{O}_ S \to \mathcal{O}_ S^{\oplus n}$ corresponding to elements of $I$. More precisely, if $i = \{ i_1, \ldots , i_{n - k}\} $ with $i_1 < i_2 < \ldots < i_{n - k}$ then $s_ i$ maps $f_ j$ to $e_{i_ j}$ for $j \in \{ 1, \ldots , n - k\} $. With this notation we can set 
+    <p>
+      <div class="equation">
+  \[  F_ i(S) = \{ q : \mathcal{O}_ S^{\oplus n} \to \mathcal{Q} \in F(S) \mid q \circ s_ i \text{ is surjective}\}  \subset F(S)  \]
+</div>
+    <p>
+       Given a morphism $f : T \to S$ of schemes the pullback $f^*s_ i$ is the corresponding map over $T$. Since $f^*$ is right exact (Modules, Lemma <a href="/tag/01AJ" data-tag="01AJ">17.3.3</a>) we conclude that $F_ i$ is a subfunctor of $F$. 
+    <p>
+      Representability of $F_ i$. To prove this we may assume (after renumbering) that $i = \{ 1, \ldots , n - k\} $. This means $s_ i$ is the inclusion of the first $n - k$ summands. Observe that if $q \circ s_ i$ is surjective, then $q \circ s_ i$ is an isomorphism as a surjective map between finite locally free modules of the same rank (Modules, Lemma <a href="/tag/089Q" data-tag="089Q">17.14.5</a>). Thus if $q : \mathcal{O}_ S^{\oplus n} \to \mathcal{Q}$ is an element of $F_ i(S)$, then we can use $q \circ s_ i$ to identify $\mathcal{Q}$ with $\mathcal{O}_ S^{\oplus n - k}$. After doing so we obtain 
+    <p>
+      <div class="equation">
+  \[  q : \mathcal{O}_ S^{\oplus n} \longrightarrow \mathcal{O}_ S^{\oplus n - k}  \]
+</div>
+    <p>
+       mapping $e_ j$ to $f_ j$ (notation as above) for $j = 1, \ldots , n - k$. To determine $q$ completely we have to fix the images $q(e_{n - k + 1}), \ldots , q(e_ n)$ in $\Gamma (S, \mathcal{O}_ S^{\oplus n - k})$. It follows that $F_ i$ is isomorphic to the functor 
+    <p>
+      <div class="equation">
+  \[  S \longmapsto \prod \nolimits _{j = n - k + 1, \ldots , n} \Gamma (S, \mathcal{O}_ S^{\oplus n - k})  \]
+</div>
+    <p>
+       This functor is isomorphic to the $k(n - k)$-fold self product of the functor $S \mapsto \Gamma (S, \mathcal{O}_ S)$. By Schemes, Example <a href="/tag/01JH" data-tag="01JH">26.15.2</a> the latter is representable by $\mathbf{A}^1_\mathbf {Z}$. It follows $F_ i$ is representable by $\mathbf{A}^{k(n - k)}_\mathbf {Z}$ since fibred product over $\mathop{\mathrm{Spec}}(\mathbf{Z})$ is the product in the category of schemes. 
+    <p>
+      The inclusion $F_ i \subset F$ is representable by open immersions. Let $S$ be a scheme and let $q : \mathcal{O}_ S^{\oplus n} \to \mathcal{Q}$ be an element of $F(S)$. By Modules, Lemma <a href="/tag/01B8" data-tag="01B8">17.9.4</a>. the set $U_ i = \{ s \in S \mid (q \circ s_ i)_ s\text{ surjective}\} $ is open in $S$. Since $\mathcal{O}_{S, s}$ is a local ring and $\mathcal{Q}_ s$ a finite $\mathcal{O}_{S, s}$-module by Nakayama's lemma (Algebra, Lemma <a href="/tag/00DV" data-tag="00DV">10.20.1</a>) we have 
+    <p>
+      <div class="equation">
+  \[  s \in U_ i \Leftrightarrow \left( \text{the map } \kappa (s)^{\oplus n - k} \to \mathcal{Q}_ s/\mathfrak m_ s\mathcal{Q}_ s \text{ induced by } (q \circ s_ i)_ s \text{ is surjective} \right)  \]
+</div>
+    <p>
+       Let $f : T \to S$ be a morphism of schemes and let $t \in T$ be a point mapping to $s \in S$. We have $(f^*\mathcal{Q})_ t = \mathcal{Q}_ s \otimes _{\mathcal{O}_{S, s}} \mathcal{O}_{T, t}$ (Sheaves, Lemma <a href="/tag/0098" data-tag="0098">6.26.4</a>) and so on. Thus the map 
+    <p>
+      <div class="equation">
+  \[  \kappa (t)^{\oplus n - k} \to (f^*\mathcal{Q})_ t/\mathfrak m_ t(f^*\mathcal{Q})_ t  \]
+</div>
+    <p>
+       induced by $(f^*q \circ f^*s_ i)_ t$ is the base change of the map $\kappa (s)^{\oplus n - k} \to \mathcal{Q}_ s/\mathfrak m_ s\mathcal{Q}_ s$ above by the field extension $\kappa (t)/\kappa (s)$. It follows that $s \in U_ i$ if and only if $t$ is in the corresponding open for $f^*q$. In particular $T \to S$ factors through $U_ i$ if and only if $f^*q \in F_ i(T)$ as desired. 
+    <p>
+      The collection $F_ i$, $i \in I$ covers $F$. Let $q : \mathcal{O}_ S^{\oplus n} \to \mathcal{Q}$ be an element of $F(S)$. We have to show that for every point $s$ of $S$ there exists an $i \in I$ such that $s_ i$ is surjective in a neighbourhood of $s$. Thus we have to show that one of the compositions 
+    <p>
+      <div class="equation">
+  \[  \kappa (s)^{\oplus n - k} \xrightarrow {s_ i} \kappa (s)^{\oplus n} \rightarrow \mathcal{Q}_ s/\mathfrak m_ s\mathcal{Q}_ s  \]
+</div>
+    <p>
+       is surjective (see previous paragraph). As $\mathcal{Q}_ s/\mathfrak m_ s\mathcal{Q}_ s$ is a vector space of dimension $n - k$ this follows from the theory of vector spaces. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-definition" id="089U">
+  <p><a class="environment-identifier" href="/tag/089U">Definition <span data-tag="089U">27.22.2</span>.</a> Let $0 < k < n$. The scheme $\mathbf{G}(k, n)$ representing the functor $G(k, n)$ is called <em>Grassmannian over $\mathbf{Z}$</em>. Its base change $\mathbf{G}(k, n)_ S$ to a scheme $S$ is called <em>Grassmannian over $S$</em>. If $R$ is a ring the base change to $\mathop{\mathrm{Spec}}(R)$ is denoted $\mathbf{G}(k, n)_ R$ and called <em>Grassmannian over $R$</em>. </p>
+</article> 
+</p>
+<p>
+The definition makes sense as we've shown in Lemma <a href="/tag/089T" data-tag="089T">27.22.1</a> that these functors are indeed representable. 
+</p>
+<p>
+<article class="env-lemma" id="089V">
+  <p><a class="environment-identifier" href="/tag/089V">Lemma <span data-tag="089V">27.22.3</span>.</a> Let $n \geq 1$. There is a canonical isomorphism $\mathbf{G}(n, n + 1) = \mathbf{P}^ n_\mathbf {Z}$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      According to Lemma <a href="/tag/01NE" data-tag="01NE">27.13.1</a> the scheme $\mathbf{P}^ n_\mathbf {Z}$ represents the functor which assigns to a scheme $S$ the set of isomorphisms classes of pairs $(\mathcal{L}, (s_0, \ldots , s_ n))$ consisting of an invertible module $\mathcal{L}$ and an $(n + 1)$-tuple of global sections generating $\mathcal{L}$. Given such a pair we obtain a quotient 
+    <p>
+      <div class="equation">
+  \[  \mathcal{O}_ S^{\oplus n + 1} \longrightarrow \mathcal{L},\quad (h_0, \ldots , h_ n) \longmapsto \sum h_ i s_ i.  \]
+</div>
+    <p>
+       Conversely, given an element $q : \mathcal{O}_ S^{\oplus n + 1} \to \mathcal{Q}$ of $G(n, n + 1)(S)$ we obtain such a pair, namely $(\mathcal{Q}, (q(e_1), \ldots , q(e_{n + 1})))$. Here $e_ i$, $i = 1, \ldots , n + 1$ are the standard generating sections of the free module $\mathcal{O}_ S^{\oplus n + 1}$. We omit the verification that these constructions define mutually inverse transformations of functors. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (6)</h2>
+
+  
+    <a id="comment-3012" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/089R#comment-3012">Comment #3012</a>
+        by
+        <cite>Jize YU</cite>
+        on <time datetime="2017-12-04 17:50:14">December 04, 2017 at 17:50 </time>
+      </header>
+
+      <blockquote><p>I suppose there might be a minor typo in the definition of <script type="math/tex">f_j</script>. The element <script type="math/tex">f_j</script> should be defined for <script type="math/tex">j\in\{1,\cdots,n-k\}</script>, <script type="math/tex">f_j\colon=(0,\cdots,1\cdots,0)</script> where <script type="math/tex">1</script> appears in the <script type="math/tex">j</script>-th position. </p></blockquote>
+    </article>
+  
+    <a id="comment-3136" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/089R#comment-3136">Comment #3136</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2018-02-01 18:24:51">February 01, 2018 at 18:24 </time>
+      </header>
+
+      <blockquote><p>Thanks, fixed <a href="https://github.com/stacks/stacks-project/commit/b6632d5ab37a8897a738c6ca1896329ade8ca76e">here</a>.</p></blockquote>
+    </article>
+  
+    <a id="comment-9792" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/089R#comment-9792">Comment #9792</a>
+        by
+        <cite>Lucas Henrique</cite>
+        on <time datetime="2024-10-08 16:53:09.040140">October 08, 2024 at 16:53 </time>
+      </header>
+
+      <blockquote><p>Where it reads "which is the direct sum of the coprojections <script type="math/tex">\mathcal O_S\to \mathcal O_S^{\oplus n}</script> corresponding to elements of <script type="math/tex">i</script>", shouldn't it be "corresponding to the elements <script type="math/tex">i\in I</script>"?</p></blockquote>
+    </article>
+  
+    <a id="comment-10362" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/089R#comment-10362">Comment #10362</a>
+        by
+        <cite><a href="https://stacks.math.columbia.edu/" rel="author">Stacks Project</a></cite>
+        
+        on <time datetime="2025-07-07 14:37:21.074793">July 07, 2025 at 14:37 </time>
+      </header>
+
+      <blockquote><p>Thanks. Fixed <a href="https://github.com/stacks/stacks-project/commit/19f883d49ce82b8384ce6f851afdb84f84f25400">here</a>.</p></blockquote>
+    </article>
+  
+    <a id="comment-11563" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/089R#comment-11563">Comment #11563</a>
+        by
+        <cite>Roy Skjelnes</cite>
+        on <time datetime="2026-06-05 08:10:42.440244">June 05, 2026 at 08:10 </time>
+      </header>
+
+      <blockquote><p>I think it would be better to let the Grassmann <script type="math/tex">\operatorname{G}(k,n)</script> be defined for <script type="math/tex">0\leq k\leq n</script> not only strict inequalities, and the Grassmann should parametrise locally free, rank <script type="math/tex">k</script>, quotients. Not <script type="math/tex">n-k</script> quotients.  Three reasons, listed below, I know you are fully aware of, so I would like to know why you did not do the natural thing. </p>
+<ol>
+<li>It is technically the same as with <script type="math/tex">n-k</script> quotients.</li>
+<li>It is aligned with EGA.</li>
+<li>And it will parametrise linear spaces (as in geometry, not linear algebra) of dimension k in affine n space.</li>
+</ol></blockquote>
+    </article>
+  
+    <a id="comment-11617" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/089R#comment-11617">Comment #11617</a>
+        by
+        <cite><a href="https://stacks.math.columbia.edu/" rel="author">Stacks Project</a></cite>
+        
+        on <time datetime="2026-07-10 11:57:28.977772">July 10, 2026 at 11:57 </time>
+      </header>
+
+      <blockquote><p>This is probably because I first looked at EGA I and it wasn't in there (it got introduced in the second edition of EGA I and I prefer to use the first edition). Then I looked in some of the other books in my office and settled on this choice. Your and Grothendieck's choice would have been better (fitting better with the philosphy in the stacks project), but now it's too late as I have found a few references to this section in arXiv papers, at least 1 of which is about to be published.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-089R",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">089R</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="089R"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">089R</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/01OA">previous section</a>
+  
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/constructions.pdf#nameddest=089R">View Section <span data-tag="089R">27.22</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

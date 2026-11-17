@@ -1,0 +1,86 @@
+{
+  "status": "exact-primary-coefficient-powers",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "input_sha256": "fbf5cedaf19bfadb6615bb0df46b9d1771ec4628fef2fc9a31ce4fb8b4302693",
+  "script_sha256": "2795dea45e2cf2569d1d2206a2e1a134e839bb916cbf3bbc77647f46c3401207",
+  "targets": [
+    {
+      "parameter": 0,
+      "power": 4,
+      "multipliers": [
+        [
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/27"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-8/81"
+          }
+        ],
+        [],
+        [
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-2/9"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1/27"
+          }
+        ],
+        [],
+        [
+          {
+            "exponent": [
+              3,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/3"
+          },
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1/9"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "4/27"
+          }
+        ]
+      ]
+    }
+  ],
+  "unresolved_parameters": []
+}

@@ -1,0 +1,37 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/cyclic-companion/hillman-sakuma-1997.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2708EB475754CCA2A78C72C606D13E63/S0008439500002046a.pdf/on_the_homology_of_finite_abelian_coverings_of_links.pdf",
+      "title": "Hillman--Sakuma, On the homology of finite abelian coverings of links, Canadian Mathematical Bulletin40(1997),309-315",
+      "bytes": 85021,
+      "sha256": "455a770f76f95dd189132cf99f7964e1775621e48169f6d8501e68b2dd88900b",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        6
+      ],
+      "printed_pages": [
+        314
+      ],
+      "used_statement": "For knots the cyclic exterior homology splits integrally as the branched-cover homology plus Z; the page also warns that equal Alexander polynomials do not determine homology-group structure in general. PF65 reproves the integral split with explicit peripheral maps and computes the full torus Alexander module, not only its order.",
+      "used_as_primary_cross_check": true,
+      "full_paper_independently_reproved": false
+    },
+    {
+      "path": "sources/binomial-periodic/clay-watson-2011v1.pdf",
+      "url": "https://arxiv.org/pdf/1103.2358v1",
+      "title": "Clay--Watson, On cabled knots, Dehn surgery, and left-orderable fundamental groups (2011v1)",
+      "bytes": 172042,
+      "sha256": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b",
+      "used_statement": "Retained complete PDF6 audit: root-amalgam and BOTH cable peripheral words. PF65 uses exactly PF63 conventions, k=rc+1, beta=M^-c L^-1, mu=z beta, lambda=h mu^-rk. No new surgery, Seifert or orderability theorem imported.",
+      "imported_not_independently_reproved": true,
+      "prior_complete_page_audit_reused": true,
+      "original_manifest": "sources/binomial-periodic/manifest.json"
+    }
+  ],
+  "retained_inputs": [
+    "PF2RULED61 whole integral source lattice and canonical mark, cellular branched-cover algorithm",
+    "PF2RULED62 all-degree orbit graph and tree requirement",
+    "PF2RULED63 exhaustive all-odd peripheral classifier and actual-binomial eta0 parameters"
+  ]
+}

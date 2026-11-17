@@ -1,0 +1,189 @@
+{
+  "status": "exact-primary-unit-identity",
+  "source_sha256": "7dc2cd0e2240f956858c0fc8949dfac0deb98ec6f62f9de63e5b7403741aa323",
+  "model_sha256": "b7ad1d7492a666892ae86241a8dee870e4eca327a877ffb4163e6f5a7a2d92d5",
+  "singular_source_sha256": "6f3c528e13cfd0cbf22f18c9d432793ceb0b0b50b8000c254cf12cf56fdd6111",
+  "multipliers": [
+    [],
+    [
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "200/687"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "25/687"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "-640/687"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "-80/687"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "120/229"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "-75/229"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "320/229"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": "-50/229"
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "220/229"
+      }
+    ],
+    [],
+    [],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "72/229"
+      }
+    ],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": "-175/229"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-1"
+      }
+    ]
+  ]
+}

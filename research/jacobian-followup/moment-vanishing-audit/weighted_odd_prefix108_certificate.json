@@ -1,0 +1,2821 @@
+{
+  "universal": [
+    {
+      "kind": "transverse",
+      "time_weight": 1,
+      "amplitude_weights": [
+        "4/3",
+        "2"
+      ],
+      "source_weight_bound": "16/3",
+      "D_constant_nonzero_complement": true,
+      "cross_coefficients_retained": true,
+      "gauge_identities": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "principal_identities": [
+        {
+          "exponent": [
+            0,
+            0
+          ],
+          "input_weight": "0",
+          "remainder_weight": "0"
+        },
+        {
+          "exponent": [
+            0,
+            1
+          ],
+          "input_weight": "2",
+          "remainder_weight": "2"
+        },
+        {
+          "exponent": [
+            0,
+            2
+          ],
+          "input_weight": "4",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            0,
+            3
+          ],
+          "input_weight": "6",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            0,
+            4
+          ],
+          "input_weight": "8",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            0,
+            5
+          ],
+          "input_weight": "10",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            0,
+            6
+          ],
+          "input_weight": "12",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            0,
+            7
+          ],
+          "input_weight": "14",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            0,
+            8
+          ],
+          "input_weight": "16",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            0,
+            9
+          ],
+          "input_weight": "18",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            0,
+            10
+          ],
+          "input_weight": "20",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            0,
+            11
+          ],
+          "input_weight": "22",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            0,
+            12
+          ],
+          "input_weight": "24",
+          "remainder_weight": "24"
+        },
+        {
+          "exponent": [
+            1,
+            0
+          ],
+          "input_weight": "4/3",
+          "remainder_weight": "4/3"
+        },
+        {
+          "exponent": [
+            1,
+            1
+          ],
+          "input_weight": "10/3",
+          "remainder_weight": "10/3"
+        },
+        {
+          "exponent": [
+            1,
+            2
+          ],
+          "input_weight": "16/3",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            1,
+            3
+          ],
+          "input_weight": "22/3",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            1,
+            4
+          ],
+          "input_weight": "28/3",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            1,
+            5
+          ],
+          "input_weight": "34/3",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            1,
+            6
+          ],
+          "input_weight": "40/3",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            1,
+            7
+          ],
+          "input_weight": "46/3",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            1,
+            8
+          ],
+          "input_weight": "52/3",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            1,
+            9
+          ],
+          "input_weight": "58/3",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            1,
+            10
+          ],
+          "input_weight": "64/3",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            1,
+            11
+          ],
+          "input_weight": "70/3",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            2,
+            0
+          ],
+          "input_weight": "8/3",
+          "remainder_weight": "8/3"
+        },
+        {
+          "exponent": [
+            2,
+            1
+          ],
+          "input_weight": "14/3",
+          "remainder_weight": "10/3"
+        },
+        {
+          "exponent": [
+            2,
+            2
+          ],
+          "input_weight": "20/3",
+          "remainder_weight": "16/3"
+        },
+        {
+          "exponent": [
+            2,
+            3
+          ],
+          "input_weight": "26/3",
+          "remainder_weight": "22/3"
+        },
+        {
+          "exponent": [
+            2,
+            4
+          ],
+          "input_weight": "32/3",
+          "remainder_weight": "28/3"
+        },
+        {
+          "exponent": [
+            2,
+            5
+          ],
+          "input_weight": "38/3",
+          "remainder_weight": "34/3"
+        },
+        {
+          "exponent": [
+            2,
+            6
+          ],
+          "input_weight": "44/3",
+          "remainder_weight": "40/3"
+        },
+        {
+          "exponent": [
+            2,
+            7
+          ],
+          "input_weight": "50/3",
+          "remainder_weight": "46/3"
+        },
+        {
+          "exponent": [
+            2,
+            8
+          ],
+          "input_weight": "56/3",
+          "remainder_weight": "52/3"
+        },
+        {
+          "exponent": [
+            2,
+            9
+          ],
+          "input_weight": "62/3",
+          "remainder_weight": "58/3"
+        },
+        {
+          "exponent": [
+            2,
+            10
+          ],
+          "input_weight": "68/3",
+          "remainder_weight": "64/3"
+        },
+        {
+          "exponent": [
+            3,
+            0
+          ],
+          "input_weight": "4",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            3,
+            1
+          ],
+          "input_weight": "6",
+          "remainder_weight": "14/3"
+        },
+        {
+          "exponent": [
+            3,
+            2
+          ],
+          "input_weight": "8",
+          "remainder_weight": "20/3"
+        },
+        {
+          "exponent": [
+            3,
+            3
+          ],
+          "input_weight": "10",
+          "remainder_weight": "26/3"
+        },
+        {
+          "exponent": [
+            3,
+            4
+          ],
+          "input_weight": "12",
+          "remainder_weight": "32/3"
+        },
+        {
+          "exponent": [
+            3,
+            5
+          ],
+          "input_weight": "14",
+          "remainder_weight": "38/3"
+        },
+        {
+          "exponent": [
+            3,
+            6
+          ],
+          "input_weight": "16",
+          "remainder_weight": "44/3"
+        },
+        {
+          "exponent": [
+            3,
+            7
+          ],
+          "input_weight": "18",
+          "remainder_weight": "50/3"
+        },
+        {
+          "exponent": [
+            3,
+            8
+          ],
+          "input_weight": "20",
+          "remainder_weight": "56/3"
+        },
+        {
+          "exponent": [
+            3,
+            9
+          ],
+          "input_weight": "22",
+          "remainder_weight": "62/3"
+        },
+        {
+          "exponent": [
+            4,
+            0
+          ],
+          "input_weight": "16/3",
+          "remainder_weight": "16/3"
+        },
+        {
+          "exponent": [
+            4,
+            1
+          ],
+          "input_weight": "22/3",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            4,
+            2
+          ],
+          "input_weight": "28/3",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            4,
+            3
+          ],
+          "input_weight": "34/3",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            4,
+            4
+          ],
+          "input_weight": "40/3",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            4,
+            5
+          ],
+          "input_weight": "46/3",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            4,
+            6
+          ],
+          "input_weight": "52/3",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            4,
+            7
+          ],
+          "input_weight": "58/3",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            4,
+            8
+          ],
+          "input_weight": "64/3",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            5,
+            0
+          ],
+          "input_weight": "20/3",
+          "remainder_weight": "20/3"
+        },
+        {
+          "exponent": [
+            5,
+            1
+          ],
+          "input_weight": "26/3",
+          "remainder_weight": "22/3"
+        },
+        {
+          "exponent": [
+            5,
+            2
+          ],
+          "input_weight": "32/3",
+          "remainder_weight": "28/3"
+        },
+        {
+          "exponent": [
+            5,
+            3
+          ],
+          "input_weight": "38/3",
+          "remainder_weight": "34/3"
+        },
+        {
+          "exponent": [
+            5,
+            4
+          ],
+          "input_weight": "44/3",
+          "remainder_weight": "40/3"
+        },
+        {
+          "exponent": [
+            5,
+            5
+          ],
+          "input_weight": "50/3",
+          "remainder_weight": "46/3"
+        },
+        {
+          "exponent": [
+            5,
+            6
+          ],
+          "input_weight": "56/3",
+          "remainder_weight": "52/3"
+        },
+        {
+          "exponent": [
+            5,
+            7
+          ],
+          "input_weight": "62/3",
+          "remainder_weight": "58/3"
+        },
+        {
+          "exponent": [
+            6,
+            0
+          ],
+          "input_weight": "8",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            6,
+            1
+          ],
+          "input_weight": "10",
+          "remainder_weight": "26/3"
+        },
+        {
+          "exponent": [
+            6,
+            2
+          ],
+          "input_weight": "12",
+          "remainder_weight": "32/3"
+        },
+        {
+          "exponent": [
+            6,
+            3
+          ],
+          "input_weight": "14",
+          "remainder_weight": "38/3"
+        },
+        {
+          "exponent": [
+            6,
+            4
+          ],
+          "input_weight": "16",
+          "remainder_weight": "44/3"
+        },
+        {
+          "exponent": [
+            6,
+            5
+          ],
+          "input_weight": "18",
+          "remainder_weight": "50/3"
+        },
+        {
+          "exponent": [
+            6,
+            6
+          ],
+          "input_weight": "20",
+          "remainder_weight": "56/3"
+        },
+        {
+          "exponent": [
+            7,
+            0
+          ],
+          "input_weight": "28/3",
+          "remainder_weight": "28/3"
+        },
+        {
+          "exponent": [
+            7,
+            1
+          ],
+          "input_weight": "34/3",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            7,
+            2
+          ],
+          "input_weight": "40/3",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            7,
+            3
+          ],
+          "input_weight": "46/3",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            7,
+            4
+          ],
+          "input_weight": "52/3",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            7,
+            5
+          ],
+          "input_weight": "58/3",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            8,
+            0
+          ],
+          "input_weight": "32/3",
+          "remainder_weight": "32/3"
+        },
+        {
+          "exponent": [
+            8,
+            1
+          ],
+          "input_weight": "38/3",
+          "remainder_weight": "34/3"
+        },
+        {
+          "exponent": [
+            8,
+            2
+          ],
+          "input_weight": "44/3",
+          "remainder_weight": "40/3"
+        },
+        {
+          "exponent": [
+            8,
+            3
+          ],
+          "input_weight": "50/3",
+          "remainder_weight": "46/3"
+        },
+        {
+          "exponent": [
+            8,
+            4
+          ],
+          "input_weight": "56/3",
+          "remainder_weight": "52/3"
+        },
+        {
+          "exponent": [
+            9,
+            0
+          ],
+          "input_weight": "12",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            9,
+            1
+          ],
+          "input_weight": "14",
+          "remainder_weight": "38/3"
+        },
+        {
+          "exponent": [
+            9,
+            2
+          ],
+          "input_weight": "16",
+          "remainder_weight": "44/3"
+        },
+        {
+          "exponent": [
+            9,
+            3
+          ],
+          "input_weight": "18",
+          "remainder_weight": "50/3"
+        },
+        {
+          "exponent": [
+            10,
+            0
+          ],
+          "input_weight": "40/3",
+          "remainder_weight": "40/3"
+        },
+        {
+          "exponent": [
+            10,
+            1
+          ],
+          "input_weight": "46/3",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            10,
+            2
+          ],
+          "input_weight": "52/3",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            11,
+            0
+          ],
+          "input_weight": "44/3",
+          "remainder_weight": "44/3"
+        },
+        {
+          "exponent": [
+            11,
+            1
+          ],
+          "input_weight": "50/3",
+          "remainder_weight": "46/3"
+        },
+        {
+          "exponent": [
+            12,
+            0
+          ],
+          "input_weight": "16",
+          "remainder_weight": "16"
+        }
+      ],
+      "normal_divisor_time_degree": 0,
+      "same_original_Wick_functional": true
+    },
+    {
+      "kind": "triangle",
+      "time_weight": 1,
+      "amplitude_weights": [
+        "2",
+        "2"
+      ],
+      "source_weight_bound": "6",
+      "D_constant_nonzero_complement": true,
+      "cross_coefficients_retained": true,
+      "gauge_identities": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "principal_identities": [
+        {
+          "exponent": [
+            0,
+            0
+          ],
+          "input_weight": "0",
+          "remainder_weight": "0"
+        },
+        {
+          "exponent": [
+            0,
+            1
+          ],
+          "input_weight": "2",
+          "remainder_weight": "2"
+        },
+        {
+          "exponent": [
+            0,
+            2
+          ],
+          "input_weight": "4",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            0,
+            3
+          ],
+          "input_weight": "6",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            0,
+            4
+          ],
+          "input_weight": "8",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            0,
+            5
+          ],
+          "input_weight": "10",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            0,
+            6
+          ],
+          "input_weight": "12",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            0,
+            7
+          ],
+          "input_weight": "14",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            0,
+            8
+          ],
+          "input_weight": "16",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            0,
+            9
+          ],
+          "input_weight": "18",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            0,
+            10
+          ],
+          "input_weight": "20",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            0,
+            11
+          ],
+          "input_weight": "22",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            0,
+            12
+          ],
+          "input_weight": "24",
+          "remainder_weight": "24"
+        },
+        {
+          "exponent": [
+            1,
+            0
+          ],
+          "input_weight": "2",
+          "remainder_weight": "2"
+        },
+        {
+          "exponent": [
+            1,
+            1
+          ],
+          "input_weight": "4",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            1,
+            2
+          ],
+          "input_weight": "6",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            1,
+            3
+          ],
+          "input_weight": "8",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            1,
+            4
+          ],
+          "input_weight": "10",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            1,
+            5
+          ],
+          "input_weight": "12",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            1,
+            6
+          ],
+          "input_weight": "14",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            1,
+            7
+          ],
+          "input_weight": "16",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            1,
+            8
+          ],
+          "input_weight": "18",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            1,
+            9
+          ],
+          "input_weight": "20",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            1,
+            10
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            1,
+            11
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            2,
+            0
+          ],
+          "input_weight": "4",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            2,
+            1
+          ],
+          "input_weight": "6",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            2,
+            2
+          ],
+          "input_weight": "8",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            2,
+            3
+          ],
+          "input_weight": "10",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            2,
+            4
+          ],
+          "input_weight": "12",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            2,
+            5
+          ],
+          "input_weight": "14",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            2,
+            6
+          ],
+          "input_weight": "16",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            2,
+            7
+          ],
+          "input_weight": "18",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            2,
+            8
+          ],
+          "input_weight": "20",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            2,
+            9
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            2,
+            10
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            3,
+            0
+          ],
+          "input_weight": "6",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            3,
+            1
+          ],
+          "input_weight": "8",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            3,
+            2
+          ],
+          "input_weight": "10",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            3,
+            3
+          ],
+          "input_weight": "12",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            3,
+            4
+          ],
+          "input_weight": "14",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            3,
+            5
+          ],
+          "input_weight": "16",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            3,
+            6
+          ],
+          "input_weight": "18",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            3,
+            7
+          ],
+          "input_weight": "20",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            3,
+            8
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            3,
+            9
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            4,
+            0
+          ],
+          "input_weight": "8",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            4,
+            1
+          ],
+          "input_weight": "10",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            4,
+            2
+          ],
+          "input_weight": "12",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            4,
+            3
+          ],
+          "input_weight": "14",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            4,
+            4
+          ],
+          "input_weight": "16",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            4,
+            5
+          ],
+          "input_weight": "18",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            4,
+            6
+          ],
+          "input_weight": "20",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            4,
+            7
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            4,
+            8
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            5,
+            0
+          ],
+          "input_weight": "10",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            5,
+            1
+          ],
+          "input_weight": "12",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            5,
+            2
+          ],
+          "input_weight": "14",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            5,
+            3
+          ],
+          "input_weight": "16",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            5,
+            4
+          ],
+          "input_weight": "18",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            5,
+            5
+          ],
+          "input_weight": "20",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            5,
+            6
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            5,
+            7
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            6,
+            0
+          ],
+          "input_weight": "12",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            6,
+            1
+          ],
+          "input_weight": "14",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            6,
+            2
+          ],
+          "input_weight": "16",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            6,
+            3
+          ],
+          "input_weight": "18",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            6,
+            4
+          ],
+          "input_weight": "20",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            6,
+            5
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            6,
+            6
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            7,
+            0
+          ],
+          "input_weight": "14",
+          "remainder_weight": "14"
+        },
+        {
+          "exponent": [
+            7,
+            1
+          ],
+          "input_weight": "16",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            7,
+            2
+          ],
+          "input_weight": "18",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            7,
+            3
+          ],
+          "input_weight": "20",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            7,
+            4
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            7,
+            5
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            8,
+            0
+          ],
+          "input_weight": "16",
+          "remainder_weight": "16"
+        },
+        {
+          "exponent": [
+            8,
+            1
+          ],
+          "input_weight": "18",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            8,
+            2
+          ],
+          "input_weight": "20",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            8,
+            3
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            8,
+            4
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            9,
+            0
+          ],
+          "input_weight": "18",
+          "remainder_weight": "18"
+        },
+        {
+          "exponent": [
+            9,
+            1
+          ],
+          "input_weight": "20",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            9,
+            2
+          ],
+          "input_weight": "22",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            9,
+            3
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            10,
+            0
+          ],
+          "input_weight": "20",
+          "remainder_weight": "20"
+        },
+        {
+          "exponent": [
+            10,
+            1
+          ],
+          "input_weight": "22",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            10,
+            2
+          ],
+          "input_weight": "24",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            11,
+            0
+          ],
+          "input_weight": "22",
+          "remainder_weight": "22"
+        },
+        {
+          "exponent": [
+            11,
+            1
+          ],
+          "input_weight": "24",
+          "remainder_weight": "24"
+        },
+        {
+          "exponent": [
+            12,
+            0
+          ],
+          "input_weight": "24",
+          "remainder_weight": "24"
+        }
+      ],
+      "normal_divisor_time_degree": 0,
+      "same_original_Wick_functional": true
+    },
+    {
+      "kind": "tangent",
+      "time_weight": 1,
+      "amplitude_weights": [
+        "1",
+        "3/2"
+      ],
+      "source_weight_bound": "4",
+      "D_constant_nonzero_complement": true,
+      "cross_coefficients_retained": true,
+      "gauge_identities": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "principal_identities": [
+        {
+          "exponent": [
+            0,
+            0
+          ],
+          "input_weight": "0",
+          "remainder_weight": "0"
+        },
+        {
+          "exponent": [
+            0,
+            1
+          ],
+          "input_weight": "3/2",
+          "remainder_weight": "3/2"
+        },
+        {
+          "exponent": [
+            0,
+            2
+          ],
+          "input_weight": "3",
+          "remainder_weight": "3"
+        },
+        {
+          "exponent": [
+            0,
+            3
+          ],
+          "input_weight": "9/2",
+          "remainder_weight": "9/2"
+        },
+        {
+          "exponent": [
+            0,
+            4
+          ],
+          "input_weight": "6",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            0,
+            5
+          ],
+          "input_weight": "15/2",
+          "remainder_weight": "15/2"
+        },
+        {
+          "exponent": [
+            0,
+            6
+          ],
+          "input_weight": "9",
+          "remainder_weight": "9"
+        },
+        {
+          "exponent": [
+            0,
+            7
+          ],
+          "input_weight": "21/2",
+          "remainder_weight": "21/2"
+        },
+        {
+          "exponent": [
+            0,
+            8
+          ],
+          "input_weight": "12",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            0,
+            9
+          ],
+          "input_weight": "27/2",
+          "remainder_weight": "27/2"
+        },
+        {
+          "exponent": [
+            1,
+            0
+          ],
+          "input_weight": "1",
+          "remainder_weight": "1"
+        },
+        {
+          "exponent": [
+            1,
+            1
+          ],
+          "input_weight": "5/2",
+          "remainder_weight": "2"
+        },
+        {
+          "exponent": [
+            1,
+            2
+          ],
+          "input_weight": "4",
+          "remainder_weight": "7/2"
+        },
+        {
+          "exponent": [
+            1,
+            3
+          ],
+          "input_weight": "11/2",
+          "remainder_weight": "5"
+        },
+        {
+          "exponent": [
+            1,
+            4
+          ],
+          "input_weight": "7",
+          "remainder_weight": "13/2"
+        },
+        {
+          "exponent": [
+            1,
+            5
+          ],
+          "input_weight": "17/2",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            1,
+            6
+          ],
+          "input_weight": "10",
+          "remainder_weight": "19/2"
+        },
+        {
+          "exponent": [
+            1,
+            7
+          ],
+          "input_weight": "23/2",
+          "remainder_weight": "11"
+        },
+        {
+          "exponent": [
+            1,
+            8
+          ],
+          "input_weight": "13",
+          "remainder_weight": "25/2"
+        },
+        {
+          "exponent": [
+            2,
+            0
+          ],
+          "input_weight": "2",
+          "remainder_weight": "2"
+        },
+        {
+          "exponent": [
+            2,
+            1
+          ],
+          "input_weight": "7/2",
+          "remainder_weight": "3"
+        },
+        {
+          "exponent": [
+            2,
+            2
+          ],
+          "input_weight": "5",
+          "remainder_weight": "9/2"
+        },
+        {
+          "exponent": [
+            2,
+            3
+          ],
+          "input_weight": "13/2",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            2,
+            4
+          ],
+          "input_weight": "8",
+          "remainder_weight": "15/2"
+        },
+        {
+          "exponent": [
+            2,
+            5
+          ],
+          "input_weight": "19/2",
+          "remainder_weight": "9"
+        },
+        {
+          "exponent": [
+            2,
+            6
+          ],
+          "input_weight": "11",
+          "remainder_weight": "21/2"
+        },
+        {
+          "exponent": [
+            2,
+            7
+          ],
+          "input_weight": "25/2",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            2,
+            8
+          ],
+          "input_weight": "14",
+          "remainder_weight": "27/2"
+        },
+        {
+          "exponent": [
+            3,
+            0
+          ],
+          "input_weight": "3",
+          "remainder_weight": "3"
+        },
+        {
+          "exponent": [
+            3,
+            1
+          ],
+          "input_weight": "9/2",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            3,
+            2
+          ],
+          "input_weight": "6",
+          "remainder_weight": "11/2"
+        },
+        {
+          "exponent": [
+            3,
+            3
+          ],
+          "input_weight": "15/2",
+          "remainder_weight": "7"
+        },
+        {
+          "exponent": [
+            3,
+            4
+          ],
+          "input_weight": "9",
+          "remainder_weight": "17/2"
+        },
+        {
+          "exponent": [
+            3,
+            5
+          ],
+          "input_weight": "21/2",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            3,
+            6
+          ],
+          "input_weight": "12",
+          "remainder_weight": "23/2"
+        },
+        {
+          "exponent": [
+            3,
+            7
+          ],
+          "input_weight": "27/2",
+          "remainder_weight": "13"
+        },
+        {
+          "exponent": [
+            4,
+            0
+          ],
+          "input_weight": "4",
+          "remainder_weight": "4"
+        },
+        {
+          "exponent": [
+            4,
+            1
+          ],
+          "input_weight": "11/2",
+          "remainder_weight": "5"
+        },
+        {
+          "exponent": [
+            4,
+            2
+          ],
+          "input_weight": "7",
+          "remainder_weight": "13/2"
+        },
+        {
+          "exponent": [
+            4,
+            3
+          ],
+          "input_weight": "17/2",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            4,
+            4
+          ],
+          "input_weight": "10",
+          "remainder_weight": "19/2"
+        },
+        {
+          "exponent": [
+            4,
+            5
+          ],
+          "input_weight": "23/2",
+          "remainder_weight": "11"
+        },
+        {
+          "exponent": [
+            4,
+            6
+          ],
+          "input_weight": "13",
+          "remainder_weight": "25/2"
+        },
+        {
+          "exponent": [
+            5,
+            0
+          ],
+          "input_weight": "5",
+          "remainder_weight": "5"
+        },
+        {
+          "exponent": [
+            5,
+            1
+          ],
+          "input_weight": "13/2",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            5,
+            2
+          ],
+          "input_weight": "8",
+          "remainder_weight": "15/2"
+        },
+        {
+          "exponent": [
+            5,
+            3
+          ],
+          "input_weight": "19/2",
+          "remainder_weight": "9"
+        },
+        {
+          "exponent": [
+            5,
+            4
+          ],
+          "input_weight": "11",
+          "remainder_weight": "21/2"
+        },
+        {
+          "exponent": [
+            5,
+            5
+          ],
+          "input_weight": "25/2",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            5,
+            6
+          ],
+          "input_weight": "14",
+          "remainder_weight": "27/2"
+        },
+        {
+          "exponent": [
+            6,
+            0
+          ],
+          "input_weight": "6",
+          "remainder_weight": "6"
+        },
+        {
+          "exponent": [
+            6,
+            1
+          ],
+          "input_weight": "15/2",
+          "remainder_weight": "7"
+        },
+        {
+          "exponent": [
+            6,
+            2
+          ],
+          "input_weight": "9",
+          "remainder_weight": "17/2"
+        },
+        {
+          "exponent": [
+            6,
+            3
+          ],
+          "input_weight": "21/2",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            6,
+            4
+          ],
+          "input_weight": "12",
+          "remainder_weight": "23/2"
+        },
+        {
+          "exponent": [
+            6,
+            5
+          ],
+          "input_weight": "27/2",
+          "remainder_weight": "13"
+        },
+        {
+          "exponent": [
+            7,
+            0
+          ],
+          "input_weight": "7",
+          "remainder_weight": "7"
+        },
+        {
+          "exponent": [
+            7,
+            1
+          ],
+          "input_weight": "17/2",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            7,
+            2
+          ],
+          "input_weight": "10",
+          "remainder_weight": "19/2"
+        },
+        {
+          "exponent": [
+            7,
+            3
+          ],
+          "input_weight": "23/2",
+          "remainder_weight": "11"
+        },
+        {
+          "exponent": [
+            7,
+            4
+          ],
+          "input_weight": "13",
+          "remainder_weight": "25/2"
+        },
+        {
+          "exponent": [
+            8,
+            0
+          ],
+          "input_weight": "8",
+          "remainder_weight": "8"
+        },
+        {
+          "exponent": [
+            8,
+            1
+          ],
+          "input_weight": "19/2",
+          "remainder_weight": "9"
+        },
+        {
+          "exponent": [
+            8,
+            2
+          ],
+          "input_weight": "11",
+          "remainder_weight": "21/2"
+        },
+        {
+          "exponent": [
+            8,
+            3
+          ],
+          "input_weight": "25/2",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            8,
+            4
+          ],
+          "input_weight": "14",
+          "remainder_weight": "27/2"
+        },
+        {
+          "exponent": [
+            9,
+            0
+          ],
+          "input_weight": "9",
+          "remainder_weight": "9"
+        },
+        {
+          "exponent": [
+            9,
+            1
+          ],
+          "input_weight": "21/2",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            9,
+            2
+          ],
+          "input_weight": "12",
+          "remainder_weight": "23/2"
+        },
+        {
+          "exponent": [
+            9,
+            3
+          ],
+          "input_weight": "27/2",
+          "remainder_weight": "13"
+        },
+        {
+          "exponent": [
+            10,
+            0
+          ],
+          "input_weight": "10",
+          "remainder_weight": "10"
+        },
+        {
+          "exponent": [
+            10,
+            1
+          ],
+          "input_weight": "23/2",
+          "remainder_weight": "11"
+        },
+        {
+          "exponent": [
+            10,
+            2
+          ],
+          "input_weight": "13",
+          "remainder_weight": "25/2"
+        },
+        {
+          "exponent": [
+            11,
+            0
+          ],
+          "input_weight": "11",
+          "remainder_weight": "11"
+        },
+        {
+          "exponent": [
+            11,
+            1
+          ],
+          "input_weight": "25/2",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            11,
+            2
+          ],
+          "input_weight": "14",
+          "remainder_weight": "27/2"
+        },
+        {
+          "exponent": [
+            12,
+            0
+          ],
+          "input_weight": "12",
+          "remainder_weight": "12"
+        },
+        {
+          "exponent": [
+            12,
+            1
+          ],
+          "input_weight": "27/2",
+          "remainder_weight": "13"
+        },
+        {
+          "exponent": [
+            13,
+            0
+          ],
+          "input_weight": "13",
+          "remainder_weight": "13"
+        },
+        {
+          "exponent": [
+            14,
+            0
+          ],
+          "input_weight": "14",
+          "remainder_weight": "14"
+        }
+      ],
+      "normal_divisor_time_degree": 0,
+      "same_original_Wick_functional": true
+    }
+  ],
+  "models": [
+    {
+      "kind": "transverse",
+      "D": 1,
+      "metric_determinant": 3,
+      "W": "t**4/2 + t**2*u*v + 5*t**2*u + 7*t**2*v + 23*t**2 + u**3 + u**2*v**2/2 + 7*u**2/2 - 7*u*v - 8*u - 13*v**2/2 - 29*v - 73/2",
+      "source": "t**4 + t**2*u*v + 5*t**2*u/2 + 7*t**2*v/2 - t**2 - u**3/2 - 7*u**2/2 + 7*u*v + 12*u + 13*v**2/2 + 87*v/2 + 73",
+      "seed_columns": [
+        {
+          "j": 1,
+          "depth": 1,
+          "N": [
+            "t**4 - t**2 + 73",
+            "10*t**2/3 + 32/3",
+            "7*t**2/3 + 145/3",
+            "-7/3",
+            "t**2 + 7",
+            "26/3"
+          ],
+          "H": "t**3",
+          "H_valuation": 3,
+          "row_degree_bounds": [
+            5,
+            4,
+            3,
+            2,
+            2,
+            1
+          ],
+          "witness": {
+            "Cu": "-u/6",
+            "Cv": "v/6"
+          }
+        },
+        {
+          "j": 2,
+          "depth": 4,
+          "N": [
+            "t**8 - 72*t**6 - 836*t**4/3 + 94049*t**2/27 - 436079/27",
+            "6424*t**4/27 + 66452*t**2/81 - 1223993/81",
+            "-7*t**6 - 3623*t**4/27 + 41045*t**2/81 + 26465/81",
+            "142*t**4/9 - 3094*t**2/9 - 271712/81",
+            "t**6 - 95*t**4/9 + 3274*t**2/27 - 43136/27",
+            "62*t**4 + 16994*t**2/27 + 227761/81"
+          ],
+          "H": "t**6",
+          "H_valuation": 6,
+          "row_degree_bounds": [
+            10,
+            9,
+            8,
+            8,
+            7,
+            6
+          ],
+          "witness": {
+            "Cu": "7*t**4 + 1484*t**2/9 + u**4/12 + 35*u**3/36 + u**2*(-35*t**2/36 - 53/27) + 13*u*v**2/4 + u*v*(21*t**2/4 + 145/4) + u*(-253*t**2/54 - 4981/81) + v*(13*t**2 + 91) + 15962/27",
+            "Cv": "5*t**4 - 271*t**2/9 - u**3*v/12 - 35*u**2*v/36 + u**2*(-t**2 - 7) + u*v*(35*t**2/36 - 415/27) + u*(-77*t**2/3 - 611/3) - 13*v**3/4 + v**2*(-21*t**2/4 - 145/4) + v*(t**4 + 1009*t**2/54 + 2398/81) - 8134/9"
+          }
+        },
+        {
+          "j": 3,
+          "depth": 7,
+          "N": [
+            "t**12 - 72*t**10 + 310256*t**8/351 + 935407*t**6/117 + 41329589*t**4/81 + 18056911450*t**2/9477 - 138128703409/9477",
+            "535318*t**8/1053 + 12529720*t**6/1053 + 1652098013*t**4/9477 - 9226111664*t**2/28431 - 93926106253/28431",
+            "-7*t**10 - 239081*t**8/1053 - 4307395*t**6/351 - 497456368*t**4/9477 - 9873059258*t**2/28431 - 20090944409/2187",
+            "1302*t**8/13 + 1970294*t**6/1053 + 32550779*t**4/3159 - 330930089*t**2/3159 + 6412493960/28431",
+            "t**10 - 3015*t**8/13 - 939257*t**6/351 - 36763711*t**4/3159 - 2046185155*t**2/9477 - 20031938815/9477",
+            "2570*t**8/13 + 444482*t**6/1053 + 877558*t**4/81 + 619703317*t**2/9477 - 21723577534/28431"
+          ],
+          "H": "t**9",
+          "H_valuation": 9,
+          "row_degree_bounds": [
+            16,
+            14,
+            14,
+            13,
+            12,
+            12
+          ],
+          "witness": {
+            "Cu": "21*t**8/2 + 221*t**6/4 + 1000*t**4 + 6988067*t**2/1944 - u**7/24 - 7*u**6/9 + u**5*(25*t**2/36 - 307/216) + u**4*(1703*t**2/216 + 9631/162) + u**3*v*(-39*t**2/2 - 273/2) + u**3*(-1471*t**4/216 - 3533*t**2/108 + 475489/972) - 507*u**2*v**2/8 + u**2*v*(t**6 + 21*t**4 - 231*t**2/4 - 5843/4) + u**2*(-611*t**4/8 - 734617*t**2/972 + 2774221/1458) + 169*u*v**4/8 + u*v**3*(91*t**2/2 + 377) + u*v**2*(499*t**4/8 + 1617*t**2/2 + 28407/8) + u*v*(959*t**6/26 + 63705*t**4/104 + 271429*t**2/52 + 1424873/104) + u*(t**8 + 17881*t**6/324 - 4198*t**4/81 - 13830649*t**2/2916 + 15197017/2187) + v**3*(507*t**2/4 + 3549/4) + v**2*(273*t**4/2 + 11453*t**2/4 + 101933/8) + v*(225*t**6/4 + 1343*t**4 + 142291*t**2/8 + 502693/8) - 557273783/2916",
+            "Cv": "5*t**8/2 - 172325*t**6/1404 - 1184425*t**4/468 - 256570664*t**2/3159 + u**6*v/24 + 7*u**5*v/9 + u**5*(3*t**2/4 + 21/4) + u**4*v*(1477/216 - 25*t**2/36) + u**4*(77*t**2/6 + 322/3) + u**3*v*(-3*t**4/2 - 6239*t**2/216 - 17687/324) + u**3*(-15*t**4/2 + 763*t**2/18 + 9002/9) + u**2*v*(-3065*t**4/216 - 40615*t**2/108 - 3175121/1944) + u**2*(-9*t**6/2 - 5117*t**4/36 - 91547*t**2/108 + 99928/27) - 507*u*v**3/8 + u*v**2*(-273*t**2/2 - 1131) + u*v*(15*t**6/2 - 649*t**4/8 - 3252401*t**2/972 - 141760153/5832) + u*(-5143*t**6/52 - 579563*t**4/351 - 40627193*t**2/2106 - 239044933/4212) - 169*v**5/8 + v**4*(-91*t**2/2 - 377) + v**3*(-343*t**4/8 - 1071*t**2/2 - 25495/8) + v**2*(-343*t**6/13 - 24705*t**4/104 - 36108*t**2/13 - 1680219/104) + v*(t**8 + 7229*t**6/324 + 62632*t**4/81 - 13853605*t**2/5832 - 912258727/8748) - 1463520680/3159"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "transverse",
+      "D": 2,
+      "metric_determinant": 145,
+      "W": "t**4/2 + t**2*u*v + 10*t**2*u + 14*t**2*v + 52*t**2 + 2*u**3 + u**2*v**2/2 + 7*u**2 - 8*u*v - 16*u - 13*v**2 - 58*v - 91",
+      "source": "2*t**4 + 2*t**2*u*v + 10*t**2*u + 14*t**2*v - 4*t**2 - 2*u**3 - 14*u**2 + 16*u*v + 48*u + 26*v**2 + 174*v + 364",
+      "seed_columns": [
+        {
+          "j": 1,
+          "depth": 1,
+          "N": [
+            "2*t**4 - 4*t**2 + 364",
+            "40*t**2/3 + 128/3",
+            "28*t**2/3 + 580/3",
+            "-28/3",
+            "2*t**2 + 16",
+            "104/3"
+          ],
+          "H": "4*t**3",
+          "H_valuation": 3,
+          "row_degree_bounds": [
+            5,
+            4,
+            3,
+            2,
+            2,
+            1
+          ],
+          "witness": {
+            "Cu": "-u/3",
+            "Cv": "v/3"
+          }
+        },
+        {
+          "j": 2,
+          "depth": 4,
+          "N": [
+            "4*t**8 - 1136*t**6 + 3920*t**4/3 + 4990288*t**2/27 - 21884176/27",
+            "159232*t**4/27 + 1508192*t**2/81 - 24279392/81",
+            "-56*t**6 - 46088*t**4/27 + 153440*t**2/81 - 25344112/81",
+            "2272*t**4/9 - 66688*t**2/9 - 3108272/81",
+            "4*t**6 - 2096*t**4/9 - 32864*t**2/27 - 2109392/27",
+            "888*t**4 + 238208*t**2/27 + 2017408/81"
+          ],
+          "H": "16*t**6",
+          "H_valuation": 6,
+          "row_degree_bounds": [
+            10,
+            9,
+            8,
+            8,
+            7,
+            6
+          ],
+          "witness": {
+            "Cu": "56*t**4 + 14456*t**2/9 + 2*u**4/3 + 70*u**3/9 + u**2*(-70*t**2/9 - 424/27) + 26*u*v**2 + u*v*(42*t**2 + 290) + u*(-1012*t**2/27 - 40064/81) + v*(104*t**2 + 832) + 45296/27",
+            "Cv": "40*t**4 - 8224*t**2/9 - 2*u**3*v/3 - 70*u**2*v/9 + u**2*(-8*t**2 - 64) + u*v*(70*t**2/9 - 7064/27) + u*(-1064*t**2/3 - 8768/3) - 26*v**3 + v**2*(-42*t**2 - 290) + v*(4*t**4 + 2740*t**2/27 - 44032/81) - 150496/9"
+          }
+        },
+        {
+          "j": 3,
+          "depth": 7,
+          "N": [
+            "8*t**12 - 2272*t**10 + 48524272*t**8/351 + 247934560*t**6/117 + 7022731168*t**4/81 + 414122724224*t**2/9477 - 6044329296704/9477",
+            "68635456*t**8/1053 + 1273600480*t**6/1053 + 125471881664*t**4/9477 - 1886152479104*t**2/28431 + 14235649786112/28431",
+            "-112*t**10 - 10566896*t**8/1053 - 223888768*t**6/351 + 40810548512*t**4/9477 - 1271234614016*t**2/28431 - 1495777371968/2187",
+            "74592*t**8/13 + 147650144*t**6/1053 + 2401094720*t**4/3159 + 11792375104*t**2/3159 + 5983569615680/28431",
+            "8*t**10 - 153024*t**8/13 - 42722192*t**6/351 - 356655328*t**4/3159 - 163395037792*t**2/9477 - 718021808512/9477",
+            "156368*t**8/13 + 21000032*t**6/1053 + 30109984*t**4/81 - 102678102656*t**2/9477 - 4744502102656/28431"
+          ],
+          "H": "64*t**9",
+          "H_valuation": 9,
+          "row_degree_bounds": [
+            16,
+            14,
+            14,
+            13,
+            12,
+            12
+          ],
+          "witness": {
+            "Cu": "168*t**8 - 5248*t**6 - 770600*t**4/9 - 684459296*t**2/243 - 4*u**7/3 - 224*u**6/9 + u**5*(200*t**2/9 - 1228/27) + u**4*(6812*t**2/27 + 154744/81) + u**3*v*(-624*t**2 - 4992) + u**3*(-5884*t**4/27 - 29104*t**2/27 + 3970664/243) - 4056*u**2*v**2 + u**2*v*(8*t**6 + 192*t**4 - 7200*t**2 - 85136) + u**2*(-23564*t**4/9 - 6471944*t**2/243 + 65558560/729) + 676*u*v**4 + u*v**3*(1456*t**2 + 12064) + u*v**2*(1684*t**4 + 22128*t**2 + 84404) + u*v*(13160*t**6/13 + 201468*t**4/13 + 1394708*t**2/13 - 600360/13) + u*(8*t**8 + 117128*t**6/81 - 810032*t**4/81 - 155572544*t**2/729 + 2124878816/2187) + v**3*(4056*t**2 + 32448) + v**2*(4368*t**4 + 102752*t**2 + 437008) + v*(1488*t**6 + 45920*t**4 + 608744*t**2 + 1143120) - 21702833024/729",
+            "Cv": "40*t**8 - 2007464*t**6/351 - 14360032*t**4/117 - 14509553072*t**2/3159 + 4*u**6*v/3 + 224*u**5*v/9 + u**5*(24*t**2 + 192) + u**4*v*(10588/27 - 200*t**2/9) + u**4*(1456*t**2/3 + 14560/3) + u**3*v*(-24*t**4 - 17180*t**2/27 + 127064/81) + u**3*(-240*t**4 + 37160*t**2/9 + 617264/9) + u**2*v*(-7724*t**4/27 - 328640*t**2/27 - 6234488/243) + u**2*(-72*t**6 - 38024*t**4/9 + 64384*t**2/27 + 16879216/27) - 4056*u*v**3 + u*v**2*(-8736*t**2 - 72384) + u*v*(120*t**6 - 82276*t**4/9 - 48957256*t**2/243 - 827974480/729) + u*(-70432*t**6/13 - 29594672*t**4/351 - 816072064*t**2/1053 + 1420032896/1053) - 676*v**5 + v**4*(-1456*t**2 - 12064) + v**3*(-1372*t**4 - 17136*t**2 - 102292) + v**2*(-10976*t**6/13 - 98820*t**4/13 - 1174852*t**2/13 - 6615368/13) + v*(8*t**8 + 35800*t**6/81 + 988400*t**4/81 - 488329936*t**2/729 - 16562001872/2187) - 11420700800/3159"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "triangle",
+      "D": 1,
+      "metric_determinant": 3,
+      "W": "t**4/2 + t**2*u*v + 5*t**2*u + 7*t**2*v + 23*t**2 + u**2*v**2/2 - 11*u**2/2 - 7*u*v - 35*u - 13*v**2/2 - 29*v - 127/2",
+      "source": "t**4 + t**2*u*v + 5*t**2*u/2 + 7*t**2*v/2 - t**2 + 11*u**2/2 + 7*u*v + 105*u/2 + 13*v**2/2 + 87*v/2 + 127",
+      "seed_columns": [
+        {
+          "j": 1,
+          "depth": 2,
+          "N": [
+            "t**4 - t**2 + 127",
+            "5*t**2 + 35",
+            "58",
+            "t**2 + 7",
+            "13"
+          ],
+          "H": "t**3",
+          "H_valuation": 3,
+          "row_degree_bounds": [
+            6,
+            4,
+            4,
+            2,
+            2
+          ],
+          "witness": {
+            "Cu": "-u/2",
+            "Cv": "v/2"
+          }
+        },
+        {
+          "j": 2,
+          "depth": 5,
+          "N": [
+            "t**8 - 72*t**6 - 1892*t**4 - 9213*t**2 + 134287",
+            "125*t**6/11 - 82*t**4/11 + 28998*t**2/11 + 429751/11",
+            "-252*t**6/11 - 3122*t**4/11 + 10045*t**2/11 + 703445/11",
+            "t**6 - 30*t**4 + 808*t**2 + 12229",
+            "1007*t**4/11 + 10589*t**2/11 + 102968/11"
+          ],
+          "H": "t**6",
+          "H_valuation": 6,
+          "row_degree_bounds": [
+            12,
+            10,
+            10,
+            8,
+            8
+          ],
+          "witness": {
+            "Cu": "181*t**2 - 11*u**3/4 + u**2*v*(-t**2 - 7) + u**2*(-15*t**2/4 - 175/4) + 13*u*v**2/4 + u*v*(21*t**2/4 + 145/4) + u*(-36*t**4/11 - 667*t**2/22 - 2622/11) + v*(26*t**2 + 182) + 2177",
+            "Cv": "10*t**4 + 217*t**2 + 11*u**2*v/4 + u*v**2*(t**2 + 7) + u*v*(15*t**2/4 + 175/4) - 13*v**3/4 + v**2*(-21*t**2/4 - 145/4) + v*(47*t**4/11 + 975*t**2/22 + 4734/11) + 1447"
+          }
+        },
+        {
+          "j": 3,
+          "depth": 8,
+          "N": [
+            "t**12 - 72*t**10 - 362684*t**8/143 - 15122149*t**6/143 - 2411087*t**4 - 1549494462*t**2/143 + 20829557384/143",
+            "3125*t**10/121 - 1154854*t**8/1573 - 22732686*t**6/1573 - 188552174*t**4/1573 + 4059952617*t**2/1573 + 66497192342/1573",
+            "-5222*t**10/121 - 468786*t**8/1573 - 44697605*t**6/1573 - 833297060*t**4/1573 + 1104152924*t**2/1573 + 8510177113/121",
+            "t**10 - 44540*t**8/143 - 693416*t**6/143 - 7451746*t**4/143 + 109596137*t**2/143 + 1967093240/143",
+            "416595*t**8/1573 + 877347*t**6/1573 + 429552*t**4/11 + 1634847730*t**2/1573 + 15450724225/1573"
+          ],
+          "H": "t**9",
+          "H_valuation": 9,
+          "row_degree_bounds": [
+            18,
+            16,
+            16,
+            14,
+            14
+          ],
+          "witness": {
+            "Cu": "-602*t**8/11 - 36985*t**6/44 - 26471*t**4/44 + 2605981*t**2/11 - 121*u**5/8 + u**4*v*(-33*t**2/4 - 231/4) + u**4*(-55*t**2/2 - 385) + u**3*v*(-45*t**4/4 - 917*t**2/4 - 2635/2) + u**3*(-241*t**4/8 - 462*t**2 - 31657/8) + u**2*v*(-183*t**6/22 - 3667*t**4/22 - 47471*t**2/22 - 277599/22) + u**2*(-995*t**6/44 - 30955*t**4/88 - 242315*t**2/88 - 904925/44) + 169*u*v**4/8 + u*v**3*(91*t**2/2 + 377) + u*v**2*(499*t**4/8 + 1617*t**2/2 + 44787/8) + u*v*(959*t**6/26 + 78915*t**4/104 + 1319985*t**2/104 + 4093353/52) + u*(-3263*t**8/242 - 37861*t**6/242 - 30241*t**4/22 - 760977*t**2/121 - 13121527/242) + v**3*(507*t**2/4 + 3549/4) + v**2*(273*t**4/2 + 11453*t**2/4 + 77077/4) + v*(7805*t**6/44 + 83223*t**4/22 + 2766953*t**2/44 + 4371381/11) + 30030714/11",
+            "Cv": "540*t**8/11 + 135493*t**6/143 + 190335*t**4/13 + 33206825*t**2/143 + 121*u**4*v/8 + u**3*v**2*(33*t**2/4 + 231/4) + u**3*v*(55*t**2/2 + 385) + u**2*v**2*(45*t**4/4 + 917*t**2/4 + 2635/2) + u**2*v*(373*t**4/8 + 693*t**2 + 44417/8) + u*v**2*(205*t**6/22 + 4129*t**4/22 + 115567*t**2/44 + 669389/44) + u*v*(1325*t**6/44 + 59137*t**4/88 + 730297*t**2/88 + 2476033/44) - 169*v**5/8 + v**4*(-91*t**2/2 - 377) + v**3*(-343*t**4/8 - 1071*t**2/2 - 29707/8) + v**2*(-343*t**6/13 - 24705*t**4/104 - 352473*t**2/104 - 356019/13) + v*(3747*t**8/242 + 75117*t**6/484 + 91775*t**4/22 + 30338725*t**2/484 + 114018829/242) + 236988405/143"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "triangle",
+      "D": 2,
+      "metric_determinant": 145,
+      "W": "t**4/2 + t**2*u*v + 10*t**2*u + 14*t**2*v + 52*t**2 + u**2*v**2/2 - 11*u**2 - 8*u*v - 70*u - 13*v**2 - 58*v - 145",
+      "source": "2*t**4 + 2*t**2*u*v + 10*t**2*u + 14*t**2*v - 4*t**2 + 22*u**2 + 16*u*v + 210*u + 26*v**2 + 174*v + 580",
+      "seed_columns": [
+        {
+          "j": 1,
+          "depth": 2,
+          "N": [
+            "2*t**4 - 4*t**2 + 580",
+            "20*t**2 + 140",
+            "232",
+            "2*t**2 + 16",
+            "52"
+          ],
+          "H": "4*t**3",
+          "H_valuation": 3,
+          "row_degree_bounds": [
+            6,
+            4,
+            4,
+            2,
+            2
+          ],
+          "witness": {
+            "Cu": "-u",
+            "Cv": "v"
+          }
+        },
+        {
+          "j": 2,
+          "depth": 5,
+          "N": [
+            "4*t**8 - 1136*t**6 - 46864*t**4 - 307600*t**2 + 3532816",
+            "2000*t**6/11 - 1312*t**4/11 + 605120*t**2/11 + 9923984/11",
+            "-3416*t**6/11 - 45112*t**4/11 + 162480*t**2/11 + 14668816/11",
+            "4*t**6 - 544*t**4 + 10848*t**2 + 189200",
+            "14968*t**4/11 + 155696*t**2/11 + 1940352/11"
+          ],
+          "H": "16*t**6",
+          "H_valuation": 6,
+          "row_degree_bounds": [
+            12,
+            10,
+            10,
+            8,
+            8
+          ],
+          "witness": {
+            "Cu": "1968*t**2 - 22*u**3 + u**2*v*(-4*t**2 - 32) + u**2*(-30*t**2 - 350) + 26*u*v**2 + u*v*(42*t**2 + 290) + u*(-244*t**4/11 - 2668*t**2/11 - 22560/11) + v*(208*t**2 + 1664) + 29264",
+            "Cv": "80*t**4 + 2432*t**2 + 22*u**2*v + u*v**2*(4*t**2 + 32) + u*v*(30*t**2 + 350) - 26*v**3 + v**2*(-42*t**2 - 290) + v*(288*t**4/11 + 3372*t**2/11 + 50544/11) + 19792"
+          }
+        },
+        {
+          "j": 3,
+          "depth": 8,
+          "N": [
+            "8*t**12 - 2272*t**10 - 32551408*t**8/143 - 1439628704*t**6/143 - 291587424*t**4 - 267413269248*t**2/143 + 2879645901888/143",
+            "200000*t**10/121 - 70034784*t**8/1573 - 1529105120*t**6/1573 - 13896671168*t**4/1573 + 439558984512*t**2/1573 + 8030236343232/1573",
+            "-293552*t**10/121 - 22930096*t**8/1573 - 3162511712*t**6/1573 - 66917672928*t**4/1573 + 110986076288*t**2/1573 + 940173704320/121",
+            "8*t**10 - 2411264*t**8/143 - 36533072*t**6/143 - 543867776*t**4/143 + 7779868576*t**2/143 + 167151210816/143",
+            "25680528*t**8/1573 + 45025952*t**6/1573 + 32850976*t**4/11 + 128249205504*t**2/1573 + 1456785126848/1573"
+          ],
+          "H": "64*t**9",
+          "H_valuation": 9,
+          "row_degree_bounds": [
+            18,
+            16,
+            16,
+            14,
+            14
+          ],
+          "witness": {
+            "Cu": "-18032*t**8/11 - 360472*t**6/11 - 731384*t**4/11 + 142214096*t**2/11 - 484*u**5 + u**4*v*(-132*t**2 - 1056) + u**4*(-880*t**2 - 12320) + u**3*v*(-180*t**4 - 4156*t**2 - 29560) + u**3*(-832*t**4 - 14784*t**2 - 131380) + u**2*v*(-1332*t**6/11 - 2984*t**4 - 532880*t**2/11 - 3674128/11) + u**2*(-5980*t**6/11 - 100720*t**4/11 - 1040540*t**2/11 - 8071000/11) + 676*u*v**4 + u*v**3*(1456*t**2 + 12064) + u*v**2*(1684*t**4 + 22128*t**2 + 198596) + u*v*(13160*t**6/13 + 262308*t**4/13 + 5599012*t**2/13 + 41572472/13) + u*(-34652*t**8/121 - 429688*t**6/121 - 413872*t**4/11 - 30198688*t**2/121 - 261665200/121) + v**3*(4056*t**2 + 32448) + v**2*(4368*t**4 + 102752*t**2 + 907504) + v*(53288*t**6/11 + 128496*t**4 + 31842344*t**2/11 + 239002704/11) + 185813184",
+            "Cv": "14640*t**8/11 + 5373712*t**6/143 + 105600096*t**4/143 + 2021599136*t**2/143 + 484*u**4*v + u**3*v**2*(132*t**2 + 1056) + u**3*v*(880*t**2 + 12320) + u**2*v**2*(180*t**4 + 4156*t**2 + 29560) + u**2*v*(1096*t**4 + 19008*t**2 + 198612) + u*v**2*(1420*t**6/11 + 3176*t**4 + 663032*t**2/11 + 4625232/11) + u*v*(7300*t**6/11 + 169888*t**4/11 + 2949876*t**2/11 + 26012616/11) - 676*v**5 + v**4*(-1456*t**2 - 12064) + v**3*(-1372*t**4 - 17136*t**2 - 119140) + v**2*(-10976*t**6/13 - 98820*t**4/13 - 1402924*t**2/13 - 11816408/13) + v*(36588*t**8/121 + 353216*t**6/121 + 1642176*t**4/11 + 322328504*t**2/121 + 3083514912/121) + 17099222656/143"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "tangent",
+      "D": 1,
+      "metric_determinant": 3,
+      "W": "t**4/2 + t**2*u**2 + 3*t**2*u + 4*t**2*v + u**4/2 - 2*u**3 - 3*u**2*v - 7*u**2/2 + u*v**2 + 5*u*v - 2*v**2",
+      "source": "t**4 + t**2*u**2 + 3*t**2*u/2 + 3*t**2*v - 3*t**2/4 + u**3 + 3*u**2*v/4 + 7*u**2/2 - 15*u*v/4 + v**2",
+      "seed_columns": [
+        {
+          "j": 1,
+          "depth": 3,
+          "N": [
+            "t**4 - 195*t**2/16",
+            "-17*t**2/8 - 23/8",
+            "t**2 + 227/16",
+            "3*t**2 + 47/16",
+            "-1/16"
+          ],
+          "H": "t**3",
+          "H_valuation": 3,
+          "row_degree_bounds": [
+            4,
+            3,
+            2,
+            2,
+            1
+          ],
+          "witness": {
+            "Cu": "17/16",
+            "Cv": "3*u/8 + 33/16"
+          }
+        },
+        {
+          "j": 2,
+          "depth": 10,
+          "N": [
+            "t**8 - 1825*t**6/16 - 282865*t**4/128 - 744602353*t**2/65536",
+            "-267*t**6/8 - 9719*t**4/16 - 137666635*t**2/32768 - 234611797/32768",
+            "t**6 + 3183*t**4/64 + 5742283*t**2/4096 + 676360033/65536",
+            "7*t**6 + 817*t**4/64 + 6126377*t**2/4096 + 400910005/65536",
+            "37*t**4/16 - 8781*t**2/64 - 55547867/65536"
+          ],
+          "H": "t**6",
+          "H_valuation": 6,
+          "row_degree_bounds": [
+            8,
+            7,
+            6,
+            6,
+            5
+          ],
+          "witness": {
+            "Cu": "123*t**4/16 + 114*t**2 + 289*u**3/128 + u**2*(17*t**2/8 + 13523/1024) + u*(t**4/2 + 1581*t**2/128 + 836265/8192) + v**2 + v*(6*t**2 - 2) + 42551883/65536",
+            "Cv": "361*t**4/16 + 474341*t**2/1024 + 75*u**4/64 + 9*u**3*v/32 + u**3*(3*t**2/4 + 2001/512) - 577*u**2*v/256 + u**2*(159*t**2/32 + 158947/4096) + 3*u*v**2/4 + u*v*(35*t**2/16 + 3421/2048) + u*(39*t**4/8 + 35065*t**2/512 + 8603417/32768) + 3*v**2/4 + v*(-t**4/4 + 1011*t**2/256 - 853209/16384) + 153417355/65536"
+          }
+        },
+        {
+          "j": 3,
+          "depth": 17,
+          "N": [
+            "t**12 + 3199*t**10/16 + 524393*t**8/256 - 1146765205*t**6/32768 - 651079525691*t**4/524288 - 1863466588083563*t**2/268435456",
+            "-379*t**10/8 - 36703*t**8/128 - 257377527*t**6/16384 - 22781373791*t**4/65536 - 333890361897449*t**2/134217728 - 600269550136055/134217728",
+            "t**10 - 20325*t**8/64 - 2518995*t**6/256 - 10199543823*t**4/262144 + 13602127795049*t**2/16777216 + 1685650286492987/268435456",
+            "11*t**10 - 46491*t**8/64 + 1894481*t**6/1024 + 16794914711*t**4/262144 + 15278389587283*t**2/16777216 + 1023093840489239/268435456",
+            "469*t**8/16 + 18661*t**6/256 - 78708839*t**4/32768 - 25358660247*t**2/262144 - 149539595914777/268435456"
+          ],
+          "H": "t**9",
+          "H_valuation": 9,
+          "row_degree_bounds": [
+            12,
+            11,
+            10,
+            10,
+            9
+          ],
+          "witness": {
+            "Cu": "-21*t**8/16 - 66793*t**6/256 + 2841927*t**4/32768 + 2029587893*t**2/32768 + 4913*u**6/1024 + u**5*(867*t**2/128 + 278307/8192) + u**4*(51*t**4/16 + 18445*t**2/256 + 14237785/65536) + u**3*(t**6/2 + 6369*t**4/128 + 3101829*t**2/8192 + 764441179/524288) + u**2*(105*t**6/8 + 177779*t**4/1024 + 74977509*t**2/32768 + 38162762753/4194304) + u*(t**8 - 3391*t**6/128 + 1580749*t**4/2048 + 5925053263*t**2/524288 + 2018325497299/33554432) + v**4 + v**3*(9*t**2 - 13/2) + v**2*(30*t**4 - 73*t**2/4 + 107) + v*(45*t**6 - 23*t**4/4 + 3627*t**2/8 + 5/2) + 104437600452585/268435456",
+            "Cv": "-783*t**8/16 - 342111*t**6/1024 + 141118839*t**4/16384 + 1103756518631*t**2/4194304 + 1467*u**7/512 + 297*u**6*v/256 + u**6*(225*t**2/64 + 58689/4096) + 27*u**5*v**2/128 + u**5*v*(27*t**2/32 - 7025/2048) + u**5*(9*t**4/8 + 19899*t**2/512 + 2533747/32768) + 99*u**4*v**2/128 + u**4*v*(1953*t**2/256 - 264755/16384) + u**4*(243*t**4/8 + 11759*t**2/64 + 150168009/262144) + 27*u**3*v**3/32 + u**3*v**2*(153*t**2/32 + 645/128) + u**3*v*(15*t**4/2 - 21529*t**2/512 - 10495881/131072) + u**3*(63*t**6/8 + 76581*t**4/512 + 39181593*t**2/32768 + 7544543659/2097152) - 73*u**2*v**3/16 + u**2*v**2*(-207*t**2/16 - 1599/128) + u**2*v*(-t**6/4 - 7281*t**4/256 - 2930373*t**2/16384 - 1104083691/1048576) + u**2*(1069*t**6/32 + 3609363*t**4/4096 + 800223243*t**2/131072 + 410988704497/16777216) + 9*u*v**4/8 + u*v**3*(33*t**2/4 + 539/32) + u*v**2*(171*t**4/8 + 607*t**2/8 - 1877/32) + u*v*(259*t**6/16 + 49213*t**4/2048 - 107315981*t**2/65536 - 50214419121/8388608) + u*(103*t**8/8 + 137805*t**6/512 + 6503233*t**4/2048 + 75727547107*t**2/2097152 + 21296292613539/134217728) - 3*v**4/8 + v**3*(35*t**2/4 + 149/8) + v**2*(471*t**4/8 + 3325*t**2/32 + 1075/8) + v*(-t**8/2 + 25311*t**6/256 - 2015193*t**4/4096 - 8288011503*t**2/1048576 - 2818665001187/67108864) + 386320460688041/268435456"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "tangent",
+      "D": 2,
+      "metric_determinant": 145,
+      "W": "t**4/2 + t**2*u**2 + 8*t**2*u + 11*t**2*v + u**4/2 - 2*u**3 - 3*u**2*v - 9*u**2 + 2*u*v**2 + 4*u*v - 17*v**2/2",
+      "source": "2*t**4 + 2*t**2*u**2 + 8*t**2*u + 33*t**2*v/2 - 3*t**2 + 2*u**3 + 3*u**2*v/2 + 18*u**2 - 6*u*v + 17*v**2/2",
+      "seed_columns": [
+        {
+          "j": 1,
+          "depth": 3,
+          "N": [
+            "2*t**4 - 677*t**2/16",
+            "3*t**2/4 + 147/8",
+            "2*t**2 + 531/16",
+            "33*t**2/2 + 563/16",
+            "43/8"
+          ],
+          "H": "4*t**3",
+          "H_valuation": 3,
+          "row_degree_bounds": [
+            4,
+            3,
+            2,
+            2,
+            1
+          ],
+          "witness": {
+            "Cu": "25/16",
+            "Cv": "3*u/8 + 39/16"
+          }
+        },
+        {
+          "j": 2,
+          "depth": 10,
+          "N": [
+            "4*t**8 - 21109*t**6/16 - 600285631*t**4/16384 - 100960804215*t**2/524288",
+            "-581*t**6/2 - 2976325*t**4/512 - 3768440767*t**2/131072 + 5513954673/262144",
+            "4*t**6 + 808*t**4 + 158728621*t**2/16384 + 35803124209/524288",
+            "77*t**6 - 615101*t**4/256 + 1979805715*t**2/65536 + 116914995217/524288",
+            "411*t**4/2 + 443547*t**2/512 + 1543232217/262144"
+          ],
+          "H": "16*t**6",
+          "H_valuation": 6,
+          "row_degree_bounds": [
+            8,
+            7,
+            6,
+            6,
+            5
+          ],
+          "witness": {
+            "Cu": "335*t**4/8 + 740707*t**2/1024 + 625*u**3/128 + u**2*(25*t**2/4 + 143259/2048) + u*(2*t**4 + 1681*t**2/128 + 12387201/32768) + 289*v**2/8 + v*(561*t**2/4 + 25721/64) + 2259084275/524288",
+            "Cv": "1423*t**4/16 + 45264797*t**2/16384 + 123*u**4/64 + 9*u**3*v/16 + u**3*(3*t**2/2 + 15801/1024) - 2389*u**2*v/256 + u**2*(-1671*t**2/64 - 75461/16384) + 51*u*v**2/8 + u*v*(71*t**2/4 + 411697/4096) + u*(81*t**4/4 + 105539*t**2/256 + 443200129/262144) + 1785*v**2/32 + v*(-t**4 + 58407*t**2/256 + 62113667/65536) + 7408901901/524288"
+          }
+        },
+        {
+          "j": 3,
+          "depth": 17,
+          "N": [
+            "8*t**12 + 51633*t**10/2 + 949056591*t**8/4096 - 306908261681*t**6/524288 - 41796470268393781*t**4/536870912 - 8254517385633962525*t**2/17179869184",
+            "-889*t**10 - 8295783*t**8/256 - 15719048665*t**6/16384 - 247914347335031*t**4/16777216 - 311746087014329141*t**2/4294967296 + 289056632924583387/8589934592",
+            "8*t**10 + 1957*t**8/4 - 984837007*t**6/4096 - 200819628701*t**4/262144 + 10969802976298095*t**2/536870912 + 2762280639451774811/17179869184",
+            "242*t**10 - 15066287*t**8/128 - 4489582529*t**6/4096 - 67458359485375*t**4/8388608 + 128213173284699857*t**2/2147483648 + 9828340263511374523/17179869184",
+            "4089*t**8/2 - 4830057*t**6/256 + 28566199341*t**4/131072 + 54397990656681*t**2/16777216 + 126055028878127443/8589934592"
+          ],
+          "H": "64*t**9",
+          "H_valuation": 9,
+          "row_degree_bounds": [
+            12,
+            11,
+            10,
+            10,
+            9
+          ],
+          "witness": {
+            "Cu": "-377*t**8/2 - 4503607*t**6/512 - 19919338925*t**4/262144 + 37193933022289*t**2/33554432 + 15625*u**6/1024 + u**5*(1875*t**2/64 + 6346875/16384) + u**4*(75*t**4/4 + 391375*t**2/512 + 1175241633/262144) + u**3*(4*t**6 + 33405*t**4/64 + 126475973*t**2/16384 + 152339969299/4194304) + u**2*(135*t**6 + 1388249*t**4/512 + 705662741*t**2/16384 + 14693962641033/67108864) + u*(8*t**8 - 29235*t**6/16 - 19867291*t**4/2048 - 82475638461*t**2/4194304 + 559350751860875/1073741824) + 4913*v**4/16 + v**3*(28611*t**2/16 + 889253/256) + v**2*(59007*t**4/16 + 1244145*t**2/64 + 448208077/4096) + v*(49401*t**6/16 + 3130295*t**4/128 + 1576286053*t**2/4096 + 27089913525/16384) + 169452712322349425/17179869184",
+            "Cv": "-4419*t**8/2 - 62478797*t**6/4096 + 52159783331*t**4/524288 + 3309199958371775*t**2/536870912 + 3843*u**7/512 + 513*u**6*v/128 + u**6*(369*t**2/32 + 1357785/8192) + 27*u**5*v**2/32 + u**5*v*(27*t**2/8 + 141899/2048) + u**5*(9*t**4/2 + 20997*t**2/64 + 222228635/131072) + 1359*u**4*v**2/32 + u**4*v*(20313*t**2/128 + 19836625/32768) + u**4*(7497*t**4/32 + 29495441*t**2/8192 + 27765737697/2097152) + 459*u**3*v**3/32 + u**3*v**2*(2115*t**2/32 + 94569/256) + u**3*v*(375*t**4/4 + 996971*t**2/1024 + 1230294179/524288) + u**3*(63*t**6 + 125217*t**4/64 + 1439338119*t**2/65536 + 2150298201619/33554432) - 2431*u**2*v**3/64 + u**2*v**2*(-2187*t**2/16 - 455199/2048) + u**2*v*(-2*t**6 - 86775*t**4/128 - 173599677*t**2/32768 - 445560612295/8388608) + u**2*(-3961*t**6/8 + 7275507*t**4/1024 - 55175200149*t**2/2097152 - 119777219756663/536870912) + 2601*u*v**4/32 + u*v**3*(6783*t**2/16 + 913121/512) + u*v**2*(24489*t**4/32 + 3941491*t**2/512 + 13056629/1024) + u*v*(3661*t**6/8 + 9431251*t**4/1024 + 2744669487*t**2/131072 - 2500089694053/134217728) + u*(118*t**8 + 796077*t**6/128 + 12668181503*t**4/131072 + 8188321548169*t**2/8388608 + 33694414747886987/8589934592) + 61557*v**4/128 + v**3*(419611*t**2/128 + 28039069/2048) + v**2*(899751*t**4/128 + 31011145*t**2/512 + 1804445773/8192) + v*(-4*t**8 + 650477*t**6/128 + 60459971*t**4/1024 + 5121570803885*t**2/8388608 + 5181167757783201/2147483648) + 618008888988280719/17179869184"
+          }
+        }
+      ]
+    }
+  ],
+  "degree_cases": [
+    {
+      "kind": "transverse",
+      "cofactor_gate": 98,
+      "row_subsets_checked": 32,
+      "basis_weights": [
+        "0",
+        "4/3",
+        "2",
+        "8/3",
+        "10/3",
+        "4"
+      ]
+    },
+    {
+      "kind": "triangle",
+      "cofactor_gate": 78,
+      "row_subsets_checked": 16,
+      "basis_weights": [
+        "0",
+        "2",
+        "2",
+        "4",
+        "4"
+      ]
+    },
+    {
+      "kind": "tangent",
+      "cofactor_gate": 52,
+      "row_subsets_checked": 16,
+      "basis_weights": [
+        "0",
+        "1",
+        "2",
+        "3/2",
+        "3"
+      ]
+    }
+  ],
+  "odd_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 108,
+    "cusp": 94,
+    "transverse": 108,
+    "tangent": 94,
+    "triangle": 108,
+    "concurrent": 104,
+    "repeated": 98
+  }
+}

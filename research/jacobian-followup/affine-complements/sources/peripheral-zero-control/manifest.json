@@ -1,0 +1,71 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path_relative_to_affine_complements": "sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+      "url": "https://researchers.ms.unimelb.edu.au/~norbury@unimelb/papers/orevkov.pdf",
+      "title": "Neumann--Norbury, The Orevkov invariant of an affine plane curve",
+      "used_statement": "Complete pages: Section4 ordinary cabling/splice and pole orders of approximate roots; Section5.2 canonical a_i recurrence and a_n=-K.Cbar-1. No global moduli theorem is imported here.",
+      "bytes": 232604,
+      "sha256": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        6,
+        7,
+        12,
+        13
+      ],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-cabling/ito-cable-slopes.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/690DE16138573D0051FF223F9269C77C/S0008439520000338a.pdf/note_on_chirally_cosmetic_surgery_on_cable_knots.pdf",
+      "title": "Ito, A Note on Chirally Cosmetic Surgery on Cable Knots",
+      "used_statement": "Complete PDF5/printed167: annulus base with one exceptional order equal to winding, inner fibre pq*meridian+longitude, outer section/fibre basis M=q*c2-r*h,L=p*c2+s*h. Used only for the explicit (winding3,parameter4) cable control, where orientation signs do not affect the order2/order4 evaluations. No cosmetic-surgery theorem imported.",
+      "bytes": 404165,
+      "sha256": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        5
+      ],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/peripheral-zero-control/pakovich-zvonkin-2015.pdf",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/1595/1/preprint_2015_51.pdf",
+      "title": "Pakovich--Zvonkin, Minimum degree of the difference of two polynomials over Q, PartII",
+      "used_statement": "Complete preprint printed1-2/PDF5-6: factorization partitions and Definition1.2 of Davenport--Zannier equality pairs. Used for terminology and context. The weighted Wronskian identity, degree comparison, extremal properties and explicit six-node certificate are independently derived here; neither a classification nor an example from the paper is assumed.",
+      "bytes": 607796,
+      "sha256": "c17821737b936abe9fb2851eb05d1a374f4f6fbf9835f1516d36da5d44b7ac43",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        5,
+        6
+      ],
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_claims": [
+    "PF2RULED46",
+    "PF2RULED54",
+    "PF2RULED55",
+    "PF2RULED58",
+    "PF2RULED59"
+  ],
+  "new_written_steps": [
+    "full smooth quartic quadratic residual cover has an even finite branch divisor and split infinity",
+    "actual preferred longitude monodromy is identity and preimage knot has three components",
+    "longitude-zero linear cocycle constraint and invariant-subspace criterion",
+    "all-degree primitive binomial-key normal degree equals weighted Wronskian degree",
+    "eta0 binomial class is a Davenport--Zannier equality case with transverse weighted Euler field",
+    "complete six-node eta0 polynomial curve certificate and determinant9",
+    "explicit peripheral S4 representation for its (3,4)-cable trefoil infinity knot"
+  ],
+  "historical_cuspidal_one_prime_residual_model_substituted": false,
+  "longitude_asserted_all_higher_degrees": false,
+  "general_keys_assumed_binomial": false,
+  "control_affine_S4_monodromy_supplied": false,
+  "control_sign_Picard_or_linking_gate_certified": false,
+  "finite_Keller_pair_supplied": false,
+  "full_quartic_exclusion": false,
+  "formal_verification": false,
+  "independent_full_reproof": false,
+  "external_review": false
+}

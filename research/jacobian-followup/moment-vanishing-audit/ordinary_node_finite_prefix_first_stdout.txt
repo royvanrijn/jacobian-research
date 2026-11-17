@@ -1,0 +1,8 @@
+Universal principal/divergence checks passed
+Certified nodal regular
+Certified nodal singular
+Certified transverse regular
+Certified transverse singular
+Certified triangle regular
+Certified triangle singular
+{"completed": true, "proposed_global_sufficient_pure_prefix": 1855, "global_least_prefix_computed": false, "written_proof_certified_by_checker": false}

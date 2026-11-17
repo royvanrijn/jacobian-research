@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "checker_sha256": "bcfb3a3766c1d6c7e992d6c637b54b3795d25bb61284af044567dcc7b5fe6331",
+  "certificate_sha256": "a32b9a7f7790917422e6e949729ef63e220c25026226fdf889efbd513212b4b3",
+  "sympy_version": "1.14.0",
+  "runtime_seconds": 0.369,
+  "basis_grades": [
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    3
+  ],
+  "model_count": 4,
+  "exact_connection_columns": 32,
+  "exact_seed_columns_through_8": 32,
+  "direct_seed_reductions": 12,
+  "all_grade_subsets_checked": 128,
+  "rank_specific_cubic_gates": [
+    1,
+    6,
+    14,
+    25,
+    38,
+    54,
+    73,
+    94
+  ],
+  "smooth_ternary_cubic_gate": 94,
+  "homogeneous_smooth_ternary_cubic_gate": 56,
+  "general_dimension_regressions_through": 12,
+  "full_seed_rank_8_models": [
+    "diagonal_dense",
+    "hesse_dense",
+    "asymmetric_homogeneous"
+  ],
+  "optimality_proved": false,
+  "global1855_gate_improved": false,
+  "universal_written_proof_certified_by_checker": false,
+  "boundary": "Exact twisted-divergence model columns, seed recurrences and cofactor arithmetic support the written universal filtration proof. The no-constant-period input is retained analytic mathematics; independent replay, external review and formal verification are not claimed."
+}

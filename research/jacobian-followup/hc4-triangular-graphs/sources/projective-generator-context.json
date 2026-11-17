@@ -1,0 +1,89 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYLE0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/SCALAR_DIFFERENTIAL_RIGIDITY_AND_ONE_COMPONENT_DESCENT.md"
+    },
+    {
+      "claim": "HC4MYKW0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md"
+    },
+    {
+      "claim": "KMFI1",
+      "canonical_source": "jacobian-followup/monodromy-theory/THEORY.md"
+    },
+    {
+      "claim": "KMFI2",
+      "canonical_source": "jacobian-followup/monodromy-theory/THEORY.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYLG0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/UNIFORM_INTEGRATION_AND_EXACT_RELATIVE_QUOTIENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/SCALAR_DIFFERENTIAL_RIGIDITY_AND_ONE_COMPONENT_DESCENT.md": "73837c8803402030740bdff525fde639314a1d60a3fca5452ac14d8f26621706",
+    "jacobian-followup/hc4-triangular-graphs/verify_scalar_descent.py": "b869b8eb6b0c3becf5d14f8821f0304ac5a033c95fa06e22825a44f3b1c3be68",
+    "jacobian-followup/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md": "1c303ba4aeb13523d39c92169f081676ead1673a6a49dc961132e96927081909",
+    "jacobian-followup/hc4-triangular-graphs/verify_source_line_conductor.py": "2df718f5a99cbc19ec11f614a7cfdee85d8b23522f5f33b241623df56b7a31fe",
+    "jacobian-followup/monodromy-theory/THEORY.md": "71de191500c3ac73298540d8ce8b5496243b2b1a34b20313e3ab42d332532cdc",
+    "jacobian-followup/monodromy-theory/verify.py": "f6538a84c4cb04c532be93647e808e978a165bc6dd90efef0024586ebbc80c47",
+    "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "jacobian-followup/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian-followup/hc4-triangular-graphs/UNIFORM_INTEGRATION_AND_EXACT_RELATIVE_QUOTIENT.md": "c58bd8d84d79ca59db17e1eb32aac3ba67edc1ce3c2724e55a8af55b59f514d6",
+    "jacobian-followup/hc4-triangular-graphs/verify_uniform_integration.py": "46595e67d815fd7634d2104d7dc66a0cc315fb1ad63a53629deb70abe7711404"
+  },
+  "new_primary_sha256": {
+    "sources/weil-cimpa-differential-galois.pdf": "e5f1e273f229afd04a44a95ab68774dcccba71a2e7e757840a2f72370c603be0"
+  },
+  "primary_context": [
+    {
+      "title": "Jacques-Arthur Weil,Introduction to Differential Algebra and Differential Galois Theory,CIMPA-UNESCO-Vietnam lectures,Hanoi,December3-7,2001",
+      "url": "https://www.unilim.fr/pages_perso/jacques-arthur.weil/Papers/cimpa_weil.pdf",
+      "inspected": "Actual title and complete PDFpages26-28,printed24-26,rendered and VISUALLY read.C.1.2 imprimitive case,C.1.3 binary polyhedral groups and Riccati orbit degrees inspected.Text extraction has broken font encoding and is not used as readable proof evidence.",
+      "role": "Classical projective/Riccati context credited.BINARY groups oforder24/48/120 not conflated withPROJECTIVE12/24/60.No one-derivation algebraically closed constant hypothesis silently transferred to C(P).Cross-ratio,full common constants and spherical classification written out here."
+    }
+  ],
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "full_theorem_target": "Full HC4/JC2 proof or actual counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked canonical-energy integrality;OPEN.",
+  "previous_goal_turn_classification": "progress",
+  "mathematical_development_boundary": "No mathematical checker run yet.New primary read helper first had a shell-quoting failure before downloading;replaced by a literal script.No old registered mathematical checker replayed.No failed mathematical inference treated as evidence.",
+  "full_projective_system_equivalent_to_constant_conjugate_crossratios_proved": true,
+  "full_frame_common_constants_of_normal_closure_exactly_C_proved": true,
+  "projective_group_embedding_and_full_point_stabilizer_identified": true,
+  "rational_Mobius_generator_and_target_derivative_basis_covariance_proved": true,
+  "exact_flat_projective_curvature_identity_proved": true,
+  "all_degree_Keller_projective_action_sieve_proved": true,
+  "primitive_plane_degree_four_row_retired_only_for_full_source": true,
+  "source_polynomial_coordinate_primitivity_reproved_with_classical_credit": true,
+  "single_direction_unbounded_counterfamily_proved": true,
+  "cubic_full_projective_control_retains_nonKeller_boundary": true,
+  "external_review_deferred": true,
+  "full_projective_generator_asserted_automatic": false,
+  "surviving_action_table_asserted_realization_or_sufficiency": false,
+  "degree_four_proper_intermediate_field_excluded_by_Domrina": false,
+  "one_target_derivative_treated_as_full_frame": false,
+  "single_direction_constants_C_P_assumed_algebraically_closed": false,
+  "binary_and_projective_group_orders_conflated": false,
+  "quadratic_certificate_asserted_force_unconditional_inverse": false,
+  "natural_symmetric_or_alternating_monodromy_excluded_without_differential_hypothesis": false,
+  "new_major_external_theorem_imported": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

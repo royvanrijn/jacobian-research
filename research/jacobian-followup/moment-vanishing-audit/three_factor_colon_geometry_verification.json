@@ -1,0 +1,32 @@
+{
+  "claim": "G3PRODUCTCOLON20261114",
+  "audit_existing_only": true,
+  "exact_nilradical_indices": {
+    "I8": 14,
+    "I10_equals_I_infinity": 13
+  },
+  "colon_standard_basis_generators": 55,
+  "primary_components": 4,
+  "associated_primes_of_I10_over_I8": [
+    "(b,c,d,e,f)",
+    "(a,c,d,e,f)",
+    "(a,b,d,e,f)",
+    "(a,b,c,d,e,f)"
+  ],
+  "axis_generic_length": 62,
+  "intrinsic_origin_torsion_length": 79,
+  "chosen_origin_primary_length": 823,
+  "colon_completeness": "Forward ideal membership plus exact full Hilbert-series identity, not merely candidate generators.",
+  "certificate_sha256": "77c2d2353dcb9f89789c6b31fa44fc63186b6d8bb52fcc50d713748b470be3ff",
+  "checker_sha256": "016022955144496071ee0d84520dc0b8b2ae3280e9c888c041e47b42bcf9316d",
+  "input_hashes": {
+    "input_sha256": "50b6e873a83eb55322ad602afff8851a8c1a8ef6633146e3d3f38189a12aa56c",
+    "log_sha256": "2ae4964c4202f427601ed36c784034bdadb4f7d5d0f1d3402cdbc90ac7095159",
+    "runner_sha256": "d19585a342ec5682bea3287355070c6bd6ce6e8a7d75dc09d7fea6ee9223f786",
+    "wick_input_sha256": "7254eff7dad198b2e15fa727da0703bab5f8e3b8704697b27a0ed212527821d6"
+  },
+  "singular_version": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00",
+  "sympy_version": "1.14.0",
+  "elapsed_seconds": 1.8733616989920847,
+  "assurance": "Internal exact symbolic/CAS proof, no independent specialist replay, formal verification or external review. Invalid v1/v2 runs and terminal raw-syzygy timeout are retained."
+}

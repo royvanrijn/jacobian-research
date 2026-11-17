@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-14",
+  "claim": "G3TRIANGLEAFFINE20261114",
+  "canonical_source": "jacobian-followup/moment-vanishing-audit/AFFINE_TRIANGLE_EXCLUSION.md",
+  "inputs": {
+    "W_linear_frame": "jacobian-followup/moment-vanishing-audit/RANK_ONE_WT2_CLASSIFICATION.md",
+    "quadratic_W_conic_pure_exclusion": "jacobian-followup/moment-vanishing-audit/QUADRATIC_W_LOG_PERIODS.md",
+    "coercive_node_criterion": "jacobian-followup/moment-vanishing-audit/COERCIVE_GRADIENT_MOMENTS.md",
+    "escape_models": "jacobian-followup/moment-vanishing-audit/NODAL_GAUSSIAN_CRITICAL_PROFILES.md",
+    "power_characters": "jacobian-followup/moment-vanishing-audit/NODAL_FORMAL_FRAME.md",
+    "positive_seed_criterion": "jacobian-followup/moment-vanishing-audit/CUSPIDAL_AFFINE_EXCLUSION.md",
+    "uniform_carrier_current_limit": "jacobian-followup/moment-vanishing-audit/NODAL_CENTER_LINE_DECAY.md"
+  },
+  "retained_receipts": {
+    "nodal_gaussian_critical_verification.json": "8d04af4c5001e18cab8023deec765983fae36d28f4c5f2adf9820422f443b075",
+    "nodal_center_line_decay_verification.json": "b2ea8fcc625f4a45f8535b9e24070d85a2365535eeb03d1994243017acbcc161",
+    "cuspidal_affine_profiles_verification.json": "ab94ec462c11715b25e628b106c2e68b8d29bc8f8a4f281f9886216e9f481a5e",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9"
+  },
+  "new_frame": "Use unnormalized partial-fraction numerators B(L)/(L-L_p)^(mu_p-j) and B(L)/(L-L_i), all degree<5. For determinant assessment divide finite columns by B_p(L_p), escape columns by B′(L_i). Their local factorizations give bounded finite jet units and vanishing escape cross terms even across t,t^(1/3),t^(1/4) scales. These parameter-dependent column normalizations prove invertibility only; original horizontal functionals and positive seed values remain unchanged.",
+  "new_exhaustion": "All32 zero/nonzero patterns in h,b,c,e,f are accounted for:23 finite patterns whose finite Milnor ranks and explicit1/3/4 escapes total5;5 critical-conic patterns equivalent to w*(xy+d*w+a)+k,a!=0;4 critical-axis patterns e=f=h=0. Coefficients on discriminants retain their full finite Milnor multiplicities. No genericity in critical values or saddle actions is imposed.",
+  "conic_mechanism": "A fixed Laurent phase on C* has nonzero order2 poles at both ends and rank4 by its four-step Euler recurrence. Formal perturbation lifts these four duals with seed prefactor t^-1. A finite Morse point or one quadratic-action escape supplies the fifth dimension. Positive formal seed valuation excludes all pure zeros.",
+  "axes_mechanism": "Uniform large-t complex gradient coercivity at all three nodes is proved explicitly using invertible transverse2-by-2 systems and nonzero effective diagonal coefficients. All critical actions are kt+O(1). The retained jointly semialgebraic carrier, uniform tail and current-limit proof applies with rank5; normalized periods decay even at intersecting critical axes. No formal semisimplicity claim is made on that analytic branch.",
+  "exact_evidence": {
+    "checker_sha256": "c56fd231648446d5e3cd0d1db9364c7d527a56680b51c34d0648bc9038191417",
+    "finite_patterns": 23,
+    "positive_patterns": 9,
+    "confluent_partition_cases": 12
+  },
+  "retained_failure": "affine_triangle_initial_failure.json binds the initial input. SymPy did not normalize a symbolic x^j recurrence display; the corrected universal coefficient identity and thirteen integer Laurent-power checks pass. No theorem was inferred from the rejected run.",
+  "literature_check": {
+    "queries": [
+      "Gaussian Moments Conjecture cubic2026 three",
+      "reducible Gaussian moments conjecture"
+    ],
+    "scope": "Targeted nonexhaustive search on14 November2026 located the already audited Long arXiv2607.18186 and secondary curations, not a new applicable affine triangle theorem. The secondary dimension2 open remarks are not used as local authority; no new external theorem is imported. The prior primary version audit is retained."
+  },
+  "proof_boundary": "Exact 32 support-pattern partition and rank counts, local infinity Jacobians, escape actions/Hessians, confluent numerator algebra, Laurent recurrence and conic identities. Complete formal frames and current-limit/seed arguments are internal written mathematics.",
+  "remaining": "Nonhomogeneous line-smooth-conic leading cubics, three concurrent distinct leading lines, repeated-line leading cubics; numerical uniform gates; coefficient schemes and lower-power GVC; independent review.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

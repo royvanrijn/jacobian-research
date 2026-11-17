@@ -1,0 +1,18 @@
+{
+  "claims": [
+    "KCUB19"
+  ],
+  "exploratory_runs_preserved": true,
+  "exploratory_runs_used_as_global_proof": false,
+  "global_minima_closed": false,
+  "links": true,
+  "positive_bounds_unchanged": true,
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "scope": "Sharp36 only in the displayed47-coefficient carrier realization, plus all-degree one-axis source shear obstruction in the fixed frame.",
+  "seven_module_substitution_domain_audit_pass": true,
+  "source_hashes": true,
+  "status": "pass",
+  "umbrella_status": "open",
+  "validation_sha256": "84ecf0839edd0fd1654879908126172aa62ac741619892fce2432909d34dc807"
+}

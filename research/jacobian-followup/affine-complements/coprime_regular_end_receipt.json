@@ -1,0 +1,1342 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 480,
+  "checks": [
+    "predecessor PASS borderline_regular_end_receipt.json",
+    "predecessor seal borderline_regular_end_receipt.json verify_borderline_regular_end.py",
+    "predecessor seal borderline_regular_end_receipt.json BORDERLINE_REGULAR_END_AND_EXCLUSION.md",
+    "predecessor seal borderline_regular_end_receipt.json sources/borderline-regular-end/manifest.json",
+    "predecessor seal borderline_regular_end_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor seal borderline_regular_end_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "predecessor seal borderline_regular_end_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "predecessor seal borderline_regular_end_receipt.json sources/torus-infinity/scott-geometries.pdf",
+    "predecessor seal borderline_regular_end_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "predecessor seal borderline_regular_end_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "predecessor seal borderline_regular_end_receipt.json higher_regular_coordinate_receipt.json",
+    "predecessor seal borderline_regular_end_receipt.json regular_sector_end_receipt.json",
+    "predecessor seal borderline_regular_end_receipt.json quartic_cabling_receipt.json",
+    "predecessor seal borderline_regular_end_receipt.json torus_infinity_receipt.json",
+    "predecessor seal borderline_regular_end_receipt.json intrinsic_normalization_receipt.json",
+    "predecessor PASS higher_regular_coordinate_receipt.json",
+    "predecessor seal higher_regular_coordinate_receipt.json verify_higher_regular_coordinate.py",
+    "predecessor seal higher_regular_coordinate_receipt.json HIGHER_REGULAR_COORDINATE_CYCLIC_FORM.md",
+    "predecessor seal higher_regular_coordinate_receipt.json sources/coordinate-pole-sector/manifest.json",
+    "predecessor seal higher_regular_coordinate_receipt.json sources/coordinate-pole-sector/miyanishi-tifr60.pdf",
+    "predecessor seal higher_regular_coordinate_receipt.json coordinate_regular_sector_receipt.json",
+    "predecessor seal higher_regular_coordinate_receipt.json regular_sector_end_receipt.json",
+    "predecessor seal higher_regular_coordinate_receipt.json multiple_fiber_cyclic_receipt.json",
+    "predecessor PASS regular_sector_end_receipt.json",
+    "predecessor seal regular_sector_end_receipt.json verify_regular_sector_end.py",
+    "predecessor seal regular_sector_end_receipt.json REGULAR_SECTOR_END_AND_QUARTIC_EXCLUSION.md",
+    "predecessor seal regular_sector_end_receipt.json sources/regular-sector-end/manifest.json",
+    "predecessor seal regular_sector_end_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "predecessor seal regular_sector_end_receipt.json quartic_cabling_receipt.json",
+    "predecessor seal regular_sector_end_receipt.json intrinsic_normalization_receipt.json",
+    "predecessor seal regular_sector_end_receipt.json coordinate_regular_sector_receipt.json",
+    "predecessor PASS quartic_cabling_receipt.json",
+    "predecessor seal quartic_cabling_receipt.json verify_quartic_cabling.py",
+    "predecessor seal quartic_cabling_receipt.json QUARTIC_CABLING_EXCLUSION.md",
+    "predecessor seal quartic_cabling_receipt.json torus_infinity_receipt.json",
+    "predecessor seal quartic_cabling_receipt.json TORUS_INFINITY_OBSTRUCTION.md",
+    "predecessor seal quartic_cabling_receipt.json residual_cover_receipt.json",
+    "predecessor seal quartic_cabling_receipt.json RESIDUAL_DOUBLE_COVER.md",
+    "predecessor seal quartic_cabling_receipt.json WRIGHT_MARKED_MODEL.md",
+    "predecessor seal quartic_cabling_receipt.json WRIGHT_CONNECTION.md",
+    "predecessor seal quartic_cabling_receipt.json PROOF.md",
+    "predecessor seal quartic_cabling_receipt.json PRIMITIVE_QUARTIC_FIELD.md",
+    "predecessor seal quartic_cabling_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "predecessor seal quartic_cabling_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "predecessor seal quartic_cabling_receipt.json sources/quartic-cabling/manifest.json",
+    "predecessor seal quartic_cabling_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "predecessor seal quartic_cabling_receipt.json sources/quartic-cabling/perelman-finite-extinction.pdf",
+    "predecessor PASS torus_infinity_receipt.json",
+    "predecessor seal torus_infinity_receipt.json verify_torus_infinity.py",
+    "predecessor seal torus_infinity_receipt.json TORUS_INFINITY_OBSTRUCTION.md",
+    "predecessor seal torus_infinity_receipt.json residual_cover_receipt.json",
+    "predecessor seal torus_infinity_receipt.json RESIDUAL_DOUBLE_COVER.md",
+    "predecessor seal torus_infinity_receipt.json GLOBAL_BOUNDARY_OBSTRUCTION.md",
+    "predecessor seal torus_infinity_receipt.json PROOF.md",
+    "predecessor seal torus_infinity_receipt.json WRIGHT_MARKED_MODEL.md",
+    "predecessor seal torus_infinity_receipt.json PRIMITIVE_QUARTIC_FIELD.md",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/borodzik-morse.pdf",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/leidy-maxim-hoA.pdf",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/manifest.json",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/scott-geometries.pdf",
+    "predecessor PASS intrinsic_normalization_receipt.json",
+    "predecessor seal intrinsic_normalization_receipt.json verify_intrinsic_normalization.py",
+    "predecessor seal intrinsic_normalization_receipt.json INTRINSIC_NORMALIZATION_GATE.md",
+    "predecessor seal intrinsic_normalization_receipt.json quartic_cabling_receipt.json",
+    "predecessor seal intrinsic_normalization_receipt.json sources/intrinsic-normalization/2403.02219v2.html",
+    "predecessor seal intrinsic_normalization_receipt.json sources/intrinsic-normalization/BGV160.pdf",
+    "predecessor seal intrinsic_normalization_receipt.json sources/intrinsic-normalization/manifest.json",
+    "all seven retained primary imports explicitly scoped",
+    "primary seal waldhausen-1968.pdf",
+    "primary seal neumann-plumbing-1981.pdf",
+    "primary seal hatcher-3M.pdf",
+    "primary seal scott-geometries.pdf",
+    "primary seal ito-cable-slopes.pdf",
+    "primary seal neumann-norbury-orevkov.pdf",
+    "primary seal perelman-finite-extinction.pdf",
+    "closed horizontal-surface obstruction and complete proof visually checked",
+    "quartic permutation layer is reused without new unbounded permutation assumptions",
+    "actual toric corner matrix is unimodular q1 r2",
+    "principal-divisor equations identify both whole arms q1 r2",
+    "actual opposite arm determinants are r and q q1 r2",
+    "closed end determinant is the surgery coefficient q1 r2",
+    "actual omitted meridian is primitive with cofactor n minus one q1 r2",
+    "closed regular fiber is m times the marked knot q1 r2",
+    "R6 removes the zero-leaf pair without changing the marked determinant q1 r2",
+    "marked free puncture is retained outside the R6 pair q1 r2",
+    "cyclic closed first homology exact Smith control q1 r2",
+    "coprimality gives odd surgery order with only the Wright exception q1 r2",
+    "Bezout monomials are actual unimodular coordinates q1 r2",
+    "all mixed principal parts have the exact m-contact differential q1 r2",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q1 r2",
+    "volume discrepancy reaches exactly one after m free blowups q1 r2",
+    "actual toric corner matrix is unimodular q2 r3",
+    "principal-divisor equations identify both whole arms q2 r3",
+    "actual opposite arm determinants are r and q q2 r3",
+    "closed end determinant is the surgery coefficient q2 r3",
+    "actual omitted meridian is primitive with cofactor n minus one q2 r3",
+    "closed regular fiber is m times the marked knot q2 r3",
+    "R6 removes the zero-leaf pair without changing the marked determinant q2 r3",
+    "marked free puncture is retained outside the R6 pair q2 r3",
+    "coprimality gives odd surgery order with only the Wright exception q2 r3",
+    "Bezout monomials are actual unimodular coordinates q2 r3",
+    "all mixed principal parts have the exact m-contact differential q2 r3",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q2 r3",
+    "volume discrepancy reaches exactly one after m free blowups q2 r3",
+    "actual toric corner matrix is unimodular q3 r2",
+    "principal-divisor equations identify both whole arms q3 r2",
+    "actual opposite arm determinants are r and q q3 r2",
+    "closed end determinant is the surgery coefficient q3 r2",
+    "actual omitted meridian is primitive with cofactor n minus one q3 r2",
+    "closed regular fiber is m times the marked knot q3 r2",
+    "R6 removes the zero-leaf pair without changing the marked determinant q3 r2",
+    "marked free puncture is retained outside the R6 pair q3 r2",
+    "cyclic closed first homology exact Smith control q3 r2",
+    "coprimality gives odd surgery order with only the Wright exception q3 r2",
+    "Bezout monomials are actual unimodular coordinates q3 r2",
+    "all mixed principal parts have the exact m-contact differential q3 r2",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q3 r2",
+    "volume discrepancy reaches exactly one after m free blowups q3 r2",
+    "actual toric corner matrix is unimodular q4 r3",
+    "principal-divisor equations identify both whole arms q4 r3",
+    "actual opposite arm determinants are r and q q4 r3",
+    "closed end determinant is the surgery coefficient q4 r3",
+    "actual omitted meridian is primitive with cofactor n minus one q4 r3",
+    "closed regular fiber is m times the marked knot q4 r3",
+    "R6 removes the zero-leaf pair without changing the marked determinant q4 r3",
+    "marked free puncture is retained outside the R6 pair q4 r3",
+    "cyclic closed first homology exact Smith control q4 r3",
+    "coprimality gives odd surgery order with only the Wright exception q4 r3",
+    "Bezout monomials are actual unimodular coordinates q4 r3",
+    "all mixed principal parts have the exact m-contact differential q4 r3",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q4 r3",
+    "volume discrepancy reaches exactly one after m free blowups q4 r3",
+    "actual toric corner matrix is unimodular q5 r2",
+    "principal-divisor equations identify both whole arms q5 r2",
+    "actual opposite arm determinants are r and q q5 r2",
+    "closed end determinant is the surgery coefficient q5 r2",
+    "actual omitted meridian is primitive with cofactor n minus one q5 r2",
+    "closed regular fiber is m times the marked knot q5 r2",
+    "R6 removes the zero-leaf pair without changing the marked determinant q5 r2",
+    "marked free puncture is retained outside the R6 pair q5 r2",
+    "coprimality gives odd surgery order with only the Wright exception q5 r2",
+    "Bezout monomials are actual unimodular coordinates q5 r2",
+    "all mixed principal parts have the exact m-contact differential q5 r2",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q5 r2",
+    "volume discrepancy reaches exactly one after m free blowups q5 r2",
+    "actual toric corner matrix is unimodular q5 r3",
+    "principal-divisor equations identify both whole arms q5 r3",
+    "actual opposite arm determinants are r and q q5 r3",
+    "closed end determinant is the surgery coefficient q5 r3",
+    "actual omitted meridian is primitive with cofactor n minus one q5 r3",
+    "closed regular fiber is m times the marked knot q5 r3",
+    "R6 removes the zero-leaf pair without changing the marked determinant q5 r3",
+    "marked free puncture is retained outside the R6 pair q5 r3",
+    "cyclic closed first homology exact Smith control q5 r3",
+    "coprimality gives odd surgery order with only the Wright exception q5 r3",
+    "Bezout monomials are actual unimodular coordinates q5 r3",
+    "all mixed principal parts have the exact m-contact differential q5 r3",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q5 r3",
+    "volume discrepancy reaches exactly one after m free blowups q5 r3",
+    "actual toric corner matrix is unimodular q5 r4",
+    "principal-divisor equations identify both whole arms q5 r4",
+    "actual opposite arm determinants are r and q q5 r4",
+    "closed end determinant is the surgery coefficient q5 r4",
+    "actual omitted meridian is primitive with cofactor n minus one q5 r4",
+    "closed regular fiber is m times the marked knot q5 r4",
+    "R6 removes the zero-leaf pair without changing the marked determinant q5 r4",
+    "marked free puncture is retained outside the R6 pair q5 r4",
+    "coprimality gives odd surgery order with only the Wright exception q5 r4",
+    "Bezout monomials are actual unimodular coordinates q5 r4",
+    "all mixed principal parts have the exact m-contact differential q5 r4",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q5 r4",
+    "volume discrepancy reaches exactly one after m free blowups q5 r4",
+    "actual toric corner matrix is unimodular q5 r6",
+    "principal-divisor equations identify both whole arms q5 r6",
+    "actual opposite arm determinants are r and q q5 r6",
+    "closed end determinant is the surgery coefficient q5 r6",
+    "actual omitted meridian is primitive with cofactor n minus one q5 r6",
+    "closed regular fiber is m times the marked knot q5 r6",
+    "R6 removes the zero-leaf pair without changing the marked determinant q5 r6",
+    "marked free puncture is retained outside the R6 pair q5 r6",
+    "coprimality gives odd surgery order with only the Wright exception q5 r6",
+    "Bezout monomials are actual unimodular coordinates q5 r6",
+    "all mixed principal parts have the exact m-contact differential q5 r6",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q5 r6",
+    "volume discrepancy reaches exactly one after m free blowups q5 r6",
+    "actual toric corner matrix is unimodular q6 r5",
+    "principal-divisor equations identify both whole arms q6 r5",
+    "actual opposite arm determinants are r and q q6 r5",
+    "closed end determinant is the surgery coefficient q6 r5",
+    "actual omitted meridian is primitive with cofactor n minus one q6 r5",
+    "closed regular fiber is m times the marked knot q6 r5",
+    "R6 removes the zero-leaf pair without changing the marked determinant q6 r5",
+    "marked free puncture is retained outside the R6 pair q6 r5",
+    "coprimality gives odd surgery order with only the Wright exception q6 r5",
+    "Bezout monomials are actual unimodular coordinates q6 r5",
+    "all mixed principal parts have the exact m-contact differential q6 r5",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q6 r5",
+    "volume discrepancy reaches exactly one after m free blowups q6 r5",
+    "actual toric corner matrix is unimodular q7 r3",
+    "principal-divisor equations identify both whole arms q7 r3",
+    "actual opposite arm determinants are r and q q7 r3",
+    "closed end determinant is the surgery coefficient q7 r3",
+    "actual omitted meridian is primitive with cofactor n minus one q7 r3",
+    "closed regular fiber is m times the marked knot q7 r3",
+    "R6 removes the zero-leaf pair without changing the marked determinant q7 r3",
+    "marked free puncture is retained outside the R6 pair q7 r3",
+    "coprimality gives odd surgery order with only the Wright exception q7 r3",
+    "Bezout monomials are actual unimodular coordinates q7 r3",
+    "all mixed principal parts have the exact m-contact differential q7 r3",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q7 r3",
+    "volume discrepancy reaches exactly one after m free blowups q7 r3",
+    "actual toric corner matrix is unimodular q7 r4",
+    "principal-divisor equations identify both whole arms q7 r4",
+    "actual opposite arm determinants are r and q q7 r4",
+    "closed end determinant is the surgery coefficient q7 r4",
+    "actual omitted meridian is primitive with cofactor n minus one q7 r4",
+    "closed regular fiber is m times the marked knot q7 r4",
+    "R6 removes the zero-leaf pair without changing the marked determinant q7 r4",
+    "marked free puncture is retained outside the R6 pair q7 r4",
+    "coprimality gives odd surgery order with only the Wright exception q7 r4",
+    "Bezout monomials are actual unimodular coordinates q7 r4",
+    "all mixed principal parts have the exact m-contact differential q7 r4",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q7 r4",
+    "volume discrepancy reaches exactly one after m free blowups q7 r4",
+    "actual toric corner matrix is unimodular q8 r3",
+    "principal-divisor equations identify both whole arms q8 r3",
+    "actual opposite arm determinants are r and q q8 r3",
+    "closed end determinant is the surgery coefficient q8 r3",
+    "actual omitted meridian is primitive with cofactor n minus one q8 r3",
+    "closed regular fiber is m times the marked knot q8 r3",
+    "R6 removes the zero-leaf pair without changing the marked determinant q8 r3",
+    "marked free puncture is retained outside the R6 pair q8 r3",
+    "coprimality gives odd surgery order with only the Wright exception q8 r3",
+    "Bezout monomials are actual unimodular coordinates q8 r3",
+    "all mixed principal parts have the exact m-contact differential q8 r3",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q8 r3",
+    "volume discrepancy reaches exactly one after m free blowups q8 r3",
+    "actual toric corner matrix is unimodular q8 r5",
+    "principal-divisor equations identify both whole arms q8 r5",
+    "actual opposite arm determinants are r and q q8 r5",
+    "closed end determinant is the surgery coefficient q8 r5",
+    "actual omitted meridian is primitive with cofactor n minus one q8 r5",
+    "closed regular fiber is m times the marked knot q8 r5",
+    "R6 removes the zero-leaf pair without changing the marked determinant q8 r5",
+    "marked free puncture is retained outside the R6 pair q8 r5",
+    "cyclic closed first homology exact Smith control q8 r5",
+    "coprimality gives odd surgery order with only the Wright exception q8 r5",
+    "Bezout monomials are actual unimodular coordinates q8 r5",
+    "all mixed principal parts have the exact m-contact differential q8 r5",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q8 r5",
+    "volume discrepancy reaches exactly one after m free blowups q8 r5",
+    "actual toric corner matrix is unimodular q8 r7",
+    "principal-divisor equations identify both whole arms q8 r7",
+    "actual opposite arm determinants are r and q q8 r7",
+    "closed end determinant is the surgery coefficient q8 r7",
+    "actual omitted meridian is primitive with cofactor n minus one q8 r7",
+    "closed regular fiber is m times the marked knot q8 r7",
+    "R6 removes the zero-leaf pair without changing the marked determinant q8 r7",
+    "marked free puncture is retained outside the R6 pair q8 r7",
+    "coprimality gives odd surgery order with only the Wright exception q8 r7",
+    "Bezout monomials are actual unimodular coordinates q8 r7",
+    "all mixed principal parts have the exact m-contact differential q8 r7",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q8 r7",
+    "volume discrepancy reaches exactly one after m free blowups q8 r7",
+    "actual toric corner matrix is unimodular q9 r4",
+    "principal-divisor equations identify both whole arms q9 r4",
+    "actual opposite arm determinants are r and q q9 r4",
+    "closed end determinant is the surgery coefficient q9 r4",
+    "actual omitted meridian is primitive with cofactor n minus one q9 r4",
+    "closed regular fiber is m times the marked knot q9 r4",
+    "R6 removes the zero-leaf pair without changing the marked determinant q9 r4",
+    "marked free puncture is retained outside the R6 pair q9 r4",
+    "coprimality gives odd surgery order with only the Wright exception q9 r4",
+    "Bezout monomials are actual unimodular coordinates q9 r4",
+    "all mixed principal parts have the exact m-contact differential q9 r4",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q9 r4",
+    "volume discrepancy reaches exactly one after m free blowups q9 r4",
+    "actual toric corner matrix is unimodular q11 r5",
+    "principal-divisor equations identify both whole arms q11 r5",
+    "actual opposite arm determinants are r and q q11 r5",
+    "closed end determinant is the surgery coefficient q11 r5",
+    "actual omitted meridian is primitive with cofactor n minus one q11 r5",
+    "closed regular fiber is m times the marked knot q11 r5",
+    "R6 removes the zero-leaf pair without changing the marked determinant q11 r5",
+    "marked free puncture is retained outside the R6 pair q11 r5",
+    "coprimality gives odd surgery order with only the Wright exception q11 r5",
+    "Bezout monomials are actual unimodular coordinates q11 r5",
+    "all mixed principal parts have the exact m-contact differential q11 r5",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q11 r5",
+    "volume discrepancy reaches exactly one after m free blowups q11 r5",
+    "actual toric corner matrix is unimodular q13 r8",
+    "principal-divisor equations identify both whole arms q13 r8",
+    "actual opposite arm determinants are r and q q13 r8",
+    "closed end determinant is the surgery coefficient q13 r8",
+    "actual omitted meridian is primitive with cofactor n minus one q13 r8",
+    "closed regular fiber is m times the marked knot q13 r8",
+    "R6 removes the zero-leaf pair without changing the marked determinant q13 r8",
+    "marked free puncture is retained outside the R6 pair q13 r8",
+    "coprimality gives odd surgery order with only the Wright exception q13 r8",
+    "Bezout monomials are actual unimodular coordinates q13 r8",
+    "all mixed principal parts have the exact m-contact differential q13 r8",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q13 r8",
+    "volume discrepancy reaches exactly one after m free blowups q13 r8",
+    "actual toric corner matrix is unimodular q21 r13",
+    "principal-divisor equations identify both whole arms q21 r13",
+    "actual opposite arm determinants are r and q q21 r13",
+    "closed end determinant is the surgery coefficient q21 r13",
+    "actual omitted meridian is primitive with cofactor n minus one q21 r13",
+    "closed regular fiber is m times the marked knot q21 r13",
+    "R6 removes the zero-leaf pair without changing the marked determinant q21 r13",
+    "marked free puncture is retained outside the R6 pair q21 r13",
+    "coprimality gives odd surgery order with only the Wright exception q21 r13",
+    "Bezout monomials are actual unimodular coordinates q21 r13",
+    "all mixed principal parts have the exact m-contact differential q21 r13",
+    "whole omitted-line final coordinate has a nonzero linear coefficient q21 r13",
+    "volume discrepancy reaches exactly one after m free blowups q21 r13",
+    "universal four-generator affine chart exponents are nonnegative q1 r2",
+    "actual source affine-ring localization recovers both nontrivial generators q1 r2",
+    "actual root boundary-ring localization recovers t and B q1 r2",
+    "all root chart opens cover by the same unit Bezout identity q1 r2",
+    "Euler contraction cancels every apparent boundary pole q1 r2",
+    "actual global Euler primitive differentiates to the full volume q1 r2",
+    "deck orbit on omitted components is free and source reflection is faithful q1 r2",
+    "universal four-generator affine chart exponents are nonnegative q3 r2",
+    "actual source affine-ring localization recovers both nontrivial generators q3 r2",
+    "actual root boundary-ring localization recovers t and B q3 r2",
+    "all root chart opens cover by the same unit Bezout identity q3 r2",
+    "Euler contraction cancels every apparent boundary pole q3 r2",
+    "actual global Euler primitive differentiates to the full volume q3 r2",
+    "deck orbit on omitted components is free and source reflection is faithful q3 r2",
+    "universal four-generator affine chart exponents are nonnegative q2 r3",
+    "actual source affine-ring localization recovers both nontrivial generators q2 r3",
+    "actual root boundary-ring localization recovers t and B q2 r3",
+    "all root chart opens cover by the same unit Bezout identity q2 r3",
+    "Euler contraction cancels every apparent boundary pole q2 r3",
+    "actual global Euler primitive differentiates to the full volume q2 r3",
+    "deck orbit on omitted components is free and source reflection is faithful q2 r3",
+    "universal four-generator affine chart exponents are nonnegative q4 r3",
+    "actual source affine-ring localization recovers both nontrivial generators q4 r3",
+    "actual root boundary-ring localization recovers t and B q4 r3",
+    "all root chart opens cover by the same unit Bezout identity q4 r3",
+    "Euler contraction cancels every apparent boundary pole q4 r3",
+    "actual global Euler primitive differentiates to the full volume q4 r3",
+    "deck orbit on omitted components is free and source reflection is faithful q4 r3",
+    "universal four-generator affine chart exponents are nonnegative q5 r4",
+    "actual source affine-ring localization recovers both nontrivial generators q5 r4",
+    "actual root boundary-ring localization recovers t and B q5 r4",
+    "all root chart opens cover by the same unit Bezout identity q5 r4",
+    "Euler contraction cancels every apparent boundary pole q5 r4",
+    "actual global Euler primitive differentiates to the full volume q5 r4",
+    "deck orbit on omitted components is free and source reflection is faithful q5 r4",
+    "universal four-generator affine chart exponents are nonnegative q5 r6",
+    "actual source affine-ring localization recovers both nontrivial generators q5 r6",
+    "actual root boundary-ring localization recovers t and B q5 r6",
+    "all root chart opens cover by the same unit Bezout identity q5 r6",
+    "Euler contraction cancels every apparent boundary pole q5 r6",
+    "actual global Euler primitive differentiates to the full volume q5 r6",
+    "deck orbit on omitted components is free and source reflection is faithful q5 r6",
+    "universal four-generator affine chart exponents are nonnegative q8 r5",
+    "actual source affine-ring localization recovers both nontrivial generators q8 r5",
+    "actual root boundary-ring localization recovers t and B q8 r5",
+    "all root chart opens cover by the same unit Bezout identity q8 r5",
+    "Euler contraction cancels every apparent boundary pole q8 r5",
+    "actual global Euler primitive differentiates to the full volume q8 r5",
+    "deck orbit on omitted components is free and source reflection is faithful q8 r5",
+    "unbounded surgery slope after the entire punctured free chain",
+    "unbounded Seifert Euler and determinant identity",
+    "successive marked cofactors differ by one",
+    "last surviving signed atoroidal case has only small homology (-1, -1)",
+    "last surviving signed atoroidal case has only small homology (-1, 1)",
+    "last surviving signed atoroidal case has only small homology (1, -1)",
+    "last surviving signed atoroidal case has only small homology (1, 1)",
+    "order-three sharpness control has full S4 and exact cable peripherals",
+    "order-three sharpness cover has both atoroidality types and a primitive knot",
+    "sharp arithmetic gap from the noncoprime region r2",
+    "sharp arithmetic gap from the noncoprime region r3",
+    "sharp arithmetic gap from the noncoprime region r4",
+    "sharp arithmetic gap from the noncoprime region r5",
+    "sharp arithmetic gap from the noncoprime region r6",
+    "sharp arithmetic gap from the noncoprime region r7",
+    "sharp arithmetic gap from the noncoprime region r8",
+    "sharp arithmetic gap from the noncoprime region r9",
+    "sharp arithmetic gap from the noncoprime region r10",
+    "sharp arithmetic gap from the noncoprime region r11",
+    "sharp arithmetic gap from the noncoprime region r12",
+    "sharp arithmetic gap from the noncoprime region r13",
+    "sharp arithmetic gap from the noncoprime region r14",
+    "sharp arithmetic gap from the noncoprime region r15",
+    "sharp arithmetic gap from the noncoprime region r16",
+    "sharp arithmetic gap from the noncoprime region r17",
+    "sharp arithmetic gap from the noncoprime region r18",
+    "sharp arithmetic gap from the noncoprime region r19",
+    "sharp arithmetic gap from the noncoprime region r20",
+    "sharp arithmetic gap from the noncoprime region r21",
+    "sharp arithmetic gap from the noncoprime region r22",
+    "sharp arithmetic gap from the noncoprime region r23",
+    "sharp arithmetic gap from the noncoprime region r24",
+    "sharp arithmetic gap from the noncoprime region r25",
+    "sharp arithmetic gap from the noncoprime region r26",
+    "sharp arithmetic gap from the noncoprime region r27",
+    "sharp arithmetic gap from the noncoprime region r28",
+    "sharp arithmetic gap from the noncoprime region r29",
+    "sharp arithmetic gap from the noncoprime region r30",
+    "exact first nonintegral reciprocal term r2 q4 j3",
+    "whole omitted variation has the required later contact r2 q4 j3",
+    "shifted toric discrepancy fixes the number of free blowups r2 q4 j3",
+    "shifted source surgery remains odd and above the sharp exception r2 q4 j3",
+    "integral-power shift keeps the actual internally attached deleted boundary r2 q4 j3",
+    "actual shifted full graph and reduced surgery graph agree r2 q4 j3",
+    "shifted whole marked puncture is primitive r2 q4 j3",
+    "exact first nonintegral reciprocal term r2 q4 j1",
+    "whole omitted variation has the required later contact r2 q4 j1",
+    "shifted toric discrepancy fixes the number of free blowups r2 q4 j1",
+    "shifted source surgery remains odd and above the sharp exception r2 q4 j1",
+    "integral-power shift keeps the actual internally attached deleted boundary r2 q4 j1",
+    "actual shifted full graph and reduced surgery graph agree r2 q4 j1",
+    "shifted whole marked puncture is primitive r2 q4 j1",
+    "exact first nonintegral reciprocal term r3 q6 j5",
+    "whole omitted variation has the required later contact r3 q6 j5",
+    "shifted toric discrepancy fixes the number of free blowups r3 q6 j5",
+    "shifted source surgery remains odd and above the sharp exception r3 q6 j5",
+    "integral-power shift keeps the actual internally attached deleted boundary r3 q6 j5",
+    "actual shifted full graph and reduced surgery graph agree r3 q6 j5",
+    "shifted whole marked puncture is primitive r3 q6 j5",
+    "exact first nonintegral reciprocal term r3 q6 j4",
+    "whole omitted variation has the required later contact r3 q6 j4",
+    "shifted toric discrepancy fixes the number of free blowups r3 q6 j4",
+    "shifted source surgery remains odd and above the sharp exception r3 q6 j4",
+    "integral-power shift keeps the actual internally attached deleted boundary r3 q6 j4",
+    "actual shifted full graph and reduced surgery graph agree r3 q6 j4",
+    "shifted whole marked puncture is primitive r3 q6 j4",
+    "exact first nonintegral reciprocal term r3 q6 j2",
+    "whole omitted variation has the required later contact r3 q6 j2",
+    "shifted toric discrepancy fixes the number of free blowups r3 q6 j2",
+    "shifted source surgery remains odd and above the sharp exception r3 q6 j2",
+    "integral-power shift keeps the actual internally attached deleted boundary r3 q6 j2",
+    "actual shifted full graph and reduced surgery graph agree r3 q6 j2",
+    "shifted whole marked puncture is primitive r3 q6 j2",
+    "exact first nonintegral reciprocal term r4 q8 j7",
+    "whole omitted variation has the required later contact r4 q8 j7",
+    "shifted toric discrepancy fixes the number of free blowups r4 q8 j7",
+    "shifted source surgery remains odd and above the sharp exception r4 q8 j7",
+    "integral-power shift keeps the actual internally attached deleted boundary r4 q8 j7",
+    "actual shifted full graph and reduced surgery graph agree r4 q8 j7",
+    "shifted whole marked puncture is primitive r4 q8 j7",
+    "exact first nonintegral reciprocal term r4 q8 j5",
+    "whole omitted variation has the required later contact r4 q8 j5",
+    "shifted toric discrepancy fixes the number of free blowups r4 q8 j5",
+    "shifted source surgery remains odd and above the sharp exception r4 q8 j5",
+    "integral-power shift keeps the actual internally attached deleted boundary r4 q8 j5",
+    "actual shifted full graph and reduced surgery graph agree r4 q8 j5",
+    "shifted whole marked puncture is primitive r4 q8 j5",
+    "exact first nonintegral reciprocal term r5 q10 j9",
+    "whole omitted variation has the required later contact r5 q10 j9",
+    "shifted toric discrepancy fixes the number of free blowups r5 q10 j9",
+    "shifted source surgery remains odd and above the sharp exception r5 q10 j9",
+    "integral-power shift keeps the actual internally attached deleted boundary r5 q10 j9",
+    "actual shifted full graph and reduced surgery graph agree r5 q10 j9",
+    "shifted whole marked puncture is primitive r5 q10 j9",
+    "exact first nonintegral reciprocal term r5 q10 j6",
+    "whole omitted variation has the required later contact r5 q10 j6",
+    "shifted toric discrepancy fixes the number of free blowups r5 q10 j6",
+    "shifted source surgery remains odd and above the sharp exception r5 q10 j6",
+    "integral-power shift keeps the actual internally attached deleted boundary r5 q10 j6",
+    "actual shifted full graph and reduced surgery graph agree r5 q10 j6",
+    "shifted whole marked puncture is primitive r5 q10 j6",
+    "exact first nonintegral reciprocal term r6 q12 j11",
+    "whole omitted variation has the required later contact r6 q12 j11",
+    "shifted toric discrepancy fixes the number of free blowups r6 q12 j11",
+    "shifted source surgery remains odd and above the sharp exception r6 q12 j11",
+    "integral-power shift keeps the actual internally attached deleted boundary r6 q12 j11",
+    "actual shifted full graph and reduced surgery graph agree r6 q12 j11",
+    "shifted whole marked puncture is primitive r6 q12 j11",
+    "prime r exhausts the leading-coprime or shifted-coprime cases r2",
+    "prime r exhausts the leading-coprime or shifted-coprime cases r3",
+    "prime r exhausts the leading-coprime or shifted-coprime cases r5",
+    "prime r exhausts the leading-coprime or shifted-coprime cases r7",
+    "prime r exhausts the leading-coprime or shifted-coprime cases r11",
+    "prime r exhausts the leading-coprime or shifted-coprime cases r13",
+    "the composite remaining first-break condition can genuinely differ"
+  ],
+  "scope": "all existing coprime pole/order regular-coordinate models, plus the shifted one-characteristic-pair sector including every prime boundary order; K=R and one omitted A1; quartic targets excluded",
+  "compactification": {
+    "all_lower_Laurent_coefficients_retained": true,
+    "toric_ray": "(q,r)",
+    "free_blowups": "m=q-r+2",
+    "full_omitted_line_checked": true,
+    "final_coordinate": "T=psi_m+r*c_q^(r-1-A*m)*t on R",
+    "arithmetic_control_is_not_unbounded_proof": true
+  },
+  "end": {
+    "surgery": "n=qr+q-r+2 surgery on T(q,r)",
+    "H1": "Z/n",
+    "marked_knot": "surgery dual",
+    "marked_class_primitive": true,
+    "closed_Seifert_orders": [
+      "q",
+      "r",
+      "q-r+2"
+    ],
+    "Euler_absolute": "1/(qr)+1/(q-r+2)",
+    "marked_exterior": "T(q,r) knot exterior",
+    "closed_source_atoroidal": true,
+    "marked_exterior_atoroidal": true,
+    "central_fiber_multiple": "m*[k], 1<=m<n",
+    "radial_irreducibility_from_nontrivial_center": true,
+    "actual_radial_pair_recognized_via_peripheral_Waldhausen": true,
+    "group_only_closed_Seifert_classification_assumed": false
+  },
+  "strengthened_topology": {
+    "closed_source_hypothesis": "irreducible and atoroidal",
+    "source_lens_required": false,
+    "source_H1": "Z/n, n>3 odd",
+    "full_S4": true,
+    "simple_branch": true,
+    "identity_longitude": true,
+    "primitive_ramification": true,
+    "atoroidal_ramification_exterior": true,
+    "such_cover_excluded": true,
+    "unchanged_exhaustive_permutation_layer": true,
+    "repeated_cone_quotient_all_fillings": true,
+    "replacement_homology_preserved_without_distance_one_assumption": true,
+    "last_trefoil_cases_H1_orders": [
+      1,
+      3
+    ]
+  },
+  "single_characteristic_extension": {
+    "integral_power_removal_written": true,
+    "first_nondivisible_reciprocal_exponent": "beta=2q-j",
+    "free_blowups": "k=j-r+2",
+    "surgery": "N=r*beta+k",
+    "all_lower_terms_retained": true,
+    "original_deleted_boundary_attachment_tracked": true,
+    "all_prime_boundary_orders_quartic_excluded": true,
+    "all_single_characteristic_quartic_models_excluded": true,
+    "remaining_boundary_order": "r composite, r>=4",
+    "remaining_translation_zero_order_at_least": 2,
+    "remaining_reference_germ": "at least two characteristic pairs",
+    "if_r_divides_q_requires": "gcd(r,largest_nondivisible_support)>1",
+    "exact_shifted_controls": [
+      {
+        "r": 2,
+        "q": 4,
+        "largest_nondivisible_support": 3,
+        "torus_orders": [
+          2,
+          5
+        ],
+        "free_blowups": 3,
+        "surgery": 13
+      },
+      {
+        "r": 2,
+        "q": 4,
+        "largest_nondivisible_support": 1,
+        "torus_orders": [
+          2,
+          7
+        ],
+        "free_blowups": 1,
+        "surgery": 15
+      },
+      {
+        "r": 3,
+        "q": 6,
+        "largest_nondivisible_support": 5,
+        "torus_orders": [
+          3,
+          7
+        ],
+        "free_blowups": 4,
+        "surgery": 25
+      },
+      {
+        "r": 3,
+        "q": 6,
+        "largest_nondivisible_support": 4,
+        "torus_orders": [
+          3,
+          8
+        ],
+        "free_blowups": 3,
+        "surgery": 27
+      },
+      {
+        "r": 3,
+        "q": 6,
+        "largest_nondivisible_support": 2,
+        "torus_orders": [
+          3,
+          10
+        ],
+        "free_blowups": 1,
+        "surgery": 31
+      },
+      {
+        "r": 4,
+        "q": 8,
+        "largest_nondivisible_support": 7,
+        "torus_orders": [
+          4,
+          9
+        ],
+        "free_blowups": 5,
+        "surgery": 41
+      },
+      {
+        "r": 4,
+        "q": 8,
+        "largest_nondivisible_support": 5,
+        "torus_orders": [
+          4,
+          11
+        ],
+        "free_blowups": 3,
+        "surgery": 47
+      },
+      {
+        "r": 5,
+        "q": 10,
+        "largest_nondivisible_support": 9,
+        "torus_orders": [
+          5,
+          11
+        ],
+        "free_blowups": 6,
+        "surgery": 61
+      },
+      {
+        "r": 5,
+        "q": 10,
+        "largest_nondivisible_support": 6,
+        "torus_orders": [
+          5,
+          14
+        ],
+        "free_blowups": 3,
+        "surgery": 73
+      },
+      {
+        "r": 6,
+        "q": 12,
+        "largest_nondivisible_support": 11,
+        "torus_orders": [
+          6,
+          13
+        ],
+        "free_blowups": 7,
+        "surgery": 85
+      }
+    ],
+    "prime_support_controls": 187
+  },
+  "consequences": {
+    "whole_coprime_quartic_sector_excluded": true,
+    "all_q_r_all_Laurent_parts": true,
+    "remaining_quartic_regular_region": "r composite, q>r, gcd(q,r)>1",
+    "sharpened_minimum_pole": "q>=r+smallest_prime_divisor(r)",
+    "minimum_gap": 2,
+    "prime_r_requires": "q>=2r",
+    "all_degree_torus_infinity_excluded": true,
+    "all_degree_prime_boundary_degree_excluded": true,
+    "all_finite_degrees_excluded": false
+  },
+  "affine_controls": {
+    "entire_monomial_coprime_family_constructed": true,
+    "four_generator_root_ring": "C[z,v,v*f/z^m,v*f^k/z^q], f=v^r-1, k=ceil(q/m)",
+    "smooth_affine_quotient": true,
+    "global_regular_primitive": "(-q*x dy-r*y dx)/(r-q)",
+    "no_target_equivariance_assumed": true,
+    "controls": [
+      {
+        "q": 1,
+        "r": 2,
+        "m": 1,
+        "k": 1,
+        "regular_primitive": "(-q*x dy-r*y dx)/(r-q)",
+        "finite_Keller_target_constructed": false
+      },
+      {
+        "q": 3,
+        "r": 2,
+        "m": 3,
+        "k": 1,
+        "regular_primitive": "(-q*x dy-r*y dx)/(r-q)",
+        "finite_Keller_target_constructed": false
+      },
+      {
+        "q": 2,
+        "r": 3,
+        "m": 1,
+        "k": 2,
+        "regular_primitive": "(-q*x dy-r*y dx)/(r-q)",
+        "finite_Keller_target_constructed": false
+      },
+      {
+        "q": 4,
+        "r": 3,
+        "m": 3,
+        "k": 2,
+        "regular_primitive": "(-q*x dy-r*y dx)/(r-q)",
+        "finite_Keller_target_constructed": false
+      },
+      {
+        "q": 5,
+        "r": 4,
+        "m": 3,
+        "k": 2,
+        "regular_primitive": "(-q*x dy-r*y dx)/(r-q)",
+        "finite_Keller_target_constructed": false
+      },
+      {
+        "q": 5,
+        "r": 6,
+        "m": 1,
+        "k": 5,
+        "regular_primitive": "(-q*x dy-r*y dx)/(r-q)",
+        "finite_Keller_target_constructed": false
+      },
+      {
+        "q": 8,
+        "r": 5,
+        "m": 5,
+        "k": 2,
+        "regular_primitive": "(-q*x dy-r*y dx)/(r-q)",
+        "finite_Keller_target_constructed": false
+      }
+    ],
+    "finite_Keller_map_constructed": false
+  },
+  "sharpness_control": {
+    "actual_topological_cover": true,
+    "target": "(3,8)-cable of positive trefoil",
+    "source_Seifert_orders": [
+      2,
+      3,
+      3
+    ],
+    "source_H1_order": 3,
+    "primitive_ramification_class": 2,
+    "closed_source_atoroidal": true,
+    "marked_exterior": "trefoil exterior",
+    "marked_exterior_atoroidal": true,
+    "source_lens": false,
+    "polynomial_infinity_realization_claimed": false,
+    "finite_Keller_map_constructed": false
+  },
+  "controls": {
+    "graphs": [
+      {
+        "q": 1,
+        "r": 2,
+        "m": 1,
+        "n": 3,
+        "toric_blowups": 2,
+        "closed_cones": [
+          1,
+          2,
+          1
+        ],
+        "marked_cofactor": 2,
+        "regular_fiber_multiple": 1,
+        "surgery": [
+          3,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 2,
+        "r": 3,
+        "m": 1,
+        "n": 7,
+        "toric_blowups": 3,
+        "closed_cones": [
+          2,
+          3,
+          1
+        ],
+        "marked_cofactor": 6,
+        "regular_fiber_multiple": 1,
+        "surgery": [
+          7,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 3,
+        "r": 2,
+        "m": 3,
+        "n": 9,
+        "toric_blowups": 3,
+        "closed_cones": [
+          3,
+          2,
+          3
+        ],
+        "marked_cofactor": 8,
+        "regular_fiber_multiple": 3,
+        "surgery": [
+          9,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 4,
+        "r": 3,
+        "m": 3,
+        "n": 15,
+        "toric_blowups": 4,
+        "closed_cones": [
+          4,
+          3,
+          3
+        ],
+        "marked_cofactor": 14,
+        "regular_fiber_multiple": 3,
+        "surgery": [
+          15,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 5,
+        "r": 2,
+        "m": 5,
+        "n": 15,
+        "toric_blowups": 4,
+        "closed_cones": [
+          5,
+          2,
+          5
+        ],
+        "marked_cofactor": 14,
+        "regular_fiber_multiple": 5,
+        "surgery": [
+          15,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 5,
+        "r": 3,
+        "m": 4,
+        "n": 19,
+        "toric_blowups": 4,
+        "closed_cones": [
+          5,
+          3,
+          4
+        ],
+        "marked_cofactor": 18,
+        "regular_fiber_multiple": 4,
+        "surgery": [
+          19,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 5,
+        "r": 4,
+        "m": 3,
+        "n": 23,
+        "toric_blowups": 5,
+        "closed_cones": [
+          5,
+          4,
+          3
+        ],
+        "marked_cofactor": 22,
+        "regular_fiber_multiple": 3,
+        "surgery": [
+          23,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 5,
+        "r": 6,
+        "m": 1,
+        "n": 31,
+        "toric_blowups": 6,
+        "closed_cones": [
+          5,
+          6,
+          1
+        ],
+        "marked_cofactor": 30,
+        "regular_fiber_multiple": 1,
+        "surgery": [
+          31,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 6,
+        "r": 5,
+        "m": 3,
+        "n": 33,
+        "toric_blowups": 6,
+        "closed_cones": [
+          6,
+          5,
+          3
+        ],
+        "marked_cofactor": 32,
+        "regular_fiber_multiple": 3,
+        "surgery": [
+          33,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 7,
+        "r": 3,
+        "m": 6,
+        "n": 27,
+        "toric_blowups": 5,
+        "closed_cones": [
+          7,
+          3,
+          6
+        ],
+        "marked_cofactor": 26,
+        "regular_fiber_multiple": 6,
+        "surgery": [
+          27,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 7,
+        "r": 4,
+        "m": 5,
+        "n": 33,
+        "toric_blowups": 5,
+        "closed_cones": [
+          7,
+          4,
+          5
+        ],
+        "marked_cofactor": 32,
+        "regular_fiber_multiple": 5,
+        "surgery": [
+          33,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 8,
+        "r": 3,
+        "m": 7,
+        "n": 31,
+        "toric_blowups": 5,
+        "closed_cones": [
+          8,
+          3,
+          7
+        ],
+        "marked_cofactor": 30,
+        "regular_fiber_multiple": 7,
+        "surgery": [
+          31,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 8,
+        "r": 5,
+        "m": 5,
+        "n": 45,
+        "toric_blowups": 5,
+        "closed_cones": [
+          8,
+          5,
+          5
+        ],
+        "marked_cofactor": 44,
+        "regular_fiber_multiple": 5,
+        "surgery": [
+          45,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 8,
+        "r": 7,
+        "m": 3,
+        "n": 59,
+        "toric_blowups": 8,
+        "closed_cones": [
+          8,
+          7,
+          3
+        ],
+        "marked_cofactor": 58,
+        "regular_fiber_multiple": 3,
+        "surgery": [
+          59,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 9,
+        "r": 4,
+        "m": 7,
+        "n": 43,
+        "toric_blowups": 6,
+        "closed_cones": [
+          9,
+          4,
+          7
+        ],
+        "marked_cofactor": 42,
+        "regular_fiber_multiple": 7,
+        "surgery": [
+          43,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 11,
+        "r": 5,
+        "m": 8,
+        "n": 63,
+        "toric_blowups": 7,
+        "closed_cones": [
+          11,
+          5,
+          8
+        ],
+        "marked_cofactor": 62,
+        "regular_fiber_multiple": 8,
+        "surgery": [
+          63,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 13,
+        "r": 8,
+        "m": 7,
+        "n": 111,
+        "toric_blowups": 6,
+        "closed_cones": [
+          13,
+          8,
+          7
+        ],
+        "marked_cofactor": 110,
+        "regular_fiber_multiple": 7,
+        "surgery": [
+          111,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      },
+      {
+        "q": 21,
+        "r": 13,
+        "m": 10,
+        "n": 283,
+        "toric_blowups": 7,
+        "closed_cones": [
+          21,
+          13,
+          10
+        ],
+        "marked_cofactor": 282,
+        "regular_fiber_multiple": 10,
+        "surgery": [
+          283,
+          1
+        ],
+        "source_and_marked_exterior_atoroidal": true
+      }
+    ],
+    "signed_last_cases": [
+      {
+        "epsilon": -1,
+        "delta": -1,
+        "cable_slope": -8,
+        "source_H1_order": 3
+      },
+      {
+        "epsilon": -1,
+        "delta": 1,
+        "cable_slope": -4,
+        "source_H1_order": 1
+      },
+      {
+        "epsilon": 1,
+        "delta": -1,
+        "cable_slope": 4,
+        "source_H1_order": 1
+      },
+      {
+        "epsilon": 1,
+        "delta": 1,
+        "cable_slope": 8,
+        "source_H1_order": 3
+      }
+    ],
+    "arithmetic_gaps": [
+      {
+        "r": 2,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 4,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 3,
+        "smallest_prime": 3,
+        "minimum_remaining_pole": 6,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 4,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 6,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 5,
+        "smallest_prime": 5,
+        "minimum_remaining_pole": 10,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 6,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 8,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 7,
+        "smallest_prime": 7,
+        "minimum_remaining_pole": 14,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 8,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 10,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 9,
+        "smallest_prime": 3,
+        "minimum_remaining_pole": 12,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 10,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 12,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 11,
+        "smallest_prime": 11,
+        "minimum_remaining_pole": 22,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 12,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 14,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 13,
+        "smallest_prime": 13,
+        "minimum_remaining_pole": 26,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 14,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 16,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 15,
+        "smallest_prime": 3,
+        "minimum_remaining_pole": 18,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 16,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 18,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 17,
+        "smallest_prime": 17,
+        "minimum_remaining_pole": 34,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 18,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 20,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 19,
+        "smallest_prime": 19,
+        "minimum_remaining_pole": 38,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 20,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 22,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 21,
+        "smallest_prime": 3,
+        "minimum_remaining_pole": 24,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 22,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 24,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 23,
+        "smallest_prime": 23,
+        "minimum_remaining_pole": 46,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 24,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 26,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 25,
+        "smallest_prime": 5,
+        "minimum_remaining_pole": 30,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 26,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 28,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 27,
+        "smallest_prime": 3,
+        "minimum_remaining_pole": 30,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 28,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 30,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 29,
+        "smallest_prime": 29,
+        "minimum_remaining_pole": 58,
+        "prime_r_forces_double_pole": true
+      },
+      {
+        "r": 30,
+        "smallest_prime": 2,
+        "minimum_remaining_pole": 32,
+        "prime_r_forces_double_pole": true
+      }
+    ]
+  },
+  "assurance": {
+    "all_parameter_and_all_depth_proofs_written": true,
+    "primary_closed_horizontal_surface_criterion_visually_checked": true,
+    "primary_imports_explicit": true,
+    "actual_peripheral_data_tracked": true,
+    "finite_controls_not_full_geometric_proof": true,
+    "affine_converse_for_arbitrary_Laurent_data": false,
+    "noncoprime_regular_sector_excluded": false,
+    "no_regular_coordinate_case_excluded": false,
+    "extra_omitted_primes_excluded": false,
+    "arbitrary_quartic_packets_excluded": false,
+    "all_finite_Wright_degrees_excluded": false,
+    "finite_Keller_map_constructed": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_coprime_regular_end.py": "98591622e4170c376cc1dcd8d4122cc8d8eda910baee6cb8846ac78eda6df206",
+    "COPRIME_REGULAR_END_AND_EXCLUSION.md": "6a3e0fa6394c51b4939fc5bf24149c602ad8e58806453ffa4d481f3502c6167d",
+    "sources/coprime-regular-end/manifest.json": "f3955fe3a27e40a686461e0b32817d6e92868dfe15a96e77cf0234613f049640",
+    "sources/borderline-regular-end/waldhausen-1968.pdf": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+    "sources/regular-sector-end/neumann-plumbing-1981.pdf": "61a02e73da4a47216f39dceb22887b2bd3d584ba2418049458d90b3dedd1657b",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/torus-infinity/scott-geometries.pdf": "a95c7eaf766544642fbe1ba3dd41734a5832794ec75c17781cd83a87b1121603",
+    "sources/quartic-cabling/ito-cable-slopes.pdf": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+    "sources/quartic-cabling/neumann-norbury-orevkov.pdf": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+    "sources/quartic-cabling/perelman-finite-extinction.pdf": "460606386f35a6b719970471a94452ecea7769e8c2caeff8820b8a483aebe0c6",
+    "borderline_regular_end_receipt.json": "9d4994fee1ef4d6662763c1fcc142808f91c90738410cf32cf272d8e870cac47",
+    "higher_regular_coordinate_receipt.json": "38dddf1b8eeec5289e0201cecd355abea874c987e14e0072cfd3c55b777b5af3",
+    "regular_sector_end_receipt.json": "fce0acc05af98d2e9c087da57ed1d143ac765618c0df349788b2ee340fa14556",
+    "quartic_cabling_receipt.json": "efd337ad1e20f2dc40073f82dcf5620c823c495bd407cf82864278c2a47851ac",
+    "torus_infinity_receipt.json": "4f281288978e2c1538345d50b2b10a4af3ba77953fee958b69fd7cb84465d94b",
+    "intrinsic_normalization_receipt.json": "274dd529b155071dc62993e9ab56c4481e7e42b56e5ebfe9d6729a18ba75321d"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

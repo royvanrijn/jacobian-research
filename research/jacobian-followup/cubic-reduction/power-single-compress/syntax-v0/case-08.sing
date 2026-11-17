@@ -1,0 +1,26 @@
+ring r=0,(u1,u2,u3,u4),dp;
+option(redSB);
+ideal I=u1*u2*u3,u1*u2*u4,u1*u3*u4,u3^2*u4 - u3*u4^2,u2^2*u4 - u2*u4^2,u2^2*u3 - u2*u3^2,u1^2*u3,u1^3 + u1^2*u2 + u1^2*u3/3 - u1*u4^2,u1^2*u3 + 3*u1*u3^2,u1^2*u2 + u1*u2^2;
+ideal J; ideal G;
+J=I,-3*u1^2*u3/2 - 1,-3*u1^2*u3/2 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:77:78");}else{print("OPEN:77:78");print(G);}
+J=I,u2^2*u4 - u2*u3*u4 - 1,u2^2*u3 - u2*u3*u4 - 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:23:24");}else{print("OPEN:23:24");print(G);}
+J=I,u2^2*u4 - u2*u3*u4 - 1,u2*u3*u4 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:23:25");}else{print("OPEN:23:25");print(G);}
+J=I,u2^2*u3 - u2*u3*u4 - 1,u2*u3*u4 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:24:25");}else{print("OPEN:24:25");print(G);}
+J=I,-u2^2*u3 + u2*u3*u4 + u3^3 - u3^2*u4 - 1,-u2*u3*u4 + u3^2*u4 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:20:21");}else{print("OPEN:20:21");print(G);}
+J=I,-u1^2*u3 - 1,-u1^2*u3 - 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:73:76");}else{print("OPEN:73:76");print(G);}
+J=I,-2*u1^2*u3/3 - 1,-u1^2*u2 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:51:80");}else{print("OPEN:51:80");print(G);}
+quit;

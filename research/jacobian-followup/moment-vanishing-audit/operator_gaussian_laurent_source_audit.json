@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/CONSTANT_COEFFICIENT_OPERATOR_DECISION.md",
+  "canonical_proof_sha256": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+  "claims": [
+    "GVCEXACTENC20261115",
+    "GVCPUREIDEAL20261115",
+    "GVCPOINTDECIDE20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_operator_gaussian_laurent.py",
+  "checker_sha256": "ad17862941f4bca60bcaa9975504898cfd5f79ac9b3583791cd6c1325a74dc04",
+  "receipt": "jacobian-followup/moment-vanishing-audit/operator_gaussian_laurent_verification.json",
+  "receipt_sha256": "6acd4e2991a9767569d2c15e033d713d085efd96f709d456e22501fb5096a583",
+  "prior_frontier": "jacobian-followup/moment-vanishing-audit/operator_gaussian_laurent_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "RESONANT_MULTIPLIERS_AND_UNIFORM_CHARTS.md": "0f1e12d909e2c916e7c49c92865e3ac37b0178ff6add865b34cd9f33fddb509e",
+    "resonant_multiplier_source_audit.json": "5e81dcedc21eeae300859ac92da3c184fa5ed3b2e44617ee8cfabf8e083ea9f1",
+    "LINEAR_MIXED_CUTOFF_FROM_B_FUNCTION.md": "9c5842fe7f67dadc417b6c259f981caed14fc3d44f47401f572d49bcfc433ad1",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "GENERIC_POINT_FINITE_MOMENT_ALGORITHM.md": "3529684d1c4b173beb6b3ee9f2dc6cc580dbec3f4fb0c1785e5b8848eac26900",
+    "GAUSSIAN_SHEAR_NORMAL_FORM_AND_TRANSFERS.md": "20043bb3f092918fa8b1d6a55c8c5d03cc9fa9c403683cf1c66a7ab1e40388cb",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989"
+  },
+  "retained_frontier_hashes": {
+    "archive/non-elliptic/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "archive/non-elliptic/extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md": "6a9f9186d130dcdf5653a105aea1e2119110aebd80cf887243baf10bbf803994",
+    "archive/non-elliptic/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md": "5fff1bb5aae08c4bb968d7b4945086944d698a54fcc7bd08c8f9fdcd014b474f"
+  },
+  "software": "SymPy1.14.0;general localized D-module solver not implemented or executed",
+  "primary_scope_audit": [
+    {
+      "url": "https://arxiv.org/html/1609.04676v1",
+      "paper": "Oaku,Localization,local cohomology,and the b-function of a D-module with respect to a polynomial,v1,15September2016",
+      "read": "Introduction,section1 theorem1.3/finite-generation discussion;section2 theorems2.11--2.14/proofs and following integration/localization algorithm passage",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/oaku_localization_1609_04676v1.html",
+      "sha256": "5e9a8dd88c7e7e6fa6aec5e5194cde496dcc48737b4d580ce588d4dec00e1b65",
+      "imported_fact": "Localization of a module holonomic off a hypersurface has an effective finite holonomic presentation;localization removes boundary-supported garbage",
+      "boundary": "Classical algebraic localization only;producer code not executed,no positive GVC transfer"
+    },
+    {
+      "url": "https://www.lab.twcu.ac.jp/oaku/Oaku2013.pdf",
+      "paper": "Oaku integration author preprint,front matter2May2012",
+      "read": "Previously retained full integration-module/generator construction",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/oaku_integration_author_preprint.pdf",
+      "sha256": "1d28e3f8e19070a2e3883f54b48d2acb4e916f482cb2740f84063b532bf8664a",
+      "use": "Holonomic algebraic integration and finite generators;formal Gaussian/residue identities establish evaluation"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.27279",
+      "version_url": "https://arxiv.org/html/2607.27279v1",
+      "paper": "Belitskii--Boix--Kerner,When does a derivation of a ring admit the exponential?",
+      "version": "v1,metadata29July2026;HTML body date24August2026 retained as mismatch",
+      "read": "Introduction1.1--1.3,selected result statements,section2.3 definitions",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/belitskii_boix_kerner_2607_27279v1.html",
+      "sha256": "986cad9803eed90af9caa132304d564ba8538068c18117b0df66deee4f8b5066",
+      "use": "Scope boundary for exponentiating derivations and power-series ring preservation",
+      "boundary": "Constant-coefficient higher-order Lambda need not be a derivation;no unrestricted holonomic exponential-closure theorem imported"
+    },
+    {
+      "url": "https://arxiv.org/abs/0704.1691",
+      "version_url": "https://arxiv.org/html/0704.1691v2",
+      "paper": "Zhao,A Vanishing Conjecture on Differential Operators with Constant Coefficients",
+      "version": "Latest listedv2,28October2007;HTML body prints24August2026 and is not treated as a new revision",
+      "read": "Introduction definitions,nilpotence criterion and order-two/Hessian distinctions",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/zhao_vanishing_0704_1691v2.html",
+      "sha256": "08057bc724d88ca7f61d52661ac83f13fcf120f9e98a17a5c60fefcfc914bef3",
+      "use": "Operator-order/quantifier discipline;old open statements do not override retained current counterexamples",
+      "boundary": "No new positive vanishing or Jacobian theorem imported"
+    }
+  ],
+  "encoding": {
+    "contraction": "E lambda(Z)^k Q(x+W)P(x+W)^m=Lambda^k(QP^m)(x)",
+    "series": "H_Q=sum Lambda^m(QP^m)u^m/(m!)^2",
+    "period": "CT_v E Q(x+W)exp(v lambda(Z)+uP(x+W)/v)",
+    "coefficient_finiteness": "An amplitude u^h v^r selects ell=m-h,k=ell-r;one finite contraction",
+    "measure": "dv/v;connection coefficient includes-1/v",
+    "localization": "v inverted before full integration-module generation",
+    "output_variables": "Originalx retained as independent transcendental parameters;not specialized to0",
+    "analytic_integral_used": false,
+    "constant_coefficients_required": true
+  },
+  "pure_ideal_construction": {
+    "input": "Every fixed n,symbol-order boundr,polynomial-degree boundD,or specified polynomial parameter family",
+    "oracle": "Full primary decomposition,injective finite algebra,extend scalar field by independentx;zero test H1-1",
+    "violation": "A detected output polynomial outsideJ[x] yields a concrete coefficient outsideJ",
+    "termination": "Strict ordinary coefficient-ideal ascent with ACC",
+    "output": "Full ordinary coefficient ideal,finite sufficient m-prefix and its least value",
+    "embedded_nilpotents_retained": true,
+    "nonreduced_parameter_families": true,
+    "specific_large_ideal_computed": false
+  },
+  "all_multiplier_decision": {
+    "module": "Full localized/integrated polynomial time-Weyl module overK(x)",
+    "atom": "u^h v^r Z^a W^b",
+    "candidate_original_markers": "U^j P(U)^max(r,0),j<=b",
+    "positive_shift": "Absorb fixedP^r into the multiplier,with indexn=m-r",
+    "negative_shift": "Apply fixedextraLambda^(-r) to an eventually zero original sequence",
+    "derivatives": "Additional constant-coefficient derivatives preserve polynomial zero",
+    "criterion": "All candidate marked diagonal series polynomial iff every original multiplier eventually vanishes",
+    "witness_degree_bound": "max_atoms |b|+max(r,0)degP;least witness degree by finite monomial testing",
+    "arbitrary_complex_multipliers_after_embedding": true
+  },
+  "operator_boundary": {
+    "original_order_preserved": true,
+    "original_variable_count_preserved": true,
+    "positive_GVC_claimed": false,
+    "ordinary_Laplacian_compression_claimed": false,
+    "Delta_powers_1_through_5_settled": false,
+    "variable_coefficient_extension_claimed": false,
+    "coefficient_locus_classification_claimed": false
+  },
+  "small_replay": {
+    "completed": true,
+    "diagonal_contraction_checks": 8,
+    "formal_total_derivative_and_time_checks": 96,
+    "shifted_amplitude_checks": 80,
+    "logarithmic_measure_omission_detected": true,
+    "origin_specialization_shortcut_detected": true,
+    "variable_coefficient_symbol_shortcut_detected": true,
+    "nilpotent_coefficient_control": "a mod(a^2) is nonzero",
+    "linear_operator_family_ideal": "(a),least pure prefix1",
+    "retained_Dvorsky_order": 3,
+    "retained_Dvorsky_variables": 5,
+    "retained_Dvorsky_normalized_checks": [
+      {
+        "m": 1,
+        "normalized_coefficient": "C + 2*T"
+      },
+      {
+        "m": 2,
+        "normalized_coefficient": "-6*T"
+      },
+      {
+        "m": 3,
+        "normalized_coefficient": "24*T"
+      }
+    ],
+    "general_D_module_solver_implemented": false,
+    "general_D_module_solver_executed": false,
+    "universal_termination_proof_certified_by_checker": false,
+    "new_lower_order_GVC_witness_computed": false,
+    "operator_order_reduced": false,
+    "producer_package_executed": false,
+    "new_cubic_prefix_computed": false,
+    "independent_replay": false,
+    "external_review": false,
+    "formal_verification": false,
+    "checker_sha256": "ad17862941f4bca60bcaa9975504898cfd5f79ac9b3583791cd6c1325a74dc04"
+  },
+  "new_external_theorem_imported": true,
+  "external_input": "Effective holonomic localization (Oaku2016),with previously imported algebraic integration",
+  "fresh_exhaustive_literature_coverage": false,
+  "producer_package_executed": false,
+  "numeric_frontier_changed": false,
+  "new_cubic_prefix_computed": false,
+  "general_D_module_solver_implemented": false,
+  "general_D_module_solver_executed": false,
+  "universal_termination_proof_certified_by_checker": false,
+  "new_lower_order_GVC_witness_computed": false,
+  "operator_order_reduced": false,
+  "analytic_contour_input_used": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Independent review of the formal Gaussian--Laurent encoding,shift transfer and primary coefficient-ideal oracle",
+    "General localization/integration/pointwise solver not implemented or executed",
+    "GVC lower-power witness classification,ordinary-Laplacian compression and coefficient geometry remain open",
+    "Uniform Gaussian charts,full-image kernel/pole/irregular geometry,normalized G and older analytic review remain open"
+  ]
+}

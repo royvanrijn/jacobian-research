@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-16",
+  "status": "pass",
+  "checks": {
+    "perturbation_multiplier": 6,
+    "inverse_factorial": 35,
+    "inverse_simplex": 35,
+    "sharp_root_unity_gap": 2,
+    "one_critical_value_inverse": 3,
+    "one_critical_value_binomial": 3,
+    "gamma_gaussian_markers": 24,
+    "arbitrary_gaussian_monomial": 24,
+    "inhomogeneous_simplex": 4,
+    "positive_characteristic_boundary": 3,
+    "retained_image_pure": 4,
+    "retained_image_marker": 4,
+    "existing_producer_schema": 1,
+    "existing_producer_number_field": 1,
+    "reject_inexact_or_unrepresented_field": 3
+  },
+  "total": 152,
+  "scope": "Finite exact bridge, inverse-index, perturbation-algebra and adapter checks. Universal rigidity uses the written complex-analytic proof.",
+  "files": {
+    "verify_bridges.py": "74f7aff43d7f8e3c42ef97c4f01baac49af5304f483b2dd72838373baa322e4c",
+    "moment_bridges.py": "7e419cc3451442f52d97ce68de560b133ee0465f0f0285c9a8040efa25e5e6ed",
+    "RIGIDITY_CRITICAL_VALUES.tex": "8a2b6faa7996398d8c0474b34550a56cab6a771436a49fb2d3dff7a393e9c4dd"
+  },
+  "analytic_theorem_formally_verified": false,
+  "independent_replay": false,
+  "external_review": false
+}

@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-16",
+  "status": "exact_controls_pass",
+  "scope": "Finite exact Dirichlet/Gamma monomial formulas compared independently to expanded Gaussian Wick moments; universal result rests on written proof.",
+  "controls": [
+    {
+      "block_sizes": [
+        1,
+        2
+      ],
+      "dirichlet_parameters": [
+        "1/2",
+        "1"
+      ],
+      "exact_independent_identities": 24
+    },
+    {
+      "block_sizes": [
+        1,
+        2,
+        3
+      ],
+      "dirichlet_parameters": [
+        "1/2",
+        "1",
+        "3/2"
+      ],
+      "exact_independent_identities": 32
+    },
+    {
+      "block_sizes": [
+        2,
+        2,
+        2
+      ],
+      "dirichlet_parameters": [
+        "1",
+        "1",
+        "1"
+      ],
+      "exact_independent_identities": 32
+    }
+  ],
+  "total_exact_identities": 88,
+  "proof_sha256": "d145151a42aad77c435ae8177990099dcc6085a4227e609f236424f9074d4308",
+  "checker_sha256": "7c15d53a220265bfb6561c23a0e10f76859f65c2d9bdadce8eaed6884395be6b",
+  "registry_promoted": false,
+  "new_agent_messages": 0,
+  "novelty_claim": false,
+  "formal_verification": false,
+  "external_review": false,
+  "latex_issues": []
+}

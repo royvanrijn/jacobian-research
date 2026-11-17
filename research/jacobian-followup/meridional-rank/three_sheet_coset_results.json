@@ -1,0 +1,263 @@
+{
+  "status": "COMPLETE",
+  "sympy_version": "1.14.0",
+  "results": [
+    {
+      "name": "13a_3145",
+      "status": "CAPPED_INCOMPLETE",
+      "reason": "the coset enumeration has defined more than 5000 cosets. Try with a greater value max number of cosets "
+    },
+    {
+      "name": "13a_3147",
+      "status": "CAPPED_INCOMPLETE",
+      "reason": "the coset enumeration has defined more than 5000 cosets. Try with a greater value max number of cosets "
+    },
+    {
+      "name": "13a_3148",
+      "status": "CAPPED_INCOMPLETE",
+      "reason": "the coset enumeration has defined more than 5000 cosets. Try with a greater value max number of cosets "
+    },
+    {
+      "name": "13a_3149",
+      "status": "CAPPED_INCOMPLETE",
+      "reason": "the coset enumeration has defined more than 5000 cosets. Try with a greater value max number of cosets "
+    },
+    {
+      "name": "13a_3291",
+      "status": "CYCLIC_IMAGE_ONLY",
+      "degree": 2,
+      "original_generator_permutations": {
+        "11": [
+          0,
+          1
+        ],
+        "12": [
+          1,
+          0
+        ],
+        "10": [
+          1,
+          0
+        ],
+        "8": [
+          1,
+          0
+        ],
+        "9": [
+          1,
+          0
+        ],
+        "5": [
+          0,
+          1
+        ],
+        "7": [
+          1,
+          0
+        ],
+        "6": [
+          1,
+          0
+        ],
+        "4": [
+          0,
+          1
+        ],
+        "13": [
+          1,
+          0
+        ],
+        "3": [
+          0,
+          1
+        ]
+      },
+      "coset_table": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "scope": "An actual source-group cyclicity/order claim is not accepted from this action alone."
+    },
+    {
+      "name": "13a_3346",
+      "status": "CYCLIC_IMAGE_ONLY",
+      "degree": 2,
+      "original_generator_permutations": {
+        "10": [
+          1,
+          0
+        ],
+        "11": [
+          0,
+          1
+        ],
+        "12": [
+          1,
+          0
+        ],
+        "8": [
+          1,
+          0
+        ],
+        "9": [
+          1,
+          0
+        ],
+        "5": [
+          0,
+          1
+        ],
+        "6": [
+          1,
+          0
+        ],
+        "7": [
+          1,
+          0
+        ],
+        "4": [
+          0,
+          1
+        ],
+        "13": [
+          1,
+          0
+        ],
+        "3": [
+          0,
+          1
+        ]
+      },
+      "coset_table": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "scope": "An actual source-group cyclicity/order claim is not accepted from this action alone."
+    },
+    {
+      "name": "13n_4637",
+      "status": "CYCLIC_IMAGE_ONLY",
+      "degree": 4,
+      "original_generator_permutations": {
+        "7": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "9": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "4": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "8": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "10": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "12": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "3": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "6": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "5": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "11": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "13": [
+          1,
+          3,
+          0,
+          2
+        ]
+      },
+      "coset_table": [
+        [
+          1,
+          2,
+          3,
+          3
+        ],
+        [
+          3,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          0
+        ]
+      ],
+      "scope": "An actual source-group cyclicity/order claim is not accepted from this action alone."
+    }
+  ],
+  "input_sha256": {
+    "three_sheet_coset_plan.json": "c36b0854eb169e08b5331e58c90eb3492b912248a7ba4db09c14aa9e43b29b20",
+    "audit_three_sheet_cosets.py": "c6767a5d02ec61b3a30f4e1c2b20656a6252517d71297833d40f723f59de5ad5",
+    "three_sheet_nonabelian_results.json": "a542b07fec8d73b6d2be21251fb977a3d41e175fff0c4601a5f3eee8d917c040"
+  }
+}

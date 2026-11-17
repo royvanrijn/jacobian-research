@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "claim": "KCUB31",
+  "checker_sha256": "ee618e407024ec93664aac07d33ea897978791319d91786283864142da54b2b5",
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "model_sha256": "3d217575500077ea2529763ba54f053f4bc014d9e200cc5f39fe7d39cae42e10",
+  "producer_sha256": "43ce63728972fbc879028e890b0adb8facca0ab93fd6812008d57165c572c0df",
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "base_validation_sha256": "b9944075af344302ebe0a972e571f18f369a96440eaef4856da67bbee9d420be",
+  "output31_validation_sha256": "a515b33b6a8b43dc18e8c2a208f5d6e1a9d7d8a0964067c7f4c9479202137b6e",
+  "target_rigidity_validation_sha256": "c7f3248f59261425096553ac128d80bef07c94ed4b2c47e6845f93002dcb0c32",
+  "all_parameter_matrices_inverse_and_elementary": true,
+  "all_generic_coefficients_and_collisions": true,
+  "generic_nonlinear_slots": 90,
+  "coefficient_factor_products": 90,
+  "factor_polynomials": 19,
+  "generic_nonlinear_source_columns": 68,
+  "source_column_factorizations": 68,
+  "source_column_quotient_units": 68,
+  "branch_A_boolean_assignments_checked": 512,
+  "branch_A_necessary_compatible_assignments": 135,
+  "branch_B_boolean_assignments_checked": 32,
+  "branch_C_boolean_assignments_checked": 32,
+  "normalized_minimum": 36,
+  "normalized_minimum_unique_identity": true,
+  "normalized_nonidentity_minimum": 39,
+  "normalized_37_38_excluded": true,
+  "nonlinear_source_column_minimum": 30,
+  "nonidentity_source_column_minimum": 33,
+  "free_output_minimum_importing_KCUB30": 31,
+  "nonidentity_source_free_output_minimum": 34,
+  "matching_controls": [
+    {
+      "label": "identity-linear-t3",
+      "nonlinear": 39,
+      "linear": 12,
+      "full_symbolic_determinant_one": true,
+      "integral_collision": true
+    },
+    {
+      "label": "free-output-t3",
+      "nonlinear": 34,
+      "linear": 17,
+      "full_symbolic_determinant_one": true,
+      "integral_collision": true
+    }
+  ],
+  "known_identity36_and_clearing74_controls": true,
+  "degree_at_most5_target_corollary_imports_KCUB26": true,
+  "goal_complete": false,
+  "boundary": "Only the specified five-parameter source family, with prescribed inverse normalization or arbitrary affine target mixing. No full source-frame/global optimum or improved headline witness.",
+  "proof_sha256": "6828db544c30e3a199d42c412bcb1ec9a4a643f936476e92fe7034027fa0e701"
+}

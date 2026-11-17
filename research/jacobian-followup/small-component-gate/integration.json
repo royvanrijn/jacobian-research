@@ -1,0 +1,37 @@
+{
+  "claims": {
+    "GLDC5": {
+      "checker_sha256": "7ac92446e89306bed60726fa76a943639c5d5e4fee08378c46f7a0a3b95f0336",
+      "proof_sha256": "288ca197799bc621cf3188a3f172c350cf3f5d3e4bd275e7757facc640b31a29",
+      "validation_sha256": "e1396ff83574972caa08c3fbd770f40c9adc4dd9939797f569c4f8917347a92e"
+    },
+    "GLDC6": {
+      "checker_sha256": "580e73741a93a44f3ddba4b470e2e7673639f4ad724318124b06bc7c0b269e4a",
+      "proof_sha256": "9e738676e5cffff7db062cd74fc12d433cca8afa3b9ee8d858564230a309a62f",
+      "validation_sha256": "9d6069ad41871bf82945440f99d8f91bb59f1f5e5d560f9fc8b3b37cad80951b"
+    }
+  },
+  "classical_theorem_explicitly_imported": true,
+  "classical_theorem_locally_reproved": false,
+  "current_dense_excluded": 48,
+  "current_dense_remaining": 26,
+  "five_affected_lessons_reviewed": true,
+  "goal_closed": false,
+  "links": true,
+  "ordinary_cubic_dimension_interval": [
+    4,
+    12
+  ],
+  "positive_witness_bounds_changed": false,
+  "quartic_theorem_imported": false,
+  "scope": "Targeted new-claim schemas, typed reciprocal dependencies, source/proof/receipt hashes, exact current48/26 partition, five affected lesson reviews, WORK-GLDC reviews and current conditional literature counts. No whole-repository metadata/render pass asserted.",
+  "small_component_scope_excluded": 47,
+  "status": "pass",
+  "three_variable_ordinary_degree_interval": [
+    4,
+    7
+  ],
+  "umbrella_state": "open",
+  "vistoli_fulltext_inspected": false,
+  "work_reviewed": true
+}

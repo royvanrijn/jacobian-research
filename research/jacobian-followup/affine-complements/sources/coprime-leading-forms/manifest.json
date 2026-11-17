@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-16",
+  "sources": [
+    {
+      "path": "sources/coprime-leading-forms/orevkov-germs-2026.pdf",
+      "bytes": 457716,
+      "sha256": "ee28688d8336415116abe7f7bcd80f5b049989fcd9479be276c433b0bae7bc95",
+      "title": "S.Yu.Orevkov, On germs of mappings C2->C2, author manuscript copyright2026",
+      "url": "https://www.math.univ-toulouse.fr/~orevkov/k-en.pdf",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        1,
+        2,
+        3
+      ],
+      "used_statement": "FullPDF1 A1/A2 show germ classification requires bijectivity on EVERY inverse discriminant component; that classification is NOT imported. FullPDF2 Theorem1 states Zannier passport existence: lists of equal sumN, gcd1 and special localdegree k+l-1<=N. Apply only to lists3 repeated2q and2 repeated3q. FullPDF2 Remark2 has apparent value-label inconsistency (equal-degree P/Q tends1 at infinity); use Theorem1 with target values permuted explicitly, not that coordinate sentence. FullPDF3 read for surrounding context; its resolution/classification conclusions not imported.",
+      "original_Zannier_publication": "U.Zannier, On Davenport bound for degree f3-g2 and Riemann existence theorem, Acta Arith71(1995),107-137, DOI10.4064/aa-71-2-107-137",
+      "original_Zannier_binary_cached": false,
+      "independent_passport_existence_proof": false,
+      "independent_whole_Orevkov_classification_proof": false
+    },
+    {
+      "path": "CYCLIC_QUOTIENT_ORDER_AND_MORSE_RESIDUE_BUDGET.md",
+      "bytes": 13858,
+      "sha256": "a6ced3bb14419946acf2ee5318161e8fe02d85cc8fb931fcfc0b2a99223c4e13",
+      "source_kind": "canonical predecessor",
+      "used_statement": "Marked cyclic quotient type1/n(1,-e), retained whole-plane local/global budget and normalized power-map location q=nf. Scalar-Morse divisor nf|e-1 remains conditional."
+    },
+    {
+      "path": "TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md",
+      "bytes": 15652,
+      "sha256": "f1d141c5e0cc7eabd45a08225a7b90941adb5ca57bc8e7912181a629479ef818",
+      "source_kind": "canonical predecessor",
+      "used_statement": "All-index corank-one primitive restriction and genuine Morse counterfamily whose leading forms share X; no automatic coprime leading forms."
+    }
+  ],
+  "written_all_degree_proof": "Coprime homogeneous initial forms give nonzero monomial Jacobian, localdegree rs, restricted ordersr/s and q|gcd. Projective pencil [U^(s/g):V^(r/g)] has degree rs/g and localdegreee=r+s-1 at critical direction, giving e<=rs/g. q>1 forces coprime normalizedordersa,b>=2, hence e>=5q-1 and degree>=6q\u00b2. Actualq=nf gives scalar markedquotient1/n(1,1), nf|e+1, ell>=6nf\u00b2 and d>=ell+1.",
+  "imported_existence_only": "Zannier passport theorem as stated Orevkov Theorem1 produces all-q sharp non-Morse homogeneous finite maps; not independently reproved.",
+  "germ_classification_with_bijectivity_imported": false,
+  "coprime_leading_forms_automatic_claimed": false,
+  "general_residue_bound_outside_proved_sectors_claimed": false,
+  "actual_Keller_realization_of_controls": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true
+}

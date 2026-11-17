@@ -1,0 +1,77 @@
+{
+  "cases": [
+    {
+      "folder": "carrier-order-search/5_6_7_8_9_10_11_12_4",
+      "order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        4
+      ]
+    },
+    {
+      "folder": "carrier-order-search/12_4_5_6_7_8_9_10_11",
+      "order": [
+        12,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "folder": "carrier-order-search/4_5_7_8_9_10_11_12_6",
+      "order": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        6
+      ]
+    },
+    {
+      "folder": "carrier-order-search/12_11_10_9_8_7_6_5_4",
+      "order": [
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4
+      ]
+    },
+    {
+      "folder": "carrier-order-search/6_7_8_5_9_10_11_4_12",
+      "order": [
+        6,
+        7,
+        8,
+        5,
+        9,
+        10,
+        11,
+        4,
+        12
+      ]
+    }
+  ],
+  "scope": "Five explicit changed-order models, each20-second primary identity/rank coefficient budget. Each per-case receipt is authoritative about its actual status. Not exhaustive orders or a global dimension bound.",
+  "source_sha256": "8acf1419da594fec2bd79bc8ed77e9d237bb469da509929a2d8f685e315a2512",
+  "status": "complete"
+}

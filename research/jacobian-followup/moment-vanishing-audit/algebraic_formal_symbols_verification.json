@@ -1,0 +1,152 @@
+{
+  "completed": true,
+  "checker_sha256": "edd11e6cdde8c6e20e21201fd4c47400325431ead821e36fe3be05497a98782f",
+  "diagonal_controls": [
+    {
+      "dimension": 1,
+      "marker_powers": [
+        0
+      ],
+      "index": 1,
+      "output": "x + 1/4"
+    },
+    {
+      "dimension": 1,
+      "marker_powers": [
+        0
+      ],
+      "index": 2,
+      "output": "3*x**2 + 7/8"
+    },
+    {
+      "dimension": 1,
+      "marker_powers": [
+        1
+      ],
+      "index": 1,
+      "output": "3*x**2/2 + x/4 + 1/8"
+    },
+    {
+      "dimension": 1,
+      "marker_powers": [
+        1
+      ],
+      "index": 2,
+      "output": "5*x**3 - 3*x**2/2 + 39*x/8 - 57/16"
+    },
+    {
+      "dimension": 2,
+      "marker_powers": [
+        0,
+        0
+      ],
+      "index": 1,
+      "output": "x + 3*y + 1/2"
+    },
+    {
+      "dimension": 2,
+      "marker_powers": [
+        0,
+        0
+      ],
+      "index": 2,
+      "output": "2*x**2 + 20*x*y + 4*x + 26*y**2 + 16*y"
+    },
+    {
+      "dimension": 2,
+      "marker_powers": [
+        1,
+        0
+      ],
+      "index": 1,
+      "output": "x**2 + 4*x*y + x + y**2 + y - 1/4"
+    },
+    {
+      "dimension": 2,
+      "marker_powers": [
+        1,
+        0
+      ],
+      "index": 2,
+      "output": "2*x**3 + 24*x**2*y + 6*x**2 + 42*x*y**2 + 36*x*y + 12*y**3 + 24*y**2 - 3*y"
+    },
+    {
+      "dimension": 3,
+      "marker_powers": [
+        0,
+        0,
+        0
+      ],
+      "index": 1,
+      "output": "0"
+    },
+    {
+      "dimension": 3,
+      "marker_powers": [
+        0,
+        0,
+        0
+      ],
+      "index": 2,
+      "output": "0"
+    },
+    {
+      "dimension": 3,
+      "marker_powers": [
+        1,
+        0,
+        0
+      ],
+      "index": 1,
+      "output": "z**2"
+    },
+    {
+      "dimension": 3,
+      "marker_powers": [
+        1,
+        0,
+        0
+      ],
+      "index": 2,
+      "output": "0"
+    }
+  ],
+  "formal_unit_controls": [
+    {
+      "dimension": 1,
+      "nonzero_unit_constant": true,
+      "inverse_recovered": true
+    },
+    {
+      "dimension": 2,
+      "nonzero_unit_constant": true,
+      "inverse_recovered": true
+    },
+    {
+      "dimension": 3,
+      "nonzero_unit_constant": true,
+      "inverse_recovered": true
+    }
+  ],
+  "square_zero_unit_inverse": true,
+  "unit_matrix_determinant": "u0**3",
+  "factorial_kernel_ode_zero_through_degree": 6,
+  "illustrative_taylor_recurrence": true,
+  "algebraic_transverse_zero_indices": [
+    2,
+    3
+  ],
+  "guard_refusals": 3,
+  "supporting_checker_hashes": {},
+  "bounded_jet_action_and_diagonal_calculators_implemented": true,
+  "universal_holonomicity_proved_by_finite_controls": false,
+  "general_transcendental_symbol_source_claimed": false,
+  "full_GVC_for_algebraic_symbols_claimed": false,
+  "all_ring_algebraic_linearity_claimed": false,
+  "general_effective_source_solver_implemented": false,
+  "full_exceptional_MZ_decided": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "novelty_claimed": false
+}

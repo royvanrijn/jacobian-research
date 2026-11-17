@@ -1,0 +1,10 @@
+{
+  "equations": 16,
+  "input_sha256": "873edd23296b3b4934d92aa0eb1a709655bb708736bbe7c97955f0d9d399c943",
+  "mode": "unit-slice",
+  "scope": "Exploratory high-w branch. Proper basis requires actual coefficient extraction and full-map determinant/collision replay.",
+  "seconds": 0.004,
+  "source_sha256": "0a0126094b49d794821c3cf1744bb0dea58e26cf482a2b9a4d78f1ecae6ea67c",
+  "status": "primary-basis",
+  "variables": 9
+}

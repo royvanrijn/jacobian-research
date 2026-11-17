@@ -1,0 +1,108 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYLQ0",
+    "HC4MYLQ1"
+  ],
+  "checks": [
+    "HC4MYLQ0 schema,proved dependencies,locks and assurance",
+    "HC4MYLQ1 schema,proved dependencies,locks and assurance",
+    "new and parent dependency graphs acyclic",
+    "96 new controls,55 algebraic,15 retained pins,7 prior claims;two explicit GP proved imports,no registered replay",
+    "two explicit primary imports,all-fibre strictness,geometric norm descent and conditional effective-canonical/all-irred boundary explicit",
+    "new method,two affected methods and all parent consumer fingerprints current",
+    "both work actions preserve full target,last gap,all prior progress,quartic retirement and independent Laurent frontier",
+    "written published discriminant application,UFD unit lattice,positive norm descent and specified hyperelliptic consequences;whitespace/links clean",
+    "generated navigation agrees with current authority and reviews",
+    "full theorem remains open,published quartic retirement and qualified KIG28 retained"
+  ],
+  "scoped_check_groups": 10,
+  "exact_current_checks": 96,
+  "algebraic_controls": 55,
+  "retained_byte_pins": 15,
+  "retained_prior_claims": 7,
+  "new_primary_caches": 1,
+  "new_explicit_proved_imports": 2,
+  "published_component_minimal_discriminant_inverse_criterion_adopted": true,
+  "all_failure_component_fibre_discriminants_strictly_above_minimum": true,
+  "every_failure_target_coordinate_has_at_least_two_atypical_values": true,
+  "generic_source_curve_unit_group_exact_reducible_fibre_factor_lattice": true,
+  "geometric_boundary_pluricanonical_section_forces_reducible_fibre": true,
+  "constant_field_norm_descent_with_positive_pole_orders_proved": true,
+  "genus_one_reducibility_recovered_and_credited": true,
+  "specified_hyperelliptic_boundary_classes_excluded_in_all_irreducible_frame": true,
+  "newly_adopted_external_theorem": true,
+  "external_review_deferred": true,
+  "minimal_discriminant_or_canonical_boundary_effectivity_asserted_automatic": false,
+  "all_fibres_irreducible_assumed_for_arbitrary_Keller_component": false,
+  "all_higher_genus_or_all_hyperelliptic_components_excluded": false,
+  "unproved_Kaliman_reduction_or_preservation_of_punctures_used": false,
+  "constant_field_norm_confused_with_full_Keller_trace_pairing": false,
+  "new_submersion_control_treated_as_Keller_counterexample": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_requested": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": {
+    "repository_checks": [
+      {
+        "name": "render-navigation",
+        "command": [
+          "make",
+          "render-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+      },
+      {
+        "name": "check-navigation",
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "name": "partial-review",
+        "command": [
+          "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+          "research/scripts/research.py",
+          "check",
+          "--require-partial-review"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+      },
+      {
+        "name": "required-whitespace",
+        "command": [
+          "git",
+          "diff",
+          "--check",
+          "--",
+          "research/MATH_STATUS.json",
+          "research/knowledge/lessons.json",
+          "research/knowledge/work_items.json",
+          "research/jacobian-followup/hc4-triangular-graphs/README.md",
+          "research/index",
+          "research/knowledge/work",
+          "research/knowledge/WORK_LEDGER.md",
+          "research/STATUS.md"
+        ],
+        "exit_code": 0,
+        "output": ""
+      }
+    ],
+    "own_HC4_whitespace_check": {
+      "exit_code": 0,
+      "output": ""
+    }
+  },
+  "repository_check_boundary": "Same unrelated missing KDSQ6 consumer and elliptic method artifact baseline [2,2,1,0].Scoped source locks,metadata and generated views pass.No missing artifact reconstructed.",
+  "mathematical_development_boundary": "ONE pre-registration mathematical checker run PASS96,55algebraic,in0.033sec.No failed mathematical controls.No registered checker replay.10 scoped metadata groups passed first attempt.Proof/checker/context/receipt/new primary PDF frozen.TWO published proved GP statements explicitly imported;no automatic landing or whole-proof assurance upgrade."
+}

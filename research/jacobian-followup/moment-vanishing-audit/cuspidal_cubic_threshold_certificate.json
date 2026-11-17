@@ -1,0 +1,166 @@
+{
+  "claim": "G3CUSP10_20261114",
+  "field": "C, characteristic zero",
+  "theorem": "Every irreducible homogeneous ternary cubic with a cuspidal projective curve has a nonzero Gaussian pure moment by order10;10 is sharp.",
+  "normal_form": "X^2 Z + Y^3 with an arbitrary invertible linear coordinate change",
+  "covariance_requirement": "det([[a,d,e],[d,b,f],[e,f,c]])!=0; automatic for an invertible change of three Gaussian coordinates",
+  "normalization_weights": {
+    "a": [
+      2,
+      0
+    ],
+    "b": [
+      0,
+      2
+    ],
+    "c": [
+      -4,
+      6
+    ],
+    "d": [
+      1,
+      1
+    ],
+    "e": [
+      -1,
+      3
+    ],
+    "f": [
+      -2,
+      4
+    ]
+  },
+  "normalization_charts": [
+    {
+      "label": "AB11",
+      "eliminated_variable": "c",
+      "normalization": {
+        "a": "1",
+        "b": "1"
+      },
+      "determinant_power_certified": 4
+    },
+    {
+      "label": "A0B1D1",
+      "eliminated_variable": "f",
+      "normalization": {
+        "a": "0",
+        "b": "1",
+        "d": "1"
+      },
+      "determinant_power_certified": 12
+    },
+    {
+      "label": "A1B0D1",
+      "eliminated_variable": "c",
+      "normalization": {
+        "a": "1",
+        "b": "0",
+        "d": "1"
+      },
+      "determinant_power_certified": 12
+    },
+    {
+      "label": "A1B0D0",
+      "eliminated_variable": "c",
+      "normalization": {
+        "a": "1",
+        "b": "0",
+        "d": "0"
+      },
+      "determinant_power_certified": 12
+    },
+    {
+      "label": "A0B0D1",
+      "eliminated_variable": "f",
+      "normalization": {
+        "a": "0",
+        "b": "0",
+        "d": "1"
+      },
+      "determinant_power_certified": 12
+    }
+  ],
+  "generic_completed_checkpoint": {
+    "full_run_completed": false,
+    "basis_phase_completed": true,
+    "basis_size": 52,
+    "determinant_power": 4,
+    "power_remainder_sizes": [
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        113
+      ],
+      [
+        3,
+        113
+      ],
+      [
+        4,
+        0
+      ]
+    ]
+  },
+  "witness": {
+    "polynomial": "P=Z^2*T+W^3; Z=(X+iY)/sqrt(2), W=(X-iY)/sqrt(2)",
+    "M1_to_M10": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1508855040000
+    ],
+    "all_order_formula": "M_n=0 unless n=10r; M_(10r)=binomial(10r,6r)*(12r)!*(6r-1)!!",
+    "M10": 1508855040000,
+    "singular_point": "[Z:W:T]=[0:0:1], nonisotropic",
+    "global_ternary_cubic_prefix_lower_bound": 10
+  },
+  "provenance": {
+    "cuspidal_moments_input.json": "6eb516cb60f5e9fb5b7c1a39e984ba83305df694a5a6a49074b4c85e87d84ba4",
+    "cuspidal_moments_ten_input.json": "f6515d28f000c5405a31c0f256c83eb212427f3ed83f6831614645536c4e7906",
+    "cuspidal_covariance_charts_input.json": "1f6a54c1cefb47e07d21d6d78ba7936517408a28bf76511fb5523e3fa1f4175d",
+    "explore_cuspidal_moments.py": "e88bf424c183460faf1ba4d1c5484daba7bac1b4686fe2a850bf2a79d7a89c65",
+    "explore_cuspidal_moments_ten.py": "fcff1592a9e0148d1c5884ed8a9d6be31f4f5c4fd7a36aee9997449a2cc267d4",
+    "prepare_cuspidal_covariance_charts.py": "5eac8e6f9f236aafab0e4e23027748de8fd88bae34bfb99a2ec053f07420916d",
+    "cuspidal_cubic_source_audit.json": "7c46a525f5484ec637284519eb7569ec902dd87ce1d618860cb9aecfdf79f3b0",
+    "run_cuspidal_boundary_charts.py": "c9c4a5e23ea996e87112258ad79dce702967f0b662cd8e8d26759c8def7e10ee",
+    "cuspidal_boundary_charts.sing": "926f1c2389023175dff48e4310a0a995514cf9bb9ffb22ca77ff101e285d6876",
+    "cuspidal_boundary_charts_stdout.txt": "c1cd1a3ca295598b682559eb2e976dbae53fd70cd73d63e4623f62c790d90736",
+    "cuspidal_boundary_charts_run.json": "71eb811f9910d03001be22628cc3bb1483bbd997a28c5f34efb59ae91437e29c",
+    "run_cuspidal_generic_small_powers_v2.py": "a1e185fdb6ca70d3af785caf2ca12f017c9261207842a1aa6b983fe84948eb0f",
+    "cuspidal_generic_small_powers_v2.sing": "ae7a1759ba124d24678e3c510cd8abb9439fafe26fbdcf129f8a7336885d9499",
+    "cuspidal_generic_small_powers_v2_stdout.txt": "07db21498f1b1a69e8b2ea258e1f5f49183f5038eed665a7f36343729c035a6f",
+    "cuspidal_generic_small_powers_v2_run.json": "50e78c508d6b74fb591b84f6f2b42180419b2859424f7bdaf76dad62249de8c3",
+    "run_cuspidal_prefix_geometry.py": "57a510420660b752acd1bb04c0e3c305b1ca563f4bd5defa610c8d0e8da03112",
+    "cuspidal_prefix_geometry.sing": "1f093e19bbc8b3515ffe76a8f47e48b2284de2d0be54c639d12605916fdd770d",
+    "cuspidal_prefix_geometry_stdout.txt": "10b8ddf4e7ba94e61634d2e890a1935d4d5e9e59b8f85054de987202b6ca0092",
+    "cuspidal_prefix_geometry_run.json": "47364dc35104f1c06ff52ea31daf0c9ed29553580bb971984905c2a2b27c901b",
+    "run_cuspidal_generic_chart.py": "f79700368aee9c559a8e220fa0aacd00e6f4a9bbff5efedbfb5d0493d2f0120d",
+    "cuspidal_generic_chart.sing": "c5236de6bee126184140a5307806f0a2bcb3a75f9cda324ef8e26b7b132b73b6",
+    "cuspidal_generic_chart_stdout.txt": "985c5c0a0e4719bbb7d465c223c37d3f5cafdf19f0900f39ff444c0a677e240b",
+    "cuspidal_generic_chart_run.json": "486f9da6fc51aa36f4b65ee5cd6fcbffa7de28c8f73f19f21fd37f619b9cef89",
+    "run_cuspidal_generic_determinant_saturation.py": "83a105f9cc32bacb2a747d2b44e848742c074847fdc3819be5752a13526088d3",
+    "cuspidal_generic_determinant_saturation.sing": "9a00bb698f5b1dc0319be263a7d2a4fc91e2a31fe59c6a351d7dacc10d39031f",
+    "cuspidal_generic_determinant_saturation_stdout.txt": "471bcc25055ed49961eb72a08aac69bbca938cdf180c5e82dbe9a80a5600d51a",
+    "cuspidal_generic_determinant_saturation_run.json": "f99cf5f3846c44038c90b4cb5473dece447f83ea701e7fcf867bd50423e889a9",
+    "run_cuspidal_generic_small_powers.py": "6785ab8227ef42fc47f9127513971b5698bb3a1d8c8eed43b2ce2de1082d5ff7",
+    "cuspidal_generic_small_powers.sing": "84d32ad26b16d83b8c39389a558f2b1a40f34b1fcaea46860cfdfd658bd3f591",
+    "cuspidal_generic_small_powers_stdout.txt": "c8b03c20c7cb998c2a8cd70c8468fecf3e32ef4bd021448bbfee1dbaada0859b",
+    "cuspidal_generic_small_powers_run.json": "35f24061e18a865f0fd1efdc4c574aef756d777dd91fe5319ab0e418642fd151",
+    "run_cuspidal_generic_modular_diagnostic.py": "8a49b694aff494c1922e86223cb9babc81e6cb48c2906648471c843b317a2550",
+    "cuspidal_generic_modular_diagnostic.sing": "5e1c0306571a2c7be1075effc5f77f1c5adba71a003c77a4bb710ecf2eb5f35c",
+    "cuspidal_generic_modular_diagnostic_stdout.txt": "356693cd5045b1ee44c397f0ce53ebeb63ec3d3db03bb8f965a86d479d8896cf",
+    "cuspidal_generic_modular_diagnostic_run.json": "d30eff10875cb127c004bf9f090ebed88814e422b6374ca87e708fda6bee6fad"
+  },
+  "boundary": "This closes homogeneous irreducible cuspidal cubics, with no pure-null polynomial in that class. Homogeneous irreducible nodal, nonsplit line-conic and nonhomogeneous singular-leading cubics remain separate. No global arbitrary-cubic upper bound is given. Degenerate Gram matrices in more Gaussian coordinates are not included. Modular determinant saturation is only a diagnostic and is not used to lift the theorem. The all-order witness formula is a written Wick-selection proof, not finite extrapolation.",
+  "assurance": "Internal elementary normalization and exact rational CAS/Wick/combinatorial proof; no independent replay, external review or formal verification."
+}

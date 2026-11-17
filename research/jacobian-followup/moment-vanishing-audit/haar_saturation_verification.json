@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "ac3ced9008a65935baee2357b07f1cb298787cf0c68a908d742d458414813931",
+  "sympy_version": "1.14.0",
+  "source_image_exactly_W4_written_proof": true,
+  "all_phase_unit_adjoined_regular_image_model_independent_written_proof": true,
+  "ambient_cohomology_lift_exactly_decides_unit_in_regular_image_written_proof": true,
+  "actual_regular_image_model_independent_written_proof": true,
+  "canonical_R_defined_for_every_phase": true,
+  "global_unit_functional_unique_representation_control": true,
+  "boundary_Ext_pushout_matrix_control": true,
+  "Kummer_residue_vector": [
+    -1,
+    1
+  ],
+  "Kummer_constant_boundary_line_for_ALL_regular_Bezout_parameters": true,
+  "finite_linear_saturation_controls": [
+    {
+      "compact_middle_rank": 1,
+      "image_rank_with_ambient_line": 2
+    },
+    {
+      "compact_middle_rank": 2,
+      "image_rank_with_ambient_line": 3
+    },
+    {
+      "compact_middle_rank": 3,
+      "image_rank_with_ambient_line": 4
+    },
+    {
+      "compact_middle_rank": 4,
+      "image_rank_with_ambient_line": 5
+    },
+    {
+      "compact_middle_rank": 5,
+      "image_rank_with_ambient_line": 6
+    }
+  ],
+  "actual_period_kernel_assumed_Hodge": false,
+  "local_unit_retraction_claimed_unique": false,
+  "finitebase_partial_model_treated_as_proper_over_phase": false,
+  "finitebase_elimination_proved": false,
+  "marker_defect_localized_finitebase_or_infinity": false,
+  "all_phases_claimed_proper_original_volume_models": false,
+  "new_pure_exceptional_phase_produced": false,
+  "nonlinear_composite_purity_reflected": false,
+  "full_exceptional_purity_implies_safety_proved": false,
+  "universal_geometry_or_MZ_machine_proof": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_next_task": false,
+  "new_degree_support_or_parameter_campaign": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients"
+}

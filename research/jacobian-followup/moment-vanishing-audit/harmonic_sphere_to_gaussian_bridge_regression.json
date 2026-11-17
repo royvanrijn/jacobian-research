@@ -1,0 +1,28 @@
+{
+  "status": "EXACT_OBSTRUCTION_TEST, NOT_A_DEGREE3_THEOREM",
+  "known_sphere_pure_phase": "(1+z)*(w-(2+z)*t^2/2)",
+  "harmonic_representative": "-3*t**2*z**2/7 - 6*t**2*z/5 - t**2 + w*z**3/7 + 3*w*z**2/5 + w*z + w - z**2/14 - 3*z/10",
+  "moments": [
+    {
+      "n": 1,
+      "Gaussian": "0",
+      "sphere": "0"
+    },
+    {
+      "n": 2,
+      "Gaussian": "12/5",
+      "sphere": "0"
+    },
+    {
+      "n": 3,
+      "Gaussian": "468/35",
+      "sphere": "0"
+    },
+    {
+      "n": 4,
+      "Gaussian": "4866/35",
+      "sphere": "0"
+    }
+  ],
+  "boundary": "Tests a potential general radial-transfer mechanism; no degree3 implication or new Image counterexample is inferred."
+}

@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "degree": 5,
+      "dimension": 18,
+      "nonlinear": 61,
+      "removed": 3
+    },
+    {
+      "degree": 5,
+      "dimension": 18,
+      "nonlinear": 69,
+      "removed": 4
+    },
+    {
+      "degree": 6,
+      "dimension": 18,
+      "nonlinear": 61,
+      "removed": 5
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 55,
+      "removed": 6
+    },
+    {
+      "degree": 5,
+      "dimension": 18,
+      "nonlinear": 61,
+      "removed": 7
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 59,
+      "removed": 8
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 55,
+      "removed": 9
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 57,
+      "removed": 10
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 51,
+      "removed": 11
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 59,
+      "removed": 12
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 59,
+      "removed": 13
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 59,
+      "removed": 14
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 51,
+      "removed": 15
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 59,
+      "removed": 16
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 59,
+      "removed": 17
+    },
+    {
+      "degree": 4,
+      "dimension": 18,
+      "nonlinear": 59,
+      "removed": 18
+    }
+  ],
+  "source_sha256": "15acf972926b89b3fec2da076e28ea6adfd87d55b507815ee5b9ff2e8cd2d319",
+  "status": "complete-single-slices"
+}

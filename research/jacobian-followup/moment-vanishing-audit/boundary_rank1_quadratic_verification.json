@@ -1,0 +1,22 @@
+{
+  "claim": "SIC2B33RANK1QUAD20261117",
+  "status": "PASS",
+  "checker_sha256": "bdd1f1783dd70820221e03cc2280f48c4c2f6175caf9d5405e1c94dc5f463eb2",
+  "model_sha256": "c9c6582c3d42be34d28f978daeec88e47a0088bad9eb38e1bdbdda1755b5abe1",
+  "certificate_sha256": "bed71131743ff34a9eca56931244f334015d3662ece26da3f4428a9e7e9d7587",
+  "complete_stratum": "H1=0 and nonzero trace-free quadratic operator of rank1",
+  "normalized_phase": "w^2+arbitrary harmonic ternary cubic",
+  "pure_classification": "Exactly the cubics of torus charges-3,-2,-1 in an oriented linear frame with H2=w^2. No semistable pure point in this stratum.",
+  "set_theoretic_purity_prefix": 10,
+  "least_consecutive_set_theoretic_prefix": 10,
+  "case2_exclusion_prefix": 5,
+  "case3_exclusion_prefix": 10,
+  "case3_prefix7_to9_reduced_algebra": "QQ[u]/(u^2+5), x=y=0",
+  "case3_moment10_unit_remainder": "-771876864",
+  "first9_false_candidate_mu10": "-2310144/434113615",
+  "full_Image_cutoff": "m>coordinate_degree Q",
+  "strict_cutoff_boundary_control": "h((w^2+w*(t^2-zw/2))^2*z^2)=2/315",
+  "msolve_dependency": false,
+  "global_unrestricted_Image33": "OPEN",
+  "boundary": "Exact polynomial identities cover every highest-charge chart after a complete invertible normalization. Classification of this entire rank1 quadratic stratum is complete, not the whole D=0 boundary or full(3,3) Image theorem. No ordinary ideal stabilization is asserted. The zero-quadratic case is separately covered by the retained odd-slice theorem. No independent specialist or formal verification."
+}

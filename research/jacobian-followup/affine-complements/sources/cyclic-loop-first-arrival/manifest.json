@@ -1,0 +1,137 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/cyclic-companion/hillman-sakuma-1997.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2708EB475754CCA2A78C72C606D13E63/S0008439500002046a.pdf/on_the_homology_of_finite_abelian_coverings_of_links.pdf",
+      "title": "Hillman--Sakuma, On the homology of finite abelian coverings of links, Canadian Mathematical Bulletin40(1997),309-315",
+      "bytes": 85021,
+      "sha256": "455a770f76f95dd189132cf99f7964e1775621e48169f6d8501e68b2dd88900b",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        6
+      ],
+      "printed_pages": [
+        314
+      ],
+      "used_statement": "For knots the cyclic exterior homology splits integrally as the branched-cover homology plus Z; the page also warns that equal Alexander polynomials do not determine homology-group structure in general. PF65 reproves the integral split with explicit peripheral maps and computes the full torus Alexander module, not only its order.",
+      "used_as_primary_cross_check": true,
+      "full_paper_independently_reproved": false,
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Complete prior PF65/66/72/77-79 audits retained; no new page audit asserted at PF84"
+    },
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Hatcher, Notes on Basic 3-Manifold Topology, retained version",
+      "bytes": 384715,
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "complete_PDF_pages_visually_rechecked": [
+        20,
+        21
+      ],
+      "printed_pages": [
+        19,
+        20
+      ],
+      "used_statement": "Proposition1.13 essential vertical annulus in the trefoil, Lemmas1.14-1.15 boundary fibre uniqueness with all exceptions; PF77 retains the complete PDF15 Theorem1.9 JSJ audit. Terminal Klein alternative is handled explicitly by its boundary group, not fibre uniqueness.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Complete prior PF65/66/72/77-79 audits retained; no new page audit asserted at PF84"
+    },
+    {
+      "path": "sources/borderline-regular-end/waldhausen-1968.pdf",
+      "url": "https://www.maths.gla.ac.uk/~mpowell/Waldhausen-Irreducible3ManifoldsSufficiently-1968.pdf",
+      "title": "Waldhausen, On irreducible 3-manifolds which are sufficiently large, Ann Math87(1968),56-88",
+      "bytes": 2860358,
+      "sha256": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+      "complete_PDF_pages_visually_rechecked": [
+        5,
+        23
+      ],
+      "printed_pages": [
+        59,
+        77
+      ],
+      "used_statement": "Definition1.1.7 sufficiently large means existence of an incompressible surface; the trefoil essential vertical annulus supplies one. Theorem6.1 relative covering recognition as in PF77, full peripheral map, irreducible/boundary-irreducible exteriors, aspherical sufficiently-large target, one boundary excludes closed-surface product, pi1 isomorphism forces degree1.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Complete prior PF65/66/72/77-79 audits retained; no new page audit asserted at PF84"
+    },
+    {
+      "path": "sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/neumraym.pdf",
+      "title": "Neumann--Raymond, Seifert manifolds, plumbing, mu-invariant and orientation reversing maps, LNM664(1978),163-196",
+      "bytes": 893752,
+      "sha256": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13
+      ],
+      "principal_used_complete_PDF_pages": [
+        3,
+        4,
+        6,
+        11,
+        12,
+        13
+      ],
+      "printed_pages": [
+        165,
+        166,
+        168,
+        173,
+        174,
+        175
+      ],
+      "used_statement": "Theorem1.2 Euler naturality for oriented fibre-preserving maps, including branched maps; signed inverse slice convention and Euler definition; Theorem5.1 star plumbing and signed continued fractions, intersection form, and Theorem5.2 Schur/definiteness convention. Convert the paper signed leg parameter to minus the positive beta in a normalized negative leg. The proof derives the model, Euler number, selected inverse entry and mod3 mismatch; no contact/filling classification or full satellite plumbing theorem imported.",
+      "imported_not_independently_reproved": true,
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Complete prior PF65/66/72/77-79 audits retained; no new page audit asserted at PF84"
+    }
+  ],
+  "related_primary_web_records_consulted": [
+    {
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/litherland2.pdf",
+      "title": "Litherland, Cobordism of satellite knots, Contemporary Mathematics35(1984)",
+      "additional_theorem_imported": false
+    },
+    {
+      "url": "https://pi.math.cornell.edu/~Hatcher/3M/3Mdownloads.html",
+      "title": "Official Hatcher notes download page",
+      "new_download_required": false
+    }
+  ],
+  "retained_inputs": [
+    "PF65 actual all-degree cyclic companion peripheral splitting",
+    "PF69 fibre-orbit base genus model",
+    "PF72 exact regular fibre order",
+    "PF80 actual preferred cable words",
+    "PF81 generic cyclic3/4 unknotted patterns",
+    "PF82 complete ten-state/29-profile all-length saturation and C2 tail splitting",
+    "PF83 exact rooted complementary path, actual adjacent fibre nonmerger and terminal modulus"
+  ],
+  "new_written_proofs": [
+    "all-degree cyclic cable fibre/base model and longitude shift",
+    "quartic noncyclic cable levels bounded by two despite arbitrary cyclic chains",
+    "cyclic3 any-depth arrivals excluded in both pencils",
+    "cyclic4 any-depth arrivals excluded with later tail or larger arrival winding",
+    "residual final winding3 cyclic4 all-odd companion chain and terminal restrictions",
+    "terminal modulus for arbitrary free-tail order and exact forced larger-exponent divisor bound"
+  ],
+  "limits": {
+    "no_prefix_eta_assumption_in_new_cyclic_arrival_closures": true,
+    "cyclic4_final_winding3_residual_open": true,
+    "T2_25_residual_open": true,
+    "noncyclic_incoming_states_open": true,
+    "higher_degree_packets_classified": false,
+    "full_goal_open": true
+  }
+}

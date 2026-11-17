@@ -1,0 +1,23 @@
+LIB "bfun.lib";
+
+proc emit(poly v,string label)
+{
+  print("BEGIN|"+label);
+  while(v!=0)
+  {
+    print("TERM|"+label+"|"+string(leadexp(v))+"|"+string(leadcoef(v)));
+    v=v-lead(v);
+  }
+  print("END|"+label);
+}
+ring R=0,(z1,h,tl,te,D1,Dh,Dl,De),dp;def W=Weyl();setring W;
+ideal J=((2/1)*(h)^1*(D1)^1+(1/1)*(z1)^1+(6/1)*(z1)^2*(h)^1*(Dl)^1),((1/1)*(De)^1+(1/1)*(Dh)^1+(-1/1)*(D1)^2+(-6/1)*(z1)^1*(Dl)^1+(-6/1)*(z1)^2*(D1)^1*(Dl)^1+(-9/1)*(z1)^4*(Dl)^2),((1/1)*(tl)^1+(-1/1)*(z1)^3),((1/1)*(te)^1+(-1/1)*(h)^1);ideal G=std(J);
+poly ES=(-1/1)+(-1/1)*(tl)^1*(Dl)^1;poly OrdinaryDifference=(-8/1)+(46/1)*(tl)^1*(Dl)^1+(240/1)*(tl)^2*(Dl)^2+(180/1)*(tl)^3*(Dl)^3+(27/1)*(tl)^4*(Dl)^4+(-12/1)*(h)^1*(De)^1+(-12/1)*(h)^1*(Dh)^1+(-24/1)*(z1)^1*(D1)^1+(18/1)*(z1)^1*(tl)^1*(D1)^1*(Dl)^1+(-36/1)*(z1)^1*(h)^1*(D1)^1*(De)^1+(-36/1)*(z1)^1*(h)^1*(D1)^1*(Dh)^1+(6/1)*(z1)^2*(De)^1+(6/1)*(z1)^2*(Dh)^1+(-12/1)*(z1)^2*(D1)^2+(21/1)*(z1)^2*(tl)^1*(Dl)^1*(De)^1+(21/1)*(z1)^2*(tl)^1*(Dh)^1*(Dl)^1+(9/1)*(z1)^2*(tl)^1*(D1)^2*(Dl)^1+(6/1)*(z1)^2*(h)^1*(De)^2+(12/1)*(z1)^2*(h)^1*(Dh)^1*(De)^1+(6/1)*(z1)^2*(h)^1*(Dh)^2+(-18/1)*(z1)^2*(h)^1*(D1)^2*(De)^1+(-18/1)*(z1)^2*(h)^1*(D1)^2*(Dh)^1+(10/3)*(z1)^3*(D1)^1*(De)^1+(10/3)*(z1)^3*(D1)^1*(Dh)^1+(-4/3)*(z1)^3*(D1)^3+(7/1)*(z1)^3*(tl)^1*(D1)^1*(Dl)^1*(De)^1+(7/1)*(z1)^3*(tl)^1*(D1)^1*(Dh)^1*(Dl)^1+(1/1)*(z1)^3*(tl)^1*(D1)^3*(Dl)^1+(2/1)*(z1)^3*(h)^1*(D1)^1*(De)^2+(4/1)*(z1)^3*(h)^1*(D1)^1*(Dh)^1*(De)^1+(2/1)*(z1)^3*(h)^1*(D1)^1*(Dh)^2+(-2/1)*(z1)^3*(h)^1*(D1)^3*(De)^1+(-2/1)*(z1)^3*(h)^1*(D1)^3*(Dh)^1+(-1/3)*(z1)^4*(De)^2+(-2/3)*(z1)^4*(Dh)^1*(De)^1+(-1/3)*(z1)^4*(Dh)^2+(1/3)*(z1)^4*(D1)^2*(De)^1+(1/3)*(z1)^4*(D1)^2*(Dh)^1;poly EtaDifference=(8/1)+(18/1)*(te)^1*(De)^1+(4/1)*(te)^2*(De)^2+(30/1)*(tl)^1*(Dl)^1+(12/1)*(tl)^1*(te)^1*(Dl)^1*(De)^1+(9/1)*(tl)^2*(Dl)^2+(2/1)*(h)^1*(Dh)^1+(-6/1)*(h)^1*(D1)^2+(4/1)*(h)^1*(te)^1*(Dh)^1*(De)^1+(-4/1)*(h)^1*(te)^1*(D1)^2*(De)^1+(6/1)*(h)^1*(tl)^1*(Dh)^1*(Dl)^1+(-4/1)*(h)^2*(D1)^2*(Dh)^1+(-2/1)*(z1)^1*(D1)^1+(-2/1)*(z1)^1*(h)^1*(D1)^1*(Dh)^1;
+print("CHECK|ordinary_graph|"+string(reduce(OrdinaryDifference,G)));
+ideal Rems;poly Remainder=reduce(EtaDifference,G);vector v;int k=0;poly H=0;
+while(1){Rems[k+1]=Remainder;v=linSyzSolve(Rems);if(v!=0){break;}k++;Remainder=reduce(ES*Remainder,G);}
+int j;for(j=1;j<=k+1;j++){H=H+v[j]*ES^(j-1);print("HCOEFF|"+string(j-1)+"|"+string(v[j]));}
+poly EtaFinal=H*EtaDifference;print("CHECK|eta_graph|"+string(reduce(EtaFinal,G)));
+matrix Witness=lift(J,ideal(OrdinaryDifference,EtaFinal));
+for(j=1;j<=4;j++){emit(Witness[j,1],"ordinary_witness_"+string(j));emit(Witness[j,2],"eta_witness_"+string(j));}
+print("STAGE_COMPLETE|second");quit;

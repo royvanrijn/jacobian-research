@@ -1,0 +1,273 @@
+{
+  "status": "PASS",
+  "jets": 32,
+  "bases": 16,
+  "prime": 11,
+  "maximum_degree": 3,
+  "results": [
+    {
+      "name": "13a_129",
+      "orbit_index": 976,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_129",
+      "orbit_index": 976,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_135",
+      "orbit_index": 498,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_135",
+      "orbit_index": 498,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_135",
+      "orbit_index": 968,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_135",
+      "orbit_index": 968,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_136",
+      "orbit_index": 976,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_136",
+      "orbit_index": 976,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_137",
+      "orbit_index": 463,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_137",
+      "orbit_index": 463,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_137",
+      "orbit_index": 972,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_137",
+      "orbit_index": 972,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_194",
+      "orbit_index": 969,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_194",
+      "orbit_index": 969,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_196",
+      "orbit_index": 495,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_196",
+      "orbit_index": 495,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_196",
+      "orbit_index": 969,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_196",
+      "orbit_index": 969,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_197",
+      "orbit_index": 974,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_197",
+      "orbit_index": 974,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_198",
+      "orbit_index": 495,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_198",
+      "orbit_index": 495,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_198",
+      "orbit_index": 974,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_198",
+      "orbit_index": 974,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_234",
+      "orbit_index": 35,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_234",
+      "orbit_index": 35,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_242",
+      "orbit_index": 495,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_242",
+      "orbit_index": 495,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_244",
+      "orbit_index": 35,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_244",
+      "orbit_index": 35,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_265",
+      "orbit_index": 479,
+      "tau": 4,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    },
+    {
+      "name": "13a_265",
+      "orbit_index": 479,
+      "tau": 8,
+      "degree": 3,
+      "oriented_relators": 13,
+      "all_rank_one_minors": true
+    }
+  ],
+  "conclusion": "All frozen degree3 jets satisfy every oriented relator and all meridian rank-one minors modulo11 in both embeddings. No finite-order obstruction found in this test; no actual char0 curve or all-order integrability claim.",
+  "replay": "Entrywise polynomial adjugates, scalar geometric-series inverses and all minors; shared source PD parser and inputs",
+  "input_sha256": {
+    "verify_meridian_jets.py": "c325365137de9ced525440ad0d81ccaa4a6055c530c6e2ee28429ee6a12e4fca",
+    "meridian_jet_results.json": "b4a006090e97cb7bc701842dd829964aac71ba25e4f40e8b2a2d3ad7e68e7336",
+    "meridian_jet_plan.json": "6080a13d14a3f9d9dd51119edb696692c5a8c10a643d941c92d0078c3496eda0",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+  }
+}

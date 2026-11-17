@@ -1,0 +1,85 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "certificate_sha256": "1389112456b0ed7befdd97f817f6564bbc42383d705e87ac7c80590a9a15db75",
+      "identities": 6
+    },
+    {
+      "case": 1,
+      "certificate_sha256": "8d610526fb8d8c88f126b818fb59c6d9f55816daab9443a0fb25e92fccdeaf1e",
+      "identities": 12
+    },
+    {
+      "case": 2,
+      "certificate_sha256": "2bb07cc5d54e82763f3a19663b15e80710aab3933ce33d730f6b008e190b51d0",
+      "identities": 5
+    },
+    {
+      "case": 3,
+      "certificate_sha256": "7be7176335ab8b483f17c8061c5ad212ad94a1b2321e0577fe896faa251d9809",
+      "identities": 7
+    },
+    {
+      "case": 4,
+      "certificate_sha256": "2467716087c7d1bc3e18e4e8c487d1082ca990b0309e52937556c6b2ae77beb6",
+      "identities": 10
+    },
+    {
+      "case": 5,
+      "certificate_sha256": "4eac318dfb305ccff4d7c418014af80ea9512707b9eefcff7d1f4ae851e73094",
+      "identities": 6
+    },
+    {
+      "case": 6,
+      "certificate_sha256": "1c18d7d0ded95838c15de9facc4df846e62b12a02a3eab791cf9bb79d979ab0c",
+      "identities": 6
+    },
+    {
+      "case": 7,
+      "certificate_sha256": "00d3b42b6fc26bed48db632caab34e03c3e90398bee00a138ff1e02b652d0382",
+      "identities": 4
+    },
+    {
+      "case": 8,
+      "certificate_sha256": "36f4a95d796c7051ef545d510c7a9ae838354d481144bc910dfe48280de600e2",
+      "identities": 7
+    },
+    {
+      "case": 9,
+      "certificate_sha256": "90cfcdfa4069c36626f9a96be3f355dbf38ca8c935f7608f242f3366f3bf531f",
+      "identities": 8
+    },
+    {
+      "case": 10,
+      "certificate_sha256": "a5c6aca55d94d86798d4ff073d822f2ae6f677eab7f699cd7ec15fd02cd6da45",
+      "identities": 3
+    },
+    {
+      "case": 11,
+      "certificate_sha256": "173f26ba29b69ef7ab689e6fa627aa212759838f88b08e36e064a12a13a7b213",
+      "identities": 3
+    },
+    {
+      "case": 12,
+      "certificate_sha256": "13644b74250d9d08d6f3f65ad8e63ac008d80a13fb0db5febddc508330f4619e",
+      "identities": 3
+    },
+    {
+      "case": 13,
+      "certificate_sha256": "d5ad403834450d12a482476a1e2f157c535c48988ff486969fb5132ed81abba1",
+      "identities": 3
+    },
+    {
+      "case": 14,
+      "certificate_sha256": "a2e6cf6f777823a23caf4649d051c629c213a9e1aff9e7f1ce03b5550a54b03f",
+      "identities": 3
+    }
+  ],
+  "identities": 86,
+  "primary_checkpoint_sha256": "0acd29848a0d542481b68685bcff5f1032e7f8cfb99e71de2944eb2f4852380b",
+  "scope": "Unit-ideal certificates require independent reconstruction and polynomial replay before a theorem is registered.",
+  "seconds": 0.604,
+  "source_sha256": "411ae388a142e0314e48f452a352028206639f8803512c4768d7767ef37d905c",
+  "status": "exact-primary-identities"
+}

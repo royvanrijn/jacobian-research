@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "claim": "KCUB42",
+  "integration_checker_sha256": "343fa28ab48aec1e76aa737e1fecb57cc08532b1e4f5ae01c20ebdf6f54a3384",
+  "main_receipt_sha256": "6b2b2e554b497753892f994d4b2ae2ceaab9e3692e5492e3989c34f80096e061",
+  "proof_sha256": "ce9f082d2fa330fa95619a0fde9df155a585914cc8500dd3ef16492a4d1193dd",
+  "all_rank_locus_import_and_parent_pins_current": true,
+  "source_degree7_field_kernel_dimension": 4,
+  "source_degree8_field_kernel_dimension": 7,
+  "independent_rank_minors": [
+    [
+      116,
+      866695135
+    ],
+    [
+      158,
+      224657276
+    ]
+  ],
+  "prime": 1000000007,
+  "uncapped_rational_target_degree_and_denominators": true,
+  "complete_target_locus": [
+    9,
+    27,
+    7,
+    17,
+    1
+  ],
+  "only_normalized_degree8_Keller_targets": "Y+(0,lambda,mu)*Y1^2",
+  "fixed_source_nonlinear_minimum": 19,
+  "source_affine_changes_of_new_degree8_family_open_at_KCUB42_stage": true,
+  "matching_control_global_improvement": false,
+  "primary_jobs_terminal_and_certificates_replayed": true,
+  "dependency_graph_acyclic": true,
+  "affected_method_reviews": 27,
+  "work_fingerprints_current": true,
+  "links_compilation_whitespace": true,
+  "previous_goal_turn_classification": "progress:KCUB41",
+  "this_goal_turn_classification": "progress:KCUB42 uncapped full target-field rigidity and complete first nonlinear layer",
+  "goal_complete": false,
+  "no_global_positive_bound_or_unrestricted_profile_change": true,
+  "next_gate": "Joint affine source/output sparsification of H+(0,lambda,mu)*H1^2,with full parameter strata;or genuinely nonlinear source coordination/changed construction.",
+  "navigation_attempts_current_parent_state": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    }
+  ],
+  "navigation_boundary": "Same final mathematical/metadata scopes as the freshly rerun parent audits;two unrelated missing artifacts block rendering. No generated-status hand edit or reconstruction."
+}

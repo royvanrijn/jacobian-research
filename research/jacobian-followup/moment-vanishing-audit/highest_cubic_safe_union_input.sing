@@ -1,0 +1,8 @@
+ring R=0,(s,ell_w,ell_t,ell_z,bminus2,bminus1,b0,b1,b2,cminus2,cminus1,c0,c1),dp;
+option(redSB);
+ideal I=c0+c1*s+s^3,2*ell_w+ell_z*s^2,ell_t+ell_z*s,2*b1*s^3+3*b2*s^4+4*bminus2,3*b1*s^2+4*b2*s^3+2*bminus1,b0+b1*s+b2*s^2,5*c1*s^3+2*cminus2+9*s^5,6*c1*s^2+2*cminus1+9*s^4;
+ideal E=eliminate(I,s);
+ring T=0,(ell_w,ell_t,ell_z,bminus2,bminus1,b0,b1,b2,cminus2,cminus1,c0,c1),dp;
+option(redSB);map phi=R,0,ell_w,ell_t,ell_z,bminus2,bminus1,b0,b1,b2,cminus2,cminus1,c0,c1;ideal J=phi(E);
+print("NULLCONE_BEGIN");J;print("NULLCONE_END");ideal ROD=cminus2,cminus1,c0,c1,bminus2,bminus1,b0,b1^2+2*ell_w,-b1*b2+2*ell_t,-b2^2+4*ell_z;
+ideal K=intersect(J,ROD);print("SAFE_UNION_BEGIN");K;print("SAFE_UNION_END");print("NULLCONE_DIM");print(dim(std(J)));print("SAFE_UNION_DIM");print(dim(std(K)));quit;

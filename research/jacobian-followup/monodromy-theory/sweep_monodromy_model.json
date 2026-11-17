@@ -1,0 +1,56 @@
+{
+  "ruled": {
+    "F4_polynomial": "Y1*w**3 + 2*Y1*w - 2*Y2*w**2 - 2*Y2 + Y3*w + 2*w**5/9 + 2*w**4/9 + 8*w**3/9 - 4*w**2/3",
+    "F4_geometric_group": "S5",
+    "universal_group": "S_N for every normalized ruled sweep satisfying the stated hypotheses"
+  },
+  "F5": {
+    "surface": [
+      "160*w**3/29 - 60*w**2/29 - 240*w*z/29 + 51*w/29 + 60*z/29",
+      "60*w**4/29 - 20*w**3/29 - 120*z**2/29 + 51*z/29",
+      "-48*w**5/29 + 15*w**4/29 + 240*w**3*z/29 - 17*w**3/29 - 60*w**2*z/29 - 240*w*z**2/29 + 51*w*z/29 + 30*z**2/29"
+    ],
+    "root_polynomial": "97556*Y1**3*w - 97556*Y1**2*Y2 + 201840*Y1**2*w**4 - 67280*Y1**2*w**3 - 146334*Y1**2*w**2 - 42891*Y1**2*w - 538240*Y1*Y2*w**3 + 201840*Y1*Y2*w**2 + 42891*Y1*Y2 + 807360*Y1*Y3*w**2 - 403680*Y1*Y3*w + 171564*Y1*Y3 + 222720*Y1*w**7 - 204160*Y1*w**6 - 119712*Y1*w**5 + 59160*Y1*w**4 + 41412*Y1*w**3 + 75429*Y1*w**2 - 25230*Y2**2 + 201840*Y2*Y3 - 742400*Y2*w**6 + 890880*Y2*w**5 - 417600*Y2*w**4 + 306240*Y2*w**3 - 88740*Y2*w**2 - 403680*Y3**2 + 890880*Y3*w**5 - 1113600*Y3*w**4 + 556800*Y3*w**3 - 459360*Y3*w**2 + 177480*Y3*w - 75429*Y3 + 20480*w**10 - 51200*w**9 + 57600*w**8 - 126720*w**7 + 234480*w**6 - 155448*w**5 + 65025*w**4 - 44217*w**3",
+    "transverse_equation": "Y1*w - Y2 - 100*w**4/29 + 40*w**3/29 + 240*w**2*z/29 - 51*w**2/29 - 60*w*z/29 - 120*z**2/29 + 51*z/29",
+    "linear_subresultant": "30*Y1*w/29 - 30*Y2/29 + 120*Y3/29 + 5760*w**5/841 - 4800*w**4/841 + 3240*w**3/841 - 1530*w**2/841 + z*(-120*Y1/29 - 9600*w**3/841 + 7200*w**2/841 - 1800*w/841 + 1530/841)",
+    "finite_prime": 7,
+    "witness": [
+      0,
+      1,
+      1
+    ],
+    "factors": [
+      "w + 2",
+      "w**2 + 2*w + 2",
+      "w**7 - 3*w**6 - 3*w**5 + w**4 - 2*w**3 - w**2 + 1"
+    ],
+    "factor_degrees": [
+      1,
+      2,
+      7
+    ],
+    "discriminant": 8178489647884029444346867341842306456622078882395837999409070290869458984032273951557401415679737856000000,
+    "discriminant_squareclass": 6,
+    "discriminant_square_root_after_dividing_6": 36919935102606445048315072306972964449013490253824000,
+    "geometric_group": "A10",
+    "arithmetic_group": "S10",
+    "constant_field": "Q(sqrt(6))",
+    "stage": [
+      "20*v1/29 + 1",
+      "-49*v1/29 + 8*v2 + 1",
+      "4197*v1**2/1682 - 69*v1/29 + 9*v2 + v3 + 1"
+    ],
+    "jet_polynomial_term_counts": [
+      24,
+      34,
+      54
+    ],
+    "actual_global_Jacobian": "160/29",
+    "source_dimension": 4
+  },
+  "scope": {
+    "general_PSL2_11_action_decided": false,
+    "full_classification_complete": false
+  },
+  "assurance": "Universal geometric proof and finite-different argument written; Jordan theorem attributed."
+}

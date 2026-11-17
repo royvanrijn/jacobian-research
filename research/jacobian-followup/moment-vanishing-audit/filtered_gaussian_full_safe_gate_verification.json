@@ -1,0 +1,21 @@
+{
+  "completed": true,
+  "canonical_proof_sha256": "4570194d6fbf3b0d92c0b34d647f6adf1fb129defdeaa5ade1a4677134c81f5e",
+  "producer_sha256": "d0dc25545e0a632c353a6c532421091a79426d3d1b4387a8d2d213ee1f001b34",
+  "checker_sha256": "fd681a8cf06adde6ea84c5acd4f2bf228e4de50f3d3e2527deec4166c08ca156",
+  "certificate_sha256": "a0e144511379fb0681e367c681e32b53b3610098e881dbb17e89de6780efedd9",
+  "runtime_sha256": "845dc381c4458598a0223755cc18b709c314ecc420c10cc20911bdfec8ddb50e",
+  "exact_controls": {
+    "gate_models": 8,
+    "vector_gates": 1,
+    "Newton_steps": 2,
+    "original_Wick_identities": 25,
+    "rational_pole_controls": 5,
+    "rejections": 4
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "universal_claims_use_written_proofs": true,
+  "general_unfiltered_safety_implies_purity_resolved": false
+}

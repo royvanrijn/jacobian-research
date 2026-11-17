@@ -1,0 +1,23 @@
+{"stage": "family", "coefficients": 70, "factors": 41}
+{"stage": "projection", "done": 25, "total": 537, "factors": 9}
+{"stage": "projection", "done": 50, "total": 537, "factors": 18}
+{"stage": "projection", "done": 75, "total": 537, "factors": 43}
+{"stage": "projection", "done": 100, "total": 537, "factors": 66}
+{"stage": "projection", "done": 125, "total": 537, "factors": 83}
+{"stage": "projection", "done": 150, "total": 537, "factors": 108}
+{"stage": "projection", "done": 175, "total": 537, "factors": 133}
+{"stage": "projection", "done": 200, "total": 537, "factors": 159}
+{"stage": "projection", "done": 225, "total": 537, "factors": 184}
+{"stage": "projection", "done": 250, "total": 537, "factors": 209}
+{"stage": "projection", "done": 275, "total": 537, "factors": 234}
+{"stage": "projection", "done": 300, "total": 537, "factors": 253}
+{"stage": "projection", "done": 325, "total": 537, "factors": 278}
+{"stage": "projection", "done": 350, "total": 537, "factors": 303}
+{"stage": "projection", "done": 375, "total": 537, "factors": 327}
+{"stage": "projection", "done": 400, "total": 537, "factors": 350}
+{"stage": "projection", "done": 425, "total": 537, "factors": 373}
+{"stage": "projection", "done": 450, "total": 537, "factors": 397}
+{"stage": "projection", "done": 475, "total": 537, "factors": 416}
+{"stage": "projection", "done": 500, "total": 537, "factors": 440}
+{"stage": "projection", "done": 525, "total": 537, "factors": 462}
+{"stage": "projection", "status": "complete", "sources": 537, "factors": 469}

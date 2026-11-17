@@ -1,0 +1,152 @@
+{
+  "claim": "QVL1",
+  "status": "PASS",
+  "ordinary_limit_controls": [
+    {
+      "mate_u_exponent": "1/2",
+      "commutator_u_exponent": "-1/2",
+      "leading_identity": "PASS"
+    },
+    {
+      "mate_u_exponent": "1",
+      "commutator_u_exponent": "0",
+      "leading_identity": "PASS"
+    },
+    {
+      "mate_u_exponent": "3",
+      "commutator_u_exponent": "2",
+      "leading_identity": "PASS"
+    }
+  ],
+  "generic_order_exceeds_limit_order": {
+    "generic": 5,
+    "limit": 2
+  },
+  "Euler_finite_difference_controls": [
+    {
+      "mate_v_exponent": "1/2",
+      "finite_difference_identity": "PASS"
+    },
+    {
+      "mate_v_exponent": "2",
+      "finite_difference_identity": "PASS"
+    },
+    {
+      "mate_v_exponent": "0",
+      "finite_difference_identity": "PASS"
+    },
+    {
+      "mate_v_exponent": "-1",
+      "finite_difference_identity": "PASS"
+    }
+  ],
+  "proper_power_transport_controls": [
+    {
+      "cyclic_degree": 2,
+      "root_multiplicity": 2,
+      "ordinary_coordinate": "2*w**3/3",
+      "generic_order": 2,
+      "limit": "2*a**2*h**2 - 4/h - 3*r/h**2"
+    },
+    {
+      "cyclic_degree": 2,
+      "root_multiplicity": 3,
+      "ordinary_coordinate": "3*w**5/5",
+      "generic_order": 3,
+      "limit": "2*a**3*h**3 - 4/h - 3*r/h**2"
+    },
+    {
+      "cyclic_degree": 2,
+      "root_multiplicity": 5,
+      "ordinary_coordinate": "5*w**9/9",
+      "generic_order": 5,
+      "limit": "2*a**5*h**5 - 4/h - 3*r/h**2"
+    },
+    {
+      "cyclic_degree": 3,
+      "root_multiplicity": 2,
+      "ordinary_coordinate": "2*w**5/5",
+      "generic_order": 2,
+      "limit": "2*a**2*h**2 - 4/h - 3*r/h**2"
+    }
+  ],
+  "decaying_order7_correction_same_limit": "PASS",
+  "two_repeated_root_polynomial_limit": "-4*a**2 + 3*r + 4*I",
+  "ordinary_Newton_intermediate_positive_power": "PASS",
+  "Euler_linear_limit": "PASS",
+  "Euler_ordering_correction": "E*(E-2*h)",
+  "proper_power_cubic_companion_degree": 1,
+  "proper_power_cubic_rank_uses_written_QKR1_framework": {
+    "pushforward": 6,
+    "inverse_Fourier": 3
+  },
+  "leading_linear_cubic_Newton_control": {
+    "growing_branch_polynomial": "a*h*(a**2*h + 1)",
+    "growing_momentum_branches": 2,
+    "ordinary_companion_degree": 2,
+    "pushforward_rank": 6,
+    "inverse_Fourier_rank": 4,
+    "rank_uses_written_Newton_and_QKR1_proof": true
+  },
+  "positive_finite_controls": [
+    "v_linear_H",
+    "v_square_constant_H",
+    "different_proper_power_face"
+  ],
+  "commuting_Darboux_controls": [
+    {
+      "operator": "L2",
+      "limit": "a**2"
+    },
+    {
+      "operator": "L3",
+      "limit": "a**3"
+    },
+    {
+      "operator": "L2+L3",
+      "limit": "a**3 + a**2"
+    },
+    {
+      "operator": "L2**2+L2*L3",
+      "limit": "a**5 + a**4"
+    }
+  ],
+  "formal_mate_controls": [
+    {
+      "jet_index": 1,
+      "defect_h_order": 3,
+      "mate_momentum_order": 1
+    },
+    {
+      "jet_index": 4,
+      "defect_h_order": 6,
+      "mate_momentum_order": 4
+    }
+  ],
+  "hashes": {
+    "ALGEBRAIC_INFINITY_LIMITS.md": "71a4f107941fd6ee0abc7fc236829f6cafcba7d2f40c5b0bb50e3f379091b669",
+    "check_infinity_limits.py": "2e5e2d6b9a6927e12b63e7a2cee9626e82cd5ee3047b80a022bb26c572afe5ba",
+    "CYCLIC_INFINITY_MATE_OBSTRUCTION.md": "55350e7dde471f16e5993452cf2697439f58ba530e8b4778ad285bab36b3bb65",
+    "infinity_mate_controls.json": "44361af3db55b7e42899bfc107382217e1300177fe325948a196fcb94ff61226",
+    "FOURIER_CYCLIC_RANK_BUDGET.md": "3ab7401c3fcda7a8bc60b42ece8729a745be810605dc19a6118220ab608ea1ce",
+    "fourier_rank_budget_controls.json": "61a84afaf30d2c6609c97a36c06ef7c116a707f9c765e157eaa657882734f4e7"
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/math-ph/0206029",
+      "used": "Section2 bounded-coefficient bispectral context only; no classification theorem imported."
+    },
+    {
+      "source": "https://arxiv.org/html/2210.00257",
+      "used": "Theorem2.8 leading-bracket framework; context only, no classification theorem imported."
+    },
+    {
+      "source": "https://arxiv.org/html/1111.6100",
+      "used": "Remark1.13 and Section2 weighted/fractional Weyl leading calculus; the infinity-limit and whole-curve proof is written directly."
+    }
+  ],
+  "coverage_boundary": "Exact finite scalar Ore identities, full repeated-root transforms, ordinary/Euler limits, finite Newton examples, a proper-power cubic companion, positive finite pairs and finite formal-mate controls. Universal no-mate, all degrees and algebraic covers use written Puiseux/transport proofs and QVM1. The complete v-linear class requires bounded lower coefficients, unlike the primitive QVM1 extension to arbitrary fractional growth below one. Other leading faces, H of degree<=1, unrestricted deformed first images and non-scalar carriers remain outside the exclusion.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

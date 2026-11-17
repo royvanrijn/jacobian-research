@@ -1,0 +1,28 @@
+{
+  "previous_goal_turn": "progress",
+  "new_claim_ids": [
+    "KMFI12",
+    "KMFI13"
+  ],
+  "changed_claim_ids": [
+    "OP-KMON"
+  ],
+  "preexisting_entry_count": 1812,
+  "preexisting_entries_preserved_without_change": 1811,
+  "scope_fingerprints": {
+    "OP-KMON": "2d6b9ffa758f39c3",
+    "KMFI12": "0ea72ef6b27d4946",
+    "KMFI13": "ef85e49c6e0993c0"
+  },
+  "updated_lesson": "METHOD-KELLER-AFFINE-INERTIA",
+  "updated_work": "WORK-KMON",
+  "actual_affine_space_groups": [
+    "A_(4j+1), j>=1",
+    "A12"
+  ],
+  "priority": "Attributed Kistner--Shaska constructions; not new realization claims.",
+  "corrected_scope": "Some proper alternating simple actions are realized; specified PSL2(11) actions remain open.",
+  "PSL2_11_realized": false,
+  "complete_classification": false,
+  "goal_status": "active"
+}

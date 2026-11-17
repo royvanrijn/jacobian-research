@@ -1,0 +1,124 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYLX0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/NAMBU_SOBOLEV_LATTICE_AND_FINITE_DERIVATIVE_CORE.md"
+    },
+    {
+      "claim": "HC4MYLX1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/NAMBU_SOBOLEV_LATTICE_AND_FINITE_DERIVATIVE_CORE.md"
+    },
+    {
+      "claim": "HC4MYLN0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CONTRACTING_SOURCE_GRADINGS_AND_FINITE_LATTICES.md"
+    },
+    {
+      "claim": "HC4MYKX0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md"
+    },
+    {
+      "claim": "HC4MYMD0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/SMOOTH_PROJECTIVE_PENCILS_WITH_ARBITRARY_GENUS.md"
+    },
+    {
+      "claim": "HC4MYJY0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/TORUS_CRITICAL_CURVES_AND_ALL_COORDINATE_VISIBILITY.md"
+    },
+    {
+      "claim": "PF2RULED59",
+      "canonical_source": "jacobian-followup/affine-complements/NODAL_DEFORMATION_AND_NONPOSITIVE_NORMAL.md"
+    },
+    {
+      "claim": "PF2RULED123",
+      "canonical_source": "jacobian-followup/affine-complements/INTERMEDIATE_CRITICAL_AXIS_DESCENT_AND_AFFINE_CUSP_PROFILES.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "jacobian-followup/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "jacobian-followup/hc4-triangular-graphs/NAMBU_SOBOLEV_LATTICE_AND_FINITE_DERIVATIVE_CORE.md": "f710c95fd5d7d4a8e6aa0dd49f5db53988b9672869beb488103b0347d5191dd1",
+    "jacobian-followup/hc4-triangular-graphs/verify_nambu_sobolev_core.py": "81a02f0c127942a240dede4337f991bcbb616730dc8261ef47a57fe9f99f7270",
+    "jacobian-followup/hc4-triangular-graphs/CONTRACTING_SOURCE_GRADINGS_AND_FINITE_LATTICES.md": "e6c5c265e96b59d98e6b776d7a76237f7dabcdf0917dd00288fbc01c450cbb53",
+    "jacobian-followup/hc4-triangular-graphs/verify_contracting_lattice.py": "8fd0ebd438d02959a03e477b76c8e95fc1afda0f9ec4a079884d67e581c05c21",
+    "jacobian-followup/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md": "beaced18024b06fc918d9e665929ff2ef4820e3cffa5a18493c5f9ac2bcd53e9",
+    "jacobian-followup/hc4-triangular-graphs/verify_algebraic_flow_descent.py": "a2317510797200b71dad4d6dd7d730555f88e3abcc7e55f0d157954fb3613c2f",
+    "jacobian-followup/hc4-triangular-graphs/SMOOTH_PROJECTIVE_PENCILS_WITH_ARBITRARY_GENUS.md": "0efbf47c3610abd8f4d282d734a1f5320173bec5ce5667bbd5910cc64ca0a013",
+    "jacobian-followup/hc4-triangular-graphs/verify_smooth_projective_pencils.py": "bd30f4e4282cce9c042cc3ca2480581be3e37858ba1e7357b405d774294b3810",
+    "jacobian-followup/hc4-triangular-graphs/TORUS_CRITICAL_CURVES_AND_ALL_COORDINATE_VISIBILITY.md": "b55ed3ca20049478d887643611b1b7e4a188df54e7a5b549887678db6cd3f10a",
+    "jacobian-followup/hc4-triangular-graphs/verify_torus_coordinate_visibility.py": "4ada6e8229ede2a158de13037c02a17a9292f854a5d5d4a321d35f479f7d99cf",
+    "jacobian-followup/affine-complements/NODAL_DEFORMATION_AND_NONPOSITIVE_NORMAL.md": "2b855873b6e3b4d130598b49b4299bfad075a3018de60aa88d5a18fafa0cfa92",
+    "jacobian-followup/affine-complements/verify_nodal_deformation.py": "b5c129e034f7eba16122a286b1ca16e5b1223f7b2fc70401c3d7e7533abb34f4",
+    "jacobian-followup/affine-complements/INTERMEDIATE_CRITICAL_AXIS_DESCENT_AND_AFFINE_CUSP_PROFILES.md": "82f1db79cf1b6ccbb686d70a4334f6763aa0084425c54798e4682d59f6f6f921",
+    "jacobian-followup/affine-complements/verify_intermediate_critical_axis.py": "90b8190d00ef487c842da2422724df2de7cb8ff6c86ded1036ae2ac4b977163c",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "jacobian-followup/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "source_and_target_Euler_fields_distinguished": true,
+    "all_centers_and_polynomial_target_frames": true,
+    "all_finite_radial_stable_source_modules_lie_in_target": true,
+    "locally_finite_part_exactly_target_ring": true,
+    "all_polynomial_eigenfunctions_descend": true,
+    "whole_finite_order_trace_discriminant_connection_identity": true,
+    "intermediate_plane_not_required": true,
+    "immersive_binary_affine_profile_nonpositive_normal_degree_by_prior_theorem": true,
+    "cusp_local_S3_prevents_Orevkov_factorization": true,
+    "prior_additive_and_nodal_results_credited": true,
+    "external_review_deferred": true,
+    "full_normalization_or_codifferent_invariance_automatic": false,
+    "base_derivation_extended_regularly_to_arbitrary_finite_cover": false,
+    "source_radial_lift_assumed_locally_finite_or_complete": false,
+    "finite_order_trace_matrix_assumed_before_stability": false,
+    "all_immersive_polynomial_curve_complements_abelian": false,
+    "binary_affine_quotients_excluded": false,
+    "one_cusp_Orevkov_factorization_assumed": false,
+    "new_external_theorem_imported": false,
+    "new_primary_cache_created": false,
+    "registered_mathematical_checker_replayed": false,
+    "published_quartic_plane_queue_reopened": false,
+    "Miyanishi_odd_plane_theorem_adopted": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "external_imports": [],
+  "new_primary_caches": [],
+  "literature_context_only": [
+    {
+      "url": "https://arxiv.org/html/math/0110286",
+      "inspection": "Primary Definition1,Definition2,Theorem1 and complete local proof,Section2 Nori hypothesis,and explicit negativity/moduli conditions read in HTML. No blanket abelianity or new theorem import;retained PF59 supplies the precise nodal theorem."
+    },
+    {
+      "url": "https://www.math.univ-toulouse.fr/~orevkov/fg.pdf",
+      "inspection": "Primary author text introduction,TheoremA,negativity definition and Added-in-2003 withdrawal read via web. No complete-paper visual audit or new import/cache claimed."
+    },
+    {
+      "url": "https://msp.org/pjm/1966/16-1/pjm-v16-n1-p16-p.pdf",
+      "inspection": "Seidenberg normalization result identified by primary search excerpt only,NOT read in full or imported. Proof instead uses a stable finite order trace Gram determinant,avoiding arbitrary normalization stability."
+    },
+    {
+      "url": "https://www.numdam.org/item/10.24033/bsmf.2692.pdf",
+      "inspection": "Primary Dubouloz-Kishimoto introduction on affine ruled surfaces consulted only. No surface recognition theorem adopted or intermediate plane inferred."
+    }
+  ],
+  "proof_boundary": "New all-degree TARGET radial finite-module/eigenfunction rigidity uses retained no-A1-component input,uniform pole bounds,and an elementary finite-order logarithmic trace-discriminant identity. Contrast with LN SOURCE contraction and LX additive proof explicit. Direct PF123/PF59 transfer excludes positive normal degree ONLY for immersive binary-affine profile;one-cusp S3 invalidates Orevkov factorization. No full binary-affine or HC4 exclusion,automatic lattice invariance,flow completeness,new imports/caches,or registered checker replay.",
+  "development_boundary": "TWO pre-registration new checker invocations. First stopped at an automated positivity-predicate assertion for q+ell*e (q,e positive,ell nonnegative),before any receipt. Replaced the unsupported predicate inference by checking its explicit assumptions;nonvanishing is the written elementary arithmetic proof. No mathematical formula or theorem was changed. Second invocation PASS85,24algebraic,0.126sec. No registered checker replay;no independent replay/formal verification/external review."
+}

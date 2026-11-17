@@ -1,0 +1,404 @@
+{
+  "name": "p2q1-quartic-first-cb",
+  "weights": [
+    2,
+    -1,
+    -1
+  ],
+  "family": "quartic-first",
+  "chart": "cb",
+  "parameter_names": [
+    "q",
+    "s",
+    "t",
+    "r",
+    "rho"
+  ],
+  "source_sha256": "750df72d55857396f51a15e086e307e420e6d980d2ab9d4eba2038e9036d4847",
+  "binary_lines": [
+    "c",
+    "b"
+  ],
+  "Q": [
+    {
+      "exponent": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "S": [
+    {
+      "exponent": [
+        2,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "T": [],
+  "U": [
+    {
+      "exponent": [
+        3,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "R": [
+    {
+      "exponent": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "exponent": [
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "-2"
+    },
+    {
+      "exponent": [
+        3,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "-1/3"
+    }
+  ],
+  "outputs": [
+    [
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-2"
+      },
+      {
+        "exponent": [
+          1,
+          3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-1/3"
+      },
+      {
+        "exponent": [
+          2,
+          3,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          1,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ]
+  ],
+  "generator_monomials": [
+    [
+      2,
+      0,
+      4
+    ],
+    [
+      2,
+      1,
+      3
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      4,
+      0
+    ],
+    [
+      3,
+      1,
+      5
+    ],
+    [
+      3,
+      2,
+      4
+    ],
+    [
+      3,
+      4,
+      2
+    ],
+    "saturation"
+  ],
+  "generators": [
+    [
+      {
+        "exponent": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-4"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "-6"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "3"
+      },
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "4"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-1"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "-8"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "6"
+      },
+      {
+        "exponent": [
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "8"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "exponent": [
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-4/3"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "exponent": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "1"
+      }
+    ]
+  ]
+}

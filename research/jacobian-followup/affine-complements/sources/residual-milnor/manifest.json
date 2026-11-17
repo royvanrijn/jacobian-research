@@ -1,0 +1,119 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED115",
+  "sources": [
+    {
+      "path": "sources/universal-regular-end/garcia-barroso-ploski-milnor-2018.pdf",
+      "url": "https://ergarcia.webs.ull.es/2018-GB-Ploski-libro-Campillo.pdf",
+      "title": "Evelia R. Garcia Barroso and Arkadiusz Ploski, On the Milnor Formula in Arbitrary Characteristic (2018),119-133",
+      "used": "Proposition2.1(ii),(iii),(v), full proof and Corollary3.4; ordinary Milnor equals barred conductor invariant in characteristic ZERO. Polar proof for chosen irreducible branch and reduced residual decomposition, not positive-characteristic extrapolation.",
+      "bytes": 290262,
+      "sha256": "4de1abd582b340341feb2a3226de91dda2c1c7d14f63b1dd436a065a177b498b",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        3,
+        4,
+        10
+      ]
+    },
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Allen Hatcher, Notes on Basic 3-Manifold Topology",
+      "used": "Theorem1.9 JSJ context; Proposition1.11 and full proof vertical/horizontal essential surfaces; Proposition1.13 essential surfaces; Lemmas1.14-1.15 boundary-fibre uniqueness with all product/Klein exceptions. Direct vertical-torus argument checks NEGATIVE orbifoldEuler for ALL lifted algebraic-knot pieces; no general Seifert descent is imported.",
+      "bytes": 384715,
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        15,
+        17,
+        18,
+        20,
+        21
+      ]
+    },
+    {
+      "path": "sources/universal-regular-end/lokteva-iterated-surgery-2023.pdf",
+      "url": "https://eprints.gla.ac.uk/302069/2/302069.pdf",
+      "title": "Lisa Lokteva, Surgeries on Iterated Torus Knots Bounding Rational Homology 4-Balls, author version (2023)",
+      "used": "Proposition5: all algebraic knots are iterated torus knots with winding>=2 and strict alpha_i>p_i*p_(i-1)*alpha_(i-1). Used for unbounded adjacent fibre mismatch; no surgery/filling classification imported.",
+      "bytes": 2314876,
+      "sha256": "67da15dccaf283d4e6423f748f7777c083f95efa67c1e38926525fbc702c5d0b",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        9
+      ]
+    },
+    {
+      "path": "sources/quartic-cabling/ito-cable-slopes.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/690DE16138573D0051FF223F9269C77C/S0008439520000338a.pdf/note_on_chirally_cosmetic_surgery_on_cable_knots.pdf",
+      "title": "Tetsuya Ito, A Note on Chirally Cosmetic Surgery on Cable Knots, Canad.Math.Bull64(2021),163-173",
+      "used": "Section2 cable and peripheral conventions. Its (p,q) uses windingq; new proof writes windingp_i and coefficientalpha_i. Actual cable slopes and fibre framing retained; cosmetic surgery theorem NOT imported.",
+      "bytes": 404165,
+      "sha256": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        3
+      ]
+    },
+    {
+      "path": "../jc2-omitted-divisors/GLOBAL_LEDGER.md",
+      "url": "retained:PF2OMIT2",
+      "title": "Original finite all-prime Euler ledger",
+      "used": "All r omitted primes retained; actual original finite map and whole U=A2 required.",
+      "bytes": 10046,
+      "sha256": "e3b6fa954ecd67be226a87992707a67207aa377c37bad6257b5f3cbad0476ecb",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": []
+    },
+    {
+      "path": "../jc2-omitted-divisors/RESIDUE_LEDGER.md",
+      "url": "retained:PF2OMIT6",
+      "title": "Normalized local residue/excess ledger",
+      "used": "eta=ell-e*q, not prime-indexell-e; d-1=sum ef+sumeta.",
+      "bytes": 9598,
+      "sha256": "b0c207ffb6fe2736937cdabffb1fe5266f4f936143b2807dd571f431df08a8b9",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": []
+    },
+    {
+      "path": "TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md",
+      "url": "retained:PF2RULED105",
+      "title": "Cyclic-axis geometry, index2/3 local analysis and genuine finite families",
+      "used": "Borisov power-map LOCATION; general rank1/rank0 local proofs; smoothq2/e3 and A1quotient both preserved.",
+      "bytes": 15652,
+      "sha256": "f1d141c5e0cc7eabd45a08225a7b90941adb5ca57bc8e7912181a629479ef818",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": []
+    },
+    {
+      "path": "CYCLIC_QUOTIENT_ORDER_AND_MORSE_RESIDUE_BUDGET.md",
+      "url": "retained:PF2RULED106",
+      "title": "All-index first conductor intersection and marked cyclic type",
+      "used": "I(A,H)=nq(c-1)+1; local coefficientgivesn<=e-1/gcd(n,e)1; scalarMorse condition not used in new identity.",
+      "bytes": 13858,
+      "sha256": "a6ced3bb14419946acf2ee5318161e8fe02d85cc8fb931fcfc0b2a99223c4e13",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": []
+    },
+    {
+      "path": "COPRIME_LEADING_FORMS_AND_DEGENERATE_RESIDUE_BUDGET.md",
+      "url": "retained:PF2RULED107",
+      "title": "Genuine degree12/e9 A1 cover",
+      "used": "Actual finite high-index countercontrol has residual ordinary triple point, mu4; wrong whole-plane open.",
+      "bytes": 9797,
+      "sha256": "bd6c88e3048dc84de046bb1aed99f19afd35520eebc97fd1de5f1202ce60af1b",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": []
+    },
+    {
+      "path": "TORUS_CUSP_SOLID_TORUS_EXCESS_AND_FIVE_SIXTHS_BOUND.md",
+      "url": "retained:PF2RULED114",
+      "title": "All-degree torus-cusp bound and full-residue cost",
+      "used": "After deriving a torusknot in equalitycase, usew<=5eta-2delta andq|delta. Also earlier bound implies d>=5f+ceil(7f/5)+3/allf1through15; credit correct.",
+      "bytes": 13172,
+      "sha256": "a8f5a9e6ef317dfb03c915b0eaf33e6e7136616e1d2d35c130e2be4bdb204420",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": []
+    }
+  ],
+  "characteristic_zero_required": true,
+  "polar_Milnor_and_JSJ_inputs_imported": true,
+  "residual_summation_and_finite_cover_slope_argument_written": true,
+  "all_residue_one_through_degree15_credited_to_PF114": true,
+  "universal_claims_from_finite_controls": false,
+  "historical_priority_claimed": false,
+  "formal_verification": false,
+  "external_review": false
+}

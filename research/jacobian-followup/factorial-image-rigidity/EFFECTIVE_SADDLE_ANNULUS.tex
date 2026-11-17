@@ -1,0 +1,264 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{An effective saddle annulus for the exponent-six factorial polynomials}
+\author{Internal analytic derivation; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+Put
+\[
+ P_n(z)=\sum_{k=0}^n\binom nk(6k)!z^{n-k},\qquad
+ I_n(w)=\int_0^\infty(w+s^6)^n e^{-ns}\,ds.
+\]
+Then $P_n(n^6w)=n^{6n+1}I_n(w)$. The overarching objective remains a
+proof or counterexample for Factorial and/or Strong Factorial. The focused
+exponent-six endpoint is effective eventual simplicity, followed by an exact
+finite-prefix check. This note closes two geometric regions in that analytic
+programme; it does not prove simplicity, give its cutoff, or verify a prefix.
+No short-interval or density theorem is used.
+The subsequent \href{EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex}{effective simplicity proof}
+now completes the ordinary exponent-six two-term family at every index,
+with simplicity cutoff $10000$ and an exact finite prefix. The annulus
+results below remain valid as the preceding localization step.
+
+\section{The effective conclusion}
+\begin{theorem}\label{thm:annulus}
+For every $n\ge1$, every zero of $P_n(n^6w)$ satisfies $|w|<2800$.
+For every $n\ge10^6$, the stronger enclosure is
+\[
+                         1<|w|<2800.                   \tag{1}
+\]
+More precisely, for $|w|\le1$, let $s_0=s_0(w)$ be the unique solution of
+$w=s^5(6-s)$ with $|s_0-6|<10^{-3}$. Put
+\[
+ \Phi_0=\log(w+s_0^6)-s_0,\qquad a=1-5/s_0,
+\]
+using the analytic logarithmic chart near $s=6$. For $n\ge10^6$,
+\[
+ \left|I_n(w)-e^{n\Phi_0}\sqrt{\frac{2\pi}{na}}\right|
+ <\frac{e^{n\operatorname{Re}\Phi_0}}{\sqrt n},\qquad
+ |I_n(w)|>\frac{4e^{n\operatorname{Re}\Phi_0}}{\sqrt n}. \tag{2}
+\]
+The square root is the branch obtained from $a=1/6$ at $w=0$.
+The integer $10^6$ is a cutoff for this inner zero exclusion only.
+\end{theorem}
+
+\section{The outer enclosure}
+Write $a_k=\binom nk(6k)!$. Monotone integral bounds on $\log(k!)$ give
+$k!\ge(k/e)^k$ and $(6k)!\le6ek(6k/e)^{6k}$. For $3\le k\le n$,
+\[
+ \frac{a_k^{1/k}}{n^6}
+ \le 6^6e^{-5}(k/n)^5(6ek)^{1/k}
+ <4\cdot6^6(3/8)^5=\frac{177147}{128}<1400.
+\]
+Here $(6et)^{1/t}$ decreases for $t\ge3$, and
+$(18e)^{1/3}<4$ and $8/3<e<3$. The other cases satisfy
+$a_1/n^6\le720$ and, when $n\ge2$,
+$a_2^{1/2}/n^6\le\sqrt{12!/2}/32<500$.
+Thus, for $|z|\ge2800n^6$,
+\[
+ \left|\sum_{k=1}^n a_kz^{-k}\right|<\sum_{k=1}^n2^{-k}<1.
+\]
+This proves the outer assertion without an asymptotic argument.
+
+\section{The inner disk: the saddle and a local Gaussian estimate}
+Set $\delta=1/1000$, $r=1/4$ and $G(x)=6\log x-x$.
+On $|s-6|=\delta$,
+$|s^5(6-s)|\ge(6-\delta)^5\delta>1$.
+Rouch\'e's theorem gives the unique $s_0=\alpha+i\beta$ in that disk,
+for every $|w|\le1$. The saddle is simple and depends analytically on $w$.
+Choose near it
+\[
+ \Phi(s,w)=6\log s+\log(1+w/s^6)-s.
+\]
+Then $\Phi_s(s_0,w)=0$, $\Phi_{ss}(s_0,w)=-a$, and
+\[
+ \operatorname{Re}a>1/7,\qquad |a|<1/5.                 \tag{3}
+\]
+The first bound follows from
+$\operatorname{Re}a\ge1-5/(6-\delta)>1/7$; the second follows from
+$|a|\le(1+\delta)/(6-\delta)<1/5$.
+Writing $S=\operatorname{Re}\Phi_0$ and using $w+s_0^6=6s_0^5$ gives
+\[
+ S\ge G(6)+5\log(1-\delta/6)-\delta
+    >G(6)-1/500>47/10.                                \tag{4}
+\]
+For the last inequality, $\log6>179/100$ suffices.
+
+For $|s|\ge5$ and $|w|\le1$, differentiation of
+$\log(1+w/s^6)$ as an absolutely convergent power series shows
+$|\Phi_{sss}|<1$. Indeed, putting $x=5^{-6}$, a rational upper bound is
+\[
+ \frac1{125}\left(12+
+ \frac{216x(1+x)}{(1-x)^3}+
+ \frac{108x}{(1-x)^2}+\frac{12x}{1-x}\right)<1.          \tag{5}
+\]
+The entire segment $s_0+[-r,r]$ has modulus greater than five, so
+\[
+ \Phi(s_0+t,w)=\Phi_0-at^2/2+U(t),\qquad
+ |U(t)|\le|t|^3/6 \quad (|t|\le r).
+\]
+Using $|e^v-1|\le |v|e^{|v|}$ and (3), the local integral differs from
+$e^{n\Phi_0}\int_{-r}^r e^{-nat^2/2}\,dt$ by at most
+\[
+ e^{nS}\frac n6\int_{\mathbb R}|t|^3
+       e^{-n(1/14-1/24)t^2}\,dt
+ =e^{nS}\frac{4704}{25n}<e^{nS}\frac{189}{n}.           \tag{6}
+\]
+Completing the Gaussian integral adds an error at most
+\[
+              e^{nS}\frac{56}{n}e^{-n/224}.            \tag{7}
+\]
+Since $\operatorname{Re}a>0$, its complete value is
+$e^{n\Phi_0}\sqrt{2\pi/(na)}$, whose modulus exceeds
+$5e^{nS}/\sqrt n$ by $|a|<1/5$ and $\pi>5/2$.
+
+\section{The complete contour and all its tails}
+For each fixed $n,w$, the integrand $(w+s^6)^ne^{-ns}$ is entire.
+A rectangle with right side tending to positive infinity therefore gives
+\[
+ I_n(w)=\int_0^{i\beta}(w+s^6)^ne^{-ns}\,ds
+       +\int_0^\infty(w+(x+i\beta)^6)^ne^{-n(x+i\beta)}\,dx. \tag{8}
+\]
+The right side of the rectangle vanishes because its exponential decay
+dominates the fixed polynomial. This applies for either sign of $\beta$;
+no branch cut or neglected contour piece is involved. The local integral
+above is precisely the part with $|x-\alpha|\le r$.
+
+On the vertical segment, $|\beta|\le\delta$ gives the upper bound
+\[
+ \delta(1+\delta^6)^n<e^{nS}\delta e^{-4n}.             \tag{9}
+\]
+On $0\le x\le4$, put $u=x+\delta$. Since $u^6e^{-u}$ is increasing for
+$u<6$,
+\[
+ |w+(x+i\beta)^6|e^{-x}
+ \le (1+u^6)e^{-x}
+ \le e^\delta+(4+\delta)^6e^{-4}<83<e^{23/5}.
+\]
+The two numerical comparisons follow from $e^\delta\le1000/999$,
+$e>8/3$, and
+$(8/3)^4\sum_{j=0}^4(3/5)^j/j!>83$.
+Together with (4), this interval contributes at most
+\[
+                         4e^{nS}e^{-n/10}.             \tag{10}
+\]
+
+For $x\ge4$, the pointwise logarithmic estimate is
+\[
+ \log|w+(x+i\beta)^6|-x
+ \le G(x)+\frac{3\delta^2}{x^2}+\frac1{x^6}
+ <G(x)+1/4000.                                        \tag{11}
+\]
+At a zero of its argument the logarithmic upper bound is interpreted by
+continuity. For $4\le x\le8$, $G''(x)=-6/x^2\le-3/32$, so
+\[
+ G(x)\le G(6)-\frac3{64}(x-6)^2.
+\]
+Outside the local interval, $|x-6|\ge r-\delta>6/25$.
+The loss relative to $S$ in (11) is therefore greater than
+\[
+ \frac3{64}(6/25)^2-\frac1{4000}-\frac1{500}
+ =\frac9{20000}>\frac1{2500}.
+\]
+This part contributes at most $4e^{nS}e^{-n/2500}$.
+For $x\ge8$, $G'(x)\le-1/4$ and
+$G(6)-G(8)\ge3/16$. Equations (4) and (11) then give the tail bound
+\[
+                   e^{nS}\frac4n e^{-n/10}.            \tag{12}
+\]
+Combining (6)--(12) bounds the error in the first part of (2) by $e^{nS}$
+times
+\[
+ \frac{189}{n}+\frac{56}{n}e^{-n/224}
+ +4e^{-n/2500}+\frac4n e^{-n/10}+4e^{-n/10}
+ +\delta e^{-4n}.                                     \tag{13}
+\]
+For $n\ge10^6$, multiply (13) by $\sqrt n$ and use
+$e^v\ge v^2/2$ and $e^v\ge v$ to bound it by
+\[
+ \frac{245}{1000}
+ +\frac{8\cdot2500^2}{10^9}
+ +\frac4{1000}+\frac{800}{10^9}
+ +\frac1{4\cdot10^6}<1.
+\]
+Thus (2) holds uniformly on the closed disk, proving the inner assertion
+of Theorem~\ref{thm:annulus}.
+
+\section{Uniform separation of all formal saddle data}
+\begin{corollary}\label{cor:saddles}
+On $1\le|w|\le2800$, the six roots of $w=s^5(6-s)$ are simple. Each has
+$1/2<|s|<7$. One lies in $|s-6|<3/4$ and the other five in $|s|<23/5$.
+For distinct saddles $s,t$,
+\[
+ |s-t|>10^{-13},\qquad
+ |\Phi_{ss}(s,w)|>1/4000,\qquad
+ \left|\frac{6-s}{6w}-\frac{6-t}{6w}\right|>10^{-18}.  \tag{14}
+\]
+The endpoint phase derivative satisfies
+\[
+ \left|\frac1w-\frac{6-s}{6w}\right|>1/40000.           \tag{15}
+\]
+These are bounds on saddle data, not on distances between polynomial roots.
+\end{corollary}
+\begin{proof}
+The two Rouch\'e circles are certified by
+$(21/4)^5(3/4)>2800$ and $(23/5)^5(7/5)>2800$.
+The lower bound $|s|>1/2$ follows from
+$|s^5(6-s)|\le(1/2)^5(13/2)<1$ when $|s|\le1/2$.
+For $H_w(s)=s^6-6s^5+w$,
+\[
+ \operatorname{Disc}_s H_w=6^6w^4(3125-w),\qquad
+ |\operatorname{Disc}_s H_w|\ge6^6\cdot325.
+\]
+All root differences are less than fourteen, so any particular difference
+$d$ satisfies $|d|^2 14^{28}>6^6\cdot325$. Since
+$6^6\cdot325\cdot10^{26}>14^{28}$, the separation in (14) follows.
+On the segment joining $5$ to $s$, the derivative of $s^5(6-s)$ has
+modulus at most $6\cdot7^4\cdot12$. Thus
+\[
+ |s-5|\ge\frac{325}{6\cdot7^4\cdot12},\qquad
+ |\Phi_{ss}(s,w)|=\frac{|s-5|}{|s|}>\frac1{4000}.
+\]
+Along a saddle branch the total $w$ derivative of its phase equals
+$1/(w+s^6)=(6-s)/(6w)$. The remaining bounds follow from
+$|w|\le2800$, $|s-t|>10^{-13}$ and $|s|>1/2$.
+\end{proof}
+
+\section{The remaining simplicity obligation}
+The annulus removes both critical values $0$ and $3125$ from every
+possible root region for $n\ge10^6$. It does not determine which saddles
+contribute to the original contour, establish a global two-contribution
+formula, or control cancellations where several contributions are comparable.
+Endpoint contributions at nonzero $w$ remain important even though the
+singular endpoint value $w=0$ is now excluded.
+
+Here is an exact sufficient local criterion. Suppose, on a neighborhood,
+$I_n=U+V+E$ with analytic nowhere-zero $U,V$. Put
+$\ell_U=U'/U$, $\ell_V=V'/V$. At any common zero of $I_n,I_n'$,
+\[
+             (\ell_U-\ell_V)U=\ell_V E-E'.            \tag{16}
+\]
+Consequently the strict bound
+\[
+ |\ell_U-\ell_V|\,|U|>|E'|+|\ell_V|\,|E|             \tag{17}
+\]
+excludes a multiple zero there. For saddle or endpoint models,
+(14)--(15) separate the leading phase derivatives. Effective bounds on
+amplitudes and differentiated remainders are still needed to verify (17).
+A proof must also cover all root neighborhoods, including any region
+requiring more than two comparable contributions, or give a different
+uniform $P_n/P_n'$ exclusion. No global simplicity theorem or effective
+simplicity cutoff is asserted. The finite prefix below any eventual
+simplicity cutoff has not been verified by this note.
+
+The companion exact checker verifies the symbolic identities and rational
+constant inequalities used above. It does not formally verify contour
+analysis, compute polynomial zeros up to $10^6$, or provide an independent
+proof replay. Independent, external, and formal assurance remain false.
+\end{document}

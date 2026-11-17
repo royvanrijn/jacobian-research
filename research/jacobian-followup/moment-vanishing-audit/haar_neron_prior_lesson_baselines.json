@@ -1,0 +1,124 @@
+{
+  "METHOD-HAAR-FULL-INTRINSIC-LOCAL-TATE-CRITERION-20261116": {
+    "id": "METHOD-HAAR-FULL-INTRINSIC-LOCAL-TATE-CRITERION-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use mixed fixed part of Hom to make the reduced intrinsic LOCAL Tate class an exact full safety criterion",
+    "when": "Closing the remaining actual-kernel/genus-Tate caveat in the full exceptional theorem,without assuming V globally semisimple or source unit split.",
+    "use": "FULL LOCAL CRITERION NOW PROVED for EVERY phase:under EVENTUAL PURITY,full ALL-original-marker safety iff REDUCED intrinsic xi_boundary,0=0,with NO globalSS ofV or local fibreSS. Hom(P_nontriv,W5E) fixed part is PURE0;Hodge evaluation gives canonical PURE5 lifted nontrivial socle C. Quotient byC preserves local unit test usingM4C=imageN. Remaining actual kernel intersectAbar is globallyTRIVIAL and lies inconstantfixedF;F intersectM4Ebar=L. A unit=Nx+kernel relation thereforehaszeroerror. Thus ANY GLOBAL unit-retaining quotient reflects LOCAL unit splitting at ALL punctures BEFORE purity,despite non-Hodge kernels. Arbitrary LOCAL quotients excluded. Actual local meromorphicfunctional/PP0 plus entireindecomposability closeseverymarker. Former hiddenxi0genus-Tatebranch is CLOSED,not a futuretask. FullTate invariantIMAGE carries theoneintrinsicclass. EveryH obeysall-root factor1tuple,nocancellation;underpureH,safetyiffrootsmissfiniteBad_boundary. Primitiveglobalsourcenonsplit plusmissingrootsforbidspureH;emptyfiniteBad+nonsplitexcludesALLdegrees. No pureproducer. Fullunreducedxi isNOTsubstituted. Both FULL exceptional casesOPEN atproving reducedxi0vanishing forEVERYexceptionaleventual-purephase,orexhibitinganactualadmissiblenonzeroclass.",
+    "avoid": "Removing a genus quotient with no lifted subsystem;forgetting weight-1 Hom invariants vanish;replacing PURE5 by compactPURE4 in M4C=imageN;passing only a local kernel through global fixed part;using fullunreducedxi or wholeTate instead of invariantIMAGE;inferring globalunit split without eventualpurity.",
+    "boundary": "Both COMPLETE exceptional MZ casesOPEN. New theorem is full all-phase criterion,not universal exceptional vanishing. The local-only admissible countercontrol is not a global quotient/phase. Globalquotientlocalreflection does not assert globalreflectionforarbitraryquotients. No coefficient-ring promotion/universal machineproof/reviewgate.",
+    "reopen_when": "Prove xi_boundary,0=0 on the ENTIRE exceptional eventual-pure locus,or actual admissible invariant pure failure with nonzero reduced localTateclass and fixed originalbadmarker. Do NOT reopen actualK,global-genus-Tate hiddenxi0 or primitive-purity campaigns as independent gates;allHbranches retained;reviewdeferred.",
+    "claims": [
+      "GHAARLOCALSOURCE20261116",
+      "GHAARLOCALALLH20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/FULL_INTRINSIC_LOCAL_TATE_CRITERION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_local_source_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_local_source.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "full intrinsic local Tate",
+      "Hom fixed part",
+      "pure genus socle",
+      "global quotient local reflection",
+      "all branches"
+    ],
+    "reviewed_claims": {
+      "GHAARLOCALSOURCE20261116": "a7755eb81b142fe9",
+      "GHAARLOCALALLH20261116": "2818511f3808c921"
+    }
+  },
+  "METHOD-HAAR-ALGEBRAIC-BOUNDARY-SECTION-AND-FULL-BRANCH-RECOMPOSITION-20261116": {
+    "id": "METHOD-HAAR-ALGEBRAIC-BOUNDARY-SECTION-AND-FULL-BRANCH-RECOMPOSITION-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Construct the rank-one algebraic boundary section and retain Weil-restriction branches instead of scalar norm",
+    "when": "Continuing the COMPLETE exceptional intrinsic source-splitting theorem for every phase,without separate actual-K or fixed-genus campaigns.",
+    "use": "Every intrinsic source-unit gate now has a WRITTEN ALGEBRAIC boundary1-motive [Z->G_f] with ONE algebraic section sigma_f,from published BRS RELATIVE Picard/NS/gluing construction up to ISOGENY. H=(E(2))dual has rank1 lattice,full genus abelian part and finite-monodromy torus. Spread chosen generic data,not all fibre NS ranks;no blanket relative-equivalence/no-fixed-part import. Source splitting iff CONSTANT TYPE:[m]sigma_f=h(a) for a CONSTANT point of a constant semiabelian G0 and algebraic h. Constant nontorsion points are allowed;torsion/Hodge splitting or quotient-by-fixed-group alone is wrong. Any finite base cover reflects the gate by averaging. Under EVENTUAL PURITY this is full ALL-original-marker safety;no independent actual-K gate. For EVERY H the model is Weil restriction with DIAGONAL rank1 lattice and ALL-BRANCH section,NOT scalar norm. Genuine Long pure P=F(F+1) has SAME fixed bad marker tail(-1)^(n-1)(n!)\u00b2/(2n+1)!,while reciprocal branches have Norm1;full tuple moves. It is NOT right2O/2I invariant.",
+    "avoid": "Requiring torsion or Hodge splitting instead of constant TYPE;allowing a varying section of a constant group;collapsing Weil restriction to scalar norm;discarding Picard trivialization/triple gluing;asserting NS ranks never jump;promoting rational BRS0.1 to integral0.2 or importing an inapplicable no-fixed-part theorem.",
+    "boundary": "Both FULL exceptional MZ cases remain OPEN at proving this constant-type condition for EVERY exceptional eventually pure phase,or an actual admissible failure. This is a written finite geometric construction from a resolved pair,not implemented resolution/Picard/fixed-part code or a pure-locus constancy theorem. Full source/global and actual-kernel distinctions retained;no coefficient-ring promotion,machine-universal proof or raised review flags. SUBSEQUENT GENERAL NECESSITY: EVERY eventual-pure failure now REQUIRES NONZERO top Tate graph T=GrW4H2(F)(-1). If T0,the reduced fibre quotient V=E/L is pure genus weight5 and GLOBAL SS,with arbitrary genus/fixed part/compact-middle and nonsemisimple local monodromy. Intrinsic reduced xi_boundary vanishes at every puncture by the strict limit weight5-to6 argument. Any unit-retaining actual quotient is a direct summand when V GLOBAL SS,so its local unit retraction survives actual relations;PP0 and actual entire indecomposability close ALL original markers. This passes EVERY H without primitive purity. More generally with V GLOBAL SS,eventual-pure safety iff reduced xi_boundary,0=0. Finite Bad_boundary controls all roots with factor1/no cancellation;source-nonsplit H missing it cannot be eventually pure. Every pure failure with xi_boundary,0=0 must have V GLOBAL NONSEMISIMPLE,so BOTH genus and Tate are nonzero in a genuinely nonsplit extension. Reduced xi is NOT silently identified with full-source xi;global SS is NOT local SS. Full constant-TYPE sigma_f target stays unchanged. Both FULL exceptional cases remain OPEN;review deferred. SUBSEQUENT FULL CLOSURE SUPERSEDES the globalSS restriction and possible hiddenxi0 branch: FULL LOCAL CRITERION NOW PROVED for EVERY phase:under EVENTUAL PURITY,full ALL-original-marker safety iff REDUCED intrinsic xi_boundary,0=0,with NO globalSS ofV or local fibreSS. Hom(P_nontriv,W5E) fixed part is PURE0;Hodge evaluation gives canonical PURE5 lifted nontrivial socle C. Quotient byC preserves local unit test usingM4C=imageN. Remaining actual kernel intersectAbar is globallyTRIVIAL and lies inconstantfixedF;F intersectM4Ebar=L. A unit=Nx+kernel relation thereforehaszeroerror. Thus ANY GLOBAL unit-retaining quotient reflects LOCAL unit splitting at ALL punctures BEFORE purity,despite non-Hodge kernels. Arbitrary LOCAL quotients excluded. Actual local meromorphicfunctional/PP0 plus entireindecomposability closeseverymarker. Former hiddenxi0genus-Tatebranch is CLOSED,not a futuretask. FullTate invariantIMAGE carries theoneintrinsicclass. EveryH obeysall-root factor1tuple,nocancellation;underpureH,safetyiffrootsmissfiniteBad_boundary. Primitiveglobalsourcenonsplit plusmissingrootsforbidspureH;emptyfiniteBad+nonsplitexcludesALLdegrees. No pureproducer. Fullunreducedxi isNOTsubstituted. Both FULL exceptional casesOPEN atproving reducedxi0vanishing forEVERYexceptionaleventual-purephase,orexhibitinganactualadmissiblenonzeroclass.",
+    "reopen_when": "Attack CONSTANT TYPE of the canonical algebraic sigma_f on the ENTIRE exceptional eventual-pure locus,or build an original admissible nonconstant-type pure phase with bad marker. Keep full Weil restriction across all H. Do not retry scalar norms,torsion-only criteria,extra-prefix campaigns or make external review the next task. Every remaining actual pure failure MUST have nonzero top Tate graph. Genus-only phases are safe in ALL degrees/all H;xi0-hidden failures require genuine global genus-Tate coupling. The full constant-TYPE target is not replaced by this necessary restriction. CURRENT FULL theorem CLOSES any hiddenxi0/genus-Tate/actualK prerequisite:target intrinsic REDUCED localTatexi0vanishing forEVERYexceptionaleventual-purephase,or actualadmissiblefailure. No globalSS condition remains.",
+    "claims": [
+      "GHAARBOUNDARYMOT20261116",
+      "GHAARSECTIONRECOMP20261116",
+      "GHAARSSLOCAL20261116",
+      "GHAARGRAPHNEC20261116",
+      "GHAARLOCALSOURCE20261116",
+      "GHAARLOCALALLH20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_BOUNDARY_ONE_MOTIVE_AND_CONSTANT_SECTION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_motive_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/TATE_GRAPH_NECESSITY_AND_SEMISIMPLE_BOUNDARY_QUOTIENTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_graph_necessity_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/FULL_INTRINSIC_LOCAL_TATE_CRITERION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_local_source_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_motive.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "algebraic boundary1-motive",
+      "constant point",
+      "Picard complex",
+      "Weil restriction",
+      "diagonal lattice",
+      "norm cancellation"
+    ],
+    "reviewed_claims": {
+      "GHAARBOUNDARYMOT20261116": "25a35f5d8a5299e8",
+      "GHAARSECTIONRECOMP20261116": "45020a78a2809ffb",
+      "GHAARSSLOCAL20261116": "93eab6e6429def5c",
+      "GHAARGRAPHNEC20261116": "218391c1bd35ba14",
+      "GHAARLOCALSOURCE20261116": "a7755eb81b142fe9",
+      "GHAARLOCALALLH20261116": "2818511f3808c921"
+    }
+  },
+  "METHOD-HAAR-TATE-GRAPH-NECESSITY-AND-SEMISIMPLE-QUOTIENT-20261116": {
+    "id": "METHOD-HAAR-TATE-GRAPH-NECESSITY-AND-SEMISIMPLE-QUOTIENT-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Eliminate genus-only failures and pass local unit retractions through actual quotients using global semisimplicity",
+    "when": "Pursuing the COMPLETE exceptional constant-section theorem with all original markers and polynomial degrees,after the algebraic1-motive construction.",
+    "use": "EVERY eventual-pure failure now REQUIRES NONZERO top Tate graph T=GrW4H2(F)(-1). If T0,the reduced fibre quotient V=E/L is pure genus weight5 and GLOBAL SS,with arbitrary genus/fixed part/compact-middle and nonsemisimple local monodromy. Intrinsic reduced xi_boundary vanishes at every puncture by the strict limit weight5-to6 argument. Any unit-retaining actual quotient is a direct summand when V GLOBAL SS,so its local unit retraction survives actual relations;PP0 and actual entire indecomposability close ALL original markers. This passes EVERY H without primitive purity. More generally with V GLOBAL SS,eventual-pure safety iff reduced xi_boundary,0=0. Finite Bad_boundary controls all roots with factor1/no cancellation;source-nonsplit H missing it cannot be eventually pure. Every pure failure with xi_boundary,0=0 must have V GLOBAL NONSEMISIMPLE,so BOTH genus and Tate are nonzero in a genuinely nonsplit extension. Reduced xi is NOT silently identified with full-source xi;global SS is NOT local SS. Full constant-TYPE sigma_f target stays unchanged.",
+    "avoid": "Passing a SOURCE local retraction through an arbitrary actual kernel;discarding the GLOBAL SS quotient hypothesis;assuming local SS from global SS;identifying reduced xi with full xi;using M=W for a nontrivial genus degeneration;asserting top graph always vanishes or counting a finite control as universal proof;turning a root-bad-value condition into a purity producer.",
+    "boundary": "Both FULL exceptional cases remain OPEN at constant TYPE of canonical sigma_f for EVERY exceptional eventual-pure phase,or original admissible failure. Graph-free phases are fully closed with arbitrary genus;all failures require nonzero graph. The hidden-xi-zero branch requires genuine global genus-Tate coupling. This does not remove the known unbounded SAFE Tate examples or prove exceptional graph vanishing. No all-ring topological promotion/universal machine proof/raised review flags. SUBSEQUENT FULL CLOSURE SUPERSEDES the globalSS restriction and possible hiddenxi0 branch: FULL LOCAL CRITERION NOW PROVED for EVERY phase:under EVENTUAL PURITY,full ALL-original-marker safety iff REDUCED intrinsic xi_boundary,0=0,with NO globalSS ofV or local fibreSS. Hom(P_nontriv,W5E) fixed part is PURE0;Hodge evaluation gives canonical PURE5 lifted nontrivial socle C. Quotient byC preserves local unit test usingM4C=imageN. Remaining actual kernel intersectAbar is globallyTRIVIAL and lies inconstantfixedF;F intersectM4Ebar=L. A unit=Nx+kernel relation thereforehaszeroerror. Thus ANY GLOBAL unit-retaining quotient reflects LOCAL unit splitting at ALL punctures BEFORE purity,despite non-Hodge kernels. Arbitrary LOCAL quotients excluded. Actual local meromorphicfunctional/PP0 plus entireindecomposability closeseverymarker. Former hiddenxi0genus-Tatebranch is CLOSED,not a futuretask. FullTate invariantIMAGE carries theoneintrinsicclass. EveryH obeysall-root factor1tuple,nocancellation;underpureH,safetyiffrootsmissfiniteBad_boundary. Primitiveglobalsourcenonsplit plusmissingrootsforbidspureH;emptyfiniteBad+nonsplitexcludesALLdegrees. No pureproducer. Fullunreducedxi isNOTsubstituted. Both FULL exceptional casesOPEN atproving reducedxi0vanishing forEVERYexceptionaleventual-purephase,orexhibitinganactualadmissiblenonzeroclass.",
+    "reopen_when": "Attack the ENTIRE exceptional moving-section locus,now necessarily with nonzero Tate graph:intrinsic reduced xi0 obstruction,or xi0=0 with genuinely nonsplit global genus-Tate quotient. Retain all original markers and H roots. Do not reopen genus-only/no-top-graph or independent actual-K campaigns;external review deferred. CURRENT FULL theorem CLOSES any hiddenxi0/genus-Tate/actualK prerequisite:target intrinsic REDUCED localTatexi0vanishing forEVERYexceptionaleventual-purephase,or actualadmissiblefailure. No globalSS condition remains.",
+    "claims": [
+      "GHAARSSLOCAL20261116",
+      "GHAARGRAPHNEC20261116",
+      "GHAARLOCALSOURCE20261116",
+      "GHAARLOCALALLH20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/TATE_GRAPH_NECESSITY_AND_SEMISIMPLE_BOUNDARY_QUOTIENTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_graph_necessity_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/FULL_INTRINSIC_LOCAL_TATE_CRITERION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_local_source_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_graph_necessity.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Tate graph necessary",
+      "arbitrary genus safety",
+      "global semisimple quotient",
+      "local unit functional",
+      "actual relations",
+      "all polynomial composites"
+    ],
+    "reviewed_claims": {
+      "GHAARSSLOCAL20261116": "93eab6e6429def5c",
+      "GHAARGRAPHNEC20261116": "218391c1bd35ba14",
+      "GHAARLOCALSOURCE20261116": "a7755eb81b142fe9",
+      "GHAARLOCALALLH20261116": "2818511f3808c921"
+    }
+  }
+}

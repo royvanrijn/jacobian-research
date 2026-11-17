@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "path": "sources/oka-2005-curve-complements.pdf",
+      "url": "https://indico.ictp.it/event/a04204/contribution/86/material/0/0.pdf",
+      "bytes": 451638,
+      "sha256": "01790d35a09647cdc9904f54862b6a910f039c484c000262eda327e3d9e598af",
+      "title": "Mutsuo Oka, Topology of the complements to curves and hypersurfaces, ICTP 2005",
+      "locator": "Section2.2, printedpp3--4 (PDFindices3--4): meridian monodromy for y^p-x^q, and the node/cusp relations; specialize p=2 to obtain the alternating relation of lengthq."
+    }
+  ],
+  "scope": "The two-meridian Artin presentation is derived in the note from the pinned local braid calculation. Finite PSL2(11) quotient/mark census is new exact work; no affine Keller realization is inferred."
+}

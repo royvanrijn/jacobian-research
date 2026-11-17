@@ -1,0 +1,17 @@
+{
+  "claim": "PF2RULED148",
+  "retained_sha256": {
+    "jacobian-followup/affine-complements/ADDITIVE_BASE_PERTURBATIONS_AND_RESONANT_CYCLIC_TARGET_EXCLUSION.md": "c1bfa6966feb27d6a02cfb9d042fcdfd44be403baaae695a06f130f8fcbfdbdc",
+    "jacobian-followup/affine-complements/HOLOMORPHIC_GENERIC_FIBRES_AND_NONLINEAR_CYCLIC_TARGET_EXCLUSION.md": "27b09c2060a4495cb966f58f5f3d9c2e0ec2cbe6e5e546bec830b37a72e1259a",
+    "jacobian-followup/affine-complements/MARKED_QUADRATIC_VELOCITIES_AND_CYCLIC_TRACE_POLES.md": "49cec4654a1cda24f2176a7808b1899db5f587293714bcce2c77c2c4e2d532cf",
+    "jacobian-followup/affine-complements/PARTIAL_KUMMER_PLANE_CHARTS_AND_CYCLIC_EQUIVARIANT_FACTORS.md": "166285dd01c6a3bd66947bc43b018b1a28937363fae4fea1c9276e3e4ed9c3dc",
+    "jacobian-followup/hc4-triangular-graphs/LOGARITHMIC_DESCENT_AND_CYCLIC_EXACT_SOURCE_IMAGES.md": "7ae5a64bbb585dc486238e9dcff447d8bcb2979196c469fffca70c3180a025bd"
+  },
+  "previous_goal_turn": "progress: current PF147 proof/checker/context and PASS67 receipt revalidated",
+  "new_external_theorem_imports": 0,
+  "registered_predecessor_checkers_replayed": [],
+  "original_full_normalization_and_all_ramified_primes_retained": true,
+  "local_parameter_derivative_used_only_for_generic_curve_valuations": true,
+  "full_marked_quadratic_integrality_supplied": false,
+  "full_goal_complete": false
+}

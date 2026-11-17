@@ -1,0 +1,218 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "dimension": 1,
+    "parameter_count": 2,
+    "phase_terms": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        "1"
+      ]
+    ]
+  },
+  "cutoff_slope": 0,
+  "cutoff_intercept": 1,
+  "pure_moments_only": false,
+  "ideal_lift": [
+    [
+      [
+        [
+          2,
+          0
+        ],
+        "1"
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          1
+        ],
+        "1"
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          2
+        ],
+        "1"
+      ]
+    ]
+  ],
+  "method": "nondegenerate_Gaussian_pairing",
+  "phase_power": 2,
+  "pairing_certificate": {
+    "phase_power": 2,
+    "spatial_degree": 2,
+    "marker_exponents": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "Wick_Gram": [
+      [
+        "1",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "3"
+      ]
+    ],
+    "coefficient_from_moment_matrix": [
+      [
+        "3/2",
+        "0",
+        "-1/2"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "-1/2",
+        "0",
+        "1/2"
+      ]
+    ],
+    "original_moments": [
+      {
+        "marker": [
+          0
+        ],
+        "power": 2,
+        "polynomial": [
+          [
+            [
+              2,
+              0
+            ],
+            "1"
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            "1"
+          ]
+        ]
+      },
+      {
+        "marker": [
+          1
+        ],
+        "power": 2,
+        "polynomial": [
+          [
+            [
+              1,
+              1
+            ],
+            "2"
+          ]
+        ]
+      },
+      {
+        "marker": [
+          2
+        ],
+        "power": 2,
+        "polynomial": [
+          [
+            [
+              2,
+              0
+            ],
+            "1"
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            "3"
+          ]
+        ]
+      }
+    ],
+    "phase_power_coefficients": [
+      [
+        [
+          [
+            2,
+            0
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            1,
+            1
+          ],
+          "2"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            2
+          ],
+          "1"
+        ]
+      ]
+    ]
+  },
+  "retains_ordinary_parameter_ideal": true,
+  "least_generating_prefix": {
+    "least_total_index_prefix": 4,
+    "pure_moment_prefix": false,
+    "finite_membership_trials": [
+      {
+        "total_index_prefix": 4,
+        "full_ideal_generated": true
+      },
+      {
+        "total_index_prefix": 2,
+        "full_ideal_generated": false
+      },
+      {
+        "total_index_prefix": 3,
+        "full_ideal_generated": false
+      }
+    ],
+    "convention": "all forbidden (alpha,m) with |alpha|+m<=prefix; pure mode uses alpha=0"
+  }
+}

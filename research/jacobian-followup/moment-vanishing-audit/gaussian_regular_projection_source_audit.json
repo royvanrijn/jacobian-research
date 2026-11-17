@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/FORMAL_GAUSSIAN_PROJECTION_GLOBAL109.md",
+  "canonical_proof_sha256": "9e2dc4261e513fa31863d9ed8b129890e8af336def9b8608a8152139ebd7babc",
+  "claims": [
+    "G3GAUSSPROJ20261115",
+    "G3PURE109_20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_gaussian_regular_projection.py",
+  "checker_sha256": "718fe122604958fcf9191a5df91a54d1ae785caf9770b93392bd2625c6a87f62",
+  "certificate_sha256": "47f7155c6513c308ec7fbbe45510ac2f67817221a24cb040d0f45822161874e6",
+  "accepted_receipt_sha256": "7b1f92fe13d548cd2c858dfbcd37b33a52c5984ed6dafdb8dd1126cbf0b3af88",
+  "prior_frontier": {
+    "path": "jacobian-followup/moment-vanishing-audit/gaussian109_preupdate_20261115.json",
+    "sha256": "2dfa470f061a7c94dbd6299db5c3f6e3f762704d7810c25e719b75533d9c554b"
+  },
+  "retained_inputs": {
+    "verify_ordinary_rank_one_lattice.py": "572582bffcf5cc86f4ef92924064130c1a2f8c28b164c79f8773592ec9cf1a59",
+    "ordinary_rank_one_lattice_source_audit.json": "c34fc5e634ba3647954453168279f79aae49496c99bfd314b844da6c400b84aa",
+    "ordinary_rank_one_lattice_certificate.json": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+    "ordinary_rank_one_lattice_verification.json": "5afbf8b57e9787a465456b7226f607df7de43bdd4893041d22de11c93eaf7e0e",
+    "verify_cusp_rank_one_lattice.py": "ab3b3d12d844f1de5777dec73834cbcede4786937fc0a137e120b20f471485a0",
+    "cusp_rank_one_lattice_source_audit.json": "5b44f760c29213f33f925be2ce0a9ae72b2e2be7b0ed62c3f513a9c93fbc8811",
+    "cusp_rank_one_lattice_certificate.json": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+    "cusp_rank_one_lattice_verification.json": "1535c3368e765c7b88a6d7e5978aee5dd1ea7a1f2d34026689cac5e50196a786",
+    "verify_tangent_rank_one_lattice.py": "ca9544a20282ec2ebdc808ddb5166933b5062361581cdbea3fb10a4945aa1166",
+    "tangent_rank_one_lattice_source_audit.json": "8eff7dc278cea7268fd67a03b109309c6d6c83edfffd54b32b88a315750d7b47",
+    "tangent_rank_one_lattice_certificate.json": "76cc570f9c931dda7fea4c76cda4cac779d3a0f3040c1f6fc7b51e64cd710cd6",
+    "tangent_rank_one_lattice_verification.json": "86107564ae70694d086e48bccf283e264655ce1aea2aa1b0e5f4cb2eb5e48544",
+    "verify_triangular_divisor_factors.py": "37ddf15898dc825896a37701797a4dd6cfef8c62254e55015aa92a778cdab0c5",
+    "triangular_divisor_factors_source_audit.json": "c2518d693896368fd50364e8366f2defe3041294103500bdb3c33e79e2c885f6",
+    "triangular_divisor_factors_certificate.json": "de5edb1c5ce023b6c14595548116eae7a35a7abe9d2320ccd0e824d16af80b54",
+    "triangular_divisor_factors_verification.json": "4e47a14e5514602352c55cdbde16a40fcbfb095ba98114d0751ca08370abee78",
+    "even_time_odd_seeds_source_audit.json": "8c88da14f2d063c69eeeadb614de98f855e5a1fd0743da9d621743888f0d5800",
+    "conic_completed_row_factors_source_audit.json": "59f4d3cd0e2a344bda067ca699603bd9ba65db8ecec0ffd93ae53359375fd4c6"
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "TWO_SIDED_CONIC_GLOBAL_140.md": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+    "RANK_FACTORS_AND_REDUCTION_GLOBAL_130.md": "d39725481b3e733c399e60a42663d4311f9fe76f5698fce2842a5782f86762dc",
+    "CONIC108_ODD126_GLOBAL130.md": "8caf3664ebb6149f3c48c49304447df9811c5b46421ece776bb2f77415c58697",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c",
+    "WEIGHTED_ODD_PREFIX108.md": "c9238da9e5b7e2e7242cdf999bd7105a5d131b441b9a373fad420842fc79c878",
+    "CONIC_ROW_FACTORS_96_ODD104.md": "18a67c884339a850cb02093c49988d374e3e209dc2b6e2ca25b132dc96ba11b9",
+    "ODD_CONCURRENT36_PREFIX100.md": "14fa528c9939440372fd2c6dd24a3319a0a3009923867bf272edd0f06281c54c",
+    "EVEN_TIME_SEEDS_ODD98.md": "e45b83608783ed7bb08f40a660a384f750f8b9ca131a2af736f0f751b379a28c",
+    "CUSP_RANK_ONE_LATTICE_GLOBAL129.md": "f797b342cd5f4b210b5b13ce38a656671fbf0961407d1b4ce0b34f83cb5153e3",
+    "ORDINARY_RANK_ONE_GLOBAL125.md": "30c7c6e4fb21e3e15ae2d6e13817281c9c4dc04c4e115526f4251f5b287cfbad",
+    "TRIANGULAR_DIVISOR_FACTORS_GLOBAL120.md": "f226f9572aadae9dace2f1e098774132b6f0448ddd48465fab6fb29eedc2cf27",
+    "TANGENT_POLE_RESIDUE_GLOBAL115.md": "3a703e2b39fa0ab1dae3665e490cf99ef54b25cddb4dfd6e49440f11a7183033"
+  },
+  "previous_goal_turn_classification": "progress: tangent full pole/Jacobi residue and separate constant-D normalization established tangent110 and general115, with accepted exact auxiliary checks, preserved wrong1/4 initial input and completed scoped records.",
+  "formal_projection": {
+    "phase": "F^2/2+D*G",
+    "coordinate": "z=F",
+    "variance": "-t^2 D",
+    "coefficientwise_formal_not_convergence_claim": true,
+    "ordinary_volume": "du dz/u",
+    "cusp_tangent_volume": "du dz/q",
+    "original_prefactor": "t^(-2) D^(-1/2)",
+    "normalized_prefactor": "t^(-1)",
+    "full_coordinate_Jacobian_divergence_retained": true,
+    "all_coefficient_D_time_basis_Euler_shear_derivatives_retained": true,
+    "finite_ranks": {
+      "nodal": 6,
+      "transverse": 5,
+      "triangle": 4,
+      "cusp": 5,
+      "tangent": 4
+    },
+    "finite_quotient_connection_regular_in_D": true,
+    "one_extra_analytic_row_restores_missing_direction": true,
+    "h": {
+      "ordinary_cusp": "t^3 D^2",
+      "tangent_sheared": "t^3 D^3"
+    },
+    "projected_actual_numerator": "pi(R_j)=h^j nabla^j pi(1)",
+    "slow_seed_D_orders": {
+      "ordinary": "2j",
+      "cusp": "4j-1",
+      "tangent": "6j"
+    },
+    "comparison_determinant_D_losses": {
+      "ordinary": 0,
+      "cusp": 2,
+      "tangent": 6
+    },
+    "cusp_comparison_determinant_leading": "D^2/q^2",
+    "tangent_comparison_determinant_leading": "2D^6/q^3",
+    "loss_charged_once_per_minor_by_complementary_minor_identity": true,
+    "all_actual_ranks_and_row_sets": true,
+    "full_rank_common_scalar_D_powers": {
+      "nodal": 42,
+      "transverse": 30,
+      "triangle": 20,
+      "cusp": 53,
+      "tangent": 54
+    },
+    "scalar_valuation_at_least": "3l",
+    "generic_formal_proof_then_polynomial_extension": true,
+    "q0_r0_D0_zero_trace_shared_roots_retained": true,
+    "no_q_r_t_trace_factor_cancelled": true,
+    "constant_D_gates_separate_and_unchanged": true,
+    "all_identically_zero_axes_D_and_frame_faces_retained": true
+  },
+  "linear_D_gates": {
+    "nodal": 87,
+    "transverse": 97,
+    "triangle": 98,
+    "cusp": 77,
+    "tangent": 66
+  },
+  "constant_D_gates_retained": {
+    "nodal": 101,
+    "transverse": 106,
+    "triangle": 103,
+    "cusp": 109,
+    "tangent": 105
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 101,
+    "cusp": 109,
+    "transverse": 106,
+    "tangent": 105,
+    "triangle": 103,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "odd_cover_unchanged": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 98,
+    "cusp": 94,
+    "transverse": 98,
+    "tangent": 94,
+    "triangle": 96,
+    "concurrent": 36,
+    "repeated": 98
+  },
+  "global_sufficient_pure_prefix": 109,
+  "odd_sufficient_pure_prefix": 98,
+  "homogeneous_sufficient_pure_prefix": 96,
+  "conic_full_W_linear_gate_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    109
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    98
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "current_radical_target": "I109",
+  "binary_search_rounds_max": 7,
+  "frame_condition_required_for_global109": false,
+  "exact_auxiliary_evidence": {
+    "formal_gaussian_coefficient_checks": 119,
+    "comparison_determinants": 5,
+    "retained_full_cofactor_models": 15,
+    "full_scalar_cofactor_checks": 100
+  },
+  "selected_primary_record_refresh_retained": {
+    "path": "jacobian-followup/moment-vanishing-audit/ordinary125_primary_record_refresh_20261115.json",
+    "sha256": "ba024b266a364c50d9dc636dbe9a0eb0aecf2a3508ebc12389f4f3d026373ad5"
+  },
+  "literature_boundary": "No fresh literature-coverage claim, external theorem or producer package. Earlier selected primary-record/body audits remain retained.",
+  "analytic_boundary": "All-order coefficientwise formal Gaussian integration, regular finite quotient connection, exact h_prime cancellation, restoration of the missing direction by a comparison matrix, complementary-minor loss once per minor, polynomial extension, complete coefficient/frame cover and analytic nonzero zeroth coefficients remain independently unreviewed written inputs. Finite checks do not certify this complete analytic theorem.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal written formal Gaussian projection with retained volume and determinant derivatives gives a regular finite connection plus one restored direction. Comparison determinant losses0/2/6 and slow seed orders2j/4j-1/6j give common full scalar powers42/30/20/53/54. Exact auxiliary119 Gaussian coefficient checks,five comparison determinants and15 retained full Gaussian families with100 scalar-cofactor checks pass. All-order formal/connection/complementary-minor/polynomial-extension and analytic/frame proofs remain independently unreviewed written inputs; no independent,external or formal certification.",
+  "remaining": [
+    "Least global[20,109],odd[20,98],homogeneous[14,96]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller constant-D cusp109,transverse106,tangent105 and concurrent104 gates; odd node/transverse/repeated98; homogeneous conic96",
+    "Expanded I109 radical cofactors",
+    "Independent analytic/formal-connection review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

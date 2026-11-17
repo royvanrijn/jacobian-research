@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "completed_prefix": 12,
+  "counts": [
+    {
+      "moment": 1,
+      "nodes": 115,
+      "spatial_terms": 17
+    },
+    {
+      "moment": 2,
+      "nodes": 756,
+      "spatial_terms": 71
+    },
+    {
+      "moment": 3,
+      "nodes": 3356,
+      "spatial_terms": 186
+    },
+    {
+      "moment": 4,
+      "nodes": 10633,
+      "spatial_terms": 385
+    },
+    {
+      "moment": 5,
+      "nodes": 24291,
+      "spatial_terms": 691
+    },
+    {
+      "moment": 6,
+      "nodes": 49978,
+      "spatial_terms": 1127
+    },
+    {
+      "moment": 7,
+      "nodes": 89338,
+      "spatial_terms": 1716
+    },
+    {
+      "moment": 8,
+      "nodes": 151504,
+      "spatial_terms": 2481
+    },
+    {
+      "moment": 9,
+      "nodes": 237375,
+      "spatial_terms": 3445
+    },
+    {
+      "moment": 10,
+      "nodes": 360253,
+      "spatial_terms": 4631
+    },
+    {
+      "moment": 11,
+      "nodes": 519608,
+      "spatial_terms": 6062
+    },
+    {
+      "moment": 12,
+      "nodes": 733595,
+      "spatial_terms": 7761
+    }
+  ],
+  "node_limit": 1200000,
+  "artifact": "cyclic_frame_moments_12.circuit.json.gz",
+  "global_A12_dimension": "UNCOMPUTED",
+  "global_A12_length": "UNCOMPUTED"
+}

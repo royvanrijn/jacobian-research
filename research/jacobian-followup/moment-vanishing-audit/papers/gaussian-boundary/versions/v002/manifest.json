@@ -1,0 +1,15 @@
+{
+  "manuscript.tex": "9130da69b78ae6b2380dfd694cb54a9ed38cccc4fad5d811dc5e50d57c3eacc9",
+  "formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+  "mixed_formal_exclusion.tex": "c0ac5fb2a6191732c7239d1d62934480828f1e04769fd090c3a274d4d1463dee",
+  "analytic_core.tex": "1a4ce013528d77e2efc657b1df247f7ec9837ba1a357a023fd682ad873766cc7",
+  "manuscript.pdf": "a12b375ba43c259237e745705783d5050eb4dfc75ba09bfbf1b0928731284ba5",
+  "proof_audit.json": "799f7d5cdf336cd8b3729aca2742a740668047476159f5854cce6feb1ec10369",
+  "paper_goal.json": "48ad178264d35e84b3173cdeca73221f84f5a62793722bb4400dbddef0c77ac1",
+  "adversarial_audit.json": "1a9050a478b28d4eab4fec9803b7deb3ae8b38abfab09de9923523597ca3bb1d",
+  "literature_audit.json": "a3d9439fed0dac3cc516d74b8a35a094dd8975e0f18e4c804fa2eaa005f5e35b",
+  "formal_identity_check.json": "43d2fed113cce954afaadb47e6e19cb21aae410c43d5fa92114f29ed38591add",
+  "check_formal_identities.py": "c32b5152757f2bf6925cd8996b274e9633c745e5f72c1159d4d4f9f31d8a977c",
+  "pdf_quality_check.json": "d3709fd2d4b2758cef2360d0d684444f2164094d4f208907cc1998073346f7a6",
+  "BUILD.txt": "b4916487796b0eca80b353efa59a4918cbbb7ed265a8a1ee227f44cb641927ab"
+}

@@ -1,0 +1,74 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYMI0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/HESSIAN_CONNECTION_PENCIL_AND_INCOMPLETE_AUTOMORPHISMS.md"
+    },
+    {
+      "claim": "HC4MYMH0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/ITERATED_DEFICIT_TRANSPORT_AND_FINITE_CENTER_LABELS.md"
+    },
+    {
+      "claim": "HC4MYKO3",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian-followup/hc4-triangular-graphs/HESSIAN_CONNECTION_PENCIL_AND_INCOMPLETE_AUTOMORPHISMS.md": "93612ff8c2d6c03cbed25e781378c049d1c44e3d23f6a1ef4c327ef51ccc61b1",
+    "jacobian-followup/hc4-triangular-graphs/verify_hessian_connection_pencil.py": "b14e087237e3caa41a2f4dd01b781580496616d0720254077ac2d164c72359c0",
+    "jacobian-followup/hc4-triangular-graphs/ITERATED_DEFICIT_TRANSPORT_AND_FINITE_CENTER_LABELS.md": "4468f317c62172898bdcedac0fe1ef28c795e4e517dce4d6cff725a29cb05ec9",
+    "jacobian-followup/hc4-triangular-graphs/verify_iterated_deficit.py": "7f9c6258bec537fc574c03dc1a350aafc6bf1866ac83925b511a8b540a8e7f5b",
+    "jacobian-followup/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md": "1ee4de68a03886a0412339b75e50256cd8dba66e16ad1402cb5626cf1e815804",
+    "jacobian-followup/hc4-triangular-graphs/verify_canonical_energy_traces.py": "ad8b9e8cba17b746cc8a4af592d2d8eb435ad1ea019a886b1bb0a7a270ebceba",
+    "jacobian-followup/hc4-triangular-graphs/sources/hessian-connection-pencil-context.json": "24b97842a9ed823139f527b9e7fd65a4c4b582b5efb164d51ba3bab3f1855720",
+    "jacobian-followup/hc4-triangular-graphs/receipt-hessian-connection-pencil.json": "307fa3ee990a6cf3c625854f762992f629dd6b0f24a521cda79451a42a0b09f5"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "all_complex_polynomial_degrees": true,
+    "rank_one_Jacobian_image_global_shear_lemma": true,
+    "whole_polynomial_image_curve_normalized": true,
+    "generic_fibre_components_are_entire_lines": true,
+    "multiple_fibre_components_allowed": true,
+    "Levi_Civita_Ricci_formula_proved_directly": true,
+    "full_HC4_Ricci_flat_subclass_uses_Tang": true,
+    "cotangent_scalar_flatness_not_Ricci_flatness": true,
+    "curved_Ricci_flat_actual_inverse_control": true,
+    "external_review_deferred": true,
+    "Ricci_flatness_asserted_automatic": false,
+    "affine_or_Kahler_Ricci_substituted_for_Levi_Civita": false,
+    "scalar_flatness_asserted_force_inverse": false,
+    "Ricci_flatness_asserted_force_full_curvature_zero": false,
+    "polynomial_curve_parameter_assumed_source_coordinate": false,
+    "generic_fibres_assumed_irreducible": false,
+    "new_external_theorem_imported": false,
+    "new_primary_cache_created": false,
+    "registered_mathematical_checker_replayed": false,
+    "published_quartic_plane_queue_reopened": false,
+    "Miyanishi_odd_plane_theorem_adopted": false,
+    "finite_trace_pairing_proved_automatic": false,
+    "full_marked_energy_proved_automatic": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "external_imports": [],
+  "new_primary_caches": [],
+  "literature_context_only": [
+    {
+      "url": "https://arxiv.org/html/1312.1103v1",
+      "inspection": "Amari-Armstrong Section3 Proposition1 and complete proof, introduction and pertinent curvature discussion read.",
+      "boundary": "Standard Hessian curvature identity is context only; required Ricci formula derived directly. No positivity,compactness,characteristic-class or completeness theorem imported; no full-paper reproduction/cache."
+    }
+  ],
+  "proof_boundary": "Written all-degree global plane Jacobian-image rank-one shear lemma and full HC4 Levi-Civita Ricci-flat inversion using retained Tang. Normalization and fibre-line steps explicitly global. Actual scalar-flat non-Ricci-flat and curved Ricci-flat inverse controls distinguish hypotheses. Full original trace/energy gap remains open."
+}

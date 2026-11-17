@@ -1,0 +1,200 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Gap-three Wronskian recurrences and a weaker real-rooted-section criterion}
+\author{Internal proof and exact replay; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+The \href{HIGHER_GAP_ADJOINT_RANK.tex}{all-gap adjoint note} proves
+an exact repeated-root rank condition. Here $d=3$. We derive uniform
+Wronskian recurrences, weaken the remaining root condition, and close
+the fifth terminal order for every positive Gamma shape. A uniform
+all-index higher-gap theorem, general FC and unrestricted SFC remain open.
+
+Write
+\[
+ T_{n,\gamma}(t)=\sum_{k=0}^n\binom nk(\gamma)_{3k}t^k,\qquad
+ B_{n+1,\gamma}=(z+3n+\gamma+2)B_{n,\gamma}-zB_{n,\gamma}',
+ \quad B_{0,\gamma}=1.
+\]
+The recurrence defines $B$ polynomially for every real $\gamma$;
+positive Gamma integrals are used only where stated.
+Put $\alpha=e^{i\pi/3}$ and
+\[
+ W_{n,\gamma}(z)=B(\alpha z)B(\bar\alpha z)-
+ \frac{\alpha B'(\alpha z)B(\bar\alpha z)
+       -\bar\alpha B'(\bar\alpha z)B(\alpha z)}{i\sqrt3},       \tag{1}
+\]
+where $B=B_{n,\gamma}$. This is real, monic of degree $2n$.
+
+\section{A divided difference and the exact two-parameter recurrence}
+\begin{theorem}\label{thm:rec}
+For $a=3n+\gamma+2$,
+\begin{align}
+ B_{n,\gamma-1}&=B_{n,\gamma}-B_{n,\gamma}',                   \tag{2}\\
+ W_{n,\gamma}(z)&=
+ \frac{B_{n+1,\gamma}(\alpha z)B_{n,\gamma}(\bar\alpha z)
+       -B_{n,\gamma}(\alpha z)B_{n+1,\gamma}(\bar\alpha z)}
+      {(\alpha-\bar\alpha)z},                               \tag{3}\\
+ W_{n+1,\gamma}&=a(a-1+z)W_{n,\gamma}-azW_{n,\gamma}'
+                                      +z^2W_{n,\gamma-1}.     \tag{4}
+\end{align}
+The quotient in (3) extends polynomially across zero.
+\end{theorem}
+\begin{proof}
+The auxiliary exponential generating function is
+\[
+ F_\gamma(t,z)=(1-3t)^{-(\gamma+2)/3}
+                  e^{z(1-(1-3t)^{1/3})}.
+\]
+Thus $F_{\gamma-1}=F_\gamma-\partial_z F_\gamma$, proving (2).
+Substituting the $B$ recurrence in (3) gives (1).
+
+Let $h_\pm=e^{-\alpha_\pm z}B_{n,\gamma}(\alpha_\pm z)$,
+$\alpha_+=\alpha$, $\alpha_-=\bar\alpha$.
+Then $h_{\pm,n+1}=(a-zD)h_\pm$ and
+$h_\pm'=-\alpha_\pm h_{\pm,n,\gamma-1}$.
+For $\mathcal W(f,g)=fg'-f'g$, direct expansion gives
+\[
+ \mathcal W((a-zD)f,(a-zD)g)
+ =a(a-1)\mathcal W(f,g)-az\mathcal W(f,g)'
+                                    +z^2\mathcal W(f',g').
+\]
+Now $\alpha\bar\alpha=1$ and
+$\mathcal W(h_+,h_-)=(\bar\alpha-\alpha)e^{-z}W_{n,\gamma}$.
+Removing this nonzero common gauge proves (4).
+\end{proof}
+
+Set $F_n(z,b)=W_{n,n+b-1}(z)$ and $a=4n+b+2$. Then
+\[
+ F_{n+1}(z,b)=a[(a-1+z)F_n(z,b+1)-z\partial_zF_n(z,b+1)]
+                                           +z^2F_n(z,b).     \tag{5}
+\]
+This triangular recurrence exports the ordinary case $b=1$ using only
+rational arithmetic, without roots of unity or complex radicals.
+
+\begin{corollary}\label{cor:positive}
+Every coefficient of $F_n(z,b)$ as a polynomial in $z,b$ is nonnegative.
+For $n\ge1$ and $b\ge0$ all its $z$ coefficients are strictly positive.
+Moreover
+\[
+ W_{n,\gamma}(0)=\prod_{j=0}^{n-1}(\gamma+3j+1)(\gamma+3j+2),
+ \quad [z^{2n-1}]W_{n,\gamma}=n(\gamma+n+1).                 \tag{6}
+\]
+\end{corollary}
+\begin{proof}
+If $A_{n,k}(b)=[z^k]F_n(z,b)$, (5) gives
+\[
+ A_{n+1,k}=a(a-1-k)A_{n,k}(b+1)
+          +aA_{n,k-1}(b+1)+A_{n,k-2}(b).                    \tag{7}
+\]
+Outside $0\le k\le2n$ the corresponding $A_{n,k}$ is zero.
+Where the first term is nonzero, $a-1-k=4n+b+1-k\ge2n+b+1$.
+Thus induction from $F_0=1$ proves coefficientwise nonnegativity in
+$b$. It also gives strict positivity at $b=0$: the first term supplies
+every $k\le2n$, the second supplies $k=2n+1$, and the last supplies
+the monic top term $k=2n+2$. Formula (6) follows from the constant and
+top two coefficients of (4). Positivity alone does not give a fixed
+zero-free sector or real-rooted cyclic sections.
+\end{proof}
+
+\section{One real-rooted section is enough}
+Decompose
+\[
+ W_{n,\gamma}(z)=W_0(z^3)+zW_1(z^3)+z^2W_2(z^3).             \tag{8}
+\]
+\begin{theorem}\label{thm:real}
+For $\gamma>0$, $W_0,W_1,W_2$ have no common real root.
+Consequently, if any nonzero real linear combination of these sections
+has only real roots, then $T_{n,\gamma}$ is squarefree.
+In particular one nonzero real-rooted section suffices; pairwise strict
+interlacing or a closed-sector theorem is unnecessary for this criterion.
+\end{theorem}
+\begin{proof}
+At zero, $W_0(0)=W_{n,\gamma}(0)>0$ by (6).
+The exact rank theorem in the earlier note identifies a common nonzero
+section root $u$ with a repeated root of $T_{n,\gamma}$ at $t=-1/u$:
+choose $x^3=u$, then $W(x)=W(\zeta x)=W(\zeta^2x)=0$,
+$\zeta^3=1$, and the associated reversed root is $z=-x$.
+This is an equivalence, not only a sufficient rank test.
+
+For real $t$, write $T_{n,\gamma}(t)=\mathbb E(1+tY^3)^n$,
+$Y$ a positive Gamma variable. At even $n$ this is strictly positive;
+at odd $n$ its derivative
+$n\mathbb E[Y^3(1+tY^3)^{n-1}]$ is strictly positive.
+Thus no real $t$ is a repeated root. A common real $u\ne0$ is impossible.
+A common nonreal root, on the other hand, would be a nonreal root of
+any nonzero real linear combination of the sections. This proves the
+criterion. In particular their monic gcd is either constant or has even
+positive degree and only nonreal roots.
+\end{proof}
+
+\section{A uniform fifth-order consequence}
+\begin{theorem}\label{thm:fifth}
+For every $\gamma>0$, $T_{5,\gamma}$ is squarefree. Together with the
+previous initial-block theorem, this proves simplicity for every
+$1\le n\le5$ at gap three and every positive Gamma shape.
+\end{theorem}
+\begin{proof}
+The section $W_2(u)=A u^2+B u+C$ at $n=5$ has
+\begin{align*}
+ A&=5(3\gamma^2+33\gamma+98),\\
+ B&=(\gamma+10)(51\gamma^4+1050\gamma^3+7945\gamma^2
+                                     +26210\gamma+33264),\\
+ C&=5(3\gamma^8+168\gamma^7+3962\gamma^6+51156\gamma^5
+       +393407\gamma^4+1833972\gamma^3\\
+   &\hspace{18mm}+5029028\gamma^2+7384944\gamma+4484480).
+\end{align*}
+These formulas follow directly from (4). Its discriminant is
+\begin{align*}
+ B^2-4AC={}&1701\gamma^{10}+98820\gamma^9+2542590\gamma^8
+ +38257920\gamma^7+374339853\gamma^6\\
+ &+2503498860\gamma^5+11681645760\gamma^4
+ +37903208880\gamma^3\\
+ &+82533243696\gamma^2+109328526720\gamma+66701465600.
+\end{align*}
+Every coefficient is strictly positive. As $A,B,C>0$, the two roots
+are real, distinct, and negative for every $\gamma>0$.
+Theorem \ref{thm:real} applies.
+\end{proof}
+For every positive shape $\beta$, this excludes simultaneous moments
+at orders four and five of $X(A+BX^3)$, using $\gamma=\beta+4$ in
+the lower-one bridge. It also excludes those adjacent zero moments for
+$A+BX^3$, since $T_{4,\beta}=T_{5,\beta}-(t/5)T_{5,\beta}'$.
+No all-starting-index result at this gap is asserted.
+
+\section{Why an induction must retain the parameter compatibility}
+The coefficient recurrence (4) does not preserve section interlacing
+from separate input interlacing alone, even with monic positive,
+strictly log-concave inputs. Take
+\[
+ U=z^4+11z^3+111z^2+1100z+10000,\qquad V=(z^2+z+1)^2.
+\]
+Their nonconstant cyclic sections have distinct negative roots:
+$U_0=10000+11u$, $U_1=1100+u$, $U_2=111$ and
+$V_0=1+2u$, $V_1=2+u$, $V_2=3$.
+The nonconstant sections strictly interlace in each input separately.
+Both coefficient sequences are strictly log-concave.
+Yet applying the formal step with $a=10$ gives
+\[
+ [a(a-1+z)U-azU'+z^2V]_0(u)=u^2+1772u+900000,
+\]
+whose discriminant is $-460016<0$.
+These are arbitrary candidate inputs, not members with the required
+common Gamma parameter. This is a failed induction shortcut, not an
+SFC counterexample or a refutation of the actual section conjecture.
+An induction using (4) must exploit relations between the shapes
+$\gamma$ and $\gamma-1$, or prove another stronger invariant.
+
+The exact replay checks the identities and fifth-order certificate,
+and retains narrowly selected parameter-edge/interlacing controls.
+Those controls are evidence only; no uniform real-rooted-section
+proof has been obtained. General FC and unrestricted SFC remain open.
+No external theorem is imported in this extension; all novelty,
+independent-replay, formal-verification and external-review flags remain false.
+\end{document}

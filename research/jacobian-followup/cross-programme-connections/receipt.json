@@ -1,0 +1,119 @@
+{
+  "status": "exact_controls_passed",
+  "check_count": 53,
+  "checks": [
+    "registered proved input GEXCEPTIONALDEGREES20261115",
+    "canonical source exists GEXCEPTIONALDEGREES20261115",
+    "registered proved input GCOMPLEXHEIGHTGEOM20261115",
+    "canonical source exists GCOMPLEXHEIGHTGEOM20261115",
+    "registered proved input GFINITEMODULEMARKER20261115",
+    "canonical source exists GFINITEMODULEMARKER20261115",
+    "registered proved input GTHINPUREFAIL20261115",
+    "canonical source exists GTHINPUREFAIL20261115",
+    "registered proved input GFINITEMODULEMARKER20261115",
+    "canonical source exists GFINITEMODULEMARKER20261115",
+    "registered proved input G3CUBICALL20261115",
+    "canonical source exists G3CUBICALL20261115",
+    "registered proved input GMCCUBICORBIT20261115",
+    "canonical source exists GMCCUBICORBIT20261115",
+    "registered proved input UAPRODUCTTOPO1",
+    "canonical source exists UAPRODUCTTOPO1",
+    "registered proved input UAINFRASELF1",
+    "canonical source exists UAINFRASELF1",
+    "registered proved input GOCTAHEDRALPREFIX20261115",
+    "canonical source exists GOCTAHEDRALPREFIX20261115",
+    "registered proved input GOCTAHEDRALIDEAL20261115",
+    "canonical source exists GOCTAHEDRALIDEAL20261115",
+    "registered proved input GEXCEPTIONALRADIAL20261115",
+    "canonical source exists GEXCEPTIONALRADIAL20261115",
+    "registered proved input MVPOSITIVEIDEAL20261115",
+    "canonical source exists MVPOSITIVEIDEAL20261115",
+    "filtered degree product H2 power1",
+    "filtered degree product H2 power2",
+    "filtered degree product H2 power3",
+    "filtered composition H2",
+    "filtered degree product H8 power1",
+    "filtered degree product H8 power2",
+    "filtered degree product H8 power3",
+    "filtered composition H8",
+    "filtered degree product H12 power1",
+    "filtered degree product H12 power2",
+    "filtered degree product H12 power3",
+    "filtered composition H12",
+    "quadratic collision factor",
+    "cubic loop joins endpoints",
+    "cubic loop is nonconstant",
+    "cubic loop regular at real-derivative zero",
+    "real-seed Gaussian Gram minor1",
+    "real-seed Gaussian Gram minor2",
+    "real-seed Gaussian Gram minor3",
+    "radial identity markedFalse m0",
+    "radial identity markedFalse m1",
+    "radial identity markedFalse m2",
+    "radial identity markedFalse m3",
+    "radial identity markedTrue m0",
+    "radial identity markedTrue m1",
+    "radial identity markedTrue m2",
+    "radial identity markedTrue m3"
+  ],
+  "dependency_sources": {
+    "GEXCEPTIONALDEGREES20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/NONSPHERICAL_PAIRS_AND_EXCEPTIONAL_SL2.md",
+      "sha256": "88895898edf9d6cb9973be9136bf6e8edbd51765b9db9b36ef4a4f7f0bb3a8ef"
+    },
+    "GCOMPLEXHEIGHTGEOM20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/COMPLEX_HEIGHT_IMAGES_AND_CAUCHY_RIGIDITY.md",
+      "sha256": "6c6260ad9d8ae0883637e4bd56b682bdd07c8e3a499c00a7b53d8e34d7840b68"
+    },
+    "GFINITEMODULEMARKER20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/FINITE_CURVE_MARKERS_AND_POSITIVE_LOOP_MODEL.md",
+      "sha256": "9993d34a630648d599f45e4fa2864d27db67053f805f97e3e91a74f9669c97ca"
+    },
+    "GTHINPUREFAIL20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/FINITE_CURVE_MARKERS_AND_POSITIVE_LOOP_MODEL.md",
+      "sha256": "9993d34a630648d599f45e4fa2864d27db67053f805f97e3e91a74f9669c97ca"
+    },
+    "G3CUBICALL20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md",
+      "sha256": "0701fc552d1c30266281162fbc1bd62a7c9135c72e7c013a70d7241bb21224ca"
+    },
+    "GMCCUBICORBIT20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/GAUSSIAN_SHEAR_NORMAL_FORM_AND_TRANSFERS.md",
+      "sha256": "20043bb3f092918fa8b1d6a55c8c5d03cc9fa9c403683cf1c66a7ab1e40388cb"
+    },
+    "UAPRODUCTTOPO1": {
+      "source": "jacobian-followup/universal-keller-ruling-descent/PROOF.md",
+      "sha256": "ea568023eee4504709e4630aeb424d9d4ab0b34a81723c57bb1236776793526a"
+    },
+    "UAINFRASELF1": {
+      "source": "jacobian-followup/universal-keller-torus-quotient-selfmaps/PROOF.md",
+      "sha256": "6190aee79c88adef5e807074c385e795f1882bcddf6478a47af292bbc5f4ee46"
+    },
+    "GOCTAHEDRALPREFIX20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/OCTAHEDRAL_LOWEST_TYPE_AND_SHARP_PREFIXES.md",
+      "sha256": "5e0bffbefe8946238ae657f4e5b4b7777caf093ede864c03cbb2ed07032fbd02"
+    },
+    "GOCTAHEDRALIDEAL20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/OCTAHEDRAL_LOWEST_TYPE_AND_SHARP_PREFIXES.md",
+      "sha256": "5e0bffbefe8946238ae657f4e5b4b7777caf093ede864c03cbb2ed07032fbd02"
+    },
+    "GEXCEPTIONALRADIAL20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/GAUSSIAN_RADIAL_TRANSFER_AND_EXCEPTIONAL_UNIFORMITY.md",
+      "sha256": "b2e468ccb68f4e904eceb8cd9015840695998213403be0dda1a3ea4c6bf7c1a0"
+    },
+    "MVPOSITIVEIDEAL20261115": {
+      "source": "jacobian-followup/moment-vanishing-audit/POSITIVE_FIELD_THEOREMS_AND_ORDINARY_CUTOFF_STABILIZATION.md",
+      "sha256": "daa4a59710635232ca02f3b9730b96bc15c02334525553a6379dcea753b64606"
+    }
+  },
+  "proof_sha256": "b1eddd73636eeca6c6cdecff2c67cf839c63e4b77997988b927860ee944cd30a",
+  "checker_sha256": "d28943b61eef1926731c9f821a4c3e2eb54bf959789b98d4f9296170322d5a5d",
+  "audit_sha256": "6943b6b5e1fdae3e4238228fcf1b90527815f0116d5c3dbfea8ee51f3ca513c5",
+  "universal_proofs_verified_by_samples": false,
+  "topological_cover_classification_formally_verified": false,
+  "exceptional_group_invariance_recomputed": false,
+  "new_numeric_nilpotence_exponent_computed": false,
+  "independent_review": false,
+  "formal_verification": false,
+  "registry_modified": false
+}

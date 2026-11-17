@@ -1,0 +1,94 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path_relative_to_affine_complements": "sources/torus-infinity/leidy-maxim-hoA.pdf",
+      "url": "https://people.math.wisc.edu/~lmaxim/hoA.pdf",
+      "title": "Leidy-Maxim, Higher-order Alexander invariants of plane algebraic curves",
+      "used_statement": "Proof of Theorem4.7, PDF11: epimorphism from knot/link at infinity group to affine complement, without general-position-at-infinity hypothesis.",
+      "bytes": 247448,
+      "sha256": "6e2b28d476c66e89650a73983c1affc8b265bc93796cac0557ee6f9e0c119b04",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        11
+      ],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-colouring/przytycki-0608172v1.pdf",
+      "url": "https://arxiv.org/pdf/math/0608172v1",
+      "title": "Przytycki, 3-coloring and other elementary invariants of knots",
+      "used_statement": "Theorem3.3 on PDF16, Wirtinger Theorem3.9 on PDF17-18 and Lemma3.10 on PDF18; colourings, double branched-cover homology and dihedral representations.",
+      "bytes": 278846,
+      "sha256": "137c23a02758a6990a18b0215d7dcdc021ba4b9d4486a13a42c8aedacf29f1cb",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        16,
+        17,
+        18
+      ],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-colouring/livingston-melvin-1985.pdf",
+      "url": "https://pmelvin.blogs.brynmawr.edu/files/2021/09/1985LivingstonMelvin.pdf",
+      "title": "Livingston-Melvin, Abelian invariants of satellite knots",
+      "used_statement": "Theorem2 and Seifert corollary on PDF6, with proof setup on PDF7: satellite Alexander polynomial is pattern times companion at t^w.",
+      "bytes": 319220,
+      "sha256": "d045314f7c3af26696f382cfda15bda9dfdfa095ab9f5414c4ff05dbdbf6422d",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        6,
+        7
+      ],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+      "url": "https://researchers.ms.unimelb.edu.au/~norbury@unimelb/papers/orevkov.pdf",
+      "title": "Neumann-Norbury, The Orevkov invariant of an affine plane curve",
+      "used_statement": "Oka smooth C* example on complete PDF4, used only as negative control. Iterated-torus description retained via PF35/46.",
+      "bytes": 232604,
+      "sha256": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        4
+      ],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-colouring/stacks-03PK.html",
+      "url": "https://stacks.math.columbia.edu/tag/03PK",
+      "title": "Stacks Project, Kummer theory",
+      "used_statement": "Lemma59.28.1 and ensuing cohomology sequence; retain the units term before Pic[3].",
+      "bytes": 33808,
+      "sha256": "5f76b11d5226708e082eadaad245bb303b5f2d7923183de1109f54e74935525f",
+      "complete_PDF_pages_rendered_and_visually_inspected": [],
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_claims": [
+    "PF2RULED46",
+    "PF2RULED45",
+    "PF2RULED34",
+    "PF2RULED33",
+    "PF2RULED53"
+  ],
+  "new_written_steps": [
+    "S4/V4 produces an obligatory nonconstant Fox3 colouring at infinity",
+    "closed determinant recurrence through any number of cable stages yields whole-family exclusions",
+    "parabolic crossed homomorphism space over F2 exactly classifies surjective transposition S4 lifts of an S3 epimorphism",
+    "local disjoint-fold monodromy makes the cyclic triple of the sign surface genuinely etale even at its finite singularities",
+    "explicit smooth C* branch sign cover refutes simply-connectedness from smoothness"
+  ],
+  "degree_scope": "Quartic packet, arbitrary source orders and target degrees. No S3 quotient condition asserted for S_d with d>=5.",
+  "all_omitted_primes_retained": true,
+  "not_claimed": [
+    "determinant divisible by3 suffices",
+    "a knot-group lift extends to the affine curve complement",
+    "a cubic subfield of the original quartic source",
+    "smooth sign surface is simply connected",
+    "units are constant or Picard torsion absent without evidence",
+    "finite Keller map or full exclusion"
+  ],
+  "formal_verification": false,
+  "independent_full_reproof": false,
+  "external_review": false,
+  "novelty_priority": false
+}

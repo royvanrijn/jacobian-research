@@ -1,0 +1,27 @@
+{
+  "previous_goal_turn": "progress",
+  "previous_evidence": "KMFI12--13 authoritative scopes, exact formulas, source manifest and current theory re-read; attributed A5/A12 realization is genuine progress.",
+  "new_claim_ids": [
+    "KMFI14",
+    "KMFI15",
+    "KMFI16"
+  ],
+  "changed_claim_ids": [
+    "OP-KMON"
+  ],
+  "preexisting_entry_count": 1824,
+  "preexisting_entries_preserved_without_change": 1823,
+  "scope_fingerprints": {
+    "OP-KMON": "5d086e18a5349b34",
+    "KMFI14": "f03d54c132708d24",
+    "KMFI15": "468a6dce98d376a5",
+    "KMFI16": "f55be17509a9bbf2"
+  },
+  "updated_lesson": "METHOD-KELLER-AFFINE-INERTIA",
+  "updated_work": "WORK-KMON",
+  "all_natural_A_n_n_ge_5_realized": true,
+  "actual_Keller_field_pair_outside_every_curve_stabilization": true,
+  "PSL2_11_realized": false,
+  "complete_classification": false,
+  "goal_status": "active"
+}

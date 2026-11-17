@@ -1,0 +1,17 @@
+from sage.all import *
+from pathlib import Path
+import json,gzip,time
+H=Path('/home/royvanrijn/src/jacobian-research/research/jacobian-followup/affine-complements');secs=json.loads(gzip.decompress((H/'degree8_quartic_descent_certificates.json.gz').read_bytes()))['sectors'];start=time.monotonic()
+for sec in secs:
+ k=sec['multiplicities'][0];T=PolynomialRing(QQ,'t');K=NumberField(T(sec['P4']),'t');p=1073741827;F=GF(p);yy={2:F(743393613),4:F(1037248271)}[k];rt=yy*yy
+ A=PolynomialRing(K,names=sec['core_variables']);V=PolynomialRing(A,'w');B=PolynomialRing(F,names=sec['core_variables'][:4]);VB=PolynomialRing(B,'w')
+ def cv(txt):return VB([B({tuple(e[:4]):sum(F(c[j])*rt**j for j in range(4)) for e,c in cf.dict().items()}) for cf in V(txt)])
+ W,M,L=[cv(sec[key]) for key in ['normalized_W','normalized_M','normalized_L']];ss=sum(F(K(sec['normalized_cusp_parameter'])[j])*rt**j for j in range(4));I=B.ideal([M[j] for j in range(3,6)]);G=I.groebner_basis(algorithm='libsingular:slimgb');Q=B.quotient(I);VV=PolynomialRing(Q,'w');w=VV.gen();cv2=lambda f:VV([Q(c) for c in f]);WW,MM,LL=map(cv2,[W,M,L]);E=(MM*(WW//(w-Q(ss)))).quo_rem(LL)[1];e=[B(c.lift()) for c in E]
+ print('quadratic M',k,'I dim',I.dimension(),'I GB',len(G),'E degrees',[g.degree() for g in e],'time',time.monotonic()-start,flush=True)
+ out=dict(sector=k,prime=p,root_t=int(rt),variables=list(B.variable_names()),I=list(map(str,I.gens())),G=list(map(str,G)),reduced_E=list(map(str,e)))
+ J=I+B.ideal([e[5]]);GG=J.groebner_basis(algorithm='libsingular:slimgb');out.update(JG=list(map(str,GG)),J_dimension=int(J.dimension()))
+ print('E5 section',k,'dim',J.dimension(),'GBlen',len(GG),'degrees',[int(g.degree()) for g in GG],'time',time.monotonic()-start,flush=True)
+ if J.dimension()==0:out['J_length']=int(J.vector_space_dimension());print('length',out['J_length'],flush=True)
+ for j in [4,3,2]:
+  JJ=J+B.ideal([e[j]]);last=JJ.groebner_basis(algorithm='libsingular:slimgb');out['add_E'+str(j)+'_unit']=last==[B.one()];print('add E',j,'unit',last==[B.one()],'len',len(last),'time',time.monotonic()-start,flush=True)
+ Path('/tmp/degree8_Mquadratic_probe_'+str(k)+'.json').write_text(json.dumps(out,indent=2))

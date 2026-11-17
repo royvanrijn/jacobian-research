@@ -1,0 +1,45 @@
+{
+  "status": "probes-complete",
+  "source_sha256": "88937a8063d05f26daf79b5c5e92eceb325f8b8dd14875cea5dcaf04997769b8",
+  "model_sha256": "75f7b07d1b019b661e6e71c4ae6f9a197757d0d752d64622d5451d7d21e6d533",
+  "probes": [
+    {
+      "t": "0",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 30
+    },
+    {
+      "t": "1",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 33
+    },
+    {
+      "t": "-1",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 33
+    },
+    {
+      "t": "2",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 33
+    },
+    {
+      "t": "-2",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 33
+    },
+    {
+      "t": "3",
+      "column_rank": 352,
+      "augmented_rank": 353,
+      "dual_support": 33
+    }
+  ],
+  "dual_support_union": 34,
+  "seconds": 0.425
+}

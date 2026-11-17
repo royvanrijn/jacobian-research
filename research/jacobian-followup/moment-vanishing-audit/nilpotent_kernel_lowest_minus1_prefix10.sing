@@ -1,0 +1,4 @@
+ring R=0,(ell_z,g2,g3),dp;
+option(redSB);
+ideal I=143*ell_z^2 - 2*g3 + 39,g2,-323*ell_z^3 + 228*ell_z*g3 + 969*ell_z + 24*g2^2,ell_z*g2,1311*ell_z^4 - 138*ell_z^2*g3 + 1656*ell_z^2 + 54*ell_z*g2^2 + 6*g3^2 + 54*g3 + 161,405*ell_z^2*g2 + 14*g2*g3 + 87*g2,-62031*ell_z^5 + 53940*ell_z^3*g3 + 242730*ell_z^3 + 12586*ell_z^2*g2^2 - 1488*ell_z*g3^2 + 25172*ell_z*g3 + 78213*ell_z + 296*g2^2*g3 + 7254*g2^2;
+ideal G=std(I);print("BASIS_SIZE");print(size(G));print("DIM");print(dim(G));print("VDIM");print(vdim(G));if(size(G)<12){print("BASIS_BEGIN");G;print("BASIS_END");};quit;

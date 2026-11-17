@@ -1,0 +1,54 @@
+{
+  "outcome": "PASS",
+  "metadata_groups": [
+    "MJ0 registered all-degree scope and frozen proof/checker/context/receipt: 32 controls,21 algebraic",
+    "four retained claims/ten sealed proof-checker-context-receipt pins and full original goal preserved",
+    "global normalization and disconnected fibre-line proof,full Ricci/scalar distinction and explicit hostile controls scoped",
+    "one first preregistration invocation PASS; no registered mathematical checker replay or assurance upgrade",
+    "original parent stays open; all three new forbidden attacks have direct witness dependency",
+    "new Ricci-flat method and every changed-parent lesson consumer have fresh fingerprints",
+    "both work items and all changed-parent work consumers retain full goal and complete prior history",
+    "navigation exactly matches current repository renderer",
+    "known unrelated missing-artifact baseline [2,2,1,0] retained; affected whitespace clean"
+  ],
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "claim": "HC4MYMJ0",
+  "check_count": 32,
+  "algebraic_controls": 21,
+  "new_published_import_packages": 0,
+  "new_primary_caches": 0,
+  "preregistration_mathematical_checker_invocations": 1,
+  "registered_mathematical_checkers_executed": [],
+  "frozen_files_sha256": {
+    "research/jacobian-followup/hc4-triangular-graphs/RICCI_FLAT_HC4_AND_ONE_DIMENSIONAL_JACOBIAN_IMAGES.md": "c3dca36044542e4bf400f736d76f0c7ee2201fc8d44251f3d9a7f73596adf508",
+    "research/jacobian-followup/hc4-triangular-graphs/verify_ricci_flat_hc4.py": "d878a70282da786f4f93f08677e48b348dd84e5d4c9a2b435c71297b9dcf7838",
+    "research/jacobian-followup/hc4-triangular-graphs/sources/ricci-flat-hc4-context.json": "e39b1bf147f53d29c546bdb55f963424e6686ed894d73154ff204f01f9639f22",
+    "research/jacobian-followup/hc4-triangular-graphs/receipt-ricci-flat-hc4.json": "cb6ca3a4771ba3ae5cf9a3ffd5dc8cc1e9e233e91bf8dbbb21b582a42661555d",
+    "tmp/ricci-flat-hc4-preregistration.json": "eb052fed53ed7a745e60bdd6b31e6202fea2dfbd845a316fb7fc78da7e101cd8"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "original_goal_complete": false
+}

@@ -1,0 +1,20 @@
+{
+  "claim": "QFL2",
+  "status": "PASS",
+  "bounded_nonterminating_pair": "Exact [P,X]=h on a generic test function; spatial degree2, scalar coefficient1/(1-h), regular at h=2",
+  "unbounded_identity_lift": "Exact rational differential-operator identity; classical reduction identity. Written geometric-series formula gives unbounded coefficient degrees.",
+  "arithmetic_shear": "Exact canonical pair with classical identity reduction; independent integer PBW powers modulo primes5,7,11",
+  "prime_controls": [
+    5,
+    7,
+    11
+  ],
+  "coverage_boundary": "No bounded lift of a noninvertible classical map is asserted. Valuation/automatic nonsurjectivity, closed automorphism locus, Artin approximation and all-prime identity use the written proof.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "BOUNDED_REALIZATION.md": "85860fda7138b1e38a41341f2f9e830a516793f0c66e3c4778f9e1adf151b8b9",
+    "check_realization_controls.py": "01dbfee3c6065c846f2131969c2a1dbacfc88699b1ed1ded13761a6263f5c8bf"
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "status": "exact",
+  "profiles": [
+    {
+      "n": 2,
+      "gamma": "1/2",
+      "gap": 3,
+      "rank_minor_gcd_degree": 0,
+      "repeated_root_gcd_degree": 0,
+      "inside_positive_Gamma_scope": true
+    },
+    {
+      "n": 3,
+      "gamma": "3",
+      "gap": 3,
+      "rank_minor_gcd_degree": 0,
+      "repeated_root_gcd_degree": 0,
+      "inside_positive_Gamma_scope": true
+    },
+    {
+      "n": 4,
+      "gamma": "4",
+      "gap": 3,
+      "rank_minor_gcd_degree": 0,
+      "repeated_root_gcd_degree": 0,
+      "inside_positive_Gamma_scope": true
+    },
+    {
+      "n": 2,
+      "gamma": "2",
+      "gap": 4,
+      "rank_minor_gcd_degree": 0,
+      "repeated_root_gcd_degree": 0,
+      "inside_positive_Gamma_scope": true
+    },
+    {
+      "n": 2,
+      "gamma": "-3/2",
+      "gap": 2,
+      "rank_minor_gcd_degree": 2,
+      "repeated_root_gcd_degree": 2,
+      "inside_positive_Gamma_scope": false
+    },
+    {
+      "n": 2,
+      "gamma": "-5/2 + sqrt(15)*I/6",
+      "gap": 3,
+      "rank_minor_gcd_degree": 3,
+      "repeated_root_gcd_degree": 3,
+      "inside_positive_Gamma_scope": false
+    }
+  ],
+  "failed_Hurwitz_shortcut": {
+    "n": 4,
+    "gamma": 4,
+    "gap": 3,
+    "B": "z**4 + 36*z**3 + 520*z**2 + 3560*z + 9720",
+    "W_descending_coefficients": [
+      1,
+      36,
+      740,
+      10560,
+      113800,
+      933920,
+      5768000,
+      24494400,
+      59875200
+    ],
+    "Hurwitz_leading_determinants": [
+      "36",
+      "16080",
+      "55941120",
+      "1152185369600",
+      "104938408204288000",
+      "42131848822457139200000",
+      "-169684039754781133897728000000",
+      "-10159865817125471348353243545600000000"
+    ],
+    "cyclic_parts": [
+      "740*u**2 + 933920*u + 59875200",
+      "36*u**2 + 113800*u + 24494400",
+      "u**2 + 10560*u + 5768000"
+    ],
+    "cyclic_gcd_degree": 0,
+    "SFC_counterexample": false
+  },
+  "finite_section_controls": [
+    {
+      "n": 4,
+      "gamma": 4,
+      "gap": 3,
+      "degrees": [
+        2,
+        2,
+        2
+      ],
+      "negative_real_root_counts": [
+        2,
+        2,
+        2
+      ],
+      "pairs": [
+        {
+          "sections": [
+            0,
+            1
+          ],
+          "strict_interlacing": true
+        },
+        {
+          "sections": [
+            0,
+            2
+          ],
+          "strict_interlacing": true
+        },
+        {
+          "sections": [
+            1,
+            2
+          ],
+          "strict_interlacing": true
+        }
+      ],
+      "isolating_intervals": [
+        [
+          [
+            "-10769053/9017",
+            "-33839453/28334"
+          ],
+          [
+            "-1876905/27704",
+            "-309001/4561"
+          ]
+        ],
+        [
+          [
+            "-42672577/14570",
+            "-44204338/15093"
+          ],
+          [
+            "-3506312/15093",
+            "-1826451/7862"
+          ]
+        ],
+        [
+          [
+            "-125106533/12533",
+            "-92874107/9304"
+          ],
+          [
+            "-5376133/9304",
+            "-7241947/12533"
+          ]
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "gamma": 6,
+      "gap": 3,
+      "degrees": [
+        4,
+        3,
+        3
+      ],
+      "negative_real_root_counts": [
+        4,
+        3,
+        3
+      ],
+      "pairs": [
+        {
+          "sections": [
+            0,
+            1
+          ],
+          "strict_interlacing": true
+        },
+        {
+          "sections": [
+            0,
+            2
+          ],
+          "strict_interlacing": true
+        },
+        {
+          "sections": [
+            1,
+            2
+          ],
+          "strict_interlacing": true
+        }
+      ],
+      "isolating_intervals": [
+        [
+          [
+            "-1785884986/19081",
+            "-1330919999/14220"
+          ],
+          [
+            "-69255191/11984",
+            "-50987863/8823"
+          ],
+          [
+            "-6998073/5201",
+            "-29446804/21885"
+          ],
+          [
+            "-546168/6779",
+            "-5622493/69786"
+          ]
+        ],
+        [
+          [
+            "-217180438/20391",
+            "-138364527/12991"
+          ],
+          [
+            "-26503477/11850",
+            "-29551936/13213"
+          ],
+          [
+            "-10482361/35956",
+            "-1090625/3741"
+          ]
+        ],
+        [
+          [
+            "-387245538/14983",
+            "-342041477/13234"
+          ],
+          [
+            "-70553265/20009",
+            "-64562461/18310"
+          ],
+          [
+            "-15645659/21806",
+            "-10984105/15309"
+          ]
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "gamma": 8,
+      "gap": 3,
+      "degrees": [
+        5,
+        5,
+        4
+      ],
+      "negative_real_root_counts": [
+        5,
+        5,
+        4
+      ],
+      "pairs": [
+        {
+          "sections": [
+            0,
+            1
+          ],
+          "strict_interlacing": true
+        },
+        {
+          "sections": [
+            0,
+            2
+          ],
+          "strict_interlacing": true
+        },
+        {
+          "sections": [
+            1,
+            2
+          ],
+          "strict_interlacing": true
+        }
+      ],
+      "isolating_intervals": [
+        [
+          [
+            "-483232043/3844",
+            "-7612413206/60555"
+          ],
+          [
+            "-557218273/34112",
+            "-523257884/32033"
+          ],
+          [
+            "-256443153/45151",
+            "-14210555/2502"
+          ],
+          [
+            "-49110716/30797",
+            "-49040551/30753"
+          ],
+          [
+            "-1962959/22107",
+            "-1475660/16619"
+          ]
+        ],
+        [
+          [
+            "-6698116492/14155",
+            "-6122234629/12938"
+          ],
+          [
+            "-436164689/16351",
+            "-651032683/24406"
+          ],
+          [
+            "-176919699/22496",
+            "-35193619/4475"
+          ],
+          [
+            "-117265907/44257",
+            "-6303536/2379"
+          ],
+          [
+            "-5828730/17513",
+            "-2954803/8878"
+          ]
+        ],
+        [
+          [
+            "-713209248/14135",
+            "-582374329/11542"
+          ],
+          [
+            "-365582246/33123",
+            "-368352561/33374"
+          ],
+          [
+            "-69945089/17506",
+            "-48804939/12215"
+          ],
+          [
+            "-21367760/25621",
+            "-17621459/21129"
+          ]
+        ]
+      ]
+    }
+  ],
+  "uniform_section_interlacing_proved": false,
+  "floating_root_angles_not_used_as_evidence": true
+}

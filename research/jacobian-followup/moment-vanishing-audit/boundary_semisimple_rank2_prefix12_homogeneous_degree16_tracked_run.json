@@ -1,0 +1,10 @@
+{
+  "status": "TIMEOUT",
+  "characteristic": 65521,
+  "algorithm": "degree16 homogeneous tracked liftstd, dehomogenized target column only",
+  "time_limit_seconds": 45,
+  "elapsed_seconds": 45.114,
+  "output_bytes": 0,
+  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "conclusion": "MODULAR ONLY; rational reconstruction and exact verification required."
+}

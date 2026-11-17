@@ -1,0 +1,639 @@
+{
+  "status": "PASS",
+  "input_sha256": {
+    "current13_integer_results.json": "b8ae447fb47dce4d25130dc72a90574d59280b9364bdd9fd0286c2092a6c7353",
+    "current13_panel.json": "95a0b0cbf3546dee0e0d1c85ad54e093651d5a16f7b90c6c54112e48fcc49e69",
+    "integer_lifts.py": "8f6d8280001a9d76897b2db69c12244b964fdc58abfccd41b415b5ac90d02c31",
+    "lift_panel.json": "a93142dbeb58695e40e85e2b7d299fc19343e446007e352dda68ad827fdb535f",
+    "old_panel_integer_results.json": "f235af144695eee16456fb108ae9dcc2aa667c560e2327e746fbd06eab5e0527",
+    "panel_source_verification.json": "dae903aabb934d1fc1bd87ea003a4416beb122f4927dd675d9f25b079bd8d4a0",
+    "search_integer_lifts.py": "f86ce4cfc7135c742a73f63ee98e31962188a8f865fabd9450b744b18f3f835f",
+    "search_old_panel_integer.py": "9cd4c55e98ecc4040e0c59323babf44701cd37e82ead823da77312ee0a77d02f",
+    "sources/current13/manifest.json": "efecf0543ffe588f85fcdfe496677ace2d3fd135795b59834c949cc625b0086f",
+    "sources/wirt-hm/manifest.json": "dd35d18ba479c98b621a770f5f6b58983f76fb2d55e8f1819c49e3f49c997b3a",
+    "verify_integer_lifts.py": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309"
+  },
+  "sharp_certificates_sha256": "f04822506816f6af2802565a5aebc927f48acc95cbba78402267b94ad6c413a8",
+  "smith_two_by_two_gcd_of_minors_controls": 625,
+  "independently_replayed_lift_matrices": 512,
+  "modular_cross_checks": [
+    2,
+    3,
+    5,
+    7,
+    11
+  ],
+  "sharp_five_certificates": 16,
+  "panel_results": [
+    {
+      "name": "13a_129",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_135",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_136",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_137",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_194",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_196",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_197",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_198",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_233",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_234",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_239",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_242",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_243",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_244",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_253",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "13a_265",
+      "panel": "current13_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 0,
+          "maximum_dimensions": {}
+        }
+      ]
+    },
+    {
+      "name": "15a1381",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a1383",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a1389",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a1416",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a1599",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a1617",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a1618",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a1619",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a7591",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a7715",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a7717",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a7733",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a7749",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a7752",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a7763",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "15a7816",
+      "panel": "lift_panel.json",
+      "degrees": [
+        {
+          "degree": 3,
+          "surjective_colourings": 8,
+          "maximum_dimensions": {
+            "3": 6,
+            "4": 2
+          }
+        },
+        {
+          "degree": 4,
+          "surjective_colourings": 24,
+          "maximum_dimensions": {
+            "4": 16,
+            "5": 8
+          }
+        }
+      ]
+    }
+  ],
+  "full_conjecture_closed": false,
+  "independent_of_producer": "Separate diagram walk, full permutation-group enumeration, reverse affine point evaluation, elementary-step replay, modular elimination. Uniform proofs remain unformalized and externally unreviewed."
+}

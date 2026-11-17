@@ -1,0 +1,187 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{A real-rooted companion and backward certificates for gap-three sections}
+\author{Internal proof and exact replay; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+The \href{GAP_THREE_WRONSKIAN_RECURRENCE.tex}{Wronskian proof} reduces
+simplicity of $T_{n,\gamma,3}=\sum_k\binom nk(\gamma)_{3k}t^k$ to
+coprimality of three real cyclic sections $W_0,W_1,W_2$.
+A nonzero real-rooted section suffices, but its uniform existence is
+unproved. We give two precise related structures, retaining the missing
+transfer and arithmetic boundaries. General FC and unrestricted SFC
+remain open.
+
+\section{A finite-difference representation and its real-rooted companion}
+Let $B=B_{n,\gamma,3}$ be the monic degree-$n$ auxiliary, defined by
+\[
+ B_{0,\gamma}=1,\qquad
+ B_{n+1,\gamma}=(z+3n+\gamma+2)B_{n,\gamma}-zB_{n,\gamma}'.
+\]
+Put $p_n(x)=\prod_{j=0}^{n-1}(x+2+3j)$ and
+$\nabla f(x)=f(x)-f(x-1)$.
+\begin{lemma}\label{lem:diff}
+For every real $\gamma$,
+\[
+ e^{-z}B(z)=\sum_{k\ge0}p_n(\gamma-k)\frac{(-z)^k}{k!},
+ \qquad B(z)=\sum_{j=0}^n\frac{\nabla^jp_n(\gamma)}{j!}z^j.
+                                                               \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+Writing $\delta=zD_z$, the recurrence gives
+$e^{-z}B=\prod_{j=0}^{n-1}(\gamma+2+3j-\delta)e^{-z}$.
+On the $k$th Taylor monomial $\delta$ acts by $k$, proving the first
+identity as an identity of entire functions (or formal series).
+Multiplication by $e^z$ gives the finite backward differences in (1).
+Terms above degree $n$ vanish because $p_n$ has degree $n$.
+\end{proof}
+
+Write $B(z)=\sum_{j=0}^n b_jz^j$, and define
+\[
+ J(y)=\sum_{k=0}^n\binom nk p_n(\gamma-k)y^k,
+ \qquad K(z)=\sum_{j=0}^n n_{\underline j}b_jz^j.              \tag{2}
+\]
+\begin{theorem}\label{thm:polar}
+For every $n\ge1$ and $\gamma>n-2$, both $J$ and $K$ have $n$
+distinct real roots, all strictly less than $-1$.
+In particular this holds throughout the needed range
+$\gamma=n+\beta-1$, $\beta>0$.
+\end{theorem}
+\begin{proof}
+Let $q$ have degree $n$ and only negative real roots, allowing
+multiplicities, and let $c>n$. The polynomial $(c-yD_y)q$ retains a
+root of multiplicity $m-1$ at each root of multiplicity $m$ of $q$.
+All remaining roots are simple, one strictly to the left of the least
+root and one in each interval between consecutive distinct roots.
+Indeed, away from roots its zeros solve
+\[
+ c-\sum_r\frac{m_r y}{y-r}=0.
+\]
+The left side has strictly negative derivative
+$\sum_r m_r r/(y-r)^2<0$. Its endpoint limits give exactly the stated
+roots; on the rightmost interval it has no zero since its limit at
+positive infinity is $c-n>0$. No newly created root coincides with an
+old root, and leading and constant coefficients remain nonzero.
+
+Now
+\[
+ J(y)=\prod_{j=0}^{n-1}(\gamma+2+3j-yD_y)(1+y)^n.
+\]
+All $n$ constants are greater than $n$. The preceding rule shows that
+the original root $-1$ loses one multiplicity at each step, while every
+new root is simple and lies to its left. After $n$ steps all roots are
+simple and strictly below $-1$.
+
+The binomial transform of (1) gives
+\[
+ J(y)=(1+y)^nK\left(-\frac{y}{1+y}\right).                   \tag{3}
+\]
+Neither endpoint degenerates: $J(-1)=\nabla^np_n(\gamma)=n!$
+and $K(-1)=p_n(\gamma-n)>0$. The real map
+$y\mapsto-y/(1+y)$ sends $(-\infty,-1)$ bijectively to itself,
+with nonzero derivative. This proves the assertion for $K$ as well.
+\end{proof}
+
+There is a related published finite-difference theorem: Iskander--Jain,
+\emph{Hyperbolicity of Appell polynomials of functions in the
+$\delta$-Laguerre--P\'olya class}, Theorem 1.1, in the
+\href{sources/iskander-jain-2020-delta-laguerre-polya.pdf}{cached arXiv version}
+(\href{https://arxiv.org/abs/2002.09906}{primary source}).
+Its finite zero-free interval applies to $p_n$ on $[\gamma-n,\gamma]$.
+The elementary polar proof above is independent of that input and also
+proves simplicity and the location below $-1$.
+The source's Theorem 1.2 has a DIFFERENT infinite-ray hypothesis.
+It cannot be applied to the backward Poisson series in (1): the sampled
+polynomial $p_n(\gamma-s)$ has positive roots $\gamma+2+3j$, so its
+forward ray from zero is not zero-free. No hyperbolicity theorem for $B$
+or its Wronskian sections follows from that theorem here.
+
+\section{The companion property alone does not transfer to the sections}
+The real-rootedness of $K$ does not, for an arbitrary inverse transform,
+guarantee even one real-rooted individual Wronskian section. An exact
+control uses $n=8$ and
+\[
+ K_*(z)=\prod_{j=0}^7\left(1+\frac{90+j}{108}z\right),\qquad
+ B_*(z)=\sum_{j=0}^8\frac{[z^j]K_*}{8_{\underline j}}z^j.
+\]
+Rescale $B_*$ to be monic and form $W$ by the earlier gap-three
+Wronskian formula. $K_*$ has eight distinct roots below $-1$, but the
+three sections of $W$ have respectively degrees $5,5,4$ and only
+$3,3,0$ real roots, by exact Sturm counts.
+This control is NOT the arithmetic-progression Gamma family. It refutes
+only a generic inverse-companion inference to an individual section,
+not a theorem exploiting the full factors $\gamma+2+3j$, nor possible
+real-rooted linear combinations, nor SFC.
+
+\section{A backward certificate needs only nonzero pivots}
+\begin{theorem}\label{thm:pivots}
+Let $N\ge3$ and let $q_N,q_{N-1},q_{N-2}$ be real polynomials with
+constant coefficient one and degree at most $\lfloor j/3\rfloor$ at
+index $j$. Starting at $j=N$, put
+\[
+ \lambda_j=[u](q_j-q_{j-1}),\qquad
+ q_{j-3}=\frac{q_j-q_{j-1}}{\lambda_ju},                     \tag{4}
+\]
+and continue downward through $j=3$.
+If every pivot $\lambda_j$ is nonzero, then the input triple has gcd
+one over $\mathbb C$.
+No sign condition on the pivots, root-location theorem, or claim of
+real-rootedness of the input polynomials is needed.
+\end{theorem}
+\begin{proof}
+The numerator has zero constant coefficient and its linear coefficient
+is $\lambda_j$. Thus each new $q_{j-3}$ is polynomial with constant
+coefficient one. Its degree bound follows by division by $u$.
+Consequently $q_0=q_1=q_2=1$ at termination.
+If a nonzero $u_0$ were a common root of a current triple, (4) would
+make it a root of the next polynomial. Descending all the way to
+$q_0=1$ is impossible. Zero is not a common root since constants are one.
+\end{proof}
+For the actual moment family at $n\ge2$, take $N=2n$ and
+$q_{2n-r}=W_r/W_r(0)$, $r=0,1,2$.
+The constants are nonzero in the physical range $\gamma=n+\beta-1$,
+$\beta>0$, by the proved coefficient positivity. Completion of this
+backward certificate therefore proves simplicity, independently of the
+stronger real-rooted-section strategy. Uniform nonvanishing of these
+pivots has NOT been proved.
+
+For positive pivots, the same recurrence has an elementary weighted
+interval interpretation: $q_N$ sums $u^{|S|}\prod_{j\in S}\lambda_j$
+over $S\subset\{3,\ldots,N\}$ whose distinct elements differ by at least
+three. This is the partition polynomial of nonoverlapping length-three
+intervals on a path. The identity follows by including or excluding the
+last interval; its interpretation is not needed for the gcd proof.
+A zero pivot means only that this particular backward certificate is
+inconclusive. For example the full-degree positive input
+$q_6=1+u+u^2$, $q_5=1+u$, $q_4=1+2u$ has gcd one but first pivot zero.
+It is not permissible to label such an index a failure of SFC.
+
+\section{Native-prime residuals also require a further step}
+At the ordinary shape $\gamma=n$, use
+$T_{n,n,3}(t)=\sum_k\binom nk(n)_{3k}t^k$.
+The assertion that all its Newton residuals at three are squarefree is
+false: at $n=22$ the edge $(19,27)$ to $(22,33)$ has residual
+$1+Y^3=(1+Y)^3$ in $\mathbb F_3[Y]$.
+Parity alone does not repair the native-prime test uniformly.
+At $n=63$ the edges $(54,80)$ to $(60,89)$ and $(60,89)$ to $(63,95)$
+have residuals $1+2Y^3$ and $1+Y^3$.
+The first has reduced slope denominator two and permits degree two
+for a hypothetical square divisor. Thus the residual-and-parity test
+still permits a quadratic. These are exact limitations of sufficient
+certificates, not repeated-root or SFC counterexamples.
+
+The checker pins the source, proves the polynomial identities symbolically,
+replays positive-pivot certificates, and checks the stated counterprofiles.
+The larger-index Sturm controls at $n=24,48$ are diagnostics only.
+No uniform pivot theorem, uniform real-rooted-section existence,
+all-index gap-three SFC, general FC or unrestricted SFC is claimed.
+All novelty, independent-replay, formal-verification and external-review
+flags remain false.
+\end{document}

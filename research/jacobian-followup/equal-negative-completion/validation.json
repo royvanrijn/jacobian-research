@@ -1,0 +1,123 @@
+{
+  "all_required_certificates_multiplied_independently": true,
+  "exploratory_fixed_cstar_certificates": [
+    {
+      "certificate_log_sha256": "4a263101d5983ca34d2c62daba8534ce723b3beb5437ffd688d04575cec30c2b",
+      "chart": "cstar-I",
+      "exact_rational_identity_one": true,
+      "generators": 29,
+      "input_sha256": "92cb63acddaa299b13ce09c2aed6a4c7a26a419f0a2ed26d161622f7df6d32c6",
+      "maximum_multiplier_degree": 1,
+      "multiplier_terms": 6,
+      "script_sha256": "e07bf11964bc40770f4ad4a0d06f76b4ea07b5b3a6dab751398d7f0fba8f6f4f"
+    },
+    {
+      "certificate_log_sha256": "70f37f97e2402b062cf542e7cc00628b36712f3ce582eed297797cc9c3784cfa",
+      "chart": "cstar-II",
+      "exact_rational_identity_one": true,
+      "generators": 29,
+      "input_sha256": "0dc48f3d89c87c9b764d6278ec2a60b91e2abd215aa2dd86f9d8a4932519d7a1",
+      "maximum_multiplier_degree": 0,
+      "multiplier_terms": 5,
+      "script_sha256": "d7568e2cdc3b46cab39269cba5176f2955524ae5c9b176c5a9a05388924a67b4"
+    }
+  ],
+  "general_cstar_II_timeout_preserved": true,
+  "general_cstar_I_primary_unit_not_replayed_or_used": true,
+  "generic_dictionary": {
+    "all_first_degrees_through7": true,
+    "full_source_jacobian_checked": true,
+    "parameters": 33
+  },
+  "global_dense_profile_count_changed": false,
+  "global_witness_bounds_improved": false,
+  "math_coverage": "Written quotient/leading-degree/curve-residue and normal-chart proof plus GLDC5/7/8 and Moh. Not formalized. Unchanged timeouts are not UNSAT.",
+  "original_equations": 34,
+  "original_equations_reconstructed": true,
+  "original_input_sha256": "e0b9dfd6bd77d1e3fa82042c7023b3369a03099df234297009e3ceb0b8f8ed2c",
+  "original_parameters": 24,
+  "original_timeout_preserved": true,
+  "premises": {
+    "GLDC5": {
+      "checker_sha256": "7ac92446e89306bed60726fa76a943639c5d5e4fee08378c46f7a0a3b95f0336",
+      "proof_sha256": "1753dff51e4e67e1acb69a02936a3cc924026dd044239eb36e8c1118b119cefd"
+    },
+    "GLDC7": {
+      "checker_sha256": "e90346188ebfbf69bc41d376f9074f0eae15a5c3a060a27d2ffc02d673819753",
+      "proof_sha256": "f232e1e00193dbd63357076c2196c335ac8c10b58a2059eb500b4a6c457b5245"
+    },
+    "GLDC8": {
+      "checker_sha256": "e90346188ebfbf69bc41d376f9074f0eae15a5c3a060a27d2ffc02d673819753",
+      "proof_sha256": "4b8f823701e905acb6ecc07567915a6d225a65caa54140c225bc26ae8e29afee"
+    },
+    "KPAIR1": {
+      "checker_sha256": "252f9f217444f8d300f9dd559c714043dd90bf56172e63500b28b08cdd419a7e",
+      "proof_sha256": "9a108f294a8537272b41a9bd97df25acd8eea4c450f39a95f7208f7461c6873a"
+    }
+  },
+  "proof_sha256": "842a31108ffc8fc90a7224895960774bb1046e1659a4dbed7c519f5755be2c18",
+  "required_certificates": [
+    {
+      "certificate_log_sha256": "6d8752ba85f9b3c2f8c1430e92cf0fd08e2880e54f7f567c3d9fcaa4b7d9b3b2",
+      "chart": "normal-I",
+      "exact_rational_identity_one": true,
+      "generators": 18,
+      "input_sha256": "b5ff895ae5dd295f2c62690cfaebf68cd78ea75260de52b1e1d5b1b91e7d0fa7",
+      "maximum_multiplier_degree": 7,
+      "multiplier_terms": 742,
+      "script_sha256": "448388f636a0a67bf0faca636cbc552a1491eeca99c8f1c837ac9547413bd6f6"
+    },
+    {
+      "certificate_log_sha256": "578b36b057ab41d72b844e83f3fdbdf4043eac525670159b9d43c20e1da6cf55",
+      "chart": "normal-II",
+      "exact_rational_identity_one": true,
+      "generators": 18,
+      "input_sha256": "dc12e054a5378ae5378136b8a3c361ac8ad801af976a956174d26e3da99990f8",
+      "maximum_multiplier_degree": 6,
+      "multiplier_terms": 1403,
+      "script_sha256": "aec0fb782b105fc886bc2158a805904dfca0ac0e6ccb44e1d0e4c344fa5747ce"
+    },
+    {
+      "certificate_log_sha256": "5237374b3b3d17a14143d7408b843acf5f03f28fde1bdfe9e20e9dc5359fbfdc",
+      "chart": "parabola-I",
+      "exact_rational_identity_one": true,
+      "generators": 23,
+      "input_sha256": "c513e08672932e9315f3ad25e34feb703d1ca67b7b8af17b1ec2f03b25a8452c",
+      "maximum_multiplier_degree": 3,
+      "multiplier_terms": 179,
+      "script_sha256": "5db0fcf5392052da27826925a93d6be9246cdcfd963c8686fe8ada63adf8a3ca"
+    },
+    {
+      "certificate_log_sha256": "ef4a755bbc34cd2b189083dd1c2434c493debe9e114b8f673d0b08b775894eb2",
+      "chart": "parabola-II",
+      "exact_rational_identity_one": true,
+      "generators": 23,
+      "input_sha256": "a415330e6502acdeaa2e682458de99839e07178965691e072a6b5b26842fb9a3",
+      "maximum_multiplier_degree": 5,
+      "multiplier_terms": 3512,
+      "script_sha256": "317743a496b89cbab9afece19db3e0fbf5c2d9bff4cb3623c73d62d6f16085f0"
+    },
+    {
+      "certificate_log_sha256": "28b3110e4574d5b950d7a9644f8e18fc900c36e42ba79516c78b8c085f1031df",
+      "chart": "opposite-cubic",
+      "exact_rational_identity_one": true,
+      "full_opposite_3D_jacobian_checked": true,
+      "generators": 16,
+      "input_sha256": "446b3f1ff841261e5cc294077f473f1ba2eb63292947a659169c769538ed7f30",
+      "maximum_multiplier_degree": 8,
+      "multiplier_terms": 32,
+      "script_sha256": "0274046aaefa1bfb8d6b2d0488a8ef9f57fed0e50e40cd52e2887eff3ad27ba2"
+    }
+  ],
+  "scope": "No3D Keller counterexample of weights(1,-1,-1), ordinarydegree<=7 and affine-invariant profile strictly below764. Whole nonlinear first quotient degree<=2 is excluded; for quotient degree3 the strict-profile branch is excluded by the opposite-cubic certificate. Potential degree7 profile775/773 outside this strict range is not completely closed: generalC*chartII timed out and chartI primary unit is unused.",
+  "seconds": 0.248,
+  "source_sha256": "004844894cced427e340ea42bd6262cabc085ff5f3db3de9a4f75c09e9b890c9",
+  "source_shear_control": {
+    "cubic_component": true,
+    "global_improvement": false,
+    "nonlinear_occurrences": 19,
+    "ordinary_degree": 9,
+    "validation_sha256": "21e7265972b9a8693b3c651f06417e57a227c65e3d2d453d9dd641c985ad892b"
+  },
+  "status": "pass"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "file": "sources/hien_roucairol_2008_published.pdf",
+    "url": "https://www.numdam.org/article/BSMF_2008__136_4_505_0.pdf",
+    "sha256": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1"
+  },
+  {
+    "file": "sources/liu_quadratic_v3.pdf",
+    "url": "https://zenodo.org/records/21688251/files/Sharp_Finite_Gaussian_Moments_Quadratic_Polynomials_Zongmin_Liu_v3.pdf",
+    "sha256": "3af1fb5c4959edb515f277c5b66423b5bf6c2f0f803da6b843235390e8221945"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED135",
+  "sources": [
+    {
+      "path": "FINITE_ORBIFOLD_GROUPS_AND_UNIVERSAL_COMPLETE_RULINGS.md",
+      "url": "retained:PF2RULED134",
+      "used": "Actual equivariant complete ruling of U_N for every noncyclic deck subgroup; no model substitution.",
+      "bytes": 10296,
+      "sha256": "1af643b2608376dee33a332d1966607b8209ca3fd04f6959599427528d1314c2"
+    },
+    {
+      "path": "DECK_NORMALIZED_EULER_AND_UNRESTRICTED_RADICAL_TOWER_EXCLUSION.md",
+      "url": "retained:PF2RULED133",
+      "used": "Noncyclic generic deck fixed-field index>=5 and actual whole-source scope.",
+      "bytes": 8939,
+      "sha256": "4721256fb3ba068c7737b6169e4db97417b5a6d5644cacc7ad10461b60f3fbd4"
+    },
+    {
+      "path": "../hc4-triangular-graphs/EXACT_COLLISION_ACTION_AND_FIRST_JET_RECONSTRUCTION.md",
+      "url": "retained:HC4MYLC0/1",
+      "used": "Prior actual generating-primitive framework; current invariant fibre primitive proved explicitly.",
+      "bytes": 15522,
+      "sha256": "fa5f366d26966db5929213c57b26ec7d76e51967c3135014927f5fe56719dbed"
+    },
+    {
+      "path": "../hc4-triangular-graphs/COMPLETE_RULING_PLANE_CHART_AND_FINITE_TARGET_AUDIT.md",
+      "url": "retained:route-audit",
+      "used": "Whole-plane exact-volume Danielewski chart does not supply a compatible target; prior negative route retained.",
+      "bytes": 9831,
+      "sha256": "d01ac16d49b000b75c09809854916ecb587aaf47d7450a6c933dfece84709708"
+    },
+    {
+      "path": "../hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md",
+      "url": "retained:HC4MYLA0/1",
+      "used": "Actual free deck quotient and regular target coframe; not arbitrary cotangent open.",
+      "bytes": 13791,
+      "sha256": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d"
+    },
+    {
+      "path": "sources/cotangent-deck-trace/source-comparison.json",
+      "url": "https://arxiv.org/html/1807.03991v1",
+      "used": "Comparison-only source boundary: rational polynomial theorem needs original polynomial mate; no new imported theorem.",
+      "bytes": 872,
+      "sha256": "4b90cadc44bfda91516be0bc0caabb4120649186dd0747db06e80ed3fd61d0c1"
+    },
+    {
+      "path": "sources/deck-normalized-euler/literature-comparison.json",
+      "url": "https://algebra.dmi.unibas.ch/blanc/articles/symplectic.pdf",
+      "used": "Retained log-symplectic versus exact-polynomial form comparison, not used as classification.",
+      "bytes": 605,
+      "sha256": "4529cc040f3335f4a5a06dceb0b3752cf67ea295289ab636df6ab9ac89597e0f"
+    }
+  ],
+  "new_external_theorem_import": false,
+  "registered_predecessor_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

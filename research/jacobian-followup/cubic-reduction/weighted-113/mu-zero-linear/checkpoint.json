@@ -1,0 +1,8 @@
+{
+  "input_sha256": "11e2417d8a82f5e25668bd3516202b2915805e434142532d184268550651d0bc",
+  "mode": "mu-zero-linear",
+  "parameters": [],
+  "seconds": 0.259,
+  "source_sha256": "fcf7c36560da90db418341eabf3bdcb078edd7af89569db025a6c578408287da",
+  "status": "primary-first-parameter-basis"
+}

@@ -1,0 +1,109 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYLD0",
+    "HC4MYLD1"
+  ],
+  "checks": [
+    "HC4MYLD0 theorem schema,proved dependencies,assurance and artifact locks",
+    "HC4MYLD1 theorem schema,proved dependencies,assurance and artifact locks",
+    "new and parent dependency graphs are acyclic",
+    "95 controls,58 algebraic controls,15 retained byte pins,10 prior claims and2 exact Git blob caches bind the proof without replay",
+    "proper-locus localization,all subgroup scopes,finite/uniform denominator distinction and primary-source limits are explicit",
+    "new all-conjugate method and two parent methods have current fingerprints and exact reopening conditions",
+    "both work actions preserve full target,last gap,quartic retirement,independent Laurent frontier and whole-source requirement",
+    "written geometric proof includes entire tensor component,full normalization,proper locus,retained-sheet control and general finite-module trace proof",
+    "generated navigation agrees with current authority and method/work fingerprints",
+    "full HC4 remains open,published quartic exclusion and qualified KIG28 bridge remain intact"
+  ],
+  "scoped_check_groups": 10,
+  "exact_current_checks": 95,
+  "algebraic_controls": 58,
+  "retained_byte_pins": 15,
+  "retained_prior_claims": 10,
+  "new_primary_caches": 2,
+  "new_explicit_proved_imports": 0,
+  "all_conjugate_algebra_normal_and_etale_over_original_target_proved": true,
+  "all_conjugate_algebra_equals_galois_normalization_localized_at_total_nonproperness_proved": true,
+  "invariant_base_exactly_target_localization_proved": true,
+  "all_subgroup_invariants_equal_localized_intermediate_normalizations_proved": true,
+  "marked_source_recovered_only_after_localizing_proved": true,
+  "retained_unramified_points_can_be_lost_in_all_conjugate_model": true,
+  "uniform_trace_transporter_nonzero_iff_source_algebra_finite_proved": true,
+  "noninvertible_actual_source_uniform_trace_transporter_zero_proved": true,
+  "all_conjugate_trace_equals_entire_target_localization_proved": true,
+  "finite_trace_stages_have_nonzero_denominators_but_infinite_intersection_zero_proved": true,
+  "general_result_requires_no_source_plane_for_localization_geometry": true,
+  "external_review_deferred": true,
+  "invariant_base_assumed_original_polynomial_target": false,
+  "all_conjugate_model_identified_with_KU_maximal_source_etale_completion": false,
+  "finite_coefficient_denominator_promoted_to_uniform_landing": false,
+  "chord_derivatives_identified_with_original_target_derivatives": false,
+  "primary_source_accused_of_invalid_inference": false,
+  "new_major_external_theorem_imported": false,
+  "external_Lean_project_built_or_formally_verified_here": false,
+  "puncated_cubic_source_claimed_whole_plane_Keller_counterexample": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "whole_surviving_higher_degree_packet_excluded": false,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": {
+    "repository_checks": [
+      {
+        "name": "render-navigation",
+        "command": [
+          "make",
+          "render-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+      },
+      {
+        "name": "check-navigation",
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "name": "partial-review",
+        "command": [
+          "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+          "research/scripts/research.py",
+          "check",
+          "--require-partial-review"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+      },
+      {
+        "name": "required-whitespace",
+        "command": [
+          "git",
+          "diff",
+          "--check",
+          "--",
+          "research/MATH_STATUS.json",
+          "research/knowledge/lessons.json",
+          "research/knowledge/work_items.json",
+          "research/jacobian-followup/hc4-triangular-graphs/README.md",
+          "research/index",
+          "research/knowledge/work",
+          "research/knowledge/WORK_LEDGER.md",
+          "research/STATUS.md"
+        ],
+        "exit_code": 0,
+        "output": ""
+      }
+    ],
+    "own_HC4_whitespace_check": {
+      "exit_code": 0,
+      "output": ""
+    }
+  },
+  "repository_check_boundary": "Same pre-existing unrelated missing KDSQ6 consumer and elliptic method artifact;scoped generated views,source locks and metadata are consistent.No missing artifact reconstructed."
+}

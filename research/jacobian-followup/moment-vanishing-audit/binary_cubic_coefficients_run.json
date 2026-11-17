@@ -1,0 +1,13 @@
+{
+  "scope": "Exact primary decomposition of the binary coefficient moment ideal; full intersection must pass before promotion.",
+  "wall_limit_seconds": 50,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "completed": true,
+  "input_sha256": "ac37fe4a1a17e13824cc54cfb8ad461102f04560468120f067d4939a986922f5",
+  "log_sha256": "677985b7ed246662964779a54819d3adc0076305de30f0300e9b2c94f77854e7",
+  "elapsed_seconds": 0.0650456509902142,
+  "stdout_tail": "STANDARD_BASIS\nyz+xw,\nxz3+y3w-3x2w2,\ny4w-x2z2w-3x2yw2,\nx3w3,\nx2y3w4\nHILBERT_FIRST\n1,\n0,\n-1,\n0,\n-1,\n0,\n0,\n0,\n1,\n0,\n3,\n-4,\n1,\n0 \nPRIMARY_START\nPRIMARY_COUNT\n5\nCOMPONENT\n1\nPRIMARY_IDEAL\nw,\nz\nASSOCIATED_PRIME\nw,\nz\nCOMPONENT\n2\nPRIMARY_IDEAL\ny,\nx\nASSOCIATED_PRIME\ny,\nx\nCOMPONENT\n3\nPRIMARY_IDEAL\nyz+xw,\nw3,\nz4-y2w2-3xzw2,\nxz3+y3w-3x2w2,\nz3w2,\ny4w-x2z2w-3x2yw2,\ny9\nASSOCIATED_PRIME\nw,\nz,\ny\nCOMPONENT\n4\nPRIMARY_IDEAL\nyz+xw,\nx3,\nxz3+y3w-3x2w2,\ny4-x2z2-3x2yw,\nx2y3,\nz9\nASSOCIATED_PRIME\nz,\ny,\nx\nCOMPONENT\n5\nPRIMARY_IDEAL\nyz+xw,\nw4,\nxz3+y3w-3x2w2,\nx4,\ny4w-x2z2w-3x2yw2,\nx3w3,\nx3y3w,\nz9,\ny9\nASSOCIATED_PRIME\nw,\nz,\ny,\nx\nINTERSECTION_FORWARD\n0\nINTERSECTION_REVERSE\n0\nEND\n"
+}

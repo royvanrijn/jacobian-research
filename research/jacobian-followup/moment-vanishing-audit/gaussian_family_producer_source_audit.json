@@ -1,0 +1,178 @@
+{
+  "date": "2026-11-16",
+  "new_claims": [
+    "GMCMIXEDCOMPLETION20261116",
+    "GMCFAMILYGEN20261116"
+  ],
+  "new_lesson": "METHOD-GAUSSIAN-AMBIENT-FAMILY-AND-TORSION-NORMALIZATION-20261116",
+  "retained_lessons_updated": [
+    "METHOD-GAUSSIAN-WHOLE-SOURCE-ACTUAL-JETS-20261116"
+  ],
+  "owned_work": "WORK-GAUSSIAN-FORMAL-GENERAL",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/GENERAL_GAUSSIAN_FAMILY_LOCUS_AND_NORMALIZATION.md",
+  "canonical_proof_sha256": "8bebfc9f9ec74ad576824547c5522b71a963d4e328167c28243fedf8cd394ed7",
+  "generator": "jacobian-followup/moment-vanishing-audit/gaussian_family_producer.py",
+  "generator_sha256": "6587625b6bdd4ed7dd3e15bd84fac36a9560ff1e610383cb1b4b957ceedcfb84",
+  "core": "jacobian-followup/moment-vanishing-audit/gaussian_family_core.m2",
+  "core_sha256": "e71393d6a80729cd1343278e30e0e8fe251fb374dc2f2e592c764064299d1d6f",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_gaussian_family_producer.py",
+  "checker_sha256": "db1a01b549e2cff27c206222d3c16acc6fc6bd80febee7402a372c05dc88641e",
+  "receipt": "jacobian-followup/moment-vanishing-audit/gaussian_family_producer_verification.json",
+  "receipt_sha256": "d81c569ac1369b84310d6241bdfcd8529ecc68cbf6d7488917c98b74efaef53e",
+  "runtime": "jacobian-followup/moment-vanishing-audit/gaussian_family_runtime.json",
+  "runtime_sha256": "ca254fe78bdf1b008b240e54b885f6f861b4c0de12973a66b5bdc62c9185517c",
+  "frontier": "jacobian-followup/moment-vanishing-audit/GENERAL_GAUSSIAN_RESEARCH_FRONTIER_20261116_FAMILY.md",
+  "frontier_sha256": "d6ddd1c0c6d8e0e38bd6c176ebda7533b045a62301e6d261352df64be2d40a67",
+  "primary_sources": [
+    {
+      "author": "Mircea Mustata",
+      "title": "D-modules and singularities,Winter2023 notes",
+      "url": "https://websites.umich.edu/mmustata/DmodulesNotes.pdf",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/mustata_dmodules_winter2023.pdf",
+      "text_pages_read": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "visually_read_pages": [
+        69,
+        70,
+        71
+      ],
+      "exact_import": "Example6.62 RΓZ=i_+i^dagger and shifted inverseimage definition;closedpushforward exact givesH^c localcohomology=pushforwardordinaryH0 restriction on smooth codimc. Proper duality only applied to closedembedding,never nonproper timeprojection.",
+      "sha256": "bf4103231ac100f06416c7552d566bfc7472f4f6d0d49679015abc7acd3aec2a",
+      "bytes": 1207626
+    },
+    {
+      "author": "Hotta,Takeuchi,Tanisaki",
+      "title": "D-modules,Perverse Sheaves,and Representation Theory",
+      "url": "https://ananddeopurkar.org/seminars/mhm/hottaetal.pdf",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/hotta_takeuchi_tanisaki_dmodules_2008.pdf",
+      "text_pages_read": [
+        68,
+        69
+      ],
+      "visually_read_pages": [
+        68,
+        69
+      ],
+      "exact_import": "Definition2.2.2 and Example2.2.4:characteristic-cycle multiplicity is generic length of gradedMODULE and equalsconnectionrank;annihilator alone loses multiplicity. Earlier retained algebraic directimage/basechange imports unchanged.",
+      "sha256": "3eb5d6502ee6721bd03445cc72b3b5a013db2fa1893efb846ee0842adb5784ba",
+      "bytes": 3260796
+    },
+    {
+      "author": "Uli Walther",
+      "title": "Algorithmic stratification of RHom_D(M,N) for regular algebraic D-modules on C^n",
+      "url": "https://www.math.purdue.edu/~walther/research/reg.pdf",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/walther_2005_algorithmic_stratification_reg.pdf",
+      "text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "visually_read_pages": [
+        3,
+        4,
+        5
+      ],
+      "exact_import": "Section2 Algorithms2.1-2.2:ambient localcohomology,characteristic conormal exceptions,Noetherian recursion andranks for arbitrary HOLONOMIC inputs. Regularity enters subsequent holomorphic solution-complex interpretation;notimported. Noncyclic modulemultiplicity warningexplicit. Ourindices useMustață andcodimcontrols,notuntranslated restriction conventions.",
+      "sha256": "cbc952f088c88bd6b43b3d07706ef39a668c29a2eaa2ceb50dad853a5e4a31a7",
+      "bytes": 229763
+    },
+    {
+      "author": "Uli Walther",
+      "title": "Experiments with the restriction functor",
+      "url": "https://www.math.purdue.edu/~walther/research/dexp.pdf",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/walther_restriction_experiments_dexp.pdf",
+      "text_pages_read": [
+        1,
+        2,
+        3
+      ],
+      "visually_read_pages": [
+        2,
+        3
+      ],
+      "exact_import": "Example1.1 x²D+1 haszeroformal/derivedoriginrestriction butnonzero analytic Ext representedbyadivergentfactorialseries. Retained aswarning againstunjustified irregular analytic identification;notanewGaussianinput or counterexample.",
+      "sha256": "50408079120f90cc3b46afeb3013dee0da2d749ab287f4e44a85daa5ecd5ad8c",
+      "bytes": 181608
+    }
+  ],
+  "retained_example_files_sha256": {
+    "gaussian_family_examples/geometry_controls/controls.stdout": "6720e5041a764f5e30529c7c9a6382574394a61ac6f114944fbc8faa62eb1ec9",
+    "gaussian_family_examples/geometry_controls/controls.m2": "20d52050ce7bc22f19d0a22f481951205e2d3323316f3005e7ecd1c5c53e088f",
+    "gaussian_family_examples/ordinary_thick_torsion/result.json": "e4c6d6f8a71b14fe493684cc77425ace81af3893f0008a7cb9ae1a46a207b874",
+    "gaussian_family_examples/ordinary_thick_torsion/input.json": "73beb5dfa99fedcd9cb14658f758df1542cdae541188f17651083f062f0a655b",
+    "gaussian_family_examples/zero_phase/result.json": "cad376d944638fa9ce9dfffeb32022d172c7d76d1d3ac663a94886e4f5af868f",
+    "gaussian_family_examples/zero_phase/input.json": "0feb0c18fd4513d7736838471c14c0e9ad4db2fef2263ccd38e1a5e77b008233",
+    "gaussian_family_examples/split_safe_cubic/result.json": "da391de3f10f3ab503abba58ce4cb59e66df3f5c9c47f3323d43a5c4c5e375e3",
+    "gaussian_family_examples/split_safe_cubic/input.json": "4d661831f63f619d8bb5298ad0d9a27cee950030bda8e0ed96a796301ee74d38",
+    "gaussian_family_examples/zero_divisor_normalization/result.json": "ffb3bf22b9810f422e9c039994dc5222f91c97f8fde248647ee3baae00c3624f",
+    "gaussian_family_examples/zero_divisor_normalization/input.json": "f19391be6dd5d4ae97c42755bcc5a9719a5a3e5662a3c384711740c183b38ea7",
+    "gaussian_family_examples/algebraic_coefficient/result.json": "271b663aaf4eda5fb805e257b52077f170a8d7912224b78418c2897b8cebfc03",
+    "gaussian_family_examples/algebraic_coefficient/input.json": "ede6dd199377f60502bbe616a7f5c530fcefdc1909f729c8e951d1ca1f783b52",
+    "gaussian_family_examples/capped_cusp_degeneration/result.json": "743c9cea8dd7e28bb678ab1062a3e41e8ec0b366d83d47ea479cded579f58834",
+    "gaussian_family_examples/capped_cusp_degeneration/core_at_timeout.m2": "4beb66772c0c20dd0ce6473ba1a9c9c5762e87d8d1bdea86a57aef1d59c5bff7",
+    "gaussian_family_examples/capped_cusp_degeneration/timeout_manifest.json": "4b28b0996c927fab9d1fb168ec8ffb577cdff38b48358578f078f94444cf678e",
+    "gaussian_family_examples/capped_cusp_degeneration/family.stdout": "b0e5b20939309cd0a9ff17b00050388a4f44f067e7de7740c75a880c90791c61",
+    "gaussian_family_examples/capped_cusp_degeneration/family.m2": "080af3dbc75d2565becfff315e99d94069fa744ee47afeaf2150ed1214c4c37c",
+    "gaussian_family_examples/singular_safe_cusp/result.json": "cf2bc67d7199ea2032b168408d140c7ba1a6c92fb25f2294b7a349e3ae0501e0",
+    "gaussian_family_examples/singular_safe_cusp/input.json": "eefdfda8e79bda5e6d5d88a225e0e1ca750a3a99803c6803928db0af90957519",
+    "gaussian_family_examples/universal_affine/result.json": "88cbedd9f0b98bdb5851adf18f92d73d8410296e6ef257bc64939b244d4c97ed",
+    "gaussian_family_examples/universal_affine/input.json": "c9dc87e0df0152bec602d276aea6530f4dd79eb15caace19b4783a74bbc3ea52",
+    "gaussian_family_examples/zero_algebra/result.json": "481551d6726c37c15a9dd4cfb14aaddd28818a0f41f63b78d75e6d35dccd9eb4",
+    "gaussian_family_examples/zero_algebra/input.json": "96d98bdab3a757465fa0718de99814e8b5f7ed74b184d1b99a450566b4391839",
+    "gaussian_family_examples/nilpotent_nonpure_safe/result.json": "f09ac5b9ca76b9489512d9dbee19ec7e18cd9f3e558021967add2b02ba622b10",
+    "gaussian_family_examples/nilpotent_nonpure_safe/input.json": "4455a42df812bc02b11b2cdbba7daa0130502874ab180ba9f9de8e44aee8f05d",
+    "gaussian_family_examples/ordinary_thick_torsion/cas/family.stdout": "71103b97f5cbd2da180fe0d76a245d00fbfc0a4b5cf6ff072b94edccdbe4b110",
+    "gaussian_family_examples/ordinary_thick_torsion/cas/family.m2": "71bfc2bfd6f9876acd93be9db9a7d98cb0c0a30b295f0c1a28250de21b41a211",
+    "gaussian_family_examples/zero_phase/cas/family.stdout": "02473d48e952afbef72b2cc482103cdf865d86278d633e68302ab3c8d40b9238",
+    "gaussian_family_examples/zero_phase/cas/family.m2": "259c9a3e138f455848b56b36915a85002840ba5874e75a4501f17f4134615de8",
+    "gaussian_family_examples/split_safe_cubic/cas/family.stdout": "02473d48e952afbef72b2cc482103cdf865d86278d633e68302ab3c8d40b9238",
+    "gaussian_family_examples/split_safe_cubic/cas/family.m2": "84e4e8804a369ab8a050bc6f8b6c0013e8f54f8829f602fdff102473b86808d4",
+    "gaussian_family_examples/zero_divisor_normalization/cas/family.stdout": "4a529bade195681ea5f72f698546d2a9c8c966e2cab9140d75d8d1db63866db7",
+    "gaussian_family_examples/zero_divisor_normalization/cas/family.m2": "3affd1fb4189b2d8c9698a36ba78af36ecffab17a0143d77778dc9e2f37b4a9b",
+    "gaussian_family_examples/algebraic_coefficient/cas/family.stdout": "510b97f571e19ba46afd74c6bf5d083fb10913652062fcb74647b59b2374941b",
+    "gaussian_family_examples/algebraic_coefficient/cas/family.m2": "8d8b572c3a965a469315323f8ff12b1ef669349e21e21a92313588750f2e9a05",
+    "gaussian_family_examples/singular_safe_cusp/cas/family.stdout": "da42600e9e7d7397c0b071bfb5d78d9e060d3b5f9cb5cfb5851794d883845713",
+    "gaussian_family_examples/singular_safe_cusp/cas/family.m2": "c1d221ef6e5b3180fd26c3b2e816c61ac9a3109795d0e0c6f82d0a9bd8a7ef05",
+    "gaussian_family_examples/universal_affine/cas/family.stdout": "d9c9c37208b20e9dd791e441a4468476d15e69f823ca5e4a414130b585fc968a",
+    "gaussian_family_examples/universal_affine/cas/family.m2": "28a86c22323d9e76ce003c19a4913043694d5c124d398ff09cda77bebab13c8b",
+    "gaussian_family_examples/zero_algebra/cas/family.stdout": "8eb5fb21dd81965bd952445573029241d68964cb9472b3329da51d64ff73d196",
+    "gaussian_family_examples/zero_algebra/cas/family.m2": "397ab612effcc58f1acf1d4c1b69306c25ce7cefaaf972bfb2d334d8e7b6eb53",
+    "gaussian_family_examples/nilpotent_nonpure_safe/cas/family.stdout": "332c1db0b35402a50118e6392805d2b5cf3e85257160a2dd6c8477b65e3afab9",
+    "gaussian_family_examples/nilpotent_nonpure_safe/cas/family.m2": "cff9e49f8188b1437ef98a7137209ed40f3f0b1a42934217dc0d681729d48407"
+  },
+  "retained_import": "GMCDIFFTHICK20261115/MVNILINVARIANT20261115 and sealed source audit for Zariski-Nagata/Ein-Lazarsfeld-Smith;identical regularambient hypotheses,with affineintercept retained. No application in singularparameterquotients.",
+  "proof_audit": {
+    "fullmixed": "Constructibility plus increasing closed affinecutoffcover provesclosedness/commonaffinebound WITHOUTpure;notclaimallpurephases safe.",
+    "allring": "CoefficientderivativesretainE;regularuniversal differential/symbolic containment givesordinarydepth;finite evaluatedsafeideal is nilpotent withoutNoetheriantarget. Fullaffinefiltrationcofinal BEFOREpurequotient.",
+    "normalization": "Apply allring safety toA/Ann(a):exactGamma_I. Presented-ring saturation retainsI0 and checksfiniteGamma I^L0 pluscolonstability;unitmembership required.",
+    "strata": "H^codim localcohomology ofORIGINALjointsource representsordinarySrestriction onSsmooth. Dualitycommuteswithproperclosedembeddingonly;timeprojection keptalgebraic. Wholeamplitudes/coefficientderivativesretained.",
+    "rank": "GradedMODULEconormal genericlength,isolatedbysaturation,computedbydegree ratio. Noncyclicdoubling andothercomponentisolation controlled.",
+    "exceptions": "Sourceconormalbaseprojections,verticalcritical elimination,directimageconnectiondefects andSingS giveproperbadset;rank0dimensionrecursion,rank1wholeclosuresafe byclosedness.",
+    "numeric_bridge": "ActualgenericSAFE-componentmomentbounds extendthroughALLspecializations byinjectivity ofdomain->Frac;noarbitrarycentralintegerrootstability theorem. GenericfieldnumericalbackendNOTimplemented.",
+    "source_credit": "WaltherAlgs2.1-2.2 explicitlyholonomic;regularanalyticSol interpretationNOTimported. Dexpirregularcountercontrolretained. Sabbah/Maisonobe convergentcredit/nonconvergentallringpriorityboundaryunchanged."
+  },
+  "exact_controls": {
+    "family_constructions": 9,
+    "geometry_control_groups": 6,
+    "universal_full_space_constructors": 12,
+    "rejections": 9,
+    "CLI": true,
+    "retained_files": 43,
+    "capped_historical_case": "UNKNOWN at30seconds;notrestarted"
+  },
+  "protected_whole_records": 156,
+  "user_goal": "Complete generalGaussian/formal programme;active,no expanding computationcampaign.",
+  "next_full_obligation": "GENERAL-GAUSSIAN FAMILY MILESTONE16November2026: GMCMIXEDCOMPLETION20261116 extends thegeneral Gaussian conclusion to FULL mixedsafety withoutpurepremise:closedfieldlocus,commonaffinecutoff,allQalgebra nilpotent reduction,fullaffinecutoffformalcompletion andEXACTnormalizationGamma_I. GMCFAMILYGEN20261116 IMPLEMENTS the fullrational coefficient-family locusandpresented-ring normalizationproducer,inall dimensions/degrees/parameterdegrees,withnonlinearexceptional stratahandledambientlybycorrect-codimensionlocalcohomology. Classical Walther/Oaku/Takayama creditexplicit;analyticregularitynotassumed. One cappedcuspcomputation remainsUNKNOWN;no restartorassurancepromotion. NEXTgeneral numericalproducer usesgenericSAFE-component actualIBP/jetcertificates overFrac(Q[c]/prime);their actualmomentboundsextendtoALLdegenerations. Generalordinarycutoffideals,leastbounds andnormalformsremain;broadergoalactive. NEXT MAIN GENERAL PRODUCER:extend the actual pointwise Gaussian IBP/jet/recurrence backend to finitelypresented genericfields Frac(Q[c]/SAFEprime). Numerical genericcutoffs extend toALLspecializations because forbidden ORIGINAL moments are regular coefficientpolynomials;takefinitecomponentmaxima. This bypasses exhaustivecentral-parameter integerrootstratification for theboundtask. Then implement fullordinary affine/pure cutoffideals andleastbound extraction. Keepbroader safe normalforms/validtransfers andricherformalrepresentations. Fielduniformity/allringpure/formalclosuresstayclosed;no repeatingtheoremproofs ordegree/support/prefixcampaign. PreservecappedUNKNOWN case,no externalreview/outreach,anddirectexceptionalMZownershipseparate.",
+  "numerical_universal_cutoff_computed": false,
+  "ordinary_full_cutoff_ideal_producer_implemented": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

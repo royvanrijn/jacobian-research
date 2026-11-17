@@ -1,0 +1,49 @@
+{
+  "claim": "QGC1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "29b7c1a9608437b3",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "ten_affected_methods_and_existing_work_reviews": "PASS",
+  "local_links_checked": 279,
+  "unique_equation_tags": 22,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "75c874bf809c2c31f21275f59eb5757ee566d79404123cbbc897c98a121a375e",
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    }
+  ],
+  "research_context": [
+    {
+      "source": "https://stacks.math.columbia.edu/tag/07ZA",
+      "used": "Fitting functoriality/base change supports the retained QFC1 finite-connection argument."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/02GU",
+      "used": "Finite presentation, flatness and zero relative differentials imply etaleness."
+    },
+    {
+      "source": "https://www.jmilne.org/math/CourseNotes/LECc.pdf#page=27",
+      "used": "The optional global affine-space conclusion uses the characteristic-zero constant-cover theorem; the local ramification exclusion does not require it."
+    }
+  ],
+  "previous_goal_turn": {
+    "classification": "progress",
+    "evidence": "QGC1 fingerprint8a77b41fa716ff31 proved the strict finite-carrier ramification obstruction, made the quadratic S3 closure explicit and left nonsaturated carriers as an admission gap. Its15-tag proof and eleven exact control input hashes were inspected and current.",
+    "next_action_taken": "Proved graph-congruence admission via finite valuation levels and finite equivariant repair for split-abelian covers with correct torsion-free special rank. Specialization rank comparison forces relative group order equal to residue degree and valuation invariance. In Long quadratic case the relative group is necessarily order2, closing that natural closure carrier at every quantum parameter order without original saturation. Genuine nonsaturated degree2/3 Weyl carriers demonstrate why automatic saturation itself is false."
+  },
+  "proof_boundary": "The original arbitrary-fractional-lattice multiplier, separability, parameter-ramified coefficient descent and Fitting/etale arguments remain written proofs with their stated hypotheses. The new quantum-order graph congruence is exactly identified classical graph at e=1; at e>1 it is an additional hypothesis. Divided operators preserve all finite valuation-level lattices, and Ore clearing makes a finite level full, without assuming saturation or equivariance. The specialization rank bound uses lifted invertible presentation blocks, not projectivity. For a finite equivariant closure with torsion-free special rank equal to residue degree, QGD1 and that bound force group order equal to residue degree and valuation invariance. Split-abelian projectors, rank-one special torsion-freeness and central parameter shifts give a finite faithful saturated repair without changing the right action. The quadratic Long case forces order2 and needs no constant extension. All groups, degrees, parameter orders and correction degrees use written proofs, not the sampled controls. Exact controls cover full splitting/S3 and branch data, power-cover connections, constant and ramified-parameter positives, genuine nonsaturated degree2/3 full Weyl actions with projector repairs, and special-torsion/matrix boundaries. Finite constant covers are allowed. Nonequivariant ramified data without scalar quantum-order graph congruence, changed matrix actions, and special modules with torsion or excess rank retain separate admission obligations. The ordinary rank-one Long graph remains unobstructed by this theorem. No actual Long carrier, universal automatic saturation, arbitrary matrix exclusion, all-representative nonlifting or DC2/JC2 resolution is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

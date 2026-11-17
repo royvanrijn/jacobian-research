@@ -1,0 +1,134 @@
+{
+  "claims": [
+    "KMFI158",
+    "KMFI159",
+    "KMFI160",
+    "KMFI161"
+  ],
+  "previous_goal_turn": "progress: KMFI155--157 closed the whole primitive quadratic rank4 direction class.",
+  "linear_feedback_classification": {
+    "B": "arbitrary matrix over characteristic-zero K",
+    "J": "any nonzero polynomial in normal variables",
+    "nilpotent_iff": "B nilpotent and dJ*B^j*q=0 for every j1..c-1",
+    "Fitting_invertible_part_would_force": "Euler_E J=-J",
+    "singular_nonnilpotent_trace_zero_countercontrols_retained": true,
+    "trace_only_nilpotent_B_invariant_countercontrol_retained": true,
+    "regular_nilpotent_J": "polynomial in left-kernel coordinate; homogeneous J=coefficient*ell^m",
+    "regular_block_controls": [
+      {
+        "normal_dimension": 2,
+        "J": "last_coordinate^m",
+        "nilpotent": true,
+        "last_chain_coefficient": "m+1"
+      },
+      {
+        "normal_dimension": 3,
+        "J": "last_coordinate^m",
+        "nilpotent": true,
+        "last_chain_coefficient": "m+1"
+      },
+      {
+        "normal_dimension": 4,
+        "J": "last_coordinate^m",
+        "nilpotent": true,
+        "last_chain_coefficient": "m+1"
+      }
+    ]
+  },
+  "strong_normal_stratum_result": {
+    "B_must_be_nilpotent_even_when_singular": true,
+    "initial_form_satisfies_all_moment_invariances": true,
+    "entire_limit_controls": [
+      {
+        "order": 0,
+        "normal_J": "(z+1)*y^m",
+        "upper_right_retained": true
+      },
+      {
+        "order": 2,
+        "normal_J": "(z+1)*y^m",
+        "upper_right_retained": true
+      },
+      {
+        "order": 5,
+        "normal_J": "(z+1)*y^m",
+        "upper_right_retained": true
+      }
+    ],
+    "upper_right_tangential_block_retained": true,
+    "homogeneous_base_point_test": "DV(a) nilpotent at every nonzero zero of V",
+    "initial_form_power_claimed_global_F_divisor": false
+  },
+  "general_translation_test": {
+    "coefficient": "arbitrary polynomial P",
+    "hypotheses": "V_b=P*a,P_b=R_b=0,P_a nonzero",
+    "conclusion": "no polynomial F for div(FV)=R*F",
+    "highest_coefficient": "partial_a(P*J)=0 impossible",
+    "rational_controls_retained": true
+  },
+  "cubic_triangular_family": {
+    "K": [
+      "u**3",
+      "u**2*x",
+      "u**2*y + u*x**2",
+      "u**2*z + x*y**2"
+    ],
+    "A": "arbitrary GL4",
+    "Jacobian": "3*detA*u^8",
+    "required_matrix_conditions": [
+      "A02=0",
+      "A03=0",
+      "A13=0"
+    ],
+    "first_normal_det": 0,
+    "second_normal_det": 0,
+    "regular_B1_initial_F": "coefficient(x,z)*u^m when A22 nonzero",
+    "remaining_matrices_classified": false,
+    "remaining_full_rank_multipliers_found": false
+  },
+  "excluded_explicit_cubic": {
+    "V": [
+      "u**2*y + u*x**2",
+      "u**2*x",
+      "u**3",
+      "u**2*z + x*y**2"
+    ],
+    "entire_Jacobian": "-3*u^8",
+    "unit_Krylov_determinant": 1,
+    "base_point": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "derivative_at_base": "diag(1,0,0,0)",
+    "all_scalar_degrees_excluded": true,
+    "basic_last_translation_gate_would_reject": false
+  },
+  "actual_normalized_cubic_rank3_controls": [
+    {
+      "s": 0,
+      "lambda": 3,
+      "F": "u^0",
+      "A": "diag(1,lambda,lambda,lambda)",
+      "rankDX": 3,
+      "entire_sweep_Jacobian": "gamma^4"
+    },
+    {
+      "s": 2,
+      "lambda": 5,
+      "F": "u^2",
+      "A": "diag(1,lambda,lambda,lambda)",
+      "rankDX": 3,
+      "entire_sweep_Jacobian": "gamma^4"
+    }
+  ],
+  "all_cubic_directions_closed": false,
+  "arbitrary_quadratic_h0_shapes_retained": true,
+  "genuinely_nonhomogeneous_inputs_solved": false,
+  "new_occurrence_action_claimed": false,
+  "actual_PSL11_input_supplied": false,
+  "absolute_exceptional_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

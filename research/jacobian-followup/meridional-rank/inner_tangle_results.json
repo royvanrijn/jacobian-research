@@ -1,0 +1,828 @@
+{
+  "status": "COMPLETE_FORMAL_FRAGMENTS",
+  "fragments": [
+    {
+      "name": "13a_129",
+      "pd": [
+        [
+          3,
+          1,
+          4,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          11,
+          5,
+          12,
+          4
+        ],
+        [
+          5,
+          11,
+          6,
+          10
+        ],
+        [
+          15,
+          9,
+          16,
+          8
+        ],
+        [
+          9,
+          17,
+          10,
+          16
+        ]
+      ],
+      "boundary_labels": [
+        12,
+        15,
+        17,
+        26
+      ],
+      "arc_edge_classes": [
+        [
+          1,
+          26
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12
+        ],
+        [
+          15
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "crossing_arcs": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          6,
+          3,
+          4
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          9,
+          5,
+          6
+        ]
+      ],
+      "raw_relators": [
+        [
+          -2,
+          -3
+        ],
+        [
+          4,
+          4,
+          -2
+        ],
+        [
+          2,
+          -4,
+          2,
+          -5
+        ],
+        [
+          3,
+          -6,
+          3,
+          -7
+        ],
+        [
+          6,
+          -3,
+          6,
+          -4
+        ],
+        [
+          5,
+          -8,
+          5,
+          -9
+        ],
+        [
+          9,
+          -5,
+          9,
+          -6
+        ]
+      ],
+      "generators": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "formal_core_reduction": {
+        "initial": {
+          "generators": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "relators": [
+            [
+              -9,
+              5,
+              -9,
+              6
+            ],
+            [
+              -9,
+              5,
+              -8,
+              5
+            ],
+            [
+              -7,
+              3,
+              -6,
+              3
+            ],
+            [
+              -6,
+              3,
+              -6,
+              4
+            ],
+            [
+              -5,
+              2,
+              -4,
+              2
+            ],
+            [
+              -4,
+              -4,
+              2
+            ],
+            [
+              -3,
+              -2
+            ]
+          ]
+        },
+        "trace": [
+          {
+            "kind": "eliminate",
+            "generator": 7,
+            "relator": 2,
+            "solved_word": [
+              3,
+              -6,
+              3
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 8,
+            "relator": 1,
+            "solved_word": [
+              5,
+              -9,
+              5
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 2,
+            "relator": 3,
+            "solved_word": [
+              4,
+              4
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 3,
+            "relator": 1,
+            "solved_word": [
+              6,
+              -4,
+              6
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 5,
+            "relator": 0,
+            "solved_word": [
+              9,
+              -6,
+              9
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 6,
+            "relator": 0,
+            "solved_word": [
+              9,
+              -4,
+              -4,
+              -4,
+              9
+            ]
+          },
+          {
+            "kind": "automorphism",
+            "images": {
+              "4": [
+                4
+              ],
+              "9": [
+                9,
+                4
+              ]
+            },
+            "inverse_images": {
+              "4": [
+                4
+              ],
+              "9": [
+                9,
+                -4
+              ]
+            }
+          }
+        ],
+        "final": {
+          "generators": [
+            4,
+            9
+          ],
+          "relators": [
+            [
+              -9,
+              -9,
+              4,
+              4,
+              -9,
+              -4,
+              -4,
+              -4,
+              -9,
+              4,
+              4
+            ]
+          ]
+        },
+        "original_generators_in_final": {
+          "2": [
+            4,
+            4
+          ],
+          "3": [
+            9,
+            -4,
+            -4,
+            9,
+            9,
+            -4,
+            -4,
+            9,
+            4
+          ],
+          "4": [
+            4
+          ],
+          "5": [
+            4,
+            4,
+            4
+          ],
+          "6": [
+            9,
+            -4,
+            -4,
+            9,
+            4
+          ],
+          "7": [
+            9,
+            -4,
+            -4,
+            9,
+            9,
+            -4,
+            -4,
+            9,
+            9,
+            -4,
+            -4,
+            9,
+            4
+          ],
+          "8": [
+            4,
+            4,
+            -9,
+            4,
+            4,
+            4
+          ],
+          "9": [
+            9,
+            4
+          ]
+        },
+        "final_generators_in_original": {
+          "4": [
+            4
+          ],
+          "9": [
+            9,
+            -4
+          ]
+        },
+        "status": "LOCAL_MINIMUM",
+        "seconds": 0.001174
+      }
+    },
+    {
+      "name": "13a_135",
+      "pd": [
+        [
+          3,
+          1,
+          4,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          11,
+          5,
+          12,
+          4
+        ],
+        [
+          5,
+          11,
+          6,
+          10
+        ],
+        [
+          15,
+          9,
+          16,
+          8
+        ],
+        [
+          9,
+          17,
+          10,
+          16
+        ]
+      ],
+      "boundary_labels": [
+        12,
+        15,
+        17,
+        26
+      ],
+      "arc_edge_classes": [
+        [
+          1,
+          26
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12
+        ],
+        [
+          15
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "crossing_arcs": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          6,
+          3,
+          4
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          9,
+          5,
+          6
+        ]
+      ],
+      "raw_relators": [
+        [
+          -2,
+          -3
+        ],
+        [
+          4,
+          4,
+          -2
+        ],
+        [
+          2,
+          -4,
+          2,
+          -5
+        ],
+        [
+          3,
+          -6,
+          3,
+          -7
+        ],
+        [
+          6,
+          -3,
+          6,
+          -4
+        ],
+        [
+          5,
+          -8,
+          5,
+          -9
+        ],
+        [
+          9,
+          -5,
+          9,
+          -6
+        ]
+      ],
+      "generators": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "formal_core_reduction": {
+        "initial": {
+          "generators": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "relators": [
+            [
+              -9,
+              5,
+              -9,
+              6
+            ],
+            [
+              -9,
+              5,
+              -8,
+              5
+            ],
+            [
+              -7,
+              3,
+              -6,
+              3
+            ],
+            [
+              -6,
+              3,
+              -6,
+              4
+            ],
+            [
+              -5,
+              2,
+              -4,
+              2
+            ],
+            [
+              -4,
+              -4,
+              2
+            ],
+            [
+              -3,
+              -2
+            ]
+          ]
+        },
+        "trace": [
+          {
+            "kind": "eliminate",
+            "generator": 7,
+            "relator": 2,
+            "solved_word": [
+              3,
+              -6,
+              3
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 8,
+            "relator": 1,
+            "solved_word": [
+              5,
+              -9,
+              5
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 2,
+            "relator": 3,
+            "solved_word": [
+              4,
+              4
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 3,
+            "relator": 1,
+            "solved_word": [
+              6,
+              -4,
+              6
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 5,
+            "relator": 0,
+            "solved_word": [
+              9,
+              -6,
+              9
+            ]
+          },
+          {
+            "kind": "eliminate",
+            "generator": 6,
+            "relator": 0,
+            "solved_word": [
+              9,
+              -4,
+              -4,
+              -4,
+              9
+            ]
+          },
+          {
+            "kind": "automorphism",
+            "images": {
+              "4": [
+                4
+              ],
+              "9": [
+                9,
+                4
+              ]
+            },
+            "inverse_images": {
+              "4": [
+                4
+              ],
+              "9": [
+                9,
+                -4
+              ]
+            }
+          }
+        ],
+        "final": {
+          "generators": [
+            4,
+            9
+          ],
+          "relators": [
+            [
+              -9,
+              -9,
+              4,
+              4,
+              -9,
+              -4,
+              -4,
+              -4,
+              -9,
+              4,
+              4
+            ]
+          ]
+        },
+        "original_generators_in_final": {
+          "2": [
+            4,
+            4
+          ],
+          "3": [
+            9,
+            -4,
+            -4,
+            9,
+            9,
+            -4,
+            -4,
+            9,
+            4
+          ],
+          "4": [
+            4
+          ],
+          "5": [
+            4,
+            4,
+            4
+          ],
+          "6": [
+            9,
+            -4,
+            -4,
+            9,
+            4
+          ],
+          "7": [
+            9,
+            -4,
+            -4,
+            9,
+            9,
+            -4,
+            -4,
+            9,
+            9,
+            -4,
+            -4,
+            9,
+            4
+          ],
+          "8": [
+            4,
+            4,
+            -9,
+            4,
+            4,
+            4
+          ],
+          "9": [
+            9,
+            4
+          ]
+        },
+        "final_generators_in_original": {
+          "4": [
+            4
+          ],
+          "9": [
+            9,
+            -4
+          ]
+        },
+        "status": "LOCAL_MINIMUM",
+        "seconds": 0.000988
+      }
+    }
+  ],
+  "input_sha256": {
+    "inner_tangle_plan.json": "1b5fdcc73642e1ad3b2186a324f894d0889f0afc7139a166ca59e08d78072bb3",
+    "probe_inner_tangles.py": "412d17fbdea6047f732c823e2b7a96c331652217c5b52937c6d60de6f0477477",
+    "probe_outer_tangles.py": "e26bfb3ea2a5e9f4e5dcbabc61eb073f2190e2eaed942630edbc835b4b8717cf",
+    "compact_cover_groups.py": "88c975a276373a242f18d1ab3cce300cc1ca8755a5ad4ae0aea58069b7f4da77",
+    "compact_cover_plan.json": "d8ed708f21b5d4d2bbf13a66ac518790b120589f1627ca825108d3e365d377c2",
+    "mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18"
+  },
+  "assurance": "Formal complementary presentations and boundary labels only; no target group amalgam, JSJ or rank conclusion."
+}

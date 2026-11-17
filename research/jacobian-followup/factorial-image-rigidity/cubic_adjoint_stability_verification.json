@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "canonical_proof": "CUBIC_ADJOINT_STABILITY_SFC.tex",
+  "universal_chain": [
+    "coefficient ODE and quadratic reversal",
+    "explicit Gamma-convolution auxiliary and exact adjoint gauge",
+    "Gamma Jacobi diagonal bound plus classical half-plane GWS",
+    "rational-log-derivative exclusion of nonzero concomitants",
+    "double root forces B(z)=B(-z)=0",
+    "degree-free Gamma moment bridge"
+  ],
+  "classical_input": {
+    "source": "sources/wagner-multivariate-stable-polynomials-2011.pdf",
+    "theorem": "Wagner Theorem4.1, half-plane polarization only",
+    "source_scope": "statement and Section4 proof context/application inspected; not a full-source audit"
+  },
+  "all_index_cubic_SFC_closed": true,
+  "all_positive_Gamma_shapes": true,
+  "simplicity_parameter_range": "n>=1,gamma>0,gamma>=n-2",
+  "finite_prefix_required": false,
+  "finite_scan_extrapolation": false,
+  "all_gaps_or_lower_exponents_proved": false,
+  "general_FC_closed": false,
+  "unrestricted_SFC_closed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "counts": {
+    "universal_adjoint_gauge_identity": 1,
+    "universal_Lagrange_identity": 1,
+    "universal_auxiliary_generating_equation": 1,
+    "universal_auxiliary_coefficient_recurrence": 1,
+    "universal_tilted_coefficient_recurrence": 1,
+    "universal_Euler_quadratic_reversal": 1,
+    "Gamma_characteristic_polynomial_identity": 6,
+    "current_Gamma_moment_identity": 6,
+    "preceding_Gamma_moment_identity": 6,
+    "Walsh_convolution_coefficient_identity": 6,
+    "reversed_polynomial_ODE": 32,
+    "auxiliary_polynomial_ODE": 32,
+    "positive_adjoint_zero_concomitant": 32,
+    "negative_adjoint_zero_concomitant": 32,
+    "rational_boundary_squarefreeness": 23,
+    "auxiliary_exact_Hurwitz_controls": 89,
+    "classical_GWS_source_pin": 1
+  },
+  "total": 271,
+  "files": {
+    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+    "cubic_adjoint_stability.py": "105e1a18bdf463c1612b62ec3f6520e9c3431baae55ce9fcaad2e5d76cdaf759",
+    "verify_cubic_adjoint_stability.py": "264834dac729ec69a0bd4c1bc2cc1635e04494d049c7ee79e2dbc152ff1147e8",
+    "cubic_adjoint_stability_audit.json": "3883b9ee8694d95638192f03f634954af4450124b9dfe94afeaae0cfacabc7ba",
+    "sources/wagner-multivariate-stable-polynomials-2011.pdf": "ab72551b3407480e08185ce2b0a9527c8cea385b95ef93dcf904ec90a46170c1"
+  }
+}

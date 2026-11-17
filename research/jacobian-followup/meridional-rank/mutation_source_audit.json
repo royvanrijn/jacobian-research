@@ -1,0 +1,52 @@
+{
+  "status": "PASS scoped mutation source audit",
+  "catalogue_distinct_ids": 46,
+  "new_records": [
+    {
+      "id": "GRE13",
+      "title": "Lattices, graphs, and Conway mutation",
+      "authors": "Joshua Evan Greene",
+      "year": 2013,
+      "doi": "10.1007/s00222-012-0421-4",
+      "url": "https://doi.org/10.1007/s00222-012-0421-4",
+      "snapshot": "sources/greene-mutation-v1.pdf",
+      "location": "Author preprint arXiv1103.0487v1, Section4.1-4.2 printedpp19-23, Corollary4.3, Lemma4.4, Corollary4.5; published Invent.Math.192,717-750 (2013), online11August2012",
+      "audit": "Primary graph/drawing/mutation arguments read, including parallel-edge qualification and chosen checkerboard convention; official Springer publication metadata checked. Classical Whitney2isomorphism and plane-drawing results remain explicit imports. Full lattice/Floer proof and published-version comparison not audited.",
+      "scope": "Connected reduced alternating diagrams with2isomorphic Tait graphs in the same crossing/checkerboard convention are related by Conway mutations. Only this elementary Section4 implication is imported; no rank, bridge, meridional-rank or priority conclusion."
+    },
+    {
+      "id": "MOR14",
+      "title": "Mutant knots",
+      "authors": "H. R. Morton",
+      "year": 2014,
+      "url": "https://www.liverpool.ac.uk/~su14/papers/mutantchapter.pdf",
+      "snapshot": "sources/morton-mutant-knots-2014.pdf",
+      "location": "Author manuscript16March2014, definitions printedpp3-4 and Theorem3 with full short proof printedp6",
+      "audit": "Read the torus-gluing proof: a chosen lift of each Conway halfturn is isotopic to identity on the branched-cover boundary torus. Credit Viro1976 retained. This survey supplies the audited argument, not a claim to have read the full original Russian proof or exhaustive mutation history.",
+      "original_credit": "O.Ya.Viro, Nonprojecting isotopies and knots with homeomorphic coverings, Zap.Nauchn.Sem.LOMI66(1976),133-147; English J.SovietMath12(1)(1979),86-96, doi10.1007/BF01098418; primary MathNet metadata checked, original full proof not audited.",
+      "scope": "Conway mutation preserves the homeomorphism type of the double branched cover, hence its fundamental group and group rank. No mutation invariance of bridge number or meridional rank is assumed."
+    }
+  ],
+  "selection": {
+    "391": [
+      "13a_129",
+      "13a_136",
+      "13a_194",
+      "13a_197"
+    ],
+    "401": [
+      "13a_135",
+      "13a_137",
+      "13a_196",
+      "13a_198"
+    ]
+  },
+  "assurance": "Only Greene Cor4.5 graph-to-mutation and Morton Thm3/Viro cover-homeomorphism imports are used. Exact finite graph inputs are checked separately. Invariant agreement is a screening cue; no new rank or knot equality follows.",
+  "input_sha256": {
+    "audit_mutation_sources.py": "c8d36cf8049de7e649e2dd814c93fd1c134e349a9b078e662fb8ad09e885e40f",
+    "sources.json": "315cda0ef9a35830017da858e3a5f0ed7c0775aaec6e1a1ec3f04a17cab89f99",
+    "sources/knotinfo/2026.11.2_mutation_subset.json": "9c8ef90774529a3cf3c08b5b70268fc063b7884b04727007966d5b47e2ba5c53",
+    "sources/greene-mutation-v1.pdf": "1a902cfbcef30f7fe39f632ec428b01747f6c5fe208083c6248a9c12af7bc96e",
+    "sources/morton-mutant-knots-2014.pdf": "a78dc26613cf020515c649f88e092836e743339403c4febb91a327c43ac31436"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKU0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKN0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYLX0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/NAMBU_SOBOLEV_LATTICE_AND_FINITE_DERIVATIVE_CORE.md"
+    },
+    {
+      "claim": "HC4MYLT0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/HAMILTONIAN_STABILIZERS_AND_INVISIBLE_BOUNDARY_JETS.md"
+    },
+    {
+      "claim": "HC4MYLT1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/HAMILTONIAN_STABILIZERS_AND_INVISIBLE_BOUNDARY_JETS.md"
+    },
+    {
+      "claim": "HC4MYMA0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/SOURCE_BASE_CHANGE_AND_RESIDUAL_DIFFERENT.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "jacobian-followup/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "jacobian-followup/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "jacobian-followup/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "jacobian-followup/hc4-triangular-graphs/NAMBU_SOBOLEV_LATTICE_AND_FINITE_DERIVATIVE_CORE.md": "f710c95fd5d7d4a8e6aa0dd49f5db53988b9672869beb488103b0347d5191dd1",
+    "jacobian-followup/hc4-triangular-graphs/verify_nambu_sobolev_core.py": "81a02f0c127942a240dede4337f991bcbb616730dc8261ef47a57fe9f99f7270",
+    "jacobian-followup/hc4-triangular-graphs/HAMILTONIAN_STABILIZERS_AND_INVISIBLE_BOUNDARY_JETS.md": "4332973f46e8f4cd6c2754919534ec7932e09e82401fb7ad0251df91e7725e24",
+    "jacobian-followup/hc4-triangular-graphs/verify_hamiltonian_boundary_jets.py": "c6066aacf3434bb525f8d1b9f5e716c028d242cf66b07560afe9bc76b1d5634f",
+    "jacobian-followup/hc4-triangular-graphs/SOURCE_BASE_CHANGE_AND_RESIDUAL_DIFFERENT.md": "08e61d5c064c43c7439c3eefb182c8ed04739e253d9cd0189ae610713c869415",
+    "jacobian-followup/hc4-triangular-graphs/verify_residual_different.py": "a086dfd66596f64c615c63b76af721e24ab366e475d3a3743fec50f65b40be42",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "jacobian-followup/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "classical_canonical_image_and_prior_derivative_results_credited": true,
+    "Kahler_bracket_image_finite_module_with_canonical_reflexive_hull": true,
+    "point_supported_canonical_image_defect_retained": true,
+    "trace_pairing_test_equivalent_after_reflexive_hull": true,
+    "base_projectivity_of_image_equivalent_to_full_canonical_module": true,
+    "quadric_cone_length_one_module_defect_control_proved": true,
+    "already_normal_first_bracket_algebra_has_exceptional_Gm_fiber": true,
+    "normalization_before_canonical_hull_shortcut_refuted": true,
+    "explicit_bracket_square_trace_has_branch_pole": true,
+    "bare_Jacobi_Plucker_multiplication_shortcut_retired": true,
+    "external_review_deferred": true,
+    "canonical_image_assumed_surjective_at_every_singular_point": false,
+    "ordinary_algebra_generation_commuted_with_reflexive_hull": false,
+    "finite_normalization_S_assumed_Poisson_closed": false,
+    "Poisson_finiteness_applied_to_non_Poisson_S_or_non_Noetherian_stabilizer": false,
+    "quadric_cone_is_actual_plane_Keller_normalization": false,
+    "local_unit_or_local_cone_globalized_to_actual_source": false,
+    "all_actual_first_bracket_algebras_asserted_nonquasifinite": false,
+    "actual_full_trace_pairing_proved_automatically_regular": false,
+    "smoothness_claimed_equivalent_to_canonical_image_equality": false,
+    "new_external_theorem_imported": false,
+    "new_primary_PDF_read_or_cached": false,
+    "Miyanishi_odd_plane_theorem_adopted": false,
+    "registered_mathematical_checker_replayed": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "external_imports": [],
+  "new_primary_caches": [],
+  "literature_context_only": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5818674/",
+      "inspection": "Primary Etingof--Schedler Introduction and Section2 definitions/hypotheses read in HTML. No Poisson finiteness theorem imported or applied to non-Poisson S/non-Noetherian preserving algebra. This context was already consulted by LT."
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.23777",
+      "inspection": "Primary Long rank-two Poisson metadata and abstract read only. Four-generator symplectic result NOT inferred to be plane Keller or HC4; no full-paper inspection, theorem import or PDF cache."
+    }
+  ],
+  "proof_boundary": "Written classical canonical-image/reflexive-hull and target-normality argument is all-degree. New quadric-cone transcription has one point module defect but already normal first-bracket algebra introduces an exceptional Gm curve. It is a universal-algorithm countercontrol,not an actual degree2 Keller model or a local-to-global source exclusion. Jacobi/Plucker/first-bracket generation does not supply full Lambda multiplication. Finite controls do not certify universal proofs; no registered replay."
+}

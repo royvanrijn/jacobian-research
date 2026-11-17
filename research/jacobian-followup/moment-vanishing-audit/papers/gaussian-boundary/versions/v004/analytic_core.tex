@@ -1,0 +1,278 @@
+\subsection{An exhaustive split of the affine-linear coordinate}\label{sec:wsplit}
+
+Write $h=a+bZ+cT+dZ^2+eZT+fT^2$ and
+$\Delta=e^2-4df$. The following split is exhaustive and its branches
+are disjoint. The last column distinguishes a proof given here from
+an analytic obligation that has not yet been discharged in this draft.
+
+\begin{center}\small
+\begin{tabular}{@{}p{0.27\textwidth}p{0.38\textwidth}p{0.25\textwidth}@{}}
+\toprule
+Coefficient condition & Reduction & Status in this draft\\
+\midrule
+$\Delta\ne0$ & Laurent phase on $\C^*$ with logarithmic volume &
+Two irregular ends still open; one end proved below\\[3pt]
+$\Delta=0$, $f\ne0$ & $h=a+bZ+cT+fT^2$ after a null rotation &
+Proposition~\ref{prop:rankoneformal}\\[3pt]
+$f=e=0$, $d\ne0$, $c\ne0$ &
+$W(a+T+Z^2)+G$ after normalization &
+Proposition~\ref{prop:mixedformal}\\[3pt]
+$f=e=0$, $d\ne0$, $c=0$ & $Wh(Z)+G$ &
+Proposition~\ref{prop:height}\\[3pt]
+$d=e=f=0$, $c\ne0$ & $W(a+bZ+cT)+G$ &
+Corollary~\ref{cor:linearwt}\\[3pt]
+$d=e=f=c=0$ & $Wh(Z)+G$ &
+Proposition~\ref{prop:height}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Here is the algebra behind the reductions. The null rotation
+\[
+ Z=Z',\quad T=T'+\lambda Z',\quad
+ W=W'-\lambda T'-\lambda^2Z'/2
+\]
+preserves $2ZW+T^2$. If $f\ne0$, choose $\lambda=-e/(2f)$.
+When $\Delta=0$ the quadratic part of $h$ becomes just $fT'^2$.
+If $f=e=0$ and $c\ne0$, choose $\lambda=-b/c$ to remove the
+linear $Z$ term without changing $dZ^2$. If also $d\ne0$, the
+Gaussian scaling $Z=\kappa Z'$, $W=W'/\kappa$, followed by a
+nonzero scaling of $P$, makes the $T$ and $Z^2$ coefficients both
+one; take $\kappa^2=c/d$. All additional terms enter a polynomial
+$G$ of degree at most three. If $\Delta=0$ and $f=0$, then $e=0$,
+which proves that the table omits no case.
+
+\subsection{What the remaining analytic estimates must actually say}
+\label{sec:analyticgates}
+
+An integral representation is not an asymptotic estimate. The needed
+estimates can be made elementary once an appropriate flat cut basis
+has been constructed. The uniformity and completeness of that basis
+are part of the proof, not consequences of a few saddle calculations.
+
+\begin{lemma}[A conditional shrinking estimate]\label{lem:conditionalshrink}
+Fix a ray $t=Re^{i\theta}$. Suppose the relevant zero-exponential
+periods of $a(t)e^{\varphi(t,x)}dx$ have a spanning flat cut family
+with fixed coefficients and the following properties:
+\begin{enumerate}
+\item On the entire phase band $|\varphi|\leq K\log R$, the lifted
+cuts lie in a bounded number of disks of radius $\delta(R)$, where
+$\delta(R)\to0$.
+\item They are pieces of real algebraic curves of bounded degree,
+with a bounded number of pieces, and $\operatorname{Re}\varphi\leq C$
+there, uniformly in $R$.
+\item The tails beyond the band $|\varphi|\leq K\log R$ are $o(1)$,
+uniformly for the chosen flat generators; $a(t)$ is bounded.
+\end{enumerate}
+Then every such scalar period tends to zero.
+\end{lemma}
+\begin{proof}
+A real algebraic curve of degree at most $D$ has length at most
+$\pi D\rho$ in a disk of radius $\rho$. This follows by averaging
+the number of intersections with lines and applying the one-dimensional
+coarea formula; line components satisfy the same bound.
+Thus the bounded pieces have total length $O(\delta(R))$ and bounded
+integrand. Their integrals tend to zero. Add the uniformly negligible
+tails.
+\end{proof}
+
+For a stable polynomial degree, $\varphi=t^p(V+O(t^{-1}))$, the
+equation $\varphi=w$ on a logarithmic band forces its bounded roots
+into disks of radius $O((\log R/R)^{1/\deg V})$ around the zeros of
+$V$. This explains the shrinking scale. It does not by itself prove
+that those pieces span the entire zero-exponential part, nor supply
+the uniform tail estimate. In particular, for $p>1$ the lower phase
+terms can still diverge, so they cannot simply be treated as a bounded
+analytic amplitude.
+
+\begin{lemma}[A conditional logarithmic estimate]\label{lem:conditionallog}
+Suppose a spanning flat cut family for the zero-exponential part of
+$e^{\varphi(t,x)}dx/x$ satisfies the bounded-degree and bounded-real-part
+conditions above in an annulus $R^{-M}\leq|x|\leq R^M$. Assume its
+end detours have bounded logarithmic length and its descending tails
+have uniformly bounded integrals. Then its scalar periods are
+$O(1+\log R)$. After multiplication by $1/t$, they tend to zero.
+\end{lemma}
+\begin{proof}
+In $r\leq|x|\leq2r$, the curve-length estimate gives
+$\int|dx|/|x|\leq2\pi D$. There are $O(\log R)$ dyadic annuli.
+The integrand is bounded by $e^C$; the end detours and tails add
+bounded quantities. This proves the estimate.
+\end{proof}
+
+The unresolved step in applying these two lemmas is the construction
+of one controlled \emph{flat} family with the claimed spanning
+property, including regular puncture classes, coincident critical
+values and degenerate critical points. Hien--Roucairol gives the
+perfect pairing and representation; it does not assert these uniform
+cut properties. They must be proved for the particular rational
+phases below, or replaced by a complete formal-frame construction.
+
+\subsection{The logarithmic branch, including its removed component}
+
+For $\Delta\ne0$, $f\ne0$, choose $\eta^2=\Delta$ and set
+\[
+ \rho=\frac{e+\eta}{2f},\quad \sigma=\frac{e-\eta}{2f},\quad
+ u=\frac{\rho c-b+1/t}{\eta},\quad
+ v=\frac{b-1/t-\sigma c}{\eta},\quad k=uv-a/f.
+\]
+On the circular constraint $z=th(z,T)$, put
+$x=T+\rho z+u$, so that $T+\sigma z+v=k/x$. Then
+\[
+ z=\frac f\eta(x-k/x-u+v),\quad T=x-u-\rho z,
+ \qquad
+ \frac{dT}{1-th_Z}=\frac{dx}{t\eta x}.
+\]
+The coefficient of $t^{-2}$ in $k$ is $-1/\eta^2$, so the conic
+is generically smooth. The exponent $tG(z,T)-T^2/2$ is Laurent
+polynomial in $x$. On the formal Gaussian branch,
+$x=1/(\eta t)+O(1)$, which makes every Laurent power legitimate.
+
+If $f=0$, then $e\ne0$. Put $z_0=-c/e$ and $x=z-z_0$. With
+$A(z)=a+bz+dz^2$, the constraint gives
+\[
+ T=\frac{z/t-A(z)}{ex},\qquad
+ \frac{dT}{1-th_Z}=\frac{dx}{tex}.
+\]
+This localization is valid if $c\ne0$, or if $c=0$ and $a\ne0$.
+If $a=c=0$, the chosen fixed point is instead $g=0$ identically;
+inverting $g$ would discard the very branch being tested. In that
+case the exact unit series is
+\[
+ \E_T\left[\frac{e^{tG(0,T)}}{1-t(b+eT)}\right].
+\]
+Use $x=T-(1/t-b)/e$, now a valid Laurent unit. Its volume is
+$-dx/(tex)$ and its exponent is polynomial in $x$. These formulas
+cover both the smooth conic and the removed-component branch.
+We next connect these coordinates to the formal Gaussian functional.
+This will close every one-ended phase without an analytic estimate.
+
+\begin{lemma}[Formal logarithmic transport]\label{lem:logtransport}
+In each of the three charts above, write $X=X(t,T)$ for the formal
+coordinate, $D$ for the displayed circular denominator, and $B$ for
+$tG(g,T)$ or $tG(0,T)$ on the removed component. Put
+$\kappa=\eta,e,-e$, respectively. Then
+\[
+ J(q)=\E_T\!\left[\frac{q(X)e^B}{D}\right]
+\]
+is horizontal on the logarithmic twisted quotient with phase
+$\varphi$ and normalization $h=1/t$, and $J(1)=\Phi_1$.
+\end{lemma}
+\begin{proof}
+All Laurent powers of $X$ are legitimate by the unit checks above.
+The coordinate identities give
+\[
+ X_T=t\kappa X/D,\qquad
+ \varphi(t,X)=B-T^2/2.
+\]
+Consequently Gaussian integration by parts gives
+$J((x\partial_x+x\varphi_x)q)=0$: the corresponding integrand,
+multiplied by $t\kappa$, is
+$(\partial_T-T)\{q(X)e^B\}$.
+
+For parameter horizontality set $w=1/D$ and $R=X_t/X_T$.
+Differentiating $w=X_T/(t\kappa X)$ gives the exact identity
+\[
+ w_t+w/t=\partial_T(wR).
+\]
+Subtracting $J(q_t+(\varphi_t-1/t)q)$ from $\partial_tJ(q)$ now
+gives the Gaussian expectation of
+$(\partial_T-T)\{wR q(X)e^B\}$, hence zero. These are formal
+coefficientwise identities, without an integral-convergence hypothesis.
+The seed equality is the circular contraction formula.
+\end{proof}
+
+\begin{proposition}\label{prop:oneendgaussian}
+Every chart above whose actual Laurent phase has at most one
+irregular end is not pure. The removed-component branch
+$a=c=f=0$, $e\ne0$, is therefore excluded for every polynomial $G$,
+without a degree bound.
+\end{proposition}
+\begin{proof}
+At most one irregular end means that $\varphi$ is polynomial in
+$x$ or in $x^{-1}$, including the constant case. Purity would give
+the horizontal functional in Lemma~\ref{lem:logtransport} seed value
+one, contrary to Corollary~\ref{cor:oneend}. The removed-component
+phase is always polynomial in $x$, irrespective of $\deg G$.
+\end{proof}
+
+Thus only phases with genuinely nonzero positive and negative Laurent
+orders remain in the logarithmic estimate. Their coefficient
+specializations must be judged using the actual orders, not generic
+ones. The formal proof above does not establish a spanning flat cut
+family for two irregular ends.
+
+\subsection{Why the polynomial branches no longer need a cut estimate}
+
+Propositions~\ref{prop:rankoneformal} and~\ref{prop:mixedformal}
+apply the same leading-coefficient criterion to their exact formal
+Gaussian functionals. Their complete stationary-ball frames retain
+all critical multiplicities and escaping roots. Consequently neither
+proposition depends on the conditional shrinking lemma above.
+For logarithmic volume the puncture must be retained. Theorem~\ref{thm:puncturedpoly}
+does this for a polynomial phase, adding its residue dimension.
+A Laurent phase with two irregular ends may instead carry logarithmic
+extensions. That case remains open in this draft.
+
+\subsection{Adversarial tests for the analytic argument}
+
+The following exact examples prevent several tempting shortcuts.
+For positive real $t$,
+\[
+ \frac1t\int_{\mathbb R}e^{-x^2/(2t^k)}\,dx
+   =\sqrt{2\pi}\,t^{k/2-1}.
+\]
+The unique critical point is bounded and has zero action for every
+$k$, yet the normalized period decays for $k=1$, is constant for
+$k=2$, and grows for $k=3$. A critical-point count or a zero-action
+label alone gives no decay estimate.
+
+For the fixed phase $tx^k$, $k>2$, the critical point is degenerate
+and the decay scale is $t^{-1/k}$, not a Gaussian Hessian scale.
+The fixed quotient in Theorem~\ref{thm:stationaryballs}
+retains its full multiplicity $k-1$.
+For $tV_nx^n-x^4/2$, $1\leq n\leq3$, the $n-1$ bounded and
+$4-n$ escaping critical dimensions total three. Counting only
+bounded points loses actual rank; the stationary-ball construction
+retains all roots and tests its full matrix using polynomial separation.
+Finally, $t^{-3/2}=r^3$ under $r=t^{-1/2}$: a claim about a
+noninteger exponent before ramification must not be reused after
+ramification. Lemma~\ref{lem:positiveformal} uses positive seed order
+and an actual full frame instead.
+
+\subsection{The geometric case split still required for frame extraction}
+
+For a cubic of degree exactly three, either the frame test
+\eqref{eq:frame} succeeds, or it does not. In the latter case,
+the projective curve $F_3=0$ belongs to exactly one of these types:
+\begin{center}\small
+\begin{tabular}{@{}p{0.33\textwidth}p{0.56\textwidth}@{}}
+\toprule
+Leading curve & Required no-frame exclusion\\
+\midrule
+Smooth cubic & All finite critical blocks; no contribution from infinity\\
+Irreducible nodal cubic & Isolated finite blocks and critical-line degenerations\\
+Irreducible cuspidal cubic & Smooth parabola, separated lines and double-line critical profiles\\
+Line and smooth conic, transverse & Both ordinary nodes and all affine escapes\\
+Line and smooth conic, tangent & Tangency, degenerate finite blocks and escaping profiles\\
+Three nonconcurrent lines & Finite critical sets, critical conics and axes\\
+Three concurrent distinct lines & Constant and nonconstant transverse linear coefficient\\
+Double line and a distinct line & Isotropic and nonisotropic repeated-line directions\\
+Triple line & Isotropic and nonisotropic repeated-line directions\\
+\bottomrule
+\end{tabular}
+\end{center}
+The list is exhaustive by factorization of a plane cubic over $\C$.
+It is a list of proof obligations, not a declaration that the exclusions
+have been reproved here. For isolated leading singular points, a null
+point with $F_2=0$ goes directly to the affine-linear-coordinate table;
+otherwise the lower Gaussian quadratic and its cross terms must be
+retained in the indicated exclusion. In the repeated-line cases the
+singular locus is a whole projective line, and the frame test must be
+applied to all its null directions, not to an arbitrarily selected point.
+
+Thus the routing is now explicit. Completing frame extraction still
+requires a proof for every no-frame row, including a full rank or
+homology-completeness argument. The conditional estimates above say
+exactly what an analytic proof must establish. They do not promote
+finite algebra checks into that missing argument.

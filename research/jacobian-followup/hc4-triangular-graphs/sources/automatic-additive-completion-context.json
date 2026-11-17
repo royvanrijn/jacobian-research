@@ -1,0 +1,74 @@
+{
+  "claim": "HC4MYMP0",
+  "retained_structural_inputs": [
+    {
+      "claim": "PF2RULED46",
+      "canonical_source": "jacobian-followup/affine-complements/UNRAMIFIED_PACKET_AND_OREVKOV_GATE.md"
+    },
+    {
+      "claim": "PF2RULED50",
+      "canonical_source": "jacobian-followup/affine-complements/GLOBAL_COORDINATE_PENCIL_AND_MATRIX.md"
+    },
+    {
+      "claim": "HC4MYLM0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/ADDITIVE_ACTIONS_ON_THE_CANONICAL_ETALE_COMPLETION.md"
+    },
+    {
+      "claim": "HC4MYLM1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/ADDITIVE_ACTIONS_ON_THE_CANONICAL_ETALE_COMPLETION.md"
+    },
+    {
+      "claim": "HC4MYLA0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/affine-complements/UNRAMIFIED_PACKET_AND_OREVKOV_GATE.md": "ab3d49c55d52cb0af79a15265b6f5b516c404cdbf5f4a52429c7dd5b1c505784",
+    "jacobian-followup/affine-complements/verify_unramified_orevkov.py": "a9bb489c8188cef17817115a169725cf21afb42e5909b7eb7c1885521da7496e",
+    "jacobian-followup/affine-complements/GLOBAL_COORDINATE_PENCIL_AND_MATRIX.md": "94c6c28f90257953042b8d11c679bb262d252011469d476e79e0dcfba3340d92",
+    "jacobian-followup/affine-complements/verify_coordinate_pencil_matrix.py": "4d67f313432e257b2da983c7c8436cfb6a88ca0ec5885f3d8bd252a89af9e76e",
+    "jacobian-followup/hc4-triangular-graphs/ADDITIVE_ACTIONS_ON_THE_CANONICAL_ETALE_COMPLETION.md": "ca50d325834f4ca0fa71868cc4281a69ca771204d5c9b0435d08b3a381fe6134",
+    "jacobian-followup/hc4-triangular-graphs/verify_completion_additive.py": "5e9e83f39ad2ed6b6102eb05053c58d704cd5346d2d9836b6bb2e9d8e79712da",
+    "jacobian-followup/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d",
+    "jacobian-followup/hc4-triangular-graphs/verify_deck_boundary_cost.py": "678b8bc23c529a8626a9a53be6d46d7cbb5664231d3f0dcf7794a27fc80a810e"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "all_generic_degrees": true,
+    "actual_plane_source_and_full_normalization": true,
+    "retained_common_unramified_pencil": true,
+    "whole_component_charts_not_formal_germs": true,
+    "all_actual_etale_completions_admit_Ga": true,
+    "all_generic_rational_decks_cyclic": true,
+    "all_LNDs_preserve_source_for_proper_completion": true,
+    "all_monodromy_cyclic": false,
+    "all_intermediate_fundamental_groups_cyclic": false,
+    "target_algebra_invariant_under_source_LND": false,
+    "LND_extends_to_full_finite_normalization": false,
+    "cyclic_generic_deck_excluded": false,
+    "unrestricted_HC4_or_JC2_resolved": false
+  },
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "retained_reading": "FULL PF46 canonical proof, especially Sections6-7 whole root planes and explicit partial_x LND; FULL PF50 canonical proof, especially universal common unramified pencil via exact-volume diagonal/cross matrix inequality; FULL LM0/LM1 and LA0 canonical proofs. Their classical local/bundle/Xie/ML inputs remain adopted, not newly reproduced or imported.",
+  "contribution": "Combine prior common-pencil theorem across ALL actual unramified component opens; same source partial_x glues as a_i*z^(r_i-1)*partial_t on whole charts. Restriction to R gives LND, so LM1 now forces cyclicity in ALL degrees/actions without Euler/deck-index bound. Proper completion has LND(A)=C[y]*partial_x, all Ga actions preserve source. No need target Ga descent or ramified-prime extension.",
+  "screened_not_adopted": [
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7229458",
+      "reading": "Primary abstract only; direct page403/PDF inaccessible. Claimed plane proof NOT read, audited or adopted."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.bulsci.2025.103784",
+      "reading": "Primary introduction only. Its finite pi1 at infinity premise not established for U; no theorem adopted."
+    },
+    {
+      "url": "https://www.researchgate.net/publication/243104850_Automorphisms_of_affine_surfaces_with_A1-fibrations",
+      "reading": "Author-uploaded primary excerpts screened, not full-paper reproduction or new classification adoption."
+    }
+  ],
+  "registered_mathematical_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

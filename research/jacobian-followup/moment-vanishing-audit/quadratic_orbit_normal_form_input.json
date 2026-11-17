@@ -1,0 +1,281 @@
+{
+  "claim": "SIC2B33QUADFORMS20261117",
+  "status": "EXACT_FIELD_COVERAGE_INPUT",
+  "equivalence": "Oriented linear isometry and nonzero phase amplitude, after algebraic field extension.",
+  "coverage": "Every trace-free self-adjoint three-dimensional B; every H1 and H3 retained.",
+  "normal_forms": [
+    {
+      "name": "zero",
+      "quadratic": "0",
+      "B": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "p_trace_B2_over2": "0",
+      "r_det_B": "0",
+      "characteristic_discriminant": "0",
+      "D": "0",
+      "parameters": [],
+      "linear_harmonic": "ell_t*t + ell_w*w + ell_z*z",
+      "linear_coefficients": [
+        "ell_z",
+        "ell_t",
+        "ell_w"
+      ],
+      "cubic_coefficients": [
+        "gamma_-3",
+        "gamma_-2",
+        "gamma_-1",
+        "gamma_0",
+        "gamma_1",
+        "gamma_2",
+        "gamma_3"
+      ],
+      "cubic_basis": {
+        "-3": "w**3",
+        "-2": "t*w**2",
+        "-1": "w*(t**2 - w*z/2)",
+        "0": "t**3 - 3*t*w*z",
+        "1": "z*(t**2 - w*z/2)",
+        "2": "t*z**2",
+        "3": "z**3"
+      },
+      "coefficient_restrictions": "None on H1 or H3.",
+      "full_purity_implies_Image_status": "PROVED by odd theorem for pure points",
+      "known_subcases": "All pure points safe by the odd theorem."
+    },
+    {
+      "name": "nilpotent_rank1",
+      "quadratic": "w**2",
+      "B": [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "p_trace_B2_over2": "0",
+      "r_det_B": "0",
+      "characteristic_discriminant": "0",
+      "D": "0",
+      "parameters": [],
+      "linear_harmonic": "ell_t*t + ell_w*w + ell_z*z",
+      "linear_coefficients": [
+        "ell_z",
+        "ell_t",
+        "ell_w"
+      ],
+      "cubic_coefficients": [
+        "gamma_-3",
+        "gamma_-2",
+        "gamma_-1",
+        "gamma_0",
+        "gamma_1",
+        "gamma_2",
+        "gamma_3"
+      ],
+      "cubic_basis": {
+        "-3": "w**3",
+        "-2": "t*w**2",
+        "-1": "w*(t**2 - w*z/2)",
+        "0": "t**3 - 3*t*w*z",
+        "1": "z*(t**2 - w*z/2)",
+        "2": "t*z**2",
+        "3": "z**3"
+      },
+      "coefficient_restrictions": "None on H1 or H3.",
+      "full_purity_implies_Image_status": "OPEN",
+      "known_subcases": "H1=0 completely classified and safe."
+    },
+    {
+      "name": "nilpotent_rank2",
+      "quadratic": "t*z",
+      "B": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/2",
+          "0"
+        ]
+      ],
+      "p_trace_B2_over2": "0",
+      "r_det_B": "0",
+      "characteristic_discriminant": "0",
+      "D": "ell_w**3/8",
+      "parameters": [],
+      "linear_harmonic": "ell_t*t + ell_w*w + ell_z*z",
+      "linear_coefficients": [
+        "ell_z",
+        "ell_t",
+        "ell_w"
+      ],
+      "cubic_coefficients": [
+        "gamma_-3",
+        "gamma_-2",
+        "gamma_-1",
+        "gamma_0",
+        "gamma_1",
+        "gamma_2",
+        "gamma_3"
+      ],
+      "cubic_basis": {
+        "-3": "w**3",
+        "-2": "t*w**2",
+        "-1": "w*(t**2 - w*z/2)",
+        "0": "t**3 - 3*t*w*z",
+        "1": "z*(t**2 - w*z/2)",
+        "2": "t*z**2",
+        "3": "z**3"
+      },
+      "coefficient_restrictions": "None on H1 or H3.",
+      "full_purity_implies_Image_status": "OPEN",
+      "known_subcases": "H1=0 completely classified and safe; Rodrigues component safe when H1 is nonzero."
+    },
+    {
+      "name": "nonnilpotent_Jordan",
+      "quadratic": "t**2 + w**2 - w*z",
+      "B": [
+        [
+          "-1/2",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/2"
+        ]
+      ],
+      "p_trace_B2_over2": "3/4",
+      "r_det_B": "1/4",
+      "characteristic_discriminant": "0",
+      "D": "9*ell_t*ell_z**2/4",
+      "parameters": [],
+      "linear_harmonic": "ell_t*t + ell_w*w + ell_z*z",
+      "linear_coefficients": [
+        "ell_z",
+        "ell_t",
+        "ell_w"
+      ],
+      "cubic_coefficients": [
+        "gamma_-3",
+        "gamma_-2",
+        "gamma_-1",
+        "gamma_0",
+        "gamma_1",
+        "gamma_2",
+        "gamma_3"
+      ],
+      "cubic_basis": {
+        "-3": "w**3",
+        "-2": "t*w**2",
+        "-1": "w*(t**2 - w*z/2)",
+        "0": "t**3 - 3*t*w*z",
+        "1": "z*(t**2 - w*z/2)",
+        "2": "t*z**2",
+        "3": "z**3"
+      },
+      "coefficient_restrictions": "None on H1 or H3.",
+      "full_purity_implies_Image_status": "OPEN",
+      "known_subcases": "Zero-linear case and full family open."
+    },
+    {
+      "name": "semisimple",
+      "quadratic": "eta*t**2 - eta*w*z + w**2 + z**2",
+      "B": [
+        [
+          "-eta/2",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "eta",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "-eta/2"
+        ]
+      ],
+      "p_trace_B2_over2": "3*eta**2/4 + 1",
+      "r_det_B": "eta*(eta - 2)*(eta + 2)/4",
+      "characteristic_discriminant": "(3*eta - 2)**2*(3*eta + 2)**2/4",
+      "D": "-ell_t*(ell_w - ell_z)*(ell_w + ell_z)*(3*eta - 2)*(3*eta + 2)/4",
+      "parameters": [
+        "eta"
+      ],
+      "linear_harmonic": "ell_t*t + ell_w*w + ell_z*z",
+      "linear_coefficients": [
+        "ell_z",
+        "ell_t",
+        "ell_w"
+      ],
+      "cubic_coefficients": [
+        "gamma_-3",
+        "gamma_-2",
+        "gamma_-1",
+        "gamma_0",
+        "gamma_1",
+        "gamma_2",
+        "gamma_3"
+      ],
+      "cubic_basis": {
+        "-3": "w**3",
+        "-2": "t*w**2",
+        "-1": "w*(t**2 - w*z/2)",
+        "0": "t**3 - 3*t*w*z",
+        "1": "z*(t**2 - w*z/2)",
+        "2": "t*z**2",
+        "3": "z**3"
+      },
+      "coefficient_restrictions": "None on H1 or H3.",
+      "full_purity_implies_Image_status": "OPEN",
+      "known_subcases": "H1=0 and eta=+/-2/3 excluded by the axial theorem. Other zero-linear eta and full mixed-linear family open."
+    }
+  ],
+  "zero_constant": "The first moment removes H0.",
+  "generic_semisimple_boundaries": "eta=+/-2/3 repeated eigenvalue; eta=0,+/-2 rank2. No eta value is omitted.",
+  "maximal_phase_parameter_count": 11,
+  "D0_coverage": "All D=0 points retained. Factorizations give complete D0 equations in every normal form.",
+  "scheme_boundary": "Field-valued coverage only. No isomorphism or length comparison with the fixed-D cyclic ordinary algebra; no division of51 or17 by a residual symmetry.",
+  "unrestricted_Image33": "OPEN"
+}

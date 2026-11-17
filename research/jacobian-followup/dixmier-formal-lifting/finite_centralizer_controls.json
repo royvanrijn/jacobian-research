@@ -1,0 +1,133 @@
+{
+  "claim": "QFC1",
+  "status": "PASS",
+  "Taylor_projector_and_coefficients": [
+    {
+      "exponent": [
+        4,
+        2
+      ],
+      "coefficient": "h + 1"
+    },
+    {
+      "exponent": [
+        1,
+        3
+      ],
+      "coefficient": "3*h**2"
+    },
+    {
+      "exponent": [
+        1,
+        0
+      ],
+      "coefficient": "-7"
+    },
+    {
+      "exponent": [
+        0,
+        5
+      ],
+      "coefficient": "1"
+    },
+    {
+      "exponent": [
+        0,
+        0
+      ],
+      "coefficient": "2*h + 5"
+    }
+  ],
+  "dual_number_Fitting_control": {
+    "presentation": "Matrix([[h**2*u*v + h, h**2*u], [h**2*v, h**2]])",
+    "Fitt0": "h^3",
+    "Fitt1": "(h)",
+    "two_compatible_connections": "PASS",
+    "semilinear_equivalence_mod_epsilon2": "PASS"
+  },
+  "escaping_support_control": {
+    "module": "R0[u]/(1-h*u)",
+    "nonzero_and_h_divisible": true,
+    "annihilator_derivative_unit_identity": "q-u*qprime=1",
+    "coordinate_connection_possible": false,
+    "formal_inverse_prefix_length": 7
+  },
+  "three_variable_closed_curvature_control": {
+    "closed": true,
+    "finite_radial_primitive": [
+      "h*u*v**2/2 - h*u*v*w/2 - h*v**2*w/4 + 2*h*w**2/3",
+      "-h*u**2*v/2 + 3*h*u**2*w/4 - h*u*v*w/2",
+      "-h*u**2*v/4 + 3*h*u*v**2/4 - 2*h*u*w/3"
+    ],
+    "preserves_classical_tuple": true
+  },
+  "nonpositional_finite_Weyl_control": {
+    "classical_graph": "identity",
+    "Long_graph": false,
+    "positions": [
+      "x1+h^2*p1^2",
+      "x2+h^2*p2^2"
+    ],
+    "initial_curvature": "-2*h^3*F1*F2",
+    "correction": "-h^2*F1^2*F2",
+    "all_final_Weyl_relations": "PASS",
+    "leading_symbol_module_basis_rank": 4,
+    "position_degrees": [
+      2,
+      2
+    ],
+    "initial_mate_degrees": [
+      1,
+      6
+    ],
+    "curvature_degree": 4,
+    "correction_degree": 6,
+    "proved_correction_bound_in_control": 7,
+    "corrected_second_mate_degree": 1
+  },
+  "parity_basis_control": {
+    "basis": [
+      "1",
+      "p1",
+      "p2",
+      "p1*p2"
+    ],
+    "sample_reconstruction": "PASS"
+  },
+  "Keller_shear_control": {
+    "full_relations_and_polynomial_inverse": "PASS",
+    "noninvertible": false
+  },
+  "birational_nonfinite_control": {
+    "map": "(u,u*v)",
+    "fraction_field_degree": 1,
+    "fiber_over_zero": "K[v]",
+    "Jacobian": "u",
+    "Keller": false
+  },
+  "external_dependencies": [
+    {
+      "source": "https://stacks.math.columbia.edu/tag/07ZA",
+      "used": "Fitting base change, presentation invariance and annihilator facts; differential ideal proof is given directly."
+    },
+    {
+      "source": "https://www.jmilne.org/math/CourseNotes/LECc.pdf#page=27",
+      "used": "Remark3.3(c), Theorem3.4 and the fundamental group exact sequence: finite etale affine-space covers in characteristic zero are constant."
+    }
+  ],
+  "hashes": {
+    "FINITE_CENTRALIZERS_AND_COMPLETION.md": "c49883cefa77ea977ff347c7eab25172d6d1543dc9d5e423c2db70d047f5e217",
+    "check_finite_centralizer_completion.py": "81cf26bb2e0d9b2e8fe866ce303089237444b592d26e35d38b86a4e56f66f90a",
+    "LONG_SPECTRAL_CURVATURE_AND_SCALARIZATION.md": "09ea45c50f3baceb46e25218cef940e7c79c77eb933e56b6dc2a81695f123e21",
+    "spectral_curvature_controls.json": "777daade800137bac6031cce77ad84635cccd7e6eabf02a3f8bdc7da39fd0b94",
+    "IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md": "d6438f6730204ef55411826b9583b0194829534f4e8db25b68101a3014476bb4",
+    "identity_lift_controls.json": "09f6e098fa9b9673558acce783b496e22563d7918d5235dd3285e917e0be82e7",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "BOUNDED_REALIZATION.md": "85860fda7138b1e38a41341f2f9e830a516793f0c66e3c4778f9e1adf151b8b9",
+    "RATIONAL_SPECTRAL_OBSTRUCTIONS.md": "834e37b79b5c78e9ab3deeebe5161c8db43c977427d2da7729f59fa6439b1e99"
+  },
+  "coverage_boundary": "Declared finite Taylor, presentation, escaping support, radial homotopy, PBW, parity and birational controls only. Universal centralizer exhaustion, Fitting stability, integral and generic finiteness equivalence, all-rank flat completion, full filtered certificate and Keller/JC boundary use written proofs with the stated external covering theorem. No actual Long candidate satisfying the finiteness and individual-mate hypotheses is constructed or certified. No finite sweep proves module finiteness.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

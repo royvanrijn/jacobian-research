@@ -1,0 +1,485 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\DeclareMathOperator{\Span}{Span}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\ord}{ord}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Qb}{\overline{\mathbb Q}}
+\newcommand{\Lfac}{\mathcal L}
+\title{Internal verification of Long's EIT dependency and binary Factorial proof}
+\author{Research audit; the results and strategies are credited to their sources}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Finding and scope.}
+The main-text argument of Long's binary Factorial manuscript and its pinned
+EIT I dependency passes the proof audit below. This is a written internal
+verification against published inputs, not a claim of peer review,
+proof-assistant verification, or discovery of these results. EIT I is by
+Christopher D. Long and Antoine-Auguste Le Blanc; the FC(2) manuscript is
+by Christopher D. Long. Exact source versions are in the
+\href{source_ledger.json}{source ledger}. The auxiliary finite checks do
+not prove analytic continuation or universal nonvanishing.
+
+The FC source is commit
+\href{https://github.com/long-mathematics/factorial-conjecture-two-variables/tree/8b1eb46ff530122ed25f588b78bf9fdc98cb9577}{8b1eb46}.
+Its EIT input is explicitly pinned to
+\href{https://github.com/long-mathematics/exponential-integral-theorem/blob/22d98c4f27e606b5b25fa673c33f9c56c53cc86b/papers/01-exponential-integral-theorem/exponential-integral-theorem.tex}{22d98c4},
+not an unspecified later companion theorem. Neither manuscript's
+appendices or computational suites are logical inputs to its main result.
+The necessary external results are Beukers' linear lifting theorem,
+the small-map intermediate-extension theorem, Riemann--Hilbert and
+Fourier equivalence for holonomic modules, Pakovich--Muzychuk's rational
+permutation-module theorem, and Lindemann--Weierstrass. The applications
+and the nonstandard analytic/algebraic steps are checked below.
+
+\section{EIT I: the complete dependency chain}
+For $q\in\Qb[x]$ nonconstant and an algebraic degree-zero cycle
+$\Delta=\sum d_\alpha[\alpha]$, let
+$I(z)=\int_\Gamma e^{zq(x)}dx$, where $\partial\Gamma=\Delta$.
+The integrand has an entire primitive in $x$, so only the boundary matters.
+We verify the source's assertion
+\[
+ I(1)\in\Qb\quad\Longrightarrow\quad I\equiv0.               \tag{E}
+\]
+For $\Delta=[b]-[a]$, $a\ne b$, the value $I(0)=b-a$ then gives
+$\int_a^b e^{\xi q(x)}dx\ne0$ for every nonzero algebraic $\xi$, by
+replacing $q$ with $\xi q$. This is precisely the FC manuscript's input.
+
+\subsection{Moment coordinates and arithmetic}
+Put $n=\deg q\ge2$, $V=\C[x]_{<n-1}$, and divide, for $0\le j<n-1$,
+\[
+ qx^j=h_jq'+r_j,\qquad \deg r_j<n-1.
+\]
+Let $C_0:x^j\mapsto r_j$, $D_0:x^j\mapsto-h_j'$, and $C=C_0^T$,
+$D=D_0^T$. The degree of $h_j$ is $j+1$, its leading coefficient is
+$1/n$, and hence $\Spec(D)=\{-1/n,\ldots,-(n-1)/n\}$.
+For $U_j=\int_\Gamma x^j e^{zq}dx$, integration by parts gives
+\[
+ U'=(C+D/z)U+z^{-1}\sum_{\lambda\in\Lambda} b_\lambda e^{\lambda z},
+ \quad \Lambda=\{0\}\cup q(\operatorname{supp}\Delta),
+ \quad b_\lambda=\sum_{q(\alpha)=\lambda}d_\alpha h(\alpha).   \tag{6}
+\]
+All coordinates are $E$-functions: their exponential-series coefficients
+are polynomial moments, obtained by evaluating primitives with denominators
+at most $nm+j+1$. In a fixed number field, conjugate absolute values grow
+at most exponentially in $m$, and one common denominator is
+$d^{(n+1)m+j+2}\operatorname{lcm}(1,\ldots,nm+j+1)$, for a common
+integrality denominator $d$. Its logarithm is $O(m)$. Equation (6), with
+the finitely many exponentials adjoined, supplies differential finiteness.
+Thus the actual functions, not just a formal connection, meet Beukers'
+hypotheses. The augmented system has no finite pole except zero.
+
+\subsection{Why the homogeneous connection is semisimple}
+Over regular values of $q$, $q_*\C$ is a finite permutation local system,
+so is semisimple. A finite map of smooth curves is proper and small:
+every nondense stratum has dimension zero and every fiber dimension zero,
+strictly below the source dimension one. The small-map identity therefore
+identifies $Rq_*\C[1]$ with the intermediate extension of that local
+system. The relevant published pinpoint is
+\href{https://arxiv.org/abs/0712.0349}{de Cataldo--Migliorini, Remark 4.2.4}.
+Intermediate extension preserves the direct-sum decomposition into simple
+local systems, and Riemann--Hilbert gives a semisimple regular holonomic
+$q_+\mathcal O$.
+
+Fourier transform is a Weyl-algebra automorphism and preserves simplicity.
+Localization of a simple module at nonzero polynomials in the Fourier
+coordinate is either zero or irreducible: the torsion is a differential
+submodule, and a nonzero localized submodule meets the original one after
+clearing a denominator. The constant direct-image summand transforms to
+a module supported at zero and disappears on generic localization.
+
+For the graph generator use $t\mapsto-\partial_\tau$,
+$\partial_t\mapsto\tau$. Its relations become
+$(\partial_\tau+q)u=0$ and $(\partial_x+\tau q')u=0$.
+The coefficient differential in $x$ is therefore $\partial_x-\tau q'$,
+not $\partial_x+\tau q'$. Integrating and then putting $\tau=-z$ gives
+\[
+ M_q=\C(z)[x]/(\partial_x+zq')\C(z)[x],\qquad
+ \nabla_z[p]=[\partial_zp+qp].                              \tag{7}
+\]
+The commutator is zero. Degree comparison proves that $1,\ldots,x^{n-2}$
+is a basis of the quotient. Division above gives matrix $C_0+D_0/z$;
+the period system has the transpose matrix in (6). This checks the
+source's sign and dual conventions and proves semisimplicity for the
+homogeneous period connection and its dual.
+
+\subsection{Every rational horizontal projector is constant}
+A rational matrix satisfying $P'=[C+D/z,P]$ has no pole away from zero,
+by comparing orders. A pole $z^{-m}P_{-m}$ at zero would require
+$-mP_{-m}=[D,P_{-m}]$. Eigenvalue differences of $D$ lie in $(-1,1)$,
+excluding every negative integer. Thus $P$ is polynomial.
+
+To rule out positive degree, work with the transposed operators $C_0,D_0$.
+At each critical point $\tau$ put $m_\tau=\ord_\tau q'$,
+$\lambda_\tau=q(\tau)$, and $g_{\tau,k}=q'/(x-\tau)^k$,
+$1\le k\le m_\tau$. These form a basis of $V$ by the local Chinese
+remainder decomposition. Multiplication by $q$ on $\C[x]/(q')$ acts on
+each such vector by $\lambda_\tau$; in particular $C_0$ is semisimple,
+even when critical points are multiple or critical values coincide.
+
+Compress $D_0$ to the $\lambda$-eigenspace of $C_0$, denoting the result
+by $\bar D_\lambda$. The flag with successive vectors
+$g_{\tau,1},\ldots,g_{\tau,m_\tau}$, for $q(\tau)=\lambda$, is preserved.
+Indeed
+\[
+ D_0g_{\tau,k}=-\left(\frac{q-\lambda}{(x-\tau)^k}\right)',
+\]
+whose leading term at $\tau$ is $-(m_\tau+1-k)a(x-\tau)^{m_\tau-k}$
+when $q-\lambda=a(x-\tau)^{m_\tau+1}+\cdots$. At another critical point
+over the same value it vanishes modulo that local factor of $q'$.
+The diagonal entries of the compressed flag are therefore
+$-m_\tau/(m_\tau+1),\ldots,-1/(m_\tau+1)$, all in $(-1,0)$.
+If $Q=P^T=Q_dz^d+Q_{d-1}z^{d-1}+\cdots$, $d>0$, the two highest equations are
+\[
+ [Q_d,C_0]=0,\qquad
+ dQ_d=[Q_{d-1},C_0]+[Q_d,D_0].                              \tag{8}
+\]
+In a nonzero diagonal $\lambda$-block the first commutator in the second
+equation vanishes, and the other commutator has spectrum in $(-1,1)$.
+It cannot have the positive integer eigenvalue $d$. This proves constancy.
+Semisimplicity now supplies a horizontal idempotent for any submodule;
+its constancy makes every submodule a constant subspace invariant under
+both $C$ and $D$. No generic-critical-value assumption has entered.
+
+\subsection{Algebraic values force exponential polynomials}
+Beukers' \href{https://arxiv.org/html/math/0405549}{Theorem 3.2 and Lemma 3.1}
+lift every algebraic linear relation at an ordinary nonzero algebraic
+point to a polynomial-coefficient functional relation with the prescribed
+specialization. Linear independence of all chosen coordinates is not
+required. Applying this at one to $U_0(1)-a=0$, with $a$ algebraic, gives
+a polynomial row $\phi$ with $\phi(1)=e_0$ and
+$\phi U\in E=\Span_{\C(z)}\{e^{\lambda z}:\lambda\in\Lambda\}$.
+
+The set $R=\{\psi:\psi U\in E\}$ is a differential submodule under
+$\psi\mapsto\psi'+\psi(C+D/z)$, by (6). The previous subsection gives
+$R=W\otimes\C(z)$ for a constant invariant row space $W$.
+Every constant annihilator of $W$ annihilates $\phi$ and hence
+$\phi(1)=e_0$; thus $e_0\in W$ and $U_0\in E$.
+
+Choose a constant basis $S$ of $W$. In the unique rational-exponential
+expansion $SU=\sum r_\lambda(z)e^{\lambda z}$, coefficients satisfy
+\[
+ r_\lambda'=(C_W-\lambda+D_W/z)r_\lambda+Sb_\lambda/z.        \tag{9}
+\]
+There are no poles away from zero. At zero a negative integer exponent
+would be an eigenvalue of $D_W$, impossible since its spectrum is a subset
+of $\Spec(D)\subset(-1,0)$. Thus all coefficients are polynomial.
+They are algebraic: a finite number of Taylor coefficients of $U_0$,
+all algebraic, determines them by the invertible confluent Vandermonde
+matrix for the distinct algebraic $\lambda$. Therefore $I=U_0$ is an
+exponential polynomial with algebraic polynomial coefficients.
+
+\subsection{Compact chains supply no nonzero exponential polynomial here}
+Choose an embedded finite star through the critical and endpoint values
+of $q$. Its inverse graph is connected by transitive polynomial monodromy,
+so any degree-zero boundary cycle can be represented on that graph.
+Over an open target edge $e$ its pushforward density is an analytic sum
+$\psi_e(t)=\sum_i d_{e,i}/q'(x_i(t))$. Endpoint singularities have powers
+$1/k-1>-1$ and are integrable.
+
+If a nonzero polynomial $H$ satisfies
+$\int_\Gamma q(x)^mH(q(x))dx=0$ for every $m\ge0$, the Cauchy transform
+\[
+ C_H(s)=\sum_e\int_e\frac{H(t)\psi_e(t)}{s-t}\,dt
+\]
+vanishes near infinity. The complement of the tree is connected, hence
+$C_H$ vanishes there. Its two lateral boundary values at an interior edge
+point differ by $\pm2\pi i H(t)\psi_e(t)$. The other edges are holomorphic
+locally. Hence every $\psi_e$ vanishes away from the finite zeros of $H$,
+and then identically. The original exponential period is consequently zero.
+
+A constant-coefficient differential operator annihilating an exponential
+polynomial $I$ gives exactly such a nonzero $H$ by differentiation under
+the compact integral. This proves (E) for $n\ge2$. For linear $q=ax+b$,
+$I(z)=(az)^{-1}\sum d_\alpha e^{zq(\alpha)}$; Lindemann--Weierstrass and
+$\sum d_\alpha=0$ prove (E) directly. This completes the EIT dependency,
+including the case of repeated critical points and values. Its extension
+to arbitrary polynomial amplitudes is false: for $q=x(x-1)$,
+$(2x^2-x+1)e^q=(xe^q)'$ and the integral from zero to one is one.
+
+\section{The nonflat FC(2) proof}
+For a nonzero binary polynomial of total degree $D$, write
+\[
+ P(t,r)=f(rt,r(1-t))=A(t)r^D+A_1(t)r^{D-1}+\cdots,
+ \quad d=\deg A\le D.
+\]
+Restriction of homogeneous forms to $x+y=1$ is injective, so $A\ne0$.
+We first assume $d>0$. An all-moment counterexample can be specialized
+to algebraic coefficients without changing $D,d$: impose the rational
+moment equations, the linear degree constraints, and an inverse for the
+leading coefficient of $A$. Their ideal is proper because of the given
+complex point; Noetherianity and Nullstellensatz give an algebraic point.
+No preservation of monodromy under specialization is needed.
+
+\subsection{Exact kernel and the correction that cannot be discarded}
+Set $M_n=\Lfac(f^n)/\Gamma(Dn+2)$ and
+\[
+ H(w)=\frac1w\sum_{n\ge0}M_nw^{-n}
+ =\int_0^1 C(w,t)dt,
+ \quad C(w,t)=\frac1w\int_0^\infty e^{-r}r
+       E_{D,2}(P(t,r)/w)dr .                               \tag{10}
+\]
+The bound $|E_{D,2}(z)|\le e^{|z|^{1/D}}$ justifies the integral and
+summation for sufficiently large $|w|$, locally uniformly on bounded
+$t$-sets. All positive moments zero means $H=1/w$.
+
+On $V=\{A\ne0\}$ let
+$\Phi_t(r)=(P/A)^{1/D}=r+p_1+O(r^{-1})$, $p_1=A_1/(DA)$,
+and let $\chi(t,Y)=Y-p_1+O(Y^{-1})$ be its exterior inverse. Define
+\[
+ F(t,Y)=e^{Y-\chi}\chi\chi_Y/Y=\sum_{m\ge0}F_m(t)Y^{-m},
+ \qquad F_0=e^{p_1}=:E(t).
+\]
+The root filter
+$E_{D,2}(X^D)=(DX)^{-1}\sum_{j=0}^{D-1}\omega^{-j}e^{\omega^jX}$
+has the additional subtraction $X^{-1}$ when $D=1$.
+Split the radial integral into a compact part and a uniformly exterior
+part before applying this filter. For $\rho^D=A(t)/w$, the distinguished
+singular summand on the exterior part is
+\[
+ \frac{\rho^{D-1}}{DA(t)}\int e^{-(1-\rho)Y}F(t,Y)dY .       \tag{11}
+\]
+Here $1/(\rho w)=\rho^{D-1}/A$, which checks the prefactor.
+On compact subsets of $V$, $|F_m|\le C R_0^m$ by the convergent exterior
+Laurent expansion. For $R_1>R_0$, the elementary integrals
+$J_m(\eta)=\int_{R_1}^\infty e^{-\eta Y}Y^{-m}dY$ satisfy
+\[
+ J_0=e^{-\eta R_1}/\eta,\quad J_1=-\log\eta+\text{entire},\quad
+ J_{m+1}=(e^{-\eta R_1}R_1^{-m}-\eta J_m)/m.
+\]
+Their logarithmic coefficients are $(-1)^m\eta^{m-1}/(m-1)!$.
+After removing them, the entire remainders obey
+$R_1^m\|H_{m+1}\|\le e^{LR_1}/m+(LR_1/m)R_1^{m-1}\|H_m\|$
+on $|\eta|\le L$. This gives a uniform bound and normal convergence
+after multiplication by $F_m$. Thus (11) has a simple pole at
+$w=A(t)$ with residue $E(t)$ and a logarithmic coefficient
+\[
+ B(w,t,\rho)=\frac{\rho^{D-1}}{DA(t)}
+   \sum_{m\ge1}\frac{(-1)^mF_m(t)}{(m-1)!}(1-\rho)^{m-1}.    \tag{12}
+\]
+It is holomorphic on the finite cover $\rho^D=A(t)/w$, $w\ne0$, $t\in V$.
+The only finite exceptional $w$-values for the full kernel are $0,A(t)$.
+At $A(t)=0$, the original integral is normally convergent on compact
+$w$-sets away from zero: its integrand is bounded by
+$C r\exp(-r/2+C'(1+r)^{1-1/D})$ after shrinking the $t$-neighborhood.
+These estimates check the parameter uniformity and continuation used below.
+
+Choose a target star through $0,A(0),A(1)$ and all critical values,
+with a regular center. Its inverse graph is a tree, and its path from
+the actual endpoint zero to the actual endpoint one replaces $[0,1]$
+in (10). Each arm $v$ has a signed sheet vector $n_v$.
+At a nonzero leaf the kernel gives a corrected germ
+\[
+ L_v(w)=\sum_i n_{v,i}\left(
+     E(t_i(w))t_i'(w)+\int_{c_i}^{t_i(w)}B(w,t,\rho)dt\right),\qquad
+ c_i=\lim_{w\to v}t_i(w).                                 \tag{13}
+\]
+For rational $H$, this whole germ vanishes. To check the correction sign,
+write the local contribution as
+$\int_0^\epsilon[a(x)/(z-x)+b(z,x)\log(z-x)]dx$.
+Integration by parts with $q(z,x)=\int_0^x b(z,s)ds$ gives
+$\int[a(x)+q(z,x)]/(z-x)dx$ plus a holomorphic boundary term.
+For each Puiseux class $-1<\delta\le0$, division of its analytic coefficient
+by $x-z$ leaves $h_\delta(z,z)\int x^\delta/(z-x)dx$.
+For $\delta<0$ its nonholomorphic term is a nonzero multiple of
+$h_\delta(z,z)z^\delta$; for $\delta=0$ it is $h_0(z,z)\log z$.
+Finite-power monodromy first kills fractional powers and detects the log;
+then the distinct monodromy eigenvalues separate all fractional classes.
+Meromorphy therefore forces every coefficient to vanish, proving (13).
+Discarding the integral correction and asserting a relation for the pole
+density alone at this stage would be invalid.
+
+\subsection{Transport, with histories and root sheets retained}
+Continue (13) along paths in the base minus zero and critical values.
+Each integral retains its fixed lower endpoint and appends the path of
+its moving upper endpoint. It is lifted to (12)'s cover with $\rho=1$
+at the upper endpoint; lower-endpoint roots are never reset after a loop.
+On a small base disk choose $s(w)^D=w$. The cover is the product of that
+disk with $\{(t,\sigma):A(t)=\sigma^D\ne0\}$, via $\rho=\sigma/s(w)$.
+The differential in (12) is holomorphic on this product. Fixed compact
+history pieces therefore integrate holomorphically in $w$.
+
+Approach a nonzero critical value $\lambda$. A short terminal piece has
+a joint holomorphic primitive $J(w,t)$, and its moving endpoint is
+$c+O((w-\lambda)^{1/k})$. It supplies only nonnegative Puiseux exponents.
+Thus every negative exponent of the continued zero identity comes solely
+from $E(t_i(w))t_i'(w)$. For any monodromy permutation $g$, continuation
+along a realizing loop gives annihilation of $g n_v$ by every such
+negative-coefficient functional. Histories may depend on more than $g$;
+only their negative coefficients factor through the permutation action.
+
+\subsection{The top rational component and simultaneous unweighted traces}
+Use the geometric full-cycle labeling of the sheets. For every invariant
+periodic subspace $V_k$, $k\mid d$, put
+$U_d=\bigcap_{k<d}V_k^\perp$. The rational irreducibility of this space
+is the exact top-component case of
+\href{https://arxiv.org/html/0710.4085v2}{Pakovich--Muzychuk, Theorem 3.1
+and Section 4.1}. It is rational, not absolute complex irreducibility.
+Its application does not assume that $A$ is indecomposable.
+
+The signed path module $M=\sum_v\Q[G]n_v$ contains $U_d$.
+Here are the checks on the geometric input. At each center the path has
+one incoming and one outgoing edge, so $\sum_vn_v=0$ and the nonzero leaves
+already generate $M$. Local-monodromy averaging of $n_v$ gives the uniform
+sheet vector at each endpoint, or their difference if endpoint values
+coincide. The embedded stars formed by an endpoint's lifted arm and the
+disjoint rays to infinity separate their boundary labels. Their convex
+hulls are disjoint when the endpoint values agree and meet at most at
+one boundary label otherwise. Consequently the two averages differ in
+the first case and cannot both have root-of-unity mean zero in the second.
+The vector $(1,\zeta,\ldots,\zeta^{d-1})$ belongs to $U_d\otimes\C$ and
+detects $M$. Rational orthogonal projectors onto $M,U_d$ commute: both
+centralize the full cycle, whose centralizer is the commutative circulant
+algebra. Irreducibility then gives $U_d\subset M$. This is also the
+path-module statement in Pakovich--Muzychuk, Proposition 4.1, with the
+actual endpoint and zero-leaf conventions checked here.
+
+The unweighted inverse-derivative vector
+$u=(1/A'(t_i(w)))_i$ belongs to $U_d\otimes\C$.
+Indeed, a proper invariant block comes from a polynomial decomposition
+$A=P\circ R$, $\deg R\ge2$ (the intermediate field has a unique place
+over infinity, so L\"uroth generators can be chosen polynomial).
+On a block $R(c)=\xi$, $P(\xi)=w$, its coordinate sum is
+$P'(\xi)^{-1}\sum_{R(c)=\xi}1/R'(c)=0$, by the coefficient of $t^{-1}$
+in $1/(R(t)-\xi)=O(t^{-\deg R})$ at infinity. These are constant rational
+linear equations, valid coefficientwise in every Puiseux expansion.
+All proper decompositions are enforced simultaneously.
+
+\subsection{Arithmetic contradiction and the endpoint case}
+If $\lambda\ne0$ is critical, let $K$ be the largest local degree over it
+and $\beta\ne0$ the coefficient vector of $u$ at exponent $1/K-1$.
+It is algebraic and belongs to $U_d\otimes\C$.
+No smaller local degree or positive-order term of the analytic weight
+contributes to that exponent. The corresponding weighted vector is
+$\phi_i=\beta_i\exp(A_1(c_i)/(D\lambda))$. Transport makes it orthogonal
+to $U_d\otimes\C$, which is defined over $\Q$ and contains
+$\overline\beta$. Hence
+\[
+ 0=\langle\phi,\overline\beta\rangle
+   =\sum_{\beta_i\ne0}|\beta_i|^2e^{A_1(c_i)/(D\lambda)}.    \tag{14}
+\]
+Grouping equal algebraic exponents gives strictly positive algebraic
+coefficients. Lindemann--Weierstrass contradicts (14). This conjugate
+pairing does not require real coefficients of $A$.
+
+Thus all critical values are zero. Counting multiplicities of roots of
+$A$ and $A'$ shows $A=a(t-c)^d$. Every nonzero endpoint value is regular,
+so at its leaf (13) evaluates to the signed value $E(p)/A'(p)$; the
+shrinking integral is zero. Different endpoint values give one nonzero
+uncancelled value. Equal endpoint values give a nonzero common $v$ and
+would require $e^{(A_1(0)-A_1(1))/(Dv)}=A'(0)/A'(1)$.
+Hermite--Lindemann forces the exponent difference to vanish, then forces
+$A'(0)=A'(1)$. But these derivatives are $dv/(-c)$ and $dv/(1-c)$,
+which differ. For $d=1$ endpoint values cannot agree. This contradiction
+completes the nonflat proof in all degrees, not just a sampled range.
+
+\section{Flat case, full binary conclusion and exact Gaussian consequences}
+If $A$ is constant, normalize it to one and specialize algebraically.
+The multinomial radial expansion gives, for $K=\sum k_j$, $J=\sum jk_j$,
+\[
+ C_{n,k}=\frac{n!}{(n-K)!}\frac{\Gamma(Dn-J+2)}{\Gamma(Dn+2)},
+ \qquad 0\le C_{n,k}\le1,
+\]
+with zero assigned when $K>n$. For fixed $k$ it is asymptotic to
+$D^{-J}n^{K-J}$. The summable bound $\prod_j\|A_j\|^{k_j}/k_j!$ justifies
+uniform dominated convergence and proves
+\[
+ \lim_{n\to\infty}\frac{\Lfac(f^n)}{\Gamma(Dn+2)}
+     =\int_0^1 e^{A_1(t)/D}dt\ne0.                          \tag{15}
+\]
+EIT supplies the last inequality for arbitrary algebraic $A_1$; a constant
+$A_1$ is immediate. Together with the nonflat proof and specialization,
+this verifies FC(2). If a tail of moments were zero, a sufficiently high
+power of $f$ would have every positive moment zero. Therefore
+\[
+ \{f\in\C[y_1,y_2]:\Lfac(f^m)=0\text{ eventually}\}=\{0\}.  \tag{16}
+\]
+This is an internal reproduction of Long's conclusion, not a new priority claim.
+The proof does not assert a nonzero limit in (15) for every transcendental
+coefficient choice: $f=(x+y)^2+4\pi i x$ has $A_1(t)/2=2\pi i t$, so that
+limit is zero although $\Lfac(f)=6+4\pi i\ne0$. Algebraic specialization
+is applied to a putative all-moment counterexample, rather than to its
+individual analytic limit.
+
+\begin{corollary}[Exact two-block radial classification]
+Let $P=f((X_1^2+X_2^2)/2,(X_3^2+X_4^2)/2)$ over a characteristic-zero
+field. If its pure Gaussian moments vanish eventually, then $f=0$.
+Consequently all-marker eventual safety in this entire invariant
+subalgebra is equivalent to $P=0$.
+\end{corollary}
+\begin{proof}
+The exact factorial/Gaussian identity transfers the hypothesis to (16).
+The conclusion extends from $\C$ to any characteristic-zero field by
+embedding the finitely generated coefficient field into $\C$.
+The substitution is injective, for example by restricting to
+$X_2=X_4=0$ and comparing monomials in $X_1^2,X_3^2$.
+All-marker safety includes the unit marker; zero is trivially safe.
+\end{proof}
+
+\begin{corollary}[Every commutative coefficient $\Q$-algebra]
+Let $B$ be any commutative $\Q$-algebra, including a nonreduced or
+non-Noetherian one. For $f\in B[y_1,y_2]$, the following are equivalent:
+\begin{enumerate}
+\item $\Lfac_B(f^m)=0$ for all sufficiently large $m$;
+\item every coefficient of $f$ is nilpotent in $B$;
+\item $f$ is nilpotent in $B[y_1,y_2]$;
+\item $\Lfac_B(qf^m)=0$ eventually for every fixed polynomial $q$.
+\end{enumerate}
+The same classification holds in the two-block Gaussian invariant
+subalgebra, retaining every original Gaussian polynomial marker.
+\end{corollary}
+\begin{proof}
+Reduce (1) modulo any prime ideal of $B$ and pass to the fraction field.
+The field result makes every coefficient zero there, hence every coefficient
+belongs to the nilradical of $B$. A polynomial has only finitely many
+coefficients; their finitely generated nil ideal is nilpotent, by the
+pigeonhole bound $1+\sum_i(e_i-1)$ if their nilpotence exponents are $e_i$.
+Thus (2) implies (3) without a Noetherian hypothesis. Nilpotence gives (4),
+and the unit marker gives (1). The Gaussian pure identity gives the same
+necessity, and nilpotence gives vanishing against all original markers.
+\end{proof}
+In particular, reduced coefficient algebras have only the zero safe radial
+phase. Eventual vanishing cannot be replaced by first-moment vanishing;
+over nonreduced rings the coefficient ideal need not be zero.
+For example, if $\epsilon^2=0$ but $\epsilon\ne0$, the polynomial
+$\epsilon(y_1-y_2)$ is nonzero and every positive pure moment is zero.
+Thus even the all-positive-moment hypothesis does not imply literal zero
+over a nonreduced coefficient algebra.
+
+There is also an exact ordinary normalization ideal, without a reduced-ring
+assumption. Let $J\subset B$ be generated by the coefficients of $f$, and
+let $N_f$ consist of scalars $u$ for which every actual marked period
+$u\sum_m\Lfac_B(qf^m)t^m/m!$ is polynomial in $t$. Then
+\[
+ N_f=\Gamma_J(B)=\bigcup_{k\ge1}\operatorname{Ann}_B(J^k).    \tag{17}
+\]
+To prove necessity, reduce modulo $\operatorname{Ann}_B(u)$: multiplication
+by $u$ embeds this quotient into $B$, so eventual vanishing of the scaled
+unit period gives eventual vanishing in that quotient. The preceding
+corollary makes its finitely many coefficients nilpotent, hence $J^k u=0$
+for some $k$. Conversely $J^k u=0$ gives $uf^m=0$ for all $m\ge k$,
+uniformly over all markers. The proof also covers $u=0$.
+For example, in $B=\Q[s,t]/(s^2t^2)$ and $f=sy_1$, the ideal is exactly
+$(t^2)$, rather than $(t)$. This follows immediately by the monomial basis
+of the quotient. Thus this classification retains the ordinary torsion
+that a reduced safe-locus computation would lose.
+
+\section{Boundary of the audit}
+General FC in three or more variables, general SFC, and absence of
+pure-null polynomial functions on triangles remain unproved here.
+The binary result does not prove weighted Gamma FC for arbitrary shapes,
+or a universal Gaussian Mathieu statement. The unrestricted Image
+counterexample remains valid. The current EIT repository also has Paper VI,
+\emph{Exponential Periods and Factorial Moments}, commit
+\href{https://github.com/long-mathematics/exponential-integral-theorem/tree/92db79eedeb064694ff20e9201d73fc2bc0857f4}{92db79e};
+its higher-dimensional family assertions require a separate audit and do
+not supply unrestricted FC. Nothing here upgrades the manuscripts to
+peer-reviewed status or asserts formal verification of the analytic proofs.
+\end{document}

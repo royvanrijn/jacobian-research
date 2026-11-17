@@ -1,0 +1,253 @@
+{
+  "status": "pass",
+  "claim": "GLDC11",
+  "scope": "Exact new monic52/53/54 potentials, pole coefficients, quartic42 field forms and triple-pole controls, rejected fibre-divisibility regression, all28 integer degree cases, and direct degree9 determinant/collision reconstruction. Universal pole/UFD/fibre and retained geometric arguments are written, not formalized or fully independently replayed.",
+  "monic53_potential_degree": 7,
+  "monic54_pole_coefficients": [
+    "55/32",
+    "5/64"
+  ],
+  "monic52_primitive_degree": 3,
+  "case_count": 28,
+  "cases": [
+    {
+      "m": 1,
+      "n": 1,
+      "p_degree_bound": 7,
+      "q_degree_bound": 7,
+      "branch": "equal-degree-residual-and-invariant-affine-lemmas"
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "p_degree_bound": 6,
+      "q_degree_bound": 7,
+      "branch": "affine-mate-power-classes-and-invariant-slice"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "p_degree_bound": 6,
+      "q_degree_bound": 6,
+      "branch": "equal-degree-residual-and-invariant-affine-lemmas"
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "p_degree_bound": 5,
+      "q_degree_bound": 7,
+      "branch": "affine-mate-power-classes-and-invariant-slice"
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "p_degree_bound": 5,
+      "q_degree_bound": 6,
+      "branch": "retained32"
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "p_degree_bound": 5,
+      "q_degree_bound": 5,
+      "branch": "equal-degree-residual-and-invariant-affine-lemmas"
+    },
+    {
+      "m": 4,
+      "n": 1,
+      "p_degree_bound": 4,
+      "q_degree_bound": 7,
+      "branch": "affine-mate-power-classes-and-invariant-slice"
+    },
+    {
+      "m": 4,
+      "n": 2,
+      "p_degree_bound": 4,
+      "q_degree_bound": 6,
+      "branch": "new42-invariant-and-common-linear"
+    },
+    {
+      "m": 4,
+      "n": 3,
+      "p_degree_bound": 4,
+      "q_degree_bound": 5,
+      "branch": "retained43-and-common-linear"
+    },
+    {
+      "m": 4,
+      "n": 4,
+      "p_degree_bound": 4,
+      "q_degree_bound": 4,
+      "branch": "equal-degree-residual-and-invariant-affine-lemmas"
+    },
+    {
+      "m": 5,
+      "n": 1,
+      "p_degree_bound": 3,
+      "q_degree_bound": 7,
+      "branch": "affine-mate-power-classes-and-invariant-slice"
+    },
+    {
+      "m": 5,
+      "n": 2,
+      "p_degree_bound": 3,
+      "q_degree_bound": 6,
+      "branch": "new-monic52"
+    },
+    {
+      "m": 5,
+      "n": 3,
+      "p_degree_bound": 3,
+      "q_degree_bound": 5,
+      "branch": "new-monic53"
+    },
+    {
+      "m": 5,
+      "n": 4,
+      "p_degree_bound": 3,
+      "q_degree_bound": 4,
+      "branch": "new-monic54"
+    },
+    {
+      "m": 5,
+      "n": 5,
+      "p_degree_bound": 3,
+      "q_degree_bound": 3,
+      "branch": "equal-degree-residual-and-invariant-affine-lemmas"
+    },
+    {
+      "m": 6,
+      "n": 1,
+      "p_degree_bound": 2,
+      "q_degree_bound": 7,
+      "branch": "affine-mate-power-classes-and-invariant-slice"
+    },
+    {
+      "m": 6,
+      "n": 2,
+      "p_degree_bound": 2,
+      "q_degree_bound": 6,
+      "branch": "prime-leading-degree-impossible"
+    },
+    {
+      "m": 6,
+      "n": 3,
+      "p_degree_bound": 2,
+      "q_degree_bound": 5,
+      "branch": "prime-leading-degree-impossible"
+    },
+    {
+      "m": 6,
+      "n": 4,
+      "p_degree_bound": 2,
+      "q_degree_bound": 4,
+      "branch": "highest-power-degree-impossible"
+    },
+    {
+      "m": 6,
+      "n": 5,
+      "p_degree_bound": 2,
+      "q_degree_bound": 3,
+      "branch": "highest-power-degree-impossible"
+    },
+    {
+      "m": 6,
+      "n": 6,
+      "p_degree_bound": 2,
+      "q_degree_bound": 2,
+      "branch": "equal-degree-residual-and-invariant-affine-lemmas"
+    },
+    {
+      "m": 7,
+      "n": 1,
+      "p_degree_bound": 1,
+      "q_degree_bound": 7,
+      "branch": "affine-mate-power-classes-and-invariant-slice"
+    },
+    {
+      "m": 7,
+      "n": 2,
+      "p_degree_bound": 1,
+      "q_degree_bound": 6,
+      "branch": "prime-leading-degree-impossible"
+    },
+    {
+      "m": 7,
+      "n": 3,
+      "p_degree_bound": 1,
+      "q_degree_bound": 5,
+      "branch": "prime-leading-degree-impossible"
+    },
+    {
+      "m": 7,
+      "n": 4,
+      "p_degree_bound": 1,
+      "q_degree_bound": 4,
+      "branch": "highest-power-degree-impossible"
+    },
+    {
+      "m": 7,
+      "n": 5,
+      "p_degree_bound": 1,
+      "q_degree_bound": 3,
+      "branch": "highest-power-degree-impossible"
+    },
+    {
+      "m": 7,
+      "n": 6,
+      "p_degree_bound": 1,
+      "q_degree_bound": 2,
+      "branch": "highest-power-degree-impossible"
+    },
+    {
+      "m": 7,
+      "n": 7,
+      "p_degree_bound": 1,
+      "q_degree_bound": 1,
+      "branch": "equal-degree-residual-and-invariant-affine-lemmas"
+    }
+  ],
+  "divisibility_shortcut_rejected": true,
+  "universal_proofs_written_not_formal": true,
+  "independent_full_replay": false,
+  "cubic_component_degree_minimum": 9,
+  "cubic_component_degree_interval": [
+    9,
+    9
+  ],
+  "degree8_exceptional_completion_excluded": true,
+  "full_profiles_excluded": 62,
+  "full_profiles_remaining": 12,
+  "global3Ddegree_interval": [
+    5,
+    7
+  ],
+  "global_simplicity_goal_complete": false,
+  "positive_control": {
+    "reconstructed_coefficients": true,
+    "component_degrees": [
+      3,
+      7,
+      9
+    ],
+    "actual_determinant": "1",
+    "distinct_collision_checked": true,
+    "common_image": [
+      0,
+      1,
+      0
+    ],
+    "nonlinear_occurrences": 19,
+    "source_sha256": "21e7265972b9a8693b3c651f06417e57a227c65e3d2d453d9dd641c985ad892b"
+  },
+  "prior_premise_sha256": {
+    "DEGREE7_COMPONENT_EXCLUSION.md": "94c3a8a941eb56cf582da806f7cec3e4d706efe0296b6ed3956bf77923853ce1",
+    "degree7-validation.json": "84f1a96275ef5962ba894adcd0cf06bf60772279c2e127ba8294f83c6c6fb93d",
+    "degree7-integration.json": "9ee5d0a0c3ec49227380832a990590e4a74b49b8411c5c86be31225a3a745b35",
+    "DEGREE6_COMPONENT_EXCLUSION.md": "f2d3731dd31f5de95d713f2fd5a1c625bff624617b7816446da2686f0098697f",
+    "EXCEPTIONAL_DEGREE5.md": "4b8f823701e905acb6ecc07567915a6d225a65caa54140c225bc26ae8e29afee",
+    "INVERTIBILITY_AUDIT.md": "f232e1e00193dbd63357076c2196c335ac8c10b58a2059eb500b4a6c457b5245"
+  },
+  "checker_sha256": "13c2960614aa52ddf06d9f5658e288443efe823d7b0b544569a55254bb60e23e",
+  "proof_sha256": "828c376e8e13ff63fe8389974e01289f1ecf05864c911452600bd1593f4bcb05"
+}

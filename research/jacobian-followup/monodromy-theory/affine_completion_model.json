@@ -1579,5 +1579,35 @@
       "fixed_sheets": 2
     }
   ],
+  "global_curve_obstruction": {
+    "degree": 12,
+    "uniform_pole_index": 2,
+    "root_denominator_degree": 6,
+    "congruence": "2*m-6*h=1",
+    "solvable": false,
+    "all_genus_zero_index_budgets": [
+      [
+        6,
+        6,
+        10
+      ],
+      [
+        6,
+        8,
+        8
+      ]
+    ],
+    "triangle_subgroup_orders": {
+      "3": [
+        12
+      ],
+      "5": [
+        60
+      ]
+    },
+    "applies_to": "Curve-cover field pair plus independent transcendental variables, with arbitrary birational source and target identifications.",
+    "excludes_abstract_natural_action": false
+  },
+  "rational_replacement_Keller_completion": "excluded by global sixth-power obstruction",
   "absolute_Keller_realization": false
 }

@@ -1,0 +1,49 @@
+{
+  "repository": "anaxia-research/conjecture-to-choose",
+  "commit": "06cbbb7e2737e1a11085b64e0ead021d63c550c3",
+  "commit_date": "2026-10-22T11:28:09Z",
+  "files": [
+    {
+      "path": "README.md",
+      "blob": "cf773fa99860bb8df7bfcac169f647bccf26a809",
+      "sha256": "ef9c2e881a9c042f6546520703fbdc72ff8453856659e874ba70aab027ed3da2",
+      "bytes": 6160,
+      "url": "https://raw.githubusercontent.com/anaxia-research/conjecture-to-choose/06cbbb7e2737e1a11085b64e0ead021d63c550c3/README.md"
+    },
+    {
+      "path": "data/certificates.json",
+      "blob": "543fac7e04c5807b2ccce2682aee124418c85739",
+      "sha256": "2db153c6153c2301c973b8d4044f6fc8a62885143ac7be0c5c7e9e86cbe7e5c1",
+      "bytes": 332181,
+      "url": "https://raw.githubusercontent.com/anaxia-research/conjecture-to-choose/06cbbb7e2737e1a11085b64e0ead021d63c550c3/data/certificates.json"
+    },
+    {
+      "path": "data/still_open.json",
+      "blob": "01c7c332a0bf1565d7558aec4c769ff36cbd31a9",
+      "sha256": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc",
+      "bytes": 3414,
+      "url": "https://raw.githubusercontent.com/anaxia-research/conjecture-to-choose/06cbbb7e2737e1a11085b64e0ead021d63c550c3/data/still_open.json"
+    },
+    {
+      "path": "search/alexq.py",
+      "blob": "158f2a5af646155d779162c5e85d53e3719c33b7",
+      "sha256": "4953c0489349601c2fe299c624e946e62738745b06d29712a6142e1a3cf49e38",
+      "bytes": 3150,
+      "url": "https://raw.githubusercontent.com/anaxia-research/conjecture-to-choose/06cbbb7e2737e1a11085b64e0ead021d63c550c3/search/alexq.py"
+    },
+    {
+      "path": "search/alexq_exact.py",
+      "blob": "e292958ac5c979c6fb959cbe333a2b13097252ad",
+      "sha256": "7ab91565b2fcb5b3cf4041091877a09a2868d4aa0ce85c8bdf8849159ebf0ff5",
+      "bytes": 811,
+      "url": "https://raw.githubusercontent.com/anaxia-research/conjecture-to-choose/06cbbb7e2737e1a11085b64e0ead021d63c550c3/search/alexq_exact.py"
+    },
+    {
+      "path": "verify/verify.py",
+      "blob": "71db0e88b2df13b45fe24b345dce14b5dfd45fcc",
+      "sha256": "5bfe0bc11d72dd6a5fb61328f19edb4716c36601d96462b05a042c0c679d0095",
+      "bytes": 6614,
+      "url": "https://raw.githubusercontent.com/anaxia-research/conjecture-to-choose/06cbbb7e2737e1a11085b64e0ead021d63c550c3/verify/verify.py"
+    }
+  ]
+}

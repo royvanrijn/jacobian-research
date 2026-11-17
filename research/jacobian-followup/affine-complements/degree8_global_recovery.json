@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-11-14",
+  "marked_points": 16,
+  "sectors": [
+    {
+      "multiplicities": [
+        2,
+        7
+      ],
+      "P8_coefficients": [
+        "8192/1225",
+        "0",
+        "-384/35",
+        "0",
+        "32/7",
+        "0",
+        "-32/25",
+        "0",
+        "1"
+      ],
+      "multiplier_degree": 3,
+      "unit_identity_verified": true,
+      "quotient_term_count": 911,
+      "eliminated_stratum": "D0=...=D4=0 has no points",
+      "recovered_root_constant_circuit": "Zstar=sum(C[i]*E[i],i=0..4)",
+      "root_constant_degree_upper_bound": 18,
+      "core_compatibility_circuit": [
+        "E[5]=0",
+        "D[0]*Zstar-E[0]=0",
+        "D[1]*Zstar-E[1]=0",
+        "D[2]*Zstar-E[2]=0",
+        "D[3]*Zstar-E[3]=0",
+        "D[4]*Zstar-E[4]=0"
+      ],
+      "nonzero_condition": "M(s)*Zstar != 0",
+      "saturation": "t*M(s)*Zstar-1=0",
+      "core_parameter_count": 4,
+      "saturated_variable_count": 5,
+      "compatibility_degree_upper_bound": 22,
+      "full_nonzero_locus_solved": false
+    },
+    {
+      "multiplicities": [
+        4,
+        5
+      ],
+      "P8_coefficients": [
+        "-256/25",
+        "0",
+        "384/5",
+        "0",
+        "-896/5",
+        "0",
+        "112",
+        "0",
+        "1"
+      ],
+      "multiplier_degree": 3,
+      "unit_identity_verified": true,
+      "quotient_term_count": 911,
+      "eliminated_stratum": "D0=...=D4=0 has no points",
+      "recovered_root_constant_circuit": "Zstar=sum(C[i]*E[i],i=0..4)",
+      "root_constant_degree_upper_bound": 18,
+      "core_compatibility_circuit": [
+        "E[5]=0",
+        "D[0]*Zstar-E[0]=0",
+        "D[1]*Zstar-E[1]=0",
+        "D[2]*Zstar-E[2]=0",
+        "D[3]*Zstar-E[3]=0",
+        "D[4]*Zstar-E[4]=0"
+      ],
+      "nonzero_condition": "M(s)*Zstar != 0",
+      "saturation": "t*M(s)*Zstar-1=0",
+      "core_parameter_count": 4,
+      "saturated_variable_count": 5,
+      "compatibility_degree_upper_bound": 22,
+      "full_nonzero_locus_solved": false
+    }
+  ],
+  "complete_zero_D_stratum_excluded": true,
+  "global_root_constant_polynomial_recovery": true,
+  "core_parameter_count": 4,
+  "saturated_variable_count": 5,
+  "root_constant_degree_upper_bound": 18,
+  "compatibility_degree_upper_bound": 22,
+  "nonzero_kappa_condition_retained": true,
+  "proof_method": "exact rational sparse polynomial arithmetic modulo the two irreducible P8 polynomials; universal ideal identities"
+}

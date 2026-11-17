@@ -1,0 +1,11 @@
+{
+  "primary": "Brumer-Kramer, Arithmetic of division fields, arXiv1102.4557v1",
+  "locator": "Section2 Proposition2.4 and Remark2.6, printed/PDFpages2-3",
+  "url": "https://arxiv.org/html/1102.4557v1",
+  "primary_restatement_PDF_pages_2_and_3_read": true,
+  "representation_not_abstract_group_names": true,
+  "original_McLaughlin_PDF_obtained": false,
+  "original_reference": "McLaughlin, Some subgroups of SL_n(F2), Illinois J.Math13(1969)108-115, DOI10.1215/ijm/1256053741",
+  "adopted": "Only the common nondegenerate alternating form and even dimension>=4 for a proper irreducible transvection-generated subgroup of GL_k(F2). Proposition2.4 concerns proper SL, distinct from Proposition2.5 assuming Sp. Remark2.6 identifies the symmetric deleted-permutation modules.",
+  "boundary": "Classification imported, not independently proved. Original publisher access returned challenge HTML; no claim of original PDF inspection or independent specialist review."
+}

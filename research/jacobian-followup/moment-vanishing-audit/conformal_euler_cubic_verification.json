@@ -1,0 +1,97 @@
+{
+  "claim": "SIC2B33EULER20261116",
+  "status": "PASS",
+  "checker_sha256": "2b8207309f38878397be214e5e88aae3f57a94ceb72cc4d261352b3e076f68e3",
+  "adapter_sha256": "b82a044e36730dd814bedbd4b154912827e9917660a9a440374eaa9cd58f8c6b",
+  "sympy_version": "1.14.0",
+  "full_biform_adapter_determinant": "-98304000",
+  "three_summand_patterns_up_to_charge_reversal": [
+    [
+      -1,
+      0,
+      1
+    ],
+    [
+      -1,
+      1,
+      3
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  "opposite_charge_two_summand_checks": [
+    [
+      1,
+      2,
+      1,
+      -2,
+      "8/315"
+    ],
+    [
+      1,
+      2,
+      1,
+      -1,
+      "2/105"
+    ],
+    [
+      2,
+      3,
+      1,
+      -3,
+      "16/969969"
+    ],
+    [
+      2,
+      3,
+      1,
+      -2,
+      "8/45045"
+    ],
+    [
+      2,
+      3,
+      1,
+      -1,
+      "2/1155"
+    ],
+    [
+      2,
+      3,
+      2,
+      -3,
+      "1024/16900975"
+    ],
+    [
+      2,
+      3,
+      2,
+      -2,
+      "8/3465"
+    ],
+    [
+      2,
+      3,
+      2,
+      -1,
+      "16/255255"
+    ]
+  ],
+  "sphere_replica_derivation_checks": 84,
+  "sharp_spherical_marked_values_at_m_equal_3b": {
+    "1": "-1/35",
+    "2": "4/3003",
+    "3": "-16/230945",
+    "4": "64/16900975"
+  },
+  "unsupported_safe_control": "z+z*t+z**3",
+  "boundary": "The supplied conformal-Euler architecture is classified by the written all-order proof. No assertion that every semistable pure phase admits a grading; the full (3,3) Image problem remains open. No external, independent specialist or formal verification."
+}

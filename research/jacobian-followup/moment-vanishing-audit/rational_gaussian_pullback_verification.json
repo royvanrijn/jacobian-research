@@ -1,0 +1,396 @@
+{
+  "completed": true,
+  "checker_sha256": "46c7fe10239dddedc524ad10213f31fe2f80352bd0292fa29eef1be3cdbf745f",
+  "python_version": "3.12.3",
+  "sympy_version": "1.14.0",
+  "polynomiality_controls": [
+    {
+      "nu": 1,
+      "a": "0",
+      "delta": "0",
+      "G_polynomial": true,
+      "one_order_lower_a_has_pole": true
+    },
+    {
+      "nu": 1,
+      "a": "1 - Z",
+      "delta": "1",
+      "G_polynomial": true,
+      "one_order_lower_a_has_pole": true
+    },
+    {
+      "nu": 2,
+      "a": "0",
+      "delta": "0",
+      "G_polynomial": true,
+      "one_order_lower_a_has_pole": true
+    },
+    {
+      "nu": 2,
+      "a": "(1 - Z)**2",
+      "delta": "1",
+      "G_polynomial": true,
+      "one_order_lower_a_has_pole": true
+    },
+    {
+      "nu": 3,
+      "a": "0",
+      "delta": "0",
+      "G_polynomial": true,
+      "one_order_lower_a_has_pole": true
+    },
+    {
+      "nu": 3,
+      "a": "(1 - Z)**2",
+      "delta": "1",
+      "G_polynomial": true,
+      "one_order_lower_a_has_pole": true
+    }
+  ],
+  "Wick_controls": [
+    {
+      "nu": 1,
+      "delta": "0",
+      "m": 1,
+      "pure": "0",
+      "marked_Z": "0"
+    },
+    {
+      "nu": 1,
+      "delta": "0",
+      "m": 2,
+      "pure": "0",
+      "marked_Z": "-2"
+    },
+    {
+      "nu": 1,
+      "delta": "0",
+      "m": 3,
+      "pure": "0",
+      "marked_Z": "0"
+    },
+    {
+      "nu": 1,
+      "delta": "0",
+      "m": 4,
+      "pure": "0",
+      "marked_Z": "-72"
+    },
+    {
+      "nu": 1,
+      "delta": "1",
+      "m": 1,
+      "pure": "0",
+      "marked_Z": "1"
+    },
+    {
+      "nu": 1,
+      "delta": "1",
+      "m": 2,
+      "pure": "0",
+      "marked_Z": "-4"
+    },
+    {
+      "nu": 2,
+      "delta": "0",
+      "m": 1,
+      "pure": "0",
+      "marked_Z": "0"
+    },
+    {
+      "nu": 2,
+      "delta": "0",
+      "m": 2,
+      "pure": "0",
+      "marked_Z": "-3"
+    },
+    {
+      "nu": 2,
+      "delta": "0",
+      "m": 3,
+      "pure": "0",
+      "marked_Z": "0"
+    },
+    {
+      "nu": 2,
+      "delta": "0",
+      "m": 4,
+      "pure": "0",
+      "marked_Z": "-315"
+    },
+    {
+      "nu": 2,
+      "delta": "1",
+      "m": 1,
+      "pure": "0",
+      "marked_Z": "1"
+    },
+    {
+      "nu": 2,
+      "delta": "1",
+      "m": 2,
+      "pure": "0",
+      "marked_Z": "-6"
+    },
+    {
+      "nu": 3,
+      "delta": "0",
+      "m": 1,
+      "pure": "0",
+      "marked_Z": "0"
+    },
+    {
+      "nu": 3,
+      "delta": "0",
+      "m": 2,
+      "pure": "0",
+      "marked_Z": "-4"
+    },
+    {
+      "nu": 3,
+      "delta": "1",
+      "m": 1,
+      "pure": "0",
+      "marked_Z": "1"
+    },
+    {
+      "nu": 3,
+      "delta": "1",
+      "m": 2,
+      "pure": "0",
+      "marked_Z": "-8"
+    }
+  ],
+  "formal_transport_infinitesimal_controls": 4,
+  "normal_pair_controls": [
+    {
+      "nu": 1,
+      "phase_reduced": true,
+      "Jacobian_retained": true
+    },
+    {
+      "nu": 2,
+      "phase_reduced": true,
+      "Jacobian_retained": true
+    }
+  ],
+  "Laurent_source_controls": [
+    {
+      "nu": 1,
+      "delta": 0,
+      "basis_dimension": 2,
+      "source_marked_Krylov_rank": 2,
+      "only_possible_finite_time_pole": 0,
+      "not_an_actual_kernel_producer": true
+    },
+    {
+      "nu": 1,
+      "delta": 1,
+      "basis_dimension": 2,
+      "source_marked_Krylov_rank": 2,
+      "only_possible_finite_time_pole": 0,
+      "not_an_actual_kernel_producer": true
+    },
+    {
+      "nu": 2,
+      "delta": 0,
+      "basis_dimension": 4,
+      "source_marked_Krylov_rank": 4,
+      "only_possible_finite_time_pole": 0,
+      "not_an_actual_kernel_producer": true
+    },
+    {
+      "nu": 2,
+      "delta": 1,
+      "basis_dimension": 4,
+      "source_marked_Krylov_rank": 4,
+      "only_possible_finite_time_pole": 0,
+      "not_an_actual_kernel_producer": true
+    },
+    {
+      "nu": 3,
+      "delta": 0,
+      "basis_dimension": 6,
+      "source_marked_Krylov_rank": 6,
+      "only_possible_finite_time_pole": 0,
+      "not_an_actual_kernel_producer": true
+    },
+    {
+      "nu": 3,
+      "delta": 1,
+      "basis_dimension": 6,
+      "source_marked_Krylov_rank": 6,
+      "only_possible_finite_time_pole": 0,
+      "not_an_actual_kernel_producer": true
+    }
+  ],
+  "scalar_ODE_controls": [
+    {
+      "nu": 1,
+      "j": 1,
+      "delta": 0,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "nu": 1,
+      "j": 1,
+      "delta": 1,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "nu": 2,
+      "j": 1,
+      "delta": 0,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1/2",
+        "3/2"
+      ]
+    },
+    {
+      "nu": 2,
+      "j": 1,
+      "delta": 1,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1/2",
+        "3/2"
+      ]
+    },
+    {
+      "nu": 2,
+      "j": 2,
+      "delta": 0,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "nu": 2,
+      "j": 2,
+      "delta": 1,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "nu": 3,
+      "j": 1,
+      "delta": 0,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1/3",
+        "4/3"
+      ]
+    },
+    {
+      "nu": 3,
+      "j": 1,
+      "delta": 1,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1/3",
+        "4/3"
+      ]
+    },
+    {
+      "nu": 3,
+      "j": 2,
+      "delta": 0,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "2/3",
+        "5/3"
+      ]
+    },
+    {
+      "nu": 3,
+      "j": 2,
+      "delta": 1,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "2/3",
+        "5/3"
+      ]
+    },
+    {
+      "nu": 3,
+      "j": 3,
+      "delta": 0,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "nu": 3,
+      "j": 3,
+      "delta": 1,
+      "coefficient_checks": 8,
+      "infinity_exponents": [
+        "1",
+        "2"
+      ]
+    }
+  ],
+  "rank_drop_controls": [
+    {
+      "nu": 1,
+      "generic_rank_from_written_proof": 2,
+      "special_rank_from_charge_proof": 1,
+      "polynomial_coefficients_checked": true,
+      "special_phase": "-T**3*Z**3/2"
+    },
+    {
+      "nu": 2,
+      "generic_rank_from_written_proof": 4,
+      "special_rank_from_charge_proof": 1,
+      "polynomial_coefficients_checked": true,
+      "special_phase": "T**3*Z**6/8"
+    },
+    {
+      "nu": 3,
+      "generic_rank_from_written_proof": 6,
+      "special_rank_from_charge_proof": 1,
+      "polynomial_coefficients_checked": true,
+      "special_phase": "-T**3*Z**9/18"
+    }
+  ],
+  "mutation_controls": {
+    "Jacobian_not_discarded": true,
+    "root_at_zero_not_localized": true,
+    "full_multiplier_source_not_replaced_by_pure_seed": true,
+    "source_Krylov_rank_not_called_actual_without_minimality_and_exponent_separation": true,
+    "divergent_formal_series_not_treated_as_convergent_Gaussian_integrals": true,
+    "fixed_degree_field_uniformity_not_disproved_by_rank_drop": true
+  },
+  "all_order_pure_identity_inferred_from_finite_Wick_replay": false,
+  "contour_comparison_used_for_new_identities": false,
+  "all_nu_actual_rank_certified_by_checker": false,
+  "general_period_kernel_solver_executed": false,
+  "all_repeated_root_phases_classified": false,
+  "all_Gaussian_higher_rank_connections_classified": false,
+  "global_complex_safe_locus_uniformity_proved": false,
+  "new_cutoff_ideal_chain_computed": false,
+  "minimal_ternary_failure_degree_changed": false,
+  "new_SIC33_answer_computed": false,
+  "new_Delta_minimum_computed": false,
+  "numeric_cubic_frontier_changed": false,
+  "operator_order_reduced": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

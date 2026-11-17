@@ -1,0 +1,448 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 92,
+  "checks": [
+    "predecessor PASS torus_infinity_receipt.json",
+    "predecessor seal torus_infinity_receipt.json verify_torus_infinity.py",
+    "predecessor seal torus_infinity_receipt.json TORUS_INFINITY_OBSTRUCTION.md",
+    "predecessor seal torus_infinity_receipt.json residual_cover_receipt.json",
+    "predecessor seal torus_infinity_receipt.json RESIDUAL_DOUBLE_COVER.md",
+    "predecessor seal torus_infinity_receipt.json GLOBAL_BOUNDARY_OBSTRUCTION.md",
+    "predecessor seal torus_infinity_receipt.json PROOF.md",
+    "predecessor seal torus_infinity_receipt.json WRIGHT_MARKED_MODEL.md",
+    "predecessor seal torus_infinity_receipt.json PRIMITIVE_QUARTIC_FIELD.md",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/borodzik-morse.pdf",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/leidy-maxim-hoA.pdf",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/manifest.json",
+    "predecessor seal torus_infinity_receipt.json sources/torus-infinity/scott-geometries.pdf",
+    "predecessor PASS residual_cover_receipt.json",
+    "predecessor seal residual_cover_receipt.json verify_residual_cover.py",
+    "predecessor seal residual_cover_receipt.json RESIDUAL_DOUBLE_COVER.md",
+    "predecessor seal residual_cover_receipt.json global_boundary_receipt.json",
+    "predecessor seal residual_cover_receipt.json GLOBAL_BOUNDARY_OBSTRUCTION.md",
+    "predecessor seal residual_cover_receipt.json WRIGHT_MARKED_MODEL.md",
+    "predecessor seal residual_cover_receipt.json ../jc2-omitted-divisors/WRIGHT_IMAGE_RESTRICTION.md",
+    "predecessor seal residual_cover_receipt.json ../jc2-omitted-divisors/SIMPLE_RAMIFICATION_AND_RADIAL.md",
+    "predecessor seal residual_cover_receipt.json sources/residual-cover/biesel-gioia-2016.pdf",
+    "predecessor seal residual_cover_receipt.json sources/residual-cover/manifest.json",
+    "predecessor seal residual_cover_receipt.json sources/residual-cover/stacks-0C1B.html",
+    "four cabling topology primary imports pinned",
+    "primary PDF seal hatcher-3M.pdf",
+    "primary PDF seal neumann-norbury-orevkov.pdf",
+    "primary PDF seal ito-cable-slopes.pdf",
+    "primary PDF seal perelman-finite-extinction.pdf",
+    "actual full second plane chart recovers four ring generators",
+    "the two regular formulas for u agree by the defining relation",
+    "B1 and D never vanish simultaneously on second chart",
+    "inverse chart is exact on overlap",
+    "torsor linear transition is index minus three",
+    "explicit smooth torsor section respects affine transition",
+    "explicit section extends smoothly across base infinity",
+    "fiber metric is global under index-three transition",
+    "marked end fiber represents a nonzero generator of Z3",
+    "residual squarefree degree is even at all collision counts",
+    "preferred-longitude alternatives before residual infinity are exactly two",
+    "fixing both residual letters forces identity longitude",
+    "complete literal S4 subgroup census",
+    "A4 derived subgroup is V4",
+    "A4 three-cycle longitude is identity",
+    "all normally meridian-generated images transposition",
+    "all normally meridian-generated images three-cycle",
+    "all normally meridian-generated images double-transposition",
+    "exhaustive fiber-trivial residue case list S",
+    "residue count control S",
+    "nonidentity fiber fixes a residual letter and cannot act centrally on four letters S",
+    "nontrivial-fiber companion is full and longitude identity S",
+    "exhaustive fiber-trivial residue case list A",
+    "residue count control A",
+    "nonidentity fiber fixes a residual letter and cannot act centrally on four letters A",
+    "nontrivial-fiber companion is full and longitude identity A",
+    "simple pattern base Euler formula",
+    "alternating pattern base Euler formula",
+    "alternating torus cover homology is even",
+    "alternating nontrivial-fiber contradiction uses 3 times marked class",
+    "disk cones p,2 give torsion-free H1 p3 beta1",
+    "disk cones p,2 give torsion-free H1 p3 beta2",
+    "disk cones p,2 give torsion-free H1 p5 beta1",
+    "disk cones p,2 give torsion-free H1 p5 beta2",
+    "disk cones p,2 give torsion-free H1 p5 beta3",
+    "disk cones p,2 give torsion-free H1 p5 beta4",
+    "disk cones p,2 give torsion-free H1 p7 beta1",
+    "disk cones p,2 give torsion-free H1 p7 beta2",
+    "disk cones p,2 give torsion-free H1 p7 beta3",
+    "disk cones p,2 give torsion-free H1 p7 beta4",
+    "disk cones p,2 give torsion-free H1 p7 beta5",
+    "disk cones p,2 give torsion-free H1 p7 beta6",
+    "disk cones p,2 give torsion-free H1 p9 beta1",
+    "disk cones p,2 give torsion-free H1 p9 beta2",
+    "disk cones p,2 give torsion-free H1 p9 beta4",
+    "disk cones p,2 give torsion-free H1 p9 beta5",
+    "disk cones p,2 give torsion-free H1 p9 beta7",
+    "disk cones p,2 give torsion-free H1 p9 beta8",
+    "disk cones p,2 give torsion-free H1 p11 beta1",
+    "disk cones p,2 give torsion-free H1 p11 beta2",
+    "disk cones p,2 give torsion-free H1 p11 beta3",
+    "disk cones p,2 give torsion-free H1 p11 beta4",
+    "disk cones p,2 give torsion-free H1 p11 beta5",
+    "disk cones p,2 give torsion-free H1 p11 beta6",
+    "disk cones p,2 give torsion-free H1 p11 beta7",
+    "disk cones p,2 give torsion-free H1 p11 beta8",
+    "disk cones p,2 give torsion-free H1 p11 beta9",
+    "disk cones p,2 give torsion-free H1 p11 beta10",
+    "transparent marked class follows integrally in free H1",
+    "transparent nonzero marked class forces winding coprime to three",
+    "transparent local control has distance-one nonfiber filling",
+    "transparent local control preserves H1 order three and nonzero marked class",
+    "transparent removal strictly decreases every positive cabling depth"
+  ],
+  "scope": "all pole heights on the actual marked Wright surface; finite field degree exactly four",
+  "marked_end": {
+    "H1": "Z/3",
+    "ramification_exterior": "solid torus",
+    "ramification_class": "generator"
+  },
+  "peripheral": {
+    "S4_meridian": "transposition",
+    "S4_preferred_longitude": "identity",
+    "A4_meridian": "three-cycle",
+    "A4_preferred_longitude": "identity"
+  },
+  "finite_peripheral_layer": {
+    "exhaustive_S4_subgroups": 30,
+    "exponent_modulus": 12,
+    "S_fiber_trivial_state_count": 9,
+    "A_fiber_trivial_state_count": 4,
+    "S_residue_controls": 208,
+    "A_residue_controls": 96,
+    "states": {
+      "S": [
+        {
+          "branched_orbit": 2,
+          "alpha_cycles": [
+            1,
+            1
+          ],
+          "companion_order": 24,
+          "meridian_cycles": [
+            1,
+            1,
+            2
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 32
+        },
+        {
+          "branched_orbit": 3,
+          "alpha_cycles": [
+            1,
+            2
+          ],
+          "companion_order": 12,
+          "meridian_cycles": [
+            1,
+            3
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 32
+        },
+        {
+          "branched_orbit": 3,
+          "alpha_cycles": [
+            3
+          ],
+          "companion_order": 6,
+          "meridian_cycles": [
+            1,
+            1,
+            2
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 32
+        },
+        {
+          "branched_orbit": 3,
+          "alpha_cycles": [
+            3
+          ],
+          "companion_order": 24,
+          "meridian_cycles": [
+            1,
+            1,
+            2
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 32
+        },
+        {
+          "branched_orbit": 4,
+          "alpha_cycles": [
+            1,
+            3
+          ],
+          "companion_order": 4,
+          "meridian_cycles": [
+            4
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 16
+        },
+        {
+          "branched_orbit": 4,
+          "alpha_cycles": [
+            1,
+            3
+          ],
+          "companion_order": 24,
+          "meridian_cycles": [
+            4
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 16
+        },
+        {
+          "branched_orbit": 4,
+          "alpha_cycles": [
+            1,
+            3
+          ],
+          "companion_order": 24,
+          "meridian_cycles": [
+            4
+          ],
+          "longitude_cycles": [
+            2,
+            2
+          ],
+          "residue_multiplicity": 16
+        },
+        {
+          "branched_orbit": 4,
+          "alpha_cycles": [
+            4
+          ],
+          "companion_order": 3,
+          "meridian_cycles": [
+            1,
+            3
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 16
+        },
+        {
+          "branched_orbit": 4,
+          "alpha_cycles": [
+            4
+          ],
+          "companion_order": 12,
+          "meridian_cycles": [
+            1,
+            3
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 16
+        }
+      ],
+      "A": [
+        {
+          "branched_orbit": 3,
+          "alpha_cycles": [
+            1,
+            1,
+            1
+          ],
+          "companion_order": 12,
+          "meridian_cycles": [
+            1,
+            3
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 24
+        },
+        {
+          "branched_orbit": 4,
+          "alpha_cycles": [
+            1,
+            3
+          ],
+          "companion_order": 2,
+          "meridian_cycles": [
+            2,
+            2
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 24
+        },
+        {
+          "branched_orbit": 4,
+          "alpha_cycles": [
+            2,
+            2
+          ],
+          "companion_order": 3,
+          "meridian_cycles": [
+            1,
+            3
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 24
+        },
+        {
+          "branched_orbit": 4,
+          "alpha_cycles": [
+            2,
+            2
+          ],
+          "companion_order": 12,
+          "meridian_cycles": [
+            1,
+            3
+          ],
+          "longitude_cycles": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "residue_multiplicity": 24
+        }
+      ]
+    },
+    "scope": "exhaustive permutation/peripheral residue layer only, not formal three-manifold verification"
+  },
+  "surviving_removal": {
+    "S_to_S": "odd p,q; gcd(p,6)=1; cabling depth decreases by one",
+    "S_to_A": "p=2 three-sheeted pattern component; A impossible",
+    "A_outgoing": "none"
+  },
+  "local_control": {
+    "p": 5,
+    "q": 3,
+    "filling": [
+      1,
+      3
+    ],
+    "distance_from_fiber": 1,
+    "H1_order": 3,
+    "marked_class_mod3": 2,
+    "is_actual_global_cover": false
+  },
+  "actual_marked_quartic_Keller_maps_excluded": true,
+  "compatible_ruled_quartic_realizations_excluded": true,
+  "actual_marked_quartic_realization_frontier": [],
+  "prior_truncated_algebraic_frontier": [
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "assurance": {
+    "actual_marked_ring_and_finite_map_are_hypotheses": true,
+    "all_positive_winding_and_signed_coprime_cable_parameters_covered_by_written_proof": true,
+    "finite_cabling_depth_unbounded_and_handled_by_descent": true,
+    "residual_infinity_used_to_prove_preferred_longitude_identity": true,
+    "compression_ball_alternative_excluded_using_nonzero_marked_class": true,
+    "actual_peripheral_filling_lattices_tracked": true,
+    "transparent_step_preserves_lens_core_and_H1_three": true,
+    "primary_topology_results_explicitly_imported": true,
+    "end_lens_recognition_explicitly_imported": true,
+    "finite_permutation_layer_exhaustive_but_topological_proof_written": true,
+    "coefficient_search_used": false,
+    "all_finite_field_degrees_on_Wright_excluded": false,
+    "arbitrary_normalization_compatible_completion_proved": false,
+    "arbitrary_quartic_normalizations_excluded": false,
+    "quartic_packets_excluded": false,
+    "truncated_degree8_necessary_core_unit_ideal_proved": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_quartic_cabling.py": "bba502c78ab50f87e462a863e508e69d17e3a43dc84c51987983cd2a82f38b3b",
+    "QUARTIC_CABLING_EXCLUSION.md": "54ef4236f5325f4e09f52156f0f14577cfdb52f960587e504230f124d18f75a0",
+    "torus_infinity_receipt.json": "4f281288978e2c1538345d50b2b10a4af3ba77953fee958b69fd7cb84465d94b",
+    "TORUS_INFINITY_OBSTRUCTION.md": "f439ec60bacd618f9ff8e017299c0c2b15a59fddf5ae60bc9e732551d8d99f10",
+    "residual_cover_receipt.json": "6b98a8e3ee4dcdd4a0d7efa2d726ddc4e5fe4cf318d555b30648ff52c8bd84bc",
+    "RESIDUAL_DOUBLE_COVER.md": "4153ae6b4311a64484e516ba61a5ddb4084ce13bd129310713cac9b718bbccbf",
+    "WRIGHT_MARKED_MODEL.md": "311172c056b00d93db70a4066823af0271b3017bfea9cb5c539e0273bc3fee71",
+    "WRIGHT_CONNECTION.md": "20ddef8df79e815de137cae3905eb175fcd614a02ca6fc02678cb981ac7f209f",
+    "PROOF.md": "effeb71a536359e60d3dfb01777911f31b7c68fde99ed573779063dfba2ba07d",
+    "PRIMITIVE_QUARTIC_FIELD.md": "ada9a6a8d360d70a492ac5593bd113d43cd23bd863349ab9984a62e7efa5cefb",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/quartic-cabling/ito-cable-slopes.pdf": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+    "sources/quartic-cabling/manifest.json": "0667f9f28433f93775eb19a200cc66236b5db1249d243aba34b479d78d14ad21",
+    "sources/quartic-cabling/neumann-norbury-orevkov.pdf": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+    "sources/quartic-cabling/perelman-finite-extinction.pdf": "460606386f35a6b719970471a94452ecea7769e8c2caeff8820b8a483aebe0c6"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.088219
+}

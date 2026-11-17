@@ -1,0 +1,43 @@
+{
+  "status": "PASS, EXACT_POWER_OBSTRUCTION_ONLY",
+  "phase": "z^3+(A+B*t)*w^2",
+  "variables": [
+    "A",
+    "B"
+  ],
+  "nonzero_moment_indices": "Multiples of5 only; coefficient degree3s at n=5s",
+  "full_selected_moment_ideal_generators": [
+    "5*A**3 + A*B**2",
+    "8091*A**6 + 4495*A**4*B**2 + 465*A**2*B**4 + 5*B**6"
+  ],
+  "supplied_verified_standard_basis": [
+    "5*A**3 + A*B**2",
+    "2759*A**2*B**4 - 125*B**6",
+    "A*B**6",
+    "B**8"
+  ],
+  "standard_basis_in_moment_generators": [
+    [
+      "1",
+      "0"
+    ],
+    [
+      "40455*A**3 + 14384*A*B**2",
+      "-25"
+    ],
+    [
+      "-22475*A**4/376 - 8990*A**2*B**2/423 + 2759*B**4/3384",
+      "125*A/3384"
+    ],
+    [
+      "-2480341*A**5/1880 - 335327*A**3*B**2/423 - 328507*A*B**4/3384",
+      "2759*A**2/3384 + B**2/5"
+    ]
+  ],
+  "length": 18,
+  "top_ordinary_degree": 7,
+  "A_nilpotence_index": 7,
+  "A6_normal_form": "5*B^6/2759",
+  "global_target1_restriction": "-6*A",
+  "consequence": "The first global safe-union target has no power e<=6 in the FULL ordinary moment ideal. Its radical membership and any power e>=7 remain open."
+}

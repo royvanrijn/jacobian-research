@@ -1,0 +1,19 @@
+# Primary literature and the new scope
+
+14 November2026. Canonical arguments are in [PROOF.md](PROOF.md). No novelty or unpublished-priority certificate is claimed.
+
+[Haution, On rational fixed points of finite group actions on the affine space](https://arxiv.org/html/1507.04582), arXiv v4 (2016), Trans. AMS369 (2017), Proposition3.2.1, is the decisive primary input. It supplies smoothness, geometric connectedness and acyclicity of the whole fixed scheme for an ell-group in characteristic different from ell. The proof explicitly uses mod-ell Smith theory. Section2.3 also records tame smoothness. The downloaded primary HTML is pinned. We use no rational fixed-point theorem over the original base: geometric fixed points suffice.
+
+[Fankhauser, Fixed points for reductive group actions on acyclic varieties](https://www.numdam.org/item/10.5802/aif.1495.pdf),1995, introductory Smith statements, provides independent published context. Smith acyclicity is restricted to prime-power groups; the following statements about more general groups provide Euler information and are not substituted for connected acyclic fixed loci. This distinction matters for the exact limit of the obstruction.
+
+[Ciocan-Fontanine--Konvalinka--Pak, The Weighted Hook Length Formula](https://www.math.ucla.edu/~pak/papers/whl.pdf),2010, Introduction (HLF) and (BR), is the pinned primary reference for classical Young dimensions and branching. Our short induction proves the only low-degree consequence needed, with base ranks7 and8 checked exactly; it does not infer an all-rank representation theorem from a finite search. The low-rank subset representations and their sign twists are handled explicitly, including the S5 and S6 exceptions.
+
+[KMFI47](../monodromy-theory/GENERAL_DECK_RIGIDITY.md) already proves characteristic-zero regular source deck rigidity in all dimensions. We retain that result, extend its finite-group argument to the exact positive-characteristic p-group restriction, and combine it with the formal first-jet kernel argument. The primitive-monodromy theorem is not needed: the marked rank may be smaller than the generic degree.
+
+[UAFIXGEOM1](../universal-keller-symmetry/PROOF.md) previously required actual fixed schemes to be affine spaces, or used published linearization to recognize them. Tame Smith theory automatically recognizes only dimensions zero and one; higher fixed schemes stay as actual smooth acyclic varieties. This removes the linearizability assumption from the new three-space exclusion and prime-power dimension bound, but does not turn acyclic surfaces into affine planes.
+
+[UACANCOST1](../universal-keller-costs/PROOF.md) has the stronger all-rank N+1 bound in the linear architecture. Our arbitrary-action bound equals it for prime-power ranks; it is weaker in other ranks, with an explicit standard-representation witness to the limit of the tangent method. [UAK7MIN1](../universal-keller-quadrics/PROOF.md) supplies the established unmarked rank-seven minimum used for the four-coordinate gap. No unmarked minimum is changed.
+
+The next genuine gate is an etale map between actual smooth mod-ell acyclic affine surfaces with a missing prescribed fibre, together with all remaining subgroup tests and effective global gluing. Neither the existence of such surfaces nor an admissible tangent representation constructs the required canonical Keller map.
+
+The all-rank fixed-versus-canonical comparison consumes the already proved UAM1, UACOMP1, UASEXT1 and UATRACE1 universal atomic upper bounds. The new conclusion is their strict separation from arbitrary polynomial-action canonical marked costs in every characteristic-zero rank N>=3. Their original complete-fibre and every-extension quantifiers are retained; a fixed universal dimension upper bound is not relabeled an exact minimum.

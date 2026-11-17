@@ -1,0 +1,376 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Dyadic unit transfer and next-prime control of cubic binomials}
+\author{Internal algebraic proof; no priority or external-review claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+\begin{theorem}\label{thm:main}
+Let $q=2^r$, $r\ge0$. For every integer Gamma shape
+$1\le\beta\le2q$, every nonzero
+\[
+                         f(X)=X^q(A+BX^q)
+\]
+satisfies Strong Factorial at every starting index. In particular this
+holds for ordinary factorials, $\beta=1$, simultaneously for every such
+$q$. The coefficients $A,B$ may be arbitrary complex numbers.
+\end{theorem}
+For $r\ge1$ this has a genuine monomial gap $q\ge2$, outside the
+\href{UNIFORM_PADE_PARABOLA_SFC.tex}{completed adjacent-support family}.
+The proof below is independent of that parabola argument and of the
+constant-plus-power contour or finite-prefix results. It does not prove
+all gaps, all lower exponents, all positive Gamma shapes, general FC,
+or unrestricted SFC.
+
+\section{A degree-preserving Bessel reduction}
+For $n\ge0$ put
+\[
+ Y_n(z)=\sum_{k=0}^n b_{n,k}z^k,\qquad
+ b_{n,k}=\frac{(n+k)!}{2^k k!(n-k)!}
+       =\binom{n+k}{2k}(2k-1)!! .                           \tag{1}
+\]
+The empty odd double factorial is one. Thus every coefficient is integral,
+and the leading coefficient $(2n-1)!!$ is odd. Direct coefficient
+substitution gives
+\[
+ Y_0=1,\quad Y_1=1+z,\quad
+ Y_n=(2n-1)zY_{n-1}+Y_{n-2}\quad(n\ge2).                  \tag{2}
+\]
+For interior coefficients the identity reduces to
+\[
+ (n+k)(n+k-1)-2k(2n-1)-(n-k)(n-k-1)=0;
+\]
+the constant and extreme coefficients follow directly from (1).
+Define also
+\[
+ D_n=(n+1)Y_n+zY_n'
+     =\sum_{k=0}^n\frac{(n+k+1)!}{2^k k!(n-k)!}z^k.        \tag{3}
+\]
+Its leading coefficient $(2n+1)(2n-1)!!$ is again odd. Differentiating
+(2) gives the exact identity
+\[
+ D_n=(2n-1)zD_{n-1}+D_{n-2}+2Y_n,\quad D_0=1,
+                         \quad D_1=2+3z.                 \tag{4}
+\]
+Consequently both reductions $C_n=\overline Y_n$ and
+$C_n=\overline D_n$ in $\mathbb F_2[z]$ have full degree $n$ and satisfy
+\[
+                        C_n=zC_{n-1}+C_{n-2}.             \tag{5}
+\]
+Their initial pairs are $(1,1+z)$ and $(1,z)$ respectively.
+The Euclidean algorithm in (5) proves
+$\gcd(C_n,C_{n-1})=1$ at every index. Their resultants are therefore
+nonzero, hence equal to one in $\mathbb F_2$.
+
+\begin{lemma}\label{lem:units}
+Let $h\in\{0,1\}$ and let $(u_L)_{L\ge0}$ be any sequence of rational
+$2$-adic units. Then the consecutive polynomials
+\[
+ F_n(t)=\sum_{k=0}^n\binom nk(n+k+h)!u_{n+k}t^k
+\]
+are coprime over $\mathbb C$ for every $n\ge1$.
+\end{lemma}
+\begin{proof}
+Put $G_n(z)=F_n(z/2)/n!$. Formula (1) shows that its coefficients
+belong to $\mathbb Z_{(2)}$, and it reduces to $Y_n$ if $h=0$ and to
+$D_n$ if $h=1$. Each rational unit reduces to one. The leading
+coefficient stays a unit, so degrees are preserved at every index.
+By (5), reduction of $\operatorname{Res}(G_n,G_{n-1})$ is one.
+The rational resultant is therefore nonzero; this excludes a common
+complex zero. We do not attempt to embed arbitrary complex coefficients
+into $\mathbb Q_2$: the conclusion follows from a nonzero rational
+resultant of the coefficient polynomials.
+\end{proof}
+This is a uniform transfer for arbitrary rational unit sequences,
+not an assertion that every characteristic-zero coprimality theorem
+survives a factorial substitution.
+
+\section{The factorial unit calculation}
+Fix $q=2^r$, and for $L\ge0$, $0\le\delta<q$, set
+\[
+ W_{L,\delta}=\frac{(qL+\delta)!}
+                    {2^{(q-1)L}L!\,\delta!}.              \tag{6}
+\]
+These are odd integers. For $\delta=0$, start with
+$W_{L,0}=1$ at $q=1$; doubling $q$ multiplies the previous quotient
+by the odd integer
+\[
+             \frac{(2K)!}{2^K K!}=(2K-1)!!,
+                     \qquad K=(q/2)L.
+\]
+For the remaining offsets,
+\[
+             W_{L,\delta}=W_{L,0}\binom{qL+\delta}{\delta}.
+\]
+The binomial factor is odd: for $1\le j\le\delta<q$,
+$v_2(qL+j)=v_2(j)$, so its numerator product and $\delta!$ have
+identical valuations. This also covers $L=0$, with $W_{0,\delta}=1$.
+The unshifted factorial-unit identity is the $p=2$ instance of
+Rocks's retained \href{sources/rocks-2015-author-preprint.pdf}{2015 author
+draft}, Lemma 3.8; the argument needed here is proved above.
+No priority or final-publication scope claim is made.
+
+Write the shape uniquely as
+\[
+              \beta-1=qh+\delta,\quad h\in\{0,1\},
+                                   \quad0\le\delta<q.
+\]
+For $L\ge0$, (6) gives the exact identity
+\[
+ (\beta)_{qL}=2^{(q-1)L}\frac{(L+h)!}{h!}
+                         \frac{W_{L+h,\delta}}{W_{h,\delta}}. \tag{7}
+\]
+In particular this is an exponential scaling times $(L+h)!$ times a
+rational $2$-adic unit. By Lemma~\ref{lem:units}, it already supplies
+the required coprimality. For explicit integer witnesses, define
+\[
+ M_{n,q,\beta}(t)=\sum_{k=0}^n\binom nk(\beta)_{q(n+k)}t^k,
+\qquad
+ G_{n,q,\beta}(z)=\frac{h!W_{h,\delta}}{n!2^{(q-1)n}}
+                            M_{n,q,\beta}(2^{-q}z).         \tag{8}
+\]
+Its coefficient of $z^k$ is exactly
+\[
+               W_{n+k+h,\delta}
+                       \frac{(n+k+h)!}{2^k k!(n-k)!}.       \tag{9}
+\]
+These are integers. They reduce to the coefficients of $Y_n$ or $D_n$,
+and their leading coefficient is odd. Thus
+\[
+             \operatorname{Res}(G_{n,q,\beta},G_{n-1,q,\beta})
+                                      \equiv1\pmod2.       \tag{10}
+\]
+The variable scaling $2^{-q}$ in (8) is the SAME at both moment orders;
+only the nonzero overall normalization depends on $n$.
+
+There is also an exact resultant valuation. Since the reduction in (10)
+is a unit, the scaling law for resultants in (8) gives
+\[
+ \boxed{v_2\operatorname{Res}(M_{n,q,\beta},M_{n-1,q,\beta})
+ =(3q-2)n(n-1)+(n-1)v_2(n!)+nv_2((n-1)!).}                \tag{11}
+\]
+Indeed multiplying degree-$n$ and degree-$(n-1)$ polynomials by constants
+$c_n,c_{n-1}$ multiplies their resultant by $c_n^{n-1}c_{n-1}^n$;
+scaling both variables by $s$ multiplies it by $s^{n(n-1)}$.
+Here $v_2(c_j)=-v_2(j!)-(q-1)j$ and $v_2(s)=-q$.
+Equivalently, writing $s_2(j)$ for the binary digit sum, (11) is
+$3qn(n-1)-(n-1)s_2(n)-ns_2(n-1)$.
+The valuation is independent of the particular integer shape in
+$1\le\beta\le2q$. This is an exact all-index identity, not an estimate
+for a sampled set of resultants.
+
+For $A,B\ne0$, the moment of $X^q(A+BX^q)$ is
+$A^n M_{n,q,\beta}(B/A)$. Equation (10) excludes simultaneous zero
+moments at $n-1,n$ for every $n\ge1$. If a coefficient vanishes,
+$f$ is a nonzero monomial with every positive moment nonzero.
+This completes Theorem~\ref{thm:main}.
+Multiplying $f$ by any monomial in OTHER independent variables preserves
+this two-moment assertion, because those variables contribute nonzero
+Gamma factors at each order. Their positive shapes need not be integral.
+
+\section{Limits of the transfer}
+The degree-preserving coprime reduction, rather than a characteristic-zero
+SFC theorem alone, is the essential input. For example, with $h=2$ the
+natural integer polynomials
+\[
+ T_n(z)=\sum_{k=0}^n\binom{n+k+2}{2}b_{n,k}z^k
+\]
+have $\overline T_2=\overline T_3=z^2$.
+This prevents an automatic extension of this reduction to shapes
+$\beta>2q$; it does not refute SFC for those shapes.
+Nor does the theorem prove every $X^a(A+BX^2)$. At $(a,n)=(1,3)$,
+the ordinary moment polynomials at orders two and three have
+\[
+ (v_2\text{ coefficients})=(1,4,4),\qquad(1,3,4,7).
+\]
+Both lower Newton polygons have an edge of slope $3/2$, whose residual
+polynomial is $1+Y$. Thus the first residue-field slope test leaves a
+common candidate; the actual characteristic-zero polynomials are coprime.
+These exact limitations are retained in the checker. More binary digits,
+other primes or a different argument could still exclude such candidates.
+
+\section{An exact multiple-root bridge when the lower exponent is one}
+For every positive integer gap $e$, put
+\[
+ A_{n,e}(t)=\frac1{n!}\sum_{k=0}^n\binom nk(n+ek)!t^k,
+ \qquad T_{n,e}(t)=\sum_{k=0}^n\binom nk(n)_{ek}t^k,
+ \qquad\theta=t\frac{d}{dt}.
+\]
+For $n\ge1$, direct coefficient comparison gives
+\[
+ A_{n,e}=T_{n,e}+\frac e n\theta T_{n,e},\qquad
+ A_{n-1,e}=T_{n,e}-\frac1n\theta T_{n,e}.                  \tag{12}
+\]
+The second identity uses both $\binom{n-1}k=(1-k/n)\binom nk$ and
+the fact that its Gamma shape is $n$, the same as $T_{n,e}$.
+The coefficient matrix of $T,\theta T$ has nonzero determinant.
+Since $T_{n,e}(0)=1$, a common zero of the two moments is therefore
+EXACTLY a multiple root of $T_{n,e}$. Thus
+\[
+ X(A+BX^e)\text{ satisfies SFC at every start}
+ \iff T_{n,e}\text{ is squarefree for every }n\ge1.         \tag{13}
+\]
+This proves an equivalence, not the squarefreeness assertion on the right.
+It does not assume a fixed-shape Appell derivative identity: the shape
+of $T_{n,e}$ is $n$ and varies with the index. It supplies the missing
+scalar structure for this particular lower exponent, while the general
+lower-exponent problem remains separate.
+
+\section{Next-prime confinement for the first remaining cubic}
+This section concerns a different support, $f=X(A+BX^2)$, and ordinary
+factorials only. Write
+\[
+ C_n(t)=\sum_{j=0}^n\binom nj(n+2j)!t^j,
+ \qquad J_n=\gcd_{\mathbb Q[t]}(C_n,C_{n-1}),
+\]
+where $J_n$ is chosen monic.
+\begin{lemma}\label{lem:gap}
+Suppose $n\ge6$ and $q$ is prime with
+\[
+                     n<q\le\frac{3(n-1)}2.                \tag{14}
+\]
+Put $d=q-n$ and $L=\lfloor(d-1)/2\rfloor$. Then every root of $J_n$
+is a $q$-adic unit, and
+\[
+             \deg J_n\le L,\qquad
+             \deg J_n\le2\left\lfloor\frac{d-1}{4}\right\rfloor. \tag{15}
+\]
+The second bound uses the real place. In particular $d\le4$ certifies
+coprimality. No assertion that such a prime exists for every small $n$
+is part of this conditional lemma.
+\end{lemma}
+\begin{proof}
+Since $q>n$, all binomial coefficients are $q$-adic units. Also
+$q^2>3n$, so coefficient $j$ has valuation
+\[
+                  v_q\!\left(\binom nj(n+2j)!\right)
+                           =\left\lfloor\frac{n+2j}{q}\right\rfloor.
+\]
+Let $L_0=\lfloor(q-n-1)/2\rfloor$ and
+$L_1=\lfloor(2q-n-1)/2\rfloor$.
+The lower polygon passes through
+\[
+                  (0,0),\ (L_0,0),\ (L_1,1),\ (n,2),     \tag{16}
+\]
+with zero-length or collinear edges deleted. Indeed $L_0,L_1$ are the
+last indices of heights zero and one; the slopes in (16) are increasing,
+except the one stated collinearity below. The same description applies
+to $C_{n-1}$ after replacing $n$ by $n-1$.
+
+For $n=2h$, the two positive-rise widths for $C_n$ and $C_{n-1}$ are
+respectively
+\[
+ \left(\frac{q-1}{2},\ 3h-q+1\right),\qquad
+ \left(\frac{q+1}{2},\ 3h-q-1\right).                      \tag{17}
+\]
+If $d\ge3$, all widths are positive. The two first widths differ by one,
+the two last widths differ by two, and every last width is smaller than
+every first width: the smallest first minus the largest last is
+$3(d-1)/2>0$. Thus none of the nonzero slopes coincide.
+If $d=1$, the two edges of $C_n$ are collinear and have reduced slope
+$1/h$; those of $C_{n-1}$ have slopes $1/(h+1)$ and $1/(h-2)$.
+Here $h\ge3$ by (14), so these are again distinct.
+
+For $n=2h+1$ we have $d\ge2$, and the corresponding widths are
+\[
+ \left(\frac{q+1}{2},\ 3h-q+2\right),\qquad
+ \left(\frac{q-1}{2},\ 3h-q+1\right).                      \tag{18}
+\]
+They are positive. The first widths differ by one, the last by one,
+and the smallest first exceeds the largest last by $(3d-2)/2>0$.
+Again no nonzero slopes coincide. Each displayed rise is one.
+By multiplicativity of Newton polygons, a common factor can therefore
+have only horizontal edges. All its roots are units, and its degree
+fits within the shorter horizontal width $L_0=L$.
+One of $n,n-1$ is even, and its moment polynomial is strictly positive
+for real $t$, since $C_j(t)=\int_0^\infty x^j(1+tx^2)^j e^{-x}dx>0$
+for real $t$ whenever $j$ is even.
+Thus $J_n$ has no real roots and has even degree. This proves (15).
+\end{proof}
+
+The remaining common factor also has an exact residual certificate.
+For $d\ge1$ define the integer polynomial
+\[
+ H_d(t)=\sum_{j=0}^{\lfloor(d-1)/2\rfloor}
+             (-1)^j\frac{(d-1+j)!}{j!(d-1-2j)!}t^j.        \tag{19}
+\]
+Because $n=q-d<q$, reduction of $C_n/n!$ gives
+\[
+            \overline{C_n/n!}=\overline H_d,\qquad
+            \overline{C_{n-1}/(n-1)!}=\overline H_{d+1}.    \tag{20}
+\]
+To see this, all indices beyond $L$ have positive valuation, whereas
+$\binom nj\equiv(-1)^j(d)_j/j!$ and
+$(n+1)_{2j}\equiv(d-1)!/(d-1-2j)!$ in the horizontal range.
+
+A monic common factor with unit roots has $q$-integral coefficients and
+unit constant term. Dividing either normalized moment polynomial by it
+preserves integral coefficients. Its reduction retains its degree and
+divides both residuals in (20). Consequently
+\[
+ \deg J_n\le\deg\gcd_{\mathbb F_q[t]}(\overline H_d,
+                                           \overline H_{d+1}). \tag{21}
+\]
+A residual gcd of degree at most one certifies coprimality by parity;
+more generally its permitted divisor degrees can be intersected with
+the even degrees in (15). In particular $q\nmid\operatorname{Res}(H_d,H_{d+1})$
+is sufficient. This is an exact transfer at every supplied prime window,
+not a uniform coverage theorem for all $n$ or a claim that every residual
+pair is squarefree or coprime.
+
+For this cubic the multiple-root formulation gives a stronger degree
+restriction. Under (14), the Newton polygon of $T_{n,2}$ has horizontal
+width $\lfloor d/2\rfloor$ and two positive-rise edges of height ONE.
+Their widths are
+\[
+ \left(\frac{q+1}{2},\frac{3n}{2}-q\right)\quad(n\text{ even}),
+ \qquad
+ \left(\frac{q-1}{2},\frac{3n-2q+1}{2}\right)\quad(n\text{ odd}). \tag{22}
+\]
+The widths are positive and strictly decreasing under (14).
+These formulas follow from the last indices
+$\lfloor(q-n)/2\rfloor$ and $\lfloor(2q-n)/2\rfloor$ at heights zero
+and one. Every positive-rise edge is primitive. A factor occurring twice
+cannot occupy such an edge, because two copies would require twice
+its full width. Consequently
+\[
+ g\in\mathbb Q[t],\quad g^2\mid T_{n,2}\Longrightarrow
+ \deg g\le\left\lfloor\frac d4\right\rfloor,
+ \qquad \deg g\le2\left\lfloor\frac d8\right\rfloor.        \tag{23}
+\]
+The second restriction uses the general positive-Gamma real-place fact:
+even powers have no real roots; for odd powers the derivative integral
+is strictly positive, so every real root is simple. A repeated rational
+factor thus has even degree. In particular $d\le7$ certifies the original
+cubic SFC pair through (13).
+
+Here the exact horizontal residual is
+\[
+ K_d(t)=\sum_{k=0}^{\lfloor d/2\rfloor}
+       (-1)^k\frac{d(d+k-1)!}{k!(d-2k)!}t^k,
+                 \qquad\overline T_{n,2}=\overline K_d.  \tag{24}
+\]
+Every rational square divisor reduces with its degree preserved into a
+square divisor of $\overline K_d$. Moreover direct coefficient comparison
+shows
+\[
+ K_d=\frac{H_d+2H_{d+1}}3,\qquad
+ \theta K_d=\frac d3(H_{d+1}-H_d).                         \tag{25}
+\]
+Under (14) we have $q\ge3d+3$, so $3d$ is invertible modulo $q$.
+As $K_d(0)=1$, the common-root condition for $H_d,H_{d+1}$ is exactly
+the multiple-root condition for $K_d$ in the residue field. The useful
+uniform target is sufficient prime coverage of these residual square
+factor degrees, subject to (23), not an assumed coprimality at every
+prime. None of (20)--(25) proves that coverage for every index.
+
+The universal proofs are the displayed identities and inequalities,
+not bounded parameter scans.
+Independent replay, formal verification, external review and novelty
+claims remain false. General FC and unrestricted SFC remain open.
+\end{document}

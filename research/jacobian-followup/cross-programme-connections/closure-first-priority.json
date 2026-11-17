@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-11-16T00:09:12.502055+00:00",
+  "user_instruction": "I want to close a (big) theorem completely before asking an external reviewer. This is expensive and they will only do so if we reach an incredible breakthrough. That is our focus now.",
+  "operational_priority": "Complete a substantial theorem with its original quantifiers and a complete internal proof before proposing external review.",
+  "external_review": "Deferred. No reviewer contact or scheduling authorized by this record.",
+  "proof_discipline": "Internal dependency checks, countercontrols and honest assurance flags continue. Partial criteria do not become full theorem closure.",
+  "assistant_prioritization": {
+    "Mathieu": "Primary candidate: one full exceptional MZ case, targeting mixed-isotypic image-interior phases.",
+    "Gaussian": "Finish the complete H(S,T) theorem; test the actual marked-period bridge toward exceptional MZ or pursue a stated global Gaussian theorem.",
+    "HC4": "Actual polynomial-source/global energy-integrality implication, preserving all-degree scope and Kulikov countercontrols.",
+    "Wright": "Finish the all-depth polynomial-key obstruction; pursue genuinely open Laurent-key/finite-target compatibility. Published quartic realization remains retired."
+  },
+  "messages": [
+    {
+      "area": "Mathieu",
+      "thread_id": "01a1df31-1bbc-7582-8705-ca451bd43dfe",
+      "delivery": "confirmed"
+    },
+    {
+      "area": "Gaussian",
+      "thread_id": "01a1d97f-80d4-7403-a25b-30d4eee1c7c9",
+      "delivery": "confirmed"
+    },
+    {
+      "area": "HC4",
+      "thread_id": "01a1d972-cce6-72d3-a5c4-95547c59c6fc",
+      "delivery": "confirmed"
+    },
+    {
+      "area": "Wright",
+      "thread_id": "01a1d972-24c3-7840-b2ad-336d65e98aaf",
+      "delivery": "confirmed"
+    }
+  ],
+  "mathematical_registry_changed": false,
+  "new_agents_spawned": false
+}

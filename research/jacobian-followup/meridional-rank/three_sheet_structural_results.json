@@ -1,0 +1,1917 @@
+{
+  "status": "COMPLETE",
+  "results": [
+    {
+      "name": "13a_3145",
+      "original_generator_names": [
+        5,
+        11
+      ],
+      "initial_canonical_relators": [
+        [
+          -2,
+          -2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "steps": [
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1
+          ],
+          "pattern_length": 5,
+          "before_measure": 64,
+          "after_measure": 33
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1
+          ],
+          "pattern_length": 5,
+          "before_measure": 33,
+          "after_measure": 26
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -2
+          ],
+          "pattern_length": 5,
+          "before_measure": 26,
+          "after_measure": 21
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            2,
+            -1
+          ],
+          "target_relator": [
+            -2,
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -2,
+            -2,
+            -2
+          ],
+          "pattern_length": 5,
+          "before_measure": 21,
+          "after_measure": 18
+        }
+      ],
+      "active_generators": [
+        1,
+        2
+      ],
+      "final_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "original_generator_words": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ]
+      },
+      "status": "EXACT_REWRITE_PROPOSAL"
+    },
+    {
+      "name": "13a_3147",
+      "original_generator_names": [
+        5,
+        11
+      ],
+      "initial_canonical_relators": [
+        [
+          -2,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "steps": [
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "pattern_length": 5,
+          "before_measure": 60,
+          "after_measure": 31
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "pattern_length": 5,
+          "before_measure": 31,
+          "after_measure": 24
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "used_signed_rotation": [
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "target_relator": [
+            -2,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1
+          ],
+          "target_rotation": [
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            -2
+          ],
+          "pattern_length": 5,
+          "before_measure": 24,
+          "after_measure": 19
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "used_signed_rotation": [
+            1,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1
+          ],
+          "target_relator": [
+            -2,
+            -2,
+            -2,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            1
+          ],
+          "target_rotation": [
+            1,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            -2,
+            -2,
+            -2
+          ],
+          "pattern_length": 5,
+          "before_measure": 19,
+          "after_measure": 18
+        }
+      ],
+      "active_generators": [
+        1,
+        2
+      ],
+      "final_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "original_generator_words": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ]
+      },
+      "status": "EXACT_REWRITE_PROPOSAL"
+    },
+    {
+      "name": "13a_3148",
+      "original_generator_names": [
+        5,
+        12
+      ],
+      "initial_canonical_relators": [
+        [
+          -2,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "steps": [
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            -2,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "pattern_length": 10,
+          "before_measure": 54,
+          "after_measure": 35
+        },
+        {
+          "operation": "nielsen",
+          "forward": {
+            "1": [
+              1
+            ],
+            "2": [
+              -1,
+              -1,
+              2
+            ]
+          },
+          "inverse": {
+            "1": [
+              1
+            ],
+            "2": [
+              1,
+              1,
+              2
+            ]
+          },
+          "before_measure": 35,
+          "after_measure": 27
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1
+          ],
+          "pattern_length": 7,
+          "before_measure": 27,
+          "after_measure": 24
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1
+          ],
+          "used_signed_rotation": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2
+          ],
+          "target_relator": [
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "target_rotation": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            -2
+          ],
+          "pattern_length": 6,
+          "before_measure": 24,
+          "after_measure": 23
+        }
+      ],
+      "active_generators": [
+        1,
+        2
+      ],
+      "final_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          1,
+          -2,
+          -2,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1
+        ]
+      ],
+      "original_generator_words": {
+        "1": [
+          1
+        ],
+        "2": [
+          -1,
+          -1,
+          2
+        ]
+      },
+      "status": "EXACT_REWRITE_PROPOSAL"
+    },
+    {
+      "name": "13a_3149",
+      "original_generator_names": [
+        5,
+        12
+      ],
+      "initial_canonical_relators": [
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -2,
+          1,
+          -2,
+          1,
+          1,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          1,
+          -2,
+          1,
+          1,
+          -2,
+          1,
+          1,
+          1,
+          1,
+          -2,
+          1,
+          1
+        ]
+      ],
+      "steps": [
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            1,
+            -2,
+            1,
+            1,
+            -2,
+            1
+          ],
+          "target_rotation": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            1,
+            -2,
+            1,
+            1,
+            -2,
+            1
+          ],
+          "pattern_length": 8,
+          "before_measure": 42,
+          "after_measure": 27
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            1,
+            -2,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            2,
+            -1,
+            2,
+            -1,
+            -1,
+            2
+          ],
+          "target_relator": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "target_rotation": [
+            -1,
+            -1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1
+          ],
+          "pattern_length": 7,
+          "before_measure": 27,
+          "after_measure": 26
+        },
+        {
+          "operation": "nielsen",
+          "forward": {
+            "1": [
+              1
+            ],
+            "2": [
+              1,
+              1,
+              2
+            ]
+          },
+          "inverse": {
+            "1": [
+              1
+            ],
+            "2": [
+              -1,
+              -1,
+              2
+            ]
+          },
+          "before_measure": 26,
+          "after_measure": 20
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "target_relator": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1
+          ],
+          "target_rotation": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            -2,
+            -1,
+            -1,
+            -1,
+            2,
+            -1
+          ],
+          "pattern_length": 4,
+          "before_measure": 20,
+          "after_measure": 19
+        }
+      ],
+      "active_generators": [
+        1,
+        2
+      ],
+      "final_relators": [
+        [
+          -2,
+          -2,
+          -1,
+          -2,
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "original_generator_words": {
+        "1": [
+          1
+        ],
+        "2": [
+          1,
+          1,
+          2
+        ]
+      },
+      "status": "EXACT_REWRITE_PROPOSAL"
+    },
+    {
+      "name": "13a_3291",
+      "original_generator_names": [
+        11,
+        12
+      ],
+      "initial_canonical_relators": [
+        [
+          -2,
+          1,
+          -2,
+          1
+        ],
+        [
+          -2,
+          1,
+          -2,
+          1,
+          -2,
+          1,
+          -2,
+          1,
+          1
+        ]
+      ],
+      "steps": [
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "target_relator": [
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "target_rotation": [
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "pattern_length": 3,
+          "before_measure": 13,
+          "after_measure": 9
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "target_relator": [
+            -2,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "target_rotation": [
+            -2,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "pattern_length": 3,
+          "before_measure": 9,
+          "after_measure": 5
+        },
+        {
+          "operation": "eliminate",
+          "relator": [
+            -1
+          ],
+          "generator": 1,
+          "replacement": [],
+          "before_measure": 5,
+          "after_measure": 2
+        }
+      ],
+      "active_generators": [
+        2
+      ],
+      "final_relators": [
+        [
+          -2,
+          -2
+        ]
+      ],
+      "original_generator_words": {
+        "1": [],
+        "2": [
+          2
+        ]
+      },
+      "status": "EXACT_REWRITE_PROPOSAL",
+      "cyclic_order": 2
+    },
+    {
+      "name": "13a_3346",
+      "original_generator_names": [
+        10,
+        11
+      ],
+      "initial_canonical_relators": [
+        [
+          -2,
+          1,
+          -2,
+          1
+        ],
+        [
+          -2,
+          1,
+          -2,
+          1,
+          -2,
+          1,
+          -2,
+          1,
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          1,
+          -2,
+          1,
+          -2,
+          1,
+          1
+        ]
+      ],
+      "steps": [
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "target_relator": [
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "target_rotation": [
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "pattern_length": 3,
+          "before_measure": 22,
+          "after_measure": 11
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "target_relator": [
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "target_rotation": [
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "pattern_length": 3,
+          "before_measure": 11,
+          "after_measure": 7
+        },
+        {
+          "operation": "eliminate",
+          "relator": [
+            -2,
+            1,
+            1
+          ],
+          "generator": 2,
+          "replacement": [
+            1,
+            1
+          ],
+          "before_measure": 7,
+          "after_measure": 2
+        }
+      ],
+      "active_generators": [
+        1
+      ],
+      "final_relators": [
+        [
+          -1,
+          -1
+        ]
+      ],
+      "original_generator_words": {
+        "1": [
+          1
+        ],
+        "2": [
+          1,
+          1
+        ]
+      },
+      "status": "EXACT_REWRITE_PROPOSAL",
+      "cyclic_order": 2
+    },
+    {
+      "name": "13n_4637",
+      "original_generator_names": [
+        7,
+        9
+      ],
+      "initial_canonical_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -2,
+          -2,
+          -1
+        ],
+        [
+          -2,
+          -2,
+          -1,
+          -2,
+          -1
+        ],
+        [
+          -2,
+          -1,
+          -2,
+          1
+        ]
+      ],
+      "steps": [
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -1
+          ],
+          "target_relator": [
+            -2,
+            -2,
+            -2,
+            -1,
+            -2,
+            -2,
+            -1
+          ],
+          "target_rotation": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -2,
+            -1,
+            -2
+          ],
+          "pattern_length": 3,
+          "before_measure": 16,
+          "after_measure": 9
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -1,
+            -2,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -1,
+            -2,
+            1
+          ],
+          "target_relator": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -1
+          ],
+          "target_rotation": [
+            -2,
+            -1,
+            -2,
+            -1,
+            -2
+          ],
+          "pattern_length": 3,
+          "before_measure": 9,
+          "after_measure": 7
+        },
+        {
+          "operation": "eliminate",
+          "relator": [
+            -2,
+            -1,
+            -1
+          ],
+          "generator": 2,
+          "replacement": [
+            -1,
+            -1
+          ],
+          "before_measure": 7,
+          "after_measure": 4
+        }
+      ],
+      "active_generators": [
+        1
+      ],
+      "final_relators": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "original_generator_words": {
+        "1": [
+          1
+        ],
+        "2": [
+          -1,
+          -1
+        ]
+      },
+      "status": "EXACT_REWRITE_PROPOSAL",
+      "cyclic_order": 4
+    }
+  ],
+  "input_sha256": {
+    "three_sheet_structural_plan.json": "9ebe311bc54aaef9aedec18cc56d36f52a168b44f136ce105436ffc07b5815cf",
+    "audit_three_sheet_structure.py": "8f12b63237672c00123e709bae9d09f3262af9f6b419e944ca931419f56f83b8",
+    "three_sheet_nonabelian_results.json": "a542b07fec8d73b6d2be21251fb977a3d41e175fff0c4601a5f3eee8d917c040"
+  }
+}

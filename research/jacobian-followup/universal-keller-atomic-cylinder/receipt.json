@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "result": "pass",
+  "check_count": 43,
+  "checks": [
+    "reuse one pure retained cubic source function",
+    "retained seed fixes origin",
+    "retained cubic seed determinant one",
+    "first-derivative normalization invertible",
+    "normalized seed derivative identity",
+    "normalized seed determinant one",
+    "constant-profile degree4 seed exact Jacobian",
+    "constant-profile inverse degree4 and linear coefficient",
+    "constant-profile degree6 seed exact Jacobian",
+    "constant-profile inverse degree6 and linear coefficient",
+    "dilation polynomial at zero parameter",
+    "zero parameter fibre exactly identity",
+    "full parameter-dependent Keller determinant",
+    "generic scaling identity",
+    "normalized seed exact triple collision",
+    "nonzero dilation exact triple collision",
+    "family1 exactly m distinct nonzero exceptional base points",
+    "family1 identity on every exceptional fibre",
+    "family1 nonzero generic scaling parameter",
+    "family2 exactly m distinct nonzero exceptional base points",
+    "family2 identity on every exceptional fibre",
+    "family2 nonzero generic scaling parameter",
+    "family4 exactly m distinct nonzero exceptional base points",
+    "family4 identity on every exceptional fibre",
+    "family4 nonzero generic scaling parameter",
+    "mixed base-vertical exact self-factorization",
+    "vertical logarithmic volume factor exactly one",
+    "mixed logarithmic volume factor exactly two",
+    "base double cover is noninjective",
+    "punctured square cover etale wherever u invertible",
+    "removed unramified source point over target one",
+    "completion has degree two",
+    "nonfinite punctured fibre has one of two completion points",
+    "local pin jacobian-followup/universal-keller-rigid-base-reduction/PROOF.md",
+    "local pin jacobian-followup/universal-keller-torus-receivers/PROOF.md",
+    "local pin jacobian-followup/universal-keller-torus-quotient-selfmaps/PROOF.md",
+    "local pin jacobian-followup/universal-keller-semilinear-spectrum/PROOF.md",
+    "local pin jacobian-followup/universal-keller-acyclic-boundary/PROOF.md",
+    "local pin archive/non-elliptic/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+    "local pin jacobian-followup/universal-keller-compression/verify.py",
+    "local pin jacobian-followup/universal-keller-structure/PROOF.md",
+    "primary pin sources/ax-1969.pdf",
+    "primary pin sources/stacks-02LQ.html"
+  ],
+  "dilation_controls": [
+    {
+      "m": 1,
+      "parameter": "t - 1",
+      "exceptional_base_points": [
+        1
+      ],
+      "special_vertical_degree": 1,
+      "generic_vertical_degree": 3,
+      "degree_assurance": "Generic degree and primitive monodromy transferred from retained UAM1 by the exact scaling identity; not newly inferred from a collision."
+    },
+    {
+      "m": 2,
+      "parameter": "(t - 2)*(t - 1)",
+      "exceptional_base_points": [
+        1,
+        2
+      ],
+      "special_vertical_degree": 1,
+      "generic_vertical_degree": 3,
+      "degree_assurance": "Generic degree and primitive monodromy transferred from retained UAM1 by the exact scaling identity; not newly inferred from a collision."
+    },
+    {
+      "m": 4,
+      "parameter": "(t - 4)*(t - 3)*(t - 2)*(t - 1)",
+      "exceptional_base_points": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "special_vertical_degree": 1,
+      "generic_vertical_degree": 3,
+      "degree_assurance": "Generic degree and primitive monodromy transferred from retained UAM1 by the exact scaling identity; not newly inferred from a collision."
+    }
+  ],
+  "mixed_control": {
+    "base_degree": 2,
+    "vertical_degree": 3,
+    "generic_degree": 6,
+    "explicit_self_factors": [
+      "(t,v)->(t,f_(t-1)(v))",
+      "(t,v)->(t^2,v)"
+    ],
+    "assurance": "Degree3 and primitive seed monodromy are retained written inputs; the composition and actual Jacobians/collisions are exact controls."
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "runtime_seconds": 0.864,
+  "sha256": {
+    "PROOF.md": "c5dad73958ebb2d7d32d528f73b3c0db7d8bc4ab2ef4627d2b7b01e2291e6c2e",
+    "LITERATURE_AND_GAPS.md": "29ea3fd9c2c31102248d89b383b822c0583185c300a21c76a12f365115d48e20",
+    "verify.py": "3b1e3d7f4059c09687d51b7a54212861a8b69fae55aff316769d191bb0c6edc3",
+    "sources.json": "aa246e8ea296a258c2b653b75560f6d33c5bf8869fd34bd3b15ec9f168efa259"
+  },
+  "assurance": "Exact normalized retained seed, symbolic parameter-dependent Jacobian, dilation conjugacy, actual collision and exceptional base-locus controls, mixed self-factorization and normal-completion toy. No formalization of Ax, Zariski Main, monodromy, atomicity, all-degree geometric reductions or relative descent. No independent whole-proof replay, external review or priority certificate."
+}

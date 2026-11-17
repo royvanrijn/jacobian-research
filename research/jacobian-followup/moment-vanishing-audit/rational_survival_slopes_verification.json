@@ -1,0 +1,190 @@
+{
+  "completed": true,
+  "kind": "exact transcription controls only",
+  "canonical_proof_sha256": "4a7d6bd50a5f789c27e75a9e54fd408ec83134eecb4545785328a58de0e45289",
+  "checker_sha256": "6ea95179cf29263ebd986ef97be6a70cff2e7dddd24323a497bfa6ee06409ff2",
+  "two_variable_controls": [
+    {
+      "N": 1,
+      "M": 1,
+      "rho": "1/2",
+      "indices": 80,
+      "max_error": "1/2"
+    },
+    {
+      "N": 2,
+      "M": 2,
+      "rho": "1",
+      "indices": 80,
+      "max_error": "1"
+    },
+    {
+      "N": 2,
+      "M": 3,
+      "rho": "6/5",
+      "indices": 80,
+      "max_error": "6/5"
+    },
+    {
+      "N": 3,
+      "M": 4,
+      "rho": "12/7",
+      "indices": 80,
+      "max_error": "12/7"
+    },
+    {
+      "N": 4,
+      "M": 5,
+      "rho": "20/9",
+      "indices": 80,
+      "max_error": "20/9"
+    },
+    {
+      "N": 7,
+      "M": 8,
+      "rho": "56/15",
+      "indices": 80,
+      "max_error": "56/15"
+    }
+  ],
+  "unary_unit_controls": [
+    {
+      "D": 1,
+      "r": 2,
+      "k": 1,
+      "tau": 2
+    },
+    {
+      "D": 1,
+      "r": 2,
+      "k": 2,
+      "tau": 4
+    },
+    {
+      "D": 1,
+      "r": 2,
+      "k": 3,
+      "tau": 6
+    },
+    {
+      "D": 1,
+      "r": 2,
+      "k": 4,
+      "tau": 8
+    },
+    {
+      "D": 2,
+      "r": 3,
+      "k": 1,
+      "tau": 2
+    },
+    {
+      "D": 2,
+      "r": 3,
+      "k": 2,
+      "tau": 3
+    },
+    {
+      "D": 2,
+      "r": 3,
+      "k": 3,
+      "tau": 5
+    },
+    {
+      "D": 2,
+      "r": 3,
+      "k": 4,
+      "tau": 6
+    },
+    {
+      "D": 3,
+      "r": 4,
+      "k": 1,
+      "tau": 2
+    },
+    {
+      "D": 3,
+      "r": 4,
+      "k": 2,
+      "tau": 3
+    },
+    {
+      "D": 3,
+      "r": 4,
+      "k": 3,
+      "tau": 4
+    },
+    {
+      "D": 3,
+      "r": 4,
+      "k": 4,
+      "tau": 6
+    },
+    {
+      "D": 5,
+      "r": 2,
+      "k": 1,
+      "tau": 1
+    },
+    {
+      "D": 5,
+      "r": 2,
+      "k": 2,
+      "tau": 1
+    },
+    {
+      "D": 5,
+      "r": 2,
+      "k": 3,
+      "tau": 2
+    },
+    {
+      "D": 5,
+      "r": 2,
+      "k": 4,
+      "tau": 2
+    }
+  ],
+  "retained_unsafe_pure_seed_controls": [
+    {
+      "k": 1,
+      "tau": 2
+    },
+    {
+      "k": 2,
+      "tau": 3
+    },
+    {
+      "k": 3,
+      "tau": 4
+    }
+  ],
+  "running_height_inverse_controls": [
+    {
+      "N": 1,
+      "M": 1,
+      "indices": 59
+    },
+    {
+      "N": 2,
+      "M": 3,
+      "indices": 59
+    },
+    {
+      "N": 3,
+      "M": 4,
+      "indices": 59
+    }
+  ],
+  "abstract_boundary_controls": [
+    "square indicator:bounded steps,parallel line offsets0/1;nonperiodicity is proved,not inferred from prefix",
+    "k squared:monotone polynomial curve with unbounded steps"
+  ],
+  "actual_module_and_Bernstein_import_verified_by": "retained and new written proofs;primary scope check",
+  "universal_branch_lattice_lemma_verified_by": "self-contained written proof,not these finite controls",
+  "original_unsuspended_height_bounded_error_claimed": false,
+  "eventual_periodicity_claimed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

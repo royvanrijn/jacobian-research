@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T09:40:10.448459+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UAPLANECHART1",
+    "UADANCHART1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAALLATOM1",
+    "UADANVOL1",
+    "UAETALEGAUGE1",
+    "UAGEOPIC1",
+    "UAINTERSURF1",
+    "UALOGVOL1",
+    "UARELPLANE1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UAPLANECHART1",
+    "UADANCHART1"
+  ],
+  "old_entry_count": 2560,
+  "new_entry_count": 2562,
+  "unchanged_existing_entry_count": 2552,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "d8906ee73077df6fd755595ea453d8db71a8aefdf348f3b9e62509efd4c4c5f0",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "47f7f91d6f850ba9",
+    "UAPLANECHART1": "1b37428de4f55c46",
+    "UADANCHART1": "6c1b96e57eab2fe4"
+  },
+  "updated_lessons": [
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "558d576de3c86296bc0eb2128e61343c82e43d2a0fd465965df6d40d18ae7226",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "Any proposed proper native intermediate plane chart containing the whole carried line; finite/formal standardization is not global chart algebraization.",
+    "Compatible Danielewski target atlases with an invertible chart restriction or a ruling-degree reduction reaching degree<=1.",
+    "Carried curves meeting at most one root component, and the sharp beta-integral contact family in EVERY exponent m>=2."
+  ],
+  "verification_design_note": "78 selected exact atlas, inverse, volume, Laurent compatibility, target-shear, nilpotent-neighborhood, sharp-contact and geometric collision controls accompany two written general arguments. The classical atlas and open-plane JC(2) reduction have explicit published precedent. Published line injectivity/rectification and section/formal-etale inputs are credited. No bounded experiment proves the general claims.",
+  "assurance": "Two written general claims with78 selected exact controls; no independent whole-proof replay, formal verification, external review or novelty certificate. JC(2), compatible nonautomorphic atlases, other carried embedded curves, actual whole factors, nonlinear integration and canonical absolute stable atomicity remain open."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS independent ternary reflection control",
+  "checks": {
+    "homogeneous_points_checked": 81,
+    "root_dimension": 4,
+    "linear_image_order": 24,
+    "translation_orbit_span": 3,
+    "affine_order_from_linear_copy_and_translation": 648,
+    "meridional_rank": 4,
+    "bridge_number": 4
+  },
+  "wrong_root_coefficient_rejected": true,
+  "input_sha256": {
+    "ternary_reflection_control.json": "d76fd1d72459b41ea2cba52172956659bb34618b7ae4b9e8a39952fbc97ac35a",
+    "verify_ternary_reflection_control.py": "e81787540e1aafd477ae0db66483c2c1a76ba33aee01d1963a3985dca5e5587f",
+    "verify_ternary_transvection_control.py": "f289f0b97ff61037ceeafc2022dd415c40e9f86e4554f365c0241a57b9eaf67b",
+    "ternary_transvection_control_verification.json": "2cd8b2728bc7a38ed22525be7edecb813ab5ae4f4b83e2bb9dd57cadb496c177"
+  }
+}

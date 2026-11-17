@@ -1,0 +1,92 @@
+{
+  "as_of": "2026-11-16",
+  "sources": [
+    {
+      "path": "../jc2-boundary-attachment/sources/borisov-stein-author.pdf",
+      "bytes": 320134,
+      "sha256": "dc63edc476dcd8f2b9b35329bc3bbb415bfb15496fb8fa384ff22cfae24271f4",
+      "title": "Alexander Borisov, author manuscript for On the Stein factorization of resolutions of two-dimensional Keller maps; Beitr.Algebra.Geom56(2015),299-312",
+      "url": "https://people.math.binghamton.edu/borisov/documents/papers/ampleramification.pdf",
+      "published_DOI": "10.1007/s13366-014-0208-4",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        3,
+        11,
+        12,
+        13
+      ],
+      "used_statement": "Full main Theorem(4)-(6) PDF/printed3: finite cyclic quotient points and normalized boundary map isomorphism absent Ai; otherwise punctured torus/power map with finite ramification at Ai. FullPDF11 Proposition3.3,PDF12 Theorem3.4 and fullPDF13 proof plus Theorem3.5 and its proof: normalized type3 map is linear or power, ramification only at intersections with other exceptional curves; quotient endpoint location is retained. This is stronger than abstract power form alone. Original finite affine target preserved. Published geometry imported, not independently reproved.",
+      "prior_HC4_power_map_use_credited": true,
+      "independent_whole_Borisov_proof": false
+    },
+    {
+      "path": "../jc2-omitted-divisors/sources/orevkov-three-sheeted-jc86.pdf",
+      "bytes": 163174,
+      "sha256": "f80d4a7d7e04987ce7dece58f33cff20ea9210183ca3ffd4488f39a2147532db",
+      "title": "S.Yu.Orevkov, On three-sheeted polynomial mappings of C2, Math.USSR.Izv29(1987),587-596; author translation jc86",
+      "url": "https://www.math.univ-toulouse.fr/~orevkov/jc86.pdf",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        7,
+        8,
+        9
+      ],
+      "used_statement": "FullPDF2 Lemma2.1 general linear endpoint chain. FullPDF7 Lemma4.2 Euler identity; fullPDF8 completion and finite Stein/model/minimality passage. FullPDF9 END-CHAIN complement group presentation: endpoint relation removed leaves Z, independent of local-degree equality. The final Lemma5.2 image-smoothness conclusion is NOT used without its equality hypothesis. Same original affine target and finite normalization. Uniformization/plane-knot consequence retained from PF2OMIT7.",
+      "no_unconditional_Lemma5_2_image_smoothness_import": true,
+      "independent_whole_Orevkov_proof": false
+    },
+    {
+      "path": "../hc4-triangular-graphs/sources/alok-one-dicritical-source-smoothness.md",
+      "bytes": 11256,
+      "sha256": "ff299e379ef19a39573c7376630efb7b5c306db71eb4315f44a311ffdc0e9142",
+      "source_kind": "retained attributed exploratory context, not a published theorem import",
+      "used_statement": "Section1.3-1.4 quadratic initials and nodal two-branch intersection mechanism reread. Credit retained. New proof supplies elementary coefficient reduction and convergent weighted normal form yielding LOCAL RESIDUE bound<=2. No blanket one-dicritical/smoothness conclusion from this note is imported."
+    },
+    {
+      "path": "../jc2-boundary-attachment/PROOF.md",
+      "bytes": 11414,
+      "sha256": "2cbbd8ead07f9e73f84b655940086369040cbcf55fc6578a5625744416ec6666",
+      "source_kind": "canonical retained scope/context",
+      "used_statement": "All boundary/source quantifiers retained; PF2BATT1/PF2OMIT7 topology and low-index proofs, PF2OMIT6 full all-prime residue budget, and prior HC4 Borisov power-map attribution were freshly read. No unrelated HC4 Weyl-module theorem is needed."
+    },
+    {
+      "path": "../jc2-omitted-divisors/SIMPLE_RAMIFICATION_AND_RADIAL.md",
+      "bytes": 11263,
+      "sha256": "cda57b2a8b40e2b0417c7908c36a85908e3071359df6b6f4611f2b53201c5011",
+      "source_kind": "canonical retained scope/context",
+      "used_statement": "All boundary/source quantifiers retained; PF2BATT1/PF2OMIT7 topology and low-index proofs, PF2OMIT6 full all-prime residue budget, and prior HC4 Borisov power-map attribution were freshly read. No unrelated HC4 Weyl-module theorem is needed."
+    },
+    {
+      "path": "../jc2-omitted-divisors/RESIDUE_LEDGER.md",
+      "bytes": 9598,
+      "sha256": "b0c207ffb6fe2736937cdabffb1fe5266f4f936143b2807dd571f431df08a8b9",
+      "source_kind": "canonical retained scope/context",
+      "used_statement": "All boundary/source quantifiers retained; PF2BATT1/PF2OMIT7 topology and low-index proofs, PF2OMIT6 full all-prime residue budget, and prior HC4 Borisov power-map attribution were freshly read. No unrelated HC4 Weyl-module theorem is needed."
+    },
+    {
+      "path": "../hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md",
+      "bytes": 10395,
+      "sha256": "10912b7d1074390c2a24ee9b2de6f498a8e6bbaf65d7304415a2cdc11d5f1174",
+      "source_kind": "canonical retained scope/context",
+      "used_statement": "All boundary/source quantifiers retained; PF2BATT1/PF2OMIT7 topology and low-index proofs, PF2OMIT6 full all-prime residue budget, and prior HC4 Borisov power-map attribution were freshly read. No unrelated HC4 Weyl-module theorem is needed."
+    }
+  ],
+  "imported_geometry": [
+    "Borisov global boundary, cyclic quotient points and LOCATION of normalized power ramification",
+    "Orevkov all-index endpoint chain and complement group Z, retained PF2OMIT7 uniformization/plane-knot criterion"
+  ],
+  "new_written_unbounded_proofs": [
+    "all-index corank-one integral coefficient and local residue1",
+    "Jacobian twice smooth branch, analytic Morse/relative monomial normalization and weighted leading orders bounding local residue<=2",
+    "singular e3 uniformization n*q<=2 gives A1 and normalized residue1, primitive image pair(a,2a-1) and localdegree2a",
+    "published power location plus local result gives all e<=3 residue1 in every fielddegree, all residue1 through8 and all-odd through10",
+    "PF104 natural8 normal-source closure at every length/parameter and any triple longitude joining in anydegree",
+    "genuine finite normal A1-quotient family with e=2s+1,f=s,degree4s\u00b2 and WRONG complement C*timesC"
+  ],
+  "smooth_f_greater1_exclusion_already_primary": true,
+  "prior_HC4_power_import_credited": true,
+  "new_all_indices_residue_one_claimed": false,
+  "source_finality_or_target_blowup_assumed": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true
+}

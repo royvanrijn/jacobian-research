@@ -1,0 +1,11 @@
+{
+  "status": "terminal",
+  "exit_code": 0,
+  "seconds": 0.008,
+  "time_budget_seconds": 40,
+  "unit_marker": true,
+  "certificate_complete": true,
+  "log_sha256": "4a263101d5983ca34d2c62daba8534ce723b3beb5437ffd688d04575cec30c2b",
+  "script_sha256": "e07bf11964bc40770f4ad4a0d06f76b4ea07b5b3a6dab751398d7f0fba8f6f4f",
+  "scope": "Primary exact computation only; requires independent certificate replay or actual positive-map verification."
+}

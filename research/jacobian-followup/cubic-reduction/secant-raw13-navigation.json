@@ -1,0 +1,22 @@
+{
+  "status": "unrelated-global-errors",
+  "checks": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "last_message": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "last_message": "AssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+    }
+  ],
+  "math_status_sha256": "d680a88c807f442fd770ab2a1482b8e3de2c81c8784c00ea8fca94911c50778b",
+  "scope": "Global navigation only; unrelated missing artifacts are not reconstructed."
+}

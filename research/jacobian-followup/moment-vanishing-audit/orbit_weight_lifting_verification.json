@@ -1,0 +1,163 @@
+{
+  "completed": true,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "1a1c1364b017400eedfe2c20236e91c5df73db924451b75545557f4bd9c79269",
+  "Smith_matrix_controls": [
+    {
+      "a": 1,
+      "determinant_one": true,
+      "regular_outer_factors": true
+    },
+    {
+      "a": 2,
+      "determinant_one": true,
+      "regular_outer_factors": true
+    },
+    {
+      "a": 5,
+      "determinant_one": true,
+      "regular_outer_factors": true
+    }
+  ],
+  "moving_right_factor_arc_limit_differs_from_constant_factor_cocharacter_limit_exact": true,
+  "negative_constant_weight_gives_unavoidable_pole_exact": true,
+  "affinely_independent_pure_weight_controls": [
+    {
+      "weights": [
+        [
+          2
+        ],
+        [
+          -4
+        ]
+      ],
+      "primitive_relation": [
+        2,
+        1
+      ],
+      "M": 3,
+      "zero_barycentric_face": false
+    },
+    {
+      "weights": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "primitive_relation": [
+        1,
+        1,
+        1
+      ],
+      "M": 3,
+      "zero_barycentric_face": false
+    },
+    {
+      "weights": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "primitive_relation": [
+        1,
+        0,
+        0
+      ],
+      "M": 1,
+      "zero_barycentric_face": true
+    }
+  ],
+  "two_dimensional_marker_shift_ray_exact": true,
+  "ordinary_balanced_pure_ideal_can_be_nonreduced_exact": true,
+  "actual_full_W8_opposite_charge_Haar_pure_and_marker_identities_exact": true,
+  "actual_balanced_Haar_first_moment": "8/15",
+  "zero_product_coefficient_ring_both_charge_blocks_nonzero_pure_control_exact": true,
+  "nilpotent_balanced_product_cutoff_controls": [
+    {
+      "positive_weight": 2,
+      "negative_magnitude": 4,
+      "nilpotence_assumed": 2,
+      "marker_degree": 5,
+      "sufficient_m_at_least": 9
+    },
+    {
+      "positive_weight": 8,
+      "negative_magnitude": 12,
+      "nilpotence_assumed": 3,
+      "marker_degree": 6,
+      "sufficient_m_at_least": 16
+    },
+    {
+      "positive_weight": 12,
+      "negative_magnitude": 20,
+      "nilpotence_assumed": 2,
+      "marker_degree": 0,
+      "sufficient_m_at_least": 16
+    }
+  ],
+  "three_weight_interval_countercontrol": [
+    {
+      "m": 1,
+      "pure": "0",
+      "marked": "1/2"
+    },
+    {
+      "m": 2,
+      "pure": "0",
+      "marked": "-1/3"
+    },
+    {
+      "m": 3,
+      "pure": "0",
+      "marked": "1/4"
+    },
+    {
+      "m": 4,
+      "pure": "0",
+      "marked": "-1/5"
+    },
+    {
+      "m": 5,
+      "pure": "0",
+      "marked": "1/6"
+    },
+    {
+      "m": 6,
+      "pure": "0",
+      "marked": "-1/7"
+    }
+  ],
+  "full_nonclosed_eventual_pure_sector": "exactly left-nullcone;ALL original markers safe with2m>degreeQ",
+  "general_lifting_scope": "ALL affinely independent torus supports,ALL torus ranks,ALL original markers,ordinary pure ideals and Q-algebras,assuming MZ on weight-zero algebra",
+  "full_two_weight_sector": "ALL degrees,ALL isotypic mixtures,ALL right multiplicities,ANY commutativeC-algebra",
+  "full_failure_necessary_scope": "closed finite-cyclic left orbit afterEVERY algebraic automorphism;at leastTHREE weights for every maximallefttorus;prior mixed,image-interior,strict-leading gates retained",
+  "automorphism_nullcone_saturation_proved_for_every_pure_phase": false,
+  "closed_orbit_or_two_sided_support_implies_failure": false,
+  "six_variable_prime_marker_imported_into_actual_exceptional_algebra": false,
+  "zero_weight_MZ_sufficient_for_arbitrary_weight_supports": false,
+  "universal_curve_Smith_orbit_and_weight_lifting_proofs_machine_verified": false,
+  "new_degree_support_density_or_prefix_campaign": false,
+  "external_review_next_task": false,
+  "main_finish_line": "COMPLETE exceptionalMZ theorem;currently OPEN on BOTH quotients",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

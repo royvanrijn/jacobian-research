@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-16",
+  "status": "exploratory_written_proofs_not_registry_promotion",
+  "user_constraint": "Do not message agents",
+  "agents_messaged": [],
+  "main_new_deductions": [
+    "Transitive affine transvection meridian directions must span F2^k.",
+    "With a common nondegenerate alternating form, k transvection meridians preserve a quadratic refinement; transitivity forces at least k+1.",
+    "General quadratic-refinement consistency is an exact linear system; actual transitivity forces a violating dependency.",
+    "No nontrivial right-finite-subgroup-invariant function on SL2 is an automorphism coordinate component, by Euler characteristic."
+  ],
+  "not_closed": [
+    "Full SL2/2O Mathieu-Zhao",
+    "Full SL2/2I Mathieu-Zhao",
+    "Keller full-sheet empty-fibre gate",
+    "Specialization-valid executable Gaussian coefficient-family producer"
+  ],
+  "source_status": [
+    {
+      "url": "https://www.math.purdue.edu/~walther/research/reg.pdf",
+      "sha256": "cbc952f088c88bd6b43b3d07706ef39a668c29a2eaa2ceb50dad853a5e4a31a7",
+      "scope": "Derived restriction strata are connections; holomorphic solution interpretation requires regularity; does not by itself identify polynomial Hom of Gaussian fibers."
+    },
+    {
+      "url": "https://www.math.purdue.edu/~walther/research/dexp.pdf",
+      "scope": "Examples and caveats for restriction stratification.",
+      "sha256": "50408079120f90cc3b46afeb3013dee0da2d749ab287f4e44a85daa5ecd5ad8c"
+    },
+    {
+      "url": "https://www.numdam.org/item/10.5802/jep.8.pdf",
+      "sha256": "ef4117e0cb90f732458d08fc6687a51cfcc2d9d47f4b5d8c6d7421ed52c37546",
+      "scope": "Elementary reduction for tame automorphisms, not arbitrary invariant functions."
+    },
+    {
+      "url": "https://github.com/alok/jacobian-two/blob/main/docs/s6-trace-curve-topology.md",
+      "scope": "Unreviewed public research notes; independent index proof used, exact Sage claims not replayed here."
+    },
+    {
+      "url": "https://github.com/alok/jacobian-two/blob/main/docs/s6-width-five-near-miss.md",
+      "scope": "One explicit curve reportedly has cyclic complement; not all width-five curves."
+    },
+    {
+      "url": "https://github.com/alok/jacobian-two/blob/main/docs/a6-multiplication-tensor.md",
+      "scope": "Trace form alone is insufficient; local associative models exist, global finite algebra unresolved."
+    },
+    {
+      "url": "https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs",
+      "scope": "Spherical classification does not apply to exceptional finite quotients; manuscript text checked."
+    },
+    {
+      "url": "https://arxiv.org/abs/2004.14872",
+      "scope": "Positive-definite coefficients, not arbitrary mixed complex phases."
+    },
+    {
+      "url": "https://arxiv.org/abs/1107.3029",
+      "scope": "Curve moment reduction already partly adopted; actual cycle identification still required."
+    },
+    {
+      "url": "https://arxiv.org/abs/1109.4286",
+      "scope": "Weight-graded boundary information does not determine the actual extension class."
+    }
+  ],
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "novelty_claim": false,
+    "public_complement_Sage_replay": false
+  },
+  "files": {
+    "proof": "BREAKTHROUGH_SEARCH_TOPOLOGICAL_COUPLING_2026_11_16.tex",
+    "checker": "check_topological_coupling_20261116.py"
+  },
+  "proof_sha256": "e41cd60f8e0c248b712551d8f98da07eb7cbdf9655feb94efc445c2776ce2221",
+  "latest_mathieu_update": "LOGARITHMIC_JETS_AND_SPARSE_ALL_RING_SAFETY.md: full four/six-weight all-degree all-ring safety; unrestricted support remains open"
+}

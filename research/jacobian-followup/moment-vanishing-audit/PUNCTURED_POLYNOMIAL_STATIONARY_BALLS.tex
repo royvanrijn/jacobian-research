@@ -1,0 +1,548 @@
+\documentclass[11pt]{article}
+\usepackage{microtype,amsmath,amssymb,amsthm,mathtools,booktabs,array}
+\usepackage[margin=1.05in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\usepackage{xcolor}
+\hypersetup{pdftitle={The dimension-degree boundary for Gaussian moment vanishing},pdfsubject={Working mathematical manuscript}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\E}{\mathbb E}
+\newcommand{\C}{\mathbb C}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\G}{\mathsf G}
+\DeclareMathOperator{\Span}{span}
+\title{Punctured polynomial phases and logarithmic Gaussian transport}
+\author{}\date{17 November 2026: retained written proof}
+\begin{document}\maketitle
+This is a written proof over a valued field, including arbitrary
+nonconvergent formal Laurent coefficients. It is not an all-ring
+statement. It gives an arbitrary-degree logarithmic-volume obstruction and
+its formal Gaussian transport. The polynomial-frame lemmas needed
+for the proof are written out below. Priority is unassessed;
+independent replay, machine-formal verification and external review
+are not claimed. No finite computation proves its completeness lemmas.
+
+\section{Gaussian conventions for the applications}
+Let $T$ be standard Gaussian and $Z,W$ circular coordinates with
+$\E[Z^iW^j]=\delta_{ij}i!$, independent of $T$. For a polynomial
+$P$, set $\Phi_Q=\sum_{m\geq0}\E[QP^m]t^m/m!$. Purity means
+$\Phi_1=1$; safety means every $\Phi_Q$ is a polynomial.
+These are formal series, without an integral-convergence hypothesis.
+Gaussian integration by parts is $\E[(\partial_T-T)H]=0$.
+
+For any polynomial $h(z,T)$, let $g=th(g,T)$ be the unique small
+formal solution. The exact circular identity is
+\[
+ \E_{Z,W}[A(Z,T)e^{tWh(Z,T)}]
+       =\frac{A(g,T)}{1-th_Z(g,T)}.
+\]
+Indeed the left side is $\sum_m t^m[z^m]A(z,T)h(z,T)^m$.
+It is the formal residue of $A(z,T)/(z-th(z,T))$, whose unique
+small pole is $g$. This also proves the identity for a
+$t$-dependent polynomial-coefficient formal numerator $A$.
+
+\section{The full formal frame and its Gaussian applications}
+\subsection{A formal leading-coefficient criterion}\label{sec:stationaryballs}
+
+For a polynomial phase, the remaining shrinking argument can be
+replaced by a valuation calculation. The construction below includes
+critical points that collide, remain multiple, or escape to infinity.
+The key is to group them before making a Gaussian approximation.
+
+Write $v$ for the valuation of a formal parameter $r$, normalized by
+$v(r)=1$. The valuation of a polynomial is the least valuation of its
+coefficients. We use the formal Newton--Puiseux theorem: finitely many
+algebraic elements over $\C((r))$ belong to one field
+$\C((r^{1/N}))$. Convergence is not required~\cite[Chapter~2]{Wall}.
+
+\begin{lemma}[Polynomial separation of formal balls]\label{lem:ballseparation}
+Let finitely many disjoint balls have centers $c_B$ in a Puiseux field
+and radii specified by $v(x-c_B)\geq\rho_B$. After one common
+ramification, put $\delta_B=r^{\rho_B}$. For any one ball $B$ and
+integer $j\geq0$, there is a polynomial $q_{B,j}(x)$ over the Laurent
+field whose substitution $x=c_C+\delta_C y$ has integral coefficients
+for every ball $C$, and whose reduction is $y^j$ on $B$ and zero on
+every other ball.
+\end{lemma}
+\begin{proof}
+The finitely many valuations $v(c_B-c_C)$ give a finite tree of
+clusters of centers. At a node with scale $r^d$, the coordinate
+$u=(x-c)/r^d$ has distinct constant reductions $a_1,\ldots,a_s$
+on its children. The Lagrange polynomial
+\[
+ e_i(u)=\prod_{k\ne i}\frac{u-a_k}{a_i-a_k}
+\]
+reduces to one on child $i$ and zero on every other child.
+
+Start at the chosen leaf with $((x-c_B)/\delta_B)^j$. Induct upward.
+Suppose a polynomial $h$ already has the required reductions on the
+chosen child. On each of the other child balls its coefficients have
+some finite lower valuation. The restriction of $e_i$ there has
+strictly positive valuation. Consequently $e_i^M h$, for a sufficiently
+large fixed integer $M$, has positive coefficient valuation on all
+those children. On the chosen child $e_i^M=1+$ positive-order terms,
+so the existing reductions are unchanged. There are finitely many
+nodes, and this constructs the required polynomial. A node with just
+one leaf requires no filter. This also explains why independently
+normalized Lagrange polynomials, with no control of their growth on
+other scales, would not suffice.
+\end{proof}
+
+\begin{theorem}[Formal stationary balls]\label{thm:stationaryballs}
+Let $\varphi(r,x)\in\C((r))[x]$ have degree $D\geq2$, and let
+$h(r)\in\C((r))\setminus\{0\}$. Put
+\[
+ M=\C((r))[x]/(\partial_x+\varphi_x)\C((r))[x],\qquad
+ \nabla[q]=[q_r+(\varphi_r+h'/h)q].
+\]
+After a finite ramification, this module has a full frame of rank-one
+formal exponential functionals. If $a_D$ is the leading coefficient
+of $\varphi$, every zero-exponential functional in this frame takes
+the seed $[1]$ to a series of valuation at least
+\begin{equation}\label{eq:valuationbound}
+ v(h)-\frac{v(a_D)}D.
+\end{equation}
+In particular, if $Dv(h)>v(a_D)$, the differential submodule generated
+by $[1]$ has no horizontal quotient taking $[1]$ to the constant one.
+\end{theorem}
+\begin{proof}
+The two twisted derivatives commute, so the parameter connection
+is well defined on the quotient. A nonzero polynomial of degree $m$
+has spatial twisted derivative of degree $m+D-1$. Reduction of
+successive leading terms therefore gives a basis
+$1,x,\ldots,x^{D-2}$ and dimension $D-1$.
+
+Split $\varphi_x$, retaining root multiplicities. For a critical root
+$\xi$, expand
+\[
+ \varphi(\xi+u)=c_\xi+\sum_{j=2}^D a_{\xi,j}u^j,
+ \qquad
+ \rho_\xi=\max_{2\leq j\leq D,\ a_{\xi,j}\ne0}
+                    \frac{-v(a_{\xi,j})}{j}.
+\]
+Enlarge the ramification so that all these scales are integral, and
+set $\delta_\xi=r^{\rho_\xi}$. The polynomial
+\[
+ \varphi(\xi+\delta_\xi y)-c_\xi
+\]
+has integral coefficients, no linear term, and at least one unit
+coefficient. Its reduction $F_\xi(y)$ has degree $d_\xi\geq2$.
+Here and below we may replace $r$ by a root of $r$ and renormalize
+the valuation; every displayed strict inequality is unchanged.
+As $a_{\xi,D}=a_D$,
+\begin{equation}\label{eq:balllower}
+ \rho_\xi\geq-v(a_D)/D.
+\end{equation}
+
+\emph{The balls partition all critical roots.}
+If another critical root $\zeta$ satisfies
+$v(\zeta-\xi)\geq\rho_\xi$, translate the integral scaled polynomial
+by $(\zeta-\xi)/\delta_\xi$. All its coefficients remain integral,
+and the coefficient of degree $d_\xi$ remains a unit: higher-degree
+terms have positive valuation. The linear term vanishes because
+$\zeta$ is critical. It follows from the definition of the maximum
+that $\rho_\zeta=\rho_\xi$. Thus their balls are identical.
+If two of the balls intersect, one contains the other; the same
+argument makes them identical. Otherwise they are disjoint.
+
+The scaled derivative has reduction $F_\xi'$ of degree $d_\xi-1$.
+It therefore has exactly $d_\xi-1$ integral roots, with multiplicity.
+Here is a direct check of that count: factor it in a Puiseux field.
+An integral root contributes a linear factor to the reduction;
+for a root of negative valuation, factor out that root and the
+remaining factor reduces to a constant. Multiplicativity of the
+coefficient valuation leaves a nonzero constant scalar. Hence the
+degree of the reduction counts exactly the integral roots.
+The ball $B$ thus contains $d_B-1$ critical roots. Since
+$\deg\varphi_x=D-1$,
+\begin{equation}\label{eq:ballrankcount}
+ \sum_B(d_B-1)=D-1.
+\end{equation}
+
+\emph{A functional for every dimension in a ball.}
+The fixed polynomial $F_B$ has twisted quotient
+\[
+ H_B=\C[y]/(\partial_y+F_B')\C[y]
+\]
+with basis $1,y,\ldots,y^{d_B-2}$. Let $\ell^0_{B,j}$ be its dual
+basis. Write
+\[
+ \varphi(\xi_B+\delta_B y)=c_B+F_B(y)+E_B(r,y),
+ \qquad E_B\in r\C[[r]][y].
+\]
+For a polynomial amplitude $q$ define
+\begin{equation}\label{eq:ballfunctional}
+ \ell_{B,j}(q)=h\delta_B e^{c_B}
+   \ell^0_{B,j}\!\left(e^{E_B(r,y)}q(\xi_B+\delta_B y)\right).
+\end{equation}
+Each coefficient uses finitely many polynomial terms. The exponential
+in this formula is purely formal. The product rule conjugates the
+spatial twisted derivative to $\partial_y+F_B'$, so the functional
+annihilates the defining relations of $M$.
+
+We spell out the parameter check because it retains the moving volume.
+At fixed $y$, put $w=\xi_B'+\delta_B'y$. Differentiating
+\eqref{eq:ballfunctional}, then subtracting its value on
+$q_r+(\varphi_r+h'/h)q$, leaves, inside the fixed functional,
+\[
+ e^{E_B}\left(wq_x+\frac{\delta_B'}{\delta_B}q+\varphi_xwq\right)
+ =\frac1{\delta_B}(\partial_y+F_B')
+                      \left(e^{E_B}wq\right).
+\]
+It is zero. Thus the functionals are horizontal, including the
+Jacobian $\delta_B$ and normalization $h$.
+
+\emph{Completeness, not just a rank count.}
+Choose the polynomials $q_{B,j}$ of
+Lemma~\ref{lem:ballseparation}, for $0\leq j<d_B-1$.
+Divide each evaluation column by its scalar $h\delta_Be^{c_B}$.
+The resulting matrix reduces to the identity: $E_B$ has positive
+order and the reductions of the amplitudes are the chosen monomials
+on one ball and zero elsewhere. The matrix is therefore invertible.
+Leading-degree reduction gives $\dim M=D-1$, so
+\eqref{eq:ballrankcount} accounts for the entire module.
+
+Remove from $c_B$ its finite negative-power part $q_B(r)$.
+The remaining exponential is an invertible formal power series,
+up to a nonzero constant. Formula~\eqref{eq:ballfunctional} and the
+invertible matrix give the asserted direct sum of rank-one factors
+$e^{q_B}$ times powers of $r$. If $q_B=0$, its value on the seed
+has valuation at least $v(h)+\rho_B$, proving
+\eqref{eq:valuationbound}.
+
+Finally, after ramification this is a semisimple differential module.
+A quotient on the submodule generated by the seed extends to the
+whole module. Nonzero exponential factors have no horizontal map
+to the Laurent field, because the logarithmic derivative of a
+Laurent series cannot be the derivative of a nonzero negative-power
+exponent. On the zero part, every horizontal functional is a
+constant combination of those in the full frame. If the bound is
+strictly positive, their seed values cannot sum to one.
+\end{proof}
+
+The construction is a formal stationary-phase argument. Its classical
+background includes Newton--Puiseux and the formal stationary-phase
+theory of exponential connections; Sabbah's local Fourier--Laplace
+formula is a primary reference for the latter~\cite{SabbahStationary}.
+We do not identify that formula's scope with the particular proof
+above or claim priority for this formulation. The proof here also
+allows nonconvergent formal Laurent coefficients. It uses a valued
+field, not an arbitrary coefficient ring.
+
+\begin{corollary}[Leading-coefficient obstruction]\label{cor:leadingobstruction}
+For a rational polynomial phase $\varphi(t,x)$ of degree $D\geq2$
+and nonzero rational scalar normalization $h(t)$, let $v_\infty$
+mean order at $\varepsilon=1/t=0$. If
+\begin{equation}\label{eq:leadingcriterion}
+ v_\infty(h^D/a_D)>0,
+\end{equation}
+its seed submodule cannot have a rational horizontal quotient with
+seed value one. In particular any horizontal formal functional at
+another point cannot take that seed to one.
+\end{corollary}
+\begin{proof}
+Apply the theorem at infinity. A rational horizontal quotient remains
+a quotient on extension to the formal Laurent field. A formal
+functional with seed value one restricts to such a rational quotient:
+its values on successive seed derivatives are $1,0,0,\ldots$.
+\end{proof}
+
+The inequality must be strict. For example
+$\varphi=-x^2/(2t^2)$ and $h=1/t$ have
+$v_\infty(h^2/a_2)=0$, and their normalized Gaussian period is a
+nonzero constant. Thus the earlier adverse scaling example is also
+an exact boundary test of the criterion.
+
+
+\subsection{A polynomial phase with logarithmic volume}\label{sec:puncturedpoly}
+
+The puncture itself can be retained in the formal construction when
+the phase is polynomial. This gives a stronger bound than the one for
+$dx$: logarithmic volume does not change under a scaling of $x$.
+
+\begin{theorem}\label{thm:puncturedpoly}
+Let $K=\C((r))$, $\varphi\in K[x]$, and $h\in K\setminus\{0\}$.
+On
+\[
+ H=K[x,x^{-1}]/(x\partial_x+x\varphi_x)K[x,x^{-1}],\qquad
+ \nabla[q]=[q_r+(\varphi_r+h'/h)q],
+\]
+there is, after finite ramification, a full frame of rank-one formal
+exponential functionals. Every zero-exponential functional in this
+frame has seed value of valuation at least $v(h)$. Thus if $v(h)>0$,
+the differential seed submodule has no horizontal quotient taking
+$[1]$ to one. This includes a constant phase.
+\end{theorem}
+\begin{proof}
+Write $D=\deg\varphi$, taking $D=0$ for a constant phase, including
+zero. If $D\geq1$, the quotient has basis
+$1,x,\ldots,x^{D-1}$. Indeed, on a negative monomial the lowest term
+of $x\partial_x+x\varphi_x$ is its nonzero integer exponent times
+that monomial. This eliminates all negative powers without introducing
+lower ones. On polynomials, successive leading terms eliminate all
+degrees at least $D$. Conversely an exact polynomial cannot come
+from a Laurent polynomial with a negative lowest term, and a nonzero
+polynomial preimage of degree $m$ has exact degree $m+D$.
+This proves independence. For $D=0$, the quotient of $x\partial_x$
+has the single basis element $1$.
+
+Use the critical balls constructed in Theorem~\ref{thm:stationaryballs}.
+At most one contains the origin. Every other ball has
+$\rho_B>v(\xi_B)$, so $\gamma_B=\delta_B/\xi_B$ has positive
+valuation. With the same $c_B,F_B,E_B$ and fixed functionals as before,
+the local logarithmic functionals are
+\begin{equation}\label{eq:puncturedaway}
+ q\longmapsto h e^{c_B}\frac{\delta_B}{\xi_B}
+  \ell^0_{B,j}\!\left(
+      \frac{e^{E_B}q(\xi_B+\delta_B y)}{1+\gamma_B y}\right).
+\end{equation}
+The geometric denominator and all negative powers in $q$ expand
+coefficientwise because $v(\gamma_B)>0$. Every coefficient is a
+polynomial in $y$. The normalized logarithmic Jacobian is
+$dx/x=\delta_B\,dy/(\xi_B+\delta_B y)$.
+
+We retain the puncture in a separate central ball. If a critical
+ball contains zero, write it as $v(x)\geq\rho_0$ and put
+$\delta_0=r^{\rho_0}$. Translation within that ball gives
+\[
+ \varphi(\delta_0 y)=c_0+F_0(y)+E_0(r,y),\qquad
+ c_0=\varphi(0),\quad E_0\in r\C[[r]][y],\quad F_0(0)=0.
+\]
+Here $d_0=\deg F_0\geq2$, and the ball contains $d_0-1$
+critical roots with multiplicity. If no critical ball contains zero,
+choose $\rho_0$ sufficiently large that the central ball is disjoint
+from all critical balls and every nonconstant coefficient of
+$\varphi(\delta_0 y)$ has positive valuation. Then $F_0=0$.
+Such a choice exists: there are finitely many roots and coefficients.
+This also handles $D\leq1$ without any critical balls.
+
+For $d_0\geq2$, the fixed punctured quotient
+\[
+ H_0=\C[y,y^{-1}]/(y\partial_y+yF_0')\C[y,y^{-1}]
+\]
+has basis $1,y,\ldots,y^{d_0-1}$, by the same reduction argument.
+For $F_0=0$, it has basis $1$ and dual functional the constant term.
+For each element $\lambda_j$ of the dual basis define
+\begin{equation}\label{eq:puncturedcentral}
+ q\longmapsto h e^{c_0}\lambda_j
+                   \!\left(e^{E_0}q(\delta_0 y)\right).
+\end{equation}
+There is no factor $\delta_0$: $dx/x=dy/y$. Each coefficient is
+a Laurent polynomial, so the expression is well defined.
+
+We check both identities, including parameter dependence. Spatial
+exactness in the central ball is conjugation by $e^{E_0}$ of
+$y\partial_y+yF_0'$. The derivative discrepancy is
+$\delta_0'/\delta_0$ times the same exact expression applied to
+$e^{E_0}q$. On an outside ball put $x=\xi_B+\delta_B y$ and
+$w=\xi_B'+\delta_B'y$. After removing $h e^{c_B}$, the derivative
+discrepancy in \eqref{eq:puncturedaway} is
+\[
+ e^{E_B}\left[
+   \left(\frac{\delta_B'}x-\frac{\delta_B w}{x^2}\right)q
+        +\frac{\delta_B w}x(q_x+\varphi_xq)\right]
+ = (\partial_y+F_B')\left(e^{E_B}\frac wxq\right).
+\]
+It is annihilated by $\ell^0_{B,j}$. The identical product rule
+proves spatial exactness there. Thus every displayed functional is
+horizontal for the stated connection.
+
+Completeness follows from polynomial separation of these disjoint
+balls, not merely their number. For the central ball use the monomials
+of the basis of $H_0$; for each outside ball use
+$1,\ldots,y^{d_B-2}$. Lemma~\ref{lem:ballseparation} gives polynomial
+amplitudes with exactly these reductions on their own ball and zero
+on the others. Normalize the central columns by $h e^{c_0}$ and
+the outside columns by $h e^{c_B}\delta_B/\xi_B$. Their matrix
+reduces to the identity. If the central ball contains critical roots,
+it contributes their multiplicity plus one; otherwise it contributes
+one. Together with all outside roots this gives $D$ dimensions for
+$D\geq1$, or one for $D=0$, the full quotient rank.
+
+As in Theorem~\ref{thm:stationaryballs}, this frame is a direct sum
+of rank-one exponential factors after ramification. For a zero factor,
+\eqref{eq:puncturedcentral} has seed valuation at least $v(h)$;
+\eqref{eq:puncturedaway} has valuation at least
+$v(h)+\rho_B-v(\xi_B)>v(h)$. Semisimplicity now extends a quotient
+of the differential seed submodule to the full module. Nonzero
+exponential factors cannot map horizontally to the Laurent field.
+A constant combination of the zero-factor seed values cannot be
+one if $v(h)>0$.
+\end{proof}
+
+\begin{remark}[Why two irregular ends require another argument]
+For $\varphi=r(x+x^{-1})$ and $h=1$, put $\theta=r\partial_r$.
+Every logarithmic period satisfies
+\[
+ (\theta^2-4r^2)I=0.
+\]
+Indeed $y=x+x^{-1}$ and $z=x-x^{-1}$ obey
+$(x\partial_x+x\varphi_x)z=y+rz^2$ and $y^2-z^2=4$.
+These identities give the equation by integration by parts.
+The quotient has rank two, and $[1],[y]$ are independent:
+its basis is $x^{-1},1$ and $[y]=2[x^{-1}]$.
+
+An explicit formal basis of scalar solutions is
+\[
+ I=\sum_{n\geq0}\frac{r^{2n}}{(n!)^2},\qquad
+ J=I\log r-\sum_{n\geq1}\frac{H_n r^{2n}}{(n!)^2},
+ \quad H_n=\sum_{j=1}^n\frac1j.
+\]
+The coefficient recurrence $n^2a_n=a_{n-1}$ proves the first
+equation; $H_n-H_{n-1}=1/n$ proves the second.
+Their $\theta$-Wronskian is one: its derivative is zero by the
+equation and its constant term is one. Thus the logarithm is a full
+rank-two phenomenon, with nontrivial unipotent monodromy that no
+finite ramification removes. These are the familiar modified Bessel
+solutions; see~\cite[10.25.1, 10.31.2]{DLMF}.
+This example does not refute the desired logarithmic bound:
+multiplication by $h=r$ makes both seed values tend to zero.
+It does refute an extension of the semisimple polynomial-frame theorem
+to all Laurent phases. The remaining proof must allow such extensions.
+\end{remark}
+
+The residue dimension at the puncture is essential. Dropping it would
+give rank $D-1$ instead of $D$ and an incomplete frame. This theorem
+still permits nonconvergent formal coefficients, but is a valued-field
+statement. It does not cover a phase with both positive and negative
+powers of $x$.
+
+\begin{corollary}\label{cor:oneend}
+Suppose $\varphi(t,x)$ is rational in $t$ and polynomial either in
+$x$ or in $x^{-1}$. For the logarithmic-volume connection normalized
+by $h=1/t$, no horizontal formal functional at another point can have
+seed value one.
+\end{corollary}
+\begin{proof}
+For a polynomial in $x$, apply Theorem~\ref{thm:puncturedpoly} at
+$r=1/t=0$, where $v(h)=1$. The rational seed restriction is justified
+as in Corollary~\ref{cor:leadingobstruction}. For a polynomial in
+$x^{-1}$ use $y=1/x$; $dx/x=-dy/y$ only changes a constant factor.
+\end{proof}
+
+\section{Logarithmic Gaussian charts}
+Let $h(Z,T)=a+bZ+cT+dZ^2+eZT+fT^2$ and
+$\Delta=e^2-4df\ne0$, and let $P=Wh(Z,T)+G(Z,T)$ with
+arbitrary polynomial $G$. The coordinate charts below and their
+formal transport retain the actual small circular fixed point.
+\subsection{The logarithmic branch, including its removed component}
+
+For $\Delta\ne0$, $f\ne0$, choose $\eta^2=\Delta$ and set
+\[
+ \rho=\frac{e+\eta}{2f},\quad \sigma=\frac{e-\eta}{2f},\quad
+ u=\frac{\rho c-b+1/t}{\eta},\quad
+ v=\frac{b-1/t-\sigma c}{\eta},\quad k=uv-a/f.
+\]
+On the circular constraint $z=th(z,T)$, put
+$x=T+\rho z+u$, so that $T+\sigma z+v=k/x$. Then
+\[
+ z=\frac f\eta(x-k/x-u+v),\quad T=x-u-\rho z,
+ \qquad
+ \frac{dT}{1-th_Z}=\frac{dx}{t\eta x}.
+\]
+The coefficient of $t^{-2}$ in $k$ is $-1/\eta^2$, so the conic
+is generically smooth. The exponent $tG(z,T)-T^2/2$ is Laurent
+polynomial in $x$. On the formal Gaussian branch,
+$x=1/(\eta t)+O(1)$, which makes every Laurent power legitimate.
+
+If $f=0$, then $e\ne0$. Put $z_0=-c/e$ and $x=z-z_0$. With
+$A(z)=a+bz+dz^2$, the constraint gives
+\[
+ T=\frac{z/t-A(z)}{ex},\qquad
+ \frac{dT}{1-th_Z}=\frac{dx}{tex}.
+\]
+This localization is valid if $c\ne0$, or if $c=0$ and $a\ne0$.
+If $a=c=0$, the chosen fixed point is instead $g=0$ identically;
+inverting $g$ would discard the very branch being tested. In that
+case the exact unit series is
+\[
+ \E_T\left[\frac{e^{tG(0,T)}}{1-t(b+eT)}\right].
+\]
+Use $x=T-(1/t-b)/e$, now a valid Laurent unit. Its volume is
+$-dx/(tex)$ and its exponent is polynomial in $x$. These formulas
+cover both the smooth conic and the removed-component branch.
+We next connect these coordinates to the formal Gaussian functional.
+This will close every one-ended phase without an analytic estimate.
+
+\begin{lemma}[Formal logarithmic transport]\label{lem:logtransport}
+In each of the three charts above, write $X=X(t,T)$ for the formal
+coordinate, $D$ for the displayed circular denominator, and $B$ for
+$tG(g,T)$ or $tG(0,T)$ on the removed component. Put
+$\kappa=\eta,e,-e$, respectively. Then
+\[
+ J(q)=\E_T\!\left[\frac{q(X)e^B}{D}\right]
+\]
+is horizontal on the logarithmic twisted quotient with phase
+$\varphi$ and normalization $h=1/t$, and $J(1)=\Phi_1$.
+\end{lemma}
+\begin{proof}
+All Laurent powers of $X$ are legitimate by the unit checks above.
+The coordinate identities give
+\[
+ X_T=t\kappa X/D,\qquad
+ \varphi(t,X)=B-T^2/2.
+\]
+Consequently Gaussian integration by parts gives
+$J((x\partial_x+x\varphi_x)q)=0$: the corresponding integrand,
+multiplied by $t\kappa$, is
+$(\partial_T-T)\{q(X)e^B\}$.
+
+For parameter horizontality set $w=1/D$ and $R=X_t/X_T$.
+Differentiating $w=X_T/(t\kappa X)$ gives the exact identity
+\[
+ w_t+w/t=\partial_T(wR).
+\]
+Subtracting $J(q_t+(\varphi_t-1/t)q)$ from $\partial_tJ(q)$ now
+gives the Gaussian expectation of
+$(\partial_T-T)\{wR q(X)e^B\}$, hence zero. These are formal
+coefficientwise identities, without an integral-convergence hypothesis.
+The seed equality is the circular contraction formula.
+\end{proof}
+
+\begin{proposition}\label{prop:oneendgaussian}
+Every chart above whose actual Laurent phase has at most one
+irregular end is not pure. The removed-component branch
+$a=c=f=0$, $e\ne0$, is therefore excluded for every polynomial $G$,
+without a degree bound.
+\end{proposition}
+\begin{proof}
+At most one irregular end means that $\varphi$ is polynomial in
+$x$ or in $x^{-1}$, including the constant case. Purity would give
+the horizontal functional in Lemma~\ref{lem:logtransport} seed value
+one, contrary to Corollary~\ref{cor:oneend}. The removed-component
+phase is always polynomial in $x$, irrespective of $\deg G$.
+\end{proof}
+
+Thus only phases with genuinely nonzero positive and negative Laurent
+orders remain in the logarithmic estimate. Their coefficient
+specializations must be judged using the actual orders, not generic
+ones. The formal proof above does not establish a spanning flat cut
+family for two irregular ends.
+
+
+\begin{thebibliography}{9}
+\bibitem{SabbahStationary}
+C.~Sabbah, \emph{An explicit stationary phase formula for the local
+formal Fourier--Laplace transform}, in \emph{Singularities I},
+Contemporary Mathematics \textbf{474}, American Mathematical Society,
+2008, 309--330;
+\href{https://arxiv.org/abs/0706.3570v2}{arXiv:0706.3570v2}.
+
+\bibitem{Wall}
+C.~T.~C.~Wall, \emph{Singular Points of Plane Curves}, Cambridge
+University Press, 2004, Chapter~2, 15--38,
+\href{https://doi.org/10.1017/CBO9780511617560.003}{doi:10.1017/CBO9780511617560.003}.
+
+\bibitem{DLMF}
+NIST Digital Library of Mathematical Functions,
+\href{https://dlmf.nist.gov/10.25.E1}{10.25.1} and
+\href{https://dlmf.nist.gov/10.31.E2}{10.31.2},
+modified Bessel equation and logarithmic power series.
+
+\end{thebibliography}
+\end{document}

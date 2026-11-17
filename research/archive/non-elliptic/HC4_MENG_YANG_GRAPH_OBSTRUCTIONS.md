@@ -1,5 +1,49 @@
 # Affine and polynomial-graph obstructions for the Meng--Yang `HC(5)` family
 
+> **Critical-component closure:** [HC4MYGR0/1/2/3](../../jacobian-followup/hc4-triangular-graphs/CRITICAL_COMPONENTS.md)
+> proves invertibility after all retained-dual automorphisms for every
+> nonlinear y=R(x,p) whose boundary has a simple zero, with no degree
+> bound. Reducible critical schemes forbid unit Hessian. The entire
+> opposite x=a(y)p+b(y) class with a(0) nonzero is also excluded,
+> including the previous matching-critical-determinant control.
+> Tang, plane affine-line rectification and line injectivity are explicit
+> retained inputs; no generic rational curve replaces an actual A1 component.
+
+> **Relative critical-locus closure:** [HC4MYGK0/1/2](../../jacobian-followup/hc4-triangular-graphs/RELATIVE_CRITICAL_LOCUS.md)
+> forbids unit Hessian for every y=a(x)p+b(x), a nonzero polynomial,
+> after arbitrary retained-three-dual automorphisms over K[x]. The proof
+> uses exact critical values and rational orders at infinity, without
+> a coefficient bound or Tang. General y=R(x,p) has an explicit whole
+> critical-curve determinant gate; passing one component or exchanging
+> the base coordinates does not prove unit Hessian or the same closure.
+
+> **Nonlinear base-only parameters:** [HC4MYGU0/1/2/3](../../jacobian-followup/hc4-triangular-graphs/RELATIVE_COORDINATE_ENDPOINT.md)
+> forbids unit Hessian for every zero boundary slice, even after arbitrary
+> retained-dual substitutions. Every base-only graph avoiding the origin
+> is a relative coordinate; unit Hessian after retained-dual automorphisms
+> is exactly existence of a plane Keller pair generating (1). One fixed
+> graph x=1 realizes the entire endpoint with genuine polynomial inverses.
+> The omitted-point existence problem is unresolved and distinct from
+> the existing singleton-zero properness problem.
+
+> **Latest native-chart closure:** [HC4MYGB0/1/2](../../jacobian-followup/hc4-triangular-graphs/BASE_ELIMINATED_GRAPHS.md)
+> closes x=R(y,p,q,r) and y=R(x,p,q,r) in every degree, completing all
+> five native coordinate-elimination graph charts. A complete boundary
+> affine-direction classification handles both base charts; the residual
+> y equation has an uncancellable highest coefficient in every positive
+> transverse degree. Nonlinear reparameterizations of these two charts,
+> the nonlinear p singleton-zero endpoint and genuine base/dual mixing
+> remain outside this closure.
+
+> **Latest 14 November 2026:** [HC4MYGL1/2](../../jacobian-followup/hc4-triangular-graphs/CRITICAL_COORDINATE_JET.md)
+> closes both q and r charts under all polynomial base and relative dual
+> automorphisms. A critical-coordinate first jet gives an injective line
+> for the residual Keller pair; Tang and Gwozdziewicz are explicit inputs.
+> Thus general q reparameterizations preserving this fibration are no
+> longer an open gate. The nonlinear p chart remains exactly the existing
+> singleton-zero properness problem, with its fixed degree-six graph
+> realization. Base-eliminated charts and nonlinear base/dual mixing remain.
+
 > **13 November 2026 update:** the [all-degree polynomial-graph theorem](../../jacobian-followup/hc4-polynomial-graphs/README.md)
 > (`HC4MYGAP1`, `HC4MYGALL1`) closes the complete standard graph
 > collision route in every degree. A fixed-slice and polynomial-degree
@@ -37,6 +81,22 @@
 > Its plane classification combines the generic-coordinate trace with a
 > Hamiltonian pencil and the classical Rentschler criterion. Nonlinear base
 > changes, other graph charts and uncovered embeddings remain separate.
+>
+> The [rational-curve extension](../../jacobian-followup/hc4-triangular-graphs/CURVE_TRACE.md)
+> (`HC4MYGC1/2/3`) now includes arbitrary polynomial base automorphisms
+> in the r chart and closes the standard p-graph chart, including relative
+> affine dual changes. Its nonlinear-dual p-chart case is reduced to the
+> globally affine-dual Keller endpoint. The q chart remains open; the exact
+> identity (A_q,B_q)=(x,y) prevents a graph-independent base-curve transfer.
+>
+> The [square-axis theorem](../../jacobian-followup/hc4-triangular-graphs/Q_GRAPH_SQUARE_AXIS.md)
+> (`HC4MYGQ1/2`) now closes native q graphs in all degrees, including the
+> stated relative affine dual and y-affine base extensions. Thus all three
+> native dual-elimination charts are closed as gradient-counterexample
+> routes. The [fixed-graph realization](../../jacobian-followup/hc4-triangular-graphs/P_GRAPH_SINGLETON_ENDPOINT.md)
+> (`HC4MYGP1`) identifies the entire nonlinear-dual p route with the existing
+> singleton-zero properness problem; a single degree-six graph with explicit
+> polynomial parameter inverse realizes the full oriented row orbit.
 
 ## Status
 

@@ -1,5 +1,13 @@
 # The bidegree-\((3,3)\) Rodrigues survivor
 
+Current local refinement,16 November2026: the
+[full coefficient-space theorem](../../../jacobian-followup/moment-vanishing-audit/RODRIGUES_FINITE_JETS_AND_FULL_LOCAL_RIGIDITY.md)
+isolates the Rodrigues orbit as the entire reduced local pure locus
+using moments1..12. Its full-space transverse first-twelve algebra has
+length22/index10. Section5 below retains the different length-five
+scheme from moments through11 on a normalized null-quadratic chart;
+these scheme lengths are not identified.
+
 ## 1. Statement and status
 
 Use the contraction pairs \((W,Z),(V,Y)\), and put

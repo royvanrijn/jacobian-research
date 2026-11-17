@@ -1,0 +1,13 @@
+{
+  "scope": "Explicit axis and origin primary ideals from proved weighted and ordinary high-degree truncations; full decomposition follows from the written support and grading proof.",
+  "wall_limit_seconds": 50,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": true,
+  "exit_code": -9,
+  "completed": false,
+  "input_sha256": "e68ff6f09935086d1755ff440f41ebd5ba9f6f09942163ad2ed5f71d8e627458",
+  "log_sha256": "aee20cdc7f17db387aa3fcd1383c7d591e27d03a8540a20fa69da2561180a691",
+  "elapsed_seconds": 50.00492360701901,
+  "stdout_tail": "AXIS_PRIMARY_START\n"
+}

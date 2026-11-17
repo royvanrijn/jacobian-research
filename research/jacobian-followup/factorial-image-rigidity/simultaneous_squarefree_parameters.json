@@ -1,0 +1,129 @@
+{
+  "nu1": {
+    "numerator": 1,
+    "denominator": 100000
+  },
+  "nu2": {
+    "numerator": 3,
+    "denominator": 20
+  },
+  "eta": {
+    "numerator": 1,
+    "denominator": 150
+  },
+  "rho": {
+    "numerator": 1,
+    "denominator": 10
+  },
+  "delta": {
+    "numerator": 1,
+    "denominator": 2000
+  },
+  "rho1_strict_lower": {
+    "numerator": 1,
+    "denominator": 9
+  },
+  "J_MR": 1,
+  "M_power": {
+    "numerator": 1,
+    "denominator": 16
+  },
+  "H_power": {
+    "numerator": 1,
+    "denominator": 5
+  },
+  "P1_power": {
+    "numerator": 1,
+    "denominator": 100000000
+  },
+  "middle_interval_power_squared": {
+    "numerator": 3,
+    "denominator": 2000000
+  },
+  "source_P1_log_power": {
+    "numerator": 300,
+    "denominator": 1
+  },
+  "dense_error_log_power": {
+    "numerator": 1,
+    "denominator": 120
+  },
+  "sqrt_nu1_over_nu2_squared": {
+    "numerator": 1,
+    "denominator": 15000
+  },
+  "sqrt_ratio_strict_upper": {
+    "numerator": 49,
+    "denominator": 6000
+  },
+  "sieve_complement_upper": {
+    "numerator": 13,
+    "denominator": 625
+  },
+  "total_loss_upper": {
+    "numerator": 109,
+    "denominator": 5000
+  },
+  "e_strict_upper": {
+    "numerator": 8877691,
+    "denominator": 3265920
+  },
+  "e_comparison": {
+    "numerator": 2719,
+    "denominator": 1000
+  },
+  "exp_one_twentieth_strict_upper": {
+    "numerator": 20,
+    "denominator": 19
+  },
+  "Delta_strict_lower": {
+    "numerator": 1,
+    "denominator": 20
+  },
+  "witness_margin_strict_lower": {
+    "numerator": 141,
+    "denominator": 5000
+  },
+  "usable_offset_fraction": {
+    "numerator": 1,
+    "denominator": 50
+  },
+  "dense_first_saving": {
+    "numerator": 33,
+    "denominator": 10000000000
+  },
+  "dense_second_saving": {
+    "numerator": 1,
+    "denominator": 200000000000000000
+  },
+  "incidence_error_power": {
+    "numerator": 159,
+    "denominator": 160
+  },
+  "final_epsilon": {
+    "numerator": 1,
+    "denominator": 1000000000000000000
+  },
+  "J_density_log_argument": {
+    "numerator": 32,
+    "denominator": 21
+  },
+  "smooth_complement_log_argument": {
+    "numerator": 32,
+    "denominator": 17
+  },
+  "margin_log_argument": {
+    "numerator": 1024,
+    "denominator": 357
+  },
+  "published_2016_first_saving": {
+    "numerator": 1,
+    "denominator": 12500
+  },
+  "analytic_exception_multiplied_by_M": false,
+  "numeric_starting_threshold_extracted": false,
+  "power_saving_input": "MR II arXiv2007.04290v1 Theorem9.2(ii), dense; preprint",
+  "log_saving_input": "published MR2016 Theorem1; independent of MR II",
+  "preprint_Theorem1_7_advertised_exponent_used": false,
+  "Section10_sparse_sieve_used": false
+}

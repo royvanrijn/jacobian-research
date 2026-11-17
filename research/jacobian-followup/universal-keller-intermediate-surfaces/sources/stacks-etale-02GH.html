@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 29.37 (02GH): Étale morphisms&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELP" data-tag="0ELP">2</a>: Schemes
+    
+  
+    <li>Chapter <a href="/tag/01QL" data-tag="01QL">29</a>: Morphisms of Schemes
+    
+  
+    <li class="active">Section <a href="/tag/02GH" data-tag="02GH">29.37</a>: Étale morphisms
+    <span id="citation">(<a href="/tag/02GH/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/02G3">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/01VG">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="morphisms-section-etale" class="tex-section"><span data-tag="02GH">29.37</span> Étale morphisms</h2>
+
+<p>
+The Zariski topology of a scheme is a very coarse topology. This is particularly clear when looking at varieties over $\mathbf{C}$. It turns out that declaring an étale morphism to be the analogue of a local isomorphism in topology introduces a much finer topology. On varieties over $\mathbf{C}$ this topology gives rise to the “correct” Betti numbers when computing cohomology with finite coefficients. Another observable is that if $f : X \to Y$ is an étale morphism of varieties over $\mathbf{C}$, and if $x$ is a closed point of $X$, then $f$ induces an isomorphism $\mathcal{O}^{\wedge }_{Y, f(x)} \to \mathcal{O}^{\wedge }_{X, x}$ of complete local rings. 
+</p>
+<p>
+In this section we start our study of these matters. In fact we deliberately restrict our discussion to a minimum since we will discuss more interesting results elsewhere. Recall that a ring map $R \to A$ is said to be <em>étale</em> if it is smooth and $\Omega _{A/R} = 0$, see Algebra, Definition <a href="/tag/00U1" data-tag="00U1">10.143.1</a>. 
+</p>
+<p>
+<article class="env-definition" id="02GI">
+  <p><a class="environment-identifier" href="/tag/02GI">Definition <span data-tag="02GI">29.37.1</span>.</a> Let $f : X \to S$ be a morphism of schemes. </p>
+  <p><ol>
+  <li><p>
+We say that $f$ is <em>étale at $x \in X$</em> if there exists an affine open neighbourhood $\mathop{\mathrm{Spec}}(A) = U \subset X$ of $x$ and affine open $\mathop{\mathrm{Spec}}(R) = V \subset S$ with $f(U) \subset V$ such that the induced ring map $R \to A$ is étale. 
+</p>
+</li><li><p>
+We say that $f$ is <em>étale</em> if it is étale at every point of $X$. 
+</p>
+</li><li><p>
+A morphism of affine schemes $f : X \to S$ is called <em>standard étale</em> if $X \to S$ is isomorphic to 
+</p>
+<div class="equation">
+  \[  \mathop{\mathrm{Spec}}(R[x]_ h/(g)) \to \mathop{\mathrm{Spec}}(R)  \]
+</div>
+<p>
+ where $R \to R[x]_ h/(g)$ is a standard étale ring map, see Algebra, Definition <a href="/tag/00UB" data-tag="00UB">10.144.1</a>, i.e., $g$ is monic and $g'$ invertible in $R[x]_ h/(g)$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+A morphism is étale if and only if it is smooth of relative dimension $0$ (see Definition <a href="/tag/02G2" data-tag="02G2">29.35.13</a>). A pleasing feature of the definition is that the set of points where a morphism is étale is automatically open. 
+</p>
+<p>
+Note that there is no separation or quasi-compactness hypotheses in the definition. Hence the question of being étale is local in nature on the source. Here is the precise result. 
+</p>
+<p>
+<article class="env-lemma" id="02GJ">
+  <p><a class="environment-identifier" href="/tag/02GJ">Lemma <span data-tag="02GJ">29.37.2</span>.</a> Let $f : X \to S$ be a morphism of schemes. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is étale. 
+</p>
+</li><li><p>
+For every affine opens $U \subset X$, $V \subset S$ with $f(U) \subset V$ the ring map $\mathcal{O}_ S(V) \to \mathcal{O}_ X(U)$ is étale. 
+</p>
+</li><li><p>
+There exists an open covering $S = \bigcup _{j \in J} V_ j$ and open coverings $f^{-1}(V_ j) = \bigcup _{i \in I_ j} U_ i$ such that each of the morphisms $U_ i \to V_ j$, $j\in J, i\in I_ j$ is étale. 
+</p>
+</li><li><p>
+There exists an affine open covering $S = \bigcup _{j \in J} V_ j$ and affine open coverings $f^{-1}(V_ j) = \bigcup _{i \in I_ j} U_ i$ such that the ring map $\mathcal{O}_ S(V_ j) \to \mathcal{O}_ X(U_ i)$ is étale, for all $j\in J, i\in I_ j$. 
+</p>
+</li>
+</ol></p>
+  <p> Moreover, if $f$ is étale then for any open subschemes $U \subset X$, $V \subset S$ with $f(U) \subset V$ the restriction $f|_ U : U \to V$ is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This follows from Lemma <a href="/tag/01ST" data-tag="01ST">29.14.3</a> if we show that the property “$R \to A$ is étale” is local. We check conditions (a), (b) and (c) of Definition <a href="/tag/01SR" data-tag="01SR">29.14.1</a>. These all follow from Algebra, Lemma <a href="/tag/00U2" data-tag="00U2">10.143.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GN">
+  <p><a class="environment-identifier" href="/tag/02GN">Lemma <span data-tag="02GN">29.37.3</span>.</a> The composition of two morphisms which are étale is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      In the proof of Lemma <a href="/tag/02GJ" data-tag="02GJ">29.37.2</a> we saw that being étale is a local property of ring maps. Hence the first statement of the lemma follows from Lemma <a href="/tag/01SV" data-tag="01SV">29.14.5</a> combined with the fact that being étale is a property of ring maps that is stable under composition, see Algebra, Lemma <a href="/tag/00U2" data-tag="00U2">10.143.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GO">
+  <p><a class="environment-identifier" href="/tag/02GO">Lemma <span data-tag="02GO">29.37.4</span>.</a> The base change of a morphism which is étale is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      In the proof of Lemma <a href="/tag/02GJ" data-tag="02GJ">29.37.2</a> we saw that being étale is a local property of ring maps. Hence the lemma follows from Lemma <a href="/tag/01SV" data-tag="01SV">29.14.5</a> combined with the fact that being étale is a property of ring maps that is stable under base change, see Algebra, Lemma <a href="/tag/00U2" data-tag="00U2">10.143.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GK">
+  <p><a class="environment-identifier" href="/tag/02GK">Lemma <span data-tag="02GK">29.37.5</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$. Then $f$ is étale at $x$ if and only if $f$ is smooth and unramified at $x$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This follows immediately from the definitions. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="03WS">
+  <p><a class="environment-identifier" href="/tag/03WS">Lemma <span data-tag="03WS">29.37.6</span>.</a> An étale morphism is locally quasi-finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Lemma <a href="/tag/02GK" data-tag="02GK">29.37.5</a> an étale morphism is unramified. By Lemma <a href="/tag/02V5" data-tag="02V5">29.36.10</a> an unramified morphism is locally quasi-finite. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GL"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Description of the étale schemes over fields and fibres of étale morphisms. '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/02GL">Lemma <span data-tag="02GL">29.37.7</span>.</a> Fibres of étale morphisms. </p>
+  <p><ol>
+  <li><p>
+Let $X$ be a scheme over a field $k$. The structure morphism $X \to \mathop{\mathrm{Spec}}(k)$ is étale if and only if $X$ is a disjoint union of spectra of finite separable field extensions of $k$. 
+</p>
+</li><li><p>
+If $f : X \to S$ is an étale morphism, then for every $s \in S$ the fibre $X_ s$ is a disjoint union of spectra of finite separable field extensions of $\kappa (s)$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      You can deduce this from Lemma <a href="/tag/02G7" data-tag="02G7">29.36.11</a> via Lemma <a href="/tag/02GK" data-tag="02GK">29.37.5</a> above. Here is a direct proof. 
+    <p>
+      We will use Algebra, Lemma <a href="/tag/00U3" data-tag="00U3">10.143.4</a>. Hence it is clear that if $X$ is a disjoint union of spectra of finite separable field extensions of $k$ then $X \to \mathop{\mathrm{Spec}}(k)$ is étale. Conversely, suppose that $X \to \mathop{\mathrm{Spec}}(k)$ is étale. Then for any affine open $U \subset X$ we see that $U$ is a finite disjoint union of spectra of finite separable field extensions of $k$. Hence all points of $X$ are closed points (see Lemma <a href="/tag/01TE" data-tag="01TE">29.21.2</a> for example). Thus $X$ is a discrete space and we win. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+The following lemma characterizes an étale morphism as a flat, finitely presented morphism with “étale fibres”. 
+</p>
+<p>
+<article class="env-lemma" id="02GM">
+  <p><a class="environment-identifier" href="/tag/02GM">Lemma <span data-tag="02GM">29.37.8</span>.</a> Let $f : X \to S$ be a morphism of schemes. If $f$ is flat, locally of finite presentation, and for every $s \in S$ the fibre $X_ s$ is a disjoint union of spectra of finite separable field extensions of $\kappa (s)$, then $f$ is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      You can deduce this from Algebra, Lemma <a href="/tag/00U6" data-tag="00U6">10.143.7</a>. Here is another proof. 
+    <p>
+      By Lemma <a href="/tag/02GL" data-tag="02GL">29.37.7</a> a fibre $X_ s$ is étale and hence smooth over $s$. By Lemma <a href="/tag/01V8" data-tag="01V8">29.35.3</a> we see that $X \to S$ is smooth. By Lemma <a href="/tag/02G8" data-tag="02G8">29.36.12</a> we see that $f$ is unramified. We conclude by Lemma <a href="/tag/02GK" data-tag="02GK">29.37.5</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GP">
+  <p><a class="environment-identifier" href="/tag/02GP">Lemma <span data-tag="02GP">29.37.9</span>.</a> Any open immersion is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is true because an open immersion is a local isomorphism. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GQ">
+  <p><a class="environment-identifier" href="/tag/02GQ">Lemma <span data-tag="02GQ">29.37.10</span>.</a> An étale morphism is syntomic. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Algebra, Lemma <a href="/tag/00TA" data-tag="00TA">10.137.9</a> and use that an étale morphism is the same as a smooth morphism of relative dimension $0$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GR">
+  <p><a class="environment-identifier" href="/tag/02GR">Lemma <span data-tag="02GR">29.37.11</span>.</a> An étale morphism is locally of finite presentation. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      True because an étale ring map is of finite presentation by definition. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GS">
+  <p><a class="environment-identifier" href="/tag/02GS">Lemma <span data-tag="02GS">29.37.12</span>.</a> An étale morphism is flat. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Combine Lemmas <a href="/tag/01UL" data-tag="01UL">29.31.7</a> and <a href="/tag/02GQ" data-tag="02GQ">29.37.10</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="03WT">
+  <p><a class="environment-identifier" href="/tag/03WT">Lemma <span data-tag="03WT">29.37.13</span>.</a> An étale morphism is open. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Combine Lemmas <a href="/tag/02GS" data-tag="02GS">29.37.12</a>, <a href="/tag/02GR" data-tag="02GR">29.37.11</a>, and <a href="/tag/01UA" data-tag="01UA">29.26.10</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+The following lemma says locally any étale morphism is standard étale. This is actually kind of a tricky result to prove in complete generality. The tricky parts are hidden in the chapter on commutative algebra. Hence a standard étale morphism is a <em>local model</em> for a general étale morphism. 
+</p>
+<p>
+<article class="env-lemma" id="02GT">
+  <p><a class="environment-identifier" href="/tag/02GT">Lemma <span data-tag="02GT">29.37.14</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$ be a point. Let $V \subset S$ be an affine open neighbourhood of $f(x)$. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is étale at $x$. 
+</p>
+</li><li><p>
+There exist an affine open $U \subset X$ with $x \in U$ and $f(U) \subset V$ such that the induced morphism $f|_ U : U \to V$ is standard étale (see Definition <a href="/tag/02GI" data-tag="02GI">29.37.1</a>). 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the definitions and Algebra, Proposition <a href="/tag/00UE" data-tag="00UE">10.144.4</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Here is a differential criterion of étaleness at a point. There are many variants of this result all of which may be useful at some point. We will just add them here as needed. 
+</p>
+<p>
+<article class="env-lemma" id="02GU">
+  <p><a class="environment-identifier" href="/tag/02GU">Lemma <span data-tag="02GU">29.37.15</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$. Set $s = f(x)$. Assume $f$ is locally of finite presentation. The following are equivalent: </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is étale at $x$. 
+</p>
+</li><li><p>
+The local ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat and $X_ s \to \mathop{\mathrm{Spec}}(\kappa (s))$ is étale at $x$. 
+</p>
+</li><li><p>
+The local ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat and $X_ s \to \mathop{\mathrm{Spec}}(\kappa (s))$ is unramified at $x$. 
+</p>
+</li><li><p>
+The local ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat and the $\mathcal{O}_{X, x}$-module $\Omega _{X/S, x}$ is zero. 
+</p>
+</li><li><p>
+The local ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat and the $\kappa (x)$-vector space 
+</p>
+<div class="equation">
+  \[  \Omega _{X_ s/s, x} \otimes _{\mathcal{O}_{X_ s, x}} \kappa (x) = \Omega _{X/S, x} \otimes _{\mathcal{O}_{X, x}} \kappa (x)  \]
+</div>
+<p>
+ is zero. 
+</p>
+</li><li><p>
+The local ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat, we have $\mathfrak m_ s\mathcal{O}_{X, x} = \mathfrak m_ x$ and the field extension $\kappa (x)/\kappa (s)$ is finite separable. 
+</p>
+</li><li><p>
+There exist affine opens $U \subset X$, and $V \subset S$ such that $x \in U$, $f(U) \subset V$ and the induced morphism $f|_ U : U \to V$ is standard smooth of relative dimension $0$. 
+</p>
+</li><li><p>
+There exist affine opens $\mathop{\mathrm{Spec}}(A) = U \subset X$ and $\mathop{\mathrm{Spec}}(R) = V \subset S$ with $x \in U$ corresponding to $\mathfrak q \subset A$, and $f(U) \subset V$ such that there exists a presentation 
+</p>
+<div class="equation">
+  \[  A = R[x_1, \ldots , x_ n]/(f_1, \ldots , f_ n)  \]
+</div>
+<p>
+ with 
+</p>
+<div class="equation">
+  \[  g = \det \left( \begin{matrix}  \partial f_1/\partial x_1 
+
+&  \partial f_2/\partial x_1 
+
+&  \ldots 
+
+&  \partial f_ n/\partial x_1 
+
+\\  \partial f_1/\partial x_2 
+
+&  \partial f_2/\partial x_2 
+
+&  \ldots 
+
+&  \partial f_ n/\partial x_2 
+
+\\  \ldots 
+
+&  \ldots 
+
+&  \ldots 
+
+&  \ldots 
+
+\\  \partial f_1/\partial x_ n 
+
+&  \partial f_2/\partial x_ n 
+
+&  \ldots 
+
+&  \partial f_ n/\partial x_ n 
+
+\end{matrix} \right)  \]
+</div>
+<p>
+ mapping to an element of $A$ not in $\mathfrak q$. 
+</p>
+</li><li><p>
+There exist affine opens $U \subset X$, and $V \subset S$ such that $x \in U$, $f(U) \subset V$ and the induced morphism $f|_ U : U \to V$ is standard étale. 
+</p>
+</li><li><p>
+There exist affine opens $\mathop{\mathrm{Spec}}(A) = U \subset X$ and $\mathop{\mathrm{Spec}}(R) = V \subset S$ with $x \in U$ corresponding to $\mathfrak q \subset A$, and $f(U) \subset V$ such that there exists a presentation 
+</p>
+<div class="equation">
+  \[  A = R[x]_ Q/(P) = R[x, 1/Q]/(P)  \]
+</div>
+<p>
+ with $P, Q \in R[x]$, $P$ monic and $P' = \text{d}P/\text{d}x$ mapping to an element of $A$ not in $\mathfrak q$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Use Lemma <a href="/tag/02GT" data-tag="02GT">29.37.14</a> and the definitions to see that (1) implies all of the other conditions. For each of the conditions (2) – (10) combine Lemmas <a href="/tag/01V9" data-tag="01V9">29.35.14</a> and <a href="/tag/02GF" data-tag="02GF">29.36.14</a> to see that (1) holds by showing $f$ is both smooth and unramified at $x$ and applying Lemma <a href="/tag/02GK" data-tag="02GK">29.37.5</a>. Some details omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GV">
+  <p><a class="environment-identifier" href="/tag/02GV">Lemma <span data-tag="02GV">29.37.16</span>.</a> A morphism is étale at a point if and only if it is flat and G-unramified at that point. A morphism is étale if and only if it is flat and G-unramified. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is clear from Lemmas <a href="/tag/02GU" data-tag="02GU">29.37.15</a> and <a href="/tag/02GF" data-tag="02GF">29.36.14</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0476">
+  <p><a class="environment-identifier" href="/tag/0476">Lemma <span data-tag="0476">29.37.17</span>.</a> Let </p>
+  <div class="equation">
+  \[  \xymatrix{ X' \ar[r]_{g'} \ar[d]_{f'} &  X \ar[d]^ f \\  S' \ar[r]^ g &  S }  \]
+</div>
+  <p> be a cartesian diagram of schemes. Let $W \subset X$, resp. $W' \subset X'$ be the open subscheme of points where $f$, resp. $f'$ is étale. Then $W' = (g')^{-1}(W)$ if </p>
+  <p><ol>
+  <li><p>
+$f$ is flat and locally of finite presentation, or 
+</p>
+</li><li><p>
+$f$ is locally of finite presentation and $g$ is flat. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Assume first that $f$ locally of finite type. Consider the set 
+    <p>
+      <div class="equation">
+  \[  T = \{ x \in X \mid f\text{ is unramified at }x\}   \]
+</div>
+    <p>
+       and the corresponding set $T' \subset X'$ for $f'$. Then $T' = (g')^{-1}(T)$ by Lemma <a href="/tag/0475" data-tag="0475">29.36.15</a>. 
+    <p>
+      Thus case (1) follows because in case (1) $T$ is the (open) set of points where $f$ is étale by Lemma <a href="/tag/02GV" data-tag="02GV">29.37.16</a>. 
+    <p>
+      In case (2) let $x' \in W'$. Then $g'$ is flat at $x'$ (Lemma <a href="/tag/01U8" data-tag="01U8">29.26.7</a>) and $g \circ f'$ is flat at $x'$ (Lemma <a href="/tag/01U6" data-tag="01U6">29.26.5</a>). It follows that $f$ is flat at $x = g'(x')$ by Lemma <a href="/tag/02JZ" data-tag="02JZ">29.26.13</a>. On the other hand, since $x' \in T'$ (Lemma <a href="/tag/01VB" data-tag="01VB">29.35.5</a>) we see that $x \in T$. Hence $f$ is étale at $x$ by Lemma <a href="/tag/02GU" data-tag="02GU">29.37.15</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0HB1"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-info" data-toggle="popover" title="Reference" data-html="true" data-content=' See for example <span class="cite">[<span class="postnote">Remark 18.30 (2).</span>, <a href="/bibliography/GWII">GWII</a>]</span>. '>reference</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/0HB1">Lemma <span data-tag="0HB1">29.37.18</span>.</a> Let $f : X \to Y$ be a morphism of schemes over $S$. If $X$ is étale over $S$ and $Y$ is unramified over $S$, then $f$ is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Consider the factorization $X \to X \times _ S Y \to Y$, where the first arrow is given by $\text{id}_ X$ and $f$ and the second arrow is the projection. We claim both arrows are étale and hence $f$ is étale by Lemma <a href="/tag/02GN" data-tag="02GN">29.37.3</a>. Namely, the projection is étale as it is the base change of $X \to S$, see Lemma <a href="/tag/02GO" data-tag="02GO">29.37.4</a>. The first arrow is the base change of the diagonal morphism $Y \to Y \times _ S Y$ because the square 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ X \ar[d] \ar[r] &  X \times _ S Y \ar[d] \\  Y \ar[r] &  Y \times _ S Y }  \]
+</div>
+    <p>
+       is cartesian. The diagonal $Y \to Y \times _ S Y$ is an open immersion by Lemma <a href="/tag/02GE" data-tag="02GE">29.36.13</a>. The base change of an open immersion is an open immersion (Schemes, Lemma <a href="/tag/01JY" data-tag="01JY">26.18.2</a>) and an open immersion is étale (Lemma <a href="/tag/02GP" data-tag="02GP">29.37.9</a>). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02GW"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Cancellation law for étale morphisms '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/02GW">Lemma <span data-tag="02GW">29.37.19</span>.</a> Let $f : X \to Y$ be a morphism of schemes over $S$. If $X$ and $Y$ are étale over $S$, then $f$ is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Since $Y \to S$ is unramified by Lemma <a href="/tag/02GK" data-tag="02GK">29.37.5</a> we may apply Lemma <a href="/tag/0HB1" data-tag="0HB1">29.37.18</a>. See also Algebra, Lemma <a href="/tag/00U7" data-tag="00U7">10.143.8</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02K6">
+  <p><a class="environment-identifier" href="/tag/02K6">Lemma <span data-tag="02K6">29.37.20</span>.</a> Let </p>
+  <div class="equation">
+  \[  \xymatrix{ X \ar[rr]_ f \ar[rd]_ p &  &  Y \ar[dl]^ q \\  &  S }  \]
+</div>
+  <p> be a commutative diagram of morphisms of schemes. Assume that </p>
+  <p><ol>
+  <li><p>
+$f$ is surjective, and étale, 
+</p>
+</li><li><p>
+$p$ is étale, and 
+</p>
+</li><li><p>
+$q$ is locally of finite presentation<a class="footnotemark footnote-offset" href="#footnote-1" id="footnote-1-mark"></a><a href="#footnote-1"><sup>1</sup></a>. 
+</p>
+</li>
+</ol></p>
+  <p> Then $q$ is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Lemma <a href="/tag/02K5" data-tag="02K5">29.35.19</a> we see that $q$ is smooth. Thus we only need to see that $q$ has relative dimension $0$. This follows from Lemma <a href="/tag/02JS" data-tag="02JS">29.29.2</a> and the fact that $f$ and $p$ have relative dimension $0$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+A final characterization of smooth morphisms is that a smooth morphism $f : X \to S$ is locally the composition of an étale morphism by a projection $\mathbf{A}_ S^ d \to S$. 
+</p>
+<p>
+<article class="env-lemma" id="054L"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Smooth schemes are étale-locally like affine spaces. '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/054L">Lemma <span data-tag="054L">29.37.21</span>.</a> Let $\varphi : X \to Y$ be a morphism of schemes. Let $x \in X$. Let $V \subset Y$ be an affine open neighbourhood of $\varphi (x)$. If $\varphi $ is smooth at $x$, then there exists an integer $d \geq 0$ and an affine open $U \subset X$ with $x \in U$ and $\varphi (U) \subset V$ such that there exists a commutative diagram </p>
+  <div class="equation">
+  \[  \xymatrix{ X \ar[d] &  U \ar[l] \ar[d] \ar[r]_-\pi &  \mathbf{A}^ d_ V \ar[ld] \\  Y &  V \ar[l] }  \]
+</div>
+  <p> where $\pi $ is étale. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Lemma <a href="/tag/01V7" data-tag="01V7">29.35.11</a> we can find an affine open $U$ as in the lemma such that $\varphi |_ U : U \to V$ is standard smooth. Write $U = \mathop{\mathrm{Spec}}(A)$ and $V = \mathop{\mathrm{Spec}}(R)$ so that we can write 
+    <p>
+      <div class="equation">
+  \[  A = R[x_1, \ldots , x_ n]/(f_1, \ldots , f_ c)  \]
+</div>
+    <p>
+       with 
+    <p>
+      <div class="equation">
+  \[  g = \det \left( \begin{matrix}  \partial f_1/\partial x_1 
+
+&  \partial f_2/\partial x_1 
+
+&  \ldots 
+
+&  \partial f_ c/\partial x_1 
+
+\\  \partial f_1/\partial x_2 
+
+&  \partial f_2/\partial x_2 
+
+&  \ldots 
+
+&  \partial f_ c/\partial x_2 
+
+\\  \ldots 
+
+&  \ldots 
+
+&  \ldots 
+
+&  \ldots 
+
+\\  \partial f_1/\partial x_ c 
+
+&  \partial f_2/\partial x_ c 
+
+&  \ldots 
+
+&  \partial f_ c/\partial x_ c 
+
+\end{matrix} \right)  \]
+</div>
+    <p>
+       mapping to an invertible element of $A$. Then it is clear that $R[x_{c + 1}, \ldots , x_ n] \to A$ is standard smooth of relative dimension $0$. Hence it is smooth of relative dimension $0$. In other words the ring map $R[x_{c + 1}, \ldots , x_ n] \to A$ is étale. As $\mathbf{A}^{n - c}_ V = \mathop{\mathrm{Spec}}(R[x_{c + 1}, \ldots , x_ n])$ the lemma with $d = n - c$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+    <section id="footnotes">
+    
+      <div><a id="footnote-1" class="footnote-offset"></a><a href="#footnote-1-mark">[1]</a> In fact this is implied by (1) and (2), see Descent, Lemma <a href="/tag/02KL" data-tag="02KL">35.14.3</a>. Moreover, it suffices to assume that $f$ is surjective, flat and locally of finite presentation, see Descent, Lemma <a href="/tag/05B5" data-tag="05B5">35.14.5</a>.</div>
+    
+    </section>
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (3)</h2>
+
+  
+    <a id="comment-5503" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/02GH#comment-5503">Comment #5503</a>
+        by
+        <cite>Thor Wittich</cite>
+        on <time datetime="2020-09-12 17:53:48.673316">September 12, 2020 at 17:53 </time>
+      </header>
+
+      <blockquote><p>I might be wrong but I think condition (8) in 02GU does only characterize smoothness at the point x. There should also be something like "relative dimension zero" there.</p></blockquote>
+    </article>
+  
+    <a id="comment-5507" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/02GH#comment-5507">Comment #5507</a>
+        by
+        <cite>Manuel Hoff</cite>
+        on <time datetime="2020-09-16 07:58:08.314811">September 16, 2020 at 07:58 </time>
+      </header>
+
+      <blockquote><p>@Thor Wittich: The characterisation is correct like this. The "relative dimension 0"-part is encoded by the matrix being a square matrix (i.e. the number of variables is equal to the number of polynomials that are quotiened out).</p></blockquote>
+    </article>
+  
+    <a id="comment-5515" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/02GH#comment-5515">Comment #5515</a>
+        by
+        <cite>Thor Wittich</cite>
+        on <time datetime="2020-09-22 03:05:24.026537">September 22, 2020 at 03:05 </time>
+      </header>
+
+      <blockquote><p>@Manuel Hoff You are totally right. I was just blind. Thanks!</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-02GH",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">02GH</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="02GH"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">02GH</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/02G3">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/01VG">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/morphisms.pdf#nameddest=02GH">View Section <span data-tag="02GH">29.37</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

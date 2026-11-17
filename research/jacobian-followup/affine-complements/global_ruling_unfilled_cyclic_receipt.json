@@ -1,0 +1,2136 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 427,
+  "checks": [
+    "predecessor PASS nonunimodular_a4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json verify_nonunimodular_a4.py",
+    "sealed predecessor nonunimodular_a4_receipt.json NONUNIMODULAR_A4_CAPS_AND_THREE_TERMINAL_PAIRS.md",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/nonunimodular-a4/manifest.json",
+    "sealed predecessor nonunimodular_a4_receipt.json unimodular_initial_s4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "predecessor PASS cyclic_pattern_a4_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json verify_cyclic_pattern_a4.py",
+    "sealed predecessor cyclic_pattern_a4_receipt.json CYCLIC_PATTERN_MARK_TRANSFER_AND_A4_REDUCTION.md",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/cyclic-pattern-a4/manifest.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json meridian_cycle_s4_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "predecessor PASS meridian_balance_two_stage_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json verify_meridian_balance_two_stage.py",
+    "sealed predecessor meridian_balance_two_stage_receipt.json MERIDIAN_BALANCE_AND_GENERAL_TWO_STAGE_CLOSURE.md",
+    "sealed predecessor meridian_balance_two_stage_receipt.json sources/meridian-balance-two-stage/manifest.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json verify_general_two_stage.py",
+    "sealed predecessor meridian_balance_two_stage_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json rational_end_orderability_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor meridian_balance_two_stage_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor meridian_balance_two_stage_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "predecessor PASS iterated_peripheral_tail_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json verify_iterated_peripheral_tail.py",
+    "sealed predecessor iterated_peripheral_tail_receipt.json ITERATED_PERIPHERAL_STATES_AND_ABSORBING_TAILS.md",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/iterated-peripheral-tail/manifest.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json rational_end_orderability_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "predecessor PASS persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json verify_persistent_jsj_terminal_modulus.py",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json PERSISTENT_ROOTED_JSJ_AND_TERMINAL_MODULUS.md",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/persistent-jsj-terminal-modulus/manifest.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS lifted_surface_s3_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json verify_lifted_surface_s3.py",
+    "sealed predecessor lifted_surface_s3_receipt.json LIFTED_SURFACE_BALANCES_AND_S3_MARKED_LINKING.md",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/lifted-surface-s3/manifest.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS common_pencil_mark_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json verify_common_pencil_mark.py",
+    "sealed predecessor common_pencil_mark_receipt.json COMMON_PENCIL_GRAM_MARK_AND_ALL_ODD_EXCLUSION.md",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/manifest.json",
+    "sealed predecessor common_pencil_mark_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5H.html",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5R.html",
+    "predecessor PASS complementary_corner_jsj_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor complementary_corner_jsj_receipt.json COMPLEMENTARY_CORNER_AND_BOUNDARY_JSJ_ENDPOINT.md",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/complementary-corner-jsj/manifest.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json regular_quartic_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_trefoil_complementary_fusion.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json TREFOIL_CAPS_AND_COMPLEMENTARY_FIBRE_FUSION.md",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/trefoil-complementary-fusion/manifest.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "retained exact primary pin hatcher-3M.pdf",
+    "retained exact primary pin waldhausen-1968.pdf",
+    "retained exact primary pin neumann-raymond-1978.pdf",
+    "retained exact primary pin hillman-sakuma-1997.pdf",
+    "retained exact primary pin clay-watson-2011v1.pdf",
+    "retained exact primary pin rasmussen-1511.04413v3.pdf",
+    "retained exact primary pin nemethi-1510.07128v1.pdf",
+    "retained exact primary pin dubouloz-kishimoto-1212.0521v1.html",
+    "retained exact primary pin dihedral-linking-2112.14790v2.html",
+    "retained exact primary pin ni-wu-1205.7053.html",
+    "retained exact primary pin rasmussen-rasmussen-1508.05900.html",
+    "two explicit new primary Floer imports and no old gluing conjecture",
+    "UNFILLED outer meridian exact integral relation (2, 3, 2)",
+    "UNFILLED inner longitude exact integral relation (2, 3, 2)",
+    "UNFILLED full free2 plus branched module (2, 3, 2)",
+    "UNFILLED actual mi lo primitive integral splitting (2, 3, 2)",
+    "UNFILLED outer meridian exact integral relation (2, 5, 6)",
+    "UNFILLED inner longitude exact integral relation (2, 5, 6)",
+    "UNFILLED full free2 plus branched module (2, 5, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (2, 5, 6)",
+    "UNFILLED outer meridian exact integral relation (2, 5, 3)",
+    "UNFILLED inner longitude exact integral relation (2, 5, 3)",
+    "UNFILLED full free2 plus branched module (2, 5, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (2, 5, 3)",
+    "UNFILLED outer meridian exact integral relation (2, 7, 6)",
+    "UNFILLED inner longitude exact integral relation (2, 7, 6)",
+    "UNFILLED full free2 plus branched module (2, 7, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (2, 7, 6)",
+    "UNFILLED outer meridian exact integral relation (3, 2, 3)",
+    "UNFILLED inner longitude exact integral relation (3, 2, 3)",
+    "UNFILLED full free2 plus branched module (3, 2, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (3, 2, 3)",
+    "UNFILLED outer meridian exact integral relation (3, 4, 3)",
+    "UNFILLED inner longitude exact integral relation (3, 4, 3)",
+    "UNFILLED full free2 plus branched module (3, 4, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (3, 4, 3)",
+    "UNFILLED outer meridian exact integral relation (3, 5, 6)",
+    "UNFILLED inner longitude exact integral relation (3, 5, 6)",
+    "UNFILLED full free2 plus branched module (3, 5, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (3, 5, 6)",
+    "UNFILLED outer meridian exact integral relation (3, 5, 3)",
+    "UNFILLED inner longitude exact integral relation (3, 5, 3)",
+    "UNFILLED full free2 plus branched module (3, 5, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (3, 5, 3)",
+    "UNFILLED outer meridian exact integral relation (3, 7, 6)",
+    "UNFILLED inner longitude exact integral relation (3, 7, 6)",
+    "UNFILLED full free2 plus branched module (3, 7, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (3, 7, 6)",
+    "UNFILLED outer meridian exact integral relation (4, 3, 2)",
+    "UNFILLED inner longitude exact integral relation (4, 3, 2)",
+    "UNFILLED full free2 plus branched module (4, 3, 2)",
+    "UNFILLED actual mi lo primitive integral splitting (4, 3, 2)",
+    "UNFILLED outer meridian exact integral relation (4, 5, 6)",
+    "UNFILLED inner longitude exact integral relation (4, 5, 6)",
+    "UNFILLED full free2 plus branched module (4, 5, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (4, 5, 6)",
+    "UNFILLED outer meridian exact integral relation (4, 5, 3)",
+    "UNFILLED inner longitude exact integral relation (4, 5, 3)",
+    "UNFILLED full free2 plus branched module (4, 5, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (4, 5, 3)",
+    "UNFILLED outer meridian exact integral relation (4, 7, 6)",
+    "UNFILLED inner longitude exact integral relation (4, 7, 6)",
+    "UNFILLED full free2 plus branched module (4, 7, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (4, 7, 6)",
+    "UNFILLED outer meridian exact integral relation (5, 2, 3)",
+    "UNFILLED inner longitude exact integral relation (5, 2, 3)",
+    "UNFILLED full free2 plus branched module (5, 2, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (5, 2, 3)",
+    "UNFILLED outer meridian exact integral relation (5, 3, 2)",
+    "UNFILLED inner longitude exact integral relation (5, 3, 2)",
+    "UNFILLED full free2 plus branched module (5, 3, 2)",
+    "UNFILLED actual mi lo primitive integral splitting (5, 3, 2)",
+    "UNFILLED outer meridian exact integral relation (5, 4, 3)",
+    "UNFILLED inner longitude exact integral relation (5, 4, 3)",
+    "UNFILLED full free2 plus branched module (5, 4, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (5, 4, 3)",
+    "UNFILLED outer meridian exact integral relation (5, 7, 6)",
+    "UNFILLED inner longitude exact integral relation (5, 7, 6)",
+    "UNFILLED full free2 plus branched module (5, 7, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (5, 7, 6)",
+    "UNFILLED outer meridian exact integral relation (6, 5, 6)",
+    "UNFILLED inner longitude exact integral relation (6, 5, 6)",
+    "UNFILLED full free2 plus branched module (6, 5, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (6, 5, 6)",
+    "UNFILLED outer meridian exact integral relation (6, 5, 3)",
+    "UNFILLED inner longitude exact integral relation (6, 5, 3)",
+    "UNFILLED full free2 plus branched module (6, 5, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (6, 5, 3)",
+    "UNFILLED outer meridian exact integral relation (6, 7, 6)",
+    "UNFILLED inner longitude exact integral relation (6, 7, 6)",
+    "UNFILLED full free2 plus branched module (6, 7, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (6, 7, 6)",
+    "UNFILLED outer meridian exact integral relation (7, 2, 3)",
+    "UNFILLED inner longitude exact integral relation (7, 2, 3)",
+    "UNFILLED full free2 plus branched module (7, 2, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (7, 2, 3)",
+    "UNFILLED outer meridian exact integral relation (7, 3, 2)",
+    "UNFILLED inner longitude exact integral relation (7, 3, 2)",
+    "UNFILLED full free2 plus branched module (7, 3, 2)",
+    "UNFILLED actual mi lo primitive integral splitting (7, 3, 2)",
+    "UNFILLED outer meridian exact integral relation (7, 4, 3)",
+    "UNFILLED inner longitude exact integral relation (7, 4, 3)",
+    "UNFILLED full free2 plus branched module (7, 4, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (7, 4, 3)",
+    "UNFILLED outer meridian exact integral relation (7, 5, 6)",
+    "UNFILLED inner longitude exact integral relation (7, 5, 6)",
+    "UNFILLED full free2 plus branched module (7, 5, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (7, 5, 6)",
+    "UNFILLED outer meridian exact integral relation (7, 5, 3)",
+    "UNFILLED inner longitude exact integral relation (7, 5, 3)",
+    "UNFILLED full free2 plus branched module (7, 5, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (7, 5, 3)",
+    "UNFILLED outer meridian exact integral relation (8, 3, 2)",
+    "UNFILLED inner longitude exact integral relation (8, 3, 2)",
+    "UNFILLED full free2 plus branched module (8, 3, 2)",
+    "UNFILLED actual mi lo primitive integral splitting (8, 3, 2)",
+    "UNFILLED outer meridian exact integral relation (8, 5, 6)",
+    "UNFILLED inner longitude exact integral relation (8, 5, 6)",
+    "UNFILLED full free2 plus branched module (8, 5, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (8, 5, 6)",
+    "UNFILLED outer meridian exact integral relation (8, 5, 3)",
+    "UNFILLED inner longitude exact integral relation (8, 5, 3)",
+    "UNFILLED full free2 plus branched module (8, 5, 3)",
+    "UNFILLED actual mi lo primitive integral splitting (8, 5, 3)",
+    "UNFILLED outer meridian exact integral relation (8, 7, 6)",
+    "UNFILLED inner longitude exact integral relation (8, 7, 6)",
+    "UNFILLED full free2 plus branched module (8, 7, 6)",
+    "UNFILLED actual mi lo primitive integral splitting (8, 7, 6)",
+    "nonunit k modulo cover degree controls included",
+    "noncable winding1 full UNFILLED periphery 2",
+    "noncable winding1 UNFILLED primitive split 2",
+    "noncable winding1 full UNFILLED periphery 3",
+    "noncable winding1 UNFILLED primitive split 3",
+    "noncable winding1 full UNFILLED periphery 6",
+    "noncable winding1 UNFILLED primitive split 6",
+    "positive-rank added homology never quotiented away",
+    "whole source Euler budget over complete base",
+    "whole source Euler budget over affine base",
+    "solid cap transfer gives square winding",
+    "D3 trefoil UNFILLED two-boundary H1 is free2",
+    "D3 preferred index2 longitude includes mutual linking2",
+    "D3 preferred index1 longitude includes mutual linking2",
+    "D3 weighted lifted surface balance",
+    "published trefoil bounding-chain system 0",
+    "published trefoil bounding-chain system 1",
+    "published two mutual intersections equal independent CW value2",
+    "complete S3 nonself predecessors are C2 and C3",
+    "complete S3 selfloops only odd winding cyclic2 (1, 0, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 1, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 2, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 3, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 4, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 5, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 6, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 7, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 8, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 9, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 10, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (1, 11, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (3, 1, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (3, 2, [0, 1, 2, 3])",
+    "complete S3 final arrivals odd multiple3 and even k (3, 2, [2, 1, 3, 0])",
+    "complete S3 final arrivals odd multiple3 and even k (3, 2, [3, 1, 0, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (3, 4, [0, 1, 2, 3])",
+    "complete S3 final arrivals odd multiple3 and even k (3, 4, [2, 1, 3, 0])",
+    "complete S3 final arrivals odd multiple3 and even k (3, 4, [3, 1, 0, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (3, 5, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (3, 7, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (3, 8, [0, 1, 2, 3])",
+    "complete S3 final arrivals odd multiple3 and even k (3, 8, [2, 1, 3, 0])",
+    "complete S3 final arrivals odd multiple3 and even k (3, 8, [3, 1, 0, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (3, 10, [0, 1, 2, 3])",
+    "complete S3 final arrivals odd multiple3 and even k (3, 10, [2, 1, 3, 0])",
+    "complete S3 final arrivals odd multiple3 and even k (3, 10, [3, 1, 0, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (3, 11, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 0, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 1, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 2, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 3, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 4, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 5, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 6, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 7, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 8, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 9, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 10, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (5, 11, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 0, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 1, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 2, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 3, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 4, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 5, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 6, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 7, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 8, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 9, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 10, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (7, 11, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (9, 1, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (9, 2, [0, 1, 2, 3])",
+    "complete S3 final arrivals odd multiple3 and even k (9, 2, [2, 1, 3, 0])",
+    "complete S3 final arrivals odd multiple3 and even k (9, 2, [3, 1, 0, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (9, 4, [0, 1, 2, 3])",
+    "complete S3 final arrivals odd multiple3 and even k (9, 4, [2, 1, 3, 0])",
+    "complete S3 final arrivals odd multiple3 and even k (9, 4, [3, 1, 0, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (9, 5, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (9, 7, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (9, 8, [0, 1, 2, 3])",
+    "complete S3 final arrivals odd multiple3 and even k (9, 8, [2, 1, 3, 0])",
+    "complete S3 final arrivals odd multiple3 and even k (9, 8, [3, 1, 0, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (9, 10, [0, 1, 2, 3])",
+    "complete S3 final arrivals odd multiple3 and even k (9, 10, [2, 1, 3, 0])",
+    "complete S3 final arrivals odd multiple3 and even k (9, 10, [3, 1, 0, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (9, 11, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 0, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 1, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 2, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 3, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 4, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 5, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 6, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 7, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 8, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 9, [0, 1, 3, 2])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 10, [0, 1, 2, 3])",
+    "complete S3 selfloops only odd winding cyclic2 (11, 11, [0, 1, 3, 2])",
+    "actual initial Esharp full marked split (2, 3)",
+    "actual initial Esharp primitive meridian and zero core (2, 3)",
+    "actual initial Esharp full marked split (4, 3)",
+    "actual initial Esharp primitive meridian and zero core (4, 3)",
+    "actual initial Esharp full marked split (2, 9)",
+    "actual initial Esharp primitive meridian and zero core (2, 9)",
+    "actual initial Esharp full marked split (8, 3)",
+    "actual initial Esharp primitive meridian and zero core (8, 3)",
+    "actual initial Esharp full marked split (4, 9)",
+    "actual initial Esharp primitive meridian and zero core (4, 9)",
+    "actual composed solid S3 square cap 0",
+    "actual composed solid S3 primitive meridian and zero core 0",
+    "actual composed solid S3 square cap 1",
+    "actual composed solid S3 primitive meridian and zero core 1",
+    "actual composed solid S3 square cap 2",
+    "actual composed solid S3 primitive meridian and zero core 2",
+    "actual nonsolid reset meridian still primitive and zero core (3, 11)",
+    "actual nonsolid reset preferred longitude square recurrence (3, 11)",
+    "actual nonsolid reset meridian still primitive and zero core (3, 2)",
+    "actual nonsolid reset preferred longitude square recurrence (3, 2)",
+    "actual nonsolid reset meridian still primitive and zero core (5, 3)",
+    "actual nonsolid reset preferred longitude square recurrence (5, 3)",
+    "actual nonsolid reset meridian still primitive and zero core (3, 7)",
+    "actual nonsolid reset preferred longitude square recurrence (3, 7)",
+    "actual full S4 target through different incoming S3 orbit ([], 3, 2, [])",
+    "actual full S4 target through different incoming S3 orbit ([], 3, 2, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([], 3, 4, [])",
+    "actual full S4 target through different incoming S3 orbit ([], 3, 4, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([], 9, 2, [])",
+    "actual full S4 target through different incoming S3 orbit ([], 9, 2, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([], 9, 4, [])",
+    "actual full S4 target through different incoming S3 orbit ([], 9, 4, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 7)], 3, 2, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 7)], 3, 2, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 7)], 3, 4, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 7)], 3, 4, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 7)], 9, 2, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 7)], 9, 2, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 7)], 9, 4, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 7)], 9, 4, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 11)], 3, 2, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 11)], 3, 2, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 11)], 3, 4, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 11)], 3, 4, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 11)], 9, 2, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 11)], 9, 2, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 11)], 9, 4, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 11)], 9, 4, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 2)], 3, 2, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 2)], 3, 2, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 2)], 3, 4, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 2)], 3, 4, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 2)], 9, 2, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 2)], 9, 2, [(5, 3)])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 2)], 9, 4, [])",
+    "actual full S4 target through different incoming S3 orbit ([(3, 2)], 9, 4, [(5, 3)])",
+    "actual S3 cyclic birth retains zero index2 core (3, 2)",
+    "actual S3 cyclic birth has primitive remaining meridian (3, 2)",
+    "actual S3 cyclic birth retains zero index2 core (2, 3)",
+    "actual S3 cyclic birth has primitive remaining meridian (2, 3)"
+  ],
+  "general": {
+    "every_actual_coordinate_extends_on_whole_smooth_affine_source": true,
+    "generic_linear_ruling_entire_boundary_over_infinity": true,
+    "arbitrary_degree_unfilled_cyclic_pattern_integral_periphery": true,
+    "positive_rank_added_modules_allowed": true,
+    "nullhomologous_core_meridian_outside_Lspace_interior": true
+  },
+  "quartic": {
+    "all_incoming_S3_nonsolid_histories_closed_both_pencils": true,
+    "arbitrary_companion_depth_and_later_tail_length": true,
+    "no_prefix_eta_condition": true,
+    "remaining_S3_only_initial_trefoil_solid_chain": true,
+    "solid_cap_A_exact_product_of_odd_windings_squared": true,
+    "actual_ordinary_companion_retained_at_final_arrival": true
+  },
+  "unfilled_pattern_controls": [
+    {
+      "n": 2,
+      "r": 3,
+      "k": 2,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          3
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "r": 5,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          5
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "r": 5,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 2,
+      "r": 7,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          7
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "r": 2,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "r": 4,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          4,
+          4
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "r": 5,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          5,
+          5
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "r": 5,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          5,
+          5
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "r": 7,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          7,
+          7
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "r": 3,
+      "k": 2,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          3
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "r": 5,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          5
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "r": 5,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 4,
+      "r": 7,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          7
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "r": 2,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 5,
+      "r": 3,
+      "k": 2,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 5,
+      "r": 4,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 5,
+      "r": 7,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 6,
+      "r": 5,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "r": 5,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          5,
+          5
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "r": 7,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "n": 7,
+      "r": 2,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 7,
+      "r": 3,
+      "k": 2,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 7,
+      "r": 4,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 7,
+      "r": 5,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 7,
+      "r": 5,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 8,
+      "r": 3,
+      "k": 2,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          3
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "r": 5,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          5
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "r": 5,
+      "k": 3,
+      "H1": {
+        "free": 2,
+        "torsion": []
+      },
+      "added": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "n": 8,
+      "r": 7,
+      "k": 6,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          7
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      }
+    }
+  ],
+  "noncable_positive_rank_controls": [
+    {
+      "n": 2,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          3
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "H1": {
+        "free": 2,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "added": {
+        "free": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "H1": {
+        "free": 4,
+        "torsion": []
+      },
+      "added": {
+        "free": 2,
+        "torsion": []
+      }
+    }
+  ],
+  "actual_initial_S3_controls": [
+    {
+      "p": 2,
+      "q": 3,
+      "A": 1,
+      "H1": {
+        "free": 1,
+        "torsion": []
+      },
+      "closed": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "p": 4,
+      "q": 3,
+      "A": 2,
+      "H1": {
+        "free": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "closed": {
+        "free": 0,
+        "torsion": [
+          2
+        ]
+      }
+    },
+    {
+      "p": 2,
+      "q": 9,
+      "A": 3,
+      "H1": {
+        "free": 1,
+        "torsion": []
+      },
+      "closed": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "p": 8,
+      "q": 3,
+      "A": 4,
+      "H1": {
+        "free": 1,
+        "torsion": [
+          4
+        ]
+      },
+      "closed": {
+        "free": 0,
+        "torsion": [
+          4
+        ]
+      }
+    },
+    {
+      "p": 4,
+      "q": 9,
+      "A": 6,
+      "H1": {
+        "free": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "closed": {
+        "free": 0,
+        "torsion": [
+          2
+        ]
+      }
+    }
+  ],
+  "actual_solid_S3_controls": [
+    {
+      "cables": [
+        [
+          3,
+          7
+        ]
+      ],
+      "A": 9,
+      "H1": {
+        "free": 1,
+        "torsion": []
+      },
+      "geometric_solid_cap_distance": 1
+    },
+    {
+      "cables": [
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          91
+        ]
+      ],
+      "A": 225,
+      "H1": {
+        "free": 1,
+        "torsion": []
+      },
+      "geometric_solid_cap_distance": 1
+    },
+    {
+      "cables": [
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          91
+        ],
+        [
+          3,
+          1351
+        ]
+      ],
+      "A": 2025,
+      "H1": {
+        "free": 1,
+        "torsion": []
+      },
+      "geometric_solid_cap_distance": 1
+    }
+  ],
+  "actual_nonsolid_reset_controls": [
+    {
+      "r": 3,
+      "k": 11,
+      "H1": {
+        "free": 1,
+        "torsion": []
+      },
+      "cones": [
+        3,
+        5
+      ]
+    },
+    {
+      "r": 3,
+      "k": 2,
+      "H1": {
+        "free": 1,
+        "torsion": [
+          3
+        ]
+      },
+      "cones": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "r": 5,
+      "k": 3,
+      "H1": {
+        "free": 1,
+        "torsion": []
+      },
+      "cones": [
+        5,
+        7
+      ]
+    },
+    {
+      "r": 3,
+      "k": 7,
+      "H1": {
+        "free": 1,
+        "torsion": []
+      },
+      "cones": [
+        3,
+        1
+      ]
+    }
+  ],
+  "full_target_controls": [
+    {
+      "prefix": [],
+      "arrival": [
+        3,
+        2
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 1,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [],
+      "arrival": [
+        3,
+        2
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 1,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [],
+      "arrival": [
+        3,
+        4
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [],
+      "arrival": [
+        3,
+        4
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [],
+      "arrival": [
+        9,
+        2
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [],
+      "arrival": [
+        9,
+        2
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [],
+      "arrival": [
+        9,
+        4
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [],
+      "arrival": [
+        9,
+        4
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          7
+        ]
+      ],
+      "arrival": [
+        3,
+        2
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            8
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          7
+        ]
+      ],
+      "arrival": [
+        3,
+        2
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            8
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          7
+        ]
+      ],
+      "arrival": [
+        3,
+        4
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          7
+        ]
+      ],
+      "arrival": [
+        3,
+        4
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          7
+        ]
+      ],
+      "arrival": [
+        9,
+        2
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            26
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          7
+        ]
+      ],
+      "arrival": [
+        9,
+        2
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            26
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          7
+        ]
+      ],
+      "arrival": [
+        9,
+        4
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            25
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          7
+        ]
+      ],
+      "arrival": [
+        9,
+        4
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            25
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          11
+        ]
+      ],
+      "arrival": [
+        3,
+        2
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            8
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          11
+        ]
+      ],
+      "arrival": [
+        3,
+        2
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            8
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          11
+        ]
+      ],
+      "arrival": [
+        3,
+        4
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          11
+        ]
+      ],
+      "arrival": [
+        3,
+        4
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          11
+        ]
+      ],
+      "arrival": [
+        9,
+        2
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            26
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          11
+        ]
+      ],
+      "arrival": [
+        9,
+        2
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            26
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          11
+        ]
+      ],
+      "arrival": [
+        9,
+        4
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            25
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          11
+        ]
+      ],
+      "arrival": [
+        9,
+        4
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            25
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          2
+        ]
+      ],
+      "arrival": [
+        3,
+        2
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            24
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          2
+        ]
+      ],
+      "arrival": [
+        3,
+        2
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            24
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          2
+        ]
+      ],
+      "arrival": [
+        3,
+        4
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            21
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          2
+        ]
+      ],
+      "arrival": [
+        3,
+        4
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            21
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          2
+        ]
+      ],
+      "arrival": [
+        9,
+        2
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            78
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          2
+        ]
+      ],
+      "arrival": [
+        9,
+        2
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            78
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            6
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          2
+        ]
+      ],
+      "arrival": [
+        9,
+        4
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            75
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "prefix": [
+        [
+          3,
+          2
+        ]
+      ],
+      "arrival": [
+        9,
+        4
+      ],
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            75
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        }
+      }
+    }
+  ],
+  "actual_S3_birth_controls": [
+    {
+      "old_meridian": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "r": 3,
+      "k": 2,
+      "H1": {
+        "free": 1,
+        "torsion": [
+          3
+        ]
+      },
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      }
+    },
+    {
+      "old_meridian": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "r": 2,
+      "k": 3,
+      "H1": {
+        "free": 1,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "closed": {
+        "free": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      }
+    }
+  ],
+  "dihedral_trefoil": {
+    "mutual_linking": 2,
+    "preferred_longitudes": [
+      "-m2+2m1",
+      "2m2-4m1"
+    ],
+    "full_algorithm_implemented": false,
+    "paper_diagonal_framing_identified": false
+  },
+  "assurance": {
+    "written_unbounded_ruling_MV_endpoint_and_history_proofs": true,
+    "actual_full_filled_and_unfilled_CW_controls": true,
+    "complete_relevant_primary_HTML_import_audits": true,
+    "retained_complete_topology_audits_reused": true,
+    "new_deep_Floer_theorems_imported": true,
+    "deep_JSJ_and_full_peripheral_rigidity_imported": true,
+    "finite_controls_not_universal_proof": true,
+    "all_S3_solid_histories_closed": false,
+    "all_A4_complementary_closed": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_packet_classification": false,
+    "finite_Keller_map": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_full_reproof": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_global_ruling_unfilled_cyclic.py": "114e77cd7b1ef146b5a8eb1cafb5825058ca30edab4b0eb76f0e07ab7730db88",
+    "COORDINATE_RULINGS_UNFILLED_CYCLIC_AND_S3_REDUCTION.md": "5e60a62af5ffed43f9e35c312e1a0276e39d38fce547ebd350664fbc6762e602",
+    "sources/global-ruling-unfilled-cyclic/manifest.json": "32a877ec97df305a0efe511e71b461b06f05ebfbf68876196385b89df909abf0",
+    "nonunimodular_a4_receipt.json": "492392d3200d97dbdac301a9e7fce22830c384a5a04642bcaedc225813ed80d3",
+    "cyclic_pattern_a4_receipt.json": "9eb9cf65aa72f21fb8d12bae08768ea4ad1f66eed21f948bae0024e68f29411a",
+    "meridian_balance_two_stage_receipt.json": "603c93bf2dc32c165e77cb38246abdc22d3532a3b98e2f558ee248840a12afcf",
+    "iterated_peripheral_tail_receipt.json": "7a21fd2fd7b87cc8bff42b5a9993b3edc7c46fe560269a1ce24291b8784ec24c",
+    "persistent_jsj_terminal_modulus_receipt.json": "fddc27f470c56b0175a263e0544c44fee29177a436699cf8748ae147732dfdc3",
+    "lifted_surface_s3_receipt.json": "047f6b33e0849bb630525cc1e816e3371111217e0489905d65e64605b1634a5b",
+    "common_pencil_mark_receipt.json": "6782b2eed1a1b579c5d3ee8c2257e04f9b2f418073cd784d4b4144cd76c0f027",
+    "complementary_corner_jsj_receipt.json": "059a8771cfb326b9e37e9d45658a7e49568b49fc596ff1bf2a4502fbd65ed9a2",
+    "trefoil_complementary_fusion_receipt.json": "c0250bee54f22ab4ae126958727918cc081b84cf1dec529c25ab7b5e5d7d6ae5",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/borderline-regular-end/waldhausen-1968.pdf": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+    "sources/oriented-pattern-linking/neumann-raymond-1978.pdf": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+    "sources/cyclic-companion/hillman-sakuma-1997.pdf": "455a770f76f95dd189132cf99f7964e1775621e48169f6d8501e68b2dd88900b",
+    "sources/binomial-periodic/clay-watson-2011v1.pdf": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b",
+    "sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf": "602c28528d7e990d2fb3b90a10f024c21cff7811054776a512c559b092e701f6",
+    "sources/rational-end-orderability/nemethi-1510.07128v1.pdf": "ec6e0f8d0d96fc9f3dfb194c23fffac6f41eb2057ae4e60765e0194f3998f594",
+    "sources/global-ruling-unfilled-cyclic/dubouloz-kishimoto-1212.0521v1.html": "f3ff91734575b00f4ffd39fb1b12b7f00e437860d8123e6e5ed4c1c019816cd8",
+    "sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html": "c86826922f0ccb585b10cec2407eda9a1cbc2d36a16d35f9a6308c81914acc74",
+    "sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html": "fcba6587adc621738f382cea63a287e92ddaa1de1dec54957de21c8a3f859b30",
+    "sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html": "c03db0c810e3b6e07cf158e499307628a9e1a8200c4fbae4d5b0edcbabe40e66"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

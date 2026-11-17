@@ -1,0 +1,9 @@
+# Tame fixed loci and nonlinear canonical costs
+
+14 November2026. [Proof](PROOF.md), [literature](LITERATURE_AND_GAPS.md), [replay](verify.py), [receipt](receipt.json).
+
+- **UADECKWILD1:** regular Keller deck groups are trivial in characteristic zero and p-groups in characteristic p. Only the normal p-core can disappear from a faithful symmetry action's target tangent module; high-rank symmetric actions retain faithful tangent symmetry.
+- **UASMITHFIX1:** tame prime-subgroup fixed schemes are automatically acyclic. In dimension zero or one their complete fibre ranks are rigid, giving an obstruction for arbitrary polynomial actions.
+- **UANONLINEARCOST1:** characteristic-zero natural symmetric canonical dimension is at least N+1 in prime-power rank, N in two-positive-prime-power rank, and N-1 generally. All nonlinear three-space constructions for N>=3 are excluded; equality forces a missing-fibre etale map between actual acyclic affine surfaces. Combined with the retained absolutely atomic universal maps, every characteristic-zero rank N>=3 has a strict fixed-versus-canonical dimension gap.
+
+Rank seven has fixed-map minimum four on the stated bases but canonical marked cost at least eight, even with nonlinear actions. The [degree-defect extension](../universal-keller-fixed-fibres/PROOF.md) now excludes characteristic-zero full-degree canonical transitive fibres in every dimension and after every identity stabilization. A surviving rank-N fibre requires generic degree at least N+2; The [acyclic boundary theorem](../universal-keller-acyclic-boundary/PROOF.md) raises the necessary degree to N+3 in even rank and supplies actual abstract missing-fibre surfaces; their ambient fixed-locus realization and gluing remain open. [Unified theory](../universal-keller-receiver/THEORY_MAP.md). Authority: [MATH_STATUS.json](../../MATH_STATUS.json).

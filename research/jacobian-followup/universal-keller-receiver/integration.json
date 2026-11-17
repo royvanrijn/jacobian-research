@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "previous_goal_turn_classification": "progress",
+  "goal_turn_classification": "progress",
+  "new_claims": [
+    "UARECV1",
+    "UAINERT1",
+    "UAQFAIL1",
+    "UACTARGET1",
+    "UAPROFILE1",
+    "UAEQUIV1"
+  ],
+  "changed_existing_claims": [
+    "OP-KCOMP",
+    "OP-KDESC"
+  ],
+  "existing_entries_before": 1862,
+  "existing_entries_preserved": 1860,
+  "new_lesson": "METHOD-KELLER-RECEIVER-LANDING",
+  "updated_work": [
+    "WORK-KCOMP",
+    "WORK-KDESC"
+  ],
+  "scope_fingerprints": {
+    "UARECV1": "286034f58d50dec6",
+    "UAINERT1": "0f52eb9152f17ca1",
+    "UAQFAIL1": "9e60282b6edb3848",
+    "UACTARGET1": "c63d66467f640499",
+    "UAPROFILE1": "0a6cd1d8d7458896",
+    "UAEQUIV1": "384c1225e09ce543",
+    "OP-KCOMP": "9c19c18caeae5c77",
+    "OP-KDESC": "ae984f5a69f0648a"
+  },
+  "status": "focused validation passed; full navigation blocked",
+  "remaining_goal_gates": [
+    "Receiver forgetting the good generator line",
+    "Affine completion beyond classified original-coordinate profiles",
+    "Low-rank A3 and negative-binary universal constructions",
+    "Independent mathematical review"
+  ]
+}

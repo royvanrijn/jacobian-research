@@ -1,0 +1,115 @@
+{
+  "completed": true,
+  "checker_sha256": "c02e087f346fb794db3d570934fa17bf70a6af27cebbe9793bb4af91d7c2add8",
+  "source_sha256": "1696f2ebccd38e93b86640d4787b673707fc6b09f53c86221643738120d9687a",
+  "normal_form": "a*u**3 + d*v**3 + u*v*z",
+  "outer_facets": {
+    "ABC": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "ACD": [
+      "1/3",
+      "1/6",
+      "1/2"
+    ],
+    "BCD": [
+      "1/6",
+      "1/3",
+      "1/2"
+    ]
+  },
+  "outer_faces_checked": 13,
+  "nondegeneracy_witnesses": [
+    {
+      "face": "A",
+      "polynomial": "a*u**3",
+      "variable": "u",
+      "monomial_partial": "3*a*u**2"
+    },
+    {
+      "face": "B",
+      "polynomial": "d*v**3",
+      "variable": "v",
+      "monomial_partial": "3*d*v**2"
+    },
+    {
+      "face": "C",
+      "polynomial": "u*v*z",
+      "variable": "u",
+      "monomial_partial": "v*z"
+    },
+    {
+      "face": "D",
+      "polynomial": "gamma*z**2",
+      "variable": "z",
+      "monomial_partial": "2*gamma*z"
+    },
+    {
+      "face": "AB",
+      "polynomial": "a*u**3 + d*v**3",
+      "variable": "u",
+      "monomial_partial": "3*a*u**2"
+    },
+    {
+      "face": "AC",
+      "polynomial": "a*u**3 + u*v*z",
+      "variable": "v",
+      "monomial_partial": "u*z"
+    },
+    {
+      "face": "AD",
+      "polynomial": "a*u**3 + gamma*z**2",
+      "variable": "u",
+      "monomial_partial": "3*a*u**2"
+    },
+    {
+      "face": "BC",
+      "polynomial": "d*v**3 + u*v*z",
+      "variable": "u",
+      "monomial_partial": "v*z"
+    },
+    {
+      "face": "BD",
+      "polynomial": "d*v**3 + gamma*z**2",
+      "variable": "v",
+      "monomial_partial": "3*d*v**2"
+    },
+    {
+      "face": "CD",
+      "polynomial": "gamma*z**2 + u*v*z",
+      "variable": "u",
+      "monomial_partial": "v*z"
+    },
+    {
+      "face": "ABC",
+      "polynomial": "a*u**3 + d*v**3 + u*v*z",
+      "variable": "z",
+      "monomial_partial": "u*v"
+    },
+    {
+      "face": "ACD",
+      "polynomial": "a*u**3 + gamma*z**2 + u*v*z",
+      "variable": "v",
+      "monomial_partial": "u*z"
+    },
+    {
+      "face": "BCD",
+      "polynomial": "d*v**3 + gamma*z**2 + u*v*z",
+      "variable": "u",
+      "monomial_partial": "v*z"
+    }
+  ],
+  "quadratic_supports_checked": 6,
+  "volume_Newton_degree": "1",
+  "constant_series_required_exponent": "3/2",
+  "rescaling": "x=z/t, lambda=t^(-2), dx=t^(-3) dz",
+  "connection_identity": "mapped nabla_t(1)-nabla_t(t^(-3)) = t^(-4) sum_i (partial_i+lambda*f_i)(z_i)",
+  "isotropic_node_negative_control": "q_TT=0 removes T^2; Newton argument not applied",
+  "homogeneous_pure_null_classification": "P=(l^T*x)*(x^T*A*x), l^T*l=0, A*l proportional to l",
+  "mixed_cutoff": "m>deg(multiplier)",
+  "explicit_uniform_homogeneous_pure_gate": null,
+  "assurance": "Exact symbolic algebra and cached source hash only. Imported V-filtration theorem, regular-singular growth, formal-functional extension and classification synthesis remain written mathematics; no external review or formal verification.",
+  "elapsed_seconds": 0.037783
+}

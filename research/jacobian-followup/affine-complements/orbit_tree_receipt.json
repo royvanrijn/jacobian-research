@@ -1,0 +1,1931 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 139,
+  "checks": [
+    "predecessor PASS sign_square_receipt.json",
+    "sealed predecessor sign_square_receipt.json verify_sign_square.py",
+    "sealed predecessor sign_square_receipt.json SIGN_SURFACE_PICARD_AND_SQUARE_DETERMINANT.md",
+    "sealed predecessor sign_square_receipt.json sources/sign-square/manifest.json",
+    "sealed predecessor sign_square_receipt.json quartic_colouring_receipt.json",
+    "sealed predecessor sign_square_receipt.json sources/sign-square/ford-1303.5687v2.pdf",
+    "sealed predecessor sign_square_receipt.json sources/sign-square/hamm-1983-p121.jpg",
+    "sealed predecessor sign_square_receipt.json sources/sign-square/hamm-1983-p122.jpg",
+    "sealed predecessor sign_square_receipt.json sources/sign-square/owens-strle-QHS.pdf",
+    "sealed predecessor sign_square_receipt.json sources/sign-square/sga1-math0206203v2.pdf",
+    "sealed predecessor sign_square_receipt.json sources/sign-square/kerner-2505.01906v1.pdf",
+    "predecessor PASS peripheral_zero_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json verify_peripheral_zero.py",
+    "sealed predecessor peripheral_zero_receipt.json PERIPHERAL_LONGITUDE_AND_ZERO_NORMAL_CONTROL.md",
+    "sealed predecessor peripheral_zero_receipt.json sources/peripheral-zero-control/manifest.json",
+    "sealed predecessor peripheral_zero_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json quartic_colouring_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json sign_square_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json canonical_quadrics_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json nodal_deformation_receipt.json",
+    "sealed predecessor peripheral_zero_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor peripheral_zero_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "sealed predecessor peripheral_zero_receipt.json sources/peripheral-zero-control/pakovich-zvonkin-2015.pdf",
+    "sealed predecessor peripheral_zero_receipt.json verify_quartic_colouring.py",
+    "predecessor PASS marked_end_lattice_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor marked_end_lattice_receipt.json MARKED_END_LATTICE_AND_CABLE_CONTROL.md",
+    "sealed predecessor marked_end_lattice_receipt.json sources/marked-end-lattice/manifest.json",
+    "sealed predecessor marked_end_lattice_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json peripheral_zero_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json sources/marked-end-lattice/weidmann-root-adjoined.pdf",
+    "sealed predecessor marked_end_lattice_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "primary retained pin weidmann-root-adjoined.pdf",
+    "primary retained pin neumann-norbury-orevkov.pdf",
+    "primary retained pin livingston-melvin-1985.pdf",
+    "exact exponent12 of S4",
+    "multistage four-cycle control",
+    "each separate edge can pass A",
+    "each separate edge can pass C",
+    "regular cyclic action semiregular degree2",
+    "regular cyclic action semiregular degree3",
+    "regular cyclic action semiregular degree4",
+    "regular cyclic action semiregular degree5",
+    "regular cyclic action semiregular degree6",
+    "regular cyclic action semiregular degree7",
+    "all transitive commuting pairs in S4 act regularly",
+    "transitive subgroups of A4 exactly V4 and A4",
+    "double transposition fails normal generation in order4",
+    "double transposition fails normal generation in order4",
+    "double transposition fails normal generation in order4",
+    "double transposition fails normal generation in order12",
+    "double transposition fails normal generation in order12",
+    "double transposition fails normal generation in order12",
+    "complete residue census 0",
+    "complete residue census 1",
+    "complete residue census 2",
+    "residue2 orbit0 size24",
+    "residue2 orbit1 size24",
+    "residue2 orbit2 size24",
+    "complete residue census 3",
+    "residue3 orbit0 size24",
+    "residue3 orbit0 agrees with full H1",
+    "residue3 orbit1 size24",
+    "residue3 orbit1 agrees with full H1",
+    "residue3 orbit2 size24",
+    "residue3 orbit2 agrees with full H1",
+    "residue3 orbit2 transitive pieces require 4-cycle",
+    "complete residue census 4",
+    "complete residue census 5",
+    "complete residue census 6",
+    "complete residue census 7",
+    "complete residue census 8",
+    "residue8 orbit0 size24",
+    "residue8 orbit0 agrees with full H1",
+    "residue8 orbit1 size24",
+    "residue8 orbit1 agrees with full H1",
+    "residue8 orbit1 global A4 S4 obstruction",
+    "residue8 orbit2 size24",
+    "residue8 orbit2 agrees with full H1",
+    "residue8 orbit3 size24",
+    "residue8 orbit3 agrees with full H1",
+    "residue8 orbit3 global A4 S4 obstruction",
+    "residue8 orbit4 size24",
+    "residue8 orbit4 agrees with full H1",
+    "residue8 orbit5 size24",
+    "residue8 orbit5 agrees with full H1",
+    "residue8 orbit6 size24",
+    "residue8 orbit6 agrees with full H1",
+    "residue8 orbit6 global A4 S4 obstruction",
+    "complete residue census 9",
+    "residue9 orbit0 size24",
+    "residue9 orbit1 size24",
+    "residue9 orbit2 size24",
+    "residue9 orbit2 transitive pieces require 4-cycle",
+    "residue9 orbit3 size24",
+    "residue9 orbit3 transitive pieces require 4-cycle",
+    "residue9 orbit4 size24",
+    "residue9 orbit4 transitive pieces require 4-cycle",
+    "residue9 orbit5 size24",
+    "residue9 orbit5 transitive pieces require 4-cycle",
+    "complete residue census 10",
+    "complete residue census 11",
+    "CRT equivalent residue0",
+    "CRT equivalent residue1",
+    "CRT equivalent residue2",
+    "CRT equivalent residue3",
+    "CRT equivalent residue4",
+    "CRT equivalent residue5",
+    "CRT equivalent residue6",
+    "CRT equivalent residue7",
+    "CRT equivalent residue8",
+    "CRT equivalent residue9",
+    "CRT equivalent residue10",
+    "CRT equivalent residue11",
+    "CRT equivalent residue12",
+    "CRT equivalent residue13",
+    "CRT equivalent residue14",
+    "CRT equivalent residue15",
+    "CRT equivalent residue16",
+    "CRT equivalent residue17",
+    "CRT equivalent residue18",
+    "CRT equivalent residue19",
+    "CRT equivalent residue20",
+    "CRT equivalent residue21",
+    "CRT equivalent residue22",
+    "CRT equivalent residue23",
+    "CRT equivalent residue24",
+    "CRT equivalent residue25",
+    "CRT equivalent residue26",
+    "CRT equivalent residue27",
+    "CRT equivalent residue28",
+    "CRT equivalent residue29",
+    "CRT equivalent residue30",
+    "CRT equivalent residue31",
+    "CRT equivalent residue32",
+    "CRT equivalent residue33",
+    "CRT equivalent residue34",
+    "CRT equivalent residue35",
+    "even positive Betti obstruction repeats at every w8mod12"
+  ],
+  "graph_theorem": {
+    "all_finite_degrees": true,
+    "all_finite_torus_decomposition_trees": true,
+    "all_cabling_lengths": true,
+    "all_sheets_and_meridian_cycles": true,
+    "cover_need_not_be_regular": true,
+    "no_minimal_JSJ_hypothesis": true,
+    "free_graph_homology_quotient": true,
+    "smooth_affine_source_requires_tree": true,
+    "smoothness_explicit_in_higher_degrees": true,
+    "tree_sufficient_for_affine_cover": false
+  },
+  "consequences": {
+    "transitive_pieces_force_transitive_abelian_peripheral": true,
+    "meridian_semiregularity_all_degrees": true,
+    "transitive_quartic_pieces_force_companion_4cycle": true,
+    "whole_graph_not_separate_edge_counts": true,
+    "only_dcycles_asserted_in_higher_degrees": false
+  },
+  "periodic": {
+    "primitive_actual_binomial_trefoil_key_required": true,
+    "quartic_eta_zero_forces_parameter_w_plus_one": true,
+    "period": 12,
+    "period_from_exact_group_exponent": true,
+    "all_windings_at_least_two": true,
+    "residue_certificates": {
+      "0": {
+        "total_representations": 0,
+        "conjugacy_classes": 0,
+        "tree_classes": 0,
+        "orbits": []
+      },
+      "1": {
+        "total_representations": 0,
+        "conjugacy_classes": 0,
+        "tree_classes": 0,
+        "orbits": []
+      },
+      "2": {
+        "total_representations": 72,
+        "conjugacy_classes": 3,
+        "tree_classes": 3,
+        "orbits": [
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 3,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              1,
+              0,
+              2,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 3,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              2,
+              1,
+              0,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 3,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          }
+        ]
+      },
+      "3": {
+        "total_representations": 72,
+        "conjugacy_classes": 3,
+        "tree_classes": 3,
+        "orbits": [
+          {
+            "a": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "tau": [
+              1,
+              0,
+              2,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 6,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0
+                  ],
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 4,
+              "edge_count": 3,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "tau": [
+              2,
+              1,
+              0,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 6,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0
+                  ],
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 4,
+              "edge_count": 3,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              1,
+              2,
+              3,
+              0
+            ],
+            "b": [
+              2,
+              3,
+              0,
+              1
+            ],
+            "beta": [
+              1,
+              2,
+              3,
+              0
+            ],
+            "tau": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "orbit_size": 24,
+            "companion_order": 4,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2,
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 2,
+              "edge_count": 1,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          }
+        ]
+      },
+      "4": {
+        "total_representations": 0,
+        "conjugacy_classes": 0,
+        "tree_classes": 0,
+        "orbits": []
+      },
+      "5": {
+        "total_representations": 0,
+        "conjugacy_classes": 0,
+        "tree_classes": 0,
+        "orbits": []
+      },
+      "6": {
+        "total_representations": 0,
+        "conjugacy_classes": 0,
+        "tree_classes": 0,
+        "orbits": []
+      },
+      "7": {
+        "total_representations": 0,
+        "conjugacy_classes": 0,
+        "tree_classes": 0,
+        "orbits": []
+      },
+      "8": {
+        "total_representations": 168,
+        "conjugacy_classes": 7,
+        "tree_classes": 4,
+        "orbits": [
+          {
+            "a": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "tau": [
+              1,
+              0,
+              2,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 3,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0
+                  ],
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    1,
+                    2,
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 3,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 2,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 1
+            }
+          },
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 3,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 2,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 1
+            }
+          },
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              1,
+              0,
+              2,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 3,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              2,
+              1,
+              0,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 3,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              2,
+              0,
+              1,
+              3
+            ],
+            "tau": [
+              3,
+              1,
+              2,
+              0
+            ],
+            "orbit_size": 24,
+            "companion_order": 12,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 2,
+              "edge_count": 2,
+              "components": 1,
+              "cycle_rank": 1
+            }
+          }
+        ]
+      },
+      "9": {
+        "total_representations": 144,
+        "conjugacy_classes": 6,
+        "tree_classes": 6,
+        "orbits": [
+          {
+            "a": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "tau": [
+              1,
+              0,
+              2,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 6,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0
+                  ],
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 4,
+              "edge_count": 3,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "b": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "beta": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "tau": [
+              2,
+              1,
+              0,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 6,
+            "cable_order": 6,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0
+                  ],
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    1,
+                    2
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                },
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    1
+                  ],
+                  "right": [
+                    "cable",
+                    1
+                  ]
+                }
+              ],
+              "vertices": 4,
+              "edge_count": 3,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "b": [
+              1,
+              2,
+              0,
+              3
+            ],
+            "beta": [
+              3,
+              0,
+              1,
+              2
+            ],
+            "tau": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "orbit_size": 24,
+            "companion_order": 24,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2,
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 2,
+              "edge_count": 1,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "b": [
+              1,
+              2,
+              0,
+              3
+            ],
+            "beta": [
+              3,
+              0,
+              1,
+              2
+            ],
+            "tau": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 24,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2,
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 2,
+              "edge_count": 1,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "b": [
+              1,
+              2,
+              0,
+              3
+            ],
+            "beta": [
+              3,
+              0,
+              1,
+              2
+            ],
+            "tau": [
+              1,
+              0,
+              2,
+              3
+            ],
+            "orbit_size": 24,
+            "companion_order": 24,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2,
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 2,
+              "edge_count": 1,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          },
+          {
+            "a": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "b": [
+              1,
+              2,
+              0,
+              3
+            ],
+            "beta": [
+              3,
+              0,
+              1,
+              2
+            ],
+            "tau": [
+              3,
+              1,
+              2,
+              0
+            ],
+            "orbit_size": 24,
+            "companion_order": 24,
+            "cable_order": 24,
+            "graph": {
+              "vertex_orbits": {
+                "companion": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "cable": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                ]
+              },
+              "edges": [
+                {
+                  "base_edge": 0,
+                  "letters": [
+                    0,
+                    1,
+                    2,
+                    3
+                  ],
+                  "left": [
+                    "companion",
+                    0
+                  ],
+                  "right": [
+                    "cable",
+                    0
+                  ]
+                }
+              ],
+              "vertices": 2,
+              "edge_count": 1,
+              "components": 1,
+              "cycle_rank": 0
+            }
+          }
+        ]
+      },
+      "10": {
+        "total_representations": 0,
+        "conjugacy_classes": 0,
+        "tree_classes": 0,
+        "orbits": []
+      },
+      "11": {
+        "total_representations": 0,
+        "conjugacy_classes": 0,
+        "tree_classes": 0,
+        "orbits": []
+      }
+    },
+    "determinant_square_gate": 9,
+    "combined_period": 36,
+    "allowed_mod36": [
+      3,
+      8,
+      9,
+      15,
+      21,
+      26,
+      27,
+      33
+    ],
+    "allowed_odd": "w=3 mod6",
+    "allowed_even": "w=8 mod18",
+    "w8_mod12_cycle_classes": 3,
+    "even_w8_mod36_tree_classes": 4,
+    "even_w26_mod36_tree_classes": 3,
+    "all_passing_infinity_types_realized": false
+  },
+  "assurance": {
+    "written_unbounded_proofs": true,
+    "exhaustive_finite_group_certificate_after_period_reduction": true,
+    "finite_search_inferred_unbounded_theorem": false,
+    "symplectic_filling_imported": false,
+    "named_boundary_manifold_identification_used": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "finite_Keller_map": false,
+    "affine_monodromy_extension_supplied": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_orbit_tree.py": "788dc33b9df66e45574a06f102e59bcab61a9e826ccc182563ddd1d153d7e739",
+    "MONODROMY_ORBIT_TREE_AND_UNBOUNDED_WINDING.md": "a11a9db5d30a25ffb8a83d5bc64d3ba7988f8f969969bff5f77f605ee36c810c",
+    "sources/orbit-tree/manifest.json": "950971995eb4d8738fb2561081513f8ebb8c194694dc83ac382014d9d81d60ea",
+    "sign_square_receipt.json": "d492c656e01406bc15144d1cddecb8044d4ddc9a4b1753c1f5d4c089170a6dbd",
+    "peripheral_zero_receipt.json": "1fe0848c93917e4f951e8254257e7076a3d2ea3fd6fee05eeb8ad93edba24b22",
+    "marked_end_lattice_receipt.json": "0d0e1f435fa04818a1c3d6b8951e21d21b0234135588a91f462b92a33b951e31",
+    "sources/marked-end-lattice/weidmann-root-adjoined.pdf": "d09adb02baad1b15cd678d830e747adbfa9b7c148e34e9a1db311f5d55acc6be",
+    "sources/quartic-cabling/neumann-norbury-orevkov.pdf": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+    "sources/quartic-colouring/livingston-melvin-1985.pdf": "d045314f7c3af26696f382cfda15bda9dfdfa095ab9f5414c4ff05dbdbf6422d"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

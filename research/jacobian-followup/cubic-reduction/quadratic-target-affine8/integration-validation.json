@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "claim": "KCUB43",
+  "integration_checker_sha256": "af4f98902b87910c4117b844cab3c1ab6f5a56916939b934024a366d0e9f73e8",
+  "main_receipt_sha256": "0e86b22e0f47391ff898be4ad73d8b7688a23afe4fd6351dc7c49261f580e5d8",
+  "proof_sha256": "3b35e34941e06eae2c275bcd9b7e7a134ae909273201577f4e77a418228173b1",
+  "all_input_import_and_parent_receipt_pins_current": true,
+  "complete_shear_entries": 483,
+  "all_six_parameter_centre_rank_branches": true,
+  "both_generic_equality_obstructions_checked": true,
+  "nonlinear_family_minimum_interval": [
+    16,
+    19
+  ],
+  "nonlinear_family_sharp_minimum_established": false,
+  "complete_degree8_target_affine_class_sharp_minimum": 13,
+  "equality_requires_zero_shear_and_old_monomial_frames": true,
+  "no_solver_or_candidate_grid": true,
+  "matching_control_is_not_global_improvement": true,
+  "dependency_graph_acyclic": true,
+  "affected_method_reviews": 27,
+  "work_fingerprints_current": true,
+  "links_compilation_whitespace": true,
+  "previous_goal_turn_classification": "progress:KCUB42",
+  "this_goal_turn_classification": "progress:KCUB43 complete joint-affine first-target-layer closure and nonlinear lower16",
+  "goal_complete": false,
+  "global_positive_bounds_and_unrestricted_profiles_unchanged": true,
+  "next_gate_at_KCUB43_stage": "Preflight a genuine positive-axis quadratic source shear and full target-field repair,with all coefficient-zero strata and universal certificate coverage.",
+  "navigation_attempts_current_parent_state": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    }
+  ],
+  "navigation_boundary": "Actual current-state attempts retained from the freshly rerun parent chain;two unrelated missing artifacts still block rendering. No generated status hand edit or artifact reconstruction."
+}

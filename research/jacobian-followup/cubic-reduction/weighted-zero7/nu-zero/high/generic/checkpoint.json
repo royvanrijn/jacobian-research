@@ -1,0 +1,8 @@
+{
+  "input_sha256": "64199ef7f0052be75b147eaf82a09b5f3f5f4b37d9b537a7eedf99978895d8f2",
+  "mode": "generic",
+  "seconds": 0.005,
+  "source_sha256": "cc6785fd193cab6def8e2398792154faaa7e330fb4ff54557508fab7f8de91f1",
+  "status": "primary-high-w-basis",
+  "variables": 13
+}

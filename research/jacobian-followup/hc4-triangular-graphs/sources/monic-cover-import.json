@@ -1,0 +1,41 @@
+{
+  "review_date": "2026-11-14",
+  "title": "Normal monogenic covers: etale normality, inertia, purity and finite-cover comparison",
+  "sources": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/025P",
+      "retained_file": "stacks-monic-normal-etale-025P.html",
+      "sha256": "3830cb8d28566941d9eb78bedcf40dffd2d8faddc70edfa6064053932ce869d0",
+      "role": "Proposition 41.19.7: normality is preserved by an etale local ring map. Used after etale Keller base change of a normal monogenic cover."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BSD",
+      "retained_file": "stacks-monic-inertia-0BSD.html",
+      "sha256": "cd127a5a3b7d2b586600d03cc2a810bf400af445f77fb9d1248aa55f41082253",
+      "role": "Section 58.13, inertia definition, Lemmas 58.13.1-2, Example 58.13.3 and Lemma 58.13.4: inertia kernels describe the unramified quotient; for a regular base codimension-one inertia suffices by purity."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BMB",
+      "retained_file": "stacks-monic-purity-0BMB.html",
+      "sha256": "37a491b9ddf1fed9ccbc333dfd635731e6394e64c0d1d5a27a323a63b65e8585",
+      "role": "Lemma 58.21.4: a quasi-finite normal cover of a regular base, unramified in codimension one, is etale. Applied only to a finite normal quotient cover over complex affine space."
+    },
+    {
+      "url": "https://www.jmilne.org/math/CourseNotes/LECc.pdf",
+      "retained_file": "milne-finite-etale-covers-lec-2.21.pdf",
+      "sha256": "718182f1a55d3af6b71f0d2faa5836851fb8611f1d7276896e3d5affdf28697b",
+      "role": "Retained version 2.21, printed page 28, paragraph before Theorem 3.4: finite etale complex covers give finite topological coverings. Only this forward direction is used; contractibility of C^n then excludes a connected cover of degree greater than one."
+    }
+  ],
+  "primary_statements_and_applicability_reviewed": true,
+  "resultant_and_integral_root_collision_argument_proved_in_note": true,
+  "only_codimension_one_inertia_over_regular_complex_affine_base_used": true,
+  "normality_or_purity_theorems_fully_reproved": false,
+  "full_Riemann_existence_essential_surjectivity_used": false,
+  "full_splitting_group_preservation_inferred_from_root_transitivity": false,
+  "global_monogenicity_inferred_from_generic_primitive_element": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

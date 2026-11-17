@@ -24,6 +24,8 @@ From the repository root:
 .venv/bin/python research/jacobian-followup/sparse-eight/verify_coordinate_gates.py
 ```
 
-Nine-term attainment remains open. Global degree minima and unrestricted
-support or special-form dimension minima are separate questions.
+The [nine-term successor](../sparse-nine/README.md) raises the current
+normalized lower bound to ten and supplies a 49-term example. Its gated
+proof imports the plane degree theorem; the eight-term rational coefficient
+proof here remains preserved. Global complexity minima remain open.
 

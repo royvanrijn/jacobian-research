@@ -1,0 +1,28 @@
+{
+  "scope": "finite coefficient identities and illustrative numerical consistency only",
+  "exact_checks": 50,
+  "all_exact_checks_pass": true,
+  "numerical_consistency": [
+    {
+      "m": 10,
+      "normalized_real": "0.546232023385016161073952611620310278721011435149722043426894",
+      "normalized_imag": "0.966130864549417825991613401314123708344554577784711943638672",
+      "distance_to_exp_i": "0.12480082999323565707188050723543242105848439148726421551406"
+    },
+    {
+      "m": 30,
+      "normalized_real": "0.543752980652020295773728771110184064323471174404341975582307",
+      "normalized_imag": "0.879886408979867773544649330758418679949495431534876273452655",
+      "distance_to_exp_i": "0.0385700916615009300238530558464097081853576258153858715473157"
+    },
+    {
+      "m": 80,
+      "normalized_real": "0.541726226643279034475356634397470176503333015970366573503876",
+      "normalized_imag": "0.855552353208880111454138408248228834445003661076629615565618",
+      "distance_to_exp_i": "0.0141531793748999350666333226762352009608798609206728294949521"
+    }
+  ],
+  "universal_limit_proof": "INACTIVE_VARIABLE_FACTORIAL_EXTENSION_2026_11_16.tex",
+  "independent_review": false,
+  "registered_theorem": false
+}

@@ -1,0 +1,13 @@
+# Embedded-line cancellation without a boundary-extension hypothesis
+
+Reviewed 15 November 2026. [Proof](PROOF.md), [source pins](sources.json). Publication priority of the deductions is unverified.
+
+[Gwozdziewicz, Injectivity on one line (1993)](https://arxiv.org/html/alg-geom/9305008v1), Theorem1.1, and the Abhyankar--Moh rectification input explicitly cited there are retained as HC4MYGL0. If a plane Keller target sends a polynomial curve to a closed embedding, the coordinate-ring sandwich first makes that curve a closed embedding. Rectify it and apply the published line theorem. This cancellation observation uses no plane completion and no control over poles away from the curve.
+
+The previous UAPLANEATOM1 boundary-pole condition was a valid necessary condition under its polynomial-r assumptions. The new argument strengthens it: all signal-retaining whole native factorizations have invertible target factor, even with negative Laurent-r outputs. Thus that former candidate route is completed, not a reason to run more Laurent-degree searches.
+
+[Stacks Section29.37, tag02GH](https://stacks.math.columbia.edu/tag/02GH) supplies standard etale base change, composition, smoothness and quasi-finiteness. [Proposition41.6.1, tag024T](https://stacks.math.columbia.edu/tag/024T) gives open-and-closed sections of separated unramified maps. The intermediate surface is the actual geometric generic fibre of the retained target tuple on an intermediate affine space, not a claimed affine-plane form or a chosen whole-source chart.
+
+The saturation input is UAQFSAT1, with its explicit Trushin Proposition3.1.1 public precedent recorded in the prior plane-completion audit. Localizing the two whole Keller factors only at base functions gives both intermediate saturation identities. The two whole factors miss only codimension-at-least-two sets; their generic retained fibres therefore miss at most finitely many target points. This persists after geometric scalar extension and excludes open immersions missing a target divisor, even though the intermediate surface may have nonconstant units.
+
+The remaining factor problem is a non-plane intermediate surface with the exact embedded field, ring, whole curve component and global algebraization data. Generic etale self-maps of the source hyperbola complement exist in every degree, but their canonical whole-source lifts have poles and the wrong volume. Neither these examples nor the listed necessary conditions produce a proper whole polynomial factor or settle absolute stable atomicity. Multi-block canonical receivers require an independently established two-dimensional fibre and curve witness.

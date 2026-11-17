@@ -1,0 +1,7 @@
+{
+  "completed": false,
+  "returncode": 1,
+  "input_sha256": "3c5dd889cac4be0d9255faa8e30fab0930b8e057a54ba28d6d439b011002c878",
+  "stdout": "Universal endpoint and odd source/phase identities passed\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_endpoint_degrees_and_odd_prefixes.py\", line 222, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_endpoint_degrees_and_odd_prefixes.py\", line 205, in main\n    W=1+t**3+A*y+sum(K**k*(2+t**(3-k))/y**k for k in [1,2,3]);conics.append(model('p1_K'+str(kd)+'_A'+str(A),s.expand(W),K))\n                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_endpoint_degrees_and_odd_prefixes.py\", line 51, in model\n    ed=int(s.degree(endpoint,t));assert ed in [0,1]\n                                        ^^^^^^^^^^^\nAssertionError\n"
+}

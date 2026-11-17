@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-17",
+  "new_claims": [
+    "GMCLOGEXCLUDE20261117",
+    "GMCRATIONALPRIMITIVE20261117"
+  ],
+  "new_lesson": "METHOD-GAUSSIAN-LOGARITHM-AND-RATIONAL-PRIMITIVE-EXCLUSION-20261117",
+  "retained_lessons_updated": [
+    "METHOD-GAUSSIAN-KLOOSTERMAN-AND-FAITHFUL-SYMMETRIC-IMAGES-20261116",
+    "METHOD-GAUSSIAN-G-FUNCTIONS-AND-REGULAR-CORE-20261117",
+    "METHOD-GAUSSIAN-SAFE-SEED-AND-PRIMITIVE-VACUUM-20261117"
+  ],
+  "owned_work": "WORK-GAUSSIAN-FORMAL-GENERAL",
+  "proof_mode": "Written all-degree elementary congruence and derived rational-primitive/unipotent exclusion;no new executable checker or experiment. Scoped metadata/hash/link validation only.",
+  "canonical_proofs_sha256": {
+    "jacobian-followup/moment-vanishing-audit/GAUSSIAN_LOGARITHM_EXCLUSION_AND_RATIONAL_PRIMITIVES.md": "057c6d0a3d59dcd6dba487f5b8909f84da25d66ed7409a3622d6428c01fecb3e"
+  },
+  "frontier": "jacobian-followup/moment-vanishing-audit/GENERAL_GAUSSIAN_RESEARCH_FRONTIER_20261117_NO_LOGARITHM.md",
+  "frontier_sha256": "66ef4fd93dd1c3186aa5ee2b987d2ad0d9a8192cf07c4b9abcfd4f83cbaefff4",
+  "retained_import_files_sha256": {
+    "jacobian-followup/moment-vanishing-audit/CRITICAL_NORMALIZATION_AND_RANK_ONE_ARITHMETIC.md": "fa0b5a57eee4afc90960ebc9470ce42a1df15b63cf06be53a61152f6ae7d1dba",
+    "jacobian-followup/moment-vanishing-audit/GAUSSIAN_G_FUNCTIONS_AND_GLOBAL_REGULAR_CORE.md": "bf071e7ac5f8c544a804ab9794812bfb18e5155c9907f2812f122176c2aafaba",
+    "jacobian-followup/moment-vanishing-audit/GLOBAL_EULER_AND_GAUSSIAN_PULLBACK_LATTICES.md": "3e98386dacb21010acccae0da81954f51e976f99a65f35eb91805830eb21c7a6",
+    "jacobian-followup/moment-vanishing-audit/GAUSSIAN_KLOOSTERMAN_QUOTIENTS_AND_FAITHFUL_SYMMETRIC_IMAGES.md": "4807af9edb1b4c1a8d529244c692d8eb5c0b38fc0b31b5147f8fa0e45aed496f",
+    "jacobian-followup/moment-vanishing-audit/SAFE_SEED_DIVISIBILITY_AND_PHASE_MARKER_FILTRATION.md": "8aacce1d3c97bfd3b255eea883e956169984046886bafe128758d24a1b32b87a",
+    "jacobian-followup/moment-vanishing-audit/TIME_ZERO_SATURATION_AND_PRINCIPAL_PART_RECONSTRUCTION.md": "6338ac84e85d133b96a67f9d1fdf7e0676d4a935e7b799a2f7cf0beaae35ef75",
+    "jacobian-followup/moment-vanishing-audit/OAKU_GRAPH_CERTIFICATES_AND_ACTUAL_POLYNOMIAL_DECISION.md": "dd0a050d4bc8538b40f2ec2aafbbe5842179b21ef70c58c157af734a50595229",
+    "jacobian-followup/moment-vanishing-audit/BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md": "a2cff821b7cee9629235dec935ad231b3db389a03b3fca650b9a35c935451cd9",
+    "jacobian-followup/moment-vanishing-audit/sources/furnsinn_pannier_2510_00892v3.html": "7d3183282cd1d2a0946c97749c9f19d6523982d1eacc5997af5d010999322b2c"
+  },
+  "primary_source_checked": {
+    "url": "https://arxiv.org/html/2510.00892v3#S2",
+    "retained_file": "jacobian-followup/moment-vanishing-audit/sources/furnsinn_pannier_2510_00892v3.html",
+    "sha256": "7d3183282cd1d2a0946c97749c9f19d6523982d1eacc5997af5d010999322b2c",
+    "scope": "Full Section2 rational-primitive zero-residue criterion reread;no multiplicative first-order algorithm or lecture-only algebraic-primitive theorem imported."
+  },
+  "user_supplied_candidate": "Pure phase with original PhiQ=-log(1-t),equivalently EQ0 and E QP^m=(m-1)!;ALL original markers regular was required for realization.",
+  "proof_audit": {
+    "direct": "Gaussian moment modulo odd p kills (X_i^p),then Frobenius gives E QP^p=P0^p EQ. Log raw moment(p-1)!is a unit;contradiction before any other-marker regularity assumption.",
+    "field_descent": "One finite Z-domain for all raw moments;positive-characteristic fibers after every finite localization;literal target descends through prime ideals over any nonzero Q-algebra.",
+    "primitive": "Finite-arithmetic rational primitive has zero residues from D^p h0 and partial fractions. For actual Gaussian h,Dh rational gives a globally Fuchsian cyclic equation;retained regular-core action0 and arithmetic model supply the finite ring. Trace handles constant extensions.",
+    "unipotent": "A second trivial extension step would contain 1 and independent h with Dh rational;primitive rigidity contradicts independence. Only embedded submodules,not arbitrary quotients or all regular modules.",
+    "old_extensions": "Normalized Euler degb>0 nonterminating keeps positive slope;termination or degree0 loses actual rank. Linear case irregular factor exp(-1/(a t)) retained;no nonminimal-source limit imported."
+  },
+  "concurrent_protected_baseline_refresh": {
+    "records": {},
+    "files": {}
+  },
+  "protected_whole_records": 207,
+  "prior_example_files": 211,
+  "retained_real_region_example_files": 11,
+  "retained_primary_backend_example_files": 37,
+  "checker": null,
+  "artifact_hash": null,
+  "actual_image_kernel_computed": false,
+  "new_research_calculation_run": false,
+  "old_terminal_UNKNOWN_jobs_restarted": false,
+  "logarithm_candidate_excluded": true,
+  "rational_primitive_route_excluded": true,
+  "embedded_unipotent_rank_above_one_excluded": true,
+  "field_safety_implies_purity_resolved": false,
+  "primitive_vacuum_rigidity_resolved": false,
+  "nonpure_safe_Gaussian_field_counterexample_claimed": false,
+  "rank_at_least_two_realization_resolved": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claimed": false,
+  "next_full_obligation": "GENERAL LOGARITHM/PRIMITIVE EXCLUSION MILESTONE17November2026: GENERAL LOGARITHM/PRIMITIVE EXCLUSION17November2026: GMCLOGEXCLUDE20261117 closes the USER proposed pure-unit/logarithm candidate by EXCLUSION,even without purity or regularity of other markers. Gaussian raw-moment Frobenius gives E[QP^p]=P(0)^p EQ modulo every good odd prime;EQ0 contradicts logarithmic moment(p-1)!nonzero. This works over ALL characteristic-zero fields by finite arithmetic fibers and excludes the literal target over every NONZERO Q-algebra. GMCRATIONALPRIMITIVE20261117 proves h in FULL actual generic image with Dh rational must be rational,also D^N h rational. Its Fuchsian cyclic equation forces critical action0;finite arithmetic coefficients then kill rational residues by D^p h0 in positive characteristic. Thus no nontrivial embedded unipotent module with trivial successive quotients,no K(t)+K(t)log extension and no polylogarithm can occur as an actual Gaussian submodule. Arbitrary quotients and general regular modules are NOT excluded. The old normalized Euler extensions stay irregular while deg b>0 unless the selected series terminates;degree0 collapses to rational selected image rather than a logarithm. General ORIGINAL regular transcendental realization outside this unipotent route remains OPEN,with ALL-marker regularity mandatory. The separate rank1 primitive-vacuum/safety=>purity and exhaustive safe-phase/original-filtration problems remain OPEN. Broad goal ACTIVE;all assurancefalse. NEXT GENERAL OBLIGATION:rank1 primitive ORIGINAL vacuum/divisibility under ALL-marker safety or genuine safe nonpure field example;exhaustive safe phase structure WITH original filtration;SEPARATELY regular transcendental realization outside trivial-successive-quotient unipotent systems,with EVERY original marker regular. The logarithm/rational-original-primitive route is CLOSED by exclusion;do not restart it using only a scalar selected period. General finite-primary backend gate is CLOSED. Preserve all prior packets,UNKNOWN terminals and separate Mathieu/SIC ownership. No outreach,delegation or deeper finite campaign."
+}

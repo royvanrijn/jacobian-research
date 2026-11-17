@@ -1,0 +1,122 @@
+{
+  "status": "exact-primary-coefficient-powers",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "input_sha256": "6542defecc87eda981747e5127f2aade4c8b80ecbcf3940336adede37e09dc0b",
+  "script_sha256": "b60717408a3300c6b52ddb4cf98bb78e223c6e52b438c4accbfe3af16a27816f",
+  "targets": [
+    {
+      "parameter": 0,
+      "power": 4,
+      "multipliers": [
+        [],
+        [
+          {
+            "exponent": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-15/8"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-105/32"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-105/32"
+          }
+        ],
+        [],
+        [
+          {
+            "exponent": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "-3/8"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "45/16"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "135/32"
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "135/32"
+          }
+        ],
+        [
+          {
+            "exponent": [
+              3,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "exponent": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "15/16"
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-45/8"
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-225/32"
+          }
+        ]
+      ]
+    }
+  ],
+  "unresolved_parameters": []
+}

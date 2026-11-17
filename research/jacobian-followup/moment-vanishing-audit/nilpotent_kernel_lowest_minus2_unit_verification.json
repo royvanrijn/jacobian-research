@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "chart": "lowest_minus2",
+  "prefix": 10,
+  "method": "Direct exact rational polynomial multiplication with FLINT; no standard-basis oracle.",
+  "multiplier_nonzero_term_counts": [
+    72,
+    83,
+    34,
+    41,
+    14,
+    17,
+    0
+  ],
+  "witness_sha256": "3a27c6146210960792f5db0c212bb4513d106c88508bd1b34937c7a30d9724b3",
+  "checker_sha256": "0ca652a53760b7db3c9627b983254d39e9966b6c8757408c8e78b3a6e3c5d41a",
+  "elapsed_seconds": 0.178
+}

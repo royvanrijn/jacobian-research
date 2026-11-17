@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "source_sha256": "2f0e367080699827e60139dd8ee1e35eea9d0577e2ebc73dba4aed0185377f4d",
+  "models": [
+    {
+      "r": 4,
+      "input": "r4.json",
+      "input_sha256": "9bc7c9fb34400e5510ecc5a97117afd93f70f3f32205efd0cc27b7c66d712287",
+      "nonlinear_slots": 12,
+      "native_generators": 15
+    },
+    {
+      "r": 5,
+      "input": "r5.json",
+      "input_sha256": "4c6bdac482619d1a972beb35346a0ed964b3cf6fc3b6a13df7f3a400f6a218db",
+      "nonlinear_slots": 12,
+      "native_generators": 15
+    }
+  ],
+  "structural_identities_sha256": "3667ba3a5df1058c78358d386800f879e72103ea05643f1f8a7b31c6c0b76743",
+  "new_method": "integer-boundary leading-power subtraction, graph transverse resonance and four-term one-variable unit; no old native ideal replay or cap increase",
+  "old_four_native_timeouts_unchanged": true
+}

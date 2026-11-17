@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "completed": true,
+  "input": {
+    "dimension": 2,
+    "phase_terms": [
+      [
+        [
+          1,
+          0
+        ],
+        "1"
+      ]
+    ],
+    "symbol_terms": [
+      [
+        [
+          0,
+          1
+        ],
+        "1"
+      ]
+    ]
+  },
+  "ordinary": {
+    "B_terms": [
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "1"
+      ]
+    ],
+    "Q_terms": [],
+    "graph_witness": [
+      [],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      [],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      []
+    ]
+  },
+  "eta": {
+    "cleared_B_terms": [
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "1"
+      ]
+    ],
+    "cleared_Q_terms": [],
+    "generic_coefficient_denominator_cleared": "1",
+    "torsion_polynomial_terms": [
+      [
+        [
+          1
+        ],
+        "1"
+      ]
+    ],
+    "graph_witness": [
+      [],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      [],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      []
+    ]
+  },
+  "certificate_summary": {
+    "polynomial_terms": [
+      [
+        [
+          1,
+          0
+        ],
+        "1"
+      ]
+    ],
+    "validity_start": 1,
+    "step_bound": 0
+  },
+  "graph_generators": [
+    [
+      [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "-1"
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "1"
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "1"
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "1"
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "1"
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "-1"
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "-1"
+      ]
+    ]
+  ],
+  "specialization_thresholds": {
+    "ordinary_graph_relation_start": 0,
+    "order_constraint_start": 0,
+    "nonvanishing_and_steps_start": 1,
+    "ordinary_scalar_nonnegative_integer_roots": [
+      0
+    ]
+  },
+  "specialization": "Unlocalized graph evaluation at EVERY nonnegative first exponent;second exponent uses eta localization only.",
+  "stages": [
+    {
+      "stage": "first",
+      "script_sha256": "1ff30b380b0e5f12f867dec26f50d570557b6cd7d41b5c9c515d7d295b434e2e",
+      "stdout_sha256": "6c4b14f121e6d051ea9017ebbaeb0658b86a7b9a268b491ab766dccb0ae5ccb8"
+    },
+    {
+      "stage": "second",
+      "script_sha256": "9cb18a4eaffa8969e56708c0832c55253b651a608e2b6c08bf7f311cdb932aed",
+      "stdout_sha256": "af632afaeb587fac184ac2b8cf66ea4e7ec787ae6a267132fdb1d402465ce9ee"
+    }
+  ],
+  "normal_form_checks": {
+    "ordinary": "0",
+    "eta_generic": "0",
+    "ordinary_graph": "0",
+    "eta_graph": "0"
+  },
+  "exact_rational_Weyl_witness_verification": true,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

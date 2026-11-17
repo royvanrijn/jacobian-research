@@ -1,0 +1,138 @@
+{
+  "claim": "QTC1",
+  "status": "PASS",
+  "forward_composition": {
+    "factor_matrix_sizes": [
+      2,
+      2
+    ],
+    "composite_matrix_size": 4,
+    "factor_degree_bounds": [
+      3,
+      3
+    ],
+    "composite_degree": 6,
+    "product_degree_bound": 9,
+    "all_six_relations": "PASS",
+    "classical_composition_order": "chi(psi)",
+    "parameters_independent": [
+      "h",
+      "t"
+    ],
+    "special_idempotent": "e11",
+    "actual_Long_carrier": false
+  },
+  "Long_off_diagonal": {
+    "cubic_factorization": "PASS",
+    "diagonal_idempotent": "PASS",
+    "quadratic_relation": "w^2=Q",
+    "second_source_v": "w*(w-A)/(4*r)",
+    "other_factor_already_unit": "(w-A)*(w+A)=-8*r*v",
+    "admitted_ring": "S0[w,w^-1]/(w^2-Q)",
+    "contains_Q_inverse": true,
+    "interior_branch_point": {
+      "r": 1,
+      "a": 1,
+      "v": "1/8"
+    },
+    "finite_over_original_source": false,
+    "finite_etale_after_inverting_Q": true,
+    "universal_nonfiniteness_uses_written_integrality_argument": true
+  },
+  "generic_index_arithmetic": [
+    {
+      "factor_completed_degrees": [
+        1,
+        1
+      ],
+      "factor_generic_indices": [
+        3,
+        3
+      ],
+      "composite_excess": 8
+    },
+    {
+      "factor_completed_degrees": [
+        3,
+        1
+      ],
+      "factor_generic_indices": [
+        3,
+        3
+      ],
+      "composite_excess": 6
+    },
+    {
+      "factor_completed_degrees": [
+        3,
+        3
+      ],
+      "factor_generic_indices": [
+        4,
+        5
+      ],
+      "composite_excess": 11
+    },
+    {
+      "factor_completed_degrees": [
+        3,
+        3
+      ],
+      "factor_generic_indices": [
+        3,
+        3
+      ],
+      "composite_excess": 0
+    }
+  ],
+  "actual_QNI_iterates": {
+    "source": "QNI1",
+    "ranks": "n>=3",
+    "generic_left_and_right_indices": "3^k",
+    "completed_degree": 1,
+    "forward_degree_bound": "12^k",
+    "arbitrary_identity_contact": true,
+    "k_range": "all k>=1",
+    "universal_proof": "forward composition and index tower law",
+    "new_rank_two_example": false
+  },
+  "research_context": [
+    {
+      "source": "https://stacks.math.columbia.edu/tag/02LA",
+      "used": "Finiteness descends under the fpqc map X->f(X)."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/0BMB",
+      "used": "Finite etale covers extend across a codimension>=2 complement in regular affine space by purity."
+    },
+    {
+      "source": "https://www.jmilne.org/math/CourseNotes/LECc.pdf#page=27",
+      "used": "Characteristic-zero affine space has no nontrivial geometrically connected finite etale covers."
+    },
+    {
+      "source": "https://arxiv.org/html/2604.16636v1",
+      "used": "Theorem4.6 is a first-order Azumaya lifting criterion; it gives no uniform finite realization theorem."
+    },
+    {
+      "source": "https://arxiv.org/html/2601.23110v1",
+      "used": "The Weyl degree<prime result concerns injectivity and first-order Witt lifting, not all-order bounded support."
+    }
+  ],
+  "coverage_boundary": "Integral progenerator, block composition, multiplicative division indices, self-correspondence nonfiniteness and evaluation-kernel reduction are written proofs. Symbolic positive controls are actual forward full Weyl actions. The Long root algebra is a classical correspondence; its nonfiniteness does not exclude a hypothetical original finite carrier. No generic left nonfiniteness is inferred solely from a nonfinite special fiber. First-order arithmetic lifting is not prescribed constant arithmetic support.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "COMPOSITION_DUALITY_AND_BOUNDARY_OF_QUANTUM_GRAPHS.md": "2c3f196f1b87401dfab53da685f2aaabb7f9378d4c6f7e8a3a8f952b87264ce5",
+    "check_quantum_graph_composition.py": "ef4312ee48a2e9fb6c086fe4b0d2f7dbb1aeac1cd7f3ef93fc9d4c127efd599e",
+    "check_matrix_carrier.py": "2695a7c1038d49ffbd084887438fbd07bf19202408d7ff46b8c64139b14eda84",
+    "INTEGRAL_GRAPH_PROJECTIVITY_AND_LATTICE_RIGIDITY.md": "53b0bbaf7b67ff025306ef895f79dee6104d0a6a621a8623946aa7c17b2f825f",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "3293e179bc90ec35d3c16fce45bc64aadd261b38987a8b40159bc01ed788e786",
+    "IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md": "d6438f6730204ef55411826b9583b0194829534f4e8db25b68101a3014476bb4",
+    "identity_lift_controls.json": "09f6e098fa9b9673558acce783b496e22563d7918d5235dd3285e917e0be82e7",
+    "RAMIFICATION_AND_FINITE_CLOSURE_CARRIERS.md": "12d6a5bdee7fe44f96befde0761b5fad9a9a5da635f88427181771b1df8256bb",
+    "ARITHMETIC_COTANGENT_EXCLUSION.md": "87021975badce3b14f98164d26574c0faad364da873eb691eb81cef38a4e7436",
+    "BOUNDED_REALIZATION.md": "85860fda7138b1e38a41341f2f9e830a516793f0c66e3c4778f9e1adf151b8b9"
+  }
+}

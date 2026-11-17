@@ -1,0 +1,25 @@
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/base-quadratic-conjugacy/axis-01/model.sing line 3: `2 - z4^2/3,z3^3,z1 - 3*z2,z1 + z3,z2,z1 - 3*z2 + z3,z3,z1 - 3*z4/2,z2^2,z2*z3;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `I` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/base-quadratic-conjugacy/axis-01/model.sing line 4: `ideal B=std(I);`
+   ? expected ideal-expression. type 'help ideal;'
+BASIS_BEGIN
+`B`
+BASIS_END
+   ? `B` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/base-quadratic-conjugacy/axis-01/model.sing line 8: `print("DIM:"+string(dim(B)));`
+   ? wrong type declaration. type 'help string;'
+   ? `B` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/base-quadratic-conjugacy/axis-01/model.sing line 9: `print("REDUCE_z1:"+string(reduce(z1,B)));`
+   ? wrong type declaration. type 'help string;'
+   ? `B` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/base-quadratic-conjugacy/axis-01/model.sing line 10: `print("REDUCE_z2:"+string(reduce(z2,B)));`
+   ? wrong type declaration. type 'help string;'
+   ? `B` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/base-quadratic-conjugacy/axis-01/model.sing line 11: `print("REDUCE_z3:"+string(reduce(z3,B)));`
+   ? wrong type declaration. type 'help string;'
+   ? `B` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/base-quadratic-conjugacy/axis-01/model.sing line 12: `print("REDUCE_z4:"+string(reduce(z4,B)));`
+   ? wrong type declaration. type 'help string;'

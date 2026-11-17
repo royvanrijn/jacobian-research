@@ -1,0 +1,100 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYKV0",
+    "HC4MYKV1"
+  ],
+  "checks": [
+    "HC4MYKV0 scoped theorem schema,dependencies,assurance and locks",
+    "HC4MYKV1 scoped theorem schema,dependencies,assurance and locks",
+    "new and parent dependency graphs have no cycles",
+    "50 local/provenance controls,19 retained byte pins and13 prior claims bind the proof without old mathematical checker replay",
+    "two cached primary audits import no proved or unproved external premise and keep nonsingular primitive presentation distinct from smoothness",
+    "actual-source classification is universal in degree and embedded field while the full HC4 implication remains explicitly open",
+    "new classification method and three prior methods have exact input/reopening boundaries and current scope fingerprints",
+    "both HC4 actions preserve the full objective,last implication,quartic retirement and deferred external review",
+    "written global proof handles isolated-point Hartogs,Cartier complements,coefficient-field selection,semisimple gluing and exact pole formula",
+    "generated navigation matches current shared authority and current work/method fingerprints"
+  ],
+  "scoped_check_groups": 10,
+  "exact_current_checks": 50,
+  "algebraic_and_scope_controls": 25,
+  "retained_byte_pins": 19,
+  "new_primary_caches": 2,
+  "new_explicit_proved_imports": 0,
+  "all_degree_all_intermediate_differential_subalgebras_classified": true,
+  "finite_Boolean_family_per_intermediate_proved": true,
+  "automatic_normality_finite_generation_and_etaleness_proved": true,
+  "pole_formula_for_every_finite_source_family_proved": true,
+  "integral_primitive_derivative_algebra_equals_canonical_model": true,
+  "generic_linear_source_coordinate_differentially_generates_R": true,
+  "finite_generation_assumed_for_input_subalgebra": false,
+  "intermediate_plane_open_or_boundary_disjointness_assumed": false,
+  "arbitrary_character_summands_allowed_without_coefficient_stability": false,
+  "smooth_D_algebra_inferred_to_have_nonsingular_primitive_hypersurface": false,
+  "Makar_Limanov_unproved_conjecture_imported": false,
+  "differential_Galois_tensor_surjectivity_proved_automatic": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "external_review_deferred": true,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": {
+    "repository_checks": [
+      {
+        "name": "render-navigation",
+        "command": [
+          "make",
+          "render-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+      },
+      {
+        "name": "check-navigation",
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "name": "partial-review",
+        "command": [
+          "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+          "research/scripts/research.py",
+          "check",
+          "--require-partial-review"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+      },
+      {
+        "name": "required-whitespace",
+        "command": [
+          "git",
+          "diff",
+          "--check",
+          "--",
+          "research/MATH_STATUS.json",
+          "research/knowledge/lessons.json",
+          "research/knowledge/work_items.json",
+          "research/jacobian-followup/hc4-triangular-graphs/README.md",
+          "research/index",
+          "research/knowledge/work",
+          "research/knowledge/WORK_LEDGER.md",
+          "research/STATUS.md"
+        ],
+        "exit_code": 0,
+        "output": ""
+      }
+    ],
+    "own_HC4_whitespace_check": {
+      "exit_code": 0,
+      "output": ""
+    }
+  },
+  "repository_check_boundary": "Same pre-existing unrelated missing KDSQ6 consumer and elliptic method artifact;scoped generated views,source locks and metadata are consistent.No missing artifact reconstructed."
+}

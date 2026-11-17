@@ -1,0 +1,7475 @@
+{
+  "date": "2026-11-16",
+  "scope": "finite terminal indices2..32 at exponent6, primes2/3 plus the proved real-place parity restriction",
+  "all_starting_indices_claimed": false,
+  "unresolved_indices": [
+    21,
+    23
+  ],
+  "certificates": [
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 2,
+      "moment_indices": [
+        1,
+        2
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                2,
+                10
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                2,
+                5
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          1,
+          2
+        ],
+        "length": 2,
+        "highest_nonzero_degree": 1,
+        "actual_coefficient_ideal_nilpotence_bound": 2,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 3,
+      "moment_indices": [
+        2,
+        3
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                3,
+                16
+              ],
+              "e": 1,
+              "h": 6,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                3,
+                8
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          2,
+          3
+        ],
+        "length": 6,
+        "highest_nonzero_degree": 3,
+        "actual_coefficient_ideal_nilpotence_bound": 4,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 4,
+      "moment_indices": [
+        3,
+        4
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                4,
+                22
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          3,
+          4
+        ],
+        "length": 12,
+        "highest_nonzero_degree": 5,
+        "actual_coefficient_ideal_nilpotence_bound": 6,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 5,
+      "moment_indices": [
+        4,
+        5
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                5,
+                26
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            2
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                5,
+                14
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          4,
+          5
+        ],
+        "length": 20,
+        "highest_nonzero_degree": 7,
+        "actual_coefficient_ideal_nilpotence_bound": 8,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 6,
+      "moment_indices": [
+        5,
+        6
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                2,
+                10
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                2,
+                10
+              ],
+              "right": [
+                5,
+                27
+              ],
+              "e": 3,
+              "h": 17,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                5,
+                27
+              ],
+              "right": [
+                6,
+                34
+              ],
+              "e": 1,
+              "h": 7,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 2,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 5,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                3,
+                8
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                3,
+                8
+              ],
+              "right": [
+                6,
+                17
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                2,
+                0,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 3,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 3,
+              "e": 1,
+              "residual_factor": [
+                2,
+                2,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          5,
+          6
+        ],
+        "length": 30,
+        "highest_nonzero_degree": 9,
+        "actual_coefficient_ideal_nilpotence_bound": 10,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 7,
+      "moment_indices": [
+        6,
+        7
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                5,
+                26
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                5,
+                26
+              ],
+              "right": [
+                7,
+                39
+              ],
+              "e": 2,
+              "h": 13,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0,
+            2
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 5,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                7,
+                19
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                2
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            1
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 3,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 1
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          6,
+          7
+        ],
+        "length": 42,
+        "highest_nonzero_degree": 11,
+        "actual_coefficient_ideal_nilpotence_bound": 12,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 8,
+      "moment_indices": [
+        7,
+        8
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                8,
+                46
+              ],
+              "e": 4,
+              "h": 23,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                8,
+                22
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                2,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 1,
+              "residual_factor": [
+                2,
+                0,
+                0,
+                1,
+                1
+              ],
+              "residual_degree": 4,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          7,
+          8
+        ],
+        "length": 56,
+        "highest_nonzero_degree": 13,
+        "actual_coefficient_ideal_nilpotence_bound": 14,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 9,
+      "moment_indices": [
+        8,
+        9
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                9,
+                50
+              ],
+              "e": 4,
+              "h": 23,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                9,
+                26
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          8,
+          9
+        ],
+        "length": 72,
+        "highest_nonzero_degree": 15,
+        "actual_coefficient_ideal_nilpotence_bound": 16,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 10,
+      "moment_indices": [
+        9,
+        10
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                2,
+                10
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                2,
+                10
+              ],
+              "right": [
+                10,
+                56
+              ],
+              "e": 4,
+              "h": 23,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            4
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 2,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 1
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                10,
+                28
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          9,
+          10
+        ],
+        "length": 90,
+        "highest_nonzero_degree": 17,
+        "actual_coefficient_ideal_nilpotence_bound": 18,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 11,
+      "moment_indices": [
+        10,
+        11
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                9,
+                50
+              ],
+              "e": 4,
+              "h": 23,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                9,
+                50
+              ],
+              "right": [
+                10,
+                56
+              ],
+              "e": 1,
+              "h": 6,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                10,
+                56
+              ],
+              "right": [
+                11,
+                64
+              ],
+              "e": 1,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 9,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                10,
+                28
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                10,
+                28
+              ],
+              "right": [
+                11,
+                31
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          10,
+          11
+        ],
+        "length": 110,
+        "highest_nonzero_degree": 19,
+        "actual_coefficient_ideal_nilpotence_bound": 20,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 12,
+      "moment_indices": [
+        11,
+        12
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                4,
+                22
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                22
+              ],
+              "right": [
+                10,
+                57
+              ],
+              "e": 6,
+              "h": 35,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                10,
+                57
+              ],
+              "right": [
+                12,
+                70
+              ],
+              "e": 2,
+              "h": 13,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 6,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 6,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                3,
+                8
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                3,
+                8
+              ],
+              "right": [
+                12,
+                34
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 3,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          11,
+          12
+        ],
+        "length": 132,
+        "highest_nonzero_degree": 21,
+        "actual_coefficient_ideal_nilpotence_bound": 22,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 13,
+      "moment_indices": [
+        12,
+        13
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                5,
+                26
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                5,
+                26
+              ],
+              "right": [
+                13,
+                74
+              ],
+              "e": 1,
+              "h": 6,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 5,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 4,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 2
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                13,
+                36
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          12,
+          13
+        ],
+        "length": 156,
+        "highest_nonzero_degree": 23,
+        "actual_coefficient_ideal_nilpotence_bound": 24,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 14,
+      "moment_indices": [
+        13,
+        14
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                2,
+                10
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                2,
+                10
+              ],
+              "right": [
+                5,
+                27
+              ],
+              "e": 3,
+              "h": 17,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                5,
+                27
+              ],
+              "right": [
+                10,
+                56
+              ],
+              "e": 5,
+              "h": 29,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                10,
+                56
+              ],
+              "right": [
+                14,
+                81
+              ],
+              "e": 4,
+              "h": 25,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 2,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 5,
+              "e": 5,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 5,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                13,
+                36
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                13,
+                36
+              ],
+              "right": [
+                14,
+                41
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 13,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          13,
+          14
+        ],
+        "length": 182,
+        "highest_nonzero_degree": 25,
+        "actual_coefficient_ideal_nilpotence_bound": 26,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 15,
+      "moment_indices": [
+        14,
+        15
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                5,
+                26
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                5,
+                26
+              ],
+              "right": [
+                15,
+                86
+              ],
+              "e": 1,
+              "h": 6,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0,
+            2
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 5,
+              "e": 1,
+              "residual_factor": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "residual_degree": 10,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 10,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                3,
+                8
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                3,
+                8
+              ],
+              "right": [
+                12,
+                34
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                12,
+                34
+              ],
+              "right": [
+                13,
+                37
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                13,
+                37
+              ],
+              "right": [
+                15,
+                44
+              ],
+              "e": 2,
+              "h": 7,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 3,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 12,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 13,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          14,
+          15
+        ],
+        "length": 210,
+        "highest_nonzero_degree": 27,
+        "actual_coefficient_ideal_nilpotence_bound": 28,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 16,
+      "moment_indices": [
+        15,
+        16
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                16,
+                94
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 16,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                13,
+                36
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                13,
+                36
+              ],
+              "right": [
+                16,
+                46
+              ],
+              "e": 3,
+              "h": 10,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 13,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          15,
+          16
+        ],
+        "length": 240,
+        "highest_nonzero_degree": 29,
+        "actual_coefficient_ideal_nilpotence_bound": 30,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 17,
+      "moment_indices": [
+        16,
+        17
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                17,
+                98
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 16,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                13,
+                36
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                13,
+                36
+              ],
+              "right": [
+                17,
+                49
+              ],
+              "e": 4,
+              "h": 13,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 9,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 13,
+              "e": 4,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          16,
+          17
+        ],
+        "length": 272,
+        "highest_nonzero_degree": 31,
+        "actual_coefficient_ideal_nilpotence_bound": 32,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 18,
+      "moment_indices": [
+        17,
+        18
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                2,
+                10
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                2,
+                10
+              ],
+              "right": [
+                18,
+                104
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 2,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 16,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                9,
+                26
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                9,
+                26
+              ],
+              "right": [
+                18,
+                53
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 9,
+              "e": 1,
+              "residual_factor": [
+                1,
+                0,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 9,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 9,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "residual_degree": 5,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 5,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          17,
+          18
+        ],
+        "length": 306,
+        "highest_nonzero_degree": 33,
+        "actual_coefficient_ideal_nilpotence_bound": 34,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 19,
+      "moment_indices": [
+        18,
+        19
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                17,
+                98
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                17,
+                98
+              ],
+              "right": [
+                19,
+                110
+              ],
+              "e": 1,
+              "h": 6,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 16,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 17,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                10,
+                28
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                10,
+                28
+              ],
+              "right": [
+                19,
+                55
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 3,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                2,
+                2,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 3,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          18,
+          19
+        ],
+        "length": 342,
+        "highest_nonzero_degree": 35,
+        "actual_coefficient_ideal_nilpotence_bound": 36,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 20,
+      "moment_indices": [
+        19,
+        20
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                4,
+                22
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                22
+              ],
+              "right": [
+                20,
+                116
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            8
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 1
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                10,
+                28
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                10,
+                28
+              ],
+              "right": [
+                20,
+                58
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                2,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "residual_degree": 5,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 5,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                2,
+                0,
+                2,
+                0,
+                2,
+                1
+              ],
+              "residual_degree": 5,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 5,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          19,
+          20
+        ],
+        "length": 380,
+        "highest_nonzero_degree": 37,
+        "actual_coefficient_ideal_nilpotence_bound": 38,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "unresolved_by_supplied_local_data",
+      "terminal_index": 21,
+      "moment_indices": [
+        20,
+        21
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                5,
+                26
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                5,
+                26
+              ],
+              "right": [
+                21,
+                120
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 5,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 1
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                3,
+                8
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                3,
+                8
+              ],
+              "right": [
+                12,
+                34
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                12,
+                34
+              ],
+              "right": [
+                21,
+                61
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 3,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 12,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 9,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 4
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0,
+        2
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0,
+        2
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": null,
+      "theorem": null
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 22,
+      "moment_indices": [
+        21,
+        22
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                2,
+                10
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                2,
+                10
+              ],
+              "right": [
+                5,
+                27
+              ],
+              "e": 3,
+              "h": 17,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                5,
+                27
+              ],
+              "right": [
+                21,
+                121
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                21,
+                121
+              ],
+              "right": [
+                22,
+                130
+              ],
+              "e": 1,
+              "h": 9,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0,
+            8
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 2,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 5,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 21,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                13,
+                36
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                13,
+                36
+              ],
+              "right": [
+                22,
+                63
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 13,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 9,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 4
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          21,
+          22
+        ],
+        "length": 462,
+        "highest_nonzero_degree": 41,
+        "actual_coefficient_ideal_nilpotence_bound": 42,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "unresolved_by_supplied_local_data",
+      "terminal_index": 23,
+      "moment_indices": [
+        22,
+        23
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                5,
+                26
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                5,
+                26
+              ],
+              "right": [
+                21,
+                120
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                21,
+                120
+              ],
+              "right": [
+                23,
+                135
+              ],
+              "e": 2,
+              "h": 15,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 5,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 21,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                13,
+                36
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                13,
+                36
+              ],
+              "right": [
+                22,
+                63
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                22,
+                63
+              ],
+              "right": [
+                23,
+                67
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 13,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 9,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 4
+            },
+            {
+              "edge_left": 22,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0,
+        2
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0,
+        2
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": null,
+      "theorem": null
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 24,
+      "moment_indices": [
+        23,
+        24
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                8,
+                46
+              ],
+              "e": 4,
+              "h": 23,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                8,
+                46
+              ],
+              "right": [
+                20,
+                117
+              ],
+              "e": 12,
+              "h": 71,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                20,
+                117
+              ],
+              "right": [
+                21,
+                123
+              ],
+              "e": 1,
+              "h": 6,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                21,
+                123
+              ],
+              "right": [
+                24,
+                142
+              ],
+              "e": 3,
+              "h": 19,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 8,
+              "e": 12,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 12,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 20,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 21,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                3,
+                8
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                3,
+                8
+              ],
+              "right": [
+                12,
+                34
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                12,
+                34
+              ],
+              "right": [
+                24,
+                70
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                1,
+                0,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 3,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 12,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 12,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 12,
+              "e": 1,
+              "residual_factor": [
+                2,
+                2,
+                0,
+                1
+              ],
+              "residual_degree": 3,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 12,
+              "e": 1,
+              "residual_factor": [
+                2,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 6,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 6,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          23,
+          24
+        ],
+        "length": 552,
+        "highest_nonzero_degree": 45,
+        "actual_coefficient_ideal_nilpotence_bound": 46,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 25,
+      "moment_indices": [
+        24,
+        25
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                9,
+                50
+              ],
+              "e": 4,
+              "h": 23,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                9,
+                50
+              ],
+              "right": [
+                21,
+                121
+              ],
+              "e": 12,
+              "h": 71,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                21,
+                121
+              ],
+              "right": [
+                25,
+                146
+              ],
+              "e": 4,
+              "h": 25,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 9,
+              "e": 12,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 12,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 21,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                13,
+                36
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                13,
+                36
+              ],
+              "right": [
+                25,
+                72
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ],
+              "residual_squarefree": false
+            }
+          ],
+          "possible_degrees": [
+            0,
+            4
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 13,
+              "e": 1,
+              "residual_factor": [
+                2,
+                0,
+                0,
+                1,
+                1
+              ],
+              "residual_degree": 4,
+              "multiplicity": 3,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 1
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          24,
+          25
+        ],
+        "length": 600,
+        "highest_nonzero_degree": 47,
+        "actual_coefficient_ideal_nilpotence_bound": 48,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 26,
+      "moment_indices": [
+        25,
+        26
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                2,
+                10
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                2,
+                10
+              ],
+              "right": [
+                10,
+                56
+              ],
+              "e": 4,
+              "h": 23,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                10,
+                56
+              ],
+              "right": [
+                26,
+                152
+              ],
+              "e": 1,
+              "h": 6,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0,
+            4
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 2,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                1,
+                0,
+                1,
+                1
+              ],
+              "residual_degree": 3,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "residual_degree": 4,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              "residual_degree": 8,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                13,
+                36
+              ],
+              "e": 9,
+              "h": 26,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                13,
+                36
+              ],
+              "right": [
+                26,
+                75
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 13,
+              "e": 1,
+              "residual_factor": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "residual_degree": 13,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 13,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          25,
+          26
+        ],
+        "length": 650,
+        "highest_nonzero_degree": 49,
+        "actual_coefficient_ideal_nilpotence_bound": 50,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 27,
+      "moment_indices": [
+        26,
+        27
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                9,
+                50
+              ],
+              "e": 4,
+              "h": 23,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                9,
+                50
+              ],
+              "right": [
+                21,
+                121
+              ],
+              "e": 12,
+              "h": 71,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                21,
+                121
+              ],
+              "right": [
+                26,
+                152
+              ],
+              "e": 5,
+              "h": 31,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                26,
+                152
+              ],
+              "right": [
+                27,
+                159
+              ],
+              "e": 1,
+              "h": 7,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 4,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 9,
+              "e": 12,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 12,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 21,
+              "e": 5,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 5,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 26,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                27,
+                80
+              ],
+              "e": 27,
+              "h": 80,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 27,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 27,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          26,
+          27
+        ],
+        "length": 702,
+        "highest_nonzero_degree": 51,
+        "actual_coefficient_ideal_nilpotence_bound": 52,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 28,
+      "moment_indices": [
+        27,
+        28
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                4,
+                22
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                22
+              ],
+              "right": [
+                10,
+                57
+              ],
+              "e": 6,
+              "h": 35,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                10,
+                57
+              ],
+              "right": [
+                20,
+                116
+              ],
+              "e": 10,
+              "h": 59,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                20,
+                116
+              ],
+              "right": [
+                28,
+                165
+              ],
+              "e": 8,
+              "h": 49,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 4,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 6,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 6,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 10,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 10,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 20,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                28,
+                82
+              ],
+              "e": 27,
+              "h": 80,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 27,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 27,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          27,
+          28
+        ],
+        "length": 756,
+        "highest_nonzero_degree": 53,
+        "actual_coefficient_ideal_nilpotence_bound": 54,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 29,
+      "moment_indices": [
+        28,
+        29
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                5,
+                26
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                5,
+                26
+              ],
+              "right": [
+                21,
+                120
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                21,
+                120
+              ],
+              "right": [
+                29,
+                169
+              ],
+              "e": 8,
+              "h": 49,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 5,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 21,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                28,
+                82
+              ],
+              "e": 27,
+              "h": 80,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                28,
+                82
+              ],
+              "right": [
+                29,
+                85
+              ],
+              "e": 1,
+              "h": 3,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 27,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 27,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 28,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          28,
+          29
+        ],
+        "length": 812,
+        "highest_nonzero_degree": 55,
+        "actual_coefficient_ideal_nilpotence_bound": 56,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 30,
+      "moment_indices": [
+        29,
+        30
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                2,
+                10
+              ],
+              "e": 1,
+              "h": 5,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                2,
+                10
+              ],
+              "right": [
+                5,
+                27
+              ],
+              "e": 3,
+              "h": 17,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                5,
+                27
+              ],
+              "right": [
+                10,
+                56
+              ],
+              "e": 5,
+              "h": 29,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                10,
+                56
+              ],
+              "right": [
+                21,
+                121
+              ],
+              "e": 11,
+              "h": 65,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                21,
+                121
+              ],
+              "right": [
+                30,
+                176
+              ],
+              "e": 9,
+              "h": 55,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 2,
+              "e": 3,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 5,
+              "e": 5,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 5,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 10,
+              "e": 11,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 11,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 21,
+              "e": 9,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 9,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                3,
+                8
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                3,
+                8
+              ],
+              "right": [
+                30,
+                88
+              ],
+              "e": 27,
+              "h": 80,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 3,
+              "e": 27,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 27,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          29,
+          30
+        ],
+        "length": 870,
+        "highest_nonzero_degree": 57,
+        "actual_coefficient_ideal_nilpotence_bound": 58,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 31,
+      "moment_indices": [
+        30,
+        31
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                4
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                4
+              ],
+              "right": [
+                5,
+                26
+              ],
+              "e": 2,
+              "h": 11,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                5,
+                26
+              ],
+              "right": [
+                21,
+                120
+              ],
+              "e": 8,
+              "h": 47,
+              "residual_coefficients": [
+                1,
+                0,
+                1
+              ],
+              "residual_squarefree": false
+            },
+            {
+              "left": [
+                21,
+                120
+              ],
+              "right": [
+                31,
+                181
+              ],
+              "e": 10,
+              "h": 61,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 2,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 2,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 5,
+              "e": 8,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 2,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 8,
+              "max_copies_in_square_divisor": 1
+            },
+            {
+              "edge_left": 21,
+              "e": 10,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 10,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                31,
+                90
+              ],
+              "e": 27,
+              "h": 80,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 27,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 27,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          30,
+          31
+        ],
+        "length": 930,
+        "highest_nonzero_degree": 59,
+        "actual_coefficient_ideal_nilpotence_bound": 60,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    },
+    {
+      "status": "adjacent_window_certified",
+      "terminal_index": 32,
+      "moment_indices": [
+        31,
+        32
+      ],
+      "exponent": 6,
+      "gamma_shape": "1",
+      "phase": "A+B*Y^exponent with arbitrary complex A,B, nonzero",
+      "profiles": [
+        {
+          "prime": 2,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                32,
+                190
+              ],
+              "e": 16,
+              "h": 95,
+              "residual_coefficients": [
+                1,
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 16,
+              "residual_factor": [
+                1,
+                1,
+                1
+              ],
+              "residual_degree": 2,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 32,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        },
+        {
+          "prime": 3,
+          "edges": [
+            {
+              "left": [
+                0,
+                0
+              ],
+              "right": [
+                1,
+                2
+              ],
+              "e": 1,
+              "h": 2,
+              "residual_coefficients": [
+                1,
+                1
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                1,
+                2
+              ],
+              "right": [
+                4,
+                10
+              ],
+              "e": 3,
+              "h": 8,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                4,
+                10
+              ],
+              "right": [
+                31,
+                90
+              ],
+              "e": 27,
+              "h": 80,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            },
+            {
+              "left": [
+                31,
+                90
+              ],
+              "right": [
+                32,
+                94
+              ],
+              "e": 1,
+              "h": 4,
+              "residual_coefficients": [
+                1,
+                2
+              ],
+              "residual_squarefree": true
+            }
+          ],
+          "possible_degrees": [
+            0
+          ],
+          "branches": [
+            {
+              "edge_left": 0,
+              "e": 1,
+              "residual_factor": [
+                1,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 1,
+              "e": 3,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 3,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 4,
+              "e": 27,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 27,
+              "max_copies_in_square_divisor": 0
+            },
+            {
+              "edge_left": 31,
+              "e": 1,
+              "residual_factor": [
+                2,
+                1
+              ],
+              "residual_degree": 1,
+              "multiplicity": 1,
+              "factor_irreducibility_verified": true,
+              "square_divisor_degree_step": 1,
+              "max_copies_in_square_divisor": 0
+            }
+          ]
+        }
+      ],
+      "local_possible_square_divisor_degrees": [
+        0
+      ],
+      "real_place_parity_used": true,
+      "possible_square_divisor_degrees": [
+        0
+      ],
+      "real_root_structure": "no real roots for even n; exactly one negative simple real root for odd n",
+      "real_place_theorem": "FIRREALROOTPARITY20261116",
+      "all_starting_indices_claimed": false,
+      "counterexample_claimed": false,
+      "ordinary_pair_profile": {
+        "complete_intersection_degrees": [
+          31,
+          32
+        ],
+        "length": 992,
+        "highest_nonzero_degree": 61,
+        "actual_coefficient_ideal_nilpotence_bound": 62,
+        "universal_bound_is_sharp": true
+      },
+      "theorem": "FIRMULTIPRIMEWINDOW20261116"
+    }
+  ]
+}

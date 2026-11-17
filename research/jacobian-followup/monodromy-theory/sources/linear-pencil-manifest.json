@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "path": "sources/kadets-1809.07293v4.html",
+      "url": "https://arxiv.org/html/1809.07293v4",
+      "author": "Borys Kadets",
+      "title": "Sectional monodromy groups of projective curves",
+      "version": "v4, 14 November2020",
+      "locator": "Proposition1.1 and Lemma2.2: characteristic-zero sectional monodromy is symmetric; double transitivity",
+      "sha256": "6a8983f652c733efe2c0b90e96c1e595ec39bd6394a8ab598239e576610382de",
+      "bytes": 847849
+    }
+  ],
+  "prior_pinned_input": "sources/marked-wreath-manifest.json, Fonollosa Lemma6.2 and Proposition6.1; cofactor-unit fact is attributed and the explicit inverse and new applications are proved here.",
+  "scope": "Only characteristic-zero sectional monodromy is used, not the positive-characteristic classifications or their CFSG dependencies."
+}

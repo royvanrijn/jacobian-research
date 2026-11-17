@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "arithmetic": "Python Fraction; separate monomial bracket and forward elimination",
+  "degree": 4,
+  "weight": 5,
+  "projected_rank": 4780,
+  "kernel_dimension": 1345,
+  "current_columns": 661,
+  "linear_variations": 1345,
+  "quadratic_coefficient_pairs": 905185,
+  "period": "1",
+  "elapsed_seconds": 4.059744194004452,
+  "checker_sha256": "aa0e3331e2550b56be352bdd3680eb99426bbe08cbc5df4e1a434fe3e0d88e8a",
+  "packet_sha256": "b8e7aee37a06702086b69b6136d15f1c79f82be5fcc63b28da465f5a120d5020",
+  "boundary": "Complete independent replay of the finite cutoff certificate. The infinite-pole cutoff and degree-category shear transport are written proofs, not formal verification."
+}

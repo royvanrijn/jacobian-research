@@ -1,0 +1,32 @@
+{
+  "targets": [
+    "13a_129",
+    "13a_135",
+    "13a_136",
+    "13a_137",
+    "13a_194",
+    "13a_196",
+    "13a_197",
+    "13a_198",
+    "13a_233",
+    "13a_234",
+    "13a_239",
+    "13a_242",
+    "13a_243",
+    "13a_244",
+    "13a_253",
+    "13a_265"
+  ],
+  "source_panel_sha256": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+  "witness_source_sha256": "2b34c2ae9ab42cade51f993512ff2c7dc6e519f8b327d226b18b655ee72033dc",
+  "selection": "Exactly the first nonconstant A5 witness already retained per target; skip targets whose complete Hom count is1. No alternate witnesses or target replacements.",
+  "cover_degree": 5,
+  "maximum_covers": 12,
+  "maximum_matrix_rows": 70,
+  "maximum_matrix_columns": 61,
+  "characteristics": "All, by integer Smith factors; no prime sweep",
+  "sharp_four_homology_threshold": 7,
+  "motivation": "For H=pi1(double branched cover) and J of index5, rank J<=5(rank H-1)+1. Thus dim H1(J;F)>=7 forces rank H>=3 and mr(K)>=4, matching the fixed four-seed upper certificate. The A5 maps supply exact index5 subgroups even when raw Hom counts are too small.",
+  "claim_boundary": "Only the retained first A5 witnesses are tested. No-hit does not exclude other witnesses, covers, finite quotients, or nonabelian rank arguments.",
+  "no_adaptive_replacements": true
+}

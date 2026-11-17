@@ -1,0 +1,163 @@
+{
+  "status": "complete",
+  "source_sha256": "21834b520cb1bcc90d10d976d1b553860fd232707f7ac2dd9892de717d71ef60",
+  "degree_cap": 7,
+  "pairs": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "models": [
+    {
+      "pair": [
+        1,
+        1
+      ],
+      "input": "p1q1.json",
+      "input_sha256": "3039dc71086cde346086ec1b1cb280f777e4d10370cb24e085391882461ac455",
+      "native_atoms": 48,
+      "boundary_removed": 18,
+      "remaining_atoms": 30,
+      "native_generators": 99,
+      "principal_faces": 5
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "input": "p1q2.json",
+      "input_sha256": "6db69188f5fb7945d2f61cd3472a8609b5039a5bb0e868bb9f9404cf916f9527",
+      "native_atoms": 35,
+      "boundary_removed": 18,
+      "remaining_atoms": 17,
+      "native_generators": 69,
+      "principal_faces": 3
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "input": "p1q3.json",
+      "input_sha256": "6766b47b82e211716e676a6719e4932d32eacaa19fb4a5cbfbd83d19d1e795ed",
+      "native_atoms": 28,
+      "boundary_removed": 18,
+      "remaining_atoms": 10,
+      "native_generators": 51,
+      "principal_faces": 2
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "input": "p1q4.json",
+      "input_sha256": "85640639ba2edccc6969397311b3361826b8f72500c78ff1f59dbe21a45e227a",
+      "native_atoms": 25,
+      "boundary_removed": 18,
+      "remaining_atoms": 7,
+      "native_generators": 45,
+      "principal_faces": 1
+    },
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "input": "p1q5.json",
+      "input_sha256": "dda633c2778823873687c0cb11c7d36cade2e526a0f7471b440d330fe02dd027",
+      "native_atoms": 22,
+      "boundary_removed": 18,
+      "remaining_atoms": 4,
+      "native_generators": 39,
+      "principal_faces": 0
+    },
+    {
+      "pair": [
+        1,
+        6
+      ],
+      "input": "p1q6.json",
+      "input_sha256": "44138abfa232b213fb02ccf0a8cb8d6a7f326f3c5ab9dfd460149d0aac52b335",
+      "native_atoms": 19,
+      "boundary_removed": 18,
+      "remaining_atoms": 1,
+      "native_generators": 30,
+      "principal_faces": 0
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "input": "p2q3.json",
+      "input_sha256": "a21b76ff2c7c1c880fc492095e226934c9dc88765b0cba6f701bdb4cf3e52ed1",
+      "native_atoms": 25,
+      "boundary_removed": 18,
+      "remaining_atoms": 7,
+      "native_generators": 45,
+      "principal_faces": 1
+    },
+    {
+      "pair": [
+        2,
+        5
+      ],
+      "input": "p2q5.json",
+      "input_sha256": "a6659c6da0c8de0923c773391bf5c045b64760207fc447b15110bf33ca942061",
+      "native_atoms": 19,
+      "boundary_removed": 18,
+      "remaining_atoms": 1,
+      "native_generators": 30,
+      "principal_faces": 0
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "input": "p3q4.json",
+      "input_sha256": "bfa62794cbdbd4d98123e1de8fdfcc333d7c3071be1a8f56ac2cf100c772866f",
+      "native_atoms": 19,
+      "boundary_removed": 18,
+      "remaining_atoms": 1,
+      "native_generators": 30,
+      "principal_faces": 0
+    }
+  ],
+  "seconds": 8.057256551022874
+}

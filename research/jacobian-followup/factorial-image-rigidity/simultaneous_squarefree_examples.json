@@ -1,0 +1,56 @@
+{
+  "common_offsets": [
+    {
+      "H": 200,
+      "maximum_exponent": 3,
+      "offset": 94,
+      "largest_prime_factor": 47,
+      "preceding_prime": 89,
+      "preceding_gap": 5,
+      "factor_degree_divisibility": 47,
+      "large_factor_degree_at_least": 89,
+      "complement_degree_at_most": 5,
+      "irreducible_for_every_exponent_1_through_M": true,
+      "uniform_local_condition": true,
+      "parity_used": false,
+      "numerical_density_evidence": false,
+      "all_offsets_claimed": false,
+      "theorem": "FIRCOMMONOFFSETS20261117"
+    },
+    {
+      "H": 200,
+      "maximum_exponent": 3,
+      "offset": 194,
+      "largest_prime_factor": 97,
+      "preceding_prime": 193,
+      "preceding_gap": 1,
+      "factor_degree_divisibility": 97,
+      "large_factor_degree_at_least": 193,
+      "complement_degree_at_most": 1,
+      "irreducible_for_every_exponent_1_through_M": true,
+      "uniform_local_condition": true,
+      "parity_used": false,
+      "numerical_density_evidence": false,
+      "all_offsets_claimed": false,
+      "theorem": "FIRCOMMONOFFSETS20261117"
+    },
+    {
+      "H": 500,
+      "maximum_exponent": 10,
+      "offset": 202,
+      "largest_prime_factor": 101,
+      "preceding_prime": 199,
+      "preceding_gap": 3,
+      "factor_degree_divisibility": 101,
+      "large_factor_degree_at_least": 199,
+      "complement_degree_at_most": 3,
+      "irreducible_for_every_exponent_1_through_M": true,
+      "uniform_local_condition": true,
+      "parity_used": false,
+      "numerical_density_evidence": false,
+      "all_offsets_claimed": false,
+      "theorem": "FIRCOMMONOFFSETS20261117"
+    }
+  ],
+  "finite_controls_are_not_numerical_density_evidence": true
+}

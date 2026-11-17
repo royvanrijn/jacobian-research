@@ -1,0 +1,9 @@
+{"pivot": 4, "component": 2, "status": "finite-quotient-inconclusive", "maximum_jet": 5, "columns": 26, "nonzero_words_visited": 100, "seconds": 0.07}
+{"pivot": 5, "component": 3, "status": "finite-quotient-inconclusive", "maximum_jet": 6, "columns": 83, "nonzero_words_visited": 155, "seconds": 3.232}
+{"pivot": 6, "component": 1, "status": "arbitrary-degree-obstructed", "maximum_jet": 4, "columns": 0, "nonzero_words_visited": 4, "seconds": 0.004}
+{"pivot": 7, "component": 1, "status": "finite-quotient-inconclusive", "maximum_jet": 4, "columns": 5, "nonzero_words_visited": 33, "seconds": 0.017}
+{"pivot": 8, "component": 2, "status": "finite-quotient-inconclusive", "maximum_jet": 5, "columns": 33, "nonzero_words_visited": 107, "seconds": 0.112}
+{"pivot": 9, "component": 3, "status": "finite-quotient-inconclusive", "maximum_jet": 5, "columns": 112, "nonzero_words_visited": 209, "seconds": 0.413}
+{"pivot": 10, "component": 2, "status": "finite-quotient-inconclusive", "maximum_jet": 5, "columns": 40, "nonzero_words_visited": 126, "seconds": 0.021}
+{"pivot": 11, "component": 3, "status": "finite-quotient-inconclusive", "maximum_jet": 5, "columns": 116, "nonzero_words_visited": 202, "seconds": 0.401}
+{"pivot": 12, "component": 2, "status": "finite-quotient-inconclusive", "maximum_jet": 5, "columns": 19, "nonzero_words_visited": 70, "seconds": 0.067}

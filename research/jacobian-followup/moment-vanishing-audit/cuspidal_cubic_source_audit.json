@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-14",
+  "query_scope": "Targeted searches for Gaussian moment vanishing, homogeneous/cuspidal ternary cubics, and recent cubic Gaussian-moment titles. Not exhaustive bibliographic coverage.",
+  "new_mathematical_inputs": "No external theorem imported for the cuspidal exclusion. The normal-form reduction, exhaustive covariance chart cover, rational ideal membership and all-order witness formula are internal proofs.",
+  "selected_primary_sources": [
+    {
+      "title": "Cubic forms in Gaussian variables",
+      "author": "F. Alberto Gruenbaum",
+      "publication": "Illinois Journal of Mathematics19 (1975), printed405–411 in the accessed seven-page scan",
+      "doi": "10.1215/ijm/1256050740",
+      "accessed_url": "https://scispace.com/pdf/cubic-forms-in-gaussian-variables-3pjmq692wj.pdf",
+      "read_coverage": "Original scientific PDF text of printed405–407: introduction, binary setup, displayed rotation-class theorem and initial moment computations. Remaining proof not audited.",
+      "scope": "Binary real-valued distribution reconstruction under rotations; no complex ternary cuspidal moment exclusion is imported.",
+      "access_boundary": "DOI fetch was inaccessible through the web tool; the original article scan was read through the PDF copy. No local PDF cache/hash is asserted."
+    },
+    {
+      "title": "Cubic moments of eigenfunctions on surfaces",
+      "authors": [
+        "Xing Wang",
+        "Cheng Zhang"
+      ],
+      "arxiv": "2610.16157v1",
+      "version_date": "2026-10-12",
+      "url": "https://arxiv.org/abs/2610.16157",
+      "read_coverage": "Current abstract/version/submission record only; not full text.",
+      "scope": "High-frequency Laplace eigenfunction integrals on Riemannian surfaces. The similarly named Gaussian moment conjecture is a spectral distribution question, distinct from polynomial Gaussian pure-moment vanishing; no result is imported."
+    }
+  ],
+  "secondary_discovery_boundary": "OpenMath curation appeared in search but is not a proof source. Its stale two-variable-open summary does not replace the locally audited Wilson/Long binary closure. Long2607.18186 and Wilson2607.23887 reappeared in search and retain their existing earlier source audits.",
+  "proof_assurance": "Exact rational native Singular computations plus symbolic/pair-count Wick checks and a written all-order selection formula. No producer code, independent replay, external review or formal verification."
+}

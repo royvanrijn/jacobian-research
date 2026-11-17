@@ -1,0 +1,928 @@
+{
+  "status": "PASS independent complete ternary3 rank-one base gate",
+  "classes": [
+    {
+      "meridian_order": 3,
+      "class_size": 104,
+      "tuple_orbits": 21632,
+      "raw_tuples": 1124864,
+      "control_root_dimension": 4,
+      "targets": [
+        {
+          "name": "13a_129",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_135",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_136",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_137",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_194",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_196",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_197",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_198",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_233",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_234",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_239",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_242",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_243",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_244",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_253",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_265",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 3,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        }
+      ]
+    },
+    {
+      "meridian_order": 2,
+      "class_size": 117,
+      "tuple_orbits": 34084,
+      "raw_tuples": 1601613,
+      "control_root_dimension": 4,
+      "targets": [
+        {
+          "name": "13a_129",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                85,
+                93,
+                11
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                93,
+                85,
+                8
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "name": "13a_135",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                85,
+                93,
+                9
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                93,
+                85,
+                14
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "name": "13a_136",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                85,
+                93,
+                49
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                93,
+                85,
+                75
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "name": "13a_137",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                85,
+                93,
+                48
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                93,
+                85,
+                72
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "name": "13a_194",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                85,
+                93,
+                73
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                93,
+                85,
+                43
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "name": "13a_196",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                85,
+                93,
+                73
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                93,
+                85,
+                43
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "name": "13a_197",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                85,
+                93,
+                75
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                93,
+                85,
+                49
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "name": "13a_198",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                85,
+                93,
+                75
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            },
+            {
+              "seed_assignment": [
+                0,
+                93,
+                85,
+                49
+              ],
+              "root_dimension": 3,
+              "knot_image_order": 11232,
+              "constant_base": false,
+              "principal_dimension": 3,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1,
+            "3": 2
+          }
+        },
+        {
+          "name": "13a_233",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_234",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_239",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_242",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_243",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_244",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_253",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        },
+        {
+          "name": "13a_265",
+          "base_orbits": [
+            {
+              "seed_assignment": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "root_dimension": 1,
+              "knot_image_order": 2,
+              "constant_base": true,
+              "principal_dimension": 1,
+              "all_admissible_affine_lifts_principal": true
+            }
+          ],
+          "root_dimension_histogram": {
+            "1": 1
+          }
+        }
+      ]
+    }
+  ],
+  "rejected_corruptions": [
+    "ternary_transvection:false_kernel_basis",
+    "ternary_transvection:overlapping_tuple_orbits",
+    "ternary_reflection:false_kernel_basis",
+    "ternary_reflection:overlapping_tuple_orbits"
+  ],
+  "input_sha256": {
+    "verify_ternary_bases.py": "39f8e7c13d01a0d2ee9871348e767a534ddb046f9b1b4671edf712e394ba6de7",
+    "verify_ternary_transvection_control.py": "f289f0b97ff61037ceeafc2022dd415c40e9f86e4554f365c0241a57b9eaf67b",
+    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+    "ternary_transvection_results.json": "7b90e4c5a5956a6b1c1356dc04c1cdb53a5b38223af59bc53201a7f364b8abfd",
+    "ternary_transvection_catalogue.json": "8abce248e8f3f864dfea64b2b76046876459ff2360a2b8777a23d2a485e13835",
+    "ternary_reflection_results.json": "f23802c76c63a294029d4d823f1127b8e45d101d580167bf9f0647f7c3b8b0ef",
+    "ternary_reflection_catalogue.json": "c038b65b95fe58808a1230e64f4d013b2a755f680652d9d768bea07fdb9565e3",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286"
+  },
+  "scope": "Exactly16 diagrams and all rank-one GL3(F3) meridian bases, both possible nonidentity eigenvalues. Full centralizer raw orbit marking; separate geometric signed trace propagation, affine point kernel and permutation image enumeration. No all-field or higher-dimensional exclusion; no target closure. Representation orbits are not asserted to be distinct quotient kernels."
+}

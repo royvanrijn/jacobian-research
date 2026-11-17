@@ -1,0 +1,82 @@
+ -- warning: gb algorithm requested is experimental
+grevlex order
+DEGREE 7 (npairs 2)
+ # GB elements   = 1
+DEGREE 10 (npairs 2)
+-- SIGSEGV
+-* stack trace, pid: 750296
+ 0# 0x0000580A400DB63E in /usr/bin/M2-binary
+ 1# 0x0000580A400DB90E in /usr/bin/M2-binary
+ 2# 0x00007B5965C45330 in /lib/x86_64-linux-gnu/libc.so.6
+ 3# 0x0000580A3FCE7648 in /usr/bin/M2-binary
+ 4# 0x0000580A3FE55F9A in /usr/bin/M2-binary
+ 5# 0x0000580A3FE5669B in /usr/bin/M2-binary
+ 6# 0x0000580A3FE59009 in /usr/bin/M2-binary
+ 7# 0x0000580A3FE592AF in /usr/bin/M2-binary
+ 8# 0x0000580A3FF0C485 in /usr/bin/M2-binary
+ 9# 0x0000580A4003835E in /usr/bin/M2-binary
+10# 0x0000580A4014A78D in /usr/bin/M2-binary
+11# 0x0000580A40116DA0 in /usr/bin/M2-binary
+12# 0x0000580A4011601F in /usr/bin/M2-binary
+13# 0x0000580A4011B844 in /usr/bin/M2-binary
+14# 0x0000580A4011662B in /usr/bin/M2-binary
+15# 0x0000580A4011B844 in /usr/bin/M2-binary
+16# 0x0000580A4012AFA5 in /usr/bin/M2-binary
+17# 0x0000580A40116DA0 in /usr/bin/M2-binary
+18# 0x0000580A40117FDF in /usr/bin/M2-binary
+19# 0x0000580A40116DFF in /usr/bin/M2-binary
+20# 0x0000580A40116D7B in /usr/bin/M2-binary
+21# 0x0000580A4011B844 in /usr/bin/M2-binary
+22# 0x0000580A4011662B in /usr/bin/M2-binary
+23# 0x0000580A4011B844 in /usr/bin/M2-binary
+24# 0x0000580A4012AFA5 in /usr/bin/M2-binary
+25# 0x0000580A40116DA0 in /usr/bin/M2-binary
+26# 0x0000580A40117FDF in /usr/bin/M2-binary
+27# 0x0000580A40116DFF in /usr/bin/M2-binary
+28# 0x0000580A4011B844 in /usr/bin/M2-binary
+29# 0x0000580A4011662B in /usr/bin/M2-binary
+30# 0x0000580A4011B844 in /usr/bin/M2-binary
+31# 0x0000580A4012AFA5 in /usr/bin/M2-binary
+32# 0x0000580A40116DA0 in /usr/bin/M2-binary
+33# 0x0000580A40117FDF in /usr/bin/M2-binary
+34# 0x0000580A40116DFF in /usr/bin/M2-binary
+35# 0x0000580A40115E32 in /usr/bin/M2-binary
+36# 0x0000580A4011CBE3 in /usr/bin/M2-binary
+37# 0x0000580A402720C7 in /usr/bin/M2-binary
+38# 0x0000580A40272D55 in /usr/bin/M2-binary
+39# 0x0000580A40272E7D in /usr/bin/M2-binary
+40# 0x0000580A40116DA0 in /usr/bin/M2-binary
+41# 0x0000580A4011613A in /usr/bin/M2-binary
+42# 0x0000580A40115FA1 in /usr/bin/M2-binary
+43# 0x0000580A40115BCC in /usr/bin/M2-binary
+44# 0x0000580A40118D25 in /usr/bin/M2-binary
+45# 0x0000580A40116126 in /usr/bin/M2-binary
+46# 0x0000580A4011BE98 in /usr/bin/M2-binary
+47# 0x0000580A40116126 in /usr/bin/M2-binary
+48# 0x0000580A40115DE3 in /usr/bin/M2-binary
+49# 0x0000580A40115BCC in /usr/bin/M2-binary
+50# 0x0000580A4011613A in /usr/bin/M2-binary
+51# 0x0000580A40115F80 in /usr/bin/M2-binary
+52# 0x0000580A40118D25 in /usr/bin/M2-binary
+53# 0x0000580A40116126 in /usr/bin/M2-binary
+54# 0x0000580A40117929 in /usr/bin/M2-binary
+55# 0x0000580A4011C0E5 in /usr/bin/M2-binary
+56# 0x0000580A40116126 in /usr/bin/M2-binary
+57# 0x0000580A40115BCC in /usr/bin/M2-binary
+58# 0x0000580A401179B1 in /usr/bin/M2-binary
+59# 0x0000580A4011C0E5 in /usr/bin/M2-binary
+60# 0x0000580A40116126 in /usr/bin/M2-binary
+61# 0x0000580A40115F80 in /usr/bin/M2-binary
+62# 0x0000580A4011CBE3 in /usr/bin/M2-binary
+63# 0x0000580A402720C7 in /usr/bin/M2-binary
+64# 0x0000580A40272D55 in /usr/bin/M2-binary
+65# 0x0000580A4027396C in /usr/bin/M2-binary
+66# 0x0000580A400DAEB0 in /usr/bin/M2-binary
+67# 0x0000580A3FCB2934 in /usr/bin/M2-binary
+68# 0x0000580A3FCB2B44 in /usr/bin/M2-binary
+69# 0x0000580A3FCB30ED in /usr/bin/M2-binary
+70# 0x00007B5966487684 in /lib/x86_64-linux-gnu/libgc.so.1
+71# GC_call_with_stack_base in /lib/x86_64-linux-gnu/libgc.so.1
+72# 0x00007B5965C9CB84 in /lib/x86_64-linux-gnu/libc.so.6
+73# 0x00007B5965D29D6C in /lib/x86_64-linux-gnu/libc.so.6
+-- end stack trace *-

@@ -1,0 +1,112 @@
+{
+  "completed": true,
+  "checker_sha256": "660fc5e4420359773a1024104800db7ddff2eb60c3b8192f94d8f8e40272b213",
+  "supporting_checker_hashes": {
+    "verify_formal_apolar_gaps.py": "ff0775510e26ed25d1a3b53071fa2b482766e574f812fbc496e7fafcb5991ebd",
+    "verify_formal_symbol_source_rigidity.py": "5fbd1a59780d9790c3a6911a7d4731f500a41b860190713bb95b9af025f29bf6",
+    "verify_algebraic_formal_symbols.py": "edd11e6cdde8c6e20e21201fd4c47400325431ead821e36fe3be05497a98782f"
+  },
+  "indicial_controls": [
+    {
+      "source_order": 0,
+      "leading_gain": -1,
+      "global_gain": 0,
+      "polynomial": "n**2",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "source_order": 0,
+      "leading_gain": -1,
+      "global_gain": 0,
+      "polynomial": "n",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "source_order": 0,
+      "leading_gain": 0,
+      "global_gain": 0,
+      "polynomial": "n**2 - 5*n",
+      "B": 5,
+      "C": 5
+    },
+    {
+      "source_order": 3,
+      "leading_gain": -1,
+      "global_gain": 0,
+      "polynomial": "n**2",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "source_order": 0,
+      "leading_gain": -1,
+      "global_gain": 1,
+      "polynomial": "n",
+      "B": 0,
+      "C": 2
+    }
+  ],
+  "generic_marker_line_control": {
+    "source_order": 1,
+    "leading_gain": -1,
+    "global_gain": 1,
+    "polynomial": "A*n**2 + B*n**2",
+    "B": 0,
+    "C": 2
+  },
+  "leading_degree_controls": 10,
+  "bessel_marker_coefficients_checked": 9,
+  "parameter_power_marker_coefficients_checked": 7,
+  "indicial_resonance_degree": 5,
+  "delayed_bad_marker_degree": 7,
+  "actual_reversed_profiles": [
+    {
+      "m": 1,
+      "height": 0,
+      "deficit": 1
+    },
+    {
+      "m": 2,
+      "height": 1,
+      "deficit": 1
+    },
+    {
+      "m": 3,
+      "height": 1,
+      "deficit": 2
+    },
+    {
+      "m": 4,
+      "height": 2,
+      "deficit": 2
+    },
+    {
+      "m": 5,
+      "height": 2,
+      "deficit": 3
+    },
+    {
+      "m": 6,
+      "height": 3,
+      "deficit": 3
+    }
+  ],
+  "reversed_source_cutoff": 2,
+  "raw_top_output_controls": 3,
+  "bessel_time_eigen_controls": 5,
+  "guard_refusals": 2,
+  "general_formal_time_equation_produced": false,
+  "general_formal_gap_decided": false,
+  "scalar_equation_implies_finite_marker_test": false,
+  "formal_time_coefficients_unbounded_degree_allowed": false,
+  "raw_rational_time_method_exceeds_algebraic_symbols": false,
+  "full_exceptional_MZ_decided": false,
+  "unrestricted_frontier_endpoint_changed": false,
+  "universal_proof_by_finite_samples": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "novelty_claimed": false
+}

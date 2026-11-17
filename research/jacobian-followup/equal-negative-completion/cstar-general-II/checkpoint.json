@@ -1,0 +1,11 @@
+{
+  "status": "timeout-no-theorem",
+  "exit_code": -9,
+  "seconds": 40.009,
+  "time_budget_seconds": 40,
+  "unit_marker": false,
+  "certificate_complete": false,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "script_sha256": "5235fcb89064047237b022e795f469e2dd78d5e2ddb6a9a6f71b017aad006c73",
+  "scope": "Primary exact computation only. All coefficient strata require independent full rational certificate multiplication and written normal-form coverage."
+}

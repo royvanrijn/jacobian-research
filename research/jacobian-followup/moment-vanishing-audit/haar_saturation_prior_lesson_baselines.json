@@ -1,0 +1,95 @@
+{
+  "METHOD-CONSTANT-VOLUME-SOURCE-MODELS-AND-ACTUAL-MARKER-DEFECTS-20261116": {
+    "id": "METHOD-CONSTANT-VOLUME-SOURCE-MODELS-AND-ACTUAL-MARKER-DEFECTS-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Transfer original-volume models through constant-volume maps;retain full marked periods beyond the unit submodule",
+    "when": "Full exceptional source replacement,proper unit-volume models,finite-cover repair or conflation of unit Cauchy submodule with all-marker source.",
+    "use": "CONSTANT-VOLUME TRANSFER AND ACTUAL ORIGINAL MARKER DEFECT NOW PROVED: for smooth original sources a projective finite-phase model carrying the SAME holomorphic top form exists iff EVERY divisorial valuation with finite phase has nonnegative form order. Under a finite field correspondence Omega1=c*pullback(Omega0),c nonzero CONSTANT,the exact order is e*(k+1)-1;nonnegative iff k>=0,so original-volume proper models transfer BOTH directions. Any original LOG pole remains -1 after EVERY finite cover;changing Jacobian weight changes the problem. Applied to retained weighted-torus W:A^sB^r=U^sV^r,S=p+A+B,Theta=Omega2*dA/(rA),the ORIGINAL SL2 map (pi,U,V) has generic degree gcd(a,b) and CONSTANT volume ratio a/r=gcd(a,b). Hence EVERY opposite-charge+neutral exceptional P=p+U+V already closed by weightedcovers has an ORIGINAL-source proper volume model on SL2 and SL2/Gamma,ALL degrees and ALL nonconstant H(P). This is stronger GEOMETRY,not a new purity exclusion. Odd dimension3 implies the actual UNIT Cauchy submodule D<1,A1> globally unit-SPLIT. ACTUAL equivariant Bezout Long phases g_b=(1+Y_b)(1+F0+Y_bF0),wtb=n+m,have p=1+2Y_bF0,A=Y_b(1+Y_bF0),B=F0 weights0,n,-n. They therefore have ORIGINAL proper-volume models and globally split UNIT submodules,yet SAME original regular marker C_b=W_b(1+Y_b) has h(C_bR(g_b))=integral_0^1R(-t)dt,actual Cauchy log((s+1)/s),nonzero residues at0,-1. FULL original marked module locally unit-NONSPLIT at BOTH values before purity. Marker log is OUTSIDE EVERY proper-model actual regular de Rham compact-orbit period image,even modulo exact forms/global relations. Thus unconditional full-marked replacement by proper regular-period image is FALSE on actual exceptional quotients. Unit-SPLIT SUBMODULE is not a global unit-retaining QUOTIENT;Bezout Phi_b has NONCONSTANT Jacobian2W_b and H3scalar2,distinct from this correspondence. These actual controls and ALL nonconstant H(g_b) already proved NOT eventually pure;NOT MZ failures. NO localization of marker defect to finitebase versus infinity claimed;raw residue may be exact. FULL purity-sensitive finitebase/unit elimination and infinity coupling remain OPEN. NEXT ENTIRE-class obligation is use actual unweighted eventual-purity identities and global marked relations to force corrected local torus-component vector0 for EVERY original exceptional phase,or actual invariant pure phase with fixed original bad marker. Both FULL MZ cases remain OPEN;directexceptionalownershipretained,GaussianBernsteinworkseparate;External review is DEFERRED and NOT the next task.",
+    "avoid": "Dropping nonconstant Bezout Jacobians;assuming ramification removes original logarithmic poles;discarding original markers because unit volume extends;using a submodule inclusion as the global unit-quotient lemma;registering raw exact residues as intrinsic obstructions.",
+    "boundary": "BOTHFULLMZcasesOPEN. Original-volume transfer and ACTUAL split-unit-submodule/nonsplit-FULL-module control PROVED. All control phases ALREADY nonpure. NO unconditional proper regular-period replacement;NO localization of defect to finitebase;NO universal mixed proper models.",
+    "reopen_when": "NEXT FULL purity-sensitive source coupling:use actual unweighted eventual-purity identities and global marked relations to force corrected local torus-component0 for EVERY exceptional phase,or actual invariant pure phase with fixed original bad marker. Preserve full marked module;do not substitute unit-only splitting or another restricted exclusion.",
+    "claims": [
+      "GHAARFINITEVOLUMEMODEL20261116",
+      "GHAARACTUALPROPER20261116",
+      "GHAARMARKERDEFECT20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/CONSTANT_VOLUME_MODELS_AND_ACTUAL_MARKER_DEFECTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_source_models_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/exceptional_mz_ownership_20261116.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_source_models.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "constant volume",
+      "original source model",
+      "full marked module",
+      "unit submodule",
+      "marker logarithm"
+    ],
+    "reviewed_claims": {
+      "GHAARFINITEVOLUMEMODEL20261116": "9b75403785a093ad",
+      "GHAARACTUALPROPER20261116": "731760e21b18fa26",
+      "GHAARMARKERDEFECT20261116": "f7d4ab0c0174e7a2"
+    }
+  },
+  "METHOD-HAAR-CANONICAL-BOUNDARY-REDUCTION-AND-LOWEST-WEIGHT-20261116": {
+    "id": "METHOD-HAAR-CANONICAL-BOUNDARY-REDUCTION-AND-LOWEST-WEIGHT-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Remove ALL compact-middle cohomology canonically while preserving the exact ACTUAL unit obstruction",
+    "when": "Seeking the full exceptional all-phase theorem after global Haar-orbit splitting;avoid independent compact-middle or quadratic-log campaigns.",
+    "use": "Deleting ANY divisor from H2-acyclic X leaves W2H2 zero. NONPROPER Leray/MHS over the graph base proves global compact-middle invariants zero,hence W4B=L directsum canonical nontrivial C_f. Quotient B/C_f has only level-one types after twist2 and N2=0 at EVERY P1 puncture. In actual M,the image I is semisimple with no trivial factors,so unit survives and Hom(M/I,trivial)=Hom(M,trivial). Eventual-pure full safety is EXACTLY unit splitting in this reduced boundary quotient. Reduction and reduced GLOBAL semisimplicity reflect EVERY H. With fibre GrW3H2 zero,reduced source semisimplicity is also NECESSARY and gives the intrinsic all-composite dichotomy.",
+    "avoid": "Using projective-only Leray for this nonproper map;confusing global invariants with local/finite-cover invariants;assuming actual quotient is a Hodge or scalar-function submodule;deleting literal quadratic coefficients from original periods;calling all reduced coefficients algebraic;making local N2 imply global radical square zero;inferring pure-composite existence from a nonsplit source.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. The compact-middle removal is universal,but reduced genus/graph unit coupling is not proved zero. Deep Ivorra-Morel nonproper Leray is imported with exact hypotheses,not independently reproved. Full original quadratic logs can remain. Reduced source semisimplicity necessary only with genus weight3 absent. No algebraic1-motive/curve producer,all-ring topological promotion or universal machine verification;review deferred. The next exact reduction covers EVERY phase:intrinsic GLOBAL source-unit nonsplitting certifies eventual-pure failure and reflects every H. If split,remove canonical nontrivial genus;constant F(rank1+c) and finite top leave an abelian translation radical R,J2=0,u notinR. Actual safety iff u notinR+K for ACTUAL constant relation kernel. c,F,R are fixed across H,not K_H. Actual Cauchy GLOBAL semisimplicity also reflects EVERY H and rank cannot drop;semisimple rank>1 excludes ALL eventually pure composites. Known Long pure failure sits in intrinsic nonsplit genus-free branch,not on exceptional quotients. SUBSEQUENT CLOSURE SUPERSEDES the formerly open residual actual-K limitation: Under EVENTUAL PURITY,full ALL-original-marker safety iff intrinsic GLOBAL boundary source unit SPLITS. Mixed fixed part on W5E AND its DUAL gives canonical Hodge complement C5 and ADMISSIBLE residual V. Finite LOCAL monodromy at every P1 puncture follows from relative M=W plus split unit;GLOBAL handle translations may remain. Compose actual FUNCTION module M->actual quotient N->local meromorphic germs->PP0 to split the actual Borel unit. Actual K need NOT be Hodge compatible,and N need NOT embed as scalar functions. This proves u outsideR+K automatically for genuine actual kernels under eventual purity;it supersedes the prior separate residual-K gate. EVERY eventually pure H(f) safe iff primitive source unit splits. In source-split branch ANY actual rank>1,semisimple OR NOT,forbids ALL eventual-pure H;rank1 has unique safe centre c,H(c)=0. Source nonsplit certifies all existing pure composites fail,without producing one. Both FULL exceptional cases remain OPEN at the ONE intrinsic source-splitting gate;review deferred. ALGEBRAIC GEOMETRIC PRODUCER NOW SUPPLIED: Every intrinsic source-unit gate now has a WRITTEN ALGEBRAIC boundary1-motive [Z->G_f] with ONE algebraic section sigma_f,from published BRS RELATIVE Picard/NS/gluing construction up to ISOGENY. H=(E(2))dual has rank1 lattice,full genus abelian part and finite-monodromy torus. Spread chosen generic data,not all fibre NS ranks;no blanket relative-equivalence/no-fixed-part import. Source splitting iff CONSTANT TYPE:[m]sigma_f=h(a) for a CONSTANT point of a constant semiabelian G0 and algebraic h. Constant nontorsion points are allowed;torsion/Hodge splitting or quotient-by-fixed-group alone is wrong. Any finite base cover reflects the gate by averaging. Under EVENTUAL PURITY this is full ALL-original-marker safety;no independent actual-K gate. For EVERY H the model is Weil restriction with DIAGONAL rank1 lattice and ALL-BRANCH section,NOT scalar norm. Genuine Long pure P=F(F+1) has SAME fixed bad marker tail(-1)^(n-1)(n!)\u00b2/(2n+1)!,while reciprocal branches have Norm1;full tuple moves. It is NOT right2O/2I invariant. Both full exceptional cases OPEN;universal constant type and computational producer not supplied.",
+    "reopen_when": "Prove the rational unit splits in M_boundary for EVERY actual exceptional eventually pure phase,or realize a genuine original failure. Work on the level-one genus/graph coupling;do not reopen compact-middle or log-squared calculations as independent targets. Preserve EVERY original marker,primitive branch,H degree and actual orbit. Target intrinsic unit splitting and actual u outsideR+K for EVERY exceptional pure phase;varying genus is removable in the split-source branch. Preserve actual K_H and all original markers/branches. CURRENT PRIORITY SUPERSEDES any separate residual-K prerequisite: prove intrinsic GLOBAL source splitting for EVERY exceptional eventually pure phase,or actual admissible failure. The actual-K gate is already closed under eventual purity by the new local-functional theorem. Current full target is constant type of ONE geometric algebraic boundary section for EVERY exceptional eventually pure phase,not scalar norm;the all-branch Weil-restriction law retains every H.",
+    "claims": [
+      "GHAARLOWFIX20261116",
+      "GHAARLEVELONE20261116",
+      "GHAARLEVELRECOMP20261116",
+      "GHAARCONSTGENUS20261116",
+      "GHAARACTRECOMP20261116",
+      "GHAARINTRINSICSAFE20261116",
+      "GHAARINTRINSICCOMP20261116",
+      "GHAARBOUNDARYMOT20261116",
+      "GHAARSECTIONRECOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_reduction_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/CONSTANT_GENUS_TRANSLATIONS_AND_ACTUAL_RECOMPOSITION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_constant_genus_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/INTRINSIC_SOURCE_SPLITTING_AND_FULL_HAAR_SAFETY.md",
+      "jacobian-followup/moment-vanishing-audit/haar_intrinsic_safety_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_BOUNDARY_ONE_MOTIVE_AND_CONSTANT_SECTION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_motive_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_reduction.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "lowest weight",
+      "nonproper Leray",
+      "canonical boundary quotient",
+      "level one",
+      "unit splitting",
+      "polynomial recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARLOWFIX20261116": "175fa090f01d81eb",
+      "GHAARLEVELONE20261116": "0971dc423388739b",
+      "GHAARLEVELRECOMP20261116": "1a9c298cd0104c5a",
+      "GHAARCONSTGENUS20261116": "da637aebf190d4fd",
+      "GHAARACTRECOMP20261116": "6a0b2593a96c4447",
+      "GHAARINTRINSICSAFE20261116": "2e37ad62e89795e2",
+      "GHAARINTRINSICCOMP20261116": "fc00eb4fd27f0183",
+      "GHAARBOUNDARYMOT20261116": "25a35f5d8a5299e8",
+      "GHAARSECTIONRECOMP20261116": "45020a78a2809ffb"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "PASS scoped source and dependency audit",
+  "current_open_list_blob": "01c7c332a0bf1565d7558aec4c769ff36cbd31a9",
+  "all16_targets_still_in_open_list": true,
+  "open_names": 293,
+  "separate_claimed_closures": 243,
+  "Dutra_original_v1_gap": {
+    "free_group_rank": 2,
+    "alpha_generator_words": [
+      [
+        2,
+        -1,
+        -2
+      ],
+      [
+        1
+      ]
+    ],
+    "omega_generator_words": [
+      [
+        2,
+        -1,
+        -2,
+        1,
+        -2
+      ],
+      [
+        2
+      ]
+    ],
+    "common_nontrivial_reduced_word": [
+      2,
+      -1,
+      -2,
+      1
+    ],
+    "Lemma3_1_counterexample_conjugator": [],
+    "source_pages_visually_checked": [
+      7,
+      12
+    ],
+    "dependency": "Lemma3.8(2) explicitly invokes Lemma3.1 on p12",
+    "conclusion": "Lemma3.1 as stated is false; this does not disprove the main MRC conclusion"
+  },
+  "direct_DUT22_dependencies": [],
+  "own_proved_entries_using_DUT22": [],
+  "retained_family_disposition": "DUT22 remains a preprint with a checked proof gap, not an established family. The2017 graph-manifold/braid-pattern theorem is a different earlier source and is retained. No source assumption silently upgraded.",
+  "GGLW_scope_read": [
+    "Introduction footnote and main statements",
+    "Section2.3 self-dual doubling and nonvanishing conditions",
+    "Section2.4 actual peripheral correspondence",
+    "Definition4.1, selected valuation steps of Theorem4.2 and Corollary4.5",
+    "Earlier complete Lemma6.2 proof retained"
+  ],
+  "GGLW_remaining": "Full44-page microlocal, character-curve and two-bridge existence proof not independently audited. No certificate for one of the16 targets is inferred.",
+  "input_sha256": {
+    "audit_whitehead_dependencies.py": "b43b438e54be4e88a90f972b3128a6fa9bba156e22d9efa022de3405f7aa2eed",
+    "source_status_observations.json": "a1465c96fb192cf03d14f4dbe137bea66c94dbe6706a3695579eb44e2b55d02f",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "sources/current13/data/still_open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc",
+    "sources/current13/data/certificates.json": "2db153c6153c2301c973b8d4044f6fc8a62885143ac7be0c5c7e9e86cbe7e5c1",
+    "sources/dutra-whitehead-v1.pdf": "b2a9381a22d443e04c70326c9a09bc7b981ff1cad56f7c9d2e197002d9b17a7f",
+    "sources/whitehead-v1.html": "eb560e477dcc0eb34e674b8c55aa79f41bd6d468a7e68a23dddc9b27126aa822",
+    "sources.json": "315cda0ef9a35830017da858e3a5f0ed7c0775aaec6e1a1ec3f04a17cab89f99"
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/RANK_FACTORS_AND_REDUCTION_GLOBAL_130.md",
+  "canonical_proof_sha256": "d39725481b3e733c399e60a42663d4311f9fe76f5698fce2842a5782f86762dc",
+  "claims": [
+    "G3RANKFACTORS20261115",
+    "G3STOPBUDGET20261115",
+    "G3PURE130_20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_rank_factors_and_reduction_budgets.py",
+  "checker_sha256": "86b9154dcefa54ef524b5ded90d0a05f131179bfb8f049e7c601e85831e68756",
+  "certificate_sha256": "f02c3d9e76e115e7331ce009bed7ca0e094aab752e27b63e1b30b54074d60add",
+  "accepted_receipt_sha256": "ebb5872ce5cd3f34c3d793972e71c31ae2810b35301b1accb50e7d41fd3798f6",
+  "prior_frontier": {
+    "path": "jacobian-followup/moment-vanishing-audit/rank_budget130_preupdate_20261115.json",
+    "sha256": "ad3d4a52f274d539d24762812fb9bd9c5128a92bdcfe5c905279d3db92ada318"
+  },
+  "retained_inputs": {
+    "verify_joint_degree_seed_bounds.py": "10808614d796b310fe8eded810bea58d440a1ad756f27f13e6d23d28937ffca4",
+    "joint_degree_seed_bounds_certificate.json": "b1dbd2006f1c33dcbf09c931ea9c98cd705a70f4ecf657a92fa620df959fadbc",
+    "joint_degree_seed_bounds_verification.json": "7e11beeac36687563c3846c9a8da9ed8e999597d5e78d32d140bd5b7578e0c3d",
+    "joint_degree_seed_bounds_source_audit.json": "8d77371adec59bca13967bcec33ddd30ae1045fe7d06ad82ff3210c2b41dc53e",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "verify_ordinary_node_finite_prefixes.py": "f602defac102555fd4bd4f0537b86f8e41f929ab11baf290e63fde819b307023",
+    "verify_squarefree_singular_finite_prefixes.py": "3d5fbdbd22fe7663a0d980d071b2fd6ff55cee4540b447a989577a6c53d92eb3",
+    "verify_euler_seed_bounds.py": "5d3cacf0542ec63f1da1e1c515e031bf7a9ab2b28ab458557126ac07ce4a0e63",
+    "verify_shared_divisor_weighted_seeds.py": "ede92f5c878fae2ed85083f6bfe56bfe57d84360d50a4b81b27521c80b9bb129",
+    "common_time_seed_factor_certificate.json": "75922fd6cdc70a583edf181aafaf6cbd3c43d30e2de31736ed08769287468447",
+    "common_time_seed_factor_source_audit.json": "03ae4109c45756e07cb765385f970e1af451c07a36f375f55daf39f94e213fa2",
+    "multiple_divisor_seed_bounds_source_audit.json": "b53edbf2f40d7b301b17dd1a201d238af3301237cce5943e4c8b1ce5aea810c7",
+    "ordinary_normal_seed_module_certificate.json": "dbe522f22a534b3db7582ec6e2c05c02c89b517471b180575f353fad98b99fa4",
+    "ordinary_normal_seed_module_verification.json": "81d247ea0402800cfc53fddf4065b72eebf58796f11258d666203308161ab4f8",
+    "ordinary_normal_seed_module_source_audit.json": "0528d59f58c09748117afaecb6af65f964749681c29f38216cec338d9b047b31",
+    "two_sided_conic_seed_bounds_certificate.json": "b80ece02e4437c45b1a8d2eb616b321114731d1ef3bd92aca5bfa7f59375c585",
+    "two_sided_conic_seed_bounds_verification.json": "d28355ccbf3009c21650be656bbddee71fa2295c553b6a0cae2aeb7b3a4df655",
+    "two_sided_conic_seed_bounds_source_audit.json": "9f0698017a582ef912f57ff54a45f77f2654389423e276c0556b66eefc8fdfce"
+  },
+  "current_history_index": "jacobian-followup/moment-vanishing-audit/PREFIX_PROOF_HISTORY_CURRENT.md",
+  "previous_goal_turn_classification": "progress: two-sided conic seed degrees and positive logarithmic Euler established conic130, global/full-W-linear/odd140 and homogeneous130.",
+  "rank_factor_method": {
+    "q": "1-b*t",
+    "actual_degree_strata": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "phase_q_powers": [
+      2,
+      2,
+      1,
+      1,
+      0
+    ],
+    "new_phase_joint_bounds": [
+      4,
+      4,
+      5,
+      5,
+      6
+    ],
+    "new_source_joint_bounds": [
+      5,
+      5,
+      6,
+      6,
+      7
+    ],
+    "new_h": "t^3*q^(4-m)",
+    "whole_original_factor": "t*q^(m+2)",
+    "old_new_actual_seed_relation": "Rold_j=(t*q^(m+2))^j*Rnew_j",
+    "normal_cancellation": "(t*q^(m+2))^j*q^(m*r)",
+    "normal_leading_degree_bound": "6-m-d",
+    "symbolic_order_recurrence_identity": true,
+    "formal_q_before_constant_specialization": true,
+    "gates_by_degree": [
+      9,
+      21,
+      51,
+      54,
+      95
+    ],
+    "uniform_rank_one_gate": 95,
+    "same_original_rational_operator": true
+  },
+  "stopped_budget_method": {
+    "general_potential": "max(0,ceil(rho(e)-tau))",
+    "uses_retained_linear_seed_grade": true,
+    "multiplicative_filtration_claimed": false,
+    "single_pole_only_above_threshold": true,
+    "transverse": {
+      "rho": "i/3+k",
+      "tau": 2,
+      "source_budget": "2j-2",
+      "basis_budgets": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "common_factor": "D^r*Lf^j",
+      "new_H": "t^(3j)*D^(2j)*Lf^(2j-2)",
+      "row_degree": "7j-2-i-k",
+      "gate": 127
+    },
+    "cusp": {
+      "rho": "i/2+k",
+      "tau": 1,
+      "source_budget": "2j-1",
+      "basis_budgets": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "common_factor": "D^(3j-2)",
+      "row_scales": "D^B_i",
+      "new_H": "t^(3j)*D^(4j-1)",
+      "row_degree": "7j-1-i-k-B_i",
+      "gate": 130
+    },
+    "rational_witnesses_retained": true,
+    "formal_factor_products_before_shared_root_specialization": true
+  },
+  "class_bounds": {
+    "rank_one_gate": 95,
+    "transverse_complement_gate": 127,
+    "cusp_complement_gate": 130,
+    "tangent_full_gate": 120,
+    "conic_gate_unchanged": 130,
+    "full_W_linear_gate": 130
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 130,
+    "cusp": 130,
+    "transverse": 130,
+    "tangent": 120,
+    "triangle": 130,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 130,
+  "odd_sufficient_pure_prefix": 130,
+  "homogeneous_sufficient_pure_prefix": 130,
+  "least_prefix_interval": [
+    20,
+    130
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    130
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    130
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global130": false,
+  "binary_search_rounds_max": 7,
+  "parity_boundary": "Even130 gives no129 parity deduction in either odd or homogeneous scope.",
+  "exact_auxiliary_evidence": {
+    "rank_universal_strata": 5,
+    "rank_models": 7,
+    "budget_models": 4,
+    "direct_seed_identities": 33
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "TWO_SIDED_CONIC_GLOBAL_140.md": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c"
+  },
+  "analytic_boundary": "Same original rational quotient operators, complete ranks, Wick functional and period comparison. Universal all-degree/stratum and analytic exclusions remain written inputs. Explicit witnesses are rational in time. New higher scalar valuations remain at least3j.",
+  "literature_boundary": "No fresh literature-coverage claim or new external theorem/producer package in this algebraic refinement. Previous selected primary refresh remains retained in ordinary_normal_seed_module_source_audit.json.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal all-coefficient phase/source-factor and stopped reduction-potential/cofactor proof with retained complete analytic exclusions. Exact five rank strata and symbolic-order identities, principal budget identities,33 original-quotient seed replays in11 models and all rank/row arithmetic. No independent replay, external review or formal verification.",
+  "remaining": [
+    "Least global/odd[20,130], homogeneous[14,130]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller conic130 and cusp130 bounds",
+    "Expanded I130 radical cofactors",
+    "Independent analytic review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

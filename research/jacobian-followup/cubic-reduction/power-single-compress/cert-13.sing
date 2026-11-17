@@ -1,0 +1,22 @@
+ring r=0,(u1,u2),dp;
+short=0;
+ideal J; matrix M; matrix P; int h;
+J=(-1/2)*u1^2*u2+(1/2)*u1*u2^2+(-1),(1)*u1^3+(-1)*u1*u2^2+(2);
+M=lift(J,ideal(1));
+P=matrix(J)*M;
+if(P[1,1]!=1){print("ERROR");quit;}
+print("CERT:4:5:2");
+for(h=1;h<=nrows(M);h++){print(string(M[h,1]));}
+J=(-1/2)*u1^2*u2+(1/2)*u1*u2^2+(-1),(1/2)*u1^2*u2+(1/2)*u1*u2^2+(-1);
+M=lift(J,ideal(1));
+P=matrix(J)*M;
+if(P[1,1]!=1){print("ERROR");quit;}
+print("CERT:4:6:2");
+for(h=1;h<=nrows(M);h++){print(string(M[h,1]));}
+J=(1)*u1^3+(-1)*u1*u2^2+(-1),(1/2)*u1^2*u2+(1/2)*u1*u2^2+(1/2);
+M=lift(J,ideal(1));
+P=matrix(J)*M;
+if(P[1,1]!=1){print("ERROR");quit;}
+print("CERT:5:6:2");
+for(h=1;h<=nrows(M);h++){print(string(M[h,1]));}
+quit;

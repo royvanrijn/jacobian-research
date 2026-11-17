@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-15",
+  "previous_goal_turn": "PROGRESS:sharp universally safe branch clearing and exact Haar-automorphism admissibility invariance",
+  "current_goal_turn": "PROGRESS:explicit regular reverse maps,global polynomial slice and six generators,and an all-order weighted-tail construction family",
+  "new_claims": [
+    "GEXCEPTIONALBEZOUT20261115",
+    "GEXCEPTIONALGLOBALS20261115",
+    "GEXCEPTIONALWEIGHT20261115"
+  ],
+  "schema_dependency_acyclicity_and_artifact_hashes": true,
+  "prior_records_preserved_except_named_work_reconciliation": {
+    "MATH_STATUS.json": 2769,
+    "knowledge/lessons.json": 673,
+    "knowledge/work_items.json": 53
+  },
+  "reviewed_lesson": "METHOD-EXCEPTIONAL-BEZOUT-WEIGHTED-TAIL-20261115",
+  "reviewed_work_item": "WORK-EXCEPTIONAL-SL2-MOMENTS",
+  "scope_fingerprints_reviewed": true,
+  "source_checker_receipt_and_maps_hashes": true,
+  "canonical_local_links_checked": 7,
+  "explicit_U_V_nu_term_counts": [
+    [
+      32,
+      36,
+      82
+    ],
+    [
+      56,
+      118,
+      194
+    ]
+  ],
+  "sharp_minimum_regular_map_depths": [
+    19,
+    31
+  ],
+  "entire_algebra": "ker(delta+eta partial_t) with an explicit global slice;six explicit generators and a finite-formula complete-intersection presentation",
+  "weighted_all_order_transfer": "hGamma(C*(kappa*c_top+Db)*Q(Phi_b)*P(Phi_b)^j)=hSL2(Q*P^j) for every b and j",
+  "Hopf_family_fixed_markers_and_infinite_tails": "SUPPLIED for all b;unweighted purity alone would suffice for failure;family not claimed exhaustive",
+  "canonical_b0_first_moments": [
+    "-1758938/118915225",
+    "97777523/2181764186"
+  ],
+  "canonical_b0_purity": "EXCLUDED on both models",
+  "other_b_purity": "OPEN",
+  "universal_slice_topology_and_transfer_proofs_machine_verified": false,
+  "exceptional_MZ_decisions": "OPEN on both models",
+  "next_gate": "Find a structural b with an unweighted all-order pure identity,or close that entire sufficient family;retain the full admissible pure-null classification",
+  "new_support_or_moment_prefix_campaign": false,
+  "assurance": "Internal written proofs with exact regular maps,derivative identities and weighted/unweighted moment controls;no independent specialist replay,formal verification or external review",
+  "rendered_views": [
+    "index/README.md",
+    "index/geometry.md",
+    "index/documents.tsv",
+    "knowledge/ALGORITHMS.md",
+    "knowledge/WORK_LEDGER.md",
+    "knowledge/work/geometry.md",
+    "STATUS.md"
+  ],
+  "full_repository_navigation": "FAIL: pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md (make exit2)",
+  "full_repository_validated": false,
+  "git_diff_check": "PASS (exit0)",
+  "goal_status": "active"
+}

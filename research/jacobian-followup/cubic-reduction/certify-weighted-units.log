@@ -1,0 +1,21 @@
+CERTIFIED small-h
+CERTIFIED high-w
+CERTIFIED mid-w
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/certify_weighted_units.py", line 32, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/certify_weighted_units.py", line 21, in main
+    script=out/(tag+'.sing');script.write_text('\n'.join(lines)+'\n');r=subprocess.run(['Singular','-q',str(script)],capture_output=True,text=True,timeout=20);text=r.stdout+r.stderr;(out/(tag+'.log')).write_text(text);assert r.returncode==0 and '?' not in text and 'ERROR' not in text,text[:1000]
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['Singular', '-q', '/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/weighted-unit-certificates/theta-zero.sing']' timed out after 20 seconds

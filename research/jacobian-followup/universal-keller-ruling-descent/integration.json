@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T10:12:41.305650+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UAARITHRULING1",
+    "UAPRODUCTTOPO1",
+    "UAORBFIB1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAALLATOM1",
+    "UAGEOPIC1",
+    "UAINTERSURF1",
+    "UALOGVOL1",
+    "UAPLANECHART1",
+    "UAUNITFACT1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UAARITHRULING1",
+    "UAPRODUCTTOPO1",
+    "UAORBFIB1"
+  ],
+  "old_entry_count": 2576,
+  "new_entry_count": 2579,
+  "unchanged_existing_entry_count": 2569,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "3b75c4e841112bdf4046779f5850f933abe6b8b8a849eba4e05b77181d881e9c",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "0072077cae929493",
+    "UAARITHRULING1": "1c1e623ab3fbb0ce",
+    "UAPRODUCTTOPO1": "8ff70db765d6de68",
+    "UAORBFIB1": "c21db7c6560f48a6"
+  },
+  "updated_lessons": [
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "2b895db3ee648673cd863d38b8bd8352dd4fee8484ab7c262be9947b61a11a37",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "Descended complete-type rulings, nonintegral arithmetic ruling fibres and nonreduced geometric fibres in the actual unit-free arithmetic-UFD branch; a descended proper native ruling now entails a JC(2)-counterexample atlas. The published unique/Galois-invariant ruling case DOES descend, so it has the same conditional JC(2) burden.",
+    "Every nontrivial finite generic stage on an actual product leaf, and intermediate fundamental groups without an abelian subgroup of index dividing source degree; surface completions cannot add only finitely many source points.",
+    "All multiple-fibre patterns over A1 except at most one or exactly two doubles, with the two-double case excluded at odd source degree."
+  ],
+  "verification_design_note": "64 selected exact source-chart, van Kampen abelian presentation, all-degree source-map, Euler-cocycle, arithmetic/geometric fibre, hypothesis-boundary, free-product kernel-rank and dihedral controls accompany written general proofs. Classical fibration, topology, orbifold quotient and normal-extension inputs are explicit. No finite coefficient or exponent test establishes the unrestricted claims.",
+  "assurance": "Three written general claims with64 selected exact controls. No independent whole-proof replay, formal verification, external review or novelty certificate. Ruling descent itself, JC(2), whole surviving arrows, nonlinear integration and canonical absolute stable atomicity remain open."
+}

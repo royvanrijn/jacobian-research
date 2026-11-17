@@ -1,0 +1,92 @@
+{
+  "status": "complete",
+  "source_sha256": "07031e4d5e40bec3e28de245aa567f40e8d6dcee7a9f616fea2643ab03ef4fd4",
+  "model_sha256": "d73fc29ab1c82482f17988bbdbdc334c3b477b365af4dbe3c3e996a1c1c7b0d8",
+  "cases": [
+    {
+      "case": "A",
+      "input": "first-A.json",
+      "input_sha256": "35b60665d1147f32cad7117352e855aef5e02c1e52a3bd3d1a06953beab1736b",
+      "status": "primary-unit",
+      "seconds": 0.615,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "case": "B",
+      "input": "first-B.json",
+      "input_sha256": "38988d04ddb46cdc38add94006a9e8967a1b52d902f1dc9f6bd4c3d7e94df9c5",
+      "status": "primary-unit",
+      "seconds": 0.019,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "case": "C",
+      "input": "first-C.json",
+      "input_sha256": "4b96cd765cc77dcd51d7c5b0445a0b9ff6f582ccf0c75e38288195470d395d21",
+      "status": "primary-unit",
+      "seconds": 0.184,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "seconds": 0.83
+}

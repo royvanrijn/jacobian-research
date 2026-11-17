@@ -1,0 +1,85 @@
+{
+  "as_of": "2026-11-16",
+  "primary_sources": [
+    {
+      "path": "sources/monic-key-chart-audit/mondal-13075577v4.html",
+      "url": "https://arxiv.org/html/1307.5577v4",
+      "title": "Mondal, Analytic compactifications of C2 part II, arXiv1307.5577v4",
+      "bytes": 1715796,
+      "sha256": "5c79d375c3f83339faeaaaadd3276f09782cf56299a8aa03444f92c046eb5f64",
+      "used_statement": "Definitions2.8/2.10 signed key forms; Definition4.5 and full Theorem4.6 normal forms for ANY divisorial semidegree; Definition7.1 and full Theorem7.2 general canonical formula before primitive specialization; complete AppendixD.1 existence proof and Section7.3 canonical proof read. No primitive compactification assumption imported into affine bridge.",
+      "imported_not_independently_reproved": true,
+      "complete_HTML_sections_read": [
+        "Definitions2.8/2.10",
+        "Definition4.5 and Theorem4.6",
+        "Definition7.1 and Theorem7.2",
+        "AppendixD.1 full existence proof",
+        "Section7.3 full canonical proof"
+      ],
+      "fresh_PDF_audit": false
+    },
+    {
+      "path": "sources/coordinate-negative-canonical/mondal-sign-mmj-2017.pdf",
+      "url": "https://pinakimondal.org/papers/mmj.pdf",
+      "title": "Mondal, How to Determine the Sign of a Valuation on C[x,y], MMJ66(2017),227-244",
+      "bytes": 227480,
+      "sha256": "d0e2f3d0fa88084034b723b42f2c66cdbbe9f387f62cff3735b99d616c0a66f1",
+      "used_statement": "Theorem1.4(1) exact nonnegative sign equivalence for any divisorial semidegree. Fresh complete PDF3/printed229 rendered and visually read.",
+      "imported_not_independently_reproved": true,
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        3
+      ],
+      "fresh_PDF_audit": true
+    },
+    {
+      "path": "sources/coordinate-pole-sector/miyanishi-tifr60.pdf",
+      "url": "https://mathweb.tifr.res.in/Documents/Publications/Lectures/tifr60.pdf",
+      "title": "Miyanishi, Lectures on Curves on Rational and Unirational Surfaces, TIFR60",
+      "bytes": 2679690,
+      "sha256": "6c295e01de50943a8a76236420ed1a8a210b37ad97233c253a71c1425fe7ae34",
+      "used_statement": "ChapterI Theorem4.1.1, full hypotheses generic A1 and all scheme fibers geometrically integral; affine faithfully flat finite type over locally noetherian locally factorial integral base. Full PDF40/printed24 and local algebra PDF41 freshly rendered/read. Bundle theorem imported, not independently reproved.",
+      "imported_not_independently_reproved": true,
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        40,
+        41
+      ],
+      "fresh_PDF_audit": true
+    }
+  ],
+  "canonical_sign": "delta=-v; A_delta=1+v(volume)=e",
+  "general_semidegree_quantifiers_verified": true,
+  "scheme_fiber_integrality_not_just_reduced_support": true,
+  "retained_BGV_component_open_and_coordinate_extension_audit": "PF98; source PDFs unchanged",
+  "new_written_proofs": [
+    "Minimal-y-degree monic key with positive value and transcendental leading residue makes all regular polynomials constant modulo key, hence every target Jacobian has key factor, any degree/index/other omitted primes",
+    "Every smooth positive-index regular-coordinate component has entire root planes, signed support j>=r-e+1, exactness iff c_r=0, least additive multiplier max(0,ceil(e/r)-1)",
+    "PF45 index1/2 coordinate bridge and PF40/43/46 whole-chart necessity audited with declared primary imports"
+  ],
+  "essential_countercontrols": [
+    "Actual smooth affine constant-leading-residue example rescues V by cancellation and has nonconstant reduction on G=0",
+    "Formal/local e5 r3 positive-power support retained, not claimed globally realized"
+  ],
+  "affine_converse_for_all_higher_indices_asserted": false,
+  "higher_index_coordinate_existence_forced": false,
+  "full_quartic_Keller_exclusion_registered": true,
+  "full_prior_passport_normal_deformation_JSJ_chain_independently_reproved": false,
+  "finite_controls_not_universal_proof": true,
+  "published_quartic_retirement": {
+    "authority_claim": "HC4MYKR0",
+    "primary_url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=273&what=fullteng",
+    "metadata_url": "https://www.mathnet.ru/eng/im273",
+    "independently_read_complete_primary_extracted_pages": [
+      1,
+      2,
+      32
+    ],
+    "main_statement": "Polynomial plane self-map of generic/topological degree four cannot have a nonzero constant Jacobian; no boundary-count or monodromy restriction.",
+    "screenshot_attempt": "Web screenshot tools returned text placeholders, not usable images; no fresh visual page inspection asserted for this source.",
+    "local_binary_cache": "No binary cache asserted; use retained HC4MYKR0 source context and primary web text.",
+    "full_33_page_splice_proof_independently_reproved": false,
+    "quartic_realization_is_no_longer_open": true,
+    "marked_completion_application": "Finite dominant degree4 pi with dense marked U=A2 and pi|U etale gives actual polynomial Keller field degree4, excluded. Numerical/local candidate conditions alone are not the marking hypothesis."
+  },
+  "new_internal_quartic_exclusion_proved": false,
+  "new_priority": "Higher-degree Wright boundary patterns, nonmonic/Laurent terminal keys, constant-leading-residue failures, higher-index all-polar or singular primes; no quartic realization campaign."
+}

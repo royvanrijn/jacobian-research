@@ -1,0 +1,10 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "selection":"Only the four retained cover groups13a_3145,13a_3147,13a_3148,13a_3149, and the three already cyclic reductions as negative controls; no293-panel expansion",
+  "user_request":"Run direct finite quotient detection of the commutator alongside exact abelian-collapse derivation, accepting only independently evaluated source relators",
+  "structured_construction":"Use the trefoil image A5 x C5 on F5^2. Natural even permutations p=(3,0,2,1,4) and q=(4,1,3,2,0) give alpha(x,y)=(p(x),y+2), delta(x,y)=(q(x),y+3). Their fibre is (x,y+1) and meridian is (x+1,y+1), a regular C5^2 peripheral action. A linear change of these two translation directions implements each of the two peripheral gluing maps, giving degree25 permutations for the A+/A-/B+/B- models. Transport back to the exact retained two-generator and original full cover presentations.",
+  "parallel_exact_direction":"Recheck every three-sheet structural reduction and the three proved cyclic source groups. For the four remaining groups, audit the peripheral injection/amalgam proof; a valid finite commutator witness excludes an abelian-collapse derivation",
+  "limits":{"sharp_targets":4,"cyclic_negative_controls":3,"permutation_degree":25,"seconds_total":30,"optional_group_order_seconds_per_case":5},
+  "acceptance":"Standalone standard-library checker verifies every original retained two-generator relator and a moved point under A*B*A^-1*B^-1. A separate full replay verifies all original branched-cover generator images/relators and name/upper provenance. Mutated and commuting witnesses must be rejected. Full mathematical source identification remains a distinct checked dependency.",
+  "scope":"Four finite nonabelianity certificates and exact cyclic controls. No full MRC, global priority, minimal permutation degree or practical residual-finiteness bound is claimed. Existing failures and subgroup proofs retained."
+}

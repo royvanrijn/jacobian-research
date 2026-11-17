@@ -1,5 +1,12 @@
 # The pure-target \(A_4\) ledger lift
 
+**Construction status, 15 November 2026:** [KMFI66 and the construction-closure bridge](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+exclude the proposed A4-preserving polynomial Keller completion on ordinary
+affine space in every dimension and faithful transitive action, subject to
+the internal central-cover proof. All local calculations below are retained.
+Construction continuations are historical; unresolved local classifications
+do not reopen this objective. Wright's A4 boundary states remain separate.
+
 ## 1. Outcome
 
 The residual \(WL\) ledger of the polynomial \(A_4\) cone can be used
@@ -252,6 +259,8 @@ Thus a constant-direction mask is only a stabilization of a
 three-dimensional polynomial map.  If it produced a degree-four
 \(A_4\) Keller map, that map was already present in the three unmasked
 coordinates.
+
+Historical proposal, superseded as an affine-space Keller construction by KMFI66 (local questions and calculations are retained):
 
 In particular, the next search must use source-dependent mask coefficients.
 Together with (5.1), the smallest genuinely new skeleton has two auxiliary

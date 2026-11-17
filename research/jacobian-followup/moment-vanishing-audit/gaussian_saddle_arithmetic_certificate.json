@@ -1,0 +1,486 @@
+{
+  "date": "2026-11-17",
+  "universal_claims_use_written_proofs": true,
+  "actual_rank_inferred_from_finite_jets": false,
+  "Gaussian_realization_inferred_from_rational_models": false,
+  "higher_rank_pcurvature_conjecture_assumed": false,
+  "field_safety_implies_purity_claimed": false,
+  "regular_transcendental_rank_one_excluded_by_written_proof": true,
+  "critical_normalization_controls": [
+    {
+      "name": "linear",
+      "phase": "x",
+      "marker": "x + 1",
+      "variables": [
+        "x"
+      ],
+      "jet_order": 6,
+      "critical_branch": [
+        "t"
+      ],
+      "critical_action": "t**2/2",
+      "original_period": "t**6/48 + t**5/8 + t**4/8 + t**3/2 + t**2/2 + t + 1",
+      "normalized_period": "t + 1",
+      "saddle_period": "t + 1",
+      "phase_denominator": 1,
+      "marker_denominator": 1,
+      "scale": 4
+    },
+    {
+      "name": "quadratic",
+      "phase": "x**2/2",
+      "marker": "x**4 + 1",
+      "variables": [
+        "x"
+      ],
+      "jet_order": 6,
+      "critical_branch": [
+        "0"
+      ],
+      "critical_action": "0",
+      "original_period": "11319*t**6/256 + 567*t**5/16 + 875*t**4/32 + 20*t**3 + 27*t**2/2 + 8*t + 4",
+      "normalized_period": "11319*t**6/256 + 567*t**5/16 + 875*t**4/32 + 20*t**3 + 27*t**2/2 + 8*t + 4",
+      "saddle_period": "11319*t**6/256 + 567*t**5/16 + 875*t**4/32 + 20*t**3 + 27*t**2/2 + 8*t + 4",
+      "phase_denominator": 2,
+      "marker_denominator": 1,
+      "scale": 8
+    },
+    {
+      "name": "critical_quadratic",
+      "phase": "x**2 + x",
+      "marker": "x**2",
+      "variables": [
+        "x"
+      ],
+      "jet_order": 6,
+      "critical_branch": [
+        "32*t**6 + 16*t**5 + 8*t**4 + 4*t**3 + 2*t**2 + t"
+      ],
+      "critical_action": "8*t**6 + 4*t**5 + 2*t**4 + t**3 + t**2/2",
+      "original_period": "5089*t**6/12 + 679*t**5/4 + 265*t**4/4 + 25*t**3 + 9*t**2 + 3*t + 1",
+      "normalized_period": "5313*t**6/16 + 1113*t**5/8 + 455*t**4/8 + 45*t**3/2 + 17*t**2/2 + 3*t + 1",
+      "saddle_period": "5313*t**6/16 + 1113*t**5/8 + 455*t**4/8 + 45*t**3/2 + 17*t**2/2 + 3*t + 1",
+      "phase_denominator": 1,
+      "marker_denominator": 1,
+      "scale": 4
+    },
+    {
+      "name": "critical_cubic",
+      "phase": "x**3 + x",
+      "marker": "x + 1",
+      "variables": [
+        "x"
+      ],
+      "jet_order": 6,
+      "critical_branch": [
+        "18*t**5 + 3*t**3 + t"
+      ],
+      "critical_action": "9*t**6/2 + t**4 + t**2/2",
+      "original_period": "407261*t**6/6 + 23472*t**5 + 1239*t**4/2 + 218*t**3 + 11*t**2 + 4*t + 1",
+      "normalized_period": "1080855*t**6/16 + 46719*t**5/2 + 4905*t**4/8 + 216*t**3 + 21*t**2/2 + 4*t + 1",
+      "saddle_period": "1080855*t**6/16 + 46719*t**5/2 + 4905*t**4/8 + 216*t**3 + 21*t**2/2 + 4*t + 1",
+      "phase_denominator": 1,
+      "marker_denominator": 1,
+      "scale": 4
+    },
+    {
+      "name": "quartic_divergent",
+      "phase": "x**4",
+      "marker": "x**2 + 1",
+      "variables": [
+        "x"
+      ],
+      "jet_order": 5,
+      "critical_branch": [
+        "0"
+      ],
+      "critical_action": "0",
+      "original_period": "480134655*t**5/4 + 6081075*t**4/4 + 24255*t**3 + 525*t**2 + 18*t + 2",
+      "normalized_period": "480134655*t**5/4 + 6081075*t**4/4 + 24255*t**3 + 525*t**2 + 18*t + 2",
+      "saddle_period": "480134655*t**5/4 + 6081075*t**4/4 + 24255*t**3 + 525*t**2 + 18*t + 2",
+      "phase_denominator": 1,
+      "marker_denominator": 1,
+      "scale": 4
+    },
+    {
+      "name": "mixed_no_linear",
+      "phase": "x**2*y + x*y**2",
+      "marker": "x**2*y**2 + 1",
+      "variables": [
+        "x",
+        "y"
+      ],
+      "jet_order": 4,
+      "critical_branch": [
+        "0",
+        "0"
+      ],
+      "critical_action": "0",
+      "original_period": "4020*t**4 + 48*t**2 + 2",
+      "normalized_period": "4020*t**4 + 48*t**2 + 2",
+      "saddle_period": "4020*t**4 + 48*t**2 + 2",
+      "phase_denominator": 1,
+      "marker_denominator": 1,
+      "scale": 4
+    },
+    {
+      "name": "rational_coefficients",
+      "phase": "x**3/2 + x/3",
+      "marker": "x/5 + 1",
+      "variables": [
+        "x"
+      ],
+      "jet_order": 5,
+      "critical_branch": [
+        "t**5/6 + t**3/6 + t/3"
+      ],
+      "critical_action": "t**4/54 + t**2/18",
+      "original_period": "40930607*t**5/311040 + 356761*t**4/10368 + 10583*t**3/2160 + 175*t**2/72 + 11*t/30 + 1",
+      "normalized_period": "504247*t**5/3840 + 4385*t**4/128 + 1171*t**3/240 + 19*t**2/8 + 11*t/30 + 1",
+      "saddle_period": "504247*t**5/3840 + 4385*t**4/128 + 1171*t**3/240 + 19*t**2/8 + 11*t/30 + 1",
+      "phase_denominator": 6,
+      "marker_denominator": 5,
+      "scale": 24
+    },
+    {
+      "name": "constant",
+      "phase": "2/3",
+      "marker": "x**2 + 1",
+      "variables": [
+        "x"
+      ],
+      "jet_order": 4,
+      "critical_branch": [
+        "0"
+      ],
+      "critical_action": "2*t/3",
+      "original_period": "4*t**4/243 + 8*t**3/81 + 4*t**2/9 + 4*t/3 + 2",
+      "normalized_period": "2",
+      "saddle_period": "2",
+      "phase_denominator": 3,
+      "marker_denominator": 1,
+      "scale": 12
+    }
+  ],
+  "matrix_controls": [
+    {
+      "phase": "x**2*y + x**2 + x*y**2 + x + y",
+      "jet_order": 3,
+      "branch": [
+        "7*t**3 + 2*t**2 + t",
+        "3*t**3 + t"
+      ],
+      "action": "t**3 + t**2",
+      "B": [
+        [
+          "-2*t**2 - 2*t + 1",
+          "-4*t**3 - 4*t**2"
+        ],
+        [
+          "-4*t**3 - 4*t**2",
+          "-4*t**3 - 2*t**2 + 1"
+        ]
+      ],
+      "L": [
+        [
+          "11*t**3/2 + 5*t**2/2 + t + 1",
+          "5*t**3 + 2*t**2"
+        ],
+        [
+          "5*t**3 + 2*t**2",
+          "2*t**3 + t**2 + 1"
+        ]
+      ]
+    }
+  ],
+  "occupation_controls": [
+    {
+      "vertices": [
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "counts": [
+        3,
+        2
+      ],
+      "marker": [
+        0
+      ],
+      "value": "3465/4",
+      "two_power": 5
+    },
+    {
+      "vertices": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "counts": [
+        5,
+        4,
+        2
+      ],
+      "marker": [
+        0,
+        0
+      ],
+      "value": "2837835/128",
+      "two_power": 11
+    },
+    {
+      "vertices": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "counts": [
+        9,
+        4,
+        3
+      ],
+      "marker": [
+        2,
+        0
+      ],
+      "value": "11712375675/2048",
+      "two_power": 16
+    },
+    {
+      "vertices": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "counts": [
+        3,
+        5
+      ],
+      "marker": [
+        1,
+        1
+      ],
+      "value": "31216185/16",
+      "two_power": 8
+    },
+    {
+      "vertices": [
+        [
+          4
+        ]
+      ],
+      "counts": [
+        7
+      ],
+      "marker": [
+        2
+      ],
+      "value": "19651693186125/16",
+      "two_power": 7
+    }
+  ],
+  "no_linear_controls": [
+    {
+      "phase": "x**3 + x**2",
+      "marker": "x + 1",
+      "variables": [
+        "x"
+      ],
+      "period": "437514*t**6 + 35091*t**5 + 10255*t**4/4 + 265*t**3 + 24*t**2 + 4*t + 1",
+      "jet_order": 6,
+      "scale": 2
+    },
+    {
+      "phase": "x**2*y**2 + x*y",
+      "marker": "x**2 + 1",
+      "variables": [
+        "x",
+        "y"
+      ],
+      "period": "2326645*t**6 + 98565*t**5 + 5046*t**4 + 327*t**3 + 29*t**2 + 4*t + 2",
+      "jet_order": 6,
+      "scale": 2
+    },
+    {
+      "phase": "x**4",
+      "marker": "x**4 + 1",
+      "variables": [
+        "x"
+      ],
+      "period": "1187634893445*t**6/4 + 5281481205*t**5/2 + 54729675*t**4/2 + 339570*t**3 + 5250*t**2 + 108*t + 4",
+      "jet_order": 6,
+      "scale": 2
+    }
+  ],
+  "critical_conjugate_obstruction": {
+    "phase": "x**3 + x",
+    "critical_equation": "3*t*g**2-g+t",
+    "parameter_time": "g/(3*g**2 + 1)",
+    "action": "g**2*(1 - g**2)/(6*g**2 + 2)",
+    "other_root": "1/(3*g)",
+    "conjugate_action": "(9*g**2 - 1)/(162*g**4 + 54*g**2)",
+    "difference": "-(3*g**2 - 1)**3/(54*g**2*(3*g**2 + 1))",
+    "conclusion": "selected critical action nonrational;unit logarithmic derivative not rational;actual rank>=2 by written theorem,not finite jets"
+  },
+  "Kummer_models": [
+    {
+      "action": "0",
+      "log_derivative": "-1/(2*t - 2)",
+      "normalized_log_derivative": "-1/(2*t - 2)",
+      "N": 2,
+      "q": "-1/(t - 1)",
+      "residue_resultant": "z + 1/2",
+      "residue_factors": [
+        {
+          "residue": "-1/2",
+          "factor": "1 - t",
+          "exponent": -1
+        }
+      ],
+      "Gaussian_realization_inferred": false
+    },
+    {
+      "action": "t**2",
+      "log_derivative": "(2*t**2 - 2*t + 1)/(t - 1)",
+      "normalized_log_derivative": "1/(t - 1)",
+      "N": 1,
+      "q": "1 - t",
+      "residue_resultant": "z - 1",
+      "residue_factors": [
+        {
+          "residue": "1",
+          "factor": "1 - t",
+          "exponent": 1
+        }
+      ],
+      "Gaussian_realization_inferred": false
+    },
+    {
+      "action": "-t**3/(t - 1)",
+      "log_derivative": "(-6*t**4 + 3*t**3 + 10*t**2 + 2*t - 3)/(3*t**3 - 3*t**2 - 3*t + 3)",
+      "normalized_log_derivative": "(t + 3)/(3*t**2 - 3)",
+      "N": 3,
+      "q": "(t**2 - 2*t + 1)/(t + 1)",
+      "residue_resultant": "z**2 - z/3 - 2/9",
+      "residue_factors": [
+        {
+          "residue": "2/3",
+          "factor": "1 - t",
+          "exponent": 2
+        },
+        {
+          "residue": "-1/3",
+          "factor": "t + 1",
+          "exponent": -1
+        }
+      ],
+      "Gaussian_realization_inferred": false
+    },
+    {
+      "action": "0",
+      "log_derivative": "4*t/(3*t**2 - 3)",
+      "normalized_log_derivative": "4*t/(3*t**2 - 3)",
+      "N": 3,
+      "q": "t**4 - 2*t**2 + 1",
+      "residue_resultant": "z**2 - 4*z/3 + 4/9",
+      "residue_factors": [
+        {
+          "residue": "2/3",
+          "factor": "1 - t**2",
+          "exponent": 2
+        }
+      ],
+      "Gaussian_realization_inferred": false
+    }
+  ],
+  "pcurvature_controls": [
+    {
+      "log_derivative": "1/(2*(1 - t))",
+      "prime": 3,
+      "closed_formula": "0",
+      "iterated_derivative": "0"
+    },
+    {
+      "log_derivative": "1/(t + 1) + 2/(t - 1)",
+      "prime": 3,
+      "closed_formula": "0",
+      "iterated_derivative": "0"
+    },
+    {
+      "log_derivative": "1/(t**2 + 1)",
+      "prime": 3,
+      "closed_formula": "-1/(t**6 + 1)",
+      "iterated_derivative": "-1/(t**6 + 1)"
+    },
+    {
+      "log_derivative": "1/(2*(1 - t))",
+      "prime": 5,
+      "closed_formula": "0",
+      "iterated_derivative": "0"
+    },
+    {
+      "log_derivative": "1/(t + 1) + 2/(t - 1)",
+      "prime": 5,
+      "closed_formula": "0",
+      "iterated_derivative": "0"
+    },
+    {
+      "log_derivative": "1/(t**2 + 1)",
+      "prime": 5,
+      "closed_formula": "0",
+      "iterated_derivative": "0"
+    },
+    {
+      "log_derivative": "1/(2*(1 - t))",
+      "prime": 7,
+      "closed_formula": "0",
+      "iterated_derivative": "0"
+    },
+    {
+      "log_derivative": "1/(t + 1) + 2/(t - 1)",
+      "prime": 7,
+      "closed_formula": "0",
+      "iterated_derivative": "0"
+    },
+    {
+      "log_derivative": "1/(t**2 + 1)",
+      "prime": 7,
+      "closed_formula": "2/(t**14 + 1)",
+      "iterated_derivative": "2/(t**14 + 1)"
+    }
+  ],
+  "rejections": [
+    "linear phase vertices in degree>=2 denominator lemma",
+    "irrational normalized residues exp(arctan t)",
+    "remaining polynomial logarithmic derivative",
+    "remaining higher-order pole",
+    "action not normalized at origin"
+  ],
+  "raw_linear_normalization_boundary": true
+}

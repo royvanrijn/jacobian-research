@@ -1,0 +1,26 @@
+{
+  "status": "EXACT_SELECTED_FAMILY_ONLY",
+  "phase": "ell_z*z+z*t+w^3+g1*z*(t^2-z*w/2)",
+  "variables": [
+    "ell_z",
+    "g1"
+  ],
+  "moments": [
+    {
+      "n": 4,
+      "primitive": "429*ell_z**3 - 143*ell_z**2*g1 + 52*ell_z*g1**2 + 143*ell_z - g1**3 + 13*g1"
+    },
+    {
+      "n": 8,
+      "primitive": "7429*ell_z**6 - 7429*ell_z**5*g1 + 4370*ell_z**4*g1**2 + 7429*ell_z**4 - 1150*ell_z**3*g1**3 - 874*ell_z**3*g1 + 230*ell_z**2*g1**4 + 1104*ell_z**2*g1**2 + 1311*ell_z**2 - 16*ell_z*g1**5 + 46*ell_z*g1**3 + 207*ell_z*g1 + g1**6 + 14*g1**4 + 46*g1**2 + 23"
+    },
+    {
+      "n": 12,
+      "primitive": "80330145*ell_z**9 - 137708820*ell_z**8*g1 + 122740470*ell_z**7*g1**2 + 137708820*ell_z**7 - 62867070*ell_z**6*g1**3 - 83822760*ell_z**6*g1 + 22119895*ell_z**5*g1**4 + 62867070*ell_z**5*g1**2 + 62867070*ell_z**5 - 4977980*ell_z**4*g1**5 - 11642050*ell_z**4*g1**3 + 814555*ell_z**3*g1**6 + 4415950*ell_z**3*g1**4 + 11642050*ell_z**3*g1**2 + 8382276*ell_z**3 - 76405*ell_z**2*g1**7 - 108780*ell_z**2*g1**5 + 1204350*ell_z**2*g1**3 + 1862728*ell_z**2*g1 + 5180*ell_z*g1**8 + 60865*ell_z*g1**6 + 369075*ell_z*g1**4 + 658378*ell_z*g1**2 + 232841*ell_z - 105*g1**9 + 1295*g1**7 + 20720*g1**5 + 55426*g1**3 + 32116*g1"
+    }
+  ],
+  "prefix12_basis": [
+    "1"
+  ],
+  "boundary": "This selected two-weight calculation is not by itself exhaustive for the full five-variable chart."
+}

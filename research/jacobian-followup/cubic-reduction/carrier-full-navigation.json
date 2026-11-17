@@ -1,0 +1,28 @@
+{
+  "generated_status_hand_edited": false,
+  "runs": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n",
+      "stdout": ""
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n",
+      "stdout": ""
+    }
+  ],
+  "scoped_claim": "KCUB20",
+  "scoped_integration": "carrier-full-integration.json",
+  "status": "unrelated-preexisting-navigation-failures",
+  "unrelated_artifacts_rebuilt": false
+}

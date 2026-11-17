@@ -1,0 +1,80 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Hatcher, Notes on Basic 3-Manifold Topology, retained version",
+      "bytes": 384715,
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "complete_PDF_pages_visually_rechecked": [
+        25,
+        26,
+        27
+      ],
+      "printed_pages": [
+        24,
+        25,
+        26
+      ],
+      "used_statement": "Section2.1 construction and Proposition2.1: normalized cone coefficient is invariant modulo its cone order for boundary Seifert pieces, section changes add integers, orientation reversal changes signs. The proof allows both signs independently as a weaker necessary condition. Hatcher cone-order notation beta corresponds to our a, and his numerator alpha to our normalized coefficient.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF85 fresh complete render and visual review; prior PF77/79 JSJ and fibre uniqueness pages retained"
+    },
+    {
+      "path": "sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/neumraym.pdf",
+      "title": "Neumann--Raymond, Seifert manifolds, plumbing, mu-invariant and orientation reversing maps, LNM664(1978),163-196",
+      "bytes": 893752,
+      "sha256": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        3,
+        4,
+        11,
+        12
+      ],
+      "principal_used_complete_PDF_pages": [
+        4,
+        12
+      ],
+      "printed_pages": [
+        165,
+        166,
+        173,
+        174
+      ],
+      "used_statement": "Lemma1.3 fibre quotient multiplies beta/alpha by fibre degree; source-cover coefficients divide by it in the inverse direction. Theorem5.1 signed negative-chain continued fraction identifies leg cofactor modulo order up to sign. Orientation reversal sign discussion on PDF3; complete theorem start/diagram read on PDF11/12.",
+      "imported_not_independently_reproved": true,
+      "current_complete_page_audit": "PF85 fresh full-page visual inspection, using both signs rather than guessing the global end orientation"
+    }
+  ],
+  "primary_web_records_consulted": [
+    "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+    "https://link.springer.com/article/10.1007/s10711-016-0209-6"
+  ],
+  "retained_inputs": [
+    "PF84 full cyclic first-arrival reduction and exact all-depth arbitrary-free-tail modulus",
+    "PF77/78/79 actual source terminal gcd/free-tail structure, Klein alternatives and full peripheral recognition",
+    "PF80/81 actual marked two-stage splices and unbounded seed exclusions"
+  ],
+  "new_written_proofs": [
+    "last source winding cofactor inverse(kappa-1) and free-tail cofactor kappa-1 from primitive local fibres/Euclidean/free blowups",
+    "all-degree local fibre cover normalized coefficient division",
+    "delta1 source/torus-terminal comparison forces a divisor nR+f-1 or nR-f-1",
+    "bothodd cyclic4 terminal winding divides8or16 even with both signs",
+    "repeated25 terminal fails4=plus-or-minus1mod25",
+    "all cyclic incoming states6/9 excluded at arbitrary depth/tail length"
+  ],
+  "limits": {
+    "smooth_exact_whole_two_line_hypotheses_required": true,
+    "all_field_degrees_for_conditional_terminal_lemma": true,
+    "all_cyclic_incoming_quartic_first_arrivals_closed": true,
+    "noncyclic_incoming_states_closed": false,
+    "all_initial_state3_paths_closed": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_packets_classified": false,
+    "formal_verification": false,
+    "external_review": false,
+    "full_goal_open": true
+  }
+}

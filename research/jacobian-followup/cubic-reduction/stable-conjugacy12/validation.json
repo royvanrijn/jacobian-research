@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "claim": "KCUB25",
+  "quadratic_rank": 11,
+  "quadratic_minor_determinant": "-288",
+  "sole_surviving_linear_jet_before_cubic": 5,
+  "functional_annihilates_quadratic_lie_image": 78,
+  "functional_on_cubic_row5": "1",
+  "pullback_monomials_through_degree3": 455,
+  "two_identity_variable_cross_controls": 27,
+  "all_formal_invariant_functions_have_zero_linear_X_jet": true,
+  "arbitrary_stabilization_proof_written": true,
+  "minimum_active_dimension_in_stable_conjugacy_class": 12,
+  "global_cubic_dimension_minimum_proved": false,
+  "formal_verification": false,
+  "finite_translation_replay": {
+    "centres": 97,
+    "best": 145,
+    "stored_maps_reconstructed": 4,
+    "stored_collision_checks": 4,
+    "scope": "Finite coupled carrier-zero affine centres only; unequal left/right normalizations are outside the universal conjugacy theorem. No global translation/affine optimum."
+  },
+  "checker_sha256": "eae8400e3518036bbe8caadfa7750e86472282c2873a0299585c6829be35bf53",
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "certificate_sha256": "f46e04d3e4c82ea7c737d94756809c21a6660767b2311dd0267a4afd6d49540b",
+  "proof_sha256": "b63925dfd874212f7c23dbc27eec237eae718029f3f9f4a00207877ceef67cca",
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "base_validation_sha256": "b9944075af344302ebe0a972e571f18f369a96440eaef4856da67bbee9d420be",
+  "translation_source_sha256": "4c7b6181792148c6d6728417ec61924b58a53a5fc20be1d81af58c65b0e190bb",
+  "translation_checkpoint_sha256": "86f8d3804ba9fe16d16180112c31de6b90b99c30c945964cbf3d861a3ab01a78",
+  "positive_bounds_unchanged": true,
+  "goal_complete": false
+}

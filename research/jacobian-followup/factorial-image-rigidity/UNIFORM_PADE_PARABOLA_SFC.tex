@@ -1,0 +1,267 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Uniform adjacent-monomial Strong Factorial by a shared parabola}
+\author{Internal algebraic proof; no priority or external-review claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+\begin{theorem}\label{thm:main}
+Let $a\ge0$ be an integer and $\beta>0$. For every nonzero polynomial
+$f(X)=X^a(A+BX)$ and every integer $n\ge1$, its two consecutive
+Gamma moments at orders $n-1,n$ cannot both vanish. Thus the entire
+adjacent-monomial family satisfies Strong Factorial, at every starting
+index, for every positive Gamma shape; in particular for ordinary factorials.
+\end{theorem}
+The theorem does not address arbitrary two-monomial gaps, arbitrary
+supports, general Factorial, or unrestricted Strong Factorial.
+The prior \href{PADE_ADJACENT_MONOMIALS.tex}{Pad\'e note} proved the ordinary
+$a\le6$ ranges and an indexed strip family. Here the uniform conclusion
+uses a different separation region. No unbounded vertical spectral bound
+for its auxiliary polynomials is asserted or needed.
+
+\section{Two elementary polynomial identities}
+For real $t>-1$ define the monic polynomial
+\[
+ R_N(t,z)=\sum_{k=0}^N(-1)^k\binom Nk(t+1)_k z^{N-k}.
+                                                               \tag{1}
+\]
+Its exponential generating function is
+\[
+ \sum_{N\ge0}R_N(t,z)\frac{u^N}{N!}
+                         =e^{zu}(1+u)^{-t-1}.                  \tag{2}
+\]
+Coefficient comparison, or differentiation of (2), gives
+\[
+ (t+1)R_d(t+1,z)=(t+d+1+z)R_d(t,z)-zR_d(t-1,z),              \tag{3}
+\]
+\[
+ R_N(t,z)=zR_{N-1}(t-1,z)-(t+N)R_{N-1}(t,z).                \tag{4}
+\]
+These identities are polynomial in $t$, so all real parameters in them
+are legitimate. For fixed $d,z$, the leading coefficient of $R_d(t,z)$
+as a polynomial in $t$ is $(-1)^d$.
+
+\section{Every possible obstruction lies inside a parabola}
+Put
+\[
+ \mathcal P_N=\{z=x+iy:y^2<4N(x+N)\}\qquad(N\ge1).
+\]
+\begin{lemma}\label{lem:inside}
+For every real $M>-1$, every zero of $R_N(M,z)$ belongs to
+$\mathcal P_N$.
+\end{lemma}
+\begin{proof}
+Let $S=M+N$ and form the $N$ by $N$ complex symmetric tridiagonal matrix
+\[
+ T_{jj}=S+2-2j,\qquad
+ T_{j,j+1}=T_{j+1,j}=i\sqrt{j(S+1-j)}.                        \tag{5}
+\]
+The square roots are positive real since $M>-1$. Its leading principal
+characteristic polynomials satisfy
+\[
+ D_0=1,\quad D_1=z-S,\quad
+ D_j=(z-S-2+2j)D_{j-1}+(j-1)(S+2-j)D_{j-2}.
+\]
+The exact coefficient formula
+\[
+ D_j(z)=\sum_{k=0}^j(-1)^{j-k}\frac{j!}{k!}
+                           \binom{S-k}{j-k}z^k
+\]
+verifies this recurrence, and at $j=N$ gives
+$\det(zI-T)=R_N(M,z)$. Generalized binomial coefficients here are
+polynomials in their upper argument, so this proof also covers noninteger $M$.
+
+Let $Tu=zu$, normalize $u^*u=1$, and write
+$\tau=\sum_{j=1}^N(j-1)|u_j|^2$, so $0\le\tau\le N-1$.
+The Hermitian part of $T$ is its real diagonal, hence
+\[
+ x=S-2\tau,\qquad
+ y=2\operatorname{Re}\sum_{j=1}^{N-1}
+                  \sqrt{j(S+1-j)}\,\overline{u_j}u_{j+1}.
+\]
+Cauchy--Schwarz gives
+\[
+ y^2\le4\Bigl(\sum_{j=1}^{N-1}j|u_{j+1}|^2\Bigr)
+           \Bigl(\sum_{j=1}^{N-1}(S+1-j)|u_j|^2\Bigr)
+       \le4\tau(S-\tau).
+\]
+Finally $S>0$, and
+\[
+ N(x+N)-\tau(S-\tau)
+             =(N-\tau)S+(N-\tau)^2>0.                        \tag{6}
+\]
+This proves the strict parabola inclusion, including $N=1$.
+\end{proof}
+
+\section{The complementary zero-free recurrence}
+The following elementary principle is the standard continued-fraction
+parabola mechanism; compare Saff--Varga, \emph{On the sharpness of
+ theorems concerning zero-free regions for certain sequences of polynomials},
+Numerische Mathematik 26 (1976), Theorem 1.1, in the
+\href{sources/saff-varga-1976-sharpness.pdf}{retained primary source}.
+The complete argument needed here follows, so no external theorem or
+unreviewed dependency is an input.
+\begin{lemma}\label{lem:outside}
+Suppose $p_0=1$, $p_{-1}=0$ and
+\[
+ p_j=(1+z/b_j)p_{j-1}-(z/c_j)p_{j-2},\qquad b_j,c_j>0,
+\]
+with the second term omitted when $j=1$. Put $b_0=0$.
+If $b_j(1-b_{j-1}/c_j)\ge\alpha>0$ for every $j$, then every $p_j$
+is nonzero on $\mathcal P_\alpha=\{x+iy:y^2<4\alpha(x+\alpha)\}$.
+\end{lemma}
+\begin{proof}
+Fix $z\in\mathcal P_\alpha$, so $x> -\alpha$.
+Inductively put $\mu_j=zp_{j-1}/(b_jp_j)$ and $\mu_0=0$.
+If $p_{j-1}\ne0$ and $\operatorname{Re}\mu_{j-1}<1$, write
+\[
+ d_j=b_{j-1}b_j/c_j,\quad v=b_j-d_j\mu_{j-1},\quad
+                  \mu_j=\frac{z}{z+v}.
+\]
+Here $\operatorname{Re}v\ge b_j-d_j\ge\alpha$, and
+$\operatorname{Re}(z+v)>0$, so the next denominator is nonzero.
+For $v=u+iw$, $u\ge\alpha$, we have
+\[
+ |v|^2+\operatorname{Re}(v\overline z)
+ =u^2+ux+(w+y/2)^2-y^2/4
+ \ge\alpha^2+\alpha x-y^2/4>0.                              \tag{7}
+\]
+The inequality uses $2u+x>0$ for $u\ge\alpha$.
+It implies $\operatorname{Re}\mu_j<1$ because
+$1-\operatorname{Re}\mu_j=operatorname{Re}(v/(z+v))$.
+The induction starts at $p_0=1,\mu_0=0$ and proves all assertions.
+\end{proof}
+
+\begin{theorem}\label{thm:coprime}
+Let $N\ge2$, $l>-1$ be real, and let $M=l+a$ with $a\ge1$ an integer.
+Then $R_N(M,z)$ and $R_{N-1}(l,z)$ have no common complex zero.
+\end{theorem}
+\begin{proof}
+Their constant terms are nonzero by (1), so a common zero $z$ is nonzero.
+Put $S_t=R_{N-1}(t,z)$. Equations (3)--(4) imply
+\[
+ S_l=0,\qquad zS_{M-1}=(M+N)S_M.                            \tag{8}
+\]
+If $a=1$, these relations force $S_l=S_{l+1}=0$; recurrence (3)
+then propagates zeros to every larger parameter $t=l+k$.
+That contradicts the nonzero leading coefficient of $S_t$ as a polynomial
+in $t$. The same reasoning shows that, for $a\ge2$, the vector
+$(S_{l+1},\ldots,S_{M-1})$ is nonzero.
+
+Set $D=a-1$. Recurrence (3), with the two boundary conditions (8),
+shows that this nonzero vector lies in the kernel of a tridiagonal
+pencil. Its diagonal is
+\[
+ l+N+j+z\quad(1\le j<D),\qquad
+                   l+N+D+\frac{N}{M+N}z\quad(j=D),
+\]
+its upper entry in row $j$ is $-(l+j+1)$, and its lower entry is $-z$.
+The last diagonal follows by replacing $S_M$ with
+$zS_{M-1}/(M+N)$ in row $M-1$ of (3).
+Its determinant therefore vanishes.
+
+Normalize each leading principal determinant to constant term one,
+calling the result $p_j$. For $j<D$ the coefficients in
+Lemma~\ref{lem:outside} are
+\[
+ b_j=l+N+j,\qquad
+ c_j=\frac{(l+N+j)(l+N+j-1)}{l+j}\quad(j\ge2).
+\]
+For the last row they are
+\[
+ b_D=\frac{(M+N)(M+N-1)}{N},\qquad
+ c_D=\frac{(M+N-1)(M+N-2)}{M-1}\quad(D\ge2).
+\]
+All quantities are positive: $l>-1$, and $M>1$ when $a\ge2$.
+When $D=1$ only $p_1=1+z/b_1$ occurs, with the displayed last-row $b_1>N$.
+When $D\ge2$, the first value is $b_1>N$, the interior values
+$b_j(1-b_{j-1}/c_j)$ equal $N$, and the last value is $M+N>N$.
+Thus Lemma~\ref{lem:outside}, with $\alpha=N$, forbids a determinant zero
+in $\mathcal P_N$. Lemma~\ref{lem:inside} places our common zero there.
+This contradiction proves the theorem for every $a$, with no cutoff.
+\end{proof}
+
+\section{Transfer to factorial moments and the exact scope}
+For Gamma shape $\beta>0$, the normalized $n$th moment of
+$X^a(A+BX)$ is, when $A\ne0$,
+\[
+ \mathcal L_\beta(f^n)=A^n(\beta)_{an}B_{n,a,\beta}(B/A),\qquad
+ B_{n,a,\beta}(t)=\sum_{k=0}^n\binom nk(\beta+an)_k t^k.
+\]
+Exactly
+\[
+ R_n(\beta+an-1,z)=z^n B_{n,a,\beta}(-1/z).                  \tag{9}
+\]
+For $a\ge1,n\ge2$, apply Theorem~\ref{thm:coprime} with
+$N=n$, $M=\beta+an-1$, $l=\beta+a(n-1)-1>-1$.
+A nonzero ratio $B/A$ produces the same nonzero $z=-A/B$ at both
+orders, so (9) excludes simultaneous vanishing. If a coefficient is
+zero, the polynomial is a monomial with every moment nonzero.
+At terminal $n=1$ the order-zero moment is one.
+
+For $a=0$, let $T_n(z)=R_n(\beta-1,z)$. Formula (2) gives
+\[
+ T_{n+1}=(z-\beta-n)T_n+znT_{n-1},\qquad T_0=1.
+\]
+A common zero of consecutive members is nonzero, since
+$T_n(0)=(-1)^n(\beta)_n\ne0$. The recurrence propagates that common
+zero backward to $T_0$, a contradiction. This completes
+Theorem~\ref{thm:main}.
+
+A direct multivariate corollary is the same two-moment assertion for
+$\prod_j X_j^{a_j}(A+BX_1)$ under independent positive Gamma shapes:
+all other variables supply nonzero rising-factorial factors at each
+moment. This corollary requires the monomials to differ by exactly one
+power in a single variable; it makes no assertion for general gaps or
+multivariate supports.
+
+\section{Exact recurrence at the next, nonadjacent boundary}
+For a positive integer gap $d$ define
+\[
+ U_N^{(d)}(t,z)=\sum_{k=0}^N(-1)^k\binom Nk(t+1)_{dk}z^{N-k}.
+\]
+For $f=X^a(A+BX^d)$, its $N$th moment has the same reciprocal
+normalization with $U_N^{(d)}(\beta+aN-1,z)$.
+Direct coefficient comparison gives
+\[
+ U_N^{(d)}(t,z)=zU_{N-1}^{(d)}(t,z)
+                    -(t+1)_d U_{N-1}^{(d)}(t+d,z),           \tag{10}
+\]
+\[
+ (t+1)U_N^{(d)}(t+1,z)
+ =(t+1+dN)U_N^{(d)}(t,z)-dzN U_{N-1}^{(d)}(t,z).            \tag{11}
+\]
+Let $V_t=U_{N-1}^{(d)}(t,z)$. Eliminating $U_{N-2}^{(d)}$
+from (10)--(11), for $N\ge2$, yields the sparse order-$d+1$ recurrence
+\[
+ z(V_t-V_{t+1})=(t+2)_{d-1}
+       \bigl((t+dN+1)V_{t+d}-(t+d+1)V_{t+d+1}\bigr).         \tag{12}
+\]
+The $N=1$ identity is immediate as well.
+A hypothetical adjacent obstruction, with
+$l=\beta+a(N-1)-1$, $M=l+a$, supplies
+\[
+                    V_l=0,\qquad zV_M=(M+1)_dV_{M+d}.       \tag{13}
+\]
+For $d=1$, (12) is exactly the second-order parameter recurrence
+used above, and (13) closes its finite continuant problem.
+For $d\ge2$, recurrence (12) has order $d+1$ and these are still only
+two boundary conditions. They do not by themselves define a square
+finite-matrix eigenproblem. Additional structure of this particular
+polynomial solution is needed before applying a zero-free-region
+argument. Equations (10)--(13) are exact reusable identities, not a
+coprimality, squarefreeness or SFC theorem for a nonadjacent gap.
+
+The universal evidence is the elementary inequalities and polynomial
+identities above. The accompanying checker replays identities, the
+pencil normalization and representative exact rational parameters;
+finite replay alone is not the theorem. Independent replay, formal
+verification, external review, priority claims, general FC and unrestricted
+SFC closure all remain false. The former uniform vertical-bound target
+may remain unproved without leaving a gap in this parabola proof.
+\end{document}

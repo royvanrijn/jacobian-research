@@ -1,0 +1,16 @@
+{
+  "review_date": "2026-11-14",
+  "primary_source": "https://arxiv.org/abs/1702.00779",
+  "primary_full_text_read": "https://algebra.dmi.unibas.ch/blanc/articles/embeddingsquadrics.pdf",
+  "title": "Embeddings of Affine Spaces into Quadrics",
+  "authors": ["Jeremy Blanc", "Immanuel van Santen ne Stampfli"],
+  "source_result_reviewed": "Theorem 3, especially part (3), produces inequivalent affine-plane images in the smooth three-dimensional quadric SL2. Theorem 2 distinguishes image equivalence from extension of source parameterizations.",
+  "use": "Context for keeping ambient symmetry saturation separate from any universal embedding rectification or factorization theorem.",
+  "not_transferred": [
+    "No claim about all embeddings into the five-dimensional ambient affine space follows from this paper.",
+    "No generation theorem for the full polynomial symmetry group of the ambient quadratic is imported.",
+    "No arbitrary source parameterization is inferred to preserve the actual source Hessian."
+  ],
+  "classification_imported_as_proof_input": false,
+  "local_proof_self_contained_relative_to_retained_HC4_results": true
+}

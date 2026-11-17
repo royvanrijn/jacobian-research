@@ -1,0 +1,1027 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 240,
+  "checks": [
+    "predecessor PASS seifert_sections_winding_three_receipt.json",
+    "sealed predecessor seifert_sections_winding_three_receipt.json verify_seifert_sections_winding_three.py",
+    "sealed predecessor seifert_sections_winding_three_receipt.json SEIFERT_SECTION_NORMALIZATION_AND_WINDING_THREE.md",
+    "sealed predecessor seifert_sections_winding_three_receipt.json sources/seifert-sections-winding-three/manifest.json",
+    "sealed predecessor seifert_sections_winding_three_receipt.json rational_end_orderability_receipt.json",
+    "sealed predecessor seifert_sections_winding_three_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor seifert_sections_winding_three_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor seifert_sections_winding_three_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor seifert_sections_winding_three_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor seifert_sections_winding_three_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor seifert_sections_winding_three_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "predecessor PASS rational_end_orderability_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json verify_rational_end_orderability.py",
+    "sealed predecessor rational_end_orderability_receipt.json RATIONAL_SOURCE_ENDS_AND_TREFOIL_COMMON_EXCLUSION.md",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/manifest.json",
+    "sealed predecessor rational_end_orderability_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/boyer-rolfsen-wiest-2005.pdf",
+    "predecessor PASS lifted_surface_s3_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json verify_lifted_surface_s3.py",
+    "sealed predecessor lifted_surface_s3_receipt.json LIFTED_SURFACE_BALANCES_AND_S3_MARKED_LINKING.md",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/lifted-surface-s3/manifest.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS fibre_order_transfer_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json verify_fibre_order_transfer.py",
+    "sealed predecessor fibre_order_transfer_receipt.json FIBRE_ORDER_AND_NONCYCLIC_ZERO_MARKS.md",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/fibre-order-transfer/manifest.json",
+    "sealed predecessor fibre_order_transfer_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS binomial_periodic_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_binomial_periodic.py",
+    "sealed predecessor binomial_periodic_receipt.json ALL_BINOMIAL_KEYS_PERIODIC_GATE_AND_EXISTENCE.md",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/manifest.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_orbit_tree.py",
+    "sealed predecessor binomial_periodic_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor binomial_periodic_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/zannier-1995.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-colouring/livingston-melvin-1985.pdf",
+    "predecessor PASS peripheral_cone_budget_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json verify_peripheral_cone_budget.py",
+    "sealed predecessor peripheral_cone_budget_receipt.json PERIPHERAL_CONE_TORSION_AND_MARKED_BUDGET.md",
+    "sealed predecessor peripheral_cone_budget_receipt.json sources/peripheral-cone-budget/manifest.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "primary bytes rasmussen-1511.04413v3.pdf",
+    "primary bytes nemethi-1510.07128v1.pdf",
+    "rationality converts floor bound to nonnegative interval numerator",
+    "l1 endpoint numerator",
+    "two-leg fractions have sum below1 (1/2, 1/3)",
+    "two-leg rounding auxiliary (1/2, 1/3, 1)",
+    "two-leg rounding auxiliary (1/2, 1/3, 2)",
+    "two-leg rounding auxiliary (1/2, 1/3, 3)",
+    "two-leg rounding auxiliary (1/2, 1/3, 7)",
+    "two-leg rounding auxiliary (1/2, 1/3, 19)",
+    "two-leg l1 endpoint exactly0 (1/2, 1/3)",
+    "two-leg fractions have sum below1 (2/7, 9/14)",
+    "two-leg rounding auxiliary (2/7, 9/14, 1)",
+    "two-leg rounding auxiliary (2/7, 9/14, 2)",
+    "two-leg rounding auxiliary (2/7, 9/14, 3)",
+    "two-leg rounding auxiliary (2/7, 9/14, 7)",
+    "two-leg rounding auxiliary (2/7, 9/14, 19)",
+    "two-leg l1 endpoint exactly0 (2/7, 9/14)",
+    "unbounded normalized Euler integer identity",
+    "a below2t when u<=b-1",
+    "a below3t when u<=2b-1",
+    "b1 ceiling upper gap",
+    "b1 ceiling lower gap",
+    "t1 a1 delta zero inequality",
+    "t1 a2 delta one inequality",
+    "integer e0 bound split delta 0",
+    "integer e0 bound split delta 1",
+    "weighted cubic term degrees",
+    "primitive cubic weights and coefficients (1, 3)",
+    "actual Euler number and integer normalization (1, 3)",
+    "exact normal-slice residues (1, 3)",
+    "ceiling normalization identity (1, 3)",
+    "actual negative-definite cubic star (1, 3)",
+    "rational cubic l1 endpoint (1, 3)",
+    "rational cubic universal-bound auxiliary ('(1, 3)', 1)",
+    "rational cubic universal-bound auxiliary ('(1, 3)', 2)",
+    "rational cubic universal-bound auxiliary ('(1, 3)', 3)",
+    "rational cubic universal-bound auxiliary ('(1, 3)', 7)",
+    "rational cubic universal-bound auxiliary ('(1, 3)', 19)",
+    "rational cubic universal-bound auxiliary ('(1, 3)', 6)",
+    "ordinary torus side normalized Euler (1, 3)",
+    "actual gluing matches meridians and reverses orientation (1, 3)",
+    "actual slope zero has no section translation (1, 3)",
+    "both actual Seifert boundaries incompressible product-cover range (1, 3)",
+    "both actual ordinary classes retained (1, 3)",
+    "actual full satellite marked group ('(1, 3)', 0)",
+    "actual full satellite marked group ('(1, 3)', 1)",
+    "primitive cubic weights and coefficients (1, 13)",
+    "actual Euler number and integer normalization (1, 13)",
+    "exact normal-slice residues (1, 13)",
+    "ceiling normalization identity (1, 13)",
+    "actual negative-definite cubic star (1, 13)",
+    "rational cubic l1 endpoint (1, 13)",
+    "rational cubic universal-bound auxiliary ('(1, 13)', 1)",
+    "rational cubic universal-bound auxiliary ('(1, 13)', 2)",
+    "rational cubic universal-bound auxiliary ('(1, 13)', 3)",
+    "rational cubic universal-bound auxiliary ('(1, 13)', 7)",
+    "rational cubic universal-bound auxiliary ('(1, 13)', 19)",
+    "rational cubic universal-bound auxiliary ('(1, 13)', 26)",
+    "ordinary torus side normalized Euler (1, 13)",
+    "actual gluing matches meridians and reverses orientation (1, 13)",
+    "actual slope zero has no section translation (1, 13)",
+    "both actual Seifert boundaries incompressible product-cover range (1, 13)",
+    "both actual ordinary classes retained (1, 13)",
+    "actual full satellite marked group ('(1, 13)', 0)",
+    "actual full satellite marked group ('(1, 13)', 1)",
+    "primitive cubic weights and coefficients (2, 1)",
+    "actual Euler number and integer normalization (2, 1)",
+    "exact normal-slice residues (2, 1)",
+    "ceiling normalization identity (2, 1)",
+    "actual negative-definite cubic star (2, 1)",
+    "rational cubic l1 endpoint (2, 1)",
+    "rational cubic universal-bound auxiliary ('(2, 1)', 1)",
+    "rational cubic universal-bound auxiliary ('(2, 1)', 2)",
+    "rational cubic universal-bound auxiliary ('(2, 1)', 3)",
+    "rational cubic universal-bound auxiliary ('(2, 1)', 7)",
+    "rational cubic universal-bound auxiliary ('(2, 1)', 19)",
+    "rational cubic universal-bound auxiliary ('(2, 1)', 4)",
+    "ordinary torus side normalized Euler (2, 1)",
+    "actual gluing matches meridians and reverses orientation (2, 1)",
+    "actual slope zero has no section translation (2, 1)",
+    "both actual Seifert boundaries incompressible product-cover range (2, 1)",
+    "both actual ordinary classes retained (2, 1)",
+    "actual full satellite marked group ('(2, 1)', 0)",
+    "actual full satellite marked group ('(2, 1)', 1)",
+    "primitive cubic weights and coefficients (7, 1)",
+    "actual Euler number and integer normalization (7, 1)",
+    "exact normal-slice residues (7, 1)",
+    "ceiling normalization identity (7, 1)",
+    "actual negative-definite cubic star (7, 1)",
+    "rational cubic l1 endpoint (7, 1)",
+    "rational cubic universal-bound auxiliary ('(7, 1)', 1)",
+    "rational cubic universal-bound auxiliary ('(7, 1)', 2)",
+    "rational cubic universal-bound auxiliary ('(7, 1)', 3)",
+    "rational cubic universal-bound auxiliary ('(7, 1)', 7)",
+    "rational cubic universal-bound auxiliary ('(7, 1)', 19)",
+    "rational cubic universal-bound auxiliary ('(7, 1)', 14)",
+    "ordinary torus side normalized Euler (7, 1)",
+    "actual gluing matches meridians and reverses orientation (7, 1)",
+    "actual slope zero has no section translation (7, 1)",
+    "both actual Seifert boundaries incompressible product-cover range (7, 1)",
+    "both actual ordinary classes retained (7, 1)",
+    "actual full satellite marked group ('(7, 1)', 0)",
+    "actual full satellite marked group ('(7, 1)', 1)",
+    "primitive cubic weights and coefficients (2, 3)",
+    "actual Euler number and integer normalization (2, 3)",
+    "exact normal-slice residues (2, 3)",
+    "ceiling normalization identity (2, 3)",
+    "actual negative-definite cubic star (2, 3)",
+    "rational cubic l1 endpoint (2, 3)",
+    "rational cubic universal-bound auxiliary ('(2, 3)', 1)",
+    "rational cubic universal-bound auxiliary ('(2, 3)', 2)",
+    "rational cubic universal-bound auxiliary ('(2, 3)', 3)",
+    "rational cubic universal-bound auxiliary ('(2, 3)', 7)",
+    "rational cubic universal-bound auxiliary ('(2, 3)', 19)",
+    "rational cubic universal-bound auxiliary ('(2, 3)', 12)",
+    "ordinary torus side normalized Euler (2, 3)",
+    "actual gluing matches meridians and reverses orientation (2, 3)",
+    "actual slope zero has no section translation (2, 3)",
+    "both actual Seifert boundaries incompressible product-cover range (2, 3)",
+    "both actual ordinary classes retained (2, 3)",
+    "actual full satellite marked group ('(2, 3)', 0)",
+    "actual full satellite marked group ('(2, 3)', 1)",
+    "primitive cubic weights and coefficients (2, 5)",
+    "actual Euler number and integer normalization (2, 5)",
+    "exact normal-slice residues (2, 5)",
+    "ceiling normalization identity (2, 5)",
+    "actual negative-definite cubic star (2, 5)",
+    "exact Laufer nonrational witness (2, 5)",
+    "independent explicit Pinkham witness (2, 5)",
+    "ordinary torus side normalized Euler (2, 5)",
+    "actual gluing matches meridians and reverses orientation (2, 5)",
+    "actual slope zero has no section translation (2, 5)",
+    "both actual Seifert boundaries incompressible product-cover range (2, 5)",
+    "both actual ordinary classes retained (2, 5)",
+    "actual full satellite marked group ('(2, 5)', 0)",
+    "actual full satellite marked group ('(2, 5)', 1)",
+    "primitive cubic weights and coefficients (4, 3)",
+    "actual Euler number and integer normalization (4, 3)",
+    "exact normal-slice residues (4, 3)",
+    "ceiling normalization identity (4, 3)",
+    "actual negative-definite cubic star (4, 3)",
+    "exact Laufer nonrational witness (4, 3)",
+    "independent explicit Pinkham witness (4, 3)",
+    "ordinary torus side normalized Euler (4, 3)",
+    "actual gluing matches meridians and reverses orientation (4, 3)",
+    "actual slope zero has no section translation (4, 3)",
+    "both actual Seifert boundaries incompressible product-cover range (4, 3)",
+    "both actual ordinary classes retained (4, 3)",
+    "actual full satellite marked group ('(4, 3)', 0)",
+    "actual full satellite marked group ('(4, 3)', 1)",
+    "primitive cubic weights and coefficients (7, 15)",
+    "actual Euler number and integer normalization (7, 15)",
+    "exact normal-slice residues (7, 15)",
+    "ceiling normalization identity (7, 15)",
+    "actual negative-definite cubic star (7, 15)",
+    "exact Laufer nonrational witness (7, 15)",
+    "independent explicit Pinkham witness (7, 15)",
+    "ordinary torus side normalized Euler (7, 15)",
+    "actual gluing matches meridians and reverses orientation (7, 15)",
+    "actual slope zero has no section translation (7, 15)",
+    "both actual Seifert boundaries incompressible product-cover range (7, 15)",
+    "both actual ordinary classes retained (7, 15)",
+    "actual full satellite marked group ('(7, 15)', 0)",
+    "actual full satellite marked group ('(7, 15)', 1)",
+    "both rational and nonrational branches and nontrivial critical case exercised",
+    "prior complete winding and trefoil reductions retained"
+  ],
+  "general": {
+    "no_field_degree_bound": true,
+    "matched_actual_slopes_outside_both_L_space_interiors": true,
+    "Seifert_endpoint_lemma": true,
+    "normalized_negative_Euler_required": true,
+    "at_least_two_genuine_cones_required": true,
+    "central_plus_cone_count_at_least1_required": true,
+    "non_solid_torus_pieces_required": true,
+    "actual_graph_gluing_required": true,
+    "irreducibility_verified_before_LO_implication": true,
+    "PF74_explicit_common_source_hypotheses_required": true,
+    "nu2_handled_without_extending_Pinkham": true
+  },
+  "quartic": {
+    "actual_primitive_binomial_two_stage_required": true,
+    "all_first_exponents_windings_source_orders_poles": true,
+    "all_residual_r3_non_trefoil_common_sources_excluded": true,
+    "entire_common_source_sector_excluded": true,
+    "every_remaining_source_pencil": "COMPLEMENTARY only",
+    "companion_meridian_not_in_L_space_interior": true,
+    "ordinary_meridian_not_in_L_space_interior": true,
+    "actual_meridians_matched": true,
+    "actual_r3_end_not_L_space": true,
+    "actual_r3_end_group_nontrivial_left_orderable": true,
+    "passing_complementary_sources_excluded": false,
+    "entire_target_keys_in_both_pencils_excluded": false
+  },
+  "exact_controls": [
+    {
+      "b": 1,
+      "t": 3,
+      "normalized": {
+        "alpha": [
+          2,
+          3
+        ],
+        "omega": [
+          1,
+          1
+        ],
+        "e0": -1,
+        "u": 1,
+        "delta": 1,
+        "a": 5,
+        "N": 2
+      },
+      "critical_sum": 1,
+      "Laufer": {
+        "rational": true,
+        "cycle": [
+          2,
+          1,
+          1
+        ],
+        "steps": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "explicit_Pinkham_witness": null,
+      "meridian_status": "endpoint",
+      "D": 8,
+      "actual_gluing": [
+        [
+          -1,
+          11
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "H1": {
+        "free": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2
+        ]
+      }
+    },
+    {
+      "b": 1,
+      "t": 13,
+      "normalized": {
+        "alpha": [
+          2,
+          13
+        ],
+        "omega": [
+          1,
+          6
+        ],
+        "e0": -1,
+        "u": 1,
+        "delta": 1,
+        "a": 20,
+        "N": 2
+      },
+      "critical_sum": 1,
+      "Laufer": {
+        "rational": true,
+        "cycle": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "explicit_Pinkham_witness": null,
+      "meridian_status": "endpoint",
+      "D": 43,
+      "actual_gluing": [
+        [
+          -1,
+          56
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "H1": {
+        "free": 0,
+        "torsion": [
+          43
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    {
+      "b": 2,
+      "t": 1,
+      "normalized": {
+        "alpha": [
+          2,
+          4
+        ],
+        "omega": [
+          1,
+          1
+        ],
+        "e0": -1,
+        "u": 1,
+        "delta": 0,
+        "a": 1,
+        "N": 1
+      },
+      "critical_sum": 1,
+      "Laufer": {
+        "rational": true,
+        "cycle": [
+          2,
+          1,
+          1
+        ],
+        "steps": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "explicit_Pinkham_witness": null,
+      "meridian_status": "endpoint",
+      "D": 6,
+      "actual_gluing": [
+        [
+          -1,
+          8
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          6
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "b": 7,
+      "t": 1,
+      "normalized": {
+        "alpha": [
+          7,
+          14
+        ],
+        "omega": [
+          2,
+          9
+        ],
+        "e0": -1,
+        "u": 9,
+        "delta": 1,
+        "a": 2,
+        "N": 2
+      },
+      "critical_sum": 1,
+      "Laufer": {
+        "rational": true,
+        "cycle": [
+          3,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "explicit_Pinkham_witness": null,
+      "meridian_status": "endpoint",
+      "D": 31,
+      "actual_gluing": [
+        [
+          -1,
+          38
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "H1": {
+        "free": 0,
+        "torsion": [
+          217
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      }
+    },
+    {
+      "b": 2,
+      "t": 3,
+      "normalized": {
+        "alpha": [
+          2,
+          4,
+          3
+        ],
+        "omega": [
+          1,
+          3,
+          2
+        ],
+        "e0": -2,
+        "u": 3,
+        "delta": 1,
+        "a": 7,
+        "N": 3
+      },
+      "critical_sum": 1,
+      "Laufer": {
+        "rational": true,
+        "cycle": [
+          4,
+          2,
+          3,
+          2,
+          1,
+          3,
+          2
+        ],
+        "steps": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ]
+      },
+      "explicit_Pinkham_witness": null,
+      "meridian_status": "endpoint",
+      "D": 29,
+      "actual_gluing": [
+        [
+          -1,
+          35
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "H1": {
+        "free": 0,
+        "torsion": [
+          58
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2
+        ]
+      }
+    },
+    {
+      "b": 2,
+      "t": 5,
+      "normalized": {
+        "alpha": [
+          2,
+          4,
+          5
+        ],
+        "omega": [
+          1,
+          1,
+          1
+        ],
+        "e0": -1,
+        "u": 1,
+        "delta": 0,
+        "a": 4,
+        "N": 1
+      },
+      "critical_sum": 2,
+      "Laufer": {
+        "rational": false,
+        "cycle": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          [
+            0,
+            2
+          ]
+        ],
+        "bad_vertex": 0,
+        "intersection": 2
+      },
+      "explicit_Pinkham_witness": 1,
+      "meridian_status": "outside_L_space_interval",
+      "D": 52,
+      "actual_gluing": [
+        [
+          -1,
+          62
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "H1": {
+        "free": 0,
+        "torsion": [
+          2,
+          52
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "b": 4,
+      "t": 3,
+      "normalized": {
+        "alpha": [
+          4,
+          8,
+          3
+        ],
+        "omega": [
+          3,
+          7,
+          1
+        ],
+        "e0": -2,
+        "u": 7,
+        "delta": 1,
+        "a": 8,
+        "N": 3
+      },
+      "critical_sum": 1,
+      "Laufer": {
+        "rational": false,
+        "cycle": [
+          8,
+          6,
+          4,
+          2,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          2
+        ],
+        "steps": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "bad_vertex": 11,
+        "intersection": 2
+      },
+      "explicit_Pinkham_witness": 7,
+      "meridian_status": "outside_L_space_interval",
+      "D": 71,
+      "actual_gluing": [
+        [
+          -1,
+          83
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "H1": {
+        "free": 0,
+        "torsion": [
+          284
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          4
+        ]
+      }
+    },
+    {
+      "b": 7,
+      "t": 15,
+      "normalized": {
+        "alpha": [
+          7,
+          14,
+          15
+        ],
+        "omega": [
+          2,
+          9,
+          1
+        ],
+        "e0": -1,
+        "u": 9,
+        "delta": 1,
+        "a": 29,
+        "N": 2
+      },
+      "critical_sum": 2,
+      "Laufer": {
+        "rational": false,
+        "cycle": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          [
+            0,
+            2
+          ]
+        ],
+        "bad_vertex": 0,
+        "intersection": 2
+      },
+      "explicit_Pinkham_witness": 1,
+      "meridian_status": "outside_L_space_interval",
+      "D": 752,
+      "actual_gluing": [
+        [
+          -1,
+          857
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5264
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          14
+        ]
+      }
+    }
+  ],
+  "assurance": {
+    "written_unbounded_endpoint_normalization_and_gluing_proofs": true,
+    "complete_Rasmussen_and_Nemethi_primary_pages_visually_audited": true,
+    "deep_interval_gluing_and_orderability_theorems_imported": true,
+    "finite_controls_not_universal_proof": true,
+    "deep_theorems_independently_reproved": false,
+    "interval_confused_with_interior": false,
+    "cone_twists_inferred_from_H1": false,
+    "actual_companions_replaced_by_virtual_solid_tori": false,
+    "nu2_Pinkham_extension_assumed": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "finite_Keller_map": false,
+    "PF63_polynomial_curves_declared_nonexistent": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_matched_meridian_common_exclusion.py": "cf6061ea076cd6a43e89a1207cee82a9d116b392cc25e3af6fc2227847778154",
+    "MATCHED_MERIDIAN_SLOPES_AND_ALL_COMMON_EXCLUSION.md": "dbd515c3272eb7c04022cfb5c67b3c691c32d64efbc356fd1d5f3d8af9d22c10",
+    "sources/r3-seifert-gluing/manifest.json": "098765bcdc73db4fcbef977c89e659d5f460cb7dae44db73062a1644b3c0c625",
+    "seifert_sections_winding_three_receipt.json": "6e7f5cc05f5a6a222969e84daaeda1094efb5cb8ec7c2ae88920675a860a4fbd",
+    "rational_end_orderability_receipt.json": "de1ce1ae2febf3b3d5f31f54d93d39debdac61029313805ca2e9e27691edc9d7",
+    "lifted_surface_s3_receipt.json": "047f6b33e0849bb630525cc1e816e3371111217e0489905d65e64605b1634a5b",
+    "fibre_order_transfer_receipt.json": "a256433f7c46d52c5cd3063082ca36dada24808c6043ac9dc8b0207a965ea38b",
+    "binomial_periodic_receipt.json": "1915d4914d60fd87f0d09cad81f3b799297d83f19550558de4ac9e2dff3ae6d8",
+    "peripheral_cone_budget_receipt.json": "3c3c63d23ee8a734bb386f7d91aae011a19879437d83c6b919e9a65ac71fa130",
+    "sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf": "602c28528d7e990d2fb3b90a10f024c21cff7811054776a512c559b092e701f6",
+    "sources/rational-end-orderability/nemethi-1510.07128v1.pdf": "ec6e0f8d0d96fc9f3dfb194c23fffac6f41eb2057ae4e60765e0194f3998f594"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

@@ -1,0 +1,3857 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 976,
+  "checks": [
+    "predecessor PASS cyclic_pattern_a4_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json verify_cyclic_pattern_a4.py",
+    "sealed predecessor cyclic_pattern_a4_receipt.json CYCLIC_PATTERN_MARK_TRANSFER_AND_A4_REDUCTION.md",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/cyclic-pattern-a4/manifest.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json meridian_cycle_s4_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor cyclic_pattern_a4_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "predecessor PASS iterated_peripheral_tail_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json verify_iterated_peripheral_tail.py",
+    "sealed predecessor iterated_peripheral_tail_receipt.json ITERATED_PERIPHERAL_STATES_AND_ABSORBING_TAILS.md",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/iterated-peripheral-tail/manifest.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json rational_end_orderability_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor iterated_peripheral_tail_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "predecessor PASS cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json verify_cyclic_loop_first_arrival.py",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json CYCLIC_LOOP_GEOMETRY_AND_FIRST_ARRIVAL_REDUCTION.md",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/cyclic-loop-first-arrival/manifest.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "predecessor PASS fibre_order_transfer_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json verify_fibre_order_transfer.py",
+    "sealed predecessor fibre_order_transfer_receipt.json FIBRE_ORDER_AND_NONCYCLIC_ZERO_MARKS.md",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/fibre-order-transfer/manifest.json",
+    "sealed predecessor fibre_order_transfer_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS common_pencil_mark_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json verify_common_pencil_mark.py",
+    "sealed predecessor common_pencil_mark_receipt.json COMMON_PENCIL_GRAM_MARK_AND_ALL_ODD_EXCLUSION.md",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/manifest.json",
+    "sealed predecessor common_pencil_mark_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5H.html",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5R.html",
+    "predecessor PASS complementary_corner_jsj_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor complementary_corner_jsj_receipt.json COMPLEMENTARY_CORNER_AND_BOUNDARY_JSJ_ENDPOINT.md",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/complementary-corner-jsj/manifest.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json regular_quartic_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_trefoil_complementary_fusion.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json TREFOIL_CAPS_AND_COMPLEMENTARY_FIBRE_FUSION.md",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/trefoil-complementary-fusion/manifest.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json verify_persistent_jsj_terminal_modulus.py",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json PERSISTENT_ROOTED_JSJ_AND_TERMINAL_MODULUS.md",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/persistent-jsj-terminal-modulus/manifest.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS terminal_cone_twists_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json verify_terminal_cone_twists.py",
+    "sealed predecessor terminal_cone_twists_receipt.json TERMINAL_CONE_TWISTS_AND_CYCLIC_ARRIVAL_CLOSURE.md",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/terminal-cone-twists/manifest.json",
+    "sealed predecessor terminal_cone_twists_receipt.json cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "retained complete primary pin hatcher-3M.pdf",
+    "retained complete primary pin waldhausen-1968.pdf",
+    "retained complete primary pin neumann-raymond-1978.pdf",
+    "retained complete primary pin hillman-sakuma-1997.pdf",
+    "retained complete primary pin clay-watson-2011v1.pdf",
+    "whole single-node source unrestricted congruence",
+    "complete determinant1 divisor candidate fails 2",
+    "complete determinant1 divisor candidate fails 3",
+    "complete determinant1 divisor candidate fails 5",
+    "equal pair source determinant",
+    "equal pair determinant candidate fails actual marked distance",
+    "initial disk t,3t source determinant mismatch identity",
+    "odd solid cap true primitive fibre determinant",
+    "even solid cap true primitive fibre determinant",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 3, 9)",
+    "every initial simpleS4 base is planar (3, 4, 3, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 3, 13)",
+    "every initial simpleS4 base is planar (3, 4, 3, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 3, 22)",
+    "every initial simpleS4 base is planar (3, 4, 3, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 4, 10)",
+    "every initial simpleS4 base is planar (3, 4, 4, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 4, 17)",
+    "every initial simpleS4 base is planar (3, 4, 4, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 4, 18)",
+    "every initial simpleS4 base is planar (3, 4, 4, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 8, 9)",
+    "every initial simpleS4 base is planar (3, 4, 8, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 8, 10)",
+    "every initial simpleS4 base is planar (3, 4, 8, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 8, 22)",
+    "every initial simpleS4 base is planar (3, 4, 8, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 11, 9)",
+    "every initial simpleS4 base is planar (3, 4, 11, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 11, 10)",
+    "every initial simpleS4 base is planar (3, 4, 11, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 11, 17)",
+    "every initial simpleS4 base is planar (3, 4, 11, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 12, 13)",
+    "every initial simpleS4 base is planar (3, 4, 12, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 12, 17)",
+    "every initial simpleS4 base is planar (3, 4, 12, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 12, 18)",
+    "every initial simpleS4 base is planar (3, 4, 12, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 15, 9)",
+    "every initial simpleS4 base is planar (3, 4, 15, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 15, 13)",
+    "every initial simpleS4 base is planar (3, 4, 15, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 15, 17)",
+    "every initial simpleS4 base is planar (3, 4, 15, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 19, 13)",
+    "every initial simpleS4 base is planar (3, 4, 19, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 19, 18)",
+    "every initial simpleS4 base is planar (3, 4, 19, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 19, 22)",
+    "every initial simpleS4 base is planar (3, 4, 19, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 20, 10)",
+    "every initial simpleS4 base is planar (3, 4, 20, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 20, 18)",
+    "every initial simpleS4 base is planar (3, 4, 20, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 4, 20, 22)",
+    "every initial simpleS4 base is planar (3, 4, 20, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 3, 10)",
+    "every initial simpleS4 base is planar (3, 8, 3, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 3, 17)",
+    "every initial simpleS4 base is planar (3, 8, 3, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 3, 18)",
+    "every initial simpleS4 base is planar (3, 8, 3, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 4, 9)",
+    "every initial simpleS4 base is planar (3, 8, 4, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 4, 13)",
+    "every initial simpleS4 base is planar (3, 8, 4, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 4, 22)",
+    "every initial simpleS4 base is planar (3, 8, 4, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 8, 13)",
+    "every initial simpleS4 base is planar (3, 8, 8, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 8, 17)",
+    "every initial simpleS4 base is planar (3, 8, 8, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 8, 18)",
+    "every initial simpleS4 base is planar (3, 8, 8, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 11, 13)",
+    "every initial simpleS4 base is planar (3, 8, 11, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 11, 18)",
+    "every initial simpleS4 base is planar (3, 8, 11, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 11, 22)",
+    "every initial simpleS4 base is planar (3, 8, 11, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 12, 9)",
+    "every initial simpleS4 base is planar (3, 8, 12, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 12, 10)",
+    "every initial simpleS4 base is planar (3, 8, 12, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 12, 22)",
+    "every initial simpleS4 base is planar (3, 8, 12, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 15, 10)",
+    "every initial simpleS4 base is planar (3, 8, 15, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 15, 18)",
+    "every initial simpleS4 base is planar (3, 8, 15, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 15, 22)",
+    "every initial simpleS4 base is planar (3, 8, 15, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 19, 9)",
+    "every initial simpleS4 base is planar (3, 8, 19, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 19, 10)",
+    "every initial simpleS4 base is planar (3, 8, 19, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 19, 17)",
+    "every initial simpleS4 base is planar (3, 8, 19, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 20, 9)",
+    "every initial simpleS4 base is planar (3, 8, 20, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 20, 13)",
+    "every initial simpleS4 base is planar (3, 8, 20, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (3, 8, 20, 17)",
+    "every initial simpleS4 base is planar (3, 8, 20, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 9, 3)",
+    "every initial simpleS4 base is planar (4, 3, 9, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 9, 8)",
+    "every initial simpleS4 base is planar (4, 3, 9, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 9, 11)",
+    "every initial simpleS4 base is planar (4, 3, 9, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 9, 15)",
+    "every initial simpleS4 base is planar (4, 3, 9, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 10, 4)",
+    "every initial simpleS4 base is planar (4, 3, 10, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 10, 8)",
+    "every initial simpleS4 base is planar (4, 3, 10, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 10, 11)",
+    "every initial simpleS4 base is planar (4, 3, 10, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 10, 20)",
+    "every initial simpleS4 base is planar (4, 3, 10, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 13, 3)",
+    "every initial simpleS4 base is planar (4, 3, 13, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 13, 12)",
+    "every initial simpleS4 base is planar (4, 3, 13, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 13, 15)",
+    "every initial simpleS4 base is planar (4, 3, 13, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 13, 19)",
+    "every initial simpleS4 base is planar (4, 3, 13, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 17, 4)",
+    "every initial simpleS4 base is planar (4, 3, 17, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 17, 11)",
+    "every initial simpleS4 base is planar (4, 3, 17, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 17, 12)",
+    "every initial simpleS4 base is planar (4, 3, 17, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 17, 15)",
+    "every initial simpleS4 base is planar (4, 3, 17, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 18, 4)",
+    "every initial simpleS4 base is planar (4, 3, 18, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 18, 12)",
+    "every initial simpleS4 base is planar (4, 3, 18, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 18, 19)",
+    "every initial simpleS4 base is planar (4, 3, 18, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 18, 20)",
+    "every initial simpleS4 base is planar (4, 3, 18, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 22, 3)",
+    "every initial simpleS4 base is planar (4, 3, 22, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 22, 8)",
+    "every initial simpleS4 base is planar (4, 3, 22, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 22, 19)",
+    "every initial simpleS4 base is planar (4, 3, 22, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 3, 22, 20)",
+    "every initial simpleS4 base is planar (4, 3, 22, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 9, 4)",
+    "every initial simpleS4 base is planar (4, 9, 9, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 9, 12)",
+    "every initial simpleS4 base is planar (4, 9, 9, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 9, 19)",
+    "every initial simpleS4 base is planar (4, 9, 9, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 9, 20)",
+    "every initial simpleS4 base is planar (4, 9, 9, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 10, 3)",
+    "every initial simpleS4 base is planar (4, 9, 10, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 10, 12)",
+    "every initial simpleS4 base is planar (4, 9, 10, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 10, 15)",
+    "every initial simpleS4 base is planar (4, 9, 10, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 10, 19)",
+    "every initial simpleS4 base is planar (4, 9, 10, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 13, 4)",
+    "every initial simpleS4 base is planar (4, 9, 13, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 13, 8)",
+    "every initial simpleS4 base is planar (4, 9, 13, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 13, 11)",
+    "every initial simpleS4 base is planar (4, 9, 13, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 13, 20)",
+    "every initial simpleS4 base is planar (4, 9, 13, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 17, 3)",
+    "every initial simpleS4 base is planar (4, 9, 17, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 17, 8)",
+    "every initial simpleS4 base is planar (4, 9, 17, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 17, 19)",
+    "every initial simpleS4 base is planar (4, 9, 17, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 17, 20)",
+    "every initial simpleS4 base is planar (4, 9, 17, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 18, 3)",
+    "every initial simpleS4 base is planar (4, 9, 18, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 18, 8)",
+    "every initial simpleS4 base is planar (4, 9, 18, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 18, 11)",
+    "every initial simpleS4 base is planar (4, 9, 18, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 18, 15)",
+    "every initial simpleS4 base is planar (4, 9, 18, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 22, 4)",
+    "every initial simpleS4 base is planar (4, 9, 22, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 22, 11)",
+    "every initial simpleS4 base is planar (4, 9, 22, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 22, 12)",
+    "every initial simpleS4 base is planar (4, 9, 22, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (4, 9, 22, 15)",
+    "every initial simpleS4 base is planar (4, 9, 22, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 9, 4)",
+    "every initial simpleS4 base is planar (8, 3, 9, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 9, 12)",
+    "every initial simpleS4 base is planar (8, 3, 9, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 9, 19)",
+    "every initial simpleS4 base is planar (8, 3, 9, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 9, 20)",
+    "every initial simpleS4 base is planar (8, 3, 9, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 10, 3)",
+    "every initial simpleS4 base is planar (8, 3, 10, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 10, 12)",
+    "every initial simpleS4 base is planar (8, 3, 10, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 10, 15)",
+    "every initial simpleS4 base is planar (8, 3, 10, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 10, 19)",
+    "every initial simpleS4 base is planar (8, 3, 10, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 13, 4)",
+    "every initial simpleS4 base is planar (8, 3, 13, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 13, 8)",
+    "every initial simpleS4 base is planar (8, 3, 13, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 13, 11)",
+    "every initial simpleS4 base is planar (8, 3, 13, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 13, 20)",
+    "every initial simpleS4 base is planar (8, 3, 13, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 17, 3)",
+    "every initial simpleS4 base is planar (8, 3, 17, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 17, 8)",
+    "every initial simpleS4 base is planar (8, 3, 17, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 17, 19)",
+    "every initial simpleS4 base is planar (8, 3, 17, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 17, 20)",
+    "every initial simpleS4 base is planar (8, 3, 17, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 18, 3)",
+    "every initial simpleS4 base is planar (8, 3, 18, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 18, 8)",
+    "every initial simpleS4 base is planar (8, 3, 18, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 18, 11)",
+    "every initial simpleS4 base is planar (8, 3, 18, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 18, 15)",
+    "every initial simpleS4 base is planar (8, 3, 18, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 22, 4)",
+    "every initial simpleS4 base is planar (8, 3, 22, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 22, 11)",
+    "every initial simpleS4 base is planar (8, 3, 22, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 22, 12)",
+    "every initial simpleS4 base is planar (8, 3, 22, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 3, 22, 15)",
+    "every initial simpleS4 base is planar (8, 3, 22, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 9, 3)",
+    "every initial simpleS4 base is planar (8, 9, 9, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 9, 8)",
+    "every initial simpleS4 base is planar (8, 9, 9, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 9, 11)",
+    "every initial simpleS4 base is planar (8, 9, 9, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 9, 15)",
+    "every initial simpleS4 base is planar (8, 9, 9, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 10, 4)",
+    "every initial simpleS4 base is planar (8, 9, 10, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 10, 8)",
+    "every initial simpleS4 base is planar (8, 9, 10, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 10, 11)",
+    "every initial simpleS4 base is planar (8, 9, 10, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 10, 20)",
+    "every initial simpleS4 base is planar (8, 9, 10, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 13, 3)",
+    "every initial simpleS4 base is planar (8, 9, 13, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 13, 12)",
+    "every initial simpleS4 base is planar (8, 9, 13, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 13, 15)",
+    "every initial simpleS4 base is planar (8, 9, 13, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 13, 19)",
+    "every initial simpleS4 base is planar (8, 9, 13, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 17, 4)",
+    "every initial simpleS4 base is planar (8, 9, 17, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 17, 11)",
+    "every initial simpleS4 base is planar (8, 9, 17, 11)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 17, 12)",
+    "every initial simpleS4 base is planar (8, 9, 17, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 17, 15)",
+    "every initial simpleS4 base is planar (8, 9, 17, 15)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 18, 4)",
+    "every initial simpleS4 base is planar (8, 9, 18, 4)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 18, 12)",
+    "every initial simpleS4 base is planar (8, 9, 18, 12)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 18, 19)",
+    "every initial simpleS4 base is planar (8, 9, 18, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 18, 20)",
+    "every initial simpleS4 base is planar (8, 9, 18, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 22, 3)",
+    "every initial simpleS4 base is planar (8, 9, 22, 3)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 22, 8)",
+    "every initial simpleS4 base is planar (8, 9, 22, 8)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 22, 19)",
+    "every initial simpleS4 base is planar (8, 9, 22, 19)",
+    "every initial simpleS4 generator type is4cycle/3cycle (8, 9, 22, 20)",
+    "every initial simpleS4 base is planar (8, 9, 22, 20)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 3, 10)",
+    "every initial simpleS4 base is planar (9, 4, 3, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 3, 17)",
+    "every initial simpleS4 base is planar (9, 4, 3, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 3, 18)",
+    "every initial simpleS4 base is planar (9, 4, 3, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 4, 9)",
+    "every initial simpleS4 base is planar (9, 4, 4, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 4, 13)",
+    "every initial simpleS4 base is planar (9, 4, 4, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 4, 22)",
+    "every initial simpleS4 base is planar (9, 4, 4, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 8, 13)",
+    "every initial simpleS4 base is planar (9, 4, 8, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 8, 17)",
+    "every initial simpleS4 base is planar (9, 4, 8, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 8, 18)",
+    "every initial simpleS4 base is planar (9, 4, 8, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 11, 13)",
+    "every initial simpleS4 base is planar (9, 4, 11, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 11, 18)",
+    "every initial simpleS4 base is planar (9, 4, 11, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 11, 22)",
+    "every initial simpleS4 base is planar (9, 4, 11, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 12, 9)",
+    "every initial simpleS4 base is planar (9, 4, 12, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 12, 10)",
+    "every initial simpleS4 base is planar (9, 4, 12, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 12, 22)",
+    "every initial simpleS4 base is planar (9, 4, 12, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 15, 10)",
+    "every initial simpleS4 base is planar (9, 4, 15, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 15, 18)",
+    "every initial simpleS4 base is planar (9, 4, 15, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 15, 22)",
+    "every initial simpleS4 base is planar (9, 4, 15, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 19, 9)",
+    "every initial simpleS4 base is planar (9, 4, 19, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 19, 10)",
+    "every initial simpleS4 base is planar (9, 4, 19, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 19, 17)",
+    "every initial simpleS4 base is planar (9, 4, 19, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 20, 9)",
+    "every initial simpleS4 base is planar (9, 4, 20, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 20, 13)",
+    "every initial simpleS4 base is planar (9, 4, 20, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 4, 20, 17)",
+    "every initial simpleS4 base is planar (9, 4, 20, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 3, 9)",
+    "every initial simpleS4 base is planar (9, 8, 3, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 3, 13)",
+    "every initial simpleS4 base is planar (9, 8, 3, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 3, 22)",
+    "every initial simpleS4 base is planar (9, 8, 3, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 4, 10)",
+    "every initial simpleS4 base is planar (9, 8, 4, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 4, 17)",
+    "every initial simpleS4 base is planar (9, 8, 4, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 4, 18)",
+    "every initial simpleS4 base is planar (9, 8, 4, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 8, 9)",
+    "every initial simpleS4 base is planar (9, 8, 8, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 8, 10)",
+    "every initial simpleS4 base is planar (9, 8, 8, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 8, 22)",
+    "every initial simpleS4 base is planar (9, 8, 8, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 11, 9)",
+    "every initial simpleS4 base is planar (9, 8, 11, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 11, 10)",
+    "every initial simpleS4 base is planar (9, 8, 11, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 11, 17)",
+    "every initial simpleS4 base is planar (9, 8, 11, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 12, 13)",
+    "every initial simpleS4 base is planar (9, 8, 12, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 12, 17)",
+    "every initial simpleS4 base is planar (9, 8, 12, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 12, 18)",
+    "every initial simpleS4 base is planar (9, 8, 12, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 15, 9)",
+    "every initial simpleS4 base is planar (9, 8, 15, 9)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 15, 13)",
+    "every initial simpleS4 base is planar (9, 8, 15, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 15, 17)",
+    "every initial simpleS4 base is planar (9, 8, 15, 17)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 19, 13)",
+    "every initial simpleS4 base is planar (9, 8, 19, 13)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 19, 18)",
+    "every initial simpleS4 base is planar (9, 8, 19, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 19, 22)",
+    "every initial simpleS4 base is planar (9, 8, 19, 22)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 20, 10)",
+    "every initial simpleS4 base is planar (9, 8, 20, 10)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 20, 18)",
+    "every initial simpleS4 base is planar (9, 8, 20, 18)",
+    "every initial simpleS4 generator type is4cycle/3cycle (9, 8, 20, 22)",
+    "every initial simpleS4 base is planar (9, 8, 20, 22)",
+    "initial simpleS4 residue class nonempty",
+    "unimodular cap is positive and coprime (-3, 3, 2)",
+    "actual capped-pattern H1 and zeroR (-3, 3, 2)",
+    "actual capped R exterior retains integral group (-3, 3, 2)",
+    "unimodular cap is positive and coprime (-3, 3, 4)",
+    "actual capped-pattern H1 and zeroR (-3, 3, 4)",
+    "actual capped R exterior retains integral group (-3, 3, 4)",
+    "unimodular cap is positive and coprime (-3, 3, 5)",
+    "odd cap order actually odd (-3, 3, 5)",
+    "actual capped-pattern H1 and zeroR (-3, 3, 5)",
+    "actual capped R exterior retains integral group (-3, 3, 5)",
+    "unimodular cap is positive and coprime (-3, 3, 7)",
+    "odd cap order actually odd (-3, 3, 7)",
+    "actual capped-pattern H1 and zeroR (-3, 3, 7)",
+    "actual capped R exterior retains integral group (-3, 3, 7)",
+    "unimodular cap is positive and coprime (-3, 3, 8)",
+    "actual capped-pattern H1 and zeroR (-3, 3, 8)",
+    "actual capped R exterior retains integral group (-3, 3, 8)",
+    "unimodular cap is positive and coprime (-3, 3, 11)",
+    "odd cap order actually odd (-3, 3, 11)",
+    "actual capped-pattern H1 and zeroR (-3, 3, 11)",
+    "actual capped R exterior retains integral group (-3, 3, 11)",
+    "unimodular cap is positive and coprime (-3, 5, 2)",
+    "actual capped-pattern H1 and zeroR (-3, 5, 2)",
+    "actual capped R exterior retains integral group (-3, 5, 2)",
+    "unimodular cap is positive and coprime (-3, 5, 3)",
+    "odd cap order actually odd (-3, 5, 3)",
+    "actual capped-pattern H1 and zeroR (-3, 5, 3)",
+    "actual capped R exterior retains integral group (-3, 5, 3)",
+    "unimodular cap is positive and coprime (-3, 5, 4)",
+    "actual capped-pattern H1 and zeroR (-3, 5, 4)",
+    "actual capped R exterior retains integral group (-3, 5, 4)",
+    "unimodular cap is positive and coprime (-3, 5, 7)",
+    "odd cap order actually odd (-3, 5, 7)",
+    "actual capped-pattern H1 and zeroR (-3, 5, 7)",
+    "actual capped R exterior retains integral group (-3, 5, 7)",
+    "unimodular cap is positive and coprime (-3, 5, 8)",
+    "actual capped-pattern H1 and zeroR (-3, 5, 8)",
+    "actual capped R exterior retains integral group (-3, 5, 8)",
+    "unimodular cap is positive and coprime (-3, 5, 11)",
+    "odd cap order actually odd (-3, 5, 11)",
+    "actual capped-pattern H1 and zeroR (-3, 5, 11)",
+    "actual capped R exterior retains integral group (-3, 5, 11)",
+    "unimodular cap is positive and coprime (-3, 7, 2)",
+    "actual capped-pattern H1 and zeroR (-3, 7, 2)",
+    "actual capped R exterior retains integral group (-3, 7, 2)",
+    "unimodular cap is positive and coprime (-3, 7, 3)",
+    "odd cap order actually odd (-3, 7, 3)",
+    "actual capped-pattern H1 and zeroR (-3, 7, 3)",
+    "actual capped R exterior retains integral group (-3, 7, 3)",
+    "unimodular cap is positive and coprime (-3, 7, 4)",
+    "actual capped-pattern H1 and zeroR (-3, 7, 4)",
+    "actual capped R exterior retains integral group (-3, 7, 4)",
+    "unimodular cap is positive and coprime (-3, 7, 5)",
+    "odd cap order actually odd (-3, 7, 5)",
+    "actual capped-pattern H1 and zeroR (-3, 7, 5)",
+    "actual capped R exterior retains integral group (-3, 7, 5)",
+    "unimodular cap is positive and coprime (-3, 7, 8)",
+    "actual capped-pattern H1 and zeroR (-3, 7, 8)",
+    "actual capped R exterior retains integral group (-3, 7, 8)",
+    "unimodular cap is positive and coprime (-3, 7, 11)",
+    "odd cap order actually odd (-3, 7, 11)",
+    "actual capped-pattern H1 and zeroR (-3, 7, 11)",
+    "actual capped R exterior retains integral group (-3, 7, 11)",
+    "unimodular cap is positive and coprime (-1, 3, 2)",
+    "actual capped-pattern H1 and zeroR (-1, 3, 2)",
+    "actual capped R exterior retains integral group (-1, 3, 2)",
+    "unimodular cap is positive and coprime (-1, 3, 4)",
+    "actual capped-pattern H1 and zeroR (-1, 3, 4)",
+    "actual capped R exterior retains integral group (-1, 3, 4)",
+    "unimodular cap is positive and coprime (-1, 3, 5)",
+    "odd cap order actually odd (-1, 3, 5)",
+    "actual capped-pattern H1 and zeroR (-1, 3, 5)",
+    "actual capped R exterior retains integral group (-1, 3, 5)",
+    "unimodular cap is positive and coprime (-1, 3, 7)",
+    "odd cap order actually odd (-1, 3, 7)",
+    "actual capped-pattern H1 and zeroR (-1, 3, 7)",
+    "actual capped R exterior retains integral group (-1, 3, 7)",
+    "unimodular cap is positive and coprime (-1, 3, 8)",
+    "actual capped-pattern H1 and zeroR (-1, 3, 8)",
+    "actual capped R exterior retains integral group (-1, 3, 8)",
+    "unimodular cap is positive and coprime (-1, 3, 11)",
+    "odd cap order actually odd (-1, 3, 11)",
+    "actual capped-pattern H1 and zeroR (-1, 3, 11)",
+    "actual capped R exterior retains integral group (-1, 3, 11)",
+    "unimodular cap is positive and coprime (-1, 5, 2)",
+    "actual capped-pattern H1 and zeroR (-1, 5, 2)",
+    "actual capped R exterior retains integral group (-1, 5, 2)",
+    "unimodular cap is positive and coprime (-1, 5, 3)",
+    "odd cap order actually odd (-1, 5, 3)",
+    "actual capped-pattern H1 and zeroR (-1, 5, 3)",
+    "actual capped R exterior retains integral group (-1, 5, 3)",
+    "unimodular cap is positive and coprime (-1, 5, 4)",
+    "actual capped-pattern H1 and zeroR (-1, 5, 4)",
+    "actual capped R exterior retains integral group (-1, 5, 4)",
+    "unimodular cap is positive and coprime (-1, 5, 7)",
+    "odd cap order actually odd (-1, 5, 7)",
+    "actual capped-pattern H1 and zeroR (-1, 5, 7)",
+    "actual capped R exterior retains integral group (-1, 5, 7)",
+    "unimodular cap is positive and coprime (-1, 5, 8)",
+    "actual capped-pattern H1 and zeroR (-1, 5, 8)",
+    "actual capped R exterior retains integral group (-1, 5, 8)",
+    "unimodular cap is positive and coprime (-1, 5, 11)",
+    "odd cap order actually odd (-1, 5, 11)",
+    "actual capped-pattern H1 and zeroR (-1, 5, 11)",
+    "actual capped R exterior retains integral group (-1, 5, 11)",
+    "unimodular cap is positive and coprime (-1, 7, 2)",
+    "actual capped-pattern H1 and zeroR (-1, 7, 2)",
+    "actual capped R exterior retains integral group (-1, 7, 2)",
+    "unimodular cap is positive and coprime (-1, 7, 3)",
+    "odd cap order actually odd (-1, 7, 3)",
+    "actual capped-pattern H1 and zeroR (-1, 7, 3)",
+    "actual capped R exterior retains integral group (-1, 7, 3)",
+    "unimodular cap is positive and coprime (-1, 7, 4)",
+    "actual capped-pattern H1 and zeroR (-1, 7, 4)",
+    "actual capped R exterior retains integral group (-1, 7, 4)",
+    "unimodular cap is positive and coprime (-1, 7, 5)",
+    "odd cap order actually odd (-1, 7, 5)",
+    "actual capped-pattern H1 and zeroR (-1, 7, 5)",
+    "actual capped R exterior retains integral group (-1, 7, 5)",
+    "unimodular cap is positive and coprime (-1, 7, 8)",
+    "actual capped-pattern H1 and zeroR (-1, 7, 8)",
+    "actual capped R exterior retains integral group (-1, 7, 8)",
+    "unimodular cap is positive and coprime (-1, 7, 11)",
+    "odd cap order actually odd (-1, 7, 11)",
+    "actual capped-pattern H1 and zeroR (-1, 7, 11)",
+    "actual capped R exterior retains integral group (-1, 7, 11)",
+    "unimodular cap is positive and coprime (0, 3, 2)",
+    "actual capped-pattern H1 and zeroR (0, 3, 2)",
+    "actual capped R exterior retains integral group (0, 3, 2)",
+    "actual repeated terminal inversek reduces to inverse2 (0, 3, 2)",
+    "unimodular cap is positive and coprime (0, 3, 4)",
+    "actual capped-pattern H1 and zeroR (0, 3, 4)",
+    "actual capped R exterior retains integral group (0, 3, 4)",
+    "unimodular cap is positive and coprime (0, 3, 5)",
+    "odd cap order actually odd (0, 3, 5)",
+    "actual capped-pattern H1 and zeroR (0, 3, 5)",
+    "actual capped R exterior retains integral group (0, 3, 5)",
+    "unimodular cap is positive and coprime (0, 3, 7)",
+    "odd cap order actually odd (0, 3, 7)",
+    "actual capped-pattern H1 and zeroR (0, 3, 7)",
+    "actual capped R exterior retains integral group (0, 3, 7)",
+    "unimodular cap is positive and coprime (0, 3, 8)",
+    "actual capped-pattern H1 and zeroR (0, 3, 8)",
+    "actual capped R exterior retains integral group (0, 3, 8)",
+    "unimodular cap is positive and coprime (0, 3, 11)",
+    "odd cap order actually odd (0, 3, 11)",
+    "actual capped-pattern H1 and zeroR (0, 3, 11)",
+    "actual capped R exterior retains integral group (0, 3, 11)",
+    "unimodular cap is positive and coprime (0, 5, 2)",
+    "actual capped-pattern H1 and zeroR (0, 5, 2)",
+    "actual capped R exterior retains integral group (0, 5, 2)",
+    "actual repeated terminal inversek reduces to inverse2 (0, 5, 2)",
+    "unimodular cap is positive and coprime (0, 5, 3)",
+    "odd cap order actually odd (0, 5, 3)",
+    "actual capped-pattern H1 and zeroR (0, 5, 3)",
+    "actual capped R exterior retains integral group (0, 5, 3)",
+    "unimodular cap is positive and coprime (0, 5, 4)",
+    "actual capped-pattern H1 and zeroR (0, 5, 4)",
+    "actual capped R exterior retains integral group (0, 5, 4)",
+    "unimodular cap is positive and coprime (0, 5, 7)",
+    "odd cap order actually odd (0, 5, 7)",
+    "actual capped-pattern H1 and zeroR (0, 5, 7)",
+    "actual capped R exterior retains integral group (0, 5, 7)",
+    "unimodular cap is positive and coprime (0, 5, 8)",
+    "actual capped-pattern H1 and zeroR (0, 5, 8)",
+    "actual capped R exterior retains integral group (0, 5, 8)",
+    "unimodular cap is positive and coprime (0, 5, 11)",
+    "odd cap order actually odd (0, 5, 11)",
+    "actual capped-pattern H1 and zeroR (0, 5, 11)",
+    "actual capped R exterior retains integral group (0, 5, 11)",
+    "unimodular cap is positive and coprime (0, 7, 2)",
+    "actual capped-pattern H1 and zeroR (0, 7, 2)",
+    "actual capped R exterior retains integral group (0, 7, 2)",
+    "actual repeated terminal inversek reduces to inverse2 (0, 7, 2)",
+    "unimodular cap is positive and coprime (0, 7, 3)",
+    "odd cap order actually odd (0, 7, 3)",
+    "actual capped-pattern H1 and zeroR (0, 7, 3)",
+    "actual capped R exterior retains integral group (0, 7, 3)",
+    "unimodular cap is positive and coprime (0, 7, 4)",
+    "actual capped-pattern H1 and zeroR (0, 7, 4)",
+    "actual capped R exterior retains integral group (0, 7, 4)",
+    "unimodular cap is positive and coprime (0, 7, 5)",
+    "odd cap order actually odd (0, 7, 5)",
+    "actual capped-pattern H1 and zeroR (0, 7, 5)",
+    "actual capped R exterior retains integral group (0, 7, 5)",
+    "unimodular cap is positive and coprime (0, 7, 8)",
+    "actual capped-pattern H1 and zeroR (0, 7, 8)",
+    "actual capped R exterior retains integral group (0, 7, 8)",
+    "unimodular cap is positive and coprime (0, 7, 11)",
+    "odd cap order actually odd (0, 7, 11)",
+    "actual capped-pattern H1 and zeroR (0, 7, 11)",
+    "actual capped R exterior retains integral group (0, 7, 11)",
+    "unimodular cap is positive and coprime (1, 3, 2)",
+    "actual capped-pattern H1 and zeroR (1, 3, 2)",
+    "actual capped R exterior retains integral group (1, 3, 2)",
+    "unimodular cap is positive and coprime (1, 3, 4)",
+    "actual capped-pattern H1 and zeroR (1, 3, 4)",
+    "actual capped R exterior retains integral group (1, 3, 4)",
+    "actual repeated terminal inversek reduces to inverse2 (1, 3, 4)",
+    "unimodular cap is positive and coprime (1, 3, 5)",
+    "odd cap order actually odd (1, 3, 5)",
+    "actual capped-pattern H1 and zeroR (1, 3, 5)",
+    "actual capped R exterior retains integral group (1, 3, 5)",
+    "solid continuation again has unimodular meridian (1, 3, 5)",
+    "unimodular cap is positive and coprime (1, 3, 7)",
+    "odd cap order actually odd (1, 3, 7)",
+    "actual capped-pattern H1 and zeroR (1, 3, 7)",
+    "actual capped R exterior retains integral group (1, 3, 7)",
+    "solid continuation again has unimodular meridian (1, 3, 7)",
+    "unimodular cap is positive and coprime (1, 3, 8)",
+    "actual capped-pattern H1 and zeroR (1, 3, 8)",
+    "actual capped R exterior retains integral group (1, 3, 8)",
+    "actual repeated terminal inversek reduces to inverse2 (1, 3, 8)",
+    "unimodular cap is positive and coprime (1, 3, 11)",
+    "odd cap order actually odd (1, 3, 11)",
+    "actual capped-pattern H1 and zeroR (1, 3, 11)",
+    "actual capped R exterior retains integral group (1, 3, 11)",
+    "unimodular cap is positive and coprime (1, 5, 2)",
+    "actual capped-pattern H1 and zeroR (1, 5, 2)",
+    "actual capped R exterior retains integral group (1, 5, 2)",
+    "unimodular cap is positive and coprime (1, 5, 3)",
+    "odd cap order actually odd (1, 5, 3)",
+    "actual capped-pattern H1 and zeroR (1, 5, 3)",
+    "actual capped R exterior retains integral group (1, 5, 3)",
+    "unimodular cap is positive and coprime (1, 5, 4)",
+    "actual capped-pattern H1 and zeroR (1, 5, 4)",
+    "actual capped R exterior retains integral group (1, 5, 4)",
+    "unimodular cap is positive and coprime (1, 5, 7)",
+    "odd cap order actually odd (1, 5, 7)",
+    "actual capped-pattern H1 and zeroR (1, 5, 7)",
+    "actual capped R exterior retains integral group (1, 5, 7)",
+    "unimodular cap is positive and coprime (1, 5, 8)",
+    "actual capped-pattern H1 and zeroR (1, 5, 8)",
+    "actual capped R exterior retains integral group (1, 5, 8)",
+    "actual repeated terminal inversek reduces to inverse2 (1, 5, 8)",
+    "unimodular cap is positive and coprime (1, 5, 11)",
+    "odd cap order actually odd (1, 5, 11)",
+    "actual capped-pattern H1 and zeroR (1, 5, 11)",
+    "actual capped R exterior retains integral group (1, 5, 11)",
+    "solid continuation again has unimodular meridian (1, 5, 11)",
+    "unimodular cap is positive and coprime (1, 7, 2)",
+    "actual capped-pattern H1 and zeroR (1, 7, 2)",
+    "actual capped R exterior retains integral group (1, 7, 2)",
+    "unimodular cap is positive and coprime (1, 7, 3)",
+    "odd cap order actually odd (1, 7, 3)",
+    "actual capped-pattern H1 and zeroR (1, 7, 3)",
+    "actual capped R exterior retains integral group (1, 7, 3)",
+    "unimodular cap is positive and coprime (1, 7, 4)",
+    "actual capped-pattern H1 and zeroR (1, 7, 4)",
+    "actual capped R exterior retains integral group (1, 7, 4)",
+    "unimodular cap is positive and coprime (1, 7, 5)",
+    "odd cap order actually odd (1, 7, 5)",
+    "actual capped-pattern H1 and zeroR (1, 7, 5)",
+    "actual capped R exterior retains integral group (1, 7, 5)",
+    "unimodular cap is positive and coprime (1, 7, 8)",
+    "actual capped-pattern H1 and zeroR (1, 7, 8)",
+    "actual capped R exterior retains integral group (1, 7, 8)",
+    "unimodular cap is positive and coprime (1, 7, 11)",
+    "odd cap order actually odd (1, 7, 11)",
+    "actual capped-pattern H1 and zeroR (1, 7, 11)",
+    "actual capped R exterior retains integral group (1, 7, 11)",
+    "unimodular cap is positive and coprime (3, 3, 2)",
+    "actual capped-pattern H1 and zeroR (3, 3, 2)",
+    "actual capped R exterior retains integral group (3, 3, 2)",
+    "unimodular cap is positive and coprime (3, 3, 4)",
+    "actual capped-pattern H1 and zeroR (3, 3, 4)",
+    "actual capped R exterior retains integral group (3, 3, 4)",
+    "unimodular cap is positive and coprime (3, 3, 5)",
+    "odd cap order actually odd (3, 3, 5)",
+    "actual capped-pattern H1 and zeroR (3, 3, 5)",
+    "actual capped R exterior retains integral group (3, 3, 5)",
+    "unimodular cap is positive and coprime (3, 3, 7)",
+    "odd cap order actually odd (3, 3, 7)",
+    "actual capped-pattern H1 and zeroR (3, 3, 7)",
+    "actual capped R exterior retains integral group (3, 3, 7)",
+    "unimodular cap is positive and coprime (3, 3, 8)",
+    "actual capped-pattern H1 and zeroR (3, 3, 8)",
+    "actual capped R exterior retains integral group (3, 3, 8)",
+    "unimodular cap is positive and coprime (3, 3, 11)",
+    "odd cap order actually odd (3, 3, 11)",
+    "actual capped-pattern H1 and zeroR (3, 3, 11)",
+    "actual capped R exterior retains integral group (3, 3, 11)",
+    "unimodular cap is positive and coprime (3, 5, 2)",
+    "actual capped-pattern H1 and zeroR (3, 5, 2)",
+    "actual capped R exterior retains integral group (3, 5, 2)",
+    "unimodular cap is positive and coprime (3, 5, 3)",
+    "odd cap order actually odd (3, 5, 3)",
+    "actual capped-pattern H1 and zeroR (3, 5, 3)",
+    "actual capped R exterior retains integral group (3, 5, 3)",
+    "unimodular cap is positive and coprime (3, 5, 4)",
+    "actual capped-pattern H1 and zeroR (3, 5, 4)",
+    "actual capped R exterior retains integral group (3, 5, 4)",
+    "unimodular cap is positive and coprime (3, 5, 7)",
+    "odd cap order actually odd (3, 5, 7)",
+    "actual capped-pattern H1 and zeroR (3, 5, 7)",
+    "actual capped R exterior retains integral group (3, 5, 7)",
+    "unimodular cap is positive and coprime (3, 5, 8)",
+    "actual capped-pattern H1 and zeroR (3, 5, 8)",
+    "actual capped R exterior retains integral group (3, 5, 8)",
+    "unimodular cap is positive and coprime (3, 5, 11)",
+    "odd cap order actually odd (3, 5, 11)",
+    "actual capped-pattern H1 and zeroR (3, 5, 11)",
+    "actual capped R exterior retains integral group (3, 5, 11)",
+    "unimodular cap is positive and coprime (3, 7, 2)",
+    "actual capped-pattern H1 and zeroR (3, 7, 2)",
+    "actual capped R exterior retains integral group (3, 7, 2)",
+    "unimodular cap is positive and coprime (3, 7, 3)",
+    "odd cap order actually odd (3, 7, 3)",
+    "actual capped-pattern H1 and zeroR (3, 7, 3)",
+    "actual capped R exterior retains integral group (3, 7, 3)",
+    "unimodular cap is positive and coprime (3, 7, 4)",
+    "actual capped-pattern H1 and zeroR (3, 7, 4)",
+    "actual capped R exterior retains integral group (3, 7, 4)",
+    "unimodular cap is positive and coprime (3, 7, 5)",
+    "odd cap order actually odd (3, 7, 5)",
+    "actual capped-pattern H1 and zeroR (3, 7, 5)",
+    "actual capped R exterior retains integral group (3, 7, 5)",
+    "unimodular cap is positive and coprime (3, 7, 8)",
+    "actual capped-pattern H1 and zeroR (3, 7, 8)",
+    "actual capped R exterior retains integral group (3, 7, 8)",
+    "unimodular cap is positive and coprime (3, 7, 11)",
+    "odd cap order actually odd (3, 7, 11)",
+    "actual capped-pattern H1 and zeroR (3, 7, 11)",
+    "actual capped R exterior retains integral group (3, 7, 11)",
+    "unimodular cap is positive and coprime (9, 3, 2)",
+    "actual capped-pattern H1 and zeroR (9, 3, 2)",
+    "actual capped R exterior retains integral group (9, 3, 2)",
+    "unimodular cap is positive and coprime (9, 3, 4)",
+    "actual capped-pattern H1 and zeroR (9, 3, 4)",
+    "actual capped R exterior retains integral group (9, 3, 4)",
+    "unimodular cap is positive and coprime (9, 3, 5)",
+    "odd cap order actually odd (9, 3, 5)",
+    "actual capped-pattern H1 and zeroR (9, 3, 5)",
+    "actual capped R exterior retains integral group (9, 3, 5)",
+    "unimodular cap is positive and coprime (9, 3, 7)",
+    "odd cap order actually odd (9, 3, 7)",
+    "actual capped-pattern H1 and zeroR (9, 3, 7)",
+    "actual capped R exterior retains integral group (9, 3, 7)",
+    "unimodular cap is positive and coprime (9, 3, 8)",
+    "actual capped-pattern H1 and zeroR (9, 3, 8)",
+    "actual capped R exterior retains integral group (9, 3, 8)",
+    "unimodular cap is positive and coprime (9, 3, 11)",
+    "odd cap order actually odd (9, 3, 11)",
+    "actual capped-pattern H1 and zeroR (9, 3, 11)",
+    "actual capped R exterior retains integral group (9, 3, 11)",
+    "unimodular cap is positive and coprime (9, 5, 2)",
+    "actual capped-pattern H1 and zeroR (9, 5, 2)",
+    "actual capped R exterior retains integral group (9, 5, 2)",
+    "unimodular cap is positive and coprime (9, 5, 3)",
+    "odd cap order actually odd (9, 5, 3)",
+    "actual capped-pattern H1 and zeroR (9, 5, 3)",
+    "actual capped R exterior retains integral group (9, 5, 3)",
+    "unimodular cap is positive and coprime (9, 5, 4)",
+    "actual capped-pattern H1 and zeroR (9, 5, 4)",
+    "actual capped R exterior retains integral group (9, 5, 4)",
+    "unimodular cap is positive and coprime (9, 5, 7)",
+    "odd cap order actually odd (9, 5, 7)",
+    "actual capped-pattern H1 and zeroR (9, 5, 7)",
+    "actual capped R exterior retains integral group (9, 5, 7)",
+    "unimodular cap is positive and coprime (9, 5, 8)",
+    "actual capped-pattern H1 and zeroR (9, 5, 8)",
+    "actual capped R exterior retains integral group (9, 5, 8)",
+    "unimodular cap is positive and coprime (9, 5, 11)",
+    "odd cap order actually odd (9, 5, 11)",
+    "actual capped-pattern H1 and zeroR (9, 5, 11)",
+    "actual capped R exterior retains integral group (9, 5, 11)",
+    "unimodular cap is positive and coprime (9, 7, 2)",
+    "actual capped-pattern H1 and zeroR (9, 7, 2)",
+    "actual capped R exterior retains integral group (9, 7, 2)",
+    "unimodular cap is positive and coprime (9, 7, 3)",
+    "odd cap order actually odd (9, 7, 3)",
+    "actual capped-pattern H1 and zeroR (9, 7, 3)",
+    "actual capped R exterior retains integral group (9, 7, 3)",
+    "unimodular cap is positive and coprime (9, 7, 4)",
+    "actual capped-pattern H1 and zeroR (9, 7, 4)",
+    "actual capped R exterior retains integral group (9, 7, 4)",
+    "unimodular cap is positive and coprime (9, 7, 5)",
+    "odd cap order actually odd (9, 7, 5)",
+    "actual capped-pattern H1 and zeroR (9, 7, 5)",
+    "actual capped R exterior retains integral group (9, 7, 5)",
+    "unimodular cap is positive and coprime (9, 7, 8)",
+    "actual capped-pattern H1 and zeroR (9, 7, 8)",
+    "actual capped R exterior retains integral group (9, 7, 8)",
+    "unimodular cap is positive and coprime (9, 7, 11)",
+    "odd cap order actually odd (9, 7, 11)",
+    "actual capped-pattern H1 and zeroR (9, 7, 11)",
+    "actual capped R exterior retains integral group (9, 7, 11)",
+    "coefficient2 cap is outside unimodular theorem and can retain nonzeroR",
+    "initial actual full group and zero ramification (4, 3)",
+    "initial actual fixed-sheet-capped R exterior (4, 3)",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 3, [])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 3, [(3, 2)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 3, [(3, 5)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 3, [(5, 7), (3, 4)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 3, [(3, 5), (5, 3)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 3, [(5, 2), (3, 5)])",
+    "initial actual full group and zero ramification (4, 9)",
+    "initial actual fixed-sheet-capped R exterior (4, 9)",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 9, [])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 9, [(3, 2)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 9, [(3, 5)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 9, [(5, 7), (3, 4)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 9, [(3, 5), (5, 3)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 9, [(5, 2), (3, 5)])",
+    "initial actual full group and zero ramification (4, 15)",
+    "initial actual fixed-sheet-capped R exterior (4, 15)",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 15, [])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 15, [(3, 2)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 15, [(3, 5)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 15, [(5, 7), (3, 4)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 15, [(3, 5), (5, 3)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (4, 15, [(5, 2), (3, 5)])",
+    "initial actual full group and zero ramification (8, 3)",
+    "initial actual fixed-sheet-capped R exterior (8, 3)",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 3, [])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 3, [(3, 2)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 3, [(3, 5)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 3, [(5, 7), (3, 4)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 3, [(3, 5), (5, 3)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 3, [(5, 2), (3, 5)])",
+    "initial actual full group and zero ramification (8, 9)",
+    "initial actual fixed-sheet-capped R exterior (8, 9)",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 9, [])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 9, [(3, 2)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 9, [(3, 5)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 9, [(5, 7), (3, 4)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 9, [(3, 5), (5, 3)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (8, 9, [(5, 2), (3, 5)])",
+    "initial actual full group and zero ramification (16, 3)",
+    "initial actual fixed-sheet-capped R exterior (16, 3)",
+    "full actual initial simpleS4 trajectory H1 and zeroR (16, 3, [])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (16, 3, [(3, 2)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (16, 3, [(3, 5)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (16, 3, [(5, 7), (3, 4)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (16, 3, [(3, 5), (5, 3)])",
+    "full actual initial simpleS4 trajectory H1 and zeroR (16, 3, [(5, 2), (3, 5)])",
+    "deep composed-CW solid prefix H1 and unimodular cap 0",
+    "deep solid control cap distance1 0",
+    "deep composed-CW solid prefix H1 and unimodular cap 1",
+    "deep solid control cap distance1 1",
+    "deep composed-CW solid prefix H1 and unimodular cap 2",
+    "deep solid control cap distance1 2",
+    "deep composed-CW solid prefix H1 and unimodular cap 3",
+    "deep solid control cap distance1 3",
+    "repeated terminal free coefficient permits only r3",
+    "r3 and integral-homology-sphere cases fail zeroR collar modulus"
+  ],
+  "general": {
+    "whole_single_node_source_delta5_mod_pminus1": true,
+    "no_whole_two_cone_source_delta1": true,
+    "equal_pair_determinant_r_requires_r5_and_wrong_distance": true,
+    "arbitrary_integer_unimodular_solid_cap_A": true,
+    "no_recursive_cap_slope_needed": true,
+    "all_odd_windings_coprime_cable_parameters_and_tail_lengths": true,
+    "actual_cyclic2_pattern_and_fixed_meridian_fill_hypotheses_required": true,
+    "finite_first_nonsolid_dichotomy_unbounded_length": true
+  },
+  "quartic": {
+    "all_initial_state3_torus_trajectories_closed_both_pencils": true,
+    "all_initial_generator_types4cycle_3cycle": true,
+    "actual_fixed_caps_disk_a_t_3t": true,
+    "initial_H1_Zt_and_R_zero": true,
+    "arbitrary_finite_later_tails": true,
+    "no_prefix_eta_condition": true,
+    "actual_T4_3_solid_exception_closed": true,
+    "remaining_first_arrival_frontier_states2_and_complementary7": true
+  },
+  "initial_periodic_counts": {
+    "(3, 4)": 24,
+    "(3, 8)": 24,
+    "(4, 3)": 24,
+    "(4, 9)": 24,
+    "(8, 3)": 24,
+    "(8, 9)": 24,
+    "(9, 4)": 24,
+    "(9, 8)": 24
+  },
+  "single_node_delta1_candidates": [
+    {
+      "p": 2,
+      "required_sigma": "-4/3"
+    },
+    {
+      "p": 3,
+      "required_sigma": "-1/3"
+    },
+    {
+      "p": 5,
+      "required_sigma": "2/3"
+    }
+  ],
+  "actual_unimodular_cap_controls": [
+    {
+      "A": -3,
+      "r": 3,
+      "k": 2,
+      "J": 10,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        10
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 3,
+      "k": 4,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 3,
+      "k": 5,
+      "J": 23,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        23
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 3,
+      "k": 7,
+      "J": 25,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        25
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 3,
+      "k": 8,
+      "J": 13,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        13
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 3,
+      "k": 11,
+      "J": 29,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        29
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 5,
+      "k": 2,
+      "J": 16,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        16
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 5,
+      "k": 3,
+      "J": 33,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        33
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 5,
+      "k": 4,
+      "J": 17,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        17
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 5,
+      "k": 7,
+      "J": 37,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        37
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 5,
+      "k": 8,
+      "J": 19,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        19
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 5,
+      "k": 11,
+      "J": 41,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        41
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 7,
+      "k": 2,
+      "J": 22,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        22
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 7,
+      "k": 3,
+      "J": 45,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        45
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 7,
+      "k": 4,
+      "J": 23,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        23
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 7,
+      "k": 5,
+      "J": 47,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        47
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 7,
+      "k": 8,
+      "J": 25,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        25
+      ],
+      "solid": false
+    },
+    {
+      "A": -3,
+      "r": 7,
+      "k": 11,
+      "J": 53,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        53
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 3,
+      "k": 2,
+      "J": 4,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        4
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 3,
+      "k": 4,
+      "J": 5,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        5
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 3,
+      "k": 5,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 3,
+      "k": 7,
+      "J": 13,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        13
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 3,
+      "k": 8,
+      "J": 7,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        7
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 3,
+      "k": 11,
+      "J": 17,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        17
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 5,
+      "k": 2,
+      "J": 6,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        6
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 5,
+      "k": 3,
+      "J": 13,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        13
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 5,
+      "k": 4,
+      "J": 7,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        7
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 5,
+      "k": 7,
+      "J": 17,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        17
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 5,
+      "k": 8,
+      "J": 9,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        9
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 5,
+      "k": 11,
+      "J": 21,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        21
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 7,
+      "k": 2,
+      "J": 8,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        8
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 7,
+      "k": 3,
+      "J": 17,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        17
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 7,
+      "k": 4,
+      "J": 9,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        9
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 7,
+      "k": 5,
+      "J": 19,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        19
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 7,
+      "k": 8,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": -1,
+      "r": 7,
+      "k": 11,
+      "J": 25,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        25
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 3,
+      "k": 2,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        1
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 3,
+      "k": 4,
+      "J": 2,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        2
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 3,
+      "k": 5,
+      "J": 5,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        5
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 3,
+      "k": 7,
+      "J": 7,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        7
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 3,
+      "k": 8,
+      "J": 4,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        4
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 3,
+      "k": 11,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 5,
+      "k": 2,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        1
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 5,
+      "k": 3,
+      "J": 3,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        3
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 5,
+      "k": 4,
+      "J": 2,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        2
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 5,
+      "k": 7,
+      "J": 7,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        7
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 5,
+      "k": 8,
+      "J": 4,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        4
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 5,
+      "k": 11,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 7,
+      "k": 2,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        1
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 7,
+      "k": 3,
+      "J": 3,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        3
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 7,
+      "k": 4,
+      "J": 2,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        2
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 7,
+      "k": 5,
+      "J": 5,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        5
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 7,
+      "k": 8,
+      "J": 4,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        4
+      ],
+      "solid": false
+    },
+    {
+      "A": 0,
+      "r": 7,
+      "k": 11,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 3,
+      "k": 2,
+      "J": 2,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        2
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 3,
+      "k": 4,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        1
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 3,
+      "k": 5,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        1
+      ],
+      "solid": true
+    },
+    {
+      "A": 1,
+      "r": 3,
+      "k": 7,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        1
+      ],
+      "solid": true
+    },
+    {
+      "A": 1,
+      "r": 3,
+      "k": 8,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        1
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 3,
+      "k": 11,
+      "J": 5,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        5
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 5,
+      "k": 2,
+      "J": 4,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        4
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 5,
+      "k": 3,
+      "J": 7,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        7
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 5,
+      "k": 4,
+      "J": 3,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        3
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 5,
+      "k": 7,
+      "J": 3,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        3
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 5,
+      "k": 8,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        1
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 5,
+      "k": 11,
+      "J": 1,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        1
+      ],
+      "solid": true
+    },
+    {
+      "A": 1,
+      "r": 7,
+      "k": 2,
+      "J": 6,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        6
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 7,
+      "k": 3,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 7,
+      "k": 4,
+      "J": 5,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        5
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 7,
+      "k": 5,
+      "J": 9,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        9
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 7,
+      "k": 8,
+      "J": 3,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        3
+      ],
+      "solid": false
+    },
+    {
+      "A": 1,
+      "r": 7,
+      "k": 11,
+      "J": 3,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        3
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 3,
+      "k": 2,
+      "J": 8,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        8
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 3,
+      "k": 4,
+      "J": 7,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        7
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 3,
+      "k": 5,
+      "J": 13,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        13
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 3,
+      "k": 7,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 3,
+      "k": 8,
+      "J": 5,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        5
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 3,
+      "k": 11,
+      "J": 7,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        7
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 5,
+      "k": 2,
+      "J": 14,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        14
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 5,
+      "k": 3,
+      "J": 27,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        27
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 5,
+      "k": 4,
+      "J": 13,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        13
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 5,
+      "k": 7,
+      "J": 23,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        23
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 5,
+      "k": 8,
+      "J": 11,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        11
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 5,
+      "k": 11,
+      "J": 19,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        19
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 7,
+      "k": 2,
+      "J": 20,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        20
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 7,
+      "k": 3,
+      "J": 39,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        39
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 7,
+      "k": 4,
+      "J": 19,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        19
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 7,
+      "k": 5,
+      "J": 37,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        37
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 7,
+      "k": 8,
+      "J": 17,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        17
+      ],
+      "solid": false
+    },
+    {
+      "A": 3,
+      "r": 7,
+      "k": 11,
+      "J": 31,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        31
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 3,
+      "k": 2,
+      "J": 26,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        26
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 3,
+      "k": 4,
+      "J": 25,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        25
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 3,
+      "k": 5,
+      "J": 49,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        49
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 3,
+      "k": 7,
+      "J": 47,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        47
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 3,
+      "k": 8,
+      "J": 23,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "exterior_cones": [
+        3,
+        3,
+        23
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 3,
+      "k": 11,
+      "J": 43,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        3,
+        43
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 5,
+      "k": 2,
+      "J": 44,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        44
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 5,
+      "k": 3,
+      "J": 87,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        87
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 5,
+      "k": 4,
+      "J": 43,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        43
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 5,
+      "k": 7,
+      "J": 83,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        83
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 5,
+      "k": 8,
+      "J": 41,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "exterior_cones": [
+        5,
+        5,
+        41
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 5,
+      "k": 11,
+      "J": 79,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        5,
+        79
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 7,
+      "k": 2,
+      "J": 62,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        62
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 7,
+      "k": 3,
+      "J": 123,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        123
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 7,
+      "k": 4,
+      "J": 61,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        61
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 7,
+      "k": 5,
+      "J": 121,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        121
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 7,
+      "k": 8,
+      "J": 59,
+      "closed": {
+        "free": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "exterior_cones": [
+        7,
+        7,
+        59
+      ],
+      "solid": false
+    },
+    {
+      "A": 9,
+      "r": 7,
+      "k": 11,
+      "J": 115,
+      "closed": {
+        "free": 0,
+        "torsion": []
+      },
+      "exterior_cones": [
+        7,
+        115
+      ],
+      "solid": false
+    }
+  ],
+  "full_initial_trajectory_controls": [
+    {
+      "first": [
+        4,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          2
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        9
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        9
+      ],
+      "tail": [
+        [
+          3,
+          2
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3,
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        9
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        9
+      ],
+      "tail": [
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3,
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        9
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        9
+      ],
+      "tail": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        15
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        15
+      ],
+      "tail": [
+        [
+          3,
+          2
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        15
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        15
+      ],
+      "tail": [
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        15
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        4,
+        15
+      ],
+      "tail": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            5,
+            5
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5,
+            5
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          2
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        9
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        9
+      ],
+      "tail": [
+        [
+          3,
+          2
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3,
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        9
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        9
+      ],
+      "tail": [
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3,
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        9
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        8,
+        9
+      ],
+      "tail": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            15
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        16,
+        3
+      ],
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        16,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          2
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        16,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        16,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "first": [
+        16,
+        3
+      ],
+      "tail": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "first": [
+        16,
+        3
+      ],
+      "tail": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    }
+  ],
+  "composed_solid_prefix_controls": [
+    {
+      "step": 0,
+      "cables": [],
+      "actual_A": 3
+    },
+    {
+      "step": 1,
+      "cables": [
+        [
+          3,
+          17
+        ]
+      ],
+      "actual_A": 27
+    },
+    {
+      "step": 2,
+      "cables": [
+        [
+          3,
+          17
+        ],
+        [
+          5,
+          269
+        ]
+      ],
+      "actual_A": 675
+    },
+    {
+      "step": 3,
+      "cables": [
+        [
+          3,
+          17
+        ],
+        [
+          5,
+          269
+        ],
+        [
+          3,
+          4049
+        ]
+      ],
+      "actual_A": 6075
+    }
+  ],
+  "assurance": {
+    "written_unbounded_source_cap_first_nonsolid_and_terminal_proofs": true,
+    "actual_full_filled_and_unfilled_CW_mark_controls": true,
+    "complete_retained_primary_audits_reused": true,
+    "deep_JSJ_and_full_peripheral_rigidity_imported": true,
+    "solid_target_excluded_by_group_without_Waldhausen": true,
+    "finite_controls_not_universal_proof": true,
+    "all_deep_sources_delta1_excluded": false,
+    "nonunimodular_A4_cap_closed": false,
+    "all_state2_closed": false,
+    "all_complementary_A4_closed": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_packet_classification": false,
+    "finite_Keller_map": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_full_reproof": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_unimodular_initial_s4.py": "a78b04f0c2c2e1acfef2ca128d5d4f6af5e344e0db040bbe592c9b77407ccbc0",
+    "UNIMODULAR_SOLID_PREFIX_AND_INITIAL_S4_CLOSURE.md": "990d061a1f42a065a34eb97b5019d457a9aada79d74e09db872c3b224f54af35",
+    "sources/unimodular-initial-s4/manifest.json": "1141eb557a3195dd0a51ee940e0c65ebb93be7409f2a0313d228ed97cb48689a",
+    "cyclic_pattern_a4_receipt.json": "9eb9cf65aa72f21fb8d12bae08768ea4ad1f66eed21f948bae0024e68f29411a",
+    "iterated_peripheral_tail_receipt.json": "7a21fd2fd7b87cc8bff42b5a9993b3edc7c46fe560269a1ce24291b8784ec24c",
+    "cyclic_loop_first_arrival_receipt.json": "4257cffaf4c764663bccd73b8469c9310a5a7c65a94696526354d7bf512951cd",
+    "fibre_order_transfer_receipt.json": "a256433f7c46d52c5cd3063082ca36dada24808c6043ac9dc8b0207a965ea38b",
+    "common_pencil_mark_receipt.json": "6782b2eed1a1b579c5d3ee8c2257e04f9b2f418073cd784d4b4144cd76c0f027",
+    "complementary_corner_jsj_receipt.json": "059a8771cfb326b9e37e9d45658a7e49568b49fc596ff1bf2a4502fbd65ed9a2",
+    "trefoil_complementary_fusion_receipt.json": "c0250bee54f22ab4ae126958727918cc081b84cf1dec529c25ab7b5e5d7d6ae5",
+    "persistent_jsj_terminal_modulus_receipt.json": "fddc27f470c56b0175a263e0544c44fee29177a436699cf8748ae147732dfdc3",
+    "terminal_cone_twists_receipt.json": "735f5a8e3ba69916e37fee530d839e4167f30a02db1551d5a8fe6de839119f11",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/borderline-regular-end/waldhausen-1968.pdf": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+    "sources/oriented-pattern-linking/neumann-raymond-1978.pdf": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+    "sources/cyclic-companion/hillman-sakuma-1997.pdf": "455a770f76f95dd189132cf99f7964e1775621e48169f6d8501e68b2dd88900b",
+    "sources/binomial-periodic/clay-watson-2011v1.pdf": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

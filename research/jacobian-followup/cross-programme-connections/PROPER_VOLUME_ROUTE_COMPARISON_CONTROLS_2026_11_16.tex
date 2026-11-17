@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,hyperref}
+\begin{document}
+\title{Two boundary-volume controls for the current Mathieu proper-model route}
+\date{16 November 2026: background proof stress test}
+\maketitle
+This note supplies controls and a scope guard, not a proof of either full exceptional Mathieu--Zhao statement. It does not refute a correctly stated conditional proper-period theorem. The agent's current proposed application was not yet written when this check began. Independent verification and external review are not claimed; no registry state is changed.
+
+\section{An explicit order-two pole for Long's actual pure failing phase}
+Use $X=\mathrm{SL}_2$, $xw-yz=1$, the retained phase
+\[
+ F=(1+y)(1+z+yz),\qquad \Omega=\frac{dx\wedge dy\wedge dz}{x}.
+\]
+The retained identities give eventual purity and a fixed bad marker; those are inputs here. Compactify $X$ in the smooth quadric
+\[
+ \overline Q=\{XW-YZ=T^2\}\subset\mathbf P^4.
+\]
+Its cubic graph closure over the finite phase line $\mathbf A^1_s$ is
+\[
+ (T+Y)(T^2+ZT+YZ)-sT^3=0.
+\]
+In the chart $X=1$, put $a=Y/X$, $b=Z/X$, $t=T/X$, and $u=a+t$. Eliminate $W$ with the quadric equation. The graph equation and the ORIGINAL volume are
+\[
+ b u^2+u t^2-s t^3=0,\qquad
+ \Omega=-t^{-3}\,du\wedge db\wedge dt.
+\]
+Blow up the ideal $(u,t)$ and take the strict-transform chart $u=tr$. Its equation is
+\[
+ b r^2+(r-s)t=0.
+\]
+Near $r=0$ with $b,s\ne0$, this is the smooth birational chart
+\[
+ t=\frac{b r^2}{s-r},\qquad u=\frac{b r^3}{s-r},
+ \qquad (r,b,s)\text{ regular coordinates}.
+\]
+The inverse $r=u/t$ holds in the function field. Direct substitution and the Jacobian give
+\[
+ \boxed{\quad\Omega=\frac{1}{b r^2}\,dr\wedge db\wedge ds\quad}.
+\]
+Thus the divisor $r=0$ has volume order $-2$, while $s$ is a free nonzero coordinate. This is a HORIZONTAL finite-value boundary pole, not a pole confined to the discarded fibre at phase infinity.
+
+The naive graph hypersurface is nonnormal along $u=t=0$: all its first derivatives vanish there. It is a local complete intersection and has a dualizing generator whose rational expression is exactly $-t^{-3}du\wedge db\wedge dt$. Such a regular dualizing generator on this nonnormal model therefore becomes a pole on the smooth birational chart. A trivial dualizing sheaf on the graph closure is insufficient to extend the ORIGINAL form as a regular top differential on a smooth proper model.
+
+The calculation also obstructs any other smooth proper-over-$\mathbf A^1$ birational model carrying this original form regularly. The divisorial valuation at $r=0$ is nonnegative on the base coordinate $s$, so properness gives its centre on that model. Pullback of a regular Kahler top form to its valuation ring would have nonnegative order, contradicting the displayed order $-2$. This uses the \href{https://stacks.math.columbia.edu/tag/0BX5}{valuative criterion for properness}. Equivalently compare on a common smooth resolution. This is a boundary obstruction for a known nonexceptional failure; it is not a new invariant counterexample.
+
+\section{Even actual exceptional SAFE pure phases need not have regular-volume proper models}
+A stronger scope guard comes from known safe phases on the actual exceptional quotients. Let $f(z,w)$ be any nonconstant homogeneous right-$\Gamma$-invariant binary form of degree $d>0$, for $\Gamma=2O$ or $2I$. Such forms are already retained in the Klein constructions. Then $f$ is a regular function on $\mathrm{SL}_2/\Gamma$, and a nonzero left diagonal-torus weight vector.
+
+It is pure and safe: its $m$th power has left weight $-dm$, while a fixed regular marker has finitely many weights. Haar vanishes on every nonzero weight space, so all marked moments vanish once $dm$ exceeds the marker's weight range.
+
+Nevertheless no smooth proper phase compactification carrying the ORIGINAL volume regularly can exist. To prove this, pull back along the finite etale cover $\mathrm{SL}_2\to\mathrm{SL}_2/\Gamma$ and take the normalization of a hypothetical proper model in the covering function field, followed by resolution. The result remains proper over the phase line and contains $\mathrm{SL}_2$; a regular Kahler top form would pull back regularly and agree with a nonzero multiple of $\Omega$ there.
+
+Over $K=\mathbb C(s)$, the generic phase fibre on $\mathrm{SL}_2$ projects by its bottom row to
+\[
+ C_s=\{(z,w): f(z,w)=s\}.
+\]
+This is a smooth affine curve after geometric base change (componentwise if needed): Euler's identity rules out simultaneous vanishing of the two derivatives when $s\ne0$. The top-row solutions to $xw-yz=1$ form a $\mathbf G_a$-torsor over $C_s$. It is trivial since $C_s$ is affine and $H^1(C_s,\mathcal O)=0$. Hence each generic fibre is birational to $C_s\times\mathbf A^1$.
+
+A smooth proper model of such a surface is birational to $\overline C_s\times\mathbf P^1$ and has no regular two-forms: the latter product has none because $\mathbf P^1$ has no regular one-forms; regular top forms are invariant under birational maps between smooth proper surfaces. On a hypothetical smooth proper phase model, dividing its nonzero regular three-form by $ds$ gives a nonzero regular two-form on the smooth proper generic fibre. This is a contradiction. The cover and resolution argument preserves nonvanishing of the original volume.
+
+Thus even EXCEPTIONAL INVARIANCE PLUS PURITY do not automatically imply existence of a regular-volume proper model. These examples are safe and satisfy the actual zero-component criterion. Their volume poles cannot be treated as failure certificates.
+
+\section{What the controls ask of the current argument}
+The retained conditional projective-volume period theorem and its klt sufficient conditions are unaffected. They prove nonexistence of a nonzero pure phase in their stated regular-volume scope; they do not provide that scope for every phase.
+
+Any proposed universal use of proper models should distinguish:
+\begin{itemize}
+\item actual regular top forms on a smooth model from dualizing generators on a singular, possibly nonnormal graph;
+\item horizontal finite-value volume poles from poles only at phase infinity;
+\item harmless poles of known torus-weight SAFE pure phases from the reduced local UNIT obstruction of a genuine failing phase.
+\end{itemize}
+The obstruction to regular volume is therefore too coarse by itself. A successful remaining argument must isolate the residues or lattice directions that contribute to the distinguished corrected-section vector, or establish a weaker extension statement compatible with these safe controls. This note does not assert that the agent's not-yet-written proposal makes any of these invalid inferences.
+\end{document}

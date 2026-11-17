@@ -1,0 +1,104 @@
+\subsection{Three concurrent distinct leading lines}
+\label{sec:concurrentregular}
+
+Let the common vertex be the $T$ direction, so the leading form
+is a squarefree binary cubic $F(u,v)$. Its binary gradient has
+only the zero at the origin. If $F_2$ at the vertex is nonzero,
+a sequence with $\nabla P=o(\|x\|)$ must approach that vertex;
+then $u,v=o(T)$ and the $T$ equation has a nonzero linear
+leading term. The Gaussian gradient criterion excludes purity.
+An isotropic zero-$F_2$ vertex already gives a frame.
+
+In the remaining alternative retain the full Gaussian with
+$m=q_{TT}\ne0$ and write
+\[
+ P=T H(u,v)+G(u,v),\qquad\deg H\le1,\quad G_3=F,
+ \qquad q=mT^2/2+T J(u,v)+q_*(u,v),
+\]
+where $J$ is affine linear and $q_*$ includes all lower terms.
+For each fixed $t$, the phase gradient is linearly coercive:
+its only possible limiting singular direction is the vertex,
+where its $T$ derivative has leading term $-mT$. The estimate
+is locally uniform on compact parameter sets. Completing $T$
+exactly gives
+\[
+ tP-q=-\frac m2\left(T-\frac{tH-J}{m}\right)^2
+                    +tG-q_*+\frac{(tH-J)^2}{2m}.
+\]
+This change has volume Jacobian one. The binary phase has
+squarefree cubic leading form $tF$, whose two leading quadratic
+derivatives are a regular sequence of length four. Weighted
+leading reduction, or the same Koszul argument used above,
+gives full twisted rank four. The Gaussian factor has rank one.
+Condition~\eqref{eq:nonisoleading} holds at the sole leading
+singular direction. Thus all escapes are excluded from every
+pure linear-action block by Proposition~\ref{prop:boundedregularrank}.
+
+If $H$ is a nonzero constant, $P$ has no critical point.
+The full regular rank is zero and a constant original marked
+period is impossible. This remains true after a constant shift
+of $P$.
+
+If $H=0$, integrate the $T$ Gaussian formally. A fixed polynomial
+marker becomes a fixed polynomial in $u,v$, using conditional
+mean $-J/m$ and covariance $1/m$. The effective Gaussian is
+\[
+ q_{\rm eff}=q_*-J^2/(2m).
+\]
+Its Hessian is nondegenerate by the Schur determinant identity
+$\det\operatorname{Hess}q=m\det\operatorname{Hess}q_{\rm eff}$.
+The squarefree leading binary cubic gives
+$\|\nabla G\|\ge c\|(u,v)\|^2$ outside a compact set.
+The all-degree Gaussian gradient criterion therefore excludes
+every nonzero finite exponential-polynomial original period.
+The conditional normalization is independent of $t$.
+
+Finally let $H$ be nonconstant and use $u=H$ as an affine
+coordinate. Then $P=uT+G(u,v)$. If $R(v)=G(0,v)$ is
+nonconstant, its critical points give all the bounded groups.
+The exact smooth-constraint shear gives their local types
+$\alpha+s z+y^{\mu+1}$. This includes the empty critical set
+when $R$ is linear. Their full power characters have positive
+original-marker orders, so the regular-rank and seed lemmas
+exclude a constant period without constructing the escaping
+blocks.
+
+If $R=k$ is constant, write $G=k+uB(u,v)$, where $B$ has
+degree at most two. The critical curve is
+\[
+ u=0,\qquad T=-B(0,v).
+\]
+The quadratic coefficient $c$ of $B(0,v)$ is nonzero.
+Otherwise the squarefree cubic $F$ would be divisible by $u^2$.
+Put $s=T+B(u,v)$, so exactly $P=k+us$ and the coordinate
+Jacobian is one. Scale $u=\rho U$, $s=\rho V$,
+$\rho=t^{-1/2}$. The fixed phase is
+\[
+ UV-q(0,v,-B(0,v)),
+\]
+with quartic coefficient $-mc^2/2\ne0$ in $v$. Its rank and
+critical Milnor number are three. The exact critical equations
+$u=\epsilon q_s$, $s=\epsilon q_u$ show that every bounded
+branch has bounded scaled coordinates. This is precisely the
+complete quartic parabola construction above, now with
+Jacobian $\rho^2$. It supplies the entire regular block when
+$k=0$, with positive original-marker orders; when $k\ne0$
+that block has nonzero exponential part. The polynomial
+representatives of $v$ powers are original markers, so its
+leading matrix is invertible. The seed lemma applies.
+
+These alternatives exhaust the affine polynomial $H$ and the
+restriction $R$. They also exclude nonzero finite
+exponential-polynomial markers after differential isolation and
+shifting the constant term. We obtain the following conclusion.
+
+\begin{proposition}\label{prop:concurrentcomplete}
+Every pure cubic whose leading form is three distinct concurrent
+lines has an isotropic vertex with $F_2=0$. Hence it has a
+Gaussian affine-linear coordinate and satisfies $m>3\deg Q$.
+\end{proposition}
+\begin{proof}
+The gradient gate and the nonisotropic cases just proved leave
+only that vertex alternative. Apply Lemma~\ref{lem:frame} and
+the complete affine-linear theorem.
+\end{proof}

@@ -1,0 +1,1865 @@
+[
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-HC4-SCHUR",
+    "sha256": "b5dc00c343838ae48ea4f42d146e40bfa326783300e535affc088135a3d9b650",
+    "changed_fields": [
+      "dependencies",
+      "forbidden_attack_classes",
+      "scope"
+    ]
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-MV-ALL-DEGREE",
+    "sha256": "a014b226e7ea67f84b09871e90b484b77ef9784d8ad4b02d0d6cca5e809a220d",
+    "changed_fields": [
+      "dependencies",
+      "scope"
+    ]
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-GVC-FORMAL-LINEAR",
+    "sha256": "646ae09e136680e2a0d7f71114c027c52ce4c654962c2f0ccdf439a424b69959",
+    "changed_fields": [
+      "dependencies",
+      "scope"
+    ]
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "MVTIMEINDICIAL20261116",
+    "sha256": "4590b4831918bf7ee748c40360bafe48996c7c45643ef07865df31609f3c2ac9",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ]
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GVCREVERSEDHEIGHT20261116",
+    "sha256": "2f59aa040316d9711eceb2cb233aadbbd57a0a5583f960aaaf3463b317053729",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ]
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GVCTIMERIGID20261116",
+    "sha256": "29fdff1f12c22fb7d31e345af036db62f0eaee06d5449d8aac564a621fd4bde7",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ]
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYLO0",
+    "sha256": "4d3529a03fc4289e0f5fb861a83b61fd769c2012097212c49adf98baf35f348f",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ]
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYLO1",
+    "sha256": "f51be7993d7698c81e6983bdd92fc2b97921636f2f7a541ab4e2007661bda061",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STRUCTURAL-RECOGNITION-20261113",
+    "sha256": "ade8f29b8a688f7be99df0cd8bada4b53654b572d85c83e76833631638d1b935",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GRAPH-AFFINE-PLANE-20261113",
+    "sha256": "7d7c7d4d14a7d9821a4b4e7204bd8d551493b25b38085cc82fd5525119aacc9a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DUAL-TWO-DIVISORS-20261113",
+    "sha256": "f2699fc6fb3aa8015150897c46d97dab7b1d2e469cc785eb0eebe62818357405",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ROW-ORBIT-20261113",
+    "sha256": "f8acacb8a7f4f8b12276a08e73b0e1529f12e7821efc55ad11326f02fa301278",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-POINTED-PENCIL-20261113",
+    "sha256": "070637098d8be2a9cdd1705ae8f1edd35a0852499c0e169ee26b839df0642fc7",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADIAL-INTERSECTION-20261113",
+    "sha256": "2db65923fd6968a65c6ac6a30e526100094a0896a2f941126b625d3ccb586431",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-PLANE-BORISOV-ATTACHMENT-20261113",
+    "sha256": "6be090d8d0ae22f71ffa48c65f98fab52416934dbecb9eef195b631225914f1f",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AUTOMORPHIC-TRACE-20261114",
+    "sha256": "12ed60c6ceeffb01bfe443647fb26057f3af0dbb5e88da1ba49bd472ba9fb7ff",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RATIONAL-CURVE-TRACE-20261114",
+    "sha256": "46ee2f6ffee0d6316efa270262a95c8c95b5949d1e8f876e0b83c500759208d7",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SQUARE-AXIS-20261114",
+    "sha256": "cf68b9760713f00ebb939a3d0bb20010c1bffa404fffe9a49e315c5fdf145932",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FIXED-GRAPH-ROW-ORBIT-20261114",
+    "sha256": "87563ccbcaca109e8e0b54a1cf7436c3cc9eb489c3a907f31f31b7f581cc7abf",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-COORDINATE-JET-20261114",
+    "sha256": "a421659f39b1c5e7f2e2726cdc6ee6878ee462cfed8bae1608625fb94bf4fd13",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NATIVE-BASE-GRAPHS-20261114",
+    "sha256": "ebb5d7697e6547dac896899398e8a443026a2fd0d5311660a11d0b5258548994",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMPOSITE-HYPERPLANE-20261114",
+    "sha256": "439d6bf80941b5f31d8f1345005d61adc95639dfb684048a468b0d8769956429",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-COORDINATE-UNIT-IDEAL-20261114",
+    "sha256": "2c4439ee7a8b816839ad69c316231453a0a6fbb92f57ca9ca672e81d1c862597",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-CRITICAL-LOCUS-20261114",
+    "sha256": "118e87b613d635323d21a0bbd919318da73a539456b2c0eaa8580a2c97df7d82",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-COMPONENTS-20261114",
+    "sha256": "0d96f054a09f5b545c15c701ddc1385f6346da62b55b98cc8f3deda3496362c8",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-TARGET-LINE-20261114",
+    "sha256": "d6ad784c54c994c14f255889fad8a7f8e913a1d4370693335ec6ce640afd8ded",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NEWTON-CRITICAL-GATES-20261114",
+    "sha256": "17f0390ad2844eb997401e7ea3d5c2e5ff4b1371e900698e501543cb4a04b28e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-NORMALIZATION-20261114",
+    "sha256": "72cd48802c70f7eca68a79a5edd43fe5377b10d1b9959c602e235e5cd65d6e03",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-CRITICAL-BUDGET-20261114",
+    "sha256": "4014c02495095b9a262886197322cd4417f584779d85f093112fe1c2ff847348",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FULL-Y-GRAPH-CLOSURE-20261114",
+    "sha256": "f70f4bdb6fcea51ade66c34edf5bf44c4024cd7f9de44d7970d9ee8d8ef7e7c6",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-OPPOSITE-NONLINEAR-FRONTIER-20261114",
+    "sha256": "4ef9ebd7b16633328542de03ee415fbe8f36d5f4663f139d0aac2fa7ecc38370",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-EXCEPTIONAL-FIBRE-CLOSURE-20261114",
+    "sha256": "6836d658638c1f56dea0ed01e9a0168de540f2cfcdb1dd4430110dd05efb6135",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CYLINDRICAL-TRACE-CLOSURE-20261114",
+    "sha256": "482e9096890c0d14b5f74f3ce636be85458df7112deb8ac97bcecb5f8d78e2db",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ISOLATED-TRACE-MIXING-20261114",
+    "sha256": "92ad6f26b23a82eccbf3f48931e14fe3fe09ca5a859c874280b39837cc48bc5a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-HODGE-TRACE-CLOSURE-20261114",
+    "sha256": "e7bca49d5f597b3167a4596aed27b47ad5b46fb228bf7a49a76866523ba06120",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DIRECTIONAL-BASE-CLOSURE-20261114",
+    "sha256": "df3dbe28605c46eb5ebd945f131c24e6002017077cedcbeb6eca9b6c9c0c1058",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-TRACE-COMPATIBILITY-20261114",
+    "sha256": "c5d4c73a5bbc5bab3888816dfffd054f8efc76e4f508b3871147832fa52f1007",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-AFFINE-PLANE-20261114",
+    "sha256": "7566ee7c477282f3afa60f40b34dd889804d4a30cd68fe17f97043d3eb9b8e50",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-VALUE-ORBITS-20261114",
+    "sha256": "8baeb11e5976cd36e97f872359cce848248ceae1ab4bbb3ea9efaa4409a85efe",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FINITE-FIBRE-NORMAL-FORM-20261114",
+    "sha256": "fd29ca21d99a81539448fd178a4fbc33be2c424c5c71e3c7b2ac38ae8474812b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-RECONSTRUCTION-EMBEDDING-20261114",
+    "sha256": "bee570d53748ceb3ade41887ca7c45059b0b3094f205f2d48589b003a73ad73e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STABLE-HYPERSURFACE-20261114",
+    "sha256": "2858460941be15a6d5a4039b114d477572cbe168ed684780a9f57f341f8647a8",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-MIXED-PROJECTION-PROFILE-20261114",
+    "sha256": "0688d6b62cd511ea6a257ad701cb48bf3ab982c6455e6d23b100482a26a1de7b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FIXED-POTENTIAL-PROJECTION-20261114",
+    "sha256": "1f1fd2502ef8432bf9706951e2befed1aa02792739e9a72fe87b7ef50a8af65b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AMBIENT-QUADRIC-GRAPHS-20261114",
+    "sha256": "5ee24a3b6eec26e75f3ae57e67fa2d9bf25be1ae73a72c25ab77b51df306fbb7",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-THREE-AFFINE-PROJECTIONS-20261114",
+    "sha256": "968f0e349db44e31fe29bf282d3b3c5e154b005ebbda9b1f4af1cc5fb64248b6",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-AFFINE-ENDPOINT-GEOMETRY-20261114",
+    "sha256": "5bcbab6b7a5966eec432ccf08675673623531fda01d9f9006ac24b41f93c98fd",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRATIC-SYMMETRY-SATURATION-20261114",
+    "sha256": "d330a5f889ac003462b58edea96111d6ccd6e5c5be9973392f4ec94b283aa44e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRIC-OUTPUT-BASE-20261114",
+    "sha256": "5e4cde51758e547f840c3219b663cabb2c5d104bee9a6a77ee9a41f2d5efe66b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-CRITICAL-GRAPH-20261114",
+    "sha256": "4b08aed0036856abdc7e8958df849e4c55325870077386eeb810932d968f45da",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PROPER-MORSE-BOUNDARY-20261114",
+    "sha256": "da8e381eeebb52a74e41cf77cb669c1a2a626d47695e226bda54ffcf7363dfea",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRATIC-PLANE-FIBRE-AFFINE-20261114",
+    "sha256": "68fdb4db9d33b42f866394a3f3cae9e66d98469b06fa3c7e138c931c9c79ec07",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-POSITIVE-WEIGHT-IMAGE-20261114",
+    "sha256": "28b68b9f6034b2c270db1e4f15a025869d84c0036902f24b984e357e15672536",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SMOOTH-INFINITY-OUTPUT-20261114",
+    "sha256": "14559fb9e2184c2bb733f314720f13b98e2207ef9a51d0eccdef6a84f7d9e02e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ABELIAN-CLASSGROUP-20261114",
+    "sha256": "429d2b94b614bb5d1b7537f94743ed412d978026a190a27c5aea602905531cc5",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REGULAR-PARAMETER-20261114",
+    "sha256": "e16c460011fdd3ece8820b2a94036d49c19ceb96cbf53389e4880b58f13f5cc1",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NORMAL-MONOGENIC-COVER-20261114",
+    "sha256": "607f1127a4af8dedd54be088c00d0b55a191a6e9d89cb3ba3799c5ee8ebb2d6c",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-LEADING-FIBRE-UNIT-GATE-20261115",
+    "sha256": "cc8cc621e9ea1e01b42988bd46d34ca3f60c757c0de978f001fbb91cf1fb0f48",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NILPOTENT-COVER-MONODROMY-20261115",
+    "sha256": "6507e96a2db26ccf46d14767139c325e06ccd3b9aabcbb89222ecf32654a371f",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NORMAL-QUOTIENT-BOUNDARY-20261115",
+    "sha256": "0ba45912f6489e472a53ea97894bae3e3073654de4445b678817a035c247d93e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-VALUATION-CRITICAL-CURVE-20261115",
+    "sha256": "c62c1bb3f9f6517df96d373dc569fe8b1ffaac8e8713cf83a24e2ed5a34133bb",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-FACTOR-SUPPORT-20261115",
+    "sha256": "7a576748c4549745d1b07316791d98315fe3a47f82a70cb40733d761cbd04a62",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DERIVATIVE-POWER-MODIFICATION-20261115",
+    "sha256": "29deb6effdfff90cc7591bf2832cfb0d8e86990b7883648ad9e2880b7d4fccfe",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FACTOR-RESULTANT-BARRIER-20261115",
+    "sha256": "174573ec1628f03e803a6cd5929e13379b635caef02106ec93734c690a64a3a2",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REDUCED-PENCIL-RATIONAL-MONODROMY-20261115",
+    "sha256": "50a37f15f3d07b0706e70052da600dc3e958cf646e5b4d5239881ac71cf608a3",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PENCIL-MULTIPLICITY-BOUND-20261115",
+    "sha256": "fcf034804d374d5aceabee9b97b5a80475464dae658f3e53b3a72c30940ef3e7",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PLANE-BRANCH-PARAMETERS-20261115",
+    "sha256": "8b29aaa75f2aad73f1db8c10a3899dadc2499e4dc03e627136569e29a3a8761a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CENTRAL-GEOMETRIC-QUOTIENT-20261115",
+    "sha256": "0221ad180a852de62fe362187c1052876120e30a9200b7199e9179684da534e5",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PARAMETER-NORMS-ALL-OUTPUTS-20261115",
+    "sha256": "dee725ae794f9b0a11ac330f4684e0ebe761f72390f95f59d97c0d1a1ba55719",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-MULTIVARIABLE-FIXED-MULTIPLIERS-20261115",
+    "sha256": "dac2ee7608127aa89a37cc91ce2b71fc55cb0dd83060a523796cf5250e45109a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PARAMETER-STABILITY-MOVING-MULTIPLIERS-20261115",
+    "sha256": "2317a3260c4822a1249d82fa0293460a6304bf61c946180783d4b517102fcdd3",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REFLEXIVE-PENCIL-DESCENT-20261115",
+    "sha256": "f5f42ddea45ac40716076a66d7a4ba99a3f4cbd0d83dff716674d9d91662f156",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INDEPENDENT-COEFFICIENTS-OVERLAPPING-OUTPUTS-20261115",
+    "sha256": "002a724d774de1714d82eeac19e8785edb746c9c7278a5fd154fed396c1d19a1",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ADDITIVE-ACTIONS-IMAGE-INVARIANCE-20261115",
+    "sha256": "281c82a5f36a60aff27cda79ec46e465f8d8fb1595b0d5a49c0778d1bc8a3048",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ONE-HELPER-OVERLAP-CLOSURE-20261115",
+    "sha256": "25939e0a68c652111f70256b6c2154d82f591cbd224e8ddf78680c1e946613a7",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-HELPER-CURVES-20261115",
+    "sha256": "0ea2390880896b19adf6e040cce0a4524044af7e6b34dfa8c26b8810553f47af",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-UNIVERSAL-MODIFICATION-BOUNDARY-20261115",
+    "sha256": "ac007b779d4a128891a08f5cb13f909e5d75e87a76c0d810363e677540ecfd8b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-NAMBU-DIRECTIONS-20261115",
+    "sha256": "15210d4b51b7bd90782fe8e01fb34b7b54a4a963558e4684bf38f6d6c3de934f",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FREE-PROJECTION-TRACE-20261115",
+    "sha256": "e283a58297cb8c923f25f37cca8a06fad8b81762cfb1d635486de8927b73c344",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PRIMITIVE-HELPER-NORMALITY-20261115",
+    "sha256": "16a255fe64bedf37435b7e3ee655dd609d9de88d4ce98861d717c665d0d2d24c",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRIC-MIDDLE-CYCLE-20261115",
+    "sha256": "9e04a032f1dd6ecb40621432ea0aa23f41f12ec65da519a093c01016e18547b3",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADICAL-TRACE-20261115",
+    "sha256": "ec5baf7af26b06d071e6b8e908fc3f55c2ad46587b9ed5c4100388139a3152b2",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CONTRACTIBLE-PENCIL-20261115",
+    "sha256": "fb42197e51f79707c55b53ae751f037a76740042c0b3c384adb83106acd1de22",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ONE-PLACE-DESCENT-20261115",
+    "sha256": "73614d7ad02663adb7ed28069cf9b18896a8a83f98b3119e6ecb1ccf0e37b01c",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-EXTRA-PRIME-EXCISION-20261115",
+    "sha256": "e0a9893cebbf42c522efd36615ee477805a0c83e08e7ea932fcf9583392440d3",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FORMAL-DIVISOR-RATIONALITY-20261115",
+    "sha256": "508b33567c6e0d72b04931d284f264e9adab702919944aa86520ae8617ff8a84",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SEMISIMPLE-PENCIL-ORBITS-20261115",
+    "sha256": "9053e2a9d30a7427a9abed428cf67daf888ced5af4e55d6caaa7b4cb54a877db",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NILPOTENT-PENCIL-ENDPOINT-20261115",
+    "sha256": "ccb29278a1a480d1c0362c35e4f1e82cf10a9f3ca329437a585e8dede82b2206",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ALL-CENTERED-JORDAN-IMAGES-20261115",
+    "sha256": "8e835a4362511b0cc4bae0ed79779431900649b3ea9d9c55533dbff5a9ec5f76",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AFFINE-PENCIL-RESIDUES-20261115",
+    "sha256": "d5cd18803aae9c50e1af4635689f53d34e5af6776aa4be676ba064debb65b087",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ELLIPTIC-CONE-CYCLIC-CLOSURE-20261115",
+    "sha256": "1f5ce83be2592edbfece86f07e0a29c627affade69ef6bd5d0a316494e9bf1a1",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ALL-DEGREE-QUANTIFIERS-20261115",
+    "sha256": "ec7806516a9c4775d13490c1bdb73ec749e747ac4d74f8c696674164ad96c4d0",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STATIONARY-POLE-KRYLOV-20261115",
+    "sha256": "09a4df91368eb7f54af26cbb4797c5ed950c90686d9cd9566c22b4173743a5f3",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-LOGARITHMIC-CURVE-DESCENT-20261115",
+    "sha256": "f9ed7e8d83ccf96c01997152ec7fefea3034bc63703bc34caff8499990590b90",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-SQUAREFREE-VOLUME-ARCHITECTURE-20261115",
+    "sha256": "e19abff02a383776c27265756662f38a6ac141fd008580d974f56453bc68f3d8",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AFFINE-POLAR-SEMISIMPLE-20261115",
+    "sha256": "a360db75e298d004bb9707f067365def6ef9dbe0686f64522977917a2d806308",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-NEUTRAL-FACE-RESOLVENT-20261115",
+    "sha256": "b4430d5620e3ea0f94c7d24c525b1d2201aa93854121ef765a08587c97968f4e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-GAUSSIAN-SHEAR-NORMAL-FORM-20261115",
+    "sha256": "8997cea2e9bcd20dc7ed4284566650e459ae2933bb4fc8a72c5d70429e77d198",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SUSPENDED-MULTIPLIER-20261115",
+    "sha256": "c4cc882bdb78bf3c6f17269908d7cf67c34d541f4cc99f84c42f6c2e9be8057f",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ACTUAL-DIRECTION-RANK-ONE-20261115",
+    "sha256": "7d0d44829ef7e1cc6e31794bae6eb37abcdf764bfbf5f68c2756643d6accf7fb",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-JORDAN-POLAR-INVERTIBLE-20261115",
+    "sha256": "fb0a94e173800df7bf22a9e38c06ed22d2b23c3318553f36a046b96942d665d5",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-GENERIC-POINT-HOLONOMIC-DESCENT-20261115",
+    "sha256": "01587aca8abaccd3623ac0faa7120d55b87aab7703b2be72cef0d0c33a67ff93",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ZERO-EIGENVECTOR-RANK-ONE-20261115",
+    "sha256": "e8275f876a6493c9076d848e66bb00919c03338bf85cf4a8f3fab7260ec86b8d",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-PRIMARY-THICKENING-ORACLE-20261115",
+    "sha256": "7ea0a7e9839e513f1760f17256a2d94dbd09fe53d39eaf1bfba88cf73121593e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMPATIBLE-INNER-COORDINATE-20261115",
+    "sha256": "93a23d4ba7acaad67ca779bbb993ad991ae696e3c63a5a96e4d66732c77c3688",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-FULL-MODULE-FINITE-MULTIPLIERS-20261115",
+    "sha256": "990c6fca4e0dc431ac5c83f8afac490152dd35f6230024741787764addd2a311",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-B-FUNCTION-LINEAR-CUTOFF-20261115",
+    "sha256": "3ea7fd30faff9c277f2c47a2f196b19ae4a59fc3d988d22c755a1b7cbac3aa0b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ISOTROPIC-KERNEL-QUARTIC-20261115",
+    "sha256": "d08a82a3ba633063aba8d0f477d277fd2c4f7b40740d941506fae1125ae24966",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RESONANCE-CHART-UNIFORMITY-20261115",
+    "sha256": "18400f18c46e3d27297fac7ec159f342259aeea49ddaadfe4c64996fa4bcd1c7",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ALL-AFFINE-RESONANT-CUBIC-20261115",
+    "sha256": "289f676dce386a892a27e5a9609035362ac07c56241fa658a01bab4191702966",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-OPERATOR-GAUSSIAN-LAURENT-20261115",
+    "sha256": "3022f03b07a7de1d6671439cc7ef3f29120426ed75eb1a02c96b0ad7ff892cfc",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-NORMAL-MODELS-20261115",
+    "sha256": "d8a2dc40dd800925e6f5a790ee3b3a56940ff422735a90687a9c9d8c93546ca9",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-FINITE-FAMILY-SPECIALIZATION-20261115",
+    "sha256": "a5a6433e46ac220d093613e1979d9490108db85fbf0d5b6e762a3e6983659357",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-CYLINDER-ONE-COORDINATE-20261115",
+    "sha256": "299236b9c4786c8d1e9d387373d38c89e6008e08b74ac8580c47a669bbc377a5",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-HOLONOMIC-SOURCE-CUTOFF-20261115",
+    "sha256": "4846b874b8704c6ae3241cd0b568556fe59a8714f04ba360d079f82ee5249a38",
+    "changed_fields": [
+      "avoid",
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "use"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-ADDITIVE-K2-BARRIER-20261115",
+    "sha256": "31f08c0e6e2805dd713147e8bfc101759817bff9124899cab58212ecb8b6fabe",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RANKONE-ARTIN-20261115",
+    "sha256": "edfd8c1b7d9d40d5e95ac395b13270fc044a6c9e380fcec2e48dd8aafb24f457",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PRIMITIVE-QUOTIENT-CERTIFICATE-20261115",
+    "sha256": "9e4721d433c33dd9418474a8d9b6bbbc6b9d3b491687d1a48ebdda0f4f6910ae",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUOTIENT-HOLES-PERIOD-BARRIER-20261115",
+    "sha256": "b6d57eebae7996cfb2ada132d00137eb566dcf6d71c9e18a7da3eb5d18c875a7",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ACTUAL-PERIOD-KERNEL-20261115",
+    "sha256": "a686fc7d51aefe181ac8f2a5b532a57c1bc6703fc816d43da003d8c7f5bec851",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-SLICE-ORIENTED-RECOVERY-20261115",
+    "sha256": "7290f4165d2c09a0d7d8a99494563ca1452e9e9eb2ce045c2c7f5b34be8f158c",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RATIONAL-CORE-BOUNDARY-20261115",
+    "sha256": "60d0552c7e6c0ac67b3cc2a12bb05c8c9f8c092de0c134cedf122a4fcf0bbfe9",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-LEADING-DECAY-CONSTANTB-20261115",
+    "sha256": "cfd5915914f25ebe185752607782a0e6f0bf2e0cf47117fbd94cf689c51af490",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GENERIC-COORDINATE-SPECIALIZATION-20261115",
+    "sha256": "f7aa7fbde9f57c8d062e9c876e0ba4c9680319d1a8f53763c886050efb361c36",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-SIGN-TWISTS-20261115",
+    "sha256": "3fceac1a828799ab5595038e59cca2d9c333a68843548a536ae6513b2a333eab",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RATIONAL-PULLBACK-RANK-20261115",
+    "sha256": "eadbeb8b5dda73cb0a718fc0411ca488a6c42e1900d049ee6f304a8894d74707",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TORUS-COORDINATE-VISIBILITY-20261115",
+    "sha256": "38e56019b3c328db28e2e818ccd43b6ff89261eb2527c83d86e12f961b7616ad",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-INVERSE-CLOSED-SAFE-20261115",
+    "sha256": "65811245d0b22b637fad435873aff9a61d5efcb9a6bdaa0545addc7f700d3ac1",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-MOTIVIC-FAMILY-BARRIER-20261115",
+    "sha256": "3aec9ee00a116cbd4e3c4c007e4070d6299b9e9d68ddecd0ac489f7fe4581b4e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-QUADRATIC-AFFINE-SAFETY-20261115",
+    "sha256": "0fa3f341ffc3fe4d4f6f0351d4ff7eda8849471755eedde75a4ca0955c3e8208",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTEGRAL-GLOBAL-VOLUME-PERIOD-BARRIER-20261115",
+    "sha256": "81541cf6a9ba058cd4b37d07c784b07ebdf638de29d534c52a6db3716cbcd549",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-ORDER-TWO-DRIFT-20261115",
+    "sha256": "ffaac77cbd59395fa2ca2ec5db343be4882ebee190a3748483209af3d9f9c91a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-QUADRATIC-PHASE-ALL-ORDERS-20261115",
+    "sha256": "4f5ab4b1cd85d317f1a907f3febf80cafff42e7e36e9358e80a42f4d13dbbac2",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-NORMAL-FORMS-SEIFERT-20261115",
+    "sha256": "f6a384997fdf48daf1c79f09781005a2328ac1c7064697b0baa4dcf4b20a8972",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FILTERED-PRINCIPAL-PAIR-20261115",
+    "sha256": "83bd1a78a3027cb2cfff8f11479ffd77feece7f03b78810574dd48e9684dc6ba",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-FLEXIBILITY-20261115",
+    "sha256": "4c0430e49bfafcfec097559b93876552669df0eaae2aba1e8974a52ce0d0a63a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADICAL-PLINTH-RIGIDITY-20261115",
+    "sha256": "551767a3493de5fe5cdd2e35334dd41ee6ea9a6bb7754564ccfe3b4a19cb3294",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-AMBIENT-COEFFICIENT-RESTRICTION-20261115",
+    "sha256": "7ac89ea647a64b0c37e7cf5c68df2a5a9dc8fc354b025cfb86d70ffe2fce6e92",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FINITE-PLINTH-DESCENT-20261115",
+    "sha256": "9ce9ac27944554772eadf90d2a01edde8087b08dd5ad741f96b29344da50f02f",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-EXACT-SOURCE-POLYNOMIAL-HOM-20261115",
+    "sha256": "c626243feedcdc67118c547d21a7a5bd7e5d558543fae26c7dc3d23d62c642ed",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FLAT-PLINTH-ONE-VALUE-20261115",
+    "sha256": "618fd753844d9648ee3c1ad93e0dd18b1a0092a276afb0772111283da453ba3d",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-DERIVED-STRATA-FIELD-UNIFORMITY-20261115",
+    "sha256": "2d597376c5bc0f180905c2f0fccc0a122fe19bc89a00940c3a1e80637e4e4492",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-THREE-POINT-QUOTIENT-BARRIER-20261115",
+    "sha256": "6eb8cafc2a43352d97b11ed8549adf6097184144d9c5c03feabe7bef763a2192",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-POLYNOMIAL-GAUSSIAN-TRANSFERS-20261115",
+    "sha256": "780f554132a7d4737d1b88eba24184963ef12c086b4ed7bfcecb288eddc9ceab",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-WEIGHTED-PERIOD-GLOBAL-NILPOTENCE-20261115",
+    "sha256": "65f70e603f41c09f8c3afce257c9df60098fba650bc820818f72883f08e59894",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-NILPOTENT-SAFE-COMPLETION-20261115",
+    "sha256": "3e6f620c2537fdcd4ec65a21a5eaef7bf8cd49ceb43a0a1e6c7175119cacc64e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-POSITIVE-CUTOFF-STABILIZATION-20261115",
+    "sha256": "37c26adb431d348f63f00dc06bcdf1db374045c03435a6b8433e9269d541e905",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-TYPE-FIRST-ORBIT-MODULE-20261115",
+    "sha256": "d175e4a2c3639a2a1ae87724e162bd5bacd1cf825b19d2c0d757860df0c40196",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FORMAL-FINITE-SEED-20261115",
+    "sha256": "f6da5183cb6b3838bc9d22b8db5961427c1add1537aec175f928acdae692894b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RAMIFIED-DIVIDED-HESSIAN-20261115",
+    "sha256": "4259649f05f248bb2189f632155aa3d339cd1a3b78186e53e3077ca259d97e81",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-EFFECTIVE-RING-BOUNDS-20261115",
+    "sha256": "c9ae99fadf94ae6888ad9b58f6ff3614170c2b9b55e331d147d06a308c9f2860",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SATURATED-PLANE-FROBENIUS-SHEAR-20261115",
+    "sha256": "0e3a0e896dd46b812ee2392267eaa3033f81646b63011a26fa033fd9b333238a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTEGRAL-COTANGENT-LIFT-EQUIVALENCE-20261115",
+    "sha256": "b76865304c1c0d0c5580dc577d6e18efe3f5562ca355c4381a3e004c79c29fd4",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-OPERATOR-TAIL-SAFETY-20261115",
+    "sha256": "8bb313f5e2d647f91f1f392bc3e8092e9a04de115317bcbd5f3c01941732e836",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-HORIZONTAL-COEFFICIENT-COMPONENT-PRIME-20261115",
+    "sha256": "3f21d96d875acf45610690c30bad919881a8e744f0e7f686be1bc41120df0684",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-REAL-CURVE-MARKERS-20261115",
+    "sha256": "6f7acf5590bb9b42095f2854242620ff9032b2cd2781ac0de3e70f379c2b93c9",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-HARMONIC-ALGEBRA-20261115",
+    "sha256": "91309e05e74d46b3993b2081d9f1785e2f34c22946b8935d6929131dc1d725d3",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CANONICAL-INTERMEDIATE-STABLE-CI-20261115",
+    "sha256": "26b43558a189d1527557820792af090a77cbcee6bbf4a1c0da1751fc8bea2b9a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-FULL-POLYNOMIAL-SYMMETRY-20261115",
+    "sha256": "df132208e918ecb8a6d766b87b094ca54f118508cb72fe4478cc5c5621ad37fc",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-WHOLE-SOURCE-POWER-TRACE-20261115",
+    "sha256": "e0b240c023287a3cc02afed22f072a2221743250f91bc0d0f56b2bacc9e55c98",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-KELLER-ENDOMORPHISM-BOUNDARY-20261115",
+    "sha256": "fb028bbf2375a061c90e0b5c76c8c8ea99add440f186cd2cc2f76d1afca30661",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PLANE-TRACE-CORE-NODAL-INERTIA-20261115",
+    "sha256": "6de1d2f96751554c0d48dae7f2d3aaba28de47f4dac0d770b588a5d5dca84bbc",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-COTANGENT-INVERSE-SECTIONS-20261115",
+    "sha256": "a8754c4ee601bdfacb9574699158123a6aacbd4a8256726b92193719b8032a08",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SOURCE-LAYERS-TRACE-KERNEL-20261115",
+    "sha256": "bc72b89f102b2b26cb9b5a424b5ac15d2fde4e8f757103dace911e1538a73e51",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-NILPOTENT-INVERSE-SECTIONS-20261116",
+    "sha256": "d6f0b592fc2f61966735f2ac47145e8d1f2794e175753312dc79d560aaf3d71c",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRATIC-DEFECT-AND-QUARTIC-LITERATURE-20261116",
+    "sha256": "2a54cbe3db25be150a684275a903d4c6f30e117f72a3252896a5ff9eb99dc808",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-JOINT-SAFE-ALGEBRAS-20261116",
+    "sha256": "0b721454e8d7735b0de0cd0f78df0823d5a71bb9866c2f7bdcb41f976b482597",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TRACE-ZERO-ALGEBRA-COMPLETION-20261116",
+    "sha256": "d6f90ed6003b361c2b1f560496cb50e611949a421ade8bd037fc1f8ff4129c61",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-ACTUAL-JOINT-IMAGE-RECOMPOSITION-20261116",
+    "sha256": "e270318e2c4e60bba18b35673956f5acc261c14d54ee5bf8a1e862cea2f96c17",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-KULIKOV-COFRAME-AND-TATE-BOUNDARY-20261116",
+    "sha256": "04477e8d69f4c6563f0af6ba3a0ed363d0b9bb2417aece5e5bba679594458ac5",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-PRIME-SEPARATING-MARKER-CLASSIFIER-20261116",
+    "sha256": "d5ea80d2da3bb8d7a9b458e7b141c0763f4840b312a280e5fce0a9d33695e5b6",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-HOMOGENEOUS-RIGIDITY-AND-MARKER-OBSTRUCTION-20261116",
+    "sha256": "cbe1324f494224820e54edf2c80c4ce3b294871475dab84c1d4cc9e5e3199759",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CANONICAL-ETALE-RECONSTRUCTION-20261116",
+    "sha256": "783d8775e75b86950486cc17ba642bd758b059a1493524ab0a4d09a323cf810f",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-COMPACT-REGULARITY-AND-COMPLEX-HOMOGENEOUS-GROWTH-20261116",
+    "sha256": "4c6e610ac18a1a7284aaadb4b89a4bcb91feaf48802a12b8b01807d6d36a18f4",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DIFFERENTIAL-SUBALGEBRA-CLASSIFICATION-20261116",
+    "sha256": "aef5101ec1ba5ec0cf39eaddf064dd30fc88d43acec217cf9540a8ce614ab1a9",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-POLYNOMIAL-RECOMPOSITION-REFLECTION-20261116",
+    "sha256": "2dcd372750e24135b83b946eaaaa4b33129ff55c760c891aa9085fd976f4acc2",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SOURCE-CONDUCTOR-AND-PRIMITIVE-COLLISIONS-20261116",
+    "sha256": "cee5819dfd02f271aecc898c8d85104a7ca985e6c9e2e841f9476dc4f13ca58b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ALGEBRAIC-TRACE-AND-ZERO-VALUE-LOGARITHMS-20261116",
+    "sha256": "a2bfb4816fb297bfa0c1b5973aa73f77a1a8c30c6e51b17417dbf8c4cf3f95a9",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ALGEBRAIC-FLOW-DESCENT-20261116",
+    "sha256": "b5fa6269825f5f8b8353021cb085d1b8856102c221f4286e4abe0a8aa96a40e3",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "implementation",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TARGET-BOUNDARY-SYMMETRY-20261116",
+    "sha256": "3690c71524593a8ef135a46732bba1b15311178e915c4271afcd45802fdf6e92",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FORMAL-BINARY-ENVELOPES-AND-ORDINARY-SEEDS-20261116",
+    "sha256": "47cc67bb68e015a1875785f9ac189714d396433c85779b9bdfd1f3379bec225d",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMPLETE-HOLOMORPHIC-FLOW-20261116",
+    "sha256": "df1c246136039393a2d9fc792ca885909faa19ec9160514e0052f64e8652da22",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GENERIC-DECK-BOUNDARY-COST-20261116",
+    "sha256": "33a1e2c36f6ca6cdfae363bbd6985a4c4064c6dab0b9756b4bf591a2ce9ca531",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-ALGEBRAIC-FORMAL-DIAGONALS-AND-UNIT-INVARIANCE-20261116",
+    "sha256": "4c6ceda1657eb65205f1b1ea35efb850138c60b0886e59b0a538c7dfad4f92d3",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-COLLISION-CHORDS-20261116",
+    "sha256": "2cdf8d77f511da2d3f7cadd58f094383f5d145492fb5d2fb0a7c3b0df755219a",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-EXACT-JOINT-SOURCE-ALGEBRAICITY-BOUNDARY-20261116",
+    "sha256": "b3eeb384a48f55a5e4d63e4f971fb47b32fec3f4461bea113ced6bc4e7d89167",
+    "changed_fields": [
+      "avoid",
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "use"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FORMAL-SHIFTS-AND-APOLAR-NILPOTENCE-GAP-20261116",
+    "sha256": "2ec8d28bee25ab73bba134fe84d5a0e63127eba5ffe99efff4cd1d157b0e0fd9",
+    "changed_fields": [
+      "avoid",
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "use"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-EXACT-COLLISION-ACTION-20261116",
+    "sha256": "fdd41c40c4021a02039c9a518c462077600d171d6c16f0d28815aab84c9e75ea",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ALL-CONJUGATE-LOCALIZATION-20261116",
+    "sha256": "39c4851cca6b8327d59fc860934008b46bfa2d9e42b6b7a92dab38721fe9218e",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-PAIRED-RECOMPOSITION-AND-EXACT-HEIGHT-SLOPES-20261116",
+    "sha256": "3f6cee9b8202214bcc85097fa3357357547490662f2a84dcbf46f59012583539",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SCALAR-AND-ONE-COMPONENT-DESCENT-20261116",
+    "sha256": "abfc9c766d50275f06d2580f6604fe819e8f4938a225d840fb735263b5286622",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-HEIGHT-CONVOLUTION-AND-FALSE-FINITE-GAPS-20261116",
+    "sha256": "e3c6cb2c8103a16315a189851fb56a067380c929e53203ce5daab83e6f3c9e4d",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-PHASE-POWER-ANNIHILATOR-QUOTIENTS-20261116",
+    "sha256": "487f70c491ed991692470c8e2ed9d49bc3beaffa93c6c343260eae20fd4b0737",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TRACE-AVERAGING-FLOW-BARRIER-20261116",
+    "sha256": "476a3724c58b9acb26a1403aae210d09f97a2a31eccf30c6b035f524757a351b",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-CRITICAL-DIMENSION-RADIAL-LAWS-AND-SPHERE-COVERS-20261116",
+    "sha256": "3a7a4dccb57ef6d2f411c012831f4d5d1b0df845d28fef69dfe9a2321ebdb081",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-UNIFORM-INTEGRATION-AND-RELATIVE-QUOTIENT-20261116",
+    "sha256": "617c1e503a8e9f8e96ae9223dcd37a16af3544b41df6d520bf7f8b7e8de53dda",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-PRIME-INDEX-DRIFT-AND-ARITHMETIC-MODELS-20261116",
+    "sha256": "2ab7bdcb9146eaef375b425395b97f706878e84b74c7ed1945dbba62b16ff1ff",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PROJECTIVE-DIFFERENTIAL-GENERATOR-20261116",
+    "sha256": "12e66bdc3d670577a31471a600eeade98af555631061dc00681bd7421ca425ba",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COTANGENT-INCIDENCE-HODGE-20261116",
+    "sha256": "2086671b0d6575a18d29734f2c17458315f5369354d3ce13c6ee8599b71b6981",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-OPTIMAL-PRIME-DIVISIBILITY-AND-CARRY-INTERACTION-20261116",
+    "sha256": "192ecc59356b4b3e2229f819b2714eb4d4058af2293e38433e8bf14416916190",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GAMMA-COORDINATE-DARBOUX-20261116",
+    "sha256": "f2eb4dea77d91267bb5763b06c78187a2448fd2b1be8d79ce6f8dd5535822556",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMMON-COORDINATE-ORBIT-FILTER-20261116",
+    "sha256": "b726f3933b3622c130425d9184abde5e98535224d2b3883385b7b8a4db073a76",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-MONOMIAL-APOLAR-NEWTON-CUTOFFS-20261116",
+    "sha256": "e65fe6b8d60b7bc8dc537a134d13111fc6d1b15ca2ccff5faae72a96f11f0bde",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMPLETION-ADDITIVE-DECK-RIGIDITY-20261116",
+    "sha256": "6ebea83537ad879a8b32c9203461aaf4caf8c5a925b703c3530bf365a15ef362",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "implementation",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CONTRACTING-SOURCE-FINITE-LATTICE-20261116",
+    "sha256": "df455d0685aba6b2556139c8d15689983d0e969b3cf9003929cfb4a20028644c",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-SCALAR-FORMAL-TIME-EQUATIONS-AND-ACTUAL-GAPS-20261116",
+    "sha256": "9a5e022bfc4325d97ac4f470e62c6a03ec4b449c3cdade491953d3a3a7675c17",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ]
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FULL-NORMALIZATION-ADDITIVE-STABILIZER-20261116",
+    "sha256": "5c88cceb2e56211ba964117cc55f9c5c3186e20e178a78b30bcc906a985a5bab",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-SCHUR",
+    "sha256": "5f0f023f18b0560d1aee2d48522942c9d09e8d680caf177f1cd899f2c7d6c5bb",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-RESIDUAL-AUDIT",
+    "sha256": "0115ad9f0e519fcb4c93b6ca41cd4c9c5afc523eefa0c0fcc4f50ccb8dfe8707",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-TANG-20261113",
+    "sha256": "cf21cce3a82d8d46d434223086c7c1ce7df08365ee2708b6534cda5225a2a099",
+    "changed_fields": [
+      "reviewed_claims"
+    ]
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-MOMENT-ALL-DEGREE",
+    "sha256": "5517f28c540449977f084af65aea791673845904a569dbf689fd71e083ce671f",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ]
+  }
+]

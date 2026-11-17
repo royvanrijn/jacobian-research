@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-11-14",
+  "primary_sources": [
+    {
+      "path": "leidy-maxim-hoA.pdf",
+      "url": "https://people.math.wisc.edu/~lmaxim/hoA.pdf",
+      "title": "Constance Leidy and Laurentiu Maxim, Higher-order Alexander invariants of plane algebraic curves (2006)",
+      "used_statement": "Proof of Theorem4.7: epimorphism from the link-at-infinity complement group onto the affine complement group; no general-position-at-infinity assumption on this epimorphism.",
+      "accessed": "2026-11-14",
+      "sha256": "6e2b28d476c66e89650a73983c1affc8b265bc93796cac0557ee6f9e0c119b04",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "scott-geometries.pdf",
+      "url": "https://www.maths.gla.ac.uk/~mpowell/Scott%20-%20Geometries_of_three-manifolds.pdf",
+      "title": "Peter Scott, The geometries of 3-manifolds, Bull. London Math. Soc.15(1983),401-487",
+      "used_statement": "Sections2 and3: Seifert and orbifold group presentations, fiber exact sequence, Euler class as a section obstruction; Theorem3.6 covers unbranched Seifert covers. The ordinary-base-branch extension used here is separately proved by section obstruction, not quoted as Theorem3.6.",
+      "accessed": "2026-11-14",
+      "sha256": "a95c7eaf766544642fbe1ba3dd41734a5832794ec75c17781cd83a87b1121603",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "borodzik-morse.pdf",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/borodzik2.pdf",
+      "title": "Maciej Borodzik, Morse theory for plane algebraic curves, Journal of Topology (2012), doi:10.1112/jtopol/jts006",
+      "used_statement": "Proof of Corollary5.19: coprime polynomial parametrization degrees give the torus knot T(p,q) at affine infinity.",
+      "accessed": "2026-11-14",
+      "sha256": "50b3a9c80bb740449806f605c84166ac0d50f80a07471d871c525aa40e31c808",
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "novelty_priority_claimed": false
+}

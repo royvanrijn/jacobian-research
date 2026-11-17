@@ -1,0 +1,380 @@
+{
+  "status": "PASS",
+  "sympy": "1.14.0",
+  "torus_finite_controls": [
+    {
+      "p": 2,
+      "q": 3,
+      "prime": 31,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 24,
+          "lambda": 16,
+          "algebra_dimension": 4
+        },
+        {
+          "s": 3,
+          "mu": 23,
+          "lambda": 2,
+          "algebra_dimension": 4
+        },
+        {
+          "s": 4,
+          "mu": 3,
+          "lambda": 8,
+          "algebra_dimension": 4
+        }
+      ]
+    },
+    {
+      "p": 2,
+      "q": 5,
+      "prime": 61,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 25,
+          "lambda": 14,
+          "algebra_dimension": 4
+        },
+        {
+          "s": 3,
+          "mu": 41,
+          "lambda": 1,
+          "algebra_dimension": 4
+        },
+        {
+          "s": 4,
+          "mu": 39,
+          "lambda": 13,
+          "algebra_dimension": 4
+        }
+      ]
+    },
+    {
+      "p": 2,
+      "q": 7,
+      "prime": 71,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 33,
+          "lambda": 25,
+          "algebra_dimension": 4
+        },
+        {
+          "s": 3,
+          "mu": 21,
+          "lambda": 25,
+          "algebra_dimension": 4
+        },
+        {
+          "s": 4,
+          "mu": 61,
+          "lambda": 57,
+          "algebra_dimension": 4
+        }
+      ]
+    },
+    {
+      "p": 3,
+      "q": 4,
+      "prime": 53,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 25,
+          "lambda": 49,
+          "algebra_dimension": 9
+        },
+        {
+          "s": 3,
+          "mu": 38,
+          "lambda": 44,
+          "algebra_dimension": 9
+        },
+        {
+          "s": 4,
+          "mu": 41,
+          "lambda": 16,
+          "algebra_dimension": 9
+        }
+      ]
+    },
+    {
+      "p": 3,
+      "q": 5,
+      "prime": 71,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 30,
+          "lambda": 32,
+          "algebra_dimension": 9
+        },
+        {
+          "s": 3,
+          "mu": 48,
+          "lambda": 30,
+          "algebra_dimension": 9
+        },
+        {
+          "s": 4,
+          "mu": 27,
+          "lambda": 30,
+          "algebra_dimension": 9
+        }
+      ]
+    },
+    {
+      "p": 3,
+      "q": 7,
+      "prime": 113,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 15,
+          "lambda": 112,
+          "algebra_dimension": 9
+        },
+        {
+          "s": 3,
+          "mu": 93,
+          "lambda": 95,
+          "algebra_dimension": 9
+        },
+        {
+          "s": 4,
+          "mu": 7,
+          "lambda": 1,
+          "algebra_dimension": 9
+        }
+      ]
+    },
+    {
+      "p": 3,
+      "q": 8,
+      "prime": 113,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 100,
+          "lambda": 30,
+          "algebra_dimension": 9
+        },
+        {
+          "s": 3,
+          "mu": 55,
+          "lambda": 106,
+          "algebra_dimension": 9
+        },
+        {
+          "s": 4,
+          "mu": 9,
+          "lambda": 109,
+          "algebra_dimension": 9
+        }
+      ]
+    },
+    {
+      "p": 4,
+      "q": 5,
+      "prime": 101,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 96,
+          "lambda": 36,
+          "algebra_dimension": 16
+        },
+        {
+          "s": 3,
+          "mu": 82,
+          "lambda": 87,
+          "algebra_dimension": 16
+        },
+        {
+          "s": 4,
+          "mu": 21,
+          "lambda": 84,
+          "algebra_dimension": 16
+        }
+      ]
+    },
+    {
+      "p": 4,
+      "q": 7,
+      "prime": 127,
+      "samples": [
+        {
+          "s": 3,
+          "mu": 75,
+          "lambda": 107,
+          "algebra_dimension": 16
+        },
+        {
+          "s": 4,
+          "mu": 63,
+          "lambda": 1,
+          "algebra_dimension": 16
+        },
+        {
+          "s": 5,
+          "mu": 66,
+          "lambda": 1,
+          "algebra_dimension": 16
+        }
+      ]
+    },
+    {
+      "p": 5,
+      "q": 6,
+      "prime": 127,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 100,
+          "lambda": 64,
+          "algebra_dimension": 25
+        },
+        {
+          "s": 3,
+          "mu": 45,
+          "lambda": 94,
+          "algebra_dimension": 25
+        },
+        {
+          "s": 4,
+          "mu": 25,
+          "lambda": 32,
+          "algebra_dimension": 25
+        }
+      ]
+    },
+    {
+      "p": 5,
+      "q": 7,
+      "prime": 197,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 5,
+          "lambda": 178,
+          "algebra_dimension": 25
+        },
+        {
+          "s": 3,
+          "mu": 118,
+          "lambda": 114,
+          "algebra_dimension": 25
+        },
+        {
+          "s": 4,
+          "mu": 160,
+          "lambda": 164,
+          "algebra_dimension": 25
+        }
+      ]
+    },
+    {
+      "p": 5,
+      "q": 8,
+      "prime": 193,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 110,
+          "lambda": 108,
+          "algebra_dimension": 25
+        },
+        {
+          "s": 3,
+          "mu": 3,
+          "lambda": 1,
+          "algebra_dimension": 25
+        },
+        {
+          "s": 4,
+          "mu": 46,
+          "lambda": 84,
+          "algebra_dimension": 25
+        }
+      ]
+    },
+    {
+      "p": 6,
+      "q": 7,
+      "prime": 197,
+      "samples": [
+        {
+          "s": 2,
+          "mu": 42,
+          "lambda": 6,
+          "algebra_dimension": 36
+        },
+        {
+          "s": 3,
+          "mu": 29,
+          "lambda": 33,
+          "algebra_dimension": 36
+        },
+        {
+          "s": 4,
+          "mu": 127,
+          "lambda": 36,
+          "algebra_dimension": 36
+        }
+      ]
+    }
+  ],
+  "symbolic_T35": {
+    "coefficient_ring": "Q(tau)(s), tau^2=tau+1",
+    "identities": "PASS",
+    "mu": "s^3",
+    "lambda": "s^-30",
+    "eta": "s^-60",
+    "specialization_s": -1,
+    "specialization_group_order": 120,
+    "d_mu_at_minus1": 3,
+    "d_lambda_at_minus1": 30
+  },
+  "symbolic_whitehead": {
+    "boundary_commutator": true,
+    "longitude_word_eigenvalue": true,
+    "rank_one_meridian": true,
+    "method": "rational polynomial remainder modulo R, with a=mu*d"
+  },
+  "finite_whitehead": {
+    "triples_examined": 2976,
+    "valid": [
+      {
+        "prime": 5,
+        "valid_blocks": 0
+      },
+      {
+        "prime": 7,
+        "valid_blocks": 4
+      },
+      {
+        "prime": 11,
+        "valid_blocks": 64
+      },
+      {
+        "prime": 13,
+        "valid_blocks": 88
+      }
+    ]
+  },
+  "assurance": "Exact controls for a written working proof; no independent full-source audit, formal verification, novelty or full MRC claim",
+  "input_sha256": {
+    "verify_torus_whitehead.py": "9a6c8b3549d1f19a8fcfc94e29f0f1f18088df32cbe4c94801f7a9c67f6fb966",
+    "torus_whitehead_plan.json": "c2ca3c5600b5ad0ed69c5db4f046e78189d6ae5fc4ab617127f5dab850da34e5",
+    "quadratic_integer_lifts.py": "6826d7b043e684cd48c7c60f32edf82e78cb2bbd9a63e424b1de91da3c57ddd5",
+    "TORUS_WHITEHEAD_PERIPHERAL_CURVES.tex": "225f2aee20bd15a0766fc732326633188d4ddba46d1d8f14b07a4ad984b3e96d",
+    "torus_whitehead_source_audit.json": "0b7d4f733b1efb6bbdf31c38c2482cbcb3a17d84f2731374f0b5b9d434d371a2",
+    "sources/cornwell-knot-groups-v5.pdf": "cf6cb851e1b4748b89dcfcf3608f5a261309f6d1a73ef447b8c0fd88cab1acc6",
+    "sources/cornwell-kch-v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+    "sources/whitehead-v1.pdf": "50831e7525fa71bed1c3eba7d5cf27b79af86f52f54002e29b90b28e64464dbd"
+  }
+}

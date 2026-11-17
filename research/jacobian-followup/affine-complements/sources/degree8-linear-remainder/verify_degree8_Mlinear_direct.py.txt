@@ -1,0 +1,10 @@
+from sage.all import *
+from pathlib import Path
+import json,gzip,time
+beg=time.monotonic()
+for k in [2,4]:
+ d=json.loads(gzip.decompress(Path('/tmp/degree8_Mlinear_unit_pending_'+str(k)+'.json.gz').read_bytes()));v=json.loads(Path('/tmp/degree8_Mlinear_inverse_'+str(k)+'.json').read_text());T=PolynomialRing(QQ,'t');K=NumberField(T(d['P4']),'t');t=K.gen();A=PolynomialRing(K,names=d['variables'],order='degrevlex');G=[A(g) for g in d['GB']];e5=A(d['reduced_E5']);U=sum(K([QQ(v[4*i+j]) for j in range(4)])*prod(a**e for a,e in zip(A.gens(),ex)) for i,ex in enumerate(d['basis_exponents']))
+ print('start direct exact inverse identity',k,time.monotonic()-beg,flush=True)
+ assert (U*e5-1).reduce(G)==0
+ d['inverse_polynomial']=str(U);d.pop('multiplication_matrix_columns');d['inverse_field_coefficients']=[[v[4*i+j] for j in range(4)] for i in range(35)]
+ Path('/tmp/degree8_Mlinear_certificate_'+str(k)+'.json.gz').write_bytes(gzip.compress(json.dumps(d,indent=2).encode(),mtime=0));print('PASS direct exact inverse normal form identity',k,time.monotonic()-beg,flush=True)

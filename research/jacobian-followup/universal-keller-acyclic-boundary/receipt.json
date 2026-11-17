@@ -1,0 +1,1139 @@
+{
+  "schema_version": 1,
+  "result": "pass",
+  "check_count": 274,
+  "checks": [
+    "k2 Qzero polynomial shear preserves cover",
+    "k2 Qzero polynomial shear inverse",
+    "k2 Qzero entire source maps into target",
+    "k2 Qzero actual cyclic source-target equivariance",
+    "k2 Qzero coarse quotient Jacobian identity",
+    "k2 Qzero b polynomial identity",
+    "k2 Qzero vertical rank one target lies on surface",
+    "k2 Qzero vertical rank one complete quotient",
+    "k2 Qzero vertical rank two target lies on surface",
+    "k2 Qzero vertical rank two complete quotient",
+    "k2 Qzero partial omitted curve target lies on surface",
+    "k2 Qzero partial omitted curve complete quotient",
+    "k2 Qzero complete cover fibre target lies on surface",
+    "k2 Qzero full marked fibre has fixed u,v and w^k=c^k",
+    "k2 Qzero complete cover fibre complete quotient",
+    "k2 Qone polynomial shear preserves cover",
+    "k2 Qone polynomial shear inverse",
+    "k2 Qone entire source maps into target",
+    "k2 Qone actual cyclic source-target equivariance",
+    "k2 Qone coarse quotient Jacobian identity",
+    "k2 Qone b polynomial identity",
+    "k2 Qone vertical rank one target lies on surface",
+    "k2 Qone vertical rank one complete quotient",
+    "k2 Qone vertical rank two target lies on surface",
+    "k2 Qone vertical rank two complete quotient",
+    "k2 Qone partial omitted curve target lies on surface",
+    "k2 Qone partial omitted curve complete quotient",
+    "k2 Qone complete cover fibre target lies on surface",
+    "k2 Qone full marked fibre has fixed u,v and w^k=c^k",
+    "k2 Qone complete cover fibre complete quotient",
+    "k2 Qone empty prescribed point target lies on surface",
+    "k2 Qone empty prescribed point complete quotient",
+    "k2 Q1 whole source etaleness ideal",
+    "k2 Qtwo_omissions polynomial shear preserves cover",
+    "k2 Qtwo_omissions polynomial shear inverse",
+    "k2 Qtwo_omissions entire source maps into target",
+    "k2 Qtwo_omissions actual cyclic source-target equivariance",
+    "k2 Qtwo_omissions coarse quotient Jacobian identity",
+    "k2 Qtwo_omissions b polynomial identity",
+    "k2 Qtwo_omissions vertical rank one target lies on surface",
+    "k2 Qtwo_omissions vertical rank one complete quotient",
+    "k2 Qtwo_omissions vertical rank two target lies on surface",
+    "k2 Qtwo_omissions vertical rank two complete quotient",
+    "k2 Qtwo_omissions partial omitted curve target lies on surface",
+    "k2 Qtwo_omissions partial omitted curve complete quotient",
+    "k2 Qtwo_omissions complete cover fibre target lies on surface",
+    "k2 Qtwo_omissions full marked fibre has fixed u,v and w^k=c^k",
+    "k2 Qtwo_omissions complete cover fibre complete quotient",
+    "k2 Qtwo_omissions empty prescribed point target lies on surface",
+    "k2 Qtwo_omissions empty prescribed point complete quotient",
+    "k2 Qtwo_omissions empty prescribed point target lies on surface",
+    "k2 Qtwo_omissions empty prescribed point complete quotient",
+    "k3 Qzero polynomial shear preserves cover",
+    "k3 Qzero polynomial shear inverse",
+    "k3 Qzero entire source maps into target",
+    "k3 Qzero actual cyclic source-target equivariance",
+    "k3 Qzero coarse quotient Jacobian identity",
+    "k3 Qzero b polynomial identity",
+    "k3 Qzero vertical rank one target lies on surface",
+    "k3 Qzero vertical rank one complete quotient",
+    "k3 Qzero vertical rank two target lies on surface",
+    "k3 Qzero vertical rank two complete quotient",
+    "k3 Qzero partial omitted curve target lies on surface",
+    "k3 Qzero partial omitted curve complete quotient",
+    "k3 Qzero complete cover fibre target lies on surface",
+    "k3 Qzero full marked fibre has fixed u,v and w^k=c^k",
+    "k3 Qzero complete cover fibre complete quotient",
+    "k3 Qone polynomial shear preserves cover",
+    "k3 Qone polynomial shear inverse",
+    "k3 Qone entire source maps into target",
+    "k3 Qone actual cyclic source-target equivariance",
+    "k3 Qone coarse quotient Jacobian identity",
+    "k3 Qone b polynomial identity",
+    "k3 Qone vertical rank one target lies on surface",
+    "k3 Qone vertical rank one complete quotient",
+    "k3 Qone vertical rank two target lies on surface",
+    "k3 Qone vertical rank two complete quotient",
+    "k3 Qone partial omitted curve target lies on surface",
+    "k3 Qone partial omitted curve complete quotient",
+    "k3 Qone complete cover fibre target lies on surface",
+    "k3 Qone full marked fibre has fixed u,v and w^k=c^k",
+    "k3 Qone complete cover fibre complete quotient",
+    "k3 Qone empty prescribed point target lies on surface",
+    "k3 Qone empty prescribed point complete quotient",
+    "k3 Q1 whole source etaleness ideal",
+    "k3 Qtwo_omissions polynomial shear preserves cover",
+    "k3 Qtwo_omissions polynomial shear inverse",
+    "k3 Qtwo_omissions entire source maps into target",
+    "k3 Qtwo_omissions actual cyclic source-target equivariance",
+    "k3 Qtwo_omissions coarse quotient Jacobian identity",
+    "k3 Qtwo_omissions b polynomial identity",
+    "k3 Qtwo_omissions vertical rank one target lies on surface",
+    "k3 Qtwo_omissions vertical rank one complete quotient",
+    "k3 Qtwo_omissions vertical rank two target lies on surface",
+    "k3 Qtwo_omissions vertical rank two complete quotient",
+    "k3 Qtwo_omissions partial omitted curve target lies on surface",
+    "k3 Qtwo_omissions partial omitted curve complete quotient",
+    "k3 Qtwo_omissions complete cover fibre target lies on surface",
+    "k3 Qtwo_omissions full marked fibre has fixed u,v and w^k=c^k",
+    "k3 Qtwo_omissions complete cover fibre complete quotient",
+    "k3 Qtwo_omissions empty prescribed point target lies on surface",
+    "k3 Qtwo_omissions empty prescribed point complete quotient",
+    "k3 Qtwo_omissions empty prescribed point target lies on surface",
+    "k3 Qtwo_omissions empty prescribed point complete quotient",
+    "k4 Qzero polynomial shear preserves cover",
+    "k4 Qzero polynomial shear inverse",
+    "k4 Qzero entire source maps into target",
+    "k4 Qzero actual cyclic source-target equivariance",
+    "k4 Qzero coarse quotient Jacobian identity",
+    "k4 Qzero b polynomial identity",
+    "k4 Qzero vertical rank one target lies on surface",
+    "k4 Qzero vertical rank one complete quotient",
+    "k4 Qzero vertical rank two target lies on surface",
+    "k4 Qzero vertical rank two complete quotient",
+    "k4 Qzero partial omitted curve target lies on surface",
+    "k4 Qzero partial omitted curve complete quotient",
+    "k4 Qzero complete cover fibre target lies on surface",
+    "k4 Qzero full marked fibre has fixed u,v and w^k=c^k",
+    "k4 Qzero complete cover fibre complete quotient",
+    "k4 Qone polynomial shear preserves cover",
+    "k4 Qone polynomial shear inverse",
+    "k4 Qone entire source maps into target",
+    "k4 Qone actual cyclic source-target equivariance",
+    "k4 Qone coarse quotient Jacobian identity",
+    "k4 Qone b polynomial identity",
+    "k4 Qone vertical rank one target lies on surface",
+    "k4 Qone vertical rank one complete quotient",
+    "k4 Qone vertical rank two target lies on surface",
+    "k4 Qone vertical rank two complete quotient",
+    "k4 Qone partial omitted curve target lies on surface",
+    "k4 Qone partial omitted curve complete quotient",
+    "k4 Qone complete cover fibre target lies on surface",
+    "k4 Qone full marked fibre has fixed u,v and w^k=c^k",
+    "k4 Qone complete cover fibre complete quotient",
+    "k4 Qone empty prescribed point target lies on surface",
+    "k4 Qone empty prescribed point complete quotient",
+    "k4 Qtwo_omissions polynomial shear preserves cover",
+    "k4 Qtwo_omissions polynomial shear inverse",
+    "k4 Qtwo_omissions entire source maps into target",
+    "k4 Qtwo_omissions actual cyclic source-target equivariance",
+    "k4 Qtwo_omissions coarse quotient Jacobian identity",
+    "k4 Qtwo_omissions b polynomial identity",
+    "k4 Qtwo_omissions vertical rank one target lies on surface",
+    "k4 Qtwo_omissions vertical rank one complete quotient",
+    "k4 Qtwo_omissions vertical rank two target lies on surface",
+    "k4 Qtwo_omissions vertical rank two complete quotient",
+    "k4 Qtwo_omissions partial omitted curve target lies on surface",
+    "k4 Qtwo_omissions partial omitted curve complete quotient",
+    "k4 Qtwo_omissions complete cover fibre target lies on surface",
+    "k4 Qtwo_omissions full marked fibre has fixed u,v and w^k=c^k",
+    "k4 Qtwo_omissions complete cover fibre complete quotient",
+    "k4 Qtwo_omissions empty prescribed point target lies on surface",
+    "k4 Qtwo_omissions empty prescribed point complete quotient",
+    "k4 Qtwo_omissions empty prescribed point target lies on surface",
+    "k4 Qtwo_omissions empty prescribed point complete quotient",
+    "k5 Qzero polynomial shear preserves cover",
+    "k5 Qzero polynomial shear inverse",
+    "k5 Qzero entire source maps into target",
+    "k5 Qzero actual cyclic source-target equivariance",
+    "k5 Qzero coarse quotient Jacobian identity",
+    "k5 Qzero b polynomial identity",
+    "k5 Qzero vertical rank one target lies on surface",
+    "k5 Qzero vertical rank one complete quotient",
+    "k5 Qzero vertical rank two target lies on surface",
+    "k5 Qzero vertical rank two complete quotient",
+    "k5 Qzero partial omitted curve target lies on surface",
+    "k5 Qzero partial omitted curve complete quotient",
+    "k5 Qzero complete cover fibre target lies on surface",
+    "k5 Qzero full marked fibre has fixed u,v and w^k=c^k",
+    "k5 Qzero complete cover fibre complete quotient",
+    "k5 Qone polynomial shear preserves cover",
+    "k5 Qone polynomial shear inverse",
+    "k5 Qone entire source maps into target",
+    "k5 Qone actual cyclic source-target equivariance",
+    "k5 Qone coarse quotient Jacobian identity",
+    "k5 Qone b polynomial identity",
+    "k5 Qone vertical rank one target lies on surface",
+    "k5 Qone vertical rank one complete quotient",
+    "k5 Qone vertical rank two target lies on surface",
+    "k5 Qone vertical rank two complete quotient",
+    "k5 Qone partial omitted curve target lies on surface",
+    "k5 Qone partial omitted curve complete quotient",
+    "k5 Qone complete cover fibre target lies on surface",
+    "k5 Qone full marked fibre has fixed u,v and w^k=c^k",
+    "k5 Qone complete cover fibre complete quotient",
+    "k5 Qone empty prescribed point target lies on surface",
+    "k5 Qone empty prescribed point complete quotient",
+    "k5 Qtwo_omissions polynomial shear preserves cover",
+    "k5 Qtwo_omissions polynomial shear inverse",
+    "k5 Qtwo_omissions entire source maps into target",
+    "k5 Qtwo_omissions actual cyclic source-target equivariance",
+    "k5 Qtwo_omissions coarse quotient Jacobian identity",
+    "k5 Qtwo_omissions b polynomial identity",
+    "k5 Qtwo_omissions vertical rank one target lies on surface",
+    "k5 Qtwo_omissions vertical rank one complete quotient",
+    "k5 Qtwo_omissions vertical rank two target lies on surface",
+    "k5 Qtwo_omissions vertical rank two complete quotient",
+    "k5 Qtwo_omissions partial omitted curve target lies on surface",
+    "k5 Qtwo_omissions partial omitted curve complete quotient",
+    "k5 Qtwo_omissions complete cover fibre target lies on surface",
+    "k5 Qtwo_omissions full marked fibre has fixed u,v and w^k=c^k",
+    "k5 Qtwo_omissions complete cover fibre complete quotient",
+    "k5 Qtwo_omissions empty prescribed point target lies on surface",
+    "k5 Qtwo_omissions empty prescribed point complete quotient",
+    "k5 Qtwo_omissions empty prescribed point target lies on surface",
+    "k5 Qtwo_omissions empty prescribed point complete quotient",
+    "prescribed m1 polynomial interpolation identity",
+    "prescribed m1 actual empty fibre at a1",
+    "prescribed m1 distinct roots and omission components",
+    "prescribed m2 polynomial interpolation identity",
+    "prescribed m2 actual empty fibre at a1",
+    "prescribed m2 actual empty fibre at a2",
+    "prescribed m2 distinct roots and omission components",
+    "prescribed m3 polynomial interpolation identity",
+    "prescribed m3 actual empty fibre at a1",
+    "prescribed m3 actual empty fibre at a2",
+    "prescribed m3 actual empty fibre at a3",
+    "prescribed m3 distinct roots and omission components",
+    "prescribed m4 polynomial interpolation identity",
+    "prescribed m4 actual empty fibre at a1",
+    "prescribed m4 actual empty fibre at a2",
+    "prescribed m4 actual empty fibre at a3",
+    "prescribed m4 actual empty fibre at a4",
+    "prescribed m4 distinct roots and omission components",
+    "whole quadratic twisted family has exactly the torsor marked fibre",
+    "whole cyclic fixed scheme has two disjoint components",
+    "quadratic moved boundary intersection has two points",
+    "quadratic moved boundary maps to the unique omitted point",
+    "even symmetric rank2 explicit 2-derangement",
+    "even symmetric rank4 explicit 2-derangement",
+    "even symmetric rank6 explicit 2-derangement",
+    "even symmetric rank8 explicit 2-derangement",
+    "even symmetric rank10 explicit 2-derangement",
+    "even symmetric rank12 explicit 2-derangement",
+    "even symmetric rank14 explicit 2-derangement",
+    "even symmetric rank16 explicit 2-derangement",
+    "even symmetric rank18 explicit 2-derangement",
+    "even symmetric rank20 explicit 2-derangement",
+    "even symmetric rank22 explicit 2-derangement",
+    "even symmetric rank24 explicit 2-derangement",
+    "even symmetric rank26 explicit 2-derangement",
+    "even symmetric rank28 explicit 2-derangement",
+    "even symmetric rank30 explicit 2-derangement",
+    "even symmetric rank32 explicit 2-derangement",
+    "even symmetric rank34 explicit 2-derangement",
+    "even symmetric rank36 explicit 2-derangement",
+    "even symmetric rank38 explicit 2-derangement",
+    "even symmetric rank40 explicit 2-derangement",
+    "even symmetric rank42 explicit 2-derangement",
+    "even symmetric rank44 explicit 2-derangement",
+    "even symmetric rank46 explicit 2-derangement",
+    "even symmetric rank48 explicit 2-derangement",
+    "even symmetric rank50 explicit 2-derangement",
+    "even symmetric rank52 explicit 2-derangement",
+    "even symmetric rank54 explicit 2-derangement",
+    "even symmetric rank56 explicit 2-derangement",
+    "even symmetric rank58 explicit 2-derangement",
+    "even symmetric rank60 explicit 2-derangement",
+    "even symmetric rank62 explicit 2-derangement",
+    "even symmetric rank64 explicit 2-derangement",
+    "cyclic H1 torsion k2 mod2",
+    "cyclic H1 torsion k2 mod3",
+    "cyclic H1 torsion k2 mod5",
+    "cyclic H1 torsion k2 mod7",
+    "cyclic H1 torsion k3 mod2",
+    "cyclic H1 torsion k3 mod3",
+    "cyclic H1 torsion k3 mod5",
+    "cyclic H1 torsion k3 mod7",
+    "local source pin jacobian-followup/universal-keller-fixed-fibres/PROOF.md",
+    "local source pin jacobian-followup/universal-keller-smith/PROOF.md",
+    "local source pin jacobian-followup/universal-keller-fixed-fibres/sources/dubouloz-palka-pseudo-planes.html",
+    "local source pin jacobian-followup/universal-keller-fixed-fibres/sources/stacks-kummer.html",
+    "local source pin jacobian-followup/universal-keller-fixed-fibres/sources/theorem-of-the-base.pdf",
+    "primary source pin sources/stacks-purity.html"
+  ],
+  "complete_fibre_controls": [
+    {
+      "degree": 2,
+      "Q": "zero",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "0",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 1,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "zero",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "zero",
+      "stratum": "partial omitted curve",
+      "target": [
+        "4",
+        "0",
+        "2*e"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 1,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "zero",
+      "stratum": "complete cover fibre",
+      "target": [
+        "4",
+        "-1/4",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "one",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "-2",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 1,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "one",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "-1",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "one",
+      "stratum": "partial omitted curve",
+      "target": [
+        "4",
+        "2",
+        "2*e + 8"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 1,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "one",
+      "stratum": "complete cover fibre",
+      "target": [
+        "4",
+        "-1/4",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "one",
+      "stratum": "empty prescribed point",
+      "target": [
+        "-e",
+        "-1",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "two_omissions",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "-3",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 1,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "two_omissions",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "-2",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "two_omissions",
+      "stratum": "partial omitted curve",
+      "target": [
+        "4",
+        "2",
+        "6*e"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 1,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "two_omissions",
+      "stratum": "complete cover fibre",
+      "target": [
+        "4",
+        "-1/4",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "two_omissions",
+      "stratum": "empty prescribed point",
+      "target": [
+        "1",
+        "-1",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 2,
+      "Q": "two_omissions",
+      "stratum": "empty prescribed point",
+      "target": [
+        "2",
+        "-1/2",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 1
+    },
+    {
+      "degree": 3,
+      "Q": "zero",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "0",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "zero",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "zero",
+      "stratum": "partial omitted curve",
+      "target": [
+        "8",
+        "0",
+        "2*e"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "zero",
+      "stratum": "complete cover fibre",
+      "target": [
+        "8",
+        "-1/8",
+        "0"
+      ],
+      "whole_geometric_rank": 3,
+      "Q_quotient_dimension": 6,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "one",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "-3*e - 3",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "one",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "-3*e - 2",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "one",
+      "stratum": "partial omitted curve",
+      "target": [
+        "8",
+        "21*e + 61",
+        "2*e + 16"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "one",
+      "stratum": "complete cover fibre",
+      "target": [
+        "8",
+        "-1/8",
+        "0"
+      ],
+      "whole_geometric_rank": 3,
+      "Q_quotient_dimension": 6,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "one",
+      "stratum": "empty prescribed point",
+      "target": [
+        "-e",
+        "-e - 1",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "two_omissions",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "-9/2",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "two_omissions",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "-7/2",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "two_omissions",
+      "stratum": "partial omitted curve",
+      "target": [
+        "8",
+        "2315/2",
+        "42*e"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "two_omissions",
+      "stratum": "complete cover fibre",
+      "target": [
+        "8",
+        "-1/8",
+        "0"
+      ],
+      "whole_geometric_rank": 3,
+      "Q_quotient_dimension": 6,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "two_omissions",
+      "stratum": "empty prescribed point",
+      "target": [
+        "1",
+        "-1",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 3,
+      "Q": "two_omissions",
+      "stratum": "empty prescribed point",
+      "target": [
+        "2",
+        "-1/2",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "zero",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "0",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "zero",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "zero",
+      "stratum": "partial omitted curve",
+      "target": [
+        "16",
+        "0",
+        "2*e"
+      ],
+      "whole_geometric_rank": 3,
+      "Q_quotient_dimension": 6,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "zero",
+      "stratum": "complete cover fibre",
+      "target": [
+        "16",
+        "-1/16",
+        "0"
+      ],
+      "whole_geometric_rank": 4,
+      "Q_quotient_dimension": 8,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "one",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "-4*e",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "one",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "1 - 4*e",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "one",
+      "stratum": "partial omitted curve",
+      "target": [
+        "16",
+        "1020*e + 4000",
+        "2*e + 32"
+      ],
+      "whole_geometric_rank": 3,
+      "Q_quotient_dimension": 6,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "one",
+      "stratum": "complete cover fibre",
+      "target": [
+        "16",
+        "-1/16",
+        "0"
+      ],
+      "whole_geometric_rank": 4,
+      "Q_quotient_dimension": 8,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "one",
+      "stratum": "empty prescribed point",
+      "target": [
+        "-e",
+        "-e",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "two_omissions",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "-6",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 2,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "two_omissions",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "-5",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "two_omissions",
+      "stratum": "partial omitted curve",
+      "target": [
+        "16",
+        "7596914",
+        "210*e"
+      ],
+      "whole_geometric_rank": 3,
+      "Q_quotient_dimension": 6,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "two_omissions",
+      "stratum": "complete cover fibre",
+      "target": [
+        "16",
+        "-1/16",
+        "0"
+      ],
+      "whole_geometric_rank": 4,
+      "Q_quotient_dimension": 8,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "two_omissions",
+      "stratum": "empty prescribed point",
+      "target": [
+        "1",
+        "-1",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 4,
+      "Q": "two_omissions",
+      "stratum": "empty prescribed point",
+      "target": [
+        "2",
+        "-1/2",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 2
+    },
+    {
+      "degree": 5,
+      "Q": "zero",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "0",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "zero",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 8,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "zero",
+      "stratum": "partial omitted curve",
+      "target": [
+        "32",
+        "0",
+        "2*e"
+      ],
+      "whole_geometric_rank": 4,
+      "Q_quotient_dimension": 16,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "zero",
+      "stratum": "complete cover fibre",
+      "target": [
+        "32",
+        "-1/32",
+        "0"
+      ],
+      "whole_geometric_rank": 5,
+      "Q_quotient_dimension": 20,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "one",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "-5*e**3 - 5*e**2 - 5*e - 5",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "one",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "-5*e**3 - 5*e**2 - 5*e - 4",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 8,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "one",
+      "stratum": "partial omitted curve",
+      "target": [
+        "32",
+        "315*e**3 + 10235*e**2 + 163835*e + 1048571",
+        "2*e + 64"
+      ],
+      "whole_geometric_rank": 4,
+      "Q_quotient_dimension": 16,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "one",
+      "stratum": "complete cover fibre",
+      "target": [
+        "32",
+        "-1/32",
+        "0"
+      ],
+      "whole_geometric_rank": 5,
+      "Q_quotient_dimension": 20,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "one",
+      "stratum": "empty prescribed point",
+      "target": [
+        "-e",
+        "-e**3 - e**2 - e - 1",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "two_omissions",
+      "stratum": "vertical rank one",
+      "target": [
+        "0",
+        "-15/2",
+        "0"
+      ],
+      "whole_geometric_rank": 1,
+      "Q_quotient_dimension": 4,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "two_omissions",
+      "stratum": "vertical rank two",
+      "target": [
+        "0",
+        "-13/2",
+        "0"
+      ],
+      "whole_geometric_rank": 2,
+      "Q_quotient_dimension": 8,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "two_omissions",
+      "stratum": "partial omitted curve",
+      "target": [
+        "32",
+        "1358766346289/2",
+        "930*e"
+      ],
+      "whole_geometric_rank": 4,
+      "Q_quotient_dimension": 16,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "two_omissions",
+      "stratum": "complete cover fibre",
+      "target": [
+        "32",
+        "-1/32",
+        "0"
+      ],
+      "whole_geometric_rank": 5,
+      "Q_quotient_dimension": 20,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "two_omissions",
+      "stratum": "empty prescribed point",
+      "target": [
+        "1",
+        "-1",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 4
+    },
+    {
+      "degree": 5,
+      "Q": "two_omissions",
+      "stratum": "empty prescribed point",
+      "target": [
+        "2",
+        "-1/2",
+        "0"
+      ],
+      "whole_geometric_rank": 0,
+      "Q_quotient_dimension": 0,
+      "cyclotomic_degree": 4
+    }
+  ],
+  "deformation_cases": [
+    {
+      "degree": 2,
+      "Q": "zero",
+      "omission_count": 0
+    },
+    {
+      "degree": 2,
+      "Q": "one",
+      "omission_count": 1
+    },
+    {
+      "degree": 2,
+      "Q": "two_omissions",
+      "omission_count": 2
+    },
+    {
+      "degree": 3,
+      "Q": "zero",
+      "omission_count": 0
+    },
+    {
+      "degree": 3,
+      "Q": "one",
+      "omission_count": 1
+    },
+    {
+      "degree": 3,
+      "Q": "two_omissions",
+      "omission_count": 2
+    },
+    {
+      "degree": 4,
+      "Q": "zero",
+      "omission_count": 0
+    },
+    {
+      "degree": 4,
+      "Q": "one",
+      "omission_count": 1
+    },
+    {
+      "degree": 4,
+      "Q": "two_omissions",
+      "omission_count": 2
+    },
+    {
+      "degree": 5,
+      "Q": "zero",
+      "omission_count": 0
+    },
+    {
+      "degree": 5,
+      "Q": "one",
+      "omission_count": 1
+    },
+    {
+      "degree": 5,
+      "Q": "two_omissions",
+      "omission_count": 2
+    }
+  ],
+  "global_etaleness_certificates": [
+    2,
+    3
+  ],
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "runtime_seconds": 2.868,
+  "sha256": {
+    "PROOF.md": "45c9d1b54746c56bdc54663370420e6c6e0cce5883c5a947cc2290fa7ad1f3ea",
+    "LITERATURE_AND_GAPS.md": "f8e3a08c5def6f9344ec47b0e935f1479551fa4571ed16dcc30d282ca463047a",
+    "verify.py": "b14e7c6c27ab2784e578ce54843e698c113d51aa08a50faa1f607711e7b820c6",
+    "sources.json": "88c85171047b0c0cdd0a2bc391a12b607f8140663d302eab5593688373542b19"
+  },
+  "assurance": "Written all-characteristic unit/Picard Galois lifting, characteristic-zero cohomological consequences, pluricanonical primitive-monodromy stable atomicity, canonical cyclic torsor descent and all-k cover image proofs. Exact bounded controls certify polynomial shears, complete fibre ideals including empty fibres, two global etaleness ideals and finite omission/component examples. They do not formalize purity, compactification, etale cohomology, arbitrary-m topology or global equivariant gluing. Construction credited to Dubouloz-Palka. No independent whole-proof replay, formal verification, external review or novelty certification."
+}

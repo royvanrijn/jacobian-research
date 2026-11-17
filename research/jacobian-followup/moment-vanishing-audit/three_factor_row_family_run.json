@@ -1,0 +1,9 @@
+{
+  "terminal": true,
+  "completed": false,
+  "status": "UNKNOWN: CPU-bounded Smith calculation terminated at degree10 after degree0..9 checkpoints",
+  "cpu_limit_seconds": 35,
+  "memory_limit_MiB": 768,
+  "checker_sha256": "b57844e103db6033d22a06dfa1f4ceae6ac5c67653c42e413f3875a7b10ca350",
+  "partial_sha256": "660e248d55be29ab5b8b3afbf02fb91940733208504e3c24a1f2545ed5fb021b"
+}

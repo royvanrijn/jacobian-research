@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T06:32:35.712008+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UANATIVE2GEN1",
+    "UAAFFINER1",
+    "UASIGFIELD1",
+    "UAETALEGAUGE1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAALLATOM1",
+    "UAM1",
+    "UAMARKEDDEF1",
+    "UAPROFILE1",
+    "UARETURNESC1",
+    "UASELFCTRL1",
+    "UASELFFORMAL1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UANATIVE2GEN1",
+    "UAAFFINER1",
+    "UASIGFIELD1",
+    "UAETALEGAUGE1"
+  ],
+  "old_entry_count": 2447,
+  "new_entry_count": 2451,
+  "unchanged_existing_entry_count": 2439,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "af7069b1a82d17f220d07e268001e4857e518ad9d1c73c300c1dd69fb48604a3",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "99440a3d7fc461c0",
+    "UANATIVE2GEN1": "69bead4fde794351",
+    "UAAFFINER1": "6698fc65c26f8a3a",
+    "UASIGFIELD1": "aef68cf326b84b5c",
+    "UAETALEGAUGE1": "cda120806eaf0ac8"
+  },
+  "updated_lessons": [
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "73f29d3f2202428abbf4ed4ee1e5af4c7b9f60f0adae8fa1d194acc5f0835b5b",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "Universal unique two-control native response module, complete syzygies, pole test and exact full two-control determinant equation.",
+    "All-degree affine-r whole native Keller maps reduce identically to retained profiles; the scalar tangent cannot integrate polynomially while staying affine in r.",
+    "Stable Keller normalizer of the individual signal field and its several-block permutation/scaling extension.",
+    "Classical nilpotent/formal source-gauge reduction, marked preservation and all-order source-degree escape for the explicit scalar family."
+  ],
+  "verification_design_note": "56 selected exact controls check module identities, the generic two-control determinant, Wronskian/source jets, stable normalizer identities, literal infinitesimal source lifts and actual tangent non-descent. The general proofs use classical Riemann-Hurwitz and formal etaleness; neither novelty nor universal proof replay is inferred from the controls.",
+  "assurance": "Four written general claims with 56 selected exact controls. No independent whole-proof replay, formal verification, external review or publication-priority certificate. Canonical absolute atomicity remains open."
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-14T15:13:18.529395+00:00",
+  "new_claims": [
+    "UACANCOST1",
+    "UATORUSCOST1",
+    "UAFINITE1",
+    "UAFROBCOST1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "OP-KCOMP"
+  ],
+  "old_entry_count": 1934,
+  "new_entry_count": 1938,
+  "unchanged_existing_entry_count": 1932,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "a0cc044a5f810b331025d4fc3dccd7519b559ac135c8612c58c976e97a896fc6",
+  "changed_scope_fingerprints": {
+    "UACANCOST1": "576fafbc1e15d28e",
+    "UATORUSCOST1": "5fb98430b8d5fc9a",
+    "UAFINITE1": "9700055de75cd2f7",
+    "UAFROBCOST1": "3ca9b67b764a2187",
+    "OP-KDESC": "a10f8831dd0ef43c",
+    "OP-KCOMP": "e918eeb3f3d18357"
+  },
+  "updated_lessons": [
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-KELLER-RECEIVER-LANDING"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC",
+    "WORK-KCOMP"
+  ],
+  "checker_source_sha256": "12118b427084e086c6418ccc4fe3c95bc3955cbb65f88378158c1f604e40b061",
+  "open_problems_closed": [],
+  "assurance": "Written general proofs with bounded exact controls; not independently replayed, formally verified, externally reviewed or certified novel. Unrelated existing entries preserved at this integration snapshot."
+}

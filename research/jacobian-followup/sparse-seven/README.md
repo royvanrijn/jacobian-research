@@ -24,7 +24,8 @@ From the repository root:
 ```
 
 This closes seven-term attainment in the stated normalized degree range.
-The [eight-term successor](../sparse-eight/README.md) also excludes eight
-terms and raises the current normalized lower bound to nine. Unrestricted
-complexity minima remain open.
+The [eight-term successor](../sparse-eight/README.md) preserves the next
+rational exclusion. The [nine-term successor](../sparse-nine/README.md)
+raises the current normalized lower bound to ten and supplies a 49-term
+example. Unrestricted complexity minima remain open.
 

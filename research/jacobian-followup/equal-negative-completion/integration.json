@@ -1,0 +1,26 @@
+{
+  "all_weight111_degree7_maps_closed": false,
+  "both_timeouts_preserved": true,
+  "checker_sha256": "004844894cced427e340ea42bd6262cabc085ff5f3db3de9a4f75c09e9b890c9",
+  "claims": [
+    "KCUB23"
+  ],
+  "general_cstar_I_certificate_used": false,
+  "global3Ddegree_interval": [
+    5,
+    7
+  ],
+  "global_positive_bounds_unchanged": true,
+  "global_profiles_remaining": 20,
+  "goal_complete": false,
+  "proof_sha256": "11fa12fed700432546fcd103b6d4a943dfd898b2fe01ddfdf7713312cd757006",
+  "required_certificate_generators": 98,
+  "required_maximum_multiplier_degree": 8,
+  "required_multiplier_terms": 5868,
+  "scope": "Targeted new-claim schema/dependencies/source hashes, complete stored script-input agreement, five required certificates, four lesson reviews, WORK-GLDC, links and unchanged global counts. Not a whole-repository validation or formal proof.",
+  "shear_control_global_improvement": false,
+  "status": "pass",
+  "strict_weight111_sector_closed": true,
+  "umbrella_state": "open",
+  "validation_sha256": "cec31947e69894d2bcb05ed664fdf877c3e56dae034876795bec880274a5f88b"
+}

@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "degree": 5,
+  "weight": 6,
+  "pole_cutoff": 21,
+  "projection_threshold": -9,
+  "lower_columns": 7476,
+  "rank": 5979,
+  "dimension": 1497,
+  "period": "1",
+  "linear_bad": [],
+  "quadratic_bad": [],
+  "current_bad": [],
+  "bilinear_entries": 5304,
+  "quadratic_entries": 44,
+  "current_polynomial_columns": 686,
+  "potential_basis_checks": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      0
+    ]
+  ],
+  "hashes": {
+    "combined_cocycle.json": "23dbb6cf963a152e6b3735842b67f40af8255ab6acebe634f4abcb8eb6601c44",
+    "degree_5_linear_packet.json": "c12df3dcb18715088f9292eb0bcd4f072bdc96a4d77b3015dc355356757996cb",
+    "verify_degree_category.py": "97dec2afed4f7730b70dbea88ad1596dfaf0bfc9671aa745c88ab6ce6be3dbe3",
+    "verify_transport.py": "5e570bd3d2ed67393f656a3f292e93dbd930fa012684ec7191cd636b576ef304"
+  },
+  "source_hashes": {
+    "research/archive/non-elliptic/scripts/explore_degree_five_quantum_residue.py": "55d53736091e44cb3a41e03743ddd0993d07961d56f0e162c82c29755d1580ff",
+    "research/archive/non-elliptic/scripts/explore_degree_five_a2_subprincipal.py": "b84eccd013a068832dbffabd2b4d8e2547577e39c9845c70c6bdd96830a25fb1",
+    "research/archive/non-elliptic/scripts/verify_degree_five_laurent_quantum_obstruction.py": "6f734d345b6c390a9160843da22c553fa244cc63a4464fa2b31128ac53088867"
+  },
+  "scope": "All finite-X-Laurent category candidate: weight6, lower caps(34,3),(27,2); current caps(24,1),(17,0). Input X>=-21; projected output X>=-9.",
+  "elapsed_seconds": 1.7526879729994107
+}

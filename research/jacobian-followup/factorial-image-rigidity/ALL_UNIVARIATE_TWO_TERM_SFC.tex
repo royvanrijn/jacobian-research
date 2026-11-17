@@ -1,0 +1,372 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{All ordinary one-variable constant-plus-power Strong Factorial families}
+\author{Internal uniform contour proof and exact finite certificates; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+Put
+\[
+ F_{n,m}(t)=\sum_{k=0}^n\binom nk(mk)!t^k,\qquad
+ P_{n,m}(z)=z^nF_{n,m}(1/z),\qquad A_m=(m/e)^m.
+\]
+All Gamma shapes are one and $n,m$ are positive integers. The goal of
+resolving general Factorial and/or unrestricted Strong Factorial remains
+open: this note concerns precisely $A+BY^m$ in one positive exponential
+variable. It does not assert a reduction from arbitrary polynomial supports.
+
+\begin{theorem}\label{thm:all}
+For every $n,m\ge1$, $F_{n,m}$ and $P_{n,m}$ have simple complex roots.
+Consequently $A+BY^m$ satisfies Strong Factorial at every starting index,
+for every positive integer $m$ and every nonzero such complex polynomial.
+\end{theorem}
+The analytic cutoff is $n=10000$, uniformly over all exponents after using
+the elementary large-exponent criterion. The finite part reuses the
+registered prime-power and exponent-six results and verifies all other
+necessary pairs below this cutoff exactly. No density theorem is used.
+
+\section{The uniform analytic theorem}
+\begin{theorem}\label{thm:analytic}
+Let $n\ge10000$ and $6\le m\le\sqrt n$. Every root satisfies
+\[
+             \frac12<\left|\frac{z}{n^m A_m}\right|<\frac{21}{10},
+                                                               \tag{1}
+\]
+and every root is simple. The estimates below are uniform in both integers.
+\end{theorem}
+For $v=z/(n^m A_m)$, set
+\[
+ I_{n,m}(v)=\int_0^\infty(A_mv+s^m)^ne^{-ns}\,ds
+           =K_{n,m}(v)+J_{n,m}(v),                    \tag{2}
+\]
+where the two intervals are $[0,m/2]$ and $[m/2,\infty)$.
+Then $P_{n,m}(n^mA_mv)=n^{mn+1}I_{n,m}(v)$.
+Both pieces in (2) are polynomials in $v$; the decomposition is exact.
+We abbreviate them as $K,J$, and set $B=11/5$, $R=21/10$, $\delta=1/25$.
+
+\subsection{The outer coefficient bound}
+For $\theta=k/n$, elementary entropy and factorial integral estimates give
+\[
+ \frac{[\binom nk(mk)!]^{1/k}}{n^mA_m}
+ \le q_m(\theta)(emk)^{1/k},\quad
+ q_m(\theta)=\theta^{m-1}(1-\theta)^{-(1-\theta)/\theta}.
+                                                               \tag{3}
+\]
+The endpoints are continuous limits. Since $m\ge6$, $q_m\le q_6<300/299$.
+The last bound is proved in the
+\href{EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex}{exponent-six proof}:
+$\log q_6$ has derivative numerator $6\theta+\log(1-\theta)$;
+its maximum is at $\theta=1-u$, $0<u<1/300$, where
+$\log q_6=5\log(1-u)+6u<u$.
+
+If $k\ge n/10$, $m\le\sqrt n$ yields
+\[
+ \log (emk)^{1/k}\le\frac{10(1+\tfrac32\log n)}n
+ <\frac2{125}\quad(n\ge10000).
+\]
+The expression decreases in $n$, and $\log10000<10$.
+Thus $(emk)^{1/k}<125/123$, and
+$(300/299)(125/123)<21/20$.
+If $k<n/10$, use instead $\binom nk^{1/k}\le en/k$ and
+$(emk)^{1/k}\le em$ to bound the left side of (3) by
+$e^2m\theta^{m-1}<9m/10^{m-1}\le54/10^5<21/20$.
+For the elementary inequality just used, $k\le2^{k-1}\le(em)^{k-1}$.
+Every coefficient therefore has $k$th root less than
+$(21/20)n^mA_m$. A finite geometric-series bound excludes every
+$|z|\ge Rn^mA_m$.
+
+\subsection{A single large saddle on a full disk}
+For every $|v|\le B$, the equation
+\[
+                 A_mv=s^{m-1}(m-s)                    \tag{4}
+\]
+has a unique solution $s_0=\alpha+i\beta$ with $|s_0-m|<\delta$.
+On the circle, the ratio of the lower bound to $A_m$ is
+\[
+ \delta\frac{e^m}m(1-\delta/m)^{m-1}
+ \ge\delta(1-\delta)\frac{e^m}m>B.
+\]
+Bernoulli's inequality supplies the middle bound. The last expression
+increases for $m\ge6$, and at six the rational replacement $e>27/10$
+already proves the strict inequality. Rouch\'e therefore applies.
+The saddle is simple and depends analytically on $v$ on a neighborhood
+of the closed disk. Near it, use
+\[
+ \Phi(s,v)=m\log s+\log(1+A_mv/s^m)-s,\quad
+ \Phi_0=\Phi(s_0,v),\quad a=1-(m-1)/s_0.
+\]
+Then $\Phi_s(s_0,v)=0$, $\Phi_{ss}(s_0,v)=-a$, and
+\[
+ \operatorname{Re}a>\frac9{10m},\qquad |a|<\frac{11}{10m}. \tag{5}
+\]
+These follow from $(1-\delta)/(m-\delta)$ and
+$(1+\delta)/(m-\delta)$, respectively.
+Put $G_m(x)=m\log x-x$ and $S=\operatorname{Re}\Phi_0$.
+Taylor's inequality for $\log(1+u)$ gives
+\[
+ S>G_m(m)-1/100=\log A_m-1/100,                        \tag{6}
+\]
+since the loss is at most
+$\delta/m+\delta^2/[2m(1-\delta/6)]$, whose maximum at $m=6$ is
+less than $1/100$.
+
+\subsection{The complete uniform contour estimate}
+\begin{lemma}\label{lem:J}
+For $n\ge10000,m\ge6$, on $|v|\le B$,
+\[
+ J(v)=U(v)(1+\varepsilon(v)),\quad
+ U=e^{n\Phi_0}\sqrt{2\pi/(na)},\quad
+ |\varepsilon|<\frac{22}{\sqrt{mn}}<\frac1{10}.         \tag{7}
+\]
+On $|v|\le R$, this gives
+\[
+ \left|\frac{J'}J-n\frac{m-s_0}{mv}\right|<3.          \tag{8}
+\]
+No condition $m\le\sqrt n$ is needed for this lemma.
+\end{lemma}
+\begin{proof}
+Deform $[m/2,\infty)$ to its vertical translate by $i\beta$, keeping the
+vertical segment at $m/2$. The integrand is entire and the closing side
+at positive infinity tends to zero. On the local horizontal interval
+$s=s_0+t$, $|t|\le r=m/8$, we have $|s|>6m/7$.
+Put $q_t=B(35/81)^6$. Differentiating the absolutely convergent
+$\log(1+A_mv/s^m)$ series shows that
+\[
+ m^2|\Phi_{sss}|
+ \le(7/6)^3\left[2+
+ \frac{36q_t(1+q_t)}{(1-q_t)^3}
+ +\frac{18q_t}{(1-q_t)^2}+\frac{2q_t}{1-q_t}\right]<8. \tag{9}
+\]
+Indeed $|A_mv/s^m|\le B(7/(6e))^m\le B(35/81)^m$.
+The quantities $m^2(35/81)^m$, $m(35/81)^m$ and $(35/81)^m$
+decrease for $m\ge6$, so their value at six bounds the derivative series.
+
+The Taylor remainder is at most $4|t|^3/(3m^2)$.
+Using (5), the difference between the local integral and its Gaussian is
+at most
+\[
+ \frac{4ne^{nS}}{3m^2}\int_{\mathbb R}|t|^3
+ e^{-17nt^2/(60m)}dt
+ =\frac{4800e^{nS}}{289n}<\frac{17e^{nS}}n.
+\]
+Completing the Gaussian costs at most
+$[160/(9n)]e^{nS-9mn/1280}<18e^{nS-9mn/1280}/n$.
+Its complete value $U$ has modulus $>2\sqrt{m/n}\,e^{nS}$ by (5).
+
+We bound every remaining contour piece. On the horizontal line
+$s=x+i\beta$, $2m/3\le x\le4m/3$, put $q_c=B(5/9)^6$.
+The real second derivative satisfies
+\[
+ \frac{d^2}{dx^2}\operatorname{Re}\Phi(x+i\beta,v)
+ \le-\frac m{x^2}\left[
+ \frac{1-10^{-4}}{(1+10^{-4})^2}
+ -\frac{6q_c}{(1-q_c)^2}-\frac{q_c}{1-q_c}\right]
+ <-\frac m{3x^2}\le-\frac3{16m}.                      \tag{10}
+\]
+Here $|\beta|/x\le1/100$,
+$|A_mv/s^m|\le B(3/(2e))^m\le B(5/9)^m$, and
+$m(5/9)^m$ decreases for $m\ge6$.
+The first derivative vanishes at $x=\alpha$. Thus the height is at most
+$S-3(x-\alpha)^2/(32m)$. Outside $|x-\alpha|\le m/8$, its loss is
+$>m/1000$. The length is less than $m$, giving
+$m e^{nS-mn/1000}$.
+For $x\ge4m/3$, put $q_f=B(5/18)^6$; the derivative is bounded by
+\[
+ \frac{m}{x(1-|A_mv/s^m|)}-1
+ \le\frac{3/4}{1-q_f}-1<-1/5.
+\]
+At $4m/3$ the height loss in (10) is at least
+$(3m/32)(49/150)^2>m/100$. The infinite tail is therefore at most
+$5e^{nS-mn/100}/n$.
+
+On the interval $m/2\le x\le2m/3$, the upper envelope
+$[BA_m+(x+\delta)^m]e^{-x}$ increases: its derivative has the sign of
+$u^{m-1}(m-u)-BA_m>0$ for $u=x+\delta<m-1$.
+The latter map is increasing there and its value at $m/2$ already
+exceeds $BA_m$, since $(e/2)^m>B$ for $m\ge6$.
+Relative to $A_m$, the envelope at $2m/3$ is at most
+\[
+ B e^{-2m/3}+r_\ell^m<e^{-m/50},\qquad
+ r_\ell=(101/150)(141/100).
+\]
+This uses $e^{1/3}<141/100$ and $\delta/m\le1/150$.
+For an exact check valid for all $m\ge6$, multiply by $e^{m/50}$;
+both resulting bases are less than one, and their value at six is bounded by
+$B(10/27)^3+r_\ell^6/(22/25)<1$.
+By (6), the height is below $S-m/100$; this piece has length $m/6$.
+For the vertical segment, the corresponding upper bound relative to
+$A_m$ is
+\[
+ B e^{-m/2}+r_v^m<e^{-m/50},\qquad r_v=38/45,
+\]
+using $e^{1/2}<5/3$. The same decreasing-bases argument at six gives
+$B(10/27)^2+r_v^6/(22/25)<1$. Its length is at most $\delta$, and its
+height is below $S-m/100$.
+All logarithmic charts on the horizontal part are valid: for $x\ge m/2$,
+$|A_mv/s^m|\le B(2/e)^m<1$ already at $m=6$ and then decreases.
+
+Combining all pieces, the error after removing $U$ is at most $e^{nS}$
+times
+\[
+ \frac{40}{n}+m e^{-mn/1000}+(m+\delta)e^{-mn/100}
+ <\frac{44}{n}\quad(n\ge10000,m\ge6).                \tag{11}
+\]
+Use $e^u\ge u^3/6$ on the first exponential and $e^u\ge u^2/2$ on
+the second. After multiplication by $n$, the upper constant is
+$40+6\cdot1000^3/(36\cdot10000^2)
+ +2\cdot100^2(6+\delta)/(36\cdot10000)<44$.
+This proves (7).
+
+The relative error is analytic on a larger disk, since $J$ is a polynomial
+and $U$ is analytic and nonzero. Radius-$1/10$ Cauchy circles give
+$|\varepsilon'|\le220/\sqrt{mn}<1$ on $|v|\le R$.
+Also
+\[
+ \frac{U'}U=n\frac{m-s_0}{mv}-\frac{a'}{2a},\qquad
+ s_0'=\frac{A_m}{m s_0^{m-2}(m-1-s_0)}.
+\]
+Bernoulli's inequality gives
+$|s_0'|\le me^{-m}/(1-\delta)^2<1$, uniformly for $m\ge6$.
+Equation (5) then gives $|a'/(2a)|<1$.
+The logarithmic derivative correction is below $1+10/9<3$, proving (8).
+The removable value at $v=0$ is understood in the phase formula.
+\end{proof}
+
+\subsection{The endpoint, root annulus and simplicity}
+\begin{lemma}\label{lem:K}
+For $m\ge6,n\ge10000$ and $|v|\ge2/5$,
+\[
+ K(v)=\frac{(A_mv)^n}{n}(1+D(v)),\qquad
+ |D|<1/1000,\quad |D'|<1/1000,\quad
+ \left|K'/K-n/v\right|<1.                            \tag{12}
+\]
+\end{lemma}
+\begin{proof}
+For $0\le x\le m/2$,
+\[
+ \log\left(1+\frac{x^m}{(2/5)A_m}\right)\le19x/20.     \tag{13}
+\]
+At the right endpoint this is equivalent to
+$1+(5/2)(e/2)^m<e^{19m/40}$.
+After multiplication by $e^{-19m/40}$, both terms decrease with $m$.
+At $m=6$ the inequality is certified by
+\[
+ 1+(5/2)(49/36)^6<\sum_{j=0}^{12}\frac{(57/20)^j}{j!}<e^{57/20},
+\]
+using $e<49/18$.
+The second base $e^{21/40}/2$ is less than one, since
+$e^{21/40}\le(5/3)(40/39)<2$.
+To extend (13) to the full interval, the derivative of the logarithm
+divided by $x$ has the sign of
+$h(u)=mu/(1+u)-\log(1+u)$.
+It increases on $0\le u\le m-1$. For larger $u$ in the relevant range,
+$mu/(1+u)\ge m-1>19m/40\ge\log(1+u)$.
+Thus that quotient increases and its endpoint bounds it.
+
+As in the exponent-six proof, subtracting the full exponential integral
+and using $|(1+z)^n-1|\le n|z|(1+|z|)^{n-1}$ gives
+\[
+ |D|\le\frac{m!20^{m+1}}{(2/5)A_m n^{m-1}}+e^{-mn/2},\qquad
+ |D'|\le\frac{m!20^{m+1}}{(2/5)^2A_m n^{m-1}}.
+\]
+The elementary bound $m!\le em(m/e)^m$ bounds these expressions by
+$150mn(20/n)^m+e^{-mn/2}$ and $375mn(20/n)^m$.
+Both are maximized at $m=6,n=10000$ and are less than $1/1000$.
+The logarithmic derivative claim follows.
+\end{proof}
+
+For $|v|\le1/2$, the absolute bound is
+$|K|\le(m/2)(A_m/2)^n$. Indeed the maximum of
+$[A_m/2+x^m]e^{-x}$ on $[0,m/2]$ occurs at an endpoint.
+The right endpoint is below $A_m/2$, since
+\[
+ e^{-m/2}+2(e^{1/2}/2)^m
+ <(5/8)^m+2(5/6)^m\le(5/8)^6+2(5/6)^6<1.
+\]
+By (6)--(7), $|J|>(3/2)\sqrt{m/n}\,(A_me^{-1/100})^n$.
+Therefore
+\[
+ \frac{|K|}{|J|}<\frac{\sqrt{mn}}3(50/99)^n<1,
+\]
+when $m\le\sqrt n$ and $n\ge10000$; use $\sqrt{mn}\le n$ and the
+exact comparison $10000(50/99)^{10000}<3$, decreasing thereafter.
+This excludes the inner disk. Combined with (3), it proves (1).
+
+On that entire annulus, $J$ and $K$ are nonzero. At a zero of $I=J+K$,
+\[
+ I'=J(J'/J-K'/K),\qquad
+ \left|\frac{J'}J-\frac{K'}K\right|
+ >\frac{n|s_0|}{m|v|}-4>\frac n3-4>0.                \tag{14}
+\]
+Here $|s_0|/m>149/150$ and $|v|<21/10$.
+Thus every possible zero is simple, proving Theorem~\ref{thm:analytic}.
+The exact interval split and the full-disk contour estimate replace any
+unproved assumption about selecting formal saddle contributions.
+
+\section{Covering every exponent and the complete finite prefix}
+The previously proved
+\href{ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex}{coefficient criterion}
+states $2^m\ge4n^2\Rightarrow F_{n,m}$ squarefree.
+If $n\ge10000$ and it does not apply, then
+\[
+ m<2\log_2(2n)<\sqrt n.
+\]
+For the last inequality put $u=\sqrt n\ge100$:
+$u-2-4\log_2u$ is positive at one hundred and increases, using
+$\log2>1/2$ and $\log_2100<7$.
+Exponents $1\le m\le5$ are already covered by the retained
+\href{PRIME_POWER_TWO_TERM_SFC.tex}{prime-power theorem}, including one.
+Theorem~\ref{thm:analytic} handles all other exponents at these indices.
+Thus the analytic cutoff $10000$ covers every positive exponent.
+
+For $1\le n<10000$, $m\ge30$ satisfies the coefficient criterion;
+$n=1$ is linear at every exponent. Prime powers and $m=1$ are already
+settled, and the full
+\href{EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex}{exponent-six result} is reused.
+The only further necessary exponents are
+\[
+                  10,12,14,15,18,20,21,22,24,26,28.
+\]
+There are exactly $92935$ pairs in this range with $2^m<4n^2$.
+The \href{all_exponent_prefix_certificates.json}{finite certificate file}
+covers every one. For $92900$ pairs, take the preceding prime $q$ and
+$d=n-q$; the file verifies $q>m\max(1,d)$ and gives a modular B\'ezout
+identity for $F_{d,m}$ and its derivative with right side of degree at most
+one. The registered
+\href{QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex}{shifted Newton lemma}
+forces a rational square divisor to reduce into this kernel preserving its
+degree. The kernel degree is at most $35$.
+For the remaining $35$ pairs, a prime $p>mn$ gives the same certificate
+for the full-degree reduction of $F_{n,m}$; their largest index is $126$.
+Every selected prime and every B\'ezout identity is checked exactly.
+
+Finally, any repeated irreducible rational factor has even degree.
+For positive exponential $Y$, $F_{n,m}(t)=\mathbb E(1+tY^m)^n$.
+Even $n$ gives no real root; odd $n$ has strictly positive derivative on
+the real axis, so all real roots are simple. An odd-degree repeated
+rational factor would have a real root. Hence a nonconstant rational
+square divisor has degree at least two, contradicting the degree-at-most-one
+B\'ezout identity after degree-preserving reduction. Every complex repeated
+root supplies a repeated rational factor in characteristic zero.
+This proves the complete finite prefix and Theorem~\ref{thm:all}.
+The corollary follows from $P'_{n+1,m}=(n+1)P_{n,m}$ and
+$\mathcal L((A+BY^m)^n)=B^nP_{n,m}(A/B)$, with one-term cases immediate.
+
+\section{Scope and verification boundary}
+For this ordinary constant-plus-power sequence the exceptional set is now
+empty, so $E_m(X)=D_{\rm all}(X)=0$. The earlier density estimates and
+source-qualified analytic-number-theory routes remain retained evidence,
+but are unnecessary for this direct pointwise result.
+This is not unrestricted Strong Factorial: both-nonconstant monomial
+supports, general polynomial supports and other Gamma shapes are not
+asserted here. In particular it is not a proof of general Factorial.
+The checker verifies rational constants, algebraic identities and every
+finite-prefix B\'ezout certificate. The universal evidence is the full
+analytic proof. No numerical zero scan, priority claim, independent replay,
+formal verification or external review is claimed.
+\end{document}

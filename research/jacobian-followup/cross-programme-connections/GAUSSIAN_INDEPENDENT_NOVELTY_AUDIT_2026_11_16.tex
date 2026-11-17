@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
+\title{Independent novelty audit of the Gaussian/formal programme}
+\author{Internal literature comparison}
+\date{16 November 2026}
+\begin{document}\maketitle
+
+\noindent\textbf{Verdict.} No exact prior statement was located for the full arbitrary-formal-symbol, all-commutative-$\mathbb Q$-algebra safety/affine-cutoff theorem. This is the strongest novelty candidate among the recent packets. The arbitrary-formal first-survival theorem is another candidate. Its convergent-symbol version is already a consequence of classical multivariable Bernstein theory, as the deduction below shows. Basic commutator reductions, rational hyperplane directions, and generalized $b$-function algorithms are prior art. Failure to locate an exact statement is not a proof of originality.
+
+This is a novelty and applicability audit, not independent verification of the full internal proofs. No mathematical ledger entries, proof-assurance flags, peer goals, or peer messages were changed. The existing independent-replay, formal-verification and external-review flags remain false. The user requested leads here to forward themselves.
+
+\section*{Precisely what was compared}
+The canonical internal packets examined are:
+\begin{enumerate}
+\item \texttt{GENERIC\_BERNSTEIN\_EQUATIONS\_AND\_FORMAL\_GAP\_CLOSURE.md}: for any characteristic-zero field, polynomial phase $P$, and zero-constant arbitrary formal symbol $\lambda$, pure identities plus eventual vanishing for every polynomial multiplier imply $T^m(QP^m)=0$ for $m>C\deg Q$, with $T=\lambda(\partial)$.
+\item \texttt{FORMAL\_SAFETY\_OVER\_ALL\_COEFFICIENT\_RINGS.md}: over every commutative $\mathbb Q$-algebra, with arbitrary formal symbol including its constant term, qualitative all-multiplier safety is equivalent to an affine cutoff, to safety after reduction, and to safety over every prime residue field. Purity absorbs the intercept. No Noetherian or bounded-nilradical assumption on the coefficient ring is imposed.
+\item \texttt{BOUNDED\_BERNSTEIN\_STEPS\_AND\_RATIONAL\_SURVIVAL\_SLOPES.md}: for $\tau_k=\min\{j:T^kP^j\ne0\}$, either eventual infinity, or $\tau_k=\rho k+O(1)$ with $\rho\in\mathbb Q_{>0}$, with late pairs on finitely many parallel rational affine lines. This is over fields, with arbitrary formal symbols, without a purity premise.
+\item \texttt{EFFECTIVE\_BERNSTEIN\_SLOPE\_SELECTION\_AND\_CUTOFFS.md}: supplied valid all-index Bernstein data and finitely many original-power evaluations select the actual alternative/slope and give sufficient cutoffs. This does not generate those certificates or verify their all-index truth from finite queries. The packet itself claims no novelty.
+\end{enumerate}
+The bounded-error conclusion for running heights must not be upgraded to one for unsuspended individual heights. Neither these statements nor this audit proves pure-to-safe GVC, or either remaining exceptional Haar MZ statement.
+
+\section*{Prior-art comparison}
+\paragraph{de Bondt: established commutator reduction.}
+\href{https://arxiv.org/abs/1206.2836}{A few remarks on the Generalized Vanishing Conjecture}, Archiv der Mathematik 100 (2013), 533--538, Theorem 1 and Corollary 2, already prove
+\[
+ \Lambda^{m-d}F=0,\quad\deg Q\le d
+ \quad\Longrightarrow\quad\Lambda^m(QF)=0
+\]
+for finite constant-coefficient operators, and reduce all multipliers to fixed powers of the phase. The formal extension needs its own well-definedness argument, but the mechanism should be credited. That paper does not state the new arbitrary-formal eventuality-to-linear-cutoff theorem.
+
+\paragraph{Sabbah and Maisonobe: substantial overlap for convergent symbols.}
+\href{https://www.numdam.org/item/CM_1987__64_2_213_0/}{Sabbah, Proximite evanescente II}, Compositio Mathematica 64 (1987), 213--241, Introduction and Section 1, treats functional equations for sections of holonomic analytic modules. \href{https://ems.press/journals/rsmup/articles/10116774}{Maisonobe, Filtration relative, l'ideal de Bernstein et ses pentes}, Rend. Sem. Mat. Univ. Padova 150 (2023), 81--125, DOI 10.4171/RSMUP/101 (preprint arXiv:1610.03354), explains the product of affine linear forms with nonnegative integer normal vectors and complex intercepts, and identifies minimal slope directions. Regular holonomicity is an additional hypothesis for the geometric identification; the basic product-of-linear-forms assertion is not restricted to regular modules.
+
+Consequently ``rational slopes occur in Bernstein theory'' is not a new discovery. Gyoja's 1993 rationality theorem is additional prior art for analytic scalar-function tuples; it must not be generalized without checking the module hypothesis. We did not obtain and verify a primary-publisher copy of Gyoja's original paper, so no argument here depends on a recalled formulation of it.
+
+\paragraph{Concrete deduction in the convergent setting.}
+Here is a useful, narrower comparison proved from the displayed classical relation. Work over $\mathbb C$, with convergent $\lambda(\xi)$ and polynomial $P$, in the analytic cyclic image of the Fourier exponential module embedded in $E=\mathbb C[x][[\eta]]$. It is holonomic, as an image of the analytification of the algebraic Fourier exponential module. Analytic coefficient actions on $E$ are defined by the same coefficientwise word-length estimate used in the internal formal proof. Put $v_k=\lambda(\xi)^k1$, so $\nu_\eta(v_k)=\tau_k$.
+
+The diagonal multivariable Bernstein relation for $(\lambda,\eta)$ has the form
+\[
+ b(s,z)\lambda^s\eta^z1
+       =A(s,z)\lambda^{s+1}\eta^{z+1}1,
+ \qquad b(s,z)=\prod_\ell(a_\ell s+b_\ell z+c_\ell),
+\]
+where $a_\ell,b_\ell\in\mathbb N$, not both zero, and $c_\ell\in\mathbb C$. The operator has finite differential order and polynomial parameter degree. Expanding its finitely many terms and clearing localization torsion gives, for all sufficiently large integer $k$ and every integer $j$,
+\[
+ b(k,j)\eta^jv_k=A(k,j)\eta^{j+1}v_{k+1}
+\]
+in the actual image localized in $\eta$. This is the same finite-coefficient torsion argument required by the internal proof, not unrestricted specialization of an infinite parameter series. Time torsion vanishes in $E$; sufficiently large existing powers of $\lambda$ kill the finite localization torsion.
+
+In the all-finite alternative set $j=-\tau_{k+1}-1$. The right side is in $E$. By monotonicity $\tau_{k+1}\ge\tau_k$, the left side has a negative time power unless
+\[
+ b(k,-\tau_{k+1}-1)=0.
+\]
+Factors with $b_\ell=0$ can vanish for only finitely many $k$. All remaining possibilities give
+\[
+ \tau_{k+1}=(a_\ell/b_\ell)k+c_\ell/b_\ell-1.
+\]
+Thus the late indices lie on a finite union of lines with rational slopes. An occurring line has rational intercept because it contains an integer pair. After passing a finite threshold, monotonicity forbids moving from a higher slope to a lower slope at consecutive indices. There are only finitely many slopes, so one slope supplies the entire late sequence. Positive operator order excludes slope zero. Hence $\tau_k=\rho k+O(1)$ with rational $\rho>0$, and finite parallel-line support follows, in this convergent setting.
+
+This is our deduction from classical literature, not a claim that Sabbah explicitly formulated the first-survival sequence theorem. It narrows the novelty claim and supplies a possible alternate proof for convergent inputs. It does not establish an arbitrary-nonconvergent-formal multivariable relation.
+
+\paragraph{Do not silently replace formal by analytic.}
+\href{https://arxiv.org/abs/0806.4869}{Bahloul--Oaku, Algorithm for computing local Bernstein--Sato ideals}, 2008 preprint (published as Local Bernstein--Sato ideals: Algorithm and examples, J. Symbolic Comput. 45 (2010), 46--59), Introduction, distinguishes polynomial tuples, analytic tuples, and arbitrary formal tuples. The 2008 preprint explicitly lists nonvanishing for general formal tuples with at least two functions as open at that time. This audit did not establish its current general status. Polynomial-to-formal completion equality for an already polynomial tuple is not a theorem that every formal tuple comes from a polynomial tuple. The current internal proof deliberately uses two successive one-parameter formal Bernstein equations and faithful descent, rather than importing an analytic multivariable theorem. That distinction is material.
+
+\paragraph{Bahloul: constructive and generic-parameter tools.}
+\href{https://arxiv.org/abs/math/0307179}{Bahloul, Demonstration constructive de l'existence de polynomes de Bernstein--Sato pour plusieurs fonctions analytiques} (2003 preprint; Compositio Mathematica, 2005) gives a constructive analytic Groebner-fan route. \href{https://arxiv.org/abs/math/0410046}{Polynome de Bernstein--Sato generique local}, v2 (2005), gives generic functional equations and constructible strata for analytic families, using formal generalizations of Oaku's algorithm. These are relevant for parameter specialization, not an automatic solution for arbitrary infinite formal input.
+
+\paragraph{Oaku: the most actionable certificate-producing lead.}
+\href{https://arxiv.org/abs/1609.04676}{Oaku, Localization, local cohomology, and the b-function of a D-module with respect to a polynomial}, 2016 preprint / Advanced Studies in Pure Mathematics 77 (2018), Algorithms 3.6--3.8, takes a finite polynomial cyclic-module presentation and a polynomial function. Algorithm 3.6 constructs the twisted module; Algorithm 3.8 decides existence and computes the generalized $b$-function. Localization removes the earlier saturatedness restriction. \href{https://www.lab.twcu.ac.jp/oaku/aam1997.pdf}{Oaku, Algorithms for b-Functions, Restrictions, and Algebraic Local Cohomology Groups of D-Modules}, Advances in Applied Mathematics 19 (1997), 61--105, is the earlier source.
+
+This paper was already retained in the repository for localization. The specific use of Algorithms 3.6--3.8 to feed the newly implemented slope selector is a new application to check, not a newly discovered source.
+
+For polynomial $\lambda$ there is an explicit ambient presentation over the polynomial Weyl algebra $\mathcal D_{\rm alg}$ in $(\xi,\eta)$:
+\[
+ \widetilde M=\mathcal D_{\rm alg}/
+ \mathcal D_{\rm alg}\langle
+  \xi_i-\eta P_i(-\partial_\xi),\ 
+  \partial_\eta-P(-\partial_\xi)\rangle.
+\]
+It is the partial Fourier transform of the rank-one exponential connection. It maps to $E$ by sending the generator to $1$, with image $\mathcal D_{\rm alg}1$. After coefficient completion it maps onto the full formal cyclic image $M$. For polynomial $\lambda$, all the original vectors $v_k$ already belong to $\mathcal D_{\rm alg}1$. The displayed relations annihilate the generator under the actual actions. An identity proved in the ambient module descends to its image and then to $M$, so an actual-kernel computation is not required merely to produce a valid identity (minimality or sharpness is different).
+
+A plausible producer workflow is:
+\begin{enumerate}
+\item Compute the ordinary generalized $b$-relation for $\lambda$ on $\widetilde M$, retaining an operator identity and localization witnesses.
+\item Compute the generic twist $\widetilde M\lambda^s$ over $K(s)$, then its $\eta$-$b$-relation, keeping finite presentations and polynomial parameter denominators.
+\item Track uniform torsion exponents and excluded integer roots before specialization; read the time-derivative order for the step bound and nonvanishing propagation.
+\item Descend identities to the actual image, extract rational component data when the coefficient field permits that effectively, and feed the already written selector with valid $(p,k_0,J)$.
+\end{enumerate}
+This is an applicability proposal, not an implementation or a claimed new universal producer theorem. Effective coefficient-field arithmetic, tracked membership witnesses, specialization thresholds, and the actual image map remain obligations. Polynomial symbols are a concrete first input class. Arbitrary infinite formal symbols have no automatic finite presentation suitable for these algorithms.
+
+\paragraph{Samuel/Rees: another rationality mechanism, with a missing comparison.}
+\href{https://link.springer.com/article/10.1007/s13163-023-00457-2}{Benito--Bravo--Encinas, The asymptotic Samuel function and invariants of singularities}, Section 2 and Theorem 2.8, recalls rationality from Rees valuations of a fixed ideal in a Noetherian commutative ring. \href{https://arxiv.org/abs/2211.13205}{Cutkosky--Praharaj, The Asymptotic Samuel Function of a Filtration} extends the framework, with different phenomena for general filtrations. The sequence $\nu_\eta(\lambda^k1)$ in an embedded holonomic module is not automatically the order of $f^k$ in powers of a fixed commutative ideal. The repository's failed product/Rees controls block a naive identification. An exact compatible multiplicative filtration would be needed. This is contextual prior art, not a completed transfer.
+
+\paragraph{General Mathieu uniformity is a different assertion.}
+\href{https://arxiv.org/abs/1101.1112}{de Bondt, Some remarks on Mathieu subspaces over associative algebras}, v4 (2016), Definition 3.1, defines uniform Mathieu subspaces using a threshold independent of all multipliers. Our threshold depends linearly on multiplier degree. Their co-integrality/idempotent hypotheses do not automatically hold here. The word ``uniform'' alone is not evidence of an exact antecedent. \href{https://arxiv.org/abs/1005.4260}{Zhao, Mathieu subspaces of associative algebras} supplies the general radical/quotient background, not the audited full formal-symbol all-ring cutoff statement.
+
+\paragraph{Recent sources and own public work.}
+\href{https://arxiv.org/abs/2609.05215}{Lorincz--Yang, Filtrations on D-modules and multiplicities of roots of Bernstein--Sato polynomials}, v2 (11 November 2026), was already adopted. Its revised algebraic scope does not by itself cover arbitrary nonconvergent formal symbols. \href{https://hexagonmath.org/2610.00580v2}{Roy van Rijn's public GVC paper}, v2 (27 October 2026), already announces the finite-operator binary theorem and first failing dimension. These cannot be counted as new unpublished results. The public abstract and source index were checked here; no full v2 source-file audit is claimed.
+
+\section*{Ranking and a message the user can forward}
+\begin{enumerate}
+\item \textbf{Strongest distinct full-scope candidate:} arbitrary-$\mathbb Q$-algebra qualitative safety $\Leftrightarrow$ affine cutoff $\Leftrightarrow$ reduction $\Leftrightarrow$ all prime residue fields, for arbitrary formal symbols. Standard ingredients are not claimed new; the exact combination and quantifiers were not located elsewhere.
+\item \textbf{Second candidate:} actual first-survival rationality and finite parallel-line support for arbitrary nonconvergent formal symbols. The convergent-symbol conclusion is a classical-theory consequence; the formal passage and actual-image specialization are the points to isolate.
+\item \textbf{Useful application, weaker standalone novelty:} finite extraction from supplied certificates. Generalized $b$-function computation and exact polynomial algebra are established. The packet correctly avoids claiming an unrestricted formal-input solver.
+\end{enumerate}
+
+\noindent\textbf{Forwardable steering.} Keep the general Gaussian/formal objective. For the current certificate-generation gap, check Oaku 1609.04676 Algorithms 3.6--3.8 on the explicit Fourier exponential presentation for polynomial symbols. Retain operator/membership witnesses, uniform torsion exponents, and specialization indices so the output really satisfies the selector contract. An ambient identity descends to the actual cyclic image, which may avoid computing the full image kernel. Separately, credit Sabbah/Maisonobe for the convergent-symbol rational-slope mechanism, and isolate nonconvergent formal scope and arbitrary coefficient-ring descent as the strongest novelty candidates. No direct Mathieu conclusion or broader oracle solver should be inferred.
+
+\noindent\textbf{Limits of the search.} Primary texts or precise primary metadata were examined along the GVC/Mathieu, multivariable Bernstein, generalized $b$-algorithm, formal/generic-family, and ideal-order rationality routes. Not all references in those bibliographies were read; no exhaustive originality certification, independent full-proof verification, or new theorem registration is asserted. One initially guessed Zhao arXiv ID (math/0702259) was unrelated and excluded; the verified Zhao paper is 0704.1691.
+\end{document}

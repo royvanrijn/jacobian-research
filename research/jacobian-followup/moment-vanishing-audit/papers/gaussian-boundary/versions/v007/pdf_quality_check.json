@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-17",
+  "version": "v007",
+  "pages": 35,
+  "pdf_sha256": "cb817152bd9a59c4c6542f02540c41c7cb3281a90a8ccfafeb8dba34782fb332",
+  "manuscript_inputs_sha256": {
+    "manuscript.tex": "4e7d8e296dca5f945c44df9ff1f36cfbf4d923f7abd95cca22e59c2f5dd110a4",
+    "formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+    "punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+    "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+    "analytic_core.tex": "6228526607d51dd037393e7583ff8322e3309788152f6cae95487a59efab805a",
+    "laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
+    "gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
+    "ordinary_finite_exclusion.tex": "9ae5c5b255baa38ca0db322f269ef887ea4b6df8891082aa7e5ac30bb6f2d3fc"
+  },
+  "layout_verified": true,
+  "method": "Two pdflatex passes for manuscript and standalone canonical. All35pages rendered through Poppler80dpi;three contact sheets and full new pages29-32 visually inspected. No overfull lines or undefined references.",
+  "overfull_boxes": 0,
+  "undefined_references": false,
+  "visual_defects_found": false,
+  "submission_ready": false,
+  "mathematical_completeness_verified_by_layout": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

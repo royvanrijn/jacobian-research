@@ -1,0 +1,18 @@
+{
+  "completed": true,
+  "generic_affine_shape_and_scalar": true,
+  "translation_direction_rank": 1,
+  "scaling_x5_plus_x_rank_one": false,
+  "Gaussian_quartic_rank_one": false,
+  "Gaussian_translation_rank_one": true,
+  "constant_b_repair_constraints": true,
+  "rank_two_trivial_quotient": true,
+  "rejected_sharpness_moment": 0,
+  "accepted_sharpness_moment": 2,
+  "producer_package_executed": false,
+  "universal_written_proofs_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "00108d25777cc1cfebcd5179702ea1ef961c5e8088017e85af58766892096a0b"
+}

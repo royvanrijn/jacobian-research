@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "kind": "finite original Wick and source-content controls;universal identities use written proofs",
+  "canonical_proof_sha256": "7c8add83e6d6300daa2663475f9b44402c435b79ae04b761e0b7ee8ffc45162e",
+  "producer_sha256": "1095c031f840df9c2854f31d6fa7d6214ace5c5458d7420c747ce8f59eca9edd",
+  "checker_sha256": "2f09dee3dbc4b97f4a2cda6926a22380b3349fda587b4173b2a463b689caf355",
+  "certificate_sha256": "d2bc3e56a5201f717cf932f80a9ca1cf76fb2cc60740e95b0869be257355cd33",
+  "runtime_sha256": "ed3bfb9e95cd71dd51d5a3a5a54f17500f6ac50f28ab27557c9ab003ce9ecdb3",
+  "exact_controls": {
+    "coefficient_recoveries": 12,
+    "top_recoveries": 2,
+    "primitive_nonunit_content": 1,
+    "positive_tilt_markers": 8,
+    "ring_masks": 1,
+    "cutoff_transfers": 3,
+    "zero_scalar_seed_control": 1,
+    "source_HTML_boundary": 1,
+    "rejections": 5
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

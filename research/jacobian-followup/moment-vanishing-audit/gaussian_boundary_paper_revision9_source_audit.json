@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-17",
+  "revision": "REVISION9 UNIFORM CUTS AND COMPLETE ORDINARY ROWS17November2026:43-page paper now completes ALL THREE ordinary-node types,including every center-axis coefficient zero face. New all-dimension/all-degree uniform FULL-PHASE gradient criterion gives normalized actual-cut decay with complete Pham homology,compatible Hardt inclusion pairs,uniform mass/boundary bounds,tails and rectifiable current limits. At most2 P-critical values then excludes all nonzero original finite exponential-polynomial Gaussian markers. This is a sufficient domain,not general safe-to-pure. Center axes splitdisjointly:bc!=0 fixed rank5 formal core plus off-axis characters with full cutoff matrix;bc=0 uniform criterion with at most2 values. All Gaussian means/cross terms,markers,degeneracies and equal actions retained. NEW precise DL2.25 verifies finite-family compatibility;DL2.32,HLTV3.5,SimonCh6/3.15 printed175 and Pham/Hien inputs credited. Five PAPER-A families remain:cusp,tangent,concurrent,double-line,triple-line. No new checker,old replay,all-ring inference,novelty or assurance promotion. Paper and broad goals ACTIVE.",
+  "new_claim": {
+    "id": "GUNIFORMCUTAXES20261117",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Uniform full-phase cut decay in all degrees and complete ordinary-node center-axis exclusion",
+    "scope": "Let P,q in C[x1,...,xn],P nonconstant. Assume fixed c,R0,t0>0 such that normgrad_x(tP-q)>=c*normx for EVERY complex |t|>=t0 and normx>=R0. Then on each fixed t-ray the FULL middle rapid-decay homology has a flat critical-cut basis whose period of EVERY fixed polynomial top form,divided by its own critical exponential, tends to0. Critical actions are alpha*t+O(1),alpha a P-critical value. This includes degenerate/coincident critical points and positive-dimensional P-critical sets. Written proof retains Pham tame vanishing homology with all Milnor multiplicities;fixed radius-squared carriersA+B*s;constrained compactified relative chains with no finite-phase spatial infinity;compatible Hardt triviality of FULL/constrained inclusion pairs and their rapid/excluded boundaries;uniform semialgebraic mass AND boundary-mass estimates by coordinate minors/area/uniform finiteness;uniform normalized tails;Federer-Fleming rectifiable current limits on fixed bands supported in complex P-level sets,annihilating the holomorphic top form. The flow itself is not assumed semialgebraic and real chain volume need not shrink. The cut angle is chosen independently of the supporting t-ray. If P-critical values fit a closed half-plane through0,all actual fixed-form periods decay on a supporting ray. For full affine Gaussian q,AT MOST TWO P-critical values therefore imply EVERY original marked Phi_A is zero or not finite exponential-polynomial:constant-coefficient isolation stays in original markers,shiftP bybeta leaves the gradient condition unchanged,and the rational seed/actual-period bridge has explicit Hien-Roucairol hypotheses. Such P is neither pure nor safe. This is a sufficient criterion,not general Gaussian safety-implies-purity. Application:the COMPLETE ternary ordinary-node center-axis family P=Tuv+a*u^3+d*v^3+b*u^2+c*v^2+k with full nondegenerate affine Gaussian,m=q_TT!=0,a=b=0=>A=q_uu!=0,d=c=0=>B=q_vv!=0,is pure-excluded and every original nonzero marker is not finite exponential-polynomial. Uniform gradient follows node-by-node from absent transverse linear terms. Full rank is5+1_(a!=0)+1_(d!=0),by8 minus simple infinity nodes. The disjoint bc!=0 branch has a fixed polynomial rank5 formal core TUV+bU^2+cV^2-mT^2/2-ellT*T-q0 underu=rU,v=rV,r=t^-1/2,volume r^2;uniform coefficient coercivity gives its full rank at collisions. Add every off-axis Morse character,then explicit polynomial cutoffs overpower all scaled-basis growth and prove the full matrix. Every original zero-exponential marker value has positive order. If bc=0,there are at most2 P-values and the general actual-cut theorem applies,including all intersecting axes. This completes all THREE ordinary-node leading-type rows in the standalone paper;ordinary isotropic frames are excluded by the already written nondegenerate quadratic-W theorem. Smooth row and full affine-W proof remain written. Cusp,tangent,concurrent,double-line,triple-line still remain OPEN in the manuscript. Classical Pham,Hardt,Federer-Fleming,Hien-Roucairol mechanisms credited. Precise compatible Hardt statement verified in Drusvyatskiy-Lewis Theorem2.25,uniform finiteness2.32;HLTV chain-current rule and Simon Ch6 Section3 Theorem3.15 printed175 retained. Analytic theorem for complex polynomial coefficients,not arbitrary nonconvergent formal/all-ring descent. No new mathematical checker,old replay,independent/formal/external verification or novelty claim.",
+    "canonical_source": "jacobian-followup/moment-vanishing-audit/GAUSSIAN_UNIFORM_CUT_DECAY.tex",
+    "dependencies": [
+      "GGAUSSGRAD20261117",
+      "G3ORDINARYFINITE20261117",
+      "GGAUSSHYPER20261117",
+      "external: F.Pham,Asterisque130(1985),11-47,PartI and Appendix,complete tame cut homology",
+      "external: D.Drusvyatskiy-A.S.Lewis,MathProg140(2013),5-29,Theorem2.25 compatible Hardt triviality and2.32 uniform finiteness",
+      "external: Hardt-Lambrechts-Turchin-Volic,arXiv0806.0476v3,Sections2.1 and3,Theorem3.5",
+      "external: L.Simon,IntroductionGMT2017/2018,Chapter6 Section3 Theorem3.15,printed175,Federer-Fleming compactness",
+      "external: Hien-Roucairol,BSMF136(2008),505-532,Theorems2.4 and3.7"
+    ],
+    "checker": null,
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": null,
+    "software_lock": [
+      "jacobian-followup/moment-vanishing-audit/GAUSSIAN_UNIFORM_CUT_DECAY.tex",
+      "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/sources/uniform_cut_primary_manifest.json",
+      "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/sources/drusvyatskiy_lewis_2013_semi.pdf",
+      "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/sources/hardt_lambrechts_turchin_volic_0806_0476v3.pdf",
+      "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/sources/simon_gmt_2018.pdf",
+      "jacobian-followup/moment-vanishing-audit/gaussian_boundary_paper_revision9_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/gaussian_boundary_paper_revision9_preupdate_20261117.json"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [
+      "OP-MV-ALL-DEGREE"
+    ],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived",
+    "programme_status": "archived"
+  },
+  "canonical_proof_sha256": "b112027bcb35cf4200ad2c43851cc7d5a791ea040913a26a9e10c88926cfa063",
+  "proof_mode": "Written all-degree uniform actual-cut/current criterion and complete ordinary center-axis formal/analytic split with precise classical inputs;no new mathematical checker or assurance promotion.",
+  "old_whole_records_unchanged": true,
+  "mutable_draft_files_snapshot_sha256": {
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/manuscript.tex": "b2c5a1bb47ead151f39d096abd7e827fa37a5f0879d725170b8652ef19285d9f",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/manuscript.pdf": "2234f3ebf88d4b1cc8bf93e192dab6544ccca1ca413b4df5f350afda8da91c25",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/analytic_core.tex": "e87ab766d4d078043d7dafa38b77d54f9c7a975cbeb2f380881abfc6e82d7216",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/ordinary_finite_exclusion.tex": "9da1cd85ef769a7218e728b8a01907f1b8eea60c7487ed716d02f8bd40c6077d",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/hyperbolic_suspension.tex": "b9ab71326fa699dc1b4e9cc188f04a410394c9b912b9d3caf88aa72d47a1ca83",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/uniform_cut_decay.tex": "cbf2c3410561ecf1bec88e1cb6821e8df44a5b84e7ee68abf7a3e00a0b2828c2",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/ordinary_axis_exclusion.tex": "1a6386300ace0a134963fab8a0b138068849b6d3fd4bd2d35619330d4a0f86c3",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/frame_extraction_case_audit.json": "11ce65e5c633e516ca69c40598edbdc17cf8245ec1a777146b1aaf03d1039a23",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/resolved_laurent_written_audit.json": "e699f57baa407990f85cfc582727e966e4388744f1941320c99dd45ac27eb002",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/proof_audit.json": "fe6a88bf932a3aa725e1c0eb63554bf482c247181aa6f4b76bcba88c318991d1",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/paper_goal.json": "846358e38c6a258763a1571e328c749aea53f43115719cabcf9e641ad19db382",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/adversarial_audit.json": "06ce127e40d7ff9b63d6c85af0b533b09f54fe77c1ac24755a39e1b14c1333fe",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/literature_audit.json": "f11e58b1a2ccf23de54ceed1acf90dc2b881c181fb174e263c00053e45d71267",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/pdf_quality_check.json": "19d865f373963800b68ea8601e9843a8a997a700495417209c357728a3b6863d",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/check_stationary_ball_controls.py": "5d4dd147915ae0748b88d82b7a53e8836620f9aa692f6eebcf32d497bac151d6",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/stationary_ball_controls.json": "41fe862668b0af5c3df72ff86d91ff6fd3aebd9e32b522b302a560b23e35b32f",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/check_punctured_controls.py": "6f306c21e23d59f408b1b405d34f35cac0bed009c785a0cc6160dd0a5d029f88",
+    "jacobian-followup/moment-vanishing-audit/papers/gaussian-boundary/punctured_controls.json": "61fffbb94e24939171eeffb56ee029557a943628c52fdc423ebd61bae91c1c84"
+  },
+  "mutable_policy": "Working paper files remain editable;v009 snapshot retained separately. New standalone canonical proof and all old sealed proof packets immutable.",
+  "new_primary_sources": {
+    "date": "2026-11-17",
+    "primary_sources": [
+      {
+        "author": "Drusvyatskiy-Lewis",
+        "url": "https://people.orie.cornell.edu/aslewis/publications/13-semi.pdf",
+        "cached_file": "drusvyatskiy_lewis_2013_semi.pdf",
+        "sha256": "1aa6d808b0de9f6f87ea503abe4745efdfff2cfd08631181aeea6d85c9eaf963",
+        "locations": [
+          "Theorem2.25,printed14/PDF10",
+          "Theorem2.32,printed16/PDF12"
+        ],
+        "use": "Explicit finite-family compatibility for Hardt triviality and semialgebraic uniform finiteness;Hardt credited."
+      },
+      {
+        "author": "Hardt-Lambrechts-Turchin-Volic",
+        "url": "https://arxiv.org/pdf/0806.0476",
+        "cached_file": "hardt_lambrechts_turchin_volic_0806_0476v3.pdf",
+        "sha256": "0a6e622208f3ceecf11b00c5b33a3eeeed8c376d4b1cb72b9b2c41eabea8b884",
+        "locations": [
+          "Sections2.1 and3",
+          "Theorems2.4 and3.5"
+        ],
+        "use": "Compatible triangulation,semialgebraic chains as currents,and boundary rule;flow itself is not assumed semialgebraic."
+      },
+      {
+        "author": "Simon",
+        "url": "https://math.stanford.edu/~lms/ntu-gmt-text.pdf",
+        "cached_file": "simon_gmt_2018.pdf",
+        "sha256": "ba7fd4a53bf0f1d0ac54aec50bb72c4bba196b8e784d65cd0a7fd85131a3bf03",
+        "locations": [
+          "Chapter6 Section3 Theorem3.15,printed175/PDF91"
+        ],
+        "use": "Federer-Fleming compactness with BOTH local mass and boundary-mass bounds and rectifiable integer-multiplicity conclusion."
+      },
+      {
+        "author": "Pham",
+        "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+        "cached_file": "pham_asterisque130_1985.pdf",
+        "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+        "locations": [
+          "PartI and Appendix"
+        ],
+        "use": "Complete tame critical-cut vanishing homology,including degenerate local Milnor multiplicities."
+      },
+      {
+        "author": "Hien-Roucairol",
+        "url": "https://doi.org/10.24033/bsmf.2564",
+        "locations": [
+          "Theorems2.4 and3.7"
+        ],
+        "use": "Retained actual-period comparison;new proof explicitly checks regular O input,smooth affine space,algebraic independence f=t,g=tP-q,and finite exceptional parameter removal."
+      }
+    ],
+    "precision_improvement": "The prior Basu Theorem1.1 locator states base triviality;new DL Theorem2.25 explicitly states compatibility with EVERY prescribed finite family. Old sealed source records are retained unchanged.",
+    "not_claimed": [
+      "A gradient flow is semialgebraic",
+      "Bounded critical points alone imply uniform cut bounds",
+      "Pointwise finite mass implies a uniform mass bound",
+      "Weak distributional limits alone are rectifiable",
+      "Real chain volume tends to zero",
+      "A general Gaussian safe-to-pure classification",
+      "Arbitrary nonconvergent formal/all-ring analytic extension",
+      "Independent/formal/external verification or novelty"
+    ],
+    "new_mathematical_checker_run": false
+  },
+  "protected_prior_whole_records": 216,
+  "retained_proof_files": 384,
+  "retained_example_counts": [
+    211,
+    11,
+    37
+  ],
+  "paper_pages": 43,
+  "standalone_paper_complete": false,
+  "submission_ready": false,
+  "closed_paper_obligations": [
+    "PAPER-B-R",
+    "PAPER-B-L"
+  ],
+  "partially_closed_paper_obligations": {
+    "PAPER-A": "Smooth and all three ordinary-node types proved;only cusp,tangent,concurrent,double-line,triple-line open."
+  },
+  "remaining_paper_obligations": [
+    "PAPER-A"
+  ],
+  "nonconvergent_formal_coefficients": false,
+  "arbitrary_ring_statement": false,
+  "novelty_assessed": false,
+  "old_terminal_UNKNOWN_jobs_restarted": false,
+  "old_sealed_checkers_replayed": false,
+  "actual_image_kernel_computed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "broader_goal_status": "active"
+}

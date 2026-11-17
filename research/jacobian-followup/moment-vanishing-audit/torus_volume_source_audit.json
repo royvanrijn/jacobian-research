@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+  "proof_sha256": "42bab0af00fe9821dba3121de2a559f88711a0b79eb3ab4d3aad00a8b184dc78",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_torus_volume_closure.py",
+  "checker_sha256": "c84744d9a88a55fc496bfc792e728a26165121395729838b82c14a0075d6bcfd",
+  "receipt": "jacobian-followup/moment-vanishing-audit/torus_volume_verification.json",
+  "receipt_sha256": "6d4c2c791588d68a7acf841c68d2321afd2712263e25267a04f21494ccb98243",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/PROPER_QUADRIC_MODELS_AND_LEADING_DISCRIMINANTS.md",
+      "sha256": "bdb3192209a56c785f29181a4a541c83a14d1a528d778e4d21d33f683240ccc9",
+      "use": "Previously isolated-critical-point proper Cauchy-period argument,local chain trace and exact quadric volume poleN;new extension only removes isolation in complex dimension2."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/INTEGRABLE_PERIOD_DENSITIES_AND_OCTAHEDRAL_SEED.md",
+      "sha256": "040b2af803e78894074184f64e54852bd93965fa6b3e5f1b860bf70ed6d03d94",
+      "use": "Subpolar Cauchy estimates under finite ramification;all-branch versus physical integrability distinction."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/GLOBAL_TRIANGLE_ALGEBRAS_AND_HAAR_BOUNDARIES.md",
+      "sha256": "e1ec26e843ed61e072a05422da9a2a20eaabeebbb0b3eddd2019f40a47bb95a9",
+      "use": "Complete original T-invariant algebra and original phase/marker scope;its old T-invariant existence frontier is now subsumed."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/INTRINSIC_REYNOLDS_AND_FINITE_QUOTIENT_DESCENT.md",
+      "sha256": "9bc929aaac70783649f09d6faa00e45c85ae25fd9f30e9a486ad3ab34be240a7",
+      "use": "All algebraic automorphisms preserve normalized Haar,and one-sided-weight/nullcone safety transports with all markers."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/NONSPHERICAL_PAIRS_AND_EXCEPTIONAL_SL2.md",
+      "sha256": "88895898edf9d6cb9973be9136bf6e8edbd51765b9db9b36ef4a4f7f0bb3a8ef",
+      "use": "Retained projective group orders,rotation distributions,minimum row weights8/12 and quotient realizations."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/exceptional_sl2_verification.json",
+      "sha256": "a8791dae61c75bf50b202d889f1ebbed175ae2e6c1bc089a8d802a2d8e55ee35",
+      "use": "Exact existing projective element-order counts,not a newly sampled orbit campaign."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Mircea Mustata;notes by Tomasz Szemberg",
+      "title": "IMPANGA lecture notes on log canonical thresholds",
+      "url": "https://www.impan.pl/~pragacz/mustata1.pdf",
+      "version": "Public36-page PDF based on2010 IMPANGA lectures;served version pinned by hash",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/mustata_impanga_lct_2011.pdf",
+      "sha256": "bfa87aeb09885a60cb4280de75405fc6ab085c93196cd2590ccb8795afb31707",
+      "selected_passages_read": "Definitions on printed/PDF4-5,log discrepancy and equation1;Property1.17 on10 andProperty1.18 with proof on11.",
+      "exact_import": "Valuative log canonical threshold inequalityA(E)>=lct_P(H)*ord_EH and lct_P(H)>=1/mult_PH on smooth varieties. No full boundary-volume or Haar theorem attributed to the notes."
+    },
+    {
+      "authority": "The Stacks Project",
+      "title": "Semistable Reduction,models chapter",
+      "url": "https://stacks.math.columbia.edu/download/models.pdf",
+      "version": "PDF versioned88ff78,compiled14July2026;served version pinned by hash",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/stacks_models_semistable_20261115.pdf",
+      "sha256": "4e0302b02650015a5dae9fb1abb49656feb41326a66294098daecc736ea87b0c",
+      "selected_passages_read": "Theorem18.1/tag0CDN onPDF58,all genera;local nodal charts14.1-14.2 on50-51;Lemma14.3/tag0CDE and proof on52-53. Official web tags0CDN,0CDE also read.",
+      "exact_import": "Finite-base-change semistable reduction for smooth projective generic curves,and a proper regular nodal model after resolving total-space nodal singularities. The original volume pullback,Hartogs extension,logarithmic period bound and Cauchy-chain trace are written internally,not quoted as a Stacks theorem."
+    }
+  ],
+  "new_written_arguments": [
+    "In complex dimension2,semistable curve reduction replaces arbitrary finite critical fibres by reduced nodes afterfinitebasechange. Properness gives the original volume as a regular2-form on the chosen smooth model by codimension-one extension and Hartogs. Node periods areO(log);undoing s=t^e gives exponent-1+1/e>-1. Finite compact-chain trace extends the previous Cauchy-period exclusion without assuming isolated critical points.",
+    "For a degreeD affine-quadric phase,finite boundary valuations satisfyvH>=D vu and volume orderA(E)-1-N vu. Local lct(H)>N/D kills EVERY finite boundary volume pole,including vertical exceptional divisors. The multiplicity estimateD>Nm is a sufficient exact certificate.",
+    "On the sphere null conic,the leading divisor has degree2D. Every octahedral orbit has>=6 points,every icosahedral orbit>=12;thus leading multiplicitym obeysD>=3m orD>=6m. The dimension2 certificate is automatic in EVERY degree and for every complex invariant phase/lower coefficient choice.",
+    "Both complete original A_Gamma^T algebras consequently have eventual pure radical0,not just a minimal seed class or thin phases. All maximal tori and all algebraic automorphic images are covered by intrinsic Haar transport. Full exceptional MZ is not reduced to them.",
+    "Over any commutativeC-algebra,eventual T-invariant pure radical equals nilpotents. Use a Qbar form and finitely generated residue coefficient fields,not a false embedding of arbitraryC-extensions intoC fixingC. Fixed-degree ordinary pure ideals have radical equal to the coefficient maximal ideal;finite-power inclusion gives a universal nilpotence/all-marker cutoff and a terminating theoretical prefix certificate algorithm,no values computed.",
+    "A pure phase with a nonzero infinitesimal left stabilizer is torus-fixed and impossible if the Lie element is semisimple,or unipotent-fixed and one-sided-weight safe if it is nilpotent. Every possible full failure has finite stabilizer for the left action and every automorphism-conjugated one. Finite stabilizer is not a purity or failure certificate."
+  ],
+  "essential_boundaries": [
+    "Semistable and lct inputs are classical;their analytic/topological combination and all MZ applications are INTERNAL WRITTEN. Selected exact controls do not independently verify semistable trace,Hartogs,all valuations or universal nilpotence.",
+    "The nonisolated-period extension is asserted only for complex surfaces. In higher dimensions the volume certificate alone is geometric;the earlier isolated-critical-point period hypothesis remains.",
+    "Strict multiplicity inequality is sufficient,not necessary;failure of this certificate does not imply a phase is pure or bad. Tetrahedral minimum orbit4 only gives equality and is not settled by this argument.",
+    "OriginalT-invariant closure includes complex/image-interior phases but does not reduce any full non-T-invariant phase to this subalgebra. Full thin and image-interior marked problems remain.",
+    "Over nonreduced rings only the eventual radical is nilpotents. Not all nilpotents are pure from first power,and ordinary pure ideals are not replaced by their radicals. Fixed-degree uniform prefix/nilpotence existence is not a computed numeric cutoff or an implemented campaign.",
+    "The matrix weight cutoff applies after linear left conjugation;arbitrary nonlinear automorphisms transport safety without an unchanged original-degree bound.",
+    "Full exceptional MZ decisions remainOPEN. Old T-invariant cubic/Jordan/internal-graph existence tasks are subsumed;actual full non-T graph laws and the separate symmetrized height condition remainOPEN."
+  ],
+  "new_degree_support_density_or_prefix_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,20 @@
+{
+  "claim": "QFL1",
+  "status": "PASS",
+  "generic_commuting_derivation_identity": true,
+  "retained_lower_equation": true,
+  "independently_rebuilt_order_five_defect": true,
+  "independently_rebuilt_escape_corrections": true,
+  "full_pair_relation_through_order_five": true,
+  "residues": [
+    "1",
+    "-1"
+  ],
+  "imports": "SymPy and standard library only; no producer or legacy algebra.",
+  "coverage_boundary": "All-orders induction and the full-frame all-rank theorem are written proofs; not formally verified or externally reviewed.",
+  "hashes": {
+    "check_independent.py": "f751d1f3264fda44b5fe355f5fcf62579dc8db72e7cad48f037660dbd663af4a",
+    "receipt.json": "1776dfefa65c79f79e2aa9ad54cad67c75ef3d2d5cabdf3f7375e3636dc20af5",
+    "escape_witness.json": "5d187532169ebadca5759668527bb9b2f324c07f68906e8faaf7a5c45438898d"
+  }
+}

@@ -1,0 +1,41 @@
+ring r=0,(u1,u2,u3,u4,u5,u6),dp;
+option(redSB);
+ideal I=u1*u2*u3,u1*u3*u5,u1*u3*u6,u2*u3*u4,u2*u3*u5,u2*u4*u6,u2*u5*u6,u2^2*u4 + 3*u4^2*u5/2 - 27*u5*u6^2/2,u4*u5*u6 + 3*u5^2*u6/2,u4^2*u5 - 9*u5^3/4,u2^2*u4 + 9*u3^2*u4 + 27*u3^2*u5/2 - 9*u4^3 - 12*u4^2*u5 + 9*u4*u6^2,u4^2*u5 + 3*u4*u5^2/2,u2^2*u4,u3*u4*u6 + 3*u3*u5*u6/2,u3^2*u5 + u3*u5^2/2,u3^2*u5 - u3*u4*u5/3,u3^2*u4 - 3*u3^2*u5 - u3*u4^2,u1^2*u2 + u2*u3^2 - u2*u6^2,u2^2*u4 + 9*u2*u5^2/4,u2^2*u4 - 3*u2*u4*u5/2,u2^2*u4 + u2*u4^2,u2^2*u4 + 3*u2^2*u5/2,u1^3 + u1^2*u2/9 - u1^2*u3 + u1*u2^2/9 - u1*u6^2,u1^2*u5 + u1*u5^2/2,u1^2*u5 - u1*u4*u5/3,u1^2*u4 - 3*u1^2*u5 - u1*u4^2,u1^2*u2 + u1*u2^2,u1*u2*u4,u1^2*u3 - u1*u3^2,u1*u2*u4 + 3*u1*u2*u5/2;
+ideal J; ideal G;
+J=I,-u1^2*u2/2 + u1*u2*u6/2 - 1,-u1^2*u2/2 - u1*u2*u6/2 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:77:78");}else{print("OPEN:77:78");print(G);}
+J=I,-u3^2*u5/4 - u3*u4*u6/6 - 1,-u3^2*u5/4 + u3*u4*u6/6 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:64:65");}else{print("OPEN:64:65");print(G);}
+J=I,-u1^2*u4/2 - 3*u1^2*u5/4 + u1*u3*u4/2 - u1*u4*u6/2 - 3*u1*u5*u6/4 - u3^2*u4/2 - 3*u3^2*u5/4 + u4^3/2 + 3*u4^2*u5/4 + u4^2*u6/2 + 3*u4*u5*u6/4 - 1,u1^2*u4/2 + 3*u1^2*u5/4 - u1*u3*u4/2 + u1*u4*u6/2 + 3*u1*u5*u6/4 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:18:44");}else{print("OPEN:18:44");print(G);}
+J=I,-u1^2*u3 + u1*u3*u4 + u3^3 - u3^2*u4 - 3*u3^2*u5/2 - u3*u6^2 - 1,u1^2*u3 - u1*u3*u4 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:27:46");}else{print("OPEN:27:46");print(G);}
+J=I,-u1*u3*u4 + u3^2*u4 + 3*u3^2*u5/2 - 1,u1*u3*u4 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:29:47");}else{print("OPEN:29:47");print(G);}
+J=I,-u1*u3*u4 + u3^2*u4 + 3*u3^2*u5/2 - 1,-u1^2*u2/3 - u1*u2^2/3 - 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:29:73");}else{print("OPEN:29:73");print(G);}
+J=I,-u1*u3*u4 + u3^2*u4 + 3*u3^2*u5/2 - 1,-u1^2*u2/3 - u1*u2^2/3 - 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:29:76");}else{print("OPEN:29:76");print(G);}
+J=I,u1*u3*u4 - 1,-u1^2*u2/3 - u1*u2^2/3 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:47:73");}else{print("OPEN:47:73");print(G);}
+J=I,u1*u3*u4 - 1,-u1^2*u2/3 - u1*u2^2/3 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:47:76");}else{print("OPEN:47:76");print(G);}
+J=I,-u1^2*u2/3 - u1*u2^2/3 - 1,-u1^2*u2/3 - u1*u2^2/3 - 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:73:76");}else{print("OPEN:73:76");print(G);}
+J=I,-u1*u2*u4/9 - u2^2*u4/27 - 1,-u1*u2*u4/9 - 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:36:75");}else{print("OPEN:36:75");print(G);}
+J=I,-u1^2*u4/2 - 3*u1^2*u5/4 + u1*u3*u4/2 + u1*u4*u6/2 + 3*u1*u5*u6/4 - u3^2*u4/2 - 3*u3^2*u5/4 + u4^3/2 + 3*u4^2*u5/4 - u4^2*u6/2 - 3*u4*u5*u6/4 - 1,u1^2*u4/2 + 3*u1^2*u5/4 - u1*u3*u4/2 - u1*u4*u6/2 - 3*u1*u5*u6/4 + 1;
+G=std(J);
+if(size(G)==1 && G[1]==1){print("PASS:56:81");}else{print("OPEN:56:81");print(G);}
+quit;

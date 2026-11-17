@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-17",
+  "version": "v008",
+  "cases": [
+    {
+      "type": "smooth cubic",
+      "status": "proved exclusion",
+      "proof": "cor:smoothleading"
+    },
+    {
+      "type": "irreducible nodal cubic",
+      "status": "finite-critical,critical-conic and critical-hyperbola no-frame members excluded;center-axis cases remain open",
+      "shared": "ORDINARY-UV",
+      "proof": "prop:ordinaryfinite;cor:ordinaryconics"
+    },
+    {
+      "type": "irreducible cuspidal cubic",
+      "status": "open"
+    },
+    {
+      "type": "line and smooth conic,transverse",
+      "status": "finite-critical,critical-conic and critical-hyperbola no-frame members excluded;center-axis cases remain open",
+      "shared": "ORDINARY-UV",
+      "proof": "prop:ordinaryfinite;cor:ordinaryconics"
+    },
+    {
+      "type": "line and smooth conic,tangent",
+      "status": "open"
+    },
+    {
+      "type": "three nonconcurrent lines",
+      "status": "finite-critical,critical-conic and critical-hyperbola no-frame members excluded;center-axis cases remain open",
+      "shared": "ORDINARY-UV",
+      "proof": "prop:ordinaryfinite;cor:ordinaryconics"
+    },
+    {
+      "type": "three concurrent distinct lines",
+      "status": "open"
+    },
+    {
+      "type": "double line and a distinct line",
+      "status": "open"
+    },
+    {
+      "type": "triple line",
+      "status": "open"
+    }
+  ],
+  "remaining_shared_tasks": [
+    "ORDINARY-UV center-axis cases h=e=f=0,with full Gaussian data and all a/d zero faces",
+    "CUSPIDAL",
+    "TANGENT-LINE-CONIC",
+    "CONCURRENT",
+    "DOUBLE-LINE",
+    "TRIPLE-LINE"
+  ],
+  "ordinary_residual": "T(uv+h)+a*u^3+d*v^3+b*u^2+c*v^2+e*u+f*v+k,with full nondegenerate Gaussian quadratic and nonzero T-square coefficient.",
+  "all_original_markers_retained": true,
+  "full_frame_extraction_proved": false,
+  "new_mathematical_checker_run": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "ordinary_finite_critical_test": {
+    "h_nonzero": "finite iff (a,b,c,d,e,f)!=0;otherwise critical conic",
+    "h_zero": "finite iff (e,f)!=0,(a,b,e)!=0,(d,c,f)!=0;otherwise critical axis or hyperbola",
+    "all_isolated_degeneracies_included": true,
+    "all_equal_actions_included": true,
+    "all_a_d_zero_faces_included": true
+  },
+  "rank_precaution": "First ramify every critical-value curve;count all resulting graphs,including conjugates with equal polar parts. Use Roucairol Section1.2 nonramified rank formula;not Theorem0.2 monodromy formula.",
+  "ordinary_curve_closure": {
+    "conic": "proved by all-degree hyperbolic suspension theorem",
+    "hyperbolas": "proved by permutation into same all-degree theorem",
+    "center_axis": "open",
+    "proof": "hyperbolic_suspension.tex",
+    "all_degree_statement": "P=wxy+F(w)+k,F(0)=0,Fprime(0)!=0,full nondegenerate affine q,AB!=0;extra m!=0 only if degF=1. Every original marker zero or not finite exponential-polynomial."
+  }
+}

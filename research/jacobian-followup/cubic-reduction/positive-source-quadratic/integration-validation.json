@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "claim": "KCUB44",
+  "integration_checker_sha256": "6a573d232b1101d8dd8c3f52a67a3d514307d2df699210650465c56a176c050b",
+  "main_receipt_sha256": "4be214ba1a8806ea6aa392ee79ef3136ee8501ebecc342d8fbf4279a6d7302de",
+  "proof_sha256": "255304a6b09558fd72764813f13c4e6c951c16d0d31287ab4825c0ed3418dd84",
+  "all_source_model_import_and_parent_pins_current": true,
+  "base_field_degree9_columns_rank_kernel": [
+    220,
+    213,
+    7
+  ],
+  "exact_minor_mod_prime": [
+    116435059,
+    1000000007
+  ],
+  "full_three_parameter_inverse_and_weight_conjugacy_checked": true,
+  "all_five_Taylor_heads_and_three_leading_order_cases": true,
+  "universal_weighted_degeneration_is_written_not_formalized": true,
+  "nonzero_transformed_low8_field_dimension": 2,
+  "zero_quadratic_dimensions": [
+    4,
+    7,
+    7
+  ],
+  "no_rational_Keller_repair_through8": true,
+  "transformed_degree9_remains_unclassified": true,
+  "repair_endpoint_degree_interval": [
+    9,
+    10
+  ],
+  "existing_degree10_control_is_not_global_improvement": true,
+  "seven_fixed_parameter_pilots_retained_unused_as_universal_proof": true,
+  "dependency_graph_acyclic": true,
+  "affected_method_reviews": 27,
+  "work_fingerprints_current": true,
+  "links_compilation_whitespace": true,
+  "previous_goal_turn_classification": "progress:KCUB43",
+  "this_goal_turn_classification": "progress:KCUB44 all positive-axis quadratic source repairs through8 excluded by formal field obstruction",
+  "goal_complete": false,
+  "global_positive_bounds_and_unrestricted_profiles_unchanged": true,
+  "next_gate": "Negative-axis quadratic source shear with mixed weights(-3,0,3),including resonance1+3s=0;requires a new argument.",
+  "navigation_attempts_current_parent_state": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    }
+  ],
+  "navigation_boundary": "Actual current-scope renderer attempts from the freshly rerun parent chain fail on the same two unrelated missing artifacts;no generated status hand edit or reconstruction."
+}

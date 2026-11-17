@@ -1,0 +1,69 @@
+{
+  "claim": "QTB1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "4d2fb667c9446135",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "seven_affected_methods_and_existing_work_reviews": "PASS",
+  "local_links_checked": 248,
+  "unique_equation_tags": 16,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "220205b1b1aab262e0839750602fcd31c1167e08fdae583fc9b35b7183fc9ca5",
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    }
+  ],
+  "external_dependencies": [
+    {
+      "source": "https://arxiv.org/html/math/0401263",
+      "used": "Apply Corollary1.6 to each P[b] to obtain algebraicity without finite generation of all B."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/00MB",
+      "used": "Flatness of Noetherian local completion in the coordinate Taylor map."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/0AG0",
+      "used": "Factoriality of the regular local formal power series ring."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/09E3",
+      "used": "Galois transitivity and ramification indices of primes over a DVR."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/0BMB",
+      "used": "Purity of the branch locus for the normalization of each specified finite field."
+    },
+    {
+      "source": "https://www.jmilne.org/math/CourseNotes/LECc.pdf#page=27",
+      "used": "Characteristic-zero finite etale affine-space covers are constant."
+    }
+  ],
+  "previous_goal_turn": {
+    "classification": "progress",
+    "evidence": "QET1 d4f378a0cd52e408 registered etale centralizer geometry, Galois rigidity and actual parameter-pole descent. This turn revalidated its receipt hashes and removed finite generation from the field conclusions.",
+    "next_action_taken": "Constructed the injective Taylor branch proof, flat regular-sequence valuation argument, differential localization theorem and finite actual-radical certificate without finite generation."
+  },
+  "proof_boundary": "Universal Taylor injectivity over arbitrary residue fields, coordinate flatness, regular-sequence divisor valuations, differential localization without finite generation, no finite Galois factors, stabilizer normal generation and radical descent under constant coefficient extension are written proofs. Finite controls check declared Taylor identities, singular factor prefixes, field and subgroup certificates, actual Weyl radical equations and selected localization derivatives. Bavula dimension, Noetherian completion flatness, regular local factoriality, Galois DVR transitivity, purity and constant affine-space covers are explicit external inputs. Finite-type etaleness of all B is not inferred without finite generation. Frac B membership and scalar units remain essential; a projective idealizer needs separate algebraicity and unit evidence. No new Long field or radical certificate, finite full lift, carrier, all-representative nonlifting, independent theorem replay, external review or DC2/JC2 resolution is supplied.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "provenance_refresh": {
+    "date": "2026-11-15",
+    "reason": "QPD1 supplies the QST1 rational-mate/torsion converse; its admission boundary was corrected without changing QST1 scope or residue proofs. The dependent QST1/QFC1/QET1/QTB1 control chain was replayed.",
+    "prior_receipt_sha256": "de8a73067633f4401dd5d085d5a31e6e30cfda97a1894d574a7fc65fc85fa643",
+    "current_receipt_sha256": "220205b1b1aab262e0839750602fcd31c1167e08fdae583fc9b35b7183fc9ca5",
+    "all_current_inputs_metadata_tags_and_markers": "PASS",
+    "mathematical_scope_changed": false
+  }
+}

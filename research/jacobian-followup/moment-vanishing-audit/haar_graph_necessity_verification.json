@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "b6b2ef213048eb2ef7cdfbd6acaf41968eada0c9506cdd5851ec45fe911d3e9f",
+  "sympy_version": "1.14.0",
+  "unit_preserving_kernel_projection_and_global_complement_exact": true,
+  "global_semisimple_genus_with_NONSEMISIMPLE_local_matrices_exact": true,
+  "unit_retraction_passes_actual_style_nonHodge_quotient_control_exact": true,
+  "relative_limit_M_not_original_W_control_exact": true,
+  "local_split_source_unit_can_fail_in_quotient_without_global_SS_control_exact": true,
+  "negative_control_only_local_not_actual_global_phase": true,
+  "ramified_coinvariant_factor_one_controls": [
+    {
+      "ramification": 2,
+      "intrinsic_class_factor": 1,
+      "coinvariant_dimension": 1
+    },
+    {
+      "ramification": 3,
+      "intrinsic_class_factor": 1,
+      "coinvariant_dimension": 1
+    }
+  ],
+  "forest_top_graph_rank_zero_control_exact": true,
+  "universal_theorem": "Under eventual purity GrW4 H2(generic fibre)=0 implies ALL original marked safety,with arbitrary boundary genus/compact middle/nonsemisimple local genus;EVERY eventual-pure failure requires nonzero Tate graph",
+  "general_SS_quotient_gate": "For V=E/L GLOBAL semisimple,eventual-pure safety iff intrinsic reduced xi_boundary,0=0;all H retain all branches and Bad_boundary root criterion",
+  "universal_geometric_and_Borel_proofs_machine_verified": false,
+  "all_exceptional_phases_claimed_top_graph_free": false,
+  "all_boundary_genus_claimed_zero": false,
+  "global_SS_replaced_by_local_SS_or_finite_monodromy": false,
+  "reduced_xi_identified_with_unreduced_xi_without_proof": false,
+  "arbitrary_actual_kernel_claimed_Hodge": false,
+  "source_local_split_claimed_sufficient_without_global_SS_quotient": false,
+  "hitting_bad_value_claimed_producer_of_eventual_purity": false,
+  "primitive_purity_reflection_claimed": false,
+  "coefficient_ring_topological_promotion_claimed": false,
+  "new_degree_support_or_prefix_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_next_task": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients"
+}

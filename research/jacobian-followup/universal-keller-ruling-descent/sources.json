@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-11-15T10:07:22.171771+00:00",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-intermediate-surfaces/PROOF.md",
+      "sha256": "4b0bccee73b5af3e6fbe9b89cd76b61c40c5058e166226a023fa2cdc0c4cc47a"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-unit-rigidity/PROOF.md",
+      "sha256": "418ee93b4fe2401e097046f5a0043aa1c280ac9fa113df5278072fe7eb3eff4a"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-log-picard/PROOF.md",
+      "sha256": "ed4302aacae26a7a7b97259555d80859fa704b2055d5a94009a6887b91a539a6"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-plane-charts/PROOF.md",
+      "sha256": "3e779300763ab77d264ffe7653dcdfc0e8b6fb0c56b950b7921de94a53c25483"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-structure/PROOF.md",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-receiver/PROOF.md",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "dubouloz-rulings-2020-v1.html",
+      "url": "https://arxiv.org/html/2002.12838v1",
+      "path": "sources/dubouloz-rulings-2020-v1.html",
+      "sha256": "5be13c579692ae98f1b47cf4d5533fa2271ae8c7a1166eff19dcfd7c4dec5129",
+      "bytes": 456076,
+      "reviewed_scope": "Proposition3 and Definition4: integral reduced fibres give a Zariski A1-bundle; degenerate fibre reductions are disjoint affine lines."
+    },
+    {
+      "title": "dubouloz-kishimoto-descent-v1.html",
+      "url": "https://arxiv.org/html/1408.1328v1",
+      "path": "sources/dubouloz-kishimoto-descent-v1.html",
+      "sha256": "17d297b31f9ecfc2299b0ee3a0aca38174c4432bcdff5413ba9b71fce0918f24",
+      "bytes": 440475,
+      "reviewed_scope": "Introduction and Section1 distinguish geometric ruling existence after finite field extension from descent to the original field."
+    },
+    {
+      "title": "cogolludo-elduque-orbifold-v3.html",
+      "url": "https://arxiv.org/html/2306.07359v3",
+      "path": "sources/cogolludo-elduque-orbifold-v3.html",
+      "sha256": "c02351ae05e1524824faaec71ede5799a3fcfbe03a416e8969f5a51bda01efd1",
+      "bytes": 618292,
+      "reviewed_scope": "Section2.2 Definition2.8 and Remark2.11: orbifold multiplicity group and surjectivity for connected generic fibres."
+    },
+    {
+      "title": "hatcher-chapter1.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/ATch1.pdf",
+      "path": "sources/hatcher-chapter1.pdf",
+      "sha256": "50b1632a200c66eeef2efba61fec49bb6d80442269f766df38817f23a01bde7c",
+      "bytes": 1087780,
+      "reviewed_scope": "Theorem1.20 van Kampen, Proposition1.32 cover degree and subgroup index; graph covering background."
+    },
+    {
+      "title": "stacks-zariski-main-05K0.html",
+      "url": "https://stacks.math.columbia.edu/tag/05K0",
+      "path": "sources/stacks-zariski-main-05K0.html",
+      "sha256": "c54998016d99597d7a5223352bc0b33b0a21ea287ab6a800c1c545e400576f18",
+      "bytes": 16722,
+      "reviewed_scope": "Quasi-finite separated morphism as open immersion followed by a finite morphism."
+    },
+    {
+      "title": "stacks-hartogs-031T.html",
+      "url": "https://stacks.math.columbia.edu/tag/031T",
+      "path": "sources/stacks-hartogs-031T.html",
+      "sha256": "60ca68ba7864eb7885f7d8525b4f2071ec88f04d8e2c2bcb310ab7c23c9f46dc",
+      "bytes": 16980,
+      "reviewed_scope": "Normal codimension-two extension, used only for the affine surface finite-completion boundary."
+    }
+  ]
+}

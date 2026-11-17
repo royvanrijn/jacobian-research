@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-17",
+  "status": "active",
+  "objective": "Write a standalone,human-readable paper establishing the exact complex Gaussian dimension-degree boundary,and simplify every proof needed for its conclusions.",
+  "user_request": "Set a long term goal to:Please write this paper and try to simplify all the proof steps necessary to reach all of the necessary conclusions.Clearly describe what the paper means,describe the problem,describe what we prove in the paper,in a very humanlike way.",
+  "scope": [
+    "G(n,d) iff n<=2 or d<=2 or (n,d)=(3,3),for n>=1,d>=0.",
+    "Sharp ternary-cubic cutoff m>3 deg Q.",
+    "Accurate Wilson,Long,Liu and DVEZ credit.",
+    "Complete standalone qualitative cubic proof,with every analytic hypothesis justified."
+  ],
+  "not_required": [
+    "General classification of every individual safe phase.",
+    "Optimizing finite moment prefixes."
+  ],
+  "editorial_requirements": [
+    "Explain the question before the machinery.",
+    "Use examples to explain cancellations and the cutoff.",
+    "Write connected mathematical prose for a human reader.",
+    "Give every necessary proof or an exact credited external theorem.",
+    "Keep research-ledger IDs and implementation history out of the final publication text.",
+    "Do not claim submission readiness while central proof steps remain untranscribed."
+  ],
+  "acceptance_criteria": [
+    "Standalone complete proof of the ternary-cubic reductions;no PAPER-A or PAPER-B gap remains.",
+    "Correct full dimension-degree deduction and all-order negative examples.",
+    "Sharp cutoff proved with equality witnesses.",
+    "Citations verified against primary sources.",
+    "Proof dependency audit and mathematical assurance limits explicit.",
+    "Readable LaTeX source and visually checked PDF."
+  ],
+  "progress": {
+    "first_draft_written": true,
+    "standalone_cubic_proof_complete": false,
+    "proof_simplification_complete": false,
+    "source_audit_started": true,
+    "final_pdf_ready_for_submission": false,
+    "current_draft_pages": 50,
+    "Airy_cubic_height_proof_written": true,
+    "linear_WT_case_proof_written": true,
+    "mixed_chart_full_formal_proof_written": true,
+    "explicit_comparison_hypotheses_written": true,
+    "exhaustive_routing_tables_written": true,
+    "rank_one_WT2_formal_proof_written": true,
+    "all_degree_polynomial_stationary_frame_written": true,
+    "mixed_chart_proof_simplified_to_leading_coefficient": true,
+    "punctured_polynomial_full_frame_written": true,
+    "all_degree_removed_component_excluded": true,
+    "two_ended_logarithmic_control_written": true,
+    "full_logarithmic_bound_written": true,
+    "affine_linear_coordinate_classification_complete": true,
+    "smooth_leading_row_complete": true,
+    "ordinary_node_gate_and_shared_normal_form_complete": true,
+    "all_degree_original_marker_gradient_criterion_written": true,
+    "ordinary_node_finite_critical_exclusion_written": true,
+    "ordinary_node_critical_conic_and_hyperbola_exclusion_written": true,
+    "all_degree_hyperbolic_suspension_written": true,
+    "ordinary_node_all_rows_complete": true,
+    "all_degree_uniform_cut_criterion_written": true,
+    "all_squarefree_leading_rows_complete": true,
+    "regular_part_only_seed_criterion_written": true,
+    "cusp_tangent_concurrent_complete": true
+  },
+  "next_step": "Complete DOUBLE-LINE and TRIPLE-LINE leading forms with a shared structural argument;these are the ONLY remaining PAPER-A families. Use the full original-marker filtration,not just ambient rank. Then run the full paper completion/credit/novelty/readability audit before claiming a self-contained boundary proof. Keep goal active;general safety-to-purity and regular/wild realization still open.",
+  "parent_long_term_goal": "Existing active complete-general-Gaussian goal retained. create_goal rejected a second unfinished goal;paper objective persisted here and in WORK-GAUSSIAN-DIMENSION-DEGREE-PAPER.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "version": "v010",
+  "pages": 50
+}

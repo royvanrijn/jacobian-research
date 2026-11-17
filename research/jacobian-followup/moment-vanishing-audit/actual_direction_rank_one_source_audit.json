@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/ACTUAL_DIRECTION_RANK_ONE_RIGIDITY.md",
+  "canonical_proof_sha256": "525a5a306c59f2d24a9f7eb5e9a715d56f57b3acdbccbfeec7c8e082c7d0c90b",
+  "claims": [
+    "MVAFFINERANKONE20261115",
+    "GWCONSTBRANKONE20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_actual_direction_rank_one.py",
+  "checker_sha256": "00108d25777cc1cfebcd5179702ea1ef961c5e8088017e85af58766892096a0b",
+  "receipt": "jacobian-followup/moment-vanishing-audit/actual_direction_rank_one_verification.json",
+  "receipt_sha256": "dbb6999f31da61effa57abd8531c16a97fb7344869fd65a776251907056c4039",
+  "prior_frontier": "jacobian-followup/moment-vanishing-audit/actual_direction_rank_one_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "GAUSSIAN_SHEAR_NORMAL_FORM_AND_TRANSFERS.md": "20043bb3f092918fa8b1d6a55c8c5d03cc9fa9c403683cf1c66a7ab1e40388cb",
+    "gaussian_shear_normal_form_source_audit.json": "499c27c7b7661f48ed97e315cc957b02b7d676f7140d792287c5c5aadd8cc81e",
+    "NEUTRAL_FACE_ALL_DEGREE_CLASSIFICATION.md": "a523751fa58617589e5b611243dcba5d21ac0d255583e85c774af03bdee9d8fb",
+    "LOGARITHMIC_CURVE_PERIOD_CRITERION.md": "c30318b771f2f91175a1c922ab197217d18b7fab124e4376b08ad513af40ffa2",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "CUBIC_HEIGHT_AIRY_OBSTRUCTION.md": "6450ba70bed52431953b2cfbe87189df5e9ab5780433cab3fe4be0cf30fab8e0"
+  },
+  "software": "SymPy1.14.0 in repository venv",
+  "primary_body_audit": {
+    "paper": "Anonymous,fixed-seed cyclic rank as reduced inverse-root span,v0.1.0-candidate,9 August2026,DOI10.5281/zenodo.21864884",
+    "read": "Entire pinned manuscript and STATUS.json,including imported bridge,proofs,composition failure and assurance boundaries",
+    "files": [
+      {
+        "path": "jacobian-followup/moment-vanishing-audit/sources/root_span_v010_paper.txt",
+        "sha256": "e585f8e67c20a3d99091ac2b8469853735e9dfbe44c35f909e2c538e9793b8e5",
+        "git_blob_sha": "4936d9a6929131d12281c989411c59ec59a3b558",
+        "url": "https://github.com/ipitchford/cyclicity-root-span-low-rank/blob/v0.1.0-candidate/paper.md"
+      },
+      {
+        "path": "jacobian-followup/moment-vanishing-audit/sources/root_span_v010_status.json",
+        "sha256": "9c212d9199bb58b13a03ad3df59e6de50c202f98ee07e6febfb3f65462d10e72",
+        "git_blob_sha": "2b2a53eb38e0c428cb8f2b58f2b647e373aa36c9",
+        "url": "https://github.com/ipitchford/cyclicity-root-span-low-rank/blob/v0.1.0-candidate/STATUS.json"
+      }
+    ],
+    "selected_source_summary": "Candidate rank formula concerns scale exp(sP(x))*dx and is conditional on an imported stationary-phase bridge. Indecomposable low-rank classification does not settle decomposable block fusion. No independent/external/formal review claimed by source. No higher-rank theorem imported here.",
+    "producer_code_executed": false,
+    "conditional_source_claim_promoted_to_unconditional": false
+  },
+  "rank_one_theorem": {
+    "phase": "Phi in C(t)[x],actual degree d>=2",
+    "seed": "constant dx in polynomial affine-line twisted quotient",
+    "direction": "partial_t+Phi_t",
+    "iff": "After finite algebraic base extension,Phi=P(alpha*x+beta)+gamma with fixed complex P",
+    "finite_test": "A=c_d_prime/(d*c_d),B=(c_(d-1)_prime-(d-1)*A*c_(d-1))/(d*c_d);rank1 iff Phi_t-(Ax+B)Phi_x-A is independent of x",
+    "scalar": "lambda=gamma_prime-alpha_prime/alpha",
+    "Gaussian_initial": "Phi(0,x)=-x^2/2 and regular coefficients force actual degree2 on rank1 locus",
+    "constant_Gaussian_series": "Then I=1 iff Phi=-x^2/2+C(t)x-C(t)^2/2",
+    "scope_limits": [
+      "constant seed only",
+      "polynomial phase on A1",
+      "rank and trivial quotient are distinct"
+    ]
+  },
+  "direction_counterfamily": {
+    "P": "x^d+x,d>=3",
+    "scaling_rank": "d-1 by explicit triangular all-degree Krylov formula",
+    "translation_rank": 1,
+    "translation_phase": "P(x-t)",
+    "unbounded_rank_gap": true,
+    "candidate_bridge_used": false
+  },
+  "constant_b_closure": {
+    "normalized_family": "W*(a+cT)+G(Z,T),a,c constants,c!=0",
+    "phase": "-T^2/2+t*G(t*(a+cT),T)",
+    "hypothesis": "actual constant-seed rank1",
+    "pure_null_iff": "G=0",
+    "mixed_cutoff_normalized": "m>deg Q",
+    "sharpness": "P=WT,Q=Z^(2d),m=2d gives(2d)!*(2d-1)!!",
+    "remaining_nontrivial_case": "actual rank>=2 plus rational trivial quotient of cyclic submodule"
+  },
+  "failure_boundary": "The initial written sharpness example Q=WT,m1 was false:its circular powers Z0W2 force moment0. It is preserved with an exact diagnostic. The accepted Q=Z^2,m2 value is2,and the all-index Q=Z^(2d),m2d formula is written. Exact checks now cover both rejected and accepted examples. Rank/classification arguments are unchanged.",
+  "failed_proof_hashes": {
+    "actual_direction_rank_one_initial_note.md": "e93812ae8a6280d04e7086e4ebdb8a95a657f3d53645de2ba54ce704504f3167",
+    "actual_direction_rank_one_sharpness_diagnostic.json": "72405e50ed412d17d3905e94f736a6ae5e3e3df75dd764d396e8c010e7799f9a"
+  },
+  "new_external_theorem_imported": false,
+  "producer_package_executed": false,
+  "fresh_exhaustive_literature_coverage": false,
+  "numeric_frontier_changed": false,
+  "rank_one_proof_requires_contour_theorem": false,
+  "universal_written_proofs_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Higher-rank rational trivial quotients for normalized constant-b Gaussian phases",
+    "Repeated-root linear-T normal forms and remaining G",
+    "Higher neutral radial degree and genuinely mixed angular signs",
+    "Independent analytic review of prior inputs and valid operator transfers;numeric/scheme questions separate"
+  ]
+}

@@ -1,0 +1,1049 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- bs5/base -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <title>
+  Modèle local simultané d&#x27;une fonction et d&#x27;une forme de volume
+</title>
+  
+  <link rel="stylesheet" href="/static/ptf/vendors/font-awesome/css/font-awesome.min.css" />
+  
+  <link rel="stylesheet" href="/static/ptf/vendors/bootstrap5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/ptf/css/bs5/ptf.css" />
+  <link rel="stylesheet" href="/static/ptf/css/bs5/base.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/svg+xml" href="/static/numdam/img/favicon.ico" />
+
+  
+  
+  <link rel="stylesheet" href="/static/ptf/css/bs5/style.css" />
+  <link rel="stylesheet" href="/static/ptf/css/bs5/search-bar.css" />
+  
+  <link rel="stylesheet" href="/static/numdam/vendors/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href="/static/numdam/vendors/owl-carousel/css/owl.theme.css">
+  <link rel="stylesheet" href="/static/numdam/css/numdam.css" type="text/css"/>
+  
+
+  
+  
+  <link rel="stylesheet" href="/static/ast/css/style_ast.css" />
+  
+  
+  
+  
+</head>
+<body class="d-flex flex-column position-relative" >
+  
+    
+
+
+    <div id="top">
+      <div id="bandeau">
+        <div style="float:left">
+          <a href="/" class='no-focus'>
+            <img src="/static/numdam/img/numdam_logo.gif" title='Accueil' alt='Accueil' class='logo no-text-decoration'/>
+          </a>
+        </div>
+        <div class="bandeau-background">
+          <div style="float:left" class="smartphone">
+            <div class="dropdown">
+              <button class="btn light-blue dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <img src='/static/mersenne_cms/img/main-menu.svg' alt='main-menu'/>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="/journals/">Revues</a></li>
+                <li><a href="/actas/">Séminaires</a></li>
+                <li><a href="/proceedings/">Congrès</a></li>
+                <li><a href="/books/">Livres</a></li>
+                <li><a href="/lectures">Notes de cours</a></li>
+                <li><a href="/thesis">Thèses</a></li>
+                <li><a href="/authors">Auteurs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="onoffswitch-group">
+          <div id="language-switch" title="Cliquer pour afficher le site en anglais">
+            <form id="language-switch-form" action="/i18n/setlang/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="b82ZL0zbjU5jlMQHIEzatxQXvmXe0AZckHxrDb0o46Iew1szLr4o168pNghngHHs">
+              <div class="onoffswitch" id="lang_flags">
+                <input type="checkbox"
+                       name="language"
+                       value="en"
+                       class="onoffswitch-checkbox"
+                       id="lang_onoffswitch"
+                       checked>
+                <label class="onoffswitch-label" for="lang_onoffswitch">
+                  <span class="onoffswitch-inner" data-on="" data-off=""></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div id="mathml-switch"
+            
+              
+                 title="Cliquer pour afficher le code source TeX"
+              
+            >
+            <form action="/set-formula-display/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="b82ZL0zbjU5jlMQHIEzatxQXvmXe0AZckHxrDb0o46Iew1szLr4o168pNghngHHs">
+              <div class="onoffswitch">
+                <input type="checkbox" name="formula-display" value="tex" class="onoffswitch-checkbox"
+                       id="tex_onoffswitch"
+                       onclick="this.form.submit();"
+                       >
+                <label class="onoffswitch-label" for="tex_onoffswitch">
+                  <span class="onoffswitch-inner" data-on="TeX" data-off="TeX"></span>
+                  <div class="onoffswitch-switch">
+                    <div class="onoffswitch-switch-label">
+                      OFF</div>
+                  </div>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-default navbar-expand-md desktop">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link"
+                href="/journals/">Revues</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="/actas/">Séminaires</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="/proceedings/">Congrès</a></li>
+            <li class="nav-item active"><a class="nav-link"
+                href="/books/">Livres</a></li>
+            <li class="nav-item"><a class="nav-link"
+            href="/lectures">Notes de cours</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="/thesis">Thèses</a></li>
+            
+            
+            <li class="nav-item"><a class="nav-link"
+                href="/authors">Auteurs</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="bandeau3">
+        <div class="container" id="search-bar">
+          
+
+
+
+
+<form class="d-flex gap-2 align-items-center align-items-md-start flex-column flex-md-row" method="post" action="/search"><input type="hidden" name="csrfmiddlewaretoken" value="b82ZL0zbjU5jlMQHIEzatxQXvmXe0AZckHxrDb0o46Iew1szLr4o168pNghngHHs">
+
+
+  
+
+<div class="px-0 text-nowrap browse-button">
+  <a href="/journals/ALL/" class="btn btn-primary search-button">Parcourir les volumes</a>
+</div>
+
+  <div class="flex-grow-1 d-flex gap-2 w-100 align-items-stretch align-items-lg-start">
+    <div class="flex-grow-1" id="line-container">
+      <div class="d-flex input-group search-group flex-nowrap">
+        <div class="search-group-inner input-group w-100" id="search-input-group">
+          <input class="searchinput form-control" type="text" name="q0" value=""
+                  placeholder="Rechercher des articles, des livres..."/>
+          <i class="searchclear fa fa-remove hidden" role="button"></i>
+          <input type="hidden" name="qt0" value="all">
+          <button type="button" class="btn btn-light dropdown-toggle border-0 rounded-0 border-end d-flex flex-nowrap align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+            
+              Tout
+            
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Tout</a></li>
+            <li><a href="#" class="dropdown-item">Auteur</a></li>
+            <li><a href="#" class="dropdown-item">Titre</a></li>
+            <li><a href="#" class="dropdown-item">Bibliographie</a></li>
+            
+            
+            <li><a href="#" class="dropdown-item">Plein texte</a></li>
+          </ul>
+          
+          <button id="add-search-field" type="button" class="btn btn-light">
+            <i class="fa fa-plus"></i>
+          </button>
+          
+        </div>
+      </div>
+
+      
+      
+        
+      
+    </div>
+
+    
+    
+
+<div class="search-button-div d-flex">
+  <button type="submit" class="btn btn-primary search-button d-flex flex-nowrap align-items-center gap-1" name="Submit">
+    <i class="fa fa-search"></i>
+    <span id="search-button-text" class="d-none d-sm-block">Rechercher</span>
+  </button>
+  
+  
+    <a href="/help/"><img src="/static/mersenne_cms/img/question.png"></a>
+  
+  
+</div>
+    
+  </div>
+
+  
+</form>
+<div id="template-search-form" style="display:none">
+  
+
+<div class="input-group search-group search-group-added d-none d-lg-flex flex-nowrap">
+  <div  class="input-group flex-nowrap">
+    <div style="display:flex" class="input-group-text flex-nowrap justify-content-center align-items-center gap-1 px-2 search_first_box">
+      <input id="not##i##"" class="bt-checkbox" type="checkbox" name="not##i##" /> <label for="not##i##"">NOT</label>
+    </div>
+    <div  class="search-group-inner input-group w-100 p-0">
+      <input class="searchinput form-control rounded-0 border-0 w-100 h-100 px-2 py-1" type="text" name="q##i##"/>
+      <i class="searchclear fa fa-remove hidden"></i>
+    </div>
+  </div>
+
+  <div style="display:none" class="flex-grow-1 input-group">
+    <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+    <span class="input-group-text search_first_box">Entre</span>
+    <input class="form-control" type="text" name="q-f-##i##" placeholder="Année" />
+    <span class="input-group-text">et</span>
+    <input class="form-control rounded-0" type="text" name="q-l-##i##" placeholder="Année" />
+  <!-- </div> -->
+  <!-- </div> -->
+</div>
+<div class="input-group-btn d-flex flex-nowrap" id="search-group-btn">
+    <input type="hidden" name="qt##i##" value="author">
+    <button type="button" class="btn btn-light dropdown-toggle rounded-0 border-0 border-start border-end" data-bs-toggle="dropdown" aria-expanded="false">
+      
+        Auteur
+      
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#" class="dropdown-item">Tout</a></li>
+      <li><a href="#" class="dropdown-item">Auteur</a></li>
+      <li><a href="#" class="dropdown-item">Titre</a></li>
+      <li><a href="#" class="dropdown-item">Date</a></li>
+      <li><a href="#" class="dropdown-item">Bibliographie</a></li>
+      <li><a href="#" class="dropdown-item">Mots-clés</a></li>
+      
+      <li><a href="#" class="dropdown-item">Plein texte</a></li>
+    </ul>
+    <button type="button" class="btn btn-light border-0 remove-search-field">
+      <i class="fa fa-minus"></i>
+    </button>
+  </div>
+</div><!-- /input-group -->
+
+
+</div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  
+
+  <main class="container " style="flex-grow: 1;">
+    
+    <div class="row justify-content-center">
+      
+        <div class="container-fluid d-flex">
+          
+            <!-- Debut content -->
+            
+            <!-- Debut Left -->
+              <div>
+                
+                
+  <div id="content_left">
+    
+      <div class="cover-thumbnail">
+        <a href="/icon/AST/AST_1978__59-60_/couv1.jpg" class="lightbox" title="">
+          <img src="/icon/AST/AST_1978__59-60_/couv1_small.jpg" width="80px">
+        </a>
+      </div>
+    
+  </div>
+
+              </div>
+            <!-- Fin left -->
+            
+
+            
+            <div class="flex-grow-1" style="max-width: 100%;">
+              <!-- Breadcrumb -->
+              
+  
+
+
+<div class="breadcrumb-row d-flex flex-column flex-xl-row gap-2">
+  
+    <div class="col-12">
+  
+    
+    <div class="breadcrumb-lg flex-wrap" style="font-size: 14px">
+      
+        <div style="float: left;">
+          <ul class="cms-breadcrumb d-flex m-0 mb-1">
+            <li class="breadcrumb-previous">
+              <a href="/item/AST_1978__59-60__95_0/">Précédent</a>
+            </li>
+          </ul>
+        </div>
+      
+      <div class="order-2 order-md-1 col-12 col-md-auto" style="float: left;">
+        <ul class="cms-breadcrumb d-flex flex-nowrap mb-3">
+          
+            
+            
+              <li class="">
+                <a href="/item/AST/">Astérisque</a>
+              </li>
+            
+          
+            
+            
+              <li class="">
+                <a href="/item/AST_1978__59-60_/">no. 59-60</a>
+              </li>
+            
+          
+            
+            
+              <li class="active">
+                <a href="/item/AST_1978__59-60__119_0/">p. 119-130</a>
+              </li>
+            
+          
+        </ul>
+      </div>
+      
+        <div class="order-1 order-md-2" style="float: left;">
+          <ul class="cms-breadcrumb d-flex mb-1">
+            <li class="breadcrumb-next">
+              <a href="/item/AST_1978__59-60__131_0/">Suivant</a>
+            </li>
+          </ul>
+        </div>
+      
+    </div>
+    
+    <div class="breadcrumb-sm">
+      
+        <a href="/item/AST_1978__59-60__95_0/" class="btn btn-light border"><i class="fa fa-chevron-left"></i></a>
+      
+
+      
+
+      
+        <a href="/item/AST_1978__59-60__131_0/" class="btn btn-light border"><i class="fa fa-chevron-right"></i></a>
+      
+    </div>
+    <div class="clearfix">
+    </div>
+  </div>
+</div>
+
+
+
+
+              <!-- center_top -->
+              
+              <!-- center_middle -->
+              
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div id="article-div" class="article-div">
+  
+  <div >
+    
+
+    
+    <div class="float-minus-100">
+    
+
+      
+        
+      
+      <div style="font-size:18px;margin-bottom:10px">
+        
+
+
+  <span class="common-title article-title">
+    
+    
+    Modèle local simultané d'une fonction et d'une forme de volume
+    
+    
+  </span>
+  
+  
+
+
+
+
+      </div>
+      
+
+
+
+<div class="article-author" style="display:inline-block">
+  
+    
+
+
+
+
+
+  
+
+
+    
+      
+        
+
+
+
+
+  <div style="margin-bottom:5px; font-size: 16px">
+    <a class="author_link" href="/search?&quot;Francoise, Jean-Pierre&quot;-c">Francoise, Jean-Pierre</a>&nbsp;<sup><a href="https://www.idref.fr/076182193" target="_blank"><img width="16px" height="16px" style="margin-top:-3px; margin-left:3px" src="/static/ptf/img/logo-idref.png" alt="idref"></a></sup>
+</div>
+
+
+      
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+    
+    
+      
+        
+
+
+
+
+
+      
+    
+  
+</div>
+
+
+      <div style="margin-bottom:10px">
+        
+
+
+<span style="display:inline-block;">Journées singulières de Dijon,</span>
+      
+    
+    
+      Astérisque, no. 59-60 (1978), pp. 119-130
+
+        
+
+
+      </div>
+
+      
+      
+        <div class="binary-file-icon" style="margin-top:20px;margin-bottom:10px">
+          
+<div class="wrapper-float">
+
+
+
+  <div class="d-flex flex-nowrap" style="margin-top:0px">
+    
+      <a href="/item/AST_1978__59-60__119_0.pdf" target="_blank">
+        <img src="/static/ptf/img/pdf.svg">
+      </a>
+    
+    
+      <a href="/item/AST_1978__59-60__119_0.djvu">
+        <img src="/static/ptf/img/djvu.svg">
+      </a>
+    
+    
+    
+    
+    
+  </div>
+
+</div>
+
+        </div>
+      
+      
+      
+    </div>
+
+    
+      <div style="float:left;margin-top:20px;width:98px;padding-right:10px;padding-left:15px;">
+  <a href="https://smf.emath.fr"><img src="/static/mersenne_cms/img/logo-societe-mathematique-de-france.jpg" width="80px"></a>
+</div>
+
+      <div class="clearfix"></div>
+    
+  </div>
+  
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+        <div>
+          <div class="col-12">
+          
+          
+            
+              <div class="mt-4 mb-4">
+                <ul class="nav nav-tabs article-tab">
+                  
+                    <li class="nav-item">
+                      <a class="nav-link active"
+                         data-bs-toggle="tab"
+                         data-bs-target="#info-tab"
+                         href="#info-tab">Détail</a>
+                    </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link"
+                       data-bs-toggle="tab"
+                       data-bs-target="#citation-tab"
+                       href="#citation-tab">Export</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "
+                       data-bs-toggle="tab"
+                       data-toggle="tab"
+                       data-bs-target="#how-to-cite-tab"
+                       href="#how-to-cite-tab">Comment citer</a>
+                  </li>
+                  
+                  
+                  
+                </ul>
+                <div class="tab-content" style="margin-top:10px">
+                  <div id="info-tab"
+                       class="tab-pane fade show active">
+                    
+                      
+                      
+                        
+                        
+                      
+                      
+                      
+                    
+                    <!--Mis en ligne le : <time datetime="2026-02-17">2026-02-17</time><br>-->
+                    <div style="margin-top:5px">
+                      
+                        
+                          
+                        
+                        
+                          
+
+  
+    
+      
+      
+      <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=542734" class="badge bg-secondary rounded-pill ref-badge extid-badge">
+        
+        
+        
+        
+        
+        
+        
+        MR
+        
+        
+        
+        
+        
+      </a>
+      &nbsp; 
+
+      
+
+    
+  
+
+
+                        
+                          
+
+  
+    
+      
+      
+      <a href="https://zbmath.org/?q=an:0465.58007" class="badge bg-secondary rounded-pill ref-badge extid-badge">
+        
+        
+        
+        
+        
+        
+        
+        
+        Zbl
+        
+        
+        
+        
+      </a>
+      
+
+      
+
+    
+  
+
+
+                        
+                        
+                        
+                          
+                            
+                          
+                        
+                      
+                    </div>
+                    
+                      
+  
+
+                    
+                    
+                    
+                    <div style="margin-top:5px">
+                      
+                        
+                      
+                    </div>
+                    
+                    
+                      
+                    
+                    
+                      
+                        
+                          <div style="margin-top:5px">
+                            
+                              
+                            
+                          </div>
+                        
+                      
+                    
+                    
+                    
+                    
+                  </div>
+                  <div id="citation-tab" class="tab-pane fade">
+                    <div class="upper">
+                      <ul class="nav nav-pills">
+                        <li role="presentation" class="nav-item">
+                          <a class="nav-link active"
+                             data-bs-toggle="tab"
+                             data-bs-target="#bibtex"
+                             href="#bibtex">BibTeX</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                          <a class="nav-link"
+                             data-bs-toggle="tab"
+                             data-bs-target="#ris"
+                             href="#ris">RIS</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                          <a class="nav-link"
+                             data-bs-toggle="tab"
+                             data-bs-target="#enw"
+                             href="#enw">EndNote</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="bibtex" class="tab-pane fade show active">
+                          <pre class="upper-right-content" id="bibtex-div">@incollection{AST_1978__59-60__119_0,
+     author = {Francoise, Jean-Pierre},
+     title = {Mod\`ele local simultan\&#x27;e d&#x27;une fonction et d&#x27;une forme de volume},
+     booktitle = {Journ\&#x27;ees singuli\`eres de Dijon},
+     series = {Ast\&#x27;erisque},
+     pages = {119--130},
+     year = {1978},
+     publisher = {Soci\&#x27;et\&#x27;e math\&#x27;ematique de France},
+     number = {59-60},
+     mrnumber = {542734},
+     zbl = {0465.58007},
+     language = {fr},
+     url = {https://www.numdam.org/item/AST_1978__59-60__119_0/}
+}</pre>
+                          <button class="fa fa-clipboard copy-button btn btn-primary"
+                                  data-clipboard-action="copy"
+                                  data-clipboard-target="#bibtex-div"
+                                  aria-hidden="true"
+                                  title="Copier dans le presse-papier"></button>
+                          
+                            <a class="fa fa-download export-button btn btn-primary"
+                               title="Télécharger"
+                               href="/export_citation/AST_1978__59-60__119_0/bib/"></a>
+                          
+                        </div>
+                        <div id="ris" class="tab-pane fade">
+                          <pre class="upper-right-content" id="ris-div">TY  - CHAP
+AU  - Francoise, Jean-Pierre
+TI  - Modèle local simultané d&#x27;une fonction et d&#x27;une forme de volume
+BT  - Journées singulières de Dijon
+AU  - Collectif
+T3  - Astérisque
+PY  - 1978
+SP  - 119
+EP  - 130
+IS  - 59-60
+PB  - Société mathématique de France
+UR  - https://www.numdam.org/item/AST_1978__59-60__119_0/
+LA  - fr
+ID  - AST_1978__59-60__119_0
+ER  - </pre>
+                          <button class="fa fa-clipboard copy-button btn btn-primary"
+                                  data-clipboard-action="copy"
+                                  data-clipboard-target="#ris-div"
+                                  aria-hidden="true"
+                                  title="Copier dans le presse-papier"></button>
+                          
+                            <a class="fa fa-download export-button btn btn-primary"
+                               title="Télécharger"
+                               href="/export_citation/AST_1978__59-60__119_0/ris/"></a>
+                          
+                        </div>
+                        <div id="enw" class="tab-pane fade">
+                          <pre class="upper-right-content" id="enw-div">%0 Book Section
+%A Francoise, Jean-Pierre
+%T Modèle local simultané d&#x27;une fonction et d&#x27;une forme de volume
+%B Journées singulières de Dijon
+%A Collectif
+%S Astérisque
+%D 1978
+%P 119-130
+%N 59-60
+%I Société mathématique de France
+%U https://www.numdam.org/item/AST_1978__59-60__119_0/
+%G fr
+%F AST_1978__59-60__119_0</pre>
+                          <button class="fa fa-clipboard copy-button btn btn-primary"
+                                  data-clipboard-action="copy"
+                                  data-clipboard-target="#enw-div"
+                                  aria-hidden="true"
+                                  title="Copier dans le presse-papier"></button>
+                          
+                            <a class="fa fa-download export-button btn btn-primary"
+                               title="Télécharger"
+                               href="/export_citation/AST_1978__59-60__119_0/enw/"></a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="how-to-cite-tab"
+                       class="tab-pane fade ">
+                    <div class="upper-right">
+                      <pre class="upper-right-content" id="how-to-cite-div">Francoise, Jean-Pierre. Modèle local simultané d'une fonction et d'une forme de volume, dans <em>Journées singulières de Dijon</em>, Astérisque, no. 59-60 (1978), pp. 119-130. https://www.numdam.org/item/AST_1978__59-60__119_0/</pre>
+                      <button class="fa fa-clipboard copy-button btn btn-primary"
+                              data-clipboard-action="copy"
+                              data-clipboard-target="#how-to-cite-div"
+                              aria-hidden="true"
+                              title="Copier dans le presse-papier"></button>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            
+          
+          
+    </div>
+  </div>
+
+
+
+  
+
+  
+
+
+
+
+  <div>
+    <div class="col-12">
+      <div style="margin-top:30px;margin-bottom:10px">
+
+        <ul class="nav nav-tabs article-tab"
+            >
+          <li class="nav-item"
+              id="main-citations-li"
+              >
+            <a class="nav-link active"
+               data-bs-toggle="tab"
+               data-bs-target="#references-tab"
+               href="#references-tab">Bibliographie</a>
+          </li>
+          <li class="nav-item" id="citations-html" style="display:none">
+            <a class="nav-link"
+               data-bs-toggle="tab"
+               data-bs-target="#citations-tab"
+               href="#citations-tab">Cité par</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" style="margin-top:10px">
+          
+            <div id="references-tab" class="tab-pane fade show active">
+              <div style="margin-top:11px;margin-bottom: 0px">
+
+
+
+
+  
+    <p class="bibitemcls">[1] <span class="citation-author">E. Brieskorn</span> - <span class="citation-document-title">Die monodromie der isolierten Singularitäten von hyperflächen</span>. (<span class="citation-publication-title">Manuscripta Math.</span> vol. <span class="citation-volume">2</span>, 1970, pp. 103-161). | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=267607" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://zbmath.org/?q=an:0186.26101" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://eudml.org/doc/153994" class="badge bg-secondary rounded-pill ref-badge">EuDML</a> | <a href="https://doi.org/10.1007/BF01155695" class="badge bg-secondary rounded-pill ref-badge">DOI</a></p><p class="bibitemcls">[2] <span class="citation-author">G. De Rham</span> - <span class="citation-document-title">Sur la division des formes et des courants par une forme linéaire</span>. (<span class="citation-publication-title">Comment. Math. Helv.</span> <span class="citation-volume">28</span>, pp. 346-352 (1954)). | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=65241" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://zbmath.org/?q=an:0056.31601" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://eudml.org/doc/139090" class="badge bg-secondary rounded-pill ref-badge">EuDML</a> | <a href="https://doi.org/10.1007/BF02566941" class="badge bg-secondary rounded-pill ref-badge">DOI</a></p><p class="bibitemcls">[3] <span class="citation-author">J. P. Francoise</span> - <span class="citation-document-title">Le théorème de M. Sebastiani pour une singularité quasi homogène isolée</span>. A paraître.</p><p class="bibitemcls">[4] <span class="citation-author">B. Malgrange</span> - <span class="citation-document-title">Intégrales asymptotiques et monodromie</span>. <span class="citation-publication-title">Annales de l'E.N.S.</span>, t. <span class="citation-volume">7</span>, fasc. 3, 1974). | <a href="https://zbmath.org/?q=an:0305.32008" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=372243" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://eudml.org/doc/81943" class="badge bg-secondary rounded-pill ref-badge">EuDML</a> | <a href="https://www.numdam.org/item/ASENS_1974_4_7_3_405_0" class="badge bg-secondary rounded-pill ref-badge">Numdam</a></p><p class="bibitemcls">[5] <span class="citation-author">J. Moser</span> - <span class="citation-document-title">On the volume elements on a manifold</span>. (<span class="citation-publication-title">Transactions of the Am. Math. Soc.</span> vol. <span class="citation-volume">120</span>-121, 1965 , pp. 286-294). | <a href="https://zbmath.org/?q=an:0141.19407" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=182927" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://doi.org/10.1090/S0002-9947-1965-0182927-5" class="badge bg-secondary rounded-pill ref-badge">DOI</a></p><p class="bibitemcls">[6]<span class="citation-author"> R. Roussarie</span> - <span class="citation-document-title">Modèles locaux de champs et de formes</span>. Astérisque n° 30. | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=440570" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://zbmath.org/?q=an:0327.57017" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://www.numdam.org/item/AST_1975__30__1_0" class="badge bg-secondary rounded-pill ref-badge">Numdam</a></p><p class="bibitemcls">[7] <span class="citation-author">M. Sebastiani</span> - <span class="citation-document-title">Preuve d'une conjecture de E. BRIESKORN</span>. (<span class="citation-publication-title">Manuscripta Math.</span> <span class="citation-volume">2</span>, pp. 301-308, 1970). | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=267608" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://zbmath.org/?q=an:0194.11402" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://eudml.org/doc/154001" class="badge bg-secondary rounded-pill ref-badge">EuDML</a> | <a href="https://doi.org/10.1007/BF01168382" class="badge bg-secondary rounded-pill ref-badge">DOI</a></p><p class="bibitemcls">[8] <span class="citation-author">C. L. Siegel</span> et <span class="citation-author">J. Moser</span> - <span class="citation-document-title">Lectures on celestial mechanics</span>. Springer Verlag, 1971. | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=502448" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://zbmath.org/?q=an:0312.70017" class="badge bg-secondary rounded-pill ref-badge">Zbl</a></p><p class="bibitemcls">[9] <span class="citation-author">S. Sternberg</span> - <span class="citation-document-title">Infinite Lie groups and formal aspects of dynamics</span>. <span class="citation-publication-title">Journal of Math, and mechanics</span>, vol. <span class="citation-volume">10</span>, n° 113, 1961). | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=133400" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://zbmath.org/?q=an:0131.26802" class="badge bg-secondary rounded-pill ref-badge">Zbl</a></p><p class="bibitemcls">[10] <span class="citation-author">J. C. Tougeron</span> - <span class="citation-document-title">Idéaux de fonctions différentiables</span>. <span class="citation-publication-title">Ergebnisse der Mathematik</span>. | <a href="https://zbmath.org/?q=an:0251.58001" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=440598" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[11] <span class="citation-author">J. Vey</span> - <span class="citation-document-title">Un problème de cohomologie relative</span>. (Arkiv för Mathematik vol. <span class="citation-volume">15</span>, n° 1, 1977). | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=453736" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://zbmath.org/?q=an:0349.32005" class="badge bg-secondary rounded-pill ref-badge">Zbl</a></p><p class="bibitemcls">[12] <span class="citation-author">J. Vey</span> - <span class="citation-document-title">Sur le lemme de Morse</span>. (<span class="citation-publication-title">Inventiones mathematicae</span> n° 40, pp. 1-9, 1977). | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=453737" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://zbmath.org/?q=an:0348.58007" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://eudml.org/doc/142471" class="badge bg-secondary rounded-pill ref-badge">EuDML</a> | <a href="https://doi.org/10.1007/BF01389858" class="badge bg-secondary rounded-pill ref-badge">DOI</a></p>
+  
+
+</div>
+            </div>
+          
+
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+
+  
+
+
+</div>
+
+
+                <!-- center_footer -->
+             
+            </div>
+
+            
+              <div>
+                
+                
+              </div>
+            
+
+          
+        </div>
+      
+    </div>
+    
+  </main>
+
+  
+    
+<div id="footer">
+  <div class="horizontal-menu menu-footer">
+    <ul>
+      <li><a href="/accessibility/">Accessibilité - non conforme</a></li>
+      <li><a href="/about/">À propos</a></li>
+      <li><a href="/help/">Aide</a></li>
+      <li><a href="/legal/">Mentions légales</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      
+    </ul>
+  </div>
+  <div class="logo-footer">
+    <div class="d-flex">
+      <div class="lg-desktop">
+        <p>Développé par</p>
+      </div>
+      <div>
+        <a href="http://www.mathdoc.fr"><img class="logo-auto" src="/static/numdam/img/logo-mathdoc.png"/></a>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="lg-desktop">
+        <p>Soutenu par</p>
+      </div>
+      <div>
+        <a href="http://www.cnrs.fr/insmi"><img class="logo-auto" src="/static/ptf/img/logo-cnrs.png"/></a>&nbsp;
+        <a href="http://www.univ-grenoble-alpes.fr/"><img class="logo-auto" src="/static/numdam/img/logo-uga.png"/></a>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="lg-desktop">
+        <p>Partenaire de</p>
+      </div>
+      <div>
+        <a href="https://geodesic.mathdoc.fr"><img class="logo-auto" src="/static/numdam/img/geodesic.png"/></a>&nbsp;
+        <a href="http://portail.math.cnrs.fr"><img class="logo-auto" src="/static/numdam/img/logo-portail.png"/></a>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div id="logo-collex">
+        <a href="https://www.collexpersee.eu/"><img class="logo-auto" src="/static/numdam/img/logo-collex.png"/></a>&nbsp;
+      </div>
+      <div id="logo-collex-lg">
+        <a href="https://www.collexpersee.eu/"><img class="logo-auto" src="/static/numdam/img/logo-collex.png"/></a>&nbsp;
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  <script type="text/javascript" src="/static/ptf/vendors/jquery/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/static/ptf/vendors/bootstrap5/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/static/ptf/vendors/clipboard/js/clipboard.min.js "></script>
+  
+    <script type="text/javascript" src="/static/ptf/js/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+  
+
+  
+<script src="/static/numdam/js/scripts.js "></script>
+<script src="/static/numdam/vendors/owl-carousel/js/owl.carousel.min.js "></script>
+
+
+  <script type="text/javascript" src="/static/ptf/js/bs5/ptf.js"></script>
+  <script type="text/javascript" src="/static/ptf/js/bs5/search-bar.js"></script>
+  <script type="text/javascript" src="/static/ptf/js/bs5/facets.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "frozen_before_execution": true,
+  "date": "2026-11-16",
+  "purpose": "Check explicit actual torus peripheral families and the algebra needed to apply the GGLW iterable-curve theorem. Uniform conclusions come from written proofs, not these controls.",
+  "torus_pairs": [[2,3],[2,5],[2,7],[3,4],[3,5],[3,7],[3,8],[4,5],[4,7],[5,6],[5,7],[5,8],[6,7]],
+  "finite_field_rule": "First prime r>4*p*q+1 with q dividing r-1, r<=5000; first primitive generator; delta_j=zeta^j, 0<=j<p; first three nonzero s with mu!=1 and disjoint companion spectra. No target replacement.",
+  "finite_field_checks": ["torus relation", "meridian word", "rank-one meridian", "peripheral monomial", "full matrix algebra dimension p^2"],
+  "symbolic_control": "T(3,5) over Q(tau)(s), tau^2=tau+1; exact torus and peripheral identities, meridian derivative, H3 specialization s=-1 with enumeration cap120",
+  "whitehead_controls": "Symbolic 2x2 boundary commutator, longitude word/eigenvalue and rank-one identities modulo the defining quadratic; exhaust all triples (mu,lambda,d) over primes5,7,11,13, retaining those satisfying the quadratic and the one-step nonvanishing conditions",
+  "limits": {"maximum_field_prime":5000,"samples_per_torus_pair":3,"H3_group_order_cap":120,"whitehead_triples":2976},
+  "not_claimed": ["full MRC", "a resolution of any of the sixteen retained targets", "a full independent audit of the 44-page GGLW preprint", "priority or novelty", "a tangent computation at the retained sixteen-knot panel"]
+}

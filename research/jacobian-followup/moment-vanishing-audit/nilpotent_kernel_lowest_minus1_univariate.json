@@ -1,0 +1,38 @@
+{
+  "status": "EXACT_REDUCTION",
+  "substitution": {
+    "g2": "0",
+    "g3": "(143*ell_z^2+39)/2"
+  },
+  "residuals": [
+    {
+      "n": 4,
+      "primitive_univariate": "0"
+    },
+    {
+      "n": 5,
+      "primitive_univariate": "0"
+    },
+    {
+      "n": 6,
+      "primitive_univariate": "841*ell_z**3 + 285*ell_z"
+    },
+    {
+      "n": 7,
+      "primitive_univariate": "0"
+    },
+    {
+      "n": 8,
+      "primitive_univariate": "44235*ell_z**4 + 39114*ell_z**2 + 6991"
+    },
+    {
+      "n": 9,
+      "primitive_univariate": "0"
+    },
+    {
+      "n": 10,
+      "primitive_univariate": "-122979*ell_z**5 - 34030*ell_z**3 + 105*ell_z"
+    }
+  ],
+  "first_unit_prefix": 8
+}

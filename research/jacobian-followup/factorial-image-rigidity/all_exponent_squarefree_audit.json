@@ -1,0 +1,33 @@
+{
+  "canonical_proof": "ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex",
+  "date": "2026-11-17",
+  "large_exponent_criterion": "2^m>=4*n^2 implies squarefree F_(n,m), all positive integers n,m",
+  "universal_proof": "normalized factorial sequence monotonicity, concave logarithm chord and two weighted coefficient masses<1",
+  "coefficient_checks_use_exact_positive_powers_not_algebraic_rounding": true,
+  "prime_power_reconciliation": "r>=1 all-index prime-power theorem and every edge residual ALREADY registered in FIRPADICDEFORM/FIRSFCMONOPRIME; new wrapper explicitly admits r0,m1",
+  "retained_prime_power_proof": "PRIME_POWER_TWO_TERM_SFC.tex; residual sigma=(-1)^(h+c*e)",
+  "retained_source_credit": "Rocks2015 author manuscript Lemma3.8/Proposition3.22 supplies factorial units/digit hull; residual calculation is the retained internal proof",
+  "remaining_bad_pair_necessary_conditions": [
+    "2^m<4*n^2",
+    "m has at least two distinct prime divisors"
+  ],
+  "candidate_filter_is_not_a_counterexample_test": true,
+  "overlap_threshold": "2^144",
+  "overlap_proof": "u>=512, g512=222, gprime>7/8 using log2>1/2",
+  "set_transfer": "capped and unrestricted bad sets agree for n>=2^144; D<=D_all<=D+2^144",
+  "published_2016_route": "D_all(X)<<X/(log X)^(1/50), absolute implied constant, independent of MR II",
+  "additional_preprint_route": "D_all(X)<<X^(1-10^-18), absolute implied constant; dense MR II9.2(ii) source qualification inherited",
+  "harmonic_convergence": "unrestricted all-exponent exceptional reciprocal sum converges using power route; finite initial contribution only",
+  "MR_II_preprint_source_qualification_retained": true,
+  "sparse_warning_and_Section10_exclusion_retained": true,
+  "complete_preprint_validation_claimed": false,
+  "overlap_threshold_is_not_an_analytic_starting_threshold": true,
+  "numerical_analytic_constants_or_thresholds_extracted": false,
+  "all_index_SFC_closed": false,
+  "other_Gamma_shapes_claimed": false,
+  "finite_controls_are_not_numerical_density_evidence": true,
+  "provenance": "User-supplied elementary large-exponent argument checked; prime-power result reconciled with existing proof; no priority claim",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

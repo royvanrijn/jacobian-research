@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "file": "pivot-04.json",
+      "pivot": 4,
+      "status": "jet4-inconclusive"
+    },
+    {
+      "file": "pivot-05.json",
+      "pivot": 5,
+      "status": "jet4-inconclusive"
+    },
+    {
+      "file": "pivot-06.json",
+      "pivot": 6,
+      "status": "arbitrary-degree-stage-obstructed"
+    },
+    {
+      "file": "pivot-07.json",
+      "pivot": 7,
+      "status": "arbitrary-degree-stage-obstructed"
+    },
+    {
+      "file": "pivot-08.json",
+      "pivot": 8,
+      "status": "jet4-inconclusive"
+    },
+    {
+      "file": "pivot-09.json",
+      "pivot": 9,
+      "status": "jet4-inconclusive"
+    },
+    {
+      "file": "pivot-10.json",
+      "pivot": 10,
+      "status": "jet4-inconclusive"
+    },
+    {
+      "file": "pivot-11.json",
+      "pivot": 11,
+      "status": "jet4-inconclusive"
+    },
+    {
+      "file": "pivot-12.json",
+      "pivot": 12,
+      "status": "jet4-inconclusive"
+    }
+  ],
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "linear_solver_sha256": "df6ce35ab35fb5ddf16e08acc8d57f8e3cbd9a0b0e902f9ecf2ba1d96806c6c5",
+  "scope": "A separated quartic coefficient functional involving the missing raw coordinate annihilates all target polynomials: degree>=4 has no such quartic terms. This obstructs one raw-output target stage, not general sequential changes.",
+  "source_sha256": "de9ae94f3a5e638d6e7fa509c1362b6c1e31c779e7ff0f0c1a3754619aac5fc0",
+  "status": "complete"
+}

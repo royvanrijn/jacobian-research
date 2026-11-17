@@ -1,0 +1,1056 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 294,
+  "checks": [
+    "predecessor PASS marked_end_lattice_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor marked_end_lattice_receipt.json MARKED_END_LATTICE_AND_CABLE_CONTROL.md",
+    "sealed predecessor marked_end_lattice_receipt.json sources/marked-end-lattice/manifest.json",
+    "sealed predecessor marked_end_lattice_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json peripheral_zero_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json sources/marked-end-lattice/weidmann-root-adjoined.pdf",
+    "sealed predecessor marked_end_lattice_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "predecessor PASS binomial_periodic_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_binomial_periodic.py",
+    "sealed predecessor binomial_periodic_receipt.json ALL_BINOMIAL_KEYS_PERIODIC_GATE_AND_EXISTENCE.md",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/manifest.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_orbit_tree.py",
+    "sealed predecessor binomial_periodic_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor binomial_periodic_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/zannier-1995.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-colouring/livingston-melvin-1985.pdf",
+    "predecessor PASS common_pencil_mark_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json verify_common_pencil_mark.py",
+    "sealed predecessor common_pencil_mark_receipt.json COMMON_PENCIL_GRAM_MARK_AND_ALL_ODD_EXCLUSION.md",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/manifest.json",
+    "sealed predecessor common_pencil_mark_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5H.html",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5R.html",
+    "predecessor PASS seifert_base_genus_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json verify_seifert_base_genus.py",
+    "sealed predecessor seifert_base_genus_receipt.json SEIFERT_BASE_GENUS_AND_COMPANION_TREE.md",
+    "sealed predecessor seifert_base_genus_receipt.json sources/seifert-base-genus/manifest.json",
+    "sealed predecessor seifert_base_genus_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor seifert_base_genus_receipt.json sources/seifert-base-genus/hatcher-3manifolds.pdf",
+    "predecessor PASS peripheral_cone_budget_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json verify_peripheral_cone_budget.py",
+    "sealed predecessor peripheral_cone_budget_receipt.json PERIPHERAL_CONE_TORSION_AND_MARKED_BUDGET.md",
+    "sealed predecessor peripheral_cone_budget_receipt.json sources/peripheral-cone-budget/manifest.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor peripheral_cone_budget_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "retained primary pin stacks-0C5H.html",
+    "retained primary pin stacks-0C5R.html",
+    "retained primary pin hatcher-3manifolds.pdf",
+    "retained primary pin cochran-tanner-1207.5042v1.pdf",
+    "free edge never crosses sign through zero -4",
+    "crossing edge sign invariant (-4, -4)",
+    "crossing edge sign invariant (-4, -3)",
+    "crossing edge sign invariant (-4, -2)",
+    "crossing edge sign invariant (-4, -1)",
+    "crossing edge sign invariant (-4, 0)",
+    "free edge never crosses sign through zero -3",
+    "crossing edge sign invariant (-3, -4)",
+    "crossing edge sign invariant (-3, -3)",
+    "crossing edge sign invariant (-3, -2)",
+    "crossing edge sign invariant (-3, -1)",
+    "crossing edge sign invariant (-3, 0)",
+    "free edge never crosses sign through zero -2",
+    "crossing edge sign invariant (-2, -4)",
+    "crossing edge sign invariant (-2, -3)",
+    "crossing edge sign invariant (-2, -2)",
+    "crossing edge sign invariant (-2, -1)",
+    "crossing edge sign invariant (-2, 0)",
+    "free edge never crosses sign through zero -1",
+    "crossing edge sign invariant (-1, -4)",
+    "crossing edge sign invariant (-1, -3)",
+    "crossing edge sign invariant (-1, -2)",
+    "crossing edge sign invariant (-1, -1)",
+    "crossing edge sign invariant (-1, 0)",
+    "free edge never crosses sign through zero 0",
+    "crossing edge sign invariant (0, -4)",
+    "crossing edge sign invariant (0, -3)",
+    "crossing edge sign invariant (0, -2)",
+    "crossing edge sign invariant (0, -1)",
+    "crossing edge sign invariant (0, 0)",
+    "crossing edge sign invariant (0, 1)",
+    "b1 crossing has one zero one positive parent (0, 1)",
+    "crossing edge sign invariant (0, 2)",
+    "crossing edge sign invariant (0, 3)",
+    "crossing edge sign invariant (0, 4)",
+    "free edge never crosses sign through zero 1",
+    "crossing edge sign invariant (1, 0)",
+    "b1 crossing has one zero one positive parent (1, 0)",
+    "crossing edge sign invariant (1, 1)",
+    "crossing edge sign invariant (1, 2)",
+    "crossing edge sign invariant (1, 3)",
+    "crossing edge sign invariant (1, 4)",
+    "free edge never crosses sign through zero 2",
+    "crossing edge sign invariant (2, 0)",
+    "crossing edge sign invariant (2, 1)",
+    "crossing edge sign invariant (2, 2)",
+    "crossing edge sign invariant (2, 3)",
+    "crossing edge sign invariant (2, 4)",
+    "free edge never crosses sign through zero 3",
+    "crossing edge sign invariant (3, 0)",
+    "crossing edge sign invariant (3, 1)",
+    "crossing edge sign invariant (3, 2)",
+    "crossing edge sign invariant (3, 3)",
+    "crossing edge sign invariant (3, 4)",
+    "free edge never crosses sign through zero 4",
+    "crossing edge sign invariant (4, 0)",
+    "crossing edge sign invariant (4, 1)",
+    "crossing edge sign invariant (4, 2)",
+    "crossing edge sign invariant (4, 3)",
+    "crossing edge sign invariant (4, 4)",
+    "curvette recurrence equals whole extracted Gram (1, {2: 1}, 1, {2: 2}, 0)",
+    "all boundary edges preserve log-order signs (1, {2: 1}, 1, {2: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (1, {2: 1}, 1, {2: 2}, 0)",
+    "strengthened strict fold Schur (1, {2: 1}, 1, {2: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (1, {3: 1}, 1, {4: 2}, 0)",
+    "all boundary edges preserve log-order signs (1, {3: 1}, 1, {4: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (1, {3: 1}, 1, {4: 2}, 0)",
+    "strengthened strict fold Schur (1, {3: 1}, 1, {4: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (2, {1: 1}, 1, {2: 2}, 0)",
+    "all boundary edges preserve log-order signs (2, {1: 1}, 1, {2: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (2, {1: 1}, 1, {2: 2}, 0)",
+    "strengthened strict fold Schur (2, {1: 1}, 1, {2: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (3, {2: 1}, 2, {3: 2}, 0)",
+    "all boundary edges preserve log-order signs (3, {2: 1}, 2, {3: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (3, {2: 1}, 2, {3: 2}, 0)",
+    "strengthened strict fold Schur (3, {2: 1}, 2, {3: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (4, {3: 1}, 3, {4: 2}, 0)",
+    "all boundary edges preserve log-order signs (4, {3: 1}, 3, {4: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (4, {3: 1}, 3, {4: 2}, 0)",
+    "strengthened strict fold Schur (4, {3: 1}, 3, {4: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (2, {3: 1}, 2, {3: 2}, 0)",
+    "all boundary edges preserve log-order signs (2, {3: 1}, 2, {3: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (2, {3: 1}, 2, {3: 2}, 0)",
+    "strengthened strict fold Schur (2, {3: 1}, 2, {3: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (3, {4: 1}, 2, {5: 2}, 0)",
+    "all boundary edges preserve log-order signs (3, {4: 1}, 2, {5: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (3, {4: 1}, 2, {5: 2}, 0)",
+    "strengthened strict fold Schur (3, {4: 1}, 2, {5: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (3, {8: 1}, 3, {8: 1, 4: 2}, 0)",
+    "all boundary edges preserve log-order signs (3, {8: 1}, 3, {8: 1, 4: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (3, {8: 1}, 3, {8: 1, 4: 2}, 0)",
+    "strengthened strict fold Schur (3, {8: 1}, 3, {8: 1, 4: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (4, {7: 1}, 4, {7: 1, 5: 2}, 0)",
+    "all boundary edges preserve log-order signs (4, {7: 1}, 4, {7: 1, 5: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (4, {7: 1}, 4, {7: 1, 5: 2}, 0)",
+    "strengthened strict fold Schur (4, {7: 1}, 4, {7: 1, 5: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (2, {4: 2, 1: 1}, 1, {2: 2}, 0)",
+    "all boundary edges preserve log-order signs (2, {4: 2, 1: 1}, 1, {2: 2}, 0)",
+    "fold R free parent is b1 and distinct from D (2, {4: 2, 1: 1}, 1, {2: 2}, 0)",
+    "strengthened strict fold Schur (2, {4: 2, 1: 1}, 1, {2: 2}, 0)",
+    "curvette recurrence equals whole extracted Gram (1, {2: 1}, 1, {2: 2}, 1)",
+    "all boundary edges preserve log-order signs (1, {2: 1}, 1, {2: 2}, 1)",
+    "fold R free parent is b1 and distinct from D (1, {2: 1}, 1, {2: 2}, 1)",
+    "strengthened strict fold Schur (1, {2: 1}, 1, {2: 2}, 1)",
+    "sharp family has whole free leaves 0",
+    "sharp family exact all-count Schur 0",
+    "sharp family has whole free leaves 1",
+    "sharp family exact all-count Schur 1",
+    "sharp family has whole free leaves 2",
+    "sharp family exact all-count Schur 2",
+    "sharp family has whole free leaves 4",
+    "sharp family exact all-count Schur 4",
+    "unrestricted sibling projection Schur",
+    "companion Seifert torsion group control 1",
+    "companion Seifert torsion group control 3",
+    "companion Seifert torsion group control 5",
+    "companion Seifert torsion group control 9",
+    "cable filled Seifert torsion group control 1",
+    "cable filled Seifert torsion group control 3",
+    "cable filled Seifert torsion group control 5",
+    "cable filled Seifert torsion group control 9",
+    "unrestricted integral order-divides4 certificate",
+    "integral peripheral gluing group (1, 3, 1)",
+    "integral peripheral gluing quotient mark (1, 3, 1)",
+    "integral peripheral gluing group (3, 1, 3)",
+    "integral peripheral gluing quotient mark (3, 1, 3)",
+    "integral peripheral gluing group (5, 3, 5)",
+    "integral peripheral gluing quotient mark (5, 3, 5)",
+    "integral peripheral gluing group (3, 9, 1)",
+    "integral peripheral gluing quotient mark (3, 9, 1)",
+    "integral peripheral gluing group (5, 15, 7)",
+    "integral peripheral gluing quotient mark (5, 15, 7)",
+    "order4 element in nonsingular Z8 form has self linking half (1, 2)",
+    "order4 element in nonsingular Z8 form has self linking half (1, 6)",
+    "order4 element in nonsingular Z8 form has self linking half (3, 2)",
+    "order4 element in nonsingular Z8 form has self linking half (3, 6)",
+    "order4 element in nonsingular Z8 form has self linking half (5, 2)",
+    "order4 element in nonsingular Z8 form has self linking half (5, 6)",
+    "order4 element in nonsingular Z8 form has self linking half (7, 2)",
+    "order4 element in nonsingular Z8 form has self linking half (7, 6)",
+    "all planar S4 S4 cycle types ('2,3,9', 2)",
+    "all planar S4 S4 cycle types ('2,3,9', 3)",
+    "all planar S4 S4 cycle types ('2,3,9', 4)",
+    "all planar S4 S4 cycle types ('2,3,9', 5)",
+    "all planar S4 S4 cycle types ('2,9,3', 2)",
+    "all planar S4 S4 cycle types ('2,9,3', 3)",
+    "all planar S4 S4 cycle types ('2,9,3', 4)",
+    "all planar S4 S4 cycle types ('2,9,3', 5)",
+    "all planar S4 S4 cycle types ('3,2,9', 2)",
+    "all planar S4 S4 cycle types ('3,2,9', 3)",
+    "all planar S4 S4 cycle types ('3,2,9', 4)",
+    "all planar S4 S4 cycle types ('3,2,9', 5)",
+    "all planar S4 S4 cycle types ('3,4,3', 12)",
+    "all planar S4 S4 cycle types ('3,4,3', 13)",
+    "all planar S4 S4 cycle types ('3,4,3', 14)",
+    "all planar S4 S4 cycle types ('3,4,3', 15)",
+    "all planar S4 S4 cycle types ('3,8,3', 8)",
+    "all planar S4 S4 cycle types ('3,8,3', 9)",
+    "all planar S4 S4 cycle types ('3,8,3', 10)",
+    "all planar S4 S4 cycle types ('3,8,3', 11)",
+    "all planar S4 S4 cycle types ('3,10,9', 2)",
+    "all planar S4 S4 cycle types ('3,10,9', 3)",
+    "all planar S4 S4 cycle types ('3,10,9', 4)",
+    "all planar S4 S4 cycle types ('3,10,9', 5)",
+    "all planar S4 S4 cycle types ('4,3,3', 7)",
+    "all planar S4 S4 cycle types ('4,3,3', 8)",
+    "all planar S4 S4 cycle types ('4,3,3', 9)",
+    "all planar S4 S4 cycle types ('4,3,3', 10)",
+    "all planar S4 S4 cycle types ('4,9,9', 7)",
+    "all planar S4 S4 cycle types ('4,9,9', 8)",
+    "all planar S4 S4 cycle types ('4,9,9', 9)",
+    "all planar S4 S4 cycle types ('4,9,9', 10)",
+    "all planar S4 S4 cycle types ('8,3,3', 7)",
+    "all planar S4 S4 cycle types ('8,3,3', 8)",
+    "all planar S4 S4 cycle types ('8,3,3', 9)",
+    "all planar S4 S4 cycle types ('8,3,3', 10)",
+    "all planar S4 S4 cycle types ('8,9,9', 7)",
+    "all planar S4 S4 cycle types ('8,9,9', 8)",
+    "all planar S4 S4 cycle types ('8,9,9', 9)",
+    "all planar S4 S4 cycle types ('8,9,9', 10)",
+    "all planar S4 S4 cycle types ('9,2,3', 2)",
+    "all planar S4 S4 cycle types ('9,2,3', 3)",
+    "all planar S4 S4 cycle types ('9,2,3', 4)",
+    "all planar S4 S4 cycle types ('9,2,3', 5)",
+    "all planar S4 S4 cycle types ('9,4,9', 8)",
+    "all planar S4 S4 cycle types ('9,4,9', 9)",
+    "all planar S4 S4 cycle types ('9,4,9', 10)",
+    "all planar S4 S4 cycle types ('9,4,9', 11)",
+    "all planar S4 S4 cycle types ('9,8,9', 12)",
+    "all planar S4 S4 cycle types ('9,8,9', 13)",
+    "all planar S4 S4 cycle types ('9,8,9', 14)",
+    "all planar S4 S4 cycle types ('9,8,9', 15)",
+    "all planar S4 S4 cycle types ('9,10,3', 2)",
+    "all planar S4 S4 cycle types ('9,10,3', 3)",
+    "all planar S4 S4 cycle types ('9,10,3', 4)",
+    "all planar S4 S4 cycle types ('9,10,3', 5)",
+    "all planar S4 S4 cycle types ('10,3,9', 2)",
+    "all planar S4 S4 cycle types ('10,3,9', 3)",
+    "all planar S4 S4 cycle types ('10,3,9', 4)",
+    "all planar S4 S4 cycle types ('10,3,9', 5)",
+    "all planar S4 S4 cycle types ('10,9,3', 2)",
+    "all planar S4 S4 cycle types ('10,9,3', 3)",
+    "all planar S4 S4 cycle types ('10,9,3', 4)",
+    "all planar S4 S4 cycle types ('10,9,3', 5)",
+    "all64 planar S4 S4 periodic types audited",
+    "actual winding peripheral congruence (3, 9)",
+    "cable m torsion killed by unit coefficient (3, 9)",
+    "full ordinary satellite group and R quotient (3, 9, 0)",
+    "independent spanning tree full satellite (3, 9)",
+    "full ordinary satellite group and R quotient (3, 9, 1)",
+    "full ordinary satellite group and R quotient (3, 9, 2)",
+    "full ordinary satellite group and R quotient (3, 9, 3)",
+    "actual winding peripheral congruence (9, 3)",
+    "cable m torsion killed by unit coefficient (9, 3)",
+    "full ordinary satellite group and R quotient (9, 3, 0)",
+    "independent spanning tree full satellite (9, 3)",
+    "full ordinary satellite group and R quotient (9, 3, 1)",
+    "full ordinary satellite group and R quotient (9, 3, 2)",
+    "full ordinary satellite group and R quotient (9, 3, 3)",
+    "actual winding peripheral congruence (15, 9)",
+    "cable m torsion killed by unit coefficient (15, 9)",
+    "full ordinary satellite group and R quotient (15, 9, 0)",
+    "independent spanning tree full satellite (15, 9)",
+    "full ordinary satellite group and R quotient (15, 9, 1)",
+    "full ordinary satellite group and R quotient (15, 9, 2)",
+    "full ordinary satellite group and R quotient (15, 9, 3)",
+    "actual winding peripheral congruence (9, 27)",
+    "cable m torsion killed by unit coefficient (9, 27)",
+    "full ordinary satellite group and R quotient (9, 27, 0)",
+    "independent spanning tree full satellite (9, 27)",
+    "full ordinary satellite group and R quotient (9, 27, 1)",
+    "full ordinary satellite group and R quotient (9, 27, 2)",
+    "full ordinary satellite group and R quotient (9, 27, 3)",
+    "actual winding peripheral congruence (15, 45)",
+    "cable m torsion killed by unit coefficient (15, 45)",
+    "full ordinary satellite group and R quotient (15, 45, 0)",
+    "independent spanning tree full satellite (15, 45)",
+    "full ordinary satellite group and R quotient (15, 45, 1)",
+    "full ordinary satellite group and R quotient (15, 45, 2)",
+    "full ordinary satellite group and R quotient (15, 45, 3)"
+  ],
+  "source": {
+    "all_finite_field_degrees": true,
+    "any_unramified_count": true,
+    "sole_volume_order_exactly1_required": true,
+    "smooth_affine_and_entire_disjoint_A1_required": true,
+    "common_regular_f_and_global_P1_x_required": true,
+    "retained_free_leaf_hypothesis_required": true,
+    "no_positive_negative_boundary_edge": true,
+    "no_zero_or_new_free_b1_descends_positive": true,
+    "b1_parent_squared_distance_strictly_greater1": true,
+    "fold_Schur_strictly_greater2": true,
+    "R_self_linking_strictly_between0_and_half": true,
+    "arbitrary_higher_volume_order_bound_asserted": false,
+    "complementary_source_bound_asserted": false
+  },
+  "target": {
+    "actual_primitive_binomial_two_stage_quartic_S4_S4_required": true,
+    "even_first_exponent2_required_by_PF70": true,
+    "q": "3t",
+    "r": "3s",
+    "s_t_positive_odd": true,
+    "companion_integral_H1": "Z plus Z/(2t)",
+    "companion_H": "6t*g",
+    "companion_m": "4g+epsilon*delta, epsilon odd",
+    "filled_cable_integral_H1": "Z*H plus Z/s",
+    "filled_cable_m_zero": true,
+    "filled_cable_h": "rH",
+    "end_H1": "Z/(8t) plus Z/s",
+    "marked_quotient": "Z/(2t) plus Z/s",
+    "R_exact_order": 4,
+    "R_has_no_odd_primary_component": true,
+    "two_primary_group_cyclic_order8": true,
+    "R_self_linking": "1/2",
+    "entire_S4_S4_common_source_sector_excluded": true,
+    "all_first_exponents_windings_source_orders_poles": true,
+    "complementary_source_sector_excluded": false,
+    "remaining_complementary_gate": "even first exponent2 and gcd(s,t)=1"
+  },
+  "inherited_fold_controls": [
+    {
+      "source_matrix": [
+        [
+          -5,
+          -2
+        ],
+        [
+          -2,
+          -4
+        ]
+      ],
+      "Schur": "4"
+    },
+    {
+      "source_matrix": [
+        [
+          -7,
+          -3
+        ],
+        [
+          -3,
+          -8
+        ]
+      ],
+      "Schur": "47/8"
+    },
+    {
+      "source_matrix": [
+        [
+          -3,
+          -1
+        ],
+        [
+          -1,
+          -4
+        ]
+      ],
+      "Schur": "11/4"
+    },
+    {
+      "source_matrix": [
+        [
+          -7,
+          -4
+        ],
+        [
+          -4,
+          -8
+        ]
+      ],
+      "Schur": "5"
+    },
+    {
+      "source_matrix": [
+        [
+          -13,
+          -9
+        ],
+        [
+          -9,
+          -14
+        ]
+      ],
+      "Schur": "101/14"
+    },
+    {
+      "source_matrix": [
+        [
+          -9,
+          -6
+        ],
+        [
+          -6,
+          -8
+        ]
+      ],
+      "Schur": "9/2"
+    },
+    {
+      "source_matrix": [
+        [
+          -15,
+          -8
+        ],
+        [
+          -8,
+          -14
+        ]
+      ],
+      "Schur": "73/7"
+    },
+    {
+      "source_matrix": [
+        [
+          -31,
+          -28
+        ],
+        [
+          -28,
+          -30
+        ]
+      ],
+      "Schur": "73/15"
+    },
+    {
+      "source_matrix": [
+        [
+          -33,
+          -30
+        ],
+        [
+          -30,
+          -32
+        ]
+      ],
+      "Schur": "39/8"
+    },
+    {
+      "source_matrix": [
+        [
+          -15,
+          -7
+        ],
+        [
+          -7,
+          -4
+        ]
+      ],
+      "Schur": "11/4"
+    },
+    {
+      "source_matrix": [
+        [
+          -5,
+          0
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "Schur": "5"
+    }
+  ],
+  "sharp_family": [
+    {
+      "unramified_count": 0,
+      "Gram": [
+        [
+          3
+        ]
+      ],
+      "Schur": "3"
+    },
+    {
+      "unramified_count": 1,
+      "Gram": [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "Schur": "5/2"
+    },
+    {
+      "unramified_count": 2,
+      "Gram": [
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "Schur": "7/3"
+    },
+    {
+      "unramified_count": 4,
+      "Gram": [
+        [
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "Schur": "11/5"
+    }
+  ],
+  "abstract_integral_gluing": [
+    {
+      "t": 1,
+      "s": 3,
+      "epsilon": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "t": 3,
+      "s": 1,
+      "epsilon": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "t": 5,
+      "s": 3,
+      "epsilon": 5,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          30
+        ]
+      }
+    },
+    {
+      "t": 3,
+      "s": 9,
+      "epsilon": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3,
+          72
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          3,
+          18
+        ]
+      }
+    },
+    {
+      "t": 5,
+      "s": 15,
+      "epsilon": 7,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5,
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5,
+          30
+        ]
+      }
+    }
+  ],
+  "full_satellite_controls": [
+    {
+      "q": 3,
+      "r": 9,
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "q": 3,
+      "r": 9,
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "q": 3,
+      "r": 9,
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "q": 3,
+      "r": 9,
+      "class_index": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "r": 3,
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "r": 3,
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "r": 3,
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "r": 3,
+      "class_index": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          24
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "r": 9,
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          30
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "r": 9,
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          30
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "r": 9,
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          30
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "r": 9,
+      "class_index": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          30
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "r": 27,
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3,
+          72
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          3,
+          18
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "r": 27,
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3,
+          72
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          3,
+          18
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "r": 27,
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3,
+          72
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          3,
+          18
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "r": 27,
+      "class_index": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          3,
+          72
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          3,
+          18
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "r": 45,
+      "class_index": 0,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5,
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5,
+          30
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "r": 45,
+      "class_index": 1,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5,
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5,
+          30
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "r": 45,
+      "class_index": 2,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5,
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5,
+          30
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "r": 45,
+      "class_index": 3,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          5,
+          120
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": [
+          5,
+          30
+        ]
+      }
+    }
+  ],
+  "assurance": {
+    "written_unbounded_log_order_ancestry_and_projection_proof": true,
+    "written_integral_peripheral_homology_proof": true,
+    "retained_primary_audits_reused": true,
+    "finite_controls_not_universal_proof": true,
+    "arbitrary_noncylclic_pieces_replaced": false,
+    "full_linking_square_class_asserted": false,
+    "affine_source_existence_from_sharp_cluster_asserted": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "finite_Keller_map": false,
+    "PF63_curves_declared_nonexistent": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_fold_schur_and_s4.py": "3c88d3f43e784975aa46707fa9d4420ef4780fb67d7223552920b325f8307150",
+    "FOLD_SCHUR_BOUND_AND_S4_COMMON_EXCLUSION.md": "eb705e3eeed69a0109cd2a2fd82ea88f0143059f885c49227296bb663069adfb",
+    "sources/fold-schur-s4/manifest.json": "9ce0d50275f1954055b4bda35c5f4b622a638fdcc844c659e2e7a4572f9b82be",
+    "marked_end_lattice_receipt.json": "0d0e1f435fa04818a1c3d6b8951e21d21b0234135588a91f462b92a33b951e31",
+    "binomial_periodic_receipt.json": "1915d4914d60fd87f0d09cad81f3b799297d83f19550558de4ac9e2dff3ae6d8",
+    "common_pencil_mark_receipt.json": "6782b2eed1a1b579c5d3ee8c2257e04f9b2f418073cd784d4b4144cd76c0f027",
+    "seifert_base_genus_receipt.json": "076b0c9a98adff1222b4dac472f4fa74d2496cb4cba70c110f056878af7ce789",
+    "peripheral_cone_budget_receipt.json": "3c3c63d23ee8a734bb386f7d91aae011a19879437d83c6b919e9a65ac71fa130",
+    "sources/common-pencil-mark/stacks-0C5H.html": "a5d271dc6a01b58ab8f17878e5ee0b141a90f9729636e15be89571989cd36815",
+    "sources/common-pencil-mark/stacks-0C5R.html": "83d4f16ad2202dbdf0a26ff88a24626e0f308f909ed7b242882255e400b5f2ca",
+    "sources/seifert-base-genus/hatcher-3manifolds.pdf": "c8add1a8633f36cb50de313f8f340a3f2b63b5548077d6e30f9c51a073398ff6",
+    "sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf": "5fcab10871806ce8f3c9c70b3f2b06c6535a5e218a1aac56fd1de0a00a012704"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

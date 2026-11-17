@@ -1,0 +1,129 @@
+{
+  "status": "PASS independent simple-cover sum inputs",
+  "controls": [
+    {
+      "id": "trefoil_pair",
+      "degree": 2,
+      "crossings": 6,
+      "sphere_graph_cycles": 0,
+      "H1_free_rank": 0,
+      "H1_torsion": [
+        3,
+        3
+      ],
+      "conditional_cover_rank": 2,
+      "meridional_lower": 3
+    },
+    {
+      "id": "seed_pair_shared",
+      "degree": 3,
+      "crossings": 26,
+      "sphere_graph_cycles": 1,
+      "H1_free_rank": 1,
+      "H1_torsion": [
+        1295
+      ],
+      "conditional_cover_rank": 5,
+      "meridional_lower": 7
+    },
+    {
+      "id": "seed_pair_overlap2",
+      "degree": 4,
+      "crossings": 26,
+      "sphere_graph_cycles": 0,
+      "H1_free_rank": 0,
+      "H1_torsion": [
+        1295
+      ],
+      "conditional_cover_rank": 4,
+      "meridional_lower": 7
+    },
+    {
+      "id": "seed_triple_shared",
+      "degree": 3,
+      "crossings": 39,
+      "sphere_graph_cycles": 2,
+      "H1_free_rank": 2,
+      "H1_torsion": [
+        37,
+        1295
+      ],
+      "conditional_cover_rank": 8,
+      "meridional_lower": 10
+    },
+    {
+      "id": "seed_triple_overlap2",
+      "degree": 5,
+      "crossings": 39,
+      "sphere_graph_cycles": 0,
+      "H1_free_rank": 0,
+      "H1_torsion": [
+        37,
+        1295
+      ],
+      "conditional_cover_rank": 6,
+      "meridional_lower": 10
+    },
+    {
+      "id": "seed_trefoil",
+      "degree": 3,
+      "crossings": 16,
+      "sphere_graph_cycles": 0,
+      "H1_free_rank": 0,
+      "H1_torsion": [
+        111
+      ],
+      "conditional_cover_rank": 3,
+      "meridional_lower": 5
+    },
+    {
+      "id": "seed_pair_trefoil",
+      "degree": 4,
+      "crossings": 29,
+      "sphere_graph_cycles": 0,
+      "H1_free_rank": 0,
+      "H1_torsion": [
+        3885
+      ],
+      "conditional_cover_rank": 5,
+      "meridional_lower": 8
+    },
+    {
+      "id": "seed_unknot",
+      "degree": 3,
+      "crossings": 14,
+      "sphere_graph_cycles": 0,
+      "H1_free_rank": 0,
+      "H1_torsion": [
+        35
+      ],
+      "conditional_cover_rank": 2,
+      "meridional_lower": 4
+    }
+  ],
+  "control_count": 8,
+  "T47_boundary": {
+    "double_cover_rank": 2,
+    "maximum_simple_cover_rank_bound": 3,
+    "meridional_rank": 4,
+    "seventh_power_identity_counts": {
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "nonabelian_matrix_witness_checked": true
+  },
+  "rejected_corruptions": 4,
+  "scope": "Independent finite diagram/monodromy/lifted-word/Smith and torus-boundary inputs. The all-knots additivity theorem requires the written normal-generation, lifted-sphere topology and imported Grushko theorem; finite controls do not prove those uniform statements. General meridional additivity, worldwide novelty and full MRC remain open.",
+  "input_sha256": {
+    "cover_sum_plan.json": "3c3482e3f101061d3aefadb0310073f51432a1ec4a7826aa6732529f6e7ca194",
+    "audit_cover_sums.py": "b3bc8f873ef51e3c2b33106703d96058c8877d379dd0b7c5ba1e1968b7ed50c4",
+    "cover_sum_results.json": "6d05cf4ff00d88c794bbbd7008907d594db626ace26cdd8ed586382960446181",
+    "verify_cover_sums.py": "a8f0ec81120b0d2adaf7504c1c546b7b951336ee09ef2bba4611c84d4eb7a6fc",
+    "verify_integer_lifts.py": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309",
+    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
+    "three_sheet_splice_verification.json": "cdf76193af77a03c594f85a68b3feef1246a9f309c0fc04bd433529f9e9b923f",
+    "periodic_twist_family_verification.json": "a16f81ffc762e90272ad77828aacd6646d4cd1012bbf23050e6ba5c5ad8fb3ad",
+    "gl3f2_verification.json": "49ccff422b7ccd771bd4019a8170b6b85d83cd449667599f7d95df628239703f"
+  }
+}

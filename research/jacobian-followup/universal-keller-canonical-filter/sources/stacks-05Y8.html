@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 97.11 (05Y8): Restriction of scalars&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELS" data-tag="0ELS">7</a>: Algebraic Stacks
+    
+  
+    <li>Chapter <a href="/tag/05XE" data-tag="05XE">97</a>: Criteria for Representability
+    
+  
+    <li class="active">Section <a href="/tag/05Y8" data-tag="05Y8">97.11</a>: Restriction of scalars
+    <span id="citation">(<a href="/tag/05Y8/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/05Y0">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/05XM">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="criteria-section-restriction-of-scalars" class="tex-section"><span data-tag="05Y8">97.11</span> Restriction of scalars</h2>
+
+<p>
+Suppose $X \to Z \to B$ are morphisms of algebraic spaces over $S$. Given a scheme $T$ we can consider pairs $(a, b)$ where $a : T \to B$ is a morphism and $b : T \times _{a, B} Z \to X$ is a morphism over $Z$. Picture 
+</p>
+<div class="equation" id="05Y9">
+    <span class="equation-label"><a href="/tag/05Y9" data-tag="05Y9">97.11.0.1</a></span>
+  <div>\begin{equation}  \label{criteria-equation-pairs} \vcenter { \xymatrix{ &  X \ar[d] \\  T \times _{a, B} Z \ar[d] \ar[ru]^ b \ar[r] &  Z \ar[d] \\  T \ar[r]^ a &  B } } \end{equation}</div>
+</div>
+<p>
+ In this situation we can define a functor 
+</p>
+<div class="equation" id="05YA">
+    <span class="equation-label"><a href="/tag/05YA" data-tag="05YA">97.11.0.2</a></span>
+  <div>\begin{equation}  \label{criteria-equation-restriction-of-scalars} \text{Res}_{Z/B}(X) : (\mathit{Sch}/S)^{opp} \longrightarrow \textit{Sets}, \quad T \longmapsto \{ (a, b)\text{ as above}\}  \end{equation}</div>
+</div>
+<p>
+ Sometimes we think of this as a functor defined on the category of schemes over $B$, in which case we drop $a$ from the notation. 
+</p>
+<p>
+<article class="env-lemma" id="05YB">
+  <p><a class="environment-identifier" href="/tag/05YB">Lemma <span data-tag="05YB">97.11.1</span>.</a> Let $S$ be a scheme. Let $X \to Z \to B$ be morphisms of algebraic spaces over $S$. Then </p>
+  <p><ol>
+  <li><p>
+$\text{Res}_{Z/B}(X)$ is a sheaf on $(\mathit{Sch}/S)_{fppf}$. 
+</p>
+</li><li><p>
+If $T$ is an algebraic space over $S$, then there is a canonical bijection 
+</p>
+<div class="equation">
+  \[  \mathop{\mathrm{Mor}}\nolimits _{\mathop{\mathit{Sh}}\nolimits ((\mathit{Sch}/S)_{fppf})}(T, \text{Res}_{Z/B}(X)) = \{ (a, b)\text{ as in }(05Y9)\}   \]
+</div>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $T$ be an algebraic space over $S$. Let $\{ T_ i \to T\} $ be an fppf covering of $T$ (as in Topologies on Spaces, Section <a href="/tag/03Y7" data-tag="03Y7">73.7</a>). Suppose that $(a_ i, b_ i) \in \text{Res}_{Z/B}(X)(T_ i)$ such that $(a_ i, b_ i)|_{T_ i \times _ T T_ j} = (a_ j, b_ j)|_{T_ i \times _ T T_ j}$ for all $i, j$. Then by Descent on Spaces, Lemma <a href="/tag/04P2" data-tag="04P2">74.7.2</a> there exists a unique morphism $a : T \to B$ such that $a_ i$ is the composition of $T_ i \to T$ and $a$. Then $\{ T_ i \times _{a_ i, B} Z \to T \times _{a, B} Z\} $ is an fppf covering too and the same lemma implies there exists a unique morphism $b : T \times _{a, B} Z \to X$ such that $b_ i$ is the composition of $T_ i \times _{a_ i, B} Z \to T \times _{a, B} Z$ and $b$. Hence $(a, b) \in \text{Res}_{Z/B}(X)(T)$ restricts to $(a_ i, b_ i)$ over $T_ i$ for all $i$. 
+    <p>
+      Note that the result of the preceding paragraph in particular implies (1). 
+    <p>
+      Let $T$ be an algebraic space over $S$. In order to prove (2) we will construct mutually inverse maps between the displayed sets. In the following when we say “pair” we mean a pair $(a, b)$ fitting into (<a href="/tag/05Y9" data-tag="05Y9">97.11.0.1</a>). 
+    <p>
+      Let $v : T \to \text{Res}_{Z/B}(X)$ be a natural transformation. Choose a scheme $U$ and a surjective étale morphism $p : U \to T$. Then $v(p) \in \text{Res}_{Z/B}(X)(U)$ corresponds to a pair $(a_ U, b_ U)$ over $U$. Let $R = U \times _ T U$ with projections $t, s : R \to U$. As $v$ is a transformation of functors we see that the pullbacks of $(a_ U, b_ U)$ by $s$ and $t$ agree. Hence, since $\{ U \to T\} $ is an fppf covering, we may apply the result of the first paragraph that deduce that there exists a unique pair $(a, b)$ over $T$. 
+    <p>
+      Conversely, let $(a, b)$ be a pair over $T$. Let $U \to T$, $R = U \times _ T U$, and $t, s : R \to U$ be as above. Then the restriction $(a, b)|_ U$ gives rise to a transformation of functors $v : h_ U \to \text{Res}_{Z/B}(X)$ by the Yoneda lemma (Categories, Lemma <a href="/tag/001P" data-tag="001P">4.3.5</a>). As the two pullbacks $s^*(a, b)|_ U$ and $t^*(a, b)|_ U$ are equal, we see that $v$ coequalizes the two maps $h_ t, h_ s : h_ R \to h_ U$. Since $T = U/R$ is the fppf quotient sheaf by Spaces, Lemma <a href="/tag/0262" data-tag="0262">65.9.1</a> and since $\text{Res}_{Z/B}(X)$ is an fppf sheaf by (1) we conclude that $v$ factors through a map $T \to \text{Res}_{Z/B}(X)$. 
+    <p>
+      We omit the verification that the two constructions above are mutually inverse. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Of course the sheaf $\text{Res}_{Z/B}(X)$ comes with a natural transformation of functors $\text{Res}_{Z/B}(X) \to B$. We will use this without further mention in the following. 
+</p>
+<p>
+<article class="env-lemma" id="05YC">
+  <p><a class="environment-identifier" href="/tag/05YC">Lemma <span data-tag="05YC">97.11.2</span>.</a> Let $S$ be a scheme. Let $X \to Z \to B$ and $B' \to B$ be morphisms of algebraic spaces over $S$. Set $Z' = B' \times _ B Z$ and $X' = B' \times _ B X$. Then </p>
+  <div class="equation">
+  \[  \text{Res}_{Z'/B'}(X') = B' \times _ B \text{Res}_{Z/B}(X)  \]
+</div>
+  <p> in $\mathop{\mathit{Sh}}\nolimits ((\mathit{Sch}/S)_{fppf})$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The equality as functors follows immediately from the definitions. The equality as sheaves follows from this because both sides are sheaves according to Lemma <a href="/tag/05YB" data-tag="05YB">97.11.1</a> and the fact that a fibre product of sheaves is the same as the corresponding fibre product of pre-sheaves (i.e., functors). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="05YD">
+  <p><a class="environment-identifier" href="/tag/05YD">Lemma <span data-tag="05YD">97.11.3</span>.</a> Let $S$ be a scheme. Let $X' \to X \to Z \to B$ be morphisms of algebraic spaces over $S$. Assume </p>
+  <p><ol>
+  <li><p>
+$X' \to X$ is étale, and 
+</p>
+</li><li><p>
+$Z \to B$ is finite locally free. 
+</p>
+</li>
+</ol></p>
+  <p> Then $\text{Res}_{Z/B}(X') \to \text{Res}_{Z/B}(X)$ is representable by algebraic spaces and étale. If $X' \to X$ is also surjective, then $\text{Res}_{Z/B}(X') \to \text{Res}_{Z/B}(X)$ is surjective. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $U$ be a scheme and let $\xi = (a, b)$ be an element of $\text{Res}_{Z/B}(X)(U)$. We have to prove that the functor 
+    <p>
+      <div class="equation">
+  \[  h_ U \times _{\xi , \text{Res}_{Z/B}(X)} \text{Res}_{Z/B}(X')  \]
+</div>
+    <p>
+       is representable by an algebraic space étale over $U$. Set $Z_ U = U \times _{a, B} Z$ and $W = Z_ U \times _{b, X} X'$. Then $W \to Z_ U \to U$ is as in Lemma <a href="/tag/05XR" data-tag="05XR">97.9.2</a> and the sheaf $F$ defined there is identified with the fibre product displayed above. Hence the first assertion of the lemma. The second assertion follows from this and Lemma <a href="/tag/05XQ" data-tag="05XQ">97.9.1</a> which guarantees that $F \to U$ is surjective in the situation above. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+At this point we can use the lemmas above to prove that $\text{Res}_{Z/B}(X)$ is an algebraic space whenever $Z \to B$ is finite locally free in almost exactly the same way as in the proof that $\mathit{Mor}_ B(Z, X)$ is an algebraic spaces, see Proposition <a href="/tag/05Y7" data-tag="05Y7">97.10.4</a>. Instead we will directly deduce this result from the following lemma and the fact that $\mathit{Mor}_ B(Z, X)$ is an algebraic space. 
+</p>
+<p>
+<article class="env-lemma" id="05YE">
+  <p><a class="environment-identifier" href="/tag/05YE">Lemma <span data-tag="05YE">97.11.4</span>.</a> Let $S$ be a scheme. Let $X \to Z \to B$ be morphisms of algebraic spaces over $S$. The following diagram </p>
+  <div class="equation">
+  \[  \xymatrix{ \mathit{Mor}_ B(Z, X) \ar[r] &  \mathit{Mor}_ B(Z, Z) \\  \text{Res}_{Z/B}(X) \ar[r] \ar[u] &  B \ar[u]_{\text{id}_ Z} }  \]
+</div>
+  <p> is a cartesian diagram of sheaves on $(\mathit{Sch}/S)_{fppf}$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. Hint: Exercise in the functorial point of view in algebraic geometry. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-proposition" id="05YF">
+  <p><a class="environment-identifier" href="/tag/05YF">Proposition <span data-tag="05YF">97.11.5</span>.</a> Let $S$ be a scheme. Let $X \to Z \to B$ be morphisms of algebraic spaces over $S$. If $Z \to B$ is finite locally free then $\text{Res}_{Z/B}(X)$ is an algebraic space. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Proposition <a href="/tag/05Y7" data-tag="05Y7">97.10.4</a> the functors $\mathit{Mor}_ B(Z, X)$ and $\mathit{Mor}_ B(Z, Z)$ are algebraic spaces. Hence this follows from the cartesian diagram of Lemma <a href="/tag/05YE" data-tag="05YE">97.11.4</a> and the fact that fibre products of algebraic spaces exist and are given by the fibre product in the underlying category of sheaves of sets (see Spaces, Lemma <a href="/tag/04T9" data-tag="04T9">65.7.2</a>). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-05Y8",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">05Y8</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="05Y8"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">05Y8</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/05Y0">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/05XM">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/criteria.pdf#nameddest=05Y8">View Section <span data-tag="05Y8">97.11</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

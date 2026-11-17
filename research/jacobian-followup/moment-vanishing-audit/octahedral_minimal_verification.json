@@ -1,0 +1,169 @@
+{
+  "completed": true,
+  "universal_moment_relations": {
+    "2": {
+      "moment_monomials": 5,
+      "moment_coefficients_sha256": "f6497a03463dc1da3172b804c3051bc472883f16814cd08d5c7fcfa2b62bec52",
+      "primitive_invariant_monomials": 5,
+      "primitive_invariant_sha256": "b04eb6d25d8a0ba91a979bddd890e5d7bec36bf8eafd17b6449f4a8e2d2803ee",
+      "full_invariant_space_dimension": 1,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "16/15",
+      "universal_polynomial_identity": true
+    },
+    "3": {
+      "moment_monomials": 13,
+      "moment_coefficients_sha256": "896a842d85628f4bb219e5cc29f60ccaa10d7934bdc271f7b5cc5bcedffa0ae6",
+      "primitive_invariant_monomials": 13,
+      "primitive_invariant_sha256": "f575137eb71c869854ea97253284747991bd9906079af3bc373465fadcee4019",
+      "full_invariant_space_dimension": 1,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "6272/715",
+      "universal_polynomial_identity": true
+    },
+    "4": {
+      "moment_monomials": 33,
+      "moment_coefficients_sha256": "324d8813bd6aa77cc42554b06bc7d764d813669e704340c30eb965bf0cf07938",
+      "primitive_invariant_monomials": 33,
+      "primitive_invariant_sha256": "110127a4759cfec0e33c78573f04028774e3d045afd8ed35fa70b980c4564024",
+      "full_invariant_space_dimension": 2,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "-200704/182325",
+      "universal_polynomial_identity": true
+    },
+    "5": {
+      "moment_monomials": 71,
+      "moment_coefficients_sha256": "49780a87ed9e605df9b830933de6961a905186d274652ebfa08b2d5871b90900",
+      "primitive_invariant_monomials": 71,
+      "primitive_invariant_sha256": "5f147e9ecbf24b8291d567329064941fa009172e57e7b1de3038b03b2c7af846",
+      "full_invariant_space_dimension": 2,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "-16859136/1154725",
+      "universal_polynomial_identity": true
+    },
+    "6": {
+      "moment_monomials": 149,
+      "moment_coefficients_sha256": "07e48489d08ca8a8cc6dbcabb63482f25a5e1943f377c25cdecbb4086421659a",
+      "primitive_invariant_monomials": 143,
+      "primitive_invariant_sha256": "93dd53c39c308d10e4c63fa450a27d6fa31471c8372ed98be115534489fb4423",
+      "full_invariant_space_dimension": 4,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "-89915392/47805615",
+      "universal_polynomial_identity": true
+    },
+    "7": {
+      "moment_monomials": 289,
+      "moment_coefficients_sha256": "db85daed3acaca5a37133ff0c079ca2642cf52c6429928e66178b3819dc78bc0",
+      "primitive_invariant_monomials": 289,
+      "primitive_invariant_sha256": "8b7f83e12b674359afcf22b7c5f173bd9cca39b3bb31006b6d8ccc1d8faba615",
+      "full_invariant_space_dimension": 4,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "-4405854208/462120945",
+      "universal_polynomial_identity": true
+    },
+    "8": {
+      "moment_monomials": 526,
+      "moment_coefficients_sha256": "f086f820a1ef34e61b6f86bae2a7d42d8c0174b2da04aec1c95167feb5b74b12",
+      "primitive_invariant_monomials": 526,
+      "primitive_invariant_sha256": "e8145b41ae0c69b84707be1475aefe504cb4ac20cf7efa5a1f3475bfbe8bc63d",
+      "full_invariant_space_dimension": 7,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "40282095616/71628746475",
+      "universal_polynomial_identity": true
+    },
+    "9": {
+      "moment_monomials": 910,
+      "moment_coefficients_sha256": "076c01efd562f91f4de80df8c78aee27b96b9a8cd342b586c36e55b73a784de1",
+      "primitive_invariant_monomials": 886,
+      "primitive_invariant_sha256": "fc2dbfb7294291d88ba7831f5bc93e7238df43fefece4e73199e7e30baa7979e",
+      "full_invariant_space_dimension": 8,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "31581162962944/2650263619575",
+      "universal_polynomial_identity": true
+    },
+    "10": {
+      "moment_monomials": 1514,
+      "moment_coefficients_sha256": "768c792499b0f475d3dc3941972d91bdb3e48052db0b1b8d7bb577be518fab6d",
+      "primitive_invariant_monomials": 1492,
+      "primitive_invariant_sha256": "5d0539e5ed0198bfd5e4c20ecbacd64b77205d9198c62c39936c9a2a068147ee",
+      "full_invariant_space_dimension": 12,
+      "all_product_columns_independent": true,
+      "coefficient_of_new_generator": "288742061375488/108660808402575",
+      "universal_polynomial_identity": true
+    }
+  },
+  "symmetric_power_invariant_dimensions_0_to_10": [
+    1,
+    0,
+    1,
+    1,
+    2,
+    2,
+    4,
+    4,
+    7,
+    8,
+    12
+  ],
+  "all_relations_verified_coefficientwise": true,
+  "projector_denominator_mutation_detected": true,
+  "direct_controls": {
+    "binary_octahedral_order": 48,
+    "fixed_dimensions_degrees_0_to_12": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "basis_ladder_harmonicity_weight_and_identity_evaluations": true,
+    "direct_matrix_haar_checks_of_middle_basis_moments": [
+      "0",
+      "112/3",
+      "18816/143",
+      "7814912/2431",
+      "1091629056/46189",
+      "409262551040/1062347",
+      "118386954764288/30808063",
+      "42529548754681856/781404507",
+      "2007960195252092928/3212440751",
+      "12180916978060195004416/1448810778701"
+    ],
+    "sharp_set_prefix_witness": "P_0+P_7,where P_j=F^j p/j!",
+    "sharp_set_prefix_first_seven_moments": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-8811708416/154040315"
+    ],
+    "sharp_set_prefix_seventh_direct_integral": "-8811708416/154040315",
+    "sharp_uniform_marker": "Q=P_8, P=P_3, m=4, degree(Q)=8",
+    "sharp_uniform_marker_moment": "-67436544/230945",
+    "imported_matrix_arithmetic_sha256": "e154855aa1e255c2910a0ea657323c6737ba5f1f7cadf2169ef3a8e19195d5d9"
+  },
+  "least_pure_only_set_prefix": 7,
+  "least_full_ordinary_ideal_prefix": 10,
+  "sharp_uniform_mixed_zero_offset_coefficient": "1/2",
+  "octahedral_MZ_counterexample_matrix_degree_lower_bound": 12,
+  "classical_HSOP_and_ring_generation_imported": true,
+  "classical_theorems_formally_verified_here": false,
+  "global_octahedral_MZ_decided": false,
+  "icosahedral_lowest_module_decided": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "python_version": "3.12.3",
+  "checker_sha256": "ce191d717ee429c17517e261f77ea013988e9920ddc3565be3ff752c9c86cb47",
+  "frozen_relations_sha256": "e82c6afcee02736b3465aa354fb006ade5cd33d8d4ae397fd3b84617cab941e5"
+}

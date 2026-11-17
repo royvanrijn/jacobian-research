@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 29.45 (01WG): Integral and finite morphisms&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELP" data-tag="0ELP">2</a>: Schemes
+    
+  
+    <li>Chapter <a href="/tag/01QL" data-tag="01QL">29</a>: Morphisms of Schemes
+    
+  
+    <li class="active">Section <a href="/tag/01WG" data-tag="01WG">29.45</a>: Integral and finite morphisms
+    <span id="citation">(<a href="/tag/01WG/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/01W7">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/04DC">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="morphisms-section-integral" class="tex-section"><span data-tag="01WG">29.45</span> Integral and finite morphisms</h2>
+
+<p>
+Recall that a ring map $R \to A$ is said to be <em>integral</em> if every element of $A$ satisfies a monic equation with coefficients in $R$. Recall that a ring map $R \to A$ is said to be <em>finite</em> if $A$ is finite as an $R$-module. See Algebra, Definition <a href="/tag/00GI" data-tag="00GI">10.36.1</a>. 
+</p>
+<p>
+<article class="env-definition" id="01WH">
+  <p><a class="environment-identifier" href="/tag/01WH">Definition <span data-tag="01WH">29.45.1</span>.</a> Let $f : X \to S$ be a morphism of schemes. </p>
+  <p><ol>
+  <li><p>
+We say that $f$ is <em>integral</em> if $f$ is affine and if for every affine open $\mathop{\mathrm{Spec}}(R) = V \subset S$ with inverse image $\mathop{\mathrm{Spec}}(A) = f^{-1}(V) \subset X$ the associated ring map $R \to A$ is integral. 
+</p>
+</li><li><p>
+We say that $f$ is <em>finite</em> if $f$ is affine and if for every affine open $\mathop{\mathrm{Spec}}(R) = V \subset S$ with inverse image $\mathop{\mathrm{Spec}}(A) = f^{-1}(V) \subset X$ the associated ring map $R \to A$ is finite. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+It is clear that integral/finite morphisms are separated and quasi-compact. It is also clear that a finite morphism is a morphism of finite type. Most of the lemmas in this section are completely standard. But note the fun Lemma <a href="/tag/01WM" data-tag="01WM">29.45.7</a> at the end of the section. 
+</p>
+<p>
+<article class="env-lemma" id="02K8">
+  <p><a class="environment-identifier" href="/tag/02K8">Lemma <span data-tag="02K8">29.45.2</span>.</a> Let $f : X \to S$ be a morphism of schemes. The following are equivalent: </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is integral. 
+</p>
+</li><li><p>
+There exists an affine open covering $S = \bigcup U_ i$ such that each $f^{-1}(U_ i)$ is affine and $\mathcal{O}_ S(U_ i) \to \mathcal{O}_ X(f^{-1}(U_ i))$ is integral. 
+</p>
+</li><li><p>
+There exists an open covering $S = \bigcup U_ i$ such that each $f^{-1}(U_ i) \to U_ i$ is integral. 
+</p>
+</li>
+</ol></p>
+  <p> Moreover, if $f$ is integral then for every open subscheme $U \subset S$ the morphism $f : f^{-1}(U) \to U$ is integral. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Algebra, Lemma <a href="/tag/02JL" data-tag="02JL">10.36.14</a>. Some details omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01WI">
+  <p><a class="environment-identifier" href="/tag/01WI">Lemma <span data-tag="01WI">29.45.3</span>.</a> Let $f : X \to S$ be a morphism of schemes. The following are equivalent: </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is finite. 
+</p>
+</li><li><p>
+There exists an affine open covering $S = \bigcup U_ i$ such that each $f^{-1}(U_ i)$ is affine and $\mathcal{O}_ S(U_ i) \to \mathcal{O}_ X(f^{-1}(U_ i))$ is finite. 
+</p>
+</li><li><p>
+There exists an open covering $S = \bigcup U_ i$ such that each $f^{-1}(U_ i) \to U_ i$ is finite. 
+</p>
+</li>
+</ol></p>
+  <p> Moreover, if $f$ is finite then for every open subscheme $U \subset S$ the morphism $f : f^{-1}(U) \to U$ is finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Algebra, Lemma <a href="/tag/02JL" data-tag="02JL">10.36.14</a>. Some details omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01WJ">
+  <p><a class="environment-identifier" href="/tag/01WJ">Lemma <span data-tag="01WJ">29.45.4</span>.</a> A finite morphism is integral. An integral morphism which is locally of finite type is finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Algebra, Lemma <a href="/tag/00GK" data-tag="00GK">10.36.3</a> and Lemma <a href="/tag/02JJ" data-tag="02JJ">10.36.5</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01WK">
+  <p><a class="environment-identifier" href="/tag/01WK">Lemma <span data-tag="01WK">29.45.5</span>.</a> A composition of finite morphisms is finite. Same is true for integral morphisms. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Algebra, Lemmas <a href="/tag/00GL" data-tag="00GL">10.7.3</a> and <a href="/tag/00GN" data-tag="00GN">10.36.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01WL">
+  <p><a class="environment-identifier" href="/tag/01WL">Lemma <span data-tag="01WL">29.45.6</span>.</a> A base change of a finite morphism is finite. Same is true for integral morphisms. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Algebra, Lemma <a href="/tag/02JK" data-tag="02JK">10.36.13</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01WM"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' integral $=$ affine $+$ universally closed '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/01WM">Lemma <span data-tag="01WM">29.45.7</span>.</a> Let $f : X \to S$ be a morphism of schemes. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+$f$ is integral, and 
+</p>
+</li><li><p>
+$f$ is affine and universally closed. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Assume (1). An integral morphism is affine by definition. A base change of an integral morphism is integral so in order to prove (2) it suffices to show that an integral morphism is closed. This follows from Algebra, Lemmas <a href="/tag/00GU" data-tag="00GU">10.36.22</a> and <a href="/tag/00HZ" data-tag="00HZ">10.41.6</a>. 
+    <p>
+      Assume (2). We may assume $f$ is the morphism $f : \mathop{\mathrm{Spec}}(A) \to \mathop{\mathrm{Spec}}(R)$ coming from a ring map $R \to A$. Let $a$ be an element of $A$. We have to show that $a$ is integral over $R$, i.e. that in the kernel $I$ of the map $R[x] \to A$ sending $x$ to $a$ there is a monic polynomial. Consider the ring $B = A[x]/(ax -1)$ and let $J$ be the kernel of the composition $R[x]\to A[x] \to B$. If $f\in J$ there exists $q\in A[x]$ such that $f = (ax-1)q$ in $A[x]$ so if $f = \sum _ i f_ ix^ i$ and $q = \sum _ iq_ ix^ i$, for all $i \geq 0$ we have $f_ i = aq_{i-1} - q_ i$. For $n \geq \deg q + 1$ the polynomial 
+    <p>
+      <div class="equation">
+  \[  \sum \nolimits _{i \geq 0} f_ i x^{n - i} = \sum \nolimits _{i \geq 0} (a q_{i - 1} - q_ i) x^{n - i} = (a - x) \sum \nolimits _{i \geq 0} q_ i x^{n - i - 1}  \]
+</div>
+    <p>
+       is clearly in $I$; if $f_0 = 1$ this polynomial is also monic, so we are reduced to prove that $J$ contains a polynomial with constant term $1$. We do it by proving $\mathop{\mathrm{Spec}}(R[x]/(J + (x))$ is empty. 
+    <p>
+      Since $f$ is universally closed the base change $\mathop{\mathrm{Spec}}(A[x]) \to \mathop{\mathrm{Spec}}(R[x])$ is closed. Hence the image of the closed subset $\mathop{\mathrm{Spec}}(B) \subset \mathop{\mathrm{Spec}}(A[x])$ is the closed subset $\mathop{\mathrm{Spec}}(R[x]/J) \subset \mathop{\mathrm{Spec}}(R[x])$, see Example <a href="/tag/056A" data-tag="056A">29.6.4</a> and Lemma <a href="/tag/01R8" data-tag="01R8">29.6.3</a>. In particular $\mathop{\mathrm{Spec}}(B) \to \mathop{\mathrm{Spec}}(R[x]/J)$ is surjective. Consider the following diagram where every square is a pullback: 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ \mathop{\mathrm{Spec}}(B) \ar@{->>}[r]^ g &  \mathop{\mathrm{Spec}}(R[x]/J) \ar[r] &  \mathop{\mathrm{Spec}}(R[x])\\  \emptyset \ar[u] \ar[r] &  \mathop{\mathrm{Spec}}(R[x]/(J + (x)))\ar[u] \ar[r] &  \mathop{\mathrm{Spec}}(R) \ar[u]^0 }  \]
+</div>
+    <p>
+       The bottom left corner is empty because it is the spectrum of $R\otimes _{R[x]} B$ where the map $R[x]\to B$ sends $x$ to an invertible element and $R[x]\to R$ sends $x$ to $0$. Since $g$ is surjective this implies $\mathop{\mathrm{Spec}}(R[x]/(J + (x)))$ is empty, as we wanted to show. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02NT">
+  <p><a class="environment-identifier" href="/tag/02NT">Lemma <span data-tag="02NT">29.45.8</span>.</a> Let $f : X \to S$ be an integral morphism. Then every point of $X$ is closed in its fibre. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Algebra, Lemma <a href="/tag/00GT" data-tag="00GT">10.36.20</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0ECG">
+  <p><a class="environment-identifier" href="/tag/0ECG">Lemma <span data-tag="0ECG">29.45.9</span>.</a> Let $f : X \to Y$ be an integral morphism. Then $\dim (X) \leq \dim (Y)$. If $f$ is surjective then $\dim (X) = \dim (Y)$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Since the dimension of $X$ and $Y$ is the supremum of the dimensions of the members of an affine open covering, we may assume $Y$ and $X$ are affine. The inequality follows from Algebra, Lemma <a href="/tag/00OJ" data-tag="00OJ">10.112.3</a>. The equality then follows from Algebra, Lemmas <a href="/tag/00OH" data-tag="00OH">10.112.1</a> and <a href="/tag/00GU" data-tag="00GU">10.36.22</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02NU">
+  <p><a class="environment-identifier" href="/tag/02NU">Lemma <span data-tag="02NU">29.45.10</span>.</a> A finite morphism is quasi-finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is implied by Algebra, Lemma <a href="/tag/00PM" data-tag="00PM">10.122.5</a> and Lemma <a href="/tag/01TJ" data-tag="01TJ">29.21.9</a>. Alternatively, all points in fibres are closed points by Lemma <a href="/tag/02NT" data-tag="02NT">29.45.8</a> (and the fact that a finite morphism is integral) and use Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a> (3) to see that $f$ is quasi-finite at $x$ for all $x \in X$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01WN">
+  <p><a class="environment-identifier" href="/tag/01WN">Lemma <span data-tag="01WN">29.45.11</span>.</a> Let $f : X \to S$ be a morphism of schemes. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+$f$ is finite, and 
+</p>
+</li><li><p>
+$f$ is affine and proper. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This follows formally from Lemma <a href="/tag/01WM" data-tag="01WM">29.45.7</a>, the fact that a finite morphism is integral and separated, the fact that a proper morphism is the same thing as a finite type, separated, universally closed morphism, and the fact that an integral morphism of finite type is finite (Lemma <a href="/tag/01WJ" data-tag="01WJ">29.45.4</a>). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="035C">
+  <p><a class="environment-identifier" href="/tag/035C">Lemma <span data-tag="035C">29.45.12</span>.</a> A closed immersion is finite (and a fortiori integral). </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      True because a closed immersion is affine (Lemma <a href="/tag/01SE" data-tag="01SE">29.11.10</a>) and a surjective ring map is finite and integral. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0CYI">
+  <p><a class="environment-identifier" href="/tag/0CYI">Lemma <span data-tag="0CYI">29.45.13</span>.</a> Let $X_ i \to Y$, $i = 1, \ldots , n$ be finite morphisms of schemes. Then $X_1 \amalg \ldots \amalg X_ n \to Y$ is finite too. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the algebra fact that if $R \to A_ i$, $i = 1, \ldots , n$ are finite ring maps, then $R \to A_1 \times \ldots \times A_ n$ is finite too. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="035D">
+  <p><a class="environment-identifier" href="/tag/035D">Lemma <span data-tag="035D">29.45.14</span>.</a> Let $f : X \to Y$ and $g : Y \to Z$ be morphisms. </p>
+  <p><ol>
+  <li><p>
+If $g \circ f$ is finite and $g$ separated then $f$ is finite. 
+</p>
+</li><li><p>
+If $g \circ f$ is integral and $g$ separated then $f$ is integral. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Assume $g \circ f$ is finite (resp. integral) and $g$ separated. The base change $X \times _ Z Y \to Y$ is finite (resp. integral) by Lemma <a href="/tag/01WL" data-tag="01WL">29.45.6</a>. The morphism $X \to X \times _ Z Y$ is a closed immersion as $Y \to Z$ is separated, see Schemes, Lemma <a href="/tag/01KT" data-tag="01KT">26.21.11</a>. A closed immersion is finite (resp. integral), see Lemma <a href="/tag/035C" data-tag="035C">29.45.12</a>. The composition of finite (resp. integral) morphisms is finite (resp. integral), see Lemma <a href="/tag/01WK" data-tag="01WK">29.45.5</a>. Thus we win. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="03BB">
+  <p><a class="environment-identifier" href="/tag/03BB">Lemma <span data-tag="03BB">29.45.15</span>.</a> Let $f : X \to Y$ be a morphism of schemes. If $f$ is finite and a monomorphism, then $f$ is a closed immersion. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This reduces to Algebra, Lemma <a href="/tag/04VT" data-tag="04VT">10.107.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0B3I">
+  <p><a class="environment-identifier" href="/tag/0B3I">Lemma <span data-tag="0B3I">29.45.16</span>.</a> A finite morphism is projective. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $f : X \to S$ be a finite morphism. Then $f_*\mathcal{O}_ X$ is a quasi-coherent $\mathcal{O}_ S$-module (Lemma <a href="/tag/01SA" data-tag="01SA">29.11.5</a>) of finite type (by our definition of finite morphisms and Properties, Lemma <a href="/tag/01PB" data-tag="01PB">28.17.1</a>). We claim there is a closed immersion 
+    <p>
+      <div class="equation">
+  \[  \sigma : X \longrightarrow \mathbf{P}(f_*\mathcal{O}_ X) = \underline{\text{Proj}}_ S(\text{Sym}^*_{\mathcal{O}_ S}(f_*\mathcal{O}_ X))  \]
+</div>
+    <p>
+       over $S$, which finishes the proof. Namely, we let $\sigma $ be the morphism which corresponds (via Constructions, Lemma <a href="/tag/01O4" data-tag="01O4">27.16.11</a>) to the surjection 
+    <p>
+      <div class="equation">
+  \[  f^*f_*\mathcal{O}_ X \longrightarrow \mathcal{O}_ X  \]
+</div>
+    <p>
+       coming from the adjunction map $f^*f_* \to \text{id}$. Then $\sigma $ is a closed immersion. Namely, affine locally on $S$ we can write $X = \mathop{\mathrm{Spec}}(A)$ and $S = \mathop{\mathrm{Spec}}(R)$. Since $X$ is finite over $S$ we may choose $a_1, \ldots , a_ n \in A$ generating $A$ as an $R$-module. Then the $R$-algebra map $R[T_0, T_1, \ldots , T_ n] \to \text{Sym}_ R^*(A)$ sending $T_0$ to $1$ and $T_ i$ to $a_ i$ for $1 \leq i \leq n$ is surjective. Whence $\mathbf{P}(f_*\mathcal{O}_ X)$ is a closed subscheme of $\mathbf{P}^ n_ S$ by Constructions, Lemma <a href="/tag/01N0" data-tag="01N0">27.11.3</a>. Thus it suffices to prove that the induced morphism $X \to \mathbf{P}^ n_ S$ is a closed immersion (see for example, Lemma <a href="/tag/01QP" data-tag="01QP">29.2.2</a>). The reader checks that $X \to \mathbf{P}^ n_ S$ has image contained in the open $D_+(T_0) \cong \mathbf{A}^ n_ S$ and that $X \to \mathbf{A}^ n_ S$ corresponds to the surjective $R$-algebra map $R[x_1, \ldots , x_ n] \to \text{Sym}_ R^*(A)$ sending $x_ i$ to $a_ i$. Whence $X \to \mathbf{P}^ n_ S$ is an immersion (as a composition of a closed immersion and an open immersion). Since $X$ is finite over $S$ the image of this immersion is closed (this uses Lemma <a href="/tag/01WN" data-tag="01WN">29.45.11</a>, Lemma <a href="/tag/01W6" data-tag="01W6">29.42.7</a>, and Constructions, Lemma <a href="/tag/01NH" data-tag="01NH">27.13.4</a>). We conclude by Schemes, Lemma <a href="/tag/01IQ" data-tag="01IQ">26.10.4</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-01WG",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">01WG</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="01WG"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">01WG</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/01W7">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/04DC">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/morphisms.pdf#nameddest=01WG">View Section <span data-tag="01WG">29.45</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

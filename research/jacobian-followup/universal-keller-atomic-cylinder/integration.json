@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T01:29:32.091441+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UANORMAFF1",
+    "UASELFATOM1",
+    "UACYLDICH1",
+    "UACYLCAN1",
+    "UACYLDEF1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAM1",
+    "UANONLINEARCOST1",
+    "UAFIXDEFECT1",
+    "UAACYCLICATOM1",
+    "UAFINATOM1",
+    "UAINFRASELF1",
+    "UA1RIGIDCYL1",
+    "UATORUSDOM1",
+    "UASYLOWDEF1",
+    "UAVERTRED1",
+    "UAPPDEGREE1",
+    "UAALLATOM1",
+    "UAQTILT1",
+    "UAACYCLICGAL1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UANORMAFF1",
+    "UASELFATOM1",
+    "UACYLDICH1",
+    "UACYLCAN1",
+    "UACYLDEF1"
+  ],
+  "old_entry_count": 2266,
+  "new_entry_count": 2271,
+  "unchanged_existing_entry_count": 2251,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "ff338d19ed6c13b872b3db9726b8b86b220778a860fda3461a3bc30eff4b0a76",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "ffe5d5e3d185ae19",
+    "UANORMAFF1": "f6697eef92fd05a5",
+    "UASELFATOM1": "6f27e1a5fb1321ec",
+    "UACYLDICH1": "581c9c29f1b38882",
+    "UACYLCAN1": "7a664ee967dd99d6",
+    "UACYLDEF1": "50c9cf42cb8d6f1d"
+  },
+  "updated_lessons": [
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "3b1e3d7f4059c09687d51b7a54212861a8b69fae55aff316769d191bb0c6edc3",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "Normal-affine atomicity category exactly finite primitive monodromy in nontrivial degree.",
+    "Acyclicity removed from the constant-unit torsion-canonical primitive self-map criterion.",
+    "Nonfinite self-atomic cylinder base degree forced to one.",
+    "Metabelian hypothesis removed for nonfinite atomic canonical torus-cylinder reduction.",
+    "Exact nonfinite etale degree spectrum on the one fixed fourfold Gm times A3 is every N>=3, with infinitely many stably inequivalent atomic volume-preserving representatives in every degree; finite atomic degrees there are exactly primes."
+  ],
+  "assurance": "Written all-degree proofs with pinned classical Ax and Zariski Main inputs and narrow exact controls. No independent whole-proof replay, formalization, external review or publication-priority certificate.",
+  "additional_consumer_metadata_only": [
+    "UAALLATOM1",
+    "UAQTILT1",
+    "UAACYCLICGAL1"
+  ],
+  "preserved_entries_checksum_scope": "Final integration snapshot, excluding all named new and changed existing claims; original unchanged-entry checksum was replayed after undoing only the three later named consumer additions."
+}

@@ -1,0 +1,138 @@
+{
+  "claims": [
+    "KMFI155",
+    "KMFI156",
+    "KMFI157"
+  ],
+  "previous_goal_turn": "progress: KMFI153--154 closed the entire arbitrary-matrix single-square family.",
+  "translation_density_lemma": {
+    "V_b": "u*a",
+    "u(b)": 0,
+    "u(a)": "nonzero",
+    "R_b": 0,
+    "F": "nonzero polynomial, no homogeneity or degree bound",
+    "conclusion": "div(FV)=R*F impossible",
+    "highest_coefficient": "u*J_u=-J",
+    "rational_negative_degree_control_retained": true,
+    "all_four_canonical_families_gate": "A03=0"
+  },
+  "zero_stratum_lemma": {
+    "V_and_h_vanish_on_linear_stratum": true,
+    "normal_derivative": "invertible over k(t)",
+    "F": "any nonzero polynomial",
+    "leading_normal_order": "any m>=0",
+    "normal_block": "B+(Bq)*d_q logJ",
+    "whole_normal_determinant": "(m+1)*detB",
+    "arbitrary_codimension_determinant_controls": [
+      {
+        "codimension": 1,
+        "identity": "detB*(1+eta*q)"
+      },
+      {
+        "codimension": 2,
+        "identity": "detB*(1+eta*q)"
+      },
+      {
+        "codimension": 3,
+        "identity": "detB*(1+eta*q)"
+      }
+    ],
+    "entire_gauge_limits": [
+      {
+        "initial_order": 0,
+        "whole_limit": "checked",
+        "determinant": "(m+1)*detB",
+        "upper_right_retained": true
+      },
+      {
+        "initial_order": 1,
+        "whole_limit": "checked",
+        "determinant": "(m+1)*detB",
+        "upper_right_retained": true
+      },
+      {
+        "initial_order": 2,
+        "whole_limit": "checked",
+        "determinant": "(m+1)*detB",
+        "upper_right_retained": true
+      },
+      {
+        "initial_order": 3,
+        "whole_limit": "checked",
+        "determinant": "(m+1)*detB",
+        "upper_right_retained": true
+      }
+    ],
+    "upper_right_tangential_block_retained": true,
+    "singular_normal_and_negative_rational_controls_retained": true
+  },
+  "single_shear_short_closure": {
+    "families": [
+      "K_C",
+      "K_D"
+    ],
+    "all_A_and_scalar_degrees": true,
+    "A03=0_then_invariant_critical_hyperplane_forces_matched_square": true
+  },
+  "mixed_chain_closure": {
+    "A03": 0,
+    "A02": "nonzero unless matched",
+    "normal_determinant": "A02*A13*y^2",
+    "normal_lemma_forces_A13": 0,
+    "highest_y_z_degree": "negative u Euler eigenvalue",
+    "all_A_and_scalar_degrees": true
+  },
+  "complete_rank4_quadratic_result": {
+    "all_four_primitive_families_closed": true,
+    "primitive_degree2_full_rank": "impossible",
+    "nonprimitive_survivors": "V=u*M*p, G=u*F, exactly KMFI121 with G divisible by u",
+    "degree11_rank4_group": "A11 by KMFI122",
+    "all_degree_field": "exact KMFI121 one-variable polynomial",
+    "new_unbounded_group_classification_claimed": false,
+    "homogeneous_rank4_exceptional11_minimum_primitive_direction_degree": 3,
+    "general_cubic_and_higher_inputs_solved": false,
+    "genuinely_nonhomogeneous_inputs_solved": false
+  },
+  "actual_normalized_lower_rank_controls": [
+    {
+      "family": "B",
+      "s": 1,
+      "lambda": 3,
+      "rankDX": 3,
+      "entire_sweep_Jacobian": "gamma^4"
+    },
+    {
+      "family": "B",
+      "s": 3,
+      "lambda": 5,
+      "rankDX": 3,
+      "entire_sweep_Jacobian": "gamma^4"
+    },
+    {
+      "family": "D",
+      "s": 1,
+      "lambda": 3,
+      "rankDX": 2,
+      "entire_sweep_Jacobian": "gamma^4"
+    },
+    {
+      "family": "D",
+      "s": 3,
+      "lambda": 5,
+      "rankDX": 2,
+      "entire_sweep_Jacobian": "gamma^4"
+    }
+  ],
+  "actual_nonprimitive_full_rank_control": {
+    "source": "divisor_homotopy.affine_survivor",
+    "normalization": "entire spectral identity and four norm moments by KMFI121",
+    "full_rank_minor": "l^4",
+    "coordinate_gcd": "u",
+    "expanded_full_sweep_Jacobian_claimed": false
+  },
+  "new_occurrence_action_claimed": false,
+  "actual_PSL11_input_supplied": false,
+  "absolute_exceptional_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

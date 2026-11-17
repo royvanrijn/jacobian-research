@@ -1,0 +1,47 @@
+{
+  "claim": "SIC2B33AXIALQUAD20261117",
+  "status": "PASS",
+  "checker_sha256": "e2919d0061cfdc7da51d1e43192d3f3481902f26367835b2f519177d7e928f7b",
+  "model_sha256": "13986b574802f8f3319bb0d400c185ef7ddaf6787dd334bef57aa91f61c024f5",
+  "certificate_sha256": "32c89b993909f0b82383fe06ee08cccf5eba8235baac4b6cbb1c51ec0c5b7cb1",
+  "safe_container_sha256": "e0b007addb547936643d0a7923f83935b341bc808c6cc774e9b740b008ee6703",
+  "result": "No pure H1=0 phase with nonzero semisimple repeated-eigenvalue B, H3 unrestricted.",
+  "sufficient_consecutive_prefix": 10,
+  "minimal_prefix": "NOT CLAIMED",
+  "checks": {
+    "highest3": {
+      "method": "exact QQ Singular standard-basis unit calculation",
+      "prefix": 10,
+      "elapsed_seconds": 32.15,
+      "input_sha256": "7d04206698f986c403f76e14f8d6a48d33a1db80f3dbbdb31dc117d6ff9eb095",
+      "output_sha256": "38ac50ab72c992e4a580d7889eaab2e8d8374a52a97ab8b224bd646b1efdd19b",
+      "direct_unit_multiplier_export": "INCOMPLETE;45-second tracked export timeout retained"
+    },
+    "highest2": {
+      "method": "direct rational polynomial unit identity",
+      "prefix": 7,
+      "multiplier_term_counts": [
+        1,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "highest1": {
+      "method": "fourth residual is a nonzero rational constant",
+      "prefix": 4
+    }
+  },
+  "safe_container": "H1=0, seven cubic equations for the closed harmonic-square quadratic cone; pure points force rank B<=1.",
+  "full_original_Image_cutoff_on_pure_container": "m>coordinate_degree Q",
+  "Singular_version": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00",
+  "msolve_dependency": false,
+  "ordinary_ideal_stabilization": "NOT ASSERTED",
+  "unrestricted_Image33": "OPEN",
+  "boundary": "Largest exclusion retains exact rational Singular dependency. No inference from finite-field units. Distinct-eigenvalue and nonsemisimple repeated-eigenvalue B are not covered. No independent specialist, external or formal verification.",
+  "elapsed_seconds": 41.326
+}

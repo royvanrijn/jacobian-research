@@ -1,0 +1,71 @@
+{
+  "as_of": "2026-11-14",
+  "primary_sources": [
+    {
+      "path_relative_to_affine_complements": "sources/universal-regular-end/dubouloz-dfs-0401225v3.pdf",
+      "url": "https://arxiv.org/pdf/math/0401225v3",
+      "title": "Adrien Dubouloz, Danielewski-Fieseler surfaces, arXiv math/0401225v3 (2004)",
+      "used_statement": "Section2.8, printed/PDF page8: both directional affine-translation functions must have a pole for every pair of origins; this is an affineness iff criterion for the entire line-bundle torsor. Proposition2.6 and Section2.7 fix the weight and cocycle conventions.",
+      "sha256": "ab91bdee493de8fb111e8d0111b6b8f22bf21a0344ea42345615f11fe2ba9a23",
+      "bytes": 356085,
+      "imported_not_independently_reproved": true,
+      "visually_inspected_PDF_pages": [
+        8
+      ]
+    },
+    {
+      "path_relative_to_affine_complements": "sources/universal-regular-end/garcia-barroso-ploski-milnor-2018.pdf",
+      "url": "https://ergarcia.webs.ull.es/2018-GB-Ploski-libro-Campillo.pdf",
+      "title": "Evelia R. Garcia Barroso and Arkadiusz Ploski, On the Milnor Formula in Arbitrary Characteristic, Springer (2018),119-133",
+      "used_statement": "Proposition2.1(iii)-(iv), printed121-122/PDF3-4: conductor, derivative/Dedekind and c=2delta; Corollary3.4, printed128/PDF10: characteristic-zero polar identity for an arbitrary smooth coordinate l. Used for irreducible Gamma with l=y, not a positive-characteristic generalization.",
+      "sha256": "4de1abd582b340341feb2a3226de91dda2c1c7d14f63b1dd436a065a177b498b",
+      "bytes": 290262,
+      "imported_not_independently_reproved": true,
+      "visually_inspected_PDF_pages": [
+        3,
+        4,
+        10
+      ]
+    },
+    {
+      "path_relative_to_affine_complements": "sources/universal-regular-end/lokteva-iterated-surgery-2023.pdf",
+      "url": "https://eprints.gla.ac.uk/302069/2/302069.pdf",
+      "title": "Lisa Lokteva, Surgeries on Iterated Torus Knots Bounding Rational Homology 4-Balls, Proc. Edinburgh Math. Soc.66(2023),557-578, author version",
+      "used_statement": "Proposition5, author printed8/PDF9: positive algebraic iterated cabling and characteristic recurrence. Proof of Proposition6, author printed10-11/PDF11-12, Figures3-4: resolution S3 graph, last curvette framing p_last*alpha_last, and surgery leaf N=n-p_last*alpha_last, converted to a negative-two chain. No rational homology ball classification imported. Proposition6 itself assumes n>=F+2; the distance-one case in the new note is proved by its own marked chain and cable-filling calculation, not imported from that proposition.",
+      "sha256": "67da15dccaf283d4e6423f748f7777c083f95efa67c1e38926525fbc702c5d0b",
+      "bytes": 2314876,
+      "imported_not_independently_reproved": true,
+      "visually_inspected_PDF_pages": [
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "path_relative_to_affine_complements": "sources/regular-sector-end/neumann-plumbing-1981.pdf",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/neumann008.pdf",
+      "title": "Walter Neumann, A calculus for plumbing applied to the topology of complex surface singularities and degenerating complex curves, Trans AMS268(1981),299-344",
+      "used_statement": "Proposition2.1 R6 in both closed and punctured versions; Theorem6.1(III) linear-chain lens spaces. The already visually audited R6 has one remaining branch, zero removed punctures and no extra summands.",
+      "sha256": "61a02e73da4a47216f39dceb22887b2bd3d584ba2418049458d90b3dedd1657b",
+      "bytes": 3507720,
+      "imported_not_independently_reproved": true,
+      "relevant_statement_visually_checked": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/quartic-cabling/ito-cable-slopes.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/690DE16138573D0051FF223F9269C77C/S0008439520000338a.pdf/note_on_chirally_cosmetic_surgery_on_cable_knots.pdf",
+      "title": "Tetsuya Ito, A Note on Chirally Cosmetic Surgery on Cable Knots, Canad.Math.Bull.64(2021),163-173",
+      "used_statement": "Section2 printed165/PDF3, fully rendered and visually inspected: cable filling distance zero is reducible; distance one gives companion filling m/(n*winding^2); distance greater than one retains a two-exceptional-fiber Seifert JSJ piece. The source uses winding q, whereas the new note uses winding p.",
+      "sha256": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+      "bytes": 404165,
+      "imported_not_independently_reproved": true,
+      "relevant_statement_visually_checked": true
+    }
+  ],
+  "visual_audit_scope": "Complete cited criterion/formula pages rendered and visually inspected, including Lokteva Proposition5 on PDF9 and the full Figures3-4 argument on PDF11-12. No claim to have independently reproved the primary imports.",
+  "retained_peripheral_and_stable_end_inputs": [
+    "sources/regular-sector-end/manifest.json",
+    "sources/coprime-regular-end/manifest.json"
+  ],
+  "novelty_priority_claimed": false
+}

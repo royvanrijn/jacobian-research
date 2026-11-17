@@ -1,0 +1,274 @@
+{
+  "status": "PASS independent degree8/9 double-transposition gate",
+  "degrees": [
+    {
+      "degree": 8,
+      "catalogue": {
+        "class_size": 210,
+        "centralizer_size": 192,
+        "prefix_counts": [
+          1,
+          10,
+          458,
+          58429
+        ],
+        "four_tuple_orbits": 58429,
+        "raw_normalized_tuples": 9261000,
+        "transitive_orbits": 18450,
+        "transitive_raw_normalized_tuples": 3529440,
+        "stabilizer_histogram": {
+          "1": 39474,
+          "2": 16473,
+          "4": 1639,
+          "6": 412,
+          "8": 320,
+          "12": 13,
+          "16": 55,
+          "32": 22,
+          "64": 7,
+          "96": 13,
+          "192": 1
+        }
+      },
+      "targets": [
+        {
+          "name": "13a_129",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_135",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_136",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_137",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_194",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_196",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_197",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_198",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_233",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_234",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_239",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_242",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_243",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_244",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_253",
+          "orbits_replayed": 18450,
+          "hits": 0
+        },
+        {
+          "name": "13a_265",
+          "orbits_replayed": 18450,
+          "hits": 0
+        }
+      ]
+    },
+    {
+      "degree": 9,
+      "catalogue": {
+        "class_size": 378,
+        "centralizer_size": 960,
+        "prefix_counts": [
+          1,
+          10,
+          508,
+          86231
+        ],
+        "four_tuple_orbits": 86231,
+        "raw_normalized_tuples": 54010152,
+        "transitive_orbits": 6561,
+        "transitive_raw_normalized_tuples": 6298560,
+        "stabilizer_histogram": {
+          "1": 34342,
+          "2": 38666,
+          "4": 6351,
+          "6": 5049,
+          "8": 771,
+          "12": 391,
+          "16": 64,
+          "24": 528,
+          "32": 22,
+          "48": 26,
+          "64": 7,
+          "480": 13,
+          "960": 1
+        }
+      },
+      "targets": [
+        {
+          "name": "13a_129",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_135",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_136",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_137",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_194",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_196",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_197",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_198",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_233",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_234",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_239",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_242",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_243",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_244",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_253",
+          "orbits_replayed": 6561,
+          "hits": 0
+        },
+        {
+          "name": "13a_265",
+          "orbits_replayed": 6561,
+          "hits": 0
+        }
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "name": "T(4,7)",
+      "pairs": 14,
+      "image_orders": {
+        "1344": 14
+      }
+    },
+    {
+      "name": "T(4,15)",
+      "pairs": 15,
+      "image_orders": {
+        "20160": 15
+      }
+    }
+  ],
+  "rejected_corruptions": [
+    "degree8:false_stabilizer",
+    "degree8:lost_transitivity",
+    "degree9:false_stabilizer",
+    "degree9:lost_transitivity",
+    "false_torus_meridian",
+    "false_upper_trace"
+  ],
+  "class_boundary": {
+    "A8_double_transpositions": 210,
+    "GL4_F2_transvections": 105,
+    "A8_order": 20160,
+    "AGL3_F2_order": 1344
+  },
+  "seconds": 9.52116,
+  "input_sha256": {
+    "double_transposition_plan.json": "0703e3dbfea4e7348811f448122f0cb344fab7b562e10b74e3599ccb60471e31",
+    "double_transposition_degree9_plan.json": "4ace2d88225ee69d542a52640ee8248e59f19e1ef47e34d30cfa3fbc68122cdd",
+    "double_transposition_results.json": "2e68be9e4f4251424add15cf09f954f47bd64be3b36e498e9ca81cf7e118cee0",
+    "double_transposition9_results.json": "17c89d680ea918bd74f69091a49979ed3535959e591c4eede24c1d337270225a",
+    "double_transposition_catalogue.json": "156323e53b794c3da0f4f19f24cc98c3e734704118f000af42d6b8dcd7eb6752",
+    "double_transposition9_catalogue.json": "9f4d65ceaa85c26672d546d05fc8d2541d5e28dc8b7ea3290dcc5e2bfb6212ea",
+    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286"
+  },
+  "scope": "Full orbit coverage and independent pointwise/geometric negative checks on exactly16 targets. Torus topology/meridian convention and uniform graph bound are written arguments; parser reused only for legacy arc index transport. Full MRC and all16 targets remain open."
+}

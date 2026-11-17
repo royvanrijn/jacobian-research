@@ -1,0 +1,136 @@
+{
+  "nonlinear_control": {
+    "potential": "w**3 - w**2 + z**2",
+    "surface": [
+      "4*w**3*z - 4*w**2*z - 3*w**2 + 2*w + 4*z**3",
+      "w**3 - w**2 + w*(4*w**3*z - 4*w**2*z - 3*w**2 + 2*w + 4*z**3) + z**2",
+      "w**2*(4*w**3*z - 4*w**2*z - 3*w**2 + 2*w + 4*z**3) + 2*w*(w**3 - w**2 + z**2) + z"
+    ],
+    "root_polynomial": "Y1**2*w**4 - 4*Y1*Y2*w**3 + 2*Y1*Y3*w**2 + Y1*w + 4*Y2**2*w**2 - 4*Y2*Y3*w - Y2 + Y3**2 + w**3 - w**2",
+    "branch_target": [
+      4,
+      1,
+      1
+    ],
+    "branch_polynomial": "16*w**4 - 15*w**3 + 11*w**2",
+    "stage": [
+      "3*v1 + v3 + 1",
+      "1 - 2*v1",
+      "v2"
+    ],
+    "gamma_quotients": [
+      "4*g**3*u1**3*u2 - 4*g**2*u1**2*u2 + 4*g**2*u2**3 - 3*g*u1**2 + 2*u1 + 1",
+      "4*g**3*u1**4*u2 - 4*g**2*u1**3*u2 + 4*g**2*u1*u2**3 - 2*g*u1**3 + u1**2 + u1 + u2**2",
+      "4*g**5*u1**5*u2 - 4*g**4*u1**4*u2 + 4*g**4*u1**2*u2**3 - g**3*u1**4 + g**2*u1**2 + 2*g**2*u1*u2**2 + u2"
+    ],
+    "full_Jacobian": -2,
+    "actual_affine_space": true,
+    "degree": 4,
+    "geometric_group": "S4",
+    "arithmetic_group": "S4"
+  },
+  "degeneration_controls": [
+    {
+      "e": 2,
+      "limit": "H*c*(-T + Z) + a*(T**2 + Z**2)",
+      "smoothness_certificate_constant": "2*c**2"
+    },
+    {
+      "e": 3,
+      "limit": "H**2*c*(-T + Z) + a*(T**3 + Z**3)",
+      "smoothness_certificate_constant": "4*c**2"
+    },
+    {
+      "e": 4,
+      "limit": "H**3*c*(-T + Z) + a*(T**4 + Z**4)",
+      "smoothness_certificate_constant": "6*c**2"
+    },
+    {
+      "e": 5,
+      "limit": "H**4*c*(-T + Z) + a*(T**5 + Z**5)",
+      "smoothness_certificate_constant": "8*c**2"
+    }
+  ],
+  "one_parameter_finite_controls": [
+    {
+      "h": "w",
+      "lambda_polynomial": "1",
+      "degree": 3,
+      "delta": 1
+    },
+    {
+      "h": "w",
+      "lambda_polynomial": "w",
+      "degree": 6,
+      "delta": 1
+    },
+    {
+      "h": "w**2",
+      "lambda_polynomial": "1",
+      "degree": 5,
+      "delta": 1
+    },
+    {
+      "h": "w**2",
+      "lambda_polynomial": "w",
+      "degree": 8,
+      "delta": 2
+    },
+    {
+      "h": "w**3",
+      "lambda_polynomial": "1",
+      "degree": 7,
+      "delta": 1
+    },
+    {
+      "h": "w**3",
+      "lambda_polynomial": "w",
+      "degree": 10,
+      "delta": 1
+    }
+  ],
+  "delta_two": {
+    "root_equation": "-12*Y2**2 - 12*Y2*w**4 + w**8 + w**2*(12*Y1**2 + 24*Y3)",
+    "degree": 8,
+    "quadratic_block": true,
+    "affine_Keller_lift_claimed": false
+  },
+  "PSL2_11_finite_sweep_gates": {
+    "natural": [
+      {
+        "k": 4,
+        "delta": 2,
+        "fixed": 2,
+        "min_dimension": 6
+      },
+      {
+        "k": 10,
+        "delta": 1,
+        "fixed": 1,
+        "min_dimension": 12
+      }
+    ],
+    "exceptional": [
+      {
+        "k": 1,
+        "delta": 4,
+        "fixed": 3,
+        "min_dimension": 3
+      },
+      {
+        "k": 2,
+        "delta": 3,
+        "fixed": 2,
+        "min_dimension": 4
+      },
+      {
+        "k": 4,
+        "delta": 2,
+        "fixed": 1,
+        "min_dimension": 6
+      }
+    ]
+  },
+  "arbitrary_PSL2_11_occurrence_decided": false,
+  "full_classification_complete": false
+}

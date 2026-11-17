@@ -1,0 +1,46 @@
+{
+  "completed": true,
+  "checker_sha256": "86b9154dcefa54ef524b5ded90d0a05f131179bfb8f049e7c601e85831e68756",
+  "certificate_sha256": "f02c3d9e76e115e7331ce009bed7ca0e094aab752e27b63e1b30b54074d60add",
+  "runtime_seconds": 13.388,
+  "sympy_version": "1.14.0",
+  "rank_universal_strata": 5,
+  "rank_models": 7,
+  "budget_models": 4,
+  "direct_seed_identities": 33,
+  "rank_one_gate": 95,
+  "transverse_complement_gate": 127,
+  "cusp_complement_gate": 130,
+  "tangent_full_gate": 120,
+  "conic_gate_unchanged": 130,
+  "full_W_linear_gate": 130,
+  "global_sufficient_pure_prefix": 130,
+  "odd_sufficient_pure_prefix": 130,
+  "homogeneous_sufficient_pure_prefix": 130,
+  "least_prefix_interval": [
+    20,
+    130
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    130
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    130
+  ],
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 130,
+    "cusp": 130,
+    "transverse": 130,
+    "tangent": 120,
+    "triangle": 130,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "optimality_proved": false,
+  "written_analytic_or_global_proof_certified_by_checker": false,
+  "boundary": "Exact auxiliary rank hierarchy/factor/source/symbolic-order identities,33 original-quotient seed replays in11 retained models, principal stopped-budget identities and all-rank/row arithmetic. Universal all-degree and complete coefficient/rank coverage, period comparison and analytic exclusions remain written inputs. Rational witnesses are retained. No independent replay, external review, formal verification or expanded global radical cofactors."
+}

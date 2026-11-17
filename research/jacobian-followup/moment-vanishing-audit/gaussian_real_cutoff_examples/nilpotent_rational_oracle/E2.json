@@ -1,0 +1,13 @@
+{
+  "status": "DECIDED",
+  "zero": true,
+  "method": "exact finite nilpotent powers",
+  "nilpotence_index": 3,
+  "original_orders": [
+    1,
+    0,
+    null
+  ],
+  "C": "1/2",
+  "E": "2"
+}

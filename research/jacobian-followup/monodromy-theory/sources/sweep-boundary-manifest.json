@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      "path": "sources/stacks-03H0.html",
+      "url": "https://stacks.math.columbia.edu/tag/03H0",
+      "title": "The Stacks Project, Stein factorization, Noetherian case",
+      "locator": "Theorem37.53.4: proper map factors through finite normalization.",
+      "bytes": 17698,
+      "sha256": "dac42f128e663313c962f5a814bd8b7623d433acef47513a8630ca60283bfc45"
+    },
+    {
+      "path": "sources/stacks-0BFP.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BFP",
+      "title": "The Stacks Project, Proper birational morphisms at normal codimension-one points",
+      "locator": "Lemma33.17.3(2): proper birational morphism is an isomorphism over codimension-one DVR points.",
+      "bytes": 17338,
+      "sha256": "1715af2753bb039ae57ebd0d69d3b4efa1050bdd538629f8b17f4dae0751d4c1"
+    }
+  ],
+  "scope": "Proper line-family compactification and codimension-one normalization comparison; horizontal-line rigidity and all-sweep inertia are proved in the note. No full Keller action classification is inferred."
+}

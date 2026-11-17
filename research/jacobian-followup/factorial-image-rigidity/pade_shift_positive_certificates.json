@@ -1,0 +1,383 @@
+{
+  "status": "all_n_certificates_verified",
+  "parameter": "u=n-2>=0",
+  "a_values": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "certificates": [
+    {
+      "a": 2,
+      "status": "all_indices_certified",
+      "shift": "n + 2",
+      "H_coefficients": [
+        "1",
+        "9*n - 3"
+      ],
+      "b_parameters": [
+        "10*n - 1"
+      ],
+      "positive_ratio_certificates": [
+        {
+          "accepted": true,
+          "numerator": [
+            "19",
+            "10"
+          ],
+          "denominator": [
+            "1"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        }
+      ],
+      "reconstruction_identity": true,
+      "all_n_ge2_certified": true,
+      "all_a_claimed": false,
+      "counterexample_claimed": false,
+      "scope": "ordinary X^a(A+B*X); a supplied integer, arbitrary complex coefficients"
+    },
+    {
+      "a": 3,
+      "status": "all_indices_certified",
+      "shift": "2*n + 2",
+      "H_coefficients": [
+        "1",
+        "8*n - 2",
+        "64*n**2 - 48*n + 8"
+      ],
+      "b_parameters": [
+        "2*(6*n + 1)",
+        "4*(21*n**2 - 7*n + 2)"
+      ],
+      "positive_ratio_certificates": [
+        {
+          "accepted": true,
+          "numerator": [
+            "26",
+            "12"
+          ],
+          "denominator": [
+            "1"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "288",
+            "308",
+            "84"
+          ],
+          "denominator": [
+            "1"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        }
+      ],
+      "reconstruction_identity": true,
+      "all_n_ge2_certified": true,
+      "all_a_claimed": false,
+      "counterexample_claimed": false,
+      "scope": "ordinary X^a(A+B*X); a supplied integer, arbitrary complex coefficients"
+    },
+    {
+      "a": 4,
+      "status": "all_indices_certified",
+      "shift": "3*n + 2",
+      "H_coefficients": [
+        "1",
+        "11*n - 3",
+        "75*n**2 - 45*n + 6",
+        "625*n**3 - 750*n**2 + 275*n - 30"
+      ],
+      "b_parameters": [
+        "20*n + 3",
+        "4*(596*n**3 + 355*n**2 - 19*n + 10)/(20*n + 3)",
+        "(976*n**3 - 576*n**2 + 247*n - 22)/(20*n + 3)"
+      ],
+      "positive_ratio_certificates": [
+        {
+          "accepted": true,
+          "numerator": [
+            "43",
+            "20"
+          ],
+          "denominator": [
+            "1"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "24640",
+            "34212",
+            "15724",
+            "2384"
+          ],
+          "denominator": [
+            "43",
+            "20"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "5976",
+            "9655",
+            "5280",
+            "976"
+          ],
+          "denominator": [
+            "43",
+            "20"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        }
+      ],
+      "reconstruction_identity": true,
+      "all_n_ge2_certified": true,
+      "all_a_claimed": false,
+      "counterexample_claimed": false,
+      "scope": "ordinary X^a(A+B*X); a supplied integer, arbitrary complex coefficients"
+    },
+    {
+      "a": 5,
+      "status": "all_indices_certified",
+      "shift": "4*n + 2",
+      "H_coefficients": [
+        "1",
+        "14*n - 4",
+        "126*n**2 - 78*n + 12",
+        "864*n**3 - 864*n**2 + 264*n - 24",
+        "7776*n**4 - 12960*n**3 + 7560*n**2 - 1800*n + 144"
+      ],
+      "b_parameters": [
+        "2*(15*n + 2)",
+        "10*(445*n**3 + 165*n**2 + 18*n + 2)/(15*n + 2)",
+        "4*(373750*n**6 + 493875*n**5 - 32700*n**4 + 20750*n**3 + 6801*n**2 + 120*n - 54)/(5*(15*n + 2)*(445*n**3 + 165*n**2 + 18*n + 2))",
+        "16*(15*n + 2)*(450*n**4 - 385*n**3 + 219*n**2 - 45*n + 4)/(5*(445*n**3 + 165*n**2 + 18*n + 2))"
+      ],
+      "positive_ratio_certificates": [
+        {
+          "accepted": true,
+          "numerator": [
+            "64",
+            "30"
+          ],
+          "denominator": [
+            "1"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "42580",
+            "60180",
+            "28350",
+            "4450"
+          ],
+          "denominator": [
+            "32",
+            "15"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "157576760",
+            "441999696",
+            "514226004",
+            "317256600",
+            "109324200",
+            "19915500",
+            "1495000"
+          ],
+          "denominator": [
+            "681280",
+            "1282230",
+            "904950",
+            "283825",
+            "33375"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "2513920",
+            "6611232",
+            "7005648",
+            "3736240",
+            "1002000",
+            "108000"
+          ],
+          "denominator": [
+            "21290",
+            "30090",
+            "14175",
+            "2225"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        }
+      ],
+      "reconstruction_identity": true,
+      "all_n_ge2_certified": true,
+      "all_a_claimed": false,
+      "counterexample_claimed": false,
+      "scope": "ordinary X^a(A+B*X); a supplied integer, arbitrary complex coefficients"
+    },
+    {
+      "a": 6,
+      "status": "all_indices_certified",
+      "shift": "5*n + 2",
+      "H_coefficients": [
+        "1",
+        "17*n - 5",
+        "190*n**2 - 120*n + 20",
+        "1666*n**3 - 1680*n**2 + 554*n - 60",
+        "12005*n**4 - 17150*n**3 + 8575*n**2 - 1750*n + 120",
+        "117649*n**5 - 252105*n**4 + 204085*n**3 - 77175*n**2 + 13426*n - 840"
+      ],
+      "b_parameters": [
+        "42*n + 5",
+        "2*(12222*n**3 + 4161*n**2 + 439*n + 40)/(42*n + 5)",
+        "(58927176*n**6 + 33972588*n**5 + 10517202*n**4 + 803337*n**3 + 329037*n**2 + 38782*n - 1520)/((42*n + 5)*(12222*n**3 + 4161*n**2 + 439*n + 40))",
+        "2*(42*n + 5)*(256678852968*n**10 + 600963901668*n**9 - 10680180642*n**8 + 14987459295*n**7 + 28642935330*n**6 + 1550896818*n**5 - 587104702*n**4 + 220339491*n**3 - 30466034*n**2 + 2951008*n + 45952)/((12222*n**3 + 4161*n**2 + 439*n + 40)*(58927176*n**6 + 33972588*n**5 + 10517202*n**4 + 803337*n**3 + 329037*n**2 + 38782*n - 1520))",
+        "(12222*n**3 + 4161*n**2 + 439*n + 40)*(256824*n**5 - 288900*n**4 + 205674*n**3 - 66875*n**2 + 11654*n - 728)/(58927176*n**6 + 33972588*n**5 + 10517202*n**4 + 803337*n**3 + 329037*n**2 + 38782*n - 1520)"
+      ],
+      "positive_ratio_certificates": [
+        {
+          "accepted": true,
+          "numerator": [
+            "89",
+            "42"
+          ],
+          "denominator": [
+            "1"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "230676",
+            "327494",
+            "154986",
+            "24444"
+          ],
+          "denominator": [
+            "89",
+            "42"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "5034556200",
+            "14379370270",
+            "17117891187",
+            "10872192633",
+            "3885873642",
+            "741098700",
+            "58927176"
+          ],
+          "denominator": [
+            "10265082",
+            "19417679",
+            "13774251",
+            "4342464",
+            "513324"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "101743369115401440",
+            "528649624959673272",
+            "1245706797082152208",
+            "1756597353975907318",
+            "1646343824419553288",
+            "1076336083094262852",
+            "500599476535922784",
+            "165525241638274398",
+            "38102324559598296",
+            "5809492832087232",
+            "527390276554656",
+            "21561023649312"
+          ],
+          "denominator": [
+            "580675642995600",
+            "2482881282282660",
+            "4719064940934496",
+            "5232813168312153",
+            "3730739226390978",
+            "1773510682913757",
+            "562157175954420",
+            "114572257500096",
+            "13624151961168",
+            "720207945072"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        },
+        {
+          "accepted": true,
+          "numerator": [
+            "576279396720",
+            "2376756207036",
+            "4304598314616",
+            "4470369939121",
+            "2910754583559",
+            "1216410531012",
+            "318509432496",
+            "47760155712",
+            "3138902928"
+          ],
+          "denominator": [
+            "5034556200",
+            "14379370270",
+            "17117891187",
+            "10872192633",
+            "3885873642",
+            "741098700",
+            "58927176"
+          ],
+          "variable": "u=n-2",
+          "coefficient_order": "increasing degree"
+        }
+      ],
+      "reconstruction_identity": true,
+      "all_n_ge2_certified": true,
+      "all_a_claimed": false,
+      "counterexample_claimed": false,
+      "scope": "ordinary X^a(A+B*X); a supplied integer, arbitrary complex coefficients"
+    }
+  ],
+  "universal_evidence": "PADE_ADJACENT_MONOMIALS.tex: strip, cross determinant and dissipative matrices",
+  "all_a_claimed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

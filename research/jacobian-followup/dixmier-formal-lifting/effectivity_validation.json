@@ -1,0 +1,21 @@
+{
+  "claim": "QEF1",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "prior_claim_consumer_markers": "PASS",
+  "new_method_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "exact_PBW_control_receipt": "PASS",
+  "local_markdown_links_checked": 107,
+  "status_renderer": {
+    "exit_code": 1,
+    "failure": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "failure": "AssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+  },
+  "proof_sha256": "feb140d884ca940414cbd04e0a4b611af7a2d608288f256931544a12f5fb9994",
+  "boundary": "Dual nonvanishing criterion assumes an algebraic torsion-free rank-one module; free framing remains separate. Simplicity, local-nilpotence and all-N statements use written proofs with symbolic controls. No bounded Long lift, external review, formal verification or DC2 solution.",
+  "goal_status": "active"
+}

@@ -1,0 +1,28 @@
+{
+  "basis_sha256": "fb64b06f30f7de79653d443b9cbc311849a9d25e16c45ec5ed978ecc3620e59a",
+  "candidate_forms": 277,
+  "cube_rank": 165,
+  "executed_source_snapshot": "smt_companion_pencil19_before_sat_guard.py",
+  "free_kernel_columns": 112,
+  "input_sha256": "e7e94cce206ca0724b98ec88b42254ea8947fe6d7bb9a601bd0053cb10fdfff1",
+  "scope": "Finite277-form changed-tensor pencil with one common nonzero real parameter, mandatory pure-tau cube and normalized last coefficient row, and arbitrary real coefficients in the other18 outputs. Both queries returned UNKNOWN, not UNSAT. The SAT numeric-value guard was corrected only after these completed queries; the exact executed source is preserved by the source snapshot. No finite-pool/global minimum follows.",
+  "seconds": 41.54,
+  "solver_version": "4.15.3",
+  "source_sha256": "f5d93d297d14fbdacfc10850fa5197c9b509fe1ef7e78a08f76028cb96dfc868",
+  "status": "complete-with-unknown",
+  "tests": [
+    {
+      "bound": 88,
+      "reason": "canceled",
+      "solver_seconds": 20.001,
+      "status": "unknown"
+    },
+    {
+      "bound": 97,
+      "reason": "canceled",
+      "solver_seconds": 20.0,
+      "status": "unknown"
+    }
+  ],
+  "timeout_ms_per_query": 20000
+}

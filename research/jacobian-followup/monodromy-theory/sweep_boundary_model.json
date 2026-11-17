@@ -1,0 +1,90 @@
+{
+  "claims": [
+    "KMFI100",
+    "KMFI101",
+    "KMFI102"
+  ],
+  "horizontal_ruling_implies_finite_polynomial_chart": true,
+  "all_boundary_graph_curves_included": true,
+  "generic_D_normalization_complete": true,
+  "global_finiteness_claimed_for_every_sweep": false,
+  "full_ramification_surface_inertia": [
+    "3*1^(N-3)",
+    "3^2*1^(N-6)"
+  ],
+  "both_exceptional_PSL11_sweep_field_actions_excluded": true,
+  "all_primitive_pair_and_scalar_degrees_covered": true,
+  "natural_projective_PSL2_sweep_occurrence_q": [
+    2,
+    4
+  ],
+  "small_natural_group_controls": [
+    {
+      "q": 3,
+      "order3_profiles": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "q": 5,
+      "order3_profiles": [
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "q": 7,
+      "order3_profiles": [
+        [
+          1,
+          1,
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "q": 11,
+      "order3_profiles": [
+        [
+          3,
+          3,
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "q": 13,
+      "order3_profiles": [
+        [
+          1,
+          1,
+          3,
+          3,
+          3,
+          3
+        ]
+      ]
+    }
+  ],
+  "nonfinite_control": {
+    "coefficient_equation": "kappa^2+kappa+1=0",
+    "degree": 3,
+    "delta": 1,
+    "ramification_surface": "-Y1**3/(-3*kappa - 6) + Y2*Y3",
+    "complete_pullback": "-gamma^3/(3*(-kappa-2))",
+    "source_line_collapsed": true,
+    "globally_finite": false,
+    "Keller_completion": false
+  },
+  "sharp_delta2_control": "binary SL2(F3) degree8 full inertia3^2*1^2",
+  "absolute_exceptional_Keller_action_decided": false,
+  "full_action_spectrum_complete": false,
+  "goal_complete": false
+}

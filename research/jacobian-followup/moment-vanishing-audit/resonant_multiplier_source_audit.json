@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/RESONANT_MULTIPLIERS_AND_UNIFORM_CHARTS.md",
+  "canonical_proof_sha256": "0f1e12d909e2c916e7c49c92865e3ac37b0178ff6add865b34cd9f33fddb509e",
+  "claims": [
+    "GMCRESONANCE20261115",
+    "MVUNIFORMCHART20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_resonant_multiplier_charts.py",
+  "checker_sha256": "e6b9a437cbcda0577eb44624ef50ebdda40604ad1a015e5c5655ea5de6b14f73",
+  "receipt": "jacobian-followup/moment-vanishing-audit/resonant_multiplier_verification.json",
+  "receipt_sha256": "d82955ffd73619ee0fe870506e801463d69ba49307761c20fdf4d14b45770fb7",
+  "prior_frontier": "jacobian-followup/moment-vanishing-audit/resonant_multiplier_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "LINEAR_MIXED_CUTOFF_FROM_B_FUNCTION.md": "9c5842fe7f67dadc417b6c259f981caed14fc3d44f47401f572d49bcfc433ad1",
+    "linear_mixed_cutoff_source_audit.json": "69b36c7025fd8bf48fa046273933c98726f3d8805a9595890c7d0affb3334654",
+    "linear_mixed_cutoff_verification.json": "4d335c3ddcab8c36c5e4b1ea372aa91d136dedd58f456450a8f69dbc90194731",
+    "verify_linear_mixed_cutoff.py": "9e010754c82fd4d0fd071923757f08b88c6824c15dfabeda968a0690b8a0386e",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "GENERIC_POINT_FINITE_MOMENT_ALGORITHM.md": "3529684d1c4b173beb6b3ee9f2dc6cc580dbec3f4fb0c1785e5b8848eac26900",
+    "ALL_DEGREE_STRUCTURE_AND_BARRIERS.md": "f6c93353723419d9e308f2ae1d1bc7da8264f15040f8e13bc2ee366cdfac4625",
+    "GAUSSIAN_SHEAR_NORMAL_FORM_AND_TRANSFERS.md": "20043bb3f092918fa8b1d6a55c8c5d03cc9fa9c403683cf1c66a7ab1e40388cb",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989"
+  },
+  "software": "SymPy1.14.0;general Gaussian chart construction not implemented",
+  "primary_scope_audit": [
+    {
+      "url": "https://arxiv.org/pdf/math/0003155v1",
+      "paper": "Anton Leykin,Definitive Computation of Bernstein-Sato Polynomials,arXivmath/0003155v1,24March2000",
+      "later_publication": "Constructibility of the Set of Polynomials with a Fixed Bernstein-Sato Polynomial:an Algorithmic Approach,JSC32(6),2001,663--675,DOI10.1006/jsco.2001.0488",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/leykin_bernstein_sato_math0003155v1.pdf",
+      "sha256": "1df6fb37f7d9ba80cc489924d69674db258b8a50b99c0ab2b2443af2a26bc50b",
+      "read": "Introduction;sections4--6,parametric Weyl Groebner specialization lemma4.2 and algorithm4.4 framework;algorithms6.2/6.5,theorem6.4 and proof",
+      "use": "Classical f^s constructibility and specialization discipline;scope audit only",
+      "boundary": "Does not provide Gaussian exponential integration b-function charts or uniform polynomial degree bounds for resonant images;no theorem transferred and no producer implementation executed"
+    },
+    {
+      "url": "https://www.lab.twcu.ac.jp/oaku/MSJSI2015oakuLecture.pdf",
+      "paper": "Oaku,ASPM77(2018),Algorithms for D-modules,integration,and generalized functions with applications to statistics",
+      "read": "Retained theorem5.4/lifting audit from preceding turn",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/oaku_algorithms_statistics_2018.pdf",
+      "sha256": "a52f26dd9ffae381fce7188f5869095491d086347e0854d011ba8278ca4ef2df",
+      "use": "Previously imported b-function recurrence input,not a newly imported uniform-family theorem"
+    }
+  ],
+  "resonance_theorem": {
+    "generator_degrees": "Only nonnegative integer roots of a valid scalarb",
+    "minimal_failure_degree": "For pure-null failingP,the least multiplier degree is a positive integer root of the minimal integration b-function",
+    "nonresonance_sufficiency": "No positive integer roots implies pure-nullP is GMC-safe",
+    "root_only_cutoff": "Use only resonant polynomial images in offset/slope maxima",
+    "positive_resonance_implies_failure": false,
+    "minimal_b_numeric_value_computed_for_Z2W": false
+  },
+  "safe_kernel_example": {
+    "P": "Z^2 W",
+    "Gaussian_image": "K[t]",
+    "sharp_mixed_coefficient": 1,
+    "full_module_not_generated_by_seed1": true,
+    "algebraic_other_branch": "Residue atZ=1/t of sum_b b!A_b/(Z-tZ^2)^(b+1)",
+    "other_branch_seed": "-1",
+    "other_branch_Z": "-1/t",
+    "consequence": "Every validb,including minimalb,has a positive integer root althoughP is safe",
+    "analytic_cycle_used": false
+  },
+  "uniform_chart_theorem": {
+    "hypotheses": "Specialization-valid fixed scalarb lift with negative-weight remainder;uniform polynomial degree bounds for every positive-resonance amplitude",
+    "conclusion": "Computable relatively closed pure-null safe locus and a common rational cutoff on the supplied chart",
+    "tail_ideal": "Full ordinary ideal of positive pure moments and marked tails above the supplied degree bounds;primary finite-algebra oracle plus ACC",
+    "localization": "Inverse chart denominators represented by polynomial relations",
+    "finite_cover_consequence": "If a finite such universal cover is supplied,it gives constructible safety and a uniform fixed-n,D coefficient",
+    "global_cover_exists_claimed": false,
+    "universal_Gaussian_constructibility_claimed": false,
+    "universal_fixed_n_D_cutoff_claimed": false
+  },
+  "actual_chart": {
+    "family": "P=p(Z) of arbitrary degree",
+    "fixedb": "s",
+    "certificate": "R=-2DzDw-t sum_(k>=1) k*c_k*(-1)^k*Dw^k",
+    "pure_and_safe_locus": "c0=0",
+    "ordinary_pure_ideal": "(c0)",
+    "uniform_coefficient": 1,
+    "pointwise_sharp_coefficient": "1/ordZp ifp!=0 andc0=0;0 forzero",
+    "degree_checked_symbolically": 4,
+    "all_degree_proof_written": true
+  },
+  "uniformity_obstruction": {
+    "family": "(1+t)f_prime-a*f=0,f0=1",
+    "polynomiality_locus": "Z>=0 inA1_C",
+    "constructible": false,
+    "uniform_polynomial_degree_bound_exists": false,
+    "is_Gaussian_moment_family": false,
+    "disproves_Gaussian_uniformity": false,
+    "boundary": "Pointwise decision and generic specialization do not imply constructibility or uniform resonance-image degree bounds"
+  },
+  "small_replay": {
+    "completed": true,
+    "gapped_b_function_certificate": {
+      "b": "s*(s-3)",
+      "root_degrees": [
+        0,
+        3
+      ],
+      "root_amplitudes_used": 5,
+      "amplitudes_reconstructed": 36,
+      "gap_degrees_not_used_as_bases": [
+        1,
+        2
+      ]
+    },
+    "other_branch_residue_module_checks": 63,
+    "direct_moving_residue_checks": 5,
+    "other_branch_seed_image": "-1",
+    "other_branch_Z_image": "-1/t",
+    "safe_Z2W_moment_controls": 147,
+    "positive_root_not_sufficient_for_failure_written_proof": true,
+    "parametric_Z_only_certificate_degree_checked": 4,
+    "parametric_Z_only_tail_ideal": "(c0)",
+    "parametric_Z_only_uniform_pure_cutoff": "1",
+    "nonconstructible_holonomic_control_degrees": [
+      0,
+      1,
+      5
+    ],
+    "nonconstructibility_proved_by_checker": false,
+    "universal_Gaussian_chart_cover_constructed": false,
+    "universal_fixed_n_D_cutoff_proved": false,
+    "universal_Gaussian_constructibility_proved": false,
+    "general_tail_ideal_solver_implemented": false,
+    "general_b_function_search_executed": false,
+    "producer_package_executed": false,
+    "new_cubic_prefix_computed": false,
+    "independent_replay": false,
+    "external_review": false,
+    "formal_verification": false,
+    "checker_sha256": "e6b9a437cbcda0577eb44624ef50ebdda40604ad1a015e5c5655ea5de6b14f73"
+  },
+  "new_external_theorem_imported": false,
+  "external_input": "Previously imported classical integration b-function only;Leykin f^s theorem is not transferred",
+  "fresh_exhaustive_literature_coverage": false,
+  "producer_package_executed": false,
+  "numeric_frontier_changed": false,
+  "new_cubic_prefix_computed": false,
+  "general_b_function_search_executed": false,
+  "universal_Gaussian_chart_cover_constructed": false,
+  "universal_fixed_n_D_cutoff_proved": false,
+  "universal_Gaussian_constructibility_proved": false,
+  "general_tail_ideal_solver_implemented": false,
+  "analytic_contour_input_used": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Independent review of root-only module generation,other-branch residue obstruction and conditional chart theorem",
+    "Establish specialization-valid finite Gaussian b-function charts and uniform resonant-image polynomial degree bounds,or a genuine Gaussian obstruction",
+    "General solver/stratification implementations not executed",
+    "Full-image kernel/pole/irregular geometry,normalized G,valid operator transfers and older analytic review remain open"
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "modules": [
+    {
+      "family": "cone",
+      "m": 2,
+      "dimension": 54,
+      "projective_factor": 2,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 4,
+          "available": 4
+        }
+      ]
+    },
+    {
+      "family": "cone",
+      "m": 3,
+      "dimension": 154,
+      "projective_factor": 9,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 4,
+          "available": 4
+        }
+      ]
+    },
+    {
+      "family": "cone",
+      "m": 4,
+      "dimension": 275,
+      "projective_factor": 14,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 4,
+          "available": 4
+        }
+      ]
+    },
+    {
+      "family": "cone",
+      "m": 5,
+      "dimension": 297,
+      "projective_factor": 17,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 4,
+          "available": 4
+        }
+      ]
+    },
+    {
+      "family": "cone",
+      "m": 6,
+      "dimension": 132,
+      "projective_factor": 18,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 4,
+          "available": 4
+        }
+      ]
+    },
+    {
+      "family": "shear",
+      "m": 3,
+      "dimension": 154,
+      "projective_factor": 7,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 12,
+          "available": 12
+        },
+        {
+          "place": "lost",
+          "required": 4,
+          "available": 4
+        },
+        {
+          "place": "infinity-seven",
+          "required": 48,
+          "available": 51
+        }
+      ]
+    },
+    {
+      "family": "shear",
+      "m": 4,
+      "dimension": 275,
+      "projective_factor": 12,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 12,
+          "available": 12
+        },
+        {
+          "place": "lost",
+          "required": 4,
+          "available": 4
+        },
+        {
+          "place": "infinity-seven",
+          "required": 48,
+          "available": 66
+        }
+      ]
+    },
+    {
+      "family": "shear",
+      "m": 5,
+      "dimension": 297,
+      "projective_factor": 15,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 12,
+          "available": 12
+        },
+        {
+          "place": "lost",
+          "required": 4,
+          "available": 4
+        },
+        {
+          "place": "infinity-seven",
+          "required": 48,
+          "available": 75
+        }
+      ]
+    },
+    {
+      "family": "shear",
+      "m": 6,
+      "dimension": 132,
+      "projective_factor": 16,
+      "local_bounds": [
+        {
+          "place": "triple",
+          "required": 2,
+          "available": 2
+        },
+        {
+          "place": "five-cusp",
+          "required": 6,
+          "available": 6
+        },
+        {
+          "place": "origin",
+          "required": 12,
+          "available": 12
+        },
+        {
+          "place": "lost",
+          "required": 4,
+          "available": 4
+        },
+        {
+          "place": "infinity-seven",
+          "required": 48,
+          "available": 78
+        }
+      ]
+    }
+  ],
+  "subgroup_orbit_controls": [
+    {
+      "group": "M(11)",
+      "subset_orbits": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "cone_pg_lower_bound": 2,
+      "shear_pg_lower_bound": 2
+    },
+    {
+      "group": "M(12)",
+      "subset_orbits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "cone_pg_lower_bound": 1,
+      "shear_pg_lower_bound": 1
+    },
+    {
+      "group": "PSL2(11)",
+      "subset_orbits": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        6
+      ],
+      "cone_pg_lower_bound": 5,
+      "shear_pg_lower_bound": 5
+    }
+  ],
+  "imprimitive_block_controls": [
+    {
+      "block_size": 2,
+      "subset_orbits": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "form_lower_bound": 2
+    },
+    {
+      "block_size": 3,
+      "subset_orbits": [
+        1,
+        2,
+        3,
+        4,
+        4,
+        5
+      ],
+      "form_lower_bound": 3
+    },
+    {
+      "block_size": 4,
+      "subset_orbits": [
+        1,
+        2,
+        3,
+        4,
+        4,
+        5
+      ],
+      "form_lower_bound": 3
+    },
+    {
+      "block_size": 6,
+      "subset_orbits": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "form_lower_bound": 2
+    }
+  ],
+  "configuration_actions": [
+    {
+      "action": "unordered subsets",
+      "k": 1,
+      "degree": 12,
+      "cone_pg_lower_bound": 0,
+      "shear_pg_lower_bound": 0
+    },
+    {
+      "action": "ordered distinct roots",
+      "k": 1,
+      "degree": 12,
+      "cone_pg_lower_bound": 0,
+      "shear_pg_lower_bound": 0
+    },
+    {
+      "action": "unordered subsets",
+      "k": 2,
+      "degree": 66,
+      "cone_pg_lower_bound": 1,
+      "shear_pg_lower_bound": 0
+    },
+    {
+      "action": "ordered distinct roots",
+      "k": 2,
+      "degree": 132,
+      "cone_pg_lower_bound": 1,
+      "shear_pg_lower_bound": 0
+    },
+    {
+      "action": "unordered subsets",
+      "k": 3,
+      "degree": 220,
+      "cone_pg_lower_bound": 2,
+      "shear_pg_lower_bound": 1
+    },
+    {
+      "action": "ordered distinct roots",
+      "k": 3,
+      "degree": 1320,
+      "cone_pg_lower_bound": 4,
+      "shear_pg_lower_bound": 1
+    },
+    {
+      "action": "unordered subsets",
+      "k": 4,
+      "degree": 495,
+      "cone_pg_lower_bound": 3,
+      "shear_pg_lower_bound": 2
+    },
+    {
+      "action": "ordered distinct roots",
+      "k": 4,
+      "degree": 11880,
+      "cone_pg_lower_bound": 11,
+      "shear_pg_lower_bound": 5
+    },
+    {
+      "action": "unordered subsets",
+      "k": 5,
+      "degree": 792,
+      "cone_pg_lower_bound": 4,
+      "shear_pg_lower_bound": 3
+    },
+    {
+      "action": "ordered distinct roots",
+      "k": 5,
+      "degree": 95040,
+      "cone_pg_lower_bound": 26,
+      "shear_pg_lower_bound": 16
+    },
+    {
+      "action": "unordered subsets",
+      "k": 6,
+      "degree": 924,
+      "cone_pg_lower_bound": 5,
+      "shear_pg_lower_bound": 4
+    },
+    {
+      "action": "ordered distinct roots",
+      "k": 6,
+      "degree": 665280,
+      "cone_pg_lower_bound": 57,
+      "shear_pg_lower_bound": 42
+    }
+  ],
+  "all_proper_transitive_A12_subgroup_targets_of_both_audited_families_not_stably_rational": true,
+  "classification_inputs": "Beaumont--Peterson Theorem 10 and official complete degree-twelve PrimGrp classification.",
+  "general_abstract_group_actions_excluded": false,
+  "full_classification_complete": false
+}

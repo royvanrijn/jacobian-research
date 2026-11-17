@@ -1,0 +1,581 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "dimension": 2,
+    "field": {
+      "kind": "number_field",
+      "minimal_polynomial": "a^4+1"
+    },
+    "phase_terms": [
+      [
+        [
+          1,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        "a^2"
+      ]
+    ]
+  },
+  "coefficient_field": {
+    "kind": "number_field",
+    "minimal_polynomial": "a^4+1"
+  },
+  "all_original_marker_eventual_safety": true,
+  "original_bad_marker_terms": null,
+  "exact_unlocalized_source": {
+    "rank": 1,
+    "relation_columns": 1,
+    "integration_cutoff": 0,
+    "amplitude_basis": [
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "inverse_fourier_raw_basis": [
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "relations": [
+      [
+        [
+          [
+            [
+              0,
+              1
+            ],
+            "1"
+          ]
+        ]
+      ]
+    ],
+    "adapted_fourier_basis": [
+      [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "-1"
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "a^2"
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "a^2"
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "-1"
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "integration_b_coefficients": [
+      [],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "original_recurrence_operator": [
+      [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "-1"
+      ],
+      [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "-1"
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "-1"
+      ],
+      [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "a^2"
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "-1"
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "-2"
+      ]
+    ],
+    "original_recurrence_left_witnesses": [
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      []
+    ],
+    "unprojected_relation_operators": [
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "a^2"
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "coordinate_annihilators": [
+      [
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "coordinate_annihilator_left_witnesses": [
+      [
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "1"
+          ]
+        ]
+      ]
+    ],
+    "integration_b_rational_norm": "z^4",
+    "integration_integer_roots": [
+      0
+    ],
+    "all_cutoff_amplitudes_retained": true,
+    "recurrence_degree_slope": "1",
+    "original_recurrence_identity_verified": true,
+    "original_degree_lowering_remainder": [
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "-1"
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "-1"
+      ],
+      [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "a^2"
+      ],
+      [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "1"
+      ]
+    ],
+    "polynomial_degree_bounds": [
+      0
+    ],
+    "coordinate_degree_certificates": [
+      {
+        "weight": -1,
+        "leading_indicial": "z",
+        "rational_norm": "z^4",
+        "nonnegative_integer_norm_roots": [
+          0
+        ],
+        "degree_bound": 0,
+        "left_witness_verified": true
+      }
+    ],
+    "original_relation_IBP_primitives": [
+      [
+        [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            "-1"
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            "-a^2"
+          ]
+        ]
+      ]
+    ],
+    "original_coordinate_IBP_primitives": [
+      [
+        [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            "-1"
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            "-a^2"
+          ]
+        ]
+      ]
+    ],
+    "all_original_IBP_witnesses_verified": true
+  },
+  "polynomial_hom": {
+    "dimension": 1,
+    "generator_images": [
+      [
+        [
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ]
+    ],
+    "scalar_unknowns": 1,
+    "scalar_equations": 0,
+    "degree_bound_method": "leading infinity indicial polynomial of a certified nonzero coordinate annihilator; rational norm for number fields"
+  },
+  "actual_period_selection": {
+    "all_original_base_periods_polynomial": true,
+    "selected_original_generator_periods": [
+      [
+        [
+          [
+            0
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "certificates": [
+      {
+        "origin_weight": -1,
+        "origin_indicial": "z",
+        "origin_indicial_rational_norm": "z^4",
+        "nonnegative_integer_origin_roots": [
+          0
+        ],
+        "original_jet_bound": 0,
+        "original_wick_jets": [
+          "1"
+        ],
+        "polynomial": true,
+        "no_polynomial_match_witness": null
+      }
+    ],
+    "source_relation_completeness_required": false,
+    "proof": "verified scalar IBP, infinity degree bounds, origin-jet injectivity, and verified recurrence coverage"
+  },
+  "normalized_generator_periods": [
+    [
+      [
+        [
+          0
+        ],
+        "1"
+      ]
+    ]
+  ],
+  "all_marker_cutoff": {
+    "slope": "1",
+    "intercept": "0",
+    "convention": "For every original Q, E(Q P^m)=0 for every integer m > slope*deg(Q)+intercept.",
+    "all_positive_pure": true,
+    "pure_linear_slope": "1",
+    "proof": "checked degree-lowering recurrence plus normalized periods of ALL cutoff monomials"
+  },
+  "source_contract": "whole Gaussian integration quotient; all polynomial amplitudes retained",
+  "actual_image_kernel_computed": false,
+  "time_localization_used": false,
+  "library_instrumentation": {
+    "original_library": "/usr/share/singular/LIB/dmodapp.lib",
+    "original_sha256": "d5536daf90640a8f742fd9028e0e2dd99abf4e26e36b3f110e02cef583a41793",
+    "instrumented_sha256": "5bbffb10b948b00364e1ff8857f0cc52eaefb6071f1316f2d029c30053354601",
+    "original_integration_computation_changes": false,
+    "additional_certificate_computations": true,
+    "added_exports": [
+      "gaussianIntegrationCutoff",
+      "gaussianAdaptedBasis",
+      "gaussianAmplitudeBasis",
+      "gaussianWholeRelations",
+      "gaussianIntegrationBVector",
+      "gaussianRecurrenceOperator",
+      "gaussianUnprojectedRelations"
+    ]
+  },
+  "cas_files_sha256": {
+    "source.sing": "c65dd2bd5c81e77d9e0178c9e41fde79ff1128414e09bb59c10bbe3c152743fd",
+    "source.stdout": "17b2e278994197cd05eccd8f9c6f19a9aade579aec1ec0039d6eeb42726dc9af",
+    "gaussian_dmodapp.lib": "5bbffb10b948b00364e1ff8857f0cc52eaefb6071f1316f2d029c30053354601"
+  },
+  "verification_boundary": "CAS produces the full integration presentation; its completeness is NOT needed for the decision certificate: original Gaussian IBP, scalar indicial bounds, actual Wick jets and all-marker recurrence coverage replay independently"
+}

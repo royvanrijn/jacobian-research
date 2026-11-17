@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-15",
+  "claims": [
+    "G3REPEATEDFINITE20261115"
+  ],
+  "canonical_source": "jacobian-followup/moment-vanishing-audit/REPEATED_LINE_FINITE_PREFIX.md",
+  "inputs": {
+    "exhaustive_repeated_line_proof": "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md",
+    "W_linear_gate_and_prior_degree_method": "jacobian-followup/moment-vanishing-audit/RANK_ONE_WT2_CLASSIFICATION.md",
+    "global_prefix_computability": "jacobian-followup/moment-vanishing-audit/CUBIC_FRAME_AND_PREFIX_COMPUTABILITY.md",
+    "fourteen_coefficient_phase_and_finite_gate": "jacobian-followup/moment-vanishing-audit/MIXED_PERIOD_AT_INFINITY.md"
+  },
+  "retained_receipts": {
+    "cubic_gmc_closure_verification.json": "8a3975cddb1b3eef5965b9100a3c58f815b4cb344d0f0f604bed9cdeb14ac7d1",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "cubic_frame_prefix_verification.json": "f15bf811cd86fdf0355a11fb2531a81835704477a4c6a492f090458a10f3b1fa",
+    "mixed_period_infinity_verification.json": "db97076f04605aa1c1bc4c8725116de6f7fda34f1a21db6f791af4f41545090f"
+  },
+  "exact_evidence": {
+    "checker_sha256": "6ae86dce8c44fc8ecb45428ede3c039d1552f50bd02dc928559b287d6ff5600b",
+    "rational_models": 4,
+    "elimination_t_degree_bounds": {
+      "numerator": 3,
+      "denominator": 2
+    }
+  },
+  "degree_proof": "Both isotropy charts give prefactor D^-1/2 and phase U/D with deg_t U<=3,deg_t D<=2 and actual u-degree d=3 or4 on every pure-exclusion branch. Basis reduction uses at most d leading-coefficient cancellations per connection column. H=D^2*a^d and N have degree<=4+3d. Iterated columns and polynomial cofactors give scalar degree<=(4+3d)*s*(s+1)/2 with s<=d-1. The retained no-constant-period proof implies nonzero zeroth coefficient. Formal initial-order comparison then gives pure exclusions by41/99, without assuming D(0)!=0 or convergent Wick series. The constructed surviving frames are in the fourteen-coefficient family W*(a+bZ+cT+dZ^2)+G. For d!=0 a null rotation makes G3=alpha*Z^3, so the c*d!=0 phase has actual degree4 and retained prefix93. The c=0,d=0 faces need35/92. Thus all frame branches are settled by93 and the full repeated-line gate remains99, without using the looser888 full W-linear bound.",
+  "new_finite_gate": "First99 zero moments imply all-order pure nullity for every repeated-line leading ternary cubic. Complementary exclusions need at most99; the adapted frame branches need at most93 (35/92 faces). Mixed cutoff m>3*deg Q is sharp by the repeated-leading cubic shear. The sufficient pure gate99 is not claimed optimal or global for arbitrary cubics.",
+  "proof_boundary": "Universal degree algebra for both quadratic eliminations; exact quotient reductions, denominators and iterated-column degree bounds on four rational degree-complete models including singular t=0 denominators; adapted leading-form algebra and restricted mixed quartic/numerator-degree identities;35/92/93/99 arithmetic. The q0!=0 analytic exclusions, universal cofactor proof, frame choices and all-order99 corollary remain written mathematics. No moment99 expansion, optimal pure gate, global arbitrary-cubic gate, independent review or formal verification is asserted.",
+  "literature_check": "No new external theorem imported. This quantifies the retained internal repeated-line proof using the existing rational-connection/cofactor initial-order argument; the companion source audit records the current15 November primary-source checks.",
+  "remaining": "Numerical arbitrary-cubic pure threshold and any explicit global numerical upper bound; optimal repeated-line gate; independent review; term optimality, exceptional coefficient schemes and lower-power GVC.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

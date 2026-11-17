@@ -1,0 +1,142 @@
+{
+  "status": "exact",
+  "parameter_edge_profiles": [
+    {
+      "n": 6,
+      "gamma": "501/100",
+      "degrees": [
+        4,
+        3,
+        3
+      ],
+      "negative_root_counts": [
+        4,
+        3,
+        3
+      ],
+      "pairwise_strict_interlacing": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "n": 6,
+      "gamma": "60",
+      "degrees": [
+        4,
+        3,
+        3
+      ],
+      "negative_root_counts": [
+        4,
+        3,
+        3
+      ],
+      "pairwise_strict_interlacing": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "n": 10,
+      "gamma": "901/100",
+      "degrees": [
+        6,
+        6,
+        6
+      ],
+      "negative_root_counts": [
+        6,
+        6,
+        6
+      ],
+      "pairwise_strict_interlacing": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "n": 10,
+      "gamma": "100",
+      "degrees": [
+        6,
+        6,
+        6
+      ],
+      "negative_root_counts": [
+        6,
+        6,
+        6
+      ],
+      "pairwise_strict_interlacing": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "n": 12,
+      "gamma": "1101/100",
+      "degrees": [
+        8,
+        7,
+        7
+      ],
+      "negative_root_counts": [
+        8,
+        7,
+        7
+      ],
+      "pairwise_strict_interlacing": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "n": 12,
+      "gamma": "120",
+      "degrees": [
+        8,
+        7,
+        7
+      ],
+      "negative_root_counts": [
+        8,
+        7,
+        7
+      ],
+      "pairwise_strict_interlacing": [
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "profiles_are_finite_evidence_only": true,
+  "failed_separate_input_induction": {
+    "U": "z**4 + 11*z**3 + 111*z**2 + 1100*z + 10000",
+    "V": "(z**2 + z + 1)**2",
+    "a": 10,
+    "output_section": "u**2 + 1772*u + 900000",
+    "discriminant": -460016,
+    "inputs_are_actual_common_Gamma_family": false,
+    "SFC_counterexample": false
+  },
+  "fifth_discriminant_descending_coefficients": [
+    1701,
+    98820,
+    2542590,
+    38257920,
+    374339853,
+    2503498860,
+    11681645760,
+    37903208880,
+    82533243696,
+    109328526720,
+    66701465600
+  ]
+}

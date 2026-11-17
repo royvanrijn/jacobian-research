@@ -1,0 +1,570 @@
+{
+  "status": "PASS exact named PD provenance",
+  "versions": {
+    "snappy": "3.3.2",
+    "spherogram": "2.4.1",
+    "snappy_15_knots": "1.2.1"
+  },
+  "results": [
+    {
+      "name": "13a_3145",
+      "census_lookup": "K13a3145",
+      "census_pd": [
+        [
+          4,
+          0,
+          5,
+          25
+        ],
+        [
+          0,
+          14,
+          1,
+          13
+        ],
+        [
+          6,
+          1,
+          7,
+          2
+        ],
+        [
+          2,
+          15,
+          3,
+          16
+        ],
+        [
+          8,
+          4,
+          9,
+          3
+        ],
+        [
+          12,
+          5,
+          13,
+          6
+        ],
+        [
+          14,
+          8,
+          15,
+          7
+        ],
+        [
+          18,
+          9,
+          19,
+          10
+        ],
+        [
+          10,
+          24,
+          11,
+          23
+        ],
+        [
+          20,
+          12,
+          21,
+          11
+        ],
+        [
+          16,
+          22,
+          17,
+          21
+        ],
+        [
+          22,
+          18,
+          23,
+          17
+        ],
+        [
+          24,
+          19,
+          25,
+          20
+        ]
+      ],
+      "census_DT": [
+        [
+          -14,
+          -16,
+          -26,
+          -2,
+          -4,
+          -24,
+          -6,
+          -8,
+          -22,
+          -10,
+          -12,
+          -18,
+          -20
+        ]
+      ],
+      "literal_PD_matches_after_adding_one": true,
+      "exact_full_walk_match": true,
+      "source_walk_change": {
+        "reverse": false,
+        "shift": 16,
+        "over_flip": false,
+        "sign_flip": true
+      },
+      "census_walk_change": {
+        "reverse": false,
+        "shift": 16,
+        "over_flip": false,
+        "sign_flip": true
+      },
+      "archived_KnotInfo_releases": [
+        "2026.10.5",
+        "2026.11.2"
+      ],
+      "archived_bridge_interval": [
+        3,
+        4
+      ],
+      "in_pinned_and_fetched_project_open_list": true,
+      "absent_from243_deposited_certificates": true,
+      "archived_family_metadata": {
+        "name": "13a_3145",
+        "classical_conway_name": "",
+        "conway_notation": "",
+        "montesinos_notation": "",
+        "two_bridge_notation": "",
+        "bridge_index": "[3,4]",
+        "determinant": "543",
+        "three_genus": "5"
+      }
+    },
+    {
+      "name": "13a_3147",
+      "census_lookup": "K13a3147",
+      "census_pd": [
+        [
+          4,
+          0,
+          5,
+          25
+        ],
+        [
+          0,
+          14,
+          1,
+          13
+        ],
+        [
+          6,
+          1,
+          7,
+          2
+        ],
+        [
+          2,
+          15,
+          3,
+          16
+        ],
+        [
+          8,
+          4,
+          9,
+          3
+        ],
+        [
+          12,
+          5,
+          13,
+          6
+        ],
+        [
+          14,
+          8,
+          15,
+          7
+        ],
+        [
+          20,
+          10,
+          21,
+          9
+        ],
+        [
+          10,
+          24,
+          11,
+          23
+        ],
+        [
+          18,
+          11,
+          19,
+          12
+        ],
+        [
+          16,
+          21,
+          17,
+          22
+        ],
+        [
+          22,
+          17,
+          23,
+          18
+        ],
+        [
+          24,
+          20,
+          25,
+          19
+        ]
+      ],
+      "census_DT": [
+        [
+          -14,
+          -16,
+          -26,
+          -2,
+          -4,
+          -24,
+          -6,
+          -8,
+          -22,
+          -12,
+          -10,
+          -18,
+          -20
+        ]
+      ],
+      "literal_PD_matches_after_adding_one": true,
+      "exact_full_walk_match": true,
+      "source_walk_change": {
+        "reverse": false,
+        "shift": 11,
+        "over_flip": true,
+        "sign_flip": false
+      },
+      "census_walk_change": {
+        "reverse": false,
+        "shift": 11,
+        "over_flip": true,
+        "sign_flip": false
+      },
+      "archived_KnotInfo_releases": [
+        "2026.10.5",
+        "2026.11.2"
+      ],
+      "archived_bridge_interval": [
+        3,
+        4
+      ],
+      "in_pinned_and_fetched_project_open_list": true,
+      "absent_from243_deposited_certificates": true,
+      "archived_family_metadata": {
+        "name": "13a_3147",
+        "classical_conway_name": "",
+        "conway_notation": "",
+        "montesinos_notation": "",
+        "two_bridge_notation": "",
+        "bridge_index": "[3,4]",
+        "determinant": "537",
+        "three_genus": "5"
+      }
+    },
+    {
+      "name": "13a_3148",
+      "census_lookup": "K13a3148",
+      "census_pd": [
+        [
+          4,
+          0,
+          5,
+          25
+        ],
+        [
+          0,
+          14,
+          1,
+          13
+        ],
+        [
+          6,
+          1,
+          7,
+          2
+        ],
+        [
+          2,
+          15,
+          3,
+          16
+        ],
+        [
+          8,
+          4,
+          9,
+          3
+        ],
+        [
+          12,
+          5,
+          13,
+          6
+        ],
+        [
+          14,
+          8,
+          15,
+          7
+        ],
+        [
+          20,
+          10,
+          21,
+          9
+        ],
+        [
+          10,
+          18,
+          11,
+          17
+        ],
+        [
+          22,
+          11,
+          23,
+          12
+        ],
+        [
+          16,
+          21,
+          17,
+          22
+        ],
+        [
+          18,
+          24,
+          19,
+          23
+        ],
+        [
+          24,
+          20,
+          25,
+          19
+        ]
+      ],
+      "census_DT": [
+        [
+          -14,
+          -16,
+          -26,
+          -2,
+          -4,
+          -18,
+          -6,
+          -8,
+          -22,
+          -24,
+          -10,
+          -12,
+          -20
+        ]
+      ],
+      "literal_PD_matches_after_adding_one": true,
+      "exact_full_walk_match": true,
+      "source_walk_change": {
+        "reverse": false,
+        "shift": 13,
+        "over_flip": true,
+        "sign_flip": true
+      },
+      "census_walk_change": {
+        "reverse": false,
+        "shift": 13,
+        "over_flip": true,
+        "sign_flip": true
+      },
+      "archived_KnotInfo_releases": [
+        "2026.10.5",
+        "2026.11.2"
+      ],
+      "archived_bridge_interval": [
+        3,
+        4
+      ],
+      "in_pinned_and_fetched_project_open_list": true,
+      "absent_from243_deposited_certificates": true,
+      "archived_family_metadata": {
+        "name": "13a_3148",
+        "classical_conway_name": "",
+        "conway_notation": "",
+        "montesinos_notation": "",
+        "two_bridge_notation": "",
+        "bridge_index": "[3,4]",
+        "determinant": "543",
+        "three_genus": "5"
+      }
+    },
+    {
+      "name": "13a_3149",
+      "census_lookup": "K13a3149",
+      "census_pd": [
+        [
+          4,
+          0,
+          5,
+          25
+        ],
+        [
+          0,
+          14,
+          1,
+          13
+        ],
+        [
+          6,
+          1,
+          7,
+          2
+        ],
+        [
+          2,
+          15,
+          3,
+          16
+        ],
+        [
+          8,
+          4,
+          9,
+          3
+        ],
+        [
+          12,
+          5,
+          13,
+          6
+        ],
+        [
+          14,
+          8,
+          15,
+          7
+        ],
+        [
+          22,
+          9,
+          23,
+          10
+        ],
+        [
+          10,
+          18,
+          11,
+          17
+        ],
+        [
+          20,
+          12,
+          21,
+          11
+        ],
+        [
+          16,
+          22,
+          17,
+          21
+        ],
+        [
+          18,
+          23,
+          19,
+          24
+        ],
+        [
+          24,
+          19,
+          25,
+          20
+        ]
+      ],
+      "census_DT": [
+        [
+          -14,
+          -16,
+          -26,
+          -2,
+          -4,
+          -18,
+          -6,
+          -8,
+          -22,
+          -24,
+          -12,
+          -10,
+          -20
+        ]
+      ],
+      "literal_PD_matches_after_adding_one": true,
+      "exact_full_walk_match": true,
+      "source_walk_change": {
+        "reverse": true,
+        "shift": 5,
+        "over_flip": false,
+        "sign_flip": false
+      },
+      "census_walk_change": {
+        "reverse": true,
+        "shift": 5,
+        "over_flip": false,
+        "sign_flip": false
+      },
+      "archived_KnotInfo_releases": [
+        "2026.10.5",
+        "2026.11.2"
+      ],
+      "archived_bridge_interval": [
+        3,
+        4
+      ],
+      "in_pinned_and_fetched_project_open_list": true,
+      "absent_from243_deposited_certificates": true,
+      "archived_family_metadata": {
+        "name": "13a_3149",
+        "classical_conway_name": "",
+        "conway_notation": "",
+        "montesinos_notation": "",
+        "two_bridge_notation": "",
+        "bridge_index": "[3,4]",
+        "determinant": "537",
+        "three_genus": "5"
+      }
+    }
+  ],
+  "KnotInfo_wheel_sha256": "5a91e8b77d24fb7d90a4a7048074acb97ca81cde205873983344a64458ad88a3",
+  "KnotInfo_csv_member": "database_knotinfo/csv_data/knotinfo_data_complete.csv",
+  "project_status_fetch": {
+    "date": "2026-11-17",
+    "url": "https://github.com/anaxia-research/conjecture-to-choose/blob/main/data/still_open.json",
+    "connector_reported_modified_date": "2026-10-20T14:48:34Z",
+    "names": 293
+  },
+  "priority_boundary": "Four names remain in the fetched project open list and archived[3,4] rows. This is not an exhaustive prior-family, live KnotInfo or worldwide novelty/priority audit; empty family metadata is not a proof of non-membership.",
+  "input_sha256": {
+    "audit_splice_knot_provenance.py": "a657947b09fee4f74fc75fe95a6987d138013385f098ddae885bde468683d7f6",
+    "three_sheet_splice_plan.json": "3060b3bcc63b7895b392108be37d3972872ca7ca4f88a6ed9ef6ce59c0f2c19f",
+    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
+    "audit_diagram_identity.py": "e8a68414019bd570312b03eb45fc8dac9ea667aa315c93f1393a0b9835cfd5f2",
+    "sources/knotinfo/2026.10.5_selected.json": "bdd19f21808141122ac213b842fc25dcb9bf7ef25dfc9acb3b5386c5699d461f",
+    "sources/knotinfo/2026.11.2_selected.json": "ae3e5668ed63f8fca255f9e4c02a663774120013a88173b1547f8d449bad12c6",
+    "sources/current13/data/still_open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc",
+    "sources/current13/data/certificates.json": "2db153c6153c2301c973b8d4044f6fc8a62885143ac7be0c5c7e9e86cbe7e5c1",
+    "sources/current13/still_open_2026-11-17.json": "59da540abebd4ea28b67ad86d24a946f7c6856abe79dba2fca613037e0800f16"
+  }
+}

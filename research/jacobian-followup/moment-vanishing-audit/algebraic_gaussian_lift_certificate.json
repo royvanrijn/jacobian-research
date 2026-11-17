@@ -1,0 +1,537 @@
+{
+  "compensator_precision": "(a*t - 1)**(-4)",
+  "normal_jacobian": "a**2*t**2 - 2*a*t + 1",
+  "original_controls": [
+    {
+      "H": "Z**2 + 1",
+      "dimension": 5,
+      "coefficient_ring": "QQ",
+      "phase": "-T**2*Y**4*Z - 5*T**2*Y**3*Z - 10*T**2*Y**2*Z - 10*T**2*Y*Z - 4*T**2*Z + 2*V*Y*Z + 2*V*Z + W*Z**2 + W",
+      "fixed_point_jet": "t**3 + t",
+      "D_jet": "1 - 2*t**2",
+      "inverse_D_jet": "2*t**2 + 1",
+      "original_Wick": [
+        {
+          "power": 0,
+          "moments": {
+            "1": "1",
+            "Z": "0",
+            "Y": "0",
+            "T**2": "1",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "1",
+            "W*Y": "0",
+            "V": "0"
+          }
+        },
+        {
+          "power": 1,
+          "moments": {
+            "1": "0",
+            "Z": "1",
+            "Y": "0",
+            "T**2": "0",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "0",
+            "W*Y": "2",
+            "V": "0"
+          }
+        },
+        {
+          "power": 2,
+          "moments": {
+            "1": "0",
+            "Z": "0",
+            "Y": "4",
+            "T**2": "-16",
+            "Z**2": "2",
+            "Y**2": "0",
+            "W*Z": "4",
+            "W*Y": "0",
+            "V": "-20"
+          }
+        },
+        {
+          "power": 3,
+          "moments": {
+            "1": "0",
+            "Z": "6",
+            "Y": "0",
+            "T**2": "0",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "0",
+            "W*Y": "72",
+            "V": "0"
+          }
+        }
+      ],
+      "identities": 36
+    },
+    {
+      "H": "U + Z**2 + 1",
+      "dimension": 7,
+      "coefficient_ring": "QQ",
+      "phase": "A - T**2*Y**4*Z - 5*T**2*Y**3*Z - 10*T**2*Y**2*Z - 10*T**2*Y*Z - 4*T**2*Z + U*W + 2*V*Y*Z + 2*V*Z + W*Z**2 + W",
+      "fixed_point_jet": "t**3 + t**2 + t",
+      "D_jet": "-2*t**3 - 2*t**2 + 1",
+      "inverse_D_jet": "2*t**3 + 2*t**2 + 1",
+      "original_Wick": [
+        {
+          "power": 0,
+          "moments": {
+            "1": "1",
+            "Z": "0",
+            "Y": "0",
+            "T**2": "1",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "1",
+            "W*Y": "0",
+            "V": "0",
+            "U": "0",
+            "A*Z": "0"
+          }
+        },
+        {
+          "power": 1,
+          "moments": {
+            "1": "0",
+            "Z": "1",
+            "Y": "0",
+            "T**2": "0",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "0",
+            "W*Y": "2",
+            "V": "0",
+            "U": "1",
+            "A*Z": "1"
+          }
+        },
+        {
+          "power": 2,
+          "moments": {
+            "1": "0",
+            "Z": "2",
+            "Y": "4",
+            "T**2": "-16",
+            "Z**2": "2",
+            "Y**2": "0",
+            "W*Z": "4",
+            "W*Y": "0",
+            "V": "-20",
+            "U": "0",
+            "A*Z": "0"
+          }
+        },
+        {
+          "power": 3,
+          "moments": {
+            "1": "0",
+            "Z": "6",
+            "Y": "12",
+            "T**2": "-48",
+            "Z**2": "12",
+            "Y**2": "0",
+            "W*Z": "12",
+            "W*Y": "72",
+            "V": "-60",
+            "U": "0",
+            "A*Z": "12"
+          }
+        }
+      ],
+      "identities": 44
+    },
+    {
+      "H": "Z**2",
+      "dimension": 5,
+      "coefficient_ring": "QQ",
+      "phase": "-T**2*Y**4*Z - 5*T**2*Y**3*Z - 10*T**2*Y**2*Z - 10*T**2*Y*Z - 4*T**2*Z + 2*V*Y*Z + 2*V*Z + W*Z**2",
+      "fixed_point_jet": "0",
+      "D_jet": "1",
+      "inverse_D_jet": "1",
+      "original_Wick": [
+        {
+          "power": 0,
+          "moments": {
+            "1": "1",
+            "Z": "0",
+            "Y": "0",
+            "T**2": "1",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "1",
+            "W*Y": "0",
+            "V": "0"
+          }
+        },
+        {
+          "power": 1,
+          "moments": {
+            "1": "0",
+            "Z": "0",
+            "Y": "0",
+            "T**2": "0",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "0",
+            "W*Y": "2",
+            "V": "0"
+          }
+        },
+        {
+          "power": 2,
+          "moments": {
+            "1": "0",
+            "Z": "0",
+            "Y": "0",
+            "T**2": "0",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "0",
+            "W*Y": "0",
+            "V": "0"
+          }
+        },
+        {
+          "power": 3,
+          "moments": {
+            "1": "0",
+            "Z": "0",
+            "Y": "0",
+            "T**2": "0",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "0",
+            "W*Y": "0",
+            "V": "0"
+          }
+        }
+      ],
+      "identities": 36
+    },
+    {
+      "H": "Z*e + 1",
+      "dimension": 5,
+      "coefficient_ring": "QQ[e]/e^2",
+      "phase": "-T**2*Y**4*e/2 - 5*T**2*Y**3*e/2 - 5*T**2*Y**2*e - 5*T**2*Y*e - 2*T**2*e + V*Y*e + V*e + W*Z*e + W",
+      "fixed_point_jet": "e*t**2 + t",
+      "D_jet": "-e*t + 1",
+      "inverse_D_jet": "e*t + 1",
+      "original_Wick": [
+        {
+          "power": 0,
+          "moments": {
+            "1": "1",
+            "Z": "0",
+            "Y": "0",
+            "T**2": "1",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "1",
+            "W*Y": "0",
+            "V": "0"
+          }
+        },
+        {
+          "power": 1,
+          "moments": {
+            "1": "0",
+            "Z": "1",
+            "Y": "e",
+            "T**2": "-4*e",
+            "Z**2": "0",
+            "Y**2": "0",
+            "W*Z": "e",
+            "W*Y": "0",
+            "V": "-5*e"
+          }
+        },
+        {
+          "power": 2,
+          "moments": {
+            "1": "0",
+            "Z": "2*e",
+            "Y": "0",
+            "T**2": "0",
+            "Z**2": "2",
+            "Y**2": "0",
+            "W*Z": "0",
+            "W*Y": "0",
+            "V": "0"
+          }
+        },
+        {
+          "power": 3,
+          "moments": {
+            "1": "0",
+            "Z": "0",
+            "Y": "0",
+            "T**2": "0",
+            "Z**2": "12*e",
+            "Y**2": "0",
+            "W*Z": "0",
+            "W*Y": "0",
+            "V": "0"
+          }
+        }
+      ],
+      "identities": 36
+    }
+  ],
+  "safe_normal_forms": [
+    {
+      "H": "U + (U + Z)*(-U**2 + Z)**2",
+      "p": "t**2",
+      "B": "0",
+      "classification": "safe field square remainder"
+    },
+    {
+      "H": "1+e*Z",
+      "ring": "QQ[e]/e^2",
+      "p": "e*t**2 + t",
+      "B": "e",
+      "inverse_D": "e*t + 1",
+      "classification": "safe nonreduced ordinary correction"
+    }
+  ],
+  "branch_encodings": [
+    {
+      "F": "-t + x**2 - 1",
+      "truncation": "1",
+      "k": 1,
+      "derivative_valuation": 0,
+      "normalized_polynomial": "t*u**2 + 2*u - 1",
+      "lambda_value": "2",
+      "u0": "1/2",
+      "c": "-1/8",
+      "H": "-t*z**2/2 + t*z/8 - t/128 - z/2 + 1/16",
+      "original_recovery_marker": "t**2*z - t**2/8 + t/2 + 1",
+      "full_generic_field": "K(t,g)=K(t,f); written all-amplitude proof",
+      "dimension": 7,
+      "actual_generic_rank": 2
+    },
+    {
+      "F": "-t**3 - t**2 + x**2",
+      "truncation": "t",
+      "k": 2,
+      "derivative_valuation": 1,
+      "normalized_polynomial": "t*u**2 + 2*u - 1",
+      "lambda_value": "2",
+      "u0": "1/2",
+      "c": "-1/8",
+      "H": "-t*z**2/2 + t*z/8 - t/128 - z/2 + 1/16",
+      "original_recovery_marker": "t**3*z - t**3/8 + t**2/2 + t",
+      "full_generic_field": "K(t,g)=K(t,f); written all-amplitude proof",
+      "dimension": 7,
+      "actual_generic_rank": 2
+    },
+    {
+      "F": "-t**3 + x**2 - 1",
+      "truncation": "1",
+      "k": 1,
+      "derivative_valuation": 0,
+      "normalized_polynomial": "-t**2 + t*u**2 + 2*u",
+      "lambda_value": "2",
+      "u0": "0",
+      "c": "0",
+      "H": "-t*z**2/2 + 1/2",
+      "original_recovery_marker": "t**2*z + 1",
+      "full_generic_field": "K(t,g)=K(t,f); written all-amplitude proof",
+      "dimension": 7,
+      "actual_generic_rank": 2
+    },
+    {
+      "F": "-t*x**5 - t + x",
+      "truncation": "0",
+      "k": 1,
+      "derivative_valuation": 0,
+      "normalized_polynomial": "-t**5*u**5 + u - 1",
+      "lambda_value": "1",
+      "u0": "1",
+      "c": "0",
+      "H": "t**8*z**5 + 5*t**7*z**4 + 10*t**6*z**3 + 10*t**5*z**2 + 5*t**4*z + t**3",
+      "original_recovery_marker": "t**2*z + t",
+      "full_generic_field": "K(t,g)=K(t,f); written all-amplitude proof",
+      "dimension": 7,
+      "actual_generic_rank": 5
+    },
+    {
+      "F": "-t*x + x - 1",
+      "truncation": "1",
+      "k": 1,
+      "derivative_valuation": 0,
+      "normalized_polynomial": "-t*u + u - 1",
+      "lambda_value": "1",
+      "u0": "1",
+      "c": "1",
+      "H": "z + 1",
+      "original_recovery_marker": "t**2*z + t**2 + t + 1",
+      "full_generic_field": "K(t,g)=K(t,f); written all-amplitude proof",
+      "dimension": 7,
+      "actual_generic_rank": 1
+    }
+  ],
+  "rational_cover_models": [
+    {
+      "d": 2,
+      "H": "z**2 + 1",
+      "q": "1 - z**2",
+      "implicit_polynomial": "-t*(z**2 + 1) + z",
+      "dimension": 5,
+      "actual_rank": 2,
+      "phase_degree": 7,
+      "geometric_monodromy": "S_2",
+      "global_image": "K[z,1/h,1/q], t=z/h, D_t=(h^2/q)D_z",
+      "rational_core": "K[t,1/(1-4*t^2)]",
+      "geometric_boundary_points": {
+        "origin": 1,
+        "simple_critical_values": 2
+      },
+      "geometric_length": 5,
+      "characteristic_cycle": {
+        "zero": 2,
+        "origin": 1,
+        "each_critical": 2
+      },
+      "critical_value_polynomial": "4*t**2 - 1",
+      "irreducibility_rank_monodromy_from_written_proof": true
+    },
+    {
+      "d": 3,
+      "H": "z**3 + 1",
+      "q": "1 - 2*z**3",
+      "implicit_polynomial": "-t*(z**3 + 1) + z",
+      "dimension": 5,
+      "actual_rank": 3,
+      "phase_degree": 8,
+      "geometric_monodromy": "S_3",
+      "global_image": "K[z,1/h,1/q], t=z/h, D_t=(h^2/q)D_z",
+      "rational_core": "K[t]",
+      "geometric_boundary_points": {
+        "origin": 1,
+        "simple_critical_values": 3
+      },
+      "geometric_length": 6,
+      "characteristic_cycle": {
+        "zero": 3,
+        "origin": 2,
+        "each_critical": 2
+      },
+      "critical_value_polynomial": "27*t**3 - 4",
+      "irreducibility_rank_monodromy_from_written_proof": true
+    },
+    {
+      "d": 5,
+      "H": "z**5 + 1",
+      "q": "1 - 4*z**5",
+      "implicit_polynomial": "-t*(z**5 + 1) + z",
+      "dimension": 5,
+      "actual_rank": 5,
+      "phase_degree": 10,
+      "geometric_monodromy": "S_5",
+      "global_image": "K[z,1/h,1/q], t=z/h, D_t=(h^2/q)D_z",
+      "rational_core": "K[t]",
+      "geometric_boundary_points": {
+        "origin": 1,
+        "simple_critical_values": 5
+      },
+      "geometric_length": 8,
+      "characteristic_cycle": {
+        "zero": 5,
+        "origin": 4,
+        "each_critical": 2
+      },
+      "critical_value_polynomial": "3125*t**5 - 256",
+      "irreducibility_rank_monodromy_from_written_proof": true
+    }
+  ],
+  "all_rank_marker_coefficients": [
+    {
+      "d": 2,
+      "power": 1,
+      "coefficient": "1"
+    },
+    {
+      "d": 2,
+      "power": 3,
+      "coefficient": "1"
+    },
+    {
+      "d": 2,
+      "power": 5,
+      "coefficient": "2"
+    },
+    {
+      "d": 2,
+      "power": 7,
+      "coefficient": "5"
+    },
+    {
+      "d": 3,
+      "power": 1,
+      "coefficient": "1"
+    },
+    {
+      "d": 3,
+      "power": 4,
+      "coefficient": "1"
+    },
+    {
+      "d": 3,
+      "power": 7,
+      "coefficient": "3"
+    },
+    {
+      "d": 3,
+      "power": 10,
+      "coefficient": "12"
+    },
+    {
+      "d": 5,
+      "power": 1,
+      "coefficient": "1"
+    },
+    {
+      "d": 5,
+      "power": 6,
+      "coefficient": "1"
+    },
+    {
+      "d": 5,
+      "power": 11,
+      "coefficient": "5"
+    },
+    {
+      "d": 5,
+      "power": 16,
+      "coefficient": "35"
+    }
+  ],
+  "genuine_Gaussian_trace_failure": {
+    "original_marker": "(1+2*Y/3)^2",
+    "actual_period": "1/(1-2*g^3)^2",
+    "trace": "(9*t**3 - 4)/(27*t**3 - 4)",
+    "normalized_trace": "(9*t**3 - 4)/(3*(27*t**3 - 4))",
+    "fails_global_lattice": "finite poles whereas full rational core is K[t]"
+  },
+  "rejections": [
+    "omit time pair for time-dependent H",
+    "wrong branch valuation",
+    "insufficient k",
+    "wrong branch truncation",
+    "degree one substituted in all-rank tower",
+    "boolean degree",
+    "drop actual branch recovery",
+    "damaged actual_rank",
+    "damaged rational_core",
+    "damaged geometric_monodromy",
+    "damaged geometric_length"
+  ],
+  "universal_claims_from_written_proof_not_controls": true,
+  "actual_image_kernel_computed": false
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-17",
+  "sources": [
+    {
+      "file": "sources/roucairol_formal_math0604134v2.html",
+      "sha256": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
+      "url": "https://arxiv.org/html/math/0604134v2",
+      "checked": "Section1.2:regular formal part recovered by nearby cycles;proper-image comparison with monodromy;Lemma1.4 normal-crossing exponential vanishing. Published Manuscripta124(2007),299-318 verified in primary Hien-Roucairol bibliography15 and author institutional record."
+    },
+    {
+      "file": "sources/sabbah_0706_3570v2.html",
+      "sha256": "6878d0845b69730e58c4cdc64ff32737f986c0173b4873974f650b4b9d55b71e",
+      "url": "https://arxiv.org/html/0706.3570v2",
+      "checked": "Section1.b,formula1.4 and Proposition1.5,including localized finite-pole node and monodromy. Theorem4.3 is NOT used as a quantitative bound."
+    },
+    {
+      "file": "sources/hien_roucairol_2008_published.pdf",
+      "sha256": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1",
+      "url": "https://doi.org/10.24033/bsmf.2564",
+      "checked": "Theorems2.4,3.7 supply actual period representation/perfect pairing,not log growth."
+    }
+  ],
+  "scope": "Convergent rational-parameter Laurent phases only;no new nonconvergent/all-ring Laurent descent.",
+  "novelty_assessed": false
+}

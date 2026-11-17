@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-11-14",
+  "observations": [
+    {
+      "multiplicities": [
+        2,
+        7
+      ],
+      "prime": 1073741827,
+      "residue_y": 743393613,
+      "unit_basis_recorded": true,
+      "actual_input_matches_primary_core": true,
+      "characteristic_zero_unit_identity_obtained": false,
+      "input_path": "sources/degree8-native-saturation/sector27.ms",
+      "output_path": "sources/degree8-native-saturation/sector27.out",
+      "native_replay": {
+        "elapsed_seconds": 24.526164,
+        "exit_code": 0,
+        "basis": "[1]",
+        "stdout": "basis is constant\n",
+        "stderr": ""
+      }
+    },
+    {
+      "multiplicities": [
+        4,
+        5
+      ],
+      "prime": 1073741827,
+      "residue_y": 1037248271,
+      "unit_basis_recorded": true,
+      "actual_input_matches_primary_core": true,
+      "characteristic_zero_unit_identity_obtained": false,
+      "input_path": "sources/degree8-native-saturation/sector45.ms",
+      "output_path": "sources/degree8-native-saturation/sector45.out",
+      "native_replay": {
+        "elapsed_seconds": 24.391701,
+        "exit_code": 0,
+        "basis": "[1]",
+        "stdout": "basis is constant\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "characteristic_zero_exclusion_proved": false,
+  "all_rooted_degree8_cases_excluded": false
+}

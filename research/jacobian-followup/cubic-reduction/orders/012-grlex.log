@@ -1,0 +1,10 @@
+{"dimension": 3, "candidates": 1, "retained": 1, "best_metric": [7, 45, 8, 16], "seconds": 0.0}
+{"dimension": 4, "candidates": 1, "retained": 1, "best_metric": [6, 25, 8, 19], "seconds": 0.002}
+{"dimension": 5, "candidates": 13, "retained": 13, "best_metric": [5, 17, 8, 22], "seconds": 0.004}
+{"dimension": 6, "candidates": 35, "retained": 35, "best_metric": [5, 17, 8, 24], "seconds": 0.035}
+{"dimension": 7, "candidates": 152, "retained": 152, "best_metric": [5, 11, 8, 30], "seconds": 0.096}
+{"dimension": 8, "candidates": 412, "retained": 412, "best_metric": [4, 8, 8, 34], "seconds": 0.479}
+{"dimension": 9, "candidates": 1465, "retained": 800, "best_metric": [4, 7, 7, 38], "seconds": 1.781}
+{"dimension": 10, "candidates": 3722, "retained": 800, "best_metric": [4, 6, 6, 42], "seconds": 4.505}
+{"dimension": 11, "candidates": 4143, "retained": 800, "best_metric": [4, 2, 2, 52], "seconds": 5.544}
+{"dimension": 12, "candidates": 1978, "retained": 800, "best_metric": [4, 1, 1, 56], "seconds": 6.091}

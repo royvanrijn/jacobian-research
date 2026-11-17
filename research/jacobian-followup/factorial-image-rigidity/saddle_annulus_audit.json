@@ -1,0 +1,124 @@
+{
+  "inequalities": {
+    "outer_k_ge3": {
+      "strict_lower": "177147/128",
+      "strict_upper": "1400"
+    },
+    "outer_k2_square": {
+      "strict_lower": "239500800",
+      "strict_upper": "256000000"
+    },
+    "saddle_Rouche": {
+      "strict_lower": "1",
+      "strict_upper": "7769522159640029999/1000000000000000000"
+    },
+    "curvature_real": {
+      "strict_lower": "1/7",
+      "strict_upper": "999/5999"
+    },
+    "curvature_modulus": {
+      "strict_lower": "143/857",
+      "strict_upper": "1/5"
+    },
+    "third_derivative": {
+      "strict_lower": "849066875/8828622432",
+      "strict_upper": "1"
+    },
+    "saddle_phase_loss": {
+      "strict_lower": "10999/5999000",
+      "strict_upper": "1/500"
+    },
+    "log6_lower": {
+      "strict_lower": "179/100",
+      "strict_upper": "468851525143937365538515520/261675959674436471108133189"
+    },
+    "saddle_phase_positive": {
+      "strict_lower": "47/10",
+      "strict_upper": "2369/500"
+    },
+    "low_tail_absolute": {
+      "strict_lower": "336037701168555742502136919/4091904000000000000000000",
+      "strict_upper": "83"
+    },
+    "low_tail_logarithm": {
+      "strict_lower": "83",
+      "strict_upper": "4662784/50625"
+    },
+    "large_x_perturbation": {
+      "strict_lower": "15637/64000000",
+      "strict_upper": "1/4000"
+    },
+    "medium_tail_gap": {
+      "strict_lower": "1/2500",
+      "strict_upper": "9/20000"
+    },
+    "far_tail_gap": {
+      "strict_lower": "1/10",
+      "strict_upper": "741/4000"
+    },
+    "local_remainder": {
+      "strict_lower": "4704/25",
+      "strict_upper": "189"
+    },
+    "final_error_scaled": {
+      "strict_lower": "5980021/20000000",
+      "strict_upper": "1"
+    },
+    "principal_saddle_circle": {
+      "strict_lower": "2800",
+      "strict_upper": "12252303/4096"
+    },
+    "small_saddle_circle": {
+      "strict_lower": "2800",
+      "strict_upper": "45054401/15625"
+    },
+    "saddle_lower_radius": {
+      "strict_lower": "13/64",
+      "strict_upper": "1"
+    },
+    "saddle_pair_separation": {
+      "strict_lower": "123476695691247935826229781856256",
+      "strict_upper": "1516320000000000000000000000000000"
+    },
+    "saddle_nondegeneracy": {
+      "strict_lower": "1/4000",
+      "strict_upper": "325/1210104"
+    },
+    "saddle_phase_derivative_gap": {
+      "strict_lower": "1/1000000000000000000",
+      "strict_upper": "1/168000000000000000"
+    },
+    "endpoint_phase_derivative_gap": {
+      "strict_lower": "1/40000",
+      "strict_upper": "1/33600"
+    },
+    "e_lower_from_partial_series": {
+      "strict_lower": "8/3",
+      "strict_upper": "65/24"
+    }
+  },
+  "symbolic_identities": [
+    "Appell_derivative_coefficients",
+    "saddle_map_derivative",
+    "phase_stationarity",
+    "phase_curvature",
+    "saddle_phase_w_derivative",
+    "saddle_phase_derivative_difference",
+    "endpoint_phase_derivative_difference",
+    "saddle_discriminant",
+    "local_integral_constant",
+    "factorial_ratio_constant"
+  ],
+  "n_min_inner_disk": 1000000,
+  "exterior_radius": 2800,
+  "inner_radius": 1,
+  "uniform_saddle_distance": "1/10000000000000",
+  "universal_evidence": "EFFECTIVE_SADDLE_ANNULUS.tex: complete shifted contour and all tails",
+  "root_scan_performed": false,
+  "finite_prefix_verified": false,
+  "eventual_simplicity_proved": false,
+  "all_index_SFC_closed": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false
+}

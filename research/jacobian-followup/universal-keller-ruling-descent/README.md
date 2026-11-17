@@ -1,0 +1,9 @@
+# A descended ruling forces a geometric plane atlas
+
+For a proper native intermediate, ANY affine-line ruling defined over the retained field has base A1, integral arithmetic fibres and reduced geometric fibres. Selecting one component per split fibre gives open A2 charts. Every target restriction would be a JC(2) counterexample, and the whole carried line must meet two components of some fibre.
+
+- [General proofs](PROOF.md): ruling descent and the plane atlas; finite-stage exclusion on arbitrary product leaves; a finite-index abelian fundamental group with index dividing the source degree; exact sheet-loss composition.
+- A connected-generic geometric fibration over A1 has at most one multiple fibre, or exactly two double fibres. The latter forces EVEN source-stage degree. This extends to actual product-leaf diagrams.
+- [Literature](LITERATURE_AND_GAPS.md), [checker](verify.py), [receipt](receipt.json), [sources](sources.json), [integration](integration.json), [focused validation](validation.json), [requirements](requirements.txt).
+
+The [affine-type descent extension](../universal-keller-affine-descent/PROOF.md) now proves uniqueness and actual retained-field descent of EVERY geometric AFFINE-type ruling of a proper native intermediate, with a descended additive action. Conditional on JC(2), only additively rigid intermediates with COMPLETE-type Galois-permuted rulings remain. Geometric negative log dimension alone does not prove descent of these complete-type rulings. The published Galois-invariance criterion DOES descend a unique ruling; a proper factor with one would therefore disprove JC(2). JC(2), actual surviving arrows, nonlinear integration, whole canonical marks/gluing and absolute stable atomicity remain open. Classical surface/topology/orbifold inputs are credited; independent proof review and novelty remain unverified.

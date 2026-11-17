@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 58.13 (0BSD): Ramification theory&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELV" data-tag="0ELV">3</a>: Topics in Scheme Theory
+    
+  
+    <li>Chapter <a href="/tag/0BQ6" data-tag="0BQ6">58</a>: Fundamental Groups of Schemes
+    
+  
+    <li class="active">Section <a href="/tag/0BSD" data-tag="0BSD">58.13</a>: Ramification theory
+    <span id="citation">(<a href="/tag/0BSD/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0BSN">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0BTU">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="pione-section-ramification" class="tex-section"><span data-tag="0BSD">58.13</span> Ramification theory</h2>
+
+<p>
+In this section we continue the discussion of More on Algebra, Section <a href="/tag/09E3" data-tag="09E3">15.114</a> and we relate it to our discussion of the fundamental groups of schemes. 
+</p>
+<p>
+Let $(A, \mathfrak m, \kappa )$ be a normal local ring with fraction field $K$. Choose a separable algebraic closure $K^{sep}$. Let $A^{sep}$ be the integral closure of $A$ in $K^{sep}$. Choose maximal ideal $\mathfrak m^{sep} \subset A^{sep}$. Let $A \subset A^ h \subset A^{sh}$ be the henselization and strict henselization. Observe that $A^ h$ and $A^{sh}$ are normal rings as well (More on Algebra, Lemma <a href="/tag/06DI" data-tag="06DI">15.46.6</a>). Denote $K^ h$ and $K^{sh}$ their fraction fields. Since $(A^{sep})_{\mathfrak m^{sep}}$ is strictly henselian by Lemma <a href="/tag/0BSQ" data-tag="0BSQ">58.12.2</a> we can choose an $A$-algebra map $A^{sh} \to (A^{sep})_{\mathfrak m^{sep}}$. Namely, first choose a $\kappa $-embedding<a class="footnotemark footnote-offset" href="#footnote-1" id="footnote-1-mark"></a><a href="#footnote-1"><sup>1</sup></a> $\kappa (\mathfrak m^{sh}) \to \kappa (\mathfrak m^{sep})$ and then extend (uniquely) to an $A$-algebra homomorphism by Algebra, Lemma <a href="/tag/04GU" data-tag="04GU">10.155.10</a>. We get the following diagram 
+</p>
+<div class="equation">
+  \[  \xymatrix{ K^{sep} &  K^{sh} \ar[l] &  K^ h \ar[l] &  K \ar[l] \\  (A^{sep})_{\mathfrak m^{sep}} \ar[u] &  A^{sh} \ar[u] \ar[l] &  A^ h \ar[u] \ar[l] &  A \ar[u] \ar[l] }  \]
+</div>
+<p>
+ We can take the fundamental groups of the spectra of these rings. Of course, since $K^{sep}$, $(A^{sep})_{\mathfrak m^{sep}}$, and $A^{sh}$ are strictly henselian, for them we obtain trivial groups. Thus the interesting part is the following 
+</p>
+<div class="equation" id="0BSV">
+    <span class="equation-label"><a href="/tag/0BSV" data-tag="0BSV">58.13.0.1</a></span>
+  <div>\begin{equation}  \label{pione-equation-inertia-diagram-pione} \vcenter { \xymatrix{ \pi _1(U^{sh}) \ar[r] \ar[rd]_1 &  \pi _1(U^ h) \ar[d] \ar[r] &  \pi _1(U) \ar[d] \\  &  \pi _1(X^ h) \ar[r] &  \pi _1(X) } } \end{equation}</div>
+</div>
+<p>
+ Here $X^ h$ and $X$ are the spectra of $A^ h$ and $A$ and $U^{sh}$, $U^ h$, $U$ are the spectra of $K^{sh}$, $K^ h$, and $K$. The label $1$ means that the map is trivial; this follows as it factors through the trivial group $\pi _1(X^{sh})$. On the other hand, the profinite group $G = \text{Gal}(K^{sep}/K)$ acts on $A^{sep}$ and we can make the following definitions 
+</p>
+<div class="equation">
+  \[  D = \{ \sigma \in G \mid \sigma (\mathfrak m^{sep}) = \mathfrak m^{sep}\}  \supset I = \{ \sigma \in D \mid \sigma \bmod \mathfrak m^{sep} = \text{id}_{\kappa (\mathfrak m^{sep})}\}   \]
+</div>
+<p>
+ These groups are sometimes called the <em>decomposition group</em> and the <em>inertia group</em> especially when $A$ is a discrete valuation ring. 
+</p>
+<p>
+<article class="env-lemma" id="0BSW">
+  <p><a class="environment-identifier" href="/tag/0BSW">Lemma <span data-tag="0BSW">58.13.1</span>.</a> In the situation described above, via the isomorphism $\pi _1(U) = \text{Gal}(K^{sep}/K)$ the diagram (<a href="/tag/0BSV" data-tag="0BSV">58.13.0.1</a>) translates into the diagram </p>
+  <div class="equation">
+  \[  \xymatrix{ I \ar[r] \ar[rd]_1 &  D \ar[d] \ar[r] &  \text{Gal}(K^{sep}/K) \ar[d] \\  &  \text{Gal}(\kappa (\mathfrak m^{sh})/\kappa ) \ar[r] &  \text{Gal}(M/K) }  \]
+</div>
+  <p> where $K^{sep}/M/K$ is the maximal subextension unramified with respect to $A$. Moreover, the vertical arrows are surjective, the kernel of the left vertical arrow is $I$ and the kernel of the right vertical arrow is the smallest closed normal subgroup of $\text{Gal}(K^{sep}/K)$ containing $I$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By construction the group $D$ acts on $(A^{sep})_{\mathfrak m^{sep}}$ over $A$. By the uniqueness of $A^{sh} \to (A^{sep})_{\mathfrak m^{sep}}$ given the map on residue fields (Algebra, Lemma <a href="/tag/04GU" data-tag="04GU">10.155.10</a>) we see that the image of $A^{sh} \to (A^{sep})_{\mathfrak m^{sep}}$ is contained in $((A^{sep})_{\mathfrak m^{sep}})^ I$. On the other hand, Lemma <a href="/tag/0BSU" data-tag="0BSU">58.12.5</a> shows that $((A^{sep})_{\mathfrak m^{sep}})^ I$ is a filtered colimit of étale extensions of $A$. Since $A^{sh}$ is the maximal such extension, we conclude that $A^{sh} = ((A^{sep})_{\mathfrak m^{sep}})^ I$. Hence $K^{sh} = (K^{sep})^ I$. 
+    <p>
+      Recall that $I$ is the kernel of a surjective map $D \to \text{Aut}(\kappa (\mathfrak m^{sep})/\kappa )$, see More on Algebra, Lemma <a href="/tag/0BRK" data-tag="0BRK">15.112.10</a>. We have $\text{Aut}(\kappa (\mathfrak m^{sep})/\kappa ) = \text{Gal}(\kappa (\mathfrak m^{sh})/\kappa )$ as we have seen above that these fields are the algebraic and separable algebraic closures of $\kappa $. On the other hand, any automorphism of $A^{sh}$ over $A$ is an automorphism of $A^{sh}$ over $A^ h$ by the uniqueness in Algebra, Lemma <a href="/tag/04GS" data-tag="04GS">10.155.6</a>. Furthermore, $A^{sh}$ is the colimit of finite étale extensions $A^ h \subset A'$ which correspond $1$-to-$1$ with finite separable extension $\kappa '/\kappa $, see Algebra, Remark <a href="/tag/0BSL" data-tag="0BSL">10.155.4</a>. Thus 
+    <p>
+      <div class="equation">
+  \[  \text{Aut}(A^{sh}/A) = \text{Aut}(A^{sh}/A^ h) = \text{Gal}(\kappa (\mathfrak m^{sh})/\kappa )  \]
+</div>
+    <p>
+       Let $\kappa '/\kappa $ be a finite Galois extension with Galois group $G$. Let $A^ h \subset A'$ be the finite étale extension corresponding to $\kappa \subset \kappa '$ by Algebra, Lemma <a href="/tag/04GK" data-tag="04GK">10.153.7</a>. Then it follows that $(A')^ G = A^ h$ by looking at fraction fields and degrees (small detail omitted). Taking the colimit we conclude that $(A^{sh})^{\text{Gal}(\kappa (\mathfrak m^{sh})/\kappa )} = A^ h$. Combining all of the above, we find $A^ h = ((A^{sep})_{\mathfrak m^{sep}})^ D$. Hence $K^ h = (K^{sep})^ D$. 
+    <p>
+      Since $U$, $U^ h$, $U^{sh}$ are the spectra of the fields $K$, $K^ h$, $K^{sh}$ we see that the top lines of the diagrams correspond via Lemma <a href="/tag/0BNE" data-tag="0BNE">58.6.3</a>. By Lemma <a href="/tag/09ZS" data-tag="09ZS">58.8.2</a> we have $\pi _1(X^ h) = \text{Gal}(\kappa (\mathfrak m^{sh})/\kappa )$. The exactness of the sequence $1 \to I \to D \to \text{Gal}(\kappa (\mathfrak m^{sh})/\kappa ) \to 1$ was pointed out above. By Proposition <a href="/tag/0BQM" data-tag="0BQM">58.11.3</a> we see that $\pi _1(X) = \text{Gal}(M/K)$. Finally, the statement on the kernel of $\text{Gal}(K^{sep}/K) \to \text{Gal}(M/K) = \pi _1(X)$ follows from Lemma <a href="/tag/0BSM" data-tag="0BSM">58.11.4</a>. This finishes the proof. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Let $X$ be a normal integral scheme with function field $K$. Let $K^{sep}$ be a separable algebraic closure of $K$. Let $X^{sep} \to X$ be the normalization of $X$ in $K^{sep}$. Since $G = \text{Gal}(K^{sep}/K)$ acts on $K^{sep}$ we obtain a right action of $G$ on $X^{sep}$. For $y \in X^{sep}$ define 
+</p>
+<div class="equation">
+  \[  D_ y = \{ \sigma \in G \mid \sigma (y) = y\}  \supset I_ y = \{ \sigma \in D \mid \sigma \bmod \mathfrak m_ y = \text{id}_{\kappa (y)} \}   \]
+</div>
+<p>
+ similarly to the above. On the other hand, for $x \in X$ let $\mathcal{O}_{X, x}^{sh}$ be a strict henselization, let $K_ x^{sh}$ be the fraction field of $\mathcal{O}_{X, x}^{sh}$ and choose a $K$-embedding $K_ x^{sh} \to K^{sep}$. 
+</p>
+<p>
+<article class="env-lemma" id="0BTD">
+  <p><a class="environment-identifier" href="/tag/0BTD">Lemma <span data-tag="0BTD">58.13.2</span>.</a> Let $X$ be a normal integral scheme with function field $K$. With notation as above, the following three subgroups of $\text{Gal}(K^{sep}/K) = \pi _1(\mathop{\mathrm{Spec}}(K))$ are equal </p>
+  <p><ol>
+  <li><p>
+the kernel of the surjection $\text{Gal}(K^{sep}/K) \longrightarrow \pi _1(X)$, 
+</p>
+</li><li><p>
+the smallest normal closed subgroup containing $I_ y$ for all $y \in X^{sep}$, and 
+</p>
+</li><li><p>
+the smallest normal closed subgroup containing $\text{Gal}(K^{sep}/K_ x^{sh})$ for all $x \in X$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The equivalence of (2) and (3) follows from Lemma <a href="/tag/0BSW" data-tag="0BSW">58.13.1</a> which tells us that $I_ y$ is conjugate to $\text{Gal}(K^{sep}/K_ x^{sh})$ if $y$ lies over $x$. By Lemma <a href="/tag/0BSM" data-tag="0BSM">58.11.4</a> we see that $\text{Gal}(K^{sep}/K_ x^{sh})$ maps trivially to $\pi _1(\mathop{\mathrm{Spec}}(\mathcal{O}_{X, x}))$ and therefore the subgroup $N \subset G = \text{Gal}(K^{sep}/K)$ of (2) and (3) is contained in the kernel of $G \longrightarrow \pi _1(X)$. 
+    <p>
+      To prove the other inclusion, since $N$ is normal, it suffices to prove: given $N \subset U \subset G$ with $U$ open normal, the quotient map $G \to G/U$ factors through $\pi _1(X)$. In other words, if $L/K$ is the Galois extension corresponding to $U$, then we have to show that $X$ is unramified in $L$ (Section <a href="/tag/0BQJ" data-tag="0BQJ">58.11</a>, especially Proposition <a href="/tag/0BQM" data-tag="0BQM">58.11.3</a>). It suffices to do this when $X$ is affine (we do this so we can refer to algebra results in the rest of the proof). Let $Y \to X$ be the normalization of $X$ in $L$. The inclusion $L \subset K^{sep}$ induces a morphism $\pi : X^{sep} \to Y$. For $y \in X^{sep}$ the inertia group of $\pi (y)$ in $\text{Gal}(L/K)$ is the image of $I_ y$ in $\text{Gal}(L/K)$; this follows from More on Algebra, Lemma <a href="/tag/0BSX" data-tag="0BSX">15.112.11</a>. Since $N \subset U$ all these inertia groups are trivial. We conclude that $Y \to X$ is étale by applying Lemma <a href="/tag/0BST" data-tag="0BST">58.12.4</a>. (Alternative: you can use Lemma <a href="/tag/0BSM" data-tag="0BSM">58.11.4</a> to see that the pullback of $Y$ to $\mathop{\mathrm{Spec}}(\mathcal{O}_{X, x})$ is étale for all $x \in X$ and then conclude from there with a bit more work.) 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-example" id="0BTE">
+  <p><a class="environment-identifier" href="/tag/0BTE">Example <span data-tag="0BTE">58.13.3</span>.</a> Let $X$ be a normal integral Noetherian scheme with function field $K$. Purity of branch locus (see below) tells us that if $X$ is regular, then it suffices in Lemma <a href="/tag/0BTD" data-tag="0BTD">58.13.2</a> to consider the inertia groups $I = \pi _1(\mathop{\mathrm{Spec}}(K_ x^{sh}))$ for points $x$ of codimension $1$ in $X$. In general this is not enough however. Namely, let $Y = \mathbf{A}_ k^ n = \mathop{\mathrm{Spec}}(k[t_1, \ldots , t_ n])$ where $k$ is a field not of characteristic $2$. Let $G = \{ \pm 1\} $ be the group of order $2$ acting on $Y$ by multiplication on the coordinates. Set </p>
+  <div class="equation">
+  \[  X = \mathop{\mathrm{Spec}}(k[t_ it_ j, i, j \in \{ 1, \ldots , n\} ])  \]
+</div>
+  <p> The embedding $k[t_ it_ j] \subset k[t_1, \ldots , t_ n]$ defines a degree $2$ morphism $Y \to X$ which is unramified everywhere except over the maximal ideal $\mathfrak m = (t_ it_ j)$ which is a point of codimension $n$ in $X$. </p>
+</article> 
+</p>
+<p>
+<article class="env-lemma" id="0BTF">
+  <p><a class="environment-identifier" href="/tag/0BTF">Lemma <span data-tag="0BTF">58.13.4</span>.</a> Let $X$ be an integral normal scheme with function field $K$. Let $L/K$ be a finite extension. Let $Y \to X$ be the normalization of $X$ in $L$. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+$X$ is unramified in $L$ as defined in Section <a href="/tag/0BQJ" data-tag="0BQJ">58.11</a>, 
+</p>
+</li><li><p>
+$Y \to X$ is an unramified morphism of schemes, 
+</p>
+</li><li><p>
+$Y \to X$ is an étale morphism of schemes, 
+</p>
+</li><li><p>
+$Y \to X$ is a finite étale morphism of schemes, 
+</p>
+</li><li><p>
+for $x \in X$ the projection $Y \times _ X \mathop{\mathrm{Spec}}(\mathcal{O}_{X, x}) \to \mathop{\mathrm{Spec}}(\mathcal{O}_{X, x})$ is unramified, 
+</p>
+</li><li><p>
+same as in (5) but with $\mathcal{O}_{X, x}^ h$, 
+</p>
+</li><li><p>
+same as in (5) but with $\mathcal{O}_{X, x}^{sh}$, 
+</p>
+</li><li><p>
+for $x \in X$ the scheme theoretic fibre $Y_ x$ is étale over $x$ of degree $\geq [L : K]$. 
+</p>
+</li>
+</ol></p>
+  <p> If $L/K$ is Galois with Galois group $G$, then these are also equivalent to </p>
+  <p><ol>
+  <li class="custom-item" data-marker="(9)"><p>
+for $y \in Y$ the group $I_ y = \{ g \in G \mid g(y) = y\text{ and } g \bmod \mathfrak m_ y = \text{id}_{\kappa (y)}\} $ is trivial. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The equivalence of (1) and (2) is the definition of (1). The equivalence of (2), (3), and (4) is Lemma <a href="/tag/0BQK" data-tag="0BQK">58.11.1</a>. It is straightforward to prove that (4) $\Rightarrow $ (5), (5) $\Rightarrow $ (6), (6) $\Rightarrow $ (7). 
+    <p>
+      Assume (7). Observe that $\mathcal{O}_{X, x}^{sh}$ is a normal local domain (More on Algebra, Lemma <a href="/tag/06DI" data-tag="06DI">15.46.6</a>). Let $L^{sh} = L \otimes _ K K_ x^{sh}$ where $K_ x^{sh}$ is the fraction field of $\mathcal{O}_{X, x}^{sh}$. Then $L^{sh} = \prod _{i = 1, \ldots , n} L_ i$ with $L_ i/K_ x^{sh}$ finite separable. By Algebra, Lemma <a href="/tag/03GG" data-tag="03GG">10.147.4</a> (and a limit argument we omit) we see that $Y \times _ X \mathop{\mathrm{Spec}}(\mathcal{O}_{X, x}^{sh})$ is the integral closure of $\mathop{\mathrm{Spec}}(\mathcal{O}_{X, x}^{sh})$ in $L^{sh}$. Hence by Lemma <a href="/tag/0BQK" data-tag="0BQK">58.11.1</a> (applied to the factors $L_ i$ of $L^{sh}$) we see that $Y \times _ X \mathop{\mathrm{Spec}}(\mathcal{O}_{X, x}^{sh}) \to \mathop{\mathrm{Spec}}(\mathcal{O}_{X, x}^{sh})$ is finite étale. Looking at the generic point we see that the degree is equal to $[L : K]$ and hence we see that (8) is true. 
+    <p>
+      Assume (8). Assume that $x \in X$ and that the scheme theoretic fibre $Y_ x$ is étale over $x$ of degree $\geq [L : K]$. Observe that this means that $Y$ has $\geq [L : K]$ geometric points lying over $x$. We will show that $Y \to X$ is finite étale over a neighbourhood of $x$. This will prove (1) holds. To prove this we may assume $X = \mathop{\mathrm{Spec}}(R)$, the point $x$ corresponds to the prime $\mathfrak p \subset R$, and $Y = \mathop{\mathrm{Spec}}(S)$. We apply More on Morphisms, Lemma <a href="/tag/0BSR" data-tag="0BSR">37.42.1</a> and we find an étale neighbourhood $(U, u) \to (X, x)$ such that $Y \times _ X U = V_1 \amalg \ldots \amalg V_ m$ such that $V_ i$ has a unique point $v_ i$ lying over $u$ with $\kappa (v_ i)/\kappa (u)$ purely inseparable. Shrinking $U$ if necessary we may assume $U$ is a normal integral scheme with generic point $\xi $ (use Descent, Lemmas <a href="/tag/0BAL" data-tag="0BAL">35.16.3</a> and <a href="/tag/034F" data-tag="034F">35.18.2</a> and Properties, Lemma <a href="/tag/0357" data-tag="0357">28.7.5</a>). By our remark on geometric points we see that $m \geq [L : K]$. On the other hand, by More on Morphisms, Lemma <a href="/tag/03GV" data-tag="03GV">37.19.2</a> we see that $\coprod V_ i \to U$ is the normalization of $U$ in $\mathop{\mathrm{Spec}}(L) \times _ X U$. As $K \subset \kappa (\xi )$ is finite separable, we can write $\mathop{\mathrm{Spec}}(L) \times _ X U = \mathop{\mathrm{Spec}}(\prod _{i = 1, \ldots , n} L_ i)$ with $L_ i/\kappa (\xi )$ finite and $[L : K] = \sum [L_ i : \kappa (\xi )]$. Since $V_ j$ is nonempty for each $j$ and $m \geq [L : K]$ we conclude that $m = n$ and $[L_ i : \kappa (\xi )] = 1$ for all $i$. Then $V_ j \to U$ is an isomorphism in particular étale, hence $Y \times _ X U \to U$ is étale. By Descent, Lemma <a href="/tag/02VN" data-tag="02VN">35.23.31</a> we conclude that $Y \to X$ is étale over the image of $U \to X$ (an open neighbourhood of $x$). 
+    <p>
+      Assume $L/K$ is Galois and (9) holds. Then $Y \to X$ is étale by Lemma <a href="/tag/0BSU" data-tag="0BSU">58.12.5</a>. We omit the proof that (1) implies (9). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+In the case of infinite Galois extensions of discrete valuation rings we can say a tiny bit more. To do so we introduce the following notation. A subset $S \subset \mathbf{N}$ of integers is <em>multiplicativity directed</em> if $1 \in S$ and for $n, m \in S$ there exists $k \in S$ with $n | k$ and $m | k$. Define a partial ordering on $S$ by the rule $n \geq _ S m$ if and only if $m | n$. Given a field $\kappa $ we obtain an inverse system of finite groups $\{ \mu _ n(\kappa )\} _{n \in S}$ with transition maps 
+</p>
+<div class="equation">
+  \[  \mu _ n(\kappa ) \longrightarrow \mu _ m(\kappa ),\quad \zeta \longmapsto \zeta ^{n/m}  \]
+</div>
+<p>
+ for $n \geq _ S m$. Then we can form the profinite group 
+</p>
+<div class="equation">
+  \[  \mathop{\mathrm{lim}}\nolimits _{n \in S} \mu _ n(\kappa )  \]
+</div>
+<p>
+ Observe that the limit is cofiltered (as $S$ is directed). The construction is functorial in $\kappa $. In particular $\text{Aut}(\kappa )$ acts on this profinite group. For example, if $S = \{ 1, n\} $, then this gives $\mu _ n(\kappa )$. If $S = \{ 1, \ell , \ell ^2, \ell ^3, \ldots \} $ for some prime $\ell $ different from the characteristic of $\kappa $ this produces $\mathop{\mathrm{lim}}\nolimits _ n \mu _{\ell ^ n}(\kappa )$ which is sometimes called the $\ell $-adic Tate module of the multiplicative group of $\kappa $ (compare with More on Algebra, Example <a href="/tag/0BKG" data-tag="0BKG">15.95.5</a>). 
+</p>
+<p>
+<article class="env-lemma" id="0BUA">
+  <p><a class="environment-identifier" href="/tag/0BUA">Lemma <span data-tag="0BUA">58.13.5</span>.</a> Let $A$ be a discrete valuation ring with fraction field $K$. Let $L/K$ be a (possibly infinite) Galois extension. Let $B$ be the integral closure of $A$ in $L$. Let $\mathfrak m$ be a maximal ideal of $B$. Let $G = \text{Gal}(L/K)$, $D = \{ \sigma \in G \mid \sigma (\mathfrak m) = \mathfrak m\} $, and $I = \{ \sigma \in D \mid \sigma \bmod \mathfrak m = \text{id}_{\kappa (\mathfrak m)}\} $. The decomposition group $D$ fits into a canonical exact sequence </p>
+  <div class="equation">
+  \[  1 \to I \to D \to \text{Aut}(\kappa (\mathfrak m)/\kappa _ A) \to 1  \]
+</div>
+  <p> The inertia group $I$ fits into a canonical exact sequence </p>
+  <div class="equation">
+  \[  1 \to P \to I \to I_ t \to 1  \]
+</div>
+  <p> such that </p>
+  <p><ol>
+  <li><p>
+$P$ is a normal subgroup of $D$, 
+</p>
+</li><li><p>
+$P$ is a pro-$p$-group if the characteristic of $\kappa _ A$ is $p > 1$ and $P = \{ 1\} $ if the characteristic of $\kappa _ A$ is zero, 
+</p>
+</li><li><p>
+there is a multiplicatively directed $S \subset \mathbf{N}$ such that $\kappa (\mathfrak m)$ contains a primitive $n$th root of unity for each $n \in S$ (elements of $S$ are prime to $p$), 
+</p>
+</li><li><p>
+there exists a canonical surjective map 
+</p>
+<div class="equation">
+  \[  \theta _{can} : I \to \mathop{\mathrm{lim}}\nolimits _{n \in S} \mu _ n(\kappa (\mathfrak m))  \]
+</div>
+<p>
+ whose kernel is $P$, which satisfies $\theta _{can}(\tau \sigma \tau ^{-1}) = \tau (\theta _{can}(\sigma ))$ for $\tau \in D$, $\sigma \in I$, and which induces an isomorphism $I_ t \to \mathop{\mathrm{lim}}\nolimits _{n \in S} \mu _ n(\kappa (\mathfrak m))$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is mostly a reformulation of the results on finite Galois extensions proved in More on Algebra, Section <a href="/tag/09E3" data-tag="09E3">15.114</a>. The surjectivity of the map $D \to \text{Aut}(\kappa (\mathfrak m)/\kappa )$ is More on Algebra, Lemma <a href="/tag/0BRK" data-tag="0BRK">15.112.10</a>. This gives the first exact sequence. 
+    <p>
+      To construct the second short exact sequence let $\Lambda $ be the set of finite Galois subextensions, i.e., $\lambda \in \Lambda $ corresponds to $L/L_\lambda /K$. Set $G_\lambda = \text{Gal}(L_\lambda /K)$. Recall that $G_\lambda $ is an inverse system of finite groups with surjective transition maps and that $G = \mathop{\mathrm{lim}}\nolimits _{\lambda \in \Lambda } G_\lambda $, see Fields, Lemma <a href="/tag/0BU2" data-tag="0BU2">9.22.3</a>. We let $B_\lambda $ be the integral closure of $A$ in $L_\lambda $. Then we set $\mathfrak m_\lambda = \mathfrak m \cap B_\lambda $ and we denote $P_\lambda , I_\lambda , D_\lambda $ the wild inertia, inertia, and decomposition group of $\mathfrak m_\lambda $, see More on Algebra, Lemma <a href="/tag/09EE" data-tag="09EE">15.114.5</a>. For $\lambda \geq \lambda '$ the restriction defines a commutative diagram 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ P_\lambda \ar[d] \ar[r] &  I_\lambda \ar[d] \ar[r] &  D_\lambda \ar[d] \ar[r] &  G_\lambda \ar[d] \\  P_{\lambda '} \ar[r] &  I_{\lambda '} \ar[r] &  D_{\lambda '} \ar[r] &  G_{\lambda '} }  \]
+</div>
+    <p>
+       with surjective vertical maps, see More on Algebra, Lemma <a href="/tag/0BU7" data-tag="0BU7">15.114.11</a>. 
+    <p>
+      From the definitions it follows immediately that $I = \mathop{\mathrm{lim}}\nolimits I_\lambda $ and $D = \mathop{\mathrm{lim}}\nolimits D_\lambda $ under the isomorphism $G = \mathop{\mathrm{lim}}\nolimits G_\lambda $ above. Since $L = \mathop{\mathrm{colim}}\nolimits L_\lambda $ we have $B = \mathop{\mathrm{colim}}\nolimits B_\lambda $ and $\kappa (\mathfrak m) = \mathop{\mathrm{colim}}\nolimits \kappa (\mathfrak m_\lambda )$. Since the transition maps of the system $D_\lambda $ are compatible with the maps $D_\lambda \to \text{Aut}(\kappa (\mathfrak m_\lambda )/\kappa )$ (see More on Algebra, Lemma <a href="/tag/0BU7" data-tag="0BU7">15.114.11</a>) we see that the map $D \to \text{Aut}(\kappa (\mathfrak m)/\kappa )$ is the limit of the maps $D_\lambda \to \text{Aut}(\kappa (\mathfrak m_\lambda )/\kappa )$. 
+    <p>
+      There exist canonical maps 
+    <p>
+      <div class="equation">
+  \[  \theta _{\lambda , can} : I_\lambda \longrightarrow \mu _{n_\lambda }(\kappa (\mathfrak m_\lambda ))  \]
+</div>
+    <p>
+       where $n_\lambda = |I_\lambda |/|P_\lambda |$, where $\mu _{n_\lambda }(\kappa (\mathfrak m_\lambda ))$ has order $n_\lambda $, such that $\theta _{\lambda , can}(\tau \sigma \tau ^{-1}) = \tau (\theta _{\lambda , can}(\sigma ))$ for $\tau \in D_\lambda $ and $\sigma \in I_\lambda $, and such that we get commutative diagrams 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ I_\lambda \ar[r]_-{\theta _{\lambda , can}} \ar[d] &  \mu _{n_\lambda }(\kappa (\mathfrak m_\lambda )) \ar[d]^{(-)^{n_\lambda /n_{\lambda '}}} \\  I_{\lambda '} \ar[r]^-{\theta _{\lambda ', can}} &  \mu _{n_{\lambda '}}(\kappa (\mathfrak m_{\lambda '})) }  \]
+</div>
+    <p>
+       see More on Algebra, Remark <a href="/tag/0BU8" data-tag="0BU8">15.114.12</a>. 
+    <p>
+      Let $S \subset \mathbf{N}$ be the collection of integers $n_\lambda $. Since $\Lambda $ is directed, we see that $S$ is multiplicatively directed. By the displayed commutative diagrams above we can take the limits of the maps $\theta _{\lambda , can}$ to obtain 
+    <p>
+      <div class="equation">
+  \[  \theta _{can} : I \to \mathop{\mathrm{lim}}\nolimits _{n \in S} \mu _ n(\kappa (\mathfrak m)).  \]
+</div>
+    <p>
+       This map is continuous (small detail omitted). Since the transition maps of the system of $I_\lambda $ are surjective and $\Lambda $ is directed, the projections $I \to I_\lambda $ are surjective. For every $\lambda $ the diagram 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ I \ar[d] \ar[r]_-{\theta _{can}} &  \mathop{\mathrm{lim}}\nolimits _{n \in S} \mu _ n(\kappa (\mathfrak m)) \ar[d] \\  I_{\lambda } \ar[r]^-{\theta _{\lambda , can}} &  \mu _{n_\lambda }(\kappa (\mathfrak m_\lambda )) }  \]
+</div>
+    <p>
+       commutes. Hence the image of $\theta _{can}$ surjects onto the finite group $\mu _{n_\lambda }(\kappa (\mathfrak m)) = \mu _{n_\lambda }(\kappa (\mathfrak m_\lambda ))$ of order $n_\lambda $ (see above). It follows that the image of $\theta _{can}$ is dense. On the other hand $\theta _{can}$ is continuous and the source is a profinite group. Hence $\theta _{can}$ is surjective by a topological argument. 
+    <p>
+      The property $\theta _{can}(\tau \sigma \tau ^{-1}) = \tau (\theta _{can}(\sigma ))$ for $\tau \in D$, $\sigma \in I$ follows from the corresponding properties of the maps $\theta _{\lambda , can}$ and the compatibility of the map $D \to \text{Aut}(\kappa (\mathfrak m))$ with the maps $D_\lambda \to \text{Aut}(\kappa (\mathfrak m_\lambda ))$. Setting $P = \mathop{\mathrm{Ker}}(\theta _{can})$ this implies that $P$ is a normal subgroup of $D$. Setting $I_ t = I/P$ we obtain the isomorphism $I_ t \to \mathop{\mathrm{lim}}\nolimits _{n \in S} \mu _ n(\kappa (\mathfrak m))$ from the surjectivity of $\theta _{can}$. 
+    <p>
+      To finish the proof we show that $P = \mathop{\mathrm{lim}}\nolimits P_\lambda $ which proves that $P$ is a pro-$p$-group. Recall that the tame inertia group $I_{\lambda , t} = I_\lambda /P_\lambda $ has order $n_\lambda $. Since the transition maps $P_\lambda \to P_{\lambda '}$ are surjective and $\Lambda $ is directed, we obtain a short exact sequence 
+    <p>
+      <div class="equation">
+  \[  1 \to \mathop{\mathrm{lim}}\nolimits P_\lambda \to I \to \mathop{\mathrm{lim}}\nolimits I_{\lambda , t} \to 1  \]
+</div>
+    <p>
+       (details omitted). Since for each $\lambda $ the map $\theta _{\lambda , can}$ induces an isomorphism $I_{\lambda , t} \cong \mu _{n_\lambda }(\kappa (\mathfrak m))$ the desired result follows. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0BUB">
+  <p><a class="environment-identifier" href="/tag/0BUB">Lemma <span data-tag="0BUB">58.13.6</span>.</a> Let $A$ be a discrete valuation ring with fraction field $K$. Let $K^{sep}$ be a separable closure of $K$. Let $A^{sep}$ be the integral closure of $A$ in $K^{sep}$. Let $\mathfrak m^{sep}$ be a maximal ideal of $A^{sep}$. Let $\mathfrak m = \mathfrak m^{sep} \cap A$, let $\kappa = A/\mathfrak m$, and let $\overline{\kappa } = A^{sep}/\mathfrak m^{sep}$. Then $\overline{\kappa }$ is an algebraic closure of $\kappa $. Let $G = \text{Gal}(K^{sep}/K)$, $D = \{ \sigma \in G \mid \sigma (\mathfrak m^{sep}) = \mathfrak m^{sep}\} $, and $I = \{ \sigma \in D \mid \sigma \bmod \mathfrak m^{sep} = \text{id}_{\kappa (\mathfrak m^{sep})}\} $. The decomposition group $D$ fits into a canonical exact sequence </p>
+  <div class="equation">
+  \[  1 \to I \to D \to \text{Gal}(\kappa ^{sep}/\kappa ) \to 1  \]
+</div>
+  <p> where $\kappa ^{sep} \subset \overline{\kappa }$ is the separable closure of $\kappa $. The inertia group $I$ fits into a canonical exact sequence </p>
+  <div class="equation">
+  \[  1 \to P \to I \to I_ t \to 1  \]
+</div>
+  <p> such that </p>
+  <p><ol>
+  <li><p>
+$P$ is a normal subgroup of $D$, 
+</p>
+</li><li><p>
+$P$ is a pro-$p$-group if the characteristic of $\kappa _ A$ is $p > 1$ and $P = \{ 1\} $ if the characteristic of $\kappa _ A$ is zero, 
+</p>
+</li><li><p>
+there exists a canonical surjective map 
+</p>
+<div class="equation">
+  \[  \theta _{can} : I \to \mathop{\mathrm{lim}}\nolimits _{n\text{ prime to }p} \mu _ n(\kappa ^{sep})  \]
+</div>
+<p>
+ whose kernel is $P$, which satisfies $\theta _{can}(\tau \sigma \tau ^{-1}) = \tau (\theta _{can}(\sigma ))$ for $\tau \in D$, $\sigma \in I$, and which induces an isomorphism $I_ t \to \mathop{\mathrm{lim}}\nolimits _{n\text{ prime to }p} \mu _ n(\kappa ^{sep})$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The field $\overline{\kappa }$ is the algebraic closure of $\kappa $ by Lemma <a href="/tag/0BSP" data-tag="0BSP">58.12.1</a>. Most of the statements immediately follow from the corresponding parts of Lemma <a href="/tag/0BUA" data-tag="0BUA">58.13.5</a>. For example because $\text{Aut}(\overline{\kappa }/\kappa ) = \text{Gal}(\kappa ^{sep}/\kappa )$ we obtain the first sequence. Then the only other assertion that needs a proof is the fact that with $S$ as in Lemma <a href="/tag/0BUA" data-tag="0BUA">58.13.5</a> the limit $\mathop{\mathrm{lim}}\nolimits _{n \in S} \mu _ n(\overline{\kappa })$ is equal to $\mathop{\mathrm{lim}}\nolimits _{n\text{ prime to }p} \mu _ n(\kappa ^{sep})$. To see this it suffices to show that every integer $n$ prime to $p$ divides an element of $S$. Let $\pi \in A$ be a uniformizer and consider the splitting field $L$ of the polynomial $X^ n - \pi $. Since the polynomial is separable we see that $L$ is a finite Galois extension of $K$. Choose an embedding $L \to K^{sep}$. Observe that if $B$ is the integral closure of $A$ in $L$, then the ramification index of $A \to B_{\mathfrak m^{sep} \cap B}$ is divisible by $n$ (because $\pi $ has an $n$th root in $B$; in fact the ramification index equals $n$ but we do not need this). Then it follows from the construction of the $S$ in the proof of Lemma <a href="/tag/0BUA" data-tag="0BUA">58.13.5</a> that $n$ divides an element of $S$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+    <section id="footnotes">
+    
+      <div><a id="footnote-1" class="footnote-offset"></a><a href="#footnote-1-mark">[1]</a> This is possible because $\kappa (\mathfrak m^{sh})$ is a separable algebraic closure of $\kappa $ and $\kappa (\mathfrak m^{sep})$ is an algebraic closure of $\kappa $ by Lemma <a href="/tag/0BSP" data-tag="0BSP">58.12.1</a>.</div>
+    
+    </section>
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-0BSD",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">0BSD</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="0BSD"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">0BSD</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0BSN">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0BTU">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/pione.pdf#nameddest=0BSD">View Section <span data-tag="0BSD">58.13</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

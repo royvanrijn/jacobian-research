@@ -1,0 +1,2018 @@
+[
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-HC4-SCHUR",
+    "sha256": "94034eb8e8385fa96e4b5aa9626abfaceabb698406814118feb812408504f2e9",
+    "kind": "changed",
+    "changed_fields": [
+      "dependencies",
+      "forbidden_attack_classes",
+      "scope"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-MV-ALL-DEGREE",
+    "sha256": "253987bffc28a6a0251096f35bd5fe2a5c8dba7f854829725c43bf51844bc049",
+    "kind": "changed",
+    "changed_fields": [
+      "dependencies",
+      "scope"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCENDOTRANS20261115",
+    "sha256": "024e7481333f64be0c3dd93d6dc36b2002a80cca5045fe5234d3d19f0b932f26",
+    "kind": "changed",
+    "changed_fields": [
+      "dependencies",
+      "scope",
+      "software_lock"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-GMC-ENDOMORPHISM-SAFETY",
+    "sha256": "2856a60116026db78cc56d6f2d50b4ef8d504684fc06b28388c23e8d7779a5d3",
+    "kind": "changed",
+    "changed_fields": [
+      "dependencies",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYKP2",
+    "sha256": "e68097c17a756e8cfd960017bcd6d00711ff616193d508e792414db644a45eb9",
+    "kind": "changed",
+    "changed_fields": [
+      "dependencies",
+      "scope",
+      "software_lock",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "PF2RULED97",
+    "sha256": "523d51ba3be2fceee27f5642c3eef40359770661cf3f33dcf647b5685f66544e",
+    "kind": "added",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCWEIGHTEDINV20261115",
+    "sha256": "1981156ff471721139a180cf529f8b6164d0c0e0def1a6edaa32147152ea4e47",
+    "kind": "added",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCINVERSELINE20261115",
+    "sha256": "804f7f52363269b6fa996b696495d6ce8d1f8bcb2c534bbe41102b21430e53e9",
+    "kind": "added",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCKELLERPHASE20261115",
+    "sha256": "7957fda30b27736952569bea9deb662e63a232d9683751b77785bf4c16e354f2",
+    "kind": "added",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCENDOPULLFAIL20261115",
+    "sha256": "b54fa3252fb5a8ce0f32900e1b859aa475b366218c94bce60d9da6085ec70881",
+    "kind": "added",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYKQ0",
+    "sha256": "a8bc8c819d945df052c94127fd7a64b66f9fb8ed475dcd67eafd0e7079998ee5",
+    "kind": "added",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYKQ1",
+    "sha256": "cd41bc8297134daaa20486a53d1ddcfc559a6730f1fa7ef50e894dcf7368b81d",
+    "kind": "added",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "HC4MYKQ2",
+    "sha256": "eb3818feef4b1d02e14da8632265e316d3b09fbe98115e9b77a536505eaf0351",
+    "kind": "added",
+    "changed_fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STRUCTURAL-RECOGNITION-20261113",
+    "sha256": "850d5d7df7e5aa0c661f77baa42dca35dcbee3cd3cee3b0077b429d1c28f7647",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GRAPH-AFFINE-PLANE-20261113",
+    "sha256": "85a33e80bc6258835e7bbd839f65e24db47ce101e24b38e53b8978a9fe749614",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DUAL-TWO-DIVISORS-20261113",
+    "sha256": "d937fb8846dbf2ac2d8cd8da090597cb98f3da94fae5b15e2b55ab8c74208fb1",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ROW-ORBIT-20261113",
+    "sha256": "36b627014f50fe15bee2a2546da4d9a375ec92b3ad98857a191f86da393d73b4",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-POINTED-PENCIL-20261113",
+    "sha256": "9e06dc8433119d193321f124dbc9044c1ac096f323d3c20a0667ec61c26c9a2c",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADIAL-INTERSECTION-20261113",
+    "sha256": "55c27c897714e0a1c94ed054e89e4dbe5224ff120bfea20f2215b3ab506728c5",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-PLANE-BORISOV-ATTACHMENT-20261113",
+    "sha256": "66a585913eee1883bf4b622174d678ddb5e279dc1861c0981356d11ed3e1df3c",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AUTOMORPHIC-TRACE-20261114",
+    "sha256": "4d4ab7efc297f07d1b10758bf74d9b3d8641f06c2e0885fcfc8deaa896013352",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RATIONAL-CURVE-TRACE-20261114",
+    "sha256": "6548908e3d6456175f6119d9fc739924fbc298a849485c1bd9828aa9c8fbe1f2",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SQUARE-AXIS-20261114",
+    "sha256": "000b9c0057ceca0fe641c22e4420c843261c296e54768a41a09e5e1d6c047d62",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FIXED-GRAPH-ROW-ORBIT-20261114",
+    "sha256": "7140a7de5e77376c6906f550591f869318580104ca1a9452f913594d7cf6e691",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-COORDINATE-JET-20261114",
+    "sha256": "de1cd7467e2ecd0ae75ddf633f77702096a2b674cdfdc789a160ef95cfc3f391",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NATIVE-BASE-GRAPHS-20261114",
+    "sha256": "a379dfcc681341555c5fad7df72adaabf4245ac609451710fc47c8c68d7cd1ad",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMPOSITE-HYPERPLANE-20261114",
+    "sha256": "37d8bd50981ab0d6281d3c8ce75d4e76bed33b4589b3fd7b8fe9166e895c826b",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-COORDINATE-UNIT-IDEAL-20261114",
+    "sha256": "78d8b43c4a32a6db36806b131415ff392baee377452148e3985e2f193f0fc74a",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-CRITICAL-LOCUS-20261114",
+    "sha256": "fa6eac1f2ea40b984ce04a899b52ef15dc41715ff9c637e28d03e25b86000404",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-COMPONENTS-20261114",
+    "sha256": "372c31a5f6a1a72ae3c34e11d6f2a14c07dc7310ea98244a2f192be8997d6c6a",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-TARGET-LINE-20261114",
+    "sha256": "b3bb302e733ea20982e5f63488e1d636655b07e89580d24cad08c29bb9158ba6",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NEWTON-CRITICAL-GATES-20261114",
+    "sha256": "05b5f8d939705eaa0a5c6627998145d723e467e6ee32bbbb273f636b52fa2b47",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-NORMALIZATION-20261114",
+    "sha256": "fb2bf21986b8a66fb4439b1637f87f6141743844557d17703ca30089a92971cf",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-CRITICAL-BUDGET-20261114",
+    "sha256": "76e4af1675d569b4da7a19c6f6a9da2ef3d44d222239000c2b175a3ca037f04e",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FULL-Y-GRAPH-CLOSURE-20261114",
+    "sha256": "5c97a689680f300db0f2a298711ee27030511070a93f7cf7138a8b0a3d6e8947",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-OPPOSITE-NONLINEAR-FRONTIER-20261114",
+    "sha256": "a0601eb7ed0693fdcc313df37883555b09eff7be7835b877e6ee058dd0156d66",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-EXCEPTIONAL-FIBRE-CLOSURE-20261114",
+    "sha256": "4f40d1c7d82ea90a620bd636d5aad15280e3b2449cebaec3790ddd5ee355b595",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CYLINDRICAL-TRACE-CLOSURE-20261114",
+    "sha256": "b51068187ceffb469317fc23dd9f8a87a99608fe3c929534da3c53f7952834cf",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ISOLATED-TRACE-MIXING-20261114",
+    "sha256": "9d7fd74250402d5844a2f1ad23da24118fa7f02e5cf07d7db03d647f8e3a76cc",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-HODGE-TRACE-CLOSURE-20261114",
+    "sha256": "85fdbc66d8c499e932524c5f11a0dbbb68e202e4552846ef9073467eadba43b5",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DIRECTIONAL-BASE-CLOSURE-20261114",
+    "sha256": "3752c0520fb97c2499dcfe8c93bf4e5e0b91d40fb9e150354a29f7e9350ee700",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-TRACE-COMPATIBILITY-20261114",
+    "sha256": "a11dbec2dd07e05755a8b4095ed82f5839fc83baead5322ba2f1cef25180d481",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-AFFINE-PLANE-20261114",
+    "sha256": "f9b3dc692368ddbe62a0fa55872d935f1d252f6d2237f004d00ce6d290763e06",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-VALUE-ORBITS-20261114",
+    "sha256": "fa28b90ea014888697e36cce8824aa70f887e5dd50db53cf15d18eb001f31c7d",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FINITE-FIBRE-NORMAL-FORM-20261114",
+    "sha256": "71e27707d0bd7f7b52e893ab5ed9f3479b3a5cc77973aa34602118c5e135b89b",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-RECONSTRUCTION-EMBEDDING-20261114",
+    "sha256": "c90cafd0c18e572e76f0734e91e79e1f94d77358403f53576e8e2bad37843430",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STABLE-HYPERSURFACE-20261114",
+    "sha256": "257d45b1f350626e8d6d17b4a99374ac86bb0b816645282787917b731e616679",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-MIXED-PROJECTION-PROFILE-20261114",
+    "sha256": "388098fa8ec58604e1fb03b7dab8e63fb325397899ab3d8bfa31b86e05b99811",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FIXED-POTENTIAL-PROJECTION-20261114",
+    "sha256": "083291a4a6be311e218f7d933fbd9c0da84fce92a7d147043571d430373ffd9f",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AMBIENT-QUADRIC-GRAPHS-20261114",
+    "sha256": "e1c9bac8194a9fb5970abbb4faaf2434624ca88b25cca24d172a119a9b6e9c62",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-THREE-AFFINE-PROJECTIONS-20261114",
+    "sha256": "0a7696fbc9c340a6f35e9e5d7160e8399c2c8c1625ee448b191ea792bfc28f51",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-AFFINE-ENDPOINT-GEOMETRY-20261114",
+    "sha256": "62239bd5951e99d03a7a6d7ead7b44659ce8e632af9a964efd1a0fa3251eb118",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRATIC-SYMMETRY-SATURATION-20261114",
+    "sha256": "404d7c3e731a3e640bfd2a4dfb4efac803957ef1d701cd2448d760227844b47d",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRIC-OUTPUT-BASE-20261114",
+    "sha256": "14ab55e5d1588a002659b40d2fa4f408a1eb72c13d8abba00366bb9f85ffe6c3",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-CRITICAL-GRAPH-20261114",
+    "sha256": "2872c84135f4536f6e4e906efc18974bb7b93efcf2d4fe02ab29eca7df4ef0bd",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PROPER-MORSE-BOUNDARY-20261114",
+    "sha256": "18d05a4dfeb15f1632d02e46a619be7dbd255adc6130537323bcb5af8162c0e6",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRATIC-PLANE-FIBRE-AFFINE-20261114",
+    "sha256": "8d7cef7b01eeeb041196495b70cc829999874dcf3867a62dfdf55b54d2d31f65",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-POSITIVE-WEIGHT-IMAGE-20261114",
+    "sha256": "912087793de825ad7a77cfe972378734181ad578ff0b894b18e4f087ea794aa9",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SMOOTH-INFINITY-OUTPUT-20261114",
+    "sha256": "16e45d059b716409d17ec969de7437670a020a3cbaa42a0639fdf28adfad5e69",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ABELIAN-CLASSGROUP-20261114",
+    "sha256": "2386db8a1e995f58443de9bf0d30e04a551288600a5a82ae995429291ed0f2e3",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REGULAR-PARAMETER-20261114",
+    "sha256": "d9d2e8e96869d97913acbf4fc7b1dc5e48ca8087c1dee1c5ba5c00286d3b7d0c",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NORMAL-MONOGENIC-COVER-20261114",
+    "sha256": "677b47de236a394cc66826cb4c3af5055a5955614bae4d3a90292d7ba753095d",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-LEADING-FIBRE-UNIT-GATE-20261115",
+    "sha256": "4f58b2bf79a71c4ff4a6555f47a620cd15ac0377d7938cff77e1d40ab07b1fa2",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NILPOTENT-COVER-MONODROMY-20261115",
+    "sha256": "0b5a99c670a1cb25941d7ed11b685c35a992324291343ef48c8c4e576d340d08",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NORMAL-QUOTIENT-BOUNDARY-20261115",
+    "sha256": "5142026ee0c4e43257f205d027cb33401808a7364c9829c90d849874609886ba",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-VALUATION-CRITICAL-CURVE-20261115",
+    "sha256": "7a95e3b347800b8ff6b7c8114fab349647d20bdf8f64b2e54fb9706468066726",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-FACTOR-SUPPORT-20261115",
+    "sha256": "7dee98c136fbb9c8a5bcb4560781e2779d0518f322c10389cc5c72ff8e2e4583",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-DERIVATIVE-POWER-MODIFICATION-20261115",
+    "sha256": "c6d9305c4b571569e89cb0af15d60915bdc607b32d364e2e45fc79739ab0edeb",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FACTOR-RESULTANT-BARRIER-20261115",
+    "sha256": "81ee1fd195cae7d1a8d27d9e06cc3548787e6680ac1f503997f5b175d0be95e1",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REDUCED-PENCIL-RATIONAL-MONODROMY-20261115",
+    "sha256": "bf6b5a0bb684b73845d2fee2d76f7d614baf036c548776d6776cb41ff508834d",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PENCIL-MULTIPLICITY-BOUND-20261115",
+    "sha256": "6a154cd0f93c8bfeae34f623489609c6018fbd316b2690b56bd462306e16345a",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PLANE-BRANCH-PARAMETERS-20261115",
+    "sha256": "d5d1fe3043294fcda150575b0981f469815d8f739c322874aa39e787d2a6f401",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CENTRAL-GEOMETRIC-QUOTIENT-20261115",
+    "sha256": "968360c8434d1944289e9badca55149383538286e06f772382717d44b618f7c8",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PARAMETER-NORMS-ALL-OUTPUTS-20261115",
+    "sha256": "fa755603e7ad81deef4ce84f5fb61d8a22621b657672952616629d7cdeaeb746",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-MULTIVARIABLE-FIXED-MULTIPLIERS-20261115",
+    "sha256": "d8fdaf7ba74dd3076a041b086a67d304fb5da7f13965da1e39ee97facffd7d02",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PARAMETER-STABILITY-MOVING-MULTIPLIERS-20261115",
+    "sha256": "498b3b41679db38450ab245cebe2746841d309a827f8c48fdf56f924484d6f7c",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-REFLEXIVE-PENCIL-DESCENT-20261115",
+    "sha256": "7b1038903d69505d71b66af07e3aa3cb6ae157280b7955d9ceb9eade77987665",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INDEPENDENT-COEFFICIENTS-OVERLAPPING-OUTPUTS-20261115",
+    "sha256": "c61ac457c1dd9f194cb9b14d03a304fe0a268a018e5140726eb244ac81525beb",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ADDITIVE-ACTIONS-IMAGE-INVARIANCE-20261115",
+    "sha256": "76bce304f0227f373a06bf66765ff162b898809316e9a2df34d057a827e781c3",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ONE-HELPER-OVERLAP-CLOSURE-20261115",
+    "sha256": "f82a5917ecacfa9cb9dda722cf43a8ff140ffe46cc5f9fb58f8f224f14d0fa1f",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-HELPER-CURVES-20261115",
+    "sha256": "a7063876dc2c4cdff1f684bdae5635fac19322b499aab3131a1eec1fe43126e6",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-UNIVERSAL-MODIFICATION-BOUNDARY-20261115",
+    "sha256": "efb2327795c3cec51d577851ebb11e5935bc08099e50627ddfbdf9c22c1f9054",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-NAMBU-DIRECTIONS-20261115",
+    "sha256": "196dcfe85606e88f47ae3823ee498217ebc3bfbb6939d1783e8f9686b3e2689b",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FREE-PROJECTION-TRACE-20261115",
+    "sha256": "543515e0c564c56a7d1d0626e5a2265492751fd4977e100e2cb8cbae27792c52",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PRIMITIVE-HELPER-NORMALITY-20261115",
+    "sha256": "f21668ebea4d4f51db0a0e5b771d2895642ca6e78bda34921b417442f3ed261e",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUADRIC-MIDDLE-CYCLE-20261115",
+    "sha256": "6d7da1c4d8487259d104a2cf87d7a9c56ee497c6ea5fa56a0b0e15b018e088b8",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADICAL-TRACE-20261115",
+    "sha256": "b7c314a26a2e80cc5c69e5f0dc2293dbb46593bb6d52b319a9a3a1f769105490",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CONTRACTIBLE-PENCIL-20261115",
+    "sha256": "5f16f27431ac4ef65c699eccee21bc7984786043bbb9b6ce2d2fa38ec3f8a0ad",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ONE-PLACE-DESCENT-20261115",
+    "sha256": "30f2fcfe3a6c515ab33886b4be3d3ca9b2715d7635075e94ebe65894862e1cae",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-EXTRA-PRIME-EXCISION-20261115",
+    "sha256": "1fae37a897a8ee7f048ae279cda9b955b9abbac04c9325e69c558f73a0d98222",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FORMAL-DIVISOR-RATIONALITY-20261115",
+    "sha256": "b87312604b018310eea386faa757b560c032b8eb34243250f956aaae1fd90279",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SEMISIMPLE-PENCIL-ORBITS-20261115",
+    "sha256": "e761efa8445337602ce4ead8e5be6c7892e31b21eb1649755573e88584369893",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-NILPOTENT-PENCIL-ENDPOINT-20261115",
+    "sha256": "4785ba5b06331d3c9e10c097a3f82808552b9536c3c2f80809517c4e49fb224e",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ALL-CENTERED-JORDAN-IMAGES-20261115",
+    "sha256": "e365867f13df87959b0887c6b2fd7f8532471f7b99cd595bf9df68268020ef21",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AFFINE-PENCIL-RESIDUES-20261115",
+    "sha256": "24ff3fbd007731bb183ee9dac9e6b893e228e0491f2a5d17c5c9cfc59c2df913",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ELLIPTIC-CONE-CYCLIC-CLOSURE-20261115",
+    "sha256": "a7ead04ba8edf35b2c671c19d3f6086ba31e077b0531f4e6ed9dbbf2986f3734",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ALL-DEGREE-QUANTIFIERS-20261115",
+    "sha256": "ef0b5b702b8b9de5a5cc28f2a7578a587a0e5657d2c9ba200575bdbb4753fb9e",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-STATIONARY-POLE-KRYLOV-20261115",
+    "sha256": "9b8cd751b5f3df503e82795ed590ac33921bc75cad13882ada525f3e3f038e01",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-LOGARITHMIC-CURVE-DESCENT-20261115",
+    "sha256": "273d59ef04a257709fa7002dc21eb4bcf9bf4c0a47da3e0ffbd634ae91c194ca",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-SQUAREFREE-VOLUME-ARCHITECTURE-20261115",
+    "sha256": "bdf312048e061a2ebf3ea281e7fe43df0e194122b4cfbc75772aea24470e41a9",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-AFFINE-POLAR-SEMISIMPLE-20261115",
+    "sha256": "10ef561846f40480363cf737eb10d09e674c4bc74e004e4a1138dfa884b3f94e",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-NEUTRAL-FACE-RESOLVENT-20261115",
+    "sha256": "a2c95a198e0422952d91b56d3dde32d2f2eba918324a1c69c6c3b292f2e55945",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-GAUSSIAN-SHEAR-NORMAL-FORM-20261115",
+    "sha256": "04cb3f153c39a8898629514d32ecceb5c463c8dd012b6d3df4e684a23f0a4bf0",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SUSPENDED-MULTIPLIER-20261115",
+    "sha256": "59c47b2ef9536db4fc41dc4c7fd9f7b47ec4c0a704d0b953967d659a68d98dad",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ACTUAL-DIRECTION-RANK-ONE-20261115",
+    "sha256": "87ff83d1a71153f03942ab462f86401f09c3a0aec4a390372351abdb4373ec41",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-JORDAN-POLAR-INVERTIBLE-20261115",
+    "sha256": "90a91f5b532778820ace2000c8252da5ecf9dc9ee57558daaccf88876423e08b",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-GENERIC-POINT-HOLONOMIC-DESCENT-20261115",
+    "sha256": "8768bc37cfbdfb282766cb1cc6a444672834ae0d3ade03a7e8cfba0215e305ef",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ZERO-EIGENVECTOR-RANK-ONE-20261115",
+    "sha256": "d03e3facb78a44957be14eac50ac278a66beafc1d706b9248477a2220280fb62",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-PRIMARY-THICKENING-ORACLE-20261115",
+    "sha256": "09427d45efa0081031e3273d3ea615b1ffe1eb781767389638806c5fd2ffe4dd",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-COMPATIBLE-INNER-COORDINATE-20261115",
+    "sha256": "c19c22f0a3447c0f95f5c98db18123450ef49599a7a6ff5c9107a5f1c0be81c1",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-FULL-MODULE-FINITE-MULTIPLIERS-20261115",
+    "sha256": "0293d2eb1e7b7de75ae573e8b16c3f712a82fe8fc15675208de6f54526bf5384",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-B-FUNCTION-LINEAR-CUTOFF-20261115",
+    "sha256": "616ccce136a75665a70cb95e92326c1b3e4805a00f18ef7b12e05a171864982c",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ISOTROPIC-KERNEL-QUARTIC-20261115",
+    "sha256": "b9855019e940c6d65b056c4794c762ba7cd12d3ae1507be523c5b5fcd5cb228d",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RESONANCE-CHART-UNIFORMITY-20261115",
+    "sha256": "a4bf1b2bf27affa526c340055683632b09da1527a2a532a08a2a86fcd00485cd",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-ALL-AFFINE-RESONANT-CUBIC-20261115",
+    "sha256": "21946943ba7296f9f35915c0c451ca353f46d17fcecf4bf840708c01c76c477f",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-OPERATOR-GAUSSIAN-LAURENT-20261115",
+    "sha256": "cbf7dc31b8441fbdc273072d1043d17562d7b57d9d75dcdfe4e4855bffcb99aa",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-NORMAL-MODELS-20261115",
+    "sha256": "b9e137345f79f2dc596d0a5ad41ced5e3a04a76d40e04c8e8a3eb2f741e85f94",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-FINITE-FAMILY-SPECIALIZATION-20261115",
+    "sha256": "3ed3309b901949799be53384ad991f52fa8ccda99b0aa116aee46183b431a8bf",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTRINSIC-CYLINDER-ONE-COORDINATE-20261115",
+    "sha256": "2b93bbd3bae2deda0bd45284e177f4edaeb578270c52eb947428450b122af9f4",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-HOLONOMIC-SOURCE-CUTOFF-20261115",
+    "sha256": "fcf1310938fd3c51f51645b427d361666d4d6404a726c27d04263530420a8906",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-ADDITIVE-K2-BARRIER-20261115",
+    "sha256": "c28e7d9db2aa92b1f70ae875e631ec4015412e540e1ca62609ac1033d3cea606",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RANKONE-ARTIN-20261115",
+    "sha256": "4df2f36cb22b8532fa61b6202ba1efe3c00c0e4a4a0a4ecd518e90b63ba39494",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PRIMITIVE-QUOTIENT-CERTIFICATE-20261115",
+    "sha256": "19f003e231b427c61887c9fd23af681fef226718af419495e7f186a4c005b4a6",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-QUOTIENT-HOLES-PERIOD-BARRIER-20261115",
+    "sha256": "2aab14d2cb7763c763d877707a336878c6bf96dda2f1664c48bd4cb97338cd06",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ACTUAL-PERIOD-KERNEL-20261115",
+    "sha256": "b86a51fb1cbf3b94154a1228bd48e70ba889732527e80affdf237fee3faf1dca",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TWO-SLICE-ORIENTED-RECOVERY-20261115",
+    "sha256": "59efd376b196f7280d20637fea2006057a70b8e17a5cc119c75c95b2b3fed212",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RATIONAL-CORE-BOUNDARY-20261115",
+    "sha256": "64e2ca3224daf465f614354385e3379ccf91685fa431e9f775f7b21198526415",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-LEADING-DECAY-CONSTANTB-20261115",
+    "sha256": "00c577a0d793830b166d3ec7054b23496778cf57bb3d132f99ef80b9a95a0180",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GENERIC-COORDINATE-SPECIALIZATION-20261115",
+    "sha256": "7d24cfbbb473005cbc9b3beefb39554f885ab1d409f7b7ee270a7c28c61832e2",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-SIGN-TWISTS-20261115",
+    "sha256": "2b542e732063a714f4577fe90524244f7e2500c1c24beb9b55151ec8fec14a93",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RATIONAL-PULLBACK-RANK-20261115",
+    "sha256": "dbdc134ccf16aca7c88b049dafe8a755804fbdcb6cf54a2d2bcffa5cc823c2da",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-TORUS-COORDINATE-VISIBILITY-20261115",
+    "sha256": "07299208f8c3feadf4ebaaf8591bf5c53c8920bf9a9d25f3cd3da0b0cf40df2b",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-INVERSE-CLOSED-SAFE-20261115",
+    "sha256": "1a46c73b9350c5de668d784837f714929b094c53cdb336fdd25a5e7cc9e367a1",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-MOTIVIC-FAMILY-BARRIER-20261115",
+    "sha256": "e90bfcc24014f20fd4209e937f72c4f40c8111eb63ab5833ec2adb99594510eb",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-QUADRATIC-AFFINE-SAFETY-20261115",
+    "sha256": "4bcacc1bdf5cf64f89ab049aeed0cce856be7864683c17ed820df07fcc4dc3e7",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTEGRAL-GLOBAL-VOLUME-PERIOD-BARRIER-20261115",
+    "sha256": "357a7e45eaf4b7518e55c4ba9b502c56aa1f52a02e6aa33f330c0cefca7b4c37",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-ORDER-TWO-DRIFT-20261115",
+    "sha256": "e2d26b3883a3f3af2afc745a75052c9b929297870dbf19321a88bd7c198e80cf",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-QUADRATIC-PHASE-ALL-ORDERS-20261115",
+    "sha256": "b33ba7b0e14ebbc2be3edc2d99314e7fa2c73e269e679a782d20c14cf59024a6",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-GLOBAL-NORMAL-FORMS-SEIFERT-20261115",
+    "sha256": "2455abc636d29ebe2e2adb745f5dff82b29c70892f0c5d84a81271f02608c229",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FILTERED-PRINCIPAL-PAIR-20261115",
+    "sha256": "fd16fb44e910ca9c4dbe25129b38a5b044b953023526b62c0f33b3c2d982890d",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RELATIVE-FLEXIBILITY-20261115",
+    "sha256": "2027ced2761c354be55215e7a69fb4fe1101dfb59ef26ee37209e31ecdf3d4ee",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RADICAL-PLINTH-RIGIDITY-20261115",
+    "sha256": "a018ef008cab25ade2ff3d4e983bd94a7ba1c5411dfe49c3ee37385c76becfcc",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-AMBIENT-COEFFICIENT-RESTRICTION-20261115",
+    "sha256": "1e749f051712a616443c6cb39438eeb69b7b050d584d23c6fb6361e2588b42c6",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FINITE-PLINTH-DESCENT-20261115",
+    "sha256": "3f1b2dcd9e72f00a23b0e6a1c482df155b3e5a59def71c0daa4be7583a3069d0",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-EXACT-SOURCE-POLYNOMIAL-HOM-20261115",
+    "sha256": "6a14f3ffc346430fed4adf039f6bbf7aac4c578ec0b2d1896dbcfe481e0204b7",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-FLAT-PLINTH-ONE-VALUE-20261115",
+    "sha256": "9e5df5bbc01090c9378c0ffb92875eaa6d886d54e6bc87b2a127dcbb23433951",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-DERIVED-STRATA-FIELD-UNIFORMITY-20261115",
+    "sha256": "58f52e8249b0055181f84cae63995d0b4bdf4288e83173ca4325b1c79581ee14",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-THREE-POINT-QUOTIENT-BARRIER-20261115",
+    "sha256": "baef44e30ad81055b99cb7813a40dc9415927c022f42b9df74359e0a9574a65b",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-POLYNOMIAL-GAUSSIAN-TRANSFERS-20261115",
+    "sha256": "6021d264da11ec513d3751667560b1918821ce66dabcbf1b690f938e9c68b011",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-WEIGHTED-PERIOD-GLOBAL-NILPOTENCE-20261115",
+    "sha256": "5ceb5a1c44a6cbdb2ccf2f63848b84db5a1c6a60fd91b1bec9ecc99fd56dceda",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-NILPOTENT-SAFE-COMPLETION-20261115",
+    "sha256": "4643e4c1f56f8cd33c62442c81b581fc73a6080480abbe1f06a324f9caed70cf",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-POSITIVE-CUTOFF-STABILIZATION-20261115",
+    "sha256": "98b1850a63376b136d731fc61096d2eab8e6c929790bb9a8626aa4f284afe64e",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CRITICAL-TYPE-FIRST-ORBIT-MODULE-20261115",
+    "sha256": "3eddc34b92fddc12bcb89c3d90bd46452d4695d144378386c3ec7f98a6dbe050",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FORMAL-FINITE-SEED-20261115",
+    "sha256": "3a304a11f9fb09e3403c0c0843a74ac10731ac51bd191e8a7066c4e025586173",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-RAMIFIED-DIVIDED-HESSIAN-20261115",
+    "sha256": "43af26280e761fed340d8ce5631250db9d3a3575e80222a4ea271bcc2ef37c51",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-EFFECTIVE-RING-BOUNDS-20261115",
+    "sha256": "276700fe2e1be1067afd34f039d224aabcee19bb83e3d4d37746a3b0c79db739",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SATURATED-PLANE-FROBENIUS-SHEAR-20261115",
+    "sha256": "312ffb93ac4d93134f2a670c71183052b798369a5ddd03545e690d48dbd65a0d",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-INTEGRAL-COTANGENT-LIFT-EQUIVALENCE-20261115",
+    "sha256": "9a5cd61a88be8f5dd68948af13551862f5434bdbc0e97d150bb2595f6578cf97",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-OPERATOR-TAIL-SAFETY-20261115",
+    "sha256": "f351783a487c707dbc0400f62f44749d29462b1eb39ac1656275bdd85e880193",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-HORIZONTAL-COEFFICIENT-COMPONENT-PRIME-20261115",
+    "sha256": "630bcfcec3cc9d8fba68271fee1f6210f4936cb5331f089deeb22019cf3d6ba5",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-REAL-CURVE-MARKERS-20261115",
+    "sha256": "1092da0586d90fc4955b09058c9b2fa7057e4424f3d87313bfc416a1c56d7db1",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-HARMONIC-ALGEBRA-20261115",
+    "sha256": "6100aeaf8357ba4f1512f1ef23d0b18cf710819ad588ee928f307288c70a44b0",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-CANONICAL-INTERMEDIATE-STABLE-CI-20261115",
+    "sha256": "38f40dae32ee725525385d065aa40f0c5979e997d54f2827a74a06585b1872b4",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-FULL-POLYNOMIAL-SYMMETRY-20261115",
+    "sha256": "9e71c437633f6bd21f4fd8a58e74dce65e1da4708c26f7dc62eac1f7c778244b",
+    "kind": "changed",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-WHOLE-SOURCE-POWER-TRACE-20261115",
+    "sha256": "20960c4c4d1a95bd14c1bf87880d6a639a4cc207a1101ded593eea57ed8ee2e2",
+    "kind": "changed",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "implementation",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-KELLER-ENDOMORPHISM-BOUNDARY-20261115",
+    "sha256": "a1b05dbfb1b242576c688732a32468457591771b01fc52c206a017aabab0fdcb",
+    "kind": "changed",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "use"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-PLANE-TRACE-CORE-NODAL-INERTIA-20261115",
+    "sha256": "4b8ecf79d137e0113dea55bf5b5fa2f5750ddc4432fe9f33d056d941ba9f4817",
+    "kind": "changed",
+    "changed_fields": [
+      "boundary",
+      "claims",
+      "implementation",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-PREFIX-EXCESS-AND-GENUINE-ITERATED-QUARTIC-CLOSURE",
+    "sha256": "1e963143cf67f717ddaa5995b6a166828a4a9dab78e26e04cdd27dc1918e8083",
+    "kind": "changed",
+    "changed_fields": [
+      "claims",
+      "reopen_when",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-UNIT-PERIPHERAL-REDUCTION-AND-TARGET-COVERAGE",
+    "sha256": "f2e2162b733307cbf09a636b61e00c68b5ed2172fe17348e067d0db399b49c5b",
+    "kind": "added",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-COTANGENT-INVERSE-SECTIONS-20261115",
+    "sha256": "ad810cafa60f158e5f0910387980b95e4e944b4dd6f22a1b5fcb73937e49b7e0",
+    "kind": "added",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-HC4-SOURCE-LAYERS-TRACE-KERNEL-20261115",
+    "sha256": "1f5e9076896ac6df3012a03b5da00bf3ca86c53480a376c2439618210af4bc97",
+    "kind": "added",
+    "changed_fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-SCHUR",
+    "sha256": "16a1d6d0d5d622425eee029671bb41569a2d53c015ed24c53f2c375b92621f3f",
+    "kind": "changed",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-RESIDUAL-AUDIT",
+    "sha256": "9af1a9d23d466b142540ac757e71502bb9893e397aa72735da6335aa3fb9148d",
+    "kind": "changed",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-HC4-TANG-20261113",
+    "sha256": "a2e17b9936e6e1c34db00537aca8ae3ea535304db8942eff440851b8503b5235",
+    "kind": "changed",
+    "changed_fields": [
+      "reviewed_claims"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-QUARTIC-RULED-COMPATIBILITY",
+    "sha256": "5b66aa1d1d5bd9caba062a419ccce803aeb41c85406fa7ecbd0dcc088e593903",
+    "kind": "changed",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "prerequisites",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-MOMENT-ALL-DEGREE",
+    "sha256": "57890c7381111c21316766f63ae712418a88310b11112b98b0e1d0f16e37b44d",
+    "kind": "changed",
+    "changed_fields": [
+      "claims",
+      "next_step",
+      "reviewed_claims",
+      "sources"
+    ],
+    "review": "Structural changes inspected,preserved without mathematical certification;proof dependency closure disjointness checked separately"
+  }
+]

@@ -255,3 +255,8 @@ correction spaces, with its complete lower-lift scheme. The current Lambda_H
 cannot supply it by (9). The all-degree transport theorem establishes an
 orbit-covariant restricted obstruction; it does not make the restrictions
 coordinate independent or settle DC2.
+
+The subsequent [QRT2 combined-space theorem](COMBINED_COCYCLE.md) supplies
+a different strong cocycle for a larger category, stable under all cubic
+positional potentials. It closes the combined-space question above for
+that class while preserving QRT1's counterexample for the original dual.

@@ -1,0 +1,82 @@
+{
+  "beam_width": 12,
+  "best": 36,
+  "coefficient_polynomial_cache": 214,
+  "distinct_maps": 1329,
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "log": [
+    {
+      "best": 36,
+      "children": 220,
+      "depth": 1,
+      "parents": 1,
+      "seconds": 0.111,
+      "tested": 815
+    },
+    {
+      "best": 36,
+      "children": 43,
+      "depth": 2,
+      "parents": 12,
+      "seconds": 0.845,
+      "tested": 10643
+    },
+    {
+      "best": 36,
+      "children": 26,
+      "depth": 3,
+      "parents": 12,
+      "seconds": 1.574,
+      "tested": 20503
+    },
+    {
+      "best": 36,
+      "children": 238,
+      "depth": 4,
+      "parents": 12,
+      "seconds": 2.323,
+      "tested": 30364
+    },
+    {
+      "best": 36,
+      "children": 47,
+      "depth": 5,
+      "parents": 12,
+      "seconds": 3.03,
+      "tested": 40207
+    },
+    {
+      "best": 36,
+      "children": 32,
+      "depth": 6,
+      "parents": 12,
+      "seconds": 3.752,
+      "tested": 50076
+    },
+    {
+      "best": 36,
+      "children": 250,
+      "depth": 7,
+      "parents": 12,
+      "seconds": 4.49,
+      "tested": 59943
+    },
+    {
+      "best": 36,
+      "children": 472,
+      "depth": 8,
+      "parents": 12,
+      "seconds": 5.267,
+      "tested": 69747
+    }
+  ],
+  "max_depth": 8,
+  "max_support_over_best": 4,
+  "scope": "Finite seeded nonmonotone beam with rational cancellation roots and six generic values per elementary line, bounded height and support. Not exhaustive over affine orbits, translations or all conjugations.",
+  "seconds": 5.27,
+  "seed": 261119,
+  "source_sha256": "7a251f704d1c1779664dc84063e1193ff66f1d9f78423e5b2066e0291f6f10d9",
+  "status": "bounded-no-improvement",
+  "tested": 69747,
+  "timeout_seconds": 90
+}

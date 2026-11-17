@@ -1,0 +1,4 @@
+   ? identifier `r` in use
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/cuspidal_generic_small_powers.sing line 82: `r=reduce(delta^k,G);print("DET_POWER_REMAINDER_SIZE");print(k);print(size(r));`
+   ? wrong type declaration. type 'help poly;'
+END

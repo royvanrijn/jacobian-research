@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED126",
+  "sources": [
+    {
+      "path": "BINARY_AFFINE_LONGITUDE_AND_FILLING_PROFILES.md",
+      "url": "retained:PF2RULED125",
+      "used": "Prior pair-preserving affine normal form and four algebraically admissible profiles; retained unchanged",
+      "bytes": 8718,
+      "sha256": "9168b3bc2fba8696f0dee96e0b99b41dc152a955de6d46bfde3b04c74f440a54"
+    },
+    {
+      "path": "INTERMEDIATE_CRITICAL_AXIS_DESCENT_AND_AFFINE_CUSP_PROFILES.md",
+      "url": "retained:PF2RULED123",
+      "used": "All-intermediate quotient axes, smoothness at simple critical curves, binary two profiles and double-value local factors",
+      "bytes": 11841,
+      "sha256": "82f1db79cf1b6ccbb686d70a4334f6763aa0084425c54798e4682d59f6f6f921"
+    },
+    {
+      "path": "SIMPLE_RAMIFICATION_MULTIPLICITY_LEDGER_AND_HALF_SUPPORT_CUSPS.md",
+      "url": "retained:PF2RULED119",
+      "used": "LOCAL corank-one simple critical calculation, arbitrary (m,m+1) branches with higher terms",
+      "bytes": 8656,
+      "sha256": "ce347428cffcad1405eb7dc7e40287890e96ae5d16bfa87c0575678106f62a6f"
+    },
+    {
+      "path": "PERIPHERAL_LONGITUDE_AND_ZERO_NORMAL_CONTROL.md",
+      "url": "retained:PF2RULED60",
+      "used": "Prior degree4 residual parity longitude identity credited",
+      "bytes": 11119,
+      "sha256": "a9835fe929f3b44652bc8f259fbd6f563732440b7421fe053688b670ee4e8d13"
+    },
+    {
+      "path": "FULL_PERIPHERAL_RATIONAL_LINKING_AND_LONGITUDE_JOINING_RECURSION.md",
+      "url": "retained:PF2RULED101",
+      "used": "Actual stabilizer lattice and rational linking/shear identity with torsion defects",
+      "bytes": 15021,
+      "sha256": "cdac815c9fdc8085f94e45d8dfdd7e5d0f2cebaaa15b3950c39480b03c53b9f5"
+    },
+    {
+      "path": "WHOLE_PLANE_THOM_LATTICE_AND_COMPLETE_PERIPHERAL_OBSTRUCTION.md",
+      "url": "retained:PF2RULED111",
+      "used": "Original-source integral complete coverage must not be transferred automatically to intermediate",
+      "bytes": 17490,
+      "sha256": "006da8c3c8b7bf2c1f264bd43908f450ee6a6ab1b3c78fcbec10fa1946635bad"
+    },
+    {
+      "path": "INTERMEDIATE_CHERN_BETTI_AND_END_OBSTRUCTIONS.md",
+      "url": "retained:PF2RULED124",
+      "used": "Intermediate end restrictions and shared missing-point interface remain open beyond their proved scopes",
+      "bytes": 12629,
+      "sha256": "0c3266ccd67adb7a773d21a006a0dde236da838ca7919ea8052f167dba3b6dca"
+    }
+  ],
+  "new_external_theorem_import": false,
+  "new_PDF_visual_audit": false,
+  "comparison_only_polar_literature": "https://www.degruyterbrill.com/document/doi/10.1515/dema-2010-0207/pdf",
+  "comparison_scope": "Primary authors polar-intersection survey discovered in literature check; no new dependency/PDF audit claimed. Needed (m,m+1) normal-push intersection count is proved directly by roots of unity.",
+  "new_authors_code_run": false,
+  "finite_samples_prove_theorem": false,
+  "formal_verification": false,
+  "external_review": false
+}

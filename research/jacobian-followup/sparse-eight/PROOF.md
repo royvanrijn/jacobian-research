@@ -152,6 +152,9 @@ The schema name in production output is inherited from the seven-term
 compiler; the explicit degree=7 and bound=8 parameters control this run.
 The previous source and certificates are unchanged.
 
-The first unexcluded normalized support size is nine. No nine-term
-counterexample or attained absolute support minimum is claimed.
+The later [nine-term gated proof](../sparse-nine/PROOF.md) also excludes
+nine terms and raises the current normalized lower bound to ten, using
+Moh through the coordinate gates. It preserves this independent rational
+eight-term proof. A [49-term example](../sparse-nine/NORMALIZED_WITNESS.md)
+gives an upper bound; no attained global minimum is claimed.
 

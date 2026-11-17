@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "total": 92990,
+  "checks": {
+    "uniform_exact_inequalities": 47,
+    "symbolic_identities": 8,
+    "finite_prefix_Bezout_certificates": 92935
+  },
+  "files": {
+    "ALL_UNIVARIATE_TWO_TERM_SFC.tex": "7838b27fe8551c5d0f03a8107bb48e0e3a6faf16625cfa7539adad3f9a17a31e",
+    "uniform_two_term_sfc.py": "ff24ce25e08b659958d2e757c1d7a93e9308546bc84b7809637a8ea14b91f8a0",
+    "verify_uniform_two_term_sfc.py": "ef52bd0fa05540af68906c85968a657e95efe8ba15646197fd199f7652fd7730",
+    "all_exponent_prefix_certificates.json": "79b06fc07ec60d593fde7af48da96e873583f6d0d406896d3dda21ad5c74b16f",
+    "uniform_two_term_sfc_audit.json": "79b50f2e57e95cd12ea7416d73c715efbde565bce264b62fdd817bd4f5ff0768",
+    "EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex": "673958f0dd9f69ba5d1e560eca531e3738b17622ab3fe3f0fcb0a44557274995",
+    "exponent_six_simplicity_verification.json": "3f32554082418c7f39d82b351d41bb15f13b015bcef165a9cf45ba82355ddfbc",
+    "ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex": "371912b90e06e2e3a4ccdbe435338ca1610e11f83753759cc2bf9fd1982e1cf3",
+    "all_exponent_squarefree_verification.json": "cfc5a9b3ec396bfc8a3c369b232475bf8b8ff5241c160e4d1a21ff5c373c1b41",
+    "PRIME_POWER_TWO_TERM_SFC.tex": "a20951e463ecc5264dbe1dc7c8c0025938b134d2339105385e81ae4dd3ad0ddb",
+    "QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex": "6c1ece0a10231625b875c40dc816bd2ad953e9ea3b80b9ef92e385f560202c83",
+    "MIXED_PRIME_RESIDUAL_WINDOWS.tex": "4e17be9cd0edc04edb13237e08f8768cd2ff9af87b2031933a491a8eb49c7a5e"
+  },
+  "effective_uniform_simplicity_cutoff": 10000,
+  "all_positive_exponents_all_indices_squarefree": true,
+  "ordinary_A_plus_B_Ym_SFC_all_starts": true,
+  "complete_finite_prefix": true,
+  "ordinary_exceptional_set_empty": true,
+  "unrestricted_SFC_closed": false,
+  "general_FC_closed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

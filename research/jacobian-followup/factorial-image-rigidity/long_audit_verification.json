@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-16",
+  "status": "pass",
+  "checks": {
+    "global_residue_spectrum": 5,
+    "critical_points_complete": 5,
+    "multiplication_critical_eigenvector": 18,
+    "critical_basis_invertible": 5,
+    "local_flag_diagonal": 18,
+    "actual_moment_ibp_system": 90,
+    "bounded_laurent_endomorphism_dimension": 5,
+    "bounded_laurent_endomorphisms_constant": 12,
+    "collision_flag_offdiagonal": 30,
+    "mittag_leffler_root_filter": 114,
+    "degree_one_root_filter_correction": 6,
+    "simultaneous_proper_block_trace": 16,
+    "volterra_sign_negative_control": 1,
+    "volterra_corrected_density_zero": 1,
+    "bilinear_self_pairing_can_vanish": 1,
+    "conjugate_pairing_positive": 1,
+    "polynomial_amplitude_scope_boundary": 1,
+    "polynomial_amplitude_nonzero_initial_value": 1,
+    "transcendental_flat_limit_can_vanish": 1,
+    "transcendental_flat_first_moment_survives": 1,
+    "ordinary_normalization_t_squared": 9,
+    "reduced_normalization_t_is_wrong": 9,
+    "finite_nilpotent_cutoff": 1,
+    "nilpotent_cutoff_sharp_control": 1,
+    "nonzero_pure_nilpotent_phase": 1,
+    "pure_nilpotent_all_higher_powers": 1,
+    "pure_nilpotent_first_moment": 1
+  },
+  "total": 355,
+  "scope": "Finite exact transcriptions and negative controls for the written EIT/FC2 proof audit; no universal analytic theorem is inferred from the finite grids.",
+  "proof_basis": "LONG_EIT_AND_FC2_AUDIT.tex plus pinned source proofs and identified published inputs",
+  "files": {
+    "verify_long_audit.py": "3c501af894dfa779b6f1e4082e0c6b6eb4379879f7a2f4ff44e1c2ca134f2266",
+    "LONG_EIT_AND_FC2_AUDIT.tex": "d9fc9b65eb3ffb8dc4f995abc110cabf9d377a6f32842b35dac29611f81aee47"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

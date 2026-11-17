@@ -1,0 +1,35 @@
+{
+  "claim": "QPA1",
+  "status": "PASS",
+  "cubic_equation_and_derivative": true,
+  "generic_Jacobian": "-v",
+  "generic_residue_cover_degree": {
+    "value": 3,
+    "evidence": "written monic-cubic function-field argument"
+  },
+  "both_boundary_parameterizations": true,
+  "discriminant_double_and_simple_factorization": true,
+  "boundary_v1": "(2-3*r*z)^2/(2*r)",
+  "v1_is_nonconstant": true,
+  "first_order_normal_form_control": true,
+  "positive_operator_order_commutator_controls": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "localization_can_destroy_local_nilpotence_control": true,
+  "retained_Long_localization_receipt_hashes": "PASS",
+  "hashes": {
+    "RAMIFICATION_AND_POSITION_AVOIDANCE.md": "3272e997f36f566cf0587d5d99cabb003e377a9da5457d193ee02ad6a19d9200",
+    "check_position_avoidance.py": "b20c100989a2266f48fb366efc181bc2cea69f514ea4ecb383e7f876bfebb046",
+    "QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md": "7e1ff77f6b2a057a0ad9efc8cf00891043a650ffb01eaf085aed06d88aabb833",
+    "quadratic_mate_controls.json": "690a4ab8bbebe56dd7041898101c0d075422218dbd3d21192015e82fbbdf4cbb",
+    "verify_long_pbw.py": "266cfed8261bdec371bd26e2bb3a46cab9f588030adcc92c4e75dbd6b150bca2",
+    "check_curve_and_module.py": "fbe60d83abed391685f1e296ececf2d01bd6a686f18dc4983f8584d73f1792a6"
+  },
+  "coverage_boundary": "Finite symbolic identities only. The two-branch field lemma, completed quantum intersection, full positional-image theorem, all-source low-order exclusion and ambient ad-nilpotence classification use written proofs, not finite degree tests.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

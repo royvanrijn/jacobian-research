@@ -1,0 +1,13 @@
+{
+  "date":"2026-11-16",
+  "frozen_before_execution":true,
+  "selection":"All sixteen retained A5 quotient-kernel classes of the double-cover groups on the first sixteen targets. No replacement maps or knots.",
+  "motivation":"V4/V5 permutation modules and restricted knot-root W3 calculations do not cover ordinary double-cover cohomology for the two irreducible 3-dimensional A5 modules or the characteristic2 natural 2-dimensional modules. The ordinary Z1/dimension estimate reduces to simple modules by a composition-series inequality.",
+  "integral_stage":"Full 3-dimensional cocycle Fox matrix over Z[tau], tau^2=tau+1, using rotation matrices from the retained H3 model; expand to an integer matrix. Smith factors isolate every exceptional prime except the discriminant5, which is always checked separately. Do the same for the invariant-vector matrix.",
+  "modular_stage":"At every isolated prime and at2,3,5, test every residue embedding, including inert quadratic fields. In characteristic2, construct the 2-dimensional quotient by the invariant line and its field conjugate; evaluate full ordinary cocycles. Reuse retained complete V4/V5 and trivial-module bounds, with explicit simple-module identification.",
+  "classification_source":"ATLAS A5 representation page lists absolute simple degrees: cross-characteristic1,3,3,4,5; characteristic2 degrees1,2,2,4; characteristic3 degrees1,3,3,4; characteristic5 degrees1,3,5. Import the completeness classification explicitly and verify the supplied models by matrix-algebra spans/characters at the modular primes.",
+  "rank_gate":"If dim Z1(G,V)>2*dim V, ordinary rank G>=3 and the retained double-cover/four-seed certificates force mr=b=4. If all simple modules have dim Z1<=2*dim, every finite-dimensional module through that fixed A5 quotient has the same upper bound on this estimate, including indecomposables.",
+  "limits":{"maps":16,"integer_cocycle_rows":84,"integer_cocycle_columns":78,"factor_trial_cap":1000000,"residue_root_search_cap":1000000,"seconds_per_map":30,"seconds_total":300,"checkpoint_each_map":true},
+  "controls":["Free group F2: Z1=2*dimension for any module","Free group F3: Z1=3*dimension, so the rank gate succeeds","Direct principal-cocycle substitution in every matrix"],
+  "scope_boundary":"An exhaustive coefficient-module exclusion would apply only to the ordinary unrestricted rank estimate through one retained A5 quotient at a time, not to other finite quotients, joint product quotients, nonlinear generation obstructions, restricted meridional bounds or actual group rank. Four targets have no A5 map. No assertion of novelty or full MRC."
+}

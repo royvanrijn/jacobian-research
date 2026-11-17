@@ -1,0 +1,8 @@
+{
+  "case": "nu-zero",
+  "input_sha256": "b3466f3d09bbd0c1c2968f278cd86c696b043d3721e2ce5ccb4810b0d6196a8a",
+  "mode": "conic",
+  "seconds": 0.005,
+  "source_sha256": "badbdbe04086b7d7d8e1b0b8a697c7f8853d8feed882d2b2d96e5caaacb02ebe",
+  "status": "primary-parameter-basis"
+}

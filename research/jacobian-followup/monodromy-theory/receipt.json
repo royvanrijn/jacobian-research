@@ -202,7 +202,7 @@
   ],
   "python": "3.12.3",
   "sympy": "1.14.0",
-  "runtime_seconds": 0.195,
+  "runtime_seconds": 0.203,
   "proof_boundary": "Universal inertia, normal-generation, nilpotent and all-even-dihedral exclusions have written proofs. Finite controls do not formally verify them. Formula-to-dessin identification and the automorphism-group upper bound are attributed external inputs.",
   "dihedral_controls": [
     {
@@ -487,8 +487,8 @@
     }
   ],
   "sha256": {
-    "THEORY.md": "17a356449d16e7c5e7f07c3b832fa95f53c56b2b8a74e64fb2ddb78ff6afa16a",
-    "F11.md": "8ba90d2b3f8e5fdd591b29fa0e457f12d838cd6b263ad27497844ac1a52fdd17",
+    "THEORY.md": "4ee3c1b79593507c9d317d7c3f8bb2639849ab03668d849809b7ebf487f9967d",
+    "F11.md": "ab9b3d2e1730c72b2bf22dcf6273f3ac1e41b0871083bb8a49685858e4f0ea5d",
     "model.py": "bfbfd7014166a76b3056a530c59513123b55e2988ec753abab6c7cf87b6bd9c9",
     "verify.py": "f6538a84c4cb04c532be93647e808e978a165bc6dd90efef0024586ebbc80c47",
     "model.json": "31bf8fa41fbe4a8cf2f215a1bd29170bca3dd38c85d60f1ec569e49449f8299a",

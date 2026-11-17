@@ -1,0 +1,57 @@
+{
+  "outcome": "PASS",
+  "claim": "HC4MYMR0",
+  "metadata_groups": [
+    "MR0 registered with frozen proof/checker/context/receipt:84 controls58 algebraic",
+    "five retained claims,ten proof-checker pins;zero new imports/caches/downloads",
+    "exact degree,actual image,monomial cyclicity and field-versus-global-algebra boundaries explicit",
+    "one first new preregistration PASS,no predecessor mathematical replay or assurance upgrade",
+    "full parent open,MP0/MQ0/KX0 retained,three direct MR0 attack witnesses,quartic plane retirement/MB0 boundary preserved",
+    "new replica-degree method,five affected prior methods and all changed-parent lesson fingerprints refreshed",
+    "both root and both related shared work items plus README retain original full trace-energy and prior history",
+    "navigation matches repository renderer output;no manual generated edits",
+    "known unrelated missing-artifact baseline [2,2,1,0];affected whitespace clean"
+  ],
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 515, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 504, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "check_count": 84,
+  "algebraic_controls": 58,
+  "retained_claims": 5,
+  "retained_pins": 10,
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "preregistration_mathematical_checker_invocations": 1,
+  "registered_mathematical_checkers_executed": [],
+  "frozen_files_sha256": {
+    "research/jacobian-followup/hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md": "de702213847238998a76c14ddeb48e414592cafdb6041e9c337c2b491ec5327d",
+    "research/jacobian-followup/hc4-triangular-graphs/verify_replica_degree.py": "c26c225ebbf45de85146fc820db9e558153409733c686cfd5ef68329b0bce0df",
+    "research/jacobian-followup/hc4-triangular-graphs/sources/replica-degree-context.json": "3729a3575c14d23847fd0501a14b022a7b8c054550c0b3c9e0eec83ea90e33d1",
+    "research/jacobian-followup/hc4-triangular-graphs/receipt-replica-degree.json": "6f9fe4fbf000e91c67755ac43a345e0ef30abf7eb45b8fe038d7f80139909b9e",
+    "tmp/replica-degree-preregistration.json": "119bf7f7c5871ece7bd551736c377bd764454bc783bc95b4998104f9c01966e2"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "original_goal_complete": false
+}

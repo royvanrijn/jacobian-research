@@ -1,0 +1,9 @@
+ring rr=0,(q,s,t,r,rho),dp;
+short=0;
+ideal I=(-3/1)*s*r,(-2/1)*q*r+(2/1)*t,(-3/1)*s^2,(-2/1)*q*s,(-8/3)*q^2,(-4/1)*q*s*r+(1/1)*s*t,(-4/1)*q*s^2,(-16/3)*q^2*s,(1/1)*q*s*t*rho+(-1/1);
+matrix M=lift(I,ideal(1));
+matrix CC=matrix(I)*M;
+if(CC[1,1]!=1){print("ERROR");quit;}
+int i;poly pp;
+for(i=1;i<=nrows(M);i++){print("GEN:"+string(i));pp=M[i,1];while(pp!=0){print("COEF:"+string(leadcoef(pp)));print("EXP:"+string(leadexp(pp)));pp=pp-lead(pp);}print("END");}
+quit;

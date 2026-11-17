@@ -1,0 +1,31 @@
+{
+  "claim": "QPL1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "c3d7500649c3adc8",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "new_lesson_and_existing_work_reviews": "PASS",
+  "local_links_checked": 182,
+  "unique_equation_tags": 17,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "5bf5fb8aae62b59754f93fdce2d1820af3b43311ca2b7ea92e3c0ba58bf57a4f",
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    }
+  ],
+  "research_context": {
+    "source": "https://arxiv.org/html/nlin/0610073v2",
+    "used": "PI (2,3) string-operator framework; local normalization, full global fourth image and admission supplied by the written proof and seed."
+  },
+  "proof_boundary": "Universal arguments are written proofs. Exact controls are finite identities, not independent theorem replay or formal verification. The explicit full formal Long lift has unbounded spatial degrees. It does not settle bounded realization or all-representative nonlifting."
+}

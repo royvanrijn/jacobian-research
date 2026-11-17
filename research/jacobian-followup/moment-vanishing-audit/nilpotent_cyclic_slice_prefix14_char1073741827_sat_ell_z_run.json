@@ -1,0 +1,14 @@
+{
+  "status": "error",
+  "exit_code": -11,
+  "characteristic": 1073741827,
+  "algorithm": "F4SAT saturation I14:ell_z^infinity, corrected to supported31-bit prime",
+  "time_limit_seconds": 45,
+  "memory_limit_bytes": 3221225472,
+  "elapsed_seconds": 8.681,
+  "input_sha256": "8b23deb32c987f4e695b6f929999319c5d200e679b0ae9edfceb7e97490031b7",
+  "output_exists": true,
+  "conclusion": "MODULAR ONLY; no rational radical membership or full global exhaustion inferred.",
+  "output_bytes": 0,
+  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

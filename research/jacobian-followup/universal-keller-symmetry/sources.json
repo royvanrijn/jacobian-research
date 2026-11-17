@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "purpose": "Pins the cost, cocycle, fixed-space and primitive-monodromy inputs. Published group and linearization results are credited; no novelty or independent whole-proof replay is certified.",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-costs/PROOF.md",
+      "sha256": "9aa869ff86366e92831b8aaaab32d441bea9d55b8ef0c1688acea28677299c66"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-levels/PROOF.md",
+      "sha256": "1e7143e3319882a2580c1bac6c0e106267b1301ab5e7e498e8be23f17e99f2d1"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-structure/PROOF.md",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "archive/non-elliptic/verified/PRIMITIVE_MONODROMY_ATOMICITY.md",
+      "sha256": "baac592016eef8ff4874081310826dd845f629c98bbd7dc0f3899e6ca697836f"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "S. Lamy, Tame polynomial automorphisms, arXiv2609.05655v1,2026",
+      "url": "https://arxiv.org/html/2609.05655",
+      "scope": "Propositions2.5 and4.11; Section4.6 higher-dimensional limitation and example. Full relevant statements and proofs inspected."
+    },
+    {
+      "title": "S. Lamy and P. Przytycki, Almost a building for the tame automorphism group,2021",
+      "url": "https://arxiv.org/abs/1802.00481",
+      "scope": "Original tame three-variable linearization. Full introduction inspected; accessible2026 survey used for precise theorem and proof restatement. Publisher page403."
+    },
+    {
+      "title": "G. Freudenburg and L. Moser-Jauslin, A nonlinearizable action of S3 on C4,2002",
+      "url": "https://www.numdam.org/article/AIF_2002__52_1_133_0.pdf",
+      "scope": "Sections2--4, Theorems1--2, Proposition2 and Corollary2. Nonlinearizability and representation stabilization are published; our fixed-locus obstruction is an application."
+    },
+    {
+      "title": "G. Kemper and E. Mattig, Generic Polynomials with Few Parameters, Theorem11",
+      "url": "https://www.math.cit.tum.de/fileadmin/w00ccg/algebra/people/kemper/kem.generic_few.pdf",
+      "scope": "Affine groups with scalar complement already have one-parameter generic polynomials over infinite extensions. This does not imply constant Jacobian or a whole affine-line source."
+    },
+    {
+      "title": "Jensen--Ledet--Yui, Generic Polynomials, AppendixA.1",
+      "url": "https://library.slmath.org/books/Book45/files/book45.pdf",
+      "scope": "Classical additive and multiplicative Hilbert90 already retained by the pinned predecessor proof."
+    },
+    {
+      "title": "Stacks Project, Lemma58.2.2, schemes etale over a field and Galois sets",
+      "url": "https://stacks.math.columbia.edu/tag/03QR",
+      "scope": "Classical finite-etale/Galois-set dictionary. Finite-field partition types and Frobenius conjugacy classes supply the point-count application."
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/EFFECTIVE_NOETHER_EXPONENTS_AND_EXPLICIT_RING_BOUNDS.md",
+  "canonical_proof_sha256": "524424a3e2ccfc7214c91f1286aabdebf95bc5a7067024450c145ccc53d405cc",
+  "claims": [
+    "MVEFFECTIVENU20261115",
+    "GVCEXPLICITFORMAL20261115",
+    "GMC3ORDINARYBOUND20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_effective_ring_bounds.py",
+  "checker_sha256": "e9b7fdebd8b991496dbf3c3294c07cdf607a85cb2844f9fb0dc017be4b9490de",
+  "receipt": "jacobian-followup/moment-vanishing-audit/effective_ring_bounds_verification.json",
+  "receipt_sha256": "e1daf9f7950ee5683311305ec81046d0db4103f519c91332345b65662d340631",
+  "prior_frontier": "jacobian-followup/moment-vanishing-audit/effective_ring_bounds_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27",
+    "rank_one_image_source_audit.json": "e2cb6a2665b0287cf5e6ea53873d4df08fece3bdc693804318c33ad21ab9014c",
+    "HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+    "holonomic_source_cutoff_source_audit.json": "7e77ba8f6dd2823a6f90053a0faf8326259f4e54f68c8f29655dadb6dc66fee3",
+    "ALGEBRAIC_SPECIALIZATION_AND_FINITE_FAMILY_DECISION.md": "b4975f1c9dd56dd66577af640d6a75044fcbb2e7f1a20e0b9fe0fc73b3c3ef87",
+    "CONSTANT_COEFFICIENT_OPERATOR_DECISION.md": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "LINEAR_MIXED_CUTOFF_FROM_B_FUNCTION.md": "9c5842fe7f67dadc417b6c259f981caed14fc3d44f47401f572d49bcfc433ad1",
+    "CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "ACTUAL_DIRECTION_RANK_ONE_RIGIDITY.md": "525a5a306c59f2d24a9f7eb5e9a715d56f57b3acdbccbfeec7c8e082c7d0c90b",
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "ACTUAL_PERIOD_KERNEL_AND_ALGEBRAIC_IMAGES.md": "7beec8e370120738aa558b6dd4422ff38f2ae4670f75df5fb008e5ce6576eeb8",
+    "actual_period_kernel_source_audit.json": "b0a93e5da5a57b08c0ace1a1553eaea5ed723ffc5b77e34165ccec58b38eaee0",
+    "RATIONAL_CORES_AND_BOUNDARY_SUBSPACES.md": "3ab075933db65b79df4bbaaa411cc63fad9913e59a91f709636ffc97ae80aedb",
+    "period_boundary_geometry_source_audit.json": "d3292181d6ed809ac120fc901755d389d539d1d425291e015a07ffc8a4caeea9",
+    "LOGARITHMIC_CURVE_PERIOD_CRITERION.md": "c30318b771f2f91175a1c922ab197217d18b7fab124e4376b08ad513af40ffa2",
+    "logarithmic_curve_criterion_source_audit.json": "81d6da61726efc5b6b41243b75b6b718e678df0f617e3a659ecfbe7a1462737d",
+    "verify_actual_direction_rank_one.py": "00108d25777cc1cfebcd5179702ea1ef961c5e8088017e85af58766892096a0b",
+    "actual_direction_rank_one_source_audit.json": "024d28ab8c0f6bf16ea5b29a29cb5b23bfa8bcb6e6dd3448029456481e27dae0",
+    "LEADING_COEFFICIENT_DECAY_AND_CONSTANT_B.md": "ad73a4c317eabf9f22985aa4e0640c15066acc7cbe481935b65b5c76b7bd611a",
+    "constant_b_all_degree_source_audit.json": "5e28e0b15deb5e082a708f1bba81fdc90823f495898a2621f778c3684be2e7a5",
+    "SQUAREFREE_LINEAR_T_ALL_DEGREE.md": "803fc7c409c3713107d301c3c105d9f209ff07194efae4f0d1b14e13d5e1056a",
+    "squarefree_linear_t_source_audit.json": "ffd46efb1467a979cbb128d3ebe7fd266cb082cd782b2e6b4d97b094aac00f44",
+    "RATIONAL_GAUSSIAN_PULLBACKS_AND_IRREGULAR_RANK.md": "3d56816a5be24f6f3af1aaa0fb103ea4f728263cd3e8cbfc7bf9161861dd7dd9",
+    "rational_gaussian_pullback_source_audit.json": "6c1a2caaaf58625456df091809bed102b4e7e8fb92ed116f99104ffa432b631b",
+    "LAPLACIAN_INVERSE_CERTIFICATES_AND_CLOSED_SAFE_LOCI.md": "94c3b94b9db7804f6fe3366898936db7a5f3107dfddcc066e3416b09bbd5678d",
+    "laplacian_inverse_source_audit.json": "9cdd1b9872db519d5510e4b082c8a819cb3ee244556ec5966e3eebb74abdd02b",
+    "QUADRATIC_OPERATORS_AFFINE_TERMS_AND_CLOSED_SAFETY.md": "04c7ad9bdcc0ee911939fbaa2a39397a7b19e43d3b7314f4cc5826716f66fac8",
+    "quadratic_operator_safety_source_audit.json": "0599b40be27601e12d30c2e847f9b5b415cbb01397fde4c474d9df0ab284bf36",
+    "ORDER_TWO_DRIFT_REDUCTION_AND_UNIFORM_SAFETY.md": "3c9404f55083ce012178d971a7d99d34e6965a208fc198242d8b7df4f7e7c39d",
+    "order_two_drift_source_audit.json": "d8f9ff6611bc60c31471742e23e79890e1444ef955769b8a3c3d67d39578a47c",
+    "QUADRATIC_PHASES_FOR_ALL_OPERATOR_ORDERS.md": "f13a8a6f4c0981be1943d38eba5c8b5993f63fa560f2cf0f7a47ce4ed4bdcd1c",
+    "quadratic_phase_all_orders_source_audit.json": "5427a39e284eb230483bb2b4ecab8639662c482f6da1ad861ec3dd4b91a7b22b",
+    "FILTERED_PRINCIPAL_PAIR_GVC_TRANSFER.md": "3a70c50df41d1cb80e83e6eb6e76254b9d952c28db281d5252715b368aefdf7c",
+    "filtered_principal_transfer_source_audit.json": "24f55338d8d7dfd641f47ab581a73874301d83cd649dc0e7ff58e28761884d08",
+    "AMBIENT_COEFFICIENT_JETS_AND_INFINITY_RESTRICTION.md": "8ad41035ead81b1de3c30dff45f207345c039e6a6a7545e6beeb81f279d33c96",
+    "coefficient_restriction_source_audit.json": "8c04d1c532eaf14dc1586fc17572c16b0d08744bb912655f1f276ab56a422cb1",
+    "GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md": "b1dd4488fe3832a56108302340c8327251c8fbcdf90baf32c1c3aaac8696db27",
+    "gaussian_completion_hom_source_audit.json": "420d06c4dd7217bf76805387fd046a7518f7bd69df4f0bd88cec970025e12044",
+    "FIBERWISE_POLYNOMIAL_HOM_AND_GAUSSIAN_FIELD_UNIFORMITY.md": "c0eefd0d41afd675bdd47bf62a7ad8289a1112adbc1230def39f42c860b7e231",
+    "fiberwise_hom_uniformity_source_audit.json": "b92e5f9bed3fe21bac11931ced5e38ca603132f065c526eb6121e636c8246611",
+    "POLYNOMIAL_GAUSSIAN_REDUCTION_AND_ALL_MODEL_FIELD_UNIFORMITY.md": "00034b06c0459189f78a1f7b74f49de5dd168f8b7cc1558f7de8ff75deefe740",
+    "polynomial_gaussian_transfers_source_audit.json": "00337f1f126a081a68153f9778195d0803e98fab03d089d1c2f2a005d5e30ea9",
+    "NILPOTENT_LIFTING_AND_FORMAL_SAFE_COMPLETION.md": "f0a2459c97743b65804fbeacadd2fbe377e15376bdc3941e4c72b70013de9975",
+    "nilpotent_safe_completion_source_audit.json": "09b83db8bd0c7a0456190e27bfbb8eedf9eccef4f2a74ed116de0cb75d9a1f3b",
+    "POSITIVE_FIELD_THEOREMS_AND_ORDINARY_CUTOFF_STABILIZATION.md": "daa4a59710635232ca02f3b9730b96bc15c02334525553a6379dcea753b64606",
+    "positive_cutoff_stabilization_source_audit.json": "362a565cc1868370244350de444eb0705ac4c4a2f326fa3583be9b9f352ac771",
+    "FINITE_SEEDS_AND_FORMAL_OPERATOR_UNIFORMITY.md": "ada59a4b520f4ad20248bc9052feca88fbecfec23e6fd55dabbc09cb756aead9",
+    "formal_operator_finite_seed_source_audit.json": "eb924c4a0e243fa8288b65ad4312801abe9e6d09523d4a55ef94f7f8e645aec4"
+  },
+  "retained_frontier_hashes": {
+    "archive/non-elliptic/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "archive/non-elliptic/extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md": "6a9f9186d130dcdf5653a105aea1e2119110aebd80cf887243baf10bbf803994",
+    "archive/non-elliptic/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md": "5fff1bb5aae08c4bb968d7b4945086944d698a54fcc7bd08c8f9fdcd014b474f",
+    "archive/non-elliptic/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "7f7c78a729910136bf5ca28eceda86778e73309bde4e9752f1cd8da4354a00aa",
+    "archive/non-elliptic/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md": "346d8e9da14d7b64f2fa01eef95cd65dc4d9870135d8e330823d4485d22135fa"
+  },
+  "retained_auxiliary_hashes": {
+    "archive/non-elliptic/extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md": "1299752c6b71392bb00580ca3104b2ed813490034e43cf90dfbc0e0b8f573061",
+    "archive/non-elliptic/extended-geometry/SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md": "073a6c449cea18db953dee5827d3a19cdae2457119384a1b975d3c4c176156c1",
+    "archive/non-elliptic/extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md": "3b22a1567f4b1698a8eba15f5deabfb8c0be835162ebe0b05e42cc57f1d27dcf",
+    "archive/non-elliptic/extended-geometry/BINARY_GVC_ENVELOPE_CLOSURE.md": "7c69f138b4343c838f837b854c8e2069c7edfd836e6223f10bf5d13717f94e75",
+    "archive/non-elliptic/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "archive/non-elliptic/extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md": "eae8830f49d983b9c6b82589d9feeeeedd8e88becbe619bffed2b0168ffc2262",
+    "jacobian-followup/moment-vanishing-audit/RESONANT_MULTIPLIERS_AND_UNIFORM_CHARTS.md": "0f1e12d909e2c916e7c49c92865e3ac37b0178ff6add865b34cd9f33fddb509e",
+    "jacobian-followup/moment-vanishing-audit/FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "jacobian-followup/moment-vanishing-audit/HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+    "jacobian-followup/moment-vanishing-audit/RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27",
+    "jacobian-followup/moment-vanishing-audit/ACTUAL_PERIOD_KERNEL_AND_ALGEBRAIC_IMAGES.md": "7beec8e370120738aa558b6dd4422ff38f2ae4670f75df5fb008e5ce6576eeb8",
+    "jacobian-followup/moment-vanishing-audit/AMBIENT_COEFFICIENT_JETS_AND_INFINITY_RESTRICTION.md": "8ad41035ead81b1de3c30dff45f207345c039e6a6a7545e6beeb81f279d33c96",
+    "jacobian-followup/moment-vanishing-audit/RATIONAL_GAUSSIAN_PULLBACKS_AND_IRREGULAR_RANK.md": "3d56816a5be24f6f3af1aaa0fb103ea4f728263cd3e8cbfc7bf9161861dd7dd9",
+    "jacobian-followup/moment-vanishing-audit/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md": "b1dd4488fe3832a56108302340c8327251c8fbcdf90baf32c1c3aaac8696db27",
+    "jacobian-followup/moment-vanishing-audit/PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "jacobian-followup/moment-vanishing-audit/CONSTANT_COEFFICIENT_OPERATOR_DECISION.md": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+    "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_SPECIALIZATION_AND_FINITE_FAMILY_DECISION.md": "b4975f1c9dd56dd66577af640d6a75044fcbb2e7f1a20e0b9fe0fc73b3c3ef87",
+    "jacobian-followup/moment-vanishing-audit/FIBERWISE_POLYNOMIAL_HOM_AND_GAUSSIAN_FIELD_UNIFORMITY.md": "c0eefd0d41afd675bdd47bf62a7ad8289a1112adbc1230def39f42c860b7e231",
+    "archive/non-elliptic/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "7f7c78a729910136bf5ca28eceda86778e73309bde4e9752f1cd8da4354a00aa",
+    "jacobian-followup/moment-vanishing-audit/POLYNOMIAL_GAUSSIAN_REDUCTION_AND_ALL_MODEL_FIELD_UNIFORMITY.md": "00034b06c0459189f78a1f7b74f49de5dd168f8b7cc1558f7de8ff75deefe740",
+    "jacobian-followup/moment-vanishing-audit/NILPOTENT_LIFTING_AND_FORMAL_SAFE_COMPLETION.md": "f0a2459c97743b65804fbeacadd2fbe377e15376bdc3941e4c72b70013de9975",
+    "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md": "0701fc552d1c30266281162fbc1bd62a7c9135c72e7c013a70d7241bb21224ca",
+    "jacobian-followup/moment-vanishing-audit/QUADRATIC_PHASES_FOR_ALL_OPERATOR_ORDERS.md": "f13a8a6f4c0981be1943d38eba5c8b5993f63fa560f2cf0f7a47ce4ed4bdcd1c",
+    "jacobian-followup/moment-vanishing-audit/POSITIVE_FIELD_THEOREMS_AND_ORDINARY_CUTOFF_STABILIZATION.md": "daa4a59710635232ca02f3b9730b96bc15c02334525553a6379dcea753b64606",
+    "jacobian-followup/moment-vanishing-audit/FINITE_SEEDS_AND_FORMAL_OPERATOR_UNIFORMITY.md": "ada59a4b520f4ad20248bc9052feca88fbecfec23e6fd55dabbc09cb756aead9",
+    "jacobian-followup/moment-vanishing-audit/RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "jacobian-followup/moment-vanishing-audit/GAUSSIAN_RADIAL_TRANSFER_AND_EXCEPTIONAL_UNIFORMITY.md": "b2e468ccb68f4e904eceb8cd9015840695998213403be0dda1a3ea4c6bf7c1a0",
+    "jacobian-followup/moment-vanishing-audit/verify_gaussian_radial_transfer.py": "f56cff5862a17b7f3be031a7282947f4c0dd5922c2c919da5e0e4f87c30d3719",
+    "jacobian-followup/moment-vanishing-audit/gaussian_radial_transfer_verification.json": "9ee4f996649e5c9623f7eb319d49b2c874ae7368e0f2c0f70d9f33bc9db46cbc",
+    "jacobian-followup/moment-vanishing-audit/gaussian_radial_transfer_integration.json": "0bdb3327348d9120bc6e5da32993183ca75f0bc1f99e12a5e7fdafde58a6efb2"
+  },
+  "dependency_canonical_proof_hashes": {
+    "jacobian-followup/moment-vanishing-audit/FINITE_SEEDS_AND_FORMAL_OPERATOR_UNIFORMITY.md": "ada59a4b520f4ad20248bc9052feca88fbecfec23e6fd55dabbc09cb756aead9",
+    "jacobian-followup/moment-vanishing-audit/POSITIVE_FIELD_THEOREMS_AND_ORDINARY_CUTOFF_STABILIZATION.md": "daa4a59710635232ca02f3b9730b96bc15c02334525553a6379dcea753b64606",
+    "jacobian-followup/moment-vanishing-audit/RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "jacobian-followup/moment-vanishing-audit/TERNARY_CUBIC_GMC_CLOSURE.md": "0701fc552d1c30266281162fbc1bd62a7c9135c72e7c013a70d7241bb21224ca"
+  },
+  "primary_scope_audit": [
+    {
+      "paper": "Janos Kollar,Sharp Effective Nullstellensatz,JAMS1(4),1988,963--975",
+      "url": "https://www.math.ucdavis.edu/~deloera/MISC/LA-BIBLIO/trunk/Kollar/kollarnullstellen.pdf",
+      "version": "Published1988 journal scan,14PDF pages including cover",
+      "read": "Definition1.4 and Theorem1.5 printed964--965/PDF3--4,Remarks1.6 and proof context2.1--2.4;formula pages visually inspected",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/kollar_sharp_effective_nullstellensatz_1988.pdf",
+      "use": "Import ordinary homogeneous radical-power exponent with projective parameterp=q-1>=2 and all generator degrees>=3;degree1/2 seed generators are replaced by powers preserving their radical",
+      "boundary": "Never use the raw degree2 seed,the p1 exceptional branch,or an ideal-sheaf/saturation statement in place of ordinary containment;all actual modified degrees are>=3",
+      "sha256": "1b234096453424f022912e7b43ca2fae021a67a08c613c8149369cdff6c07529",
+      "bytes": 346253
+    },
+    {
+      "paper": "Li--Meng--Su--Zhu,Sharp effective Nullstellensatz for projective Cohen-Macaulay schemes",
+      "url": "https://arxiv.org/abs/2610.34946v1",
+      "version": "v1,26October2026;only listed revision at review",
+      "read": "Core Sections2--5;PDF10/17 visually inspected",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/li_meng_su_zhu_2610_34946v1.pdf",
+      "use": "Scope audit only:ordinary ideal versus projective sheaf",
+      "boundary": "No theorem imported;independent verification pending",
+      "sha256": "95f301cd905aa790e2d264c4b6af500105c33fbdd8af9d72457c6d315c7d08a4",
+      "bytes": 237621
+    }
+  ],
+  "retained_classical_symbolic_inputs": [
+    {
+      "paper": "Ein--Lazarsfeld--Smith,Uniform Bounds and Symbolic Powers on Smooth Varieties",
+      "url": "https://arxiv.org/abs/math/0005098v3",
+      "version": "v3,4 October2000;abstract revision history checked",
+      "read": "TheoremA printed2;Proposition1.7 and Theorems2.1--2.2 with proof printed6--8;PDF page2 visually inspected",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/ein_lazarsfeld_smith_math0005098v3.pdf",
+      "use": "For radical J_C in smooth affine coefficient space of dimensionq,J_C^(qL) symbolic is contained in J_C^L ordinary",
+      "boundary": "Applied before the pure quotient,over C;ordinary powers descend by faithful flatness;no theorem on a singular ambient pure scheme is assumed",
+      "sha256": "c2b995fc93d315566e7399141b94af79a8af07f271158bda8bda26faee43ada9",
+      "bytes": 173464
+    },
+    {
+      "paper": "Sidman--Sullivant,Prolongations and Computational Algebra",
+      "url": "https://doi.org/10.4153/CJM-2009-047-5",
+      "version": "Canadian Journal of Mathematics61(4),2009,930--949;published publisher PDF",
+      "read": "Differential/symbolic definitions and Corollary2.9 with complete radical-to-prime proof,printed937/PDF8;page visually inspected",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/sidman_sullivant_prolongations_2009.pdf",
+      "use": "Radical-ideal Zariski--Nagata:coefficient derivatives of orders<K lying in J_C imply symbolic-power K membership",
+      "boundary": "Characteristic-zero polynomial ambient ring and radical J_C;not a comparison with ordinary power K and not used on the nonreduced quotient",
+      "sha256": "11f25831cce72ef8a86baf4845969a397446bb01ee8a440ce2f73e5efc625b5a",
+      "bytes": 237880
+    }
+  ],
+  "concurrent_radial_bridge_hashes": {
+    "jacobian-followup/moment-vanishing-audit/GAUSSIAN_RADIAL_TRANSFER_AND_EXCEPTIONAL_UNIFORMITY.md": "b2e468ccb68f4e904eceb8cd9015840695998213403be0dda1a3ea4c6bf7c1a0",
+    "jacobian-followup/moment-vanishing-audit/verify_gaussian_radial_transfer.py": "f56cff5862a17b7f3be031a7282947f4c0dd5922c2c919da5e0e4f87c30d3719",
+    "jacobian-followup/moment-vanishing-audit/gaussian_radial_transfer_verification.json": "9ee4f996649e5c9623f7eb319d49b2c874ae7368e0f2c0f70d9f33bc9db46cbc",
+    "jacobian-followup/moment-vanishing-audit/gaussian_radial_transfer_integration.json": "0bdb3327348d9120bc6e5da32993183ca75f0bc1f99e12a5e7fdafde58a6efb2"
+  },
+  "new_external_theorem_imported": true,
+  "fresh_exhaustive_literature_coverage": false,
+  "classical_Noether_bound": {
+    "ordinary_scope": "For positive-degree homogeneous generatorsf_i inq>=3 coefficient variables,replace degree1 generators by cubes,degree2 by squares,retain degrees>=3;T subsetI andsqrtT=sqrtI",
+    "bound": "Modified generator degrees>=3 and<=d give(sqrtI)^B subsetT subsetI withB<=d^min(s,q-1),using Kollar1988 Definition1.4/Theorem1.5",
+    "GVC_seed": "q=binomial(n+D,D)+binomial(n+Dk0,Dk0),s_bound=sum_j<=k0 binomial(n+Dj,n),d=max(4,2k0),nu_bar=d^min(s_bound,q-1)",
+    "degree_reason": "Pure GVC output coefficients have total parameter degree2j;onlyj1 degree2 needs squaring",
+    "boundary": "No saturation replacement,no p1 exception,no raw quadratic input to the imported theorem,no CM assumption on pure quotients or targets"
+  },
+  "explicit_formal_bounds": {
+    "general": "With proved field seedk0,C and component boundh,E=(CD+1)(hnu_bar-1),K=max(k0,E),N=C+E;all ordinary finite-jet/prefix and formal-symbol conclusions follow",
+    "quadratic": "q_n=binomial(n+2,2)+binomial(3n+2,n),nu_bar=[2(n+1)]^(q_n-1),h=2binomial(n+2,2),E=[6(n+1)+1](hnu_bar-1),K=max(n+1,E),N=3(n+1)+E",
+    "quadratic_n1": "nu_bar16384,K1277939,N1277945;sufficient,not sharp",
+    "univariate": "nu_bar_D=4^(D+1),E_D=(D+1)((D+1)4^(D+1)-1),K_D=E_D,N_D=E_D+1,symbol jetDK_D",
+    "univariate_D2": "K573,N574;sufficient for every Q-algebra and formal symbol,not sharp"
+  },
+  "ternary_Gaussian_ordinary_bound": {
+    "inputs": "Current retained pure-only94 field gate,field mixed slope3,phase degree3,twenty coefficients;inherited internal analytic assurance unchanged",
+    "Noether": "Modify moments1/2 by cube/square;all94 generator degrees<=94 and>=3,so(sqrtA94)^(94^19) subsetA94",
+    "ordinary_pure_prefix": "K=200*94^19-10 gives I_pure=(E(P),...,E(P^K))",
+    "mixed_slope": "N=200*94^19-7 gives I_N=I_pure and all-ring ternary cubic safety",
+    "early_gate": "The first94 ordinary tests alone imply affine eventual boundm>3degQ+200*94^19-10,not asserted all-order purity",
+    "boundary": "No claim A94=I_pure,no improved field gate or least interval,no expanded huge ideal and no optimal ring bound"
+  },
+  "implementation": {
+    "kind": "Implemented explicit sufficient-bound formula producer,not a period/radical/ordinary-ideal solver",
+    "functions": [
+      "conditional_gvc_seed_bounds",
+      "quadratic_formal_bounds",
+      "univariate_formal_bounds",
+      "ternary_gaussian_cubic_bounds"
+    ],
+    "large_integers": "Exact base/exponent and formula descriptors always retained;integer evaluation is skipped beyond a fixed bit budget",
+    "conditional_domain": "Generic seed inputs require separately proved order-independent field gate/cutoff and any supplied sharper codimension bound;specializations use retained proved hypotheses",
+    "numerical_sufficient_bounds": "Now explicitly produced;exact nilradical indices,least prefixes/slopes and expanded ordinary ideals remain uncomputed"
+  },
+  "recent_preprint_review": {
+    "arxiv": "2610.34946v1",
+    "status": "Core proof read and source-scope audit completed;not adopted as an independent mathematical dependency",
+    "ordinary_vs_sheaf": "Theorem1.6 addresses the original homogeneous ideal,including an extra affine-cone term;projective ideal-sheaf containment alone is insufficient",
+    "conditional_refinement": "Its acceptance would permit univariate seed exponent2^(D+1),not used in the asserted4^(D+1) bound",
+    "theorem_imported": false,
+    "independent_specialist_verification": false
+  },
+  "assurance": {
+    "proof": "Written modified-generator/Kollar/finite-seed deductions;retained field and symbolic-containment review boundaries remain",
+    "positive_foundations": "Explicit formal and ternary applications use their specific field theorems and classical containment;general Gaussian holonomic field stratification is not needed",
+    "small_checks": "Three GVC homogeneous-degree controls,degree/dimension source mutations,three coordinate-power ordinary ideals,a projective-cone countercontrol,quadratic/univariate/ternary formulas and a large-integer guard;not universal proof"
+  },
+  "small_replay": {
+    "completed": true,
+    "python_version": "3.12.3",
+    "sympy_version": "1.14.0",
+    "homogeneous_seed_degree_controls": [
+      {
+        "m": 1,
+        "coefficient_count": 3,
+        "raw_degree": 2,
+        "repaired_degree": 4
+      },
+      {
+        "m": 2,
+        "coefficient_count": 5,
+        "raw_degree": 4,
+        "repaired_degree": 4
+      },
+      {
+        "m": 3,
+        "coefficient_count": 7,
+        "raw_degree": 6,
+        "repaired_degree": 6
+      }
+    ],
+    "degree_two_source_mutation_detected": true,
+    "projective_dimension_exception_detected": true,
+    "coordinate_power_ideal_controls": [
+      {
+        "degrees": [
+          3,
+          3,
+          3
+        ],
+        "exact_ordinary_exponent": 7,
+        "published_bound": 9
+      },
+      {
+        "degrees": [
+          4,
+          3,
+          3
+        ],
+        "exact_ordinary_exponent": 8,
+        "published_bound": 12
+      },
+      {
+        "degrees": [
+          4,
+          4,
+          4,
+          3
+        ],
+        "exact_ordinary_exponent": 12,
+        "published_bound": 48
+      }
+    ],
+    "projective_sheaf_vs_cone_ordinary_exponent": 5,
+    "quadratic_examples": [
+      {
+        "model": "quadratic_GVC_formal_symbols",
+        "n": 1,
+        "phase_degree": 2,
+        "field_pure_gate": 2,
+        "field_mixed_slope": 6,
+        "seed_coefficient_variables": 8,
+        "component_codimension_bound": 6,
+        "nilradical_exponent_upper_bound": {
+          "base": 4,
+          "exponent": 7,
+          "value": 16384
+        },
+        "sufficient_E": 1277939,
+        "sufficient_ordinary_pure_prefix": 1277939,
+        "sufficient_mixed_slope": 1277945,
+        "sufficient_symbol_jet": 2555878,
+        "exact_formulas": {
+          "E": "(6*2+1)*(6*(4^7)-1)",
+          "K": "max(2,(6*2+1)*(6*(4^7)-1))",
+          "N": "6+(6*2+1)*(6*(4^7)-1)",
+          "symbol_jet": "2*max(2,(6*2+1)*(6*(4^7)-1))"
+        },
+        "integer_evaluation_bit_budget": 4096,
+        "all_Q_algebras": true,
+        "formal_constant_coefficient_symbols": true,
+        "least_values_computed": false,
+        "ordinary_ideal_computed": false
+      },
+      {
+        "model": "quadratic_GVC_formal_symbols",
+        "n": 2,
+        "phase_degree": 2,
+        "field_pure_gate": 3,
+        "field_mixed_slope": 9,
+        "seed_coefficient_variables": 34,
+        "component_codimension_bound": 12,
+        "nilradical_exponent_upper_bound": {
+          "base": 6,
+          "exponent": 33,
+          "value": 47751966659678405306351616
+        },
+        "sufficient_E": 10887448398406676409848168429,
+        "sufficient_ordinary_pure_prefix": 10887448398406676409848168429,
+        "sufficient_mixed_slope": 10887448398406676409848168438,
+        "sufficient_symbol_jet": 21774896796813352819696336858,
+        "exact_formulas": {
+          "E": "(9*2+1)*(12*(6^33)-1)",
+          "K": "max(3,(9*2+1)*(12*(6^33)-1))",
+          "N": "9+(9*2+1)*(12*(6^33)-1)",
+          "symbol_jet": "2*max(3,(9*2+1)*(12*(6^33)-1))"
+        },
+        "integer_evaluation_bit_budget": 4096,
+        "all_Q_algebras": true,
+        "formal_constant_coefficient_symbols": true,
+        "least_values_computed": false,
+        "ordinary_ideal_computed": false
+      },
+      {
+        "model": "quadratic_GVC_formal_symbols",
+        "n": 3,
+        "phase_degree": 2,
+        "field_pure_gate": 4,
+        "field_mixed_slope": 12,
+        "seed_coefficient_variables": 175,
+        "component_codimension_bound": 20,
+        "nilradical_exponent_upper_bound": {
+          "base": 8,
+          "exponent": 174,
+          "value": 13729595320261219429963801598162786434538870600286610818788926918371086366795312104245119281322909109954592622782961716074243975999433287625148056582230114304
+        },
+        "sufficient_E": 6864797660130609714981900799081393217269435300143305409394463459185543183397656052122559640661454554977296311391480858037121987999716643812574028291115057151975,
+        "sufficient_ordinary_pure_prefix": 6864797660130609714981900799081393217269435300143305409394463459185543183397656052122559640661454554977296311391480858037121987999716643812574028291115057151975,
+        "sufficient_mixed_slope": 6864797660130609714981900799081393217269435300143305409394463459185543183397656052122559640661454554977296311391480858037121987999716643812574028291115057151987,
+        "sufficient_symbol_jet": 13729595320261219429963801598162786434538870600286610818788926918371086366795312104245119281322909109954592622782961716074243975999433287625148056582230114303950,
+        "exact_formulas": {
+          "E": "(12*2+1)*(20*(8^174)-1)",
+          "K": "max(4,(12*2+1)*(20*(8^174)-1))",
+          "N": "12+(12*2+1)*(20*(8^174)-1)",
+          "symbol_jet": "2*max(4,(12*2+1)*(20*(8^174)-1))"
+        },
+        "integer_evaluation_bit_budget": 4096,
+        "all_Q_algebras": true,
+        "formal_constant_coefficient_symbols": true,
+        "least_values_computed": false,
+        "ordinary_ideal_computed": false
+      }
+    ],
+    "univariate_examples": [
+      {
+        "model": "univariate_GVC_formal_symbols",
+        "n": 1,
+        "phase_degree": 1,
+        "field_pure_gate": 1,
+        "field_mixed_slope": 1,
+        "seed_coefficient_variables": 4,
+        "component_codimension_bound": 2,
+        "nilradical_exponent_upper_bound": {
+          "base": 4,
+          "exponent": 2,
+          "value": 16
+        },
+        "sufficient_E": 62,
+        "sufficient_ordinary_pure_prefix": 62,
+        "sufficient_mixed_slope": 63,
+        "sufficient_symbol_jet": 62,
+        "exact_formulas": {
+          "E": "(1*1+1)*(2*(4^2)-1)",
+          "K": "max(1,(1*1+1)*(2*(4^2)-1))",
+          "N": "1+(1*1+1)*(2*(4^2)-1)",
+          "symbol_jet": "1*max(1,(1*1+1)*(2*(4^2)-1))"
+        },
+        "integer_evaluation_bit_budget": 4096,
+        "all_Q_algebras": true,
+        "formal_constant_coefficient_symbols": true,
+        "least_values_computed": false,
+        "ordinary_ideal_computed": false
+      },
+      {
+        "model": "univariate_GVC_formal_symbols",
+        "n": 1,
+        "phase_degree": 2,
+        "field_pure_gate": 1,
+        "field_mixed_slope": 1,
+        "seed_coefficient_variables": 6,
+        "component_codimension_bound": 3,
+        "nilradical_exponent_upper_bound": {
+          "base": 4,
+          "exponent": 3,
+          "value": 64
+        },
+        "sufficient_E": 573,
+        "sufficient_ordinary_pure_prefix": 573,
+        "sufficient_mixed_slope": 574,
+        "sufficient_symbol_jet": 1146,
+        "exact_formulas": {
+          "E": "(1*2+1)*(3*(4^3)-1)",
+          "K": "max(1,(1*2+1)*(3*(4^3)-1))",
+          "N": "1+(1*2+1)*(3*(4^3)-1)",
+          "symbol_jet": "2*max(1,(1*2+1)*(3*(4^3)-1))"
+        },
+        "integer_evaluation_bit_budget": 4096,
+        "all_Q_algebras": true,
+        "formal_constant_coefficient_symbols": true,
+        "least_values_computed": false,
+        "ordinary_ideal_computed": false
+      },
+      {
+        "model": "univariate_GVC_formal_symbols",
+        "n": 1,
+        "phase_degree": 3,
+        "field_pure_gate": 1,
+        "field_mixed_slope": 1,
+        "seed_coefficient_variables": 8,
+        "component_codimension_bound": 4,
+        "nilradical_exponent_upper_bound": {
+          "base": 4,
+          "exponent": 4,
+          "value": 256
+        },
+        "sufficient_E": 4092,
+        "sufficient_ordinary_pure_prefix": 4092,
+        "sufficient_mixed_slope": 4093,
+        "sufficient_symbol_jet": 12276,
+        "exact_formulas": {
+          "E": "(1*3+1)*(4*(4^4)-1)",
+          "K": "max(1,(1*3+1)*(4*(4^4)-1))",
+          "N": "1+(1*3+1)*(4*(4^4)-1)",
+          "symbol_jet": "3*max(1,(1*3+1)*(4*(4^4)-1))"
+        },
+        "integer_evaluation_bit_budget": 4096,
+        "all_Q_algebras": true,
+        "formal_constant_coefficient_symbols": true,
+        "least_values_computed": false,
+        "ordinary_ideal_computed": false
+      },
+      {
+        "model": "univariate_GVC_formal_symbols",
+        "n": 1,
+        "phase_degree": 4,
+        "field_pure_gate": 1,
+        "field_mixed_slope": 1,
+        "seed_coefficient_variables": 10,
+        "component_codimension_bound": 5,
+        "nilradical_exponent_upper_bound": {
+          "base": 4,
+          "exponent": 5,
+          "value": 1024
+        },
+        "sufficient_E": 25595,
+        "sufficient_ordinary_pure_prefix": 25595,
+        "sufficient_mixed_slope": 25596,
+        "sufficient_symbol_jet": 102380,
+        "exact_formulas": {
+          "E": "(1*4+1)*(5*(4^5)-1)",
+          "K": "max(1,(1*4+1)*(5*(4^5)-1))",
+          "N": "1+(1*4+1)*(5*(4^5)-1)",
+          "symbol_jet": "4*max(1,(1*4+1)*(5*(4^5)-1))"
+        },
+        "integer_evaluation_bit_budget": 4096,
+        "all_Q_algebras": true,
+        "formal_constant_coefficient_symbols": true,
+        "least_values_computed": false,
+        "ordinary_ideal_computed": false
+      }
+    ],
+    "ternary_cubic_example": {
+      "model": "ternary_Gaussian_cubics",
+      "n": 3,
+      "phase_degree": 3,
+      "field_pure_gate": 94,
+      "field_mixed_slope": 3,
+      "seed_coefficient_variables": 20,
+      "component_codimension_bound": 20,
+      "nilradical_exponent_upper_bound": {
+        "base": 94,
+        "exponent": 19,
+        "value": 30862366077815087592879016454695419904
+      },
+      "sufficient_E": 6172473215563017518575803290939083980790,
+      "sufficient_ordinary_pure_prefix": 6172473215563017518575803290939083980790,
+      "sufficient_mixed_slope": 6172473215563017518575803290939083980793,
+      "sufficient_symbol_jet": null,
+      "exact_formulas": {
+        "E": "(3*3+1)*(20*(94^19)-1)",
+        "K": "max(94,(3*3+1)*(20*(94^19)-1))",
+        "N": "3+(3*3+1)*(20*(94^19)-1)",
+        "symbol_jet": null
+      },
+      "integer_evaluation_bit_budget": 4096,
+      "all_Q_algebras": true,
+      "formal_constant_coefficient_symbols": false,
+      "least_values_computed": false,
+      "ordinary_ideal_computed": false
+    },
+    "conditional_seed_specialization_agrees": true,
+    "large_integer_guard_verified": true,
+    "bound_formula_producer_implemented": true,
+    "explicit_sufficient_general_bounds_produced": true,
+    "universal_proof_inferred_from_samples": false,
+    "exact_general_nilradical_indices_computed": false,
+    "least_general_pure_prefix_or_mixed_cutoff_computed": false,
+    "huge_ordinary_pure_ideals_expanded": false,
+    "full_seed_radical_or_ordinary_ideal_solver_implemented": false,
+    "recent_preprint_theorem_imported": false,
+    "sharp_field_slopes_transferred_to_rings": false,
+    "protected_field_prefix_or_operator_frontiers_improved": false,
+    "independent_review": false,
+    "formal_verification": false,
+    "novelty_claim": false,
+    "checker_sha256": "e9b7fdebd8b991496dbf3c3294c07cdf607a85cb2844f9fb0dc017be4b9490de"
+  },
+  "universal_proof_inferred_from_samples": false,
+  "exact_general_nilradical_indices_computed": false,
+  "least_general_pure_prefix_or_mixed_cutoff_computed": false,
+  "huge_ordinary_pure_ideals_expanded": false,
+  "full_seed_radical_or_ordinary_ideal_solver_implemented": false,
+  "recent_preprint_theorem_imported": false,
+  "sharp_field_slopes_transferred_to_rings": false,
+  "protected_field_prefix_or_operator_frontiers_improved": false,
+  "independent_review": false,
+  "formal_verification": false,
+  "novelty_claim": false,
+  "remaining": [
+    "Independent specialist review of the modified-generator import and the inherited finite-seed/quadratic/ternary analytic proofs",
+    "Exact seed nilradical indices,least pure prefixes/mixed cutoffs,expanded ordinary ideals and a stopping argument for least formal mixed cutoffs;explicit sufficient formulas are now implemented",
+    "Independent verification of the recent CM Nullstellensatz theorem before importing any optional sharper bound",
+    "General higher-dimensional positive field seeds beyond quadratic degree,negative-size cutoff geometry,normal forms,actual connections,other repeated-root phases,several spectators,principal structures and unbalanced families",
+    "Exceptional radial bridge preserved;its two global MZ decisions remain open. DenseSIC33,valid higher-degree ordinary-Laplacian compression,least ternary Delta endpoints and analytic review remain open;numeric refinement is secondary"
+  ]
+}

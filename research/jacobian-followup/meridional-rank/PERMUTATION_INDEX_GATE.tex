@@ -1,0 +1,191 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\mr}{\operatorname{mr}}
+\title{Double-transposition quotients: a sharp known control and an exact boundary}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The retained sixteen targets have no transitive degree-eight or
+degree-nine permutation representation sending every meridian to
+two disjoint transpositions. These are exactly the transitive
+degrees where the elementary permutation-index bound below could
+reach their certified bridge upper bound four. This is a finite
+route exclusion; the sixteen knots and full MRC remain open.
+The test succeeds on known torus controls, including a full
+$A_8$ image with a meridian class distinct from binary
+four-dimensional transvections.
+
+\section{The elementary bound and its precise scope}
+
+For a permutation $g\in S_r$, let $\delta(g)$ be $r$ minus its
+number of cycles, including fixed points. This is its minimum
+transposition length.
+\begin{proposition}
+If $\phi:\pi_1(S^3\setminus K)\to S_r$ is transitive and a
+meridian has permutation index $\delta>0$, then
+\[
+                 \mr(K)\ge\left\lceil\frac{r-1}{\delta}\right\rceil.
+\]
+\end{proposition}
+\begin{proof}
+Take any meridional generating family of size $d$. Its images
+are conjugates or inverses of the chosen meridian image, so all
+have index $\delta$. Factor each image into exactly $\delta$
+transpositions, and place all those edges on the $r$ sheets.
+Every generating permutation preserves every component of this
+graph. Transitivity therefore forces it to be connected. A
+connected graph on $r$ vertices has at least $r-1$ edges, while
+this graph has at most $d\delta$. Thus $r-1\le d\delta$.
+\end{proof}
+
+This is the standard transposition-graph argument extended to
+arbitrary cycle type; no priority claim is made. Earlier
+meridian-preserving symmetric and alternating quotient
+constructions, including finite-cycle meridians, are credited
+in \cite{bk,jp}. When meridians are double transpositions,
+$\delta=2$. A four-meridian upper certificate forces $r\le9$,
+and the displayed lower bound reaches four exactly at $r=8,9$.
+We exclude those two degrees only on the unchanged sixteen
+PDs. Lower-degree representations could still support an
+enhanced cover-rank or other bound, and meridians with three
+or more transpositions are not covered by this exclusion.
+
+\section{A full alternating-group control on known knots}
+
+Permutations act on $\{0,\ldots,7\}$, with the right factor
+applied first. Set
+\[
+ X=(0\ 7\ 5\ 1)(2\ 6\ 4\ 3),\quad
+ Y=(0\ 1\ 2\ 3\ 4)(5\ 6\ 7),\quad
+ M=(0\ 6)(2\ 5).
+\]
+Direct evaluation gives $X^4=Y^{15}=1$ and $XM=Y^4$.
+Exact finite enumeration gives $|\langle X,Y\rangle|=20160$.
+Both generators are even, so this group is all of $A_8$.
+The independent checker enumerates by left multiplication,
+separately from the producer's right multiplication.
+
+\begin{theorem}
+For every $j\ge0$, $T(4,60j+15)$ admits a quotient onto $A_8$
+whose meridians are double transpositions. The elementary
+bound and four-strand braid certify $\mr=b=4$.
+\end{theorem}
+\begin{proof}
+Put $q=60j+15$. In the standard torus presentation and meridian
+convention retained from \cite[Section 5.1]{cornwell},
+\[
+ \Gamma=\langle x,y\mid x^4=y^q\rangle,\qquad
+ m=x^{-1}y^{15j+4}.
+\]
+The exponents satisfy $-q+4(15j+4)=1$. Sending $x,y$ to $X,Y$
+satisfies the relation and sends $m$ to $X^{-1}Y^4=M$.
+The image is the same full $A_8$ for every $j$. Its degree
+eight and index-two meridians give $\mr\ge4$. The closure of
+the four-strand torus braid gives $b\le4$.
+\end{proof}
+
+These are already settled torus knots; this explicit quotient
+does not claim a new MRC case or worldwide novelty. The
+classical torus result is due to Rost--Zieschang \cite{rz}.
+
+This full image lies outside binary three-dimensional affine
+images, since $|A_8|=20160>1344=|\operatorname{AGL}_3(2)|$.
+Although $A_8\cong\operatorname{GL}_4(2)$ \cite{atlas}, its
+double-transposition class has size $210$: there are
+$3\binom84$ such elements, and an odd permutation on fixed
+points centralizes a representative, so its $S_8$ class does
+not split in $A_8$. In contrast a binary transvection
+$I+vf$ has $v\ne0$, $f\ne0$, $f(v)=0$, giving $15\cdot7=105$
+distinct matrices. All are conjugate by a basis change.
+An isomorphism cannot exchange classes of unequal size.
+Thus the pinned external binary rank-one search does not
+include this meridian class. This statement concerns search
+coverage, not any of its valid deposited certificates.
+No classification of higher-field representations is inferred.
+
+\section{Exact finite coverage and independent replay}
+
+The two plans were frozen separately before execution: first
+degree eight, then the remaining degree nine. Each uses the
+original sixteen PDs and retained four-seed traces. All ordered
+four-tuples are considered up to simultaneous $S_r$ conjugacy.
+Conjugate the first entry to $(0\ 1)(2\ 3)$; its centralizer has
+order $8(r-4)!$. Successive stabilizers select canonical tail
+representatives. Only tuples whose transposition-edge graph
+is connected can generate a transitive image.
+
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+$r$ & Class size & Raw tails & All tuple orbits & Transitive orbits\\
+\midrule
+8 & 210 & 9,261,000 & 58,429 & 18,450\\
+9 & 378 & 54,010,152 & 86,231 & 6,561\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+No transitive representative extends to a valid coloring on
+any target, in either degree. Each successful coloring would
+be determined by the four seed meridians, so this covers every
+representation of the stated type, including proper images.
+No classification of transitive subgroups is assumed.
+
+The independent verifier enumerates the meridian class by
+filtering all permutations, rather than by choosing supports
+and pairings. It computes full centralizer orbits on the raw
+tail cube and marks every tuple, checking disjointness and
+that no tuple is omitted. This does not rely only on an
+orbit-count sum or the producer's prefix recursion.
+
+Geometric paths between undercrossings independently rebuild
+the arcs and check the legacy index transport. The source PD
+parser is reused only for those old index names. The verifier
+checks each upper trace, assigns all remaining images in one
+pass through it, and then tests every crossing pointwise.
+The producer instead uses iterative propagation with early
+failure. Both obtain zero hits on all sixteen targets.
+
+The known $T(4,7)$ control yields fourteen transitive pairs of
+image order $1344$; $T(4,15)$ yields fifteen of order $20160$.
+All twenty-nine pairs pass separate pointwise torus and
+meridian equations and finite group enumeration. Six altered
+stabilizer, transitivity, meridian and upper-trace inputs reject.
+
+\paragraph{Assurance.}
+The uniform graph and torus arguments are written working
+proofs, unformalized and externally unreviewed. The exact
+negative claim is limited to the specified two degrees and
+sixteen diagrams. Other finite images, original double-cover
+ranks, worldwide priority and full classical MRC remain open.
+
+\begin{thebibliography}{9}
+\small
+\bibitem{cornwell} C. Cornwell, Knot contact homology and
+representations of knot groups, J. Topology 7 (2014),
+1221--1242, Section 5.1.
+\url{https://arxiv.org/abs/1303.4943}.
+\bibitem{rz} Rost--Zieschang, Meridional generators and plat
+presentations of torus links, J. London Math. Soc. (1987).
+\url{https://doi.org/10.1112/jlms/s2-35.3.551}.
+\bibitem{atlas} ATLAS of Finite Group Representations,
+Alternating group $A_8$, Linear group $L_4(2)$.
+\url{https://brauer.maths.qmul.ac.uk/Atlas/v3/alt/A8/}.
+Primary group order and representation list checked; class
+counts above are proved and independently enumerated here.
+\bibitem{bk} S. Baader and A. Kjuchukova, Symmetric quotients of
+knot groups and a filtration of the Gordian graph (2020).
+\url{https://arxiv.org/abs/1711.08144}.
+\bibitem{jp} J. Joseph and P. Pongtanapaisan, Meridional rank
+and bridge number of knotted 2-spheres, Canad. J. Math. (2025).
+Classical finite-cycle construction in preprint Section 3:
+\url{https://arxiv.org/html/2111.09233v2}.
+\end{thebibliography}
+\end{document}

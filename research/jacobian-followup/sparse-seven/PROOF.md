@@ -168,7 +168,8 @@ new output directory instead of silently resuming old checkpoints.
 
 This predecessor closes seven-term attainment. The later
 [eight-term follow-up](../sparse-eight/PROOF.md) also excludes eight terms
-and raises the current normalized lower bound to nine. The six- and
+and is followed by the [nine-term exclusion](../sparse-nine/PROOF.md),
+which raises the current normalized lower bound to ten. The six- and
 seven-term certificates above remain preserved; no attained global
 support minimum follows from them.
 

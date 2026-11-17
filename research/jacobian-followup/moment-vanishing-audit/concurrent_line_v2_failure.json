@@ -1,0 +1,9 @@
+{
+  "terminal": true,
+  "completed": false,
+  "exit_code": 1,
+  "input": "concurrent_line_v2_checker_input.py",
+  "input_sha256": "3c3d26b10ca52977549a61aa215a32a9508c218271f851572a0516016eadbbce",
+  "failure": "Expanded secondary gradient polynomial was compared structurally with a factored expression. Compare expanded differences instead. Exact resultant correction already retained in this version. No completed certificate emitted.",
+  "mathematical_claim_promoted": false
+}

@@ -1,0 +1,166 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\rank}{\operatorname{rank}}
+\title{The original sixteen belong to a known graph-cover MRC family}
+\author{Source-scope audit and classical rigidity consequence}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The original sixteen working equalities remain valid. A further classical
+rigidity step now identifies the actual double branched covers with the
+constructed graph-manifold models, up to orientation. Consequently all
+sixteen knots belong to the family already covered by
+Boileau--Jang--Weidmann's 2018 meridional-rank theorem. These examples
+must not be described as cases outside known MRC families. The explicit
+group ranks and bridge-number certificates may still be useful; their
+named global priority has not been established. Full MRC remains open.
+
+\begin{theorem}\label{thm:family}
+For every original target $K$ with index in
+\[
+129,135,136,137,194,196,197,198,233,234,239,242,243,244,253,265
+\]
+in the $13a$ table, the actual manifold $\Sigma_2(K)$ is a closed prime
+graph manifold. The preceding working proofs give
+\[
+ \rank\pi_1(\Sigma_2(K))=3,\qquad b(K)=\mr(K)=4.
+\]
+Hence the MRC equality lies within the scope of the published
+Boileau--Jang--Weidmann graph-cover theorem.
+\end{theorem}
+
+\section{The retained input and the additional rigidity step}
+
+For each named source, the preceding exact core and peripheral proofs
+construct a closed orientable irreducible graph manifold $M_K$ and an
+isomorphism
+\[
+ \pi_1(\Sigma_2(K))\cong\pi_1(M_K).
+\]
+The constructed manifolds have three or four canonical Seifert pieces,
+with primitive injective torus maps and nonparallel unique fibre slopes.
+Each contains an injected group $\langle a,t\mid t^2=a^3\rangle$, whose
+central element is infinite. Thus $M_K$ is prime, has infinite fundamental
+group, and is neither a lens space nor $S^1\times S^2$.
+The previous rank proofs needed only these group models. We now use a
+separate classical input to obtain actual-cover topology.
+
+Aschenbrenner--Friedl--Wilton's \emph{3-Manifold Groups}, final author
+manuscript, Theorems~2.1.2--2.1.3, classify closed orientable
+3-manifolds with isomorphic fundamental groups. The remaining freedom
+is orientation of prime factors and lens-space ambiguity. Apply the
+arbitrary-closed statement to $\Sigma_2(K)$ and $M_K$. The latter is
+prime with infinite group, so it has no nontrivial lens summand and only
+one nontrivial prime factor. The corresponding source decomposition
+therefore gives a homeomorphism to $M_K$, possibly reversing orientation.
+This also proves source-cover primeness; it is not assumed from a knot
+table label. Graph-manifold membership is unaffected by orientation.
+
+The imported statement is read on final author manuscript printed
+pages~30--31 (PDF pages~34--35), with the preceding prime-decomposition
+discussion. Its earlier author-v3 counterparts, Theorems~2.2--2.3, were
+compared at the same scope. Publisher metadata identifies the 2015 EMS
+book, \url{https://doi.org/10.4171/154}. Original constituent
+geometrization/Mostow/Waldhausen/Scott proofs and the full published
+version are not independently audited here.
+
+\section{The existing MRC theorem and what it already covers}
+
+The published Boileau--Jang--Weidmann paper, \emph{Meridional rank and
+bridge number for a class of links}, Pacific Journal of Mathematics~292
+(2018), \url{https://doi.org/10.2140/pjm.2018.292.61}, defines a graph
+manifold to be prime. Theorem~1.2 and Corollary~1.3 on printed page~62
+therefore apply to the actual covers just identified: meridional rank
+three forces bridge three in this cover class, and exact bridge four
+forces meridional rank four. The theorem treats arborescent and
+non-arborescent links, so proving an arborescent tree description is not
+necessary for this family-membership conclusion. The full proof remains
+an explicit classical import.
+
+Together with the standard rank-one and rank-two meridional equivalences
+credited in that introduction, these statements give a useful scope
+consequence: any knot in the graph-cover class with a certified upper
+$b(K)\le4$ already satisfies MRC. Indeed $\mr(K)\le4$; for meridional
+rank one, two or three the corresponding bridge number is the same,
+while meridional rank four and the upper force bridge four. Thus the
+equality itself can lie in an existing class even before deciding
+whether its exact value is three or four.
+
+Our cover-rank-three calculation does decide the value: the
+even-meridian bound gives $\mr(K)\ge4$, and each retained source has an
+individual bridge upper four. The family audit preserves that stronger
+explicit input. It does not establish whether the particular named
+bridge/rank computations appeared earlier elsewhere.
+
+\section{Exact case bindings and verification limits}
+
+The retained cases bind as follows. Identical homology orders in
+different rows are not used to identify groups or branch sets.
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Indices & Retained model route & JSJ pieces\\
+\midrule
+$129,136,194,197$ & root $129$ and certified mutation aliases & $4$\\
+$135,137,196,198$ & root $135$ and certified mutation aliases & $4$\\
+$233,239,253$ & three direct peripheral models & $3$\\
+$234,242,243,244,265$ & five direct peripheral models & $3$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first two rows use only the six previously checked mutation/common-cover
+certificates, never mutation invariance of bridge or meridional rank.
+The other eight cases use their own exact source groups. All sixteen
+individual upper-four traces are rebound to their literal retained PDs.
+The companion scope receipt checks source hashes, ledger dependencies,
+the exact sixteen-name set and these finite bindings. It does not
+algorithmically prove manifold rigidity or the published family theorem.
+
+The lens-space exception matters: $L(5,1)$ and $L(5,2)$ share group
+$C_5$ yet are not homeomorphic. Also the same rigidity shortcut is not
+valid for arbitrary manifolds with boundary without peripheral data.
+Here both the actual covers and models are closed, and the infinite
+prime models remove the relevant exceptions. No homeomorphism respecting
+the branched-cover involution is needed: the known theorem asks only for
+the actual cover's graph-manifold type. No numerical triangulation,
+rank-equals-Heegaard-genus assumption, or branch-set classification is used.
+
+The three earlier exact case proofs and their data are retained. Source
+catalogue46 adds one scoped rigidity reference and a published snapshot
+of the existing graph-cover reference. Refreshing affected hashes used
+only the already frozen small recipes and their replays; no293-knot or
+base/module campaign was repeated.
+
+\section{The next research boundary}
+
+The original sixteen are now established members of an existing MRC
+family, rather than merely candidates of unknown family status.
+The four earlier simple-three-cover seed cases have not been assigned
+to this double-cover family by the present argument. Their global family
+and named priority audits remain open, as do the other273 panel names
+without certificates here and the full conjecture.
+
+For progress beyond the BJW18 family, a new target must have separately
+justified cover topology outside this class, or another route whose
+hypotheses are not confined to graph-manifold double covers. A hyperbolic
+knot exterior alone does not exclude a graph-manifold double cover.
+Likewise non-arborescence alone is insufficient, since the known theorem
+also treats that branch. A quotient of the double-cover group with ordinary
+rank at least three can still give a lower four without identifying the actual cover
+with a graph manifold; constructing such a quotient on a justified
+outside-family target is a distinct prospective task, not a result here.
+
+The unpublished affine argument's bridges to signed lifts and cover
+homology remain proved at their stated scopes, together with its retained
+universality obstruction. This family audit does not expand that affine
+criterion. Full MRC, exhaustive literature, formal and external specialist
+verification, and exact named computational priority remain open.
+
+\end{document}

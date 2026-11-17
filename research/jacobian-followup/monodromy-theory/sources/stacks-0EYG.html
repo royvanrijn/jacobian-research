@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Lemma 58.31.5 (0EYG): Abhyankar&#39;s lemma for regular divisor&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELV" data-tag="0ELV">3</a>: Topics in Scheme Theory
+    
+  
+    <li>Chapter <a href="/tag/0BQ6" data-tag="0BQ6">58</a>: Fundamental Groups of Schemes
+    
+  
+    <li>Section <a href="/tag/0BSE" data-tag="0BSE">58.31</a>: Tame ramification
+    
+  
+    <li class="active">Lemma <a href="/tag/0EYG" data-tag="0EYG">58.31.5</a>: Abhyankar's lemma for regular divisor
+    <span id="citation">(<a href="/tag/0EYG/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0EYF">previous example</a>
+  
+  
+    <li class="right"><a href="/tag/0EYH">next lemma</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+    <hr>
+
+    <div class="information">
+      
+  <ul class="tag-info">
+    <li class="tag-history"><a href="/tag/0EYG/history">history</a>
+    <li class="tag-statistics"><a href="/tag/0EYG/statistics">statistics</a>
+    
+      <li class="tag-dependencies"><a href="/tag/0EYG/statistics#dependencies">1 tag refers to this tag</a>
+    
+  </ul>
+
+    </div>
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <article class="env-lemma" id="0EYG">
+  <p><a class="environment-identifier" href="/tag/0EYG">Lemma <span data-tag="0EYG">58.31.5</span> <span class="named">(Abhyankar's lemma for regular divisor)</span>.</a>  Let $X$ be a locally Noetherian scheme. Let $D \subset X$ be an effective Cartier divisor such that $D$ is a regular scheme. Let $Y \to X \setminus D$ be a finite étale morphism. If $Y$ is tamely ramified over $X$ in codimension $1$, then étale locally on $X$ the morphism $Y \to X$ is as given as a finite disjoint union of standard tamely ramified morphisms as described in Example <a href="/tag/0EYF" data-tag="0EYF">58.31.4</a>. </p>
+</article><article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      For every $x \in X$ we are going to find an étale neighourhood $(U, u) \to (X, x)$ with $U = \mathop{\mathrm{Spec}}(A)$ such that the base change $Y \times _ X U \to U$ is a finite disjoint union of standard tamely ramified morphisms as in Example <a href="/tag/0EYF" data-tag="0EYF">58.31.4</a>. We will assume $x \in D$; the case $x \not\in D$ follows from Étale Morphisms, Lemma <a href="/tag/04HN" data-tag="04HN">41.18.3</a> and taking $e = 1$ and $f = 1$ in Example <a href="/tag/0EYF" data-tag="0EYF">58.31.4</a>. 
+    <p>
+      In this paragraph we reduce to the case where $X$ is the spectrum of a strictly henselian local ring and $x$ is the closed point. Namely, shrinking $X$ we may assume $X = \mathop{\mathrm{Spec}}(A)$ and $D \subset X$ is given by a nonzerodivisor $f \in A$. Then $Y$ is affine as a finite étale covering of $\mathop{\mathrm{Spec}}(A_ f)$. Write $Y = \mathop{\mathrm{Spec}}(B)$. Let $A^{sh}$ be the strict henselization of $\mathcal{O}_{X, x}$. Since $A \to A^{sh}$ is flat and $x \in D$, we see that $f$ maps to a nonzerodivisor of the maximal ideal of $A^{sh}$. Observe that $A^{sh}/fA^{sh} = (A/fA)^{sh}$ (Algebra, Lemma <a href="/tag/05WS" data-tag="05WS">10.156.4</a>) is a regular local ring as the strict henselization of $\mathcal{O}_{D, x}$, see More on Algebra, Lemma <a href="/tag/06LN" data-tag="06LN">15.46.10</a>. By Lemma <a href="/tag/0EYD" data-tag="0EYD">58.31.1</a> the base change of $Y$ to $\mathop{\mathrm{Spec}}(A^{sh})$ is tamely ramified in codimension $1$. Assume we've proven the assertion for the base change of $Y$ to $\mathop{\mathrm{Spec}}(A^{sh})$. Since $A^{sh}$ is strictly henselian any étale neighbourhood has a section and we conclude that we have an isomorphism 
+    <p>
+      <div class="equation">
+  \[  A^{sh} \otimes _ A B \cong \prod \nolimits _{i \in I} A^{sh}_ f[x]/(x^{e_ i} - f)  \]
+</div>
+    <p>
+       where $I$ is a finite set and each $e_ i$ is an integer invertible in $A^{sh}$. Write $A^{sh} = \mathop{\mathrm{colim}}\nolimits A_\lambda $ as a filtered colimit of étale $A$-algebras $A_\lambda $. The displayed isomorphism descends to an isomorphism 
+    <p>
+      <div class="equation">
+  \[  A_\lambda \otimes _ A B \cong \prod \nolimits _{i \in I} (A_\lambda )_ f[x]/(x^{e_ i} - f)  \]
+</div>
+    <p>
+       for suitably large $\lambda $, see for example Algebra, Lemma <a href="/tag/05N9" data-tag="05N9">10.127.8</a>. After increasing $\lambda $ a bit more we may assume $e_ i$ is invertible in $A_\lambda $. Then $\mathop{\mathrm{Spec}}(A_\lambda ) \to \mathop{\mathrm{Spec}}(A)$ is the desired étale neighbourhood of $x$. 
+    <p>
+      Assume $X = \mathop{\mathrm{Spec}}(A)$ where $A$ is a strictly henselian local ring and $x \in X$ corresponds to the maximal ideal $\mathfrak m$ of $A$. Let $f \in \mathfrak m$ be the nonzerodivisor cutting out $D$. Then $A/fA$ is regular and by Algebra, Lemma <a href="/tag/00NU" data-tag="00NU">10.106.7</a> we find that $A$ is regular too. We will use some properties of regular local rings, for example that they are normal domains, see Algebra, Lemmas <a href="/tag/00NP" data-tag="00NP">10.106.2</a> and <a href="/tag/0567" data-tag="0567">10.157.5</a>. In particular $A$ is a domain. As above we see that $Y = \mathop{\mathrm{Spec}}(B)$ is affine and $A_ f \to B$ is finite étale. Hence $B$ is normal too (Algebra, Lemma <a href="/tag/033C" data-tag="033C">10.163.9</a>) and we conclude $Y$ is a finite disjoint union of spectra of normal domains by Algebra, Lemma <a href="/tag/030C" data-tag="030C">10.37.16</a>. Thus we may assume $B$ is a domain too. Since $A$ and $A/fA$ are domains, we conclude that $f$ is a prime element of $A$ generating a height $1$ prime $\mathfrak p = fA$. Observe that $A_\mathfrak p$ is a discrete valuation ring with uniformizer $f$. 
+    <p>
+      Let $K$ be the fraction field of $A$ and let $L$ be the fraction field of $B$. The tame ramification assumption means that $L$ is tamely ramified with respect to $A_\mathfrak p$. Let $e \geq 1$ be the product of the ramification indices for $L$ over $A_\mathfrak p$ as in More on Algebra, Remark <a href="/tag/09E8" data-tag="09E8">15.113.6</a>. Then $e$ is invertible in $\kappa (\mathfrak p)$ but at this point we do not know that $e$ is invertible in $A/fA$ or in $A$. 
+    <p>
+      Consider the finite free $A$-algebra 
+    <p>
+      <div class="equation">
+  \[  A' = A[x]/(x^ e - f)  \]
+</div>
+    <p>
+       This is a local finite extension of a strictly henselian local ring and hence strictly henselian. Observe that $f' = x$ is a nonzerodivisor in $A'$ and that $A'/f'A' \cong A/fA$ is a regular ring. So as before $A'$ is regular and a fortiori a domain. Set $B' = B \otimes _ A A' = B \otimes _{A_ f} A'_{f'}$. By Abhyankar's lemma (More on Algebra, Lemma <a href="/tag/0BRM" data-tag="0BRM">15.116.4</a>) we see that $\mathop{\mathrm{Spec}}(B')$ is unramified over $\mathop{\mathrm{Spec}}(A')$ in codimension $1$. Namely, by Lemma <a href="/tag/0EYD" data-tag="0EYD">58.31.1</a> we see that $\mathop{\mathrm{Spec}}(B')$ is still at least tamely ramified over $\mathop{\mathrm{Spec}}(A')$ in codimension $1$. But Abhyankar's lemma tells us that the ramification indices have all become equal to $1$. By Lemma <a href="/tag/0EYE" data-tag="0EYE">58.31.3</a> we conclude that $\mathop{\mathrm{Spec}}(B') \to \mathop{\mathrm{Spec}}(A'_{f'})$ extends to a finite étale morphism $\mathop{\mathrm{Spec}}(C) \to \mathop{\mathrm{Spec}}(A')$. However, since $A'$ is strictly henselian, we conclude that $\mathop{\mathrm{Spec}}(C)$ is a finite disjoint union of copies of $\mathop{\mathrm{Spec}}(A')$. Conclusion: there exists at least one morphism $\mathop{\mathrm{Spec}}(A'_{f'}) \to \mathop{\mathrm{Spec}}(B')$. We conclude that there exists an inclusion $B \subset A'_{f'}$ of $A_ f$-algebras. 
+    <p>
+      It follows that we have inclusions $K \subset L \subset K[f^{1/e}]$. By More on Algebra, Lemma <a href="/tag/09EV" data-tag="09EV">15.116.2</a> we conclude that $L$ is equal to $K[f^{1/n}]$ for some divisor $n$ of $e$. The normality of $B$ then implies that $B \cong A_ f[y]/(y^ n - f)$; details omitted. However, the ramification locus of the ring map $A_ f \to A_ f[y]/(y^ n - f)$ is cut out by $ny^{n - 1}$ which must imply that $n$ is a unit in $A_ f$. Since $f$ is a prime element, this means that $n = u f^ s$ for some unit $u$ of $A$ and $s \in \mathbf{Z}$. Since $n$ maps to a unit in $\kappa (\mathfrak p)$ we find $s = 0$ and the proof is complete. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+    <p>There are also:
+    <ul>
+      
+        <li>6 comment(s) on Section <a href="/tag/0BSE#comments" data-tag="0BSE">58.31</a>: Tame ramification
+      
+    </ul>
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-0EYG",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">0EYG</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="0EYG"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">0EYG</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0EYF">previous example</a>
+  
+  
+    <li class="right"><a href="/tag/0EYH">next lemma</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/pione.pdf#nameddest=0EYG">View Lemma <span data-tag="0EYG">58.31.5</span> as pdf</a>
+  
+
+  
+
+    <hr>
+
+    <div class="information">
+      
+  <ul class="tag-info">
+    <li class="tag-history"><a href="/tag/0EYG/history">history</a>
+    <li class="tag-statistics"><a href="/tag/0EYG/statistics">statistics</a>
+    
+      <li class="tag-dependencies"><a href="/tag/0EYG/statistics#dependencies">1 tag refers to this tag</a>
+    
+  </ul>
+
+    </div>
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

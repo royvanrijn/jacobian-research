@@ -1,0 +1,310 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\F}{\mathbb F}
+\title{Six-point covers and formal orthogonality at icosahedral points}
+\author{Internal research working proof}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+The six-point action of $A_5$ gives a different augmentation module
+from its five-point action and permits characteristic five in the
+split homology-gain test. All sixteen retained $A_5$ quotient-kernel
+classes on the current sixteen-knot panel have now been checked in
+this action. Their index-six subgroup homology is cyclic of order
+$4D$ or $28D$. The maximum gain is one, short of the required six.
+
+These finite homology computations also supply a stronger structural
+boundary. For the associated three-dimensional icosahedral reflection
+representations of the knot orbifold group, \emph{every formal
+characteristic-zero deformation preserving the meridian-square
+relation continues to preserve a nondegenerate symmetric form}.
+The longitude eigenvalue on the meridian's nonidentity line therefore
+still satisfies $\lambda^2=1$. Thus nonlinear deformation through
+these points with meridians kept involutive cannot escape the
+peripheral obstruction of the companion augmentation note. One must
+allow the meridian eigenvalue to vary, use another base component,
+or change representation dimension. This does not exclude those
+possibilities or settle a new knot. Full MRC remains open; the
+uniform proofs below are working proofs without formal verification,
+external specialist review or a novelty claim.
+
+\section{The six-point action and exact cover homology}
+
+Let $G=\pi_1(\Sigma_2K)$ and $\phi:G\twoheadrightarrow A_5$ be one
+of the retained quotient maps. Conjugation on the six Sylow-five
+subgroups gives a faithful transitive action of degree six. The
+point stabilizer is a normalizer $D_5$ of order ten; set
+$H_6=\phi^{-1}(D_5)$. All six such subgroups are conjugate, and
+automorphisms of $A_5$ permute them. One epimorphism per quotient
+kernel therefore suffices for these unbased covers.
+
+The complex augmentation character $\chi_5$ has values
+$5,1,-1,0,0$ on the classes $1,2,3,5A,5B$ of sizes
+$1,15,20,12,12$. Its norm is $(25+15+20)/60=1$, so it is
+irreducible. The old degree-five augmentation character has values
+$4,0,1,-1,-1$, with inner product zero against $\chi_5$.
+This is a new coefficient module, rather than a copy of the old one.
+
+For every prime $p\nmid6$, the general augmentation bound in the
+companion note gives
+\[
+ b_1(H_6;\F_p)-b_1(G;\F_p)\ge6
+ \quad\Longrightarrow\quad \operatorname{rank}G\ge3
+ \quad\Longrightarrow\quad \mr(K)\ge4.
+\]
+The new panel was frozen before computing. It uses all sixteen
+kernel classes on exactly the old sixteen targets, with no adaptive
+map or target replacement. Every base has $H_1(G;\Z)=\Z/D$.
+The table lists the subgroup homology for \emph{each} knot in a row.
+When two groups are listed, they belong to its two separate kernels.
+\begin{center}
+\begin{tabular}{lrl}
+\toprule
+Knot or knots & $D$ & Index-six subgroup homology\\
+\midrule
+$13a129,13a136,13a194,13a197$&391&$\Z/(4D)$\\
+$13a135,13a137,13a196,13a198$&401&$\Z/(4D)$ and $\Z/(28D)$\\
+$13a234$&389&$\Z/(28D)$\\
+$13a242$&359&$\Z/(28D)$\\
+$13a244,13a265$&311&$\Z/(28D)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The remaining four targets have no $A_5$ quotient. All listed $D$
+are coprime to $210$. The $4D$ cases give gain zero for $p\nmid6$;
+the $28D$ cases give gain one at seven and zero at every other
+allowed prime. In particular characteristic five gives no gain.
+These statements follow from integral Smith forms, not a prime sweep.
+There are eight cases of each type, on separate source groups or
+kernels; their maps are never pooled into a joint quotient count.
+
+This exhausts the $A_5$-induced degree-six action on these targets.
+It does \emph{not} exhaust every degree-six cover: other monodromy,
+including $A_6$, is outside this panel.
+
+\section{The exceptional characteristics and knot descent}
+
+Write $V_{n-1}=\ker(F^n\to F)$ for the augmentation module. If
+$p\mid n$, its constant vector is invariant and the splitting used
+by the Betti-gain formula fails. The beginning of the long exact
+cohomology sequence of
+\[
+             0\longrightarrow V_{n-1}\longrightarrow F^n
+               \longrightarrow F\longrightarrow0
+\]
+handles the current targets anyway. Transitivity gives one-dimensional
+invariants in both $V_{n-1}$ and $F^n$, and the sum map on constants
+is zero. If $H^1(G,F)=0$, exactness and Shapiro give
+\[
+ \dim H^1(G,V_{n-1})=1+b_1(H_n;F).
+\]
+Here the base Betti number vanishes at $2,3,5$. Thus the previously
+omitted characteristic five for $V_4$ and characteristics two and
+three for $V_5$ have the following exact dimensions:
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Module and prime & $\dim V^G$ & $\dim B^1$ & $\dim H^1$ & $\dim Z^1$\\
+\midrule
+$V_4$, $p=5$ &1&3&1&4\\
+$V_5$, $p=2$ &1&4&2&6\\
+$V_5$, $p=3$ &1&4&1&5\\
+\bottomrule
+\end{tabular}
+\end{center}
+Direct cocycle matrices independently reproduce these dimensions for
+every class. Combining them with the split cases shows that neither
+the $V_4$ nor the $V_5$ ordinary-generation cocycle estimate can force
+$\operatorname{rank}G\ge3$ in \emph{any} coefficient characteristic.
+This is a boundary for these modules, not a proof that the groups
+are two-generated or a statement about every $A_5$ module.
+
+Let $Q=G_K/\langle\!\langle\mu^2\rangle\!\rangle$ be the knot
+orbifold group. It contains $G$ normally with index two. Every tested
+map has a unique involution $t\in A_5$ implementing the deck
+automorphism on its arc generators: $t\phi(g_i)t=\phi(g_i)^{-1}$.
+Consequently the meridian images $\phi(g_i)t$ define the six-point
+coefficient representation of $Q$. These assertions are checked
+directly in the separate matrix model.
+
+For $p\ge5$, the direct orbifold cocycle matrix gives
+$H^1(Q,V_5)=0$ for all sixteen classes. The only possibly nonzero
+cover contribution is at seven; the eight cover classes there do
+not descend. At all other primes $p\ge5$, restriction into the
+already-zero cover cohomology proves vanishing. Every admissible
+affine lift on this fixed module is therefore principal. This
+argument does not impose the old three-dimensional root geometry;
+it computes the new module separately. We do not assert this
+orbifold statement in characteristics two or three.
+
+\section{A uniform lifting lemma for invariant forms}
+
+The following standard cohomological mechanism supplies a nonlinear
+consequence of the degree-six homology computation.
+
+\begin{theorem}\label{thm:forms}
+Let $\rho_0:Q\to\GL(W)$ over a field $k$ of characteristic different
+from two preserve a nondegenerate
+symmetric form $B_0$, and put $S=\Sym^2(W^*)$ with action
+\[
+                    g\cdot B=\rho_0(g)^{-\mathsf T}B\rho_0(g)^{-1}.
+\]
+If $H^1(Q,S)=0$, every formal representation
+$\rho_t:Q\to\GL(W\otimes_k k[[t]])$ reducing to $\rho_0$
+preserves a symmetric form $B(t)$ with $B(0)=B_0$.
+The resulting form is nondegenerate over $k[[t]]$.
+\end{theorem}
+\begin{proof}
+Suppose a symmetric form $B^{(j)}$ with constant term $B_0$ is
+invariant modulo $t^j$; start with $B^{(1)}=B_0$. Let $A_t(g)$ be
+the action on symmetric forms induced by $\rho_t$. The leading
+failure of invariance is
+\[
+              c_j(g)=t^{-j}\bigl(A_t(g)B^{(j)}-B^{(j)}\bigr)\bmod t.
+\]
+The identity $A_t(gh)=A_t(g)A_t(h)$ shows
+$c_j(gh)=c_j(g)+g\cdot c_j(h)$, so $c_j$ is an $S$-valued
+cocycle. By the hypothesis it equals $g\cdot C_j-C_j$ for some
+$C_j\in S$. Replacing $B^{(j)}$ by
+$B^{(j+1)}=B^{(j)}-t^jC_j$ kills that failure modulo $t^{j+1}$.
+These successive corrections converge in $k[[t]]$ to an invariant
+symmetric form. Its determinant has the nonzero constant term
+$\det B_0$, so it is a unit.
+\end{proof}
+
+This proof uses cohomology of the original module at $\rho_0$ at
+every step; it does not assume vanishing at unknown nearby points.
+It constructs a possibly varying form, rather than assuming that
+the deformation preserves the original fixed matrix.
+
+\section{Application to all tested icosahedral points}
+
+Use either standard complex three-dimensional rotation representation
+of $A_5$. Multiplying by the parity sign gives the corresponding
+rank-one reflection representation $\rho_0$ of $Q$ into $H_3$.
+The checked deck implementer constructs it for each tested kernel.
+The parity sign disappears on symmetric forms.
+
+The key representation identity is
+\[
+              \Sym^2(W^*)\big|_G\cong\C[G/H_6].
+\]
+For completeness, put $\tau^2=\tau+1$. The character calculation is
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+Class & $1$ & $2$ & $3$ & $5A$ & $5B$\\
+\midrule
+$\chi_W$ &3&$-1$&0&$\tau$&$1-\tau$\\
+$\chi_{\Sym^2 W}$ &6&2&0&1&1\\
+Six-point permutation character &6&2&0&1&1\\
+\bottomrule
+\end{tabular}
+\end{center}
+The second row follows from
+$\chi_{\Sym^2 W}(g)=(\chi_W(g)^2+\chi_W(g^2))/2$; squaring swaps
+the two five-cycle classes. The other rotation representation swaps
+the last two entries in the first row, leaving the second row
+unchanged. Complex representations of a finite group are semisimple
+and determined by their characters, proving the identity.
+
+Shapiro now gives
+\[
+ H^1(G,\Sym^2W^*)\cong H^1(H_6,\C)=0,
+\]
+using the finite cyclic homology established above. Restriction
+to $G$ is injective in this first cohomology: the inflation kernel
+is first cohomology of $Q/G=C_2$, which vanishes
+in characteristic zero by averaging. Hence the hypothesis of
+Theorem~\ref{thm:forms} holds.
+
+\begin{corollary}\label{cor:peripheral}
+For each tested standard icosahedral reflection point, every formal
+complex deformation of its $Q$ representation preserves a
+nondegenerate symmetric form. On the meridian's rank-one
+nonidentity eigensummand, its commuting longitude has
+$\lambda(t)^2=1$ and therefore constant eigenvalue $+1$ or $-1$.
+\end{corollary}
+\begin{proof}
+The theorem constructs the form. Since $\mu^2=1$ and two is
+invertible, $(I\pm\rho_t(\mu))/2$ are complementary idempotents.
+Their images are free summands of ranks two and one, as at $t=0$.
+Form invariance makes these summands orthogonal, with unit
+restriction on the rank-one summand. The longitude preserves that
+summand because it commutes with the meridian. Its scalar action
+$\lambda(t)$ preserves the form there, so $\lambda(t)^2=1$.
+The domain $\C[[t]]$ has only the two roots $\pm1$ of this equation.
+\end{proof}
+
+This strengthens the earlier pointwise orthogonal obstruction to a
+formal-neighborhood obstruction under the stated meridian-square
+condition. It does not assume the representation is constant or
+that a common fixed point exists. It also does not treat knot-group
+families with varying meridian eigenvalue. Those need not factor
+through $Q$ and are precisely an option left open by the peripheral
+construction in \cite[Sections 2.3--2.4]{gglw}. No formal family
+or actual augmentation curve of that kind is constructed here.
+
+\section{Replay, the generator probe and limits}
+
+The cover producer uses conjugation on six explicitly listed
+Sylow-five subgroups, with a frozen sixteen-cover cap, checkpointing
+after each cover. The verifier instead constructs
+$\operatorname{PSL}_2(\F_5)$ on $\mathbb P^1(\F_5)$. An explicit
+group isomorphism and sheet bijection identify the coefficient
+actions. A separate Fox-prefix matrix, with transported tree edges,
+replays all Smith operations on the $84\times73$ cover matrices.
+Direct augmentation cocycles reproduce each relevant field dimension
+and the nonsplit characteristics. Orbifold relations and deck
+implementers are checked separately. The PD parser and Smith replay
+are shared. The receipt is \path{six_point_cover_verification.json}.
+
+Known controls give index-six subgroup homology $\Z^7$ for $F_2$,
+$\Z^3$ for $C_3*C_3$, and $\Z^7$ for $C_3*C_3*C_3$.
+In characteristic five their Betti gains are respectively $5,3,7$.
+Thus the two-generated free control attains the allowed maximum
+five, while the known triple-trefoil control passes the new gate.
+
+A different frozen probe tried to certify that the original cover
+groups are two-generated. It substituted the old four-seed traces
+into three-generator core presentations, then tested direct relators
+and products of two signed relators with short conjugators under
+96 explicit invertible free-group automorphisms. It tried 444
+distinct candidates per target and found no primitive consequence.
+Its verifier checks the source substitutions, inverse automorphisms
+and positive/negative controls. The bounded misses are exploratory:
+they prove neither rank two nor rank three, nor absence of a
+primitive word in the full relation normal closure. The receipt
+\path{core_generator_probe_verification.json} explicitly makes no
+rank conclusion. Repeating longer word searches without a new
+structural reason is not the next research gate.
+
+The formal lifting argument is the uniform proof; finite matrices
+verify its hypotheses on the retained maps. They are not formal or
+external verification of that argument. No new MRC case is closed.
+The full goal still requires a general proof or counterexample and
+the outstanding literature audits, not completion of these controls
+or exclusions.
+
+\clearpage
+\begin{thebibliography}{9}
+\bibitem{gglw} Gao--Gu--Li--Wang, Meridional ranks of iterated
+Whitehead doubles, preprint, 11 November 2026, Sections 2.3--2.4.
+\url{https://arxiv.org/html/2611.15673v1}.
+\bibitem{core} Silver--Traldi--Williams, Core groups (2024),
+Section 7, including the Kelly--Wada double-cover normalization.
+\url{https://arxiv.org/abs/2311.02048v2}.
+\end{thebibliography}
+\end{document}

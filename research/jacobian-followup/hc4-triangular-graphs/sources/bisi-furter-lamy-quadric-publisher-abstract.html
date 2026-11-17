@@ -1,0 +1,1266 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- bs5/base -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+<link rel="schema.dc" href="http://purl.org/dc/elemtens/1.1/" />
+<meta name="citation_doi" content="10.5802/jep.8">
+<meta name="citation_title" content="The tame automorphism group of an affine quadric threefold acting on a square complex">
+<meta name="citation_author" content="Bisi, Cinzia"><meta name="citation_author" content="Furter, Jean-Philippe"><meta name="citation_author" content="Lamy, Stéphane">
+<meta name="citation_publication_date" content="2014">
+
+<meta name="citation_journal_title" content="Journal de l’École polytechnique — Mathématiques">
+<meta name="citation_issn" content="2270-518X">
+<meta name="citation_volume" content="1">
+<meta name="citation_language" content="en">
+
+<meta name="citation_firstpage" content="161">
+<meta name="citation_lastpage" content="223">
+
+<meta name="citation_pdf_url" content="https://numdam.org/item/10.5802/jep.8.pdf">
+
+
+
+  <title>
+  The tame automorphism group of an affine quadric threefold acting on a square complex
+</title>
+  
+  <link rel="stylesheet" href="/static/ptf/vendors/font-awesome/css/font-awesome.min.css" />
+  
+  <link rel="stylesheet" href="/static/ptf/vendors/bootstrap5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/ptf/css/bs5/ptf.css" />
+  <link rel="stylesheet" href="/static/ptf/css/bs5/base.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/svg+xml" href="/static/numdam/img/favicon.ico" />
+
+  
+
+  
+  <link rel="stylesheet" href="/static/ptf/css/bs5/style.css" />
+  <link rel="stylesheet" href="/static/ptf/css/bs5/search-bar.css" />
+  
+  <link rel="stylesheet" href="/static/numdam/vendors/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href="/static/numdam/vendors/owl-carousel/css/owl.theme.css">
+  <link rel="stylesheet" href="/static/numdam/css/numdam.css" type="text/css"/>
+  
+
+
+
+  
+  
+  <link rel="stylesheet" href="/static/jep/css/style_jep.css" />
+  
+  
+  
+  
+</head>
+<body class="d-flex flex-column position-relative" >
+  
+    
+
+
+    <div id="top">
+      <div id="bandeau">
+        <div style="float:left">
+          <a href="/" class='no-focus'>
+            <img src="/static/numdam/img/numdam_logo.gif" title='Accueil' alt='Accueil' class='logo no-text-decoration'/>
+          </a>
+        </div>
+        <div class="bandeau-background">
+          <div style="float:left" class="smartphone">
+            <div class="dropdown">
+              <button class="btn light-blue dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <img src='/static/mersenne_cms/img/main-menu.svg' alt='main-menu'/>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="/journals/">Revues</a></li>
+                <li><a href="/actas/">Séminaires</a></li>
+                <li><a href="/proceedings/">Congrès</a></li>
+                <li><a href="/books/">Livres</a></li>
+                <li><a href="/lectures">Notes de cours</a></li>
+                <li><a href="/thesis">Thèses</a></li>
+                <li><a href="/authors">Auteurs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="onoffswitch-group">
+          <div id="language-switch" title="Cliquer pour afficher le site en anglais">
+            <form id="language-switch-form" action="/i18n/setlang/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ocgRHO8mLOY032SoA8SFaCiTvs1P88gN67ZaLG6N6Bx1ksSbVH0ZCrsgzpucobe7">
+              <div class="onoffswitch" id="lang_flags">
+                <input type="checkbox"
+                       name="language"
+                       value="en"
+                       class="onoffswitch-checkbox"
+                       id="lang_onoffswitch"
+                       checked>
+                <label class="onoffswitch-label" for="lang_onoffswitch">
+                  <span class="onoffswitch-inner" data-on="" data-off=""></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div id="mathml-switch"
+            
+              
+                 title="Cliquer pour afficher le code source TeX"
+              
+            >
+            <form action="/set-formula-display/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ocgRHO8mLOY032SoA8SFaCiTvs1P88gN67ZaLG6N6Bx1ksSbVH0ZCrsgzpucobe7">
+              <div class="onoffswitch">
+                <input type="checkbox" name="formula-display" value="tex" class="onoffswitch-checkbox"
+                       id="tex_onoffswitch"
+                       onclick="this.form.submit();"
+                       >
+                <label class="onoffswitch-label" for="tex_onoffswitch">
+                  <span class="onoffswitch-inner" data-on="TeX" data-off="TeX"></span>
+                  <div class="onoffswitch-switch">
+                    <div class="onoffswitch-switch-label">
+                      OFF</div>
+                  </div>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-default navbar-expand-md desktop">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="nav-item active"><a class="nav-link"
+                href="/journals/">Revues</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="/actas/">Séminaires</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="/proceedings/">Congrès</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="/books/">Livres</a></li>
+            <li class="nav-item"><a class="nav-link"
+            href="/lectures">Notes de cours</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="/thesis">Thèses</a></li>
+            
+            
+            <li class="nav-item"><a class="nav-link"
+                href="/authors">Auteurs</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="bandeau3">
+        <div class="container" id="search-bar">
+          
+
+
+
+
+<form class="d-flex gap-2 align-items-center align-items-md-start flex-column flex-md-row" method="post" action="/search"><input type="hidden" name="csrfmiddlewaretoken" value="ocgRHO8mLOY032SoA8SFaCiTvs1P88gN67ZaLG6N6Bx1ksSbVH0ZCrsgzpucobe7">
+
+
+  
+
+<div class="px-0 text-nowrap browse-button">
+  <a href="/journals/ALL/" class="btn btn-primary search-button">Parcourir les volumes</a>
+</div>
+
+  <div class="flex-grow-1 d-flex gap-2 w-100 align-items-stretch align-items-lg-start">
+    <div class="flex-grow-1" id="line-container">
+      <div class="d-flex input-group search-group flex-nowrap">
+        <div class="search-group-inner input-group w-100" id="search-input-group">
+          <input class="searchinput form-control" type="text" name="q0" value=""
+                  placeholder="Rechercher des articles, des livres..."/>
+          <i class="searchclear fa fa-remove hidden" role="button"></i>
+          <input type="hidden" name="qt0" value="all">
+          <button type="button" class="btn btn-light dropdown-toggle border-0 rounded-0 border-end d-flex flex-nowrap align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+            
+              Tout
+            
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Tout</a></li>
+            <li><a href="#" class="dropdown-item">Auteur</a></li>
+            <li><a href="#" class="dropdown-item">Titre</a></li>
+            <li><a href="#" class="dropdown-item">Bibliographie</a></li>
+            
+            
+            <li><a href="#" class="dropdown-item">Plein texte</a></li>
+          </ul>
+          
+          <button id="add-search-field" type="button" class="btn btn-light">
+            <i class="fa fa-plus"></i>
+          </button>
+          
+        </div>
+      </div>
+
+      
+      
+        
+      
+    </div>
+
+    
+    
+
+<div class="search-button-div d-flex">
+  <button type="submit" class="btn btn-primary search-button d-flex flex-nowrap align-items-center gap-1" name="Submit">
+    <i class="fa fa-search"></i>
+    <span id="search-button-text" class="d-none d-sm-block">Rechercher</span>
+  </button>
+  
+  
+    <a href="/help/"><img src="/static/mersenne_cms/img/question.png"></a>
+  
+  
+</div>
+    
+  </div>
+
+  
+</form>
+<div id="template-search-form" style="display:none">
+  
+
+<div class="input-group search-group search-group-added d-none d-lg-flex flex-nowrap">
+  <div  class="input-group flex-nowrap">
+    <div style="display:flex" class="input-group-text flex-nowrap justify-content-center align-items-center gap-1 px-2 search_first_box">
+      <input id="not##i##"" class="bt-checkbox" type="checkbox" name="not##i##" /> <label for="not##i##"">NOT</label>
+    </div>
+    <div  class="search-group-inner input-group w-100 p-0">
+      <input class="searchinput form-control rounded-0 border-0 w-100 h-100 px-2 py-1" type="text" name="q##i##"/>
+      <i class="searchclear fa fa-remove hidden"></i>
+    </div>
+  </div>
+
+  <div style="display:none" class="flex-grow-1 input-group">
+    <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+    <span class="input-group-text search_first_box">Entre</span>
+    <input class="form-control" type="text" name="q-f-##i##" placeholder="Année" />
+    <span class="input-group-text">et</span>
+    <input class="form-control rounded-0" type="text" name="q-l-##i##" placeholder="Année" />
+  <!-- </div> -->
+  <!-- </div> -->
+</div>
+<div class="input-group-btn d-flex flex-nowrap" id="search-group-btn">
+    <input type="hidden" name="qt##i##" value="author">
+    <button type="button" class="btn btn-light dropdown-toggle rounded-0 border-0 border-start border-end" data-bs-toggle="dropdown" aria-expanded="false">
+      
+        Auteur
+      
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#" class="dropdown-item">Tout</a></li>
+      <li><a href="#" class="dropdown-item">Auteur</a></li>
+      <li><a href="#" class="dropdown-item">Titre</a></li>
+      <li><a href="#" class="dropdown-item">Date</a></li>
+      <li><a href="#" class="dropdown-item">Bibliographie</a></li>
+      <li><a href="#" class="dropdown-item">Mots-clés</a></li>
+      
+      <li><a href="#" class="dropdown-item">Plein texte</a></li>
+    </ul>
+    <button type="button" class="btn btn-light border-0 remove-search-field">
+      <i class="fa fa-minus"></i>
+    </button>
+  </div>
+</div><!-- /input-group -->
+
+
+</div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  
+
+  <main class="container 
+article-container
+" style="flex-grow: 1;">
+    
+    <div class="row justify-content-center">
+      
+        <div class="container-fluid d-flex">
+          
+            <!-- Debut content -->
+            
+            <!-- Debut Left -->
+              <div>
+                
+                
+    <div id="content_left">
+      
+    </div>
+
+              </div>
+            <!-- Fin left -->
+            
+
+            
+            <div class="flex-grow-1" style="max-width: 100%;">
+              <!-- Breadcrumb -->
+              
+  
+    
+
+
+<div class="breadcrumb-row d-flex flex-column flex-xl-row gap-2">
+  
+    <div class="col-12">
+  
+    
+    <div class="breadcrumb-lg flex-wrap" style="font-size: 14px">
+      
+        <div style="float: left;">
+          <ul class="cms-breadcrumb d-flex m-0 mb-1">
+            <li class="breadcrumb-previous">
+              <a href="/articles/10.5802/jep.7/">Précédent</a>
+            </li>
+          </ul>
+        </div>
+      
+      <div class="order-2 order-md-1 col-12 col-md-auto" style="float: left;">
+        <ul class="cms-breadcrumb d-flex flex-nowrap mb-3">
+          
+            
+            
+              <li class="">
+                <a href="/item/JEP/">Journal de l’École polytechnique — Mathématiques</a>
+              </li>
+            
+          
+            
+            
+              <li class="">
+                <a href="/volume/JEP_2014__1_/">Tome 1 (2014)</a>
+              </li>
+            
+          
+            
+            
+              <li class="active">
+                <a href="/articles/10.5802/jep.8/">p. 161-223</a>
+              </li>
+            
+          
+        </ul>
+      </div>
+      
+        <div class="order-1 order-md-2" style="float: left;">
+          <ul class="cms-breadcrumb d-flex mb-1">
+            <li class="breadcrumb-next">
+              <a href="/articles/10.5802/jep.9/">Suivant</a>
+            </li>
+          </ul>
+        </div>
+      
+    </div>
+    
+    <div class="breadcrumb-sm">
+      
+        <a href="/articles/10.5802/jep.7/" class="btn btn-light border"><i class="fa fa-chevron-left"></i></a>
+      
+
+      
+
+      
+        <a href="/articles/10.5802/jep.9/" class="btn btn-light border"><i class="fa fa-chevron-right"></i></a>
+      
+    </div>
+    <div class="clearfix">
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+              <!-- center_top -->
+              
+              <!-- center_middle -->
+              
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div id="article-div" class="article-div">
+  
+  <div >
+    
+
+    
+    <div class="col-12">
+    
+
+      
+        
+      
+      <div style="font-size:18px;margin-bottom:10px">
+        
+
+
+  <span class="common-title article-title">
+    
+    
+    The tame automorphism group of an affine quadric threefold acting on a square complex
+    
+      
+    
+    
+  </span>
+  
+  
+    
+      <br>
+      <span class="article-trans-title">[Action du groupe modéré d’une quadrique affine de dimension <span class="mathjax-formula" data-tex="$3$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></span> sur un complexe carré]</span>
+    
+  
+
+
+
+
+      </div>
+      
+
+
+
+<div class="article-author" style="display:inline-block">
+  
+    
+
+
+
+
+
+  
+
+
+    
+      
+        
+
+
+
+
+  <div style="margin-bottom:5px; font-size: 16px">
+    <a class="author_link" href="/search?&quot;Bisi, Cinzia&quot;-c">Bisi, Cinzia<span href="#aff_1"></span></a><a class="author_link" href="#affiliation" data-bs-toggle="collapse" aria-controls="affiliation"><sup><span href="#aff_1">1</span></sup></a>&nbsp;;&nbsp;<a class="author_link" href="/search?&quot;Furter, Jean-Philippe&quot;-c">Furter, Jean-Philippe<span href="#aff_2"></span></a><a class="author_link" href="#affiliation" data-bs-toggle="collapse" aria-controls="affiliation"><sup><span href="#aff_2">2</span></sup></a>&nbsp;<sup><a href="https://www.idref.fr/135422213" target="_blank"><img width="16px" height="16px" style="margin-top:-3px; margin-left:3px" src="/static/ptf/img/logo-idref.png" alt="idref"></a></sup>&nbsp;;&nbsp;<a class="author_link" href="/search?&quot;Lamy, Stéphane&quot;-c">Lamy, Stéphane<span href="#aff_3"></span></a><a class="author_link" href="#affiliation" data-bs-toggle="collapse" aria-controls="affiliation"><sup><span href="#aff_3">3</span></sup></a>&nbsp;<sup><a href="https://www.idref.fr/188601805" target="_blank"><img width="16px" height="16px" style="margin-top:-3px; margin-left:3px" src="/static/ptf/img/logo-idref.png" alt="idref"></a></sup><a data-bs-toggle="collapse" href="#affiliation" aria-controls="affiliation"><button id="house-affiliation" type="button" class="btn btn-link btn-xs" title="Affiliations des auteurs"><span class="fa fa-home"></span><span id="house-caret" class="caret-icon fa fa-caret-down" style="margin-left:3px"></span></button></a><div class="collapse" id="affiliation"><div class="card card-body"><div class="affiliation-authors"><span id="aff_1"><sup>1</sup>Dipartimento Matematica ed Informatica, Universitá di Ferrara Via Machiavelli n.35, 44121 Ferrara, Italy</span><br><span id="aff_2"><sup>2</sup>Laboratoire MIA, Université de La Rochelle Avenue Michel Crépeau, 17000 La Rochelle, France</span><br><span id="aff_3"><sup>3</sup>Institut de Mathématiques de Toulouse, Université Paul Sabatier 118 route de Narbonne, 31062 Toulouse Cedex 9, France</span><br></div></div></div>
+</div>
+
+
+      
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+
+  
+
+
+    
+    
+      
+        
+
+
+
+
+
+      
+    
+  
+</div>
+
+
+      <div style="margin-bottom:10px">
+        
+
+
+Journal de l’École polytechnique — Mathématiques, Tome 1 (2014), pp. 161-223
+
+        
+
+
+      </div>
+
+      
+      
+        <div class="binary-file-icon" style="margin-top:20px;margin-bottom:10px">
+          
+<div class="wrapper-float">
+
+
+
+  <div class="d-flex flex-nowrap" style="margin-top:0px">
+    
+      <a href="/item/10.5802/jep.8.pdf" target="_blank">
+        <img src="/static/ptf/img/pdf.svg">
+      </a>
+    
+    
+      <a href="/item/10.5802/jep.8.djvu">
+        <img src="/static/ptf/img/djvu.svg">
+      </a>
+    
+    
+    
+    
+    
+  </div>
+
+</div>
+
+        </div>
+      
+      
+      
+    </div>
+
+    
+  </div>
+  
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+
+
+
+  
+
+
+<div id="abstract">
+  <div class="col-12">
+    <div class="mt-4 mb-4">
+      <ul class="nav nav-tabs article-tab">
+        
+          <li class="nav-item">
+            <a class="nav-link "
+               lang="en"
+               data-bs-toggle="tab"
+               data-bs-target="#abstract-en"
+               href="#abstract-en">
+              <span title="Anglais
+">
+                
+                  
+                    Abstract
+                  
+                  
+                    (VO)
+                  
+                
+              </span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link active"
+               lang="fr"
+               data-bs-toggle="tab"
+               data-bs-target="#abstract-fr"
+               href="#abstract-fr">
+              <span title="Français
+">
+                
+                  
+                    Résumé
+                  
+                  
+                
+              </span>
+            </a>
+          </li>
+        
+      </ul>
+      <div class="tab-content mt-2">
+        
+          <div lang="en"
+               id="abstract-en"
+               class="tab-pane fade ">
+            
+              
+            <p>We study the group <span class="mathjax-formula" data-tex="$\mathrm{Tame}(\mathrm{SL}_2)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Tame</mi><mo>(</mo><msub><mi mathvariant="normal">SL</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> of tame automorphisms of a smooth affine <span class="mathjax-formula" data-tex="$3$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></span>-dimensional quadric, which we can view as the underlying variety of <span class="mathjax-formula" data-tex="$\mathrm{SL}_2(\mathbb{C})$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi mathvariant="normal">SL</mi> <mn>2</mn> </msub><mrow><mo>(</mo><mi>ℂ</mi><mo>)</mo></mrow></mrow></math></span>. We construct a square complex on which the group admits a natural cocompact action, and we prove that the complex is <span class="mathjax-formula" data-tex="$\mathrm{CAT}(0)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">CAT</mi><mo>(</mo><mn>0</mn><mo>)</mo></mrow></math></span> and hyperbolic. We propose two applications of this construction: We show that any finite subgroup in <span class="mathjax-formula" data-tex="$\mathrm{Tame}(\mathrm{SL}_2)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Tame</mi><mo>(</mo><msub><mi mathvariant="normal">SL</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> is linearizable, and that <span class="mathjax-formula" data-tex="$\mathrm{Tame}(\mathrm{SL}_2)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Tame</mi><mo>(</mo><msub><mi mathvariant="normal">SL</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> satisfies the Tits alternative.</p>
+          
+            
+            
+
+
+
+
+            
+
+
+
+
+          </div>
+        
+          <div lang="fr"
+               id="abstract-fr"
+               class="tab-pane fade show active">
+            
+              
+            <p>Nous étudions le groupe <span class="mathjax-formula" data-tex="$\mathrm{Tame}(\mathrm{SL}_2)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Tame</mi><mo>(</mo><msub><mi mathvariant="normal">SL</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> des automorphismes modérés d’une quadrique affine lisse de dimension <span class="mathjax-formula" data-tex="$3$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></span>, que l’on peut choisir comme étant la variété sous-jacente à <span class="mathjax-formula" data-tex="$\mathrm{SL}_2(\mathbb{C})$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi mathvariant="normal">SL</mi> <mn>2</mn> </msub><mrow><mo>(</mo><mi>ℂ</mi><mo>)</mo></mrow></mrow></math></span>. Nous construisons un complexe carré sur lequel ce groupe agit naturellement de façon cocompacte, et nous montrons que ce complexe est <span class="mathjax-formula" data-tex="$\mathrm{CAT}(0)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">CAT</mi><mo>(</mo><mn>0</mn><mo>)</mo></mrow></math></span> et hyperbolique. Nous proposons ensuite deux applications de cette construction : nous montrons que tout sous-groupe fini de <span class="mathjax-formula" data-tex="$\mathrm{Tame}(\mathrm{SL}_2)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Tame</mi><mo>(</mo><msub><mi mathvariant="normal">SL</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> est linéarisable, et que <span class="mathjax-formula" data-tex="$\mathrm{Tame}(\mathrm{SL}_2)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Tame</mi><mo>(</mo><msub><mi mathvariant="normal">SL</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> satisfait l’alternative de Tits.</p>
+          
+            
+            
+
+
+
+
+            
+
+
+
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+        <div>
+          <div class="col-12">
+          
+          
+            
+              <div class="mt-4 mb-4">
+                <ul class="nav nav-tabs article-tab">
+                  
+                    <li class="nav-item">
+                      <a class="nav-link active"
+                         data-bs-toggle="tab"
+                         data-bs-target="#info-tab"
+                         href="#info-tab">Détail</a>
+                    </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link"
+                       data-bs-toggle="tab"
+                       data-bs-target="#citation-tab"
+                       href="#citation-tab">Export</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "
+                       data-bs-toggle="tab"
+                       data-toggle="tab"
+                       data-bs-target="#how-to-cite-tab"
+                       href="#how-to-cite-tab">Comment citer</a>
+                  </li>
+                  
+                  
+                  
+                </ul>
+                <div class="tab-content" style="margin-top:10px">
+                  <div id="info-tab"
+                       class="tab-pane fade show active">
+                    
+                      
+                      
+                        
+                        
+                      
+                      
+                      
+                    
+                    <!--Mis en ligne le : <time datetime="2026-02-17">2026-02-17</time><br>-->
+                    <div style="margin-top:5px">
+                      
+                        
+                          
+                        
+                        
+                        
+                        
+                      
+                    </div>
+                    
+                      
+  
+    
+      DOI : 
+        
+          <a href="https://doi.org/10.5802/jep.8">10.5802/jep.8</a>
+        
+        <br>
+    
+  
+
+                    
+                    
+                    
+                      <div style="margin-top:5px">
+                        
+                          <!-- kwd_tuple.0: msc  |  kwd_tuple.1: kwds  |  kwd_tuple.2: trans_kwds (dict) -->
+                          
+                            
+
+
+   Classification : 
+
+<span class="mathjax-formula">
+14J50, 14R20, 20F65
+</span>
+
+                            <br />
+                          
+                          
+                            
+
+Keywords: 
+<span class="mathjax-formula">
+Automorphism group, affine quadric, cube complex, Tits alternative
+</span>
+
+                            <br />
+                          
+                          
+                          
+                            
+
+Mots-clés : 
+<span class="mathjax-formula">
+Groupe d’automorphismes, quadrique affine, complexe cubique, alternative de Tits
+</span>
+
+                            <br />
+                          
+                        
+                      </div>
+                    
+                    <div style="margin-top:5px">
+                      
+                        
+                      
+                    </div>
+                    
+                    
+                      
+                    
+                    
+                      
+                        
+                          <div style="margin-top:5px">
+                            
+                              
+                                <span id="affiliation-toggle"
+                                      data-bs-toggle="collapse"
+                                      href="#affiliation_details"
+                                      role="button"
+                                      aria-expanded="false"
+                                      aria-controls="affiliation_details">
+                                  Affiliations des auteurs :
+                                  <span id="details-caret"
+                                        class="caret-icon fa fa-caret-down"
+                                        style="margin-left:3px"></span>
+                                </span>
+                                <div class="collapse"
+                                     id="affiliation_details"
+                                     style="margin-top:10px;
+                                            margin-left:10px">
+                                  <div class="card card-body">
+                                    <p>
+                                      
+                                        Bisi, Cinzia&hairsp;
+                                        <sup class="d-inline-block">
+                                          
+                                            1
+                                            
+                                          
+                                        </sup>
+                                        
+                                          &nbsp;
+                                          ;
+                                        
+                                      
+                                        Furter, Jean-Philippe&hairsp;
+                                        <sup class="d-inline-block">
+                                          
+                                            2
+                                            
+                                          
+                                        </sup>
+                                        
+                                          &nbsp;
+                                          ;
+                                        
+                                      
+                                        Lamy, Stéphane&hairsp;
+                                        <sup class="d-inline-block">
+                                          
+                                            3
+                                            
+                                          
+                                        </sup>
+                                        
+                                      
+                                    </p>
+                                    
+
+
+  <div class="affiliation-authors">
+    
+      
+        <span id="aff_1">
+          <sup>1</sup>
+          
+                Dipartimento Matematica ed Informatica, Universitá di Ferrara Via Machiavelli n.35, 44121 Ferrara, Italy
+              
+        </span>
+        
+        <br>
+      
+        <span id="aff_2">
+          <sup>2</sup>
+          
+                Laboratoire MIA, Université de La Rochelle Avenue Michel Crépeau, 17000 La Rochelle, France
+              
+        </span>
+        
+        <br>
+      
+        <span id="aff_3">
+          <sup>3</sup>
+          
+                Institut de Mathématiques de Toulouse, Université Paul Sabatier 118 route de Narbonne, 31062 Toulouse Cedex 9, France
+              
+        </span>
+        
+        <br>
+      
+    
+  </div>
+
+
+                                  </div>
+                                </div>
+                              
+                            
+                          </div>
+                        
+                      
+                    
+                    
+                      
+                        <div style="margin-top:20px">
+                          Licence :
+                          <img src="/static/ptf/img/CC-BY-ND%204.0.png" class="img-cc">
+                          CC-BY-ND 4.0
+                        </div>
+                        <div style="margin-top:5px">Droits d'auteur : Les auteurs conservent leurs droits</div>
+                      
+                    
+                    
+                    
+                  </div>
+                  <div id="citation-tab" class="tab-pane fade">
+                    <div class="upper">
+                      <ul class="nav nav-pills">
+                        <li role="presentation" class="nav-item">
+                          <a class="nav-link active"
+                             data-bs-toggle="tab"
+                             data-bs-target="#bibtex"
+                             href="#bibtex">BibTeX</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                          <a class="nav-link"
+                             data-bs-toggle="tab"
+                             data-bs-target="#ris"
+                             href="#ris">RIS</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                          <a class="nav-link"
+                             data-bs-toggle="tab"
+                             data-bs-target="#enw"
+                             href="#enw">EndNote</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="bibtex" class="tab-pane fade show active">
+                          <pre class="upper-right-content" id="bibtex-div">@article{JEP_2014__1__161_0,
+     author = {Bisi, Cinzia and Furter, Jean-Philippe and Lamy, St\&#x27;ephane},
+     title = {The tame automorphism group of an affine quadric threefold acting on a square complex},
+     journal = {Journal de l{\textquoteright}\&#x27;Ecole polytechnique {\textemdash} Math\&#x27;ematiques},
+     pages = {161--223},
+     year = {2014},
+     publisher = {Ecole polytechnique},
+     volume = {1},
+     doi = {10.5802/jep.8},
+     language = {en},
+     url = {https://numdam.org/articles/10.5802/jep.8/}
+}</pre>
+                          <button class="fa fa-clipboard copy-button btn btn-primary"
+                                  data-clipboard-action="copy"
+                                  data-clipboard-target="#bibtex-div"
+                                  aria-hidden="true"
+                                  title="Copier dans le presse-papier"></button>
+                          
+                            <a class="fa fa-download export-button btn btn-primary"
+                               title="Télécharger"
+                               href="/export_citation/JEP_2014__1__161_0/bib/"></a>
+                          
+                        </div>
+                        <div id="ris" class="tab-pane fade">
+                          <pre class="upper-right-content" id="ris-div">TY  - JOUR
+AU  - Bisi, Cinzia
+AU  - Furter, Jean-Philippe
+AU  - Lamy, Stéphane
+TI  - The tame automorphism group of an affine quadric threefold acting on a square complex
+JO  - Journal de l’École polytechnique — Mathématiques
+PY  - 2014
+SP  - 161
+EP  - 223
+VL  - 1
+PB  - Ecole polytechnique
+UR  - https://numdam.org/articles/10.5802/jep.8/
+DO  - 10.5802/jep.8
+LA  - en
+ID  - JEP_2014__1__161_0
+ER  - </pre>
+                          <button class="fa fa-clipboard copy-button btn btn-primary"
+                                  data-clipboard-action="copy"
+                                  data-clipboard-target="#ris-div"
+                                  aria-hidden="true"
+                                  title="Copier dans le presse-papier"></button>
+                          
+                            <a class="fa fa-download export-button btn btn-primary"
+                               title="Télécharger"
+                               href="/export_citation/JEP_2014__1__161_0/ris/"></a>
+                          
+                        </div>
+                        <div id="enw" class="tab-pane fade">
+                          <pre class="upper-right-content" id="enw-div">%0 Journal Article
+%A Bisi, Cinzia
+%A Furter, Jean-Philippe
+%A Lamy, Stéphane
+%T The tame automorphism group of an affine quadric threefold acting on a square complex
+%J Journal de l’École polytechnique — Mathématiques
+%D 2014
+%P 161-223
+%V 1
+%I Ecole polytechnique
+%U https://numdam.org/articles/10.5802/jep.8/
+%R 10.5802/jep.8
+%G en
+%F JEP_2014__1__161_0</pre>
+                          <button class="fa fa-clipboard copy-button btn btn-primary"
+                                  data-clipboard-action="copy"
+                                  data-clipboard-target="#enw-div"
+                                  aria-hidden="true"
+                                  title="Copier dans le presse-papier"></button>
+                          
+                            <a class="fa fa-download export-button btn btn-primary"
+                               title="Télécharger"
+                               href="/export_citation/JEP_2014__1__161_0/enw/"></a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="how-to-cite-tab"
+                       class="tab-pane fade ">
+                    <div class="upper-right">
+                      <pre class="upper-right-content" id="how-to-cite-div">Bisi, Cinzia; Furter, Jean-Philippe; Lamy, Stéphane. The tame automorphism group of an affine quadric threefold acting on a square complex. Journal de l’École polytechnique — Mathématiques, Tome 1 (2014), pp. 161-223. doi: 10.5802/jep.8</pre>
+                      <button class="fa fa-clipboard copy-button btn btn-primary"
+                              data-clipboard-action="copy"
+                              data-clipboard-target="#how-to-cite-div"
+                              aria-hidden="true"
+                              title="Copier dans le presse-papier"></button>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            
+          
+          
+    </div>
+  </div>
+
+
+
+  
+
+  
+
+
+
+
+  <div>
+    <div class="col-12">
+      <div style="margin-top:30px;margin-bottom:10px">
+
+        <ul class="nav nav-tabs article-tab"
+            >
+          <li class="nav-item"
+              id="main-citations-li"
+              >
+            <a class="nav-link active"
+               data-bs-toggle="tab"
+               data-bs-target="#references-tab"
+               href="#references-tab">Bibliographie</a>
+          </li>
+          <li class="nav-item" id="citations-html" style="display:none">
+            <a class="nav-link"
+               data-bs-toggle="tab"
+               data-bs-target="#citations-tab"
+               href="#citations-tab">Cité par</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" style="margin-top:10px">
+          
+            <div id="references-tab" class="tab-pane fade show active">
+              <div style="margin-top:11px;margin-bottom: 0px">
+
+
+
+
+  
+    <p class="bibitemcls">[AFK + 13] <span class="citation-author">Arzhantsev, I.; Flenner, H.; Kaliman, S.; Kutzschebauch, F.; Zaidenberg, M.</span><span class="citation-document-title"> Flexible varieties and automorphism groups</span><span class="citation-publication-title">, Duke Math. J.</span><span class="citation-volume">, Volume 162</span> (2013) no. 4, pp. 767-823 | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3039680" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Ale95] <span class="citation-author">Alev, J.</span><span class="citation-document-title"> A note on Nagata’s automorphism</span><span class="citation-publication-title">, Automorphisms of affine spaces (Curaçao, 1994)</span>, Kluwer Acad. Publ., Dordrecht, 1995, pp. 215-221 | <a href="https://zbmath.org/?q=an:0831.14004" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1352702" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[AOS12] <span class="citation-author">Ardila, F.; Owen, M.; Sullivant, S.</span><span class="citation-document-title"> Geodesics in <span class="mathjax-formula" data-tex="$\rm CAT(0)$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi> CAT </mi><mo>(</mo><mn>0</mn><mo>)</mo></mrow></math></span> cubical complexes</span><span class="citation-publication-title">, Adv. in Appl. Math.</span><span class="citation-volume">, Volume 48</span> (2012) no. 1, pp. 142-163 | <a href="https://zbmath.org/?q=an:1275.05055" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2845512" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[BH99] <span class="citation-author">Bridson, M. R.; Haefliger, A.</span><span class="citation-document-title"> Metric spaces of non-positive curvature</span><span class="citation-series">, Grundlehren der Mathematischen Wissenschaften</span><span class="citation-volume">, 319</span>, Springer-Verlag, Berlin, 1999 | <a href="https://zbmath.org/?q=an:0988.53001" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1744486" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[BŚ99] <span class="citation-author">Ballmann, W.; Świątkowski, J.</span><span class="citation-document-title"> On groups acting on nonpositively curved cubical complexes</span><span class="citation-publication-title">, Enseign. Math. (2)</span><span class="citation-volume">, Volume 45</span> (1999) no. 1-2, pp. 51-81 | <a href="https://zbmath.org/?q=an:0989.20029" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1703363" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Can11] <span class="citation-author">Cantat, S.</span><span class="citation-document-title"> Sur les groupes de transformations birationnelles des surfaces</span><span class="citation-publication-title">, Ann. of Math. (2)</span><span class="citation-volume">, Volume 174</span> (2011) no. 1, pp. 299-340 | <a href="https://zbmath.org/?q=an:1233.14011" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2811600" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[CL13] <span class="citation-author">Cantat, S.; Lamy, S.</span><span class="citation-document-title"> Normal subgroups in the Cremona group</span><span class="citation-publication-title">, Acta Math.</span><span class="citation-volume">, Volume 210</span> (2013) no. 1, pp. 31-94 (With an appendix by Yves de Cornulier) | <a href="https://zbmath.org/?q=an:1278.14017" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3037611" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Din12] <span class="citation-author">Dinh, T.-C.</span><span class="citation-document-title"> Tits alternative for automorphism groups of compact Kähler manifolds</span><span class="citation-publication-title">, Acta Math. Vietnamatica</span><span class="citation-volume">, Volume 37</span> (2012) no. 4, pp. 513-529 | <a href="https://zbmath.org/?q=an:1271.14056" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3058661" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[dlH83] <span class="citation-author">de la Harpe, P.</span><span class="citation-document-title"> Free groups in linear groups</span><span class="citation-publication-title">, Enseign. Math. (2)</span><span class="citation-volume">, Volume 29</span> (1983) no. 1-2, pp. 129-144 | <a href="https://zbmath.org/?q=an:0517.20024" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=702736" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Fru73] <span class="citation-author">Frumkin, M. A.</span><span class="citation-document-title"> A filtration in the three-dimensional Cremona group</span><span class="citation-publication-title">, Mat. Sb. (N.S.)</span><span class="citation-volume">, Volume 90(132)</span> (1973), p. 196-213, 325 | <a href="https://zbmath.org/?q=an:0254.14006" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=327769" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Fur83] <span class="citation-author">Furushima, M.</span><span class="citation-document-title"> Finite groups of polynomial automorphisms in <span class="mathjax-formula" data-tex="${\bf C}^{n}$"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mi mathvariant="bold">C</mi></mrow> <mi>n</mi> </msup></math></span></span><span class="citation-publication-title">, Tohoku Math. J. (2)</span><span class="citation-volume">, Volume 35</span> (1983) no. 3, pp. 415-424 | <a href="https://zbmath.org/?q=an:0567.32010" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=711357" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[GD77] <span class="citation-author">Gizatullin, M. H.; Danilov, V. I.</span><span class="citation-document-title"> Automorphisms of affine surfaces. II</span><span class="citation-publication-title">, Izv. Akad. Nauk SSSR Ser. Mat.</span><span class="citation-volume">, Volume 41</span> (1977) no. 1, pp. 54-103 | <a href="https://zbmath.org/?q=an:0357.14003" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=437545" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Kam79] <span class="citation-author">Kambayashi, T.</span><span class="citation-document-title"> Automorphism group of a polynomial ring and algebraic group action on an affine space</span><span class="citation-publication-title">, J. Algebra</span><span class="citation-volume">, Volume 60</span> (1979) no. 2, pp. 439-451 | <a href="https://zbmath.org/?q=an:0429.14017" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=549939" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Kur10] <span class="citation-author">Kuroda, S.</span><span class="citation-document-title"> Shestakov-Umirbaev reductions and Nagata’s conjecture on a polynomial automorphism</span><span class="citation-publication-title">, Tohoku Math. J. (2)</span><span class="citation-volume">, Volume 62</span> (2010) no. 1, pp. 75-115 | <a href="https://zbmath.org/?q=an:1210.14072" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2654304" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Lam01] <span class="citation-author">Lamy, S.</span><span class="citation-document-title"> L’alternative de Tits pour <span class="mathjax-formula" data-tex="${\rm Aut}[{\mathbb{C}}^2]$"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi> Aut </mi><mo>[</mo><msup><mrow><mi>ℂ</mi></mrow> <mn>2</mn> </msup><mo>]</mo></mrow></math></span></span><span class="citation-publication-title">, J. Algebra</span><span class="citation-volume">, Volume 239</span> (2001) no. 2, pp. 413-437 | <a href="https://zbmath.org/?q=an:1040.37031" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1832900" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Lam13] <span class="citation-author">Lamy, S.</span><span class="citation-document-title"> On the genus of birational maps between 3-folds</span> (2013) (<a href="http://arxiv.org/abs/1305.2482" target="_blank">arXiv:1305.2482</a>)</p><p class="bibitemcls">[LV13] <span class="citation-author">Lamy, S.; Vénéreau, S.</span><span class="citation-document-title"> The tame and the wild automorphisms of an affine quadric threefold.</span><span class="citation-publication-title">, J. Math. Soc. Japan</span><span class="citation-volume">, Volume 65</span> (2013) no. 1, pp. 299-320 | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3034406" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Pan99] <span class="citation-author">Pan, I.</span><span class="citation-document-title"> Une remarque sur la génération du groupe de Cremona</span><span class="citation-publication-title">, Bol. Soc. Brasil. Mat. (N.S.)</span><span class="citation-volume">, Volume 30</span> (1999) no. 1, pp. 95-98 | <a href="https://zbmath.org/?q=an:0972.14006" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1686984" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Pap95] <span class="citation-author">Papasoglu, P.</span><span class="citation-document-title"> Strongly geodesically automatic groups are hyperbolic</span><span class="citation-publication-title">, Invent. Math.</span><span class="citation-volume">, Volume 121</span> (1995) no. 2, pp. 323-334 | <a href="https://zbmath.org/?q=an:0834.20040" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1346209" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[PV91] <span class="citation-author">Pays, I.; Valette, A.</span><span class="citation-document-title"> Sous-groupes libres dans les groupes d’automorphismes d’arbres</span><span class="citation-publication-title">, Enseign. Math. (2)</span><span class="citation-volume">, Volume 37</span> (1991) no. 1-2, pp. 151-174 | <a href="https://zbmath.org/?q=an:0744.20024" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1115748" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Ser77a] <span class="citation-author">Serre, J.-P.</span><span class="citation-document-title"> Arbres, amalgames, <span class="mathjax-formula" data-tex="${\rm SL}_{2}$"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi> SL </mi> <mn>2</mn> </msub></math></span></span><span class="citation-series">, Astérisque</span><span class="citation-volume">, 46</span>, Société Mathématique de France, Paris, 1977, pp. 189 p. | <a href="https://zbmath.org/?q=an:0369.20013" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=476875" class="badge bg-secondary rounded-pill ref-badge">MR</a> | <a href="https://www.numdam.org/item/AST_1983__46__1_0" class="badge bg-secondary rounded-pill ref-badge">Numdam</a></p><p class="bibitemcls">[Ser77b] <span class="citation-author">Serre, J.-P.</span><span class="citation-document-title"> Cours d’arithmétique</span>, Presses Universitaires de France, Paris, 1977 | <a href="https://zbmath.org/?q=an:0376.12001" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=498338" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Wis12] <span class="citation-author">Wise, D. T.</span><span class="citation-document-title"> From riches to raags: 3-manifolds, right-angled Artin groups, and cubical geometry</span><span class="citation-series">, CBMS Regional Conference Series in Mathematics</span><span class="citation-volume">, 117</span>, American Mathematical Society, Providence, RI, 2012 | <a href="https://zbmath.org/?q=an:1278.20055" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2986461" class="badge bg-secondary rounded-pill ref-badge">MR</a></p><p class="bibitemcls">[Wri13] <span class="citation-author">Wright, D.</span><span class="citation-document-title"> The Amalgamated Product Structure of the Tame Automorphism Group in Dimension Three</span> (2013) (<a href="http://arxiv.org/abs/1310.8325" target="_blank">arXiv:1310.8325</a>)</p><p class="bibitemcls">[Wri92] <span class="citation-author">Wright, D.</span><span class="citation-document-title"> Two-dimensional Cremona groups acting on simplicial complexes</span><span class="citation-publication-title">, Trans. Amer. Math. Soc.</span><span class="citation-volume">, Volume 331</span> (1992) no. 1, pp. 281-300 | <a href="https://zbmath.org/?q=an:0767.14006" class="badge bg-secondary rounded-pill ref-badge">Zbl</a> | <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1038019" class="badge bg-secondary rounded-pill ref-badge">MR</a></p>
+  
+
+</div>
+            </div>
+          
+
+          
+            <div id="citations-tab" class="tab-pane fade show">
+              <div id="citations-div"
+                   data-url="/citedby/10.5802/jep.8"
+                   style="margin-top:11px;
+                          margin-bottom: 11px"></div>
+              <p>
+                <em>Cité par <span id="citations-number"></span> Sources : <span id="citations-sources"></span></em>
+              </p>
+            </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+
+  
+
+
+</div>
+
+
+                <!-- center_footer -->
+             
+            </div>
+
+            
+              <div>
+                
+                
+              </div>
+            
+
+          
+        </div>
+      
+    </div>
+    
+  </main>
+
+  
+    
+<div id="footer">
+  <div class="horizontal-menu menu-footer">
+    <ul>
+      <li><a href="/accessibility/">Accessibilité - non conforme</a></li>
+      <li><a href="/about/">À propos</a></li>
+      <li><a href="/help/">Aide</a></li>
+      <li><a href="/legal/">Mentions légales</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      
+    </ul>
+  </div>
+  <div class="logo-footer">
+    <div class="d-flex">
+      <div class="lg-desktop">
+        <p>Développé par</p>
+      </div>
+      <div>
+        <a href="http://www.mathdoc.fr"><img class="logo-auto" src="/static/numdam/img/logo-mathdoc.png"/></a>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="lg-desktop">
+        <p>Soutenu par</p>
+      </div>
+      <div>
+        <a href="http://www.cnrs.fr/insmi"><img class="logo-auto" src="/static/ptf/img/logo-cnrs.png"/></a>&nbsp;
+        <a href="http://www.univ-grenoble-alpes.fr/"><img class="logo-auto" src="/static/numdam/img/logo-uga.png"/></a>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="lg-desktop">
+        <p>Partenaire de</p>
+      </div>
+      <div>
+        <a href="https://geodesic.mathdoc.fr"><img class="logo-auto" src="/static/numdam/img/geodesic.png"/></a>&nbsp;
+        <a href="http://portail.math.cnrs.fr"><img class="logo-auto" src="/static/numdam/img/logo-portail.png"/></a>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div id="logo-collex">
+        <a href="https://www.collexpersee.eu/"><img class="logo-auto" src="/static/numdam/img/logo-collex.png"/></a>&nbsp;
+      </div>
+      <div id="logo-collex-lg">
+        <a href="https://www.collexpersee.eu/"><img class="logo-auto" src="/static/numdam/img/logo-collex.png"/></a>&nbsp;
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  <script type="text/javascript" src="/static/ptf/vendors/jquery/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/static/ptf/vendors/bootstrap5/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/static/ptf/vendors/clipboard/js/clipboard.min.js "></script>
+  
+    <script type="text/javascript" src="/static/ptf/js/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+  
+
+  
+
+<script src="/static/numdam/js/scripts.js "></script>
+<script src="/static/numdam/vendors/owl-carousel/js/owl.carousel.min.js "></script>
+
+
+
+
+  <script type="text/javascript" src="/static/ptf/js/bs5/ptf.js"></script>
+  <script type="text/javascript" src="/static/ptf/js/bs5/search-bar.js"></script>
+  <script type="text/javascript" src="/static/ptf/js/bs5/facets.js"></script>
+</body>
+</html>

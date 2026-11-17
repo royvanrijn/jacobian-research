@@ -1,0 +1,25 @@
+{
+  "as_of": "2026-11-14",
+  "weighted_native_attempt": {
+    "cap_seconds": 60,
+    "terminal": true,
+    "mathematical_result": null
+  },
+  "Macaulay2_linear_algebra_toy": {
+    "terminal": true,
+    "change_matrix_failed": true,
+    "used_as_proof": false
+  },
+  "direct_Sage_inverse_attempt": {
+    "cap_seconds": 90,
+    "terminal": true,
+    "mathematical_result": null
+  },
+  "direct_Sage_product_reduction": {
+    "cap_seconds": 45,
+    "terminal": true,
+    "mathematical_result": null
+  },
+  "replacement": "140-dimensional rational Dixon solves plus full FLINT polynomial identities",
+  "no_attempt_process_left_live": true
+}

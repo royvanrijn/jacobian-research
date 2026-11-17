@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "path": "sources/jones-primitive-cycle-1209.5169.pdf",
+      "url": "https://arxiv.org/pdf/1209.5169",
+      "title": "Gareth A. Jones, Primitive permutation groups containing a cycle",
+      "locator": "Theorem1.1 on the first article page: a primitive group containing a prime cycle fixing at least3 points contains A_n. Only this classical Jordan statement is used.",
+      "bytes": 106850,
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57"
+    }
+  ],
+  "scope": "The integrated-pencil construction, higher critical-value derivative, primitivity and polynomial completion are proved in the note. The Jordan prime-cycle theorem is an attributed group input."
+}

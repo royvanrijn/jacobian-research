@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-16",
+  "new_mathematical_claim": "Written algebraic consequences of retained theorems; full closure not proved",
+  "proof": "PURE_MOMENT_CONORMAL_AMPLIFICATION.md",
+  "proof_sha256": "73535dd66be7dcfc1f498d3c56f2c48c436211419875be917e5764c60ebecee0",
+  "proof_dependency": "GHAARFULLMIXEDFAMILY20261116",
+  "proof_type": "written algebraic argument; no new computation",
+  "registry_unchanged": true,
+  "all_unrelated_metadata_records_preserved": true,
+  "canonical_family_proof_and_receipt_unchanged": true,
+  "local_links_checked": 5,
+  "uniform_amplification_proved": false,
+  "intrinsic_splitting_proved": false,
+  "actual_exceptional_counterexample": false,
+  "full_cases": "OPEN on BOTH quotients",
+  "external_review": false,
+  "external_review_deferred": true,
+  "new_degree_or_CAS_campaign": false,
+  "active_goal_preserved": true,
+  "git_diff_check": "PASS",
+  "family_source_checker_receipt_hash_check": "PASS",
+  "affected_JSON_and_new_note_links": "PASS",
+  "full_repository_navigation": "FAIL: pre-existing KDSQ6 missing artifacts/generated-results/README.md",
+  "full_repository_validated": false,
+  "previous_proof_sha256": "c9f78ba6f38b324cf3a736a1027c9be536a08fb503d543fb310e26ce450f821a",
+  "new_written_deductions": [
+    "Scalar moment-algebra finite generation in EVERY D suffices for full closure,unproved hypothesis.",
+    "Finite C-dimension of moment-algebra image modulo I_D^2 in EVERY D is EXACTLY equivalent.",
+    "Actual pure SAFE shears obstruct integral/module-finite ambient invariant extension in ALL D>=72/156.",
+    "Any actual pure fixed-marker failure yields non-finitely generated TWO-parameter pencil algebra; exact Long square-zero quotient."
+  ],
+  "new_claim_registered": false,
+  "source_hashes": {
+    "FULL_MIXED_HAAR_FAMILIES_AND_TORSION_NORMALIZATION.md": "80fce82d5a02534b7115323909d40239eff7002b429fed79b67b6a9f19fb71d0",
+    "HAAR_SHEARS_AND_GENERAL_NULLCONE_CLASSIFICATION.md": "c008f0a18de99def6211bfdcc0841dc81fd0c6c30dcf9c65ed13c6ea3cd11edc",
+    "CONSTANT_VOLUME_MODELS_AND_ACTUAL_MARKER_DEFECTS.md": "e6441776ebf5e8e21f7714f035a5e94940e2a972bade0516ba925b3368a1560c"
+  },
+  "uniform_finite_generation_established": false,
+  "independent_replay": false,
+  "formal_verification": false
+}

@@ -1,0 +1,486 @@
+{
+  "status": "COMPLETE",
+  "results": [
+    {
+      "name": "13a_3145",
+      "model": "A",
+      "epsilon": 1,
+      "initial_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "steps": [],
+      "final_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "target_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "exact_match": true
+    },
+    {
+      "name": "13a_3147",
+      "model": "A",
+      "epsilon": -1,
+      "initial_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "steps": [],
+      "final_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "target_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "exact_match": true
+    },
+    {
+      "name": "13a_3148",
+      "model": "B",
+      "epsilon": 1,
+      "initial_relators": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -2,
+          1,
+          -2,
+          -2,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          -2,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1
+        ]
+      ],
+      "steps": [
+        {
+          "operation": "nielsen",
+          "forward": {
+            "1": [
+              1
+            ],
+            "2": [
+              2,
+              -1,
+              -1
+            ]
+          },
+          "inverse": {
+            "1": [
+              1
+            ],
+            "2": [
+              2,
+              1,
+              1
+            ]
+          },
+          "before_measure": 23,
+          "after_measure": 25
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            -1
+          ],
+          "target_relator": [
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "target_rotation": [
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1
+          ],
+          "pattern_length": 4,
+          "before_measure": 25,
+          "after_measure": 22
+        },
+        {
+          "operation": "relator_shortening",
+          "used_relator": [
+            -2,
+            -2,
+            -1,
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "used_signed_rotation": [
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            -1
+          ],
+          "target_relator": [
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1
+          ],
+          "target_rotation": [
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1
+          ],
+          "pattern_length": 4,
+          "before_measure": 22,
+          "after_measure": 19
+        }
+      ],
+      "final_relators": [
+        [
+          -2,
+          -2,
+          -1,
+          -2,
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "target_relators": [
+        [
+          -2,
+          -2,
+          -1,
+          -2,
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "exact_match": true
+    },
+    {
+      "name": "13a_3149",
+      "model": "B",
+      "epsilon": -1,
+      "initial_relators": [
+        [
+          -2,
+          -2,
+          -1,
+          -2,
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "steps": [],
+      "final_relators": [
+        [
+          -2,
+          -2,
+          -1,
+          -2,
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "target_relators": [
+        [
+          -2,
+          -2,
+          -1,
+          -2,
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          2,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "exact_match": true
+    }
+  ],
+  "input_sha256": {
+    "three_sheet_splice_plan.json": "3060b3bcc63b7895b392108be37d3972872ca7ca4f88a6ed9ef6ce59c0f2c19f",
+    "audit_three_sheet_splices.py": "3ba2517b0c2cd8f1c4f92fd8c790fb51e7b1388f0217888121db85c0e2476024",
+    "audit_three_sheet_structure.py": "8f12b63237672c00123e709bae9d09f3262af9f6b419e944ca931419f56f83b8",
+    "three_sheet_structural_results.json": "7c5bb164817542758d523abb0d4138dfd220ec7ee3f6acc812cc4e8bb8748cc6",
+    "three_sheet_structure_verification.json": "aedd9549aed67422c38b37987750abbd68138c024acdd779f5bb75c741e468be"
+  }
+}

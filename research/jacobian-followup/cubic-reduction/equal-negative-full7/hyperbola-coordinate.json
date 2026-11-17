@@ -1,0 +1,191 @@
+{
+  "variables": [
+    "Y",
+    "Z",
+    "alpha",
+    "beta"
+  ],
+  "polynomials": {
+    "f": [
+      {
+        "exponent": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "T": [
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "U": [
+      {
+        "exponent": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "D": [
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "q": [
+      {
+        "exponent": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "coefficient": "1"
+      }
+    ]
+  }
+}

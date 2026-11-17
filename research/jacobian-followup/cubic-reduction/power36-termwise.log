@@ -1,0 +1,3 @@
+TERMS 35 BASELINE 91
+best 91 restart 0
+{"status": "exact-cube-identity", "source_sha256": "f082a94b07f9552bbf2e4d1bc261605ecf9a1c4cb0cf85f4b4aec759d3ae9624", "base_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb", "size": 91, "padding_index": 0, "seed": 261118, "restarts": 50, "scope": "Bounded termwise search on the changed KCUB3 companion. No smaller Keller map without full determinant and collision construction."}

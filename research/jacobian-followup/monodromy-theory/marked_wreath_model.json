@@ -1,0 +1,196 @@
+{
+  "claims": [
+    "KMFI69",
+    "KMFI70",
+    "KMFI71",
+    "KMFI72"
+  ],
+  "known_geometric_family_reproduced": true,
+  "source_attribution": "Harish construction; Fonollosa geometric monodromy",
+  "polynomial_controls": [
+    {
+      "n": 3,
+      "degree": 3,
+      "jacobian": "1/2",
+      "monomials": 16,
+      "entire_Jacobian_checked": true
+    },
+    {
+      "n": 4,
+      "degree": 8,
+      "jacobian": "1",
+      "monomials": 24,
+      "entire_Jacobian_checked": true
+    },
+    {
+      "n": 5,
+      "degree": 15,
+      "jacobian": "3/2",
+      "monomials": 32,
+      "entire_Jacobian_checked": true
+    },
+    {
+      "n": 6,
+      "degree": 24,
+      "jacobian": "2",
+      "monomials": 40,
+      "entire_Jacobian_checked": true
+    },
+    {
+      "n": 7,
+      "degree": 35,
+      "jacobian": "5/2",
+      "monomials": 48,
+      "entire_Jacobian_checked": true
+    }
+  ],
+  "group_controls": [
+    {
+      "n": 3,
+      "marking_order": 1,
+      "sheets": 3,
+      "geometric_order": 6,
+      "arithmetic_order_over_Q": 6,
+      "normal_closure_constants": "Q(zeta_1)",
+      "geometric_deck_order": 1,
+      "rational_deck_order_over_Q": 1,
+      "proper_block_sizes": [
+        1
+      ],
+      "stable_atomicity": "proved in written general argument",
+      "cycle_gcd_invariant": 3
+    },
+    {
+      "n": 4,
+      "marking_order": 2,
+      "sheets": 8,
+      "geometric_order": 192,
+      "arithmetic_order_over_Q": 192,
+      "normal_closure_constants": "Q(zeta_2)",
+      "geometric_deck_order": 2,
+      "rational_deck_order_over_Q": 2,
+      "proper_block_sizes": [
+        1,
+        2
+      ],
+      "stable_atomicity": "proved in written general argument",
+      "cycle_gcd_invariant": 8
+    },
+    {
+      "n": 5,
+      "marking_order": 3,
+      "sheets": 15,
+      "geometric_order": 29160,
+      "arithmetic_order_over_Q": 58320,
+      "normal_closure_constants": "Q(zeta_3)",
+      "geometric_deck_order": 3,
+      "rational_deck_order_over_Q": 1,
+      "proper_block_sizes": [
+        1,
+        3
+      ],
+      "stable_atomicity": "proved in written general argument",
+      "cycle_gcd_invariant": 15
+    },
+    {
+      "n": 6,
+      "marking_order": 4,
+      "sheets": 24,
+      "geometric_order": 1474560,
+      "arithmetic_order_over_Q": 2949120,
+      "normal_closure_constants": "Q(zeta_4)",
+      "geometric_deck_order": 4,
+      "rational_deck_order_over_Q": 2,
+      "proper_block_sizes": [
+        1,
+        2,
+        4
+      ],
+      "stable_atomicity": "proved in written general argument",
+      "cycle_gcd_invariant": 24
+    },
+    {
+      "n": 7,
+      "marking_order": 5,
+      "sheets": 35,
+      "geometric_order": 393750000,
+      "arithmetic_order_over_Q": 1575000000,
+      "normal_closure_constants": "Q(zeta_5)",
+      "geometric_deck_order": 5,
+      "rational_deck_order_over_Q": 1,
+      "proper_block_sizes": [
+        1,
+        5
+      ],
+      "stable_atomicity": "proved in written general argument",
+      "cycle_gcd_invariant": 35
+    },
+    {
+      "n": 8,
+      "marking_order": 6,
+      "sheets": 48,
+      "geometric_order": 33861058560,
+      "arithmetic_order_over_Q": 67722117120,
+      "normal_closure_constants": "Q(zeta_6)",
+      "geometric_deck_order": 6,
+      "rational_deck_order_over_Q": 2,
+      "proper_block_sizes": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "stable_atomicity": "proved in written general argument",
+      "cycle_gcd_invariant": 48
+    },
+    {
+      "n": 9,
+      "marking_order": 7,
+      "sheets": 63,
+      "geometric_order": 14643516908160,
+      "arithmetic_order_over_Q": 87861101448960,
+      "normal_closure_constants": "Q(zeta_7)",
+      "geometric_deck_order": 7,
+      "rational_deck_order_over_Q": 1,
+      "proper_block_sizes": [
+        1,
+        7
+      ],
+      "stable_atomicity": "proved in written general argument",
+      "cycle_gcd_invariant": 63
+    },
+    {
+      "n": 10,
+      "marking_order": 8,
+      "sheets": 80,
+      "geometric_order": 1948197165465600,
+      "arithmetic_order_over_Q": 7792788661862400,
+      "normal_closure_constants": "Q(zeta_8)",
+      "geometric_deck_order": 8,
+      "rational_deck_order_over_Q": 2,
+      "proper_block_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "stable_atomicity": "proved in written general argument",
+      "cycle_gcd_invariant": 80
+    }
+  ],
+  "universal_statements": {
+    "n": "all integers n>=3",
+    "m": "n-2",
+    "dimension": "n",
+    "geometric_order": "m^n*n!/gcd(2,m)",
+    "constants_over_Q": "Q(zeta_m)",
+    "all_proper_blocks": "within one root block, cyclic subgroup sizes d|m",
+    "all_upper_intermediate_extensions": "L/K(t,a^d) cyclic of degree d for every d|m",
+    "stable_atomicity": true,
+    "every_finite_cyclic_geometric_deck_group_realized": true,
+    "every_finite_abelian_geometric_deck_group_realized_by_products": true
+  },
+  "natural_PSL2_11_degree12_absolute_occurrence": "excluded by KMFI67",
+  "exceptional_PSL2_11_degree11_absolute_occurrence_decided": false,
+  "full_action_classification_complete": false
+}

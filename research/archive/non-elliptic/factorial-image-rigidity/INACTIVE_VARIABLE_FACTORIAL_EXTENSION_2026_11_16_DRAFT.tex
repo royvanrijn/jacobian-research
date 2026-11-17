@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newcommand{\E}{\mathbb E}
+\title{Inactive variables in the Gamma block-radial limit}
+\author{Coordinator working extension of the retained Long--Le Blanc block limit}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status.}
+Historical draft, superseded by the linked canonical coupled-block proof; no independent review, formal verification or
+novelty claim. This extends the explicitly retained positive-exponent block
+theorem in \href{../../../jacobian-followup/factorial-image-rigidity/COUPLED_BLOCK_PERIODS.tex}
+{Coupled block periods}, based on the pinned Long--Le Blanc EIT VI source.
+That note explicitly leaves lower terms involving extra inactive variables
+outside its singleton-block corollary. No canonical proof or registry is changed.
+
+\section{The extension}
+Partition active independent positive-shape Gamma variables into nonempty
+blocks $B_j$. Let $S_j$ be their sums, $A_j$ their shape sums,
+$d_j\ge1$, $D=\sum_jd_j$, $C_d=\prod_jd_j^{d_j}$, and let $T^{(j)}$ be
+their independent Dirichlet angular variables. Also let $Z$ be any finite
+tuple of independent Gamma variables of fixed strictly positive shapes,
+independent of all active blocks. Write $dT=(d_1T^{(1)},\ldots,d_rT^{(r)})$.
+All polynomial coefficients below may be arbitrary complex numbers.
+
+\begin{theorem}
+For $c\ne0$, homogeneous $G$ of total degree $D-1$, and
+$\deg R\le D-2$, put
+\[
+ F(X,Z)=c\prod_jS_j^{d_j}+G(X,Z)+R(X,Z).
+\]
+For a nonzero polynomial marker $H$, let $e$ be its maximum degree in
+the active variables only, and let $H_{[e]}(X,Z)$ be its active-degree-$e$
+part, retaining all polynomial dependence on $Z$. Then
+\[
+ \lim_{m\to\infty}
+ \frac{\E[H(X,Z)F(X,Z)^m]}
+ {m^e c^m\prod_j(A_j)_{d_jm}}
+ =
+ \E_{T,Z}\left[
+ H_{[e]}(dT,Z)
+ \exp\!\left(\frac{G(dT,0)}{cC_d}\right)\right].
+ \tag{1}
+\]
+Zero markers are identically zero. A zero limit does not decide the
+entire marked sequence.
+\end{theorem}
+
+\begin{proof}
+Divide $F$ by $c$. Tilt only the active block radii by
+$\prod S_j^{d_jm}$ and normalize by their Gamma moments.
+The resulting independent radii have laws
+$\operatorname{Gamma}(d_jm+A_j,1)$, so $S_j/m\to d_j$ in probability.
+The inactive $Z$ retain their original fixed laws, so $Z/m\to0$.
+The angular variables retain their Dirichlet laws.
+
+For an active radial vector $u$ near $d$, and $v=Z/m$ near zero in
+the closed positive orthant, uniformly on a compact neighborhood,
+\[
+ \frac{F(muT,mv)}{c\,m^D\prod u_j^{d_j}}
+ =
+ 1+\frac{G(uT,v)}{cm\prod u_j^{d_j}}+O(m^{-2}).
+\]
+The $m$th powers are uniformly bounded there, converge to the
+exponential in (1), and the active-scaled marker converges to
+$H_{[e]}(dT,Z)$. On this neighborhood
+$m^{-e}|H(muT,Z)|\le C(1+|Z|)^L$ for some fixed $L$.
+The latter has finite expectation under every fixed positive-shape
+Gamma law. Concentration of the tilted active radii, then dominated
+convergence in $T,Z$, gives the claimed local limit.
+
+For completeness, the complement estimate retains the inactive boundary.
+Scale \emph{all} radii as $(S,Z)=m(u,v)$ and put
+\[
+ K_m(u,v,T)=e^{-\sum u-\sum v}
+ |m^{-D}F(muT,mv)/c|.
+\]
+Uniformly on compact sets, including coordinate boundaries,
+\[
+ K_m\longrightarrow
+ K_0=e^{-\sum u-\sum v}\prod u_j^{d_j}.
+\]
+This has its unique global maximum $M=e^{-D}C_d>0$ at
+$(u,v)=(d,0)$. It need not vanish on an inactive boundary.
+Outside any fixed relative neighborhood of that point, the compact
+maximum is strictly smaller than $M$. The polynomial bound
+\[
+ K_m\le C e^{-\sum u-\sum v}(1+\sum u+\sum v)^D
+\]
+also gives a uniform exponential gap on the unbounded tail.
+All fixed-shape radial densities are locally integrable, including
+shapes below one. Polynomial markers change these estimates by only
+a fixed polynomial factor and a fixed power of $m$.
+
+If $B$ is the sum of inactive shapes, Stirling's formula gives the
+scaled normalization
+\[
+ \frac{\prod_j\Gamma(d_jm+A_j)}
+ {m^{Dm+\sum A_j+B}}
+ =C_*M^m m^{-r/2-B}(1+o(1)),\qquad C_*>0.
+\]
+The complementary compact region and tail are therefore exponentially
+negligible after normalization. This proves (1) without dividing by
+the leading form away from the active neighborhood.
+\end{proof}
+
+\section{Consequences}
+\begin{corollary}
+Suppose the highest ordinary homogeneous part of $F$ is a single
+nonconstant monomial $cX^\alpha$, with arbitrary nonnegative exponents
+and $c\ne0$. Every sufficiently large Gamma moment of $F$ is nonzero,
+for every fixed choice of positive Gamma shapes and arbitrary complex
+strictly lower-degree coefficients.
+\end{corollary}
+\begin{proof}
+Declare the variables with positive $\alpha_i$ active singleton blocks
+and all others inactive. The unmarked limit is
+\[
+ \exp\!\left(
+ \frac{G(\alpha,0)}{c\prod_{\alpha_i>0}\alpha_i^{\alpha_i}}
+ \right)\ne0.
+\]
+\end{proof}
+For factorial moments this includes $X^3+Q_{\le2}(X,Y,Z)$ and
+$X^2Y+Q_{\le2}(X,Y,Z,W)$, with arbitrary complex lower terms.
+Their leading forms can be singular and their lower terms can involve
+every inactive variable.
+
+More generally any previously proved nonzero angular block limit remains
+nonzero after adjoining any number of inactive variables and arbitrary
+strictly lower-degree couplings, provided the restriction $G(X,0)$ is
+in the original proved nonvanishing family. This is stronger than merely
+adjoining unused variables.
+
+This proves no unrestricted FC or SFC statement, no two-moment window,
+and no assertion for multiple top monomials outside the retained block
+architecture. The marker $Z-1$ has zero limiting mean for a unit
+exponential inactive variable, while lower couplings can give nonzero
+marked moments; thus zero limits must not be promoted to zero sequences.
+Finite exact identities in the companion checker are transcriptions,
+not a substitute for the uniform boundary estimate above.
+\end{document}

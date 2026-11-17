@@ -5,10 +5,11 @@ Reviewed 14 November 2026. Attribution: Zongmin Liu,
 The downloaded source archive has SHA-256
 `196fed360a70d9150709bf981af4304644021294783a525b2eafef246d23be2f`.
 Its Theorems 2.1 and 2.2 supply finite determination, classification and the
-optimal mixed bound. The all-rank sharp pure threshold in Theorem 5.1 is
-recorded as an external result; its realization/intersection argument has
-not been independently replayed here. No priority claim is made for the
-following deductions or explicit examples.
+optimal mixed bound. The separate [all-rank sharpness audit](QUADRATIC_SHARP_THRESHOLD.md)
+now supplies the complete written realization/intersection argument for
+Theorem 5.1, with independent exact Gaussian witnesses in ranks one and two.
+Its general existence proof is not an enumerated all-rank certificate.
+No priority claim is made for the following deductions or explicit examples.
 
 ## Audited finite gate
 

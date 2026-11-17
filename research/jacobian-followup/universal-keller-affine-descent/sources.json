@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-11-15T10:38:24.890928+00:00",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-intermediate-surfaces/PROOF.md",
+      "sha256": "4b0bccee73b5af3e6fbe9b89cd76b61c40c5058e166226a023fa2cdc0c4cc47a"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-unit-rigidity/PROOF.md",
+      "sha256": "418ee93b4fe2401e097046f5a0043aa1c280ac9fa113df5278072fe7eb3eff4a"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-log-picard/PROOF.md",
+      "sha256": "ed4302aacae26a7a7b97259555d80859fa704b2055d5a94009a6887b91a539a6"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-plane-charts/PROOF.md",
+      "sha256": "3e779300763ab77d264ffe7653dcdfc0e8b6fb0c56b950b7921de94a53c25483"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-ruling-descent/PROOF.md",
+      "sha256": "ea568023eee4504709e4630aeb424d9d4ab0b34a81723c57bb1236776793526a"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-plane-completion/PROOF.md",
+      "sha256": "d1882a55aa0f5182dc97533d7100ee6add71f20b9a6216423b73579bd5ff9fb8"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "daigle-ml-v1.html",
+      "url": "https://arxiv.org/html/0705.0334v1",
+      "path": "sources/daigle-ml-v1.html",
+      "sha256": "91ac1003822ce3a587cc8a6963feec3e37b4a10e272d0b641e2fcff75e2e9988",
+      "bytes": 422248,
+      "reviewed_scope": "Theorem3.2 and Remark3.4: smooth affine surface with trivial ML and trivial canonical bundle is u*v=P(z)."
+    },
+    {
+      "title": "dubouloz-kishimoto-descent-v1.html",
+      "url": "https://arxiv.org/html/1408.1328v1",
+      "path": "sources/dubouloz-kishimoto-descent-v1.html",
+      "sha256": "17d297b31f9ecfc2299b0ee3a0aca38174c4432bcdff5413ba9b71fce0918f24",
+      "bytes": 440475,
+      "reviewed_scope": "Section1.3.1 and Proposition4: effective descent of Galois-invariant rulings."
+    },
+    {
+      "title": "dubouloz-rigid-cubic-v1.html",
+      "url": "https://arxiv.org/html/1507.05802v1",
+      "path": "sources/dubouloz-rigid-cubic-v1.html",
+      "sha256": "c1de84631123bdaa0d4c20e4db87600f4b451a3db86af789a5beeee1813fc1c9",
+      "bytes": 303251,
+      "reviewed_scope": "Introduction: standard additive-action quotient theorem; rigid affine cubic surfaces with complete-type rulings."
+    },
+    {
+      "title": "dubouloz-rigid-bundles-v1.html",
+      "url": "https://arxiv.org/html/1304.4189v1",
+      "path": "sources/dubouloz-rigid-bundles-v1.html",
+      "sha256": "f46b54351c572bc4aed201ce598e2fd99483790ae7aa33e8885d6b444b66fe7b",
+      "bytes": 507004,
+      "reviewed_scope": "Section2.1 Remark5: rigid surfaces can have two inequivalent COMPLETE-type rulings."
+    }
+  ]
+}

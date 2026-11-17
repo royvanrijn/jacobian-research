@@ -1,0 +1,22 @@
+ring rr=0,(c0,c1,c2,c3,c4,c5,c6),dp;
+short=0;
+ideal I=(7)*c1*c3*c6,(6)*c0*c3*c6+(6)*c1*c2*c6+(6)*c1*c3*c5,(-14)*c1*c3*c4,(5)*c0*c2*c6+(5)*c0*c3*c5+(5)*c1*c2*c5+(5)*c1*c3+(5)*c1*c6+(5)*c3*c6,(-14)*c0*c3*c4+(-7)*c1*c2*c4,(4)*c0*c2*c5+(4)*c0*c3+(4)*c0*c6+(4)*c1*c2+(4)*c1*c5+(4)*c2*c6+(4)*c3*c5,(-7)*c0*c2*c4+(-14)*c3*c4,(3)*c0*c2+(3)*c0*c5+(3)*c1+(3)*c2*c5+(3)*c3+(3)*c6,(-7)*c2*c4,(2)*c0+(2)*c2+(2)*c5;
+ideal G=std(I);
+int i;int k;poly target;matrix M;poly pp;
+k=1;target=c0;
+while(k<=32 && reduce(target,G)!=0){k=2*k;target=c0^k;}
+if(k>32){print("MISS:0");}else{
+print("TARGET:0:"+string(k));
+M=lift(I,ideal(target));
+if((matrix(I)*M)[1,1]!=target){print("ERROR");quit;}
+for(i=1;i<=nrows(M);i++){print("GEN:"+string(i));pp=M[i,1];while(pp!=0){print("COEF:"+string(leadcoef(pp)));print("EXP:"+string(leadexp(pp)));pp=pp-lead(pp);}print("END");}
+}
+k=1;target=c1;
+while(k<=32 && reduce(target,G)!=0){k=2*k;target=c1^k;}
+if(k>32){print("MISS:1");}else{
+print("TARGET:1:"+string(k));
+M=lift(I,ideal(target));
+if((matrix(I)*M)[1,1]!=target){print("ERROR");quit;}
+for(i=1;i<=nrows(M);i++){print("GEN:"+string(i));pp=M[i,1];while(pp!=0){print("COEF:"+string(leadcoef(pp)));print("EXP:"+string(leadexp(pp)));pp=pp-lead(pp);}print("END");}
+}
+quit;

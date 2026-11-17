@@ -1,0 +1,46 @@
+{
+  "status": "CLOSED_PURE_SAFE_CONTAINER, NOT_ENTIRELY_PURE",
+  "variables": [
+    "h1_z",
+    "h1_t",
+    "h1_w",
+    "h2_w2",
+    "h2_wt",
+    "h2_t2minuszw",
+    "h2_zt",
+    "h2_z2",
+    "gm3",
+    "gm2",
+    "gm1",
+    "g0",
+    "g1",
+    "g2",
+    "g3"
+  ],
+  "constant_harmonic": "0 by the first moment",
+  "quadratic_cone_source": "boundary_axial_safe_container.json",
+  "quadratic_cone_source_sha256": "e0b007addb547936643d0a7923f83935b341bc808c6cc774e9b740b008ee6703",
+  "quadratic_cone_generators": [
+    "3*h2_t2minuszw*h2_w2*h2_wt/2 + h2_w2**2*h2_zt - h2_wt**3/4",
+    "-9*h2_t2minuszw**2*h2_w2/4 + 3*h2_t2minuszw*h2_wt**2/8 + h2_w2**2*h2_z2 - h2_w2*h2_wt*h2_zt/4",
+    "3*h2_t2minuszw*h2_w2*h2_zt/2 + h2_w2*h2_wt*h2_z2 - h2_wt**2*h2_zt/4",
+    "h2_w2*h2_zt**2 - h2_wt**2*h2_z2",
+    "3*h2_t2minuszw*h2_wt*h2_z2/2 + h2_w2*h2_z2*h2_zt - h2_wt*h2_zt**2/4",
+    "-9*h2_t2minuszw**2*h2_z2/4 + 3*h2_t2minuszw*h2_zt**2/8 + h2_w2*h2_z2**2 - h2_wt*h2_z2*h2_zt/4",
+    "3*h2_t2minuszw*h2_z2*h2_zt/2 + h2_wt*h2_z2**2 - h2_zt**3/4"
+  ],
+  "cubic_contraction_generators": [
+    "-24*g0*h2_zt + 24*g1*h2_t2minuszw + 16*g2*h2_wt + 48*g3*h2_w2 - 8*gm1*h2_z2",
+    "72*g0*h2_t2minuszw + 16*g1*h2_wt + 16*g2*h2_w2 + 16*gm1*h2_zt + 16*gm2*h2_z2",
+    "-24*g0*h2_wt - 8*g1*h2_w2 + 24*gm1*h2_t2minuszw + 16*gm2*h2_zt + 48*gm3*h2_z2"
+  ],
+  "cubic_harmonic": "arbitrary subject to Delta^2(H2*H3)=0",
+  "full_Image_cutoff": "m>coordinate_degree Q",
+  "entire_cone_pure": false,
+  "unrestricted_Image33": "OPEN",
+  "claim": "SIC2B33TOPTWOGATE20261117",
+  "linear_harmonic": "arbitrary; NO linear eigenvector condition",
+  "pure_field_classification": "All pure points are one-sided; every nonzero semisimple axial C0 point is excluded by the written top-two-jet gate and direct pole units. Rank1 nilpotent/B0 import retained classifications.",
+  "unrestricted_mixed_eigenspace_axial_C0_pure_case": "EXCLUDED ALL-ORDER, by the geometric proof; unconditional first8 ordinary ideal still uncomputed",
+  "assurance": "Internal written proper-graph/period proof with exact local algebra controls; no external/formal verification. Direct rational pole units; no new CAS oracle."
+}

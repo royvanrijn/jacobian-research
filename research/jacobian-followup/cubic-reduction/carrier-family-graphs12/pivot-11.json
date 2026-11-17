@@ -1,0 +1,19 @@
+{
+  "basis": [
+    "Poly(1, s, t, domain='ZZ')"
+  ],
+  "graph": "-s*x2*x4 - x1*x9",
+  "high_equations": [
+    "4",
+    "4*s"
+  ],
+  "input_sha256": "fb3bac6ae4e81870739ef0b31afadd840d3e44b7c19e72b2b1fec2071bce1e88",
+  "parameters": [
+    "s",
+    "t"
+  ],
+  "pivot": 11,
+  "raw_cubic_status": "unit-ideal-no-raw-cubic",
+  "seconds": 0.004,
+  "source_sha256": "12b725bb525bf862284e16b480d46a2359e79aa83b7d640a63da02ff86296ce0"
+}

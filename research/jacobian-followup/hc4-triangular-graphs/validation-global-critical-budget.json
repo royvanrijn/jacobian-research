@@ -1,0 +1,88 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYGW0 schema, source hash, dependencies, evidence, narrowing and assurance",
+    "HC4MYGW1 schema, source hash, dependencies, evidence, narrowing and assurance",
+    "HC4MYGW2 schema, source hash, dependencies, evidence, narrowing and assurance",
+    "HC4MYGW3 schema, source hash, dependencies, evidence, narrowing and assurance",
+    "global comparison, full finite model, repeated quadratic boundary and odd-k closure dependencies are explicit",
+    "reciprocal scope edges retire quadratic dependence and retain the full unresolved research frontier",
+    "seventeen new/updated method records have retained evidence and current scope reviews",
+    "WORK-HC4-SCHUR prioritizes the entire global budget and preserves both distinct endpoints",
+    "WORK-HC4-RESIDUAL-AUDIT prioritizes the entire global budget and preserves both distinct endpoints",
+    "receipt-global-critical-budget.json current proof/checker and retained source/dependency byte pins",
+    "receipt-critical-normalization.json current proof/checker and retained source/dependency byte pins",
+    "receipt-newton-critical.json current proof/checker and retained source/dependency byte pins",
+    "receipt-critical-components.json current proof/checker and retained source/dependency byte pins",
+    "receipt-relative-critical.json current proof/checker and retained source/dependency byte pins",
+    "global budget and all-degree closure preserve the invertibility/no-unit and necessary/sufficient distinctions",
+    "new canonical proof and maintained entry-point local links resolve"
+  ],
+  "exact_replay_checks": {
+    "receipt-global-critical-budget.json": 62,
+    "receipt-critical-normalization.json": 43,
+    "receipt-newton-critical.json": 34,
+    "receipt-critical-components.json": 58,
+    "receipt-relative-critical.json": 39
+  },
+  "previous_goal_turn": "Progress: the preceding whole finite-polar normalization theorem was revalidated by its43-check replay before the global value-fibre comparison.",
+  "new_claims": [
+    "HC4MYGW0",
+    "HC4MYGW1",
+    "HC4MYGW2",
+    "HC4MYGW3"
+  ],
+  "written_proof_coverage": [
+    "entire rank-one value-fibre Euler comparison",
+    "etale covering calculation eliminating genus and including every finite-base escape",
+    "exact nonnegative global boundary pole budget in arbitrary degree",
+    "algebraic second-derivative descent in every extension degree",
+    "all quadratic p dependence including split and repeated-boundary cases",
+    "a genuine odd-k polynomial family passing local tests but excluded globally in all degrees"
+  ],
+  "external_mathematical_inputs": [
+    "HCTANG2 for the global rank-one comparison and retained repeated-quadratic boundary results"
+  ],
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/core.md",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "genus_free_global_Euler_and_pole_budget": true,
+  "every_quadratic_p_graph_gradient_invertible_under_unit_Hessian": true,
+  "every_quadratic_p_graph_asserted_no_unit_Hessian": false,
+  "all_degree_odd_k_local_gate_passing_family_closed": true,
+  "global_budget_asserted_sufficient_for_unit_Hessian": false,
+  "remaining_frontier": [
+    "p degree at least three satisfying the exact global Euler/pole budget",
+    "later splitting of repeated initial faces, mixed faces and exceptional leading cancellation",
+    "complicated reciprocal boundary configurations satisfying both local and global budgets",
+    "the prescribed entire abstract plane Keller-fibre/function realization",
+    "q/r-dependent omitted bases, actual base/dual mixing and uncovered embeddings",
+    "unit-ideal plane surjectivity and the distinct singleton-zero properness endpoint"
+  ],
+  "unit_ideal_plane_Keller_endpoint_resolved": false,
+  "singleton_zero_properness_resolved": false,
+  "all_nonlinear_y_R_graphs_closed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "final_checks": {
+    "python_compilation": "PASS",
+    "scoped_git_diff_whitespace": "PASS",
+    "new_proof_and_checker_whitespace": "PASS",
+    "render_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "check_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check_require_partial_review": "FAIL: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+  },
+  "all_degree_global_proof_not_inferred_from_finite_family_controls": true,
+  "no_one_special_rational_fibre_theorem_imported": true,
+  "global_research_goal_remains_active": true
+}

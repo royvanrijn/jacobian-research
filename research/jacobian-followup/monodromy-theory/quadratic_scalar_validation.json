@@ -1,0 +1,216 @@
+{
+  "result": "pass",
+  "previous_goal_turn": "progress: KMFI48--50 established homogeneous rigidity, universal leading filters and constant-scalar quadratic exhaustion",
+  "claims_reviewed": [
+    "OP-KMON",
+    "KMFI1",
+    "KMFI2",
+    "KMFI3",
+    "KMFI4",
+    "KMFI5",
+    "KMFI6",
+    "KMFI7",
+    "KMFI8",
+    "KMFI9",
+    "KMFI10",
+    "KMFI11",
+    "KMFI12",
+    "KMFI13",
+    "KMFI14",
+    "KMFI15",
+    "KMFI16",
+    "KMFI17",
+    "KMFI18",
+    "KMFI19",
+    "KMFI20",
+    "KMFI21",
+    "KMFI22",
+    "KMFI23",
+    "KMFI24",
+    "KMFI25",
+    "KMFI26",
+    "KMFI27",
+    "KMFI28",
+    "KMFI29",
+    "KMFI30",
+    "KMFI31",
+    "KMFI32",
+    "KMFI33",
+    "KMFI34",
+    "KMFI35",
+    "KMFI36",
+    "KMFI37",
+    "KMFI38",
+    "KMFI39",
+    "KMFI40",
+    "KMFI41",
+    "KMFI42",
+    "KMFI43",
+    "KMFI44",
+    "KMFI45",
+    "KMFI46",
+    "KMFI47",
+    "KMFI48",
+    "KMFI49",
+    "KMFI50",
+    "KMFI51",
+    "KMFI52",
+    "KMFI53"
+  ],
+  "claim_schema_checker_hashes_paths_dependencies_and_scope_acknowledgments": "pass",
+  "validation_scope": "Canonical validator entry loops restricted to reviewed entries with full global cross references; unrelated queue differences recorded separately.",
+  "all_registry_ids_unique": true,
+  "monodromy_dependency_closure_acyclic": true,
+  "dependency_closure_claim_count": 89,
+  "full_registry_graph_audit": {
+    "dependencies": "unrelated registry issue: dependencies contains a cycle through EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL",
+    "replaced_by": "pass"
+  },
+  "unrelated_active_queue_difference": {
+    "added": [
+      "OP-GMC3-CUBIC"
+    ],
+    "removed": []
+  },
+  "updated_lesson_schema_paths_and_reviews": "pass",
+  "updated_work_sources_and_reviews": "pass",
+  "python_sources_parse": true,
+  "document_links_checked": 73,
+  "receipts": [
+    {
+      "path": "receipt.json",
+      "checks": 197,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "affine_completion_receipt.json",
+      "checks": 82,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "curve_descent_receipt.json",
+      "checks": 67,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "alternating_realizations_receipt.json",
+      "checks": 43,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "all_alternating_receipt.json",
+      "checks": 94,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "subgroup_reduction_receipt.json",
+      "checks": 694,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "surface_forms_receipt.json",
+      "checks": 78,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "orbit_forms_receipt.json",
+      "checks": 82,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "fiber_incidence_receipt.json",
+      "checks": 38,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "sweep_monodromy_receipt.json",
+      "checks": 52,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "sweep_frontier_receipt.json",
+      "checks": 97,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "signed_alternating_receipt.json",
+      "checks": 157,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "sweep_asymptotics_receipt.json",
+      "checks": 108,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "rational_sweep_receipt.json",
+      "checks": 190,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "tautological_boundary_receipt.json",
+      "checks": 86,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "rational_chart_receipt.json",
+      "checks": 242,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "polynomial_chart_receipt.json",
+      "checks": 131,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "regular_deck_receipt.json",
+      "checks": 42,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "pole_direction_receipt.json",
+      "checks": 59,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "quadratic_scalar_receipt.json",
+      "checks": 154,
+      "source_hashes": "pass"
+    }
+  ],
+  "total_exact_checks": 2693,
+  "primary_source_pins_checked": 18,
+  "diff_whitespace_check": "pass",
+  "completion_audit": {
+    "constant_leading_quadratic_class": "curved affine denominator impossible for every scalar degree; universal positive LDL proof",
+    "diagonal_curved_class": "unique ordinary degree and weighted sector from residue pair; finite ansatz for each proposed kappa",
+    "exact_Bezout_certificates": "21 universal-in-kappa identities at weights0..20, serialized and replayed",
+    "scalar_degree_at_most10": "all primitive quadratic wave pairs reduce to the completed chart for every coefficient choice",
+    "exact_field_action_families": "quadratic heat, quadratic R with linear denominator, and R1/w with quadratic denominator; all parameter bounds retained",
+    "scalar_degree1": "exact full groups A8 A10 and binary SL2(F3) on8",
+    "universal_injective_diagonal_operator_proved": false,
+    "all_weight_bottom_continuant_real_rootedness_proved": false,
+    "remaining_quadratic_cases": "diagonal curved sectors above weight20",
+    "arbitrary_Keller_PSL2_11_actions_decided": false,
+    "absolute_natural_A4_decided": false,
+    "absolute_binary_degree8_decided": false,
+    "full_action_classification_complete": false,
+    "goal_complete": false
+  },
+  "proof_assurance": "Written universal weighted positivity and resonance proofs plus exact finite-degree polynomial Bezout identities. No extrapolation to all weights, formal verification or independent whole-proof review.",
+  "goal_status": "active",
+  "full_navigation": [
+    {
+      "command": "make render-navigation",
+      "result": "blocked",
+      "exit_code": 2,
+      "output_tail": "  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake: *** [Makefile:17: render-navigation] Error 2"
+    },
+    {
+      "command": "make check-navigation",
+      "result": "blocked",
+      "exit_code": 2,
+      "output_tail": "make[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2"
+    }
+  ]
+}

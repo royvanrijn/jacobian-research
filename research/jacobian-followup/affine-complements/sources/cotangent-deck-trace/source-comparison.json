@@ -1,0 +1,10 @@
+{
+  "as_of": "2026-11-16",
+  "primary": "Assi, The plane Jacobian conjecture for rational curves, arXiv1807.03991v1",
+  "url": "https://arxiv.org/html/1807.03991v1",
+  "scope_read": "Primary HTML abstract and main theorem statement; polynomial source functions f,g explicitly required. No proof theorem newly adopted and no new PDF visual audit.",
+  "comparison": "A rational ruling coordinate or rational invariant Darboux pair is not a polynomial mate in the original C[x,y]. The hypothesis cannot be silently transferred to the cotangent field model.",
+  "other_screened": "Cassou-Nogues2001 The effect of rational maps on polynomial maps, primary opening and Theorems1/2 screened; no theorem adopted or claimed to classify all mixed fibres. Retained Blanc log-form comparison remains distinct.",
+  "new_external_theorem_import": false,
+  "independent_review": false
+}

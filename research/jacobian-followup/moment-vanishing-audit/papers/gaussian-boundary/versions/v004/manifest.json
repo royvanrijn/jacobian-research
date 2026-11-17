@@ -1,0 +1,22 @@
+{
+  "manuscript.tex": "8ce7f69816b1eb79e74561adcd66318726cfc37248e5d8b41c321fd3378eaa55",
+  "manuscript.pdf": "083bd7d4e0bc30f3b98ea41d543830862905beb37844fdd749abbc0892206655",
+  "formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+  "polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+  "punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+  "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+  "analytic_core.tex": "a8fb4da61c1f39ea1f9bd941ae1d65702eadc62be23ab305e1d463d2409f4a32",
+  "proof_audit.json": "20afdac3975f26e2571f789d5714a093f4f04542473edba0fc739aab63535841",
+  "paper_goal.json": "0e81e9f619da14f32a169e8c90204603bc73f5b8e24a15565d44b848413483c4",
+  "adversarial_audit.json": "397ebf8f6f0462330e3f96483ee226c6fe1c03d6eb100bd47b1c087292e9569a",
+  "literature_audit.json": "c7cc737c11452dda22245f396ee0b75b7b73f256b44e63ae29d868d26fba12c2",
+  "pdf_quality_check.json": "b66a3071f93236e3f31b8625a6d4d9709a7759fc809745ff01e2c39c43cf70f1",
+  "check_stationary_ball_controls.py": "5d4dd147915ae0748b88d82b7a53e8836620f9aa692f6eebcf32d497bac151d6",
+  "stationary_ball_controls.json": "41fe862668b0af5c3df72ff86d91ff6fd3aebd9e32b522b302a560b23e35b32f",
+  "check_punctured_controls.py": "6f306c21e23d59f408b1b405d34f35cac0bed009c785a0cc6160dd0a5d029f88",
+  "punctured_controls.json": "61fffbb94e24939171eeffb56ee029557a943628c52fdc423ebd61bae91c1c84",
+  "formal_identity_check.json": "43d2fed113cce954afaadb47e6e19cb21aae410c43d5fa92114f29ed38591add",
+  "check_formal_identities.py": "c32b5152757f2bf6925cd8996b274e9633c745e5f72c1159d4d4f9f31d8a977c",
+  "BUILD.txt": "5c4f80b91d125582183436af7e13d65a86e4a57e5f5531817dbfb3db0ae62e9e",
+  "sources/punctured_primary_manifest.json": "7f29d042aa7c85b2ea625cae0ba1bf01a863fcf9b01df1d44c44bb855b62ef5e"
+}

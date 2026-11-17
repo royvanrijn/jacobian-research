@@ -1,0 +1,10 @@
+{
+  "terminal": true,
+  "completed": false,
+  "timed_out": false,
+  "exit_code": 1,
+  "input": "homogeneous_prefix_witness_initial_input.py",
+  "input_sha256": "d9268ff51d563b2c8d23a9e93d89a5a0e522251c20cc0796606ccbc6f0464e38",
+  "certificate_sha256": "e38c1913047deaa5ec0f70f889087c6b368569b0104185a39edaf818846d693d",
+  "failure": "flint.fmpq does not parse decimal strings directly: ValueError invalid string for fmpz, before any certificate assertion. Correct by exact fractions.Fraction conversion; do not change the proposed certificate."
+}

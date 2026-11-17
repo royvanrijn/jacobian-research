@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/ORDINARY_RANK_ONE_GLOBAL125.md",
+  "canonical_proof_sha256": "30c7c6e4fb21e3e15ae2d6e13817281c9c4dc04c4e115526f4251f5b287cfbad",
+  "claims": [
+    "G3ORDLATTICE20261115",
+    "G3PURE125_20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_ordinary_rank_one_lattice.py",
+  "checker_sha256": "572582bffcf5cc86f4ef92924064130c1a2f8c28b164c79f8773592ec9cf1a59",
+  "certificate_sha256": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+  "accepted_receipt_sha256": "5afbf8b57e9787a465456b7226f607df7de43bdd4893041d22de11c93eaf7e0e",
+  "prior_frontier": {
+    "path": "jacobian-followup/moment-vanishing-audit/ordinary125_preupdate_20261115.json",
+    "sha256": "06943b6899fa5c8a41b3b9daffc545de208c1a26ae0d57937c214d832aa3c533"
+  },
+  "retained_inputs": {
+    "verify_ordinary_node_finite_prefixes.py": "f602defac102555fd4bd4f0537b86f8e41f929ab11baf290e63fde819b307023",
+    "verify_euler_seed_bounds.py": "5d3cacf0542ec63f1da1e1c515e031bf7a9ab2b28ab458557126ac07ce4a0e63",
+    "verify_ordinary_normal_seed_module.py": "20cf782b680e450d9f57ad9744b88d06309f3940402c5a6c8072a58a4e39db44",
+    "verify_rank_factors_and_reduction_budgets.py": "86b9154dcefa54ef524b5ded90d0a05f131179bfb8f049e7c601e85831e68756",
+    "ordinary_node_phase_shift_checkpoint.json": "ba163f9bcbc786a7decf6fe00ecd0750f3be184be39233d33b6f21fa15998903",
+    "ordinary_normal_seed_module_source_audit.json": "0528d59f58c09748117afaecb6af65f964749681c29f38216cec338d9b047b31",
+    "rank_factors_and_reduction_budgets_source_audit.json": "7660868c53d6c390732bc452a9c2a5ce48338b408357aab9cc9c72c7c12e5fa8",
+    "cusp_rank_one_lattice_source_audit.json": "5b44f760c29213f33f925be2ce0a9ae72b2e2be7b0ed62c3f513a9c93fbc8811",
+    "cusp_rank_one_lattice_verification.json": "1535c3368e765c7b88a6d7e5978aee5dd1ea7a1f2d34026689cac5e50196a786",
+    "verify_cusp_rank_one_lattice.py": "ab3b3d12d844f1de5777dec73834cbcede4786937fc0a137e120b20f471485a0",
+    "even_time_odd_seeds_source_audit.json": "8c88da14f2d063c69eeeadb614de98f855e5a1fd0743da9d621743888f0d5800",
+    "conic_completed_row_factors_source_audit.json": "59f4d3cd0e2a344bda067ca699603bd9ba65db8ecec0ffd93ae53359375fd4c6"
+  },
+  "current_history_index": "jacobian-followup/moment-vanishing-audit/PREFIX_PROOF_HISTORY_CURRENT.md",
+  "previous_goal_turn_classification": "progress: structured cusp rank-one residue and strict branch filtration gave cusp125 and general129, including constant-D109 and shared-root/zero-D scalar valuations; records and scoped checks completed.",
+  "ordinary_lattice_method": {
+    "full_Gaussian_square_structure_required": true,
+    "phase": "D*G+(u*v+r)^2/2",
+    "full_affine_means_and_cross_coefficients_retained": true,
+    "polynomial_D_normal_module_retained": true,
+    "formal_axes_inverted_then_cleared": true,
+    "exact_F_identity": "F*f=twisted_v(f/u)-D*(G_v*f/u+t^2*partial_v(f/u)) when u|f, and symmetric u identity when only v|f",
+    "source_residue": "-(t*D_prime*r/2)*(u*v+r)",
+    "residue_outer_product": "b*e_unit^T, b=-(t*D_prime*r/2)*(r*unit+uv)",
+    "all_nonunit_seed_columns_rank_at_most_one_mod_D": true,
+    "full_basis_denominator_and_Euler_derivatives_retained": true,
+    "zeroth_minor_factor": "D^(s-1)",
+    "higher_minor_factor": "D^max(0,s-2)",
+    "common_scalar_factor_cancelled": "D^(s-1)",
+    "remaining_higher_scalar_D_factor": "D^(2l-1) times nonnegative axis-clearing factors",
+    "scalar_valuation_at_least": "3l",
+    "D_at_zero_and_shared_axis_roots_allowed": true,
+    "constant_D_source_joint_bound": 4
+  },
+  "class_bounds": {
+    "linear_D": {
+      "nodal": 123,
+      "transverse": 122,
+      "triangle": 114
+    },
+    "constant_D": {
+      "nodal": 101,
+      "transverse": 106,
+      "triangle": 103
+    },
+    "full_ordinary": {
+      "nodal": 123,
+      "transverse": 122,
+      "triangle": 114
+    },
+    "cusp_unchanged": 125,
+    "tangent_unchanged": 120
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 123,
+    "cusp": 125,
+    "transverse": 122,
+    "tangent": 120,
+    "triangle": 114,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "odd_cover_unchanged": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 98,
+    "cusp": 94,
+    "transverse": 98,
+    "tangent": 94,
+    "triangle": 96,
+    "concurrent": 36,
+    "repeated": 98
+  },
+  "global_sufficient_pure_prefix": 125,
+  "odd_sufficient_pure_prefix": 98,
+  "homogeneous_sufficient_pure_prefix": 96,
+  "conic_full_W_linear_gate_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    125
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    98
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global125": false,
+  "current_radical_target": "I125",
+  "binary_search_rounds_max": 7,
+  "exact_auxiliary_evidence": {
+    "universal_strata": 3,
+    "exact_F_monomial_identities": 132,
+    "rank_one_augmented_minors": 1053,
+    "models": 9,
+    "exact_seed_identities": 54,
+    "full_scalar_cofactor_relations": 9
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "TWO_SIDED_CONIC_GLOBAL_140.md": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+    "RANK_FACTORS_AND_REDUCTION_GLOBAL_130.md": "d39725481b3e733c399e60a42663d4311f9fe76f5698fce2842a5782f86762dc",
+    "CONIC108_ODD126_GLOBAL130.md": "8caf3664ebb6149f3c48c49304447df9811c5b46421ece776bb2f77415c58697",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c",
+    "WEIGHTED_ODD_PREFIX108.md": "c9238da9e5b7e2e7242cdf999bd7105a5d131b441b9a373fad420842fc79c878",
+    "CONIC_ROW_FACTORS_96_ODD104.md": "18a67c884339a850cb02093c49988d374e3e209dc2b6e2ca25b132dc96ba11b9",
+    "ODD_CONCURRENT36_PREFIX100.md": "14fa528c9939440372fd2c6dd24a3319a0a3009923867bf272edd0f06281c54c",
+    "EVEN_TIME_SEEDS_ODD98.md": "e45b83608783ed7bb08f40a660a384f750f8b9ca131a2af736f0f751b379a28c",
+    "CUSP_RANK_ONE_LATTICE_GLOBAL129.md": "f797b342cd5f4b210b5b13ce38a656671fbf0961407d1b4ce0b34f83cb5153e3"
+  },
+  "analytic_boundary": "Original translated Gaussian phase, Wick seed, polynomial D normal module, complete bases and old axis clearing retained. Exact twisted F-monomial identity proves rank-one source residue, then the full induced connection includes all basis/denominator derivatives before reducing modulo D. Every scalar coefficient loses the same D^(s-1), with higher valuation>=3l even at D0/shared axis roots. Universal all-order normal-module/seed/minor induction, all coefficient/frame choices and retained analytic exclusions remain independently unreviewed written inputs.",
+  "selected_primary_record_refresh": {
+    "path": "jacobian-followup/moment-vanishing-audit/ordinary125_primary_record_refresh_20261115.json",
+    "sha256": "ba024b266a364c50d9dc636dbe9a0eb0aecf2a3508ebc12389f4f3d026373ad5"
+  },
+  "literature_boundary": "Fresh selected primary abstract records and submission histories for Long2607.18186,Dvorsky2608.07338,Wang-Zhang2610.16157 still listv1. This is not new body-read or exhaustive coverage; the prior selected-body audit and polynomial/spectral boundary remain retained. No new theorem/producer package imported.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal ordinary Gaussian-square/rank-one residue/minor proof yields ordinary123/122/114 and general125, with separate constant-D101/106/103. Exact132 F-monomial operator identities,1053 augmented minors,54 complete original twisted seed identities and nine scalar cofactor relations in nine nondegenerate Gaussian models cover all three ordinary types, constant D,D(0)=0 and shared axis/D/t roots. Universal all-order normal-module/seed/minor induction, full coefficient/frame cover and analytic exclusions remain independently unreviewed written inputs. No independent, external or formal certification.",
+  "remaining": [
+    "Least global[20,125], odd[20,98], homogeneous[14,96]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller global cusp125/node123, odd node/transverse/repeated98 and homogeneous conic96 bounds",
+    "Expanded I125 radical cofactors",
+    "Independent analytic review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

@@ -1,0 +1,1 @@
+The first run used three generic samples for an identically zero pair-ratio polynomial. Four are required to exclude all roots of a nonzero cubic denominator. This gap was corrected and the complete finite pair traversal rerun. The first run is preserved as discovery evidence, not a closure certificate.

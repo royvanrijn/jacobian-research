@@ -1,0 +1,9 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "selection":"Exactly four retained unresolved groups after structural rewrites:13a_3145,13a_3147,13a_3148,13a_3149",
+  "motivation":"Their exponent matrices give cyclic abelianizations of order37,35,37,35. Most earlier small solvable targets have incompatible abelianizations. Compute integral homology of the actual universal abelian covers to derive a metabelian quotient rather than choose larger fields blindly. Nonzero commutator homology can give a finite affine representation with noncommuting generators and hence sharp knot lower4.",
+  "tests":["Exact Schreier homology matrix of the N-sheeted cyclic cover, N=35 or37, with y acting by a full cycle; compute replayable integer Smith factors","If the cover has torsion at a prime not dividing N, use that prime to solve the gauged regular-module cocycle equations with y translation0 and augmentation-zero x translation","Accept only explicit noncommuting affine generator images satisfying all original branched-cover relators after transporting through the structural and earlier Tietze substitutions"],
+  "limits":{"cases":4,"seconds_total":90,"maximum_cyclic_degree":37,"maximum_matrix_columns":76,"prime_selection":"Only prime factors of certified cover homology, or2 if a free part exists, with preference p not dividing N","checkpoint_each_case":true},
+  "acceptance":"Independent lifted-word/Smith replay and direct affine evaluation of original source relators required. A witness proves cover nonabelianity, not group order; named-knot/PD/upper provenance must be separately replayed. Zero abelian-cover homology excludes this metabelian route but does not prove cyclicity. No previously-unresolved or novelty assertion without source review.",
+  "scope":"All abelian covers through these cyclic abelianizations, for this metabelian gate; no decision of arbitrary finite quotients or full MRC."
+}

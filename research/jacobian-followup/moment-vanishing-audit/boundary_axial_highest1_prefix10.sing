@@ -1,0 +1,4 @@
+ring R=0,(g0),dp;
+option(redSB);
+ideal I=5*g0^2 - 11,1,1,-1,-1,-1,1,1;
+ideal G=std(I);print("UNIT_CONTROL");G;print(dim(G));print(vdim(G));quit;

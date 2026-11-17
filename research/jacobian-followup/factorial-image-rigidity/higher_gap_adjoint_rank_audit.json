@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "canonical_proof": "HIGHER_GAP_ADJOINT_RANK.tex",
+  "uniform_higher_gap_adjoint_proved": true,
+  "all_gap_initial_four_orders_all_positive_shapes_proved": true,
+  "all_positive_shape_lower_one_bridge_proved": true,
+  "exact_repeated_root_rank_equivalence_proved": true,
+  "full_Wronskian_reconstruction_proved": true,
+  "gap_three_closed_sector_sufficiency_proved": true,
+  "gap_three_sector_zero_freeness_proved": false,
+  "Hurwitz_shortcut_refuted": true,
+  "higher_gap_all_index_SFC_closed": false,
+  "general_FC_closed": false,
+  "unrestricted_SFC_closed": false,
+  "finite_extrapolation": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "boundary": "All d>=2 adjoints and rank equivalence. Uniform rank/sector exclusion at d>=3 remains open. Complex/negative parameter failures are outside positive Gamma scope."
+}

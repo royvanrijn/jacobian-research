@@ -1,0 +1,401 @@
+{
+  "claims": [
+    "KMFI77",
+    "KMFI78",
+    "KMFI79",
+    "KMFI80"
+  ],
+  "pencil_controls": [
+    {
+      "n": 4,
+      "case": "neither_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_4",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 4,
+      "case": "H_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_4",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 4,
+      "case": "J_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_4",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 4,
+      "case": "both_vanish",
+      "base_degree": 1,
+      "cover_degree": 1,
+      "moving_root_group": "S_3",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 5,
+      "case": "neither_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_5",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 5,
+      "case": "H_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_5",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 5,
+      "case": "J_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_5",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 5,
+      "case": "both_vanish",
+      "base_degree": 1,
+      "cover_degree": 1,
+      "moving_root_group": "S_4",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 6,
+      "case": "neither_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_6",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 6,
+      "case": "H_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_6",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 6,
+      "case": "J_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_6",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 6,
+      "case": "both_vanish",
+      "base_degree": 1,
+      "cover_degree": 1,
+      "moving_root_group": "S_5",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 7,
+      "case": "neither_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_7",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 7,
+      "case": "H_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_7",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 7,
+      "case": "J_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_7",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 7,
+      "case": "both_vanish",
+      "base_degree": 1,
+      "cover_degree": 1,
+      "moving_root_group": "S_6",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 8,
+      "case": "neither_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_8",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 8,
+      "case": "H_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_8",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 8,
+      "case": "J_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_8",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 8,
+      "case": "both_vanish",
+      "base_degree": 1,
+      "cover_degree": 1,
+      "moving_root_group": "S_7",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 9,
+      "case": "neither_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_9",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 9,
+      "case": "H_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_9",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 9,
+      "case": "J_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_9",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 9,
+      "case": "both_vanish",
+      "base_degree": 1,
+      "cover_degree": 1,
+      "moving_root_group": "S_8",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 10,
+      "case": "neither_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_10",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 10,
+      "case": "H_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_10",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 10,
+      "case": "J_vanishes",
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_10",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 10,
+      "case": "both_vanish",
+      "base_degree": 1,
+      "cover_degree": 1,
+      "moving_root_group": "S_9",
+      "degree_certificate": "exact fiber polynomial gcd"
+    },
+    {
+      "n": 5,
+      "case": "q_dependent_with_offset_outside_weight_gate",
+      "graphs": {
+        "2": "B**3 + B*Q"
+      },
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_5",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 7,
+      "case": "q_dependent_with_offset_outside_weight_gate",
+      "graphs": {
+        "2": "B**3 + B*Q"
+      },
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_7",
+      "degree_certificate": "prime degree and three independent sections"
+    },
+    {
+      "n": 11,
+      "case": "q_dependent_with_offset_outside_weight_gate",
+      "graphs": {
+        "2": "B**3 + B*Q"
+      },
+      "base_degree": 0,
+      "cover_degree": 1,
+      "moving_root_group": "S_11",
+      "degree_certificate": "prime degree and three independent sections"
+    }
+  ],
+  "composite_imprimitive_control": {
+    "degree": 4,
+    "plane_cover_degree": 2,
+    "plane_image_degree": 2,
+    "geometric_root_group": "D4 of order8",
+    "rational_point_group_order": 8,
+    "coefficient_scope": "rational in b; tested polynomial q,r slice b=-1"
+  },
+  "relative_monic_factor_controls": [
+    {
+      "root_degree": 2,
+      "ambient_n": 5,
+      "marking_order": 3,
+      "relative_degree": 6,
+      "curve_control": "T**2 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 3,
+      "ambient_n": 6,
+      "marking_order": 4,
+      "relative_degree": 12,
+      "curve_control": "T**3 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 4,
+      "ambient_n": 7,
+      "marking_order": 5,
+      "relative_degree": 20,
+      "curve_control": "T**4 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 5,
+      "ambient_n": 8,
+      "marking_order": 6,
+      "relative_degree": 30,
+      "curve_control": "T**5 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 6,
+      "ambient_n": 9,
+      "marking_order": 7,
+      "relative_degree": 42,
+      "curve_control": "T**6 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 7,
+      "ambient_n": 10,
+      "marking_order": 8,
+      "relative_degree": 56,
+      "curve_control": "T**7 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 8,
+      "ambient_n": 11,
+      "marking_order": 9,
+      "relative_degree": 72,
+      "curve_control": "T**8 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 9,
+      "ambient_n": 12,
+      "marking_order": 10,
+      "relative_degree": 90,
+      "curve_control": "T**9 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 10,
+      "ambient_n": 13,
+      "marking_order": 11,
+      "relative_degree": 110,
+      "curve_control": "T**10 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    },
+    {
+      "root_degree": 11,
+      "ambient_n": 14,
+      "marking_order": 12,
+      "relative_degree": 132,
+      "curve_control": "T**11 + T",
+      "relative_group": "C_m wr G_f",
+      "field": "k(t,a,r), rational3",
+      "actual_source": "nonconstant unit p; not stably affine space"
+    }
+  ],
+  "universal_statements": {
+    "primitive_moving_root_group_of_affine_linear_top_coefficient_graph": "always symmetric",
+    "irreducible_prime_degree11_affine_linear_graph_PSL2_11_root_group": "excluded within this graph class",
+    "no_offset_root_classification": "Sn, or fixed b plus S_(n-1) when H(b)=J(b)=0",
+    "base_factor_moving_marked_component": "rational3, but a nonconstant cofactor unit forbids stable affine space",
+    "monic_nonlinear_factor_actual_component": "nonconstant p unit forbids stable affine space",
+    "polynomial_unimodular_root_frame_removes_monic_obstruction": false,
+    "constant_nonzero_leading_coefficient_actual_affine_component": "only degree1 Keller maps can occur",
+    "generic_imprimitive_pencil_full_wreath_equality_asserted": false,
+    "relative_Cm_wr_Gf_group_claimed_as_absolute_Keller_occurrence": false
+  },
+  "probe_audit": {
+    "dense_symbolic_n11_fiber_gcd": "interrupted explicitly after a confirmed-live session; no result or passed receipt inferred",
+    "input_n": 11,
+    "input_graphs": {
+      "2": "Q*(B+1)+R*(B**2-1)+B**3+2",
+      "3": "Q*(B-2)+R*B+1-B"
+    },
+    "method": "exact fiber gcd over Q(B,T), before adding the prime-degree shortcut",
+    "replacement": "exact prime-degree and independent-section certificate, proved universally"
+  },
+  "exceptional_PSL2_11_degree11_absolute_occurrence_decided": false,
+  "natural_PSL2_11_degree12_absolute_occurrence": "excluded by KMFI67",
+  "full_action_classification_complete": false
+}

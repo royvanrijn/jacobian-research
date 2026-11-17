@@ -1,0 +1,85 @@
+{
+  "claim": "QGR1",
+  "status": "PASS",
+  "ambient_Ore_coordinate_identities": true,
+  "Ore_product_order_control": 5,
+  "primitive_degree_controls": [
+    {
+      "input_primitive_degree": 1,
+      "normalized_primitive_degree": 1,
+      "correction_degree": 2
+    },
+    {
+      "input_primitive_degree": 1,
+      "normalized_primitive_degree": 1,
+      "correction_degree": 2
+    },
+    {
+      "input_primitive_degree": 2,
+      "normalized_primitive_degree": 2,
+      "correction_degree": 3
+    },
+    {
+      "input_primitive_degree": 18,
+      "normalized_primitive_degree": 16,
+      "correction_degree": 17
+    },
+    {
+      "input_primitive_degree": 24,
+      "normalized_primitive_degree": 10,
+      "correction_degree": 11
+    },
+    {
+      "input_primitive_degree": 30,
+      "normalized_primitive_degree": 7,
+      "correction_degree": 8
+    }
+  ],
+  "projection_kernel_samples": 8,
+  "constructive_rejection_controls": [
+    {
+      "F": "1",
+      "obstruction": "1"
+    },
+    {
+      "F": "x",
+      "obstruction": "x"
+    },
+    {
+      "F": "y",
+      "obstruction": "y"
+    },
+    {
+      "F": "x*y",
+      "obstruction": "-1/2"
+    },
+    {
+      "F": "x**2*y",
+      "obstruction": "-x"
+    },
+    {
+      "F": "x*y*(x*y + 1)",
+      "obstruction": "-1/6"
+    },
+    {
+      "F": "x*y**3*(x*y + 1)",
+      "obstruction": "-3*y**2/14"
+    }
+  ],
+  "bounded_infinite_scalar_series_control": true,
+  "R_preserving_unbounded_formal_flow_control_mod_h": 9,
+  "scalar_shift_primitive_linear_polynomial_and_bounded_mate": true,
+  "coverage_boundary": "Exact finite symbolic controls only. Exhaustion of all center-preserving finite endomorphisms, the full fixed-R stabilizer, sharp primitive bounds and the admission equivalence for every bounded centralizer change use written proofs. Irreducibility gives a written all-degree obstruction to bounded target normalization of r+h^2; a bounded source translation removes the scalar shift in a tuple. No bounded reachability between arbitrary lifts, general two-sided R-fixing or bounded Long lift is established.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "BOUNDED_GAUGE_RIGIDITY.md": "fdf976aef35bf69338c0e85e5e9177d5439032b0a37631a725850781d6c1a756",
+    "check_bounded_gauge.py": "ab9e09f87452e3bf210f87b8a91732729f79a72549de10caa871607b183860ca"
+  },
+  "retained_input": {
+    "path": "jacobian-followup/dixmier-formal-lifting/check_relative_period.py",
+    "sha256": "be4f687f4f5ac8f4ff990f27f54a0f9bb317f241f22964e02f2833ab5a1a641a",
+    "scope": "Imported exact relative-cohomology normal form; this is not an independent replay."
+  }
+}

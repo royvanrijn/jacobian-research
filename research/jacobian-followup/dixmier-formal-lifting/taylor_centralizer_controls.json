@@ -1,0 +1,131 @@
+{
+  "claim": "QTB1",
+  "status": "PASS",
+  "Taylor_control": {
+    "point": [
+      1,
+      2
+    ],
+    "total_order": 3,
+    "product_rule": "PASS",
+    "derivative_intertwining": "PASS",
+    "direct_translated_series": "PASS"
+  },
+  "birational_denominator_control": {
+    "fraction": "x/(x^2+y)",
+    "derivative_certificate": "(partial_x-2*x*partial_y)b=1/(x^2+y)",
+    "coprime_but_common_zero": [
+      0,
+      0
+    ],
+    "identity": "PASS"
+  },
+  "singular_divisor_control": {
+    "divisor": "y^2-x^2-x^3",
+    "total_origin_order": 2,
+    "two_distinct_formal_prime_factors": "written proof",
+    "factorization_prefix_through_x10": "PASS",
+    "global_gcd_with_y_derivative": 1
+  },
+  "quartic_Galois_factor_control": {
+    "field_polynomial": "u*z**2 + v + z**4",
+    "quadratic_subfield": "u*w + v + w**2",
+    "quadratic_discriminant": "u^2-4*v",
+    "quadratic_nontrivial": "simple v-divisor",
+    "quartic_non_Galois": "written other-root nonsquare argument"
+  },
+  "normal_stabilizer_controls": {
+    "D4": {
+      "group_order": 8,
+      "stabilizer_order": 2,
+      "normal_closure_order": 4,
+      "forbidden_Galois_factor_degree": 2
+    },
+    "S3": {
+      "group_order": 6,
+      "stabilizer_order": 2,
+      "normal_closure_order": 6,
+      "passes_normal_generation": true
+    },
+    "C3_regular": {
+      "normal_stabilizer_closure_order": 1,
+      "forbidden_Galois_factor_degree": 3
+    }
+  },
+  "actual_momentum_dependent_radical_control": {
+    "W": "x+h^2*p^2",
+    "F1": "W+h^2*W^2",
+    "b": "1+2*h^2*W",
+    "b_square": "1+4*h^2*F1",
+    "actual_Weyl_identity": "PASS",
+    "classical_graph": "identity positions",
+    "Long_pair": false
+  },
+  "declared_cyclic_and_root_of_unity_controls": [
+    {
+      "k": 2,
+      "exact_actual_radical_identity": "PASS",
+      "classical_first_image": "x",
+      "Long_pair": false
+    },
+    {
+      "k": 3,
+      "exact_actual_radical_identity": "PASS",
+      "classical_first_image": "x",
+      "Long_pair": false
+    },
+    {
+      "k": 5,
+      "exact_actual_radical_identity": "PASS",
+      "classical_first_image": "x",
+      "Long_pair": false
+    }
+  ],
+  "infinite_localization_declared_samples": [
+    1,
+    2,
+    5
+  ],
+  "external_dependencies": [
+    {
+      "source": "https://arxiv.org/html/math/0401263",
+      "used": "Apply Corollary1.6 to each P[b] to obtain algebraicity without finite generation of all B."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/00MB",
+      "used": "Flatness of Noetherian local completion in the coordinate Taylor map."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/0AG0",
+      "used": "Factoriality of the regular local formal power series ring."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/09E3",
+      "used": "Galois transitivity and ramification indices of primes over a DVR."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/0BMB",
+      "used": "Purity of the branch locus for the normalization of each specified finite field."
+    },
+    {
+      "source": "https://www.jmilne.org/math/CourseNotes/LECc.pdf#page=27",
+      "used": "Characteristic-zero finite etale affine-space covers are constant."
+    }
+  ],
+  "hashes": {
+    "TAYLOR_BRANCHES_AND_CENTRALIZER_RIGIDITY.md": "90eb4bce42aa85f86b8574a192d3a89ca507972f23c6240cb7ca713c0993c752",
+    "check_taylor_centralizer.py": "2788c0c29b2d7bae24ce24ec6135368bb561d182dd631e98efde4afb5da8820d",
+    "ETALE_CENTRALIZERS_AND_GALOIS_COMPLETION.md": "350e3343c4e6a14e19c527c891af9c43fa640269c11aad5c1805f03d456274c9",
+    "etale_centralizer_controls.json": "23bef8e7a2bb86d868f11147ecbe733fdd6a025a81cce67ba66772d0e0140daf",
+    "FINITE_CENTRALIZERS_AND_COMPLETION.md": "c49883cefa77ea977ff347c7eab25172d6d1543dc9d5e423c2db70d047f5e217",
+    "finite_centralizer_controls.json": "b9e7802e8bfdb623edcfcb3539a2848499236d9fcbb973e33e1f492ef08d6da6",
+    "LONG_SPECTRAL_CURVATURE_AND_SCALARIZATION.md": "09ea45c50f3baceb46e25218cef940e7c79c77eb933e56b6dc2a81695f123e21",
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "3293e179bc90ec35d3c16fce45bc64aadd261b38987a8b40159bc01ed788e786",
+    "IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md": "d6438f6730204ef55411826b9583b0194829534f4e8db25b68101a3014476bb4",
+    "BOUNDED_REALIZATION.md": "85860fda7138b1e38a41341f2f9e830a516793f0c66e3c4778f9e1adf151b8b9"
+  },
+  "coverage_boundary": "Declared Taylor, denominator, singular factor, quartic subfield, finite permutation, actual Weyl radical and localization controls only. Universal Taylor injectivity at arbitrary residue fields, flat regular-sequence arguments, localization without finite generation, all finite-intermediate unramified valuations, Galois-factor rigidity, normal-stabilizer generation, radical descent under constant extension and finite full completion use written proofs and explicit classical geometric inputs. The cyclic samples do not prove all k and the localization samples do not prove infinite nonfinite generation. No new Long field or radical certificate, full finite lift, carrier or all-representative nonlifting is supplied.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

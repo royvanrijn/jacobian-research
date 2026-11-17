@@ -1,0 +1,909 @@
+{
+  "status": "PASS independent projective13 all-field cover test",
+  "source_actions": 32,
+  "distinct_source_covers": 16,
+  "knots": 8,
+  "group_checks": {
+    "13a_129": 5616,
+    "13a_135": 5616,
+    "13a_136": 5616,
+    "13a_137": 5616,
+    "13a_194": 5616,
+    "13a_196": 5616,
+    "13a_197": 5616,
+    "13a_198": 5616
+  },
+  "results": [
+    {
+      "name": "13a_129",
+      "representation_index": 1,
+      "action": "point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        882878
+      ],
+      "base_D": 391,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 17,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 23,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 1129,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_129",
+      "representation_index": 1,
+      "action": "dual_point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        882878
+      ],
+      "base_D": 391,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 17,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 23,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 1129,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_135",
+      "representation_index": 1,
+      "action": "point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        3128602
+      ],
+      "base_D": 401,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 47,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 83,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 401,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_135",
+      "representation_index": 1,
+      "action": "dual_point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        3128602
+      ],
+      "base_D": 401,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 47,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 83,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 401,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_136",
+      "representation_index": 1,
+      "action": "point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        882878
+      ],
+      "base_D": 391,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 17,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 23,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 1129,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_136",
+      "representation_index": 1,
+      "action": "dual_point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        882878
+      ],
+      "base_D": 391,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 17,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 23,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 1129,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_137",
+      "representation_index": 1,
+      "action": "point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        3128602
+      ],
+      "base_D": 401,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 47,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 83,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 401,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_137",
+      "representation_index": 1,
+      "action": "dual_point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        3128602
+      ],
+      "base_D": 401,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 47,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 83,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 401,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_194",
+      "representation_index": 1,
+      "action": "point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        882878
+      ],
+      "base_D": 391,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 17,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 23,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 1129,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_194",
+      "representation_index": 1,
+      "action": "dual_point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        882878
+      ],
+      "base_D": 391,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 17,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 23,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 1129,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_196",
+      "representation_index": 1,
+      "action": "point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        3128602
+      ],
+      "base_D": 401,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 47,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 83,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 401,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_196",
+      "representation_index": 1,
+      "action": "dual_point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        3128602
+      ],
+      "base_D": 401,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 47,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 83,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 401,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_197",
+      "representation_index": 1,
+      "action": "point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        882878
+      ],
+      "base_D": 391,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 17,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 23,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 1129,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_197",
+      "representation_index": 1,
+      "action": "dual_point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        882878
+      ],
+      "base_D": 391,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 17,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 23,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 1129,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_198",
+      "representation_index": 1,
+      "action": "point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        3128602
+      ],
+      "base_D": 401,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 47,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 83,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 401,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    },
+    {
+      "name": "13a_198",
+      "representation_index": 1,
+      "action": "dual_point",
+      "H1_free_rank": 2,
+      "H1_torsion_factors": [
+        2,
+        3128602
+      ],
+      "base_D": 401,
+      "prime_checks": [
+        {
+          "prime": 2,
+          "b1_G": 0,
+          "b1_H": 4,
+          "gain": 4,
+          "augmentation_Z1": 16
+        },
+        {
+          "prime": 47,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 83,
+          "b1_G": 0,
+          "b1_H": 3,
+          "gain": 3,
+          "augmentation_Z1": 15
+        },
+        {
+          "prime": 401,
+          "b1_G": 1,
+          "b1_H": 3,
+          "gain": 2,
+          "augmentation_Z1": 14
+        },
+        {
+          "prime": 3,
+          "b1_G": 0,
+          "b1_H": 2,
+          "gain": 2,
+          "augmentation_Z1": 14
+        }
+      ],
+      "maximum_Betti_gain_except13": 4,
+      "augmentation_Z1_F13": 14,
+      "maximum_augmentation_Z1_all_fields": 16
+    }
+  ],
+  "controls": [
+    {
+      "action": "point",
+      "H1_free_rank": 6,
+      "H1_torsion_factors": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "gain_F3": 15,
+      "Z1_F3": 27,
+      "Z1_F13": 18
+    },
+    {
+      "action": "dual_point",
+      "H1_free_rank": 6,
+      "H1_torsion_factors": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "gain_F3": 15,
+      "Z1_F3": 27,
+      "Z1_F13": 18
+    }
+  ],
+  "rejected_corruptions": [
+    "altered_Smith_step",
+    "false_free_rank",
+    "false_characteristic13_kernel",
+    "false_alias_intertwiner"
+  ],
+  "maximum_Betti_gain_except13": 4,
+  "maximum_augmentation_Z1_all_fields": 16,
+  "required_augmentation_Z1": 25,
+  "retained_quotient_kernels_per_source_among_these_maps": 1,
+  "new_target_closures": 0,
+  "positive_degree_characteristic_control": {
+    "degree": 13,
+    "characteristic": 13,
+    "gain": 23,
+    "augmentation_Z1": 36,
+    "split_prediction": 35,
+    "rejected_corruptions": 2
+  },
+  "input_sha256": {
+    "projective13_cover_plan.json": "9f72cc186d8a98578e496615804f21f000a1fd77f3fddf6a4883180cdc247578",
+    "projective13_cover_results.json": "bd8c6261109e409d36f92221f5d63d1cbda618836924434014c667c31e54899c",
+    "verify_projective13_covers.py": "a4a1b9b30df34ffcb825d4b1055863e219e5fa3fb107d3289a6715c41a500ff1",
+    "verify_core_subgroup_homology.py": "a7b4334409e747425af8ca87270b4b8a4efc07e75334e5fd63f76dc19922cf38",
+    "verify_integer_lifts.py": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309",
+    "verify_ternary_transvection_control.py": "f289f0b97ff61037ceeafc2022dd415c40e9f86e4554f365c0241a57b9eaf67b",
+    "ternary_cover_module_results.json": "aac00533b2f3fb30a75afcd0f73945d2aa456eaa76d9999e551559cf39968f27",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "characteristic_degree_control_verification.json": "bca16f18617537237ff917acb36d5d478ff9415b22666651445be62880870952"
+  },
+  "scope": "Only exact32 point/dual actions from16 retained representation orbits on8 original knots;16 inequivalent labelled Gsets, one faithful SL3 quotient kernel per knot among these maps. Smith/UCT and split augmentation give all fields except13; direct module kernel covers13. Does not exhaust all index13 subgroups, SL3 maps/modules, fields for other modules or actual cover ranks. Uniform arguments remain written, unformalized and externally unreviewed."
+}

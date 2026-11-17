@@ -1,0 +1,6 @@
+{
+  "completed": false,
+  "checker_sha256": "2557da66c2c8a5afee8160ac985a208a5297662036290b6a07c1b70036b28c91",
+  "reason": "The new positive-tilt sharpness control compared an exponential-series coefficient with a raw moment. The coefficient is1/2;the raw moment is(d+1)!/2. The all-index written statement is about raw moments and is unchanged.",
+  "fix": "Multiply the coefficient by its exponential factorial in the test. No completed packet was emitted."
+}

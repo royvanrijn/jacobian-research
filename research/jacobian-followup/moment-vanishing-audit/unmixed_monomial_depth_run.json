@@ -1,0 +1,13 @@
+{
+  "scope": "Minimal resolution of the leading monomial ideal of the retained isolated-primary intersection; only a proved depth bound may transfer by Groebner degeneration.",
+  "wall_limit_seconds": 20,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "completed": true,
+  "input_sha256": "0d4b1508202fdc1abea613411e3ecaeb155863d1f02f470f193bbe764e060222",
+  "log_sha256": "bbb8357b1ed06f397516ebf8849e991983b56ceb107c534d7d78cd8393ad173c",
+  "elapsed_seconds": 0.6666585039929487,
+  "stdout_tail": "MONOMIAL_DEPTH_START\nRESOLUTION_LENGTH\n6\nBETTI\n     1     0     0     0     0     0     0\n     0     0     0     0     0     0     0\n     0     1     0     0     0     0     0\n     0     0     0     0     0     0     0\n     0     0     0     0     0     0     0\n     0     1     0     0     0     0     0\n     0     0     1     0     0     0     0\n     0     1     2     1     0     0     0\n     0     2     3     1     0     0     0\n     0     2     3     1     0     0     0\n     0     2     4     2     0     0     0\n     0     5    10     7     1     0     0\n     0    26    66    64    23     2     0\n     0    32   148   214   134    34     2\n     0    24    85   111    63    13     0\n     0    11    45    72    56    21     3\n     0    12    49    77    57    19     2\n     0    10    42    68    52    18     2\n     0    10    39    57    37     9     0\n     0     7    27    39    25     6     0\n     0     6    23    33    21     5     0\n     0     5    21    34    26     9     1\n     0     6    23    33    21     5     0\n     0     4    17    28    22     8     1\n     0     5    18    24    14     3     0\n     0     2     8    12     8     2     0\n     0     2     8    12     8     2     0\n     0     2     8    12     8     2     0\n     0     2     8    12     8     2     0\n     0     2     8    12     8     2     0\n     0     2     8    12     8     2     0\n     0     2     8    12     8     2     0\n     0     2     7     9     5     1     0\n     0     1     4     6     4     1     0\n     0     1     3     3     1     0     0\nEND\n"
+}

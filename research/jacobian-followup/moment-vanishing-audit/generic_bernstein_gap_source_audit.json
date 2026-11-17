@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-16",
+  "new_claims": [
+    "GVCFORMALORDERPOLY20261116",
+    "GVCFORMALALLLINEAR20261116"
+  ],
+  "new_lesson": "METHOD-GVC-GENERIC-BERNSTEIN-ACTUAL-GAP-CLOSURE-20261116",
+  "retained_lessons_updated": [
+    "METHOD-GVC-OPERATOR-TAIL-SAFETY-20261115",
+    "METHOD-GVC-FORMAL-BINARY-ENVELOPES-AND-ORDINARY-SEEDS-20261116",
+    "METHOD-GVC-ALGEBRAIC-FORMAL-DIAGONALS-AND-UNIT-INVARIANCE-20261116",
+    "METHOD-GVC-EXACT-JOINT-SOURCE-ALGEBRAICITY-BOUNDARY-20261116",
+    "METHOD-GVC-FORMAL-SHIFTS-AND-APOLAR-NILPOTENCE-GAP-20261116",
+    "METHOD-GVC-PAIRED-RECOMPOSITION-AND-EXACT-HEIGHT-SLOPES-20261116",
+    "METHOD-GVC-HEIGHT-CONVOLUTION-AND-FALSE-FINITE-GAPS-20261116",
+    "METHOD-GVC-PHASE-POWER-ANNIHILATOR-QUOTIENTS-20261116",
+    "METHOD-GVC-PRIME-INDEX-DRIFT-AND-ARITHMETIC-MODELS-20261116",
+    "METHOD-GVC-OPTIMAL-PRIME-DIVISIBILITY-AND-CARRY-INTERACTION-20261116",
+    "METHOD-GVC-MONOMIAL-APOLAR-NEWTON-CUTOFFS-20261116",
+    "METHOD-MV-SCALAR-FORMAL-TIME-EQUATIONS-AND-ACTUAL-GAPS-20261116",
+    "METHOD-GVC-LINEAR-SUSPENSION-AND-ACTUAL-NESTING-20261116",
+    "METHOD-GVC-UNMODIFIED-REVERSED-SOURCE-FINITENESS-FAILURE-20261116",
+    "METHOD-GVC-FIXED-IDEAL-TOPOLOGY-ADOPTION-20261116"
+  ],
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/GENERIC_BERNSTEIN_EQUATIONS_AND_FORMAL_GAP_CLOSURE.md",
+  "canonical_proof_sha256": "9f3f8f003dae69abe255bcddf03606c00bcc5a4245028163a8c1750adfca4e2f",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_generic_bernstein_gap.py",
+  "checker_sha256": "24a49cfb3f70b698104ea7c2cea490479348fc96b02822cc5389c9ad06343cc3",
+  "receipt": "jacobian-followup/moment-vanishing-audit/generic_bernstein_gap_verification.json",
+  "receipt_sha256": "beefbb7f94b71f826488dd0868dd521dc8fb7e22d9571107f4be9c6ed1836bb5",
+  "preupdate": "jacobian-followup/moment-vanishing-audit/generic_bernstein_gap_preupdate_20261116.json",
+  "primary_scope_audit": [
+    {
+      "title": "Mebkhout and Narvaez-Macarro,La theorie du polynome de Bernstein-Sato pour les algebres de Tate et de Dwork-Monsky-Washnitzer",
+      "publication": "Annales scientifiques ENS(4)24(1991),227-256",
+      "doi": "10.24033/asens.1627",
+      "url": "https://www.numdam.org/item/ASENS_1991_4_24_2_227_0/",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/mebkhout_narvaez_1991_generic_twist_20261116.pdf",
+      "sha256": "fdaeadfc6b9466f10d07f347681989b323cb3f0a6f6e96d0d19cc1a74a9f31e2",
+      "bytes": 3435904,
+      "physical_pages": 31,
+      "visually_read_pages": [
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        16
+      ],
+      "read": "Hypotheses1.1.2,dimension and finite length1.2.1-1.2.7;generic parameter2.1.1,2.1.4,2.2.3;local completion2.2.5;Theorem3.1.1 and its full proof;formal case4.2 including faithful-flat differential-operator descent. Text additionally read physical3,4,8,13,14,15.",
+      "adoption": "A holonomic/minimal-dimension module over a formal power series ring over ANY characteristic-zero field satisfies the generalized Bernstein functional equation for ANY formal coefficient function. Its generic-power minimal lattice and filtered generic parameter theorem justify holonomicity of the cyclic lambda^s section after a semilinear integer exponent translation.",
+      "hypotheses_checked": [
+        "R=K[[xi,eta]] meets1.1.2",
+        "D(s) is used as in the primary source,not mistakenly identified with differential operators of R(s)",
+        "B=R[s]_(xi,eta) is regular local with residueK(s),coordinate derivations and completionK(s)[[xi,eta]]",
+        "Good order filtration bounds local cyclic characteristic dimension;Bernstein inequality and local coefficient completion preserve holonomicity",
+        "Second Bernstein parameter has finite polynomial degree before descent;PBW and faithful flatness descend the membership",
+        "Finite coefficient/localization torsion is cleared uniformly;present large positive lambda^k kills it with no index shift",
+        "Specialization z=-tau_k-1 creates an actual simple pole;the right side is in original E and leading coefficient units are invertible on polynomials"
+      ],
+      "excluded_imports": [
+        "analytic-only smooth-divisor specializability",
+        "full raw-source holonomicity",
+        "completed-marker eventuality",
+        "natural product-Rees finite generation"
+      ]
+    }
+  ],
+  "proof_audit": {
+    "actual_image_not_solution_enlargement": true,
+    "coefficient_completion_descended_before_specialization": true,
+    "fixed_symbol_actual_powers": true,
+    "uniform_integer_specialization": true,
+    "no_shift_of_power_index": true,
+    "no_purity_needed_for_polynomial_constraint": true,
+    "integer_root_counting_argument_written": true,
+    "source_ODE_required": false,
+    "product_Rees_finite_generation_required": false,
+    "full_field_gap_proved": true,
+    "all_ring_formal_family_extension": false,
+    "numerical_C_computed": false,
+    "general_producer_implemented": false
+  },
+  "exact_controls": {
+    "weyl": 9,
+    "mixed_cubic_conjugations": 3,
+    "unary_first_survival": 16,
+    "negative_time_poles": 3,
+    "nonmonotone_square_controls": 6
+  },
+  "protected_whole_records": 133,
+  "existing_records_preserved_except_owned_OPs": true,
+  "old_work_tail_changed_only_to_record_owned_formal_OP_closure": true,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "broader_goal": "active;both complete exceptional MZ questions and other general obligations remain open;review/outreach deferred"
+}

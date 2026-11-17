@@ -1,0 +1,19 @@
+{
+  "proof": "UNIFORM_PADE_PARABOLA_SFC.tex",
+  "universal_scope": "ALL integer a>=0, terminal n>=1, Gamma beta>0: two consecutive moments of nonzero X^a(A+B*X) never both vanish",
+  "generalized_coprimality": "R_N(l+a,z) and R_(N-1)(l,z) coprime for all N>=2, real l>-1 and integer a>=1",
+  "inside_parabola": "For every real M>-1, every zero of R_N(M,z) has y^2<4N(x+N)",
+  "outside_parabola": "The necessary degree-(a-1) continuant is nonzero in the same parabola, by a proved invariant continued-fraction inequality",
+  "nonadjacent_gap_identities_only": true,
+  "finite_scan_extrapolation": false,
+  "vertical_bound_required": false,
+  "independence": "No contour, MR density, finite-prefix squarefreeness, parity, irreducibility or prime-gap input",
+  "source_comparison": "Elementary parabola principle compared with Saff-Varga1976 Theorem1.1; fully reproved here. Only that displayed theorem inspected, no whole-paper or priority audit.",
+  "arbitrary_monomial_gaps_closed": false,
+  "unrestricted_SFC_closed": false,
+  "general_FC_closed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false
+}

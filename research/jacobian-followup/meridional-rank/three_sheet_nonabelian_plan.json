@@ -1,0 +1,10 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "selection":"Every26 onto S3 transposition colouring in the complete frozen293-name symmetric panel, no replacement",
+  "motivation":"The simple3-branched-cover bound is mr>=2+rank(pi1 Y3). A single nonabelian finite quotient of Y3 would give rank>=2 and sharp4, despite cyclic field homology. This is a genuinely nonlinear rank gate beyond the completed scalar-homology tests.",
+  "procedure":"Build the branched graph presentation directly: fixed-sheet meridian loops are killed, the two exchanged-sheet edges are inverse, and two edges of a spanning tree are gauged to1. Lift every source relator from all3 starting sheets. Apply only explicit one-occurrence generator Tietze eliminations, retaining every substitution. If at most1 generator remains, record exact cyclic group. Otherwise test the prescribed small finite groups, retaining an explicit original-generator assignment for any noncommuting image.",
+  "targets":["S3","A4","D10","D14","A5"],
+  "limits":{"seconds_total":90,"seconds_per_target":10,"S3_max_generators":6,"A4_D10_D14_max_generators":4,"A5_max_generators":3,"checkpoint_each_cover":true},
+  "acceptance":"A hit requires independent graph-word reconstruction and evaluation, original PD/four-seed certificate replay, explicit source identity and prior-known-family audit before a previously-unresolved claim. A cyclic conclusion requires replayed eliminations; absence of a small quotient gives no cyclicity claim.",
+  "scope":"Only these26 covers; no arbitrary degree3 monodromy, actual knot bridge upper3 or universal MRC assertion."
+}

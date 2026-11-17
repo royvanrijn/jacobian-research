@@ -1,0 +1,20 @@
+{
+  "date":"2026-11-17",
+  "frozen_before_execution":true,
+  "purpose":"Prove additivity of the maximal simple-branched-cover ordinary-rank lower bound, derive connected-sum MRC cases from the retained families, and exhibit a rigorous nonuniversality boundary at T(4,7).",
+  "uniform_theorem":"For palettes S_i containing the common moving pair{0,1}, union of size R and |S_i|=r_i, the simple R-cover of the connected sum is the connected sum of the Y_i and beta copies of S1xS2, where beta=sum(r_i-2)-(R-2). Knot normal generation forces every restricted monodromy to have exactly one nontrivial orbit, so this describes every simple cover of a connected sum. Grushko rank additivity then gives C(K#L)=C(K)+C(L)-1 for C(K)=max(r-1+rank pi1Y_phi).",
+  "boundary":"C<=mr, and C(T(4,7))=3 while mr=bridge4. No assertion that this additive invariant solves full MRC, or that meridional rank is additive for all knots. Prior conditional Coxeter additivity credited. General free-product rank is an explicit classical input, not inferred from finite controls.",
+  "controls":[
+    {"id":"trefoil_pair","factors":["trefoil","trefoil"],"palettes":[[0,1],[0,1]],"expected_free":0,"expected_torsion":[3,3],"expected_cover_rank":2,"expected_lower":3},
+    {"id":"seed_pair_shared","factors":["13a_3145","13a_3147"],"palettes":[[0,1,2],[0,1,2]],"expected_free":1,"expected_torsion":[1295],"expected_cover_rank":5,"expected_lower":7},
+    {"id":"seed_pair_overlap2","factors":["13a_3145","13a_3147"],"palettes":[[0,1,2],[0,1,3]],"expected_free":0,"expected_torsion":[1295],"expected_cover_rank":4,"expected_lower":7},
+    {"id":"seed_triple_shared","factors":["13a_3145","13a_3148","13a_3149"],"palettes":[[0,1,2],[0,1,2],[0,1,2]],"expected_free":2,"expected_torsion":[37,1295],"expected_cover_rank":8,"expected_lower":10},
+    {"id":"seed_triple_overlap2","factors":["13a_3145","13a_3148","13a_3149"],"palettes":[[0,1,2],[0,1,3],[0,1,4]],"expected_free":0,"expected_torsion":[37,1295],"expected_cover_rank":6,"expected_lower":10},
+    {"id":"seed_trefoil","factors":["13a_3145","trefoil"],"palettes":[[0,1,2],[0,1]],"expected_free":0,"expected_torsion":[111],"expected_cover_rank":3,"expected_lower":5},
+    {"id":"seed_pair_trefoil","factors":["13a_3145","13a_3147","trefoil"],"palettes":[[0,1,2],[0,1,3],[0,1]],"expected_free":0,"expected_torsion":[3885],"expected_cover_rank":5,"expected_lower":8},
+    {"id":"seed_unknot","factors":["13a_3149","unknot"],"palettes":[[0,1,2],[0,1]],"expected_free":0,"expected_torsion":[35],"expected_cover_rank":2,"expected_lower":4}
+  ],
+  "verification":"Construct literal connected-sum PDs and transposition assignments, check the lifted sphere-component graph, and compute exact folded branched-cover homology. Independent arc tracing, reverse-word matrix reconstruction and unimodular Smith-step replay must match. A separate Reidemeister-Schreier word calculation and binary matrix witness check the T47 boundary. Corrupt palette, missing free factor, false Smith step and torus witness must reject.",
+  "limits":{"connected_sum_diagrams":8,"maximum_crossings":39,"maximum_cover_degree":5,"seconds_total":60},
+  "scope":"Uniform written topology/normal-generation/rank arguments plus finite input controls. No all-knot MRC solution, global novelty, specialist/formal verification, numerical recognition or new293-panel sweep. Source read and external theorem import depths explicit."
+}

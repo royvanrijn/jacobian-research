@@ -1,0 +1,290 @@
+{
+  "additional_profiles": [
+    [
+      6,
+      3,
+      3
+    ],
+    [
+      6,
+      4,
+      3
+    ],
+    [
+      6,
+      5,
+      3
+    ],
+    [
+      6,
+      6,
+      3
+    ]
+  ],
+  "all_affine_leading_primitive_strata_checked": true,
+  "chain_rule_v_equals_xz_checked": true,
+  "cubic_component_degree_interval": [
+    7,
+    9
+  ],
+  "degree7_extension_proved": false,
+  "discriminant_polynomial_cases_checked": true,
+  "formal_residue_differential_identity_checked": true,
+  "global_positive_witness_bounds_changed": false,
+  "global_simplicity_minima_closed": false,
+  "known_cubic_component_control_sha256": "21e7265972b9a8693b3c651f06417e57a227c65e3d2d453d9dd641c985ad892b",
+  "monic_cubic_quadratic_coefficients_checked": true,
+  "plane_fibre_bound": 30,
+  "premises": {
+    "GLDC7": {
+      "checker_sha256": "e90346188ebfbf69bc41d376f9074f0eae15a5c3a060a27d2ffc02d673819753",
+      "proof_sha256": "f232e1e00193dbd63357076c2196c335ac8c10b58a2059eb500b4a6c457b5245"
+    },
+    "GLDC8": {
+      "checker_sha256": "e90346188ebfbf69bc41d376f9074f0eae15a5c3a060a27d2ffc02d673819753",
+      "proof_sha256": "4b8f823701e905acb6ecc07567915a6d225a65caa54140c225bc26ae8e29afee"
+    },
+    "KCUB23": {
+      "checker_sha256": "004844894cced427e340ea42bd6262cabc085ff5f3db3de9a4f75c09e9b890c9",
+      "proof_sha256": "11fa12fed700432546fcd103b6d4a943dfd898b2fe01ddfdf7713312cd757006"
+    },
+    "KPAIR1": {
+      "checker_sha256": "252f9f217444f8d300f9dd559c714043dd90bf56172e63500b28b08cdd419a7e",
+      "proof_sha256": "9a108f294a8537272b41a9bd97df25acd8eea4c450f39a95f7208f7461c6873a"
+    }
+  },
+  "proof_sha256": "f2d3731dd31f5de95d713f2fd5a1c625bff624617b7816446da2686f0098697f",
+  "proportional_invariant_cubic_identity_checked": true,
+  "remaining_count": 16,
+  "remaining_profiles": [
+    [
+      5,
+      4,
+      4
+    ],
+    [
+      5,
+      5,
+      4
+    ],
+    [
+      5,
+      5,
+      5
+    ],
+    [
+      6,
+      4,
+      4
+    ],
+    [
+      6,
+      5,
+      4
+    ],
+    [
+      6,
+      5,
+      5
+    ],
+    [
+      6,
+      6,
+      4
+    ],
+    [
+      6,
+      6,
+      5
+    ],
+    [
+      6,
+      6,
+      6
+    ],
+    [
+      7,
+      3,
+      3
+    ],
+    [
+      7,
+      4,
+      3
+    ],
+    [
+      7,
+      4,
+      4
+    ],
+    [
+      7,
+      5,
+      3
+    ],
+    [
+      7,
+      5,
+      4
+    ],
+    [
+      7,
+      5,
+      5
+    ],
+    [
+      7,
+      6,
+      3
+    ]
+  ],
+  "seconds": 0.116,
+  "source_sha256": "9b98be6b01f17a157b818ada7c98a964efdc2be3410d80e4f0b47a94953e2e4a",
+  "special_fibre_square_parity_cases": [
+    {
+      "complete_odd_fibre": false,
+      "one_plus_xy_exponent": 0,
+      "square_root_degree": 0,
+      "x_exponent": 0
+    },
+    {
+      "complete_odd_fibre": false,
+      "one_plus_xy_exponent": 2,
+      "square_root_degree": 2,
+      "x_exponent": 0
+    },
+    {
+      "complete_odd_fibre": true,
+      "one_plus_xy_exponent": 1,
+      "square_root_degree": 0,
+      "x_exponent": 1
+    },
+    {
+      "complete_odd_fibre": false,
+      "one_plus_xy_exponent": 0,
+      "square_root_degree": 1,
+      "x_exponent": 2
+    },
+    {
+      "complete_odd_fibre": false,
+      "one_plus_xy_exponent": 0,
+      "square_root_degree": 2,
+      "x_exponent": 4
+    }
+  ],
+  "status": "pass",
+  "sympy_version": "1.14.0",
+  "three_variable_ordinary_degree_interval": [
+    5,
+    7
+  ],
+  "total_profiles_excluded": 58,
+  "universal_UFD_fibre_field_proofs": "Written, not formalized or independently replayed in full; exact controls are not substituted for the proof.",
+  "z_degree_cases": [
+    {
+      "leading_p_degree_at_most": 5,
+      "leading_q_degree_at_most": 5,
+      "m": 1,
+      "n": 1,
+      "route": "affine-pair"
+    },
+    {
+      "leading_p_degree_at_most": 4,
+      "leading_q_degree_at_most": 5,
+      "m": 2,
+      "n": 1,
+      "route": "affine-leading-fibre-division-or-proportional-invariant-obstruction"
+    },
+    {
+      "leading_p_degree_at_most": 4,
+      "leading_q_degree_at_most": 4,
+      "m": 2,
+      "n": 2,
+      "route": "common-linear-gcd-and-invariant-target-shear"
+    },
+    {
+      "leading_p_degree_at_most": 3,
+      "leading_q_degree_at_most": 5,
+      "m": 3,
+      "n": 1,
+      "route": "affine-leading-fibre-division-or-proportional-invariant-obstruction"
+    },
+    {
+      "leading_p_degree_at_most": 3,
+      "leading_q_degree_at_most": 4,
+      "m": 3,
+      "n": 2,
+      "route": "quadratic-leading-square-class-and-rational-cusp"
+    },
+    {
+      "leading_p_degree_at_most": 3,
+      "leading_q_degree_at_most": 3,
+      "m": 3,
+      "n": 3,
+      "route": "constant-linear-degree-reduction"
+    },
+    {
+      "leading_p_degree_at_most": 2,
+      "leading_q_degree_at_most": 5,
+      "m": 4,
+      "n": 1,
+      "route": "affine-leading-fibre-division-or-proportional-invariant-obstruction"
+    },
+    {
+      "leading_p_degree_at_most": 2,
+      "leading_q_degree_at_most": 4,
+      "m": 4,
+      "n": 2,
+      "route": "quadratic-leading-square-class-and-rational-cusp"
+    },
+    {
+      "leading_p_degree_at_most": 2,
+      "leading_q_degree_at_most": 3,
+      "m": 4,
+      "n": 3,
+      "route": "fibre-or-UFD-degree-contradiction"
+    },
+    {
+      "leading_p_degree_at_most": 2,
+      "leading_q_degree_at_most": 2,
+      "m": 4,
+      "n": 4,
+      "route": "constant-linear-degree-reduction"
+    },
+    {
+      "leading_p_degree_at_most": 1,
+      "leading_q_degree_at_most": 5,
+      "m": 5,
+      "n": 1,
+      "route": "affine-leading-fibre-division-or-proportional-invariant-obstruction"
+    },
+    {
+      "leading_p_degree_at_most": 1,
+      "leading_q_degree_at_most": 4,
+      "m": 5,
+      "n": 2,
+      "route": "quadratic-leading-square-class-and-rational-cusp"
+    },
+    {
+      "leading_p_degree_at_most": 1,
+      "leading_q_degree_at_most": 3,
+      "m": 5,
+      "n": 3,
+      "route": "fibre-or-UFD-degree-contradiction"
+    },
+    {
+      "leading_p_degree_at_most": 1,
+      "leading_q_degree_at_most": 2,
+      "m": 5,
+      "n": 4,
+      "route": "fibre-or-UFD-degree-contradiction"
+    },
+    {
+      "leading_p_degree_at_most": 1,
+      "leading_q_degree_at_most": 1,
+      "m": 5,
+      "n": 5,
+      "route": "constant-linear-degree-reduction"
+    }
+  ]
+}

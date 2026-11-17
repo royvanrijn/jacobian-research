@@ -1,0 +1,26 @@
+{
+  "review_date": "2026-11-14",
+  "record_id": 23873236,
+  "version": "0.07",
+  "publication_date": "2026-11-01",
+  "author": "Felipe Santibanez-Leal",
+  "record_url": "https://zenodo.org/records/23873236",
+  "latest_relation_from": "https://zenodo.org/api/records/22834179/versions/latest",
+  "pdf_url": "https://zenodo.org/api/records/23873236/files/jacobian-conjecture-cascade-v0.07.pdf/content",
+  "pdf_sha256": "11fa300c7e85d0838cf49fa5edea3d9f7f8fbb00771833301b2c83e29e500643",
+  "pages_read": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "pages_rendered_and_visually_inspected": [
+    2,
+    3,
+    4
+  ],
+  "producer_code_executed": false,
+  "mathematical_status_changes": [],
+  "scope": "Version reconciliation and comparison of moment/Mathieu/vanishing scopes only. No reproduction of the reported dimension15 or48 witnesses."
+}

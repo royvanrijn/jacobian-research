@@ -1,0 +1,20 @@
+{
+  "retrieved_utc": "2026-11-14T11:09:43.710913+00:00",
+  "sources": [
+    {
+      "path": "fisher-visible7.pdf",
+      "url": "https://www.dpmms.cam.ac.uk/~taf1000/papers/visible7.pdf",
+      "download_status": "Downloaded using Windows HTTPS after WSL urllib certificate-chain failure.",
+      "use": "Primary-source formula accessed through web tool, equation (6.1).",
+      "bytes": 402206,
+      "sha256": "89ced6cc56e91eebfc9592789e824539c9b78efe93463941744e426e7e4a9690"
+    },
+    {
+      "path": null,
+      "url": "https://wstein.org/msri06/refs/mestre-method-of-graphs/mestre-en.pdf",
+      "title": "J.-F. Mestre, The Method of Graphs, translated by Andrei Jorza, appendix p=7",
+      "download_status": "Direct urllib request HTTP 403; PDF readable through web tool.",
+      "use": "Classical X_0(7) j-map and modular interpretation."
+    }
+  ]
+}

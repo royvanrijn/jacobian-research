@@ -1,0 +1,150 @@
+{
+  "version": "v003",
+  "date": "2026-11-17",
+  "status": "passed",
+  "scope": "Exact critical-ball, degree/multiplicity, uneven-scale filter and strict-threshold controls only.",
+  "not_proved_by_this_check": [
+    "General polynomial separation lemma",
+    "Formal functional horizontality",
+    "Full-frame theorem",
+    "Semisimplicity",
+    "All-coefficient rank-one classification",
+    "Logarithmic cut estimates"
+  ],
+  "critical_ball_controls": [
+    {
+      "name": "colliding non-Morse block",
+      "phase": "-r**2*x**2/2 + x**4/4",
+      "roots": [
+        {
+          "center": "0",
+          "rho": "0",
+          "reduction": "y**4/4",
+          "rank": "3"
+        },
+        {
+          "center": "r",
+          "rho": "0",
+          "reduction": "y**4/4",
+          "rank": "3"
+        },
+        {
+          "center": "-r",
+          "rho": "0",
+          "reduction": "y**4/4",
+          "rank": "3"
+        }
+      ],
+      "disjoint_balls": [
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "finite and escaping blocks",
+      "phase": "r*x**3/3 - x**2/2",
+      "roots": [
+        {
+          "center": "0",
+          "rho": "0",
+          "reduction": "-y**2/2",
+          "rank": "1"
+        },
+        {
+          "center": "1/r",
+          "rho": "0",
+          "reduction": "y**2/2",
+          "rank": "1"
+        }
+      ],
+      "disjoint_balls": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "name": "unequal radii with nested center clusters",
+      "phase": "x**4/4 - x**3*(1 + 2/r**2)/3 + x**2*(r**(-2) + r**(-4))/2",
+      "roots": [
+        {
+          "center": "0",
+          "rho": "2",
+          "reduction": "y**2/2",
+          "rank": "1"
+        },
+        {
+          "center": "r**(-2)",
+          "rho": "1",
+          "reduction": "-y**2/2",
+          "rank": "1"
+        },
+        {
+          "center": "1 + r**(-2)",
+          "rho": "1",
+          "reduction": "y**2/2",
+          "rank": "1"
+        }
+      ],
+      "disjoint_balls": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ]
+    }
+  ],
+  "uneven_scale_reduction_matrix": [
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "strict_gaussian_threshold_controls": [
+    {
+      "phase": "-r^1*x^2/2",
+      "h": "r",
+      "lower_bound": "1/2",
+      "normalized_seed_power": "1/2"
+    },
+    {
+      "phase": "-r^2*x^2/2",
+      "h": "r",
+      "lower_bound": "0",
+      "normalized_seed_power": "0"
+    },
+    {
+      "phase": "-r^3*x^2/2",
+      "h": "r",
+      "lower_bound": "-1/2",
+      "normalized_seed_power": "-1/2"
+    }
+  ],
+  "flattened_quadratic_coefficient": "1/(2*b*t - 2)",
+  "script_sha256": "5d4dd147915ae0748b88d82b7a53e8836620f9aa692f6eebcf32d497bac151d6",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

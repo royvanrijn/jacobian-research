@@ -1,0 +1,869 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Author" CONTENT="R.A.Wilson, R.A.Parker and J.N.Bray">
+<META NAME="Description" CONTENT="ATLAS of Group Representations: A5">
+<META NAME="Keywords" CONTENT="Group, Representation, Presentation, Maximal subgroup, Conjugacy class">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../../at2.css">
+<TITLE>ATLAS: Alternating group A5</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<H1>A<SMALL>TLAS</SMALL>: Alternating group A<SUB>5</SUB>, Linear groups
+L<SUB>2</SUB>(4) and L<SUB>2</SUB>(5)</H1>
+
+Order = 60 = 2<SUP>2</SUP>.3.5.<BR>
+Mult = 2.<BR>
+Out = 2.
+<HR>
+
+<P>
+The following information is available for A<SUB>5</SUB> = L<SUB>2</SUB>(4) =
+L<SUB>2</SUB>(5):
+<UL>
+<LI> <A HREF="#sgens">Standard generators</A>.
+<LI> <A HREF="#auts">Automorphisms</A>.
+<LI> <A HREF="#bbox">Black box algorithms</A>.
+<LI> <A HREF="#pres">Presentations</A>.
+<LI> <A HREF="#reps">Representations</A>.
+<LI> <A HREF="#maxs">Maximal subgroups</A>.
+<LI> <A HREF="#ccls">Conjugacy classes</A>.
+</UL>
+
+<HR>
+
+
+<A NAME="sgens"><H3>Standard generators</H3></A>
+
+Standard generators of A<SUB>5</SUB> are <B>a</B> and <B>b</B> where
+<B>a</B> has order 2, <B>b</B> has order 3 and <B>ab</B> has order 5.
+<BR>
+In the natural representation we may take
+<B>a</B> = <A HREF="mtx/A5G1-p5B0.m1">(1, 2)(3, 4)</A> and
+<B>b</B> = <A HREF="mtx/A5G1-p5B0.m2">(1, 3, 5)</A>.
+<BR>
+Standard generators of the double cover 2.A<SUB>5</SUB> (or SL<SUB>2</SUB>(5))
+are preimages <B>A</B> and <B>B</B> where <B>B</B> has order 3 and <B>AB</B>
+has order 5.
+<P>
+Standard generators of the automorphism group S<SUB>5</SUB> = A<SUB>5</SUB>:2
+are <B>c</B> and <B>d</B> where <B>c</B> is in class 2B, <B>d</B> has order 4
+and <B>cd</B> has order 5.
+<BR>
+In the natural representation we may take
+<B>c</B> = <A HREF="mtx/S5G1-p5B0.m1">(1, 2)</A> and
+<B>d</B> = <A HREF="mtx/S5G1-p5B0.m2">(2, 3, 4, 5)</A>.
+<BR>
+Standard generators either of the double covers 2.S<SUB>5</SUB> (containing
+SL<SUB>2</SUB>(5) to index 2) are preimages <B>C</B> and <B>D</B> where
+<B>CD</B> has order 5.
+
+<HR>
+
+
+
+<A NAME="auts"><H3>Automorphisms</H3></A>
+
+An outer automorphism of A<SUB>5</SUB> is given by <B>(a, b)</B> maps to <B>(a, abbababb)</B>, which corresponds to the transposition (3, 4) of S<SUB>5</SUB> if you take the same generators of A<SUB>5</SUB> as above.
+<P>
+If <B>u</B> is the above automorphism, then we have <B>c</B> = <B>(ab)<SUP>2</SUP>u(ab)<SUP>-2</SUP></B> and <B>d</B> = <B>(ab)<SUP>-2</SUP>u(ab)<SUP>-2</SUP></B> = <B>abc</B>.
+<BR>
+The pair <B>(c', d')</B> is conjugate in S<SUB>5</SUB> to <B>(c, d)</B> where <B>c'</B> = <B>u</B> and <B>d'</B> = <B>uab</B>.
+<P>
+Conversely, we have <B>a</B> = <B>[c, dcd]</B> and <B>b</B> = <B>(dcd)<SUP>-2</SUP></B>.
+<P>
+Please note that <B>(a, b)</B> -&gt; <B>(a, ababbab)</B> is also an outer automorphism of A<SUB>5</SUB>, but in S<SUB>5</SUB> = Aut(A<SUB>5</SUB>) this element has order 4 and squares to <B>a</B>.
+
+
+
+<HR>
+
+<A NAME="bbox"><H3>Black box algorithms</H3></A>
+
+To find standard generators for A<SUB>5</SUB>:
+<UL>
+<LI>
+Find an element <I>x</I> of order 2.<BR>
+[The probability of success at each attempt is 1 in 4.]
+<LI>
+Find an element <I>y</I> of order 3.<BR>
+[The probability of success at each attempt is 1 in 3.]
+<LI>
+Find conjugates <I>a</I> of <I>x</I> and <I>b</I> of <I>y</I> such that <I>ab</I> has order 5.<BR>
+[The probability of success at each attempt is 2 in 5 (about 1 in 3).]
+<LI>
+Now <I>a</I> and <I>b</I> are standard generators of A<SUB>5</SUB>.
+</UL>
+
+To find standard generators for S<SUB>5</SUB> = A<SUB>5</SUB>.2:
+<UL>
+<LI>
+Find an element of order 6. This cubes to <I>x</I> in class 2B.<BR>
+[The probability of success at each attempt is 1 in 6 (or 1 in 3 if you look through outer elements only).]
+<LI>
+Find an element <I>y</I> of order 4.<BR>
+[The probability of success at each attempt is 1 in 4 (or 1 in 2 if you look through outer elements only).]
+<LI>
+Find conjugates <I>c</I> of <I>x</I> and <I>d</I> of <I>y</I> such that <I>cd</I> has order 5.<BR>
+[The probability of success at each attempt is 2 in 5 (about 1 in 3).]
+<LI>
+Now <I>c</I> and <I>d</I> are standard generators of S<SUB>5</SUB>.
+</UL>
+
+
+
+<HR>
+
+<A NAME="pres"><H3>Presentations</H3></A>
+
+Presentations for A<SUB>5</SUB> and S<SUB>5</SUB> (respectively) on their standard generators are given below.
+<P>
+&lt; <I>a</I>, <I>b</I> | <I>a</I><SUP>2</SUP> = <I>b</I><SUP>3</SUP> = (<I>ab</I>)<SUP>5</SUP> = 1 &gt;.
+<P>
+&lt; <I>c</I>, <I>d</I> | <I>c</I><SUP>2</SUP> = <I>d</I><SUP>4</SUP> = (<I>cd</I>)<SUP>5</SUP> = [<I>c</I>, <I>d</I>]<SUP>3</SUP> = 1 &gt;.
+<P>
+These presentations, and those of the covering groups, are available in
+Magma format as follows:<BR>
+<A HREF="mag/A5G1-P1.M">A5 on <B>a</B> and <B>b</B></A>,
+<A HREF="mag/2A5G1-P1.M">2A5 on <B>A</B> and <B>B</B></A>,
+<A HREF="mag/S5G1-P1.M">S5 on <B>c</B> and <B>d</B></A>,
+<A HREF="mag/2S5G1-P1.M">2S5 (+) on <B>C</B> and <B>D</B></A> and
+<A HREF="mag/2S5iG1-P1.M">2S5 (-) on <B>C</B> and <B>D</B></A>.
+
+<HR>
+
+
+
+<A NAME="reps"><H3>Representations</H3></A>
+
+The representations of A<SUB>5</SUB> available are:
+<UL>
+<LI> All primitive permutation representations.
+<UL>
+<LI>
+Permutations on 5 points - the natural representation above:
+<A HREF="mtx/A5G1-p5B0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-p5B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-p5B0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-p5B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-p5B0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-p5B0.g2"><B> b </B></A> (GAP).
+<LI>
+Permutations on 6 points:
+<A HREF="mtx/A5G1-p6B0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-p6B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-p6B0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-p6B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-p6B0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-p6B0.g2"><B> b </B></A> (GAP).
+<LI>
+Permutations on 10 points:
+<A HREF="mtx/A5G1-p10B0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-p10B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-p10B0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-p10B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-p10B0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-p10B0.g2"><B> b </B></A> (GAP).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 2.
+<UL>
+<LI>
+Dimension 2 over GF(4) - the natural representation as L2(4):
+<A HREF="mtx/A5G1-f4r2aB0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f4r2aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f4r2aB0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f4r2aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f4r2aB0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f4r2aB0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 2 over GF(4) - field automorph of the above:
+<A HREF="mtx/A5G1-f4r2bB0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f4r2bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f4r2bB0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f4r2bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f4r2bB0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f4r2bB0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 4 over GF(2) - the natural representation as O4-(2):
+<A HREF="mtx/A5G1-f2r4aB0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f2r4aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f2r4aB0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f2r4aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f2r4aB0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f2r4aB0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 4 over GF(2) - reducible over GF(4):
+<A HREF="mtx/A5G1-f2r4bB0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f2r4bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f2r4bB0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f2r4bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f2r4bB0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f2r4bB0.g2"><B> b </B></A> (GAP).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 3.
+<UL>
+<LI>
+Dimension 3 over GF(9):
+<A HREF="mtx/A5G1-f9r3aB0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f9r3aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f9r3aB0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f9r3aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f9r3aB0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f9r3aB0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 3 over GF(9):
+<A HREF="mtx/A5G1-f9r3bB0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f9r3bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f9r3bB0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f9r3bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f9r3bB0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f9r3bB0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 4 over GF(3):
+<A HREF="mtx/A5G1-f3r4B0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f3r4B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f3r4B0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f3r4B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f3r4B0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f3r4B0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 6 over GF(3) - reducible over GF(9):
+<A HREF="mtx/A5G1-f3r6B0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f3r6B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f3r6B0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f3r6B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f3r6B0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f3r6B0.g2"><B> b </B></A> (GAP).
+</UL>
+
+<LI> Both faithful irreducibles in characteristic 5.
+<UL>
+<LI>
+Dimension 3 over GF(5) - the natural representation as O3(5):
+<A HREF="mtx/A5G1-f5r3B0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f5r3B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f5r3B0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f5r3B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f5r3B0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f5r3B0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 5 over GF(5):
+<A HREF="mtx/A5G1-f5r5B0.m1"><B> a </B></A> and
+<A HREF="mtx/A5G1-f5r5B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/A5G1-f5r5B0.b1"><B> a </B></A> and
+<A HREF="bin/A5G1-f5r5B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/A5G1-f5r5B0.g1"><B> a </B></A> and
+<A HREF="gap/A5G1-f5r5B0.g2"><B> b </B></A> (GAP).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 0.
+<UL>
+<LI>
+Dimension 3 over <B>Z</B>[b5]:
+<A HREF="mag/A5G1-Ar3aB0.M"><B>a</B> and <B>b</B></A> (Magma).
+<LI>
+Dimension 3 over <B>Z</B>[b5]:
+<A HREF="mag/A5G1-Ar3bB0.M"><B>a</B> and <B>b</B></A> (Magma).
+<LI>
+Dimension 4 over <B>Z</B>:
+<A HREF="mag/A5G1-Zr4B0.M"><B>a</B> and <B>b</B></A> (Magma).
+<LI>
+Dimension 5 over <B>Z</B>:
+<A HREF="mag/A5G1-Zr5B0.M"><B>a</B> and <B>b</B></A> (Magma).
+<LI>
+Dimension 6 over <B>Z</B> - monomial, and reducible over <B>Q</B>(b5):
+<A HREF="mag/A5G1-Zr6B0.M"><B>a</B> and <B>b</B></A> (Magma).
+</UL>
+</UL>
+
+
+
+The representations of 2.A<SUB>5</SUB> = SL<SUB>2</SUB>(5) available are:
+<UL>
+<LI>
+Permutations on 24 points:
+<A HREF="mtx/2A5G1-p24B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-p24B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-p24B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-p24B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-p24B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-p24B0.g2"><B> B </B></A> (GAP).
+<LI>
+Permutations on 40 points:
+<A HREF="mtx/2A5G1-p40B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-p40B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-p40B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-p40B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-p40B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-p40B0.g2"><B> B </B></A> (GAP).
+
+<LI> All faithful irreducibles in characteristic 3.
+<UL>
+<LI>
+Dimension 2 over GF(9):
+<A HREF="mtx/2A5G1-f9r2aB0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f9r2aB0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f9r2aB0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f9r2aB0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f9r2aB0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f9r2aB0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 2 over GF(9) - automorph of the above:
+<A HREF="mtx/2A5G1-f9r2bB0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f9r2bB0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f9r2bB0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f9r2bB0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f9r2bB0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f9r2bB0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 4 over GF(3) - reducible over GF(9):
+<A HREF="mtx/2A5G1-f3r4B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f3r4B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f3r4B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f3r4B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f3r4B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f3r4B0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 6 over GF(3):
+<A HREF="mtx/2A5G1-f3r6B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f3r6B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f3r6B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f3r6B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f3r6B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f3r6B0.g2"><B> B </B></A> (GAP).
+</UL>
+
+<LI> Both faithful irreducibles in characteristic 5.
+<UL>
+<LI>
+Dimension 2 over GF(5) - the natural representation as SL2(5):
+<A HREF="mtx/2A5G1-f5r2B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f5r2B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f5r2B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f5r2B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f5r2B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f5r2B0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 4 over GF(5):
+<A HREF="mtx/2A5G1-f5r4B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f5r4B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f5r4B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f5r4B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f5r4B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f5r4B0.g2"><B> B </B></A> (GAP).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 7 [not dividing the group order!!!].
+<UL>
+<LI>
+Dimension 2 over GF(49):
+<A HREF="mtx/2A5G1-f49r2aB0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f49r2aB0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f49r2aB0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f49r2aB0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f49r2aB0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f49r2aB0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 2 over GF(49):
+<A HREF="mtx/2A5G1-f49r2bB0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f49r2bB0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f49r2bB0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f49r2bB0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f49r2bB0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f49r2bB0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 4 over GF(7):
+<A HREF="mtx/2A5G1-f7r4aB0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f7r4aB0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f7r4aB0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f7r4aB0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f7r4aB0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f7r4aB0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 4 over GF(7) - reducible over GF(49):
+<A HREF="mtx/2A5G1-f7r4bB0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f7r4bB0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f7r4bB0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f7r4bB0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f7r4bB0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f7r4bB0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 6 over GF(7):
+<A HREF="mtx/2A5G1-f7r6B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f7r6B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f7r6B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f7r6B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f7r6B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f7r6B0.g2"><B> B </B></A> (GAP).
+</UL>
+
+<LI> Faithful irreducibles in characteristic 0.
+<UL>
+<LI>
+Dimension 4 over <B>Z</B>[i]:
+<A HREF="mag/2A5G1-Ar4aB0.M"><B>A</B> and <B>B</B></A> (Magma).
+<LI>
+Dimension 4 over <B>Z</B>[i6]:
+<A HREF="mag/2A5G1-Ar4aB2.M"><B>A</B> and <B>B</B></A> (Magma).
+<LI>
+Dimension 8 over <B>Z</B> - splits as 4 + 4 over <B>C</B>:
+<A HREF="mag/2A5G1-Zr8bB0.M"><B>A</B> and <B>B</B></A> (Magma).
+<LI>
+Dimension 6 over <B>Z</B>[i] - monomial:
+<A HREF="mag/2A5G1-Ar6B0.M"><B>A</B> and <B>B</B></A> (Magma).
+<LI>
+Dimension 6 over <B>Z</B>[<I>w</I>]:
+<A HREF="mag/2A5G1-Ar6B1.M"><B>A</B> and <B>B</B></A> (Magma).
+<LI>
+Dimension 12 over <B>Z</B> - monomial and reducible over <B>C</B>:
+<A HREF="mag/2A5G1-Zr12B0.M"><B>A</B> and <B>B</B></A> (Magma).
+</UL>
+
+<LI>
+Dimension 5 over GF(4):
+<A HREF="mtx/2A5G1-f4r5aB0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f4r5aB0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f4r5aB0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f4r5aB0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f4r5aB0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f4r5aB0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 5 over GF(4):
+<A HREF="mtx/2A5G1-f4r5bB0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f4r5bB0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f4r5bB0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f4r5bB0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f4r5bB0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f4r5bB0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 8 over GF(2):
+<A HREF="mtx/2A5G1-f2r8B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f2r8B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f2r8B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f2r8B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f2r8B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f2r8B0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 9 over GF(2):
+<A HREF="mtx/2A5G1-f2r9B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f2r9B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f2r9B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f2r9B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f2r9B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f2r9B0.g2"><B> B </B></A> (GAP).
+<LI>
+Dimension 10 over GF(2):
+<A HREF="mtx/2A5G1-f2r10B0.m1"><B> A </B></A> and
+<A HREF="mtx/2A5G1-f2r10B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2A5G1-f2r10B0.b1"><B> A </B></A> and
+<A HREF="bin/2A5G1-f2r10B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2A5G1-f2r10B0.g1"><B> A </B></A> and
+<A HREF="gap/2A5G1-f2r10B0.g2"><B> B </B></A> (GAP).
+</UL>
+
+
+
+The representations of A<SUB>5</SUB>:2 = S<SUB>5</SUB> available are:
+<UL>
+<LI> All faithful primitive permutation representations.
+<UL>
+<LI>
+Permutations on 5 points - the natural representation above:
+<A HREF="mtx/S5G1-p5B0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-p5B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-p5B0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-p5B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-p5B0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-p5B0.g2"><B> d </B></A> (GAP).
+<LI>
+Permutations on 6 points:
+<A HREF="mtx/S5G1-p6B0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-p6B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-p6B0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-p6B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-p6B0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-p6B0.g2"><B> d </B></A> (GAP).
+<LI>
+Permutations on 10 points:
+<A HREF="mtx/S5G1-p10B0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-p10B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-p10B0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-p10B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-p10B0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-p10B0.g2"><B> d </B></A> (GAP).
+</UL>
+
+<LI> Both faithful irreducibles in characteristic 2.
+<UL>
+<LI>
+Dimension 4 over GF(2) - the SigmaL2(4) module:
+<A HREF="mtx/S5G1-f2r4aB0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-f2r4aB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-f2r4aB0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-f2r4aB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-f2r4aB0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-f2r4aB0.g2"><B> d </B></A> (GAP).
+<LI>
+Dimension 4 over GF(2) - the GO4-(2) module:
+<A HREF="mtx/S5G1-f2r4bB0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-f2r4bB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-f2r4bB0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-f2r4bB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-f2r4bB0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-f2r4bB0.g2"><B> d </B></A> (GAP).
+</UL>
+
+<LI> Both faithful irreducibles in characteristic 3 with character in ABC.
+<UL>
+<LI>
+Dimension 4 over GF(3):
+<A HREF="mtx/S5G1-f3r4B0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-f3r4B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-f3r4B0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-f3r4B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-f3r4B0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-f3r4B0.g2"><B> d </B></A> (GAP).
+<LI>
+Dimension 6 over GF(3):
+<A HREF="mtx/S5G1-f3r6B0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-f3r6B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-f3r6B0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-f3r6B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-f3r6B0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-f3r6B0.g2"><B> d </B></A> (GAP).
+</UL>
+
+<LI> Both faithful irreducibles in characteristic 5 with character in ABC.
+<UL>
+<LI>
+Dimension 3 over GF(5):
+<A HREF="mtx/S5G1-f5r3B0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-f5r3B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-f5r3B0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-f5r3B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-f5r3B0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-f5r3B0.g2"><B> d </B></A> (GAP).
+<LI>
+Dimension 5 over GF(5):
+<A HREF="mtx/S5G1-f5r5B0.m1"><B> c </B></A> and
+<A HREF="mtx/S5G1-f5r5B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/S5G1-f5r5B0.b1"><B> c </B></A> and
+<A HREF="bin/S5G1-f5r5B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/S5G1-f5r5B0.g1"><B> c </B></A> and
+<A HREF="gap/S5G1-f5r5B0.g2"><B> d </B></A> (GAP).
+</UL>
+
+</UL>
+
+
+The representations of 2.A<SUB>5</SUB>:2 = 2.S<SUB>5</SUB> (plus type =
+A<SMALL>TLAS</SMALL> variant) available are:
+<UL>
+<LI>
+Permutations on 40 points - on the cosets of S3:
+<A HREF="mtx/2S5G1-p40aB0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-p40aB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-p40aB0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-p40aB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-p40aB0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-p40aB0.g2"><B> D </B></A> (GAP).
+<!--There is just one class of S3 in 2S5+ -->.
+<LI>
+Permutations on 40 points - on the cosets of C6:
+<A HREF="mtx/2S5G1-p40bB0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-p40bB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-p40bB0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-p40bB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-p40bB0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-p40bB0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 48 points:
+<A HREF="mtx/2S5G1-p48B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-p48B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-p48B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-p48B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-p48B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-p48B0.g2"><B> D </B></A> (GAP).
+
+<LI> Both faithful irreducibles in characteristic 3 with character in ABC.
+<UL>
+<LI>
+Dimension 4 over GF(3):
+<A HREF="mtx/2S5G1-f3r4B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-f3r4B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-f3r4B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-f3r4B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-f3r4B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-f3r4B0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 6 over GF(3):
+<A HREF="mtx/2S5G1-f3r6B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-f3r6B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-f3r6B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-f3r6B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-f3r6B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-f3r6B0.g2"><B> D </B></A> (GAP).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 5 that correspond to
+characters in the ABC.
+<UL>
+<LI>
+Dimension 2 over GF(25):
+<A HREF="mtx/2S5G1-f25r2B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-f25r2B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-f25r2B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-f25r2B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-f25r2B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-f25r2B0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 4 over GF(25):
+<A HREF="mtx/2S5G1-f25r4aB0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-f25r4aB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-f25r4aB0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-f25r4aB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-f25r4aB0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-f25r4aB0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 4 over GF(5) - reducible over GF(25):
+<A HREF="mtx/2S5G1-f5r4bB0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-f5r4bB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-f5r4bB0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-f5r4bB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-f5r4bB0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-f5r4bB0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 8 over GF(5) - reducible over GF(25):
+<A HREF="mtx/2S5G1-f5r8B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5G1-f5r8B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5G1-f5r8B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5G1-f5r8B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5G1-f5r8B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5G1-f5r8B0.g2"><B> D </B></A> (GAP).
+</UL>
+
+<LI> Faithful irreducibles in characteristic 0.
+<UL>
+<LI>
+Dimension 4 over <B>Z</B>[<I>w</I>] - with restriction to 2A5 absolutely
+irreducible:
+<A HREF="mag/2S5G1-Ar4bB0.M"><B>C</B> and <B>D</B></A> (Magma).
+<LI>
+Dimension 8 over <B>Z</B> - with restriction to 2A5 being 2aabb, reducible over <B>C</B>:
+<A HREF="mag/2S5G1-Zr8aB0.M"><B>C</B> and <B>D</B></A> (Magma).
+</UL>
+
+</UL>
+
+
+
+The representations of 2.A<SUB>5</SUB>.2 = 2.S<SUB>5</SUB> (minus type =
+variant not in A<SMALL>TLAS</SMALL>) available are:
+<!--Given reps corresp to abs irred reps with values r2 on D (class +4A) and
+r3 on CDD (class +6A).-->
+<UL>
+<LI>
+Permutations on 48 points:
+<A HREF="mtx/2S5iG1-p48B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-p48B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-p48B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-p48B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-p48B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-p48B0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 80 points:
+<A HREF="mtx/2S5iG1-p80B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-p80B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-p80B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-p80B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-p80B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-p80B0.g2"><B> D </B></A> (GAP).
+
+<LI> All faithful irreducibles in characteristic 3 up to tensoring with
+linear irreducibles.
+<UL>
+<LI>
+Dimension 4 over GF(3):
+<A HREF="mtx/2S5iG1-f3r4B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-f3r4B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-f3r4B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-f3r4B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-f3r4B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-f3r4B0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 6 over GF(9):
+<A HREF="mtx/2S5iG1-f9r6B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-f9r6B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-f9r6B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-f9r6B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-f9r6B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-f9r6B0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 12 over GF(3) - reducible over GF(9):
+<A HREF="mtx/2S5iG1-f3r12B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-f3r12B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-f3r12B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-f3r12B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-f3r12B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-f3r12B0.g2"><B> D </B></A> (GAP).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 5 up to tensoring with
+linear irreducibles.
+<UL>
+<LI>
+Dimension 2 over GF(25):
+<A HREF="mtx/2S5iG1-f25r2B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-f25r2B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-f25r2B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-f25r2B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-f25r2B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-f25r2B0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 4 over GF(25):
+<A HREF="mtx/2S5iG1-f25r4aB0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-f25r4aB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-f25r4aB0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-f25r4aB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-f25r4aB0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-f25r4aB0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 4 over GF(5) - reducible over GF(25):
+<A HREF="mtx/2S5iG1-f5r4bB0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-f5r4bB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-f5r4bB0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-f5r4bB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-f5r4bB0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-f5r4bB0.g2"><B> D </B></A> (GAP).
+<LI>
+Dimension 8 over GF(5) - reducible over GF(25):
+<A HREF="mtx/2S5iG1-f5r8B0.m1"><B> C </B></A> and
+<A HREF="mtx/2S5iG1-f5r8B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2S5iG1-f5r8B0.b1"><B> C </B></A> and
+<A HREF="bin/2S5iG1-f5r8B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2S5iG1-f5r8B0.g1"><B> C </B></A> and
+<A HREF="gap/2S5iG1-f5r8B0.g2"><B> D </B></A> (GAP).
+</UL>
+
+<LI> Faithful irreducibles in characteristic 0.
+<UL>
+<LI>
+Dimension 4 over <B>Z</B>[<I>w</I>] - with restriction to 2A5 being 2ab - NOT YET AVAILABLE:
+<A HREF="mag/2S5iG1-Ar4aB0.M"><B>C</B> and <B>D</B></A> (Magma).
+<LI>
+Dimension 4 over <B>Z</B>[i2] - with restriction to 2A5 being 2ab:
+<A HREF="mag/2S5iG1-Ar4aB1.M"><B>C</B> and <B>D</B></A> (Magma).
+<LI>
+Dimension 4 over <B>Z</B>[i5] - with restriction to 2A5 being 2ab:
+<A HREF="mag/2S5iG1-Ar4aB2.M"><B>C</B> and <B>D</B></A> (Magma).
+</UL>
+
+</UL>
+
+
+
+<HR>
+
+
+
+<A NAME="maxs"><H3>Maximal subgroups</H3></A>
+
+The maximal subgroups of A<SUB>5</SUB> are as follows.
+<UL>
+<LI>
+A<SUB>4</SUB>, with generators 
+<A HREF="words/A5G1-max1W1"><B>ababba, b</B></A>.
+<LI>
+D<SUB>10</SUB>, with generators 
+<A HREF="words/A5G1-max2W1"><B>a, bbab</B></A>.
+<LI>
+S<SUB>3</SUB>, with  generators 
+<A HREF="words/A5G1-max3W1"><B>a, ababbabab</B></A>.
+</UL>
+
+
+The maximal subgroups of S<SUB>5</SUB> are as follows.
+<UL>
+<LI>
+A<SUB>5</SUB>, with standard generators 
+<A HREF="words/S5G1-max1W1"><B>dd, cdddcd</B></A>.
+<LI>
+S<SUB>4</SUB>, with generators 
+<A HREF="words/S5G1-max2W1"><B>c, dcddcd</B></A>.
+<LI>
+5:4 = F<SUB>20</SUB>, with  generators 
+<A HREF="words/S5G1-max3W1"><B>dcddcdcd, d</B></A>.
+<LI>
+S<SUB>3</SUB> &#215; 2 = D<SUB>12</SUB>, with  generators 
+<A HREF="words/S5G1-max4W1"><B>c, dd</B></A>.
+</UL>
+
+
+<HR>
+
+
+
+<A NAME="ccls"><H3>Conjugacy classes</H3></A>
+
+Representatives of the 5 conjugacy classes of A<SUB>5</SUB> are given below.
+<UL>
+<LI> 1A: identity [or <B>a<SUP>2</SUP></B>].
+<LI> 2A: <B>a</B>.<B><SUP> </SUP></B>
+<LI> 3A: <B>b</B>.<B><SUP> </SUP></B>
+<LI> 5A: <B>ab</B>.<B><SUP> </SUP></B>
+<LI> 5B: <B>(ab)<SUP>2</SUP></B>.<B><SUP> </SUP></B>
+</UL>
+
+
+
+
+<BR>
+
+Representatives of the 7 conjugacy classes of S<SUB>5</SUB> are given below.
+<UL>
+<LI> 1A: identity [or <B>c<SUP>2</SUP></B>].
+<LI> 2A: <B>d<SUP>2</SUP></B>.
+<LI> 3A: <B>(cd<SUP>2</SUP>)<SUP>2</SUP></B> or <B>[c, d]</B>.
+<LI> 5AB: <B>cd</B>.<B><SUP> </SUP></B>
+<LI> 2B: <B>c</B>.<B><SUP> </SUP></B>
+<LI> 4A: <B>d</B>.<B><SUP> </SUP></B>
+<LI> 6A: <B>cd<SUP>2</SUP></B>.
+</UL>
+
+
+
+
+<HR>
+<A HREF="../../">
+<IMG SRC="../../icons/atlas.gif" HEIGHT=30 WIDTH=30 ALT="Main ATLAS page">
+Go to main A<SMALL>TLAS</SMALL> (version 2.0) page</A>.
+<BR>
+<A HREF="../../alt/">
+<IMG SRC="../../icons/alt.gif" HEIGHT=30 WIDTH=30 ALT="Alternating groups page">
+Go to alternating groups page</A>.
+<BR>
+<A HREF="/atlas/html/A5.html">
+<IMG SRC="../../icons/old.gif" HEIGHT=30 WIDTH=30 ALT="Old A5 page">
+Go to old A5 page - A<SMALL>TLAS</SMALL> version 1</A>.
+<BR>
+<A HREF="../../info/ftp.html">
+<IMG SRC="../../icons/ftp.gif" HEIGHT=30 WIDTH=30 ALT="ftp access"></A>
+Anonymous ftp access is also available.
+<A HREF="../../info/ftp.html">See here</A> for details.
+<BR>
+
+
+<P></P>
+<ADDRESS> 
+Version 2.0 created on 23rd April 1999.<BR>
+Last updated 13.12.01 by JNB.<BR>
+Information checked to 
+<A HREF="../../info/Lev1.html">Level 1</A> on 08.05.99 by JNB.<BR>
+R.A.Wilson, R.A.Parker and J.N.Bray.
+</ADDRESS>
+</BODY>
+</HTML>

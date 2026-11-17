@@ -1,0 +1,193 @@
+\subsection{Completing the ordinary-node center axes}
+\label{sec:ordinaryaxes}
+
+The only remaining ordinary-node row is
+\begin{equation}\label{eq:ordinaryaxes}
+ P=Tuv+a u^3+d v^3+b u^2+c v^2+k.
+\end{equation}
+Keep the full $q$ of Lemma~\ref{lem:ordinarynormal}, with
+$m\ne0$. Under the no-frame assumption the other nodes satisfy
+\[
+ a=b=0\ \Longrightarrow\ A\ne0,\qquad
+ d=c=0\ \Longrightarrow\ B\ne0.
+\]
+We use a full formal frame when $bc\ne0$ and the preceding
+uniform cut criterion when $bc=0$. These branches are disjoint
+and include every zero face of the four coefficients.
+
+\begin{lemma}\label{lem:axisuniformgradient}
+For \eqref{eq:ordinaryaxes} with these Gaussian conditions,
+\eqref{eq:uniformphasegradient} holds.
+\end{lemma}
+\begin{proof}
+Otherwise take $\|x\|\to\infty$, $|t|\ge t_0$ and
+$\nabla(tP-q)=o(\|x\|)$. Division by $t\|x\|^2$ shows that
+a limiting projective direction is a leading node: the $T$ axis,
+also the $u$ axis if $a=0$, and the $v$ axis if $d=0$.
+
+Near any such node use height $z$ and transverse coordinates
+$x,y=o(z)$. The phase polynomial has the form
+\[
+ P=zxy+\beta z^2+H(x,y)+k,
+\]
+where $H$ has only terms of degrees two and three. There are
+no transverse linear terms. The transverse equations, divided
+by $tz$, give
+\[
+ |x|+|y|\le C/|t|+o(|x|+|y|)+o(1/|t|).
+\]
+The terms of $\nabla H/z$ are absorbed because $(x,y)=o(z)$;
+the Gaussian cross terms divided by $tz$ are bounded by the
+same quantities. Thus $x,y=O(1/|t|)$. The height equation is
+\[
+ \partial_z(tP-q)=(2\beta t-M)z+O(1),
+\]
+where $M$ is the Gaussian square coefficient along this node.
+If $\beta\ne0$, $|2\beta t-M|$ is uniformly bounded below
+for all sufficiently large $|t|$. If $\beta=0$, the no-frame
+condition gives $M\ne0$. This contradicts the assumed small
+gradient ratio. The proof also covers bounded-$t$ subsequences
+within the chosen large-$|t|$ domain and therefore proves the
+required uniform estimate.
+\end{proof}
+
+\begin{lemma}\label{lem:axisrank}
+The full generic twisted rank of \eqref{eq:ordinaryaxes} is
+\[
+ N=5+\mathbf1_{a\ne0}+\mathbf1_{d\ne0}.
+\]
+\end{lemma}
+\begin{proof}
+The three homogenized quadratic gradient equations have total
+intersection length eight in $\mathbb P^3$. Their points at
+infinity are exactly the leading ordinary nodes, in number
+$3-\mathbf1_{a\ne0}-\mathbf1_{d\ne0}$. Each has length one.
+Indeed its local Jacobian has the two transverse columns of
+$\operatorname{Hess}F_3(w)$ and the column $\nabla(tF_2-q_2)(w)$.
+The first two have rank two and are annihilated by pairing with
+$w$; the last has nonzero pairing
+$2(tF_2-q_2)(w)$. This value is nonzero for large generic $t$
+by the stated conditions. Thus these infinity intersections are
+simple. The uniform gradient estimate gives a finite affine
+critical set; there are no other components. B\'ezout and
+Pham's tame comparison give the asserted full rank.
+\end{proof}
+
+\begin{proposition}\label{prop:axisexclusion}
+Every phase \eqref{eq:ordinaryaxes} under the stated conditions
+is not pure. Every original marked Gaussian period is zero or
+is not a finite exponential-polynomial.
+\end{proposition}
+\begin{proof}
+First let $bc\ne0$. Set $r=t^{-1/2}$, $u=rU$, $v=rV$, leaving
+$T$ unchanged. Exactly,
+\begin{align*}
+ tP-q={}&k/r^2+F_0(U,V,T)+E_r(U,V,T),\\
+ F_0={}&TUV+bU^2+cV^2-mT^2/2-\ell_TT-q_0,\\
+ E_r={}&r(aU^3+dV^3-DUT-EVT-\ell_uU-\ell_vV)\\
+       &-r^2(AU^2+BV^2+2CUV)/2,\\
+ du\,dv\,dT={}&r^2dU\,dV\,dT.
+\end{align*}
+The full polynomial twisted quotient for $F_0$ has rank five,
+including its degenerate parameter values. Here is a separate rank
+proof. Suppose $\nabla F_0=o(\|(U,V,T)\|)$ on an unbounded
+sequence. If $T$ stays bounded, the first two equations force
+both normalized $U,V$ to be nonzero; the last, divided by the
+squared norm, gives their product zero, a contradiction. If
+$T$ is unbounded, the first two equations have inverse
+$O(1/|T|)$, giving $U,V=o(1)$ and $\|(U,V,T)\|\asymp|T|$.
+The last equation then has leading term $-mT$, again a
+contradiction. This coercivity is uniform on compact sets with
+$bcm\ne0$. The coefficient domain is connected, so conservation
+of critical intersection multiplicity and Pham's tame comparison
+make its rank constant. At generic $\ell_T$, its critical
+equations give one point with $U=V=0$ and four with
+$T^2=4bc$, all simple. Hence the rank is five, also when points
+merge at the exceptional values of $\ell_T$.
+
+Choose any polynomial basis $B_1,\ldots,B_5$ of this fixed
+quotient and its dual $\lambda_1,\ldots,\lambda_5$. Then
+\[
+ L_j(a_0)=e^{kt}r^2\lambda_j\bigl(e^{E_r}a_0(rU,rV,T)\bigr)
+\]
+defines five formal horizontal functionals on the original full
+module. Coefficients are finite polynomial evaluations at every
+order. Spatial exactness is the fixed-phase conjugacy; time
+horizontality retains the displayed $r^2$ volume and the
+coordinate velocity $(u/r,v/r,0)$, whose divergence is $2/r$.
+Cartan's formula makes the remaining velocity term spatially exact.
+For every original fixed polynomial marker their values lie in
+$e^{kt}r^2\C[[r]]$.
+
+The other $P$-critical points are the off-axis points
+$p_u=(-2b/(3a),0,0)$ if $a\ne0$ and
+$p_v=(0,-2c/(3d),0)$ if $d\ne0$. They are Morse, with Hessian
+determinants $8b^3/(9a^2)$ and $8c^3/(9d^2)$. Holomorphic Morse coordinates reduce their local phases to a
+nondegenerate quadratic. Expanding the analytic Gaussian amplitude
+and volume unit and applying the quadratic Wick recurrence gives
+all-order horizontal characters. These have prefactors $e^{P(p)t}r^3$, multiplied by power series in
+$r^2$ on fixed markers. Their values may coincide with each
+other or with $k$; no separation hypothesis is used.
+
+Here is an explicit completeness test. Let $M$ bound the degree
+of the chosen $B_j$ in $U,V$. Substitute $U=u/r,V=v/r$ and
+multiply each $B_j$ by
+\[
+ C(u,v)=\prod_{p_u}(1-u/u_p)^K
+                      \prod_{p_v}(1-v/v_p)^K,\qquad K>M.
+\]
+An empty product is one. At the central fixed model this is
+$1+O(r)$, so the normalized five-by-five matrix is the identity
+at leading order. At each off-axis point its zero of order $K$
+overcomes the worst $r^{-M}$ growth of the substituted basis;
+the normalized cross values tend to zero. For the off-axis rows
+use $(u/u_p)^K$ or $(v/v_p)^K$. They have zero central leading
+values, unit value at their own Morse point and zero leading
+value at the other. The resulting full matrix has invertible
+block diagonal leading term. Its size is exactly the rank of
+Lemma~\ref{lem:axisrank}. These are therefore a full formal
+frame, including all fixed-model degeneracies and equal actions.
+
+Every zero-exponential original-marker seed has positive order,
+either $r^2$ or $r^3$. Lemma~\ref{lem:positiveformal} excludes
+a nonzero constant original marked period. Differential
+isolation and shifting $k$ then exclude every nonzero finite
+exponential-polynomial as before.
+
+It remains to treat $bc=0$. The critical equations of $P$ show
+that its values are among
+\[
+ k,\qquad k+4b^3/(27a^2)\quad(ab\ne0),\qquad
+ k+4c^3/(27d^2)\quad(dc\ne0).
+\]
+At a missing isolated point omit its displayed value. Any extra
+critical axes have value $k$. Since $bc=0$, there are at most
+two values, including every intersecting-axis or degenerate
+case. Lemma~\ref{lem:axisuniformgradient} and
+Corollary~\ref{cor:twocriticalvalues} apply. This completes both
+disjoint branches and proves the proposition.
+\end{proof}
+
+\begin{corollary}\label{cor:ordinarycomplete}
+Frame extraction is proved for all three ordinary-node leading
+types: irreducible nodal cubics, transverse line--conic unions,
+and three nonconcurrent lines. In fact none of these leading
+types permits a pure polynomial.
+\end{corollary}
+\begin{proof}
+If all leading nodes have $F_2\ne0$, use the coercive-node
+criterion. Otherwise an isotropic zero-$F_2$ node supplies the
+frame directly. In the absence of such a frame, the common
+normal form applies and satisfies the no-frame conditions at
+every other node. The exhaustive critical-set table is now
+entirely covered by Proposition~\ref{prop:ordinaryfinite},
+Corollary~\ref{cor:ordinaryconics}, and
+Proposition~\ref{prop:axisexclusion}. Thus a pure polynomial
+must have a frame.
+
+In that frame, the quadratic coefficient of $W$ in the cubic
+leading form is the tangent quadratic at the chosen ordinary
+node. It has rank two, so its discriminant is nonzero.
+Proposition~\ref{prop:nondeglog} excludes purity in that branch
+as well. This proves the stronger assertion.
+\end{proof}

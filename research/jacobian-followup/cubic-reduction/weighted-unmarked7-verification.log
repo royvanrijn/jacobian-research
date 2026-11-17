@@ -1,0 +1,12 @@
+REPLAYED FIELD graph
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/verify_weighted_unmarked7.py", line 170, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/verify_weighted_unmarked7.py", line 133, in main
+    fieldcert('graph','f3**16');fieldcert('conic','f4**2*(4*f2*f4-f3**2)**7');fieldcert('cubicgraph','f2*f1**5')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/verify_weighted_unmarked7.py", line 130, in fieldcert
+    P,derived=branch(mode);width=len(P);folder=root/mode;cp=folder/'certificate.json';cert=load(cp);assert cert['source_sha256']==sha(HERE/'weighted_unmarked7_lift.py') and cert['input_sha256']==sha(folder/'input.json') and cert['singular_source_sha256']==sha(folder/'lift.sing') and cert['variables']==P;gen=[decode(p,width) for p in cert['generators']];equal_generators(derived,gen);target=decode(cert['target'],width);assert target==expression(targettext,P);multipliers=[decode(p,width) for p in cert['multipliers']];assert len(gen)==len(multipliers);result={}
+                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-17",
+  "version": "v009",
+  "pages": 43,
+  "pdf_sha256": "2234f3ebf88d4b1cc8bf93e192dab6544ccca1ca413b4df5f350afda8da91c25",
+  "manuscript_inputs_sha256": {
+    "manuscript.tex": "b2c5a1bb47ead151f39d096abd7e827fa37a5f0879d725170b8652ef19285d9f",
+    "formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+    "punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+    "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+    "analytic_core.tex": "e87ab766d4d078043d7dafa38b77d54f9c7a975cbeb2f380881abfc6e82d7216",
+    "laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
+    "gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
+    "ordinary_finite_exclusion.tex": "9da1cd85ef769a7218e728b8a01907f1b8eea60c7487ed716d02f8bd40c6077d",
+    "hyperbolic_suspension.tex": "b9ab71326fa699dc1b4e9cc188f04a410394c9b912b9d3caf88aa72d47a1ca83",
+    "uniform_cut_decay.tex": "cbf2c3410561ecf1bec88e1cb6821e8df44a5b84e7ee68abf7a3e00a0b2828c2",
+    "ordinary_axis_exclusion.tex": "1a6386300ace0a134963fab8a0b138068849b6d3fd4bd2d35619330d4a0f86c3"
+  },
+  "layout_verified": true,
+  "method": "Two pdflatex passes for manuscript and seven-page self-contained canonical. All43pages rendered through Poppler85dpi;four contact sheets and full new pages36-40 visually inspected. Final notation-only refinement rebuilt twice and page39 rerendered/inspected. No overfull lines or undefined references.",
+  "overfull_boxes": 0,
+  "undefined_references": false,
+  "visual_defects_found": false,
+  "submission_ready": false,
+  "mathematical_completeness_verified_by_layout": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

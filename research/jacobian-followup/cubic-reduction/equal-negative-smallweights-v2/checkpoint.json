@@ -1,0 +1,349 @@
+{
+  "status": "complete",
+  "source_sha256": "750df72d55857396f51a15e086e307e420e6d980d2ab9d4eba2038e9036d4847",
+  "cases": [
+    {
+      "name": "p2q1-quartic-first-bb",
+      "parameters": 5,
+      "generators": 6,
+      "model": "p2q1-quartic-first-bb.json",
+      "model_sha256": "7c002146161b31834eed7b4c115659e8997b81f611f8633470b3802e20d72088",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-quartic-first-bc",
+      "parameters": 5,
+      "generators": 9,
+      "model": "p2q1-quartic-first-bc.json",
+      "model_sha256": "705a1cecec877eadc3ca8866b418d8e76e55b1fce3ea7887d4fdf481fbd95e12",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-quartic-first-b-bc",
+      "parameters": 5,
+      "generators": 11,
+      "model": "p2q1-quartic-first-b-bc.json",
+      "model_sha256": "eb39ac3837fffbbcf5f5bdac101ddf0b1d3419745af908a647e487369acc8aec",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-quartic-first-cc",
+      "parameters": 5,
+      "generators": 3,
+      "model": "p2q1-quartic-first-cc.json",
+      "model_sha256": "8e35f2bb5446335fd065a3120f54fdf795e11610a81b7055e217cdfa7946b20d",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-quartic-first-cb",
+      "parameters": 5,
+      "generators": 8,
+      "model": "p2q1-quartic-first-cb.json",
+      "model_sha256": "b231e7bb9fa6151d4934f9ae554f9103f188d50c57e7f267ceb953da94bd203c",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-mixed-bb",
+      "parameters": 8,
+      "generators": 14,
+      "model": "p2q1-mixed-bb.json",
+      "model_sha256": "7229d3f73980b8162a240097e451d3989ff0ae210906c7ece66728e889a1f0a3",
+      "status": "primary-unit",
+      "seconds": 0.044,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-mixed-bc",
+      "parameters": 8,
+      "generators": 17,
+      "model": "p2q1-mixed-bc.json",
+      "model_sha256": "f6d8539352c555da031365be4eceb39ba4070ebb82a6e671e678657c143e1f2d",
+      "status": "primary-unit",
+      "seconds": 0.036,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-mixed-b-bc",
+      "parameters": 8,
+      "generators": 20,
+      "model": "p2q1-mixed-b-bc.json",
+      "model_sha256": "205d0eb278f5ccf9f1bca18835b98f20628a1571cc98641c99bd4d5651976474",
+      "status": "primary-unit",
+      "seconds": 0.075,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-mixed-cc",
+      "parameters": 8,
+      "generators": 14,
+      "model": "p2q1-mixed-cc.json",
+      "model_sha256": "79cbf142b9ffc69a428f15b299808ecdf2f0a2f4d5758ef4a53abf8884374eb5",
+      "status": "primary-unit",
+      "seconds": 0.029,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p2q1-mixed-cb",
+      "parameters": 8,
+      "generators": 16,
+      "model": "p2q1-mixed-cb.json",
+      "model_sha256": "9351669d3505ff927559fa3d008d1e83e95f11f47560812ed6261cf252912ee6",
+      "status": "primary-unit",
+      "seconds": 0.013,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p1q2-quartic-first-b",
+      "parameters": 5,
+      "generators": 6,
+      "model": "p1q2-quartic-first-b.json",
+      "model_sha256": "c81c46fcf7fa3cf1a6b763c311ed59f9128728934e5cdabacf74d099b5de61fc",
+      "status": "primary-unit",
+      "seconds": 0.0,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p1q2-quartic-first-c",
+      "parameters": 5,
+      "generators": 3,
+      "model": "p1q2-quartic-first-c.json",
+      "model_sha256": "ce8c31628e7b269704a8010f26dd8d5de182daf54754b2902d0c747b8c37ce40",
+      "status": "primary-unit",
+      "seconds": 0.001,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p1q2-mixed-b",
+      "parameters": 7,
+      "generators": 9,
+      "model": "p1q2-mixed-b.json",
+      "model_sha256": "aee3c5c061af6a23cf7a15faea614c6957f004a5c97e46f62b3fbc100ba72ef4",
+      "status": "primary-unit",
+      "seconds": 0.011,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "p1q2-mixed-c",
+      "parameters": 7,
+      "generators": 9,
+      "model": "p1q2-mixed-c.json",
+      "model_sha256": "9c9aba095a0e2d800607dd0f67ad33312cb2a495f8c0a08da3d902c3d23086d6",
+      "status": "primary-unit",
+      "seconds": 0.005,
+      "basis": [
+        [
+          {
+            "exponent": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "seconds": 0.722,
+  "scope": "Primary14 normal charts for primitive ratios2/1 and1/2. Independent coefficient/unit replay and complete normalization proof required."
+}

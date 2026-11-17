@@ -1,0 +1,10 @@
+{
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sealed_imports_sha256": {
+    "STEIN_ACTION_AND_RANK_ONE_LATTICES.md": "83ec56cb57a3321c77d57d79635c7ca68f3b381c508ce785331638de3bf16539",
+    "GAUSSIAN_G_FUNCTIONS_AND_GLOBAL_REGULAR_CORE.md": "bf071e7ac5f8c544a804ab9794812bfb18e5155c9907f2812f122176c2aafaba",
+    "gaussian_gfunction_regular_core_verification.json": "51fd1b528e665cfe5d7430e4235e257d3e29dd4fa3deddf57871ffebeebb23c6",
+    "BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md": "a2cff821b7cee9629235dec935ad231b3db389a03b3fca650b9a35c935451cd9"
+  }
+}

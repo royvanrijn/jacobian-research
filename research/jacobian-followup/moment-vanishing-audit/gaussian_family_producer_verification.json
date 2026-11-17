@@ -1,0 +1,462 @@
+{
+  "completed": true,
+  "canonical_proof_sha256": "8bebfc9f9ec74ad576824547c5522b71a963d4e328167c28243fedf8cd394ed7",
+  "generator_sha256": "6587625b6bdd4ed7dd3e15bd84fac36a9560ff1e610383cb1b4b957ceedcfb84",
+  "core_sha256": "e71393d6a80729cd1343278e30e0e8fe251fb374dc2f2e592c764064299d1d6f",
+  "checker_sha256": "db1a01b549e2cff27c206222d3c16acc6fc6bd80febee7402a372c05dc88641e",
+  "runtime_sha256": "ca254fe78bdf1b008b240e54b885f6f861b4c0de12973a66b5bdc62c9185517c",
+  "family_controls": [
+    {
+      "name": "universal_affine",
+      "safe_ideal": [
+        [
+          [
+            [
+              0,
+              1
+            ],
+            "1"
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "normalization_ideal": [],
+      "coefficient_ring_safe": false,
+      "normalization_torsion_exponent": 1,
+      "node_dimensions": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "singular_safe_cusp",
+      "safe_ideal": [
+        [
+          [
+            [
+              3,
+              0
+            ],
+            "1"
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            "-1"
+          ]
+        ]
+      ],
+      "normalization_ideal": [],
+      "coefficient_ring_safe": false,
+      "normalization_torsion_exponent": 1,
+      "node_dimensions": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "zero_divisor_normalization",
+      "safe_ideal": [
+        [
+          [
+            [
+              1,
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "normalization_ideal": [
+        [
+          [
+            [
+              0,
+              1
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "coefficient_ring_safe": false,
+      "normalization_torsion_exponent": 1,
+      "node_dimensions": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "nilpotent_nonpure_safe",
+      "safe_ideal": [
+        [
+          [
+            [
+              1
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "normalization_ideal": [
+        [
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "coefficient_ring_safe": true,
+      "normalization_torsion_exponent": 3,
+      "node_dimensions": [
+        0
+      ]
+    },
+    {
+      "name": "split_safe_cubic",
+      "safe_ideal": [],
+      "normalization_ideal": [
+        [
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "coefficient_ring_safe": true,
+      "normalization_torsion_exponent": 1,
+      "node_dimensions": [
+        1
+      ]
+    },
+    {
+      "name": "ordinary_thick_torsion",
+      "safe_ideal": [
+        [
+          [
+            [
+              1,
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "normalization_ideal": [
+        [
+          [
+            [
+              0,
+              2
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "coefficient_ring_safe": false,
+      "normalization_torsion_exponent": 2,
+      "node_dimensions": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "algebraic_coefficient",
+      "safe_ideal": [
+        [
+          [
+            [
+              2
+            ],
+            "1"
+          ],
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "normalization_ideal": [
+        [
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "coefficient_ring_safe": true,
+      "normalization_torsion_exponent": 1,
+      "node_dimensions": [
+        0
+      ]
+    },
+    {
+      "name": "zero_algebra",
+      "safe_ideal": [
+        [
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "normalization_ideal": [
+        [
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "coefficient_ring_safe": true,
+      "normalization_torsion_exponent": 1,
+      "node_dimensions": []
+    },
+    {
+      "name": "zero_phase",
+      "safe_ideal": [],
+      "normalization_ideal": [
+        [
+          [
+            [
+              0
+            ],
+            "1"
+          ]
+        ]
+      ],
+      "coefficient_ring_safe": true,
+      "normalization_torsion_exponent": 1,
+      "node_dimensions": [
+        1
+      ]
+    }
+  ],
+  "geometry_controls": {
+    "nonlinear_conormal_ranks": [
+      1,
+      2,
+      1
+    ],
+    "ordinary_restriction_uses_codimension_cohomology": true,
+    "punctual_source_degree_zero_would_be_wrong": true,
+    "central_Euler_is_not_jointly_holonomic": true,
+    "vertical_graph_critical_parameter": [
+      [
+        [
+          [
+            1
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "irregular_origin_restriction_is_zero": true
+  },
+  "capped_control": {
+    "status": "UNKNOWN",
+    "timeout_seconds": 30,
+    "restarted": false,
+    "historical_core_revision": true
+  },
+  "universal_full_space_controls": [
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      1,
+      3
+    ],
+    [
+      2,
+      2,
+      6
+    ],
+    [
+      2,
+      3,
+      10
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      3,
+      1,
+      4
+    ],
+    [
+      3,
+      2,
+      10
+    ],
+    [
+      3,
+      3,
+      20
+    ]
+  ],
+  "rejection_controls": [
+    {
+      "dimension": 0,
+      "parameter_count": 1,
+      "phase_terms": []
+    },
+    {
+      "dimension": 1,
+      "parameter_count": 0,
+      "phase_terms": []
+    },
+    {
+      "dimension": 1,
+      "parameter_count": 1,
+      "phase_terms": [
+        [
+          [
+            1
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "dimension": 1,
+      "parameter_count": 1,
+      "phase_terms": [],
+      "precision_matrix": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "dimension": 2,
+      "parameter_count": 1,
+      "phase_terms": [],
+      "precision_matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "dimension": 1,
+      "parameter_count": 1,
+      "phase_terms": [
+        [
+          [
+            1,
+            1
+          ],
+          0.5
+        ]
+      ]
+    },
+    "incomplete CAS output",
+    "incomplete CAS output",
+    "incomplete CAS output"
+  ],
+  "CLI_executed_in_initial_generation": true,
+  "retained_example_files_sha256": {
+    "gaussian_family_examples/geometry_controls/controls.stdout": "6720e5041a764f5e30529c7c9a6382574394a61ac6f114944fbc8faa62eb1ec9",
+    "gaussian_family_examples/geometry_controls/controls.m2": "20d52050ce7bc22f19d0a22f481951205e2d3323316f3005e7ecd1c5c53e088f",
+    "gaussian_family_examples/ordinary_thick_torsion/result.json": "e4c6d6f8a71b14fe493684cc77425ace81af3893f0008a7cb9ae1a46a207b874",
+    "gaussian_family_examples/ordinary_thick_torsion/input.json": "73beb5dfa99fedcd9cb14658f758df1542cdae541188f17651083f062f0a655b",
+    "gaussian_family_examples/zero_phase/result.json": "cad376d944638fa9ce9dfffeb32022d172c7d76d1d3ac663a94886e4f5af868f",
+    "gaussian_family_examples/zero_phase/input.json": "0feb0c18fd4513d7736838471c14c0e9ad4db2fef2263ccd38e1a5e77b008233",
+    "gaussian_family_examples/split_safe_cubic/result.json": "da391de3f10f3ab503abba58ce4cb59e66df3f5c9c47f3323d43a5c4c5e375e3",
+    "gaussian_family_examples/split_safe_cubic/input.json": "4d661831f63f619d8bb5298ad0d9a27cee950030bda8e0ed96a796301ee74d38",
+    "gaussian_family_examples/zero_divisor_normalization/result.json": "ffb3bf22b9810f422e9c039994dc5222f91c97f8fde248647ee3baae00c3624f",
+    "gaussian_family_examples/zero_divisor_normalization/input.json": "f19391be6dd5d4ae97c42755bcc5a9719a5a3e5662a3c384711740c183b38ea7",
+    "gaussian_family_examples/algebraic_coefficient/result.json": "271b663aaf4eda5fb805e257b52077f170a8d7912224b78418c2897b8cebfc03",
+    "gaussian_family_examples/algebraic_coefficient/input.json": "ede6dd199377f60502bbe616a7f5c530fcefdc1909f729c8e951d1ca1f783b52",
+    "gaussian_family_examples/capped_cusp_degeneration/result.json": "743c9cea8dd7e28bb678ab1062a3e41e8ec0b366d83d47ea479cded579f58834",
+    "gaussian_family_examples/capped_cusp_degeneration/core_at_timeout.m2": "4beb66772c0c20dd0ce6473ba1a9c9c5762e87d8d1bdea86a57aef1d59c5bff7",
+    "gaussian_family_examples/capped_cusp_degeneration/timeout_manifest.json": "4b28b0996c927fab9d1fb168ec8ffb577cdff38b48358578f078f94444cf678e",
+    "gaussian_family_examples/capped_cusp_degeneration/family.stdout": "b0e5b20939309cd0a9ff17b00050388a4f44f067e7de7740c75a880c90791c61",
+    "gaussian_family_examples/capped_cusp_degeneration/family.m2": "080af3dbc75d2565becfff315e99d94069fa744ee47afeaf2150ed1214c4c37c",
+    "gaussian_family_examples/singular_safe_cusp/result.json": "cf2bc67d7199ea2032b168408d140c7ba1a6c92fb25f2294b7a349e3ae0501e0",
+    "gaussian_family_examples/singular_safe_cusp/input.json": "eefdfda8e79bda5e6d5d88a225e0e1ca750a3a99803c6803928db0af90957519",
+    "gaussian_family_examples/universal_affine/result.json": "88cbedd9f0b98bdb5851adf18f92d73d8410296e6ef257bc64939b244d4c97ed",
+    "gaussian_family_examples/universal_affine/input.json": "c9dc87e0df0152bec602d276aea6530f4dd79eb15caace19b4783a74bbc3ea52",
+    "gaussian_family_examples/zero_algebra/result.json": "481551d6726c37c15a9dd4cfb14aaddd28818a0f41f63b78d75e6d35dccd9eb4",
+    "gaussian_family_examples/zero_algebra/input.json": "96d98bdab3a757465fa0718de99814e8b5f7ed74b184d1b99a450566b4391839",
+    "gaussian_family_examples/nilpotent_nonpure_safe/result.json": "f09ac5b9ca76b9489512d9dbee19ec7e18cd9f3e558021967add2b02ba622b10",
+    "gaussian_family_examples/nilpotent_nonpure_safe/input.json": "4455a42df812bc02b11b2cdbba7daa0130502874ab180ba9f9de8e44aee8f05d",
+    "gaussian_family_examples/ordinary_thick_torsion/cas/family.stdout": "71103b97f5cbd2da180fe0d76a245d00fbfc0a4b5cf6ff072b94edccdbe4b110",
+    "gaussian_family_examples/ordinary_thick_torsion/cas/family.m2": "71bfc2bfd6f9876acd93be9db9a7d98cb0c0a30b295f0c1a28250de21b41a211",
+    "gaussian_family_examples/zero_phase/cas/family.stdout": "02473d48e952afbef72b2cc482103cdf865d86278d633e68302ab3c8d40b9238",
+    "gaussian_family_examples/zero_phase/cas/family.m2": "259c9a3e138f455848b56b36915a85002840ba5874e75a4501f17f4134615de8",
+    "gaussian_family_examples/split_safe_cubic/cas/family.stdout": "02473d48e952afbef72b2cc482103cdf865d86278d633e68302ab3c8d40b9238",
+    "gaussian_family_examples/split_safe_cubic/cas/family.m2": "84e4e8804a369ab8a050bc6f8b6c0013e8f54f8829f602fdff102473b86808d4",
+    "gaussian_family_examples/zero_divisor_normalization/cas/family.stdout": "4a529bade195681ea5f72f698546d2a9c8c966e2cab9140d75d8d1db63866db7",
+    "gaussian_family_examples/zero_divisor_normalization/cas/family.m2": "3affd1fb4189b2d8c9698a36ba78af36ecffab17a0143d77778dc9e2f37b4a9b",
+    "gaussian_family_examples/algebraic_coefficient/cas/family.stdout": "510b97f571e19ba46afd74c6bf5d083fb10913652062fcb74647b59b2374941b",
+    "gaussian_family_examples/algebraic_coefficient/cas/family.m2": "8d8b572c3a965a469315323f8ff12b1ef669349e21e21a92313588750f2e9a05",
+    "gaussian_family_examples/singular_safe_cusp/cas/family.stdout": "da42600e9e7d7397c0b071bfb5d78d9e060d3b5f9cb5cfb5851794d883845713",
+    "gaussian_family_examples/singular_safe_cusp/cas/family.m2": "c1d221ef6e5b3180fd26c3b2e816c61ac9a3109795d0e0c6f82d0a9bd8a7ef05",
+    "gaussian_family_examples/universal_affine/cas/family.stdout": "d9c9c37208b20e9dd791e441a4468476d15e69f823ca5e4a414130b585fc968a",
+    "gaussian_family_examples/universal_affine/cas/family.m2": "28a86c22323d9e76ce003c19a4913043694d5c124d398ff09cda77bebab13c8b",
+    "gaussian_family_examples/zero_algebra/cas/family.stdout": "8eb5fb21dd81965bd952445573029241d68964cb9472b3329da51d64ff73d196",
+    "gaussian_family_examples/zero_algebra/cas/family.m2": "397ab612effcc58f1acf1d4c1b69306c25ce7cefaaf972bfb2d334d8e7b6eb53",
+    "gaussian_family_examples/nilpotent_nonpure_safe/cas/family.stdout": "332c1db0b35402a50118e6392805d2b5cf3e85257160a2dd6c8477b65e3afab9",
+    "gaussian_family_examples/nilpotent_nonpure_safe/cas/family.m2": "cff9e49f8188b1437ef98a7137209ed40f3f0b1a42934217dc0d681729d48407"
+  },
+  "assurance": "small CAS executions and trace/ideal controls, not universal independent proof assurance",
+  "numerical_universal_cutoff_computed": false,
+  "ordinary_full_cutoff_ideal_producer_implemented": false
+}

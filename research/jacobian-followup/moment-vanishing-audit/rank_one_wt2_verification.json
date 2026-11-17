@@ -1,0 +1,362 @@
+{
+  "scope": "Rank-one WT2 algebra and finite regressions supporting the written all-W-linear cubic theorem; analytic proof is not computed.",
+  "frame_criterion": "PASS: universal D_v^2 identity and the four omitted W-power coefficients",
+  "algebra": {
+    "division": "PASS: quotient linear, remainder R0(Z)+T*R1(Z)",
+    "restriction_leading_degrees": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "q3_phase_numerator_degree": 4,
+    "q4_source_numerator_degree": 4,
+    "flattened_quadratic_coefficient": "-1/(2q)",
+    "flattened_log_derivative_residue": "-1/2",
+    "b_zero_degree_cases": [
+      {
+        "highest_Z_power": 3,
+        "coefficient_T_degree": 0,
+        "leading_T_degree": 6,
+        "lower_T_degree_bound": 5,
+        "possible_escape": false
+      },
+      {
+        "highest_Z_power": 2,
+        "coefficient_T_degree": 0,
+        "leading_T_degree": 4,
+        "lower_T_degree_bound": 4,
+        "possible_escape": false
+      },
+      {
+        "highest_Z_power": 2,
+        "coefficient_T_degree": 1,
+        "leading_T_degree": 5,
+        "lower_T_degree_bound": 4,
+        "possible_escape": false
+      },
+      {
+        "highest_Z_power": 1,
+        "coefficient_T_degree": 0,
+        "leading_T_degree": 2,
+        "lower_T_degree_bound": 3,
+        "possible_escape": true
+      },
+      {
+        "highest_Z_power": 1,
+        "coefficient_T_degree": 1,
+        "leading_T_degree": 3,
+        "lower_T_degree_bound": 3,
+        "possible_escape": false
+      },
+      {
+        "highest_Z_power": 1,
+        "coefficient_T_degree": 2,
+        "leading_T_degree": 4,
+        "lower_T_degree_bound": 3,
+        "possible_escape": false
+      }
+    ]
+  },
+  "escape_models": [
+    {
+      "p_r_n_m": [
+        1,
+        -1,
+        1,
+        2
+      ],
+      "escape_scale": "2",
+      "highest_action_power": "3",
+      "Hessian_nonzero": true,
+      "bounded_plus_escape_dimension": 1
+    },
+    {
+      "p_r_n_m": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "escape_scale": "1",
+      "highest_action_power": "2",
+      "Hessian_nonzero": true,
+      "bounded_plus_escape_dimension": 1
+    },
+    {
+      "p_r_n_m": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "escape_scale": "1/2",
+      "highest_action_power": "3/2",
+      "Hessian_nonzero": true,
+      "bounded_plus_escape_dimension": 2
+    },
+    {
+      "p_r_n_m": [
+        1,
+        0,
+        1,
+        4
+      ],
+      "escape_scale": "1/3",
+      "highest_action_power": "4/3",
+      "Hessian_nonzero": true,
+      "bounded_plus_escape_dimension": 3
+    },
+    {
+      "p_r_n_m": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "escape_scale": "1",
+      "highest_action_power": "3",
+      "Hessian_nonzero": true,
+      "bounded_plus_escape_dimension": 2
+    },
+    {
+      "p_r_n_m": [
+        1,
+        0,
+        2,
+        4
+      ],
+      "escape_scale": "1/2",
+      "highest_action_power": "2",
+      "Hessian_nonzero": true,
+      "bounded_plus_escape_dimension": 3
+    },
+    {
+      "p_r_n_m": [
+        1,
+        0,
+        3,
+        4
+      ],
+      "escape_scale": "1",
+      "highest_action_power": "4",
+      "Hessian_nonzero": true,
+      "bounded_plus_escape_dimension": 3
+    },
+    {
+      "p_r_n_m": [
+        2,
+        1,
+        2,
+        3
+      ],
+      "escape_scale": "1",
+      "highest_action_power": "4",
+      "Hessian_nonzero": true,
+      "bounded_plus_escape_dimension": 2
+    }
+  ],
+  "connection_models": [
+    {
+      "case": "b0_Z3",
+      "phase_degree": 6,
+      "H_degree": 24,
+      "max_N_degree": 23,
+      "bound": 28,
+      "exact_reduction_witnesses": "PASS"
+    },
+    {
+      "case": "b0_Z2",
+      "phase_degree": 4,
+      "H_degree": 12,
+      "max_N_degree": 11,
+      "bound": 20,
+      "exact_reduction_witnesses": "PASS"
+    },
+    {
+      "case": "b0_exceptional_escape",
+      "phase_degree": 3,
+      "H_degree": 3,
+      "max_N_degree": 6,
+      "bound": 16,
+      "exact_reduction_witnesses": "PASS"
+    },
+    {
+      "case": "b_nonzero_alpha",
+      "phase_degree": 4,
+      "H_degree": 16,
+      "max_N_degree": 15,
+      "bound": 20,
+      "exact_reduction_witnesses": "PASS"
+    },
+    {
+      "case": "b_nonzero_beta",
+      "phase_degree": 3,
+      "H_degree": 13,
+      "max_N_degree": 12,
+      "bound": 16,
+      "exact_reduction_witnesses": "PASS"
+    },
+    {
+      "case": "flattened_constant",
+      "phase_degree": 2,
+      "H_degree": 8,
+      "max_N_degree": 7,
+      "bound": 12,
+      "exact_reduction_witnesses": "PASS"
+    },
+    {
+      "case": "flattened_linear",
+      "phase_degree": 2,
+      "H_degree": 8,
+      "max_N_degree": 10,
+      "bound": 12,
+      "exact_reduction_witnesses": "PASS"
+    },
+    {
+      "case": "safe_null_boundary",
+      "phase_degree": 2,
+      "H_degree": 0,
+      "max_N_degree": 0,
+      "bound": 12,
+      "exact_reduction_witnesses": "PASS"
+    }
+  ],
+  "Wick_GL1_cases": [
+    {
+      "case": "b0_dense",
+      "moments_through_8": [
+        "2",
+        "25",
+        "664",
+        "40763",
+        "3020866",
+        "324094687",
+        "41802672500",
+        "6874317891289"
+      ]
+    },
+    {
+      "case": "b1_dense",
+      "moments_through_8": [
+        "3",
+        "23",
+        "421",
+        "46887",
+        "3324701",
+        "464156413",
+        "55528320303",
+        "12015506643521"
+      ]
+    },
+    {
+      "case": "b0_escape",
+      "moments_through_8": [
+        "0",
+        "17",
+        "0",
+        "11691",
+        "0",
+        "38685375",
+        "0",
+        "354636776025"
+      ]
+    },
+    {
+      "case": "flattened_constant",
+      "moments_through_8": [
+        "7/6",
+        "89/36",
+        "1759/216",
+        "42001/1296",
+        "744791/7776",
+        "-41434583/46656",
+        "-9622748561/279936",
+        "-1385748763231/1679616"
+      ]
+    },
+    {
+      "case": "flattened_linear",
+      "moments_through_8": [
+        "1/2",
+        "7/4",
+        "3/8",
+        "129/16",
+        "105/32",
+        "12615/64",
+        "97755/128",
+        "2381505/256"
+      ]
+    },
+    {
+      "case": "safe_WT2",
+      "moments_through_8": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": "safe_general_product",
+      "moments_through_8": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "flattened_closed_Gaussian_series": "PASS through 8",
+  "mixed_weight_checks": 24,
+  "sharp_product_cases": 5,
+  "rank_one_gate_table": [
+    {
+      "d": 2,
+      "B": 12,
+      "prefix": 13
+    },
+    {
+      "d": 3,
+      "B": 16,
+      "prefix": 50
+    },
+    {
+      "d": 4,
+      "B": 20,
+      "prefix": 123
+    },
+    {
+      "d": 5,
+      "B": 24,
+      "prefix": 244
+    },
+    {
+      "d": 6,
+      "B": 28,
+      "prefix": 425
+    }
+  ],
+  "full_W_linear_pure_gate": 888,
+  "full_W_linear_mixed_cutoff": "3*deg Q, sharp by existing shear theorem",
+  "proof_boundary": "Written shrinking-period observation and imported Hien--Roucairol comparison; no external review, formal verification or global frame normalization.",
+  "sympy_version": "1.14.0",
+  "elapsed_seconds": 1.2232473760086577,
+  "checker_sha256": "632aa6e6ae7c2fc8249df9b4faefef7840a65b42f39c41e063b0781622b2cff1",
+  "input_hashes": {
+    "verify_quadratic_w_log_periods.py": "1f2dd77354897ba84c2f8c6aabe8b6497ea93281932c6321f07291653502999f",
+    "verify_moment_transfers.py": "d543ed356a45a6f51c8fd9ddd5a8fd235853127dffd665641326e41c68c6dc67",
+    "verify_mixed_period_infinity.py": "8c5dd2cadcb166ef59955ab043807539bc140dc8e252c29895017baacf73e536"
+  }
+}

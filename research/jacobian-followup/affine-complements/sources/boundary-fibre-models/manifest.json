@@ -1,0 +1,57 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path_relative_to_affine_complements": "sources/boundary-fibre-models/stacks-0C1B.html",
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "used_statement": "Characteristic-zero Riemann-Hurwitz for finite maps of completed smooth curves. Used to classify a finite etale quotient of C* with at most two punctures; the monomial deck and primitive-element arguments are written separately.",
+      "bytes": 28889,
+      "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/coordinate-pencil-matrix/xie-valuation-intersections.pdf",
+      "url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/423/9433-affinegeo20140928.pdf",
+      "used_statement": "Exact full primitive negative-definite valuation matrix theorem, imported through sealed PF2RULED50. The new grouped Schur budget uses the same theorem and source with its prior complete page audit.",
+      "bytes": 521592,
+      "sha256": "c6d983764df0dffa7d899ed5b72a74c29dd3876272a6b0f3d7b702ddf1ec9b7e",
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_claims": [
+    "PF2RULED50",
+    "PF2RULED49",
+    "PF2RULED48",
+    "PF2RULED46",
+    "PF2OMIT7"
+  ],
+  "new_written_steps": [
+    "zero cross pairing for distinct common-coordinate boundary values",
+    "full grouped Schur energy budget",
+    "explicit four-generator affine smooth family for every number of unramified pieces",
+    "global exact primitive and whole marked source embedding",
+    "primitive monomial from finite etale C* residue covers and the Keller differential at the fixed origin",
+    "actual finite-map norm specializations",
+    "extra-end negative control for the incomplete compact-curve shortcut"
+  ],
+  "related_primary_literature_not_imported": [
+    {
+      "url": "https://arxiv.org/abs/math/0511282",
+      "title": "Flenner-Kaliman-Zaidenberg, Completions of C*-surfaces",
+      "boundary": "Useful DPD context only; no classification or completion theorem is used to infer affineness. Both localized charts and global source embedding are proved explicitly."
+    }
+  ],
+  "not_claimed": [
+    "an unconditional upper bound on the number of unramified primes; the all-simple-D sector at R order>=3 has conditional bounds",
+    "a finite Keller map from affine controls",
+    "a target C* action or ruling",
+    "monogenic normal finite algebra",
+    "negative definiteness sufficient for affineness",
+    "complete-curve exclusion with unaccounted infinity ends",
+    "full quartic or higher-degree exclusion"
+  ],
+  "formal_verification": false,
+  "independent_full_reproof": false,
+  "external_review": false,
+  "novelty_priority": false
+}

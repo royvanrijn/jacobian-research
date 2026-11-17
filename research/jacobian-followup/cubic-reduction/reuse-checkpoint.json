@@ -1,0 +1,136 @@
+{
+  "boundary": "Bounded beam with greedy zero-cost closure; no optimality claim.",
+  "helper_sha256": {
+    "search.py": "f68d96480bd91f49a869692be9e0bfda87bd5929a7aee5eb7d418fa74eeca561",
+    "verify.py": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd"
+  },
+  "log": [
+    {
+      "best_metric": [
+        7,
+        45,
+        8,
+        16
+      ],
+      "candidates": 1,
+      "dimension": 3,
+      "retained": 1,
+      "seconds": 0.0
+    },
+    {
+      "best_metric": [
+        6,
+        25,
+        8,
+        19
+      ],
+      "candidates": 1,
+      "dimension": 4,
+      "retained": 1,
+      "seconds": 0.001
+    },
+    {
+      "best_metric": [
+        5,
+        17,
+        8,
+        22
+      ],
+      "candidates": 13,
+      "dimension": 5,
+      "retained": 13,
+      "seconds": 0.003
+    },
+    {
+      "best_metric": [
+        5,
+        18,
+        9,
+        25
+      ],
+      "candidates": 35,
+      "dimension": 6,
+      "retained": 35,
+      "seconds": 0.018
+    },
+    {
+      "best_metric": [
+        5,
+        14,
+        8,
+        28
+      ],
+      "candidates": 152,
+      "dimension": 7,
+      "retained": 152,
+      "seconds": 0.044
+    },
+    {
+      "best_metric": [
+        4,
+        8,
+        8,
+        34
+      ],
+      "candidates": 411,
+      "dimension": 8,
+      "retained": 411,
+      "seconds": 0.195
+    },
+    {
+      "best_metric": [
+        4,
+        8,
+        8,
+        36
+      ],
+      "candidates": 1458,
+      "dimension": 9,
+      "retained": 800,
+      "seconds": 0.739
+    },
+    {
+      "best_metric": [
+        4,
+        6,
+        6,
+        45
+      ],
+      "candidates": 3769,
+      "dimension": 10,
+      "retained": 800,
+      "seconds": 2.021
+    },
+    {
+      "best_metric": [
+        4,
+        3,
+        3,
+        50
+      ],
+      "candidates": 4148,
+      "dimension": 11,
+      "retained": 800,
+      "seconds": 2.691
+    },
+    {
+      "best_metric": [
+        4,
+        2,
+        2,
+        54
+      ],
+      "candidates": 2154,
+      "dimension": 12,
+      "retained": 800,
+      "seconds": 3.462
+    }
+  ],
+  "parameters": {
+    "beam": 800,
+    "max_dimension": 13
+  },
+  "processed": 3013,
+  "source_sha256": "6abd1947412eeef1b38c4964a7f93d09b74b25beae2076bdf85c68037d43666c",
+  "status": "running"
+}

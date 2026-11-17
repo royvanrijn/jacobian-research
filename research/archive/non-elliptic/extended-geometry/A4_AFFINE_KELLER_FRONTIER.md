@@ -1,5 +1,12 @@
 # The affine \(A_4\) Keller frontier
 
+**Construction status, 15 November 2026:** [KMFI66 and the construction-closure bridge](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+exclude the proposed A4-preserving polynomial Keller completion on ordinary
+affine space in every dimension and faithful transitive action, subject to
+the internal central-cover proof. All local calculations below are retained.
+Construction continuations are historical; unresolved local classifications
+do not reopen this objective. Wright's A4 boundary states remain separate.
+
 ## 1. Outcome
 
 The oriented-quartic checkpoint gave a determinant-one \(A_4\) inverse cover
@@ -308,7 +315,7 @@ Thus the defect-multiple ambient route is closed.  A viable lift must work
 directly with the cone ledger (5.2) or change the oriented map away from the
 defect-preserving class (6.1).
 
-## 7. Next attack
+## 7. Next attack (historical; global objective closed)
 
 Only the cone-ledger route survives.  The
 [exact target-ledger identity](A4_LEDGER_REDUCTION_AND_RIGIDITY.md)

@@ -1,0 +1,81 @@
+{
+  "claim": "QVM1",
+  "status": "PASS",
+  "leading_Ore_controls": [
+    {
+      "cyclic_degree": 2,
+      "H_degree": 3,
+      "mate_leading_v_exponent": "5",
+      "commutator_leading_v_exponent": "4",
+      "leading_coefficient_identity": "PASS"
+    },
+    {
+      "cyclic_degree": 3,
+      "H_degree": 5,
+      "mate_leading_v_exponent": "3",
+      "commutator_leading_v_exponent": "1",
+      "leading_coefficient_identity": "PASS"
+    },
+    {
+      "cyclic_degree": 4,
+      "H_degree": 2,
+      "mate_leading_v_exponent": "3/2",
+      "commutator_leading_v_exponent": "-3/2",
+      "leading_coefficient_identity": "PASS"
+    }
+  ],
+  "finite_power_elimination": "PASS",
+  "root_multiplicity_gcd1_control": "multiplicities2,3",
+  "leading_Wronskian_identity": "symbolic n,H,K",
+  "positive_linear_pairs_cyclic_degrees": [
+    2,
+    3,
+    4
+  ],
+  "proper_power_fractional_boundary": "PASS, not a Weyl pair",
+  "Long_hsmall_cubic_candidate": {
+    "generic_order": 3,
+    "classical_order": 2,
+    "top_H": "2+h*a**3",
+    "top_H_squarefree": true,
+    "ordinary_connection_polynomial_degree": 1,
+    "pushforward_rank": 6,
+    "inverse_Fourier_rank": 3,
+    "rank_calculation_uses_written_QKR1_and_slope_proof": true,
+    "algebraic_horizontal_projector_ranks": [
+      3,
+      3
+    ],
+    "local_residue_eigenvalue_multiplicities": {
+      "0": 3,
+      "1/2": 3
+    },
+    "full_Weyl_mate_excluded_by_written_theorem": true
+  },
+  "hashes": {
+    "CYCLIC_INFINITY_MATE_OBSTRUCTION.md": "55350e7dde471f16e5993452cf2697439f58ba530e8b4778ad285bab36b3bb65",
+    "check_infinity_mate.py": "3cd50a32efbe970a9c36c3cd3e8c37e5dc04b0f8553d39243e2f088cde574d21",
+    "FOURIER_CYCLIC_RANK_BUDGET.md": "3ab7401c3fcda7a8bc60b42ece8729a745be810605dc19a6118220ab608ea1ce",
+    "fourier_rank_budget_controls.json": "61a84afaf30d2c6609c97a36c06ef7c116a707f9c765e157eaa657882734f4e7",
+    "QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md": "7e1ff77f6b2a057a0ad9efc8cf00891043a650ffb01eaf085aed06d88aabb833",
+    "HAMILTONIAN_IDEALIZER_CRITERION.md": "5a1bb6b699c6a3d93dad9b4e96302ad77b227f39abfef0814de6e4c093e2dfbc"
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/2210.00257",
+      "used": "Theorem2.8 recalls weighted leading commutator/Poisson calculus. Context only; the ramified infinity theorem is proved directly."
+    },
+    {
+      "source": "https://arxiv.org/html/1111.6100",
+      "used": "Remarks1.13 and Section2 leading brackets and proportional powers in fractional Weyl extensions. Context only; no whole-curve theorem imported."
+    },
+    {
+      "source": "https://arxiv.org/html/0808.0742",
+      "used": "Proposition3.5 Fourier rank and formal slope theory for the separate rank-three candidate calculation."
+    }
+  ],
+  "coverage_boundary": "Exact finite Ore leading-coefficient, power-elimination, Wronskian, degree-one pair, proper-power boundary, candidate companion and projector controls. The universal no-mate theorem uses the written Puiseux/infinity valuation proof, with primitive root multiplicities and v-leading degree one. Proper powers and other leading faces are outside this exclusion. Candidate inverse-Fourier rank uses QKR1 and standard slope theory. No actual Long carrier or all-representative nonlifting is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

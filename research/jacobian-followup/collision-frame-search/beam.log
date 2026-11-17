@@ -1,0 +1,16 @@
+{"event": "improvement", "support": 48, "word": [{"direction": [2, 1], "parameter": "14", "diagonal": ["-2/3", "-2"]}]}
+{"layer": 0, "processed": 1, "pending": 0, "new": 13, "best": 48}
+{"layer": 1, "processed": 2, "pending": 12, "new": 0, "best": 48}
+{"layer": 1, "processed": 3, "pending": 11, "new": 0, "best": 48}
+{"layer": 1, "processed": 4, "pending": 10, "new": 0, "best": 48}
+{"layer": 1, "processed": 5, "pending": 9, "new": 0, "best": 48}
+{"layer": 1, "processed": 6, "pending": 8, "new": 0, "best": 48}
+{"layer": 1, "processed": 7, "pending": 7, "new": 0, "best": 48}
+{"layer": 1, "processed": 8, "pending": 6, "new": 0, "best": 48}
+{"layer": 1, "processed": 9, "pending": 5, "new": 0, "best": 48}
+{"layer": 1, "processed": 10, "pending": 4, "new": 0, "best": 48}
+{"layer": 1, "processed": 11, "pending": 3, "new": 0, "best": 48}
+{"layer": 1, "processed": 12, "pending": 2, "new": 0, "best": 48}
+{"layer": 1, "processed": 13, "pending": 1, "new": 0, "best": 48}
+{"layer": 1, "processed": 14, "pending": 0, "new": 0, "best": 48}
+{"status": "complete", "best_support": 48, "processed": 14, "distinct": 14, "parameters": {"depth": 3, "beam": 48, "slack": 40}}

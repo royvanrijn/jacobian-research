@@ -1,0 +1,11 @@
+{
+  "status": "timeout-or-error",
+  "exit_code": 124,
+  "elapsed_seconds": 120.00794352800585,
+  "source": "axial_contraction_zero_mixed_linear_singular_leading_prefix8_qq.sing",
+  "source_sha256": "8f0eb30c1bc728d18efa8beb01dbd338344a341d120a6af62fc44408adf2d113",
+  "output": "axial_contraction_zero_mixed_linear_singular_leading_prefix8_qq.log",
+  "output_sha256": "8f6e3eae34dbf7cd93bbd460cc9d82c6fd79cd7c8e4297529d021ff0330e661a",
+  "reason": "All-order pure points only: import GQUADRICTOPGATE20261115 at N2,D3. Smooth leading divisor impossible, so binary sextic discriminant vanishes. Not an eight-moment exclusion without this extra necessary equation.",
+  "claim": "No exclusion until a full exact QQ result is inspected."
+}

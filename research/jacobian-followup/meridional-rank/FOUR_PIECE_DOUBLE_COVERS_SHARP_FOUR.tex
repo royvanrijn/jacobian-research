@@ -1,0 +1,310 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\mr}{\operatorname{mr}}
+\title{Eight cases of meridional rank four from graph manifold models}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The two retained double-cover groups now have a rank-three obstruction.
+Their exact port presentations realize the fundamental groups of closed
+orientable irreducible graph manifolds with four canonical Seifert pieces.
+Boileau--Weidmann's classical necessary condition for rank two excludes
+these models. The already certified four-bridge uppers then give eight
+named knot equalities. The new algebraic and slope inputs have independent
+replay; Seifert realization, JSJ theory and the rank classification are
+explicit classical imports. This working proof is unformalized and
+externally unreviewed. Worldwide novelty is unestablished.
+
+\begin{theorem}\label{thm:knots}
+For every knot in
+\[
+\mathcal A=\{13a_{129},13a_{136},13a_{194},13a_{197}\},\qquad
+\mathcal B=\{13a_{135},13a_{137},13a_{196},13a_{198}\},
+\]
+one has
+\[
+ \rank\pi_1(\Sigma_2(K))=3,\qquad \mr(K)=b(K)=4.
+\]
+The other eight original targets and the full classical MRC remain open.
+\end{theorem}
+
+\section{The exact input and classical rank gate}
+
+The preceding independently checked compact-presentation theorem gives
+root groups $G_A,G_B$ on three generators, and the exact assembly
+\[
+ G_X=(P*Q*\langle z\rangle)/
+ \langle\!\langle p_ezq_e^{-1}:e=12,15,17,26\rangle\!\rangle,
+\]
+where
+\begin{align*}
+P&=\langle u,v\mid v^{-2}u^2v^{-1}u^{-3}v^{-1}u^2\rangle,\\
+Q&=\langle x,y\mid y^{-2}x^{-2}y^{-2}x\rangle.
+\end{align*}
+The exact source PDs, free-basis changes, all port words and
+seventeen-to-thirteen arc gluing are retained in
+\texttt{COMPACT\_DOUBLE\_COVER\_PRESENTATIONS.tex} and its receipts.
+The mutation theorem identifies the ordinary cover groups within each
+four-knot block. Each knot has its own retained upper-four seed trace.
+
+The rank input is Boileau--Weidmann, \emph{The structure of 3-manifolds
+with two-generated fundamental group}, Topology~44 (2005), 283--320,
+\url{https://doi.org/10.1016/j.top.2004.10.008}. The necessary list in
+Theorem~2 of the read author manuscript has at most three JSJ pieces
+for a compact orientable irreducible rank-two manifold with nontrivial
+JSJ. We use that consequence only. The ten necessary types have piece
+counts $2,2,2,2,2,3,2,1,1,2$; the original exceptional irregular-cover
+type has only two and does not affect the bound. Millichap--Worden's
+2016 Corollary~5.4 eliminates that original type; this current refinement
+is recorded in the literature map, and is not needed for our piece bound.
+The relevant
+separating-torus proof was read, but the full theorem is imported,
+not independently reproved. Published DOI metadata was checked;
+a full published-version comparison is not claimed.
+
+For Seifert realization, irreducibility, uniqueness of boundary fiber
+slopes and canonical torus decomposition, we use Hatcher's
+\emph{Notes on Basic 3-Manifold Topology}, Section~1.2
+(Theorem~1.9, Propositions~1.11--1.13, Lemmas~1.14--1.15) and the
+explicit Seifert construction in Section~2.1. Original
+Jaco--Shalen/Johannson credit is retained through this exposition.
+No rank-equals-Heegaard-genus assumption is made.
+
+\section{Two peripheral models for the fragment groups}
+
+Let
+\[
+ H=\langle a,t\mid t^2=a^3\rangle,
+ \qquad h=a^3=t^2.
+\]
+The element $h$ is central and infinite. Two choices of peripheral
+section will be used:
+\[
+ e_P=a^{-1}t,\qquad e_Q=ta.
+\]
+Both are primitive sections in suitable orientable Seifert models over
+$D(2,3)$. Explicitly, start with a pair of pants times a circle and
+fill two boundary tori. For $H_P$, use cone generators $t,a^{-1}$ with
+squares/cubes $h,h^{-1}$; for $H_Q$ use $t,a$ with powers $h,h$.
+The primitive filling slopes have multiplicities two and three.
+The remaining boundary bases are $(e_P,h)$ and $(e_Q,h)$ respectively.
+These are specified peripheral models; no particular named torus-knot
+meridian convention is presumed.
+
+Let the cable piece have base annulus with one cone point of order two:
+\[
+ C=\langle k,s\mid[k,s^2]=1\rangle,\qquad
+ f=s^2,\qquad a_C=sk.
+\]
+Its two boundary bases are $(k,f)$ and $(a_C,f)$. This follows directly
+from the pair-of-pants presentation with cone generator $s$, fiber $f$,
+and base boundary words $k,(sk)^{-1}$.
+
+All these boundary maps are injective. For $H$, quotienting by $h$
+gives $C_3*C_2$, and either section projects to a cyclically reduced
+word of length two, hence has infinite order. Since $h$ has infinite
+order, $(e,h)$ generates a free abelian group of rank two. For $C$,
+quotienting by $f$ gives $\mathbb Z*C_2$. The images of $k$ and $sk$
+have infinite order, and $f$ is infinite, so both displayed commuting
+pairs give embedded $\mathbb Z^2$. The normal-form theorem for
+amalgamated products then makes all piece and edge maps injective.
+
+\begin{lemma}\label{lem:models}
+The group $P$ is the torus amalgam of $H_P$ and $C_P$ defined by
+\[
+ k_P=h_P,\qquad f_P=e_P h_P.
+\]
+For $\epsilon=1$ or $-1$, the group $Q$ is the torus amalgam of $H_Q$
+and $C_Q$ defined by
+\[
+ k_Q=h_Q^\epsilon,\qquad f_Q=e_Qh_Q^{-1}.
+\]
+The two choices of $\epsilon$ specify different outer boundary markings
+on the same abstract group $Q$.
+\end{lemma}
+\begin{proof}
+In $P$ set
+\[
+ s=u^2v^{-1},\qquad t=u^{-2}s^2,\qquad h=u^3.
+\]
+The change $(u,v)\leftrightarrow(u,s)$ is a free-basis change, with
+$v=s^{-1}u^2$. The source relator becomes, up to cyclic conjugation
+and inversion, $t^2u^{-3}$; hence
+\[
+ P=\langle u,t,s\mid t^2=u^3,\ s^2=u^2t\rangle.
+\]
+Now $u^2t=(u^{-1}t)h=e_Ph$. This is exactly the claimed amalgam:
+the additional cable relation $[h,s^2]=1$ is already implied because
+$h$ commutes with $u,t$.
+
+In $Q$ set $t=y^2x^2$ and $h=x^3$. Its source relator is equivalent
+to $t^2=x^3$, so
+\[
+ Q=\langle x,t,y\mid t^2=x^3,\ y^2=tx^{-2}\rangle.
+\]
+Since $tx^{-2}=(tx)h^{-1}=e_Qh^{-1}$, adjoining the cable piece with
+$s_Q=y$ gives the second amalgam. Again its commutation relation is
+redundant, so these are isomorphisms, not just quotient maps.
+\end{proof}
+
+\section{The four ports and three gluing matrices}
+
+Write
+\[
+ a_P=s h_P,\quad f_P=s^2,\qquad
+ a_Q=y h_Q^\epsilon,\quad f_Q=y^2,
+\]
+with $\epsilon=1$ for $G_A$ and $\epsilon=-1$ for $G_B$.
+The retained source port words reduce in the above exact models to
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Edge & $P$ port & $Q$ port\\
+\midrule
+$12$ & $f_P^{-1}$ & $1$\\
+$15$ & $a_P$ & $f_Q$\\
+$17$ & $a_P f_P^{-1}$ & $a_Q^{-1}f_Q$\\
+$26$ & $1$ & $a_Q$\\
+\bottomrule
+\end{tabular}
+\end{center}
+These identities, including the signs at both roots, are independently
+checked by complete normal forms in the root amalgams
+$H*_{\langle d\rangle=\langle s^2\rangle}\langle s\rangle$.
+The pairs $(a_P,f_P)$ and $(a_Q,f_Q)$ commute and inject.
+
+The first and fourth port relations give $z=f_P=a_Q$. The third then
+gives $f_Q=a_P f_P$, and the second is redundant. Conversely those two
+commuting-pair identifications imply all four original port relations.
+Thus the source assembly is an injective torus amalgam, with
+\[
+ a_Q=f_P,\qquad f_Q=a_P f_P.
+\]
+Relative to the indicated ordered peripheral bases, the three edge maps
+have columns:
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Edge & Source to target bases & Matrix\\
+\midrule
+$C_P$ to $H_P$ & $(k_P,f_P)$ to $(e_P,h_P)$ &
+$\begin{pmatrix}0&1\\1&1\end{pmatrix}$\\[7pt]
+$C_Q$ to $C_P$ & $(a_Q,f_Q)$ to $(a_P,f_P)$ &
+$\begin{pmatrix}0&1\\1&1\end{pmatrix}$\\[7pt]
+$C_Q$ to $H_Q$ & $(k_Q,f_Q)$ to $(e_Q,h_Q)$ &
+$\begin{pmatrix}0&1\\\epsilon&-1\end{pmatrix}$\\[3pt]
+\bottomrule
+\end{tabular}
+\end{center}
+Each determinant has absolute value one. The regular fibers on either
+side of each edge have intersection number one: in each target basis
+the fiber image has first coordinate one, while the target fiber is
+$(0,1)$. Hence adjacent fiber slopes are never parallel.
+
+\section{The graph manifold and the rank obstruction}
+
+Glue the four standard orientable Seifert pieces in the chain
+\[
+ \underset{D(2,3)}{H_P}\;---\;
+ \underset{A(2)}{C_P}\;---\;
+ \underset{A(2)}{C_Q}\;---\;
+ \underset{D(2,3)}{H_Q}
+\]
+using these torus maps, and call the resulting manifold $M_\epsilon$.
+The underlying graph is a tree, so choose orientations on successive
+pieces to make every boundary gluing orientation reversing. This works
+for either endpoint sign. All boundary tori are paired, so $M_\epsilon$
+is closed, connected and orientable. The Seifert pieces are irreducible;
+gluing along their incompressible boundary tori preserves irreducibility
+by the usual innermost-circle sphere argument. Van Kampen and the exact
+identifications above give
+\[
+ \pi_1(M_1)\cong G_A,\qquad \pi_1(M_{-1})\cong G_B.
+\]
+Only group isomorphism is needed for the rank argument. No source-cover
+homeomorphism, literal tangle sphere or numerical triangulation
+identification is assumed.
+
+The four orbifold Euler characteristics are
+$-1/6,-1/2,-1/2,-1/6$. Thus none of the pieces is a solid torus,
+$T^2\times I$, or the exceptional Klein-bottle bundle with ambiguous
+boundary fiber slopes. Boundary fibers are unique. The three gluing
+tori are incompressible and cannot be deleted from a Seifert/atoroidal
+decomposition: adjacent Seifert fibrations cannot extend across a torus
+where the fiber intersection is one, and that torus would remain an
+essential non-boundary-parallel torus in the union. A Seifert union with
+horizontal gluing tori would instead give torus products or twisted
+torus bundles on cutting, incompatible with these negative-base pieces.
+Thus boundary fiber uniqueness also applies to any putative larger
+Seifert union. The classical JSJ criterion, equivalently the minimality
+and uniqueness argument in the
+read Hatcher sections, therefore gives exactly four canonical pieces.
+
+If either $G_X$ had rank two, $M_\epsilon$ would violate the necessary
+Boileau--Weidmann list, which allows at most three JSJ pieces. Rank zero
+or one is excluded by the embedded nonabelian vertex group $H$ (also
+by the retained nonabelian quotient). The exact three-generator source
+presentations give the opposite bound. Hence $\rank G_A=\rank G_B=3$.
+
+\begin{proof}[Completion of Theorem~\ref{thm:knots}]
+For a knot group generated by $m$ meridians, quotient by meridian squares
+and take its even subgroup. This is the double branched-cover group
+and is generated by the $m-1$ products with a fixed meridian. Thus
+\[
+ 1+\rank\pi_1(\Sigma_2(K))\le\mr(K)\le b(K).
+\]
+Mutation transfers the now exact cover rank to all four knots in each
+block. The eight independent four-seed traces satisfy every geometric
+propagation step on the literal source PDs; the retained
+Blair--Kjuchukova--Velazquez--Villanueva theorem converts them to
+$b(K)\le4$. Therefore $4\le\mr(K)\le b(K)\le4$ for each named knot.
+No mutation invariance of bridge number or meridional rank is used.
+\end{proof}
+
+\section{Verification, controls and remaining scope}
+
+The independent checker imports no producer group arithmetic. It checks
+the free-basis inverse, cyclic relator identities, all eight port words
+per root, exact root-amalgam reductions, commutation, all three torus
+matrices and their fiber intersections, and all eight source upper traces.
+Its normal form for $H$ keeps the central exponent and the alternating
+$C_3*C_2$ syllables. Cyclic-edge membership in the root amalgam is decided
+by abelian exponent followed by exact $H$ normal form, so successful
+word reductions are identities in the actual groups.
+
+Five corruptions reject: matching fibers cannot certify four JSJ pieces;
+a determinant-two map is not a torus isomorphism; a changed port word,
+a false basis inverse, and a wrong endpoint fiber sign fail. The
+two-piece groups $P,Q$ remain positive two-generator controls, so piece
+count is used only after canonical JSJ slopes are certified. As an
+independent abelian check, the two central identifications give
+\[
+ \begin{pmatrix}14&-(1-12\epsilon)\\19&-(1+12\epsilon)\end{pmatrix},
+ \qquad \det=5-396\epsilon,
+\]
+reproducing orders $391$ and $401$.
+
+The verifier certifies finite algebraic and slope inputs. The uniform
+Seifert construction, peripheral-injectivity arguments, JSJ criterion
+and classical rank-two theorem are the written proof, with imported
+scope recorded in \texttt{four\_piece\_source\_audit.json}. They are
+not proved by a green program receipt. The prior numerical/conductance
+cues remain exploratory and are not inputs to this rank proof.
+
+The eight equalities are newly certified in this programme. Their
+worldwide previously-unresolved status and prior-family/priority scope
+are unestablished. Together with the four earlier seed cases, the panel
+has twelve named equalities certified here, leaving $281$ of its $293$
+names without such a certificate. The remaining original eight are
+$13a_{233},13a_{234},13a_{239},13a_{242},13a_{243},13a_{244},13a_{253},13a_{265}$.
+The full classical MRC and exhaustive literature audit remain open.
+
+\end{document}

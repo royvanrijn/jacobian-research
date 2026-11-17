@@ -1,0 +1,88 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYHR0 schema, dependencies, proof source, checker hash, locks and assurance",
+    "HC4MYHR1 schema, dependencies, proof source, checker hash, locks and assurance",
+    "global scheme and base compatibility, all intrinsic ranks, unsquared orientation, endpoint disjunction and actual-source boundary are explicit",
+    "open parent closes multi-critical relative unitization for the full base-only normal graph family without claiming arbitrary source mixing",
+    "thirty-eight affected methods preserve current fingerprints and the distinction between relative and unrestricted source orbits",
+    "WORK-HC4-SCHUR records the complete relative graph classification and remaining full-mixing frontier",
+    "WORK-HC4-RESIDUAL-AUDIT records the complete relative graph classification and remaining full-mixing frontier",
+    "receipt-relative-critical-graph.json proof, checker and mathematical/primary input byte pins",
+    "receipt-global-value.json proof, checker and mathematical/primary input byte pins",
+    "receipt-projection-profile.json proof, checker and mathematical/primary input byte pins",
+    "receipt-two-affine-geometry.json proof, checker and mathematical/primary input byte pins",
+    "receipt-intrinsic-plane.json proof, checker and mathematical/primary input byte pins",
+    "receipt-quadric-output-base.json proof, checker and mathematical/primary input byte pins",
+    "forty-eight exact controls remain separate from all-degree scheme, curvature and graph-classification proofs",
+    "known HC2 primary bytes and the exact n=2 imported assertion are explicit",
+    "canonical proof, replay, exact source import and navigation have valid local links and whitespace"
+  ],
+  "new_claims": [
+    "HC4MYHR0",
+    "HC4MYHR1"
+  ],
+  "previous_goal_turn_classification": "progress: stable linear-quadratic ambient output-base obstruction",
+  "current_progress": "Global relative critical section and rank-one curve-product criteria; all-degree classification of every base-only normal graph under arbitrary relative free-variable parameterization, without alignment, with at most one full critical point under unit Hessian.",
+  "exact_current_replay_checks": 48,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-global-value.json": 48,
+    "receipt-projection-profile.json": 59,
+    "receipt-two-affine-geometry.json": 44,
+    "receipt-intrinsic-plane.json": 44,
+    "receipt-quadric-output-base.json": 54
+  },
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "knowledge/work/plane-jc.md",
+    "STATUS.md"
+  ],
+  "explicit_external_theorem_input": "Known HC2 only, de Bondt Theorem 2.1 n=2 assertion",
+  "new_external_normal_form_classification_imported": false,
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "remaining_frontier": [
+    "arbitrary four-variable source mixing beyond relative base preservation",
+    "general two-affine embeddings with three genuinely free-dependent unretained coordinates",
+    "distinct unit-ideal and singleton-zero plane Keller endpoints",
+    "unrestricted SL2 row equation and uncovered fixed-potential compatibility"
+  ],
+  "cotangent_alignment_assumed": false,
+  "arbitrary_four_variable_source_mixing_asserted_covered": false,
+  "general_two_affine_class_asserted_base_only_graphs": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "required_repository_checks_all_passed": false,
+  "repository_checks": [
+    {
+      "command": "make render-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "command": "make check-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "command": "git diff --check -- research/MATH_STATUS.json research/knowledge/lessons.json research/knowledge/work_items.json research/jacobian-followup/hc4-triangular-graphs/README.md research/index research/knowledge/work research/STATUS.md",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "scoped_diff_whitespace_check": "PASS"
+}

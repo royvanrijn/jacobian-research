@@ -1,0 +1,12 @@
+{"dimension": 3, "candidates": 1, "retained": 1, "best_metric": [7, 45, 8, 16], "seconds": 0.0}
+{"dimension": 4, "candidates": 1, "retained": 1, "best_metric": [6, 25, 8, 19], "seconds": 0.001}
+{"dimension": 5, "candidates": 13, "retained": 13, "best_metric": [5, 17, 8, 22], "seconds": 0.003}
+{"dimension": 6, "candidates": 35, "retained": 35, "best_metric": [5, 18, 9, 25], "seconds": 0.018}
+{"dimension": 7, "candidates": 152, "retained": 152, "best_metric": [5, 14, 8, 28], "seconds": 0.044}
+{"dimension": 8, "candidates": 411, "retained": 411, "best_metric": [4, 8, 8, 34], "seconds": 0.195}
+{"dimension": 9, "candidates": 1458, "retained": 800, "best_metric": [4, 8, 8, 36], "seconds": 0.739}
+{"dimension": 10, "candidates": 3769, "retained": 800, "best_metric": [4, 6, 6, 45], "seconds": 2.021}
+{"dimension": 11, "candidates": 4148, "retained": 800, "best_metric": [4, 3, 3, 50], "seconds": 2.691}
+{"dimension": 12, "candidates": 2154, "retained": 800, "best_metric": [4, 2, 2, 54], "seconds": 3.462}
+{"dimension": 13, "candidates": 2667, "retained": 800, "best_metric": [3, 0, 0, 60], "seconds": 4.002}
+CUBIC 13

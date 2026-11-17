@@ -1,0 +1,13 @@
+{
+  "scope": "Exact coupled transverse line-conic first-ten moment chart, with explicit treatment of the M2 elimination denominator; no theorem from a timeout or nonzero target remainder.",
+  "wall_limit_seconds": 30,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": true,
+  "exit_code": -9,
+  "completed": false,
+  "input_sha256": "5d896db020ad92b18e265daddf8362aa1f728813781e1ea8bdaefb140ebeb5b0",
+  "log_sha256": "5a038d6de17c47e85d3e09b81abf927156e2bdf52ad1f62687b0210ba643485e",
+  "elapsed_seconds": 30.00619045700296,
+  "stdout_tail": "TRANSVERSE_COUPLED_OPEN_STANDARD_START\n"
+}

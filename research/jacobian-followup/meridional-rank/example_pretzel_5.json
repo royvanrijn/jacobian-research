@@ -1,0 +1,87 @@
+{
+  "label": "pretzel Coxeter quotient P(2,3,3,3,3)",
+  "degree": 5,
+  "transpositions": [
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "relators": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      1,
+      2,
+      1,
+      2
+    ],
+    [
+      2,
+      3,
+      2,
+      3,
+      2,
+      3
+    ],
+    [
+      3,
+      4,
+      3,
+      4,
+      3,
+      4
+    ],
+    [
+      4,
+      5,
+      4,
+      5,
+      4,
+      5
+    ],
+    [
+      5,
+      1,
+      5,
+      1,
+      5,
+      1
+    ]
+  ],
+  "provenance": "Baader Blair Kjuchukova 2021 section 2; cycle quotient, not a full knot presentation"
+}

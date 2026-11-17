@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-17",
+  "version": "v006",
+  "cases": [
+    {
+      "type": "smooth cubic",
+      "status": "proved exclusion",
+      "proof": "cor:smoothleading"
+    },
+    {
+      "type": "irreducible nodal cubic",
+      "status": "coercive gate and common normal form proved;residual exclusion open",
+      "shared": "ORDINARY-UV"
+    },
+    {
+      "type": "irreducible cuspidal cubic",
+      "status": "open"
+    },
+    {
+      "type": "line and smooth conic,transverse",
+      "status": "coercive gate and common normal form proved;residual exclusion open",
+      "shared": "ORDINARY-UV"
+    },
+    {
+      "type": "line and smooth conic,tangent",
+      "status": "open"
+    },
+    {
+      "type": "three nonconcurrent lines",
+      "status": "coercive gate and common normal form proved;residual exclusion open",
+      "shared": "ORDINARY-UV"
+    },
+    {
+      "type": "three concurrent distinct lines",
+      "status": "open"
+    },
+    {
+      "type": "double line and a distinct line",
+      "status": "open"
+    },
+    {
+      "type": "triple line",
+      "status": "open"
+    }
+  ],
+  "remaining_shared_tasks": [
+    "ORDINARY-UV with full Gaussian means/cross terms and m!=0",
+    "CUSPIDAL",
+    "TANGENT-LINE-CONIC",
+    "CONCURRENT",
+    "DOUBLE-LINE",
+    "TRIPLE-LINE"
+  ],
+  "ordinary_residual": "T(uv+h)+a*u^3+d*v^3+b*u^2+c*v^2+e*u+f*v+k,with full nondegenerate Gaussian quadratic and nonzero T-square coefficient.",
+  "all_original_markers_retained": true,
+  "full_frame_extraction_proved": false,
+  "new_mathematical_checker_run": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

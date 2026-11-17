@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-16",
+  "checks": {
+    "original_volume_blowup_jacobian": true,
+    "chart_coordinate_inverse": true,
+    "residue_coordinate_sign": true,
+    "primitive_transition_dlog": true,
+    "full_volume_transition_with_opposite_chart_sign": true,
+    "radial_sphere_integral": true
+  },
+  "all_passed": true,
+  "scope": "Six generic identities; no phase degree sweep, no source/gluing vanishing certified."
+}

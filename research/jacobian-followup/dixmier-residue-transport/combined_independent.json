@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "arithmetic": "Python Fraction; separate monomial bracket and forward elimination",
+  "projected_rank": 3719,
+  "kernel_dimension": 1191,
+  "current_columns": 637,
+  "linear_variations": 1191,
+  "quadratic_coefficient_pairs": 709836,
+  "period": "1",
+  "elapsed_seconds": 3.3849598150118254,
+  "checker_sha256": "fa63f9df6adeb69f984bff8a2fdf9288ec24eb45a9cdc0cd97b86409cd161b60",
+  "packet_sha256": "45e08eb385b348c57cba492e379e94d6423d0335d311528d36d2979e2ae5834e",
+  "boundary": "Complete independent replay of the finite cutoff certificate. The infinite-pole cutoff and cubic-shear transport are written proofs, not formal verification."
+}

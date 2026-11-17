@@ -1,0 +1,17 @@
+{
+  "completed": true,
+  "arbitrary_a_b_jacobian": true,
+  "arbitrary_formal_g_conservation": true,
+  "full_tangent_identity": true,
+  "partial_fraction_root_counts": [
+    2,
+    3,
+    4
+  ],
+  "trapped_component_retained": true,
+  "universal_analytic_input_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "c298a1703156ab559f8f8eafbbe0c64a8c410395c45a9cf8073c1b12f8bd6eab"
+}

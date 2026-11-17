@@ -1,0 +1,110 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Specific lower-dimensional quadratic stabilizations, all compatible inner centers and the residual quadratic-coordinate frontier",
+  "newly_cached_primary_context": [],
+  "newly_used_unproved_external_statements": [],
+  "rechecked_retained_primary_context": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "retained_file": "stacks-leading-riemann-hurwitz-0C1B.html",
+      "role": "Retained characteristic-zero formula rechecked; the explicit degree-2d squarefree double curve has genus d-1 and two actual punctures."
+    },
+    {
+      "url": "https://arxiv.org/abs/math/0511684v2",
+      "retained_file": "soprunov-affine-residue-context-math-0511684v2.html",
+      "role": "Versioned primary abstract rechecked for context only. No new multivariable residue, properness or stable cancellation theorem is imported."
+    }
+  ],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Native critical schemes, constant critical-Hessian factor and whole generic profile under hypothetical gradient nonautomorphy."
+    },
+    {
+      "claim": "HC4MYHG1",
+      "statement": "Split quadratic plus high-degree univariate full-source exclusion."
+    },
+    {
+      "claim": "HC4MYHG2",
+      "statement": "The coordinate and quadratic full source orbits are the two old endpoint tests."
+    },
+    {
+      "claim": "HC4MYHC0",
+      "statement": "Explicit additive/product Hodge invariant and curve profile."
+    },
+    {
+      "claim": "HC4MYJH0",
+      "statement": "Complete finite critical groups, nonempty zero critical mass and exact infinity condition."
+    },
+    {
+      "claim": "HC4MYJI0",
+      "statement": "All-offset nonzero distinct and scalar plane profiles."
+    },
+    {
+      "claim": "HC4MYJL0",
+      "statement": "Marked/unmarked plane Jordan total genus and true punctures."
+    },
+    {
+      "claim": "HC4MYJL1",
+      "statement": "Whole eigenvector fibre identity and complete invertible four-variable closure."
+    },
+    {
+      "claim": "HC4MYJM0",
+      "statement": "Global null shear and stabilization of actual complete critical mass."
+    },
+    {
+      "claim": "HC4MYJM1",
+      "statement": "All rank-at-most-one universal questions reduce to the same four fixed source-orbit tests."
+    },
+    {
+      "claim": "HC4MYJD0",
+      "statement": "Proved constant self-adjoint primary frames."
+    },
+    {
+      "claim": "HC4MYHP0",
+      "statement": "Certified quadratic similitudes transfer literal scalar/constant source identities."
+    },
+    {
+      "claim": "HC4MYHM0",
+      "statement": "Literal ambient normalization transfers to actual original Meng-Yang images."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "jacobian-followup/hc4-triangular-graphs/HODGE_TRACE_CLOSURE.md": "b4958aa0e48775d39f790e8722314452b0d9852a1e98ebbfee2bd2afb2068171",
+    "jacobian-followup/hc4-triangular-graphs/NILPOTENT_QUADRATIC_PENCILS_AND_ENDPOINT_ORBITS.md": "c4066ba466d38a6529ad74e31e9011d811a50053601fb9ca3d58638178c16053",
+    "jacobian-followup/hc4-triangular-graphs/AFFINE_QUADRATIC_PENCIL_RESIDUES_AND_ENDPOINTS.md": "337be2cbb93f951922b6dd2a9e4bb028cf5f6c3c3e411d98794a2e8d2e06009a",
+    "jacobian-followup/hc4-triangular-graphs/SIMPLE_STATIONARY_POLES_AND_NONCYCLIC_KRYLOV_CLOSURE.md": "9406013661aa9eeebbf24c1e11a3cb908b81c6a4db9eff6eb899ba00974e9852",
+    "jacobian-followup/hc4-triangular-graphs/AFFINE_POLAR_CURVES_AND_COMPLETE_INVERTIBLE_SEMISIMPLE_CLOSURE.md": "48da12eac9d1408ff7202232c703a09733e8014dfe510b65c172da21cf3c71f2",
+    "jacobian-followup/hc4-triangular-graphs/verify_affine_polar_curves.py": "2e7e17faf3c74f20f2804bd95c0f8e50332fc62ecc560c8b9c5fc0de3486a119",
+    "jacobian-followup/hc4-triangular-graphs/receipt-affine-polar-curves.json": "46a2d974c6827e8fe5ffc48ca4509b011731e32da4040e87e5ae5dc0f2a70892",
+    "jacobian-followup/hc4-triangular-graphs/sources/affine-polar-semisimple-context.json": "ee95655c35537c8839d37742cb5c677ddf6fa69ec882fce3aac9aaea4555acc6",
+    "jacobian-followup/hc4-triangular-graphs/JORDAN_POLAR_CURVES_AND_ALL_INVERTIBLE_PENCIL_CLOSURE.md": "bad662393641425afb70f0e547426da5e3b49900db72224b3eaeff41e66127ea",
+    "jacobian-followup/hc4-triangular-graphs/verify_jordan_polar_curves.py": "5aecd26056d1a9e4c299b3d3f9500db75de171341f44ad89d5a9d360ade54e7f",
+    "jacobian-followup/hc4-triangular-graphs/receipt-jordan-polar-curves.json": "fe3d19aecde32eba0ee37c4e4f1590bef11ce7993389788a5774933e20725ae3",
+    "jacobian-followup/hc4-triangular-graphs/sources/jordan-polar-invertible-context.json": "e74742586c4863803f261e48404de8e56634130cbc3e4373ca655035cebc4046",
+    "jacobian-followup/hc4-triangular-graphs/ZERO_EIGENVECTOR_SHEARS_AND_RANK_ONE_PENCIL_CLASSIFICATION.md": "ad40b715614aa83d649d720c8d2e074577ccb35fb42bee5141aac0b3c3bf9804",
+    "jacobian-followup/hc4-triangular-graphs/verify_rank_one_pencils.py": "201812b3a70396ab9ca2b54a3950706a1913f7bc31f74b8d202ae1d71e5ac446",
+    "jacobian-followup/hc4-triangular-graphs/receipt-rank-one-pencils.json": "a641d7fb988d7f19d06c0ceec6268ed2d976b886368123d710409d6538cdef69",
+    "jacobian-followup/hc4-triangular-graphs/sources/rank-one-pencil-context.json": "f385b5c0f7850f2b9f9c5d856572da712621038e05c558da0d9023c3551b9591",
+    "jacobian-followup/hc4-triangular-graphs/SUSPENDED_MULTIPLIER_ORBITS_AND_BASE_PRESERVING_CLOSURE.md": "868748e503bcf87ce1f087c5cf9c612122ea6f3b051decd12b88fad940f5500c",
+    "jacobian-followup/hc4-triangular-graphs/QUADRATIC_ISOMETRY_SATURATION.md": "7655380f3443c438f2d33b87b2ca9acf2c51a6db15e41b12a33a4bd0414723ad",
+    "jacobian-followup/hc4-triangular-graphs/AMBIENT_QUADRIC_GRAPHS.md": "435ead09b62a8ec765f626b66314db3a85033c2e75019f12b7b5a021408dcc1c",
+    "jacobian-followup/hc4-triangular-graphs/sources/stacks-leading-riemann-hurwitz-0C1B.html": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+    "jacobian-followup/hc4-triangular-graphs/sources/soprunov-affine-residue-context-math-0511684v2.html": "24ffbe2c869e1b23bc12620251dad8b7d7ef6fb775edacd4b08f86707ad31276"
+  },
+  "specific_invertible_composite_quadratic_stabilizations_in_four_variables_inverse_closed": true,
+  "admissible_null_kernel_universal_problem_reduced_to_four_fixed_source_orbits": true,
+  "all_inner_quadratics_with_critical_points_reduced_to_four_fixed_source_orbits": true,
+  "residual_degree_two_coordinate_inner_frontier_and_global_normal_forms_proved": true,
+  "bare_inverse_closure_assumed_to_stabilize": false,
+  "remaining_quadratic_coordinate_frontier_resolved": false,
+  "quadratic_two_critical_full_source_orbits_resolved": false,
+  "universal_two_point_keller_endpoint_equivalence_proved": false,
+  "all_singular_affine_pencils_resolved": false,
+  "all_independently_centered_quadratic_composite_images_resolved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

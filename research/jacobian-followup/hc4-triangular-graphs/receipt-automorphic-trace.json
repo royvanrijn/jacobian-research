@@ -101,7 +101,7 @@
   },
   "source_sha256": {
     "verify_automorphic_trace.py": "8965d1f53862ec58a0f0c3951338020255027102c6fb7898edb1eec1c112bbe5",
-    "AUTOMORPHIC_TRACE.md": "5903d8a62fd82126cb79d5516bbd83eed710e67c464cd0af9e75be96eeacf999",
+    "AUTOMORPHIC_TRACE.md": "3c83ecf3b9355a716641fc4c016ad189205a7ac00868694719873cf1a6a4ac91",
     "sources/automorphic-trace-import.json": "f598c927d3b4369228b181671b11e613d6ab55c56fa640a6ab461ada32b8d007"
   },
   "finite_control_is_plane_exhaustion": false,
@@ -111,7 +111,7 @@
     "python": "3.12.3",
     "sympy": "1.14.0"
   },
-  "elapsed_seconds": 0.302,
+  "elapsed_seconds": 0.291,
   "formal_verification": false,
   "external_review": false
 }

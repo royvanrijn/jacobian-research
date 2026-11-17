@@ -1,0 +1,413 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 148,
+  "checks": [
+    "predecessor PASS cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json verify_cyclic_loop_first_arrival.py",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json CYCLIC_LOOP_GEOMETRY_AND_FIRST_ARRIVAL_REDUCTION.md",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/cyclic-loop-first-arrival/manifest.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor cyclic_loop_first_arrival_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "predecessor PASS persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json verify_persistent_jsj_terminal_modulus.py",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json PERSISTENT_ROOTED_JSJ_AND_TERMINAL_MODULUS.md",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/persistent-jsj-terminal-modulus/manifest.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json verify_terminal_cone_binomial_closure.py",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json TERMINAL_CONE_BUDGET_AND_BINOMIAL_QUARTIC_CLOSURE.md",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json sources/terminal-cone-binomial-closure/manifest.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json verify_trefoil_complementary_fusion.py",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json nodal_deformation_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json peripheral_zero_receipt.json",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor terminal_cone_binomial_closure_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_trefoil_complementary_fusion.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json TREFOIL_CAPS_AND_COMPLEMENTARY_FIBRE_FUSION.md",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/trefoil-complementary-fusion/manifest.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS complementary_corner_jsj_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor complementary_corner_jsj_receipt.json COMPLEMENTARY_CORNER_AND_BOUNDARY_JSJ_ENDPOINT.md",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/complementary-corner-jsj/manifest.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json regular_quartic_exclusion_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor complementary_corner_jsj_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS general_two_stage_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json verify_general_two_stage.py",
+    "sealed predecessor general_two_stage_receipt.json GENERAL_TWO_STAGE_SPLICES_AND_ODD_FIBRE_EXCLUSION.md",
+    "sealed predecessor general_two_stage_receipt.json sources/general-two-stage/manifest.json",
+    "sealed predecessor general_two_stage_receipt.json verify_trefoil_complementary_fusion.py",
+    "sealed predecessor general_two_stage_receipt.json verify_orbit_tree.py",
+    "sealed predecessor general_two_stage_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json peripheral_zero_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json nodal_deformation_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor general_two_stage_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor general_two_stage_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "complete primary byte/page pin hatcher-3M.pdf",
+    "complete primary byte/page pin neumann-raymond-1978.pdf",
+    "plus terminal twist gives nR+f-1 winding divisor",
+    "minus terminal twist gives nR-f-1 winding divisor",
+    "quartic odd winding cannot divide either exact divisor",
+    "local fibre-cover section equation",
+    "last free-tail residue is characteristic residue",
+    "negative-two tail determinant induction",
+    "section determinant isolates cone coefficient",
+    "actual unbounded-hypothesis last-gcd control (6, {10: 1, 9: 1})",
+    "actual full-cluster free leg is negative-two chain (6, {10: 1, 9: 1})",
+    "actual full-cluster winding residue inverse kappa-minus1 (6, {10: 1, 9: 1})",
+    "exact Euclidean determinant-one matrix ('(6, {10: 1, 9: 1})', 2)",
+    "exact Euclidean determinant-one matrix ('(6, {10: 1, 9: 1})', 4)",
+    "actual unbounded-hypothesis last-gcd control (6, {15: 1, 14: 1})",
+    "actual full-cluster free leg is negative-two chain (6, {15: 1, 14: 1})",
+    "actual full-cluster winding residue inverse kappa-minus1 (6, {15: 1, 14: 1})",
+    "exact Euclidean determinant-one matrix ('(6, {15: 1, 14: 1})', 3)",
+    "exact Euclidean determinant-one matrix ('(6, {15: 1, 14: 1})', 9)",
+    "actual unbounded-hypothesis last-gcd control (10, {25: 1, 12: 1})",
+    "actual full-cluster free leg is negative-two chain (10, {25: 1, 12: 1})",
+    "actual full-cluster winding residue inverse kappa-minus1 (10, {25: 1, 12: 1})",
+    "exact Euclidean determinant-one matrix ('(10, {25: 1, 12: 1})', 5)",
+    "exact Euclidean determinant-one matrix ('(10, {25: 1, 12: 1})', 3)",
+    "actual unbounded-hypothesis last-gcd control (10, {25: 1, 16: 1})",
+    "actual full-cluster free leg is negative-two chain (10, {25: 1, 16: 1})",
+    "actual full-cluster winding residue inverse kappa-minus1 (10, {25: 1, 16: 1})",
+    "exact Euclidean determinant-one matrix ('(10, {25: 1, 16: 1})', 5)",
+    "exact Euclidean determinant-one matrix ('(10, {25: 1, 16: 1})', 7)",
+    "actual unbounded-hypothesis last-gcd control (10, {20: 1, 15: 1, 12: 1})",
+    "actual full-cluster free leg is negative-two chain (10, {20: 1, 15: 1, 12: 1})",
+    "actual full-cluster winding residue inverse kappa-minus1 (10, {20: 1, 15: 1, 12: 1})",
+    "exact Euclidean determinant-one matrix ('(10, {20: 1, 15: 1, 12: 1})', 5)",
+    "exact Euclidean determinant-one matrix ('(10, {20: 1, 15: 1, 12: 1})', 3)",
+    "non-self-inverse order5 cofactor is actually exercised",
+    "old bothodd terminal modulus really passes T5_7",
+    "both signs of old T5_7 residue control are disjoint",
+    "old T2_25 windingproduct9 square condition really passes",
+    "both repeated order25 target cones fail free-tail residue",
+    "actual local cover divides coefficient by fibre degree (5, 7, 4)",
+    "actual local cover divides coefficient by fibre degree (7, 11, 4)",
+    "actual local cover divides coefficient by fibre degree (11, 13, 4)",
+    "actual local cover divides coefficient by fibre degree (5, 9, 2)",
+    "actual local cover divides coefficient by fibre degree (7, 13, 3)",
+    "actual local cover divides coefficient by fibre degree (11, 17, 5)",
+    "retained all-length cyclic reduction has only two stated terminal residuals"
+  ],
+  "general": {
+    "no_field_degree_or_characteristic_depth_bound": true,
+    "actual_smooth_exact_whole_two_line_source_hypotheses_required": true,
+    "winding_cofactor_inverse_kappa_minus1": true,
+    "free_tail_cofactor_kappa_minus1": true,
+    "normalized_residue_not_arbitrary_unit": true,
+    "either_orientation_sign_allowed": true,
+    "local_fibre_cover_divides_normalized_coefficient": true,
+    "delta1_terminal_divisor_nR_plus_f_minus1_or_nR_minus_f_minus1": true,
+    "last_gcd_and_base1_coprime_cover_hypotheses_explicit": true
+  },
+  "quartic": {
+    "all_bothodd_final_cyclic4r3_residuals_excluded": true,
+    "T2_25_repeated_cone_residual_excluded": true,
+    "entire_cyclic4_incoming_first_arrival_class_excluded_both_pencils": true,
+    "PF84_all_cyclic3_incoming_closure_retained": true,
+    "all_cyclic_incoming_states6_9_excluded_at_any_depth_and_tail_length": true,
+    "no_prefix_eta_condition": true,
+    "all_lower_weight_keys_and_actual_periphery_retained": true
+  },
+  "full_terminal_cluster_controls": [
+    {
+      "sigma": 6,
+      "support": {
+        "10": 1,
+        "9": 1
+      },
+      "a": 2,
+      "kappa": 4,
+      "legs": [
+        {
+          "alpha": 2,
+          "cofactor": 1,
+          "opposite_cofactor": 1,
+          "weights": [
+            -2
+          ]
+        },
+        {
+          "alpha": 4,
+          "cofactor": 3,
+          "opposite_cofactor": 3,
+          "weights": [
+            -2,
+            -2,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "sigma": 6,
+      "support": {
+        "15": 1,
+        "14": 1
+      },
+      "a": 3,
+      "kappa": 9,
+      "legs": [
+        {
+          "alpha": 3,
+          "cofactor": 2,
+          "opposite_cofactor": 2,
+          "weights": [
+            -2,
+            -2
+          ]
+        },
+        {
+          "alpha": 9,
+          "cofactor": 8,
+          "opposite_cofactor": 8,
+          "weights": [
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "sigma": 10,
+      "support": {
+        "25": 1,
+        "12": 1
+      },
+      "a": 5,
+      "kappa": 3,
+      "legs": [
+        {
+          "alpha": 5,
+          "cofactor": 3,
+          "opposite_cofactor": 2,
+          "weights": [
+            -2,
+            -3
+          ]
+        },
+        {
+          "alpha": 3,
+          "cofactor": 2,
+          "opposite_cofactor": 2,
+          "weights": [
+            -2,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "sigma": 10,
+      "support": {
+        "25": 1,
+        "16": 1
+      },
+      "a": 5,
+      "kappa": 7,
+      "legs": [
+        {
+          "alpha": 5,
+          "cofactor": 1,
+          "opposite_cofactor": 1,
+          "weights": [
+            -5
+          ]
+        },
+        {
+          "alpha": 7,
+          "cofactor": 6,
+          "opposite_cofactor": 6,
+          "weights": [
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "sigma": 10,
+      "support": {
+        "20": 1,
+        "15": 1,
+        "12": 1
+      },
+      "a": 5,
+      "kappa": 3,
+      "legs": [
+        {
+          "alpha": 5,
+          "cofactor": 3,
+          "opposite_cofactor": 2,
+          "weights": [
+            -2,
+            -3
+          ]
+        },
+        {
+          "alpha": 3,
+          "cofactor": 2,
+          "opposite_cofactor": 2,
+          "weights": [
+            -2,
+            -2
+          ]
+        }
+      ]
+    }
+  ],
+  "local_cover_controls": [
+    {
+      "a": 5,
+      "kappa": 7,
+      "fibre_degree": 4,
+      "old_coefficient": 3,
+      "new_coefficient": 2
+    },
+    {
+      "a": 7,
+      "kappa": 11,
+      "fibre_degree": 4,
+      "old_coefficient": 2,
+      "new_coefficient": 4
+    },
+    {
+      "a": 11,
+      "kappa": 13,
+      "fibre_degree": 4,
+      "old_coefficient": 6,
+      "new_coefficient": 7
+    },
+    {
+      "a": 5,
+      "kappa": 9,
+      "fibre_degree": 2,
+      "old_coefficient": 4,
+      "new_coefficient": 2
+    },
+    {
+      "a": 7,
+      "kappa": 13,
+      "fibre_degree": 3,
+      "old_coefficient": 6,
+      "new_coefficient": 2
+    },
+    {
+      "a": 11,
+      "kappa": 17,
+      "fibre_degree": 5,
+      "old_coefficient": 2,
+      "new_coefficient": 7
+    }
+  ],
+  "assurance": {
+    "written_unbounded_local_slope_free_tail_and_congruence_proofs": true,
+    "complete_Hatcher25_26_27_and_NR3_4_11_12_visually_inspected": true,
+    "complete_primary_bytes_pinned": true,
+    "deep_JSJ_fibre_uniqueness_and_rigidity_imported": true,
+    "both_signs_used_as_weaker_necessary_match": true,
+    "finite_controls_not_universal_proof": true,
+    "normalized_coefficients_asserted_determined_by_cone_orders": false,
+    "source_degree_hypotheses_assumed_automatic": false,
+    "noncyclic_incoming_states_closed": false,
+    "all_initial_state3_trajectories_closed": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_packet_classification": false,
+    "finite_Keller_map": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_full_reproof": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_terminal_cone_twists.py": "16dbd23bb02a88a3156221df54cfca65ab1beffc614a9e95d38afe0a8b1c0e42",
+    "TERMINAL_CONE_TWISTS_AND_CYCLIC_ARRIVAL_CLOSURE.md": "bd9a6b5c2098292494abab04cee9b88fcd2413522fe73f32fd7a5bdb40d4d7d7",
+    "sources/terminal-cone-twists/manifest.json": "24728f33e1fdd08fa89a0ae3333e2769a084f4cc4c33044394625eb1b8252aa4",
+    "cyclic_loop_first_arrival_receipt.json": "4257cffaf4c764663bccd73b8469c9310a5a7c65a94696526354d7bf512951cd",
+    "persistent_jsj_terminal_modulus_receipt.json": "fddc27f470c56b0175a263e0544c44fee29177a436699cf8748ae147732dfdc3",
+    "terminal_cone_binomial_closure_receipt.json": "acade917c116dea0469219957cc7fb724137aa406267095748978ef5da46c8e0",
+    "trefoil_complementary_fusion_receipt.json": "c0250bee54f22ab4ae126958727918cc081b84cf1dec529c25ab7b5e5d7d6ae5",
+    "complementary_corner_jsj_receipt.json": "059a8771cfb326b9e37e9d45658a7e49568b49fc596ff1bf2a4502fbd65ed9a2",
+    "general_two_stage_receipt.json": "aabfafbc66661dcd807b9f1a2864544638f5eaeadc18507d41adb75b8b814bfc",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/oriented-pattern-linking/neumann-raymond-1978.pdf": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

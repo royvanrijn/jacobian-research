@@ -1,0 +1,212 @@
+{
+  "polynomial_terms": [
+    [
+      [
+        2,
+        0
+      ],
+      "9"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      "-12"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      "3"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      "4"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      "-2"
+    ]
+  ],
+  "validity_start": 1,
+  "step_bound": 2,
+  "plan": {
+    "schema_version": 1,
+    "kind": "finite postprocessing of supplied actual Bernstein certificates",
+    "certificate_summary": {
+      "polynomial_terms": [
+        [
+          [
+            2,
+            0
+          ],
+          "9"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "-12"
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          "3"
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          "4"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "-2"
+        ]
+      ],
+      "validity_start": 1,
+      "step_bound": 2
+    },
+    "assumptions_not_verified_by_this_program": [
+      "For every k>=validity_start,each finite actual tau_k satisfies p(k,tau_k)=0.",
+      "For every k>=validity_start,nonzero v_k forces nonzero v_(k+1),and finite orders have increments in[0,J].",
+      "The input is an actual positive-degree polynomial phase and a nonzero zero-constant formal symbol over a characteristic-zero field."
+    ],
+    "query_operator_power": 1,
+    "phase_power_candidates": [
+      2
+    ],
+    "symbol_jet_order_required_per_phase_degree": 2,
+    "strips": [
+      {
+        "a": 3,
+        "b": 2,
+        "rho": "3/2",
+        "normal_radius": 3,
+        "normal_step_bound": 7,
+        "collar_outer_radius": 11,
+        "collar_validity_start": 1,
+        "transformed_polynomial_terms": [
+          [
+            [
+              0,
+              2
+            ],
+            "1"
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            "-1"
+          ]
+        ],
+        "leading_x_coefficient_terms": [
+          [
+            [
+              2
+            ],
+            "1"
+          ],
+          [
+            [
+              1
+            ],
+            "-1"
+          ]
+        ],
+        "leading_coefficient_root_bound": "2",
+        "collar_lower_bound": "1",
+        "error_numerator_bound": "0",
+        "integral_line_offsets": [
+          0,
+          1
+        ]
+      }
+    ],
+    "specialized_polynomial_terms": [
+      [
+        [
+          2
+        ],
+        "4"
+      ],
+      [
+        [
+          1
+        ],
+        "-14"
+      ],
+      [
+        [
+          0
+        ],
+        "12"
+      ]
+    ],
+    "original_power_queries": "For each listed j,determine exactly whether T^K(P^j) is nonzero.",
+    "universal_certificate_generator_implemented": false,
+    "formal_verification": false
+  },
+  "phase_terms": [
+    [
+      [
+        2
+      ],
+      "1"
+    ]
+  ],
+  "symbol_jet_terms": [
+    [
+      [
+        3
+      ],
+      "1"
+    ]
+  ],
+  "complete_through": 4,
+  "evaluations": [
+    {
+      "phase_power": 2,
+      "nonzero": true,
+      "output_terms": 1,
+      "output_sha256": "4348daefa1756842f5e477661bc6e64366a373290109f062a7e4513fd2e2e2bd"
+    }
+  ],
+  "all_positive_pure": true,
+  "expected_result": {
+    "conditional_on_supplied_actual_certificates": true,
+    "all_positive_purity_assumed": true,
+    "query_operator_power": 1,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "alternative": "all first-survival orders finite",
+    "first_survival_at_query": 2,
+    "selected_rational_slope": "3/2",
+    "normal_radius": 3,
+    "all_marker_eventual_safety": true,
+    "global_height_intercept": 1,
+    "affine_cutoff": {
+      "C": 3,
+      "E": 3
+    },
+    "pure_linear_cutoff": 6
+  }
+}

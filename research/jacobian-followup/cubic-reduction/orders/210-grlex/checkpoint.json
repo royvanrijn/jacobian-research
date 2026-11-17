@@ -1,0 +1,145 @@
+{
+  "boundary": "Bounded beam with greedy zero-cost closure; no optimality claim.",
+  "helper_sha256": {
+    "search.py": "f68d96480bd91f49a869692be9e0bfda87bd5929a7aee5eb7d418fa74eeca561",
+    "verify.py": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd"
+  },
+  "log": [
+    {
+      "best_metric": [
+        7,
+        45,
+        8,
+        16
+      ],
+      "candidates": 1,
+      "dimension": 3,
+      "retained": 1,
+      "seconds": 0.0
+    },
+    {
+      "best_metric": [
+        6,
+        25,
+        8,
+        19
+      ],
+      "candidates": 1,
+      "dimension": 4,
+      "retained": 1,
+      "seconds": 0.002
+    },
+    {
+      "best_metric": [
+        5,
+        17,
+        8,
+        22
+      ],
+      "candidates": 13,
+      "dimension": 5,
+      "retained": 13,
+      "seconds": 0.004
+    },
+    {
+      "best_metric": [
+        5,
+        14,
+        8,
+        26
+      ],
+      "candidates": 34,
+      "dimension": 6,
+      "retained": 34,
+      "seconds": 0.036
+    },
+    {
+      "best_metric": [
+        5,
+        11,
+        8,
+        30
+      ],
+      "candidates": 169,
+      "dimension": 7,
+      "retained": 169,
+      "seconds": 0.105
+    },
+    {
+      "best_metric": [
+        4,
+        8,
+        8,
+        34
+      ],
+      "candidates": 498,
+      "dimension": 8,
+      "retained": 498,
+      "seconds": 0.553
+    },
+    {
+      "best_metric": [
+        4,
+        7,
+        7,
+        38
+      ],
+      "candidates": 1814,
+      "dimension": 9,
+      "retained": 800,
+      "seconds": 2.108
+    },
+    {
+      "best_metric": [
+        4,
+        3,
+        3,
+        48
+      ],
+      "candidates": 3867,
+      "dimension": 10,
+      "retained": 800,
+      "seconds": 4.55
+    },
+    {
+      "best_metric": [
+        4,
+        2,
+        2,
+        52
+      ],
+      "candidates": 4169,
+      "dimension": 11,
+      "retained": 800,
+      "seconds": 6.045
+    },
+    {
+      "best_metric": [
+        4,
+        1,
+        1,
+        56
+      ],
+      "candidates": 2677,
+      "dimension": 12,
+      "retained": 800,
+      "seconds": 6.711
+    }
+  ],
+  "parameters": {
+    "beam": 800,
+    "max_dimension": 12,
+    "out": "orders/210-grlex",
+    "permutation": "210",
+    "term_order": "grlex"
+  },
+  "processed": 3116,
+  "source_file": "search_reuse_orders.py",
+  "source_permutation": [
+    2,
+    1,
+    0
+  ],
+  "source_sha256": "96e3f215d008dd90fa628ba745eda565a1c587fe5ed32db6b4c03ad85ab5e76c",
+  "status": "bounded-search-exhausted"
+}

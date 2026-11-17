@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-15",
+  "connected_source": {
+    "url": "https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex",
+    "cached_file": "jacobian-followup/moment-vanishing-audit/sources/long_spherical_pairs_e9edac2.tex",
+    "sha256": "934ad65de5ed4358fb33b29af15728ae86a1f7c5836e72050b00fc948c78df64",
+    "used_results": [
+      "universal root doublet",
+      "line-doublet radial witness",
+      "Weyl-even normalizer circuit",
+      "subdirect stabilizer blocks",
+      "pullback and central covers"
+    ],
+    "scope_check": "Each of these inputs is proved without sphericity in the draft. Sphericity only enters its separate projection lemma; that lemma is replaced here."
+  },
+  "finite_subgroup_source": {
+    "author": "Yuval Z. Flicker",
+    "title": "Finite subgroups of SL(2,F) and automorphy",
+    "publication": "Manuscripta Mathematica 167 (2022), 213-243",
+    "doi": "https://doi.org/10.1007/s00229-021-01274-x",
+    "url": "https://www.ariel.ac.il/wp/yuval-flicker/wp-content/uploads/sites/316/2023/06/94.FiniteSubgpsSL2Manusc.pdf",
+    "cached_file": "jacobian-followup/moment-vanishing-audit/sources/flicker_sl2_2022.pdf",
+    "sha256": "c59aec448453dcaec1f0bb072d66be95ab671338b9a83e68f011969732ec11f1",
+    "selected_passages_read": "Printed pages 214-215 classification statement, conjugacy scope and explicit E6/E7/E8 generators; PDF page 2.",
+    "imported": "Classification up to conjugacy into cyclic, binary dihedral, 2T,2O,2I; inclusions 2T in 2O and 2I. No automorphy or roots-of-unity theorem is imported.",
+    "independent_controls": "Exact quaternion generation and projective element-order distributions verify the chosen representatives. These do not reprove classification exhaustiveness."
+  },
+  "deductions": [
+    "For connected G, all reductive H whose component group has no A4,S4,A5 quotient have the full torus-versus-witness classification without sphericity.",
+    "Projectivizing an exceptional SL2 factor kills the central-cover kernel and gives an actual surjection H/H0 onto A4,S4,A5.",
+    "All remaining connected pairs admit an actual equivariant quotient onto PSL2/S4 or PSL2/A5; universal MZ and nullcone classification questions reduce separately to these two models.",
+    "Exact Molien rational identities give minimum nonconstant matrix-entry and left highest-weight degrees 8 and 12.",
+    "Q8 commutators rule out the irreducible line-doublet method on the models. Zariski density of <N(T),Gamma> rules out powers of every nonconstant normalizer-invariant function.",
+    "Disconnected extension uses the component group of G0 intersect H, not a quotient-only hypothesis on the entire H component group."
+  ],
+  "proof_sha256": "88895898edf9d6cb9973be9136bf6e8edbd51765b9db9b36ef4a4f7f0bb3a8ef",
+  "checker_sha256": "f55097d700fa72df143b9e71126b8ebdcfd02cc8cde70e35c57f91111b98eafd",
+  "receipt_sha256": "a8791dae61c75bf50b202d889f1ebbed175ae2e6c1bc089a8d802a2d8e55ee35",
+  "assurance": "Internal proof and exact finite rational certificates. No independent specialist review, formalization, new exceptional moment witness or general nonspherical classification.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "averaging_controls": {
+    "octahedral": "Exact adjoint axis orbit and sphere integral: first moment0, second16/189.",
+    "icosahedral": "Nonzero diagonal restriction -(sqrt5/24)t4-(1/24)t8+(sqrt5/192)t12-(31/5120)t16. Representation gaps remove all nonpositive substitution exponents globally; contraction and mixed bound4m>deg Q follow.",
+    "all_order_status": "The character-gap and weight arguments are written all-order proofs; the group evaluations are exact finite algebra.",
+    "boundary": "Only the direct average E_Gamma(P_N) is decided; averages of higher powers or modified circuits are not excluded."
+  },
+  "proof_hash_before_spectral_navigation": "d8eb7ccff7605bd4466622f6db6f1298aa707bc252ccfe8383f1f50812c7daf1",
+  "later_spectral_navigation": "Forward reference to the later orbit-span and spectral theorem; earlier mathematical scope and checker are unchanged.",
+  "proof_hash_before_haar_shear_navigation": "1f37be92a620cd2c2b5321f8c645b4f9c01fa5735b64e81f4a37c815aec25a1f",
+  "haar_shear_navigation": "Current nullcone decision linked; original proof scope and checker unchanged."
+}

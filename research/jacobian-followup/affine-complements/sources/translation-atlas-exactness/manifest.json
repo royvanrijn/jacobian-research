@@ -1,0 +1,84 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED138",
+  "sources": [
+    {
+      "path": "SEPARATED_VARIABLE_VOLUME_AND_SINGLE_ROOT_OBSTRUCTION.md",
+      "url": "retained:PF2RULED137",
+      "used": "Section2 necessary transition-residue test, and exact constant-root-label scope.",
+      "bytes": 8866,
+      "sha256": "06a9bc5edab5e0986158ee6b20163ef0e1ac2e2e59f771f63ca8079a6a3d671a"
+    },
+    {
+      "path": "separated_variable_volume_receipt.json",
+      "url": "retained:PF2RULED137 receipt",
+      "used": "Sealed PASS56 retained; no predecessor mathematical checker execution.",
+      "bytes": 5610,
+      "sha256": "0678e328d1c629cc15cb0b38e7c95d32b070048175cb9a8d10f38746c1c9805d"
+    },
+    {
+      "path": "../hc4-triangular-graphs/COMMON_UNRAMIFIED_PENCIL_AND_AUTOMATIC_ADDITIVE_COMPLETION.md",
+      "url": "retained:HC4MYMP0",
+      "used": "Actual common source pencil, whole-chart additive action and cyclic generic decks.",
+      "bytes": 11446,
+      "sha256": "54575bcc5e76ae85aba8ab39ec50b0dd37f5dc4e8565cbe6ddadbacf3f22be39"
+    },
+    {
+      "path": "../hc4-triangular-graphs/CYCLIC_DECK_SOURCE_IMAGE_AND_THE_UNIQUE_MULTIPLE_FIBRE.md",
+      "url": "retained:HC4MYMQ0",
+      "used": "Actual affine translated-source union, reduced fibres and component intersections; original target distinctions.",
+      "bytes": 12115,
+      "sha256": "6aed131bcfed114b4b6d6ce4480826f6a9a853c5b0655dcb0c0ec4842fb8efbd"
+    },
+    {
+      "path": "../hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md",
+      "url": "retained:HC4MYLA0/1",
+      "used": "Whole-plane divisor localization and topology arguments credited.",
+      "bytes": 13791,
+      "sha256": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d"
+    },
+    {
+      "path": "RELATIVE_EULER_DEFECT_AND_RULED_CHART_COMPRESSION.md",
+      "url": "retained:PF2RULED130",
+      "used": "Existing x-dependent exact mixed2,3 control retained outside separated scope.",
+      "bytes": 11072,
+      "sha256": "76daee69adff1d99747feceab13c72f28ca194b3957dfd2b16bd04d68eec93e7"
+    },
+    {
+      "path": "SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md",
+      "url": "retained:PF2RULED52",
+      "used": "Source additive symmetry does not descend to nontrivial Keller target field automatically.",
+      "bytes": 11010,
+      "sha256": "553f95d8c66f8354d1c475bc2eb916f0b63c356d86466bd8603f8ef62452ceeb"
+    },
+    {
+      "path": "sources/translation-atlas-exactness/stacks-01XB.html",
+      "url": "https://stacks.math.columbia.edu/tag/01XB",
+      "used": "Primary affine cohomology vanishing, Lemma30.2.2; explicitly imported with original assurance limits.",
+      "bytes": 15071,
+      "sha256": "34d0d805ea9f654c3fc7042c298232841e9e2afd8c57bb76d05e3adc8ed560a5"
+    },
+    {
+      "path": "sources/translation-atlas-exactness/stacks-01X8.html",
+      "url": "https://stacks.math.columbia.edu/tag/01X8",
+      "used": "Primary Cech comparison, Lemma30.2.6; complete statement/proof paragraph read.",
+      "bytes": 22720,
+      "sha256": "d56e60db827f4f040c7dab2e770df96cbe7c2f468766065a7345b210d6357ed7"
+    },
+    {
+      "path": "sources/translation-atlas-exactness/source-review.json",
+      "url": "local:source-review",
+      "used": "Exact classical-import, source audit and failed-shortcut boundaries.",
+      "bytes": 1298,
+      "sha256": "5a1ac1eac17264fe9c8e75d84da083a906667711fef8c0d4ff1712ac4b673c35"
+    }
+  ],
+  "primary_cohomology_lemmas_imported": [
+    "Stacks01XB Lemma30.2.2",
+    "Stacks01X8 Lemma30.2.6"
+  ],
+  "new_external_surface_classification": false,
+  "registered_predecessor_mathematical_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

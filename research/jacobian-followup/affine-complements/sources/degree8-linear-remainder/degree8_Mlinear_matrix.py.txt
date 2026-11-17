@@ -1,0 +1,30 @@
+from sage.all import *
+from sage.libs.singular.function_factory import singular_function
+from pathlib import Path
+import json,time,itertools,gzip
+start=time.monotonic()
+for k in [2,4]:
+ data=json.loads(Path('/tmp/degree8_Mlinear_exact_'+str(k)+'.json').read_text());T=PolynomialRing(QQ,'t');K=NumberField(T(data['P4']),'t');A=PolynomialRing(K,names=data['variables'],order='degrevlex');V=PolynomialRing(A,'w');W,M,L=[V(data[x]) for x in ['W','M','L']];s=K(data['s']);I=A.ideal([A(f) for f in data['generators']]);G=[A(g) for g in data['GB']]
+ lift=singular_function('lift');mat=lift(I,A.ideal(G));assert matrix(A,1,4,list(I.gens()))*mat==matrix(A,1,len(G),G)
+ data['GB_in_input']=[[str(mat[i,j]) for i in range(4)] for j in range(35)]
+ Q=A.quotient(I,names=['q4','q5','q6','q7']);VQ=PolynomialRing(Q,'w');w=VQ.gen();cv=lambda f:VQ([Q(c) for c in f]);WW,MM,LL=list(map(cv,[W,M,L]));ss=Q(s);hh=w-ss
+ wh,rem=WW.quo_rem(hh);assert rem==0
+ E=(MM*wh).quo_rem(LL)[1];e5=A(E[5].lift());data['reduced_E5']=str(e5)
+ print('E5 normal form ready',k,'time',time.monotonic()-start,flush=True)
+ basis_ex=sorted(ex for ex in itertools.product(range(4),repeat=4) if sum(ex)<=3)
+ basis=[prod(q**e for q,e in zip(A.gens(),ex)) for ex in basis_ex];cols=[]
+ for i,b in enumerate(basis):
+  poly=A(Q(e5*b).lift());cols.append([poly.monomial_coefficient(bb) for bb in basis])
+  if i%10==0:print('multiplication column',k,i,'time',time.monotonic()-start,flush=True)
+ matK=matrix(K,35,35,lambda i,j:cols[j][i]);data['basis_exponents']=basis_ex;data['multiplication_matrix_columns']=[[[str(c[i]) for i in range(4)] for c in col] for col in cols]
+ # Only the finite rational matrix is sent to the fast Dixon solver.
+ rat=matrix(QQ,140,140)
+ for i in range(35):
+  for j in range(35):
+   for pw in range(4):
+    cc=matK[i,j]*K.gen()**pw
+    for pp in range(4):rat[4*i+pp,4*j+pw]=cc[pp]
+ rhs=[QQ(0)]*140;rhs[4*basis_ex.index((0,0,0,0))]=1
+ matrixpath=Path('/tmp/degree8_Mlinear_matrix_'+str(k)+'.json.gz');matrixpath.write_bytes(gzip.compress(json.dumps(dict(rows=[[str(c) for c in row] for row in rat.rows()],rhs=list(map(str,rhs)))).encode(),mtime=0))
+ Path('/tmp/degree8_Mlinear_unit_pending_'+str(k)+'.json.gz').write_bytes(gzip.compress(json.dumps(data,indent=2).encode(),mtime=0))
+ print('rational140 matrix CHECKPOINT',k,time.monotonic()-start,flush=True)

@@ -1,0 +1,8 @@
+{
+  "kind": "Retained rejected exploratory input, not a verifier",
+  "observed_failure": "The k=2 unprojected moment cancellation assertion failed after the k=1 control passed.",
+  "cause": "A zero scalar created by Python integer division became floating-point 0.0. Adding it to exact rational terms converted the sum to floating point, producing a false nonzero residual.",
+  "repair": "The canonical checker uses Fraction arithmetic for every polynomial coefficient, integral, norm and harmonic contribution and asserts exact coefficient types.",
+  "mathematical_conclusion_from_failed_input": "None",
+  "input_sha256": "6a9e6bce0832b60573c307e08411550ee2bb911b4cc672ef394d7ac34fb7e271"
+}

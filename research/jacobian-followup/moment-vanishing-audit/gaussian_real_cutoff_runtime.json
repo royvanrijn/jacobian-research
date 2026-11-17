@@ -1,0 +1,11 @@
+{
+  "Python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "Sympy": "1.14.0",
+  "sealed_imports_sha256": {
+    "algebraic_bernstein_generator.py": "8340a3e1b8260231fa40321e6c7a3e934a0bfb0adbc7541c38a8e54b08cb4be8",
+    "bernstein_slope_producer.py": "022f1b834ffc7772227912d96d65f4c163560d9588638b4b1e8cfa503bcb7ad8",
+    "gaussian_ordinary_cutoff_producer.py": "bdfa058a44a9c2ed0be8dd2eae062d20559edd83a30e7dc23c6a823aa1e7a0e7",
+    "gaussian_family_producer.py": "6587625b6bdd4ed7dd3e15bd84fac36a9560ff1e610383cb1b4b957ceedcfb84",
+    "gaussian_generic_cutoff_producer.py": "c9b1a84b8502f339af464f044dbbf523cf93c8c7edaec79bd81f0cabd6d8dfc7"
+  }
+}

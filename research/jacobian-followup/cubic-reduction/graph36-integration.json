@@ -1,0 +1,14 @@
+{
+  "arbitrary_target_polynomial_degree": true,
+  "claim": "KCUB4",
+  "fixed_graphs": 9,
+  "general_dimension_exclusion": false,
+  "links": true,
+  "one_raw_output_stage_only": true,
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "source_hashes": true,
+  "status": "pass",
+  "umbrella_status": "open",
+  "validation_sha256": "a2f0c69dbd9416141f562bfda715262ae69fe1a3479d679cf013dafc0bedaede"
+}

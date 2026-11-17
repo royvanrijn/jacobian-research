@@ -1,0 +1,15 @@
+{
+  "status": "NO_COMPLETE_DEGREE18_CHECKPOINT",
+  "returncode": 124,
+  "elapsed_seconds": 240.01004978496348,
+  "source_sha256": "318f77d0aa662fd37560579d00e443cc2a9fcc38bcb24331e0cd838f3695447f",
+  "output_gzip_sha256": "f3a5e45bf8597d65bc0e70033e8eacea08d91d09b8a1b4b05a3167daa88ef710",
+  "output_uncompressed_sha256": "29ac98afaccd6fe5bbc85e8f591d838aae9744a43ef9473b0db75e7b7c4d6474",
+  "output_uncompressed_bytes": 1930,
+  "output_compressed_bytes": 609,
+  "previous_degree17_sha256": "ed759a6acc5fda2626df68c209dcb82fd618f4a1c06e600479b27c07b7c8d52b",
+  "degree_bound": 18,
+  "time_limit_seconds": 240,
+  "stderr": "",
+  "boundary": "Still a degree-truncated basis; not a QQ unit or complete GB certificate. Resume from explicit generators, not an isSB flag."
+}

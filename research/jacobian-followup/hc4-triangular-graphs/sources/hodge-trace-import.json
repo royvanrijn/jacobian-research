@@ -1,0 +1,27 @@
+{
+  "import_name": "Compactly supported Hodge--Deligne polynomial as an additive multiplicative invariant, and the smooth projective curve formula",
+  "author": "Andrea T. Ricolfi",
+  "title": "On the motive of the Quot scheme of finite quotients of a locally free sheaf",
+  "source_url": "https://arxiv.org/html/1907.08123v1",
+  "locations": [
+    "Section1.1: scissor relations and product in the Grothendieck ring",
+    "Section3.2: equation(3.6), projective-space and smooth projective curve E-polynomials",
+    "Section3.2: the E-polynomial is a ring homomorphism from the Grothendieck ring"
+  ],
+  "retained_file": "ricolfi-hodge-1907.08123v1.html",
+  "sha256": "c5fcfee336ea30011ae98d8c5d766aa41ee683b5fa98f08c7abb7ce1869147bc",
+  "reviewed": "2026-11-14",
+  "used_implications": [
+    "E(X)=E(X minus Z)+E(Z) for closed Z and constructible stratifications",
+    "E(X times Y)=E(X)*E(Y), hence E(A1)=u*v and E(A2)=(u*v)^2",
+    "A smooth projective curve of genus g has E=u*v-g*(u+v)+1",
+    "Removing r points gives E=u*v-g*(u+v)+1-r for a smooth connected affine curve"
+  ],
+  "not_imported": [
+    "Quot-scheme generating functions, power-structure calculations or moduli-space results",
+    "Multiplicativity for an arbitrary finite etale cover",
+    "A converse from a Hodge--Deligne polynomial to the full mixed Hodge structure",
+    "A plane Keller surjectivity or properness theorem"
+  ],
+  "assurance": "The primary v1 HTML statement, ring structure and exact curve formula were inspected and the actual source bytes retained. The mixed-Hodge input is imported, not independently reproved by the exact controls."
+}

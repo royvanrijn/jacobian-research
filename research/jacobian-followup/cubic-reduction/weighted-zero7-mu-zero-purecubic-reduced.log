@@ -1,0 +1,5 @@
+REDUCED purecubic 12 5 D 1
+{"status": "primary-full-ring-basis", "source_sha256": "1530688d54e6d1e685e26391a0cc6b1eeb36c7df0351814a68e06b7da31a7ca8", "input_sha256": "e25128252c6e2320dccf73994a41fca9b2b674b38117bfd1912cd921cbe5930a", "mode": "purecubic", "seconds": 0.005}
+DIM:-1
+1
+

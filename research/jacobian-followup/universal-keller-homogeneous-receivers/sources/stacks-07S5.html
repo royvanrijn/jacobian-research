@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 66.14 (07S5): Obtaining a scheme&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELT" data-tag="0ELT">4</a>: Algebraic Spaces
+    
+  
+    <li>Chapter <a href="/tag/03BO" data-tag="03BO">66</a>: Properties of Algebraic Spaces
+    
+  
+    <li class="active">Section <a href="/tag/07S5" data-tag="07S5">66.14</a>: Obtaining a scheme
+    <span id="citation">(<a href="/tag/07S5/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/03JG">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/06NI">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="spaces-properties-section-getting-a-scheme" class="tex-section"><span data-tag="07S5">66.14</span> Obtaining a scheme</h2>
+
+<p>
+We have used in the previous section that the quotient $U/R$ of an affine scheme $U$ by an equivalence relation $R$ is a scheme if the morphisms $s, t : R \to U$ are finite étale. This is a special case of the following result. 
+</p>
+<p>
+<article class="env-proposition" id="07S6">
+  <p><a class="environment-identifier" href="/tag/07S6">Proposition <span data-tag="07S6">66.14.1</span>.</a> Let $S$ be a scheme. Let $(U, R, s, t, c)$ be a groupoid scheme over $S$. Assume </p>
+  <p><ol>
+  <li><p>
+$s, t : R \to U$ finite locally free, 
+</p>
+</li><li><p>
+$j = (t, s)$ is an equivalence relation, and 
+</p>
+</li><li><p>
+every nonempty closed subset $Z$ of $U$ contains a point $u$ whose $R$-equivalence class $t(s^{-1}(\{ u\} ))$ is contained in an affine open of $U$<a class="footnotemark footnote-offset" href="#footnote-1" id="footnote-1-mark"></a><a href="#footnote-1"><sup>1</sup></a>. 
+</p>
+</li>
+</ol></p>
+  <p> Then there exists a finite locally free morphism $U \to M$ of schemes over $S$ such that $R = U \times _ M U$ and such that $M$ represents the quotient sheaf $U/R$ in the fppf topology. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By assumption (3) and Groupoids, Lemma <a href="/tag/03JE" data-tag="03JE">39.24.1</a> we can find an open covering $U = \bigcup U_ i$ such that each $U_ i$ is an $R$-invariant affine open of $U$. Set $R_ i = R|_{U_ i}$. Consider the fppf sheaves $F = U/R$ and $F_ i = U_ i/R_ i$. By Spaces, Lemma <a href="/tag/02WU" data-tag="02WU">65.10.2</a> the morphisms $F_ i \to F$ are representable and open immersions. By Groupoids, Proposition <a href="/tag/03BM" data-tag="03BM">39.23.9</a> the sheaves $F_ i$ are representable by affine schemes. If $T$ is a scheme and $T \to F$ is a morphism, then $V_ i = F_ i \times _ F T$ is open in $T$ and we claim that $T = \bigcup V_ i$. Namely, fppf locally on $T$ we can lift $T \to F$ to a morphism $f : T \to U$ and in that case $f^{-1}(U_ i) \subset V_ i$. Hence we conclude that $F$ is representable by a scheme, see Schemes, Lemma <a href="/tag/01JJ" data-tag="01JJ">26.15.4</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+For example, if $U$ is isomorphic to a locally closed subscheme of an affine scheme or isomorphic to a locally closed subscheme of $\text{Proj}(A)$ for some graded ring $A$, then the third assumption holds by Properties, Lemma <a href="/tag/01ZY" data-tag="01ZY">28.30.5</a>. In particular we can apply this to free actions of finite groups and finite group schemes on quasi-affine or quasi-projective schemes. For example, the quotient $X/G$ of a quasi-projective variety $X$ by a free action of a finite group $G$ is a scheme. Here is a detailed statement. 
+</p>
+<p>
+<article class="env-lemma" id="07S7">
+  <p><a class="environment-identifier" href="/tag/07S7">Lemma <span data-tag="07S7">66.14.2</span>.</a> Let $S$ be a scheme. Let $G \to S$ be a group scheme. Let $X \to S$ be a morphism of schemes. Let $a : G \times _ S X \to X$ be an action. Assume that </p>
+  <p><ol>
+  <li><p>
+$G \to S$ is finite locally free, 
+</p>
+</li><li><p>
+the action $a$ is free, 
+</p>
+</li><li><p>
+$X \to S$ is affine, or quasi-affine, or projective, or quasi-projective, or $X$ is isomorphic to an open subscheme of an affine scheme, or $X$ is isomorphic to an open subscheme of $\text{Proj}(A)$ for some graded ring $A$, or $G \to S$ is radicial. 
+</p>
+</li>
+</ol></p>
+  <p> Then the fppf quotient sheaf $X/G$ is a scheme and $X \to X/G$ is an fppf $G$-torsor. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      We first show that $X/G$ is a scheme. Since the action is free the morphism $j = (a, \text{pr}) : G \times _ S X \to X \times _ S X$ is a monomorphism and hence an equivalence relation, see Groupoids, Lemma <a href="/tag/07S2" data-tag="07S2">39.10.3</a>. The maps $s, t : G \times _ S X \to X$ are finite locally free as we've assumed that $G \to S$ is finite locally free. To conclude it now suffices to prove the last assumption of Proposition <a href="/tag/07S6" data-tag="07S6">66.14.1</a> holds. Since the action of $G$ is over $S$ it suffices to prove that any finite set of points in a fibre of $X \to S$ is contained in an affine open of $X$. If $X$ is isomorphic to an open subscheme of an affine scheme or isomorphic to an open subscheme of $\text{Proj}(A)$ for some graded ring $A$ this follows from Properties, Lemma <a href="/tag/01ZY" data-tag="01ZY">28.30.5</a>. If $X \to S$ is affine, or quasi-affine, or projective, or quasi-projective, we may replace $S$ by an affine open and we get back to the case we just dealt with. If $G \to S$ is radicial, then the orbits of points on $X$ under the action of $G$ are singletons and the condition trivially holds. Some details omitted. 
+    <p>
+      To see that $X \to X/G$ is an fppf $G$-torsor (Groupoids, Definition <a href="/tag/049A" data-tag="049A">39.11.3</a>) we have to show that $G \times _ S X \to X \times _{X/G} X$ is an isomorphism and that $X \to X/G$ fppf locally has sections. The second part is clear from the fact that $X \to X/G$ is surjective as a map of fppf sheaves (by construction). The first part follows from the isomorphism $R = U \times _ M U$ in the conclusion of Proposition <a href="/tag/07S6" data-tag="07S6">66.14.1</a> (note that $R = G \times _ S X$ in our case). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0BBM">
+  <p><a class="environment-identifier" href="/tag/0BBM">Lemma <span data-tag="0BBM">66.14.3</span>.</a> Notation and assumptions as in Proposition <a href="/tag/07S6" data-tag="07S6">66.14.1</a>. Then </p>
+  <p><ol>
+  <li><p>
+if $U$ is quasi-separated over $S$, then $U/R$ is quasi-separated over $S$, 
+</p>
+</li><li><p>
+if $U$ is quasi-separated, then $U/R$ is quasi-separated, 
+</p>
+</li><li><p>
+if $U$ is separated over $S$, then $U/R$ is separated over $S$, 
+</p>
+</li><li><p>
+if $U$ is separated, then $U/R$ is separated, and 
+</p>
+</li><li><p>
+add more here. 
+</p>
+</li>
+</ol></p>
+  <p> Similar results hold in the setting of Lemma <a href="/tag/07S7" data-tag="07S7">66.14.2</a>. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Since $M$ represents the quotient sheaf we have a cartesian diagram 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ R \ar[r]_-j \ar[d] &  U \times _ S U \ar[d] \\  M \ar[r] &  M \times _ S M }  \]
+</div>
+    <p>
+       of schemes. Since $U \times _ S U \to M \times _ S M$ is surjective finite locally free, to show that $M \to M \times _ S M$ is quasi-compact, resp. a closed immersion, it suffices to show that $j : R \to U \times _ S U$ is quasi-compact, resp. a closed immersion, see Descent, Lemmas <a href="/tag/02KQ" data-tag="02KQ">35.23.1</a> and <a href="/tag/02L6" data-tag="02L6">35.23.21</a>. Since $j : R \to U \times _ S U$ is a morphism over $U$ and since $R$ is finite over $U$, we see that $j$ is quasi-compact as soon as the projection $U \times _ S U \to U$ is quasi-separated (Schemes, Lemma <a href="/tag/03GI" data-tag="03GI">26.21.14</a>). Since $j$ is a monomorphism and locally of finite type, we see that $j$ is a closed immersion as soon as it is proper (Étale Morphisms, Lemma <a href="/tag/04XV" data-tag="04XV">41.7.2</a>) which will be the case as soon as the projection $U \times _ S U \to U$ is separated (Morphisms, Lemma <a href="/tag/01W6" data-tag="01W6">29.42.7</a>). This proves (1) and (3). To prove (2) and (4) we replace $S$ by $\mathop{\mathrm{Spec}}(\mathbf{Z})$, see Definition <a href="/tag/03BS" data-tag="03BS">66.3.1</a>. Since Lemma <a href="/tag/07S7" data-tag="07S7">66.14.2</a> is proved through an application of Proposition <a href="/tag/07S6" data-tag="07S6">66.14.1</a> the final statement is clear too. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+    <section id="footnotes">
+    
+      <div><a id="footnote-1" class="footnote-offset"></a><a href="#footnote-1-mark">[1]</a> Let $E \subset U$ be the set of points $u$ such that $t(s^{-1}(\{ u\} ))$ is contained in an affine open of $U$. Condition (3) holds if $E = U$, or if every finite type point of $U$ is in $E$, or if every $u \in U$ specializes to a point of $E$.</div>
+    
+    </section>
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-07S5",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">07S5</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="07S5"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">07S5</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/03JG">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/06NI">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/spaces-properties.pdf#nameddest=07S5">View Section <span data-tag="07S5">66.14</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "claim": "QVA1",
+  "status": "PASS",
+  "interior_projective_control": {
+    "generators": [
+      "x^2",
+      "x*p+2*a"
+    ],
+    "exact_syzygy": "(-p,x)",
+    "generic_splitting": "(-x/a,-p/a)^T",
+    "projective_idempotent": "PASS",
+    "whole_initial_ideal": "(x^2,x*p)",
+    "whole_initial_exhaustion": "written exact syzygy lifting",
+    "normalized_initial_ideal": "(x,p)",
+    "nonprincipal_certificate": "gcd=x and normalized ideal proper",
+    "residue_x_hamiltonian_failure": "-1 not in (x,p)",
+    "all_degrees_and_parameter_orders": "written proof"
+  },
+  "principal_control": {
+    "initial_ideal": "(x)",
+    "normalized_initial_ideal": "(1)",
+    "full_rational_pair": [
+      "x",
+      "p+a/x"
+    ],
+    "actual_free_frame": "x",
+    "divisorial_connection_cancellation": "PASS"
+  },
+  "generic_admission": {
+    "normalized_potential_identity": "PASS",
+    "nonlinear_full_frame_recovery": "PASS",
+    "subquantum_polynomial_removal": "written multiplier argument",
+    "automatic_C_frame": "written principal initial ideal proof",
+    "all_ramification_orders": "written proof, no order census"
+  },
+  "logarithmic_admission": {
+    "universal_gauge_identity": "PASS",
+    "positive_r": "3/x-2/(x-1)+5*x^2+7",
+    "positive_frame": "x^3/(x-1)^2",
+    "transported_mate": "p+a*(5*x^2+7)",
+    "negative_noninteger_residue": "1/2",
+    "negative_higher_pole": "x^-2",
+    "complete_criterion": "r=Hprime+fprime/f, H polynomial, f rational"
+  },
+  "division_intertwiner": {
+    "unbounded_regular_unit": "(1-t*x)^-1",
+    "full_comparison": "PASS",
+    "inner_contact": "t*a",
+    "non_C_control": "x^-1 gives nonregular p+a/x",
+    "regular_full_intertwiner_rigidity": "written proof"
+  },
+  "moving_projective_left_model_initial_ideal": "(1)",
+  "research_context": {
+    "url": "https://doi.org/10.1016/j.jalgebra.2024.07.023",
+    "used": "Valued Weyl Groebner context only; no algorithm or initial-ideal theorem imported"
+  },
+  "proof_boundary": "The automatic formal frame uses an entire saturated valuation ideal, normality, scalar divided operators and a full residue Hamiltonian frame. It is for generic rank one and does not prove generic freeness, finite generic existence or a higher-rank matrix analogue. Exact controls support the written all-parameter proof. The interior syzygy gives an exhaustive initial ideal, not a degree box. Rational logarithmic actions show a full rational pair and polynomial shadow do not replace finite invariant generic generation. No finite generic Long action or Dixmier counterexample is supplied.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "VALUATION_SYMBOLS_AND_GENERIC_GRAPH_ADMISSION.md": "5bcffd23224235687024805475399ed7252bfbf4015e8622254930e29eaeef96",
+    "check_valuation_graph_admission.py": "cf650feaa127874e1aeb5be899a6f96f59e6d1378cf1ae4344498aed26d40a74",
+    "check_projective_frame.py": "88b1e30c916e6a8271f94079b3f90e4b0cf7b837bdb9ac4929288e58bd63a2bc",
+    "CENTRAL_PATCHING_AND_QUANTUM_GRAPH_JETS.md": "40ba3425935deeb5a4a302556c052c9261706d56380d1883359f89d36f3db40f",
+    "HAMILTONIAN_IDEALIZER_CRITERION.md": "5a1bb6b699c6a3d93dad9b4e96302ad77b227f39abfef0814de6e4c093e2dfbc",
+    "INTEGRAL_GRAPH_PROJECTIVITY_AND_LATTICE_RIGIDITY.md": "53b0bbaf7b67ff025306ef895f79dee6104d0a6a621a8623946aa7c17b2f825f",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "3293e179bc90ec35d3c16fce45bc64aadd261b38987a8b40159bc01ed788e786",
+    "PROJECTIVE_FRAME_BOUNDARY.md": "ae7a87e48775f567d86ff320d9de685d4573547311ece60549579e7b447745b4"
+  }
+}

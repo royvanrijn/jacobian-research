@@ -1,0 +1,72 @@
+{
+  "claim": "SIC2B33THREEGATE20261117",
+  "status": "CONDITIONAL_CLASSIFICATION_PROVED, ALL_THREE_GLOBAL_MEMBERSHIPS_OPEN",
+  "variables": [
+    "ell_w",
+    "ell_t",
+    "ell_z",
+    "bminus2",
+    "bminus1",
+    "b0",
+    "b1",
+    "b2",
+    "cminus2",
+    "cminus1",
+    "c0",
+    "c1"
+  ],
+  "positive_weights": [
+    4,
+    3,
+    2,
+    5,
+    4,
+    3,
+    2,
+    1,
+    5,
+    4,
+    3,
+    2
+  ],
+  "targets": [
+    {
+      "name": "4p",
+      "polynomial": "3*b0**2 + 2*b1*bminus1 + 4*b2*bminus2",
+      "degree": 2,
+      "weight": 6,
+      "known_exponent_lower_bound": 7
+    },
+    {
+      "name": "4r",
+      "polynomial": "b0**3 + b0*b1*bminus1 - 4*b0*b2*bminus2 + b1**2*bminus2 + b2*bminus1**2",
+      "degree": 3,
+      "weight": 9,
+      "known_exponent_lower_bound": 5
+    },
+    {
+      "name": "spin1_highest",
+      "polynomial": "-3*b0*c1 + 3*b1*c0 + b2*cminus1 - 6*bminus2",
+      "degree": 2,
+      "weight": 5,
+      "known_exponent_lower_bound": 7
+    }
+  ],
+  "unit_test_convention": "Three SEPARATE1 in I_N+(1-v*f), any finite N and powers; all are unproved.",
+  "fixed_power_ansatz": "Target of weight d at power e uses n<=floor(e*d/3) and cofactor weight e*d-3*n only.",
+  "finite_rotation_parameters_for_covariant_inference": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "conditional_nonzero_B_prefix": 12,
+  "B_zero": "All-order odd theorem, not a claim that twelve odd moments suffice.",
+  "verified_global_memberships": 0,
+  "full_Image33": "OPEN"
+}

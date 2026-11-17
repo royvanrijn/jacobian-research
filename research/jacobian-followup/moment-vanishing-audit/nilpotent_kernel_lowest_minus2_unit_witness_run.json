@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "time_limit_seconds": 25,
+  "memory_limit_bytes": 3221225472,
+  "elapsed_seconds": 5.254,
+  "algorithm": "exact QQ tracked unit export",
+  "input_sha256": "c65b7475d454f595122ceb504096da4d569d940838ef054c36d176e022e4024b",
+  "output_bytes": 5086164,
+  "output_sha256": "3a27c6146210960792f5db0c212bb4513d106c88508bd1b34937c7a30d9724b3",
+  "conclusion": "Largest chart exclusion requires verified exact unit output; multiplier exports require independent identity checks."
+}

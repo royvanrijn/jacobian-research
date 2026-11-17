@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-15",
+  "previous_goal_turn": "PROGRESS:elliptic-ruled birational group obstruction and rational Hopf descent with unary slice obstruction",
+  "current_goal_turn": "PROGRESS:complete all-degree quadratic trace and differential-divisibility model for both exceptional algebras;uniform higher-image ideals;essential pole cycles;exact residues and a Rees non-transfer example",
+  "new_claims": [
+    "GSL2HIGHERPLINTH20261115",
+    "GEXCEPTIONALQUADTRACE20261115",
+    "GHAARPOLERESIDUE20261115",
+    "GHAARREESNONTRANSFER20261115"
+  ],
+  "schema_dependency_acyclicity_and_artifact_hashes": true,
+  "prior_records_preserved_except_named_work_reconciliation": {
+    "MATH_STATUS.json": 2743,
+    "knowledge/lessons.json": 663,
+    "knowledge/work_items.json": 53
+  },
+  "concurrent_records_preserved_at_inspected_hashes": 143,
+  "concurrent_record_hash_audit": "jacobian-followup/moment-vanishing-audit/quadratic_trace_concurrent_record_hashes.json",
+  "concurrent_claim_changes_disjoint_from_proof_dependency_closure": true,
+  "reviewed_lesson": "METHOD-QUADRATIC-HAAR-REGULARITY-20261115",
+  "reviewed_work_item": "WORK-EXCEPTIONAL-SL2-MOMENTS",
+  "scope_fingerprints_reviewed": true,
+  "source_checker_receipt_polynomial_images_and_primary_cache_hashes": true,
+  "canonical_local_links_checked": 6,
+  "all_degree_transfer_and_regularity_model": "C[SL2/Gamma] is exactly S_K in C[SL2][eta]/(eta2-K),with Haar equal to normalized quadratic trace followed by ordinary SL2 Haar",
+  "exact_model_branch_polynomials": [
+    "F3G/36-3G3",
+    "12F5+G3/144"
+  ],
+  "image_test": "delta^j p0 divisible K^ceil(j/2),delta^j p1 divisible K^floor(j/2),for every j until local nilpotence stops;applies to markers too",
+  "nonzero_trace_norm_controls": [
+    "8/15",
+    "25/1092"
+  ],
+  "exact_full_highest_image_terms": [
+    20,
+    40
+  ],
+  "topology_and_universal_proofs_machine_verified": false,
+  "pole_cycle_statement": "Every cycle in a rational-slice regular locus maps to zero in the nonzero Haar top homology class",
+  "associated_graded_MZ_ascent": "Invalid in general:augmentation special fibre and known bad SL2 Haar general fibre",
+  "exceptional_MZ_decisions": "OPEN on both models",
+  "next_gate": "Classify pure-null admissible coefficient pairs in the two fixed S_K algebras;prove all admissible-marker safety or provide a fixed infinite admissible tail",
+  "new_support_or_moment_prefix_campaign": false,
+  "assurance": "Internal written topology,torsor and trace proofs with exact relations,polynomial images,derivative conditions,norms and bounded arithmetic controls;no independent specialist replay,formal verification or external review",
+  "rendered_views": [
+    "index/README.md",
+    "index/geometry.md",
+    "index/documents.tsv",
+    "knowledge/ALGORITHMS.md",
+    "knowledge/WORK_LEDGER.md",
+    "knowledge/work/geometry.md",
+    "STATUS.md"
+  ],
+  "full_repository_navigation": "FAIL: pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md (make exit2)",
+  "goal_status": "active",
+  "concurrent_record_hash_audit_sha256": "a8beac7aabb5bf1b048f198d210b9e5a485c478e50c77a63bd76e0fbc44bc3f7",
+  "full_repository_validated": false,
+  "git_diff_check": "PASS (exit0)",
+  "scoped_validation": "PASS: new claim schemas, acyclic dependencies, artifact/source hashes, lesson/work fingerprints, exact control receipt and links;143 concurrent records preserved at inspected hashes, with changed claims disjoint from proof dependency closure"
+}

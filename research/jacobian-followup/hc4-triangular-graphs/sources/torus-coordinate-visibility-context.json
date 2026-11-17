@@ -1,0 +1,103 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Torus relative critical schemes and complete one-coordinate visibility barriers",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/math/0408048v1",
+      "retained_file": "chau-nonproper-no-line-math0408048v1.html",
+      "sha256": "ebcf879e5b1d914a2c232141e401bc01846b2009bea5f2f3b345763ed477aad5",
+      "role": "Full primary HTML read,including introduction,Theorem1,Lemmas5/6 and the Remark after its proof. Import only that the exceptional curve of a nonsingular polynomial plane map has no A1 component,and the accompanying covering/nonproper-curve facts."
+    }
+  ],
+  "newly_imported_proved_external_statements": [
+    {
+      "source": "https://arxiv.org/html/math/0408048v1",
+      "retained_file": "chau-nonproper-no-line-math0408048v1.html",
+      "statement": "Remark following Theorem1: the exceptional value set of a nonsingular complex polynomial plane map has no irreducible component isomorphic to a line. With constant nonzero Jacobian,exceptional and nonproper loci agree;off that locus the map is a finite-sheeted covering of its generic degree.",
+      "hypotheses_checked": true,
+      "application": "The hypothetical residual (F,G) is a complex plane polynomial Keller map. Its whole G=0 fibre is Gm with exactly two zeros of F. The no-line statement prevents the entire target line from being exceptional and therefore identifies generic map degree with the two-point count along its generic points."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYHW0",
+      "statement": "A Keller function field has no nontrivial finite abelian Galois intermediate field;in particular no degree-two Keller field extension."
+    },
+    {
+      "claim": "HC4MYGK0",
+      "statement": "Relative critical schemes and the full Hessian determinant class transport under actual retained-coordinate automorphisms."
+    },
+    {
+      "claim": "HC4MYGR1",
+      "statement": "Tang ranks zero/one;rank one identifies the whole relative critical scheme with a plane Keller component fibre. A closed A1 component plus nonconstant retained projection forces inverse."
+    },
+    {
+      "claim": "HC4MYJR1",
+      "statement": "The S_rho P/V and h0/h1 x/y source classes are already excluded."
+    },
+    {
+      "claim": "HC4MYJW2",
+      "statement": "Every K2 source with either native x or y pullback affine is excluded."
+    },
+    {
+      "claim": "HC4MYJQ0",
+      "statement": "Actual K3/S_rho frame with w=u,y=v,and three full Morse critical points for all rho."
+    },
+    {
+      "claim": "HC4MYJX1",
+      "statement": "Every h_D unit existence decision is exactly E2,with a conditional z-preserving construction."
+    },
+    {
+      "claim": "HC4MYJX2",
+      "statement": "K2 remains redundant only in the universal affine test list;the individual orbit stays open."
+    },
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Critical-scheme transport and the finite-critical-point gradient obstruction."
+    },
+    {
+      "claim": "HCTANG2",
+      "statement": "The constant jointly affine plane under hypothetical nonautomorphic unit Hessian."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md": "3a10bcc44350ae155d73f1786dbd1dc081c86b20d469e7efd0edfa408981462f",
+    "jacobian-followup/hc4-triangular-graphs/verify_abelian_classgroup.py": "8adc1cd766d154f1a44b02c103ec7d30e323e3f07debf85206ff0f4c4ae044ad",
+    "jacobian-followup/hc4-triangular-graphs/receipt-abelian-classgroup.json": "d4c76a1b07e87e828f0296852401fbdbd11b5bd84e7dfb05d986f099db726658",
+    "jacobian-followup/hc4-triangular-graphs/sources/abelian-classgroup-context.json": "e56790ad0c60c156f03165afe0d6bae4ba57dd7ce5bb62f0ae7bd5fa702fd816",
+    "jacobian-followup/hc4-triangular-graphs/GENERIC_COORDINATE_SPECIALIZATION_AND_K2_ONE_COORDINATE_CLOSURE.md": "4e36fb90d0a07e2d65918a5d26a392c243670ee75ca896f6f4c858ead9748d3f",
+    "jacobian-followup/hc4-triangular-graphs/verify_coordinate_specialization.py": "565ca12d1019f1a142570762cb7a35239445f820d3591b444493902e4d8fb6f1",
+    "jacobian-followup/hc4-triangular-graphs/receipt-coordinate-specialization.json": "a0999ed1ddb3d76ee91c9f2f3313354088a5e33883b7ea02f1f40714061ad1f2",
+    "jacobian-followup/hc4-triangular-graphs/sources/coordinate-specialization-context.json": "3b6411288348dfea772f89cb5c8e8f9ac98c89e706cf72fe4586c13848ede183",
+    "jacobian-followup/hc4-triangular-graphs/TWO_NORMAL_MODELS_AND_RELATIVE_RANK_ONE_ALIGNMENT.md": "db3a76291e820edda4dc5ed28455b54247587c40feaca55bc4a7477bf8bbebe8",
+    "jacobian-followup/hc4-triangular-graphs/verify_two_normal_models.py": "4ba21ae068f31508eefe90209e6fc9f8434306944cd1fffed15996e490944593",
+    "jacobian-followup/hc4-triangular-graphs/receipt-two-normal-models.json": "88795224e906ac36cabc2c40cc34da0ffd3dd19168e5827abbe57d7b1149909f",
+    "jacobian-followup/hc4-triangular-graphs/sources/two-normal-model-context.json": "4b06e5bac73e45636c54bf1497669bb4cac7f45391dfc71634f2620b9d1c33bc",
+    "jacobian-followup/hc4-triangular-graphs/GLOBAL_SIGN_TWISTS_AND_TWO_POINT_KELLER_EQUIVALENCE.md": "ce18a0e1beea6447d91873e212cce7eaf044195668b7394ac94b1fe537121a24",
+    "jacobian-followup/hc4-triangular-graphs/verify_global_sign_twists.py": "4ca5dc019b3d941959b26220f130bc548ac691da83be6b6381b0906d0ce98832",
+    "jacobian-followup/hc4-triangular-graphs/receipt-global-sign-twists.json": "ad933f9d757d87fce42af141fb3080cbf317383c248006a2dac5869a9b69b335",
+    "jacobian-followup/hc4-triangular-graphs/sources/global-sign-twists-context.json": "efc6a8b5f2edd4a9922137ebb4ed5b1d98da8c70ba9474fa3ca9357d0e8395fd",
+    "jacobian-followup/hc4-triangular-graphs/RELATIVE_CRITICAL_LOCUS.md": "d843c948b3b3e276dcc2b02e22f768784479df4e44092a4a155ae0a2ce678083",
+    "jacobian-followup/hc4-triangular-graphs/CRITICAL_COMPONENTS.md": "76fc84214d34b62c804d72988c5a442403b1a3bd70e45c1d3cf6f89d480bd8af",
+    "jacobian-followup/hc4-triangular-graphs/ONE_HYPERBOLIC_COORDINATE_AND_INTRINSIC_CYLINDER_PLANE.md": "9abe3bdd225b8b35cdf060e9e4ae471f587ed2528466176ac9889ca42dcfc11e",
+    "jacobian-followup/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572"
+  },
+  "whole_torus_Keller_fibre_with_two_zeros_excluded": true,
+  "two_point_torus_relative_critical_gate_proved": true,
+  "K2_every_native_affine_coordinate_pullback_excluded": true,
+  "h0_h1_w_affine_coordinate_pullback_excluded": true,
+  "S_rho_every_suspension_frame_affine_coordinate_pullback_excluded": true,
+  "arbitrary_two_point_Keller_fibre_excluded": false,
+  "arbitrary_torus_component_substituted_for_whole_fibre": false,
+  "native_K3_x_z_affine_pullbacks_excluded": false,
+  "arbitrary_full_source_affine_alignment_proved": false,
+  "fixed_K2_full_source_orbit_resolved": false,
+  "full_source_h0_h1_orbits_resolved": false,
+  "K3_rho_full_source_family_resolved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

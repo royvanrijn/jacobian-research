@@ -1,0 +1,42 @@
+{
+  "as_of": "2026-11-14",
+  "primary_sources": [
+    {
+      "path": "hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Allen Hatcher, Notes on Basic 3-Manifold Topology",
+      "used_statement": "Chapter1 compressible tori and irreducibility; boundary incompressibility of orientable Seifert manifolds other than solid tori; Chapter3 loop theorem.",
+      "accessed": "2026-11-14",
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "neumann-norbury-orevkov.pdf",
+      "url": "https://researchers.ms.unimelb.edu.au/~norbury@unimelb/papers/orevkov.pdf",
+      "title": "Walter Neumann and Paul Norbury, The Orevkov invariant of an affine plane curve",
+      "used_statement": "Section4, pp5-6: a one-place-at-infinity polynomial curve has a finite iterated-torus cabling description. No positivity assumption is added.",
+      "accessed": "2026-11-14",
+      "sha256": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "ito-cable-slopes.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/690DE16138573D0051FF223F9269C77C/S0008439520000338a.pdf/note_on_chirally_cosmetic_surgery_on_cable_knots.pdf",
+      "title": "Tetsuya Ito, A Note on Chirally Cosmetic Surgery on Cable Knots, Canad.Math.Bull.64(2021),163-173",
+      "used_statement": "Section2 and section-regular-fiber bases: cable space is Seifert over annulus with one exceptional fiber; inner fiber pq*meridian+longitude and outer peripheral bases. Our p denotes winding, whereas Ito uses q. No cosmetic-surgery theorem is imported.",
+      "accessed": "2026-11-14",
+      "sha256": "004ad7f779c26110cb0e6e4018fa80aed51b76a5e10a95ecf01b13cf54cacd59",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "perelman-finite-extinction.pdf",
+      "url": "https://arxiv.org/pdf/math/0307245",
+      "title": "Grisha Perelman, Finite extinction time for the solutions to the Ricci flow on certain three-manifolds (2003)",
+      "used_statement": "Section1.4: elliptization, closed oriented finite-fundamental-group three-manifolds are spherical space forms. Applied only to the stable end group C3 to recognize a lens space; cyclic spherical space forms are lens spaces.",
+      "accessed": "2026-11-14",
+      "sha256": "460606386f35a6b719970471a94452ecea7769e8c2caeff8820b8a483aebe0c6",
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "novelty_priority_claimed": false
+}

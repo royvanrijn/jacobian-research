@@ -1,0 +1,9 @@
+{
+  "status": "TARGET_ELIMINATION_ONLY, GLOBAL_MEMBERSHIPS_OPEN",
+  "returncode": 0,
+  "elapsed_seconds": 0.014809055952355266,
+  "source_sha256": "91bb6fec0be0681575a71a6b977b21bc704df6bebb3458ef0ca80b1311b282ba",
+  "log_sha256": "fd82112f766293056449b9ff9cfba2a455bf80c35a52863aadfc2759ae6dc341",
+  "source_primitive_integer": true,
+  "output_parse_error": false
+}

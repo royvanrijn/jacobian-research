@@ -1,0 +1,9 @@
+LIB "primdec.lib";
+ring r=0,(u1,u2,u3,u4,u5),dp;
+short=0;
+ideal I=(1)*u1*u2*u3,(1)*u1*u3*u4,(1)*u1*u3*u5,(1)*u2*u4*u5+(-1)*u4^2*u5,(1)*u2^2*u4+(-1)*u4^3,(1)*u2^2*u4+(1/3)*u2*u4*u5+(-1/3)*u4^2*u5+(-1)*u4*u5^2,(1)*u2*u3*u4+(-1)*u3*u4^2,(1)*u2*u3*u4+(-1)*u3^2*u4,(1)*u1^2*u2+(-1)*u1^2*u4+(1)*u2^2*u4+(1)*u2*u3^2+(-1)*u2*u3*u4+(-1)*u2*u5^2,(1)*u2^2*u4+(-1)*u2*u4^2,(1)*u1^3+(1/9)*u1^2*u2+(-1)*u1^2*u3+(-2/9)*u1^2*u4+(1/9)*u1*u2^2+(-1)*u1*u5^2,(1)*u1^2*u4+(-1)*u1*u4^2,(1)*u1^2*u2+(-2)*u1^2*u4+(1)*u1*u2^2,(1)*u1^2*u3+(-1)*u1*u3^2,(1)*u1^2*u2+(-1)*u1^2*u4+(1)*u1*u2^2+(-1)*u1*u2*u4;
+list L=minAssGTZ(I);
+int a; int b; ideal P;
+print("COUNT:"+string(size(L)));
+for(a=1;a<=size(L);a++){P=L[a];print("PRIME:"+string(a)+":"+string(dim(std(P)))+":"+string(size(P)));for(b=1;b<=size(P);b++){print(string(P[b]));}}
+quit;

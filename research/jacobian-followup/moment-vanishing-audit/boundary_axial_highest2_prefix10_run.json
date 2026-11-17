@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "algorithm": "Exact QQ standard basis after complete chart elimination and monic quadratic reduction",
+  "time_limit_seconds": 35,
+  "elapsed_seconds": 0.004,
+  "input_sha256": "25c8f290dfd08dd66d8803ba8a8922a07c8ddf51725233e6d1734e092d969c32",
+  "output_sha256": "42692485aa0de26e83c05ace917c5f17503a982bff227f2fd518b045099ab704",
+  "conclusion": "Complete axial classification requires every chart and exact characteristic-zero unit output."
+}

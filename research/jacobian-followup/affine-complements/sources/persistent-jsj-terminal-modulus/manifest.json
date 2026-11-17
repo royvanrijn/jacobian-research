@@ -1,0 +1,73 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Hatcher, Notes on Basic 3-Manifold Topology, retained version",
+      "bytes": 384715,
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "complete_PDF_pages_visually_rechecked": [
+        20,
+        21
+      ],
+      "printed_pages": [
+        19,
+        20
+      ],
+      "used_statement": "Proposition1.13 essential vertical annulus in the trefoil, Lemmas1.14-1.15 boundary fibre uniqueness with all exceptions; PF77 retains the complete PDF15 Theorem1.9 JSJ audit. Terminal Klein alternative is handled explicitly by its boundary group, not fibre uniqueness.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "PF77/78/79 complete visual audits retained; no new page audit asserted at PF83"
+    },
+    {
+      "path": "sources/borderline-regular-end/waldhausen-1968.pdf",
+      "url": "https://www.maths.gla.ac.uk/~mpowell/Waldhausen-Irreducible3ManifoldsSufficiently-1968.pdf",
+      "title": "Waldhausen, On irreducible 3-manifolds which are sufficiently large, Ann Math87(1968),56-88",
+      "bytes": 2860358,
+      "sha256": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+      "complete_PDF_pages_visually_rechecked": [
+        5,
+        23
+      ],
+      "printed_pages": [
+        59,
+        77
+      ],
+      "used_statement": "Definition1.1.7 sufficiently large means existence of an incompressible surface; the trefoil essential vertical annulus supplies one. Theorem6.1 relative covering recognition as in PF77, full peripheral map, irreducible/boundary-irreducible exteriors, aspherical sufficiently-large target, one boundary excludes closed-surface product, pi1 isomorphism forces degree1.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "PF77/78/79 complete visual audits retained; no new page audit asserted at PF83"
+    }
+  ],
+  "primary_web_records_consulted": [
+    "https://pi.math.cornell.edu/~hatcher/3M/3Mdoublepage.pdf",
+    "https://pi.math.cornell.edu/~hatcher/"
+  ],
+  "retained_inputs": [
+    "PF50/61 full exact source contact and marked lattice formulas",
+    "PF70 individual mark quotient budget and exact cone lists",
+    "PF77/78/79 arbitrary-depth complementary rooted path, terminal and internal cone description, Klein alternatives and full peripheral recognition",
+    "PF80/81 arbitrary-key negative-even seed sectors",
+    "PF82 actual arbitrary-length odd C2 tail and integral marked transfer"
+  ],
+  "new_elementary_proofs": [
+    "zero-R collar source delta2mod3 and no D winding divisible3",
+    "all-depth terminal nD congruence and full determinant divisor",
+    "actual consecutive tail fibre determinant nonzero by coprimality",
+    "canonical seed JSJ obstructions persist as tails attach",
+    "all residual negative-even seed tails close via factor3 and divisor10"
+  ],
+  "scope_limits": {
+    "two_entire_omitted_lines_required_for_complementary_source": true,
+    "prefix_must_already_have_simple_fullS4_periphery": true,
+    "strict_negative_even_two_stage_prefix_required": true,
+    "source_degree_and_characteristic_depth_unbounded": true,
+    "all_first_arrival_paths_closed": false,
+    "all_longer_quartic_excluded": false,
+    "higher_degree_packets_classified": false,
+    "full_goal_open": true
+  }
+}

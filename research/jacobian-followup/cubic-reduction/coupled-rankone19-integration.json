@@ -1,0 +1,20 @@
+{
+  "all_w_covered_in_rank_proof": true,
+  "claims": [
+    "KCUB22"
+  ],
+  "classical_cubic_fulltext_imported": false,
+  "derivative_rank_nonzero": 39,
+  "derivative_rank_zero": 37,
+  "finite_pool_optimum_proved": false,
+  "global_minima_closed": false,
+  "global_upper_bound_still89": true,
+  "independent_validation_sha256": "10f27aa9b42b87f52f33ba9af8ed1f03670aaf8341b0e19d93ecd3a4a0011cdb",
+  "links": true,
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "scope": "Targeted new-claim metadata, source hashes, proof links and three affected lessons/WORK-GLDC fingerprints only; no whole-repository navigation or work-schema pass asserted.",
+  "source_hashes": true,
+  "status": "pass",
+  "umbrella_status": "open"
+}

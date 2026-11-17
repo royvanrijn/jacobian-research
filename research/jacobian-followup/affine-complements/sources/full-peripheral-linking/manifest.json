@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-16",
+  "primary_sources": [
+    {
+      "path": "sources/full-peripheral-linking/clay-watson-11032358v1.html",
+      "url": "https://arxiv.org/html/1103.2358v1",
+      "title": "Clay--Watson, On cabled knots, Dehn surgery, and left-orderable fundamental groups, arXiv1103.2358v1",
+      "bytes": 283210,
+      "sha256": "4cdff593b461694b0282f57a1726aa78b7795c31757a2b0182c25e4a1baf998f",
+      "used_statement": "Section2 first complete cable construction, annulus root amalgam and BOTH preferred peripheral words; full introductory meridian/longitude orientation. Signed Bezout equivalence proved in our note, so positive-coefficient convention is retained. No surgery, orderability or L-space conclusion imported.",
+      "complete_relevant_HTML_passages_read": true,
+      "fresh_PDF_visual_audit": false
+    },
+    {
+      "path": "sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html",
+      "url": "https://arxiv.org/html/2112.14790",
+      "version_marker": "2112.14790v2",
+      "bytes": 1057402,
+      "sha256": "c86826922f0ccb585b10cec2407eda9a1cbc2d36a16d35f9a6308c81914acc74",
+      "title": "Cahn--Catania--Chimgee--Del Guercio--Kendrick, Dihedral linking invariants, arXiv2112.14790v2",
+      "sections": [
+        "Introduction rational linking definition and method",
+        "Theorem5 rational nullity criterion",
+        "Retained complete trefoil and author-code overlap comparison"
+      ],
+      "used_statement": "Introduction rational linking definition/symmetry and exact rational-null condition; chain framework and Theorem5 rational bounding-chain criterion as comparison context. Existing unmodified-author comparison receipt reused on degrees3/5/7 only; no claim their odd-dihedral algorithm handles new S4 or SL2F3 covers. No chosen author diagonal framing identified with our preferred lifts.",
+      "imported_not_independently_reproved": false,
+      "full_dihedral_algorithm_implemented": false,
+      "complete_relevant_primary_HTML_read": true
+    }
+  ],
+  "peripheral_orientation": "positive normal meridian; primitive lifted complementary longitude; m dot L=1",
+  "new_unbounded_proofs": [
+    "Integral lifted surface sum(e L-a m)=0 with arbitrary longitude action",
+    "Rational F symmetric and F e=a with exact core order / minimal denominator torsion defects",
+    "Two fixed Z[t] unimodular cable-space certificates, all t>=1, (r,k)=(36t+1,36t-5)",
+    "All-length all-degree longitude-joining recursion F_new=r^2 F_old and core class multiplication r under exact closed-H1 identification"
+  ],
+  "new_odd_dihedral_algorithm_implemented": false,
+  "new_covers_called_dihedral": false,
+  "full_torsion_linking_form_claimed": false,
+  "finite_controls_not_universal_proof": true,
+  "actual_Keller_or_affine_realization_claimed": false,
+  "external_review_deferred_until_major_theorem_closed": true
+}

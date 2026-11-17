@@ -1,0 +1,105 @@
+{
+  "classification": "rho=(kappa*z+R(w))/w,lambda=w^2,kappa^2+kappa+1=0",
+  "deg_R_at_most_one": "regular C3, excluded as absolute Keller field",
+  "deg_R_at_least_two": "degree2D+4; geometric A_(2D+4); arithmetic sign class(-1)^D(2D+1)",
+  "sweep_controls": [
+    {
+      "D": 2,
+      "R": "w**2 + w + 1",
+      "degree": 8,
+      "geometric_group": "A8",
+      "finite": false
+    },
+    {
+      "D": 3,
+      "R": "w**3 + w**2",
+      "degree": 10,
+      "geometric_group": "A10",
+      "finite": false
+    },
+    {
+      "D": 5,
+      "R": "w**5 + 2*w**2 + w + 3",
+      "degree": 14,
+      "geometric_group": "A14",
+      "finite": false
+    }
+  ],
+  "actual_affine_controls": [
+    {
+      "D": 3,
+      "degree": 10,
+      "geometric_group": "A10",
+      "alpha_equation": "9*alpha**2/700 + alpha/60 + 1/180",
+      "gamma0": "-3*alpha/10 - 1/6",
+      "shear": "22842*alpha*kappa - 159624*alpha + 31470*kappa - 42150",
+      "source_and_target": "ordinary affine four-space",
+      "polynomial": true,
+      "arithmetic_sign_class": -7
+    },
+    {
+      "D": 4,
+      "degree": 12,
+      "geometric_group": "A12",
+      "alpha_equation": "4*alpha**2/225 + 2*alpha/105 + 1/180",
+      "gamma0": "-2*alpha/5 - 1/6",
+      "shear": "15637167*alpha*kappa/1024 - 54240669*alpha/2048 + 34438185*kappa/4096 + 39663765/8192",
+      "source_and_target": "ordinary affine four-space",
+      "polynomial": true,
+      "arithmetic_sign_class": 9
+    },
+    {
+      "D": 5,
+      "degree": 14,
+      "geometric_group": "A14",
+      "alpha_equation": "100*alpha**2/4851 + 5*alpha/252 + 1/180",
+      "gamma0": "-10*alpha/21 - 1/6",
+      "shear": "4558592*alpha*kappa/525 - 4877984*alpha/525 + 814544*kappa/375 + 2072242/375",
+      "source_and_target": "ordinary affine four-space",
+      "polynomial": true,
+      "arithmetic_sign_class": -11
+    }
+  ],
+  "general_r_controls": [
+    {
+      "r": 3,
+      "R": "w**3 + w**2",
+      "highest_nonaffine_exponent": 3,
+      "degree": 12,
+      "geometric_group": "A12",
+      "arithmetic_sign_class": -32,
+      "finite": false
+    },
+    {
+      "r": 4,
+      "R": "w**2 + 1/w",
+      "highest_nonaffine_exponent": 2,
+      "degree": 12,
+      "geometric_group": "A12",
+      "arithmetic_sign_class": -35,
+      "finite": false
+    },
+    {
+      "r": 5,
+      "R": "w**3 + 1/w",
+      "highest_nonaffine_exponent": 3,
+      "degree": 16,
+      "geometric_group": "A16",
+      "arithmetic_sign_class": -60,
+      "finite": false
+    },
+    {
+      "r": 6,
+      "R": "1/w + w**(-2)",
+      "highest_nonaffine_exponent": -1,
+      "degree": 10,
+      "geometric_group": "A10",
+      "arithmetic_sign_class": 21,
+      "finite": false
+    }
+  ],
+  "all_z_independent_lambda_rational_slice_classified": true,
+  "universal_family": "every D>=3; full formulas in rational_sweep.family",
+  "abstract_PSL2_11_actions_decided": false,
+  "full_action_classification_complete": false
+}

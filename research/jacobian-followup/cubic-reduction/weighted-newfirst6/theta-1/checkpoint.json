@@ -1,0 +1,9 @@
+{
+  "input_sha256": "baff1705bb204a30ffd29c60809fc0445c5f841647862120dc698df54eda7eca",
+  "scope": "One rational new-first-output slice in the degree-six model. A proper ideal needs coefficient extraction and independent collision replay; no global degree-six exclusion.",
+  "seconds": 0.005,
+  "source_sha256": "45a7e4911ac4f4184933d51ac54558eb64b9829fcce4675924378afe5c4d4f2d",
+  "status": "primary-basis",
+  "theta": "1",
+  "variables": 12
+}

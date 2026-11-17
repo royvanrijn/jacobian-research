@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path_relative_to_affine_complements": "sources/canonical-quadrics/landesman-vakil-wood-corrigendum-2026.html",
+      "url": "https://www.cambridge.org/core/journals/compositio-mathematica/article/corrigendum-low-degree-hurwitz-stacks-in-the-grothendieck-ring-compositio-math-160-2024-17841849/84FC73A6EAF88930B70CFCF0868E7898",
+      "title": "Landesman, Vakil and Wood, Corrigendum (online22 April2026)",
+      "used_statement": "Complete publisher main text: arithmetic Gorensteinness is required for arbitrary embeddings; the four-point collinear counterexample; canonical embedding existence is distinguished from unrestricted uniqueness. The present note proves the required property directly.",
+      "bytes": 1037708,
+      "sha256": "4da4650f25efb06f4f0a637bf6a6c0d533da4d819900b1ef93c96758cdfad4d3",
+      "complete_PDF_pages_rendered_and_visually_inspected": [],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/canonical-quadrics/stacks-0C14.html",
+      "url": "https://stacks.math.columbia.edu/tag/0C14",
+      "title": "Stacks Project, quasi-finite Gorenstein morphisms",
+      "used_statement": "Finite relative duality Hom_A(B,A), and invertibility criterion for Gorenstein covers; the elementary Frobenius and quadratic proofs are given in the new note.",
+      "bytes": 17160,
+      "sha256": "ab2b3ce99ecca0381881b2add4a4ce19114832b3cdfca57b2b07c6a091c3e126",
+      "complete_PDF_pages_rendered_and_visually_inspected": [],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/canonical-quadrics/stacks-0BUK.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BUK",
+      "title": "Stacks Project, dualizing modules for quasi-finite ring maps",
+      "used_statement": "Equation49.2.0.1 and Lemma49.2.5 with complete proof: the finite relative dual is Hom_A(B,A), compatible with flat base change. Finite local freeness also makes Hom commute with residue-field base change by the elementary dual-basis calculation.",
+      "bytes": 32905,
+      "sha256": "204573da593d7e3702e4cb1e9bfb7765bdf968be21c22dad6af9fd638069ee6e",
+      "complete_PDF_pages_rendered_and_visually_inspected": [],
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path_relative_to_affine_complements": "sources/canonical-formats/wood-quartic-base-2011.pdf",
+      "url": "https://msp.org/ant/2011/5-8/ant-v5-n8-p05-p.pdf",
+      "title": "Wood, Parametrizing quartic algebras over an arbitrary base (2011)",
+      "used_statement": "Retained PF57 complete PDF7-8 visual inspection, Section3 oriented quartic/cubic discriminant identity. No new appeal to an unrestricted projective-embedding uniqueness theorem.",
+      "bytes": 5054288,
+      "sha256": "a8dd1475785b428fe27a75d8aad56f3b90ab3936616c9d3b386f7dd3c28af95b",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        7,
+        8
+      ],
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_claims": [
+    "PFN2",
+    "QCL4",
+    "PF2RULED46",
+    "PF2RULED52",
+    "PF2RULED53",
+    "PF2RULED56",
+    "PF2RULED57"
+  ],
+  "new_written_steps": [
+    "all-degree Gorenstein trace-annihilator canonical embedding",
+    "unbounded Frobenius proof of arithmetic Gorensteinness and quadratic generation",
+    "global free quadratic ideal module of rank d(d-3)/2 for d>=4",
+    "unconditional full global two-quadric pencil for every surviving quartic",
+    "exact three quartic fibre models and rank-one pencil locus",
+    "full source residual finite cubic and source-side universal normal form"
+  ],
+  "Gorenstein_hypothesis_explicit_for_higher_degree": true,
+  "full_quartic_exclusion": false,
+  "independent_full_reproof": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,84 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED121",
+  "sources": [
+    {
+      "path": "sources/disjoint-branch-supports/guralnick-magaard-theorem1-review.json",
+      "url": "https://www.academia.edu/14851732/On_the_Minimal_Degree_of_a_Primitive_Permutation_Group",
+      "used": "Narrow all-element inclusive-half transvection import; review record, not original source bytes",
+      "bytes": 1396,
+      "sha256": "c560d0ece42da23780233d8d48629d730741eec282bfc59c91ae8840504f7aad"
+    },
+    {
+      "path": "PRIMITIVE_PRODUCT_ACTION_EXCLUSION_AND_PRIME_DEGREE_REDUCTION.md",
+      "url": "retained:PF2RULED120",
+      "used": "Complete primitive containers, products excluded, every nonalternating branch meridian half-support",
+      "bytes": 11535,
+      "sha256": "854d1df2518067dc46a5fa2474b67950b20682419191ce6effeef516c25f9c16"
+    },
+    {
+      "path": "HALF_SUPPORT_INERTIA_AND_PLANE_MONODROMY_EXCLUSIONS.md",
+      "url": "retained:PF2RULED118",
+      "used": "Binary affine equality and exact one-image constraints",
+      "bytes": 11205,
+      "sha256": "7b4214be20d10569189acfa6eed54eafd8ce8836932c06802f235ea3d4125eff"
+    },
+    {
+      "path": "SIMPLE_RAMIFICATION_MULTIPLICITY_LEDGER_AND_HALF_SUPPORT_CUSPS.md",
+      "url": "retained:PF2RULED119",
+      "used": "Smooth N and two half-support cusp alternatives",
+      "bytes": 8656,
+      "sha256": "ce347428cffcad1405eb7dc7e40287890e96ae5d16bfa87c0575678106f62a6f"
+    },
+    {
+      "path": "LOCAL_MONODROMY_CAPACITY_AND_WEIGHTED_BRANCH_EXCLUSION.md",
+      "url": "retained:PF2RULED113",
+      "used": "Irreducible contractible FULL branch excluded; Palka import",
+      "bytes": 15001,
+      "sha256": "d110e04fd99ed7b94bf448b869a77b22a90602489c94f3207ef50d398d920010"
+    },
+    {
+      "path": "HIGH_INDEX_COLLISION_EXCESS_AND_NEAR_MAXIMAL_EXCLUSION.md",
+      "url": "retained:PF2RULED112",
+      "used": "Published Chau component Remark, not mistaken for whole-set Corollary3",
+      "bytes": 17893,
+      "sha256": "f4fa4bdcd3b13c19d44d4a257105328c30460e07e86e895e7f074f51918ff9f6"
+    },
+    {
+      "path": "../jc2-omitted-divisors/GLOBAL_LEDGER.md",
+      "url": "retained:PF2OMIT2",
+      "used": "Original normal N, pairwise disjoint unibranch omitted curves, all primes",
+      "bytes": 10046,
+      "sha256": "e3b6fa954ecd67be226a87992707a67207aa377c37bad6257b5f3cbad0476ecb"
+    },
+    {
+      "path": "../hc4-triangular-graphs/sources/palka-lin-zaidenberg-1405.5391v2.html",
+      "url": "https://arxiv.org/html/1405.5391v2",
+      "used": "Retained exact primary Palka TheoremA; one contractible component rectified, no simultaneous rectification",
+      "bytes": 376421,
+      "sha256": "6884f0db34bd41fe04b64304b85310fabf85aeea2881721590b9400e8552bbee"
+    },
+    {
+      "path": "sources/primitive-product-action/manifest.json",
+      "url": "retained:PF2RULED120",
+      "used": "Prior full-PDF table audit retained, no new visual audit claimed",
+      "bytes": 3951,
+      "sha256": "fcee5f36851180d6566c68665d82e03c4a7a826afc7dbedc0b92c3bfe7a9375f"
+    }
+  ],
+  "Guralnick_Magaard_CFSG_theorem_imported": true,
+  "primary_original_paper_web_text_read": true,
+  "narrow_all_element_inclusive_half_property_only": true,
+  "original_Guralnick_Magaard_PDF_obtained_or_visually_audited": false,
+  "original_source_bytes_for_GM_locally_pinned": false,
+  "local_GM_file_is_review_record_only": true,
+  "old_OCR_subset_bound_used": false,
+  "modern_complete_container_list_via_sealed_PF120": true,
+  "prior_Chau_Palka_audits_retained": true,
+  "new_PDF_visual_audit_claimed": false,
+  "independent_CFSG_proof": false,
+  "subset_exclusion_requires_CFSG": false,
+  "finite_samples_prove_theorem": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,419 @@
+\documentclass[11pt]{article}
+\usepackage{microtype,amsmath,amssymb,amsthm,mathtools,booktabs,array}
+\usepackage[margin=1.05in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\usepackage{xcolor}
+\hypersetup{pdftitle={The dimension-degree boundary for Gaussian moment vanishing},pdfsubject={Working mathematical manuscript}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\E}{\mathbb E}
+\newcommand{\C}{\mathbb C}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\G}{\mathsf G}
+\DeclareMathOperator{\Span}{span}
+\title{Gradient bounds and Gaussian original-marker rigidity}
+\author{}\date{17 November 2026: retained written proof}
+\begin{document}\maketitle
+This is an internal written argument using precisely cited classical
+vanishing-cycle and period-comparison results. It gives an all-degree,
+all-dimension sufficient gradient criterion with every original marker
+retained. It also proves the smooth-leading exclusion and one common
+ordinary-node reduction for the boundary paper. The residual-node
+family is not excluded here. No independent replay,machine-formal
+verification,external review or novelty claim is made.
+
+\section{Formal Gaussian and seed conventions}
+For $X$ a vector of independent standard real Gaussian variables,
+extend its moment functional complex-linearly. Set
+\[
+ \Phi_A(t)=\sum_{m\geq0}\E[A(X)P(X)^m]\frac{t^m}{m!}.
+\]
+Purity is $\Phi_1=1$;safety means every $\Phi_A$ is a polynomial.
+These are formal series. They need not be represented by a convergent
+real integral of $e^{tP}$. The holomorphic Gaussian quadratic is
+$q(x)=\sum_i x_i^2/2$ and the bilinear form is $v^Tw$.
+
+\begin{lemma}[The seed functional]\label{lem:seedfunctional}
+Let $M$ be a finite-dimensional differential module over $K=\C(t)$,
+let $s\in M$, and suppose a $K$-linear horizontal map
+$J:M\longrightarrow\C((t))$ satisfies $J(s)=1$. Then the differential
+submodule $U=K\langle\partial_t\rangle s$ has a horizontal quotient
+$L:U\longrightarrow K$ with $L(s)=1$.
+
+At an ordinary base point, $L$ extends locally to an analytic horizontal
+functional on $M$. For the period conclusion, assume explicitly that
+$M$ is the generic exponential de Rham system of regular functions
+$f,g$ on a smooth affine complex variety, where $f$ is the base
+projection and $f,g$ are algebraically independent. Remove the finite
+exceptional base set in the Hien--Roucairol comparison theorem.
+Then the extension is represented by a flat rapid-decay cycle, and its
+period evaluated on $s$ is identically one.
+\end{lemma}
+\begin{proof}
+On the generators $s,\nabla s,\nabla^2s,\ldots$, the values of $J$
+are $1,0,0,\ldots$. Therefore its restriction takes values in $K$.
+Every rational relation between these generators is respected because
+$J$ was defined on $M$, so this restriction is well defined and
+horizontal. Its value at $s$ makes it surjective.
+
+Choose a point where $M$, $U$ and $L$ are ordinary, extend the fiber
+functional from $U$ to $M$, and solve the dual analytic ODE.
+Uniqueness preserves its restriction to $U$. The perfect period
+pairing and solution representation in
+Hien--Roucairol~\cite[Theorems~2.4 and~3.7]{HienRoucairol} give the
+asserted cycle. A scalar rational normalization is an invertible gauge
+away from its zeros and poles and must be retained in the period.
+\end{proof}
+
+
+\section{The ternary frame test}
+For the frame statements write $P=F_3+F_2+F_1+F_0$ in three variables.
+\begin{lemma}[The algebraic frame test]\label{lem:frame}
+There are Gaussian coordinates $(Z,W,T)$ in which $P$ is affine linear
+in $W$ if and only if there is a nonzero vector $v\in\C^3$ such that
+\begin{equation}\label{eq:frame}
+ v^Tv=0,\qquad \nabla F_3(v)=0,\qquad F_2(v)=0.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Polarization gives
+\[
+ D_v^2P(x)=2\nabla F_3(v)^Tx+2F_2(v).
+\]
+The last two conditions in \eqref{eq:frame} say exactly that this
+polynomial vanishes. Complete the nonzero null vector $v$ to a Witt
+basis: choose a null partner with pairing one, and a unit vector in
+their orthogonal complement. In these coordinates $D_v$ is the $W$
+derivative. Hence $D_v^2P=0$ says that no second or higher power of
+$W$ occurs. The converse reads off $v$ from the $W$ direction.
+\end{proof}
+
+
+\subsection{One exclusion criterion for several geometric cases}
+\label{sec:gradientexclusion}
+
+The smooth case does not need a list of critical-point formulas.
+The same argument also treats many singular leading forms. Its
+hypotheses must hold in every complex direction. A bound only on
+the original real integration space would not suffice.
+
+We state the criterion for a polynomial exponential amplitude, then
+specialize it to the Gaussian. Norms are Hermitian norms on complex
+affine space; the Gaussian quadratic remains holomorphic.
+
+\begin{theorem}[A gradient criterion]\label{thm:gradientcriterion}
+Let $P,q\in\C[x_1,\ldots,x_n]$, with $P$ nonconstant and
+$\deg q\leq J$, where $J\geq1$. Suppose that outside a compact set
+\begin{equation}\label{eq:gradientconditions}
+ \|\nabla P(x)\|\geq c\|x\|^{J-1},\qquad
+ \frac{\|\operatorname{Hess}P(x)\|}{\|\nabla P(x)\|^2}\leq C
+\end{equation}
+for some $c>0$ and $C<\infty$. For every fixed polynomial $A$,
+no nonzero flat period of
+\[
+ A(x)e^{tP(x)-q(x)}\,dx_1\cdots dx_n
+\]
+is a finite exponential-polynomial sum
+$\sum_\lambda e^{\lambda t}p_\lambda(t)$ with polynomial
+$p_\lambda$. In particular it cannot be a nonzero constant.
+\end{theorem}
+\begin{proof}
+We first justify the full cycle space and the tails. The gradient is
+nonzero outside a compact set, so the affine critical set is compact
+and algebraic, hence finite. The gradient bound is stronger than the
+condition excluding vanishing cycles at infinity. The finite-critical
+thimble decomposition therefore applies, with the whole local Milnor
+homology at each isolated critical point, not just its Morse
+approximation~\cite[Part~I, Sections~1--4]{Pham}.
+When several critical points have the same value, take disjoint
+Milnor balls and apply excision to their complement. This gives the
+direct sum of their full local homology before any values are grouped.
+
+Here the Gaussian or polynomial amplitude can be kept on these fixed
+$P$-cycles. Choose a generic argument $\theta$ of $t$. Outside the
+local critical neighbourhoods, lift a descending phase ray by
+\[
+ P(x)=\lambda-e^{-i\theta}s,\qquad
+ \frac{dx}{ds}=-e^{-i\theta}
+                    \frac{\overline{\nabla P(x)}}{\|\nabla P(x)\|^2}.
+\]
+For large $s$ the lift is outside the compact set, because its phase
+value is unbounded. The first condition in
+\eqref{eq:gradientconditions} gives
+$\|x\|^J\leq C_1(1+s)$. The real differential of this vector field
+has norm at most a constant times the second ratio in
+\eqref{eq:gradientconditions}, hence is bounded. Transported
+$(n-1)$-cycle volumes grow at most as $\exp(C_2s)$; the radial speed
+is bounded as well. Also
+$|A(x)e^{-q(x)}|\leq C_3(1+s)^M\exp(C_4s)$ for some $M$.
+Thus $\exp(-|t|s)$ dominates the complete tail, uniformly for large
+$|t|$ in a smaller sector. The same estimate applies to every fixed
+polynomial amplitude.
+
+We must also check that these are a full basis for the actual phase,
+rather than selected admissible cycles. Put
+\[
+ F_\sigma=P-\sigma q/t,\qquad 0\leq\sigma\leq1.
+\]
+Since $\|\nabla q\|\leq C_5\|\nabla P\|$ outside the same compact
+set, all large $|t|$ give
+\[
+ \|\nabla F_\sigma\|\geq\tfrac12\|\nabla P\|.
+\]
+The ratio involving the Hessian stays uniformly bounded too. Indeed
+$\|\operatorname{Hess}q\|=O(\|x\|^{J-2})$ for $J\geq2$, while
+that Hessian is zero for $J=1$.
+All critical points and their values therefore remain in fixed compact
+sets. On the preimage of a phase half-plane beyond those values, the
+parameter field
+\[
+ W_\sigma=\frac{q}{t}
+       \frac{\overline{\nabla F_\sigma}}{\|\nabla F_\sigma\|^2}
+\]
+satisfies $\partial_\sigma F_\sigma+dF_\sigma(W_\sigma)=0$ and
+$\|W_\sigma\|\leq C_6(1+\|x\|)/|t|$. Its flow is complete for
+$0\leq\sigma\leq1$. Extend it by a cutoff away from that half-plane.
+It gives an isotopy of the ambient relative pairs defining the full
+rapid-decay homology. This explicitly prevents an infinity class
+from appearing during the deformation.
+
+The fixed $P$-thimbles have uniformly descending tails for every
+$F_\sigma$, by the preceding estimates. Truncate them beyond a common
+large phase value. Their boundaries stay in the descending half-plane
+throughout the isotopy, so they define its flat relative classes.
+They are a full basis at $\sigma=0$ and remain one at $\sigma=1$.
+Finite critical points may merge, and their critical values may
+coincide; the argument uses the full relative pairs and does not
+require a Morse family. The same cycles are flat as $t$ varies in
+the chosen sector.
+
+These improper chains and their homotopies are admissible for the
+period pairing. One can integrate first on truncated chains and then
+pass to the limit: the tail bound makes every boundary term tend to
+zero. Indeed the differential of $W_\sigma$ grows at most as
+$C(1+\|x\|^J)/|t|$; along the controlled tails this is
+$C'(1+s)/|t|$. The homotopy volumes have at most this exponential
+growth, still dominated by the descending factor for all large $|t|$.
+Thus Stokes and differentiation under the integral hold throughout;
+the relative-pair calculation does not depend on a convergence claim
+for the original real Gaussian integral.
+
+It remains to determine the local asymptotics at a finite critical
+point with value $\lambda$. For an analytic amplitude germ, the
+vanishing-cycle density is a finite sum of terms
+$s^{\alpha+k}(\log s)^j$, with analytic coefficient series and
+$\alpha>-1$. Its Laplace asymptotics consequently have the form
+\[
+ e^{\lambda t}\sum_{\alpha,k,j}
+       c_{\alpha,k,j}\,t^{-\alpha-k-1}(\log t)^j,
+ \qquad k\geq0.
+\]
+This is the local analytic result of
+Pham~\cite[Part~II, Section~1.1, (1.5)--(1.6) and the footnote on
+printed page~26]{Pham}; it permits degenerate isolated critical
+points. Pham credits Maisonobe and Rombaldi for the local solution
+comparison used there. The amplitude $A e^{-q}$ is analytic. Every nonzero
+term has a strictly negative power of $t$ and tends to zero after
+removing $e^{\lambda t}$. The tails outside the local neighbourhood
+are exponentially negligible by the uniform bound already proved.
+
+The finite-critical decomposition accounts for the full module.
+Group equal critical values before separating the distinct formal
+exponential factors. Within each such factor the displayed local
+expansions contain only decaying powers and logarithms. A nonzero
+polynomial prefactor cannot occur. The zero function is allowed when
+all these contributions vanish. This proves the theorem.
+\end{proof}
+
+\begin{corollary}[Original Gaussian markers]\label{cor:gradientmarkers}
+For the standard Gaussian quadratic $q=\sum x_i^2/2$, suppose
+\eqref{eq:gradientconditions} holds with $J=2$. Then every original
+marked series $\Phi_A$ is either zero or is not a finite
+exponential-polynomial sum. In particular $P$ is neither pure nor safe.
+\end{corollary}
+\begin{proof}
+The exact top de Rham quotient and connection are
+\[
+ M=\C(t)[x]\Big/\sum_i(\partial_i+tP_i-x_i)\C(t)[x],
+ \qquad\nabla[A]=[A_t+PA].
+\]
+Gaussian integration by parts makes $[A]\mapsto\Phi_A$ horizontal
+on this vector-space quotient. The spatial and parameter derivatives
+commute; no ordinary Jacobian-ideal quotient is substituted.
+If some $\Phi_A$ is a
+nonzero finite exponential-polynomial sum, a constant-coefficient
+differential operator isolates one exponential and kills its
+polynomial prefactor, giving $c e^{\beta t}$, $c\ne0$.
+Because
+\[
+ \partial_t\Phi_A=\Phi_{PA},
+\]
+this is still an original fixed polynomial marker. Replace $P$ by
+$P-\beta$ and divide the marker by $c$. Its formal seed value is one.
+Lemma~\ref{lem:seedfunctional} gives an actual constant period for
+that marker, contradicting Theorem~\ref{thm:gradientcriterion}.
+Its comparison hypotheses hold with base $t$ and phase $tP-q$ on
+$\mathbb A^1\times\mathbb A^n$, after removing the finite exceptional
+base set. No convergence of the original Gaussian series is assumed.
+Finally $\Phi_1(0)=1$, so it is a nonzero series; purity or safety
+would make it a polynomial.
+\end{proof}
+
+\begin{corollary}[Smooth leading form, in every degree]
+\label{cor:smoothleading}
+If $\deg P=D\geq2$ and the homogeneous leading form satisfies
+$\nabla F_D(v)=0$ only for $v=0$, then $P$ is not pure. In fact
+Corollary~\ref{cor:gradientmarkers} holds for every original marker.
+\end{corollary}
+\begin{proof}
+Compactness of the complex unit sphere gives
+$\|\nabla P(x)\|\geq c\|x\|^{D-1}$ for large $\|x\|$.
+Also $\|\operatorname{Hess}P\|=O(\|x\|^{D-2})$, so its ratio to
+the squared gradient is $O(\|x\|^{-D})$. Both conditions for $J=2$
+follow, with all lower terms retained.
+\end{proof}
+
+\begin{lemma}[The ordinary-node test]\label{lem:nodecoercivity}
+Let $P=F_3+F_2+F_1+F_0$ in $n\geq2$ variables. Suppose its
+projective singular set is finite and every singular point $[v]$
+has $\ker\operatorname{Hess}F_3(v)=\C v$. If $F_2(v)\ne0$ at
+every such point, then
+$\|\nabla P(x)\|\geq c\|x\|$ outside a compact set. Consequently
+$P$ is not pure under the Gaussian functional.
+\end{lemma}
+\begin{proof}
+Otherwise choose an unbounded sequence with
+$\|\nabla P(x)\|/\|x\|\longrightarrow0$. A projective limit $[v]$
+is singular for $F_3$. Choose a fixed complement to $\C v$ and write
+$x=sv+y$, where $y=o(s)$. With $H=\operatorname{Hess}F_3(v)$,
+homogeneity gives the exact expansion
+\[
+ \nabla P(sv+y)=sHy+\nabla F_3(y)+s\nabla F_2(v)
+                              +\nabla F_2(y)+\nabla F_1.
+\]
+The map $H$ is injective on the chosen complement. Divide by $s$.
+The error from $\nabla F_3(y)/s$ is $o(\|y\|)$, so the equation
+first forces $y$ to stay bounded. A limit $y_0$ satisfies
+$Hy_0+\nabla F_2(v)=0$. Pair bilinearly with $v$. Symmetry and
+$Hv=0$ kill the first term, whereas Euler's identity gives
+$v\cdot\nabla F_2(v)=2F_2(v)$, a contradiction.
+The Hessian of a cubic is $O(1+\|x\|)$, so the second condition
+in \eqref{eq:gradientconditions} follows from the first. Apply
+Corollary~\ref{cor:gradientmarkers}.
+\end{proof}
+
+\subsection{A common residual family for ordinary nodes}
+\label{sec:ordinaryresidual}
+
+For a pure cubic with only ordinary leading nodes, the preceding
+lemma forces $F_2$ to vanish at some node. An isotropic such node
+gives the frame already proved in Lemma~\ref{lem:frame}. Every
+nonisotropic such node has the following single normal form.
+
+\begin{lemma}\label{lem:ordinarynormal}
+Let $[w]$ be an ordinary node of a ternary $F_3$, with $F_2(w)=0$
+and $w^Tw\ne0$. An invertible affine change of coordinates puts
+the pair consisting of $P$ and the Gaussian quadratic into
+\begin{align*}
+ P={}&T(uv+h)+a u^3+d v^3+b u^2+c v^2+e u+f v+k,\\
+ q={}&\tfrac12(Au^2+Bv^2+mT^2+2Cuv+2DuT+2EvT)
+                  +\ell_u u+\ell_v v+\ell_T T+q_0,
+\end{align*}
+where $m\ne0$ and $\det\operatorname{Hess}q\ne0$.
+All Gaussian means and cross terms must be retained. Its leading
+curve is irreducible nodal when $ad\ne0$, a transverse line and
+smooth conic when exactly one of $a,d$ vanishes, and three
+nonconcurrent lines when $a=d=0$.
+\end{lemma}
+\begin{proof}
+Take $T$ in the direction $w$ and choose a complementary plane.
+The singular-point equations make $F_3$ linear in $T$; its
+coefficient is a nondegenerate binary quadratic because the node
+is ordinary. Factor that quadratic and choose its two linear
+factors as coordinates $u,v$. Thus $F_3=Tuv+B_3(u,v)$.
+Replace $T$ by $T$ plus a linear form in $u,v$ to remove the
+$u^2v$ and $uv^2$ terms of $B_3$.
+
+There is no $T^2$ term in $F_2$, precisely because $F_2(w)=0$.
+The full coefficient of $T$ is therefore
+$uv+\alpha u+\beta v+h_0$. Translations of $u,v$ make it $uv+h$.
+The cubic terms outside $T$ remain pure cubes. A constant shift
+of $T$ removes the remaining quadratic $uv$ term. This gives the
+displayed $P$. The direction of $T$ has not changed, so $m\ne0$;
+invertibility of the affine change preserves the nondegenerate
+Gaussian Hessian, while translations and the shifts of $T$ produce
+the means and cross terms shown.
+
+If $ad\ne0$, the polynomial $Tuv+a u^3+d v^3$ is irreducible:
+an independent factor of a polynomial linear in $T$ would divide
+both $uv$ and $a u^3+d v^3$, whose gcd is one. Its gradient shows
+that its sole singular point is the stated ordinary node. If
+$a=0,d\ne0$, it is $v(Tu+d v^2)$, with a smooth conic meeting
+the line transversely at two points; the other one-zero case is
+symmetric. If both vanish, it is the coordinate triangle $Tuv$.
+\end{proof}
+
+This consolidates three leading-curve rows into one residual family.
+It is a reduction, not yet an exclusion of that family. In particular
+the full quadratic $q$, including its means, cannot be replaced by
+a convenient diagonal form during the remaining period argument.
+
+\subsection{Two controls on the scope of the criterion}
+
+Ordinary tameness of $P$ alone is insufficient for the Gaussian
+conclusion. Let $P=\ell^Tx$, with $\ell=(1,i)/\sqrt2$ in two
+variables. Its gradient is constant and nonzero, but
+$\Phi_1=\exp(t^2\ell^T\ell/2)=1$. The phase $tP-q$ has its
+critical point at $x=t\ell$, escaping with action zero. Thus an
+isolated critical set for $P$, or the weaker gradient bound away
+from zero, would lose exactly the contribution that purity needs.
+Condition~\eqref{eq:gradientconditions} with $J=2$ prevents this.
+
+The distinction between an original marker and a time-dependent
+amplitude also remains essential. For
+$P=(X_1^2+X_2^2)/2$ one has $\Phi_1=(1-t)^{-1}$ and
+$(1-t)\Phi_1=1$. This phase satisfies the gradient criterion.
+The unit in its rational differential module is represented by a
+time-dependent amplitude. No original fixed polynomial marker has
+a nonzero polynomial period, by Corollary~\ref{cor:gradientmarkers}.
+The abstract module alone does not record that distinction.
+
+\section{Ordinary moment series}
+Under Corollary~\ref{cor:gradientmarkers},every nonzero original
+ordinary moment resolvent
+\[
+ C_A(s)=\sum_{m\geq0}\E[AP^m]s^{-m-1}
+\]
+is nonrational. Indeed partial fractions show that a rational $C_A$
+has coefficients which are finite sums of exponential sequences
+times falling-factorial polynomials,plus finitely many initial terms.
+Its exponential generating function is therefore a finite sum
+$e^{\beta t}p_\beta(t)$,including a polynomial from those initial terms.
+Conversely every such sum has a rational ordinary resolvent. This is a
+formal identity,without a convergence hypothesis. The nonzero case is
+excluded by the all-marker corollary.
+
+This statement concerns original fixed polynomial markers. It does not
+exclude a unit obtained by multiplying a period by a rational function
+of $t$,as the two-dimensional quadratic control demonstrates.
+\begin{thebibliography}{9}
+\bibitem{Pham}
+F.~Pham, \emph{La descente des cols par les onglets de Lefschetz,
+avec vues sur Gauss--Manin}, \emph{Ast\'erisque} \textbf{130}
+(1985), 11--47,
+\href{https://numdam.org/item/AST_1985__130__11_0/}{Numdam primary text}.
+
+\bibitem{HienRoucairol}
+M.~Hien and C.~Roucairol, \emph{Integral representations for solutions
+of exponential Gau\ss--Manin systems},
+\emph{Bulletin de la Soci\'et\'e Math\'ematique de France}
+\textbf{136} (2008), no.~4, 505--532,
+\href{https://doi.org/10.24033/bsmf.2564}{doi:10.24033/bsmf.2564}.
+
+\end{thebibliography}
+\end{document}

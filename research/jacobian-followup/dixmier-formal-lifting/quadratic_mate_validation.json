@@ -1,0 +1,28 @@
+{
+  "claim": "QSO2",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "changed_method_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "retained_Long_input_and_exact_control_receipt": "PASS",
+  "python_compile": "PASS",
+  "changed_files_diff_check": "PASS",
+  "local_markdown_links_checked": 155,
+  "unique_equation_labels": 19,
+  "proof_sha256": "7e1ff77f6b2a057a0ad9efc8cf00891043a650ffb01eaf085aed06d88aabb833",
+  "checker_sha256": "34ffb610ad6fe92d9400c15b1120a046d1a40aac1b46a063682b159eb17d4fdc",
+  "proof_boundary": "Finite exact symbolic controls only. The all-hierarchy resonance proof, no-algebraic-solution theorem, all-mate classification, valued order-drop argument and Long corollary use the written proof. No finite sample establishes those universal statements.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "previous_goal_turn": "progress: primary-source review identified the October 2026 revised PI/KP correspondence and isolated the all-odd scalar gate; no new theorem was promoted in that review",
+  "goal_status": "active",
+  "status_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+  }
+}

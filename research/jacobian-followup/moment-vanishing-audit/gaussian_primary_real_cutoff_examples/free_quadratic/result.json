@@ -1,0 +1,643 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "dimension": 2,
+    "parameter_count": 1,
+    "phase_terms": [
+      [
+        [
+          2,
+          0,
+          1
+        ],
+        "1"
+      ]
+    ],
+    "parameter_ideal": [],
+    "precision_matrix": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "primary_components": [
+    {
+      "primary_ideal": [],
+      "radical_ideal": [],
+      "prime_radical_checked": true,
+      "independent_indices": [
+        0
+      ],
+      "dimension": 1
+    }
+  ],
+  "component_results": [
+    {
+      "component_index": 0,
+      "finite_algebra": {
+        "component": {
+          "primary_ideal": [],
+          "radical_ideal": [],
+          "prime_radical_checked": true,
+          "independent_indices": [
+            0
+          ],
+          "dimension": 1
+        },
+        "scalar_parameters": [
+          "c0",
+          "a0",
+          "a1",
+          "a2"
+        ],
+        "dependent_variables": [],
+        "standard_monomials": [
+          []
+        ],
+        "rank": 1,
+        "unit": [
+          {
+            "numerator": [
+              [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ],
+            "denominator": [
+              [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ]
+          }
+        ],
+        "multiplication_table": [
+          [
+            [
+              {
+                "numerator": [
+                  [
+                    [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                "denominator": [
+                  [
+                    [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ],
+        "injectivity_contract": "Q is primary and nonzero polynomials in its maximal independent variables avoid radical(Q); localization is injective. Primary status is trusted CAS."
+      },
+      "source_input": {
+        "dimension": 2,
+        "field_parameters": [
+          "c0"
+        ],
+        "coefficient_variables": [],
+        "coefficient_relations": [],
+        "phase_terms": [
+          [
+            [
+              2,
+              0
+            ],
+            "c0"
+          ]
+        ],
+        "precision_matrix": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ]
+      },
+      "certificate": {
+        "ordinary": {
+          "kind": "ordinary",
+          "method": "exhaustive QQ(U) graph search",
+          "box": 3,
+          "scalar_terms": [
+            [
+              [
+                0,
+                0
+              ],
+              "1/2"
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              "3/2"
+            ],
+            [
+              [
+                2,
+                0
+              ],
+              "1"
+            ]
+          ],
+          "operator_terms": [
+            [
+              [
+                0,
+                0,
+                0,
+                2,
+                0
+              ],
+              "1/(4*c0)"
+            ],
+            [
+              [
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "-1/(2*c0)"
+            ],
+            [
+              [
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              "1/(4*c0)"
+            ]
+          ],
+          "left_witnesses": [
+            [
+              [
+                [
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "-1/(4*c0)"
+              ],
+              [
+                [
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "1/(4*c0)"
+              ]
+            ],
+            [],
+            [
+              [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  2,
+                  0
+                ],
+                "1/(4*c0)"
+              ],
+              [
+                [
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2
+                ],
+                "1"
+              ],
+              [
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "-1/(2*c0)"
+              ],
+              [
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "1/(4*c0)"
+              ]
+            ]
+          ]
+        },
+        "Euler": {
+          "kind": "Euler",
+          "method": "exhaustive QQ(U) graph search",
+          "box": 2,
+          "scalar_terms": [
+            [
+              [
+                0,
+                1
+              ],
+              "-1/2"
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              "1"
+            ]
+          ],
+          "operator_terms": [
+            [
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "-1"
+            ]
+          ],
+          "left_witnesses": [
+            [
+              [
+                [
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "-1/2"
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "-1"
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "-1"
+              ]
+            ]
+          ]
+        },
+        "graph_generators": [
+          [
+            [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "1"
+            ],
+            [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "2*c0"
+            ],
+            [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "-1"
+            ]
+          ],
+          [
+            [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "1"
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "-1"
+            ]
+          ],
+          [
+            [
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                0
+              ],
+              "-c0"
+            ],
+            [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        ],
+        "specialization_start": 0,
+        "torsion": "Retained in exact unlocalized scalar/LEFT-witness identities; no division by scalar factors."
+      },
+      "order_law": {
+        "marker_slope": "2",
+        "safe": true,
+        "asymptotic_coefficient": "1/2",
+        "exact_line_threshold": 1,
+        "late_offsets": [
+          "0"
+        ],
+        "shift_D": 2,
+        "ordinary_upper_step": 2,
+        "ordinary_step_start": 1,
+        "query_power": 1,
+        "original_order_at_query": 2,
+        "shifted_strip": {
+          "a": 4,
+          "b": 1,
+          "rho": "4",
+          "normal_radius": 2,
+          "normal_step_bound": 8,
+          "collar_outer_radius": 11,
+          "collar_validity_start": 1,
+          "transformed_polynomial_terms": [
+            [
+              [
+                0,
+                1
+              ],
+              "-1/2"
+            ]
+          ],
+          "leading_x_coefficient_terms": [
+            [
+              [
+                1
+              ],
+              "-1/2"
+            ]
+          ],
+          "leading_coefficient_root_bound": "1",
+          "collar_lower_bound": "1/2",
+          "error_numerator_bound": "0",
+          "integral_line_offsets": [
+            0
+          ]
+        },
+        "ordinary_rational_projection": {
+          "cleared_denominator": "1",
+          "cleared_numerator": "X**2 + 3*X/2 + 1/2",
+          "selected_parameter_monomial": [
+            0
+          ],
+          "rational_polynomial_terms": [
+            [
+              [
+                2,
+                0
+              ],
+              "1"
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              "3/2"
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              "1/2"
+            ]
+          ]
+        },
+        "Euler_rational_projection": {
+          "cleared_denominator": "1",
+          "cleared_numerator": "X - Y/2",
+          "selected_parameter_monomial": [
+            0
+          ],
+          "rational_polynomial_terms": [
+            [
+              [
+                1,
+                0
+              ],
+              "1"
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              "-1/2"
+            ]
+          ]
+        },
+        "arithmetic_scope": "Shifted INTEGER detecting orders; no old formal-operator safety labels or periodicity imported."
+      },
+      "region": {
+        "status": "DECIDED",
+        "asymptotic_coefficient": "1/2",
+        "vertices": [
+          [
+            "1/2",
+            "0"
+          ]
+        ],
+        "supporting_original_points": [],
+        "trace": [
+          {
+            "C": "1/2",
+            "E": "0",
+            "result": {
+              "status": "DECIDED",
+              "zero": true,
+              "method": "certified finite parallel-line envelope",
+              "C": "1/2",
+              "E": "0",
+              "early_orders": [],
+              "late_line_bounds": [
+                {
+                  "offset": "0",
+                  "first_admissible_power": 1,
+                  "least_marker_degree": 2,
+                  "deficit": "0"
+                }
+              ],
+              "exact_line_threshold": 1,
+              "justification": "Deficit is nonincreasing along each candidate line,including lines never actually selected."
+            }
+          }
+        ],
+        "recession_generators": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "strict_moment_convention": "vanishing for m>C*deg(Q)+E",
+        "termination_scope": "Requires certified eventual finite parallel lines;no periodicity assumed."
+      }
+    }
+  ],
+  "region": {
+    "asymptotic_coefficient": "1/2",
+    "vertices": [
+      [
+        "1/2",
+        "0"
+      ]
+    ],
+    "supporting_original_points": [],
+    "recession_generators": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "pure_linear_minimum": "1/2",
+    "equality": "Intersection of ALL faithful primary component regions; support orders recomputed in original ring."
+  },
+  "general_presented_ring_backend_implemented": true,
+  "primary_decomposition_trusted_CAS": true,
+  "actual_image_kernel_computed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED131",
+  "sources": [
+    {
+      "path": "HEREDITARY_BLOCK_QUOTIENT_MONODROMY_REDUCTION.md",
+      "url": "retained:PF2RULED122",
+      "used": "Irreducible transvection-generated binary linear quotients.",
+      "bytes": 12384,
+      "sha256": "7a1f416ae6958019e408828d5990477e4348224e38e3d75f6dca9cb7be0d90b3"
+    },
+    {
+      "path": "SEIFERT_FRAMING_CANCELLATION_AND_RESIDUAL_TWO_COVERS.md",
+      "url": "retained:PF2RULED126",
+      "used": "Actual Seifert longitude, residual columns and conditional common-form cancellation.",
+      "bytes": 14300,
+      "sha256": "f52764a7f9b664cf7a76e70bc376c9ed58fa824bb90834287371beeabc8267c1"
+    },
+    {
+      "path": "sources/proper-binary-longitude/brumer-kramer-1102.4557v1.pdf",
+      "url": "https://arxiv.org/pdf/1102.4557v1",
+      "used": "Section2 Proposition2.4 and Remark2.6 narrow common-form classification adoption.",
+      "bytes": 297641,
+      "sha256": "0d1dfcd09bbf5fee80bc329075e3af8c2ff492ea8c3d75d0fe1efd268d48d5f9"
+    },
+    {
+      "path": "sources/proper-binary-longitude/source-review.json",
+      "url": "local:source-review",
+      "used": "Original PDF access boundary, given modules and statement separation.",
+      "bytes": 964,
+      "sha256": "5443e2e648b9501a57cb00fabe53f6651874c8d9236b5a48c8565078781b0124"
+    }
+  ],
+  "new_classification_input_explicitly_adopted": true,
+  "registered_predecessor_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

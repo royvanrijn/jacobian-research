@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T05:57:41.602093+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UASELFLAUR1",
+    "UASELFCTRL1",
+    "UASELFFORMAL1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAALLATOM1",
+    "UACANFIB1",
+    "UAM1",
+    "UAMARKEDDEF1",
+    "UAPROFILE1",
+    "UAROOTDAG1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UASELFLAUR1",
+    "UASELFCTRL1",
+    "UASELFFORMAL1"
+  ],
+  "old_entry_count": 2429,
+  "new_entry_count": 2432,
+  "unchanged_existing_entry_count": 2422,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "9e94dcaec8fb354a8b58b8b88a4da6d849ccdd1d8af8fd9f7def5f3d365a39e3",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "2aff741761dbb40a",
+    "UASELFLAUR1": "5e79176d2a41ff36",
+    "UASELFCTRL1": "9a55e180f08277f6",
+    "UASELFFORMAL1": "12e9a1f67b225e34"
+  },
+  "updated_lessons": [
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "bfb60a25de4645b8716947fa37e9ba3980b0bc6f05642c32fa638a3e06609049",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "Exact nonlinear scalar response and complete characteristic-zero Laurent solution classification without degree bounds.",
+    "Entire polynomial Keller rigidity for arbitrary polynomial own-source controls and arbitrary rational controls with whole polynomial landing along a single affine coefficient line.",
+    "Explicit rational/formal marked scalar deformation at every finite parameter order, with a genuine source pole and no finite polynomial integration in the fixed line."
+  ],
+  "verification_design_note": "57 selected exact controls accompany written all-degree proofs. They check generic nonlinear response, reciprocal Riccati bookkeeping, source-plane residues, literal false-lead maps, exact rational Keller sums, selected finite-order reductions, marked ideals and source pins. No finite-order calculation is used to infer global polynomial integration.",
+  "assurance": "Three written general claims with 57 selected exact controls. No independent universal proof replay, formal verification, external review or publication-priority certificate. Canonical absolute atomicity remains open."
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Exploratory first-eight pure moments for the full cuspidal normal form across arbitrary symmetric Gaussian covariances; no all-order or genericity inference.",
+  "wall_limit_seconds": 30,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": true,
+  "exit_code": -9,
+  "completed": false,
+  "input_sha256": "1f093e19bbc8b3515ffe76a8f47e48b2284de2d0be54c639d12605916fdd770d",
+  "log_sha256": "10b8ddf4e7ba94e61634d2e890a1935d4d5e9e59b8f85054de987202b6ca0092",
+  "elapsed_seconds": 30.003660760005005,
+  "stdout_tail": "CUSP_STANDARD_START\n"
+}

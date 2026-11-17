@@ -1,0 +1,4 @@
+{
+  "stopped_probe": "SymPy expanded unsimplified algebraic inverse-Jacobian expressions, producing no completed rectifier. Stopped deliberately; no mathematical conclusion inferred.",
+  "replacement": "Canonical number-field coefficients and only the degree4 ordinary jet are sufficient for the rank2 weighted rectifier."
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "universal_claims_use_written_proofs": true,
+  "examples": [
+    {
+      "name": "free_linear",
+      "input_file": "gaussian_primary_real_cutoff_examples/free_linear/input.json",
+      "result_file": "gaussian_primary_real_cutoff_examples/free_linear/result.json",
+      "result_sha256": "3f5a18402cd5740a129d3cb659d8b00380e5c130ecb95f572692904c5c08c728"
+    },
+    {
+      "name": "dual_linear",
+      "input_file": "gaussian_primary_real_cutoff_examples/dual_linear/input.json",
+      "result_file": "gaussian_primary_real_cutoff_examples/dual_linear/result.json",
+      "result_sha256": "61b739384ffefb381132cf673949fd8b572cb5d5bbff65367fa5530d9647aa32"
+    },
+    {
+      "name": "embedded_linear",
+      "input_file": "gaussian_primary_real_cutoff_examples/embedded_linear/input.json",
+      "result_file": "gaussian_primary_real_cutoff_examples/embedded_linear/result.json",
+      "result_sha256": "0912b8626a2b78d386582fd8ac456dd6c58ac87e6cf00d2b0575093d92cc07aa"
+    },
+    {
+      "name": "algebraic_residue",
+      "input_file": "gaussian_primary_real_cutoff_examples/algebraic_residue/input.json",
+      "result_file": "gaussian_primary_real_cutoff_examples/algebraic_residue/result.json",
+      "result_sha256": "e696d641be6e5bf2f5d01013b5d11f49a205ae0a6b5b4abfef602d97b4b2c913"
+    },
+    {
+      "name": "nilpotent_linear",
+      "input_file": "gaussian_primary_real_cutoff_examples/nilpotent_linear/input.json",
+      "result_file": "gaussian_primary_real_cutoff_examples/nilpotent_linear/result.json",
+      "result_sha256": "4e8d3e5f9fc529d4dcec127fc5b8018f97cb2f95e4e605fb4a6980c9326e9155"
+    },
+    {
+      "name": "free_quadratic",
+      "input_file": "gaussian_primary_real_cutoff_examples/free_quadratic/input.json",
+      "result_file": "gaussian_primary_real_cutoff_examples/free_quadratic/result.json",
+      "result_sha256": "f2805e8b323edd7f7cd2b5a0b21490675dff8ec83459da440fbd01b3b1c246cc"
+    }
+  ],
+  "boundary_controls": [
+    {
+      "name": "zero_ring",
+      "status": "DECIDED",
+      "result_sha256": "db03e63e71d6b73386d0f18d296c581858e1f0b4f0a95a1258c5cab4f56254be"
+    },
+    {
+      "name": "zero_phase",
+      "status": "DECIDED",
+      "result_sha256": "8cdfb87aee444f7e82a4d154afde3572b62e49f9b1ec3d47539d305089823d36"
+    },
+    {
+      "name": "unsafe_real",
+      "status": "UNSAFE",
+      "result_sha256": "be7ef4e0cda8c71754c5b265a157ce4c1a73165695b63e4312f25e37acc73045"
+    }
+  ],
+  "primary_decomposition_trusted_CAS": true,
+  "source_contract": "D_Y/(D_Y I)=direct_sum D_Y^alpha tensor T;T injects at derivative degree zero.",
+  "specialization_contract": "Both exact unlocalized graph identities specialize from m=0;step start excludes ordinary rational-component roots.",
+  "scalar_projection_control": {
+    "cleared_denominator": "c0 + 1",
+    "cleared_numerator": "X*c0 - Y*c0",
+    "selected_parameter_monomial": [
+      1
+    ],
+    "rational_polynomial_terms": [
+      [
+        [
+          1,
+          0
+        ],
+        "1"
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        "-1"
+      ]
+    ]
+  },
+  "line_envelope_requires_certified_law": true,
+  "exact_graph_identity_count": 14,
+  "general_presented_ring_backend_implemented": true,
+  "retained_example_files_sha256": {
+    "gaussian_primary_real_cutoff_examples/algebraic_residue/input.json": "2feda8aafa2d8aa437eb4d888180c8c32d850691dce8d3757a02c48b64b7d313",
+    "gaussian_primary_real_cutoff_examples/algebraic_residue/result.json": "e696d641be6e5bf2f5d01013b5d11f49a205ae0a6b5b4abfef602d97b4b2c913",
+    "gaussian_primary_real_cutoff_examples/algebraic_residue/work/primary/primary.m2": "f1bd6a9df37b2d1896c108065f13d94d27aeec1cd0f7a447b03f87d6c6fd314b",
+    "gaussian_primary_real_cutoff_examples/algebraic_residue/work/primary/primary.stdout": "e860d09a1417293f2044ea0f3085a28aa238f7e9cc9b42c940dc4728f90f9e33",
+    "gaussian_primary_real_cutoff_examples/cli/result.json": "61b739384ffefb381132cf673949fd8b572cb5d5bbff65367fa5530d9647aa32",
+    "gaussian_primary_real_cutoff_examples/cli/result.work/primary/primary.m2": "3431b14add35d44b16ea68d3b7988cbf81032c18d415090762ecce28d45e1bab",
+    "gaussian_primary_real_cutoff_examples/cli/result.work/primary/primary.stdout": "a6e1c75ab05be79fe4ab5221826edb87775fa6544cea5060618f7a8974e2d95b",
+    "gaussian_primary_real_cutoff_examples/dual_linear/input.json": "f54fc50497fcc2351a8785e629e1385a64de2dcbb96f3789651b9dc696095279",
+    "gaussian_primary_real_cutoff_examples/dual_linear/result.json": "61b739384ffefb381132cf673949fd8b572cb5d5bbff65367fa5530d9647aa32",
+    "gaussian_primary_real_cutoff_examples/dual_linear/work/primary/primary.m2": "3431b14add35d44b16ea68d3b7988cbf81032c18d415090762ecce28d45e1bab",
+    "gaussian_primary_real_cutoff_examples/dual_linear/work/primary/primary.stdout": "a6e1c75ab05be79fe4ab5221826edb87775fa6544cea5060618f7a8974e2d95b",
+    "gaussian_primary_real_cutoff_examples/embedded_linear/input.json": "7166c647a5acc2c2bb1e75f23ce8d9be4132d05ef013ccef810a473d31f4af10",
+    "gaussian_primary_real_cutoff_examples/embedded_linear/result.json": "0912b8626a2b78d386582fd8ac456dd6c58ac87e6cf00d2b0575093d92cc07aa",
+    "gaussian_primary_real_cutoff_examples/embedded_linear/work/primary/primary.m2": "a1981976b871703423366dbe79b71e949c1b84cf03a7b40f3e552c33a27def38",
+    "gaussian_primary_real_cutoff_examples/embedded_linear/work/primary/primary.stdout": "acdaf9b91a99a71af94261a63aec73b5caa0fd46093206facf80ddecfcd362f1",
+    "gaussian_primary_real_cutoff_examples/free_linear/input.json": "ba9e0ca80b2ed69d638eaad46e4f10377323e78f0b9259a97d0cd8bebaa4e502",
+    "gaussian_primary_real_cutoff_examples/free_linear/result.json": "3f5a18402cd5740a129d3cb659d8b00380e5c130ecb95f572692904c5c08c728",
+    "gaussian_primary_real_cutoff_examples/free_linear/work/primary/primary.m2": "7a07b609b5ef3360631ae56c9acfd566c2c47ef96f3e87ae50d4faf81d0c9a9a",
+    "gaussian_primary_real_cutoff_examples/free_linear/work/primary/primary.stdout": "74d05fce7658b8074b4ccb7a17dcc3393e1463e5db671ffc20107aa6beb8524b",
+    "gaussian_primary_real_cutoff_examples/free_quadratic/input.json": "2f76dc4f0ad76e4b4af5be6cec5e51fdf0b536ea7510cdee10eb7da458af1848",
+    "gaussian_primary_real_cutoff_examples/free_quadratic/result.json": "f2805e8b323edd7f7cd2b5a0b21490675dff8ec83459da440fbd01b3b1c246cc",
+    "gaussian_primary_real_cutoff_examples/free_quadratic/work/primary/primary.m2": "7a07b609b5ef3360631ae56c9acfd566c2c47ef96f3e87ae50d4faf81d0c9a9a",
+    "gaussian_primary_real_cutoff_examples/free_quadratic/work/primary/primary.stdout": "74d05fce7658b8074b4ccb7a17dcc3393e1463e5db671ffc20107aa6beb8524b",
+    "gaussian_primary_real_cutoff_examples/nilpotent_linear/input.json": "12dd912cc358922464cfc73383a252c349cfd03e34659df5f4f4066519f80312",
+    "gaussian_primary_real_cutoff_examples/nilpotent_linear/result.json": "4e8d3e5f9fc529d4dcec127fc5b8018f97cb2f95e4e605fb4a6980c9326e9155",
+    "gaussian_primary_real_cutoff_examples/nilpotent_linear/work/primary/primary.m2": "3431b14add35d44b16ea68d3b7988cbf81032c18d415090762ecce28d45e1bab",
+    "gaussian_primary_real_cutoff_examples/nilpotent_linear/work/primary/primary.stdout": "a6e1c75ab05be79fe4ab5221826edb87775fa6544cea5060618f7a8974e2d95b",
+    "gaussian_primary_real_cutoff_examples/unsafe_real/input.json": "a7e364b7764f6f131580b9f5695f5a8fca0f17b3820cb6769fe881e3a3689a2b",
+    "gaussian_primary_real_cutoff_examples/unsafe_real/result.json": "be7ef4e0cda8c71754c5b265a157ce4c1a73165695b63e4312f25e37acc73045",
+    "gaussian_primary_real_cutoff_examples/unsafe_real/work/primary/primary.m2": "b3e2254820c1994dab050acd47a4007255df6a089052bfa03a171b7720350b39",
+    "gaussian_primary_real_cutoff_examples/unsafe_real/work/primary/primary.stdout": "3fd9459c18b8202e7874d13c0c7c8e4e2421d9d2b7bd8044599e0fe5bf62cda5",
+    "gaussian_primary_real_cutoff_examples/zero_phase/input.json": "4d2861cba12b31becd5eca04e97c947cb646398fdf70522b16c525b09cfe655f",
+    "gaussian_primary_real_cutoff_examples/zero_phase/result.json": "8cdfb87aee444f7e82a4d154afde3572b62e49f9b1ec3d47539d305089823d36",
+    "gaussian_primary_real_cutoff_examples/zero_phase/work/primary/primary.m2": "7a07b609b5ef3360631ae56c9acfd566c2c47ef96f3e87ae50d4faf81d0c9a9a",
+    "gaussian_primary_real_cutoff_examples/zero_phase/work/primary/primary.stdout": "74d05fce7658b8074b4ccb7a17dcc3393e1463e5db671ffc20107aa6beb8524b",
+    "gaussian_primary_real_cutoff_examples/zero_ring/input.json": "7e65479fd2bb5bf0c797b36f26c592ab7a4fc497d41879bf6085e5020970dd4a",
+    "gaussian_primary_real_cutoff_examples/zero_ring/result.json": "db03e63e71d6b73386d0f18d296c581858e1f0b4f0a95a1258c5cab4f56254be"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "50f82b0141b1412d9b2a14e99703d8d337e13a4670fb5811a827ab8ef939a61a",
+  "sympy_version": "1.14.0",
+  "nonprimitive_injective_torus_lattice_with_finite_cokernel_control": true,
+  "abelian_component_invariant_factors": [
+    1,
+    1,
+    24
+  ],
+  "identity_lift_multiple_independence_controls": [
+    {
+      "free_component": [
+        0,
+        0
+      ],
+      "torsion_component_mod4": 1,
+      "normalized_toric_vector": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "free_component": [
+        1,
+        -3
+      ],
+      "torsion_component_mod4": 2,
+      "normalized_toric_vector": [
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "free_component": [
+        2,
+        1
+      ],
+      "torsion_component_mod4": 0,
+      "normalized_toric_vector": [
+        "5/6",
+        "1/3"
+      ]
+    }
+  ],
+  "finite_component_torsion_allowed_without_identity": true,
+  "unit_changes_of_toric_correction_preserve_all_orders": true,
+  "normalized_vector_independent_of_further_ramification": true,
+  "character_basis_change_preserves_zero": true,
+  "original_inertia_invariant_space_not_entire_split_rank_control": true,
+  "ramified_branch_coordinate_controls": [
+    {
+      "multiplicity": 1,
+      "primitive_vector": [
+        "1",
+        "-1"
+      ],
+      "each_split_branch_vector": [
+        "1",
+        "-1"
+      ],
+      "cycle_sum": [
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "multiplicity": 2,
+      "primitive_vector": [
+        "3/2",
+        "2"
+      ],
+      "each_split_branch_vector": [
+        "3/4",
+        "1"
+      ],
+      "cycle_sum": [
+        "3/2",
+        "2"
+      ]
+    },
+    {
+      "multiplicity": 3,
+      "primitive_vector": [
+        "-2",
+        "1/2"
+      ],
+      "each_split_branch_vector": [
+        "-2/3",
+        "1/6"
+      ],
+      "cycle_sum": [
+        "-2",
+        "1/2"
+      ]
+    }
+  ],
+  "cycle_sum_recovers_intrinsic_factor1": true,
+  "scalar_norm_zero_does_not_kill_full_vector": true,
+  "universal_written_result": "Correct ACTUAL sigma byidentity-component lift of[n]abelianimage;valactualT/(e*n) is canonicalI-invariantcomponentvector,evenbadabelianreduction/nonsplitG. Underpurity fullsafetyiffallorders0. AllH splitbranchvectorsrepeatv_a/e_a;cycleSumfactor1,nocrossrootcancellation",
+  "split_extension_or_good_abelian_reduction_assumed": false,
+  "torus_characters_assumed_to_extend_to_G": false,
+  "special_fibre_torus_substituted_for_actual_generic_T": false,
+  "incorrect_Bosch_Xarles_lemma_imported": false,
+  "rigid_uniformizing_group_declared_algebraic": false,
+  "identity_component_lift_or_Neron_producer_implemented": false,
+  "actual_exceptional_purity_implies_valuation_zero_proved": false,
+  "new_eventual_pure_phase_or_composite_constructed": false,
+  "sufficient_Bezout_family_substituted_for_full_quotient": false,
+  "split_branch_factor_one_claimed_without_ramification_normalization": false,
+  "arbitrary_coefficient_ring_promotion_claimed": false,
+  "universal_Neron_or_MZ_proof_machine_verified": false,
+  "new_degree_support_or_parameter_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_next_task": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "DECIDED",
+  "zero": false,
+  "method": "exact original moment",
+  "C": "1/2",
+  "E": "1",
+  "witness": {
+    "marker": [
+      0
+    ],
+    "power": 2,
+    "polynomial": [
+      [
+        [
+          2
+        ],
+        "1"
+      ]
+    ]
+  }
+}

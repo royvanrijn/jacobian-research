@@ -1,0 +1,41 @@
+{
+  "claim": "QPL1",
+  "status": "PASS",
+  "admission_seed_global_term_counts": {
+    "S": 21,
+    "T": 48,
+    "D_minus_D0": 160
+  },
+  "full_classical_retained_Long_tuple": "PASS",
+  "all_six_full_relations_through_h6": "PASS",
+  "exact_Euler_connection_identities": "PASS",
+  "generic_PI_string_identity": "PASS",
+  "forced_PI_coefficients": [
+    "-3",
+    "2/3",
+    "98/27"
+  ],
+  "uniform_momentum_orders": {
+    "R": 0,
+    "S": 2,
+    "T": 3,
+    "D": 5
+  },
+  "formal_cubic_energy_scalar_order": 2,
+  "formal_cubic_energy_leading_coefficient": "-54*t",
+  "S_coefficient_degree_formula": "8*n-1 for every n>=1; nonzero coefficients",
+  "S2_exception": "-(17/4)*R*X^4",
+  "S4": "-(49/16)*R^2*X^9",
+  "hashes": {
+    "PAINLEVE_GLOBAL_LONG_LIFT.md": "aabcac99d97fd824bd16f54ccbd38d1d5c7bcd59b0bc931de0f424284c0ab13e",
+    "check_painleve_long.py": "ab4e4c51a79254fc635dacce2730c448b667a4f193873ad80532d76e1d165870",
+    "painleve_long_seed.json": "dcf5a7b108c425abf7f6e7f0dae01779b7f3de166037f0afbe5dc2cd530734d5",
+    "ELLIPTIC_ISOGENY_AND_QUANTUM_ENERGY.md": "e1a4004e24f868f89a1598c2e05c5a31d73345597e9d8fe431b7ef7cab45f577",
+    "ELLIPTIC_QUANTUM_ENERGY_MOTION.md": "9c4e4dd41638d7225f468e08da2805bf45144123c67e82d4d6d3d96dbbb3d8c0"
+  },
+  "retained_Long_source_sha256": "266cfed8261bdec371bd26e2bb3a46cab9f588030adcc92c4e75dbd6b150bca2",
+  "coverage_boundary": "Exact finite admission seed and symbolic identities only. The all-orders PI construction, positivity, global admission beyond the seed, full relations in all orders, exact degree growth and divergence use written proofs. This constructs an unbounded full formal Long lift with bounded momentum orders, not a finite Weyl endomorphism or all-representative nonlifting theorem.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

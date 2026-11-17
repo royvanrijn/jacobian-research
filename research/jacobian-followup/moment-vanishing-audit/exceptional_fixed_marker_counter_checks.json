@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "n": 8,
+      "m": 2,
+      "p": 53,
+      "moment": "-865594153113747456/298435517190385025",
+      "p_times_moment_mod_p": 5,
+      "Hasse": 49,
+      "elliptic": 49,
+      "original_zero_weight_terms": 703,
+      "Klein_relation": "PASS",
+      "self_duality": "PASS",
+      "independent_formula_agreement": "PASS",
+      "seconds": 0.045469500008039176
+    },
+    {
+      "n": 12,
+      "m": 2,
+      "p": 127,
+      "moment": "41958690403313837610721588134765625/1532800285927159272199695730537217233992065276406",
+      "p_times_moment_mod_p": 3,
+      "Hasse": 107,
+      "elliptic": 107,
+      "original_zero_weight_terms": 2501,
+      "Klein_relation": "PASS",
+      "self_duality": "PASS",
+      "independent_formula_agreement": "PASS",
+      "seconds": 0.08344089199090376
+    }
+  ],
+  "scope": "Finite exact normalization checks only. Infinite fixed-marker tail is proved in the canonical written argument, not by these samples.",
+  "external_review": false,
+  "formal_verification": false
+}

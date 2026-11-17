@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "canonical_proof_sha256": "5c4d210def0d05b8bf098e12532b97c98f220e92dc1f1ef9fe0617958f245080",
+  "checker_sha256": "569f446cd10882867875de2271468b9c03e41f31480fb8adda61cccb62a5ed25",
+  "certificate_sha256": "0944efa4fc98f38fd5489ecfd894dae8fd8f3d5b7edfda612af6d77511c5dd51",
+  "runtime_sha256": "d419f258b8629417e4151de5bc69d388b71c9ca839591c493750d6e440260298",
+  "original_models": 4,
+  "original_Wick_identities": 152,
+  "safe_normal_forms": 2,
+  "branch_encodings": 5,
+  "rational_cover_models": 3,
+  "all_rank_marker_coefficients": 12,
+  "genuine_trace_controls": 1,
+  "rejections": 11,
+  "historical_cusp_and_cone_restarted": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "assurance": "Finite transcriptions; universal determinant cancellation,all-amplitude image,all-ring normalform,algebraic realization and all-d monodromy/lattice proofs are written internally."
+}

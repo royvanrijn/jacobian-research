@@ -1,0 +1,93 @@
+{
+  "completed": true,
+  "checker_sha256": "5bf0729729291edab9d547205422de16eb78148a2b4a47d481a0d52485ecd734",
+  "prior_formal_frame_checker_sha256": "df745e90d717d84074f75f2afd150c3c55e631e1f0881a963f383b6e3758205d",
+  "normal_form": "T*(u^2+gamma*v+h)+v^3+b*u*v+e*u+f*v+k",
+  "phase_rank": 6,
+  "projective_infinity_length": 2,
+  "profiles": [
+    {
+      "chart": "gamma!=0",
+      "finite_rank": 5,
+      "escape_rank": 1,
+      "zero_exponential_seed_powers": "1+j/(mu+1)>0;1<=mu<=5",
+      "escape_action": "gamma^6/(54*m^3)*t^4",
+      "escape_prefactor": "t^-5/2"
+    },
+    {
+      "chart": "gamma=0,h!=0",
+      "finite_rank": 4,
+      "escape_rank": 2,
+      "zero_exponential_seed_powers": "1+j/(mu+1)>0;mu<=2",
+      "escape_action": "h^2/(2*m)*t^2",
+      "escape_prefactor": "t^(-1-j/d),d=2 or3"
+    },
+    {
+      "chart": "gamma=h=0,f!=0",
+      "groups": [
+        3,
+        3
+      ],
+      "zero_exponential_seed_powers": "t^-1 for each L(v_i)=b*v_i+e=0 center group",
+      "escape_action": "alpha_i*t+3*L(v_i)*U_i/4*t^(2/3) when L(v_i)!=0",
+      "escape_prefactor": "t^-7/6"
+    },
+    {
+      "chart": "gamma=h=f=0,e*b!=0",
+      "finite_rank": 0,
+      "escape_rank": 6,
+      "zero_exponential_seed_powers": null,
+      "escape_action": "3*e*U_i/4*t^(2/3), followed by a V_i^3*t^(1/2) term",
+      "escape_prefactor": "t^-13/12"
+    },
+    {
+      "chart": "gamma=h=f=b=0,e!=0",
+      "groups": [
+        2,
+        2,
+        2
+      ],
+      "zero_exponential_seed_powers": null,
+      "escape_action": "3*e*U_i/4*t^(2/3)",
+      "escape_prefactor": "t^-1"
+    },
+    {
+      "chart": "gamma=h=f=e=0,b!=0",
+      "center_rank": 1,
+      "escape_rank": 5,
+      "zero_exponential_seed_powers": "t^-1 for the origin group",
+      "escape_action": "-5*V_i^3/4*t^(2/5)",
+      "escape_prefactor": "t^-1"
+    },
+    {
+      "chart": "gamma=h=f=e=b=0",
+      "center_rank": 6,
+      "escape_rank": 0,
+      "zero_exponential_seed_powers": "t^-5/6",
+      "fixed_phase_rank": 6
+    }
+  ],
+  "positive_seed_powers": [
+    "1",
+    "5/6",
+    "3/2",
+    "4/3",
+    "5/3",
+    "5/4",
+    "3/2",
+    "7/4",
+    "6/5",
+    "7/5",
+    "8/5",
+    "9/5",
+    "7/6",
+    "4/3",
+    "3/2",
+    "5/3",
+    "11/6"
+  ],
+  "resolved": "Every cuspidal-leading ternary cubic is GMC-safe. The nonisotropic-cusp cases and every F2(cusp)!=0 case are pure-nonvanishing; isotropic F2(cusp)=0 cases use the retained W-linear GMC theorem.",
+  "written_proof_certified_by_checker": false,
+  "proof_boundary": "Exact critical-profile, rescaling, action/Hessian and fixed-phase completion identities, rank arithmetic and positivity. Full formal frames, seed quotient extension, formal perturbation and the all-parameter coverage are written mathematics, not machine verified.",
+  "remaining": "General nonhomogeneous reducible-leading cubic GMC, including repeated lines; uniform numerical pure gates; coefficient schemes and lower-power GVC; independent review/formalization."
+}

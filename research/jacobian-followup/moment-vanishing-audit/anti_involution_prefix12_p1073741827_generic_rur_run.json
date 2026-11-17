@@ -1,0 +1,25 @@
+{
+  "status": "wall-limit",
+  "prime": 1073741827,
+  "wall_seconds": 115.1019626489724,
+  "command": [
+    "msolve",
+    "-f",
+    "tmp/anti_involution_p1073741827_gb.ms",
+    "-o",
+    "research/jacobian-followup/moment-vanishing-audit/anti_involution_prefix12_p1073741827_generic_rur.out",
+    "-t",
+    "2",
+    "-v",
+    "1",
+    "-l",
+    "2",
+    "-m",
+    "2048",
+    "-P",
+    "1",
+    "-c",
+    "2"
+  ],
+  "scope": "Bounded point extraction from a saved modular quotient; no characteristic-zero conclusion without a full root and Jacobian check."
+}

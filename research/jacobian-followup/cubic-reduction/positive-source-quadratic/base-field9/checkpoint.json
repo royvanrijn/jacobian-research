@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "source_sha256": "a0c6513c86296fe2d2673687c87bf1a15210c71d9dc0ec5a63b5a99eaa14942f",
+  "source_input_sha256": "c420c4b98f84b90258b22dbf1709cb12156d265be1d34232e0082962248c4c1f",
+  "modulus": 1000000007,
+  "source_degree_cap": 9,
+  "columns": 220,
+  "rank": 213,
+  "points": 107,
+  "selected_rows": 213,
+  "primary_method": "Incremental row elimination;certificate checker uses companion matrices and column elimination.",
+  "target_degree_or_denominator_cap": null,
+  "candidate_coefficient_search": false,
+  "seconds": 0.2874715039797593,
+  "input_sha256": "143fcf8499fc53a1b9ea807d5b3c5401ac392a8a6e1b3c522c5df91da6a53074"
+}

@@ -1,0 +1,125 @@
+{
+  "status": "PASS exact four-sheet group triviality",
+  "covers": 21,
+  "all_groups_trivial": true,
+  "results": [
+    {
+      "name": "13a_3291",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3292",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3301",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3303",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3345",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3346",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3354",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3356",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3404",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3405",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3409",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3410",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3412",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3413",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3417",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13a_3418",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13n_4589",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13n_4633",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13n_4637",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13n_4642",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    },
+    {
+      "name": "13n_4645",
+      "cover_group": "trivial",
+      "Tietze_eliminations": 10
+    }
+  ],
+  "new_sharp_cases": 0,
+  "scope": "Complete fixed21 S4-transposition covers on the293-name panel. Independent under-to-under planar arc and folded branch-word multiset reconstruction; every generator elimination is replayed. No knot3bridge presentation follows. Source parser is used only for certificate index transport.",
+  "input_sha256": {
+    "verify_four_sheet_groups.py": "eda162280df3695dd069ef0b71aec8f324575d96b71074b12b0fc310eda63ab6",
+    "four_sheet_group_plan.json": "60481434c29071fac1eda362e698dab2209e67ced6fb8a2507f60e87e69356ee",
+    "four_sheet_group_results.json": "8cc118a28bd395f99cfb84c6d30456adab1cab2f0ae0ef9d1f273d88863de958",
+    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
+    "small_symmetric_full_panel_results.json": "c03f855c9929e288e421506215732320b23345dee98314e91d6488d2ee335bff",
+    "verify_three_sheet_splices.py": "1839f4b8ad69788222f2a61ca98b0190ee43cc0f0c9a7bc93d8e1634d789ee60",
+    "verify_three_sheet_structure.py": "72a9667a2613c8c5fe5d8d02a107bafeb1d251cedac1fc4deea3a1541d9a9a36",
+    "verify_three_sheet_nonabelian.py": "65590d13bfc417a667d18f12191b0f3142135dfe911e27c153b0dd5698e049f4",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+  }
+}

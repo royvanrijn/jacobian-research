@@ -1,0 +1,344 @@
+{
+  "universal_claims": [
+    "KMFI54",
+    "KMFI55"
+  ],
+  "proof_mechanism": "positive leading principal coefficients plus elementary strict interlacing of bottom continuants; top minor has no real roots",
+  "all_weights_injective": true,
+  "all_bottom_continuants_simple_real_rooted": true,
+  "every_quadratic_primitive_wave_pair_reduces_to_completed_chart": true,
+  "scalar_degree_cutoff": null,
+  "field_groups": "natural A_N, natural S_N, or binary SL2(F3) on8",
+  "unbounded_action_families": [
+    {
+      "pair": "(1,h),deg h=2",
+      "parameters": "s>=0,epsilon in{0,1}",
+      "degree": "(s+1)(3s+5) or (s+2)(3s+4)",
+      "group": "A_N except even-centered affine-lambda binary8"
+    },
+    {
+      "pair": "(w,w^2+kappa*z)",
+      "parameters": "r>=2,s>=0,C(r,s)=0",
+      "degree": "(s+2)(r+2s+2)",
+      "group": "S_N iff r even,s odd; otherwise A_N"
+    },
+    {
+      "pair": "(w^2,kappa*w*z+1)",
+      "parameters": "r>=s+4,s>=0,C(r,s)=0",
+      "degree": "(s+2)(r-s-1)",
+      "group": "S_N iff r even,s odd; otherwise A_N"
+    }
+  ],
+  "only_prime_degree_in_quadratic_class": 5,
+  "finite_regression_controls": [
+    {
+      "weight": 0,
+      "dimension": 1,
+      "bottom_degree": 1,
+      "bottom_real_root_count": 1,
+      "leading_principal_coefficients": [
+        "4"
+      ]
+    },
+    {
+      "weight": 1,
+      "dimension": 1,
+      "bottom_degree": 1,
+      "bottom_real_root_count": 1,
+      "leading_principal_coefficients": [
+        "8"
+      ]
+    },
+    {
+      "weight": 2,
+      "dimension": 2,
+      "bottom_degree": 2,
+      "bottom_real_root_count": 2,
+      "leading_principal_coefficients": [
+        "12",
+        "60"
+      ]
+    },
+    {
+      "weight": 3,
+      "dimension": 2,
+      "bottom_degree": 2,
+      "bottom_real_root_count": 2,
+      "leading_principal_coefficients": [
+        "16",
+        "156"
+      ]
+    },
+    {
+      "weight": 4,
+      "dimension": 3,
+      "bottom_degree": 3,
+      "bottom_real_root_count": 3,
+      "leading_principal_coefficients": [
+        "20",
+        "288",
+        "1824"
+      ]
+    },
+    {
+      "weight": 5,
+      "dimension": 3,
+      "bottom_degree": 3,
+      "bottom_real_root_count": 3,
+      "leading_principal_coefficients": [
+        "24",
+        "456",
+        "5568"
+      ]
+    },
+    {
+      "weight": 6,
+      "dimension": 4,
+      "bottom_degree": 4,
+      "bottom_real_root_count": 4,
+      "leading_principal_coefficients": [
+        "28",
+        "660",
+        "11808",
+        "91680"
+      ]
+    },
+    {
+      "weight": 7,
+      "dimension": 4,
+      "bottom_degree": 4,
+      "bottom_real_root_count": 4,
+      "leading_principal_coefficients": [
+        "32",
+        "900",
+        "21120",
+        "314400"
+      ]
+    },
+    {
+      "weight": 8,
+      "dimension": 5,
+      "bottom_degree": 5,
+      "bottom_real_root_count": 5,
+      "leading_principal_coefficients": [
+        "36",
+        "1176",
+        "34080",
+        "740160",
+        "6837120"
+      ]
+    },
+    {
+      "weight": 12,
+      "dimension": 7,
+      "bottom_degree": 7,
+      "bottom_real_root_count": 7,
+      "leading_principal_coefficients": [
+        "52",
+        "2640",
+        "133920",
+        "6417600",
+        "264528000",
+        "7875705600",
+        "96384153600"
+      ]
+    },
+    {
+      "weight": 20,
+      "dimension": 11,
+      "bottom_degree": 11,
+      "bottom_real_root_count": 11,
+      "leading_principal_coefficients": [
+        "84",
+        "7296",
+        "683808",
+        "67550400",
+        "6804270720",
+        "673358273280",
+        "62670066923520",
+        "5181447874498560",
+        "348935606756352000",
+        "16190238851581132800",
+        "296446732254270259200"
+      ]
+    },
+    {
+      "weight": 21,
+      "dimension": 11,
+      "bottom_degree": 11,
+      "bottom_real_root_count": 11,
+      "leading_principal_coefficients": [
+        "88",
+        "8040",
+        "796608",
+        "83719680",
+        "9046275840",
+        "971242997760",
+        "99673820467200",
+        "9318106446888960",
+        "741405732260659200",
+        "44743870255782297600",
+        "1560512432327108198400"
+      ]
+    },
+    {
+      "weight": 24,
+      "dimension": 13,
+      "bottom_degree": 13,
+      "bottom_real_root_count": 13,
+      "leading_principal_coefficients": [
+        "100",
+        "10488",
+        "1207584",
+        "149732160",
+        "19459739520",
+        "2577245126400",
+        "337733321103360",
+        "42377059897159680",
+        "4892230880551526400",
+        "492360866638431436800",
+        "39710069709627727872000",
+        "2175685895003819124326400",
+        "46464739685802442535731200"
+      ]
+    },
+    {
+      "weight": 31,
+      "dimension": 16,
+      "bottom_degree": 16,
+      "bottom_real_root_count": 16,
+      "leading_principal_coefficients": [
+        "128",
+        "17460",
+        "2663808",
+        "447451680",
+        "80917539840",
+        "15413359167360",
+        "3029094396518400",
+        "601888028334888960",
+        "118451938240394035200",
+        "22579583523505427865600",
+        "4063757742523369252454400",
+        "669111359792722863464448000",
+        "96629463135543690731873894400",
+        "11491741171026048675980869632000",
+        "1007121446840724515012556619776000",
+        "49729736794054755581653070905344000"
+      ]
+    },
+    {
+      "weight": 40,
+      "dimension": 21,
+      "bottom_degree": 21,
+      "bottom_real_root_count": 21,
+      "leading_principal_coefficients": [
+        "164",
+        "29016",
+        "5821728",
+        "1306401600",
+        "321375669120",
+        "85047124135680",
+        "23804442999429120",
+        "6939674236769218560",
+        "2077277202918005760000",
+        "629725245019883963596800",
+        "190700850547269854384947200",
+        "56876107645572586704145612800",
+        "16452515470613998540766832230400",
+        "4537076136439440973456135618560000",
+        "1168777797002387988697057185497088000",
+        "274223714476171419061730294127132672000",
+        "56660342960833774567283660408601182208000",
+        "9819718647934149017027195075565069533184000",
+        "1318015819833324773338405286454960429465600000",
+        "116578611313410810394822002912477063665418240000",
+        "3911612280264083566807481643464607364452188160000"
+      ]
+    }
+  ],
+  "field_witnesses": [
+    {
+      "r": 4,
+      "s": 0,
+      "denominator_degree": 2,
+      "scalar_degree": 0,
+      "degree": 6,
+      "geometric_group": "A6"
+    },
+    {
+      "r": 6,
+      "s": 1,
+      "denominator_degree": 2,
+      "scalar_degree": 3,
+      "degree": 12,
+      "geometric_group": "S12"
+    },
+    {
+      "r": 8,
+      "s": 3,
+      "denominator_degree": 2,
+      "scalar_degree": 7,
+      "degree": 20,
+      "geometric_group": "S20"
+    },
+    {
+      "r": 2,
+      "s": 0,
+      "denominator_degree": 1,
+      "scalar_degree": 0,
+      "degree": 8,
+      "geometric_group": "A8"
+    },
+    {
+      "r": 4,
+      "s": 1,
+      "denominator_degree": 1,
+      "scalar_degree": 4,
+      "degree": 24,
+      "geometric_group": "S24"
+    },
+    {
+      "r": 3,
+      "s": 4,
+      "denominator_degree": 1,
+      "scalar_degree": 9,
+      "degree": 78,
+      "geometric_group": "A78"
+    },
+    {
+      "s": 0,
+      "epsilon": 0,
+      "degree": 5,
+      "geometric_group": "A5"
+    },
+    {
+      "s": 0,
+      "epsilon": 1,
+      "degree": 8,
+      "geometric_group": "SL2(F3) on8 letters"
+    },
+    {
+      "s": 1,
+      "epsilon": 0,
+      "degree": 16,
+      "geometric_group": "A16"
+    },
+    {
+      "s": 2,
+      "epsilon": 1,
+      "degree": 40,
+      "geometric_group": "A40"
+    },
+    {
+      "s": 5,
+      "epsilon": 0,
+      "degree": 120,
+      "geometric_group": "A120"
+    }
+  ],
+  "arbitrary_Keller_PSL2_11_actions_decided": false,
+  "absolute_natural_A4_decided": false,
+  "absolute_binary_degree8_decided": false,
+  "higher_primitive_pair_degrees_classified": false,
+  "full_action_classification_complete": false
+}

@@ -1,0 +1,233 @@
+{
+  "completed": true,
+  "checker_sha256": "02c5f98c19151e8fcc559058fe5b91f3e6568d550208fd5cc4698d2fd9e47e69",
+  "sympy_version": "1.14.0",
+  "quadratic_field_identity_remainders": {
+    "quadratic_inverse_relation": "0",
+    "du_X": "0",
+    "dv_X": "0",
+    "constant_in_D_X": "0",
+    "rational_generator_is_source_position_square": "0",
+    "x_squared_generation_control": "0"
+  },
+  "odd_generator_recursion_controls": [
+    1,
+    3,
+    5
+  ],
+  "rational_generator_recursion_controls": [
+    1,
+    2,
+    3
+  ],
+  "minus_boundary_principal_parts": [
+    {
+      "derivative_order": 0,
+      "minus_principal_part": "-2/v"
+    },
+    {
+      "derivative_order": 1,
+      "minus_principal_part": "2/v**2"
+    },
+    {
+      "derivative_order": 2,
+      "minus_principal_part": "-4/v**3"
+    },
+    {
+      "derivative_order": 3,
+      "minus_principal_part": "12/v**4"
+    }
+  ],
+  "joint_rank": 2,
+  "actual_D_generating_source_markers": [
+    "x",
+    "(1+x*y)**2"
+  ],
+  "defect_filtration": "C/O=(B/O) direct_sum B*U;R/C=H_v;written nonsplit extension proof",
+  "factorial_recomposition_controls": [
+    {
+      "h": "z**2 + z",
+      "kappa": 1,
+      "c": "1",
+      "predicted_limit": "exp(1/2)",
+      "finite_controls": [
+        {
+          "m": 1,
+          "moment": "3",
+          "normalized": "3/2"
+        },
+        {
+          "m": 2,
+          "moment": "38",
+          "normalized": "19/12"
+        },
+        {
+          "m": 3,
+          "moment": "1158",
+          "normalized": "193/120"
+        }
+      ]
+    },
+    {
+      "h": "z**2 + z",
+      "kappa": 2,
+      "c": "1/2",
+      "predicted_limit": "1",
+      "finite_controls": [
+        {
+          "m": 1,
+          "moment": "7",
+          "normalized": "7/6"
+        },
+        {
+          "m": 2,
+          "moment": "2706",
+          "normalized": "451/420"
+        },
+        {
+          "m": 3,
+          "moment": "7832250",
+          "normalized": "17405/16632"
+        }
+      ]
+    },
+    {
+      "h": "z**3 - z**2 + 2*z",
+      "kappa": 1,
+      "c": "1",
+      "predicted_limit": "exp(-1/3)",
+      "finite_controls": [
+        {
+          "m": 1,
+          "moment": "6",
+          "normalized": "1"
+        },
+        {
+          "m": 2,
+          "moment": "584",
+          "normalized": "73/90"
+        },
+        {
+          "m": 3,
+          "moment": "279840",
+          "normalized": "583/756"
+        }
+      ]
+    },
+    {
+      "h": "z**2 + I*z",
+      "kappa": 1,
+      "c": "1",
+      "predicted_limit": "exp(I/2)",
+      "finite_controls": [
+        {
+          "m": 1,
+          "moment": "2 + I",
+          "normalized": "1 + I/2"
+        },
+        {
+          "m": 2,
+          "moment": "22 + 12*I",
+          "normalized": "11/12 + I/2"
+        },
+        {
+          "m": 3,
+          "moment": "648 + 354*I",
+          "normalized": "9/10 + 59*I/120"
+        }
+      ]
+    },
+    {
+      "h": "z**3",
+      "kappa": 3,
+      "c": "2",
+      "predicted_limit": "1",
+      "finite_controls": [
+        {
+          "m": 1,
+          "moment": "2903040",
+          "normalized": "1"
+        },
+        {
+          "m": 2,
+          "moment": "409751917166592000",
+          "normalized": "1"
+        },
+        {
+          "m": 3,
+          "moment": "5575101158614196306313216000000",
+          "normalized": "1"
+        }
+      ]
+    }
+  ],
+  "Long_finite_base_controls": [
+    {
+      "k": 1,
+      "pure": "0",
+      "marked": "1"
+    },
+    {
+      "k": 2,
+      "pure": "0",
+      "marked": "2"
+    },
+    {
+      "k": 3,
+      "pure": "0",
+      "marked": "6"
+    },
+    {
+      "k": 4,
+      "pure": "0",
+      "marked": "24"
+    }
+  ],
+  "Long_direct_recomposition_controls": [
+    {
+      "m": 1,
+      "marked": "3"
+    },
+    {
+      "m": 2,
+      "marked": "38"
+    }
+  ],
+  "guard_refusals": 3,
+  "normalization_annihilator_controls": [
+    {
+      "coefficient_ring": "K[a,b]/(ab)",
+      "I_power": 1,
+      "annihilator_generator": "b"
+    },
+    {
+      "coefficient_ring": "K[a,b]/(ab)",
+      "I_power": 2,
+      "annihilator_generator": "b"
+    },
+    {
+      "coefficient_ring": "K[a,b]/(ab)",
+      "I_power": 3,
+      "annihilator_generator": "b"
+    }
+  ],
+  "exact_recomposition_coefficients_implemented": true,
+  "quadratic_field_identity_checker_implemented": true,
+  "supporting_checker_hashes": {
+    "verify_joint_safe_algebras.py": "db7c58f26a8356370e9f6192d801d01ebf8af64b3b3a589d5af70822a6f7e546",
+    "verify_nilpotent_inverse_sections.py": "f51786677e068eab1ffc81f9b4a802cf4eb24d73c1e94ed49e711c28777678d6",
+    "verify_weighted_cotangent_inverse.py": "e16d47454097ad9a6c82440d3b3fd0a603f199642d3735052ceb8eaeb648dcd1",
+    "verify_gaussian_keller_endomorphisms.py": "0dffb49a00b3c070b0a4def6a2ae569a1462478e178a4f035d1e19f9795ba6f3",
+    "verify_polynomial_gaussian_symmetries.py": "47423bc97a8fc224fd6b40e5efe357160280da4792aa830be4edcd938ed518f7"
+  },
+  "universal_theorem_verified_by_finite_controls": false,
+  "numerical_asymptotics_used_as_proof": false,
+  "general_Weyl_presentation_or_kernel_solver_implemented": false,
+  "complete_individual_nonlinear_safety_classifier_implemented": false,
+  "new_Gaussian_moment_preserving_map_constructed": false,
+  "minimum_GMC_dimension_or_degree_improved": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "novelty_claimed": false
+}

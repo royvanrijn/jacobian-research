@@ -1,0 +1,415 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\setcounter{MaxMatrixCols}{15}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\F}{\mathbb F}
+\newcommand{\mr}{\operatorname{mr}}
+\title{All-characteristic reflection lifts:\\sixteen sharp five-bridge certificates}
+\author{Internal research working proof}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+The binary lift spaces in our retained sixteen-case panel give only
+lower bound four. Changing coefficients to $\F_5$ gives lower bound five
+for every case, matching five-seed bridge upper certificates. A separate
+implementation verifies these equalities for the diagrams in the pinned
+primary table. An independent named-census transfer now checks all sixteen
+certificates directly, and a separate planar-graph constructor identifies
+every case as a five-tangle Montesinos knot. Their MRC equalities were
+already covered by Boileau--Zieschang (1985). These are sharp controls for
+the method, not newly resolved cases. The full conjecture remains open.
+
+This is an extension of the lift-counting method. It does not assert a
+binary affine-symplectic realization of the new odd-characteristic lifts.
+Uniform arguments below are written proofs, without formal verification
+or external specialist review.
+
+\section{The intrinsic bound over an arbitrary field}
+
+Fix a knot group quotient $\phi:G_K\twoheadrightarrow S_r$, $r\ge3$,
+taking meridians to transpositions. For any field $F$, put
+\[
+ E_r(F)=\{x\in F^r:\textstyle\sum_i x_i=0\},\qquad
+ H_r(F)=E_r(F)\rtimes S_r.
+\]
+For $p<q$, write $u_{pq}=e_p-e_q$ and
+\[
+ s_{pq}^a=(a u_{pq},(pq)),\qquad a\in F.
+\]
+These elements are involutions in every characteristic: $(pq)u_{pq}=-u_{pq}$.
+The collection $\mathcal C$ of these elements is conjugation invariant
+in $H_r(F)$. Indeed, conjugating by $(b,\pi)$ changes the translation to
+\[
+ b+\pi(a u_{pq})-(\pi(pq)\pi^{-1})b,
+\]
+which is a multiple of the root of the projected transposition.
+
+For meridional generators $m_1,\ldots,m_s$, write
+$\phi(m_i)=(p_iq_i)$ with $p_i<q_i$. A lift with
+$m_i\mapsto s_{p_iq_i}^{a_i}$ satisfies homogeneous linear relator
+equations. Their solution space $Z_\phi(F)\subset F^s$ parametrizes all
+such actual homomorphisms, without quotienting by conjugacy.
+
+\begin{theorem}\label{thm:field}
+The space $Z_\phi(F)$ is intrinsic to the specified representation
+$\phi$, up to its coordinate description, and
+\[
+             \mr(K)\ \ge\ \dim_F Z_\phi(F).
+\]
+\end{theorem}
+\begin{proof}
+The split lift exists, and lift translations are cocycles, with their
+linear structure given by addition of translation parts. Membership in
+$\mathcal C$ on a meridian is preserved under conjugacy and inversion.
+Thus the condition is intrinsic, independently of a meridional
+presentation.
+
+Let $g_1,\ldots,g_w$ be any meridional generating family. Above each
+fixed transposition $\phi(g_j)$, an admissible image has exactly one
+scalar parameter. Evaluating translations on these words therefore
+gives a linear map $Z_\phi(F)\to F^w$. The map is injective: equality
+on a generating family gives equality of homomorphisms. Consequently
+$\dim_F Z_\phi(F)\le w$. For $F=\F_q$ the same proof is the counting
+inequality $q^{\dim Z_\phi}\le q^w$.
+\end{proof}
+
+The same principle applies beyond symmetric groups. If
+$\rho:G_K\to\operatorname{GL}(V)$ has
+$\operatorname{rank}(\rho(\mu)-I)=1$, restrict affine lifts to those with
+$z(\mu)\in\operatorname{im}(\rho(\mu)-I)$. This condition is invariant
+under conjugation: a conjugating translation adds a vector in that same
+image line. It is also preserved by inversion, since
+$\operatorname{im}(A^{-1}-I)=\operatorname{im}(A-I)$. Such restricted
+cocycles form a linear space, and evaluating on any $w$ meridional
+generators injects it into $w$ one-dimensional fibres. Thus
+$\mr(K)\ge\dim Z_{\rho}^{\mathrm{root}}$ over its coefficient field.
+Unlike the involutory specialization, relator evaluation must retain
+the distinction between positive and negative letters.
+
+The argument belongs to the existing colouring and restricted-cocycle
+framework. Clark--Elhamdadi--Saito--Yeatman define counts of lifts of a
+fixed quandle colouring in Section 6 and apply total colouring counts to
+bridge index in Section 7 \cite{cesy}. Here the conjugation quandles are
+$\mathcal C\to\{\text{transpositions}\}$ and the fibre over a fixed base
+colouring has $q^{\dim Z_\phi}$ elements. Evaluation on arbitrary
+meridional generators supplies the meridional bound. No priority claim
+is made for this counting principle. General cohomological meridional
+bounds also appear in Gao--Gu--Li--Wang, Lemma 6.2 \cite{gglw}.
+
+\section{One integer matrix covers all characteristics}
+
+Compute every lifted relator in $\mathbb Z^r\rtimes S_r$, treating the
+$a_i$ as independent variables. Its translation coordinates give an
+integer matrix $M_\phi$ with $s$ columns. Since the generator images
+are involutions, a negative letter has exactly the same lifted image
+as its positive letter. In particular, unoriented over/under Gauss data
+suffices for this calculation; no crossing-sign convention is guessed.
+
+Suppose the nonzero Smith invariant factors are
+$d_1\mid\cdots\mid d_t$, all positive. Unimodular integer row and column
+operations remain invertible over every field. Hence
+\[
+ \dim Z_\phi(F)=
+ \begin{cases}
+ s-t,&\operatorname{char}F=0,\\
+ s-\#\{i:p\nmid d_i\},&\operatorname{char}F=p.
+ \end{cases}
+\]
+
+\begin{proposition}\label{prop:max}
+If $u$ of the nonzero Smith factors equal one, then
+\[
+       \max_{F\text{ a field}}\dim_F Z_\phi(F)=s-u.
+\]
+If a nonunit factor exists, any prime divisor of the first nonunit
+attains this maximum. Otherwise every characteristic attains it.
+\end{proposition}
+\begin{proof}
+Unit factors never vanish in a field, giving the upper bound $s-u$.
+A prime divisor of the first nonunit divides all subsequent factors by
+the divisibility chain, so all and only those factors vanish. If every
+nonzero factor is a unit, the rank is constant in every characteristic.
+\end{proof}
+
+Thus a failure for a fixed symmetric colouring can be excluded in all
+characteristics exactly, without an arbitrarily chosen prime cutoff.
+Our producer retains every elementary row or column swap, integer
+multiple addition, and row negation. The independent verifier replays
+these invertible steps and checks the resulting diagonal and its
+divisibility chain; it does not run the producer's Smith algorithm.
+
+\section{Sharp certificates on the retained five-seed panel}
+
+The panel was frozen before the earlier binary search. It consists of
+the first sixteen source-order rows with diagram Wirtinger number five
+and no reported sharp finite Coxeter hit in the official BKM table
+\cite{bkm}. The workbook is pinned at commit
+{\small\texttt{74fe52e57de6f91988f63ac105cbc157534ad966}}; original bytes and
+source-row numbers are retained. No cases were replaced after testing.
+
+\begin{theorem}\label{thm:panel}
+For each knot diagram labelled by the following names in that table,
+meridional rank and bridge number both equal five:
+\[
+\begin{array}{rrrr}
+15a1381&15a1383&15a1389&15a1416\\
+15a1599&15a1617&15a1618&15a1619\\
+15a7591&15a7715&15a7717&15a7733\\
+15a7749&15a7752&15a7763&15a7816.
+\end{array}
+\]
+The named-diagram transfer and the known Montesinos family identification
+are checked below. Novelty of these knot cases is excluded by that audit.
+\end{theorem}
+\begin{proof}
+For each case, a retained five-seed propagation trace colours all
+fifteen Wirtinger arcs. The Wirtinger-number theorem \cite{wirt}
+therefore gives $b(K)\le5$.
+
+For each case, eight normalized surjective $S_4$ transposition
+colourings have integer lift matrix with nonzero Smith factors
+\[
+                (\underbrace{1,\ldots,1}_{10},5).
+\]
+There are fifteen scalar variables. In characteristic five the matrix
+has rank ten and its kernel has dimension five. Theorem
+\ref{thm:field} gives $\mr(K)\ge5$. With $\mr(K)\le b(K)\le5$,
+both equalities follow. Independently generated explicit kernel bases
+and every upper-bound trace are retained in
+\texttt{sharp\_five\_certificates.json}.
+\end{proof}
+
+For example, label the arcs of $15a1381$ by $0,\ldots,14$ in the
+order fixed by its Gauss code. One certified projected colouring is
+\[
+\begin{split}
+ &(01),(01),(01),(01),(01),(02),(03),(23),\\
+ &(23),(02),(03),(23),(02),(12),(01).
+\end{split}
+\]
+Its five seeds are $\{0,1,5,6,7\}$. A basis of the lift kernel over
+$\F_5$, written in the same arc order, is
+\[
+\setlength{\arraycolsep}{3pt}
+\begin{pmatrix}
+2&3&3&1&0&0&0&0&0&0&0&0&0&0&0\\
+0&0&0&0&0&0&0&4&4&1&0&0&0&0&0\\
+0&0&0&0&0&0&1&1&1&0&1&1&0&0&0\\
+0&0&0&0&0&1&1&1&1&0&1&0&1&1&0\\
+4&3&3&0&1&1&1&1&1&0&1&0&1&0&1
+\end{pmatrix}.
+\]
+The five columns at the seed positions are independent. These vectors
+therefore already certify five independent actual lifts, without
+needing the full all-characteristic search to prove this lower bound.
+
+The complete normalized distributions are identical on all sixteen
+cases. For $S_3$, six colourings have factors $1^{12},30$ and two have
+$1^{11},10$; their maximum bounds are respectively three and four.
+For $S_4$, twelve have $1^{11},15$, four have $1^{11},10$, and eight
+have $1^{10},5$; their maximum bounds are four, four, and five.
+In characteristic two all $S_4$ bounds are three or four, as in the
+earlier receipt. The new sharpness specifically requires characteristic
+five. Individual image surjectivity beyond the base $S_4$ is not needed.
+
+\section{Named-diagram transfer and the prior-family audit}
+
+SnapPy's independently packaged Hoste--Thistlethwaite census supplies
+planar diagrams for all sixteen names. The initial over/under Gauss
+walks agree with the workbook up to traversal choices and global mirror.
+The standard-library verifier then transfers every explicit $\F_5$
+kernel basis and seed trace to the census diagram itself and checks
+every crossing there. Thus named-knot certification no longer depends
+only on accepting the workbook's knot labels.
+
+A frozen family audit first tested 112 five-tangle Montesinos diagrams
+suggested by the crossing budget, without replacing any target. Seven
+matched exactly. A separately frozen second stage retained all those
+fraction tuples and tested all $2^5$ individual planar half-turn choices,
+3584 diagrams in total. The rational-tangle flipping lemma
+\cite[Lemma 2(iii)]{kl} preserves each fraction under these half-turns.
+All sixteen then matched. No numerical isometry or invariant-only test
+was accepted.
+
+A separate implementation constructs the rational tangles from paired
+endpoints using integer twists, inversion, side-by-side sum and numerator
+closure. It checks each continued fraction exactly over $\mathbb Q$.
+An explicit bijection of crossing half-edges checks the generated map
+against the retained candidate and then the named census diagram.
+It preserves edge pairing and cyclic rotation, allowing only a single
+global reversal of planar orientation and a single global crossing
+switch. These transformations correspond to ambient reflections; MRC
+and both ranks are invariant under mirror. A control switching just one
+crossing is rejected. The witnesses are retained in
+\texttt{diagram\_audit\_verification.json}.
+
+For example, up to mirror,
+\[
+ 15a1381=M\left(0;\frac12,\frac35,\frac23,\frac23,\frac23\right).
+\]
+Every identified presentation has five reduced, noninteger fractions,
+with denominator multiset $\{2,3,3,3,5\}$. All sixteen therefore fall
+under the classical Montesinos theorem $\mr=b=r$ for $r\ge3$ branches
+\cite{bz,musick}. The original theorem statement is restated explicitly
+in Musick's Theorem 1; the entire 1985 proof has not been audited here.
+The F5 certificates give another direct verification of these known
+equalities, not a new knot-class theorem.
+
+\section{An unlimited-radical obstruction and a current uncertain panel}
+
+\begin{proposition}\label{prop:radical}
+Suppose a knot has a transitive affine representation on a binary vector
+space $V$, whose meridians have the common-form transvection shape
+\[
+ T_{u,a}(x)=x+(B(u,x)+a)u,
+\]
+where the alternating form $B$ has rank two. Then the knot group has a
+surjective $S_3$ transposition representation. This holds for any
+dimension of the radical of $B$.
+\end{proposition}
+\begin{proof}
+Let $R=\operatorname{rad}B$. The linear parts induce a representation
+on $W=V/R$, with image in $\operatorname{Sp}(W)=\operatorname{Sp}(2,2)
+\cong S_3$. Transitivity forces the meridian directions to span $V$:
+every generator changes a point by a vector in the span of these
+directions, so its cosets would otherwise be invariant. Their projected
+directions therefore span the two-dimensional $W$.
+
+At least two distinct nonzero projected directions occur. Their linear
+parts are distinct transvections in $\operatorname{Sp}(2,2)$, hence
+distinct transpositions which generate $S_3$. Since meridians are
+conjugate, none can have trivial projected linear part when another
+has nontrivial part. The resulting quotient has the required meridian
+images.
+\end{proof}
+
+We separately froze the first sixteen names in the 293-case
+\texttt{still\_open.json} list of the October 2026 release
+\cite{bhat}, pinned at commit
+\path{06cbbb7e2737e1a11085b64e0ead021d63c550c3}. Joining names to
+the BKM workbook gives independent four-seed diagram upper certificates.
+Exhaustive normalized assignments give no surjective $S_3$ or $S_4$
+transposition colouring for any of these sixteen diagrams. Independent
+permutation enumeration reproduces this absence. These are
+\[
+\begin{array}{rrrr}
+13a129&13a135&13a136&13a137\\
+13a194&13a196&13a197&13a198\\
+13a233&13a234&13a239&13a242\\
+13a243&13a244&13a253&13a265.
+\end{array}
+\]
+Consequently no $S_3$/$S_4$ lift strategy over any field applies to
+them. The companion \path{BRANCHED_COVER_LIFT_BOUNDS.tex} completes
+the exclusion: a four-meridian generating family permits a connected
+transposition quotient only in degrees $r\le5$. An exhaustive $S_5$
+search also gives no base, while the unique $S_2$ base has maximum
+lift dimension two in every characteristic, by its integer Smith form.
+Thus this symmetric root-lift method cannot give a sharp four-bound
+on any of these targets, in any degree or field.
+
+The original binary common-form affine criterion is also excluded in
+\emph{every} dimension: its bound forces $k+1\le\mr\le b\le4$, so
+$k\le3$ and every nonzero alternating form has rank two. Proposition
+\ref{prop:radical} would then force the absent $S_3$ quotient. The
+earlier suggestion that higher-rank binary forms remain possible on
+this panel is withdrawn. Other quotient types and lower-bound methods
+remain possible; these exclusions do not resolve the targets' MRC status.
+
+We also froze these same sixteen targets with their oriented PD data
+from KnotInfo 2026.11.2 and tested positive transvections in
+$\operatorname{SL}_2(\F_p)$ for $p=3,5,7$. For
+$u=(a,b)\ne0$, the base matrix is
+\[
+ A_u=\begin{pmatrix}1-ab&a^2\\-b^2&1+ab\end{pmatrix},
+ \qquad u\sim-u.
+\]
+Restricted affine lifts take a meridian to $(c u,A_u)$, $c\in\F_p$,
+so the preceding general root-space bound applies. Four-seed propagation
+certifies the upper bounds. Complete normalized noncommuting assignments
+in the stated conjugacy classes have only lift dimensions two or three;
+none has dimension four. Parallel root families give commuting affine
+images, which must all coincide since knot meridians are conjugate;
+their lift space has dimension one and cannot be sharp here.
+A separate replay enumerates the conjugacy class
+from all determinant-one matrices, uses the seed trace for propagation,
+and evaluates dense three-by-three affine matrices to reconstruct the
+lift equations. It reproduces every distribution. The PD parser alone
+is shared. These negative results exclude only the stated finite fields
+and classes; they do not exclude other primes or a general parabolic
+strategy. The retained receipt is
+\texttt{parabolic\_panel\_verification.json}.
+
+\section{Verification and remaining gates}
+
+The new separate verifier checks all 512 lift matrices in the earlier
+panel by reverse affine point evaluation, replays integer elementary
+operations, and cross-checks dimensions by independent elimination in
+characteristics $2,3,5,7,11$. It enumerates projected permutation groups
+and every normalized seed assignment independently. Smith controls
+cover all 625 two-by-two matrices with entries in $\{-2,-1,0,1,2\}$,
+using gcds of minors as a separate oracle. Both sixteen-case upper
+traces are checked. The earlier independent workbook-reader replay is
+retained. These are finite checks supporting the stated certificates,
+not a formal verification of the uniform proofs.
+
+We also retained the October release's 243 matrix certificates and
+replayed all of them with a separate standard-library checker: column
+rank elimination checks invertibility, rank-one differences, and zero
+common fixed space; direct multiplication checks the signed Wirtinger
+relations without matrix inversion; overstrand identifications check
+the four-seed upper certificates. All pass. Changed matrix entries,
+three seeds, and identity matrices are rejected. All 243 source diagrams
+also have exact crossing-preserving planar-map matches in the separately
+packaged HT census. KnotInfo releases 2026.10.5 and 2026.11.2 each have
+exactly the same 536 thirteen-crossing $[3,4]$ entries as the author's
+243-plus-293 partition; all 243 published PD records agree literally
+with both snapshots. Original archive and CSV hashes and the selected
+source columns are retained. This checks those archived tables, not
+every subsequent live database update. The full paper remains unaudited
+and unrefereed; credit for these 243 cases remains with its author.
+
+The named-diagram and prior-family gates for the sixteen five-bridge
+cases are complete: all are known Montesinos cases. A no-hit in the
+finite Coxeter table was not evidence that MRC was previously open.
+The current thirteen-crossing panel requires a different lower-bound
+mechanism or a quotient outside the excluded symmetric root-lift route.
+The companion branched-cover proof identifies lift nullity as
+$r-1+\dim H_1(Y_\phi;F)$ and supplies a nonabelian cover-rank gate.
+Its separate $A_5$ core-colouring count gives no sharp certificate on
+the same sixteen targets. The full conjecture and the outstanding
+source and recent-proof audits remain open.
+
+\begin{thebibliography}{99}
+\bibitem{bz} Boileau--Zieschang, Nombre de ponts et generateurs meridiens
+des entrelacs de Montesinos (1985), Theorem 1.1.
+\url{https://doi.org/10.1007/BF02567413}.
+\bibitem{musick} Musick, Minimal bridge projections for 11-crossing
+prime knots (2012), Theorem 1. \url{https://arxiv.org/abs/1208.4233v3}.
+\bibitem{kl} Kauffman--Lambropoulou, On the classification of rational
+tangles (2004), Theorem 1 and Lemma 2.
+\url{https://arxiv.org/abs/math/0311499v2}.
+\bibitem{cesy} Clark--Elhamdadi--Saito--Yeatman, Quandle Colorings of
+Knots and Applications, J. Knot Theory Ramifications 23 (2014), 1450035,
+Sections 6 and 7. \url{https://arxiv.org/abs/1312.3307}.
+\bibitem{gglw} Gao--Gu--Li--Wang, Meridional ranks of iterated Whitehead
+doubles (2026), Lemma 6.2. \url{https://arxiv.org/abs/2611.15673v1}.
+\bibitem{bkm} Blair--Kjuchukova--Morrison, Coxeter quotients of knot
+groups through 16 crossings (2024).
+\url{https://arxiv.org/abs/2208.09032}.
+Official data: \url{https://github.com/ThisSentenceIsALie/Wirt_Hm}.
+\bibitem{wirt} Blair--Kjuchukova--Velazquez--Villanueva, Wirtinger
+systems of generators of knot groups (2020).
+\url{https://archive.intlpress.com/site/pub/files/_fulltext/journals/cag/2020/0028/0002/CAG-2020-0028-0002-a002.pdf}.
+\bibitem{bhat} Bhattacharjee, The bridge index and the nonorientable
+four-genus of knots with at most thirteen crossings, unrefereed release
+1.3.0 (2026). \url{https://doi.org/10.5281/zenodo.23561157}.
+Official data: \url{https://github.com/anaxia-research/conjecture-to-choose}.
+\end{thebibliography}
+\end{document}

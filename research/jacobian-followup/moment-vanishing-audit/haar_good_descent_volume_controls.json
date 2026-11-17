@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-16",
+  "checks": {
+    "original_Long_volume_in_nearby_coordinates": true,
+    "volume_regular_at_good_good_node": true
+  },
+  "all_passed": true,
+  "scope": "Two generic rational Jacobian identities for the ORIGINAL nonexceptional Long control. No phase degree campaign; no exceptional purity or full model asserted."
+}

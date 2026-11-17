@@ -1,0 +1,525 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 168,
+  "checks": [
+    "predecessor PASS lifted_surface_s3_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json verify_lifted_surface_s3.py",
+    "sealed predecessor lifted_surface_s3_receipt.json LIFTED_SURFACE_BALANCES_AND_S3_MARKED_LINKING.md",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/lifted-surface-s3/manifest.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS fibre_order_transfer_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json verify_fibre_order_transfer.py",
+    "sealed predecessor fibre_order_transfer_receipt.json FIBRE_ORDER_AND_NONCYCLIC_ZERO_MARKS.md",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/fibre-order-transfer/manifest.json",
+    "sealed predecessor fibre_order_transfer_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor fibre_order_transfer_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS fold_schur_s4_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json verify_fold_schur_and_s4.py",
+    "sealed predecessor fold_schur_s4_receipt.json FOLD_SCHUR_BOUND_AND_S4_COMMON_EXCLUSION.md",
+    "sealed predecessor fold_schur_s4_receipt.json sources/fold-schur-s4/manifest.json",
+    "sealed predecessor fold_schur_s4_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor fold_schur_s4_receipt.json sources/common-pencil-mark/stacks-0C5H.html",
+    "sealed predecessor fold_schur_s4_receipt.json sources/common-pencil-mark/stacks-0C5R.html",
+    "sealed predecessor fold_schur_s4_receipt.json sources/seifert-base-genus/hatcher-3manifolds.pdf",
+    "sealed predecessor fold_schur_s4_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "predecessor PASS common_pencil_mark_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json verify_common_pencil_mark.py",
+    "sealed predecessor common_pencil_mark_receipt.json COMMON_PENCIL_GRAM_MARK_AND_ALL_ODD_EXCLUSION.md",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/manifest.json",
+    "sealed predecessor common_pencil_mark_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5H.html",
+    "sealed predecessor common_pencil_mark_receipt.json sources/common-pencil-mark/stacks-0C5R.html",
+    "predecessor PASS binomial_periodic_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_binomial_periodic.py",
+    "sealed predecessor binomial_periodic_receipt.json ALL_BINOMIAL_KEYS_PERIODIC_GATE_AND_EXISTENCE.md",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/manifest.json",
+    "sealed predecessor binomial_periodic_receipt.json verify_orbit_tree.py",
+    "sealed predecessor binomial_periodic_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor binomial_periodic_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json orbit_tree_receipt.json",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/binomial-periodic/zannier-1995.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor binomial_periodic_receipt.json sources/quartic-colouring/livingston-melvin-1985.pdf",
+    "predecessor PASS marked_end_lattice_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json verify_marked_end_lattice.py",
+    "sealed predecessor marked_end_lattice_receipt.json MARKED_END_LATTICE_AND_CABLE_CONTROL.md",
+    "sealed predecessor marked_end_lattice_receipt.json sources/marked-end-lattice/manifest.json",
+    "sealed predecessor marked_end_lattice_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json peripheral_zero_receipt.json",
+    "sealed predecessor marked_end_lattice_receipt.json sources/marked-end-lattice/weidmann-root-adjoined.pdf",
+    "sealed predecessor marked_end_lattice_receipt.json sources/quartic-cabling/ito-cable-slopes.pdf",
+    "primary bytes neumann-plumbing-1981.pdf",
+    "primary bytes nemethi-1510.07128v1.pdf",
+    "primary bytes boyer-rolfsen-wiest-2005.pdf",
+    "unbounded canonical blowup chi identity",
+    "negative total-transform coefficient certificate",
+    "zero-end cancellation Schur correction identically zero",
+    "entire omitted leaves and all volume orders (2, {4: 2, 1: 1}, 2, [0])",
+    "untouched zero end and unique neighbour (2, {4: 2, 1: 1}, 2, [0])",
+    "exact R6 no extra S1xS2 count (2, {4: 2, 1: 1}, 2, [0])",
+    "source negative definite exceptional subgraph ('(2, {4: 2, 1: 1}, 2, [0])', 0)",
+    "source rational fundamental cycle ('(2, {4: 2, 1: 1}, 2, [0])', 0)",
+    "full boundary homology retained by R6 (2, {4: 2, 1: 1}, 2, [0])",
+    "entire omitted leaves and all volume orders (4, {7: 1}, 2, [0])",
+    "untouched zero end and unique neighbour (4, {7: 1}, 2, [0])",
+    "exact R6 no extra S1xS2 count (4, {7: 1}, 2, [0])",
+    "source negative definite exceptional subgraph ('(4, {7: 1}, 2, [0])', 0)",
+    "source rational fundamental cycle ('(4, {7: 1}, 2, [0])', 0)",
+    "full boundary homology retained by R6 (4, {7: 1}, 2, [0])",
+    "entire omitted leaves and all volume orders (3, {8: 1, 4: 2}, 2, [0])",
+    "untouched zero end and unique neighbour (3, {8: 1, 4: 2}, 2, [0])",
+    "exact R6 no extra S1xS2 count (3, {8: 1, 4: 2}, 2, [0])",
+    "source negative definite exceptional subgraph ('(3, {8: 1, 4: 2}, 2, [0])', 0)",
+    "source rational fundamental cycle ('(3, {8: 1, 4: 2}, 2, [0])', 0)",
+    "full boundary homology retained by R6 (3, {8: 1, 4: 2}, 2, [0])",
+    "entire omitted leaves and all volume orders (2, {1: 1}, 2, [1])",
+    "untouched zero end and unique neighbour (2, {1: 1}, 2, [1])",
+    "exact R6 no extra S1xS2 count (2, {1: 1}, 2, [1])",
+    "source negative definite exceptional subgraph ('(2, {1: 1}, 2, [1])', 0)",
+    "source rational fundamental cycle ('(2, {1: 1}, 2, [1])', 0)",
+    "source negative definite exceptional subgraph ('(2, {1: 1}, 2, [1])', 1)",
+    "source rational fundamental cycle ('(2, {1: 1}, 2, [1])', 1)",
+    "full boundary homology retained by R6 (2, {1: 1}, 2, [1])",
+    "entire omitted leaves and all volume orders (3, {4: 1}, 3, [1, 2])",
+    "untouched zero end and unique neighbour (3, {4: 1}, 3, [1, 2])",
+    "exact R6 no extra S1xS2 count (3, {4: 1}, 3, [1, 2])",
+    "source negative definite exceptional subgraph ('(3, {4: 1}, 3, [1, 2])', 0)",
+    "source rational fundamental cycle ('(3, {4: 1}, 3, [1, 2])', 0)",
+    "source negative definite exceptional subgraph ('(3, {4: 1}, 3, [1, 2])', 1)",
+    "source rational fundamental cycle ('(3, {4: 1}, 3, [1, 2])', 1)",
+    "source negative definite exceptional subgraph ('(3, {4: 1}, 3, [1, 2])', 2)",
+    "source rational fundamental cycle ('(3, {4: 1}, 3, [1, 2])', 2)",
+    "full boundary homology retained by R6 (3, {4: 1}, 3, [1, 2])",
+    "entire omitted leaves and all volume orders (2, {3: 1}, 5, [0, 1, 2])",
+    "untouched zero end and unique neighbour (2, {3: 1}, 5, [0, 1, 2])",
+    "exact R6 no extra S1xS2 count (2, {3: 1}, 5, [0, 1, 2])",
+    "source negative definite exceptional subgraph ('(2, {3: 1}, 5, [0, 1, 2])', 0)",
+    "source rational fundamental cycle ('(2, {3: 1}, 5, [0, 1, 2])', 0)",
+    "source negative definite exceptional subgraph ('(2, {3: 1}, 5, [0, 1, 2])', 1)",
+    "source rational fundamental cycle ('(2, {3: 1}, 5, [0, 1, 2])', 1)",
+    "source negative definite exceptional subgraph ('(2, {3: 1}, 5, [0, 1, 2])', 2)",
+    "source rational fundamental cycle ('(2, {3: 1}, 5, [0, 1, 2])', 2)",
+    "full boundary homology retained by R6 (2, {3: 1}, 5, [0, 1, 2])",
+    "branching graphs multiple fibres and arbitrary volume exercised",
+    "companion abelianization kills actual eta",
+    "general third cone determinant",
+    "general third cone cannot vanish certificate",
+    "nonzero cone integer obstruction",
+    "trefoil third order",
+    "normalized Euler exact determinant",
+    "pairwise coprimality first two certificate",
+    "pairwise coprimality first third certificate",
+    "last pair gcd reduces to2",
+    "unbounded floor interval l between s and2s",
+    "unbounded floor interval l below k",
+    "unbounded floor interval l below J",
+    "explicit nonrational cycle chi zero",
+    "long arm room for nonrational cycle",
+    "all normalized Seifert congruences 11",
+    "star Euler negative and order exact 11",
+    "universal Pinkham floor witness 11",
+    "Seifert model full H1 11",
+    "all trefoil S3 classes retained 11",
+    "actual satellite full H1 matches quotient model (11, 0)",
+    "actual satellite full H1 matches quotient model (11, 1)",
+    "all normalized Seifert congruences 19",
+    "star Euler negative and order exact 19",
+    "universal Pinkham floor witness 19",
+    "Seifert model full H1 19",
+    "all trefoil S3 classes retained 19",
+    "actual satellite full H1 matches quotient model (19, 0)",
+    "actual satellite full H1 matches quotient model (19, 1)",
+    "all normalized Seifert congruences 27",
+    "star Euler negative and order exact 27",
+    "universal Pinkham floor witness 27",
+    "Seifert model full H1 27",
+    "all trefoil S3 classes retained 27",
+    "actual satellite full H1 matches quotient model (27, 0)",
+    "actual satellite full H1 matches quotient model (27, 1)",
+    "all normalized Seifert congruences 43",
+    "star Euler negative and order exact 43",
+    "universal Pinkham floor witness 43",
+    "Seifert model full H1 43",
+    "all trefoil S3 classes retained 43",
+    "actual satellite full H1 matches quotient model (43, 0)",
+    "actual satellite full H1 matches quotient model (43, 1)",
+    "all other common sectors previously closed",
+    "PF73 trefoil necessary bounds retained"
+  ],
+  "source_theorem": {
+    "all_field_degrees": true,
+    "all_ramification_volume_orders": true,
+    "any_omitted_line_count": true,
+    "smooth_affine_extension_required": true,
+    "entire_disjoint_A1s_required": true,
+    "common_regular_coordinate_finite_values_required": true,
+    "x_global_P1_morphism_with_poles_required": true,
+    "end_connected_sum_of_rational_negative_plumbing_links": true,
+    "no_extra_S1S2_summand": true,
+    "unbounded_integer_chi_blowup_proof": true,
+    "every_homomorphism_to_left_orderable_group_trivial": true,
+    "source_end_assumed_irreducible": false,
+    "all_source_end_groups_finite_or_cyclic_asserted": false
+  },
+  "quotient": {
+    "all_actual_binomial_two_stage_quartic_S3_S3": true,
+    "actual_to_Seifert_group_surjection": true,
+    "simultaneous_companion_abelianizations": true,
+    "cones": "s,k,abs(k/2-r*bt)",
+    "H1": "Z/D",
+    "nontrivial_LO_quotient_excludes_common_source": true,
+    "group_equality_or_homeomorphism_asserted": false,
+    "rationality_classified_for_all_first_pairs": false
+  },
+  "trefoil": {
+    "all_remaining_S3_S3_common_sources_excluded": true,
+    "all_source_configurations_and_orders": true,
+    "all_windings_common_pencil_excluded": true,
+    "all_common_representation_sectors_excluded": true,
+    "entire_target_keys_in_both_pencils_excluded": false,
+    "complementary_passing_sources_excluded": false,
+    "normalized_star": "e0=-2; (s,1),(k,k-1),(J,J-1)",
+    "s": "2D-1",
+    "k": "6D-2",
+    "J": "3D-2",
+    "unbounded_nonrational_floor_witness": "l=s+1",
+    "actual_target_has_nontrivial_LO_quotient": true
+  },
+  "source_controls": [
+    {
+      "r": 2,
+      "support": {
+        "4": 2,
+        "1": 1
+      },
+      "index": 2,
+      "D_values": [
+        0
+      ],
+      "component_determinants": [
+        11
+      ],
+      "fundamental_cycles": [
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "r": 4,
+      "support": {
+        "7": 1
+      },
+      "index": 2,
+      "D_values": [
+        0
+      ],
+      "component_determinants": [
+        83
+      ],
+      "fundamental_cycles": [
+        [
+          1,
+          1,
+          2,
+          3,
+          4,
+          4,
+          3,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "r": 3,
+      "support": {
+        "8": 1,
+        "4": 2
+      },
+      "index": 2,
+      "D_values": [
+        0
+      ],
+      "component_determinants": [
+        88
+      ],
+      "fundamental_cycles": [
+        [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "r": 2,
+      "support": {
+        "1": 1
+      },
+      "index": 2,
+      "D_values": [
+        1
+      ],
+      "component_determinants": [
+        3,
+        4
+      ],
+      "fundamental_cycles": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "r": 3,
+      "support": {
+        "4": 1
+      },
+      "index": 3,
+      "D_values": [
+        1,
+        2
+      ],
+      "component_determinants": [
+        16,
+        4,
+        4
+      ],
+      "fundamental_cycles": [
+        [
+          1,
+          1,
+          2,
+          3,
+          3,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "r": 2,
+      "support": {
+        "3": 1
+      },
+      "index": 5,
+      "D_values": [
+        0,
+        1,
+        2
+      ],
+      "component_determinants": [
+        39,
+        4,
+        4
+      ],
+      "fundamental_cycles": [
+        [
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "target_controls": [
+    {
+      "D": 11,
+      "r": 63,
+      "alpha": [
+        21,
+        64,
+        31
+      ],
+      "omega": [
+        1,
+        63,
+        30
+      ],
+      "e0": -2,
+      "floor_witness": 22,
+      "floor_sum": -46,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          11
+        ]
+      }
+    },
+    {
+      "D": 19,
+      "r": 111,
+      "alpha": [
+        37,
+        112,
+        55
+      ],
+      "omega": [
+        1,
+        111,
+        54
+      ],
+      "e0": -2,
+      "floor_witness": 38,
+      "floor_sum": -78,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          19
+        ]
+      }
+    },
+    {
+      "D": 27,
+      "r": 159,
+      "alpha": [
+        53,
+        160,
+        79
+      ],
+      "omega": [
+        1,
+        159,
+        78
+      ],
+      "e0": -2,
+      "floor_witness": 54,
+      "floor_sum": -110,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          27
+        ]
+      }
+    },
+    {
+      "D": 43,
+      "r": 255,
+      "alpha": [
+        85,
+        256,
+        127
+      ],
+      "omega": [
+        1,
+        255,
+        126
+      ],
+      "e0": -2,
+      "floor_witness": 86,
+      "floor_sum": -174,
+      "H1": {
+        "free": 0,
+        "torsion": [
+          43
+        ]
+      }
+    }
+  ],
+  "assurance": {
+    "written_unbounded_source_and_target_proofs": true,
+    "complete_primary_pages_visually_audited": true,
+    "deep_rational_link_orderability_theorems_imported": true,
+    "deep_theorems_independently_reproved": false,
+    "finite_controls_not_universal_proof": true,
+    "finite_Keller_map": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "PF63_polynomial_curves_declared_nonexistent": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_rational_end_orderability.py": "aaa7b24c424e30a216739582933dd55dd2928e3025d8f15c2bc2037a076dc498",
+    "RATIONAL_SOURCE_ENDS_AND_TREFOIL_COMMON_EXCLUSION.md": "1d405c682f8ad34f08f20379b72f91717df11ee7fe4416c881059c7838252a42",
+    "sources/rational-end-orderability/manifest.json": "b52810dc942c7d03e8a4ca45908c49aa913fbd2bed4dc867c6eb1aada239dc89",
+    "lifted_surface_s3_receipt.json": "047f6b33e0849bb630525cc1e816e3371111217e0489905d65e64605b1634a5b",
+    "fibre_order_transfer_receipt.json": "a256433f7c46d52c5cd3063082ca36dada24808c6043ac9dc8b0207a965ea38b",
+    "fold_schur_s4_receipt.json": "1347fb898542285b12346c9257a75705d84d0c939660dedeaf9ecc5fc99b649d",
+    "common_pencil_mark_receipt.json": "6782b2eed1a1b579c5d3ee8c2257e04f9b2f418073cd784d4b4144cd76c0f027",
+    "binomial_periodic_receipt.json": "1915d4914d60fd87f0d09cad81f3b799297d83f19550558de4ac9e2dff3ae6d8",
+    "marked_end_lattice_receipt.json": "0d0e1f435fa04818a1c3d6b8951e21d21b0234135588a91f462b92a33b951e31",
+    "sources/regular-sector-end/neumann-plumbing-1981.pdf": "61a02e73da4a47216f39dceb22887b2bd3d584ba2418049458d90b3dedd1657b",
+    "sources/rational-end-orderability/nemethi-1510.07128v1.pdf": "ec6e0f8d0d96fc9f3dfb194c23fffac6f41eb2057ae4e60765e0194f3998f594",
+    "sources/rational-end-orderability/boyer-rolfsen-wiest-2005.pdf": "2edb06961950dd663113cde36f0988eabfd45ab46a6a756cc66fdb6d11089d07"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

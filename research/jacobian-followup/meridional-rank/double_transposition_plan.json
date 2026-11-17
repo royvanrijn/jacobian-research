@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "frozen_before_execution": true,
+  "targets": ["13a_129", "13a_135", "13a_136", "13a_137", "13a_194", "13a_196", "13a_197", "13a_198", "13a_233", "13a_234", "13a_239", "13a_242", "13a_243", "13a_244", "13a_253", "13a_265"],
+  "selection": "Exactly the original sixteen parabolic_panel.json PDs, unchanged order, with retained four-seed upper traces. No extension to the293-name panel in this experiment.",
+  "test": "Exhaust simultaneous S8-conjugacy orbits of ordered four-tuples of double transpositions. Normalize the first image to(01)(23), quotient the other three by its192-element centralizer using successive stabilizers, retain connected support graphs, propagate the four seeds and check every involutory Wirtinger relator. Retain every successful orbit and exact permutation images.",
+  "motivation": "A transitive degree-eight image with meridians of cycle type2^2*1^4 needs at least ceil(7/2)=4 meridional generators. Full A8 images lie outside binary3 affine images by group order and outside binary4 transvection images by conjugacy-class size210 versus105. Search includes all proper transitive images too; it does not assume a classification of subgroups.",
+  "controls": [
+    {"name":"T(4,7)","presentation":"x^4=y^7","meridian":"x^-1*y^2","y":[1,2,3,4,5,6,0,7],"method":"For each of210 double transpositions m set x=y^2*m and check x^4=1; enumerate each resulting image exactly. Known sharp4 knot; this control may have affine image."},
+    {"name":"T(4,15)","presentation":"x^4=y^15","meridian":"x^-1*y^4","y":[1,2,3,4,0,6,7,5],"method":"For each of210 double transpositions m set x=y^4*m and check x^4=1; enumerate each resulting image exactly. Known sharp4 knot; no fullA8 image is presupposed."}
+  ],
+  "limits": {"targets":16,"seconds_total":180,"seconds_per_target":15,"tuple_orbit_cap":100000,"control_pairs":420,"finite_image_order_cap":20160,"checkpoint_each_target":true},
+  "acceptance": "No named closure without independent pointwise relator, transitivity, source-PD, upper-trace and prior-known-family replay. Negative conclusion requires complete orbit coverage, independently checked by weighted raw-tuple coverage or full orbit marking. A cap leaves the target UNKNOWN.",
+  "scope": "Only degree-eight double-transposition meridian actions on these16 diagrams. Does not exclude degree9, higher-cycle meridians, other finite groups or cover ranks; full MRC remains open. Standard torus presentations/meridians and known bridge values are explicit retained literature imports. No worldwide novelty claim."
+}

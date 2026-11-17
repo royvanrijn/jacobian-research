@@ -1,0 +1,104 @@
+{
+  "completed": true,
+  "checker_sha256": "d39a2395def940e902101526581f14cdd210841028244261be83f5ce4b14fdba",
+  "supporting_checker_hashes": {
+    "verify_scalar_time_gaps.py": "660fc5e4420359773a1024104800db7ddff2eb60c3b8192f94d8f8e40272b213",
+    "verify_linear_suspension.py": "17ba2e68ae16533e9743a21f12e504606317870f48d1e5a26227ff8789508631",
+    "verify_formal_symbol_source_rigidity.py": "5fbd1a59780d9790c3a6911a7d4731f500a41b860190713bb95b9af025f29bf6",
+    "verify_algebraic_formal_symbols.py": "edd11e6cdde8c6e20e21201fd4c47400325431ead821e36fe3be05497a98782f"
+  },
+  "actual_profiles": [
+    {
+      "m": 1,
+      "height": 0,
+      "deficit": 1,
+      "sharp_marker_degree": 1
+    },
+    {
+      "m": 2,
+      "height": 1,
+      "deficit": 1,
+      "sharp_marker_degree": 2
+    },
+    {
+      "m": 3,
+      "height": 1,
+      "deficit": 2,
+      "sharp_marker_degree": 3
+    },
+    {
+      "m": 4,
+      "height": 2,
+      "deficit": 2,
+      "sharp_marker_degree": 4
+    },
+    {
+      "m": 5,
+      "height": 2,
+      "deficit": 3,
+      "sharp_marker_degree": 5
+    },
+    {
+      "m": 6,
+      "height": 3,
+      "deficit": 3,
+      "sharp_marker_degree": 6
+    }
+  ],
+  "reversed_source_time_coefficients_checked": 7,
+  "higher_jet_participating_output": "30*x**4 + 720",
+  "sharp_cutoff": "1",
+  "height_gap_fraction": "1/2",
+  "unit_height_comparison_pass": true,
+  "unit_scalar_equation_pass": true,
+  "concise_cubic_profiles": [
+    {
+      "m": 2,
+      "height": 1,
+      "deficit": 1
+    },
+    {
+      "m": 3,
+      "height": 1,
+      "deficit": 2
+    },
+    {
+      "m": 4,
+      "height": 2,
+      "deficit": 2
+    }
+  ],
+  "bell_leading_controls": [
+    {
+      "order": 1,
+      "leading_z_power": -1
+    },
+    {
+      "order": 2,
+      "leading_z_power": -2
+    },
+    {
+      "order": 3,
+      "leading_z_power": -3
+    },
+    {
+      "order": 4,
+      "leading_z_power": -4
+    }
+  ],
+  "characteristic_tie_control_pass": true,
+  "geometric_pullback_multiplicativity_defect": "2*s",
+  "guard_refusals": 2,
+  "infinite_lacunarity_proved_by_prefix": false,
+  "nonexistence_proved_by_failed_fitting": false,
+  "unmodified_reversed_equation_follows_from_eventuality": false,
+  "formal_unit_invariance_of_reversed_equations": false,
+  "height_preserving_representative_finiteness_disproved": false,
+  "general_actual_gap_decided": false,
+  "full_exceptional_MZ_decided": false,
+  "unrestricted_frontier_endpoint_changed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "novelty_claimed": false
+}

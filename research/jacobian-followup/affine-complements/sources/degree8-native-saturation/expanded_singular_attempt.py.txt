@@ -1,0 +1,18 @@
+from sage.all import *
+from pathlib import Path
+import gzip,json,time,hashlib
+H=Path('/home/royvanrijn/src/jacobian-research/research/jacobian-followup/affine-complements');raw=(H/'degree8_affine_reduction_certificates.json.gz').read_bytes();data=json.loads(gzip.decompress(raw));start=time.monotonic()
+for old in data['sectors']:
+ k=old['multiplicities'][0];Y=PolynomialRing(QQ,'y');K=NumberField(Y(old['P8']),'y');F=GF(1009);A=PolynomialRing(K,names=['q4','q5','q6','q7','z'],order='degrevlex');AF=PolynomialRing(F,names=['q4','q5','q6','q7','z','t'],order='degrevlex');z,t=AF.gens()[4:];V=PolynomialRing(A,'v');VF=PolynomialRing(AF,'v');v=VF.gen();ev=lambda c:sum(F(q)*F(990)**i for i,q in enumerate(K(c).list()))
+ def coeff(p):return AF({tuple(map(int,ex))+(0,):ev(c) for ex,c in A(p).dict().items()})
+ def transfer(text):return VF([coeff(c) for c in V(text)])
+ W=transfer(old['root_deviation_W']);M=transfer(old['critical_remainder_M']);L=transfer(old['Rprime_over_h_L']);s=ev(K(old['cusp_parameter']));h=v-AF(s);D=(M(s)-M)//h;E=(M*(W//h)).quo_rem(L)[1]
+ assert W(s)==0 and L.leading_coefficient()==8
+ gens=[E[5]]+[D[j]*z-E[j] for j in range(5)]+[t*M(s)*z-1]
+ out=dict(sector=k,prime=1009,names=list(AF.variable_names()),source_sha256=hashlib.sha256(raw).hexdigest(),generators=list(map(str,gens)))
+ Path('/tmp/degree8_core_gf_'+str(k)+'.json').write_text(json.dumps(out))
+ print('sector',k,'reconstructed exact finite-field necessary core, start slimgb','elapsed',time.monotonic()-start,flush=True)
+ G=AF.ideal(gens).groebner_basis(algorithm='libsingular:slimgb')
+ out['groebner_basis']=list(map(str,G));out['unit']=G==[AF.one()];out['elapsed_seconds']=time.monotonic()-start
+ Path('/tmp/degree8_core_gf_'+str(k)+'_result.json').write_text(json.dumps(out))
+ print('sector',k,'unit',G==[AF.one()],'basis length',len(G),'elapsed',time.monotonic()-start,flush=True)

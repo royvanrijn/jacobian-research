@@ -1,0 +1,275 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\F}{\mathbb F}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\rank}{\operatorname{rank}}
+\title{Singular affine certificates and exact $GL_3(\F_2)$ quotient tests}
+\author{Internal research working proof}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+There is a concrete representation architecture missed by the pinned
+external four-dimensional search: homogeneous affine extensions can
+have dependent meridian image directions and still have no common
+fixed vector. An explicit example gives a sharp certificate for every
+$T(4,7(2r+1))$, $r\ge0$. These are known torus-knot MRC cases
+\cite{rz}; no new knot equality or priority claim is made.
+
+This observation motivated a frozen, complete $GL_3(\F_2)$ quotient
+test on all 293 names in the pinned external open list. Independent
+replay finds 191 quotient kernels on 154 knots. Neither the binary
+affine lifts nor the tested characteristic-seven reflection lifts
+give a new sharp case. The original sixteen targets are retained as
+a fixed prefix. The full classical MRC goal remains open.
+
+\section{The homogeneous affine mechanism}
+
+Let $\Gamma$ be a knot group, $\rho:\Gamma\to GL(V)$ a representation
+over a field $k$, and $c\in Z^1(\Gamma,V)$, with convention
+$c(gh)=c(g)+\rho(g)c(h)$. Homogenization gives
+\[
+ \widehat\rho(g)=\begin{pmatrix}\rho(g)&c(g)\\0&1\end{pmatrix}
+ \quad\text{on }V\oplus k.
+\]
+
+\begin{proposition}\label{prop:affine}
+Suppose $V^\Gamma=0$, $c$ is nonprincipal, and for a meridian $m$,
+$\rank(\rho(m)-I)=1$ and $c(m)\in\operatorname{im}(\rho(m)-I)$.
+Then every meridian of $\widehat\rho$ has rank-one difference from
+the identity, its common fixed space is zero, and
+$\mr(K)\ge\dim V+1$.
+\end{proposition}
+\begin{proof}
+The image of $\widehat\rho(m)-I$ is the original one-dimensional
+image in $V\oplus0$. Conjugacy gives the assertion for every meridian.
+A fixed vector $(v,0)$ has $v=0$. A fixed vector $(v,t)$ with
+$t\ne0$ would give $c(g)=t^{-1}(v-\rho(g)v)$ for every $g$,
+making $c$ principal. Thus the common fixed space is zero.
+The fixed hyperplanes of any $s$ generating meridians have
+intersection of codimension at most $s$; their intersection is the
+global fixed space. Hence $s\ge\dim V+1$.
+\end{proof}
+
+This is a direct application of the retained admissible-cocycle and
+rank-one fixed-space bounds, without a common bilinear-form
+hypothesis. In dimension three a nonprincipal admissible class
+gives a four-dimensional certificate even though all homogeneous
+meridian image lines lie in the same three-space.
+
+\section{An explicit sharp control and a uniform known family}
+
+Over $\F_2$ put
+\[
+ X=\begin{pmatrix}1&0&0&1\\1&1&0&0\\0&1&1&0\\0&0&0&1\end{pmatrix},
+ \qquad
+ Y=\begin{pmatrix}0&1&0&0\\0&0&1&0\\1&1&0&0\\0&0&0&1\end{pmatrix}.
+\]
+Direct multiplication gives
+\[
+ X^4=Y^7=I,\qquad
+ M=X^{-1}Y^2=
+ \begin{pmatrix}0&0&1&1\\1&1&1&1\\1&0&0&1\\0&0&0&1\end{pmatrix}.
+\]
+The three nonzero rows of $M-I$ coincide, so its rank is one.
+The equations $(X-I)v=(Y-I)v=0$ force all four coordinates of $v$
+to vanish: the first matrix forces $v_4=v_1=v_2=0$, and the second
+then forces $v_3=0$. This already proves the needed lower bound;
+image enumeration is an additional control.
+
+\begin{theorem}\label{thm:torus}
+For every positive odd multiple $q$ of seven, the above matrices
+give a sharp rank-one certificate for $T(4,q)$, and
+$\mr(T(4,q))=b(T(4,q))=4$.
+\end{theorem}
+\begin{proof}
+Use $\Gamma=\langle x,y\mid x^4=y^q\rangle$ with preferred
+meridian $x^a y^b$, where $a q+4b=1$, in the standard conventions
+of \cite[Section 5.1]{cornwell}. Since $q$ is odd, $a$ is odd;
+reduction modulo seven gives $b\equiv2\pmod7$.
+Choose $\epsilon\in\{1,-1\}$ with
+$\epsilon a\equiv-1\pmod4$. Send $x$ to $X^\epsilon$ and $y$ to
+$Y$. The relation holds, and the meridian maps to $M$.
+The common fixed space is zero, also with $X$ replaced by its
+inverse. The fixed-hyperplane argument gives $\mr\ge4$.
+The standard four-strand torus braid gives $b\le4$, and
+$\mr\le b$ completes the proof.
+\end{proof}
+
+For $T(4,7)$ the underlying linear three-dimensional image is
+$GL_3(\F_2)$, and exact affine enumeration gives the split group
+$AGL_3(\F_2)$ of order 1344, transitive on eight points. The
+admissible cocycle space has dimension four, its principal subspace
+has dimension three, and the displayed translation is nonprincipal.
+These facts have separate dense-matrix and eight-point permutation
+replay. They are not a claim about the distinct nonsplit group
+$2^3.L_3(2)$ listed by ATLAS.
+
+The natural $GL_3(\F_2)$ action preserves no nonzero alternating
+form: the radical of an invariant alternating form is invariant,
+whereas an alternating form in odd dimension is singular and the
+natural action is irreducible. This affine certificate therefore
+uses a broader mechanism than the original common-form criterion.
+More strongly, when $3\nmid q$, that criterion has no realization
+on $T(4,q)$: $b\le4$ forces its dimension $k\le3$, a nonzero
+alternating form then has rank two, and the retained rank-two
+theorem forces an $S_3$ transposition quotient. Such a quotient
+would give nontrivial Fox three-colouring, contrary to
+$\det T(4,q)=q$. These are comparisons of certificate classes;
+Rost--Zieschang already proved torus-knot MRC \cite{rz}.
+
+\section{The exact external search limitation}
+
+At the pinned commit listed in the bibliography, the external
+program \texttt{search/glsearch.py} fixes four seed
+directions to $e_1,\ldots,e_4$ and explicitly discards the seed
+functional matrix $A$ when $\det A=0$ \cite{search}.
+This searches a restricted class of representations.
+
+Indeed, write four homogeneous meridians as $I+u_i f_i$, let
+$U$ have columns $u_i$, and let $F$ have rows $f_i$. Every image
+line of an affine extension lies in $V\oplus0$. For $\dim V=3$,
+\[
+ \rank U\le3,\qquad \rank(FU)\le3.
+\]
+Thus no choice of four meridians, scalings or basis change can
+produce the search's independent directions or invertible pairing
+matrix. Zero common fixed space instead concerns the functionals:
+it does not require the image directions to be independent.
+The $T(4,7)$ replay exhibits four conjugate meridians with
+independent functionals but pairing rank three.
+
+This is a search-coverage limitation, not an error in the valid
+rank-one criterion or in the 243 deposited certificates. The
+three-seed program \texttt{search/w3.py} performs bounded random
+diagram moves and does not certify absence of a three-bridge
+presentation. In the archived KnotInfo inputs the 293 open names
+have bridge interval $[3,4]$; their bridge number is not assumed
+to be four. No current live-list or exhaustive-geometric-search
+claim is made.
+
+\section{A complete frozen \texorpdfstring{$GL_3(\F_2)$}{GL3(F2)} quotient panel}
+
+Let $G=\pi_1(\Sigma_2(K))$. Retained four-seed diagram certificates
+give three generators for $G$. Enumerating generating triples of
+$Q=GL_3(\F_2)\cong PSL_2(\F_7)$ modulo its 336 automorphisms
+therefore exhausts epimorphisms up to quotient kernel. There are
+13,368 such triple orbits. The independently counted pair capacity
+is 57, so 58 distinct kernels on a single $G$ would force rank
+at least three. This is the same classical simple-quotient capacity
+principle as the user's $A_5$ threshold, with no pooling across
+knots.
+
+All 293 pinned names, including the original sixteen, were frozen
+before the enlarged panel ran. The exact results are
+\[
+\begin{array}{c|rrrrr}
+\text{kernels per knot}&0&1&2&3&7\\\hline
+\text{number of knots}&139&123&29&1&1
+\end{array}
+\]
+The maximum seven occurs at \texttt{13n\_4639}; three occur at
+\texttt{13n\_4645}. There are 191 kernels on 154 knots, far below
+the same-source threshold. The deck action is inner for 29 maps
+and outer for 162. Both natural and dual binary ordinary cocycle
+spaces have dimension four on 179 maps and five on twelve.
+The eight-dimensional Steinberg space has dimension eight on
+165 maps and ten on 26.
+
+\begin{corollary}\label{cor:modules}
+For every retained epimorphism $G\twoheadrightarrow Q$, every
+field $k$ of characteristic two and every finite-dimensional
+$kQ$-module $V$,
+\[
+ \dim Z^1(G,V)\le\tfrac53\dim V.
+\]
+Consequently the ordinary linear-cocycle bound cannot force
+$\rank G\ge3$ through any of these epimorphisms.
+\end{corollary}
+\begin{proof}
+The trivial-module cocycle space is zero in characteristic two,
+as independently checked on each retained presentation. The other
+absolute simples have dimensions $3,3,8$ \cite{atlas}. The displayed
+values bound their normalized cocycle dimensions by $5/3$.
+For $0\to U\to V\to W\to0$, the map on cocycles has kernel
+$Z^1(G,U)$, so
+$\dim Z^1(G,V)\le\dim Z^1(G,U)+\dim Z^1(G,W)$.
+Composition series and scalar extension give the assertion even
+for nonsplit extensions and arbitrary coefficient fields of
+characteristic two.
+\end{proof}
+
+The simple-model algebra spans have dimensions nine and 64,
+proving absolute simplicity; duality handles the second natural
+module. Independently enumerated two-regular conjugacy classes
+have orders/sizes $(1,1),(3,56),(7,24),(7,24)$. The standard
+Brauer class-count theorem supplies completeness of these four
+absolute simple models, also consistent with the primary ATLAS
+list. The classification theorem remains an explicit import.
+The corollary covers full $Q$ images, not all proper-image
+representations into $GL_3(\F_2)$ on this enlarged panel, and not
+other characteristics or finite groups. It gives no rank-two
+upper certificate for $G$.
+
+For inner deck action, the natural and dual modules extend to
+binary rank-one meridian bases. All 58 associated root-cocycle
+spaces have dimension three. For both deck types, identify $Q$
+with $PSL_2(\F_7)$ and send a projective meridian $A$ to
+$-\operatorname{Ad}(A)$ on traceless $2\times2$ matrices. Each is
+an involution with rank-one difference from identity. Outer deck
+action gives the determinant-character-twisted $PGL_2(\F_7)$
+action; inner deck action uses the separate negative sign and
+gives $C_2\times PSL_2(\F_7)$. All 191 root spaces again have
+dimension three. These are complete tests of these specified
+bases and fields, not all characteristic-seven coefficient modules.
+
+\section{Replay, provenance and remaining work}
+
+The retained plans, catalogues, matrices and kernel bases are
+sealed by \texttt{gl3f2\_verification.json}. The verifier constructs
+an independent M\"obius-permutation $PSL_2(\F_7)$ model, verifies
+all products under an explicit identification, marks full tuple
+orbits, and uses iterative crossing closure to reproduce every
+accepted map on all 293 diagrams. Ordinary matrices are rebuilt
+by reverse affine-point evaluation. The Steinberg model from
+Fano-building cycles is transported to traceless endomorphisms
+by an explicit invertible intertwiner; all 168 matrices agree.
+Independent conjugation constructs the characteristic-seven
+adjoint action and checks every root matrix and nullspace.
+The positive torus control also has exact dense/permutation replay.
+The source PD parser and retained diagram conventions are shared;
+this is independent algebraic replay, not independent knot
+identification or a formal proof assistant verification.
+
+All 191 maps, including the first-sixteen prefix, fail the sharp
+lift gates tested here. Known-family controls do not close a new
+open case. A next quotient or representation test needs a new
+structural reason for a rank gain. Proper images, other finite
+targets, nonlinear group-rank obstructions and genuinely different
+meridian components remain outside these exclusions. Actual cover
+ranks, target MRC equalities and full MRC remain unresolved.
+The uniform working proofs are unformalized and externally
+unreviewed.
+
+\begin{thebibliography}{9}
+\bibitem{rz} Rost--Zieschang, Meridional generators and plat
+presentations of torus links, J. London Math. Soc. 35 (1987),
+551--562. \url{https://doi.org/10.1112/jlms/s2-35.3.551}.
+\bibitem{cornwell} Cornwell, Knot contact homology and representations
+of knot groups, Section 5.1.
+\url{https://arxiv.org/abs/1303.4943v5}.
+\bibitem{atlas} ATLAS of Finite Group Representations,
+$L_2(7)=L_3(2)$, representation and automorphism lists.
+\url{https://brauer.maths.qmul.ac.uk/Atlas/lin/L32/}.
+\bibitem{search} Bhattacharjee, unrefereed certificate project,
+pinned search programs and deposited certificates.
+\url{https://github.com/anaxia-research/conjecture-to-choose/blob/06cbbb7e2737e1a11085b64e0ead021d63c550c3/search/glsearch.py}.
+\url{https://zenodo.org/records/23561157}.
+\end{thebibliography}
+\end{document}

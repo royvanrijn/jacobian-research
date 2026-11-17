@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-11-16",
+  "sources": [
+    {
+      "path": "sources/ade-end/ohta-ono-mpim-2002.ps",
+      "bytes": 423077,
+      "sha256": "4c6a71033966c3c741e23f62063e28dcb97856ef80ab0f80a1a6976c809629d7",
+      "title": "Hiroshi Ohta and Kaoru Ono, Simple Singularities and Symplectic Fillings, authors MPIM Preprint2002/83",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/3827/2/preprint_2002_83.ps",
+      "catalogue_url": "https://archive.mpim-bonn.mpg.de/id/eprint/3827/",
+      "used_statement": "Main Theorem fullprintedpage2: every minimal symplectic filling of canonical contact link of simple singularity is diffeomorphic to Milnor fibre. Only b2 rank used; not biholomorphic uniqueness. Fullpages1-4 rendered from originalPostScript through Ghostscript readingPDF and visually read. Page3 ADEtable/orientation definition, page4 strong/weak filling orientation context.",
+      "published_version": "J.DifferentialGeom69(2005),1-42,DOI10.4310/jdg/1121540338",
+      "published_binary_obtained": false,
+      "independent_whole_filling_classification_proof": false
+    },
+    {
+      "path": "sources/ade-end/ohta-ono-mpim-2002-reading.pdf",
+      "bytes": 349999,
+      "sha256": "d508fbfb5a785168d0e23e95d40ca50255f56ed79f25d9c0276ee4d1f0c291fc",
+      "source_kind": "derived reading copy of original primary PostScript, NOT fetched published PDF",
+      "derived_from": "sources/ade-end/ohta-ono-mpim-2002.ps",
+      "conversion": "gs -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=READING.pdf ORIGINAL.ps",
+      "ghostscript_version": "10.02.1",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "byte_deterministic_conversion_claimed": false,
+      "text_extraction_reliable": false,
+      "used_statement": "Visual reading only: originalpreprint MainTheorem page2, classification/referencecontact and orientation definitions pages1-4. Font extraction is garbled, so extracted text is NOT evidence for exact wording."
+    },
+    {
+      "path": "sources/ade-end/ghiggini-2008.pdf",
+      "bytes": 297092,
+      "sha256": "66a4a6403693f2a6eeca952fbb9663b82ab9582b3afac93684f63a39e4b89fe9",
+      "title": "Paolo Ghiggini, On tight contact structures with negative maximal twisting number on small Seifert manifolds, AGT8(2008),381-396,DOI10.2140/agt.2008.8.381",
+      "url": "https://msp.org/agt/2008/8-1/agt-v8-n1-p13-s.pdf",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        1,
+        3,
+        4,
+        14
+      ],
+      "used_statement": "FullPDF3/printed383 Theorem1.3 for M(-2;r1,r2,r3) Lspace: exactly productT(ri) positive tight isotopyclasses, allSteinfillable. Negativecontinuedfraction -1/ri, T=product|a+1|. FullPDF4 Figure2 central-2/negativearms fixes surgery orientation. FullPDF14 printed394 entire proof: all-2 coefficients yield one rotation choice and ONE tightstructure. FullPDF1 actualpaper/version conventions. This is contact uniqueness, NOT filling uniqueness. Primary proof imported, not independently reproduced.",
+      "independent_whole_contact_classification_proof": false
+    },
+    {
+      "path": "sources/ade-end/ozsvath-szabo-0303017v2.pdf",
+      "bytes": 237547,
+      "sha256": "840970dbcda5d35ee48fdc6868f4d0c7de12c0c714c661dca4797be6bbd91a99",
+      "title": "Peter Ozsvath and Zoltan Szabo, On knot Floer homology and lens space surgeries, arXiv:math/0303017v2,2March2004;publishedTopology44(2005),1281-1300",
+      "url": "https://arxiv.org/pdf/math/0303017v2",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        11,
+        12
+      ],
+      "used_statement": "FullPDF2 Definition1.1 and elliptic examples. FullPDF11 Proposition2.3 plus fullPDF12 remainderofproof: every elliptic/spherical three-manifold is an Lspace. Only that hypothesis for D/E Seifertlinks used. No knot surgery/classification corollary or general Lspace conjecture imported.",
+      "independent_whole_Floer_proof": false
+    },
+    {
+      "path": "sources/ade-end/ohta-ono-1999.pdf",
+      "bytes": 344831,
+      "sha256": "7e0c9d930371340bc390877a817ad9d3af5d7e5bf6e95fab46307d032a967eed",
+      "title": "Hiroshi Ohta and Kaoru Ono, Simple singularities and topology of symplectically filling4-manifold, Comment.Math.Helv74(1999),575-590",
+      "url": "https://ems.press/content/serial-article-files/42843?nt=1",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        1,
+        2
+      ],
+      "used_statement": "FullPDF1/printed575 ADEclassification, negativeCartan resolution and trivialcanonicalbundle. FullPDF2/printed576 explicit hypersurfaces, Milnorfibre NEGATIVECartan lattice and complex link orientation onS3/Gamma. Not using laterE8-only canonical theorem as an all-ADE theorem."
+    },
+    {
+      "path": "MULTIPLE_BOUNDARY_CANONICAL_CONTACT_AND_A_TYPE_END_EXCLUSION.md",
+      "bytes": 10195,
+      "sha256": "396d2d5747a37b617ee1685b0e0f33c5feef022600ae4d017a85d87206520ac5",
+      "source_kind": "canonical predecessor",
+      "used_statement": "ALL actual smooth omitted-prime source lattice Qnegative, k nonzero, positive energyE, exactStein minimalcore and actualtheta=r-2-E. Honda A-type uniqueness and primarysourceaudits retained unchanged."
+    }
+  ],
+  "written_proof": "Actualsmoothwhole-sourcepositivecanonicalenergy, uniqueADEpositivecontact and minimalfillingrankL implyactualr=L andthetaL-2, henceE0 contradiction. Complete unboundedclassificationofpositive2I-adjacencytree intoADE via affinezero-vectors andstarSchur complements. Classificationtheorems imported not independentlyreproved.",
+  "negative_ADE_link_orientation_required": true,
+  "smooth_actual_normalization_required": true,
+  "all_omitted_primes_retained": true,
+  "actual_end_identification_required": true,
+  "singular_normalization_extension_claimed": false,
+  "all_spherical_ends_claimed": false,
+  "reversed_orientations_claimed": false,
+  "source_lattice_determines_end_claimed": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true
+}

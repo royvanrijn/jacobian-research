@@ -1,0 +1,9 @@
+{
+  "date":"2026-11-16","frozen_before_execution":true,
+  "selection":"Exactly the ten GL3(F2) quotient kernels already found on the frozen first16 panel. No new maps or target replacement.",
+  "motivation":"Every retained deck automorphism is outer. Under GL3(F2)=PSL2(F7), it is implemented in PGL2(F7). The determinant-square-class twist of the adjoint action on traceless2x2 matrices gives a3-dimensional F7 representation in which outer involutions are rank-one reflections. This supplies the missing knot meridian geometry without an inner binary deck implementer.",
+  "test":"Construct an explicit coefficient-group isomorphism, unique outer projective deck element and all knot meridian images. Verify involutivity, rank-one differences and all oriented Wirtinger relators; compute the complete admissible root-cocycle space over F7. Dimension>=4 with the existing four-seed upper presentation is sharp.",
+  "limits":{"maps":10,"prime":7,"dimension":3,"root_rows":39,"root_columns":13,"seconds_total":30},
+  "controls":"Faithful projective coefficient group order168 with PGL automorphisms336; adjoint twist preserves the determinant quadratic form; every selected outer involution has one nonidentity eigenline; evaluate principal cocycles directly",
+  "boundary":"Only these fixed PGL2(F7) reflection bases are tested. A miss is not an all-field exclusion. A hit needs separate exact matrix/rank and upper-presentation replay, knot identity and prior-family audit. No novelty or full MRC assertion."
+}

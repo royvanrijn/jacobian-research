@@ -1,0 +1,388 @@
+[
+  {
+    "file": "MATH_STATUS.json",
+    "id": "OP-MV-ALL-DEGREE",
+    "addition": false,
+    "fields": [
+      "dependencies",
+      "scope"
+    ],
+    "sha256": "ced5e792f343dc64c74ff3553a9dbe2286a9c59ffb0012bbf128e1b2d5c26662"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "GMCDIFFTHICK20261115",
+    "addition": true,
+    "fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "sha256": "794be2ff62bf4b27bd754c501cc033916800ddab264ae9b1fddc376064db41f8"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "MVNILINVARIANT20261115",
+    "addition": true,
+    "fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "sha256": "69027228918cd7cdb433cfd84fedeab5f114e5c07db67337a35db7bf64c39cb2"
+  },
+  {
+    "file": "MATH_STATUS.json",
+    "id": "MVSAFECOMPLETION20261115",
+    "addition": true,
+    "fields": [
+      "artifact_hash",
+      "canonical_source",
+      "checker",
+      "closes_problems",
+      "consumers",
+      "dependencies",
+      "external_review",
+      "formal_verification",
+      "id",
+      "independent_replay",
+      "invalidates_assumptions",
+      "kind",
+      "narrows_problems",
+      "priority",
+      "programme_status",
+      "proof_type",
+      "replaced_by",
+      "scope",
+      "software_lock",
+      "state",
+      "supersedes",
+      "title"
+    ],
+    "sha256": "0a5c254e418fdba67c7300a66770ee9f591e9cecf27efa02de051d299f2d165e"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ALL-DEGREE-QUANTIFIERS-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "b20214f3ce1a5b9c5d81f80320bef6cfc8a64caa2f7bc611710c8a80b7b429cb"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-LOGARITHMIC-CURVE-DESCENT-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "4f28c73aa5bac7471948216411735327b5c2c90c6f3a8fc5b7374f1ed7be555a"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-SQUAREFREE-VOLUME-ARCHITECTURE-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "57f61f5f07c36de8dd9794d8f2a0486eeb4f168a16b68d7692fe5ea1444efd71"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-NEUTRAL-FACE-RESOLVENT-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "4f80c0acbc6fb6dc70c9ab1cae7d4195f44c1a7f27dbe8f117ec6e975dc634b0"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-GAUSSIAN-SHEAR-NORMAL-FORM-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "80468f0fc69a009fdb62cbd0ee72edcaae7d5a795f4a508f95d81e2a6acc70c1"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ACTUAL-DIRECTION-RANK-ONE-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "d5591d274f9e45640fd47a7250879f1af74cff75cd25df3bb7b415ef8b8a8b8f"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-GENERIC-POINT-HOLONOMIC-DESCENT-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "b5608b248ddab1cd22ffbae665acc2e6442144bface83c069dbbed61d8e74009"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-PRIMARY-THICKENING-ORACLE-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "9bffae07369a2eea1cafe375779d355d09de71ee13113061c9878f7570c1dfb5"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-FULL-MODULE-FINITE-MULTIPLIERS-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "e603027f64b5f8c937fc9a323996fc1f11439fc82166f1c888068f55163474ce"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-B-FUNCTION-LINEAR-CUTOFF-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "e0c3dd5c0d2443b43bf8d15754346f58347f4745029ed094fc65b25af5d974d1"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RESONANCE-CHART-UNIFORMITY-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "3878e9cfd9ead78b2e0218779f0aff0eec37c6a57da24535c173b9c89ca4faf5"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-OPERATOR-GAUSSIAN-LAURENT-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "0de534eeb953e3b2624765d6014b2572949e005d8a81e2a8805cacb304cb539e"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-FINITE-FAMILY-SPECIALIZATION-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "a4f5c0ba772896a48e979a43b3304f753b036b2c4ac6521f5869d5dd89f6ffe0"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-HOLONOMIC-SOURCE-CUTOFF-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "c7a112f2aecd8eaf115a4280ebc4e6eb74908528988080f09d361aa36e57d125"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RANKONE-ARTIN-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "31e611d0d72a608606c997153cabe4af172ea2696928adb8e7925ebc0cc2a416"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-ACTUAL-PERIOD-KERNEL-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "c262b68d88b35f46dc2ea529d55986e6b45859e1da37b2da087d218a21fed52f"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RATIONAL-CORE-BOUNDARY-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "8bca70e2a6990168832301fded926bd6df0b7930d4f42af0cc650af39512ec5b"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-LEADING-DECAY-CONSTANTB-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "dc05138226eacf3597d24576f44e0356e74decab4b82e541e29b65a9a80c6831"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-RATIONAL-PULLBACK-RANK-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "bd4d4f98863176e602ccb51e9a1be7af3c7e214627f40bfdda52beea7eeee963"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-INVERSE-CLOSED-SAFE-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "c15e8e0b98e22524408fd9edd686eece7043d6af8b1acea23003b3e08e59c643"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-QUADRATIC-AFFINE-SAFETY-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "997f7acd3f1fef1d6a10912dd40e73eab42e582b0f1ed0f9abece87d85db5603"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-ORDER-TWO-DRIFT-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "ab067e6299732ce4c8f8c08ff9e733ea21538511e8058f46f6e748498485530b"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-QUADRATIC-PHASE-ALL-ORDERS-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "eac30bdfb7a67c71c6526a52dcaa46d820a89b6e12b1f2f1f1eaec899884f2a5"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GVC-FILTERED-PRINCIPAL-PAIR-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "4a73d8aeb939e28c5486b740bb41fe5123eee99341184bdd41eb1937af3ceaef"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-AMBIENT-COEFFICIENT-RESTRICTION-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "37248235c3806ddd7ee4c3ae81ef812d92f04da8d20b8382356f52617393d1f4"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-GMC-EXACT-SOURCE-POLYNOMIAL-HOM-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "2860816b8836622454330a597e0ab270572fff3b1919eb71c1faad57271b8f7e"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-DERIVED-STRATA-FIELD-UNIFORMITY-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "bc71c1b223f8399506873d098e11ab4a4956d9129d158552df0b2e59f22f2f3c"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-POLYNOMIAL-GAUSSIAN-TRANSFERS-20261115",
+    "addition": false,
+    "fields": [
+      "reviewed_claims"
+    ],
+    "sha256": "b21f19a88514743c83bc6b42228f81d668a2bc9ede00603f9cc8119eabc042df"
+  },
+  {
+    "file": "knowledge/lessons.json",
+    "id": "METHOD-MV-NILPOTENT-SAFE-COMPLETION-20261115",
+    "addition": true,
+    "fields": [
+      "area",
+      "avoid",
+      "boundary",
+      "claims",
+      "id",
+      "implementation",
+      "keywords",
+      "programme_status",
+      "reopen_when",
+      "reviewed_claims",
+      "sources",
+      "title",
+      "use",
+      "when"
+    ],
+    "sha256": "cda53d09eca9747f28eaa55d0e09bd95d2192f803f2d0ea5e277b1e173722a3b"
+  },
+  {
+    "file": "knowledge/work_items.json",
+    "id": "WORK-MOMENT-ALL-DEGREE",
+    "addition": false,
+    "fields": [
+      "claims",
+      "next_step",
+      "reviewed_claims",
+      "sources"
+    ],
+    "sha256": "8ddc4fb7fcc21cfaee5afccba364efa1c46e4ebd6b36829eef4a7ff300d2593e"
+  }
+]

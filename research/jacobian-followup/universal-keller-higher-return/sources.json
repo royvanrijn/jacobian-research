@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T04:48:13.139536+00:00",
+  "purpose": "Retained whole-source formulas, precise field tools and recent primary nilpotent/time-block literature. No independent whole-proof or novelty certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-joint-feedback/PROOF.md",
+      "locator": "UAJOINTKER1 Bertini induction and polynomial saturation; extended to a commuting multi-derivation frame.",
+      "sha256": "fb72132bcad15267cf2fde422afd8dbebc3bdacd834132405ede6bce10648766"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-feedback-rigidity/PROOF.md",
+      "locator": "UAPARALLEL1 partial processing with retained signals.",
+      "sha256": "132ad2cc9384e5ba1e3a9bce4afceebe86d904478c6cc01dcf676fe85ab9919f"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-structure/PROOF.md",
+      "locator": "UAALLATOM1 all-degree profile monodromy and stable atomicity.",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-canonical-filter/PROOF.md",
+      "locator": "UAFILTER1/UACANFIB1 universal marked seed fibres and exact all-rank trace receiver.",
+      "sha256": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-rank-one-feedback/PROOF.md",
+      "locator": "UACUBICFEED1 inverse cubic and auxiliary constant rings; one-generator closedness context.",
+      "sha256": "d8a227b21d9d33c5d2e1db62bce50dfc562a57220a0023f35cb80cd14f5af86c"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-compression/verify.py",
+      "locator": "Pure source_map constructor.",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "archive/non-elliptic/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "locator": "UAM1 inverse polynomial and reconstruction.",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/stacks-0G4C.html",
+      "url": "https://stacks.math.columbia.edu/tag/0G4C",
+      "locator": "Lemma37.32.1 applies to higher-dimensional regular field extensions as well as curves.",
+      "bytes": 26825,
+      "sha256": "1dd6fb21ce82518245664d2cfc33facab7ea8c40754e8b00555864472ac01674"
+    },
+    {
+      "path": "sources/stacks-0G33.html",
+      "url": "https://stacks.math.columbia.edu/tag/0G33",
+      "locator": "Geometric irreducibility and relative algebraic constants.",
+      "bytes": 15112,
+      "sha256": "9ebeb36750c13fdf0e1ec683dccad3184fa71858980dc08b893335e189ca7390"
+    },
+    {
+      "path": "sources/stacks-01V4.html",
+      "url": "https://stacks.math.columbia.edu/tag/01V4",
+      "locator": "Etale/smooth flatness for polynomial saturation.",
+      "bytes": 41298,
+      "sha256": "4327b0dc32a5b7a4fc554e6587f0d622d978e306bba4d2783a8aade3704aa3da"
+    },
+    {
+      "path": "sources/jedrzejewicz-zielinski-2016.html",
+      "url": "https://arxiv.org/html/1601.01508v1",
+      "locator": "Section1, proved one-generator closedness case; used only for codimension-one auxiliary output quotients.",
+      "bytes": 234715,
+      "sha256": "98753d5a41d79dba5f980398bca2736240ded0bf45c05171dc4d53ba2dea3451"
+    },
+    {
+      "path": "sources/wang-yan-nilpotent-2026.html",
+      "url": "https://arxiv.org/html/2609.16580v1",
+      "locator": "Explicit family(1.1) and invariant(1.2) give a directly checked time-block example. The paper full classification is not imported as a theorem here.",
+      "bytes": 564449,
+      "sha256": "f3c2d79d5614a5eb08f8ce7c23a937c7dabbbf37c5634596a3dd9b7c70ca87c8"
+    },
+    {
+      "path": "sources/wang-yan-quartic-2026.html",
+      "url": "https://arxiv.org/html/2610.36495v1",
+      "locator": "Abstract and introduction, total coordinate degree <=4. Distinguish that degree notion from generic covering degree4 of the native profile example.",
+      "bytes": 850946,
+      "sha256": "04dfa22c70f97783543eb1a011d90e4d4b9f4fb8f7af394ef6969c1aa491ca29"
+    }
+  ]
+}

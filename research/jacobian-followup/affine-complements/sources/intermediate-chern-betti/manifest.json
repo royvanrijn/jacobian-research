@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED124",
+  "sources": [
+    {
+      "path": "INTERMEDIATE_CRITICAL_AXIS_DESCENT_AND_AFFINE_CUSP_PROFILES.md",
+      "url": "retained:PF2RULED123",
+      "used": "All intermediate cyclic quotient-axis geometry; binary smoothness, exact two cusp profiles and local fibre ranks",
+      "bytes": 11841,
+      "sha256": "82f1db79cf1b6ccbb686d70a4334f6763aa0084425c54798e4682d59f6f6f921"
+    },
+    {
+      "path": "HEREDITARY_BLOCK_QUOTIENT_MONODROMY_REDUCTION.md",
+      "url": "retained:PF2RULED122",
+      "used": "Actual finite block quotients and all original primes",
+      "bytes": 12384,
+      "sha256": "7a1f416ae6958019e408828d5990477e4348224e38e3d75f6dca9cb7be0d90b3"
+    },
+    {
+      "path": "WHOLE_PLANE_THOM_LATTICE_AND_COMPLETE_PERIPHERAL_OBSTRUCTION.md",
+      "url": "retained:PF2RULED111",
+      "used": "Integral original-resolution Pic/c1 boundary basis and original simple connectedness",
+      "bytes": 17490,
+      "sha256": "006da8c3c8b7bf2c1f264bd43908f450ee6a6ab1b3c78fcbec10fa1946635bad"
+    },
+    {
+      "path": "NORMAL_RESOLUTION_CHERN_GATE_AND_ADE_END_EXCLUSION.md",
+      "url": "retained:PF2RULED109",
+      "used": "Minimal-resolution Stein deformation applies to normal Stein spaces, preserves Chern/contact; complete ADE comparison imports",
+      "bytes": 12565,
+      "sha256": "bdd3b8f32792da69b9e86d28d95fd7d339da294a4fe9ae0d4a0634bbeed9aeaf"
+    },
+    {
+      "path": "PLANAR_CHERN_OBSTRUCTION_AND_CIRCLE_BUNDLE_SOURCE_REDUCTION.md",
+      "url": "retained:PF2RULED110",
+      "used": "OSS integralplanar Chern obstruction/S3, published PVHMrankbound andwrittenp4calculation",
+      "bytes": 12752,
+      "sha256": "634f6dabfee186f1931b4beffc921723c83d8be74fce7c07af0a278a4846feca"
+    },
+    {
+      "path": "sources/normal-resolution-chern/manifest.json",
+      "url": "retained:PF2RULED109",
+      "used": "Prior BOD/Epstein/Gray full-page source audits retained, nofreshPDFaudit",
+      "bytes": 6244,
+      "sha256": "af9eedfed79f6fe9ae03aab1355ca4b5c8a9cddca59fa2d6423ff6c32acd082a"
+    },
+    {
+      "path": "sources/planar-circle-bundle/manifest.json",
+      "url": "retained:PF2RULED110",
+      "used": "Prior publishedPVHM/OSS/Eliashberg exact auditedscopes retained, nofreshPDFaudit",
+      "bytes": 5151,
+      "sha256": "591ff0811f406524e74caf701ea3f3c9de4c7c6272bdfdab667dc35aade50c1b"
+    },
+    {
+      "path": "../hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "url": "retained:HC4MYKN1",
+      "used": "ALREADYprovednontorsionWeilcanonicalclass ALLfiniteintermediates, no new algebraic closure claim",
+      "bytes": 14942,
+      "sha256": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c"
+    },
+    {
+      "path": "../hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md",
+      "url": "retained:HC4MYLA1",
+      "used": "ALREADYpublished cyclicpseudo-plane fullA2charts/freeaction/exactvolume/surjectiveetale source controls; notnewconstruction orfullfiniteintermediate",
+      "bytes": 13791,
+      "sha256": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d"
+    },
+    {
+      "path": "../universal-keller-log-picard/PROOF.md",
+      "url": "retained:UADANVOL1",
+      "used": "ALREADYproved allhigher-powerDanielewski regularprimitives, notnewconstruction",
+      "bytes": 17270,
+      "sha256": "ed4302aacae26a7a7b97259555d80859fa704b2055d5a94009a6887b91a539a6"
+    }
+  ],
+  "prior_algebraic_nontorsion_intermediate_canonical_obstruction_credited": true,
+  "prior_Danielewski_and_pseudo_plane_controls_credited_not_rebuilt": true,
+  "new_independent_filling_or_deformation_classification_claimed": false,
+  "prior_primary_PDF_audits_retained": true,
+  "new_PDF_visual_audit": false,
+  "intermediate_critical_classes_independent_via_original_boundary": true,
+  "p4_rank_uses_b1_Q_zero_not_unproved_simple_connectedness": true,
+  "primitive_critical_curve_marking_in_intermediate_assumed": false,
+  "finite_original_source_and_etale_open_quotient_confused": false,
+  "finite_samples_prove_theorem": false,
+  "formal_verification": false,
+  "external_review": false
+}

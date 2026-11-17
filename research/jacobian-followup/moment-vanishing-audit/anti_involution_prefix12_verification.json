@@ -1,0 +1,78 @@
+{
+  "claim": "SIC2B33CYCLICEXTRA20261116",
+  "status": "PASS",
+  "checker_sha256": "d33f3fe24bfc9e5153eb4806ab012027a2dda7ea20b6fa76b8bdd308648e82de",
+  "hashes": {
+    "anti_involution_prefix.py": "7042f30d8d708e510325d5c27d32045be57f43ed72474f5991b45d170a5656ce",
+    "anti_involution_moments12.json": "c361ffd03eb9a929c94f1333fc4cf1c7390a1807ce2115a0c7f5f58cf673386f",
+    "anti_involution_prefix12_p1073741827_rabinowitsch.ms": "c12837f08fee6a65bbf26c0c32aab480f49f6ae7da2b56e869e2fbca53934837",
+    "anti_involution_prefix12_p1073741827_rabinowitsch.out": "279bdb80a8a0a3ecb915813871fa4a9cbebbda6d537e40e4be8c0cb960449d9a",
+    "anti_involution_prefix12_p1073741827_rabinowitsch.log": "535e07132fdfc80a1463866d4533eca630c8a43126005a6a903dd859de142878",
+    "anti_involution_prefix12_p1073741827_rabinowitsch_run.json": "5e73fdf4deccb89dfb22e1ece623406457474f9df8e0ca3ec2358d5762f07e88"
+  },
+  "prime": 1073741827,
+  "variables": 7,
+  "equations": 7,
+  "software": {
+    "sympy": "1.14.0",
+    "numpy": "1.26.4",
+    "primary_msolve_package": "Ubuntu msolve0.6.5-1build2"
+  },
+  "cyclic_inverse_equation": "inv*(bz-bw)*(bz+bw)-1",
+  "msolve_leading_basis_elements": 2334,
+  "pure_leading_power_bounds": {
+    "inv": 1,
+    "az": 13,
+    "aw": 13,
+    "ez": 13,
+    "ew": 13,
+    "bz": 13,
+    "bw": 14
+  },
+  "modular_dimension": 0,
+  "modular_length": 9168,
+  "moment_circuit_controls": [
+    {
+      "parameters": [
+        1,
+        2,
+        3,
+        4,
+        1,
+        0
+      ],
+      "moments1to12": "all agree"
+    },
+    {
+      "parameters": [
+        2,
+        -1,
+        -2,
+        1,
+        0,
+        -1
+      ],
+      "moments1to12": "all agree"
+    }
+  ],
+  "odd_moments": "identically zero by a determinant-one half-turn",
+  "square_lifting_argument": "At any special closed point the seven equations followed by the uniformizer form a system of parameters in an eight-dimensional regular local ring. Hence they are a regular sequence; the uniformizer is a nonzerodivisor and the characteristic-zero fibre is nonempty. No smoothness or unramified lift is asserted.",
+  "characteristic_zero_chart_s0": 2,
+  "normalized_A12_consequence": "s0^10 is NOT in I12; length66 is false.",
+  "A12_vector_space_dimension_lower_bound": 69,
+  "A12_global_finiteness": "UNCOMPUTED",
+  "A12_exact_length": "UNCOMPUTED",
+  "later_failure": "mu14 is nonzero at every chart first12 solution by the inherited anti-Weyl theorem SIC2B33AW14. Its historical moment14 artifact is not reconstructed or replayed here.",
+  "bounded_same_CAS_replay": {
+    "same_leading_output": true,
+    "seconds": 42.994933139008936,
+    "linear_algebra": "deterministic exact sparse (-l2)",
+    "scope": "Same-CAS replay, not independent Buchberger verification."
+  },
+  "trusted_computation": "msolve exact finite-field Groebner/saturation algorithms; small explicit seven-equation presentation, retained primary leading ideal and bounded replay. No independent Buchberger or formal certificate.",
+  "sources": [
+    "https://stacks.math.columbia.edu/tag/02JN",
+    "https://stacks.math.columbia.edu/tag/00R4"
+  ],
+  "boundary": "Certifies existence of additional first12-moment candidates on D nonzero. Supplies neither explicit coordinates nor a nonsingular modular point, another all-order pure phase, an exact global length or the full (3,3) Image theorem."
+}

@@ -1,0 +1,275 @@
+{
+  "claims": [
+    "KMFI87",
+    "KMFI88",
+    "KMFI89"
+  ],
+  "universal_boundary_theorem": {
+    "class_group": "free on all omitted prime divisors",
+    "canonical_vector": "one coefficient e-1 per boundary prime",
+    "degree_greater_than1_forces_nontorsion_canonical_class": true,
+    "normal_torsion_canonical_model_excluded_with_fixed_target": true,
+    "normal_global_affine_complete_intersection_excluded": true,
+    "normal_global_monogenic_integral_closure_excluded": true,
+    "arbitrary_birational_target_recharts_excluded": false,
+    "smooth_normalization_excluded": false,
+    "locally_complete_intersection_normalization_excluded": false,
+    "all_omitted_primes_assumed_ramified": false
+  },
+  "cubic_positive_control": {
+    "coordinates": [
+      "-2*x**3*y**3*z + 3*x**2*y**4 - 6*x**2*y**2*z + 7*x*y**3 - 6*x*y*z + 4*y**2 - 2*z",
+      "-3*x**3*y**2*z + 9*x**2*y**3/2 - 6*x**2*y*z + 6*x*y**2 - 3*x*z + y/2",
+      "x*(x**2*z - 3*x*y/2 + 1)"
+    ],
+    "raw_monic_model_normal": false,
+    "normalizing_relations": [
+      "-C*H + W**2 - W",
+      "-A*C + B*W + H*W",
+      "-A*W + A + B*H + H**2"
+    ],
+    "finite_free_basis": [
+      "1",
+      "W",
+      "H"
+    ],
+    "normalization_smooth": true,
+    "class_group": "Z",
+    "canonical_class": "primitive generator",
+    "normalization_global_affine_complete_intersection": false,
+    "actual_source_complement_of_boundary": "ordinary affine3",
+    "finite_projection_discriminant": "-27*A**2*C**2 + 18*A*B*C - 4*A - 4*B**3*C + B**2",
+    "boundary": "irreducible affine plane, ramification index2",
+    "new_occurrence_family_claimed": false
+  },
+  "exceptional_PSL11_boundary_rows": [
+    {
+      "action": 0,
+      "inertia": 2,
+      "decomposition_order": 2,
+      "mandatory_primes": 4,
+      "canonical_coefficients": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_degrees": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "action": 1,
+      "inertia": 2,
+      "decomposition_order": 2,
+      "mandatory_primes": 4,
+      "canonical_coefficients": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_degrees": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "action": 0,
+      "inertia": 2,
+      "decomposition_order": 12,
+      "mandatory_primes": 2,
+      "canonical_coefficients": [
+        1,
+        1
+      ],
+      "residue_degrees": [
+        1,
+        3
+      ]
+    },
+    {
+      "action": 1,
+      "inertia": 2,
+      "decomposition_order": 12,
+      "mandatory_primes": 2,
+      "canonical_coefficients": [
+        1,
+        1
+      ],
+      "residue_degrees": [
+        1,
+        3
+      ]
+    },
+    {
+      "action": 0,
+      "inertia": 2,
+      "decomposition_order": 4,
+      "mandatory_primes": 3,
+      "canonical_coefficients": [
+        1,
+        1,
+        1
+      ],
+      "residue_degrees": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "action": 1,
+      "inertia": 2,
+      "decomposition_order": 4,
+      "mandatory_primes": 3,
+      "canonical_coefficients": [
+        1,
+        1,
+        1
+      ],
+      "residue_degrees": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "action": 0,
+      "inertia": 2,
+      "decomposition_order": 6,
+      "mandatory_primes": 2,
+      "canonical_coefficients": [
+        1,
+        1
+      ],
+      "residue_degrees": [
+        1,
+        3
+      ]
+    },
+    {
+      "action": 1,
+      "inertia": 2,
+      "decomposition_order": 6,
+      "mandatory_primes": 2,
+      "canonical_coefficients": [
+        1,
+        1
+      ],
+      "residue_degrees": [
+        1,
+        3
+      ]
+    },
+    {
+      "action": 0,
+      "inertia": 3,
+      "decomposition_order": 3,
+      "mandatory_primes": 3,
+      "canonical_coefficients": [
+        2,
+        2,
+        2
+      ],
+      "residue_degrees": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "action": 1,
+      "inertia": 3,
+      "decomposition_order": 3,
+      "mandatory_primes": 3,
+      "canonical_coefficients": [
+        2,
+        2,
+        2
+      ],
+      "residue_degrees": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "action": 0,
+      "inertia": 3,
+      "decomposition_order": 6,
+      "mandatory_primes": 2,
+      "canonical_coefficients": [
+        2,
+        2
+      ],
+      "residue_degrees": [
+        1,
+        2
+      ]
+    },
+    {
+      "action": 1,
+      "inertia": 3,
+      "decomposition_order": 6,
+      "mandatory_primes": 2,
+      "canonical_coefficients": [
+        2,
+        2
+      ],
+      "residue_degrees": [
+        1,
+        2
+      ]
+    },
+    {
+      "action": 0,
+      "inertia": 5,
+      "decomposition_order": 5,
+      "mandatory_primes": 2,
+      "canonical_coefficients": [
+        4,
+        4
+      ],
+      "residue_degrees": [
+        1,
+        1
+      ]
+    },
+    {
+      "action": 1,
+      "inertia": 5,
+      "decomposition_order": 5,
+      "mandatory_primes": 2,
+      "canonical_coefficients": [
+        4,
+        4
+      ],
+      "residue_degrees": [
+        1,
+        1
+      ]
+    }
+  ],
+  "exceptional_PSL11_absolute_class_rank_lower_bound": 2,
+  "independent_curve_PSL11_only_nontrivial_rows": [
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "independent_curve_PSL11_class_rank_lower_bound": "4*a+3*b>=3; a+b>0",
+  "canonical_divisibility": "1 if inertia2 present; else2 if inertia3 present; else4",
+  "canonical_divisibility_is_Cartier_index": false,
+  "exceptional_degree11_absolute_occurrence_decided": false,
+  "full_action_classification_complete": false
+}

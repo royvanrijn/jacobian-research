@@ -1,0 +1,232 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Z}{\mathbb Z}
+\title{All factorial exponents from an elementary large-exponent cutoff}
+\author{User-supplied coefficient argument checked and integrated; retained prime-power proof credited}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+Put $F_{n,m}(T)=\sum_{j=0}^n\binom nj(mj)!T^j$, with positive integer
+$n,m$ and ordinary Gamma shape one. This note proves an explicit
+large-exponent criterion and transfers the registered simultaneous bounds
+to \emph{all} positive exponents. The existing all-index prime-power proof
+is retained, with $m=1$ made explicit; it is not claimed as a new contribution.
+
+\section{A coefficient estimate excluding every repeated root}
+\begin{lemma}\label{lem:factorial}
+For integers $1\le u\le v$,
+\[
+ \frac{u!}{(v!)^{u/v}}\le\left(\frac uv\right)^{u/2}. \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+The sequence $a_k=(k!)^{1/k}/\sqrt k$ is nondecreasing.
+Indeed AM--GM gives $k!\le((k+1)/2)^k$, while
+$(1+1/k)^{k+1}\le4$: the function
+$(x+1)\log(1+1/x)$ decreases for $x>0$, since its derivative is
+$\log(1+1/x)-1/x<0$, and at $x=1$ its exponential is four.
+Together these imply
+\[
+ (k!)^2(k+1)^{k(k-1)}\le k^{k(k+1)},
+\]
+which, after taking the appropriate positive powers, is exactly
+$a_k\le a_{k+1}$. Comparing $a_u$ and $a_v$ proves (1).
+\end{proof}
+
+For $1\le j<n$ we also have
+\[
+ j\log(n/j)\ge(\log2)\min(j,n-j). \tag{2}
+\]
+For $j\le n/2$ this follows from $n/j\ge2$.
+Otherwise use concavity of $-x\log x$ above its chord between
+$x=1/2$ and $x=1$, then multiply by $n$.
+
+\begin{lemma}[Two weighted coefficient masses]\label{lem:masses}
+For $P(z)=1+z^n+\sum_{j=1}^{n-1}b_jz^j$, put
+\[
+ A=\sum_{j=1}^{n-1}\frac jn|b_j|,\qquad
+ B=\sum_{j=1}^{n-1}\left(1-\frac jn\right)|b_j|.
+\]
+If $A<1$ and $B<1$, $P$ has no repeated complex root.
+\end{lemma}
+\begin{proof}
+If $P(\alpha)=P'(\alpha)=0$ and $|\alpha|\le1$, subtracting
+$(\alpha/n)P'(\alpha)$ from $P(\alpha)$ yields $1\le B$, a contradiction.
+If $|\alpha|\ge1$, divide $(\alpha/n)P'(\alpha)=0$ by $\alpha^n$.
+The intermediate powers have modulus at most one, giving $1\le A$.
+The constant term already excludes $\alpha=0$.
+\end{proof}
+
+\begin{theorem}\label{thm:large}
+For every pair of positive integers $n,m$,
+\[
+ \boxed{2^m\ge4n^2\quad\Longrightarrow\quad F_{n,m}\text{ is squarefree}.}
+\]
+The conclusion holds over $\C$, and hence over $\Q$.
+\end{theorem}
+\begin{proof}
+Set $r=((mn)!)^{-1/n}>0$ and normalize
+\[
+ P(z)=F_{n,m}(rz)=1+z^n+\sum_{j=1}^{n-1}b_jz^j.
+\]
+By (1) at $u=mj,v=mn$ and then (2), with $q=2^{-m/2}$,
+\[
+ 0<b_j\le\binom nj(j/n)^{mj/2}
+ \le c_j:=\binom nj q^{\min(j,n-j)},\qquad c_j=c_{n-j}.
+\]
+Symmetry gives $A,B\le\frac12\sum_{j=1}^{n-1}c_j$.
+Since $q^{\min(j,n-j)}\le q^j+q^{n-j}$,
+\[
+ A,B\le\frac12\sum_{j=1}^{n-1}c_j\le(1+q)^n-1.
+\]
+Under the displayed criterion, $q\le1/(2n)$, so
+\[
+ A,B\le\left(1+\frac1{2n}\right)^n-1
+ <e^{1/2}-1<1.
+\]
+The final inequality follows already from $e<4$.
+Lemma~\ref{lem:masses} excludes all repeated roots, and the nonzero scaling
+preserves their multiplicities. If $n=1$, the sums are empty and the
+polynomial is directly linear. Equality in $2^m\ge4n^2$ is allowed.
+\end{proof}
+
+\section{The retained prime-power theorem and the exponent one}
+The independent pointwise result already follows from
+\href{PRIME_POWER_TWO_TERM_SFC.tex}{the registered unit-deformation proof}:
+for every $n\ge1$, $F_{n,m}$ is squarefree whenever $m=1$ or $m=p^r$.
+Here is its precise match to the proposed formulas.
+For $r\ge0$, set $m=p^r$ and $c=(p^r-1)/(p-1)$; $r=0$ means $m=1,c=0$.
+After $T=t/p^c$, the coefficient is
+\[
+ \binom nk\frac{(p^rk)!}{p^{ck}}
+ =\frac{n!}{(n-k)!}W_k,\qquad
+ W_k=\frac{(p^rk)!}{p^{ck}k!}\in\Z_p^\times,
+ \quad W_k\equiv(-1)^{ck}\pmod p.
+\]
+The unit congruence and digit hull are credited to the pinned
+\href{sources/rocks-2015-author-preprint.pdf}{Rocks 2015 author manuscript},
+Lemma~3.8 and Proposition~3.22, and rederived in the retained proof.
+The new note uses that source as an author manuscript, not an unavailable
+final journal version or a priority assertion.
+
+For $n=\sum_s d_sp^s$, a nonzero digit $a=d_s$ gives $K=\sum_{\ell<s}d_\ell p^\ell$,
+$e=p^s$ and $h=(e-1)/(p-1)$.
+Its normalized edge residual, with constant coefficient one, is exactly
+\[
+ R_s(Y)=\sum_{j=0}^a\frac{a!}{(a-j)!}(\sigma_sY)^j,
+ \qquad\sigma_s=(-1)^{h+ce}. \tag{3}
+\]
+This is the existing formula $\epsilon_s=(-1)^h\gamma^e$ with
+$\gamma=(-1)^c$. Wilson's factorial-unit identity
+$U_p(N!)\equiv(-1)^{v_p(N!)}\prod_\ell N_\ell!$ gives the coefficient ratios.
+For $a<p$, the truncated exponential $E_a(Z)=\sum_{j=0}^aZ^j/j!$
+satisfies $E_a'=E_{a-1}$ and $E_a-E_a'=Z^a/a!$.
+A common root would be zero, but $E_a(0)=1$.
+Thus (3), the reversed and rescaled $a!Y^aE_a(1/Y)$, is squarefree.
+The retained weighted-initial multiplication lemma excludes every
+nonconstant square factor over $\Q_p$.
+This tests the residual in $Y$, before substituting a power $Y=Z^e$;
+it assumes no separability of that substitution in characteristic $p$.
+For $m=1$, take any prime, for example $p=2$, and $W_k=1$.
+The same deformation theorem therefore makes the exponent-one case explicit.
+
+\begin{corollary}\label{cor:candidates}
+Every hypothetical nonsquarefree pair satisfies
+\[
+ \boxed{m<2\log_2(2n),\qquad m\text{ has at least two distinct prime divisors}.}
+\]
+For fixed $n$, these are a finite list of necessary candidate exponents,
+not assertions that any candidate actually fails squarefreeness.
+Other registered index certificates may already eliminate individual
+entries in this necessary list; this filter does not reopen those results.
+\end{corollary}
+\begin{proof}
+Negate Theorem~\ref{thm:large} and exclude $m=1$ and all prime powers.
+The remaining positive integers are precisely those with at least two
+distinct prime divisors.
+\end{proof}
+This leaves the original exponent six in the possible range for $n>4$,
+so the all-index Strong Factorial problem is not closed.
+
+\section{One exceptional set for every positive exponent}
+Let $D(X)$ be the registered count of indices admitting a nonsquarefree
+$F_{n,m}$ for some $1\le m\le n^{1/16}$, and define
+\[
+ D_{\rm all}(X)=\#\{1\le n\le X:\exists m\ge1,\ F_{n,m}\text{ not squarefree}\}.
+\]
+\begin{lemma}\label{lem:overlap}
+For all real $n\ge2^{144}$,
+\[
+ 2\log_2(2n)\le n^{1/16}.
+\]
+\end{lemma}
+\begin{proof}
+Write $u=n^{1/16}\ge512$. The difference is
+$g(u)=u-32\log_2u-2$, with $g(512)=222>0$.
+Using $\log2>1/2$ gives
+$g'(u)=1-32/(u\log2)>1-64/u\ge7/8>0$.
+This is an exact endpoint and derivative certificate, not a rounded
+logarithm computation.
+\end{proof}
+
+\begin{theorem}\label{thm:all}
+The unrestricted and capped exceptional sets agree at every integer
+$n\ge2^{144}$; in particular
+\[
+ D(X)\le D_{\rm all}(X)\le D(X)+2^{144}. \tag{4}
+\]
+Consequently, with absolute implied constants,
+\[
+ D_{\rm all}(X)\ll\frac{X}{(\log X)^{1/50}}
+\]
+using the registered published-2016 route, and
+\[
+ D_{\rm all}(X)\ll X^{1-10^{-18}}
+\]
+using additionally the registered source-qualified dense MR II route.
+For the latter route,
+\[
+ \sum_{\substack{n\ge1\\\exists m\ge1:\ F_{n,m}\text{ not squarefree}}}\frac1n<\infty.
+\]
+\end{theorem}
+\begin{proof}
+The capped bad set is always contained in the unrestricted one.
+At $n\ge2^{144}$, Corollary~\ref{cor:candidates} and Lemma~\ref{lem:overlap}
+place \emph{every} possible bad exponent below $n^{1/16}$.
+Thus the sets agree there; their finite initial difference proves (4).
+Transfer both estimates from
+\href{SIMULTANEOUS_EXPONENTS_AND_POWER_SAVING.tex}{the simultaneous theorem}.
+The fixed additive constant is absorbed asymptotically, and its finite
+initial reciprocal contribution does not affect convergence; partial
+summation of the power bound supplies the tail.
+\end{proof}
+The number $2^{144}$ is only an explicit overlap threshold. It is not an
+extracted analytic starting threshold, a numerical implied constant, or
+a pointwise verification of every smaller index.
+The published logarithmic route remains independent of MR II; it alone
+does not supply harmonic convergence. The power and harmonic conclusions
+retain the dense MR II preprint Theorem~9.2(ii) input, its published
+sparse-sieve warning, exclusion of Section~10/Lemma~10.3, and the scoped
+application/dependency audit rather than full-preprint validation.
+No all-index SFC, finiteness of the exceptional set, other Gamma-shape
+extension, novelty, independent replay, formal verification or external
+review is claimed.
+
+\section{Exact executable boundary}
+\href{all_exponent_squarefree.py}{Certificates} test $2^m\ge4n^2$ using
+integer bit lengths, so enormous input $m$ does not require constructing
+$2^m$. Candidate exponents are filtered only below this logarithmic cutoff.
+The prime-power wrapper reuses the retained digit residual theorem and
+admits $m=1$ via $r=0$. Its explicit polynomial replay is a separate finite
+operation. \href{verify_all_exponent_squarefree.py}{Controls} use exact
+integer powers and rational bounds, not numerical approximation of the
+normalized algebraic coefficients or a density extrapolation.
+\end{document}

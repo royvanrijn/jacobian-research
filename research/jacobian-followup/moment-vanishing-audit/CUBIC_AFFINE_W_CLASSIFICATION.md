@@ -205,7 +205,10 @@ safe quartics is m>3 deg Q. The one-sided branch has m>deg Q. The
 seventeen-moment gate certifies pure vanishing on this entire quartic
 architecture; the three-way classification then decides GMC safety.
 
-The omitted cubic monomials are W^2,W^3,W^2Z,W^2T,WT,WZT,WT^2,T^3.
-No theorem here eliminates those terms by a change of frame. The global
-OP-GMC3-CUBIC remains open; its next gate is a chart genuinely beyond (1),
-including possible W-dependent quadratic coupling or a cubic T term.
+The height-two architecture here omits W^2,W^3,W^2Z,W^2T,WT,WZT,WT^2,T^3.
+The [subsequent formal Airy--Riccati theorem](CUBIC_HEIGHT_AIRY_OBSTRUCTION.md)
+now closes the additional T^3 coefficient in the thirteen-coefficient cubic
+family, with a sufficient 35-moment gate. The remaining seven monomials all
+involve higher W powers or W/T coupling. No frame-removal theorem is supplied,
+so the global OP-GMC3-CUBIC remains open. Use the smaller twelve-moment gate
+in this note when the T^3 coefficient is already zero.

@@ -1,0 +1,116 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKU0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKN0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKN1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKW1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md"
+    },
+    {
+      "claim": "HC4MYLY0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/TRACE_LINKING_HALF_RAMIFICATION_AND_CUBIC_MULTIPLICATION.md"
+    },
+    {
+      "claim": "HC4MYLZ0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md"
+    },
+    {
+      "claim": "HC4MYLZ1",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "jacobian-followup/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "jacobian-followup/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "jacobian-followup/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "jacobian-followup/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md": "1c303ba4aeb13523d39c92169f081676ead1673a6a49dc961132e96927081909",
+    "jacobian-followup/hc4-triangular-graphs/verify_source_line_conductor.py": "2df718f5a99cbc19ec11f614a7cfdee85d8b23522f5f33b241623df56b7a31fe",
+    "jacobian-followup/hc4-triangular-graphs/TRACE_LINKING_HALF_RAMIFICATION_AND_CUBIC_MULTIPLICATION.md": "2780fdec15aba73db8f0642f84124ec8fcd4208d72f96ec1c35e8b581998ab7e",
+    "jacobian-followup/hc4-triangular-graphs/verify_trace_linking_half_lattice.py": "75023b34981266f8871f7b30fca611c5430bbc5b513ddfaedca59465507e4353",
+    "jacobian-followup/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md": "c339859fd1700f3ee29531d9d1f03740fd67c7818420e83e0e62f7a36479d343",
+    "jacobian-followup/hc4-triangular-graphs/verify_even_moment_lattices.py": "7084770f944d29e155739b58045103ff936d4128a9c58b003a7416dd4530b2f2",
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian-followup/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "jacobian-followup/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "retained_KU_diagonal_idempotent_credited": true,
+    "global_residual_cover_decomposition_proved": true,
+    "full_trace_quotient_preserved_in_residual_factor": true,
+    "different_diagonal_projection_distinguished_from_full_base_change": true,
+    "discriminant_ideal_exactly_residual_after_source_base_change": true,
+    "actual_nonunit_discriminant_persists_without_surjectivity_assumption": true,
+    "all_index_connected_surjective_constant_Jacobian_open_controls": true,
+    "retained_sheet_over_every_target_point_in_controls": true,
+    "residual_length_e_fiber_at_retained_point_proved": true,
+    "different_pullback_shortcut_retired": true,
+    "external_review_deferred": true,
+    "actual_residual_cover_proved_etale": false,
+    "residual_cover_assumed_connected_or_polynomial_plane": false,
+    "Kahler_and_Dedekind_differents_identified_on_arbitrary_singular_normalization": false,
+    "discriminant_polynomials_identified_without_unit_factors": false,
+    "actual_Keller_surjectivity_or_faithful_flatness_assumed": false,
+    "new_control_is_whole_plane_polynomial_Keller": false,
+    "trace_frame_one_form_assumed_to_descend_to_target": false,
+    "full_finite_codifferent_pairing_proved_regular": false,
+    "new_external_theorem_imported": false,
+    "Miyanishi_odd_plane_theorem_adopted": false,
+    "registered_mathematical_checker_replayed": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "external_imports": [],
+  "new_primary_caches": [],
+  "literature_context_only": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/024T",
+      "inspection": "Full short proposition and proof read. Classical clopen section fact; explicit projective idempotent already retained KU0 supplies decomposition. No new theorem import."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BVH",
+      "inspection": "Full trace-discriminant section and proof read,including base change and product trace pairing. Direct local-matrix derivation written; no new theorem import."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BW0",
+      "inspection": "Full Dedekind different definition and dual identification proofs read. Retained KU/LY duality supplies input; no new theorem import."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BWB",
+      "inspection": "Full formula section read to audit the local-complete-intersection restriction. No equality of all differents on arbitrary singular surfaces imported."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BVX",
+      "inspection": "Full Kahler-different base-change lemma and short proof read; presentation/Fitting derivation written directly, no new theorem import."
+    }
+  ],
+  "proof_boundary": "Classical KU projective diagonal splitting credited. New audit tracks full trace quotient,different and discriminant in residual factor,retiring the diagonal-unit-to-full-discriminant shortcut. All-index connected surjective open-source constant-Jacobian controls retain sheets at every target point but have source units/denominator and are not whole-plane Keller. Universal proofs written,not certified by finite controls; no registered checker replay."
+}

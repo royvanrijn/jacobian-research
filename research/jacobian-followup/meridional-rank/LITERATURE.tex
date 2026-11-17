@@ -1,0 +1,1417 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,longtable,array}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\F}{\mathbb F}
+\title{Meridional rank conjecture literature and construction gates}
+\author{Primary source research map}
+\date{Evidence checked through 17 November 2026}
+\begin{document}
+\maketitle
+
+The classical meridional rank conjecture remains open. It asks whether
+$\mr(K)=b(K)$ for every knot $K\subset S^3$; the usual link formulation asks
+the same equality for links. The 2026 problem list retains it as Problem
+1.18 \cite{k3}. No general proof or classical counterexample was found in
+this search. The catalogue \texttt{sources.json} records 46 sources,
+their precise claimed scope and audit depth. This is a broad map of the
+main results and recent developments, with outstanding source audits
+retained rather than an assertion of exhaustive bibliographic coverage.
+
+The graph manifold models now certify $\mr=b=4$ for all sixteen original
+targets, whose complete list is in the final-five proof.
+Together with the four earlier
+seed cases, twenty of the retained293 names have equalities proved in
+this programme. All sixteen original targets now have established
+membership in the existing Boileau--Jang--Weidmann graph-cover MRC family,
+using closed-manifold rigidity to identify their actual covers.
+They are not cases outside known MRC families. Priority of the explicit
+named bridge/rank calculations remains unestablished.
+Earlier sixteen-open checkpoints below are historical; the final section
+supersedes them at this exact scope. Full MRC remains open.
+
+\section{What must be proved and how existing methods do it}
+
+For any knot, a bridge presentation gives
+\[
+ \operatorname{rank}\pi_1(S^3\setminus K)\le\mr(K)\le b(K).
+\]
+The difficult direction is a meridian-sensitive lower bound as large as
+a geometric bridge upper bound. Ordinary rank is insufficient: nontrivial
+torus knot groups have rank two while their bridge numbers are unbounded.
+Normal generation by one meridian is also different from generation by
+one meridian.
+
+If $G_K\twoheadrightarrow Q$ maps meridians into a distinguished conjugacy
+class, every meridional generating set induces a generating set in that
+class. Coxeter reflections, symmetric-group transpositions and affine
+transvections exploit this restriction. Knot contact homology instead
+supplies augmentation-rank bounds. A finite quotient need not preserve the
+preferred longitude unless the particular application requires it; the
+meridian conjugacy data are essential in all of these lower bounds.
+
+The geometric upper bound can be exhibited by a bridge diagram or by a
+diagram with a specified Wirtinger seed set and a valid propagation
+sequence. Blair--Kjuchukova--Velazquez--Villanueva prove that minimum
+diagram Wirtinger number equals bridge number \cite{wirt}. This does not
+identify arbitrary meridional generators with diagram seeds.
+
+\section{Established families and their actual scope}
+
+\begin{enumerate}
+\item \textbf{Low ranks.} Boileau--Zimmermann show that meridional rank two
+characterizes two-bridge links. Rank one characterizes the unknot in the
+knot case. Thus all knots of bridge number at most three satisfy MRC:
+if a three-bridge knot had meridional rank at most two, it would have
+bridge number at most two. The reverse implication
+$\mr(K)=3\Rightarrow b(K)=3$ for an arbitrary knot is a different,
+unsettled assertion. The low-rank statements are restated in the primary
+introduction of \cite{bjw}.
+
+\item \textbf{Torus and Montesinos results.} Rost--Zieschang prove
+$\mr(T(p,q))=b(T(p,q))=\min(|p|,|q|)$ for torus links \cite{rz}.
+Boileau--Zieschang prove the Montesinos results. Lustig--Moriah's
+generalized Montesinos theorem applies when the gcd $\alpha$ of the
+constituent two-bridge numerators differs from one: for their $2n$-plat,
+ordinary group rank, exterior Heegaard genus and bridge number all
+equal $n$, hence so does meridional rank \cite{moriah}.
+This numerical scope is extracted from the coauthor's survey; the
+original paper's full proof and geometric definition remain unaudited.
+Pretzels with at least three parameters all of absolute value
+at least two are explicitly recovered by the cycle-quotient construction
+in \cite{bbk}. Burde's 1988 dihedral-cover paper is retained as a historical
+source in the catalogue; its introduction alone is not used as a broader
+MRC theorem.
+
+\item \textbf{Graph manifolds and controlled satellite operations.}
+Boileau--Dutra--Jang--Weidmann prove MRC for the class built from
+meridionally tame knots by connected sums and braid-pattern satellites;
+all knots with graph-manifold exteriors are included \cite{bdjw}.
+This does not make arbitrary satellite patterns or arbitrary connected
+sums of arbitrary MRC knots automatically admissible.
+
+\item \textbf{Double branched covers and prime satellites.}
+Boileau--Jang--Weidmann show that a link with meridional rank three and
+graph-manifold double branched cover has bridge number three. A
+four-bridge link in that cover class has meridional rank four.
+For a prime knot with nontrivial JSJ decomposition they prove
+$\mr\ge4$ \cite{bjw}. The prime and nontrivial-JSJ hypotheses avoid an
+incorrect blanket claim for composites.
+
+\item \textbf{Augmentations.} Cornwell develops representation and
+augmentation lower bounds, with applications to torus knots and a
+three-bridge pretzel family \cite{cornwell}. Cornwell--Hemminger prove a
+multiplication theorem for specified braid-pattern satellites and obtain
+large iterated torus-knot classes \cite{ch}. The pattern and maximal-rank
+hypotheses are material; this is not a theorem for all satellites.
+
+\item \textbf{Coxeter, twisted and arborescent links.}
+Baader--Blair--Kjuchukova prove MRC for twisted links and for links from
+their even-weight bipartite trees \cite{bbk}. Their use of ``bipartite''
+requires all branching vertices to have the same colour, not merely
+the ordinary fact that every tree is bipartite.
+Baader--Blair--Kjuchukova--Misev prove $\mr=b=m(T)$ for a weighted plane
+tree $T$ obtained from a subtree $T_0$ by adding at least three twigs
+at every vertex of $T_0$, provided every weight is outside
+$\{0,1,-1\}$. A twig is a straight branch from a leaf to a branch
+point. Their $m(T)$ equals $f(T)+2$, where $f(T)$ is the minimum
+number of edges whose deletion leaves a forest of maximum valence two
+\cite[Theorems 1 and 2]{twigs}. The three-twig condition is material.
+Neither result states MRC for every arborescent link.
+Baader--Kjuchukova's symmetric quotients also prove MRC for an
+unknotting-number-one family of unbounded bridge number \cite{bk}.
+
+\item \textbf{Finite computations.} Blair--Kjuchukova--Morrison find
+explicit maximal-rank Coxeter quotients for 595,515 of 1,701,936 knots
+through 16 crossings \cite{bkm}. This is not a complete verification
+through 16 crossings, nor a count of everything known by other methods.
+Their finite quotient limitations are relevant to the proposed searches.
+\end{enumerate}
+
+Lustig--Moriah's broader \emph{plat} criterion can be applied without
+assuming an unspecified family label. For a $2n$-plat braid $B$, let
+$\widehat\rho(B)$ be its unreduced Burau matrix evaluated at $t=-1$.
+Let $L$ have row $i$ equal to $e_{2i-1}^{\mathsf T}-e_{2i}^{\mathsf T}$,
+and let column $i$ of $M$ be $e_{2i-1}+e_{2i}$. If the gcd of all
+entries of $L\widehat\rho(B)M$ differs from one, then ordinary group
+rank, exterior genus and bridge number equal $n$ \cite[Theorem 4.20]{moriah}.
+The extra condition on a determinant $\beta$ concerns inequivalent
+tunnel systems, and is not required for this equality. Applying this
+test to a new candidate still requires its explicit plat and the
+source's conventions; no claim is made for the gcd-one case.
+
+\section{Recent work that changes the research map}
+
+\textbf{Fishnets and stabilization, published 2026.}
+Blair--Kjuchukova--Pfaff give fishnet families satisfying MRC with
+unbounded bridge number and arbitrarily high distance relative to bridge
+number. They also show that, for a $b$-bridge position with $b>1$, a
+suitable unknot $U$ can be added so that
+$b(L\cup U)=\mr(L\cup U)=\operatorname{rank}G_{L\cup U}=2b-1$
+\cite{fishnet}. The added link's equality does not imply equality for the
+original sublink. Their separate plain-sphere presentation invariant equals
+bridge number, but retains a restriction on permitted relations \cite{plain}.
+
+\textbf{Whitehead doubles, November 2026 preprint.}
+Gao--Gu--Li--Wang claim that for every nontrivial two-bridge knot and every
+$N\ge0$, its $N$-fold untwisted Whitehead double has
+$\operatorname{ar}=\mr=b=2^{N+1}$. They use microlocal sheaves and iterable
+peripheral curves. They also give a square-knot double with augmentation
+rank at most five but $\mr=b=6$. Their introduction identifies a specific
+gap in Dutra's earlier Whitehead-double preprint; it does not disprove
+its conclusion. The new 44-page proof has not been independently audited
+here \cite{whitehead}. Thus Dutra's broader claimed theorem remains
+separately flagged, rather than silently counted as established.
+The original v1 pages seven and twelve are now directly checked:
+$\alpha(y_1y_2)=\omega(y_1y_2)=x_2x_1^{-1}x_2^{-1}x_1$ is a
+nontrivial freely reduced word in both subgroups, contradicting
+Lemma 3.1 at conjugator one. Lemma 3.8(2) explicitly invokes it.
+No proved record in this programme depends on the 2022 theorem;
+the earlier published graph-manifold result is a distinct source.
+
+\textbf{Transvection computations, October 2026 deposit.}
+Bhattacharjee's unrefereed release claims that 243 of 536 bridge-uncertain
+13-crossing prime knots have $b=\mr=4$, using symplectic transvections in
+characteristic three or five, or orthogonal reflections. The deposit
+leaves 293 in that study and includes verifiers \cite{deposit}. All 243
+algebraic and four-seed certificates now pass a separate standard-library
+replay, retained in \texttt{current13\_certificate\_verification.json}.
+All 243 named diagrams also match the independently packaged HT census
+by exact planar-map bijections. The author's PD data agree literally
+with KnotInfo snapshots 2026.10.5 and 2026.11.2. Both snapshots still list
+the same 536 cases as $[3,4]$; this table state does not negate the
+certificate proofs. The full paper and publication priority remain
+unaudited; the release is unrefereed.
+The odd-characteristic linear method
+does not satisfy our binary affine transitivity hypotheses automatically.
+
+\section{What the affine argument now supplies}
+
+The companion \texttt{PROOF.tex} supplies three direct bridges:
+\begin{enumerate}
+\item The original $k+1$ lower bound extends to every \emph{nonzero}
+common alternating form, including degenerate forms. This permits both
+parities of bridge number.
+\item Explicit representations of
+$P(2m,3(2h_1+1),\ldots,3(2h_{r-1}+1))$ onto
+$W(D_r)=\F_2^{r-1}\rtimes S_r$ act transitively on $2^{r-1}$ sheets.
+The standard bridge diagram proves the matching upper bound $r$.
+For odd $r$ these meet the original affine-symplectic hypotheses exactly.
+These are already known MRC cases, so they establish applicability rather
+than new knot-table results.
+\item Given a specified transposition quotient onto $S_r$, a finite
+binary linear system decides whether it lifts to a transitive signed
+action. If its solution-space dimension exceeds $r-1$, the lift proves
+$\mr\ge r$, one more than the underlying symmetric quotient bound.
+\end{enumerate}
+
+The last test is especially useful when a known $S_r$ colouring gives only
+$r-1$ while a bridge diagram gives $r$. Both the presentation's knot
+identity and meridian labels, and the geometric upper certificate, must
+be established independently. No such new unresolved example is claimed
+in the present work.
+
+The companion \texttt{ALL\_CHARACTERISTIC\_LIFTS.tex} extends the intrinsic
+lift-dimension bound to every field. A single integer relator matrix and
+its certified Smith form give the maximum dimension over all
+characteristics. For each of sixteen frozen five-seed table diagrams,
+an $S_4$ colouring has lift dimension five over $\F_5$, proving
+$\mr=b=5$. Separate named-census transfer checks all sixteen certificates
+directly on their diagrams. An independent rational-tangle constructor
+and exact planar-map bijections identify every case as a five-tangle
+Montesinos knot. Thus all sixteen equalities were already covered by
+Boileau--Zieschang (1985), whose Theorem 1.1 is explicitly restated in
+Musick's Theorem 1 \cite{musick}. Half-turn diagram conventions are
+justified by the rational-tangle flipping lemma \cite{kl}. The earlier
+binary bounds remain four. These are useful controls, not new MRC cases.
+
+This counting method has relevant quandle precedents:
+Clark--Elhamdadi--Saito--Yeatman define fibre counts of colouring lifts
+and use total colouring counts for bridge bounds \cite{cesy}. Our fixed
+group-representation lift space is such a fibre, and evaluation on
+arbitrary meridional generators supplies its meridional lower bound.
+This connection is now part of the priority audit.
+
+The companion \texttt{BRANCHED\_COVER\_LIFT\_BOUNDS.tex} identifies the
+integer lift matrix with the first homology of the simple degree-$r$
+branched cover $Y_\phi$ associated to a transposition quotient:
+\[
+ \dim_F Z_\phi(F)=r-1+\dim_F H_1(Y_\phi;F),\qquad
+ \mr(K)\ge r-1+\operatorname{rank}\pi_1(Y_\phi).
+\]
+Its nonunit Smith factors are exactly the torsion invariant factors of
+$H_1(Y_\phi;\mathbb Z)$. A finite nonabelian coefficient group $A$
+gives $|A|^{r-1}|\operatorname{Hom}(\pi_1Y_\phi,A)|$ admissible wreath
+lifts. For $r=2$ this recovers the classical core group
+$\pi_1(\Sigma_2K)*\mathbb Z$, due to Kelly and Wada, as reviewed and
+developed by Silver--Traldi--Williams \cite{core}. No priority claim is
+made for the cover-rank or counting framework. The uniform arguments
+are working proofs without formal verification or external review.
+
+On the frozen sixteen current thirteen-crossing targets, four-seed
+upper certificates force $r\le5$ for a transposition quotient.
+Complete searches in degrees two through five, followed by integer
+Smith replay, show that the symmetric root-lift method gives at most
+two in \emph{every} degree and characteristic. The original binary
+criterion is impossible there in every dimension: $k+1\le b\le4$
+forces $k\le3$, hence a rank-two form and the absent $S_3$ quotient.
+The previous suggestion of higher-rank binary forms on this panel
+is corrected. A separate $A_5$ core-colouring test, reproduced with
+$\operatorname{PSL}_2(\F_5)$ matrices, also gives no sharp four-bound.
+Other quotient and nonabelian cover methods remain open.
+
+The user's joint-quotient proposal adds a stronger cover-rank test:
+twenty distinct $A_5$ quotient kernels of one double-cover group
+force rank at least three and $\mr\ge4$. Burness--Crestani explicitly
+give the classical capacity nineteen, crediting Hall's direct-power
+formula \cite[p.~2]{bc}. The quotient kernels must have a single
+domain; witnesses on different knots cannot be pooled. The companion
+\path{JOINT_SIMPLE_QUOTIENT_KERNELS.tex} proves the capacity bound
+and tests all 293 retained uncertainty names, with maximum five and
+no sharp case. The known control $P(2,3,3,5)$ has 23 kernels and
+2901 homomorphisms, so the joint test gives sharp four while the raw
+count gives only three. The Seifert presentation in
+\cite[Section 7.3]{ps} also gives a uniform known family with
+denominators divisible by $2,3,3,5$. These remain established
+Montesinos cases. The original Hall paper and full Burness--Crestani
+and Poudel--Saveliev articles have not been independently audited;
+the cited formula and Seifert presentation were read at their stated
+locations and retained with hashes.
+
+The user's augmentation-module refinement uses an index-$n$ subgroup
+$H$ of a branched-cover group $G$, in characteristic prime to $n$.
+Shapiro gives $\Delta=b_1(H)-b_1(G)=\dim H^1(G,V_{n-1})$, and
+$\operatorname{rank}G\ge1+\lceil\Delta/(n-1)\rceil$. For degree five in the
+double cover, gain five implies $\mr\ge4$. All sixteen $A_5$
+kernel classes on the retained first-sixteen panel give gain at most
+one in every prime. Their base abelianizations, coprime to thirty,
+force every transitive degree-five action to have image $A_5$,
+so all connected index-five covers are covered by this negative
+test. The proof, direct cocycle replay and sharp known controls are
+in \path{AUGMENTATION_COVER_HOMOLOGY.tex}. This uses a different
+group and module from the old fixed knot-root exclusions.
+
+The same note records a concrete gate for the peripheral direction:
+in a representation preserving a nondegenerate symmetric form, a
+diagonalizable rank-one meridian has an anisotropic eigenline.
+The commuting longitude acts on it with $\lambda^2=1$, the excluded
+peripheral locus in \cite[Section 2.3]{whitehead}. A useful deformation
+must escape that constraint and supply actual augmentation data;
+arbitrary peripheral parameters do not suffice. No such curve on
+the sixteen targets is constructed here.
+
+\section{Obstructions and questions that remain genuinely open}
+
+The 2026 problem list retains finite-quotient detection of meridional
+rank, bridge monotonicity under meridian-preserving epimorphisms, and
+freeness of subgroups on fewer than $b(K)$ meridians for hyperbolic knots
+as related questions \cite{k3}. A meridian-preserving epimorphism
+$G_{K_1}\twoheadrightarrow G_{K_2}$ does give
+$\mr(K_1)\ge\mr(K_2)$ immediately, but bridge monotonicity would require
+more. General connected-sum additivity
+$\mr(K\mathbin{\#}J)=\mr(K)+\mr(J)-1$ is also not settled by proving it
+for quotient-detected families.
+
+Every meridian-involution representation factors through
+$G_K/\langle\!\langle\mu^2\rangle\!\rangle$, the $\pi$-orbifold group.
+Boileau--Kitano--Nozaki explicitly formulate the stronger equality between
+bridge number and torsion-generator rank of the orbifold group for prime
+links with infinite orbifold group \cite{preorder}. Lifting a small
+generating set of the quotient need not generate the knot group.
+
+Finite Coxeter quotients do not universally detect meridional rank.
+For $12a210$, an infinite triangle Coxeter quotient is sharp while no
+finite Coxeter quotient is sharp. Ryffel's theorem, reproduced in
+\cite{bkm}, gives odd torus knots with no nontrivial Coxeter quotient at
+all. Consequently a universal search restricted to $W(D_r)$ cannot solve
+MRC. The companion proof also gives a stronger elementary limitation:
+for $p\ge3$ and prime $q>2^{p-1}-1$, $T(p,q)$ has no representation
+satisfying our common-form affine criterion in any dimension. The bound
+would force $k\le p-1$, while the image order in $\operatorname{AGL}(k,2)$
+is prime to $q$. The central torus relation then makes the image abelian,
+of order at most two. Thus even allowing non-Coxeter affine images
+does not make this criterion universal.
+
+The companion quadratic-coefficient note extends exact field testing
+to $\mathbb Z[\tau]$, $\tau^2=\tau+1$, using expanded integer Smith
+matrices and separate residue embeddings at rank-drop primes. It
+uses twelve existing first $A_5$ core maps to obtain $H_3$ reflection
+bases. Every fixed base has lift dimension three in every field.
+An integral split pullback shows that all these affine lifts factor
+through the same 120-element group. In characteristic two, a retained
+lift has no common fixed point yet has four orbits of sizes
+$12,12,20,20$ on $\mathbb F_4^3$. Thus the fixed-base affine route is
+closed without asserting global fixed points or excluding other
+base colourings. A direct comparison with \cite[Lemma 6.2]{whitehead},
+whose complete elementary proof has now been read, shows that the
+unrestricted cocycle estimate cannot improve the restricted root-lift
+bound on the same representation.
+The original nondegenerate affine-symplectic $k+1$ bound also follows
+by combining its $k$-dimensional principal cocycles with the
+nonprincipal cocycle of the transitive action. The degenerate-form
+extension still requires the retained quadratic proof. Details are in
+\path{ICOSAHEDRAL_LIFTS_AND_QUADRATIC_COEFFICIENTS.tex}.
+
+Further work needs a structurally motivated cover degree or an actual
+augmentation curve outside the orthogonal locus. The outstanding
+parameter and recent-proof audits are listed in \texttt{sources.json}.
+
+\section{Formal deformation gate at icosahedral points}
+
+The companion working proof
+\path{SIX_POINT_COVERS_AND_FORMAL_ORTHOGONALITY.tex} tests the
+different six-point $A_5$ action on all sixteen retained kernel
+classes. Subgroup homology is cyclic of order $4D$ or $28D$,
+giving no sharp bound. The six-point permutation character is the
+symmetric square of either standard complex three-dimensional
+icosahedral character. For $G=\pi_1(\Sigma_2K)$ and its index-six
+subgroup $H_6$, Shapiro and index-two restriction from the knot
+orbifold group $Q$ therefore give
+\[
+ H^1(G,\operatorname{Sym}^2W^*)\cong H^1(H_6;\mathbb C)=0,
+ \qquad H^1(Q,\operatorname{Sym}^2W^*)=0.
+\]
+The form-lifting proof uses this vanishing at the original point:
+at each formal order, failure of form invariance is a cocycle and
+can be removed by a correction. Thus every formal complex
+deformation through these points that keeps meridians involutive
+preserves a possibly varying nondegenerate symmetric form. Its
+longitude still has $\lambda^2=1$ on the distinguished meridian
+eigenline. A family with varying meridian eigenvalue need not factor
+through $Q$ and remains outside this obstruction. These are internal
+working proofs, unformalized and externally unreviewed.
+
+Separate direct cocycle checks at the nonsplit small primes complete
+the earlier field boundary: the ordinary cover-generation cocycle
+estimates from both permutation augmentation modules fail in every
+characteristic. A frozen primitive-word probe found no two-generator
+certificate. Neither these computations nor the formal-form argument
+prove an actual cover-rank upper bound or settle a new MRC case.
+
+\clearpage
+\section{Actual peripheral curves for torus Whitehead iterates}
+
+The companion working proof
+\path{TORUS_WHITEHEAD_PERIPHERAL_CURVES.tex} supplies a positive
+application of varying meridian eigenvalues. For coprime
+$2\le p<q$, an explicit companion-matrix family of irreducible
+rank-$p$ KCH representations of $T(p,q)$ realizes
+\[
+ \lambda=(-1)^{p+1}\mu^{-(p-1)q},\qquad
+ \eta=\lambda^2=\mu^{-2(p-1)q}.
+\]
+The maximal torus branch is already in Cornwell's work
+\cite[Section~5.1]{cornwell}. Here generic irreducibility is proved
+directly by a cyclic-vector argument for the two companion matrices,
+so the branch consists of actual rank-$p$ points away from a finite
+set. At $\mu=\infty$ its peripheral orders are $(-1,2(p-1)q)$.
+They meet the iterable-branch hypothesis of
+\cite[Definition~4.1 and Corollary~4.5]{whitehead}, giving the
+source-derived corollary
+\[
+ \operatorname{ar}(\operatorname{Wh}^N(T(p,q)))
+ =\mr(\operatorname{Wh}^N(T(p,q)))
+ =b(\operatorname{Wh}^N(T(p,q)))=p\,2^N.
+\]
+The fixed untwisted pattern and conventions are those of that
+preprint; this does not use the affected Dutra 2022 lemma.
+
+There is a broader sufficient criterion: if an $n$-strand braid
+closure has a rank-$n$ augmentation and nonzero writhe $w$, all
+its iterates have the three ranks $n2^N$. Cornwell's
+Theorem~1.10 \cite{cornwell17}, including the last paragraph of its
+proof, gives actual rank-$n$ points for all but finitely many
+$\mu$ on $\lambda=(-\mu)^{-w}$. Its squared longitude has orders
+$(-1,2w)$, satisfying the same gate for either sign of nonzero $w$.
+
+For $T(3,5)$, the explicit family has $\mu=s^3$ and
+$\lambda=s^{-30}$. At $s=-1$ its image is the 120-element
+icosahedral reflection group. Both eigenvalues vary there, giving
+an actual escape from the fixed-involution formal-form barrier.
+This is a torus control, not a representation curve for the sixteen
+table targets.
+
+The required one-step algebra and iterable valuation argument have
+now been read and checked; exact symbolic block identities and
+frozen finite controls pass. The geometric peripheral inputs and
+the preprint theorem remain explicit dependencies. Its full
+microlocal theory, two-bridge existence proof and other sections
+are not independently certified. This is a derived application
+without a priority claim, formal verification, full MRC closure
+or a newly settled member of the retained panel.
+
+\clearpage
+\section{Varying meridians and the stabilization boundary}
+
+The companion note
+\path{MERIDIAN_DEFORMATIONS_AND_STABILIZATION.tex} now tests every
+retained icosahedral base with the meridian eigenvalue allowed to
+vary. The sixteen bases occur on twelve target knots; the four
+targets without an $A_5$ quotient supply no such point.
+Each normalized tangent matrix has size $144$ by $28$, rank $23$
+and kernel dimension five. Four dimensions are residual
+conjugations and the remaining direction has nonzero meridian
+eigenvalue differential. Exact quadratic-rational kernel bases and
+rank lower certificates have separate dual-number/minor replay.
+
+The fixed-eigenvalue kernel consists only of conjugations. An
+order-by-order conjugation argument therefore strengthens the
+previous invariant-form result: every formal rank-three deformation
+at these points that keeps meridians involutive is conjugate to the
+constant representation. Allowing the eigenvalue to vary leaves
+one tangent direction. A transverse slice and the analytic implicit
+function theorem reduce its integrability to residual functions of
+one parameter. They must vanish identically to give an actual curve;
+a finite nonzero obstruction instead gives an isolated thick point.
+
+There is also a uniform result for adjoining trivial summands. If
+the restricted first cohomology vanishes for both $W$ and $W^*$,
+every formal rank-one-meridian family through $\rho_0\oplus I_d$
+splits as $\sigma_t\oplus I_d$. Its meridian eigenvalue may vary.
+At the first nonzero off-diagonal order, rank-one minors force
+admissible cocycles; their vanishing modulo principal cocycles
+removes both blocks by conjugation. The trivial block is forced to
+remain trivial. Both restricted cohomology spaces vanish on all
+sixteen retained bases, by independent rational/affine replay.
+Thus adjoining any number of trivial summands at these points
+cannot produce a sharp higher-rank irreducible representation.
+
+All $32$ frozen degree-three jets, using both split embeddings
+modulo $11$, satisfy every oriented relator and all rank-one
+minors. These residue-field jets do not certify a complex curve or
+all-order integrability. The working proofs are unformalized and
+externally unreviewed, with no novelty or new MRC case claimed.
+The remaining choices include proving an actual rank-three curve,
+finding a higher-rank family through another special fibre, or
+obtaining another certified cover-rank bound. Full MRC stays open.
+
+\clearpage
+\section{Complete ordinary coefficient boundary for a single A5 map}
+
+The working proof
+\path{SIMPLE_MODULE_BOUNDS_AND_A5_EXHAUSTION.tex} completes the
+ordinary cover-group cocycle test through the retained $A_5$ maps.
+An elementary reduction makes this finite: in an exact sequence
+$0\to U\to V\to W\to0$,
+\[
+ \dim Z^1(G,V)\le\dim Z^1(G,U)+\dim Z^1(G,W).
+\]
+The largest coefficient-normalized dimension is therefore attained
+on a simple module. This includes nonsemisimple extensions and
+commutes with scalar extension. The absolute simple-module lists
+are imported from the primary ATLAS representation page \cite{atlas}.
+
+The previously untested three-dimensional modules now have exact
+integral matrices on all sixteen quotient-kernel classes. Their
+regular expansions have nonunit Smith factors $5$ on eight classes,
+and $7,35$ on eight others. Separate treatment of the ramified prime
+five and every residue embedding completes the all-field check.
+The two-dimensional characteristic-two quotient modules and their
+Frobenius conjugates have cocycle dimension three. Modular
+matrix-algebra spans identify all supplied simple models. Combined
+with the earlier complete $V_4,V_5$ and trivial-module data, this gives
+\[
+ \dim Z^1(G,V)\le\tfrac32\dim V
+\]
+for every finite-dimensional coefficient module through any single
+$A_5$ map on the sixteen-target panel, over every field. Thus none
+of those unrestricted linear estimates can force ordinary cover
+rank three. This does not prove that the groups are two-generated.
+
+Shapiro also gives an exhaustive consequence for induced covers:
+for $H=\phi^{-1}(L)$, $L\le A_5$, and $n=[G:H]$,
+\[
+ b_1(H;k)\le\lfloor n/2\rfloor+1.
+\]
+All such covers have zero rational first Betti number, including
+the degree-sixty kernel covers. Their Schreier and split
+augmentation-module gain tests cannot reach the rank-three gate.
+This concerns all $A_5$-induced degrees, not other monodromy.
+
+Two retained kernels on the same knot give a different joint
+quotient. Its natural four-dimensional tensor modules over
+$\F_4$ have been checked on the four eligible knots: all sixteen
+Frobenius choices have $\dim Z^1=6$ and $\dim H^1=2$, below the
+threshold nine and five, respectively. Other product modules and
+quotients remain open. Independent integral/affine, Smith, quotient
+and matrix-algebra replays pass. No new knot equality or full MRC
+claim follows; uniform proofs remain unformalized and unreviewed.
+
+\section{Singular affine certificates and the full GL3 quotient panel}
+
+The new companion proof
+\texttt{GL3\_QUOTIENTS\_AND\_SINGULAR\_AFFINE\_CERTIFICATES.tex}
+separates a positive known-family certificate from a negative complete
+finite panel. Homogenizing a three-dimensional affine representation
+can give rank-one meridians and zero common fixed space in dimension
+four, even though every image direction lies in a three-space. A
+nonprincipal meridian-admissible cocycle supplies precisely this
+situation when the linear action has no fixed vectors.
+
+Explicit binary matrices give sharp certificates for every
+$T(4,7(2r+1))$, $r\ge0$. The torus presentation and meridian formula
+are standard \cite{cornwell}; the MRC equalities were already known
+\cite{rz}. The $T(4,7)$ control has image $AGL_3(\F_2)$ of order
+1344, transitive on eight affine points. Its linear image preserves
+no nonzero alternating form. For $3\nmid7(2r+1)$ the absence of
+Fox three-colouring, together with the retained rank-two theorem,
+excludes every realization of the original common-form criterion.
+This comparison has no novelty claim for the knot equalities.
+
+Inspection of the pinned external \texttt{search/glsearch.py}
+shows that it assumes four independent seed image directions and
+discards singular pairing matrices. All homogeneous affine
+extensions just described have pairing rank at most three, for
+every four-meridian choice. They can satisfy the valid rank-one
+fixed-space lower-bound criterion while lying outside that search.
+This is a limitation of search coverage, not a defect in any of
+the 243 deposited certificates. The separate three-seed program
+uses bounded random diagram moves, not an exhaustive geometric
+three-bridge test. The archived open-list bridge intervals are
+$[3,4]$, so bridge number four is not an input assumption.
+
+Motivated by this missing architecture, all 293 pinned open names
+were frozen and exhaustively tested for double-cover quotient
+kernels with target $GL_3(\F_2)=PSL_2(\F_7)$. Independent projective
+replay gives 57 generating-pair and 13,368 generating-triple
+automorphism orbits. The kernel-count histogram is
+$139,123,29,1,1$ knots with respectively $0,1,2,3,7$ kernels.
+The same-source rank-three threshold would be 58, so there is no
+sharp kernel-count case. All 191 maps on 154 knots have binary
+natural/dual cocycle dimension four or five and Steinberg dimension
+eight or ten. The characteristic-two absolute simple list
+\cite{atlasgl}, exact matrix-algebra checks and composition-series
+argument give $\dim Z^1(G,V)\le5\dim V/3$ for every module through
+each epimorphism. This includes nonsplit extensions over arbitrary
+characteristic-two fields. It does not cover all proper-image
+representations on the enlarged panel or other characteristics.
+
+The 29 inner deck maps give 58 natural/dual binary meridian bases,
+all with root-lift dimension three. The sign-twisted adjoint
+construction over $\F_7$ covers all 191 maps of either deck type;
+all root-lift spaces again have dimension three. The independent
+verifier checks group identifications, full tuple orbits, every
+diagram closure, coefficient matrices and nullspaces, as well as
+the positive torus control. Source PD parsing is shared; uniform
+proofs remain unformalized and externally unreviewed. No new open
+knot is closed. Full MRC, actual target group ranks and broader
+source/priority audits remain open.
+
+\section{Exact scope of the rank-two-form method}
+
+The new working proof \path{RANK_TWO_AFFINE_EQUIVALENCE.tex}
+gives a converse construction for the original method, including
+arbitrarily large radicals, when the common form has rank two.
+Fix an onto $S_3$ transposition colouring and its simple
+three-sheeted branched cover $Y$. A transitive certificate in
+dimension $k\ge2$, projecting to that colouring, exists exactly
+when $b_1(Y;\F_2)\ge k-1$. Its maximal dimension is $b_1+1$ and
+its best meridional bound is $b_1+2$, when $b_1>0$. If $b_1=0$
+no such representation exists. This identifies the exact gain
+and a computable stopping condition for this part of the
+unpublished quadratic criterion; it is not a universal detection
+theorem or a novelty claim.
+
+The proof first establishes a general knot-group lemma:
+quotienting a meridian-rank-one module by a trivial submodule
+preserves its admissible cocycle space when the image lines
+survive. Vanishing $H^2(\Gamma;R)$ and evaluation
+$H^1(\Gamma;R)=R$ at a meridian lift and normalize the cocycle.
+Both facts follow from the knot exterior's homology and the
+universal coefficient theorem. Dependent radical/translation
+classes preserve an explicit nonconstant quadratic function.
+Independent classes give the full affine image of order
+$24\cdot8^{k-2}$, with transitivity proved by restriction to
+the $S_3$ kernel and central commutators.
+
+There are exactly $2^{b_1(Y;\F_2)}-1$ distinct $S_4$
+transposition quotient kernels above this one $S_3$ kernel.
+Thus two distinct such kernels on the same knot group already
+force meridional rank at least four and construct an eight-point
+rank-two-form certificate. The common lower quotient is essential;
+no pooling of knots or unrelated quotients is allowed. For an
+$S_4$ colouring, the induced covers also satisfy
+$b_1(Y_3;\F_2)=1+b_1(Y_4;\F_2)$ by the radical-lifting lemma.
+
+The complete 293-name symmetric scalar audit gives 26 $S_3$
+bases, with binary lift dimension two on five and three on 21;
+there are 21 $S_4$ bases and no $S_5$ base. All 170 retained
+$A_5$ cover kernels have inner deck action, independently
+agreeing with the absence of an outer extension to $S_5$.
+Every degree and characteristic has scalar bound at most three.
+Since the original quadratic bound itself forces $k\le3$ on
+these upper-four targets, rank two is the only possible nonzero
+form rank. Exactly 21 targets have a dimension-two realization,
+giving bound three; the other 272 have no original representation
+in any dimension. No target has a sharp original certificate.
+
+The proper-image gap in binary three-dimensional affine bases
+is now closed as well. Complete subgroup and normal-generation
+replay leaves $C_2,S_3,S_4,GL_3(\F_2)$; the first three reduce
+to the new tests, while the retained 58 full-image binary root
+tests are reused. Every such base has admissible dimension at
+most three. This excludes the specified homogeneous affine
+architecture on all 293 knots, not other coefficient fields,
+larger dimensions or unrelated representations.
+
+Three actual known pretzel controls realize dimensions two,
+three and four, with affine image orders 24, 192 and 1536.
+Their independent-class constructions are transitive; dependent
+classes preserve the predicted quadratic invariant. Complete
+tuple orbit, diagram, affine-matrix, Smith and finite group
+replays pass, with source PD parsing and older replay routines
+shared. Uniform proofs remain unformalized and externally
+unreviewed. These controls do not close a new open knot; actual
+target ranks, full MRC and broader source/priority audits remain
+open.
+
+The initial nonlinear follow-up left seven explicit
+two-generator cover presentations after proving 19 cyclic.
+The small-quotient and bounded-coset records remain as that
+checkpoint. The structural continuation below now resolves
+all seven and produces four sharp knot certificates; it does
+not change the preceding scalar or original-criterion
+exclusions.
+
+\section{Four sharp cases from nonabelian three-sheeted cover groups}
+
+The working proof \path{TREFOIL_AMALGAMS_SHARP_FOUR.tex}
+establishes
+\[
+ \mr(K)=b(K)=4\quad\text{for}\quad
+ K=13a_{3145},13a_{3147},13a_{3148},13a_{3149}.
+\]
+These names lie outside the original sixteen-target prefix
+and remain in the external project's 293-name open list
+fetched on 17 November. They are absent from its deposited
+243 certificates. Worldwide novelty and exclusion from every
+known family remain unaudited, so a previously-unresolved
+or priority claim is withheld.
+
+Exact presentation isomorphisms, including a targeted
+invertible basis change for $13a_{3148}$, give
+\begin{align*}
+ A_\epsilon&=\langle a,b\mid b^3a^2b^3=a,
+                  \ a^{3\epsilon}ba^{3\epsilon}=b^2\rangle,\\
+ B_\epsilon&=\langle a,b\mid b^2ab^2=a^2,
+                  \ (a^{3\epsilon}b)^3=b^2\rangle.
+\end{align*}
+The four covers have groups $A_+,A_-,B_+,B_-$ respectively.
+Each is an amalgam of two trefoil groups along the
+meridian/fibre $\mathbb Z^2$ subgroups. The fibre has infinite order;
+modulo it, the meridian has infinite order in $C_2*C_3$,
+proving peripheral injectivity. The classical amalgam
+normal-form theorem \cite{serre} embeds the nonabelian vertex
+group. Thus every cover group has rank exactly two.
+The general meridional cover bound gives $\mr\ge2+2=4$,
+and independently replayed four-seed diagrams give $b\le4$
+through the published Wirtinger-number theorem \cite{wirt}.
+
+The named PDs match literally in both archived KnotInfo
+releases and an independent HT census, after the standard
+edge-label shift. A separate planar under-to-under arc
+trace rebuilds all branch words and upper certificates;
+the producer's parser is used only to transport indices.
+Every relator shortening, inverse Nielsen map and Tietze
+elimination is replayed. The conceptual peripheral and
+normal-form arguments are written proofs, unformalized and
+externally unreviewed, rather than inferred from finite tests.
+
+There is now also a finite nonabelianity proof for these same
+four covers: explicit pairs in $S_{25}$ satisfy all six literal
+two-generator checkpoint relators and have nontrivial commutator.
+All 39 original branched-cover relators per knot also pass an
+independent pointwise replay. On $\mathbb F_5^2$, a trefoil action
+has generators $\alpha(x,y)=(p(x),y+2)$ and
+$\delta(x,y)=(q(x),y+3)$, with image lists
+$p=(3,0,2,1,4)$ and $q=(4,1,3,2,0)$.
+The fibre and meridian become independent translations, so
+linear changes of coordinates realize the required peripheral
+gluings. This produces the four 25-point witnesses directly.
+Their vertex image is the nonsolvable group $A_5\times C_5$,
+consistent with the solvable-quotient exclusion below.
+The literal words, permutation arrays and standalone
+standard-library checker are retained as
+\path{finite_cover_certificates.json} and
+\path{check_finite_cover_certificates.py}.
+The full replay rebuilds the branch words from independent
+planar arc traces and rejects four corrupted certificates.
+This finite proof does not require amalgam normal form or
+residual finiteness, and supplies no additional named case
+beyond the four already retained.
+
+The other three unresolved checkpoint groups are now
+proved cyclic of orders two, two and four. All 26 tested
+three-sheet cover-group ranks are therefore determined:
+nineteen groups $C_2$, two $C_4$, one trivial, and the four
+rank-two amalgams. The four latter groups have cyclic
+abelianizations of orders 37,35,37,35, and their universal
+abelian covers have zero integral first homology, by exact
+Schreier matrices and replayed unit Smith forms. Their
+commutator subgroups are nontrivial and perfect, so every
+solvable quotient is cyclic. This explains why enlarging
+the earlier solvable searches could not have found the
+rank gain. All symmetric scalar lift bounds still fail
+sharp four, and the original quadratic criterion has no
+representation on these four knots. The nonabelian group
+structure supplies the missing information.
+
+The result gives four explicit named MRC certificates in
+this programme. It does not settle the original sixteen
+targets, the other 289 names of the frozen project list,
+full classical MRC, or the outstanding literature/priority
+audit. One stale duplicate many-twigs catalogue entry has
+been reconciled with its fully scoped retained entry;
+Serre's standard amalgam background is now separately
+credited. That checkpoint had 35 distinct source identifiers.
+Those two scoped primary-source additions brought the catalogue to 37;
+the connected-sum sources below bring the current total to 39.
+
+\section{Finite block actions and periodic sharp-four families}
+
+The working proof \path{PERIODIC_TWIST_FAMILIES.tex} extends
+each of the four retained seed cases to an infinite family.
+Induce its 25-point cover action to a 75-point knot action
+on three blocks. Meridian images exchange two blocks and
+fix the third pointwise. If $d$ such exchanges generate a
+transitive action on $r$ blocks, identifying fibres along
+a spanning tree makes all tree exchanges trivial on the
+labels. Only $d-r+1$ non-tree edge permutations remain to
+generate a block-stabilizer action. A nonabelian stabilizer
+therefore forces $d\ge r+1$, giving meridional rank at least
+four in the retained three-block actions.
+
+At the first crossing of every seed, the incoming meridian
+images $x,y$ satisfy $(xy)^3=1$. The Hurwitz move
+$T(x,y)=(y,yxy)$ has $T^2$ equal to conjugation by $(xy)^{-1}$,
+so $T^6=1$. Replacing that crossing by $1+6N$ alternating
+crossings retains all finite boundary labels and the whole
+quotient image. A fixed four-seed outside trace, with an
+integer-tangle propagation induction, gives upper four for
+every $N\ge0$. Thus all four families have $\mr=b=4$.
+
+These are infinitely many knot types, not just diagrams:
+their determinants are $543+1776N$ for seeds 3145/3148 and
+$537+1680N$ for 3147/3149. This follows uniformly by the
+parallel-edge spanning-tree formula, using the published
+determinant interpretation \cite[Lemma 3.14]{stoim}.
+Separate corner-region/tree enumeration and Fox determinants
+check the finite coefficients and twelve sample PDs;
+pointwise permutation and outside-arc traces are independently
+replayed. The all-$N$ proof is written, unformalized and
+externally unreviewed. The families are not claimed mutually
+disjoint or globally new, and full MRC remains open.
+
+Joseph--Pongtanapaisan already construct classical sharp
+families through finite-cycle quotient labellings with
+periodic twist-box rules \cite{jp}. Section 3 of their
+February 2023 preprint, especially Construction 3.5 and
+Corollary 3.12, has now been read; the published 2025 title
+and metadata are checked separately. Full published proof
+comparison and membership of our seeds in their families
+remain open. This source must be credited when discussing
+periodic finite-quotient constructions.
+
+The known-family audit also retains a specific limitation:
+the published Stoimenow discussion distinguishes an
+arborescent link from a link with an arborescent alternating
+diagram \cite[Proposition 6.3, Remark 6.4]{stoim}. Failure
+of series-parallel reduction on one checkerboard graph
+alone is insufficient for knot nonmembership. No new
+worldwide novelty conclusion is registered.
+
+\section{Additivity of the strongest simple-cover bounds and a strict limit}
+
+The working proof \path{SIMPLE_COVER_RANK_ADDITIVITY.tex}
+defines $C(K)=\max_{r,\phi}(r-1+\operatorname{rank}\pi_1Y_\phi)$ and,
+for a fixed field $k$, $A_k(K)=\max_{r,\phi}(r-1+b_1(Y_\phi;k))$.
+The covers are connected and meridians are transpositions.
+Both maxima are finite, since $r\le b(K)+1$, and
+$A_k\le C\le\mr\le b$.
+
+The written proof establishes, for all classical knots,
+\[
+ C(K_1\#K_2)=C(K_1)+C(K_2)-1,\qquad
+ A_k(K_1\#K_2)=A_k(K_1)+A_k(K_2)-1.
+\]
+The same field must be used on both sides. A knot group is
+normally generated by one meridian. Therefore a restricted
+transposition coloring has one active sheet orbit and fixes
+the complement pointwise. If the summand supports have sizes
+$r_i$, share the moving pair, and have union of size $R$,
+the lifted decomposing spheres give
+\[
+ Y\cong\#_iY_i\ \#\ \#^{\beta}(S^1\times S^2),\qquad
+ \beta=\sum_i(r_i-2)-(R-2).
+\]
+Ordinary rank adds by the classical Grushko theorem
+\cite[Theorem 1.B.5]{stallings}; fixed-field first homology
+adds directly. Classifying every restriction proves the
+upper maximization inequality, while taking disjoint
+additional sheets realizes maximizing summand covers.
+
+Consequently knots with $C=\mr$ satisfy meridional additivity
+under connected sum, and matching bridge certificates remain
+sharp. In particular, a sum of $t$ members of the four
+periodic families and $s$ trefoils has $\mr=b=3t+s+1$.
+Schubert bridge additivity, with primary modern proof
+\cite[Theorem 1]{schultens}, makes the nonnegative defects
+$b-C$ and $b-A_k$ additive as well. Earlier conditional
+meridional additivity through Coxeter quotients is explicitly
+credited to the introduction of \cite{bbk}.
+
+This does not make simple-cover rank universal. The known
+torus knot $T(4,7)$ has $C=3<\mr=b=4$. Every simple coloring
+has degree at most five; the central torus relation excludes
+onto $S_3,S_4,S_5$ images, since none has an element of order
+seven. The double-cover group has an exact two-generator
+presentation, cyclic homology $\mathbb Z/7$, and a noncommuting
+binary matrix image. Thus $A_k=2$ at characteristic seven
+and $A_k=1$ otherwise. For $J_n=\#^nT(4,7)$,
+\[
+ C(J_n)=2n+1,\qquad
+ A_k(J_n)=1+n[\operatorname{char}k=7],\qquad
+ \mr(J_n)=b(J_n)=3n+1.
+\]
+The last equality is a known graph-manifold case \cite{bdjw}
+together with bridge additivity, not a new MRC claim. These
+knots also have no $S_3$ transposition coloring, excluding
+the rank-two-form part of the original binary criterion in
+any dimension; higher-rank forms are not thereby excluded.
+
+Eight literal connected-sum diagrams check the sphere graph,
+folded relators and integral homology, with independent arc
+tracing, reverse-word reconstruction and Smith-step replay.
+The torus boundary has separate Schreier-word and matrix
+checks. Four corruptions reject. Uniform normal-generation,
+topological gluing and Grushko arguments remain written proofs,
+unformalized and externally unreviewed. General meridional
+additivity and full MRC remain open; worldwide priority of
+this cover-bound formulation is not claimed.
+
+\section{Double-transposition meridians beyond binary transvections}
+
+For a transitive degree-$r$ permutation quotient with meridian
+index $\delta=r-\#\{\text{cycles}\}$, the standard edge count gives
+$\mr\ge\lceil(r-1)/\delta\rceil$: any $d$ meridians factor into
+$d\delta$ transposition edges, which must connect all sheets.
+Double-transposition meridians have $\delta=2$. With the retained
+upper four, the only transitive degrees giving this lower four
+are eight and nine. Both are now excluded on the original
+sixteen PDs. The frozen searches test respectively $18\,450$
+and $6\,561$ transitive four-seed orbits. Independent full
+orbit marking covers all $9\,261\,000$ and $54\,010\,152$
+normalized raw tails, followed by geometric arc and pointwise
+relator replay. No hit occurs; enhanced cover-rank bounds and
+other meridian cycle types are not excluded.
+
+The positive control $T(4,15)$ has full $A_8$ image, with
+$X=(0\ 7\ 5\ 1)(2\ 6\ 4\ 3)$,
+$Y=(0\ 1\ 2\ 3\ 4)(5\ 6\ 7)$ and
+$X^{-1}Y^4=(0\ 6)(2\ 5)$. The same matrices certify the known
+family $T(4,60j+15)$ for every $j\ge0$, using the standard
+meridian $x^{-1}y^{15j+4}$ and the four-strand upper bound.
+This is not a new torus-knot MRC theorem. Finite-cycle quotient
+methods already have the precedents \cite{bk,jp}.
+
+The full image has order $20160>1344$, outside binary affine
+three-space. Although $A_8\cong\mathrm{GL}_4(2)$ \cite{atlasa8},
+the meridian classes differ: the double-transposition class
+has size $210$, versus $105$ binary transvections $I+vf$.
+An isomorphism preserves conjugacy-class size. This precisely
+distinguishes the new test from the pinned external binary
+rank-one search without questioning its valid certificates.
+The uniform proof and exact scope are in
+\texttt{PERMUTATION\_INDEX\_GATE.tex}; full MRC and all sixteen
+targets remain open, and worldwide novelty is unclaimed.
+
+\section{Complete ternary affine bases and new cover quotients}
+
+The next finite field gives a complete three-dimensional
+rank-one base test. In $\mathrm{GL}_3(\mathbb F_3)$ the two
+possible classes are $104$ order-three transvections and
+$117$ order-two reflections. The frozen searches exhaust
+$21\,632$ and $34\,084$ four-seed conjugacy orbits on the
+original sixteen PDs, including all proper images.
+Independent raw orbit marking covers $1\,124\,864$ and
+$1\,601\,613$ tails; geometric signed traces and affine-point
+coefficient replay agree with the producer.
+
+Order three gives only constant cyclic bases. Reflections
+give two full $\mathrm{GL}_3(\mathbb F_3)$ representation
+orbits on each of the first eight targets, in addition to
+the constant base; the last eight have only the constant
+base. Root dimensions are respectively three and one, equal
+to the principal-subspace dimensions. Thus every admissible
+affine lift of each rank-one base is principal. A trivial
+linear base gives only cyclic translations. Consequently
+this ternary affine-three-space architecture cannot give a
+transitive27point or homogeneous4 fixed-space certificate
+on the sixteen targets. Bases over larger fields and higher
+dimensions are outside this exclusion.
+
+Both meridian classes have explicit positive controls on
+the known sum of three trefoils. Four homogeneous matrices
+have rank-one differences, satisfy adjacent braid relations
+and have zero common fixed space. Their affine image orders
+are $151632$ and $648$, with transitive27point actions;
+literal nine-crossing PDs and four-seed uppers independently
+give $\mr=b=4$. These are known composite controls.
+
+The sixteen nonconstant reflection representations induce
+full $\mathrm{SL}_3(\mathbb F_3)$ quotients of the double-cover
+groups. Ordinary natural3 and dual3 cocycles, with no
+meridian extension constraint, all have $\dim Z^1=4$ and
+$\dim H^1=1$, below the sharp threshold $\dim Z^1\ge7$.
+This tests32modules, not all modules or fields, and does not
+determine actual cover rank. Representation orbits are not
+asserted to have distinct quotient kernels.
+
+The thirteen-point projective action gives a distinct next
+augmentation gate: a homology gain at least13 at $p\ne13$
+forces cover rank three. On the known control
+$G_0=C_3*C_3*C_3$, the explicit quotient has point-stabilizer
+preimage $F_6*(*_{12}C_3)$, with gain $18-3=15$ over
+$\mathbb F_3$. Finite cycle inputs pass; subgroup structure
+uses the classical graph-of-groups theorem \cite{serre}.
+That checkpoint is now completed by the thirteen-point audit
+below. The
+uniform proof and full scope are in
+\texttt{TERNARY\_AFFINE\_AND\_COVER\_CERTIFICATES.tex};
+full MRC and all sixteen targets remain open.
+
+\section{Exact thirteen-point homology and the characteristic-thirteen boundary}
+
+The rank implication of the Betti-gain argument extends to
+every characteristic. For any index-$r\ge2$ subgroup of a
+finitely generated group and any field,
+\[
+ \operatorname{rank}G\ge1+\left\lceil
+       \frac{b_1(H)-b_1(G)}{r-1}\right\rceil.
+\]
+Indeed $\dim Z^1(G,k[G/H])=b_1(H)+r-1$ by Shapiro, and
+the cocycle sum map to $Z^1(G,k)$ has rank at most $b_1(G)$.
+Its kernel is the augmentation cocycle space, whose
+dimension is at most $(r-1)\operatorname{rank}G$. No splitting is needed.
+The earlier index-five rank criterion therefore works at
+five too, although its split cohomology identity need not.
+A positive degree13/characteristic13 control on
+$C_{13}*C_{13}*C_{13}$ has subgroup $*_{26}C_{13}$,
+gain23 and augmentation $Z^1$ dimension36, whereas the
+split identity would give35. The same construction works
+for every odd prime, by explicit Schreier rewriting.
+
+The32 point/dual actions induced by the new ternary maps give
+sixteen inequivalent covers, two per source knot. Their
+integral homology is
+$\mathbb Z^2\oplus C_2\oplus C_{882878}$ for
+$13a_{129},13a_{136},13a_{194},13a_{197}$ and
+$\mathbb Z^2\oplus C_2\oplus C_{3128602}$ for
+$13a_{135},13a_{137},13a_{196},13a_{198}$.
+Base homology is respectively $C_{391}$ and $C_{401}$.
+The maximum Betti gain at $p\ne13$ is four, attained at two,
+below the required thirteen. Thus the dimension12
+augmentation module has ordinary cocycle dimension at most
+sixteen away from thirteen. Direct characteristic13
+coefficient matrices have kernel dimension fourteen, below
+the required twenty-five. This completes the specified
+induced-cover augmentation test over every field.
+
+Explicit sheet intertwiners identify the second retained
+representation's point action with the first one's dual
+action. Both projective actions are faithful, so there is
+one quotient kernel per knot among these maps. Point and
+dual actions are inequivalent: the enumerated point
+stabilizer432 fixes no dual point. No cross-knot pooling or
+exhaustion of every index13 subgroup or quotient is inferred.
+
+Independent Smith/augmentation replay and known positive
+controls are documented in
+\texttt{PROJECTIVE\_THIRTEEN\_COVER\_HOMOLOGY.tex}.
+
+Matching archived Conway polynomials motivated the structural
+audit completed next. All sixteen targets and full MRC remain open.
+
+\section{Two common double covers from exact mutation certificates}
+
+The eight sources with new ternary quotients now form two certified
+mutation blocks:
+\[
+ \{13a_{129},13a_{136},13a_{194},13a_{197}\},\qquad
+ \{13a_{135},13a_{137},13a_{196},13a_{198}\}.
+\]
+Their pinned thirteen-crossing reduced alternating diagrams have
+seven-vertex selected Tait graphs. Six root-to-member comparisons have
+explicit graph2isomorphism certificates, requiring at most one Whitney
+switch before an abstract graph isomorphism. Independent corner-region
+reconstruction, spanning-tree enumeration and the full binary cycle
+spaces pass, with four mathematical corruptions rejected. The selected
+checkerboard crossing conventions agree within each block.
+
+Greene's Corollary4.5 supplies the graph-to-mutation implication;
+only its elementary Section4 argument and explicit classical graph
+inputs are used. Morton's Theorem3 gives the short torus-gluing proof
+that mutation preserves double branched covers, crediting Viro1976.
+The two primary reads bring the catalogue to42 sources. Neither the
+full Greene lattice/Floer proof nor Viro's original full proof has been
+audited. The exact scope is retained in
+\texttt{mutation\_source\_audit.json}.
+
+Thus these eight ordinary cover-rank questions reduce to two groups,
+with respective abelianizations $C_{391}$ and $C_{401}$. Each rank lies
+between two and three. Rank three for either shared group would settle
+all four knots in its block, using each knot's retained four-bridge
+upper and the double-cover inequality. No bridge or meridional-rank
+mutation invariance is assumed. No rank-three obstruction is provided
+here. The canonical proof is
+\texttt{MUTATION\_COMMON\_DOUBLE\_COVERS.tex}; the other original eight
+targets are untouched, and all original sixteen remain open.
+
+\section{Compact core presentations and a common four-port assembly}
+
+The two common cover groups now have exact short presentations on three
+generators with relator lengths $(9,13,15)$ and $(12,15,11)$. Every
+Tietze elimination, free automorphism with inverse, and relator-subword
+replacement is retained and independently replayed. Their integral
+abelianizations remain $C_{391},C_{401}$, and transported projective
+permutations still give nonabelian quotients of order5616. Neither
+actual rank is determined.
+
+Cutting each source into the first seven and last six crossings gives
+four literal ports. Both inner formal normalized core groups reduce
+to the same two-generator one-relator group $P$ of relator length11;
+both outer ones to the same group $Q$ of relator length7. The two closed
+groups are reconstructed exactly as quotients of
+$P*Q*\langle z\rangle$ by four displayed port identifications. A free
+base change and seventeen-to-thirteen arc identification prove this
+algebraic assembly. No injective torus amalgam, geometric piece
+classification or JSJ theorem is inferred. The canonical proof and
+literal presentations are in
+\texttt{COMPACT\_DOUBLE\_COVER\_PRESENTATIONS.tex}.
+
+Outer-fragment propagation stalls on five inner arcs, so its two-generator
+presentation gives no rank-two closed-group certificate. Abstract
+series/parallel reductions give tetrahedral graph cores and branch
+tree/forest counts $(19,14)$ and $(14,19)$; these conductances have not
+been certified as rational-tangle filling slopes. Candidate filled
+triangulations have degenerate numerical shapes and neither target is
+recognized in a single frozen Regina pass. These are explicit source
+and proof obligations, not graph-manifold or hyperbolicity conclusions.
+Nine altered compact/assembly inputs are rejected. The new work adds
+no source-catalogue entry or target equality; the catalogue remains42.
+Brunner/Ito and Boileau--Weidmann papers are leads for a subsequent
+peripheral/gluing audit, not imported rank classifications here.
+
+\section{Eight sharp cases from four canonical Seifert pieces}
+
+The two shared cover roots now have group rank exactly three.
+The formal pieces from the preceding section admit exact peripheral
+models over a disk with cone orders2,3 and an annulus with one cone
+of order2. Their four port relations reduce to an injective torus
+gluing. Thus each source group is the fundamental group of a constructed
+closed orientable irreducible graph manifold with canonical chain
+\[
+ D(2,3)\;---\;A(2)\;---\;A(2)\;---\;D(2,3).
+\]
+All three maps are integral unimodular, and adjacent fiber intersections
+are one. Negative orbifold Euler characteristics exclude ambiguous
+fiber exceptions; the classical JSJ criterion gives four canonical pieces.
+No homeomorphism from a numerical source triangulation is used.
+
+Boileau--Weidmann's necessary rank-two classification, imported from
+their Theorem2, permits at most three JSJ pieces. Therefore both source
+groups have rank at least three, and their exact three-generator uppers
+give equality. The double-cover bound and each member's independently
+replayed four-seed upper then prove
+\[
+ \mr(K)=b(K)=4\quad
+ (K\in\{13a_{129},13a_{135},13a_{136},13a_{137},
+        13a_{194},13a_{196},13a_{197},13a_{198}\}).
+\]
+The canonical proof is \texttt{FOUR\_PIECE\_DOUBLE\_COVERS\_SHARP\_FOUR.tex}.
+It includes explicit basis changes, peripheral injections, all matrices,
+and the passage from group rank to knot equality. The independent
+checker uses cyclic-amalgam normal forms and rejects five further
+corruptions. Classical topology and the rank theorem are written/imported
+arguments, not consequences of a green finite receipt. Formal verification
+and external specialist review remain absent.
+
+The three new scoped reads are Boileau--Weidmann2005, Hatcher's
+Seifert/JSJ notes, and Millichap--Worden2016, bringing the catalogue to45.
+The latter's Corollary5.4 eliminates the original exceptional
+irregular-hyperbolic-cover case in the rank-two list. Its short deduction
+is read as current context; the full hidden-symmetry proof is not audited
+and the eight-case piece bound already follows from the older necessary
+list. The original
+Jaco--Shalen/Johannson theory is credited through the latter exposition.
+The broad rank classification is classical; worldwide novelty or
+previously-unresolved status of these eight equalities is not established.
+The other original eight targets remain open. The retained293 panel now
+has twelve named equalities certified here and281 names without such a
+certificate; full classical MRC and exhaustive literature remain open.
+
+\clearpage
+\section{Three further cases from the actual central filling slopes}
+
+The next small frozen selection gives three more working equalities:
+\[
+ \mr(13a_{233})=b(13a_{233})=4,\quad
+ \mr(13a_{239})=b(13a_{239})=4,\quad
+ \mr(13a_{253})=b(13a_{253})=4.
+\]
+All three double-cover groups have rank three. The exact source/port
+identities construct closed orientable irreducible graph manifolds with
+canonical chain $D(2,3)-A(m)-D(2,3)$, with $m=2,3,2$ respectively.
+This count alone does not exclude rank two: BW05 Theorem2 case6 allows
+three pieces. Its specific necessary condition requires the middle piece
+to be a two-bridge link exterior with the adjoining end fibres glued to
+link meridians.
+
+In the middle outer boundary basis $(c,f)$, where $f=s^m$ is the fibre,
+the first end fibre has slope $(r,q)=(3,-2),(-2,-1),(-3,2)$.
+The associated filling group has a quotient
+\[
+ C_m*C_{|r|}\twoheadrightarrow S_3.
+\]
+It therefore cannot be the infinite cyclic group of a solid torus.
+But a two-component two-bridge link has unknotted components, and filling
+either link meridian leaves a solid torus. This contradicts the only
+three-piece rank-two type. Boundary injection, unique negative-base
+fibres and nonparallel slopes certify that the constructed decomposition
+is actually canonical. A source group isomorphism suffices; no numerical
+cover recognition or rank-equals-genus inference is needed.
+
+The complete written proof is
+\texttt{THREE\_PIECE\_DOUBLE\_COVERS\_SHARP\_FOUR.tex}.
+Independent replay checks five full core reductions, fourteen fragment
+reductions, every selected port in complete amalgam normal form, the
+unimodular gluing matrices, three finite filling quotients and individual
+upper-four traces. Five corrupted inputs reject. The case6 source read
+is separately sealed; the catalogue remains45.
+Five proposed mutation transfers all failed and have unequal determinant
+pairs $403/389$, $361/359$, $361/337$, $361/311$, $337/311$.
+No equality is transferred to those targets. Similar PD prefixes are
+not a common-cover certificate.
+
+This supersedes the eight-remaining checkpoint above: eleven original
+targets, and fifteen of293 panel names in total, are certified here.
+The remaining original targets are
+$13a_{234},13a_{242},13a_{243},13a_{244},13a_{265}$.
+The working proofs and classical imports remain unformalized and externally
+unreviewed; worldwide novelty, prior-family coverage, exhaustive source
+audits and full MRC remain open.
+
+\section{Completion of the original sixteen through five direct models}
+
+The five remaining original targets now have working proofs of
+\[
+ \mr(K)=b(K)=4,\qquad
+ K\in\{13a_{234},13a_{242},13a_{243},13a_{244},13a_{265}\},
+\]
+with double-cover group rank three. These use each literal source PD
+directly; the failed transfers above are retained and unused.
+The exact three-piece model is again $D(2,3)-A(m)-D(2,3)$.
+The middle piece has $C=\langle k,s\mid[k,s^m]=1\rangle$, fibre
+$f=s^m$ and outer section $c=sk$ or the conjugate marking $ks$.
+Both boundary marking order and the $h_Q^{-1}$ attachment at $265$
+are checked explicitly. The actual first end-fibre filling slopes in
+$(c,f)$ are
+\[
+ (m;r,q)=(2;3,-2)\text{ for }234,\quad
+ (3;-2,1)\text{ for }242,\quad
+ (2;-3,2)\text{ for }243,244,265.
+\]
+All fillings have a nonabelian $C_m*C_{|r|}$ quotient onto $S_3$.
+This contradicts the central two-bridge meridian requirement in BW05
+Theorem2 case6, using the same explicit realization, canonical JSJ and
+unknotted-component filling argument as the preceding section.
+
+The complete written proof is
+\texttt{FINAL\_FIVE\_DOUBLE\_COVERS\_SHARP\_FOUR.tex}.
+Independent replay verifies eight full core and thirty-two fragment
+reductions, all balanced four-port cuts and source joins, exact root
+eliminations, complete amalgam normal forms, all ports and conjugations,
+primitive gluing matrices and five nonabelian finite filling images.
+The three preceding sharp roots reproduce their sealed models, each
+of the five new knots has its own checked upper-four trace, and six
+corrupted inputs reject. The genuine meridian-filling control stays
+cyclic. Source catalogue45 is unchanged; no rank conclusion is inferred
+from piece count or a failed quotient test alone.
+
+This completes the original sixteen-case panel here, giving twenty
+named equalities in the retained293 panel and273 names without a
+certificate in this programme. This is not a worldwide open/closed
+census. All proofs remain unformalized and externally unreviewed, and
+their previously-unresolved status, known-family membership and global
+priority need a separate source audit. Full MRC and exhaustive literature
+remain open. The next substantive gate is that family-scope audit and
+a structurally justified general extension, with the completed original
+panel retained as positive controls.
+
+\section{Actual-cover rigidity resolves the sixteen-case known-family audit}
+
+The original sixteen belong to an existing MRC family. Their exact group
+models were already sufficient for the cover-rank proofs. A further
+classical step now gives actual-cover topology: AFW15
+Theorem2.1.3 classifies closed orientable manifolds with isomorphic
+fundamental groups up to orientations of prime factors and lens-space
+ambiguity \cite{afw}. The constructed model is closed, irreducible and
+prime, with an infinite injected trefoil group. It has no nontrivial lens
+summand and only one prime factor. Hence the source double branched cover
+is homeomorphic to this graph manifold, possibly reversing orientation.
+This handles source-cover primeness without assuming it from a table
+label. No branch-involution transport or numerical recognition is needed.
+
+The actual covers therefore satisfy the prime graph-manifold hypothesis
+of the published BJW18 Theorem1.2 and Corollary1.3 \cite{bjw}.
+With the certified exact bridge four, the MRC equality falls in that
+2018 theorem. In fact the published rank-one/two equivalences and rank-three
+graph-cover theorem already imply MRC throughout this cover class whenever
+$b\le4$: decide the meridional rank among1,2,3,4 and apply the corresponding
+bridge consequence. The independent rank-three calculation remains useful
+because it determines the exact common value four.
+
+The complete source-scope proof is
+\texttt{ORIGINAL\_SIXTEEN\_KNOWN\_GRAPH\_COVER\_FAMILY.tex}.
+Sixteen literal PD/upper bindings, the three retained lower/model receipts,
+and the exact mutation aliases for the first eight are sealed separately.
+The finite binder does not prove rigidity or reprove the published MRC
+theorem. The AFW final author book Theorems2.1.2--2.1.3 and their earlier
+author-v3 counterparts were read at the precise lens/orientation scope;
+the source pages were visually checked. The new scoped reference brings
+the catalogue to46; older counts in checkpoints retain their dated scope.
+
+This supersedes the preceding unknown-family clauses for the sixteen,
+while preserving every equality and exact finite certificate. They are
+established members of a known MRC class, not evidence of new cases
+outside known families. Named global bridge/rank computational priority
+is still unaudited. The other four sharp simple-three-cover seeds require
+their own family audit. A prospective new target outside BJW18 needs
+actual double-cover topology outside that class; a hyperbolic knot exterior
+or non-arborescence alone does not suffice. Full MRC, exhaustive literature,
+formal and external specialist review remain open.
+
+{\small
+\begin{thebibliography}{99}
+\setlength{\itemsep}{2pt}
+\small
+\setlength{\baselineskip}{11pt}
+\setlength{\itemsep}{0pt}
+\bibitem{mw16} C. Millichap and W. Worden, Hidden symmetries and
+commensurability of 2-bridge link complements, Pacific J. Math.285(2)
+(2016), Corollaries5.3--5.4.
+\url{https://doi.org/10.2140/pjm.2016.285.453}.
+\bibitem{bw05} M. Boileau and R. Weidmann, The structure of 3-manifolds
+with two-generated fundamental group, Topology44 (2005), 283--320.
+Read author manuscript, Theorem2 and relevant Section3.1 argument.
+\url{https://doi.org/10.1016/j.top.2004.10.008}.
+\bibitem{hatcher} A. Hatcher, Notes on Basic 3-Manifold Topology,
+online notes with revisions1999/2000, Sections1.2 and2.1.
+\url{https://pi.math.cornell.edu/~hatcher/3M/3M.pdf}.
+\bibitem{greene} J. E. Greene, Lattices, graphs, and Conway mutation,
+Invent. Math.192 (2013), 717--750. Author preprint arXiv:1103.0487v1,
+Section4.1--4.2, especially Corollary4.5.
+\url{https://doi.org/10.1007/s00222-012-0421-4}.
+\bibitem{morton} H. R. Morton, Mutant knots, author manuscript,
+16March2014, Theorem3, p.6, crediting O. Ya. Viro (1976).
+\url{https://www.liverpool.ac.uk/~su14/papers/mutantchapter.pdf}.
+\bibitem{stallings} J. Stallings, Group Theory and Three-Dimensional
+Manifolds, Yale University Press (1971), Theorem 1.B.5, p.~6.
+\url{https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stallings1.pdf}.
+\bibitem{schultens} J. Schultens, Additivity of bridge numbers of
+knots, Math. Proc. Cambridge Philos. Soc. 135 (2003), 539--544,
+Theorem 1, crediting Schubert (1954).
+\url{https://doi.org/10.1017/S0305004103006832}.
+\bibitem{stoim} A. Stoimenow, Graphs, determinants of knots and
+hyperbolic volume, Pacific J. Math. 232 (2007), 423--451.
+\url{https://doi.org/10.2140/pjm.2007.232.423}.
+\bibitem{jp} J. Joseph and P. Pongtanapaisan, Meridional rank and
+bridge number of knotted 2-spheres, Canad. J. Math. 77 (2025),
+282--299 (online 2023).
+\url{https://doi.org/10.4153/S0008414X23000883}.
+Classical construction read in Section 3 of
+\url{https://arxiv.org/html/2111.09233v2}; full published proof
+not independently compared.
+\bibitem{serre} Serre, Trees, translated by Stillwell, Springer
+(1980), Chapter I, Trees and Amalgams.
+\url{https://doi.org/10.1007/978-3-642-61856-7}.
+\bibitem{atlas} ATLAS of Finite Group Representations, Alternating
+group $A_5$: complete ordinary and modular representation lists.
+\url{https://brauer.maths.qmul.ac.uk/Atlas/alt/A5/}.
+\bibitem{atlasgl} ATLAS of Finite Group Representations,
+$L_2(7)=L_3(2)$: automorphism and characteristic-two simple lists.
+\url{https://brauer.maths.qmul.ac.uk/Atlas/lin/L32/}.
+\bibitem{atlasa8} ATLAS of Finite Group Representations,
+$A_8=L_4(2)$: group order and representation list.
+\url{https://brauer.maths.qmul.ac.uk/Atlas/v3/alt/A8/}.
+\bibitem{bc} Burness--Crestani, On the generating graph of direct
+powers of a simple group, J. Algebraic Combinatorics 38 (2013),
+329--350. \url{https://doi.org/10.1007/s10801-012-0405-x}.
+Author manuscript p.~2:
+\url{https://seis.bristol.ac.uk/~tb13602/docs/BC_1.pdf}.
+\bibitem{ps} Poudel--Saveliev, Link homology and equivariant gauge
+theory, Algebraic \& Geometric Topology 17 (2017), 2635--2685,
+Section 7.3. \url{https://doi.org/10.2140/agt.2017.17.2635}.
+\bibitem{k3} Baykur--Kirby--Ruberman, eds., K3: A New Problem List in
+Low-Dimensional Topology (2026), Problem 1.18.
+\url{https://bpb-us-e2.wpmucdn.com/websites.umass.edu/dist/b/22144/files/2026/04/K3-problem-list-watermarked.pdf}.
+\bibitem{rz} Rost--Zieschang (1987).
+\url{https://doi.org/10.1112/jlms/s2-35.3.551}.
+\bibitem{bjw} Boileau--Jang--Weidmann (2018).
+Meridional rank and bridge number for a class of links,
+Pacific J. Math. 292(1), Theorem1.2 and Corollary1.3.
+\url{https://doi.org/10.2140/pjm.2018.292.61}.
+\bibitem{afw} Aschenbrenner--Friedl--Wilton, 3-Manifold Groups,
+EMS (2015), \url{https://doi.org/10.4171/154}.
+Read final author manuscript Theorems2.1.2--2.1.3,
+printedpp30--31; earlier author-v3 Theorems2.2--2.3 compared.
+\bibitem{bdjw} Boileau--Dutra--Jang--Weidmann (2017).
+\url{https://arxiv.org/abs/1608.01570}.
+\bibitem{cornwell} Cornwell (2014).
+\url{https://arxiv.org/abs/1303.4943}.
+\bibitem{cornwell17} Cornwell, KCH representations, augmentations,
+and A-polynomials, J. Symplectic Geometry 15 (2017), 983--1017,
+Theorem 1.10 and its proof on arXiv p.~18.
+\url{https://arxiv.org/abs/1310.7526v3}.
+\bibitem{ch} Cornwell--Hemminger (2016).
+\url{https://arxiv.org/abs/1408.4110}.
+\bibitem{wirt} Blair--Kjuchukova--Velazquez--Villanueva (2020).
+\url{https://archive.intlpress.com/site/pub/files/_fulltext/journals/cag/2020/0028/0002/CAG-2020-0028-0002-a002.pdf}.
+\bibitem{bbk} Baader--Blair--Kjuchukova (2021).
+\url{https://doi.org/10.1007/s00208-020-02124-z}.
+\bibitem{twigs} Baader--Blair--Kjuchukova--Misev (2023).
+\url{https://arxiv.org/abs/2008.00763}.
+\bibitem{moriah} Moriah, Heegaard splittings of knot exteriors,
+Geometry \& Topology Monographs 12 (2007), 191--232,
+Theorems 3.6 and 4.20 (reporting Lustig--Moriah 1993).
+\url{https://doi.org/10.2140/gtm.2007.12.191}.
+\bibitem{core} Silver--Traldi--Williams, Core groups,
+J. Knot Theory Ramifications 33 (2024), 2450013, introduction and
+Section 7. \url{https://arxiv.org/abs/2311.02048v2}.
+\bibitem{bk} Baader--Kjuchukova (2020).
+\url{https://arxiv.org/abs/1711.08144}.
+\bibitem{bkm} Blair--Kjuchukova--Morrison (2024).
+\url{https://arxiv.org/abs/2208.09032}.
+\bibitem{fishnet} Blair--Kjuchukova--Pfaff (2026).
+\url{https://doi.org/10.1017/S030500412610214X}.
+\bibitem{plain} Blair--Kjuchukova--Pfaff (2026).
+\url{https://doi.org/10.2140/pjm.2026.342.217}.
+\bibitem{whitehead} Gao--Gu--Li--Wang (2026), preprint.
+\url{https://arxiv.org/abs/2611.15673v1}.
+\bibitem{deposit} Bhattacharjee (2026), unrefereed deposit.
+\url{https://zenodo.org/records/23561157}.
+\bibitem{cesy} Clark--Elhamdadi--Saito--Yeatman, Quandle Colorings of
+Knots and Applications (2014), Sections 6 and 7.
+\url{https://arxiv.org/abs/1312.3307}.
+\bibitem{musick} Musick, Minimal bridge projections for 11-crossing
+prime knots (2012), Theorem 1. \url{https://arxiv.org/abs/1208.4233v3}.
+\bibitem{kl} Kauffman--Lambropoulou, On the classification of rational
+tangles (2004), Theorem 1 and Lemma 2.
+\url{https://arxiv.org/abs/math/0311499v2}.
+\bibitem{preorder} Boileau--Kitano--Nozaki (2025), preprint.
+\url{https://arxiv.org/abs/2510.12372}.
+\end{thebibliography}
+}
+\end{document}

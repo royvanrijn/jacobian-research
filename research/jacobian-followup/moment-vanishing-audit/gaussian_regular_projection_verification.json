@@ -1,0 +1,57 @@
+{
+  "completed": true,
+  "checker_sha256": "718fe122604958fcf9191a5df91a54d1ae785caf9770b93392bd2625c6a87f62",
+  "certificate_sha256": "47f7155c6513c308ec7fbbe45510ac2f67817221a24cb040d0f45822161874e6",
+  "runtime_seconds": 13.623,
+  "sympy_version": "1.14.0",
+  "formal_gaussian_coefficient_checks": 119,
+  "comparison_determinants": 5,
+  "retained_full_cofactor_models": 15,
+  "full_scalar_cofactor_checks": 100,
+  "linear_D_gates": {
+    "nodal": 87,
+    "transverse": 97,
+    "triangle": 98,
+    "cusp": 77,
+    "tangent": 66
+  },
+  "constant_D_gates_retained": {
+    "nodal": 101,
+    "transverse": 106,
+    "triangle": 103,
+    "cusp": 109,
+    "tangent": 105
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 101,
+    "cusp": 109,
+    "transverse": 106,
+    "tangent": 105,
+    "triangle": 103,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 109,
+  "odd_sufficient_pure_prefix_unchanged": 98,
+  "homogeneous_sufficient_pure_prefix_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    109
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    98
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "least_prefix_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "boundary": "Finite formal Gaussian coefficient identities, five generic comparison determinants, 15 retained original Gaussian seed/cofactor families with 100 scalar cofactor checks, all rank/row degree bounds and scalar valuations. All-order formal projection and regular finite connection, determinant-loss/complementary-minor argument, polynomial extension, full coefficient/frame and analytic exclusion proofs remain written inputs. No previous main, fresh literature review, radical search or producer package is run."
+}

@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-15",
+  "purpose": "Historical numerical frontier before104/720/935 class bounds; not current status.",
+  "problem": {
+    "id": "OP-GMC3-PURE-PREFIX",
+    "kind": "open_problem",
+    "state": "open",
+    "title": "Numerical least global pure-moment prefix for ternary cubics",
+    "scope": "Determine the numerical least K such that E(P^j)=0 for j=1,...,K forces all positive pure moments to vanish for every complex polynomial P of total degree<=3 in three Gaussian coordinates. Existence and computability are proved by G3PURECOMPUTE20261115, using the explicit rank8 frame obstruction from G3FRAMEDET20261115 and the retained frame-plus888 internal cubic classification. A terminating exact radical-membership algorithm and algebraic insufficiency witnesses are available in principle. The full twenty-coefficient computation has not been run. The known cusp Z^2*T+W^3 gives a lower bound10, and its scalar line has sharp threshold10; no numeric global upper bound or claim that10 or888 alone suffices is established. The ternary cubic GMC decision is already internally closed and is not this numerical problem. Optimality certificates must distinguish set-theoretic radicals from moment ideal generation or scheme thickness. Independent specialist review of the underlying analytic theorem, term optimality, coefficient schemes and lower-power GVC remain separate. G3REPEATEDFINITE20261115 now supplies an explicit99-moment sufficient pure gate on every nonreduced-leading cubic. Its adapted frame branches need at most93 moments and complementary pure exclusions at most99. The unquantified global frontier is the full squarefree affine leading class; the least repeated-line gate is not claimed known. This class bound does not supply a numerical arbitrary-cubic upper bound.",
+    "canonical_source": "jacobian-followup/moment-vanishing-audit/CUBIC_FRAME_AND_PREFIX_COMPUTABILITY.md",
+    "dependencies": [
+      "G3FRAMEDET20261115",
+      "G3PURECOMPUTE20261115",
+      "G3CUBICALL20261115",
+      "G3CUSP10_20261114",
+      "G3REPEATEDFINITE20261115"
+    ],
+    "checker": null,
+    "proof_type": "not-applicable",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": null,
+    "software_lock": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "primary",
+    "programme_status": "archived"
+  },
+  "work": {
+    "id": "WORK-GMC3-PURE-PREFIX",
+    "kind": "research",
+    "area": "geometry",
+    "title": "Determine the numerical global ternary cubic pure prefix",
+    "target": "OP-GMC3-PURE-PREFIX",
+    "claims": [
+      "OP-GMC3-PURE-PREFIX",
+      "G3FRAMEDET20261115",
+      "G3PURECOMPUTE20261115",
+      "G3CUBICALL20261115",
+      "G3CUSP10_20261114",
+      "G3REPEATEDFINITE20261115"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/CUBIC_FRAME_AND_PREFIX_COMPUTABILITY.md",
+      "jacobian-followup/moment-vanishing-audit/cubic_frame_prefix_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/CUSPIDAL_CUBIC_SHARP_THRESHOLD.md",
+      "jacobian-followup/moment-vanishing-audit/REPEATED_LINE_FINITE_PREFIX.md"
+    ],
+    "next_step": "Determine the numerical least global pure prefix or first obtain a justified explicit numerical upper bound. Use the proved finite target J_frame+(M1,...,M888) and exact radical tests as the stopping criterion. Start from retained small support/covariance charts and sharp lower-bound witnesses; avoid repeating the completed cusp-line threshold10. The full20-variable symbolic expansion and all12870 minors have not been run, and no practical complexity bound is known. A computation must retain its inputs, exact certificates, limits and checkpoints; equality of consecutive moment ideals is insufficient. Keep reduced null-locus questions separate from global moment ideal generation and primary schemes. G3REPEATEDFINITE20261115 gives an explicit99 pure gate on all repeated-line leading cubics:41/99 complementary exclusions and35/92/93 adapted frame bounds. The3*deg-Q mixed cutoff is sharp on this class. Do not confuse these class bounds with a numerical arbitrary-cubic upper bound. Quantitative work can now focus on the full squarefree affine leading class.",
+    "done_when": "A numerical sufficient global prefix has exact radical-membership certificates against the complete finite target; leastness additionally has a verified algebraic witness at the preceding prefix. An abstract halting proof or a successful restricted family does not complete this numerical objective.",
+    "prerequisites": "The full ternary classification is an internal written theorem, with independent analytic review outstanding. Frame rank<8 plus first888 zero moments is equivalent to all-order nullity under that theorem. The current global lower bound is10. Retained primary scheme, term-count and lower-power GVC questions are separate.",
+    "compute": "none",
+    "programme_status": "archived",
+    "reviewed_claims": {
+      "OP-GMC3-PURE-PREFIX": "575a6e1d2acc8b8a",
+      "G3FRAMEDET20261115": "2e537186b63ba86d",
+      "G3PURECOMPUTE20261115": "4fae1a13c27e278b",
+      "G3CUBICALL20261115": "5dcab0132e9183b0",
+      "G3CUSP10_20261114": "6a20c02dd1d0c649",
+      "G3REPEATEDFINITE20261115": "a6de129b96079664"
+    }
+  }
+}

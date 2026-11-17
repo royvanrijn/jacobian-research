@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/UNBOUNDED_SAFE_BOUNDARY_HOMOLOGY_ON_EXCEPTIONAL_QUOTIENTS.md",
+  "proof_sha256": "54a0812fe98e67394b108d962a2010fd3bb0df0f2213626f3d9b0b3dd6627156",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_excess.py",
+  "checker_sha256": "e25696e603dac7a16d9fc02562317fdc99ed9b133a4c2073491223253cdb7eb3",
+  "receipt": "jacobian-followup/moment-vanishing-audit/haar_boundary_excess_verification.json",
+  "receipt_sha256": "d53830774fb2c24c7ee74fd5154352755e1bc5bbc748c97a3b4a6cdd1988c034",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/HAAR_CYCLE_VARIATION_AND_FIBRE_BOUNDARY_LINKING.md",
+      "sha256": "166a7fecd754cfc800e71289281824aaa1c970e836ee307747bdea3084475d4c",
+      "use": "Actual integral variation-cycle criterion and boundary-image/intersection-radical identification. New family disproves universal zero boundary space, not this sufficient theorem."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/NONSPHERICAL_PAIRS_AND_EXCEPTIONAL_SL2.md",
+      "sha256": "88895898edf9d6cb9973be9136bf6e8edbd51765b9db9b36ef4a4f7f0bb3a8ef",
+      "use": "Finite binary/projective group orders and element-order classification."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/QUADRATIC_TRACE_MODELS_AND_HAAR_RESIDUES.md",
+      "sha256": "b8b88d2d4deea937cc9fdcae6937210b394a3b5025d3f19cbd924910c70517ee",
+      "use": "Original matrix algebra and regularity; no unconstrained trace-model phase is used."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/TAME_ORIGINAL_PERIOD_RIGIDITY_AND_PURE_BOUNDARY_DEFECTS.md",
+      "sha256": "987e397af60456014d2545c6b0a69858734aa40785dfde98fc25a325e2613c9b",
+      "use": "Retain the non-tame original-unit condition and do not identify every V defect with boundary homology."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "The Stacks Project authors",
+      "title": "Riemann-Hurwitz, tag 0C1B",
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/stacks_0C1B_boundary_excess_20261116.html",
+      "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+      "read": "Characteristic-zero formula and ramification multiplicities read from the official page on 16 November 2026.",
+      "exact_import": "For a degree-N finite cover of smooth projective complex curves, 2g_X-2=N(2g_Y-2)+sum(e_p-1). Applied first to P1/G and then to the constructed invariant curve."
+    },
+    {
+      "author": "The Stacks Project authors",
+      "title": "Characterization of the projective line, tag 0C6U",
+      "url": "https://stacks.math.columbia.edu/tag/0C6U",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/stacks_0C6U_boundary_excess_20261116.html",
+      "sha256": "acf224df826f7746e25fc89775961760c4f1e6d2aae49d04681a44176159d4d6",
+      "read": "Full proposition and proof read from the official page on 16 November 2026.",
+      "exact_import": "A smooth geometrically integral proper genus-zero curve with a rational point is P1; used for rationality of the diagonal quotient surface."
+    },
+    {
+      "author": "Allen Hatcher",
+      "title": "Algebraic Topology",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/AT.pdf",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/hatcher_algebraic_topology_author.pdf",
+      "sha256": "bebb3032bf9021b956da3bd070eb6c67dc662cf849be9cdf6679f677560e5618",
+      "read": "Retained reading of Theorem 3.43, printed254/PDF263, with pair and Mayer-Vietoris exact sequences. Author-hosted version pinned by hash.",
+      "exact_import": "Poincare--Lefschetz identification of the boundary image with the intersection radical. Independence of the 2g boundary tori is proved directly by intersections and Mayer-Vietoris in the new note."
+    }
+  ],
+  "new_written_arguments": [
+    "Invariant first-jet interpolation on every group orbit for k>=2N; stabilizer characters and an incidence dimension count produce a nonempty open set of smooth invariant curves of bidegree(k+1,k-1).",
+    "All off-diagonal fixed points are forced onto the curve, diagonal fixed points are avoided when the projective exponent divides k. Total ramification is 2N-2, giving exact quotient genus k(k-2)/N.",
+    "Effective left weight one trivializes fibre AND complement families over C*. The fibre compactifies in a rational resolution of (P1xP1)/G and has a boundary component of the computed genus.",
+    "The 2g normal-circle tori over handle loops inject into fibre H2 by Mayer-Vietoris because H3 of the rational compactification is zero, and lie in the intersection radical.",
+    "The actual pure-safe locus therefore has unbounded invariant boundary image with identity monodromy and zero actual variation, at a uniform weight cutoff independent of k."
+  ],
+  "essential_boundaries": [
+    "This is an all-degree geometric barrier, not new single-weight MZ safety. The phases lie in a previously closed one-weight sector.",
+    "The result rules out zero invariant boundary space uniformly on the ENTIRE pure locus. It does NOT disprove such a statement on a narrower unresolved candidate locus.",
+    "Both complete exceptional MZ cases remain OPEN. The actual variation cycle, rather than the dimension or existence of boundary space, remains the exact finish line.",
+    "No expanded generic polynomial, least degree, finite-moment campaign or machine proof of invariant-curve existence/topology is claimed; review stays deferred."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "status": "explicit-classical-import-from-precise-primary-statement",
+  "primary_url": "https://ricerca.sns.it/handle/11384/2572",
+  "doi": "10.1016/S0022-4049(98)00040-1",
+  "title": "The Jacobian conjecture in dimension3 and degree3",
+  "author": "Angelo Vistoli",
+  "year": 1999,
+  "reviewed_primary_abstract": true,
+  "full_text_inspected": false,
+  "theorem_number_verified": false,
+  "imported_to_mathematical_ledger": true,
+  "additional_cubic_profiles": [
+    [
+      3,
+      3,
+      3
+    ]
+  ],
+  "conditional_remaining_profiles": 26,
+  "quartic_manuscript_url": "https://arxiv.org/html/2610.36495v1",
+  "quartic_full_proof_audit_complete": false,
+  "scope": "Source-screening and elementary application dictionary only. No new theorem or global minimum claimed.",
+  "historical_initial_additional_cubic_profiles": [
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      1
+    ],
+    [
+      3,
+      2,
+      2
+    ],
+    [
+      3,
+      3,
+      1
+    ],
+    [
+      3,
+      3,
+      2
+    ],
+    [
+      3,
+      3,
+      3
+    ]
+  ],
+  "current_dense_partition_claim": "GLDC5+GLDC6",
+  "current_dense_exclusions": 48,
+  "current_dense_remaining": 26,
+  "precise_scope_primary_url": "https://www.math.purdue.edu/~ttm/jacobian",
+  "precise_scope_snapshot": "jacobian-followup/small-component-gate/moh-primary-account.html",
+  "precise_scope_snapshot_sha256": "29591bbc082ec140b2dd85b9a34c891af021f336a9ac4cb7d84fc81690c01ed3",
+  "import_claim": "GLDC6",
+  "import_boundary": "Exact primary Moh-Sathaye scope statement plus inspected Vistoli published abstracts; full Vistoli proof remains uninspected and not independently reproduced."
+}

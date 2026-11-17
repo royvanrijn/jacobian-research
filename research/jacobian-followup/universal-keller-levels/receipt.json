@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "result": "pass",
+  "check_count": 162,
+  "checks": [
+    "F3 J[] level0 exact full-source count",
+    "F3 J[] level1 exact full-source count",
+    "F3 J[] level2 exact full-source count",
+    "F3 J[6] level0 exact full-source count",
+    "F3 J[6] level1 exact full-source count",
+    "F3 J[6] level2 exact full-source count",
+    "F3 J[4] level0 exact full-source count",
+    "F3 J[4] level0 four stratum sizes",
+    "F3 J[4] level1 exact full-source count",
+    "F3 J[4] level1 four stratum sizes",
+    "F3 J[4] level2 exact full-source count",
+    "F3 J[4] level2 four stratum sizes",
+    "F3 J[4, 5] level0 exact full-source count",
+    "F3 J[4, 5] level0 four stratum sizes",
+    "F3 J[4, 5] level1 exact full-source count",
+    "F3 J[4, 5] level1 four stratum sizes",
+    "F3 J[4, 5] level2 exact full-source count",
+    "F3 J[4, 5] level2 four stratum sizes",
+    "F5 J[] level0 exact full-source count",
+    "F5 J[] level1 exact full-source count",
+    "F5 J[] level2 exact full-source count",
+    "F5 J[] level3 exact full-source count",
+    "F5 J[] level4 exact full-source count",
+    "F5 J[5] level0 exact full-source count",
+    "F5 J[5] level1 exact full-source count",
+    "F5 J[5] level2 exact full-source count",
+    "F5 J[5] level3 exact full-source count",
+    "F5 J[5] level4 exact full-source count",
+    "F5 J[4] level0 exact full-source count",
+    "F5 J[4] level0 four stratum sizes",
+    "F5 J[4] level1 exact full-source count",
+    "F5 J[4] level1 four stratum sizes",
+    "F5 J[4] level2 exact full-source count",
+    "F5 J[4] level2 four stratum sizes",
+    "F5 J[4] level3 exact full-source count",
+    "F5 J[4] level3 four stratum sizes",
+    "F5 J[4] level4 exact full-source count",
+    "F5 J[4] level4 four stratum sizes",
+    "F5 J[4, 5] level0 exact full-source count",
+    "F5 J[4, 5] level0 four stratum sizes",
+    "F5 J[4, 5] level1 exact full-source count",
+    "F5 J[4, 5] level1 four stratum sizes",
+    "F5 J[4, 5] level2 exact full-source count",
+    "F5 J[4, 5] level2 four stratum sizes",
+    "F5 J[4, 5] level3 exact full-source count",
+    "F5 J[4, 5] level3 four stratum sizes",
+    "F5 J[4, 5] level4 exact full-source count",
+    "F5 J[4, 5] level4 four stratum sizes",
+    "F7 J[7] level0 exact full-source count",
+    "F7 J[7] level1 exact full-source count",
+    "F7 J[7] level2 exact full-source count",
+    "F7 J[7] level3 exact full-source count",
+    "F7 J[7] level4 exact full-source count",
+    "F7 J[7] level5 exact full-source count",
+    "F7 J[7] level6 exact full-source count",
+    "F7 J[4] level0 exact full-source count",
+    "F7 J[4] level0 four stratum sizes",
+    "F7 J[4] level1 exact full-source count",
+    "F7 J[4] level1 four stratum sizes",
+    "F7 J[4] level2 exact full-source count",
+    "F7 J[4] level2 four stratum sizes",
+    "F7 J[4] level3 exact full-source count",
+    "F7 J[4] level3 four stratum sizes",
+    "F7 J[4] level4 exact full-source count",
+    "F7 J[4] level4 four stratum sizes",
+    "F7 J[4] level5 exact full-source count",
+    "F7 J[4] level5 four stratum sizes",
+    "F7 J[4] level6 exact full-source count",
+    "F7 J[4] level6 four stratum sizes",
+    "r1 nonzero motive simplifies",
+    "r1 zero motive simplifies",
+    "r2 nonzero motive simplifies",
+    "r2 zero motive simplifies",
+    "r4 nonzero motive simplifies",
+    "r4 zero motive simplifies",
+    "Pi nonzero level has exact varying unit t",
+    "C nonzero level exact varying unit x",
+    "C zero factors are comaximal",
+    "Pi zero factors are comaximal certificate",
+    "B zero unit certificate xB=2 modulo t",
+    "char2 q2 full Jacobian one",
+    "char2 q2 marked whole fibre degree and etaleness",
+    "char3 q3 full Jacobian one",
+    "char3 q3 marked whole fibre degree and etaleness",
+    "char2 q4 full Jacobian one",
+    "char2 q4 marked whole fibre degree and etaleness",
+    "char5 q5 full Jacobian one",
+    "char5 q5 marked whole fibre degree and etaleness",
+    "char3 q9 full Jacobian one",
+    "char3 q9 marked whole fibre degree and etaleness",
+    "F2 affine element 1,0 global covariance",
+    "F2 affine element 1,1 global covariance",
+    "F2 marked fibre has exactly its p labels",
+    "F2 affine group doubly transitive",
+    "F3 affine element 1,0 global covariance",
+    "F3 affine element 1,1 global covariance",
+    "F3 affine element 1,2 global covariance",
+    "F3 affine element 2,0 global covariance",
+    "F3 affine element 2,1 global covariance",
+    "F3 affine element 2,2 global covariance",
+    "F3 marked fibre has exactly its p labels",
+    "F3 affine group doubly transitive",
+    "F5 affine element 1,0 global covariance",
+    "F5 affine element 1,1 global covariance",
+    "F5 affine element 1,2 global covariance",
+    "F5 affine element 1,3 global covariance",
+    "F5 affine element 1,4 global covariance",
+    "F5 affine element 2,0 global covariance",
+    "F5 affine element 2,1 global covariance",
+    "F5 affine element 2,2 global covariance",
+    "F5 affine element 2,3 global covariance",
+    "F5 affine element 2,4 global covariance",
+    "F5 affine element 3,0 global covariance",
+    "F5 affine element 3,1 global covariance",
+    "F5 affine element 3,2 global covariance",
+    "F5 affine element 3,3 global covariance",
+    "F5 affine element 3,4 global covariance",
+    "F5 affine element 4,0 global covariance",
+    "F5 affine element 4,1 global covariance",
+    "F5 affine element 4,2 global covariance",
+    "F5 affine element 4,3 global covariance",
+    "F5 affine element 4,4 global covariance",
+    "F5 marked fibre has exactly its p labels",
+    "F5 affine group doubly transitive",
+    "F4 affine 1,0 polynomial covariance",
+    "F4 affine 1,1 polynomial covariance",
+    "F4 affine 1,alpha polynomial covariance",
+    "F4 affine 1,alpha + 1 polynomial covariance",
+    "F4 affine alpha,0 polynomial covariance",
+    "F4 affine alpha,1 polynomial covariance",
+    "F4 affine alpha,alpha polynomial covariance",
+    "F4 affine alpha,alpha + 1 polynomial covariance",
+    "F4 affine alpha + 1,0 polynomial covariance",
+    "F4 affine alpha + 1,1 polynomial covariance",
+    "F4 affine alpha + 1,alpha polynomial covariance",
+    "F4 affine alpha + 1,alpha + 1 polynomial covariance",
+    "F4 marked fibre splits as its four labels",
+    "F4 affine group double transitivity, composite degree four",
+    "affine source has no translation-fixed origin",
+    "target linear affine-group action fixes marked origin",
+    "split 1+1+1 normalized entire fibre algebra",
+    "split 1+1+1 all roots etale",
+    "split 1+1+1 source reconstructs target",
+    "type 1+2 normalized entire fibre algebra",
+    "type 1+2 all roots etale",
+    "type 1+2 source reconstructs target",
+    "field degree 3 normalized entire fibre algebra",
+    "field degree 3 all roots etale",
+    "field degree 3 source reconstructs target",
+    "field degree 3 irreducible",
+    "split cubic has three distinct rational labels",
+    "1+2 residual quadratic irreducible",
+    "univariate char3 discriminant independent of target",
+    "univariate char3 degree6 constant discriminant",
+    "univariate char5 degree5 constant discriminant",
+    "characteristic-three positive one-dimensional fibre degree is allowed",
+    "S3 wild permutation fixed-line control",
+    "natural three-label set has no full S3 fixed label",
+    "source pin jacobian-followup/universal-keller-receiver/PROOF.md",
+    "source pin jacobian-followup/universal-keller-structure/PROOF.md",
+    "source pin jacobian-followup/universal-keller-trace/PROOF.md",
+    "source pin archive/non-elliptic/verified/PRIMITIVE_MONODROMY_ATOMICITY.md"
+  ],
+  "full_source_count_controls": [
+    {
+      "field_size": 3,
+      "retained_indices": [],
+      "level_counts": [
+        9,
+        9,
+        9
+      ],
+      "active_seed": false,
+      "affine_exception": true
+    },
+    {
+      "field_size": 3,
+      "retained_indices": [
+        6
+      ],
+      "level_counts": [
+        27,
+        27,
+        27
+      ],
+      "active_seed": false,
+      "affine_exception": true
+    },
+    {
+      "field_size": 3,
+      "retained_indices": [
+        4
+      ],
+      "level_counts": [
+        23,
+        29,
+        29
+      ],
+      "active_seed": true,
+      "affine_exception": false
+    },
+    {
+      "field_size": 3,
+      "retained_indices": [
+        4,
+        5
+      ],
+      "level_counts": [
+        69,
+        87,
+        87
+      ],
+      "active_seed": true,
+      "affine_exception": false
+    },
+    {
+      "field_size": 5,
+      "retained_indices": [],
+      "level_counts": [
+        21,
+        26,
+        26,
+        26,
+        26
+      ],
+      "active_seed": false,
+      "affine_exception": false
+    },
+    {
+      "field_size": 5,
+      "retained_indices": [
+        5
+      ],
+      "level_counts": [
+        105,
+        130,
+        130,
+        130,
+        130
+      ],
+      "active_seed": false,
+      "affine_exception": false
+    },
+    {
+      "field_size": 5,
+      "retained_indices": [
+        4
+      ],
+      "level_counts": [
+        109,
+        129,
+        129,
+        129,
+        129
+      ],
+      "active_seed": true,
+      "affine_exception": false
+    },
+    {
+      "field_size": 5,
+      "retained_indices": [
+        4,
+        5
+      ],
+      "level_counts": [
+        545,
+        645,
+        645,
+        645,
+        645
+      ],
+      "active_seed": true,
+      "affine_exception": false
+    },
+    {
+      "field_size": 7,
+      "retained_indices": [
+        7
+      ],
+      "level_counts": [
+        301,
+        350,
+        350,
+        350,
+        350,
+        350,
+        350
+      ],
+      "active_seed": false,
+      "affine_exception": false
+    },
+    {
+      "field_size": 7,
+      "retained_indices": [
+        4
+      ],
+      "level_counts": [
+        307,
+        349,
+        349,
+        349,
+        349,
+        349,
+        349
+      ],
+      "active_seed": true,
+      "affine_exception": false
+    }
+  ],
+  "complete_fibre_controls": [
+    {
+      "label": "split 1+1+1",
+      "field": "F3",
+      "rank": 3,
+      "target_u": 0,
+      "target_v": 0
+    },
+    {
+      "label": "type 1+2",
+      "field": "F3",
+      "rank": 3,
+      "target_u": 2,
+      "target_v": 0
+    },
+    {
+      "label": "field degree 3",
+      "field": "F3",
+      "rank": 3,
+      "target_u": 0,
+      "target_v": 2
+    }
+  ],
+  "assurance": "Bounded exact controls supplement written all-degree and all-field proofs. Point-count specialization, Hilbert 90, associated-bundle descent and generic monodromy are not inferred from these finite examples and are not formally verified.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "runtime_seconds": 0.108,
+  "sha256": {
+    "PROOF.md": "1e7143e3319882a2580c1bac6c0e106267b1301ab5e7e498e8be23f17e99f2d1",
+    "LITERATURE_AND_GAPS.md": "faca82a32c763c70578ec23c788b42ad7171bcd2e97afa99388836952811c9d7",
+    "verify.py": "891ec9a08c084d1a9740ed229552974f5b6d236fc202758ff7453f0a1d61bf31",
+    "sources.json": "21254a3cf13dc36e63eb20db5bffdb89d41dc8e61e8ee0da0d2cc530f4fcb1c7"
+  }
+}

@@ -1,0 +1,1486 @@
+{
+  "as_of": "2026-11-16",
+  "outcome": "PASS",
+  "check_count": 86,
+  "checks": [
+    "predecessor PASS polynomial_key_chain_receipt.json",
+    "sealed predecessor polynomial_key_chain_receipt.json verify_polynomial_key_chain.py",
+    "sealed predecessor polynomial_key_chain_receipt.json key_sequence_obstruction.py",
+    "sealed predecessor polynomial_key_chain_receipt.json POLYNOMIAL_KEY_CHAIN_OBSTRUCTION_AND_LAURENT_TERMINAL_NECESSITY.md",
+    "sealed predecessor polynomial_key_chain_receipt.json sources/polynomial-key-chain/manifest.json",
+    "sealed predecessor polynomial_key_chain_receipt.json monic_key_chart_audit_receipt.json",
+    "sealed predecessor polynomial_key_chain_receipt.json sources/monic-key-chart-audit/mondal-13075577v4.html",
+    "sealed predecessor polynomial_key_chain_receipt.json sources/coordinate-negative-canonical/mondal-sign-mmj-2017.pdf",
+    "predecessor PASS proper_finite_marked_end_receipt.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json verify_proper_finite_marked_end.py",
+    "sealed predecessor proper_finite_marked_end_receipt.json PROPER_FINITE_MARKED_END_AND_COMPONENT_OPEN_AUDIT.md",
+    "sealed predecessor proper_finite_marked_end_receipt.json peripheral_boundary_lattices.py",
+    "sealed predecessor proper_finite_marked_end_receipt.json composed_peripheral_cover.py",
+    "sealed predecessor proper_finite_marked_end_receipt.json sources/proper-finite-end/manifest.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json unit_peripheral_coverage_receipt.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor proper_finite_marked_end_receipt.json sources/intrinsic-normalization/BGV160.pdf",
+    "sealed predecessor proper_finite_marked_end_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "predecessor PASS recursive_linking_endpoints_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json verify_recursive_linking_endpoints.py",
+    "sealed predecessor recursive_linking_endpoints_receipt.json RECURSIVE_LINKING_AND_ENDPOINT_TAIL_CLOSURE.md",
+    "sealed predecessor recursive_linking_endpoints_receipt.json composed_peripheral_cover.py",
+    "sealed predecessor recursive_linking_endpoints_receipt.json compare_dihedral_linking.py",
+    "sealed predecessor recursive_linking_endpoints_receipt.json dihedral_author_comparison.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/recursive-linking-endpoints/manifest.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/recursive-linking-endpoints/author_code_pin.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json genus_final_s3_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json global_ruling_unfilled_cyclic_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/global-ruling-unfilled-cyclic/dubouloz-kishimoto-1212.0521v1.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/genus-final-s3/hom-0912.4046v1.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/genus-final-s3/ozsvath-szabo-math0504404v1.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/recursive-linking-endpoints/cahn-kjuchukova-1611.10330v2.html",
+    "sealed predecessor recursive_linking_endpoints_receipt.json sources/recursive-linking-endpoints/cahn-dihedrallinking-bcb80912ad35.py",
+    "exact primary pin clay-watson-11032358v1.html",
+    "exact primary pin dihedral-linking-2112.14790v2.html",
+    "unmodified original author source and completed comparison retained",
+    "universal Z[t] unit certificate e=1",
+    "universal Z[t] unit certificate e=3",
+    "independent literal relator rows []4",
+    "independent literal full peripheral lift (4, [], 0)",
+    "independent literal relator rows []3",
+    "independent literal full peripheral lift (3, [], 0)",
+    "independent literal full peripheral lift (3, [], 1)",
+    "independent literal relator rows [(3, 2)]3",
+    "independent literal full peripheral lift (3, [(3, 2)], 0)",
+    "independent literal full peripheral lift (3, [(3, 2)], 1)",
+    "nonzero shear and rational core order exact False",
+    "independent unreduced Smith normal filling False",
+    "nonzero shear and rational core order exact True",
+    "independent unreduced Smith normal filling True",
+    "both spanning trees retain rational matrix torsion defects and all filling groups",
+    "same rational matrix does not determine actual integral core order or filled group",
+    "non-rational-null core rejected rather than assigning a linking number",
+    "full periphery reduces to old integral preferred framing degree 3",
+    "unmodified author off-diagonal comparison retained degree 3",
+    "full periphery reduces to old integral preferred framing degree 5",
+    "unmodified author off-diagonal comparison retained degree 5",
+    "full periphery reduces to old integral preferred framing degree 7",
+    "unmodified author off-diagonal comparison retained degree 7",
+    "actual longitude joins meridian cycles seed degree 8",
+    "both trees retain full longitude-joining seed degree 8",
+    "all-length exact family control (8, 1, 1)",
+    "all-length exact family control (8, 3, 1)",
+    "all-length exact family control (8, 12, 1)",
+    "all-length exact family control (8, 1, 1000000000000000000000000000000)",
+    "actual longitude joins meridian cycles seed degree 24",
+    "both trees retain full longitude-joining seed degree 24",
+    "all-length exact family control (24, 1, 1)",
+    "exact transfer retains unrelated closed torsion summand"
+  ],
+  "general": {
+    "arbitrary_longitude_monodromy": true,
+    "joint_orbit_boundary_tori": true,
+    "integral_surface_balance_eL_minus_am": true,
+    "rational_linking_symmetric_Fe_equals_a": true,
+    "exact_core_orders_and_minimal_denominator_torsion_defect": true,
+    "arbitrary_filling_integer_rows_retained": true,
+    "all_finite_iterated_lengths_composed": true
+  },
+  "universal_cable_theorem": {
+    "orbit_types": [
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        0
+      ]
+    ],
+    "parameters": "r=36t+1,k=36t-5,t>=1",
+    "exact_Zt_unimodular_certificates": [
+      {
+        "normal_index": 1,
+        "longitudinal_degree": 2,
+        "shear": 0,
+        "winding": "36*t + 1",
+        "cable_parameter": "36*t - 5",
+        "coefficient_ring": "Z[t]",
+        "parameter_range": "all integers t>=1",
+        "original_rows": [
+          [
+            "1",
+            "-1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "5 - 36*t",
+            "0",
+            "-18*t",
+            "18*t + 1",
+            "18*t"
+          ],
+          [
+            "0",
+            "5 - 36*t",
+            "-18*t - 1",
+            "18*t",
+            "18*t + 1"
+          ]
+        ],
+        "original_ports": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "1 - 6*t",
+            "0",
+            "-3*t",
+            "3*t",
+            "3*t"
+          ],
+          [
+            "7776*t**3 - 2160*t**2 + 150*t",
+            "7776*t**3 - 2160*t**2 + 150*t",
+            "7776*t**3 - 864*t**2 + 6*t + 1",
+            "-7776*t**3 + 864*t**2 + 30*t",
+            "-7776*t**3 + 864*t**2 + 30*t"
+          ]
+        ],
+        "unimodular_operations": [
+          [
+            "pivot",
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "row_subtract",
+            "2",
+            "1"
+          ],
+          [
+            "pivot",
+            "2",
+            "1",
+            "-1"
+          ],
+          [
+            "column_add",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "column_add",
+            "1",
+            "0",
+            "6*t - 1"
+          ],
+          [
+            "pivot",
+            "1",
+            "0",
+            "-1"
+          ]
+        ],
+        "final_rows": [
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "final_ports": [
+          [
+            "36*t + 1",
+            "0"
+          ],
+          [
+            "5 - 36*t",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "-1296*t**2 + 144*t + 5",
+            "36*t + 1"
+          ]
+        ],
+        "basis_determinant": 1,
+        "H1_free_rank": 2,
+        "H1_torsion": [],
+        "basis": [
+          "m_new",
+          "L_old"
+        ],
+        "all_parameter_port_identities": [
+          "m_old=r*m_new",
+          "L_new=r*L_old"
+        ],
+        "parameter_samples_used_as_proof": false
+      },
+      {
+        "normal_index": 3,
+        "longitudinal_degree": 2,
+        "shear": 0,
+        "winding": "36*t + 1",
+        "cable_parameter": "36*t - 5",
+        "coefficient_ring": "Z[t]",
+        "parameter_range": "all integers t>=1",
+        "original_rows": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "2 - 12*t",
+            "0",
+            "-18*t",
+            "0",
+            "0",
+            "-18*t - 1",
+            "0",
+            "6*t + 1",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t"
+          ],
+          [
+            "0",
+            "2 - 12*t",
+            "0",
+            "-18*t",
+            "0",
+            "0",
+            "-18*t - 1",
+            "6*t",
+            "6*t + 1",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t"
+          ],
+          [
+            "2 - 12*t",
+            "0",
+            "0",
+            "0",
+            "-18*t",
+            "0",
+            "0",
+            "6*t",
+            "6*t",
+            "6*t + 1",
+            "6*t",
+            "6*t",
+            "6*t"
+          ],
+          [
+            "0",
+            "2 - 12*t",
+            "-18*t - 1",
+            "0",
+            "0",
+            "-18*t",
+            "0",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t + 1",
+            "6*t",
+            "6*t"
+          ],
+          [
+            "1 - 12*t",
+            "0",
+            "0",
+            "-18*t - 1",
+            "0",
+            "0",
+            "-18*t",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t + 1",
+            "6*t"
+          ],
+          [
+            "0",
+            "1 - 12*t",
+            "0",
+            "0",
+            "-18*t - 1",
+            "0",
+            "0",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t",
+            "6*t + 1"
+          ]
+        ],
+        "original_ports": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1 - 6*t",
+            "0",
+            "-3*t",
+            "-3*t",
+            "-3*t",
+            "-3*t",
+            "-3*t",
+            "3*t",
+            "3*t",
+            "3*t",
+            "3*t",
+            "3*t",
+            "3*t"
+          ],
+          [
+            "2592*t**3 - 720*t**2 + 50*t",
+            "2592*t**3 - 720*t**2 + 50*t",
+            "2592*t**3 - 288*t**2 - 12*t",
+            "2592*t**3 - 288*t**2 - 12*t",
+            "2592*t**3 - 288*t**2 + 30*t + 1",
+            "2592*t**3 - 288*t**2 - 12*t",
+            "2592*t**3 - 288*t**2 - 12*t",
+            "-2592*t**3 + 288*t**2 + 10*t",
+            "-2592*t**3 + 288*t**2 + 10*t",
+            "-2592*t**3 + 288*t**2 + 10*t",
+            "-2592*t**3 + 288*t**2 + 10*t",
+            "-2592*t**3 + 288*t**2 + 10*t",
+            "-2592*t**3 + 288*t**2 + 10*t"
+          ]
+        ],
+        "unimodular_operations": [
+          [
+            "pivot",
+            "0",
+            "5",
+            "1"
+          ],
+          [
+            "pivot",
+            "1",
+            "1",
+            "-1"
+          ],
+          [
+            "pivot",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "pivot",
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "pivot",
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "row_subtract",
+            "3",
+            "1"
+          ],
+          [
+            "pivot",
+            "3",
+            "2",
+            "-1"
+          ],
+          [
+            "row_subtract",
+            "4",
+            "1"
+          ],
+          [
+            "pivot",
+            "4",
+            "3",
+            "-1"
+          ],
+          [
+            "row_subtract",
+            "4",
+            "2"
+          ],
+          [
+            "pivot",
+            "4",
+            "2",
+            "-1"
+          ],
+          [
+            "row_subtract",
+            "2",
+            "1"
+          ],
+          [
+            "pivot",
+            "2",
+            "1",
+            "-1"
+          ],
+          [
+            "row_subtract",
+            "2",
+            "1"
+          ],
+          [
+            "pivot",
+            "2",
+            "0",
+            "-1"
+          ],
+          [
+            "column_add",
+            "0",
+            "1",
+            "18*t"
+          ],
+          [
+            "pivot",
+            "1",
+            "1",
+            "1"
+          ]
+        ],
+        "final_rows": [
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "final_ports": [
+          [
+            "-36*t - 1",
+            "36*t + 1"
+          ],
+          [
+            "36*t - 1",
+            "2 - 36*t"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "1296*t**2 - 1",
+            "-1296*t**2 + 36*t + 2"
+          ]
+        ],
+        "basis_determinant": -1,
+        "H1_free_rank": 2,
+        "H1_torsion": [],
+        "basis": [
+          "m_new",
+          "L_old"
+        ],
+        "all_parameter_port_identities": [
+          "m_old=r*m_new",
+          "L_new=r*L_old"
+        ],
+        "parameter_samples_used_as_proof": false
+      }
+    ],
+    "arbitrary_cover_degree": true,
+    "arbitrary_finite_length": true,
+    "F_new": "r^2 F_old",
+    "closed_H1_preserved": true,
+    "core_class_multiplied_by_winding": true,
+    "core_order_new": "q/gcd(q,r)",
+    "finite_samples_used_as_universal_proof": false
+  },
+  "shear_and_torsion_control": {
+    "data": {
+      "matrix": [
+        [
+          "1/2"
+        ]
+      ],
+      "core_orders": [
+        4
+      ],
+      "all_cores_integrally_zero": false,
+      "rational_row_denominators": [
+        2
+      ],
+      "cleared_relation_torsion_orders": [
+        2
+      ],
+      "closed_H1": {
+        "free": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "normal_indices": [
+        4
+      ],
+      "shears": [
+        2
+      ],
+      "longitudinal_degrees": [
+        1
+      ],
+      "weighted_balance": "F*e=a",
+      "integral_lifted_surface_balance_verified": true,
+      "complete_filled_manifold_torsion_linking_form_computed": false
+    },
+    "arbitrary_integral_fillings_m_plus_sL": {
+      "-2": {
+        "free": 1,
+        "torsion": []
+      },
+      "-1": {
+        "free": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "0": {
+        "free": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "1": {
+        "free": 0,
+        "torsion": [
+          2,
+          6
+        ]
+      },
+      "2": {
+        "free": 0,
+        "torsion": [
+          16
+        ]
+      },
+      "3": {
+        "free": 0,
+        "torsion": [
+          2,
+          10
+        ]
+      }
+    }
+  },
+  "same_matrix_different_integral_control": {
+    "matrix": [
+      [
+        "1/2"
+      ]
+    ],
+    "core_orders": [
+      2
+    ],
+    "all_cores_integrally_zero": false,
+    "rational_row_denominators": [
+      2
+    ],
+    "cleared_relation_torsion_orders": [
+      1
+    ],
+    "closed_H1": {
+      "free": 0,
+      "torsion": [
+        2
+      ]
+    },
+    "normal_indices": [
+      2
+    ],
+    "shears": [
+      1
+    ],
+    "longitudinal_degrees": [
+      1
+    ],
+    "weighted_balance": "F*e=a",
+    "integral_lifted_surface_balance_verified": true,
+    "complete_filled_manifold_torsion_linking_form_computed": false
+  },
+  "dihedral_overlap": [
+    {
+      "degree": 3,
+      "matrix": [
+        [
+          "-1",
+          "2"
+        ],
+        [
+          "2",
+          "-4"
+        ]
+      ],
+      "author_offdiagonal": [
+        "2"
+      ],
+      "author_diagonal_framing_identified": false,
+      "new_author_execution_claimed": false
+    },
+    {
+      "degree": 5,
+      "matrix": [
+        [
+          "-3",
+          "2",
+          "2"
+        ],
+        [
+          "2",
+          "-8",
+          "2"
+        ],
+        [
+          "2",
+          "2",
+          "-3"
+        ]
+      ],
+      "author_offdiagonal": [
+        "2",
+        "2",
+        "2"
+      ],
+      "author_diagonal_framing_identified": false,
+      "new_author_execution_claimed": false
+    },
+    {
+      "degree": 7,
+      "matrix": [
+        [
+          "-5",
+          "2",
+          "2",
+          "2"
+        ],
+        [
+          "2",
+          "-5",
+          "2",
+          "2"
+        ],
+        [
+          "2",
+          "2",
+          "-5",
+          "2"
+        ],
+        [
+          "2",
+          "2",
+          "2",
+          "-12"
+        ]
+      ],
+      "author_offdiagonal": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "author_diagonal_framing_identified": false,
+      "new_author_execution_claimed": false
+    }
+  ],
+  "nontrivial_longitude_seeds": [
+    {
+      "degree": 8,
+      "rho": [
+        [
+          5,
+          2,
+          0,
+          6,
+          3,
+          1,
+          7,
+          4
+        ],
+        [
+          6,
+          4,
+          0,
+          7,
+          2,
+          1,
+          5,
+          3
+        ]
+      ],
+      "result": {
+        "matrix": [
+          [
+            "-9",
+            "3"
+          ],
+          [
+            "3",
+            "-1"
+          ]
+        ],
+        "core_orders": [
+          1,
+          1
+        ],
+        "all_cores_integrally_zero": true,
+        "rational_row_denominators": [
+          1,
+          1
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "normal_indices": [
+          1,
+          3
+        ],
+        "shears": [
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          2,
+          2
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      }
+    },
+    {
+      "degree": 24,
+      "rho": [
+        [
+          6,
+          12,
+          9,
+          15,
+          21,
+          18,
+          3,
+          22,
+          13,
+          4,
+          19,
+          7,
+          5,
+          16,
+          10,
+          0,
+          20,
+          11,
+          1,
+          23,
+          8,
+          2,
+          17,
+          14
+        ],
+        [
+          8,
+          14,
+          11,
+          16,
+          22,
+          19,
+          4,
+          23,
+          12,
+          5,
+          20,
+          6,
+          3,
+          17,
+          9,
+          2,
+          18,
+          10,
+          0,
+          21,
+          7,
+          1,
+          15,
+          13
+        ]
+      ],
+      "result": {
+        "matrix": [
+          [
+            "-3",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "-3",
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "1",
+            "-3",
+            "1"
+          ],
+          [
+            "1",
+            "1",
+            "1",
+            "-3"
+          ]
+        ],
+        "core_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_cores_integrally_zero": true,
+        "rational_row_denominators": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "normal_indices": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "shears": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      }
+    }
+  ],
+  "all_length_family_controls": [
+    {
+      "degree": 8,
+      "parameters": [
+        1
+      ],
+      "winding_product": "37",
+      "result": {
+        "matrix": [
+          [
+            "-12321",
+            "4107"
+          ],
+          [
+            "4107",
+            "-1369"
+          ]
+        ],
+        "core_orders": [
+          1,
+          1
+        ],
+        "all_cores_integrally_zero": true,
+        "rational_row_denominators": [
+          1,
+          1
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "normal_indices": [
+          1,
+          3
+        ],
+        "shears": [
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          2,
+          2
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      },
+      "expanded_words_or_diagrams": false
+    },
+    {
+      "degree": 8,
+      "parameters": [
+        1,
+        2,
+        1
+      ],
+      "winding_product": "99937",
+      "result": {
+        "matrix": [
+          [
+            "-89886635721",
+            "29962211907"
+          ],
+          [
+            "29962211907",
+            "-9987403969"
+          ]
+        ],
+        "core_orders": [
+          1,
+          1
+        ],
+        "all_cores_integrally_zero": true,
+        "rational_row_denominators": [
+          1,
+          1
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "normal_indices": [
+          1,
+          3
+        ],
+        "shears": [
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          2,
+          2
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      },
+      "expanded_words_or_diagrams": false
+    },
+    {
+      "degree": 8,
+      "parameters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "winding_product": "6582952005840035281",
+      "result": {
+        "matrix": [
+          [
+            "-390017314000740095103285324749922740649",
+            "130005771333580031701095108249974246883"
+          ],
+          [
+            "130005771333580031701095108249974246883",
+            "-43335257111193343900365036083324748961"
+          ]
+        ],
+        "core_orders": [
+          1,
+          1
+        ],
+        "all_cores_integrally_zero": true,
+        "rational_row_denominators": [
+          1,
+          1
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "normal_indices": [
+          1,
+          3
+        ],
+        "shears": [
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          2,
+          2
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      },
+      "expanded_words_or_diagrams": false
+    },
+    {
+      "degree": 8,
+      "parameters": [
+        1000000000000000000000000000000
+      ],
+      "winding_product": "36000000000000000000000000000001",
+      "result": {
+        "matrix": [
+          [
+            "-11664000000000000000000000000000648000000000000000000000000000009",
+            "3888000000000000000000000000000216000000000000000000000000000003"
+          ],
+          [
+            "3888000000000000000000000000000216000000000000000000000000000003",
+            "-1296000000000000000000000000000072000000000000000000000000000001"
+          ]
+        ],
+        "core_orders": [
+          1,
+          1
+        ],
+        "all_cores_integrally_zero": true,
+        "rational_row_denominators": [
+          1,
+          1
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "normal_indices": [
+          1,
+          3
+        ],
+        "shears": [
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          2,
+          2
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      },
+      "expanded_words_or_diagrams": false
+    },
+    {
+      "degree": 24,
+      "parameters": [
+        1
+      ],
+      "winding_product": "37",
+      "result": {
+        "matrix": [
+          [
+            "-4107",
+            "1369",
+            "1369",
+            "1369"
+          ],
+          [
+            "1369",
+            "-4107",
+            "1369",
+            "1369"
+          ],
+          [
+            "1369",
+            "1369",
+            "-4107",
+            "1369"
+          ],
+          [
+            "1369",
+            "1369",
+            "1369",
+            "-4107"
+          ]
+        ],
+        "core_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_cores_integrally_zero": true,
+        "rational_row_denominators": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "cleared_relation_torsion_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "closed_H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "normal_indices": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "shears": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "longitudinal_degrees": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "weighted_balance": "F*e=a",
+        "integral_lifted_surface_balance_verified": true,
+        "complete_filled_manifold_torsion_linking_form_computed": false
+      },
+      "expanded_words_or_diagrams": false
+    }
+  ],
+  "added_torsion_control": {
+    "before": {
+      "matrix": [
+        [
+          "-27",
+          "9"
+        ],
+        [
+          "9",
+          "-3"
+        ]
+      ],
+      "core_orders": [
+        1,
+        1
+      ],
+      "all_cores_integrally_zero": true,
+      "rational_row_denominators": [
+        1,
+        1
+      ],
+      "cleared_relation_torsion_orders": [
+        1,
+        1
+      ],
+      "closed_H1": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "normal_indices": [
+        1,
+        3
+      ],
+      "shears": [
+        0,
+        0
+      ],
+      "longitudinal_degrees": [
+        2,
+        2
+      ],
+      "weighted_balance": "F*e=a",
+      "integral_lifted_surface_balance_verified": true,
+      "complete_filled_manifold_torsion_linking_form_computed": false
+    },
+    "after": {
+      "matrix": [
+        [
+          "-36963",
+          "12321"
+        ],
+        [
+          "12321",
+          "-4107"
+        ]
+      ],
+      "core_orders": [
+        1,
+        1
+      ],
+      "all_cores_integrally_zero": true,
+      "rational_row_denominators": [
+        1,
+        1
+      ],
+      "cleared_relation_torsion_orders": [
+        1,
+        1
+      ],
+      "closed_H1": {
+        "free": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "normal_indices": [
+        1,
+        3
+      ],
+      "shears": [
+        0,
+        0
+      ],
+      "longitudinal_degrees": [
+        2,
+        2
+      ],
+      "weighted_balance": "F*e=a",
+      "integral_lifted_surface_balance_verified": true,
+      "complete_filled_manifold_torsion_linking_form_computed": false
+    }
+  },
+  "assurance": {
+    "written_full_peripheral_and_linking_proofs": true,
+    "unbounded_parameter_unit_certificate": true,
+    "finite_controls_not_universal_proof": true,
+    "published_quartic_retirement_preserved": true,
+    "original_author_comparison_reused_truthfully": true,
+    "complete_filled_torsion_linking_form_computed": false,
+    "new_covers_identified_as_dihedral": false,
+    "arbitrary_Laurent_Keller_boundaries_excluded": false,
+    "new_higher_degree_Keller_exclusion_proved": false,
+    "arbitrary_affine_or_Keller_realization_asserted": false,
+    "formal_verification": false,
+    "external_review": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_full_peripheral_linking.py": "31ba14a10b40b7c15cb949db649e52808a1be434eac9cb0cadb0eab8e8f14ca9",
+    "full_peripheral_linking.py": "c7e9d6fa8c5b03b93969c1ae3776c11290e5517b89af11392d4092e58d5079ff",
+    "longitude_joining_transfer_certificate.py": "b641f18c6829ae2063310eca8f227391f0990beaa91c8b88b48febc30c8bf16c",
+    "FULL_PERIPHERAL_RATIONAL_LINKING_AND_LONGITUDE_JOINING_RECURSION.md": "cdac815c9fdc8085f94e45d8dfdd7e5d0f2cebaaa15b3950c39480b03c53b9f5",
+    "sources/full-peripheral-linking/manifest.json": "8c5ef13b2e8192fbf26f7a0f34a62032b0f86dde263a50084a6bbe7451c1be0f",
+    "composed_peripheral_cover.py": "0e803ef1da3d429b6a6d20dba114992f6af6bb7760d80673722218824d29eedf",
+    "peripheral_boundary_lattices.py": "b754ee4a560fbef593e38a45b2a98b319dc8548f85dc6eeba8ca34419d2e9215",
+    "dihedral_author_comparison.json": "9fd1947a790299c443846ea4af14dbc1930068a881d0886977180dd6f21a8087",
+    "sources/recursive-linking-endpoints/author_code_pin.json": "d36ee27b3365de78f7a296818b3174f0ee9b8c7780f89a3a34720bd3852f270e",
+    "sources/recursive-linking-endpoints/cahn-dihedrallinking-bcb80912ad35.py": "6cb9058b04457e057d86b83a3fdb7cf5e64f5ce162ff363388648d1f91985164",
+    "polynomial_key_chain_receipt.json": "2e1948b2553a8117e4540c1f14d1b2781f0c89c8d8db05f9ecfd74f42f61cec1",
+    "proper_finite_marked_end_receipt.json": "3417c0758eaf1a296cbf0bce2c4bcc4e2ead5a4cb5931e024f84ed254ca751fa",
+    "recursive_linking_endpoints_receipt.json": "0f688227cbb9ee043b4933eeff75104bd0dd1e5cead248827ac86d45f2776c87",
+    "sources/full-peripheral-linking/clay-watson-11032358v1.html": "4cdff593b461694b0282f57a1726aa78b7795c31757a2b0182c25e4a1baf998f",
+    "sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html": "c86826922f0ccb585b10cec2407eda9a1cbc2d36a16d35f9a6308c81914acc74"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "group": "2I",
+    "parameter_count": 1,
+    "phase_terms": []
+  },
+  "preparation": {
+    "group": "2I",
+    "group_order": 120,
+    "group_root_parameter": null,
+    "group_radicand": 5,
+    "parameter_count": 1,
+    "ordinary_parameter_ideal": [],
+    "homogeneous_lift_degree": 0,
+    "active_gaussian_coordinates": [
+      0
+    ],
+    "gaussian_family_input": {
+      "dimension": 1,
+      "parameter_count": 1,
+      "phase_terms": [],
+      "parameter_ideal": []
+    },
+    "canonical_original_phase_terms": [],
+    "ordinary_nilpotents_retained": true,
+    "invariance_checked_mod_ordinary_ideal": true,
+    "fixed_homogeneous_degree_used_on_every_fibre": true,
+    "numerical_cutoffs_computed": false
+  },
+  "gaussian_family_result": {
+    "nodes": [
+      {
+        "exceptional_ideal": [
+          [
+            [
+              [
+                0
+              ],
+              "1"
+            ]
+          ]
+        ],
+        "ambient_restricted_source_presentation": "matrix {{dc0, dt}}",
+        "dual_time_direct_image_H0": "matrix {}",
+        "dimension": 1,
+        "whole_closure_safe": true,
+        "codimension": 0,
+        "generic_polynomial_Hom_dimension": 1,
+        "conormal_multiplicity": {
+          "conormal_ideal": [
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                "1"
+              ]
+            ]
+          ],
+          "numerator": 1,
+          "denominator": 1
+        },
+        "dual_time_direct_image_Hminus1": "matrix {{dc0}}",
+        "stratum_closure_ideal": [],
+        "children": []
+      }
+    ],
+    "status": "DECIDED",
+    "normalization_torsion_exponent": 1,
+    "coefficient_ring_phase_safe": true,
+    "safe_closed_components": [
+      []
+    ],
+    "polynomial_Hom_normalization_ideal_lift": [
+      [
+        [
+          [
+            0
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "normalization_colon_stable": true,
+    "safe_radical_ideal": [],
+    "parameter_ideal": [],
+    "input": {
+      "dimension": 1,
+      "parameter_count": 1,
+      "phase_terms": []
+    },
+    "source_backend": "joint exponential connection and FULL unlocalized spatial integration",
+    "actual_image_kernel_computed": false,
+    "relative_Hom_base_change_assumed": false,
+    "ordinary_coefficient_nilpotents_retained": true,
+    "coefficient_ring": "QQ[c]/parameter_ideal; normalization ideal is its exact I-torsion",
+    "universal_numerical_cutoff_computed": false,
+    "assurance": "classical joint holonomic/local-cohomology/characteristic-multiplicity algorithms executed by Macaulay2; not independently certified finite operator proofs",
+    "core_sha256": "e71393d6a80729cd1343278e30e0e8fe251fb374dc2f2e592c764064299d1d6f",
+    "cas_files_sha256": {
+      "family.m2": "259c9a3e138f455848b56b36915a85002840ba5874e75a4501f17f4134615de8",
+      "family.stdout": "02473d48e952afbef72b2cc482103cdf865d86278d633e68302ab3c8d40b9238"
+    }
+  },
+  "backend_workdir": "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_family_examples/zero_phase/cas",
+  "original_field_safe_radical_ideal": [],
+  "original_polynomial_Hom_normalization_ideal_lift": [
+    [
+      [
+        [
+          0
+        ],
+        "1"
+      ]
+    ]
+  ],
+  "normalization_torsion_exponent": 1,
+  "normalization_colon_stable": true,
+  "coefficient_ring_phase_safe": true,
+  "purity_tested": false,
+  "actual_MZ_family_decision": null,
+  "normalization_formula": "Gamma_I(A)=union_L Ann_A(I^L); safety iff 1 belongs",
+  "all_original_markers_preserved": true,
+  "ordinary_nilpotents_retained": true,
+  "universal_numerical_cutoff_computed": false,
+  "assurance_boundary": "Gaussian family holonomic/characteristic-cycle and commutative-algebra operations trusted as CAS; NOT independent original-operator certificates",
+  "adapter_sha256": "60687af8637ff4c3cee79d281e9da9105d078d0c57236ac673af7e31176d49b4",
+  "group_generator_source_sha256": "f55097d700fa72df143b9e71126b8ebdcfd02cc8cde70e35c57f91111b98eafd",
+  "pointwise_transfer_adapter_sha256": "4120bcd01fde636a632cba35f1d724f4ed451c10c5e758f83053a0c72b1e1521",
+  "Gaussian_family_producer_sha256": "6587625b6bdd4ed7dd3e15bd84fac36a9560ff1e610383cb1b4b957ceedcfb84",
+  "Gaussian_family_core_sha256": "e71393d6a80729cd1343278e30e0e8fe251fb374dc2f2e592c764064299d1d6f",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

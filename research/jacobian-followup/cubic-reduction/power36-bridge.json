@@ -1,0 +1,28 @@
+{
+  "all18_tensor_conjugacy_identities": true,
+  "base36_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "determinant_source_matrix": "1/2",
+  "scope": "Primary exact bridge only. Linear conjugacy preserves the simultaneous cube minimum. The raw transported factors have the same product A; no new smaller Keller witness is claimed.",
+  "source36_sha256": "f082a94b07f9552bbf2e4d1bc261605ecf9a1c4cb0cf85f4b4aec759d3ae9624",
+  "source_matrix_nonidentity_entries": [
+    {
+      "column": 7,
+      "row": 8,
+      "value": "3/2"
+    },
+    {
+      "column": 8,
+      "row": 8,
+      "value": "1/2"
+    },
+    {
+      "column": 9,
+      "row": 10,
+      "value": "3"
+    }
+  ],
+  "source_sha256": "b570b9378c3695ba21f6c6ca28977910c15e6201d32e743b6707c260ec78483b",
+  "status": "exact-primary-pass",
+  "transformed_factor_product_same_A": true,
+  "witness89_sha256": "44a335ee44b4fee4ab37be85b4157dae1df036675cc983b3b20851d8687effd6"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "prime": 1073741827,
+  "time_limit_seconds": 25,
+  "memory_limit_bytes": 2147483648,
+  "elapsed_seconds": 6.148,
+  "input_sha256": "bf10c74c6fd4a9bd9eacf2d7e3b4c4985ff1081304a474cd89d18238ad1acb3d",
+  "output_bytes": 7875866,
+  "output_sha256": "de0df05dc83430a3bc78f290bcb5d8c87a8b9744a9c3fc652db9567542f8472c",
+  "conclusion": "Modular transformation witness only. Rational reconstruction and direct exact multiplication required."
+}

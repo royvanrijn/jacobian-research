@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-16",
+  "status": "written_internal_combination_not_registry_adoption",
+  "agents_messaged": [],
+  "proof": "INWARD_COUPLED_RESTRICTIONS_2026_11_16.tex",
+  "controls": "inward-coupled-restrictions-controls-2026-11-16.json",
+  "strongest_result": {
+    "claim": "Decorated radical-tower monodromy H_q=Aff(F2^2,F2^q) semidirect S4 cannot occur for an actual complex plane Keller map when q>=2 and every generic branch meridian is T_(edge,r).",
+    "degree_family": "4*2^q = 16,32,64,...",
+    "proof_chain": [
+      "PF129 Euler budget forces a single branch component.",
+      "The natural quartic intermediate has entire étale locus V with 1<=chi(V)<=2.",
+      "Specified inertia fixes all sheets in fixed blocks, so residual ramification over V is zero.",
+      "The relative cover is universal étale with deck (C2)^q.",
+      "New low-Euler exact-volume lemma forces pi1(V) cyclic."
+    ],
+    "scope_boundary": "Other inertia classes for the same abstract H_q, general binary affine groups, and q=1 are not excluded."
+  },
+  "new_surface_lemma": {
+    "assumptions": [
+      "Smooth connected affine complex surface",
+      "Negative logarithmic Kodaira dimension",
+      "Finite fundamental group",
+      "Euler characteristic at most two",
+      "Regular nowhere-zero exact two-form"
+    ],
+    "conclusion": "Fundamental group is cyclic.",
+    "proof_cautions": [
+      "Use the full component-selection form of HC4MYML0.",
+      "Normalized orbifold base change can split fibres; all resulting components are reduced.",
+      "Bad teardrops and unequal spindles cannot be uniformized by the asserted manifold cover; their fundamental groups are already cyclic."
+    ]
+  },
+  "mathieu_restrictions": [
+    {
+      "quotient": "SL2/2I",
+      "weights_at_most": 10,
+      "remaining_mixed_pure_requirement": "One entire charged side lies in the degree-12 Peter-Weyl component.",
+      "excluded_family": "Both charged sides each have some component above degree 12; in particular no charged degree-12 projection."
+    },
+    {
+      "quotient": "SL2/2O",
+      "weights_at_most": 6,
+      "remaining_mixed_pure_requirement": "One entire charged side lies in the filtered sum of degrees 8 and 12.",
+      "excluded_family": "Both charged sides each have some component above the degree-8/12 sector."
+    }
+  ],
+  "followup_targets": [
+    {
+      "area": "Wright and HC4",
+      "main_goal": "Prove or refute full HC4/JC2 while retaining the actual polynomial-plane source and full finite normalization.",
+      "next_step": "Audit the new low-Euler cyclicity argument and use it with PF128/129; adopt the H_q exclusion only with the specified inertia class."
+    },
+    {
+      "area": "Mathieu",
+      "main_goal": "Settle both full exceptional MZ cases, by all-degree pure-to-safe proof or an actual pure phase with a fixed original bad marker.",
+      "next_step": "Use refined capacities to remove high-side families and concentrate near-minimal support on the finite-dimensional low charged side; do not confuse the restricted statement with unrestricted ten/six-weight closure."
+    },
+    {
+      "area": "Gaussian and Factorial",
+      "main_goal": "Complete the broader Gaussian/formal and Factorial goals while preserving their exact quantifiers.",
+      "next_step": "Use the audited binary Factorial theorem plus the Gamma transfer as a completed classification of the two O(2)-block invariant Gaussian sector; retain Long/EIT credit and assurance limits."
+    },
+    {
+      "area": "Meridional rank",
+      "main_goal": "Prove new meridional-rank cases or the full conjecture using certified representations and matching bridge bounds.",
+      "next_step": "Retain the radical-tower representations: their validity for knot groups is unaffected. The new obstruction uses additional affine-surface hypotheses absent for knot complements."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1408.1328",
+      "scope_read": "Section 1.1.2 and Theorem 2 on negative Kodaira dimension and affine-line fibrations.",
+      "pdf_sha256": "046d33d9d6ed753e205edb9898ebde47bdcda03d1b26928d61b0b9c822bd12cf"
+    },
+    {
+      "url": "https://arxiv.org/html/2002.12838v1",
+      "scope_read": "Definition 1, Proposition 3, paragraph after Definition 4; same local structure package retained in HC4MYML0."
+    },
+    {
+      "url": "https://people.math.osu.edu/davis.12/courses/8800/Thurston13.pdf",
+      "scope_read": "Good/bad orientable two-orbifold classification; finite noncyclic spherical case. Classical theorem imported, not independently reproved."
+    },
+    {
+      "url": "https://www-users.cse.umn.edu/~webb/Publications/BRSW6.pdf",
+      "scope_read": "Section 4.2.1 invariant generator degrees 12,20,30; exact group-character controls independently certify the finite degree gaps."
+    }
+  ],
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "novelty_claim": false,
+    "shared_registry_modified": false
+  }
+}

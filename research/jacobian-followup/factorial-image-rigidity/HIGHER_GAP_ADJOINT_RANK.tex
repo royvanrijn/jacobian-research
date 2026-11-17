@@ -1,0 +1,279 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Explicit higher-gap adjoints and the exact repeated-root rank condition}
+\author{Internal algebraic proof and exact replay; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+The \href{CUBIC_ADJOINT_STABILITY_SFC.tex}{cubic proof} closes
+$X(A+BX^2)$ at every start and positive Gamma shape. This note derives
+the corresponding structure at every integer gap $d\ge2$ and identifies
+the additional rank obligation. It does not prove that obligation at all
+higher gaps, or close general FC/unrestricted SFC.
+
+Put
+\[
+ T_{n,\gamma,d}(t)=\sum_{k=0}^n\binom nk(\gamma)_{dk}t^k,
+ \quad R(z)=z^{dn}T_{n,\gamma,d}((-1)^{d+1}z^{-d}),\quad M=\gamma+dn.
+                                                               \tag{1}
+\]
+Here $n\ge1$, $\gamma>0$, $d\ge2$. In particular $R(0)\ne0$.
+With $D=D_z$ and $\delta=zD$, coefficient comparison gives
+\[
+ LR=0,\qquad
+ L=z^{-d-1}\left[\delta\prod_{\ell=0}^{d-1}(\delta-M-\ell)
+                        -z^d(\delta-dn)\right].               \tag{2}
+\]
+This is monic of order $d+1$, with coefficient
+$a_d=d(1-M)/z$ on $D^d$. All nonzero finite points are ordinary.
+A nonzero root of $R$ has multiplicity at most $d$, by its lowest
+Taylor term in (2).
+
+\section{A uniform degree-$n$ auxiliary}
+\begin{theorem}\label{thm:aux}
+Define $B=B_{n,\gamma,d}$ by either of the equivalent formulas
+\[
+ B(z)=\sum_{j=0}^n n_{\underline j}c_jz^{n-j},\qquad
+ \sum_{j\ge0}c_jx^j=(1-x)^{-\gamma}
+ \left(\frac{1-(1-x)^d}{dx}\right)^{-n-1}.                    \tag{3}
+\]
+Then $B_{0,\gamma,d}=1$ and
+\[
+ B_{n+1,\gamma,d}=(z+dn+\gamma+d-1)B_{n,\gamma,d}
+                                  -zB_{n,\gamma,d}'.          \tag{4}
+\]
+For every $d$th root of unity $\omega$ the function
+\[
+ f_\omega(z)=e^{-\omega z}z^{1-M}B(\omega z)                   \tag{5}
+\]
+is a solution of the formal adjoint $L^*f=0$, on local branches away
+from zero. These $d$ solutions are linearly independent.
+\end{theorem}
+\begin{proof}
+The following coefficient change is the formal-residue version of
+Lagrange inversion. Set $v=1-(1-x)^d$ in (3), noting $v=dx+O(x^2)$.
+It gives
+\[
+ B_{n,\gamma,d}(z)=d^n n![v^n](1-v)^{-(\gamma+d-1)/d}
+                       e^{z(1-(1-v)^{1/d})}.                 \tag{6}
+\]
+Thus its exponential generating function in $n$ is
+\[
+ F(t,z)=(1-dt)^{-(\gamma+d-1)/d}
+                    e^{z(1-(1-dt)^{1/d})}.
+\]
+The identity $(1-dt)F_t=(z+\gamma+d-1)F-zF_z$ proves (4).
+In particular every $B$ is monic of degree $n$.
+
+Write $Q=1-D$. The polynomial equation needed for (5) is
+\[
+ \mathcal E_d B:=z(Q^{d+1}-Q)B+(M-1)(Q^d-1)B+dnB=0.        \tag{7}
+\]
+For completeness put
+$A(x)=(1-x)((1-x)^d-1)$ and
+$b(x)=(M-1)((1-x)^d-1)+dn$.
+The series $C(x)$ in (3) satisfies
+\[
+ A C'=((n+1)A/x-A'+b)C.
+\]
+Taking the residue of the derivative of
+$e^{zx}A(x)C(x)x^{-n-1}$ proves
+$[zA(D)+b(D)]B=0$, which is (7). Every operation is on formal series
+at zero; no convergence at any other singularity is used.
+
+Equation (2) also has the divergence form
+\[
+ L=z^{-d}D z^{M+d}D^d z^{-M}-D+dn/z.
+\]
+Consequently
+\[
+ L^*=(-1)^{d+1}z^{-M}D^d z^{M+d}D z^{-d}+D+dn/z.
+\]
+Direct differentiation now gives the exact gauge identity
+\[
+ L^*(e^{-z}z^{1-M}B)=e^{-z}z^{-M}\mathcal E_dB.               \tag{8}
+\]
+Rotational covariance under $z\mapsto\omega z$, $\omega^d=1$,
+proves (5), with only a nonzero branch constant for the power of $z$.
+Independence follows from that of exponential polynomials with distinct
+exponents: after division by $z^{1-M}$ these are
+$e^{-\omega z}B(\omega z)$. For example, on a ray where a selected
+exponent has uniquely largest real part its degree-$n$ leading term
+cannot cancel the others; each vertex exponent has such a ray.
+\end{proof}
+
+\section{Exactly what a repeated root requires}
+Let $\omega_0,\ldots,\omega_{d-1}$ be all $d$th roots of unity and put
+\[
+ \mathcal J_{j,k}(z)=\omega_j^k(Q^kB)(\omega_jz),
+ \quad 0\le j<d,\quad 0\le k\le d-2.                       \tag{9}
+\]
+Using $D-1$ instead of $Q=1-D$ only changes column signs.
+\begin{theorem}\label{thm:rank}
+At each $z_0\ne0$, $R$ has a repeated root if and only if
+$\mathcal J(z_0)$ has rank smaller than $d-1$.
+Equivalently all its $(d-1)$-row minors vanish there.
+Thus $T_{n,\gamma,d}$ is squarefree if and only if those minors have
+no common nonzero root. This is an exact finite certificate for a
+specified index and parameter, and an unproved uniform obligation at
+higher gaps.
+\end{theorem}
+\begin{proof}
+For $L=\sum_{k=0}^{d+1}a_kD^k$, $a_{d+1}=1$, the Lagrange concomitant
+\[
+ \mathcal C(f,R)=\sum_{k=1}^{d+1}\sum_{j=0}^{k-1}
+                 (-1)^j(a_kf)^{(j)}R^{(k-1-j)}              \tag{10}
+\]
+has derivative $fLR-RL^*f=0$. For (5), it is an exponential times
+$z^{1-M}$ times a rational function, so it vanishes identically:
+otherwise a rational logarithmic derivative would tend to the nonzero
+constant $\omega$ at infinity. Local powers with noninteger $M$ cause
+no difficulty for this rational identity.
+
+The $d$ concomitants form a rank-$d$ matrix on the $(d+1)$-component
+jet $(R,R',\ldots,R^{(d)})$. Indeed the change from the adjoint jets
+to their concomitant rows is invertible triangular, and independence
+of $d$ solutions of an order-$d+1$ ordinary equation gives rank $d$
+at every ordinary point. Otherwise a nonzero linear combination would
+have all initial derivatives through order $d$ equal to zero.
+The nullspace is therefore one-dimensional, spanned by the nonzero
+jet of $R$.
+
+Restricting the columns to $R'',\ldots,R^{(d)}$ has a nonzero nullvector
+exactly when $R(z_0)=R'(z_0)=0$. Its entries are an invertible triangular
+combination of $f_\omega,f_\omega',\ldots,f_\omega^{(d-2)}$.
+Removing the common power gauge is another invertible triangular
+column operation, and removing the exponential gauges scales rows by
+nonzero factors. The resulting matrix is (9), up to column signs.
+Finally $t=(-1)^{d+1}z^{-d}$ is unramified away from zero.
+\end{proof}
+
+\begin{corollary}\label{cor:det}
+For $\widehat{\mathcal J}$ defined as in (9) with $0\le k\le d-1$,
+\[
+ \det\widehat{\mathcal J}(z)=
+ \left(\prod_j\omega_j^n\right)
+ \left(\prod_{i<j}(\omega_j-\omega_i)\right)R(z).              \tag{11}
+\]
+\end{corollary}
+\begin{proof}
+A standard cofactor identity can be checked directly here. For a monic
+order-$d+1$ operator with coefficient $a_d$ on $D^d$, the Wronskian
+of $d$ independent adjoint solutions whose concomitants with $R$ vanish
+is a constant times $e^{\int a_d}R$.
+To see this without an additional theorem input, write the original
+companion system as $Y'=AY$ and the concomitant rows as a matrix $U$.
+Then $U'=-UA$. Differentiating its alternating cofactor column $v$
+gives $v'=(A-\operatorname{tr}(A)I)v$.
+As $\operatorname{tr}(A)=-a_d$ and $Uv=0$, it follows that
+$v$ is a constant times $e^{\int a_d}(R,\ldots,R^{(d)})^T$.
+Its first component is the adjoint Wronskian, up to a constant sign.
+
+Here $e^{\int a_d}=z^{d(1-M)}$ and $\sum_j\omega_j=0$.
+Stripping the power/exponential gauges from the Wronskian leaves
+$\det\widehat{\mathcal J}$ up to column signs. Thus this determinant
+is a constant times $R$. Its leading coefficient is the displayed
+Vandermonde product, since $B$ is monic.
+\end{proof}
+
+\section{The first higher-gap sector target and a failed stronger shortcut}
+For $d=3$ put $\alpha=e^{i\pi/3}$ and define the real monic polynomial
+\[
+ W(z)=B(\alpha z)B(\overline\alpha z)-
+ \frac{\alpha B'(\alpha z)B(\overline\alpha z)
+       -\overline\alpha B'(\overline\alpha z)B(\alpha z)}{i\sqrt3}.
+                                                               \tag{12}
+\]
+It has degree $2n$. If $R$ had a repeated root $z_0\ne0$, its three
+pairwise adjoint Wronskians would vanish. Stripping the gauges gives
+\[
+ W(-z_0)=W(-\zeta z_0)=W(-\zeta^2 z_0)=0,
+ \qquad \zeta=e^{2\pi i/3}.                                 \tag{13}
+\]
+Consequently zero-freeness of $W$ on the CLOSED sector
+$|\arg z|\le\pi/3$ would suffice for simplicity. Every nonzero
+three-point rotation orbit meets that sector. This sector assertion
+is a proposed sufficient target, not a theorem established here.
+For exact rational parameters, (13) is equivalently a common nonzero
+root of the three polynomials $W_r(u)$ in
+$W(z)=W_0(z^3)+zW_1(z^3)+z^2W_2(z^3)$.
+
+Strict real-root interlacing of any two $W_r$ would also suffice.
+The replay verifies negative simple roots and pairwise strict interlacing
+for $n=\gamma=4,6,8$, by exact Sturm counts and disjoint rational
+isolating intervals. This is finite evidence only; no uniform interlacing
+theorem is claimed. A generalized Hurwitz-matrix route would likewise
+need its own positivity proof and the appropriate boundary exclusion.
+
+The stronger Hurwitz assertion for $W$ is false already at
+$n=4,\gamma=4$ (the ordinary lower-one terminal parameter):
+\[
+ B=z^4+36z^3+520z^2+3560z+9720.
+\]
+Its $W$ is
+\begin{align*}
+ z^8+36z^7+740z^6+10560z^5+113800z^4
+ +933920z^3+5768000z^2+24494400z+59875200.
+\end{align*}
+The seventh leading Hurwitz determinant is
+$-169684039754781133897728000000<0$.
+This disproves the Hurwitz shortcut, not squarefreeness: the three
+$W_r$ have gcd one, and $T_{4,4,3}$ is squarefree by an exact gcd.
+
+\section{A uniform initial block from the third central moment}
+\begin{theorem}\label{thm:initial}
+For every integer $d\ge1$, every $\gamma>0$, and $1\le n\le4$,
+$T_{n,\gamma,d}$ is squarefree. Consequently $X(A+BX^d)$ has no
+consecutive zero Gamma moments with terminal order at most four,
+for every positive shape and every gap.
+\end{theorem}
+\begin{proof}
+Let $Y$ have unit-rate Gamma shape $\gamma$ and put $X=Y^d$.
+The reversed moment polynomial is $P_n(z)=\mathbb E(z+X)^n$.
+For even $n$ it is strictly positive on the real axis. For odd $n$
+its derivative $n\mathbb E(z+X)^{n-1}$ is strictly positive there.
+Thus every real root is simple, and a nonreal repeated root brings its
+conjugate with the same multiplicity. This already excludes repetition
+for $n\le3$.
+
+If the real monic quartic $P_4$ had a repeated root, it would have to be
+$(z^2+sz+t)^2$. With $\mu_j=\mathbb EX^j$, comparison of its first
+three coefficients gives $s=2\mu_1$, $t=3\mu_2-2\mu_1^2$ and
+$\mu_3=3\mu_1\mu_2-2\mu_1^3$. This would give zero third central moment.
+But put $r(x)=(x)_d$, $a=r(\gamma)$, $b=r(\gamma+d)$,
+$c=r(\gamma+2d)$. The polynomial $r$ is strictly increasing and convex
+on the positive real axis: its coefficients are nonnegative, with
+$r'>0$ and $r''\ge0$. Hence $b>a>0$ and $c\ge2b-a$, giving
+\[
+ \mathbb E(X-\mathbb EX)^3
+   =abc-3a^2b+2a^3\ge2a(b-a)^2>0.
+\]
+This contradiction proves the quartic case. Reversal preserves
+multiplicity since the constant and leading coefficients are nonzero.
+The consecutive-moment bridge below gives the stated SFC initial block.
+No assertion about terminal orders beyond four follows from this argument.
+\end{proof}
+
+\section{SFC bridge and remaining scope}
+For every gap $d\ge1$, every positive shape $\beta$, and terminal
+$n\ge1$, put $\gamma=n+\beta-1$ and $\theta=tD_t$. The identities
+\[
+ T_{n,\gamma+1,d}=T_{n,\gamma,d}+(d/\gamma)\theta T_{n,\gamma,d},
+ \qquad T_{n-1,\gamma,d}=T_{n,\gamma,d}-(1/n)\theta T_{n,\gamma,d}
+\]
+identify consecutive Gamma moments of $X(A+BX^d)$ with the
+multiple-root obstruction. Their determinant is
+$-(\gamma+dn)/(\gamma n)\ne0$.
+The rank theorem therefore supplies the precise uniform task for this
+whole class. It does not supply its solution at $d\ge3$.
+The exact checker replays the algebra and includes nonpositive/complex
+parameter controls where a repeated root genuinely occurs, so the rank
+certificate is tested on both outcomes. Those controls are outside
+positive Gamma scope and are not SFC counterexamples.
+All novelty, independent/formal/external assurance flags remain false.
+\end{document}

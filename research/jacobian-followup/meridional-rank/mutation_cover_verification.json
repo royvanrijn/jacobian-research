@@ -1,0 +1,275 @@
+{
+  "status": "PASS independent mutation/common-cover inputs",
+  "diagrams": {
+    "13a_129": {
+      "vertices": 7,
+      "edges": 13,
+      "regions": 15,
+      "spanning_trees": 391,
+      "checkerboard_parity": 0,
+      "connected_reduced_alternating_knot": true
+    },
+    "13a_136": {
+      "vertices": 7,
+      "edges": 13,
+      "regions": 15,
+      "spanning_trees": 391,
+      "checkerboard_parity": 0,
+      "connected_reduced_alternating_knot": true
+    },
+    "13a_194": {
+      "vertices": 7,
+      "edges": 13,
+      "regions": 15,
+      "spanning_trees": 391,
+      "checkerboard_parity": 0,
+      "connected_reduced_alternating_knot": true
+    },
+    "13a_197": {
+      "vertices": 7,
+      "edges": 13,
+      "regions": 15,
+      "spanning_trees": 391,
+      "checkerboard_parity": 0,
+      "connected_reduced_alternating_knot": true
+    },
+    "13a_135": {
+      "vertices": 7,
+      "edges": 13,
+      "regions": 15,
+      "spanning_trees": 401,
+      "checkerboard_parity": 1,
+      "connected_reduced_alternating_knot": true
+    },
+    "13a_137": {
+      "vertices": 7,
+      "edges": 13,
+      "regions": 15,
+      "spanning_trees": 401,
+      "checkerboard_parity": 1,
+      "connected_reduced_alternating_knot": true
+    },
+    "13a_196": {
+      "vertices": 7,
+      "edges": 13,
+      "regions": 15,
+      "spanning_trees": 401,
+      "checkerboard_parity": 1,
+      "connected_reduced_alternating_knot": true
+    },
+    "13a_198": {
+      "vertices": 7,
+      "edges": 13,
+      "regions": 15,
+      "spanning_trees": 401,
+      "checkerboard_parity": 1,
+      "connected_reduced_alternating_knot": true
+    }
+  },
+  "pairs": [
+    {
+      "source": "13a_129",
+      "target": "13a_136",
+      "switches": 1,
+      "cycle_vectors": 128,
+      "edge_subsets_checked": 8192,
+      "edge_map": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        5,
+        9,
+        8,
+        7,
+        11,
+        12,
+        10
+      ]
+    },
+    {
+      "source": "13a_129",
+      "target": "13a_194",
+      "switches": 1,
+      "cycle_vectors": 128,
+      "edge_subsets_checked": 8192,
+      "edge_map": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        5,
+        12,
+        8,
+        11,
+        9,
+        10,
+        7
+      ]
+    },
+    {
+      "source": "13a_129",
+      "target": "13a_197",
+      "switches": 0,
+      "cycle_vectors": 128,
+      "edge_subsets_checked": 8192,
+      "edge_map": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        12,
+        11,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "source": "13a_135",
+      "target": "13a_137",
+      "switches": 1,
+      "cycle_vectors": 128,
+      "edge_subsets_checked": 8192,
+      "edge_map": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        8,
+        7,
+        11,
+        12,
+        10
+      ]
+    },
+    {
+      "source": "13a_135",
+      "target": "13a_196",
+      "switches": 0,
+      "cycle_vectors": 128,
+      "edge_subsets_checked": 8192,
+      "edge_map": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        8,
+        12,
+        9,
+        10,
+        7
+      ]
+    },
+    {
+      "source": "13a_135",
+      "target": "13a_198",
+      "switches": 1,
+      "cycle_vectors": 128,
+      "edge_subsets_checked": 8192,
+      "edge_map": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        9,
+        7,
+        8,
+        10
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "name": "synthetic_one_switch",
+      "switches": 1,
+      "cycle_vectors": 256,
+      "edge_subsets_checked": 8192,
+      "edge_map": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "name": "positive_pretzel_pair",
+      "switches": 1,
+      "cycle_vectors": 1024,
+      "edge_subsets_checked": 8192,
+      "edge_map": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "corruptions_rejected": [
+    "wrong actual switch boundary",
+    "bijective wrong crossing-edge transport",
+    "wrong final vertex transport",
+    "single crossing change breaks alternating convention"
+  ],
+  "blocks": {
+    "391": [
+      "13a_129",
+      "13a_136",
+      "13a_194",
+      "13a_197"
+    ],
+    "401": [
+      "13a_135",
+      "13a_137",
+      "13a_196",
+      "13a_198"
+    ]
+  },
+  "actual_rank3_proved": false,
+  "assurance": "Independent corner unions, tree enumeration and all8192 edge-subsets per13-edge graph. No producer graph/search imports. Actual mutation/common-cover theorem additionally uses read Greene Cor4.5 and Morton Thm3, explicitly imported in the written proof; no bridge or meridional-rank mutation invariance assumed.",
+  "input_sha256": {
+    "verify_mutation_covers.py": "92020c13f5e7b533fbe5df0e2071959c6032f2e6b70e58fb8e2f0e1eab676871",
+    "mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18",
+    "mutation_cover_plan.json": "53997bb367890006c42c6aee10e570ce69e4f1fa933af3823f05899daf692220",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286"
+  }
+}

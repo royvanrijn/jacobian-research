@@ -1,0 +1,154 @@
+{
+  "identity_branches": [
+    {
+      "row": 4,
+      "zero_parameters": [
+        "z1",
+        "z2"
+      ]
+    },
+    {
+      "row": 5,
+      "zero_parameters": [
+        "z3",
+        "z13",
+        "z14",
+        "z15"
+      ]
+    },
+    {
+      "row": 6,
+      "zero_parameters": [
+        "z4",
+        "z16",
+        "z17"
+      ]
+    },
+    {
+      "row": 7,
+      "zero_parameters": [
+        "z5",
+        "z18",
+        "z19",
+        "z20",
+        "z21",
+        "z22"
+      ]
+    },
+    {
+      "row": 8,
+      "zero_parameters": [
+        "z6",
+        "z23",
+        "z24",
+        "z25",
+        "z26",
+        "z27",
+        "z28",
+        "z29",
+        "z30",
+        "z31",
+        "z32",
+        "z33"
+      ]
+    },
+    {
+      "row": 9,
+      "zero_parameters": [
+        "z7",
+        "z8",
+        "z34",
+        "z35",
+        "z36",
+        "z37",
+        "z38",
+        "z39",
+        "z40",
+        "z41",
+        "z42",
+        "z43",
+        "z44",
+        "z45",
+        "z46",
+        "z47"
+      ]
+    },
+    {
+      "row": 10,
+      "zero_parameters": [
+        "z9",
+        "z48",
+        "z49",
+        "z50",
+        "z51",
+        "z52",
+        "z53",
+        "z54",
+        "z55",
+        "z56",
+        "z57",
+        "z58",
+        "z59",
+        "z60"
+      ]
+    },
+    {
+      "row": 11,
+      "zero_parameters": [
+        "z10",
+        "z61",
+        "z62",
+        "z63",
+        "z64",
+        "z65",
+        "z66",
+        "z67",
+        "z68",
+        "z69",
+        "z70",
+        "z71",
+        "z72",
+        "z73",
+        "z74",
+        "z75",
+        "z76",
+        "z77",
+        "z78"
+      ]
+    },
+    {
+      "row": 12,
+      "zero_parameters": [
+        "z11",
+        "z12",
+        "z79",
+        "z80",
+        "z81",
+        "z82",
+        "z83",
+        "z84",
+        "z85",
+        "z86",
+        "z87",
+        "z88",
+        "z89"
+      ]
+    }
+  ],
+  "input_sha256": "f1c8840a419318727cc62027263ab5d613f8dbb3d3fae7dedf8fcbfb82e5327f",
+  "order": [
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    6
+  ],
+  "scope": "Primary coefficient bases only; dimension/proper ideals are not extracted Keller witnesses or independent nonexistence certificates. Timeouts remain unresolved.",
+  "seconds": 0.059,
+  "source_sha256": "222c2843b238751542091064b5bfc88e80ea253fcc0a68cafa3461132095b410",
+  "status": "primary-bases-complete"
+}

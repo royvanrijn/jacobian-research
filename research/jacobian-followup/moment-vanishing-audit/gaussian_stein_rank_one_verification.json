@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "canonical_proof_sha256": "83ec56cb57a3321c77d57d79635c7ca68f3b381c508ce785331638de3bf16539",
+  "producer_sha256": "406712b31acc3bb3ff56e2e0b7a4bb2a1ebef50dca4c92f1a74aa609b7ee2170",
+  "checker_sha256": "422e4541de925dd3e760b333c6e73664e3c6466cc4d22cdd296e95582d07b972",
+  "certificate_sha256": "30fa01f387a126186ba50d18981cc3baae6459d8f69e1cf4578d2bd688ec2972",
+  "runtime_sha256": "a2080f92430ee34a105e8d4edf1ae1e14c595877d8cd5f53258eb32e7846fd73",
+  "exact_controls": {
+    "original_Stein_markers": 15,
+    "original_IBP_identities": 75,
+    "rank_one_models": 9,
+    "finite_seed_matrices": 3,
+    "Jordan_controls": 3,
+    "source_index_controls": 3,
+    "rejections": 5
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "universal_claims_use_written_proofs": true,
+  "nonpure_safe_Gaussian_counterexample_claimed": false
+}

@@ -1,0 +1,14 @@
+FIELD
+K
+0
+/usr/share/Macaulay2/BernsteinSato/bFunction.ideal.m2:217:6:(2):[9]: error: expected polynomial over QQ
+/usr/share/Macaulay2/BernsteinSato/Drestriction.m2:874:31:(2):[8]: --back trace--
+/usr/share/Macaulay2/BernsteinSato/Drestriction.m2:249:21:(2):[7]: --back trace--
+/usr/share/Macaulay2/Core/methods.m2:154:80:(1):[6]: --back trace--
+/usr/share/Macaulay2/Core/option.m2:17:8:(1):[5]: --back trace--
+/usr/share/Macaulay2/BernsteinSato/Drestriction.m2:239:6:(2):[4]: --back trace--
+/usr/share/Macaulay2/Core/methods.m2:154:80:(1):[3]: --back trace--
+/usr/share/Macaulay2/Core/option.m2:17:8:(1):[2]: --back trace--
+/home/royvanrijn/src/jacobian-research/tmp/gaussian_generic_20261116/root_patch_test.m2:8:3:(3):[1]: --back trace--
+/usr/share/Macaulay2/Core/startup.m2:572:26:(0):[1]: --back trace--
+/usr/share/Macaulay2/Core/startup.m2:662:6:(0): --back trace--

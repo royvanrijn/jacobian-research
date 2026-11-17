@@ -1,0 +1,34 @@
+{
+  "status": "UNKNOWN",
+  "reason": "joint-module family CAS timeout",
+  "input": {
+    "dimension": 1,
+    "parameter_count": 2,
+    "phase_terms": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        "1"
+      ],
+      [
+        [
+          1,
+          3,
+          0
+        ],
+        "-1"
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        "1"
+      ]
+    ]
+  }
+}

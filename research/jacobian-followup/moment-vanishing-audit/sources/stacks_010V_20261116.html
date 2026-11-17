@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 12.13 (010V): Complexes&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELQ" data-tag="0ELQ">1</a>: Preliminaries
+    
+  
+    <li>Chapter <a href="/tag/00ZU" data-tag="00ZU">12</a>: Homological Algebra
+    
+  
+    <li class="active">Section <a href="/tag/010V" data-tag="010V">12.13</a>: Complexes
+    <span id="citation">(<a href="/tag/010V/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/010P">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0119">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="homology-section-complexes" class="tex-section"><span data-tag="010V">12.13</span> Complexes</h2>
+
+<p>
+Of course the notions of a chain complex and a cochain complex are dual and you only have to read one of the two parts of this section. So pick the one you like. (Actually, this doesn't quite work right since the conventions on numbering things are not adapted to an easy transition between chain and cochain complexes.) 
+</p>
+<p>
+A <em>chain complex $A_\bullet $</em> in an additive category $\mathcal{A}$ is a complex 
+</p>
+<div class="equation">
+  \[  \ldots \to A_{n + 1} \xrightarrow {d_{n + 1}} A_ n \xrightarrow {d_ n} A_{n - 1} \to \ldots  \]
+</div>
+<p>
+ of $\mathcal{A}$. In other words, we are given an object $A_ i$ of $\mathcal{A}$ for all $i \in \mathbf{Z}$ and for all $i \in \mathbf{Z}$ a morphism $d_ i : A_ i \to A_{i - 1}$ such that $d_{i - 1} \circ d_ i = 0$ for all $i$. A <em>morphism of chain complexes $f : A_\bullet \to B_\bullet $</em> is given by a family of morphisms $f_ i : A_ i \to B_ i$ such that all the diagrams 
+</p>
+<div class="equation">
+  \[  \xymatrix{ A_ i \ar[r]_{d_ i} \ar[d]_{f_ i} &  A_{i - 1} \ar[d]^{f_{i - 1}} \\  B_ i \ar[r]^{d_ i} &  B_{i - 1} }  \]
+</div>
+<p>
+ commute. The <em>category of chain complexes of $\mathcal{A}$</em> is denoted $\text{Ch}(\mathcal{A})$. The full subcategory consisting of objects of the form 
+</p>
+<div class="equation">
+  \[  \ldots \to A_2 \to A_1 \to A_0 \to 0 \to 0 \to \ldots  \]
+</div>
+<p>
+ is denoted $\text{Ch}_{\geq 0}(\mathcal{A})$. In other words, a chain complex $A_\bullet $ belongs to $\text{Ch}_{\geq 0}(\mathcal{A})$ if and only if $A_ i = 0$ for all $i < 0$. 
+</p>
+<p>
+Given an additive category $\mathcal{A}$ we identify $\mathcal{A}$ with the full subcategory of $\text{Ch}(\mathcal{A})$ consisting of chain complexes zero except in degree $0$ by the functor 
+</p>
+<div class="equation">
+  \[  \mathcal{A} \longrightarrow \text{Ch}(\mathcal{A}),\quad A \longmapsto (\ldots \to 0 \to A \to 0 \to \ldots )  \]
+</div>
+<p>
+ By abuse of notation we often denote the object on the right hand side simply $A$. If we want to stress that we are viewing $A$ as a chain complex we may sometimes use the notation $A[0]$, see Section <a href="/tag/0119" data-tag="0119">12.14</a>. 
+</p>
+<p>
+A <em>homotopy $h$</em> between a pair of morphisms of chain complexes $f, g : A_\bullet \to B_\bullet $ is a collection of morphisms $h_ i : A_ i \to B_{i + 1}$ such that we have 
+</p>
+<div class="equation">
+  \[  f_ i - g_ i = d_{i + 1} \circ h_ i + h_{i - 1} \circ d_ i  \]
+</div>
+<p>
+ for all $i$. Two morphisms $f, g : A_\bullet \to B_\bullet $ are said to be <em>homotopic</em> if a homotopy between $f$ and $g$ exists. Clearly, the notions of chain complex, morphism of chain complexes, and homotopies between morphisms of chain complexes make sense even in a preadditive category. 
+</p>
+<p>
+<article class="env-lemma" id="010W"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Hom functors of $\text{Ch}(\mathcal{A})$ respect the homotopy relation. '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/010W">Lemma <span data-tag="010W">12.13.1</span>.</a> Let $\mathcal{A}$ be an additive category. Let $f, g : B_\bullet \to C_\bullet $ be morphisms of chain complexes. Suppose given morphisms of chain complexes $a : A_\bullet \to B_\bullet $, and $c : C_\bullet \to D_\bullet $. If $\{ h_ i : B_ i \to C_{i + 1}\} $ defines a homotopy between $f$ and $g$, then $\{ c_{i + 1} \circ h_ i \circ a_ i\} $ defines a homotopy between $c \circ f \circ a$ and $c \circ g \circ a$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+In particular this means that it makes sense to define the category of chain complexes with maps up to homotopy. We'll return to this later. 
+</p>
+<p>
+<article class="env-definition" id="010X">
+  <p><a class="environment-identifier" href="/tag/010X">Definition <span data-tag="010X">12.13.2</span>.</a> Let $\mathcal{A}$ be an additive category. We say a morphism $a : A_\bullet \to B_\bullet $ is a <em>homotopy equivalence</em> if there exists a morphism $b : B_\bullet \to A_\bullet $ such that there exists a homotopy between $b \circ a$ and $\text{id}_ A$ and there exists a homotopy between $a \circ b$ and $\text{id}_ B$. If there exists such a morphism between $A_\bullet $ and $B_\bullet $, then we say that $A_\bullet $ and $B_\bullet $ are <em>homotopy equivalent</em>. </p>
+</article> 
+</p>
+<p>
+In other words, two complexes are homotopy equivalent if they become isomorphic in the category of complexes up to homotopy. 
+</p>
+<p>
+<article class="env-lemma" id="010Y">
+  <p><a class="environment-identifier" href="/tag/010Y">Lemma <span data-tag="010Y">12.13.3</span>.</a> Let $\mathcal{A}$ be an abelian category. </p>
+  <p><ol>
+  <li><p>
+The category of chain complexes in $\mathcal{A}$ is abelian. 
+</p>
+</li><li><p>
+A morphism of complexes $f : A_\bullet \to B_\bullet $ is injective if and only if each $f_ n : A_ n \to B_ n$ is injective. 
+</p>
+</li><li><p>
+A morphism of complexes $f : A_\bullet \to B_\bullet $ is surjective if and only if each $f_ n : A_ n \to B_ n$ is surjective. 
+</p>
+</li><li><p>
+A sequence of chain complexes 
+</p>
+<div class="equation">
+  \[  A_\bullet \xrightarrow {f} B_\bullet \xrightarrow {g} C_\bullet  \]
+</div>
+<p>
+ is exact at $B_\bullet $ if and only if each sequence 
+</p>
+<div class="equation">
+  \[  A_ i \xrightarrow {f_ i} B_ i \xrightarrow {g_ i} C_ i  \]
+</div>
+<p>
+ is exact at $B_ i$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+For any $i \in \mathbf{Z}$ the $i$th <em>homology group</em> of a chain complex $A_\bullet $ in an abelian category is defined by the following formula 
+</p>
+<div class="equation">
+  \[  H_ i(A_\bullet ) = \mathop{\mathrm{Ker}}(d_ i)/\mathop{\mathrm{Im}}(d_{i + 1}).  \]
+</div>
+<p>
+ If $f : A_\bullet \to B_\bullet $ is a morphism of chain complexes of $\mathcal{A}$ then we get an induced morphism $H_ i(f) : H_ i(A_\bullet ) \to H_ i(B_\bullet )$ because clearly $f_ i(\mathop{\mathrm{Ker}}(d_ i : A_ i \to A_{i - 1})) \subset \mathop{\mathrm{Ker}}(d_ i : B_ i \to B_{i - 1})$, and similarly for $\mathop{\mathrm{Im}}(d_{i + 1})$. Thus we obtain a functor 
+</p>
+<div class="equation">
+  \[  H_ i : \text{Ch}(\mathcal{A}) \longrightarrow \mathcal{A}.  \]
+</div>
+<p>
+<article class="env-definition" id="010Z">
+  <p><a class="environment-identifier" href="/tag/010Z">Definition <span data-tag="010Z">12.13.4</span>.</a> Let $\mathcal{A}$ be an abelian category. </p>
+  <p><ol>
+  <li><p>
+A morphism of chain complexes $f : A_\bullet \to B_\bullet $ is called a <em>quasi-isomorphism</em> if the induced map $H_ i(f) : H_ i(A_\bullet ) \to H_ i(B_\bullet )$ is an isomorphism for all $i \in \mathbf{Z}$. 
+</p>
+</li><li><p>
+A chain complex $A_\bullet $ is called <em>acyclic</em> if all of its homology objects $H_ i(A_\bullet )$ are zero. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+<article class="env-lemma" id="0110">
+  <p><a class="environment-identifier" href="/tag/0110">Lemma <span data-tag="0110">12.13.5</span>.</a> Let $\mathcal{A}$ be an abelian category. </p>
+  <p><ol>
+  <li><p>
+If the maps $f, g : A_\bullet \to B_\bullet $ are homotopic, then the induced maps $H_ i(f)$ and $H_ i(g)$ are equal. 
+</p>
+</li><li><p>
+If the map $f : A_\bullet \to B_\bullet $ is a homotopy equivalence, then $f$ is a quasi-isomorphism. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0111">
+  <p><a class="environment-identifier" href="/tag/0111">Lemma <span data-tag="0111">12.13.6</span>.</a> Let $\mathcal{A}$ be an abelian category. Suppose that </p>
+  <div class="equation">
+  \[  0 \to A_\bullet \to B_\bullet \to C_\bullet \to 0  \]
+</div>
+  <p> is a short exact sequence of chain complexes of $\mathcal{A}$. Then there is a canonical long exact homology sequence </p>
+  <div class="equation">
+  \[  \xymatrix{ \ldots &  \ldots &  \ldots \ar[lld] \\  H_ i(A_\bullet ) \ar[r] &  H_ i(B_\bullet ) \ar[r] &  H_ i(C_\bullet ) \ar[lld] \\  H_{i - 1}(A_\bullet ) \ar[r] &  H_{i - 1}(B_\bullet ) \ar[r] &  H_{i - 1}(C_\bullet ) \ar[lld] \\  \ldots &  \ldots &  \ldots \\  }  \]
+</div>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. The maps come from the Snake Lemma <a href="/tag/010H" data-tag="010H">12.5.17</a> applied to the diagrams 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ &  A_ i/\mathop{\mathrm{Im}}(d_{A, i + 1}) \ar[r] \ar[d]^{d_{A, i}} &  B_ i/\mathop{\mathrm{Im}}(d_{B, i + 1}) \ar[r] \ar[d]^{d_{B, i}} &  C_ i/\mathop{\mathrm{Im}}(d_{C, i + 1}) \ar[r] \ar[d]^{d_{C, i}} &  0 \\  0 \ar[r] &  \mathop{\mathrm{Ker}}(d_{A, i - 1}) \ar[r] &  \mathop{\mathrm{Ker}}(d_{B, i - 1}) \ar[r] &  \mathop{\mathrm{Ker}}(d_{C, i - 1}) &  }  \]
+</div>
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+A <em>cochain complex $A^\bullet $</em> in an additive category $\mathcal{A}$ is a complex 
+</p>
+<div class="equation">
+  \[  \ldots \to A^{n - 1} \xrightarrow {d^{n - 1}} A^ n \xrightarrow {d^ n} A^{n + 1} \to \ldots  \]
+</div>
+<p>
+ of $\mathcal{A}$. In other words, we are given an object $A^ i$ of $\mathcal{A}$ for all $i \in \mathbf{Z}$ and for all $i \in \mathbf{Z}$ a morphism $d^ i : A^ i \to A^{i + 1}$ such that $d^{i + 1} \circ d^ i = 0$ for all $i$. A <em>morphism of cochain complexes $f : A^\bullet \to B^\bullet $</em> is given by a family of morphisms $f^ i : A^ i \to B^ i$ such that all the diagrams 
+</p>
+<div class="equation">
+  \[  \xymatrix{ A^ i \ar[r]_{d^ i} \ar[d]_{f^ i} &  A^{i + 1} \ar[d]^{f^{i + 1}} \\  B^ i \ar[r]^{d^ i} &  B^{i + 1} }  \]
+</div>
+<p>
+ commute. The <em>category of cochain complexes of $\mathcal{A}$</em> is denoted $\text{CoCh}(\mathcal{A})$. The full subcategory consisting of objects of the form 
+</p>
+<div class="equation">
+  \[  \ldots \to 0 \to 0 \to A^0 \to A^1 \to A^2 \to \ldots  \]
+</div>
+<p>
+ is denoted $\text{CoCh}_{\geq 0}(\mathcal{A})$. In other words, a cochain complex $A^\bullet $ belongs to the subcategory $\text{CoCh}_{\geq 0}(\mathcal{A})$ if and only if $A^ i = 0$ for all $i < 0$. 
+</p>
+<p>
+Given an additive category $\mathcal{A}$ we identify $\mathcal{A}$ with the full subcategory of $\text{CoCh}(\mathcal{A})$ consisting of cochain complexes zero except in degree $0$ by the functor 
+</p>
+<div class="equation">
+  \[  \mathcal{A} \longrightarrow \text{CoCh}(\mathcal{A}),\quad A \longmapsto (\ldots \to 0 \to A \to 0 \to \ldots )  \]
+</div>
+<p>
+ By abuse of notation we often denote the object on the right hand side simply $A$. If we want to stress that we are viewing $A$ as a cochain complex we may sometimes use the notation $A[0]$, see Section <a href="/tag/0119" data-tag="0119">12.14</a>. 
+</p>
+<p>
+A <em>homotopy $h$</em> between a pair of morphisms of cochain complexes $f, g : A^\bullet \to B^\bullet $ is a collection of morphisms $h^ i : A^ i \to B^{i - 1}$ such that we have 
+</p>
+<div class="equation">
+  \[  f^ i - g^ i = d^{i - 1} \circ h^ i + h^{i + 1} \circ d^ i  \]
+</div>
+<p>
+ for all $i$. Two morphisms $f, g : A^\bullet \to B^\bullet $ are said to be <em>homotopic</em> if a homotopy between $f$ and $g$ exists. Clearly, the notions of cochain complex, morphism of cochain complexes, and homotopies between morphisms of cochain complexes make sense even in a preadditive category. 
+</p>
+<p>
+<article class="env-lemma" id="0112">
+  <p><a class="environment-identifier" href="/tag/0112">Lemma <span data-tag="0112">12.13.7</span>.</a> Let $\mathcal{A}$ be an additive category. Let $f, g : B^\bullet \to C^\bullet $ be morphisms of cochain complexes. Suppose given morphisms of cochain complexes $a : A^\bullet \to B^\bullet $, and $c : C^\bullet \to D^\bullet $. If $\{ h^ i : B^ i \to C^{i - 1}\} $ defines a homotopy between $f$ and $g$, then $\{ c^{i - 1} \circ h^ i \circ a^ i\} $ defines a homotopy between $c \circ f \circ a$ and $c \circ g \circ a$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+In particular this means that it makes sense to define the category of cochain complexes with maps up to homotopy. We'll return to this later. 
+</p>
+<p>
+<article class="env-definition" id="0113">
+  <p><a class="environment-identifier" href="/tag/0113">Definition <span data-tag="0113">12.13.8</span>.</a> Let $\mathcal{A}$ be an additive category. We say a morphism $a : A^\bullet \to B^\bullet $ is a <em>homotopy equivalence</em> if there exists a morphism $b : B^\bullet \to A^\bullet $ such that there exists a homotopy between $b \circ a$ and $\text{id}_ A$ and there exists a homotopy between $a \circ b$ and $\text{id}_ B$. If there exists such a morphism between $A^\bullet $ and $B^\bullet $, then we say that $A^\bullet $ and $B^\bullet $ are <em>homotopy equivalent</em>. </p>
+</article> 
+</p>
+<p>
+In other words, two complexes are homotopy equivalent if they become isomorphic in the category of complexes up to homotopy. 
+</p>
+<p>
+<article class="env-lemma" id="0114">
+  <p><a class="environment-identifier" href="/tag/0114">Lemma <span data-tag="0114">12.13.9</span>.</a> Let $\mathcal{A}$ be an abelian category. </p>
+  <p><ol>
+  <li><p>
+The category of cochain complexes in $\mathcal{A}$ is abelian. 
+</p>
+</li><li><p>
+A morphism of cochain complexes $f : A^\bullet \to B^\bullet $ is injective if and only if each $f^ n : A^ n \to B^ n$ is injective. 
+</p>
+</li><li><p>
+A morphism of cochain complexes $f : A^\bullet \to B^\bullet $ is surjective if and only if each $f^ n : A^ n \to B^ n$ is surjective. 
+</p>
+</li><li><p>
+A sequence of cochain complexes 
+</p>
+<div class="equation">
+  \[  A^\bullet \xrightarrow {f} B^\bullet \xrightarrow {g} C^\bullet  \]
+</div>
+<p>
+ is exact at $B^\bullet $ if and only if each sequence 
+</p>
+<div class="equation">
+  \[  A^ i \xrightarrow {f^ i} B^ i \xrightarrow {g^ i} C^ i  \]
+</div>
+<p>
+ is exact at $B^ i$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+For any $i \in \mathbf{Z}$ the $i$th <em>cohomology group</em> of a cochain complex $A^\bullet $ is defined by the following formula 
+</p>
+<div class="equation">
+  \[  H^ i(A^\bullet ) = \mathop{\mathrm{Ker}}(d^ i)/\mathop{\mathrm{Im}}(d^{i - 1}).  \]
+</div>
+<p>
+ If $f : A^\bullet \to B^\bullet $ is a morphism of cochain complexes of $\mathcal{A}$ then we get an induced morphism $H^ i(f) : H^ i(A^\bullet ) \to H^ i(B^\bullet )$ because clearly $f^ i(\mathop{\mathrm{Ker}}(d^ i : A^ i \to A^{i + 1})) \subset \mathop{\mathrm{Ker}}(d^ i : B^ i \to B^{i + 1})$, and similarly for $\mathop{\mathrm{Im}}(d^{i - 1})$. Thus we obtain a functor 
+</p>
+<div class="equation">
+  \[  H^ i : \text{CoCh}(\mathcal{A}) \longrightarrow \mathcal{A}.  \]
+</div>
+<p>
+<article class="env-definition" id="0115">
+  <p><a class="environment-identifier" href="/tag/0115">Definition <span data-tag="0115">12.13.10</span>.</a> Let $\mathcal{A}$ be an abelian category. </p>
+  <p><ol>
+  <li><p>
+A morphism of cochain complexes $f : A^\bullet \to B^\bullet $ of $\mathcal{A}$ is called a <em>quasi-isomorphism</em> if the induced maps $H^ i(f) : H^ i(A^\bullet ) \to H^ i(B^\bullet )$ is an isomorphism for all $i \in \mathbf{Z}$. 
+</p>
+</li><li><p>
+A cochain complex $A^\bullet $ is called <em>acyclic</em> if all of its cohomology objects $H^ i(A^\bullet )$ are zero. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+<article class="env-lemma" id="0116">
+  <p><a class="environment-identifier" href="/tag/0116">Lemma <span data-tag="0116">12.13.11</span>.</a> Let $\mathcal{A}$ be an abelian category. </p>
+  <p><ol>
+  <li><p>
+If the maps $f, g : A^\bullet \to B^\bullet $ are homotopic, then the induced maps $H^ i(f)$ and $H^ i(g)$ are equal. 
+</p>
+</li><li><p>
+If $f : A^\bullet \to B^\bullet $ is a homotopy equivalence, then $f$ is a quasi-isomorphism. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0117"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Short exact sequences of complexes give rise to long exact sequences of (co)homology. '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/0117">Lemma <span data-tag="0117">12.13.12</span>.</a> Let $\mathcal{A}$ be an abelian category. Suppose that </p>
+  <div class="equation">
+  \[  0 \to A^\bullet \to B^\bullet \to C^\bullet \to 0  \]
+</div>
+  <p> is a short exact sequence of cochain complexes of $\mathcal{A}$. Then there is a long exact cohomology sequence </p>
+  <div class="equation">
+  \[  \xymatrix{ \ldots &  \ldots &  \ldots \ar[lld] \\  H^ i(A^\bullet ) \ar[r] &  H^ i(B^\bullet ) \ar[r] &  H^ i(C^\bullet ) \ar[lld] \\  H^{i + 1}(A^\bullet ) \ar[r] &  H^{i + 1}(B^\bullet ) \ar[r] &  H^{i + 1}(C^\bullet ) \ar[lld] \\  \ldots &  \ldots &  \ldots \\  }  \]
+</div>
+  <p> The construction produces long exact cohomology sequences which are functorial in the short exact sequence and compatible with shifts as in Definition <a href="/tag/011H" data-tag="011H">12.14.8</a>. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      For the horizontal maps $H^ i(A^\bullet ) \to H^ i(B^\bullet )$ and $H^ i(B^\bullet ) \to H^ i(C^\bullet )$ we use the fact that $H^ i$ is a functor, see above. For the “boundary map” $H^ i(C^\bullet ) \to H^{i + 1}(A^\bullet )$ we use the map $\delta $ of the Snake Lemma <a href="/tag/010H" data-tag="010H">12.5.17</a> applied to the diagram 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ &  A^ i/\mathop{\mathrm{Im}}(d_ A^{i - 1}) \ar[r] \ar[d]^{d_ A^ i} &  B^ i/\mathop{\mathrm{Im}}(d_ B^{i - 1}) \ar[r] \ar[d]^{d_ B^ i} &  C^ i/\mathop{\mathrm{Im}}(d_ C^{i - 1}) \ar[r] \ar[d]^{d_ C^ i} &  0 \\  0 \ar[r] &  \mathop{\mathrm{Ker}}(d_ A^{i + 1}) \ar[r] &  \mathop{\mathrm{Ker}}(d_ B^{i + 1}) \ar[r] &  \mathop{\mathrm{Ker}}(d_ C^{i + 1}) &  }  \]
+</div>
+    <p>
+       This works as the kernel of the right vertical map is equal to $H^ i(C^\bullet )$ and the cokernel of the left vertical map is $H^{i + 1}(A^\bullet )$. The exactness of the long sequence is the exactnesss in part (2) of Lemma <a href="/tag/010H" data-tag="010H">12.5.17</a>. The functoriality is Lemma <a href="/tag/08N7" data-tag="08N7">12.5.18</a>. Compatibility with shifts is immediate from the definitions. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (5)</h2>
+
+  
+    <a id="comment-1800" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/010V#comment-1800">Comment #1800</a>
+        by
+        <cite>FelixBB</cite>
+        on <time datetime="2016-01-20 16:16:49">January 20, 2016 at 16:16 </time>
+      </header>
+
+      <blockquote><p>In Lemma 12.12.12 it should be: Then there is a canonical long exact COhomology sequence</p></blockquote>
+    </article>
+  
+    <a id="comment-5997" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/010V#comment-5997">Comment #5997</a>
+        by
+        <cite><a href="https://xenaproject.wordpress.com" rel="author">Kevin Buzzard</a></cite>
+        
+        on <time datetime="2021-03-22 14:11:07.224994">March 22, 2021 at 14:11 </time>
+      </header>
+
+      <blockquote><p>Lemma <code>0117</code> should be about COchain complexes, right? And is there any reason why 0117 gets to be a "slogan" but 0111 does not? Of course I'm also interested in what the heck the word "canonical" means in this context (is there a precise list of properties which you are claiming, for example? Is it just "functorial for morphisms of short exact sequences" or is it more?) but I am not sure I want to just continually bug you about this matter.</p></blockquote>
+    </article>
+  
+    <a id="comment-6000" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/010V#comment-6000">Comment #6000</a>
+        by
+        <cite><a href="https://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2021-03-23 00:47:52.002806">March 23, 2021 at 00:47 </time>
+      </header>
+
+      <blockquote><p>Yes, about the COchain thing. Thanks!</p>
+<p>Short answer to the "canonical" question: I don't mean it to be equivalent to "functorial for morphisms of short exact sequences of complexes", but that will do for now. In future uses of this lemma in proofs we might assume you use the same long exact cohomology sequence as the one given in the proof.</p>
+<p>The long answer follows. Don't take it seriously.</p>
+<p>There are more than 2000 occurences of the word canonical in the Stacks project. So it would take a very long time for you to comment on all of them! Canonical long exact sequence means here the long exact sequence that a human would come up with according to good practices. Looking up the word canonical in the dictionary confirms that this is actually pretty close to how the word canonical is used in the English language.</p>
+<p>However, I will admit this use of the word canonical is worse than the one you found before (in your comment on Lemma <a href="/tag/008K" data-tag="008K">6.21.8</a>). Namely, I conjecture that humans fall into 3 groups: the first group is those people who never end up looking at Lemma <a href="/tag/0117" data-tag="0117">12.13.12</a> or they do but never actually figure out what the maps in the long exact sequence are because they are too confused by the word "canonical" or, more seriously, they find the proof insufficient to actually tell them there really is a long exact sequence like this, the second group is those humans who read the proof and grok it, the third group is those humans who prove it for themselves. A person in the third group will allmost surely end up with the same arrows as I do for the maps <script type="math/tex">H^i(A) \to H^i(B)</script> and <script type="math/tex">H^i(B) \to H^i(C)</script> but a nonzero percentage of them will end up with the negative of the arrows <script type="math/tex">H^i(C) \to H^{i + 1}(A)</script> from the one I use.</p>
+<p>To indicate which sign the Stacks project uses for this lemma we could say "the boundary maps are defined by diagram chasing without the intervention of signs". See the construction of the map in the Snake Lemma <a href="/tag/010H" data-tag="010H">12.5.17</a>. For people interested in sign issues, please check out Section <a href="/tag/0FNG" data-tag="0FNG">15.74</a>.</p>
+<p>Yes, the rule that assigns the long exact sequence to the short exact sequence of complexes is functorial for short exact sequences of complexes. Having said this, the obvious mathematical question is whether besides changing the sign of the arrow (and the sign might depend on the degree of the cohomology we're looking at), there is anything else that a person might mischieviously do but preserve functoriality wrt maps of ses of complexes. Well, of course, if <script type="math/tex">\mathcal{A}</script> is the category of modules over a ring <script type="math/tex">R</script>, then we could multiply the boundary maps by a (fixed) unit of <script type="math/tex">R</script>. But I imagine if <script type="math/tex">\mathcal{A}</script> is the category of abelian groups for example, then the functorialy wrt maps of short exact sequences of complexes determines the boundary maps up to sign. However, I didn't check this statement. You could also ask for a compatibility of the boundary map with exact functors between abelian categories... that would be even more canonical!</p></blockquote>
+    </article>
+  
+    <a id="comment-6001" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/010V#comment-6001">Comment #6001</a>
+        by
+        <cite><a href="https://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2021-03-23 01:28:15.699356">March 23, 2021 at 01:28 </time>
+      </header>
+
+      <blockquote><p>PS: Canonical might include that the construction of the long exact sequence is compatible with shifts; this would further pin down the sign of the boundary maps all up to one uniform sign. This requires you to choose an identification of <script type="math/tex">H^i(K[1])</script> with <script type="math/tex">H^{i + 1}(K)</script>; there is a sign hidden here but I believe every text including the Stacks project uses the same one, namely the isomorphism defined without the intervention of signs, see Definition <a href="/tag/011H" data-tag="011H">12.14.8</a>.</p></blockquote>
+    </article>
+  
+    <a id="comment-6162" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/010V#comment-6162">Comment #6162</a>
+        by
+        <cite><a href="https://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2021-05-01 21:38:55.154253">May 01, 2021 at 21:38 </time>
+      </header>
+
+      <blockquote><p>OK, the word canonical has now dissappeared from this one place! See <a href="https://github.com/stacks/stacks-project/commit/0a9ddbf1673a6b7c20b37a42e3c55e7d10f1cee7">this commit</a>.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-010V",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">010V</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="010V"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">010V</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/010P">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0119">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/homology.pdf#nameddest=010V">View Section <span data-tag="010V">12.13</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "completed": true,
+  "diagonal_contraction_checks": 8,
+  "formal_total_derivative_and_time_checks": 96,
+  "shifted_amplitude_checks": 80,
+  "logarithmic_measure_omission_detected": true,
+  "origin_specialization_shortcut_detected": true,
+  "variable_coefficient_symbol_shortcut_detected": true,
+  "nilpotent_coefficient_control": "a mod(a^2) is nonzero",
+  "linear_operator_family_ideal": "(a),least pure prefix1",
+  "retained_Dvorsky_order": 3,
+  "retained_Dvorsky_variables": 5,
+  "retained_Dvorsky_normalized_checks": [
+    {
+      "m": 1,
+      "normalized_coefficient": "C + 2*T"
+    },
+    {
+      "m": 2,
+      "normalized_coefficient": "-6*T"
+    },
+    {
+      "m": 3,
+      "normalized_coefficient": "24*T"
+    }
+  ],
+  "general_D_module_solver_implemented": false,
+  "general_D_module_solver_executed": false,
+  "universal_termination_proof_certified_by_checker": false,
+  "new_lower_order_GVC_witness_computed": false,
+  "operator_order_reduced": false,
+  "producer_package_executed": false,
+  "new_cubic_prefix_computed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "ad17862941f4bca60bcaa9975504898cfd5f79ac9b3583791cd6c1325a74dc04"
+}

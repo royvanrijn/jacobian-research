@@ -1,0 +1,51 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Projective pencil multiplicities and critical-point expansions",
+  "new_external_theorem_imports": [],
+  "retained_primary_inputs": [
+    {
+      "url": "https://arxiv.org/html/math/0701588v1",
+      "retained_file": "petravchuk-iena-closed-rational-math-0701588v1.html",
+      "sha256": "16a826a72dd97d69898a14790bfe6391ae6c297830a2ad91b49562353f12fdd6",
+      "role": "Explicit retained input: Lemma 2(1), noncomposite rational functions generate relatively algebraically closed subfields. The new multiplicity inequality proves noncomposition directly."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "retained_file": "stacks-leading-riemann-hurwitz-0C1B.html",
+      "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+      "role": "Explicit retained input: projective finite separable P1-to-P1 total ramification 2d-2. No affine etale map is asserted finite."
+    }
+  ],
+  "literature_context_only": [
+    {
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/1526/1/preprint_2016_36.pdf",
+      "title": "On algebraic curves A(x)-B(y)=0 of genus zero",
+      "author": "Fedor Pakovich",
+      "version": "MPIM Preprint 2016 (36)",
+      "retained_file": "pakovich-genus-zero-mpim2016-36.pdf",
+      "sha256": "214d5f4fd101ef2d66898c5985a8f13721271722dbd2cbbf512be188cd670309",
+      "portions_inspected": "Section 2 orbifold definitions, covering condition and the numerical zero-Euler-characteristic lists, printed pages 3-6; no complete proof or classification audit.",
+      "role": "Context only, not a proof input. The new bound uses maximum fibre multiplicities and a simple factor in every exceptional member. It is not an orbifold covering certificate; no Lattes, Galois-closure-genus or orbifold-map classification is imported."
+    }
+  ],
+  "direct_arguments": [
+    "per-fibre ramification at most (d-1)(1-1/M) from an actual unramified point",
+    "strict sum below two excludes every nontrivial rational composition",
+    "equality profiles and the four numerical integer lists derived arithmetically",
+    "explicit independent-numerator cubic rational counterexample at equality",
+    "exact affine-in-V content factorization, exceptional-value and multiplicity certificate",
+    "critical-point Taylor divisibility, repeated-leading output polynomiality and full-monodromy closure"
+  ],
+  "maximum_multiplicities_not_lcm_used": true,
+  "exceptional_members_required_to_have_simple_factor": true,
+  "numerator_denominator_independence_required": true,
+  "new_orbifold_classification_imported": false,
+  "equality_numerical_lists_asserted_closed": false,
+  "strict_inequality_replaced_by_nonstrict": false,
+  "denominator_member_ignored": false,
+  "all_affine_etale_maps_asserted_finite": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

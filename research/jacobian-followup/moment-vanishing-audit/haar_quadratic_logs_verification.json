@@ -1,0 +1,38 @@
+{
+  "completed": true,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "c885dacc1247986721ffef6d9efb6c8a9b2872fde7496722efd1cf56925cd6bd",
+  "Hodge_strip_and_relative_weight_matrix_control_exact": true,
+  "image_N_squared_equals_M2_and_compact_middle_image_exact": true,
+  "ambient_line_disjoint_from_image_N_squared_exact": true,
+  "full_top_limit_grade_to_bottom_need_not_be_injective_exact": true,
+  "split_extension_specified_lift_can_have_quadratic_logs": true,
+  "quadratic_log_zero_does_not_force_first_log_zero": true,
+  "original_one_block_log_and_all_integer_continuations_exact": true,
+  "finite_meromorphic_row_basis_detects_both_log_coefficients_exact": true,
+  "one_row_invisible_motion_not_promoted_to_actual_phase": true,
+  "ramification_controls": [
+    {
+      "root_multiplicity": 2,
+      "all_sector_log_cube_zero": true,
+      "size_three_blocks_after_full_cover": 2
+    },
+    {
+      "root_multiplicity": 3,
+      "all_sector_log_cube_zero": true,
+      "size_three_blocks_after_full_cover": 3
+    }
+  ],
+  "universal_geometric_limit_and_marker_basis_proofs_machine_verified": false,
+  "meromorphic_log_coefficients_claimed_algebraic": false,
+  "N_squared_claimed_isomorphism_on_full_top_limit_grade": false,
+  "general_original_basis_or_canonical_frame_producer_implemented": false,
+  "all_exceptional_actual_logarithms_proved_zero": false,
+  "arbitrary_coefficient_ring_topological_promotion_claimed": false,
+  "abstract_models_claimed_actual_exceptional_phases": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "new_degree_support_or_prefix_campaign": false
+}

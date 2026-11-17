@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-11-15T07:40:14.534339+00:00",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-native-orbits/PROOF.md",
+      "sha256": "b7eaacc079973be79ab5d3ed5a5f3036461da398fbb495c73b586204f33c2729"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-feedback-normal-form/PROOF.md",
+      "sha256": "0ca1ea3bf102f7fd464c3de44e6b5dd22aba041ada38812f0c2e4fc2b2b61033"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-receiver/PROOF.md",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-structure/PROOF.md",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-scalar-self-feedback/PROOF.md",
+      "sha256": "1733d22b72cd1bc36dcbcfc9767542ae78bd985e6badb54beac96e8c9895fa59"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-compression/verify.py",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "jacobian-followup/hc4-triangular-graphs/CRITICAL_COORDINATE_JET.md",
+      "sha256": "035d476100acc2c5250efbfb9c4d2294587a3b46aa1ce5ab500b8fc22bb550cd"
+    },
+    {
+      "path": "jacobian-followup/hc4-triangular-graphs/verify_critical_jet.py",
+      "sha256": "6f3c0593379c9d305c734a0fa66d5fa4cf63640971562208a6e707845dbde93d"
+    },
+    {
+      "path": "jacobian-followup/hc4-triangular-graphs/sources/critical-jet-import.json",
+      "sha256": "ee08df853a8f8546504c7386a175cfccec2243ec2f15bacf48d4e7c88721a18d"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "gwozdziewicz-injectivity-v1.html",
+      "url": "https://arxiv.org/html/alg-geom/9305008v1",
+      "path": "sources/gwozdziewicz-injectivity-v1.html",
+      "sha256": "b6bf59b1cae5becc6c64ece15cc5d936e08cbcd3196e2d56ba7060e4b19705a8",
+      "bytes": 60326,
+      "reviewed_scope": "Theorem1.1, Lemma2.3 and its explicitly cited Abhyankar--Moh embedded-line rectification input. Imported, not independently re-proved."
+    },
+    {
+      "title": "trushin-contracted-divisors-v1.html",
+      "url": "https://arxiv.org/html/2605.26390v1",
+      "path": "sources/trushin-contracted-divisors-v1.html",
+      "sha256": "e888887737e65061f3f6c2e983becf5f8be7b67ce56839679ea1abf5a9673053",
+      "bytes": 440674,
+      "reviewed_scope": "Proposition3.1.1 saturation precedent and contracted/branching distinction. No general degree-two classification imported."
+    }
+  ]
+}

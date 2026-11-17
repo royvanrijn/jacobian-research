@@ -1,0 +1,904 @@
+{
+  "input": {
+    "dimension": 1,
+    "parameter_count": 1,
+    "phase_terms": []
+  },
+  "component": {
+    "primary_ideal": [],
+    "radical_ideal": [],
+    "independent_indices": [
+      0
+    ],
+    "dimension": 1,
+    "prime_radical_checked": true
+  },
+  "algebra": {
+    "component": {
+      "primary_ideal": [],
+      "radical_ideal": [],
+      "independent_indices": [
+        0
+      ],
+      "dimension": 1,
+      "prime_radical_checked": true
+    },
+    "scalar_parameters": [
+      "c0",
+      "a0",
+      "a1"
+    ],
+    "dependent_variables": [],
+    "standard_monomials": [
+      []
+    ],
+    "rank": 1,
+    "unit": [
+      {
+        "numerator": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            "1"
+          ]
+        ],
+        "denominator": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            "1"
+          ]
+        ]
+      }
+    ],
+    "multiplication_table": [
+      [
+        [
+          {
+            "numerator": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ],
+            "denominator": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ]
+          }
+        ]
+      ]
+    ],
+    "injectivity_contract": "Q is primary and nonzero polynomials in its maximal independent variables avoid radical(Q); localization is injective. Primary status is trusted CAS."
+  },
+  "certificate": {
+    "kind": "rational_cone_residue_IBP",
+    "box": 2,
+    "directions": [
+      "x0",
+      "v0",
+      "v1"
+    ],
+    "variables": [
+      "u",
+      "x0",
+      "v0",
+      "v1"
+    ],
+    "primitive_denominator_power": 2,
+    "denominator_polynomial": [
+      [
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                1,
+                0
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          1,
+          0,
+          2,
+          1
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                1
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          2,
+          0,
+          1,
+          1
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                1,
+                1
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ]
+    ],
+    "identity_terms": [
+      [
+        [
+          "P",
+          0,
+          0,
+          0,
+          0,
+          2,
+          3
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                1,
+                1
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          0,
+          0,
+          2,
+          0,
+          1,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                2,
+                2
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          0,
+          0,
+          2,
+          3
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                2,
+                0
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          0,
+          0,
+          3,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                1,
+                1
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          0,
+          0,
+          3,
+          4
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                1,
+                1
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          1,
+          0,
+          2,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                2,
+                1
+              ],
+              "-2"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          1,
+          0,
+          2,
+          4
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                2,
+                1
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          1,
+          0,
+          3,
+          3
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                1,
+                2
+              ],
+              "-2"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          2,
+          0,
+          2,
+          3
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                2,
+                2
+              ],
+              "2"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          2,
+          0,
+          3,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                1,
+                3
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          1,
+          0,
+          3,
+          0,
+          2,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                2,
+                3
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          2,
+          0,
+          0,
+          0,
+          2,
+          3
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                1,
+                1
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "P",
+          2,
+          0,
+          2,
+          0,
+          1,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                2,
+                2
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "L",
+          0,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "L",
+          1,
+          1
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                2
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          "L",
+          0,
+          0
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                2
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ]
+    ],
+    "operator": [
+      [
+        [
+          0,
+          0
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                2
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                2
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ]
+    ]
+  },
+  "origin": {
+    "weight": -2,
+    "nonnegative_integer_roots": [
+      0,
+      1
+    ],
+    "bound": 1,
+    "coefficients": [
+      [
+        1,
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "-1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ],
+      [
+        2,
+        {
+          "numerator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ],
+          "denominator": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ]
+        }
+      ]
+    ],
+    "rational_content": [
+      [
+        2,
+        "1"
+      ],
+      [
+        1,
+        "-1"
+      ]
+    ]
+  },
+  "zero": true,
+  "derivation": "Direct exact rational primitive; general capped enumeration was not restarted."
+}

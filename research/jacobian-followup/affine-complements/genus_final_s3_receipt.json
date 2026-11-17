@@ -1,0 +1,4991 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 418,
+  "checks": [
+    "predecessor PASS global_ruling_unfilled_cyclic_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json verify_global_ruling_unfilled_cyclic.py",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json COORDINATE_RULINGS_UNFILLED_CYCLIC_AND_S3_REDUCTION.md",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/manifest.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json nonunimodular_a4_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/dubouloz-kishimoto-1212.0521v1.html",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html",
+    "sealed predecessor global_ruling_unfilled_cyclic_receipt.json sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html",
+    "predecessor PASS nonunimodular_a4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json verify_nonunimodular_a4.py",
+    "sealed predecessor nonunimodular_a4_receipt.json NONUNIMODULAR_A4_CAPS_AND_THREE_TERMINAL_PAIRS.md",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/nonunimodular-a4/manifest.json",
+    "sealed predecessor nonunimodular_a4_receipt.json unimodular_initial_s4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json cyclic_pattern_a4_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json terminal_cone_twists_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/cyclic-companion/hillman-sakuma-1997.pdf",
+    "sealed predecessor nonunimodular_a4_receipt.json sources/binomial-periodic/clay-watson-2011v1.pdf",
+    "predecessor PASS meridian_balance_two_stage_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json verify_meridian_balance_two_stage.py",
+    "sealed predecessor meridian_balance_two_stage_receipt.json MERIDIAN_BALANCE_AND_GENERAL_TWO_STAGE_CLOSURE.md",
+    "sealed predecessor meridian_balance_two_stage_receipt.json sources/meridian-balance-two-stage/manifest.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json verify_general_two_stage.py",
+    "sealed predecessor meridian_balance_two_stage_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json rational_end_orderability_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json cyclic_parity_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json cyclic_companion_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor meridian_balance_two_stage_receipt.json sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+    "sealed predecessor meridian_balance_two_stage_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor meridian_balance_two_stage_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "predecessor PASS persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json verify_persistent_jsj_terminal_modulus.py",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json PERSISTENT_ROOTED_JSJ_AND_TERMINAL_MODULUS.md",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/persistent-jsj-terminal-modulus/manifest.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json iterated_peripheral_tail_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json meridian_balance_two_stage_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor persistent_jsj_terminal_modulus_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS terminal_cone_twists_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json verify_terminal_cone_twists.py",
+    "sealed predecessor terminal_cone_twists_receipt.json TERMINAL_CONE_TWISTS_AND_CYCLIC_ARRIVAL_CLOSURE.md",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/terminal-cone-twists/manifest.json",
+    "sealed predecessor terminal_cone_twists_receipt.json cyclic_loop_first_arrival_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json persistent_jsj_terminal_modulus_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json terminal_cone_binomial_closure_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json general_two_stage_receipt.json",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor terminal_cone_twists_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "predecessor PASS trefoil_complementary_fusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_trefoil_complementary_fusion.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json TREFOIL_CAPS_AND_COMPLEMENTARY_FIBRE_FUSION.md",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/trefoil-complementary-fusion/manifest.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json verify_complementary_corner_jsj.py",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json complementary_corner_jsj_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json matched_meridian_common_exclusion_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json seifert_sections_winding_three_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json coordinate_pencil_matrix_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json universal_regular_end_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json unramified_orevkov_receipt.json",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/quartic-cabling/hatcher-3M.pdf",
+    "sealed predecessor trefoil_complementary_fusion_receipt.json sources/borderline-regular-end/waldhausen-1968.pdf",
+    "predecessor PASS rational_end_orderability_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json verify_rational_end_orderability.py",
+    "sealed predecessor rational_end_orderability_receipt.json RATIONAL_SOURCE_ENDS_AND_TREFOIL_COMMON_EXCLUSION.md",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/manifest.json",
+    "sealed predecessor rational_end_orderability_receipt.json lifted_surface_s3_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor rational_end_orderability_receipt.json sources/regular-sector-end/neumann-plumbing-1981.pdf",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+    "sealed predecessor rational_end_orderability_receipt.json sources/rational-end-orderability/boyer-rolfsen-wiest-2005.pdf",
+    "predecessor PASS lifted_surface_s3_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json verify_lifted_surface_s3.py",
+    "sealed predecessor lifted_surface_s3_receipt.json LIFTED_SURFACE_BALANCES_AND_S3_MARKED_LINKING.md",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/lifted-surface-s3/manifest.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fibre_order_transfer_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json fold_schur_s4_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json peripheral_cone_budget_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json seifert_base_genus_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json common_pencil_mark_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json oriented_pattern_linking_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json binomial_periodic_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json marked_end_lattice_receipt.json",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+    "sealed predecessor lifted_surface_s3_receipt.json sources/peripheral-cone-budget/cochran-tanner-1207.5042v1.pdf",
+    "exact primary pin hatcher-3M.pdf",
+    "exact primary pin waldhausen-1968.pdf",
+    "exact primary pin neumann-raymond-1978.pdf",
+    "exact primary pin hillman-sakuma-1997.pdf",
+    "exact primary pin clay-watson-2011v1.pdf",
+    "exact primary pin rasmussen-1511.04413v3.pdf",
+    "exact primary pin nemethi-1510.07128v1.pdf",
+    "exact primary pin dubouloz-kishimoto-1212.0521v1.html",
+    "exact primary pin dihedral-linking-2112.14790v2.html",
+    "exact primary pin ni-wu-1205.7053.html",
+    "exact primary pin rasmussen-rasmussen-1508.05900.html",
+    "exact primary pin neumann-norbury-orevkov.pdf",
+    "exact primary pin hom-0912.4046v1.html",
+    "exact primary pin ozsvath-szabo-math0504404v1.html",
+    "fresh complete canonical/infinity primary page audits explicit",
+    "OS v1 cross-sign absolute display not used as rank formula",
+    "all-depth canonical genus bridge induction",
+    "initial canonical genus bridge",
+    "solid genus deficit recurrence",
+    "next solid continuation after minus violates strict infinity bound",
+    "arrival cap via genus degree",
+    "negative eta denominator relation",
+    "r3 surgery distance from genus endpoint",
+    "eta0 product cap forces deficit1",
+    "r3 genus endpoint ramification core is generator",
+    "complete unmerged root list from inverse3 equals plusminus1",
+    "complete collar coefficient AND marked distance list",
+    "terminal trefoil winding2 free3 cannot break last gcd",
+    "unmerged root2 requires impossible square3mod7",
+    "unmerged4 and collar4or10 require impossible square2mod3",
+    "root2 lattice forces3Aminus2 mod7",
+    "root4 lattice forces2Aminus1 mod3",
+    "collar5 exact contact lower bound",
+    "collar8 exact contact lower bound",
+    "merged3,4 all-depth source lower bound",
+    "all-depth positive differences between source lower bounds and targets",
+    "product collar minus assignment would force even winding4",
+    "signed Floer rank and exact genus threshold (1, -3, 1)",
+    "signed Floer rank and exact genus threshold (1, -1, 2)",
+    "signed Floer rank and exact genus threshold (1, 1, 2)",
+    "signed Floer rank and exact genus threshold (1, 1, 1)",
+    "signed Floer rank and exact genus threshold (1, 3, 2)",
+    "signed Floer rank and exact genus threshold (17, -3, 1)",
+    "signed Floer rank and exact genus threshold (17, -1, 2)",
+    "signed Floer rank and exact genus threshold (17, 1, 2)",
+    "signed Floer rank and exact genus threshold (17, 16, 1)",
+    "signed Floer rank and exact genus threshold (17, 17, 1)",
+    "signed Floer rank and exact genus threshold (17, 35, 2)",
+    "signed Floer rank and exact genus threshold (449, -3, 1)",
+    "signed Floer rank and exact genus threshold (449, -1, 2)",
+    "signed Floer rank and exact genus threshold (449, 1, 2)",
+    "signed Floer rank and exact genus threshold (449, 448, 1)",
+    "signed Floer rank and exact genus threshold (449, 449, 1)",
+    "signed Floer rank and exact genus threshold (449, 899, 2)",
+    "actual infinity solid history genus identities []",
+    "actual composed unfilled cap for genus-controlled solid history []",
+    "actual infinity solid history genus identities [(3, 1)]",
+    "actual composed unfilled cap for genus-controlled solid history [(3, 1)]",
+    "actual infinity solid history genus identities [(3, 1), (5, 1)]",
+    "actual composed unfilled cap for genus-controlled solid history [(3, 1), (5, 1)]",
+    "actual infinity solid history genus identities [(3, 1), (5, -1)]",
+    "actual composed unfilled cap for genus-controlled solid history [(3, 1), (5, -1)]",
+    "actual infinity solid history genus identities [(5, -1)]",
+    "actual composed unfilled cap for genus-controlled solid history [(5, -1)]",
+    "actual infinity solid history genus identities [(3, 1), (5, 1), (3, 1)]",
+    "actual composed unfilled cap for genus-controlled solid history [(3, 1), (5, 1), (3, 1)]",
+    "minus continuation countercontrol fails exact infinity inequality (3, 3, 1)",
+    "minus continuation countercontrol fails exact infinity inequality (3, 5, -1)",
+    "minus continuation countercontrol fails exact infinity inequality (5, 3, -1)",
+    "arrival actual canonical degree and positive cap ([], 3, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([], 3, 0)",
+    "r3 ordinary surgery genus bound exact ([], 0)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 3, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 3, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 3, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([], 3, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([], 3, -2)",
+    "r3 ordinary surgery genus bound exact ([], -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 3, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 3, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 3, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([], 9, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([], 9, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([], 9)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 9, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 9, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 9, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([], 9, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([], 9, -2)",
+    "two exact denominators bound missing meridian interior ([], 9, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 9, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 9, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 9, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([], 15, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([], 15, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([], 15)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 15, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 15, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 15, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([], 15, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([], 15, -2)",
+    "two exact denominators bound missing meridian interior ([], 15, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 15, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 15, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([], 15, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1)], 3, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1)], 3, 0)",
+    "r3 ordinary surgery genus bound exact ([(3, 1)], 0)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 3, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 3, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 3, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1)], 3, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1)], 3, -2)",
+    "r3 ordinary surgery genus bound exact ([(3, 1)], -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 3, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 3, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 3, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1)], 9, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1)], 9, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(3, 1)], 9)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 9, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 9, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 9, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1)], 9, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1)], 9, -2)",
+    "two exact denominators bound missing meridian interior ([(3, 1)], 9, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 9, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 9, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 9, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1)], 15, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1)], 15, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(3, 1)], 15)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 15, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 15, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 15, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1)], 15, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1)], 15, -2)",
+    "two exact denominators bound missing meridian interior ([(3, 1)], 15, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 15, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 15, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1)], 15, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1)], 3, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1)], 3, 0)",
+    "r3 ordinary surgery genus bound exact ([(3, 1), (5, 1)], 0)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 3, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 3, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 3, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1)], 3, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1)], 3, -2)",
+    "r3 ordinary surgery genus bound exact ([(3, 1), (5, 1)], -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 3, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 3, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 3, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1)], 9, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1)], 9, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(3, 1), (5, 1)], 9)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 9, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 9, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 9, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1)], 9, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1)], 9, -2)",
+    "two exact denominators bound missing meridian interior ([(3, 1), (5, 1)], 9, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 9, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 9, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 9, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1)], 15, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1)], 15, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(3, 1), (5, 1)], 15)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 15, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 15, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 15, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1)], 15, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1)], 15, -2)",
+    "two exact denominators bound missing meridian interior ([(3, 1), (5, 1)], 15, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 15, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 15, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1)], 15, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, -1)], 3, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, -1)], 3, 0)",
+    "r3 ordinary surgery genus bound exact ([(3, 1), (5, -1)], 0)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 3, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 3, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 3, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, -1)], 3, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, -1)], 3, -2)",
+    "r3 ordinary surgery genus bound exact ([(3, 1), (5, -1)], -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 3, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 3, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 3, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, -1)], 9, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, -1)], 9, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(3, 1), (5, -1)], 9)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 9, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 9, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 9, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, -1)], 9, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, -1)], 9, -2)",
+    "two exact denominators bound missing meridian interior ([(3, 1), (5, -1)], 9, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 9, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 9, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 9, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, -1)], 15, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, -1)], 15, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(3, 1), (5, -1)], 15)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 15, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 15, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 15, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, -1)], 15, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, -1)], 15, -2)",
+    "two exact denominators bound missing meridian interior ([(3, 1), (5, -1)], 15, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 15, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 15, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, -1)], 15, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(5, -1)], 3, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(5, -1)], 3, 0)",
+    "r3 ordinary surgery genus bound exact ([(5, -1)], 0)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 3, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 3, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 3, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(5, -1)], 3, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(5, -1)], 3, -2)",
+    "r3 ordinary surgery genus bound exact ([(5, -1)], -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 3, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 3, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 3, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(5, -1)], 9, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(5, -1)], 9, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(5, -1)], 9)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 9, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 9, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 9, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(5, -1)], 9, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(5, -1)], 9, -2)",
+    "two exact denominators bound missing meridian interior ([(5, -1)], 9, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 9, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 9, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 9, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(5, -1)], 15, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(5, -1)], 15, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(5, -1)], 15)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 15, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 15, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 15, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(5, -1)], 15, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(5, -1)], 15, -2)",
+    "two exact denominators bound missing meridian interior ([(5, -1)], 15, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 15, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 15, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(5, -1)], 15, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1), (3, 1)], 3, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1), (3, 1)], 3, 0)",
+    "r3 ordinary surgery genus bound exact ([(3, 1), (5, 1), (3, 1)], 0)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 3, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 3, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 3, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1), (3, 1)], 3, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1), (3, 1)], 3, -2)",
+    "r3 ordinary surgery genus bound exact ([(3, 1), (5, 1), (3, 1)], -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 3, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 3, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 3, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1), (3, 1)], 9, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1), (3, 1)], 9, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(3, 1), (5, 1), (3, 1)], 9)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 9, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 9, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 9, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1), (3, 1)], 9, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1), (3, 1)], 9, -2)",
+    "two exact denominators bound missing meridian interior ([(3, 1), (5, 1), (3, 1)], 9, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 9, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 9, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 9, -2, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1), (3, 1)], 15, 0)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1), (3, 1)], 15, 0)",
+    "eta0 actual matched GENUS endpoint is yminus1 ([(3, 1), (5, 1), (3, 1)], 15)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 15, 0, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 15, 0, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 15, 0, [(7, 4)])",
+    "arrival actual canonical degree and positive cap ([(3, 1), (5, 1), (3, 1)], 15, -2)",
+    "actual solid cap coefficient and inverse3 when r3 ([(3, 1), (5, 1), (3, 1)], 15, -2)",
+    "two exact denominators bound missing meridian interior ([(3, 1), (5, 1), (3, 1)], 15, -2)",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 15, -2, [])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 15, -2, [(5, 3)])",
+    "full actual S4 marked cover agrees with symbolic solid-arrival/tail homology ([(3, 1), (5, 1), (3, 1)], 15, -2, [(7, 4)])",
+    "endpoint Lspace seed tail countercontrol really has marked H1Z17",
+    "endpoint seed linking obstruction is NOT invariant under an odd tail square"
+  ],
+  "general": {
+    "all_depth_canonical_genus_bridge": true,
+    "strict_infinity_splice_retained": true,
+    "solid_minus_loop_must_be_last": true,
+    "solid_history_positive_Lspace_knots": true,
+    "signed_rank_formula_and_genus_endpoint_retained": true
+  },
+  "quartic": {
+    "all_final_stage_S3_arrivals_closed_both_pencils": true,
+    "arbitrary_companion_depth": true,
+    "nonpositive_arrival_common_nonLspace_tail_closure_except_r3_eta0_allplus": true,
+    "complementary_two_cone_internal_annulus_tails_closed": true,
+    "normalized_root_and_terminal_winding_divisor_proof": true,
+    "no_prefix_assumed_separate_affine_source": true
+  },
+  "complete_unmerged_root_orders": [
+    2,
+    4
+  ],
+  "complete_collar_root_pairs": [
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      10,
+      3
+    ]
+  ],
+  "actual_solid_histories": [
+    {
+      "steps": [],
+      "cables": [],
+      "A": 1,
+      "B": 6,
+      "d": 5,
+      "c": 1,
+      "D": 1,
+      "W": 1,
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          3,
+          1
+        ]
+      ],
+      "cables": [
+        [
+          3,
+          7
+        ]
+      ],
+      "A": 9,
+      "B": 21,
+      "d": 4,
+      "c": 17,
+      "D": 1,
+      "W": 3,
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "cables": [
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          91
+        ]
+      ],
+      "A": 225,
+      "B": 455,
+      "d": 6,
+      "c": 449,
+      "D": 1,
+      "W": 15,
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "cables": [
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          89
+        ]
+      ],
+      "A": 225,
+      "B": 445,
+      "d": 4,
+      "c": 441,
+      "D": 9,
+      "W": 15,
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "cables": [
+        [
+          5,
+          9
+        ]
+      ],
+      "A": 25,
+      "B": 45,
+      "d": 4,
+      "c": 41,
+      "D": 9,
+      "W": 5,
+      "infinity_valid": true
+    },
+    {
+      "steps": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "cables": [
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          91
+        ],
+        [
+          3,
+          1351
+        ]
+      ],
+      "A": 2025,
+      "B": 4053,
+      "d": 4,
+      "c": 4049,
+      "D": 1,
+      "W": 45,
+      "infinity_valid": true
+    }
+  ],
+  "exact_interval_controls": [
+    {
+      "history": [],
+      "A": 1,
+      "D": 1,
+      "r": 3,
+      "k": 4,
+      "eta": 0,
+      "cap": 1,
+      "a1": "-2",
+      "a2": "1",
+      "meridian": "2/3"
+    },
+    {
+      "history": [],
+      "A": 1,
+      "D": 1,
+      "r": 3,
+      "k": 2,
+      "eta": -2,
+      "cap": 2,
+      "a1": "-1",
+      "a2": "1/2",
+      "meridian": "1/3"
+    },
+    {
+      "history": [],
+      "A": 1,
+      "D": 1,
+      "r": 9,
+      "k": 10,
+      "eta": 0,
+      "cap": 4,
+      "a1": "-8/3",
+      "a2": "7/4",
+      "meridian": "8/9"
+    },
+    {
+      "history": [],
+      "A": 1,
+      "D": 1,
+      "r": 9,
+      "k": 8,
+      "eta": -2,
+      "cap": 5,
+      "a1": "-1/3",
+      "a2": "1/5",
+      "meridian": "1/9"
+    },
+    {
+      "history": [],
+      "A": 1,
+      "D": 1,
+      "r": 15,
+      "k": 16,
+      "eta": 0,
+      "cap": 7,
+      "a1": "-14/5",
+      "a2": "13/7",
+      "meridian": "14/15"
+    },
+    {
+      "history": [],
+      "A": 1,
+      "D": 1,
+      "r": 15,
+      "k": 14,
+      "eta": -2,
+      "cap": 8,
+      "a1": "-1/5",
+      "a2": "1/8",
+      "meridian": "1/15"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 9,
+      "D": 1,
+      "r": 3,
+      "k": 52,
+      "eta": 0,
+      "cap": 1,
+      "a1": "-2",
+      "a2": "1",
+      "meridian": "2/3"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 9,
+      "D": 1,
+      "r": 3,
+      "k": 50,
+      "eta": -2,
+      "cap": 2,
+      "a1": "-1",
+      "a2": "1/2",
+      "meridian": "1/3"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 9,
+      "D": 1,
+      "r": 9,
+      "k": 154,
+      "eta": 0,
+      "cap": 4,
+      "a1": "-8/3",
+      "a2": "7/4",
+      "meridian": "8/9"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 9,
+      "D": 1,
+      "r": 9,
+      "k": 152,
+      "eta": -2,
+      "cap": 5,
+      "a1": "-1/3",
+      "a2": "1/5",
+      "meridian": "1/9"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 9,
+      "D": 1,
+      "r": 15,
+      "k": 256,
+      "eta": 0,
+      "cap": 7,
+      "a1": "-14/5",
+      "a2": "13/7",
+      "meridian": "14/15"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 9,
+      "D": 1,
+      "r": 15,
+      "k": 254,
+      "eta": -2,
+      "cap": 8,
+      "a1": "-1/5",
+      "a2": "1/8",
+      "meridian": "1/15"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "A": 225,
+      "D": 1,
+      "r": 3,
+      "k": 1348,
+      "eta": 0,
+      "cap": 1,
+      "a1": "-2",
+      "a2": "1",
+      "meridian": "2/3"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "A": 225,
+      "D": 1,
+      "r": 3,
+      "k": 1346,
+      "eta": -2,
+      "cap": 2,
+      "a1": "-1",
+      "a2": "1/2",
+      "meridian": "1/3"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "A": 225,
+      "D": 1,
+      "r": 9,
+      "k": 4042,
+      "eta": 0,
+      "cap": 4,
+      "a1": "-8/3",
+      "a2": "7/4",
+      "meridian": "8/9"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "A": 225,
+      "D": 1,
+      "r": 9,
+      "k": 4040,
+      "eta": -2,
+      "cap": 5,
+      "a1": "-1/3",
+      "a2": "1/5",
+      "meridian": "1/9"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "A": 225,
+      "D": 1,
+      "r": 15,
+      "k": 6736,
+      "eta": 0,
+      "cap": 7,
+      "a1": "-14/5",
+      "a2": "13/7",
+      "meridian": "14/15"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "A": 225,
+      "D": 1,
+      "r": 15,
+      "k": 6734,
+      "eta": -2,
+      "cap": 8,
+      "a1": "-1/5",
+      "a2": "1/8",
+      "meridian": "1/15"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 225,
+      "D": 9,
+      "r": 3,
+      "k": 1324,
+      "eta": 0,
+      "cap": 13,
+      "a1": "-2",
+      "a2": "17/13",
+      "meridian": "2/3"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 225,
+      "D": 9,
+      "r": 3,
+      "k": 1322,
+      "eta": -2,
+      "cap": 14,
+      "a1": "-1",
+      "a2": "9/14",
+      "meridian": "1/3"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 225,
+      "D": 9,
+      "r": 9,
+      "k": 3970,
+      "eta": 0,
+      "cap": 40,
+      "a1": "-8/3",
+      "a2": "71/40",
+      "meridian": "8/9"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 225,
+      "D": 9,
+      "r": 9,
+      "k": 3968,
+      "eta": -2,
+      "cap": 41,
+      "a1": "-1/3",
+      "a2": "9/41",
+      "meridian": "1/9"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 225,
+      "D": 9,
+      "r": 15,
+      "k": 6616,
+      "eta": 0,
+      "cap": 67,
+      "a1": "-14/5",
+      "a2": "125/67",
+      "meridian": "14/15"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 225,
+      "D": 9,
+      "r": 15,
+      "k": 6614,
+      "eta": -2,
+      "cap": 68,
+      "a1": "-1/5",
+      "a2": "9/68",
+      "meridian": "1/15"
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 25,
+      "D": 9,
+      "r": 3,
+      "k": 124,
+      "eta": 0,
+      "cap": 13,
+      "a1": "-2",
+      "a2": "17/13",
+      "meridian": "2/3"
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 25,
+      "D": 9,
+      "r": 3,
+      "k": 122,
+      "eta": -2,
+      "cap": 14,
+      "a1": "-1",
+      "a2": "9/14",
+      "meridian": "1/3"
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 25,
+      "D": 9,
+      "r": 9,
+      "k": 370,
+      "eta": 0,
+      "cap": 40,
+      "a1": "-8/3",
+      "a2": "71/40",
+      "meridian": "8/9"
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 25,
+      "D": 9,
+      "r": 9,
+      "k": 368,
+      "eta": -2,
+      "cap": 41,
+      "a1": "-1/3",
+      "a2": "9/41",
+      "meridian": "1/9"
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 25,
+      "D": 9,
+      "r": 15,
+      "k": 616,
+      "eta": 0,
+      "cap": 67,
+      "a1": "-14/5",
+      "a2": "125/67",
+      "meridian": "14/15"
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "A": 25,
+      "D": 9,
+      "r": 15,
+      "k": 614,
+      "eta": -2,
+      "cap": 68,
+      "a1": "-1/5",
+      "a2": "9/68",
+      "meridian": "1/15"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 2025,
+      "D": 1,
+      "r": 3,
+      "k": 12148,
+      "eta": 0,
+      "cap": 1,
+      "a1": "-2",
+      "a2": "1",
+      "meridian": "2/3"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 2025,
+      "D": 1,
+      "r": 3,
+      "k": 12146,
+      "eta": -2,
+      "cap": 2,
+      "a1": "-1",
+      "a2": "1/2",
+      "meridian": "1/3"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 2025,
+      "D": 1,
+      "r": 9,
+      "k": 36442,
+      "eta": 0,
+      "cap": 4,
+      "a1": "-8/3",
+      "a2": "7/4",
+      "meridian": "8/9"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 2025,
+      "D": 1,
+      "r": 9,
+      "k": 36440,
+      "eta": -2,
+      "cap": 5,
+      "a1": "-1/3",
+      "a2": "1/5",
+      "meridian": "1/9"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 2025,
+      "D": 1,
+      "r": 15,
+      "k": 60736,
+      "eta": 0,
+      "cap": 7,
+      "a1": "-14/5",
+      "a2": "13/7",
+      "meridian": "14/15"
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "A": 2025,
+      "D": 1,
+      "r": 15,
+      "k": 60734,
+      "eta": -2,
+      "cap": 8,
+      "a1": "-1/5",
+      "a2": "1/8",
+      "meridian": "1/15"
+    }
+  ],
+  "full_target_controls": [
+    {
+      "history": [],
+      "arrival": [
+        3,
+        4
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        4
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        4
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        2
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 1,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        2
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 1,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        3,
+        2
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 1,
+          "torsion": [
+            7
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        9,
+        10
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        9,
+        10
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        9,
+        10
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        9,
+        8
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        9,
+        8
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": []
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        9,
+        8
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        15,
+        16
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        15,
+        16
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        15,
+        16
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            21
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        15,
+        14
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        15,
+        14
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [],
+      "arrival": [
+        15,
+        14
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        52
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            17
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        52
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            17
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        52
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            119
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        50
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            16
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        50
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            16
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        50
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            112
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        154
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            50
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        154
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            50
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        154
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            350
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        152
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            49
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        152
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            49
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        152
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7,
+            49
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        256
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            83
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        256
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            83
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        256
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            581
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        254
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            82
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        254
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            82
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        254
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            574
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        1348
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            449
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        1348
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            449
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        1348
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3143
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        1346
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            448
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        1346
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            448
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        1346
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7,
+            448
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        4042
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1346
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        4042
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1346
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        4042
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9422
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        4040
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1345
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        4040
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1345
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        4040
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9415
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            35
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        6736
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2243
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        6736
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2243
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        6736
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            15701
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        6734
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2242
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        6734
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2242
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        6734
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            15694
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        1324
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            437
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        1324
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            437
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        1324
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3059
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        1322
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            436
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        1322
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            436
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        1322
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            3052
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        3970
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1310
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        3970
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1310
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        3970
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            9170
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            70
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        3968
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1309
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        3968
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1309
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        3968
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7,
+            1309
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        6616
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2183
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        6616
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2183
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        6616
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            15281
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        6614
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2182
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        6614
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            2182
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        6614
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            15274
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        124
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            37
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        124
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            37
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        124
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            259
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        122
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            36
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        122
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            36
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        3,
+        122
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            252
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        370
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            110
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        370
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            110
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        370
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            770
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            70
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        368
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            109
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        368
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            109
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        9,
+        368
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            763
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        616
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            183
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        616
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            183
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        616
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            1281
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        614
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            182
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        614
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            182
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          5,
+          -1
+        ]
+      ],
+      "arrival": [
+        15,
+        614
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7,
+            182
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        12148
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            4049
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        12148
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            4049
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        12148
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            28343
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        12146
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            4048
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        12146
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            4048
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        3,
+        12146
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            28336
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        36442
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            12146
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        36442
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            12146
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        36442
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            85022
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        36440
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            12145
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        36440
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            12145
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        9,
+        36440
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            7,
+            12145
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7,
+            35
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        60736
+      ],
+      "eta_at_arrival": 0,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            20243
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        60736
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            20243
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": []
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        60736
+      ],
+      "eta_at_arrival": 0,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            141701
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        60734
+      ],
+      "eta_at_arrival": -2,
+      "tail": [],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            20242
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        60734
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          5,
+          3
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            20242
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "history": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "arrival": [
+        15,
+        60734
+      ],
+      "eta_at_arrival": -2,
+      "tail": [
+        [
+          7,
+          4
+        ]
+      ],
+      "actual": {
+        "H1": {
+          "free": 0,
+          "torsion": [
+            141694
+          ]
+        },
+        "quotient": {
+          "free": 0,
+          "torsion": [
+            14
+          ]
+        }
+      }
+    }
+  ],
+  "signed_rank_controls": [
+    {
+      "c": 1,
+      "p": -3,
+      "q": 1,
+      "rank": 5
+    },
+    {
+      "c": 1,
+      "p": -1,
+      "q": 2,
+      "rank": 5
+    },
+    {
+      "c": 1,
+      "p": 1,
+      "q": 2,
+      "rank": 3
+    },
+    {
+      "c": 1,
+      "p": 1,
+      "q": 1,
+      "rank": 1
+    },
+    {
+      "c": 1,
+      "p": 3,
+      "q": 2,
+      "rank": 3
+    },
+    {
+      "c": 17,
+      "p": -3,
+      "q": 1,
+      "rank": 37
+    },
+    {
+      "c": 17,
+      "p": -1,
+      "q": 2,
+      "rank": 69
+    },
+    {
+      "c": 17,
+      "p": 1,
+      "q": 2,
+      "rank": 67
+    },
+    {
+      "c": 17,
+      "p": 16,
+      "q": 1,
+      "rank": 18
+    },
+    {
+      "c": 17,
+      "p": 17,
+      "q": 1,
+      "rank": 17
+    },
+    {
+      "c": 17,
+      "p": 35,
+      "q": 2,
+      "rank": 35
+    },
+    {
+      "c": 449,
+      "p": -3,
+      "q": 1,
+      "rank": 901
+    },
+    {
+      "c": 449,
+      "p": -1,
+      "q": 2,
+      "rank": 1797
+    },
+    {
+      "c": 449,
+      "p": 1,
+      "q": 2,
+      "rank": 1795
+    },
+    {
+      "c": 449,
+      "p": 448,
+      "q": 1,
+      "rank": 450
+    },
+    {
+      "c": 449,
+      "p": 449,
+      "q": 1,
+      "rank": 449
+    },
+    {
+      "c": 449,
+      "p": 899,
+      "q": 2,
+      "rank": 899
+    }
+  ],
+  "endpoint_tail_countercontrol": {
+    "A": 9,
+    "ordinary_genus": 9,
+    "arrival": [
+      3,
+      52
+    ],
+    "tail": [
+      3,
+      5
+    ],
+    "actual": {
+      "H1": {
+        "free": 0,
+        "torsion": [
+          17
+        ]
+      },
+      "quotient": {
+        "free": 0,
+        "torsion": []
+      }
+    },
+    "linking": "8/17",
+    "not_affine_realization": true
+  },
+  "assurance": {
+    "written_unbounded_genus_interval_root_and_lattice_proofs": true,
+    "actual_composed_full_CW_and_integral_mark_controls": true,
+    "fresh_complete_canonical_PDF_pages_audited": true,
+    "new_primary_Floer_cabling_and_rank_inputs_imported": true,
+    "retained_deep_JSJ_gluing_LO_full_peripheral_inputs": true,
+    "finite_controls_not_universal_proof": true,
+    "endpoint_Lspace_seed_linking_not_assumed_tail_invariant": true,
+    "all_later_S3_closed": false,
+    "all_later_A4_closed": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_packet_classification": false,
+    "finite_Keller_map": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_full_reproof": false,
+    "novelty_priority": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_genus_final_s3.py": "e21de49ea47754f6b1d5a892d74c1add776e265d877841d57e4d0fe75653f9e8",
+    "GENUS_FRAMING_AND_FINAL_S3_CLOSURE.md": "66ba8e3e135b4b9911181776598ec2c56129a90d532d24711a0cd76d840c1231",
+    "sources/genus-final-s3/manifest.json": "844403d17b14571e1bf776ad19808dab1b9d19fb5a3feec4e13bbff7b8d73ab2",
+    "global_ruling_unfilled_cyclic_receipt.json": "a42e35d20777a50fa41be0b819ecd1b48a5875524c5b0ce0241980a38656a100",
+    "nonunimodular_a4_receipt.json": "492392d3200d97dbdac301a9e7fce22830c384a5a04642bcaedc225813ed80d3",
+    "meridian_balance_two_stage_receipt.json": "603c93bf2dc32c165e77cb38246abdc22d3532a3b98e2f558ee248840a12afcf",
+    "persistent_jsj_terminal_modulus_receipt.json": "fddc27f470c56b0175a263e0544c44fee29177a436699cf8748ae147732dfdc3",
+    "terminal_cone_twists_receipt.json": "735f5a8e3ba69916e37fee530d839e4167f30a02db1551d5a8fe6de839119f11",
+    "trefoil_complementary_fusion_receipt.json": "c0250bee54f22ab4ae126958727918cc081b84cf1dec529c25ab7b5e5d7d6ae5",
+    "rational_end_orderability_receipt.json": "de1ce1ae2febf3b3d5f31f54d93d39debdac61029313805ca2e9e27691edc9d7",
+    "lifted_surface_s3_receipt.json": "047f6b33e0849bb630525cc1e816e3371111217e0489905d65e64605b1634a5b",
+    "sources/quartic-cabling/hatcher-3M.pdf": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+    "sources/borderline-regular-end/waldhausen-1968.pdf": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+    "sources/oriented-pattern-linking/neumann-raymond-1978.pdf": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+    "sources/cyclic-companion/hillman-sakuma-1997.pdf": "455a770f76f95dd189132cf99f7964e1775621e48169f6d8501e68b2dd88900b",
+    "sources/binomial-periodic/clay-watson-2011v1.pdf": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b",
+    "sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf": "602c28528d7e990d2fb3b90a10f024c21cff7811054776a512c559b092e701f6",
+    "sources/rational-end-orderability/nemethi-1510.07128v1.pdf": "ec6e0f8d0d96fc9f3dfb194c23fffac6f41eb2057ae4e60765e0194f3998f594",
+    "sources/global-ruling-unfilled-cyclic/dubouloz-kishimoto-1212.0521v1.html": "f3ff91734575b00f4ffd39fb1b12b7f00e437860d8123e6e5ed4c1c019816cd8",
+    "sources/global-ruling-unfilled-cyclic/dihedral-linking-2112.14790v2.html": "c86826922f0ccb585b10cec2407eda9a1cbc2d36a16d35f9a6308c81914acc74",
+    "sources/global-ruling-unfilled-cyclic/ni-wu-1205.7053.html": "fcba6587adc621738f382cea63a287e92ddaa1de1dec54957de21c8a3f859b30",
+    "sources/global-ruling-unfilled-cyclic/rasmussen-rasmussen-1508.05900.html": "c03db0c810e3b6e07cf158e499307628a9e1a8200c4fbae4d5b0edcbabe40e66",
+    "sources/quartic-cabling/neumann-norbury-orevkov.pdf": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+    "sources/genus-final-s3/hom-0912.4046v1.html": "4e0895d2ad5d8f71ed1f2dd1ee82b9e7ae690ceb556a9bfda26ec9ab162cce74",
+    "sources/genus-final-s3/ozsvath-szabo-math0504404v1.html": "b631ff290884c068cd06d990274ef346363db08fb92a770fb35339c7f3741ac2"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

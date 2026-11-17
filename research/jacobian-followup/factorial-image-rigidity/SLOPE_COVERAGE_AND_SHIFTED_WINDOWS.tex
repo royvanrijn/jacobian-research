@@ -1,0 +1,335 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\newcommand{\vp}{v_p}
+\title{Finite slope coverage, candidate primes and shifted-index moment windows}
+\author{Internal proofs and exact certificates; no priority claim}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Scope.}
+The inactive-variable Gamma limit is completed in the
+\href{COUPLED_BLOCK_PERIODS.tex}{canonical block proof}.
+Here all coefficients have ordinary factorial shape one. Write
+\[
+ P_{n,d}(T)=\sum_{j=0}^n\binom nj(dj)!T^j,\qquad d\ge1.
+\]
+The \href{MIXED_PRIME_RESIDUAL_WINDOWS.tex}{retained real-place proof}
+shows that every real $H$ with $H^2\mid P_{n,d}$ has even degree,
+and that all-index two-term SFC is equivalent to squarefreeness of
+these polynomials at every index. We distinguish slope-only information
+from the stronger residual-multiplicity test already implemented there.
+No all-index exponent-six closure, external review or novelty is claimed.
+
+\section{An exact finite diagnostic for the slope-only method}
+Use literal Newton coordinates $(j,\vp(c_j))$, with
+$c_j=\binom nj(dj)!$. Let a lower edge have length $L$ and reduced
+slope denominator $e$; thus $e\mid L$. Define
+\[
+ D_p^{\rm sl}(P)=\left\{\sum_{\rm edges}e t_e:
+          0\le t_e\le\left\lfloor\frac{L_e}{2e}\right\rfloor\right\}.
+ \tag{1}
+\]
+Newton polygons of products add edge lengths at each slope. Hence
+for $H\in\Q_p[T]$, $H^2\mid P$ implies $\deg H\in D_p^{\rm sl}(P)$.
+This uses no edge residual coefficients or their factorization.
+
+\begin{theorem}\label{thm:cap}
+For $P_{n,d}$, every prime $p>dn$ gives exactly the unrestricted slope
+budget $D_p^{\rm sl}=\{0,1,\ldots,\lfloor n/2\rfloor\}$.
+Consequently the complete slope-and-parity test at an index $n\ge2$
+is the finite intersection
+\[
+ \bigcap_{p\le dn}D_p^{\rm sl}(P_{n,d})
+ \cap\{2,4,\ldots,2\lfloor n/4\rfloor\}. \tag{2}
+\]
+Empty intersection proves squarefreeness. A positive survivor proves
+that no additional prime can improve this particular slope-only test
+at this index; it is no claim that the polynomial has a square factor.
+\end{theorem}
+\begin{proof}
+Every prime dividing $\binom nj$ is at most $n$, and every prime
+dividing $(dj)!$ is at most $dn$. For $p>dn$ all coefficients are
+units. The polygon is the horizontal interval of length $n$, with
+$e=1$. Formula (1) then gives the stated full budget. Only the listed
+finite set of primes can reduce it. The real-place theorem and the
+bound $2\deg H\le n$ give (2).
+\end{proof}
+
+For $p>dn$ the horizontal \emph{residual} is the reduction of the
+whole polynomial. It can be squarefree and exclude every square
+factor, even though its slope budget gives no restriction. Thus the
+finite prime cap in Theorem~\ref{thm:cap} must not be applied to the
+residual-multiplicity certificate.
+
+\begin{theorem}[Candidate-dependent prime restriction]\label{thm:candidate}
+Fix $1\le k\le\lfloor n/2\rfloor$. If $p>2dk$ and
+$p\nmid n(n-1)\cdots(n-2k+1)$, then
+$k\in D_p^{\rm sl}(P_{n,d})$.
+Thus a prime excluding degree $k$ must be in
+\[
+ \{p:p\le2dk\}\ \cup\
+ \{p:p\mid n(n-1)\cdots(n-2k+1)\}. \tag{3}
+\]
+For $d=6$ and $k=2$, only primes at most $24$ and prime divisors of
+$n(n-1)(n-2)(n-3)$ can exclude a quadratic by slopes alone.
+\end{theorem}
+\begin{proof}
+For $0\le j\le2k$, $(dj)!$ and $j!$ are units at $p$. The assumption
+on the falling product also makes every factor of
+$n(n-1)\cdots(n-j+1)$ a unit. Hence $c_0,\ldots,c_{2k}$ all have
+valuation zero. All other coefficients are integral, so the Newton
+polygon has a horizontal edge of length at least $2k$. Its square
+budget alone admits $k$; allocate degree zero at the other slopes.
+\end{proof}
+This is a proved restriction on useful primes, not a theorem that
+one of the permitted primes always excludes $k$.
+
+\section{An exact shifted-index polygon and both edge residuals}
+Fix integers $d,u\ge1$, $i\ge0$, a prime $p>d\max(u,i)$, and $r\ge1$.
+Set
+\[
+ e=p^r,\qquad c=\frac{e-1}{p-1},\qquad N=ue+i.
+\]
+The inequality ensures $du<p$, $di<p$, $i<p$, and $\gcd(dc,e)=1$.
+
+\begin{theorem}\label{thm:shift}
+The Newton polygon of $P_{N,d}$ at $p$ consists of a horizontal edge
+of length $i$ (omit it if $i=0$) and the edge
+\[
+ (i,0)\longrightarrow(ue+i,duc),\qquad\text{reduced slope }dc/e. \tag{4}
+\]
+The normalized residuals of these edges are respectively
+\[
+ \overline{P_{i,d}}(T),\qquad
+ \overline{P_{u,d}}\big((-1)^{dc}T\big)\quad\text{over }\F_p. \tag{5}
+\]
+In particular, a square divisor $H\in\Q_p[T]$ must have
+\[
+ \deg H=h+e t,\qquad
+ 0\le h\le\lfloor i/2\rfloor,\quad
+ 0\le t\le\lfloor u/2\rfloor. \tag{6}
+\]
+Residual factor multiplicities further restrict $h,t$ by the exact
+square-divisor degree budgets of the two fixed small polynomials in (5).
+\end{theorem}
+\begin{proof}
+The unshifted polygon of $P_{ue,d}$ is the single edge
+$(0,0)\to(ue,duc)$, with equality exactly at lattice indices $\ell e$.
+This is the single-edge lemma rederived in the
+\href{MIXED_PRIME_RESIDUAL_WINDOWS.tex}{mixed-prime proof}, with
+$m=d$, $k=u$. It is also
+\href{https://www.impan.pl/shop/publication/transaction/download/product/91656}
+{Filaseta--Rocks, Lemma 2.3}, expressed in literal rather than reversed
+coefficient coordinates.
+
+For $j\ge i$, the binomial flag identity gives
+\[
+ \binom Nj(dj)!
+ =\binom Ni\binom{N-i}{j-i}(d(j-i))!
+ \frac{(dj)!}{(d(j-i))!\binom ji}. \tag{7}
+\]
+The last quotient is an \emph{integer}: among the $di$ factors in its
+factorial numerator are $d(j-i+1),\ldots,dj$, whose product is
+$d^i i!\binom ji$. Therefore (7) and integrality show
+\[
+ \vp\!\left(\binom Nj(dj)!\right)
+ \ge \vp\!\left(\binom{ue}{j-i}(d(j-i))!\right)
+ \ge\frac{dc}{e}(j-i).
+\]
+Here $\binom Ni$ is a unit because $N=ue+i$ with $i<p$.
+For $j<i$ all coefficients are units: their factorial degrees are
+below $di<p$, and the low base-$p$ digit of $N$ is $i$.
+At $j=i+\ell e$, the identity
+$(1+X)^N=(1+X^e)^u(1+X)^i$ over $\F_p$ and factorial splitting give
+\[
+ \binom N{i+\ell e}\equiv\binom u\ell,\qquad
+ p^{-d\ell c}(d\ell e+di)!
+ \equiv(-1)^{d\ell c}(d\ell)!(di)!\pmod p. \tag{8}
+\]
+Thus equality holds at every $i+\ell e$, including both endpoints.
+The strict off-lattice inequality for the unshifted polygon is retained
+under (7). This proves (4). On the horizontal edge,
+$c_j\equiv\binom ij(dj)!$; on the other edge divide (8) by the unit
+$c_i\equiv(di)!$. These are exactly (5). Finally, doubled Newton
+occupancy gives (6), and the weighted initial-product theorem gives
+the residual multiplicity refinement.
+\end{proof}
+
+\begin{corollary}[An infinite shifted family]\label{cor:infinite}
+For every prime $p>18$, every $r\ge1$ and every $i\in\{0,1,2,3\}$,
+$P_{p^r+i,6}$ is squarefree. Hence every nonzero $A+BY^6$ has at least
+one nonzero moment in the pair $p^r+i-1,p^r+i$, for arbitrary complex
+$A,B$. This is an infinite indexed family, not all positive starts.
+\end{corollary}
+\begin{proof}
+Take $u=1$, $d=6$ in Theorem~\ref{thm:shift}. A repeated rational
+irreducible factor $H$ would have $H^2\mid P_{p^r+i,6}$, so (6) forces
+$\deg H\le\lfloor i/2\rfloor\le1$. The real-place
+theorem excludes every positive odd degree, leaving only degree zero.
+This proves squarefreeness; the adjacent derivative identity gives the
+moment pair. No computation over a bounded range of $r$ is used.
+\end{proof}
+More precisely, for offset $i$ the sufficient bound is
+$p>6\max(1,i)$; $p>18$ treats all four offsets at once.
+For general $u,i$, the two residual polynomials (5) do not depend on
+$r$ except for a nonzero variable scaling. Their square-divisor degrees
+are unchanged by that scaling. The parity of $p^r$ is also independent
+of $r\ge1$. Thus an empty even-degree budget derived from (5) certifies
+an all-$r$ family after one finite residual calculation.
+
+\begin{corollary}[A degree-specific shifted exclusion]\label{cor:degree}
+If $n=up^r+i$ satisfies the hypotheses of Theorem~\ref{thm:shift}, then
+every degree $k$ with $\lfloor i/2\rfloor<k<p^r$ is excluded by slopes
+alone. In particular, a quadratic is excluded whenever some
+$i\in\{0,1,2,3\}$ gives $n-i=up^r$, $p>6\max(u,i)$ and $p^r>2$.
+\end{corollary}
+\begin{proof}
+In (6), $t=0$ gives $k\le\lfloor i/2\rfloor$, while $t\ge1$ gives
+$k\ge p^r$. These are the only two cases.
+\end{proof}
+
+\section{Extremal squares and a uniform exclusion of large factors}
+The following ordinary-factorial obstruction completes the additional
+shifted blocks proposed by the user. All shape-one hypotheses remain
+explicit; a general Gamma leading coefficient needs a separate argument.
+
+\begin{lemma}[No full square]\label{lem:fullsquare}
+For $n\ge2$ and $d\ge1$, no rational square divisor of $P_{n,d}$
+has degree $n/2$.
+\end{lemma}
+\begin{proof}
+Such a divisor would give $P_{n,d}=bH^2$. Since $P_{n,d}(0)=1$,
+this equals $(H/H(0))^2$, so its leading coefficient $(dn)!$ would
+be a rational square. But $M!$ is not a square for any integer $M\ge2$.
+For $M=2,3$ this is direct. For $M\ge4$, Bertrand's postulate at
+$\lfloor M/2\rfloor$ supplies a prime $q$ with $M/2<q\le M$;
+its valuation in $M!$ is exactly one. This contradicts a rational square.
+\end{proof}
+
+\begin{corollary}[The additional two- and three-block families]\label{cor:userblocks}
+For every $r\ge1$,
+\[
+ \begin{array}{ll}
+ P_{2p^r+i,6}\text{ is squarefree},&p>12,\quad i=0,1,2,\\
+ P_{3p^r+i,6}\text{ is squarefree},&p>18,\quad i=0,1.
+ \end{array} \tag{9}
+\]
+Here and below $p$ is prime.
+\end{corollary}
+\begin{proof}
+For multiplier two or three and offset zero or one, (6) permits only
+the positive degree $p^r$, which is odd and excluded by the real-place
+theorem. For multiplier two and offset two, parity leaves only
+$p^r+1=(2p^r+2)/2$, excluded by Lemma~\ref{lem:fullsquare}.
+\end{proof}
+This keeps the raw local survivor at $N=2\cdot13^r+2$ visible, but
+it is no longer an unresolved family once the global full-square
+obstruction is applied.
+
+The two fixed residual kernels also close $2P+3$ and $3P+2$
+independently of a rational-root exclusion. Direct discriminant arithmetic gives
+\[
+ \gcd\!\left(\operatorname{disc}P_{2,6},
+                 \operatorname{disc}P_{3,6}\right)
+       =2^{10}3^4 5^2. \tag{9a}
+\]
+For $p>18$ their leading coefficients are units, and at least one of
+these two residual kernels is squarefree. The only even shifted pattern
+would require a repeated factor in \emph{both} kernels, namely
+$h=t=1$. Hence that pattern is impossible at every such prime.
+This is a fixed small-kernel calculation valid uniformly for all $r$.
+
+We now import a precise published prime-interval theorem to remove
+further surviving large degrees. Nagura's
+\href{sources/nagura-1952-prime-interval.pdf}{1952 paper}, Theorem on
+pp.~180--181, gives a prime $x<q<6x/5$ for $x\ge25$.
+Its primary PDF and text extraction are pinned in the source ledger.
+This number-theoretic input is credited and imported, not re-proved here.
+
+\begin{lemma}[A prime above half the factorial range]\label{lem:highprime}
+Let $q$ be a prime with $q>n$ and $dn/2<q<dn$.
+Put $L=\lfloor(q-1)/d\rfloor$. The Newton polygon of $P_{n,d}$
+at $q$ is horizontal up to degree $L$, followed by the edge
+$(L,0)\to(n,1)$ of reduced denominator $n-L$. Consequently
+\[
+ H^2\mid P_{n,d},\ H\in\Q_q[T]
+ \quad\Longrightarrow\quad \deg H\le\lfloor L/2\rfloor. \tag{10}
+\]
+\end{lemma}
+\begin{proof}
+Because $q>n$, every $\binom nj$ is a $q$-adic unit.
+Since $dn<2q\le q^2$, the factorial coefficient valuation is zero
+for $j\le L$ and exactly one for $j>L$. These points have precisely
+the stated lower hull. The second edge has height one, so its width
+is also its reduced denominator: a doubled square divisor cannot
+occupy any positive part of that edge. Only the horizontal budget remains.
+\end{proof}
+
+\begin{theorem}[Uniform large-degree exclusion]\label{thm:large}
+For every $n\ge9$, each rational square divisor $H^2\mid P_{n,6}$ satisfies
+\[
+ \boxed{\deg H<\frac{3n}{10}.} \tag{11}
+\]
+Thus every candidate degree $k\ge3n/10$ has a uniform excluding prime,
+independent of the small-prime or shifted-index tests.
+\end{theorem}
+\begin{proof}
+Apply Nagura at $x=3n\ge27$ to choose
+$3n<q<18n/5$. Lemma~\ref{lem:highprime} applies with $d=6$.
+Its horizontal length satisfies $L<q/6<3n/5$, and hence
+$\deg H\le L/2<3n/10$. This is uniform in $n$, with no finite
+moment scan replacing the prime-interval theorem.
+\end{proof}
+
+\begin{corollary}[Completing the offset-three and three-block survivors]\label{cor:threeblocks}
+For $1\le a\le3$, $0\le i\le3$, every prime $p>6\max(a,i)$ and
+all $r\ge1$, the polynomial $P_{ap^r+i,6}$ is squarefree.
+In particular, $2p^r+3$, $3p^r+2$ and $3p^r+3$ are also covered
+for every prime $p>18$ and all $r\ge1$.
+\end{corollary}
+\begin{proof}
+The previously proved cases cover $a=1$, and $a=2,3$ with $i=0,1$.
+For $a=2,3$, $i=2,3$, put $P=p^r$. Formula (6) and parity leave
+only degree $P+1$. Here $n=aP+i\ge9$, and
+\[
+ 10(P+1)-3(aP+i)=(10-3a)P+10-3i>0.
+\]
+Theorem~\ref{thm:large} excludes that degree. This includes the
+full-square case $a=i=2$ as well as its independent proof above.
+\end{proof}
+The same bound additionally closes $a=4,5,6$, $i=0,1$ under $p>6a$:
+(6) and parity leave only degree $2P$, which is at least $3n/10$.
+These are indexed families. Remaining arbitrary indices and small even
+degrees still require further arithmetic coverage.
+
+\section{Exact implementation and remaining uniform problem}
+\href{newton_slope_coverage.py}{The exporter} keeps the slope-only
+and residual certificates distinct, computes slope hulls directly from
+Legendre valuations, exhausts all primes through $dn$ for a finite
+slope diagnostic, and exports candidate-dependent prime sets and shifted
+families with both exact residual kernels. It retains raw local patterns
+when excluding them by full-square or uniform large-degree arguments. A slope survivor is a
+limitation of that certificate, not a repeated-factor witness.
+\href{verify_slope_coverage.py}{Controls} compare independent literal
+factorial coefficients and edge residuals, full prime-cap diagnostics,
+candidate-prime restrictions and shifted-index formulas. Finite samples
+validate transcription; Theorems~\ref{thm:cap}--\ref{thm:shift} and
+Corollaries~\ref{cor:infinite}--\ref{cor:threeblocks}, including the
+explicit Nagura import in Theorem~\ref{thm:large}, supply the universal assertions.
+
+For exponent six, all tested indices $2\le n\le64$ have empty full
+slope-and-parity intersection. This bounded observation proves neither
+a uniform prime-selection rule nor the all-index theorem. What remains
+is to cover every $n$ and each even candidate degree by a provable
+prime exclusion, or identify an index where the complete slope method
+fails and then use stronger residual information. The shifted families
+and candidate-specific prime restriction are retained mechanisms;
+they are not labelled ``nearly closed'' or an unrestricted SFC theorem.
+\end{document}

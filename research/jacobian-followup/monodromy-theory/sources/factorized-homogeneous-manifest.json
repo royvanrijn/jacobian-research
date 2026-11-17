@@ -1,0 +1,14 @@
+{
+  "sources": [],
+  "retained_primary_inputs": [
+    {
+      "path": "sources/jones-primitive-cycle-1209.5169.pdf",
+      "url": "https://arxiv.org/pdf/1209.5169",
+      "title": "Gareth A. Jones, Primitive permutation groups containing a cycle",
+      "locator": "Corollary1.3 for a primitive group with a cycle fixing>=3 points; Theorem1.2 part3 for the degree11 rank8 boundary, where N-1=10 is not a prime power.",
+      "bytes": 106850,
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57"
+    }
+  ],
+  "scope": "Only the attributed primitive-cycle classification is imported. Factorization rigidity, exact field reduction, arithmetic discriminant, coefficient witness and completion are derived in the note."
+}

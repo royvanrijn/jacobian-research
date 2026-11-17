@@ -1,0 +1,123 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 48,
+  "checks": [
+    "predecessor marked quartic receipt PASS",
+    "predecessor seal verify_quartic_cabling.py",
+    "predecessor seal QUARTIC_CABLING_EXCLUSION.md",
+    "predecessor seal torus_infinity_receipt.json",
+    "predecessor seal TORUS_INFINITY_OBSTRUCTION.md",
+    "predecessor seal residual_cover_receipt.json",
+    "predecessor seal RESIDUAL_DOUBLE_COVER.md",
+    "predecessor seal WRIGHT_MARKED_MODEL.md",
+    "predecessor seal WRIGHT_CONNECTION.md",
+    "predecessor seal PROOF.md",
+    "predecessor seal PRIMITIVE_QUARTIC_FIELD.md",
+    "predecessor seal sources/quartic-cabling/hatcher-3M.pdf",
+    "predecessor seal sources/quartic-cabling/ito-cable-slopes.pdf",
+    "predecessor seal sources/quartic-cabling/manifest.json",
+    "predecessor seal sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+    "predecessor seal sources/quartic-cabling/perelman-finite-extinction.pdf",
+    "two primary sources pinned",
+    "primary source BGV160.pdf",
+    "whole 2024 bundle theorem not adopted BGV160.pdf",
+    "primary source 2403.02219v2.html",
+    "whole 2024 bundle theorem not adopted 2403.02219v2.html",
+    "valuation threshold, primary ideal, and local nilpotence controls",
+    "unbounded poles prevent a nonzero uniform module annihilator",
+    "paired finite quadratic branching has even infinity valuation",
+    "quartic Euler surplus is one",
+    "even transposition centralizer has two elements",
+    "residual infinity forces identity preferred longitude",
+    "excluded homology order is odd",
+    "three times a generator has strictly smaller order",
+    "twice a generator remains primitive at every odd order",
+    "alternating torus homology order is even",
+    "marked-class primitivity and transparent winding controls",
+    "descent strictly removes one cabling stage",
+    "torsor canonical exponent m-2",
+    "torsor canonical exponent m-1",
+    "torsor canonical exponent m0",
+    "torsor canonical exponent m1",
+    "torsor canonical exponent m2",
+    "torsor canonical exponent m3",
+    "torsor canonical exponent m4",
+    "torsor canonical exponent m5",
+    "torsor canonical exponent m6",
+    "sole simple ramification forces linear bundle O minus three",
+    "retained source-coordinate pair is an automorphism with Jacobian minus one",
+    "coordinate inverse recovers a",
+    "coordinate inverse recovers d",
+    "coordinate infinity pole exactly 2",
+    "coordinate infinity pole exactly 4"
+  ],
+  "scope": {
+    "algebra": "all field degrees; normal affine plane complement with exactly one omitted prime",
+    "geometry": "actual finite quartic Keller normalization with exactly one omitted prime of generic index two"
+  },
+  "valuation_module": {
+    "annihilator": "symbolic power p^(-v(b))",
+    "associated_primes": [
+      "p"
+    ],
+    "support": "V(p)",
+    "uniform_annihilator": 0,
+    "p_action_locally_nilpotent": true,
+    "prime_hypothesis_automatic": true
+  },
+  "intrinsic_quartic": {
+    "residual_squareclass": "product of paired odd collision factors",
+    "residual_infinity_points": 2,
+    "residual_infinity_unramified": true,
+    "preferred_longitude": "identity",
+    "Wright_marking_used": false
+  },
+  "excluded_end": {
+    "lens": true,
+    "ramification_exterior": "solid torus",
+    "homology_order": "n odd and divisible by 3",
+    "marked_class": "primitive generator",
+    "all_finite_cabling_depths": true
+  },
+  "ruling": {
+    "multiplicity_one_quartic_excluded": true,
+    "negative_coordinate_pole_one_excluded": true,
+    "canonical_linear_bundle_degree": -3,
+    "all_degree_reduced_simple_boundary_torus_end_excluded": true
+  },
+  "assurance": {
+    "valuation_proof_written": true,
+    "local_cover_proof_written": true,
+    "general_order_cabling_proof_written": true,
+    "topological_predecessor_imported": true,
+    "full_three_manifold_proof_implemented": false,
+    "BGV_imported": true,
+    "reduced_boundary_not_confused_with_reduced_fiber": true,
+    "coordinate_control_is_finite_Keller_extension": false,
+    "higher_index_single_prime_quartic_excluded": false,
+    "arbitrary_quartic_normalizations_excluded": false,
+    "multiple_fiber_rulings_excluded": false,
+    "all_finite_Wright_field_degrees_excluded": false,
+    "general_lens_core_end_proved": false,
+    "coefficient_search_used": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "research_goal_completed": false
+  },
+  "finite_control_counts": {
+    "valuation": 4624,
+    "winding": 408
+  },
+  "source_sha256": {
+    "verify_intrinsic_normalization.py": "b6d64e21db8bc07ed1902917610908999f47fc8b73df9a8eddb035f3bd3652f7",
+    "INTRINSIC_NORMALIZATION_GATE.md": "312dbf8b9f7fc8f99a72c229a86f1310b69a0e327b70ed1fbe76646bc131d0da",
+    "quartic_cabling_receipt.json": "efd337ad1e20f2dc40073f82dcf5620c823c495bd407cf82864278c2a47851ac",
+    "sources/intrinsic-normalization/2403.02219v2.html": "1d0b7ea84f38cf0d94c38d6f352da42cf027fabe9ecc51fe181ce276d0d29c11",
+    "sources/intrinsic-normalization/BGV160.pdf": "fadbe8149ce9ed9c746042cb9944ab2553ade857f264b8bf95587ac090341d04",
+    "sources/intrinsic-normalization/manifest.json": "7ef2c61e0b3fe8e34b53296a51964c68775f35ee3878c66e678bacd6c979844b"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0"
+}

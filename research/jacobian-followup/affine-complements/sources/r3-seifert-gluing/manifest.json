@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/r3-seifert-gluing/rasmussen-1511.04413v3.pdf",
+      "url": "https://arxiv.org/pdf/1511.04413v3",
+      "title": "Sarah Dean Rasmussen, L-space intervals for graph manifolds and cables, arXiv1511.04413v3; Compositio Math153(2017),1008-1049",
+      "bytes": 524960,
+      "sha256": "602c28528d7e990d2fb3b90a10f024c21cff7811054776a512c559b092e701f6",
+      "complete_PDF_pages_visually_inspected": [
+        3,
+        8,
+        9,
+        18,
+        41
+      ],
+      "printed_pages": [
+        3,
+        8,
+        9,
+        18,
+        41
+      ],
+      "used_statement": "Proposition1.5/Corollary6.1 actual non-solid-torus graph-manifold gluing requires coverage by INTERIORS; Section2.2 actual fibre/meridian slope and group conventions, equation8 rational longitude; Proposition3.9 equation27 Seifert interval endpoints and Definition3.7 endpoint/complement-of-point convention. No recursive full interval computation or Floer-simplicity assumption is imported.",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "sources/rational-end-orderability/nemethi-1510.07128v1.pdf",
+      "url": "https://arxiv.org/pdf/1510.07128v1",
+      "title": "Nemethi, Links of rational singularities, L-spaces and LO fundamental groups, arXiv1510.07128v1",
+      "bytes": 116484,
+      "sha256": "ec6e0f8d0d96fc9f3dfb194c23fffac6f41eb2057ae4e60765e0194f3998f594",
+      "complete_PDF_pages_visually_inspected": [
+        2,
+        3,
+        4
+      ],
+      "printed_pages": [
+        2,
+        3,
+        4
+      ],
+      "used_statement": "Theorem1.3 rational-link L-space equivalence, Theorem1.5 graph-manifold non-L-space/LO equivalence, Example1.12 equation1.13 ONLY for nu>=3. Two-leg case proved separately by elementary rounding. Section2.1 Laufer certificates used for auxiliary rational/nonrational controls. Complete pages2-4 rechecked this turn.",
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_inputs": [
+    "PF50 common/complementary source pencil dichotomy",
+    "PF66/73 signed normal-slice inverse convention, cubic weighted model and actual Eprime boundary maps",
+    "PF74 all-degree source no-LO-image theorem under explicit common-coordinate hypotheses",
+    "PF75 complete common-winding reduction and actual r3 two-companion gluing"
+  ],
+  "new_elementary_proofs": [
+    "General normalized Seifert endpoint lemma when e0+number genuine cones>=1: separate two-leg ceil proof and nu>=3 rationality dichotomy",
+    "All cubic normal-slice coefficients from weights, integer inverse/ceiling normalization gives e0+nu>=1 at every non-trefoil first pair",
+    "Actual meridian0 identified by regular filling core and rational longitude1/(2bt), with no hidden section translation",
+    "Actual gluing matches the common missing-interior meridian slope and satisfies non-solid/irreducible graph hypotheses",
+    "All residual r3 common sources excluded; with PF75 entire actual-binomial two-stage quartic common class closed"
+  ],
+  "fail_closed": {
+    "interval_not_confused_with_interior": true,
+    "nu2_Pinkham_criterion_not_assumed": true,
+    "actual_pieces_not_replaced_by_solid_tori": true,
+    "normalized_twists_not_inferred_from_homology": true,
+    "complementary_sources_not_excluded": true,
+    "full_goal_open": true
+  },
+  "new_external_theorems_independently_reproved": false,
+  "research_goal_completed": false
+}

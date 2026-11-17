@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-16",
+  "kind": "source adoption assessment and unresolved direct full-theorem attempt",
+  "new_claims": [],
+  "new_lessons": [],
+  "mathematical_ledger_changed": false,
+  "primary_scope_audit": [
+    {
+      "title": "Rouchdi Bahloul and Nobuki Takayama,Local Groebner fan:polyhedral and computational approach",
+      "version": "arXiv:math/0412044v2,16 October2006",
+      "url": "https://arxiv.org/html/math/0412044v2",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/bahloul_takayama_math0412044v2_formal_gap_20261116.html",
+      "sha256": "97057704d1b7e2cea6bc7250a1fe545dcb2e25a9fabc0311039a1cd4a61eb115",
+      "bytes": 1212887,
+      "read": "Primary Introduction and Section1 definitions of local weights/order homogenization;Section3 closed-fan statement;Section3.1 formal division theorem and its full displayed proof;Section3.2 standard-basis statements;Section3.3 fan description/proof end;Section3.4 proof and linear-subspace restriction read. Commutative Section2 context read selectively,not claimed as a new proof.",
+      "exact_tool_scope": "The order-homogenized ring has formal power-series coefficients and FINITE differential/homogenizing degree. Its homogeneous left ideals have rational polyhedral closed local Groebner fans. Allowed local weights have u_i<=0 and u_i+v_i>=0. Nonconvergent formal coefficients are allowed. The formal division proof keeps derivative/homogenizing degree bounded while coefficients converge in the variable-adic topology.",
+      "warning": "The paper explicitly warns that arbitrary division need not hold in the NONhomogenized formal differential-operator ring. Its fan describes initial ideals of the specified homogeneous presentation,not the exact support of an arbitrary selected scalar solution or the actual polynomial-output apolar orders.",
+      "adoption": "Available formal tool;NOT a new actual gap theorem. No exact compatible actual bifiltration/support comparison was established here. No new producer/algorithm run."
+    },
+    {
+      "title": "Andras C.Lorincz and Ruijie Yang,Filtrations on D-modules and multiplicities of roots of Bernstein-Sato polynomials",
+      "version": "arXiv:2609.05215v2,11 November2026",
+      "url": "https://arxiv.org/html/2609.05215v2",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/lorincz_yang_filtrations_2609_05215v2.html",
+      "sha256": "2bdfe866072127a180a59cac9b37d8f568f59bbb0507c01b86b1f43ee6f3004f",
+      "bytes": 2393851,
+      "current_metadata_file": "jacobian-followup/moment-vanishing-audit/sources/lorincz_yang_260905215_current_metadata_20261116.html",
+      "current_metadata_sha256": "7ed609be81deff74000606c4ca5dc5772716488ba9332d423e29e713dac49c11",
+      "read": "Current arXiv submission history/comments checked and v2 Introduction,definitions of power b-functions,p-functions and Theorem1.1 read. Current full HTML downloaded and confirmed BYTE-IDENTICAL to the previously retained v2. Prior canonical RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md Section6 and registered claim scopes re-read.",
+      "exact_boundary": "The regularity assumption was removed in the algebraic simple-localization setting,not replaced by an arbitrary nonconvergent formal coefficient hypothesis. The fixed module/localization and actual comparison remain requirements. The November revision and its Torrelli qualification were ALREADY adopted;no new scope extension or new paper result is claimed here.",
+      "current_source_matches_retained_byte_for_byte": true
+    }
+  ],
+  "retained_identity_reuse": {
+    "claims": [
+      "GVCFORMALCOMM20261116",
+      "GVCREVERSEDHEIGHT20261116"
+    ],
+    "formula": "With lambda(0)=0,D=degP,A_z=z exp(T/z) M_P exp(-T/z)=sum_(j=0)^D z^(1-j)(ad_T)^j(M_P)/j!. Then A_z^m(1)=sum_k T^k(P^m)z^(m-k)/k!,and the actual reversed source is sum_m A_z^m(1)t^m/m!.",
+    "meaning": "This reuses the retained finite ad-nilpotence and actual reversed-profile identities. It is not a newly registered normal form or a proof of a new positive class. Fourier exchange makes x-polynomial degree<=D a finite differential order,with formal symbol coefficients and finitely many Laurent z powers.",
+    "missing": "Clearing Laurent denominators and homogenizing a presentation do not yet identify a good bifiltration of the ACTUAL output/original-marker module whose orders are these actual profiles. No compatible filtered-image/integration theorem with the needed polynomial-time control was supplied."
+  },
+  "direct_attempt_status": "No universal positive-gap estimate and no actual eventual-but-nonlinear pair obtained. The formal coefficient hypothesis is no longer an objection to this particular fan tool;the exact actual filtered-module transport remains unproved.",
+  "conditional_support_boundary": "A finite union of affine finitely generated monoid supports would be sufficient by the elementary slope argument in the cross-programme handoff,but it has NOT been shown for the actual support. Finite Groebner fan,Noetherianity,nesting,time saturation and cancellation-free support estimates do not by themselves establish that premise. No new conditional theorem or subclass packet is registered.",
+  "source_assessment_changes_next_action": "If the formal Fourier route is pursued,construct and verify the ACTUAL good bifiltration/order comparison. Do not impose convergence/algebraicity merely to access the formal local fan,and do not promote the fan of an enlarged presentation to the actual support.",
+  "general_actual_gap_decided": false,
+  "actual_eventual_but_nonlinear_constructed": false,
+  "exact_actual_support_proved_semilinear": false,
+  "actual_good_bifiltration_comparison_proved": false,
+  "new_external_gap_theorem_imported": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "remaining": "Unchanged full target:EVERY actual pure pair with b_m->infinity must have a positive lower deficit fraction,or a genuine actual eventual-but-nonlinear pair must be constructed. Both complete exceptional MZ cases remain OPEN;no subclass/sweep/outreach."
+}

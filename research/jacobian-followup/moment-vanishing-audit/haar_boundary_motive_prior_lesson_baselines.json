@@ -1,0 +1,128 @@
+{
+  "METHOD-HAAR-INTRINSIC-SOURCE-SPLITTING-IFF-FULL-SAFETY-20261116": {
+    "id": "METHOD-HAAR-INTRINSIC-SOURCE-SPLITTING-IFF-FULL-SAFETY-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Close the actual relation gate by admissible fixed part and a local functional on the actual Borel image",
+    "when": "Pursuing the COMPLETE exceptional MZ theorem for every phase and every original marker after constant-genus reduction.",
+    "use": "Under EVENTUAL PURITY,full ALL-original-marker safety iff intrinsic GLOBAL boundary source unit SPLITS. Mixed fixed part on W5E AND its DUAL gives canonical Hodge complement C5 and ADMISSIBLE residual V. Finite LOCAL monodromy at every P1 puncture follows from relative M=W plus split unit;GLOBAL handle translations may remain. Compose actual FUNCTION module M->actual quotient N->local meromorphic germs->PP0 to split the actual Borel unit. Actual K need NOT be Hodge compatible,and N need NOT embed as scalar functions. This proves u outsideR+K automatically for genuine actual kernels under eventual purity;it supersedes the prior separate residual-K gate. EVERY eventually pure H(f) safe iff primitive source unit splits. In source-split branch ANY actual rank>1,semisimple OR NOT,forbids ALL eventual-pure H;rank1 has unique safe centre c,H(c)=0. Source nonsplit certifies all existing pure composites fail,without producing one.",
+    "avoid": "Inferring finite GLOBAL monodromy or a global unit retraction merely from finite LOCAL monodromy;declaring actual kernels Hodge;embedding a quotient into scalar functions;using an arbitrary abstract translation/K model as an actual eventually pure phase;asserting M=W before checking zero monodromy on ALL grades and existence;discarding dual fixed part or good boundary hypotheses.",
+    "boundary": "Both FULL exceptional cases remain OPEN at proving intrinsic source-unit splitting for EVERY exceptional eventually pure phase,or realizing an actual admissible nonsplit pure failure. There is NO separate residual-K gate under eventual purity. Constant genus,R,K need not vanish;no pure producer,arbitrary-ring topological promotion or machine-universal proof. Fixed-part theorem is a named deep primary import. Long remains nonexceptional;review deferred.",
+    "reopen_when": "Prove the GLOBAL source unit splits on the ENTIRE exceptional eventual-pure locus,or construct a genuine original admissible failure. Retain every marker,branch and H degree. Do not reopen actual-K,fixed-genus or deeper-prefix campaigns as separate prerequisites;review remains deferred until a major endpoint.",
+    "claims": [
+      "GHAARINTRINSICSAFE20261116",
+      "GHAARINTRINSICCOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/INTRINSIC_SOURCE_SPLITTING_AND_FULL_HAAR_SAFETY.md",
+      "jacobian-followup/moment-vanishing-audit/haar_intrinsic_safety_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_intrinsic_safety.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "source splitting iff safety",
+      "mixed fixed part",
+      "dual invariant pairing",
+      "admissibility",
+      "actual Borel retraction",
+      "all polynomial composites"
+    ],
+    "reviewed_claims": {
+      "GHAARINTRINSICSAFE20261116": "2e37ad62e89795e2",
+      "GHAARINTRINSICCOMP20261116": "fc00eb4fd27f0183"
+    }
+  },
+  "METHOD-HAAR-INTRINSIC-GLOBAL-UNIT-AND-CONSTANT-GENUS-20261116": {
+    "id": "METHOD-HAAR-INTRINSIC-GLOBAL-UNIT-AND-CONSTANT-GENUS-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Separate intrinsic GLOBAL unit failure from the constant-genus translation/relation test",
+    "when": "Continuing the COMPLETE exceptional all-phase theorem after canonical boundary reduction,without independent varying-genus or recomposition campaigns.",
+    "use": "Every phase has intrinsic source-unit NONSPLIT or SPLIT. Nonsplit certifies any eventual-pure failure and reflects every H. If split,W5 is globally semisimple;remove canonical nontrivial genus C5 without changing actual unit Hom. Residual source is constant F(rank1+c) by finite Tate top;its radical image R is an ABELIAN finite-cover translation span,J2=0,u notinR. Actual safety iff u notinR+K for the ACTUAL relation kernel K in F. c,F,R are unchanged for every H;K_H retained. Zero constant genus closes residual even with arbitrary varying genus. Actual Cauchy semisimplicity itself reflects H,rank cannot drop,and semisimple rank>1 excludes ALL eventual-pure composites.",
+    "avoid": "Treating source splitting as actual safety;throwing away K or replacing it by a Hodge subspace;claiming constant genus always zero;assuming K_H fixed;confusing a quotient with scalar-function realization;inferring global square-zero from local N2 alone;discarding nontrivial physical relations;promoting Long to right-exceptional invariance.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN at intrinsic GLOBAL source-unit splitting plus actual constant-space u outside R+K. This covers EVERY phase by exhaustive alternatives,not a narrower sector. No general monodromy/relation/1-motive producer or arbitrary-ring topological promotion. Genuine Long control is an existing nonexceptional pure failure;no new search/pure producer or universal machine proof. Review deferred. SUBSEQUENT CLOSURE SUPERSEDES the formerly open residual actual-K limitation: Under EVENTUAL PURITY,full ALL-original-marker safety iff intrinsic GLOBAL boundary source unit SPLITS. Mixed fixed part on W5E AND its DUAL gives canonical Hodge complement C5 and ADMISSIBLE residual V. Finite LOCAL monodromy at every P1 puncture follows from relative M=W plus split unit;GLOBAL handle translations may remain. Compose actual FUNCTION module M->actual quotient N->local meromorphic germs->PP0 to split the actual Borel unit. Actual K need NOT be Hodge compatible,and N need NOT embed as scalar functions. This proves u outsideR+K automatically for genuine actual kernels under eventual purity;it supersedes the prior separate residual-K gate. EVERY eventually pure H(f) safe iff primitive source unit splits. In source-split branch ANY actual rank>1,semisimple OR NOT,forbids ALL eventual-pure H;rank1 has unique safe centre c,H(c)=0. Source nonsplit certifies all existing pure composites fail,without producing one. Both FULL exceptional cases remain OPEN at the ONE intrinsic source-splitting gate;review deferred.",
+    "reopen_when": "Prove the intrinsic source unit splits for EVERY exceptional eventual-pure phase and actual u stays outsideR+K,or realize an admissible failure. Keep fixed genus F/R across all H and actual K_H;use actual primitive semisimplicity/rank exclusion before asking for primitive purity. Do not deepen varying-genus/quadratic-log or moment-prefix campaigns. CURRENT PRIORITY SUPERSEDES any separate residual-K prerequisite: prove intrinsic GLOBAL source splitting for EVERY exceptional eventually pure phase,or actual admissible failure. The actual-K gate is already closed under eventual purity by the new local-functional theorem.",
+    "claims": [
+      "GHAARCONSTGENUS20261116",
+      "GHAARACTRECOMP20261116",
+      "GHAARINTRINSICSAFE20261116",
+      "GHAARINTRINSICCOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/CONSTANT_GENUS_TRANSLATIONS_AND_ACTUAL_RECOMPOSITION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_constant_genus_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/INTRINSIC_SOURCE_SPLITTING_AND_FULL_HAAR_SAFETY.md",
+      "jacobian-followup/moment-vanishing-audit/haar_intrinsic_safety_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_constant_genus.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "intrinsic global unit",
+      "constant genus",
+      "abelian translation",
+      "actual relation kernel",
+      "actual Cauchy recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARCONSTGENUS20261116": "da637aebf190d4fd",
+      "GHAARACTRECOMP20261116": "6a0b2593a96c4447",
+      "GHAARINTRINSICSAFE20261116": "2e37ad62e89795e2",
+      "GHAARINTRINSICCOMP20261116": "fc00eb4fd27f0183"
+    }
+  },
+  "METHOD-HAAR-CANONICAL-BOUNDARY-REDUCTION-AND-LOWEST-WEIGHT-20261116": {
+    "id": "METHOD-HAAR-CANONICAL-BOUNDARY-REDUCTION-AND-LOWEST-WEIGHT-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Remove ALL compact-middle cohomology canonically while preserving the exact ACTUAL unit obstruction",
+    "when": "Seeking the full exceptional all-phase theorem after global Haar-orbit splitting;avoid independent compact-middle or quadratic-log campaigns.",
+    "use": "Deleting ANY divisor from H2-acyclic X leaves W2H2 zero. NONPROPER Leray/MHS over the graph base proves global compact-middle invariants zero,hence W4B=L directsum canonical nontrivial C_f. Quotient B/C_f has only level-one types after twist2 and N2=0 at EVERY P1 puncture. In actual M,the image I is semisimple with no trivial factors,so unit survives and Hom(M/I,trivial)=Hom(M,trivial). Eventual-pure full safety is EXACTLY unit splitting in this reduced boundary quotient. Reduction and reduced GLOBAL semisimplicity reflect EVERY H. With fibre GrW3H2 zero,reduced source semisimplicity is also NECESSARY and gives the intrinsic all-composite dichotomy.",
+    "avoid": "Using projective-only Leray for this nonproper map;confusing global invariants with local/finite-cover invariants;assuming actual quotient is a Hodge or scalar-function submodule;deleting literal quadratic coefficients from original periods;calling all reduced coefficients algebraic;making local N2 imply global radical square zero;inferring pure-composite existence from a nonsplit source.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. The compact-middle removal is universal,but reduced genus/graph unit coupling is not proved zero. Deep Ivorra-Morel nonproper Leray is imported with exact hypotheses,not independently reproved. Full original quadratic logs can remain. Reduced source semisimplicity necessary only with genus weight3 absent. No algebraic1-motive/curve producer,all-ring topological promotion or universal machine verification;review deferred. The next exact reduction covers EVERY phase:intrinsic GLOBAL source-unit nonsplitting certifies eventual-pure failure and reflects every H. If split,remove canonical nontrivial genus;constant F(rank1+c) and finite top leave an abelian translation radical R,J2=0,u notinR. Actual safety iff u notinR+K for ACTUAL constant relation kernel. c,F,R are fixed across H,not K_H. Actual Cauchy GLOBAL semisimplicity also reflects EVERY H and rank cannot drop;semisimple rank>1 excludes ALL eventually pure composites. Known Long pure failure sits in intrinsic nonsplit genus-free branch,not on exceptional quotients. SUBSEQUENT CLOSURE SUPERSEDES the formerly open residual actual-K limitation: Under EVENTUAL PURITY,full ALL-original-marker safety iff intrinsic GLOBAL boundary source unit SPLITS. Mixed fixed part on W5E AND its DUAL gives canonical Hodge complement C5 and ADMISSIBLE residual V. Finite LOCAL monodromy at every P1 puncture follows from relative M=W plus split unit;GLOBAL handle translations may remain. Compose actual FUNCTION module M->actual quotient N->local meromorphic germs->PP0 to split the actual Borel unit. Actual K need NOT be Hodge compatible,and N need NOT embed as scalar functions. This proves u outsideR+K automatically for genuine actual kernels under eventual purity;it supersedes the prior separate residual-K gate. EVERY eventually pure H(f) safe iff primitive source unit splits. In source-split branch ANY actual rank>1,semisimple OR NOT,forbids ALL eventual-pure H;rank1 has unique safe centre c,H(c)=0. Source nonsplit certifies all existing pure composites fail,without producing one. Both FULL exceptional cases remain OPEN at the ONE intrinsic source-splitting gate;review deferred.",
+    "reopen_when": "Prove the rational unit splits in M_boundary for EVERY actual exceptional eventually pure phase,or realize a genuine original failure. Work on the level-one genus/graph coupling;do not reopen compact-middle or log-squared calculations as independent targets. Preserve EVERY original marker,primitive branch,H degree and actual orbit. Target intrinsic unit splitting and actual u outsideR+K for EVERY exceptional pure phase;varying genus is removable in the split-source branch. Preserve actual K_H and all original markers/branches. CURRENT PRIORITY SUPERSEDES any separate residual-K prerequisite: prove intrinsic GLOBAL source splitting for EVERY exceptional eventually pure phase,or actual admissible failure. The actual-K gate is already closed under eventual purity by the new local-functional theorem.",
+    "claims": [
+      "GHAARLOWFIX20261116",
+      "GHAARLEVELONE20261116",
+      "GHAARLEVELRECOMP20261116",
+      "GHAARCONSTGENUS20261116",
+      "GHAARACTRECOMP20261116",
+      "GHAARINTRINSICSAFE20261116",
+      "GHAARINTRINSICCOMP20261116"
+    ],
+    "sources": [
+      "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+      "jacobian-followup/moment-vanishing-audit/haar_boundary_reduction_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/CONSTANT_GENUS_TRANSLATIONS_AND_ACTUAL_RECOMPOSITION.md",
+      "jacobian-followup/moment-vanishing-audit/haar_constant_genus_source_audit.json",
+      "jacobian-followup/moment-vanishing-audit/INTRINSIC_SOURCE_SPLITTING_AND_FULL_HAAR_SAFETY.md",
+      "jacobian-followup/moment-vanishing-audit/haar_intrinsic_safety_source_audit.json"
+    ],
+    "implementation": [
+      "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_reduction.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "lowest weight",
+      "nonproper Leray",
+      "canonical boundary quotient",
+      "level one",
+      "unit splitting",
+      "polynomial recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARLOWFIX20261116": "175fa090f01d81eb",
+      "GHAARLEVELONE20261116": "0971dc423388739b",
+      "GHAARLEVELRECOMP20261116": "1a9c298cd0104c5a",
+      "GHAARCONSTGENUS20261116": "da637aebf190d4fd",
+      "GHAARACTRECOMP20261116": "6a0b2593a96c4447",
+      "GHAARINTRINSICSAFE20261116": "2e37ad62e89795e2",
+      "GHAARINTRINSICCOMP20261116": "fc00eb4fd27f0183"
+    }
+  }
+}

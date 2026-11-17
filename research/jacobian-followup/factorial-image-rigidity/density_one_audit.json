@@ -1,0 +1,56 @@
+{
+  "status": "checked_scoped_written_argument",
+  "density_type": "ordinary natural density one",
+  "claim": "FIRDENSITYONE20261116",
+  "canonical_proof": "DENSITY_ONE_SQUAREFREENESS.tex",
+  "polynomial": "F_n(T)=sum binom(n,j)*(6j)!*T^j, ordinary Gamma shape1",
+  "analytic_inputs": [
+    {
+      "source": "Filaseta-Rocks2016 author-hosted journal Online First",
+      "pinpoints": "Theorem1.1, polynomial definition page1; Section3 definition B and equation3.3 pages6-7",
+      "scope": "liminf density irreducible offsets>=log2; n-q_n<sqrt(n) on a natural-density-one set",
+      "published_input_imported_not_independently_reproved": true
+    },
+    {
+      "source": "Matomaki-Radziwill, Annals183(2016)1015-1056 publisher PDF",
+      "pinpoints": "Theorem1 pp1015-1016 and uniformity sentence immediately following",
+      "scope": "real multiplicative f bounded1; h,delta,f uniform; exceptional count includes (log h)^(1/3)/(delta^2*h^(delta/25))",
+      "published_input_imported_not_independently_reproved": true
+    },
+    {
+      "source": "classical PNT, retained DLMF27.2.3 reference",
+      "scope": "derive long smooth-indicator mean by disjoint prime multiples and partial summation; no separate Dickman theorem needed",
+      "published_input_imported_not_independently_reproved": true
+    }
+  ],
+  "long_mean": "1-log(3/2)<3/5 for Y=(2X)^(2/3)",
+  "MR_delta": "1/100",
+  "MR_C_prime": 20000,
+  "MR_exception_eta": "C*(log H)^(1/3)/(delta^2*H^(delta/25)), tending0",
+  "fixed_H_data": "I_H has size>2H/3; finitely many nonzero discriminants; finite T_H",
+  "reverse_interval": "apply at x=n-H; backward H terms are a subset of the inclusive forward interval; omit O(H) dyadic boundary starts",
+  "local_step": "p>(2X)^(2/3), p>T_H, p>6max(a,i); prime-gap bound k<sqrt(n)/2<p; horizontal degree-preserving reduction square-divides squarefree F_i modp",
+  "primitive_normalization": "Gauss gives integral quotient, g(0)=+-1; horizontal-only factor has leading p-adic unit",
+  "limit_order": [
+    "fix sufficiently large H",
+    "let X tend to infinity, passing the finite discriminant thresholds",
+    "let H tend to infinity",
+    "dyadic summation gives ordinary natural density"
+  ],
+  "all_C_smoothness_required": false,
+  "all_offsets_squarefree_assumed": false,
+  "fixed_multiplier_or_offset_cutoff_in_density_statement": false,
+  "irreducibility_density_one_claimed": false,
+  "all_index_SFC_closed": false,
+  "finite_controls_are_not_numerical_density_evidence": true,
+  "source_pins": {
+    "sources/matomaki-radziwill-2016-annals.pdf": "7e8c60df09683c4eb762d521e583cdabef70b5366bc98953159e471ebb02496a",
+    "sources/matomaki-radziwill-2016-annals.txt": "25cff55da449bd4651394615f5d6886272d233ae430a2ca49661c306c18b9cb9",
+    "sources/filaseta-rocks-2016-published.pdf": "a2885c831b92a23ce45695df9f40840246a6f26b5a0a5ce4820c54be7f227255",
+    "sources/filaseta-rocks-2016-published.txt": "363739660206e2438c136fe0e2c84cead7757f779e140c97884d1fa4f5e6185d"
+  },
+  "provenance": "User-supplied density-one argument; primary-source uniformity and local normalization checked; no novelty claim",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

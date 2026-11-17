@@ -1,0 +1,97 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYJO0",
+    "HC4MYJO1"
+  ],
+  "checks": [
+    "HC4MYJO0 schema, retained inputs, exact checker bytes and assurance",
+    "HC4MYJO1 schema, retained inputs, exact checker bytes and assurance",
+    "the four-test equivalence and simple-zero quartic frontier preserve the exact remaining unknowns",
+    "prior compatible/null and invertible proofs retain their bytes and gain only the precise current frontier note",
+    "86 sourced method records and affected fingerprints retire cubic/isotropic-kernel searches while retaining quartic and fixed-test limits",
+    "both work actions advance beyond the entire cubic family to the exact simple-zero quartic or actual global recovery",
+    "143 exact controls including 119 algebra/scope controls bind the proof, full source inverses and 24 unchanged retained artifacts",
+    "all retained foundations are proved, primary context is explicit and no unproved external theorem or endpoint closure is imported",
+    "proof and all local links retain actual trigonal branches, complete critical groups, four represented tests and the unresolved quartic boundary",
+    "all generated navigation matches the authoritative ledger, lessons and work records",
+    "divisor/jet/endpoint/base-preserving inputs stay proved and the original full HC4 objective stays open"
+  ],
+  "scoped_check_groups": 11,
+  "exact_current_replay_checks": 143,
+  "algebraic_and_scope_controls": 119,
+  "new_unproved_external_statements": 0,
+  "marked_zero_chain_plane_trigonal_genus_proved": true,
+  "binary_quadric_cone_trace_with_quadratic_line_inverse_closed": true,
+  "all_isotropic_kernel_universal_questions_reduced_to_four_fixed_source_orbits": true,
+  "entire_cubic_coordinate_inner_family_reduced_to_four_fixed_source_orbits": true,
+  "additional_affine_mechanisms_require_simple_nondegenerate_zero_eigenvalue": true,
+  "remaining_simple_zero_quartic_frontier_resolved": false,
+  "quadratic_two_critical_full_source_orbits_resolved": false,
+  "universal_two_point_keller_endpoint_equivalence_proved": false,
+  "all_singular_affine_pencils_resolved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": [
+        "make",
+        "render-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": [
+        "make",
+        "check-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+        "research/scripts/research.py",
+        "check",
+        "--require-partial-review"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "name": "required-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "research/MATH_STATUS.json",
+        "research/knowledge/lessons.json",
+        "research/knowledge/work_items.json",
+        "research/jacobian-followup/hc4-triangular-graphs/README.md",
+        "research/index",
+        "research/knowledge/work",
+        "research/knowledge/WORK_LEDGER.md",
+        "research/STATUS.md"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "required_diff_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_check": "PASS",
+  "new_file_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_evidence": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "repository_failures_unrelated_to_HC4": true,
+  "unrelated_missing_artifacts_reconstructed": false
+}

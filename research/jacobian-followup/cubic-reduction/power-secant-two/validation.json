@@ -1,0 +1,1094 @@
+{
+  "all_coordinate_maps_verified": true,
+  "all_membership_spaces_reconstructed": true,
+  "all_nonedge_mixed_derivatives_zero": true,
+  "all_support_pairs_covered": true,
+  "all_unit_identities_multiplied": true,
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "cases": [
+    {
+      "pair": [
+        0,
+        0
+      ],
+      "status": "coordinate-zero-exclusion"
+    },
+    {
+      "certificate_sha256": "4efa68a237ebc60a55272e5d598b198cc0d3fef1cfcdfeee392f2942bbb4c5e1",
+      "identities": 8,
+      "membership_rank": 61,
+      "pair": [
+        0,
+        1
+      ]
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "status": "coordinate-zero-exclusion"
+    },
+    {
+      "certificate_sha256": "a856de01e0031134e8a4128701b1657def37905eded023a81cd244ceb598ed01",
+      "identities": 1,
+      "membership_rank": 65,
+      "pair": [
+        0,
+        3
+      ]
+    },
+    {
+      "certificate_sha256": "1d8117a6af4b7849d6fc0de3a50e6e1f8c576e47c57fe203266f1cb63d25ea35",
+      "identities": 4,
+      "membership_rank": 46,
+      "pair": [
+        0,
+        4
+      ]
+    },
+    {
+      "certificate_sha256": "633279c61cfa26f18986e5574d40fe213d5c162af5a90486be4d328fe6d2971b",
+      "identities": 4,
+      "membership_rank": 39,
+      "pair": [
+        0,
+        5
+      ]
+    },
+    {
+      "certificate_sha256": "c3fb9d72b3645d2d9d92760e028ccd29c832624975ba28cf4436af9c374287bd",
+      "identities": 10,
+      "membership_rank": 39,
+      "pair": [
+        0,
+        6
+      ]
+    },
+    {
+      "pair": [
+        0,
+        7
+      ],
+      "status": "coordinate-zero-exclusion"
+    },
+    {
+      "certificate_sha256": "2e7f269c86bcf51dfe5fafa4f65f2f0210d8d31d17317b0e26e7dacc1af79b9c",
+      "identities": 1,
+      "membership_rank": 42,
+      "pair": [
+        0,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "d1ab19fbd3eb78219e66e52fb02b0087654dc4c1106d43d8f43ea52799d3170a",
+      "identities": 2,
+      "membership_rank": 42,
+      "pair": [
+        0,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "f03cea28e17c06d1442c40164ed4da54d222f645b6aa7842299beb941f549f23",
+      "identities": 1,
+      "membership_rank": 34,
+      "pair": [
+        0,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "efae8ca57541b47b3abe82260b557a4dbb6959475ff0215b6756d4bd3b1cf622",
+      "identities": 1,
+      "membership_rank": 34,
+      "pair": [
+        0,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "59b396386217ee98e0980b84ea64b637963549b5d4b4ed510bac3c6c625a117a",
+      "identities": 10,
+      "membership_rank": 34,
+      "pair": [
+        0,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "e34538aabd6542da6af6a7ce6d0cf37b3d8d13915ef5d49ec207e126acccc600",
+      "identities": 10,
+      "membership_rank": 34,
+      "pair": [
+        0,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "818b77fe804710c9f86f8536a56cde3553a9f2c8fc4cef4dcc69398df9df859c",
+      "identities": 1,
+      "membership_rank": 34,
+      "pair": [
+        0,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "a79b5c0fa89b89e491b3b78af1bb81bf48f6ad3194cd81a74e7a3643b0d664b9",
+      "identities": 4,
+      "membership_rank": 30,
+      "pair": [
+        1,
+        1
+      ]
+    },
+    {
+      "certificate_sha256": "d75f42e77e7357173dadfaebe333d4212f90aa8a2534a72097d5b3227702bfe4",
+      "identities": 8,
+      "membership_rank": 39,
+      "pair": [
+        1,
+        2
+      ]
+    },
+    {
+      "certificate_sha256": "3b37684a08f8f84a9d3d686cdcd57c2f5728ff4337cd070f13f90c4ef1972a47",
+      "identities": 8,
+      "membership_rank": 44,
+      "pair": [
+        1,
+        3
+      ]
+    },
+    {
+      "certificate_sha256": "3d70c165c0dab3319e3b27d16c31465dcccfeeceb319c06a0b66a0d3eca51670",
+      "identities": 24,
+      "membership_rank": 59,
+      "pair": [
+        1,
+        4
+      ]
+    },
+    {
+      "certificate_sha256": "6848fc27f85767579a2d2f521fdfce295a74dfdf1cf730ff287cdc83906d60f8",
+      "identities": 8,
+      "membership_rank": 37,
+      "pair": [
+        1,
+        5
+      ]
+    },
+    {
+      "certificate_sha256": "a5524850fa93963f9a16ba1b7bb8fba68328f73ab87955ef72adc16ed8a8be62",
+      "identities": 35,
+      "membership_rank": 37,
+      "pair": [
+        1,
+        6
+      ]
+    },
+    {
+      "certificate_sha256": "e9703c123bb6aac225c5440833a85468ab80ea356c74b3f23d1800849db67ea1",
+      "identities": 8,
+      "membership_rank": 34,
+      "pair": [
+        1,
+        7
+      ]
+    },
+    {
+      "certificate_sha256": "8eeaa48b408f33ce60c60f794a5314727e56f7c1d0267e07e545737fe0af5ce8",
+      "identities": 5,
+      "membership_rank": 38,
+      "pair": [
+        1,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "bf5d26fd3381f4a1830585a140c00677275753441420c281793b137d1f9c583d",
+      "identities": 11,
+      "membership_rank": 38,
+      "pair": [
+        1,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "047da06b5388db0d876a6a4d68e9db9111cda5a4873185a1a6f9444e0dffb0a2",
+      "identities": 5,
+      "membership_rank": 30,
+      "pair": [
+        1,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "196433c9c9705fa871800593c9036d1878e713f0c25ec15d79e2fe52bfbe067b",
+      "identities": 5,
+      "membership_rank": 30,
+      "pair": [
+        1,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "4949f7674f19589dedfea18d794bde3e9208392c6930ecf6017c72d002b792a4",
+      "identities": 14,
+      "membership_rank": 30,
+      "pair": [
+        1,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "7e68813f07cfe5037dff0f3f582ceea2afd4e7aec536f8ca869cece433b2a101",
+      "identities": 14,
+      "membership_rank": 30,
+      "pair": [
+        1,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "91df7b631389bc459d7c5671ca7f1f573b8eee60245baf8cdc06d08b746d0c4a",
+      "identities": 5,
+      "membership_rank": 30,
+      "pair": [
+        1,
+        14
+      ]
+    },
+    {
+      "pair": [
+        2,
+        2
+      ],
+      "status": "coordinate-zero-exclusion"
+    },
+    {
+      "certificate_sha256": "7debd4c85ffa601c6dbd4f3ee63e230d4c9b569dcc751fa9f2539d3d3a526beb",
+      "identities": 1,
+      "membership_rank": 46,
+      "pair": [
+        2,
+        3
+      ]
+    },
+    {
+      "certificate_sha256": "9ec1a78efbee8602e5e2e8f3360b7ef19542fb945b43ccce396520ad47ed8793",
+      "identities": 4,
+      "membership_rank": 38,
+      "pair": [
+        2,
+        4
+      ]
+    },
+    {
+      "certificate_sha256": "ace53175f749ce1e3bae89d23ec275ed88912a530e2f94f7e6442c755977777e",
+      "identities": 4,
+      "membership_rank": 22,
+      "pair": [
+        2,
+        5
+      ]
+    },
+    {
+      "certificate_sha256": "7a6f73244c748c6b02fb17c320b5d237ececc79c4c7452cd76f0dab73a124e50",
+      "identities": 11,
+      "membership_rank": 22,
+      "pair": [
+        2,
+        6
+      ]
+    },
+    {
+      "pair": [
+        2,
+        7
+      ],
+      "status": "coordinate-zero-exclusion"
+    },
+    {
+      "certificate_sha256": "3d471573797a4f50aaa40047dcf8acf8aa09cd0245c8a9d1685f95f81044c65b",
+      "identities": 1,
+      "membership_rank": 23,
+      "pair": [
+        2,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "a85feecb24a6d7634642959246de7034629447202f875ffc489e3c7f8e95b56b",
+      "identities": 11,
+      "membership_rank": 23,
+      "pair": [
+        2,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "5f6f6e50df89556901ebc82f425f1a8641dcec3fcddfa3aa8fce804c14a2df05",
+      "identities": 1,
+      "membership_rank": 15,
+      "pair": [
+        2,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "5084390c7071ad33e9c54268bca416f88746b2a611b321bf98c7c4f143d51516",
+      "identities": 10,
+      "membership_rank": 15,
+      "pair": [
+        2,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "751c75748b222a33679d69b6c80a63f9d45f8c0add8747c9db342697124fc185",
+      "identities": 10,
+      "membership_rank": 15,
+      "pair": [
+        2,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "cc1e798f1441ff6be6984727b643b9899c89fb1b1b6c345b0ec49a477168eb98",
+      "identities": 10,
+      "membership_rank": 15,
+      "pair": [
+        2,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "8e6bd062779da963a4659f424546866e06aad046cb90c72813a34504a927b17e",
+      "identities": 1,
+      "membership_rank": 15,
+      "pair": [
+        2,
+        14
+      ]
+    },
+    {
+      "pair": [
+        3,
+        3
+      ],
+      "status": "coordinate-zero-exclusion"
+    },
+    {
+      "certificate_sha256": "23e22d334da05ec209c20ad3c1f9369da1a7f4d99d2f9fb8fc56a7765e92a2de",
+      "identities": 4,
+      "membership_rank": 58,
+      "pair": [
+        3,
+        4
+      ]
+    },
+    {
+      "certificate_sha256": "4ebc98427900d3991300d773ff1032cbd6163f49ad43221d75bd6f238de66fbf",
+      "identities": 4,
+      "membership_rank": 41,
+      "pair": [
+        3,
+        5
+      ]
+    },
+    {
+      "certificate_sha256": "cab89231dc0a453309ae2651a28c009c490faf2923dd4dd3090bc3f384df0643",
+      "identities": 10,
+      "membership_rank": 41,
+      "pair": [
+        3,
+        6
+      ]
+    },
+    {
+      "certificate_sha256": "49ef0cedbf76ccab5a8d96a9dd47cafe4d617873893507e6e6d08e1ab7a28509",
+      "identities": 4,
+      "membership_rank": 40,
+      "pair": [
+        3,
+        7
+      ]
+    },
+    {
+      "certificate_sha256": "199f8e7950e621ab0d8f4f642fecec0f2f668ca9460ab196610624ca963f250f",
+      "identities": 1,
+      "membership_rank": 39,
+      "pair": [
+        3,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "eda7d656e1ddbd4f2d2b033bef21892aa87c27eb1b57ad64d08b85e9a494b457",
+      "identities": 2,
+      "membership_rank": 39,
+      "pair": [
+        3,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "cdc380c3e3858bfeac00a7908be4e858418e65c32410357dbdf9d1edf914e589",
+      "identities": 1,
+      "membership_rank": 34,
+      "pair": [
+        3,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "820a1347ccf8067c406d90d16fc8a834020f3af8dd4f4f6cbfd686511eecdc66",
+      "identities": 1,
+      "membership_rank": 34,
+      "pair": [
+        3,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "9ece85eb425faa3888c8edf8b29b8b2383aebb210cf33815ff9451bbabb1bad2",
+      "identities": 10,
+      "membership_rank": 34,
+      "pair": [
+        3,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "37c0bd7460236d803fdd9fe555c55c143523f3458046e963537a9488c3cfc61f",
+      "identities": 10,
+      "membership_rank": 34,
+      "pair": [
+        3,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "766d6c0d89d613d33cc6c645837e4bd3da2c1dea9f7a28739e48bdcc9d1bc334",
+      "identities": 1,
+      "membership_rank": 34,
+      "pair": [
+        3,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "cbc82d65814247d03c2e4b98313f779ed1a4d923fcb920439471c9fca5580389",
+      "identities": 4,
+      "membership_rank": 32,
+      "pair": [
+        4,
+        4
+      ]
+    },
+    {
+      "certificate_sha256": "a45be07b1522b6c052772ee184de8d2d651c01c4daea0780a932562bf401f8f4",
+      "identities": 8,
+      "membership_rank": 39,
+      "pair": [
+        4,
+        5
+      ]
+    },
+    {
+      "certificate_sha256": "ac73b6bd2dc42b58e5d63e68338a56d8f98ac4ef416b063fb1db7108296d6022",
+      "identities": 14,
+      "membership_rank": 39,
+      "pair": [
+        4,
+        6
+      ]
+    },
+    {
+      "certificate_sha256": "f7ce2e3bc478e8f7a980cf74d21c9d5f724e7c1a5842345725d0d4bcab18eb82",
+      "identities": 4,
+      "membership_rank": 38,
+      "pair": [
+        4,
+        7
+      ]
+    },
+    {
+      "certificate_sha256": "262e2e5be544a9ce02a0410ee1285d45e69590d915a62ed655cce7278c3c148e",
+      "identities": 5,
+      "membership_rank": 37,
+      "pair": [
+        4,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "d5e7ea3acbb780a4bea72db8691784b3480e498ca875250f7ec7dd064b708052",
+      "identities": 6,
+      "membership_rank": 37,
+      "pair": [
+        4,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "b6ce8359ed8f709b640675eeffc1050c8f4c95f71b416813a347e3570ac25bc6",
+      "identities": 5,
+      "membership_rank": 32,
+      "pair": [
+        4,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "d510c77ce05cd6ac3d87e1870c1ad396c5fb6d7ea8392709d5da7efeb18a49be",
+      "identities": 5,
+      "membership_rank": 32,
+      "pair": [
+        4,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "98b7650595b1aece3a4c14614462b29b80b8bdc657fc0e3de0963b4256593199",
+      "identities": 35,
+      "membership_rank": 32,
+      "pair": [
+        4,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "54dbd9942d0e617b4761ef7d6e0cb0464882411f121f4a149742d5d155eef188",
+      "identities": 14,
+      "membership_rank": 32,
+      "pair": [
+        4,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "1280c2870b69d82e415a8bd42b994f4b0e52085aedd8f8c8683e04ca8ce00d3e",
+      "identities": 5,
+      "membership_rank": 32,
+      "pair": [
+        4,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "b8e47dceb2caf2fe5fdaf662bec093eb4b57d07cab4a511f18bb13101244302e",
+      "identities": 1,
+      "membership_rank": 8,
+      "pair": [
+        5,
+        5
+      ]
+    },
+    {
+      "certificate_sha256": "b5d10ae6d4373f82dbc39b656ea0d4b9bec84d286c8caadfb25bb358c1e581a7",
+      "identities": 2,
+      "membership_rank": 13,
+      "pair": [
+        5,
+        6
+      ]
+    },
+    {
+      "certificate_sha256": "ea5d8c0ee25716dcac46e0b0d61f62463e7f5b5d1b262a67318a3c2ae16177c6",
+      "identities": 1,
+      "membership_rank": 14,
+      "pair": [
+        5,
+        7
+      ]
+    },
+    {
+      "certificate_sha256": "09c0722cd5e39099b433bd8e34a138d461e81cc922d03e2f8b68f77938e7837e",
+      "identities": 5,
+      "membership_rank": 14,
+      "pair": [
+        5,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "1c673c70c7dab6678fe2040580d64069587a853d89764e31213bff93baf99382",
+      "identities": 6,
+      "membership_rank": 17,
+      "pair": [
+        5,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "4b0889632ee7f26c9dc5f313b4a17b8665ac7485e4f1da0a5738e0a1aee100ba",
+      "identities": 5,
+      "membership_rank": 8,
+      "pair": [
+        5,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "5020e50968e44a728954def1220b89aa16d4a2ab9b90f6f287ec53584d0e879a",
+      "identities": 2,
+      "membership_rank": 8,
+      "pair": [
+        5,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "89168abcaed93630cf76273af2a0ce380cd787f15b56809b49a15a0e3c115626",
+      "identities": 2,
+      "membership_rank": 8,
+      "pair": [
+        5,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "7c61575ce1ed484321127f8b93df114588828c11e05fe9d8e19c1240f7fb470f",
+      "identities": 2,
+      "membership_rank": 8,
+      "pair": [
+        5,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "9f7cc04db80317e9c078aa6923e57e53ce04e67b516a1e2217bc09ef468d42b6",
+      "identities": 2,
+      "membership_rank": 8,
+      "pair": [
+        5,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "533da1638c749cb1bf21c98730721d925aadf0193bbf6aa212abe82f4b3f9d8f",
+      "identities": 1,
+      "membership_rank": 8,
+      "pair": [
+        6,
+        6
+      ]
+    },
+    {
+      "certificate_sha256": "89a700a13c6f7cff0a9eaf38a22c9b9efaab80c2caa7ef04238407c12f2b3b3c",
+      "identities": 1,
+      "membership_rank": 14,
+      "pair": [
+        6,
+        7
+      ]
+    },
+    {
+      "certificate_sha256": "412baca93167b9e83472f176ff7f06784ad4fbac4d888a32a3ee9847a2f76d61",
+      "identities": 11,
+      "membership_rank": 17,
+      "pair": [
+        6,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "b11be510df4f7c14f21fe27eea567a41624700c5f28806e661028a40ea37a2e7",
+      "identities": 11,
+      "membership_rank": 14,
+      "pair": [
+        6,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "049f5f8e068e2e040b9cf5e526e2aa2d2aeeb53ef90ca0cb0eecf0c3e2e186c4",
+      "identities": 2,
+      "membership_rank": 8,
+      "pair": [
+        6,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "4fe09768e9fb31b2587483d6e05141a57c4a72c806138f1b5252050d50ce20db",
+      "identities": 5,
+      "membership_rank": 8,
+      "pair": [
+        6,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "6fe119464a6190defaf75b7ddcb177a7d751ca2170baf7b47af103aa3f893c47",
+      "identities": 2,
+      "membership_rank": 8,
+      "pair": [
+        6,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "a0339fb7a8dbeb9fb9c9fb5949da1143c3c3e0d52c02650d2024e68605106e05",
+      "identities": 2,
+      "membership_rank": 8,
+      "pair": [
+        6,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "b66c6d438087a4140f4a02aa740cdeb3ab9ce5555c19abb912d6165ed34afdc1",
+      "identities": 2,
+      "membership_rank": 8,
+      "pair": [
+        6,
+        14
+      ]
+    },
+    {
+      "pair": [
+        7,
+        7
+      ],
+      "status": "coordinate-zero-exclusion"
+    },
+    {
+      "certificate_sha256": "f0f95a18402cd986f8d42c22f7594e777b7ef04408308b15bfe48c3bafe9eed4",
+      "identities": 1,
+      "membership_rank": 16,
+      "pair": [
+        7,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "6e695d0fcd34f10baeda80abf0bcdada4d09454b5aff67b908e7b6b8a42a4d77",
+      "identities": 2,
+      "membership_rank": 16,
+      "pair": [
+        7,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "130cbc1b5c14f2aec766062acf267cd04d8793f610c79bc6939de921012aa6f2",
+      "identities": 1,
+      "membership_rank": 7,
+      "pair": [
+        7,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "3633569429ba4cf6252acde4816bbed98bc40b9d3acdf783be74d0b827aa240a",
+      "identities": 1,
+      "membership_rank": 7,
+      "pair": [
+        7,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "b81199c1d7f48d075f694153a9859797105a1711520444521aee8be734b0f56a",
+      "identities": 1,
+      "membership_rank": 7,
+      "pair": [
+        7,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "00e74988325d93c59224878f7327a02ad744af1e345b427c6bda7eb936df1460",
+      "identities": 1,
+      "membership_rank": 7,
+      "pair": [
+        7,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "8316eb2d07b7d97974052fde2d8370be217a6c2a13acbcd49022fa10fb0c3758",
+      "identities": 1,
+      "membership_rank": 7,
+      "pair": [
+        7,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "d070c52546196851f61609d37388f1a715524ca57437ea9d2034d0a672ca9f5e",
+      "identities": 1,
+      "membership_rank": 10,
+      "pair": [
+        8,
+        8
+      ]
+    },
+    {
+      "certificate_sha256": "f1bfeed67848cba25e38ddaf5b22955966b8a1b971a6b91629dbc8e89281b471",
+      "identities": 3,
+      "membership_rank": 15,
+      "pair": [
+        8,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "d145f023cb591226e21f8191de12d474e04a729bf7d9bcf1771eb7f8c5b43f77",
+      "identities": 20,
+      "membership_rank": 10,
+      "pair": [
+        8,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "3046cfaa0e289a057a7e2feca3ff9d3627a6b14a573ef5bf1fc60feb3847a760",
+      "identities": 2,
+      "membership_rank": 10,
+      "pair": [
+        8,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "a24cd5774fbc553d2a56c08947b388f7af147663b2916eb92351cca543601a5e",
+      "identities": 2,
+      "membership_rank": 10,
+      "pair": [
+        8,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "6daa6a46a97fe53231369a2efb5f7d948909525beee385188b7dc828e5d27026",
+      "identities": 11,
+      "membership_rank": 10,
+      "pair": [
+        8,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "f514f125267444d3495ed84ca3a57a5b096d739902bab59589df1629bdec840c",
+      "identities": 2,
+      "membership_rank": 10,
+      "pair": [
+        8,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "fa1fc59de99f5a541eefb298a26be8454c956be634a7b87079a143f27924037f",
+      "identities": 2,
+      "membership_rank": 10,
+      "pair": [
+        9,
+        9
+      ]
+    },
+    {
+      "certificate_sha256": "724c2f4df2c1978553ae36e78126d352718f13d5ebb85aa6537c4d6ba740dd89",
+      "identities": 3,
+      "membership_rank": 10,
+      "pair": [
+        9,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "e3aee12d377b272db709ec4259c03bdad27da7ab8e4c9b20f33531ffdefe31fe",
+      "identities": 21,
+      "membership_rank": 10,
+      "pair": [
+        9,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "048fed518a28124f01b918508dd773e599c15254e381b971aaa94a8d54e0b3cd",
+      "identities": 3,
+      "membership_rank": 10,
+      "pair": [
+        9,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "a5b3748b4111a83f7b6f4e48371ea4e0951f83b4d42a1559f77711dd394e7c39",
+      "identities": 12,
+      "membership_rank": 10,
+      "pair": [
+        9,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "900bcc8bea72f67a4d199f4508883ebdf7059195f9f7d3013c45564a182fe1a8",
+      "identities": 3,
+      "membership_rank": 10,
+      "pair": [
+        9,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "56eac0dcafc2b1138c0d7ecceecf3e15faa20a2744b35eecfc7092e807739da5",
+      "identities": 1,
+      "membership_rank": 0,
+      "pair": [
+        10,
+        10
+      ]
+    },
+    {
+      "certificate_sha256": "d29fe9705ef05f68e84b77fda56b8d1d2d0bae06e7313a0bfa809807aeb681d8",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        10,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "a53ed286e7fb77d4851341dc1aeb5ca2227ed2ca7ff9af7fe5b109b929b32a41",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        10,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "109b455edc39cf9618cb74dabfe236251554b05aa97540e78988e8cb550f3e27",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        10,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "66371dc1de3bf67d375dee1ef36efc11ea9349a8b20a0d9da619975ce10020fe",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        10,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "50d33241b2c9f75266bf8dc1a1a3c03939c37fa3bed9e402975b794f9ef7b700",
+      "identities": 1,
+      "membership_rank": 0,
+      "pair": [
+        11,
+        11
+      ]
+    },
+    {
+      "certificate_sha256": "83b7519aa1e92d9f8aa8a543c068b36f3869eb699711591b0741548f85188c6b",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        11,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "4bd9db3e8958335e73cded4d7c60025f0efafde581efb69c74c3979fb4d61951",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        11,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "d35a4c390fb554f0c4b848487ccf81168b4319467e4faaac2477edbd494bed45",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        11,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "201e66ca827c746c54790dc9140ce9e2c0ef72d57796f51d2a0688fece91647d",
+      "identities": 1,
+      "membership_rank": 0,
+      "pair": [
+        12,
+        12
+      ]
+    },
+    {
+      "certificate_sha256": "79f416025c47c9b7c90adfafcac4a16f8b57004781d561fe90044e84e11177ff",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        12,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "7dcae2c406cae35b187d395ea0edae332c7ccab009428e0af95a22f219386510",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        12,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "62e695cd79e772f353ee8c4254113891b320d5226ee81658d3439ae51740007d",
+      "identities": 1,
+      "membership_rank": 0,
+      "pair": [
+        13,
+        13
+      ]
+    },
+    {
+      "certificate_sha256": "57ae2d8444f623bdcd76b9baae2ed8fa072834c6e417ab6776f0e1936ba14d76",
+      "identities": 2,
+      "membership_rank": 0,
+      "pair": [
+        13,
+        14
+      ]
+    },
+    {
+      "certificate_sha256": "c179ea38aa072b929d51e00ef9860a53606872d6cb97c88151a6ef2993c607ac",
+      "identities": 1,
+      "membership_rank": 0,
+      "pair": [
+        14,
+        14
+      ]
+    }
+  ],
+  "certification_sha256": "1b49f5c8105695d3742e9e8b959e6d6e4b67fc0cd42d5bc68c72be15d09b43ff",
+  "coordinate_zero_pairs": 7,
+  "covered_nonempty_cliques": 225,
+  "eligible_proportional_triples": 214,
+  "fixed_span_validation_sha256": "26bb04724d424ec36ecd0240b592d3fc6095323694d639bd3f0d6dd7fd36c7ff",
+  "helper_sha256": "b1b1eac866a9b3ade13552291cfe83b85ff9fbb2f6fc00435a14b72b1a9ead47",
+  "input_sha256": "773143fa2d8d2417c4d87ef1d0f2a2cddaa7a11ae25511f0f657b0e452a2887f",
+  "max_multiplier_degree": 12,
+  "multiplier_monomials": 29023,
+  "nonedge_pairs": 102,
+  "primary_checkpoint_sha256": "60f919ccecf7f8b62a4940adfbcb2b61e9a8ea8090d7c410a51203af73df9a95",
+  "scope": "The saved89-form identity cannot be shortened by retaining any subset, adding at most two arbitrary new forms and re-solving all retained output coefficients, over characteristic-zero extensions. Fixed-span optimality handles independent new output columns; the mixed second derivative clique lemma and607 identities handle proportional columns. This is not a global minimum89 for the tensor or for Keller maps; at least three new forms remain possible.",
+  "seconds": 1.014,
+  "source_cliques": 15,
+  "source_sha256": "463fb5e26b67d408bd775fa3c7a8e750527b540a7061b9860864cad74f23a459",
+  "source_support_pairs": 120,
+  "status": "pass",
+  "unit_identities": 607
+}

@@ -1,0 +1,114 @@
+{
+  "claim": "QSC1",
+  "status": "PASS",
+  "Long_classical_chart": {
+    "inverse_ring_formulas": "PASS",
+    "canonical_brackets": "PASS",
+    "r_kernel_removes_d": "written all-degree kernel proof",
+    "s_kernel_on_r_s_a": "-4/(s-g)*partial_a",
+    "unit_a_linear_coefficient": -4,
+    "joint_polynomial_centralizer": "written proof K[R,S]"
+  },
+  "nonpositional_quantum_control": {
+    "classical_graph": "identity",
+    "positions": [
+      "x+h^2*py",
+      "y+h^2*px"
+    ],
+    "all_four_scalar_relations": "PASS",
+    "global_Long_deformation_constructed": false
+  },
+  "Koszul_d1_d0_and_right_evaluation": "PASS",
+  "universal_spectral_torsion_control": {
+    "S": "p^2",
+    "global_class_nonzero": "QVL1 written constant-coefficient theorem",
+    "annihilated_by_spectral_u": true,
+    "nonzero_fiber_witness": "x*p/(2*lambda)",
+    "zero_fiber_witness": "x^2/(2*h)-x^3*p/(3*h^2)",
+    "all_fiber_translation_classes_zero": true,
+    "global_translation_class_zero": false
+  },
+  "finite_curvature_correction": {
+    "curvature": "-2*h*F1*F2",
+    "b1": "0",
+    "b2": "-F1^2*F2",
+    "flat_after_finite_correction": true
+  },
+  "scalar_position_matrix_completion": {
+    "size": 2,
+    "gauge": "[[1+F1*F2,F1],[F2,1]]",
+    "nontrivial_offdiagonal_entries": true,
+    "full_matrix_relations": "PASS",
+    "normalized_trace_is_flat_scalar_pair": true,
+    "entry_spatial_degree_bound": 2,
+    "trace_spatial_degree_bound": 2
+  },
+  "nonconstant_projective_corner_identity_control": "PASS",
+  "noncommutative_centralizer_boundary": {
+    "outer_constant_matrices_commute": true,
+    "average_curvature": "Matrix([[1/4, 0], [0, -1/4]])",
+    "average_pair_flat": false
+  },
+  "escaping_boundary_curvature": {
+    "algebra": "twisted Ore algebra, not the finite Weyl algebra",
+    "PBW_overlap_compatibility": "PASS",
+    "curvature": "h^2/((1-h*x)*(1-h*y))",
+    "double_residue": "1",
+    "formal_correction": "-log(1-h*x)/(1-h*y)",
+    "series_controls": [
+      {
+        "h_order": 1,
+        "spatial_degree": 1
+      },
+      {
+        "h_order": 2,
+        "spatial_degree": 2
+      },
+      {
+        "h_order": 3,
+        "spatial_degree": 3
+      },
+      {
+        "h_order": 4,
+        "spatial_degree": 4
+      },
+      {
+        "h_order": 5,
+        "spatial_degree": 5
+      }
+    ],
+    "formal_flatness_through_h6": "PASS",
+    "no_rational_flat_correction": "written iterated-residue proof"
+  },
+  "hashes": {
+    "LONG_SPECTRAL_CURVATURE_AND_SCALARIZATION.md": "09ea45c50f3baceb46e25218cef940e7c79c77eb933e56b6dc2a81695f123e21",
+    "check_spectral_curvature.py": "1273794cfe667fe7082ee4b3e77043351df1b694978f8cf337f36f3ee1651838",
+    "QUINTIC_PHASE_AND_BRANCH_OBSTRUCTION.md": "8829fba45a6dc41a80fa8b81fda33cb1c1d0d6dee17971f1144b456ef09e2355",
+    "phase_carrier_controls.json": "5d75b63181d21c80bfbe9c31aa4ecf05adbf159eb8d7514455d3dfa9541e5fc2",
+    "FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md": "fe92cce0dbff47ce30723405677c9dc3f5e47120d350e6f581f3a99a87b60e0b",
+    "matrix_carrier_controls.json": "813d939bd72046215948d543ca32699b442f6c060597f2b1060d428c93ffc1ee",
+    "CENTRALIZER_NORMAL_FORM.md": "3c5180bee0a250a16a3e93d8a08d8eec42874b3cde5a7f64c06051ad079ddbd0",
+    "ALGEBRAIC_INFINITY_LIMITS.md": "71a4f107941fd6ee0abc7fc236829f6cafcba7d2f40c5b0bb50e3f379091b669",
+    "ADLER_PERIODS_AND_FINITE_ADMISSION.md": "84c20f82b2ba593940b3045b6fc601881fb73b6f4cc605ed43bb5938c7e54342",
+    "adler_admission_controls.json": "2cdf33c11aaf404bbf626923ba989425f8f550a9898ab6ed6037e758c9633336",
+    "BOUNDED_REALIZATION.md": "85860fda7138b1e38a41341f2f9e830a516793f0c66e3c4778f9e1adf151b8b9"
+  },
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/2604.16636",
+      "used": "Canonical first-order cohomology classes as related context; no identification with the spectral classes is asserted."
+    },
+    {
+      "source": "https://arxiv.org/abs/1904.03128",
+      "used": "Graph-bimodule formulation as related context; direct spectral and curvature calculations are supplied."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/09CN",
+      "used": "Principal-parts sequence and connection viewpoint as context; the relative noncommutative Koszul resolution is proved directly."
+    }
+  ],
+  "coverage_boundary": "Declared Long chart identities and kernel witnesses, a globally finite nonpositional identity deformation, Koszul/right-evaluation controls, universal versus fiber spectral torsion, finite curvature correction, nontrivial scalar-position matrix gauges and their traces, an identity projective corner, noncommutative-centralizer boundary and escaping curvature model. Universal Long joint-centralizer exhaustion, all commuting deformations, carrier faithfulness, exact spectral/curvature criteria, all matrix sizes, identity stabilization and nonzero boundary curvature use written proofs. The twisted Ore boundary is not a finite Weyl or Long construction. No full Long carrier or nonzero obstruction for every Long deformation is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

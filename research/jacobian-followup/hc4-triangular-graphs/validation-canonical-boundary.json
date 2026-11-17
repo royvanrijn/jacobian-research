@@ -1,0 +1,110 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYKN0",
+    "HC4MYKN1",
+    "HC4MYKN2"
+  ],
+  "checks": [
+    "HC4MYKN0 schema,retained/external dependencies,immutable locks and assurance",
+    "HC4MYKN1 schema,retained/external dependencies,immutable locks and assurance",
+    "HC4MYKN2 schema,retained/external dependencies,immutable locks and assurance",
+    "all-degree torsion-canonical and stable-CI criteria preserve full/intermediate fields,global/local type and direct HC4 hypotheses",
+    "open parent excludes the complete global presentation architecture without claiming all normalizations have that architecture",
+    "four sourced normalization methods and all affected parent-scope fingerprints distinguish finite normalization from primitive order and global canonical freeness from local type",
+    "both work actions retain the full HC4 goal,the direct classification-free criterion,qualified A4 bridge,compatible archived packets and native non-CI branch",
+    "75 exact/provenance controls bind22 retained immutable inputs and3 new source/context pins without replaying an old checker",
+    "the degree-six primary precursor is credited;finite duality is the sole new proved import,and no general intermediate polynomial model or local-Gorenstein exclusion is inferred",
+    "proof/navigation retain explicit valuation and Koszul arguments,the whole-source quadric failure and characteristic-p Artin-Schreier countercontrol",
+    "generated navigation agrees with the latest authoritative ledger,methods and work actions",
+    "full HC4/JC2,global nontrivial canonical multiplication,JA/JB recovery and native critical non-CI recognition remain open with earlier evidence preserved"
+  ],
+  "scoped_check_groups": 12,
+  "exact_current_replay_checks": 75,
+  "algebraic_and_scope_controls": 49,
+  "new_proved_imports": 1,
+  "new_unproved_external_statements": 0,
+  "full_normalization_canonical_class_has_exact_free_boundary_coordinates": true,
+  "every_nontrivial_embedded_intermediate_normalization_has_nontorsion_canonical_class": true,
+  "global_complete_intersections_excluded_in_every_helper_number_and_degree": true,
+  "every_trivial_polynomial_or_Laurent_CI_stabilization_excluded": true,
+  "nontrivial_intermediate_canonical_module_needs_two_global_generators": true,
+  "any_two_helper_full_plane_normalization_needs_three_defining_relations": true,
+  "scalar_source_units_and_actual_valuation_tower_are_explicit": true,
+  "degree_six_prior_trace_lattice_coverage_is_attributed": true,
+  "actual_smooth_quadric_affine_chart_is_not_a_whole_source_Keller_map": true,
+  "positive_characteristic_Artin_Schreier_control_keeps_characteristic_zero_essential": true,
+  "smooth_or_locally_Gorenstein_normalizations_excluded": false,
+  "arbitrary_intermediate_field_given_a_polynomial_affine_space_model": false,
+  "every_normalization_proved_to_have_global_CI_presentation": false,
+  "every_torsion_canonical_finite_cover_proved_root_irreducible_after_Keller_base_change": false,
+  "primitive_nonnormal_order_identified_with_finite_normalization": false,
+  "archived_quartic_or_degree_six_nontorsion_packets_excluded": false,
+  "arbitrary_nontrivial_vector_bundle_total_space_stabilizations_excluded": false,
+  "positive_characteristic_version_of_the_torsion_canonical_exclusion_proved": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "characteristic_zero_plane_Keller_counterexample_constructed": false,
+  "native_critical_Gorensteinness_or_module_bound_proved_automatic": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": [
+        "make",
+        "render-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": [
+        "make",
+        "check-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+        "research/scripts/research.py",
+        "check",
+        "--require-partial-review"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "name": "required-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "research/MATH_STATUS.json",
+        "research/knowledge/lessons.json",
+        "research/knowledge/work_items.json",
+        "research/jacobian-followup/hc4-triangular-graphs/README.md",
+        "research/index",
+        "research/knowledge/work",
+        "research/knowledge/WORK_LEDGER.md",
+        "research/STATUS.md"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "required_diff_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_check": "PASS",
+  "new_authored_file_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_evidence": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "repository_failures_unrelated_to_HC4": true,
+  "unrelated_missing_artifacts_reconstructed": false
+}

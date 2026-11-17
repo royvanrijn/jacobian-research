@@ -1,0 +1,8 @@
+{
+  "status": "NO_CERTIFICATE",
+  "returncode": 124,
+  "elapsed_seconds": 35.03138834499987,
+  "input_sha256": "e262a131a441b7eb394979916235699ff05b4145c1c4ddac87c6e2953788a071",
+  "output_sha256": "13e3271c6c2c9a751f30a3a380b1c70b0fcb0b97dddd093e0e41452dfe2edeed",
+  "output_bytes": 8
+}

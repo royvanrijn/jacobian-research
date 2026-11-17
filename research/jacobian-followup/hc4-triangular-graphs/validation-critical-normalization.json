@@ -1,0 +1,93 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYGM0 schema, source hash, evidence, dependencies, narrowing and assurance",
+    "HC4MYGM1 schema, source hash, evidence, dependencies, narrowing and assurance",
+    "HC4MYGM2 schema, source hash, evidence, dependencies, narrowing and assurance",
+    "HC4MYGM3 schema, source hash, evidence, dependencies, narrowing and assurance",
+    "finite and escape proofs use only explicit local inputs; Tang is limited to residual realization",
+    "reciprocal scope edges retire finite singularities while retaining repeated-face and boundary gaps",
+    "sixteen new/updated method records have retained sources and current scope fingerprints",
+    "WORK-HC4-SCHUR replaces finite casework with the global Bezout and reciprocal boundary obligations",
+    "WORK-HC4-RESIDUAL-AUDIT replaces finite casework with the global Bezout and reciprocal boundary obligations",
+    "receipt-critical-normalization.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-newton-critical.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-opposite-affine.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-critical-components.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-relative-critical.json current proof/checker and retained primary/dependency byte pins",
+    "full finite closure is distinguished from escape sufficiency, finite projection and ambient completion",
+    "newly retained primary normalization and conductor statements have exact theorem locations and byte pins",
+    "new canonical proof and maintained entry-point local links resolve"
+  ],
+  "exact_replay_checks": {
+    "receipt-critical-normalization.json": 43,
+    "receipt-newton-critical.json": 34,
+    "receipt-opposite-affine.json": 44,
+    "receipt-critical-components.json": 58,
+    "receipt-relative-critical.json": 39
+  },
+  "previous_goal_turn": "Progress: the preceding all-degree Newton/separated-family proof was revalidated by its34-check replay before replacing finite singularity casework with normalization.",
+  "new_claims": [
+    "HC4MYGM0",
+    "HC4MYGM1",
+    "HC4MYGM2",
+    "HC4MYGM3"
+  ],
+  "written_proof_coverage": [
+    "every finite smooth, singular and intersecting branch of each contributing component",
+    "the polynomial Bezout gate with full F_p and no lost repeated/vertical factors",
+    "the entire closed smooth active critical scheme and its polynomial inverse graph",
+    "all finite-base escape ramification indices and even pole orders",
+    "the exact reciprocal conductor/intersection equality and smooth/node exclusions",
+    "a necessary entire abstract plane Keller-fibre realization of both prescribed functions"
+  ],
+  "external_mathematical_inputs": [
+    "Garcia Barroso--Ploski Theorems1.6/1.7",
+    "Hefez--Rodrigues--Salomao Theorem2.1",
+    "HCTANG2 only for the residual abstract realization"
+  ],
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/geometry.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "entire_finite_polar_locus_closed_in_all_degrees": true,
+  "finite_affine_singularities_and_component_intersections_are_no_longer_loopholes": true,
+  "all_finite_base_escapes_closed": false,
+  "local_cusp_budget_asserted_sufficient": false,
+  "abstract_curve_isomorphism_asserted_ambient_plane_automorphism": false,
+  "remaining_frontier": [
+    "later splitting at repeated initial faces and mixed faces",
+    "more complicated reciprocal boundary singularities meeting the exact escape conductor budget",
+    "global entire abstract plane Keller-fibre and prescribed function realization",
+    "q/r-dependent omitted bases, actual base/dual mixing and uncovered embeddings",
+    "unit-ideal plane surjectivity and the distinct singleton-zero properness endpoint"
+  ],
+  "unit_ideal_plane_Keller_endpoint_resolved": false,
+  "singleton_zero_properness_resolved": false,
+  "all_nonlinear_y_R_graphs_closed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "final_checks": {
+    "python_compilation": "PASS",
+    "scoped_git_diff_whitespace": "PASS",
+    "new_proof_checker_and_import_whitespace": "PASS",
+    "render_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "check_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check_require_partial_review": "FAIL: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+  },
+  "new_primary_sources_retained_for_explicit_local_imports": [
+    "Garcia Barroso--Ploski arXiv:1208.0913v1",
+    "Hefez--Rodrigues--Salomao arXiv:1708.07412v1"
+  ],
+  "all_degree_proof_not_inferred_from_finite_singularity_controls": true,
+  "global_research_goal_remains_active": true
+}

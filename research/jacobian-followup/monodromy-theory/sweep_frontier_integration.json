@@ -1,0 +1,28 @@
+{
+  "previous_goal_turn": "progress",
+  "evidence": "Current KMFI24--25 canonical sweep proof and validation inspected; prior goal turn added authoritative construction-class exclusion and actual F5 group identification.",
+  "new_claim_ids": [
+    "KMFI26",
+    "KMFI27",
+    "KMFI28"
+  ],
+  "changed_claim_ids": [
+    "OP-KMON"
+  ],
+  "preexisting_entry_count": 1919,
+  "preexisting_entries_preserved_without_change": 1918,
+  "scope_fingerprints": {
+    "OP-KMON": "45a5075162adaf56",
+    "KMFI26": "abd55c862e9a541e",
+    "KMFI27": "513bcd4f3a76a1d1",
+    "KMFI28": "65493191be914f10"
+  },
+  "updated_lesson": "METHOD-KELLER-AFFINE-INERTIA",
+  "updated_work": "WORK-KMON",
+  "actual_nonlinear_affine_S4_control": true,
+  "next_imprimitive_candidate_affine_stage_complete": false,
+  "next_imprimitive_candidate_group_identified": false,
+  "general_PSL2_11_action_decided": false,
+  "full_classification_complete": false,
+  "goal_status": "active"
+}

@@ -1,0 +1,52 @@
+{
+  "checked_date": "2026-11-14",
+  "claim": "G3COEFFICIENT20261114",
+  "sources": [
+    {
+      "title": "The variety of orthogonal frames",
+      "authors": [
+        "Laura Casabella",
+        "Alessio Sammartano"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2512.25058",
+      "audited_url": "https://arxiv.org/html/2512.25058v2",
+      "latest_version_observed": "v2, 30 October2026; current abstract history checked",
+      "reading_coverage": "Abstract/introduction, Corollary2.5 statement, Theorem3.5 statement and proof Steps1\u20133, Lemma3.8 statement. Not a full article audit.",
+      "import": "The p=0 rank-stratum dimension and one/two-component alternatives for isotropic orthogonal frames. Stiefel/Grassmann incidence geometry is adapted explicitly in the local proof.",
+      "boundary": "The prime/complete-intersection theorems for off-diagonal orthogonality ideals are not applied to ideals with additional isotropic diagonal conditions. v1 was a discovery lead; conclusions use the current v2."
+    },
+    {
+      "title": "Representations with a Reduced Null Cone",
+      "authors": [
+        "Hanspeter Kraft",
+        "Gerald W. Schwarz"
+      ],
+      "abstract_url": "https://arxiv.org/abs/1112.3634",
+      "audited_url": "https://arxiv.org/html/1112.3634v1",
+      "version": "v1 audited; no exhaustive later-publication audit",
+      "reading_coverage": "Introduction, Theorem9.1(4), orthogonal invariants statement, Lemma9.7 and the reduced-range portion of its proof and Theorem9.1(4) proof. Other representation classifications were not audited.",
+      "import": "Orthogonal invariant generation by Gram entries and the reduced-null-cone criterion as a consistency check for the stable geometry.",
+      "boundary": "The N=5 generic multiplicity2 is proved by a local Witt chart, not inferred merely from the source nonreducedness statement."
+    },
+    {
+      "title": "Stacks Project, miracle flatness",
+      "url": "https://stacks.math.columbia.edu/tag/00R4",
+      "reading_coverage": "Complete lemma and proof",
+      "import": "Regular base, Cohen\u2013Macaulay source, and local dimension equality imply flatness."
+    },
+    {
+      "title": "Stacks Project, relative associated primes",
+      "url": "https://stacks.math.columbia.edu/tag/05C2",
+      "reading_coverage": "Complete lemma and proof-reduction statement",
+      "import": "Noetherian flat base change computes associated primes from the generic fibers over base associated primes.",
+      "boundary": "Geometrically split fibers need not give split total preimages; the local argument treats the N=5 axis incidence separately."
+    }
+  ],
+  "downloaded_primary_HTML_sha256": {
+    "orthogonal_frames_v2.html": "c57bb6f5fa85ebc73a6ee6f143bc08e2bfc32cd8e6a0864e4b845ad3ee49fbbf",
+    "reduced_null_cone_v1.html": "52d9857c2ebb7cc282e2517b1ae426a3adb1e1e5ad6fe3e5154dfe8f717bf804"
+  },
+  "cache_boundary": "Downloads are read-only HTML sources in tmp/moment_pullback_sources; hashes record this reading, not required canonical artifact availability.",
+  "checker_sha256": "542c3efe2b1674417536eabefbaf1de6a3fce49cf9e2006ecf9811b154de9eb6",
+  "assurance": "Imported geometric/commutative-algebra facts are explicit. The local all-dimension moment cutoffs, coefficient primary transfer and multiplicity conclusions are internal deductions; no independent replay, external review, formalization or producer-code execution."
+}

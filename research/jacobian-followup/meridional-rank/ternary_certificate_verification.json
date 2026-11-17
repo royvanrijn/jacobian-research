@@ -1,0 +1,82 @@
+{
+  "status": "PASS scoped complete ternary affine and cover package",
+  "targets": 16,
+  "rank_one_classes": 2,
+  "tuple_orbits": [
+    21632,
+    34084
+  ],
+  "raw_tuples": [
+    1124864,
+    1601613
+  ],
+  "all_rank_one_admissible_affine_lifts_principal": true,
+  "full_GL3_F3_representation_orbits": 16,
+  "knots_with_full_GL3_F3_image": 8,
+  "induced_cover_quotient": "SL3(F3),order5616",
+  "ordinary_cover_module_tests": 32,
+  "ordinary_Z1_dimension": 4,
+  "required_Z1_dimension": 7,
+  "control_root_dimensions": [
+    4,
+    4
+  ],
+  "projective_index13_control": {
+    "points": 13,
+    "generator_cycle_lengths": [
+      [
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        3
+      ]
+    ],
+    "graph_vertices": 34,
+    "graph_edges": 39,
+    "free_rank_from_graph": 6,
+    "C3_vertex_factors": 12,
+    "H1_F3_dimension_from_written_Kurosh_argument": 18,
+    "base_H1_F3_dimension": 3,
+    "homology_gain": 15,
+    "sharp_gain_threshold": 13,
+    "assurance": "Finite permutations/cycles/connectivity checked; subgroup structure F6*(*12 C3) uses the separately written graph-of-groups/Kurosh argument. Target13point covers have not been tested."
+  },
+  "rejected_corruptions": 10,
+  "new_target_closures": 0,
+  "full_MRC_proved": false,
+  "input_sha256": {
+    "verify_ternary_transvection_control.py": "f289f0b97ff61037ceeafc2022dd415c40e9f86e4554f365c0241a57b9eaf67b",
+    "verify_ternary_reflection_control.py": "e81787540e1aafd477ae0db66483c2c1a76ba33aee01d1963a3985dca5e5587f",
+    "verify_ternary_bases.py": "39f8e7c13d01a0d2ee9871348e767a534ddb046f9b1b4671edf712e394ba6de7",
+    "verify_ternary_cover_modules.py": "d559381f710ec900b8fff789b680ee8ad1aeeb563658eaa1a8542c178dff687c",
+    "ternary_transvection_control_verification.json": "2cd8b2728bc7a38ed22525be7edecb813ab5ae4f4b83e2bb9dd57cadb496c177",
+    "ternary_reflection_control_verification.json": "3800e7528392a0279c47f54f72132a765c3e4d024c45f2e36cc1b309a3230757",
+    "ternary_base_verification.json": "e1b0b17fcbc79b777fda02911d3e3f2e80eaff842e51f82293b630dbeb4419e6",
+    "ternary_cover_module_verification.json": "24c9f9b2b3046313f0916280e5e1ebc00e8d7b98c44bb6ec9b668377a59815af",
+    "verify_ternary_certificates.py": "4c5a2f3a8750e346f2c55be98ea7ad9e93f7eca2c663b5725e79e87911f6ae22",
+    "TERNARY_AFFINE_AND_COVER_CERTIFICATES.tex": "86c3934737c910c1efcd15e89666562d0c0b6288b24aefb74e948131e288f937",
+    "output/pdf/TERNARY_AFFINE_AND_COVER_CERTIFICATES.pdf": "534b2d98f12bcb2e53ba7104cc7c4d16caad31d82c3b35bea4d9428fdfc8f02a"
+  },
+  "scope": "All rank-one GL3(F3) bases on the unchanged original16, and natural/dualF3 ordinary cover modules through the16 full-image representations. Finite inputs independently replayed; uniform cocycle/fixed-space, core-cover and Kurosh arguments require the written proof. Unformalized and externally unreviewed. No distinct-kernel, all-field/all-module or worldwide novelty claim; target13point homology untested."
+}

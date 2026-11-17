@@ -1,0 +1,10 @@
+{
+  "as_of": "2026-11-16",
+  "primary": "Miyanishi2005 Oberwolfach report printed1110/PDF38 definition and Lemma2.2",
+  "scope": "Exact affine-pseudocover definition and free finite Galois-normalization context read; current construction proved directly, no new classification.",
+  "full_Journal_of_Algebra_article": "Affine pseudo-coverings of algebraic surfaces DOI10.1016/j.jalgebra.2005.01.042: primary publisher abstract read, full article blocked403/not audited. No theorem from that abstract adopted.",
+  "shared_credit": "HC4MYMO0 plane chart can omit an entire fibre and is not automatically almost surjective. HC4MYMA0 source-base-change splitting leaves the residual discriminant. Both preserved.",
+  "new_external_theorem_import": false,
+  "formal_verification": false,
+  "external_review": false
+}

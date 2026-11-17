@@ -1,0 +1,23 @@
+{
+  "all_original_unknown_timeouts_preserved": true,
+  "changed_hard_quadratic_timeouts_preserved": true,
+  "claims": [
+    "KCUB18"
+  ],
+  "complete_weight_exclusion": [
+    1,
+    -1,
+    -3
+  ],
+  "global_minima_closed": false,
+  "links": true,
+  "plane_theorem_reproved": false,
+  "remaining_initial_weights_open": [],
+  "reviewed_fingerprints": true,
+  "schema": true,
+  "source_hashes": true,
+  "status": "pass",
+  "umbrella_status": "open",
+  "validation_sha256": "38b4896c4b00da45ed19ef287ea16619048da75bd14767ed889f6ca96f5bcaa1",
+  "written_case_split_formalized": false
+}

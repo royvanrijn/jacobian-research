@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+  "proof_sha256": "5bba81a02bc817eb29835d76f6d5744973a5100b70f4f4fa39c90fed6f3584f8",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_reduction.py",
+  "checker_sha256": "e8348ace86ceab3aa6d5a88e2ffb41a55d85d0ea5a289cf50fd45fa9a4154584",
+  "receipt": "jacobian-followup/moment-vanishing-audit/haar_boundary_reduction_verification.json",
+  "receipt_sha256": "7d15e9b2289e1e57053b70f09ded6b35cbddc7b03d8da2ca3a4eee6a88ee0e0d",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/GLOBAL_HAAR_ORBIT_SPLITTING_AND_BOUNDARY_RADICAL.md",
+      "sha256": "1fc7386732d7062b879bdf02cc103cd256f214cee025905826d7f740800193c1",
+      "use": "Actual Cauchy FUNCTION connection before polynomial quotient; exact global unit-splitting and actual-orbit criterion, global graded semisimplicity/radical, and finite-cover ambient-SUM quotient."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/CUBIC_NILPOTENCE_AND_QUADRATIC_HAAR_LOGARITHMS.md",
+      "sha256": "13d0e0513d7591d9f2fbcdedc24c3cc0a84eaa99410543520693212b6fd351c5",
+      "use": "Full local Hodge-strip lemma and original simple-pole detection. Full quadratic logs can remain, while the new exact reduced source has only single logs."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/UNIPOTENT_HAAR_EXTENSIONS_AND_GENERAL_RECOMPOSITION.md",
+      "sha256": "beac9f1af54c16ad746b2dd527ca9bc2526a742459bab75871d721682a077c4d",
+      "use": "Canonical-extension and relative-M functoriality make actual limit MHS maps strict; avoid arbitrary relative-filtered quotient exactness. Intrinsic xi/residual beta remain valid."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/HODGE_WEIGHTS_OF_HAAR_VARIATION_AND_BOUNDARY_GRAPHS.md",
+      "sha256": "ef25b07db54186598299c3acf20296857a9ade955863fccdcd9e807ca5a1b3d0",
+      "use": "Ambient Q(-2), H2(X)=0, complement original weights4/5/6 and surface Hodge types; boundary genera/graph pieces."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/INTRINSIC_HAAR_STATES_AND_NONSPLIT_PERIOD_EXTENSIONS.md",
+      "sha256": "0cd034bf1ec43510257756956bed0b401fdc394ccaf2889912c0be53aac8085c",
+      "use": "Actual marked entire indecomposability ensures the unit-splitting test retains ALL original markers."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/PRIMITIVE_HAAR_VARIATION_AND_ALL_POLYNOMIAL_COMPOSITES.md",
+      "sha256": "26944e8dbbb2228673247df34f9f3b5c38b552e5b40ade85d27ea7b5747d6d60",
+      "use": "Every branch and disconnected fibre stays in finite-cover recomposition, with no primitive-purity reflection."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Florian Ivorra and Sophie Morel",
+      "title": "The four operations on perverse motives",
+      "url": "https://ems.press/content/serial-article-files/41460",
+      "doi": "10.4171/JEMS/1402",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/ivorra_morel_four_operations_ems_2024.pdf",
+      "sha256": "31a655087c68122c1d32c6527affe559a7e8582c104d210ca6d8f2018895571f",
+      "read": "82-page PUBLISHED EMS online-first2024 primary cached by hash; complete PDF1 and62-67 freshly read. Full PDF65-66 setup, Corollary5.8 and proof explicitly read, with the nonprojectivity clause and following MHS statement. PDF66 rendered and visually checked. The entire four-operations construction is NOT claimed independently audited or reproved.",
+      "exact_import": "ONLY the classical Leray spectral sequence for an ARBITRARY quasi-projective morphism with constant/geometric coefficients is a functorial spectral sequence of MHS. This DEEP published input is imported. Graph-base topology gives edge surjectivity; strictness and fibre restriction then give the new lowest-weight invariant theorem. Arapura projective-only Leray is NOT substituted."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "Theorie de Hodge II",
+      "url": "https://www.numdam.org/item/10.1007/BF02684692.pdf",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/deligne_hodge_II_1971.pdf",
+      "sha256": "748edefb44fded8af67869abfed87062d66977d25b5d12f7d014f1810a063c3f",
+      "read": "Retained primary54-page scan and full prior PDF26-36/printed29-39 audit, especially2.3.5 strictness and3.2.17 compactification image. Prior complete PDF39-43/printed42-46 includes FULL hypotheses/proof of global semisimplicity4.2.6 and Proposition4.2.5; same hashed source, not reread wholesale.",
+      "exact_import": "Lowest-weight W2 H2 is the image of smooth proper compactification, MHS strictness, pure geometric global semisimplicity and Hodge fixed-part decomposition. Degree2 divisor-support/blowup argument and its applications are written in the new note."
+    },
+    {
+      "author": "Patrick Brosnan and Fouad El Zein",
+      "title": "Variation Of Mixed Hodge Structures",
+      "url": "https://arxiv.org/pdf/1302.5814v1",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/brosnan_elzein_vmhs_1302_5814v1.pdf",
+      "sha256": "ad99fd307c33765291d3180f0f9476624cad38a8df6257b3bbb4d30d388e8a64",
+      "read": "Retained complete primary source audits, especially PDF16 Theorem2.1/Remark2.2 and PDF28-30 Corollary2.22/Definition3.1/Lemma3.2. No claim to have newly reread the entire source.",
+      "exact_import": "Pure subvariation C_f has a geometric limit; the inclusion is a morphism of actual limit MHS and is strict. Its MHS quotient has unchanged nearby quotient Hodge ranks; relative isomorphisms descend because weight4 quotient is L and higher grades unchanged. This supplies the reduced N2 proof without assuming arbitrary relative-filtration quotient exactness."
+    }
+  ],
+  "new_written_arguments": [
+    "For ANY divisor D in smooth X with H2(X)=0, W2 H2(X minus D)=0: compactification H2 is generated by boundary divisor classes; resolving D adds only deleted exceptional classes in degree2.",
+    "The graph-base Leray edge H2(X_S)->H0(S,R2f_*Q) is surjective and a strict MHS map by the explicit NONPROPER primary import. Thus the original compact-middle W2 H2(F) has NO invariants under the ENTIRE global group. Evaluation is a MHS map by factoring fibre restriction through that edge.",
+    "Consequently (W4 B)^global=L, and W4B=L directsum C_f canonically, with C_f the globally nontrivial pure compact-middle subvariation. Total complement X times C* and Gysin at excluded parameter fibres independently confirm W4 H3(U_S)=L.",
+    "The canonical source B_boundary=B/C_f has only types22,32,23,33; twist2 is level one. Strict actual limit MHS quotient has F2 all,F4 zero, so N_boundary2=0 and every local eigenvalue block has size<=2 at all P1 punctures.",
+    "For the actual function quotient M, image I of C_f is semisimple with no trivial subquotient. It cannot contain the unit and Hom(I,trivial)=0. Therefore Hom(M/I,trivial)=Hom(M,trivial), preserving unit evaluation. Full eventual-pure all-marker safety is EXACTLY unit splitting in this reduced quotient for EVERY phase.",
+    "Reduction commutes with EVERY H: C_H(f)=pi_* C_f by ambient-SUM and vanishing H0(T,C_f). Reduced source global semisimplicity reflects H before purity, and suffices for all eventually pure composites even if full source is nonsemisimple.",
+    "If fibre GrW3H2=0, reduced source has only weight4 line L and weight6; any nonzero global radical image is exactly L. Every quotient retaining unit retains the obstruction. Thus on the eventual-pure locus safety IFF reduced source globally semisimple; all H degrees share this intrinsic dichotomy. No pure composite is produced."
+  ],
+  "essential_boundaries": [
+    "Both FULL exceptional MZ cases remain OPEN. No universal reduced unit splitting, boundary-space vanishing, original phase failure or pure-composite existence is claimed.",
+    "Global compact-middle invariants vanish on the ORIGINAL base, not under every local loop or arbitrary finite base cover.",
+    "M_boundary is a quotient of actual M and need not embed in scalar function germs or inherit a MHS. Its geometric SOURCE controls local Jordan sizes. No literal deletion of quadratic coefficients from each original C_Q or general algebraic coefficient formula is claimed.",
+    "Local reduced N2=0 is NOT global radical-square-zero when genus weight5 is present. Reduced source semisimplicity is necessary only in the stated genus-weight-zero case.",
+    "No general algebraic1-motive/curve presentation, monodromy/orbit producer, all-ring topological promotion, universal machine proof, search or review gate."
+  ]
+}

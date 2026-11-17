@@ -1,0 +1,29 @@
+{
+  "claim": "QHR1",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "new_and_changed_methods_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "retained_Long_QPA1_receipt_chain": "PASS",
+  "elliptic_and_source_chart_controls": "PASS",
+  "python_compile": "PASS",
+  "changed_files_diff_check": "PASS",
+  "local_markdown_links_checked": 169,
+  "unique_equation_labels": 17,
+  "proof_sha256": "0bf816775042f66b0baf1e7f18e77c8ed4780767431db20355ee510aa10e3d90",
+  "checker_sha256": "4d9cd0df0f69dd617d65c4d38dd3c363f671185d077c7a2120f8ed97af1790fc",
+  "proof_boundary": "Exact algebraic identities only. The nonproperness component, no algebraic primitive, all-degree Poisson centralizer, Hamiltonian LND classification, spectator bound and exclusion of all stable polynomial canonical positional forms are written proofs. No finite computation establishes those universal implications.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "previous_goal_turn": "progress: QPA1 proved formal position-field avoidance, full positional-image intersections and low-order source-polarization exclusions",
+  "goal_status": "active",
+  "status_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+  }
+}

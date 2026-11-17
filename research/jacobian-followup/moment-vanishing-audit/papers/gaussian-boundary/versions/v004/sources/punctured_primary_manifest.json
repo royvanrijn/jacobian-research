@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "sources": [
+    {
+      "url": "https://dlmf.nist.gov/10.25.E1",
+      "scope": "Modified Bessel equation10.25.1;checked through browser."
+    },
+    {
+      "url": "https://dlmf.nist.gov/10.31.E2",
+      "scope": "Classical logarithmic expansion10.31.2;checked through browser."
+    }
+  ],
+  "direct_download": "HTTP403;no full local HTML download claimed. Browser source text was available and checked.",
+  "novelty_assessed": false
+}

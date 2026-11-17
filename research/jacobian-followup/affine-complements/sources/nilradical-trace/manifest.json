@@ -1,0 +1,71 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED117",
+  "sources": [
+    {
+      "path": "sources/nilradical-trace/stacks-0BWB.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BWB",
+      "title": "Stacks Project tag0BWB",
+      "used": "Stacks49.12.4/49.12.6: finite CI trace generator equals Jacobian times a free dual generator; same-dimensional smooth map different.",
+      "bytes": 25183,
+      "sha256": "3f08ca631d04dcd310e4831f2129c98fc5aad0e16a374bfcd2dffeb7a65338b0"
+    },
+    {
+      "path": "sources/nilradical-trace/stacks-0BVF.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BVF",
+      "title": "Stacks Project tag0BVF",
+      "used": "Stacks49.2.10: dual finite locally free module commutes with arbitrary base change.",
+      "bytes": 16324,
+      "sha256": "e77adf359d212cbef4e91f3261ac88442d462db1482da49e9a149e554f9be060"
+    },
+    {
+      "path": "sources/nilradical-trace/stacks-0A7A.html",
+      "url": "https://stacks.math.columbia.edu/tag/0A7A",
+      "title": "Stacks Project tag0A7A",
+      "used": "Stacks47.15.8: finite-map derived Hom of a dualizing complex is dualizing.",
+      "bytes": 32485,
+      "sha256": "f14ca2245346f7d6f528fef0af1df1e01b8414fa692ebc2ab3f49f22374e2cb2"
+    },
+    {
+      "path": "sources/nilradical-trace/stacks-0DW4.html",
+      "url": "https://stacks.math.columbia.edu/tag/0DW4",
+      "title": "Stacks Project tag0DW4",
+      "used": "Stacks47.20.2: Cohen--Macaulay dualizing complex concentrated in dimension degree.",
+      "bytes": 18374,
+      "sha256": "eb1a4e5af82f1822a267af44fc69123d01df010f2b10594d467d15b8b7f26e97"
+    },
+    {
+      "path": "sources/nilradical-trace/stacks-0DW6.html",
+      "url": "https://stacks.math.columbia.edu/tag/0DW6",
+      "title": "Stacks Project tag0DW6",
+      "used": "Stacks47.21.4: invertible dualizing complex characterizes Gorenstein rings.",
+      "bytes": 30032,
+      "sha256": "e219ef8fa9dec816d1e7c278a9c28933f5d5085707bcc7c2bf961c5bfb098e1f"
+    },
+    {
+      "path": "LOGARITHMIC_PULLBACK_AND_SHARP_DESSIN_CUSP_COVERS.md",
+      "url": "retained:PF2RULED116",
+      "title": "Sealed PF116 input",
+      "used": "Retained PF116 actual logarithmic residue map, sharp finite covers and open local restriction gate.",
+      "bytes": 15571,
+      "sha256": "23ff0ac2afc2b50990c901c4ac03a201ce3fdd4d7cd9945928d05565074e512a"
+    },
+    {
+      "path": "logarithmic_pullback.py",
+      "url": "retained:PF2RULED116",
+      "title": "Sealed PF116 input",
+      "used": "Retained actual m2 finite non-Gorenstein quotient polynomial control.",
+      "bytes": 2891,
+      "sha256": "0d9d2a2d6e970a72c0ef689715612fc3b0a884ba3bdcb093d391f23ea9bdaff1"
+    }
+  ],
+  "primary_HTML_sections_read": true,
+  "fresh_PDF_audit_claimed": false,
+  "CI_trace_generator_imported": true,
+  "finite_dual_base_change_imported": true,
+  "finite_canonical_module_duality_imported": true,
+  "annihilator_and_weighted_trace_and_Reynolds_proofs_written": true,
+  "historical_priority_claimed": false,
+  "formal_verification": false,
+  "external_review": false
+}

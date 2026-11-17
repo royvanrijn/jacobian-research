@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "title": "The Hilbert series of SL2-invariants",
+      "authors": "Cayres Pinto, Herbig, Herden, Seaton",
+      "url": "https://arxiv.org/pdf/1710.02606v3",
+      "import": "Theorem 1.1 equation (3), page 3; remove the trivial summand before applying the formula",
+      "read_via": "primary PDF web extraction and page inspection",
+      "local_copy": false
+    },
+    {
+      "title": "Math 615: Topics in Commutative Algebra, 2020",
+      "author": "Mel Hochster",
+      "url": "https://sites.lsa.umich.edu/hochster/wp-content/uploads/sites/1337/2026/04/615W20.pdf",
+      "import": "Hochster-Roberts polynomial invariant-ring Cohen-Macaulay theorem, pages 124-128; credited to Hochster and Roberts 1974",
+      "read_via": "original author primary PDF web extraction",
+      "local_copy": false
+    }
+  ],
+  "numerical_replay": "The Schur determinant and upper-half-plane residue evaluations independently give 317/230400; the twelve-moment regular-sequence residue is 659043.",
+  "local_copy_boundary": "An executor download of the arXiv PDF returned HTTP403. No local PDF cache is assumed or reconstructed; the original primary web sources were read directly.",
+  "scope": "Classical source imports and exact numeric replay; no independent specialist, external or formal verification. The complete cyclic quotient and first12 moment circuit do not compute global A12 dimension or length."
+}

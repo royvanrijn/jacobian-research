@@ -1,0 +1,64 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "dimension": 1,
+    "parameter_count": 1,
+    "phase_terms": [
+      [
+        [
+          0,
+          1
+        ],
+        "1"
+      ]
+    ]
+  },
+  "cutoff_slope": 3,
+  "cutoff_intercept": 3,
+  "pure_moments_only": false,
+  "ideal_lift": [
+    [
+      [
+        [
+          4
+        ],
+        "1"
+      ]
+    ]
+  ],
+  "method": "constant_phase",
+  "original_generating_moment": {
+    "marker": [
+      0
+    ],
+    "power": 4,
+    "polynomial": [
+      [
+        [
+          4
+        ],
+        "1"
+      ]
+    ]
+  },
+  "retains_ordinary_parameter_ideal": true,
+  "least_generating_prefix": {
+    "least_total_index_prefix": 4,
+    "pure_moment_prefix": false,
+    "finite_membership_trials": [
+      {
+        "total_index_prefix": 4,
+        "full_ideal_generated": true
+      },
+      {
+        "total_index_prefix": 2,
+        "full_ideal_generated": false
+      },
+      {
+        "total_index_prefix": 3,
+        "full_ideal_generated": false
+      }
+    ],
+    "convention": "all forbidden (alpha,m) with |alpha|+m<=prefix; pure mode uses alpha=0"
+  }
+}

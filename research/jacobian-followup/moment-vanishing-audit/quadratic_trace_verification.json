@@ -1,0 +1,48 @@
+{
+  "checker_sha256": "5b562f6b0b8c90d3a08d46fc3ae18ac104abe301f44d524306919254a34d950e",
+  "polynomial_images_sha256": "38129704e081768d4e1b8dbb8dbc8090d31f60f5b1d255bee500c2a1f7bd8c94",
+  "sympy_version": "1.14.0",
+  "cases": {
+    "2O": {
+      "n": 8,
+      "m": 12,
+      "h_degree": 18,
+      "group_order": 48,
+      "branch_polynomial": "F**3*G/36 - 3*G**3",
+      "all_highest_image_derivative_conditions_verified": 8,
+      "nonzero_norm_direct_and_quadratic_trace": "8/15"
+    },
+    "2I": {
+      "n": 12,
+      "m": 20,
+      "h_degree": 30,
+      "group_order": 120,
+      "branch_polynomial": "12*F**5 + G**3/144",
+      "all_highest_image_derivative_conditions_verified": 12,
+      "nonzero_norm_direct_and_quadratic_trace": "25/1092"
+    }
+  },
+  "residue_monomial_controls": 256,
+  "trivial_group_quadratic_trace_controls": 256,
+  "old_circuit_slice_orders_and_leading_coefficients": {
+    "Hopf": [
+      6,
+      "-16*F^4*G^4"
+    ],
+    "normalizer": [
+      20,
+      "4096*F^12*G^12"
+    ]
+  },
+  "imported_implementations_sha256": {
+    "verify_haar_shear_witnesses.py": "e154855aa1e255c2910a0ea657323c6737ba5f1f7cadf2169ef3a8e19195d5d9",
+    "verify_degree12_four_weights.py": "6d8f784b266a069852bac1a2abde295c6e95c29efea8b241d5242661104ab444",
+    "verify_octahedral_minimal_type.py": "ce191d717ee429c17517e261f77ea013988e9920ddc3565be3ff752c9c86cb47"
+  },
+  "completed": true,
+  "universal_torsor_topology_and_trace_proof_machine_verified": false,
+  "all_exceptional_MZ_decisions": "OPEN",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

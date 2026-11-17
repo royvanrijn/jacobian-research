@@ -1,0 +1,10 @@
+{
+  "date":"2026-11-17",
+  "frozen_before_execution":true,
+  "selection":"One known positive control: connected sum of three positive trefoils, with chain meridian presentation <a,b,c,d | aba=bab,bcb=cbc,cdc=dcd> and a literal nine-crossing connected-sum PD",
+  "directions":[[1,0,0],[0,1,0],[0,0,1],[1,1,1]],
+  "homogeneous_functionals":[[0,1,0,0],[2,0,1,0],[2,2,0,0],[1,0,2,1]],
+  "test":"Over F3 form Mi=I4+(vi,0)*Fi. Check rank-one differences, order3, all three braid relations, full functional rank4 and hence zero global fixed space. Rebase each summand to the first meridian using explicit braid conjugators, construct and renumber the literal PD, check every relation, certify a four-seed upper and exact admissible-root nullity4. Enumerate the first three linear parts and all GL3(F3) transvections before any target search.",
+  "limits":{"controls":1,"seconds":60,"linear_group_order_cap":5616,"GL3_matrices":19683,"crossings":9,"seed_trials":126},
+  "scope":"Known composite knot only, not a new MRC case. This is an order3 positive control outside the earlier involutive cover bases and the singular seed-direction architecture omitted by the pinned independent-direction binary/other-field search. No target test until control passes; independent replay required before adoption."
+}

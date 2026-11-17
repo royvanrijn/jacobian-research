@@ -1,0 +1,81 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED141",
+  "sources": [
+    {
+      "path": "../hc4-triangular-graphs/FIRST_SOURCE_DERIVATIVES_AND_FINITE_LATTICE_STABILITY.md",
+      "url": "retained:HC4MYMS0",
+      "used": "Full first-derivative/finite-lattice equivalence, primewise Newton trace test and normalized directional saturation.",
+      "bytes": 12752,
+      "sha256": "d28cb576557607e8a4b65ce3f8bb087732df0733f507290df6e55249fd4c127b"
+    },
+    {
+      "path": "../hc4-triangular-graphs/GENERIC_SOURCE_TRANSLATION_DERIVATIVES_GENERATE_THE_POLYNOMIAL_RING.md",
+      "url": "retained:HC4MYMT0",
+      "used": "Raw polynomial reconstruction in generic source directions, not automatic finite B-module landing.",
+      "bytes": 11019,
+      "sha256": "857505b1345fa809b746f962af0a430dea2a03a9452b003e8f61147db8c3c699"
+    },
+    {
+      "path": "../hc4-triangular-graphs/FULL_NORMALIZATION_ADDITIVE_PENCIL_AND_TRACE_DUAL_STABILIZER.md",
+      "url": "retained:HC4MYLO1",
+      "used": "Actual omega_N=Lambda*Omega and multiplier ring (Lambda:Lambda)=S.",
+      "bytes": 11843,
+      "sha256": "ee6a6a5f59e2a49d1e8f94baed3850e7e42eca650afe65e79a4836ed477fc565"
+    },
+    {
+      "path": "../hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md",
+      "url": "retained:HC4MYKX0/1",
+      "used": "Locally finite/LND target-field descent, and distinction from source-invariant scalar multiplier ideals.",
+      "bytes": 11893,
+      "sha256": "beaced18024b06fc918d9e665929ff2ef4820e3cffa5a18493c5f9ac2bcd53e9"
+    },
+    {
+      "path": "SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md",
+      "url": "retained:PF2RULED52",
+      "used": "Whole-line affine-linear target-function obstruction and F intersection R=B.",
+      "bytes": 11010,
+      "sha256": "553f95d8c66f8354d1c475bc2eb916f0b63c356d86466bd8603f8ef62452ceeb"
+    },
+    {
+      "path": "COORDINATE_POLE_AND_REGULAR_SECTOR.md",
+      "url": "retained:PF2RULED38",
+      "used": "All polynomial source-coordinate negative pole orders are multiples of the intrinsic minimum.",
+      "bytes": 14092,
+      "sha256": "c261596ce7b51fb44be7eaf4a0554d884822516497c8e1a979cfab09a49b7876"
+    },
+    {
+      "path": "UNRAMIFIED_PACKET_AND_OREVKOV_GATE.md",
+      "url": "retained:PF2RULED46",
+      "used": "Sections6-7 exact unramified chart has intrinsic complementary pole>=2.",
+      "bytes": 20494,
+      "sha256": "ab3d49c55d52cb0af79a15265b6f5b516c404cdbf5f4a52429c7dd5b1c505784"
+    },
+    {
+      "path": "../jc2-omitted-divisors/ADMISSIBLE_INVERSE.md",
+      "url": "retained:PF2OMIT3",
+      "used": "Sections1-4 complete source-finite primitive inverse, coefficient ideal1 and leading pole charge sum q*f.",
+      "bytes": 15297,
+      "sha256": "ec45660c3815ecd5e41e6e08490f74277ef93c4c6105fe73499e295012c9d616"
+    },
+    {
+      "path": "COMPLETELY_MISSED_INTERMEDIATE_LINES_AND_SOURCE_IMAGE_EULER_BUDGET.md",
+      "url": "retained:PF2RULED140",
+      "used": "Distinguish the full nonproper divisor from completely missed source-image curves or finite point gaps.",
+      "bytes": 11053,
+      "sha256": "e959ae6b686eb6c7d140ace4661bafd6a1d6f272962aa38d849470dffffa1d79"
+    },
+    {
+      "path": "sources/source-velocity-multipliers/source-review.json",
+      "url": "local:source-review",
+      "used": "Exact divergence, all-boundary, primitive-inverse and nonclosure audit.",
+      "bytes": 1857,
+      "sha256": "385531c305fc4cd39695ed5ea70153d578da954ea4ff775c235750dc48dfc34f"
+    }
+  ],
+  "new_external_theorem_import": false,
+  "new_primary_downloads": 0,
+  "registered_predecessor_mathematical_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

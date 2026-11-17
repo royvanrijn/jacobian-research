@@ -1,0 +1,22 @@
+{
+  "claim": "G34MINIMAL20261114",
+  "completed": true,
+  "checker_sha256": "57b93f77b312804dc2bce2066aab32c6b051e3def82d52ec74d166f6ba8c578c",
+  "certificate_sha256": "fe46cfd4cec299770eade67bafeed3f6aa4e5d9f74f456fb37a67d4ec67d6be0",
+  "minimal_component_counts": [
+    9,
+    9
+  ],
+  "degrees": [
+    720,
+    720
+  ],
+  "reduced_degrees": [
+    33,
+    48
+  ],
+  "section_kernel_length": 18,
+  "section_origin_torsion_lower_bound": 1635,
+  "elapsed_seconds": 7.413993561989628,
+  "assurance": "Written geometric/orbit/flat-locus proofs and exact symbolic/CAS checks. Full N=3,4 associated-prime lists, primary decompositions and global nilradical indices remain open. The generic null-section has exactly seven associated primes but its full intrinsic origin torsion remains unknown. No result is inferred from a timed-out basis/colon run. No independent replay, external review or formal verification."
+}

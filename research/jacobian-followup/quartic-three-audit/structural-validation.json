@@ -1,0 +1,89 @@
+{
+  "status": "pass",
+  "source_sha256": "4c091a29414de6d046d07c69cb7835d4b9f8523031d4b0bfe44861fe179f47a3",
+  "paper_html_sha256": "04dfa22c70f97783543eb1a011d90e4d4b9f4fb8f7af394ef6969c1aa491ca29",
+  "helper_sha256": "416d41564e2979c1e5c22189f12aa00ceee74f6ee31a7d31a38633cf5515a2b6",
+  "sympy_version": "1.14.0",
+  "identities": [
+    "binary-leading-s0",
+    "binary-leading-s1",
+    "common-quadratic-factor-adjugate-and-top-z",
+    "all-four-cubic-critical-eliminant-leading-coefficients-and-Nagata-inverse",
+    "exceptional-rational-slice-and-proportional-invariant-leading-cancellation"
+  ],
+  "degree5_exceptional_cases": [
+    {
+      "m": 1,
+      "n": 1,
+      "p_degree_at_most": 4,
+      "q_degree_at_most": 4,
+      "closed_by": "affine-pair"
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "p_degree_at_most": 3,
+      "q_degree_at_most": 4,
+      "closed_by": "quadratic-affine-fibre-factor-or-affine-target-reduction"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "p_degree_at_most": 3,
+      "q_degree_at_most": 3,
+      "closed_by": "equal-degree-constant-shear-or-constant-leading"
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "p_degree_at_most": 2,
+      "q_degree_at_most": 4,
+      "closed_by": "ratio-fibre-factor-or-UFD-degree-contradiction"
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "p_degree_at_most": 2,
+      "q_degree_at_most": 3,
+      "closed_by": "ratio-fibre-factor-or-UFD-degree-contradiction"
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "p_degree_at_most": 2,
+      "q_degree_at_most": 2,
+      "closed_by": "equal-degree-constant-shear-or-constant-leading"
+    },
+    {
+      "m": 4,
+      "n": 1,
+      "p_degree_at_most": 1,
+      "q_degree_at_most": 4,
+      "closed_by": "ratio-fibre-factor-or-UFD-degree-contradiction"
+    },
+    {
+      "m": 4,
+      "n": 2,
+      "p_degree_at_most": 1,
+      "q_degree_at_most": 3,
+      "closed_by": "ratio-fibre-factor-or-UFD-degree-contradiction"
+    },
+    {
+      "m": 4,
+      "n": 3,
+      "p_degree_at_most": 1,
+      "q_degree_at_most": 2,
+      "closed_by": "ratio-fibre-factor-or-UFD-degree-contradiction"
+    },
+    {
+      "m": 4,
+      "n": 4,
+      "p_degree_at_most": 1,
+      "q_degree_at_most": 1,
+      "closed_by": "equal-degree-constant-shear-or-constant-leading"
+    }
+  ],
+  "all_positive_z_degree_pairs_through_total5_covered": true,
+  "scope": "Exact algebraic controls for the written quartic source audit and the separate degree5 exceptional-scalar extension. Geometric residue periods, UFD/field arguments and universal case proof remain written, not formalized. No full arbitrary coefficient search or global simplicity optimum claimed.",
+  "seconds": 1.129
+}

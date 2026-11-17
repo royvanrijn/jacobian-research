@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "certificates": 243,
+  "field_counts": {
+    "3": 67,
+    "5": 176
+  },
+  "rejected_corruptions": [
+    "matrix",
+    "seeds",
+    "identity"
+  ],
+  "input_sha256": {
+    "sources/current13/data/certificates.json": "2db153c6153c2301c973b8d4044f6fc8a62885143ac7be0c5c7e9e86cbe7e5c1",
+    "verify_current13.py": "7c0afa1981be8f544db6f1c2dd1c634b36c2d5cadc398477939107038285bf10",
+    "sources/current13/manifest.json": "efecf0543ffe588f85fcdfe496677ace2d3fd135795b59834c949cc625b0086f"
+  },
+  "claim_boundary": "Separate standard-library replay of algebra and four-seed upper certificates passes. PD-to-knot-name identity and the October KnotInfo uncertainty entries are imported from the pinned authors' release, not checked against an independent current KnotInfo copy. Not a full paper audit or priority certification."
+}

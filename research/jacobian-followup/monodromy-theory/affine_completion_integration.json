@@ -1,0 +1,28 @@
+{
+  "previous_goal_turn": "progress",
+  "evidence": "Previous proof files, KMFI1--4, original 197-check replay and ledger changes revalidated from current state.",
+  "new_claim_ids": [
+    "KMFI5",
+    "KMFI6",
+    "KMFI7",
+    "KMFI8"
+  ],
+  "changed_claim_ids": [
+    "OP-KMON"
+  ],
+  "preexisting_entries_preserved_without_change": 1789,
+  "preexisting_entry_count": 1790,
+  "scope_fingerprints": {
+    "OP-KMON": "97f803a628e7a31f",
+    "KMFI5": "bca89bc65e7b7613",
+    "KMFI6": "4c8316c767ce1872",
+    "KMFI7": "6c43788276ebcc53",
+    "KMFI8": "3b8c744969aaf855"
+  },
+  "updated_lesson_id": "METHOD-KELLER-AFFINE-INERTIA",
+  "updated_work_id": "WORK-KMON",
+  "curve_first_natural_PSL2_11_completion": "excluded",
+  "abstract_natural_PSL2_11_action": "open",
+  "classification_complete": false,
+  "goal_status": "active"
+}

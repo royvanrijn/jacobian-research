@@ -1,0 +1,788 @@
+{
+  "cancellation": [
+    {
+      "precision": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "coefficient_ring": "QQ[e]",
+      "f": "2*e*t*x*y**2 - e*y**2 + e + 3*t**2*x**2*y + t**2*y**3 + 3*t*x**3 + 2*t*x**2*y**2 + t*x*y**2 - t*x*y - x**2 - x*y**2 + x + 1",
+      "g": [
+        "2*e*t*x**2*y**2 - e*x*y**2 + e*x + t**2*y + 2*t*x**3*y + 2*t*x*y**2 + t*x - x**2*y - y**2 + 1",
+        "-3*e*t*x**3*y - e*t*x*y**3 + e*t*y + e*x**2*y - e*y - 3*t*x**4 - t*x**2*y**2 - 3*t*x**2*y + t*x*y - t*y**3 + x**3 + x*y - 2*x"
+      ],
+      "cancelled": [
+        "t*y + x",
+        "e*y + x*y"
+      ],
+      "skew_contraction": [
+        [
+          "0",
+          "e*x*y + x**2 + y"
+        ],
+        [
+          "-e*x*y - x**2 - y",
+          "0"
+        ]
+      ]
+    },
+    {
+      "precision": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "coefficient_ring": "QQ[e]",
+      "f": "2*e*t*x*y**2 - e*x*y + e + 3*t**2*x**2*y + t**2*y**3 + 3*t*x**3 + 2*t*x**2*y**2 + t*x*y**2 - t*y**2 - x**2*y - x*y + x + 1",
+      "g": [
+        "2*e*t*x**2*y**2 - e*x**2*y + e*x + t**2*y + 2*t*x**3*y + 2*t*x*y**2 + t*x - x**3 - x*y + 1",
+        "-3*e*t*x**3*y - e*t*x*y**3 + e*t*y + e*x*y**2 - e*y - 3*t*x**4 - t*x**2*y**2 - 3*t*x**2*y + t*x*y - t*y**3 + x**2*y - 2*x + y**2"
+      ],
+      "cancelled": [
+        "t*y + x",
+        "e*y + x*y"
+      ],
+      "skew_contraction": [
+        [
+          "0",
+          "e*x*y + x**2 + y"
+        ],
+        [
+          "-e*x*y - x**2 - y",
+          "0"
+        ]
+      ]
+    },
+    {
+      "precision": [
+        [
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "coefficient_ring": "QQ[e]/e^2",
+      "f": "2*e*t**2*x*y + 2*e*t*x**2 + 2*e*t*x*y**2 - e*x*y - 3*e*y**2 + e + t**2*y**3 + 2*t*x**2*y**2 + t*x*y**2 - 2*t*x*y - t*y**2 - x**2*y - 2*x**2 - 3*x*y**2 - x*y + x + 1",
+      "g": [
+        "2*e*t*x**2*y**2 - e*x**2*y - 3*e*x*y**2 + e*x + t**2*y + 2*t*x**3*y + 2*t*x*y**2 + t*x - x**3 - 3*x**2*y - x*y - 3*y**2 + 1",
+        "-2*e*t*x**3 - e*t*x*y**3 - 2*e*t*x*y + e*t*y + 2*e*x**2*y + e*x*y**2 - e*y - t*x**2*y**2 + t*x*y - t*y**3 + 2*x**3 + x**2*y + 2*x*y - 2*x + y**2"
+      ],
+      "cancelled": [
+        "t*y + x",
+        "e*y + x*y"
+      ],
+      "skew_contraction": [
+        [
+          "0",
+          "e*x*y + x**2 + y"
+        ],
+        [
+          "-e*x*y - x**2 - y",
+          "0"
+        ]
+      ]
+    }
+  ],
+  "principal_parts": [
+    {
+      "denominator_power": 1,
+      "amplitude": "t*x + 1",
+      "original_phase": "e*x + x**2",
+      "jets": [
+        "1"
+      ],
+      "principal_part": "1/t"
+    },
+    {
+      "denominator_power": 2,
+      "amplitude": "t*x + 1",
+      "original_phase": "e*x + x**2",
+      "jets": [
+        "1",
+        "1"
+      ],
+      "principal_part": "1/t + t**(-2)"
+    },
+    {
+      "denominator_power": 4,
+      "amplitude": "t*x + 1",
+      "original_phase": "e*x + x**2",
+      "jets": [
+        "1",
+        "1",
+        "e + 3/2",
+        "3*e + 5/2"
+      ],
+      "principal_part": "3*e/t + e/t**2 + 5/(2*t) + 3/(2*t**2) + t**(-3) + t**(-4)"
+    }
+  ],
+  "genuine_away_origin_kernel": {
+    "phase": "x^2/2",
+    "nonzero_class": "[x]",
+    "annihilator": "t-1",
+    "derivative": "[x^3/2]",
+    "actual_period": "0",
+    "nonzero_proof": "Highest x-degree in nabla(g)=x forces g=1/(t-1), impossible in QQ[t,x]."
+  },
+  "Euler_point_tests": [
+    {
+      "b": "z + 1",
+      "A": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          "-1"
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          "-1"
+        ]
+      ],
+      "L": [
+        [
+          [
+            0,
+            0
+          ],
+          "-1"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "-3"
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          "-1"
+        ]
+      ],
+      "tested_indices": 6
+    },
+    {
+      "b": "(2*z + 1)*(2*z + 3)",
+      "A": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          "-3"
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          "-12"
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          "-4"
+        ]
+      ],
+      "L": [
+        [
+          [
+            0,
+            0
+          ],
+          "-3"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "-27"
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          "-24"
+        ],
+        [
+          [
+            3,
+            3
+          ],
+          "-4"
+        ]
+      ],
+      "tested_indices": 6
+    },
+    {
+      "b": "(3*z + 2)*(9*z + 3)",
+      "A": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          "-6"
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          "-54"
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          "-27"
+        ]
+      ],
+      "L": [
+        [
+          [
+            0,
+            0
+          ],
+          "-6"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "-114"
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          "-135"
+        ],
+        [
+          [
+            3,
+            3
+          ],
+          "-27"
+        ]
+      ],
+      "tested_indices": 6
+    },
+    {
+      "b": "z*(z + 1)",
+      "A": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          "-2"
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          "-1"
+        ]
+      ],
+      "L": [
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "-4"
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          "-5"
+        ],
+        [
+          [
+            3,
+            3
+          ],
+          "-1"
+        ]
+      ],
+      "tested_indices": 6
+    },
+    {
+      "b": "(z - 2)*(z + 1)",
+      "A": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          "2"
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          "-1"
+        ]
+      ],
+      "L": [
+        [
+          [
+            0,
+            0
+          ],
+          "2"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "2"
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          "-3"
+        ],
+        [
+          [
+            3,
+            3
+          ],
+          "-1"
+        ]
+      ],
+      "tested_indices": 6
+    }
+  ],
+  "terminating": [
+    {
+      "b": "z*(z + 1)",
+      "first_root": 0,
+      "actual_polynomial": "1",
+      "source_generic_rank": 3,
+      "actual_rank": 1,
+      "source_kernel": "S_b",
+      "splitting_vector": "e-h*[A_b]"
+    },
+    {
+      "b": "(z - 2)*(z + 1)",
+      "first_root": 2,
+      "actual_polynomial": "4*t**2 - 2*t + 1",
+      "source_generic_rank": 3,
+      "actual_rank": 1,
+      "source_kernel": "S_b",
+      "splitting_vector": "e-h*[A_b]"
+    }
+  ],
+  "global_models": [
+    {
+      "b": "z + 1",
+      "poles": [
+        "1"
+      ],
+      "rank": 2,
+      "length": 2,
+      "characteristic_cycle": [
+        2,
+        2
+      ],
+      "boundary_delta0": 1,
+      "quotient_global_semisimple": true,
+      "origin_minimal": true,
+      "unit_essential": true,
+      "relations": [
+        "D e0=0",
+        "(1-(1)*t*(z + 1)(theta)) e1=e0"
+      ]
+    },
+    {
+      "b": "4*z**2 + 8*z + 3",
+      "poles": [
+        "1",
+        "2"
+      ],
+      "rank": 5,
+      "length": 3,
+      "characteristic_cycle": [
+        5,
+        6
+      ],
+      "boundary_delta0": 1,
+      "quotient_global_semisimple": true,
+      "origin_minimal": true,
+      "unit_essential": true,
+      "relations": [
+        "D e0=0",
+        "(1-(1)*t*(4*z**2 + 8*z + 3)(theta)) e1=e0",
+        "(1-(2)*t*(4*z**2 + 8*z + 3)(theta)) e2=e0"
+      ]
+    },
+    {
+      "b": "27*z**2 + 27*z + 6",
+      "poles": [
+        "1",
+        "-1"
+      ],
+      "rank": 5,
+      "length": 3,
+      "characteristic_cycle": [
+        5,
+        6
+      ],
+      "boundary_delta0": 1,
+      "quotient_global_semisimple": true,
+      "origin_minimal": true,
+      "unit_essential": true,
+      "relations": [
+        "D e0=0",
+        "(1-(1)*t*(27*z**2 + 27*z + 6)(theta)) e1=e0",
+        "(1-(-1)*t*(27*z**2 + 27*z + 6)(theta)) e2=e0"
+      ]
+    }
+  ],
+  "pullback_symbolic_point_indices": 6,
+  "pullback_glue": [
+    {
+      "nu": 1,
+      "rank": 2,
+      "boundary_dimension": 0,
+      "principal_part_row": [
+        1
+      ],
+      "kernel_columns": [
+        []
+      ],
+      "original_polynomial_boundary_markers": [],
+      "origin_minimal": true,
+      "unit_essential": true,
+      "indecomposable": true
+    },
+    {
+      "nu": 2,
+      "rank": 4,
+      "boundary_dimension": 1,
+      "principal_part_row": [
+        1,
+        1
+      ],
+      "kernel_columns": [
+        [
+          1
+        ],
+        [
+          -1
+        ]
+      ],
+      "original_polynomial_boundary_markers": [
+        "T*Z**4 - 4*T*Z**3 + 6*T*Z**2 - 4*T*Z + T"
+      ],
+      "origin_minimal": false,
+      "unit_essential": false,
+      "indecomposable": true
+    },
+    {
+      "nu": 3,
+      "rank": 6,
+      "boundary_dimension": 2,
+      "principal_part_row": [
+        1,
+        1,
+        1
+      ],
+      "kernel_columns": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "original_polynomial_boundary_markers": [
+        "T*Z**6 - 7*T*Z**5 + 20*T*Z**4 - 30*T*Z**3 + 25*T*Z**2 - 11*T*Z + 2*T",
+        "T*Z**6 - 6*T*Z**5 + 15*T*Z**4 - 20*T*Z**3 + 15*T*Z**2 - 6*T*Z + T"
+      ],
+      "origin_minimal": false,
+      "unit_essential": false,
+      "indecomposable": true
+    }
+  ],
+  "power_packets": [
+    {
+      "power": 2,
+      "original_poles": [
+        1
+      ],
+      "folded_poles": [
+        "1"
+      ],
+      "model": {
+        "b": "4*z + 2",
+        "poles": [
+          "1"
+        ],
+        "rank": 2,
+        "length": 2,
+        "characteristic_cycle": [
+          2,
+          2
+        ],
+        "boundary_delta0": 1,
+        "quotient_global_semisimple": true,
+        "origin_minimal": true,
+        "unit_essential": true,
+        "relations": [
+          "D e0=0",
+          "(1-(1)*t*(4*z + 2)(theta)) e1=e0"
+        ]
+      }
+    },
+    {
+      "power": 3,
+      "original_poles": [
+        1
+      ],
+      "folded_poles": [
+        "1"
+      ],
+      "model": {
+        "b": "27*z**2 + 27*z + 6",
+        "poles": [
+          "1"
+        ],
+        "rank": 3,
+        "length": 2,
+        "characteristic_cycle": [
+          3,
+          3
+        ],
+        "boundary_delta0": 1,
+        "quotient_global_semisimple": true,
+        "origin_minimal": true,
+        "unit_essential": true,
+        "relations": [
+          "D e0=0",
+          "(1-(1)*t*(27*z**2 + 27*z + 6)(theta)) e1=e0"
+        ]
+      }
+    },
+    {
+      "power": 5,
+      "original_poles": [
+        1
+      ],
+      "folded_poles": [
+        "1"
+      ],
+      "model": {
+        "b": "3125*z**4 + 6250*z**3 + 4375*z**2 + 1250*z + 120",
+        "poles": [
+          "1"
+        ],
+        "rank": 5,
+        "length": 2,
+        "characteristic_cycle": [
+          5,
+          5
+        ],
+        "boundary_delta0": 1,
+        "quotient_global_semisimple": true,
+        "origin_minimal": true,
+        "unit_essential": true,
+        "relations": [
+          "D e0=0",
+          "(1-(1)*t*(3125*z**4 + 6250*z**3 + 4375*z**2 + 1250*z + 120)(theta)) e1=e0"
+        ]
+      }
+    },
+    {
+      "power": 2,
+      "original_poles": [
+        1,
+        -1
+      ],
+      "folded_poles": [
+        "1"
+      ],
+      "model": {
+        "b": "4*z + 2",
+        "poles": [
+          "1"
+        ],
+        "rank": 2,
+        "length": 2,
+        "characteristic_cycle": [
+          2,
+          2
+        ],
+        "boundary_delta0": 1,
+        "quotient_global_semisimple": true,
+        "origin_minimal": true,
+        "unit_essential": true,
+        "relations": [
+          "D e0=0",
+          "(1-(1)*t*(4*z + 2)(theta)) e1=e0"
+        ]
+      }
+    },
+    {
+      "power": 3,
+      "original_poles": [
+        1,
+        -1
+      ],
+      "folded_poles": [
+        "-1",
+        "1"
+      ],
+      "model": {
+        "b": "27*z**2 + 27*z + 6",
+        "poles": [
+          "-1",
+          "1"
+        ],
+        "rank": 5,
+        "length": 3,
+        "characteristic_cycle": [
+          5,
+          6
+        ],
+        "boundary_delta0": 1,
+        "quotient_global_semisimple": true,
+        "origin_minimal": true,
+        "unit_essential": true,
+        "relations": [
+          "D e0=0",
+          "(1-(-1)*t*(27*z**2 + 27*z + 6)(theta)) e1=e0",
+          "(1-(1)*t*(27*z**2 + 27*z + 6)(theta)) e2=e0"
+        ]
+      }
+    }
+  ],
+  "decimation_zero_rescued_by_original_derivative_marker": true,
+  "rejections": [
+    "invalid t-divisibility premise",
+    "constant b",
+    "terminating recurrence substituted",
+    "zero pole",
+    "unfolded duplicate pole",
+    "damaged rank",
+    "damaged boundary_delta0",
+    "damaged quotient_global_semisimple",
+    "damaged unit_essential",
+    "damaged relations"
+  ],
+  "universal_claims_use_written_proofs": true,
+  "actual_image_kernel_computed": false
+}

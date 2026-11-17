@@ -1,0 +1,314 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Qb}{\overline{\mathbb Q}}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Lfac}{\mathcal L}
+\title{Two angular coordinates: a rank-two comparison and integer-Gamma families}
+\author{Internal proof and exact certificates; no priority claim}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Result and provenance.}
+The pencil theorem in \href{SIMPLEX_PENCILS_AND_AFFINE_LIMITS.tex}{the preceding note}
+does not cover a general phase in two angular coordinates. Here we prove a
+specific two-coordinate comparison directly, and use a good-reduction test
+to obtain a degree-four factorial/Gamma family in every dimension, for
+every positive integer shape vector. All sufficiently large moments survive
+at the stated algebraic scales, despite arbitrary complex lower terms.
+
+The comparison mechanism is credited to Long--Le Blanc,
+\href{sources/long-eit-v-current.tex}{EIT V, linear criterion and strict-extremum lemma},
+at commit \texttt{92db79eedeb064694ff20e9201d73fc2bc0857f4}.
+Their \href{sources/long-eit-vi-current.tex}{EIT VI} already proves odd-degree
+and quartic factorial families, including a different all-dimensional
+characteristic-five argument. We do not claim these general ideas or the
+original families as new. Our cubic calculation replaces V's geometric
+irreducibility input by an elementary rational Riccati obstruction and
+uses reduction at $h=0$ for all three integer shape exponents at once.
+Thus this note does not depend on the unreviewed stronger Galois,
+boundary-field independence, saddle-continuation or multicolumn claims.
+The arithmetic external input is Beukers' ordinary-point linear lifting,
+already checked in \href{LONG_EIT_AND_FC2_AUDIT.tex}{the EIT I audit}.
+This is an internal written proof, not independent specialist review or
+formal verification. No novelty claim is made.
+
+\section{A free polynomial twisted quotient}
+Set
+\[
+ q(X,Y)=X^3-3X+Y^2,\qquad
+ T=\{0\le X\le2,\ |Y|\le1-X/2\},\qquad h=1/z.
+\]
+Use the additive quotient by
+\[
+ D_X=h\partial_X+3(X^2-1),\qquad D_Y=h\partial_Y+2Y.
+\]
+This is a quotient of vector spaces, not a quotient algebra. For every
+$r\in\Qb[X,Y]$ there are unique $a_r,b_r\in\Qb[h]$ and some polynomial
+$P_r,Q_r\in\Qb[h,X,Y]$ such that
+\[
+ r=a_r(h)+b_r(h)X+D_XP_r+D_YQ_r.                 \tag{1}
+\]
+For rational amplitudes with denominators supported at $2,3$, all these
+polynomials belong to $\mathbb Z[1/6,h,X,Y]$. Indeed the recursions are
+\begin{align*}
+ N(X^u)&=N(X^{u-2})-\frac{h(u-2)}3N(X^{u-3})&& (u\ge2),\\
+ N(Y^v)&=-\frac{h(v-1)}2N(Y^{v-2})&& (v\ge1),
+\end{align*}
+with $N(1)=1$, $N(X)=X$ and zero-coefficient terms omitted. They follow by
+subtracting $D_X(X^{u-2}/3)$ or $D_Y(Y^{v-1}/2)$. The two one-variable
+reductions commute. Their tensor product annihilates $D_XP+D_YQ$ and fixes
+$1,X$, proving uniqueness, including after every specialization $h=1/\xi$
+with $\xi\ne0$. At $h=0$ it is precisely reduction modulo
+$(X^2-1,Y)$.
+
+Writing $U_0(z)=\int_Te^{zq}\,dX\,dY$ and
+$U_1(z)=\int_TXe^{zq}\,dX\,dY$, Stokes gives
+\[
+ \int_T r e^{zq}=a_r(1/z)U_0+b_r(1/z)U_1+
+ h\int_{\partial T}e^{zq}(P_r\,dY-Q_r\,dX).       \tag{2}
+\]
+No spatial denominator or extra boundary is introduced.
+
+\section{Elementary irreducibility and actual comparison}
+Direct instances of (1) give
+\begin{align*}
+ q&=-5h/6-2X+D_X(X/3)+D_Y(Y/2),\\
+ qX&=-2-7hX/6+D_X((X^2-2)/3)+D_Y(XY/2).
+\end{align*}
+Consequently the actual column $U=(U_0,U_1)^t$ satisfies
+\[
+ U'=A(z)U+\text{actual boundary forcing},\qquad
+ A(z)=\begin{pmatrix}-5/(6z)&-2\\-2&-7/(6z)\end{pmatrix}. \tag{3}
+\]
+The scalar equation for the first coordinate of the homogeneous system is
+\[
+ u''+\frac2z u'+\left(\frac5{36z^2}-4\right)u=0.
+\]
+The rational gauge $v=zu$ changes this to
+$v''=(4-5/(36z^2))v$.
+
+\begin{lemma}\label{lem:irred}
+The coefficient differential module in (3) is irreducible over $\C(z)$.
+\end{lemma}
+\begin{proof}
+The first coordinate is cyclic, since the off-diagonal entry is $-2$.
+A factorization of its second-order scalar operator would give a rational
+Riccati solution
+\[
+ w'+w^2=4-5/(36z^2).
+\]
+At a finite nonzero pole, comparison of the leading terms forces a simple
+pole with residue $1$. At zero a pole is necessary, is simple, and its
+residue $\rho$ satisfies $\rho(\rho-1)=-5/36$, so
+$\rho=1/6$ or $5/6$. At infinity the polynomial part of $w$ is the
+constant $2$ or $-2$. If $w=\pm2+b/z+O(z^{-2})$, the coefficient of $1/z$
+in the Riccati equation gives $b=0$. But partial fractions give
+$b=\rho+k$ for the number $k\ge0$ of other finite poles, a contradiction.
+Thus the operator has no first-order factor; the rank-two module is simple.
+\end{proof}
+
+Let $\mathcal N_b$ be the $\C(z)$-span of all actual polynomial-amplitude
+integrals on the three specified edges, together with their endpoint
+exponentials. This span is finite dimensional and differential. On the
+vertical edge the phase is $Y^2$; on the other edges, parametrized by $X$,
+it is $g(X)=X^3+X^2/4-4X+1$. Ordinary one-variable division by
+$\partial_s+zp'(s)$ reduces amplitudes to degree at most $\deg p-2$,
+and an exact term gives the endpoint exponentials. The resulting closed
+boundary system has coefficients in $\Q[z,z^{-1}]$. In particular there
+are no finite poles except zero. Put $\mathcal N=\mathcal N_b+\C(z)$,
+so the constant function $1$ is included.
+
+The integration map from the coefficient module to meromorphic functions
+modulo $\mathcal N_b$ is a differential map by (3). It is nonzero:
+\[
+ q+2=(X-1)^2(X+2)+Y^2
+\]
+shows a unique minimum $-2$ at the interior point $(1,0)$. Its minimum $d$
+on the compact specified boundary satisfies $d>-2$. For large positive $s$,
+every $B\in\mathcal N_b$ obeys $|B(-s)|\le Cs^N e^{-ds}$, whereas a small
+positive-area sublevel neighborhood gives
+$U_0(-s)\ge A_\epsilon e^{(2-\epsilon)s}$ for $0<\epsilon<d+2$.
+Thus $U_0\notin\mathcal N_b$. Lemma~\ref{lem:irred} makes the map injective.
+Its rank-two simple image intersects the differential module
+$(\mathcal N_b+\C(z))/\mathcal N_b$, of rank at most one, trivially.
+Hence the map stays injective modulo $\mathcal N$.
+
+The interior coordinates, the reduced edge moments, their endpoint
+exponentials and $1$ form a closed vector of entire $E$-functions over
+$\Q[z,z^{-1}]$. To check the arithmetic condition directly, parametrize
+$T$ by $X=2u$, $Y=(1-u)(2v-1)$ on $[0,1]^2$, with Jacobian $4(1-u)$.
+Each Taylor coefficient before division by $m!$ is an algebraic integral
+of a polynomial of degree $O(m)$. Common denominators through index $m$
+divide $c^{m+1}\operatorname{lcm}(1,\ldots,Cm+C_0)^2$ for fixed integers,
+and the conjugate sizes grow exponentially. The edges have the same
+one-variable property. This verifies the $E$-function requirements.
+
+At every nonzero algebraic $\xi$ the whole system is ordinary. Beukers'
+\href{https://arxiv.org/html/math/0405549}{Theorem 3.2 and Lemma 3.1}
+lift a numerical linear relation to a rational relation regular at $\xi$
+with the prescribed specialization, also for dependent coordinate lists.
+Every such functional relation has its two interior coefficients identically
+zero by the preceding injectivity. We have therefore proved:
+
+\begin{theorem}\label{thm:linear}
+At every $\xi\in\Qb^\times$, $U_0(\xi),U_1(\xi)$ are linearly independent
+over $\Qb$ modulo the algebraic span of the specified boundary values and
+$1$. For every polynomial amplitude $r\in\Qb[X,Y]$,
+\[
+ (a_r(1/\xi),b_r(1/\xi))\ne(0,0)
+ \quad\Longrightarrow\quad \int_T r e^{\xi q}\notin\Qb.
+\]
+A zero remainder only puts the integral in the boundary span. It makes
+no zero-period assertion.
+\end{theorem}
+
+For example at $\xi=1$, $r=1+2Y^2$ has zero specialized remainder because
+$r=(\partial_Y+2Y)Y$. Its integral is strictly positive. This is a
+countercontrol to discarding the actual boundary term in (2).
+
+\section{All three integer shape exponents at once}
+The barycentric coordinates of $T$, in the order of vertices
+$(0,-1),(0,1),(2,0)$, are
+\[
+ u=(2-X-2Y)/4,\qquad v=(2-X+2Y)/4,\qquad w=X/2.
+\]
+At the critical point $(1,0)$ they equal $(1/4,1/4,1/2)$, all units
+modulo five. For nonnegative integers $a,b,c$, let $r_{abc}=u^av^bw^c$.
+Its remainder lies in $\mathbb Z[1/6,h]^2$, and at $h=0$
+\[
+ a_{r_{abc}}(0)+b_{r_{abc}}(0)=r_{abc}(1,0)=4^{-a-b}2^{-c}. \tag{4}
+\]
+In particular it is a unit at five, independently of all three exponents.
+
+\begin{theorem}\label{thm:all-shapes}
+Let $\xi\ne0$ be algebraic. If $v_{\mathfrak p}(\xi)<0$ at some place
+above five, then for every $a,b,c\ge0$,
+\[
+ \int_T u^av^bw^c e^{\xi q}\,dX\,dY\notin\Qb,
+ \qquad\text{in particular it is nonzero.}
+\]
+\end{theorem}
+\begin{proof}
+At that place $h=1/\xi$ reduces to zero. All normal-form coefficients are
+integral there. If both specialized remainder coordinates were zero,
+reduction and (4) would contradict a nonzero residue. Apply
+Theorem~\ref{thm:linear}. This is an all-exponent argument, not an
+extrapolation from tests. It uses a strictly negative valuation; no claim
+at every five-adic integral scale is inferred.
+\end{proof}
+
+Examples are $\xi=Ni/5$ for any integer $N$ not divisible by five, including
+arbitrarily large imaginary scales. The executable certificate tests a
+sufficient and necessary condition for the existence of such a place:
+the monic minimal polynomial over $\Q$ has a coefficient nonintegral at
+five. Indeed all conjugate roots are integral in $\overline{\Q}_5$ if and
+only if its monic coefficients are integral. A failed test means only
+that this arithmetic criterion is unavailable.
+
+For a fixed triple $a,b,c$, its polynomial remainder vector is not
+identically zero by (4). Thus the common-zero exceptional set
+\[
+ E_{abc}=\{\xi\in\C^\times:
+          a_{r_{abc}}(1/\xi)=b_{r_{abc}}(1/\xi)=0\}
+\]
+is finite and algebraic. Every member is integral at every place above
+five. Outside this set every algebraic scale has a nonzero period by
+Theorem~\ref{thm:linear}. Emptiness of all $E_{abc}$ is not asserted.
+
+\section{Factorial, Gamma and Gaussian consequences}
+Let $Y_j$ be independent $\operatorname{Gamma}(\alpha_j,1)$ variables,
+with $\alpha_j>0$, and partition their indices into three nonempty blocks.
+Write their sums as $B_1,B_2,B_3$, their shape sums as $A_1,A_2,A_3$, and
+$S=B_1+B_2+B_3$, $A=A_1+A_2+A_3$. Assume the \emph{three block shape sums}
+$A_1,A_2,A_3$ are positive integers. In particular every positive integer
+individual shape vector is allowed. Put
+\[
+ G=8B_3^3-6B_3S^2+(B_2-B_1)^2S.
+\]
+The angular variables $(B_1/S,B_2/S,B_3/S)$ have Dirichlet shapes
+$(A_1,A_2,A_3)$, and
+$G/S^3=q(2B_3/S,(B_2-B_1)/S)$.
+
+\begin{corollary}\label{cor:family}
+For $D\ge4$, an algebraic $\xi\ne0$ with a negative valuation at a place
+above five, and any complex polynomial $R$ of degree at most $D-2$, set
+\[
+ F=S^D+D\xi S^{D-4}G+R.
+\]
+Then every sufficiently large $m$ satisfies $\mathbb E[F^m]\ne0$.
+The same holds at $\xi=0$. This gives factorial families for every $n\ge3$,
+in degree four already, for any partition into three nonempty blocks.
+\end{corollary}
+\begin{proof}
+The integer-total-shape radial limit proved in the preceding note gives
+\[
+ \frac{\mathbb E[F^m]}{(A)_{Dm}}
+ \longrightarrow \mathbb E_{\operatorname{Dir}(A_1,A_2,A_3)}e^{\xi q}
+ =\frac{\Gamma(A)}{4\Gamma(A_1)\Gamma(A_2)\Gamma(A_3)}
+ \int_Tu^{A_1-1}v^{A_2-1}w^{A_3-1}e^{\xi q}\,dX\,dY.
+\]
+The radial expansion only needs total shape $A\ge1$; its domination and
+the compact angular measure still hold when individual shapes are not
+integers. The angular grouping is exact. The limit is nonzero by
+Theorem~\ref{thm:all-shapes}, independently of $R$. At zero the probability
+limit is one. A sequence converging to a nonzero number is eventually nonzero.
+\end{proof}
+
+For example take $\xi=101i/5$, $D=4$, all $\alpha_j=1$, and
+$B_1=Y_1,B_2=Y_2,B_3=Y_3+\cdots+Y_n$. Every polynomial
+\[
+ S^4+\frac{404i}{5}\{8B_3^3-6B_3S^2+(B_2-B_1)^2S\}+R_{\le2}
+\]
+has eventually nonzero factorial moments, in every dimension $n\ge3$.
+The lower polynomial may involve every variable with arbitrary complex
+coefficients. The angular Hessian has determinant $12X$, so this cubic
+cannot be a polynomial in a single affine linear form.
+
+For fixed block shapes the same eventual conclusion holds at every
+algebraic $\xi\notin E_{A_1-1,A_2-1,A_3-1}$. If the individual shapes are
+also algebraic (in particular positive integers), then at an arbitrary
+complex scale outside that finite set, algebraic specialization of the polynomial moment
+equations gives the FC conclusion. Explicitly, if all moments vanished,
+invert $\xi$ and one nonzero specialized remainder coordinate and specialize
+the finitely generated coefficient algebra to $\Qb$; Noetherianity reduces
+the moment ideal to finitely many generators. At that algebraic point the
+nonzero radial limit gives a contradiction. Positive powers retain the
+same angular phase and scale:
+\[
+ F^k=S^{Dk}+Dk\xi S^{Dk-4}G+R',\qquad \deg R'\le Dk-2.
+\]
+Thus infinitely many moments survive at all complex scales outside the
+finite exceptional set, including every transcendental scale. This last
+conclusion does not assert a nonzero limit there. At an exceptional scale
+the present proof makes no FC decision.
+
+The Gaussian substitution $B_j=\frac12\sum_{\ell=1}^{2A_j}X_{j\ell}^2$
+therefore gives the corresponding three-even-block Gaussian families.
+The moment bridge preserves all original polynomial multipliers through
+orthogonal averaging, as proved in the earlier transfer note; a nonzero
+unit-period limit here is not a general theorem about arbitrary markers.
+
+\section{Exact verification and remaining scope}
+\href{two_angular.py}{The implementation} exports the actual polynomial
+Stokes identity (1), an arithmetic certificate for all integer shape
+triples, and fixed-amplitude specialized remainder certificates. Tests
+check these identities, the rank-two connection and scalar equation,
+the Riccati residues, the triangle/Dirichlet constants, grouped Gamma and
+Gaussian moments, power closure and the zero-remainder boundary control.
+Finite tests support the implementation; all-exponent nonvanishing uses
+the written argument (4), irreducibility and arithmetic lifting.
+
+Only the linear/extremum mechanism needed here has been audited from
+EIT V. Its full independence theorem, continued-density elliptic detector,
+rank-six example and all EIT VI block families remain outside this audit.
+General two-angular-coordinate phases, arbitrary noninteger block shape
+sums, unrestricted FC in dimension at least three, unrestricted SFC and
+the complete bibliography remain open. No first surviving moment,
+uniform consecutive window, or outside review is claimed.
+\end{document}

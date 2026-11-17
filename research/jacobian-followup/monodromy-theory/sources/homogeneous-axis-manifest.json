@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "path": "sources/balanov-kononovich-krasnov-2012-euler-jacobi.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/06C76E860F6099989E75630D7A1B86A9/S0013091511000435a.pdf/projective_dynamics_of_homogeneous_systems_local_invariants_syzygies_and_the_global_residue_theorem.pdf",
+      "title": "Z. Balanov, A. Kononovich and Y. Krasnov, Projective dynamics of homogeneous systems: local invariants, syzygies and the global residue theorem (2012)",
+      "locator": "Theorem4.3, printed page586 (PDF page10), Euler--Jacobi vanishing for a maximal finite simple zero set; used with constant numerator1 after a hypothetical base-point-free leading map. The fixed-point counts and PSL axis arguments are proved separately.",
+      "bytes": 194105,
+      "sha256": "6231f5c65f64cb7286a8890cf9a6e36e64bd5a68afb4a8a65328ac57ace37d24"
+    }
+  ],
+  "retained_primary_inputs": [],
+  "scope": "Only Euler--Jacobi vanishing is imported; homogeneous sweep fiber, finite-axis criterion, cyclic residue and complete PSL subgroup quotient restrictions are derived in the note."
+}

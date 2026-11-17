@@ -1,0 +1,31 @@
+{
+  "completed": true,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "8e489e84e87aefe93128fd65df3c7fa926d3430219564ead139a53fddc38049e",
+  "linking_matrix_identity_controls_exact": true,
+  "semisimple_nondegenerate_eigenvalue1_variation": [
+    "0",
+    "-14"
+  ],
+  "invariant_boundary_radical_translation": [
+    "7",
+    "-2"
+  ],
+  "actual_eigenvalue1_projected_motion_in_radical_control": [
+    "7",
+    "0"
+  ],
+  "split_extension_can_move_a_specified_lift": true,
+  "higher_pole_derivative_and_original_form_spanning_controls_exact": true,
+  "quadric_Cauchy_log_derivative_control_exact": true,
+  "universal_Thom_linking_period_and_monodromy_proofs_machine_verified": false,
+  "sufficient_fibre_boundary_hypotheses_verified_for_all_exceptional_phases": false,
+  "exceptional_variation_cycle_proved_zero_for_all_pure_phases": false,
+  "abstract_controls_claimed_as_exceptional_phase_realizations": false,
+  "all_coefficient_ring_topological_criterion_claimed": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "new_degree_support_or_prefix_campaign": false
+}

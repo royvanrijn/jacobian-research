@@ -1,0 +1,64 @@
+{
+  "status": "all_exact_controls_pass",
+  "scope": "Finite independent controls only; all-degree written proofs remain the evidence.",
+  "basis_offset_controls": [
+    {
+      "dimension": 2,
+      "basis_offset_cases": 12,
+      "largest_zero_orbit": 3,
+      "every_case_has_unique_preserved_refinement": true
+    },
+    {
+      "dimension": 4,
+      "basis_offset_cases": 48,
+      "largest_zero_orbit": 10,
+      "every_case_has_unique_preserved_refinement": true
+    },
+    {
+      "dimension": 6,
+      "basis_offset_cases": 192,
+      "largest_zero_orbit": 36,
+      "every_case_has_unique_preserved_refinement": true
+    }
+  ],
+  "total_basis_offset_cases": 252,
+  "transitive_extra_meridian_control": {
+    "dimension": 2,
+    "meridians": 3,
+    "orbit": 4
+  },
+  "refinement_inconsistency_not_sufficient_control": {
+    "dimension": 4,
+    "meridians": 5,
+    "orbit": 4
+  },
+  "origin_shift_dependency_checks": 20,
+  "permutation_tuple_controls": [
+    {
+      "name": "four_transpositions_six_sheets",
+      "zero_orbit": 5,
+      "index_sum": 4,
+      "infinity_cycles": 2,
+      "twice_genus_if_transitive": null
+    },
+    {
+      "name": "five_transpositions_six_sheets",
+      "zero_orbit": 6,
+      "index_sum": 5,
+      "infinity_cycles": 1,
+      "twice_genus_if_transitive": 0
+    },
+    {
+      "name": "three_threecycles_six_sheets",
+      "zero_orbit": 6,
+      "index_sum": 6,
+      "infinity_cycles": 2,
+      "twice_genus_if_transitive": 0
+    }
+  ],
+  "proof_sha256": "e41cd60f8e0c248b712551d8f98da07eb7cbdf9655feb94efc445c2776ce2221",
+  "checker_sha256": "bfba3bb9235969846fb79a9cc87fa19d269ace6f4e8591074c88bc8d12960965",
+  "no_agent_messages": true,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "f8042595aeed1ec552f4a6477b270a491fa727d4065c09c5075c3e16f17c0de2",
+  "sympy_version": "1.14.0",
+  "cases": [
+    {
+      "group": "2O",
+      "discriminant": "-s**9*(s - 16)/6912",
+      "zero_normalization": "-F*(F - 108)/36",
+      "critical_points": [
+        {
+          "F": "48",
+          "G": "-32",
+          "value": "16",
+          "K_G": "-6144",
+          "Hessian_determinant": "1/294912"
+        }
+      ],
+      "generic_genus": 1,
+      "infinity_points": 2,
+      "generic_Euler": -2,
+      "zero_Euler": -1,
+      "nonzero_critical_Euler": -1
+    },
+    {
+      "group": "2I",
+      "discriminant": "s**10*(50000*s**2 - 1)/331776",
+      "zero_normalization": "F*(1728*F**2 - 1)/144",
+      "critical_points": [
+        {
+          "F": "sqrt(5)/200",
+          "G": "-3*sqrt(5)/1000",
+          "value": "sqrt(5)/500",
+          "K_G": "3/3200000",
+          "Hessian_determinant": "-512000000*sqrt(5)/9"
+        },
+        {
+          "F": "-sqrt(5)/200",
+          "G": "3*sqrt(5)/1000",
+          "value": "-sqrt(5)/500",
+          "K_G": "3/3200000",
+          "Hessian_determinant": "512000000*sqrt(5)/9"
+        }
+      ],
+      "generic_genus": 2,
+      "infinity_points": 1,
+      "generic_Euler": -3,
+      "zero_Euler": -2,
+      "nonzero_critical_Euler": -2
+    }
+  ],
+  "exact_discriminant_and_Hessian_controls": "PASS",
+  "universal_branch_support_theorem_machine_verified": false,
+  "primitivity_proof_machine_verified": false,
+  "pure_SAFE_all_order_proof": "Written weight-selection argument,not finite moment tests",
+  "new_holonomic_CAS_or_degree_campaign": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

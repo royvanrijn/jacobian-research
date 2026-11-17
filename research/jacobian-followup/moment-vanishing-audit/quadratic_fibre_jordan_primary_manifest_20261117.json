@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-17",
+  "searches": [
+    "selfadjoint operator nondegenerate symmetric bilinear form Jordan block antidiagonal canonical form",
+    "Gaussian Moments Conjecture polynomial quadratic fibres nilpotent matrix purity arbitrary degree"
+  ],
+  "checked_primary_records": [
+    {
+      "url": "https://zenodo.org/records/21688601",
+      "title": "Finite Gaussian Moments for Quadratics:Classification,Optimal Mixed Cutoffs,and Logarithmic Gap Varieties",
+      "author": "Zongmin Liu",
+      "scope": "Related public quadratic paper,record and abstract checked;no new theorem or certificate replay imported. Existing Liu version3 primary PDF remains the credited quadratic theorem source.",
+      "cache": "sources/quadratic-fibre-jordan/liu_21688601_record.html",
+      "sha256": "a3e741d9e3b0dff9044d6039c6389053e0918942db752b80529664ea622a63e3"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.23887",
+      "scope": "Primary current record remains Wilson v1. Binary support theorem and dimension-only classification credited;not claimed here."
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.18186v1",
+      "scope": "Retained primary source Proposition4.1 and Theorem5.1 supply all negative architecture cells. No appropriation of Long examples."
+    }
+  ],
+  "linear_algebra": "The searched Hermitian/sesquilinear sources are not imported as a theorem for complex bilinear forms. Cyclic Gram anti-triangular identity is proved directly.",
+  "source_failures_not_used": [
+    "Waterloo thesis PDF unavailable via web tool;not relied on."
+  ],
+  "targeted_search_is_not_exhaustive": true,
+  "novelty_assessed": false,
+  "first_proof_claim": false
+}

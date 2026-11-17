@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "mobius_log_pullback": true,
+  "ramification_indices_checked": [
+    2,
+    3,
+    5
+  ],
+  "moving_pole_full_connection": true,
+  "rational_extension_obstruction_residue": 1,
+  "boundary_examples": [
+    "higher-pole Gaussian scaling",
+    "growing residue",
+    "absent decay normalization"
+  ],
+  "universal_contour_proof_certified_by_checker": false,
+  "period_comparison_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "checker_sha256": "396e6cc549fb8333782452884ba58c17916210fd6dcdbcc46d682ac93faf2406"
+}

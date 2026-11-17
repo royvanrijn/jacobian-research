@@ -1,0 +1,8 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "uniform_claim":"For a fixed onto S3 transposition colouring, let ell be the binary scalar root-cocycle dimension and h=ell-2. A transitive rank2-common-form affine representation in dimension k projecting to this colouring exists iff h>=k-1, k>=2. Maximal dimension is ell-1 when h>0; all such transitive images have order24*8^(k-2). Relate ell=2+b1 of its simple three-sheeted branched cover.",
+  "proof_gates":["Trivial radical extensions preserve admissible cocycle spaces, using H1(knot group;R)=R and H2(knot group;R)=0","Dependent radical/translation classes yield an explicit invariant quadratic function","Independent classes restrict to independent S3-equivariant maps on the colouring kernel; H1(S3,F2^2)=0 and End_S3(F2^2)=F2 force full joint image; commutators yield every radical translation"],
+  "finite_controls":{"pretzel_parameters":[[2,3,3],[2,3,3,3],[2,3,3,3,3]],"roles":"Known three/four/five-bridge controls, not new target knots","model_radical_dimensions":[0,1,2],"checks":"Construct actual numerator-closure PDs independently with pinned Spherogram2.4.1; exhaust normalized S3 colourings, choose a maximal cocycle example on each, verify all basis-pair quadratic relator identities and actual transitive affine image order. Check dependent class relations preserve the explicit quadratic invariant."},
+  "limits":{"controls":3,"seconds_total":90,"affine_group_order_cap":1536,"maximum_sheets":16},
+  "scope":"Working uniform proofs require exact argument, not extrapolation from finite controls. No new knot equality, novelty assertion or full MRC conclusion. Full293 symmetric panel is separately frozen."
+}

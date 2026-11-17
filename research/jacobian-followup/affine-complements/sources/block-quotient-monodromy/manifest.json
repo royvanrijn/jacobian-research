@@ -1,0 +1,97 @@
+{
+  "as_of": "2026-11-16",
+  "claim": "PF2RULED122",
+  "sources": [
+    {
+      "path": "DISJOINT_BRANCH_SUPPORTS_AND_PRIMITIVE_MONODROMY_REDUCTION.md",
+      "url": "retained:PF2RULED121",
+      "used": "Original local factors give disjoint branch supports; exact Chau/Palka/Riemann-Hurwitz multibranch argument; subset separation",
+      "bytes": 11893,
+      "sha256": "bc9d6e7715fc94d32c00f116b274ae26d6d6cc1bd4dd209da8aeb2ebf750c7fa"
+    },
+    {
+      "path": "PRIMITIVE_PRODUCT_ACTION_EXCLUSION_AND_PRIME_DEGREE_REDUCTION.md",
+      "url": "retained:PF2RULED120",
+      "used": "Strict 5/6 original support cap; product dichotomy; modern CFSG complete containers/Table2 signs",
+      "bytes": 11535,
+      "sha256": "854d1df2518067dc46a5fa2474b67950b20682419191ce6effeef516c25f9c16"
+    },
+    {
+      "path": "HIGH_INDEX_COLLISION_EXCESS_AND_NEAR_MAXIMAL_EXCLUSION.md",
+      "url": "retained:PF2RULED112",
+      "used": "Original high mass >d/2 makes chosen component contractible; DOES NOT force all residue degrees1",
+      "bytes": 17893,
+      "sha256": "f4fa4bdcd3b13c19d44d4a257105328c30460e07e86e895e7f074f51918ff9f6"
+    },
+    {
+      "path": "LOCAL_MONODROMY_CAPACITY_AND_WEIGHTED_BRANCH_EXCLUSION.md",
+      "url": "retained:PF2RULED113",
+      "used": "Weighted target radial contraction/global-local complement comparison",
+      "bytes": 15001,
+      "sha256": "d110e04fd99ed7b94bf448b869a77b22a90602489c94f3207ef50d398d920010"
+    },
+    {
+      "path": "HALF_SUPPORT_INERTIA_AND_PLANE_MONODROMY_EXCLUSIONS.md",
+      "url": "retained:PF2RULED118",
+      "used": "Elementary affine/projective fixed point bounds",
+      "bytes": 11205,
+      "sha256": "7b4214be20d10569189acfa6eed54eafd8ce8836932c06802f235ea3d4125eff"
+    },
+    {
+      "path": "../jc2-omitted-divisors/RESIDUE_LEDGER.md",
+      "url": "retained:PF2OMIT6",
+      "used": "Exact d-1=sum ef+sumeta, ell=e q+eta; original all-normal/all-primes hypotheses",
+      "bytes": 9598,
+      "sha256": "b0c207ffb6fe2736937cdabffb1fe5266f4f936143b2807dd571f431df08a8b9"
+    },
+    {
+      "path": "sources/disjoint-branch-supports/manifest.json",
+      "url": "retained:PF2RULED121",
+      "used": "Narrow all-element inclusive-half GM theorem import source boundary retained",
+      "bytes": 3754,
+      "sha256": "47669a6c15b2fab3e85e2ed1fee348d820825a533d3af1dfdb9f5e6e107923c6"
+    },
+    {
+      "path": "sources/disjoint-branch-supports/guralnick-magaard-theorem1-review.json",
+      "url": "https://www.academia.edu/14851732/On_the_Minimal_Degree_of_a_Primitive_Permutation_Group",
+      "used": "Primary-paper web text previously read; local record is own review NOT source facsimile; original PDF not audited",
+      "bytes": 1396,
+      "sha256": "c560d0ece42da23780233d8d48629d730741eec282bfc59c91ae8840504f7aad"
+    },
+    {
+      "path": "sources/primitive-product-action/manifest.json",
+      "url": "retained:PF2RULED120",
+      "used": "Full prior BG source-table PDF audit retained, no new audit claimed",
+      "bytes": 3951,
+      "sha256": "fcee5f36851180d6566c68665d82e03c4a7a826afc7dbedc0b92c3bfe7a9375f"
+    },
+    {
+      "path": "disjoint_branch_supports.py",
+      "url": "retained:PF2RULED121",
+      "used": "Small actual quadratic-form and orthogonal-vector helpers",
+      "bytes": 1444,
+      "sha256": "30b56bae28bc4975d12cb6209d56d3c83b68637c745e7bf451fc93ac7ff9ca77"
+    },
+    {
+      "path": "primitive_product_action.py",
+      "url": "retained:PF2RULED120",
+      "used": "Actual product-action permutation helper",
+      "bytes": 1763,
+      "sha256": "e335464a655b1e6987401279d178317949f8223bb14d6ca308264db9fd89109c"
+    }
+  ],
+  "deep_Chau_Palka_and_CFSG_imports_retained": true,
+  "new_GM_or_BG_source_audit_claimed": false,
+  "original_GM_PDF_audited": false,
+  "local_GM_record_is_source_facsimile": false,
+  "independent_CFSG_proof": false,
+  "original_N_all_primes_retained": true,
+  "intermediate_model_assumed_plane": false,
+  "quotient_involution_assumed_to_lift_to_involution": false,
+  "all_high_mass_residue_degrees_assumed_one": false,
+  "McLaughlin_finer_classification_imported": false,
+  "general_immersed_complement_cyclic_theorem_assumed": false,
+  "finite_samples_prove_theorem": false,
+  "formal_verification": false,
+  "external_review": false
+}

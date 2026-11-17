@@ -1,0 +1,58 @@
+Universal ordinary filtrations passed
+Universal cusp filtration passed
+Eight binary seed models passed
+Twenty conic seed models passed
+{
+  "completed": true,
+  "checker_sha256": "0a82ca9dd98e471b7a1c99fe8d31c9a5634229353daf3bd622329f1b8b7b04a9",
+  "certificate_sha256": "898d2013ccb56e94e325a1c74c91f11f0bf75222ab5d3c2d898abc759ffc7d89",
+  "retained_inputs": {
+    "common_time_seed_factor_certificate.json": "75922fd6cdc70a583edf181aafaf6cbd3c43d30e2de31736ed08769287468447",
+    "pole_filtered_seed_bounds_certificate.json": "43c9decd900f8c9f2f6b44558231713edd262eb0e242b87c64d637140ddd799b",
+    "structured_seed_modules_certificate.json": "62453d5b55b8f759d15ba10876216d1736f8e0783c24ddc4748efac4937b953f"
+  },
+  "runtime_seconds": 24.812,
+  "sympy_version": "1.14.0",
+  "binary_models": 8,
+  "conic_models": 20,
+  "direct_seed_identities": 84,
+  "ordinary_complement_gates": {
+    "nodal": 174,
+    "transverse": 166,
+    "triangle": 142
+  },
+  "cusp_full_gate": 168,
+  "conic_full_gate": 146,
+  "full_W_linear_gate": 146,
+  "tangent_full_gate_unchanged": 132,
+  "mixed_parent_gate_unchanged": 92,
+  "global_sufficient_pure_prefix": 174,
+  "odd_sufficient_pure_prefix": 174,
+  "homogeneous_sufficient_pure_prefix": 146,
+  "least_prefix_interval": [
+    20,
+    174
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    174
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    146
+  ],
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 174,
+    "cusp": 168,
+    "transverse": 166,
+    "tangent": 132,
+    "triangle": 146,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "optimality_proved": false,
+  "written_analytic_or_global_proof_certified_by_checker": false,
+  "boundary": "Exact auxiliary formal source/division filtrations,28 model replays with84 actual seed identities, displacement-cost and determinant arithmetic. Universal all-degree induction, full coefficient/rank cover, period comparison and analytic exclusions remain written inputs. No independent replay, external review, formal verification or expanded global radical cofactors."
+}

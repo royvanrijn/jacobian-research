@@ -1,0 +1,16 @@
+{
+  "dimension": 2,
+  "parameter_count": 1,
+  "phase_terms": [],
+  "parameter_ideal": [],
+  "precision_matrix": [
+    [
+      "0",
+      "1"
+    ],
+    [
+      "1",
+      "0"
+    ]
+  ]
+}

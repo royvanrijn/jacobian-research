@@ -1,0 +1,94 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYHB0 schema, current checker hash, locks, dependencies and assurance",
+    "HC4MYHB1 schema, current checker hash, locks, dependencies and assurance",
+    "HC4MYHB2 schema, current checker hash, locks, dependencies and assurance",
+    "HC4MYHB3 schema, current checker hash, locks, dependencies and assurance",
+    "isolated-trace theorem, power-saddle corollary and both mixing applications have separate exact dependencies",
+    "parent retires full three-variable r mixing and hyperplane coordinate-trace pullbacks, while keeping the precise remaining frontier",
+    "twenty-two new/updated method records have evidence and current scope fingerprints",
+    "WORK-HC4-SCHUR tests isolated traces first and preserves mixing beyond the actual coordinate-triple class",
+    "WORK-HC4-RESIDUAL-AUDIT tests isolated traces first and preserves mixing beyond the actual coordinate-triple class",
+    "receipt-isolated-trace.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-cylindrical-trace.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-exceptional-fibre.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-critical-components.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-relative-critical.json current proof/checker and retained primary/dependency byte pins",
+    "new closures retain the actual-hyperplane and coordinate-triple hypotheses, with no global embedding, unit-nonexistence or endpoint overclaim",
+    "maintained navigation gives the new r mixing, broad trace criterion and precise residual classes"
+  ],
+  "exact_replay_checks": {
+    "receipt-isolated-trace.json": 41,
+    "receipt-cylindrical-trace.json": 38,
+    "receipt-exceptional-fibre.json": 42,
+    "receipt-critical-components.json": 58,
+    "receipt-relative-critical.json": 39
+  },
+  "previous_goal_turn": "Progress: the preceding cylindrical-trace theorem closed every y=R(x,p,q) independent of old r. The present isolated-trace theorem removes generic-base Euler information and closes new base/dual mixing and genuine old-r-dependent boundary classes.",
+  "new_claims": [
+    "HC4MYHB0",
+    "HC4MYHB1",
+    "HC4MYHB2",
+    "HC4MYHB3"
+  ],
+  "written_proof_coverage": [
+    "isolated trace point forces a dominating component of the whole critical curve",
+    "affine-component alternative excludes all A1 components without generic-base Euler",
+    "both Tang projection ranks and the exact local Milnor/intersection-length identity",
+    "exceptional value-map local degree mu+1 and whole trace Euler at least mu+2",
+    "all power-saddle trace exponents and polynomial trace equivalences",
+    "every r graph with arbitrary (y,p,q) automorphism fixing x",
+    "arbitrary off-hyperplane source/dual mixing with a trace coordinate triple",
+    "all old-r-dependent y graphs with nonzero constant r coefficient in the affine boundary"
+  ],
+  "external_mathematical_inputs": [
+    "retained HCTANG2",
+    "retained HC4MYGR1 classical affine-component inputs"
+  ],
+  "new_external_classification_imported": false,
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/geometry.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/core.md",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "generic_base_Euler_hypothesis_required": false,
+  "full_three_variable_r_chart_mixing_over_Kx_closed": true,
+  "arbitrary_coordinate_triple_hyperplane_pullbacks_closed": true,
+  "unit_affine_old_r_y_boundary_closed": true,
+  "broader_substitutions_asserted_embedded": false,
+  "unit_Hessian_nonexistence_asserted": false,
+  "remaining_frontier": [
+    "other genuinely old-r-dependent y boundaries",
+    "opposite x graphs with q/r dependence",
+    "mixing outside the actual affine hyperplane coordinate-triple criterion and uncovered embeddings",
+    "base-only unit-ideal plane surjectivity and distinct nonlinear-p singleton-zero properness"
+  ],
+  "unit_ideal_plane_Keller_endpoint_resolved": false,
+  "singleton_zero_properness_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "final_checks": {
+    "python_compilation": "PASS",
+    "scoped_git_diff_whitespace": "PASS",
+    "new_proof_and_checker_whitespace": "PASS",
+    "render_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "check_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check_require_partial_review": "FAIL: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+  },
+  "all_degree_mixing_closure_is_written_proof_not_finite_degree_inference": true,
+  "Milnor_intersection_length_mu_gives_value_mapping_degree_mu_plus_one": true,
+  "same_entire_trace_fibre_compared_in_native_and_Tang_representations": true,
+  "actual_affine_hyperplane_and_global_polynomial_trace_equivalence_required": true,
+  "local_analytic_Morse_form_alone_not_asserted_sufficient": true,
+  "global_research_goal_remains_active": true
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "status": "pass",
+  "checks": {
+    "dirichlet_chain_identity": 28,
+    "chain_has_correct_mass": 6,
+    "all_chain_amplitudes_polynomial": 6,
+    "all_original_polynomial_markers": 42,
+    "exponential_chain_vs_local_residues": 7,
+    "nonzero_exponential_group_remains": 7,
+    "nonconstant_triangle_period_can_be_algebraic": 1,
+    "point_evaluation_is_separate": 1,
+    "unsupported_shapes_or_transcendental_nodes_rejected": 3,
+    "transcendental_nonvanishing_countercontrol": 1,
+    "identically_zero_marker_by_node_symmetry": 1,
+    "pencil_membership_accepted": 3,
+    "independent_membership_identity": 3,
+    "pencil_gamma_radial_identity": 12,
+    "coincident_nonzero_pencil": 1,
+    "coincident_zero_actual_phase": 1,
+    "outside_class_is_not_a_conjecture_decision": 3,
+    "actual_coefficient_ideal_at_collision": 1,
+    "formal_binary_coefficients_are_wrong_ideal": 1,
+    "flat_radial_gamma_ratio_boundary": 162
+  },
+  "total": 290,
+  "scope": "Finite exact confluent-chain/residue, original-marker, radial-pencil membership and scope controls. Universal conclusions use the written all-degree proofs.",
+  "files": {
+    "SIMPLEX_PENCILS_AND_AFFINE_LIMITS.tex": "92ddb3e9f649df331b4624b655e4de39b3750e222a1aefa27014fefd7bdade6a",
+    "simplex_pencils.py": "4914c699e0267f2cd58d02b459817086f6829468164193b3748f923bb91cab0b",
+    "verify_simplex_pencils.py": "72131ab403c133a1e43d00abe509e11af90078ebde3ac69a62fef78fb14528e1"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false
+}

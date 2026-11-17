@@ -1,0 +1,126 @@
+{
+  "completed": true,
+  "checker_sha256": "f602defac102555fd4bd4f0537b86f8e41f929ab11baf290e63fde819b307023",
+  "model_certificate_sha256": "2fc77cc37fe5ccff3de74fcb6a73e987138196782823d9d91c6715d5960039cc",
+  "normalization_checkpoint_sha256": "ba163f9bcbc786a7decf6fe00ecd0750f3be184be39233d33b6f21fa15998903",
+  "universal_principal_divergence_checks": [
+    {
+      "kind": "nodal",
+      "principal_and_divergence_identities": 36,
+      "cleared_remainder_t_degree": 12,
+      "cleared_cofactor_t_degree": 8
+    },
+    {
+      "kind": "transverse",
+      "principal_and_divergence_identities": 28,
+      "cleared_remainder_t_degree": 12,
+      "cleared_cofactor_t_degree": 8
+    },
+    {
+      "kind": "triangle",
+      "principal_and_divergence_identities": 28,
+      "cleared_remainder_t_degree": 12,
+      "cleared_cofactor_t_degree": 8
+    }
+  ],
+  "class_bounds": {
+    "nodal": {
+      "rank": 7,
+      "max_source": 7,
+      "minimum_reducible": 3,
+      "steps": 5,
+      "B": 66,
+      "gate": 1855
+    },
+    "transverse": {
+      "rank": 6,
+      "max_source": 6,
+      "minimum_reducible": 3,
+      "steps": 4,
+      "B": 54,
+      "gate": 1140
+    },
+    "triangle": {
+      "rank": 5,
+      "max_source": 6,
+      "minimum_reducible": 2,
+      "steps": 5,
+      "B": 66,
+      "gate": 995
+    }
+  },
+  "connection_models": [
+    {
+      "kind": "nodal",
+      "singular_at_zero": false,
+      "metric_determinant": 3,
+      "H_degree": 66,
+      "N_max_degree": 66,
+      "columns_certified": 7,
+      "B": 66,
+      "rank": 7,
+      "prefix": 1855
+    },
+    {
+      "kind": "nodal",
+      "singular_at_zero": true,
+      "metric_determinant": -139,
+      "H_degree": 66,
+      "N_max_degree": 66,
+      "columns_certified": 7,
+      "B": 66,
+      "rank": 7,
+      "prefix": 1855
+    },
+    {
+      "kind": "transverse",
+      "singular_at_zero": false,
+      "metric_determinant": 3,
+      "H_degree": 54,
+      "N_max_degree": 54,
+      "columns_certified": 6,
+      "B": 54,
+      "rank": 6,
+      "prefix": 1140
+    },
+    {
+      "kind": "transverse",
+      "singular_at_zero": true,
+      "metric_determinant": -139,
+      "H_degree": 50,
+      "N_max_degree": 51,
+      "columns_certified": 6,
+      "B": 54,
+      "rank": 6,
+      "prefix": 1140
+    },
+    {
+      "kind": "triangle",
+      "singular_at_zero": false,
+      "metric_determinant": 3,
+      "H_degree": 66,
+      "N_max_degree": 66,
+      "columns_certified": 5,
+      "B": 66,
+      "rank": 5,
+      "prefix": 995
+    },
+    {
+      "kind": "triangle",
+      "singular_at_zero": true,
+      "metric_determinant": -139,
+      "H_degree": 56,
+      "N_max_degree": 57,
+      "columns_certified": 5,
+      "B": 66,
+      "rank": 5,
+      "prefix": 995
+    }
+  ],
+  "ordinary_isotropic_frame_exclusion_gate": 888,
+  "proposed_global_sufficient_pure_prefix": 1855,
+  "global_least_prefix_lower_bound": 10,
+  "global_least_prefix_computed": false,
+  "written_proof_certified_by_checker": false,
+  "proof_boundary": "Universal principal/divergence identities and t-degree/ordinary-degree bounds; six exact Gaussian-normal-form rational model connections with all36 column integration-by-parts certificates, including D(0)=0 and vanishing quadratic coefficients. Full rank/normal-form coverage, all-order cofactor/seed argument, analytic nonzero zeroth coefficients and global1855 conclusion require the written proof; no high-order moment expansion, optimality, independent review or formal verification."
+}

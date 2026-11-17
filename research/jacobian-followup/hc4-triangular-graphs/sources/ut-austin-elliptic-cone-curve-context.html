@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebraic Curves Lecture 8 — Isaac Martin</title>
+  <!-- Tab icon. Every href is base_url-relative like the stylesheets below, because
+       pages sit at varying depths and the site has to work at any serving root. The
+       16px render is not a plain downscale of the 32 -- see docs/icons.md. -->
+  <link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+  <!-- Stylesheets, in cascade order. The order is load-bearing, not cosmetic:
+       content.css must precede components.css, since their heading rules tie on
+       specificity. See the note at the top of tokens.css. -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/rail.css">
+  <link rel="stylesheet" href="../../assets/css/content.css">
+  <link rel="stylesheet" href="../../assets/css/table.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/environments.css">
+  <script src="../../assets/js/mathjax-config.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body class="is-note"
+      data-base="../../"
+      data-note-url="notes/algebraic-curves-08/"
+      data-note-title="Algebraic Curves Lecture 8">
+  <!-- Left rail: permanent nav, then the two page-scoped blocks. Contents sits above Visited on purpose -- the visited path grows as you read, so putting the growing block last keeps the reading aid at a stable position. Visited stays hidden until there is something in it. -->
+  <aside class="rail">
+    <a class="rail-title" href="../../index.html">Isaac Martin</a>
+    <nav class="rail-nav" aria-label="Main">
+      <a href="../../research/">Research</a>
+        <a href="../../projects/">Projects</a>
+        <a href="../../notes/" class="active">Notes</a>
+    </nav>
+
+    
+
+    <nav class="rail-block rail-visited" id="visited" aria-label="Notes visited this session" hidden>
+      <p class="rail-label">Visited Notes</p>
+      <ul class="visited-list" id="visited-list"></ul>
+    </nav>
+  </aside>
+
+  <div class="column">
+    <main class="content" id="main">
+      <a class="back-link" id="back-link" hidden>← last note</a>
+      <h1 class="page-title">Algebraic Curves Lecture 8</h1>
+      <p class="note-meta"><span class="taxon">lecture-notes</span><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-curves/">#algebraic-curves</a><span class="sep">·</span><a class="tag" href="../../notes/tag/algebraic-geometry/">#algebraic-geometry</a><span class="sep">·</span><a class="tag" href="../../notes/tag/lecture-notes/">#lecture-notes</a></p>
+
+      <article class="note">
+
+<blockquote>
+<p>
+Lecture notes from Karl Christ&rsquo;s Algebraic Curves course, UT Austin, Spring 2024. Live-TeXed during lecture; any errors are mine.
+</p>
+</blockquote>
+
+<p>
+<a class="idlink" data-note="algebraic-curves-07" href="../../notes/algebraic-curves-07/">← lecture 7</a> · <a class="idlink" data-note="algebraic-curves-09" href="../../notes/algebraic-curves-09/">lecture 9 →</a>
+</p>
+<div id="outline-container-complete-intersection-curves-in-mathbb-p-n" class="outline-2">
+<h2 id="complete-intersection-curves-in-mathbb-p-n">Complete Intersection Curves in \(\mathbb P^n\)</h2>
+<div class="outline-text-2" id="text-complete-intersection-curves-in-mathbb-p-n">
+<p>
+Take \(C = S_1 \cap S_2\subseteq \mathbb P^3\) to be a complete intersection and let \(d_i = \deg S_i\). Adjunction gives us
+</p>
+\begin{align*}
+    K_C = K_{\mathbb P^3} \otimes \bigwedge_{i=1}^2 N_{C / \mathbb P^3},
+\end{align*}
+<p>
+and the normal bundle of \(C\) over \(\mathbb P^3\) can be written
+</p>
+\begin{align*}
+    N_{C/\mathbb P^3} = T_{\mathbb P^3}/T_C, N_{S_i} = T_{\mathbb P^3}/T_{S_i}.
+\end{align*}
+<p>
+We then have a map \(\varphi:N_C\to N_{S_1} \oplus N_{S_2}\). Since \(C\) is smooth, \(T_C = T_{S_1}\cap T_{S_2}\) which implies that \(\varphi\) is injective. Since \(\textrm{rank}(N_C) = \textrm{rank}(N_{S_1} \oplus N_{S_2})\), it follows that \(\varphi\) is an isomorphism. Thus
+</p>
+\begin{align*}
+    N_C \cong \mathcal O_{\mathbb P^3}(d_1) \oplus \mathcal O_{\mathbb P^3}(d_2)
+\end{align*}
+<p>
+and
+</p>
+\begin{align*}
+    \bigwedge^2 N_C = \bigwedge^2 \mathcal O_{\mathbb P^3}(d_1) \oplus \mathcal O_{\mathbb P^3}(d_2) = \mathcal O_{\mathbb P^3}(d_1 + d_2).
+\end{align*}
+<p>
+The last equality above follows from the standard trick we introduced [BROKEN LINK: pages/writing/journal/algcurves7/index.md]: if you have a short exact sequence of locally free sheaves of finite rank
+</p>
+\begin{align*}
+    0 \to \mathcal F\to \mathcal F \to \mathcal F'' \to 0
+\end{align*}
+<p>
+where each term has rank \(r\), \(r'\) and \(r''\) respectively, then
+</p>
+\begin{align*}
+    \bigwedge^{r'}\mathcal F' = \bigwedge^{r}\mathcal F \otimes \bigwedge^{r''}\mathcal F''.
+\end{align*}
+<p>
+In our case we have the somewhat trivial exact sequence
+</p>
+\begin{align*}
+    0 \to \mathcal O_{\mathbb P^3}(d_1) \to \mathcal O_{\mathbb P^3}(d_1)\oplus \mathcal O_{\mathbb P^3}(d_2) \to \mathcal O_{\mathbb P^3}(d_2)\to 0,
+\end{align*}
+<p>
+which gives us the final equality above after messing around with tensors and direct sums.
+</p>
+
+<p>
+Examining the formula \(2g - 2 = \deg (K_C)\) and noting that \(\deg(C) = d_1\cdot d_2\), we have
+</p>
+\begin{align*}
+    2g - 2 = \deg(K_C) &= \deg\big(\mathcal O_{\mathbb P^3}(-4) \otimes \mathcal O_{\mathbb P^3}(d_1 + d_2)_{|_C}\big) \\
+    &= d_1\cdot d_2 \cdot (d_1+d_2 - 4).
+\end{align*}
+<p>
+Thus \(g = \frac{1}{2}(d_1\cdot d_2 \cdot (d_1 + d_2 - 4)) + 1\).
+</p>
+
+<div class="env env-remark">
+<p class="env-label">Remark</p>
+<ol class="org-ol">
+<li>If \(d_2 = 1\) then we get the correct formula:</li>
+</ol>
+\begin{align*}
+    g = \frac{1}{2}(d_1\cdot (d_1 - 3)) + 1 = \frac{(d_1 - 1)(d_1 - 2)}{2}
+\end{align*}
+
+<ol class="org-ol">
+<li>For the intersection of \(n-1\) hypersurfaces in \(\mathbb P^n\) we get analogously</li>
+</ol>
+\begin{align*}
+    \bigwedge^{n-1}N_C = \mathcal O_{\mathbb P^3}\left(\sum d_i\right) \text{~ and ~} g = \frac{1}{2}\left(\prod_i d_i~\cdot~ (\sum d_i - n - 1)\right) + 1.
+\end{align*}
+</div>
+
+<p>
+Up to \(n = 10\), the possible values of \(g\) for complete intersection curves are
+</p>
+\begin{align*}
+    0,1,3,4,5,6,9,10.
+\end{align*}
+<p>
+For a plane curve, they are \(0,1,3,6\).
+</p>
+
+<p>
+<i>Example:</i>   Take \(C = Q_1\cap Q_2 \subseteq \mathbb P^3\) to be a smoooth curve where each \(Q_i\) is a smooth quadric. Our formula gives us
+</p>
+\begin{align*}
+    g(C) = \frac12 (4 \cdot ( 0 ) ) + 1 = 1,
+\end{align*}
+<p>
+so we get a genus 1 curve.
+</p>
+
+<p>
+Conversely, any genus 1 curve can be realized as the intersection of two quadrics in \(\mathbb P^3\). If \(X\) is a genus 1 curve, then Riemann-Roch gives us
+</p>
+\begin{align*}
+    h^1(\mathcal O_X(4p)) = d - g + 1 = 4
+\end{align*}
+<p>
+which means \(\mathcal O_X(4p)\) gives an embedding into \(X\to \mathcal P^3\). We therefore have a map
+</p>
+\begin{align*}
+    H^0(\mathbb P^3,\mathcal O_{\mathbb P^3}(2)) \to H^0(X,\mathcal O_X(2)).
+\end{align*}
+<p>
+The left term above has dimension \(\binom{3+2}{2} = 10\) while the right term has dimension \(8 - 1 + 1\) (by Riemann-Roch), so the kernel of this map is at least 2. So \(X\) is the intersection of at least \(2\) quadrics in \(\mathbb P^3\), and by dimension considerations we can choose two of those and they will still cut out \(X\).
+</p>
+
+<p>
+<i>Example 2:</i> Consider \(\mathbb P^1 \to \mathbb P^3\) given by \(V = \{t&4, t^3s, ts^3, s^4\} \subseteq H^0(\mathbb P^1, \mathcal O_{\mathbb P^1}(4))\). Observe that there are smooth curves of genus 0 and genus 1 in \(\mathbb P^3\). Note that the image of this map must lie on a quadric as a bidegree \((1,4)\) curve; we can see this by first passing through an embedding \(\mathbb P^1\to \mathbb P^1\times \mathbb P^1\).
+</p>
+
+<p>
+Observation: No smooth non-degenerate rational curve \(C\subseteq \mathbb P^3\) can be a complete intersection. Remember that \(2g - 2 = d_1\cdot d_1 \cdot (d_1 + d_2 - 4)\), if \(g = 0\), then this means \(d_1 + d_2 \leq 3\). The only options are \(d_1 = d_2 = 1\) which implies we have a line or \(d_1 = 1\) and \(d_2 = 2\) which implies we have a cubic in \(\mathbb P^2\), both of which are degenerate.
+</p>
+</div>
+</div>
+<div id="outline-container-covers-and-riemann-hurwitz-theorem-start" class="outline-2">
+<h2 id="covers-and-riemann-hurwitz-theorem-start">Covers and Riemann Hurwitz Theorem (start)</h2>
+<div class="outline-text-2" id="text-covers-and-riemann-hurwitz-theorem-start">
+<p>
+A cover (or covering) is a surjective map \(f:Y\to X\) between two smooth curves \(X\) and \(Y\). 
+</p>
+
+<p>
+The <i>degree</i> of \(f\) is the number of preimages in a general fibre; or more algebraically, its the degree of the field extension \(K(Y)/K(X)\).
+</p>
+
+<p>
+The <i>ramification index</i> of \(f\) at \(p\in Y\) is \(v_p(t) - 1\) where \(t\) is a local parameter at \(f(p)\). A &ldquo;local parameter&rdquo; at \(f(p) = q\) is a function which vanishes to order \(1\) at \(q\). It lives in \(\mathcal O_{X,q}\) and we take the valuation in \(K(Y)\) under the embeddings
+</p>
+\begin{align*}
+    \mathcal O_{X,q} \hookrightarrow K(X) \hookrightarrow K(Y).
+\end{align*}
+</div>
+</div>
+
+<section class="backlinks">
+  <h2>Backlinks <span class="count">2</span></h2>
+  <ul>
+    <li><a data-note="algebraic-curves-07" href="../../notes/algebraic-curves-07/">Algebraic Curves Lecture 7</a></li>
+    <li><a data-note="algebraic-curves-09" href="../../notes/algebraic-curves-09/">Algebraic Curves Lecture 9</a></li>
+  </ul>
+</section>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>© Isaac Martin</span>
+      <span>Built from Org</span>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/trail.js"></script>
+  <script src="../../assets/js/notes-table.js"></script>
+  <script src="../../assets/js/preview.js"></script>
+
+  <!-- ⌘K command palette (ninja-keys): jumps to any PUBLISHED note. No visible
+       nav trigger — ninja-keys binds Cmd/Ctrl+K itself. The item list
+       (notes-index.json) is published-only in every build, so private note
+       titles never ship. -->
+  <ninja-keys placeholder="Search published notes…" hideBreadcrumbs></ninja-keys>
+  <!-- +esm bundle: bare imports (lit, hotkeys-js) resolved so the module loads in
+       the browser and registers <ninja-keys>. The plain dist/ build does NOT. -->
+  <script type="module"
+          src="https://cdn.jsdelivr.net/npm/ninja-keys@1.2.2/+esm"></script>
+  <script>
+    (function () {
+      var BASE = "../../";
+      Promise.all([
+        fetch(BASE + "notes-index.json").then(function (r) { return r.ok ? r.json() : []; }),
+        customElements.whenDefined("ninja-keys")
+      ]).then(function (res) {
+        var ninja = document.querySelector("ninja-keys");
+        ninja.data = res[0].map(function (it, i) {
+          return {
+            id: "n" + i,
+            title: it.title,
+            section: it.taxon || "Notes",
+            keywords: it.taxon || "",
+            handler: function () { window.location.href = BASE + it.url; }
+          };
+        });
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>

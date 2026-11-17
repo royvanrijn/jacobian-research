@@ -1,0 +1,558 @@
+{
+  "completed": true,
+  "checker_sha256": "0dffb49a00b3c070b0a4def6a2ae569a1462478e178a4f035d1e19f9795ba6f3",
+  "sympy_version": "1.14.0",
+  "normalized_foundational_map": [
+    "-x**3*z/2 - 3*x**2*y/2 + x",
+    "3*x**3*y**2*z + 9*x**2*y**3 + 6*x**2*y*z + 12*x*y**2 + 3*x*z + y",
+    "x**3*y**3*z + 3*x**2*y**4 + 3*x**2*y**2*z + 7*x*y**3 + 3*x*y*z + 4*y**2 + z"
+  ],
+  "base_Jacobian_determinant": "1",
+  "inverse_Jacobian": [
+    [
+      "-3*x**6*y**4*z - 9*x**5*y**5 - 12*x**5*y**3*z - 30*x**4*y**4 - 18*x**4*y**2*z - 32*x**3*y**3 - 12*x**3*y*z - 9*x**2*y**2 - 3*x**2*z + 3*x*y + 1",
+      "-3*x**6*y**2*z/2 - 9*x**5*y**3/2 - 3*x**5*y*z - 6*x**4*y**2 - 3*x**4*z/2 + x**3*y/2 + 3*x**2/2",
+      "3*x**6*y*z + 9*x**5*y**2 + 3*x**5*z + 3*x**4*y - 4*x**3"
+    ],
+    [
+      "-3*x**4*y**4*z - 9*x**3*y**5 - 12*x**3*y**3*z - 30*x**2*y**4 - 18*x**2*y**2*z - 33*x*y**3 - 12*x*y*z - 12*y**2 - 3*z",
+      "-3*x**4*y**2*z/2 - 9*x**3*y**3/2 - 3*x**3*y*z - 6*x**2*y**2 - 3*x**2*z/2 + 1",
+      "3*x**4*y*z + 9*x**3*y**2 + 3*x**3*z + 3*x**2*y - 3*x"
+    ],
+    [
+      "9*x**5*y**4*z**2 + 45*x**4*y**5*z + 36*x**4*y**3*z**2 + 54*x**3*y**6 + 165*x**3*y**4*z + 54*x**3*y**2*z**2 + 189*x**2*y**5 + 216*x**2*y**3*z + 36*x**2*y*z**2 + 222*x*y**4 + 117*x*y**2*z + 9*x*z**2 + 89*y**3 + 21*y*z",
+      "9*x**5*y**2*z**2/2 + 45*x**4*y**3*z/2 + 9*x**4*y*z**2 + 27*x**3*y**4 + 75*x**3*y**2*z/2 + 9*x**3*z**2/2 + 81*x**2*y**3/2 + 21*x**2*y*z/2 + 3*x*y**2 - 3*x*z - 8*y",
+      "-9*x**5*y*z**2 - 45*x**4*y**2*z - 9*x**4*z**2 - 54*x**3*y**3 - 30*x**3*y*z - 27*x**2*y**2 + 9*x**2*z + 21*x*y + 1"
+    ]
+  ],
+  "weighted_Euler_residual": [
+    "0",
+    "0",
+    "0"
+  ],
+  "weights": [
+    1,
+    -1,
+    -2
+  ],
+  "lifted_energy_defect": "0",
+  "lifted_Jacobian_by_block_identity": 1,
+  "six_dimensional_collision": [
+    [
+      "0",
+      "0",
+      "-1/4",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "-3/2",
+      "13/2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-1",
+      "3/2",
+      "13/2",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "collision_image": [
+    "0",
+    "0",
+    "-1/4",
+    "0",
+    "0",
+    "0"
+  ],
+  "covariance": [
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/2"
+    ],
+    [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-1/2",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "standard_gaussian_conjugation": [
+    [
+      "1",
+      "I",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "I",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "I"
+    ],
+    [
+      "1/2",
+      "-I/2",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-1/2",
+      "I/2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/4",
+      "I/4"
+    ]
+  ],
+  "standard_complex_collision": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/8",
+      "I/8"
+    ],
+    [
+      "1/2",
+      "-I/2",
+      "-3/4",
+      "3*I/4",
+      "13/4",
+      "-13*I/4"
+    ],
+    [
+      "-1/2",
+      "I/2",
+      "3/4",
+      "-3*I/4",
+      "13/4",
+      "-13*I/4"
+    ]
+  ],
+  "finite_moment_controls": [
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value": "1",
+      "exact_position_truncation": 0
+    },
+    {
+      "target_exponents": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 0
+    },
+    {
+      "target_exponents": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 0
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 0
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "value": "1",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "value": "-1",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "value": "-1/2",
+      "exact_position_truncation": 1
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 2
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 3
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 2
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 3
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "value": "0",
+      "exact_position_truncation": 2
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "value": "0",
+      "exact_position_truncation": 3
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 2
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "value": "0",
+      "exact_position_truncation": 3
+    },
+    {
+      "target_exponents": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 4
+    },
+    {
+      "target_exponents": [
+        1,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "value": "0",
+      "exact_position_truncation": 3
+    }
+  ],
+  "scaling_constructor_control": {
+    "unit_Jacobian_verified": true,
+    "jacobian": "1",
+    "normalized_log": "0",
+    "residual": "0",
+    "sufficient_criterion_passed": true,
+    "polynomial_inverse_verified": false,
+    "point_injectivity_inferred": false,
+    "necessity_for_endomorphisms_claimed": false
+  },
+  "nilpotent_sufficient_control": {
+    "unit_Jacobian_verified": true,
+    "jacobian": "-Z*e + 1",
+    "normalized_log": "-Z*e",
+    "residual": "0",
+    "sufficient_criterion_passed": true,
+    "polynomial_inverse_verified": false,
+    "point_injectivity_inferred": false,
+    "necessity_for_endomorphisms_claimed": false
+  },
+  "translation_not_certified": {
+    "unit_Jacobian_verified": true,
+    "jacobian": "1",
+    "normalized_log": "0",
+    "residual": "Q",
+    "sufficient_criterion_passed": false,
+    "polynomial_inverse_verified": false,
+    "point_injectivity_inferred": false,
+    "necessity_for_endomorphisms_claimed": false
+  },
+  "six_dimensional_map_max_degree": 12,
+  "sufficient_logarithmic_endomorphism_certificate_implemented": true,
+  "weighted_cotangent_constructor_implemented": true,
+  "scaling_cotangent_constructor_implemented": true,
+  "general_inverse_solver_implemented": false,
+  "general_safe_pullback_theorem_claimed": false,
+  "necessary_endomorphism_log_criterion_claimed": false,
+  "all_source_marker_transfer_without_inverse_claimed": false,
+  "new_scalar_GMC_counterexample_constructed": false,
+  "universal_theorem_verified_by_controls": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "novelty_claimed": false
+}

@@ -1,0 +1,105 @@
+{
+  "status": "exact-primary-unit",
+  "source_sha256": "539439c38c31a3902feb7c0c90f832ca1a2c7ea8dade2f8315076a34a9887cfd",
+  "input_sha256": "afd51141e912aa7e7c227f3f5fc9ecb1458642db029c316b96729668f0a69b7f",
+  "script_sha256": "774eb4b79b5fee58188cc38fddff838f094da0a46426e5921394c7995bb5f4ad",
+  "multipliers": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-24/7"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "258/35"
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-48/7"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "16/35"
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "32/7"
+      },
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "8/5"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "2/3"
+      }
+    ]
+  ]
+}

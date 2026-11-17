@@ -1,0 +1,12 @@
+PASS:31:43
+PASS:31:49
+PASS:43:49
+PASS:38:52
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-06.sing line 17: `*u2^2/2 + u1*u2*u3/2 - u1*u2*u4/2 - 1,u1*u2^2/2 - u1*u2*u3/2 + u1*u2*u4/2 + 1;`
+PASS:39:53
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/power-single-compress/case-06.sing line 20: `*u2^2/2 + u1*u2*u3/2 - u1*u2*u4/2 - 1,u1*u2^2/2 - u1*u2*u3/2 + u1*u2*u4/2 + 1;`
+PASS:74:88

@@ -1,0 +1,8 @@
+{
+  "case": "both",
+  "input_sha256": "a8b55ac11168d9434b045517cedf498b42182a9ebf5053f74851ed2b7285e1dd",
+  "mode": "field",
+  "seconds": 4.598,
+  "source_sha256": "1122095cdf38fdc79cf4b2d2ccc7756d82d6710e3d2f899b7866ca90048fb1ed",
+  "status": "primary-slice-basis"
+}

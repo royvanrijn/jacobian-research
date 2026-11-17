@@ -1,0 +1,12 @@
+{
+  "input_sha256": "9f019e282a0af75eee6ed0147562cf6c9a3c3ab949f78c89efb95694852e3f78",
+  "nonlinear_atom_total": 19,
+  "scope": "Enlarged negative-weight tail model; proper basis needs parameter extraction and actual determinant/collision replay. No new sparsity or global minimum claim.",
+  "seconds": 20.004,
+  "source_sha256": "7c213b72c80554853ffb098af898f17fa2f6f73aa4f0e426dc056808c65dc9cc",
+  "status": "timeout",
+  "tail_atom_counts": [
+    8,
+    9
+  ]
+}

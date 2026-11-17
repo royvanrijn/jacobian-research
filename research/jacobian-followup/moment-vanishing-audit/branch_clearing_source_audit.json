@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/BRANCH_CLEARING_AND_HAAR_AUTOMORPHISM_RIGIDITY.md",
+  "proof_sha256": "010d7c5b1abdbc5848b6a016fea3e49a628cc14a936887dbd1d7f5d6881d12d9",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_branch_clearing_rigidity.py",
+  "checker_sha256": "5ef6e3bbe26a8cee4286ad21fc2d5f07ad3fefee8e492b39c13b91ed237cb100",
+  "receipt": "jacobian-followup/moment-vanishing-audit/branch_clearing_verification.json",
+  "receipt_sha256": "18fa060739098cda45a52084003f3dfd9923b555606963a6cae9a1f4a4778d31",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/QUADRATIC_TRACE_MODELS_AND_HAAR_RESIDUES.md",
+      "sha256": "b8b88d2d4deea937cc9fdcae6937210b394a3b5025d3f19cbd924910c70517ee",
+      "selected_use": "Exact R,S,B,additive torsors and normalized trace;cohomologically trivial deck action and nonzero common H3 class"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/INTRINSIC_REYNOLDS_AND_FINITE_QUOTIENT_DESCENT.md",
+      "sha256": "9bc929aaac70783649f09d6faa00e45c85ae25fd9f30e9a486ad3ab34be240a7",
+      "selected_use": "Original Haar automorphism transport and safety of automorphism saturation of the nullcone"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/GENERIC_FIBRES_AND_RATIONAL_DESCENT_BARRIERS.md",
+      "sha256": "89852b972664324889dde64c7572880854a7ac8ed3b58ef8d06f86f0df95db35",
+      "selected_use": "Known target Hopf/normalizer slice depths6/20;separation of rational invariantization and regularity"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/quadratic_trace_polynomial_images.json",
+      "sha256": "38129704e081768d4e1b8dbb8dbc8090d31f60f5b1d255bee500c2a1f7bd8c94",
+      "selected_use": "Full actual highest-form images,used only as exact grading controls"
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/quadratic_trace_source_audit.json",
+      "sha256": "f2181973e8151cd4804dd924bc941bc77e11d551c7f97a0610b47075d547798b",
+      "selected_use": "Pinned source boundaries for the imported quadratic model"
+    }
+  ],
+  "new_all_degree_arguments": [
+    "The inherited original left torus has weights(m,n,-n,-m,-r);SL2 ladders bound every depth-d ambient expression by max(n,m)*d.",
+    "eta^d times every ambient depth-d expression is exactly admissible and has all original weights <=-(min(n,m)-2)*d. The exponent and weight bound are sharp uniformly;all such phases are in the original nullcone with explicit all-marker cutoffs.",
+    "No nonzero ambient multiplier clears the entire algebra:the local conductor O[eta*s] subset O[s] is zero by leading-coefficient valuations.",
+    "Omega_Z=pullback(Omega_SL2)/eta is a nowhere vanishing canonical form,units are constant,and its normalized period T is the odd-coefficient Haar functional. The T(ab) pairing is nondegenerate.",
+    "All algebra automorphisms scale T. Nondegeneracy implies preservation of L=T(eta*-) iff eta is scaled;equivalently they preserve the branch divisor.",
+    "Generic eta-level base curves have genera3/4 by cyclic Riemann-Hurwitz. Since A1 has no nonconstant map to either curve,all Haar-preserving ambient automorphisms preserve B and normalize the free additive derivation by a constant.",
+    "Such automorphisms preserve every exact derivative-divisibility condition,so alpha(S)=S. They cannot repair any nonadmissible phase or marker. Universal clearing followed by any of them stays in the already safe automorphism saturation."
+  ],
+  "classical_inputs_proved_or_identified": "SL2 ladder decomposition;regular conjugation and nondegenerate ordinary SU2 Haar pairing;Riemann-Hurwitz for degree-three cyclic covers;line-bundle tangent of an additive torsor. No automorphism-group or Makar-Limanov classification is imported.",
+  "exact_controls": "Both defining gradings;mixed-parity depth3 clearing and extremal monomial;all20/40 highest-image terms have exact original positive weight;cyclic branch equations,squarefreeness,ramification orders and genera3/4;three nonzero Haar pairings;L=T(eta*-) in both quadratic algebras.",
+  "logical_boundaries": [
+    "Universal filtration,canonical-volume,period and automorphism arguments remain internal written proofs,not machine verified by these controls.",
+    "Sharpness is uniform on the whole depth filtration;individual coefficient cancellations can need smaller branch exponents and are not classified.",
+    "Zero conductor is compatible with finite clearing on every depth filtration.",
+    "The automorphism theorem covers all algebraic automorphisms preserving L,not arbitrary rational transformations or general noninvertible maps.",
+    "No claim that every original quotient automorphism lifts to R,or that all admissible pure-null phases belong to an exhaustive safe normal form.",
+    "Both exceptional MZ decisions and the full original objective remain OPEN."
+  ],
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

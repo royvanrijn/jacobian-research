@@ -1,0 +1,119 @@
+{
+  "claims": [
+    "G3NODALCENTERALL20261114",
+    "G3NODALMORSE20261114"
+  ],
+  "date": "2026-11-14",
+  "main_import": {
+    "author": "Frederic Pham",
+    "title": "La descente des cols par les onglets de Lefschetz, avec vues sur Gauss-Manin",
+    "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+    "cache": "sources/pham_asterisque_1985_130_11.pdf",
+    "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+    "new_reading": "PartI Section3 Morse-thimble example and Section4 parameter/cut decomposition (printed15-17); PartII Section1.1 Morse example, formulas(1.5)prime through(1.7), and following parameter discussion (printed26-27). Other retained sections remain as in previous audits. Not a full-manuscript read.",
+    "use": "Rank-one local Morse thimbles have a nonzero leading Gaussian coefficient. Analytic parameter Morse coordinates are applied only where the limiting local Hessian is invertible. The actual full-cut matching uses the adjacent logarithmic cutoff proof and retained/new uniform tail bounds."
+  },
+  "retained_imports": "NODAL_CENTER_LINE_DECAY.md supplies parameter-independent center-line carriers, a flat rank7 cut basis and normalized bounds, retaining full Gaussian means. NODAL_GAUSSIAN_CRITICAL_PROFILES.md supplies exact finite Milnor sums and escape scales. COERCIVE_GRADIENT_MOMENTS.md supplies pointwise complex gradient coercivity from the ordinary node and nonzero quadratic value. Compatible Hardt triviality and the formal-seed/actual-period bridge are reused with their prior source audits.",
+  "new_written_proof": [
+    "For the strict triangle, a supporting normal to the off-axis edge has positive real parts on both Morse actions and negative real part on the critical-line action. A small perturbation orders the two positive growth rates. Their scalar leading coefficients are nonzero, so successive dominance removes both coefficients and the remaining five periods decay. This closes every center-line coefficient case.",
+    "For finite-critical profiles, the quantified set of admissible coercivity radii/constants is semialgebraic with nonempty fibers. Cell selection and one-variable algebraic growth give polynomial parameter bounds. Constrained compactified cut pairs and uniform finite-complexity area bounds give tails jointly polynomial in parameter and cut length. A logarithmic cutoff transfers the finite and escaping local Morse leading terms to the full flat basis.",
+    "Distinct finite P-values and nonzero quartic gamma make all nonzero positive-action polynomials distinct. On a generic ray their real growth orders separate. Growing coefficients vanish successively; bounded-action Morse periods and negative-action periods decay."
+  ],
+  "quartic_exception": "gamma=d*e*m/(2*c)-l_T on h=f=0,e*c!=0, after swapping u,v when required. Opposite fourth roots have identical positive actions when gamma=0, so this boundary is not closed by the generic argument.",
+  "new_literature_review": [
+    {
+      "author": "Jesse Forjan",
+      "title": "Reduction, Exponential Gauss-Manin Systems, and Stokes Phenomena",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7005889",
+      "producer_pdf": "https://papers.ssrn.com/sol3/Delivery.cfm/a43cc1c1-7b55-4946-af64-d9715c415609-MECA.pdf?abstractid=7005889&mirid=1",
+      "observed_metadata": "Indexed primary abstract:69 pages, posted27June2026. No explicit revision identity verified.",
+      "reading_boundary": "Indexed abstract and metadata only. Both the landing-page and producer-PDF open requests returned403. No manuscript body or proof hypotheses read, no code executed and no theorem imported.",
+      "relevance": "Its abstract distinguishes twisted de Rham reduction from the ordinary Jacobian algebra and discusses scaled formal exponential types. That abstract does not establish the needed parameter-dependent nodal infinity hypotheses."
+    },
+    {
+      "author": "Celine Roucairol",
+      "title": "Irregularity of an analogue of the Gauss-Manin systems",
+      "url": "https://www.numdam.org/item/BSMF_2006__134_2_269_0.pdf",
+      "cache": "sources/roucairol_irregularity_2006.pdf",
+      "sha256": "ad9d59ae43afb3c87f45e20c038d0cfbd10f7448003222dda52a846a644ac972",
+      "version": "Published BSMF134(2),2006,269-286; distinguished from math/0505075v1.",
+      "reading_boundary": "Published abstract and Introduction1.1-1.2 setup only. No irregularity formula applied.",
+      "relevance": "Exponential twists can give irregular direct images, so ordinary Gauss-Manin regularity cannot be imported unchanged. Its explicit geometric irregularity calculation is in two variables and is not a ternary nodal theorem."
+    },
+    {
+      "author": "Claude Sabbah",
+      "title": "An explicit stationary phase formula for the local formal Fourier-Laplace transform",
+      "url": "https://perso.pages.math.cnrs.fr/users/claude.sabbah/articles/sabbah_Fourier-local.pdf",
+      "cache": "sources/sabbah_fourier_local.pdf",
+      "sha256": "928b38db6406e031ed023cd7d2853fe4469c783af387fa5ced635224227ccf6d",
+      "version": "Author-hosted22-page PDF; no unsupported latest-revision claim.",
+      "reading_boundary": "Introduction, formal-transform setup and beginning of elementary formal connections, Sections1-2. Roucairol math/0604134v2 metadata was also inspected, not its full proof.",
+      "relevance": "General formal Fourier/direct-image formulas require their source module and infinity data to be identified. No such theorem is imported here; the new proof uses actual cut bases and scalar dominance instead."
+    }
+  ],
+  "exact_evidence": {
+    "checker_sha256": "fbab0642e53380e5d5fbe74f337860d9248932f2ebdcaf12b724e9a91ae5996f",
+    "triangle_ray": {
+      "values": [
+        "-1 - I",
+        "2 - I",
+        "-1 + 2*I"
+      ],
+      "direction": "27/10 - 33*I/10",
+      "ordered_real_parts": [
+        "-6",
+        "21/10",
+        "39/10"
+      ],
+      "pure_null_witness": false
+    },
+    "finite_examples": [
+      {
+        "profile": "h!=0",
+        "finite_count": 6,
+        "P": "T*(uv+1)+u^3+v^3+u^2+2*v^2+u+3*v",
+        "critical_polynomial": "3*u**6 + 2*u**5 + u**4 + 3*u**2 - 4*u + 3",
+        "critical_value_polynomial": "729*s**6 + 2430*s**5 + 12647*s**4 + 75888*s**3 + 343223*s**2 + 753806*s + 1606093"
+      },
+      {
+        "profile": "h=0, e*f!=0",
+        "finite_count": 4,
+        "critical_value_polynomial": "729*s**4 + 972*s**2 + 128"
+      },
+      {
+        "profile": "h=0, e!=0, f=0, c!=0",
+        "finite_count": 3,
+        "critical_value_polynomial": "729*s**3 - 108*s**2 + 108*s - 16"
+      },
+      {
+        "profile": "h=0, e!=0, f=c=0",
+        "finite_count": 2,
+        "critical_value_polynomial": "27*s**2 + 4"
+      }
+    ],
+    "off_axis_Hessians": [
+      {
+        "point": [
+          "-2*b/(3*a)",
+          "0",
+          "0"
+        ],
+        "Hessian_determinant": "8*b**3/(9*a**2)"
+      },
+      {
+        "point": [
+          "0",
+          "-2*c/(3*d)",
+          "0"
+        ],
+        "Hessian_determinant": "8*c**3/(9*d**2)"
+      }
+    ]
+  },
+  "retained_failure": "nodal_morse_dominance_initial_failure.json: the first quartic reduction inferred a coefficient field omitting d. The original input and rejection are preserved; the common rational function field correction passes.",
+  "analytic_boundary": "Triangle geometry, Hessians, finite critical/action formulas, quartic coefficient and exact squarefree example polynomials are checked. Global polynomial carriers, flat cut bases, local Morse matching, parameter-uniform tails and dominance remain internal written analysis.",
+  "remaining": "Finite-critical nodal degeneracies, coincident affine critical values or the quartic gamma=0 resonance; other singular-leading cubics, numerical gates, coefficient schemes and lower-power GVC.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

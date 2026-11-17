@@ -1,0 +1,126 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Hatcher, Notes on Basic 3-Manifold Topology, retained version",
+      "bytes": 384715,
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "complete_PDF_pages_visually_rechecked": [
+        20,
+        21
+      ],
+      "printed_pages": [
+        19,
+        20
+      ],
+      "used_statement": "Proposition1.13 essential vertical annulus in the trefoil, Lemmas1.14-1.15 boundary fibre uniqueness with all exceptions; PF77 retains the complete PDF15 Theorem1.9 JSJ audit. Terminal Klein alternative is handled explicitly by its boundary group, not fibre uniqueness.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Retained complete PF65/72/73/74/77-81/85 audits, reused at PF90; no fresh PDF visual audit asserted",
+      "prior_complete_audit_reused_at_PF94": true,
+      "fresh_PDF_audit_at_PF94": false
+    },
+    {
+      "path": "sources/oriented-pattern-linking/neumann-raymond-1978.pdf",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/neumraym.pdf",
+      "title": "Neumann--Raymond, Seifert manifolds, plumbing, mu-invariant and orientation reversing maps, LNM664(1978),163-196",
+      "bytes": 893752,
+      "sha256": "89bac2695f8ac2bdee3575ea313351c9ad9842972e99d27f3a8082f601427df6",
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13
+      ],
+      "principal_used_complete_PDF_pages": [
+        3,
+        4,
+        6,
+        11,
+        12,
+        13
+      ],
+      "printed_pages": [
+        165,
+        166,
+        168,
+        173,
+        174,
+        175
+      ],
+      "used_statement": "Theorem1.2 Euler naturality for oriented fibre-preserving maps, including branched maps; signed inverse slice convention and Euler definition; Theorem5.1 star plumbing and signed continued fractions, intersection form, and Theorem5.2 Schur/definiteness convention. Convert the paper signed leg parameter to minus the positive beta in a normalized negative leg. The proof derives the model, Euler number, selected inverse entry and mod3 mismatch; no contact/filling classification or full satellite plumbing theorem imported.",
+      "imported_not_independently_reproved": true,
+      "prior_manifest": "sources/fibre-order-transfer/manifest.json",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "Retained complete PF65/72/73/74/77-81/85 audits, reused at PF90; no fresh PDF visual audit asserted",
+      "prior_complete_audit_reused_at_PF94": true,
+      "fresh_PDF_audit_at_PF94": false
+    },
+    {
+      "path": "sources/binomial-periodic/clay-watson-2011v1.pdf",
+      "url": "https://arxiv.org/pdf/1103.2358v1",
+      "title": "Clay--Watson, On cabled knots, Dehn surgery, and left-orderable fundamental groups (2011v1)",
+      "bytes": 172042,
+      "sha256": "52ef8101e1e67ffdb17248152285ac34e044c22ba54103bdcab6b46e233a2b7b",
+      "used_statement": "Retained complete PDF6 audit: root-amalgam and BOTH cable peripheral words. PF65 uses exactly PF63 conventions, k=rc+1, beta=M^-c L^-1, mu=z beta, lambda=h mu^-rk. No new surgery, Seifert or orderability theorem imported.",
+      "imported_not_independently_reproved": true,
+      "prior_complete_page_audit_reused": true,
+      "original_manifest": "sources/binomial-periodic/manifest.json",
+      "page_audit_origin": "Retained complete PF65/72/73/74/77-81/85 audits, reused at PF90; no fresh PDF visual audit asserted",
+      "prior_complete_audit_reused_at_PF94": true,
+      "fresh_PDF_audit_at_PF94": false
+    },
+    {
+      "path": "sources/quartic-cabling/neumann-norbury-orevkov.pdf",
+      "url": "https://researchers.ms.unimelb.edu.au/~norbury@unimelb/papers/orevkov.pdf",
+      "title": "Neumann--Norbury, The Orevkov invariant of an affine plane curve",
+      "bytes": 232604,
+      "sha256": "def4b11769151bd31eb3936d699d235d0855fda4c1004f407cc7e1989fe4caa7",
+      "used_statement": "Section4 Figure1 actual ordinary cabling/strict Delta_j<0; Section5.2 complete canonical definition and recurrence d_j=r_j*d_prev+k_j-r_j*B_prev, d0=p+q. No moduli connectedness theorem imported.",
+      "imported_not_independently_reproved": true,
+      "complete_PDF_pages_rendered_and_visually_inspected": [
+        6,
+        12,
+        13
+      ],
+      "fresh_complete_page_audit": false,
+      "rendered_pages": "tmp/pdfs/wright91/nn-6.png,nn-12.png,nn-13.png; complete relevant pages inspected via view_image",
+      "prior_complete_page_audit_reused": true,
+      "page_audit_origin": "PF91 complete NN PDF6/12/13 audit reused; no fresh PDF rendering at PF92",
+      "prior_complete_audit_reused_at_PF94": true,
+      "fresh_PDF_audit_at_PF94": false
+    },
+    {
+      "path": "sources/genus-final-s3/hom-0912.4046v1.html",
+      "url": "https://arxiv.org/html/0912.4046",
+      "bytes": 108307,
+      "sha256": "4e0895d2ad5d8f71ed1f2dd1ee82b9e7ae690ceb556a9bfda26ec9ab162cce74",
+      "version_markers": [
+        "0912.4046v1"
+      ],
+      "title": "Hom, A Note on Cabling and L-space surgeries, arXiv0912.4046v1",
+      "complete_relevant_primary_HTML_read": true,
+      "sections": [
+        "Section1 full Theorem and conventions",
+        "Section2 complete rank formula and proof"
+      ],
+      "used_statement": "Positive L-space cabling iff companion positive L-space and k/w>=2g-1 (forward construction due to Hedden); Section2 displayed all-slope hat-rank formula for tau=g and s_K=0 gives exact [2g-1,infinity] filling interval, with included genus endpoint.",
+      "imported_not_independently_reproved": true,
+      "new_deep_Floer_import": true,
+      "prior_complete_audit_reused_at_PF94": true,
+      "fresh_PDF_audit_at_PF94": false,
+      "PF94_HTML_sections_rechecked": "Introduction complete positive L-space cabling Theorem, Section2 cabling genus identity and threshold; no new deep theorem beyond PF91 import",
+      "PF94_use": "Positive deficit D and exact k/r-c=(D+epsilon/r)/b>0 permit induction of positive L-space ordinary companions at every solid history depth."
+    }
+  ],
+  "retained_peripheral_and_topology_proofs": "PF84 annulus cyclic cover model, PF87/PF90 actual unit-winding integral pattern transfer; actual fixed-sheet cap retained. All source audits reused, no new independent topology proof or fresh PDF audit asserted.",
+  "retained_deep_Floer_import": "Hom0912.4046v1 positive L-space cable threshold already imported PF91; new unified application not a new independent proof.",
+  "finite_controls_not_universal_proof": true
+}

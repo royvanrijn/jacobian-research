@@ -1,0 +1,18 @@
+{
+  "archive_sha256": "5ac529c2338c5404bace25091c2623e9a75710a5660455e1d58dc52b0361b020",
+  "returncode": 0,
+  "wall_seconds": 13.046151339949574,
+  "replay_directory": "tmp/rodrigues-seven-targets-j50ggkzy",
+  "all_input_hashes_match": true,
+  "output_bytes_equal": {
+    "global_target_nilindices.json": true,
+    "global_adapted_targets.json": true,
+    "global_cubic_relation.json": true,
+    "odd_slice_support_certificate/odd_slice_support_data.json": true
+  },
+  "resource_limits": {
+    "wall_seconds": 180,
+    "cpu_seconds": 180,
+    "address_space_bytes": 3221225472
+  }
+}

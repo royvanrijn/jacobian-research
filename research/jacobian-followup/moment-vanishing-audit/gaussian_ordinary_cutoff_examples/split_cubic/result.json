@@ -1,0 +1,155 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "dimension": 2,
+    "parameter_count": 1,
+    "phase_terms": [
+      [
+        [
+          3,
+          0,
+          1
+        ],
+        "1"
+      ]
+    ],
+    "precision_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "cutoff_slope": 1,
+  "cutoff_intercept": 0,
+  "pure_moments_only": false,
+  "ideal_lift": [],
+  "original_generating_moments": [],
+  "stopping_trace": [
+    {
+      "proposed_ideal": [],
+      "oracle": {
+        "status": "DECIDED",
+        "zero": true,
+        "components": [
+          {
+            "algebra": {
+              "component": {
+                "primary_ideal": [],
+                "radical_ideal": [],
+                "prime_radical_checked": true,
+                "independent_indices": [
+                  0
+                ],
+                "dimension": 1
+              },
+              "scalar_parameters": [
+                "c0",
+                "a0",
+                "a1",
+                "a2"
+              ],
+              "dependent_variables": [],
+              "standard_monomials": [
+                []
+              ],
+              "rank": 1,
+              "unit": [
+                {
+                  "numerator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ],
+                  "denominator": [
+                    [
+                      [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "1"
+                    ]
+                  ]
+                }
+              ],
+              "multiplication_table": [
+                [
+                  [
+                    {
+                      "numerator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ],
+                      "denominator": [
+                        [
+                          [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "1"
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              "injectivity_contract": "Q is primary and nonzero polynomials in its maximal independent variables avoid radical(Q); localization is injective. Primary status is trusted CAS."
+            },
+            "zero": true,
+            "method": "totally_isotropic_support",
+            "active_variables": [
+              0
+            ],
+            "minimum_phase_degree": 3
+          }
+        ],
+        "primary_components": [
+          {
+            "primary_ideal": [],
+            "radical_ideal": [],
+            "prime_radical_checked": true,
+            "independent_indices": [
+              0
+            ],
+            "dimension": 1
+          }
+        ]
+      }
+    }
+  ],
+  "retains_ordinary_parameter_ideal": true,
+  "actual_image_kernel_computed": false,
+  "assurance": "Primary decomposition/injectivity contract uses trusted CAS; original moment witnesses and scalar IBP identities are finite exact certificates. No universal independent assurance.",
+  "least_generating_prefix": {
+    "least_total_index_prefix": 0,
+    "pure_moment_prefix": false,
+    "finite_membership_trials": [
+      {
+        "total_index_prefix": 0,
+        "full_ideal_generated": true
+      }
+    ],
+    "convention": "all forbidden (alpha,m) with |alpha|+m<=prefix; pure mode uses alpha=0"
+  }
+}

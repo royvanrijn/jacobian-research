@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-11-16",
+  "sources": [
+    {
+      "path": "sources/normal-resolution-chern/bogomolov-de-oliveira-author.pdf",
+      "bytes": 260140,
+      "sha256": "4e2984a2e0a9b849e2d19309b05134d07f61ea41cb9825311cb49004104ed4ac",
+      "title": "Fedor A.Bogomolov and Bruno de Oliveira, Stein Small Deformations of Strictly Pseudoconvex Surfaces, author copy",
+      "url": "https://www.math.miami.edu/~bdeolive/amss.pdf",
+      "author_copy_header": "Contemporary Mathematics, Volume00,1998;17PDFpages;publishedpaginationnotclaimed",
+      "published_reference": "Contemporary Mathematics207(1997),25-41,DOI10.1090/conm/207/02717; bibliographicpinEpstein2012fullPDF7",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        1,
+        2,
+        3,
+        6,
+        14,
+        15,
+        16
+      ],
+      "used_statement": "FullPDF1-2 Theorem(2)/(2prime): a minimal relativelycompact strictlypseudoconvex smooth surface has small Stein deformation. FullPDF3 DefinitionB requires strictpsh only nearboundary, notonexceptionalcurves. FullPDF6 Proposition2 gives C-infinitytrivialdeformation; fullPDF14-15 MainTheorem2proof completion, fullPDF15 Theorem5andproof: oneparameterboundarycontactfamily/Grayisotopy preserved afterresolutionanddeformation. FullPDF16 references read. Applying theorem to minimalresolvedactualcore; no claim arbitraryblowup/nonminimalcore canbeSteindeformed, no singularity smoothing or newKellermap claim.",
+      "independent_whole_deformation_proof": false
+    },
+    {
+      "path": "sources/normal-resolution-chern/epstein-addendum-2012.pdf",
+      "bytes": 328376,
+      "sha256": "ffd0913006ba0523fdda9eed7ed15e74e53800641354ce0f039c12bc0f05f7e1",
+      "title": "Charles L.Epstein, Addendum to Subelliptic SpinC Dirac operators III, Ann.Math176(2012),1373-1380,DOI10.4007/annals.2012.176.2.12",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v176-n2-p12-p.pdf",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        4,
+        7
+      ],
+      "used_statement": "FullPDF4/printed1376 explicitly applies Bogomolov-deOliveiraTheorem2prime to MINIMALRESOLUTIONSofNORMALSTEINSPACES, obtains smallcomplexperturbationsStein and2CWtopology. FullPDF7/printed1379 reference1 gives actualpublishedBogomolov-deOliveira1997ContempMath207,25-41,DOI. Only independent confirmationofdeformation applicability andsourceversion used; no relativeindex/CRclosuretheorems imported."
+    },
+    {
+      "path": "ALL_ADE_END_CANONICAL_ENERGY_EXCLUSION.md",
+      "bytes": 10095,
+      "sha256": "6b46a989fe174a9a049abab761f5d15904926cf780d48a83c75635655a2f0cfd",
+      "source_kind": "canonical predecessor",
+      "used_statement": "PF108 complete negativeADElink contact uniqueness and canonicalminimalfilling topology/theta atallA/D ranksandE6/7/8; orientation andall-minus-twoTREEclassification. Deepclassificationimported with fullselectedprimarypageaudits retained."
+    },
+    {
+      "path": "sources/ade-end/manifest.json",
+      "bytes": 6113,
+      "sha256": "50a3cf444d23f807cb5c9d64510f552c202c07a975e450a6e6b14b8d3f9283eb",
+      "source_kind": "retained primary-classification audit manifest",
+      "used_statement": "Exact PF108 sourcepins: Ghiggini2008 unique all-2contactstructure, OzsvathSzabo ellipticLspace, OhtaOno authors2002PSMainTheorem minimalfillMilnorfibre,1999referenceCartan/canonical/orientation. No fresh PDF audit ofthesealreadysealedworks thisturn.",
+      "fresh_visual_audit_this_turn": false
+    },
+    {
+      "path": "CANONICAL_FORMATS_AND_BINARY_CONDUCTOR.md",
+      "bytes": 15693,
+      "sha256": "1ff3e680b7700609781667411d4b06a0c17128eb92694101825a5c9026e309ca",
+      "source_kind": "canonical context",
+      "used_statement": "PF57 all-degreeactualnormalCl boundarylocalizationbasisusesfactorialwholeA2andconstantunits. Resolution version and rational topologicalChern injectivity written independently here."
+    },
+    {
+      "path": "PROPER_FINITE_MARKED_END_AND_COMPONENT_OPEN_AUDIT.md",
+      "bytes": 17406,
+      "sha256": "1aa1fd1d61ec122189c0cb7914d41b67619145f3ac1b8fca24e56791c9fa0d6e",
+      "source_kind": "canonical context",
+      "used_statement": "PF98 originalfiniteactualmarkedradialend,wholeboundaryretained,no component-openfinite assumption. Resolution changesonlycompactinterior; largeoriginalradialcore retracts and strictlypshcollarperturbation keepsorientedend."
+    },
+    {
+      "path": "MULTIPLE_BOUNDARY_CANONICAL_CONTACT_AND_A_TYPE_END_EXCLUSION.md",
+      "bytes": 10195,
+      "sha256": "396d2d5747a37b617ee1685b0e0f33c5feef022600ae4d017a85d87206520ac5",
+      "source_kind": "canonical context",
+      "used_statement": "PF103 smooth nonautomorphicboundarycanonicalnonnullargument,Hartogsisolatedboundarypoint exclusion,strictpshradialcollar,exactSteinminimality/Gompftheta andA-typecontactuniqueness."
+    }
+  ],
+  "new_written_unbounded_proofs": [
+    "freeboundaryPicardbasisonminimalresolutionofWHOLEplaneextension",
+    "rationalcompactificationThom/exponentialargumentinjects algebraicPic tensorQ intorationalH2 without rational-singularityvanishing",
+    "regularpulledtargetvolumehasnonzeroeffectiveboundarydivisorwithstrictDcoeffe-1andcontractedEcoeff>=1",
+    "minimalresolutionofAFFINENhasnoholomorphic-1curves; actualstrictpseudoconvexcorequalifiesfordeclaredSteindeformation",
+    "homotopyofcomplexbundlepreservesNONZERO rationalc1; simplyconnectedSteinfillingandb2>=allboundarycomponentcount",
+    "everyactualNORMALnegativeADEendexcludedbyminimalSteinfillingtopology/uniquecontactandnegativeChern-squarecontradiction"
+  ],
+  "deformation_theorem_imported": true,
+  "previous_deep_contact_and_filling_imports_retained": true,
+  "original_resolved_Kahler_form_exact_claimed": false,
+  "deformed_target_map_holomorphic_claimed": false,
+  "deformed_whole_plane_holomorphic_claimed": false,
+  "arbitrary_nonminimal_resolution_deformable_claimed": false,
+  "singularity_smoothing_required": false,
+  "whole_marked_plane_required": true,
+  "all_spherical_ends_excluded": false,
+  "reversed_orientations_excluded": false,
+  "global_finite_algebra_closed": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true
+}

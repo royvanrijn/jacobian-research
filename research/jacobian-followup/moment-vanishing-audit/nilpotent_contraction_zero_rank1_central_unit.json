@@ -1,0 +1,16 @@
+{
+  "status": "EXACT_UNIVARIATE_UNIT",
+  "variables": [
+    "r"
+  ],
+  "moments": [
+    "7*r**2 + 3",
+    "3003*r**4 + 3432*r**3 + 6578*r**2 + 1872*r + 723"
+  ],
+  "multipliers": [
+    "819819*r**3/11693750 + 8187179*r**2/23387500 + 5052047*r/11693750 + 34027409/70162500",
+    "-1911*r/11693750 - 44149/70162500"
+  ],
+  "identity": "1",
+  "boundary": "Normalize central cubic coefficient nonzero; if zero mu2 kills the remaining central linear coefficient"
+}

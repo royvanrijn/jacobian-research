@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "canonical_proofs_sha256": {
+    "TIME_ZERO_SATURATION_AND_PRINCIPAL_PART_RECONSTRUCTION.md": "6338ac84e85d133b96a67f9d1fdf7e0676d4a935e7b799a2f7cf0beaae35ef75",
+    "GLOBAL_EULER_AND_GAUSSIAN_PULLBACK_LATTICES.md": "3e98386dacb21010acccae0da81954f51e976f99a65f35eb91805830eb21c7a6"
+  },
+  "checker_sha256": "b7860158b70d1a6e91c4f05fd22655eba9974623071c28fb831b3ae3dac4558c",
+  "certificate_sha256": "7c431d93eea29c949a5bd9758045efe5f7247a43481af6a8c83229f3e1f56640",
+  "runtime_sha256": "939b0a8f416506722dedd0044c59f0207cfc35145bc6c4efa622adeb05846dfe",
+  "cancellation_controls": 3,
+  "principal_part_controls": 3,
+  "Euler_point_models": 5,
+  "terminating_controls": 2,
+  "global_models": 3,
+  "pullback_glue_controls": 3,
+  "power_packet_controls": 5,
+  "rejections": 10,
+  "historical_cusp_and_cone_restarted": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "assurance": "Finite exact transcriptions only; universal all-ring and all-index results use the written proofs."
+}

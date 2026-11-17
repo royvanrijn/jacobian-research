@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 47.21 (0DW6): Gorenstein rings&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELV" data-tag="0ELV">3</a>: Topics in Scheme Theory
+    
+  
+    <li>Chapter <a href="/tag/08XG" data-tag="08XG">47</a>: Dualizing Complexes
+    
+  
+    <li class="active">Section <a href="/tag/0DW6" data-tag="0DW6">47.21</a>: Gorenstein rings
+    <span id="citation">(<a href="/tag/0DW6/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0DW4">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0DWB">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="dualizing-section-gorenstein" class="tex-section"><span data-tag="0DW6">47.21</span> Gorenstein rings</h2>
+
+<p>
+So far, the only explicit dualizing complex we've seen is $\kappa $ on $\kappa $ for a field $\kappa $, see proof of Lemma <a href="/tag/0A7L" data-tag="0A7L">47.15.12</a>. By Proposition <a href="/tag/0A7K" data-tag="0A7K">47.15.11</a> this means that any finite type algebra over a field has a dualizing complex. However, it turns out that there are Noetherian (local) rings which do not have a dualizing complex. Namely, we have seen that a ring which has a dualizing complex is universally catenary (Lemma <a href="/tag/0A80" data-tag="0A80">47.17.4</a>) but there are examples of Noetherian local rings which are not catenary, see Examples, Section <a href="/tag/02JE" data-tag="02JE">110.19</a>. 
+</p>
+<p>
+Nonetheless many rings in algebraic geometry have dualizing complexes simply because they are quotients of Gorenstein rings. This condition is in fact both necessary and sufficient. That is: a Noetherian ring has a dualizing complex if and only if it is a quotient of a finite dimensional Gorenstein ring. This is Sharp's conjecture (<span class="cite">[<a href="/bibliography/Sharp">Sharp</a>]</span>) which can be found as <span class="cite">[<span class="postnote">Corollary 1.4</span>, <a href="/bibliography/Kawasaki">Kawasaki</a>]</span> in the literature. Returning to our current topic, here is the definition of Gorenstein rings. 
+</p>
+<p>
+<article class="env-definition" id="0DW7">
+  <p><a class="environment-identifier" href="/tag/0DW7">Definition <span data-tag="0DW7">47.21.1</span>.</a> Gorenstein rings. </p>
+  <p><ol>
+  <li><p>
+Let $A$ be a Noetherian local ring. We say $A$ is <em>Gorenstein</em> if $A[0]$ is a dualizing complex for $A$. 
+</p>
+</li><li><p>
+Let $A$ be a Noetherian ring. We say $A$ is <em>Gorenstein</em> if $A_\mathfrak p$ is Gorenstein for every prime $\mathfrak p$ of $A$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+This definition makes sense, because if $A[0]$ is a dualizing complex for $A$, then $S^{-1}A[0]$ is a dualizing complex for $S^{-1}A$ by Lemma <a href="/tag/0A7G" data-tag="0A7G">47.15.6</a>. A finite dimensional Noetherian ring is Gorenstein if it has finite injective dimension as a module over itself, see Lemma <a href="/tag/0HB2" data-tag="0HB2">47.21.6</a>. 
+</p>
+<p>
+<article class="env-lemma" id="0DW8">
+  <p><a class="environment-identifier" href="/tag/0DW8">Lemma <span data-tag="0DW8">47.21.2</span>.</a> A Gorenstein ring is Cohen-Macaulay. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from Lemma <a href="/tag/0AWS" data-tag="0AWS">47.20.2</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+An example of a Gorenstein ring is a regular ring. 
+</p>
+<p>
+<article class="env-lemma" id="0AWX">
+  <p><a class="environment-identifier" href="/tag/0AWX">Lemma <span data-tag="0AWX">47.21.3</span>.</a> A regular local ring is Gorenstein. A regular ring is Gorenstein. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $A$ be a regular ring of finite dimension $d$. Then $A$ has finite global dimension $d$, see Algebra, Lemma <a href="/tag/00OE" data-tag="00OE">10.110.8</a>. Hence $\mathop{\mathrm{Ext}}\nolimits ^{d + 1}_ A(M, A) = 0$ for all $A$-modules $M$, see Algebra, Lemma <a href="/tag/065R" data-tag="065R">10.109.8</a>. Thus $A$ has finite injective dimension as an $A$-module by More on Algebra, Lemma <a href="/tag/0A5T" data-tag="0A5T">15.71.2</a>. It follows that $A[0]$ is a dualizing complex, hence $A$ is Gorenstein by the remark following the definition. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0DW9">
+  <p><a class="environment-identifier" href="/tag/0DW9">Lemma <span data-tag="0DW9">47.21.4</span>.</a> Let $A$ be a Noetherian ring. </p>
+  <p><ol>
+  <li><p>
+If $A$ has a dualizing complex $\omega _ A^\bullet $, then 
+</p>
+<ol>
+  <li><p>
+$A$ is Gorenstein $\Leftrightarrow $ $\omega _ A^\bullet $ is an invertible object of $D(A)$, 
+</p>
+</li><li><p>
+$A_\mathfrak p$ is Gorenstein $\Leftrightarrow $ $(\omega _ A^\bullet )_\mathfrak p$ is an invertible object of $D(A_\mathfrak p)$, 
+</p>
+</li><li><p>
+$\{ \mathfrak p \in \mathop{\mathrm{Spec}}(A) \mid A_\mathfrak p\text{ is Gorenstein}\} $ is an open subset. 
+</p>
+</li>
+</ol>
+</li><li><p>
+If $A$ is Gorenstein, then $A$ has a dualizing complex if and only if $A[0]$ is a dualizing complex. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      For invertible objects of $D(A)$, see More on Algebra, Lemma <a href="/tag/0FNT" data-tag="0FNT">15.128.4</a> and the discussion in Section <a href="/tag/0A7A" data-tag="0A7A">47.15</a>. 
+    <p>
+      By Lemma <a href="/tag/0A7G" data-tag="0A7G">47.15.6</a> for every $\mathfrak p$ the complex $(\omega _ A^\bullet )_\mathfrak p$ is a dualizing complex over $A_\mathfrak p$. By definition and uniqueness of dualizing complexes (Lemma <a href="/tag/0A7F" data-tag="0A7F">47.15.5</a>) we see that (1)(b) holds. 
+    <p>
+      To see (1)(c) assume that $A_\mathfrak p$ is Gorenstein. Let $n_ x$ be the unique integer such that $H^{n_{x}}((\omega _ A^\bullet )_\mathfrak p)$ is nonzero and isomorphic to $A_\mathfrak p$. Since $\omega _ A^\bullet $ is in $D^ b_{\textit{Coh}}(A)$ there are finitely many nonzero finite $A$-modules $H^ i(\omega _ A^\bullet )$. Thus there exists some $f \in A$, $f \not\in \mathfrak p$ such that only $H^{n_ x}((\omega _ A^\bullet )_ f)$ is nonzero and generated by $1$ element over $A_ f$. Since dualizing complexes are faithful (by definition) we conclude that $A_ f \cong H^{n_ x}((\omega _ A^\bullet )_ f)$. In this way we see that $A_\mathfrak q$ is Gorenstein for every $\mathfrak q \in D(f)$. This proves that the set in (1)(c) is open. 
+    <p>
+      Proof of (1)(a). The implication $\Leftarrow $ follows from (1)(b). The implication $\Rightarrow $ follows from the discussion in the previous paragraph, where we showed that if $A_\mathfrak p$ is Gorenstein, then for some $f \in A$, $f \not\in \mathfrak p$ the complex $(\omega _ A^\bullet )_ f$ has only one nonzero cohomology module which is invertible. 
+    <p>
+      If $A[0]$ is a dualizing complex then $A$ is Gorenstein by part (1). Conversely, we see that part (1) shows that $\omega _ A^\bullet $ is locally isomorphic to a shift of $A$. Since being a dualizing complex is local (Lemma <a href="/tag/0A7H" data-tag="0A7H">47.15.7</a>) the result is clear. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0BJI">
+  <p><a class="environment-identifier" href="/tag/0BJI">Lemma <span data-tag="0BJI">47.21.5</span>.</a> Let $(A, \mathfrak m, \kappa )$ be a Noetherian local ring. Then $A$ is Gorenstein if and only if $\mathop{\mathrm{Ext}}\nolimits ^ i_ A(\kappa , A)$ is zero for $i \gg 0$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Observe that $A[0]$ is a dualizing complex for $A$ if and only if $A$ has finite injective dimension as an $A$-module (follows immediately from Definition <a href="/tag/0A7B" data-tag="0A7B">47.15.1</a>). Thus the lemma follows from More on Algebra, Lemma <a href="/tag/0AVJ" data-tag="0AVJ">15.71.7</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0HB2">
+  <p><a class="environment-identifier" href="/tag/0HB2">Lemma <span data-tag="0HB2">47.21.6</span>.</a> Let $A$ be a Noetherian ring. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+$A$ has finite injective dimension as a module over itself, 
+</p>
+</li><li><p>
+$A$ is Gorenstein and finite dimensional. 
+</p>
+</li>
+</ol></p>
+  <p> In this case $A[0]$ is a dualizing complex. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      If $A$ has finite injective dimension as a module over $A$, then $A[0]$ is a dualizing complex over $A$ (see Definition <a href="/tag/0A7B" data-tag="0A7B">47.15.1</a>) and we conclude $A$ has finite dimension by Lemma <a href="/tag/0A80" data-tag="0A80">47.17.4</a> and is Gorenstein by Lemma <a href="/tag/0DW9" data-tag="0DW9">47.21.4</a>. Assume $A$ is Gorenstein and $\dim (A) \leq d < \infty $. Let $I \subset A$ be any ideal. We claim $\mathop{\mathrm{Ext}}\nolimits ^ i_ A(A/I, A) = 0$ for $i > d$; this proves that $A$ has finite injective dimension as a module over itself by More on Algebra, Lemma <a href="/tag/0A5T" data-tag="0A5T">15.71.2</a>. Forming the $\mathop{\mathrm{Ext}}\nolimits $ groups commutes with localization (see for example More on Algebra, Lemma <a href="/tag/0A6A" data-tag="0A6A">15.101.2</a>). Thus to prove vanishing we may assume $A$ is local of dimension $e < d$. As $A$ is Gorenstein we see that $\omega _ A^\bullet = A[e]$ is a normalized dualizing complex. Hence the claimed vanishing by Lemma <a href="/tag/0A7U" data-tag="0A7U">47.16.5</a> for example. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0BJJ">
+  <p><a class="environment-identifier" href="/tag/0BJJ">Lemma <span data-tag="0BJJ">47.21.7</span>.</a> Let $(A, \mathfrak m, \kappa )$ be a Noetherian local ring. Let $f \in \mathfrak m$ be a nonzerodivisor. Set $B = A/(f)$. Then $A$ is Gorenstein if and only if $B$ is Gorenstein. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      If $A$ is Gorenstein, then $B$ is Gorenstein by Lemma <a href="/tag/0A7T" data-tag="0A7T">47.16.10</a>. Conversely, suppose that $B$ is Gorenstein. Then $\mathop{\mathrm{Ext}}\nolimits ^ i_ B(\kappa , B)$ is zero for $i \gg 0$ (Lemma <a href="/tag/0BJI" data-tag="0BJI">47.21.5</a>). Recall that $R\mathop{\mathrm{Hom}}\nolimits (B, -) : D(A) \to D(B)$ is a right adjoint to restriction (Lemma <a href="/tag/0A70" data-tag="0A70">47.13.1</a>). Hence 
+    <p>
+      <div class="equation">
+  \[  R\mathop{\mathrm{Hom}}\nolimits _ A(\kappa , A) = R\mathop{\mathrm{Hom}}\nolimits _ B(\kappa , R\mathop{\mathrm{Hom}}\nolimits (B, A)) = R\mathop{\mathrm{Hom}}\nolimits _ B(\kappa , B[1])  \]
+</div>
+    <p>
+       The final equality by direct computation or by Lemma <a href="/tag/0BZH" data-tag="0BZH">47.13.10</a>. Thus we see that $\mathop{\mathrm{Ext}}\nolimits ^ i_ A(\kappa , A)$ is zero for $i \gg 0$ and $A$ is Gorenstein (Lemma <a href="/tag/0BJI" data-tag="0BJI">47.21.5</a>). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0DWA">
+  <p><a class="environment-identifier" href="/tag/0DWA">Lemma <span data-tag="0DWA">47.21.8</span>.</a> If $A \to B$ is a local complete intersection homomorphism of rings and $A$ is a Noetherian Gorenstein ring, then $B$ is a Gorenstein ring. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By More on Algebra, Definition <a href="/tag/07D0" data-tag="07D0">15.34.2</a> we can write $B = A[x_1, \ldots , x_ n]/I$ where $I$ is a Koszul-regular ideal. Observe that a polynomial ring over a Gorenstein ring $A$ is Gorenstein: reduce to $A$ local and then use Lemmas <a href="/tag/0A7J" data-tag="0A7J">47.15.10</a> and <a href="/tag/0DW9" data-tag="0DW9">47.21.4</a>. A Koszul-regular ideal is by definition locally generated by a Koszul-regular sequence, see More on Algebra, Section <a href="/tag/07CU" data-tag="07CU">15.33</a>. Looking at local rings of $A[x_1, \ldots , x_ n]$ we see it suffices to show: if $R$ is a Noetherian local Gorenstein ring and $f_1, \ldots , f_ c \in \mathfrak m_ R$ is a Koszul regular sequence, then $R/(f_1, \ldots , f_ c)$ is Gorenstein. This follows from Lemma <a href="/tag/0BJJ" data-tag="0BJJ">47.21.7</a> and the fact that a Koszul regular sequence in $R$ is just a regular sequence (More on Algebra, Lemma <a href="/tag/09CC" data-tag="09CC">15.31.7</a>). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0BJL">
+  <p><a class="environment-identifier" href="/tag/0BJL">Lemma <span data-tag="0BJL">47.21.9</span>.</a> Let $A \to B$ be a flat local homomorphism of Noetherian local rings. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+$B$ is Gorenstein, and 
+</p>
+</li><li><p>
+$A$ and $B/\mathfrak m_ A B$ are Gorenstein. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Below we will use without further mention that a local Gorenstein ring has finite injective dimension as well as Lemma <a href="/tag/0BJI" data-tag="0BJI">47.21.5</a>. By More on Algebra, Lemma <a href="/tag/087R" data-tag="087R">15.67.4</a> we have 
+    <p>
+      <div class="equation">
+  \[  \mathop{\mathrm{Ext}}\nolimits ^ i_ A(\kappa _ A, A) \otimes _ A B = \mathop{\mathrm{Ext}}\nolimits ^ i_ B(B/\mathfrak m_ A B, B)  \]
+</div>
+    <p>
+       for all $i$. 
+    <p>
+      Assume (2). Using that $R\mathop{\mathrm{Hom}}\nolimits (B/\mathfrak m_ A B, -) : D(B) \to D(B/\mathfrak m_ A B)$ is a right adjoint to restriction (Lemma <a href="/tag/0A70" data-tag="0A70">47.13.1</a>) we obtain 
+    <p>
+      <div class="equation">
+  \[  R\mathop{\mathrm{Hom}}\nolimits _ B(\kappa _ B, B) = R\mathop{\mathrm{Hom}}\nolimits _{B/\mathfrak m_ A B}(\kappa _ B, R\mathop{\mathrm{Hom}}\nolimits (B/\mathfrak m_ A B, B))  \]
+</div>
+    <p>
+       The cohomology modules of $R\mathop{\mathrm{Hom}}\nolimits (B/\mathfrak m_ A B, B)$ are the modules $\mathop{\mathrm{Ext}}\nolimits ^ i_ B(B/\mathfrak m_ A B, B) = \mathop{\mathrm{Ext}}\nolimits ^ i_ A(\kappa _ A, A) \otimes _ A B$. Since $A$ is Gorenstein, we conclude only a finite number of these are nonzero and each is isomorphic to a direct sum of copies of $B/\mathfrak m_ A B$. Hence since $B/\mathfrak m_ A B$ is Gorenstein we conclude that $R\mathop{\mathrm{Hom}}\nolimits _ B(B/\mathfrak m_ B, B)$ has only a finite number of nonzero cohomology modules. Hence $B$ is Gorenstein. 
+    <p>
+      Assume (1). Since $B$ has finite injective dimension, $\mathop{\mathrm{Ext}}\nolimits ^ i_ B(B/\mathfrak m_ A B, B)$ is $0$ for $i \gg 0$. Since $A \to B$ is faithfully flat we conclude that $\mathop{\mathrm{Ext}}\nolimits ^ i_ A(\kappa _ A, A)$ is $0$ for $i \gg 0$. We conclude that $A$ is Gorenstein. This implies that $\mathop{\mathrm{Ext}}\nolimits ^ i_ A(\kappa _ A, A)$ is nonzero for exactly one $i$, namely for $i = \dim (A)$, and $\mathop{\mathrm{Ext}}\nolimits ^{\dim (A)}_ A(\kappa _ A, A) \cong \kappa _ A$ (see Lemmas <a href="/tag/0AX1" data-tag="0AX1">47.16.1</a>, <a href="/tag/0AWS" data-tag="0AWS">47.20.2</a>, and <a href="/tag/0DW8" data-tag="0DW8">47.21.2</a>). Thus we see that $\mathop{\mathrm{Ext}}\nolimits ^ i_ B(B/\mathfrak m_ A B, B)$ is zero except for one $i$, namely $i = \dim (A)$ and $\mathop{\mathrm{Ext}}\nolimits ^{\dim (A)}_ B(B/\mathfrak m_ A B, B) \cong B/\mathfrak m_ A B$. Thus $B/\mathfrak m_ A B$ is Gorenstein by Lemma <a href="/tag/0AX1" data-tag="0AX1">47.16.1</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0EBT">
+  <p><a class="environment-identifier" href="/tag/0EBT">Lemma <span data-tag="0EBT">47.21.10</span>.</a> Let $(A, \mathfrak m, \kappa )$ be a Noetherian local Gorenstein ring of dimension $d$. Let $E$ be the injective hull of $\kappa $. Then $\text{Tor}_ i^ A(E, \kappa )$ is zero for $i \not= d$ and $\text{Tor}_ d^ A(E, \kappa ) = \kappa $. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Since $A$ is Gorenstein $\omega _ A^\bullet = A[d]$ is a normalized dualizing complex for $A$. Also $E$ is the only nonzero cohomology module of $R\Gamma _\mathfrak m(\omega _ A^\bullet )$ sitting in degree $0$, see Lemma <a href="/tag/0A82" data-tag="0A82">47.18.1</a>. By Lemma <a href="/tag/0ALY" data-tag="0ALY">47.9.5</a> we have 
+    <p>
+      <div class="equation">
+  \[  E \otimes _ A^\mathbf {L} \kappa = R\Gamma _\mathfrak m(\omega _ A^\bullet ) \otimes _ A^\mathbf {L} \kappa = R\Gamma _\mathfrak m(\omega _ A^\bullet \otimes _ A^\mathbf {L} \kappa ) = R\Gamma _\mathfrak m(\kappa [d]) = \kappa [d]  \]
+</div>
+    <p>
+       and the lemma follows. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (2)</h2>
+
+  
+    <a id="comment-11619" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0DW6#comment-11619">Comment #11619</a>
+        by
+        <cite>Karl Schwede</cite>
+        on <time datetime="2026-07-12 13:58:26.134611">July 12, 2026 at 13:58 </time>
+      </header>
+
+      <blockquote><p>It would be good if there was a forward reference for the assertion "We will see later that a finite dimensional Noetherian ring is Gorenstein if it has finite injective dimension as a module over itself." a couple lines after Definition 0DW7.  I didn't find it cleanly in this or the next chapter, but perhaps I didn't know where to look.</p></blockquote>
+    </article>
+  
+    <a id="comment-11621" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0DW6#comment-11621">Comment #11621</a>
+        by
+        <cite><a href="https://stacks.math.columbia.edu/" rel="author">Stacks Project</a></cite>
+        
+        on <time datetime="2026-07-13 11:53:26.959854">July 13, 2026 at 11:53 </time>
+      </header>
+
+      <blockquote><p>OK, the lemma was missing. I added it <a href="https://github.com/stacks/stacks-project/commit/b0730b4fa0edf79ff5ad48cb2fbe1168c1ca6884">here</a>.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-0DW6",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">0DW6</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="0DW6"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">0DW6</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0DW4">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0DWB">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/dualizing.pdf#nameddest=0DW6">View Section <span data-tag="0DW6">47.21</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

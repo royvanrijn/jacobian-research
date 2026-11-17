@@ -1,0 +1,13 @@
+{
+  "sources": [],
+  "retained_primary_inputs": [
+    {
+      "path": "sources/jones-primitive-cycle-1209.5169.pdf",
+      "title": "Gareth A. Jones, Primitive permutation groups containing a cycle",
+      "locator": "Corollary1.3, page2: a primitive group containing a cycle with at least3 fixed points contains A_n, without prime-length hypothesis. Theorem1.2 depends on the classification of finite simple groups.",
+      "bytes": 106850,
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57"
+    }
+  ],
+  "scope": "The previous rank4 use needed prime-cycle Theorem1.1; the all-rank result needs the stronger composite-cycle Corollary1.3. Remaining identities are proved in the canonical note."
+}

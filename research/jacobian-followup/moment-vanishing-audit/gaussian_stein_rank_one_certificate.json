@@ -1,0 +1,692 @@
+{
+  "original_Stein_controls": [
+    {
+      "phase": "x**3 + y",
+      "variables": [
+        "x",
+        "y"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "marker": "1",
+      "Stein_image": "0",
+      "divergence_identity": true
+    },
+    {
+      "phase": "x**3 + y",
+      "variables": [
+        "x",
+        "y"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "marker": "x",
+      "Stein_image": "1",
+      "divergence_identity": true
+    },
+    {
+      "phase": "x**3 + y",
+      "variables": [
+        "x",
+        "y"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "marker": "y",
+      "Stein_image": "3*x**2",
+      "divergence_identity": true
+    },
+    {
+      "phase": "x**3 + y",
+      "variables": [
+        "x",
+        "y"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "marker": "x*y",
+      "Stein_image": "3*x**3/2 + y/2",
+      "divergence_identity": true
+    },
+    {
+      "phase": "x**3 + y",
+      "variables": [
+        "x",
+        "y"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "marker": "x**2*y**2",
+      "Stein_image": "3*x**4*y/2 + 3*x**3 + x*y**2/2 + y",
+      "divergence_identity": true
+    },
+    {
+      "phase": "T**2/2",
+      "variables": [
+        "T"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "marker": "1",
+      "Stein_image": "0",
+      "divergence_identity": true
+    },
+    {
+      "phase": "T**2/2",
+      "variables": [
+        "T"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "marker": "T",
+      "Stein_image": "T",
+      "divergence_identity": true
+    },
+    {
+      "phase": "T**2/2",
+      "variables": [
+        "T"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "marker": "T**2",
+      "Stein_image": "T**2",
+      "divergence_identity": true
+    },
+    {
+      "phase": "T**2/2",
+      "variables": [
+        "T"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "marker": "T**3",
+      "Stein_image": "T**3 + 2*T",
+      "divergence_identity": true
+    },
+    {
+      "phase": "T**2/2",
+      "variables": [
+        "T"
+      ],
+      "covariance": [
+        [
+          "1"
+        ]
+      ],
+      "marker": "T**4",
+      "Stein_image": "T**4 + 3*T**2",
+      "divergence_identity": true
+    },
+    {
+      "phase": "-T**2*(z**2/2 + 3*z/2 + 1) + w*(z + 1)",
+      "variables": [
+        "z",
+        "w",
+        "T"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "marker": "1",
+      "Stein_image": "0",
+      "divergence_identity": true
+    },
+    {
+      "phase": "-T**2*(z**2/2 + 3*z/2 + 1) + w*(z + 1)",
+      "variables": [
+        "z",
+        "w",
+        "T"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "marker": "z",
+      "Stein_image": "z + 1",
+      "divergence_identity": true
+    },
+    {
+      "phase": "-T**2*(z**2/2 + 3*z/2 + 1) + w*(z + 1)",
+      "variables": [
+        "z",
+        "w",
+        "T"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "marker": "w",
+      "Stein_image": "-T**2*z - 3*T**2/2 + w",
+      "divergence_identity": true
+    },
+    {
+      "phase": "-T**2*(z**2/2 + 3*z/2 + 1) + w*(z + 1)",
+      "variables": [
+        "z",
+        "w",
+        "T"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "marker": "T**2",
+      "Stein_image": "-T**2*z**2 - 3*T**2*z - 2*T**2",
+      "divergence_identity": true
+    },
+    {
+      "phase": "-T**2*(z**2/2 + 3*z/2 + 1) + w*(z + 1)",
+      "variables": [
+        "z",
+        "w",
+        "T"
+      ],
+      "covariance": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "marker": "w*z",
+      "Stein_image": "-T**2*z**2/2 - 3*T**2*z/4 + w*z + w/2",
+      "divergence_identity": true
+    }
+  ],
+  "original_IBP_identities": 75,
+  "nilpotent_control": {
+    "ring": "Q[e]/(e^2)",
+    "phase": "T**2*e",
+    "Stein_image": "2*T**2*e",
+    "unit_period": "1+e*t"
+  },
+  "rank_one_models": [
+    {
+      "name": "pure safe",
+      "model": {
+        "log_derivative": "0",
+        "normalized_generators": [
+          "1",
+          "t**2"
+        ],
+        "finite_pole_polynomial": "1",
+        "infinite_pole_divisor": "1",
+        "gauge_log_derivative": "0",
+        "pole_profiles": [],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": true,
+        "pure": true,
+        "globally_regular": true,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    },
+    {
+      "name": "pure pole",
+      "model": {
+        "log_derivative": "0",
+        "normalized_generators": [
+          "1",
+          "-1/(t - 1)"
+        ],
+        "finite_pole_polynomial": "1",
+        "infinite_pole_divisor": "1 - t",
+        "gauge_log_derivative": "0",
+        "pole_profiles": [
+          {
+            "factor": "t - 1",
+            "connection_pole_order": 0,
+            "residue": null,
+            "generator_pole_order": 1,
+            "permitted_finite_order": 0,
+            "infinite_pole_tower": true,
+            "final_pole_order": "infinity"
+          }
+        ],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": false,
+        "pure": true,
+        "globally_regular": true,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    },
+    {
+      "name": "exponential nilpotent Stein",
+      "model": {
+        "log_derivative": "2*t",
+        "normalized_generators": [
+          "1",
+          "t**2"
+        ],
+        "finite_pole_polynomial": "1",
+        "infinite_pole_divisor": "1",
+        "gauge_log_derivative": "2*t",
+        "pole_profiles": [],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": false,
+        "pure": false,
+        "globally_regular": false,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    },
+    {
+      "name": "Gaussian quadratic",
+      "model": {
+        "log_derivative": "-1/(2*t - 2)",
+        "normalized_generators": [
+          "1",
+          "-1/(t - 1)"
+        ],
+        "finite_pole_polynomial": "1",
+        "infinite_pole_divisor": "1 - t",
+        "gauge_log_derivative": "-1/(2*t - 2)",
+        "pole_profiles": [
+          {
+            "factor": "t - 1",
+            "connection_pole_order": 1,
+            "residue": "-1/2",
+            "generator_pole_order": 1,
+            "permitted_finite_order": 0,
+            "infinite_pole_tower": true,
+            "final_pole_order": "infinity"
+          }
+        ],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": false,
+        "pure": false,
+        "globally_regular": true,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    },
+    {
+      "name": "abstract nonpure safe seed",
+      "model": {
+        "log_derivative": "2/(t - 1)",
+        "normalized_generators": [
+          "1",
+          "1"
+        ],
+        "finite_pole_polynomial": "t**2 - 2*t + 1",
+        "infinite_pole_divisor": "1",
+        "gauge_log_derivative": "0",
+        "pole_profiles": [
+          {
+            "factor": "t - 1",
+            "connection_pole_order": 1,
+            "residue": "2",
+            "generator_pole_order": 0,
+            "permitted_finite_order": 2,
+            "infinite_pole_tower": false,
+            "final_pole_order": 2
+          }
+        ],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": true,
+        "pure": false,
+        "globally_regular": true,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    },
+    {
+      "name": "Gaussian polynomial seed with hidden pole",
+      "model": {
+        "log_derivative": "2/(t - 1)",
+        "normalized_generators": [
+          "1",
+          "-1/(t**3 - 3*t**2 + 3*t - 1)"
+        ],
+        "finite_pole_polynomial": "1",
+        "infinite_pole_divisor": "1 - t",
+        "gauge_log_derivative": "2/(t - 1)",
+        "pole_profiles": [
+          {
+            "factor": "t - 1",
+            "connection_pole_order": 1,
+            "residue": "2",
+            "generator_pole_order": 3,
+            "permitted_finite_order": 2,
+            "infinite_pole_tower": true,
+            "final_pole_order": "infinity"
+          }
+        ],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": false,
+        "pure": false,
+        "globally_regular": true,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    },
+    {
+      "name": "mixed finite and infinite poles",
+      "model": {
+        "log_derivative": "(5*t - 7)/(t**2 - 3*t + 2)",
+        "normalized_generators": [
+          "1",
+          "1/(t**3 - 3*t**2 + 3*t - 1)"
+        ],
+        "finite_pole_polynomial": "-t**3/8 + 3*t**2/4 - 3*t/2 + 1",
+        "infinite_pole_divisor": "1 - t",
+        "gauge_log_derivative": "2/(t - 1)",
+        "pole_profiles": [
+          {
+            "factor": "t - 1",
+            "connection_pole_order": 1,
+            "residue": "2",
+            "generator_pole_order": 3,
+            "permitted_finite_order": 2,
+            "infinite_pole_tower": true,
+            "final_pole_order": "infinity"
+          },
+          {
+            "factor": "t - 2",
+            "connection_pole_order": 1,
+            "residue": "3",
+            "generator_pole_order": 0,
+            "permitted_finite_order": 3,
+            "infinite_pole_tower": false,
+            "final_pole_order": 3
+          }
+        ],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": false,
+        "pure": false,
+        "globally_regular": true,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    },
+    {
+      "name": "abstract regular transcendental",
+      "model": {
+        "log_derivative": "1/(t**2 + 1)",
+        "normalized_generators": [
+          "1",
+          "1"
+        ],
+        "finite_pole_polynomial": "1",
+        "infinite_pole_divisor": "t**2 + 1",
+        "gauge_log_derivative": "1/(t**2 + 1)",
+        "pole_profiles": [
+          {
+            "factor": "t**2 + 1",
+            "connection_pole_order": 1,
+            "residue": "-t/2",
+            "generator_pole_order": 0,
+            "permitted_finite_order": 0,
+            "infinite_pole_tower": true,
+            "final_pole_order": "infinity"
+          }
+        ],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": false,
+        "pure": false,
+        "globally_regular": true,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    },
+    {
+      "name": "irregular finite pole",
+      "model": {
+        "log_derivative": "1/(t**2 - 2*t + 1)",
+        "normalized_generators": [
+          "1",
+          "1"
+        ],
+        "finite_pole_polynomial": "1",
+        "infinite_pole_divisor": "1 - t",
+        "gauge_log_derivative": "1/(t**2 - 2*t + 1)",
+        "pole_profiles": [
+          {
+            "factor": "t - 1",
+            "connection_pole_order": 2,
+            "residue": null,
+            "generator_pole_order": 0,
+            "permitted_finite_order": 0,
+            "infinite_pole_tower": true,
+            "final_pole_order": "infinity"
+          }
+        ],
+        "normal_form": "(f/p)*QQ[t,d^-1]",
+        "safe": false,
+        "pure": false,
+        "globally_regular": false,
+        "scope": "Exact D_r closure of supplied faithful rank-one rational generators;not a Gaussian realization/rank certificate",
+        "Gaussian_realization_inferred": false,
+        "actual_rank_inferred_from_finite_jets": false
+      }
+    }
+  ],
+  "finite_seed_matrices": [
+    {
+      "seed": "1 - t",
+      "basis": [
+        "1"
+      ],
+      "matrix": [
+        [
+          "1"
+        ]
+      ],
+      "characteristic_polynomial": "xi - 1",
+      "dimension": 1,
+      "nonzero_spectrum_is_reciprocal_seed_zeroes": true
+    },
+    {
+      "seed": "(1 - t)**2",
+      "basis": [
+        "1",
+        "t"
+      ],
+      "matrix": [
+        [
+          "2",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "characteristic_polynomial": "xi**2 - 2*xi + 1",
+      "dimension": 2,
+      "nonzero_spectrum_is_reciprocal_seed_zeroes": true
+    },
+    {
+      "seed": "t**2 + t + 1",
+      "basis": [
+        "1",
+        "t"
+      ],
+      "matrix": [
+        [
+          "-1",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "characteristic_polynomial": "xi**2 + xi + 1",
+      "dimension": 2,
+      "nonzero_spectrum_is_reciprocal_seed_zeroes": true
+    }
+  ],
+  "Jordan_controls": [
+    {
+      "pole_order": 1,
+      "Jordan_chain_length": 1,
+      "eigenvalue": 1
+    },
+    {
+      "pole_order": 2,
+      "Jordan_chain_length": 2,
+      "eigenvalue": 1
+    },
+    {
+      "pole_order": 4,
+      "Jordan_chain_length": 4,
+      "eigenvalue": 1
+    }
+  ],
+  "source_index_controls": [
+    {
+      "k": 0,
+      "m": 1,
+      "corrected_telescoping_identity": true
+    },
+    {
+      "k": 1,
+      "m": 2,
+      "corrected_telescoping_identity": true
+    },
+    {
+      "k": 2,
+      "m": 3,
+      "corrected_telescoping_identity": true
+    }
+  ],
+  "rejections": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "universal_claims_use_written_proofs": true,
+  "actual_rank_inferred_from_finite_jets": false,
+  "nonpure_safe_Gaussian_counterexample_claimed": false,
+  "regular_transcendental_Gaussian_realization_claimed": false
+}

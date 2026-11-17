@@ -1,0 +1,87 @@
+{
+  "tautological_rank_two_surface_degree_bound": 2,
+  "finite_PSL2_11_tautological_route_excluded": true,
+  "arbitrary_Keller_PSL2_11_action_decided": false,
+  "full_classification_complete": false,
+  "homogeneous_controls": [
+    {
+      "r": 2,
+      "s": 0,
+      "degree": 3,
+      "residue_equation": "2*kappa**2 + 2*kappa + 2",
+      "geometric_group": "A3",
+      "lattice_minors": [
+        -1,
+        1,
+        3
+      ]
+    },
+    {
+      "r": 2,
+      "s": 1,
+      "degree": 4,
+      "residue_equation": "6*kappa**2 + 4*kappa + 2",
+      "geometric_group": "S4",
+      "lattice_minors": [
+        -2,
+        1,
+        4
+      ]
+    },
+    {
+      "r": 3,
+      "s": 0,
+      "degree": 4,
+      "residue_equation": "2*kappa**2 + 4*kappa + 6",
+      "geometric_group": "S4",
+      "lattice_minors": [
+        -1,
+        2,
+        4
+      ]
+    },
+    {
+      "r": 3,
+      "s": 1,
+      "degree": 5,
+      "residue_equation": "6*kappa**2 + 8*kappa + 6",
+      "geometric_group": "A5",
+      "lattice_minors": [
+        -2,
+        2,
+        5
+      ]
+    },
+    {
+      "r": 4,
+      "s": 2,
+      "degree": 7,
+      "residue_equation": "12*kappa**2 + 18*kappa + 12",
+      "geometric_group": "A7",
+      "lattice_minors": [
+        -3,
+        3,
+        7
+      ]
+    },
+    {
+      "r": 6,
+      "s": 4,
+      "degree": 11,
+      "residue_equation": "30*kappa**2 + 50*kappa + 30",
+      "geometric_group": "A11",
+      "lattice_minors": [
+        -5,
+        5,
+        11
+      ]
+    }
+  ],
+  "rational_control": {
+    "R": "w**2 + w",
+    "residue_equation": "kappa^2+kappa+1",
+    "finite": false,
+    "Keller_lift_claimed": false
+  },
+  "assurance": "Exact symbolic controls accompany written universal arguments; not formal verification or independent whole-proof review."
+}

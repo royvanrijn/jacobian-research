@@ -1,0 +1,47 @@
+{
+  "claim": "QFL1",
+  "status": "PASS",
+  "scope": "Exact retained-seed pair relation through hbar^5; universal written homotopy gives every order. No four-generator finite Weyl endomorphism is asserted.",
+  "canonical_pair": true,
+  "retained_lower_equation": true,
+  "fresh_third_order_correction": [
+    {
+      "terms": 220,
+      "Z_order": 11,
+      "min_X": 6
+    },
+    {
+      "terms": 189,
+      "Z_order": 10,
+      "min_X": 8
+    }
+  ],
+  "fifth_order_defect": {
+    "terms": 55,
+    "Z_order": 4,
+    "min_X": 12
+  },
+  "escape_correction": [
+    {
+      "terms": 162,
+      "Z_order": 9,
+      "min_X": 12
+    },
+    {
+      "terms": 135,
+      "Z_order": 8,
+      "min_X": 14
+    }
+  ],
+  "fifth_order_equation_zero": true,
+  "residue_on_defect": "1",
+  "residue_on_correction_image": "-1",
+  "Laurent_controls": 3,
+  "hashes": {
+    "dixmier-residue-transport/inputs.json": "d795dbedeb6a70dd28c6cacc66f94c1194400cf9cc81c7d2979eb329268d432f",
+    "dixmier-residue-transport/combined_cocycle.json": "23dbb6cf963a152e6b3735842b67f40af8255ab6acebe634f4abcb8eb6601c44",
+    "dixmier-formal-lifting/verify_fiber_homotopy.py": "8d7dbf6bbf6a52b39447e6d6352a9fea83b130627beea22cf2dc2743b66d9bd2",
+    "dixmier-formal-lifting/escape_witness.json": "5d187532169ebadca5759668527bb9b2f324c07f68906e8faaf7a5c45438898d"
+  },
+  "coverage_boundary": "The all-orders fiber theorem and the all-rank full-frame de Rham theorem use written proofs. This finite replay is neither a formal verification nor an arithmetic-support or algebraization certificate."
+}

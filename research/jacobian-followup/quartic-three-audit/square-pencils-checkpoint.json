@@ -1,0 +1,49 @@
+{
+  "completed": [
+    {
+      "pencil": "yz",
+      "cubic_operator_rank": 20,
+      "cubic_kernel_dimension": 10,
+      "quadratic_operator_rank": 12,
+      "quadratic_kernel_dimension": 6,
+      "compatibility_ideal": [
+        "a*alpha",
+        "b*alpha"
+      ],
+      "compatibility_left_residuals": [
+        "-2*a*alpha",
+        "2*alpha*b"
+      ],
+      "compatibility_relation_span_rank": 2,
+      "complete_quadratic_family_checked": true,
+      "selected_linear_identities_checked": 6,
+      "no_parameter_division": true,
+      "linear_jacobian_forced_singular": true
+    },
+    {
+      "pencil": "parabolic",
+      "cubic_operator_rank": 20,
+      "cubic_kernel_dimension": 10,
+      "quadratic_operator_rank": 12,
+      "quadratic_kernel_dimension": 6,
+      "compatibility_ideal": [
+        "a*alpha",
+        "b*alpha"
+      ],
+      "compatibility_left_residuals": [
+        "-6*a*alpha",
+        "-12*a*alpha",
+        "4*alpha*b",
+        "-6*a*alpha",
+        "8*alpha*b",
+        "4*alpha*b"
+      ],
+      "compatibility_relation_span_rank": 2,
+      "complete_quadratic_family_checked": true,
+      "selected_linear_identities_checked": 8,
+      "no_parameter_division": true,
+      "linear_jacobian_forced_singular": true
+    }
+  ],
+  "source_sha256": "416d41564e2979c1e5c22189f12aa00ceee74f6ee31a7d31a38633cf5515a2b6"
+}

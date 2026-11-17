@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/INTEGRABLE_PERIOD_DENSITIES_AND_OCTAHEDRAL_SEED.md",
+  "proof_sha256": "040b2af803e78894074184f64e54852bd93965fa6b3e5f1b860bf70ed6d03d94",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_integrable_period_density.py",
+  "checker_sha256": "1d07afcc396b2e22b169bd6500e8ae13c6f061aa2cbbc420df0c8aa958e460bd",
+  "receipt": "jacobian-followup/moment-vanishing-audit/integrable_period_density_verification.json",
+  "receipt_sha256": "337cb4f878e4949ce94d8f4dd9366c7b5ff9e84335e502a84aae47e6783fcb3a",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/REAL_SEED_DENSITY_BOUNDS_AND_PERIOD_TRACE.md",
+      "sha256": "19704ac76627b2eaaa72319b364cca54ab470e05712e615ca1a2f580eaf47840",
+      "use": "Preceding fixed-curve pole mechanism,interior lower bound and finite Stieltjes trace;not a representation of arbitrary moving Haar periods."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/COMPLEX_HEIGHT_IMAGES_AND_CAUCHY_RIGIDITY.md",
+      "sha256": "6c6260ad9d8ae0883637e4bd56b682bdd07c8e3a499c00a7b53d8e34d7840b68",
+      "use": "Original sphere and full compact-core distinction;real-curve seed normalization."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/FILTERED_MATRIX_DEGREES_AND_CUBIC_THIN_PHASES.md",
+      "sha256": "dbeb32f8c4e54adb29f32e69b2994e6ccd7eac7011d7acaf3f50a5497517e081",
+      "use": "Original matrix filtration has domain associated graded;preserve all other phase degree gates."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/POSITIVE_GRAPH_HULLS_AND_INTERIOR_BALAYAGE.md",
+      "sha256": "89aceac4fa5a73af2f565eedead16ef149f0a2a264076c2749201b58c59da5f7",
+      "use": "One-domain internal-graph architecture remains open;no exclusion from local gluing alone."
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": "F.Pakovich,N.Roytvarf,Y.Yomdin",
+      "title": "Cauchy Type Integrals of Algebraic Functions and a tangential Center-Focus problem for Abel equations",
+      "url": "https://arxiv.org/pdf/math/0312353v1",
+      "version": "arXiv math/0312353v1,18December2003",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/pakovich_roytvarf_yomdin_0312353v1.pdf",
+      "sha256": "0599db19638a0d4b9d05c5b346abee9a90edc38580f2156790eded3b3c72faf1",
+      "selected_passages_read": "Theorem4.4 and Remarks2-3,printed24-25/PDF24-25;Theorems4.5,4.7 and nearby cautions,printed26-28/PDF26-28;Corollary3.9 beginsPDF21 and was cross-checked in web extraction.",
+      "scope_import": "Classical algebraic-density contour continuation and rationality/combinatorial-monodromy context. Infinite-branch integrable-growth extension is supplied by the internal proof,not attributed as their exact theorem."
+    },
+    {
+      "authority": "NIST DLMF",
+      "url": "https://dlmf.nist.gov/15.6#E1",
+      "version": "Public page read15November2026",
+      "passage": "Euler integral15.6.1,with the page convention for normalized boldF;here c=b+d and ordinary F includes Gamma(c).",
+      "cached_file": null,
+      "cache_note": "Direct urllib page caching returnedHTTP403;public web tool read the formula. No local cache or hash is invented."
+    },
+    {
+      "authority": "NIST DLMF",
+      "url": "https://dlmf.nist.gov/15.10#E1",
+      "version": "Public page read15November2026",
+      "passage": "Equation15.10.1 and the stated regular-singular exponent pairs at0,1,infinity;resonant local logarithms are retained.",
+      "cached_file": null
+    }
+  ],
+  "deductions": [
+    "Every finite continuation branch with growthO(|t-c|^(delta-1)log^N),delta>0,remains subpolar after every polynomial ramification. Finite contour transports and residue additions preserve this property,including infinite density monodromy.",
+    "A rational Cauchy infinity germ has no finite poles under that hypothesis and tends0 at infinity,hence is zero. Finite sums,polynomial tilts and affine mixtures retain the conclusion;nonzero total mass excludes eventual polynomial-phase moment vanishing in ALL degrees.",
+    "Two independent beta variables with arbitrary positive real parameters have an explicit hypergeometric product density. All continuation exponents are a-1,c-1 at0 and b+d-1,0 at1,so every polynomial phase is excluded.",
+    "The actual octahedral sphere seedH=27a2b2c2 has the same compact moment sequence as Beta(1/2,1/3)*Beta(1/2,2/3),hence density(3sqrt(t))^-1*2F1(1/3,2/3;1;1-t). Its equation has finite exponents-1/2,-1/2 and0,0;the nonzero logarithm makes the density nonalgebraic.",
+    "The original left-T-invariant Hopf coordinates give matrix degree12 forH,with nonzero rank-one leading form. Thus only0 is pure in the entire original octahedral subalgebraC[H],covering unbounded matrix degrees12degp. No general2O or2I decision follows."
+  ],
+  "essential_boundaries": [
+    "All branches of the actual density continuation space must be checked,not just the physical interval branch. -log(1-t)/t is physically integrable but continuation around1 adds a pole at0.",
+    "Neither arbitrary holonomicity nor regular singularity alone supplies exponents>-1. A large annihilating system can include unused bad solutions;actual continuation subspace matters.",
+    "No actual general Haar density is assumed to meet the hypotheses. The octahedral coordinate-product seed is proved to do so;the icosahedral group does not preserve that seed.",
+    "Universal contour transport,growth estimates,probability density identification and group application are internal written proofs;the checker supplies only selected symbolic controls.",
+    "Both exceptional MZ problems,other inward-branch graph laws,full non-T-invariant thin phases,image-interior marked safety and the separate symmetrized height gate remainOPEN."
+  ],
+  "new_support_or_prefix_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Direct determinant saturation of the completed rational first-ten cuspidal generic-chart standard basis; the earlier high-power normal form timeout is not reused as a conclusion.",
+  "wall_limit_seconds": 20,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": true,
+  "exit_code": -9,
+  "completed": false,
+  "input_sha256": "9a00bb698f5b1dc0319be263a7d2a4fc91e2a31fe59c6a351d7dacc10d39031f",
+  "log_sha256": "471bcc25055ed49961eb72a08aac69bbca938cdf180c5e82dbe9a80a5600d51a",
+  "elapsed_seconds": 20.00568423399818,
+  "stdout_tail": "GENERIC_DIMENSION\n1\nGENERIC_HILBERT\n1,\n0,\n0,\n0,\n0,\n0,\n0,\n-1,\n0,\n0,\n-33,\n41,\n10,\n-18,\n0 \nDIRECT_DET_SAT_START\n"
+}

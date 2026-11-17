@@ -1,0 +1,89 @@
+{
+  "completed": true,
+  "checker_sha256": "48262b7f5f2cb544f4c71ff40581bac2b905d58ca242685cd0f1df607ba8f25a",
+  "certificate_sha256": "c1552c2549322c7f9f87db7483353838e34c6f8054450f953617f3496c2c0d79",
+  "runtime_seconds": 8.305,
+  "sympy_version": "1.14.0",
+  "universal_ordinary_divergence_identities": 135,
+  "exact_models": 10,
+  "exact_connection_columns": 58,
+  "exact_direct_seed_columns": 20,
+  "class_bounds": {
+    "nodal": {
+      "rank": 7,
+      "k": 2,
+      "cost": 2,
+      "slope": 14,
+      "offset": 4,
+      "sum_grades": 11,
+      "complement_gate": 353,
+      "frame_gate": 888,
+      "full_gate": 888
+    },
+    "transverse": {
+      "rank": 6,
+      "k": 3,
+      "cost": 3,
+      "slope": 18,
+      "offset": 6,
+      "sum_grades": 8,
+      "complement_gate": 334,
+      "frame_gate": 888,
+      "full_gate": 888
+    },
+    "triangle": {
+      "rank": 5,
+      "k": 4,
+      "cost": 4,
+      "slope": 22,
+      "offset": 4,
+      "sum_grades": 6,
+      "complement_gate": 304,
+      "frame_gate": 888,
+      "full_gate": 888
+    },
+    "cusp": {
+      "rank": 6,
+      "k": 1,
+      "cost": 4,
+      "slope": 30,
+      "offset": 12,
+      "sum_grades": 0,
+      "complement_gate": 558,
+      "frame_gate": 425,
+      "full_gate": 558
+    },
+    "tangent": {
+      "rank": 5,
+      "k": 2,
+      "cost": 5,
+      "slope": 46,
+      "offset": 20,
+      "sum_grades": 0,
+      "complement_gate": 590,
+      "frame_gate": 425,
+      "full_gate": 590
+    }
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 888,
+    "cusp": 558,
+    "transverse": 888,
+    "tangent": 590,
+    "triangle": 888,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 888,
+  "least_prefix_interval": [
+    20,
+    888
+  ],
+  "least_prefix_computed": false,
+  "binary_search_rounds_max": 10,
+  "full_coefficient_radical_search_executed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "boundary": "Exact rescaling/prefactor identities, graded divergence divisions and ten rational model connections/seed certificates. All-coefficient basis/rank coverage, analytic nonzero zeroth coefficients and the global cover remain written arguments using retained exclusions. No optimality, global coefficient-ring cofactor expansion, independent replay, external review or formal verification."
+}

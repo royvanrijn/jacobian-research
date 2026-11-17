@@ -1,0 +1,92 @@
+{
+  "completed": true,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "c84744d9a88a55fc496bfc792e728a26165121395729838b82c14a0075d6bcfd",
+  "imported_group_receipt": "jacobian-followup/moment-vanishing-audit/exceptional_sl2_verification.json",
+  "imported_group_receipt_sha256": "a8791dae61c75bf50b202d889f1ebbed175ae2e6c1bc089a8d802a2d8e55ee35",
+  "orbit_and_multiplicity_controls": [
+    {
+      "group": "2O",
+      "projective_order": 24,
+      "maximum_rotation_order": 4,
+      "minimum_orbit_bound": 6,
+      "D_minus_2m_lower_coefficient": "1"
+    },
+    {
+      "group": "2I",
+      "projective_order": 60,
+      "maximum_rotation_order": 5,
+      "minimum_orbit_bound": 12,
+      "D_minus_2m_lower_coefficient": "4"
+    }
+  ],
+  "valuation_volume_formula_exact": true,
+  "finite_boundary_volume_order_bounds": {
+    "2O": "a_E-1",
+    "2I": "4*a_E-1"
+  },
+  "nodal_relative_form_wedge_exact": true,
+  "semistable_base_change_controls": [
+    {
+      "ramification": 1,
+      "original_period_power": "0",
+      "strictly_integrable": true
+    },
+    {
+      "ramification": 2,
+      "original_period_power": "-1/2",
+      "strictly_integrable": true
+    },
+    {
+      "ramification": 3,
+      "original_period_power": "-2/3",
+      "strictly_integrable": true
+    },
+    {
+      "ramification": 5,
+      "original_period_power": "-4/5",
+      "strictly_integrable": true
+    }
+  ],
+  "strict_threshold_equality_not_certified": true,
+  "left_derivations_preserve_determinant_exact": true,
+  "stabilizer_boundary_controls": [
+    {
+      "group": "2O",
+      "row_highest_weight": 8,
+      "row_shear_derivative_zero": true,
+      "selfadjoint_phase_three_derivative_rank": 3,
+      "positive_second_moment_by_nonzero_selfadjoint_pairing": true,
+      "finite_stabilizer_does_not_certify_purity": true
+    },
+    {
+      "group": "2I",
+      "row_highest_weight": 12,
+      "row_shear_derivative_zero": true,
+      "selfadjoint_phase_three_derivative_rank": 3,
+      "positive_second_moment_by_nonzero_selfadjoint_pairing": true,
+      "finite_stabilizer_does_not_certify_purity": true
+    }
+  ],
+  "sl2_square_identity_exact": true,
+  "entire_original_T_invariant_eventual_radicals": "ZERO on both2O and2I,in ALL degrees",
+  "nonzero_pure_in_any_automorphic_torus_fixed_subalgebra": "EXCLUDED by intrinsic Haar transport",
+  "full_failure_necessary_stabilizer": "finite for leftSL2 and every automorphism-conjugated left action",
+  "all_C_algebra_T_invariant_eventual_radical": "exactly the nilpotent elements;not an assertion that all nilpotents are pure from their first power",
+  "dual_number_nonzero_pure_and_nonpure_nilpotent_boundary_exact": true,
+  "fixed_degree_ordinary_ideal_nilpotence_and_prefix_certificate": "existence and terminating theoretical algorithm only;no N or L computed",
+  "full_exceptional_MZ_decisions": "OPEN on both models",
+  "general_nonisolated_higher_dimensional_period_theorem_claimed": false,
+  "all_full_phases_reduced_to_T_invariants": false,
+  "finite_stabilizer_implies_purity_or_failure": false,
+  "same_matrix_cutoff_after_arbitrary_nonlinear_automorphism": false,
+  "ordinary_pure_ideals_assumed_reduced": false,
+  "all_nilpotents_assumed_pure": false,
+  "universal_T_invariant_nilpotence_cutoff_computed": false,
+  "fixed_degree_Noetherian_nilpotence_proof_machine_verified": false,
+  "surface_semistable_trace_Hartogs_and_lct_proofs_machine_verified": false,
+  "new_degree_support_density_or_prefix_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

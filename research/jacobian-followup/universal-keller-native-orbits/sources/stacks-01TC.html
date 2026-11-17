@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 29.21 (01TC): Quasi-finite morphisms&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELP" data-tag="0ELP">2</a>: Schemes
+    
+  
+    <li>Chapter <a href="/tag/01QL" data-tag="01QL">29</a>: Morphisms of Schemes
+    
+  
+    <li class="active">Section <a href="/tag/01TC" data-tag="01TC">29.21</a>: Quasi-finite morphisms
+    <span id="citation">(<a href="/tag/01TC/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0HA6">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/01TO">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="morphisms-section-quasi-finite" class="tex-section"><span data-tag="01TC">29.21</span> Quasi-finite morphisms</h2>
+
+<p>
+A solid treatment of quasi-finite morphisms is the basis of many developments further down the road. It will lead to various versions of Zariski's Main Theorem, behaviour of dimensions of fibres, descent for étale morphisms, etc, etc. Before reading this section it may be a good idea to take a look at the algebra results in Algebra, Section <a href="/tag/02MK" data-tag="02MK">10.122</a>. 
+</p>
+<p>
+Recall that a finite type ring map $R \to A$ is quasi-finite at a prime $\mathfrak q$ if $\mathfrak q$ defines an isolated point of its fibre, see Algebra, Definition <a href="/tag/00PL" data-tag="00PL">10.122.3</a>. 
+</p>
+<p>
+<article class="env-definition" id="01TD"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-info" data-toggle="popover" title="Reference" data-html="true" data-content=' <span class="cite">[<span class="postnote">II Definition 6.2.3</span>, <a href="/bibliography/EGA">EGA</a>]</span> '>reference</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/01TD">Definition <span data-tag="01TD">29.21.1</span>.</a> Let $f : X \to S$ be a morphism of schemes. </p>
+  <p><ol>
+  <li><p>
+We say that $f$ is <em>quasi-finite at a point $x \in X$</em> if there exist an affine neighbourhood $\mathop{\mathrm{Spec}}(A) = U \subset X$ of $x$ and an affine open $\mathop{\mathrm{Spec}}(R) = V \subset S$ such that $f(U) \subset V$, the ring map $R \to A$ is of finite type, and $R \to A$ is quasi-finite at the prime of $A$ corresponding to $x$ (see above). 
+</p>
+</li><li><p>
+We say $f$ is <em>locally quasi-finite</em> if $f$ is quasi-finite at every point $x$ of $X$. 
+</p>
+</li><li><p>
+We say that $f$ is <em>quasi-finite</em> if $f$ is of finite type and every point $x$ is an isolated point of its fibre. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+Trivially, a locally quasi-finite morphism is locally of finite type. We will see below that a morphism $f$ which is locally of finite type is quasi-finite at $x$ if and only if $x$ is isolated in its fibre. Moreover, the set of points at which a morphism is quasi-finite is open; we will see this in Section <a href="/tag/03GS" data-tag="03GS">29.57</a> on Zariski's Main Theorem. 
+</p>
+<p>
+<article class="env-lemma" id="01TE">
+  <p><a class="environment-identifier" href="/tag/01TE">Lemma <span data-tag="01TE">29.21.2</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$ be a point. Set $s = f(x)$. If $\kappa (x)/\kappa (s)$ is an algebraic field extension, then </p>
+  <p><ol>
+  <li><p>
+$x$ is a closed point of its fibre, and 
+</p>
+</li><li><p>
+if in addition $s$ is a closed point of $S$, then $x$ is a closed point of $X$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The second statement follows from the first by elementary topology. According to Schemes, Lemma <a href="/tag/01K1" data-tag="01K1">26.18.5</a> to prove the first statement we may replace $X$ by $X_ s$ and $S$ by $\mathop{\mathrm{Spec}}(\kappa (s))$. Thus we may assume that $S = \mathop{\mathrm{Spec}}(k)$ is the spectrum of a field. In this case, let $\mathop{\mathrm{Spec}}(A) = U \subset X$ be any affine open containing $x$. The point $x$ corresponds to a prime ideal $\mathfrak q \subset A$ such that $\kappa (\mathfrak q)/k$ is an algebraic field extension. By Algebra, Lemma <a href="/tag/00GA" data-tag="00GA">10.35.9</a> we see that $\mathfrak q$ is a maximal ideal, i.e., $x \in U$ is a closed point. Since the affine opens form a basis of the topology of $X$ we conclude that $\{ x\} $ is closed. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+The following lemma is a version of the Hilbert Nullstellensatz. 
+</p>
+<p>
+<article class="env-lemma" id="01TF">
+  <p><a class="environment-identifier" href="/tag/01TF">Lemma <span data-tag="01TF">29.21.3</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$ be a point. Set $s = f(x)$. Assume $f$ is locally of finite type. Then $x$ is a closed point of its fibre if and only if $\kappa (x)/\kappa (s)$ is a finite field extension. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      If the extension is finite, then $x$ is a closed point of the fibre by Lemma <a href="/tag/01TE" data-tag="01TE">29.21.2</a> above. For the converse, assume that $x$ is a closed point of its fibre. Choose affine opens $\mathop{\mathrm{Spec}}(A) = U \subset X$ and $\mathop{\mathrm{Spec}}(R) = V \subset S$ such that $f(U) \subset V$. By Lemma <a href="/tag/01T2" data-tag="01T2">29.15.2</a> the ring map $R \to A$ is of finite type. Let $\mathfrak q \subset A$, resp. $\mathfrak p \subset R$ be the prime ideal corresponding to $x$, resp. $s$. Consider the fibre ring $\overline{A} = A \otimes _ R \kappa (\mathfrak p)$. Let $\overline{\mathfrak q}$ be the prime of $\overline{A}$ corresponding to $\mathfrak q$. The assumption that $x$ is a closed point of its fibre implies that $\overline{\mathfrak q}$ is a maximal ideal of $\overline{A}$. Since $\overline{A}$ is an algebra of finite type over the field $\kappa (\mathfrak p)$ we see by the Hilbert Nullstellensatz, see Algebra, Theorem <a href="/tag/00FV" data-tag="00FV">10.34.1</a>, that $\kappa (\overline{\mathfrak q})$ is a finite extension of $\kappa (\mathfrak p)$. Since $\kappa (s) = \kappa (\mathfrak p)$ and $\kappa (x) = \kappa (\mathfrak q) = \kappa (\overline{\mathfrak q})$ we win. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="053M">
+  <p><a class="environment-identifier" href="/tag/053M">Lemma <span data-tag="053M">29.21.4</span>.</a> Let $f : X \to S$ be a morphism of schemes which is locally of finite type. Let $g : S' \to S$ be any morphism. Denote $f' : X' \to S'$ the base change. If $x' \in X'$ maps to a point $x \in X$ which is closed in $X_{f(x)}$ then $x'$ is closed in $X'_{f'(x')}$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The residue field $\kappa (x')$ is a quotient of $\kappa (f'(x')) \otimes _{\kappa (f(x))} \kappa (x)$, see Schemes, Lemma <a href="/tag/01JT" data-tag="01JT">26.17.5</a>. Hence it is a finite extension of $\kappa (f'(x'))$ as $\kappa (x)$ is a finite extension of $\kappa (f(x))$ by Lemma <a href="/tag/01TF" data-tag="01TF">29.21.3</a>. Thus we see that $x'$ is closed in its fibre by applying that lemma one more time. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01TG">
+  <p><a class="environment-identifier" href="/tag/01TG">Lemma <span data-tag="01TG">29.21.5</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$ be a point. Set $s = f(x)$. If $f$ is quasi-finite at $x$, then the residue field extension $\kappa (x)/\kappa (s)$ is finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is clear from Algebra, Definition <a href="/tag/00PL" data-tag="00PL">10.122.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01TH">
+  <p><a class="environment-identifier" href="/tag/01TH">Lemma <span data-tag="01TH">29.21.6</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$ be a point. Set $s = f(x)$. Let $X_ s$ be the fibre of $f$ at $s$. Assume $f$ is locally of finite type. The following are equivalent: </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is quasi-finite at $x$. 
+</p>
+</li><li><p>
+The point $x$ is isolated in $X_ s$. 
+</p>
+</li><li><p>
+The point $x$ is closed in $X_ s$ and there is no point $x' \in X_ s$, $x' \not= x$ which specializes to $x$. 
+</p>
+</li><li><p>
+For any pair of affine opens $\mathop{\mathrm{Spec}}(A) = U \subset X$, $\mathop{\mathrm{Spec}}(R) = V \subset S$ with $f(U) \subset V$ and $x \in U$ corresponding to $\mathfrak q \subset A$ the ring map $R \to A$ is quasi-finite at $\mathfrak q$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Assume $f$ is quasi-finite at $x$. By assumption there exist opens $U \subset X$, $V \subset S$ such that $f(U) \subset V$, $x \in U$ and $x$ an isolated point of $U_ s$. Hence $\{ x\}  \subset U_ s$ is an open subset. Since $U_ s = U \cap X_ s \subset X_ s$ is also open we conclude that $\{ x\}  \subset X_ s$ is an open subset also. Thus we conclude that $x$ is an isolated point of $X_ s$. 
+    <p>
+      Note that $X_ s$ is a Jacobson scheme by Lemma <a href="/tag/02J6" data-tag="02J6">29.16.10</a> (and Lemma <a href="/tag/01T4" data-tag="01T4">29.15.4</a>). If $x$ is isolated in $X_ s$, i.e., $\{ x\}  \subset X_ s$ is open, then $\{ x\} $ contains a closed point (by the Jacobson property), hence $x$ is closed in $X_ s$. It is clear that there is no point $x' \in X_ s$, distinct from $x$, specializing to $x$. 
+    <p>
+      Assume that $x$ is closed in $X_ s$ and that there is no point $x' \in X_ s$, distinct from $x$, specializing to $x$. Consider a pair of affine opens $\mathop{\mathrm{Spec}}(A) = U \subset X$, $\mathop{\mathrm{Spec}}(R) = V \subset S$ with $f(U) \subset V$ and $x \in U$. Let $\mathfrak q \subset A$ correspond to $x$ and $\mathfrak p \subset R$ correspond to $s$. By Lemma <a href="/tag/01T2" data-tag="01T2">29.15.2</a> the ring map $R \to A$ is of finite type. Consider the fibre ring $\overline{A} = A \otimes _ R \kappa (\mathfrak p)$. Let $\overline{\mathfrak q}$ be the prime of $\overline{A}$ corresponding to $\mathfrak q$. Since $\mathop{\mathrm{Spec}}(\overline{A})$ is an open subscheme of the fibre $X_ s$ we see that $\overline{q}$ is a maximal ideal of $\overline{A}$ and that there is no point of $\mathop{\mathrm{Spec}}(\overline{A})$ specializing to $\overline{\mathfrak q}$. This implies that $\dim (\overline{A}_{\overline{q}}) = 0$. Hence by Algebra, Definition <a href="/tag/00PL" data-tag="00PL">10.122.3</a> we see that $R \to A$ is quasi-finite at $\mathfrak q$, i.e., $X \to S$ is quasi-finite at $x$ by definition. 
+    <p>
+      At this point we have shown conditions (1) – (3) are all equivalent. It is clear that (4) implies (1). And it is also clear that (2) implies (4) since if $x$ is an isolated point of $X_ s$ then it is also an isolated point of $U_ s$ for any open $U$ which contains it. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02NG">
+  <p><a class="environment-identifier" href="/tag/02NG">Lemma <span data-tag="02NG">29.21.7</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $s \in S$. Assume that </p>
+  <p><ol>
+  <li><p>
+$f$ is locally of finite type, and 
+</p>
+</li><li><p>
+$f^{-1}(\{ s\} )$ is a finite set. 
+</p>
+</li>
+</ol></p>
+  <p> Then $X_ s$ is a finite discrete topological space, and $f$ is quasi-finite at each point of $X$ lying over $s$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Suppose $T$ is a scheme which (a) is locally of finite type over a field $k$, and (b) has finitely many points. Then Lemma <a href="/tag/02J6" data-tag="02J6">29.16.10</a> shows $T$ is a Jacobson scheme. A finite Jacobson space is discrete, see Topology, Lemma <a href="/tag/07JU" data-tag="07JU">5.18.6</a>. Apply this remark to the fibre $X_ s$ which is locally of finite type over $\mathop{\mathrm{Spec}}(\kappa (s))$ to see the first statement. Finally, apply Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a> to see the second. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="06RT"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Finite type morphisms with discrete fibers are quasi-finite. '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/06RT">Lemma <span data-tag="06RT">29.21.8</span>.</a> Let $f : X \to S$ be a morphism of schemes. Assume $f$ is locally of finite type. Then the following are equivalent </p>
+  <p><ol>
+  <li><p>
+$f$ is locally quasi-finite, 
+</p>
+</li><li><p>
+for every $s \in S$ the fibre $X_ s$ is a discrete topological space, and 
+</p>
+</li><li><p>
+for every morphism $\mathop{\mathrm{Spec}}(k) \to S$ where $k$ is a field the base change $X_ k$ has an underlying discrete topological space. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      It is immediate that (3) implies (2). Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a> shows that (2) is equivalent to (1). Assume (2) and let $\mathop{\mathrm{Spec}}(k) \to S$ be as in (3). Denote $s \in S$ the image of $\mathop{\mathrm{Spec}}(k) \to S$. Then $X_ k$ is the base change of $X_ s$ via $\mathop{\mathrm{Spec}}(k) \to \mathop{\mathrm{Spec}}(\kappa (s))$. Hence every point of $X_ k$ is closed by Lemma <a href="/tag/053M" data-tag="053M">29.21.4</a>. As $X_ k \to \mathop{\mathrm{Spec}}(k)$ is locally of finite type (by Lemma <a href="/tag/01T4" data-tag="01T4">29.15.4</a>), we may apply Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a> to conclude that every point of $X_ k$ is isolated, i.e., $X_ k$ has a discrete underlying topological space. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01TJ">
+  <p><a class="environment-identifier" href="/tag/01TJ">Lemma <span data-tag="01TJ">29.21.9</span>.</a> Let $f : X \to S$ be a morphism of schemes. Then $f$ is quasi-finite if and only if $f$ is locally quasi-finite and quasi-compact. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Assume $f$ is quasi-finite. It is quasi-compact by Definition <a href="/tag/01T1" data-tag="01T1">29.15.1</a>. Let $x \in X$. We see that $f$ is quasi-finite at $x$ by Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a>. Hence $f$ is quasi-compact and locally quasi-finite. 
+    <p>
+      Assume $f$ is quasi-compact and locally quasi-finite. Then $f$ is of finite type. Let $x \in X$ be a point. By Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a> we see that $x$ is an isolated point of its fibre. The lemma is proved. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02NH">
+  <p><a class="environment-identifier" href="/tag/02NH">Lemma <span data-tag="02NH">29.21.10</span>.</a> Let $f : X \to S$ be a morphism of schemes. The following are equivalent: </p>
+  <p><ol>
+  <li><p>
+$f$ is quasi-finite, and 
+</p>
+</li><li><p>
+$f$ is locally of finite type, quasi-compact, and has finite fibres. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Assume $f$ is quasi-finite. In particular $f$ is locally of finite type and quasi-compact (since it is of finite type). Let $s \in S$. Since every $x \in X_ s$ is isolated in $X_ s$ we see that $X_ s = \bigcup _{x \in X_ s} \{ x\} $ is an open covering. As $f$ is quasi-compact, the fibre $X_ s$ is quasi-compact. Hence we see that $X_ s$ is finite. 
+    <p>
+      Conversely, assume $f$ is locally of finite type, quasi-compact and has finite fibres. Then it is locally quasi-finite by Lemma <a href="/tag/02NG" data-tag="02NG">29.21.7</a>. Hence it is quasi-finite by Lemma <a href="/tag/01TJ" data-tag="01TJ">29.21.9</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Recall that a ring map $R \to A$ is quasi-finite if it is of finite type and quasi-finite at <em>all</em> primes of $A$, see Algebra, Definition <a href="/tag/00PL" data-tag="00PL">10.122.3</a>. 
+</p>
+<p>
+<article class="env-lemma" id="01TK">
+  <p><a class="environment-identifier" href="/tag/01TK">Lemma <span data-tag="01TK">29.21.11</span>.</a> Let $f : X \to S$ be a morphism of schemes. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is locally quasi-finite. 
+</p>
+</li><li><p>
+For every pair of affine opens $U \subset X$, $V \subset S$ with $f(U) \subset V$ the ring map $\mathcal{O}_ S(V) \to \mathcal{O}_ X(U)$ is quasi-finite. 
+</p>
+</li><li><p>
+There exists an open covering $S = \bigcup _{j \in J} V_ j$ and open coverings $f^{-1}(V_ j) = \bigcup _{i \in I_ j} U_ i$ such that each of the morphisms $U_ i \to V_ j$, $j\in J, i\in I_ j$ is locally quasi-finite. 
+</p>
+</li><li><p>
+There exists an affine open covering $S = \bigcup _{j \in J} V_ j$ and affine open coverings $f^{-1}(V_ j) = \bigcup _{i \in I_ j} U_ i$ such that the ring map $\mathcal{O}_ S(V_ j) \to \mathcal{O}_ X(U_ i)$ is quasi-finite, for all $j\in J, i\in I_ j$. 
+</p>
+</li>
+</ol></p>
+  <p> Moreover, if $f$ is locally quasi-finite then for any open subschemes $U \subset X$, $V \subset S$ with $f(U) \subset V$ the restriction $f|_ U : U \to V$ is locally quasi-finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      For a ring map $R \to A$ let us define $P(R \to A)$ to mean “$R \to A$ is quasi-finite” (see remark above lemma). We claim that $P$ is a local property of ring maps. We check conditions (a), (b) and (c) of Definition <a href="/tag/01SR" data-tag="01SR">29.14.1</a>. In the proof of Lemma <a href="/tag/01T2" data-tag="01T2">29.15.2</a> we have seen that (a), (b) and (c) hold for the property of being “of finite type”. Note that, for a finite type ring map $R \to A$, the property $R \to A$ is quasi-finite at $\mathfrak q$ depends only on the local ring $A_{\mathfrak q}$ as an algebra over $R_{\mathfrak p}$ where $\mathfrak p = R \cap \mathfrak q$ (usual abuse of notation). Using these remarks (a), (b) and (c) of Definition <a href="/tag/01SR" data-tag="01SR">29.14.1</a> follow immediately. For example, suppose $R \to A$ is a ring map such that all of the ring maps $R \to A_{a_ i}$ are quasi-finite for $a_1, \ldots , a_ n \in A$ generating the unit ideal. We conclude that $R \to A$ is of finite type. Also, for any prime $\mathfrak q \subset A$ the local ring $A_{\mathfrak q}$ is isomorphic as an $R$-algebra to the local ring $(A_{a_ i})_{\mathfrak q_ i}$ for some $i$ and some $\mathfrak q_ i \subset A_{a_ i}$. Hence we conclude that $R \to A$ is quasi-finite at $\mathfrak q$. 
+    <p>
+      We conclude that Lemma <a href="/tag/01ST" data-tag="01ST">29.14.3</a> applies with $P$ as in the previous paragraph. Hence it suffices to prove that $f$ is locally quasi-finite is equivalent to $f$ is locally of type $P$. Since $P(R \to A)$ is “$R \to A$ is quasi-finite” which means $R \to A$ is quasi-finite at every prime of $A$, this follows from Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01TL">
+  <p><a class="environment-identifier" href="/tag/01TL">Lemma <span data-tag="01TL">29.21.12</span>.</a> The composition of two morphisms which are locally quasi-finite is locally quasi-finite. The same is true for quasi-finite morphisms. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      In the proof of Lemma <a href="/tag/01TK" data-tag="01TK">29.21.11</a> we saw that $P = $“quasi-finite” is a local property of ring maps, and that a morphism of schemes is locally quasi-finite if and only if it is locally of type $P$ as in Definition <a href="/tag/01SS" data-tag="01SS">29.14.2</a>. Hence the first statement of the lemma follows from Lemma <a href="/tag/01SV" data-tag="01SV">29.14.5</a> combined with the fact that being quasi-finite is a property of ring maps that is stable under composition, see Algebra, Lemma <a href="/tag/00PO" data-tag="00PO">10.122.8</a>. By the above, Lemma <a href="/tag/01TJ" data-tag="01TJ">29.21.9</a> and the fact that compositions of quasi-compact morphisms are quasi-compact, see Schemes, Lemma <a href="/tag/01K6" data-tag="01K6">26.19.4</a> we see that the composition of quasi-finite morphisms is quasi-finite. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+We will see later (Lemma <a href="/tag/01TI" data-tag="01TI">29.57.2</a>) that the set $U$ of the following lemma is open. 
+</p>
+<p>
+<article class="env-lemma" id="01TM"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' (Locally) quasi-finite morphisms are stable under base change. '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/01TM">Lemma <span data-tag="01TM">29.21.13</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $g : S' \to S$ be a morphism of schemes. Denote $f' : X' \to S'$ the base change of $f$ by $g$ and denote $g' : X' \to X$ the projection. Assume $X$ is locally of finite type over $S$. </p>
+  <p><ol>
+  <li><p>
+Let $U \subset X$ (resp. $U' \subset X'$) be the set of points where $f$ (resp. $f'$) is quasi-finite. Then $U' = U \times _ S S' = (g')^{-1}(U)$. 
+</p>
+</li><li><p>
+The base change of a locally quasi-finite morphism is locally quasi-finite. 
+</p>
+</li><li><p>
+The base change of a quasi-finite morphism is quasi-finite. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The first and second assertion follow from the corresponding algebra result, see Algebra, Lemma <a href="/tag/00PP" data-tag="00PP">10.122.9</a> (combined with the fact that $f'$ is also locally of finite type by Lemma <a href="/tag/01T4" data-tag="01T4">29.15.4</a>). By the above, Lemma <a href="/tag/01TJ" data-tag="01TJ">29.21.9</a> and the fact that a base change of a quasi-compact morphism is quasi-compact, see Schemes, Lemma <a href="/tag/01K5" data-tag="01K5">26.19.3</a> we see that the base change of a quasi-finite morphism is quasi-finite. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0AAY">
+  <p><a class="environment-identifier" href="/tag/0AAY">Lemma <span data-tag="0AAY">29.21.14</span>.</a> Let $f : X \to S$ be a morphism of schemes of finite type. Let $s \in S$. There are at most finitely many points of $X$ lying over $s$ at which $f$ is quasi-finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The fibre $X_ s$ is a scheme of finite type over a field, hence Noetherian (Lemma <a href="/tag/01T6" data-tag="01T6">29.15.6</a>). Hence the topology on $X_ s$ is Noetherian (Properties, Lemma <a href="/tag/01OZ" data-tag="01OZ">28.5.5</a>) and can have at most a finite number of isolated points (by elementary topology). Thus our lemma follows from Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0CT8">
+  <p><a class="environment-identifier" href="/tag/0CT8">Lemma <span data-tag="0CT8">29.21.15</span>.</a> Let $f : X \to Y$ be a morphism of schemes. If $f$ is locally of finite type and a monomorphism, then $f$ is separated and locally quasi-finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      A monomorphism is separated by Schemes, Lemma <a href="/tag/01L4" data-tag="01L4">26.23.3</a>. A monomorphism is injective, hence we get $f$ is quasi-finite at every $x \in X$ for example by Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01TN">
+  <p><a class="environment-identifier" href="/tag/01TN">Lemma <span data-tag="01TN">29.21.16</span>.</a> Any immersion is locally quasi-finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is true because an open immersion is a local isomorphism and a closed immersion is clearly quasi-finite. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="03WR">
+  <p><a class="environment-identifier" href="/tag/03WR">Lemma <span data-tag="03WR">29.21.17</span>.</a> Let $X \to Y$ be a morphism of schemes over a base scheme $S$. Let $x \in X$. If $X \to S$ is quasi-finite at $x$, then $X \to Y$ is quasi-finite at $x$. If $X$ is locally quasi-finite over $S$, then $X \to Y$ is locally quasi-finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Via Lemma <a href="/tag/01TK" data-tag="01TK">29.21.11</a> this translates into the following algebra fact: Given ring maps $A \to B \to C$ such that $A \to C$ is quasi-finite, then $B \to C$ is quasi-finite. This follows from Algebra, Lemma <a href="/tag/00PN" data-tag="00PN">10.122.7</a> with $R = A$, $S = S' = C$ and $R' = B$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0GWS">
+  <p><a class="environment-identifier" href="/tag/0GWS">Lemma <span data-tag="0GWS">29.21.18</span>.</a> Let $f : X \to Y$ and $g : Y \to S$ be morphisms of schemes. If $f$ is surjective, $g \circ f$ locally quasi-finite, and $g$ locally of finite type, then $g : Y \to S$ is locally quasi-finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $x \in X$ with images $y \in Y$ and $s \in S$. Since $g \circ f$ is locally quasi-finite by Lemma <a href="/tag/01TG" data-tag="01TG">29.21.5</a> the extension $\kappa (x)/\kappa (s)$ is finite. Hence $\kappa (y)/\kappa (s)$ is finite. Hence $y$ is a closed point of $Y_ s$ by Lemma <a href="/tag/01TE" data-tag="01TE">29.21.2</a>. Since $f$ is surjective, we see that every point of $Y$ is closed in its fibre over $S$. Thus by Lemma <a href="/tag/01TH" data-tag="01TH">29.21.6</a> we conclude that $g$ is quasi-finite at every point. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-01TC",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">01TC</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="01TC"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">01TC</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0HA6">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/01TO">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/morphisms.pdf#nameddest=01TC">View Section <span data-tag="01TC">29.21</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

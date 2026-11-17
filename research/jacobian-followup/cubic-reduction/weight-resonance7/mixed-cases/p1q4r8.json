@@ -1,0 +1,246 @@
+{
+  "status": "complete-native-model",
+  "source_sha256": "bdf6b11c0aabf7489c809137a4628bc27648ed0af665a0fd884a9c8aa396c29d",
+  "magnitudes": [
+    1,
+    4,
+    8
+  ],
+  "weights": [
+    1,
+    -4,
+    -8
+  ],
+  "canonical_census_weight": [
+    1,
+    -8,
+    -4
+  ],
+  "basis": [
+    {
+      "output": 0,
+      "exponent": [
+        5,
+        1,
+        0
+      ]
+    },
+    {
+      "output": 1,
+      "exponent": [
+        4,
+        0,
+        1
+      ]
+    },
+    {
+      "output": 1,
+      "exponent": [
+        4,
+        2,
+        0
+      ]
+    },
+    {
+      "output": 2,
+      "exponent": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "output": 2,
+      "exponent": [
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "output": 2,
+      "exponent": [
+        4,
+        3,
+        0
+      ]
+    }
+  ],
+  "parameter_names": [
+    "c0",
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "c5"
+  ],
+  "generators": [
+    [
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "-11"
+      },
+      {
+        "exponent": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "6"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "-5"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "-10"
+      },
+      {
+        "exponent": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "6"
+      },
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "5"
+      },
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": "-3"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "2"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-4"
+      },
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "-1"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "5"
+      },
+      {
+        "exponent": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": "-2"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "2"
+      },
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ]
+  ],
+  "positive_output_parameters": [
+    0
+  ]
+}

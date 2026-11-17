@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Hatcher, Notes on Basic 3-Manifold Topology, retained version",
+      "bytes": 384715,
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "complete_PDF_pages_visually_rechecked": [
+        20,
+        21
+      ],
+      "printed_pages": [
+        19,
+        20
+      ],
+      "used_statement": "Proposition1.13 essential vertical annulus in the trefoil, Lemmas1.14-1.15 boundary fibre uniqueness with all exceptions; PF77 retains the complete PDF15 Theorem1.9 JSJ audit. Terminal Klein alternative is handled explicitly by its boundary group, not fibre uniqueness.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof"
+    },
+    {
+      "path": "sources/borderline-regular-end/waldhausen-1968.pdf",
+      "url": "https://www.maths.gla.ac.uk/~mpowell/Waldhausen-Irreducible3ManifoldsSufficiently-1968.pdf",
+      "title": "Waldhausen, On irreducible 3-manifolds which are sufficiently large, Ann Math87(1968),56-88",
+      "bytes": 2860358,
+      "sha256": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+      "complete_PDF_pages_visually_rechecked": [
+        5,
+        23
+      ],
+      "printed_pages": [
+        59,
+        77
+      ],
+      "used_statement": "Definition1.1.7 sufficiently large means existence of an incompressible surface; the trefoil essential vertical annulus supplies one. Theorem6.1 relative covering recognition as in PF77, full peripheral map, irreducible/boundary-irreducible exteriors, aspherical sufficiently-large target, one boundary excludes closed-surface product, pi1 isomorphism forces degree1.",
+      "imported_not_independently_reproved": true,
+      "complete_page_audit_origin": "PF77/78 complete visual audits, reused at PF79; no new independent topology proof"
+    }
+  ],
+  "retained_inputs": [
+    "PF77/78 complete complementary source corner and negative D bridges, full stable peripheral recognition",
+    "PF68/69/70/71/72 complete target sectors, actual fibre-orbit cones, integral peripheral bases and closed homology",
+    "PF63 complete period12 census and actual-binomial hypotheses",
+    "PF76 all common sources closed",
+    "PF43/46/50/61 arbitrary-support contacts and full source matrix"
+  ],
+  "new_unbounded_arguments": [
+    "Terminal opposite-R disk exactly two cones when source has a JSJ edge, with Klein survival and alternate merger excluded by virtual abelianness/centre",
+    "Uniform source root-two-cone and single-piece restrictions",
+    "All remaining nonsolid companions excluded by terminal or consecutive root cone budget except two parametric residual families",
+    "Two-node arbitrary-support contacts give residual determinants uniformly too large, or negative",
+    "Both actual solid-companion meridian signs retained by primitive homological kernel after topology is proved; all caps excluded including fibre-parallel boundary-compressible exception",
+    "All596 periodic classes exhausted, closing the entire stated actual primitive-binomial two-stage quartic target class"
+  ],
+  "limits": {
+    "two_entire_omitted_lines_required": true,
+    "entire_actual_primitive_binomial_two_stage_quartic_class_excluded": true,
+    "all_representations_both_pencils_in_that_class_closed": true,
+    "general_lower_weight_keys_assumed_binomial": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "full_goal_open": true
+  },
+  "primary_web_record_consulted": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+  "new_primary_downloads_required": false,
+  "research_goal_completed": false
+}

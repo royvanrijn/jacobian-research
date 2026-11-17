@@ -1,5 +1,12 @@
 # Boundary-coloring surgery for the \(A_4\) cone
 
+**Construction status, 15 November 2026:** [KMFI66 and the construction-closure bridge](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+exclude the proposed A4-preserving polynomial Keller completion on ordinary
+affine space in every dimension and faithful transitive action, subject to
+the internal central-cover proof. All local calculations below are retained.
+Construction continuations are historical; unresolved local classifications
+do not reopen this objective. Wright's A4 boundary states remain separate.
+
 ## 1. Outcome
 
 **Status:** exact symbolic experiment.  The two displayed modifications
@@ -232,7 +239,7 @@ pair of conjugate lines
 This denominator-centered chart is therefore singular and cannot be an
 affine-space source for a Keller map.
 
-## 5. What remains open
+## 5. What remains open (historical; global objective closed)
 
 The calculation closes only the two elementary charts above.
 

@@ -1,0 +1,78 @@
+{
+  "result": "focused alternating-realization integration passes",
+  "reviewed_claim_ids": [
+    "OP-KMON",
+    "KMFI1",
+    "KMFI2",
+    "KMFI3",
+    "KMFI4",
+    "KMFI5",
+    "KMFI6",
+    "KMFI7",
+    "KMFI8",
+    "KMFI9",
+    "KMFI10",
+    "KMFI11",
+    "KMFI12",
+    "KMFI13"
+  ],
+  "claim_schema_checker_hashes_paths_dependencies": "pass",
+  "monodromy_dependency_closure_acyclic": true,
+  "dependency_closure_claim_count": 48,
+  "full_registry_graph_audit": {
+    "dependencies": "unrelated registry issue: dependencies contains a cycle through EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL",
+    "replaced_by": "pass"
+  },
+  "all_registry_ids_unique": true,
+  "updated_lesson_schema_paths_and_reviews": "pass",
+  "updated_work_sources_and_reviews": "pass",
+  "python_sources_parse": true,
+  "document_links_checked": 26,
+  "receipts": [
+    {
+      "path": "receipt.json",
+      "checks": 197,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "affine_completion_receipt.json",
+      "checks": 82,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "curve_descent_receipt.json",
+      "checks": 67,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "alternating_realizations_receipt.json",
+      "checks": 43,
+      "source_hashes": "pass"
+    }
+  ],
+  "total_exact_checks": 389,
+  "attribution": "Kistner--Shaska arXiv:2608.02863v1; formulas and group arguments rederived, no novelty claim.",
+  "full_navigation": [
+    {
+      "command": "make render-navigation",
+      "result": "blocked",
+      "reason": "Pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": "make check-navigation",
+      "result": "blocked",
+      "reason": "Pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md"
+    }
+  ],
+  "completion_audit": {
+    "actual_alternating_simple_realizations": [
+      "A_(4j+1), j>=1",
+      "A12"
+    ],
+    "PSL2_11_actions": "open; neither a realization nor an action-level obstruction supplied",
+    "full_action_spectrum": "not classified",
+    "scope_correction": "Proper alternating simple occurrence is established; do not retain the blanket gap."
+  },
+  "proof_assurance": "Written universal proofs and exact controls; no formal verification or independent whole-proof review.",
+  "goal_status": "active"
+}

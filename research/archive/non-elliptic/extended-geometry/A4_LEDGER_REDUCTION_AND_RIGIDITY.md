@@ -1,5 +1,12 @@
 # The \(A_4\) determinant-ledger reduction
 
+**Construction status, 15 November 2026:** [KMFI66 and the construction-closure bridge](../../../jacobian-followup/monodromy-theory/A4_CONSTRUCTION_CLOSURE.md)
+exclude the proposed A4-preserving polynomial Keller completion on ordinary
+affine space in every dimension and faithful transitive action, subject to
+the internal central-cover proof. All local calculations below are retained.
+Construction continuations are historical; unresolved local classifications
+do not reopen this objective. Wright's A4 boundary states remain separate.
+
 ## 1. Outcome
 
 For the polynomial \(A_4\) cone
@@ -285,7 +292,7 @@ successful stabilization must let the new variables enter at least one of
 the three cover outputs, while still providing a target-field certificate
 that the generic extension remains the natural \(A_4\)-extension.
 
-## 7. Surviving construction problem
+## 7. Surviving construction problem (historical; global objective closed)
 
 The [pure-target ledger lift](A4_PURE_TARGET_LEDGER_LIFT.md) completes the
 first step below polynomially: after adjoining \(z\), the fourth output

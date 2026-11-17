@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T00:53:31.279773+00:00",
+  "purpose": "Classical ambiguous-class formula and primitive-divisor input plus retained canonical evidence. No class-number table or priority certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian-followup/universal-keller-versal-isogenies/PROOF.md",
+      "locator": "UAISOCRIT1 exact cohomology and free base; UACYCIDEAL1 fixed-lattice scope; UAPRIMEPOWER1 retained positive families; UAVERSLIMIT1 scheme/naturality boundary.",
+      "sha256": "0b65fda9c4b3c67cb127f511350972915c130ea58c020930300a08b99d13626d"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-torus-quotient-selfmaps/PROOF.md",
+      "locator": "UAINFRASELF1 necessary prime-power degree; UAKANLIFT1 canonical covolume functor.",
+      "sha256": "6190aee79c88adef5e807074c385e795f1882bcddf6478a47af292bbc5f4ee46"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-torus-receivers/PROOF.md",
+      "locator": "UAFINATOM1 finite factors and primitive strong atomicity.",
+      "sha256": "2f71f561ae8a687ab8a27a13027bb097c45dc14862ae315bb2a49efff72f29a3"
+    },
+    {
+      "path": "jacobian-followup/universal-keller-rigid-base-reduction/PROOF.md",
+      "locator": "UA1RIGIDCYL1 finite cylinders and stable base identification.",
+      "sha256": "b940a9485119963c06220145fb0085fc076844b54c9fead56be99f87cc7263c8"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/li-yu-2001.11413v2.html",
+      "url": "https://arxiv.org/html/2001.11413v2",
+      "locator": "Example2.5(1), ordinary class-group formula with all finite and infinite ramification indices; general cyclic degree, not prime degree only.",
+      "bytes": 545055,
+      "sha256": "e143c58953cc087e7ff2a678a0360ec408e0caa9991f4439a8345ee02996f7f6"
+    },
+    {
+      "path": "sources/michels-zsigmondy-2014.pdf",
+      "url": "https://bartmichels.github.io/files/zsigmondy_en.pdf",
+      "locator": "PDF page1 statement and two exceptions, visually reviewed from a rendered image. Author proof of the classical Bang-Zsigmondy theorem; original Zsigmondy1892 DOI10.1007/BF01692444.",
+      "bytes": 243919,
+      "sha256": "a6842c21fafea4aeaee265f07af3fec9aff895cb80c152d7525d7d2f2b5a36f3",
+      "visual_review": {
+        "page_zero_based": 0,
+        "renderer": "pypdfium2 5.15.2 with Pillow13.0.0",
+        "scale": 1.8,
+        "reviewed": true
+      }
+    }
+  ]
+}

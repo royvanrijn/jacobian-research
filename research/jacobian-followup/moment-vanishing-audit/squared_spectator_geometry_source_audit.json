@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-16",
+  "new_claims": [
+    "GMCSQUAREPRODUCT20261116",
+    "GMCIRREGULARRANK20261116"
+  ],
+  "new_lesson": "METHOD-GAUSSIAN-IDEAL-INVARIANCE-IS-NOT-ACTUAL-RANK-20261116",
+  "retained_lessons_updated": [
+    "METHOD-GAUSSIAN-ORDINARY-CONE-IBP-AND-PRIMARY-STOPPING-20261116"
+  ],
+  "owned_work": "WORK-GAUSSIAN-FORMAL-GENERAL",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/SQUARED_SPECTATOR_INVARIANCE_AND_UNBOUNDED_GAUSSIAN_IMAGES.md",
+  "canonical_proof_sha256": "799955708ff070afa3bf691ed264e64a4742d909f5f4de7143d58c6b77ddf43c",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_squared_spectator_geometry.py",
+  "checker_sha256": "2f70a9c847a08a493373cb8189c18452678b3f8f6276f771a47eccc5d39b1958",
+  "receipt": "jacobian-followup/moment-vanishing-audit/squared_spectator_geometry_verification.json",
+  "receipt_sha256": "27ac1f9ce2633b169d4bd6a429569d1b1c505f6db7c100bd1d9977b19d99c591",
+  "certificate": "jacobian-followup/moment-vanishing-audit/squared_spectator_geometry_certificate.json",
+  "certificate_sha256": "6a2bee889f5cc939445e556e55f20b080e889fdc12ceb20a18d6489a62261f4b",
+  "runtime": "jacobian-followup/moment-vanishing-audit/squared_spectator_geometry_runtime.json",
+  "runtime_sha256": "6aa0b3cb182a31b7d0c45095d1cb99e9c8787955464a5ce4e4beec9634e86146",
+  "frontier": "jacobian-followup/moment-vanishing-audit/GENERAL_GAUSSIAN_RESEARCH_FRONTIER_20261116_PRODUCT.md",
+  "frontier_sha256": "58eb4bf8eff9f24aae557d36ca834de747147567500149f6b40f0209f7f839a4",
+  "primary_sources": [
+    {
+      "author": "Joris van der Hoeven",
+      "title": "Efficient accelero-summation of holonomic functions",
+      "url": "https://www.texmacs.org/joris/reshol/reshol.pdf",
+      "published_record": "https://doi.org/10.1016/j.jsc.2006.12.005",
+      "published": "J.Symbolic Computation42(4),389-428(2007)",
+      "author_version": "9December2006",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/vanderhoeven_reshol_20261116.pdf",
+      "full_relevant_pages_visually_read": [
+        1,
+        17,
+        21,
+        22
+      ],
+      "text_encoding": "Corrupt/unusable;rendered complete pages inspected directly.",
+      "exact_import": "Section3.1 Newton polygon in Euler derivation;Theorems1-2 classical formal exponential/slopes interpretation. No analytic boundary/Stokes computation or summability algorithm imported;weighted irreducibility proved independently in full.",
+      "sha256": "084a02319cc5ef5fd3413b4db07c026f32078c2331372fcf17890000d608fdda",
+      "bytes": 641061
+    },
+    {
+      "author": "Magma handbook",
+      "title": "Formal projective derivation and slope valuation",
+      "url": "https://docs.magma-maths.org/v2.30-1/CommutativeAlgebra/DifferentialRings/operators-factorisation-over-laurent-series-ring.html",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/magma_v2301_formal_slope_valuation_20261116.html",
+      "exact_import": "Only definition V_s(ct^i delta^j)=i*d-j*n and theta*t=t*theta+t cross-checked. The accompanying ambiguous irreducibility sentence is NOT imported;canonical note supplies a complete prime-symbol proof.",
+      "sha256": "acdb213d305e4b6e719c0e7e07b41cee661e80ccf5534869824fcbece771da6f",
+      "bytes": 143443
+    }
+  ],
+  "rendered_primary_pages_sha256": {
+    "jacobian-followup/moment-vanishing-audit/squared_spectator_geometry_source_pages/reshol_page_22.png": "e13a1afd6a95e96fb9c99b1095d3cd7cfb40bc5f4bfc3e5c8a6e955fcef68bd7",
+    "jacobian-followup/moment-vanishing-audit/squared_spectator_geometry_source_pages/reshol_page_21.png": "45cd9c32e53763f453ee7b361510d4c742872bc94e07427c813e8c29bf64fad8",
+    "jacobian-followup/moment-vanishing-audit/squared_spectator_geometry_source_pages/reshol_page_17.png": "3d22c948f6d581a5fb6607577e925abec354825bd40944a9392f4a9e02217c56",
+    "jacobian-followup/moment-vanishing-audit/squared_spectator_geometry_source_pages/reshol_page_1.png": "b91aecaa1b31908b7d821c6302db072dfcc37ba28fd1ad5f131819715667bf68"
+  },
+  "retained_import_files_sha256": {
+    "jacobian-followup/moment-vanishing-audit/FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "jacobian-followup/moment-vanishing-audit/finite_multiplier_source_audit.json": "5e113782efcb29461f9419bf0269446c36c0b0f1bc612169b6f11f02d38d7a43",
+    "jacobian-followup/moment-vanishing-audit/RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27",
+    "jacobian-followup/moment-vanishing-audit/rank_one_image_source_audit.json": "e2cb6a2665b0287cf5e6ea53873d4df08fece3bdc693804318c33ad21ab9014c",
+    "jacobian-followup/moment-vanishing-audit/gaussian_generic_cutoff_producer.py": "c9b1a84b8502f339af464f044dbbf523cf93c8c7edaec79bd81f0cabd6d8dfc7",
+    "jacobian-followup/moment-vanishing-audit/gaussian_ordinary_cutoff_producer.py": "bdfa058a44a9c2ed0be8dd2eae062d20559edd83a30e7dc23c6a823aa1e7a0e7",
+    "jacobian-followup/moment-vanishing-audit/gaussian_family_producer.py": "6587625b6bdd4ed7dd3e15bd84fac36a9560ff1e610383cb1b4b957ceedcfb84",
+    "jacobian-followup/moment-vanishing-audit/BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md": "a2cff821b7cee9629235dec935ad231b3db389a03b3fca650b9a35c935451cd9",
+    "jacobian-followup/factorial-image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex": "d9fc9b65eb3ffb8dc4f995abc110cabf9d377a6f32842b35dac29611f81aee47",
+    "jacobian-followup/factorial-image-rigidity/long_source_audit.json": "63142163fb40fd323ff7b7c48daed5751cd65afc17347e5dbe9ab2d8121f2ef0",
+    "jacobian-followup/factorial-image-rigidity/verify_long_audit.py": "3c501af894dfa779b6f1e4082e0c6b6eb4379879f7a2f4ff44e1c2ca134f2266",
+    "jacobian-followup/factorial-image-rigidity/long_audit_verification.json": "bc461191a4bac4baa40a463902de42ff3b2ed7323997d8ba64beb61bb5059c67"
+  },
+  "adopted_two_block_claims": [
+    "FIRFC2FULL20261116",
+    "FIREIT20261116",
+    "FIRRADIAL2RINGS20261116",
+    "FIRRADIAL2NORM20261116",
+    "FIRGAMMAADAPTER20261116"
+  ],
+  "adopted_claim_fingerprints": {
+    "FIRFC2FULL20261116": "51b458524c669ffc",
+    "FIREIT20261116": "bd30f7058b1f1269",
+    "FIRRADIAL2RINGS20261116": "b1dd044c91cc8285",
+    "FIRRADIAL2NORM20261116": "687f43231ed127b6",
+    "FIRGAMMAADAPTER20261116": "25af5f8d5fa94671"
+  },
+  "adoption_audit": "Read full two-block field/all-ring/norm corollaries in LONG_EIT_AND_FC2_AUDIT.tex,authoritative FIR scopes and checker hashes. Field follows binary FC plus exact Gamma;prime reduction/finite nil ideal gives every-Q-algebra result;A/Ann(a) gives ordinary torsion. Long/EIT unrefereed/internal limits retained. No surface/exceptional-Mathieu duplication or reply.",
+  "coordinator_packet_read": "jacobian-followup/cross-programme-connections/INWARD_COUPLED_RESTRICTIONS_2026_11_16.tex;read-only contextual handoff,not a theorem dependency for the new product/rank proofs.",
+  "proof_audit": {
+    "square": "Independent product identity,strict positive rational beta0 moments are UNITS in every Q-algebra;exact graded moment/cutoff/norm ideals. Non-square reflection uses two fixed markers,complex isotropic countercontrol.",
+    "full_image": "Lift original polynomial amplitudes under t->tY^(2ell);all other markers reduce by rational partial fractions and explicit Euler operators. Exact global D-span,no image kernel.",
+    "rank": "Weighted Ore commutators higher weight;prime symbol1-c*T*xi^ell and full order degree give irreducibility. Distinct pole symbols Bezout imply nonisomorphism. Every h nonrational,so each simple summand survives;rank1+ell*s.",
+    "extension": "No Laurent solution of A_lambda f0 by initial-order argument;essential nonsplit unit. Formal inhomogeneous equation unique,so formalHom1 with unboundedrank. Global quotient semisimplicity NOT claimed.",
+    "slope": "AuthorPDF visual full relevant pages;classical Euler Newton convention only,exact Gevreyell by recurrence/Stirling. No analytical convergence or Stokes algorithm assumed.",
+    "ordinary_geometry": "Retained e-charge identity and unit square transfer prove all-real forbidden idealunit for c<1,elsee^floor(c+b);sharp every-L regionc>=1,b>=0,c+b>=L. Identical schemes do not imply identical connections.",
+    "credit": "Classical Gaussian/Long quartic/Euler/Newton ingredients,van derHoeven published2007 convention;Sabbah/Maisonobe convergent credit and separate nonconvergent formal/allring priority boundary unchanged."
+  },
+  "exact_controls": {
+    "model_controls": 4,
+    "weighted_product_controls": 3,
+    "pole_marker_controls": 3,
+    "original_Wick_controls": 12,
+    "ordinary_profile_controls": 6,
+    "sharp_affine_controls": 6,
+    "rejections": 9
+  },
+  "protected_whole_records": 165,
+  "prior_example_files": 211,
+  "historical_cusp_and_cone_restarted": false,
+  "user_goal": "Complete general Gaussian/formal programme;active;structural all-degree progress without small-case campaign.",
+  "next_full_obligation": "GENERAL GAUSSIAN STRUCTURAL MILESTONE16November2026: GMCSQUAREPRODUCT20261116 proves exact all-Q-algebra invariance of EVERY ordinary marked-moment/cutoff/normalization ideal under an independent rational real SQUARE factor,with quantitative nonsquare safety reflection. GMCIRREGULARRANK20261116 converts ANY pure rational pole packet into explicit arbitrary-rank irregular actual images:rank1+ell*s,essential nonsplit unit,unique normalized formal period. The FOURvariable quartic-product deformation has identical entire cutoff schemes acrossell and sharp nilpotent real affine regionc>=1,b>=0,c+b>=L. Thus all vanishing ideals do not classify or degree-independently bound actualrank. FIRRADIAL2RINGS20261116/FIRRADIAL2NORM20261116 are adopted as an ALREADY CLOSED two-O(2)-block sector,with Long FC(2)/EIT/Gamma internal assurance limits;other Gamma shapes/more blocks notclosed. NEXT:exhaustive safe normalforms and actual quotient/lattice geometry beyond factor constructions,including regular nonrational possibilities. Broad goal active. NEXT GENERAL OBLIGATION:exhaustive safe normalforms and actual quotient/lattice geometry beyond independent factor constructions. Regular nonrational actual images and complete structural sufficiency remain unresolved. Use the exact arbitrary-rank irregular branch and distinguish its generic quotient from global t0 lattice. A unique normalized formal map is not a rank bound;all ordinary ideal data can be invariant while rank grows. Keep least-real-slope geometry in general separate from this exact all-depth affine region. Two-O(2)-block radial sector is CLOSED with Long/EIT credit;arbitrary Gamma shapes/more blocks are not. Preserve all earlier ordinary/numerical/formal/allring implementation gates and failures. No degree/support/prefix campaign,capped-job restart,outreach,delegation or duplicate exceptional-Mathieu architecture work.",
+  "actual_image_kernel_computed": false,
+  "global_quotient_semisimplicity_claimed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claimed": false
+}

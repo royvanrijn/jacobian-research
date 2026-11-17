@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-15T02:43:27.692695+00:00",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "new_claims": [
+    "UAPARALLEL1",
+    "UAWEILATOM1",
+    "UACUBICKER1",
+    "UASCALARFEED1"
+  ],
+  "changed_existing_claims": [
+    "OP-KDESC",
+    "UAM1",
+    "KRP1",
+    "UAPROFILE1",
+    "UAQTILT1",
+    "UAALLATOM1",
+    "UAUNIVMON1",
+    "UASELFATOM1",
+    "UAFILTER1",
+    "UACANFIB1",
+    "UACANVOL1"
+  ],
+  "changed_scope_claims": [
+    "OP-KDESC",
+    "UAPARALLEL1",
+    "UAWEILATOM1",
+    "UACUBICKER1",
+    "UASCALARFEED1"
+  ],
+  "old_entry_count": 2306,
+  "new_entry_count": 2310,
+  "unchanged_existing_entry_count": 2295,
+  "unrelated_entries_preserved_at_write": true,
+  "preserved_entries_canonical_sha256": "9495428d2e6028dca5fb4102cbf271b6702f29466ded77abd7be09c2e675aeee",
+  "changed_scope_fingerprints": {
+    "OP-KDESC": "37a035ddf1015b75",
+    "UAPARALLEL1": "cf44c10dbc642e52",
+    "UAWEILATOM1": "80a8360ff9866396",
+    "UACUBICKER1": "55631596bf1cf8b0",
+    "UASCALARFEED1": "e2f521c164d907cd"
+  },
+  "updated_lessons": [
+    "METHOD-MARKED-ROOT-COMPILER",
+    "METHOD-KELLER-RECEIVER-LANDING",
+    "METHOD-HOMOGENEOUS-RECEIVER-BOUNDARY",
+    "METHOD-FINITE-TORUS-QUOTIENT-SELF-MAPS",
+    "METHOD-TORSOR-ISOGENY-DESCENT"
+  ],
+  "updated_work_items": [
+    "WORK-KDESC"
+  ],
+  "checker_source_sha256": "f75c274cfc3d8c76de2eda59d06ef7b4dcf8231bd5584ff5c8dd97cb450d78ec",
+  "open_problems_closed": [],
+  "narrow_subproblems_closed": [
+    "All-degree retained-output cross-profile atomic upgrade route, including cycles, with full polynomial Boolean factors.",
+    "Exact arithmetic and constant-extension stable factor length for restriction of scalars of primitive compiler seeds.",
+    "Exact rational and polynomial kernels of the auxiliary cubic translation derivation.",
+    "Complete all-polynomial scalar-feedback Keller classification and reverse-factorization obstruction in the trace-filter architecture."
+  ],
+  "assurance": "Written all-degree and arithmetic proofs with narrow exact controls. No independent whole-proof replay, formal verification, external review or publication-priority certificate. The canonical absolute-atomic construction remains open."
+}

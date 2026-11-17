@@ -1,0 +1,151 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYIU0 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIU1 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIU2 schema, dependencies, locks, checker hash and assurance",
+    "constant-trace geometry, critical-value inverse and normalized compensation immersion have distinct exact scopes",
+    "parent stays open with three new exclusions and the full noncritical rank-one chart explicitly unclosed",
+    "sixty-seven method records have current fingerprints, unrestricted helper jets and the genuine killed-tangent boundary",
+    "WORK-HC4-SCHUR current fingerprints and next work outside critical-value traces and the closed universal compensation",
+    "WORK-HC4-RESIDUAL-AUDIT current fingerprints and next work outside critical-value traces and the closed universal compensation",
+    "91 controls include 51 algebraic/scope controls, unchanged retained theorem pins and explicitly unused distance-degree context",
+    "navigation leads with actual projection and first-jet closure and retains intrinsic directional criteria and open noncritical scope"
+  ],
+  "new_claims": [
+    "HC4MYIU0",
+    "HC4MYIU1",
+    "HC4MYIU2"
+  ],
+  "previous_goal_turn_classification": "progress: intrinsic Nambu finite-direction rigidity and direct coefficient-pair reconstruction registered",
+  "current_progress": "Actual centered free projections and a constant zero-section trace give an exact ternary-quadric rank classification. At the ambient critical value the first free jet forces the intrinsic Keller inverse without restricting higher helper degrees. Other constant traces leave only a noncritical rank-one chart. A universal unit-Hessian compensation there is an immersion only if its normalized plane pair is invertible; a genuine automorphism explicitly fails that immersion, preserving the actual embedding obligation.",
+  "exact_current_replay_checks": 91,
+  "algebraic_and_scope_controls": 51,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-intrinsic-nambu.json": 110,
+    "receipt-critical-jet.json": 52
+  },
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/geometry.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/alg-geom/9305008v1",
+      "retained_file": "gwozdziewicz-one-line-alg-geom-9305008v1.html",
+      "sha256": "b6bf59b1cae5becc6c64ece15cc5d936e08cbcd3196e2d56ba7060e4b19705a8",
+      "title": "Injectivity on one line",
+      "author": "Janusz Gwozdziewicz",
+      "version": "arXiv:alg-geom/9305008v1, 19 May 1993",
+      "portions_inspected": "Full short HTML manuscript, especially Theorem 1.1, Lemma 2.3 and the proof through the cited Newton-polygon and line-embedding inputs.",
+      "role": "New HTML cache of an already retained explicit theorem: a plane Keller map injective on one affine line is invertible. The rank-two first-jet proof invokes this theorem, rather than claiming to reprove it by controls. The unchanged previously audited primary PDF remains pinned.",
+      "new_source_bytes_downloaded": true,
+      "new_unproved_theorem_imported": false,
+      "retained_theorem_used_without_new_proof": true
+    }
+  ],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYGL0",
+      "statement": "Gwozdziewicz Theorem 1.1: plane Keller injectivity on one affine line gives inverse",
+      "source": "sources/gwozdziewicz-injectivity-on-one-line-v1.pdf",
+      "fully_reproved_here": false
+    },
+    {
+      "claim": "HC4MYIL0",
+      "statement": "Retained generative-polynomial and relative-closedness argument gives a common polynomial parameter for algebraically dependent plane polynomials",
+      "source": "sources/arzhantsev-petravchuk-closed-math-0608157v2.html",
+      "fully_reproved_here": false
+    }
+  ],
+  "inspected_but_not_used": [
+    {
+      "url": "https://arxiv.org/html/1309.0049",
+      "version": "arXiv:1309.0049v3, 27 November 2014",
+      "portions": "Introduction and critical-point definition of Euclidean distance degree",
+      "reason": "Generic translated-distance critical counts do not establish that translated restrictions retain unit Hessian or implement arbitrary intrinsic coefficient-pair shifts. No ED-degree theorem is imported."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "closed_frontier": [
+    "constant-trace closed base planes in rank-three helper quadrics and noncritical rank-two levels are impossible",
+    "critical-value traces with actual centered constant free projections, polynomial base offsets and arbitrary helper jets force the intrinsic inverse",
+    "the displayed universal noncritical compensation cannot be an immersion for a nonautomorphic normalized plane pair"
+  ],
+  "remaining_frontier": [
+    "full noncritical rank-one embeddings outside the displayed compensation family",
+    "unaligned ambient projection data and other actual constraints on the reconstructed intrinsic pair",
+    "source-correlated generic classes, actual composite-content restrictions and endpoint representatives",
+    "both plane endpoints and unrestricted HC4/JC2"
+  ],
+  "actual_closed_zero_section_required": true,
+  "all_constant_trace_helper_ranks_classified": true,
+  "rank_three_quadric_class_obstruction_reproved": true,
+  "critical_value_trace_forces_carried_inverse": true,
+  "all_free_variable_helper_degrees_unrestricted": true,
+  "constant_frame_polynomial_offsets_covered": true,
+  "noncritical_constant_trace_reduces_to_rank_one": true,
+  "noncritical_first_jet_formula_proved": true,
+  "universal_compensation_substitution_has_unit_Hessian": true,
+  "global_immersion_of_compensation_forces_inverse": true,
+  "plane_nilpotent_Jacobian_lemma_reproved_with_retained_generative_input": true,
+  "automorphic_input_can_fail_compensation_immersion": true,
+  "retained_one_line_theorem_required": true,
+  "retained_generative_theorem_required": true,
+  "fibre_affine_helper_hypothesis_required": false,
+  "generic_section_assumed_closed_zero_section": false,
+  "all_noncritical_rank_one_embeddings_resolved": false,
+  "universal_substitution_asserted_closed_embedding": false,
+  "unit_Hessian_asserted_embedding": false,
+  "every_ambient_translation_assumed_unit_Hessian": false,
+  "arbitrary_intrinsic_target_shifts_assumed_ambient_translations": false,
+  "variable_frame_assumed_preserve_Keller_pair": false,
+  "higher_dimensional_nilpotent_Jacobian_inverse_asserted": false,
+  "new_unproved_external_classification_imported": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false,
+  "required_repository_checks_all_passed": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": "make render-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": "make check-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "research-check",
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "name": "scoped-diff-check",
+      "command": "git diff --check -- research/MATH_STATUS.json research/knowledge/lessons.json research/knowledge/work_items.json research/jacobian-followup/hc4-triangular-graphs/README.md research/index research/knowledge/work research/knowledge/WORK_LEDGER.md research/STATUS.md",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "scoped_diff_whitespace_check": "PASS",
+  "repository_failures_preexisting_unrelated": true
+}

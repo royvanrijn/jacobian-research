@@ -1,0 +1,544 @@
+{
+  "date": "2026-11-17",
+  "universal_claims_use_written_proofs": true,
+  "classical_ACK_independently_reproved": false,
+  "convergence_decided_from_jets": false,
+  "abstract_elliptic_Gaussian_realization_claimed": false,
+  "cofinite_prime_nilpotence_claimed": false,
+  "vanishing_pcurvature_claimed": false,
+  "field_safety_implies_purity_claimed": false,
+  "Fuchsian_models": [
+    {
+      "name": "algebraic_quadratic",
+      "model": {
+        "order": 1,
+        "coefficients": [
+          "-1/2",
+          "1 - t"
+        ],
+        "parameters": [],
+        "finite_witnesses": [
+          {
+            "factor": "t - 1",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "-1/2"
+          }
+        ],
+        "infinity_bounds": [
+          {
+            "derivative_order": 0,
+            "degree": 0,
+            "maximum_degree": 0
+          }
+        ],
+        "specialization_guard": "1",
+        "guard_factors": [],
+        "Fuchsian": true,
+        "Gaussian_realization_inferred": false,
+        "minimality_inferred": false,
+        "annihilation_inferred": false,
+        "convergence_inferred_from_jets": false
+      }
+    },
+    {
+      "name": "Witt_unit",
+      "model": {
+        "order": 1,
+        "coefficients": [
+          "-4*t",
+          "1 - 4*t**2"
+        ],
+        "parameters": [],
+        "finite_witnesses": [
+          {
+            "factor": "t - 1/2",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "-4*t"
+          },
+          {
+            "factor": "t + 1/2",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "-4*t"
+          }
+        ],
+        "infinity_bounds": [
+          {
+            "derivative_order": 0,
+            "degree": 1,
+            "maximum_degree": 1
+          }
+        ],
+        "specialization_guard": "1",
+        "guard_factors": [],
+        "Fuchsian": true,
+        "Gaussian_realization_inferred": false,
+        "minimality_inferred": false,
+        "annihilation_inferred": false,
+        "convergence_inferred_from_jets": false
+      }
+    },
+    {
+      "name": "Witt_basis_lclm",
+      "model": {
+        "order": 2,
+        "coefficients": [
+          "0",
+          "-8*t**2 - 1",
+          "-4*t**3 + t"
+        ],
+        "parameters": [],
+        "finite_witnesses": [
+          {
+            "factor": "t",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "0"
+          },
+          {
+            "factor": "t",
+            "multiplicity": 1,
+            "derivative_order": 1,
+            "required_power": 0,
+            "quotient": "-8*t**2 - 1"
+          },
+          {
+            "factor": "t - 1/2",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "0"
+          },
+          {
+            "factor": "t - 1/2",
+            "multiplicity": 1,
+            "derivative_order": 1,
+            "required_power": 0,
+            "quotient": "-8*t**2 - 1"
+          },
+          {
+            "factor": "t + 1/2",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "0"
+          },
+          {
+            "factor": "t + 1/2",
+            "multiplicity": 1,
+            "derivative_order": 1,
+            "required_power": 0,
+            "quotient": "-8*t**2 - 1"
+          }
+        ],
+        "infinity_bounds": [
+          {
+            "derivative_order": 0,
+            "degree": null,
+            "maximum_degree": 1
+          },
+          {
+            "derivative_order": 1,
+            "degree": 2,
+            "maximum_degree": 2
+          }
+        ],
+        "specialization_guard": "1",
+        "guard_factors": [],
+        "Fuchsian": true,
+        "Gaussian_realization_inferred": false,
+        "minimality_inferred": false,
+        "annihilation_inferred": false,
+        "convergence_inferred_from_jets": false
+      }
+    },
+    {
+      "name": "abstract_elliptic",
+      "model": {
+        "order": 2,
+        "coefficients": [
+          "-1/4",
+          "1 - 2*t",
+          "-t**2 + t"
+        ],
+        "parameters": [],
+        "finite_witnesses": [
+          {
+            "factor": "t - 1",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "-1/4"
+          },
+          {
+            "factor": "t - 1",
+            "multiplicity": 1,
+            "derivative_order": 1,
+            "required_power": 0,
+            "quotient": "1 - 2*t"
+          },
+          {
+            "factor": "t",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "-1/4"
+          },
+          {
+            "factor": "t",
+            "multiplicity": 1,
+            "derivative_order": 1,
+            "required_power": 0,
+            "quotient": "1 - 2*t"
+          }
+        ],
+        "infinity_bounds": [
+          {
+            "derivative_order": 0,
+            "degree": 0,
+            "maximum_degree": 0
+          },
+          {
+            "derivative_order": 1,
+            "degree": 1,
+            "maximum_degree": 1
+          }
+        ],
+        "specialization_guard": "1",
+        "guard_factors": [],
+        "Fuchsian": true,
+        "Gaussian_realization_inferred": false,
+        "minimality_inferred": false,
+        "annihilation_inferred": false,
+        "convergence_inferred_from_jets": false
+      }
+    },
+    {
+      "name": "abstract_logarithm",
+      "model": {
+        "order": 2,
+        "coefficients": [
+          "0",
+          "-1",
+          "1 - t"
+        ],
+        "parameters": [],
+        "finite_witnesses": [
+          {
+            "factor": "t - 1",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "0"
+          },
+          {
+            "factor": "t - 1",
+            "multiplicity": 1,
+            "derivative_order": 1,
+            "required_power": 0,
+            "quotient": "-1"
+          }
+        ],
+        "infinity_bounds": [
+          {
+            "derivative_order": 0,
+            "degree": null,
+            "maximum_degree": -1
+          },
+          {
+            "derivative_order": 1,
+            "degree": 0,
+            "maximum_degree": 0
+          }
+        ],
+        "specialization_guard": "1",
+        "guard_factors": [],
+        "Fuchsian": true,
+        "Gaussian_realization_inferred": false,
+        "minimality_inferred": false,
+        "annihilation_inferred": false,
+        "convergence_inferred_from_jets": false
+      }
+    }
+  ],
+  "parameter_models": [
+    {
+      "name": "moving_elliptic",
+      "model": {
+        "order": 2,
+        "coefficients": [
+          "-e/4",
+          "-2*e*t + 1",
+          "-e*t**2 + t"
+        ],
+        "parameters": [
+          "e"
+        ],
+        "finite_witnesses": [
+          {
+            "factor": "t",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "-e/4"
+          },
+          {
+            "factor": "t",
+            "multiplicity": 1,
+            "derivative_order": 1,
+            "required_power": 0,
+            "quotient": "-2*e*t + 1"
+          },
+          {
+            "factor": "t - 1/e",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "-e/4"
+          },
+          {
+            "factor": "t - 1/e",
+            "multiplicity": 1,
+            "derivative_order": 1,
+            "required_power": 0,
+            "quotient": "-2*e*t + 1"
+          }
+        ],
+        "infinity_bounds": [
+          {
+            "derivative_order": 0,
+            "degree": 0,
+            "maximum_degree": 0
+          },
+          {
+            "derivative_order": 1,
+            "degree": 1,
+            "maximum_degree": 1
+          }
+        ],
+        "specialization_guard": "e",
+        "guard_factors": [
+          "e"
+        ],
+        "Fuchsian": true,
+        "Gaussian_realization_inferred": false,
+        "minimality_inferred": false,
+        "annihilation_inferred": false,
+        "convergence_inferred_from_jets": false
+      },
+      "good_specializations": [
+        {
+          "value": 1,
+          "order": 2
+        },
+        {
+          "value": 2,
+          "order": 2
+        },
+        {
+          "value": -1,
+          "order": 2
+        }
+      ]
+    },
+    {
+      "name": "colliding_poles",
+      "model": {
+        "order": 1,
+        "coefficients": [
+          "1",
+          "-e*t + t**2"
+        ],
+        "parameters": [
+          "e"
+        ],
+        "finite_witnesses": [
+          {
+            "factor": "t",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "1"
+          },
+          {
+            "factor": "-e + t",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "1"
+          }
+        ],
+        "infinity_bounds": [
+          {
+            "derivative_order": 0,
+            "degree": 0,
+            "maximum_degree": 1
+          }
+        ],
+        "specialization_guard": "e",
+        "guard_factors": [
+          "e"
+        ],
+        "Fuchsian": true,
+        "Gaussian_realization_inferred": false,
+        "minimality_inferred": false,
+        "annihilation_inferred": false,
+        "convergence_inferred_from_jets": false
+      },
+      "good_specializations": [
+        {
+          "value": 1,
+          "order": 1
+        },
+        {
+          "value": 2,
+          "order": 1
+        },
+        {
+          "value": -1,
+          "order": 1
+        }
+      ]
+    },
+    {
+      "name": "rational_parameter",
+      "model": {
+        "order": 1,
+        "coefficients": [
+          "1/e",
+          "1 - t"
+        ],
+        "parameters": [
+          "e"
+        ],
+        "finite_witnesses": [
+          {
+            "factor": "t - 1",
+            "multiplicity": 1,
+            "derivative_order": 0,
+            "required_power": 0,
+            "quotient": "1/e"
+          }
+        ],
+        "infinity_bounds": [
+          {
+            "derivative_order": 0,
+            "degree": 0,
+            "maximum_degree": 0
+          }
+        ],
+        "specialization_guard": "e",
+        "guard_factors": [
+          "e"
+        ],
+        "Fuchsian": true,
+        "Gaussian_realization_inferred": false,
+        "minimality_inferred": false,
+        "annihilation_inferred": false,
+        "convergence_inferred_from_jets": false
+      },
+      "good_specializations": [
+        {
+          "value": 1,
+          "order": 1
+        },
+        {
+          "value": 2,
+          "order": 1
+        },
+        {
+          "value": -1,
+          "order": 1
+        }
+      ]
+    }
+  ],
+  "elliptic_indicial": [
+    {
+      "point": "0",
+      "polynomial": "rho**2"
+    },
+    {
+      "point": "1",
+      "polynomial": "rho**2"
+    },
+    {
+      "point": "oo",
+      "polynomial": "-(2*rho - 1)**2/4"
+    }
+  ],
+  "abstract_elliptic_coefficients": [
+    "1",
+    "1/4",
+    "9/64",
+    "25/256",
+    "1225/16384",
+    "3969/65536",
+    "53361/1048576",
+    "184041/4194304",
+    "41409225/1073741824",
+    "147744025/4294967296"
+  ],
+  "original_Witt_controls": [
+    {
+      "phase": "w*(z**2 + 1)",
+      "marker": "1",
+      "order": 8,
+      "period": "70*t**8 + 20*t**6 + 6*t**4 + 2*t**2 + 1",
+      "exact_period": "1/sqrt(1 - 4*t**2)"
+    },
+    {
+      "phase": "w*(z**2 + 1)",
+      "marker": "z",
+      "order": 8,
+      "period": "35*t**7 + 10*t**5 + 3*t**3 + t",
+      "exact_period": "(-1 + 1/sqrt(1 - 4*t**2))/(2*t)"
+    },
+    {
+      "phase": "w*(z**2 + 1)",
+      "marker": "z**2",
+      "order": 8,
+      "period": "56*t**8 + 15*t**6 + 4*t**4 + t**2",
+      "exact_period": "(1 - sqrt(1 - 4*t**2))**2/(4*t**2*sqrt(1 - 4*t**2))"
+    },
+    {
+      "phase": "w*(z**2 + 1)",
+      "marker": "w",
+      "order": 8,
+      "period": "280*t**7 + 60*t**5 + 12*t**3 + 2*t",
+      "exact_period": "2*t/(1 - 4*t**2)**(3/2)"
+    }
+  ],
+  "linear_normalized_control": "1",
+  "quartic_divergence_exact_ratio": "(4*k+1)*(4*k+3)/(k+1)",
+  "quartic_ratio_controls": [
+    "3",
+    "35/2",
+    "33",
+    "195/4",
+    "323/5",
+    "161/2"
+  ],
+  "pure_Kloosterman_divergence_exact_ratio": "(2*m+1)**2",
+  "pure_Kloosterman_coefficients": [
+    "1",
+    "1",
+    "9",
+    "225",
+    "11025",
+    "893025"
+  ],
+  "rejections": [
+    "exponential_infinity",
+    "finite_irregular_pole",
+    "order_zero",
+    "zero_leading_operator",
+    "negative_infinity_balance"
+  ]
+}

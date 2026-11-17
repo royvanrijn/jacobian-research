@@ -1,0 +1,29 @@
+{
+  "status": "finite_prefix_certified",
+  "pairs": 92935,
+  "by_exponent": {
+    "10": 9983,
+    "12": 9967,
+    "14": 9935,
+    "15": 9909,
+    "18": 9743,
+    "20": 9487,
+    "21": 9275,
+    "22": 8975,
+    "24": 7951,
+    "26": 5903,
+    "28": 1807
+  },
+  "modes": {
+    "preceding_prime_kernel": 92900,
+    "full_degree_modular": 35
+  },
+  "gcd_degrees": {
+    "0": 92914,
+    "1": 21
+  },
+  "max_full_degree_index": 126,
+  "max_kernel_degree": 35,
+  "seconds": 4.665,
+  "uniform_analytic_proof_registered": false
+}

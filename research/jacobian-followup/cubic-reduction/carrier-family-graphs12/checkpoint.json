@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "high_equations": 12,
+      "pivot": 4,
+      "status": "unit-ideal-no-raw-cubic"
+    },
+    {
+      "high_equations": 3,
+      "pivot": 5,
+      "status": "unit-ideal-no-raw-cubic"
+    },
+    {
+      "high_equations": 1,
+      "pivot": 6,
+      "status": "unit-ideal-no-raw-cubic"
+    },
+    {
+      "high_equations": 6,
+      "pivot": 7,
+      "status": "unit-ideal-no-raw-cubic"
+    },
+    {
+      "high_equations": 1,
+      "pivot": 8,
+      "status": "unit-ideal-no-raw-cubic"
+    },
+    {
+      "high_equations": 8,
+      "pivot": 9,
+      "status": "unit-ideal-no-raw-cubic"
+    },
+    {
+      "high_equations": 4,
+      "pivot": 10,
+      "status": "unit-ideal-no-raw-cubic"
+    },
+    {
+      "high_equations": 2,
+      "pivot": 11,
+      "status": "unit-ideal-no-raw-cubic"
+    },
+    {
+      "high_equations": 3,
+      "pivot": 12,
+      "status": "unit-ideal-no-raw-cubic"
+    }
+  ],
+  "input_sha256": "fb3bac6ae4e81870739ef0b31afadd840d3e44b7c19e72b2b1fec2071bce1e88",
+  "scope": "Changed raw one-carrier graph restrictions of the proved cubic family atp=q=1; primary coefficient basis only, no independent replay or target repairs. No global dimension bound.",
+  "source_sha256": "12b725bb525bf862284e16b480d46a2359e79aa83b7d640a63da02ff86296ce0",
+  "status": "complete"
+}

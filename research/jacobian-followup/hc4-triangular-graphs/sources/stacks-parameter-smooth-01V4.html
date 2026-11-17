@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 29.35 (01V4): Smooth morphisms&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELP" data-tag="0ELP">2</a>: Schemes
+    
+  
+    <li>Chapter <a href="/tag/01QL" data-tag="01QL">29</a>: Morphisms of Schemes
+    
+  
+    <li class="active">Section <a href="/tag/01V4" data-tag="01V4">29.35</a>: Smooth morphisms
+    <span id="citation">(<a href="/tag/01V4/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0G43">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/02G3">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="morphisms-section-smooth" class="tex-section"><span data-tag="01V4">29.35</span> Smooth morphisms</h2>
+
+<p>
+Let $f : X \to Y$ be a continuous map of topological spaces. Consider the following condition: For every $x \in X$ there exist open neighbourhoods $x \in U \subset X$ and $f(x) \in V \subset Y$, and an integer $d$ such that $f(U) \subset V$ and such that we obtain a commutative diagram 
+</p>
+<div class="equation">
+  \[  \xymatrix{ X \ar[d] &  U \ar[l] \ar[d] \ar[r]_-\pi &  V \times \mathbf{R}^ d \ar[ld] \\  Y &  V \ar[l] }  \]
+</div>
+<p>
+ where $\pi $ is a homeomorphism onto an open subset. Smooth morphisms of schemes are the analogue of these maps in the category of schemes. See Lemma <a href="/tag/01V7" data-tag="01V7">29.35.11</a> and Lemma <a href="/tag/054L" data-tag="054L">29.37.21</a>. 
+</p>
+<p>
+Contrary to expectations (perhaps) the notion of a smooth ring map is not defined solely in terms of the module of differentials. Namely, recall that $R \to A$ is a <em>smooth ring map</em> if $A$ is of finite presentation over $R$ and if the naive cotangent complex of $A$ over $R$ is quasi-isomorphic to a projective module placed in degree $0$, see Algebra, Definition <a href="/tag/00T2" data-tag="00T2">10.137.1</a>. 
+</p>
+<p>
+<article class="env-definition" id="01V5">
+  <p><a class="environment-identifier" href="/tag/01V5">Definition <span data-tag="01V5">29.35.1</span>.</a> Let $f : X \to S$ be a morphism of schemes. </p>
+  <p><ol>
+  <li><p>
+We say that $f$ is <em>smooth at $x \in X$</em> if there exist an affine open neighbourhood $\mathop{\mathrm{Spec}}(A) = U \subset X$ of $x$ and affine open $\mathop{\mathrm{Spec}}(R) = V \subset S$ with $f(U) \subset V$ such that the induced ring map $R \to A$ is smooth. 
+</p>
+</li><li><p>
+We say that $f$ is <em>smooth</em> if it is smooth at every point of $X$. 
+</p>
+</li><li><p>
+A morphism of affine schemes $f : X \to S$ is called <em>standard smooth</em> if there exists a standard smooth ring map $R \to R[x_1, \ldots , x_ n]/(f_1, \ldots , f_ c)$ (see Algebra, Definition <a href="/tag/00T6" data-tag="00T6">10.137.5</a>) such that $X \to S$ is isomorphic to 
+</p>
+<div class="equation">
+  \[  \mathop{\mathrm{Spec}}(R[x_1, \ldots , x_ n]/(f_1, \ldots , f_ c)) \to \mathop{\mathrm{Spec}}(R).  \]
+</div>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+A pleasing feature of this definition is that the set of points where a morphism is smooth is automatically open. 
+</p>
+<p>
+Note that there is no separation or quasi-compactness hypotheses in the definition. Hence the question of being smooth is local in nature on the source. Here is the precise result. 
+</p>
+<p>
+<article class="env-lemma" id="01V6">
+  <p><a class="environment-identifier" href="/tag/01V6">Lemma <span data-tag="01V6">29.35.2</span>.</a> Let $f : X \to S$ be a morphism of schemes. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is smooth. 
+</p>
+</li><li><p>
+For every affine opens $U \subset X$, $V \subset S$ with $f(U) \subset V$ the ring map $\mathcal{O}_ S(V) \to \mathcal{O}_ X(U)$ is smooth. 
+</p>
+</li><li><p>
+There exists an open covering $S = \bigcup _{j \in J} V_ j$ and open coverings $f^{-1}(V_ j) = \bigcup _{i \in I_ j} U_ i$ such that each of the morphisms $U_ i \to V_ j$, $j\in J, i\in I_ j$ is smooth. 
+</p>
+</li><li><p>
+There exists an affine open covering $S = \bigcup _{j \in J} V_ j$ and affine open coverings $f^{-1}(V_ j) = \bigcup _{i \in I_ j} U_ i$ such that the ring map $\mathcal{O}_ S(V_ j) \to \mathcal{O}_ X(U_ i)$ is smooth, for all $j\in J, i\in I_ j$. 
+</p>
+</li>
+</ol></p>
+  <p> Moreover, if $f$ is smooth then for any open subschemes $U \subset X$, $V \subset S$ with $f(U) \subset V$ the restriction $f|_ U : U \to V$ is smooth. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This follows from Lemma <a href="/tag/01ST" data-tag="01ST">29.14.3</a> if we show that the property “$R \to A$ is smooth” is local. We check conditions (a), (b) and (c) of Definition <a href="/tag/01SR" data-tag="01SR">29.14.1</a>. By Algebra, Lemma <a href="/tag/00T4" data-tag="00T4">10.137.3</a> being smooth is stable under base change and hence we conclude (a) holds. By Algebra, Lemma <a href="/tag/00TD" data-tag="00TD">10.137.13</a> being smooth is stable under composition and for any ring $R$ the ring map $R \to R_ f$ is (standard) smooth. We conclude (b) holds. Finally, property (c) is true according to Algebra, Lemma <a href="/tag/00TC" data-tag="00TC">10.137.12</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+The following lemma characterizes a smooth morphism as a flat, finitely presented morphism with smooth fibres. Note that schemes smooth over a field are discussed in more detail in Varieties, Section <a href="/tag/04QM" data-tag="04QM">33.25</a>. 
+</p>
+<p>
+<article class="env-lemma" id="01V8">
+  <p><a class="environment-identifier" href="/tag/01V8">Lemma <span data-tag="01V8">29.35.3</span>.</a> Let $f : X \to S$ be a morphism of schemes. If $f$ is flat, locally of finite presentation, and all fibres $X_ s$ are smooth, then $f$ is smooth. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from Algebra, Lemma <a href="/tag/00TF" data-tag="00TF">10.137.16</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01VA">
+  <p><a class="environment-identifier" href="/tag/01VA">Lemma <span data-tag="01VA">29.35.4</span>.</a> The composition of two morphisms which are smooth is smooth. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      In the proof of Lemma <a href="/tag/01V6" data-tag="01V6">29.35.2</a> we saw that being smooth is a local property of ring maps. Hence the first statement of the lemma follows from Lemma <a href="/tag/01SV" data-tag="01SV">29.14.5</a> combined with the fact that being smooth is a property of ring maps that is stable under composition, see Algebra, Lemma <a href="/tag/00TD" data-tag="00TD">10.137.13</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01VB">
+  <p><a class="environment-identifier" href="/tag/01VB">Lemma <span data-tag="01VB">29.35.5</span>.</a> The base change of a morphism which is smooth is smooth. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      In the proof of Lemma <a href="/tag/01V6" data-tag="01V6">29.35.2</a> we saw that being smooth is a local property of ring maps. Hence the lemma follows from Lemma <a href="/tag/01SV" data-tag="01SV">29.14.5</a> combined with the fact that being smooth is a property of ring maps that is stable under base change, see Algebra, Lemma <a href="/tag/00T4" data-tag="00T4">10.137.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01VC">
+  <p><a class="environment-identifier" href="/tag/01VC">Lemma <span data-tag="01VC">29.35.6</span>.</a> Any open immersion is smooth. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is true because an open immersion is a local isomorphism. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01VD">
+  <p><a class="environment-identifier" href="/tag/01VD">Lemma <span data-tag="01VD">29.35.7</span>.</a> A smooth morphism is syntomic. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Algebra, Lemma <a href="/tag/00TA" data-tag="00TA">10.137.9</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01VE">
+  <p><a class="environment-identifier" href="/tag/01VE">Lemma <span data-tag="01VE">29.35.8</span>.</a> A smooth morphism is locally of finite presentation. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      True because a smooth ring map is of finite presentation by definition. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="01VF">
+  <p><a class="environment-identifier" href="/tag/01VF">Lemma <span data-tag="01VF">29.35.9</span>.</a> A smooth morphism is flat. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Combine Lemmas <a href="/tag/01UL" data-tag="01UL">29.31.7</a> and <a href="/tag/01VD" data-tag="01VD">29.35.7</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="056G">
+  <p><a class="environment-identifier" href="/tag/056G">Lemma <span data-tag="056G">29.35.10</span>.</a> A smooth morphism is universally open. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Combine Lemmas <a href="/tag/01VF" data-tag="01VF">29.35.9</a>, <a href="/tag/01VE" data-tag="01VE">29.35.8</a>, and <a href="/tag/01UA" data-tag="01UA">29.26.10</a>. Or alternatively, combine Lemmas <a href="/tag/01VD" data-tag="01VD">29.35.7</a>, <a href="/tag/056F" data-tag="056F">29.31.8</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+The following lemma says locally any smooth morphism is standard smooth. Hence we can use standard smooth morphisms as a <em>local model</em> for a smooth morphism. 
+</p>
+<p>
+<article class="env-lemma" id="01V7"><a tabindex="0" role="button" data-trigger="focus" data-placement="bottom" class="btn badge badge-primary" data-toggle="popover" title="Slogan" data-html="true" data-content=' Smooth morphisms are locally standard smooth. '>slogan</a>
+       
+      
+  <p><a class="environment-identifier" href="/tag/01V7">Lemma <span data-tag="01V7">29.35.11</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$ be a point. Let $V \subset S$ be an affine open neighbourhood of $f(x)$. The following are equivalent </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is smooth at $x$. 
+</p>
+</li><li><p>
+There exists an affine open $U \subset X$, with $x \in U$ and $f(U) \subset V$ such that the induced morphism $f|_ U : U \to V$ is standard smooth. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Follows from the definitions and Algebra, Lemmas <a href="/tag/00T7" data-tag="00T7">10.137.6</a> and <a href="/tag/00TA" data-tag="00TA">10.137.9</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02G1">
+  <p><a class="environment-identifier" href="/tag/02G1">Lemma <span data-tag="02G1">29.35.12</span>.</a> Let $f : X \to S$ be a morphism of schemes. Assume $f$ is smooth. Then the module of differentials $\Omega _{X/S}$ of $X$ over $S$ is finite locally free and </p>
+  <div class="equation">
+  \[  \text{rank}_ x(\Omega _{X/S}) = \dim _ x(X_{f(x)})  \]
+</div>
+  <p> for every $x \in X$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The statement is local on $X$ and $S$. By Lemma <a href="/tag/01V7" data-tag="01V7">29.35.11</a> above we may assume that $f$ is a standard smooth morphism of affines. In this case the result follows from Algebra, Lemma <a href="/tag/00T7" data-tag="00T7">10.137.6</a> (and the definition of a relative global complete intersection, see Algebra, Definition <a href="/tag/00SP" data-tag="00SP">10.136.5</a>). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Lemma <a href="/tag/02G1" data-tag="02G1">29.35.12</a> says that the following definition makes sense. 
+</p>
+<p>
+<article class="env-definition" id="02G2">
+  <p><a class="environment-identifier" href="/tag/02G2">Definition <span data-tag="02G2">29.35.13</span>.</a> Let $d \geq 0$ be an integer. We say a morphism of schemes $f : X \to S$ is <em>smooth of relative dimension $d$</em> if $f$ is smooth and $\Omega _{X/S}$ is finite locally free of constant rank $d$. </p>
+</article> 
+</p>
+<p>
+In other words, $f$ is smooth and the nonempty fibres are equidimensional of dimension $d$. By Lemma <a href="/tag/01V9" data-tag="01V9">29.35.14</a> below this is also the same as requiring: (a) $f$ is locally of finite presentation, (b) $f$ is flat, (c) all nonempty fibres equidimensional of dimension $d$, and (d) $\Omega _{X/S}$ finite locally free of rank $d$. It is not enough to simply assume that $f$ is flat, of finite presentation, and $\Omega _{X/S}$ is finite locally free of rank $d$. A counter example is given by $\mathop{\mathrm{Spec}}(\mathbf{F}_ p[t]) \to \mathop{\mathrm{Spec}}(\mathbf{F}_ p[t^ p])$. 
+</p>
+<p>
+Here is a differential criterion of smoothness at a point. There are many variants of this result all of which may be useful at some point. We will just add them here as needed. 
+</p>
+<p>
+<article class="env-lemma" id="01V9">
+  <p><a class="environment-identifier" href="/tag/01V9">Lemma <span data-tag="01V9">29.35.14</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $x \in X$. Set $s = f(x)$. Assume $f$ is locally of finite presentation. The following are equivalent: </p>
+  <p><ol>
+  <li><p>
+The morphism $f$ is smooth at $x$. 
+</p>
+</li><li><p>
+The local ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat and $X_ s \to \mathop{\mathrm{Spec}}(\kappa (s))$ is smooth at $x$. 
+</p>
+</li><li><p>
+The local ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat and the $\mathcal{O}_{X, x}$-module $\Omega _{X/S, x}$ can be generated by at most $\dim _ x(X_{f(x)})$ elements. 
+</p>
+</li><li><p>
+The local ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat and the $\kappa (x)$-vector space 
+</p>
+<div class="equation">
+  \[  \Omega _{X_ s/s, x} \otimes _{\mathcal{O}_{X_ s, x}} \kappa (x) = \Omega _{X/S, x} \otimes _{\mathcal{O}_{X, x}} \kappa (x)  \]
+</div>
+<p>
+ can be generated by at most $\dim _ x(X_{f(x)})$ elements. 
+</p>
+</li><li><p>
+There exist affine opens $U \subset X$, and $V \subset S$ such that $x \in U$, $f(U) \subset V$ and the induced morphism $f|_ U : U \to V$ is standard smooth. 
+</p>
+</li><li><p>
+There exist affine opens $\mathop{\mathrm{Spec}}(A) = U \subset X$ and $\mathop{\mathrm{Spec}}(R) = V \subset S$ with $x \in U$ corresponding to $\mathfrak q \subset A$, and $f(U) \subset V$ such that there exists a presentation 
+</p>
+<div class="equation">
+  \[  A = R[x_1, \ldots , x_ n]/(f_1, \ldots , f_ c)  \]
+</div>
+<p>
+ with 
+</p>
+<div class="equation">
+  \[  g = \det \left( \begin{matrix}  \partial f_1/\partial x_1 
+
+&  \partial f_2/\partial x_1 
+
+&  \ldots 
+
+&  \partial f_ c/\partial x_1 
+
+\\  \partial f_1/\partial x_2 
+
+&  \partial f_2/\partial x_2 
+
+&  \ldots 
+
+&  \partial f_ c/\partial x_2 
+
+\\  \ldots 
+
+&  \ldots 
+
+&  \ldots 
+
+&  \ldots 
+
+\\  \partial f_1/\partial x_ c 
+
+&  \partial f_2/\partial x_ c 
+
+&  \ldots 
+
+&  \partial f_ c/\partial x_ c 
+
+\end{matrix} \right)  \]
+</div>
+<p>
+ mapping to an element of $A$ not in $\mathfrak q$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Note that if $f$ is smooth at $x$, then we see from Lemma <a href="/tag/01V7" data-tag="01V7">29.35.11</a> that (5) holds, and (6) is a slightly weakened version of (5). Moreover, $f$ smooth implies that the ring map $\mathcal{O}_{S, s} \to \mathcal{O}_{X, x}$ is flat (see Lemma <a href="/tag/01VF" data-tag="01VF">29.35.9</a>) and that $\Omega _{X/S}$ is finite locally free of rank equal to $\dim _ x(X_ s)$ (see Lemma <a href="/tag/02G1" data-tag="02G1">29.35.12</a>). Thus (1) implies (3) and (4). By Lemma <a href="/tag/01VB" data-tag="01VB">29.35.5</a> we also see that (1) implies (2). 
+    <p>
+      By Lemma <a href="/tag/01V0" data-tag="01V0">29.33.10</a> the module of differentials $\Omega _{X_ s/s}$ of the fibre $X_ s$ over $\kappa (s)$ is the pullback of the module of differentials $\Omega _{X/S}$ of $X$ over $S$. Hence the displayed equality in part (4) of the lemma. By Lemma <a href="/tag/01V2" data-tag="01V2">29.33.12</a> these modules are of finite type. Hence the minimal number of generators of the modules $\Omega _{X/S, x}$ and $\Omega _{X_ s/s, x}$ is the same and equal to the dimension of this $\kappa (x)$-vector space by Nakayama's Lemma (Algebra, Lemma <a href="/tag/00DV" data-tag="00DV">10.20.1</a>). This in particular shows that (3) and (4) are equivalent. 
+    <p>
+      Algebra, Lemma <a href="/tag/00TF" data-tag="00TF">10.137.16</a> shows that (2) implies (1). Algebra, Lemma <a href="/tag/00TT" data-tag="00TT">10.140.3</a> shows that (3) and (4) imply (2). Finally, (6) implies (5) see for example Algebra, Example <a href="/tag/00T8" data-tag="00T8">10.137.7</a> and (5) implies (1) by Algebra, Lemma <a href="/tag/00T7" data-tag="00T7">10.137.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02V4">
+  <p><a class="environment-identifier" href="/tag/02V4">Lemma <span data-tag="02V4">29.35.15</span>.</a> Let </p>
+  <div class="equation">
+  \[  \xymatrix{ X' \ar[r]_{g'} \ar[d]_{f'} &  X \ar[d]^ f \\  S' \ar[r]^ g &  S }  \]
+</div>
+  <p> be a cartesian diagram of schemes. Let $W \subset X$, resp. $W' \subset X'$ be the open subscheme of points where $f$, resp. $f'$ is smooth. Then $W' = (g')^{-1}(W)$ if </p>
+  <p><ol>
+  <li><p>
+$f$ is flat and locally of finite presentation, or 
+</p>
+</li><li><p>
+$f$ is locally of finite presentation and $g$ is flat. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Assume first that $f$ locally of finite type. Consider the set 
+    <p>
+      <div class="equation">
+  \[  T = \{ x \in X \mid X_{f(x)}\text{ is smooth over }\kappa (f(x))\text{ at }x\}   \]
+</div>
+    <p>
+       and the corresponding set $T' \subset X'$ for $f'$. Then we claim $T' = (g')^{-1}(T)$. Namely, let $s' \in S'$ be a point, and let $s = g(s')$. Then we have 
+    <p>
+      <div class="equation">
+  \[  X'_{s'} = \mathop{\mathrm{Spec}}(\kappa (s')) \times _{\mathop{\mathrm{Spec}}(\kappa (s))} X_ s  \]
+</div>
+    <p>
+       In other words the fibres of the base change are the base changes of the fibres. Hence the claim is equivalent to Algebra, Lemma <a href="/tag/02UQ" data-tag="02UQ">10.137.18</a>. 
+    <p>
+      Thus case (1) follows because in case (1) $T$ is the (open) set of points where $f$ is smooth by Lemma <a href="/tag/01V9" data-tag="01V9">29.35.14</a>. 
+    <p>
+      In case (2) let $x' \in W'$. Then $g'$ is flat at $x'$ (Lemma <a href="/tag/01U8" data-tag="01U8">29.26.7</a>) and $g \circ f'$ is flat at $x'$ (Lemma <a href="/tag/01U6" data-tag="01U6">29.26.5</a>). It follows that $f$ is flat at $x = g'(x')$ by Lemma <a href="/tag/02JZ" data-tag="02JZ">29.26.13</a>. On the other hand, since $x' \in T'$ (Lemma <a href="/tag/01VB" data-tag="01VB">29.35.5</a>) we see that $x \in T$. Hence $f$ is smooth at $x$ by Lemma <a href="/tag/01V9" data-tag="01V9">29.35.14</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Here is a lemma that actually uses the vanishing of $H^{-1}$ of the naive cotangent complex for a smooth ring map. 
+</p>
+<p>
+<article class="env-lemma" id="02K4">
+  <p><a class="environment-identifier" href="/tag/02K4">Lemma <span data-tag="02K4">29.35.16</span>.</a> Let $f : X \to Y$, $g : Y \to S$ be morphisms of schemes. Assume $f$ is smooth. Then </p>
+  <div class="equation">
+  \[  0 \to f^*\Omega _{Y/S} \to \Omega _{X/S} \to \Omega _{X/Y} \to 0  \]
+</div>
+  <p> (see Lemma <a href="/tag/01UX" data-tag="01UX">29.33.9</a>) is short exact. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The algebraic version of this lemma is the following: Given ring maps $A \to B \to C$ with $B \to C$ smooth, then the sequence 
+    <p>
+      <div class="equation">
+  \[  0 \to C \otimes _ B \Omega _{B/A} \to \Omega _{C/A} \to \Omega _{C/B} \to 0  \]
+</div>
+    <p>
+       of Algebra, Lemma <a href="/tag/00RS" data-tag="00RS">10.131.7</a> is exact. This is Algebra, Lemma <a href="/tag/04B2" data-tag="04B2">10.139.1</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="06AA">
+  <p><a class="environment-identifier" href="/tag/06AA">Lemma <span data-tag="06AA">29.35.17</span>.</a> Let $i : Z \to X$ be an immersion of schemes over $S$. Assume that $Z$ is smooth over $S$. Then the canonical exact sequence </p>
+  <div class="equation">
+  \[  0 \to \mathcal{C}_{Z/X} \to i^*\Omega _{X/S} \to \Omega _{Z/S} \to 0  \]
+</div>
+  <p> of Lemma <a href="/tag/01UZ" data-tag="01UZ">29.33.15</a> is short exact. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The algebraic version of this lemma is the following: Given ring maps $A \to B \to C$ with $A \to C$ smooth and $B \to C$ surjective with kernel $J$, then the sequence 
+    <p>
+      <div class="equation">
+  \[  0 \to J/J^2 \to C \otimes _ B \Omega _{B/A} \to \Omega _{C/A} \to 0  \]
+</div>
+    <p>
+       of Algebra, Lemma <a href="/tag/00RU" data-tag="00RU">10.131.9</a> is exact. This is Algebra, Lemma <a href="/tag/06A8" data-tag="06A8">10.139.2</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="06AB">
+  <p><a class="environment-identifier" href="/tag/06AB">Lemma <span data-tag="06AB">29.35.18</span>.</a> Let </p>
+  <div class="equation">
+  \[  \xymatrix{ Z \ar[r]_ i \ar[rd]_ j &  X \ar[d] \\  &  Y }  \]
+</div>
+  <p> be a commutative diagram of schemes where $i$ and $j$ are immersions and $X \to Y$ is smooth. Then the canonical exact sequence </p>
+  <div class="equation">
+  \[  0 \to \mathcal{C}_{Z/Y} \to \mathcal{C}_{Z/X} \to i^*\Omega _{X/Y} \to 0  \]
+</div>
+  <p> of Lemma <a href="/tag/067L" data-tag="067L">29.33.18</a> is exact. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The algebraic version of this lemma is the following: Given ring maps $A \to B \to C$ with $A \to C$ surjective and $A \to B$ smooth, then the sequence 
+    <p>
+      <div class="equation">
+  \[  0 \to I/I^2 \to J/J^2 \to C \otimes _ B \Omega _{B/A} \to 0  \]
+</div>
+    <p>
+       of Algebra, Lemma <a href="/tag/065V" data-tag="065V">10.134.7</a> is exact. This is Algebra, Lemma <a href="/tag/06A9" data-tag="06A9">10.139.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="02K5">
+  <p><a class="environment-identifier" href="/tag/02K5">Lemma <span data-tag="02K5">29.35.19</span>.</a> Let </p>
+  <div class="equation">
+  \[  \xymatrix{ X \ar[rr]_ f \ar[rd]_ p &  &  Y \ar[dl]^ q \\  &  S }  \]
+</div>
+  <p> be a commutative diagram of morphisms of schemes. Assume that </p>
+  <p><ol>
+  <li><p>
+$f$ is surjective, and smooth, 
+</p>
+</li><li><p>
+$p$ is smooth, and 
+</p>
+</li><li><p>
+$q$ is locally of finite presentation<a class="footnotemark footnote-offset" href="#footnote-1" id="footnote-1-mark"></a><a href="#footnote-1"><sup>1</sup></a>. 
+</p>
+</li>
+</ol></p>
+  <p> Then $q$ is smooth. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Lemma <a href="/tag/02JZ" data-tag="02JZ">29.26.13</a> we see that $q$ is flat. Pick a point $y \in Y$. Pick a point $x \in X$ mapping to $y$. Suppose $f$ has relative dimension $a$ at $x$ and $p$ has relative dimension $b$ at $x$. By Lemma <a href="/tag/02G1" data-tag="02G1">29.35.12</a> this means that $\Omega _{X/S, x}$ is free of rank $b$ and $\Omega _{X/Y, x}$ is free of rank $a$. By the short exact sequence of Lemma <a href="/tag/02K4" data-tag="02K4">29.35.16</a> this means that $(f^*\Omega _{Y/S})_ x$ is free of rank $b - a$. By Nakayama's Lemma this implies that $\Omega _{Y/S, y}$ can be generated by $b - a$ elements. Also, by Lemma <a href="/tag/02JS" data-tag="02JS">29.29.2</a> we see that $\dim _ y(Y_ s) = b - a$. Hence we conclude that $Y \to S$ is smooth at $y$ by Lemma <a href="/tag/01V9" data-tag="01V9">29.35.14</a> part (2). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+In the situation of the following lemma the image of $\sigma $ is locally on $X$ cut out by a regular sequence, see Divisors, Lemma <a href="/tag/067R" data-tag="067R">31.23.8</a>. 
+</p>
+<p>
+<article class="env-lemma" id="05D9">
+  <p><a class="environment-identifier" href="/tag/05D9">Lemma <span data-tag="05D9">29.35.20</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $\sigma : S \to X$ be a section of $f$. Let $s \in S$ be a point such that $f$ is smooth at $x = \sigma (s)$. Then there exist affine open neighbourhoods $\mathop{\mathrm{Spec}}(A) = U \subset S$ of $s$ and $\mathop{\mathrm{Spec}}(B) = V \subset X$ of $x$ such that </p>
+  <p><ol>
+  <li><p>
+$f(V) \subset U$ and $\sigma (U) \subset V$, 
+</p>
+</li><li><p>
+with $I = \mathop{\mathrm{Ker}}(\sigma ^\#  : B \to A)$ the module $I/I^2$ is a free $A$-module, and 
+</p>
+</li><li><p>
+$B^\wedge \cong A[[x_1, \ldots , x_ d]]$ as $A$-algebras where $B^\wedge $ denotes the completion of $B$ with respect to $I$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Pick an affine open $U \subset S$ containing $s$ Pick an affine open $V \subset f^{-1}(U)$ containing $x$. Pick an affine open $U' \subset \sigma ^{-1}(V)$ containing $s$. Note that $V' = f^{-1}(U') \cap V$ is affine as it is equal to the fibre product $V' = U' \times _ U V$. Then $U'$ and $V'$ satisfy (1). Write $U' = \mathop{\mathrm{Spec}}(A')$ and $V' = \mathop{\mathrm{Spec}}(B')$. By Algebra, Lemma <a href="/tag/05D5" data-tag="05D5">10.139.4</a> the module $I'/(I')^2$ is finite locally free as a $A'$-module. Hence after replacing $U'$ by a smaller affine open $U'' \subset U'$ and $V'$ by $V'' = V' \cap f^{-1}(U'')$ we obtain the situation where $I''/(I'')^2$ is free, i.e., (2) holds. In this case (3) holds also by Algebra, Lemma <a href="/tag/05D5" data-tag="05D5">10.139.4</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+The dimension of a scheme $X$ at a point $x$ (Properties, Definition <a href="/tag/04MT" data-tag="04MT">28.10.1</a>) is just the dimension of $X$ at $x$ as a topological space, see Topology, Definition <a href="/tag/0055" data-tag="0055">5.10.1</a>. This is not the dimension of the local ring $\mathcal{O}_{X,x}$, in general. 
+</p>
+<p>
+<article class="env-lemma" id="0AFF">
+  <p><a class="environment-identifier" href="/tag/0AFF">Lemma <span data-tag="0AFF">29.35.21</span>.</a> Let $f : X \to Y$ be a smooth morphism of locally Noetherian schemes. For every point $x$ in $X$ with image $y$ in $Y$, </p>
+  <div class="equation">
+  \[  \dim _ x(X) = \dim _ y(Y) + \dim _ x(X_ y),  \]
+</div>
+  <p> where $X_ y$ denotes the fiber over $y$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      After replacing $X$ by an open neighborhood of $x$, there is a natural number $d$ such that all fibers of $X \to Y$ have dimension $d$ at every point, see Lemma <a href="/tag/02G1" data-tag="02G1">29.35.12</a>. Then $f$ is flat (Lemma <a href="/tag/01VF" data-tag="01VF">29.35.9</a>), locally of finite type (Lemma <a href="/tag/01VE" data-tag="01VE">29.35.8</a>), and of relative dimension $d$. Hence the result follows from Lemma <a href="/tag/0AFE" data-tag="0AFE">29.30.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+    <section id="footnotes">
+    
+      <div><a id="footnote-1" class="footnote-offset"></a><a href="#footnote-1-mark">[1]</a> In fact this is implied by (1) and (2), see Descent, Lemma <a href="/tag/02KL" data-tag="02KL">35.14.3</a>. Moreover, it suffices to assume $f$ is surjective, flat and locally of finite presentation, see Descent, Lemma <a href="/tag/05B5" data-tag="05B5">35.14.5</a>.</div>
+    
+    </section>
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (2)</h2>
+
+  
+    <a id="comment-3287" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/01V4#comment-3287">Comment #3287</a>
+        by
+        <cite>Dennis Keeler</cite>
+        on <time datetime="2018-05-15 20:57:12">May 15, 2018 at 20:57 </time>
+      </header>
+
+      <blockquote><p>For the first commutative diagram, I'm seeing the error message: parse error at or near "Y &amp; \ar[l] V ". I've tried Mac Firefox and Safari.</p></blockquote>
+    </article>
+  
+    <a id="comment-3374" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/01V4#comment-3374">Comment #3374</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2018-05-19 17:40:50">May 19, 2018 at 17:40 </time>
+      </header>
+
+      <blockquote><p>Thanks! I've tried to fix this in this <a href="https://github.com/stacks/stacks-project/commit/438db081d2eba415e183eea73258366e308a7879">commit</a> but as you perhaps know, the XyJax stuff is a bit shaky.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-01V4",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">01V4</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="01V4"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">01V4</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0G43">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/02G3">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/morphisms.pdf#nameddest=01V4">View Section <span data-tag="01V4">29.35</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

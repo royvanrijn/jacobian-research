@@ -1,5 +1,13 @@
 # Beckmann--Black specialization with a Keller condition
 
+The [geometric occurrence follow-up](../../jacobian-followup/monodromy-theory/SUBGROUP_REDUCTION.md)
+distinguishes this note's uniform arithmetic-parametric requirement over Q
+from later geometric occurrence results. Natural A5 monodromy on affine
+space is now realized over a number field. The stronger requirement here,
+one map over Q with the prescribed generic arithmetic group and all point
+fields as complete fibers, remains open.
+
+
 ## Status and main conclusion
 
 This note separates a literal formulation, which is impossible for absolute

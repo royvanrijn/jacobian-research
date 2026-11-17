@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "new_claims": [
+    "UATRACE1",
+    "UAODD1",
+    "UALIFT1",
+    "UABOUND1"
+  ],
+  "changed_existing_claims": [
+    "OP-KCOMP"
+  ],
+  "existing_entries_preserved": 1797,
+  "new_lesson": "METHOD-TRACEZERO-REALIZATION-LIFTS",
+  "updated_work": [
+    "WORK-KCOMP",
+    "WORK-KDESC"
+  ],
+  "scope_fingerprints": {
+    "UATRACE1": "ea4f0bff1969e1f7",
+    "UAODD1": "991363e35c31cfec",
+    "UALIFT1": "5f4375aa2ba7ec45",
+    "UABOUND1": "5e0bc49335c0ab77",
+    "OP-KCOMP": "0cda9a0ed8d70105"
+  },
+  "status": "focused validation passed; full navigation blocked by pre-existing KDSQ6 consumer"
+}

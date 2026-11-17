@@ -1,0 +1,15 @@
+{
+  "input_sha256": "e6e41b663cf01b2a7fed4fdeefeb878da194959509d0c77dadac1c4ad45d54bd",
+  "max_degree": 7,
+  "mode": "groebner",
+  "raw_nonlinear_bound": 12,
+  "scope": "Unrestricted determinant coefficient basis; no nonlinear-first or raw<=12 restrictions imposed in this exploratory basis. Any point requires actual map replay. Proper ideal dimension does not establish a counterexample.",
+  "seconds": 20.037,
+  "source_sha256": "29ad6cfa42559d0c7ce6cae8106fed9f6cd8d4e5bb8ef4c4c9cc773953122739",
+  "status": "timeout",
+  "weights": [
+    1,
+    -2,
+    -3
+  ]
+}

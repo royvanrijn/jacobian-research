@@ -1,0 +1,353 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\OO}{\mathcal O}
+\title{Quadratic coefficients and rigidity of icosahedral lifts}
+\author{Internal research working proof}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+
+The retained first nonconstant $A_5$ core colourings of twelve current
+targets extend to $H_3$ reflection quotients. They therefore provide
+rank-three bases outside the symmetric-transposition route already
+excluded. This note gives an exact all-characteristic lift test over
+$\OO=\Z[\tau]$, $\tau^2=\tau+1$, and proves that every restricted affine
+lift of these fixed bases factors through the same finite group of
+order 120. Their lift bound is exactly three in every field; none
+gives a new sharp four-bound. Other base colourings are not excluded.
+The full Meridional Rank Conjecture remains open.
+
+The uniform arguments are written working proofs. Finite arithmetic
+and group certificates have separate replay, with shared routines
+identified below. No formal verification, external specialist review
+or new-priority claim is made. The use of finite Coxeter quotients is
+established, including $H_3$ in the searches of
+Blair--Kjuchukova--Morrison \cite{bkm}; the degree-two core-group
+framework is due to Kelly and Wada \cite{core}.
+
+\section{From a double-cover map to an icosahedral base}
+
+Write $G=G_K$ and fix a meridian $\mu_0$. The orbifold quotient
+$G/\langle\!\langle\mu_0^2\rangle\!\rangle$ is the semidirect product
+$H\rtimes\langle\mu_0\rangle$, where
+$H=\pi_1(\Sigma_2K)$ and $\mu_0$ has order two. With
+$x_i=\mu_i\mu_0$, conjugation by $\mu_0$ sends $x_i$ to $x_i^{-1}$.
+The diagram relations on these elements are
+\[
+                  x_b=x_o x_a^{-1}x_o,\qquad x_0=1.
+\]
+These are the normalized core relations \cite{core}.
+
+Suppose a retained homomorphism $f:H\to A_5$ has arc images $a_i$.
+If $c\in A_5$ is an involution satisfying
+$c a_i c^{-1}=a_i^{-1}$ for every arc, set
+\[
+         \mu_i\longmapsto (a_i c,-1)\quad\hbox{in }A_5\times C_2.
+\]
+The displayed relations verify this homomorphism directly. In the
+twelve cases below, $f$ is onto, $c$ is a double transposition, and
+each $a_i c$ is a double transposition. The resulting quotient is onto
+the finite group $W=A_5\times C_2$, with meridians in its $H_3$
+reflection class. The representation used below identifies this
+finite group exactly; no approximate polyhedron is used.
+
+The inversion implementer is found by checking all 120 permutations
+of five letters on the existing first map, not by searching for new
+core colourings. In every applicable case it is unique and even.
+Every original crossing relation is then checked again. The first-map
+choice is unchanged after a negative result.
+
+\section{An exact integral reflection model}
+
+Put $\tau=(1+\sqrt5)/2$ and
+\[
+ A=\begin{pmatrix}2&-\tau&0\\-\tau&2&-1\\0&-1&2\end{pmatrix},
+ \qquad S_i=I-e_i A_{i,*}.
+\]
+Thus $S_i$ fixes the hyperplane $A_{i,*}x=0$ and sends $e_i$ to
+$-e_i$. Its difference from the identity has rank one after every
+homomorphism $\OO\to F$: each row $A_{i,*}$ contains a unit, and
+$\tau(\tau-1)=1$. The roots $g e_i$, $g\in W$, likewise stay nonzero
+in every residue field, since $g$ is invertible over $\OO$.
+
+The producer enumerates 120 distinct $3\times3$ matrices over $\OO$,
+labelled by $(a,\epsilon)\in A_5\times C_2$. It checks every generator
+edge in their Cayley graph and obtains fifteen reflections. The
+independent replay instead represents multiplication by $\tau$ as
+\[
+                  T=\begin{pmatrix}0&1\\1&1\end{pmatrix}
+\]
+and uses ordinary $6\times6$ integer matrices. It verifies group
+closure, inverse matrices and every reflection/root transport.
+
+For a fixed meridian representation $\rho:G\to W$, choose transported
+primitive roots $u_i$ for its reflection matrices $R_i$. Restricted
+affine lifts take
+\[
+                  \mu_i\longmapsto (a_i u_i,R_i),\qquad a_i\in F.
+\]
+They form a vector space $Z_\rho(F)$. The conjugation- and
+inversion-invariant root-line condition, followed by evaluation on
+arbitrary meridional generators, proves
+\[
+                         \mr(K)\ge\dim_F Z_\rho(F),
+\]
+as in the companion all-characteristic proof. These images are
+involutions, so their affine relator matrix $M_\rho$ has coefficients
+in $\OO$ and one scalar column per arc. It is computed without a
+floating point embedding of $\sqrt5$.
+
+There is also a useful comparison with the unrestricted cohomology
+bound in Gao--Gu--Li--Wang, Lemma 6.2 \cite{gglw}. Its full elementary
+proof has now been read; this does not audit their entire paper.
+
+\begin{proposition}\label{prop:comparison}
+For a representation on $F^n$ with meridian defect rank $d>0$, let
+$z=\dim Z^1(G;F^n)$ and let $\ell$ be the dimension of the cocycles
+restricted by $f(\mu)\in\operatorname{im}(\rho(\mu)-I)$. Then
+\[
+ \mr(K)\ge\left\lceil\frac{\ell}{d}\right\rceil
+ \ \ge\ 1+\left\lceil\frac{z-n}{d}\right\rceil.
+\]
+Thus the unrestricted cocycle estimate cannot improve the restricted
+root-lift bound on the \emph{same} representation.
+\end{proposition}
+\begin{proof}
+The root condition on one meridian propagates to all its conjugates
+by the cocycle identity. Evaluation on any $w$ meridional generators
+injects the restricted space into $w$ vector spaces of dimension $d$,
+so $\ell\le wd$. Evaluation on one fixed meridian, followed by
+projection to $F^n/\operatorname{im}(\rho(\mu)-I)$, has kernel the
+restricted space and image of dimension at most $n-d$. Hence
+$z-\ell\le n-d$, proving the comparison after taking ceilings.
+\end{proof}
+
+In particular, the fixed $H_3$ bases below have $n=3,d=1,\ell=3$,
+so $z\le5$. Switching to their full first-cocycle spaces cannot
+produce a sharp four-bound. A different coefficient representation
+is required for such a cohomological improvement.
+
+\begin{corollary}\label{cor:original}
+The original nondegenerate binary affine-symplectic criterion also
+follows directly from restricted cocycles: a transitive action on
+$V=\F_2^k$, $k>0$, with meridians
+$x\mapsto x+(B(u_i,x)+a_i)u_i$ and nondegenerate alternating $B$ forces
+$\mr(K)\ge k+1$.
+\end{corollary}
+\begin{proof}
+Transitivity forces the meridian directions to span $V$, since each
+generator changes a point only by a multiple of its direction.
+Nondegeneracy then gives $V^G=0$ for the linear action. Its principal
+cocycles form a $k$-dimensional subspace of the restricted cocycles.
+The given affine action supplies one more restricted cocycle, outside
+that subspace: a principal affine action has a common fixed point
+and cannot be transitive on $V$ with $k>0$. Hence the restricted
+dimension is at least $k+1$, and the rank-one bound applies.
+\end{proof}
+
+This is an alternative cohomological derivation of the user's
+nondegenerate conditional theorem, without a novelty claim. For a
+degenerate form the common linear fixed space is the radical, so
+this argument alone gives only $k-\dim\operatorname{rad}B+1$.
+The stronger degenerate $k+1$ extension still uses the separate
+quadratic-refinement proof retained in \path{PROOF.tex}.
+
+\section{Finite exact reduction for every coefficient field}
+
+For a matrix $M\in\operatorname{Mat}_{m\times s}(\OO)$, replace each
+coefficient $a+b\tau$ by its multiplication matrix
+\[
+                    \begin{pmatrix}a&b\\b&a+b\end{pmatrix}.
+\]
+Write $E(M)$ for the resulting $2m\times2s$ integer matrix.
+
+\begin{theorem}\label{thm:quadratic}
+Let $t=\rk_{\mathbb Q(\sqrt5)}M>0$. The integer matrix $E(M)$ has
+rank $2t$. Let $\delta_1\mid\cdots\mid\delta_{2t}$ be its nonzero
+Smith factors. To determine the nullity of $M$ over every field
+equipped with a homomorphism $\OO\to F$, it suffices to check:
+\begin{itemize}
+\item the generic nullity $s-t$;
+\item every prime divisor of $\delta_{2t}$, in every residue embedding;
+\item characteristic five, with $\tau\mapsto3$.
+\end{itemize}
+For a prime $p\ne5$, the residue fields are $\F_p$ at each of the two
+roots of $X^2-X-1$, or $\F_{p^2}$ when this polynomial is irreducible.
+Rank is unchanged by any further field extension. If $M$ has rank
+zero, it is identically zero and has nullity $s$ everywhere.
+\end{theorem}
+\begin{proof}
+The regular representation of the quadratic field doubles the generic
+rank, giving $2t$. If $p\ne5$, the algebra
+$\OO\otimes\F_p=\F_p[X]/(X^2-X-1)$ is either the product of two
+copies of $\F_p$ or the field $\F_{p^2}$. The rank of $E(M)$ modulo
+$p$ is respectively the sum of the two component ranks or twice the
+rank over $\F_{p^2}$.
+
+All $(t+1)$-minors of $M$ vanish in $\OO$, so every component rank is
+at most $t$. If $p\nmid\delta_{2t}$, the integer Smith form has rank
+$2t$ modulo $p$, forcing every component rank to equal $t$. This
+leaves only the stated finite set of primes. At $p=5$, the quadratic
+algebra is not reduced, but its unique residue field has $\tau=3$;
+checking that scalar matrix directly avoids any semisimplicity
+assumption. Characteristic-zero embeddings and further field
+extensions preserve the corresponding ranks.
+\end{proof}
+
+This is a rank-drop criterion before any field search, not a prime
+sweep. The implementation stops without an all-characteristic
+certificate if its frozen factor or residue-root cap is exceeded.
+On this panel every nonzero Smith factor is a unit, so no factoring
+or large-prime search is needed. Characteristic five is nevertheless
+checked separately.
+
+Controls distinguish the arithmetic cases. The coefficient $\tau-4$
+has norm eleven and vanishes only at one of the two embeddings
+modulo eleven. The coefficient $2\tau-1$ vanishes in the residue
+field of characteristic five; its expanded kernel has dimension one,
+which cannot be blindly halved. Inert characteristic-three and unit
+controls are also retained.
+
+\section{When a lift cannot enlarge its finite base}
+
+\begin{proposition}\label{prop:universal}
+Restricted root lifts of the finite group $W$ itself form $F^3$ over
+every field $F$ receiving $\OO$. Their three coordinates are the
+translations $a_i e_i$ on $S_i$.
+\end{proposition}
+\begin{proof}
+Over $\mathbb Q(\sqrt5)$, every triple $(a_1,a_2,a_3)$ is obtained by
+conjugating the linear action by a translation $b$ satisfying $Ab=a$.
+Indeed
+\[
+            \det A=2(2-\tau)\ne0,\qquad (2-\tau)(1+\tau)=1.
+\]
+Every group relator therefore vanishes identically in these three
+parameters. Its affine translation is linear in them with coefficients
+in $\OO$, so the identity also holds over $\OO$ and after every
+specialization to $F$. Thus every triple gives a homomorphism from
+the same finite group $W$, including in characteristic two. Three
+simple-generator images determine a lift, proving the assertion.
+\end{proof}
+
+\begin{theorem}\label{thm:factor}
+Suppose $\rho:G\twoheadrightarrow W$ is onto and
+$\dim Z_\rho(F)=3$. Every restricted affine lift of this fixed $\rho$
+factors through $W$. Its image has order at most 120.
+\end{theorem}
+\begin{proof}
+Pullback along $\rho$ maps the three-dimensional space in
+Proposition~\ref{prop:universal} into $Z_\rho(F)$. It is injective:
+two homomorphisms from $W$ agreeing after a surjective pullback agree
+on $W$. Equality of dimensions makes it onto. This remains valid
+when the specialized linear representation of $W$ is not faithful.
+\end{proof}
+
+For characteristic different from two, $A$ is invertible and these
+universal lifts have a common fixed point. In characteristic two,
+the Cartan matrix has rank two, so this last conclusion need not
+hold. The factorization conclusion still does.
+
+An exact control over $\F_4$ takes simple translation parameters
+$(1,0,0)$. It has no common fixed point, image order 120 and four
+orbits on $\F_4^3$ of sizes
+\[
+                              12,12,20,20.
+\]
+It is not transitive. More generally none of these finite-base lifts
+is transitive on $F^3$: for a finite such field, $|F|=q\ge4$;
+$4^3$ does not divide 120, and $q^3>120$ for $q\ge5$. For infinite
+$F$, a finite group cannot be transitive on $F^3$ either. Over $\F_4$
+the meridian difference has rank two on the underlying binary space;
+it is not a rank-one binary transvection satisfying the original
+quadratic criterion.
+
+\section{The fixed panel and its certificates}
+
+The twelve fixed bases are obtained from the existing first core maps
+on
+\[
+\begin{array}{rrrr}
+13a129&13a135&13a136&13a137\\
+13a194&13a196&13a197&13a198\\
+13a234&13a242&13a244&13a265.
+\end{array}
+\]
+The other four targets in the unchanged sixteen-case panel have only
+the trivial $A_5$ core map. No alternative map or knot was substituted.
+The panel originates in the pinned October uncertainty list
+\cite{deposit}, with independently retained KnotInfo PD data and
+four-seed upper certificates from the preceding audit. An uncertainty
+list is not evidence of novel MRC status.
+
+For every one of the twelve bases, $M_\rho$ has thirteen columns.
+Its expanded integer matrix has 78 rows, 26 columns and nonzero
+Smith factors
+\[
+                                1^{20}.
+\]
+The generic root nullity is three; at $p=5$, $\tau=3$, independent
+scalar elimination again gives three. Theorem~\ref{thm:quadratic}
+therefore proves nullity three in every coefficient field, and
+Theorem~\ref{thm:factor} proves finite-base factorization in each.
+
+Explicit certificates make this conclusion reviewable. For each
+case the retained matrices $P\in\operatorname{Mat}_{13\times3}(\OO)$
+and $L\in\operatorname{Mat}_{3\times13}(\OO)$ satisfy
+\[
+                              M_\rho P=0,\qquad LP=I_3.
+\]
+Here $P$ is the pullback of the universal three-parameter lift and
+$L$ evaluates words mapping onto the three standard generators of
+$W$. Those words also certify that the abstract image is all 120
+elements. The verifier checks the universal affine Cayley graph,
+every pullback coefficient, both displayed identities and the words,
+using ordinary integer regular matrices. In characteristic five it
+checks a full independent kernel basis. The $\F_4$ orbit control is
+replayed on six binary coordinates without quadratic-field arithmetic.
+
+The main scripts are \path{quadratic_integer_lifts.py},
+\path{audit_icosahedral_lifts.py} and
+\path{verify_icosahedral_lifts.py}. The frozen plan, group model,
+root matrices, Smith operations, field bases, inversion audit and
+split factorizations are sealed by
+\path{icosahedral_lift_verification.json}. The independent replay
+does not use the producer's algebraic-number operations or affine
+matrix builder; the PD parser and existing Smith-step checker are
+shared. These finite replays do not constitute formal verification
+of the uniform theorems.
+
+This closes a specific noncrystallographic affine-lift route on the
+fixed first maps. It does not exclude all $H_3$ colourings of these
+knots, all rank-one representations, nonlinear deformations or
+nonabelian lower bounds. No previously unresolved knot case is
+settled. Further work should use a structural reason for a different
+base or improve geometric bridge upper certificates, while auditing
+known-family coverage and the remaining source proofs.
+
+\begin{thebibliography}{9}
+\bibitem{gglw} Gao--Gu--Li--Wang, Meridional ranks of iterated
+Whitehead doubles (2026), Lemma 6.2 and Remark 6.3, preprint.
+\url{https://arxiv.org/abs/2611.15673v1}.
+\bibitem{bkm} Blair--Kjuchukova--Morrison, Coxeter quotients of knot
+groups through 16 crossings (2024), Sections 2 and 3.
+\url{https://arxiv.org/abs/2208.09032}.
+\bibitem{core} Silver--Traldi--Williams, Core groups,
+J. Knot Theory Ramifications 33 (2024), 2450013, introduction and
+Section 7; Kelly--Wada core-group precedent.
+\url{https://arxiv.org/abs/2311.02048v2}.
+\bibitem{deposit} Bhattacharjee, The bridge index and the nonorientable
+four-genus of knots with at most thirteen crossings, unrefereed
+release 1.3.0 (2026). \url{https://doi.org/10.5281/zenodo.23561157}.
+\end{thebibliography}
+\end{document}

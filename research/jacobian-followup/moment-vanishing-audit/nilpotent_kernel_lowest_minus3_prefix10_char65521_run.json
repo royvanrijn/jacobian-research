@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "characteristic": 65521,
+  "time_limit_seconds": 15,
+  "elapsed_seconds": 0.666,
+  "input_sha256": "2b3dc6d6047d6363e8cfc66213862ed9db9146692762d7ff00c9388b7cf8b723",
+  "output_sha256": "34dd79b2a8e5de1c6b4a080db61034d54d454a879ff7b835a3a575cabcddcb1e",
+  "conclusion": "Modular only. Complete kernel-linear classification remains unproved until QQ chart exclusion."
+}

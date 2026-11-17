@@ -129,6 +129,7 @@ def main():
          "bilinear_entries":sum(map(len,B.values())),"quadratic_entries":sum(map(len,Q)),
          "current_polynomial_columns":current_count,"cubic_potential_basis_checks":potentials,
          "hashes":{n:hashlib.sha256((HERE/n).read_bytes()).hexdigest() for n in ("combined_cocycle.json","combined_linear_packet.json","combined_laurent.py","verify_transport.py")},
+         "source_hashes":{str((a.OLD/n).relative_to(a.ROOT)):hashlib.sha256((a.OLD/n).read_bytes()).hexdigest() for n in ("explore_degree_five_quantum_residue.py","explore_degree_five_a2_subprincipal.py","verify_degree_five_laurent_quantum_obstruction.py")},
          "scope":"All finite-X-Laurent polynomials with lower caps (weight4-degree,Z-order)=(28,3),(23,2) and current caps (22,1),(17,0). Projection X>=-3 and input cutoff X>=-15 are proved by support shifts.",
          "elapsed_seconds":time.monotonic()-start}
     (HERE/"combined_laurent.json").write_text(json.dumps(out,indent=2)+"\n")

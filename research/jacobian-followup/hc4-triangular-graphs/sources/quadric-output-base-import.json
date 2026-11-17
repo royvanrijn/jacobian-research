@@ -1,0 +1,17 @@
+{
+  "title": "Basic algebra for quadric output-base obstruction",
+  "review_date": "2026-11-14",
+  "sources": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0AFU",
+      "retained_file": "stacks-nagata-0AFU.html",
+      "sha256": "7c0b01cdb8b63d37221828f2bf8e8196c2ad9204d48792f0fde38959f1481e22",
+      "role": "Lemma 10.120.7, Nagata criterion: a Noetherian domain with a prime element and factorial localization is factorial. Applied only after proving the relevant element prime and identifying its localization explicitly."
+    }
+  ],
+  "retained_other_inputs": "Stable hypersurface pencil and basic separable/Galois facts already retained in receipt-stable-hypersurface.json; the quadric filtration and primitive-composition extension are proved in the new note.",
+  "primary_source_inspected": true,
+  "new_external_classification_imported": false,
+  "individual_quadric_embedding_rectification_assumed": false,
+  "novelty_priority_asserted": false
+}

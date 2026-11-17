@@ -1,0 +1,35 @@
+{
+  "previous_goal_turn": "progress",
+  "evidence": "Current KMFI14--16 proofs and ledger re-read; universal natural alternating occurrence is concrete progress. PSL2(11) action-level realization remains unproved.",
+  "new_claim_ids": [
+    "KMFI17",
+    "KMFI18"
+  ],
+  "changed_claim_ids": [
+    "OP-KMON",
+    "KBB1"
+  ],
+  "preexisting_entry_count": 1840,
+  "preexisting_entries_preserved_without_change": 1838,
+  "scope_fingerprints": {
+    "OP-KMON": "7743863dcd36a1c2",
+    "KBB1": "2b33144e9ffae81c",
+    "KMFI17": "6d717c00924560ad",
+    "KMFI18": "04768c1447b06a09"
+  },
+  "updated_lesson": "METHOD-KELLER-AFFINE-INERTIA",
+  "updated_work": "WORK-KMON",
+  "exact_target_curve_genera": [
+    5678,
+    7331,
+    9343
+  ],
+  "A12_generic_target_fiber_genera": [
+    527826,
+    524161
+  ],
+  "A12_total_surface_rationality": "unresolved",
+  "PSL2_11_affine_realization": false,
+  "full_classification": false,
+  "goal_status": "active"
+}

@@ -1,0 +1,5 @@
+ring R=0,(e,f,g),dp;
+option(redSB);
+short=0;
+ideal I=e^2+6*g+3,f,-e^3-39*e*g+13*e+13*f^2,e*f,2*e^4+34*e^2*g+17*e^2+68*g^2+68*g+17;
+ideal J=e,f,2*g+1;matrix T=lift(I,J);int i,j;print("WITNESS_BEGIN");for(i=1;i<=nrows(T);i++){for(j=1;j<=ncols(T);j++){if(T[i,j]!=0){print(string(i)+"|"+string(j)+"|"+string(T[i,j]));}}}print("WITNESS_END");quit;

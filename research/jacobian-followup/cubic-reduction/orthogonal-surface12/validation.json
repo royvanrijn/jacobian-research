@@ -1,0 +1,68 @@
+{
+  "all_four_charts_reconstructed": true,
+  "arithmetic_sha256": "791e7393cfbaf764b7ec13cd3f193d9d4a23c5eda349297278f7f72539bf0ecd",
+  "base_validation_sha256": "b9944075af344302ebe0a972e571f18f369a96440eaef4856da67bbee9d420be",
+  "chart_results": {
+    "boundary": {
+      "a_nonzero_lower_bound": 59,
+      "a_zero_count": 47,
+      "constant_occurrences": 38,
+      "generic_support": 72,
+      "model_sha256": "e318d51153cdb7613882e37507ee37bb61e0980178be91e7a2264c3bd7f5e749"
+    },
+    "boundary-minus": {
+      "a_nonzero_lower_bound": 50,
+      "a_zero_count": 36,
+      "constant_occurrences": 30,
+      "generic_support": 60,
+      "model_sha256": "c6d9f18171a643b57b2810fa9564dc0038fe1e94f21362640ae1155e861be2bf"
+    },
+    "open": {
+      "constant_occurrences": 13,
+      "generic_support": 126,
+      "model_sha256": "fc9478de3f4ddd5e43fb3b377fd99b8e2dc0570ed19d356a8a975fa5c46daf22",
+      "origin_count": 36,
+      "stratum_lower_bounds": {
+        "t_u_nonzero_v_w_nonzero": 88,
+        "t_u_nonzero_v_zero": 59,
+        "t_u_nonzero_w_zero": 62,
+        "t_zero_u_nonzero": 49,
+        "u_zero_t_nonzero": 50
+      }
+    },
+    "open-minus": {
+      "constant_occurrences": 13,
+      "generic_support": 126,
+      "model_sha256": "fde9a254ef40dbeab4fad8046f8c646f3ea69c8a71c968fcd87ab84da51b992c",
+      "origin_count": 47,
+      "stratum_lower_bounds": {
+        "t_u_nonzero_v_w_nonzero": 88,
+        "t_u_nonzero_v_zero": 49,
+        "t_u_nonzero_w_zero": 62,
+        "t_zero_u_nonzero": 59,
+        "u_zero_t_nonzero": 59
+      }
+    }
+  },
+  "checker_sha256": "05d3174e4567b7fa62f7bae789a97ae0df73ecf01533fb1b899ace57520ebbd0",
+  "claim": "KCUB24",
+  "independent_arithmetic": "stdlib Fraction and guarded AST; no CAS or primary factorization used",
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "minimizing_chart_points": {
+    "boundary-minus": [
+      "0"
+    ],
+    "open": [
+      "0",
+      "0"
+    ]
+  },
+  "minimum_in_defined_orthogonal_block_group": 36,
+  "next_possible_nonlinear_count": 47,
+  "no_counts37_through46_in_this_group": true,
+  "positive_bounds_unchanged": true,
+  "producer_sha256": "5c8ad47102088717d8b9bee8ff363d105c630fe00c884e234cf722243a889cf6",
+  "proof_boundary": "Chart completeness and the conic description of the block orthogonal group are written. Exact full polynomial conjugacy, inverse matrices, coefficients, factor products and all support indicators are independently reconstructed. Not full affine-orbit, arbitrary nonlinear or global sparsity optimum.",
+  "proof_sha256": "d913ec7d1b9e800603ec2108858c540e8e947b2cca7a05b355c058bb17c6bb52",
+  "status": "pass"
+}

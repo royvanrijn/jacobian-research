@@ -1,0 +1,15 @@
+{
+  "initial_input_sha256": "73c8324fe17ebeed1d608c90c248893d4cb777a0a803647d626c6b8f65cc7065",
+  "method": "Use the preserved trunc helper,iterate w=q*Z/(t*f*(r-z))-w^2/(r-z) five times,then compare coefficients through q^4 after exact rational cancellation.",
+  "raw_expanded_expression_equal_zero": false,
+  "exact_cancelled_expression_equal_zero": true,
+  "cancelled_coefficients_q0_to_q4": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "classification": "Representation-only assertion failure;the low coefficients vanish identically. Accepted assertions apply exact rational cancellation before comparison.",
+  "mathematical_hypotheses_weakened": false
+}

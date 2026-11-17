@@ -1,0 +1,62 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "dimension": 2,
+    "parameter_count": 1,
+    "phase_terms": [
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        "1"
+      ]
+    ],
+    "parameter_ideal": [
+      [
+        [
+          [
+            0
+          ],
+          "1"
+        ]
+      ]
+    ],
+    "precision_matrix": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "method": "zero ring",
+  "region": {
+    "asymptotic_coefficient": "0",
+    "pure_linear_minimum": "0",
+    "vertices": [
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "supporting_original_points": [],
+    "recession_generators": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

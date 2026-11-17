@@ -1,0 +1,14 @@
+{"coefficient": 0, "status": "unit", "seconds": 0.005}
+{"coefficient": 1, "status": "unit", "seconds": 0.011}
+{"coefficient": 2, "status": "timeout", "seconds": 5.008}
+{"coefficient": 3, "status": "timeout", "seconds": 5.008}
+{"coefficient": 4, "status": "unit", "seconds": 0.196}
+{"coefficient": 5, "status": "timeout", "seconds": 5.008}
+{"coefficient": 6, "status": "unit", "seconds": 0.005}
+{"coefficient": 7, "status": "timeout", "seconds": 5.007}
+{"coefficient": 8, "status": "timeout", "seconds": 5.014}
+{"coefficient": 9, "status": "unit", "seconds": 3.239}
+{"coefficient": 10, "status": "timeout", "seconds": 5.008}
+{"coefficient": 11, "status": "unit", "seconds": 0.02}
+{"coefficient": 12, "status": "timeout", "seconds": 5.008}
+{"status": "inconclusive", "source_sha256": "857f396c3a8f2cbd717760531e7ea95b23fedccc0c44bee928629c2ddbbec9e4", "input_sha256": "c420c4b98f84b90258b22dbf1709cb12156d265be1d34232e0082962248c4c1f", "systems": [{"coefficient": 0, "status": "unit", "seconds": 0.005}, {"coefficient": 1, "status": "unit", "seconds": 0.011}, {"coefficient": 2, "status": "timeout", "seconds": 5.008}, {"coefficient": 3, "status": "timeout", "seconds": 5.008}, {"coefficient": 4, "status": "unit", "seconds": 0.196}, {"coefficient": 5, "status": "timeout", "seconds": 5.008}, {"coefficient": 6, "status": "unit", "seconds": 0.005}, {"coefficient": 7, "status": "timeout", "seconds": 5.007}, {"coefficient": 8, "status": "timeout", "seconds": 5.014}, {"coefficient": 9, "status": "unit", "seconds": 3.239}, {"coefficient": 10, "status": "timeout", "seconds": 5.008}, {"coefficient": 11, "status": "unit", "seconds": 0.02}, {"coefficient": 12, "status": "timeout", "seconds": 5.008}], "seconds": 38.584, "scope": "Coefficient deletions in the exact raw13-atom pattern with the specified two-point collision family. Unit statuses are primary only. No general12-term exclusion, normalized sparsity change or new counterexample is claimed."}

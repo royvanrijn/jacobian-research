@@ -1,0 +1,480 @@
+[
+  {
+    "name": "zero",
+    "certificate": {
+      "outcome": "SAFE",
+      "cover": {
+        "outcome": "COMPLETE",
+        "covariance": [
+          [
+            1
+          ]
+        ],
+        "phase_terms": [],
+        "b_coefficients": [
+          "0",
+          "1"
+        ],
+        "b_polynomial": "z",
+        "nonnegative_integer_roots": [
+          0
+        ],
+        "spatial_generator_cutoff": 0,
+        "remainder_terms": [
+          {
+            "powers": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-1",
+            "spatial_drop": 2,
+            "time_degree_gain": 0
+          }
+        ],
+        "recurrence_degree_slope": "0",
+        "original_exponential_identity_verified": true,
+        "original_identity_residual": "0",
+        "search_degree": 2
+      },
+      "low_marker_certificates": [
+        {
+          "outcome": "COMPLETE",
+          "original_marker_exponent": [
+            0
+          ],
+          "scalar_annihilator": [
+            [
+              0,
+              1,
+              "1"
+            ]
+          ],
+          "polynomial_ibp_witnesses": [
+            []
+          ],
+          "original_ibp_identity_verified": true,
+          "literal_polynomial_identity": "0",
+          "actual_period_test": {
+            "outcome": "MATCH",
+            "selected_polynomial_images": [
+              {
+                "coefficients": [
+                  "1"
+                ],
+                "expression": "1"
+              }
+            ],
+            "origin_certificates": [
+              {
+                "shift": -1,
+                "origin_indicial_polynomial": "z",
+                "nonnegative_integer_roots": [
+                  0
+                ],
+                "jet_degree": 0
+              }
+            ],
+            "jet_coordinates": [
+              [
+                0,
+                0
+              ]
+            ],
+            "actual_jet_match": true,
+            "conditional_on_proved_actual_map": true,
+            "full_amplitude_coverage_verified": false,
+            "gaussian_safety_claimed": false
+          },
+          "search_degree": 1,
+          "all_amplitude_coverage_claimed": false,
+          "gaussian_safety_claimed": false
+        }
+      ],
+      "affine_cutoff": {
+        "slope": "0",
+        "intercept": "0",
+        "statement": "E[Q P^m]=0 whenever m > slope*deg(Q)+intercept"
+      },
+      "all_marker_coverage": "Proved by the original degree-lowering Euler/IBP recurrence",
+      "source_relation_completeness_assumed": false
+    }
+  },
+  {
+    "name": "linear",
+    "certificate": {
+      "outcome": "UNSAFE",
+      "fixed_bad_marker_exponent": [
+        0
+      ],
+      "cover": {
+        "outcome": "COMPLETE",
+        "covariance": [
+          [
+            1
+          ]
+        ],
+        "phase_terms": [
+          [
+            [
+              1
+            ],
+            "1"
+          ]
+        ],
+        "b_coefficients": [
+          "0",
+          "1"
+        ],
+        "b_polynomial": "z",
+        "nonnegative_integer_roots": [
+          0
+        ],
+        "spatial_generator_cutoff": 0,
+        "remainder_terms": [
+          {
+            "powers": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1",
+            "spatial_drop": 1,
+            "time_degree_gain": -1
+          }
+        ],
+        "recurrence_degree_slope": "0",
+        "original_exponential_identity_verified": true,
+        "original_identity_residual": "0",
+        "search_degree": 2
+      },
+      "low_marker_certificates": [
+        {
+          "outcome": "COMPLETE",
+          "original_marker_exponent": [
+            0
+          ],
+          "scalar_annihilator": [
+            [
+              0,
+              1,
+              "1"
+            ],
+            [
+              1,
+              0,
+              "-1"
+            ]
+          ],
+          "polynomial_ibp_witnesses": [
+            [
+              [
+                [
+                  0,
+                  0
+                ],
+                "-1"
+              ]
+            ]
+          ],
+          "original_ibp_identity_verified": true,
+          "literal_polynomial_identity": "0",
+          "actual_period_test": {
+            "outcome": "NO_MATCH",
+            "origin_certificates": [
+              {
+                "shift": -1,
+                "origin_indicial_polynomial": "z",
+                "nonnegative_integer_roots": [
+                  0
+                ],
+                "jet_degree": 0
+              }
+            ],
+            "jet_coordinates": [
+              [
+                0,
+                0
+              ]
+            ],
+            "polynomial_map_jet_obstruction": [
+              "1"
+            ],
+            "nonzero_original_jet_value": "1",
+            "conditional_on_proved_actual_map": true,
+            "full_amplitude_coverage_verified": false,
+            "gaussian_safety_claimed": false
+          },
+          "search_degree": 1,
+          "all_amplitude_coverage_claimed": false,
+          "gaussian_safety_claimed": false
+        }
+      ],
+      "reason": "A certified original scalar period is not polynomial"
+    }
+  },
+  {
+    "name": "quadratic",
+    "certificate": {
+      "outcome": "UNSAFE",
+      "fixed_bad_marker_exponent": [
+        0
+      ],
+      "cover": {
+        "outcome": "COMPLETE",
+        "covariance": [
+          [
+            1
+          ]
+        ],
+        "phase_terms": [
+          [
+            [
+              2
+            ],
+            "1"
+          ]
+        ],
+        "b_coefficients": [
+          "0",
+          "-1",
+          "1"
+        ],
+        "b_polynomial": "z**2 - z",
+        "nonnegative_integer_roots": [
+          0,
+          1
+        ],
+        "spatial_generator_cutoff": 1,
+        "remainder_terms": [
+          {
+            "powers": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "coefficient": "-1",
+            "spatial_drop": 2,
+            "time_degree_gain": -1
+          }
+        ],
+        "recurrence_degree_slope": "0",
+        "original_exponential_identity_verified": true,
+        "original_identity_residual": "0",
+        "search_degree": 3
+      },
+      "low_marker_certificates": [
+        {
+          "outcome": "COMPLETE",
+          "original_marker_exponent": [
+            0
+          ],
+          "scalar_annihilator": [
+            [
+              0,
+              0,
+              "1"
+            ],
+            [
+              0,
+              1,
+              "-1"
+            ],
+            [
+              1,
+              1,
+              "2"
+            ]
+          ],
+          "polynomial_ibp_witnesses": [
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                "1"
+              ]
+            ]
+          ],
+          "original_ibp_identity_verified": true,
+          "literal_polynomial_identity": "0",
+          "actual_period_test": {
+            "outcome": "NO_MATCH",
+            "origin_certificates": [
+              {
+                "shift": -1,
+                "origin_indicial_polynomial": "-z",
+                "nonnegative_integer_roots": [
+                  0
+                ],
+                "jet_degree": 0
+              }
+            ],
+            "jet_coordinates": [
+              [
+                0,
+                0
+              ]
+            ],
+            "polynomial_map_jet_obstruction": [
+              "1"
+            ],
+            "nonzero_original_jet_value": "1",
+            "conditional_on_proved_actual_map": true,
+            "full_amplitude_coverage_verified": false,
+            "gaussian_safety_claimed": false
+          },
+          "search_degree": 2,
+          "all_amplitude_coverage_claimed": false,
+          "gaussian_safety_claimed": false
+        }
+      ],
+      "reason": "A certified original scalar period is not polynomial"
+    }
+  },
+  {
+    "name": "nonzero pure safe split phase",
+    "certificate": {
+      "outcome": "SAFE",
+      "cover": {
+        "outcome": "COMPLETE",
+        "covariance": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "phase_terms": [
+          [
+            [
+              1,
+              0
+            ],
+            "1"
+          ]
+        ],
+        "b_coefficients": [
+          "0",
+          "1"
+        ],
+        "b_polynomial": "z",
+        "nonnegative_integer_roots": [
+          0
+        ],
+        "spatial_generator_cutoff": 0,
+        "remainder_terms": [
+          {
+            "powers": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "2",
+            "spatial_drop": 1,
+            "time_degree_gain": -1
+          },
+          {
+            "powers": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1",
+            "spatial_drop": 1,
+            "time_degree_gain": 1
+          }
+        ],
+        "recurrence_degree_slope": "1",
+        "original_exponential_identity_verified": true,
+        "original_identity_residual": "0",
+        "search_degree": 2
+      },
+      "low_marker_certificates": [
+        {
+          "outcome": "COMPLETE",
+          "original_marker_exponent": [
+            0,
+            0
+          ],
+          "scalar_annihilator": [
+            [
+              0,
+              1,
+              "1"
+            ]
+          ],
+          "polynomial_ibp_witnesses": [
+            [],
+            [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                "-1"
+              ]
+            ]
+          ],
+          "original_ibp_identity_verified": true,
+          "literal_polynomial_identity": "0",
+          "actual_period_test": {
+            "outcome": "MATCH",
+            "selected_polynomial_images": [
+              {
+                "coefficients": [
+                  "1"
+                ],
+                "expression": "1"
+              }
+            ],
+            "origin_certificates": [
+              {
+                "shift": -1,
+                "origin_indicial_polynomial": "z",
+                "nonnegative_integer_roots": [
+                  0
+                ],
+                "jet_degree": 0
+              }
+            ],
+            "jet_coordinates": [
+              [
+                0,
+                0
+              ]
+            ],
+            "actual_jet_match": true,
+            "conditional_on_proved_actual_map": true,
+            "full_amplitude_coverage_verified": false,
+            "gaussian_safety_claimed": false
+          },
+          "search_degree": 1,
+          "all_amplitude_coverage_claimed": false,
+          "gaussian_safety_claimed": false
+        }
+      ],
+      "affine_cutoff": {
+        "slope": "1",
+        "intercept": "0",
+        "statement": "E[Q P^m]=0 whenever m > slope*deg(Q)+intercept"
+      },
+      "all_marker_coverage": "Proved by the original degree-lowering Euler/IBP recurrence",
+      "source_relation_completeness_assumed": false
+    }
+  }
+]

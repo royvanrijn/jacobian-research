@@ -1,0 +1,8 @@
+{
+  "date":"2026-11-16","frozen_before_execution":true,
+  "selection":"All191 GL3(F2) quotient-kernel classes from the complete frozen293-panel run, including162 outer and29 inner deck actions; no replacement or new maps",
+  "motivation":"The adjoint PSL2(F7) module extends across either deck type after multiplying every knot meridian by -1. Outer decks give the sign-twisted PGL2(F7) reflection image; inner decks give C2xPSL2(F7). Both have rank-one3-dimensional meridian reflections over F7 and supply the same missing singular-affine architecture if a nonprincipal admissible cocycle exists.",
+  "test":"Use a verified GL3(F2)-PSL2(F7) coefficient isomorphism and the unique PGL deck implementer. Set every meridian image to -Ad(projective_meridian), verify all relators and rank-one conditions, and solve the full13-variable admissible root matrix. Dimension>=4 requires independent sharp-certificate, upper and knot/family checks.",
+  "limits":{"maps":191,"prime":7,"root_rows":39,"root_columns":13,"seconds_total":30,"checkpoint_final":true},
+  "scope":"Only these fixed field7 reflection bases, not all coefficient fields, linear representations or finite quotients. The first16 outer test is preserved separately. No novelty/full MRC claim."
+}

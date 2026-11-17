@@ -1,0 +1,8 @@
+{
+  "date":"2026-11-17","frozen_before_execution":true,
+  "targets":["13a_129","13a_135"],"control":"4_1",
+  "motivation":"The independently replayed compact3generator presentations and abstract K4 networks leave both ranks2or3. Inspect whether the natural2fold cyclic exterior covers with candidate (1,0) filling offer a simpler triangulated presentation or a geometric clue. Source PDs must be exact and homology must match. These cues can choose a next proof obligation but cannot certify a double-cover identification, group rank, hyperbolicity or JSJ structure by themselves.",
+  "method":"For each literal source PD and the known figure-eight control, make the exterior, its unique2fold cyclic cover, then candidate meridional filling(1,0). Retain cover metadata, peripheral/filling data, triangulation text, integer group presentations and original-to-simplified generator maps, numerical solution type/volume and homology. Do not identify a named manifold or certify geometry; filling-basis provenance and exact core-to-triangulation transport remain separate obligations.",
+  "limits":{"targets":2,"control":1,"seconds_each":15,"seconds_total":55,"checkpoint_each":true},
+  "scope":"Small exploratory geometric cue only. No census search, no low-index cover enumeration beyond the unique cyclic double cover, no global rank or knot equality from software simplification. Any2generator output must later be transported exactly to the certified core presentation before closing its rank3 gate. Primary local/official SnapPy3.3.2 docs for covers, filling and generator maps consulted; no new mathematical source import."
+}

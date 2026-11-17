@@ -1,0 +1,63 @@
+{
+  "status": "exact-primary-unit-identity",
+  "source_sha256": "76632ebce375e5a498958e8462d4f4903793e9865109b32a1ac49a574d109457",
+  "model_sha256": "eb39ac3837fffbbcf5f5bdac101ddf0b1d3419745af908a647e487369acc8aec",
+  "singular_source_sha256": "02f502c0904aff2082442d669412ae25da6e2d18eefb254b44546306ff7fab1f",
+  "multipliers": [
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "-2"
+      }
+    ],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "2/3"
+      }
+    ],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "-1/2"
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "exponent": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-1"
+      }
+    ]
+  ]
+}

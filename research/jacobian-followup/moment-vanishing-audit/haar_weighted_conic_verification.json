@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "b5aee986d91d7202dd0b517480ccb7fe8eaa8a62ad98cbd27d69f9c58bacd525",
+  "sympy_version": "1.14.0",
+  "weighted_full_moment_and_simple_critical_controls": [
+    {
+      "r": 1,
+      "s": 1,
+      "cover_degree": 2,
+      "nonzero_critical_second_derivative_at_T_minus1": "-2"
+    },
+    {
+      "r": 1,
+      "s": 2,
+      "cover_degree": 3,
+      "nonzero_critical_second_derivative_at_T_minus1": "2"
+    },
+    {
+      "r": 2,
+      "s": 1,
+      "cover_degree": 3,
+      "nonzero_critical_second_derivative_at_T_minus1": "2"
+    },
+    {
+      "r": 2,
+      "s": 3,
+      "cover_degree": 5,
+      "nonzero_critical_second_derivative_at_T_minus1": "18/25"
+    },
+    {
+      "r": 3,
+      "s": 2,
+      "cover_degree": 5,
+      "nonzero_critical_second_derivative_at_T_minus1": "18/25"
+    },
+    {
+      "r": 3,
+      "s": 4,
+      "cover_degree": 7,
+      "nonzero_critical_second_derivative_at_T_minus1": "576/2401"
+    }
+  ],
+  "all_valuation_weighted_lower_bound_identity": true,
+  "original_toric_log_volume_order_controls": true,
+  "critical_chart_principalization_and_S_transversality_exact": true,
+  "both_square_removal_volume_bounds": true,
+  "all_ring_original_marker_cutoff_controls": [
+    {
+      "r": 1,
+      "s": 2,
+      "nu": 2,
+      "kappa": 2,
+      "marker_weight_abs": 2,
+      "cutoff": 9
+    },
+    {
+      "r": 2,
+      "s": 3,
+      "nu": 2,
+      "kappa": 2,
+      "marker_weight_abs": 3,
+      "cutoff": 13
+    },
+    {
+      "r": 3,
+      "s": 2,
+      "nu": 1,
+      "kappa": 2,
+      "marker_weight_abs": 3,
+      "cutoff": 12
+    }
+  ],
+  "nilpotents_not_discarded_or_first_purity_inferred": true,
+  "exact_opposite_weight_ring_criterion": "p and U^s V^r nilpotent",
+  "all_zero_containing_three_weight_sectors_safe": true,
+  "all_three_weight_supports_claimed_closed": false,
+  "zero_free_three_weights_claimed_closed": false,
+  "full_mixed_phase_coverage_lemma_proved": false,
+  "proper_volume_model_assumed_for_all_original_phases": false,
+  "scalar_Cauchy_matching_claimed_sufficient_for_full_marker_safety": false,
+  "purity_of_composite_reflected_to_primitive": false,
+  "weighted_to_unweighted_Haar_transfer_used": false,
+  "general_formal_symbol_Bernstein_work_duplicated": false,
+  "Hopf_nonlinear_composites_claimed_excluded": false,
+  "universal_geometry_or_MZ_proof_machine_verified": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_next_task": false,
+  "new_degree_support_or_parameter_campaign": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients",
+  "ownership": "FULL exceptional MZ closure;Gaussian thread owns general formal-symbol audit/effectivity"
+}

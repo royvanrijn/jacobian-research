@@ -1,0 +1,316 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Qb}{\overline{\mathbb Q}}
+\newcommand{\Lfac}{\mathcal L}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Ann}{Ann}
+\title{Simplex pencil phases and affine radial limits in every dimension}
+\author{Internal proof and exact implementations; no priority claim}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Scope and credit.}
+This note proves a whole class in every dimension: polynomial phases on a
+simplex that depend on one complex affine linear form, and homogeneous
+factorial phases in the radial sum and one other linear form. Repeated
+coefficients and arbitrary polynomial markers are retained. A separate
+residue argument gives nonvanishing of affine exponential simplex periods
+at algebraic coefficients, with an application to arbitrary lower layers
+of flat factorial polynomials.
+
+The divided-difference identities are classical Genocchi--Hermite formulas;
+see \href{https://arxiv.org/abs/math/0502036}{de Boor, Divided Differences
+(2005), especially the Genocchi--Hermite section}. The path/Cauchy argument
+is the polynomial moment mechanism used in
+\href{https://arxiv.org/abs/0710.4085v2}{Pakovich--Muzychuk} and the
+\href{sources/long-eit-pinned.tex}{pinned EIT I tree-density proof}.
+It is written here for finite sums with different polynomial amplitudes.
+The flat radial limit is the all-dimensional theorem in
+\href{sources/long-eit-vi-current.tex}{Long--Le Blanc, EIT VI, Theorem 2.1}.
+No theorem from EIT V or any arithmetic EIT lifting theorem is needed for
+the pencil assertion. This is an internal written result, with no claim
+of novelty, outside refereeing, or formal verification.
+
+\section{A polynomial-chain functional cannot have a nonzero finite tail}
+Let
+\[
+ \Lambda(F)=\sum_{j=1}^s\int_{a_j}^{b_j} r_j(z)F(z)\,dz,
+ \qquad r_j\in\C[z],\quad a_j,b_j\in\C.                    \tag{1}
+\]
+The paths may be chosen arbitrarily because every integrand is entire
+when $F$ is entire. Complex linear coefficients can be absorbed in $r_j$.
+
+\begin{lemma}\label{lem:chain}
+If $p\in\C[z]$ is nonconstant and $0\ne H\in\C[t]$ satisfies
+$\Lambda(H(p)p^k)=0$ for every $k\ge0$, then
+$\Lambda(F(p))=0$ for every entire $F$. In particular, if
+$\Lambda(p^m)=0$ eventually, then $\Lambda(p^m)=0$ for every $m\ge0$.
+\end{lemma}
+\begin{proof}
+Choose an embedded finite tree $T$ containing all finite critical values
+of $p$ and the values of every endpoint in (1). The inverse graph
+$p^{-1}(T)$ is connected: after adding a regular central vertex and arms,
+local monodromies generate the transitive polynomial covering group.
+Consequently each pair of endpoints can be connected on this graph.
+Replace every path in (1) by such a graph path. Polynomial and entire
+integrands keep the same integral, separately for each $r_j$.
+
+Orient and subdivide the target edges. Over an open edge $e$ the combined
+pushforward density has the form
+\[
+ \psi_e(t)=\sum_{j,i} n_{j,e,i}
+              \frac{r_j(z_i(t))}{p'(z_i(t))}.
+\]
+It is analytic there and has only integrable endpoint singularities of
+orders at worst $1/k-1>-1$. For $u\notin T$ form
+\[
+ C_H(u)=\sum_e\int_e\frac{H(t)\psi_e(t)}{u-t}\,dt.
+\]
+Its Laurent expansion at infinity has the assumed zero moments as its
+coefficients, so it is zero near infinity. The complement of a finite
+tree is connected, and analytic continuation gives zero on that complement.
+Across an interior edge its jump is $\pm2\pi i H(t)\psi_e(t)$; all other
+edge contributions extend holomorphically locally. Thus $\psi_e=0$
+outside the finitely many zeros of $H$, and analyticity makes it identically
+zero on every edge. Integrating $F(t)\psi_e(t)$ proves the first assertion.
+For an eventually zero sequence take $H(t)=t^M$, for a sufficiently large
+integer $M\ge1$.
+\end{proof}
+
+If $\Lambda(1)\ne0$, it follows that every nonconstant $p$ has infinitely
+many nonzero moments. A nonzero constant $p$ has the same property.
+The assumption that (1) has no point-evaluation terms matters:
+$F\mapsto F(0)$ has mass one and annihilates every positive power of $z$.
+
+\section{The simplex functional has a polynomial-chain representation}
+Write $\Delta_{N-1}=\{t_i\ge0,\sum_i t_i=1\}$ with coordinate measure
+of volume $1/(N-1)!$. Let $c_1,\ldots,c_N\in\C$ and
+$\ell(t)=\sum_i c_i t_i$.
+
+\begin{lemma}\label{lem:chain-representation}
+If the $c_i$ are not all equal, the functional
+$F\mapsto\int_{\Delta_{N-1}}F(\ell(t))dt$ has the form (1) with fixed
+polynomial amplitudes of degrees at most $N-2$. This includes repeated nodes.
+\end{lemma}
+\begin{proof}
+Put $k=N-1\ge1$ and take the entire $k$-fold primitive $G$ of $F$ whose
+first $k$ jets at zero vanish. Genocchi--Hermite and the contour formula
+for confluent divided differences give
+\[
+ \int_{\Delta_{N-1}}F(\ell(t))dt
+   =[c_1,\ldots,c_N]G
+   =\sum_{\lambda}\Res_{z=\lambda}\frac{G(z)}{Q(z)},
+ \qquad Q(z)=\prod_i(z-c_i).                               \tag{2}
+\]
+These identities also follow termwise on monomials: the simplex integral
+of $\ell^m$ is $m!h_m(c)/(m+N-1)!$, and the divided difference of
+$m!z^{m+N-1}/(m+N-1)!$ is the same quantity. Uniform convergence on compact
+sets then gives the entire-function identity.
+
+If $\lambda$ has multiplicity $m_\lambda$ in $Q$, write
+$1/Q=\sum_{\lambda,j} A_{\lambda,j}(z-\lambda)^{-j}$.
+Its contribution to (2) is
+$\sum_{j=1}^{m_\lambda}A_{\lambda,j}G^{(j-1)}(\lambda)/(j-1)!$.
+There are at least two distinct nodes, so $m_\lambda\le N-1=k$.
+Thus no term differentiates $G$ all the way to $F$. Instead,
+\[
+ G^{(j-1)}(\lambda)=
+ \int_0^\lambda\frac{(\lambda-z)^{N-j-1}}{(N-j-1)!}F(z)dz.
+\]
+Substitution gives the explicit amplitudes
+\[
+ r_\lambda(z)=\sum_{j=1}^{m_\lambda}
+ \frac{A_{\lambda,j}(\lambda-z)^{N-j-1}}
+ {(j-1)!(N-j-1)!}.                                       \tag{3}
+\]
+All exponents are nonnegative. When all nodes coincide, (2) is instead
+$F(c_1)/(N-1)!$, and must be treated as a point evaluation.
+\end{proof}
+
+\begin{theorem}[One affine coordinate on any simplex]\label{thm:simplex}
+Let $\alpha_i$ be positive integers and $T\sim\operatorname{Dir}(\alpha)$.
+For every complex affine linear form $\ell$ on the simplex and every
+$p\in\C[z]$, if
+\[
+ \mathbb E[p(\ell(T))^m]=0\quad\hbox{eventually},
+\]
+then $p(\ell)$ is the zero polynomial function on the simplex.
+If $p(\ell)$ is nonzero, then for every polynomial marker $w(T)$,
+eventual vanishing of $\mathbb E[w(T)p(\ell(T))^m]$ implies its vanishing
+for every $m\ge0$.
+\end{theorem}
+\begin{proof}
+Absorb the affine constant into the coefficients of $\ell$ using
+$\sum T_i=1$. For integer shapes, group $N=\sum\alpha_i$ uniform
+simplex coordinates into blocks of sizes $\alpha_i$. Their sums have
+the stated Dirichlet distribution, and $\ell$ has nodes $c_i$ repeated
+$\alpha_i$ times. The normalized expectation is $(N-1)!$ times (2).
+If $\ell$ is nonconstant its nodes are not all equal, so the preceding
+lemma and Lemma~\ref{lem:chain} apply. The mass is one, which rules out
+an eventually zero pure sequence for a nonzero phase.
+
+For a polynomial marker, expand it into monomials $T^b$. The exact identity
+\[
+ \mathbb E_{\alpha}[T^b F(T)]
+ =\frac{\prod_i(\alpha_i)_{b_i}}{(N)_{|b|}}
+   \mathbb E_{\alpha+b}[F(T)]                             \tag{4}
+\]
+gives a finite sum of chain representations with the same nodes and
+possibly larger integer multiplicities. Lemma~\ref{lem:chain} applies to
+their sum even if its mass is zero. If $\ell$ or $p$ is constant, a
+nonzero constant phase has moments equal to a nonzero constant power
+times the marker's mean, so the same conclusion holds directly. The
+zero phase is excluded in the marked assertion.
+\end{proof}
+
+In particular, every nonzero polynomial in a single complex affine
+coordinate has a nonzero pure moment on a triangle, tetrahedron, or any
+higher-dimensional simplex. Its image need not lie in a complex line:
+three noncollinear complex node values already give image interior.
+Polynomial marker periods cannot have a finite nonzero prefix followed
+by an infinite zero tail for such a nonzero phase.
+
+The same statement holds for uniform integration on a compact polytope,
+and for polynomial densities of nonzero total mass: triangulate, restrict
+the density to barycentric monomials, and use (4). Each simplex contributes
+a polynomial-chain functional; their sum has the original nonzero mass.
+For a full-dimensional simplex an affine form is constant on it only if
+it is constant on the affine hull, so the point-evaluation exception does
+not arise in only some of the triangulation pieces.
+
+\section{Factorial and Gaussian pencils, including coefficient rings}
+Let $Y_i$ be independent $\operatorname{Gamma}(\alpha_i,1)$ variables with
+positive integer shapes. Put $S=\sum Y_i$ and $L=\sum c_iY_i$.
+For a homogeneous binary form $H(U,V)$ of degree $D$, set $F(Y)=H(S,L)$.
+Radial separation gives
+\[
+ \mathbb E[F(Y)^m]=(N)_{Dm}\,
+       \mathbb E_{\operatorname{Dir}(\alpha)}[H(1,\ell(T))^m].\tag{5}
+\]
+Every radial factor is nonzero. Homogeneity recovers $F$ from its restriction
+to $S=1$, so Theorem~\ref{thm:simplex} proves:
+\begin{corollary}\label{cor:pencil}
+Every nonzero $H(S,L)$ has infinitely many nonzero Gamma moments, in every
+dimension. With all $\alpha_i=1$ this proves FC on this complete homogeneous
+factorial pencil class. Substitution
+$Y_i=\frac12\sum_{j=1}^{2\alpha_i}X_{ij}^2$ gives the same conclusion for
+the corresponding homogeneous Gaussian phases, retaining the unit marker.
+\end{corollary}
+This is a homogeneous class using the actual radial sum $S$. It does not
+assert FC for an arbitrary inhomogeneous polynomial in $S,L$, or for two
+arbitrary linear forms in place of $S,L$. Odd-sized Gaussian blocks and
+general nonintegral Dirichlet shapes are not covered by the chain proof.
+
+The field result extends to every characteristic-zero field by embedding
+the finitely generated coefficient field into $\C$. Let now $B$ be any
+commutative $\Q$-algebra, and allow both the coefficients of $H$ and the
+coefficients $c_i$ of $L$ to belong to $B$. Let $J$ be the ideal of the
+\emph{actual composed polynomial} $F(Y)=H(S,L)$'s coefficients.
+Reduction at every prime and Corollary~\ref{cor:pencil} show that
+\[
+ \mathbb E_B[F^m]=0\text{ eventually}
+ \quad\Longleftrightarrow\quad J\text{ consists of nilpotents}
+ \quad\Longleftrightarrow\quad F\text{ is nilpotent}.        \tag{6}
+\]
+There are only finitely many coefficients, so their nil ideal is nilpotent
+without any Noetherian assumption. Nilpotence then gives vanishing against
+all original Gamma or Gaussian markers.
+
+The exact ideal of scalars $u$ making every actual marked period polynomial
+is
+\[
+ N_F=\bigcup_{k\ge1}\Ann_B(J^k)=\Gamma_J(B).                \tag{7}
+\]
+Necessity uses the scaled unit period and the injection
+$B/\Ann_B(u)\hookrightarrow B$ given by multiplication by $u$; (6) in
+that quotient makes $J^ku=0$ for some $k$. Sufficiency is $uF^m=0$ for
+$m\ge k$. This holds at all node collisions and retains ordinary torsion.
+Using the coefficients of the formal binary form $H$ instead of $F$ would
+be wrong: if $B=\Q[\epsilon]/(\epsilon^2)$, $L=(1+\epsilon)S$ and
+$H(U,V)=V-U$, then $F=\epsilon S$ is nilpotent although $H$ has unit
+coefficients.
+
+\section{Affine exponential periods at algebraic coefficients}
+The next assertion concerns a single exponential value, a different
+question from eventual power vanishing.
+\begin{theorem}\label{thm:exp}
+For positive integer Dirichlet shapes and algebraic $c_i$,
+$\mathbb E[\exp(\sum c_iT_i)]\ne0$, including all collisions.
+\end{theorem}
+\begin{proof}
+Repeat the nodes according to the shapes. The unnormalized uniform
+simplex integral equals $\sum_\lambda\Res_{z=\lambda}e^z/Q(z)$;
+this follows from (2), since $e^z$ is its own iterated derivative.
+Write each residue as $a_\lambda e^\lambda$, with $a_\lambda\in\Qb$.
+Lindemann--Weierstrass would force all $a_\lambda$ to vanish if their sum
+were zero. We show this is impossible.
+
+If every residue of $e^z/Q$ vanished, its local primitives would be
+meromorphic. Dividing by $e^z$, choose their principal parts $R_\lambda$,
+of pole order at most $m_\lambda-1$. Then $R=\sum R_\lambda$ is rational
+and $R'+R-1/Q$ has no finite pole. It tends to zero at infinity, so is
+zero. But a nonzero rational $R$ with common denominator of degree at most
+$N-s$, where $s\ge1$ is the number of distinct nodes, cannot decay faster
+than $z^{-(N-s)}$. The equation $R'+R=1/Q$ forces decay exactly $z^{-N}$,
+a contradiction. $R=0$ is impossible as well.
+
+Thus at least one coefficient $a_\lambda$ is nonzero, proving the theorem.
+The argument requires algebraic nodes only for Lindemann--Weierstrass.
+\end{proof}
+Individual coefficients can vanish. For nodes $(0,1,1)$ the integral is
+$\int_0^1 z e^z dz=1$, despite a nonconstant affine phase. Thus this theorem
+asserts nonvanishing, not transcendence of every nonconstant simplex period.
+For transcendental nodes it can fail: nodes $(0,2\pi i)$ give zero.
+
+\section{Flat factorial polynomials with arbitrary lower terms}
+The radial expansion of EIT VI extends verbatim to fixed integer Gamma
+shapes: for $D\ge2$, $\deg R\le D-2$, and
+\[
+ f=S^D+D S^{D-2}L+R,
+\]
+one has
+\[
+ \lim_{m\to\infty}\frac{\mathbb E[f^m]}{(N)_{Dm}}
+       =\mathbb E_{\operatorname{Dir}(\alpha)}[e^{\ell(T)}]. \tag{8}
+\]
+Indeed the coefficient for a multinomial choice with $K=\sum k_j$ and
+$J=\sum jk_j$ is
+$\frac{m!}{(m-K)!}\frac{\Gamma(Dm-J+N)}{\Gamma(Dm+N)}$.
+It is between zero and one: the first $K$ denominator factors dominate
+the numerator and all the others are at least one. Its fixed-index limit
+is $D^{-J}m^{K-J}$, and the summable dominating series is
+$\prod_j\|A_j\|^{k_j}/k_j!$. Thus only the next-to-top layer survives.
+
+For algebraic $c_i$, Theorem~\ref{thm:exp} makes (8) nonzero, so every
+sufficiently large moment is nonzero. The coefficients of $R$ may be
+arbitrary complex numbers. With arbitrary complex $c_i$, an all-moment
+counterexample in this finite rationally defined family would specialize
+to an algebraic one by Noetherianity and Nullstellensatz. The top layer
+is fixed and nonzero. Hence FC also holds throughout the complex family.
+Taking the $k$th power preserves the displayed form, with degree $Dk$
+and the same normalized affine next layer, so eventual pure zero is
+also impossible.
+
+For clarity, arbitrary complex coefficients in $L$ give the FC conclusion
+and infinitely many nonzero moments; they need not give a nonzero limit
+in (8). For two variables, $L=2\pi iY_1$ gives a zero exponential simplex
+integral. An overall nonzero scalar multiplying $f$ can be removed before
+applying the statement. The degree-one case $f=S+c$ has the direct nonzero
+limit $e^c$ after the same radial normalization.
+
+\section{Remaining boundary}
+The results include every polynomial of one complex affine coordinate on
+a triangle or tetrahedron, with all positive integer Dirichlet weights.
+They do not prove the assertion for a general polynomial of two independent
+angular coordinates on a triangle, so homogeneous FC(3) remains open here.
+Unrestricted SFC and general inhomogeneous FC in three or more variables
+also remain unresolved. The source survey's EIT VI/Paper V family audit
+and the full bibliography review remain separate work.
+\end{document}

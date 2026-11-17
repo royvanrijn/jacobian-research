@@ -1,0 +1,4780 @@
+{
+  "formal_gaussian": {
+    "H": "h0+h1*z+h2*z^2+h3*z^3",
+    "formal_variance": "-t^2 D",
+    "identity_through_D_order": 4,
+    "input_monomials": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coefficient_checks": {
+      "transverse_twisted_derivative": 35,
+      "u_connection": 35,
+      "normalized_D_connection": 49
+    },
+    "total_coefficient_checks": 119
+  },
+  "comparison_determinants": {
+    "ordinary": [
+      {
+        "kind": "nodal",
+        "finite_basis_powers": [
+          -3,
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ],
+        "comparison_determinant_at_D0": "-r**7",
+        "axis_row_scales_are_generic_D_units": true,
+        "D_loss": 0
+      },
+      {
+        "kind": "transverse",
+        "finite_basis_powers": [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ],
+        "comparison_determinant_at_D0": "-r**4",
+        "axis_row_scales_are_generic_D_units": true,
+        "D_loss": 0
+      },
+      {
+        "kind": "triangle",
+        "finite_basis_powers": [
+          -2,
+          -1,
+          0,
+          1
+        ],
+        "comparison_determinant_at_D0": "-r**4",
+        "axis_row_scales_are_generic_D_units": true,
+        "D_loss": 0
+      }
+    ],
+    "cusp": {
+      "finite_rank": 5,
+      "D_loss": 2,
+      "determinant_leading_term": "D^2/q^2"
+    },
+    "tangent": {
+      "finite_rank": 4,
+      "D_loss": 6,
+      "determinant_leading_term": "2*D^6/q^3",
+      "full_quadratic_Hz_at_z0": "b*u/q - 2*c*p*u/q**2 - 2*c*r/q**2 - 2*c*u**2/q**2 + f/q - 2*p*u**2/q**2 - 2*r*u/q**2 - 2*u**3/q**2",
+      "leading_u3_coefficient": "-2/q^2"
+    }
+  },
+  "retained_models": [
+    {
+      "origin": "ordinary_rank_one_lattice_certificate.json",
+      "origin_sha256": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+      "kind": "nodal",
+      "label": "linear",
+      "D": "1 - 2*t",
+      "rank": 7,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 40,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 38,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 36,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 32,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 15
+        },
+        {
+          "order": 6,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 18
+        },
+        {
+          "order": 7,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 21
+        }
+      ]
+    },
+    {
+      "origin": "ordinary_rank_one_lattice_certificate.json",
+      "origin_sha256": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+      "kind": "nodal",
+      "label": "zero_shared",
+      "D": "t",
+      "rank": 7,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 10
+        },
+        {
+          "order": 1,
+          "minor_D_power": 40,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 10
+        },
+        {
+          "order": 2,
+          "minor_D_power": 38,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 13
+        },
+        {
+          "order": 3,
+          "minor_D_power": 36,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 16
+        },
+        {
+          "order": 4,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 19
+        },
+        {
+          "order": 5,
+          "minor_D_power": 32,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 22
+        },
+        {
+          "order": 6,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 25
+        },
+        {
+          "order": 7,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 42,
+          "reduced_scalar_degree": 87,
+          "reduced_scalar_valuation": 29
+        }
+      ]
+    },
+    {
+      "origin": "ordinary_rank_one_lattice_certificate.json",
+      "origin_sha256": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+      "kind": "transverse",
+      "label": "linear",
+      "D": "1 - 2*t",
+      "rank": 6,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 28,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 26,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 24,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 22,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 20,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 15
+        },
+        {
+          "order": 6,
+          "minor_D_power": 20,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 18
+        }
+      ]
+    },
+    {
+      "origin": "ordinary_rank_one_lattice_certificate.json",
+      "origin_sha256": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+      "kind": "transverse",
+      "label": "zero_shared",
+      "D": "t",
+      "rank": 6,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 36
+        },
+        {
+          "order": 1,
+          "minor_D_power": 28,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 36
+        },
+        {
+          "order": 2,
+          "minor_D_power": 26,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 39
+        },
+        {
+          "order": 3,
+          "minor_D_power": 24,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 42
+        },
+        {
+          "order": 4,
+          "minor_D_power": 22,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 45
+        },
+        {
+          "order": 5,
+          "minor_D_power": 20,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 49
+        },
+        {
+          "order": 6,
+          "minor_D_power": 20,
+          "common_scalar_D_power": 30,
+          "reduced_scalar_degree": 97,
+          "reduced_scalar_valuation": 53
+        }
+      ]
+    },
+    {
+      "origin": "ordinary_rank_one_lattice_certificate.json",
+      "origin_sha256": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+      "kind": "triangle",
+      "label": "linear",
+      "D": "1 - 2*t",
+      "rank": 5,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 20,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 18,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 16,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 14,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 12,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 12,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 15
+        }
+      ]
+    },
+    {
+      "origin": "ordinary_rank_one_lattice_certificate.json",
+      "origin_sha256": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+      "kind": "triangle",
+      "label": "zero_shared",
+      "D": "t",
+      "rank": 5,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 20,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 53
+        },
+        {
+          "order": 1,
+          "minor_D_power": 18,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 53
+        },
+        {
+          "order": 2,
+          "minor_D_power": 16,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 56
+        },
+        {
+          "order": 3,
+          "minor_D_power": 14,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 60
+        },
+        {
+          "order": 4,
+          "minor_D_power": 12,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 64
+        },
+        {
+          "order": 5,
+          "minor_D_power": 12,
+          "common_scalar_D_power": 20,
+          "reduced_scalar_degree": 98,
+          "reduced_scalar_valuation": 68
+        }
+      ]
+    },
+    {
+      "origin": "cusp_rank_one_lattice_certificate.json",
+      "origin_sha256": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+      "kind": "cusp",
+      "label": "linear_regular",
+      "D": "1 - 2*t",
+      "rank": 6,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 53,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 50,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 46,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 38,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 15
+        },
+        {
+          "order": 6,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 18
+        }
+      ]
+    },
+    {
+      "origin": "cusp_rank_one_lattice_certificate.json",
+      "origin_sha256": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+      "kind": "cusp",
+      "label": "linear_zero",
+      "D": "t",
+      "rank": 6,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 53,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 1,
+          "minor_D_power": 50,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 2,
+          "minor_D_power": 46,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 3,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 15
+        },
+        {
+          "order": 4,
+          "minor_D_power": 38,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 18
+        },
+        {
+          "order": 5,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 21
+        },
+        {
+          "order": 6,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 27
+        }
+      ]
+    },
+    {
+      "origin": "cusp_rank_one_lattice_certificate.json",
+      "origin_sha256": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+      "kind": "cusp",
+      "label": "q_shared_root",
+      "D": "1 - 2*t",
+      "rank": 6,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 53,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 50,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 46,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 38,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 15
+        },
+        {
+          "order": 6,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 18
+        }
+      ]
+    },
+    {
+      "origin": "cusp_rank_one_lattice_certificate.json",
+      "origin_sha256": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+      "kind": "cusp",
+      "label": "q_identically_zero",
+      "D": "1 - 2*t",
+      "rank": 6,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 53,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 50,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 46,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 38,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 15
+        },
+        {
+          "order": 6,
+          "minor_D_power": 34,
+          "common_scalar_D_power": 53,
+          "reduced_scalar_degree": 77,
+          "reduced_scalar_valuation": 18
+        }
+      ]
+    },
+    {
+      "origin": "tangent_rank_one_lattice_certificate.json",
+      "origin_sha256": "76cc570f9c931dda7fea4c76cda4cac779d3a0f3040c1f6fc7b51e64cd710cd6",
+      "kind": "tangent",
+      "label": "linear_regular",
+      "D": "1 - 2*t",
+      "rank": 5,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 54,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 48,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 36,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 15
+        }
+      ]
+    },
+    {
+      "origin": "tangent_rank_one_lattice_certificate.json",
+      "origin_sha256": "76cc570f9c931dda7fea4c76cda4cac779d3a0f3040c1f6fc7b51e64cd710cd6",
+      "kind": "tangent",
+      "label": "linear_zero",
+      "D": "t",
+      "rank": 5,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 54,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 8
+        },
+        {
+          "order": 1,
+          "minor_D_power": 48,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 8
+        },
+        {
+          "order": 2,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 11
+        },
+        {
+          "order": 3,
+          "minor_D_power": 36,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 14
+        },
+        {
+          "order": 4,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 17
+        },
+        {
+          "order": 5,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 25
+        }
+      ]
+    },
+    {
+      "origin": "tangent_rank_one_lattice_certificate.json",
+      "origin_sha256": "76cc570f9c931dda7fea4c76cda4cac779d3a0f3040c1f6fc7b51e64cd710cd6",
+      "kind": "tangent",
+      "label": "linear_q_zero",
+      "D": "1 - 2*t",
+      "rank": 5,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 54,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 48,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 36,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 15
+        }
+      ]
+    },
+    {
+      "origin": "tangent_rank_one_lattice_certificate.json",
+      "origin_sha256": "76cc570f9c931dda7fea4c76cda4cac779d3a0f3040c1f6fc7b51e64cd710cd6",
+      "kind": "tangent",
+      "label": "linear_zero_q_zero",
+      "D": "t",
+      "rank": 5,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 54,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 20
+        },
+        {
+          "order": 1,
+          "minor_D_power": 48,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 20
+        },
+        {
+          "order": 2,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 23
+        },
+        {
+          "order": 3,
+          "minor_D_power": 36,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 27
+        },
+        {
+          "order": 4,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 31
+        },
+        {
+          "order": 5,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 35
+        }
+      ]
+    },
+    {
+      "origin": "tangent_rank_one_lattice_certificate.json",
+      "origin_sha256": "76cc570f9c931dda7fea4c76cda4cac779d3a0f3040c1f6fc7b51e64cd710cd6",
+      "kind": "tangent",
+      "label": "linear_shared_q",
+      "D": "1 - 2*t",
+      "rank": 5,
+      "checks": [
+        {
+          "order": 0,
+          "minor_D_power": 54,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 1,
+          "minor_D_power": 48,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 3
+        },
+        {
+          "order": 2,
+          "minor_D_power": 42,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 6
+        },
+        {
+          "order": 3,
+          "minor_D_power": 36,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 9
+        },
+        {
+          "order": 4,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 12
+        },
+        {
+          "order": 5,
+          "minor_D_power": 30,
+          "common_scalar_D_power": 54,
+          "reduced_scalar_degree": 66,
+          "reduced_scalar_valuation": 15
+        }
+      ]
+    }
+  ],
+  "degree_cases": [
+    {
+      "kind": "nodal",
+      "linear_D_gate": 87,
+      "all_rank_row_cases": [
+        {
+          "rank": 1,
+          "rows": [
+            0
+          ],
+          "slow_seed_D_orders": [
+            2
+          ],
+          "minor_D_bounds": [
+            0,
+            0
+          ],
+          "common_scalar_D_power": 0,
+          "raw_degree_bound": 5,
+          "reduced_degree_bound": 5
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            1
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 14,
+          "reduced_degree_bound": 12
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            2
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 14,
+          "reduced_degree_bound": 12
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 13,
+          "reduced_degree_bound": 11
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 13,
+          "reduced_degree_bound": 11
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 13,
+          "reduced_degree_bound": 11
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 12,
+          "reduced_degree_bound": 10
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 28,
+          "reduced_degree_bound": 22
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 27,
+          "reduced_degree_bound": 21
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 27,
+          "reduced_degree_bound": 21
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 27,
+          "reduced_degree_bound": 21
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 26,
+          "reduced_degree_bound": 20
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 27,
+          "reduced_degree_bound": 21
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 27,
+          "reduced_degree_bound": 21
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 27,
+          "reduced_degree_bound": 21
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 26,
+          "reduced_degree_bound": 20
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 26,
+          "reduced_degree_bound": 20
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 26,
+          "reduced_degree_bound": 20
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 25,
+          "reduced_degree_bound": 19
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 26,
+          "reduced_degree_bound": 20
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            4,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 25,
+          "reduced_degree_bound": 19
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 25,
+          "reduced_degree_bound": 19
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 46,
+          "reduced_degree_bound": 34
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 46,
+          "reduced_degree_bound": 34
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 46,
+          "reduced_degree_bound": 34
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 33
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 33
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 33
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 44,
+          "reduced_degree_bound": 32
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 33
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            4,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 44,
+          "reduced_degree_bound": 32
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 44,
+          "reduced_degree_bound": 32
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 33
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 33
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 44,
+          "reduced_degree_bound": 32
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 33
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 44,
+          "reduced_degree_bound": 32
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 44,
+          "reduced_degree_bound": 32
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 44,
+          "reduced_degree_bound": 32
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            3,
+            4,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 43,
+          "reduced_degree_bound": 31
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 43,
+          "reduced_degree_bound": 31
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            4,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 43,
+          "reduced_degree_bound": 31
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 69,
+          "reduced_degree_bound": 49
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 69,
+          "reduced_degree_bound": 49
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 68,
+          "reduced_degree_bound": 48
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 69,
+          "reduced_degree_bound": 49
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            4,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 68,
+          "reduced_degree_bound": 48
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 68,
+          "reduced_degree_bound": 48
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 68,
+          "reduced_degree_bound": 48
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 67,
+          "reduced_degree_bound": 47
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 67,
+          "reduced_degree_bound": 47
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            4,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 67,
+          "reduced_degree_bound": 47
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 68,
+          "reduced_degree_bound": 48
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            2,
+            3,
+            4,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 67,
+          "reduced_degree_bound": 47
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            2,
+            3,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 67,
+          "reduced_degree_bound": 47
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            2,
+            4,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 67,
+          "reduced_degree_bound": 47
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 66,
+          "reduced_degree_bound": 46
+        },
+        {
+          "rank": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "minor_D_bounds": [
+            30,
+            28,
+            26,
+            24,
+            22,
+            20,
+            20
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 97,
+          "reduced_degree_bound": 67
+        },
+        {
+          "rank": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "minor_D_bounds": [
+            30,
+            28,
+            26,
+            24,
+            22,
+            20,
+            20
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 96,
+          "reduced_degree_bound": 66
+        },
+        {
+          "rank": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "minor_D_bounds": [
+            30,
+            28,
+            26,
+            24,
+            22,
+            20,
+            20
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 96,
+          "reduced_degree_bound": 66
+        },
+        {
+          "rank": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "minor_D_bounds": [
+            30,
+            28,
+            26,
+            24,
+            22,
+            20,
+            20
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 96,
+          "reduced_degree_bound": 66
+        },
+        {
+          "rank": 6,
+          "rows": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "minor_D_bounds": [
+            30,
+            28,
+            26,
+            24,
+            22,
+            20,
+            20
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 95,
+          "reduced_degree_bound": 65
+        },
+        {
+          "rank": 6,
+          "rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "minor_D_bounds": [
+            30,
+            28,
+            26,
+            24,
+            22,
+            20,
+            20
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 95,
+          "reduced_degree_bound": 65
+        },
+        {
+          "rank": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14
+          ],
+          "minor_D_bounds": [
+            42,
+            40,
+            38,
+            36,
+            34,
+            32,
+            30,
+            30
+          ],
+          "common_scalar_D_power": 42,
+          "raw_degree_bound": 129,
+          "reduced_degree_bound": 87
+        }
+      ]
+    },
+    {
+      "kind": "transverse",
+      "linear_D_gate": 97,
+      "all_rank_row_cases": [
+        {
+          "rank": 1,
+          "rows": [
+            0
+          ],
+          "slow_seed_D_orders": [
+            2
+          ],
+          "minor_D_bounds": [
+            0,
+            0
+          ],
+          "common_scalar_D_power": 0,
+          "raw_degree_bound": 5,
+          "reduced_degree_bound": 5
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            1
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 16,
+          "reduced_degree_bound": 14
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            2
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 16,
+          "reduced_degree_bound": 14
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 15,
+          "reduced_degree_bound": 13
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 15,
+          "reduced_degree_bound": 13
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 15,
+          "reduced_degree_bound": 13
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 34,
+          "reduced_degree_bound": 28
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 33,
+          "reduced_degree_bound": 27
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 33,
+          "reduced_degree_bound": 27
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 33,
+          "reduced_degree_bound": 27
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 33,
+          "reduced_degree_bound": 27
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 33,
+          "reduced_degree_bound": 27
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 33,
+          "reduced_degree_bound": 27
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 32,
+          "reduced_degree_bound": 26
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 32,
+          "reduced_degree_bound": 26
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 32,
+          "reduced_degree_bound": 26
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 58,
+          "reduced_degree_bound": 46
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 58,
+          "reduced_degree_bound": 46
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 58,
+          "reduced_degree_bound": 46
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 57,
+          "reduced_degree_bound": 45
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 57,
+          "reduced_degree_bound": 45
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 57,
+          "reduced_degree_bound": 45
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 57,
+          "reduced_degree_bound": 45
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 57,
+          "reduced_degree_bound": 45
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 57,
+          "reduced_degree_bound": 45
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 56,
+          "reduced_degree_bound": 44
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 89,
+          "reduced_degree_bound": 69
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 89,
+          "reduced_degree_bound": 69
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 89,
+          "reduced_degree_bound": 69
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 88,
+          "reduced_degree_bound": 68
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 88,
+          "reduced_degree_bound": 68
+        },
+        {
+          "rank": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "minor_D_bounds": [
+            30,
+            28,
+            26,
+            24,
+            22,
+            20,
+            20
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 127,
+          "reduced_degree_bound": 97
+        }
+      ]
+    },
+    {
+      "kind": "triangle",
+      "linear_D_gate": 98,
+      "all_rank_row_cases": [
+        {
+          "rank": 1,
+          "rows": [
+            0
+          ],
+          "slow_seed_D_orders": [
+            2
+          ],
+          "minor_D_bounds": [
+            0,
+            0
+          ],
+          "common_scalar_D_power": 0,
+          "raw_degree_bound": 9,
+          "reduced_degree_bound": 9
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            1
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 24,
+          "reduced_degree_bound": 22
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            2
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 24,
+          "reduced_degree_bound": 22
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 21,
+          "reduced_degree_bound": 19
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4
+          ],
+          "minor_D_bounds": [
+            2,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 2,
+          "raw_degree_bound": 22,
+          "reduced_degree_bound": 20
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 48,
+          "reduced_degree_bound": 42
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 39
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 46,
+          "reduced_degree_bound": 40
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 39
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 46,
+          "reduced_degree_bound": 40
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6
+          ],
+          "minor_D_bounds": [
+            6,
+            4,
+            2,
+            2
+          ],
+          "common_scalar_D_power": 6,
+          "raw_degree_bound": 43,
+          "reduced_degree_bound": 37
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 78,
+          "reduced_degree_bound": 66
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 79,
+          "reduced_degree_bound": 67
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 76,
+          "reduced_degree_bound": 64
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "minor_D_bounds": [
+            12,
+            10,
+            8,
+            6,
+            6
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 76,
+          "reduced_degree_bound": 64
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "minor_D_bounds": [
+            20,
+            18,
+            16,
+            14,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 20,
+          "raw_degree_bound": 118,
+          "reduced_degree_bound": 98
+        }
+      ]
+    },
+    {
+      "kind": "cusp",
+      "linear_D_gate": 77,
+      "all_rank_row_cases": [
+        {
+          "rank": 1,
+          "rows": [
+            0
+          ],
+          "slow_seed_D_orders": [
+            3
+          ],
+          "minor_D_bounds": [
+            0,
+            0
+          ],
+          "common_scalar_D_power": 0,
+          "raw_degree_bound": 6,
+          "reduced_degree_bound": 6
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            1
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 18,
+          "reduced_degree_bound": 17
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            2
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 17,
+          "reduced_degree_bound": 16
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            3
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 18,
+          "reduced_degree_bound": 17
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            4
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 16,
+          "reduced_degree_bound": 15
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 15,
+          "reduced_degree_bound": 14
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 36,
+          "reduced_degree_bound": 28
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            3
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 37,
+          "reduced_degree_bound": 29
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 35,
+          "reduced_degree_bound": 27
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 34,
+          "reduced_degree_bound": 26
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 36,
+          "reduced_degree_bound": 28
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 34,
+          "reduced_degree_bound": 26
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 33,
+          "reduced_degree_bound": 25
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 35,
+          "reduced_degree_bound": 27
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 34,
+          "reduced_degree_bound": 26
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11
+          ],
+          "minor_D_bounds": [
+            8,
+            5,
+            1,
+            1
+          ],
+          "common_scalar_D_power": 8,
+          "raw_degree_bound": 32,
+          "reduced_degree_bound": 24
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 62,
+          "reduced_degree_bound": 43
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 60,
+          "reduced_degree_bound": 41
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 59,
+          "reduced_degree_bound": 40
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 61,
+          "reduced_degree_bound": 42
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 60,
+          "reduced_degree_bound": 41
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 58,
+          "reduced_degree_bound": 39
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 60,
+          "reduced_degree_bound": 41
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 59,
+          "reduced_degree_bound": 40
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 57,
+          "reduced_degree_bound": 38
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15
+          ],
+          "minor_D_bounds": [
+            19,
+            16,
+            12,
+            8,
+            8
+          ],
+          "common_scalar_D_power": 19,
+          "raw_degree_bound": 58,
+          "reduced_degree_bound": 39
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15,
+            19
+          ],
+          "minor_D_bounds": [
+            34,
+            31,
+            27,
+            23,
+            19,
+            19
+          ],
+          "common_scalar_D_power": 34,
+          "raw_degree_bound": 93,
+          "reduced_degree_bound": 59
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15,
+            19
+          ],
+          "minor_D_bounds": [
+            34,
+            31,
+            27,
+            23,
+            19,
+            19
+          ],
+          "common_scalar_D_power": 34,
+          "raw_degree_bound": 92,
+          "reduced_degree_bound": 58
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15,
+            19
+          ],
+          "minor_D_bounds": [
+            34,
+            31,
+            27,
+            23,
+            19,
+            19
+          ],
+          "common_scalar_D_power": 34,
+          "raw_degree_bound": 90,
+          "reduced_degree_bound": 56
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15,
+            19
+          ],
+          "minor_D_bounds": [
+            34,
+            31,
+            27,
+            23,
+            19,
+            19
+          ],
+          "common_scalar_D_power": 34,
+          "raw_degree_bound": 91,
+          "reduced_degree_bound": 57
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15,
+            19
+          ],
+          "minor_D_bounds": [
+            34,
+            31,
+            27,
+            23,
+            19,
+            19
+          ],
+          "common_scalar_D_power": 34,
+          "raw_degree_bound": 90,
+          "reduced_degree_bound": 56
+        },
+        {
+          "rank": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slow_seed_D_orders": [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23
+          ],
+          "minor_D_bounds": [
+            53,
+            50,
+            46,
+            42,
+            38,
+            34,
+            34
+          ],
+          "common_scalar_D_power": 53,
+          "raw_degree_bound": 130,
+          "reduced_degree_bound": 77
+        }
+      ]
+    },
+    {
+      "kind": "tangent",
+      "linear_D_gate": 66,
+      "all_rank_row_cases": [
+        {
+          "rank": 1,
+          "rows": [
+            0
+          ],
+          "slow_seed_D_orders": [
+            6
+          ],
+          "minor_D_bounds": [
+            0,
+            0
+          ],
+          "common_scalar_D_power": 0,
+          "raw_degree_bound": 9,
+          "reduced_degree_bound": 9
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            1
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 25,
+          "reduced_degree_bound": 24
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            2
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 23,
+          "reduced_degree_bound": 22
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            3
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 24,
+          "reduced_degree_bound": 23
+        },
+        {
+          "rank": 2,
+          "rows": [
+            0,
+            4
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12
+          ],
+          "minor_D_bounds": [
+            1,
+            0,
+            0
+          ],
+          "common_scalar_D_power": 1,
+          "raw_degree_bound": 21,
+          "reduced_degree_bound": 20
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18
+          ],
+          "minor_D_bounds": [
+            12,
+            6,
+            1,
+            0
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 48,
+          "reduced_degree_bound": 36
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            3
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18
+          ],
+          "minor_D_bounds": [
+            12,
+            6,
+            1,
+            0
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 49,
+          "reduced_degree_bound": 37
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18
+          ],
+          "minor_D_bounds": [
+            12,
+            6,
+            1,
+            0
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 46,
+          "reduced_degree_bound": 34
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18
+          ],
+          "minor_D_bounds": [
+            12,
+            6,
+            1,
+            0
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 47,
+          "reduced_degree_bound": 35
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18
+          ],
+          "minor_D_bounds": [
+            12,
+            6,
+            1,
+            0
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 44,
+          "reduced_degree_bound": 32
+        },
+        {
+          "rank": 3,
+          "rows": [
+            0,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18
+          ],
+          "minor_D_bounds": [
+            12,
+            6,
+            1,
+            0
+          ],
+          "common_scalar_D_power": 12,
+          "raw_degree_bound": 45,
+          "reduced_degree_bound": 33
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "minor_D_bounds": [
+            30,
+            24,
+            18,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 81,
+          "reduced_degree_bound": 51
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "minor_D_bounds": [
+            30,
+            24,
+            18,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 78,
+          "reduced_degree_bound": 48
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "minor_D_bounds": [
+            30,
+            24,
+            18,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 79,
+          "reduced_degree_bound": 49
+        },
+        {
+          "rank": 4,
+          "rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "minor_D_bounds": [
+            30,
+            24,
+            18,
+            12,
+            12
+          ],
+          "common_scalar_D_power": 30,
+          "raw_degree_bound": 77,
+          "reduced_degree_bound": 47
+        },
+        {
+          "rank": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "slow_seed_D_orders": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "minor_D_bounds": [
+            54,
+            48,
+            42,
+            36,
+            30,
+            30
+          ],
+          "common_scalar_D_power": 54,
+          "raw_degree_bound": 120,
+          "reduced_degree_bound": 66
+        }
+      ]
+    }
+  ],
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 101,
+    "cusp": 109,
+    "transverse": 106,
+    "tangent": 105,
+    "triangle": 103,
+    "concurrent": 104,
+    "repeated": 99
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "status": "DECIDED",
+  "input": {
+    "dimension": 2,
+    "parameter_count": 1,
+    "phase_terms": [],
+    "parameter_ideal": [],
+    "precision_matrix": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "primary_components": [
+    {
+      "primary_ideal": [],
+      "radical_ideal": [],
+      "prime_radical_checked": true,
+      "independent_indices": [
+        0
+      ],
+      "dimension": 1
+    }
+  ],
+  "component_results": [
+    {
+      "component_index": 0,
+      "finite_algebra": {
+        "component": {
+          "primary_ideal": [],
+          "radical_ideal": [],
+          "prime_radical_checked": true,
+          "independent_indices": [
+            0
+          ],
+          "dimension": 1
+        },
+        "scalar_parameters": [
+          "c0",
+          "a0",
+          "a1",
+          "a2"
+        ],
+        "dependent_variables": [],
+        "standard_monomials": [
+          []
+        ],
+        "rank": 1,
+        "unit": [
+          {
+            "numerator": [
+              [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ],
+            "denominator": [
+              [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ]
+          }
+        ],
+        "multiplication_table": [
+          [
+            [
+              {
+                "numerator": [
+                  [
+                    [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                "denominator": [
+                  [
+                    [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ],
+        "injectivity_contract": "Q is primary and nonzero polynomials in its maximal independent variables avoid radical(Q); localization is injective. Primary status is trusted CAS."
+      },
+      "method": "finite nilpotence table",
+      "nilpotence_index": 1,
+      "original_orders": [
+        null
+      ],
+      "region": {
+        "status": "DECIDED",
+        "asymptotic_coefficient": "0",
+        "vertices": [
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "supporting_original_points": [],
+        "recession_generators": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "region": {
+    "asymptotic_coefficient": "0",
+    "vertices": [
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "supporting_original_points": [],
+    "recession_generators": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "pure_linear_minimum": "0",
+    "equality": "Intersection of ALL faithful primary component regions; support orders recomputed in original ring."
+  },
+  "general_presented_ring_backend_implemented": true,
+  "primary_decomposition_trusted_CAS": true,
+  "actual_image_kernel_computed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

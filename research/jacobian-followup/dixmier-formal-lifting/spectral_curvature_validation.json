@@ -1,0 +1,48 @@
+{
+  "claim": "QSC1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "7271d826b986b1f7",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "seven_affected_methods_and_existing_work_reviews": "PASS",
+  "local_links_checked": 228,
+  "unique_equation_tags": 16,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "777daade800137bac6031cce77ad84635cccd7e6eabf02a3f8bdc7da39fd0b94",
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    }
+  ],
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/2604.16636",
+      "used": "Canonical first-order cohomology classes as related context; no identification with the spectral classes is asserted."
+    },
+    {
+      "source": "https://arxiv.org/abs/1904.03128",
+      "used": "Graph-bimodule formulation as related context; direct spectral and curvature calculations are supplied."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/09CN",
+      "used": "Principal-parts sequence and connection viewpoint as context; the relative noncommutative Koszul resolution is proved directly."
+    }
+  ],
+  "previous_goal_turn": {
+    "classification": "progress",
+    "evidence": "QAD1 5c2994ec93c6f8fc established all-order scalar leading-divisor and period gates, an exact finite defect-span criterion, controls, registration and validation. This turn moved to a full-pair invariant covering nonpositional deformations and projective carrier endomorphisms."
+  },
+  "proof_boundary": "Long classical joint-centralizer exhaustion, formal all-deformation induction, faithful carrier transport, exact universal spectral/curvature criteria, all-size scalar-position matrix scalarization and identity stabilization use written proofs. Full-carrier generic projectivity uses the stated QMC1 dependency. Declared chart, identity-class nonpositional pair, Koszul, spectral torsion, curvature, matrix gauge, projective corner and boundary controls are finite evidence, not universal theorem replay. The algebraic curvature may vanish after completion while retaining nonzero double residue. The twisted Ore boundary is not a finite Weyl or Long construction. Projective scalarization remains inside its actual endomorphism algebra and does not supply a free Weyl frame. No actual finite Long carrier, bounded full lift, nonzero obstruction for every Long deformation or DC2 resolution is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

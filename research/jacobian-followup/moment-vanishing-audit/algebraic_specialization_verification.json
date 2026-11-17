@@ -1,0 +1,77 @@
+{
+  "completed": true,
+  "date": "2026-11-15",
+  "checker_sha256": "531d5de507a38d0120c0d9d7ed8de22a99c650cfe7dba030533de57c518c91c4",
+  "software": "SymPy 1.14.0",
+  "full_nonseparable_contraction_checks": 36,
+  "nonseparable_one_pair_example_rank": 3,
+  "reverse_translation_checks": 12,
+  "origin_specialization_shortcut_detected": true,
+  "safe_original_linear_cutoff_checks": 112,
+  "bounded_space_injection_controls": [
+    {
+      "dimension": 1,
+      "individual_degree_bound": 1,
+      "base": 2,
+      "number_field_degree": 2,
+      "preserved_space_dimension": 2
+    },
+    {
+      "dimension": 1,
+      "individual_degree_bound": 3,
+      "base": 4,
+      "number_field_degree": 4,
+      "preserved_space_dimension": 4
+    },
+    {
+      "dimension": 2,
+      "individual_degree_bound": 1,
+      "base": 2,
+      "number_field_degree": 4,
+      "preserved_space_dimension": 4
+    },
+    {
+      "dimension": 2,
+      "individual_degree_bound": 2,
+      "base": 3,
+      "number_field_degree": 9,
+      "preserved_space_dimension": 9
+    },
+    {
+      "dimension": 3,
+      "individual_degree_bound": 1,
+      "base": 2,
+      "number_field_degree": 8,
+      "preserved_space_dimension": 8
+    }
+  ],
+  "degree_box_boundary_shortcut_detected": true,
+  "norm_extension_control": {
+    "minimal_polynomial": "y^4-2",
+    "integer_roots": [],
+    "all_conjugates_nonintegral": true
+  },
+  "finite_open_and_coefficient_norm_controls": true,
+  "binomial_integer_specialization_shortcut_detected": true,
+  "binomial_nonpolynomial_algebraic_specialization": {
+    "annihilator": "(1+t)D-y",
+    "infinity_indicial": "z-y",
+    "generic_bound": -1,
+    "preserved_coefficient_index": 0,
+    "specialized_minimal_polynomial": "y^4-2"
+  },
+  "generic_safe_tail_specialization_controls": 48,
+  "general_family_decision_implemented": false,
+  "general_family_decision_executed": false,
+  "general_Noether_normalization_executed": false,
+  "general_primary_ideal_solver_executed": false,
+  "universal_proofs_certified_by_checker": false,
+  "new_SIC33_answer_computed": false,
+  "new_Delta_minimum_computed": false,
+  "numeric_cubic_frontier_changed": false,
+  "safe_locus_constructibility_proved": false,
+  "uniform_family_cutoff_proved": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

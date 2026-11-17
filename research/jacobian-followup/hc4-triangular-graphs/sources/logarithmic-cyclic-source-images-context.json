@@ -1,0 +1,77 @@
+{
+  "claim": "HC4MYMX0",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYMW0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/AFFINE_ETALE_DESCENT_OF_RATIONAL_PRIMITIVES.md"
+    },
+    {
+      "claim": "HC4MYMR0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYMU0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/FIRST_MIXED_FIBRE_SOURCE_IMAGE_AND_QUADRATIC_TRACE_POLE.md"
+    },
+    {
+      "claim": "PF2RULED138",
+      "canonical_source": "jacobian-followup/affine-complements/TRANSLATION_ATLAS_EXACTNESS_AND_UNBOUNDED_MOVING_LABEL_FIBRES.md"
+    },
+    {
+      "claim": "PF2RULED142",
+      "canonical_source": "jacobian-followup/affine-complements/PARTIAL_KUMMER_PLANE_CHARTS_AND_CYCLIC_EQUIVARIANT_FACTORS.md"
+    },
+    {
+      "claim": "HC4MYLA0",
+      "canonical_source": "jacobian-followup/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/AFFINE_ETALE_DESCENT_OF_RATIONAL_PRIMITIVES.md": "d7e239f6ae095ba39160834af190457311afef23ebffb2bbe96f18566bd2991c",
+    "jacobian-followup/hc4-triangular-graphs/verify_affine_etale_primitive_descent.py": "bf8c609508ed1454538a3031aee59f953cbddc87fef8ec0afc61b92d4efc0de5",
+    "jacobian-followup/hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md": "de702213847238998a76c14ddeb48e414592cafdb6041e9c337c2b491ec5327d",
+    "jacobian-followup/hc4-triangular-graphs/verify_replica_degree.py": "c26c225ebbf45de85146fc820db9e558153409733c686cfd5ef68329b0bce0df",
+    "jacobian-followup/hc4-triangular-graphs/FIRST_MIXED_FIBRE_SOURCE_IMAGE_AND_QUADRATIC_TRACE_POLE.md": "36d6b558c44ccd514e3024e3c1515d112c9eb03c946089544b8a99a3d392c059",
+    "jacobian-followup/hc4-triangular-graphs/verify_first_mixed_fibre.py": "29615ea4574dcee36acdfe475559680f837d14a23634bf1a70a264e2e1ee8f12",
+    "jacobian-followup/affine-complements/TRANSLATION_ATLAS_EXACTNESS_AND_UNBOUNDED_MOVING_LABEL_FIBRES.md": "38dfc4bac9783007ca3aaa072c953c7d67dc40dc1c40348e2cb832813e7c6062",
+    "jacobian-followup/affine-complements/verify_translation_atlas_exactness.py": "ec8db3e90cd55e36e1cef43e7b14ed412e54d07abb1acb8e2cb632fd9a02085b",
+    "jacobian-followup/affine-complements/PARTIAL_KUMMER_PLANE_CHARTS_AND_CYCLIC_EQUIVARIANT_FACTORS.md": "166285dd01c6a3bd66947bc43b018b1a28937363fae4fea1c9276e3e4ed9c3dc",
+    "jacobian-followup/affine-complements/verify_partial_kummer_charts.py": "ee0d9ef776e6be2ed97e43af9873e68eec111e2c60b6a3b00e03353d2ddbf2a9",
+    "jacobian-followup/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d",
+    "jacobian-followup/hc4-triangular-graphs/verify_deck_boundary_cost.py": "678b8bc23c529a8626a9a53be6d46d7cbb5664231d3f0dcf7794a27fc80a810e"
+  },
+  "retained_primary_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/sources/stacks-023M-affine-etale-descent.html": "6291864892b0ca41f4a7364926be6a7b7ea2cfd87e51a219b1a4bd283d5a957b",
+    "jacobian-followup/universal-keller-log-picard/sources/stacks-fpqc-descent-023R.html": "645d2f5f153f236ce0f99b3eaa7b671331c3270087f148cf0eed45b1411cf97d"
+  },
+  "primary_scope": "Reuse standard Stacks023R effective fpqc descent of line bundles, already imported/cached by universal log-Picard programme and used in LA0. Full online statements/proof passages023R/023N re-read. Reuse MW0 all-module Amitsur proof and cached023M. No new classification or compact-Kahler flat-connection theorem imported.",
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "scope_flags": {
+    "logarithmic_quotient_equals_Picard": true,
+    "closed_source_part_equals_torsion": true,
+    "cyclic_exact_surjective_plane_source_all_degrees": true,
+    "arbitrary_free_Picard_rank": true,
+    "explicit_polynomial_representative": true,
+    "PF142_minimal_mixed_retirement_retained": true,
+    "full_trace_goal_open": true,
+    "logarithmic_Picard_identified_with_trace_defect": false,
+    "closed_source_splitting_automatic": false,
+    "plane_target_constructed": false,
+    "source_shear_asserted_polynomial": false,
+    "unrestricted_HC4_or_JC2_resolved": false
+  },
+  "source_audit": {
+    "global_logarithmic": "For actual smooth affine SURJetale whole-plane source q, M={g:dlogg inOmegaR+OmegaE} satisfies M/E*=PicV. dlog regular onactualsmoothrelation makesrationalratio aUNIT. Unitcocycle descent givesPic; converse uses Amitsur forOmegaV tosplitdlogcocycle. Not finite trace-lattice identification.",
+    "closed_part": "PolynomialPoincare+normalizedtrace give dlog(g^m/Normg)=d(m(F0-PiF0)); rationalexponentiallemma by projectivedivisor pole orders forcesconstant. Thus closed regular source contribution IFFg^m inE, quotient exactlyPic torsion. CyclicKummerintermediate quotient NOT necessarilygenericdecksubgroupfornonGaloisL/E.",
+    "actual_picard": "MR0 rulinglocalizedbylocal-slicedenominator UFD givesPic directsumZ^ra/Z*e_a. Actualsourcepolynomial products ofassignedrootlines representcomponentclasses. Firstmixedgcd1\u21d2torsionfree, rank>=q+1; nowPF142retiresmixedminimalfactorbydegree2bcomparison, allconditionalarbitrary-degreeMU resultsretained.",
+    "new_family": "ALLg,k>=2, Bsquared-free B0nonzero arbitraryr. a=t\u00b2B(t^g)^k,R0=t^-1B^(1-k),sigma=-B+g(1-k)uBprime, R0prime=sigma/a. W:az=v^g-sigma^g smooth, g wholeplanecharts, FREECg action(t,v,z)->(eps t,eps v,eps^-2z) permutesthem. Actualq:A2->V=W/Cg SURJetale degreeg, exactRintersectE. RationalinvariantsliceG=R0, beta=Gprime/hprime tracezero. OneBezoutC0sigma=-BmoduBk givesexplicitpolyF0=tC0x+t^(g-1)D0 withF0-G=guC0s. Quotientu fibresgC0 at0,g reducedA1ateachBroot,othersA1. Pic=Z/g+Z^(r(g-1)), chi1+r(g-1), arbitrarilyfreePiccompatibleexactunitvolumeandcyclicsourcegeometry. No etaleplaneTARGET orfiniteB supplied.",
+    "literature_screen": "PrimaryMiyanishi 2005/2006 abstracts and retainedpseudo-covercontextscreened. No general solvable-monodromy inversion theorem verified/adopted. PrimaryStacksdescent re-read; compactKahler flatbundle statements not transferred to affineV. Universal log-Picard full source read to avoid confusing arithmetic/geometric setup; its surfaceclassification is NOT imported.",
+    "retained_limits": "AlloriginalS/Lambda/ramifiedboundary/markedenergy andcorrectMathieu ordinaryperiod/B-latticecomparison retained. Neither arbitrarylinebundleclosedconnection nor Picard=trace-defect assumed. All predecessor proof/checkers remainsealed, no degreecampaign. Writtenunboundedproof+two fixednewtranscriptionexamples and scopecontrols only."
+  },
+  "registered_mathematical_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

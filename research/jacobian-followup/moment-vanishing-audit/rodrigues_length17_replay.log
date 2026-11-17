@@ -1,0 +1,55 @@
+Jacobian determinant: 33554432/789441476538345505875
+R11: quadratic=0; cubic=0; quartic=80990528*a**3*b/22950790547685
+R12: quadratic=0; cubic=0; quartic=-5219584*a**4/26059988554145
+R13: quadratic=0; cubic=0; quartic=0
+R14: quadratic=0; cubic=0; quartic=0
+T2: a**2*(-4*t*w/637 + w**3/4 - 57*z/6370) + a*b*(-4*t**2/385 + t*w**2/2 + 4*w*z/385) + b**2*(t**2*w/5 - w**2*z/10 + w/75)
+T3: [((0, 3), '-8*(70*t*w + 51*z)/170625'), ((1, 2), '4*(9*t + 32*w**2)/5775'), ((2, 1), '-w*(-21130*t**2 + 10565*w*z + 45878)/2977975'), ((3, 0), '(-18313*t**2 + 23320*t*w**2 + 18313*w*z)/9319310')]
+R11 quintic: 8*a*(4221787665*a**4 + 33066802496*b**4)/219294803683130175
+R12 quintic: -16247524352*a**2*b**3/27349692069324625
+R13 quintic: 2121705728*a**3*b**2/3398482446484125
+R14 quintic: -1214816*a**4*b/5181975442875
+Elapsed through quintics: 2.0990197869832627
+R11 sextic: -46026262991996992*a**3*b**3/30609638615527773676875
+R12 sextic: -256*b**2*(582840969133802625*a**4 + 58120180430664352*b**4)/436813456515679297538859375
+R13 sextic: 32*a*b*(283276662226875*a**4 + 2016561199260608*b**4)/300821629870776780390625
+R14 sextic: -4*a**2*(8725950868732625*a**4 + 187554907580779648*b**4)/4622189738970978877828125
+Dimensions modulo (a,b)^7: {'A12': 18, 'A14': 17}
+R13 after subtracting its quintic b*R11 multiple, degree6 terms: [((1, 5), 2538438656/2305418019694453125), ((5, 1), 5274378094275983104/1827277697779108741048257375)]
+Elapsed through sextics: 4.714764577976894
+Starting seventh-order implicit correction
+R11 septic: -8*a*b**2*(43322490236802799836225*a**4 + 38349088157224628527744*b**4)/571788814579024200478366921875
+R12 septic: -16*a**2*b*(660422500701960680041875*a**4 - 645021149100474587057344*b**4)/69036959292276562453835765671875
+R13 septic: 64*a**3*(4964762307194461542375*a**4 - 125492486496197283863764*b**4)/37990752746637398273412581109375
+R14 septic: 32*b**3*(3727350877274358490125*a**4 - 532535510084417135296*b**4)/3195006117961207524675873046875
+A12 dimension modulo (a,b)^8: 20
+A13 dimension modulo (a,b)^8: 18
+A14 dimension modulo (a,b)^8: 17
+Elapsed including earlier orders: 10.951878608029801
+A15 dimension modulo (a,b)^8: 17; residual order: 5
+A16 dimension modulo (a,b)^8: 17; residual order: 6
+A17 dimension modulo (a,b)^8: 17; residual order: 6
+A18 dimension modulo (a,b)^8: 17; residual order: 6
+A19 dimension modulo (a,b)^8: 17; residual order: 7
+A20 dimension modulo (a,b)^8: 17; residual order: 7
+A21 dimension modulo (a,b)^8: 17; residual order: 7
+A22 dimension modulo (a,b)^8: 17; residual order: None
+A23 dimension modulo (a,b)^8: 17; residual order: None
+A24 dimension modulo (a,b)^8: 17; residual order: None
+A25 dimension modulo (a,b)^8: 17; residual order: None
+A26 dimension modulo (a,b)^8: 17; residual order: None
+A27 dimension modulo (a,b)^8: 17; residual order: None
+A28 dimension modulo (a,b)^8: 17; residual order: None
+Final prefix-28 local jet dimension: 17
+Elapsed including prior orders: 12.514787026972044
+Transverse determinant -3/50; rank 16; first-ten Jacobian certified.
+Weighted initial ideal 12: leads=[(0, 10), (1, 7), (2, 4), (3, 1), (4, 0)]; length=22
+Weighted initial ideal 13: leads=[(0, 8), (1, 5), (2, 4), (3, 1), (4, 0)]; length=18
+Weighted initial ideal 14: leads=[(0, 7), (1, 5), (2, 4), (3, 1), (4, 0)]; length=17
+Reduced R13 coefficient: 2538438656/2305418019694453125; reduced R14 coefficient: -809733013864448/95603262363699979798828125
+Exact ranks: 32x36 and augmented 50x36 both rank 19.
+Direct row membership: all 8 degree-seven monomials and all 17 truncated monomials of weight >=13; b^6 is not in the row span.
+Finite quotient Hilbert function: [1, 2, 3, 4, 3, 3, 1]; maximal-ideal nilpotence index 7.
+Exported exact certificate: certificate_data.json (23868 bytes)
+ALL ASSERTIONS PASSED; full-prefix finite quotient length 17.
+Elapsed seconds: 12.639233722991776

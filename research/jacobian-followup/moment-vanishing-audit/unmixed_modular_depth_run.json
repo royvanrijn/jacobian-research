@@ -1,0 +1,13 @@
+{
+  "scope": "Exact good-prime resolution of the isolated-primary intersection, with leading-coefficient specialization checks; transfer to characteristic zero requires the written integral flatness and Koszul-rank argument.",
+  "wall_limit_seconds": 20,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": true,
+  "exit_code": -9,
+  "completed": false,
+  "input_sha256": "b94ed1c922b31f7595e843e1ddaffb94229633241a2ad1dd73aa1fd7b2fab8b4",
+  "log_sha256": "b8ba2aa7d5be8c893b73b88e9b3033068fdf7a8fb8ba69c16b34c1c93d311ab0",
+  "elapsed_seconds": 20.01896332198521,
+  "stdout_tail": "LEADING_SPECIALIZATION_CHECK\nLEADING_COEFFICIENTS_ALL_UNITS\n190\nMODULAR_RESOLUTION_START\n"
+}

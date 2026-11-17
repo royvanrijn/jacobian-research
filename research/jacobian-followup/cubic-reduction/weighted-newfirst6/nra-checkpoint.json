@@ -1,0 +1,11 @@
+{
+  "degree": 6,
+  "input_sha256": "baff1705bb204a30ffd29c60809fc0445c5f841647862120dc698df54eda7eca",
+  "mode": "nra",
+  "reason": "timeout",
+  "scope": "New-first-output weighted coefficient search. Exact candidate determinant/collision verification required; solver timeouts remain UNKNOWN.",
+  "seconds": 44.817,
+  "solver_version": "4.15.3",
+  "source_sha256": "49c6401704d3156d3c7df08d895a17d1a2e8ff268740dac3e0b9be1bf9f404c0",
+  "status": "unknown"
+}

@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/TRIANGULAR_DIVISOR_FACTORS_GLOBAL120.md",
+  "canonical_proof_sha256": "f226f9572aadae9dace2f1e098774132b6f0448ddd48465fab6fb29eedc2cf27",
+  "claims": [
+    "G3TRIANGULARFACT20261115",
+    "G3PURE120_20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_triangular_divisor_factors.py",
+  "checker_sha256": "37ddf15898dc825896a37701797a4dd6cfef8c62254e55015aa92a778cdab0c5",
+  "certificate_sha256": "de5edb1c5ce023b6c14595548116eae7a35a7abe9d2320ccd0e824d16af80b54",
+  "accepted_receipt_sha256": "4e47a14e5514602352c55cdbde16a40fcbfb095ba98114d0751ca08370abee78",
+  "prior_frontier": {
+    "path": "jacobian-followup/moment-vanishing-audit/triangular120_preupdate_20261115.json",
+    "sha256": "225eee18193af60f41a1264ea5fa7754fade2f4f9399194f67ecdedfb86d09fa"
+  },
+  "retained_inputs": {
+    "verify_ordinary_rank_one_lattice.py": "572582bffcf5cc86f4ef92924064130c1a2f8c28b164c79f8773592ec9cf1a59",
+    "verify_cusp_rank_one_lattice.py": "ab3b3d12d844f1de5777dec73834cbcede4786937fc0a137e120b20f471485a0",
+    "ordinary_rank_one_lattice_certificate.json": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+    "ordinary_rank_one_lattice_verification.json": "5afbf8b57e9787a465456b7226f607df7de43bdd4893041d22de11c93eaf7e0e",
+    "ordinary_rank_one_lattice_source_audit.json": "c34fc5e634ba3647954453168279f79aae49496c99bfd314b844da6c400b84aa",
+    "cusp_rank_one_lattice_certificate.json": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+    "cusp_rank_one_lattice_verification.json": "1535c3368e765c7b88a6d7e5978aee5dd1ea7a1f2d34026689cac5e50196a786",
+    "cusp_rank_one_lattice_source_audit.json": "5b44f760c29213f33f925be2ce0a9ae72b2e2be7b0ed62c3f513a9c93fbc8811",
+    "ordinary_normal_seed_module_source_audit.json": "0528d59f58c09748117afaecb6af65f964749681c29f38216cec338d9b047b31",
+    "rank_factors_and_reduction_budgets_source_audit.json": "7660868c53d6c390732bc452a9c2a5ce48338b408357aab9cc9c72c7c12e5fa8",
+    "even_time_odd_seeds_source_audit.json": "8c88da14f2d063c69eeeadb614de98f855e5a1fd0743da9d621743888f0d5800",
+    "conic_completed_row_factors_source_audit.json": "59f4d3cd0e2a344bda067ca699603bd9ba65db8ecec0ffd93ae53359375fd4c6",
+    "ordinary125_primary_record_refresh_20261115.json": "ba024b266a364c50d9dc636dbe9a0eb0aecf2a3508ebc12389f4f3d026373ad5"
+  },
+  "current_history_index": "jacobian-followup/moment-vanishing-audit/PREFIX_PROOF_HISTORY_CURRENT.md",
+  "previous_goal_turn_classification": "progress: exact ordinary Gaussian-square identities and polynomial D normal modules established node123,transverse122,triangle114 and general125; full seed/cofactor checks, scoped records and selected primary v1 record refresh completed.",
+  "formal_triangular_method": {
+    "derivation_lowers_D_order_at_most": 1,
+    "derivative_coefficient_D_order_at_least": 2,
+    "scalar_j_term_D_order_at_least": 1,
+    "matrix_analytic_in_D": true,
+    "generic_residue_rank": 1,
+    "generic_trace_not_identically_zero_required": true,
+    "first_seed_residue_in_image_required": true,
+    "formal_unit_gauge_with_all_derivatives_retained": true,
+    "slow_seed_j_D_order_at_least": "j",
+    "zeroth_minor_D_power": "s*(s-1)/2",
+    "higher_minor_D_power": "max(0,s*(s-1)/2-l)",
+    "common_scalar_D_power": "s*(s-1)/2",
+    "ordinary_remaining_higher_D_power_at_least": "l",
+    "cusp_remaining_higher_D_power_at_least": "3l-1",
+    "scalar_valuation_at_least": "3l",
+    "ordinary_derivative_and_scalar_orders": [
+      2,
+      1
+    ],
+    "cusp_derivative_and_scalar_orders": [
+      4,
+      3
+    ],
+    "generic_semisimple_argument_then_polynomial_extension": true,
+    "zero_trace_q_r_D_at_zero_shared_axes_retained": true,
+    "axes_cleared_before_specialization": true,
+    "constant_D_degree_strata_separate": true
+  },
+  "class_bounds": {
+    "linear_D": {
+      "nodal": 108,
+      "transverse": 112,
+      "triangle": 108,
+      "cusp": 115
+    },
+    "constant_D_unchanged": {
+      "nodal": 101,
+      "transverse": 106,
+      "triangle": 103,
+      "cusp": 109
+    },
+    "full_classes": {
+      "nodal": 108,
+      "transverse": 112,
+      "triangle": 108,
+      "cusp": 115
+    },
+    "tangent_unchanged": 120
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 108,
+    "cusp": 115,
+    "transverse": 112,
+    "tangent": 120,
+    "triangle": 108,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "odd_cover_unchanged": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 98,
+    "cusp": 94,
+    "transverse": 98,
+    "tangent": 94,
+    "triangle": 96,
+    "concurrent": 36,
+    "repeated": 98
+  },
+  "global_sufficient_pure_prefix": 120,
+  "odd_sufficient_pure_prefix": 98,
+  "homogeneous_sufficient_pure_prefix": 96,
+  "conic_full_W_linear_gate_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    120
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    98
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global120": false,
+  "current_radical_target": "I120",
+  "binary_search_rounds_max": 7,
+  "exact_auxiliary_evidence": {
+    "generic_residue_strata": 4,
+    "abstract_differential_models": 6,
+    "retained_full_cofactor_models": 10,
+    "retained_full_scalar_cofactor_checks": 70
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "TWO_SIDED_CONIC_GLOBAL_140.md": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+    "RANK_FACTORS_AND_REDUCTION_GLOBAL_130.md": "d39725481b3e733c399e60a42663d4311f9fe76f5698fce2842a5782f86762dc",
+    "CONIC108_ODD126_GLOBAL130.md": "8caf3664ebb6149f3c48c49304447df9811c5b46421ece776bb2f77415c58697",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c",
+    "WEIGHTED_ODD_PREFIX108.md": "c9238da9e5b7e2e7242cdf999bd7105a5d131b441b9a373fad420842fc79c878",
+    "CONIC_ROW_FACTORS_96_ODD104.md": "18a67c884339a850cb02093c49988d374e3e209dc2b6e2ca25b132dc96ba11b9",
+    "ODD_CONCURRENT36_PREFIX100.md": "14fa528c9939440372fd2c6dd24a3319a0a3009923867bf272edd0f06281c54c",
+    "EVEN_TIME_SEEDS_ODD98.md": "e45b83608783ed7bb08f40a660a384f750f8b9ca131a2af736f0f751b379a28c",
+    "CUSP_RANK_ONE_LATTICE_GLOBAL129.md": "f797b342cd5f4b210b5b13ce38a656671fbf0961407d1b4ce0b34f83cb5153e3",
+    "ORDINARY_RANK_ONE_GLOBAL125.md": "30c7c6e4fb21e3e15ae2d6e13817281c9c4dc04c4e115526f4251f5b287cfbad"
+  },
+  "failed_probe_hashes": {
+    "triangular_divisor_factors_initial_input.py": "8763148568b91759288451b7933a6f7b71ce1b32197cf7c02545aa939aee613e",
+    "triangular_divisor_factors_initial_failure.json": "a5cd9bf80247b798c26f7f24c48e5e071884e2656721b6bba31b5e99f790c7cf"
+  },
+  "failure_boundary": "The first abstract family had zero full-rank zeroth cofactor, failing its intended cyclic-rank assertion after divisibility checks passed. Its exact input/receipt remain preserved. The accepted family uses distinct diagonal first-order coefficients and verifies nonzero full determinants. This is not a discarded counterexample to the formal lemma.",
+  "analytic_boundary": "The formal splitting, slow-seed valuation and all-minor lemma are written algebraic inputs. A rank-one residue alone is not used on a zero-trace specialization: the generic nonzero-trace split yields polynomial divisor identities after axis clearing, then extension retains zero traces, q0/r0, D(0)=0 and shared axes. Original seed, connection/basis derivatives, higher scalar valuations and every constant/zero-divisor/frame face are retained. Full coefficient/frame coverage and analytic nonzero zeroth coefficients remain independently unreviewed written inputs.",
+  "selected_primary_record_refresh_retained": {
+    "path": "jacobian-followup/moment-vanishing-audit/ordinary125_primary_record_refresh_20261115.json",
+    "sha256": "ba024b266a364c50d9dc636dbe9a0eb0aecf2a3508ebc12389f4f3d026373ad5"
+  },
+  "literature_boundary": "No fresh literature-coverage claim, external theorem or producer package. The preceding selected primary v1 record refresh and earlier body-read boundaries remain retained.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal formal rank-one differential splitting and triangular slow-seed/minor valuation proof gives general120. Exact four residue trace/projector checks, six abstract differential models and ten retained full Gaussian scalar relations with70 coefficient checks support the larger common D^(s(s-1)/2) and remaining valuations, with all-rank/row arithmetic. General formal lemma, polynomial extension across degenerate traces, complete coefficient/frame cover and analytic exclusions remain independently unreviewed written inputs. No independent, external or formal certification.",
+  "remaining": [
+    "Least global[20,120], odd[20,98], homogeneous[14,96]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller global tangent120/cusp115, odd node/transverse/repeated98 and homogeneous conic96 bounds",
+    "Expanded I120 radical cofactors",
+    "Independent analytic review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

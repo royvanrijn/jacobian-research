@@ -1,0 +1,13 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "sympy": "1.14.0",
+  "sealed_imports_sha256": {
+    "SQUARED_SPECTATOR_INVARIANCE_AND_UNBOUNDED_GAUSSIAN_IMAGES.md": "799955708ff070afa3bf691ed264e64a4742d909f5f4de7143d58c6b77ddf43c",
+    "squared_spectator_geometry_source_audit.json": "32d85b8ce089c2edb53f6a3a9bb81999c273fe5a09f55e809aa2850d2db4c74f",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "finite_multiplier_source_audit.json": "5e113782efcb29461f9419bf0269446c36c0b0f1bc612169b6f11f02d38d7a43",
+    "finite_multiplier_verification.json": "9c7da97fe38e0ab2e66b49cd000cde079df384cb88b7046a58c0f3a93d268e46"
+  },
+  "CAS_Galois_algorithm_run": false,
+  "old_UNKNOWN_jobs_restarted": false
+}

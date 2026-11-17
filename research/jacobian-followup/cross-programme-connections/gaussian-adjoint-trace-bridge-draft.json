@@ -1,0 +1,30 @@
+{
+  "recorded_at_utc": "2026-11-15T22:22:33.639033+00:00",
+  "status": "Unregistered internal written deduction; independent review pending.",
+  "result": "For complex quadratic-preserving constant-Jacobian maps, the Gaussian adjoint sends every polynomial marker to a polynomial iff the map is an automorphism.",
+  "mechanism": [
+    "Gaussian IBP makes the hypothetical polynomial adjoint a differential target-module retraction.",
+    "Whole-source field trace uniqueness identifies it with normalized field trace.",
+    "Polynomial whole-source trace forces finiteness and then inversion."
+  ],
+  "boundary": "Failure of finite Hermite support does not furnish powers of one fixed pure phase; OP-GMC-ENDOMORPHISM-SAFETY remains open.",
+  "possible_hc4_connection": "LCDS1 cautions that generic branch profiles do not determine nodal gluing. The module comparison for current trace-image defects is still missing.",
+  "proof": "GAUSSIAN_ADJOINT_AND_WHOLE_SOURCE_TRACE_DRAFT.tex",
+  "sources": [
+    {
+      "path": "research/jacobian-followup/moment-vanishing-audit/GAUSSIAN_KELLER_ENDOMORPHISMS_AND_ONE_WAY_TRANSFER.md",
+      "sha256": "6ce9657ff8ee9cf71ffa415f03421a9c142760b2cf722df9303ce74c0157c176"
+    },
+    {
+      "path": "research/jacobian-followup/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md",
+      "sha256": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9"
+    },
+    {
+      "path": "research/archive/non-elliptic/plane-jc/LOG_CONDUCTOR_DEGREE_SHIFT.md",
+      "sha256": "81e95de0e52507292d0b56db895df780e924ffaf2f8a686c9c5cd424184573e6"
+    }
+  ],
+  "agent_messages_sent": 0,
+  "registry_changed": false,
+  "concurrent_work_note": "After writing this draft, a refreshed Gaussian thread showed its next turn independently investigating the Gaussian adjoint and polynomial representation of source markers. Coordinate with that active proof before registering or duplicating this deduction."
+}

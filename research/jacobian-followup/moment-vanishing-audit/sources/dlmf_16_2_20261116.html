@@ -1,0 +1,723 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/16.2";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./16#PT2" title="Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="up up" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./16.1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="next" href="./16.3" title="§16.3 Derivatives and Contiguous Functions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.3" title="§16.3 Derivatives and Contiguous Functions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.4" title="§16.4 Argument Unity ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.5" title="§16.5 Integral Representations and Integrals ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.6" title="§16.6 Transformations of Variable ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.7" title="§16.7 Relations to Other Functions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.8" title="§16.8 Differential Equations ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.9" title="§16.9 Zeros ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.10" title="§16.10 Expansions in Series of {_𝑝}𝐹_𝑞 Functions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.11" title="§16.11 Asymptotic Expansions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.12" title="§16.12 Products ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.13" title="§16.13 Appell Functions ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.14" title="§16.14 Partial Differential Equations ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.15" title="§16.15 Integral Representations and Integrals ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.16" title="§16.16 Transformations of Variables ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.17" title="§16.17 Definition ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.18" title="§16.18 Special Cases ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.19" title="§16.19 Identities ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.20" title="§16.20 Integrals and Series ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.21" title="§16.21 Differential Equation ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.22" title="§16.22 Asymptotic Expansions ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.23" title="§16.23 Mathematical Applications ‣ Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.24" title="§16.24 Physical Applications ‣ Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.25" title="§16.25 Methods of Computation ‣ Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.26" title="§16.26 Approximations ‣ Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.27" title="§16.27 Software ‣ Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="analytic properties, as functions of parameters, definition, definitions, generalized hypergeometric function , generalized hypergeometric functions, generalized hypergeometric series, notation, polynomial cases, principal branch (value), terminating">
+</head>
+<body>
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions" class="DLMFLogo"><span>DLMF</span></a></div>
+<div id="navmenu" class="ltx_page_navitems">
+<button class="ltx_page_navbar_menubutton" onclick="toggleMenu(); return false;">Menu</button>
+<ul>
+<li><a class="ltx_navlink ltx_navindex" href="./idx/">Index</a></li>
+<li><a class="ltx_navlink ltx_navnotations" href="./not/">Notations</a></li>
+<li><small><form method="get" action="./search/search">
+<input type="text" name="q" value="" size="6" class="ltx_navsearch"><button type="submit" class="ltx_navlink ltx_navsearch">Search</button>
+</form></small></li>
+<li><a class="ltx_navlink ltx_help" href="./help/">Help?</a></li>
+<li><a class="ltx_navlink ltx_navciting" href="./help/cite">Citing</a></li>
+<li><a class="ltx_navlink ltx_customize" href="./help/customize">Customize</a></li>
+<li>
+<a class="ltx_navlink ltx_navshowinfo" id="showinfo" href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a><a class="ltx_navlink ltx_navhideinfo" id="hideinfo" href="" onclick="hideInfo(); return false;">UnAnnotate</a>
+</li>
+<li><a class="ltx_navlink ltx_navabout" href="./about/">About the Project</a></li>
+</ul>
+</div>
+<div class="ltx_page_navbottom">
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./16" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16 </span>Generalized Hypergeometric Functions &amp; Meijer <span class="ltx_text ltx_font_italic">G</span>-Function</span></a><a href="./16#PT2" title="In Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Generalized Hypergeometric Functions</span></a><a href="./16.1" title="In Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16.1 </span>Special Notation</span></a><a href="./16.3" title="In Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16.3 </span>Derivatives and Contiguous Functions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§16.2 </span>Definition and Analytic Properties</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="{{}_{2}F_{1}}\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi></mrow><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="=F\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math> notation for Gauss’ hypergeometric function</span>,
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="254px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{a_{1},\dots,a_{p}};\NVar{b_{1},\dots,b_%
+{q}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+or <math class="ltx_Math" altimg="m40.png" altimg-height="42px" altimg-valign="-15px" altimg-width="149px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{a_{1},\dots,a_{p}}\atop\NVar{b_{1},%
+\dots,b_{q}}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: alternatively <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-8px" altimg-width="110px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{\mathbf{a}};\NVar{\mathbf{b}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐚</mi><mo>;</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m39.png" altimg-height="29px" altimg-valign="-9px" altimg-width="94px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{\mathbf{a}}\atop\NVar{\mathbf{b}}};%
+\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar">𝐚</mi><mi class="ltx_nvar">𝐛</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+<br class="ltx_break">generalized hypergeometric function</span> and
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="{{}_{1}F_{1}}\left(\NVar{a};\NVar{b};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">F</mi><mn href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">1</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="117px" alttext="=M\left(\NVar{a},\NVar{b},\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./13.2#E2" title="=₁𝐹₁(𝑎;𝑏;𝑧) Kummer confluent hypergeometric function">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math> notation for the Kummer confluent hypergeometric function</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.12#p1" title="§18.12 Generating Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.12</span></a>,
+<a href="./18.20#ii.p1" title="§18.20(ii) Hypergeometric Function and Generalized Hypergeometric Functions ‣ §18.20 Hahn Class: Explicit Representations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.20(ii)</span></a>,
+<a href="./18.23#p1" title="§18.23 Hahn Class: Generating Functions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.23</span></a>,
+<a href="./18.26#i.p1" title="§18.26(i) Representations as Generalized Hypergeometric Functions and Dualities ‣ §18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.26(i)</span></a>,
+<a href="./18.5#iii.p1" title="§18.5(iii) Finite Power Series, the Hypergeometric Function, and Generalized Hypergeometric Functions ‣ §18.5 Explicit Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.5(iii)</span></a>,
+<a href="./34.2#p3" title="§34.2 Definition: 3⁢𝑗 Symbol ‣ Properties ‣ Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§34.2</span></a>,
+<a href="./34.4#p4" title="§34.4 Definition: 6⁢𝑗 Symbol ‣ Properties ‣ Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§34.4</span></a>,
+<a href="./5.16#p2" title="§5.16 Sums ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.16</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2" title="" class="ltx_ref">http://dlmf.nist.gov/16.2</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§16.2(i) </span>Generalized Hypergeometric Series</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§16.2(ii) </span>Case <math class="ltx_Math" altimg="m27.png" altimg-height="21px" altimg-valign="-6px" altimg-width="52px" alttext="p\leq q" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>≤</mo><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§16.2(iii) </span>Case <math class="ltx_Math" altimg="m23.png" altimg-height="21px" altimg-valign="-6px" altimg-width="88px" alttext="p=q+1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>=</mo><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§16.2(iv) </span>Case <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="88px" alttext="p&gt;q+1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>&gt;</mo><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§16.2(v) </span>Behavior with Respect to Parameters</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§16.2(i) </span>Generalized Hypergeometric Series</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=definitions">definitions</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20function%200F2">generalized hypergeometric function <math class="ltx_Math" altimg="m34.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="{{}_{0}F_{2}}" display="inline"><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mn>2</mn><mrow></mrow><mprescripts></mprescripts><mn>0</mn><mrow></mrow></mmultiscripts></math></a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20series">generalized hypergeometric series</a>, <a class="ltx_keyword" href="./search/search?q=notation">notation</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./13.1#p3" title="§13.1 Special Notation ‣ Notation ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§13.1</span></a>,
+<a href="./13.31#iii.p1" title="§13.31(iii) Rational Approximations ‣ §13.31 Approximations ‣ Computation ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§13.31(iii)</span></a>,
+<a href="./17.4#i.p1" title="§17.4(i) {_𝑟}ϕ_𝑠 Functions ‣ §17.4 Basic Hypergeometric Functions ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§17.4(i)</span></a>,
+<a href="./2.10#Px3.p1" title="Example ‣ §2.10(iii) Asymptotic Expansions of Entire Functions ‣ §2.10 Sums and Sequences ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.10(iii)</span></a>,
+<a href="./7.11#Px3.p1" title="Generalized Hypergeometric Functions ‣ §7.11 Relations to Other Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.11</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.i" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Throughout this chapter it is assumed that none of the bottom parameters <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-5px" altimg-width="23px" alttext="b_{1}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub></math>,
+<math class="ltx_Math" altimg="m19.png" altimg-height="21px" altimg-valign="-5px" altimg-width="23px" alttext="b_{2}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>2</mn></msub></math>, <math class="ltx_Math" altimg="m11.png" altimg-height="6px" altimg-valign="-2px" altimg-width="29px" alttext="\dots" display="inline"><mi mathvariant="normal">…</mi></math>, <math class="ltx_Math" altimg="m20.png" altimg-height="24px" altimg-valign="-8px" altimg-width="22px" alttext="b_{q}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></math> is a nonpositive integer, <em class="ltx_emph ltx_font_italic">unless stated otherwise.</em>
+Then formally</p>
+<div class="ltx_equation_container">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">16.2.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="74px" altimg-valign="-29px" altimg-width="591px" alttext="{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\sum_{k%
+=0}^{\infty}\frac{{\left(a_{1}\right)_{k}}\cdots{\left(a_{p}\right)_{k}}}{{%
+\left(b_{1}\right)_{k}}\cdots{\left(b_{q}\right)_{k}}}\frac{z^{k}}{k!}." display="block"><mrow><mrow><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></mfrac><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>k</mi></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>k</mi></msub></mrow><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>k</mi></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>k</mi></msub></mrow></mfrac><mo>⁢</mo><mfrac><msup><mi href="./16.1#t1.r4" title="complex variable">z</mi><mi>k</mi></msup><mrow><mi>k</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="254px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{a_{1},\dots,a_{p}};\NVar{b_{1},\dots,b_%
+{q}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+or <math class="ltx_Math" altimg="m40.png" altimg-height="42px" altimg-valign="-15px" altimg-width="149px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{a_{1},\dots,a_{p}}\atop\NVar{b_{1},%
+\dots,b_{q}}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: alternatively <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-8px" altimg-width="110px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{\mathbf{a}};\NVar{\mathbf{b}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐚</mi><mo>;</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m39.png" altimg-height="29px" altimg-valign="-9px" altimg-width="94px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{\mathbf{a}}\atop\NVar{\mathbf{b}}};%
+\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar">𝐚</mi><mi class="ltx_nvar">𝐛</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+<br class="ltx_break">generalized hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></math>:  nonnegative integer</a>,
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></math>:  nonnegative integer</a>,
+<a href="./16.1#t1.r4" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./16.1#t1.r5" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-8px" altimg-width="111px" alttext="a,a_{1},\ldots,a_{p}" display="inline"><mrow><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow></math>:  real or complex parameters</a> and
+<a href="./16.1#t1.r5" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="24px" altimg-valign="-8px" altimg-width="105px" alttext="b,b_{1},\ldots,b_{q}" display="inline"><mrow><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></math>:  real or complex parameters</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./10.16#Px5.p1" title="Generalized Hypergeometric Functions ‣ §10.16 Relations to Other Functions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.16</span></a>,
+<a href="./10.16#info" title="§10.16 Relations to Other Functions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.16</span></a>,
+<a href="./10.39#Px5.p2" title="Generalized Hypergeometric Functions and Hypergeometric Function ‣ §10.39 Relations to Other Functions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.39</span></a>,
+<a href="./16.2#Px1.p1" title="Polynomials ‣ §16.2(iv) Case 𝑝&gt;𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iv)</span></a>,
+<a href="./16.2#ii.p1" title="§16.2(ii) Case 𝑝≤𝑞 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(ii)</span></a>,
+<a href="./16.2#iii.p1" title="§16.2(iii) Case 𝑝=𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iii)</span></a>,
+<a href="./16.2#iii.p2" title="§16.2(iii) Case 𝑝=𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iii)</span></a>,
+<a href="./16.2#iii.p3" title="§16.2(iii) Case 𝑝=𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iii)</span></a>,
+<a href="./16.5#p3" title="§16.5 Integral Representations and Integrals ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.5</span></a>,
+<a href="./18.17#Px11.p1" title="Jacobi ‣ §18.17(v) Fourier Transforms ‣ §18.17 Integrals ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.17(v)</span></a>,
+<a href="./18.17#Px16.p1" title="Jacobi ‣ §18.17(vi) Laplace Transforms ‣ §18.17 Integrals ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.17(vi)</span></a>,
+<a href="./18.17#Px23.p1" title="Hermite ‣ §18.17(vii) Mellin Transforms ‣ §18.17 Integrals ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.17(vii)</span></a>,
+<a href="./18.20#ii.p1" title="§18.20(ii) Hypergeometric Function and Generalized Hypergeometric Functions ‣ §18.20 Hahn Class: Explicit Representations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.20(ii)</span></a>,
+<a href="./18.26#i.p1" title="§18.26(i) Representations as Generalized Hypergeometric Functions and Dualities ‣ §18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.26(i)</span></a>,
+<a href="./18.30#i.p1" title="§18.30(i) Associated Jacobi Polynomials ‣ §18.30 Associated OP’s ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.30(i)</span></a>,
+<a href="./18.38#Px6.p1" title="Complex Function Theory ‣ §18.38(ii) Classical OP’s: Mathematical Developments and Applications ‣ §18.38 Mathematical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.38(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.E1" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./16.2.E1.tex">TeX</a>, <a href="./16.2.E1.pmml">pMML</a>, <a href="./16.2.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#i.info" title="§16.2(i) Generalized Hypergeometric Series ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(i)</span></a>,
+<a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">Equivalently, the function is denoted by
+<math class="ltx_Math" altimg="m46.png" altimg-height="29px" altimg-valign="-9px" altimg-width="94px" alttext="{{}_{p}F_{q}}\left({\mathbf{a}\atop\mathbf{b}};z\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>𝐚</mi><mi>𝐛</mi></mfrac><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m44.png" altimg-height="26px" altimg-valign="-8px" altimg-width="110px" alttext="{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi>𝐚</mi><mo>;</mo><mi>𝐛</mi><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>,
+and sometimes, for brevity, by <math class="ltx_Math" altimg="m45.png" altimg-height="26px" altimg-valign="-8px" altimg-width="67px" alttext="{{}_{p}F_{q}}\left(z\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§16.2(ii) </span>Case <math class="ltx_Math" altimg="m27.png" altimg-height="21px" altimg-valign="-6px" altimg-width="52px" alttext="p\leq q" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>≤</mo><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></mrow></math>
+</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=analytic%20properties">analytic properties</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.34#i.p1" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./2.10#Px3.p1" title="Example ‣ §2.10(iii) Asymptotic Expansions of Entire Functions ‣ §2.10 Sums and Sequences ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.10(iii)</span></a>,
+<a href="./7.11#Px3.p1" title="Generalized Hypergeometric Functions ‣ §7.11 Relations to Other Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.11</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.ii" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">When <math class="ltx_Math" altimg="m27.png" altimg-height="21px" altimg-valign="-6px" altimg-width="52px" alttext="p\leq q" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>≤</mo><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></mrow></math> the series (<a href="./16.2#E1" title="(16.2.1) ‣ §16.2(i) Generalized Hypergeometric Series ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2.1</span></a>) converges for all finite values
+of <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math> and defines an entire function.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§16.2(iii) </span>Case <math class="ltx_Math" altimg="m23.png" altimg-height="21px" altimg-valign="-6px" altimg-width="88px" alttext="p=q+1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>=</mo><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></mrow></math>
+</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=analytic%20properties">analytic properties</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=principal%20branch%20%28value%29">principal branch (value)</a>, <a class="ltx_keyword" href="./search/search?q=terminating">terminating</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1501" title="Mathematical Functions and their Approximations" class="ltx_ref">1975</a>, §5.2.1)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Slater (<a href="./bib/S#bib2099" title="Generalized Hypergeometric Functions" class="ltx_ref">1966</a>, §2.2)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./16.5#p3" title="§16.5 Integral Representations and Integrals ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.5</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.iii" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">Suppose first one or more of the top parameters <math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi>j</mi></msub></math> is a nonpositive integer.
+Then the series (<a href="./16.2#E1" title="(16.2.1) ‣ §16.2(i) Generalized Hypergeometric Series ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2.1</span></a>) terminates and the generalized
+hypergeometric function is a polynomial in <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>.
+</p>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">If none of the <math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi>j</mi></msub></math> is a nonpositive integer, then the radius of convergence
+of the series (<a href="./16.2#E1" title="(16.2.1) ‣ §16.2(i) Generalized Hypergeometric Series ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2.1</span></a>) is <math class="ltx_Math" altimg="m5.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="1" display="inline"><mn>1</mn></math>, and outside the open disk <math class="ltx_Math" altimg="m50.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|z|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>
+the generalized hypergeometric function is defined by analytic continuation
+with respect to <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>. The branch obtained by introducing a cut from <math class="ltx_Math" altimg="m5.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="1" display="inline"><mn>1</mn></math> to
+<math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-4px" altimg-width="41px" alttext="+\infty" display="inline"><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></math> on the real axis, that is, the branch in the sector
+<math class="ltx_Math" altimg="m49.png" altimg-height="25px" altimg-valign="-7px" altimg-width="152px" alttext="|\operatorname{ph}\left(1-z\right)|\leq\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>, is the <em class="ltx_emph ltx_font_italic">principal branch</em> (or <em class="ltx_emph ltx_font_italic">principal
+value</em>) of <math class="ltx_Math" altimg="m48.png" altimg-height="26px" altimg-valign="-8px" altimg-width="130px" alttext="{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi>𝐚</mi><mo>;</mo><mi>𝐛</mi><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>; compare
+§<a href="./4.2#i" title="§4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2(i)</span></a>. Elsewhere the generalized hypergeometric function is a
+multivalued function that is analytic except for possible branch points at
+<math class="ltx_Math" altimg="m30.png" altimg-height="21px" altimg-valign="-6px" altimg-width="73px" alttext="z=0,1" display="inline"><mrow><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></mrow></math>, and <math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="25px" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>. <em class="ltx_emph ltx_font_italic">Unless indicated otherwise</em> it is assumed
+that in the DLMF
+generalized hypergeometric functions assume their principal values.</p>
+</div>
+<div id="iii.p3" class="ltx_para">
+<p class="ltx_p">On the circle <math class="ltx_Math" altimg="m51.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|z|=1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></math> the series (<a href="./16.2#E1" title="(16.2.1) ‣ §16.2(i) Generalized Hypergeometric Series ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2.1</span></a>) is absolutely
+convergent if <math class="ltx_Math" altimg="m9.png" altimg-height="24px" altimg-valign="-8px" altimg-width="77px" alttext="\Re\gamma_{q}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><msub><mi>γ</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>, convergent except at <math class="ltx_Math" altimg="m31.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=1" display="inline"><mrow><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>=</mo><mn>1</mn></mrow></math> if
+<math class="ltx_Math" altimg="m3.png" altimg-height="24px" altimg-valign="-8px" altimg-width="131px" alttext="-1&lt;\Re\gamma_{q}\leq 0" display="inline"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><msub><mi>γ</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>≤</mo><mn>0</mn></mrow></math>, and divergent if
+<math class="ltx_Math" altimg="m10.png" altimg-height="24px" altimg-valign="-8px" altimg-width="93px" alttext="\Re\gamma_{q}\leq-1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><msub><mi>γ</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>≤</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>, where</p>
+<div class="ltx_equation_container">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">16.2.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="28px" altimg-valign="-8px" altimg-width="365px" alttext="\gamma_{q}=(b_{1}+\dots+b_{q})-(a_{1}+\dots+a_{q+1})." display="block"><mrow><mrow><msub><mi>γ</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></math>:  nonnegative integer</a>,
+<a href="./16.1#t1.r5" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-8px" altimg-width="111px" alttext="a,a_{1},\ldots,a_{p}" display="inline"><mrow><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow></math>:  real or complex parameters</a> and
+<a href="./16.1#t1.r5" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="24px" altimg-valign="-8px" altimg-width="105px" alttext="b,b_{1},\ldots,b_{q}" display="inline"><mrow><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></math>:  real or complex parameters</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.E2" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./16.2.E2.tex">TeX</a>, <a href="./16.2.E2.pmml">pMML</a>, <a href="./16.2.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#iii.info" title="§16.2(iii) Case 𝑝=𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iii)</span></a>,
+<a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§16.2(iv) </span>Case <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="88px" alttext="p&gt;q+1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>&gt;</mo><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></mrow></math>
+</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=analytic%20properties">analytic properties</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1501" title="Mathematical Functions and their Approximations" class="ltx_ref">1975</a>, §5.2.1)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./13.6#vi.info" title="§13.6(vi) Generalized Hypergeometric Functions ‣ §13.6 Relations to Other Functions ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§13.6(vi)</span></a>,
+<a href="./18.34#i.p1" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.iv" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Polynomials</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=polynomial%20cases">polynomial cases</a>, <a class="ltx_keyword" href="./search/search?q=terminating">terminating</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#iv.info" title="§16.2(iv) Case 𝑝&gt;𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iv)</span></a>,
+<a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">In general the series (<a href="./16.2#E1" title="(16.2.1) ‣ §16.2(i) Generalized Hypergeometric Series ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2.1</span></a>) diverges for all nonzero values of
+<math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>. However, when one or more of the top parameters <math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi>j</mi></msub></math> is a nonpositive
+integer the series terminates and the generalized hypergeometric function is a
+polynomial in <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>. Note that if <math class="ltx_Math" altimg="m4.png" altimg-height="18px" altimg-valign="-4px" altimg-width="39px" alttext="-m" display="inline"><mrow><mo>−</mo><mi>m</mi></mrow></math> is the value of the numerically largest <math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi>j</mi></msub></math> that is a
+nonpositive integer, then the identity
+</p>
+<div class="ltx_equation_container">
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">16.2.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="120px" altimg-valign="-22px" altimg-width="624px" alttext="{{}_{p+1}F_{q}}\left({-m,\mathbf{a}\atop\mathbf{b}};z\right)=\frac{{\left(%
+\mathbf{a}\right)_{m}}(-z)^{m}}{{\left(\mathbf{b}\right)_{m}}}{{}_{q+1}F_{p}}%
+\left({-m,1-m-\mathbf{b}\atop 1-m-\mathbf{a}};\frac{(-1)^{p+q}}{z}\right)" display="block"><mrow><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>+</mo><mn>1</mn></mrow><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mo>−</mo><mi>m</mi></mrow><mo>,</mo><mi>𝐚</mi></mrow><mi>𝐛</mi></mfrac><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi>𝐚</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>m</mi></msub><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi></mrow><mo stretchy="false">)</mo></mrow><mi>m</mi></msup></mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi>𝐛</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>m</mi></msub></mfrac><mo>⁢</mo><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow><mprescripts></mprescripts><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mo>−</mo><mi>m</mi></mrow><mo>,</mo><mrow><mn>1</mn><mo>−</mo><mi>m</mi><mo>−</mo><mi>𝐛</mi></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>m</mi><mo>−</mo><mi>𝐚</mi></mrow></mfrac><mo>;</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>+</mo><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></mrow></msup><mi href="./16.1#t1.r4" title="complex variable">z</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="254px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{a_{1},\dots,a_{p}};\NVar{b_{1},\dots,b_%
+{q}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+or <math class="ltx_Math" altimg="m40.png" altimg-height="42px" altimg-valign="-15px" altimg-width="149px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{a_{1},\dots,a_{p}}\atop\NVar{b_{1},%
+\dots,b_{q}}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: alternatively <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-8px" altimg-width="110px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{\mathbf{a}};\NVar{\mathbf{b}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐚</mi><mo>;</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m39.png" altimg-height="29px" altimg-valign="-9px" altimg-width="94px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{\mathbf{a}}\atop\NVar{\mathbf{b}}};%
+\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar">𝐚</mi><mi class="ltx_nvar">𝐛</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+<br class="ltx_break">generalized hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></math>:  nonnegative integer</a>,
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></math>:  nonnegative integer</a> and
+<a href="./16.1#t1.r4" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./13.6#v.info" title="§13.6(v) Orthogonal Polynomials ‣ §13.6 Relations to Other Functions ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§13.6(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.E3" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./16.2.E3.tex">TeX</a>, <a href="./16.2.E3.pmml">pMML</a>, <a href="./16.2.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#Px1.info" title="Polynomials ‣ §16.2(iv) Case 𝑝&gt;𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iv)</span></a>,
+<a href="./16.2#iv.info" title="§16.2(iv) Case 𝑝&gt;𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iv)</span></a>,
+<a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">can be used to interchange <math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></math> and <math class="ltx_Math" altimg="m29.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></math>.</p>
+</div>
+<div id="Px1.p2" class="ltx_para">
+<p class="ltx_p">Note also that any partial sum of the generalized hypergeometric series can be
+represented as a generalized hypergeometric function via</p>
+<div class="ltx_equation_container">
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">16.2.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="125px" altimg-valign="-29px" altimg-width="583px" alttext="\sum_{k=0}^{m}\frac{{\left(\mathbf{a}\right)_{k}}}{{\left(\mathbf{b}\right)_{k%
+}}}\frac{z^{k}}{k!}=\frac{{\left(\mathbf{a}\right)_{m}}z^{m}}{{\left(\mathbf{b%
+}\right)_{m}}m!}{{}_{q+2}F_{p}}\left({-m,1,1-m-\mathbf{b}\atop 1-m-\mathbf{a}}%
+;\frac{(-1)^{p+q+1}}{z}\right)." display="block"><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>m</mi></munderover><mrow><mfrac><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi>𝐚</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>k</mi></msub><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi>𝐛</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>k</mi></msub></mfrac><mo>⁢</mo><mfrac><msup><mi href="./16.1#t1.r4" title="complex variable">z</mi><mi>k</mi></msup><mrow><mi>k</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi>𝐚</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>m</mi></msub><mo>⁢</mo><msup><mi href="./16.1#t1.r4" title="complex variable">z</mi><mi>m</mi></msup></mrow><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi>𝐛</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>m</mi></msub><mo>⁢</mo><mrow><mi>m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow><mprescripts></mprescripts><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>2</mn></mrow><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mo>−</mo><mi>m</mi></mrow><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mn>1</mn><mo>−</mo><mi>m</mi><mo>−</mo><mi>𝐛</mi></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>m</mi><mo>−</mo><mi>𝐚</mi></mrow></mfrac><mo>;</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>+</mo><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></msup><mi href="./16.1#t1.r4" title="complex variable">z</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="254px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{a_{1},\dots,a_{p}};\NVar{b_{1},\dots,b_%
+{q}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+or <math class="ltx_Math" altimg="m40.png" altimg-height="42px" altimg-valign="-15px" altimg-width="149px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{a_{1},\dots,a_{p}}\atop\NVar{b_{1},%
+\dots,b_{q}}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: alternatively <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-8px" altimg-width="110px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{\mathbf{a}};\NVar{\mathbf{b}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐚</mi><mo>;</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m39.png" altimg-height="29px" altimg-valign="-9px" altimg-width="94px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{\mathbf{a}}\atop\NVar{\mathbf{b}}};%
+\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar">𝐚</mi><mi class="ltx_nvar">𝐛</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+<br class="ltx_break">generalized hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></math>:  nonnegative integer</a>,
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></math>:  nonnegative integer</a> and
+<a href="./16.1#t1.r4" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.E4" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./16.2.E4.tex">TeX</a>, <a href="./16.2.E4.pmml">pMML</a>, <a href="./16.2.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#Px1.info" title="Polynomials ‣ §16.2(iv) Case 𝑝&gt;𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iv)</span></a>,
+<a href="./16.2#iv.info" title="§16.2(iv) Case 𝑝&gt;𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iv)</span></a>,
+<a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Non-Polynomials</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#iv.info" title="§16.2(iv) Case 𝑝&gt;𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(iv)</span></a>,
+<a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<p class="ltx_p">See §<a href="./16.5" title="§16.5 Integral Representations and Integrals ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.5</span></a> for the definition of <math class="ltx_Math" altimg="m44.png" altimg-height="26px" altimg-valign="-8px" altimg-width="110px" alttext="{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi>𝐚</mi><mo>;</mo><mi>𝐛</mi><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> as a
+contour integral when <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="88px" alttext="p&gt;q+1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>&gt;</mo><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></mrow></math> and none of the <math class="ltx_Math" altimg="m16.png" altimg-height="16px" altimg-valign="-5px" altimg-width="25px" alttext="a_{k}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi>k</mi></msub></math> is a nonpositive integer.
+(However, <em class="ltx_emph ltx_font_italic">except where indicated otherwise</em>
+in the DLMF we assume that when
+<math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="88px" alttext="p&gt;q+1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>&gt;</mo><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></mrow></math> at least one of the <math class="ltx_Math" altimg="m16.png" altimg-height="16px" altimg-valign="-5px" altimg-width="25px" alttext="a_{k}" display="inline"><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi>k</mi></msub></math> is a nonpositive integer.)</p>
+</div>
+</section>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§16.2(v) </span>Behavior with Respect to Parameters</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=analytic%20properties">analytic properties</a>, <a class="ltx_keyword" href="./search/search?q=as%20functions%20of%20parameters">as functions of parameters</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>The statement that follows (<a href="./16.2#E5" title="(16.2.5) ‣ §16.2(v) Behavior with Respect to Parameters ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2.5</span></a>) follows from the
+uniform convergence of (<a href="./16.2#E5" title="(16.2.5) ‣ §16.2(v) Behavior with Respect to Parameters ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2.5</span></a>) when <math class="ltx_Math" altimg="m27.png" altimg-height="21px" altimg-valign="-6px" altimg-width="52px" alttext="p\leq q" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>≤</mo><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></mrow></math>, and also
+when <math class="ltx_Math" altimg="m23.png" altimg-height="21px" altimg-valign="-6px" altimg-width="88px" alttext="p=q+1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>=</mo><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></mrow></math> provided that <math class="ltx_Math" altimg="m50.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|z|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>. For other values
+of <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>, apply the straightforward generalization (to higher-order
+differential equations) of Theorem 3.2 in <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, Chapter 5)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.v" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<p class="ltx_p">Let</p>
+<div class="ltx_equation_container">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">16.2.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="74px" altimg-valign="-29px" altimg-width="907px" alttext="{{}_{p}{\mathbf{F}}_{q}}\left(\mathbf{a};\mathbf{b};z\right)=\ifrac{{{}_{p}F_{%
+q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)}{\left(\Gamma%
+\left(b_{1}\right)\cdots\Gamma\left(b_{q}\right)\right)}=\sum_{k=0}^{\infty}%
+\frac{{\left(a_{1}\right)_{k}}\cdots{\left(a_{p}\right)_{k}}}{\Gamma\left(b_{1%
+}+k\right)\cdots\Gamma\left(b_{q}+k\right)}\frac{z^{k}}{k!};" display="block"><mrow><mrow><mrow><mmultiscripts><mi href="./16.2#E5" title="scaled (or Olver’s) generalized hypergeometric function">𝐅</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi>𝐚</mi><mo>;</mo><mi>𝐛</mi><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></mfrac><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true" symmetric="true">/</mo><mrow><mo>(</mo><mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>k</mi></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi>k</mi></msub></mrow><mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>+</mo><mi>k</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub><mo>+</mo><mi>k</mi></mrow><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mfrac><msup><mi href="./16.1#t1.r4" title="complex variable">z</mi><mi>k</mi></msup><mrow><mi>k</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac></mrow></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m41.png" altimg-height="26px" altimg-valign="-8px" altimg-width="112px" alttext="{{}_{\NVar{p}}{\mathbf{F}}_{\NVar{q}}}\left(\NVar{\mathbf{a}};\NVar{\mathbf{b}%
+};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2#E5" title="scaled (or Olver’s) generalized hypergeometric function">𝐅</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐚</mi><mo>;</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="96px" alttext="{{}_{\NVar{p}}{\mathbf{F}}_{\NVar{q}}}\left({\NVar{\mathbf{a}}\atop\NVar{%
+\mathbf{b}}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2#E5" title="scaled (or Olver’s) generalized hypergeometric function">𝐅</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar">𝐚</mi><mi class="ltx_nvar">𝐛</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: scaled (or Olver’s) generalized hypergeometric function</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="254px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{a_{1},\dots,a_{p}};\NVar{b_{1},\dots,b_%
+{q}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+or <math class="ltx_Math" altimg="m40.png" altimg-height="42px" altimg-valign="-15px" altimg-width="149px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{a_{1},\dots,a_{p}}\atop\NVar{b_{1},%
+\dots,b_{q}}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: alternatively <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-8px" altimg-width="110px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{\mathbf{a}};\NVar{\mathbf{b}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐚</mi><mo>;</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m39.png" altimg-height="29px" altimg-valign="-9px" altimg-width="94px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{\mathbf{a}}\atop\NVar{\mathbf{b}}};%
+\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar">𝐚</mi><mi class="ltx_nvar">𝐛</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+<br class="ltx_break">generalized hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></math>:  nonnegative integer</a>,
+<a href="./16.1#t1.r1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></math>:  nonnegative integer</a>,
+<a href="./16.1#t1.r4" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./16.1#t1.r5" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-8px" altimg-width="111px" alttext="a,a_{1},\ldots,a_{p}" display="inline"><mrow><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow></math>:  real or complex parameters</a> and
+<a href="./16.1#t1.r5" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="24px" altimg-valign="-8px" altimg-width="105px" alttext="b,b_{1},\ldots,b_{q}" display="inline"><mrow><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></math>:  real or complex parameters</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./16.2#v.info" title="§16.2(v) Behavior with Respect to Parameters ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.2.E5" title="" class="ltx_ref">http://dlmf.nist.gov/16.2.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./16.2.E5.tex">TeX</a>, <a href="./16.2.E5.pmml">pMML</a>, <a href="./16.2.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.2#v.info" title="§16.2(v) Behavior with Respect to Parameters ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2(v)</span></a>,
+<a href="./16.2#info" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.2</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">compare (<a href="./15.2#E2" title="(15.2.2) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.2.2</span></a>) in the case <math class="ltx_Math" altimg="m22.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="p=2" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>=</mo><mn>2</mn></mrow></math>, <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="52px" alttext="q=1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>=</mo><mn>1</mn></mrow></math>. When <math class="ltx_Math" altimg="m26.png" altimg-height="21px" altimg-valign="-6px" altimg-width="88px" alttext="p\leq q+1" display="inline"><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mo>≤</mo><mrow><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mo>+</mo><mn>1</mn></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./16.1#t1.r4" title="complex variable">z</mi></math> is fixed and not a branch point, any branch of
+<math class="ltx_Math" altimg="m47.png" altimg-height="26px" altimg-valign="-8px" altimg-width="112px" alttext="{{}_{p}{\mathbf{F}}_{q}}\left(\mathbf{a};\mathbf{b};z\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2#E5" title="scaled (or Olver’s) generalized hypergeometric function">𝐅</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi>𝐚</mi><mo>;</mo><mi>𝐛</mi><mo>;</mo><mi href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> is an entire function of each of the
+parameters <math class="ltx_Math" altimg="m14.png" altimg-height="24px" altimg-valign="-8px" altimg-width="183px" alttext="a_{1},\dots,a_{p},b_{1},\dots,b_{q}" display="inline"><mrow><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></math>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./16.1" title="In Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16.1 </span>Special Notation</span></a><a href="./16.3" title="In Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16.3 </span>Derivatives and Contiguous Functions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#10545c5d563d767575747271737b507e7963643e777f66">Feedback</a>;
+ Version 1.2.8;
+Release date 2026-09-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_links">
+<span class="ltx_nist_logo"><a href="http://www.nist.gov/" title="National Institute of Standards and Technology" class="NISTLogo"><span>NIST</span></a></span><p class="ltx_nist_extra ltx_align_right"><a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a></p>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5b845239ae647a2',t:'MTc5NDg1MDcxNA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5b845239ae647a2',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

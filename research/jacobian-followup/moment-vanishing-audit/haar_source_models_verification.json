@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "9837d3c00787101302299b0f0bfcf858cc91c7df425c749619b1b68baac2b2c8",
+  "sympy_version": "1.14.0",
+  "ramification_top_form_identity_exact": true,
+  "logarithmic_pole_stays_minus_one_exact": true,
+  "weighted_fibre_lattice_controls": [
+    {
+      "a": 8,
+      "b": 12,
+      "gcd": 4,
+      "r": 2,
+      "s": 3,
+      "constant_dlog_ratio": 4
+    },
+    {
+      "a": 12,
+      "b": 20,
+      "gcd": 4,
+      "r": 3,
+      "s": 5,
+      "constant_dlog_ratio": 4
+    },
+    {
+      "a": 8,
+      "b": 8,
+      "gcd": 8,
+      "r": 1,
+      "s": 1,
+      "constant_dlog_ratio": 8
+    },
+    {
+      "a": 12,
+      "b": 12,
+      "gcd": 12,
+      "r": 1,
+      "s": 1,
+      "constant_dlog_ratio": 12
+    },
+    {
+      "a": 16,
+      "b": 36,
+      "gcd": 4,
+      "r": 4,
+      "s": 9,
+      "constant_dlog_ratio": 4
+    },
+    {
+      "a": 24,
+      "b": 60,
+      "gcd": 12,
+      "r": 2,
+      "s": 5,
+      "constant_dlog_ratio": 12
+    }
+  ],
+  "Long_charged_decomposition_exact": true,
+  "fixed_original_marker_moment_controls": [
+    "1",
+    "-1/2",
+    "1/3",
+    "-1/4",
+    "1/5",
+    "-1/6",
+    "1/7",
+    "-1/8",
+    "1/9"
+  ],
+  "Cauchy_logarithm_coefficients_and_residues_exact": true,
+  "valuation_equivalence_general_proof": "written in canonical note; integer k and positive integer e",
+  "original_source_proper_models_proved": true,
+  "actual_unit_submodule_global_splitting_proved": true,
+  "actual_full_marked_module_locally_nonsplit_control_proved": true,
+  "marker_loss_in_regular_period_image_proved": true,
+  "finite_base_specific_marker_defect_localization_proved": false,
+  "proper_unit_model_identified_with_full_marked_source": false,
+  "unit_submodule_inclusion_treated_as_unit_quotient": false,
+  "ramified_cover_claimed_to_remove_original_log_pole": false,
+  "Bezout_nonconstant_Jacobian_dropped": false,
+  "old_allH_nonpurity_claimed_new": false,
+  "actual_control_claimed_pure": false,
+  "weighted_to_unweighted_Haar_transfer_used": false,
+  "primitive_purity_reflected_from_composite": false,
+  "full_actual_unit_extension_bridge_proved": false,
+  "universal_geometry_or_MZ_proof_machine_verified": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_next_task": false,
+  "new_degree_support_or_parameter_campaign": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients"
+}

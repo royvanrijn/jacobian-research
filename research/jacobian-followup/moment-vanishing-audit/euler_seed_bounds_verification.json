@@ -1,0 +1,53 @@
+{
+  "completed": true,
+  "checker_sha256": "5d3cacf0542ec63f1da1e1c515e031bf7a9ab2b28ab458557126ac07ce4a0e63",
+  "certificate_sha256": "cdf275466b7e8fe4005de74c8a74d2a217bd9bef257725aa2ae0db575bfe9b75",
+  "runtime_seconds": 26.411,
+  "sympy_version": "1.14.0",
+  "ordinary_universal_connection_identity_checks": 15,
+  "ordinary_models": 6,
+  "ordinary_connection_columns": 36,
+  "ordinary_direct_seed_columns": 18,
+  "conic_factor_charts": 2,
+  "conic_q3_cases": 4,
+  "conic_models": 8,
+  "conic_connection_columns": 42,
+  "conic_direct_seed_columns": 24,
+  "ordinary_complement_gates": {
+    "nodal": 297,
+    "transverse": 271,
+    "triangle": 244
+  },
+  "homogeneous_nodal_complement_gate": 101,
+  "conic_cubic_exclusion_gate": 258,
+  "full_W_linear_gate": 258,
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 297,
+    "cusp": 255,
+    "transverse": 271,
+    "tangent": 284,
+    "triangle": 258,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 297,
+  "least_prefix_interval": [
+    20,
+    297
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    296
+  ],
+  "all_homogeneous_sufficient_pure_prefix": 258,
+  "all_homogeneous_least_prefix_interval": [
+    14,
+    258
+  ],
+  "binary_search_rounds_max": 9,
+  "optimality_proved": false,
+  "written_analytic_or_global_proof_certified_by_checker": false,
+  "boundary": "Exact Euler representative/seed divergence identities, six full-Gaussian ordinary-node connection/seed models, conic cube-factor chart identities and eight Laurent connection/seed models. Complete rank/class cover, all-coefficient degree induction and retained analytic nonzero zeroth coefficients remain written and independently unreviewed. No expanded global radical cofactors or leastness computation."
+}

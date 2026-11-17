@@ -1,0 +1,79 @@
+{
+  "claim": "QDI1",
+  "status": "PASS",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "Long_full_birational_chart_and_cubic": "PASS",
+  "Long_classical_field_degree": {
+    "value": 3,
+    "evidence": "cubic chart and written function-field proof"
+  },
+  "full_polynomial_control": {
+    "claim": "QNI1",
+    "rank": 3,
+    "generic_division_degree": 3,
+    "completed_division_degree": 1,
+    "forward_degree_bound": 12,
+    "retained_full_relations": 15,
+    "evidence": "exact cubic chart; written differential-field degree lemma; retained relation receipt"
+  },
+  "rational_rank_one_controls": [
+    {
+      "completed_degree": 1,
+      "generic_degree": 2,
+      "extra_dimensions": 1,
+      "Weyl_relation": "PASS",
+      "derivative_inverse_mod_relation": "PASS",
+      "negative_boundary_root_valuation": "-1/1"
+    },
+    {
+      "completed_degree": 1,
+      "generic_degree": 4,
+      "extra_dimensions": 3,
+      "Weyl_relation": "PASS",
+      "derivative_inverse_mod_relation": "PASS",
+      "negative_boundary_root_valuation": "-1/3"
+    },
+    {
+      "completed_degree": 3,
+      "generic_degree": 4,
+      "extra_dimensions": 1,
+      "Weyl_relation": "PASS",
+      "derivative_inverse_mod_relation": "PASS",
+      "negative_boundary_root_valuation": "-1/1"
+    },
+    {
+      "completed_degree": 3,
+      "generic_degree": 5,
+      "extra_dimensions": 2,
+      "Weyl_relation": "PASS",
+      "derivative_inverse_mod_relation": "PASS",
+      "negative_boundary_root_valuation": "-1/2"
+    },
+    {
+      "completed_degree": 3,
+      "generic_degree": 7,
+      "extra_dimensions": 4,
+      "Weyl_relation": "PASS",
+      "derivative_inverse_mod_relation": "PASS",
+      "negative_boundary_root_valuation": "-1/4"
+    }
+  ],
+  "companion_matrix_derivation_controls": "PASS",
+  "retained_receipt_hash_chains": "PASS",
+  "hashes": {
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "3293e179bc90ec35d3c16fce45bc64aadd261b38987a8b40159bc01ed788e786",
+    "check_division_indices.py": "1af99ac911e6cbc321388b93e000e87ed643446a4d97c59d23971c50db22b7b7",
+    "IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md": "d6438f6730204ef55411826b9583b0194829534f4e8db25b68101a3014476bb4",
+    "identity_lift_controls.json": "09f6e098fa9b9673558acce783b496e22563d7918d5235dd3285e917e0be82e7",
+    "RAMIFICATION_AND_POSITION_AVOIDANCE.md": "3272e997f36f566cf0587d5d99cabb003e377a9da5457d193ee02ad6a19d9200",
+    "position_avoidance_controls.json": "86f94ba7c71848addc6bca19a661fd8b4908272292275b7ab027548d4e64a6f9",
+    "ELLIPTIC_ISOGENY_AND_QUANTUM_ENERGY.md": "e1a4004e24f868f89a1598c2e05c5a31d73345597e9d8fe431b7ef7cab45f577",
+    "quantum_elliptic_energy_controls.json": "bd5c27d0346bd6cab012550733bd6bd212ef17669b5741d9e530456094c9f9c2",
+    "../dixmier-audit/verify_long_pbw.py": "266cfed8261bdec371bd26e2bb3a46cab9f588030adcc92c4e75dbd6b150bca2"
+  },
+  "coverage_boundary": "Exact finite chart, rational Weyl and companion identities only. Completed-degree equality, all-rank PBW index bounds, valuation-lattice equivalence, canonical and spectator invariance, and all-degree control families use written proofs. Equality of generic left/right indices uses the cited 2026 preprint. No bounded Long lift, index-three existence, or all-representative nonlifting is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

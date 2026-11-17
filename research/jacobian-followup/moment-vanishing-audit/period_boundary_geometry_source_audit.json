@@ -1,0 +1,336 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/RATIONAL_CORES_AND_BOUNDARY_SUBSPACES.md",
+  "canonical_proof_sha256": "3ab075933db65b79df4bbaaa411cc63fad9913e59a91f709636ffc97ae80aedb",
+  "claims": [
+    "MVRATIONALCORE20261115",
+    "MVBOUNDARYSPACE20261115",
+    "MVREGTYPE20261115"
+  ],
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_period_boundary_geometry.py",
+  "checker_sha256": "1be550857d692ecab55cbdd3ba02516fbd85ce84c5ead5862f85bfdb99705f3b",
+  "receipt": "jacobian-followup/moment-vanishing-audit/period_boundary_geometry_verification.json",
+  "receipt_sha256": "789323ec0bcc0c89f67e52f6917e40bd227f2a9be54a1c40c7cdb47906670f9d",
+  "prior_frontier": "jacobian-followup/moment-vanishing-audit/period_boundary_geometry_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27",
+    "rank_one_image_source_audit.json": "e2cb6a2665b0287cf5e6ea53873d4df08fece3bdc693804318c33ad21ab9014c",
+    "HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+    "holonomic_source_cutoff_source_audit.json": "7e77ba8f6dd2823a6f90053a0faf8326259f4e54f68c8f29655dadb6dc66fee3",
+    "ALGEBRAIC_SPECIALIZATION_AND_FINITE_FAMILY_DECISION.md": "b4975f1c9dd56dd66577af640d6a75044fcbb2e7f1a20e0b9fe0fc73b3c3ef87",
+    "CONSTANT_COEFFICIENT_OPERATOR_DECISION.md": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "LINEAR_MIXED_CUTOFF_FROM_B_FUNCTION.md": "9c5842fe7f67dadc417b6c259f981caed14fc3d44f47401f572d49bcfc433ad1",
+    "CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "ACTUAL_DIRECTION_RANK_ONE_RIGIDITY.md": "525a5a306c59f2d24a9f7eb5e9a715d56f57b3acdbccbfeec7c8e082c7d0c90b",
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "ACTUAL_PERIOD_KERNEL_AND_ALGEBRAIC_IMAGES.md": "7beec8e370120738aa558b6dd4422ff38f2ae4670f75df5fb008e5ce6576eeb8",
+    "actual_period_kernel_source_audit.json": "b0a93e5da5a57b08c0ace1a1553eaea5ed723ffc5b77e34165ccec58b38eaee0"
+  },
+  "retained_frontier_hashes": {
+    "archive/non-elliptic/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "archive/non-elliptic/extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md": "6a9f9186d130dcdf5653a105aea1e2119110aebd80cf887243baf10bbf803994",
+    "archive/non-elliptic/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md": "5fff1bb5aae08c4bb968d7b4945086944d698a54fcc7bd08c8f9fdcd014b474f",
+    "archive/non-elliptic/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "7f7c78a729910136bf5ca28eceda86778e73309bde4e9752f1cd8da4354a00aa",
+    "archive/non-elliptic/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md": "346d8e9da14d7b64f2fa01eef95cd65dc4d9870135d8e330823d4485d22135fa"
+  },
+  "primary_scope_audit": [
+    {
+      "paper": "Milicic,Lectures on Algebraic Theory ofD-modules",
+      "url": "https://www2.math.utah.edu/~milicic/Eprints/dmodules.pdf",
+      "version": "Retained author lecture notes;original1986,major reorganization1999;no new revision date inferred",
+      "read": "ChapterI section12 point-support construction,statement12.6;chapterV1.3 finite-length theorem and proof;earlier retained localization/preservation statements",
+      "use": "Finite length and Kashiwara point equivalence;the elementary minimum-length intermediate-extension proof is given in the new note",
+      "boundary": "Unfinished cross-references in unrelated parts are not used;no global parameter-stratification theorem imported",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/milicic_dmodules_primary.pdf",
+      "sha256": "d2671c7bf7b9c29987d2c7b8ec7f010e5395d07bfe09874ba831a071c51fdb17"
+    },
+    {
+      "paper": "Oaku--Takayama--Tsai,Polynomial and rational solutions of holonomic systems,JPAA164(2001),199--220",
+      "url": "https://www.lab.twcu.ac.jp/oaku/OakuTakayamaTsai2001.pdf",
+      "version": "Retained2001 journal PDF",
+      "read": "Section4 duality setup;algorithm4.1 and displayed proof;algorithm4.6 and final Hom-basis enumeration;earlier retained section3 denominator methods",
+      "use": "Effective holonomic duality,finite Hom dimension and basis recovery;combine with retained localization and kernel algorithms",
+      "boundary": "General dual/local-cohomology/Hom producers not executed;finite controls are not a general module implementation",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/oaku_takayama_tsai_rational_2001.pdf",
+      "sha256": "aed8df7ded5ed47dbdcb77e9e29a588b87e282ac344f0d13e05b7ae947b694c1"
+    },
+    {
+      "paper": "Steiner,A new formulation of regular singularity",
+      "url": "https://arxiv.org/html/2406.14253v1",
+      "version": "Only listed arXiv submission20June2024;HTML body24August2026 is not a new version",
+      "read": "Introduction Fuchs criterion/theorems1.1--1.3;section4 theorem4.2 and proof;section5 stated weight hypotheses,lemma5.2 proof and proposition5.3/theorem5.6 statements with selected proof setup",
+      "use": "Classical Fuchs criterion and scope audit of the non-characteristic associated-graded result",
+      "boundary": "No general theorem from its section5 is imported into the coefficient-uniformity argument:time-only infinity weights have zero coefficient weights,whereas theorem5.6 assumes equal positive weights;no finite valid chart cover or exceptional-kernel control inferred",
+      "retained_file": "jacobian-followup/moment-vanishing-audit/sources/steiner_regular_singularity_2406_14253v1.html",
+      "sha256": "7909a4fb05070027c5a453d2be7d6d703eec7443da44f72038ad2305d7ddd8b4"
+    }
+  ],
+  "new_external_theorem_imported": true,
+  "fresh_exhaustive_literature_coverage": false,
+  "rational_core": {
+    "input": "Finite holonomic actual imageM subsetK[[t]],with1inM",
+    "definition": "R=M intersectK(t)",
+    "classification": "R=K[t,d0^-1],d0squarefree,d0(0)!=0",
+    "canonical_obstruction": "Largest point-supported submodule ofC=M/K[t] equalsR/K[t],multiplicity one at each geometric rational-core pole",
+    "proof": "M/R is polynomial-t-torsion-free:rational saturation;finite rank-one classification applies toR",
+    "effective_construction": "Contract kernel of map fromM to generic connection moduloK(t)*1;finite core-generator rationality tests give exact poles",
+    "boundary": "M/R can have a trivial generic quotient without retaining a faithful actual-function embedding;logarithmic example"
+  },
+  "boundary_subspaces": {
+    "fixed_data": "Fixed connection and finite open complementS,withA=M(*S)",
+    "core": "Unique least-length submoduleJ restricting to the connection;no point-supported subobject or quotient",
+    "classification": "J subsetM subsetA;A/J=direct_sumdelta_a tensorE_a;embedded intermediate modules correspond exactly to subspacesU_a subsetE_a",
+    "moduli": "For fixed dimensions,products of Grassmannians;abstract isomorphisms may identify points by connection automorphisms",
+    "computation": "J=kernel(A->dualGamma_S(dualA));point kernels and finite Hom bases recover multiplicity spaces and embeddedU_a",
+    "nonsplitting": "No nonzero boundary point quotient splits into a torsion-free intermediate module",
+    "different_defects": "M/J is not the punctual submodule ofM/K[t];log model has first0 secondnonzero,diagonal algebraic model has firstnonzero second0",
+    "trace_boundary": "Generic finite-cover trace projection need not preserve the actual lattice",
+    "global_phase_parameter_classification": false
+  },
+  "regularity": {
+    "criterion": "Minimal actual scalar equation;finite ord_a(a_j)>=j-d and infinity rational degree<=j-d",
+    "field_scope": "Effective finitely generated coefficient field;independent outputvariables retained",
+    "source_rank_boundary": "Nonminimal Kummer source is irregular at infinity although selected polynomial actual image is regular",
+    "finite_boundary_modifications_change_generic_irregular_type": false,
+    "number_field_classification": [
+      "polynomial safe",
+      "rational finite-pole failure",
+      "nonrational regular algebraic failure",
+      "nonrational regular transcendental failure",
+      "irregular failure"
+    ],
+    "arbitrary_transcendental_field_algebraicity_algorithm_imported": false
+  },
+  "parameter_uniformity_audit": {
+    "attempt": "Joint coefficient/time holonomicity plus infinityV-filtration restriction",
+    "unresolved_step": "Specialization-valid relative good filtration/zero coefficient weights,turning points and generator shifts",
+    "Steiner_positive_weight_theorem_supplies_this_step": false,
+    "global_complex_safe_locus_stabilization_proved": false,
+    "Artin_nonuniformity_retracted": false
+  },
+  "small_replay": {
+    "completed": true,
+    "checker_sha256": "1be550857d692ecab55cbdd3ba02516fbd85ce84c5ead5862f85bfdb99705f3b",
+    "python_version": "3.12.3",
+    "sympy_version": "1.14.0",
+    "Fuchs_controls": [
+      {
+        "name": "constant_minimal",
+        "order": 1,
+        "finite_points": [],
+        "infinity_regular": true,
+        "infinity_violations": [],
+        "regular_on_P1": true
+      },
+      {
+        "name": "rational_pole",
+        "order": 1,
+        "finite_points": [
+          {
+            "factor": "t - 1",
+            "regular": true,
+            "violations": []
+          }
+        ],
+        "infinity_regular": true,
+        "infinity_violations": [],
+        "regular_on_P1": true
+      },
+      {
+        "name": "square_root",
+        "order": 1,
+        "finite_points": [
+          {
+            "factor": "t - 1",
+            "regular": true,
+            "violations": []
+          }
+        ],
+        "infinity_regular": true,
+        "infinity_violations": [],
+        "regular_on_P1": true
+      },
+      {
+        "name": "constant_plus_square_root",
+        "order": 2,
+        "finite_points": [
+          {
+            "factor": "t - 1",
+            "regular": true,
+            "violations": []
+          }
+        ],
+        "infinity_regular": true,
+        "infinity_violations": [],
+        "regular_on_P1": true
+      },
+      {
+        "name": "logarithm",
+        "order": 2,
+        "finite_points": [
+          {
+            "factor": "t - 1",
+            "regular": true,
+            "violations": []
+          }
+        ],
+        "infinity_regular": true,
+        "infinity_violations": [],
+        "regular_on_P1": true
+      },
+      {
+        "name": "constant_plus_exponential",
+        "order": 2,
+        "finite_points": [],
+        "infinity_regular": false,
+        "infinity_violations": [
+          {
+            "coefficient_order": 1,
+            "growth_degree": 0,
+            "maximum": -1
+          }
+        ],
+        "regular_on_P1": false
+      },
+      {
+        "name": "Airy",
+        "order": 2,
+        "finite_points": [],
+        "infinity_regular": false,
+        "infinity_violations": [
+          {
+            "coefficient_order": 0,
+            "growth_degree": 1,
+            "maximum": -2
+          }
+        ],
+        "regular_on_P1": false
+      },
+      {
+        "name": "Kummer_nonminimal",
+        "order": 2,
+        "finite_points": [
+          {
+            "factor": "t",
+            "regular": true,
+            "violations": []
+          }
+        ],
+        "infinity_regular": false,
+        "infinity_violations": [
+          {
+            "coefficient_order": 0,
+            "growth_degree": -1,
+            "maximum": -2
+          },
+          {
+            "coefficient_order": 1,
+            "growth_degree": 0,
+            "maximum": -1
+          }
+        ],
+        "regular_on_P1": false
+      },
+      {
+        "name": "Kummer_minimal",
+        "order": 1,
+        "finite_points": [
+          {
+            "factor": "t**5 - 30*t**4 + 300*t**3 - 1200*t**2 + 1800*t - 720",
+            "regular": true,
+            "violations": []
+          }
+        ],
+        "infinity_regular": true,
+        "infinity_violations": [],
+        "regular_on_P1": true
+      },
+      {
+        "name": "finite_irregular",
+        "order": 1,
+        "finite_points": [
+          {
+            "factor": "t - 1",
+            "regular": false,
+            "violations": [
+              {
+                "coefficient_order": 0,
+                "valuation": -2,
+                "required": -1
+              }
+            ]
+          }
+        ],
+        "infinity_regular": true,
+        "infinity_violations": [],
+        "regular_on_P1": false
+      }
+    ],
+    "infinity_coordinate_change_checked": true,
+    "point_tower_controls": 6,
+    "boundary_subspace_controls": 20,
+    "boundary_multiplicity_subspaces": 5,
+    "diagonal_boundary_control": {
+      "generic_rank": 2,
+      "boundary_quotient_dimension": 1,
+      "rational_pole_subspace_at2_dimension": 0,
+      "trace_does_not_preserve_actual_lattice": true,
+      "abstract_algebraic_model_not_new_Gaussian_counterexample": true
+    },
+    "logarithmic_core_controls": 6,
+    "minimal_log_extension_has_rational_pole_but_no_boundary_quotient": true,
+    "mutation_controls": {
+      "quotient_not_assumed_to_embed_in_actual_function_field": true,
+      "boundary_quotient_not_identified_with_punctual_submodule_of_obstruction": true,
+      "boundary_space_dimensions_not_used_without_embedding": true,
+      "finite_tower_not_used_to_claim_uniform_nilpotence_of_point_module": true,
+      "regularity_test_uses_minimal_actual_operator": true,
+      "infinity_not_omitted": true,
+      "generic_trace_projection_not_assumed_to_preserve_lattice": true,
+      "positive_weight_restriction_theorem_not_applied_to_zero_weight_coefficients": true
+    },
+    "general_rational_core_solver_executed": false,
+    "general_intermediate_extension_solver_executed": false,
+    "general_holonomic_duality_producer_executed": false,
+    "general_local_cohomology_producer_executed": false,
+    "general_Hom_basis_producer_executed": false,
+    "general_boundary_subspaces_computed_for_a_new_Gaussian_phase": false,
+    "universal_proofs_certified_by_checker": false,
+    "global_complex_safe_locus_uniformity_proved": false,
+    "global_coefficient_stratification_proved": false,
+    "all_higher_rank_Gaussian_connections_classified": false,
+    "new_SIC33_answer_computed": false,
+    "new_Delta_minimum_computed": false,
+    "numeric_cubic_frontier_changed": false,
+    "operator_order_reduced": false,
+    "independent_replay": false,
+    "external_review": false,
+    "formal_verification": false
+  },
+  "general_rational_core_solver_executed": false,
+  "general_intermediate_extension_solver_executed": false,
+  "general_holonomic_duality_producer_executed": false,
+  "general_local_cohomology_producer_executed": false,
+  "general_Hom_basis_producer_executed": false,
+  "general_boundary_subspaces_computed_for_a_new_Gaussian_phase": false,
+  "universal_proofs_certified_by_checker": false,
+  "global_complex_safe_locus_uniformity_proved": false,
+  "global_coefficient_stratification_proved": false,
+  "all_higher_rank_Gaussian_connections_classified": false,
+  "new_SIC33_answer_computed": false,
+  "new_Delta_minimum_computed": false,
+  "numeric_cubic_frontier_changed": false,
+  "operator_order_reduced": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Independent review of rational saturation,punctual obstruction,minimum-length intermediate-extension proof,dual/local-cohomology construction and Fuchs scope",
+    "General rational-core/intermediate-extension/local-cohomology/Hom producers not run;no new large Gaussian actual module computed",
+    "Classify generic higher-rank Gaussian connections and the embedded boundary subspaces selected by their periods",
+    "Normalized constant-b higher seed-rank trivial quotients and global complex coefficient-safe-locus stabilization remain open",
+    "Higher radial degree,mixed angular signs,valid operator compression,denseSIC33,leastDelta endpoint,cubic optimum and prior analytic review remain open"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "jacobian-followup/moment-vanishing-audit/ALGEBRAIC_BOUNDARY_ONE_MOTIVE_AND_CONSTANT_SECTION.md",
+  "proof_sha256": "cf4fcb2518648d65967b380ed1a7c608218c9614e34e0321a96811278659bdcb",
+  "checker": "jacobian-followup/moment-vanishing-audit/verify_haar_boundary_motive.py",
+  "checker_sha256": "b895694c0b1fc35e50d86300e6cdcc48e42ac5192bfde861e61d30866d53df03",
+  "receipt": "jacobian-followup/moment-vanishing-audit/haar_boundary_motive_verification.json",
+  "receipt_sha256": "675b6b6929d82bef809c7ff39170d393b630e7c6e63f08067900cb80c7be0dee",
+  "repository_sources": [
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/INTRINSIC_SOURCE_SPLITTING_AND_FULL_HAAR_SAFETY.md",
+      "sha256": "74036934113a01fc8e5959bff89e7f0f091399a84395165c43331a9752606b10",
+      "use": "Full all-phase source-unit splitting iff safety under eventual purity;actual relation K no independent gate. Mixed fixed part of original/dual and admissibility remain."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/CANONICAL_BOUNDARY_REDUCTION_AND_LOWEST_WEIGHT_INVARIANTS.md",
+      "sha256": "5bba81a02bc817eb29835d76f6d5744973a5100b70f4f4fa39c90fed6f3584f8",
+      "use": "Canonical geometric E weights4/5/6,rank1 ambient lowest piece,full compact-middle removal and finite-cover ambient SUM law for every H."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/CONSTANT_GENUS_TRANSLATIONS_AND_ACTUAL_RECOMPOSITION.md",
+      "sha256": "7aa7b705df0d2663ffdd741422eda20ce497766118f2004353c9a364ffdf3c16",
+      "use": "Actual rank injection/reflection,unique safe-centre/no-eventual-composite consequences,and genuine Long fibre/rank/source-unit identification."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/UNIPOTENT_HAAR_EXTENSIONS_AND_GENERAL_RECOMPOSITION.md",
+      "sha256": "beac9f1af54c16ad746b2dd527ca9bc2526a742459bab75871d721682a077c4d",
+      "use": "Strict actual geometric limit/source monodromy conventions;intrinsic cycle extension survives all branches."
+    },
+    {
+      "source": "jacobian-followup/moment-vanishing-audit/POLYNOMIAL_RECOMPOSITION_REFLECTION_AND_UNIVERSAL_FAILURE.md",
+      "sha256": "8ceafda92c79a808344b89da84d36017db8767bc1d240e39b7c7d4a8df59aca6",
+      "use": "All-degree original-marker recomposition and primary Long law retained;no exceptional invariance transfer."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Luca Barbieri-Viale,Andreas Rosenschon,Morihiko Saito",
+      "title": "Deligne conjecture on1-motives,Annals158(2003),593-633",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v158-n2-p06.pdf",
+      "doi": "10.4007/annals.2003.158.593",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/barbieri_rosenschon_saito_deligne_2003.pdf",
+      "sha256": "db333b556bb674498fb60df788c3789ed18ed147f73798f1c66745bb76f6d54e",
+      "read": "Fresh complete PDF1-4 Theorems0.1/0.2 with rational/integral distinction;PDF6-9 Proposition1.3 and full point-equivalence1.5 with proof;PDF18-25 Construction3.1,Picard representability3.2 and semiabelianity3.3 with proofs,etale comparison3.4,deRham3.5 setup;PDF34-40 Corollary5.2 and COMPLETE5.3-5.6 proofs. PDF2 and20 rendered and visually checked. Not the whole resolution/Hodge formalism independently reproduced.",
+      "exact_import": "DEEP PUBLISHED IMPORT: algebraic construction and Hodge comparison of the1-motivic part of RELATIVE cohomology,Theorem0.1 and3.1/5.4-5.6,used ONLY rationally/up to isogeny. Point1-motive/MHS equivalence Proposition1.5. New deductions apply this geometric construction to Hc3 of the compactified complement,spread chosen ambient NS/Picard data,pull back its rank1 lattice,and give constant-point and all-branch Weil-restriction criteria. No blanket relative essential-surjectivity theorem imported."
+    },
+    {
+      "author": "Joseph Steenbrink and Steven Zucker",
+      "title": "Variation of mixed Hodge structure.I,1985,Proposition4.19",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0080/LOG_0032.pdf",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/steenbrink_zucker_vmhs_I_1985.pdf",
+      "sha256": "d8a41457f4174ac5844ca2129c3db842e5f0ae37e8e8c4ec3bcdb006627e88ad",
+      "read": "Retained prior complete original scanned Properties3.13 and fixed-part4.19/rigidity4.20 visual audit,with AppendixA;not freshly reread whole construction.",
+      "exact_import": "The entire invariant part of an admissible graded-polarizable VMHS is a CONSTANT MHS. Constant MHS extensions need not split as MHS;global flat splitting is weaker."
+    },
+    {
+      "author": "Christopher D.Long",
+      "title": "Counterexamples to xz and Mathieu for SU2,2607.19012v1",
+      "url": "https://arxiv.org/html/2607.19012v1",
+      "cached_file": "jacobian-followup/moment-vanishing-audit/sources/long_260719012v1_recomposition_20261116.html",
+      "sha256": "abeec76e95cba0e6244f4af31240634e28d657116c8afcf743b58db144dd7ebd",
+      "read": "Retained exact same version primary Theorem4.2 and full proof already audited in prior recomposition turn. No fresh literature-wide or unrelated Jacobian claims imported.",
+      "exact_import": "ONLY known purity of F and h(QF^k)=(-1)^(k-1)/(k+1). Composite P=F(F+1),the all-n beta-tail,constant scalar norm and weighted Cauchy trace are new exact deductions."
+    }
+  ],
+  "rejected_shortcut_source": {
+    "title": "Bertolin2603.16545v3 relative equivalence",
+    "url": "https://arxiv.org/pdf/2603.16545v3",
+    "cached_file": "jacobian-followup/moment-vanishing-audit/sources/bertolin_260316545v3.pdf",
+    "sha256": "1cfd6df4c0fbcc486f30c18232f98cd68c80f6ea07b4c97f960225482457fe64",
+    "read": "Fresh PDF1-11 including no-fixed-part-after-every-finite-cover standing hypothesis,pages4-7 displayed toric forgetting maps,Theorem1.2 andproof,pages9-11 Theorem2.1 andproof;not used as a theorem.",
+    "reason_not_imported": "A nonzero toric part supplies invariants on a finite splitting cover,so the no-fixed-part hypothesis does NOT cover the full Haar boundary system. Constant section2 gives an admissible constant nonsplit MHS with split underlying local system;displayed forgetting maps cannot be used as UNRESTRICTED injectivity claims. Published geometric BRS construction is used instead. No global assessment of this preprint or external specialist review is claimed."
+  },
+  "new_written_arguments": [
+    "H=(E(2))dual embeds in Hc3(U)(1)=H3(Y,D)(1),has1-motivic types and rank1 top lattice;localization reduces it to the boundary. Published BRS relative construction yields finite Picard/NS/gluing data and rank1 section after pullback/spreading/descent up to isogeny,without claiming every fibre NS rank constant.",
+    "Global source-unit splitting iff the rank1 lattice generator has an invariant Betti lift. Mixed fixed part and POINT equivalence turn that into a constant1-motive mapping into the family;Hom rigidity gives algebraicity on a dense open. Thus[m]sigma=h(a) for one CONSTANT point in a CONSTANT semiabelian variety. Converse follows directly. Constant nontorsion is allowed;Hodge splitting,torsion and quotient-by-fixed-group alone are not the test.",
+    "Deleting extra regular values preserves source monodromy image;ANY finite base cover reflects rational unit splitting by averaging on its normal closure. Construction covers the original global source and every phase.",
+    "For EVERY H,the exact geometric ambient-SUM quotient dualizes to a DIAGONAL rank1 lattice in finite induction. The semiabelian family is Weil restriction and its section the ALL-BRANCH tuple,not scalar norm. Both abelian dimension and torus rank multiply bydegH;source constant-type gate reflects H before purity.",
+    "Genuine Long shifted primitive has representative(tau-1/2)/(tau+1/2). H=tau\u00b2-1/4 gives ACTUAL PURE P=F(F+1),same fixed Q with all-n nonzero beta tail,and reciprocal branch tuple of scalar norm1. Actual weighted trace retains log difference. No exceptional invariance or new minimum-degree claim."
+  ],
+  "essential_boundaries": [
+    "Both FULL exceptional cases OPEN at constant type of sigma_f for EVERY exceptional eventually pure phase,or genuine admissible failure.",
+    "Geometric construction is a written producer from resolved pairs,not implemented resolution/Picard/fixed-part software or universal constancy proof.",
+    "Rational/up-to-isogeny ONLY;no torsion/integral or arbitrary-coefficient-ring topological promotion. No universal machine proof or external review.",
+    "No pure composite existence inferred from source nonsplitting. All original markers,phases,H degrees and branches retained."
+  ]
+}

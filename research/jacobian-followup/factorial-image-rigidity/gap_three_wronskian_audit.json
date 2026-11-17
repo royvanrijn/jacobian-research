@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "canonical_proof": "GAP_THREE_WRONSKIAN_RECURRENCE.tex",
+  "uniform_Wronskian_shape_shift_and_recurrence_proved": true,
+  "bivariate_coefficient_positivity_proved": true,
+  "no_common_real_section_root_proved": true,
+  "one_real_rooted_section_suffices_proved": true,
+  "fifth_order_all_positive_Gamma_shapes_proved": true,
+  "uniform_section_real_rootedness_proved": false,
+  "all_index_gap_three_SFC_closed": false,
+  "separate_input_interlacing_induction_refuted": true,
+  "general_FC_closed": false,
+  "unrestricted_SFC_closed": false,
+  "finite_extrapolation": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "boundary": "Recurrences and weaker conditional criterion all parameters; actual uniform simplicity only n<=5 at gap3, reusing the all-gap n<=4 theorem. Uniform higher-index real-section proof remains open."
+}

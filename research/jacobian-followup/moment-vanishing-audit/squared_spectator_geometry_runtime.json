@@ -1,0 +1,10 @@
+{
+  "Python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "Sympy_version": "1.14.0",
+  "PyMuPDF_version": "2.1",
+  "execution": "Exact rational polynomial/Wick contractions,Euler Ore products and connection transcriptions only; no new integration/kernel computation or capped-job restart.",
+  "imported_code_files_sha256": {
+    "gaussian_generic_cutoff_producer.py": "c9b1a84b8502f339af464f044dbbf523cf93c8c7edaec79bd81f0cabd6d8dfc7",
+    "gaussian_ordinary_cutoff_producer.py": "bdfa058a44a9c2ed0be8dd2eae062d20559edd83a30e7dc23c6a823aa1e7a0e7"
+  }
+}

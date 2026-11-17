@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-16",
+  "current_goal_turn": "PROGRESS:projective nonisolated all-dimensional log periods,adjunction/common-half-leading gate,ALL single Peter-Weyl components safe with all multiplicities,and ALL real single-isotypic seed polynomials excluded",
+  "new_claims": [
+    "GPROJECTIVELOGPERIOD20261116",
+    "GADJUNCTIONBOUNDARY20261116",
+    "GEXCEPTIONALHALFFIBRE20261116",
+    "GALLISOTYPICSAFE20261116",
+    "GREALISOTYPICSEED20261116"
+  ],
+  "schema_dependency_acyclicity_and_checker_hashes": true,
+  "preserved_prior_records": {
+    "MATH_STATUS.json": 2911,
+    "knowledge/lessons.json": 557,
+    "knowledge/work_items.json": 44
+  },
+  "concurrent_records_preserved_at_locked_hashes": 186,
+  "concurrent_record_hash_audit": "jacobian-followup/moment-vanishing-audit/semistable_isotypic_concurrent_records.json",
+  "concurrent_record_hash_audit_sha256": "f050577c2bb91a09634ebafe76047e701fc790c9fcba9ed3d31919e00b386a90",
+  "concurrent_claim_changes_disjoint_from_proof_dependency_closure": true,
+  "unrelated_concurrent_mathematics_validated": false,
+  "shared_work_baseline_sha256": "3fd70150d4b1e151f56ce5c45023521e216bf1e7556cea90cda7dac190d9a99b",
+  "prior_lesson_baseline_sha256": "5deb042753f40ebe251bb7fe264a9dc4d05646a8e5cd6c6d6a2c7f3544c3d7de",
+  "original_marker_degree_graph_constraints_and_Gaussian_bridge_preserved": true,
+  "old_single_component_field_existence_and_radical_questions_subsumed": true,
+  "reviewed_lesson": "METHOD-SEMISTABLE-ISOTYPIC-SAFETY-20261116",
+  "reviewed_prior_lessons": [
+    "METHOD-DEG12-NORMALIZER-MOMENT-IDEAL-20261115",
+    "METHOD-DEG12-SPARSE-UNIT-IDEALS-20261115",
+    "METHOD-PROPER-QUADRIC-LEADING-GATE-20261115",
+    "METHOD-THIN-MATRIX-MARKERS-20261115",
+    "METHOD-TORUS-VOLUME-CLOSURE-20261115"
+  ],
+  "reviewed_work_item": "WORK-EXCEPTIONAL-SL2-MOMENTS",
+  "scope_fingerprints_reviewed": true,
+  "proof_checker_receipt_and_primary_hashes": true,
+  "canonical_local_links_checked": 5,
+  "all_single_Peter_Weyl_components": "CLOSED internally on BOTH models,ALL degrees,ALL right multiplicities;nonzero pure iff strict common left root>D/2;uniform cutoff2m>marker degree",
+  "coefficient_ring_scope": "C and ALL reduced commutative C-algebras;new single-isotypic statement not silently extended to nonreduced families",
+  "moment_and_invariant_ideal_radicals": "equal nullcone ideals;ordinary V12 invariant-quartic deficit preserved",
+  "full_failure_requires": "mixed nonconstant Peter-Weyl degrees;common leading left root multiplicity>=D/2;finite stabilizer under every automorphism-conjugated left action;outside all automorphic torus-fixed subalgebras",
+  "full_icosahedral_failure_minimum_matrix_degree": 20,
+  "full_thin_phase_degree_gates": {
+    "2O": 36,
+    "2I": 60
+  },
+  "fixed_bad_marker_degree_bounds": {
+    "2O": "D-12",
+    "2I": "D-20"
+  },
+  "all_real_single_isotypic_seed_polynomial_phases": "excluded from nonzero purity in every degree",
+  "period_scope": "PROJECTIVE smooth models with holomorphic ORIGINAL volume,all dimensions,N>=2,no isolated-critical assumption;not arbitrary affine maps",
+  "numerical_prefix_or_nilpotence_bound_computed": false,
+  "ordinary_pure_ideals_assumed_equal_or_reduced": false,
+  "remaining_scope": "FULL mixed non-T thin and image-interior marked safety;opposite lower weights cannot be discarded by a leading contraction;ordinary nilpotent single-isotypic families and numeric sufficient prefixes are separate;independent symmetrized height gate remains",
+  "universal_proofs_machine_verified": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "assurance": "Internal written proofs with exact classical imports and selected algebraic controls;independent specialist review pending",
+  "full_exceptional_MZ_decisions": "OPEN on both models",
+  "new_support_or_prefix_campaign": false,
+  "rendered_views": [
+    "index/README.md",
+    "index/geometry.md",
+    "index/documents.tsv",
+    "knowledge/ALGORITHMS.md",
+    "knowledge/WORK_LEDGER.md",
+    "knowledge/work/geometry.md",
+    "STATUS.md"
+  ],
+  "scoped_integration": "PASS",
+  "selected_exact_controls": "PASS",
+  "full_repository_navigation": "FAIL:pre-existing KDSQ6 missing consumer artifacts/generated-results/README.md",
+  "full_repository_validated": false,
+  "goal_status": "active",
+  "git_diff_check": "PASS",
+  "new_file_whitespace_newlines_and_JSON": "PASS:10 files"
+}

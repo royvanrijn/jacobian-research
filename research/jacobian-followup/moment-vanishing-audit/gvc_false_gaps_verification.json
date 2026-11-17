@@ -1,0 +1,200 @@
+{
+  "completed": true,
+  "checker_sha256": "01201b342fd7d313475da58af72135ca31c62e53db76232aa7d5ea5757d3d09e",
+  "supporting_checker_hashes": {
+    "verify_formal_apolar_gaps.py": "ff0775510e26ed25d1a3b53071fa2b482766e574f812fbc496e7fafcb5991ebd",
+    "verify_gvc_paired_recomposition.py": "e236fd0dea9316fe55fff8e33fe7a3bb768f7d31f12e4bd1eb813a6feec83179"
+  },
+  "sympy_version": "1.14.0",
+  "independent_block_controls": [
+    {
+      "m": 1,
+      "heights": [
+        2,
+        1
+      ],
+      "sum": 3,
+      "product": 1,
+      "power2": 1
+    },
+    {
+      "m": 2,
+      "heights": [
+        4,
+        3
+      ],
+      "sum": 7,
+      "product": 3,
+      "power2": 3
+    }
+  ],
+  "safe_subadditivity_controls": [
+    {
+      "m": 1,
+      "height": 0,
+      "nilpotence_index": 1
+    },
+    {
+      "m": 2,
+      "height": 0,
+      "nilpotence_index": 1
+    },
+    {
+      "m": 3,
+      "height": 2,
+      "nilpotence_index": 3
+    },
+    {
+      "m": 4,
+      "height": 2,
+      "nilpotence_index": 3
+    },
+    {
+      "m": 5,
+      "height": 2,
+      "nilpotence_index": 3
+    },
+    {
+      "m": 6,
+      "height": 4,
+      "nilpotence_index": 5
+    }
+  ],
+  "sharp_boundary_value": "12960",
+  "retained_seed_height_controls": [
+    {
+      "m": 1,
+      "height": 0,
+      "pure": true,
+      "penultimate_nonzero": true
+    },
+    {
+      "m": 2,
+      "height": 1,
+      "pure": true,
+      "penultimate_nonzero": true
+    },
+    {
+      "m": 3,
+      "height": 2,
+      "pure": true,
+      "penultimate_nonzero": true
+    }
+  ],
+  "auxiliary_direct_height_controls": [
+    {
+      "r": 5,
+      "m": 1,
+      "height": 0
+    },
+    {
+      "r": 5,
+      "m": 2,
+      "height": 1
+    },
+    {
+      "r": 5,
+      "m": 3,
+      "height": 1
+    },
+    {
+      "r": 5,
+      "m": 4,
+      "height": 2
+    },
+    {
+      "r": 5,
+      "m": 5,
+      "height": 5
+    },
+    {
+      "r": 5,
+      "m": 6,
+      "height": 5
+    },
+    {
+      "r": 7,
+      "m": 1,
+      "height": 0
+    },
+    {
+      "r": 7,
+      "m": 4,
+      "height": 2
+    },
+    {
+      "r": 7,
+      "m": 7,
+      "height": 7
+    },
+    {
+      "r": 7,
+      "m": 8,
+      "height": 7
+    }
+  ],
+  "periodic_gap_integer_controls": [
+    {
+      "M": 1,
+      "r": 5,
+      "pure_indices_checked": 10,
+      "zero_first_shift_window": [
+        2,
+        2
+      ],
+      "square_marker_nonzero_indices_checked": 10
+    },
+    {
+      "M": 2,
+      "r": 7,
+      "pure_indices_checked": 14,
+      "zero_first_shift_window": [
+        3,
+        4
+      ],
+      "square_marker_nonzero_indices_checked": 14
+    },
+    {
+      "M": 3,
+      "r": 9,
+      "pure_indices_checked": 18,
+      "zero_first_shift_window": [
+        4,
+        6
+      ],
+      "square_marker_nonzero_indices_checked": 18
+    }
+  ],
+  "actual_M1_tensor_window_zero": true,
+  "dimension_free_defect_controls": [
+    {
+      "n": 2,
+      "r": 3,
+      "defect": 1
+    },
+    {
+      "n": 3,
+      "r": 4,
+      "defect": 2
+    },
+    {
+      "n": 4,
+      "r": 5,
+      "defect": 3
+    }
+  ],
+  "guard_refusals": 3,
+  "exact_bounded_calculator_implemented": true,
+  "universal_height_calculus_proved_by_samples": false,
+  "all_M_gap_theorem_inferred_from_fitting": false,
+  "general_formal_gap_decided": false,
+  "new_frontier_endpoint_claimed": false,
+  "genuine_symmetric_gap_theorem_refuted": false,
+  "dimension_dependent_quasisubadditivity_disproved": false,
+  "all_ring_height_calculus_claimed": false,
+  "full_exceptional_MZ_decided": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "novelty_claimed": false
+}

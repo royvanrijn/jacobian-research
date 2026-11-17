@@ -1,0 +1,26 @@
+{
+  "completed": true,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "96f607e7a0bb444c5c9233cbdc7d95181ab4f0a8e2c362a9cda3deaf664ee8f5",
+  "kummer_series_equation_Ext_functional_and_fibre_recurrence_controls": [
+    {
+      "alpha": "1/2",
+      "jet_order": 9,
+      "nontrivial_finite_monodromy": true
+    },
+    {
+      "alpha": "2/3",
+      "jet_order": 9,
+      "nontrivial_finite_monodromy": true
+    }
+  ],
+  "nonzero_nonunit_coefficient_ideal_control": true,
+  "universal_proofs_machine_verified": false,
+  "exceptional_Kummer_realization_claimed": false,
+  "local_monodromy_exclusion_valid": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "new_degree_or_support_campaign": false
+}

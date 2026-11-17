@@ -1,0 +1,510 @@
+{
+  "as_of": "2026-11-15",
+  "outcome": "PASS",
+  "check_count": 180,
+  "checks": [
+    "predecessor PASS coordinate_pencil_matrix_receipt.json",
+    "predecessor seal coordinate_pencil_matrix_receipt.json verify_coordinate_pencil_matrix.py",
+    "predecessor seal coordinate_pencil_matrix_receipt.json GLOBAL_COORDINATE_PENCIL_AND_MATRIX.md",
+    "predecessor seal coordinate_pencil_matrix_receipt.json sources/coordinate-pencil-matrix/manifest.json",
+    "predecessor seal coordinate_pencil_matrix_receipt.json two_sided_norm_receipt.json",
+    "predecessor seal coordinate_pencil_matrix_receipt.json unramified_sheet_pair_receipt.json",
+    "predecessor seal coordinate_pencil_matrix_receipt.json universal_regular_end_receipt.json",
+    "predecessor seal coordinate_pencil_matrix_receipt.json exact_coordinate_bridge_receipt.json",
+    "predecessor seal coordinate_pencil_matrix_receipt.json unramified_orevkov_receipt.json",
+    "predecessor seal coordinate_pencil_matrix_receipt.json coordinate_regular_sector_receipt.json",
+    "predecessor seal coordinate_pencil_matrix_receipt.json sources/coordinate-pencil-matrix/xie-valuation-intersections.pdf",
+    "predecessor PASS two_sided_norm_receipt.json",
+    "predecessor seal two_sided_norm_receipt.json verify_two_sided_norm.py",
+    "predecessor seal two_sided_norm_receipt.json TWO_SIDED_NORM_AND_COMMON_RULING.md",
+    "predecessor seal two_sided_norm_receipt.json sources/two-sided-norm/manifest.json",
+    "predecessor seal two_sided_norm_receipt.json unramified_sheet_pair_receipt.json",
+    "predecessor seal two_sided_norm_receipt.json sources/universal-regular-end/dubouloz-dfs-0401225v3.pdf",
+    "predecessor seal two_sided_norm_receipt.json sources/unramified-sheet-pair/stacks-04L2.html",
+    "predecessor PASS unramified_sheet_pair_receipt.json",
+    "predecessor seal unramified_sheet_pair_receipt.json verify_unramified_sheet_pair.py",
+    "predecessor seal unramified_sheet_pair_receipt.json UNRAMIFIED_SHEET_AND_PAIRWISE_CURVE.md",
+    "predecessor seal unramified_sheet_pair_receipt.json sources/unramified-sheet-pair/manifest.json",
+    "predecessor seal unramified_sheet_pair_receipt.json ../jc2-r7-global-cover/sources/nori-1983.pdf",
+    "predecessor seal unramified_sheet_pair_receipt.json sources/unramified-sheet-pair/stacks-04L2.html",
+    "predecessor seal unramified_sheet_pair_receipt.json lefschetz_centralizer_receipt.json",
+    "predecessor seal unramified_sheet_pair_receipt.json unramified_orevkov_receipt.json",
+    "predecessor seal unramified_sheet_pair_receipt.json universal_regular_end_receipt.json",
+    "predecessor seal unramified_sheet_pair_receipt.json higher_regular_coordinate_receipt.json",
+    "predecessor seal unramified_sheet_pair_receipt.json coordinate_regular_sector_receipt.json",
+    "primary source stacks-0C1B.html",
+    "primary source xie-valuation-intersections.pdf",
+    "whole grouped primitive matrix by actual shared point blowups [(0, 2)]",
+    "grouped Schur energy keeps all within-fibre cross terms [(0, 2)]",
+    "distinct-value blocks have exact zero cross terms [(0, 2)]",
+    "canonical source volume orders match every component [(0, 2)]",
+    "whole grouped primitive matrix by actual shared point blowups [(0, 2), (0, 3)]",
+    "grouped Schur energy keeps all within-fibre cross terms [(0, 2), (0, 3)]",
+    "distinct-value blocks have exact zero cross terms [(0, 2), (0, 3)]",
+    "canonical source volume orders match every component [(0, 2), (0, 3)]",
+    "whole grouped primitive matrix by actual shared point blowups [(0, 2), (1, 3)]",
+    "grouped Schur energy keeps all within-fibre cross terms [(0, 2), (1, 3)]",
+    "distinct-value blocks have exact zero cross terms [(0, 2), (1, 3)]",
+    "canonical source volume orders match every component [(0, 2), (1, 3)]",
+    "whole grouped primitive matrix by actual shared point blowups [(0, 2), (0, 3), (1, 4)]",
+    "grouped Schur energy keeps all within-fibre cross terms [(0, 2), (0, 3), (1, 4)]",
+    "distinct-value blocks have exact zero cross terms [(0, 2), (0, 3), (1, 4)]",
+    "canonical source volume orders match every component [(0, 2), (0, 3), (1, 4)]",
+    "whole grouped primitive matrix by actual shared point blowups [(0, 2), (1, 3), (2, 4)]",
+    "grouped Schur energy keeps all within-fibre cross terms [(0, 2), (1, 3), (2, 4)]",
+    "distinct-value blocks have exact zero cross terms [(0, 2), (1, 3), (2, 4)]",
+    "canonical source volume orders match every component [(0, 2), (1, 3), (2, 4)]",
+    "two group classification is the exact reciprocal inequality",
+    "r1 complementary ratio lies below two",
+    "all r>=3 minimal ratios lie below two by explicit factor",
+    "unbounded one-group Schur identity",
+    "all-count matrix determinant control n1",
+    "all-count matrix determinant control n2",
+    "all-count matrix determinant control n3",
+    "all-count matrix determinant control n5",
+    "all-count matrix determinant control n9",
+    "conditional all-simple D component bound r3",
+    "conditional all-simple D component bound r4",
+    "conditional all-simple D component bound r5",
+    "conditional all-simple D component bound r12",
+    "all r>=5 component cutoff follows from a positive quadratic",
+    "first localized chart has one hypersurface relation",
+    "second localized chart has one hypersurface relation",
+    "three complete polynomial relations n1",
+    "first smooth chart uses a squarefree T n1",
+    "two principal opens cover whenever T(C) is nonzero n1",
+    "global source inverse x equals T over z n1",
+    "global source inverse y near h0 n1",
+    "source inverse on T nonzero n1",
+    "every added D has simple x and exact pole2 n1 d2",
+    "full weight module generator n1 k-6",
+    "full weight module generator n1 k-5",
+    "full weight module generator n1 k-4",
+    "full weight module generator n1 k-3",
+    "full weight module generator n1 k-2",
+    "full weight module generator n1 k-1",
+    "full weight module generator n1 k0",
+    "full weight module generator n1 k1",
+    "full weight module generator n1 k2",
+    "full weight module generator n1 k3",
+    "full weight module generator n1 k4",
+    "full weight module generator n1 k5",
+    "full weight module generator n1 k6",
+    "three complete polynomial relations n2",
+    "first smooth chart uses a squarefree T n2",
+    "two principal opens cover whenever T(C) is nonzero n2",
+    "global source inverse x equals T over z n2",
+    "global source inverse y near h0 n2",
+    "source inverse on T nonzero n2",
+    "every added D has simple x and exact pole2 n2 d2",
+    "every added D has simple x and exact pole2 n2 d3",
+    "full weight module generator n2 k-6",
+    "full weight module generator n2 k-5",
+    "full weight module generator n2 k-4",
+    "full weight module generator n2 k-3",
+    "full weight module generator n2 k-2",
+    "full weight module generator n2 k-1",
+    "full weight module generator n2 k0",
+    "full weight module generator n2 k1",
+    "full weight module generator n2 k2",
+    "full weight module generator n2 k3",
+    "full weight module generator n2 k4",
+    "full weight module generator n2 k5",
+    "full weight module generator n2 k6",
+    "three complete polynomial relations n3",
+    "first smooth chart uses a squarefree T n3",
+    "two principal opens cover whenever T(C) is nonzero n3",
+    "global source inverse x equals T over z n3",
+    "global source inverse y near h0 n3",
+    "source inverse on T nonzero n3",
+    "every added D has simple x and exact pole2 n3 d2",
+    "every added D has simple x and exact pole2 n3 d3",
+    "every added D has simple x and exact pole2 n3 d4",
+    "full weight module generator n3 k-6",
+    "full weight module generator n3 k-5",
+    "full weight module generator n3 k-4",
+    "full weight module generator n3 k-3",
+    "full weight module generator n3 k-2",
+    "full weight module generator n3 k-1",
+    "full weight module generator n3 k0",
+    "full weight module generator n3 k1",
+    "full weight module generator n3 k2",
+    "full weight module generator n3 k3",
+    "full weight module generator n3 k4",
+    "full weight module generator n3 k5",
+    "full weight module generator n3 k6",
+    "three complete polynomial relations n5",
+    "first smooth chart uses a squarefree T n5",
+    "two principal opens cover whenever T(C) is nonzero n5",
+    "global source inverse x equals T over z n5",
+    "global source inverse y near h0 n5",
+    "source inverse on T nonzero n5",
+    "every added D has simple x and exact pole2 n5 d2",
+    "every added D has simple x and exact pole2 n5 d3",
+    "every added D has simple x and exact pole2 n5 d4",
+    "every added D has simple x and exact pole2 n5 d5",
+    "every added D has simple x and exact pole2 n5 d6",
+    "full weight module generator n5 k-6",
+    "full weight module generator n5 k-5",
+    "full weight module generator n5 k-4",
+    "full weight module generator n5 k-3",
+    "full weight module generator n5 k-2",
+    "full weight module generator n5 k-1",
+    "full weight module generator n5 k0",
+    "full weight module generator n5 k1",
+    "full weight module generator n5 k2",
+    "full weight module generator n5 k3",
+    "full weight module generator n5 k4",
+    "full weight module generator n5 k5",
+    "full weight module generator n5 k6",
+    "primitive is regular across the full ramified line",
+    "primitive is regular across every full unramified line",
+    "global primitive has the exact source differential",
+    "source volume has precisely orders one and zero",
+    "resonance hyperbola ends at R t0 and D v0",
+    "failed shortcut curve has the exact rational parameterization r4",
+    "failed shortcut retains r minus2 additional simple ends r4",
+    "third infinity Newton face is present r4",
+    "both selected chart equations can pass while the curve still has other ends r4",
+    "failed shortcut curve has the exact rational parameterization r5",
+    "failed shortcut retains r minus2 additional simple ends r5",
+    "third infinity Newton face is present r5",
+    "both selected chart equations can pass while the curve still has other ends r5",
+    "failed shortcut curve has the exact rational parameterization r8",
+    "failed shortcut retains r minus2 additional simple ends r8",
+    "third infinity Newton face is present r8",
+    "both selected chart equations can pass while the curve still has other ends r8",
+    "nontrivial weighted deck preserves a non-Keller map",
+    "primitive monomial torus parameter (2, 1)",
+    "origin deck condition cannot hold for a nontrivial order (2, 1)",
+    "primitive monomial torus parameter (3, 2)",
+    "origin deck condition cannot hold for a nontrivial order (3, 2)",
+    "primitive monomial torus parameter (5, 3)",
+    "origin deck condition cannot hold for a nontrivial order (5, 3)",
+    "primitive monomial torus parameter (7, 4)",
+    "origin deck condition cannot hold for a nontrivial order (7, 4)"
+  ],
+  "fibre_budget": {
+    "all_field_degrees": true,
+    "full_matrix_required": true,
+    "all_D_orders_and_poles": true,
+    "other_primes_retained": true,
+    "complementary_index_two_required": true,
+    "distinct_values_cross_zero": true,
+    "strict_budget": "n_R/q^2>sum_lambda E_lambda",
+    "group_energy_lower_bound": "E_lambda>=max_i(p_i^2/n_i)>=1",
+    "one_boundary_value_except_r2q1": true,
+    "r2q1_at_most_two_boundary_values": true,
+    "unconditional_prime_count_bound": false,
+    "conditional_all_simple_D_counts": {
+      "R_order3": 6,
+      "R_order4": 2,
+      "R_order_at_least5": 1
+    },
+    "common_ruling_case_excluded": false,
+    "grouped_controls": [
+      {
+        "values": [
+          [
+            0,
+            2
+          ]
+        ],
+        "group_sizes": [
+          1
+        ],
+        "energy": "1",
+        "strict_test": true,
+        "matrix": [
+          [
+            -3,
+            2
+          ],
+          [
+            2,
+            -4
+          ]
+        ]
+      },
+      {
+        "values": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "group_sizes": [
+          2
+        ],
+        "energy": "4/3",
+        "strict_test": true,
+        "matrix": [
+          [
+            -3,
+            2,
+            2
+          ],
+          [
+            2,
+            -4,
+            -2
+          ],
+          [
+            2,
+            -2,
+            -4
+          ]
+        ]
+      },
+      {
+        "values": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "group_sizes": [
+          1,
+          1
+        ],
+        "energy": "2",
+        "strict_test": true,
+        "matrix": [
+          [
+            -3,
+            2,
+            2
+          ],
+          [
+            2,
+            -4,
+            0
+          ],
+          [
+            2,
+            0,
+            -4
+          ]
+        ]
+      },
+      {
+        "values": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "group_sizes": [
+          2,
+          1
+        ],
+        "energy": "7/3",
+        "strict_test": true,
+        "matrix": [
+          [
+            -3,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            -4,
+            -2,
+            0
+          ],
+          [
+            2,
+            -2,
+            -4,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            -4
+          ]
+        ]
+      },
+      {
+        "values": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "group_sizes": [
+          1,
+          1,
+          1
+        ],
+        "energy": "3",
+        "strict_test": false,
+        "matrix": [
+          [
+            -3,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            -4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            -4,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            -4
+          ]
+        ]
+      }
+    ]
+  },
+  "affine_family": {
+    "all_n_at_least_one": true,
+    "conditions": "C,d_i nonzero and pairwise distinct",
+    "generators": [
+      "h=x^2*y",
+      "a=x*(h-C)",
+      "b=y*H(h)",
+      "z=x*y*H(h)"
+    ],
+    "entire_affine_presentation": true,
+    "two_smooth_principal_opens_cover": true,
+    "full_marked_A2_open": true,
+    "complement": "one index-two volume-order R and n unramified-volume D_i affine lines",
+    "complementary_R_r2q1": true,
+    "all_D_simple_pole2": true,
+    "global_exact_primitive": "-2y*dx-x*dy",
+    "full_weight_modules": true,
+    "source_Cstar_action": true,
+    "target_Cstar_action_inferred": false,
+    "matrix_determinant": "2^n*(n+3)",
+    "conditional_zero_excess_degree": "n+3",
+    "finite_Keller_map_supplied": false,
+    "controls": [
+      {
+        "n": 1,
+        "H": "h - 2",
+        "T": "h*(h - 2)",
+        "source_and_all_added_lines_accounted_for": true
+      },
+      {
+        "n": 2,
+        "H": "(h - 3)*(h - 2)",
+        "T": "h*(h - 3)*(h - 2)",
+        "source_and_all_added_lines_accounted_for": true
+      },
+      {
+        "n": 3,
+        "H": "(h - 4)*(h - 3)*(h - 2)",
+        "T": "h*(h - 4)*(h - 3)*(h - 2)",
+        "source_and_all_added_lines_accounted_for": true
+      },
+      {
+        "n": 5,
+        "H": "(h - 6)*(h - 5)*(h - 4)*(h - 3)*(h - 2)",
+        "T": "h*(h - 6)*(h - 5)*(h - 4)*(h - 3)*(h - 2)",
+        "source_and_all_added_lines_accounted_for": true
+      }
+    ]
+  },
+  "finite_algebra": {
+    "primitive_source_monomial_general_a_b": true,
+    "global_regularity_and_all_boundary_vertical_required": true,
+    "full_finite_Keller_map_required": true,
+    "generic_Cstar_image_residue_one": true,
+    "fixed_origin_deck_obstruction": true,
+    "primitive_element": true,
+    "monic_norm_degree_is_full_Keller_degree": true,
+    "specializations": [
+      "chi(0)=H_x^2*H_y",
+      "chi(d_i)=J_i*H_i^2",
+      "chi(C)=G_R*J_C^f, f=1 or2"
+    ],
+    "coincident_global_image_supports_allowed": true,
+    "normal_monogenic_algebra_asserted": false
+  },
+  "failures": {
+    "resonance_C_equals_di_excluded": true,
+    "extra_infinity_ends_retained": true,
+    "selected_chart_tests_not_all_ends": true,
+    "failed_shortcut_controls": [
+      {
+        "r": 4,
+        "additional_ends": 2,
+        "complete_curve_exclusion_valid": false
+      },
+      {
+        "r": 5,
+        "additional_ends": 3,
+        "complete_curve_exclusion_valid": false
+      },
+      {
+        "r": 8,
+        "additional_ends": 6,
+        "complete_curve_exclusion_valid": false
+      }
+    ]
+  },
+  "assurance": {
+    "written_unbounded_proofs": true,
+    "finite_controls_not_universal_proof": true,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "novelty_priority": false,
+    "full_quartic_exclusion": false,
+    "higher_degree_exclusion": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_boundary_fibre_models.py": "68ceb11174667f544e6d6b6db709be95808de1af2a2586cd0e0bab847060e43b",
+    "BOUNDARY_FIBRE_BUDGET_AND_GRADED_MODELS.md": "72ee1f8b1a599081b7887829a2c88afe883ca8ce0f6e6ef24597894896b87799",
+    "sources/boundary-fibre-models/manifest.json": "974bd8bda9d5ae34fd98fc63d48626878694cffcf21d010cbd45177e294e2da2",
+    "verify_coordinate_pencil_matrix.py": "4d67f313432e257b2da983c7c8436cfb6a88ca0ec5885f3d8bd252a89af9e76e",
+    "coordinate_pencil_matrix_receipt.json": "0a02ada5ccaef4d69a680dea96538ac7d80edc8f0cfa9ef6a8d3a3bcbdbedd73",
+    "two_sided_norm_receipt.json": "a6a71eb92a78fc3da5b0e90cd07eb80b2120dc126d6e8d704aae803a8af4b238",
+    "unramified_sheet_pair_receipt.json": "7f594c5408806c9041c9ca3177d6bbea22a8e67716f41c4122f17887163ebdde",
+    "sources/boundary-fibre-models/stacks-0C1B.html": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+    "sources/coordinate-pencil-matrix/xie-valuation-intersections.pdf": "c6d983764df0dffa7d899ed5b72a74c29dd3876272a6b0f3d7b702ddf1ec9b7e"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  }
+}

@@ -1,0 +1,10 @@
+from sage.all import *
+from sage.libs.singular.function_factory import singular_function
+from pathlib import Path
+import gzip,json,time
+H=Path('/home/royvanrijn/src/jacobian-research/research/jacobian-followup/affine-complements');secs=json.loads(gzip.decompress((H/'degree8_quartic_descent_certificates.json.gz').read_bytes()))['sectors'];start=time.monotonic()
+for old in secs:
+ k=old['multiplicities'][0];T=PolynomialRing(QQ,'t');K=NumberField(T(old['P4']),'t');A5=PolynomialRing(K,names=old['core_variables']);V5=PolynomialRing(A5,'w');A=PolynomialRing(K,names=old['core_variables'][:4],order='degrevlex');V=PolynomialRing(A,'w');inj=A5.hom([*A.gens(),0],A);cv=lambda txt:V([inj(c) for c in V5(txt)]);W,M,L=[cv(old[key]) for key in ['normalized_W','normalized_M','normalized_L']];s=K(old['normalized_cusp_parameter']);inputs=[M[j] for j in range(3,6)];I=A.ideal(inputs);print('start exact I3',k,flush=True);G=list(I.groebner_basis(algorithm='libsingular:slimgb'));mat=singular_function('lift')(I,A.ideal(G));assert matrix(A,1,3,inputs)*mat==matrix(A,1,len(G),G)
+ def enc(f):return [[list(e),[str(c[j]) for j in range(4)]] for e,c in A(f).dict().items()]
+ out=dict(sector=k,P4=old['P4'],P4_coefficients=[str(T(old['P4'])[j]) for j in range(5)],variables=list(A.variable_names()),inputs=[enc(g) for g in inputs],rules=[enc(g) for g in G],memberships=[[enc(mat[i,j]) for i in range(3)] for j in range(len(G))],W=[enc(c) for c in W],M=[enc(c) for c in M],L=[enc(c) for c in L],s=[str(s[j]) for j in range(4)])
+ Path('/tmp/degree8_Mquadratic_stage1_'+str(k)+'.json.gz').write_bytes(gzip.compress(json.dumps(out,indent=2).encode(),mtime=0));print('exact I3 checkpoint',k,'GB',len(G),'elapsed',time.monotonic()-start,flush=True)

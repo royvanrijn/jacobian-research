@@ -1,0 +1,1358 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Factorisation of Operators over Differential Laurent Series Rings &#8212; Magma Handbook</title>
+<script data-cfasync="false">
+    (function () {
+      var theme;
+      try {
+        var m = document.cookie.match(/(?:^|;\s*)mg-theme=(dark|light)(?:;|$)/);
+        theme = m ? m[1] : localStorage.getItem("mg-theme");
+        if (theme === "dark" || theme === "light") {
+          localStorage.setItem("theme", theme);
+          localStorage.setItem("mode", theme);
+        }
+      } catch (_) { /* Storage may be unavailable. Keep the default theme. */ }
+    })();
+  </script>
+
+
+
+<script data-cfasync="false">
+    (function () {
+      var mode = localStorage.getItem("mode") || "auto";
+      var dark = mode === "dark" || (mode === "auto" && matchMedia("(prefers-color-scheme: dark)").matches);
+      document.documentElement.dataset.mode = mode;
+      document.documentElement.dataset.theme = localStorage.getItem("theme") || (dark ? "dark" : "light");
+    })();
+  </script>
+<!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+<noscript>
+<style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+</noscript>
+
+<!-- Loaded before other Sphinx assets -->
+<link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+<link rel="stylesheet" type="text/css" href="../../_static/web-base/css/web-base.css" />
+<link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+<link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+<link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" type="text/css" href="../../_static/magma-parameter.css?v=c504c4a9" />
+<link rel="stylesheet" type="text/css" href="../../_static/collapsible-right-toc.css?v=701b116b" />
+<link rel="stylesheet" type="text/css" href="../../_static/collapsible-toctree.css?v=fcb406bd" />
+<link rel="stylesheet" type="text/css" href="../../_static/magma-search.css?v=e65c4a60" />
+<link rel="stylesheet" type="text/css" href="../../_static/index-cards.css?v=478df096" />
+<link rel="stylesheet" type="text/css" href="../../_static/references.css?v=99ce0c48" />
+<link rel="stylesheet" type="text/css" href="../../_static/holdback.css?v=2b7e7386" />
+<link rel="stylesheet" type="text/css" href="../../_static/part-downloads.css?v=80e82a4c" />
+<link rel="stylesheet" type="text/css" href="../../_static/notes-pages.css?v=f1b44edd" />
+<link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=6f8bf12e" />
+
+<!-- So that users can add custom icons -->
+<script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+<script src="../../_static/documentation_options.js?v=ce791fe2"></script>
+<script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+<script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+<script src="../../_static/mathjax-config.js?v=90ea1220"></script>
+<script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+<script src="../../_static/copybutton.js?v=60664d96"></script>
+<script>window.MagmaSearchConfig = {"sources": [{"id": "handbook"}, {"id": "website", "base": "https://magma-maths.org/"}], "strings": {"dialogLabel": "Search the documentation and website", "inputLabel": "Search the documentation and website", "placeholder": "Search the documentation and website\u2026"}};</script>
+<script src="../../_static/design-tabs.js?v=f930bc37"></script>
+<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'CommutativeAlgebra/DifferentialRings/operators-factorisation-over-laurent-series-ring';</script>
+<script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+<script src="../../_static/left-sidebar-collapse.js?v=68f7c05d"></script>
+<script src="../../_static/collapsible-right-toc.js?v=3bbacb79"></script>
+<script src="../../_static/collapsible-toctree.js?v=e67c86e5"></script>
+<script src="../../_static/global-sidebar-nav.js?v=a183b5f2"></script>
+<script src="../../_static/magma-search.js?v=c30b7e58"></script>
+<script src="../../_static/index-cards.js?v=44ba6510"></script>
+<script src="../../_static/magma-code.js?v=5ba4408e"></script>
+<script src="../../_static/web-base-chrome.js?v=5e5e6682"></script>
+<script src="../../_static/handbook-drawer.js?v=f5238913"></script>
+<script src="../../_static/sidebar-dialog-close.js?v=557831af"></script>
+<script src="../../_static/sidebar-toc-trim-output.js?v=d1d30190"></script>
+<script src="../../_static/arrow-key-nav.js?v=85688373"></script>
+<script src="../../_static/math-overflow-focus.js?v=c36c5d44"></script>
+<script defer="defer" src="../../_static/web-base/js/nav.js"></script>
+<script defer="defer" src="../../_static/web-base/js/to-top.js"></script>
+<script defer="defer" src="../../_static/web-base/js/copy.js"></script>
+<script defer="defer" src="../../_static/web-base/js/search-list.js"></script>
+
+
+<link rel="index" title="Index" href="../../genindex.html" />
+<link rel="search" title="Search" href="../../search.html" />
+<link rel="next" title="Bibliography" href="bibliography.html" />
+<link rel="prev" title="Differential Operators of Algebraic Functions" href="operators-of-functions.html" />
+
+<link rel="icon" href="../../_static/web-base/images/favicons/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="../../_static/web-base/images/favicons/favicon.svg">
+<link rel="alternate" type="text/markdown" title="Markdown for LLMs" href="https://docs.magma-maths.org/v2.30-1/CommutativeAlgebra/DifferentialRings/operators-factorisation-over-laurent-series-ring.md" />
+<link rel="llms-txt" title="llms.txt" href="https://docs.magma-maths.org/v2.30-1/llms.txt" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="docsearch:language" content="en"/>
+<meta name="docsearch:version" content="" />
+
+
+
+
+
+
+<meta name="google-site-verification" content="uR0P9YHKIwYJoMhW2RdPelFQPahHkBoTwLr9VjQyMCc" />
+<link rel="canonical" href="https://docs.magma-maths.org/v2.30-1/CommutativeAlgebra/DifferentialRings/operators-factorisation-over-laurent-series-ring.html"><link rel="stylesheet" href="/_handbook/versions.css"><script defer src="/_handbook/versions.js"></script></head>
+<body class="mg-no-js" data-theme-cookie-domain="magma-maths.org" data-default-mode="">
+<script>document.body.classList.replace("mg-no-js", "mg-js");</script>
+
+
+<div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+
+<div id="pst-scroll-pixel-helper"></div>
+
+
+
+
+<dialog id="pst-search-dialog">
+
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</dialog>
+
+<div class="pst-async-banner-revealer d-none">
+<aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+
+<header id="pst-header" class="bd-header mg-site-header handbook-tree">
+<nav class="mg-navbar mg-container">
+<div class="mg-navbar-row">
+
+
+<a href="https://magma-maths.org/" class="mg-navbar-brand">
+<img src="../../_static/web-base/images/magma-logo-wide-small.svg"
+       alt="Magma" class="mg-navbar-logo-wide mg-logo-light" height="32">
+<img src="../../_static/web-base/images/magma-logo-wide-small-dark.svg"
+       alt="Magma" class="mg-navbar-logo-wide mg-logo-dark" height="32">
+</a>
+
+
+<button class="mg-navbar-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mg-navigation">
+<span></span><span></span><span></span>
+</button>
+
+<div class="mg-navbar-menu" id="mg-navigation">
+
+<div class="mg-navbar-center">
+
+
+
+<div class="mg-navbar-links-primary">
+<div class="mg-navbar-links-row1">
+
+<a href="https://magma-maths.org/about/">About</a>
+
+<a href="https://magma-maths.org/get-magma/">Get Magma</a>
+
+<a href="../../">Documentation</a>
+
+<a href="https://magma-maths.org/calc/">Try online</a>
+
+<a href="https://magma-maths.org/people/">People</a>
+
+<a href="https://magma-maths.org/cite/">How to Cite</a>
+
+<a href="https://magma-maths.org/contact/">Contact</a>
+
+</div>
+</div>
+
+</div>
+
+<div class="mg-navbar-drawer"><div class="handbook-drawer-tree"></div></div>
+</div>
+
+<div class="mg-navbar-right">
+
+
+<button class="mg-navbar-icon-btn pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+<span class="fa-solid fa-outdent"></span>
+</button>
+
+<button class="mg-navbar-icon-btn btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<svg class="search-button__glyph" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+</button>
+
+
+
+
+<button class="mg-navbar-icon-btn mg-navbar-theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+<svg class="mg-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+<svg class="mg-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+
+
+<span class="mg-navbar-right-divider" aria-hidden="true"></span>
+
+
+<a href="https://magma.maths.usyd.edu.au/account/login" class="mg-navbar-login">Login</a>
+
+
+
+</div>
+</div>
+
+</nav>
+<div class="mg-navbar-scrim" aria-hidden="true"></div>
+</header>
+
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+
+
+
+
+<div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+
+
+
+<div class="sidebar-header-items sidebar-primary__section">
+
+
+
+
+</div>
+
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Handbook contents"><div id="handbook-version-control" hidden data-base="/v2.30-1/" data-path="CommutativeAlgebra/DifferentialRings/operators-factorisation-over-laurent-series-ring.html"><label for="handbook-version">Version</label><select id="handbook-version"><option value="/v2.30-1/" selected>v2.30-1</option><option value="/v2.29-10/">v2.29-10</option><option value="/dev/">Development</option></select></div>
+<div
+    class="bd-toc-item navbar-nav active magma-global-sidebar-nav"
+    data-nav-src="../../_static/magma-sidebar-nav.js?v=4c09329d9f52c00f"
+    data-nav-root="../../index.html"
+  >
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../MagmaLanguage/index-magma-language.html">The Magma Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SetsSequencesMappings/index-sets-sequences-mappings.html">Sets, Sequences, and Mappings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BasicRings/index-basic-rings.html">Basic Rings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../MatricesLinearAlgebra/index-matrices-linear-algebra.html">Matrices and Linear Algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LatticesQuadraticForms/index-lattices-quadratic-forms.html">Lattices and Quadratic Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GlobalFields/index-global-fields.html">Global Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LocalFields/index-local-fields.html">Local Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Modules/index-modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FiniteGroups/index-finite-groups.html">Finite Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FinitelyPresentedGroups/index-finitely-presented-groups.html">Finitely Presented Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Algebras/index-algebras.html">Algebras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RepresentationTheory/index-representation-theory.html">Representation Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LieTheory/index-lie-theory.html">Lie Theory</a></li>
+<li class="toctree-l1 current active"><a class="reference internal" href="../index-commutative-algebra.html">Commutative Algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AlgebraicGeometry/index-algebraic-geometry.html">Algebraic Geometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ArithmeticGeometry/index-arithmetic-geometry.html">Arithmetic Geometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ModularArithmeticGeometry/index-modular-arithmetic-geometry.html">Modular Arithmetic Geometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Topology/index-topology.html">Topology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Geometry/index-geometry.html">Geometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Combinatorics/index-combinatorics.html">Combinatorics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CodingTheory/index-coding-theory.html">Coding Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Optimization/index-optimization.html">Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">References</a></li>
+</ul>
+
+</div>
+</nav></div>
+</div>
+
+
+<div class="sidebar-primary-items__end sidebar-primary__section">
+<div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+</div>
+
+
+</div>
+
+<main id="main-content" class="bd-main" role="main" tabindex="-1">
+
+
+<div class="bd-content">
+<div class="bd-article-container">
+
+<div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+
+<div class="header-article-items__start">
+
+<div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+<ul class="bd-breadcrumbs">
+
+<li class="breadcrumb-item breadcrumb-home">
+<a href="../../index.html" class="nav-link" aria-label="Home">
+<i class="fa-solid fa-home"></i>
+</a>
+</li>
+
+<li class="breadcrumb-item"><a href="../index-commutative-algebra.html" class="nav-link">Commutative Algebra</a></li>
+
+
+<li class="breadcrumb-item"><a href="index-differential-rings.html" class="nav-link">Differential Rings</a></li>
+
+<li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Factorisation of Operators over Differential Laurent Series Rings</span></li>
+</ul>
+</nav>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<article class="bd-article">
+
+<section id="factorisation-of-operators-over-differential-laurent-series-rings">
+<h1>Factorisation of Operators over Differential Laurent Series Rings<a class="headerlink" href="#factorisation-of-operators-over-differential-laurent-series-rings" title="Link to this heading"><span aria-hidden="true">#</span></a></h1><div id="searchbox"></div>
+<p>When factoring a non-trivial linear differential operator in</p>
+<div class="math notranslate nohighlight">
+\[P[\delta] := k((t))[\delta],\]</div>
+<p>with constant field <span class="math notranslate nohighlight">\(k\)</span>, differential Laurent Series ring <span class="math notranslate nohighlight">\(k((t))\)</span> in <span class="math notranslate nohighlight">\(t\)</span>, and derivation <span class="math notranslate nohighlight">\(\delta\)</span>, one at least wants to compute two operators <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(R\)</span> in <span class="math notranslate nohighlight">\(P\)</span> such that <span class="math notranslate nohighlight">\(f=L\cdot R\)</span>. It is important to distinguish the left and right hand operators (<span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(R\)</span>) as such as multiplication generally is non-commutative. When considering differential operators in the operator ring <span class="math notranslate nohighlight">\(P\)</span>, it is common to consider <span class="math notranslate nohighlight">\(\delta\)</span> to be <span class="math notranslate nohighlight">\(t\cdot d/dt\)</span>. This specific form has the advantage that the degree of <span class="math notranslate nohighlight">\(\delta\cdot t\)</span> in <span class="math notranslate nohighlight">\(t\)</span> remains one, since <span class="math notranslate nohighlight">\(\delta\cdot t=t\cdot \delta +t\)</span>. This specific derivation is called the <em>projective derivation</em> and we consider this derivation in the rest of this section. In this sense powers of <span class="math notranslate nohighlight">\(t\)</span> are eigenvectors under the application of the derivation.</p>
+<p>A possible approach for factoring a linear operator would be to compute all non-constant irreducible right hand factors and then use recursion on the appropriate left hand factors. However, this causes a problem as there may be infinitely many factorisations. For instance <span class="math notranslate nohighlight">\(\delta^2-\delta\)</span> has infinitely many factorisations (parametrisations) <span class="math notranslate nohighlight">\((\delta-c/(t+c))(\delta-t/(t+c))\)</span> for any <span class="math notranslate nohighlight">\(c\in P^1(k)\)</span>. The approach we take to find right hand factors follows <span class="bibtex-citation" id="id1">[<a class="reference internal" href="../../references.html#cite-vh97" title="Mark van Hoeij. Formal solutions and factorization of differential operators with power series coefficients. J. Symbolic Comput., 24(1):1–30, 1997.">vH97b</a>]</span>, and chooses a canonical representative from a class of right hand factors. The obtained representatives can be used in the factorisation of linear differential operators over a rational function field, see <span class="bibtex-citation" id="id2">[<a class="reference internal" href="../../references.html#cite-vh97rational" title="Mark van Hoeij. Factorization of differential operators with rational functions coefficients. J. Symbolic Comput., 24(5):537–561, 1997.">vH97a</a>]</span>.</p>
+<p>A non-trivial linear differential operator <span class="math notranslate nohighlight">\(f\)</span> in <span class="math notranslate nohighlight">\(P\)</span> acts on the solution space <span class="math notranslate nohighlight">\(V\)</span> of all differential operators in the differential closure of <span class="math notranslate nohighlight">\(k((t))\)</span>. This action is <span class="math notranslate nohighlight">\(\bar{k}\)</span>-linear and surjective on <span class="math notranslate nohighlight">\(V\)</span>. The kernel <span class="math notranslate nohighlight">\(V(f)\)</span> of this map has dimension equal to the order of the operator. The general solution space <span class="math notranslate nohighlight">\(V\)</span> can be split into a direct sum of smaller <span class="math notranslate nohighlight">\(\bar{k}\)</span>-vector spaces <span class="math notranslate nohighlight">\(V_e\)</span>. These are minimal such that <span class="math notranslate nohighlight">\(f(V_e)\subset V_e\)</span> for every operator in <span class="math notranslate nohighlight">\(P\)</span>. Its kernel <span class="math notranslate nohighlight">\(V_e(f)\)</span> consists of all solutions of <span class="math notranslate nohighlight">\(f(y)=0\)</span> in <span class="math notranslate nohighlight">\(V_e\)</span>. As a consequence the solution space of the operator then is <span class="math notranslate nohighlight">\(V(f)=\oplus_e V_e(f)\)</span>. For each of the <span class="math notranslate nohighlight">\(e\)</span> with non-trivial solution space of <span class="math notranslate nohighlight">\(f\)</span>, the idea now is to find an irreducible right hand factor of <span class="math notranslate nohighlight">\(f\)</span> in <span class="math notranslate nohighlight">\(k((t))[\delta]\)</span> that annihilates <span class="math notranslate nohighlight">\(V_e(f)\)</span>.</p>
+<section id="slope-valuation-of-an-operator">
+<h2>Slope Valuation of an Operator<a class="headerlink" href="#slope-valuation-of-an-operator" title="Link to this heading"><span aria-hidden="true">#</span></a></h2>
+<p>The Newton Polynomial of an operator <span class="math notranslate nohighlight">\(f\)</span> and its slopes contain useful information regarding its factorisation possibilities. It was proved by Malgrange that an operator over a Laurent series ring is reducible if its Newton polygon has at least two slopes. When on the other hand the Newton polygon has one positive slope, and the accompanying Newton polynomial has two relatively prime factors, then the operator is irreducible as well. It can be shown that an irreducible right hand factor has an irreducible Newton polynomial that divides the Newton polynomial of <span class="math notranslate nohighlight">\(f\)</span>. When an appropriate irreducible factor of the polynomial of <span class="math notranslate nohighlight">\(f\)</span> is taken, One can start building a right hand factor operator with coefficients of a certain precision that has exactly the irreducible factor as its Newton polynomial. Subsequently one can try to lift the coefficients to a better, possibly predescribed precision.</p>
+<p>Various measures for the precision are possible, for instance the absolute precision of the coefficients is common. Another valuation metric is or one related to the slope of the Newton polynomial. It is defined as follows. Assume that <span class="math notranslate nohighlight">\(P:=k((t))[\delta]\)</span> has projective derivation <span class="math notranslate nohighlight">\(t\cdot d/dt\)</span>, Let <span class="math notranslate nohighlight">\(s\)</span> be a rational with numerator <span class="math notranslate nohighlight">\(n\)</span> and denominator <span class="math notranslate nohighlight">\(d\)</span> such that <span class="math notranslate nohighlight">\(\gcd(n,d)=1\)</span> and <span class="math notranslate nohighlight">\(d&gt;0\)</span> hold. Then the <em>slope valuation</em> of a monomial <span class="math notranslate nohighlight">\(ct^i\delta^j\)</span>, <span class="math notranslate nohighlight">\(c\in k\\ \{0\}\)</span>, with respect to <span class="math notranslate nohighlight">\(s\)</span> is defined as <span class="math notranslate nohighlight">\(V_s(ct^i\delta^j):=id-jn\)</span>. The <em>slope valuation</em> of the operator <span class="math notranslate nohighlight">\(L\in P\)</span> with respect to <span class="math notranslate nohighlight">\(s\)</span> subsequently is defined as the minimum of the slope valuation of each non-zero monomial in <span class="math notranslate nohighlight">\(L\)</span> w.r.t <span class="math notranslate nohighlight">\(s\)</span>. Commonly <span class="math notranslate nohighlight">\(s\)</span> is a slope of the Newton polynomial of <span class="math notranslate nohighlight">\(L\)</span>. If the operator is the zero operator, the slope valuation is defined to be infinite.</p>
+<dl class="magma function">
+<dt class="sig sig-object magma" id="function-slopevaluation-rngdiffopelt-rngelt">
+<span class="sig-name descname"><span class="pre">SlopeValuation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">L</span></em>, <em class="sig-param"><span class="pre">s</span></em><span class="sig-paren">)</span><span class="p"><span class="pre">:</span> </span><span class="pre">RngDiffOpElt,</span> <span class="pre">RngElt</span><span class="p"> <span class="pre">-&gt;</span> </span><span class="pre">FldRatElt</span><a class="headerlink" href="#function-slopevaluation-rngdiffopelt-rngelt" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p>Returns the valuation of <span class="math notranslate nohighlight">\(L\)</span>, with respect to the rational slope <span class="math notranslate nohighlight">\(s\)</span>, when the derivation of <span class="math notranslate nohighlight">\(L\)</span> is projective.</p>
+</dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-402dde">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Slope</span> <span class="pre">Valuation</span> <span class="pre">of</span> <span class="pre">an</span> <span class="pre">Operator</span></span> <span class="magma-example-tag"><span class="pre">(ex-402dde)</span></span><a class="headerlink" href="#example-ex-402dde" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-402dde%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AP%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3Dt%5E%28-2%29%2AD%5E3%2Bt%5E7%3B%0ASlopeValuation%28L%2C0%29%3B%0ASlopeValuation%28L%2C1%2F2%29%3B%0ASlopeValuation%28L%2C5%29%3B%0AL%3A%3D%280%2BO%28t%5E6%29%29%2AD%3B%0ASlopeValuation%28L%2C0%29%3B%0AValuation%280%2BO%28t%5E6%29%29%3B%0ASlopeValuation%28P%210%2C3%29%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-402dde
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+P&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=t^(-2)*D^3+t^7;
+SlopeValuation(L,0);
+SlopeValuation(L,1/2);
+SlopeValuation(L,5);
+L:=(0+O(t^6))*D;
+SlopeValuation(L,0);
+Valuation(0+O(t^6));
+SlopeValuation(P!0,3);" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>P&lt;D&gt;:=DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=t^(-2)*D^3+t^7;
+<span class="gp">&gt; </span>SlopeValuation(L,0);
+<span class="go">-2</span>
+<span class="gp">&gt; </span>SlopeValuation(L,1/2);
+<span class="go">-7</span>
+<span class="gp">&gt; </span>SlopeValuation(L,5);
+<span class="go">-17</span>
+<span class="gp">&gt; </span>L:=(0+O(t^6))*D;
+<span class="gp">&gt; </span>SlopeValuation(L,0);
+<span class="go">Infinity</span>
+<span class="gp">&gt; </span>Valuation(0+O(t^6));
+<span class="go">6</span>
+<span class="gp">&gt; </span>SlopeValuation(P!0,3);
+<span class="go">Infinity</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-402dde%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AP%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3Dt%5E%28-2%29%2AD%5E3%2Bt%5E7%3B%0ASlopeValuation%28L%2C0%29%3B%0ASlopeValuation%28L%2C1%2F2%29%3B%0ASlopeValuation%28L%2C5%29%3B%0AL%3A%3D%280%2BO%28t%5E6%29%29%2AD%3B%0ASlopeValuation%28L%2C0%29%3B%0AValuation%280%2BO%28t%5E6%29%29%3B%0ASlopeValuation%28P%210%2C3%29%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-402dde
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+P&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=t^(-2)*D^3+t^7;
+SlopeValuation(L,0);
+SlopeValuation(L,1/2);
+SlopeValuation(L,5);
+L:=(0+O(t^6))*D;
+SlopeValuation(L,0);
+Valuation(0+O(t^6));
+SlopeValuation(P!0,3);" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","P\u003cD>:=DifferentialOperatorRing(S);"],["v","L:=t^(-2)*D^3+t^7;"],["v","SlopeValuation(L,0);"],["o","-2"],["a","assert $1 eq -2;"],["v","SlopeValuation(L,1/2);"],["o","-7"],["a","assert $1 eq -7;"],["v","SlopeValuation(L,5);"],["o","-17"],["a","assert $1 eq -17;"],["v","L:=(0+O(t^6))*D;"],["v","SlopeValuation(L,0);"],["o","Infinity"],["v","Valuation(0+O(t^6));"],["o","6"],["a","assert $1 eq 6;"],["v","SlopeValuation(P!0,3);"],["o","Infinity"]]]}</script></dd></dl>
+
+</section>
+<section id="coprime-index-1-and-lclm-factorisation">
+<h2>Coprime Index <span class="math notranslate nohighlight">\(1\)</span> and LCLM Factorisation<a class="headerlink" href="#coprime-index-1-and-lclm-factorisation" title="Link to this heading"><span aria-hidden="true">#</span></a></h2>
+<p>Coprime index <span class="math notranslate nohighlight">\(1\)</span> factorisation and LCLM factorisation are two factorisation methods that use similar factorisation machinery, but may result in different factorisations, see <span class="bibtex-citation" id="id3">[<a class="reference internal" href="../../references.html#cite-vh97" title="Mark van Hoeij. Formal solutions and factorization of differential operators with power series coefficients. J. Symbolic Comput., 24(1):1–30, 1997.">vH97b</a>]</span>. Given an operator <span class="math notranslate nohighlight">\(f\in k((t))[\delta]\)</span>, both compute a right hand factor with respect to each distinct irreducible factor of the Newton polynomial of <span class="math notranslate nohighlight">\(f\)</span>. A local lifting procedure with respect to the slope valuation metric is performed to obtain the coefficients of the right hand factors up to a certain accuracy. In addition, no intermediate differential field extensions of <span class="math notranslate nohighlight">\(k((t))\)</span> are used.</p>
+<p>The coprime index <span class="math notranslate nohighlight">\(1\)</span> algorithm does not factor an operator <span class="math notranslate nohighlight">\(f\)</span> that has Newton polynomial of the form <span class="math notranslate nohighlight">\(p^n\)</span>, <span class="math notranslate nohighlight">\(n\ge2\)</span>, with slope <span class="math notranslate nohighlight">\(s&gt;0\)</span>. The sum of the degrees of the obtained right hand factors of <span class="math notranslate nohighlight">\(f\)</span> may be less than the degree of <span class="math notranslate nohighlight">\(f\)</span> itself. Their least common left divisor <span class="math notranslate nohighlight">\(M\)</span> divides <span class="math notranslate nohighlight">\(f\)</span> on the right (i.e. <span class="math notranslate nohighlight">\(f=N*M\)</span>) with a kernel of dimension less or equal to <span class="math notranslate nohighlight">\(\deg(f)\)</span>. The LCLM algorithm, on the other hand, produces a set of right hand factors of a monic operator <span class="math notranslate nohighlight">\(f\)</span> whose LCLM is exactly <span class="math notranslate nohighlight">\(f\)</span> up to some precision.</p>
+<dl class="magma signature" id="signature-factorisation">
+<dt class="sig sig-object magma" id="function-factorisation-rngdiffopelt">
+<span class="sig-name descname"><span class="pre">Factorisation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">L</span></em><span class="sig-paren">)</span><span class="p"><span class="pre">:</span> </span><span class="pre">RngDiffOpElt</span><span class="p"> <span class="pre">-&gt;</span> </span><span class="pre">SeqEnum,</span> <span class="pre">SeqEnum</span><a class="headerlink" href="#function-factorisation-rngdiffopelt" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dt class="sig sig-object magma" id="function-factorization-rngdiffopelt">
+<span class="sig-name descname"><span class="pre">Factorization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">L</span></em><span class="sig-paren">)</span><span class="p"><span class="pre">:</span> </span><span class="pre">RngDiffOpElt</span><span class="p"> <span class="pre">-&gt;</span> </span><span class="pre">SeqEnum,</span> <span class="pre">SeqEnum</span><a class="headerlink" href="#function-factorization-rngdiffopelt" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><div class="magma-param highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="n">Precision</span><span class="p">:</span> <span class="kt">RngIntElt</span>                    <span class="magma-param-default"><span class="n">Default</span><span class="p">:</span> -1</span>
+<span class="n">Algorithm</span><span class="p">:</span> <span class="kt">MonStgElt</span>                    <span class="magma-param-default"><span class="n">Default</span><span class="p">:</span> "Default"</span>
+</pre></div>
+</div>
+</dd><dd class="magma-signature-shared"><p>Returns a sequence <span class="math notranslate nohighlight">\(M\)</span> of operator sequences <span class="math notranslate nohighlight">\([A,B]\)</span> such that <span class="math notranslate nohighlight">\(L=A\cdot B\)</span> holds, and <span class="math notranslate nohighlight">\(B\)</span> does not have a non-trivial coprime index <span class="math notranslate nohighlight">\(1\)</span> or LCLM factorisation. As the algorithm sometimes cannot conclude if a right hand factor is irreducible, a second sequence entry <span class="math notranslate nohighlight">\(N[i]\)</span> states <code class="docutils literal notranslate"><span class="pre">True</span></code> if the right hand factor <span class="math notranslate nohighlight">\(M[i][2]\)</span> is undisputedly irreducible. The optional argument for the precision is the accuracy up to which the lifting procedure would be performed. The default accuracy is the relative precision of the basering of <span class="math notranslate nohighlight">\(L\)</span>. The algorithms used can be either “LCLM” or “CoprimeIndexOne”. The algorithms used are based on various algorithms in <span class="bibtex-citation" id="id4">[<a class="reference internal" href="../../references.html#cite-vh97" title="Mark van Hoeij. Formal solutions and factorization of differential operators with power series coefficients. J. Symbolic Comput., 24(1):1–30, 1997.">vH97b</a>]</span>.</p>
+</dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-502230">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Operator</span> <span class="pre">with</span> <span class="pre">Infinitely</span> <span class="pre">Many</span> <span class="pre">Factorisations</span></span> <span class="magma-example-tag"><span class="pre">(ex-502230)</span></span><a class="headerlink" href="#example-ex-502230" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-502230%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL+%3A%3D+D%5E2+-D%3B%0AfactsL%2CblsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22LCLM%22%29%3B%0A%28%23factsL+eq+%23blsL%29+and+%28%23factsL+eq+1%29%3B%0AblsL%3B%0AfactsL%5B1%5D%3B%0AfactsL%2CblsL%3A%3DFactorization%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0A%28%23factsL+eq+%23blsL%29+and+%28%23factsL+eq+1%29%3B%0AblsL%3B%0AfactsL%5B1%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-502230
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L := D^2 -D;
+factsL,blsL:=Factorisation(L:Algorithm:=&quot;LCLM&quot;);
+(#factsL eq #blsL) and (#factsL eq 1);
+blsL;
+factsL[1];
+factsL,blsL:=Factorization(L:Algorithm:=&quot;CoprimeIndexOne&quot;);
+(#factsL eq #blsL) and (#factsL eq 1);
+blsL;
+factsL[1];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>The operator <span class="math notranslate nohighlight">\(t^2\cdot d/dt^2 - t\cdot  d/dt\)</span> with coefficients in <span class="math notranslate nohighlight">\(Q\)</span> has infinitely many factorisations, since it can be written as <span class="math notranslate nohighlight">\((t\cdot d/dt - c/(t+c))\cdot(t\cdot d/dt - t/(t+c))\)</span> for any rational number <span class="math notranslate nohighlight">\(c\)</span>. The factorisation code chooses a canonical right hand factor.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>R&lt;D&gt;:=DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L := D^2 -D;
+<span class="gp">&gt; </span>factsL,blsL:=Factorisation(L:Algorithm:="LCLM");
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">The number of slopes of the Newton polynomial: 1</span>
+<span class="gp">&gt; </span>(#factsL eq #blsL) and (#factsL eq 1);
+<span class="go">true</span>
+<span class="gp">&gt; </span>blsL;
+<span class="go">[ false ]</span>
+<span class="gp">&gt; </span>factsL[1];
+<span class="go">[</span>
+<span class="go">    1,</span>
+<span class="go">    D^2 + -1*D</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>factsL,blsL:=Factorization(L:Algorithm:="CoprimeIndexOne");
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 factorisation.</span>
+<span class="gp">&gt; </span>(#factsL eq #blsL) and (#factsL eq 1);
+<span class="go">true</span>
+<span class="gp">&gt; </span>blsL;
+<span class="go">[ true ]</span>
+<span class="gp">&gt; </span>factsL[1];
+<span class="go">[</span>
+<span class="go">    D,</span>
+<span class="go">    D + -1</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-502230%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL+%3A%3D+D%5E2+-D%3B%0AfactsL%2CblsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22LCLM%22%29%3B%0A%28%23factsL+eq+%23blsL%29+and+%28%23factsL+eq+1%29%3B%0AblsL%3B%0AfactsL%5B1%5D%3B%0AfactsL%2CblsL%3A%3DFactorization%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0A%28%23factsL+eq+%23blsL%29+and+%28%23factsL+eq+1%29%3B%0AblsL%3B%0AfactsL%5B1%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-502230
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L := D^2 -D;
+factsL,blsL:=Factorisation(L:Algorithm:=&quot;LCLM&quot;);
+(#factsL eq #blsL) and (#factsL eq 1);
+blsL;
+factsL[1];
+factsL,blsL:=Factorization(L:Algorithm:=&quot;CoprimeIndexOne&quot;);
+(#factsL eq #blsL) and (#factsL eq 1);
+blsL;
+factsL[1];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","R\u003cD>:=DifferentialOperatorRing(S);"],["v","L := D^2 -D;"],["v","factsL,blsL:=Factorisation(L:Algorithm:=\"LCLM\");"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 LCLM factorisation."],["o","The number of slopes of the Newton polynomial: 1"],["v","(#factsL eq #blsL) and (#factsL eq 1);"],["o","true"],["a","assert $1;"],["v","blsL;"],["o","[ false ]"],["v","factsL[1];"],["o","["],["o","    1,"],["o","    D^2 + -1*D"],["o","]"],["v","factsL,blsL:=Factorization(L:Algorithm:=\"CoprimeIndexOne\");"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 factorisation."],["v","(#factsL eq #blsL) and (#factsL eq 1);"],["o","true"],["a","assert $1;"],["v","blsL;"],["o","[ true ]"],["v","factsL[1];"],["o","["],["o","    D,"],["o","    D + -1"],["o","]"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-6f1759">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Comparing</span> <span class="pre">LCLM</span> <span class="pre">and</span> <span class="pre">Coprime</span> <span class="pre">Index</span> <span class="pre">1</span> <span class="pre">Factorisations</span></span> <span class="magma-example-tag"><span class="pre">(ex-6f1759)</span></span><a class="headerlink" href="#example-ex-6f1759" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-6f1759%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3DD%2A%28D%2B1%2Ft%29%3B%0AL%3B%0AfactsL%2CblsL%3A%3DFactorisation%28L%3APrecision%3A%3D4%29%3B%0AblsL%3B%0A%23factsL+eq+2%3B%0AfactsL%5B1%5D%3B%0AfactsL%5B2%5D%3B%0AfactsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0A%23factsL+eq+2%3B%0AblsL%3B%0A%5Bv%5B1%5D%2Av%5B2%5D%3Av+in+factsL%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-6f1759
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=D*(D+1/t);
+L;
+factsL,blsL:=Factorisation(L:Precision:=4);
+blsL;
+#factsL eq 2;
+factsL[1];
+factsL[2];
+factsL:=Factorisation(L:Algorithm:=&quot;CoprimeIndexOne&quot;);
+#factsL eq 2;
+blsL;
+[v[1]*v[2]:v in factsL];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>This example corresponds to Example 3.46 in <span class="bibtex-citation" id="id5">[<a class="reference internal" href="../../references.html#cite-vdps03" title="Marius van der Put and Michael F. Singer. Galois theory of linear differential equations. Volume 328 of Grundlehren der Mathematischen Wissenschaften [Fundamental Principles of Mathematical Sciences]. Springer-Verlag, Berlin, 2003. ISBN 3-540-44228-6.">vdPS03</a>]</span>.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>R&lt;D&gt;:=DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=D*(D+1/t);
+<span class="gp">&gt; </span>L;
+<span class="go">D^2 + t^-1*D + -t^-1</span>
+<span class="gp">&gt; </span>factsL,blsL:=Factorisation(L:Precision:=4);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>blsL;
+<span class="go">[ true, true ]</span>
+<span class="gp">&gt; </span>#factsL eq 2;
+<span class="go">true</span>
+<span class="gp">&gt; </span>factsL[1];
+<span class="go">[</span>
+<span class="go">    D + t^-1 + 1 - t + 3*t^2 + O(t^3),</span>
+<span class="go">    D + -1 + t - 3*t^2 + 13*t^3 + O(t^4)</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>factsL[2];
+<span class="go">[</span>
+<span class="go">    D,</span>
+<span class="go">    D + t^-1</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>factsL:=Factorisation(L:Algorithm:="CoprimeIndexOne");
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 factorisation.</span>
+<span class="gp">&gt; </span>#factsL eq 2;
+<span class="go">true</span>
+<span class="gp">&gt; </span>blsL;
+<span class="go">[ true, true ]</span>
+<span class="gp">&gt; </span>[v[1]*v[2]:v in factsL];
+<span class="go">[</span>
+<span class="go">    D^2 + (t^-1 + O(t^19))*D + -t^-1 + O(t^19),</span>
+<span class="go">    D^2 + t^-1*D + -t^-1</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-6f1759%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3DD%2A%28D%2B1%2Ft%29%3B%0AL%3B%0AfactsL%2CblsL%3A%3DFactorisation%28L%3APrecision%3A%3D4%29%3B%0AblsL%3B%0A%23factsL+eq+2%3B%0AfactsL%5B1%5D%3B%0AfactsL%5B2%5D%3B%0AfactsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0A%23factsL+eq+2%3B%0AblsL%3B%0A%5Bv%5B1%5D%2Av%5B2%5D%3Av+in+factsL%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-6f1759
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=D*(D+1/t);
+L;
+factsL,blsL:=Factorisation(L:Precision:=4);
+blsL;
+#factsL eq 2;
+factsL[1];
+factsL[2];
+factsL:=Factorisation(L:Algorithm:=&quot;CoprimeIndexOne&quot;);
+#factsL eq 2;
+blsL;
+[v[1]*v[2]:v in factsL];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","R\u003cD>:=DifferentialOperatorRing(S);"],["v","L:=D*(D+1/t);"],["v","L;"],["o","D^2 + t^-1*D + -t^-1"],["v","factsL,blsL:=Factorisation(L:Precision:=4);"],["o","Performing coprime index 1 LCLM factorisation."],["v","blsL;"],["o","[ true, true ]"],["v","#factsL eq 2;"],["o","true"],["a","assert $1;"],["v","factsL[1];"],["o","["],["o","    D + t^-1 + 1 - t + 3*t^2 + O(t^3),"],["o","    D + -1 + t - 3*t^2 + 13*t^3 + O(t^4)"],["o","]"],["v","factsL[2];"],["o","["],["o","    D,"],["o","    D + t^-1"],["o","]"],["v","factsL:=Factorisation(L:Algorithm:=\"CoprimeIndexOne\");"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 factorisation."],["v","#factsL eq 2;"],["o","true"],["a","assert $1;"],["v","blsL;"],["o","[ true, true ]"],["v","[v[1]*v[2]:v in factsL];"],["o","["],["o","    D^2 + (t^-1 + O(t^19))*D + -t^-1 + O(t^19),"],["o","    D^2 + t^-1*D + -t^-1"],["o","]"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-6434dc">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Factorising</span> <span class="pre">a</span> <span class="pre">Product</span> <span class="pre">of</span> <span class="pre">First-Order</span> <span class="pre">Operators</span></span> <span class="magma-example-tag"><span class="pre">(ex-6434dc)</span></span><a class="headerlink" href="#example-ex-6434dc" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-6434dc%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3D%28D%2B1%2Ft%29%2A%28D%2B1%2Ft%5E2%29%3B%0AL%3B%0AfactsL%2C+blsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%2CPrecision%3A%3D6%29%3B%0AblsL%3B%0A%23factsL%3B%0AfactsL%5B1%5D%3B%0AfactsL%5B2%5D%3B%0A%5Bv%5B1%5D%2Av%5B2%5D+%3Av+in+factsL%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-6434dc
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=(D+1/t)*(D+1/t^2);
+L;
+factsL, blsL:=Factorisation(L:Algorithm:=&quot;CoprimeIndexOne&quot;,Precision:=6);
+blsL;
+#factsL;
+factsL[1];
+factsL[2];
+[v[1]*v[2] :v in factsL];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>This example corresponds to Example 3.49 in <span class="bibtex-citation" id="id6">[<a class="reference internal" href="../../references.html#cite-vdps03" title="Marius van der Put and Michael F. Singer. Galois theory of linear differential equations. Volume 328 of Grundlehren der Mathematischen Wissenschaften [Fundamental Principles of Mathematical Sciences]. Springer-Verlag, Berlin, 2003. ISBN 3-540-44228-6.">vdPS03</a>]</span>.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>R&lt;D&gt;:=DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=(D+1/t)*(D+1/t^2);
+<span class="gp">&gt; </span>L;
+<span class="go">D^2 + (t^-2 + t^-1)*D + t^-3 - 2*t^-2</span>
+<span class="gp">&gt; </span>factsL, blsL:=Factorisation(L:Algorithm:="CoprimeIndexOne",Precision:=6);
+<span class="go">Performing coprime index 1 factorisation.</span>
+<span class="gp">&gt; </span>blsL;
+<span class="go">[ true, true ]</span>
+<span class="gp">&gt; </span>#factsL;
+<span class="go">2</span>
+<span class="gp">&gt; </span>factsL[1];
+<span class="go">[</span>
+<span class="go">    D + t^-2 + 2 + t - 3*t^2 - 8*t^3 + O(t^4),</span>
+<span class="go">    D + t^-1 - 2 - t + 3*t^2 + 8*t^3 - 9*t^4 + O(t^5)</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>factsL[2];
+<span class="go">[</span>
+<span class="go">    D + t^-1,</span>
+<span class="go">    D + t^-2</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>[v[1]*v[2] :v in factsL];
+<span class="go">[</span>
+<span class="go">    D^2 + (t^-2 + t^-1 + O(t^4))*D + t^-3 - 2*t^-2 + O(t^3),</span>
+<span class="go">    D^2 + (t^-2 + t^-1)*D + t^-3 - 2*t^-2</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-6434dc%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3D%28D%2B1%2Ft%29%2A%28D%2B1%2Ft%5E2%29%3B%0AL%3B%0AfactsL%2C+blsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%2CPrecision%3A%3D6%29%3B%0AblsL%3B%0A%23factsL%3B%0AfactsL%5B1%5D%3B%0AfactsL%5B2%5D%3B%0A%5Bv%5B1%5D%2Av%5B2%5D+%3Av+in+factsL%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-6434dc
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=(D+1/t)*(D+1/t^2);
+L;
+factsL, blsL:=Factorisation(L:Algorithm:=&quot;CoprimeIndexOne&quot;,Precision:=6);
+blsL;
+#factsL;
+factsL[1];
+factsL[2];
+[v[1]*v[2] :v in factsL];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","R\u003cD>:=DifferentialOperatorRing(S);"],["v","L:=(D+1/t)*(D+1/t^2);"],["v","L;"],["o","D^2 + (t^-2 + t^-1)*D + t^-3 - 2*t^-2"],["v","factsL, blsL:=Factorisation(L:Algorithm:=\"CoprimeIndexOne\",Precision:=6);"],["o","Performing coprime index 1 factorisation."],["v","blsL;"],["o","[ true, true ]"],["v","#factsL;"],["o","2"],["a","assert $1 eq 2;"],["v","factsL[1];"],["o","["],["o","    D + t^-2 + 2 + t - 3*t^2 - 8*t^3 + O(t^4),"],["o","    D + t^-1 - 2 - t + 3*t^2 + 8*t^3 - 9*t^4 + O(t^5)"],["o","]"],["v","factsL[2];"],["o","["],["o","    D + t^-1,"],["o","    D + t^-2"],["o","]"],["v","[v[1]*v[2] :v in factsL];"],["o","["],["o","    D^2 + (t^-2 + t^-1 + O(t^4))*D + t^-3 - 2*t^-2 + O(t^3),"],["o","    D^2 + (t^-2 + t^-1)*D + t^-3 - 2*t^-2"],["o","]"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-c4b3ef">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Operator</span> <span class="pre">the</span> <span class="pre">Factorisation</span> <span class="pre">Routine</span> <span class="pre">Cannot</span> <span class="pre">Split</span></span> <span class="magma-example-tag"><span class="pre">(ex-c4b3ef)</span></span><a class="headerlink" href="#example-ex-c4b3ef" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-c4b3ef%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3D%28D%2B2%2Ft%29%5E2%3B%0Anp%3A%3DNewtonPolygon%28L%29%3B%0Afaces%3A%3DFaces%28np%29%3B%0A%23faces+eq+1%3B%0ANewtonPolynomial%28faces%5B1%5D%29%3B%0AfactsL_lclm%2CblsL_lclm%3A%3DFactorisation%28L%29%3B%0AfactsL_lclm%3B%0AblsL_lclm%3B%0AfactsL_c1%2CblsL_c1%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0AfactsL_c1+eq+factsL_lclm%3B%0AblsL_c1+eq+blsL_lclm%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-c4b3ef
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=(D+2/t)^2;
+np:=NewtonPolygon(L);
+faces:=Faces(np);
+#faces eq 1;
+NewtonPolynomial(faces[1]);
+factsL_lclm,blsL_lclm:=Factorisation(L);
+factsL_lclm;
+blsL_lclm;
+factsL_c1,blsL_c1:=Factorisation(L:Algorithm:=&quot;CoprimeIndexOne&quot;);
+factsL_c1 eq factsL_lclm;
+blsL_c1 eq blsL_lclm;" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>This example shows that not all operators may be factored by the factorisation routine. Notice that the Newton polynomial of the operator is a square of a polynomial.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>R&lt;D&gt;:=DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=(D+2/t)^2;
+<span class="gp">&gt; </span>np:=NewtonPolygon(L);
+<span class="gp">&gt; </span>faces:=Faces(np);
+<span class="gp">&gt; </span>#faces eq 1;
+<span class="go">true</span>
+<span class="gp">&gt; </span>NewtonPolynomial(faces[1]);
+<span class="go">$.1^2 + 4*$.1 + 4</span>
+<span class="gp">&gt; </span>factsL_lclm,blsL_lclm:=Factorisation(L);
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>factsL_lclm;
+<span class="go">[</span>
+<span class="go">    [</span>
+<span class="go">        1,</span>
+<span class="go">        D^2 + 4*t^-1*D + 4*t^-2 - 2*t^-1</span>
+<span class="go">    ]</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>blsL_lclm;
+<span class="go">[ false ]</span>
+<span class="gp">&gt; </span>factsL_c1,blsL_c1:=Factorisation(L:Algorithm:="CoprimeIndexOne");
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 factorisation.</span>
+<span class="gp">&gt; </span>factsL_c1 eq factsL_lclm;
+<span class="go">true</span>
+<span class="gp">&gt; </span>blsL_c1 eq blsL_lclm;
+<span class="go">true</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-c4b3ef%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3D%28D%2B2%2Ft%29%5E2%3B%0Anp%3A%3DNewtonPolygon%28L%29%3B%0Afaces%3A%3DFaces%28np%29%3B%0A%23faces+eq+1%3B%0ANewtonPolynomial%28faces%5B1%5D%29%3B%0AfactsL_lclm%2CblsL_lclm%3A%3DFactorisation%28L%29%3B%0AfactsL_lclm%3B%0AblsL_lclm%3B%0AfactsL_c1%2CblsL_c1%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0AfactsL_c1+eq+factsL_lclm%3B%0AblsL_c1+eq+blsL_lclm%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-c4b3ef
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=(D+2/t)^2;
+np:=NewtonPolygon(L);
+faces:=Faces(np);
+#faces eq 1;
+NewtonPolynomial(faces[1]);
+factsL_lclm,blsL_lclm:=Factorisation(L);
+factsL_lclm;
+blsL_lclm;
+factsL_c1,blsL_c1:=Factorisation(L:Algorithm:=&quot;CoprimeIndexOne&quot;);
+factsL_c1 eq factsL_lclm;
+blsL_c1 eq blsL_lclm;" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","R\u003cD>:=DifferentialOperatorRing(S);"],["v","L:=(D+2/t)^2;"],["v","np:=NewtonPolygon(L);"],["v","faces:=Faces(np);"],["v","#faces eq 1;"],["o","true"],["a","assert $1;"],["v","NewtonPolynomial(faces[1]);"],["o","$.1^2 + 4*$.1 + 4"],["v","factsL_lclm,blsL_lclm:=Factorisation(L);"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 LCLM factorisation."],["v","factsL_lclm;"],["o","["],["o","    ["],["o","        1,"],["o","        D^2 + 4*t^-1*D + 4*t^-2 - 2*t^-1"],["o","    ]"],["o","]"],["v","blsL_lclm;"],["o","[ false ]"],["v","factsL_c1,blsL_c1:=Factorisation(L:Algorithm:=\"CoprimeIndexOne\");"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 factorisation."],["v","factsL_c1 eq factsL_lclm;"],["o","true"],["a","assert $1;"],["v","blsL_c1 eq blsL_lclm;"],["o","true"],["a","assert $1;"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-8a9dd9">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Unexpected</span> <span class="pre">Factorisation</span> <span class="pre">of</span> <span class="pre">an</span> <span class="pre">Operator</span></span> <span class="magma-example-tag"><span class="pre">(ex-8a9dd9)</span></span><a class="headerlink" href="#example-ex-8a9dd9" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-8a9dd9%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL+%3A%3D+%28D%2B1%2F%28t%2B1%29%29%2AD%3B%0AfactsL_c1%2CblsL_c1%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0A%28%23factsL_c1+eq+1%29+and+%28%23blsL_c1+eq+1%29%3B%0AfactsL_c1%5B1%5D%5B2%5D%3B%0AfactsL_lclm%2C+blsL_lclm%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22LCLM%22%29%3B%0A%28%23factsL_lclm+eq+1%29+and+%28%23blsL_lclm+eq+1%29%3B%0AfactsL_c1%5B1%5D%5B2%5D%2C+blsL_lclm%5B1%5D%3B%0AM%3A%3D%28D%2B1%2F%28t-1%29%29%2AD%3B%0AfactsM%3A%3DFactorisation%28M%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0A%23+factsM+eq+1%3B%0AfactsM%5B1%5D%5B2%5D%2BO%28t%5E4%29%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-8a9dd9
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L := (D+1/(t+1))*D;
+factsL_c1,blsL_c1:=Factorisation(L:Algorithm:=&quot;CoprimeIndexOne&quot;);
+(#factsL_c1 eq 1) and (#blsL_c1 eq 1);
+factsL_c1[1][2];
+factsL_lclm, blsL_lclm:=Factorisation(L:Algorithm:=&quot;LCLM&quot;);
+(#factsL_lclm eq 1) and (#blsL_lclm eq 1);
+factsL_c1[1][2], blsL_lclm[1];
+M:=(D+1/(t-1))*D;
+factsM:=Factorisation(M:Algorithm:=&quot;CoprimeIndexOne&quot;);
+# factsM eq 1;
+factsM[1][2]+O(t^4);" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>This example shows that one may not retrieve the factorisation as expected.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>R&lt;D&gt;:=DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L := (D+1/(t+1))*D;
+<span class="gp">&gt; </span>factsL_c1,blsL_c1:=Factorisation(L:Algorithm:="CoprimeIndexOne");
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 factorisation.</span>
+<span class="gp">&gt; </span>(#factsL_c1 eq 1) and (#blsL_c1 eq 1);
+<span class="go">true</span>
+<span class="gp">&gt; </span>factsL_c1[1][2];
+<span class="go">D + O(t^20)</span>
+<span class="gp">&gt; </span>factsL_lclm, blsL_lclm:=Factorisation(L:Algorithm:="LCLM");
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">The number of slopes of the Newton polynomial: 1</span>
+<span class="gp">&gt; </span>(#factsL_lclm eq 1) and (#blsL_lclm eq 1);
+<span class="go">true</span>
+<span class="gp">&gt; </span>factsL_c1[1][2], blsL_lclm[1];
+<span class="go">D + O(t^20)</span>
+<span class="go">false</span>
+<span class="gp">&gt; </span>M:=(D+1/(t-1))*D;
+<span class="gp">&gt; </span>factsM:=Factorisation(M:Algorithm:="CoprimeIndexOne");
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 factorisation.</span>
+<span class="gp">&gt; </span># factsM eq 1;
+<span class="gp">&gt; </span>factsM[1][2]+O(t^4);
+<span class="go">D + -1 - 1/2*t - 5/12*t^2 - 3/8*t^3 + O(t^4)</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-8a9dd9%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL+%3A%3D+%28D%2B1%2F%28t%2B1%29%29%2AD%3B%0AfactsL_c1%2CblsL_c1%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0A%28%23factsL_c1+eq+1%29+and+%28%23blsL_c1+eq+1%29%3B%0AfactsL_c1%5B1%5D%5B2%5D%3B%0AfactsL_lclm%2C+blsL_lclm%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22LCLM%22%29%3B%0A%28%23factsL_lclm+eq+1%29+and+%28%23blsL_lclm+eq+1%29%3B%0AfactsL_c1%5B1%5D%5B2%5D%2C+blsL_lclm%5B1%5D%3B%0AM%3A%3D%28D%2B1%2F%28t-1%29%29%2AD%3B%0AfactsM%3A%3DFactorisation%28M%3AAlgorithm%3A%3D%22CoprimeIndexOne%22%29%3B%0A%23+factsM+eq+1%3B%0AfactsM%5B1%5D%5B2%5D%2BO%28t%5E4%29%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-8a9dd9
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L := (D+1/(t+1))*D;
+factsL_c1,blsL_c1:=Factorisation(L:Algorithm:=&quot;CoprimeIndexOne&quot;);
+(#factsL_c1 eq 1) and (#blsL_c1 eq 1);
+factsL_c1[1][2];
+factsL_lclm, blsL_lclm:=Factorisation(L:Algorithm:=&quot;LCLM&quot;);
+(#factsL_lclm eq 1) and (#blsL_lclm eq 1);
+factsL_c1[1][2], blsL_lclm[1];
+M:=(D+1/(t-1))*D;
+factsM:=Factorisation(M:Algorithm:=&quot;CoprimeIndexOne&quot;);
+# factsM eq 1;
+factsM[1][2]+O(t^4);" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","R\u003cD>:=DifferentialOperatorRing(S);"],["v","L := (D+1/(t+1))*D;"],["v","factsL_c1,blsL_c1:=Factorisation(L:Algorithm:=\"CoprimeIndexOne\");"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 factorisation."],["v","(#factsL_c1 eq 1) and (#blsL_c1 eq 1);"],["o","true"],["a","assert $1;"],["v","factsL_c1[1][2];"],["o","D + O(t^20)"],["v","factsL_lclm, blsL_lclm:=Factorisation(L:Algorithm:=\"LCLM\");"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 LCLM factorisation."],["o","The number of slopes of the Newton polynomial: 1"],["v","(#factsL_lclm eq 1) and (#blsL_lclm eq 1);"],["o","true"],["a","assert $1;"],["v","factsL_c1[1][2], blsL_lclm[1];"],["o","D + O(t^20)"],["o","false"],["v","M:=(D+1/(t-1))*D;"],["v","factsM:=Factorisation(M:Algorithm:=\"CoprimeIndexOne\");"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 factorisation."],["v","# factsM eq 1;"],["v","factsM[1][2]+O(t^4);"],["o","D + -1 - 1/2*t - 5/12*t^2 - 3/8*t^3 + O(t^4)"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-fee1e8">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Precision</span> <span class="pre">of</span> <span class="pre">Factors</span> <span class="pre">for</span> <span class="pre">a</span> <span class="pre">Rational</span> <span class="pre">Slope</span></span> <span class="magma-example-tag"><span class="pre">(ex-fee1e8)</span></span><a class="headerlink" href="#example-ex-fee1e8" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-fee1e8%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%3APrecision%3A%3D15%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3D%28D%5E5%2Bt%5E%28-1%29%29%2AD%3B%0Anp%3A%3DNewtonPolygon%28L%29%3B%0ASlopes%28np%29%3B%0AfactsL%2CblsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22LCLM%22%29%3B%0AblsL%3B%0A%5Bv%5B2%5D%3Av+in+factsL%5D%3B%0A%5Bv%5B1%5D%2Av%5B2%5D%3Av+in+factsL%5D%3B%0AfactsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22LCLM%22%2CPrecision%3A%3D75%29%3B%0A%5Bv%5B1%5D%2Av%5B2%5D%3Av+in+factsL%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-fee1e8
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals():Precision:=15);
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=(D^5+t^(-1))*D;
+np:=NewtonPolygon(L);
+Slopes(np);
+factsL,blsL:=Factorisation(L:Algorithm:=&quot;LCLM&quot;);
+blsL;
+[v[2]:v in factsL];
+[v[1]*v[2]:v in factsL];
+factsL:=Factorisation(L:Algorithm:=&quot;LCLM&quot;,Precision:=75);
+[v[1]*v[2]:v in factsL];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>One may wish to adjust the default precision to retrieve enough terms in the coefficients in the factors. This example shows the effect on a rational slope <span class="math notranslate nohighlight">\(1/5\)</span> on the number of terms in the series coefficients of the factors obtained.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals():Precision:=15);
+<span class="gp">&gt; </span>R&lt;D&gt;:=DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=(D^5+t^(-1))*D;
+<span class="gp">&gt; </span>np:=NewtonPolygon(L);
+<span class="gp">&gt; </span>Slopes(np);
+<span class="go">[ 0 , 1/5 ]</span>
+<span class="gp">&gt; </span>factsL,blsL:=Factorisation(L:Algorithm:="LCLM");
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>blsL;
+<span class="go">[ true, true ]</span>
+<span class="gp">&gt; </span>[v[2]:v in factsL];
+<span class="go">[</span>
+<span class="go">    D,</span>
+<span class="go">    D^5 + (-1 - t - 63*t^2 + O(t^3))*D^4 + (1 + 3*t + 253*t^2 +</span>
+<span class="go">    O(t^3))*D^3 + (-1 - 7*t - 825*t^2 + O(t^3))*D^2 + (1 + 15*t + 2545*t^2</span>
+<span class="go">    + O(t^3))*D + t^-1 - 1 - 31*t - 7713*t^2 + O(t^3)</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>[v[1]*v[2]:v in factsL];
+<span class="go">[</span>
+<span class="go">    D^6 + t^-1*D,</span>
+<span class="go">    D^6 + O(t^3)*D^5 + O(t^3)*D^4 + O(t^3)*D^3 + O(t^3)*D^2 + (t^-1 +</span>
+<span class="go">    O(t^3))*D + O(t^2)</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>factsL:=Factorisation(L:Algorithm:="LCLM",Precision:=75);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>[v[1]*v[2]:v in factsL];
+<span class="go">[</span>
+<span class="go">    D^6 + t^-1*D,</span>
+<span class="go">    D^6 + O(t^15)*D^5 + O(t^15)*D^4 + O(t^15)*D^3 + O(t^15)*D^2 + (t^-1 +</span>
+<span class="go">    O(t^15))*D + O(t^14)</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-fee1e8%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%3APrecision%3A%3D15%29%3B%0AR%3CD%3E%3A%3DDifferentialOperatorRing%28S%29%3B%0AL%3A%3D%28D%5E5%2Bt%5E%28-1%29%29%2AD%3B%0Anp%3A%3DNewtonPolygon%28L%29%3B%0ASlopes%28np%29%3B%0AfactsL%2CblsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22LCLM%22%29%3B%0AblsL%3B%0A%5Bv%5B2%5D%3Av+in+factsL%5D%3B%0A%5Bv%5B1%5D%2Av%5B2%5D%3Av+in+factsL%5D%3B%0AfactsL%3A%3DFactorisation%28L%3AAlgorithm%3A%3D%22LCLM%22%2CPrecision%3A%3D75%29%3B%0A%5Bv%5B1%5D%2Av%5B2%5D%3Av+in+factsL%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-fee1e8
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals():Precision:=15);
+R&lt;D&gt;:=DifferentialOperatorRing(S);
+L:=(D^5+t^(-1))*D;
+np:=NewtonPolygon(L);
+Slopes(np);
+factsL,blsL:=Factorisation(L:Algorithm:=&quot;LCLM&quot;);
+blsL;
+[v[2]:v in factsL];
+[v[1]*v[2]:v in factsL];
+factsL:=Factorisation(L:Algorithm:=&quot;LCLM&quot;,Precision:=75);
+[v[1]*v[2]:v in factsL];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals():Precision:=15);"],["v","R\u003cD>:=DifferentialOperatorRing(S);"],["v","L:=(D^5+t^(-1))*D;"],["v","np:=NewtonPolygon(L);"],["v","Slopes(np);"],["o","[ 0 , 1/5 ]"],["v","factsL,blsL:=Factorisation(L:Algorithm:=\"LCLM\");"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 LCLM factorisation."],["v","blsL;"],["o","[ true, true ]"],["v","[v[2]:v in factsL];"],["o","["],["o","    D,"],["o","    D^5 + (-1 - t - 63*t^2 + O(t^3))*D^4 + (1 + 3*t + 253*t^2 +"],["o","    O(t^3))*D^3 + (-1 - 7*t - 825*t^2 + O(t^3))*D^2 + (1 + 15*t + 2545*t^2"],["o","    + O(t^3))*D + t^-1 - 1 - 31*t - 7713*t^2 + O(t^3)"],["o","]"],["v","[v[1]*v[2]:v in factsL];"],["o","["],["o","    D^6 + t^-1*D,"],["o","    D^6 + O(t^3)*D^5 + O(t^3)*D^4 + O(t^3)*D^3 + O(t^3)*D^2 + (t^-1 +"],["o","    O(t^3))*D + O(t^2)"],["o","]"],["v","factsL:=Factorisation(L:Algorithm:=\"LCLM\",Precision:=75);"],["o","Performing coprime index 1 LCLM factorisation."],["v","[v[1]*v[2]:v in factsL];"],["o","["],["o","    D^6 + t^-1*D,"],["o","    D^6 + O(t^15)*D^5 + O(t^15)*D^4 + O(t^15)*D^3 + O(t^15)*D^2 + (t^-1 +"],["o","    O(t^15))*D + O(t^14)"],["o","]"]]]}</script></dd></dl>
+
+</section>
+<section id="right-hand-factors-of-operators">
+<h2>Right Hand Factors of Operators<a class="headerlink" href="#right-hand-factors-of-operators" title="Link to this heading"><span aria-hidden="true">#</span></a></h2>
+<p>While resorting to field extensions can result in more complex and time consuming computations, they can be used for obtaining irreducible right hand factors over the original base field.</p>
+<p>An effective algorithm to obtain a monic irreducible right hand factor of degree one <span class="math notranslate nohighlight">\(\tilde{L}\)</span> of <span class="math notranslate nohighlight">\(L\in k((t))[\delta]\)</span> in some field extension <span class="math notranslate nohighlight">\(\tilde{k}((\tilde{t}))[\tilde{\delta}]\)</span> is presented in <span class="bibtex-citation" id="id7">[<a class="reference internal" href="../../references.html#cite-vh97" title="Mark van Hoeij. Formal solutions and factorization of differential operators with power series coefficients. J. Symbolic Comput., 24(1):1–30, 1997.">vH97b</a>, §5.1]</span>. Such a factor <span class="math notranslate nohighlight">\(\tilde{L}=\tilde{\delta}-r(\tilde{t})\)</span> of <span class="math notranslate nohighlight">\(L\)</span> is called a <em>Ricatti factor</em> of <span class="math notranslate nohighlight">\(L\)</span>. The operator <span class="math notranslate nohighlight">\(\mathop{\rm LCLM}(\tilde{\delta}-\sigma_1(r), \tilde{\delta}-\sigma_2(r), \ldots, \tilde{\delta}-\sigma_m(r))\)</span> where the <span class="math notranslate nohighlight">\(\sigma_i\)</span> are the Galois group elements of <span class="math notranslate nohighlight">\(\tilde{k}((\tilde{t}))/k((t))\)</span>, then is a monic and irreducible operator invariant under the Galois action. Hence, it naturally reduces to a monic irreducible right hand factor of <span class="math notranslate nohighlight">\(L\)</span>.</p>
+<p>Other right hand factors of <span class="math notranslate nohighlight">\(L\)</span>, that may be defined over a finite field extensions of <span class="math notranslate nohighlight">\(k((t))\)</span> are the so-called <em>semi-regular</em> parts of <span class="math notranslate nohighlight">\(L\)</span>. Such an operator <span class="math notranslate nohighlight">\(R_e(L)\)</span> is the monic right hand semi-regular factor of the translation <span class="math notranslate nohighlight">\(S_e(L)\)</span> of <span class="math notranslate nohighlight">\(L\)</span> by <span class="math notranslate nohighlight">\(e\)</span>. Its degree is equal to the dimension of a non-trivial <span class="math notranslate nohighlight">\(\bar{k}\)</span>-linear vector space <span class="math notranslate nohighlight">\(V_e(L)\)</span>, and acts as zero on it. In other words <span class="math notranslate nohighlight">\(S_{-e}(R_e)\)</span> is a monic right hand factor of <span class="math notranslate nohighlight">\(L\)</span>, possibly defined over a field extension of <span class="math notranslate nohighlight">\(k((t))\)</span>. It can be shown that <span class="math notranslate nohighlight">\(L\)</span> is the least common left multiple of all such right hand factors.</p>
+<p>The routine <code class="docutils literal notranslate"><span class="pre">RightHandFactors</span></code> returns right hand factors of a given operator possibly by using temporary field extensions. Each of these are canonical representatives of all right hand factors belonging the slopes of the Newton polynomial of the operator. Currently one of the internal routines may fail when performing calculations for some specific right hand factor. In this case we cannot conclude it to be irreducible.</p>
+<dl class="magma function">
+<dt class="sig sig-object magma" id="function-righthandfactors-rngdiffopelt">
+<span class="sig-name descname"><span class="pre">RightHandFactors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">L</span></em><span class="sig-paren">)</span><span class="p"><span class="pre">:</span> </span><span class="pre">RngDiffOpElt</span><span class="p"> <span class="pre">-&gt;</span> </span><span class="pre">SeqEnum,</span> <span class="pre">[BoolElt]</span><a class="headerlink" href="#function-righthandfactors-rngdiffopelt" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><div class="magma-param highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="n">Precision</span><span class="p">:</span> <span class="kt">RngIntElt</span>                    <span class="magma-param-default"><span class="n">Default</span><span class="p">:</span> -1</span>
+</pre></div>
+</div>
+<p>The canonical list of monic right hand factors of <span class="math notranslate nohighlight">\(L\)</span>, one per slope of the Newton polynomial of <span class="math notranslate nohighlight">\(L\)</span>. The <span class="math notranslate nohighlight">\(i^{\rm th}\)</span> entry in the second sequence returned is true if the <span class="math notranslate nohighlight">\(i^{\rm th}\)</span> right hand factor is undisputedly irreducible. The precision attribute relates to the absolute precision a coefficient in a right hand factor should minimally have.</p>
+</dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-3c08eb">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Right</span> <span class="pre">Hand</span> <span class="pre">Factors</span> <span class="pre">Matching</span> <span class="pre">an</span> <span class="pre">LCLM</span> <span class="pre">Factorisation</span></span> <span class="magma-example-tag"><span class="pre">(ex-3c08eb)</span></span><a class="headerlink" href="#example-ex-3c08eb" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-3c08eb%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3DDS%5E2%2B%281%2Ft%5E2%2B1%2Ft%29%2ADS+%2B%281%2Ft%5E3-2%2Ft%5E2%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0A%23rhf+eq+2%3B%0Abl%3B%0A%28Parent%28rhf%5B1%5D%29+eq+RS%29+and+%28Parent%28rhf%5B2%5D%29+eq+RS%29%3B%0Alhf%2Crem+%3A%3D+EuclideanRightDivision%28L%2C+rhf%5B1%5D%29%3B%0Arem%3B%0Alhf%2Arhf%5B1%5D%3B%0AEuclideanRightDivision%28L%2C+rhf%5B2%5D%29%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-3c08eb
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=DS^2+(1/t^2+1/t)*DS +(1/t^3-2/t^2);
+rhf, bl := RightHandFactors(L);
+#rhf eq 2;
+bl;
+(Parent(rhf[1]) eq RS) and (Parent(rhf[2]) eq RS);
+lhf,rem := EuclideanRightDivision(L, rhf[1]);
+rem;
+lhf*rhf[1];
+EuclideanRightDivision(L, rhf[2]);" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>This example is Example 3.49 from <span class="bibtex-citation" id="id8">[<a class="reference internal" href="../../references.html#cite-vdps03" title="Marius van der Put and Michael F. Singer. Galois theory of linear differential equations. Volume 328 of Grundlehren der Mathematischen Wissenschaften [Fundamental Principles of Mathematical Sciences]. Springer-Verlag, Berlin, 2003. ISBN 3-540-44228-6.">vdPS03</a>]</span>. The same right hand factors as in Example <a class="reference internal" href="#example-ex-6434dc" title="Factorising a Product of First-Order Operators">Factorising a Product of First-Order Operators</a> are obtained.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>RS&lt;DS&gt; := DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=DS^2+(1/t^2+1/t)*DS +(1/t^3-2/t^2);
+<span class="gp">&gt; </span>rhf, bl := RightHandFactors(L);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>#rhf eq 2;
+<span class="go">true</span>
+<span class="gp">&gt; </span>bl;
+<span class="go">[ true, true ]</span>
+<span class="gp">&gt; </span>(Parent(rhf[1]) eq RS) and (Parent(rhf[2]) eq RS);
+<span class="go">true</span>
+<span class="gp">&gt; </span>lhf,rem := EuclideanRightDivision(L, rhf[1]);
+<span class="gp">&gt; </span>rem;
+<span class="go">O(t^20)</span>
+<span class="gp">&gt; </span>lhf*rhf[1];
+<span class="go">DS^2 + (t^-2 + t^-1 + O(t^22))*DS + t^-3 - 2*t^-2 + O(t^20)</span>
+<span class="gp">&gt; </span>EuclideanRightDivision(L, rhf[2]);
+<span class="go">DS + t^-1</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-3c08eb%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3DDS%5E2%2B%281%2Ft%5E2%2B1%2Ft%29%2ADS+%2B%281%2Ft%5E3-2%2Ft%5E2%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0A%23rhf+eq+2%3B%0Abl%3B%0A%28Parent%28rhf%5B1%5D%29+eq+RS%29+and+%28Parent%28rhf%5B2%5D%29+eq+RS%29%3B%0Alhf%2Crem+%3A%3D+EuclideanRightDivision%28L%2C+rhf%5B1%5D%29%3B%0Arem%3B%0Alhf%2Arhf%5B1%5D%3B%0AEuclideanRightDivision%28L%2C+rhf%5B2%5D%29%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-3c08eb
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=DS^2+(1/t^2+1/t)*DS +(1/t^3-2/t^2);
+rhf, bl := RightHandFactors(L);
+#rhf eq 2;
+bl;
+(Parent(rhf[1]) eq RS) and (Parent(rhf[2]) eq RS);
+lhf,rem := EuclideanRightDivision(L, rhf[1]);
+rem;
+lhf*rhf[1];
+EuclideanRightDivision(L, rhf[2]);" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","RS\u003cDS> := DifferentialOperatorRing(S);"],["v","L:=DS^2+(1/t^2+1/t)*DS +(1/t^3-2/t^2);"],["v","rhf, bl := RightHandFactors(L);"],["o","Performing coprime index 1 LCLM factorisation."],["v","#rhf eq 2;"],["o","true"],["a","assert $1;"],["v","bl;"],["o","[ true, true ]"],["a","assert &and $1;"],["v","(Parent(rhf[1]) eq RS) and (Parent(rhf[2]) eq RS);"],["o","true"],["a","assert $1;"],["v","lhf,rem := EuclideanRightDivision(L, rhf[1]);"],["v","rem;"],["o","O(t^20)"],["v","lhf*rhf[1];"],["o","DS^2 + (t^-2 + t^-1 + O(t^22))*DS + t^-3 - 2*t^-2 + O(t^20)"],["v","EuclideanRightDivision(L, rhf[2]);"],["o","DS + t^-1"],["o","0"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-014248">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Operator</span> <span class="pre">That</span> <span class="pre">Is</span> <span class="pre">Its</span> <span class="pre">Own</span> <span class="pre">Right</span> <span class="pre">Hand</span> <span class="pre">Factor</span></span> <span class="magma-example-tag"><span class="pre">(ex-014248)</span></span><a class="headerlink" href="#example-ex-014248" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p>This example corresponds to Example 3.52 in <span class="bibtex-citation" id="id9">[<a class="reference internal" href="../../references.html#cite-vdps03" title="Marius van der Put and Michael F. Singer. Galois theory of linear differential equations. Volume 328 of Grundlehren der Mathematischen Wissenschaften [Fundamental Principles of Mathematical Sciences]. Springer-Verlag, Berlin, 2003. ISBN 3-540-44228-6.">vdPS03</a>]</span>. The answer in the book is erroneous.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>RS&lt;DS&gt; := DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=DS^2-3/2*DS+(2*t-1)/(4*t);
+<span class="gp">&gt; </span>rhf, bl := RightHandFactors(L);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>bl;
+<span class="go">[ true ]</span>
+<span class="gp">&gt; </span>#rhf eq 1;
+<span class="go">true</span>
+<span class="gp">&gt; </span>rhf[1] eq L;
+<span class="go">true</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-014248%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3DDS%5E2-3%2F2%2ADS%2B%282%2At-1%29%2F%284%2At%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0Abl%3B%0A%23rhf+eq+1%3B%0Arhf%5B1%5D+eq+L%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-014248
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=DS^2-3/2*DS+(2*t-1)/(4*t);
+rhf, bl := RightHandFactors(L);
+bl;
+#rhf eq 1;
+rhf[1] eq L;" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","RS\u003cDS> := DifferentialOperatorRing(S);"],["v","L:=DS^2-3/2*DS+(2*t-1)/(4*t);"],["v","rhf, bl := RightHandFactors(L);"],["o","Performing coprime index 1 LCLM factorisation."],["v","bl;"],["o","[ true ]"],["a","assert &and $1;"],["v","#rhf eq 1;"],["o","true"],["a","assert $1;"],["v","rhf[1] eq L;"],["o","true"],["a","assert $1;"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-69cc8c">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Right</span> <span class="pre">Hand</span> <span class="pre">Factors</span> <span class="pre">Where</span> <span class="pre">Factorisation</span> <span class="pre">Fails</span></span> <span class="magma-example-tag"><span class="pre">(ex-69cc8c)</span></span><a class="headerlink" href="#example-ex-69cc8c" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-69cc8c%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3D%28DS%2B2%2Ft%29%5E2%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0Arhf%3B%0Abl%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-69cc8c
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=(DS+2/t)^2;
+rhf, bl := RightHandFactors(L);
+rhf;
+bl;" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>The operator in this example is the same as in Example <a class="reference internal" href="#example-ex-c4b3ef" title="Operator the Factorisation Routine Cannot Split">Operator the Factorisation Routine Cannot Split</a> where the routine <code class="docutils literal notranslate"><span class="pre">Factorisation</span></code> was used. The operator did not factor there, but does when using <code class="docutils literal notranslate"><span class="pre">RightHandFactors</span></code>.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>RS&lt;DS&gt; := DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=(DS+2/t)^2;
+<span class="gp">&gt; </span>rhf, bl := RightHandFactors(L);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Calculating semi-regular parts.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Computing a first order Ricatti factor.</span>
+<span class="go">Performing LCLM calculation on the Ricatti factor.</span>
+<span class="gp">&gt; </span>rhf;
+<span class="go">[</span>
+<span class="go">    DS + 2*t^-1</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>bl;
+<span class="go">[ true ]</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-69cc8c%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3D%28DS%2B2%2Ft%29%5E2%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0Arhf%3B%0Abl%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-69cc8c
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=(DS+2/t)^2;
+rhf, bl := RightHandFactors(L);
+rhf;
+bl;" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","RS\u003cDS> := DifferentialOperatorRing(S);"],["v","L:=(DS+2/t)^2;"],["v","rhf, bl := RightHandFactors(L);"],["o","Performing coprime index 1 LCLM factorisation."],["o","Calculating semi-regular parts."],["o","Performing coprime index 1 LCLM factorisation."],["o","Performing coprime index 1 LCLM factorisation."],["o","Computing a first order Ricatti factor."],["o","Performing LCLM calculation on the Ricatti factor."],["v","rhf;"],["o","["],["o","    DS + 2*t^-1"],["o","]"],["v","bl;"],["o","[ true ]"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-6d4ec1">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Right</span> <span class="pre">Hand</span> <span class="pre">Factors</span> <span class="pre">for</span> <span class="pre">a</span> <span class="pre">Square</span> <span class="pre">Newton</span> <span class="pre">Polynomial</span></span> <span class="magma-example-tag"><span class="pre">(ex-6d4ec1)</span></span><a class="headerlink" href="#example-ex-6d4ec1" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-6d4ec1%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3DDS%5E2+%2B%284%2B2%2At-t%5E2-3%2At%5E3%29%2F%28t%5E2%29%2ADS%2B+%284%2B4%2At-5%2At%5E2-8%2At%5E3-3%2At%5E4%2B2%2At%5E6%29%2F%28t%5E4%29%3B%0Anp%3A%3DNewtonPolygon%28L%29%3B%0Afaces%3A%3DFaces%28np%29%3B%0A%23faces+eq+1%3B%0A_%3CT%3E+%3A%3D+PolynomialRing%28Rationals%28%29%29%3B%0ANewtonPolynomial%28faces%5B1%5D%29%3B%0AfactsL%2C+blsL+%3A%3D+Factorisation%28L%29%3B%0AblsL%3B%0A%28%23factsL+eq+1%29+and+%28factsL%5B1%5D%5B2%5D+eq+L%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0ADegree%28rhf%5B1%5D%29%3B%0Abl%3B%0AParent+%28rhf%5B1%5D%29+eq+RS%3B%0AL+-+EuclideanRightDivision%28L%2C+rhf%5B1%5D%29%2Arhf%5B1%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-6d4ec1
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=DS^2 +(4+2*t-t^2-3*t^3)/(t^2)*DS+ (4+4*t-5*t^2-8*t^3-3*t^4+2*t^6)/(t^4);
+np:=NewtonPolygon(L);
+faces:=Faces(np);
+#faces eq 1;
+_&lt;T&gt; := PolynomialRing(Rationals());
+NewtonPolynomial(faces[1]);
+factsL, blsL := Factorisation(L);
+blsL;
+(#factsL eq 1) and (factsL[1][2] eq L);
+rhf, bl := RightHandFactors(L);
+Degree(rhf[1]);
+bl;
+Parent (rhf[1]) eq RS;
+L - EuclideanRightDivision(L, rhf[1])*rhf[1];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>This example corresponds to Example 3.53 in <span class="bibtex-citation" id="id10">[<a class="reference internal" href="../../references.html#cite-vdps03" title="Marius van der Put and Michael F. Singer. Galois theory of linear differential equations. Volume 328 of Grundlehren der Mathematischen Wissenschaften [Fundamental Principles of Mathematical Sciences]. Springer-Verlag, Berlin, 2003. ISBN 3-540-44228-6.">vdPS03</a>]</span>.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>RS&lt;DS&gt; := DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=DS^2 +(4+2*t-t^2-3*t^3)/(t^2)*DS+ (4+4*t-5*t^2-8*t^3-3*t^4+2*t^6)/(t^4);
+<span class="gp">&gt; </span>np:=NewtonPolygon(L);
+<span class="gp">&gt; </span>faces:=Faces(np);
+<span class="gp">&gt; </span>#faces eq 1;
+<span class="go">true</span>
+<span class="gp">&gt; </span>_&lt;T&gt; := PolynomialRing(Rationals());
+<span class="gp">&gt; </span>NewtonPolynomial(faces[1]);
+<span class="go">T^2 + 4*T + 4</span>
+<span class="gp">&gt; </span>factsL, blsL := Factorisation(L);
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>blsL;
+<span class="go">[ false ]</span>
+<span class="gp">&gt; </span>(#factsL eq 1) and (factsL[1][2] eq L);
+<span class="go">true</span>
+<span class="gp">&gt; </span>rhf, bl := RightHandFactors(L);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Calculating semi-regular parts.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Computing a first order Ricatti factor.</span>
+<span class="go">Performing LCLM calculation on the Ricatti factor.</span>
+<span class="gp">&gt; </span>Degree(rhf[1]);
+<span class="go">1</span>
+<span class="gp">&gt; </span>bl;
+<span class="go">[ true ]</span>
+<span class="gp">&gt; </span>Parent (rhf[1]) eq RS;
+<span class="go">true</span>
+<span class="gp">&gt; </span>L - EuclideanRightDivision(L, rhf[1])*rhf[1];
+<span class="go">O(t^22)*DS + O(t^20)</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-6d4ec1%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3DDS%5E2+%2B%284%2B2%2At-t%5E2-3%2At%5E3%29%2F%28t%5E2%29%2ADS%2B+%284%2B4%2At-5%2At%5E2-8%2At%5E3-3%2At%5E4%2B2%2At%5E6%29%2F%28t%5E4%29%3B%0Anp%3A%3DNewtonPolygon%28L%29%3B%0Afaces%3A%3DFaces%28np%29%3B%0A%23faces+eq+1%3B%0A_%3CT%3E+%3A%3D+PolynomialRing%28Rationals%28%29%29%3B%0ANewtonPolynomial%28faces%5B1%5D%29%3B%0AfactsL%2C+blsL+%3A%3D+Factorisation%28L%29%3B%0AblsL%3B%0A%28%23factsL+eq+1%29+and+%28factsL%5B1%5D%5B2%5D+eq+L%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0ADegree%28rhf%5B1%5D%29%3B%0Abl%3B%0AParent+%28rhf%5B1%5D%29+eq+RS%3B%0AL+-+EuclideanRightDivision%28L%2C+rhf%5B1%5D%29%2Arhf%5B1%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-6d4ec1
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=DS^2 +(4+2*t-t^2-3*t^3)/(t^2)*DS+ (4+4*t-5*t^2-8*t^3-3*t^4+2*t^6)/(t^4);
+np:=NewtonPolygon(L);
+faces:=Faces(np);
+#faces eq 1;
+_&lt;T&gt; := PolynomialRing(Rationals());
+NewtonPolynomial(faces[1]);
+factsL, blsL := Factorisation(L);
+blsL;
+(#factsL eq 1) and (factsL[1][2] eq L);
+rhf, bl := RightHandFactors(L);
+Degree(rhf[1]);
+bl;
+Parent (rhf[1]) eq RS;
+L - EuclideanRightDivision(L, rhf[1])*rhf[1];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","RS\u003cDS> := DifferentialOperatorRing(S);"],["v","L:=DS^2 +(4+2*t-t^2-3*t^3)/(t^2)*DS+ (4+4*t-5*t^2-8*t^3-3*t^4+2*t^6)/(t^4);"],["v","np:=NewtonPolygon(L);"],["v","faces:=Faces(np);"],["v","#faces eq 1;"],["o","true"],["a","assert $1;"],["v","_\u003cT> := PolynomialRing(Rationals());"],["v","NewtonPolynomial(faces[1]);"],["o","T^2 + 4*T + 4"],["v","factsL, blsL := Factorisation(L);"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 LCLM factorisation."],["v","blsL;"],["o","[ false ]"],["v","(#factsL eq 1) and (factsL[1][2] eq L);"],["o","true"],["a","assert $1;"],["v","rhf, bl := RightHandFactors(L);"],["o","Performing coprime index 1 LCLM factorisation."],["o","Calculating semi-regular parts."],["o","Performing coprime index 1 LCLM factorisation."],["o","Performing coprime index 1 LCLM factorisation."],["o","Performing coprime index 1 LCLM factorisation."],["o","Computing a first order Ricatti factor."],["o","Performing LCLM calculation on the Ricatti factor."],["v","Degree(rhf[1]);"],["o","1"],["a","assert $1 eq 1;"],["v","bl;"],["o","[ true ]"],["a","assert &and $1;"],["v","Parent (rhf[1]) eq RS;"],["o","true"],["a","assert $1;"],["v","L - EuclideanRightDivision(L, rhf[1])*rhf[1];"],["o","O(t^22)*DS + O(t^20)"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-987714">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Operators</span> <span class="pre">Sharing</span> <span class="pre">a</span> <span class="pre">Newton</span> <span class="pre">Polynomial</span></span> <span class="magma-example-tag"><span class="pre">(ex-987714)</span></span><a class="headerlink" href="#example-ex-987714" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-987714%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL+%3A%3D+DS%5E4-1%2Ft%5E4%3B%0Afaces%3A%3DFaces%28NewtonPolygon%28L%29%29%3B%0Afaces%3B%0A_%3CT%3E+%3A%3D+PolynomialRing%28Rationals%28%29%29%3B%0ANewtonPolynomial%28faces%5B1%5D%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0Abl%3B%0A%5BDegree%28v%29+%3A+v+in+rhf%5D%3B%0A+L+-+EuclideanRightDivision%28L%2C+rhf%5B1%5D%29%2Arhf%5B1%5D%3B%0A+L+-+EuclideanRightDivision%28L%2C+rhf%5B2%5D%29%2Arhf%5B2%5D%3B%0A+L+-+EuclideanRightDivision%28L%2C+rhf%5B3%5D%29%2Arhf%5B3%5D%3B%0AM+%3A%3D+DS%5E4-1%3B%0Afaces%3A%3DFaces%28NewtonPolygon%28M%29%29%3B%0Afaces%3B%0ANewtonPolynomial%28faces%5B1%5D%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28M%29%3B%0Arhf%3B%0Abl%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-987714
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L := DS^4-1/t^4;
+faces:=Faces(NewtonPolygon(L));
+faces;
+_&lt;T&gt; := PolynomialRing(Rationals());
+NewtonPolynomial(faces[1]);
+rhf, bl := RightHandFactors(L);
+bl;
+[Degree(v) : v in rhf];
+ L - EuclideanRightDivision(L, rhf[1])*rhf[1];
+ L - EuclideanRightDivision(L, rhf[2])*rhf[2];
+ L - EuclideanRightDivision(L, rhf[3])*rhf[3];
+M := DS^4-1;
+faces:=Faces(NewtonPolygon(M));
+faces;
+NewtonPolynomial(faces[1]);
+rhf, bl := RightHandFactors(M);
+rhf;
+bl;" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>A collection of operators having the same Newton polynomial <span class="math notranslate nohighlight">\((T^2+1)(T-1)(T+1)\)</span>.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>RS&lt;DS&gt; := DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L := DS^4-1/t^4;
+<span class="gp">&gt; </span>faces:=Faces(NewtonPolygon(L));
+<span class="gp">&gt; </span>faces;
+<span class="go">[ &lt;-1, 1, -4&gt; ]</span>
+<span class="gp">&gt; </span>_&lt;T&gt; := PolynomialRing(Rationals());
+<span class="gp">&gt; </span>NewtonPolynomial(faces[1]);
+<span class="go">T^4 - 1</span>
+<span class="gp">&gt; </span>rhf, bl := RightHandFactors(L);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>bl;
+<span class="go">[ true, true, true ]</span>
+<span class="gp">&gt; </span>[Degree(v) : v in rhf];
+<span class="go">[ 1, 1, 2 ]</span>
+<span class="gp">&gt; </span> L - EuclideanRightDivision(L, rhf[1])*rhf[1];
+<span class="go">O(t^23)*DS^3 + O(t^22)*DS^2 + O(t^21)*DS + O(t^20)</span>
+<span class="gp">&gt; </span> L - EuclideanRightDivision(L, rhf[2])*rhf[2];
+<span class="go">O(t^23)*DS^3 + O(t^22)*DS^2 + O(t^21)*DS + O(t^20)</span>
+<span class="gp">&gt; </span> L - EuclideanRightDivision(L, rhf[3])*rhf[3];
+<span class="go">O(t^23)*DS^3 + O(t^22)*DS^2 + O(t^21)*DS + O(t^20)</span>
+<span class="gp">&gt; </span>M := DS^4-1;
+<span class="gp">&gt; </span>faces:=Faces(NewtonPolygon(M));
+<span class="gp">&gt; </span>faces;
+<span class="go">[ &lt;0, 1, 0&gt; ]</span>
+<span class="gp">&gt; </span>NewtonPolynomial(faces[1]);
+<span class="go">T^4 - 1</span>
+<span class="gp">&gt; </span>rhf, bl := RightHandFactors(M);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Calculating semi-regular parts.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Performing LCLM calculation on a semi-regular part.</span>
+<span class="go">Calculating semi-regular parts.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Computing a first order Ricatti factor.</span>
+<span class="go">Performing LCLM calculation on the Ricatti factor.</span>
+<span class="gp">&gt; </span>rhf;
+<span class="go">[</span>
+<span class="go">    DS^2 + 1,</span>
+<span class="go">    DS + -1</span>
+<span class="go">]</span>
+<span class="gp">&gt; </span>bl;
+<span class="go">[ true, true ]</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-987714%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL+%3A%3D+DS%5E4-1%2Ft%5E4%3B%0Afaces%3A%3DFaces%28NewtonPolygon%28L%29%29%3B%0Afaces%3B%0A_%3CT%3E+%3A%3D+PolynomialRing%28Rationals%28%29%29%3B%0ANewtonPolynomial%28faces%5B1%5D%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%29%3B%0Abl%3B%0A%5BDegree%28v%29+%3A+v+in+rhf%5D%3B%0A+L+-+EuclideanRightDivision%28L%2C+rhf%5B1%5D%29%2Arhf%5B1%5D%3B%0A+L+-+EuclideanRightDivision%28L%2C+rhf%5B2%5D%29%2Arhf%5B2%5D%3B%0A+L+-+EuclideanRightDivision%28L%2C+rhf%5B3%5D%29%2Arhf%5B3%5D%3B%0AM+%3A%3D+DS%5E4-1%3B%0Afaces%3A%3DFaces%28NewtonPolygon%28M%29%29%3B%0Afaces%3B%0ANewtonPolynomial%28faces%5B1%5D%29%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28M%29%3B%0Arhf%3B%0Abl%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-987714
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L := DS^4-1/t^4;
+faces:=Faces(NewtonPolygon(L));
+faces;
+_&lt;T&gt; := PolynomialRing(Rationals());
+NewtonPolynomial(faces[1]);
+rhf, bl := RightHandFactors(L);
+bl;
+[Degree(v) : v in rhf];
+ L - EuclideanRightDivision(L, rhf[1])*rhf[1];
+ L - EuclideanRightDivision(L, rhf[2])*rhf[2];
+ L - EuclideanRightDivision(L, rhf[3])*rhf[3];
+M := DS^4-1;
+faces:=Faces(NewtonPolygon(M));
+faces;
+NewtonPolynomial(faces[1]);
+rhf, bl := RightHandFactors(M);
+rhf;
+bl;" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","RS\u003cDS> := DifferentialOperatorRing(S);"],["v","L := DS^4-1/t^4;"],["v","faces:=Faces(NewtonPolygon(L));"],["v","faces;"],["o","[ \u003c-1, 1, -4> ]"],["v","_\u003cT> := PolynomialRing(Rationals());"],["v","NewtonPolynomial(faces[1]);"],["o","T^4 - 1"],["v","rhf, bl := RightHandFactors(L);"],["o","Performing coprime index 1 LCLM factorisation."],["v","bl;"],["o","[ true, true, true ]"],["a","assert &and $1;"],["v","[Degree(v) : v in rhf];"],["o","[ 1, 1, 2 ]"],["v"," L - EuclideanRightDivision(L, rhf[1])*rhf[1];"],["o","O(t^23)*DS^3 + O(t^22)*DS^2 + O(t^21)*DS + O(t^20)"],["v"," L - EuclideanRightDivision(L, rhf[2])*rhf[2];"],["o","O(t^23)*DS^3 + O(t^22)*DS^2 + O(t^21)*DS + O(t^20)"],["v"," L - EuclideanRightDivision(L, rhf[3])*rhf[3];"],["o","O(t^23)*DS^3 + O(t^22)*DS^2 + O(t^21)*DS + O(t^20)"],["v","M := DS^4-1;"],["v","faces:=Faces(NewtonPolygon(M));"],["v","faces;"],["o","[ \u003c0, 1, 0> ]"],["v","NewtonPolynomial(faces[1]);"],["o","T^4 - 1"],["v","rhf, bl := RightHandFactors(M);"],["o","Performing coprime index 1 LCLM factorisation."],["o","Calculating semi-regular parts."],["o","Performing coprime index 1 LCLM factorisation."],["o","Performing LCLM calculation on a semi-regular part."],["o","Calculating semi-regular parts."],["o","Performing coprime index 1 LCLM factorisation."],["o","Computing a first order Ricatti factor."],["o","Performing LCLM calculation on the Ricatti factor."],["v","rhf;"],["o","["],["o","    DS^2 + 1,"],["o","    DS + -1"],["o","]"],["v","bl;"],["o","[ true, true ]"],["a","assert &and $1;"]]]}</script></dd></dl>
+
+<dl class="magma example">
+<dt class="sig sig-object magma" id="example-ex-826452">
+<span class="magma-example-title"><span class="magma-example-prefix"><span class="pre">Example:</span> </span><span class="pre">Factorising</span> <span class="pre">an</span> <span class="pre">Operator</span> <span class="pre">of</span> <span class="pre">Order</span> <span class="pre">9</span></span> <span class="magma-example-tag"><span class="pre">(ex-826452)</span></span><a class="headerlink" href="#example-ex-826452" title="Link to this definition"><span aria-hidden="true">#</span></a></dt>
+<dd><p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-826452%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3DDS%5E9+%2B+2%2At%5E-1%2ADS%5E8+%2B+3%2At%5E-2%2ADS%5E7+%2B+2%2At%5E-3%2ADS%5E6+%2B+%28t%5E-4+%2B+2%2At%5E-2%29%2ADS%5E5+%2B%0A%28-3%2At%5E-5+%2B+5%2At%5E-4%29%2ADS%5E3+%2B+3%2At%5E-5%2ADS%5E2+%2B+%282%2At%5E-6+%2B+2%2At%5E-5%29%2ADS+%2B+7%2At%5E-5%3B%0Afacts+%3A%3D+Factorisation%28L%29%3B%0A%5BDegree%28v%5B2%5D%29%3A+v+in+facts%5D%3B%0Aisweaklyzero+%3A%3D+%5B%5D%3B%0Avals+%3A%3D%5B%5D%3B%0Afor+i+in+%5B1..4%5D+do%0A++_%2Crem+%3A%3D+EuclideanRightDivision%28L%2C+facts%5Bi%5D%5B2%5D%29%3B%0A++isweaklyzero%5Bi%5D+%3A%3D+IsWeaklyZero%28rem%29%3B%0A++vals%5Bi%5D+%3A%3D+%5BValuation%28v%29+%3A+v+in+Eltseq%28rem%29%5D%3B%0Aend+for%3B%0Aisweaklyzero%3B%0A%5BMinimum%28v%29+%3A+v+in+vals%5D%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%3APrecision%3A%3D30%29%3B%0Abl%3B%0A%5BDegree%28v%29%3A+v+in+rhf%5D%3B%0Aisweaklyzero+%3A%3D+%5B%5D%3B%0Avals+%3A%3D+%5B%5D%3B%0Afor+i+in+%5B1..4%5D+do%0A++%5BDegree%28v%29%3A+v+in+Eltseq%28rhf%5Bi%5D%29%5D%3B%0A++_%2Crem+%3A%3D+EuclideanRightDivision%28L%2C+rhf%5Bi%5D%29%3B%0A++isweaklyzero%5Bi%5D+%3A%3D+IsWeaklyZero%28rem%29%3B%0A++vals%5Bi%5D+%3A%3D+%5BValuation%28v%29+%3A+v+in+Eltseq%28rem%29%5D%3B%0Aend+for%3B%0Aisweaklyzero%3B%0A%5B+Minimum%28v%29+%3A+v+in+vals%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-826452
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=DS^9 + 2*t^-1*DS^8 + 3*t^-2*DS^7 + 2*t^-3*DS^6 + (t^-4 + 2*t^-2)*DS^5 +
+(-3*t^-5 + 5*t^-4)*DS^3 + 3*t^-5*DS^2 + (2*t^-6 + 2*t^-5)*DS + 7*t^-5;
+facts := Factorisation(L);
+[Degree(v[2]): v in facts];
+isweaklyzero := [];
+vals :=[];
+for i in [1..4] do
+  _,rem := EuclideanRightDivision(L, facts[i][2]);
+  isweaklyzero[i] := IsWeaklyZero(rem);
+  vals[i] := [Valuation(v) : v in Eltseq(rem)];
+end for;
+isweaklyzero;
+[Minimum(v) : v in vals];
+rhf, bl := RightHandFactors(L:Precision:=30);
+bl;
+[Degree(v): v in rhf];
+isweaklyzero := [];
+vals := [];
+for i in [1..4] do
+  [Degree(v): v in Eltseq(rhf[i])];
+  _,rem := EuclideanRightDivision(L, rhf[i]);
+  isweaklyzero[i] := IsWeaklyZero(rem);
+  vals[i] := [Valuation(v) : v in Eltseq(rem)];
+end for;
+isweaklyzero;
+[ Minimum(v) : v in vals];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><p>This is the main example of <span class="bibtex-citation" id="id11">[<a class="reference internal" href="../../references.html#cite-vh97" title="Mark van Hoeij. Formal solutions and factorization of differential operators with power series coefficients. J. Symbolic Comput., 24(1):1–30, 1997.">vH97b</a>]</span>.</p>
+<div class="highlight-magma notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt; </span>S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+<span class="gp">&gt; </span>RS&lt;DS&gt; := DifferentialOperatorRing(S);
+<span class="gp">&gt; </span>L:=DS^9 + 2*t^-1*DS^8 + 3*t^-2*DS^7 + 2*t^-3*DS^6 + (t^-4 + 2*t^-2)*DS^5 +
+<span class="gp">&gt; </span>(-3*t^-5 + 5*t^-4)*DS^3 + 3*t^-5*DS^2 + (2*t^-6 + 2*t^-5)*DS + 7*t^-5;
+<span class="gp">&gt; </span>facts := Factorisation(L);
+<span class="go">Ring precision as default precision taken.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="gp">&gt; </span>[Degree(v[2]): v in facts];
+<span class="go">[ 1 2 2 4 ]</span>
+<span class="gp">&gt; </span>isweaklyzero := [];
+<span class="gp">&gt; </span>vals :=[];
+<span class="gp">&gt; </span>for i in [1..4] do
+<span class="gp">&gt; </span>  _,rem := EuclideanRightDivision(L, facts[i][2]);
+<span class="gp">&gt; </span>  isweaklyzero[i] := IsWeaklyZero(rem);
+<span class="gp">&gt; </span>  vals[i] := [Valuation(v) : v in Eltseq(rem)];
+<span class="gp">&gt; </span>end for;
+<span class="gp">&gt; </span>isweaklyzero;
+<span class="go">[ true, true, true, true ]</span>
+<span class="gp">&gt; </span>[Minimum(v) : v in vals];
+<span class="go">[ 14 , 4 , 4 , 11]</span>
+<span class="gp">&gt; </span>rhf, bl := RightHandFactors(L:Precision:=30);
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Calculating semi-regular parts.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Performing coprime index 1 LCLM factorisation.</span>
+<span class="go">Performing LCLM calculation on a semi-regular part.</span>
+<span class="go">Computation of the LCLM failed.</span>
+<span class="gp">&gt; </span>bl;
+<span class="go">[ true, true, true, false ]</span>
+<span class="gp">&gt; </span>[Degree(v): v in rhf];
+<span class="go">[ 1 2 2 4 ]</span>
+<span class="gp">&gt; </span>isweaklyzero := [];
+<span class="gp">&gt; </span>vals := [];
+<span class="gp">&gt; </span>for i in [1..4] do
+<span class="gp">&gt; </span>  [Degree(v): v in Eltseq(rhf[i])];
+<span class="gp">&gt; </span>  _,rem := EuclideanRightDivision(L, rhf[i]);
+<span class="gp">&gt; </span>  isweaklyzero[i] := IsWeaklyZero(rem);
+<span class="gp">&gt; </span>  vals[i] := [Valuation(v) : v in Eltseq(rem)];
+<span class="gp">&gt; </span>end for;
+<span class="go">[ 35, 0 ]</span>
+<span class="go">[ 35, 35, 0 ]</span>
+<span class="go">[ 35, 35, 0 ]</span>
+<span class="go">[ 31, 32, 33, 34, 0 ]</span>
+<span class="gp">&gt; </span>isweaklyzero;
+<span class="go">[ true, true, true, true ]</span>
+<span class="gp">&gt; </span>[ Minimum(v) : v in vals];
+<span class="go">[ 30, 30, 30, 27 ]</span>
+</pre></div>
+</div>
+<p class="magma-play-wrap" data-search-ignore=""><a class="magma-play-btn" href="https://magma-maths.org/calc/?code=%2F%2F+ex-826452%0AS%3Ct%3E%3A%3DDifferentialLaurentSeriesRing%28Rationals%28%29%29%3B%0ARS%3CDS%3E+%3A%3D+DifferentialOperatorRing%28S%29%3B%0AL%3A%3DDS%5E9+%2B+2%2At%5E-1%2ADS%5E8+%2B+3%2At%5E-2%2ADS%5E7+%2B+2%2At%5E-3%2ADS%5E6+%2B+%28t%5E-4+%2B+2%2At%5E-2%29%2ADS%5E5+%2B%0A%28-3%2At%5E-5+%2B+5%2At%5E-4%29%2ADS%5E3+%2B+3%2At%5E-5%2ADS%5E2+%2B+%282%2At%5E-6+%2B+2%2At%5E-5%29%2ADS+%2B+7%2At%5E-5%3B%0Afacts+%3A%3D+Factorisation%28L%29%3B%0A%5BDegree%28v%5B2%5D%29%3A+v+in+facts%5D%3B%0Aisweaklyzero+%3A%3D+%5B%5D%3B%0Avals+%3A%3D%5B%5D%3B%0Afor+i+in+%5B1..4%5D+do%0A++_%2Crem+%3A%3D+EuclideanRightDivision%28L%2C+facts%5Bi%5D%5B2%5D%29%3B%0A++isweaklyzero%5Bi%5D+%3A%3D+IsWeaklyZero%28rem%29%3B%0A++vals%5Bi%5D+%3A%3D+%5BValuation%28v%29+%3A+v+in+Eltseq%28rem%29%5D%3B%0Aend+for%3B%0Aisweaklyzero%3B%0A%5BMinimum%28v%29+%3A+v+in+vals%5D%3B%0Arhf%2C+bl+%3A%3D+RightHandFactors%28L%3APrecision%3A%3D30%29%3B%0Abl%3B%0A%5BDegree%28v%29%3A+v+in+rhf%5D%3B%0Aisweaklyzero+%3A%3D+%5B%5D%3B%0Avals+%3A%3D+%5B%5D%3B%0Afor+i+in+%5B1..4%5D+do%0A++%5BDegree%28v%29%3A+v+in+Eltseq%28rhf%5Bi%5D%29%5D%3B%0A++_%2Crem+%3A%3D+EuclideanRightDivision%28L%2C+rhf%5Bi%5D%29%3B%0A++isweaklyzero%5Bi%5D+%3A%3D+IsWeaklyZero%28rem%29%3B%0A++vals%5Bi%5D+%3A%3D+%5BValuation%28v%29+%3A+v+in+Eltseq%28rem%29%5D%3B%0Aend+for%3B%0Aisweaklyzero%3B%0A%5B+Minimum%28v%29+%3A+v+in+vals%5D%3B" target="_blank" rel="noopener noreferrer" title="Load this example into the Magma calculator"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>Run in calculator<span class="mg-visually-hidden"> (opens in a new tab)</span></a><button type="button" class="mg-copy" data-copy-text="// ex-826452
+S&lt;t&gt;:=DifferentialLaurentSeriesRing(Rationals());
+RS&lt;DS&gt; := DifferentialOperatorRing(S);
+L:=DS^9 + 2*t^-1*DS^8 + 3*t^-2*DS^7 + 2*t^-3*DS^6 + (t^-4 + 2*t^-2)*DS^5 +
+(-3*t^-5 + 5*t^-4)*DS^3 + 3*t^-5*DS^2 + (2*t^-6 + 2*t^-5)*DS + 7*t^-5;
+facts := Factorisation(L);
+[Degree(v[2]): v in facts];
+isweaklyzero := [];
+vals :=[];
+for i in [1..4] do
+  _,rem := EuclideanRightDivision(L, facts[i][2]);
+  isweaklyzero[i] := IsWeaklyZero(rem);
+  vals[i] := [Valuation(v) : v in Eltseq(rem)];
+end for;
+isweaklyzero;
+[Minimum(v) : v in vals];
+rhf, bl := RightHandFactors(L:Precision:=30);
+bl;
+[Degree(v): v in rhf];
+isweaklyzero := [];
+vals := [];
+for i in [1..4] do
+  [Degree(v): v in Eltseq(rhf[i])];
+  _,rem := EuclideanRightDivision(L, rhf[i]);
+  isweaklyzero[i] := IsWeaklyZero(rem);
+  vals[i] := [Valuation(v) : v in Eltseq(rem)];
+end for;
+isweaklyzero;
+[ Minimum(v) : v in vals];" title="Copy each code block's input after a comment labelling it, without the output"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="mg-copy-label">Copy input</span></button></p><script type="application/json" class="handbook-session">{"rules":{"kinds":{"run":["v","h"],"copy_input":["v","h"],"transcript":["v","o","h","e"],"test":["v","h","a"]},"prompted":["v","h","e"]},"blocks":[[["v","S\u003ct>:=DifferentialLaurentSeriesRing(Rationals());"],["v","RS\u003cDS> := DifferentialOperatorRing(S);"],["v","L:=DS^9 + 2*t^-1*DS^8 + 3*t^-2*DS^7 + 2*t^-3*DS^6 + (t^-4 + 2*t^-2)*DS^5 +"],["v","(-3*t^-5 + 5*t^-4)*DS^3 + 3*t^-5*DS^2 + (2*t^-6 + 2*t^-5)*DS + 7*t^-5;"],["v","facts := Factorisation(L);"],["o","Ring precision as default precision taken."],["o","Performing coprime index 1 LCLM factorisation."],["v","[Degree(v[2]): v in facts];"],["o","[ 1 2 2 4 ]"],["v","isweaklyzero := [];"],["v","vals :=[];"],["v","for i in [1..4] do"],["v","  _,rem := EuclideanRightDivision(L, facts[i][2]);"],["v","  isweaklyzero[i] := IsWeaklyZero(rem);"],["v","  vals[i] := [Valuation(v) : v in Eltseq(rem)];"],["v","end for;"],["v","isweaklyzero;"],["o","[ true, true, true, true ]"],["v","[Minimum(v) : v in vals];"],["o","[ 14 , 4 , 4 , 11]"],["v","rhf, bl := RightHandFactors(L:Precision:=30);"],["o","Performing coprime index 1 LCLM factorisation."],["o","Calculating semi-regular parts."],["o","Performing coprime index 1 LCLM factorisation."],["o","Performing coprime index 1 LCLM factorisation."],["o","Performing coprime index 1 LCLM factorisation."],["o","Performing LCLM calculation on a semi-regular part."],["o","Computation of the LCLM failed."],["v","bl;"],["o","[ true, true, true, false ]"],["v","[Degree(v): v in rhf];"],["o","[ 1 2 2 4 ]"],["v","isweaklyzero := [];"],["v","vals := [];"],["v","for i in [1..4] do"],["v","  [Degree(v): v in Eltseq(rhf[i])];"],["v","  _,rem := EuclideanRightDivision(L, rhf[i]);"],["v","  isweaklyzero[i] := IsWeaklyZero(rem);"],["v","  vals[i] := [Valuation(v) : v in Eltseq(rem)];"],["v","end for;"],["o","[ 35, 0 ]"],["o","[ 35, 35, 0 ]"],["o","[ 35, 35, 0 ]"],["o","[ 31, 32, 33, 34, 0 ]"],["v","isweaklyzero;"],["o","[ true, true, true, true ]"],["v","[ Minimum(v) : v in vals];"],["o","[ 30, 30, 30, 27 ]"]]]}</script></dd></dl>
+
+</section>
+</section>
+
+
+</article>
+
+
+
+
+
+<footer class="prev-next-footer d-print-none">
+
+<div class="prev-next-area">
+<a class="left-prev"
+       href="operators-of-functions.html"
+       title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">Differential Operators of Algebraic Functions</p>
+</div>
+</a>
+<a class="right-next"
+       href="bibliography.html"
+       title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Bibliography</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div>
+</footer>
+
+</div>
+
+
+
+<dialog id="pst-secondary-sidebar-modal"></dialog>
+<div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+<div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+<i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+<ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slope-valuation-of-an-operator">Slope Valuation of an Operator</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-slopevaluation-rngdiffopelt-rngelt"><code class="docutils literal notranslate"><span class="pre">SlopeValuation(<wbr/>L,<wbr/>s):</span> <span class="pre">RngDiffOpElt,</span> <span class="pre">RngElt</span> <span class="pre">→</span> <span class="pre">FldRatElt</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-402dde"><span class="magma-example-entry">Example: Slope Valuation of an Operator</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coprime-index-1-and-lclm-factorisation">Coprime Index <span class="math notranslate nohighlight">\(1\)</span> and LCLM Factorisation</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-factorisation-rngdiffopelt"><code class="docutils literal notranslate"><span class="pre">Factorisation(<wbr/>L):</span> <span class="pre">RngDiffOpElt</span> <span class="pre">→</span> <span class="pre">SeqEnum,</span> <span class="pre">SeqEnum</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-factorization-rngdiffopelt"><code class="docutils literal notranslate"><span class="pre">Factorization(<wbr/>L):</span> <span class="pre">RngDiffOpElt</span> <span class="pre">→</span> <span class="pre">SeqEnum,</span> <span class="pre">SeqEnum</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-502230"><span class="magma-example-entry">Example: Operator with Infinitely Many Factorisations</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-6f1759"><span class="magma-example-entry">Example: Comparing LCLM and Coprime Index 1 Factorisations</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-6434dc"><span class="magma-example-entry">Example: Factorising a Product of First-Order Operators</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-c4b3ef"><span class="magma-example-entry">Example: Operator the Factorisation Routine Cannot Split</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-8a9dd9"><span class="magma-example-entry">Example: Unexpected Factorisation of an Operator</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-fee1e8"><span class="magma-example-entry">Example: Precision of Factors for a Rational Slope</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#right-hand-factors-of-operators">Right Hand Factors of Operators</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-righthandfactors-rngdiffopelt"><code class="docutils literal notranslate"><span class="pre">RightHandFactors(<wbr/>L):</span> <span class="pre">RngDiffOpElt</span> <span class="pre">→</span> <span class="pre">SeqEnum,</span> <span class="pre">[<wbr/>BoolElt]</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-3c08eb"><span class="magma-example-entry">Example: Right Hand Factors Matching an LCLM Factorisation</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-014248"><span class="magma-example-entry">Example: Operator That Is Its Own Right Hand Factor</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-69cc8c"><span class="magma-example-entry">Example: Right Hand Factors Where Factorisation Fails</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-6d4ec1"><span class="magma-example-entry">Example: Right Hand Factors for a Square Newton Polynomial</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-987714"><span class="magma-example-entry">Example: Operators Sharing a Newton Polynomial</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ex-826452"><span class="magma-example-entry">Example: Factorising an Operator of Order 9</span></a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+
+</div></div>
+
+
+</div>
+<footer class="bd-footer-content">
+
+</footer>
+
+</main>
+</div>
+</div>
+
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+<button type="button" class="mg-site-to-top" id="mg-site-to-top">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+Back to top
+</button>
+<footer class="mg-site-footer">
+<div class="mg-footer-inner">
+
+
+<div class="mg-footer-brand">
+<a href="https://magma-maths.org/" class="mg-footer-logo-link" aria-label="Magma home">
+<img src="../../_static/web-base/images/MagmaLogoOfficial.png"
+             alt="Magma" width="48" height="48" class="mg-logo-light mg-footer-logo-img">
+<img src="../../_static/web-base/images/MagmaLogoOfficialDark.png"
+             alt="Magma" width="48" height="48" class="mg-logo-dark mg-footer-logo-img">
+</a>
+<p class="mg-footer-desc">Magma is maintained and distributed by the Computational Algebra Group, School of Mathematics and Statistics, University of Sydney.</p>
+<a href="https://www.sydney.edu.au/" class="mg-footer-usyd">
+<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+University of Sydney
+</a>
+</div>
+
+
+<div class="mg-footer-col">
+<h2 class="mg-footer-col-heading">Explore</h2>
+<ul class="mg-footer-links">
+<li><a href="https://magma-maths.org/about/">About Magma</a></li><li><a href="https://magma-maths.org/reference/">Documentation</a></li><li><a href="https://magma-maths.org/download/">Download</a></li><li><a href="https://magma-maths.org/calc/">Calculator</a></li>
+</ul>
+</div>
+
+<div class="mg-footer-col">
+<h2 class="mg-footer-col-heading">Community</h2>
+<ul class="mg-footer-links">
+<li><a href="https://magma-maths.org/contributors/">People</a></li><li><a href="https://magma-maths.org/contributions/">Contributions</a></li><li><a href="https://magma-maths.org/research/">Publications</a></li><li><a href="https://magma-maths.org/events/">Events</a></li><li><a href="https://magma-maths.org/news/">News</a></li>
+</ul>
+</div>
+
+<div class="mg-footer-col">
+<h2 class="mg-footer-col-heading">Help</h2>
+<ul class="mg-footer-links">
+<li><a href="https://magma-maths.org/faq/">FAQ</a></li><li><a href="https://magma-maths.org/contact/">Contact</a></li><li><a href="https://magma-maths.org/subscriptions/">Subscriptions</a></li><li><a href="https://magma-maths.org/cite/">How to Cite</a></li>
+</ul>
+</div>
+
+
+</div>
+
+
+<div class="mg-footer-bottom">
+<div class="mg-footer-bottom-inner">
+<span class="mg-footer-copyright">
+&copy; 1993&ndash;2026
+Computational Algebra Group.
+All rights reserved.
+</span>
+<span class="mg-footer-built">
+Built at the University of Sydney, Australia.
+</span>
+</div>
+</div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "time_limit_seconds": 20,
+  "elapsed_seconds": 0.005,
+  "output_bytes": 262,
+  "output_sha256": "4fe6a2ec31c174f11620da10f4689691c3ec5c737b29eec8cede0465fca345ff",
+  "conclusion": "Unit witness requires exact polynomial multiplication check."
+}

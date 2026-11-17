@@ -1,0 +1,14 @@
+{
+  "status": "error",
+  "exit_code": 1,
+  "characteristic": 65521,
+  "algorithm": "F4SAT saturation I14:ell_z^infinity; first of five exact radical targets",
+  "time_limit_seconds": 45,
+  "memory_limit_bytes": 3221225472,
+  "elapsed_seconds": 0.202,
+  "input_sha256": "007e8919ad185e4434de6415de6f712356aaa7854520c8b3c674fd658e027ec2",
+  "output_exists": true,
+  "conclusion": "MODULAR ONLY; no rational radical membership or full global exhaustion inferred.",
+  "output_bytes": 0,
+  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

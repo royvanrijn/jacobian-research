@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-16",
+  "completed": true,
+  "checker_sha256": "1408c3794a2b3c4bbf654fb607a89e019e0c47b84743f084bde9780c1346d74e",
+  "sympy_version": "1.14.0",
+  "Hom_invariant_evaluation_extracts_nontrivial_socle_exact": true,
+  "pure_genus_M4_equals_N_image_controls_exact": true,
+  "pure_genus_removal_unit_reflection_controls": [
+    {
+      "lambda": 0,
+      "kappa": 1,
+      "unit_in_source_and_genus_quotient_image": false
+    },
+    {
+      "lambda": 0,
+      "kappa": 2,
+      "unit_in_source_and_genus_quotient_image": false
+    },
+    {
+      "lambda": 1,
+      "kappa": 1,
+      "unit_in_source_and_genus_quotient_image": true
+    },
+    {
+      "lambda": 1,
+      "kappa": 2,
+      "unit_in_source_and_genus_quotient_image": true
+    }
+  ],
+  "constant_kernel_weight4_intersection_controls_exact": true,
+  "nonHodge_kernel_still_cannot_create_local_unit_image_controls_exact": true,
+  "local_only_counter_has_unit_in_nontrivial_genus_image_exact": true,
+  "universal_result": "ANY GLOBAL unit-retaining quotient of canonical boundary E reflects LOCAL unit splitting at EVERY puncture,before purity;under eventual purity full safety iff reduced intrinsic xi_boundary,0=0",
+  "global_semisimplicity_of_V_assumed": false,
+  "global_source_unit_splitting_assumed": false,
+  "actual_kernel_claimed_Hodge": false,
+  "arbitrary_local_quotient_reflection_claimed": false,
+  "full_unreduced_xi_substituted_for_boundary_xi": false,
+  "local_splitting_used_as_blanket_global_splitting_without_purity": false,
+  "top_Tate_invariant_IMAGE_identified_with_entire_top_Tate": false,
+  "exceptional_pure_locus_xi_vanishing_proved": false,
+  "pure_composite_producer_implemented": false,
+  "universal_Hodge_fixed_part_and_Borel_proofs_machine_verified": false,
+  "coefficient_ring_topological_promotion_claimed": false,
+  "new_degree_support_or_prefix_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_next_task": false,
+  "full_exceptional_MZ_cases": "OPEN on BOTH quotients"
+}

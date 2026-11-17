@@ -1,0 +1,13 @@
+CHECK|ordinary|0
+BEGIN|ordinary_B
+TERM|ordinary_B|0,0,0,0,0,0,1|1
+END|ordinary_B
+BEGIN|ordinary_Q
+END|ordinary_Q
+CHECK|eta_generic|0
+BEGIN|generic_eta_B
+TERM|generic_eta_B|0,0,0,0,0,0,0|1
+END|generic_eta_B
+BEGIN|generic_eta_Q
+END|generic_eta_Q
+STAGE_COMPLETE|first

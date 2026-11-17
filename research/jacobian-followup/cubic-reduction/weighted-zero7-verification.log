@@ -1,0 +1,24 @@
+RECONSTRUCTED mu-zero
+RECONSTRUCTED nu-zero
+RECONSTRUCTED both-zero
+REPLAYED mu-zero graph
+REPLAYED mu-zero conic
+REPLAYED mu-zero cubicgraph
+REPLAYED mu-zero quadraticgraph
+REPLAYED mu-zero parabola
+REPLAYED nu-zero graph
+REPLAYED nu-zero conic
+REPLAYED both-zero graph
+REPLAYED both-zero conic
+REPLAYED mu-zero purecubic
+REPLAYED nu-zero parabola
+REPLAYED mu-zero linear
+REPLAYED nu-zero high
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/verify_weighted_zero7.py", line 129, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/cubic-reduction/verify_weighted_zero7.py", line 121, in main
+    JN=['t','A','B','C','D','E','Ap','Bp','Cp','Dp','Ep','phi','phip'];jn=len(JN);G=expression('A*t+B',JN);H=expression('C*t**2+D*t+E',JN);Gu=expression('Ap*t+Bp',JN);Hu=expression('Cp*t**2+Dp*t+Ep',JN);J=add(mul(expression('phip',JN),add(mul(G,derivative(H,0)),scale(mul(H,derivative(G,0)),Q(-2)))),mul(expression('phi',JN),add(mul(Gu,derivative(H,0)),mul(derivative(G,0),Hu),Q(-1))));assert strip(J,2)==expression('-phi*(A*Cp-2*Ap*C)',JN);assert strip(J,1)==expression('-phip*A*D+phi*(Ap*D-A*Dp-2*Bp*C)+2*phip*B*C',JN)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

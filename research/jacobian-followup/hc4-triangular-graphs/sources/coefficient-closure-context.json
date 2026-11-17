@@ -1,0 +1,96 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Closed coefficient branches,universal nonplane inverse and an unavoidable all-prime precision barrier",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/2607.20597v1",
+      "retained_file": "jelonek-closed-keller-locus-2607.20597v1.html",
+      "sha256": "27a2f898775b4ed80bd5518c44968729da52c2c17c109d9116f5eb8eb1ec90d8",
+      "role": "Read complete Lemma2.1 and Theorem2.2 proofs. Credit existing closedness and irreducible-component dichotomy;the new finite integral inverse ideal is proved directly. No higher-dimensional counterexample corollary is imported."
+    },
+    {
+      "url": "https://arxiv.org/html/2606.22041v1",
+      "retained_file": "xavier-component-principle-2606.22041v1.html",
+      "sha256": "13c36f9992571ab21ea75b75494701ea8e92233a18966d509fe0b239ab7c16d3",
+      "role": "Read Theorem1.1 and complete Section2 proof,including constructibility and the topological limit argument. Credit earlier closedness/component result. No probabilistic sampling criterion is used as proof."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/01WC",
+      "retained_file": "stacks-projective-proper-01WC.html",
+      "sha256": "08a39f68a8159e34e436df9c4b8f5e8886f58b3c0d5163c15610e12aef302737",
+      "role": "Read Lemma29.44.5 and complete proof. Import projective morphisms are proper,used only for closed projection of the finite jointly-affine-plane incidence. The four-dimensional Pluecker realization and local incidence equations are given directly."
+    }
+  ],
+  "newly_imported_proved_external_statements": [
+    {
+      "source": "https://stacks.math.columbia.edu/tag/01WC",
+      "statement": "A locally projective morphism is proper.",
+      "use": "The explicit Pluecker-projective Gr(2,4) makes the finite joint-affine incidence projection closed over Z."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HCTANG2",
+      "statement": "Retained characteristic-zero automorphism-or-jointly-affine-plane alternative;its full geometric classification is not replayed."
+    },
+    {
+      "claim": "GVCCLOSEDSAFE20261115",
+      "statement": "The already-retained classical Gabber characteristic-zero inverse-degree bound and finite formal-inverse certificate mechanism;only those general ingredients are used,not a new Laplacian or Gaussian theorem."
+    },
+    {
+      "claim": "HC4MYKK0",
+      "statement": "The earlier geometric plane specialization/nonlifting test,now extended to the horizontal coefficient locus."
+    },
+    {
+      "claim": "HC4MYKL1",
+      "statement": "The exact characteristic-zero arbitrary-potential/plane-lifting equivalence remains separate from the new fixed-degree finite-precision bound."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "jacobian-followup/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian-followup/moment-vanishing-audit/LAPLACIAN_INVERSE_CERTIFICATES_AND_CLOSED_SAFE_LOCI.md": "94c3b94b9db7804f6fe3366898936db7a5f3107dfddcc066e3416b09bbd5678d",
+    "jacobian-followup/moment-vanishing-audit/verify_laplacian_inverse_certificates.py": "8c74521a9a2e7623543d6d5dfba60d34c71bad0c9c6d4fbac00f08770b14db08",
+    "jacobian-followup/hc4-triangular-graphs/SPECIALIZATION_OF_AFFINE_PLANES_AND_FROBENIUS_SHEARS.md": "d220481df76f6a8e3f2b7889b6e2c291cded39262db7aa1758cf31633bcb163a",
+    "jacobian-followup/hc4-triangular-graphs/verify_affine_plane_specialization.py": "2139d75cb0a0d7a682ee3b8464fb2c1d5476925191a0b68f1e82c7554da7299b",
+    "jacobian-followup/hc4-triangular-graphs/INTEGRAL_COTANGENT_DESCENT_AND_PLANE_LIFT_EQUIVALENCE.md": "6944e92e6d65483b19023cf7e65acb6f70cd9e492dea2be4aa884a937071f7ee",
+    "jacobian-followup/hc4-triangular-graphs/verify_integral_cotangent_descent.py": "93d0865422eac15b20f8112f3316507d05949ed565fbfdccf49a125eb69f6a03",
+    "jacobian-followup/hc4-triangular-graphs/receipt-affine-plane-specialization.json": "831ffbd74631d6949c717105fe6a91002ff2dba9e431d2f1ab51de95c7c227ad",
+    "jacobian-followup/hc4-triangular-graphs/sources/affine-plane-specialization-context.json": "4e0f9171664e90f85c4b285af801642649996d9a8ad4c4bbe16ac73860c56a8d",
+    "jacobian-followup/hc4-triangular-graphs/receipt-integral-cotangent-descent.json": "29907e99b513eae6a4f50eef91b4ab77d33f41972b2d9b50772e87f2bf0af71e",
+    "jacobian-followup/hc4-triangular-graphs/sources/integral-cotangent-descent-context.json": "b274bc8b04c8954b8519be2a878866abe729e051c5cd6d5d61431953f523295f",
+    "jacobian-followup/moment-vanishing-audit/laplacian_inverse_verification.json": "7f33bc3e3f16884d36f35254cbb6c03713642632ce6d1a515cf461c2298ff235",
+    "jacobian-followup/moment-vanishing-audit/laplacian_inverse_source_audit.json": "9cdd1b9872db519d5510e4b082c8a819cb3ee244556ec5966e3eebb74abdd02b",
+    "jacobian-followup/tang-hc4-audit/structural-proof-receipt.json": "5d833d865f7f032af7ef7a3f7ab95d52321ab08ee518146bfaa33fe768d0be23",
+    "jacobian-followup/tang-hc4-audit/source-receipt.json": "73b250fb937ca59cf8f4419bbbfc3cac989a350ed4b8313b67d25dc7f2c32046",
+    "jacobian-followup/tang-hc4-audit/source-v1.pdf": "bfcd8d2db0df78760c33b9c0b9e9a07c7d0d497a457b2547efeda13c917c29c2",
+    "jacobian-followup/moment-vanishing-audit/sources/zhao_0409534v2.html": "e8313b167ae0dd467bb8e13469eebcb42f705d68a409753ac2faf95887975b20",
+    "jacobian-followup/hc4-triangular-graphs/sources/maubach-rauf-strong-Keller-1507.02946v1.html": "e10ce51847ce02d57231f09e8b9a8103330e515c22b261d02718796b8382e204",
+    "jacobian-followup/hc4-triangular-graphs/sources/stacks-grassmannian-089R.html": "823a19938117380eb658d10098cdb7fe6c74cd2bf68719bb6841e14da5a30e6b"
+  },
+  "finite_integral_inverse_ideal_with_degree_bound_proved": true,
+  "characteristic_zero_Hessian_locus_has_two_closed_branch_cover": true,
+  "horizontal_integer_ideal_contains_inverse_times_plane_ideal": true,
+  "universal_nonplane_inverse_over_arbitrary_horizontal_coefficient_rings_proved": true,
+  "horizontal_field_points_in_every_characteristic_obey_two_branch_alternative": true,
+  "fixed_degree_finite_bad_prime_certificate_exists": true,
+  "fixed_degree_precision_bound_is_linear_in_ramification": true,
+  "elementary_all_prime_noninvertible_no_plane_Hessian_controls_proved": true,
+  "every_spreading_certificate_has_required_primorial_square_factor": true,
+  "arbitrary_degree_automorphic_no_plane_family_and_inverse_proved": true,
+  "quadratic_specialization_does_not_supply_generic_invertibility": true,
+  "generic_elimination_ideals_or_actual_N_D_computed": false,
+  "degree_independent_finite_bad_prime_set_possible": false,
+  "naive_ordinary_Hessian_coefficient_ring_has_product_containment_proved": false,
+  "characteristic_zero_classification_proved_for_naive_characteristic_p_locus": false,
+  "arbitrary_ring_two_branch_choice_without_unit_plane_ideal_proved": false,
+  "inverse_degree_bound_imported_for_arbitrary_nonreduced_algebras": false,
+  "all_degree_uniform_finite_precision_bound_proved": false,
+  "integer_contracted_Hessian_equations_proved_sufficient_for_lifting": false,
+  "every_characteristic_zero_component_proved_automorphic": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "characteristic_zero_HC4_counterexample_constructed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

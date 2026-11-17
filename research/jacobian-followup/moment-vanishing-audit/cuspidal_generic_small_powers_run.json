@@ -1,0 +1,13 @@
+{
+  "scope": "Small determinant-power normal forms in the retained exact first-ten cuspidal generic-chart basis; no radical equality or all-order conclusion from nonzero remainders.",
+  "wall_limit_seconds": 20,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "completed": false,
+  "input_sha256": "84d32ad26b16d83b8c39389a558f2b1a40f34b1fcaea46860cfdfd658bd3f591",
+  "log_sha256": "c8b03c20c7cb998c2a8cd70c8468fecf3e32ef4bd021448bbfee1dbaada0859b",
+  "elapsed_seconds": 0.034283152024727315,
+  "stdout_tail": "   ? identifier `r` in use\n   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/cuspidal_generic_small_powers.sing line 82: `r=reduce(delta^k,G);print(\"DET_POWER_REMAINDER_SIZE\");print(k);print(size(r));`\n   ? wrong type declaration. type 'help poly;'\nEND\n"
+}

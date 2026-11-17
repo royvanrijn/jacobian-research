@@ -1,0 +1,110 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYKQ0",
+    "HC4MYKQ1",
+    "HC4MYKQ2"
+  ],
+  "attribution_corrected": "HC4MYKP2",
+  "checks": [
+    "HC4MYKQ0 schema,proved/inspected dependencies,immutable locks and assurance",
+    "HC4MYKQ1 schema,proved/inspected dependencies,immutable locks and assurance",
+    "HC4MYKQ2 schema,proved/inspected dependencies,immutable locks and assurance",
+    "all-degree scopes distinguish exact source layers,finite algebra,trace-zero semisimplicity and the remaining actual extension/multiplication",
+    "open parent and KP2 attribution explicitly credit prior PF2BATT1 while original nodal proof/checker/receipt bytes stay unchanged",
+    "three source/trace methods and all changed parent/KP2 review fingerprints retain the attribution correction and genuinely unresolved extension gate",
+    "both work actions preserve the full goal and all energy/arithmetic/recovery/native obligations while retiring the already-simple kernel test",
+    "101 exact/provenance controls bind21 immutable retained inputs and3 source/context pins without mathematical checker replay",
+    "exact three proved imports are screened with actual hypotheses;no blanket cyclic smoothness,automatic multiplication or packet exclusion enters",
+    "written proof and navigation retain the purity shifts,finite IC structure,exact trace diagram,indecomposability and attribution reconciliation",
+    "generated navigation agrees with latest authoritative ledger,methods and work actions",
+    "master HC4/JC2,energy integrality,normalization multiplication,JA/JB recovery and the old native endpoints remain open with their evidence preserved"
+  ],
+  "scoped_check_groups": 12,
+  "exact_current_replay_checks": 101,
+  "algebraic_and_scope_controls": 76,
+  "new_proved_imports": 3,
+  "new_unproved_external_statements": 0,
+  "prior_PF2BATT1_nodal_exclusion_credit_is_explicit": true,
+  "source_socle_and_boundary_quotient_are_semisimple": true,
+  "source_has_exactly_two_semisimple_layers_under_nonautomorphy": true,
+  "trace_zero_kernel_has_exact_boundary_character_quotient": true,
+  "trace_zero_semisimplicity_is_one_degree_one_boundary_prime_per_target_component": true,
+  "trace_image_length_is_one_plus_target_component_count": true,
+  "one_boundary_doubly_transitive_trace_zero_kernel_is_simple": true,
+  "one_boundary_doubly_transitive_source_is_indecomposable_length_three": true,
+  "residual_extension_group_and_nonzero_connecting_map_identified": true,
+  "existing_boundary_cohomology_budgets_are_not_claimed_new_contradictions": true,
+  "source_finite_algebra_not_identified_with_differential_socle": true,
+  "trace_zero_semisimplicity_proved_to_force_inverse": false,
+  "every_finite_normalization_proved_smooth": false,
+  "arbitrary_cyclic_endpoint_curvette_lift_assumed_smooth": false,
+  "source_extension_proved_to_carry_automatic_polynomial_multiplication": false,
+  "one_boundary_quartic_or_degree_six_packets_excluded": false,
+  "full_source_module_proved_semisimple_under_nonautomorphy": false,
+  "point_or_extra_boundary_layers_added_without_the_actual_surface_geometry": false,
+  "Cox_threefold_order_subject_to_plane_surface_layer_theorem": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": [
+        "make",
+        "render-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": [
+        "make",
+        "check-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+        "research/scripts/research.py",
+        "check",
+        "--require-partial-review"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "name": "required-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "research/MATH_STATUS.json",
+        "research/knowledge/lessons.json",
+        "research/knowledge/work_items.json",
+        "research/jacobian-followup/hc4-triangular-graphs/README.md",
+        "research/index",
+        "research/knowledge/work",
+        "research/knowledge/WORK_LEDGER.md",
+        "research/STATUS.md"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "required_diff_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_check": "PASS",
+  "new_authored_file_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_evidence": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "repository_failures_unrelated_to_HC4": true,
+  "unrelated_missing_artifacts_reconstructed": false
+}

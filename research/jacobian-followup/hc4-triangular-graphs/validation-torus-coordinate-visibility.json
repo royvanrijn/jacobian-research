@@ -1,0 +1,103 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYJY0",
+    "HC4MYJY1",
+    "HC4MYJY2"
+  ],
+  "checks": [
+    "HC4MYJY0 schema,dependencies,immutable input presence and assurance",
+    "HC4MYJY1 schema,dependencies,immutable input presence and assurance",
+    "HC4MYJY2 schema,dependencies,immutable input presence and assurance",
+    "whole-fibre and actual-frame hypotheses are explicit,all coordinate visibility classes close,and arbitrary full-source and E2 decisions remain open",
+    "prior hyperbolic,natural-base and universal-frontier scopes point to the advancement without modifying old replay bytes",
+    "96 sourced methods and affected fingerprints retire all proved visible-coordinate routes and retain the whole-torus boundary",
+    "both work actions target intrinsic/global obstructions beyond every closed visible-coordinate class,without reopening redundant K2 universal obligations",
+    "75 exact controls bind whole relative ideals,actual torus and curve inverses,the all-rho determinant contradiction,and the passing torus control",
+    "one inspected primary no-line import has checked hypotheses;no arbitrary two-point,torus-component or full-source alignment claim is imported",
+    "proof and leading navigation preserve the whole-fibre,actual-frame,all-parameter and assurance boundaries",
+    "generated navigation matches the latest authoritative ledger,methods and work data",
+    "the original goal remains open with the exact contracted frontier and actual embedding-recovery tasks retained"
+  ],
+  "scoped_check_groups": 12,
+  "exact_current_replay_checks": 75,
+  "algebraic_and_scope_controls": 50,
+  "new_proved_imports": 1,
+  "new_unproved_external_statements": 0,
+  "whole_torus_Keller_fibre_with_two_zeros_excluded": true,
+  "two_point_torus_relative_critical_gate_proved": true,
+  "K2_every_native_affine_coordinate_pullback_excluded": true,
+  "h0_h1_w_affine_coordinate_pullback_excluded": true,
+  "S_rho_every_suspension_frame_affine_coordinate_pullback_excluded": true,
+  "arbitrary_two_point_Keller_fibre_excluded": false,
+  "arbitrary_torus_component_substituted_for_whole_fibre": false,
+  "native_K3_x_z_affine_pullbacks_excluded": false,
+  "arbitrary_full_source_affine_alignment_proved": false,
+  "fixed_K2_full_source_orbit_resolved": false,
+  "full_source_h0_h1_orbits_resolved": false,
+  "K3_rho_full_source_family_resolved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": [
+        "make",
+        "render-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": [
+        "make",
+        "check-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+        "research/scripts/research.py",
+        "check",
+        "--require-partial-review"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+    },
+    {
+      "name": "required-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "research/MATH_STATUS.json",
+        "research/knowledge/lessons.json",
+        "research/knowledge/work_items.json",
+        "research/jacobian-followup/hc4-triangular-graphs/README.md",
+        "research/index",
+        "research/knowledge/work",
+        "research/knowledge/WORK_LEDGER.md",
+        "research/STATUS.md"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "required_diff_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_check": "PASS",
+  "new_file_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_evidence": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "repository_failures_unrelated_to_HC4": true,
+  "unrelated_missing_artifacts_reconstructed": false
+}

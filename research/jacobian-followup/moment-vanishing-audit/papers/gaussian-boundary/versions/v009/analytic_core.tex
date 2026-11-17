@@ -1,0 +1,254 @@
+\subsection{An exhaustive split of the affine-linear coordinate}\label{sec:wsplit}
+
+Write $h=a+bZ+cT+dZ^2+eZT+fT^2$ and
+$\Delta=e^2-4df$. The following split is exhaustive and its branches
+are disjoint. The last column distinguishes a proof given here from
+the proposition proving that branch. Every row is now proved here.
+
+\begin{center}\small
+\begin{tabular}{@{}p{0.27\textwidth}p{0.38\textwidth}p{0.25\textwidth}@{}}
+\toprule
+Coefficient condition & Reduction & Status in this draft\\
+\midrule
+$\Delta\ne0$ & Laurent phase on $\C^*$ with logarithmic volume &
+Proposition~\ref{prop:nondeglog}\\[3pt]
+$\Delta=0$, $f\ne0$ & $h=a+bZ+cT+fT^2$ after a null rotation &
+Proposition~\ref{prop:rankoneformal}\\[3pt]
+$f=e=0$, $d\ne0$, $c\ne0$ &
+$W(a+T+Z^2)+G$ after normalization &
+Proposition~\ref{prop:mixedformal}\\[3pt]
+$f=e=0$, $d\ne0$, $c=0$ & $Wh(Z)+G$ &
+Proposition~\ref{prop:height}\\[3pt]
+$d=e=f=0$, $c\ne0$ & $W(a+bZ+cT)+G$ &
+Corollary~\ref{cor:linearwt}\\[3pt]
+$d=e=f=c=0$ & $Wh(Z)+G$ &
+Proposition~\ref{prop:height}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Here is the algebra behind the reductions. The null rotation
+\[
+ Z=Z',\quad T=T'+\lambda Z',\quad
+ W=W'-\lambda T'-\lambda^2Z'/2
+\]
+preserves $2ZW+T^2$. If $f\ne0$, choose $\lambda=-e/(2f)$.
+When $\Delta=0$ the quadratic part of $h$ becomes just $fT'^2$.
+If $f=e=0$ and $c\ne0$, choose $\lambda=-b/c$ to remove the
+linear $Z$ term without changing $dZ^2$. If also $d\ne0$, the
+Gaussian scaling $Z=\kappa Z'$, $W=W'/\kappa$, followed by a
+nonzero scaling of $P$, makes the $T$ and $Z^2$ coefficients both
+one; take $\kappa^2=c/d$. All additional terms enter a polynomial
+$G$ of degree at most three. If $\Delta=0$ and $f=0$, then $e=0$,
+which proves that the table omits no case.
+
+\subsection{A curve-length estimate}
+
+\begin{lemma}\label{lem:curvelength}
+A real algebraic curve of degree at most $D$ has length at most
+$\pi D\rho$ in a disk of radius $\rho$. Consequently its logarithmic
+length in $a\leq|x|\leq b$ is at most a constant times
+$D(1+\log(b/a))$.
+\end{lemma}
+\begin{proof}
+Average the number of intersections with lines over directions and
+apply the one-dimensional coarea formula. Outside exceptional line
+components the number is at most $D$; the components themselves
+satisfy the same estimate. In each dyadic annulus
+$\rho\leq|x|\leq2\rho$, divide the disk estimate by $\rho$ to
+bound $\int|dx|/|x|$ by $2\pi D$. Sum the dyadic annuli.
+\end{proof}
+
+\subsection{The logarithmic branch, including its removed component}
+
+For $\Delta\ne0$, $f\ne0$, choose $\eta^2=\Delta$ and set
+\[
+ \rho=\frac{e+\eta}{2f},\quad \sigma=\frac{e-\eta}{2f},\quad
+ u=\frac{\rho c-b+1/t}{\eta},\quad
+ v=\frac{b-1/t-\sigma c}{\eta},\quad k=uv-a/f.
+\]
+On the circular constraint $z=th(z,T)$, put
+$x=T+\rho z+u$, so that $T+\sigma z+v=k/x$. Then
+\[
+ z=\frac f\eta(x-k/x-u+v),\quad T=x-u-\rho z,
+ \qquad
+ \frac{dT}{1-th_Z}=\frac{dx}{t\eta x}.
+\]
+The coefficient of $t^{-2}$ in $k$ is $-1/\eta^2$, so the conic
+is generically smooth. The exponent $tG(z,T)-T^2/2$ is Laurent
+polynomial in $x$. On the formal Gaussian branch,
+$x=1/(\eta t)+O(1)$, which makes every Laurent power legitimate.
+
+If $f=0$, then $e\ne0$. Put $z_0=-c/e$ and $x=z-z_0$. With
+$A(z)=a+bz+dz^2$, the constraint gives
+\[
+ T=\frac{z/t-A(z)}{ex},\qquad
+ \frac{dT}{1-th_Z}=\frac{dx}{tex}.
+\]
+This localization is valid if $c\ne0$, or if $c=0$ and $a\ne0$.
+If $a=c=0$, the chosen fixed point is instead $g=0$ identically;
+inverting $g$ would discard the very branch being tested. In that
+case the exact unit series is
+\[
+ \E_T\left[\frac{e^{tG(0,T)}}{1-t(b+eT)}\right].
+\]
+Use $x=T-(1/t-b)/e$, now a valid Laurent unit. Its volume is
+$-dx/(tex)$ and its exponent is polynomial in $x$. These formulas
+cover both the smooth conic and the removed-component branch.
+We next connect these coordinates to the formal Gaussian functional.
+This will close every one-ended phase without an analytic estimate.
+
+\begin{lemma}[Formal logarithmic transport]\label{lem:logtransport}
+In each of the three charts above, write $X=X(t,T)$ for the formal
+coordinate, $D$ for the displayed circular denominator, and $B$ for
+$tG(g,T)$ or $tG(0,T)$ on the removed component. Put
+$\kappa=\eta,e,-e$, respectively. Then
+\[
+ J(q)=\E_T\!\left[\frac{q(X)e^B}{D}\right]
+\]
+is horizontal on the logarithmic twisted quotient with phase
+$\varphi$ and normalization $h=1/t$, and $J(1)=\Phi_1$.
+\end{lemma}
+\begin{proof}
+All Laurent powers of $X$ are legitimate by the unit checks above.
+The coordinate identities give
+\[
+ X_T=t\kappa X/D,\qquad
+ \varphi(t,X)=B-T^2/2.
+\]
+Consequently Gaussian integration by parts gives
+$J((x\partial_x+x\varphi_x)q)=0$: the corresponding integrand,
+multiplied by $t\kappa$, is
+$(\partial_T-T)\{q(X)e^B\}$.
+
+For parameter horizontality set $w=1/D$ and $R=X_t/X_T$.
+Differentiating $w=X_T/(t\kappa X)$ gives the exact identity
+\[
+ w_t+w/t=\partial_T(wR).
+\]
+Subtracting $J(q_t+(\varphi_t-1/t)q)$ from $\partial_tJ(q)$ now
+gives the Gaussian expectation of
+$(\partial_T-T)\{wR q(X)e^B\}$, hence zero. These are formal
+coefficientwise identities, without an integral-convergence hypothesis.
+The seed equality is the circular contraction formula.
+\end{proof}
+
+\begin{proposition}\label{prop:oneendgaussian}
+Every chart above whose actual Laurent phase has at most one
+irregular end is not pure. The removed-component branch
+$a=c=f=0$, $e\ne0$, is therefore excluded for every polynomial $G$,
+without a degree bound.
+\end{proposition}
+\begin{proof}
+At most one irregular end means that $\varphi$ is polynomial in
+$x$ or in $x^{-1}$, including the constant case. Purity would give
+the horizontal functional in Lemma~\ref{lem:logtransport} seed value
+one, contrary to Corollary~\ref{cor:oneend}. The removed-component
+phase is always polynomial in $x$, irrespective of $\deg G$.
+\end{proof}
+
+\input{laurent_logarithmic_bound.tex}
+
+\begin{proposition}\label{prop:nondeglog}
+If $e^2-4df\ne0$, no polynomial $G$, of any degree, makes
+$P=Wh(Z,T)+G(Z,T)$ pure.
+\end{proposition}
+\begin{proof}
+The smooth-conic, linear-conic and removed-component charts are
+exhaustive. Their Laurent-unit checks and
+Lemma~\ref{lem:logtransport} give the formal Gaussian functional
+with seed value $\Phi_1$ and normalization $1/t$.
+Theorem~\ref{thm:laurentlog} excludes $\Phi_1=1$ in every chart,
+using its actual Laurent orders. No image-kernel calculation is used.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:wlinear}]
+Use the disjoint case table in Section~\ref{sec:wsplit}.
+Proposition~\ref{prop:nondeglog} excludes its first row.
+Proposition~\ref{prop:rankoneformal} treats the second and leaves
+only a one-sign product. Proposition~\ref{prop:mixedformal} excludes
+the third. Proposition~\ref{prop:height} proves the fourth and sixth;
+its pure cases are one-sign phases or the shear family.
+Corollary~\ref{cor:linearwt} treats the fifth and leaves a quadratic.
+These rows exhaust all coefficients, including their zero faces.
+
+The one-sign and ternary quadratic cases have cutoff $m>\deg Q$,
+and the shear has cutoff $m>3\deg Q$. The null rotations,
+Gaussian coordinate scalings and nonzero scalar multiples of $P$
+used in the reductions preserve the threshold and multiplier degree.
+Thus every pure member of the full affine-linear family satisfies
+$m>3\deg Q$.
+\end{proof}
+
+\subsection{Adversarial tests for the analytic argument}
+
+The following exact examples prevent several tempting shortcuts.
+For positive real $t$,
+\[
+ \frac1t\int_{\mathbb R}e^{-x^2/(2t^k)}\,dx
+   =\sqrt{2\pi}\,t^{k/2-1}.
+\]
+The unique critical point is bounded and has zero action for every
+$k$, yet the normalized period decays for $k=1$, is constant for
+$k=2$, and grows for $k=3$. A critical-point count or a zero-action
+label alone gives no decay estimate.
+
+For the fixed phase $tx^k$, $k>2$, the critical point is degenerate
+and the decay scale is $t^{-1/k}$, not a Gaussian Hessian scale.
+The fixed quotient in Theorem~\ref{thm:stationaryballs}
+retains its full multiplicity $k-1$.
+For $tV_nx^n-x^4/2$, $1\leq n\leq3$, the $n-1$ bounded and
+$4-n$ escaping critical dimensions total three. Counting only
+bounded points loses actual rank; the stationary-ball construction
+retains all roots and tests its full matrix using polynomial separation.
+Finally, $t^{-3/2}=r^3$ under $r=t^{-1/2}$: a claim about a
+noninteger exponent before ramification must not be reused after
+ramification. Lemma~\ref{lem:positiveformal} uses positive seed order
+and an actual full frame instead.
+
+\input{gradient_exclusion.tex}
+\input{ordinary_finite_exclusion.tex}
+\input{hyperbolic_suspension.tex}
+\input{uniform_cut_decay.tex}
+\input{ordinary_axis_exclusion.tex}
+
+\subsection{The geometric case split for frame extraction}
+
+For a cubic of degree exactly three, either the frame test
+\eqref{eq:frame} succeeds, or it does not. In the latter case,
+the projective curve $F_3=0$ belongs to exactly one of these types:
+\begin{center}\small
+\begin{tabular}{@{}p{0.33\textwidth}p{0.56\textwidth}@{}}
+\toprule
+Leading curve & Proof or remaining no-frame exclusion\\
+\midrule
+Smooth cubic & Proved by Corollary~\ref{cor:smoothleading}; no pure phase\\
+Irreducible nodal cubic & Completely excluded by Corollary~\ref{cor:ordinarycomplete}\\
+Irreducible cuspidal cubic & Smooth parabola, separated lines and double-line critical profiles\\
+Line and smooth conic, transverse & Completely excluded by the same corollary\\
+Line and smooth conic, tangent & Tangency, degenerate finite blocks and escaping profiles\\
+Three nonconcurrent lines & Completely excluded by the same corollary\\
+Three concurrent distinct lines & Constant and nonconstant transverse linear coefficient\\
+Double line and a distinct line & Isotropic and nonisotropic repeated-line directions\\
+Triple line & Isotropic and nonisotropic repeated-line directions\\
+\bottomrule
+\end{tabular}
+\end{center}
+The list is exhaustive by factorization of a plane cubic over $\C$.
+The smooth row is now proved here. The ordinary-node gate and its
+common residual normal form are also proved. Proposition~\ref{prop:ordinaryfinite}
+excludes every finite-critical no-frame member of that family; the
+conic, hyperbola and center-axis cases are all excluded by the
+preceding propositions. Thus every ordinary-node row is proved here. The other rows remain
+proof obligations. For isolated leading singular points, a null
+point with $F_2=0$ goes directly to the affine-linear-coordinate table;
+otherwise the lower Gaussian quadratic and its cross terms must be
+retained in the indicated exclusion. In the repeated-line cases the
+singular locus is a whole projective line, and the frame test must be
+applied to all its null directions, not to an arbitrarily selected point.
+
+Thus the routing is now explicit. Completing frame extraction still
+requires the remaining five geometric families, each with its full
+rank or homology-completeness argument. The full affine-linear proof above does not prove those geometric
+exclusions. Finite algebra checks do not replace their missing
+rank and homology arguments.

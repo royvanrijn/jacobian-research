@@ -1,0 +1,481 @@
+{
+  "completed": true,
+  "python_version": "3.12.3",
+  "sympy_version": "1.14.0",
+  "insufficient_tail_order_second_output": "2880*Y",
+  "nilpotent_tail_second_output": "2880*Y*e",
+  "merely_above_phase_degree_mutation_detected": true,
+  "strict_boundary_rejections": 9,
+  "cutoff_rows": [
+    {
+      "phase_degree": 1,
+      "base_cutoff": 1,
+      "tail_order": 3,
+      "strict_order_threshold": 2,
+      "ratio_numerator": 5,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 5,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 1,
+      "base_cutoff": 1,
+      "tail_order": 4,
+      "strict_order_threshold": 2,
+      "ratio_numerator": 3,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 3,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 1,
+      "base_cutoff": 1,
+      "tail_order": 5,
+      "strict_order_threshold": 2,
+      "ratio_numerator": 7,
+      "ratio_denominator": 3,
+      "sufficient_integer_cutoff": 3,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 1,
+      "base_cutoff": 2,
+      "tail_order": 4,
+      "strict_order_threshold": 3,
+      "ratio_numerator": 11,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 11,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 1,
+      "base_cutoff": 2,
+      "tail_order": 6,
+      "strict_order_threshold": 3,
+      "ratio_numerator": 5,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 5,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 1,
+      "base_cutoff": 2,
+      "tail_order": 7,
+      "strict_order_threshold": 3,
+      "ratio_numerator": 17,
+      "ratio_denominator": 4,
+      "sufficient_integer_cutoff": 5,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 1,
+      "base_cutoff": 3,
+      "tail_order": 5,
+      "strict_order_threshold": 4,
+      "ratio_numerator": 19,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 19,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 1,
+      "base_cutoff": 3,
+      "tail_order": 8,
+      "strict_order_threshold": 4,
+      "ratio_numerator": 7,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 7,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 1,
+      "base_cutoff": 3,
+      "tail_order": 9,
+      "strict_order_threshold": 4,
+      "ratio_numerator": 31,
+      "ratio_denominator": 5,
+      "sufficient_integer_cutoff": 7,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 1,
+      "tail_order": 7,
+      "strict_order_threshold": 6,
+      "ratio_numerator": 10,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 10,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 1,
+      "tail_order": 12,
+      "strict_order_threshold": 6,
+      "ratio_numerator": 5,
+      "ratio_denominator": 2,
+      "sufficient_integer_cutoff": 3,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 1,
+      "tail_order": 13,
+      "strict_order_threshold": 6,
+      "ratio_numerator": 16,
+      "ratio_denominator": 7,
+      "sufficient_integer_cutoff": 3,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 2,
+      "tail_order": 11,
+      "strict_order_threshold": 10,
+      "ratio_numerator": 27,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 27,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 2,
+      "tail_order": 20,
+      "strict_order_threshold": 10,
+      "ratio_numerator": 9,
+      "ratio_denominator": 2,
+      "sufficient_integer_cutoff": 5,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 2,
+      "tail_order": 21,
+      "strict_order_threshold": 10,
+      "ratio_numerator": 47,
+      "ratio_denominator": 11,
+      "sufficient_integer_cutoff": 5,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 3,
+      "tail_order": 15,
+      "strict_order_threshold": 14,
+      "ratio_numerator": 52,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 52,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 3,
+      "tail_order": 28,
+      "strict_order_threshold": 14,
+      "ratio_numerator": 13,
+      "ratio_denominator": 2,
+      "sufficient_integer_cutoff": 7,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 2,
+      "base_cutoff": 3,
+      "tail_order": 29,
+      "strict_order_threshold": 14,
+      "ratio_numerator": 94,
+      "ratio_denominator": 15,
+      "sufficient_integer_cutoff": 7,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 1,
+      "tail_order": 13,
+      "strict_order_threshold": 12,
+      "ratio_numerator": 17,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 17,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 1,
+      "tail_order": 24,
+      "strict_order_threshold": 12,
+      "ratio_numerator": 7,
+      "ratio_denominator": 3,
+      "sufficient_integer_cutoff": 3,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 1,
+      "tail_order": 25,
+      "strict_order_threshold": 12,
+      "ratio_numerator": 29,
+      "ratio_denominator": 13,
+      "sufficient_integer_cutoff": 3,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 2,
+      "tail_order": 22,
+      "strict_order_threshold": 21,
+      "ratio_numerator": 51,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 51,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 2,
+      "tail_order": 42,
+      "strict_order_threshold": 21,
+      "ratio_numerator": 13,
+      "ratio_denominator": 3,
+      "sufficient_integer_cutoff": 5,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 2,
+      "tail_order": 43,
+      "strict_order_threshold": 21,
+      "ratio_numerator": 93,
+      "ratio_denominator": 22,
+      "sufficient_integer_cutoff": 5,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 3,
+      "tail_order": 31,
+      "strict_order_threshold": 30,
+      "ratio_numerator": 103,
+      "ratio_denominator": 1,
+      "sufficient_integer_cutoff": 103,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 3,
+      "tail_order": 60,
+      "strict_order_threshold": 30,
+      "ratio_numerator": 19,
+      "ratio_denominator": 3,
+      "sufficient_integer_cutoff": 7,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    },
+    {
+      "phase_degree": 3,
+      "base_cutoff": 3,
+      "tail_order": 61,
+      "strict_order_threshold": 30,
+      "ratio_numerator": 193,
+      "ratio_denominator": 31,
+      "sufficient_integer_cutoff": 7,
+      "baseline_cutoff_is_a_required_proof_input": true,
+      "pure_outputs_unchanged_under_hypotheses": true
+    }
+  ],
+  "necessary_inequality_controls": 108,
+  "finite_core_controls": [
+    {
+      "phase_degree": 1,
+      "formal_pair_cutoff": 1,
+      "jet_order": 4,
+      "truncation_sufficient_cutoff": 3,
+      "tail_transfer": {
+        "phase_degree": 1,
+        "base_cutoff": 3,
+        "tail_order": 5,
+        "strict_order_threshold": 4,
+        "ratio_numerator": 19,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 19,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    },
+    {
+      "phase_degree": 1,
+      "formal_pair_cutoff": 2,
+      "jet_order": 6,
+      "truncation_sufficient_cutoff": 5,
+      "tail_transfer": {
+        "phase_degree": 1,
+        "base_cutoff": 5,
+        "tail_order": 7,
+        "strict_order_threshold": 6,
+        "ratio_numerator": 41,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 41,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    },
+    {
+      "phase_degree": 1,
+      "formal_pair_cutoff": 3,
+      "jet_order": 8,
+      "truncation_sufficient_cutoff": 7,
+      "tail_transfer": {
+        "phase_degree": 1,
+        "base_cutoff": 7,
+        "tail_order": 9,
+        "strict_order_threshold": 8,
+        "ratio_numerator": 71,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 71,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    },
+    {
+      "phase_degree": 2,
+      "formal_pair_cutoff": 1,
+      "jet_order": 14,
+      "truncation_sufficient_cutoff": 3,
+      "tail_transfer": {
+        "phase_degree": 2,
+        "base_cutoff": 3,
+        "tail_order": 15,
+        "strict_order_threshold": 14,
+        "ratio_numerator": 52,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 52,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    },
+    {
+      "phase_degree": 2,
+      "formal_pair_cutoff": 2,
+      "jet_order": 22,
+      "truncation_sufficient_cutoff": 5,
+      "tail_transfer": {
+        "phase_degree": 2,
+        "base_cutoff": 5,
+        "tail_order": 23,
+        "strict_order_threshold": 22,
+        "ratio_numerator": 126,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 126,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    },
+    {
+      "phase_degree": 2,
+      "formal_pair_cutoff": 3,
+      "jet_order": 30,
+      "truncation_sufficient_cutoff": 7,
+      "tail_transfer": {
+        "phase_degree": 2,
+        "base_cutoff": 7,
+        "tail_order": 31,
+        "strict_order_threshold": 30,
+        "ratio_numerator": 232,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 232,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    },
+    {
+      "phase_degree": 3,
+      "formal_pair_cutoff": 1,
+      "jet_order": 30,
+      "truncation_sufficient_cutoff": 3,
+      "tail_transfer": {
+        "phase_degree": 3,
+        "base_cutoff": 3,
+        "tail_order": 31,
+        "strict_order_threshold": 30,
+        "ratio_numerator": 103,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 103,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    },
+    {
+      "phase_degree": 3,
+      "formal_pair_cutoff": 2,
+      "jet_order": 48,
+      "truncation_sufficient_cutoff": 5,
+      "tail_transfer": {
+        "phase_degree": 3,
+        "base_cutoff": 5,
+        "tail_order": 49,
+        "strict_order_threshold": 48,
+        "ratio_numerator": 261,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 261,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    },
+    {
+      "phase_degree": 3,
+      "formal_pair_cutoff": 3,
+      "jet_order": 66,
+      "truncation_sufficient_cutoff": 7,
+      "tail_transfer": {
+        "phase_degree": 3,
+        "base_cutoff": 7,
+        "tail_order": 67,
+        "strict_order_threshold": 66,
+        "ratio_numerator": 491,
+        "ratio_denominator": 1,
+        "sufficient_integer_cutoff": 491,
+        "baseline_cutoff_is_a_required_proof_input": true,
+        "pure_outputs_unchanged_under_hypotheses": true
+      }
+    }
+  ],
+  "binomial_identity_controls": 9,
+  "admitted_tail_pure_controls": 3,
+  "admitted_tail_changes_marked_output": true,
+  "admitted_tail_marked_output": "103408066955539906560000*X*Y**3*e",
+  "tail_bound_calculator_implemented": true,
+  "finite_core_bound_calculator_implemented": true,
+  "universal_proof_inferred_from_samples": false,
+  "baseline_linear_cutoff_verified_by_calculator": false,
+  "full_formal_eventuality_implies_linearity_claimed": false,
+  "general_formal_safety_decision_claimed": false,
+  "finite_operator_oracle_or_semidecision_implemented": false,
+  "ordinary_cutoff_ideal_equality_claimed": false,
+  "phase_perturbations_or_variable_coefficients_covered": false,
+  "independent_review": false,
+  "formal_verification": false,
+  "novelty_claim": false,
+  "checker_sha256": "cfcfc12ef7f9496833c3670a5466a4396c86c42ca4319c26b89a4470fd6e9258"
+}

@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-11-15",
+  "primary_sources": [
+    {
+      "path": "sources/quartic-cabling/hatcher-3M.pdf",
+      "url": "https://pi.math.cornell.edu/~hatcher/3M/3M.pdf",
+      "title": "Hatcher, Notes on Basic 3-Manifold Topology, retained version",
+      "bytes": 384715,
+      "sha256": "f3781c43b4ed981f98fab36761d5eefe92bb53cc1a7100a0146954f9af5a029b",
+      "complete_PDF_pages_visually_rechecked": [
+        15,
+        19,
+        20,
+        21
+      ],
+      "printed_pages": [
+        14,
+        18,
+        19,
+        20
+      ],
+      "used_statement": "Theorem1.9 inclusion-minimal JSJ torus collection unique up to isotopy; Proposition1.12 Seifert irreducibility; Proposition1.13 essential vertical annuli/tori; Lemmas1.14-1.15 boundary-fibre uniqueness with ALL product/Klein exceptions. Source terminal disk(2,2) is INCLUDED and no fibre uniqueness is asserted there. Target three pieces have negative orbifold Euler and no exceptions.",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "sources/borderline-regular-end/waldhausen-1968.pdf",
+      "url": "https://www.maths.gla.ac.uk/~mpowell/Waldhausen-Irreducible3ManifoldsSufficiently-1968.pdf",
+      "title": "Waldhausen, On irreducible 3-manifolds which are sufficiently large, Ann Math87(1968),56-88",
+      "bytes": 2860358,
+      "sha256": "5801fc4310d3b001a50d6bd1b748a169c001ab7360fe5ce4356cafd584ca2b14",
+      "complete_PDF_pages_visually_rechecked": [
+        23
+      ],
+      "printed_pages": [
+        77
+      ],
+      "used_statement": "Theorem6.1 exact boundary-relative covering conclusion. Both exteriors proved irreducible/boundary-irreducible, target aspherical and sufficiently large, full stable peripheral isomorphism realized as map of pairs with boundary homeomorphism, one source torus boundary excludes exceptional product over closed orientable surface, pi1 isomorphism forces covering degree1. No recognition from H1 or unmarked group.",
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "retained_inputs": [
+    "PF43 actual characteristic-resolution/free-tail construction",
+    "PF44 full cofinal exterior/peripheral comparison and realization of pair maps",
+    "PF46 complete unramified entire charts and c_sigma0 exactness",
+    "PF50 complementary pole collapse and whole source coordinates",
+    "PF61 actual full lattice/marks",
+    "PF67 outside-N boundary factorization and retained leaves",
+    "PF73/75 complete S3 incidence and actual fillings/peripherals",
+    "PF76 all common-source actual-binomial two-stage quartic closures"
+  ],
+  "new_unbounded_arguments": [
+    "Untouched P1xP1 corner separates actual complementary R/D plumbing sides",
+    "All rho>=2 minimal-pole R-side graphs linear with explicit primitive meridian and actual unit cable curve; simple R side disk(2,3) with drilled annulus cone2",
+    "One unramified entire exact chart gives rooted characteristic spine with kappa_D>=2, including terminal Klein cap",
+    "A path Seifert decomposition with marked boundary at end retains that property under minimal JSJ subcollection",
+    "All non-trefoil S3 target drilled exteriors have the marked boundary in middle with two genuine companion JSJ tori",
+    "Full peripheral Waldhausen recognition distinguishes source end from target middle, excluding the entire non-trefoil S3 sector in complementary and hence both pencils"
+  ],
+  "limits": {
+    "two_source_omitted_lines_required": true,
+    "arbitrary_count_endpoint_asserted": false,
+    "trefoil_S3_complementary_excluded": false,
+    "other_target_representation_sectors_excluded": false,
+    "full_goal_open": true
+  },
+  "primary_web_record_consulted": "https://annals.math.princeton.edu/1968/87-1/p04",
+  "new_primary_downloads_required": false,
+  "research_goal_completed": false
+}

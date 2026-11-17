@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "file": "pivot-04.json",
+      "pivot": 4,
+      "status": "finite-quotient-inconclusive"
+    },
+    {
+      "file": "pivot-05.json",
+      "pivot": 5,
+      "status": "finite-quotient-inconclusive"
+    },
+    {
+      "file": "pivot-06.json",
+      "pivot": 6,
+      "status": "arbitrary-degree-obstructed"
+    },
+    {
+      "file": "pivot-07.json",
+      "pivot": 7,
+      "status": "finite-quotient-inconclusive"
+    },
+    {
+      "file": "pivot-08.json",
+      "pivot": 8,
+      "status": "finite-quotient-inconclusive"
+    },
+    {
+      "file": "pivot-09.json",
+      "pivot": 9,
+      "status": "finite-quotient-inconclusive"
+    },
+    {
+      "file": "pivot-10.json",
+      "pivot": 10,
+      "status": "finite-quotient-inconclusive"
+    },
+    {
+      "file": "pivot-11.json",
+      "pivot": 11,
+      "status": "finite-quotient-inconclusive"
+    },
+    {
+      "file": "pivot-12.json",
+      "pivot": 12,
+      "status": "finite-quotient-inconclusive"
+    }
+  ],
+  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
+  "scope": "Functional support is finite. All target monomials through its maximum source degree are tested in a downward-closed monomial quotient; higher-degree target monomials vanish there because generators have no constants.",
+  "source_sha256": "82173cc841583d60ffc734d54ba64b7e88a899df37f8d1a5e1fab78ccca93537",
+  "status": "complete"
+}

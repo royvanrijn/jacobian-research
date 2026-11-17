@@ -1,0 +1,66 @@
+{
+  "psl2_11": [
+    {
+      "branch": 0,
+      "ramification": 3,
+      "ramified_points": 3,
+      "tails": 2,
+      "left_vertices": 5,
+      "min_target_components": 2,
+      "min_source_components": 6,
+      "mixed_tail_multiplicity_divisor": 3
+    },
+    {
+      "branch": 1,
+      "ramification": 2,
+      "ramified_points": 4,
+      "tails": 3,
+      "left_vertices": 7,
+      "min_target_components": 2,
+      "min_source_components": 8,
+      "mixed_tail_multiplicity_divisor": 2
+    }
+  ],
+  "S4_control": {
+    "field": "s^2=-2",
+    "zeta": "s - 1",
+    "delta": "s + 4",
+    "g": "L**2*(2*s - 10)/3 + L*(s + 4)/3 + 1",
+    "tail": "s + 5",
+    "residual_at_x_zero": "-135*s*y + 27*s*z - 72*y",
+    "target_residual_at_C_zero": "144*T2*s + 252*T2",
+    "edges": [
+      {
+        "source": "critical",
+        "target": "C",
+        "curve_index": 2,
+        "source_multiplicity": 1,
+        "target_multiplicity": 2
+      },
+      {
+        "source": "tail_plus",
+        "target": "C",
+        "curve_index": 1,
+        "source_multiplicity": 2,
+        "target_multiplicity": 2
+      },
+      {
+        "source": "tail_plus",
+        "target": "D",
+        "curve_index": 1,
+        "source_multiplicity": 1,
+        "target_multiplicity": 1
+      },
+      {
+        "source": "tail_minus",
+        "target": "D",
+        "curve_index": 1,
+        "source_multiplicity": 1,
+        "target_multiplicity": 1
+      }
+    ]
+  },
+  "universal_theorem": "written connected-incidence and mixed-tail proof",
+  "general_PSL2_11_occurrence_decided": false,
+  "full_classification_complete": false
+}

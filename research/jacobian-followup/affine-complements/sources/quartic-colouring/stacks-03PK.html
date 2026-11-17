@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 59.28 (03PK): Kummer theory&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELV" data-tag="0ELV">3</a>: Topics in Scheme Theory
+    
+  
+    <li>Chapter <a href="/tag/03N1" data-tag="03N1">59</a>: Étale Cohomology
+    
+  
+    <li class="active">Section <a href="/tag/03PK" data-tag="03PK">59.28</a>: Kummer theory
+    <span id="citation">(<a href="/tag/03PK/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/03PF">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/03PN">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="etale-cohomology-section-kummer" class="tex-section"><span data-tag="03PK">59.28</span> Kummer theory</h2>
+
+<p>
+Let $n \in \mathbf{N}$ and consider the functor $\mu _ n$ defined by 
+</p>
+<div class="equation">
+  \[  \begin{matrix}  \mathit{Sch}^{opp} 
+
+&  \longrightarrow 
+
+&  \textit{Ab} 
+
+\\  S 
+
+&  \longmapsto 
+
+&  \mu _ n(S) = \{ t \in \Gamma (S, \mathcal{O}_ S^*) \mid t^ n = 1 \} . 
+
+\end{matrix}  \]
+</div>
+<p>
+ By Groupoids, Example <a href="/tag/040M" data-tag="040M">39.5.2</a> this is a representable functor, and the scheme representing it is denoted $\mu _ n$ also. By Lemma <a href="/tag/03O3" data-tag="03O3">59.15.8</a> this functor satisfies the sheaf condition for the fpqc topology (in particular, it also satisfies the sheaf condition for the étale, Zariski, etc topology). 
+</p>
+<p>
+<article class="env-lemma" id="03PL">
+  <p><a class="environment-identifier" href="/tag/03PL">Lemma <span data-tag="03PL">59.28.1</span>.</a> If $n\in \mathcal{O}_ S^*$ then </p>
+  <div class="equation">
+  \[  0 \to \mu _{n, S} \to \mathbf{G}_{m, S} \xrightarrow {(\cdot )^ n} \mathbf{G}_{m, S} \to 0  \]
+</div>
+  <p> is a short exact sequence of sheaves on both the small and big étale site of $S$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By definition the sheaf $\mu _{n, S}$ is the kernel of the map $(\cdot )^ n$. Hence it suffices to show that the last map is surjective. Let $U$ be a scheme over $S$. Let $f \in \mathbf{G}_ m(U) = \Gamma (U, \mathcal{O}_ U^*)$. We need to show that we can find an étale cover of $U$ over the members of which the restriction of $f$ is an $n$th power. Set 
+    <p>
+      <div class="equation">
+  \[  U' = \underline{\mathop{\mathrm{Spec}}}_ U(\mathcal{O}_ U[T]/(T^ n-f)) \xrightarrow {\pi } U.  \]
+</div>
+    <p>
+       (See Constructions, Section <a href="/tag/01LL" data-tag="01LL">27.3</a> or <a href="/tag/01LQ" data-tag="01LQ">27.4</a> for a discussion of the relative spectrum.) Let $\mathop{\mathrm{Spec}}(A) \subset U$ be an affine open, and say $f|_{\mathop{\mathrm{Spec}}(A)}$ corresponds to the unit $a \in A^*$. Then $\pi ^{-1}(\mathop{\mathrm{Spec}}(A)) = \mathop{\mathrm{Spec}}(B)$ with $B = A[T]/(T^ n - a)$. The ring map $A \to B$ is finite free of rank $n$, hence it is faithfully flat, and hence we conclude that $\mathop{\mathrm{Spec}}(B) \to \mathop{\mathrm{Spec}}(A)$ is surjective. Since this holds for every affine open in $U$ we conclude that $\pi $ is surjective. In addition, $n$ and $T^{n - 1}$ are invertible in $B$, so $nT^{n-1} \in B^*$ and the ring map $A \to B$ is standard étale, in particular étale. Since this holds for every affine open of $U$ we conclude that $\pi $ is étale. Hence $\mathcal{U} = \{ \pi : U' \to U\} $ is an étale covering. Moreover, $f|_{U'} = (f')^ n$ where $f'$ is the class of $T$ in $\Gamma (U', \mathcal{O}_{U'}^*)$, so $\mathcal{U}$ has the desired property. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-remark" id="03PM">
+  <p><a class="environment-identifier" href="/tag/03PM">Remark <span data-tag="03PM">59.28.2</span>.</a> Lemma <a href="/tag/03PL" data-tag="03PL">59.28.1</a> is false when “étale” is replaced with “Zariski”. Since the étale topology is coarser than the smooth topology, see Topologies, Lemma <a href="/tag/0220" data-tag="0220">34.5.2</a> it follows that the sequence is also exact in the smooth topology. </p>
+</article> 
+</p>
+<p>
+By Theorem <a href="/tag/03P8" data-tag="03P8">59.24.1</a> and Lemma <a href="/tag/03PL" data-tag="03PL">59.28.1</a> and general properties of cohomology we obtain the long exact cohomology sequence 
+</p>
+<div class="equation">
+  \[  \xymatrix{ 0 \ar[r] &  H_{\acute{e}tale}^0(S, \mu _{n, S}) \ar[r] &  \Gamma (S, \mathcal{O}_ S^*) \ar[r]^{(\cdot )^ n} &  \Gamma (S, \mathcal{O}_ S^*) \ar@(rd, ul)[rdllllr] \\  &  H_{\acute{e}tale}^1(S, \mu _{n, S}) \ar[r] &  \mathop{\mathrm{Pic}}\nolimits (S) \ar[r]^{(\cdot )^ n} &  \mathop{\mathrm{Pic}}\nolimits (S) \ar@(rd, ul)[rdllllr] \\  &  H_{\acute{e}tale}^2(S, \mu _{n, S}) \ar[r] &  \ldots }  \]
+</div>
+<p>
+ at least if $n$ is invertible on $S$. When $n$ is not invertible on $S$ we can apply the following lemma. 
+</p>
+<p>
+<article class="env-lemma" id="040N">
+  <p><a class="environment-identifier" href="/tag/040N">Lemma <span data-tag="040N">59.28.3</span>.</a> For any $n \in \mathbf{N}$ the sequence </p>
+  <div class="equation">
+  \[  0 \to \mu _{n, S} \to \mathbf{G}_{m, S} \xrightarrow {(\cdot )^ n} \mathbf{G}_{m, S} \to 0  \]
+</div>
+  <p> is a short exact sequence of sheaves on the site $(\mathit{Sch}/S)_{fppf}$ and $(\mathit{Sch}/S)_{syntomic}$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By definition the sheaf $\mu _{n, S}$ is the kernel of the map $(\cdot )^ n$. Hence it suffices to show that the last map is surjective. Since the syntomic topology is weaker than the fppf topology, see Topologies, Lemma <a href="/tag/021N" data-tag="021N">34.7.2</a>, it suffices to prove this for the syntomic topology. Let $U$ be a scheme over $S$. Let $f \in \mathbf{G}_ m(U) = \Gamma (U, \mathcal{O}_ U^*)$. We need to show that we can find a syntomic cover of $U$ over the members of which the restriction of $f$ is an $n$th power. Set 
+    <p>
+      <div class="equation">
+  \[  U' = \underline{\mathop{\mathrm{Spec}}}_ U(\mathcal{O}_ U[T]/(T^ n-f)) \xrightarrow {\pi } U.  \]
+</div>
+    <p>
+       (See Constructions, Section <a href="/tag/01LL" data-tag="01LL">27.3</a> or <a href="/tag/01LQ" data-tag="01LQ">27.4</a> for a discussion of the relative spectrum.) Let $\mathop{\mathrm{Spec}}(A) \subset U$ be an affine open, and say $f|_{\mathop{\mathrm{Spec}}(A)}$ corresponds to the unit $a \in A^*$. Then $\pi ^{-1}(\mathop{\mathrm{Spec}}(A)) = \mathop{\mathrm{Spec}}(B)$ with $B = A[T]/(T^ n - a)$. The ring map $A \to B$ is finite free of rank $n$, hence it is faithfully flat, and hence we conclude that $\mathop{\mathrm{Spec}}(B) \to \mathop{\mathrm{Spec}}(A)$ is surjective. Since this holds for every affine open in $U$ we conclude that $\pi $ is surjective. In addition, $B$ is a global relative complete intersection over $A$, so the ring map $A \to B$ is standard syntomic, in particular syntomic. Since this holds for every affine open of $U$ we conclude that $\pi $ is syntomic. Hence $\mathcal{U} = \{ \pi : U' \to U\} $ is a syntomic covering. Moreover, $f|_{U'} = (f')^ n$ where $f'$ is the class of $T$ in $\Gamma (U', \mathcal{O}_{U'}^*)$, so $\mathcal{U}$ has the desired property. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-remark" id="040O">
+  <p><a class="environment-identifier" href="/tag/040O">Remark <span data-tag="040O">59.28.4</span>.</a> Lemma <a href="/tag/040N" data-tag="040N">59.28.3</a> is false for the smooth, étale, or Zariski topology. </p>
+</article> 
+</p>
+<p>
+By Theorem <a href="/tag/03P8" data-tag="03P8">59.24.1</a> and Lemma <a href="/tag/040N" data-tag="040N">59.28.3</a> and general properties of cohomology we obtain the long exact cohomology sequence 
+</p>
+<div class="equation">
+  \[  \xymatrix{ 0 \ar[r] &  H_{fppf}^0(S, \mu _{n, S}) \ar[r] &  \Gamma (S, \mathcal{O}_ S^*) \ar[r]^{(\cdot )^ n} &  \Gamma (S, \mathcal{O}_ S^*) \ar@(rd, ul)[rdllllr] \\  &  H_{fppf}^1(S, \mu _{n, S}) \ar[r] &  \mathop{\mathrm{Pic}}\nolimits (S) \ar[r]^{(\cdot )^ n} &  \mathop{\mathrm{Pic}}\nolimits (S) \ar@(rd, ul)[rdllllr] \\  &  H_{fppf}^2(S, \mu _{n, S}) \ar[r] &  \ldots }  \]
+</div>
+<p>
+ for any scheme $S$ and any integer $n$. Of course there is a similar sequence with syntomic cohomology. 
+</p>
+<p>
+Let $n \in \mathbf{N}$ and let $S$ be any scheme. There is another more direct way to describe the first cohomology group with values in $\mu _ n$. Consider pairs $(\mathcal{L}, \alpha )$ where $\mathcal{L}$ is an invertible sheaf on $S$ and $\alpha : \mathcal{L}^{\otimes n} \to \mathcal{O}_ S$ is a trivialization of the $n$th tensor power of $\mathcal{L}$. Let $(\mathcal{L}', \alpha ')$ be a second such pair. An isomorphism $\varphi : (\mathcal{L}, \alpha ) \to (\mathcal{L}', \alpha ')$ is an isomorphism $\varphi : \mathcal{L} \to \mathcal{L}'$ of invertible sheaves such that the diagram 
+</p>
+<div class="equation">
+  \[  \xymatrix{ \mathcal{L}^{\otimes n} \ar[d]_{\varphi ^{\otimes n}} \ar[r]_\alpha &  \mathcal{O}_ S \ar[d]^1 \\  (\mathcal{L}')^{\otimes n} \ar[r]^{\alpha '} &  \mathcal{O}_ S \\  }  \]
+</div>
+<p>
+ commutes. Thus we have 
+</p>
+<div class="equation" id="040P">
+    <span class="equation-label"><a href="/tag/040P" data-tag="040P">59.28.4.1</a></span>
+  <div>\begin{equation}  \label{etale-cohomology-equation-isomorphisms-pairs} \mathit{Isom}_ S((\mathcal{L}, \alpha ), (\mathcal{L}', \alpha ')) = \left\{  \begin{matrix}  \emptyset 
+
+&  \text{if} 
+
+&  \text{they are not isomorphic} 
+
+\\  H^0(S, \mu _{n, S})\cdot \varphi 
+
+&  \text{if} 
+
+&  \varphi \text{ isomorphism of pairs} 
+
+\end{matrix} \right. \end{equation}</div>
+</div>
+<p>
+ Moreover, given two pairs $(\mathcal{L}, \alpha )$, $(\mathcal{L}', \alpha ')$ the tensor product 
+</p>
+<div class="equation">
+  \[  (\mathcal{L}, \alpha ) \otimes (\mathcal{L}', \alpha ') = (\mathcal{L} \otimes \mathcal{L}', \alpha \otimes \alpha ')  \]
+</div>
+<p>
+ is another pair. The pair $(\mathcal{O}_ S, 1)$ is an identity for this tensor product operation, and an inverse is given by 
+</p>
+<div class="equation">
+  \[  (\mathcal{L}, \alpha )^{-1} = (\mathcal{L}^{\otimes -1}, \alpha ^{\otimes -1}).  \]
+</div>
+<p>
+ Hence the collection of isomorphism classes of pairs forms an abelian group. Note that 
+</p>
+<div class="equation">
+  \[  (\mathcal{L}, \alpha )^{\otimes n} = (\mathcal{L}^{\otimes n}, \alpha ^{\otimes n}) \xrightarrow {\alpha } (\mathcal{O}_ S, 1)  \]
+</div>
+<p>
+ is an isomorphism hence every element of this group has order dividing $n$. We warn the reader that this group is in general <strong>not</strong> the $n$-torsion in $\mathop{\mathrm{Pic}}\nolimits (S)$. 
+</p>
+<p>
+<article class="env-lemma" id="040Q">
+  <p><a class="environment-identifier" href="/tag/040Q">Lemma <span data-tag="040Q">59.28.5</span>.</a> Let $S$ be a scheme. There is a canonical identification </p>
+  <div class="equation">
+  \[  H_{\acute{e}tale}^1(S, \mu _ n) = \text{group of pairs }(\mathcal{L}, \alpha )\text{ up to isomorphism as above}  \]
+</div>
+  <p> if $n$ is invertible on $S$. In general we have </p>
+  <div class="equation">
+  \[  H_{fppf}^1(S, \mu _ n) = \text{group of pairs }(\mathcal{L}, \alpha )\text{ up to isomorphism as above}.  \]
+</div>
+  <p> The same result holds with fppf replaced by syntomic. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      We first prove the second isomorphism. Let $(\mathcal{L}, \alpha )$ be a pair as above. Choose an affine open covering $S = \bigcup U_ i$ such that $\mathcal{L}|_{U_ i} \cong \mathcal{O}_{U_ i}$. Say $s_ i \in \mathcal{L}(U_ i)$ is a generator. Then $\alpha (s_ i^{\otimes n}) = f_ i \in \mathcal{O}_ S^*(U_ i)$. Writing $U_ i = \mathop{\mathrm{Spec}}(A_ i)$ we see there exists a global relative complete intersection $A_ i \to B_ i = A_ i[T]/(T^ n - f_ i)$ such that $f_ i$ maps to an $n$th power in $B_ i$. In other words, setting $V_ i = \mathop{\mathrm{Spec}}(B_ i)$ we obtain a syntomic covering $\mathcal{V} = \{ V_ i \to S\} _{i \in I}$ and trivializations $\varphi _ i : (\mathcal{L}, \alpha )|_{V_ i} \to (\mathcal{O}_{V_ i}, 1)$. 
+    <p>
+      We will use this result (the existence of the covering $\mathcal{V}$) to associate to this pair a cohomology class in $H^1_{syntomic}(S, \mu _{n, S})$. We give two (equivalent) constructions. 
+    <p>
+      First construction: using Čech cohomology. Over the double overlaps $V_ i \times _ S V_ j$ we have the isomorphism 
+    <p>
+      <div class="equation">
+  \[  (\mathcal{O}_{V_ i \times _ S V_ j}, 1) \xrightarrow {\text{pr}_0^*\varphi _ i^{-1}} (\mathcal{L}|_{V_ i \times _ S V_ j}, \alpha |_{V_ i \times _ S V_ j}) \xrightarrow {\text{pr}_1^*\varphi _ j} (\mathcal{O}_{V_ i \times _ S V_ j}, 1)  \]
+</div>
+    <p>
+       of pairs. By (<a href="/tag/040P" data-tag="040P">59.28.4.1</a>) this is given by an element $\zeta _{ij} \in \mu _ n(V_ i \times _ S V_ j)$. We omit the verification that these $\zeta _{ij}$'s give a $1$-cocycle, i.e., give an element $(\zeta _{i_0i_1}) \in \check C(\mathcal{V}, \mu _ n)$ with $d(\zeta _{i_0i_1}) = 0$. Thus its class is an element in $\check H^1(\mathcal{V}, \mu _ n)$ and by Theorem <a href="/tag/03OW" data-tag="03OW">59.19.2</a> it maps to a cohomology class in $H^1_{syntomic}(S, \mu _{n, S})$. 
+    <p>
+      Second construction: Using torsors. Consider the presheaf 
+    <p>
+      <div class="equation">
+  \[  \mu _ n(\mathcal{L}, \alpha ) : U \longmapsto \mathit{Isom}_ U((\mathcal{O}_ U, 1), (\mathcal{L}, \alpha )|_ U)  \]
+</div>
+    <p>
+       on $(\mathit{Sch}/S)_{syntomic}$. We may view this as a subpresheaf of $\mathop{\mathcal{H}\! \mathit{om}}\nolimits _\mathcal {O}(\mathcal{O}, \mathcal{L})$ (internal hom sheaf, see Modules on Sites, Section <a href="/tag/04TT" data-tag="04TT">18.27</a>). Since the conditions defining this subpresheaf are local, we see that it is a sheaf. By (<a href="/tag/040P" data-tag="040P">59.28.4.1</a>) this sheaf has a free action of the sheaf $\mu _{n, S}$. Hence the only thing we have to check is that it locally has sections. This is true because of the existence of the trivializing cover $\mathcal{V}$. Hence $\mu _ n(\mathcal{L}, \alpha )$ is a $\mu _{n, S}$-torsor and by Cohomology on Sites, Lemma <a href="/tag/03AJ" data-tag="03AJ">21.4.3</a> we obtain a corresponding element of $H^1_{syntomic}(S, \mu _{n, S})$. 
+    <p>
+      Ok, now we have to still show the following 
+    <p>
+      <ol>
+  <li><p>
+The two constructions give the same cohomology class. 
+</p>
+</li><li><p>
+Isomorphic pairs give rise to the same cohomology class. 
+</p>
+</li><li><p>
+The cohomology class of $(\mathcal{L}, \alpha ) \otimes (\mathcal{L}', \alpha ')$ is the sum of the cohomology classes of $(\mathcal{L}, \alpha )$ and $(\mathcal{L}', \alpha ')$. 
+</p>
+</li><li><p>
+If the cohomology class is trivial, then the pair is trivial. 
+</p>
+</li><li><p>
+Any element of $H^1_{syntomic}(S, \mu _{n, S})$ is the cohomology class of a pair. 
+</p>
+</li>
+</ol>
+    <p>
+       We omit the proof of (1). Part (2) is clear from the second construction, since isomorphic torsors give the same cohomology classes. Part (3) is clear from the first construction, since the resulting Čech classes add up. Part (4) is clear from the second construction since a torsor is trivial if and only if it has a global section, see Cohomology on Sites, Lemma <a href="/tag/03AI" data-tag="03AI">21.4.2</a>. 
+    <p>
+      Part (5) can be seen as follows (although a direct proof would be preferable). Suppose $\xi \in H^1_{syntomic}(S, \mu _{n, S})$. Then $\xi $ maps to an element $\overline{\xi } \in H^1_{syntomic}(S, \mathbf{G}_{m, S})$ with $n \overline{\xi } = 0$. By Theorem <a href="/tag/03P8" data-tag="03P8">59.24.1</a> we see that $\overline{\xi }$ corresponds to an invertible sheaf $\mathcal{L}$ whose $n$th tensor power is isomorphic to $\mathcal{O}_ S$. Hence there exists a pair $(\mathcal{L}, \alpha ')$ whose cohomology class $\xi '$ has the same image $\overline{\xi '}$ in $H^1_{syntomic}(S, \mathbf{G}_{m, S})$. Thus it suffices to show that $\xi - \xi '$ is the class of a pair. By construction, and the long exact cohomology sequence above, we see that $\xi - \xi ' = \partial (f)$ for some $f \in H^0(S, \mathcal{O}_ S^*)$. Consider the pair $(\mathcal{O}_ S, f)$. We omit the verification that the cohomology class of this pair is $\partial (f)$, which finishes the proof of the first identification (with fppf replaced with syntomic). 
+    <p>
+      To see the first, note that if $n$ is invertible on $S$, then the covering $\mathcal{V}$ constructed in the first part of the proof is actually an étale covering (compare with the proof of Lemma <a href="/tag/03PL" data-tag="03PL">59.28.1</a>). The rest of the proof is independent of the topology, apart from the very last argument which uses that the Kummer sequence is exact, i.e., uses Lemma <a href="/tag/03PL" data-tag="03PL">59.28.1</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (8)</h2>
+
+  
+    <a id="comment-220" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/03PK#comment-220">Comment #220</a>
+        by
+        <cite>Matt</cite>
+        on <time datetime="2013-05-28 05:04:59">May 28, 2013 at 05:04 </time>
+      </header>
+
+      <blockquote><p>In Lemma 41.28.1 (and then again in 41.28.3) there seems to be conflicting notation or maybe just a typo. Let <script type="math/tex">Spec(A)\subset U</script> and then there is <script type="math/tex">f|_U</script>, but <script type="math/tex">f</script> is already a section over <script type="math/tex">U</script>. Since the next sentence says <script type="math/tex">\pi^{-1}(U)=Spec(B)</script> it seems the idea was to work affine locally on the base and so there is a possible relabeling <script type="math/tex">U=Spec(A)</script> or those two places that <script type="math/tex">U</script> is used should be changed to <script type="math/tex">Spec(A)</script>.</p></blockquote>
+    </article>
+  
+    <a id="comment-222" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/03PK#comment-222">Comment #222</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2013-06-02 23:17:40">June 02, 2013 at 23:17 </time>
+      </header>
+
+      <blockquote><p>Fixed, see <a href="https://github.com/stacks/stacks-project/commit/e2b30d7fe74d5df38f72a1750851ab51d603a0d9">here</a>. Thanks!</p></blockquote>
+    </article>
+  
+    <a id="comment-273" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/03PK#comment-273">Comment #273</a>
+        by
+        <cite>Andrei Halanay</cite>
+        on <time datetime="2013-08-06 07:06:57">August 06, 2013 at 07:06 </time>
+      </header>
+
+      <blockquote><p>Shouldn't be 
+<script type="math/tex">\mu_n(S) </script> intead of <script type="math/tex">\mu_n(T)</script> ?</p></blockquote>
+    </article>
+  
+    <a id="comment-275" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/03PK#comment-275">Comment #275</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2013-08-08 00:38:22">August 08, 2013 at 00:38 </time>
+      </header>
+
+      <blockquote><p>Fixed <a href="https://github.com/stacks/stacks-project/commit/3fe5604f5f0351d9984635e59d220dcccda35f0a">here</a>. Thanks!</p></blockquote>
+    </article>
+  
+    <a id="comment-3236" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/03PK#comment-3236">Comment #3236</a>
+        by
+        <cite>Dario Weißmann</cite>
+        on <time datetime="2018-03-31 10:46:56">March 31, 2018 at 10:46 </time>
+      </header>
+
+      <blockquote><p>Typos:
+- In the introduction: it is also satisfies
+- In the discussion directly above Lemma 53.28.5: 'Note that ... hence every element of this group... ' Are we missing an 'is an isomorphism' here?</p></blockquote>
+    </article>
+  
+    <a id="comment-3335" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/03PK#comment-3335">Comment #3335</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2018-05-19 15:10:10">May 19, 2018 at 15:10 </time>
+      </header>
+
+      <blockquote><p>Thanks, fixed <a href="https://github.com/stacks/stacks-project/commit/04da5724a60a85750a1dd989204be35e70fb5ca6">here</a>.</p></blockquote>
+    </article>
+  
+    <a id="comment-6807" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/03PK#comment-6807">Comment #6807</a>
+        by
+        <cite><a href="https://hebergement.universite-paris-saclay.fr/zmao/" rel="author">Zhouhang Mᴀᴏ</a></cite>
+        
+        on <time datetime="2021-12-14 07:16:39.457401">December 14, 2021 at 07:16 </time>
+      </header>
+
+      <blockquote><p>I don't know whether I am mistaken. Both 03PL and 040N follow from the fact that if <script type="math/tex">R\to S</script> is a cover in some subcanonical topology, then the induced map on the sheaves represented by them is an effective epimorphism in the same topology.</p></blockquote>
+    </article>
+  
+    <a id="comment-6949" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/03PK#comment-6949">Comment #6949</a>
+        by
+        <cite><a href="https://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2022-01-21 08:11:17.650230">January 21, 2022 at 08:11 </time>
+      </header>
+
+      <blockquote><p>Yes, although I would say surjective map of sheaves. This is Lemma <a href="/tag/00WT" data-tag="00WT">7.12.4</a>. So you can read the proofs of these lemmas as saying that <script type="math/tex">(\cdot)^n : \mathbf{G}_m \to \mathbf{G}_m</script> is a covering for the topologies indicated.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-03PK",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">03PK</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="03PK"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">03PK</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/03PF">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/03PN">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/etale-cohomology.pdf#nameddest=03PK">View Section <span data-tag="03PK">59.28</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

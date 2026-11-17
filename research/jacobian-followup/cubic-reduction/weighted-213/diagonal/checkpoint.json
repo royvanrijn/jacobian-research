@@ -1,0 +1,8 @@
+{
+  "input_sha256": "49241232980bf3d3cdfbb01638e98ee124c6b8afb559dcb7d62080a39f8a3d7d",
+  "mode": "diagonal",
+  "parameters": [],
+  "seconds": 0.005,
+  "source_sha256": "12fe6cc9baa3f25be78daf4e9b1721760004e9a004ad5dfa8e9fdf6bff9fd22d",
+  "status": "primary-changed-basis"
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Four symmetry-reduced localized socle tests for candidate embedded coordinate primes; coordinate-support theorem proved separately.",
+  "wall_limit_seconds": 50,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "completed": true,
+  "input_sha256": "7fac5035336b024938283f2e1342768d8e17cb0f30ab1c660e01843cf1d09c4c",
+  "log_sha256": "6c067aa2444b1b8fabc88cc4de97a952b95527e9668414a3499875a84b8990d7",
+  "elapsed_seconds": 8.932647861016449,
+  "stdout_tail": "PLANE_AD_START\nPLANE_AD_SOCLE_GENERATORS\n0\nPLANE_AD_WITNESS\nPLANE_AD_I_HILBERT\n1,\n0,\n0,\n-1,\n-2,\n-1,\n-2,\n7,\n3,\n-1,\n-8,\n4,\n0 \nPLANE_AD_K_HILBERT\n1,\n0,\n0,\n-1,\n-2,\n-1,\n-2,\n7,\n3,\n-1,\n-8,\n4,\n0 \nAXIS_A_START\nAXIS_A_SOCLE_GENERATORS\n13\nAXIS_A_WITNESS\n// ** redefining j (int j=1;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/three_factor_associated_primes.sing:14\n143920139571*b3c2e2f6-333187402232*b2ce2f8+180376507056*be2f10\nAXIS_A_I_HILBERT\n1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n-5,\n-2,\n-7,\n40,\n53,\n-144,\n52,\n41,\n-35,\n1,\n10,\n2,\n-4,\n0 \nAXIS_A_K_HILBERT\n1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n-5,\n-2,\n-7,\n38,\n62,\n-159,\n62,\n37,\n-18,\n-38,\n50,\n-18,\n0 \nAXIS_D_START\nAXIS_D_SOCLE_GENERATORS\n0\nAXIS_D_WITNESS\n// ** redefining j (int j=1;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/three_factor_associated_primes.sing:22\nAXIS_D_I_HILBERT\n1,\n0,\n0,\n-1,\n-1,\n-1,\n-1,\n-1,\n6,\n-4,\n21,\n-33,\n18,\n-7,\n4,\n-1,\n0 \nAXIS_D_K_HILBERT\n1,\n0,\n0,\n-1,\n-1,\n-1,\n-1,\n-1,\n6,\n-4,\n21,\n-33,\n18,\n-7,\n4,\n-1,\n0 \nORIGIN_START\nORIGIN_SOCLE_GENERATORS\n8\nORIGIN_WITNESS\n// ** redefining j (int j=1;) /home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/three_factor_associated_primes.sing:30\na5be2f13\nORIGIN_I_HILBERT\n1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n1,\n0,\n0,\n3,\n3,\n3,\n-2,\n-15,\n-24,\n48,\n-6,\n-15,\n5,\n0,\n0,\n3,\n-3,\n-3,\n-6,\n21,\n-15,\n3,\n0 \nORIGIN_K_HILBERT\n1,\n0,\n0,\n-1,\n0,\n0,\n-1,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n0,\n1,\n0,\n0,\n3,\n3,\n3,\n-7,\n15,\n-99,\n148,\n-81,\n15,\n0,\n0,\n0,\n0,\n15,\n-48,\n54,\n-24,\n3,\n0 \nEND\n"
+}

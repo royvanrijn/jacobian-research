@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-17",
+  "canonical_proof": "SIMULTANEOUS_EXPONENTS_AND_POWER_SAVING.tex",
+  "power_claim": "FIRSIMULTPOWER20261117",
+  "published_fallback_claim": "FIRSIMULTLOG20261117",
+  "analytic_input_kind": "MR II preprint dense Theorem9.2(ii), arXiv2007.04290v1,8July2020",
+  "theorem_pinpoint": "p44; Section9 conditions pp42-43; dense proof pp45-51; ordinary sieve Lemma4.3 p21 and equation78 p62",
+  "author_status": "publication catalogue checked17November2026 lists MR II as Pre-print; arXiv has v1 only",
+  "warning_source": {
+    "accepted_version": "arXiv2012.11565v3, accepted author copy, not publisher typesetting",
+    "published_url": "https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/jlms.12592",
+    "publisher_warning_checked_online": true,
+    "pinpoint": "Section6 footnote before Lemma6.1 and Remark6.2",
+    "scope": "first MR II arXiv sparse-sieve calculation uses an incorrect version; missing coprimality creates off-diagonal terms"
+  },
+  "selected_dependency_route": [
+    "dense Theorem9.2(ii)",
+    "Proposition8.3 and earlier inputs",
+    "dense replacements Lemmas5.4(ii),5.5(ii),equation29",
+    "ordinary linear sieve Lemma4.3 as in equation78"
+  ],
+  "dense_proof_direct_named_references": [
+    "Lemma 3.4",
+    "Lemma 5.4",
+    "Lemma 6.1",
+    "Lemma 7.1",
+    "Lemma 9.1",
+    "Proposition 8.3",
+    "Theorem 9.2"
+  ],
+  "sparse_Section10_including_Lemma10_3_used": false,
+  "Theorem1_7_advertised_exponent_used": false,
+  "complete_preprint_reconstruction_or_validation_claimed": false,
+  "corrected_MR_II_version_obtained": false,
+  "published_MR_II_claimed": false,
+  "long_mean_and_common_offset_density": "PNT at fixed power ranges; no fixed-m density theorem applied with growing m",
+  "common_J_density": "log(32/21)",
+  "smooth_mean": "1-log(32/17)",
+  "margin": "log(1024/357)-1>1/20",
+  "complement_loss": "once by positivity; upper13/625+2/2000=109/5000+o(1)",
+  "usable_offsets": "at least H/50 outside one common analytic exception; no factor M",
+  "absolute_resultant_bound": "log abs R_(i,m)<=5*m*i^2*log(2mi); sum<=5*M^2*H^3*log(2MH)",
+  "incidence_error": "divide witness count by H/50, yielding X^(159/160)",
+  "dense_errors": [
+    "X^(1-33/10^10)*(log X)^2",
+    "X^(1-5*10^-18)"
+  ],
+  "power_rate": "D(X)<< X^(1-10^-18), absolute implied constant",
+  "published_2016_independent_fallback": "D(X)<< X/(log X)^(1/50), absolute constant, delta1/100,H=X^(1/5)",
+  "reciprocal_sum_converges_using_power_route": true,
+  "fixed_m_reciprocal_sum": "finite initial part n<m^16; later indices lie in the common exceptional set",
+  "numeric_implied_constant_or_starting_threshold_extracted": false,
+  "all_index_SFC_closed": false,
+  "finite_controls_are_not_numerical_density_evidence": true,
+  "source_pins": {
+    "sources/mr-ii-2007.04290v1.pdf": "13a261cab744e6431baf99409985f7f188735802c6e7965e7e741bd2ff608676",
+    "sources/mr-ii-2007.04290v1.txt": "8d29cbd7858b570d1df2c86bde98ae2f38e03c301170837dca3917f0a575f1d9",
+    "sources/matomaki-2022-almost-primes-accepted-v3.pdf": "676ac2ceafc1550d63d70e71b34d4b1ed84d41918e3f6178a252e6cf9f0f007d",
+    "sources/matomaki-2022-almost-primes-accepted-v3.txt": "86505e48101f20e52cffa617d2cc17094095d09ee5b8f3fea70e2659c9aa1be6",
+    "sources/matomaki-publications-20261117.html": "b7aabf70e3b54aa7f9851d47b78c90ca1bb4485261615abcff7ac36fe8c1f203",
+    "sources/filaseta-rocks-2016-published.pdf": "a2885c831b92a23ce45695df9f40840246a6f26b5a0a5ce4820c54be7f227255",
+    "sources/filaseta-rocks-2016-published.txt": "363739660206e2438c136fe0e2c84cead7757f779e140c97884d1fa4f5e6185d",
+    "sources/matomaki-radziwill-2016-annals.pdf": "7e8c60df09683c4eb762d521e583cdabef70b5366bc98953159e471ebb02496a",
+    "sources/matomaki-radziwill-2016-annals.txt": "25cff55da449bd4651394615f5d6886272d233ae430a2ca49661c306c18b9cb9"
+  },
+  "provenance": "User-supplied simultaneous argument and explicit parameters checked; no priority claim",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

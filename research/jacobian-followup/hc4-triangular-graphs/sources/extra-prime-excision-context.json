@@ -1,0 +1,128 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Actual extra source primes, divisor excision and one-place critical budgets",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/024T",
+      "retained_file": "stacks-extra-prime-sections-024T.html",
+      "role": "Explicit new standard input: a section of an unramified separated morphism is open and closed; applied after etale Keller base change, including nonreduced divisor schemes.",
+      "sha256": "fb216bd48fce5215c4d11e0a2ce5677f53b7177f4c8941dd306e74a898d88685"
+    }
+  ],
+  "newly_activated_cached_primary_inputs": [
+    {
+      "url": "https://arxiv.org/html/1407.0490v1",
+      "retained_file": "assi-garcia-one-place-1407.0490v1.html",
+      "sha256": "8c67f35ca4412dba11ea4b0813590e7469398750730301abf51ef62aee53fdc2",
+      "portions_inspected": "Introduction item(3), Section1 conductor/Milnor identity, Section5 final genus paragraph; the one-place global critical length and finite-fibre Milnor/branch genus relation are now explicit proof inputs.",
+      "role": "Newly activated Milnor input package: total Jacobian length=2 times the smooth pencil genus, and mu_fibre=2 delta_fibre minus total branch defect for a rational-normalized fibre."
+    }
+  ],
+  "newly_used_unproved_external_statements": [
+    {
+      "statement": "Explicit new standard input: a section of an unramified separated morphism is open and closed; applied after etale Keller base change, including nonreduced divisor schemes.",
+      "source": "https://stacks.math.columbia.edu/tag/024T",
+      "location": "Proposition41.6.1",
+      "reproved": false
+    },
+    {
+      "statement": "For a one-place complex plane polynomial p, dim C[z]/(p_z1,p_z2)=2G(p), with G the smooth pencil genus.",
+      "source": "https://arxiv.org/html/1407.0490v1",
+      "location": "Introduction item(3), Section1 and Section5 final genus paragraph",
+      "reproved": false
+    },
+    {
+      "statement": "For a finite fibre with normalization genus zero, the total local Milnor number is 2 delta minus sum(branches-1).",
+      "source": "https://arxiv.org/html/1407.0490v1",
+      "location": "Section5 final genus paragraph, compared with its smooth-member formula and the retained normalization genus formula",
+      "reproved": false
+    }
+  ],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYIX1",
+      "statement": "Actual closed rank-one zero-section and first jet give B->R/(f) surjective."
+    },
+    {
+      "claim": "HC4MYIZ0",
+      "statement": "One-place primitive polynomials have integral reduced levels; generic genus equals normalization genus plus finite deficit."
+    },
+    {
+      "claim": "HC4MYIZ1",
+      "statement": "Complete isomorphic inverse image of one one-place target curve forces Keller inverse."
+    },
+    {
+      "claim": "HC4MYIY0",
+      "statement": "Exact boundary defect retains finite-image punctures and gives the normalized component loss formula."
+    },
+    {
+      "claim": "HC4MYHW0",
+      "statement": "Square-free Keller pullbacks, divisor domination and quasi-finiteness."
+    },
+    {
+      "claim": "HC4MYHY0",
+      "statement": "Etale base change preserves normality, retained Stacks025P."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian-followup/hc4-triangular-graphs/ONE_PLACE_PENCILS_AND_DESCENDED_TRACE_CLOSURE.md": "27c003fefdfdd478e1d509d0ceca90e5ac8eda7b1ef7e55a6fb488e4187001db",
+    "jacobian-followup/hc4-triangular-graphs/verify_one_place_trace.py": "bdffc5781df5bf32651ad9ca7e70975c2947bebcb616f166f064edf451857d1c",
+    "jacobian-followup/hc4-triangular-graphs/receipt-one-place-trace.json": "e8df6f83e982c840c4304334a57151ce5a2e811fde3b635cbc644dda8a787d13",
+    "jacobian-followup/hc4-triangular-graphs/sources/one-place-trace-context.json": "3101725b1498d9fbb86ca77dc21e1cb09d2ea720d5ce2178c8249929c23ded51",
+    "jacobian-followup/hc4-triangular-graphs/UNBOUNDED_QUADRIC_CLASSES_AND_RADICAL_TRACE.md": "9e6718a33746bb5fc2cba2ee054816600ba214eb4160161024580fb18700aa8d",
+    "jacobian-followup/hc4-triangular-graphs/sources/radical-trace-context.json": "7692ab610bb58ff0caf88a8392f46b2359fd434a3dbb7ab206a2cc7583ee4331",
+    "jacobian-followup/hc4-triangular-graphs/CONTRACTIBLE_RADICAL_CURVES_AND_PENCIL_DEFECT.md": "c04f018658b746c338bc9571be437b74014c8d8ae836cc55e6c100e387ba3022",
+    "jacobian-followup/hc4-triangular-graphs/sources/contractible-pencil-context.json": "f4824ab262aac06fac2a3743fcd09845d690d331ebe783d1c7161f6ff335e9e1",
+    "jacobian-followup/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md": "3a10bcc44350ae155d73f1786dbd1dc081c86b20d469e7efd0edfa408981462f",
+    "jacobian-followup/hc4-triangular-graphs/receipt-abelian-classgroup.json": "d4c76a1b07e87e828f0296852401fbdbd11b5bd84e7dfb05d986f099db726658",
+    "jacobian-followup/hc4-triangular-graphs/NORMAL_MONOGENIC_COVERS.md": "223b81738c823c3658079344f57e74a1405b3fcb52eb8adc76c9ee170226226f",
+    "jacobian-followup/hc4-triangular-graphs/sources/stacks-monic-normal-etale-025P.html": "3830cb8d28566941d9eb78bedcf40dffd2d8faddc70edfa6064053932ce869d0",
+    "jacobian-followup/hc4-triangular-graphs/sources/vistoli-one-place-math-9904035v3.html": "c7c01ae78182b20d86f728549625f9f51736a0437133c6e63be027761aaf21fd",
+    "jacobian-followup/hc4-triangular-graphs/sources/assi-garcia-one-place-1407.0490v1.html": "8c67f35ca4412dba11ea4b0813590e7469398750730301abf51ef62aee53fdc2",
+    "jacobian-followup/hc4-triangular-graphs/sources/stacks-one-place-normalization-0C1R.html": "225be5fee6e484baf4ada35c68415f2966686b3aeebca040a5704fad06068cec"
+  },
+  "direct_proof_arguments": [
+    "The target image ideal has no embedded primes because its quotient is a Cohen-Macaulay plane hypersurface ring; primary localization in a UFD makes it principal.",
+    "The actual source divisor is a section over the target image; the open-and-closed section theorem makes a(K)=f g with (f,g)=1, including multiplicities.",
+    "Every extra prime over a selected radical component is disjoint from that component and from the whole radical curve by its closed injectivity.",
+    "Units on a one-place curve are constant, so two disjoint one-place plane curves have affine-related defining equations by degree comparison.",
+    "If every pullback component were one-place, b(K) would be a nonlinear composition in p, contradicting its finite critical locus from the Keller differential and reduced one-place target levels.",
+    "A forced multi-puncture component has p as a nonconstant unit; a constant restriction would make it an integral one-place p-level.",
+    "Etale normalization and the one-puncture boundary formula make each one-place component over an A1-normalized target degree one with normalization A1.",
+    "Intrinsic equal pencil genus gives equal normalization deficits, so those finite birational component maps are actual isomorphisms.",
+    "The complete one-place Milnor budget bounds the number of such isomorphic levels by 2 delta/(2 delta minus branch defect), at most two.",
+    "Equality delta=branch defect forces ordinary nodes by the completed normalization ring and its plane embedding dimension.",
+    "Every forced multiple-puncture component over target normalization A1 has finite-image boundary index E=e+2g-2+r at least e."
+  ],
+  "full_divisor_target_image_equation_principal_proved": true,
+  "multiplicities_in_normal_trace_retained": true,
+  "exact_pullback_factor_and_unit_ideal_proved": true,
+  "extra_source_primes_disjoint_from_entire_radical_curve": true,
+  "elementary_Nisnevich_square_identified": true,
+  "Nisnevich_excision_alone_assumed_global_inverse": false,
+  "unit_modulo_normal_trace_assumed_scalar_source_polynomial": false,
+  "one_place_radical_component_forces_multi_puncture_extra_component": true,
+  "forced_extra_component_has_actual_nonconstant_source_unit": true,
+  "scalar_units_on_all_extra_components_force_inverse": true,
+  "normalizations_of_extra_components_have_etale_maps_proved": true,
+  "polynomial_radical_one_place_component_count_at_most_two": true,
+  "second_one_place_component_requires_all_nodal_selected_curve": true,
+  "nonnodal_polynomial_radical_component_has_no_one_place_extra": true,
+  "finite_image_boundary_loss_on_forced_extra_component_at_least_degree": true,
+  "source_open_surface_counterexample_declared_global_Keller": false,
+  "nodal_two_level_control_declared_nonautomorphic_Keller_example": false,
+  "new_external_section_and_Milnor_inputs_explicit": true,
+  "newly_unproved_external_statement_imported": true,
+  "all_genuine_nondescended_rank_one_traces_resolved": false,
+  "all_helper_ranks_resolved": false,
+  "intrinsic_ambient_projections_assumed_exist": false,
+  "nonlinear_source_Hessian_invariance_assumed": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

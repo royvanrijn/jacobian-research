@@ -1,0 +1,90 @@
+{
+  "as_of": "2026-11-16",
+  "sources": [
+    {
+      "path": "sources/planar-circle-bundle/oss-0504403v1.pdf",
+      "bytes": 252372,
+      "sha256": "b5ae799e16ee9fb1596ec10346a79c47f43f864a8ade69857742b77daa237048",
+      "title": "P.Ozsvath, A.Stipsicz, Z.Szabo, Planar open books and Floer homology",
+      "version": "arXiv math/0504403v1,20Apr2005,17pages;publishedIMRN2005,3385-3401",
+      "url": "https://arxiv.org/pdf/math/0504403v1",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        14
+      ],
+      "used_statement": "Corollary1.5 fullPDF2 andproof fullPDF14: INTEGRAL boundaryc1zero plus Steinfillc1nonzero implies contact NOTplanar. Rationalc1zero insufficient. This is imported Floer result, not independently reproved."
+    },
+    {
+      "path": "sources/planar-circle-bundle/pvhm-2010-published.pdf",
+      "bytes": 461055,
+      "sha256": "5a7f36b44b7d904b9e70d09e92d6a36b6a7361395c6078e12e205f6da1765582",
+      "title": "O.Plamenevskaya,J.VanHorn-Morris,Planar open books,monodromy factorizations and symplectic fillings",
+      "version": "PUBLISHED GeometryandTopology14(2010)2077-2101,25pages,DOI10.2140/gt.2010.14.2077",
+      "url": "https://msp.org/gt/2010/14-4/gt-v14-n4-p06-s.pdf",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        2,
+        4,
+        5,
+        12,
+        13
+      ],
+      "used_statement": "Thm1.1 Wendl allowableLFcomparison forplanarSteinfills;Thm1.2virtuallyOTL(p,1)uniqueSteinfill;Cor1.3allpNOT4tightfillunique. Section2publishedp-1tightstructures,referenceone2handleEulerMINUSp,rotation-p+2throughp-2step2. FullPDF12Remark2.4standardpositivefactorizationsand3holeexception;fullPDF13rationalballLAN TERNexampleandexplicitNOuniquenessproofthere. Ourp4rankboundwrittenfromsubsetmultiplicities,needsNOoriginalMcDuff/erratumaudit. No rawarXivp-2countused."
+    },
+    {
+      "path": "sources/planar-circle-bundle/eliashberg-1992.pdf",
+      "bytes": 2610752,
+      "sha256": "85b3904772e6ab730684942ee1326d1875d4bdfb2cc4ad8912487d9f3d5926f9",
+      "title": "Y.Eliashberg,Contact3-manifolds twenty years sinceJ.Martinetwork,AIF42(1992)165-192,DOI10.5802/aif.1288",
+      "url": "https://www.numdam.org/item/10.5802/aif.1288.pdf",
+      "version": "publishedscan,29PDFpagesincludingcover",
+      "fresh_complete_PDF_pages_rendered_and_visually_inspected": [
+        6,
+        8
+      ],
+      "used_statement": "FullPDF6/printed169Theorem2.1.1uniquePOSITIVEtightS3;precedingtextfixespositiveorientationandfillable=>tight. FullPDF8/printed171contextlensEulerclassesreadbutNOTusedascompleteclassification. DiskopenbooksupportingstandardS3checkedexplicitlyinwrittenapplication. Deepuniquenessimported."
+    },
+    {
+      "path": "NORMAL_RESOLUTION_CHERN_GATE_AND_ADE_END_EXCLUSION.md",
+      "bytes": 12565,
+      "sha256": "bdd3b8f32792da69b9e86d28d95fd7d339da294a4fe9ae0d4a0634bbeed9aeaf",
+      "source_kind": "sealed canonical predecessor",
+      "used_statement": "PF109 allNORMALsource/minimalresolutionChern-preservingSteindeformation,c1nonzero,b2>=r+m,pi1zero;ALLnegativeADEexcluded"
+    },
+    {
+      "path": "PRIMITIVE_END_CANONICAL_CONTACT_AND_TRIPLE_TORUS_EXCLUSION.md",
+      "bytes": 17109,
+      "sha256": "845428d5b7dff0c5216a70abd0f35307b2f825e1c963f6d551f458069b14a3cf",
+      "source_kind": "sealed canonical predecessor",
+      "used_statement": "PF102soleSMOOTHlineprimitiveend,negativeform/theta/rotationboundandparity,notarbitrarytargetknottype"
+    },
+    {
+      "path": "TRIPLE_BOUNDARY_RESIDUE_ONE_AND_NORMAL_ITERATED_EXCLUSION.md",
+      "bytes": 15652,
+      "sha256": "f1d141c5e0cc7eabd45a08225a7b90941adb5ca57bc8e7912181a629479ef818",
+      "source_kind": "sealed canonical predecessor",
+      "used_statement": "PF105retainedBorisovsmoothactualsourceboundaryresidueoneprimaryimport,notnewclaim"
+    }
+  ],
+  "written_unbounded_proofs": [
+    "PF109+OSS gives actualcontactplanar=>integralboundaryc1NONZERO",
+    "unique tightS3 and explicitstandarddiskopenbook excludeALLNORMALS3ends",
+    "PVHMfillrankboundpluswrittenexceptionalp4subsetmultiplicities=>r1/m0 forallorientedL(p,1)",
+    "smoothoneprimecanonicalthetaequalsreferencerotationtheta=>indexrangeandparity",
+    "ALLp>=3explicitA1torsorwholeplanecompactificationasF(p-2)minusamplepositivesection",
+    "ALLp>=3globallyregularprimitiveandexactplanecanonicalvolume,sharpk=p-2withoutfinitetarget"
+  ],
+  "deep_contact_and_filling_results_imported": true,
+  "independent_whole_classification_proofs": false,
+  "original_mcduff_and_erratum_retrieved": false,
+  "original_mcduff_and_erratum_attempt": "both AMS PDF URLs returned HTTP403;noauditclaimed;not needed for newp4rankproof",
+  "exceptional_p4_rank_bound_written_without_nonstandard_filling_uniqueness": true,
+  "all_circle_bundle_ends_excluded": false,
+  "all_spherical_ends_excluded": false,
+  "rational_boundary_Chern_zero_suffices": false,
+  "contact_planarity_inferred_from_graph": false,
+  "sharp_source_controls_are_actual_Keller_maps": false,
+  "global_finite_algebra_closed": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true
+}

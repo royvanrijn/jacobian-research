@@ -27,3 +27,8 @@ The [componentwise finite-trace deduction](DISCONNECTED_COMPACT_GROUPS.md)
 now settles disconnected compact Lie groups as well. Group-specific minimal
 representation degree remains outside these classifications. It changes no Gaussian or differential-operator
 dimension bound.
+
+The [spherical-pair extension](SPHERICAL_PAIRS_AND_COMPONENT_NULLCONES.md)
+uses Long's separate connected spherical classification and the retained
+finite-trace theorem. For disconnected acting groups, the Mathieu property
+and equality of moment-nullity with the group nullcone have different criteria.

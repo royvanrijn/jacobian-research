@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "source_sha256": "4bf15c19ea65ced0e829ff0e673f6453caa30d1a9712c2741f6404492ae4429b",
+  "files": {
+    "graph.json": "ded6b8742388b53672acf73541b2a90d9bf0109962de8a3a63536948cde047df",
+    "hyperbola-coordinate.json": "a2d06fea0d267017489219e8363d9527784eace1fc6a94341851595b1c701464",
+    "hyperbola1.json": "3c23bd9d75c9436e1fdd469fd1eceee2755317493640639740f946011392809c",
+    "hyperbola2.json": "5c9c81480eb411135e9587c86705e9c19096d8da832d01b8b447627b7031385b",
+    "outer.json": "996cb66a5f237573e99a707af6e94d9cb445d44a354eb5606835de50e68ac485",
+    "prior-evidence.json": "cbf75bdfcf0ad7691514650a62a757d59a8d9a665a2534d80c32a3fd337c046b",
+    "whole.json": "7281b28dbfd52ecd637cfecf5a3f906e5f497f63a8db7e5b9baf52d115e9c4b9"
+  },
+  "whole_atoms": 33,
+  "post_leading_parameters": 21,
+  "structural_determinants": 3,
+  "new_solver_queries": 0,
+  "seconds": 5.421880687004887
+}
