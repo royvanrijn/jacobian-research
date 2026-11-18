@@ -24,6 +24,7 @@ whole-vector primitive theorem.
 | Full -8 shell and whole-vector primitive counts | Liouville 1860; Deutsch 2004/2005 and 2008 | Explicitly classical, including the whole-vector dyadic obstruction 16. |
 | Möbius truncation, large-factor tail and singular-series completion | Brüdern 2014, Theorem 2, Lemmas 2,4,5 | Classical architecture; a new sieve method should not be claimed. |
 | Arbitrary fixed binary pair, each block primitive, every locally admissible target | Rouse/Waibel coefficient estimates plus the two-block sieve; no exact statement antecedent located | A useful application/deduction, with priority unresolved; no new theta theorem. |
+| All imaginary quadratic orders and invariance within fixed genera | The preceding arbitrary-binary-pair theorem and integral local isometries | Explicit class-group consequence, with no class-number restriction; an immediate corollary, not a new analytic input. |
 | Power saving | Waibel 2021 v2, published 2022, is stronger than the previously used Rouse bound | Now improved to \(O_\epsilon(N^{7/8+\epsilon})\), by specialization and target-gcd averaging. |
 | Linear same-field coordinate lower bound and mixed-field envelope | Exact local factors plus fixed-character Mertens | Immediate consequences once the asymptotic is proved. |
 | Distinct-value lower and upper bounds | Corrected Henriot 2014 plus Hölder | Now \(N/\log^{\log4+\epsilon}N\) below and \(N J_{12}(N)/\log N\) above; classical inputs, new application here. |
@@ -33,6 +34,33 @@ whole-vector primitive theorem.
 | Exact -11 identity | A few direct norm/quadratic-residue searches and known shell/Hecke antecedents | No priority assessment as strong as the -8 search; do not extend a negative search claim to it. |
 | Every-target unweighted leading asymptotic | Inspected general correlation theorems fail specific hypotheses | Still an independent obligation; no such asymptotic is established here. |
 | \(C_{12}+C_{12}\) | Two independent norm conditions per summand | Outside this quaternary theorem and unchanged by these applications. |
+
+## What the class-group conclusion establishes
+
+The canonical proof now states AdditiveClassDisappearance explicitly:
+for every fixed imaginary quadratic order of discriminant \(D<0\),
+its primitive principal norm self-sum consists of all pair-primitive
+locally admissible targets \(N\ge2\), apart from a finite exceptional
+set. This does not require a restriction on the class group. The
+sufficient local modulus is \(\prod_{p\mid2D}p^{2v_p(|D|)+1}\);
+conductor primes are included.
+
+GenusInvariantConvolution is a further immediate consequence. Replacing
+either binary form by an integral form in the same genus leaves
+every pair-primitive local density unchanged, hence leaves the full
+leading coordinate convolution unchanged. The difference is
+\(O_\epsilon(N^{7/8+\epsilon})\), and the two value sumsets differ
+by finitely many targets. This identifies what disappears: finer
+class obstructions within fixed genera. Local genus restrictions
+remain.
+
+These are explicit extractions of the already proved general
+quaternary deduction. They do not extend the prime-factor semigroup
+theorem to arbitrary class groups, and do not establish a matching
+general \(N/\log N\) unweighted lower bound or an unweighted leading
+asymptotic. The separate prime-discriminant and discriminant -56
+arguments supply sharper unweighted results in their stated scopes.
+No historical priority is asserted for these corollaries.
 
 ## Classical estimates actually applied
 

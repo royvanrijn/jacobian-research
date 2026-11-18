@@ -937,6 +937,69 @@ and strict Gram positivity, improving on the arbitrary Euler-factor
 test. It inflates the constant feature; the restricted proposal below
 does not require that operation.
 
+
+\subsection{Orthonormal homogeneous Gaussian features still do not suffice}
+The monomial structure cannot be replaced even by orthonormal homogeneous
+holomorphic features in Gaussian Fock space. Here is an exact counterexample
+to that proposed extension, without a new ordinary SFC claim.
+
+Let $Z_1,Z_2$ be independent circular complex Gaussians with
+$\mathbb E|Z_j|^2=1$, realized as $(G_j+iH_j)/\sqrt2$ in standard real
+Gaussians. Put
+\[
+ \mathbf v=(Z_1^2/\sqrt2,\ Z_1Z_2,\ Z_2^2/\sqrt2)^T,\qquad
+ u=\frac{1+i\sqrt7}{2\sqrt2},\quad v=\overline u,\qquad
+ C=\begin{pmatrix}0&u&0\\0&0&v\\1&0&0\end{pmatrix}.
+\]
+The entries of $\mathbf v$ are Fock-orthonormal. Since $|u|=|v|=uv=1$,
+one has $C^*C=I$ and $C^3=I$. For $\lambda=1,\omega,\omega^2$,
+where $\omega^3=1$, $\omega\ne1$, its orthonormal eigenvectors are
+\[
+ e_\lambda=(1,\lambda v,\lambda^2)^T/\sqrt3.
+\]
+Thus $p_\lambda=e_\lambda^*\mathbf v$ are three orthonormal homogeneous
+quadratic polynomials, and
+\[
+ P=\mathbf v^*C\mathbf v=\sum_{\lambda=1,\omega,\omega^2}
+                         \lambda|p_\lambda|^2.
+\]
+Every coefficient is nonzero. Nevertheless
+\[
+ (\mathbb EP,\mathbb EP^2,\ldots,\mathbb EP^6)
+       =(0,0,0,0,0,-259200).
+\]
+
+For a direct verification, set $X=|Z_1|^2$, $Y=|Z_2|^2$,
+$A=\overline Z_1Z_2$ and $r=1+i\sqrt7$. Expansion gives
+\[
+ P=\frac{(rX+\overline rY)A}{4}+\frac{\overline A^2}{2}.
+\]
+Rotation $Z_2\mapsto\omega Z_2$ sends $P$ to $\omega P$, so every
+moment whose index is not divisible by three vanishes. At index $3k$,
+only $2k$ copies of the first summand and $k$ of the second have
+balanced angular weight. The exact remaining moment is
+\[
+ \mathbb EP^{3k}
+ =\frac{\binom{3k}{k}}{32^k}
+   \sum_{j=0}^{2k}\binom{2k}{j}
+       r^j\overline r^{\,2k-j}(j+2k)!(4k-j)!.
+\]
+At $k=1$ this equals
+$[48(r^2+\overline r^2)+72r\overline r]\,3/32=0$,
+using $r\overline r=8$ and $r^2+\overline r^2=-12$.
+At $k=2$ the sum is $-17694720$, giving $-259200$.
+The checker independently expands the three Gaussian monomials of
+$P$ over $\mathbb Q(\sqrt{-7})$ and compares all six moments with
+the angular formula.
+
+This excludes a term-count theorem for arbitrary orthonormal homogeneous
+squared features. The $p_\lambda$ mix occupation-number monomials;
+their squares have angular cross terms. They are not the individual
+radial monomials $|Z^a|^2$ representing the ordinary factorial functional.
+Nor is a safe Gaussian phase constructed: no eventual marked vanishing
+is asserted. Such a transfer needs further structure; the individual occupation-number
+monomials supply the unresolved restriction here.
+
 \subsection{A discrete transfer scheme, with both obligations open}
 Write $\mathcal R(A,n)$ for projective regularity of the actual $s$
 forms $\Lfac((\sum_jc_jx^{a_j})^m)$, $n\le m<n+s$.
@@ -991,13 +1054,151 @@ transformed moment forms. That evaluation step is the outstanding
 obligation for this scheme; generic regularity or Gram positivity does
 not supply it.
 
+There is a faithful unweighted Gaussian interpolation for a row
+identification. For independent circular complex Gaussians $Z_1,Z_2$,
+put
+\[
+ X=|Z_1|^2,\qquad
+ Y_\rho=|\sqrt\rho Z_1+\sqrt{1-\rho}Z_2|^2,\quad0\le\rho\le1.
+\]
+Wick expansion first gives, for integers $p,q\ge0$,
+\[
+ \mathbb E X^pY_\rho^q
+ =\sum_{a=0}^q\binom qa^2\rho^a(1-\rho)^{q-a}(p+a)!(q-a)!
+ =p!q!\sum_{j=0}^{\min(p,q)}\binom pj\binom qj\rho^j.
+\]
+Indeed, after division by $p!q!$, use
+$\binom{p+a}{a}=\sum_j\binom pj\binom aj$ and the binomial theorem
+to sum $\binom qa\binom aj\rho^a(1-\rho)^{q-a}$ over $a$.
+At $\rho=0$ this is the independent source moment; at $\rho=1$
+Vandermonde's identity gives $(p+q)!$, exactly the merged row.
+This retains the integer port structure throughout the interpolation.
+It does not prove regularity preservation. Even monotonicity in the
+increasing direction fails for an actual collision-free frame:
+with features $X,Y_\rho T$, where $T$ is an independent exponential,
+\[
+ P_1=c_1+c_2,\quad
+ P_2=2c_1^2+2(1+\rho)c_1c_2+4c_2^2,\quad
+ \operatorname{Res}(P_1,P_2)=4-2\rho.
+\]
+The merged features $X,XT$ remain distinct and the endpoint resultant
+is positive. Controlling strict nonvanishing for the full consecutive
+block along this special coupling is still an open obligation.
+
+
+\section{An all-degree limit on infinitesimal polygon symmetries}
+A possible all-moment counterexample construction starts with a
+polynomial vector field preserving area on a simplex and seeks a
+polynomial eigenfunction with nonzero eigenvalue. Integration by parts
+would make every positive moment of that eigenfunction zero.
+The construction is excluded in every degree in the planar polygon case.
+
+For a real simple polygon $K$ of positive area, put
+$\mathcal I_K(f)=\int_K f\,dx\,dy$, and define
+\[
+ \mathfrak g_K=\{D\in\operatorname{Der}_{\C}\C[x,y]:
+                       \mathcal I_K(Df)=0\text{ for every }f\in\C[x,y]\}.
+\]
+No reality condition is imposed on the polynomial coefficients of $D$.
+
+\begin{proposition}\label{prop:polygon-no-eigenfunctions}
+For every $D\in\mathfrak g_K$ and every nonzero rational function
+$r\in\C(x,y)$ for which $k=Dr/r$ is polynomial, one has
+\[
+ \mathcal I_K(k)=0.
+\]
+In particular, no such derivation has a nonzero rational eigenfunction
+with a nonzero constant eigenvalue.
+\end{proposition}
+\begin{proof}
+First describe the preserving fields. For $D=P\partial_x+Q\partial_y$,
+integration by parts gives
+\[
+ \mathcal I_K(Df)
+  =-\int_K f(P_x+Q_y)\,dx\,dy
+      +\int_{\partial K} f(Pn_x+Qn_y)\,ds.
+\]
+If this vanishes for every polynomial, the finite complex measure on the
+right is zero: restrictions of polynomials are dense in the continuous
+functions on the compact polygon. Its interior and edge parts are
+mutually singular. Hence $P_x+Q_y=0$ and the normal component vanishes
+on every edge. Polynomial continuation makes these identities hold
+identically, respectively on the plane and on every supporting edge-line.
+Conversely these conditions imply preservation by the displayed formula.
+
+Every divergence-free polynomial field on the plane is
+\[
+ D_H=H_x\partial_y-H_y\partial_x
+\]
+for a polynomial $H$. Tangency to an edge-line $\ell=0$ means that
+$H$ restricts to a constant $h_\ell$ on that entire complex affine line.
+Factor $r=a\prod_f f^{m_f}$, with distinct irreducible polynomials
+$f$ and nonzero signed integers $m_f$. The identity
+\[
+ k=\frac{D_Hr}{r}=\sum_f m_f\frac{D_Hf}{f}
+\]
+has no poles. Distinct irreducible denominators cannot cancel at the
+generic point of $f=0$, so $f\mid D_Hf$. The function $H$ is constant,
+say $c_f$, on the irreducible curve $f=0$. Indeed, if $D_H$ restricts
+to a nonzero derivation of its function field, the constants of that
+derivation are $\C$; if it restricts to zero, $H_x,H_y$ both vanish
+on the curve, and $H$ is again constant there. Thus
+$H-c_f=f g_f$ with $g_f$ polynomial.
+
+The one-form
+\[
+ \eta=\sum_f m_f g_f\,df
+      =\sum_f m_f(H-c_f)\frac{df}{f}
+\]
+is polynomial, and the logarithmic derivative identity gives
+\[
+ d\eta=dH\wedge\frac{dr}{r}=k\,dx\wedge dy.
+\]
+On a supporting edge-line $\ell$, restriction of $f g_f=H-c_f$
+gives
+\[
+ (f|_\ell)(g_f|_\ell)=h_\ell-c_f.
+\]
+If this constant is nonzero, both factors are units in $\C[t]$,
+hence constant, so the pullback of $df$ vanishes. If it is zero,
+either $f$ is the edge-line factor, so $df$ pulls back to zero,
+or $\ell\mid g_f$, so $g_f\,df$ pulls back to zero.
+Therefore every summand of $\eta$ restricts to zero on every edge,
+including its endpoints by polynomial continuity. Stokes' theorem yields
+\[
+ \mathcal I_K(k)=\int_Kd\eta=\int_{\partial K}\eta=0.
+\]
+If $D_Hr=\lambda r$ with $\lambda\ne0$, this would say
+$\lambda\operatorname{Area}(K)=0$, a contradiction.
+\end{proof}
+
+For the standard triangle, every preserving Hamiltonian, after subtracting
+its common boundary value, is $H=xy(1-x-y)G$. Thus no polynomial $G$,
+including one with complex coefficients, can furnish a nonzero
+constant-cofactor eigenfunction for this construction. More generally, every polynomial Darboux cofactor is centered under
+$\mathcal I_K$, so their complex linear span contains no nonzero
+constant. The proof uses only constant polynomial units on affine
+edge-lines, with no arithmetic or degree restrictions.
+
+This is a restriction on the proposed mechanism, not FC or SFC.
+Moment vanishing need not arise from a polynomial eigenfunction.
+For example, on the unit disk every positive moment of
+$q=z+z^2$, $z=x+iy$, vanishes, but at $z=-1/2$ the differential $dq$
+is zero while $q=-1/4$. Hence no polynomial vector field can satisfy
+$Dq=\lambda q$ with $\lambda\ne0$. The disk also shows why the
+boundary geometry matters: $x\partial_y-y\partial_x$ preserves its
+area and has eigenfunction $z$ with eigenvalue $i$. Its complexified
+circular boundary has the nonconstant unit $z$, with inverse $x-iy$.
+General pure-null polynomial functions on triangles remain unexcluded.
+
 The self-contained
 \href{verify_unrestricted_sfc_mechanisms.py}{exact-control checker}
 verifies 31 instances of (1), 30 of (2), the Euler counterexample,
 finite-block coefficient identities and 32 instances of the toric
 degeneration formula, the complete exceptional-prime threshold table
 and rational controls for the four-maxima example and row-coalescence
-normalizations, and the rational positive-measure Borel counterexample,
+normalizations, the rational positive-measure Borel counterexample,
+and the six exact orthonormal-feature Gaussian moments,
 with corrupted-coefficient rejection. The all-index arguments, profile rigidity, minimality and automorphism
 rigidity are the written proofs, not consequences of finite tests. Independent specialist
 review, formal verification and a resolution of unrestricted SFC are not

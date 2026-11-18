@@ -244,6 +244,82 @@ def check_positive_frame_borel_controls():
     }
 
 
+def check_orthonormal_feature_extension_controls():
+    """Two exact moment calculations for a non-toric homogeneous phase."""
+    zero = (Fraction(0),Fraction(0))
+    one = (Fraction(1),Fraction(0))
+
+    def add(left, right):
+        return left[0]+right[0],left[1]+right[1]
+
+    def multiply(left, right):
+        # Pairs represent a+b*w with w^2=-7.
+        a,b = left
+        c,d = right
+        return a*c-7*b*d,a*d+b*c
+
+    def scale(value, coefficient):
+        coefficient = Fraction(coefficient)
+        return coefficient*value[0],coefficient*value[1]
+
+    def power(value, exponent):
+        result = one
+        for _ in range(exponent):
+            result = multiply(result,value)
+        return result
+
+    plus,minus = (Fraction(1),Fraction(1)),(Fraction(1),-Fraction(1))
+    assert multiply((Fraction(0),Fraction(1)),
+                    (Fraction(0),Fraction(1))) == (-7,0)
+    assert multiply(plus,minus) == (8,0)
+    # Exponent order is (Z1,Z2,barZ1,barZ2); E[Zj*barZj]=1.
+    phase = {(1,1,2,0):(Fraction(1,4),Fraction(1,4)),
+             (0,2,1,1):(Fraction(1,4),-Fraction(1,4)),
+             (2,0,0,2):(Fraction(1,2),Fraction(0))}
+
+    def polynomial_product(left, right):
+        result = {}
+        for a,co_a in left.items():
+            for b,co_b in right.items():
+                exponents = tuple(i+j for i,j in zip(a,b))
+                result[exponents] = add(result.get(exponents,zero),
+                                        multiply(co_a,co_b))
+        return {powers:co for powers,co in result.items() if co != zero}
+
+    def wick(polynomial):
+        result = zero
+        for (z1,z2,w1,w2),co in polynomial.items():
+            if z1 == w1 and z2 == w2:
+                result = add(result,scale(co,factorial(z1)*factorial(z2)))
+        return result
+
+    direct,angular = [],[]
+    polynomial = {(0,0,0,0):one}
+    for m in range(1,7):
+        polynomial = polynomial_product(polynomial,phase)
+        direct.append(wick(polynomial))
+        if m % 3:
+            angular.append(zero)
+            continue
+        r = m//3
+        balanced = zero
+        for j in range(2*r+1):
+            coefficient = comb(2*r,j)*factorial(2*r+j)*factorial(4*r-j)
+            term = multiply(power(plus,j),power(minus,2*r-j))
+            balanced = add(balanced,scale(term,coefficient))
+        angular.append(scale(balanced,Fraction(comb(3*r,2*r),32**r)))
+    expected = [zero]*5+[(-Fraction(259200),Fraction(0))]
+    assert direct == angular == expected
+    return {
+        "orthonormal_feature_extension_field":"Q(w), w^2=-7",
+        "orthonormal_feature_extension_moments":[0,0,0,0,0,-259200],
+        "orthonormal_feature_extension_angular_formula_agrees":True,
+        "orthonormal_feature_extension_scope":
+            ("Falsifies the orthonormal homogeneous holomorphic-feature extension "
+             "only, not ordinary SFC. The feature realization uses the written proof."),
+    }
+
+
 def check_diagonal_and_saddle_controls():
     a, b = [1,4,24], [1,6,72,720]
     assert [(-2*a[k] if k < 3 else 0)
@@ -588,6 +664,7 @@ def main():
     route_controls = check_diagonal_and_saddle_controls()
     gamma_controls = check_gamma_controls()
     borel_controls = check_positive_frame_borel_controls()
+    fock_controls = check_orthonormal_feature_extension_controls()
     ms=moments(32)
     for n in range(2,33):
         assert ms[n]-2*n*(2*n-1)*ms[n-1]+4*n*(n-1)*ms[n-2]==1
@@ -606,6 +683,7 @@ def main():
         "script_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         **gamma_controls,
         **borel_controls,
+        **fock_controls,
         **route_controls,
         **row_controls,
         "scope":("Exact finite recurrence, operator, arithmetic and saddle controls only; "

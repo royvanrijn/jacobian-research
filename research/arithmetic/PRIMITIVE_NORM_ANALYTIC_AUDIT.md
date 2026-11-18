@@ -554,3 +554,43 @@ verification, or an established novelty claim.
 
 
 The subsequent [novelty comparison](PRIMITIVE_NORM_NOVELTY.md) applies newer classical inputs and supersedes the earlier quantitative choices with eta<1/8 and the general distinct-value lower bound N/(log N)^(log4+epsilon). The Rouse-based derivation above remains a valid independent weaker route.
+
+## All orders and invariance within genera
+
+The subsequent core-proof audit reconstructed the actual Waibel
+application, the nonzero-block Möbius tail, the target-uniform
+absolute genus completion and the finite local criterion. It found
+no additional class-number or maximal-order hypothesis. The
+all-index coefficient bound is essential: a bound requiring the
+target coprime to the changing lattice level would not justify
+this proof. The Rouse-based route independently gives the same
+eventual-existence conclusion with a weaker power saving.
+
+AdditiveClassDisappearance and GenusInvariantConvolution in the
+canonical source make the class-group consequences explicit.
+For the integral-basis norm of any quadratic order,
+\(\det A=|D|\), and element primitivity is exactly coordinate
+primitivity, including at conductor primes. Thus the self-sum
+singular series is uniformly positive on the finite local residue
+test, yielding a finite exceptional set without a numerical onset.
+
+For genus mates, each integral local isometry is in
+\(\mathrm{GL}_2(\mathbb Z_p)\). It is a bijection modulo every
+prime power and preserves nonzero blocks modulo \(p\). Consequently
+all primitive local densities agree, as does the archimedean
+factor. Subtraction of the general asymptotics proves the stated
+\(O_\epsilon(N^{7/8+\epsilon})\) difference. The restriction to
+fixed genera matters: equal discriminant alone need not give equal
+local densities. Proper orientation imposes no extra condition
+on these coordinate representation counts.
+
+The existing canonical checker was replayed at its full default
+bound 256; the output is byte-identical to the retained receipt.
+This checks 3,282 good-prime residues, 68 lifted residues, 1,792
+binary Möbius cases and 1,020 double-Möbius targets, as well as the
+separately retained special-form certificates. These finite checks
+challenge normalizations; they do not prove the uniform estimates
+or the general corollaries. The corollaries are written deductions
+from the audited general theorem. This remains internal review,
+without external human review, formal verification or a priority
+claim.

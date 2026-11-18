@@ -7,7 +7,7 @@
   "proof_dependencies": [
     {
       "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-      "sha256": "b6eecfe31da3f1e594b14539a287a0946031b6a11f8c79888b6a65d617dac890",
+      "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
       "scope": "Use only the independent equations29-40a: theta/dyadic identities; class-one index-four Hurwitz order; all-ideal Hecke transfer with fixed2-adic operators; all-prime theorem with analytic2^22threshold; all inert cores m>=2^60; explicit N^(2/3)/4800count from N>=2^78. These do not use the exact identity now proved."
     },
     {

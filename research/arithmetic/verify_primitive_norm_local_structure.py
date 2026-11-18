@@ -61,6 +61,173 @@ def global_values(form, bound):
     return values
 
 
+
+def maximal_order_local_tables():
+    """Full finite parameter checks; the all-depth proof remains mathematical."""
+    def expect_rejection(action):
+        try:
+            action()
+        except AssertionError:
+            return
+        raise AssertionError("corrupted maximal-order local assertion accepted")
+
+    def dyadic_images(m, modulus):
+        if m % 4 == 3:
+            if (-m) % 8 == 1:
+                return set(range(modulus)), set(range(modulus))
+            odd = {n for n in range(modulus) if n % 2}
+            return odd, {n for n in range(modulus) if n % 2 == 0}
+        if m % 2:
+            vals = {n for n in range(modulus)
+                    if n % 4 == 1 or n % 8 == (m+1) % 8}
+            sums = {n for n in range(modulus)
+                    if n % 8 in {2,3,4,6,7}}
+            return vals, sums
+        k = m//2
+        vals = {n for n in range(modulus)
+                if n % 8 in {1,(1+2*k) % 8}
+                or n % 16 in {(2*k) % 16,(2*k+4) % 16}}
+        sums = ({n for n in range(modulus) if n % 16}
+                if k % 4 == 1 else set(range(modulus)))
+        return vals, sums
+
+    dyadic_rows = []
+    dyadic_sums = {}
+    modulus = 128
+    # Two ramified odd-m classes, four even-m classes, and both
+    # unramified dyadic splitting types, all with complete target domains.
+    for m in (1,5,2,6,10,14,3,7):
+        form = ((1,1,(m+1)//4) if m % 4 == 3 else (1,0,m))
+        counts = binary_counts(form,2,modulus)
+        vals = set(counts)
+        sums = residue_sumset(vals,modulus)
+        expected_vals,expected_sums = dyadic_images(m,modulus)
+        assert vals == expected_vals and sums == expected_sums, m
+        dyadic_sums[m] = sums
+        # The generic stabilization bound is at most 2^7 for all of
+        # these maximal-order forms. Verify the exact next-level count.
+        higher = binary_counts(form,2,2*modulus)
+        roots = [sum(counts[a]*counts[(n-a)%modulus]
+                     for a in range(modulus)) for n in range(modulus)]
+        high_roots = [sum(higher[a]*higher[(n-a)%(2*modulus)]
+                          for a in range(2*modulus))
+                      for n in range(2*modulus)]
+        assert all(high_roots[n] == 8*roots[n%modulus]
+                   for n in range(2*modulus)), m
+        dyadic_rows.append({
+            'squarefree_m':m,'fundamental_D':discriminant(form),
+            'form':list(form),'modulus':modulus,
+            'primitive_values':sorted(vals),'selfsum_residue_count':len(sums),
+            'next_level':2*modulus,'normalized_pair_densities_stabilize':True,
+        })
+
+    # Direct convolution for every negative fundamental discriminant
+    # through -800 challenges the parameter reduction independently.
+    fundamental = []
+    for m in range(1,801):
+        if any(m % (d*d) == 0 for d in range(2,isqrt(m)+1)):
+            continue
+        form = ((1,1,(m+1)//4) if m % 4 == 3 else (1,0,m))
+        D = discriminant(form)
+        if -D > 800:
+            continue
+        vals = set(binary_counts(form,2,modulus))
+        expected_vals,expected_sums = dyadic_images(m,modulus)
+        assert vals == expected_vals
+        assert residue_sumset(vals,modulus) == expected_sums
+        fundamental.append(D)
+    assert len(fundamental) == 245
+
+    odd_rows = []
+    density_cases = 0
+    sums_at_three = {}
+    for p in (3,5,7,11):
+        nonsquare = next(u for u in range(2,p) if prime_symbol(u,p) == -1)
+        for kappa in (1,nonsquare):
+            # These are local ramified models. They need not be globally
+            # maximal at other primes, which are not tested in this row.
+            form = (1,0,p*kappa)
+            mod = p**3
+            counts = binary_counts(form,p,mod)
+            vals = set(counts)
+            qr = {u*u % p for u in range(1,p)}
+            expected_vals = {
+                n for n in range(mod)
+                if n % p in qr
+                or (n % p == 0 and (n//p) % p
+                    and ((n//p)*pow(kappa,-1,p)) % p in qr)
+            }
+            assert vals == expected_vals
+            # Both valuation strata have exactly two unit square roots
+            # per free coordinate: the actual binary count is 2*p^3.
+            assert all(v == 2*mod for v in counts.values())
+            sums = residue_sumset(vals,mod)
+            if p == 3:
+                expected_sums = {
+                    n for n in range(mod)
+                    if n % p or n % 9 == (6*kappa) % 9
+                }
+                sums_at_three[kappa] = sums
+            elif p % 4 == 1:
+                expected_sums = set(range(mod))
+            else:
+                expected_sums = {n for n in range(mod) if n % (p*p)}
+            assert sums == expected_sums, (p,kappa)
+            # Independent closed ramified pair-density normalization,
+            # using only character counts in F_p; check every p^3 target.
+            eps = prime_symbol(-1,p)
+            density_table = []
+            for n in range(mod):
+                actual_pairs = sum((n-a) % mod in vals for a in vals)
+                actual = Fraction(4*actual_pairs,mod)
+                if n % p:
+                    expected = (Fraction(1)-Fraction(eps,p)
+                                -Fraction(2*(1+prime_symbol(n,p)),p*p))
+                elif n % (p*p):
+                    ch = prime_symbol((n//p)*pow(kappa,-1,p),p)
+                    expected = ((Fraction(2*(p-1),p) if eps == 1 else Fraction(0))
+                                +Fraction(p-2-eps-2*ch,p*p))
+                else:
+                    expected = Fraction(2*(p*p-1),p*p) if eps == 1 else Fraction(0)
+                assert actual == expected, (p,kappa,n,actual,expected)
+                assert (actual > 0) == (n in expected_sums)
+                if n < p*p:
+                    density_table.append(str(actual))
+                density_cases += 1
+            odd_rows.append({
+                'prime':p,'kappa':kappa,'form':list(form),'modulus':mod,
+                'primitive_value_count':len(vals),'selfsum_residue_count':len(sums),
+                'binary_count_on_each_allowed_value':2*mod,
+                'pair_density_by_target_mod_p2':density_table,
+            })
+
+    # These corruptions target precisely the delicate omitted cases.
+    expect_rejection(lambda: assert_equal_local(0 in dyadic_sums[2],True))
+    expect_rejection(lambda: assert_equal_local(0 in dyadic_sums[6],False))
+    expect_rejection(lambda: assert_equal_local(3 in sums_at_three[1],True))
+    expect_rejection(lambda: assert_equal_local(6 in sums_at_three[2],True))
+    p5 = next(row for row in odd_rows if row['prime']==5 and row['kappa']==1)
+    expect_rejection(lambda: assert_equal_local(p5['selfsum_residue_count'],125-5))
+    return {
+        'scope':'Finite parameter and normalization checks; full local images and all higher lifts are proved separately.',
+        'dyadic_modulus':modulus,'dyadic_parameter_rows':dyadic_rows,
+        'negative_fundamental_discriminants_checked':sorted(fundamental),
+        'fundamental_discriminant_bound':800,'fundamental_discriminant_count':245,
+        'odd_ramified_parameter_rows':odd_rows,
+        'odd_ramified_pair_density_targets_checked':density_cases,
+        'negative_controls':[
+            'allowing16-divisible targets for k1 rejected',
+            'excluding deep dyadic targets for k3 rejected',
+            'omitting the ramified3 unit quotient rejected',
+            'forgetting the kappa sign at3 rejected',
+            'forbidding25-divisibility at ramified5 rejected',
+        ],
+    }
+
+
+def assert_equal_local(actual,expected):
+    assert actual == expected
+
 def main():
     forms = [(1,0,1), (1,0,2), (1,0,5), (1,1,2),
              (1,1,3), (1,1,5), (2,1,3)]
@@ -251,6 +418,7 @@ def main():
     for k in range(3):
         at_most_three |= {(a+b)%8 for a in at_most_three for b in conductor_residues}
     assert 7 not in at_most_three
+    maximal_table = maximal_order_local_tables()
     receipt = {
         'scope':'Finite exact arithmetic checks; unrestricted local claims require the lifting proof.',
         'python':platform.python_version(),
@@ -267,6 +435,7 @@ def main():
         'exact_triple_sumset_regressions':triple_regressions,
         'universal_order_four_sharpness_residues':sorted(conductor_residues),
         'explicit_bad_factors':explicit_bad_factors,
+        'maximal_order_selfsum_parameter_checks':maximal_table,
         'outcome':'pass',
     }
     target = HERE/'primitive_norm_local_structure_checks.json'

@@ -70,6 +70,134 @@ eventual cutoff. Formula (2) does not determine the finite list of
 admissible exceptions or a numerical cutoff. The separate specialized
 \(-8\) sieve below supplies an explicit cutoff for that form.
 
+## Additive disappearance of class obstructions
+
+Here is the class-group consequence with no hypothesis on the class
+number. It concerns primitive elements in the rational-coordinate sense:
+an element of an order is primitive if it is outside
+\(m\mathcal O\) for every integer \(m>1\).
+
+**Corollary AdditiveClassDisappearance.** Fix any imaginary quadratic
+order \(\mathcal O_D\) of discriminant \(D<0\). In an integral basis
+\(1,\omega_D\), put
+\[
+ Q_D(x,y)=\operatorname{Norm}(x+y\omega_D),\qquad
+ P_D=\{Q_D(x,y)>0:\gcd(x,y)=1\}.
+\]
+Let \(\mathcal A_D\) be the set of integers \(N\ge2\) for which
+\(Q_D(z)+Q_D(w)=N\) has a solution over every \(\mathbb Z_p\), with
+both blocks outside \(p\mathbb Z_p^2\). Then there is a finite set
+\(E_D\subset\mathcal A_D\) such that
+\[
+                   P_D+P_D=\mathcal A_D\setminus E_D.       \tag{CG.1}
+\]
+The set \(\mathcal A_D\) is a union of residue classes, restricted to
+\(N\ge2\), modulo the explicit sufficient modulus
+\[
+             M_D=\prod_{p\mid2D}p^{\,2v_p(|D|)+1}.          \tag{CG.2}
+\]
+Each class is decided by finite enumeration of the pair-primitive
+congruences at the indicated prime powers. Thus ramification and the
+conductor are included in the criterion.
+
+For maximal orders, [PL3All](PRIMITIVE_NORM_LOCAL_STRUCTURE.md#the-complete-maximal-order-self-sum-criterion)
+gives the complete local set by a smaller closed congruence table,
+including the special residue condition at a ramified three.
+
+More precisely, the number \(R_D^*(N)\) of ordered coordinate
+representations with both pairs primitive satisfies, for every fixed
+\(\epsilon>0\),
+\[
+ R_D^*(N)=\frac{4\pi^2}{|D|}N\prod_p\beta_{D,p}^*(N)
+                       +O_{D,\epsilon}(N^{7/8+\epsilon}),  \tag{CG.3}
+\]
+and \(R_D^*(N)\gg_D N\) for every sufficiently large
+\(N\in\mathcal A_D\). In particular, for every fixed \(\epsilon>0\)
+there are \(\gg_{D,\epsilon}N^{1-\epsilon}\) distinct ordered value
+pairs on these targets. These are lower bounds; the coordinate
+asymptotic is not an unweighted value-pair asymptotic. No numerical
+cutoff or list of \(E_D\) is asserted by this general corollary.
+
+**Corollary GenusInvariantConvolution.** Fix primitive positive-definite
+integral binary forms \(Q_1,Q_2,Q'_1,Q'_2\), with \(Q_i\) and \(Q'_i\)
+in the same genus for \(i=1,2\). Then
+\[
+ R_{Q_1,Q_2}^*(N)-R_{Q'_1,Q'_2}^*(N)
+                    =O_{\mathbf Q,\epsilon}(N^{7/8+\epsilon}). \tag{CG.4}
+\]
+Their local admissible target sets are identical, and their primitive
+value sumsets differ by at most finitely many integers. For any fixed
+two genera, a single eventual threshold can be chosen for all pairs
+of form classes in those genera.
+
+**Proof.** A quadratic order has a basis giving
+\[
+ Q_D(x,y)=
+ \begin{cases}
+ x^2+xy+(1-D)y^2/4,&D\equiv1\pmod4,\\
+ x^2-(D/4)y^2,&D\equiv0\pmod4.
+ \end{cases}
+\]
+Both are primitive positive integral forms, and their Gram determinant
+is \(|D|\). Primitivity of the element is exactly primitivity of
+its two coordinates; a change of integral basis preserves it.
+The theorem (2), with its Waibel error proved below, gives (CG.3).
+The local criterion (4) gives (CG.2) and exact nonrepresentation
+outside \(\mathcal A_D\). For the self-sum all good-prime target
+ratios in (20b) exceed one, while admissible bad-prime densities have
+a uniform positive lower bound. Hence the singular series is bounded
+below by a positive constant depending only on \(D\). Taking, for
+example, \(\epsilon<1/8\) in (CG.3) proves the linear lower bound
+and the finiteness in (CG.1). The binary multiplicity bound (11),
+applied with exponent \(\epsilon/2\) in each block, converts this to
+the stated distinct-value lower bound.
+
+For (CG.4), local integral equivalence gives matrices
+\(U_{i,p}\in\mathrm{GL}_2(\mathbb Z_p)\) carrying \(Q_i\) to \(Q'_i\).
+Their reductions are bijections at every prime power and preserve
+nonzero blocks modulo \(p\). Thus every local density, including the
+bad-prime densities, agrees exactly. The Gram determinants agree as
+well. Subtract the two instances of (2); their entire main terms
+cancel. The common local criterion and eventual existence give the
+finite symmetric difference of sumsets. There are finitely many
+classes in each fixed positive-definite genus, so taking the maximum
+of their finitely many thresholds proves the last assertion.
+\(\square\)
+
+There is also a direct proof of (CG.4) before singular-series
+completion. For every Möbius divisor pair \(d,e\), the scaled
+quaternary forms \(d^2Q_1\oplus e^2Q_2\) and
+\(d^2Q'_1\oplus e^2Q'_2\) remain locally isometric, so their genus
+coefficients cancel exactly. Truncate the two Möbius sums at
+\(d,e\le H\). The large-gcd tails cost \(O(N^{1+\epsilon}/H)\),
+the removed zero blocks \(O(H^2N^\epsilon)\), and the total cusp
+difference costs
+\(O(N^{1/2+\epsilon}H^{3+\epsilon}
+      +N^{3/4+\epsilon}H^{1+\epsilon})\).
+Taking \(H=N^{1/8}\) proves (CG.4) directly. Thus genus invariance
+does not require a separate class-group equidistribution estimate.
+
+This proves that finer ideal-class obstructions within a genus do
+not persist in these additive existence problems, and do not change
+the leading coordinate count. Genus restrictions remain in the
+local factors. The conclusion allows arbitrary class groups, mixed
+form classes and nonmaximal orders; it does not require converting
+principal norm values into a prime-factor semigroup. It is a
+corollary of the established quaternary deduction, rather than a new
+distribution theorem for class-group characters. The precise
+classical attribution and limits of the literature search are
+recorded in [the novelty comparison](PRIMITIVE_NORM_NOVELTY.md).
+
+For a concrete class obstruction, the
+[discriminant -23 criterion](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md)
+shows that \(2^{3a+1}\), \(a\ge0\), is locally a primitive norm
+everywhere but is never a global primitive principal norm: the
+prime above \(2\) has ideal class of order three, and a primitive
+power must use a single orientation. Nevertheless every
+sufficiently large member of this sequence is a sum of two
+primitive principal norms. Its only additive local condition is
+\(23^2\nmid N\), by PL3All, and powers of two always satisfy it.
+
 ## Exact good-prime factors
 
 For \(p\notin S\), set

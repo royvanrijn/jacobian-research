@@ -192,6 +192,156 @@ their sumset is `{2,3,4,6,7}`. Every root lifts by changing an odd
 coordinate by `2^(k-1)` for `k>=3`, since both diagonal coefficients
 are odd. All remaining odd primes are covered by PL2. QED.
 
+### The complete maximal-order self-sum criterion
+
+**Corollary PL3All.** Let \(D<0\) be a fundamental discriminant
+and \(Q_D\) the principal integral-basis norm of its maximal order.
+A positive target \(N\) is a sum of two primitive \(Q_D\)-values
+over every \(\mathbb Z_p\) if and only if all applicable conditions
+below hold:
+
+* For every odd \(p\mid D\) with \(p\ge7\) and
+  \(p\equiv3\pmod4\), require \(p^2\nmid N\).
+* If \(3\mid D\), put \(\kappa=-D/3\bmod3\), a nonzero residue.
+  Require \(3\nmid N\) or \(N\equiv6\kappa\pmod9\).
+* At two, impose the condition in this table.
+
+| Fundamental discriminant | Exact condition at two |
+|---|---|
+| \(D\) odd, \(D\equiv1\pmod8\) | none |
+| \(D\) odd, \(D\equiv5\pmod8\) | \(N\) even |
+| \(D=-4m\), \(m\) odd and squarefree, \(m\equiv1\pmod4\) | \(N\bmod8\in\{2,3,4,6,7\}\) |
+| \(D=-8k\), \(k\) odd and squarefree, \(k\equiv1\pmod4\) | \(16\nmid N\) |
+| \(D=-8k\), \(k\) odd and squarefree, \(k\equiv3\pmod4\) | none |
+
+Odd ramified primes \(p\equiv1\pmod4\) impose no sum condition.
+There are no other local conditions. In particular the table covers
+every allowed higher target valuation, without a valuation cutoff.
+
+A sufficient exact admissibility modulus is the product of the
+dyadic modulus \(1,2,8\) or \(16\) in the table, the factor \(9\)
+if \(3\mid D\), and \(p^2\) for each ramified
+\(p\ge7\), \(p\equiv3\pmod4\). This modulus need not be minimal.
+
+**Proof at odd primes.** Write \(Q=x^2+bxy+cy^2\), with
+\(b=0\) or \(1\). At an odd ramified \(p\), put
+\(\kappa_p=-D/p\in\mathbb Z_p^\times\). Then
+\[
+                 4Q=(2x+by)^2+p\kappa_p y^2.
+\]
+The exact primitive norm image consists of unit values with square
+residue, and valuation-one values whose unit quotient is in
+\(\kappa_p(\mathbb F_p^\times)^2\). Necessity follows from the
+displayed equation and \(v_p(D)=1\). Sufficiency follows from
+\[
+             Q(t,0)=t^2,\qquad Q(-bt,2t)=p\kappa_p t^2,
+\]
+and square-root lifting for units. These are full \(p\)-adic value
+sets, rather than necessary residue restrictions.
+
+Put \(R=(\mathbb F_p^\times)^2\), and write \(\chi_p\) for the
+Legendre symbol. For \(t\ne0\),
+\[
+ C_p(t):=\#\{(a,c)\in R^2:a+c=t\}
+            =\frac{p-2-\chi_p(-1)-2\chi_p(t)}4.             \tag{PL3A.1}
+\]
+Indeed \(X^2+Y^2=t\) has \(p-\chi_p(-1)\) roots: the identity
+\((X-Y)(X+Y)=t\) gives
+\(\sum_X\chi_p(X^2-t)=-1\). Remove its four axis roots when
+\(t\) is a square, then divide by four.
+
+Every unit target is a sum of two primitive norms. If its residue
+is square, use the ramified value \(p\kappa_p\) and the unit
+square \(N-p\kappa_p\). If it is nonsquare, (PL3A.1) is positive;
+choose two unit-square residues, fix the first unit norm, and
+lift the second square root. For \(p\equiv1\pmod4\) and
+\(p\mid N\), the unit values \(1\) and \(N-1\) suffice,
+since \(-1\) is square modulo \(p\). This includes every
+target valuation.
+
+For \(p\equiv3\pmod4\), two unit norms cannot sum to a
+multiple of \(p\). Such a sum therefore has two valuation-one
+summands. Their quotients lie in \(\kappa_p R\) and cannot
+cancel modulo \(p\), excluding \(p^2\mid N\). If \(N=pM\)
+has valuation one, solubility is equivalent to
+\(C_p(M/\kappa_p)>0\). For \(p\ge7\) this holds for every
+nonzero residue, since its minimum is \((p-3)/4>0\).
+For \(p=3\), the only element of \(R\) is \(1\), so the
+condition is \(M/\kappa_p\equiv2\pmod3\), precisely
+\(N\equiv6\kappa_p\pmod9\). The exact norm images already
+proved supply every higher digit in these cases.
+
+At unramified odd primes, a split local algebra permits every
+primitive norm value, using the two factors \(1,n\). An inert
+local algebra permits exactly the units; surjectivity of the
+finite-field norm and nonsingular lifting prove sufficiency.
+Two units sum to any target when \(p\ge3\), by choosing a
+nonzero residue different from \(N\bmod p\). Thus these
+primes impose no sum condition.
+
+**Proof at two.** If \(D\) is odd, write
+\(Q=x^2+xy+c y^2\). For even \(c\), primitive vectors
+attain both residues modulo two; for odd \(c\), all three
+nonzero vectors have norm one. At a primitive vector the
+gradient has an odd component. Consequently every selected
+root lifts to every value with its parity. These are,
+respectively, all of \(\mathbb Z_2\) when
+\(D\equiv1\pmod8\), and exactly its odd units when
+\(D\equiv5\pmod8\).
+
+Recall that an odd \(2\)-adic unit is square if and only if it
+is \(1\bmod8\). Sufficiency follows directly by lifting an
+odd root modulo \(2^h\): changing it by \(2^{h-1}\) toggles
+the next square bit, for every \(h\ge3\).
+
+For \(D=-4m\), with \(m\) odd, one necessarily has
+\(m\equiv1\pmod4\) and \(Q=x^2+m y^2\). Opposite-parity
+coordinates give exactly the full unit classes \(1\bmod4\):
+choose \(y=0\) or \(2\) and solve for \(x\) using the
+square-unit criterion. Two odd coordinates give exactly the
+full class \(m+1\bmod8\): fix \(y=1\) and solve
+\(x^2=n-m\). Hence the complete primitive value image is
+\[
+           \{n:n\equiv1\pmod4\}\ \cup\
+           \{n:n\equiv m+1\pmod8\}.
+\]
+Its residues modulo eight are \(\{1,5,2\}\) or
+\(\{1,5,6\}\). In either case their self-sum is exactly
+\(\{2,3,4,6,7\}\bmod8\).
+
+For \(D=-8k\), with \(k\) odd, the form is
+\(Q=x^2+2k y^2\). Odd norms have \(x\) odd, giving exactly
+the full classes \(1,1+2k\bmod8\), by fixing \(y=0\)
+or \(1\). For an even primitive norm, write \(x=2z\);
+then \(y\) is odd and
+\[
+                         n/2=2z^2+k y^2.
+\]
+These quotients are \(k\) or \(k+2\bmod8\). Conversely,
+fixing \(z=0\) or \(1\) gives a square-unit equation for
+\(y\) in each class. Thus the exact even norm classes are
+\(2k,2k+4\bmod16\). The complete residue algebra is:
+
+| \(k\bmod8\) | Primitive norm residues modulo sixteen | Self-sum |
+|---|---|---|
+| 1 | \(\{1,2,3,6,9,11\}\) | all except 0 |
+| 3 | \(\{1,6,7,9,10,15\}\) | all |
+| 5 | \(\{1,3,9,10,11,14\}\) | all except 0 |
+| 7 | \(\{1,2,7,9,14,15\}\) | all |
+
+Every value class used here contains all its higher \(2\)-adic
+lifts. Adding two full residue classes gives a full target
+residue class. Thus the finite residue algebra proves the
+all-depth assertion; no extrapolation from a finite search is
+needed. This completes the local classification. \(\square\)
+
+By [AdditiveClassDisappearance](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md#additive-disappearance-of-class-obstructions),
+every sufficiently large target in this explicit local set is
+a sum of two positive primitive norms. The exceptional locally
+admissible targets form a finite set depending on \(D\); this
+corollary does not enumerate it. For nonmaximal orders, PL1--PL2
+supply the conductor-sensitive local test instead of PL3All.
+
 **Global counterexamples.** Local admissibility alone is not an exact
 all-target theorem. For discriminant `-7`, the target `7` is locally
 admissible, but the primitive positive values at most six are exactly

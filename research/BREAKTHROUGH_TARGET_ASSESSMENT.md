@@ -647,6 +647,14 @@ moment forms that cease to be regular after a factorial Borel transform.
 Both the original and transformed measures have strict polynomial Gram
 positivity. These are proof-route obstructions, not SFC counterexamples.
 
+Even Fock orthogonality and homogeneous holomorphic features do not
+replace the actual monomials. An exact three-feature example with
+nonzero coefficients has its first five Gaussian moments zero and
+sixth moment -259200. Its features mix occupation-number monomials
+and have angular cross terms. This falsifies that broader transfer,
+while leaving ordinary SFC open.
+
+
 **Single obstruction.** Exclude a common nonzero projective zero of s
 consecutive homogeneous moment forms uniformly over arbitrary exponent
 matrices and every starting n. A concrete discrete transfer scheme would
@@ -660,6 +668,22 @@ feature and therefore does not refute the restricted first statement.
 The missing step must retain joint integer-toric moment structure:
 Stein conjugation of differential operators does not yet yield exactness
 of the multiplication Koszul complex after evaluation on the vacuum.
+A faithful row-identification interpolation is available through squared
+moduli of two correlated complex Gaussians: its moments are
+p!q! sum_j binom(p,j)binom(q,j)rho^j, with independent and identified
+rows at rho=0 and rho=1. It retains the integer Wick couplings but
+does not yet supply strict nonvanishing of the consecutive resultant.
+
+An all-moment alternative was tested through polynomial infinitesimal
+symmetries of a simplex. It is now excluded in every degree for planar
+polygons: every polynomial derivation preserving the entire uniform
+polygon integral has no nonzero constant eigenvalue on rational
+functions, even with complex coefficients. More generally, every rational
+logarithmic derivative Dr/r that is polynomial has integral zero.
+Its polynomial logarithmic primitive vanishes on each edge; Stokes
+therefore excludes a nonzero constant cofactor. This closes the entire constant-cofactor Hamiltonian construction
+on the triangle, not the general triangle moment problem.
+Positive-moment vanishing alone does not provide such an eigenfunction.
 
 **Impact test.** General SFC would imply FC in every dimension and supply
 a support-independent consecutive-window principle. The existing rigidity

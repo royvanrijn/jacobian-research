@@ -432,5 +432,24 @@
       ],
       "inspection_scope": "Actual primary definition and introduction inspected internally; no transfer of its primitive condition to the two-block condition."
     }
-  ]
+  ],
+  "class_group_corollaries": {
+    "proof": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
+    "locators": [
+      "AdditiveClassDisappearance; CG.1-CG.3",
+      "GenusInvariantConvolution; CG.4 and proof"
+    ],
+    "scope": "Every fixed imaginary quadratic order, with arbitrary class group: primitive norm self-sum equals its finite-residue local admissible set apart from finitely many exceptions. Within fixed genera, replacing either binary form leaves the entire leading coordinate convolution unchanged, with difference O_epsilon(N^(7/8+epsilon)).",
+    "local_modulus": "Product over p dividing 2D of p^(2 v_p(abs(D))+1); sufficient and enumerable, not necessarily minimal.",
+    "proof_inputs": "The existing arbitrary-binary-pair theorem, integral-basis norm determinant abs(D), GL_2(Z_p) invariance of nonzero blocks, and positive same-field local factors. No additional class-group distribution theorem is imported.",
+    "replay": "Root replay of the unchanged canonical checker at default bound256 is byte-identical to retained primitive_norm_quaternary_checks.json, SHA256 f468db83ad53190f5cf1327f4ab142de8726a2701d98116a95ecfbe2b31f9737. This is finite normalization evidence only.",
+    "limits": "No numerical general cutoff, computed complete general exception lists, unweighted leading asymptotic, matching arbitrary-class N/logN lower bound, historical priority, external review or formal verification.",
+    "maximal_order_local_table": {
+      "proof": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
+      "locator": "PL3All and PL3A.1; full odd-prime and dyadic value images",
+      "scope": "Complete primitive self-sum local conditions for every negative fundamental discriminant. Odd ramified p>=7,p=3mod4 exclude p^2|N; ramified3 requires3 not dividingN or N=6*(-D/3)mod9; ramified p=1mod4 imposes no condition. The dyadic cases depend only on oddDmod8 or the squarefree parameter inD=-4m or-8k.",
+      "proof_method": "Exact local value cosets, elementary nonzero-square pair count, square-root lifting, and exhaustive residue algebra for four dyadic parameter classes. The finite checker supplements, rather than replaces, the lifting proof.",
+      "nonmaximal_orders": "Retain the full conductor-sensitive finite test; do not transfer the maximal-order valuation rules to conductor primes."
+    }
+  }
 }

@@ -36,16 +36,23 @@ Its explicit value-pair bound \(N^{2/3}/4800\) holds for eligible
 
 The general [quaternary deduction](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md)
 also proves eventual local-global existence for arbitrary fixed binary
-form pairs. This broader eventual theorem and the two exact identities
+form pairs. This broader eventual theorem and the three exact classifications
 have different scopes.
 
-The analogous equality of local and global sets fails already for
-\(D=-7\) and \(D=-19\). For example, 7 is locally admissible for
-\(x^2+xy+2y^2\), but its only primitive positive values at most 7 are
-\(1,2,4,7\), and no two sum to 7. Likewise, 4 is locally admissible for
-\(x^2+xy+5y^2\), but its only primitive positive value at most 4 is 1.
-These are actual counterexamples to exact local-global identities,
-not just failures of a search procedure.
+The discriminant \(-7\) classification is now also proved exactly:
+\[
+ P_{-7}+P_{-7}=\{N\ge2:49\nmid N\}\setminus\{7,77,203\}.
+\]
+The [complete -7 proof](PRIMITIVE_NORM_MINUS7_EXACT.md) proves the
+stronger core identity \(C+C=\{n\ge2:7\nmid n\}\setminus\{11,29\}\).
+It joins full finite coverage through \(2^{24}\), 257 complete rational
+intervals, 17 higher dyadic bins and the infinite core/prime bounds.
+Exceptional-quotient descent and ramified scaling close every target.
+Its value-pair bound \(N^{2/3}/20000\) holds for eligible \(N\ge2^{69}\).
+
+Exact local-global equality also fails for \(D=-19\): 4 is locally
+admissible for \(x^2+xy+5y^2\), but its only primitive positive value
+at most 4 is 1. The remaining global exception lists below are open.
 
 ## Reproducible bounded classification
 
@@ -86,8 +93,9 @@ Their sizes and largest elements are:
 
 The assertions about individual exceptions remain true without the
 upper-bound qualification: e.g. \(380\notin P_{-19}+P_{-19}\).
-The assertion that these lists have no further members is bounded by
-\(10^6\). In particular, none of the maxima is a proved global cutoff.
+For \(-19,-43,-67,-163\), the assertion that the lists have no further
+members is bounded by \(10^6\); their maxima are not proved global cutoffs.
+The \(-7\) exception list is globally complete by the separate proof above.
 
 The checker is
 [verify_primitive_norm_exact_sumsets.py](verify_primitive_norm_exact_sumsets.py).
@@ -139,8 +147,8 @@ through 16 against hand lists.
 
 ## Remaining exact obligations
 
-The -8 and -11 identities are proved in their linked canonical sources.
-For -7,-19,-43,-67,-163 the bounded exception lists below remain globally
+The -7, -8 and -11 classifications are proved in their linked canonical sources.
+For -19,-43,-67,-163 the bounded exception lists below remain globally
 unclassified: an effective cutoff and complete finite coverage are still
 needed. Increasing a scan bound without a completion argument does not
 prove that those lists have no further members.

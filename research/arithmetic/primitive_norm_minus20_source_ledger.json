@@ -16,7 +16,7 @@
   "proof_dependencies": [
     {
       "path": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
-      "sha256": "b9df19e8aab65b6c074f5f92da5113c33f32a9dc731f6a6d554192a23e5914a2",
+      "sha256": "b86c23b42944cd5831cc24cab9cd60c45525dd8a8172209f20088c2a48165888",
       "scope": "PL4 complete primitive x^2+5y^2 class-number-two criterion; PL3 local additive residue set."
     },
     {
