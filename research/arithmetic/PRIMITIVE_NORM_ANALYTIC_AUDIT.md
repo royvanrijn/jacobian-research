@@ -15,13 +15,13 @@ proved improvements. Equation references retain its original numbering.
 | Investigation | Finding and status |
 |---|---|
 | General asymptotic | Supported by the exact all-index source estimate; no failed hypothesis identified in (13)--(20). |
-| Exponent | Proved for every fixed \(0<\eta<1/18\), including \(1/20\), with the same analytic input. |
+| Exponent | The original Rouse route gives every eta<1/18; the subsequent Waibel application now gives every eta<1/8, including1/9; see the novelty comparison. |
 | Normalization | \(4\pi^2/\sqrt{\det A}\) is correct for \(Q=x^{\mathsf T}Ax/2\); the displayed Rouse Section 3 prefactor is inconsistent with that convention. |
 | Finite local test | Valid at arbitrary target valuations; the maximum determinant valuation can even be replaced by the minimum. |
 | Effective -8 specialization | The class number, normalization, dyadic factorization and normalizer average reconstruct correctly under the identified classical spectral imports. |
 | Exact -8 classification | Open in the reviewed revision; the contemporaneous exact proof now passes the proof/completeness audit and full finite replay described below. |
-| Stronger consequences | Same-field linear counts, distinct-field square-root log-log loss, and logarithmic distinct-value lower bounds are proved below. |
-| Novelty | Method and imports are classical; priority for the exact arbitrary-binary-pair theorem remains unestablished. |
+| Stronger consequences | Same-field linear and distinct-field square-root log-log coordinate bounds; subsequent corrected-Henriot application strengthens value-pair counts to N/log^(log4+epsilon)N and gives the NJ12/logN upper bound. |
+| Novelty | See the thorough follow-up comparison: classical shell counts and methods, a modest arbitrary-pair deduction, and exact -8 classification as the main unverified-priority candidate. |
 
 ## Exact analytic input and hypothesis audit
 
@@ -551,3 +551,6 @@ identified classical spectral imports. There is no remaining
 unexhausted finite obligation for this identity. This addendum is an
 internal audit and replay, not external human review, formal
 verification, or an established novelty claim.
+
+
+The subsequent [novelty comparison](PRIMITIVE_NORM_NOVELTY.md) applies newer classical inputs and supersedes the earlier quantitative choices with eta<1/8 and the general distinct-value lower bound N/(log N)^(log4+epsilon). The Rouse-based derivation above remains a valid independent weaker route.

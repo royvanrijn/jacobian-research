@@ -190,7 +190,140 @@ def check_diagonal_and_saddle_controls():
     }
 
 
+
+def gamma_resultant_probe():
+    """One exact diagnostic; run under Sage, not the default stdlib mode."""
+    from sage.all import PolynomialRing, QQ, matrix, factorial, binomial, prod
+    from sage.env import SAGE_VERSION
+
+    ring = PolynomialRing(QQ, "x")
+    x = ring.gen()
+    polys = PolynomialRing(ring, names=("z", "b", "c"))
+    z,b,c = polys.gens()
+    variables = (z,b,c)
+    degrees = (2,3,4)
+
+    def mu(k):
+        return prod(1+h*x for h in range(k))
+
+    def moment(m):
+        value = polys.zero()
+        for k0 in range(m+1):
+            for k1 in range(m-k0+1):
+                k3 = m-k0-k1
+                coefficient = factorial(m)//(
+                    factorial(k0)*factorial(k1)*factorial(k3))
+                value += coefficient*z**k0*b**k1*c**k3*mu(k1+3*k3)
+        return value
+
+    forms = tuple(moment(d) for d in degrees)
+    total_degree = sum(degrees)-len(degrees)+1
+    monomials = [z**a*b**bb*c**(total_degree-a-bb)
+                 for a in range(total_degree,-1,-1)
+                 for bb in range(total_degree-a,-1,-1)]
+    rows, nonreduced = [], []
+    for row_index, monomial in enumerate(monomials):
+        exponents = monomial.exponents()[0]
+        choices = [i for i in range(3) if exponents[i]>=degrees[i]]
+        assert choices
+        i = choices[0]
+        row_form = polys(monomial//variables[i]**degrees[i])*forms[i]
+        rows.append([row_form.monomial_coefficient(column)
+                     for column in monomials])
+        if len(choices)>=2:
+            nonreduced.append(row_index)
+    macaulay = matrix(ring,rows)
+    extraneous = macaulay.matrix_from_rows_and_columns(nonreduced,nonreduced)
+    numerator, denominator = macaulay.det(), extraneous.det()
+    assert denominator != 0
+    full = ring(numerator/denominator)
+    assert numerator == denominator*full
+    assert (macaulay.nrows(),extraneous.nrows()) == (36,10)
+
+    # Independent dehomogenized binary quartic invariants.
+    binary = PolynomialRing(ring,"B")
+    B = binary.gen()
+    raw = [binary(1)] + [
+        sum(binomial(r,j)*B**(r-j)*mu(r+2*j) for j in range(r+1))
+        for r in range(1,5)]
+    m1,m2,m3,m4 = raw[1:]
+    k2 = m2-m1*m1
+    k3 = m3-3*m2*m1+2*m1**3
+    k4 = m4-4*m3*m1-3*m2*m2+12*m2*m1*m1-6*m1**4
+    invariant_i = k4+6*k2*k2
+    invariant_j = k2*k4+2*k2**3-k3*k3
+    assert invariant_i == m4-4*m1*m3+3*m2*m2
+    assert (invariant_i.degree(),invariant_j.degree()) == (4,6)
+    independent = ring(invariant_i.resultant(invariant_j))
+    assert independent == full
+
+    fixed_factor = (x**36*(1+x)**10*(1+2*x)**6*(1+3*x)**3
+                    *(1+4*x)**2*(1+5*x)**2)
+    content = 60183678025728
+    residual = ring(full/(content*fixed_factor))
+    assert full == content*fixed_factor*residual
+    assert (full.degree(),full.valuation(),len(full.dict())) == (82,36,47)
+    assert (residual.degree(),len(residual.dict())) == (23,24)
+    assert all(co>0 and co.denominator()==1 for co in full.coefficients())
+    assert all(co>0 and co.denominator()==1 for co in residual.coefficients())
+    encoded = json.dumps([str(full[i]) for i in range(83)],
+                         separators=(",",":")).encode("ascii")
+    coefficient_hash = hashlib.sha256(encoded).hexdigest()
+    assert coefficient_hash == (
+        "2068938a73802314aea04764fb8fc5d62ae5d198d3d5e660bcf380bfd6ee84a0")
+    print(json.dumps({
+        "status":"PASS_exact_single_diagnostic_only",
+        "input":{"A":[[0,1,3]],"s":3,"n":2,"window":[2,3,4]},
+        "sage_version":SAGE_VERSION,
+        "macaulay_matrix_size":36,
+        "extraneous_matrix_size":10,
+        "independent_binary_resultant_equal":True,
+        "normalization_scalar":1,
+        "degree":82,
+        "positive_coefficients":47,
+        "negative_coefficients":0,
+        "coefficient_sha256":coefficient_hash,
+        "ordinary_value":str(full(1)),
+        "script_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "scope":("One falsification diagnostic only. No all-support coefficient "
+                 "positivity or unrestricted SFC theorem is established.")
+    },indent=2))
+
+
+
+def check_row_coalescence_controls():
+    def mu(k, x):
+        return prod(1+h*x for h in range(k))
+
+    count = 0
+    for q in (2,3):
+        for u in (0,1,4):
+            for x in (Fraction(1,3),Fraction(2)):
+                grouped = prod((1+r*x)**u*mu(u,q*x/(1+r*x))
+                               for r in range(q))
+                assert mu(q*u,x) == grouped
+                count += 1
+    x = Fraction(1,3)
+    assert mu(4,x) != prod((1+r*x)**2*mu(2,x/(1+r*x))
+                           for r in range(2))
+    # Nonnegative coefficients are needed for nonzero preservation.
+    for x in (Fraction(1,3),Fraction(2)):
+        y0,y1 = 2*x,2*x/(1+x)
+        assert y0-y1-y0*y1/2 == 0
+    # A nonprimitive row really can split; this does not test the all-index proof.
+    for k in range(9):
+        assert rising(1,2*k) == 4**k*rising(Fraction(1,2),k)*rising(1,k)
+    assert rising(1,2) != rising(1,2)**2
+    return {
+        "row_grouping_normalization_controls":count,
+        "nonprimitive_factorization_controls":9,
+        "corrupt_row_grouping_factor_rejected":True,
+        "mixed_sign_specialization_can_vanish":True,
+    }
+
+
 def main():
+    row_controls = check_row_coalescence_controls()
     route_controls = check_diagonal_and_saddle_controls()
     gamma_controls = check_gamma_controls()
     ms=moments(32)
@@ -211,10 +344,19 @@ def main():
         "script_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         **gamma_controls,
         **route_controls,
+        **row_controls,
         "scope":("Exact finite recurrence, operator, arithmetic and saddle controls only; "
                  "all-index proofs are written. Neither finite-block nor "
                  "ordinary unrestricted SFC is established.")
     },indent=2))
 
 if __name__=="__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--gamma-resultant-probe",action="store_true",
+                        help="Exact single-case Sage diagnostic; requires Sage Python")
+    args = parser.parse_args()
+    if args.gamma_resultant_probe:
+        gamma_resultant_probe()
+    else:
+        main()

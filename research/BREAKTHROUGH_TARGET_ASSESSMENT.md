@@ -623,6 +623,31 @@ stronger assertion, not a completed reduction to a known theorem. The
 needed global positive expansion is missing; total positivity of the
 underlying moment kernel is false even for three linear monomials.
 
+The exact diagnostic for support {0,1,3} and window 2,3,4 passes:
+a full Macaulay determinant quotient and a separate quartic-invariant
+resultant agree, with all 47 nonzero dispersion coefficients positive.
+The optional Sage replay is retained in the existing mechanism checker.
+This is one falsification diagnostic, not a universal theorem. Connected
+row-permutation diagrams give nonnegative joint-cumulant coefficients
+for every support, but do not control the alternating resultant.
+Triangular moment-to-cumulant replacements retain the full block only
+when its starting index is one. The next useful step is a global
+cancellation or strictness identity that handles arbitrary starting
+indices; enlarging the diagnostic panel would not prove it.
+
+There is now a uniform reduction for the stronger Gamma coefficient
+assertion. Gauss grouping and a resultant degree bound preserve
+coefficient nonnegativity and nonzero under coalescing duplicate rows,
+so it is enough to treat primitive nonzero exponent rows in arbitrary
+dimension. The exact scope uses raw resultants and independent positive
+Gamma parameters. A written rigidity lemma also proves that any fixed
+finite positive Gamma-product identity on the entire moment lattice
+must keep all exponent rows parallel. For a primitive integer row,
+the factorization is completely trivial. This prevents further removal
+of arbitrary primitive profiles by that uniform factorization method.
+These are method results, not a resolution of SFC; the missing
+cancellation must handle the primitive coupled profiles directly.
+
 **Single obstruction.** Exclude a common nonzero projective zero of s
 consecutive homogeneous moment forms uniformly over arbitrary exponent
 matrices and every starting n. Existing valuation arguments depend on

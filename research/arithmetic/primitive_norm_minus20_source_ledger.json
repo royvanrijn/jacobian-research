@@ -1,0 +1,80 @@
+{
+  "title": "Class-number-two primitive norm sums: finite-filter logarithmic count and exact bounded exceptions",
+  "proof": "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+  "checkers": [
+    "verify_primitive_norm_genus_filters.py",
+    "verify_primitive_norm_minus20.py"
+  ],
+  "receipts": [
+    "primitive_norm_genus_filter_checks.json",
+    "primitive_norm_minus20_checks.json"
+  ],
+  "reproduction": [
+    "python3 research/arithmetic/verify_primitive_norm_genus_filters.py --output research/arithmetic/primitive_norm_genus_filter_checks.json",
+    "python3 research/arithmetic/verify_primitive_norm_minus20.py --output research/arithmetic/primitive_norm_minus20_checks.json"
+  ],
+  "proof_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
+      "sha256": "b9df19e8aab65b6c074f5f92da5113c33f32a9dc731f6a6d554192a23e5914a2",
+      "scope": "PL4 complete primitive x^2+5y^2 class-number-two criterion; PL3 local additive residue set."
+    },
+    {
+      "path": "ASYMMETRIC_SUBGROUP_SPLITTING.md",
+      "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+      "scope": "H7-H13 first character factorization and finite filter; H15-H18 exact gcd/uniform error proof; section6 positive block sieve, target factors and restoration."
+    },
+    {
+      "path": "ASYMMETRIC_FIXED_MODULUS_THEORY.md",
+      "sha256": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+      "scope": "Lemma FixedPeriodBoxesGeneral, section5: arbitrary fixed period with all varying moduli coprime to that period."
+    },
+    {
+      "path": "ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md",
+      "sha256": "c7564c9069656eafcaf4ff417042dee3b3c354f76cca03e854afba1a5a085f62",
+      "scope": "Exact BGLM Proposition5.1 application, shared auxiliary factors and parameter/coprimality checks."
+    },
+    {
+      "path": "ASYMMETRIC_SEMIGROUP_SCALE.md",
+      "sha256": "0543dba3878558cc47cae197a25d6371ba6b7d2110183b6f2de738d06b58cccb",
+      "scope": "Sections1-6: exact divisibility predicates, positive finite-block lower sieve, directive normalization, cofactor recovery and upper bound."
+    }
+  ],
+  "primary_input": {
+    "title": "Additive problems with almost prime squares",
+    "authors": "Valentin Blomer, Lasse Grimmelt, Junxian Li, Simon L. Rydin Myerson",
+    "version": "arXiv:2111.01601v5",
+    "url": "https://arxiv.org/pdf/2111.01601v5",
+    "local_path": "sources/blomer-grimmelt-li-rydin-myerson-2111.01601v5.pdf",
+    "sha256": "6cb425e37285b1a09aeeade57210948f885d40f1d4d7b337671cfbd0a4a4711f",
+    "statements_used": [
+      "Proposition5.1, PDFp15: signed bilinear dispersion with fixed progression periodc; actual printed c0/c, coprimality, scale, auxiliary-modulus and inverse-multiplier hypotheses."
+    ],
+    "inspection_scope": "Actual cached v5 statement read by root and internal reviewers. Reused through the exact application proof; the deep source proof itself is imported."
+  },
+  "new_transfer_scope": [
+    "t in{1,2,5,10}, fixed first-variable filtermodtL,L40; all shifts and good coefficients B,D,u,v inC within a fixed small target power.",
+    "The t-part of divisibility is handled by the filter; only the good vka modulus enters the distribution input.",
+    "The exact finite densityGamma=ell times paircount/|H_ell|^2 includes genus signs; kernel indices only require unit/chi=1, not C prime support.",
+    "All actual gcd/cofactor substitutions carry genus signs and preserveGamma; no principal-prime-only restoration is imposed.",
+    "Weighted power error is inherited after the explicit parameter/period transfer. Positive rough sieving and full split-prime restoration give the unweighted logarithmic scale."
+  ],
+  "counting_statement": "For every sufficiently large Nmod8 in{2,3,4,6,7}, the ordered primitive value-pair count is comparable to N/logN times product over inert primesp|N of(p-1)/(p-2), uniformly in target valuations. Excluded residues have exactzero count.",
+  "finite_statement": {
+    "bound": 16777216,
+    "exceptions": [
+      3,
+      4
+    ],
+    "local_target_count": 10485760,
+    "represented_count": 10485758,
+    "coordinate_genus_full_equality": true
+  },
+  "review": "Root and separate internal agents reconstructed finite normalization, analytic source transfer, genus/cofactor restoration and full target-residue coverage. Independent internal checker replays matched retained outputs. No external review or formal verification.",
+  "limitations": [
+    "The unrestricted exception list{3,4} is not proved complete.",
+    "No numerical eventual cutoff or unweighted leading constant.",
+    "The result extends the existing proof by a fixed finite filter; it is not a literal specialization of the original coefficient hypotheses.",
+    "No historical priority or nonabelian class-group generalization is asserted."
+  ]
+}

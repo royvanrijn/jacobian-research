@@ -125,10 +125,10 @@
     "reviewed_revision": "841f6e73699bee3d5fafe657b4ff0aec23a8bbf8",
     "report": "PRIMITIVE_NORM_ANALYTIC_AUDIT.md",
     "status": "Internal mathematical audit; no external human review or formal verification.",
-    "exponent": "Every fixed eta<1/18; eta=1/20 by alpha=15/16, D=N^(1/18), epsilon=1/1000 in the unified error budget.",
+    "exponent": "Current strongest proved range: every eta<1/8, explicit1/9, from Waibel2012.04311v2 Lemma15 and averaged target gcd. The earlier Rouse route remains valid for eta<1/18.",
     "completion": "Weighted absolute Euler product for every fixed alpha<1, uniformly in N and all valuations. Target factors have N^o(1) product, but need not be 1+O(1/p).",
     "local_test": "Existing maximum-valuation modulus is valid; minimum determinant valuation also suffices because both blocks are primitive.",
-    "consequences": "Linear coordinate lower bound for same-field pairs; N/sqrt(loglog(3N)) for distinct fields. Distinct value count at least a constant times N S*(N)^3/(1+log N)^6.",
+    "consequences": "Coordinate lower bounds unchanged. Corrected Henriot fractional moments improve general V lower to N/(logN)^(log4+epsilon); upper NJ12/logN. Elementary cubic-moment log6 bound remains an independent weaker route.",
     "replay": "Existing checker replayed at bound256, including all295947 primes through2^22, with matching hashes. Separate finite spectral matrices are exploratory normalization evidence.",
     "exact_minus8_addendum": "Contemporaneous PRIMITIVE_NORM_MINUS8_EXACT.md proof independently inspected internally. All107 interval certificates and complete2^27 finite checker replay equal the retained JSON. Exact P_-8+P_-8 identity now supported; reviewed841f6e73699b itself only had the finite reduction."
   },
@@ -192,6 +192,245 @@
         "Main Theorem28.5.3: strong approximation for B^1 with a noncompact split place in S. Propositions41.3.1 and41.3.6: all-ideal Hecke multiplicativity and recurrence at split maximal places."
       ],
       "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    }
+  ],
+  "novelty_audit": {
+    "date": "2026-11-18",
+    "report": "PRIMITIVE_NORM_NOVELTY.md",
+    "scope": "General pair-primitive theorem and exact -8 classification; -11 supplementary context only.",
+    "verdict": "Method and principal analytic inputs are classical. Full arbitrary-pair statement not located verbatim: useful deduction, priority unverified. Exact -8 classification is main candidate contribution; whole-vector primitive support and shell formulas are already Liouville1860. Both eventual -8 strong cores and all eventual P8+P8 existence already follow from the inspected classical Plaksin theorem via the Gaussian parity lift; exact all-target completion remains the candidate contribution.",
+    "applications": [
+      "WaibelLemma15 plus target-gcd averaging: O_epsilon(N^(7/8+epsilon)), every eta<1/8, explicit1/9.",
+      "Corrected HenriotNewTheorem5 plus fractional Holder: V(N)>>N/(logN)^(log4+epsilon); upper V(N)<<NJ12(N)/logN, uniformly all valuations.",
+      "Plaksin1984/1985 with Q8 and Gaussian forms, the integral parity map, prime-coordinate gcd deletion and doubling: ALL eventual strong-core and P8+P8 coverage, with coordinate counts >>N/log²N. No numerical onset here.",
+      "Fixed-content binary forms also covered after dividing bounded h|lcm(c1,c2)."
+    ],
+    "limits": "No exhaustive MathSciNet/zbMATH review, author consultation, external human review, or priority certification; no arbitrary-form unweighted leading asymptotic."
+  },
+  "novelty_primary_sources": [
+    {
+      "key": "waibel",
+      "author": "Fabian Waibel",
+      "title": "Uniform bounds for norms of theta series and arithmetic applications",
+      "version": "arXiv:2012.04311v2,17 February2021; publication metadata MathProcCamb173(2022),669-691",
+      "url": "https://arxiv.org/pdf/2012.04311v2",
+      "local_path": "sources/waibel-2012.04311v2.pdf",
+      "sha256": "fdd1589a52732196027476bf5f8962729dfdadf87bf7d57a83b516e03f43986d",
+      "role": "mathematical_input",
+      "statements_used": [
+        "Theorem1 and definition6 PDFp3; Lemma15 PDFp16; unnormalized Petersson norm PDFp2. All positive indices, arbitrary fixed primitive quaternary forms and quadratic theta characters. Applied with level≈t²,F(A,2)≈t⁴,det≈t⁴; target gcd averaged."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "henriot_original",
+      "author": "Kevin Henriot",
+      "title": "Nair-Tenenbaum bounds uniform with respect to the discriminant",
+      "version": "arXiv:1102.1643v1,8 February2011; published2012",
+      "url": "https://arxiv.org/pdf/1102.1643v1",
+      "local_path": "sources/henriot-1102.1643v1.pdf",
+      "sha256": "49f72f22547ccccf8f4ed01e645bf0f45255e1a3806a477ff6f9b4c2ed72e701",
+      "role": "mathematical_input",
+      "statements_used": [
+        "Growth class M_k(A,B,epsilon) definition p1 and proof of upper-bound sieve. Read together with corrected New Theorem5, not uncorrected lower/sharpness claims."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "henriot_corrected",
+      "author": "Kevin Henriot",
+      "title": "Nair-Tenenbaum uniform with respect to the discriminant - ERRATUM",
+      "version": "MathProcCamb157(2014),375-377",
+      "url": "https://doi.org/10.1017/S0305004114000280",
+      "local_path": "sources/henriot-erratum-2014.pdf",
+      "sha256": "bd56f8f411457549c5cc53f9b24bbdec68544dca09cfe0836e35cc1b25677d6f",
+      "role": "mathematical_input",
+      "statements_used": [
+        "New Theorem5 printedp377 and corrected cross-coprimality rho definition pp375-376. Applied with degree2,alpha=delta=1/4 and growth epsilon<1/2400; coefficient-uniform upper bound for X,N-X. Lower theorem not used."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "liouville",
+      "author": "Joseph Liouville",
+      "title": "Sur la forme x²+y²+2(z²+t²)",
+      "version": "JMPA series2 volume5(1860),269-272",
+      "url": "https://www.numdam.org/item/JMPA_1860_2_5__269_0.pdf",
+      "local_path": "sources/liouville-1860-1122.pdf",
+      "sha256": "8f56bc01a1ab5f99626bcc168ac6f187fbdb45d5c38000adf00912de3ef63191",
+      "role": "classical_attribution",
+      "statements_used": [
+        "Printedpp271-272: unrestricted shell and WHOLE FOUR-VECTOR primitive formulas; not the two designated binary gcds."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "deutsch",
+      "author": "Jesse I. Deutsch",
+      "title": "A Quaternionic Proof of the Representation Formula of a Quaternary Quadratic Form",
+      "version": "arXiv:math/0406434v1,22 June2004; JNT113(2005),149-179",
+      "url": "https://arxiv.org/pdf/math/0406434v1",
+      "local_path": "sources/deutsch-math0406434v1.pdf",
+      "sha256": "6ead09e67236ff78f367e6e27119728e42f1222bf6706bed09383d8072bcef03",
+      "role": "classical_attribution",
+      "statements_used": [
+        "Definitions27 and47, Lemma28, Theorems55-56 and Section7: quaternion ideal shell/parity counts and whole-vector primitive definition, not separate primitive components."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "plaksin",
+      "author": "V.A.Plaksin",
+      "title": "An asymptotic formula for the number of representations of a natural number by a pair of quadratic forms, the arguments of one of which are prime",
+      "version": "Russian1984; English MathUSSR-Izv25(1985),551-572",
+      "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&paperid=1517&what=fullteng&option_lang=eng",
+      "local_path": "sources/plaksin-1985-two-binary-forms.pdf",
+      "sha256": "fd56b40f4d4ef328be213099521351d596bfa11fcaefd382b00ff445ee54926b",
+      "role": "mathematical_input",
+      "statements_used": [
+        "Introductionp551: phi primitive, psi fundamental discriminant; main theoremp562, finite prime-unit congruence18. Apply phi=psi=Q8 for odd core and phi=psi=Gaussian for even core; integral parity bijection and gcd deletion give both eventual cores and ALL eventual M8 existence. Main term >>N/log²N with uniform singular-product lower bound; no numerical onset asserted."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "dietmann_elsholtz",
+      "author": "Rainer Dietmann and Christian Elsholtz",
+      "title": "Sums of Two Numbers Having Only Prime Factors Congruent to One Modulo Four",
+      "version": "Author preprint; published BanachCenter118(2019),177-180,DOI10.4064/bc118-11",
+      "url": "https://www.math.tugraz.at/~elsholtz/WWW/papers/greaves20.pdf",
+      "local_path": "sources/dietmann-elsholtz-split-sums-author.pdf",
+      "sha256": "c359b549e35a075b000f561d60297921422604da33af29c879b3caa07dbbfa40",
+      "role": "comparison",
+      "statements_used": [
+        "Theorem authorp1 and proofpp2-3: eventual Gaussian split-semigroup coverage at2mod4 via Greaves; different field/support, no exact -8 claim."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "jones_pall",
+      "author": "B.W.Jones and G.Pall",
+      "title": "Regular and semi-regular positive ternary quadratic forms",
+      "version": "ActaMath70(1939),165-191",
+      "url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/5599-11511_2006_Article_BF02547347.pdf",
+      "local_path": "sources/jones-pall-ternary-1939.pdf",
+      "sha256": "085982d39d8a05646909e731c282b072f5e4faea464af6d082a607ab7fcd5a5f",
+      "role": "comparison",
+      "statements_used": [
+        "Introductionpp165-167 and quaternion proper solutionspp174-179: whole-vector properness/congruence refinements; no identified statement imposing a prescribed primitive binary subblock."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "geometric_sieve",
+      "author": "Tim Browning and Roger Heath-Brown",
+      "title": "The geometric sieve for quadrics",
+      "version": "arXiv:2003.09593v1,21 March2020; ForumMath33(2021),147-165",
+      "url": "https://arxiv.org/pdf/2003.09593v1",
+      "local_path": "sources/browning-heath-brown-2003.09593v1.pdf",
+      "sha256": "dcd19514db7d4f4382d38814d4a3e4dd1be7ed8e457ad127b0c4380b48874156",
+      "role": "comparison",
+      "statements_used": [
+        "Theorems1.1-1.2: fixed homogeneous rank≥5 quadratic zeros. Homogenization F-Nt² varies with target and all-t counts do not restrict to t=1 with the required uniformity."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "arithmetic_purity",
+      "author": "Yang Cao and Zhizhong Huang",
+      "title": "Arithmetic purity of the Hardy-Littlewood property and geometric sieve for affine quadrics",
+      "version": "arXiv:2003.07287v3,10 December2021; AdvancesMath398(2022)",
+      "url": "https://arxiv.org/pdf/2003.07287v3",
+      "local_path": "sources/cao-huang-2003.07287v3.pdf",
+      "sha256": "15e277d07db98ffd9e868e436c05891988da5dedaf078484f81b58dd2f52deaf",
+      "role": "comparison",
+      "statements_used": [
+        "Setup1.2.2 explicitly indefinite q and fixed m/noncompact real locus; Theorems1.4 and1.6. Positive-definite varying-N shells fail these hypotheses."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "browning_dietmann",
+      "author": "Tim Browning and Rainer Dietmann",
+      "title": "On the representation of integers by quadratic forms",
+      "version": "arXiv:math/0603358v2",
+      "url": "https://arxiv.org/pdf/math/0603358v2",
+      "local_path": "sources/browning-dietmann-math0603358v2.pdf",
+      "sha256": "835b672bc1bcdc8a349dac7799de4d93ccc6a7f3ec738836e2217a4f88049f2d",
+      "role": "comparison",
+      "statements_used": [
+        "Proposition1 PDFp13: form-dependent weighted uniform count; no two-block gcd condition. Possible analytic input, not exact antecedent."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "edna_jones",
+      "author": "Edna Jones",
+      "title": "The Kloosterman circle method and weighted representation numbers of quadratic forms",
+      "version": "arXiv:2412.01780v2,24 July2025; ResMathSci12,59(2025)",
+      "url": "https://arxiv.org/pdf/2412.01780v2",
+      "local_path": "sources/jones-2412.01780v2.pdf",
+      "sha256": "4827950508954093b1943000c4bf1766afd64240724a1d3c3e734e597246030f",
+      "role": "comparison",
+      "statements_used": [
+        "Theorem1.1 and Corollary1.5: arbitrary smooth weighted unrestricted representation estimates with explicit form dependence; no separately primitive theorem stated."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "matthiesen_binary",
+      "author": "Lilian Matthiesen",
+      "title": "Linear correlations amongst numbers represented by positive definite binary quadratic forms",
+      "version": "arXiv:1106.4690v3; ActaArith154(2012),235-306",
+      "url": "https://arxiv.org/pdf/1106.4690v3",
+      "local_path": "sources/matthiesen-1106.4690v3.pdf",
+      "sha256": "d9bae466295640225847afa3db834c79d1183777be438b09817b350bed756ddc",
+      "role": "comparison",
+      "statements_used": [
+        "Theorem1.1: pairwise affine independence. The fixed-target pair n,N-n is affinely dependent; averaging targets does not imply uniformity on one target."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "matthiesen_multiplicative",
+      "author": "Lilian Matthiesen",
+      "title": "Linear correlations of multiplicative functions",
+      "version": "arXiv:1606.04482v4,3 November2019; PLMS121(2020),372-425",
+      "url": "https://arxiv.org/pdf/1606.04482v4",
+      "local_path": "sources/matthiesen-1606.04482v4.pdf",
+      "sha256": "557593f74e82cb7a18aada3a2a5129ccc132d2d1ae017a404caf250b06c42dfa",
+      "role": "comparison",
+      "statements_used": [
+        "Example3 includes sums-of-two-squares SUPPORT indicator. Theorems2.1,2.4 require pairwise linearly independent nonconstant parts in≥2 variables and positive-volume regions; fixed-target dependent pair fails."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "klurman",
+      "author": "Oleksiy Klurman",
+      "title": "Correlations of multiplicative functions and applications",
+      "version": "arXiv:1603.08453v1",
+      "url": "https://arxiv.org/pdf/1603.08453v1",
+      "local_path": "sources/klurman-1603.08453v1.pdf",
+      "sha256": "502591fd12faf60e76ce6dc59d931880780cba824fa0ea03765b6bb46d08c43c",
+      "role": "comparison",
+      "statements_used": [
+        "Theorem1.3 and Corollary1.4 useful asymptotic needs finite pretentious distance. Sparse norm support vanishes at density-half inert primes, so distance diverges for every twist."
+      ],
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+    },
+    {
+      "key": "deutsch_bumby",
+      "author": "Jesse Ira Deutsch",
+      "title": "Bumby's Technique and a Result of Liouville on a Quadratic Form",
+      "version": "Integers8(2)(2008),A2",
+      "url": "https://emis.de/ft/35897",
+      "local_path": "sources/deutsch-bumby-liouville-2008.pdf",
+      "sha256": "90cbc0ba5ec98ca4f96c0c070259d67f2ab3f2184d65ef1a613945e90f2e22f6",
+      "role": "comparison",
+      "statements_used": [
+        "Equation1.1 attributes full-shell formula to Liouville. Definition1 uses gcd over Z[sqrt(-2)] of the two components; it is incomparable with separate rational-coordinate primitivity, as verified by explicit examples."
+      ],
+      "inspection_scope": "Actual primary definition and introduction inspected internally; no transfer of its primitive condition to the two-block condition."
     }
   ]
 }

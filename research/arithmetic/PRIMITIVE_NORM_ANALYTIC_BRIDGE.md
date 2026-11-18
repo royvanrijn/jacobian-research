@@ -32,8 +32,8 @@ Write
  J=\frac{4\pi^2}{\sqrt{\det A_1\det A_2}}.
 \]
 
-**Theorem.** For every fixed \(0<\eta<1/18\), in particular
-\(\eta=1/20\),
+**Theorem.** For every fixed \(0<\eta<1/8\), in particular
+\(\eta=1/9\),
 \[
  R^*(N)=JN\prod_p\beta_p^*(N)+O_{Q_1,Q_2,\eta}(N^{1-\eta}).
  \tag{2}
@@ -175,7 +175,10 @@ Gram convention of this note, gives
  E_T(n)=\frac{4\pi^2 n}{\sqrt{D(T)}}\prod_p\beta_p(T;n).
  \tag{9}
 \]
-The real factor follows by differentiating the ellipsoid volume
+Waibel's genus formula, equations (1)--(2) of
+[arXiv:2012.04311v2](https://arxiv.org/pdf/2012.04311v2), independently
+displays this same factor in this Gram convention.
+The real factor also follows by differentiating the ellipsoid volume
 \(2\pi^2n^2/\sqrt{D(T)}\). It is not transcribed from the
 prefactor displayed in Rouse's Section 3: that line displays
 \(\pi^2n/\sqrt{D(T)}\), despite the stated Gram convention.
@@ -359,13 +362,113 @@ The resulting error budget is
 \]
 For fixed \(\alpha<1\), take \(D=N^{1/(16+2\alpha)}\).
 Before the arbitrarily small \(\epsilon\) losses, the limiting saving
-is \(\alpha/(16+2\alpha)\). Letting \(\alpha\) approach 1 proves
-every fixed \(\eta<1/18\); the endpoint is not asserted.
-For the explicit choice \(\eta=1/20\), take
-\(\alpha=15/16\), \(D=N^{1/18}\), and \(\epsilon=1/1000\) in
-(20a). The largest exponent is
-\(1+1/1000-5/96<19/20\).
+is \(\alpha/(16+2\alpha)\). This Rouse-based route proves (2)
+for every fixed \(\eta<1/18\), including \(\eta=1/20\) by
+\(\alpha=15/16\), \(D=N^{1/18}\), \(\epsilon=1/1000\).
+A stronger existing theta estimate gives the theorem's stated range.
+
+## Sharper power saving from Waibel
+
+Use Waibel, *Uniform bounds for norms of theta series and arithmetic
+applications*, [arXiv:2012.04311v2](https://arxiv.org/pdf/2012.04311v2),
+Theorem 1 and definition (6), PDF p.3, and Lemma 15, PDF p.16.
+The paper was subsequently published in 2022. The imported edition
+here is the inspected v2. For a primitive positive quaternary form of
+Gram matrix \(A\), level \(L\), and determinant \(\Delta\), its
+all-index estimate is
+\[
+ |c_A(n)|\ll_\epsilon n^{1/2}
+ \left(\frac{L}{\sqrt{\mathcal F(A,2)}}+
+                \frac{\sqrt L}{\Delta^{1/8}}\right)
+ \min\left(\sqrt L,\
+       1+\frac{n^{1/4}(n,L)^{1/4}}{\sqrt L}\right)(nL)^\epsilon.
+\]
+Here \(\mathcal F\) is Waibel's local Jordan invariant, not the
+quadratic form \(F\) of this note. This estimate requires neither
+coprimality nor local solubility of \(n\).
+Waibel uses the unnormalized Petersson norm; the displayed coefficient
+estimate already incorporates that convention.
+
+Only squarefree \(d,e\) occur. Put \(g=(d,e)\),
+\(u=d/g\), \(v=e/g\), \(t=uv\), and \(n=N/g^2\), discarding
+\(g^2\nmid N\). For \(A=u^2A_1\oplus v^2A_2\),
+\[
+ \Delta=\Delta_0t^4,\qquad L\asymp_{Q_1,Q_2}t^2,\qquad
+ \mathcal F(A,2)\asymp_{Q_1,Q_2}t^4.
+\]
+Indeed outside the fixed bad primes a prime of \(t\) has Jordan
+exponents \(0,0,2,2\), giving level \(p^2\) and
+\(\mathcal F\)-factor \(p^4\). At bad primes the squarefree coprime
+pair \((u,v)\) has just three scaling patterns; their factors differ
+from these expressions by fixed constants. This proves both the
+upper and lower level comparisons needed in the minimum above.
+
+Waibel's estimate, using the second entry of that minimum, therefore
+gives
+\[
+ |c_{d,e}(N)|\ll_{Q_1,Q_2,\epsilon}N^\epsilon(de)^\epsilon
+ \left\{N^{1/2}(de)^{1/2}
+   +N^{3/4}(de)^{-1/2}(N,L_0(de)^2)^{1/4}\right\}.
+\]
+The discarded powers of \(g\) are \(g^{-2}\) and \(g^{-1/2}\), so both are favorable.
+The target gcd can be averaged, rather than maximized. For squarefree
+\(d\), set \(G_N(d)=(N,d^2)^{1/4}\). Expanding its prime factors gives
+\[
+ \sum_{\substack{d\le D\\d\ {\rm squarefree}}}
+       d^{-1/2}G_N(d)
+ \le 2D^{1/2}
+       \prod_{p\mid N}\left(1+
+           \frac{p^{\min(v_p(N),2)/4}-1}{p}\right)
+ \ll_\epsilon D^{1/2}N^\epsilon.
+\]
+The expansion uses
+\(\sum_{d\le D,\ k\mid d}d^{-1/2}\le2D^{1/2}/k\);
+the last target-prime product is \(N^{o(1)}\).
+Also
+\[
+ (N,L_0(de)^2)^{1/4}
+ \le L_0^{1/4}(N,(de)^2)^{1/4}
+ \le L_0^{1/4}G_N(d)G_N(e),
+\]
+including common primes.
+Consequently the total truncated cusp error is
+\[
+ O_{Q_1,Q_2,\epsilon}
+       (N^{1/2+\epsilon}D^{3+\epsilon}
+          +N^{3/4+\epsilon}D^{1+\epsilon}).
+\]
+With the unchanged Möbius tail, zero blocks, and genus completion,
+the full budget is
+\[
+ O_{Q_1,Q_2,\alpha,\epsilon}\left(
+ N^{1+\epsilon}D^{-1}
+ +N^{1/2+\epsilon}D^{3+\epsilon}
+ +N^{3/4+\epsilon}D^{1+\epsilon}
+ +D^2N^\epsilon+N^{1+\epsilon}D^{-\alpha}\right).
+\]
+Take \(D=N^{1/8}\) and \(\alpha<1\) arbitrarily close to 1.
+After allocating arbitrarily small epsilon losses, this proves
+\[
+ R^*(N)=JN\prod_p\beta_p^*(N)
+       +O_{Q_1,Q_2,\epsilon}(N^{7/8+\epsilon}),
+\]
+equivalently every fixed \(\eta<1/8\). For an explicit
+\(\eta=1/9\), take \(\alpha=15/16\) and choose all combined epsilon
+losses below \(1/1000\). The largest pre-loss exponent is
+\(1-15/128<8/9-1/1000\). The literal endpoint
+\(O(N^{7/8})\) is not asserted.
 Equations (3) and (2) prove eventual existence.
+
+The same proof extends to any two fixed positive-definite integral
+binary forms with fixed coefficient contents \(c_1,c_2\).
+After dividing by \(g^2\), the additional content is
+\(h=(c_1u^2,c_2v^2)\), which divides
+\(\operatorname{lcm}(c_1,c_2)\). Divide the form and target by \(h\)
+when possible. These finitely many extra content factors change only
+fixed-form constants in the determinant, level and local-invariant
+comparisons. The local derivative and Möbius-tail arguments use the
+original fixed Gram matrices unchanged. In particular fixed positive
+coefficients on either binary form are permitted by this extension.
 
 ## Stronger lower bounds and distinct value pairs
 
@@ -463,6 +566,116 @@ This yields \(V(N)\gg N/(\log N)^6\) for same-field pairs, and
 pairs. The same bounds, with interval-dependent constants, hold in
 each fixed positive-length balance interval by (24).
 They are lower bounds, not unweighted value-pair asymptotics.
+
+### Fractional moments and the sharp upper-sieve scale
+
+Classical discriminant-uniform multiplicative-function bounds improve
+(20f). For every fixed \(\epsilon>0\), all sufficiently large
+admissible targets satisfy
+\[
+ V(N)\gg_{Q_1,Q_2,\epsilon}
+       \frac{N}{(\log N)^{\log 4+\epsilon}}.
+ \tag{20g}
+\]
+Here and below \(\log\) is natural. For all sufficiently large targets,
+\[
+ V(N)\ll_{Q_1,Q_2}\frac{N}{\log N}\,
+ \prod_{\substack{p\mid N,\ p\notin S\\
+                  \varepsilon_1(p)=\varepsilon_2(p)=-1}}
+                        \frac{p-1}{p-2}.
+ \tag{20h}
+\]
+No matching logarithmic-scale lower bound for arbitrary form classes
+is claimed.
+
+The exact input is Henriot's **New Theorem 5**, printed p.377 of the
+[2014 erratum](https://doi.org/10.1017/S0305004114000280), together with
+the growth-class definitions in
+[arXiv:1102.1643v1](https://arxiv.org/pdf/1102.1643v1).
+The discriminant-uniform constant is essential for the factors
+\(X,N-X\). Only this upper-bound theorem is used; its lower-bound
+counterpart requires positive weights and does not apply to functions
+vanishing at inert primes.
+
+Here are the majorant and local calculations. For
+\(Q=ax^2+bxy+cy^2\), let \(K=\mathbb Q(\sqrt{b^2-4ac})\).
+At a fixed finite set \(B_Q\) containing the primes of \(4aD_K\), and
+at split primes, set \(h_Q(p^j)=j+1\); at all remaining inert primes
+set \(h_Q(p^j)=\mathbf1_{2\mid j}\).
+The norm embedding used in (11) proves
+\[
+ r_Q^*(n)\le r_Q(n)\le w_K\tau(4a)h_Q(n).
+\]
+This accommodates every ideal class and conductor. It avoids the
+false inequality \(f_K(4an)\le f_K(4a)f_K(n)\), which can fail at
+inert primes.
+
+Fix \(t>1\), put \(c=2^t\), and set
+\(c_i(p)=c\,\mathbf1_{\varepsilon_i(p)=1}\) outside a fixed finite
+set \(B\supset S\cup B_{Q_1}\cup B_{Q_2}\). Enlarge \(B\) so that the factors below are
+positive. The corrected Henriot theorem gives
+\[
+ \sum_{1\le a<N}
+   \bigl(r_{Q_1}^*(a)r_{Q_2}^*(N-a)\bigr)^t
+ \ll_{Q_1,Q_2,t}
+ N(\log N)^{2^t-2} W_t(N),
+\]
+\[
+ W_t(N)=\prod_{\substack{p\mid N\\p\notin B}}
+       \left(1+\frac{(c_1(p)-1)(c_2(p)-1)}p\right).
+ \tag{20i}
+\]
+To verify the uniformity hypotheses, remove the endpoints
+\(\min(a,N-a)\le N^{1/2}\), whose divisor bound costs
+\(O_\epsilon(N^{1/2+\epsilon})\). Cover the remainder using \(a\)
+on the left and \(N-a\) on the right,
+by dyadic intervals with \(x\gg N^{1/2}\), \(y=x\), and \(2x<N\),
+of total length \(O(N)\).
+Use Henriot's \(\alpha=\delta=1/4\), total degree 2, and growth
+parameter below \(1/2400\). Since
+\(\|X(N-X)\|\asymp N\), all height and interval conditions hold.
+The functions \(h_1^t h_2^t\) belong to the prescribed growth class,
+bounded by fixed divisor powers.
+
+In the corrected Euler sum, a nontarget prime has first coefficient
+\(c_1(p)+c_2(p)\), with root factor \(1-2/p\).
+A target prime has first coefficient \(c_1(p)c_2(p)\), with root
+factor \(1-1/p\); the corrected cross-coprimality condition excludes
+a positive valuation in only one factor. Higher valuation terms are
+\(O_t(p^{-2})\), uniformly in \(v_p(N)\), since their tails are
+bounded by
+\(\sum_{r\ge2}(2r+1)(r+1)^{2t}p^{-r}\).
+The target ratio has first coefficient
+\((c_1(p)-1)(c_2(p)-1)\), proving (20i).
+Fixed-character Mertens products give the baseline exponent \(2^t-2\).
+The product \(W_t(N)\) and its reciprocal are bounded by fixed powers
+of \(\log\log(3N)\).
+
+Hölder and (20i) give
+\[
+ V(N)\gg_{Q_1,Q_2,t}
+ \frac{N}{(\log N)^{(2^t-2)/(t-1)}}
+       \left(\frac{S^*(N)^t}{W_t(N)}\right)^{1/(t-1)}.
+\]
+The parenthesized expression is bounded below by an inverse fixed
+power of \(\log\log(3N)\). Let fixed \(t>1\) approach 1:
+\((2^t-2)/(t-1)\to\log4\). Absorbing the remaining log-log factor
+proves (20g). The constants may depend strongly on \(\epsilon\).
+
+For (20h), majorize primitive value membership by the indicator
+excluding all good inert primes. Apply the same upper theorem,
+now with first coefficients \(1\) at split primes and \(0\) at
+inert primes. The baseline exponent is \(-1\). The target correction
+has a first-order contribution only at primes inert in both fields;
+there its exact factor is \((p-1)/(p-2)\). All other ratios are
+\(1+O(p^{-2})\). This proves (20h), uniformly over target valuations.
+Both bounds also apply on each fixed positive-length balance interval,
+using (24) for the lower bound.
+
+The [novelty comparison](PRIMITIVE_NORM_NOVELTY.md) gives the exact
+classical attribution and the hypotheses preventing stronger
+unweighted correlation theorems from being specialized to one fixed
+target.
 
 ## Quadratic-kernel corollary of the existing splitting theorem
 
@@ -659,6 +872,30 @@ Exact copies and hashes are in the source ledger. This angular
 deduction uses classical fixed-level inputs and makes no priority claim.
 
 ## An exact dyadic shell formula for discriminant \(-8\)
+
+The unrestricted \(Q\oplus Q\) shell formula is classical:
+Liouville, *Sur la forme \(x^2+y^2+2(z^2+t^2)\)* (1860),
+[pp.269--272](https://www.numdam.org/item/JMPA_1860_2_5__269_0.pdf),
+and Deutsch, [arXiv:math/0406434v1](https://arxiv.org/pdf/math/0406434v1),
+give direct precedents, including parity and whole-vector primitive
+counts. Those counts do not impose the two designated binary gcds.
+The calculation below records the additional dyadic filter in the
+normalization used by the sieve.
+
+The eventual existence statement in this specialization also has a
+classical prime-variable proof. Plaksin's theorem, used with
+\(x^2+2y^2\), gives the odd strong core after regrouping and deleting
+prime-coordinate gcd failures. Its Gaussian specialization, followed by
+\(u=(x+y)/2,\ v=(x-y)/2\) for even targets, gives
+\(N=Q(p,u)+Q(q,v)\) throughout \(N\equiv2,4,6\pmod8\).
+The deletion costs \(O_\epsilon(N^{1/2+\epsilon})\) against a uniformly
+positive main term of order \(N/\log^2N\).
+Doubling covers \(v_2(N)=3\). Thus all eventual admissible -8 existence
+is a classical deduction; the explicit spectral bound and complete
+finite bridge supply additional quantitative and exact information.
+See the [novelty comparison](PRIMITIVE_NORM_NOVELTY.md) for the
+source hypotheses, local factors, parity bijection, and prime-coordinate
+count. This alternative does not supply a numerical onset here.
 
 Here \(Q(x,y)=x^2+2y^2\). Let \(r(N)\) count all signed ordered
 coordinate representations by \(Q\oplus Q\), and let \(G_2(N)\) count
@@ -1150,10 +1387,11 @@ explicit deductions, separate from the general nonnumerical cutoff above.
 * The theorem permits every target valuation compatible with the
   primitive local conditions. It is stronger than applying a theorem
   about one primitive four-vector: both blocks are sieved separately.
-* Equations (20c)--(20f) give a linear coordinate lower bound for
-  same-field pairs, a \(N/\sqrt{\log\log(3N)}\) lower bound for
-  distinct-field pairs, and logarithmic lower bounds for distinct
-  value pairs. These do not identify a value-pair leading asymptotic.
+* Equations (20c)--(20i) give linear coordinate counts for same-field
+  pairs and \(N/\sqrt{\log\log(3N)}\) for distinct-field pairs.
+  Fractional moments improve the general distinct-value lower bound
+  to \(N/(\log N)^{\log4+\epsilon}\); the upper sieve gives
+  \(N J_{12}(N)/\log N\). No value-pair leading asymptotic is claimed.
 * The exact \(-8\) identity is reduced to the explicit finite family
   (40), with an unconditional global onset \(2^{78}\). The residual
   inert-core family is now covered by the separate exact -8 proof.

@@ -491,30 +491,235 @@ A possible Gamma-product Appell simplicity principle remains unproved,
 and would still need a separate bridge to arbitrary polynomial supports.
 
 A different all-support certificate can be formulated without selecting
-a prime or saddles. Replace each exponential row by a normalized
-Gamma variable of shape $1/x_i$, so the mixed-moment factors are
+a prime or saddles. Replace each exponential row by an independent
+Gamma variable of shape $1/x_i$ and scale $x_i$. Put
 \[
- \mathbb E X_i^b=\prod_{h=0}^{b-1}(1+h x_i).
+ \mu_b(x_i)=\prod_{h=0}^{b-1}(1+h x_i),\qquad
+ P_m(c;x)=\sum_{|k|=m}\frac{m!}{\prod_jk_j!}
+                  \prod_i\mu_{(Ak)_i}(x_i)c^k,
 \]
-The resultant $R_{A,n}(x)$ of the resulting $s$ consecutive moment forms
-is an integer polynomial in $x_1,\ldots,x_d$. At $x_i=1$ it is the
-ordinary factorial resultant. A nonzero, coefficientwise nonnegative
-expansion, up to a scalar sign independent of $x$, would therefore
-prove SFC for that $A,n$ and indeed for every positive Gamma shape.
-No such expansion or uniform strictness proof is established here.
-Ordinary moment-kernel total positivity cannot supply it: even for
-$(X_1,X_2,X_3)$ the Gram minor with rows $(1,2)$, columns $(2,3)$ is
-$-x_2$. Any successful cancellation argument must concern the full
-resultant rather than positivity of all moment minors.
+with empty products equal to one. The homogeneous resultant
+\[
+ R_{A,n}(x)=\operatorname{Res}_c(P_n,\ldots,P_{n+s-1})
+                  \in\mathbb Z[x_1,\ldots,x_d]
+\]
+uses the normalization
+$\operatorname{Res}(c_1^{d_1},\ldots,c_s^{d_s})=1$.
+At $x_i=1$ it is the ordinary factorial resultant. If, for every
+distinct ordinary support $A$ and every $n\ge1$, either $R_{A,n}$ or
+$-R_{A,n}$ were coefficientwise nonnegative and not identically zero,
+then it would be nonzero at every positive $x$. This would prove full
+SFC, indeed for all positive Gamma shapes. Neither such an expansion
+nor its uniform nontriviality is proved here. Pointwise
+nonnegativity alone is weaker than the proposed coefficient assertion
+and would still permit a common zero.
+
+\subsection{Row coalescence and its precise limit}
+There is an exact positivity-preserving operation for these
+\emph{unstripped} resultants. Let
+\[
+ D=\prod_{m=n}^{n+s-1}m,\qquad B=D\sum_j a_j
+\]
+for a nonzero row $a=(a_1,\ldots,a_s)$. The degree in that row's
+dispersion parameter is at most $B$. Indeed, diagonal covariance gives
+\[
+ \operatorname{Res}(P_m(t_1c_1,\ldots,t_sc_s))_{m=n}^{n+s-1}
+       =\left(\prod_jt_j\right)^D R_{A,n}.
+\]
+Every universal resultant monomial therefore has total coefficient-index
+weight $D$ in each $c_j$. Its degree contribution from the row is at most
+$\sum_j a_jD=B$.
+
+Replace $q$ copies of row $a$ by one row $qa$, leaving every other row
+unchanged. Grouping factors by residues modulo $q$ gives, for $u\ge0$,
+\[
+ \mu_{qu}(x)=\prod_{r=0}^{q-1}
+       \left[(1+rx)^u\mu_u\!\left(\frac{qx}{1+rx}\right)\right].
+\]
+Let $R_{\rm dup}(y_0,\ldots,y_{q-1};z)$ denote the resultant before
+coalescing, with $z$ the other row parameters. Column rescaling now gives
+the exact rational-function identity
+\[
+ R_{\rm coarse}(x;z)
+ =\prod_{r=0}^{q-1}(1+rx)^B
+ R_{\rm dup}\!\left(\left(\frac{qx}{1+rx}\right)_{r=0}^{q-1};z\right).
+\]
+Each duplicate-row degree is at most $B$. Consequently a monomial
+$C_\beta(z)y^\beta$ transforms into
+\[
+ C_\beta(z)q^{|\beta|}x^{|\beta|}
+           \prod_r(1+rx)^{B-\beta_r},
+\]
+with nonnegative integer exponents. Thus the combined property
+\emph{nonzero, with all coefficients of one sign} is preserved.
+Nonzero preservation uses the sign hypothesis: for $q=2$, the nonzero
+polynomial $y_0-y_1-y_0y_1/2$ vanishes on the substitution curve.
+Parameter-dependent content removal changes the identity.
+
+Divide each nonzero integer row by its gcd and replace it by that
+many primitive copies. Distinct columns remain distinct. Applying the
+identity finitely many times shows that the unrestricted Gamma
+coefficient assertion is equivalent to its restriction to matrices
+whose nonzero rows are primitive. Zero rows contribute one and can be
+removed; if all rows disappear, distinctness forces $s=1$ and the
+constant-phase resultant is one. This reduction uses independent
+positive Gamma parameters, not just ordinary factorial moments on
+primitive-row matrices.
+
+There is also a uniform obstruction to splitting the remaining row
+directions by positive Gamma products.
+
+\begin{lemma}\label{lem:gamma-profile-rigidity}
+Let $a,b_1,\ldots,b_L\in\mathbb N^s\setminus\{0\}$, with $1\le L<\infty$,
+and fix positive real numbers $\alpha,\beta_1,\ldots,\beta_L$ and
+$\lambda_1,\ldots,\lambda_s$. Suppose
+\[
+ (\alpha)_{a\cdot k}
+   =\lambda^k\prod_{\ell=1}^L(\beta_\ell)_{b_\ell\cdot k}
+       \quad\text{for every }k\in\mathbb N^s,
+ \qquad \lambda^k=\prod_j\lambda_j^{k_j}.
+\]
+Then $b_\ell=t_\ell a$ with $t_\ell>0$ and $\sum_\ell t_\ell=1$.
+If $a$ is primitive, the identity is trivial:
+$L=1$, $b_1=a$, $\beta_1=\alpha$, and every $\lambda_j=1$.
+\end{lemma}
+\begin{proof}
+Comparison of the increasing sum $\sum_{h=0}^{M-1}\log(\eta+h)$
+with its integral gives, for every fixed $\eta>0$,
+\[
+ \log(\eta)_M=M\log M-M+O(\log M).
+\]
+Take $k=Nv$ for a positive rational vector $v$, with $N$ running
+through multiples of its denominator. Comparing the $N\log N$ terms
+gives $a=\sum_\ell b_\ell$. Comparing the terms of order $N$ then gives
+\[
+ (a\cdot v)\log(a\cdot v)
+  -\sum_\ell(b_\ell\cdot v)\log(b_\ell\cdot v)
+          =v\cdot\log\lambda.
+\]
+Continuity makes this an exact identity for every positive real $v$,
+so its Hessian is
+\[
+ \frac{aa^T}{a\cdot v}
+       =\sum_\ell\frac{b_\ell b_\ell^T}{b_\ell\cdot v}.
+\]
+All denominators are positive. Testing $w\perp a$ shows
+$\sum_\ell(b_\ell\cdot w)^2/(b_\ell\cdot v)=0$, so each $b_\ell$
+is parallel to $a$. Nonnegativity makes its multiplier positive;
+$a=\sum_\ell b_\ell$ makes their sum one.
+
+If $\gcd(a_1,\ldots,a_s)=1$, Bezout's integer relation for its entries
+makes every $t_\ell$ an integer. Thus exactly one survives, with
+$b_1=a$. The entropy identity gives $\lambda_j=1$ for every $j$.
+Choose $a_j=m>0$ and $k=e_j$. Then
+$(\alpha)_m=(\beta_1)_m$, and strict monotonicity on positive shapes
+gives $\alpha=\beta_1$.
+\end{proof}
+
+The lemma concerns a fixed finite positive product on the entire
+moment lattice. Gamma quotients, index-dependent parameters and
+identities restricted to a finite window are outside its scope.
+It shows why coalescence cannot dispose of arbitrary primitive
+profiles by a uniform positive-product factorization. It does not
+establish resultant positivity.
+
+\subsection{The remaining cancellation problem}
+
+There is an exact positive diagram expansion before elimination.
+For a row with $b$ labelled legs,
+\[
+ \mu_b(x)=\sum_{\sigma\in S_b}x^{\,b-\#\mathrm{cycles}(\sigma)}.
+\]
+Inserting the last leg either creates a new cycle or inserts it in
+one of $b-1$ positions, proving the product formula inductively.
+For a mixed monomial moment, group legs by their labelled factor
+vertices and choose one permutation for each row. Join vertices
+when a permutation cycle visits both. Every tuple decomposes uniquely
+over its connected vertex components, with multiplicative weight.
+The moment--cumulant partition identity therefore identifies the joint
+cumulant with the sum over connected tuples. Write
+$\kappa_m(c;x)=\operatorname{cum}_m(F_c)$ for
+$F_c=\sum_jc_jX^{a_j}$. All joint cumulants have
+nonnegative integer coefficients in the $x_i$. A constant factor has
+no legs and hence cannot occur in a connected component of size
+greater than one.
+
+For $n=1$, triangular Bell-polynomial row operations consequently give
+\[
+ \operatorname{Res}_c(P_1,\ldots,P_s)
+       =\operatorname{Res}_c(\kappa_1,\ldots,\kappa_s).
+\]
+Each difference $P_m-\kappa_m$ belongs to the ideal of earlier
+cumulants, so the degree-preserving triangular replacements leave the
+homogeneous resultant unchanged. For $n>1$, those replacements introduce
+lower moments outside the prescribed block. Even at $n=1$,
+nonnegative diagram coefficients do not control the alternating
+resultant. A global cancellation theorem is still missing.
+
+Ordinary moment-kernel total positivity cannot supply that theorem:
+for $(X_1,X_2,X_3)$ the Gram minor with rows $(1,2)$ and columns $(2,3)$
+is $-x_2$. Nor is an effective resultant divisor enough: its
+intersection class records multidegrees, whereas $R_{A,n}(x)$ is a
+substituted defining equation. Effectivity alone does not make equation
+coefficients nonnegative, as $ad-bc$ illustrates.
+
+One later-index falsification diagnostic is retained for reproducibility,
+without a family or unrestricted conclusion. For $A=\{0,1,3\}$ in one
+row and $n=2$, the actual ternary resultant is
+\[
+ \begin{split}
+ R_{A,2}(x)={}&60183678025728\,x^{36}
+ (1+x)^{10}(1+2x)^6(1+3x)^3\\
+ &{}\cdot(1+4x)^2(1+5x)^2 P_{23}(x),
+ \end{split}
+\]
+where all 24 coefficients of $P_{23}$ are positive integers.
+The expanded polynomial has degree 82 and 47 nonzero positive
+coefficients. The checker reconstructs it by a $36$ by $36$ Macaulay
+determinant divided by its $10$ by $10$ extraneous determinant.
+A separate binary calculation gives the identical polynomial:
+for $Y=bX+cX^3$, its centered quartic has invariants
+\[
+ I=\kappa_4+6\kappa_2^2,\qquad
+ J=\kappa_2\kappa_4+2\kappa_2^3-\kappa_3^2.
+\]
+The centered quartic is
+\[
+ q_4(t)=t^4+6\kappa_2t^2+4\kappa_3t+\kappa_4+3\kappa_2^2.
+\]
+Here $I=J=0$ gives
+$\kappa_4=-6\kappa_2^2$, $\kappa_3^2=-4\kappa_2^3$ and
+$q_4=(t-a)^3(t+3a)$, including $a=0$; monicity excludes infinity.
+
+Their binary resultant equals $R_{A,2}$ with scalar exactly one.
+To see the normalization, put $q_2=t^2+\kappa_2$ and
+$q_3=t^3+3\kappa_2t+\kappa_3$. The triangular identity
+$q_4-4tq_3+3q_2^2=I$ preserves the ternary resultant.
+Monic elimination in $t$ gives
+\[
+ \operatorname{Res}_t(q_2,q_3)
+       =T=\kappa_3^2+4\kappa_2^3=\kappa_2 I-J.
+\]
+Composition of these monic resultants gives
+$\operatorname{Res}(q_2,q_3,I)=\operatorname{Res}(I,T)
+=\operatorname{Res}(I,-J)=\operatorname{Res}(I,J)$,
+the last sign being $(-1)^4=1$. Centering the constant coefficient
+has determinant one. The checker also verifies the entire polynomial
+equality by the two determinant computations.
+This diagnostic has no general coefficient-positivity implication.
+It can be replayed using Sage 10.9:
+\begin{verbatim}
+sage -python verify_unrestricted_sfc_mechanisms.py --gamma-resultant-probe
+\end{verbatim}
 
 The self-contained
 \href{verify_unrestricted_sfc_mechanisms.py}{exact-control checker}
 verifies 31 instances of (1), 30 of (2), the Euler counterexample,
 finite-block coefficient identities and 32 instances of the toric
 degeneration formula, the complete exceptional-prime threshold table
-and rational controls for the four-maxima example, with
-corrupted-coefficient rejection. The all-index arguments, minimality and automorphism rigidity are the
-written proofs, not consequences of finite tests. Independent specialist
+and rational controls for the four-maxima example and row-coalescence
+normalizations, with corrupted-coefficient rejection. The all-index arguments, profile rigidity, minimality and automorphism
+rigidity are the written proofs, not consequences of finite tests. Independent specialist
 review, formal verification and a resolution of unrestricted SFC are not
 claimed.
 \end{document}

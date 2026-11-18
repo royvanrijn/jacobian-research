@@ -1,0 +1,112 @@
+{
+  "title": "Primitive discriminant -23 norms: C3 criterion and pointwise counts via exact prime profiles",
+  "proof": "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+  "checkers": [
+    "verify_primitive_norm_minus23.py",
+    "verify_primitive_norm_class3_profiles.py"
+  ],
+  "receipts": [
+    "primitive_norm_minus23_checks.json",
+    "primitive_norm_class3_profile_checks.json"
+  ],
+  "reproduction": [
+    "python3 research/arithmetic/verify_primitive_norm_minus23.py --output research/arithmetic/primitive_norm_minus23_checks.json",
+    "python3 research/arithmetic/verify_primitive_norm_class3_profiles.py --output research/arithmetic/primitive_norm_class3_profile_checks.json"
+  ],
+  "proof_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
+      "sha256": "b9df19e8aab65b6c074f5f92da5113c33f32a9dc731f6a6d554192a23e5914a2",
+      "scope": "Whole-prime-power orientation criterion for primitive principal norms; primitive local tests."
+    },
+    {
+      "path": "ASYMMETRIC_SUBGROUP_SPLITTING.md",
+      "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+      "scope": "H2 with quadratic kernel for L46; H9-H18 character/weighted uniform proof; section6 finite-block positive unweighting and direct inert-prime upper sieve."
+    },
+    {
+      "path": "ASYMMETRIC_FIXED_MODULUS_THEORY.md",
+      "sha256": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+      "scope": "FixedPeriodBoxesGeneral for arbitrary fixed period, used at92 with good varying modulus."
+    },
+    {
+      "path": "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+      "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+      "scope": "CN2Filter proof mechanism specialized explicitly to L46,t2 without genus labels; not the literal fixed-20 theorem statement."
+    },
+    {
+      "path": "ASYMMETRIC_SEMIGROUP_SCALE.md",
+      "sha256": "0543dba3878558cc47cae197a25d6371ba6b7d2110183b6f2de738d06b58cccb",
+      "scope": "Exact finite predicates, rough mass, cofactor restoration and recoverable-pattern argument; here keep the four absorber primes in the fixed block."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "version": "v3.08, 19 July 2020",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "local_path": "sources/milne-ant308.pdf",
+      "sha256": "24b83c789a89f25aebffb3cbe4ae5ca29edd0075acc072de093d140770630847",
+      "statements_used": [
+        "Theorem4.3, printedp70/PDFp72: Minkowski ideal-class representative bound.",
+        "Theorem4.29, printedp82/PDFp84: ideal-class/binary-form correspondence."
+      ],
+      "inspection_scope": "Root and internal reviewer inspected the actual retained3.08 PDF. The two classical theorems are imported; the explicit -23 class calculation and all primitive class-orientation restrictions are proved in the note. The old3.00 source is preserved separately."
+    },
+    {
+      "title": "Additive problems with almost prime squares",
+      "authors": "Valentin Blomer, Lasse Grimmelt, Junxian Li, Simon L. Rydin Myerson",
+      "version": "arXiv:2111.01601v5",
+      "url": "https://arxiv.org/pdf/2111.01601v5",
+      "local_path": "sources/blomer-grimmelt-li-rydin-myerson-2111.01601v5.pdf",
+      "sha256": "6cb425e37285b1a09aeeade57210948f885d40f1d4d7b337671cfbd0a4a4711f",
+      "statements_used": [
+        "Proposition5.1, PDFp15: signed bilinear dispersion with fixed progression periodc; actual printed c0/c, coprimality, scale, auxiliary-modulus and inverse-multiplier hypotheses."
+      ],
+      "inspection_scope": "Actual cached v5 statement read by root and internal reviewers. Reused through the exact application proof; the deep source proof itself is imported."
+    }
+  ],
+  "individual_criterion": {
+    "scope": "Any maximal imaginary quadratic order with classgroupC3; units2.",
+    "condition": "No inert factor, ramified valuations<=1, and r not1, where r counts distinct nonprincipal splitprime powers with exponent nonzero modulo3.",
+    "coordinate_count": "2^(s-r+1)*(2^r+2*(-1)^r)/3",
+    "minus23_infinite_local_global_failures": "2^(3a+1),2^(3a+2),a>=0"
+  },
+  "absorber": {
+    "primes": [
+      3,
+      13,
+      29,
+      31
+    ],
+    "product": 35061,
+    "guard": "Exactly exponent1 at assigned primes and residual coprimality to allfour; exclude the pool from every variable restoration factor.",
+    "counterexample_to_divisibility_only": 351,
+    "target_divisibility_templates": 16
+  },
+  "counting_scope": {
+    "statement": "For every sufficiently large N with529 not dividingN, ordered primitive principal norm valuepairs are comparable to N J_-23(N)/logN, with J over inert target primes.",
+    "fixed_parity_subsets": "Odd split core plus itself on even23unit targets; oddcore plus2oddcore on odd23unit targets. These are sufficient lower subsets only, not an exhaustive decomposition of P.",
+    "ramified_scaling": "N=23^eM,e0or1,23unitM; both constructed norms are23free and multiplication by23^e preserves primitivity.",
+    "upper_bound": "Direct inert-prime sieve ignoring class, ramification and2-adic restrictions; does not apply an odd-core upper theorem outside its parity hypotheses."
+  },
+  "finite_evidence": {
+    "individual_bound": 1000000,
+    "primitive_values": 145438,
+    "local_candidates": 215204,
+    "individual_class_obstructions": 69766,
+    "additive_exception_classification": false,
+    "Gamma_cases": 138,
+    "local_profile_cases": 15840,
+    "assignment_templates": 16,
+    "normalized_local_cases": 2432
+  },
+  "verification": "Root replayed both canonical checkers; separate internal agents reconstructed the C3 criterion/count, explicit prime certificates, all target profiles, uniform fixed-period analytic transfer, finite-block unweighting, ramification and direct upper bound. Independent internal replays matched receipts.",
+  "limitations": [
+    "The finite checkers do not prove the imported analytic estimates; their application and all completion steps are written explicitly.",
+    "No numerical eventual cutoff, unweighted leading constant or complete finite binary exception list.",
+    "No theorem for arbitrary class groups, nonmaximal orders or simultaneous norms is asserted here.",
+    "No external review, formal verification or established historical priority."
+  ]
+}
