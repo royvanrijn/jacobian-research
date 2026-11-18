@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "e8fde98a728c3a43165c60fac9e5d7410c1a37bfc4366fa45d2d11b45ef424d6",
+  "model_sha256": "76bd0fa9d42497f46de985c518bc0a3a430e8dbaf8d0b9404320894c2faf71c6",
+  "input_sha256": "2df79ad7b982098752f6fa2ce426fd2ce2d215058264f823f7ad600357b2873b",
+  "primary_source_sha256": "3cd7e239d8b01c79239789a97c26e466208d9cb216d9773574562c468c915a2e",
+  "literal_A12_certificate": {
+    "literal_primary_B_terms": 12,
+    "A_terms": 7,
+    "B_terms": 75,
+    "A_B_degrees": [
+      17,
+      80
+    ],
+    "A_B_w_degrees": [
+      12,
+      54
+    ],
+    "expanded_master_identity_over_Qi": true,
+    "polynomial_lift_conditions": true,
+    "critical_branch_curve_birationality_controls": true,
+    "geometric_monodromy_by_written_proof": "A12",
+    "coefficient_field": "Q(i)",
+    "arithmetic_group_over_Qi_by_discriminant_proof": "S12",
+    "constant_field": "Q(i,sqrt(3))"
+  },
+  "uniform_controls": {
+    "bounded_laurent_and_critical_controls": [
+      {
+        "m": 3,
+        "degree": 12,
+        "finite_3cycle_branches": 6,
+        "discriminant_squareclass": -3
+      },
+      {
+        "m": 5,
+        "degree": 30,
+        "finite_3cycle_branches": 15,
+        "discriminant_squareclass": 5
+      },
+      {
+        "m": 7,
+        "degree": 56,
+        "finite_3cycle_branches": 28,
+        "discriminant_squareclass": -7
+      },
+      {
+        "m": 9,
+        "degree": 90,
+        "finite_3cycle_branches": 45,
+        "discriminant_squareclass": 9
+      },
+      {
+        "m": 11,
+        "degree": 132,
+        "finite_3cycle_branches": 66,
+        "discriminant_squareclass": -11
+      },
+      {
+        "m": 13,
+        "degree": 182,
+        "finite_3cycle_branches": 91,
+        "discriminant_squareclass": 13
+      },
+      {
+        "m": 15,
+        "degree": 240,
+        "finite_3cycle_branches": 120,
+        "discriminant_squareclass": -15
+      }
+    ],
+    "symbolic_all_m_lift_root_identity": true,
+    "all_odd_m_statement_requires_written_polynomial_and_monodromy_proof": true
+  },
+  "negative_controls_rejected": 2,
+  "scope": {
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "no_Q_coefficient_polynomial_lift_claim": true,
+    "no_plane_realization_claim": true
+  },
+  "result": "PASS"
+}

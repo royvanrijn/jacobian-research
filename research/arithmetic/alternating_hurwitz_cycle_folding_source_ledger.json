@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
+  "assurance": "Internal primary-source inspection and exact braid/permutation computation; no general connectivity or priority claim.",
+  "sources": [
+    {
+      "id": "jones-zvonkin-cacti-2002",
+      "title": "Orbits of braid groups on cacti",
+      "authors": [
+        "Gareth A. Jones",
+        "Alexander Zvonkin"
+      ],
+      "version": "Moscow Mathematical Journal2(1),2002; retained author PDF printed129-162; publisher bibliographic edition127-160",
+      "primary_url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "doi": "10.17323/1609-4514-2002-2-1-127-160",
+      "retained_pdf": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "bytes": 304394,
+      "pdf_pages": 34,
+      "direct_read": true,
+      "extraction": "pdftotext -layout; Section1.1, retained printed129-131/PDF1-3, including Theorem1.1 and discussion after it inspected",
+      "inspected_statements": [
+        {
+          "locator": "Section1.1 cactus definition",
+          "printed_pages": "130",
+          "pdf_pages": "2",
+          "statement": "Genus-zero polynomial branch tuples have full-cycle product and the stated index sum; the braid action is by adjacent Hurwitz moves.",
+          "application": "Context for the odd-degree polynomial tuple obtained by coalescing the adjacent doubled-edge blocks."
+        },
+        {
+          "locator": "Theorem1.1 and following discussion",
+          "printed_pages": "131",
+          "pdf_pages": "3",
+          "statement": "Polynomial topological equivalence is equivalent to belonging to the same unrooted-cactus braid orbit. The discussion gives the limitation that identical monodromy groups can occur in different braid orbits.",
+          "application": "The lower group's identification as A_(n-1) does not establish connectivity or uniqueness of expansion orbits."
+        }
+      ],
+      "role": "Primary comparison and context, not an indispensable premise of the elementary graph-normalization theorem.",
+      "limits": "No universal braid-transitivity theorem for the exact DT^b,(n-1,1) passport was verified from this source. The historical general classification statements are not used as current completeness claims."
+    },
+    {
+      "id": "khovanskii-zdravkovska-branched-covers-1996",
+      "title": "Branched covers of S2 and braid groups",
+      "authors": [
+        "A.G. Khovanskii",
+        "Smilka Zdravkovska"
+      ],
+      "version": "Journal of Knot Theory and Its Ramifications5(1),1996,55-75",
+      "primary_url": "https://www.math.utoronto.ca/askold/1996-J-Knot-theor-5.pdf",
+      "retained_pdf": "research/arithmetic/sources/khovanskii-zdravkovska-branched-covers-1996.pdf",
+      "sha256": "28c38dbc00ff8e169e66525eeb046c849749eefdf8d038812038fe4211325d4b",
+      "bytes": 945796,
+      "pdf_pages": 21,
+      "direct_read": true,
+      "extraction": "Scanned PDF: visually inspected PDF2-4,12-13 / printed56-58,66-67.",
+      "inspected_statements": [
+        {
+          "locator": "Introduction; Theorem3 and proof Step1-2",
+          "printed_pages": "56-58,66-67",
+          "pdf_pages": "2-4,12-13",
+          "statement": "Topological uniqueness is unmarked. Theorem3 applies when the sum of local ramification orders at critical points above nonsimple finite critical values is at most degree+1.",
+          "application": "A DT value contributes2+2=4; a3-cycle value contributes3. The two coalesced passports have defects4b-4 and4b-5, exceeding degree+1=2b for b>=3."
+        }
+      ],
+      "role": "Exact scope comparison; no connectivity theorem imported.",
+      "limits": "The defect hypothesis fails. The theorem also does not specify the marked-strand stabilizer or its cabled attachment action."
+    }
+  ],
+  "existing_imported_inputs": [
+    {
+      "document": "research/arithmetic/alternating_hurwitz_source_ledger.json",
+      "locator": "Bilu-Strambi Theorem1.1 and Jones primitive-cycle theorem",
+      "role": "Realization of the coalesced genus-zero polynomial tuple; Jordan\u2019s prime-cycle theorem proves the full alternating group of the uniform link in Corollary4."
+    },
+    {
+      "document": "research/arithmetic/alternating_hurwitz_priority_ledger.json",
+      "locator": "Jones Proposition6.1(3)",
+      "role": "The coalesced primitive odd-degree group is A_(n-1) for n>=10."
+    },
+    {
+      "document": "research/arithmetic/DEGREE_EIGHT_HURWITZ_ORBIT.md",
+      "role": "Independent existing domain/count/group comparison for the exhaustive degree-eight normalization control."
+    }
+  ],
+  "checker": {
+    "path": "research/arithmetic/verify_alternating_hurwitz_cycle_folding.py",
+    "receipt": "research/arithmetic/alternating_hurwitz_cycle_folding_verification.json",
+    "seed_input": "research/arithmetic/verify_real_paired_laurent_matching.py",
+    "scope": "Complete n8 transitive fixed-product domain and explicit word replay; higher-degree deterministic controls only. Uniform correctness uses the written local moves and graph proof.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "uniform_attachment_certificate": {
+    "declaration": "Corollary6. Uniform attachment transitivity",
+    "checker": "research/arithmetic/verify_uniform_hurwitz_attachment.py",
+    "receipt": "research/arithmetic/uniform_hurwitz_attachment_verification.json",
+    "scope": "Four literal degree7 marked polynomial stabilizers with complete attachment/splitting cable replay; elementary tree leaf-extension gives both marked attachment conditions for every r>=3. Marked polynomial connectivity remains open in higher degrees.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  }
+}

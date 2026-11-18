@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/meridional-rank/representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_FAMILIES.md",
+  "proof_imports": [
+    {
+      "path": "research/meridional-rank/representations/UNIFORM_PROTECTED_AUGMENTATION_GAPS.md",
+      "sha256": "a19c720f0c4c6f2a7438f5d4b5434a6ce6faf38d2f5af75008b1951019fcdbb0",
+      "locator": "Theorem 1 and Section 3",
+      "supports": "All-b alternating coloring, protected augmentation bound, and original disk-framed circle surgery family."
+    },
+    {
+      "path": "research/meridional-rank/representations/PRIME_FIVE_BRIDGE_AUGMENTATION_GAP_FAMILY.md",
+      "sha256": "8f8e26269ea4d81d9787a50a248cadde7ec5b078396978b830f60b81ede7668d",
+      "locator": "Sections 3 and 5",
+      "supports": "Geometric disk surgery sign argument and fixed-parent volume distinctness argument."
+    },
+    {
+      "path": "research/meridional-rank/representations/PRIME_AUGMENTATION_GAP_FAMILY.tex",
+      "sha256": "88c50e979202a901d4a356ff7559816a8319e166ed66b181359967d74cadabed",
+      "locator": "Theorem thm:paired, first fourteen crossings and two local folds",
+      "supports": "Local rank-one root/covector obstruction used by the uniform protected-tail theorem."
+    },
+    {
+      "path": "research/meridional-rank/representations/GENERIC_KCH_EXTENSIONS.tex",
+      "sha256": "978cb91afcff56b4b187d2332c2b268dd2dedec182dea6eea5fca7b5517d9e6b",
+      "locator": "Lemma lem:cores, case 392",
+      "supports": "The reduced 13a_392 paired-span contradiction."
+    },
+    {
+      "path": "research/meridional-rank/representations/ALTERNATING_TARGET_PRIME_FAMILIES.tex",
+      "sha256": "76f6c14ef5decd9fdd799fa0dc7ce657412ae87dc17ba07d9e14685734c676e0",
+      "locator": "Theorem thm:targets",
+      "supports": "Two-new-symbol alternating generation and displacement lower bound."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/cornwell-kch-1310.7526v3.pdf",
+      "sha256": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+      "locator": "Theorem 1.2 and Definition 1.8",
+      "supports": "Augmentation rank and admitted irreducible KCH representation dimension."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/thurston-gt3m-2002-dehn-filling-volume-excerpts.pdf",
+      "sha256": "6e28be5d94ea982c1194a79a965d6d5b0fb88e0814c11424c8a690a14c410650",
+      "locator": "Theorem 5.8.2 printed p.104; Theorem 6.5.6 printed p.138",
+      "supports": "Two successive sufficiently-long Dehn filling arguments and strict volume decrease."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/futer-kalfagianni-purcell-dehn-volume-2006-author.pdf",
+      "sha256": "31440b1060c61c9c9842171a689f22f4ea1fc41f73413b543a1e1d28322752cb",
+      "locator": "Theorem 1.1, printed p.2, 18 December 2006 author edition",
+      "supports": "Volume lower bound approaching parent volume for long slopes, filling a subset of cusps."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/afw-3manifold-groups-final-author-2015.pdf",
+      "sha256": "31551e1a7cb6ce01026ba33e56806bfecf2c3e4d3afbec4dbf6c6bf0b7ef28ae",
+      "locator": "Theorem 1.7.1; proof of Theorem 2.5.1 printed p.36",
+      "supports": "Rigidity and hyperbolic knot primeness via abelian centralizers."
+    },
+    {
+      "path": "research/meridional-rank/representations/protected_universal_parent_candidate_inputs.json",
+      "sha256": "482429fc837606df1419be4931783836479885132135f1d3ba3a68dabe36cfe4",
+      "locator": "Literal fixed R,D braid, PD and full retained complete triangulation",
+      "supports": "The fixed three-cusped manifold N to which all source exteriors transfer."
+    },
+    {
+      "path": "research/meridional-rank/representations/verify_protected_universal_parent_candidate.py",
+      "sha256": "4a015f225de30ccffc7d77ee544bc3725920a7a39142036174fa78007d858700",
+      "locator": "Default exact diagram controls and --sage rigorous interval mode",
+      "supports": "Actual topology/geometry replay under the recorded source and kernel imports."
+    },
+    {
+      "path": "research/meridional-rank/representations/protected_universal_parent_candidate_geometry_verification.json",
+      "sha256": "4eceee66e32af91306d1889c4a8ac84bd0358c53a389e9f6608395a698b1085f",
+      "locator": "rigorous_parent_geometry",
+      "supports": "Fresh 100-bit Krawczyk interval certificate for fixed N; three cusps and 35 tetrahedra."
+    },
+    {
+      "path": "research/meridional-rank/representations/threaded_curl_uniform_transfer_inputs.json",
+      "sha256": "128b1bc7ea14e77dabcca0d20aeff319ff6834fca426acb0c70bf1ed182b0609",
+      "locator": "Two embedded-disk local cells, before/after pairings and boundary contracts",
+      "supports": "Finite clasp-slide and cap certificates used in the unrestricted induction."
+    },
+    {
+      "path": "research/meridional-rank/representations/verify_threaded_curl_uniform_transfer.py",
+      "sha256": "f8b4cc4a1bb5da2d4b3931480cb210a3e45103f6131b2227729d08bc08db1397",
+      "locator": "local_cells, disk_contract and exact_controls",
+      "supports": "Exact finite cell proof and bounded supplementary literal controls, fixing all U ports."
+    },
+    {
+      "path": "research/meridional-rank/representations/threaded_curl_uniform_transfer_verification.json",
+      "sha256": "3a387fcccdb82d2ca587b71f1ae6cba870d3b850c9c31815bb5c5f0686229d01",
+      "locator": "local_tangle_cells and literal_controls",
+      "supports": "Actual current-byte replay receipt, including bad-port/boundary controls."
+    }
+  ],
+  "retained_software_imports": [
+    {
+      "path": "research/meridional-rank/representations/sources/uniform5-snappy332-init.py",
+      "sha256": "ec32a0e700665926426bc3a178680463f40c5a50695776b653caa99c2c112277",
+      "locator": "_link_exterior",
+      "supports": "Actual Link.exterior interface calls KLPProjection and pinned kernel triangulation."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/uniform5-spherogram241-links-base.py",
+      "sha256": "c6f325a15606788ad9a1fc5a895d31274132c4edd5a453dfc41eb1aaabf5a1e0",
+      "locator": "Link and KLPProjection",
+      "supports": "Actual spherical PD and link-component topology interface."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/uniform5-spherogram241-invariants.py",
+      "sha256": "a7e94703f79839abe673b5233dd62b40fc3992a163b90d827f292b4ff1118c9e",
+      "locator": "Link subclass",
+      "supports": "Actual Sage-compatible Link class edition."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-krawczyk.py",
+      "sha256": "972e3edd0551e54a3ab51082930ddaa81248afe4b682d3c4c4a2546d3bd8c82e",
+      "locator": "KrawczykShapesEngine",
+      "supports": "Rigorous interval existence calculation."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-hyperbolicity.py",
+      "sha256": "f5e69438d31213565de8fa44246f9ccae2be1b03ce5565a9a53846cb4ed3028e",
+      "locator": "verify_hyperbolicity and logarithmic gluing tests",
+      "supports": "Complete hyperbolicity verification and positive tetrahedron orientation checks."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-shapes.py",
+      "sha256": "d7c21fe191ec63945100241e3b94faed7977eeab6b524fe32d83b37d83e9667f",
+      "locator": "SnapPy 3.3.2 shape routines",
+      "supports": "Initial shape numerical polishing used by interval calculation."
+    }
+  ],
+  "primary_source_identity": {
+    "thurston": {
+      "author": "William P. Thurston",
+      "title": "The Geometry and Topology of Three-Manifolds",
+      "edition": "Electronic version 1.1, March 2002; original 1980 Princeton notes",
+      "retrieved_url": "https://ncatlab.org/nlab/files/Thurston-3dGeometry-2002.pdf",
+      "original_full_pdf_sha256": "c6a0ed3e158139722f044e8b3c1ff7fd19315b8f625e278e0c1530be2b00cfdf",
+      "retained_original_pdf_pages_one_based": [
+        1,
+        115,
+        116,
+        117,
+        149,
+        150,
+        151,
+        152
+      ],
+      "extraction": "pdfseparate followed by pdfunite, source page graphics/text unchanged",
+      "inspected_statements": [
+        "Theorem 5.8.2 and neighboring proof",
+        "Theorem 6.5.6 and proof"
+      ]
+    },
+    "futer_kalfagianni_purcell": {
+      "authors": [
+        "David Futer",
+        "Efstratia Kalfagianni",
+        "Jessica S. Purcell"
+      ],
+      "title": "Dehn filling, volume, and the Jones polynomial",
+      "edition": "18 December 2006 author PDF",
+      "retrieved_url": "https://users.monash.edu/~jpurcell/papers/futer-kalfagianni-purcell.pdf",
+      "inspected_statement": "Theorem 1.1 printed p.2 including subset-of-cusps and geometrization clauses",
+      "application": "Long fillings already hyperbolic by Thurston, hence satisfy geometrization; fill one cusp and keep one complete."
+    }
+  },
+  "runtime_versions": {
+    "sage": "10.9",
+    "snappy": "3.3.2",
+    "spherogram": "2.4.1",
+    "python": "3.14.7"
+  },
+  "runtime_analytic_source_hashes": {
+    "snappy.verify.krawczyk_shapes_engine": "972e3edd0551e54a3ab51082930ddaa81248afe4b682d3c4c4a2546d3bd8c82e",
+    "snappy.verify.hyperbolicity": "f5e69438d31213565de8fa44246f9ccae2be1b03ce5565a9a53846cb4ed3028e",
+    "snappy.snap.shapes": "d7c21fe191ec63945100241e3b94faed7977eeab6b524fe32d83b37d83e9667f"
+  },
+  "runtime_topology_source_hashes": {
+    "snappy": "ec32a0e700665926426bc3a178680463f40c5a50695776b653caa99c2c112277",
+    "spherogram.links.links_base": "c6f325a15606788ad9a1fc5a895d31274132c4edd5a453dfc41eb1aaabf5a1e0",
+    "spherogram.links.invariants": "a7e94703f79839abe673b5233dd62b40fc3992a163b90d827f292b4ff1118c9e"
+  },
+  "runtime_kernel_binary": {
+    "file": "SnapPy.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f7002569b43cfa366aab8ee5d19b4afe653478793c1db23a96dcfd621f431c8d"
+  },
+  "claims": {
+    "uniform_topology": "For every b>=5, unmarked M_b is homeomorphic to N filled on D at (1,-(b-5)).",
+    "uniform_port_proof": "Two finite embedded-disk cells and written induction; actual literal source/target controls b=5..64 are supplementary.",
+    "all_parameter_gap": "For every b>=5,k>=0, ar_C<=b-1<mr=br=b.",
+    "prime_quantifier": "There exists B such that every b>=B has a threshold k0(b), and every k>=k0(b) is hyperbolic/prime.",
+    "distinctness": "For every such b, infinitely many distinct knot types occur.",
+    "non_effective_limits": "No effective B, no uniform k0, no assertion that every b>=5 parent is hyperbolic.",
+    "peripheral_scope": "The all-b transfer is unmarked on the old circle; second filling uses original M_b disk framing separately.",
+    "priority": "No novelty or literature priority conclusion."
+  },
+  "assurance": {
+    "finite_port_replay": "PASS",
+    "fixed_N_rigorous_interval_replay": "PASS",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "internal_agent_critical_audit": "PASS: separate internal review checked oriented embedded-disk cells, source RII induction, open four-port target contract, rail/cap induction, component/framing scope and both Dehn-filling quantifiers; no external review or formal verification."
+  }
+}

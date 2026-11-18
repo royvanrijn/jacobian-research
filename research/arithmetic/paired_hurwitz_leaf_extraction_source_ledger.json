@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md",
+  "assurance": "Internal written uniform overlap gate, exact local identities and conditional tree deletion; no arbitrary-input leaf extraction or global orbit classification.",
+  "declarations": [
+    {
+      "name": "Lemma1. Pure four-move extraction",
+      "scope": "Adjacent three-DT pattern with eight distinct labels; both pivot labels are fixed by every other factor. The pure word(-1,-2,-2,-1) gives two exclusive leaves and preserves every branch label."
+    },
+    {
+      "name": "Corollary2. Exact cyclic recursion down to degree nine",
+      "scope": "The cyclic canonical family reduces exactly to its preceding member after each conditional extraction and explicit relabeling; full A_n is retained until degree9."
+    },
+    {
+      "name": "Lemma3. Evacuating a block of external pivot interactions",
+      "scope": "An exact3m-move block braid conjugates external factors by E and the two core factors by their ordered product. Anchor fixing and the stated product-fixed-set test give a complete conditional cleanup and deletion."
+    },
+    {
+      "name": "Exact limitations of stronger extraction claims",
+      "scope": "Full A13 controls disprove dropping either the external-support condition for the four-move extraction or the anchor-fixing condition for the evacuation. The first control is repaired by the new evacuation lemma. A degree9 cyclic core deletes to a proper degree7 group of order168."
+    },
+    {
+      "name": "Lemma4. The even-overlap code is a Hurwitz invariant",
+      "scope": "The binary support span is self-orthogonal and literally Hurwitz invariant when all intersections are even. Its invariance under the generated group forces an odd pair for every full A_n tuple."
+    },
+    {
+      "name": "Theorem5. Every full-alternating DT tree reaches overlap one",
+      "scope": "Arbitrary polynomial DT input with full A_n and N>5 reaches an adjacent overlap-one pair, using the odd-pair lemma, a five-cycle core rotation and unchanged-factor bringing."
+    },
+    {
+      "name": "Lemma6. An overlap-one pair exchanges its secondary edges",
+      "scope": "A literal Q^3 identity exchanges the two secondary edges while retaining the uncolored tree at that stage."
+    }
+  ],
+  "inputs": [
+    {
+      "path": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
+      "sha256": "806a421b8e2ff6081623dc4b7f7f628aaf36fcbf1446396e1d55ebb840d13c1e",
+      "locator": "Theorem2",
+      "role": "Uniform cyclic tuple; full A_n follows by an explicit3-cycle, primitivity and Jordan."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
+      "sha256": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+      "locator": "Corollary4 tree-product fact",
+      "role": "Deleting exclusive leaves leaves a tree whose edge product is a full cycle."
+    },
+    {
+      "path": "research/arithmetic/verify_unmarked_polynomial_hurwitz_reduction.py",
+      "sha256": "c2a1ff752f6dee310c337625a4be8caf592e09db1f5a2116517bd79f2170e7a6",
+      "locator": "permutation primitives",
+      "role": "Exact composition, Hurwitz moves and strand-permutation helpers; hash bound by the new checker."
+    }
+  ],
+  "evidence": {
+    "checker": "research/arithmetic/verify_paired_hurwitz_leaf_extraction.py",
+    "receipt": "research/arithmetic/paired_hurwitz_leaf_extraction_verification.json",
+    "scope": "Exact extraction and block evacuation; cyclic controls through r50; all72 allowed external anchors; marked T window; paired blocker; complete degree7 domain392 and its group orders; overlap gate and exchange for all294 full A7 inputs; all5985 even-intersection DT pair updates; higher-degree deterministic gate controls."
+  },
+  "remaining_frontier": "Use the arbitrary-input overlap-one gate and local exchanges to extract two exclusive leaves, then control all lower-degree extensions. No uniform connectivity theorem or new full-alternating orbit distinction.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

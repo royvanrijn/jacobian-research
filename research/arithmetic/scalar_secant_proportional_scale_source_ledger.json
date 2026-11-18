@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md",
+  "claims": {
+    "uniform_theorem": "No good paired odd Laurent pencil N(z^2)/z with N monic of even degree2h and real coefficients has a scalar secant a and reciprocal scale rho=c*M with real c.",
+    "field_scope": "Every subfield of R, including Q; no restriction that the critical points be real.",
+    "trace_witness": "The integer polynomial B_h(x) is positive on all of R for every h>=1; its vanishing would be necessary on the excluded slice.",
+    "scope_limits": [
+      "No complete degree12 or26 obstruction.",
+      "No rational existence or nonexistence claim for the unrestricted trace chart.",
+      "Nonconstant a and affine scale rho=r0+c*M with r0*c!=0 remain outside these results.",
+      "The proportional-scale theorem uses real a,c; the constant-scale proposition works over C.",
+      "Bounded exact controls h=1,...,12 supplement the uniform written proofs.",
+      "No novelty or priority determination."
+    ],
+    "both_scalar_complex_proposition": "No good paired odd Laurent pencil N(z^2)/z with even-degree monic complex numerator has both a and rho base scalars.",
+    "affine_endpoint_scope": "For scalar a and rho=r0+c*M, the endpoint r0=0 is excluded over R and the endpoint c=0 is excluded over C. The case r0*c!=0 remains outside the obstruction."
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md",
+      "sha256": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+      "locator": "Statement and canonical quadratic presentation",
+      "role": "Frozen uniform paired-critical chart supplies the units a,rho and the paired-value involution."
+    },
+    {
+      "path": "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md",
+      "sha256": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+      "locator": "Complete written theorem and proof",
+      "role": "Uniform real proportional-scale obstruction and complex constant-scale obstruction, with original theorem preserved."
+    },
+    {
+      "path": "research/arithmetic/verify_scalar_secant_proportional_scale.py",
+      "sha256": "9a5b5dffa862e6e63c0b0a2f4aaabea1016d917db8a94fb8f333928b21b8a280",
+      "locator": "main",
+      "role": "Exact symbolic Euler and monic identities, reciprocal coefficient controls, trace identities and Sturm checks for h=1,...,12."
+    },
+    {
+      "path": "research/arithmetic/scalar_secant_proportional_scale_verification.json",
+      "sha256": "a30463080f6f2096639e3b2e2a011a670da98402521eae14e4f9e39443358845",
+      "locator": "All controls and witness coefficients",
+      "role": "Actual exact internal checker execution; finite controls do not replace the all-h proof."
+    }
+  ],
+  "external_sources": [],
+  "external_import_limit": "No new external theorem is needed beyond elementary polynomial identities, the real arithmetic-geometric mean inequality and the retained trace-chart theorem.",
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        {
+          "reviewer": "/root",
+          "result": "PASS",
+          "scope": "Actual independent derivation and critical read of the original all-h proof, constant identity, trace witness and positivity. Separately independently derived the both-scalar Euler/reciprocity obstruction and requested its retention. Updated checker replay not yet reported."
+        },
+        {
+          "reviewer": "/root/moonshot_hasse",
+          "result": "PASS",
+          "scope": "Actual independent critical audit PASS of both uniform proofs, including the added complex both-scalar Euler/reciprocity argument and the m=2 repeated-root exception. Updated full checker replay .scratch/independent_scalar_secant_prop2_replay.json exactly matches retained receipt; all three receipt input pins match. Original separate audit also verified all four source-ledger pins."
+        }
+      ],
+      "limits": "Internal agent reviews only; no external or formal assurance upgrade.",
+      "revision_note": "Original theorem/proof preserved. Added Proposition2 and updated checker received a second completed internal critical review and separate exact replay.",
+      "reviewed_note_sha256": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+      "reviewed_checker_sha256": "9a5b5dffa862e6e63c0b0a2f4aaabea1016d917db8a94fb8f333928b21b8a280",
+      "reviewed_receipt_sha256": "a30463080f6f2096639e3b2e2a011a670da98402521eae14e4f9e39443358845"
+    },
+    "priority_assessment": "Not performed."
+  }
+}

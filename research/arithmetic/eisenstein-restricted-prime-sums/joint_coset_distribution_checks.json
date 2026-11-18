@@ -1,0 +1,70 @@
+{
+  "coverage": "Finite exact recurrence, local density and negative controls only; not the spectral theorem or all-target estimate.",
+  "checker_sha256": "83644104db4422902b80d57c5325d3153dc433060350bd3d00f175b56785a5d4",
+  "source_sha256": "ec457ce3f9b3aeabff7ad1f0f1f61006764b0560676b802d45e640a2d8254c6a",
+  "python": "3.12.3",
+  "single_split_recurrence_cases": 74,
+  "asymmetric_weight": "(1-t^2)(1+t/3), exact rational arithmetic, endpoints omitted as zero",
+  "multiple_singular_cases": [
+    [
+      364,
+      [
+        7,
+        13
+      ],
+      "504"
+    ],
+    [
+      2548,
+      [
+        7,
+        13
+      ],
+      "629082/343"
+    ],
+    [
+      4732,
+      [
+        13,
+        7
+      ],
+      "6761934/2197"
+    ],
+    [
+      140,
+      [
+        7,
+        5
+      ],
+      "0"
+    ],
+    [
+      700,
+      [
+        5,
+        7
+      ],
+      "126"
+    ]
+  ],
+  "scalar_density_checks": 240,
+  "scalar_max_exponent": 60,
+  "prime_square": {
+    "p": 7,
+    "invertible_matrices": 4840416,
+    "class_totals": [
+      2420208,
+      2420208
+    ],
+    "class_events": [
+      444528,
+      444528
+    ],
+    "exact_density": "9/49"
+  },
+  "negative_controls": {
+    "perturbed_a1_rejected": true,
+    "perturbed_C6_rejected": true
+  },
+  "outcome": "PASS"
+}

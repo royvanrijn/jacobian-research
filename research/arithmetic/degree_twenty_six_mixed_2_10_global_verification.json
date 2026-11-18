@@ -1,0 +1,83 @@
+{
+  "affine_cpp": {
+    "first_two_candidates": 3758,
+    "points": []
+  },
+  "affine_python": {
+    "first_two_candidates": 3758,
+    "points": []
+  },
+  "conclusion": "The entire four-equation affine closure has no Q61 point, hence no rational point. No nondegenerate rational degree26 reciprocal model with sign degrees2+10 in either orientation exists.",
+  "covers_arbitrary_denominators": true,
+  "half_integral_chart": {
+    "coefficient_mod61": 19,
+    "only_b_polynomial": "124215*b**3"
+  },
+  "independent_enumerations_agree": true,
+  "prime": 61,
+  "python": "3.12.3",
+  "remaining_cases": [
+    "squarelambda4+8",
+    "squarelambda6+6",
+    "nonsquarelambda6+6"
+  ],
+  "saturation_or_good_reduction_hypothesis": false,
+  "schema_version": 1,
+  "sha256": {
+    "research/arithmetic/DEGREE_TWENTY_SIX_MIXED_2_10_GLOBAL_OBSTRUCTION.md": "00698e68db7196e1811442a37560eab55970859d0c819ae9ebb922be2af2112b",
+    "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+    "research/arithmetic/degree26_mixed_2_10_system.json": "113cc6740b2e40df3f6306eb94b7343552aafe9e24bf60a1d68ec6f5938db997",
+    "research/arithmetic/verify_degree_twenty_six_mixed_2_10_finite_field.cpp": "08d0694a5645f6e0e9c768764f1bd9038f92462c53c7420f0a68812879e08822",
+    "research/arithmetic/verify_degree_twenty_six_mixed_2_10_global.py": "a7e51cd95899e83932a98c05e2b9437dd132fd64ca2ea4a8028c2d8f96e1739e",
+    "research/arithmetic/verify_mixed_reciprocal_coupled_ode.py": "73ce6639cb20e2c7bb1947138acc4e8d499b8143e9f0c9320729c38a71d52f29"
+  },
+  "status": "PASS",
+  "sympy": "1.14.0",
+  "valuation_argument": "The written weighted residue lemma excludes nonintegral Q61 coordinates after a totally ramified quadratic rescaling; integral coordinates are excluded by the affine census.",
+  "variables": [
+    "a",
+    "b",
+    "c",
+    "r"
+  ],
+  "weighted_degrees": [
+    7,
+    6,
+    11,
+    12
+  ],
+  "weighted_leading_cpp": {
+    "first_two_candidates": 10921,
+    "points": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "weighted_leading_forms": [
+    "-33649*a**5*b - 36575*a**4*b*c - 36575*a**4*b*r + 137940*a**3*b**2 - 40425*a**3*b*c*r + 113025*a**2*b**2*c + 113025*a**2*b**2*r - 106395*a*b**3 + 83930*a*b**2*c*r - 39015*b**3*c - 39015*b**3*r",
+    "-100947*a**6 - 109725*a**5*c - 109725*a**5*r + 533995*a**4*b - 121275*a**4*c*r + 469700*a**3*b*c + 469700*a**3*b*r - 685410*a**2*b**2 + 396165*a**2*b*c*r - 383295*a*b**2*c - 383295*a*b**2*r + 124215*b**3 - 147875*b**2*c*r",
+    "660698115*a**5*c**6 - 900951975*a**5*c**5*r + 357264600*a**4*c**7 + 210781725*a**4*c**6*r - 979295625*a**4*c**5*r**2 - 2708451900*a**3*b*c**6 + 3693343500*a**3*b*c**5*r - 159159000*a**3*c**8 + 619172400*a**3*c**7*r - 569415000*a**3*c**6*r**2 - 1119472200*a**2*b*c**7 - 631167075*a**2*b*c**6*r + 3026244375*a**2*b*c**5*r**2 + 89832600*a**2*c**9 - 299098800*a**2*c**8*r + 246015000*a**2*c**7*r**2 + 2089065825*a*b**2*c**6 - 2848726125*a*b**2*c**5*r + 327927600*a*b*c**8 - 1296593760*a*b*c**7*r + 1201662000*a*b*c**6*r**2 - 56885400*a*c**10 + 175546800*a*c**9*r - 135135000*a*c**8*r**2 + 393041880*b**2*c**7 + 209225205*b**2*c**6*r - 1044626625*b**2*c**5*r**2 - 91891800*b*c**9 + 308708400*b*c**8*r - 255255000*b*c**7*r**2 + 38682072*c**11 - 113770800*c**10*r + 83655000*c**9*r**2",
+    "-900951975*a**5*c*r**6 + 660698115*a**5*r**7 - 979295625*a**4*c**2*r**6 + 210781725*a**4*c*r**7 + 357264600*a**4*r**8 + 3693343500*a**3*b*c*r**6 - 2708451900*a**3*b*r**7 - 569415000*a**3*c**2*r**7 + 619172400*a**3*c*r**8 - 159159000*a**3*r**9 + 3026244375*a**2*b*c**2*r**6 - 631167075*a**2*b*c*r**7 - 1119472200*a**2*b*r**8 + 246015000*a**2*c**2*r**8 - 299098800*a**2*c*r**9 + 89832600*a**2*r**10 - 2848726125*a*b**2*c*r**6 + 2089065825*a*b**2*r**7 + 1201662000*a*b*c**2*r**7 - 1296593760*a*b*c*r**8 + 327927600*a*b*r**9 - 135135000*a*c**2*r**9 + 175546800*a*c*r**10 - 56885400*a*r**11 - 1044626625*b**2*c**2*r**6 + 209225205*b**2*c*r**7 + 393041880*b**2*r**8 - 255255000*b*c**2*r**8 + 308708400*b*c*r**9 - 91891800*b*r**10 + 83655000*c**2*r**10 - 113770800*c*r**11 + 38682072*r**12"
+  ],
+  "weighted_leading_python": {
+    "first_two_candidates": 10921,
+    "points": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "weights": [
+    1,
+    2,
+    1,
+    1
+  ]
+}

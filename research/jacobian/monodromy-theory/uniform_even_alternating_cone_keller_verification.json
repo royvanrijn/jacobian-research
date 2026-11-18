@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "15ebfdc8491e032c13593109299a0d0c7867f6fc48cb8c241d458e601976069d",
+  "primary_source_sha256": "3cd7e239d8b01c79239789a97c26e466208d9cb216d9773574562c468c915a2e",
+  "symbolic_seed": {
+    "all_d_moment_and_lift_identity": true,
+    "exact_equation6": true,
+    "fixed_admissible_coefficient_field": "Q(sqrt(-3))"
+  },
+  "bounded_controls": [
+    {
+      "d": 3,
+      "generic_degree": 6,
+      "component_degrees": [
+        15,
+        27,
+        3
+      ],
+      "finite_3cycle_branches": 3,
+      "discriminant_squareclass": 5
+    },
+    {
+      "d": 4,
+      "generic_degree": 8,
+      "component_degrees": [
+        21,
+        39,
+        3
+      ],
+      "finite_3cycle_branches": 4,
+      "discriminant_squareclass": -7
+    },
+    {
+      "d": 5,
+      "generic_degree": 10,
+      "component_degrees": [
+        27,
+        51,
+        3
+      ],
+      "finite_3cycle_branches": 5,
+      "discriminant_squareclass": 9
+    },
+    {
+      "d": 6,
+      "generic_degree": 12,
+      "component_degrees": [
+        33,
+        63,
+        3
+      ],
+      "finite_3cycle_branches": 6,
+      "discriminant_squareclass": -11
+    },
+    {
+      "d": 13,
+      "generic_degree": 26,
+      "component_degrees": [
+        75,
+        147,
+        3
+      ],
+      "finite_3cycle_branches": 13,
+      "discriminant_squareclass": 25
+    },
+    {
+      "d": 25,
+      "generic_degree": 50,
+      "component_degrees": [
+        147,
+        291,
+        3
+      ],
+      "finite_3cycle_branches": 25,
+      "discriminant_squareclass": 49
+    }
+  ],
+  "direct_polynomial_maps": [
+    {
+      "d": 3,
+      "polynomial_component_degrees": [
+        15,
+        27,
+        3
+      ],
+      "monomial_counts": [
+        20,
+        54,
+        2
+      ],
+      "direct_determinant": -1,
+      "elapsed_seconds": 0.289
+    },
+    {
+      "d": 5,
+      "polynomial_component_degrees": [
+        27,
+        51,
+        3
+      ],
+      "monomial_counts": [
+        54,
+        170,
+        2
+      ],
+      "direct_determinant": -1,
+      "elapsed_seconds": 4.345
+    }
+  ],
+  "full_discriminant": {
+    "degree": 6,
+    "full_identity_Disc_equals_5_times_resultant_over_bY_squared": true,
+    "elapsed_seconds": 0.161
+  },
+  "whole_fibre_reconstruction": {
+    "rational_algebra_identities": true,
+    "required_units": [
+      "W",
+      "T"
+    ],
+    "units_and_entire_scheme_isomorphism_require_written_proof": true
+  },
+  "negative_controls_rejected": 2,
+  "result": "PASS",
+  "scope": {
+    "written_uniform_proof_required": true,
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "no_rational_coefficient_descent": true,
+    "no_plane_realization": true,
+    "no_double_transposition_passport_claim": true
+  }
+}

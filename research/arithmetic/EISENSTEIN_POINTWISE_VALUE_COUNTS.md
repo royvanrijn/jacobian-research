@@ -4,7 +4,15 @@ The coordinate supply in the power-window theorem gives a logarithmic lower
 bound for the number of distinct value pairs. The additional input is an
 upper bound for a fixed higher moment of the coordinate multiplicity. The
 argument applies to every sufficiently large admissible target, including
-targets with arbitrarily large prime-power factors.
+targets with arbitrarily large prime-power factors. For central power windows,
+the separate [cofactor theorem EisSemigroupScale](EISENSTEIN_POINTWISE_SEMIGROUP_SCALE.md)
+now gives the stronger matching order \(n^\theta J(n)/\log n\) throughout
+\(2/3<\theta<1\). The moment argument here also covers arbitrary fixed
+macroscopic intervals as stated below. The separate
+[moving-window theorem EisLocationWindows](EISENSTEIN_MOVING_WINDOWS.md)
+now supplies the matching order \(nJ(n)/\log n\) in every fixed positive
+macroscopic interval, and \(HJ(n)/\log n\) in its stated translated
+shrinking windows.
 
 Let
 \[
@@ -202,7 +210,9 @@ EisValueCounts for every sufficiently large admissible target.
 The exponent \(\log4\) is the infimum available from these moments:
 convexity gives \((2^s-2)/(s-1)\ge2\log2\) for every \(s>1\).
 The expected \(H/\log n\) pointwise scale therefore needs additional
-information beyond this moment-transfer argument.
+information beyond this moment-transfer argument. The separate cofactor
+amplification provides that information for the central windows in
+EisSemigroupScale and the translated windows of EisLocationWindows.
 
 ## Macroscopic intervals
 
@@ -213,7 +223,8 @@ or prescribed mixed family has
  \gg_{I,\nu}\frac n{(\log n)^{\log4+\nu}}
 \]
 distinct ordered value pairs with first actual summand in \(nI\), for all
-sufficiently large admissible targets.
+sufficiently large admissible targets. This moment bound is weaker than
+the matching macroscopic order proved separately in EisLocationWindows.
 
 Choose a fixed compact subinterval \(J\subset I\cap(0,1)\), short enough
 that its length is less than its left endpoint. The
@@ -226,12 +237,18 @@ actual summands between \(n/3\) and \(2n/3\).
 
 ## Scope and attribution
 
+The [bounded prime factor theorem](EISENSTEIN_BOUNDED_PRIME_FACTORS.md)
+adds roughness and a fixed bound on the number of prime factors in each
+permitted part, with a lower count of order \(n^\theta/(\log n)^2\).
+
 The lower bound uses EisPower or EisAngle. Henriot's corrected theorem supplies
 only the upper moment; no sieve lower-bound theorem is imported from it.
 The independent-form correlation theorem is not applied to the proportional
-linear parts of \(t\) and \(n-t\). This result neither supplies the
-simultaneous modulus-12 pointwise lower bound nor reaches the conjectured
-Eisenstein semigroup-scale count.
+linear parts of \(t\) and \(n-t\). The moment transfer itself gives the
+weaker logarithmic exponent shown here; the cofactor theorem attains the
+expected Eisenstein scale in the central and translated windows proved in
+EisSemigroupScale and EisLocationWindows. The simultaneous modulus-12
+every-target lower bound remains open.
 
 The corrected local factors, target-valuation uniformity, finite factors at
 2 and 3, interval parameters, coordinate fibers and Hölder conversion received

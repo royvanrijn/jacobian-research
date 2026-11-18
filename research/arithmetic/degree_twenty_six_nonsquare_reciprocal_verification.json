@@ -1,0 +1,716 @@
+{
+  "all_emitted_integer_literals_at_most_37": true,
+  "discarded_unreduced_large_integer_experiment_used": false,
+  "eta_zero_exclusion": {
+    "integer_constant": 6692786100,
+    "residue": 30
+  },
+  "external_human_review": false,
+  "formal_verification": false,
+  "fresh_exact_msolve_eliminations": [
+    {
+      "eta": 2,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 2,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 5,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 5,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 6,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 6,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 8,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 8,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 13,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 13,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 14,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 14,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 15,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 15,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 17,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 17,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 18,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 18,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 19,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 19,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 20,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 20,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 22,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 22,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 23,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 23,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 24,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 24,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 29,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 29,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 31,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 31,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 32,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 32,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 35,
+      "exact_linear_algebra_variant": 2,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    },
+    {
+      "eta": 35,
+      "exact_linear_algebra_variant": 1,
+      "output_sha256": "fea3c786e34a622eaa5efc46309a2bb1ba25c1e009f7c5214da588cf599c6080",
+      "unit_basis": [
+        1
+      ]
+    }
+  ],
+  "full_reciprocal_conclusion_uses_prior_uniform_and_unbalanced_obstructions": true,
+  "general_nonreciprocal_degree26_existence_claim": false,
+  "independent_Singular_record": {
+    "all18_direct_ODE_bindings": true,
+    "all18_independent_Singular_unit_ideals": true,
+    "retained_record_sha256": "4c8efb0c28d3df874415c03bca8998056768bd6635ec4efbb0185347fc11323b",
+    "status": "PASS"
+  },
+  "msolve_binary_sha256": "c2722288d22c3a1eab00c0b818d0204d4a98104d059b2fd4ecb7343e8ef759fa",
+  "nonsquare_cases": [
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 2,
+      "input_sha256": "1ad70842160c87fa3ffda9d387b5bb3ff0ca5f26c27ecbee7181d82750d6ae60"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 5,
+      "input_sha256": "43ef64c52e61fc872080a82bcdfcfed15ed95f12d5180d2d2d1c6b961d74dd1c"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 6,
+      "input_sha256": "3ee5cd75db339c1b8dacd937534556e6725ae19603d6bdc981f18e5901a6f374"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 8,
+      "input_sha256": "9b5857f8695ab74e8bd99342c643b41bdfb4ce6d620cce2793a431a8f4015bad"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 13,
+      "input_sha256": "c80d8990f95959e6815fd20594eb2dcffa13a7eb986c3273c8e04dc27a279225"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 14,
+      "input_sha256": "92d0bac3791ad05e9723f772606f9bf14481a56da38b5df3f735d10a6dfad3ae"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 15,
+      "input_sha256": "e06db7063d298edc39190c23403d0857d031f51554d32e95e319b7d864563cd4"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 17,
+      "input_sha256": "39ccb6f201c2abd52a57c8b7eca046a77adfd27e1864ad57d9ac5e08175b8f76"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 18,
+      "input_sha256": "4171e452eef6598e9d8af3d6c4f70c66f854a6077eff9f9cb72c258114995fdd"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 19,
+      "input_sha256": "98b8001fad6282fe6b50fb46dd71a8f449f440768ff8f8e5713f559392338335"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 20,
+      "input_sha256": "5587010034494b20fe47e8e3217dfcb98372c440ea8c510a85ea93c005480e56"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 22,
+      "input_sha256": "964d900e714e79ada5720316af08e287b62bb0c5e80bfff9ba9b9fb902414393"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 23,
+      "input_sha256": "9871684eb42fc743f6c32e575ed468b8c3bdad6382d5b259ad3ffcde52de02a5"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 24,
+      "input_sha256": "ed4337703fa3a9db668b64381b59007510541f26e361cb1757d8c5883e049de1"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 29,
+      "input_sha256": "05e9ac6e4aa36e42aa021c2000bd0cbbe403bd8c86cd5b662aa316204b585fe4"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 31,
+      "input_sha256": "e40fce773577d4f3d1709e101b589751d4293c15210bd2c75a51cf6fc9f40167"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 32,
+      "input_sha256": "17267b264294b7fe5bd33aa32a1c1a6da1643e6fdb356dee8846e4870b5b8641"
+    },
+    {
+      "equation_term_counts": [
+        251,
+        251,
+        357,
+        357,
+        418,
+        415,
+        326,
+        322,
+        229,
+        235,
+        148,
+        147,
+        16
+      ],
+      "eta": 35,
+      "input_sha256": "cd8c1d4032d6f5ca6b2f512fa80234e3dbf97d16627eee8857d68b350fad06e5"
+    }
+  ],
+  "nonsquare_residues": [
+    2,
+    5,
+    6,
+    8,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    29,
+    31,
+    32,
+    35
+  ],
+  "normalized_good_reciprocal_degree26_rational_model_exists": false,
+  "prime": 37,
+  "schema_version": 1,
+  "sha256": {
+    "research/arithmetic/BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md": "8390df96affa573870162e36a153c101e626216662a148aa318e6eed6a1ba073",
+    "research/arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md": "af9ff4711660ad380e79a3c3e8cf4ed8c244167fc851b0f8d018d6b41fb037ec",
+    "research/arithmetic/DEGREE_TWENTY_SIX_RECIPROCAL_GLOBAL_OBSTRUCTION.md": "953f984d22c6099c533f1609abe0bc1c6147b5298d87024c5931be6622eff8a2",
+    "research/arithmetic/RECIPROCAL_PARAMETER_FINITENESS_AND_INTEGRALITY.md": "0efebd5d8063858d78f17eb4dc475776544eb95b0c8f235c5321e73cbc80d8b5",
+    "research/arithmetic/degree26_balanced_rational_quotient_system.json": "90948440d40024ca683deccc0445af5f5d022e1541c6804eda0133dc9ed253eb",
+    "research/arithmetic/degree_twenty_six_nonsquare_reciprocal_independent_verification.json": "4c8efb0c28d3df874415c03bca8998056768bd6635ec4efbb0185347fc11323b",
+    "research/arithmetic/verify_degree_twenty_six_balanced_local_square.py": "45d5ab4395f7d29ecc87dbcbf8fe80492a073a6cd5be32a56cc299ab2aa1798c",
+    "research/arithmetic/verify_degree_twenty_six_balanced_mod37.cpp": "59274dc24720b7f3bd8f9a66497e6d3efe99e4b8b9b8650bc28f569a63f3623a",
+    "research/arithmetic/verify_degree_twenty_six_nonsquare_reciprocal.py": "c4bec52dc0c4939e0678079c4ffaef9d5f8aed8b6ec7cdf4134afbaa19e70aaa"
+  },
+  "square_case": {
+    "censuses": [
+      {
+        "candidates": 1925562,
+        "consistent_ranks": [
+          0,
+          5,
+          4021,
+          1769940
+        ],
+        "mode": "strong_gauss",
+        "outer": 1823508,
+        "points": []
+      },
+      {
+        "candidates": 12275266,
+        "consistent_ranks": null,
+        "mode": "weak_cramer",
+        "outer": 1823508,
+        "points": []
+      }
+    ],
+    "exact_coefficient_binding_controls": 4,
+    "fresh_complete_labelled_census_replay": true,
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "whole_strong_quotient_has_Q37_point": false,
+  "whole_strong_quotient_has_point_over_residue_degree_one_Q37_extension": false
+}

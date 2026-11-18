@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/jacobian/monodromy-theory/PLANE_A4_MONODROMY_EXCLUSION.md",
+  "proof_imports": [
+    {
+      "path": "research/jacobian/monodromy-theory/sources/domrina-four-sheeted-general-2000.pdf",
+      "sha256": "0be24c5c6a9cc9423c3049c3402f2c98e44bac5f1c6018b3999989e0f32e5018",
+      "locator": "Unnumbered main theorem, Introduction p.1; topological degree definition immediately above; Part I/II scope immediately below; Proposition1.2 p.2; Lemma3.14 p.14 and Figure11 p.15; final proof conclusion p.32",
+      "supports": "Unconditional exclusion of polynomial C2-to-C2 maps with four generic preimages and nonzero constant Jacobian. Adopted published theorem; not an independent replay of all diagram exclusions."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/THEORY.md",
+      "sha256": "5400e7dd17ec908ce5cdb1e67ba4aa53bb0495dde67d3ba93b78685850ca4e6d",
+      "locator": "Section4, theorem KMFI1, especially equation4.1 and its finite-normalization/purity proof",
+      "supports": "A point stabilizer in the faithful transitive geometric action of an actual Keller map normally generates its full monodromy group, over an algebraically closed characteristic-zero field."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/sources/affine-cover-context.json",
+      "sha256": "7523e3a072dca5b779f4ada18d212733ccebde7c8861f2087b397d3d79298d0e",
+      "locator": "Exact purity and affine-cover source records referenced by THEORY.md Section4",
+      "supports": "Retained source context for the existing KMFI1 theorem; this note introduces no additional inertia refinement."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/PLANE_A4_MONODROMY_EXCLUSION.md",
+      "sha256": "cdca171f4a559cc795b9323f198b2a926197e9d8537a4e892f8f1cf11fcc0091",
+      "locator": "Group-theoretic reduction and characteristic-zero field reduction",
+      "supports": "Written elementary classification of all faithful transitive A4 actions, normal closures, and finite coefficient field embedding with generic-rank invariance."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/verify_plane_a4_exclusion.py",
+      "sha256": "6d466354287caab11e0bcd53f47af7a29ecfa367e2061abd78a8047e145ccb07",
+      "locator": "all_subgroups, subgroup_core, normal_closure and main",
+      "supports": "Exact complete finite A4 subgroup/action enumeration and natural A4/A5 necessary-condition controls; primary PDF identity pin."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/plane_a4_exclusion_verification.json",
+      "sha256": "afccd4ffa4d330759330c474ab0cbecec9ba4283b3b227eeacb246b4b280631c",
+      "locator": "A4 subgroup counts and faithful transitive actions",
+      "supports": "Actual execution receipt; exactly degree4 survives KMFI1 among degrees4,6,12."
+    }
+  ],
+  "primary_source_identity": {
+    "author": "A. V. Domrina",
+    "title": "On four-sheeted polynomial mappings of C2. II. The general case",
+    "journal": "Izvestiya: Mathematics 64:1 (2000), 1-33",
+    "doi": "10.1070/IM2000v064n01ABEH000273",
+    "landing_page": "https://www.mathnet.ru/eng/im273",
+    "download_entry": "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=273&what=fullteng",
+    "retrieved_pdf_url": "https://www.mathnet.ru/links/e9dff654768f577ea4cf80d47243b321/im273_eng.pdf",
+    "pdf_sha256": "0be24c5c6a9cc9423c3049c3402f2c98e44bac5f1c6018b3999989e0f32e5018",
+    "inspected_passages": [
+      "Introduction/main theorem/topological-degree definition and Part I/II scope, printed/PDF p.1",
+      "Two-dicritical reduction Proposition1.2, printed/PDF p.2",
+      "Final diagram classification Lemma3.14 and Figure11, printed/PDF pp.14-15",
+      "Representative diagram exclusion Lemma4.1, p.16",
+      "Final Lemma7.11 and main-theorem conclusion, p.32"
+    ],
+    "read_limits": "Statement, precise hypotheses, reduction and proof organization verified in original article. Entire splice-diagram argument adopted as a published theorem rather than independently reproved. The preceding one-dicritical Part I is not used as an unconditional theorem."
+  },
+  "claims": {
+    "main": "No plane Keller map over an algebraically closed characteristic-zero field has generic geometric monodromy abstractly A4 in any faithful transitive action.",
+    "all_action_degrees": [
+      4,
+      6,
+      12
+    ],
+    "KMFI1_surviving_degree": 4,
+    "degree_four_field_extension": "Domrina exclusion extends to every characteristic-zero coefficient field by descent to finite coefficient field, embedding into C and finite locally free rank invariance.",
+    "scope_limits": [
+      "No higher-dimensional A4 exclusion.",
+      "No exclusion of A4 special fibres or affine-chart realizations.",
+      "No sufficient monodromy realization criterion.",
+      "No imported or certified degree-five theorem.",
+      "No priority claim."
+    ]
+  },
+  "outstanding_primary_source_obligation": {
+    "source": "H. Zoladek, An application of Newton-Puiseux charts to the Jacobian problem, Topology47:6(2008),431-469",
+    "doi": "10.1016/j.top.2008.04.001",
+    "primary_article_url": "https://www.sciencedirect.com/science/article/pii/S0040938308000207",
+    "reported_locator_not_yet_inspected": "Theorem6.12, reported by secondary sources as topological-degree at most five",
+    "status": "Original theorem statement and reduction hypotheses not inspected. Publisher PDF and author routes failed to supply the article. Not a mathematical open-status claim.",
+    "imported_as_proof_premise": false
+  },
+  "assurance": {
+    "exact_finite_replay": "PASS",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "internal_critical_audit": {
+      "result": "PASS",
+      "scope": "Root read the elementary A4 subgroup/core/normal-closure proof, the retained KMFI1 argument and Domrina original main theorem and definition of topological degree, checked finite coefficient-field descent and generic-degree invariance, and replayed the exact complete finite group checker. This does not independently reprove Domrina splice-diagram exclusions."
+    },
+    "priority_assessment": "Not performed."
+  }
+}

@@ -245,11 +245,25 @@ Writing \(z=e^{i\theta}\cos\phi,\ w=e^{i\psi}\sin\phi\) on \(S^3\), surface area
 \]
 Its two boundary slices have zero surface measure. Thus each sufficiently large target in either residue class has a decomposition with both actual summand values between \(n/3\) and \(2n/3\). In the mixed problem the two balanced values are \(a\) and \(3b\). Any fixed positive interval for \(a/n\) is covered. Each ordered pair of positive norm values accounts for at most \(36M(n)^2\ll_\epsilon n^\epsilon\) witnesses (use the divisor estimate with \(\epsilon/2\)). The interval therefore contains \(\gg_{I,\epsilon}n^{1-\epsilon}\) distinct ordered pairs. The limiting proportions count each value pair with its number of coordinate witnesses.
 
+The separate
+[macroscopic value-count corollary](EISENSTEIN_POINTWISE_VALUE_COUNTS.md#macroscopic-intervals)
+now improves this lower bound to
+\(\gg_{I,\nu}n/(\log n)^{\log4+\nu}\) for each fixed \(\nu>0\).
+It does not assert equidistribution of unweighted value pairs. The separate [moving-window theorem](EISENSTEIN_MOVING_WINDOWS.md)
+now gives matching upper and lower counts of order \(nJ(n)/\log n\)
+in every fixed interval of positive length inside \((0,1)\), for either
+prescribed mixed orientation. It also proves the matching count
+\(HJ(n)/\log n\) when \(H\le M=\min(x,n-x)\) and
+\(H^3\ge n^{1+\varepsilon}M\). This includes central power windows
+for every fixed \(\theta>2/3\) and prescribed small-summand intervals
+of size \(n^\theta\) for \(\theta>1/2\). These order bounds do not
+assert equidistribution of unweighted value pairs.
+
 The threshold in Theorem EisAngle depends on the interval, and its fixed-weight
 proof gives no numerical onset for an arbitrary interval. The separate
 [Theorem EisPower](EISENSTEIN_POWER_SHRINKING_WINDOWS.md) proves a central
 window \(|a-b|\le n^\theta\), and the mixed analogue, for every fixed
-\(\theta>2/3\) and all admissible targets above its explicit onset.
+\(2/3<\theta<1\) and all admissible targets above its explicit onset.
 In particular \(\theta=3/4\) is valid at \(n\ge2^{2^{40}}\). For ordinary balanced sums the recorded finite
 certificate finds precisely two exceptions, \(8\) and \(44\), below
 \(10^8\). The range between that certificate and the new onset remains

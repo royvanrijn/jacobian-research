@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md",
+  "assurance": "Internal written uniform algebraic proof and exact symbolic replay; no external human review, independent external replay or formal verification claimed.",
+  "proof_origin": "Diagonalize the sign-exchange involution using the unitr; explicit even/odd polynomial equations give one rational quotient for all quadratic twists.",
+  "external_sources": [],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "locator": "Normal form, quadratic coefficient descent and exact good open criterion."
+    },
+    {
+      "path": "research/arithmetic/verify_mixed_reciprocal_coupled_ode.py",
+      "sha256": "73ce6639cb20e2c7bb1947138acc4e8d499b8143e9f0c9320729c38a71d52f29",
+      "locator": "Actual coefficient reconstruction and known exactE18 eliminant."
+    },
+    {
+      "path": "research/arithmetic/RECIPROCAL_PARAMETER_FINITENESS_AND_INTEGRALITY.md",
+      "sha256": "0efebd5d8063858d78f17eb4dc475776544eb95b0c8f235c5321e73cbc80d8b5",
+      "locator": "Raw labelled length and arithmetic denominator/unit theorem."
+    },
+    {
+      "path": "research/arithmetic/verify_reciprocal_parameter_finiteness.py",
+      "sha256": "0644234f609df5c560249b778daaba74fd712af2916604105a7193a49826112c",
+      "locator": "Raw equation generator used in exact quotient construction."
+    },
+    {
+      "path": "research/arithmetic/BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md",
+      "sha256": "8390df96affa573870162e36a153c101e626216662a148aa318e6eed6a1ba073",
+      "locator": "Uniform invariant presentation, finite etale quadratic cover, rational-model bijection and finite complete candidate algorithm."
+    },
+    {
+      "path": "research/arithmetic/verify_balanced_reciprocal_rational_quotient.py",
+      "sha256": "b1a5e7127c0d26f011d06bb7d70a8f8292a526d17d78bfbc2a42719885dbfb67",
+      "locator": "Full involution and even/odd identities, numerator reconstruction, exact small QQ quotient recovery."
+    },
+    {
+      "path": "research/arithmetic/degree26_balanced_rational_quotient_system.json",
+      "sha256": "90948440d40024ca683deccc0445af5f5d022e1541c6804eda0133dc9ed253eb",
+      "locator": "Explicit seven raw and thirteen strong rational/integer equations, all coefficient reconstruction formulas."
+    },
+    {
+      "path": "research/arithmetic/balanced_reciprocal_rational_quotient_verification.json",
+      "sha256": "acf852a3edac45732c155354ec8c9148d2e019b6f994cc8ce5445db530e3c8ef",
+      "locator": "Actual successful replay and full exactQQk1Groebner certificate."
+    }
+  ],
+  "context_only": [
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md",
+      "sha256": "af9ff4711660ad380e79a3c3e8cf4ed8c244167fc851b0f8d018d6b41fb037ec",
+      "role": "Existing local arithmetic filter, not used to prove the quotient presentation or finite length."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "arithmetic": "ExactQQ involution, parity, rational reconstruction and small quotient Groebner basis."
+  },
+  "scope_limits": [
+    "The uniform raw quotient length counts degenerate points and multiplicities; good rational models are a restricted open subset.",
+    "Finite etale degree2 is the labelled-to-quotient map; neither the raw scheme nor the quotient is asserted reduced or etale overQ.",
+    "The exact rational candidate procedure is terminating but its degree26 saturation, full QQ elimination and rational point list have not been computed.",
+    "One explicit quotient replaces separate searches across1024 signed quadratic classes; it does not claim all these classes occur.",
+    "Rational good quotientpoints recover rationalN even whenr is nonsquare; etanonzero follows fromGbar(etazero)=L.",
+    "Both eta and reciprocal lambda have the same global/local square class.",
+    "Only the balanced reciprocal ansatz in degrees8k+2 is classified by this quotient; general paired pencils and unbalancedsignclasses are separate.",
+    "The exact degree10QQstrong quotient recovers E18, while degree26 controls verify only construction identities and input polynomials.",
+    "No rational degree26 model or nonsquare-case global nonexistence theorem is proved.",
+    "No novelty or priority claim is made."
+  ],
+  "internal_critical_review": {
+    "root": "Full proof and code read, exact default replay and rational reconstruction checked; clarified square versus nonsquare field case.",
+    "separate_agent": "Full quotient with nilpotents, finite etale/free involution, descent bijection and finite algorithm audited; a separate default replay matched every receipt field and degree26 coefficient.",
+    "limits": "Internal mathematical reviews only; external replay, external review and formal verification remain false."
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "all_even_cycle_counts": {
+    "2,2,2": 7,
+    "2,4": 6,
+    "6": 8
+  },
+  "bad_prime_density": "7/16",
+  "base_change_degree_sanity": [
+    {
+      "degree": 1,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 2,
+      "upper_bound_fully_even_fibres": 2
+    },
+    {
+      "degree": 3,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 4,
+      "upper_bound_fully_even_fibres": 3
+    },
+    {
+      "degree": 5,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 6,
+      "upper_bound_fully_even_fibres": 3
+    },
+    {
+      "degree": 7,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 8,
+      "upper_bound_fully_even_fibres": 3
+    },
+    {
+      "degree": 9,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 10,
+      "upper_bound_fully_even_fibres": 3
+    },
+    {
+      "degree": 11,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 12,
+      "upper_bound_fully_even_fibres": 3
+    },
+    {
+      "degree": 13,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 14,
+      "upper_bound_fully_even_fibres": 3
+    },
+    {
+      "degree": 15,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 16,
+      "upper_bound_fully_even_fibres": 3
+    },
+    {
+      "degree": 17,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 18,
+      "upper_bound_fully_even_fibres": 3
+    },
+    {
+      "degree": 19,
+      "upper_bound_fully_even_fibres": 0
+    },
+    {
+      "degree": 20,
+      "upper_bound_fully_even_fibres": 3
+    }
+  ],
+  "checker_sha256": "1e6579b61c43d225b91d441f63019c715f0822c069a59c83dcc92c18c0cc9783",
+  "command": ".venv/bin/python research/arithmetic/verify_alternating_ramification_density.py",
+  "cubic_discriminant": 418883400000,
+  "exact_modular_certificates": {
+    "29": "g/9=(z^2+3)(z^4+9z^2+3), both factors irreducible",
+    "7": "R/9=u^3+3u^2+u+4 irreducible; g/9 irreducible of degree six"
+  },
+  "excluded_primes": [
+    2,
+    3,
+    5,
+    13,
+    17
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "full_signed_pair_group_order": 48,
+  "independent_replay": false,
+  "kind": "exact_algebra_and_finite_group_controls",
+  "negative_controls": [
+    "All individual elements are covered by H1,H3,W5 but each displayed D is missed.",
+    "Adding H2 repairs all three displayed decomposition groups.",
+    "Finite congruence restrictions cannot control the infinite positive-density prime set."
+  ],
+  "proof_scope": "Finite checker proves algebra, modular irreducibility and group counts. Full wreath Galois group also uses the written real-root and complex-conjugation argument. Infinite bad primes, integer density zero and progression obstructions import Chebotarev and integral HIT, with the written Hensel/CRT proof. The all-degree base-change bound is Riemann-Hurwitz, not a consequence of its finite sanity table.",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "sextic_discriminant": -40426744964097024000000000000,
+  "signed_pair_cycle_type_counts": {
+    "1,1,1,1,1,1": 1,
+    "1,1,1,1,2": 3,
+    "1,1,2,2": 9,
+    "1,1,4": 6,
+    "2,2,2": 7,
+    "2,4": 6,
+    "3,3": 8,
+    "6": 8
+  },
+  "sympy": "1.14.0",
+  "zero_branch_local_groups": [
+    {
+      "D_orbits": [
+        2,
+        2,
+        6
+      ],
+      "frobenius": [
+        1,
+        0,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        4
+      ],
+      "group_order": 12,
+      "inertia": [
+        1,
+        0,
+        3,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "residual_cycle_type": [
+        6
+      ]
+    },
+    {
+      "D_orbits": [
+        2,
+        2,
+        2,
+        4
+      ],
+      "frobenius": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        4,
+        7,
+        8,
+        9,
+        6
+      ],
+      "group_order": 8,
+      "inertia": [
+        1,
+        0,
+        3,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "residual_cycle_type": [
+        2,
+        4
+      ]
+    },
+    {
+      "D_orbits": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frobenius": [
+        1,
+        0,
+        2,
+        3,
+        5,
+        4,
+        7,
+        6,
+        9,
+        8
+      ],
+      "group_order": 4,
+      "inertia": [
+        1,
+        0,
+        3,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "residual_cycle_type": [
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "zero_branch_residual": "9*z**6 - 414*z**4 + 1836*z**2 + 400"
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+  "assurance": "Internal written all-degree algebraic proofs and exact rational polynomial replay; no external human review, independent external replay or formal verification claimed.",
+  "proof_origin": "The new coupled operators, quadratic descent, four-variable recursion and h2 elimination are derived in the note. No new external mathematical theorem is imported for these algebraic steps.",
+  "external_sources": [],
+  "retained_external_context": [
+    {
+      "path": "research/arithmetic/alternating_hurwitz_priority_ledger.json",
+      "locator": "Primitive double-transposition theorem",
+      "role": "Conditional geometricA26 conclusion for a future nondegenerate rational solution."
+    },
+    {
+      "path": "research/arithmetic/alternating_hurwitz_source_ledger.json",
+      "locator": "Existing alternating cover/passport sources",
+      "role": "Existing context only; not used to replace the new algebraic proofs."
+    }
+  ],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/PAIRED_CRITICAL_RECIPROCAL_OBSTRUCTION.md",
+      "sha256": "a6c82e1e00c178afc9981434c15e20c9b766930b89241052e08e9622459afa1e",
+      "locator": "Normalization, rationality of rho in the uniform-sign case, its coefficient classification, exact h2 formula and degree26 uniform-sign obstruction."
+    },
+    {
+      "path": "research/arithmetic/verify_paired_critical_reciprocal.py",
+      "sha256": "4ea57feac8d0b9198eb62cf7241044f3c79e068d8ce66db7b15a5f7324911382",
+      "locator": "Exact prior uniform-sign controls and rational degree10 recovery."
+    },
+    {
+      "path": "research/arithmetic/paired_critical_reciprocal_verification.json",
+      "sha256": "292cc73d9eb81cd93f4a2ff26666c8caf42fab47b5107e807c4853e1786c0c39",
+      "locator": "Actual replay of the retained uniform-sign inputs."
+    },
+    {
+      "path": "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md",
+      "sha256": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+      "locator": "Theorem1 and monic normalization: existence, exact nondegeneracy and fullA10 for the unique recovered normalized reciprocal numerator."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_HURWITZ_UNIFORMITY_AND_REAL_NODES.md",
+      "sha256": "fe8b0904619d5dbf13de9268fe20936bdd9bfa8e809f2bcca7a4c09638db5679",
+      "locator": "Normalized paired-critical criterion and passport/monodromy consequence for future rational degree26 solutions."
+    },
+    {
+      "path": "research/arithmetic/verify_mixed_reciprocal_coupled_ode.py",
+      "sha256": "73ce6639cb20e2c7bb1947138acc4e8d499b8143e9f0c9320729c38a71d52f29",
+      "locator": "Uniform symbolic controls; generic quadratic descent; degree26 four-variable recursion; exact h2 resultants, full lex basis, and projective mod11/mod7 certificates."
+    },
+    {
+      "path": "research/arithmetic/mixed_reciprocal_coupled_ode_verification.json",
+      "sha256": "9670f2ed143857816bbeb1bc3dffff2ab47e41773c2b2dd63f41fe64596fcf61",
+      "locator": "Actual successful replay, all resultant intermediate polynomials, full h2 Groebner basis and eliminant coefficients."
+    },
+    {
+      "path": "research/arithmetic/degree26_mixed_2_10_system.json",
+      "sha256": "113cc6740b2e40df3f6306eb94b7343552aafe9e24bf60a1d68ec6f5938db997",
+      "locator": "All four primitive integer polynomial equations, recursive Q, degree statistics and explicit open conditions."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "arithmetic": "QQ/ZZ polynomial operations, exact Euclidean gcd, exact Sylvester resultants and lexicographic Groebner basis overQQ"
+  },
+  "scope_limits": [
+    "The global degree10 classification assumes the stated monic/double-zero normalization, distinct paired critical values and reciprocal critical pairing; it does not classify all alternating pencils.",
+    "No p-adic integrality or good-reduction hypothesis enters the degree10 obstruction. Projective mod11 covers rational r^2 with arbitrary denominators.",
+    "The degree10 resultant argument divides only by nonzero constants and r, and by c+2,d-2 already excluded by the fixed-point-free open conditions. It does not divide by sigma-6r or B.",
+    "Aggregate sign factors need not be irreducible.",
+    "Nonsquare lambda descent is built into the seven rational equations, with lambda nonzero and nonsquare. These are arithmetic restrictions, not an unstated rational-square assumption.",
+    "The degree26 four-variable equations are exact on the written nondegenerate open set; its closure can contain degenerate points. No complete characteristic-zero saturation or rational-point classification was obtained.",
+    "No degree26 rational solution, global nonexistence result or zero-dimensionality claim is made.",
+    "An exploratory nonsaturated finite-field Groebner calculation is not used as evidence of global rational finiteness or nonexistence.",
+    "The Pell-form identity has a variable right side; no imported ordinary-Pell classification or rational parametrization follows.",
+    "No novelty or priority claim is made."
+  ]
+}

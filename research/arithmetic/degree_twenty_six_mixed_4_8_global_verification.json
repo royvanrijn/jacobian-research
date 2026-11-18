@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "6c5963872cd3e4326750a121e8a9260d79e96ca832499c7ff26f116f06d54fbd",
+  "cpp_sha256": "701e8bb17a2c96c44bedfd7b331733f96d463934f32a985b328c4a78a4e1fc59",
+  "input_sha256": "8cda248e9547b9141e61a5b9ba316ebd2a14491e82c5381649a8d731440285c9",
+  "certificate_sha256": "5fbc71ce515a9caf10e08f5646cb5264636718c4157047d5fbc1573f9abf0371",
+  "coefficient_reconstruction": "Exact independent linear solve for Q and Euler reconstruction",
+  "complete_census": {
+    "prime": 29,
+    "outer_count": 707281,
+    "first_four_candidates": 25764,
+    "raw_count": 4,
+    "strong_count": 1,
+    "consistent_rank_counts": [
+      0,
+      0,
+      0,
+      36,
+      706443
+    ],
+    "raw_points": [
+      [
+        10,
+        13,
+        16,
+        4,
+        20,
+        7,
+        15
+      ],
+      [
+        18,
+        3,
+        2,
+        17,
+        6,
+        9,
+        12
+      ],
+      [
+        20,
+        27,
+        2,
+        16,
+        15,
+        20,
+        9
+      ],
+      [
+        22,
+        0,
+        8,
+        3,
+        4,
+        4,
+        16
+      ]
+    ],
+    "strong_points": [
+      [
+        20,
+        27,
+        2,
+        16,
+        15,
+        20,
+        9
+      ]
+    ],
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "elapsed_seconds": 1.59
+  },
+  "no_lift_certificate": {
+    "schema_version": 1,
+    "prime": 29,
+    "raw_points": [
+      [
+        10,
+        13,
+        16,
+        4,
+        20,
+        7,
+        15
+      ],
+      [
+        18,
+        3,
+        2,
+        17,
+        6,
+        9,
+        12
+      ],
+      [
+        20,
+        27,
+        2,
+        16,
+        15,
+        20,
+        9
+      ],
+      [
+        22,
+        0,
+        8,
+        3,
+        4,
+        4,
+        16
+      ]
+    ],
+    "survivor": [
+      20,
+      27,
+      2,
+      16,
+      15,
+      20,
+      9
+    ],
+    "strong_filter": [
+      {
+        "point": [
+          10,
+          13,
+          16,
+          4,
+          20,
+          7,
+          15
+        ],
+        "strong_extra_residues": [
+          21,
+          8,
+          16,
+          5
+        ]
+      },
+      {
+        "point": [
+          18,
+          3,
+          2,
+          17,
+          6,
+          9,
+          12
+        ],
+        "strong_extra_residues": [
+          4,
+          4,
+          11,
+          27
+        ]
+      },
+      {
+        "point": [
+          20,
+          27,
+          2,
+          16,
+          15,
+          20,
+          9
+        ],
+        "strong_extra_residues": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "point": [
+          22,
+          0,
+          8,
+          3,
+          4,
+          4,
+          16
+        ],
+        "strong_extra_residues": [
+          24,
+          19,
+          1,
+          6
+        ]
+      }
+    ],
+    "Jacobian": [
+      [
+        20,
+        3,
+        9,
+        27,
+        8,
+        2,
+        25
+      ],
+      [
+        24,
+        1,
+        3,
+        0,
+        5,
+        14,
+        27
+      ],
+      [
+        4,
+        24,
+        11,
+        23,
+        19,
+        0,
+        14
+      ],
+      [
+        5,
+        17,
+        17,
+        14,
+        11,
+        10,
+        15
+      ],
+      [
+        28,
+        18,
+        14,
+        25,
+        0,
+        18,
+        16
+      ],
+      [
+        13,
+        2,
+        27,
+        24,
+        18,
+        14,
+        6
+      ],
+      [
+        2,
+        1,
+        13,
+        10,
+        7,
+        25,
+        19
+      ],
+      [
+        1,
+        4,
+        19,
+        24,
+        12,
+        12,
+        1
+      ],
+      [
+        17,
+        16,
+        20,
+        15,
+        9,
+        10,
+        25
+      ]
+    ],
+    "rhs": [
+      1,
+      14,
+      4,
+      15,
+      11,
+      23,
+      20,
+      3,
+      22
+    ],
+    "left_null": [
+      18,
+      8,
+      27,
+      21,
+      0,
+      0,
+      23,
+      17,
+      11
+    ],
+    "Jacobian_rank": 6,
+    "augmented_rank": 7,
+    "left_null_rhs": 1,
+    "conclusion": "The unique strong F29 point has no lift modulo29\u00b2."
+  },
+  "proof_inputs": {
+    "verify_mixed_reciprocal_coupled_ode.py": "73ce6639cb20e2c7bb1947138acc4e8d499b8143e9f0c9320729c38a71d52f29",
+    "MIXED_RECIPROCAL_COUPLED_ODE.md": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+    "RECIPROCAL_PARAMETER_FINITENESS_AND_INTEGRALITY.md": "0efebd5d8063858d78f17eb4dc475776544eb95b0c8f235c5321e73cbc80d8b5"
+  },
+  "scope": "Complete F29 strong-system census and literal mod29\u00b2 obstruction. Uniform raw-parameter integrality and monic quotient division in the written proof exclude every Q29 point of the strong closure, including denominators and degenerate reduction. This excludes both reciprocal (4,8) orientations overQ; balanced and nonreciprocal cases remain open.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "corrupted_left_null_rejected": true
+}

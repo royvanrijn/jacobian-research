@@ -1,0 +1,40 @@
+{
+  "checker_sha256": "4d588c3ef95935a5eda6c467cba7170a087180e1900be2d3700a7c9022dc0b78",
+  "checks": {
+    "complete_quotient_reconstruction": true,
+    "four_dimensional_compact_jacobian": "D",
+    "full_parameter_identity": true,
+    "full_polynomial_jacobian": 1,
+    "invalid_controls": 2,
+    "polynomial_profiles": true,
+    "quotient_degree": 5,
+    "target_at_w_three": [
+      "3",
+      "4",
+      "10",
+      "-56/5"
+    ]
+  },
+  "command": ".venv/bin/python research/jacobian/monodromy-theory/verify_fixed_keller_finite_etale_family.py",
+  "denominator_clearer": "(w - 1)*(w + 1)**5/2048",
+  "external_review": false,
+  "family_polynomial": "T**5 + T**4*w/(w - 1) + T**3*(w + 1) + T**2*(w**2 + 1) + T*(w - 2) + (w**3 + 1)/(w + 2)",
+  "formal_verification": false,
+  "independent_replay": false,
+  "inputs": {
+    "research/arithmetic/ALTERNATING_SUBGROUP_COVERS_AND_HASSE.md": "b7a267d449bfb8fbf801a222363705b7603ebc8b9073773512b57ecae2fa5e0f",
+    "research/jacobian/universal-keller-structure/PROOF.md": "1898b6c71619f81cca4d658409a5e804cee0fb5ad9a70bb0e40edf0a30197cb9",
+    "unpublished/common-arithmetic-fibers/sections/02-quadratic-gauge.tex": "d638447b90f4647fa6969600b90f771ce14594a3ba8ae09c1f9a8d2a367c9ad4",
+    "unpublished/common-arithmetic-fibers/sections/03-realization.tex": "33e6e57f4f1184fb3d678717cac6d9b043d3a5d520245ddb0d40830138fdb110"
+  },
+  "kind": "internal_exact_replay",
+  "polynomial_profile_degrees": {
+    "4": 29,
+    "5": 35
+  },
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Exact rational degree-five family and complete quotient controls. The written proof supplies uniform degree, arbitrary finite-etale families and the infinite rank301 Hasse application. Dimension four; arbitrary fixed A3 product-family realization remains open.",
+  "sympy": "1.14.0"
+}

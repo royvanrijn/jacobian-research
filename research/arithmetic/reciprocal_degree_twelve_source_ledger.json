@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/RECIPROCAL_DEGREE_TWELVE_OBSTRUCTION.md",
+  "assurance": "Internal written uniform proofs and exact rational polynomial replay; no external human review, independent external replay or formal verification claimed.",
+  "proof_origin": "Self-contained even critical-degree operators, reciprocal-sign descent, weighted-Rolle balance, degree12 two-equation reduction and explicit elimination.",
+  "external_sources": [],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/PAIRED_CRITICAL_RECIPROCAL_OBSTRUCTION.md",
+      "sha256": "a6c82e1e00c178afc9981434c15e20c9b766930b89241052e08e9622459afa1e",
+      "locator": "Prior reciprocal framework; the new even critical-degree argument is proved independently."
+    },
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "locator": "Companion coupled operators and odd critical-degree systems; not used as an unproved existence input."
+    },
+    {
+      "path": "research/arithmetic/verify_reciprocal_degree_twelve.py",
+      "sha256": "5c7298587d271109ea9d5349b437b3458b337c3f00ce772fb5430aad9064a11b",
+      "locator": "Actual coefficient reconstruction, resultant, projectiveF31 values, lexicographic basis, exact Sturm/interval and positive-polynomial controls."
+    },
+    {
+      "path": "research/arithmetic/reciprocal_degree_twelve_verification.json",
+      "sha256": "bef75b2a01d5e951aaebfa8a786db365e6be7e6c38a753f97cd8c4278940c90b",
+      "locator": "Successful exact replay with complete intermediate polynomials and two real candidate isolations."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "arithmetic": "ExactQQ/ZZ coefficient identities, Sylvester resultant, lexicographic Groebner basis, Sturm isolation and rational interval arithmetic."
+  },
+  "scope_limits": [
+    "The obstruction assumes reciprocal pairing of all critical roots and the explicit good open conditions; general nonreciprocal degree12 models are not excluded.",
+    "No integrality or good-reduction hypothesis enters the rational obstruction; projectiveF31 covers arbitrary rational denominators.",
+    "No finite critical value is normalized to zero in this even critical-degree setting.",
+    "The real theorem excludes every-critical-point-real reciprocal models even with arbitrary real coefficients.",
+    "Bounded symbolic controls supplement the written uniform operators and Rolle proof; they are not their all-degree justification.",
+    "No claim that all12 algebraic candidates meet every good-locus open condition is required or made.",
+    "No rational degree26 construction or global degree26 obstruction is claimed.",
+    "No novelty or priority claim is made."
+  ]
+}

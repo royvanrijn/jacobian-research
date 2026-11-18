@@ -2,8 +2,11 @@
 
 This note proves a fixed-width variance theorem and exact first moments in every
 fixed power window. It derives both from published results, without claiming
-priority for the corollaries. The remaining power-window variance problem is
-reduced to one sharp four-form energy estimate. A separate [large-prime cofactor
+priority for the corollaries. It reduces power-window variance to one sharp
+four-form energy estimate. The separate
+[power-window proof VqPower](PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md)
+now establishes that estimate for every fixed \(9/10<\theta<1\), with a
+quantitative full-count variance bound. A separate [large-prime cofactor
 argument](PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md) gives semigroup-scale
 density-one lower bounds for every fixed power exponent above \(1/3\). The [general theory note](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md)
 contains the every-target conjecture, the positive-proportion theorem and the
@@ -382,18 +385,36 @@ requested variance theorem is equivalent to the sharp upper energy bound
 \]
 The inner sums range over positive summands; extending \(f\) by zero to
 nonpositive integers gives the same formula. The matching lower bound is already
-proved by Pq. The current upper bound (F8) supplies only an unspecified constant,
-which cannot replace the exact constant \(\mathcal K_q\) in (E).
+proved by Pq. The generic upper bound (F8) supplies only an unspecified
+constant. The independent
+[Theorem VqPower](PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md) now supplies
+\[
+ \sum_{X<N\le2X}|r_{q,H}(N)-H\mu_X^2S(N)|^2
+ \ll_{q,\theta}XH^2\mu_X^4(\log X)^{-1/4}
+ \qquad(9/10<\theta<1).
+\]
+Its sharp energy coefficient is
+\(\mathcal K_q+O_{q,\theta}((\log X)^{-1/8})\). In particular the
+initial target \(\theta=99/100\) is resolved. The sharp upper bound for
+\(0<\theta\le9/10\) remains open here.
 
 The fixed-width proof uses a fixed positive-volume convex body. At
 \(H=X^\theta\), its volume after scaling by \(X\) tends to zero. The stated
 Loughran--Matthiesen theorem gives no error uniform in that shrinking body.
 Thus Vq cannot simply be applied with \(\lambda=X^{\theta-1}\).
 The Mangerel application supplies a logarithmic saving in Aq and Pq for each
-fixed projection; it supplies no thin four-form energy asymptotic. This variance argument gives no power-window density-one conclusion by itself.
-The separate cofactor theorem Dq gives such a lower bound for \(\theta>1/3\),
-without a variance asymptotic. Power-saving exceptional sets and every-target
-binary coverage remain open here.
+fixed projection; it supplies no thin four-form energy asymptotic. VqPower
+instead proves a short-interval arithmetic progression estimate, treats the
+entire multiplicative sequence on minor arcs, and compares local convolutions
+by Parseval before transferring to the exact balanced cutoff. Its full main
+term is accurate to a fixed relative tolerance outside
+\(O_{q,\theta,\varepsilon}(X/(\log X)^{1/4})\) targets in its range.
+The separate cofactor theorem Dq gives a lower bound for \(\theta>1/3\)
+with stronger logarithmic exception estimates, without an asymptotic for the
+full count. The separate [D12Power theorem](PRESCRIBED_PRIME_POWER_SAVING_EXCEPTIONS.md)
+now gives a semigroup-scale lower count outside \(O(X^{1-10^{-6}})\) targets
+for \(q=12,H=X^{99/100}\). Power-saving full-count variance and every-target
+coverage remain open.
 
 A power-saving centered variance, at the same main-term scale, would bound the
 number of zero or very small representation counts by Chebyshev. Eliminating

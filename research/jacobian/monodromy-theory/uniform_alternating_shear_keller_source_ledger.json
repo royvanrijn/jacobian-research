@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/jacobian/monodromy-theory/UNIFORM_ALTERNATING_SHEAR_KELLER_MAPS.md",
+  "proof_imports": [
+    {
+      "path": "research/jacobian/monodromy-theory/sources/kistner-shaska-graded-keller-2608.02863v1.pdf",
+      "sha256": "3cd7e239d8b01c79239789a97c26e466208d9cb216d9773574562c468c915a2e",
+      "locator": "Section 5.1, equations(21)-(24), Propositions 5.2-5.3, Theorems 5.4-5.5 and Corollary 5.6, PDF pp.15-17; Lemma 2.5 PDF p.4",
+      "supports": "Primary source of the degree12 member and graded field-extension mechanism; literal coefficients and determinant are checked, not imported from the abstract."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/alternating_shear_keller_model.py",
+      "sha256": "76bd0fa9d42497f46de985c518bc0a3a430e8dbaf8d0b9404320894c2faf71c6",
+      "locator": "binomial_terms, coefficient_pair, expanded_pair, expanded_map, laurent_primitive",
+      "supports": "Executable all-odd-m formulas, explicit polynomial lift, and rational inverse-cover model."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/uniform_alternating_shear_keller_inputs.json",
+      "sha256": "2df79ad7b982098752f6fa2ce426fd2ce2d215058264f823f7ad600357b2873b",
+      "locator": "A12 literal B_terms and exact coefficient field values",
+      "supports": "Independent transcription of all 12 coefficient terms of primary equation21 and critical-value polynomial."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/verify_uniform_alternating_shear_keller.py",
+      "sha256": "e8fde98a728c3a43165c60fac9e5d7410c1a37bfc4366fa45d2d11b45ef424d6",
+      "locator": "literal_A12, uniform_controls and full_Jacobian",
+      "supports": "Exact QQ(i) coefficient/master/lift checks; bounded Laurent controls; direct expanded actual three-variable Jacobian."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/uniform_alternating_shear_keller_verification.json",
+      "sha256": "ecd9a5517af8caaf8dc00c47b6c8ead877962c78cd325e72897da7ebb5079f38",
+      "locator": "literal_A12_certificate and uniform_controls",
+      "supports": "Actual final-byte default replay."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/uniform_alternating_shear_keller_full_jacobian_verification.json",
+      "sha256": "00517000a6a8be335f0cf5647546b7fcdf3cec5fa0dff9d7979153760b290905",
+      "locator": "direct_three_variable_Jacobian",
+      "supports": "Actual final-byte direct differentiation of the 77/1484/2-term polynomials, determinant-1."
+    }
+  ],
+  "primary_source_identity": {
+    "authors": [
+      "K. Kistner",
+      "T. Shaska"
+    ],
+    "title": "Orbits and fields of definition for graded Keller maps",
+    "arxiv_version": "2608.02863v1",
+    "retrieved_pdf_url": "https://arxiv.org/pdf/2608.02863v1",
+    "pdf_sha256": "3cd7e239d8b01c79239789a97c26e466208d9cb216d9773574562c468c915a2e",
+    "inspected_passages": [
+      "Lemma 2.1-2.5, PDF pp.3-4",
+      "Section 5.1, equations21-24 and Propositions 5.2-5.3, PDF pp.15-16",
+      "Theorem 5.4 critical-curve birationality proof, PDF pp.16-17",
+      "Theorem 5.5 and Corollary 5.6, PDF p.17",
+      "Theorem 6.1, PDF p.18; adjacent monodromy claims inspected for comparison only"
+    ],
+    "import_limits": "Degree12 is credited to this source. Its full-group classification argument is replaced by the elementary connected 3-cycle-support proof. The uniform m(m+1) construction is proved in the companion note; no priority claim."
+  },
+  "claims": {
+    "polynomial_maps": "For every odd m>=3, an explicit F_m:A3_Q(i)->A3_Q(i) is polynomial with determinant-1.",
+    "geometric_degree": "N=m(m+1), poles(m^2,m).",
+    "generic_geometric_group": "Full A_N on N sheets for the ambient three-variable function-field extension.",
+    "finite_branching": "N/2 distinct generic finite branch values, each a single 3-cycle; branch-curve parametrization birational by uniquezero+coprime valuations.",
+    "ambient_descent": "Disc_X(X^m(P-T)) has constant squareclass(-1)^((m-1)/2)*m; no residual Y quadratic twist.",
+    "arithmetic_over_Qi": "A_N if m is a square; otherwise S_N and exact quadratic constants Q(i,sqrt(m)).",
+    "primary_A12": "Literal source model verified directly; field Q(i), arithmetic S12, constants Q(i,sqrt3).",
+    "scope_limits": [
+      "No Q-coefficient polynomial lift or rational-descent theorem.",
+      "No plane Keller realization or universal plane obstruction.",
+      "No sufficiency theorem for group-theoretic inertia conditions.",
+      "No first-existence or novelty claim for alternating Keller monodromy."
+    ]
+  },
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "coefficient_domain": "Exact Gaussian rationals QQ(i)"
+  },
+  "assurance": {
+    "default_exact_replay": "PASS",
+    "direct_expanded_three_variable_Jacobian_replay": "PASS",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviews": [
+        {
+          "reviewer": "/root",
+          "scope": "Critical proof review and separate default plus full expanded three-variable Jacobian checker replay.",
+          "result": "PASS"
+        },
+        {
+          "reviewer": "/root/moonshot_hurwitz",
+          "scope": "Critical mathematical audit of the uniform odd-shear construction, branch-value separation, full geometric monodromy and arithmetic descent.",
+          "result": "PASS"
+        }
+      ],
+      "reviewed_checker_sha256": "e8fde98a728c3a43165c60fac9e5d7410c1a37bfc4366fa45d2d11b45ef424d6",
+      "reviewed_model_sha256": "76bd0fa9d42497f46de985c518bc0a3a430e8dbaf8d0b9404320894c2faf71c6",
+      "reviewed_input_sha256": "2df79ad7b982098752f6fa2ce426fd2ce2d215058264f823f7ad600357b2873b",
+      "limits": "These are internal agent reviews and separate internal executions. They do not constitute formal verification or external human review; the existing independent_replay, formal_verification and external_review booleans remain false."
+    },
+    "priority_assessment": "Not performed."
+  }
+}

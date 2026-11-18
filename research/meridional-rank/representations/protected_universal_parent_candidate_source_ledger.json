@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/meridional-rank/representations/PROTECTED_UNIVERSAL_PARENT_CANDIDATE.md",
+  "proof_imports": [
+    {
+      "path": "research/meridional-rank/representations/UNIFORM_PROTECTED_AUGMENTATION_GAPS.md",
+      "sha256": "a19c720f0c4c6f2a7438f5d4b5434a6ce6faf38d2f5af75008b1951019fcdbb0",
+      "locator": "Definition of rho_b, delta_b, Q_b and P_b; Section 3",
+      "supports": "Exact all-bridge parent whose uniform identification is the open obligation."
+    },
+    {
+      "path": "research/meridional-rank/representations/PRIME_FIVE_BRIDGE_AUGMENTATION_GAP_FAMILY.md",
+      "sha256": "8f8e26269ea4d81d9787a50a248cadde7ec5b078396978b830f60b81ede7668d",
+      "locator": "Section 3 geometric disk-twist surgery lemma",
+      "supports": "Disk-framed surgery sign argument, repeated for two selected components in the candidate note."
+    }
+  ],
+  "retained_software_imports": [
+    {
+      "path": "research/meridional-rank/representations/sources/uniform5-snappy332-init.py",
+      "sha256": "ec32a0e700665926426bc3a178680463f40c5a50695776b653caa99c2c112277",
+      "locator": "_link_exterior",
+      "supports": "Actual Link.exterior interface calls KLPProjection and pinned kernel triangulation."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/uniform5-spherogram241-links-base.py",
+      "sha256": "c6f325a15606788ad9a1fc5a895d31274132c4edd5a453dfc41eb1aaabf5a1e0",
+      "locator": "Link and KLPProjection",
+      "supports": "Actual spherical PD and link-component topology interface."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/uniform5-spherogram241-invariants.py",
+      "sha256": "a7e94703f79839abe673b5233dd62b40fc3992a163b90d827f292b4ff1118c9e",
+      "locator": "Link subclass",
+      "supports": "Actual Sage-compatible Link class edition."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-krawczyk.py",
+      "sha256": "972e3edd0551e54a3ab51082930ddaa81248afe4b682d3c4c4a2546d3bd8c82e",
+      "locator": "KrawczykShapesEngine",
+      "supports": "Rigorous interval existence calculation."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-hyperbolicity.py",
+      "sha256": "f5e69438d31213565de8fa44246f9ccae2be1b03ce5565a9a53846cb4ed3028e",
+      "locator": "verify_hyperbolicity and logarithmic gluing tests",
+      "supports": "Complete hyperbolicity verification and positive tetrahedron orientation checks."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-shapes.py",
+      "sha256": "d7c21fe191ec63945100241e3b94faed7977eeab6b524fe32d83b37d83e9667f",
+      "locator": "SnapPy 3.3.2 shape routines",
+      "supports": "Initial shape numerical polishing used by interval calculation."
+    }
+  ],
+  "runtime_versions": {
+    "sage": "10.9",
+    "snappy": "3.3.2",
+    "spherogram": "2.4.1",
+    "python": "3.14.7"
+  },
+  "runtime_analytic_source_hashes": {
+    "snappy.verify.krawczyk_shapes_engine": "972e3edd0551e54a3ab51082930ddaa81248afe4b682d3c4c4a2546d3bd8c82e",
+    "snappy.verify.hyperbolicity": "f5e69438d31213565de8fa44246f9ccae2be1b03ce5565a9a53846cb4ed3028e",
+    "snappy.snap.shapes": "d7c21fe191ec63945100241e3b94faed7977eeab6b524fe32d83b37d83e9667f"
+  },
+  "runtime_topology_source_hashes": {
+    "snappy": "ec32a0e700665926426bc3a178680463f40c5a50695776b653caa99c2c112277",
+    "spherogram.links.links_base": "c6f325a15606788ad9a1fc5a895d31274132c4edd5a453dfc41eb1aaabf5a1e0",
+    "spherogram.links.invariants": "a7e94703f79839abe673b5233dd62b40fc3992a163b90d827f292b4ff1118c9e"
+  },
+  "runtime_kernel_binary": {
+    "file": "SnapPy.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f7002569b43cfa366aab8ee5d19b4afe653478793c1db23a96dcfd621f431c8d"
+  },
+  "claims": {
+    "fixed_parent": "Explicit seven-strand, three-component link; 35-tetrahedron exterior rigorously hyperbolic.",
+    "component_marking": "Retained order D,K,C; D has linking number one with K and C; old linking number three.",
+    "proved_surgery": "D slope(1,-q) gives exterior of closure(R sigma4^(2q)) by geometric disk twist.",
+    "uniform_identification": "Proved for every b>=5 by UNBOUNDED_PRIME_AUGMENTATION_GAP_FAMILIES.md and its separate finite-cell port induction; the geometry checker certifies only fixed N.",
+    "finite_diagnostics": "Numerical recognition only; not used to prove any unrestricted claim.",
+    "failed_shortcut": "Exact braid conjugacy does not identify M6 with a single cyclic-cut stabilization of R sigma4^2."
+  },
+  "assurance": {
+    "finite_exact_replay": "PASS",
+    "rigorous_interval_replay": "PASS",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "priority_or_novelty_assessment": "Not performed."
+  }
+}

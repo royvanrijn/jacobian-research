@@ -9,35 +9,82 @@ scope; it is not a new calculation or an assurance upgrade.
 
 ## Current mathematics
 
+- [Pointwise semigroup-scale counts for Eisenstein sums](../EISENSTEIN_POINTWISE_SEMIGROUP_SCALE.md).
+- [Pointwise Eisenstein counts in moving summand windows](../EISENSTEIN_MOVING_WINDOWS.md).
 - [Power-shrinking Eisenstein windows, with an explicit onset](../EISENSTEIN_POWER_SHRINKING_WINDOWS.md).
+- [Pointwise logarithmic lower bounds for distinct Eisenstein value pairs](../EISENSTEIN_POINTWISE_VALUE_COUNTS.md).
+- [Every-target Eisenstein sums with bounded numbers of prime factors](../EISENSTEIN_BOUNDED_PRIME_FACTORS.md).
 - [Sifted angular distribution and the direct finite-polynomial balance proof](../EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md).
 - [Binary sums with prescribed prime factors](../BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md).
 - [Obstructions to very narrow central windows](../PRESCRIBED_PRIME_CENTRAL_GAPS.md).
 - [Semigroup-scale density one](../PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md).
 - [Binary variance and the remaining thin-window energy problem](../PRESCRIBED_PRIME_BINARY_VARIANCE.md).
+- [Quantitative full-count variance in power windows](../PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md).
+- [Power-saving exceptions for the modulus-12 semigroup lower count](../PRESCRIBED_PRIME_POWER_SAVING_EXCEPTIONS.md).
 - [Simultaneous Gaussian--Eisenstein case study](../SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md).
+- [Every-target weighted asymmetric Gaussian--Eisenstein sums](../ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md).
+- [Fixed periodic factors in divisor boxes](../FIXED_PERIODIC_DIVISOR_BOXES.md).
+- [Fixed-prime marginals and raw dilation laws](../SIMULTANEOUS_NORM_DILATION_LAWS.md).
 - [Simultaneous-norm pointwise upper bounds and the fixed-prime sieve criterion](../SIMULTANEOUS_NORM_POINTWISE_SIEVE.md).
+- [Obstructions to absolute character-divisor truncation](../SIMULTANEOUS_NORM_DIVISOR_OBSTRUCTIONS.md).
+- [Weighted simultaneous-norm means in arithmetic progressions](../SIMULTANEOUS_NORM_WEIGHTED_AP_MEANS.md).
+- [Raw and fully sifted simultaneous-norm correlations with power exceptions](../SIMULTANEOUS_NORM_POWER_CORRELATIONS.md).
 
 The manuscript proves both exact identities for the positive integers `A`
 whose prime divisors are `1 mod 3`, including `1`: `A+A` is precisely the
 positive `2 mod 6` class, and `A+(3·A)` is precisely the positive `4 mod 6`
 class. Its primitive-norm and higher-sumset consequences retain their original
 scope. The current angular note proves eventual balance. The separate
-power-window proof gives every fixed difference exponent `theta > 2/3`, in
+power-window proof gives every fixed difference exponent `2/3 < theta < 1`, in
 both ordinary and mixed cases, with an explicit onset formula and at least
 `n^(theta-1) R_o(n)/20` coordinate witnesses per orientation. For example,
 difference at most `n^(3/4)` holds for every admissible `n >= 2^(2^40)`.
-The exact triangle expansion and central-annulus tail yield this range;
+Distinct value pairs now have matching upper and lower counts of order
+`n^theta J(n)/log n`, where `J(n)` is the inert target-prime product,
+for every sufficiently large admissible target in the same exponent range.
+This also holds for fixed central widths, including balance and unrestricted
+pairs. The cofactor proof restores a logarithmic factor to the rough-pair
+sieve and treats every target valuation. The earlier higher-moment lower
+bound remains available as a separate method. The moving-window theorem
+now proves matching counts for arbitrary fixed macroscopic intervals and,
+more generally, for `H <= M = min(x,n-x)` with
+`H^3 >= n^(1+epsilon) M`. A designated small summand may have size
+`n^theta` for every `theta > 1/2`; the nearly equal threshold stays
+`theta > 2/3`. These new counts have existential onsets. The joint coset
+theorem now compresses the finite-level remainder at every target valuation,
+including prescribed mixed orientations and exact prime-square tests. Its
+aggregate bound couples the cofactor and sieve budgets without the earlier
+residue-space size powers.
+A further lower sieve gives `n^theta/(log n)^2` pairs
+whose two permitted parts each have a bounded number of prime factors, all
+exceeding a fixed positive power of the target. The exact triangle expansion and central-annulus tail yield
+the power-window range;
 the positive Jackson--Parseval construction also verifies the weaker `theta > 6/7`
 route. The explicit onsets leave an enormous gap above the finite certificate,
 so the complete balanced exception lists are still unresolved. These are research notes; the manuscript
 has not been expanded to include the new power-window theorem.
 
+The asymmetric theorem now gives a weighted pointwise asymptotic on EVERY
+sufficiently large target `N = 2 mod 6`, with the first summand in `C12`
+and the second in `A3`. Its positive target-dependent singular series gives
+one-sided existence and at least `N^(1-epsilon)` distinct pairs for each
+fixed positive epsilon. It does not give two `C12` summands, balance, an
+explicit cutoff or the expected unweighted logarithmic scale.
+
 For the simultaneous modulus-12 restriction, the new pointwise note proves
-upper bounds and a natural-scale large-prime tail. Its lower-bound and
-fixed-prime distribution inputs remain open, as does every-target binary
-coverage. The general note records the separate pointwise, angular, variance
-and proof-audit campaigns.
+upper bounds and a natural-scale large-prime tail. A separate elementary
+four-character hyperbola argument now supplies weighted arithmetic-progression
+means, including polynomially growing moduli. The new full weighted
+correlation theorem proves the natural lower bound and actual bad-prime
+marginals outside one power-sized exceptional set, including arbitrary target
+valuations and full moving balance intervals. Its fully sifted weighted
+proportion has an exact target-dependent Euler product. The all-target
+versions and every-target binary coverage remain open. The full semigroup variance is now proved for every fixed modulus
+and `9/10 < theta < 1`, including the original `.99` energy target. Every-target
+counts and power-saving full-count variance remain open. The separate
+modulus-12 lower-count theorem now gives `H/(log X)^(3/2)` pairs outside
+`O(X^(1-10^(-6)))` compatible targets for `H=X^(99/100)`. The general note records the
+separate pointwise, angular, variance and proof-audit campaigns.
 
 ## Files and provenance
 
@@ -117,6 +164,26 @@ invalid-input checks under `python3 -O`. Some supplied diagnostics use
 `assert`; run those normally. The polynomial certificate verifies finite
 rational inequalities only. The harmonic-theta argument linking that weight
 to eventual balance is in the current angular note.
+
+## Exact finite controls for the new analytic arguments
+
+From this directory, the two portable diagnostics print their results by
+default and write JSON only when `--output` is supplied:
+
+```sh
+python3 verify_joint_coset_distribution.py
+python3 verify_asymmetric_sums.py
+```
+
+The retained receipts are [joint coset controls](joint_coset_distribution_checks.json)
+and [asymmetric arithmetic controls](asymmetric_sums_checks.json). Both
+commands reject Python `-O`, because their exact finite assertions must run.
+The first checks the asymmetric singular recurrences, 240 scalar identities,
+and every invertible matrix modulo 49, with wrong-coefficient controls. The
+second checks local integrals, gcd and hyperbola identities, including
+controls that reject omitted corrections and strata. These support the
+written identities; they do not certify an unrestricted asymptotic or
+replace the imported analytic estimates.
 
 ## Java and assurance limits
 

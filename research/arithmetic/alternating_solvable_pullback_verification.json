@@ -1,0 +1,158 @@
+{
+  "all_rational_maps_tested_by_sampling": false,
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "branch_field_degree": 4,
+  "branch_parameter_modulus": "A**4 - 109*A**2/3 + 1690/9",
+  "checker_sha256": "ff607b041dec9b5186ff183bd61d3762581fd5db7790f35b1fa45956800f7d44",
+  "conditional_uniform_transfer_controls": [
+    {
+      "degree": 10,
+      "element_cover_rank": 256,
+      "local_group_order": 8,
+      "local_orbits": [
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "degree": 14,
+      "element_cover_rank": 4096,
+      "local_group_order": 16,
+      "local_orbits": [
+        2,
+        2,
+        2,
+        8
+      ]
+    },
+    {
+      "degree": 18,
+      "element_cover_rank": 65536,
+      "local_group_order": 24,
+      "local_orbits": [
+        2,
+        2,
+        2,
+        12
+      ]
+    },
+    {
+      "degree": 26,
+      "element_cover_rank": 16777216,
+      "local_group_order": 40,
+      "local_orbits": [
+        2,
+        2,
+        2,
+        20
+      ]
+    }
+  ],
+  "exact_factorization_P_alpha_9q_squared_G": true,
+  "field_generation_determinant": "608148060849659200000000000000000/729",
+  "fixed_unordered_5_5_partitions": [],
+  "frobenius_certificates": [
+    {
+      "a": 1,
+      "degrees": [
+        1,
+        5
+      ],
+      "p": 7
+    },
+    {
+      "a": 39,
+      "degrees": [
+        6
+      ],
+      "p": 107
+    },
+    {
+      "a": 291,
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "p": 1151
+    },
+    {
+      "a": 107,
+      "degrees": [
+        6
+      ],
+      "p": 113
+    },
+    {
+      "a": 337,
+      "degrees": [
+        2,
+        4
+      ],
+      "p": 347
+    }
+  ],
+  "input_sha256": {
+    "research/arithmetic/ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md": "7ed454756df7a4d812c9b5648c4d0bd1b715272d09aa443ae858f861177cd6bd",
+    "research/arithmetic/ALTERNATING_SUBGROUP_COVERS_AND_HASSE.md": "b7a267d449bfb8fbf801a222363705b7603ebc8b9073773512b57ecae2fa5e0f",
+    "research/arithmetic/NONZERO_BRANCH_RESIDUAL_S6_AND_SOLVABLE_PULLBACKS.md": "228c89863327c424e0d5737195f123921c92945ee30b723c9c0df68c4bea1e19",
+    "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+    "research/arithmetic/alternating_nonzero_branch_residual_inputs.json": "6aee8aba2d4cd58b712472b1fe85303b2a56bc9b0e642ab15e5b07adb9b599f8",
+    "research/arithmetic/sources/lenstra-chebotarev-density-notes.pdf": "695466dfe7053b18957adf0e17207bc6829cccf9b51c320fe93f93e3dbc9cd94",
+    "research/arithmetic/sources/zywina-quantitative-hit-2010.pdf": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
+    "research/arithmetic/verify_alternating_solvable_pullback_obstruction.py": "ff607b041dec9b5186ff183bd61d3762581fd5db7790f35b1fa45956800f7d44"
+  },
+  "local_group": "C2 x C4",
+  "local_group_order": 8,
+  "local_orbits": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7,
+      8,
+      9
+    ]
+  ],
+  "nonzero_branch_polynomial": "T**4 - 522379320400000*T**2/243 + 68130645548641000000000000000/59049",
+  "perfect_subgroup_commutator_verified": true,
+  "python": "3.12.3",
+  "relative_residual_group": "S6",
+  "result": "PASS",
+  "schema_version": 1,
+  "square_parameter_local_witness": {
+    "a": 337,
+    "a_lift_mod_p2": 84311,
+    "alpha_mod_p": 143,
+    "alpha_mod_p2": 10553,
+    "beta_lift_mod_p2": 105654,
+    "beta_mod_p": 166,
+    "contact_mod_p2": 115204,
+    "critical_roots_mod_p": [
+      17,
+      340
+    ],
+    "p": 347,
+    "test_t": 106001
+  },
+  "sympy": "1.14.0",
+  "uniform_scope_supplied_by_written_proof": true
+}

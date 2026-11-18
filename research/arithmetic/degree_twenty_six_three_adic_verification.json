@@ -1,0 +1,148 @@
+{
+  "anti_involution_rank": 6,
+  "checker_sha256": "21918deb0d5ac8e2108e23542cd6b2a798099741a47c6f8c013d13295158e491",
+  "constraint_rank": 8,
+  "external_review": false,
+  "first_six_anti_coordinates_have_rank": 6,
+  "formal_verification": false,
+  "free_coefficient_indices": [
+    7,
+    9,
+    10,
+    11,
+    12
+  ],
+  "independent_replay": false,
+  "kind": "exact_three_adic_hensel_controls",
+  "local_checker_sha256": "59377d873f58d5468413cf46ea81337387588e496d42a10565744b296a9b1e9b",
+  "minor": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2,
+      0,
+      2
+    ],
+    [
+      2,
+      1,
+      2,
+      2,
+      1,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      1,
+      0,
+      2,
+      1,
+      1,
+      2,
+      2
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      2,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      2,
+      2,
+      1,
+      0,
+      0
+    ]
+  ],
+  "minor_determinant": 16,
+  "minor_determinant_mod3": 1,
+  "mod9_critical_root_in_A": [
+    0,
+    1,
+    6,
+    6,
+    0,
+    6,
+    0,
+    0,
+    3,
+    6,
+    6
+  ],
+  "mod9_numerator_coefficients": [
+    7,
+    1,
+    4,
+    4,
+    6,
+    0,
+    7,
+    1,
+    3,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "mod9_paired_critical_values_invariant": true,
+  "mod9_residual_critical_polynomial_is_not_reciprocal_for_any_unit_lambda": true,
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Finite rank/minor and modulo9 controls. The written Newton proof gives the five-parameter Z3 family, full regular A26 over Q3(s), and its exclusion from the good reciprocal stratum. No rational coefficient descent or full-A26 arithmetic specialization over Q3 is asserted.",
+  "solved_coefficient_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "sympy": "1.14.0"
+}

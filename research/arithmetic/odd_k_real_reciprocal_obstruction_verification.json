@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "977ecd71ccf92238f525298c38afa96abbffe6ead0d2ec39370620b0d49e47b9",
+  "symbolic_controls": [
+    {
+      "k": 1,
+      "degree": 4,
+      "symbolic_coefficients": 1,
+      "Euler_reciprocity_derivative_and_endpoint_identities": true
+    },
+    {
+      "k": 2,
+      "degree": 8,
+      "symbolic_coefficients": 2,
+      "Euler_reciprocity_derivative_and_endpoint_identities": true
+    },
+    {
+      "k": 3,
+      "degree": 12,
+      "symbolic_coefficients": 3,
+      "Euler_reciprocity_derivative_and_endpoint_identities": true
+    },
+    {
+      "k": 5,
+      "degree": 20,
+      "symbolic_coefficients": 5,
+      "Euler_reciprocity_derivative_and_endpoint_identities": true
+    },
+    {
+      "k": 7,
+      "degree": 28,
+      "symbolic_coefficients": 7,
+      "Euler_reciprocity_derivative_and_endpoint_identities": true
+    }
+  ],
+  "exact_endpoint_controls": [
+    {
+      "k": 1,
+      "smallest_critical_root": "1/2",
+      "F_at_smallest_critical_root": "-13/2",
+      "strictly_negative": true
+    },
+    {
+      "k": 2,
+      "smallest_critical_root": "1/3",
+      "F_at_smallest_critical_root": "-164/9",
+      "strictly_negative": true
+    },
+    {
+      "k": 3,
+      "smallest_critical_root": "1/4",
+      "F_at_smallest_critical_root": "-62224223/1935360",
+      "strictly_negative": true
+    },
+    {
+      "k": 5,
+      "smallest_critical_root": "1/6",
+      "F_at_smallest_critical_root": "-7754121167413/118725336576",
+      "strictly_negative": true
+    },
+    {
+      "k": 7,
+      "smallest_critical_root": "1/8",
+      "F_at_smallest_critical_root": "-640984954973452374822661/6132330115972988928000",
+      "strictly_negative": true
+    }
+  ],
+  "Rolle_order_controls": [
+    {
+      "k": 1,
+      "unique_Rolle_compatible_word": "P",
+      "last_sign": "P"
+    },
+    {
+      "k": 2,
+      "unique_Rolle_compatible_word": "PQ",
+      "last_sign": "Q"
+    },
+    {
+      "k": 3,
+      "unique_Rolle_compatible_word": "PQP",
+      "last_sign": "P"
+    },
+    {
+      "k": 4,
+      "unique_Rolle_compatible_word": "PQPQ",
+      "last_sign": "Q"
+    },
+    {
+      "k": 5,
+      "unique_Rolle_compatible_word": "PQPQP",
+      "last_sign": "P"
+    },
+    {
+      "k": 6,
+      "unique_Rolle_compatible_word": "PQPQPQ",
+      "last_sign": "Q"
+    },
+    {
+      "k": 7,
+      "unique_Rolle_compatible_word": "PQPQPQP",
+      "last_sign": "P"
+    },
+    {
+      "k": 8,
+      "unique_Rolle_compatible_word": "PQPQPQPQ",
+      "last_sign": "Q"
+    },
+    {
+      "k": 9,
+      "unique_Rolle_compatible_word": "PQPQPQPQP",
+      "last_sign": "P"
+    },
+    {
+      "k": 10,
+      "unique_Rolle_compatible_word": "PQPQPQPQPQ",
+      "last_sign": "Q"
+    },
+    {
+      "k": 11,
+      "unique_Rolle_compatible_word": "PQPQPQPQPQP",
+      "last_sign": "P"
+    },
+    {
+      "k": 12,
+      "unique_Rolle_compatible_word": "PQPQPQPQPQPQ",
+      "last_sign": "Q"
+    },
+    {
+      "k": 13,
+      "unique_Rolle_compatible_word": "PQPQPQPQPQPQP",
+      "last_sign": "P"
+    }
+  ],
+  "proof_boundary": "The uniform proof uses the strict product inequality on the entire first-root interval, the convergent antiderivative, Rolle counts for arbitrary k, and the last-gap sign. Bounded symbolic/formula and sign-order checks supplement that proof. No existence is certified for even k or for nonreciprocal models.",
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false
+}

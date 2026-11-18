@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md",
+  "claims": {
+    "uniform_equivalence": "Exact quadratic critical-value algebra presentation and rational inverse chart for all good paired even-H pencils in both numerator parities.",
+    "ambient_coordinates": "3h rational coefficients q,a,rho; 2h+epsilon interpolation/normalization equations with explicit unit and discriminant opens.",
+    "canonical_norm": "Norm_A/B(u)=rho\u00b2; pole coefficient N0=(-1)^(b+1)(n-1)Norm_B/k(rho)\u00b2.",
+    "critical_point_discriminant": "The residual critical-point polynomial S(z\u00b2) has square discriminant; separate from the pencil discriminant.",
+    "scope_limits": [
+      "No rational parametrization or unirationality assertion for the implicit solution locus.",
+      "No new rational degree12 or26 model or uniform rational existence theorem.",
+      "Even-H/odd-Laurent locus only; no claim all covers have this symmetry.",
+      "The modulo9 control uses unit inversions but not division by nonunit Euler constants; no local-to-Q descent."
+    ],
+    "root_free_real_criterion": "Every finite critical point is real iff the Hermite trace matrices H_w and H_(w+4rho*a\u00b2) are positive definite; overQ this is2h strict rational leading-principal-minor inequalities."
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/ALTERNATING_HURWITZ_UNIFORMITY_AND_REAL_NODES.md",
+      "sha256": "fe8b0904619d5dbf13de9268fe20936bdd9bfa8e809f2bcca7a4c09638db5679",
+      "locator": "Proposition4 normalized paired critical criterion",
+      "role": "Prior squared-critical-value algebra criterion for the odd numerator case; the new uniform note spells out both parity conventions."
+    },
+    {
+      "path": "research/arithmetic/RECIPROCAL_DEGREE_TWELVE_OBSTRUCTION.md",
+      "sha256": "d19c604151d23615b284066dec9083cce019b4ea3a5b590451d4007c3465d8ba",
+      "locator": "Setting/equations1-4",
+      "role": "Prior even numerator/nozero branch normalization; no reciprocal restriction is imposed in the new chart."
+    },
+    {
+      "path": "research/arithmetic/RATIONAL_ALTERNATING_PENCIL_REALIZATION.md",
+      "sha256": "50eb65960c03f54a8406620e11dbfefafdeed48c7b314d5ad13f6d82c81b7a8d",
+      "locator": "Proposition2 rational degree8 seed",
+      "role": "Exact rational nonreciprocal seed for epsilon0 roundtrip."
+    },
+    {
+      "path": "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md",
+      "sha256": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+      "locator": "Monic rational normalization",
+      "role": "Exact rational reciprocal seed for epsilon1 roundtrip."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_THREE_ADIC_PENCILS.md",
+      "sha256": "7e975386d991e0d72d5322182cbd39d848ac58bae9249f85110814a166499ee0",
+      "locator": "Theorem1 and first Newton step",
+      "role": "Existing local family; used only to bind the modulo9 shadow, not to import rational descent."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_three_adic_verification.json",
+      "sha256": "4572d496788888fca971ffd177bcf3c342928ad2df1d22cee9875661a4f620c0",
+      "locator": "mod9_numerator_coefficients and mod9_critical_root_in_A",
+      "role": "Actual retained modulo9 N/U input for the nonreciprocal roundtrip."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_three_adic.py",
+      "sha256": "21918deb0d5ac8e2108e23542cd6b2a798099741a47c6f8c013d13295158e491",
+      "locator": "Literal T polynomial and modulo9 quotient arithmetic",
+      "role": "The retained etale algebra Z9[t]/T used for the local shadow."
+    },
+    {
+      "path": "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md",
+      "sha256": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+      "locator": "Theorems1-2 and Corollaries3-4",
+      "role": "Complete algebraic proof, rational inverse, norm squareclass and exact Hermite trace-form description of the all-real locus."
+    },
+    {
+      "path": "research/arithmetic/verify_paired_critical_trace_chart.py",
+      "sha256": "8ff45b1e41ba1d65f504d5888c55b599671c62bb0a9ad02d317af5855ad44ffd",
+      "locator": "recover_and_reconstruct and main",
+      "role": "Exact Q seed recovery, quadratic chart roundtrips, norm checks, positive/negative Hermite controls and modulo9 control."
+    },
+    {
+      "path": "research/arithmetic/paired_critical_trace_chart_verification.json",
+      "sha256": "88a9f86c8b841a74de91944484b8208f0fbc434c4bed1f8dbd4c7f1947935bb1",
+      "locator": "All controls and explicit q,a,rho coefficients",
+      "role": "Actual final checker execution."
+    }
+  ],
+  "external_sources": [],
+  "external_import_limit": "No new external theorem is needed for the quadratic algebra identities, rational inverse or norm conditions. Prior passport and local-family context retains its own sources.",
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        {
+          "reviewer": "/root",
+          "scope": "Independent derivation and retained proof/checker replay of the complete chart, canonical norms, plus independent derivation of the Hermite real-locus criterion.",
+          "result": "PASS"
+        },
+        {
+          "reviewer": "/root/moonshot_hurwitz",
+          "scope": "Full retained proof and checker audit, including norm/discriminant and Hermite real-locus criterion; separate internal checker replay exactly matched the retained receipt.",
+          "result": "PASS"
+        }
+      ],
+      "limits": "Internal agent reviews; no external or formal assurance upgrade.",
+      "reviewed_note_sha256": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+      "reviewed_checker_sha256": "8ff45b1e41ba1d65f504d5888c55b599671c62bb0a9ad02d317af5855ad44ffd",
+      "reviewed_receipt_sha256": "88a9f86c8b841a74de91944484b8208f0fbc434c4bed1f8dbd4c7f1947935bb1"
+    },
+    "priority_assessment": "Not performed."
+  }
+}

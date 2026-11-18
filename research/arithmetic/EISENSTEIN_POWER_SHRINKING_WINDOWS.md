@@ -39,7 +39,27 @@ A quantity at \(n/4\) is zero if \(4\nmid n\). For every fixed
 \(\nu>0\), there are consequently
 \(\gg_{\delta,\nu}n^{1-\delta-\nu}\) distinct ordered value pairs.
 Equivalently, every fixed exponent \(2/3<\theta<1\) is available for the
-actual summand difference.
+actual summand difference. The separate
+[pointwise semigroup-scale theorem EisSemigroupScale](EISENSTEIN_POINTWISE_SEMIGROUP_SCALE.md)
+now gives matching bounds of order \(n^\theta J(n)/\log n\) for distinct
+ordered pairs in both families, where
+\(J(n)=\prod_{p\mid n,\ p\ge5,\ p\equiv2(3)}(p-1)/(p-2)\).
+Its cofactor argument supplies an existential onset. The
+[moving-window extension EisLocationWindows](EISENSTEIN_MOVING_WINDOWS.md)
+allows a center \(x\) with \(M=\min(x,n-x)\), under
+\(H\le M\) and \(H^3\ge n^{1+\varepsilon}M\). In particular a
+designated small summand may lie between fixed multiples of \(n^\theta\)
+for any \(\theta>1/2\). This is a position-dependent window result; its
+central threshold remains \(\theta>2/3\). It supplies no explicit onset. The
+[value-count theorem EisValueCounts](EISENSTEIN_POINTWISE_VALUE_COUNTS.md)
+strengthens the distinct-pair consequence to
+\(\gg_{\theta,\nu}n^\theta/(\log n)^{\log4+\nu}\) for every fixed
+\(\nu>0\). Its moment argument supplies no numerical onset for that stronger
+value-count bound. The separate
+[bounded-factor theorem EisBoundedFactors](EISENSTEIN_BOUNDED_PRIME_FACTORS.md)
+also gives \(\gg_\theta n^\theta/(\log n)^2\) pairs for which every prime
+factor of each \(A\)-part exceeds \(n^{\eta_\theta}\), for some fixed
+\(\eta_\theta>0\). That additional restriction has no numerical onset here.
 
 **Corollary EisPowerThreeQuarters.** Both conclusions hold with difference
 at most \(n^{3/4}\) for every admissible \(n\ge2^{2^{40}}\), with at
@@ -49,7 +69,8 @@ The original \(99/100\) statement and its witness bound remain valid at
 \(n\ge2^{2^{411}}\). The general theorem in fact supplies a smaller
 explicit onset for that exponent. None of these cutoffs connects the proof to
 a practical finite certificate or identifies the complete small-exception lists.
-The pointwise semigroup-scale count remains a stronger open question.
+The pointwise semigroup-scale count is proved in the separate cofactor theorem
+throughout this exponent range. Its exact leading constant remains open.
 
 ## Quaternionic input and notation
 
@@ -592,11 +613,69 @@ estimate is unchanged. This verifies the polynomial upgrade directly. The
 stronger theorem above uses the actual triangle coefficients and the central
 annulus tail instead of this coarser pair of estimates.
 
+## What individual moment bounds can force
+
+The exponent \(2/3\) is a limit of this particular input, rather than of
+Eisenstein representations themselves. The triangle in (9) has the optimal
+order of absolute Legendre coefficient mass among central minorants with a
+comparable positive average.
+
+**Proposition EisMomentBarrier.** Write \(d\sigma=dt/2\) on \([-1,1]\).
+For every \(0<h\le1/4\) there is a symmetric probability measure \(\nu_h\)
+with \(\nu_h([-h,h])=0\) such that, with one absolute constant \(C\),
+\[
+ \left|\int L_d\,d\nu_h\right|\le C h^{3/2}\qquad(d\ge1).
+ \tag{18}
+\]
+Consequently, if \(F\le\mathbf1_{[-h,h]}\),
+\(\int F\,d\sigma\ge\kappa h\) for a fixed \(\kappa>0\), and
+\(F=\sum_{d\ge0}c_dL_d\) is absolutely summable, then
+\[
+ \sum_{d\ge1}|c_d|\ge \frac{\kappa}{C}h^{-1/2}.\tag{19}
+\]
+The assertion includes even polynomials and even absolutely summable series.
+
+To construct the measure, push \(\sigma\) through the map that sends
+\(0<|t|<h\) to \(\operatorname{sgn}(t)(|t|+h)\) and leaves the other
+points fixed. It moves mass \(h\) by distance \(h\), entirely within
+\([-2h,2h]\), and removes all central mass. Endpoints and the point zero
+have zero measure. Its symmetry makes all odd moments vanish.
+
+On \(|t|\le1/2\), the interior bound proved above and the identity
+\[
+ (1-t^2)L_d'(t)=d\{L_{d-1}(t)-tL_d(t)\}
+\]
+give \(|L_d(t)|\ll d^{-1/2}\) and \(|L_d'(t)|\ll\sqrt d\);
+\(d=1\) is checked directly. Since \(\int L_d\,d\sigma=0\),
+\[
+ \left|\int L_d\,d\nu_h\right|
+ \ll h\min\{h\sqrt d,d^{-1/2}\}\le C h^{3/2}.
+\]
+This proves (18). The minorant is nonpositive on the support of \(\nu_h\),
+so absolute convergence permits integration term by term and gives
+\[
+ \kappa h\le\int F\,d(\sigma-\nu_h)
+ \le C h^{3/2}\sum_{d\ge1}|c_d|,
+\]
+which proves (19).
+
+In particular, an individual-moment envelope of size \(\varepsilon\) is
+compatible with an empty central interval whenever
+\(h\le c\varepsilon^{2/3}\). At the normalized square-root envelope
+\(\varepsilon=n^{-1/2}\), positivity, total mass and these separate
+moment bounds alone therefore cannot force a difference window smaller in
+power than \(n^{2/3}\). The divisor factors in (8) do not improve that
+conclusion. This is an obstruction for the stated abstract information; it
+is not an arithmetic counterexample. Joint cancellation across degrees or
+additional arithmetic information could give smaller actual windows.
+
 ## Scope and review
 
 The exponent family and cutoffs are explicit. No computation through an onset
-is proposed. The complete small-exception lists and pointwise semigroup-scale
-counts remain open. The theorem concerns ordinary Eisenstein arithmetic; the
+is proposed. The complete small-exception lists remain open. The separate
+cofactor theorem proves the expected pointwise pair-count scale in this range,
+including fixed central widths and the unrestricted count. The theorem concerns
+ordinary Eisenstein arithmetic; the
 simultaneous modulus-12 pointwise lower bound and fixed-prime marginals remain
 separate open inputs.
 
@@ -604,6 +683,7 @@ The coefficient-valued Hecke normalization, simultaneous weight/level
 uniformity, positive-weight cuspidality and mixed fixed-level extension
 received renewed internal source/proof audits. The direct triangle expansion,
 annulus geometry, Jackson--Parseval construction and effective tuning also
-received separate internal derivation checks. These are internal mathematical
+received separate internal derivation checks. The moment-barrier construction
+and its coefficient duality received an independent internal check. These are internal mathematical
 reviews. No external specialist review, formal verification or established
 priority is claimed. No new finite coverage scan is used.

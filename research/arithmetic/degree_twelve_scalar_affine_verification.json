@@ -1,0 +1,500 @@
+{
+  "assurance": {
+    "external_human_review": false,
+    "formal_verification": false,
+    "independent_external_replay": false
+  },
+  "c_zero": "Excluded by frozen both-scalar Proposition2.",
+  "claim": "No good rational degree12 even-numerator paired pencil has scalar secant and affine reciprocal scale.",
+  "exact_normalization_requires_no_radical_extension": true,
+  "exceptional_direct_certificates": {
+    "-1": {
+      "denominator_controls": [
+        {
+          "degree": 0,
+          "rational_roots": {}
+        }
+      ],
+      "distinct_coefficient_denominators": 1,
+      "exact_final_identity": "1",
+      "field_coefficients": 254,
+      "nodes": 94
+    },
+    "-1/2": {
+      "denominator_controls": [
+        {
+          "degree": 0,
+          "rational_roots": {}
+        }
+      ],
+      "distinct_coefficient_denominators": 1,
+      "exact_final_identity": "1",
+      "field_coefficients": 221,
+      "nodes": 79
+    },
+    "-1/3": {
+      "denominator_controls": [
+        {
+          "degree": 0,
+          "rational_roots": {}
+        }
+      ],
+      "distinct_coefficient_denominators": 1,
+      "exact_final_identity": "1",
+      "field_coefficients": 262,
+      "nodes": 94
+    },
+    "-1/4": {
+      "denominator_controls": [
+        {
+          "degree": 0,
+          "rational_roots": {}
+        }
+      ],
+      "distinct_coefficient_denominators": 1,
+      "exact_final_identity": "1",
+      "field_coefficients": 323,
+      "nodes": 148
+    }
+  },
+  "generic_certificate": {
+    "denominator_controls": [
+      {
+        "degree": 17,
+        "rational_roots": {
+          "-1/3": 1,
+          "0": 11
+        }
+      },
+      {
+        "degree": 16,
+        "rational_roots": {
+          "-1/3": 1,
+          "0": 10
+        }
+      },
+      {
+        "degree": 19,
+        "rational_roots": {
+          "-1/4": 1,
+          "0": 12
+        }
+      },
+      {
+        "degree": 4,
+        "rational_roots": {
+          "-1/3": 1
+        }
+      },
+      {
+        "degree": 22,
+        "rational_roots": {
+          "-1/2": 1,
+          "-1/4": 1,
+          "0": 7
+        }
+      },
+      {
+        "degree": 21,
+        "rational_roots": {
+          "-1": 1,
+          "-1/4": 1,
+          "0": 8
+        }
+      },
+      {
+        "degree": 32,
+        "rational_roots": {
+          "-1/3": 2,
+          "0": 20
+        }
+      },
+      {
+        "degree": 54,
+        "rational_roots": {
+          "-1/3": 2,
+          "-1/4": 2,
+          "0": 30
+        }
+      },
+      {
+        "degree": 28,
+        "rational_roots": {
+          "-1/3": 1,
+          "-1/4": 1,
+          "0": 15
+        }
+      },
+      {
+        "degree": 8,
+        "rational_roots": {}
+      },
+      {
+        "degree": 43,
+        "rational_roots": {
+          "-1/2": 2,
+          "-1/4": 2,
+          "0": 8
+        }
+      },
+      {
+        "degree": 35,
+        "rational_roots": {
+          "-1/2": 2,
+          "-1/4": 1,
+          "0": 9
+        }
+      },
+      {
+        "degree": 80,
+        "rational_roots": {
+          "-1": 2,
+          "-1/2": 2,
+          "-1/3": 1,
+          "-1/4": 4,
+          "0": 20
+        }
+      },
+      {
+        "degree": 31,
+        "rational_roots": {
+          "-1": 1,
+          "-1/2": 1,
+          "-1/4": 1,
+          "0": 7
+        }
+      },
+      {
+        "degree": 78,
+        "rational_roots": {
+          "-1": 2,
+          "-1/2": 2,
+          "-1/4": 5,
+          "0": 28
+        }
+      },
+      {
+        "degree": 48,
+        "rational_roots": {
+          "-1": 1,
+          "-1/2": 1,
+          "-1/4": 2,
+          "0": 15
+        }
+      },
+      {
+        "degree": 24,
+        "rational_roots": {
+          "-1/2": 1,
+          "-1/4": 1,
+          "0": 4
+        }
+      },
+      {
+        "degree": 0,
+        "rational_roots": {}
+      },
+      {
+        "degree": 94,
+        "rational_roots": {
+          "-1": 2,
+          "-1/2": 3,
+          "-1/4": 6,
+          "0": 32
+        }
+      },
+      {
+        "degree": 64,
+        "rational_roots": {
+          "-1": 1,
+          "-1/2": 2,
+          "-1/4": 3,
+          "0": 19
+        }
+      },
+      {
+        "degree": 13,
+        "rational_roots": {
+          "0": 3
+        }
+      },
+      {
+        "degree": 15,
+        "rational_roots": {
+          "-1/3": 1
+        }
+      },
+      {
+        "degree": 24,
+        "rational_roots": {
+          "-1": 1,
+          "-1/3": 1,
+          "-1/4": 1,
+          "0": 8
+        }
+      },
+      {
+        "degree": 8,
+        "rational_roots": {
+          "-1/3": 1,
+          "0": 4
+        }
+      },
+      {
+        "degree": 14,
+        "rational_roots": {
+          "-1": 1,
+          "-1/4": 1,
+          "0": 1
+        }
+      },
+      {
+        "degree": 6,
+        "rational_roots": {}
+      },
+      {
+        "degree": 48,
+        "rational_roots": {
+          "-1": 2,
+          "-1/2": 1,
+          "-1/4": 2,
+          "0": 12
+        }
+      },
+      {
+        "degree": 30,
+        "rational_roots": {
+          "-1/4": 1,
+          "0": 11
+        }
+      },
+      {
+        "degree": 13,
+        "rational_roots": {
+          "-1/4": 1,
+          "0": 8
+        }
+      },
+      {
+        "degree": 31,
+        "rational_roots": {
+          "-1": 2,
+          "-1/4": 2,
+          "0": 2
+        }
+      },
+      {
+        "degree": 11,
+        "rational_roots": {
+          "-1": 1
+        }
+      },
+      {
+        "degree": 45,
+        "rational_roots": {
+          "-1": 2,
+          "-1/2": 1,
+          "-1/4": 2,
+          "0": 10
+        }
+      },
+      {
+        "degree": 20,
+        "rational_roots": {
+          "-1": 1,
+          "-1/2": 1,
+          "-1/4": 1,
+          "0": 4
+        }
+      },
+      {
+        "degree": 28,
+        "rational_roots": {
+          "-1/2": 1,
+          "-1/4": 1,
+          "0": 9
+        }
+      },
+      {
+        "degree": 3,
+        "rational_roots": {
+          "0": 3
+        }
+      },
+      {
+        "degree": 15,
+        "rational_roots": {
+          "-1/4": 1,
+          "0": 6
+        }
+      },
+      {
+        "degree": 5,
+        "rational_roots": {
+          "0": 5
+        }
+      },
+      {
+        "degree": 38,
+        "rational_roots": {
+          "-1": 2,
+          "-1/2": 1,
+          "-1/4": 2,
+          "0": 5
+        }
+      },
+      {
+        "degree": 63,
+        "rational_roots": {
+          "-1/3": 1
+        }
+      },
+      {
+        "degree": 84,
+        "rational_roots": {
+          "-1": 1,
+          "-1/4": 1,
+          "0": 6
+        }
+      },
+      {
+        "degree": 73,
+        "rational_roots": {
+          "-1/3": 1,
+          "0": 5
+        }
+      },
+      {
+        "degree": 66,
+        "rational_roots": {
+          "0": 4
+        }
+      },
+      {
+        "degree": 130,
+        "rational_roots": {
+          "-1": 5,
+          "-1/2": 2,
+          "-1/3": 2
+        }
+      },
+      {
+        "degree": 164,
+        "rational_roots": {
+          "-1/4": 1,
+          "0": 3
+        }
+      },
+      {
+        "degree": 129,
+        "rational_roots": {
+          "-1": 2,
+          "-1/4": 2,
+          "0": 2
+        }
+      },
+      {
+        "degree": 100,
+        "rational_roots": {
+          "-1": 1,
+          "-1/3": 1
+        }
+      },
+      {
+        "degree": 201,
+        "rational_roots": {
+          "-1/2": 1,
+          "-1/3": 1
+        }
+      },
+      {
+        "degree": 238,
+        "rational_roots": {
+          "0": 3
+        }
+      },
+      {
+        "degree": 201,
+        "rational_roots": {
+          "0": 2
+        }
+      },
+      {
+        "degree": 151,
+        "rational_roots": {
+          "-1": 1,
+          "-1/4": 1,
+          "0": 1
+        }
+      },
+      {
+        "degree": 278,
+        "rational_roots": {
+          "-1": 2,
+          "-1/2": 1,
+          "-1/3": 1
+        }
+      },
+      {
+        "degree": 316,
+        "rational_roots": {
+          "0": 3
+        }
+      },
+      {
+        "degree": 103,
+        "rational_roots": {
+          "0": 5
+        }
+      },
+      {
+        "degree": 351,
+        "rational_roots": {
+          "-1": 4,
+          "-1/2": 4,
+          "-1/3": 2
+        }
+      }
+    ],
+    "distinct_coefficient_denominators": 54,
+    "exact_final_identity": "1",
+    "field_coefficients": 102,
+    "nodes": 42
+  },
+  "generic_rational_exceptional_parameters": [
+    "-1",
+    "-1/2",
+    "-1/3",
+    "-1/4",
+    "0"
+  ],
+  "no_groebner_call_in_replay": true,
+  "no_rational_denominator_restriction": true,
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope_limit": "Scalar secant with affine scale in degree12 only; unrestricted nonreciprocal models remain open.",
+  "sha256": {
+    "research/arithmetic/DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md": "0171cceb84ee1b2c261d71041252a05a5f2272511e2e685773e6b9426a9a0ed2",
+    "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+    "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+    "research/arithmetic/degree12_scalar_affine_arithmetic_certificates.json": "2750d9c57b29b44751f88809b6e94a0a7b52d54c157d74a6fa381378a515cecb",
+    "research/arithmetic/degree12_scalar_affine_reduced_system.json": "b08eb51e1b38a6cbb8c197c2a31590d165bab20ee41add878c3693fbdacefd84",
+    "research/arithmetic/verify_degree_twelve_scalar_affine_obstruction.py": "2127862c1c0690b3cd882a869ea1ee96ac9466a6ae2b164cfa88978ab7607b28"
+  },
+  "sympy": "1.14.0",
+  "triangular_denominators": [
+    "2",
+    "2*c",
+    "2*c*(c + 1)",
+    "2*c*(c**2 + 3*c + 1)",
+    "2*c*(c**3 + 6*c**2 + 5*c + 1)",
+    "2*c*(c + 1)*(c**3 + 9*c**2 + 6*c + 1)",
+    "2*c*(c**5 + 15*c**4 + 35*c**3 + 28*c**2 + 9*c + 1)"
+  ],
+  "triangular_rational_exceptions": [
+    "-1",
+    "0"
+  ],
+  "uniform_written_reduction_required": true
+}

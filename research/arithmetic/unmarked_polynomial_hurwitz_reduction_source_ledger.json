@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
+  "assurance": "Internal mathematical proof and exact finite controls; no uniform unmarked connectivity or rational-point claim.",
+  "declarations": [
+    {
+      "name": "Lemma1. The allowed generators give the full strand stabilizer",
+      "proof": "Elementary marked-configuration forgetful bundle, kernel loop lifting and punctured-plane meridian generators; no subgroup enlargement."
+    },
+    {
+      "name": "Theorem2. A uniform cyclic DT tuple and a literal stabilizer",
+      "proof": "Explicit conjugate factors, exact(r,r,1) cut, telescoping product, short3-cycle and Jordan; cycling braid raised toN fixes literal tuple and cycles labels."
+    },
+    {
+      "name": "Lemma3. A transitive stabilizer removes a marking",
+      "proof": "Double-coset adjustment by a point stabilizer."
+    },
+    {
+      "name": "Theorem4. Unmarked connectivity suffices for both marked spaces",
+      "proof": "Lemma1 exact subgroup, Theorem2 cyclic stabilizer forDT case; uniqueT type fixes its markedstrand."
+    },
+    {
+      "name": "Corollary5. The remaining uniform problem is unmarked",
+      "proof": "Sufficient only, using uniform attachment and cross-type link from cycle-folding."
+    }
+  ],
+  "imported_inputs": [
+    {
+      "path": "research/arithmetic/alternating_hurwitz_source_ledger.json",
+      "sha256": "cf4fb4825427f73bc32f92d4b5989421a44737bde24ecbf055a7f922476f88fa",
+      "locator": "jones-primitive-cycle; Theorem1.1 (Jordan)",
+      "primary_url": "https://arxiv.org/pdf/1209.5169v1",
+      "retained_pdf": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "role": "A primitive group containing a3-cycle with at least3fixed points containsAn. No primitive-DT classification is needed for the new explicit tuple."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
+      "sha256": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+      "locator": "Corollaries4-6",
+      "role": "Uniform coalescence-type link, marked connectivity criterion and attachment transitivity."
+    }
+  ],
+  "evidence": {
+    "checker": "research/arithmetic/verify_unmarked_polynomial_hurwitz_reduction.py",
+    "receipt": "research/arithmetic/unmarked_polynomial_hurwitz_reduction_verification.json",
+    "scope": "Exact tuple/product/stabilizer/label checks at r2,3,4,5,6,7,12,25,50; completeSr quotient adjustments r2..7. The subgroup equality and uniform results have written proofs."
+  },
+  "remaining_frontier": "Two unmarked polynomial connectivity assertions; first new original degree14 / polynomial degree13. No all-r proof or orbit distinction supplied.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

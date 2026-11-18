@@ -1,0 +1,95 @@
+{
+  "all_real_branch_values_context": "One fixed ordered set of b distinct real values; target fixed, quotient source isomorphism",
+  "all_real_peak_distributions": {
+    "10": {
+      "6": 840,
+      "10": 1008
+    },
+    "12": {
+      "6": 7848,
+      "10": 55728
+    },
+    "8": {
+      "6": 72
+    }
+  },
+  "all_real_totals": {
+    "10": 1848,
+    "12": 63576,
+    "8": 72
+  },
+  "checker_sha256": "a973284ff8c5b2a7c3e83983199df791d834606e707622a4779d1c72cd99b388",
+  "constructor_control_degrees": [
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    56,
+    58,
+    60
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "independent_degree8_DT_enumeration": {
+    "absolute_all_real": 72,
+    "all_generated_group_orders": {
+      "20160": 72
+    },
+    "labeled_all_real_transitive": 504,
+    "raw_DT_quadruples": 93296,
+    "reversible": 4
+  },
+  "independent_replay": false,
+  "kind": "exact_real_matching_walk_certificate",
+  "limits": "Uniform real/real-algebraic realization and all-degree spectra use the written proofs. No Q coefficients, degree26 rational model, uniform rational parametrization or complex Hurwitz connectivity is certified.",
+  "odd_context": "One fixed negation-symmetric ordered branch set; reversible walks and odd Laurent functions",
+  "odd_real_peak_distributions": {
+    "10": {
+      "6": 8
+    },
+    "12": {
+      "6": 36,
+      "10": 60
+    },
+    "26": {
+      "6": 32296,
+      "10": 9108696,
+      "14": 83956320,
+      "18": 128943360,
+      "22": 47628000
+    },
+    "8": {
+      "6": 4
+    }
+  },
+  "odd_real_totals": {
+    "10": 8,
+    "12": 96,
+    "26": 269668672,
+    "8": 4
+  },
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "source_arithmetic": "Exact permutations, bit masks and unbounded integer DP; no numerical cover recovery"
+}

@@ -204,7 +204,9 @@ records internal replay. The quantified identity, scheme proof and
 solvable-base-change proof are written above. No independent replay,
 formal verification, or external review is claimed.
 
-This settles the requested fixed-map realization for the degree-ten
-pencil. It does not identify the generic S10 map with a generic A10
-cover, and it does not supply one fixed map for arbitrary rational
-coefficient families such as the higher-rank Hasse resolvents.
+This settles the fixed-map realization for the degree-ten pencil in
+dimension three. The [finite-etale family theorem](FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md)
+supplies a single fixed map in dimension four for arbitrary rational
+coefficient families, including the higher-rank Hasse resolvents.
+Their fixed three-dimensional realization remains open. The generic
+groups of these ambient maps remain symmetric.

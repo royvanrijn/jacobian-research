@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/REAL_PAIRED_LAURENT_MATCHING_WALKS.md",
+  "assurance": "Internal primary-source inspection and exact finite arithmetic; no novelty, external review or formal verification claimed.",
+  "sources": [
+    {
+      "id": "el-hilany-rau-real-simple",
+      "title": "Signed counts of real simple rational functions",
+      "authors": [
+        "Boulos El Hilany",
+        "Johannes Rau"
+      ],
+      "version": "arXiv:1712.05639v2, 11 October 2019; PDF creation 14 October 2019",
+      "primary_url": "https://arxiv.org/pdf/1712.05639v2",
+      "retained_pdf": "research/arithmetic/sources/el-hilany-rau-real-simple-1712.05639v2.pdf",
+      "sha256": "b03338b4a468d92b5009f17638ab649c967d3f2044726b581315f1a0795a341a",
+      "bytes": 776796,
+      "pdf_pages": 34,
+      "direct_read": true,
+      "extraction": "pdftotext -layout; introduction pp1-2, real-dessin definitions pp4-5 and Theorem2.4 p5 inspected",
+      "inspected_statements": [
+        {
+          "locator": "Introduction, definition of simple rational function",
+          "printed_pages": "1",
+          "pdf_pages": "1",
+          "statement": "A degree-d simple rational function has form psi(z)/(z-p), with deg psi=d and psi(p) nonzero.",
+          "application": "The existing real-Hurwitz framework concerns the same two-pole profile (d-1,1), rather than a different denominator."
+        },
+        {
+          "locator": "Theorem 2.4",
+          "printed_pages": "5",
+          "pdf_pages": "5",
+          "statement": "For a fixed ordered real branch set and prescribed profiles, normalized real simple rational functions correspond bijectively to their real dessins.",
+          "application": "Primary context for the real-cover realization and chamber framework. The note writes the hemisphere gluing explicitly for its paired-simple-critical specialization."
+        },
+        {
+          "locator": "Theorem 1.2",
+          "printed_pages": "2",
+          "pdf_pages": "2",
+          "statement": "The stated nonvanishing criterion concerns a generating series allowing additional simple branch values.",
+          "application": "It is not used to assert nonvanishing of the individual zero-additional-branch coefficient or rational descent of this passport."
+        }
+      ],
+      "role": "Direct primary comparison and context; the matching tree restriction, schedules, spectra and exact counts have their own proofs and computations.",
+      "limits": "No exhaustive novelty comparison, rational coefficient construction, or direct deduction of the reversible-walk classification from this source is claimed."
+    }
+  ],
+  "existing_indispensable_inputs": [
+    {
+      "document": "research/arithmetic/alternating_hurwitz_source_ledger.json",
+      "locator": "Bilu-Strambi Theorems1.1 and1.2(a)",
+      "role": "Complex Riemann existence and realization over a number field for algebraic branch points. Real reflection descent is written in the new note."
+    },
+    {
+      "document": "research/arithmetic/alternating_hurwitz_priority_ledger.json",
+      "locator": "Jones, Characteristically simple Beauville groups I, Proposition6.1(3)",
+      "role": "Primitive degree n>=9 group containing a double transposition contains A_n; applies for n>=10. Degree8 is checked separately."
+    },
+    {
+      "document": "research/arithmetic/ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md",
+      "locator": "Lemma3 and Theorem4",
+      "role": "Resultant leading coefficient, discriminant normalization and transverse ordinary nodes."
+    },
+    {
+      "document": "research/arithmetic/ALTERNATING_HURWITZ_UNIFORMITY_AND_REAL_NODES.md",
+      "locator": "Theorem6",
+      "role": "Previously proved upper bounds on real roots in the odd locus; the matching note reproves the necessary all-real case."
+    }
+  ],
+  "checker": {
+    "path": "research/arithmetic/verify_real_paired_laurent_matching.py",
+    "receipt": "research/arithmetic/real_paired_laurent_matching_verification.json",
+    "finite_scope": "Complete all-real counts n8,10,12; complete reversible counts n8,10,12,26; separate full degree8 DT enumeration; finite constructor/spectrum controls through degree60.",
+    "uniform_scope": "The written matching, gluing and explicit schedule proofs provide all-degree quantifiers.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  }
+}

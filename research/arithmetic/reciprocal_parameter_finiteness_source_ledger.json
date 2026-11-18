@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/RECIPROCAL_PARAMETER_FINITENESS_AND_INTEGRALITY.md",
+  "assurance": "Internal written all-degree proofs and exact symbolic replay; no external human review, external independent replay or formal verification claimed.",
+  "proof_origin": "Weighted leading degeneration to a polynomial whose derivative roots are all zero-value roots; elementary multiplicity count forces a monomial. Standard Cohen-Macaulay regular-sequence criterion plus a written filtered syzygy argument yields exact raw lengths.",
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "locator": "Exact normalized equations, original open conditions and coefficient descent."
+    },
+    {
+      "path": "research/arithmetic/verify_mixed_reciprocal_coupled_ode.py",
+      "sha256": "73ce6639cb20e2c7bb1947138acc4e8d499b8143e9f0c9320729c38a71d52f29",
+      "locator": "Actual F,X,Y reconstruction reused by the new symbolic controls."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_MIXED_2_10_GLOBAL_OBSTRUCTION.md",
+      "sha256": "00698e68db7196e1811442a37560eab55970859d0c819ae9ebb922be2af2112b",
+      "locator": "Written weighted valuation lemma, generalized here to all sign classes and residue extensions."
+    },
+    {
+      "path": "research/arithmetic/RECIPROCAL_PARAMETER_FINITENESS_AND_INTEGRALITY.md",
+      "sha256": "0efebd5d8063858d78f17eb4dc475776544eb95b0c8f235c5321e73cbc80d8b5",
+      "locator": "New uniform single-critical-value degeneration, finite raw length, algebraicity and S-integrality/S-unit proof."
+    },
+    {
+      "path": "research/arithmetic/verify_reciprocal_parameter_finiteness.py",
+      "sha256": "0644234f609df5c560249b778daaba74fd712af2916604105a7193a49826112c",
+      "locator": "Exact bounded degeneration identities, denominator support, independent full small raw quotient lengths."
+    },
+    {
+      "path": "research/arithmetic/reciprocal_parameter_finiteness_verification.json",
+      "sha256": "6afd57eb4ffc1428a1f1b948cf2f510d80423ce7bbaf3bbe8d0467a6e78275e8",
+      "locator": "Actual successful replay, all weighted equations and complete small lex bases."
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Stacks Project, Lemma10.104.2, tag02JN",
+      "url": "https://stacks.math.columbia.edu/tag/02JN",
+      "retained_path": "research/arithmetic/sources/stacks_02JN_regular_sequence_2026_11_18.html",
+      "locator": "Dimension criterion for regular sequences in a Noetherian local Cohen-Macaulay ring.",
+      "role": "The isolated homogeneous complete intersection gives a regular sequence; no classification result imported.",
+      "sha256": "0488618047b529d02e314be2bb30efe0c0f33d714cc740109b0714f193410aaa"
+    },
+    {
+      "title": "Stacks Project, Section10.104, tag00N7",
+      "url": "https://stacks.math.columbia.edu/tag/00N7",
+      "retained_path": "research/arithmetic/sources/stacks_00N7_cohen_macaulay_2026_11_18.html",
+      "locator": "Lemma10.104.7 and Lemma10.104.2.",
+      "role": "Polynomial rings over a field are Cohen-Macaulay; standard input to the exact-length calculation.",
+      "sha256": "83e2348137daec0aaccb71945f31c1017a96ebd8f8a4370c1535adaae39bf362"
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "arithmetic": "ExactQQ weighted coefficients and GF29 Groebner/standard-monomial quotient lengths."
+  },
+  "scope_limits": [
+    "Raw lengths include degenerate points and multiplicities, not distinct good covers, rational models or Hurwitz orbits.",
+    "The new all-degree results concern the monic normalized reciprocal ansatz in degrees4h+2, with the critical zero normalized to u1.",
+    "Leading-form origin-only holds over every algebraically closed field of characteristic0 or characteristic>4h+1; this is the denominator-control input.",
+    "S-integrality and r being an S-unit apply in every number field and all finite local extensions above primes>4h+1.",
+    "The argument gives integrality, not good reduction; degenerate residue points still require inclusion in a complete local exclusion.",
+    "Generic nonreciprocal paired-critical families are not asserted finite.",
+    "No rational construction or complete degree26 rational-point classification is supplied.",
+    "Bounded symbolic and quotient-length controls supplement the written uniform proofs.",
+    "No novelty or priority claim is made."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "kind": "fixed_leaf_strategy_obstruction",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "a904a7f7c9a5e65b6f29178dd50e4d69379aa1e9dbc8cb54a3e1433199762b83",
+  "input_sha256": {
+    "FIXED_LEAF_HURWITZ_OBSTRUCTION.md": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+    "PAIRED_HURWITZ_LEAF_EXTRACTION.md": "df40145e7aa8e1fa759573d1caaae312cca4442ab2b80cfed835fb2f50998952",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "c2a1ff752f6dee310c337625a4be8caf592e09db1f5a2116517bd79f2170e7a6",
+    "alternating_hurwitz_source_ledger.json": "cf4fb4825427f73bc32f92d4b5989421a44737bde24ecbf055a7f922476f88fa"
+  },
+  "complete_degree7_deletion_equivariance": {
+    "complete_fixed_product_domain": 392,
+    "all_chosen_leaf_inputs": 1134,
+    "all_leaf_preserving_moves_checked": 3444,
+    "moves_spreading_the_chosen_sheet": 1092
+  },
+  "uniform_family_controls": [
+    {
+      "r": 3,
+      "degree": 7,
+      "full_group_scope": "A_N by written primitivity/3-cycle proof",
+      "lower_wreath_order_formula": 48,
+      "independent_lower_group_closure_before": 48,
+      "independent_lower_group_closure_after": 720,
+      "no_initial_removable_DT": true,
+      "escape_word_length": 3,
+      "escape_sheet_owner_counts": [
+        1,
+        2,
+        1
+      ],
+      "two_exclusive_leaf_ends_after_escape": true
+    },
+    {
+      "r": 4,
+      "degree": 9,
+      "full_group_scope": "A_N by written primitivity/3-cycle proof",
+      "lower_wreath_order_formula": 384,
+      "independent_lower_group_closure_before": 384,
+      "independent_lower_group_closure_after": null,
+      "no_initial_removable_DT": true,
+      "escape_word_length": 4,
+      "escape_sheet_owner_counts": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "two_exclusive_leaf_ends_after_escape": true
+    },
+    {
+      "r": 5,
+      "degree": 11,
+      "full_group_scope": "A_N by written primitivity/3-cycle proof",
+      "lower_wreath_order_formula": 3840,
+      "independent_lower_group_closure_before": null,
+      "independent_lower_group_closure_after": null,
+      "no_initial_removable_DT": true,
+      "escape_word_length": 5,
+      "escape_sheet_owner_counts": [
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "two_exclusive_leaf_ends_after_escape": true
+    },
+    {
+      "r": 6,
+      "degree": 13,
+      "full_group_scope": "A_N by written primitivity/3-cycle proof",
+      "lower_wreath_order_formula": 46080,
+      "independent_lower_group_closure_before": null,
+      "independent_lower_group_closure_after": null,
+      "no_initial_removable_DT": true,
+      "escape_word_length": 6,
+      "escape_sheet_owner_counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "two_exclusive_leaf_ends_after_escape": true
+    },
+    {
+      "r": 12,
+      "degree": 25,
+      "full_group_scope": "A_N by written primitivity/3-cycle proof",
+      "lower_wreath_order_formula": 1961990553600,
+      "independent_lower_group_closure_before": null,
+      "independent_lower_group_closure_after": null,
+      "no_initial_removable_DT": true,
+      "escape_word_length": 12,
+      "escape_sheet_owner_counts": "1 repeated r-2 times, then2,1",
+      "two_exclusive_leaf_ends_after_escape": true
+    },
+    {
+      "r": 25,
+      "degree": 51,
+      "full_group_scope": "A_N by written primitivity/3-cycle proof",
+      "lower_wreath_order_formula": 520469842636666622693081088000000,
+      "independent_lower_group_closure_before": null,
+      "independent_lower_group_closure_after": null,
+      "no_initial_removable_DT": true,
+      "escape_word_length": 25,
+      "escape_sheet_owner_counts": "1 repeated r-2 times, then2,1",
+      "two_exclusive_leaf_ends_after_escape": true
+    },
+    {
+      "r": 50,
+      "degree": 101,
+      "full_group_scope": "A_N by written primitivity/3-cycle proof",
+      "lower_wreath_order_formula": 34243224702511976248246432895208185975118675053719198827915654463488000000000000,
+      "independent_lower_group_closure_before": null,
+      "independent_lower_group_closure_after": null,
+      "no_initial_removable_DT": true,
+      "escape_word_length": 50,
+      "escape_sheet_owner_counts": "1 repeated r-2 times, then2,1",
+      "two_exclusive_leaf_ends_after_escape": true
+    }
+  ],
+  "generic_leaf_handoff_identity": {
+    "literal_Q_inverse_squared_identity": true,
+    "chosen_sheet_occurs_in_two_intermediate_factors": true
+  },
+  "scope": "Written all-degree obstruction to retaining a chosen leaf throughout elementary moves, plus full-alternating witness family and explicit unrestricted escape. No unrestricted orbit distinction or arbitrary-tree leaf-extraction theorem.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

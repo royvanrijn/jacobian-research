@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/DEGREE_TWENTY_SIX_MIXED_2_10_GLOBAL_OBSTRUCTION.md",
+  "assurance": "Internal written valuation proof and two independent exact algorithm implementations; no independent external replay, external human review or formal verification claimed.",
+  "proof_origin": "Weighted valuation rescaling plus exact complete affine and leading-form residue censuses.",
+  "external_sources": [],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "locator": "Uniform coupled equations; necessity and sufficiency of the four-variable p1q5 reduction on its stated open set."
+    },
+    {
+      "path": "research/arithmetic/verify_mixed_reciprocal_coupled_ode.py",
+      "sha256": "73ce6639cb20e2c7bb1947138acc4e8d499b8143e9f0c9320729c38a71d52f29",
+      "locator": "Exact symbolic reconstruction of the four primitive equations and quadratic sign descent."
+    },
+    {
+      "path": "research/arithmetic/mixed_reciprocal_coupled_ode_verification.json",
+      "sha256": "9670f2ed143857816bbeb1bc3dffff2ab47e41773c2b2dd63f41fe64596fcf61",
+      "locator": "Successful retained replay of the authoritative reduction."
+    },
+    {
+      "path": "research/arithmetic/degree26_mixed_2_10_system.json",
+      "sha256": "113cc6740b2e40df3f6306eb94b7343552aafe9e24bf60a1d68ec6f5938db997",
+      "locator": "The exact four primitive integer polynomials; no variable factor dropped in the global check."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_MIXED_2_10_GLOBAL_OBSTRUCTION.md",
+      "sha256": "00698e68db7196e1811442a37560eab55970859d0c819ae9ebb922be2af2112b",
+      "locator": "Written uniform weighted-residue lemma and application covering all denominator patterns."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_mixed_2_10_global.py",
+      "sha256": "a7e51cd95899e83932a98c05e2b9437dd132fd64ca2ea4a8028c2d8f96e1739e",
+      "locator": "First complete F61 enumeration, including singular first-two linear systems; exact degree and input bindings."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_mixed_2_10_finite_field.cpp",
+      "sha256": "08d0694a5645f6e0e9c768764f1bd9038f92462c53c7420f0a68812879e08822",
+      "locator": "Independent literal all-coordinate enumeration, independent selection of weighted-leading terms."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_mixed_2_10_global_verification.json",
+      "sha256": "fbe77ab09413c03667ed1ed94e13cee6148aa4979c36852d2b44cf156e877214",
+      "locator": "Both complete censuses, exact point sets, full weighted-leading forms and source pins."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "cpp": "C++17 integer arithmetic modulo61; g++ -O2"
+  },
+  "scope_limits": [
+    "The entire four-polynomial closure, including degenerate parameters, has noQ61point; no saturation or good-reduction condition is imposed.",
+    "All denominator patterns are covered by weighted rescaling; the at-most-quadratic totally ramified extension preserves residueF61.",
+    "The model consequence assumes the normalized good reciprocal degree26 setting with raw sign degrees2+10, in either orientation.",
+    "Unequal sign degrees force lambda square over the base field; nonsquare6+6 models are not excluded.",
+    "No real-critical-point hypothesis is used.",
+    "The remaining4+8,6+6 cases and general nonreciprocal degree26 models remain open here.",
+    "The full finite residue domains are exhaustively enumerated; no random sampling is used.",
+    "The input polynomials are imported from the retained exact reduction rather than rederived during each new census replay.",
+    "No novelty or priority claim is made."
+  ]
+}

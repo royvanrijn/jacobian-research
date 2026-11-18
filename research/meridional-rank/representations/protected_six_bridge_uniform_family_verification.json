@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "python": "3.12.3",
+  "checker_sha256": "ea61f397727233d25a0d75139a3f23132d0317c2fe3077be6909fefd1a30b5d7",
+  "input_sha256": "94765c26afb5d67f47d93f4b1c387d20a733eea31161dab562c7b01313a3074a",
+  "dependency_sha256": {
+    "verify_unbounded_prime_augmentation_gap_audit.py": "a9016599e863d51b0f98d866692da8c836b5a84c3e34d7a51ed17371e90c0914"
+  },
+  "finite_certificate": {
+    "uniform_algebra": {
+      "bounded_formula_controls_b": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "uniform_written_seed_and_period_theorem": true,
+      "framed_product_cycle_lengths": [
+        "d",
+        "d+1",
+        2,
+        1
+      ],
+      "framed_product_order": "d*(d+1)",
+      "coloring_period": "d*d*(d+1)",
+      "family_exponent": "(d+1)*(1+d*d*k)",
+      "all_b_all_k_gap": "ar_C<=b-1<mr=br=b",
+      "unrestricted_primality_is_not_inferred_from_bounded_controls": true
+    },
+    "literal_braid_PD_binding": true,
+    "connected_spherical_PD": true,
+    "circle_component_index": 0,
+    "circle_disk_piercings": 4,
+    "circle_linking_number": 4,
+    "circle_self_crossings": 0,
+    "exact_point_pushing_and_surgery_identities": true,
+    "six_bridge_exponent": "5+80*k",
+    "disk_framed_circle_slope": [
+      1,
+      "-20*k"
+    ],
+    "all_k_augmentation_upper": 5,
+    "all_k_meridional_rank_and_bridge": 6,
+    "prime_tail_and_infinite_distinctness_require_written_filling_argument": true
+  },
+  "negative_controls_rejected": 2,
+  "scope": {
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false
+  },
+  "result": "PASS"
+}

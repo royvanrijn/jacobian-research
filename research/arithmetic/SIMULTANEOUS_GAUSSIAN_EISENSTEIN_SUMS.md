@@ -10,7 +10,8 @@ S12 below is its weaker macroscopic existence consequence.
 
 The every-target assertion S12 is **open in this work**. Unconditional results
 include semigroup-scale density-one coverage for fixed power exponents above
-\(1/3\), full unweighted variance in fixed-width balanced windows,
+\(1/3\), full unweighted variance in fixed-width balanced windows and in
+power windows with \(\theta>9/10\),
 positive-proportion coverage for every fixed positive power exponent,
 a uniform local sieve margin,
 a large-prime tail bound, averaged coordinate counts before and after the full
@@ -19,6 +20,15 @@ statement is a corollary of Loughran--Matthiesen's correlation theorem; the aver
 are consequences of established ideal-counting estimates.
 The local calculation includes singular lifts and primes dividing the target.
 None of these statements supplies the missing pointwise global input for S12.
+
+A separate [one-sided pointwise theorem](ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md)
+now proves a power-error asymptotic for
+\(\sum_{a+b=N}\tau(a)^2\mathbf1_{C_{12}}(a)\tau(b)\mathbf1_{A_3}(b)\)
+on every sufficiently large \(N\equiv2\pmod6\). Its explicit positive
+singular series gives eventual \(C_{12}+A_3\) coverage and many distinct
+pairs. The second weight has a two-character expansion, so its proof does
+not supply the four-character versus four-character correlation needed here.
+The two-sided targets S12U and S12, and their priority audit, remain open.
 
 The general theorem FBS1 gives, for every fixed \(0<\theta<1\), at least
 \(c_2X\) targets \(X<N\leq2X\), \(N\equiv2\pmod {12}\), with
@@ -32,8 +42,27 @@ bound outside \(O_{\theta,A}(X/(\log X)^A)\) compatible targets for each
 fixed \(A>0\). This is derived using prime times small allowed cofactors
 and the 2026 short-interval Fourier theorem. The [variance theorem Vq](PRESCRIBED_PRIME_BINARY_VARIANCE.md)
 also gives a target-dependent unweighted asymptotic for almost all compatible
-targets when \(H=\lambda X\), with fixed \(0<\lambda\le1\).
-These are different statements from the weighted coordinate average A12G.
+targets when \(H=\lambda X\), with fixed \(0<\lambda\le1\). The
+[power-window theorem VqPower](PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md)
+now gives the full main term \(c_{12}^2H(\log X)^{-3/2}S_{12}(N)\) for
+\(H=X^\theta\), \(9/10<\theta<1\), with a normalized mean-square
+saving \((\log X)^{-1/4}\). The initial sharp four-form energy target
+\(\theta=99/100\) is therefore resolved. These are different statements
+from the weighted coordinate average A12G. The separate
+[D12Power theorem](PRESCRIBED_PRIME_POWER_SAVING_EXCEPTIONS.md) gives
+\(r_{12,H}(N)\gg H/(\log X)^{3/2}\), with \(H=X^{99/100}\), outside
+\(O(X^{1-10^{-6}})\) compatible targets. This lower-count result comes
+from a bounded weighted subset, rather than a full-count asymptotic.
+The [raw and fully sifted correlation theorem SimNormPower](SIMULTANEOUS_NORM_POWER_CORRELATIONS.md)
+now gives exact coordinate-weight main terms with power-saving mean square.
+Outside one \(O(X^{1-7\cdot10^{-6}})\) exceptional set,
+\(R(N)\asymp N\mathcal T(N)\) and
+\(B_p(N)/R(N)=\beta_p(N)+O(X^{-10^{-6}})\) simultaneously for forbidden
+\(p\le X^{10^{-8}}\), including arbitrary target valuations. The fully
+sifted weighted proportion is
+\(\Gamma(N)=\prod_p(1-\beta_p(N))\ge10-\pi^2\), up to the same error.
+Fixed moving balance intervals have the analogous conclusions with a smaller
+power error. These weighted statements leave every-target coverage open.
 The older H12 prime-pair baseline has a smaller count scale and the range
 \(\theta>2/3\).
 For \(2/3<\theta<1\), the linked
@@ -41,8 +70,9 @@ For \(2/3<\theta<1\), the linked
 also represents every sufficiently large \(N\equiv3\pmod {12}\) by three
 primes \(1\pmod {12}\), each within \(N^\theta\) of \(N/3\). These are
 established baselines; the remaining programme seeks binary estimates using
-the whole semigroup: full-count variance in shrinking windows and a uniform
-every-target lower bound.
+the whole semigroup: full-count variance in smaller shrinking windows,
+a power-saving full-count variance, broader lower-count exception estimates
+and a uniform every-target lower bound.
 
 ## The target
 
@@ -534,6 +564,16 @@ A successful circle-method approach needs signed cancellation, growing arc
 resolution or another stronger input. This rules out that particular
 fixed-arc absolute-value estimate, not the circle method itself.
 
+The [character-divisor obstruction](SIMULTANEOUS_NORM_DIVISOR_OBSTRUCTIONS.md)
+addresses another natural approximation. Put \(k=h_6*\mu\) and
+\(h_D(n)=\sum_{d\mid n,d\le D}k(d)\). Every fixed cutoff \(D=X^\gamma\),
+\(0<\gamma<1\), leaves \(L^1\) error \(\gg_\gamma X\) and squared
+\(L^2\) error \(\gg_\gamma X(\log X)^3\) on \(X/2<n\le X\), even
+restricted to \(n\equiv1\pmod{12}\). At \(n=189805\),
+\(h_6(n)=0\) but \(h_{\sqrt n}(n)=4\). The truncated sum is therefore
+not a pointwise minorant. These facts rule out the stated absolute
+approximation steps, not a refined character-divisor method with cancellation.
+
 ## An unconditional global count averaged over targets
 
 The quartic connection does give a balanced count after averaging the target.
@@ -834,12 +874,18 @@ shrinking-window quantitative estimates or the inputs for arbitrary moduli.
 The immediate mathematical task is unrestricted pointwise counting for S12U.
 The balanced inputs (H1)--(H2), or the naturally normalized fixed-prime
 interface (H*), remain sufficient routes to S12. None has been established
-by the local calculations or the pointwise upper bounds alone. The local margin, sharper large-prime tail, and averaged
+on every target. SimNormPower establishes both global inputs outside a
+power exceptional set, including the full moving balanced count and all
+fixed-prime target valuations. Eliminating the remaining exceptions requires
+further pointwise information. The local margin, sharper large-prime tail, and averaged
 counts before and after the full sieve have complete arguments with the stated
 ideal-counting input. The linked general theory now gives unweighted
-semigroup-scale density one for \(\theta>1/3\), fixed-width variance, and
-exact first moments in every fixed power window. The remaining shrinking-window
-variance input is a sharp upper bound for the four-form energy. The required
+semigroup-scale density one for \(\theta>1/3\), fixed-width variance,
+quantitative full-count variance for \(9/10<\theta<1\), and exact first
+moments in every fixed power window. The sharp four-form energy is proved in
+that upper range; it remains an obligation for \(0<\theta\le9/10\). The required
 every-target binary estimates, an effective cutoff, and the uniform
-semigroup-scale family conjecture remain open here. Dq's arbitrary logarithmic
-savings neither give a power-saving exceptional count nor remove all exceptions.
+semigroup-scale family conjecture remain open here. D12Power supplies
+power-saving exceptions for the lower count at \(H=X^{99/100}\); a
+power-saving full-count asymptotic and elimination of every exception require
+further arguments.

@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/DEGREE_TWENTY_SIX_RECIPROCAL_GLOBAL_OBSTRUCTION.md",
+  "assurance": "Internal written arithmetic proof, exact complete residue computations, independent direct model binding and ordinary Singular replay; no external human review or formal verification claimed.",
+  "proof_origin": "Uniform denominator control reduces all strong quotient Q37 points to integral affine F37 points; all37 eta residues are exhausted by zero constant, square census and18 nonsquare unit ideals.",
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "locator": "Sign-class decomposition, Galois parity and normalized good reciprocal hypotheses."
+    },
+    {
+      "path": "research/arithmetic/PAIRED_CRITICAL_RECIPROCAL_OBSTRUCTION.md",
+      "sha256": "a6c82e1e00c178afc9981434c15e20c9b766930b89241052e08e9622459afa1e",
+      "locator": "Prior uniform-sign degree26 rational obstruction."
+    },
+    {
+      "path": "research/arithmetic/paired_critical_reciprocal_verification.json",
+      "sha256": "292cc73d9eb81cd93f4a2ff26666c8caf42fab47b5107e807c4853e1786c0c39",
+      "locator": "Actual retained exact uniform-sign certificate replay."
+    },
+    {
+      "path": "research/arithmetic/verify_paired_critical_reciprocal.py",
+      "sha256": "4ea57feac8d0b9198eb62cf7241044f3c79e068d8ce66db7b15a5f7324911382",
+      "locator": "Actual coefficient and projective finite-field verifier for the uniform-sign theorem."
+    },
+    {
+      "path": "research/arithmetic/RECIPROCAL_PARAMETER_FINITENESS_AND_INTEGRALITY.md",
+      "sha256": "0efebd5d8063858d78f17eb4dc475776544eb95b0c8f235c5321e73cbc80d8b5",
+      "locator": "Uniform local integrality in arbitrary finite extensions and r-unit property."
+    },
+    {
+      "path": "research/arithmetic/reciprocal_parameter_finiteness_verification.json",
+      "sha256": "6afd57eb4ffc1428a1f1b948cf2f510d80423ce7bbaf3bbe8d0467a6e78275e8",
+      "locator": "Actual coefficient/weighted-degeneration and length controls."
+    },
+    {
+      "path": "research/arithmetic/BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md",
+      "sha256": "8390df96affa573870162e36a153c101e626216662a148aa318e6eed6a1ba073",
+      "locator": "Exact raw/strong rational quotient and reconstruction, including nonsquare descent."
+    },
+    {
+      "path": "research/arithmetic/degree26_balanced_rational_quotient_system.json",
+      "sha256": "90948440d40024ca683deccc0445af5f5d022e1541c6804eda0133dc9ed253eb",
+      "locator": "Authoritative thirteen primitive integer strong equations."
+    },
+    {
+      "path": "research/arithmetic/balanced_reciprocal_rational_quotient_verification.json",
+      "sha256": "acf852a3edac45732c155354ec8c9148d2e019b6f994cc8ce5445db530e3c8ef",
+      "locator": "Actual exact quotient reconstruction replay."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md",
+      "sha256": "af9ff4711660ad380e79a3c3e8cf4ed8c244167fc851b0f8d018d6b41fb037ec",
+      "locator": "Complete square-eta labelled F37 exclusion."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_balanced_local_square.py",
+      "sha256": "45d5ab4395f7d29ecc87dbcbf8fe80492a073a6cd5be32a56cc299ab2aa1798c",
+      "locator": "Freshly replayed square-case proof."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_balanced_mod37.cpp",
+      "sha256": "59274dc24720b7f3bd8f9a66497e6d3efe99e4b8b9b8650bc28f569a63f3623a",
+      "locator": "Two complete labelled candidate enumerations."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_balanced_local_square_verification.json",
+      "sha256": "a97180edecc922664f6e9dc3e9a5700ea3adf19673ad5f90e1bbcdfe681d3d7f",
+      "locator": "Retained square-case execution record and coefficient bindings."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_MIXED_2_10_GLOBAL_OBSTRUCTION.md",
+      "sha256": "00698e68db7196e1811442a37560eab55970859d0c819ae9ebb922be2af2112b",
+      "locator": "Prior unbalanced2+10 rational exclusion."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_mixed_2_10_global_source_ledger.json",
+      "sha256": "67b82117e9a51e6cf5fe2ba555e92dd2b89def2ad42c759969102114ea0d45cb",
+      "locator": "Exact input closure for the2+10 exclusion."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_mixed_2_10_global_verification.json",
+      "sha256": "fbe77ab09413c03667ed1ed94e13cee6148aa4979c36852d2b44cf156e877214",
+      "locator": "Actual completeF61 weighted/affine arithmetic replay."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_MIXED_4_8_GLOBAL_OBSTRUCTION.md",
+      "sha256": "8c3851bcc195385c2ed9a56faf7da7074cb9e7caa7d9a56228880bb2d77556c2",
+      "locator": "Prior unbalanced4+8 rational exclusion."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_mixed_4_8_global_source_ledger.json",
+      "sha256": "890550d43b0b7bd949293094e4dc438908496e50214b13a7f115144b58439f52",
+      "locator": "Exact input closure for the4+8 exclusion."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_mixed_4_8_global_verification.json",
+      "sha256": "34bbbb8367fde7bf8ef4e40628c6784a94cb15994b2b353cd91f955b00ca1fbb",
+      "locator": "Actual completeF29 census and modulo29squared obstruction replay."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_RECIPROCAL_GLOBAL_OBSTRUCTION.md",
+      "sha256": "953f984d22c6099c533f1609abe0bc1c6147b5298d87024c5931be6622eff8a2",
+      "locator": "Whole strong quotient Q37 exclusion and aggregation of all rational reciprocal sign classes."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_nonsquare_reciprocal.py",
+      "sha256": "c4bec52dc0c4939e0678079c4ffaef9d5f8aed8b6ec7cdf4134afbaa19e70aaa",
+      "locator": "Safe coefficient specialization, two exact msolve backends and fresh square census."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_nonsquare_reciprocal_verification.json",
+      "sha256": "5fd701b5738c6c4787d520bf118c2ad3cb99c888c3a6597bde9c5654c5236112",
+      "locator": "Actual successful default replay of the complete new balanced obstruction."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_nonsquare_reciprocal_independent.py",
+      "sha256": "cc4b0bf7ebb67b36e23f240267e4e4e8b8a78c8c771ac08cfd475caf465bbb15",
+      "locator": "Independent direct Euler/Chebyshev binding plus ordinary Singular."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_nonsquare_reciprocal_independent_verification.json",
+      "sha256": "4c8efb0c28d3df874415c03bca8998056768bd6635ec4efbb0185347fc11323b",
+      "locator": "Actual fresh independent all18 binding and Singular execution."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_2.sing",
+      "sha256": "ee7f5e386c49cd0a0a6a37267cd916de18ad38332b3ea5b777fb3c4fe97dc41d",
+      "locator": "Independent ordinary Singular input, eta=2; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_2.stdout",
+      "sha256": "df04e2d7c65536028ff5e09a229aefd29d7a33bc25f0e15af66f7c8fdbf62c77",
+      "locator": "Independent ordinary Singular output, eta=2; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_5.sing",
+      "sha256": "ccf3682602525ecccb8b49affd066b678685d49bc0a5969038e1e96944854828",
+      "locator": "Independent ordinary Singular input, eta=5; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_5.stdout",
+      "sha256": "5a2540fe7a234ad8d9aa3530e7de4bca53deba3a71cb8454bc4609b81eabcc43",
+      "locator": "Independent ordinary Singular output, eta=5; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_6.sing",
+      "sha256": "3aba090f5b0bde2679988af970c7c6f756c2457d123fd2b168ac7a1fe784203f",
+      "locator": "Independent ordinary Singular input, eta=6; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_6.stdout",
+      "sha256": "bc557f5b2abea3728dafd6e2b333ffa49c40902b96b0bcfddf558ee9e4e01c9c",
+      "locator": "Independent ordinary Singular output, eta=6; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_8.sing",
+      "sha256": "b000f65618e80af10e6a9e22a9823067c999ea8f0866b07ba0d356f0aff4799b",
+      "locator": "Independent ordinary Singular input, eta=8; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_8.stdout",
+      "sha256": "c25111abc362d8ee0289c15018c5408105dbddd8dcd2a30c24deb52d2bb39926",
+      "locator": "Independent ordinary Singular output, eta=8; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_13.sing",
+      "sha256": "f61a214b050ec95c548d21ab876d3628418de056c3e423a0303837e8adad48c4",
+      "locator": "Independent ordinary Singular input, eta=13; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_13.stdout",
+      "sha256": "8b7d92d5b05418f0db27127af466ad62f20a7256c95ff8fe6206b9bda4e535ce",
+      "locator": "Independent ordinary Singular output, eta=13; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_14.sing",
+      "sha256": "8cd4da780e3a2309b6b7f7fead972e8773d6a081f7ce0b93f7d14815dbc82ab3",
+      "locator": "Independent ordinary Singular input, eta=14; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_14.stdout",
+      "sha256": "a0ea721a36ebbd0607f8310b9568229886f634f33500ee045f88fa2a223ecc6e",
+      "locator": "Independent ordinary Singular output, eta=14; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_15.sing",
+      "sha256": "57dc16e445d13bd052ec7ccf0ad3e72a95b1749358d57b407c2769e2fd1cd06c",
+      "locator": "Independent ordinary Singular input, eta=15; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_15.stdout",
+      "sha256": "0e6c79c31b5b6357f838d9e6e1b35f8eddeb713d6684df9a3a66bd02bd795290",
+      "locator": "Independent ordinary Singular output, eta=15; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_17.sing",
+      "sha256": "998d1dc0e2adf54a6605411c34a385a1d9ff63bd87351508462b5488949e7da9",
+      "locator": "Independent ordinary Singular input, eta=17; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_17.stdout",
+      "sha256": "f018698d1ec07dde89c28608a3a97aea2c31495f067d08eb5f62d2248fc8d394",
+      "locator": "Independent ordinary Singular output, eta=17; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_18.sing",
+      "sha256": "63418366eda65ce14324fcec1c8cb339ced9b746ee34c8e070173dd1399b96e5",
+      "locator": "Independent ordinary Singular input, eta=18; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_18.stdout",
+      "sha256": "65d4e8d85c4fa71ef7069bc140da2b315793616bb5575074d3d5cece33d35cbd",
+      "locator": "Independent ordinary Singular output, eta=18; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_19.sing",
+      "sha256": "05b54f64a9c95d4b7b59c68bab00382bc9f543975e83d288e8b667b8d092d4a9",
+      "locator": "Independent ordinary Singular input, eta=19; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_19.stdout",
+      "sha256": "04135c27ea99238f8a8f55bf60a0f7248b05c02ba1bc10b05e4f622cbc795efb",
+      "locator": "Independent ordinary Singular output, eta=19; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_20.sing",
+      "sha256": "7fd7b331ced598a4275fc6aae07320612c10bfc041da9acd99df314e9a8c32b6",
+      "locator": "Independent ordinary Singular input, eta=20; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_20.stdout",
+      "sha256": "c9a60633e115644b5861660c0d9345d84f6bcb98a9836895d6166a80761379f6",
+      "locator": "Independent ordinary Singular output, eta=20; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_22.sing",
+      "sha256": "56929ca40e4b2cfa0dbf7cf391ecf5e8ca11cb9fd38071176982d061eedcf5f3",
+      "locator": "Independent ordinary Singular input, eta=22; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_22.stdout",
+      "sha256": "03e74a00b2bf751912f923506abe8a6278d688922e8eb19a209166334ad7629f",
+      "locator": "Independent ordinary Singular output, eta=22; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_23.sing",
+      "sha256": "43677ef4db8c8da8049f894f4f609708f58f3bb1ee092ef8cc56af26838e7464",
+      "locator": "Independent ordinary Singular input, eta=23; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_23.stdout",
+      "sha256": "022681c6156b8a521ceab844c9f1815e86807060e4acf2340e55ba1ce1b21459",
+      "locator": "Independent ordinary Singular output, eta=23; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_24.sing",
+      "sha256": "2a17c1eaeafdbbdad21b7bee020cd6a95672fd625868745c352bcb563e6e8516",
+      "locator": "Independent ordinary Singular input, eta=24; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_24.stdout",
+      "sha256": "efa42f7e2a9ba30ed91595b38dc0e8ef583c2d98b06e2e10af27042afd099d48",
+      "locator": "Independent ordinary Singular output, eta=24; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_29.sing",
+      "sha256": "aee4a28d302bed694b8efd7fe101670f23751196ac9732bf3713d75f4492d67e",
+      "locator": "Independent ordinary Singular input, eta=29; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_29.stdout",
+      "sha256": "bf43e41946ec392a4c1618dc92360c24ce1986e0fcbfcf27ae097359b8c229c1",
+      "locator": "Independent ordinary Singular output, eta=29; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_31.sing",
+      "sha256": "ad3afb2c2f582055b86df04f8d33decf3c07aa9acbcd5fb6d9141f82af93809a",
+      "locator": "Independent ordinary Singular input, eta=31; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_31.stdout",
+      "sha256": "a2d9f2a855dc0644f4f590cbac91430efc1f5005695b720c6cd2e567193fe305",
+      "locator": "Independent ordinary Singular output, eta=31; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_32.sing",
+      "sha256": "7344c205250ceec3ba8e76c93805686717c1834719be3eddff0985ed685e9942",
+      "locator": "Independent ordinary Singular input, eta=32; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_32.stdout",
+      "sha256": "41a50b65b21351f678fb828a6dfb5990466f40def9db6ac8d6fe7e08107f5ca9",
+      "locator": "Independent ordinary Singular output, eta=32; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_35.sing",
+      "sha256": "0f4421852937cc550efb3b316d4f4cdf88d41aa5c2dc6cfbd368255f43f75d5f",
+      "locator": "Independent ordinary Singular input, eta=35; exact integer coefficient field37."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_reciprocal_global_inputs/eta_35.stdout",
+      "sha256": "61c9881ed50c02f5cf10fa849936f30672ff984bc0957381a003bcf2ac3d43e7",
+      "locator": "Independent ordinary Singular output, eta=35; exact integer coefficient field37."
+    }
+  ],
+  "external_sources": [],
+  "software_documentation": [
+    {
+      "url": "https://msolve.lip6.fr/downloads/msolve-tutorial.pdf",
+      "role": "Prime-field Groebner output and exact linear-algebra options; local installed tool version0.6.5."
+    },
+    {
+      "url": "https://www.singular.uni-kl.de/index.php/singular.pdf",
+      "role": "Ordinary exact slimgb on retained native finite-field inputs."
+    }
+  ],
+  "software": {
+    "primary": "SymPy plus msolve exact sparse(-l2) and sparse/dense(-l1), coefficients reduced to0..36 before tool input.",
+    "independent": "Sage finite-field reconstruction and ordinary exact Singular slimgb."
+  },
+  "scope_limits": [
+    "The complete strong balanced rational quotient has noQ37point, including degenerate parameters and arbitrary denominators.",
+    "The entire rational reciprocal degree26 conclusion combines the new balanced exclusion with prior uniform-sign,2+10 and4+8 proof nodes.",
+    "The reciprocal ansatz means a single scalar product for each nonzero squared-critical-value pair; it is stricter than the paired critical passport.",
+    "No critical-root reality or good-reduction hypothesis is assumed.",
+    "All18 nonsquare residues are checked by unit ideals, not sampled coordinate points or discarded low-discriminant cases.",
+    "The independent model binding reconstructs the equations directly overF37squared without importing retained coefficient generators.",
+    "The retained basis computations are exact reproducible CAS proofs; no explicit Nullstellensatz multipliers or formal proof checking is asserted.",
+    "An unreduced-large-integer msolve prototype was rejected after a parser overflow test and supplies no evidence; every retained primary input literal is at most37.",
+    "No nonexistence theorem for general nonreciprocal rational degree26 pencils or complex reciprocal models is claimed.",
+    "No novelty or priority claim is made."
+  ]
+}

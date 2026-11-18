@@ -1,0 +1,246 @@
+{
+  "parameter": "A",
+  "modulus": "A**4 - 109*A**2/3 + 1690/9",
+  "s": "-29800*A**3/3 + 1453400*A/3",
+  "q_coefficients": [
+    "1",
+    "A",
+    "-10/3"
+  ],
+  "G_coefficients": [
+    "1",
+    "-2*A",
+    "3*A**2 - 268/3",
+    "-4*A**3 + 172*A",
+    "14251/9 - 199*A**2/3",
+    "298*A**3/3 - 10034*A/3",
+    "2500"
+  ],
+  "N": "9*z**10 - 864*z**8 + 28161*z**6 - 350150*z**4 + 1127500*z**2 + 250000",
+  "quartic_irreducibility_control": {
+    "p": 11,
+    "coefficients": [
+      1,
+      0,
+      4,
+      0,
+      2
+    ]
+  },
+  "frobenius_controls": [
+    {
+      "p": 7,
+      "A": 1,
+      "G_coefficients": [
+        1,
+        5,
+        0,
+        0,
+        2,
+        5,
+        1
+      ],
+      "factors": [
+        {
+          "coefficients": [
+            1,
+            6
+          ],
+          "multiplicity": 1
+        },
+        {
+          "coefficients": [
+            1,
+            6,
+            6,
+            6,
+            1,
+            6
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "factor_degrees": [
+        1,
+        5
+      ]
+    },
+    {
+      "p": 107,
+      "A": 39,
+      "G_coefficients": [
+        1,
+        29,
+        51,
+        17,
+        34,
+        69,
+        39
+      ],
+      "factors": [
+        {
+          "coefficients": [
+            1,
+            29,
+            51,
+            17,
+            34,
+            69,
+            39
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "factor_degrees": [
+        6
+      ]
+    },
+    {
+      "p": 1151,
+      "A": 291,
+      "G_coefficients": [
+        1,
+        569,
+        350,
+        62,
+        651,
+        321,
+        198
+      ],
+      "factors": [
+        {
+          "coefficients": [
+            1,
+            844
+          ],
+          "multiplicity": 1
+        },
+        {
+          "coefficients": [
+            1,
+            846
+          ],
+          "multiplicity": 1
+        },
+        {
+          "coefficients": [
+            1,
+            1042
+          ],
+          "multiplicity": 1
+        },
+        {
+          "coefficients": [
+            1,
+            1103
+          ],
+          "multiplicity": 1
+        },
+        {
+          "coefficients": [
+            1,
+            187,
+            997
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "factor_degrees": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "p": 113,
+      "A": 107,
+      "G_coefficients": [
+        1,
+        12,
+        94,
+        58,
+        112,
+        81,
+        14
+      ],
+      "factors": [
+        {
+          "coefficients": [
+            1,
+            12,
+            94,
+            58,
+            112,
+            81,
+            14
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "factor_degrees": [
+        6
+      ]
+    },
+    {
+      "p": 347,
+      "A": 337,
+      "G_coefficients": [
+        1,
+        20,
+        95,
+        198,
+        78,
+        159,
+        71
+      ],
+      "factors": [
+        {
+          "coefficients": [
+            1,
+            243,
+            88
+          ],
+          "multiplicity": 1
+        },
+        {
+          "coefficients": [
+            1,
+            124,
+            64,
+            106,
+            265
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "factor_degrees": [
+        2,
+        4
+      ]
+    }
+  ],
+  "A_from_alpha_coefficients": [
+    "0",
+    "106330609849/2330235856650000",
+    "0",
+    "-12069/310698114220000000000"
+  ],
+  "alpha_power_basis_determinant": "608148060849659200000000000000000/729",
+  "square_pullback_witness": {
+    "p": 347,
+    "a": 337,
+    "a_lift_mod_p2": 84311,
+    "alpha_mod_p2": 10553,
+    "alpha_mod_p": 143,
+    "critical_roots_mod_p": [
+      17,
+      340
+    ],
+    "beta_mod_p": 166,
+    "beta_lift_mod_p2": 105654,
+    "test_t": 106001,
+    "contact_mod_p2": 115204
+  }
+}

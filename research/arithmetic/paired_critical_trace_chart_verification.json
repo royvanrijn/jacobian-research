@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "8ff45b1e41ba1d65f504d5888c55b599671c62bb0a9ad02d317af5855ad44ffd",
+  "controls": [
+    {
+      "h": 2,
+      "epsilon": 0,
+      "degree": 8,
+      "exact_Hermite_real_test": {
+        "leading_principal_minors": [
+          [
+            "-5960/66706983",
+            "10742476/8014522658965682471030349"
+          ],
+          [
+            "-848/28588707",
+            "77284/490685060753000967614103"
+          ]
+        ],
+        "all_critical_points_real": false
+      },
+      "q_coefficients_ascending": [
+        "2685619/1483273860320763",
+        "5960/66706983",
+        "1"
+      ],
+      "a_coefficients_ascending": [
+        "4309/352947",
+        "63"
+      ],
+      "rho_coefficients_ascending": [
+        "-268/2401",
+        "-9261/2"
+      ],
+      "paired_product_coefficients_ascending": [
+        "-5317/201684",
+        "-882"
+      ],
+      "paired_product_is_base_constant": false,
+      "norm_rho": "1/196",
+      "constant_term_squareclass_checked": true,
+      "entire_quadratic_chart_roundtrip": true,
+      "Euler_inverse_checked_in_characteristic_zero": true,
+      "coefficient_ring": "Q"
+    },
+    {
+      "h": 2,
+      "epsilon": 1,
+      "degree": 10,
+      "exact_Hermite_real_test": {
+        "leading_principal_minors": [
+          [
+            "167161382528/24027099609375",
+            "12459083273760633154238329988841472/16254938696364007455485989339649677276611328125"
+          ],
+          [
+            "8620315264/533935546875",
+            "1253280565999590317290246211895296/361220859919200165677466429769992828369140625"
+          ]
+        ],
+        "all_critical_points_real": true
+      },
+      "q_coefficients_ascending": [
+        "2232504993337868288/184736485004425048828125",
+        "-167161382528/24027099609375",
+        "1"
+      ],
+      "a_coefficients_ascending": [
+        "5648363968/6688666125",
+        "-104765625/391472"
+      ],
+      "rho_coefficients_ascending": [
+        "2/15",
+        "0"
+      ],
+      "paired_product_coefficients_ascending": [
+        "4/225",
+        "0"
+      ],
+      "paired_product_is_base_constant": true,
+      "norm_rho": "4/225",
+      "constant_term_squareclass_checked": true,
+      "entire_quadratic_chart_roundtrip": true,
+      "Euler_inverse_checked_in_characteristic_zero": true,
+      "coefficient_ring": "Q"
+    },
+    {
+      "h": 2,
+      "epsilon": 0,
+      "degree": 8,
+      "exact_Hermite_real_test": {
+        "leading_principal_minors": [
+          [
+            "5960/66706983",
+            "10742476/8014522658965682471030349"
+          ],
+          [
+            "848/28588707",
+            "77284/490685060753000967614103"
+          ]
+        ],
+        "all_critical_points_real": true
+      },
+      "q_coefficients_ascending": [
+        "2685619/1483273860320763",
+        "-5960/66706983",
+        "1"
+      ],
+      "a_coefficients_ascending": [
+        "-4309/352947",
+        "63"
+      ],
+      "rho_coefficients_ascending": [
+        "268/2401",
+        "-9261/2"
+      ],
+      "paired_product_coefficients_ascending": [
+        "-5317/201684",
+        "882"
+      ],
+      "paired_product_is_base_constant": false,
+      "norm_rho": "1/196",
+      "constant_term_squareclass_checked": true,
+      "entire_quadratic_chart_roundtrip": true,
+      "Euler_inverse_checked_in_characteristic_zero": true,
+      "coefficient_ring": "Q"
+    },
+    {
+      "h": 6,
+      "epsilon": 1,
+      "degree": 26,
+      "exact_Hermite_real_test": null,
+      "q_coefficients_ascending": [
+        "8",
+        "0",
+        "8",
+        "8",
+        "4",
+        "5",
+        "1"
+      ],
+      "a_coefficients_ascending": [
+        "8",
+        "2",
+        "1",
+        "6",
+        "8",
+        "6"
+      ],
+      "rho_coefficients_ascending": [
+        "4",
+        "1",
+        "0",
+        "6",
+        "4",
+        "2"
+      ],
+      "paired_product_coefficients_ascending": [
+        "1",
+        "0",
+        "3",
+        "3",
+        "0",
+        "0"
+      ],
+      "paired_product_is_base_constant": false,
+      "norm_rho": "1",
+      "constant_term_squareclass_checked": true,
+      "entire_quadratic_chart_roundtrip": true,
+      "Euler_inverse_checked_in_characteristic_zero": false,
+      "coefficient_ring": "Z/9"
+    }
+  ],
+  "local_input_sha256": "4572d496788888fca971ffd177bcf3c342928ad2df1d22cee9875661a4f620c0",
+  "scope": "Written uniform equivalence is required. Exact Q degree8/10 roundtrips and the degree26 modulo9 Hensel shadow are controlled. The modulo9 check does not divide nonunit Euler constants and gives no rational descent or new Q3 model.",
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false
+}

@@ -9,9 +9,13 @@ uniform restrictions on real fibres. In degree eight it contains an infinite
 rational family with the maximum four real collinear ordinary nodes.
 
 Uniform rational existence in the admissible degrees 26, 50, 82, ... remains
-open here. So do braid connectivity in degree twelve and higher, a complete
-classification of real connected components, and unirationality of the
-Hurwitz spaces.
+open here, as do complex braid connectivity starting in degree fourteen and
+unirationality of the Hurwitz spaces. The separate
+[degree-twelve theorem](DEGREE_TWELVE_HURWITZ_ORBIT.md) now proves one
+absolute full-A12 orbit. The [matching-walk theorem](REAL_PAIRED_LAURENT_MATCHING_WALKS.md)
+now gives uniform real-algebraic existence, classifies the all-real chambers
+and determines their complete real-root spectra. Rational points in those
+chambers remain a separate arithmetic problem.
 
 ## Theorem 1. The degree-ten absolute Hurwitz orbit
 
@@ -488,14 +492,16 @@ primitive double-transposition theorem. All verification and checking
 reported here are internal; no formal verification, external human
 review or independent external replay is claimed.
 
-The smallest untouched finite Hurwitz case is n=12,b=6. The next
+The smallest unresolved complex Hurwitz case is n=14,b=7. The next
 admissible rational literal-square degree is n=26,b=13. Degree twelve
 is the first remaining rational real-node construction after degrees
 eight and ten if a constant nonsquare discriminant factor is allowed;
 its leading square class is -11. A rational degree-twelve literal square
 is impossible by the leading-coefficient test. The exact normalized
 coefficient problem above is a uniform reduction in the symmetric
-locus, not a uniform existence proof. No complete real component
-classification or rational-point theorem for the higher Hurwitz spaces
-is obtained.
+locus, not a uniform existence proof. All-real chamber classification is
+supplied by the matching-walk theorem; higher rational points remain open.
+The [unmarked reduction](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md) now
+supplies uniform marking and attachment control, leaving two unmarked
+polynomial connectivity assertions as a sufficient all-degree criterion.
 

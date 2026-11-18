@@ -73,8 +73,8 @@
     "prime_five_bridge_example": "written proof plus rigorous interval computation with pinned software imports",
     "uniform_protected_tail_bound": "written proof with exact free-group identity controls",
     "original_W5_power_obstruction": "complete finite classification plus KCH correspondence",
-    "infinite_prime_gap_family": "open",
-    "prime_gap_at_b6": "open",
+    "infinite_prime_gap_family": "Proved for every sufficiently large bridge number by UNBOUNDED_PRIME_AUGMENTATION_GAP_FAMILIES.md, using the separate uniform port proof.",
+    "prime_gap_at_b6": "Infinite prime bridge-six family proved separately; this older checker certifies its stated finite/core controls only.",
     "formal_verification": false,
     "independent_replay": false,
     "external_review": false

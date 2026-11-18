@@ -1,0 +1,58 @@
+{
+  "checker_sha256": "4ea57feac8d0b9198eb62cf7241044f3c79e068d8ce66db7b15a5f7324911382",
+  "degree10_recovery": {
+    "N": "u**5 - 96*u**4/25 + 3129*u**3/625 - 14006*u**2/5625 + 1804*u/5625 + 16/5625",
+    "r": "15/2",
+    "rho": "2/15"
+  },
+  "degree26_F_at_r": "2*r*P6(r)/193849929",
+  "degree26_mod11_coefficients": [
+    6,
+    8,
+    2,
+    4,
+    0,
+    2,
+    5,
+    10,
+    2,
+    2,
+    4,
+    2,
+    5
+  ],
+  "degree26_obstruction_polynomial": "3516552*r**12 - 5171400*r**11 + 8166600*r**10 - 14469000*r**9 + 32478600*r**8 - 207017160*r**7 - 117119800*r**6 - 26033800*r**5 + 79781000*r**4 - 234304200*r**3 + 1527631560*r**2 + 1769265225*r + 4846248225",
+  "external_review": false,
+  "finite_P1_mod11_values": [
+    5,
+    8,
+    1,
+    6,
+    8,
+    3,
+    3,
+    4,
+    3,
+    5,
+    7
+  ],
+  "formal_verification": false,
+  "independent_replay": false,
+  "infinity_value_mod11": 6,
+  "inputs": {
+    "research/arithmetic/ALTERNATING_HURWITZ_UNIFORMITY_AND_REAL_NODES.md": "fe8b0904619d5dbf13de9268fe20936bdd9bfa8e809f2bcca7a4c09638db5679",
+    "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b"
+  },
+  "kind": "exact_reciprocal_classification_controls",
+  "modulus": 11,
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Uniform one-sign reciprocal classification uses the written proof. The exact mod11 certificate rules out rational degree26 models in that ansatz; mixed-sign reciprocal factors and general degree26 pencils remain open.",
+  "square_reciprocity_identity": "v^(2h)F(v)+v^(2h+1)F(1/v)=(v+1)S(v)^2",
+  "symbolic_family_controls": [
+    2,
+    6
+  ],
+  "sympy": "1.14.0"
+}

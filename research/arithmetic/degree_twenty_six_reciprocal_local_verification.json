@@ -1,0 +1,250 @@
+{
+  "arithmetic": "Complete F3 enumeration; Z/9 polynomial constraints; exact finite-field discriminants",
+  "census": {
+    "1": {
+      "counts": {
+        "invariant": 2,
+        "linear_candidates": 2187,
+        "models": 2,
+        "nondegenerate": 728
+      },
+      "free_indices": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "linear_rank": 6
+    },
+    "2": {
+      "counts": {
+        "linear_candidates": 243
+      },
+      "free_indices": [
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "linear_rank": 8
+    }
+  },
+  "checker_sha256": "59377d873f58d5468413cf46ea81337387588e496d42a10565744b296a9b1e9b",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "kind": "complete_finite_reciprocal_degree26_census",
+  "models": [
+    {
+      "M_coefficients_ascending": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      "N_coefficients_ascending": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "Q6": "y**6 - y**5 + y**4 - y**3 - y**2 - 1",
+      "S_coefficients_ascending": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "full_discriminant": "s**26 + s**24 - s**20 + s**18 + s**12 - s**10 - s**8 - s**6 + s**2",
+      "mixed_sign_degrees": [
+        8,
+        4
+      ],
+      "nonlift": {
+        "augmented_rank": 14,
+        "left_kernel_witness": [
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 13,
+        "rhs": [
+          0,
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          2,
+          0,
+          1,
+          2,
+          1,
+          1,
+          0,
+          1,
+          2,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "M_coefficients_ascending": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "N_coefficients_ascending": [
+        1,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "Q6": "y**6 + y**5 + y**4 + y**3 - y**2 + y + 1",
+      "S_coefficients_ascending": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "full_discriminant": "s**26 - s**24 + s**20 + s**18 - s**16 - s**12 - s**10 - s**6 - s**4 + s**2",
+      "mixed_sign_degrees": [
+        6,
+        6
+      ],
+      "nonlift": {
+        "augmented_rank": 14,
+        "left_kernel_witness": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 13,
+        "rhs": [
+          1,
+          2,
+          2,
+          0,
+          1,
+          2,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      }
+    }
+  ],
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Finite F3 feasibility and no mod9 lift with good paired reciprocal reduction. The written proof excludes normalized integral reciprocal models with good paired reduction at3, without excluding all Q or Q3 models.",
+  "sympy": "1.14.0"
+}

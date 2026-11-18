@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md",
+  "assurance": "Internal exact algebra/group replay and written Hensel/CRT/Riemann-Hurwitz proofs, with explicit primary Chebotarev and integral-HIT imports. No external human review, independent external replay, or formal verification is claimed.",
+  "sources": [
+    {
+      "id": "lenstra-chebotarev-natural-density",
+      "title": "The Chebotarev Density Theorem",
+      "authors": [
+        "Hendrik Lenstra"
+      ],
+      "version": "Undated author lecture notes, five pages, retained from official Leiden mathematics site",
+      "primary_url": "https://websites.math.leidenuniv.nl/algebra/Lenstra-Chebotarev.pdf",
+      "retained_pdf": "research/arithmetic/sources/lenstra-chebotarev-density-notes.pdf",
+      "sha256": "695466dfe7053b18957adf0e17207bc6829cccf9b51c320fe93f93e3dbc9cd94",
+      "bytes": 112380,
+      "pdf_pages": 5,
+      "direct_read": true,
+      "extraction": "pdftotext -layout and official PDF text",
+      "locator": "Fact 2.1 and Theorem 3.1, page 3; natural-density definition and validity for both densities, pages 3-4",
+      "role": "mathematical_input",
+      "statement": "For a finite Galois extension of number fields, unramified primes in a conjugacy class have natural density equal to the class size divided by the group order. Frobenius cycle lengths on roots agree with factor degrees away from the polynomial discriminant.",
+      "application": "The exact all-even subset of the residual sextic's full signed-pair group has 21 of 48 elements, so the bad-prime set has density7/16. Positive density implies divergence of its reciprocal-prime sum, used in the finite-CRT product proof.",
+      "reading_limits": "Exact theorem, factorization/cycle statement, hypotheses and both density conventions inspected. Chebotarev itself is imported, not independently reproved. The nonmonic sextic is replaced by 9^5*g(T/9) outside3."
+    },
+    {
+      "id": "zywina-integral-hilbert",
+      "title": "Hilbert's irreducibility theorem and the larger sieve",
+      "authors": [
+        "David Zywina"
+      ],
+      "version": "Author manuscript dated30November2010",
+      "primary_url": "https://pi.math.cornell.edu/~zywina/papers/Quantitative-HIT.pdf",
+      "retained_pdf": "research/arithmetic/sources/zywina-quantitative-hit-2010.pdf",
+      "sha256": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
+      "bytes": 454770,
+      "pdf_pages": 28,
+      "direct_read": true,
+      "locator": "Section1.1, Theorem1.2(Cohen,Serre), page2; full arithmetic-group notation, pages1-2",
+      "role": "mathematical_input",
+      "statement": "One-parameter exceptional integer specializations have count O(B^(1/2)logB), for the full arithmetic splitting group. Regularity is not a hypothesis.",
+      "application": "After refining any integer progression modulo a new bad prime squared, full A10 specializations remain infinite. Apply also to the compositum with previous fields over Q to obtain linear disjointness while retaining integer parameters.",
+      "reading_limits": "The retained exact statement and hypotheses were previously inspected and rechecked. The estimate and HIT are imported."
+    }
+  ],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md",
+      "sha256": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+      "locator": "Theorem1: rational pencil, full regularA10 group, double-transposition finite branch inertia, zero-fibre factorization."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_SUBGROUP_COVERS_AND_HASSE.md",
+      "sha256": "b7a267d449bfb8fbf801a222363705b7603ebc8b9073773512b57ecae2fa5e0f",
+      "locator": "Theorem2: H1,H3,W5 element cover; Theorem5: local fixed-coset criterion and integral-HIT compositum argument."
+    },
+    {
+      "path": "research/arithmetic/verify_rational_degree_ten_pencil.py",
+      "sha256": "0ee81db8789893c9bee5ac80548a4d03bfbf49b9dfa88d8a30d1a09a45aa9e9c",
+      "locator": "Imported exact modular-power/gcd irreducibility routine."
+    },
+    {
+      "path": "research/arithmetic/verify_alternating_subgroup_hasse.py",
+      "sha256": "7733e79a67c13cf38a292647d3fe194e5f5e34b158bcc12c47940c3050c6efe3",
+      "locator": "Imported exact permutation generation, group orbit and subgroup-cover functions."
+    },
+    {
+      "path": "research/arithmetic/verify_alternating_ramification_density.py",
+      "sha256": "1e6579b61c43d225b91d441f63019c715f0822c069a59c83dcc92c18c0cc9783",
+      "locator": "Exact residual discriminants and factorization, modular irreducibility, sign-space span, all48 signed-pair elements, local countergroups."
+    },
+    {
+      "path": "research/arithmetic/alternating_ramification_density_verification.json",
+      "sha256": "6842bd1279fa823d566ff5f96db7643af51e9ddfb343f65a9c314fecb9be71e8",
+      "locator": "Actual successful replay and exact checker hash."
+    }
+  ],
+  "scope_limits": [
+    "The local equivalence is for primes outside{2,3,5,13,17} dividing a nonzero integer parameter, at the zero branch. Other branch values can add restrictions.",
+    "Density7/16 concerns bad primes for the residual sextic. Densityzero concerns integer parameters for the specified rank256 subgroup product, in every fixed arithmetic progression.",
+    "The result obstructs all-parameter progression constructions, not a thinner infinite rank256 family.",
+    "All three obstructing decomposition groups have double-transposition inertia and are repaired by the H2 factor of the existing rank301 construction.",
+    "The rational-base-change obstruction only excludes killing all five finite inertia classes by an everywhere-even pullback. It does not exclude other methods of controlling decomposition groups.",
+    "The full order48 group proof uses the written real-root and complex-conjugation argument; finite counts alone do not establish the Galois group.",
+    "The finite checker does not prove Chebotarev, HIT, Hensel factorization, the infinite CRT limit, or the all-degree Riemann-Hurwitz bound."
+  ]
+}

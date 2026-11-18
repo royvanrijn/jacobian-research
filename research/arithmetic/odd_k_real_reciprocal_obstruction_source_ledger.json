@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/ODD_K_REAL_RECIPROCAL_OBSTRUCTION.md",
+  "claims": {
+    "uniform_theorem": "An all-real good reciprocal odd Laurent pencil f(z)=N(z2)/z with monic degree2k numerator N requires k even. Thus degrees4k congruent4mod8 are impossible overR.",
+    "key_new_step": "The first positive normalized critical value h(alpha) is strictly negative by a convergent integral and the positive-root product inequality; the forced last plus sign gives contradictory signs of B.",
+    "scope_limits": [
+      "Good reciprocal critical pairing with simple critical points and distinct nonzero paired squared values.",
+      "All finite critical points real; hence all critical u-roots positive.",
+      "No exclusion or existence theorem for even k.",
+      "No exclusion of nonreciprocal all-real paired pencils.",
+      "The existing degree12 rational obstruction remains a separate theorem."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/RECIPROCAL_DEGREE_TWELVE_OBSTRUCTION.md",
+      "sha256": "d19c604151d23615b284066dec9083cce019b4ea3a5b590451d4007c3465d8ba",
+      "locator": "Setting/equations1-4 and Lemma1",
+      "role": "Even critical-degree normalization and weighted-Rolle context. The uniform note repeats the needed Rolle proof and adds an endpoint argument; it does not replace or require the degree12 eliminant."
+    },
+    {
+      "path": "research/arithmetic/ODD_K_REAL_RECIPROCAL_OBSTRUCTION.md",
+      "sha256": "3eb0977fe5aba64a116b2a4aff6728ff17b32934174eb93472ae79a6c084679b",
+      "locator": "Equations1-8 and their proofs",
+      "role": "Complete uniform positivity, sign-order and last-gap contradiction argument."
+    },
+    {
+      "path": "research/arithmetic/verify_odd_k_real_reciprocal_obstruction.py",
+      "sha256": "977ecd71ccf92238f525298c38afa96abbffe6ead0d2ec39370620b0d49e47b9",
+      "locator": "symbolic_control, endpoint_control, order_controls",
+      "role": "Exact bounded controls for the algebraic identities, negative endpoint sign and Rolle-compatible sign order."
+    },
+    {
+      "path": "research/arithmetic/odd_k_real_reciprocal_obstruction_verification.json",
+      "sha256": "3828b4470db70782aaef5b36aee92be5fcd1d10b70c7785774ef7f5da3475ad6",
+      "locator": "All exact controls",
+      "role": "Actual successful execution of the final checker bytes."
+    }
+  ],
+  "external_sources": [],
+  "external_import_limit": "No new external mathematical theorem beyond elementary calculus and Rolle theorem. Prior normalization is retained internally and spelled out in the proof.",
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        {
+          "reviewer": "/root",
+          "scope": "Independent derivation of endpoint integral/sign, exact Rolle alternation, and last-gap contradiction.",
+          "result": "PASS"
+        }
+      ],
+      "limits": "Internal agent review; no external or formal assurance upgrade."
+    },
+    "priority_assessment": "Not performed."
+  }
+}

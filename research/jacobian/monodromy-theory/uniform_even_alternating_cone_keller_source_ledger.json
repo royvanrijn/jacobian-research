@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/jacobian/monodromy-theory/UNIFORM_EVEN_ALTERNATING_CONE_KELLER_MAPS.md",
+  "proof_imports": [
+    {
+      "path": "research/jacobian/monodromy-theory/sources/kistner-shaska-graded-keller-2608.02863v1.pdf",
+      "sha256": "3cd7e239d8b01c79239789a97c26e466208d9cb216d9773574562c468c915a2e",
+      "locator": "Section3, Propositions3.2,3.5,3.6,3.9, Theorem3.11; Section6, Theorem6.1; Section12 real lift form",
+      "supports": "Primary cyclic-cone construction and attribution. The exact two-term seed, lift, full embedded field extension and monodromy assertions used here are also proved directly."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/UNIFORM_EVEN_ALTERNATING_CONE_KELLER_MAPS.md",
+      "sha256": "9862c0175f8ebc2e6c2b0bbf271a543be935123ae7c6b382389ca6729c43b6ef",
+      "locator": "Theorem1, equations1-16 and Corollaries2-3",
+      "supports": "Complete elementary uniform proof with arithmetic constants, fixed quadratic coefficient field and whole-fibre reconstruction on one affine target line."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/verify_uniform_even_alternating_cone_keller.py",
+      "sha256": "15ebfdc8491e032c13593109299a0d0c7867f6fc48cb8c241d458e601976069d",
+      "locator": "symbolic_seed, bounded_controls, actual_polynomial_map, full_discriminant_degree6",
+      "supports": "Symbolic all-d moment identities; generic-coefficient chain/master controls; actual expanded polynomial maps and complete discriminant resultant control."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/uniform_even_alternating_cone_keller_verification.json",
+      "sha256": "a7932720ee185ea75bb5d4510981c2cbd1330b3948ea39fd33234d61fbeafeaa",
+      "locator": "Actual internal replay, exact hashes and software",
+      "supports": "PASS for all specified finite controls; not itself proof of the uniform quantifiers."
+    },
+    {
+      "path": "research/arithmetic/sources/zywina-quantitative-hit-2010.pdf",
+      "sha256": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
+      "locator": "Theorem1.1, pp1-2 of author manuscript30November2010",
+      "supports": "Full arithmetic Hilbert specialization over the numberfieldE. Applied to the monic normalization f/L of the regularA_N slice; gives infinitelymany parameters, not a distinct-numberfield count."
+    }
+  ],
+  "primary_source_identity": {
+    "authors": [
+      "K. Kistner",
+      "T. Shaska"
+    ],
+    "title": "Orbits and fields of definition for graded Keller maps",
+    "version": "arXiv:2608.02863v1",
+    "primary_url": "https://arxiv.org/pdf/2608.02863v1",
+    "html_url": "https://arxiv.org/html/2608.02863v1",
+    "inspected_locations": [
+      "Lemma2.5: pure transcendental quotient field identification",
+      "Section3.1-3.6: canonical chain, lift form, degree and existence",
+      "Section3.8: literal six-sheeted member",
+      "Theorem6.1: alternating monodromy at even level",
+      "Section12: positivity of even lift forms"
+    ],
+    "use_boundary": "Known cyclic-cone construction; no first-existence or novelty claim. All needed special formulas are checked and proved directly. Other classifications in the source are not imported."
+  },
+  "claims": {
+    "uniform_even_degrees": "For every d>=3, explicit polynomial F_d:A3_Kd->A3_Kd with det=-1, generic degree2d and geometricA_(2d).",
+    "coefficient_field": "K_d=Q(sqrt(-3(2d-1))).",
+    "arithmetic_squareclass": "C_d=(-1)^(d+1)(2d-1); arithmetic A_(2d) if square inK_d, otherwise S_(2d) with exact constantsK_d(sqrt(C_d)).",
+    "fixed_field_corollary": "For every odd m>=3, N=m^2+1 has regular arithmetic/geometricA_N over the same E=Q(sqrt(-3)).",
+    "whole_fibre_corollary": "For any good rationalY0, one fixedF_d carries infinitelymany complete degreeN A_N fieldfibres overE along the literal affine line(Y0,Z,1). Its genericgroup isalsoA_N. This is a differentpencil from the knot-derived rational double-transposition model.",
+    "finite_inertia": "Individual3cycles, not the knot double-transposition passport.",
+    "limitations": [
+      "No paired-critical rationalQmodel.",
+      "No rational descent of these lifts.",
+      "No plane realization or universal plane obstruction.",
+      "No assertion covering every odd alternating degree.",
+      "No mathematical novelty assertion."
+    ]
+  },
+  "assurance": {
+    "internal_exact_replay": "PASS",
+    "internal_critical_audit": "Separate internal agent re-derived the chain, full determinant, group and arithmetic discriminant; final-byte proof and checker review recorded in conversation.",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false
+  }
+}

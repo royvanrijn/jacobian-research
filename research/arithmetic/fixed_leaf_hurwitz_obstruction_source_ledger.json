@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md",
+  "assurance": "Internal written uniform strategy obstruction, exact equivariance and constructive escape. No unrestricted orbit distinction or arbitrary-tree extraction theorem.",
+  "declarations": [
+    {
+      "name": "Lemma1. Deletion commutes with every leaf-preserving elementary move",
+      "scope": "All positive/inverse moves and both local factor orders; the current attachment anchor is recomputed, and the lower subgroup is literally invariant on the remaining sheet labels."
+    },
+    {
+      "name": "Theorem2. An imprimitive deletion blocks this strategy",
+      "scope": "An imprimitive lower group prevents the chosen leaf's color from gaining a second exclusive leaf along paths retaining the chosen sheet as a leaf at every elementary stage."
+    },
+    {
+      "name": "Theorem3. Full-alternating counterfamilies in every degree",
+      "scope": "For every r>=3 the path family has full A_(2r+1), no initially removable DT, and exact lower C2 wr S_r after deleting its selected leaf."
+    },
+    {
+      "name": "Proposition4. A leaf-handoff braid escapes the restriction",
+      "scope": "A generic clean-overlap Q^-2 identity hands the leaf between colors through an intermediate nonleaf stage. The path family has an explicit length-r escape extracting two leaves; its lower group becomes S_(2r)."
+    }
+  ],
+  "inputs": [
+    {
+      "path": "research/arithmetic/alternating_hurwitz_source_ledger.json",
+      "sha256": "cf4fb4825427f73bc32f92d4b5989421a44737bde24ecbf055a7f922476f88fa",
+      "locator": "jones-primitive-cycle; Theorem1.1 (Jordan)",
+      "role": "A primitive group containing the displayed3-cycle with at least3 fixed points contains A_n."
+    },
+    {
+      "path": "research/arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md",
+      "sha256": "df40145e7aa8e1fa759573d1caaae312cca4442ab2b80cfed835fb2f50998952",
+      "locator": "Tree graph and leaf terminology; local strategy frontier",
+      "role": "Context for the failure of restricting elementary paths to preserve a chosen sheet leaf."
+    },
+    {
+      "path": "research/arithmetic/verify_paired_hurwitz_leaf_extraction.py",
+      "sha256": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+      "locator": "dt_class, degrees, group_closure",
+      "role": "Exact helper primitives and complete degree7 enumeration input; source hash also bound in the checker."
+    },
+    {
+      "path": "research/arithmetic/verify_unmarked_polynomial_hurwitz_reduction.py",
+      "sha256": "c2a1ff752f6dee310c337625a4be8caf592e09db1f5a2116517bd79f2170e7a6",
+      "locator": "permutation and Hurwitz primitives",
+      "role": "Composition, inversion, products and elementary moves used by the exact checker."
+    }
+  ],
+  "evidence": {
+    "checker": "research/arithmetic/verify_fixed_leaf_hurwitz_obstruction.py",
+    "receipt": "research/arithmetic/fixed_leaf_hurwitz_obstruction_verification.json",
+    "scope": "All392 fixed-product degree7 DT triples, all1134 chosen-leaf inputs and3444 allowed elementary moves;1092 rejected spread moves; uniform path/3-cycle/block/escape controls through r50; exact small wreath and symmetric group closures."
+  },
+  "remaining_frontier": "Arbitrary-input leaf extraction and control of all extensions remain open. A successful proof must allow changing the chosen leaf or temporarily spreading it.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

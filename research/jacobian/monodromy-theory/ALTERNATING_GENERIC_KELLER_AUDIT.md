@@ -11,6 +11,17 @@ one polynomial map with infinitely many A10 whole fibres and generic S10.
 That settles the fixed-fibre-family question while leaving the generic
 alternating realization question separate.
 
+The [cyclic-cone theorem](UNIFORM_EVEN_ALTERNATING_CONE_KELLER_MAPS.md)
+now supplies a different polynomial extension in dimension three with full
+geometric A_N for every even N>=6. For N=m^2+1, m odd, it has regular
+arithmetic A_N over the fixed field Q(sqrt(-3)). The
+[odd-shear construction](UNIFORM_ALTERNATING_SHEAR_KELLER_MAPS.md)
+gives another uniform family. Both use the graded constructions of
+Kistner–Shaska, [arXiv:2608.02863v1](https://arxiv.org/pdf/2608.02863v1).
+Their exact formulas and polynomial Jacobians have been checked directly.
+The method obstructions in this note remain valid; generic alternating
+realization in dimension three is no longer an open existence question.
+
 ## Proposition 1. Polynomial coefficient profiles retain symmetric monodromy
 
 Consider the quadratic-gauge compiler over a characteristic-zero field k,
@@ -59,6 +70,12 @@ double-transposition class has a fixed sheet and generates A5. Within the
 original knot passport the first degree is eight; within the literal rational
 square-pencil family it is ten. Passing these necessary tests is not a
 realization theorem in any of these degrees.
+
+The separate [plane A4 exclusion](PLANE_A4_MONODROMY_EXCLUSION.md) now
+combines point-stabilizer normal generation with Domrina's unconditional
+degree-four theorem. It excludes every faithful transitive A4 action
+in dimension two. This additional geometric theorem is needed beyond
+the elementary tests above; those necessary-test calculations remain valid.
 
 Proof. The extension-specific assertions are precisely the two retained
 normalization arguments. For the finite-group statements, conjugates of a
@@ -146,7 +163,8 @@ and all-prime argument is the proof above. Its
 [receipt](alternating_generic_keller_audit_verification.json) records
 internal replay, without formal verification or external review.
 
-The remaining target is either a polynomial Keller extension outside
-the retained quadratic-tilt and Laurent-factor architectures with generic
-alternating geometric group, or an obstruction applying to every such
-plane extension. Neither has been proved here.
+The remaining geometric target here is a polynomial plane Keller realization
+or a universal obstruction in dimension two. The graded three-dimensional
+families resolve existence outside the retained quadratic-tilt and fixed
+Laurent-factor architectures. Rational descent of those families and rational
+paired-critical degree-26 pencils are separate questions.

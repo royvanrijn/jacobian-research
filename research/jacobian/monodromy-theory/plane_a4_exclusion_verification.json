@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "checked_at_utc": "2026-11-18T04:35:42.189270+00:00",
+  "python": "3.12.3",
+  "checker_sha256": "6d466354287caab11e0bcd53f47af7a29ecfa367e2061abd78a8047e145ccb07",
+  "primary_pdf_sha256": "0be24c5c6a9cc9423c3049c3402f2c98e44bac5f1c6018b3999989e0f32e5018",
+  "A4_subgroup_counts_by_order": {
+    "1": 1,
+    "2": 3,
+    "3": 4,
+    "4": 1,
+    "12": 1
+  },
+  "A4_core_free_subgroup_count": 8,
+  "A4_faithful_transitive_actions": [
+    {
+      "stabilizer_order": 1,
+      "conjugate_stabilizers": 1,
+      "action_degree": 12,
+      "core_order": 1,
+      "normal_closure_order": 1,
+      "passes_KMFI1": false
+    },
+    {
+      "stabilizer_order": 2,
+      "conjugate_stabilizers": 3,
+      "action_degree": 6,
+      "core_order": 1,
+      "normal_closure_order": 4,
+      "passes_KMFI1": false
+    },
+    {
+      "stabilizer_order": 3,
+      "conjugate_stabilizers": 4,
+      "action_degree": 4,
+      "core_order": 1,
+      "normal_closure_order": 12,
+      "passes_KMFI1": true
+    }
+  ],
+  "only_KMFI1_surviving_degree": 4,
+  "natural_A5_controls": {
+    "order": 60,
+    "stabilizer_order": 12,
+    "normal_closure_order": 60,
+    "double_transposition_class_size": 15,
+    "double_transposition_fixed_sheets": 1,
+    "passes_necessary_group_conditions": true,
+    "plane_realization_or_exclusion_certified_here": false
+  },
+  "proof_boundary": "Exact enumeration certifies finite subgroup/core/normal-closure controls and source identity. The universal plane exclusion combines the written elementary proof, retained KMFI1, and Domrina's published degree-four theorem. This computation does not replay that theorem. No degree-five source theorem is imported.",
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false
+}

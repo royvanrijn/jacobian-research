@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "H": "z**10 - 9*z**8/7 + z**2/7",
+      "a": "1/7",
+      "all_squared_values_distinct": true,
+      "b": 5,
+      "degree": 10,
+      "finite_branch_passport": "one double transposition at zero; n-2 separate transpositions",
+      "full_discriminant_identity": true,
+      "k": "-1/63",
+      "monodromy_with_written_primitive_transposition_argument": "S10",
+      "nonzero_squared_values": true,
+      "rho": "9/7",
+      "squared_critical_value_polynomial": "y**4 - 512*y**3/3087 + 81920*y**2/9529569 - 4194304*y/29417779503 + 59180113853415424/1839302601739695422127",
+      "squared_critical_value_polynomial_degree": 4
+    },
+    {
+      "H": "z**26 - 25*z**24/23 + z**2/23",
+      "a": "1/23",
+      "all_squared_values_distinct": true,
+      "b": 13,
+      "degree": 26,
+      "finite_branch_passport": "one double transposition at zero; n-2 separate transpositions",
+      "full_discriminant_identity": true,
+      "k": "-1/575",
+      "monodromy_with_written_primitive_transposition_argument": "S26",
+      "nonzero_squared_values": true,
+      "rho": "25/23",
+      "squared_critical_value_polynomial": "y**12 - 13824*y**11/304175 + 83607552*y**10/92522430625 - 58095304704*y**9/5628602067071875 + 639977876619264*y**8/8560400168757937890625 - 931268859619442688*y**7/2603859721331945757880859375 + 903951639737272369152*y**6/792029030736144600903410400390625 - 577556731701716745977856*y**5/240915430424166783979794858538818359375 + 46782095267839056424206336*y**4/14656090209854186303410820219209014892578125 - 55889009813311726074785169408*y**3/22290081197911985594199931200889510524749755859375 + 6898300639814475904087769481216*y**2/6780085448374878218115764073030566863865756988525390625 - 333433944212571031112270368210944*y/2062332491259428581995362536914072675816366631984710693359375 + 2965276815865219670466499241344107001789127856477239699731520163938304/890652947796463869832462166826627961867603046763020782942456165809375079334131442010402679443359375",
+      "squared_critical_value_polynomial_degree": 12
+    }
+  ],
+  "checker_sha256": "d375a4eaba746d889ab5f8504f97bc64d50d039f61e267d863c534011f2e541f",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "kind": "internal_exact_symbolic_controls",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Finite b=5,13 controls. The written proof excludes the normalized binomial S ansatz for every b>=3 over C; no general degree26 impossibility follows.",
+  "sympy": "1.14.0"
+}

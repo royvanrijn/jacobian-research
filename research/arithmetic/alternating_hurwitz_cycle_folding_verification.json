@@ -1,0 +1,67 @@
+{
+  "checker_sha256": "48ced4e397785f66b8e0ccdd7660ec012dd5bc6ed489f8009891e2fd9cf4a45a",
+  "degree8_braid_word_length_distribution": {
+    "0": 14112,
+    "1": 15792,
+    "2": 15456,
+    "3": 3864,
+    "4": 168
+  },
+  "degree8_coalesced_branch_types": {
+    "(2, 2)": 24878,
+    "(3,)": 24514
+  },
+  "degree8_complete_transitive_tuple_count": 49392,
+  "degree8_initial_cycle_lengths": {
+    "2": 28224,
+    "3": 18144,
+    "4": 3024
+  },
+  "degree8_maximum_braid_word_length": 4,
+  "degree8_ordered_certificate_digest": "60563ffc8f4e12a39e848e4a9497c9cf4c0ef830f6aef03908d0a8d9741c2dd3",
+  "degree8_total_cycle_folds": 24192,
+  "external_review": false,
+  "formal_verification": false,
+  "higher_finite_controls": {
+    "10": {
+      "exact_braid_translate_controls": 1000,
+      "initial_cycle_lengths": {
+        "2": 533,
+        "3": 374,
+        "4": 85,
+        "5": 8
+      },
+      "maximum_word_length": 5
+    },
+    "12": {
+      "exact_braid_translate_controls": 1000,
+      "initial_cycle_lengths": {
+        "2": 527,
+        "3": 361,
+        "4": 98,
+        "5": 14
+      },
+      "maximum_word_length": 6
+    },
+    "26": {
+      "exact_braid_translate_controls": 1000,
+      "initial_cycle_lengths": {
+        "2": 559,
+        "3": 329,
+        "4": 98,
+        "5": 12,
+        "6": 2
+      },
+      "maximum_word_length": 12
+    }
+  },
+  "independent_replay": false,
+  "kind": "exact_braid_cycle_normalization_controls",
+  "matching_seed_checker_sha256": "a973284ff8c5b2a7c3e83983199df791d834606e707622a4779d1c72cd99b388",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Written proof gives all-degree normal form. Exhaustive degree8 and higher deterministic exact controls do not prove uniform complex braid connectivity or two-leaf reduction.",
+  "uniform_word_length_bound": "(b+1)(b-2)",
+  "verified_target": "Unique doubled edge incident fixed sheet0, in adjacent DT blocks; no other edge incident0; deleting0 gives a tree"
+}

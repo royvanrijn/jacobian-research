@@ -1,0 +1,415 @@
+{
+  "assurance": {
+    "external_human_review": false,
+    "formal_verification": false,
+    "independent_external_replay": false
+  },
+  "both_scalar_complex_controls": [
+    {
+      "critical_discriminant": "0",
+      "forced_critical_polynomial": "(u+rho)^2",
+      "h": 1,
+      "numerator_degree": 2
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 2,
+      "numerator_degree": 4,
+      "reciprocal_coefficient_u_to_m_minus_1": "4*rho/3"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 3,
+      "numerator_degree": 6,
+      "reciprocal_coefficient_u_to_m_minus_1": "6*rho/5"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 4,
+      "numerator_degree": 8,
+      "reciprocal_coefficient_u_to_m_minus_1": "8*rho/7"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 5,
+      "numerator_degree": 10,
+      "reciprocal_coefficient_u_to_m_minus_1": "10*rho/9"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 6,
+      "numerator_degree": 12,
+      "reciprocal_coefficient_u_to_m_minus_1": "12*rho/11"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 7,
+      "numerator_degree": 14,
+      "reciprocal_coefficient_u_to_m_minus_1": "14*rho/13"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 8,
+      "numerator_degree": 16,
+      "reciprocal_coefficient_u_to_m_minus_1": "16*rho/15"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 9,
+      "numerator_degree": 18,
+      "reciprocal_coefficient_u_to_m_minus_1": "18*rho/17"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 10,
+      "numerator_degree": 20,
+      "reciprocal_coefficient_u_to_m_minus_1": "20*rho/19"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 11,
+      "numerator_degree": 22,
+      "reciprocal_coefficient_u_to_m_minus_1": "22*rho/21"
+    },
+    {
+      "contradiction": "rho is a unit, so reciprocal coefficient is nonzero",
+      "direct_coefficient_u_to_m_minus_1": "0",
+      "h": 12,
+      "numerator_degree": 24,
+      "reciprocal_coefficient_u_to_m_minus_1": "24*rho/23"
+    }
+  ],
+  "bounded_control_scope": "h=1,...,12, exact identities and Sturm counts.",
+  "claims": [
+    "No good real paired even-numerator pencil has scalar a and rho=c*M.",
+    "No good complex paired even-numerator pencil has both a and rho scalar."
+  ],
+  "controls": [
+    {
+      "B_h_at_0": 1,
+      "B_h_at_2": 1,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 1,
+      "pencil_degree": 4,
+      "trace_laurent_identity": true,
+      "witness_degree": 0
+    },
+    {
+      "B_h_at_0": 4,
+      "B_h_at_2": 14,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 2,
+      "pencil_degree": 8,
+      "trace_laurent_identity": true,
+      "witness_degree": 2
+    },
+    {
+      "B_h_at_0": 5,
+      "B_h_at_2": 55,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 3,
+      "pencil_degree": 12,
+      "trace_laurent_identity": true,
+      "witness_degree": 4
+    },
+    {
+      "B_h_at_0": 8,
+      "B_h_at_2": 140,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 4,
+      "pencil_degree": 16,
+      "trace_laurent_identity": true,
+      "witness_degree": 6
+    },
+    {
+      "B_h_at_0": 9,
+      "B_h_at_2": 285,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 5,
+      "pencil_degree": 20,
+      "trace_laurent_identity": true,
+      "witness_degree": 8
+    },
+    {
+      "B_h_at_0": 12,
+      "B_h_at_2": 506,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 6,
+      "pencil_degree": 24,
+      "trace_laurent_identity": true,
+      "witness_degree": 10
+    },
+    {
+      "B_h_at_0": 13,
+      "B_h_at_2": 819,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 7,
+      "pencil_degree": 28,
+      "trace_laurent_identity": true,
+      "witness_degree": 12
+    },
+    {
+      "B_h_at_0": 16,
+      "B_h_at_2": 1240,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 8,
+      "pencil_degree": 32,
+      "trace_laurent_identity": true,
+      "witness_degree": 14
+    },
+    {
+      "B_h_at_0": 17,
+      "B_h_at_2": 1785,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 9,
+      "pencil_degree": 36,
+      "trace_laurent_identity": true,
+      "witness_degree": 16
+    },
+    {
+      "B_h_at_0": 20,
+      "B_h_at_2": 2470,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 10,
+      "pencil_degree": 40,
+      "trace_laurent_identity": true,
+      "witness_degree": 18
+    },
+    {
+      "B_h_at_0": 21,
+      "B_h_at_2": 3311,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 11,
+      "pencil_degree": 44,
+      "trace_laurent_identity": true,
+      "witness_degree": 20
+    },
+    {
+      "B_h_at_0": 24,
+      "B_h_at_2": 4324,
+      "constant_identity": true,
+      "degree_drop_gcd": "t-1",
+      "exact_real_root_count": 0,
+      "h": 12,
+      "pencil_degree": 48,
+      "trace_laurent_identity": true,
+      "witness_degree": 22
+    }
+  ],
+  "input_sha256": {
+    "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+    "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+    "research/arithmetic/verify_scalar_secant_proportional_scale.py": "9a5b5dffa862e6e63c0b0a2f4aaabea1016d917db8a94fb8f333928b21b8a280"
+  },
+  "result": "PASS",
+  "symbolic_controls": {
+    "both_scalar_uniform_Euler_identity": true,
+    "both_scalar_uniform_monic_identity": true,
+    "constant_slope_quadratic": true,
+    "double_zero_value_and_derivative_jets": true,
+    "real_scalar_trace": "-(2*a**2*c + 1)/(a**2*c)"
+  },
+  "uniform_degree_scope": "Every h>=1 (pencil degree4h); supplied by the written proof.",
+  "witness_coefficients_descending": {
+    "1": [
+      1
+    ],
+    "10": [
+      1,
+      3,
+      -12,
+      -41,
+      54,
+      228,
+      -104,
+      -663,
+      39,
+      1079,
+      156,
+      -975,
+      -234,
+      456,
+      120,
+      -90,
+      -15,
+      15,
+      20
+    ],
+    "11": [
+      1,
+      3,
+      -14,
+      -47,
+      77,
+      307,
+      -202,
+      -1084,
+      212,
+      2244,
+      120,
+      -2763,
+      -521,
+      1961,
+      490,
+      -736,
+      -185,
+      125,
+      30,
+      5,
+      21
+    ],
+    "12": [
+      1,
+      3,
+      -16,
+      -53,
+      104,
+      398,
+      -344,
+      -1657,
+      562,
+      4184,
+      -200,
+      -6588,
+      -800,
+      6408,
+      1376,
+      -3683,
+      -931,
+      1141,
+      280,
+      -155,
+      -24,
+      18,
+      24
+    ],
+    "2": [
+      1,
+      3,
+      4
+    ],
+    "3": [
+      1,
+      3,
+      2,
+      1,
+      5
+    ],
+    "4": [
+      1,
+      3,
+      0,
+      -5,
+      0,
+      6,
+      8
+    ],
+    "5": [
+      1,
+      3,
+      -2,
+      -11,
+      -1,
+      13,
+      6,
+      2,
+      9
+    ],
+    "6": [
+      1,
+      3,
+      -4,
+      -17,
+      2,
+      32,
+      8,
+      -19,
+      -3,
+      9,
+      12
+    ],
+    "7": [
+      1,
+      3,
+      -6,
+      -23,
+      9,
+      63,
+      6,
+      -72,
+      -18,
+      34,
+      12,
+      3,
+      13
+    ],
+    "8": [
+      1,
+      3,
+      -8,
+      -29,
+      20,
+      106,
+      -8,
+      -181,
+      -32,
+      146,
+      40,
+      -46,
+      -8,
+      12,
+      16
+    ],
+    "9": [
+      1,
+      3,
+      -10,
+      -35,
+      35,
+      161,
+      -42,
+      -370,
+      -25,
+      445,
+      98,
+      -266,
+      -70,
+      70,
+      20,
+      4,
+      17
+    ]
+  }
+}

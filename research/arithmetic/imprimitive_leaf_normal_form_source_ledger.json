@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
+  "assurance": "Internal written arbitrary-input classification and constructive normalization for imprimitive chosen-leaf deletions. No uniform solution of the symmetric-deletion gate.",
+  "declarations": [
+    {
+      "name": "Theorem1. There are exactly two possible deletion groups",
+      "scope": "Every lower tuple with one transposition and r-1 DTs in degree2r has group S_(2r) or the full two-element-block wreath C2 wr S_r. The conjugate-transposition orbit graph distinguishes them."
+    },
+    {
+      "name": "Lemma2. A constructive transposition star normalization",
+      "scope": "Self-contained induction using a common leaf and positive bringing to the last factor; no unrestricted paired-factor transitivity assumption."
+    },
+    {
+      "name": "Theorem3. A uniform normal form for every imprimitive deletion",
+      "scope": "Actual paired block-swap lifts, a root-adjusting Q1^2 and explicit orientation/relabeling give one canonical tuple. Every move retains the chosen leaf. All imprimitive-deletion attachment choices are controlled."
+    },
+    {
+      "name": "Corollary4. Full alternating monodromy and recursive extraction",
+      "scope": "The canonical tuple has an explicit3-cycle, full A_(2r+1), and r-2 simultaneous removable DTs; deletion gives the same form in the next lower degree, with D5 as the degree5 boundary."
+    }
+  ],
+  "inputs": [
+    {
+      "path": "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md",
+      "sha256": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+      "locator": "Chosen-leaf deletion; Lemma1",
+      "role": "Lower full-cycle tuple and leaf-preserving equivariance."
+    },
+    {
+      "path": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
+      "sha256": "806a421b8e2ff6081623dc4b7f7f628aaf36fcbf1446396e1d55ebb840d13c1e",
+      "locator": "Theorem4 and central full-twist discussion",
+      "role": "Conjugation by the centralizer of a full product cycle is realized by braid moves."
+    },
+    {
+      "path": "research/arithmetic/alternating_hurwitz_source_ledger.json",
+      "sha256": "cf4fb4825427f73bc32f92d4b5989421a44737bde24ecbf055a7f922476f88fa",
+      "locator": "jones-primitive-cycle; Theorem1.1 (Jordan)",
+      "role": "A primitive group containing the explicit3-cycle has full alternating group."
+    },
+    {
+      "path": "research/arithmetic/verify_fixed_leaf_hurwitz_obstruction.py",
+      "sha256": "a904a7f7c9a5e65b6f29178dd50e4d69379aa1e9dbc8cb54a3e1433199762b83",
+      "locator": "Complete degree7 input and deletion helpers",
+      "role": "Exact finite domain and sheet-deletion controls."
+    },
+    {
+      "path": "research/arithmetic/verify_paired_hurwitz_leaf_extraction.py",
+      "sha256": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+      "locator": "Edges, products and finite group closure",
+      "role": "Exact helper functions; dependency hashes are bound by the new checker."
+    }
+  ],
+  "evidence": {
+    "checker": "research/arithmetic/verify_imprimitive_leaf_normal_form.py",
+    "receipt": "research/arithmetic/imprimitive_leaf_normal_form_verification.json",
+    "scope": "Complete degree7 domain392 and all1134 leaf choices; actual normalization of all126 imprimitive inputs and common literal endpoints; all3072 ordered/twisted four-block controls with fixed root0/attachment3; deterministic arbitrary-label higher controls through r50; exact recursive and3-cycle identities."
+  },
+  "remaining_frontier": "Whether every full-alternating DT orbit reaches an imprimitive-deletion representative. Full symmetric-deletion inputs exist, including an entire degree7 full-A7 orbit. No new higher-degree orbit distinction or uniform connectivity theorem.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "internal_critical_review": {
+    "reviewer": "/root",
+    "result": "PASS",
+    "scope": "Read and independently checked the complete two-block classification/gauge argument, recursive transposition-star construction, anchor-preserving root adjustment, unique fixed-product/leaf relabeling, explicit3cycle and recursive lowergroups. Default actual-word checker replay exactly matches the retained receipt.",
+    "proof_sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+    "checker_sha256": "23cccbea8f9a743eeb815866c4657065108dbbf8979cd2037bcef0bc98c15a3d",
+    "limits": "Internal review and execution only; no external or formal assurance upgrade."
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "scope": "Exact rational local identities, bounded residue integrals, normalized shift polynomials, small gcd/kernel/hyperbola identities, and concrete negative controls only; no global asymptotic, uniform analytic estimate, or cofactor theorem certified.",
+  "provenance": {
+    "checker": "research/arithmetic/eisenstein-restricted-prime-sums/verify_asymmetric_sums.py",
+    "checker_sha256": "52570e0e5d7cfbe0db3eb3aedc2aeb8583a24f3c15e1e17594e52b4035f38159",
+    "source_sha256": {
+      "research/arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md": "dd1b7ca4d18b6bfb214981133c0367b541e6fb9e84900d11fb4f71908350f754",
+      "research/arithmetic/FIXED_PERIODIC_DIVISOR_BOXES.md": "8e955cbcb681f81ee8b4e3aedcd4ac40757cacad86bbbdd4799de3ef12824201"
+    },
+    "optional_source_files_missing": [],
+    "python_version": "3.12.3"
+  },
+  "local_integral_and_strata_cases": 143,
+  "residue_integral_cases": 12,
+  "shift_polynomial_cases": 5,
+  "finite_identity_cases": [
+    {
+      "N": 2,
+      "weighted_count": 1
+    },
+    {
+      "N": 8,
+      "weighted_count": 2
+    },
+    {
+      "N": 14,
+      "weighted_count": 6
+    },
+    {
+      "N": 20,
+      "weighted_count": 10
+    },
+    {
+      "N": 26,
+      "weighted_count": 8
+    },
+    {
+      "N": 32,
+      "weighted_count": 10
+    },
+    {
+      "N": 38,
+      "weighted_count": 6
+    },
+    {
+      "N": 44,
+      "weighted_count": 18
+    },
+    {
+      "N": 50,
+      "weighted_count": 19
+    },
+    {
+      "N": 56,
+      "weighted_count": 16
+    },
+    {
+      "N": 62,
+      "weighted_count": 18
+    },
+    {
+      "N": 68,
+      "weighted_count": 18
+    },
+    {
+      "N": 74,
+      "weighted_count": 30
+    },
+    {
+      "N": 80,
+      "weighted_count": 34
+    },
+    {
+      "N": 86,
+      "weighted_count": 28
+    },
+    {
+      "N": 92,
+      "weighted_count": 28
+    },
+    {
+      "N": 98,
+      "weighted_count": 22
+    },
+    {
+      "N": 104,
+      "weighted_count": 50
+    },
+    {
+      "N": 110,
+      "weighted_count": 50
+    },
+    {
+      "N": 116,
+      "weighted_count": 40
+    },
+    {
+      "N": 122,
+      "weighted_count": 36
+    },
+    {
+      "N": 128,
+      "weighted_count": 42
+    },
+    {
+      "N": 134,
+      "weighted_count": 36
+    },
+    {
+      "N": 140,
+      "weighted_count": 50
+    },
+    {
+      "N": 146,
+      "weighted_count": 52
+    },
+    {
+      "N": 152,
+      "weighted_count": 42
+    },
+    {
+      "N": 158,
+      "weighted_count": 34
+    },
+    {
+      "N": 164,
+      "weighted_count": 58
+    },
+    {
+      "N": 170,
+      "weighted_count": 76
+    },
+    {
+      "N": 176,
+      "weighted_count": 66
+    },
+    {
+      "N": 182,
+      "weighted_count": 52
+    },
+    {
+      "N": 188,
+      "weighted_count": 74
+    },
+    {
+      "N": 194,
+      "weighted_count": 62
+    },
+    {
+      "N": 200,
+      "weighted_count": 92
+    },
+    {
+      "N": 338,
+      "weighted_count": 113
+    }
+  ],
+  "negative_controls": [
+    {
+      "omission": "inert-square correction for V at 25",
+      "incorrect": 1,
+      "correct": 0,
+      "rejected": true
+    },
+    {
+      "omission": "hyperbola factor 2 at 49",
+      "incorrect": 2,
+      "correct": 3,
+      "rejected": true
+    },
+    {
+      "omission": "nontrivial gcd strata at N=26",
+      "incorrect": 0,
+      "correct": 8,
+      "rejected": true
+    }
+  ],
+  "result": "PASS"
+}

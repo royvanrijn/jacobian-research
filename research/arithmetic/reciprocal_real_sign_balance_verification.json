@@ -1,0 +1,2015 @@
+{
+  "actual_operator_controls": [
+    {
+      "actual_coefficient_operator_identity": true,
+      "h": 1
+    },
+    {
+      "actual_coefficient_operator_identity": true,
+      "h": 2
+    },
+    {
+      "actual_coefficient_operator_identity": true,
+      "h": 3
+    },
+    {
+      "actual_coefficient_operator_identity": true,
+      "h": 6
+    }
+  ],
+  "degree26_counts": {
+    "1<r<=13/11": [
+      [
+        3,
+        3
+      ]
+    ],
+    "r<=1": [
+      [
+        3,
+        3
+      ]
+    ],
+    "r>13/11": [
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ]
+    ]
+  },
+  "general_rational_degree26_claim": false,
+  "integer_balance_controls": [
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 1,
+      "permitted_p": [
+        1
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 1,
+      "permitted_p": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 1,
+      "permitted_p": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 2,
+      "permitted_p": [
+        1
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 2,
+      "permitted_p": [
+        1
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 2,
+      "permitted_p": [
+        1,
+        2
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 3,
+      "permitted_p": [
+        2
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 3,
+      "permitted_p": [
+        1,
+        2
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 3,
+      "permitted_p": [
+        1,
+        2
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 4,
+      "permitted_p": [
+        2
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 4,
+      "permitted_p": [
+        2
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 4,
+      "permitted_p": [
+        2,
+        3
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 5,
+      "permitted_p": [
+        3
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 5,
+      "permitted_p": [
+        2,
+        3
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 5,
+      "permitted_p": [
+        2,
+        3
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 6,
+      "permitted_p": [
+        3
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 6,
+      "permitted_p": [
+        3
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 6,
+      "permitted_p": [
+        3,
+        4
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 7,
+      "permitted_p": [
+        4
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 7,
+      "permitted_p": [
+        3,
+        4
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 7,
+      "permitted_p": [
+        3,
+        4
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 8,
+      "permitted_p": [
+        4
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 8,
+      "permitted_p": [
+        4
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 8,
+      "permitted_p": [
+        4,
+        5
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 9,
+      "permitted_p": [
+        5
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 9,
+      "permitted_p": [
+        4,
+        5
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 9,
+      "permitted_p": [
+        4,
+        5
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 10,
+      "permitted_p": [
+        5
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 10,
+      "permitted_p": [
+        5
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 10,
+      "permitted_p": [
+        5,
+        6
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 11,
+      "permitted_p": [
+        6
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 11,
+      "permitted_p": [
+        5,
+        6
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 11,
+      "permitted_p": [
+        5,
+        6
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 12,
+      "permitted_p": [
+        6
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 12,
+      "permitted_p": [
+        6
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 12,
+      "permitted_p": [
+        6,
+        7
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 13,
+      "permitted_p": [
+        7
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 13,
+      "permitted_p": [
+        6,
+        7
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 13,
+      "permitted_p": [
+        6,
+        7
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 14,
+      "permitted_p": [
+        7
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 14,
+      "permitted_p": [
+        7
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 14,
+      "permitted_p": [
+        7,
+        8
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 15,
+      "permitted_p": [
+        8
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 15,
+      "permitted_p": [
+        7,
+        8
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 15,
+      "permitted_p": [
+        7,
+        8
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 16,
+      "permitted_p": [
+        8
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 16,
+      "permitted_p": [
+        8
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 16,
+      "permitted_p": [
+        8,
+        9
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 17,
+      "permitted_p": [
+        9
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 17,
+      "permitted_p": [
+        8,
+        9
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 17,
+      "permitted_p": [
+        8,
+        9
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 18,
+      "permitted_p": [
+        9
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 18,
+      "permitted_p": [
+        9
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 18,
+      "permitted_p": [
+        9,
+        10
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 19,
+      "permitted_p": [
+        10
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 19,
+      "permitted_p": [
+        9,
+        10
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 19,
+      "permitted_p": [
+        9,
+        10
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 20,
+      "permitted_p": [
+        10
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 20,
+      "permitted_p": [
+        10
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 20,
+      "permitted_p": [
+        10,
+        11
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 21,
+      "permitted_p": [
+        11
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 21,
+      "permitted_p": [
+        10,
+        11
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 21,
+      "permitted_p": [
+        10,
+        11
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 22,
+      "permitted_p": [
+        11
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 22,
+      "permitted_p": [
+        11
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 22,
+      "permitted_p": [
+        11,
+        12
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 23,
+      "permitted_p": [
+        12
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 23,
+      "permitted_p": [
+        11,
+        12
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 23,
+      "permitted_p": [
+        11,
+        12
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 24,
+      "permitted_p": [
+        12
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 24,
+      "permitted_p": [
+        12
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 24,
+      "permitted_p": [
+        12,
+        13
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 25,
+      "permitted_p": [
+        13
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 25,
+      "permitted_p": [
+        12,
+        13
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 25,
+      "permitted_p": [
+        12,
+        13
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 26,
+      "permitted_p": [
+        13
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 26,
+      "permitted_p": [
+        13
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 26,
+      "permitted_p": [
+        13,
+        14
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 27,
+      "permitted_p": [
+        14
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 27,
+      "permitted_p": [
+        13,
+        14
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 27,
+      "permitted_p": [
+        13,
+        14
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 28,
+      "permitted_p": [
+        14
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 28,
+      "permitted_p": [
+        14
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 28,
+      "permitted_p": [
+        14,
+        15
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 29,
+      "permitted_p": [
+        15
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 29,
+      "permitted_p": [
+        14,
+        15
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 29,
+      "permitted_p": [
+        14,
+        15
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 30,
+      "permitted_p": [
+        15
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 30,
+      "permitted_p": [
+        15
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 30,
+      "permitted_p": [
+        15,
+        16
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 31,
+      "permitted_p": [
+        16
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 31,
+      "permitted_p": [
+        15,
+        16
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 31,
+      "permitted_p": [
+        15,
+        16
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 32,
+      "permitted_p": [
+        16
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 32,
+      "permitted_p": [
+        16
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 32,
+      "permitted_p": [
+        16,
+        17
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 33,
+      "permitted_p": [
+        17
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 33,
+      "permitted_p": [
+        16,
+        17
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 33,
+      "permitted_p": [
+        16,
+        17
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 34,
+      "permitted_p": [
+        17
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 34,
+      "permitted_p": [
+        17
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 34,
+      "permitted_p": [
+        17,
+        18
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 35,
+      "permitted_p": [
+        18
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 35,
+      "permitted_p": [
+        17,
+        18
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 35,
+      "permitted_p": [
+        17,
+        18
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 36,
+      "permitted_p": [
+        18
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 36,
+      "permitted_p": [
+        18
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 36,
+      "permitted_p": [
+        18,
+        19
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 37,
+      "permitted_p": [
+        19
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 37,
+      "permitted_p": [
+        18,
+        19
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 37,
+      "permitted_p": [
+        18,
+        19
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 38,
+      "permitted_p": [
+        19
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 38,
+      "permitted_p": [
+        19
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 38,
+      "permitted_p": [
+        19,
+        20
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 39,
+      "permitted_p": [
+        20
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 39,
+      "permitted_p": [
+        19,
+        20
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 39,
+      "permitted_p": [
+        19,
+        20
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 0,
+      "h": 40,
+      "permitted_p": [
+        20
+      ]
+    },
+    {
+      "epsilon_alpha": 0,
+      "epsilon_beta": 1,
+      "h": 40,
+      "permitted_p": [
+        20
+      ]
+    },
+    {
+      "epsilon_alpha": 1,
+      "epsilon_beta": 1,
+      "h": 40,
+      "permitted_p": [
+        20,
+        21
+      ]
+    }
+  ],
+  "python": "3.12.3",
+  "schema_version": 1,
+  "sha256": {
+    "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+    "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+    "research/arithmetic/RECIPROCAL_DEGREE_TWELVE_OBSTRUCTION.md": "d19c604151d23615b284066dec9083cce019b4ea3a5b590451d4007c3465d8ba",
+    "research/arithmetic/RECIPROCAL_REAL_SIGN_BALANCE.md": "7f5bef35fbf400dcd1676a9c10b85473763c57f45b019a49933d655a6f01c820",
+    "research/arithmetic/verify_reciprocal_real_sign_balance.py": "4a1a298929d786403b6109915934b9f24856eee0366340f9d50e36482ef51441"
+  },
+  "sharpness": {
+    "all_five_critical_u_roots_positive": true,
+    "h": 2,
+    "normalized_residual_P": "w**2 - 149*w/10 + 427/10",
+    "p": 2,
+    "plus_square_identity": true,
+    "q": 0,
+    "r": "15/2"
+  },
+  "status": "PASS",
+  "sufficiency_claim": false,
+  "sympy": "1.14.0",
+  "threshold_controls": [
+    {
+      "h": 1,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "2"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "3"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "4"
+        }
+      ],
+      "threshold": "3"
+    },
+    {
+      "h": 2,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "2",
+            "2"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "6",
+            "10"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "4/3"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "5/3"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "8/3"
+        }
+      ],
+      "threshold": "5/3"
+    },
+    {
+      "h": 3,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "6",
+            "12",
+            "8",
+            "3"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "10",
+            "36",
+            "56",
+            "35"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "6/5"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "7/5"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "12/5"
+        }
+      ],
+      "threshold": "7/5"
+    },
+    {
+      "h": 4,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "10",
+            "38",
+            "68",
+            "58",
+            "20",
+            "4"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "14",
+            "78",
+            "220",
+            "330",
+            "252",
+            "84"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "8/7"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "9/7"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "16/7"
+        }
+      ],
+      "threshold": "9/7"
+    },
+    {
+      "h": 5,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "14",
+            "80",
+            "240",
+            "405",
+            "382",
+            "188",
+            "40",
+            "5"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "18",
+            "136",
+            "560",
+            "1365",
+            "2002",
+            "1716",
+            "792",
+            "165"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "10/9"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "11/9"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "20/9"
+        }
+      ],
+      "threshold": "11/9"
+    },
+    {
+      "h": 6,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "18",
+            "138",
+            "588",
+            "1524",
+            "2472",
+            "2488",
+            "1488",
+            "483",
+            "70",
+            "6"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "22",
+            "210",
+            "1140",
+            "3876",
+            "8568",
+            "12376",
+            "11440",
+            "6435",
+            "2002",
+            "286"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "12/11"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "13/11"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "24/11"
+        }
+      ],
+      "threshold": "13/11"
+    },
+    {
+      "h": 7,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "22",
+            "212",
+            "1176",
+            "4151",
+            "9730",
+            "15344",
+            "16144",
+            "11006",
+            "4596",
+            "1064",
+            "112",
+            "7"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "26",
+            "300",
+            "2024",
+            "8855",
+            "26334",
+            "54264",
+            "77520",
+            "75582",
+            "48620",
+            "19448",
+            "4368",
+            "455"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "14/13"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "15/13"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "28/13"
+        }
+      ],
+      "threshold": "15/13"
+    },
+    {
+      "h": 8,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "26",
+            "302",
+            "2068",
+            "9278",
+            "28668",
+            "62428",
+            "96392",
+            "104746",
+            "78436",
+            "38972",
+            "12072",
+            "2100",
+            "168",
+            "8"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "30",
+            "406",
+            "3276",
+            "17550",
+            "65780",
+            "177100",
+            "346104",
+            "490314",
+            "497420",
+            "352716",
+            "167960",
+            "50388",
+            "8568",
+            "680"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "16/15"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "17/15"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "32/15"
+        }
+      ],
+      "threshold": "17/15"
+    },
+    {
+      "h": 9,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "30",
+            "408",
+            "3328",
+            "18153",
+            "69894",
+            "195444",
+            "402264",
+            "611019",
+            "680474",
+            "546864",
+            "308688",
+            "117326",
+            "28116",
+            "3816",
+            "240",
+            "9"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "34",
+            "528",
+            "4960",
+            "31465",
+            "142506",
+            "475020",
+            "1184040",
+            "2220075",
+            "3124550",
+            "3268760",
+            "2496144",
+            "1352078",
+            "497420",
+            "116280",
+            "15504",
+            "969"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "18/17"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "19/17"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "36/17"
+        }
+      ],
+      "threshold": "19/17"
+    },
+    {
+      "h": 10,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "34",
+            "530",
+            "5020",
+            "32280",
+            "149136",
+            "511024",
+            "1321760",
+            "2601685",
+            "3900410",
+            "4428370",
+            "3760700",
+            "2341060",
+            "1036360",
+            "311960",
+            "59664",
+            "6501",
+            "330",
+            "10"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "38",
+            "666",
+            "7140",
+            "52360",
+            "278256",
+            "1107568",
+            "3365856",
+            "7888725",
+            "14307150",
+            "20030010",
+            "21474180",
+            "17383860",
+            "10400600",
+            "4457400",
+            "1307504",
+            "245157",
+            "26334",
+            "1330"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "20/19"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "21/19"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "40/19"
+        }
+      ],
+      "threshold": "21/19"
+    },
+    {
+      "h": 11,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "38",
+            "668",
+            "7208",
+            "53419",
+            "288266",
+            "1171720",
+            "3660800",
+            "8892620",
+            "16880776",
+            "25037936",
+            "28872736",
+            "25629581",
+            "17241526",
+            "8592656",
+            "3071536",
+            "751751",
+            "117546",
+            "10516",
+            "440",
+            "11"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "42",
+            "820",
+            "9880",
+            "82251",
+            "501942",
+            "2324784",
+            "8347680",
+            "23535820",
+            "52451256",
+            "92561040",
+            "129024480",
+            "141120525",
+            "119759850",
+            "77558760",
+            "37442160",
+            "13037895",
+            "3124550",
+            "480700",
+            "42504",
+            "1771"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "22/21"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "23/21"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "44/21"
+        }
+      ],
+      "threshold": "23/21"
+    },
+    {
+      "h": 12,
+      "positive_derivative_controls": [
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "42",
+            "822",
+            "9956",
+            "83586",
+            "516324",
+            "2431092",
+            "8919192",
+            "25846980",
+            "59623720",
+            "109835256",
+            "161464272",
+            "188594712",
+            "173604912",
+            "124389552",
+            "68164512",
+            "27882147",
+            "8231262",
+            "1672242",
+            "217932",
+            "16302",
+            "572",
+            "12"
+          ],
+          "sequence": "C"
+        },
+        {
+          "derivative_shifted_coefficients": [
+            "1",
+            "46",
+            "990",
+            "13244",
+            "123410",
+            "850668",
+            "4496388",
+            "18643560",
+            "61523748",
+            "163011640",
+            "348330136",
+            "600805296",
+            "834451800",
+            "927983760",
+            "818809200",
+            "565722720",
+            "300540195",
+            "119759850",
+            "34597290",
+            "6906900",
+            "888030",
+            "65780",
+            "2300"
+          ],
+          "sequence": "D"
+        }
+      ],
+      "tests": [
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 0,
+          "r": "1/2"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 1,
+          "beta_roots_above_two": 0,
+          "r": "1"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "24/23"
+        },
+        {
+          "alpha_endpoint": 1,
+          "alpha_roots_above_two": 0,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "25/23"
+        },
+        {
+          "alpha_endpoint": 0,
+          "alpha_roots_above_two": 1,
+          "beta_endpoint": 0,
+          "beta_roots_above_two": 1,
+          "r": "48/23"
+        }
+      ],
+      "threshold": "25/23"
+    }
+  ],
+  "written_uniform_proof_required": true
+}

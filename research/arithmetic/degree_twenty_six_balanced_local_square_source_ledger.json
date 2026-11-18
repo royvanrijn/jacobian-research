@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md",
+  "assurance": "Internal written arithmetic proof plus exact complete finite-field computation with two candidate-generation strategies; no external independent replay, external human review or formal verification claimed. The allcoefficient tensor binding supplements the two exhaustive candidate algorithms; it is an internal check.",
+  "proof_origin": "Uniform denominator control followed by complete strong-divisibility residue exclusion at37, then local quadratic splitting criterion.",
+  "external_sources": [],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "locator": "Exact normalization, coefficient reconstruction, sign factors and quadratic descent."
+    },
+    {
+      "path": "research/arithmetic/verify_mixed_reciprocal_coupled_ode.py",
+      "sha256": "73ce6639cb20e2c7bb1947138acc4e8d499b8143e9f0c9320729c38a71d52f29",
+      "locator": "Actual F,X,Y coefficient construction reused for the generic strong equations."
+    },
+    {
+      "path": "research/arithmetic/RECIPROCAL_PARAMETER_FINITENESS_AND_INTEGRALITY.md",
+      "sha256": "0efebd5d8063858d78f17eb4dc475776544eb95b0c8f235c5321e73cbc80d8b5",
+      "locator": "Uniform integrality in every finite local extension at37>25, applying to the entire strong closure via its raw necessary equations."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md",
+      "sha256": "af9ff4711660ad380e79a3c3e8cf4ed8c244167fc851b0f8d018d6b41fb037ec",
+      "locator": "Whole labelled strong Q37 closure exclusion and correct global/local quadratic descent."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_balanced_local_square.py",
+      "sha256": "45d5ab4395f7d29ecc87dbcbf8fe80492a073a6cd5be32a56cc299ab2aa1798c",
+      "locator": "Generic thirteen-equation derivation, coefficient-linearity and denominator checks, exact C++ controls and both complete censuses. Includes symbolic degree bounds and a208point unisolvent tensor grid binding every coefficient polynomial overF37."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_twenty_six_balanced_mod37.cpp",
+      "sha256": "59274dc24720b7f3bd8f9a66497e6d3efe99e4b8b9b8650bc28f569a63f3623a",
+      "locator": "Six-row strong Gaussian method and independent weak three-row Cramer/singular-enumeration method, both with full final equation tests."
+    },
+    {
+      "path": "research/arithmetic/degree_twenty_six_balanced_local_square_verification.json",
+      "sha256": "a97180edecc922664f6e9dc3e9a5700ea3adf19673ad5f90e1bbcdfe681d3d7f",
+      "locator": "Actual successful default replay, exact strong polynomials, control vectors, candidate domains and empty final point sets."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "cpp": "C++17 exact arithmetic inF37; g++ -O2"
+  },
+  "scope_limits": [
+    "The entire labelled strong thirteen-equation closure has noQ37point, including degenerate coordinate tuples.",
+    "The uniform raw theorem gives integrality without assuming good reduction; r0 is excluded by exact G0=25.",
+    "Both residue methods retain rank-deficient branches; the weak method has12,275,266candidates and uses no Gaussian solver.",
+    "The two C++ methods share low-level polynomial reconstruction and final tests; their linear systems and solvers differ. Symbolic controls bind the reconstruction to actual F,X,Y,G.",
+    "All rational models with lambda square inQ37 are excluded, including globally nonsquare lambda that splits locally.",
+    "Globally nonsquare lambda must be an S-unit nonresidue at37, but this is not a complete nonsquare-case exclusion.",
+    "The bounds on signed S-squareclasses are a finite search reduction, not a proof all such classes are realized or excluded.",
+    "No general degree26 rational nonexistence or nonreciprocal conclusion is asserted.",
+    "No novelty or priority claim is made."
+  ]
+}

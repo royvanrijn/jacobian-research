@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "kind": "paired_tree_extraction_and_overlap_gates",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+  "input_sha256": {
+    "PAIRED_HURWITZ_LEAF_EXTRACTION.md": "df40145e7aa8e1fa759573d1caaae312cca4442ab2b80cfed835fb2f50998952",
+    "UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md": "806a421b8e2ff6081623dc4b7f7f628aaf36fcbf1446396e1d55ebb840d13c1e",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "c2a1ff752f6dee310c337625a4be8caf592e09db1f5a2116517bd79f2170e7a6",
+    "ALTERNATING_HURWITZ_CYCLE_FOLDING.md": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278"
+  },
+  "local_identity": {
+    "word": [
+      -1,
+      -2,
+      -2,
+      -1
+    ],
+    "strand_permutation": [
+      0,
+      1,
+      2
+    ],
+    "exact_triple_identity": true
+  },
+  "cyclic_recursion_controls": [
+    {
+      "initial_r": 4,
+      "deletions_to_A9_core": 0,
+      "local_moves_on_successive_cores": 0,
+      "terminal_core_r": 4,
+      "terminal_degree": 9
+    },
+    {
+      "initial_r": 5,
+      "deletions_to_A9_core": 1,
+      "local_moves_on_successive_cores": 4,
+      "terminal_core_r": 4,
+      "terminal_degree": 9
+    },
+    {
+      "initial_r": 6,
+      "deletions_to_A9_core": 2,
+      "local_moves_on_successive_cores": 8,
+      "terminal_core_r": 4,
+      "terminal_degree": 9
+    },
+    {
+      "initial_r": 7,
+      "deletions_to_A9_core": 3,
+      "local_moves_on_successive_cores": 12,
+      "terminal_core_r": 4,
+      "terminal_degree": 9
+    },
+    {
+      "initial_r": 12,
+      "deletions_to_A9_core": 8,
+      "local_moves_on_successive_cores": 32,
+      "terminal_core_r": 4,
+      "terminal_degree": 9
+    },
+    {
+      "initial_r": 25,
+      "deletions_to_A9_core": 21,
+      "local_moves_on_successive_cores": 84,
+      "terminal_core_r": 4,
+      "terminal_degree": 9
+    },
+    {
+      "initial_r": 50,
+      "deletions_to_A9_core": 46,
+      "local_moves_on_successive_cores": 184,
+      "terminal_core_r": 4,
+      "terminal_degree": 9
+    }
+  ],
+  "external_support_controls": {
+    "all_allowed_ordered_anchor_pairs": 72,
+    "missing_external_support_condition_rejected": true,
+    "counterexample_degrees_2_3_4_5": [
+      2,
+      3,
+      1,
+      2
+    ],
+    "marked_T_branch_retained": true
+  },
+  "block_evacuation_controls": {
+    "unbounded_interaction_family_controls": [
+      {
+        "external_factors": 1,
+        "degree": 13,
+        "repair_moves": 3,
+        "two_exclusive_leaf_ends_after_repair": true
+      },
+      {
+        "external_factors": 2,
+        "degree": 15,
+        "repair_moves": 6,
+        "two_exclusive_leaf_ends_after_repair": true
+      },
+      {
+        "external_factors": 5,
+        "degree": 21,
+        "repair_moves": 15,
+        "two_exclusive_leaf_ends_after_repair": true
+      },
+      {
+        "external_factors": 20,
+        "degree": 51,
+        "repair_moves": 60,
+        "two_exclusive_leaf_ends_after_repair": true
+      }
+    ],
+    "original_degree13_counterexample_repaired_with_block_length": 3,
+    "paired_pivot_anchor_blocker_rejected": true,
+    "noncommutative_product_conjugation_formula_checked": true
+  },
+  "binary_code_controls": {
+    "all_DT_elements_degree7": 105,
+    "all_even_intersection_pair_updates_checked": 5985,
+    "proper_G3_code_dimension": 3,
+    "proper_G3_code_weight_distribution": {
+      "0": 1,
+      "4": 7
+    },
+    "full_A7_seed_has_odd_overlap": true
+  },
+  "complete_degree7_overlap_gate": {
+    "complete_fixed_product_domain": 392,
+    "orbits": [
+      {
+        "tuple_count": 49,
+        "group_order": 168
+      },
+      {
+        "tuple_count": 49,
+        "group_order": 168
+      },
+      {
+        "tuple_count": 147,
+        "group_order": 2520
+      },
+      {
+        "tuple_count": 147,
+        "group_order": 2520
+      }
+    ],
+    "all_full_A7_inputs_gate_and_exchange_checked": 294,
+    "inputs_using_five_cycle_rotation": 84,
+    "maximum_gate_word_length_in_control": 8,
+    "proper_even_overlap_core_rejected": true
+  },
+  "higher_degree_overlap_gate_controls": [
+    {
+      "r": 4,
+      "degree": 9,
+      "gate_word_length": 1,
+      "adjacent_overlap": 1,
+      "secondary_exchange_checked": true
+    },
+    {
+      "r": 5,
+      "degree": 11,
+      "gate_word_length": 1,
+      "adjacent_overlap": 1,
+      "secondary_exchange_checked": true
+    },
+    {
+      "r": 6,
+      "degree": 13,
+      "gate_word_length": 1,
+      "adjacent_overlap": 1,
+      "secondary_exchange_checked": true
+    },
+    {
+      "r": 12,
+      "degree": 25,
+      "gate_word_length": 1,
+      "adjacent_overlap": 1,
+      "secondary_exchange_checked": true
+    },
+    {
+      "r": 25,
+      "degree": 51,
+      "gate_word_length": 1,
+      "adjacent_overlap": 1,
+      "secondary_exchange_checked": true
+    },
+    {
+      "r": 50,
+      "degree": 101,
+      "gate_word_length": 1,
+      "adjacent_overlap": 1,
+      "secondary_exchange_checked": true
+    }
+  ],
+  "complete_degree7_core_group_order": 168,
+  "full_A7_order_for_comparison": 2520,
+  "scope": "Exact pure extraction, block-evacuation repair, cyclic recursion, even-overlap invariant and arbitrary-input overlap-one gate. No arbitrary-tree leaf extraction, extension connectivity or all-degree orbit classification is proved.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

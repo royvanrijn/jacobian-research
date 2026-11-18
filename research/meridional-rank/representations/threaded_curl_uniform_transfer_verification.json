@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "python": "3.12.3",
+  "checker_sha256": "f8b4cc4a1bb5da2d4b3931480cb210a3e45103f6131b2227729d08bc08db1397",
+  "input_sha256": "128b1bc7ea14e77dabcca0d20aeff319ff6834fca426acb0c70bf1ed182b0609",
+  "local_tangle_cells": {
+    "clasp_slide_two_RIII": true,
+    "cap_one_RIII_and_one_RI": true,
+    "boundary_ports_fixed": true,
+    "over_under_branches_checked": true,
+    "embedded_disk_boundaries_and_orientations": true,
+    "cell_count": 2
+  },
+  "target_cut_contract": {
+    "fixed_target_RII_pairs": [
+      [
+        6,
+        25
+      ],
+      [
+        7,
+        22
+      ]
+    ],
+    "both_cut_arcs_kept_open": true,
+    "named_boundary_ports_fixed": true,
+    "normalized_base_crossings": 22,
+    "source_cut_edges": [
+      "Y1.2-u0.0",
+      "v0.2-u0.3"
+    ],
+    "inserted_clasp_is_positive_sigma4_squared": true
+  },
+  "literal_controls": {
+    "bounded_literal_braid_and_port_controls": [
+      {
+        "b": 5,
+        "RIII": 0,
+        "RI": 0,
+        "rho_and_circle_RII": 2
+      },
+      {
+        "b": 6,
+        "RIII": 1,
+        "RI": 1,
+        "rho_and_circle_RII": 3
+      },
+      {
+        "b": 7,
+        "RIII": 4,
+        "RI": 2,
+        "rho_and_circle_RII": 4
+      },
+      {
+        "b": 8,
+        "RIII": 9,
+        "RI": 3,
+        "rho_and_circle_RII": 5
+      },
+      {
+        "b": 9,
+        "RIII": 16,
+        "RI": 4,
+        "rho_and_circle_RII": 6
+      },
+      {
+        "b": 10,
+        "RIII": 25,
+        "RI": 5,
+        "rho_and_circle_RII": 7
+      },
+      {
+        "b": 11,
+        "RIII": 36,
+        "RI": 6,
+        "rho_and_circle_RII": 8
+      },
+      {
+        "b": 12,
+        "RIII": 49,
+        "RI": 7,
+        "rho_and_circle_RII": 9
+      },
+      {
+        "b": 13,
+        "RIII": 64,
+        "RI": 8,
+        "rho_and_circle_RII": 10
+      },
+      {
+        "b": 14,
+        "RIII": 81,
+        "RI": 9,
+        "rho_and_circle_RII": 11
+      },
+      {
+        "b": 15,
+        "RIII": 100,
+        "RI": 10,
+        "rho_and_circle_RII": 12
+      },
+      {
+        "b": 16,
+        "RIII": 121,
+        "RI": 11,
+        "rho_and_circle_RII": 13
+      },
+      {
+        "b": 17,
+        "RIII": 144,
+        "RI": 12,
+        "rho_and_circle_RII": 14
+      },
+      {
+        "b": 18,
+        "RIII": 169,
+        "RI": 13,
+        "rho_and_circle_RII": 15
+      },
+      {
+        "b": 19,
+        "RIII": 196,
+        "RI": 14,
+        "rho_and_circle_RII": 16
+      },
+      {
+        "b": 20,
+        "RIII": 225,
+        "RI": 15,
+        "rho_and_circle_RII": 17
+      },
+      {
+        "b": 21,
+        "RIII": 256,
+        "RI": 16,
+        "rho_and_circle_RII": 18
+      },
+      {
+        "b": 22,
+        "RIII": 289,
+        "RI": 17,
+        "rho_and_circle_RII": 19
+      },
+      {
+        "b": 23,
+        "RIII": 324,
+        "RI": 18,
+        "rho_and_circle_RII": 20
+      },
+      {
+        "b": 24,
+        "RIII": 361,
+        "RI": 19,
+        "rho_and_circle_RII": 21
+      },
+      {
+        "b": 25,
+        "RIII": 400,
+        "RI": 20,
+        "rho_and_circle_RII": 22
+      },
+      {
+        "b": 26,
+        "RIII": 441,
+        "RI": 21,
+        "rho_and_circle_RII": 23
+      },
+      {
+        "b": 27,
+        "RIII": 484,
+        "RI": 22,
+        "rho_and_circle_RII": 24
+      },
+      {
+        "b": 28,
+        "RIII": 529,
+        "RI": 23,
+        "rho_and_circle_RII": 25
+      },
+      {
+        "b": 29,
+        "RIII": 576,
+        "RI": 24,
+        "rho_and_circle_RII": 26
+      },
+      {
+        "b": 30,
+        "RIII": 625,
+        "RI": 25,
+        "rho_and_circle_RII": 27
+      },
+      {
+        "b": 31,
+        "RIII": 676,
+        "RI": 26,
+        "rho_and_circle_RII": 28
+      },
+      {
+        "b": 32,
+        "RIII": 729,
+        "RI": 27,
+        "rho_and_circle_RII": 29
+      },
+      {
+        "b": 33,
+        "RIII": 784,
+        "RI": 28,
+        "rho_and_circle_RII": 30
+      },
+      {
+        "b": 34,
+        "RIII": 841,
+        "RI": 29,
+        "rho_and_circle_RII": 31
+      },
+      {
+        "b": 35,
+        "RIII": 900,
+        "RI": 30,
+        "rho_and_circle_RII": 32
+      },
+      {
+        "b": 36,
+        "RIII": 961,
+        "RI": 31,
+        "rho_and_circle_RII": 33
+      },
+      {
+        "b": 37,
+        "RIII": 1024,
+        "RI": 32,
+        "rho_and_circle_RII": 34
+      },
+      {
+        "b": 38,
+        "RIII": 1089,
+        "RI": 33,
+        "rho_and_circle_RII": 35
+      },
+      {
+        "b": 39,
+        "RIII": 1156,
+        "RI": 34,
+        "rho_and_circle_RII": 36
+      },
+      {
+        "b": 40,
+        "RIII": 1225,
+        "RI": 35,
+        "rho_and_circle_RII": 37
+      },
+      {
+        "b": 41,
+        "RIII": 1296,
+        "RI": 36,
+        "rho_and_circle_RII": 38
+      },
+      {
+        "b": 42,
+        "RIII": 1369,
+        "RI": 37,
+        "rho_and_circle_RII": 39
+      },
+      {
+        "b": 43,
+        "RIII": 1444,
+        "RI": 38,
+        "rho_and_circle_RII": 40
+      },
+      {
+        "b": 44,
+        "RIII": 1521,
+        "RI": 39,
+        "rho_and_circle_RII": 41
+      },
+      {
+        "b": 45,
+        "RIII": 1600,
+        "RI": 40,
+        "rho_and_circle_RII": 42
+      },
+      {
+        "b": 46,
+        "RIII": 1681,
+        "RI": 41,
+        "rho_and_circle_RII": 43
+      },
+      {
+        "b": 47,
+        "RIII": 1764,
+        "RI": 42,
+        "rho_and_circle_RII": 44
+      },
+      {
+        "b": 48,
+        "RIII": 1849,
+        "RI": 43,
+        "rho_and_circle_RII": 45
+      },
+      {
+        "b": 49,
+        "RIII": 1936,
+        "RI": 44,
+        "rho_and_circle_RII": 46
+      },
+      {
+        "b": 50,
+        "RIII": 2025,
+        "RI": 45,
+        "rho_and_circle_RII": 47
+      },
+      {
+        "b": 51,
+        "RIII": 2116,
+        "RI": 46,
+        "rho_and_circle_RII": 48
+      },
+      {
+        "b": 52,
+        "RIII": 2209,
+        "RI": 47,
+        "rho_and_circle_RII": 49
+      },
+      {
+        "b": 53,
+        "RIII": 2304,
+        "RI": 48,
+        "rho_and_circle_RII": 50
+      },
+      {
+        "b": 54,
+        "RIII": 2401,
+        "RI": 49,
+        "rho_and_circle_RII": 51
+      },
+      {
+        "b": 55,
+        "RIII": 2500,
+        "RI": 50,
+        "rho_and_circle_RII": 52
+      },
+      {
+        "b": 56,
+        "RIII": 2601,
+        "RI": 51,
+        "rho_and_circle_RII": 53
+      },
+      {
+        "b": 57,
+        "RIII": 2704,
+        "RI": 52,
+        "rho_and_circle_RII": 54
+      },
+      {
+        "b": 58,
+        "RIII": 2809,
+        "RI": 53,
+        "rho_and_circle_RII": 55
+      },
+      {
+        "b": 59,
+        "RIII": 2916,
+        "RI": 54,
+        "rho_and_circle_RII": 56
+      },
+      {
+        "b": 60,
+        "RIII": 3025,
+        "RI": 55,
+        "rho_and_circle_RII": 57
+      },
+      {
+        "b": 61,
+        "RIII": 3136,
+        "RI": 56,
+        "rho_and_circle_RII": 58
+      },
+      {
+        "b": 62,
+        "RIII": 3249,
+        "RI": 57,
+        "rho_and_circle_RII": 59
+      },
+      {
+        "b": 63,
+        "RIII": 3364,
+        "RI": 58,
+        "rho_and_circle_RII": 60
+      },
+      {
+        "b": 64,
+        "RIII": 3481,
+        "RI": 59,
+        "rho_and_circle_RII": 61
+      }
+    ],
+    "fixed_U_ports_in_final_spherical_isotopy": 56,
+    "uniform_transfer_proved_by_written_port_induction": "M_b unmarked homeomorphic to N(D:(1,-(b-5))) for every b>=5",
+    "unbounded_primality_uses_fixed_parent_geometry_and_two_successive_Dehn_filling_arguments": true,
+    "fixed_parent_input_sha256": "482429fc837606df1419be4931783836479885132135f1d3ba3a68dabe36cfe4"
+  },
+  "negative_controls_rejected": 2,
+  "assurance": {
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "result": "PASS"
+}

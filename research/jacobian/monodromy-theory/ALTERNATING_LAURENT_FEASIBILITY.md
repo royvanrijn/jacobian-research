@@ -302,5 +302,8 @@ All-b generation is imported only from the literal alternating tuple
 theorem already retained in the bridge. The fixed-sheet and normal-generation
 necessary conditions are those in the existing Keller monodromy theory.
 No independent mathematical replay, formal verification, external review
-or novelty is claimed. The abstract polynomial-Keller realization problem
-for the natural alternating action remains open.
+or novelty is claimed. A different embedded extension now realizes every
+even natural alternating action A_n, n>=6, by the polynomial
+[cyclic-cone maps](UNIFORM_EVEN_ALTERNATING_CONE_KELLER_MAPS.md) in dimension
+three. Their varying pole coefficient and invariant-product target avoid
+the fixed affine-base hypotheses used above. The plane question remains open.

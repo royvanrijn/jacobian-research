@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/NONZERO_BRANCH_RESIDUAL_S6_AND_SOLVABLE_PULLBACKS.md",
+  "claims": {
+    "residual": "At every nonzero branch of the fixeddegree10pencil the residualsextic over itsquarticbranchfield hasfullS6.",
+    "uniform": "Every nonconstant rationalbasechange withSOLVABLE ARITHMETICnormalclosure retainsgenericregularA10 and yields densityzero everywhere-locally-soluble rank256integerparameters in eacharithmeticprogression.",
+    "method": "QuarticGaloisorbit plusRiemannHurwitz leavesoddcontact; its solvableresidueextension cannotkillA6; Chebotarev producesC2xC4localobstructions.",
+    "conditional_uniform_transfer": "For n2mod4,n>=10, a regularAn pencil with abranchorbit>=4 andresidualS_(n-4) has the same obstruction for its oddsubset/W_(n/2) elementcover ofrank2^(n-2). No newrationalcover is asserted.",
+    "limits": [
+      "No exclusion of a thinner infinite locallysoluble set.",
+      "No obstruction to arbitrary nonsolvable rationalbasechanges or different subgroup products.",
+      "No claim of a computed densityfraction for the newbadprime set.",
+      "No general Keller obstruction.",
+      "No novelty or priority claim."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md",
+      "sha256": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+      "locator": "Theorem1 and exactdiscriminant/finiteinertia",
+      "role": "OriginalregularA10cover and itsfiveDTbranches."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_SUBGROUP_COVERS_AND_HASSE.md",
+      "sha256": "b7a267d449bfb8fbf801a222363705b7603ebc8b9073773512b57ecae2fa5e0f",
+      "locator": "Theorems2/5; localfixedcosetcriterion",
+      "role": "Exactrank256subgroupproduct and local/globalfibrecriterion."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md",
+      "sha256": "7ed454756df7a4d812c9b5648c4d0bd1b715272d09aa443ae858f861177cd6bd",
+      "locator": "Theorems1-3 andProposition4",
+      "role": "EarlierHensel/CRTandRHargument; newproofhandlesnonzeroresidualS6."
+    },
+    {
+      "path": "research/arithmetic/NONZERO_BRANCH_RESIDUAL_S6_AND_SOLVABLE_PULLBACKS.md",
+      "sha256": "228c89863327c424e0d5737195f123921c92945ee30b723c9c0df68c4bea1e19",
+      "locator": "Lemmas1/3/4 andTheorems2/5",
+      "role": "Completewrittenuniformproof, includingresidueextensions, oddcontact andHilbertcompositum."
+    },
+    {
+      "path": "research/arithmetic/verify_alternating_solvable_pullback_obstruction.py",
+      "sha256": "ff607b041dec9b5186ff183bd61d3762581fd5db7790f35b1fa45956800f7d44",
+      "locator": "run and exactpolynomialRabin routines",
+      "role": "Directsymbolicdivision, exactfieldbasis, independentlyverifiedliteralmodularfactors andlocalgroupcount."
+    },
+    {
+      "path": "research/arithmetic/alternating_nonzero_branch_residual_inputs.json",
+      "sha256": "6aee8aba2d4cd58b712472b1fe85303b2a56bc9b0e642ab15e5b07adb9b599f8",
+      "locator": "Allquartic/residualpolynomialsandfinitefactorcertificates",
+      "role": "Completeexactfiniteinput, notafiniteexperimentstandingforuniformquantifiers."
+    },
+    {
+      "path": "research/arithmetic/alternating_solvable_pullback_verification.json",
+      "sha256": "f721f6ecc34339d05a0b914cceb3607cca220084d3563e3ee417f0d1ac5ae834",
+      "locator": "Actualcurrentcheckerexecution",
+      "role": "PASS; completecertificatecontrols andallimportedinputhashes."
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "lenstra-chebotarev-natural-density",
+      "title": "The Chebotarev Density Theorem",
+      "authors": [
+        "Hendrik Lenstra"
+      ],
+      "version": "Undated author lecture notes, five pages, retained from official Leiden mathematics site",
+      "primary_url": "https://websites.math.leidenuniv.nl/algebra/Lenstra-Chebotarev.pdf",
+      "retained_pdf": "research/arithmetic/sources/lenstra-chebotarev-density-notes.pdf",
+      "sha256": "695466dfe7053b18957adf0e17207bc6829cccf9b51c320fe93f93e3dbc9cd94",
+      "bytes": 112380,
+      "pdf_pages": 5,
+      "direct_read": true,
+      "extraction": "pdftotext -layout and official PDF text",
+      "locator": "Fact 2.1 and Theorem 3.1, page 3; natural-density definition and validity for both densities, pages 3-4",
+      "role": "mathematical_input",
+      "statement": "For a finite Galois extension of number fields, unramified primes in a conjugacy class have natural density equal to the class size divided by the group order. Frobenius cycle lengths on roots agree with factor degrees away from the polynomial discriminant.",
+      "application": "RelativeS6 group certificates at degreeone primes; a specified automorphism fixing the odd-contact point and criticalroots supplies positive-density rationalprimes with residualtype(2,4). No numericalprime-density fraction is computed.",
+      "reading_limits": "Exact theorem, factorization/cycle statement, hypotheses and both density conventions inspected. Chebotarev itself is imported, not independently reproved. The nonmonic sextic is replaced by 9^5*g(T/9) outside3."
+    },
+    {
+      "id": "zywina-integral-hilbert",
+      "title": "Hilbert's irreducibility theorem and the larger sieve",
+      "authors": [
+        "David Zywina"
+      ],
+      "version": "Author manuscript dated30November2010",
+      "primary_url": "https://pi.math.cornell.edu/~zywina/papers/Quantitative-HIT.pdf",
+      "retained_pdf": "research/arithmetic/sources/zywina-quantitative-hit-2010.pdf",
+      "sha256": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
+      "bytes": 454770,
+      "pdf_pages": 28,
+      "direct_read": true,
+      "locator": "Section1.1, Theorem1.2(Cohen,Serre), page2; full arithmetic-group notation, pages1-2",
+      "role": "mathematical_input",
+      "statement": "One-parameter exceptional integer specializations have count O(B^(1/2)logB), for the full arithmetic splitting group. Regularity is not a hypothesis.",
+      "application": "Every forbidden residue class in any integer progression contains infinitelymany fullA10 specializations; successiveconstantfieldcomposita give linearlydisjoint normalclosures.",
+      "reading_limits": "The retained exact statement and hypotheses were previously inspected and rechecked. The estimate and HIT are imported."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "arithmetic": "Exactrational symbolicdivision and finitefieldcoefficientarrays; no modularfactorizationblackbox is trusted for the retainedcertificates."
+  },
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "internal_critical_review": {
+      "root": "Complete proof/code derivation and exact actual replay, including uniformconditionaltransfer and squareparameter witness.",
+      "separate_agent": "Full critical audit of Lemmas1/3/4, Theorems2/5/6, the solvable residuefields and Galois intersections, localparity/group obstruction, density/HIT/disjointness, plus separate exact receiptmatch; primary Lenstra/Zywina statements reread. PASS with no correction.",
+      "limits": "Internal agent review only; external replay/review and formal verification remain false."
+    },
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  }
+}

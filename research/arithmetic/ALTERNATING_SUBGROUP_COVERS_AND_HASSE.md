@@ -5,8 +5,10 @@ Q-algebras of rank 301 which have a point over every completion of Q and have
 no Q-point. Their splitting fields can be chosen linearly disjoint with group
 A10. The construction controls ramified decomposition groups, as well as
 individual Frobenius elements. Each algebra is a complete Keller fibre by the
-retained finite-étale compiler theorem; a single fixed three-dimensional
-compiler for this entire product family is a separate question.
+retained finite-étale compiler theorem. A [single fixed four-dimensional
+map](../jacobian/monodromy-theory/FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md)
+now realizes the entire product family; three-dimensional realization
+remains a separate question.
 
 The first input is the [degree-ten regular A10 pencil](RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md),
 Theorem 1:
@@ -479,10 +481,11 @@ algebra.
 
 This is an application of the existing compiler theorem and its stated
 assurance; it is not a fresh independent verification of that theorem.
-The map is allowed to depend on j. A proof that a single fixed
-three-dimensional polynomial Keller map realizes infinitely many of the
-rank-301 product algebras along a rational target curve is not supplied by
-this corollary.
+The maps in this corollary may depend on j. The [fixed-family
+theorem](../jacobian/monodromy-theory/FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md)
+instead uses one fixed four-dimensional polynomial Keller map for infinitely
+many of these complete product fibres. A fixed three-dimensional realization
+remains open.
 
 ## Priority, scope, and remaining smallest questions
 
@@ -498,10 +501,11 @@ arithmetic-progression construction.
 The real-place condition is included explicitly; finite-prime
 intersectivity alone would not state it.
 
-The first unresolved questions are whether the actual ramified groups
-can be restricted enough to obtain a rank-256 family using (3), and whether
-one fixed A3 Keller map realizes an infinite subfamily of the complete
-product fibres. Three local classes are proved sufficient and optimal in
+The [zero-branch ramification theorem](ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md)
+shows that locally soluble rank-256 integer parameters have density zero
+in every arithmetic progression; a thinner infinite family remains possible.
+One fixed A3 Keller map for the complete product fibres also remains open,
+while the fixed A4 realization is proved. Three local classes are sufficient and optimal in
 number. The total-degree minima 301 and 1075 are established for the
 whole abstract local domain, with the explicit classification dependency
 in Proposition 4.2.

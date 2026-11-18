@@ -1,0 +1,345 @@
+{
+  "certificate_sha256": "1c252d0783a5dcbb1dddaefa6ea13b0c17709901de5a4d1c8077beba64a1b94c",
+  "checker_sha256": "4e51653043ea67617efe4611b9a0742626ff30d52993934347f6c37d7a0166f0",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "compiler_flags": [
+    "-O3",
+    "-std=c++17",
+    "-UNDEBUG"
+  ],
+  "complete_polynomial_coverage": {
+    "double_transposition": {
+      "base_orbit_size": 14992384,
+      "components": 1,
+      "fiber_orbits": 1,
+      "raw_tuple_count": 14992384
+    },
+    "three_cycle": {
+      "base_orbit_size": 3748096,
+      "components": 1,
+      "fiber_orbits": 1,
+      "raw_tuple_count": 3748096
+    }
+  },
+  "coverage_replayed": true,
+  "cycle_folding_source_sha256": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+  "embedded_cpp_sha256": "b7cdb1d9bfce8f6f49c77f7a2ea77150e363fe75f79b172d1a171faab1471e99",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "independent_word_verification": {
+    "double_transposition": {
+      "holonomy_fiber_orbits": 1,
+      "internal_splitting_count": 2,
+      "outside_attachment_count": 7,
+      "witnesses": [
+        {
+          "attachment_permutation": [
+            0,
+            1,
+            2,
+            4,
+            3,
+            6,
+            5,
+            7,
+            8,
+            9,
+            10
+          ],
+          "codes": [
+            -2,
+            -1,
+            -1,
+            -1,
+            2
+          ],
+          "literal_B6_word": [
+            -3,
+            -2,
+            -1,
+            -1,
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            3
+          ]
+        },
+        {
+          "attachment_permutation": [
+            0,
+            1,
+            2,
+            9,
+            4,
+            5,
+            6,
+            8,
+            7,
+            3,
+            10
+          ],
+          "codes": [
+            2,
+            -1,
+            -1,
+            -1,
+            -2
+          ],
+          "literal_B6_word": [
+            3,
+            -2,
+            -1,
+            -1,
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            -2,
+            -1,
+            -1,
+            -2,
+            -3
+          ]
+        },
+        {
+          "attachment_permutation": [
+            0,
+            10,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            1
+          ],
+          "codes": [
+            -3,
+            -2,
+            -1,
+            2,
+            3
+          ],
+          "literal_B6_word": [
+            -4,
+            -3,
+            -2,
+            -1,
+            -1,
+            -2,
+            3,
+            4
+          ]
+        },
+        {
+          "attachment_permutation": [
+            1,
+            0,
+            10,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "codes": [
+            -4,
+            -3,
+            -2,
+            -1,
+            2,
+            3,
+            4
+          ],
+          "literal_B6_word": [
+            -5,
+            -4,
+            -3,
+            -2,
+            -1,
+            -1,
+            -2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    "link": {
+      "braid_word": [
+        -2,
+        1
+      ],
+      "final_coalescence": "three_cycle",
+      "initial_coalescence": "double_transposition",
+      "product": [
+        0,
+        3,
+        1,
+        5,
+        2,
+        7,
+        4,
+        8,
+        10,
+        6,
+        11,
+        9
+      ]
+    },
+    "three_cycle": {
+      "holonomy_fiber_orbits": 1,
+      "internal_splitting_count": 3,
+      "outside_attachment_count": 8,
+      "witnesses": [
+        {
+          "attachment_permutation": [
+            0,
+            1,
+            2,
+            4,
+            3,
+            9,
+            6,
+            7,
+            8,
+            5,
+            10
+          ],
+          "codes": [
+            -2,
+            -1,
+            2
+          ],
+          "literal_B6_word": [
+            -3,
+            -2,
+            -1,
+            -1,
+            -2,
+            3
+          ]
+        },
+        {
+          "attachment_permutation": [
+            0,
+            10,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            1
+          ],
+          "codes": [
+            -3,
+            -2,
+            -1,
+            2,
+            3
+          ],
+          "literal_B6_word": [
+            -4,
+            -3,
+            -2,
+            -1,
+            -1,
+            -2,
+            3,
+            4
+          ]
+        },
+        {
+          "attachment_permutation": [
+            0,
+            10,
+            9,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            2,
+            1
+          ],
+          "codes": [
+            3,
+            2,
+            -1,
+            -2,
+            -3
+          ],
+          "literal_B6_word": [
+            4,
+            3,
+            -2,
+            -1,
+            -1,
+            -2,
+            -3,
+            -4
+          ]
+        },
+        {
+          "attachment_permutation": [
+            1,
+            0,
+            10,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "codes": [
+            -4,
+            -3,
+            -2,
+            -1,
+            2,
+            3,
+            4
+          ],
+          "literal_B6_word": [
+            -5,
+            -4,
+            -3,
+            -2,
+            -1,
+            -1,
+            -2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    }
+  },
+  "kind": "complete_degree12_Hurwitz_reduction_certificate",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Complete degree12 absolute full-A12 orbit proof uses the uniform cycle-folding theorem, both exhaustive marked degree11 polynomial censuses, attachment holonomy transitivity, internal split transitivity and the literal B6 coalescence-change word. No uniform higher-degree connectivity or rational-point theorem follows."
+}

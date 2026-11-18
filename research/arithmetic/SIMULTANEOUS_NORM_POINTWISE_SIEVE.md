@@ -8,8 +8,13 @@ rather than primes in a growing range.
 
 The upper bounds below are unconditional consequences of Henriot's corrected
 upper-bound theorem. The lower bound and fixed-prime marginal estimates in the
-conditional criterion remain open. This note does not prove the every-target
-binary conjecture or the original additive \(o(N)\) formulation of H2.
+conditional criterion remain open on every target. The separate
+[power-correlation theorem SimNormPower](SIMULTANEOUS_NORM_POWER_CORRELATIONS.md)
+now proves the natural lower bound, the actual lifted bad-prime marginals and
+an exact local-model weighted survival proportion outside a power-sized
+exceptional set. It includes full moving balance intervals and all target
+valuations. This note does not prove the every-target binary conjecture or
+the original all-target additive \(o(N)\) formulation of H2.
 
 ## Definitions
 
@@ -750,6 +755,18 @@ These identities expose the unresolved issue already at the first fixed
 primes: a pointwise dilation law at \(11\), and additional pointwise binary
 correlations at \(5,7\). They supply no asymptotic for those correlations.
 
+The separate [renewal and dilation note](SIMULTANEOUS_NORM_DILATION_LAWS.md)
+removes the auxiliary correlations at \(5,7\) on odd target valuations: a
+convergent inverse renewal kernel makes the marginal limit equivalent to
+a raw \(p^2\)-dilation law. The implication needs only eventual positivity
+of the raw denominator. It is uniform in all odd valuations; a further
+equivalence covers deep valuations of either parity. In particular
+\(B_p(p^2M)=9R(M)\) when \(v_p(M)=1\), so valuation-three marginal
+limits at \(p=5,7\) require dilation factors \(34,58\). Neither
+regularity limit or positivity is established by this reduction. It applies
+to fixed relative intervals and the unrestricted count, not changing
+relative power windows.
+
 ## Centered power windows: the same criterion for theta greater than one half
 
 Fix \(1/2<\theta<1\), put \(H=N^\theta\), and restrict
@@ -809,6 +826,11 @@ No threshold improvement for the known semigroup density-one theorem follows
 from this upper-bound argument alone.
 
 ## What is proved and what remains
+
+The [weighted AP note](SIMULTANEOUS_NORM_WEIGHTED_AP_MEANS.md) proves uniform
+one-variable means for \(h_6(n)=h(n)\mathbf1_{(n,6)=1}\), with an explicit compatible
+residue-class main term and a power-saving error. These do not estimate the
+reflected two-weight correlation required by (H*) or (F5).
 
 The unconditional results are (U), the fixed-cutoff tail (T), the local
 comparison (L11), the common- and individual-valuation bounds (V2)--(V3),

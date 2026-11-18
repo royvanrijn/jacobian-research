@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/RECIPROCAL_REAL_SIGN_BALANCE.md",
+  "assurance": "Internal written uniform proof and exact rational replay; no external human review, independent external replay or formal verification claimed.",
+  "proof_origin": "Monotone consecutive-Chebyshev ratios followed by boundary weighted-Rolle counting; the written proof supplies all-degree scope.",
+  "external_sources": [],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "locator": "Exact odd critical-degree operators, sign factor definitions and nonsquare descent."
+    },
+    {
+      "path": "research/arithmetic/RECIPROCAL_DEGREE_TWELVE_OBSTRUCTION.md",
+      "sha256": "d19c604151d23615b284066dec9083cce019b4ea3a5b590451d4007c3465d8ba",
+      "locator": "Even critical-degree weighted-Rolle counterpart and global degree12 obstruction."
+    },
+    {
+      "path": "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md",
+      "sha256": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+      "locator": "Known all-real sharpness model h2,p2,q0."
+    },
+    {
+      "path": "research/arithmetic/verify_reciprocal_real_sign_balance.py",
+      "sha256": "4a1a298929d786403b6109915934b9f24856eee0366340f9d50e36482ef51441",
+      "locator": "Actual operator identities; threshold endpoints; exact root counts; shifted Wronskian positivity; allowed integer counts; sharpness."
+    },
+    {
+      "path": "research/arithmetic/reciprocal_real_sign_balance_verification.json",
+      "sha256": "12cfdf9d0c5f5a3596c9cada185735634aef500bb34dad1f94de40b6e469aa3f",
+      "locator": "Successful exact replay with retained finite controls and all-real degree10 coefficient binding."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "arithmetic": "QQ coefficient identities, exact real-root counting and shifted-coefficient positivity."
+  },
+  "scope_limits": [
+    "The sign-count restrictions require every critical point real, positive rho and the specified normalization N(1)=Nprime(1)=0.",
+    "Threshold roots at w2 are excluded from the counted open interval and handled explicitly.",
+    "Allowed counts are necessary, not sufficient; no real existence claim for the degree26 remaining cases is made.",
+    "The general rational degree26 systems, allowing nonreal critical points, remain open and unchanged.",
+    "The retained finite controls supplement the written all-degree induction and Rolle proof.",
+    "The known degree10 model verifies that imbalance two cannot be universally removed.",
+    "No novelty or priority claim is made."
+  ]
+}

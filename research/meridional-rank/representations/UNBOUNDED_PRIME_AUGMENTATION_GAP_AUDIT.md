@@ -1,6 +1,6 @@
 # Protected braid tails and a prime five-bridge augmentation gap
 
-Date: 18 November 2026. This is the current proof note for the first augmentation-gap moonshot. The all-bridge prime-family goal remains open. The results here are a uniform paired-span obstruction, a complete obstruction to using many powers of the original five-strand braid, and one certified prime five-bridge example.
+Date: 18 November 2026. This note proves a uniform paired-span obstruction, a complete obstruction to using many powers of the original five-strand braid, and one certified prime five-bridge example. The [uniform protected construction](UNIFORM_PROTECTED_AUGMENTATION_GAPS.md) and [threaded-curl transfer theorem](UNBOUNDED_PRIME_AUGMENTATION_GAP_FAMILIES.md) now prove infinite prime augmentation-gap families at every sufficiently large bridge number, with separate direct certificates at bridge five and six.
 
 Let `mr` be meridional rank, `br` bridge number, and `ar_C` ordinary complex augmentation rank in the conventions of [PRIME_AUGMENTATION_GAP_FAMILY.tex](PRIME_AUGMENTATION_GAP_FAMILY.tex). Write
 
@@ -240,4 +240,4 @@ Run from the repository root:
 
 The analytic replay pins Sage 10.9, SnapPy 3.3.2, Spherogram 2.4.1, the actual analytic Python source hashes and the Sage-runtime SnapPy kernel binary hash. The [source ledger](unbounded_prime_augmentation_gap_source_ledger.json) gives the necessary local proof imports and exact source identities. No formal verification, independent replay, external review or novelty priority judgment has been performed.
 
-The smallest attained new prime case is bridge five, represented by `J`. The first remaining family obligation is infinitely many distinct prime five-bridge knots with this gap; obtaining a single prime gap at bridge six is also open here. The protected subgroup gives an all-`b` augmentation mechanism and full-alternating composite models, but a uniform primeness construction requires a separate argument. The single hyperbolicity certificate for `J` does not prove hyperbolicity or primeness for arbitrary powers, arbitrary interlaced tails, or all bridge numbers.
+The smallest attained new prime case is bridge five, represented by `J`. The [uniform protected construction](UNIFORM_PROTECTED_AUGMENTATION_GAPS.md) gives explicit alternating colorings and augmentation gaps in every bridge number. The [threaded-curl transfer theorem](UNBOUNDED_PRIME_AUGMENTATION_GAP_FAMILIES.md) proves infinite prime families at every sufficiently large bridge number. Its bridge and filling thresholds are non-effective. The single certificate for `J` supports only that member; the family theorems use marked hyperbolic parents, an exact diagram induction and Dehn filling.

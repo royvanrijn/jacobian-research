@@ -1,4 +1,4 @@
-# Limits of character-divisor truncation for simultaneous norms
+# Obstructions to direct models for simultaneous norm correlations
 
 The simultaneous Gaussian--Eisenstein weight has an exact character-divisor
 expansion. Truncating its divisors at any fixed power of the component size,
@@ -7,6 +7,13 @@ moments. The truncation is also not a pointwise minorant, even inside the
 required residue class. These facts identify a cancellation problem in a
 natural route to the pointwise binary correlation; they do not rule out a
 refined divisor method.
+
+A separate algebraic obstruction concerns the three quadrics defining the
+simultaneous norm equations: no invertible linear changes of variables and
+linear recombination of equations identify them with the standard binary
+Gram system in a four-dimensional quadratic space. This excludes that direct
+identification with a degree-two Siegel theta representation, while leaving
+other theta and spectral constructions open.
 
 The unrestricted pointwise lower bound and fixed-prime marginals in the
 [pointwise sieve note](SIMULTANEOUS_NORM_POINTWISE_SIEVE.md) remain open.
@@ -231,9 +238,224 @@ eigen-sequence model; it does not exclude a non-eigenfunction construction,
 higher-rank automorphic methods or a different spectral model for the binary
 correlation.
 
+## The simultaneous norm net is not a standard binary Gram system
+
+Write
+\[
+ G(x)=x_1^2+x_2^2,\qquad E(u)=u_1^2-u_1u_2+u_2^2.
+\]
+For binary vectors \(x,y,u,v\), the simultaneous norm equations are
+\[
+ G(x)+G(y)=N,\qquad G(x)=E(u),\qquad G(y)=E(v).
+\]
+Their homogeneous quadratic parts span the net
+\[
+ F_1=G(x)+G(y),\qquad F_2=G(x)-E(u),\qquad
+ F_3=G(y)-E(v)
+ \tag{10}
+\]
+in eight variables. Here a net is the three-dimensional linear space of
+quadratic forms, with projective parameter space \(\mathbf P^2\).
+
+**Proposition.** Over \(\mathbb C\), no invertible linear change of the
+eight variables, together with an invertible linear recombination of the
+three forms in (10), converts this net into the standard binary Gram net
+\[
+ q(s),\qquad 2\langle s,t\rangle_Q,\qquad q(t),
+ \qquad s,t\in\mathbb C^4,
+ \tag{11}
+\]
+for any nondegenerate symmetric matrix \(Q\), where
+\(q(s)=s^{\mathsf T}Qs\) and
+\(\langle s,t\rangle_Q=s^{\mathsf T}Qt\).
+Consequently such a conversion is also impossible over \(\mathbb Q\).
+
+**Proof.** The symmetric matrix of \(E\) is
+\[
+ E_2=\begin{pmatrix}1&-1/2\\-1/2&1\end{pmatrix},
+ \qquad \det E_2=3/4.
+\]
+In the variable order \((x,y,u,v)\), the symmetric matrix of
+\(AF_1+BF_2+CF_3\) is
+\[
+ M(A,B,C)=\operatorname{diag}
+   ((A+B)I_2,(A+C)I_2,-BE_2,-CE_2).
+\]
+Hence its determinant is exactly
+\[
+ \det M(A,B,C)=\frac9{16}
+       \{BC(A+B)(A+C)\}^2.
+ \tag{12}
+\]
+Its projective degeneracy curve therefore has four distinct line components,
+each with multiplicity two.
+
+The corresponding matrix for the Gram net (11) is
+\[
+ M_Q(A,B,C)=
+ \begin{pmatrix}AQ&BQ\\BQ&CQ\end{pmatrix}.
+\]
+The off-diagonal blocks are \(BQ\) because the middle form in (11) is
+\(2s^{\mathsf T}Qt\). The determinant identity for this block matrix gives
+\[
+ \det M_Q(A,B,C)=(\det Q)^2(AC-B^2)^4.
+ \tag{13}
+\]
+For example, this follows by writing the matrix as the tensor product of
+\(\begin{pmatrix}A&B\\B&C\end{pmatrix}\) with \(Q\).
+The reduced degeneracy curve is the smooth conic \(AC-B^2=0\): its gradient
+\((C,-2B,A)\) has no projective zero. Over \(\mathbb C\), this conic is
+irreducible, since a degree-two product of linear forms has a projective
+singular point, including when the two linear factors coincide. Choosing the unscaled middle Gram form instead merely
+rescales the parameter \(B\), leaving this conclusion unchanged.
+
+A variable change \(z=Tz'\), with \(T\in\mathrm{GL}_8(\mathbb C)\),
+replaces every matrix of the net by \(T^{\mathsf T}MT\), multiplying its
+determinant by the nonzero constant \((\det T)^2\). An invertible linear
+recombination of its three forms acts by a projective linear change of
+\((A:B:C)\). Thus these two operations preserve the number and degrees of
+the irreducible components of the reduced projective degeneracy curve.
+Four lines cannot become one irreducible conic, proving the proposition.
+
+This is an obstruction only to the stated linear identification with a
+standard rank-four binary Gram system. It does not exclude nonlinear
+substitutions, birational parametrizations, auxiliary variables, trace
+integrations, other automorphic realizations, or Siegel and higher-rank theta
+methods in general. The count of three quadratic equations in eight variables
+alone therefore does not supply that particular Gram representation.
+
+## A bounded norm value prevents strong approximation off infinity
+
+The fixed-target norm variety also rules out a stronger geometric shortcut.
+This obstruction concerns density in the finite adeles; it does not imply
+failure of integral existence or of rational weak approximation.
+
+**Proposition SimNormBoundedValue.** Let \(X\) be an affine \(\mathbb Q\)-variety with an affine
+integral model, and let \(A\) be an integral regular function. Suppose
+\(A(X(\mathbb R))\cap\mathbb Z\) is finite, \(X(\mathbb Z_\ell)\ne\varnothing\)
+for every finite prime \(\ell\), and \(A(X(\mathbb Z_p))\) contains a
+nonempty \(p\)-adic open ball for some prime \(p\). Then \(X(\mathbb Q)\)
+is not dense in \(X(\mathbb A_f)\): strong approximation off infinity fails.
+
+**Proof.** The set \(S=A(X(\mathbb Z))\) is finite. Choose a congruence
+ball \(B\subset A(X(\mathbb Z_p))\) disjoint from \(S\). The set
+\[
+ \{x\in X(\mathbb Z_p):A(x)\in B\}
+ \times\prod_{\ell\ne p}X(\mathbb Z_\ell)
+ \tag{14}
+\]
+is nonempty and open in the finite adeles. A rational point in it has every
+affine coordinate integral at every finite prime, hence is an integral
+point. Its \(A\)-value would belong to both \(S\) and \(B\), which is
+impossible. \(\square\)
+
+Apply this to every positive \(N\equiv2\pmod{12}\) and the variety
+\[
+ V_N:\quad x^2+y^2=E(u,v)=a,\qquad
+ z^2+w^2=E(r,s)=b,\qquad a+b=N,
+ \tag{15}
+\]
+where \(a,b\) denote the displayed polynomial values in eight coordinates.
+Positive definiteness gives \(0\le a\le N\) on real points. In fact
+\(V_N(\mathbb R)\) is compact, since
+\(E(u,v)\ge(u^2+v^2)/2\).
+
+Here are integral local points at every prime. For \(p\ge5\), both binary
+norms represent every \(p\)-adic unit: modulo \(p\), a split norm is a
+product and an inert norm is the surjective finite-field norm; a nonzero
+value has a nonzero gradient and lifts by Hensel. Choose \(a\) modulo \(p\)
+outside \(\{0,N\}\), and represent the units \(a,N-a\) independently by
+both norms.
+At \(2\), choose \(a=1,b=N-1\), both \(1\pmod4\). Every unit
+\(t\equiv1\pmod4\) is a Gaussian norm: if \(t\equiv1\pmod8\) it is a
+square; otherwise \(t-4\) is a square and \(t=(\sqrt{t-4})^2+2^2\).
+Every odd \(t\) is an Eisenstein norm, because
+\(y^2-y+1-t=0\) has a root modulo \(2\) with odd derivative.
+At \(3\), the same \(a,b\) are \(1\pmod3\), hence squares and Eisenstein
+norms. Every \(3\)-adic unit is a Gaussian norm: the residue solutions
+\((1,0)\) and \((1,1)\) for values \(1,2\) have a unit partial derivative.
+
+The required open image is explicit at \(13\). Lift
+\(i=5\pmod{13}\), \(\omega=3\pmod{13}\) to
+\(i^2=-1\), \(\omega^2+\omega+1=0\) in \(\mathbb Z_{13}\).
+For every \(t\in\mathbb Z_{13}\), put
+\[
+ x=\frac{1+t}{2},\quad y=\frac{1-t}{2i},\qquad
+ v=\frac{t-1}{\omega^2-\omega},\quad u=1-\omega v.
+ \tag{16}
+\]
+All denominators are units. The Gaussian norm is \(t\), while
+\[
+ E(u,v)=(u+\omega v)(u+\omega^2v)=1\cdot t.
+\]
+Apply (16) to \(t\) and \(N-t\). This gives a section
+\(\mathbb Z_{13}\to V_N(\mathbb Z_{13})\) whose \(a\)-value is \(t\).
+Thus the proposition applies to every admissible \(N\).
+
+Allowing units in the quartic-element model does not remove this particular
+obstruction. For \(K=\mathbb Q(\zeta_{12})\), let
+\[
+ W_N:\quad N_{K/\mathbb Q}(\alpha)+N_{K/\mathbb Q}(\beta)=N
+ \tag{17}
+\]
+in integral-basis coordinates. At the real place the norm is a product of
+two squared complex absolute values, so its \(\alpha\)-value still lies in
+\([0,N]\). At \(13\), the integral algebra is \(\mathbb Z_{13}^4\), and
+\((1,1,1,t)\), \((1,1,1,N-t)\) give a section of (17). For
+\(N=2\cdot13^m\), \(m\ge0\), the global integral points
+\(\alpha=\beta=(2-\zeta_{12})^m\) provide local points at all other primes:
+\(N_{K/\mathbb Q}(2-\zeta_{12})=\Phi_{12}(2)=13\).
+Hence strong approximation off infinity also fails for these arbitrarily
+large admissible quartic targets. No all-target integral assertion follows.
+
+## What general norm-form theorems leave unresolved
+
+[Browning--Matthiesen, Theorem 1.3, printed p. 1385](https://numdam.org/item/10.24033/asens.2348.pdf)
+proves rational Hasse principle and weak approximation for norm equations
+whose homogeneous linear forms are pairwise nonproportional.
+Their Theorem 5.2 and Remark 5.3, printed p. 1401, give a full-dimensional
+\(s\)-variable count with error \(o(T^s)\), also allowing affine shifts
+\(O(T)\) while retaining the condition on linear parts.
+The forms \(t,N-t\) have proportional linear parts. Homogenization to
+\(u,Nv-u\) restores the hypothesis but leaves \(v\) free; an
+\(o(T^2)\) error does not isolate the fixed slice \(v=1\). For fixed \(N\),
+positivity bounds \(u\) on that slice; varying \(N\) also varies a
+coefficient of the homogeneous system. A fixed-target slice estimate, or
+suitable uniformity in the target and a shrinking body or growing modulus,
+is an additional obligation.
+
+Rational normalization remains possible. In the quartic model, add
+\(v=N_{K/\mathbb Q}(z)\ne0\). The three forms \(u,Nv-u,v\) are pairwise
+nonproportional, so the rational theorem applies when its local hypotheses
+hold. Division by \(z\) changes the norm sum \(Nv\) to \(N\).
+This does not ensure that the resulting coordinates are integral.
+The strong-approximation obstruction above does not address this rational
+Hasse-principle or weak-approximation route, nor approximation away from a
+finite prime where denominators are permitted.
+
+[Shute, *Polynomials represented by norm forms via the beta sieve*,
+Theorems 1.1 and 1.3 and Assumption 2.2](https://www.cambridge.org/core/journals/journal-of-the-institute-of-mathematics-of-jussieu/article/polynomials-represented-by-norm-forms-via-the-beta-sieve/967CC74D681A1832C0AA219B4DF1A6CB)
+has hypotheses that fail for this field. In the regular \(V_4\)-action of
+\(\operatorname{Gal}(K/\mathbb Q)\), the identity has cycle lengths
+\(1,1,1,1\), and each other element has lengths \(2,2\).
+The proportion \(T(G)\) with noncoprime cycle lengths is therefore \(3/4\),
+whereas Theorem 1.1 requires \(T(G)\le0.39/(k+j+1)\le0.39\), with
+\(k,j\) nonnegative factor counts; the stated improvements remain below
+\(1/2\). For Theorem 1.3, the bad unramified primes are precisely
+\(p\equiv5,7,11\pmod{12}\), of density \(3/4\) by the fixed-progression
+prime number theorem. Assumption 2.2 covers them, outside a finite
+set, by progressions of total density at most
+\(\sum_j1/(q_j-1)\), and requires
+\(\deg(F)\sum_j1/(q_j-1)\le0.32380\). This is impossible for nonconstant
+\(F\). These are precise applicability failures of those statements,
+not an obstruction to other norm-form methods or rational existence.
+
 The imported mean and prime-counting statements above were checked in the
 actual cited lemmas, with polynomial prime-power growth and divisor bounds
-verifying their hypotheses. The conclusions are analytic obstructions to the
-specified approximation steps. No pointwise binary lower bound, fixed-prime
+verifying their hypotheses. The norm-form applicability comparisons use the
+published statements at the exact locators above; the bounded-value
+proposition and its local applications have direct proofs here.
+These internal checks establish only the stated analytic, algebraic and
+finite-adelic obstructions. No pointwise binary lower bound, fixed-prime
 marginal asymptotic, novelty determination, external mathematical review or
 formal verification is claimed. No finite coverage search is used.
