@@ -70,7 +70,7 @@ def denominator_certificates(bundle, retained):
     polynomials = []
     lookup = {}
     for item in evidence["polynomials"]:
-        target = sp.Poly.from_list(item["monic_coefficients_descending"], c, domain=sp.QQ)
+        target = sp.Poly.from_list(list(map(sp.Rational, item["monic_coefficients_descending"])), c, domain=sp.QQ)
         assert target.LC() == 1
         product = sp.Poly(1, c, domain=sp.QQ)
         roots = {}
@@ -115,7 +115,8 @@ def generic_system(retained, denominator_lookup):
         C.append(sp.expand(ss*C[-1] - pp*C[-2]))
         T.append(sp.expand(ss*T[-1] - pp*T[-2]))
     D = [sp.expand(T[j] - w*C[j]) for j in range(7)]
-    deltas = [sp.factor(sp.Poly(D[j], w).nth(j)) for j in range(7)]
+    deltas = [sp.sympify(text) for text in retained["deltas_j_0_to_6"]]
+    assert all(sp.expand(sp.Poly(D[j], w).nth(j)-deltas[j]) == 0 for j in range(7))
     assert [str(t) for t in deltas] == retained["deltas_j_0_to_6"]
     rational_delta_roots = set()
     for delta in deltas:

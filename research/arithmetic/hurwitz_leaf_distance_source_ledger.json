@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md",
+  "claims": {
+    "family": "For every r>=4, t=floor(r/2) two-color odd D5 lobes, with one fresh DT buffer for odd r, give an explicit full A_(2r+1) polynomial tuple whose every initial leaf deletion is S_(2r).",
+    "metric": "Ordinary elementary signed Hurwitz generators Qi^(+/-1), permitting common sheet relabeling at zero cost.",
+    "bound": "Any word ending at any wreath-leaf representative has length at least t-1 and externally conjugates at least t-1 distinct original lobes.",
+    "protected_buffer_leaf": "For odd r with the displayed fresh buffer, any word ending in a wreath deletion at either marked fresh label, transported by any absolute relabeling, has length at least t.",
+    "strength": "Arbitrary internal braids within each unexposed two-color lobe preserve its exact odd transitive subgroup and do not count as exposing it.",
+    "limits": [
+      "No exclusion of O(r) or longer normalization algorithms.",
+      "No unrestricted all-degree braid orbit distinction.",
+      "No presumption that a wreath representative is reachable in an unclassified degree.",
+      "This is the pure-DT polynomial normalization gate; no claimed lower bound for a different route through a marked3-cycle coalescence."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md",
+      "sha256": "95fc17c0a132473c215283e999af4218190c443a2441ac5bbddfb98af528ec28",
+      "locator": "Lemma1, Proposition2, Theorem3 and Corollary4",
+      "role": "Complete uniform pairing obstruction, explicit full-alternating bouquet families, exposure accounting and unbounded lower bounds."
+    },
+    {
+      "path": "research/arithmetic/verify_hurwitz_leaf_distance.py",
+      "sha256": "47c9b40506a7a164e1253970561453c033d1ffb501707bce6a6d0b4d0e8960f9",
+      "locator": "bouquet; move; unexposed_controls; complete_word_ball; is_wreath_deletion",
+      "role": "Exact literal signed Hurwitz updates, tracked original colors, exhaustive bounded word balls and all-leaf pairing tests."
+    },
+    {
+      "path": "research/arithmetic/hurwitz_leaf_distance_verification.json",
+      "sha256": "fda7357a748d752935f99dc3c0660f58a0d5f3fdd5f531ded8ad302d67619ae7",
+      "locator": "Actual default execution",
+      "role": "All family/word-ball/negative controls PASS; uniform quantifiers rest on the proof."
+    },
+    {
+      "path": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
+      "sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+      "locator": "Theorem1: one-T/DT deletion-group dichotomy",
+      "role": "A polynomial DT leaf deletion is either S_(2r) or the full natural C2 wr S_r. Lemma1 rules out its imprimitive alternative."
+    },
+    {
+      "path": "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md",
+      "sha256": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+      "locator": "Chosen-leaf deletion formula and full-cycle product",
+      "role": "Deletion replaces the unique (xu)e by e; the lower polynomial tuple has full-cycle product with x omitted."
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Primitive permutation groups containing a cycle",
+      "author": "Gareth A. Jones",
+      "retained_pdf": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "locator": "Theorem1.1, primitive prime3-cycle with at least3fixed letters.",
+      "role": "Full alternating group of the explicitly transitive odd-degree DT tuple.",
+      "inspected": true,
+      "application": "A0,A1 overlap only at the shared root, and(A0A1)^2 is the displayed3-cycle. A DT cannot move nontrivial odd blocks of size>=3, proving primitivity.",
+      "read_limits": "Only Jordan's3-cycle consequence is imported; no primitive-DT group classification or Hurwitz connectivity theorem is used."
+    }
+  ],
+  "proof_outline": [
+    "A natural odd transitive subgroup fixing every outside letter cannot preserve a partition into pairs.",
+    "Each lobe is a five-sheet D5 action, sharing only the common root with other lobes.",
+    "An unexposed original two-color lobe retains its literal generated subgroup through internal Hurwitz moves.",
+    "Each elementary move conjugates only one tracked color and exposes at most one old lobe.",
+    "Two unexposed lobes rule out every leaf deletion being wreath; a single old unexposed lobe rules out a protected fresh-leaf wreath deletion.",
+    "Global sheet conjugation commutes with Hurwitz moves, so absolute relabelings do not change the lower bound."
+  ],
+  "computation": {
+    "arithmetic": "Python3 exact permutation arrays and integer combinatorics; no floating-point group tests.",
+    "family_controls": "Both parity variants t=2,3,4,5,12,25, up to103sheets, with literal full product,3-cycle certificate, all initial leaves and removable-DT counts.",
+    "complete_word_balls": "Every signed word through depth t-2 for2<=t<=5 in both variants;15106word prefixes. Every endpoint leaf checked.",
+    "protected_balls": "Every signed word through depth t-1 for2<=t<=4 in the buffered variant. Protected fresh labels may fail to be leaves at intermediate states; every endpoint where they are leaves is checked.",
+    "detector": "The sole pair-block system preserved by a full2r-cycle consists of its antipodal pairs; complete pointwise invariance test.",
+    "negative_controls": "Single lobe has group D5, order10; retained canonical wreath deletion is accepted; an internal braid changes lobe generators but leaves it unexposed.",
+    "assurance": "Finite controls supplement, rather than prove, the uniform statement."
+  },
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        "root agent",
+        "separate knots agent"
+      ],
+      "root": "Root critically read the complete final proof and code and separately replayed the final checker to .scratch/root-hurwitz-leaf-distance-final-receipt.json. All static and mathematical fields match the canonical receipt; elapsed seconds are excluded.",
+      "separate_agent": {
+        "result": "PASS",
+        "proof_note_sha256": "95fc17c0a132473c215283e999af4218190c443a2441ac5bbddfb98af528ec28",
+        "checker_sha256": "47c9b40506a7a164e1253970561453c033d1ffb501707bce6a6d0b4d0e8960f9",
+        "replay_path": ".scratch/independent_hurwitz_leaf_distance_final_replay.json",
+        "replay_sha256": "ec94548a91f98c62369f9f36d42559846ee577dce634c79fc6cad2b66fee678b",
+        "comparison_path": ".scratch/independent_hurwitz_leaf_distance_final_comparison.json",
+        "comparison": "PASS: all canonical static/mathematical fields and current source pins match; elapsed seconds differ.",
+        "scope": "Full proof, odd pairing obstruction, tree/full alternating group, all-r parity coverage, external-conjugation exposure bookkeeping, internal lobe braids, ordinary and transported-marked bounds, and all15106ordinary plus4535protected word prefixes.",
+        "corrections": "Protected fresh letter explicitly marked and transported under common relabeling; exact initial-family control set listed. No mathematical correction remaining."
+      },
+      "limits": "Separate internal AI-assisted proof audit and exact replay, not external human review, independent external replay or formal verification."
+    },
+    "formal_verification": false,
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "priority_assessment": "Not performed."
+  }
+}

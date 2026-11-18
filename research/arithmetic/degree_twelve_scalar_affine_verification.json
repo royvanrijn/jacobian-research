@@ -6,6 +6,133 @@
   },
   "c_zero": "Excluded by frozen both-scalar Proposition2.",
   "claim": "No good rational degree12 even-numerator paired pencil has scalar secant and affine reciprocal scale.",
+  "denominator_arithmetic_certificates": {
+    "exact_factor_product_count": 60,
+    "linear_factor_roots": [
+      "-1",
+      "-1/2",
+      "-1/3",
+      "-1/4",
+      "0"
+    ],
+    "no_factorization_or_irreducibility_oracle_used": true,
+    "nonlinear_root_free_witnesses": [
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 2,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 2
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 3,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 2
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 4,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 5
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 3,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 2
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 3,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 2
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 5,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 2
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 8,
+        "leading_coefficient_mod_prime": 2,
+        "prime": 3
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 11,
+        "leading_coefficient_mod_prime": 6,
+        "prime": 7
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 6,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 2
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 7,
+        "leading_coefficient_mod_prime": 3,
+        "prime": 5
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 62,
+        "leading_coefficient_mod_prime": 14,
+        "prime": 23
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 98,
+        "leading_coefficient_mod_prime": 2,
+        "prime": 31
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 137,
+        "leading_coefficient_mod_prime": 11,
+        "prime": 19
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 176,
+        "leading_coefficient_mod_prime": 26,
+        "prime": 29
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 2,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 5
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 2,
+        "leading_coefficient_mod_prime": 2,
+        "prime": 3
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 2,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 2
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 4,
+        "leading_coefficient_mod_prime": 1,
+        "prime": 2
+      },
+      {
+        "all_finite_values_nonzero": true,
+        "degree": 170,
+        "leading_coefficient_mod_prime": 36,
+        "prime": 41
+      }
+    ]
+  },
   "exact_normalization_requires_no_radical_extension": true,
   "exceptional_direct_certificates": {
     "-1": {
@@ -475,12 +602,13 @@
   "schema_version": 1,
   "scope_limit": "Scalar secant with affine scale in degree12 only; unrestricted nonreciprocal models remain open.",
   "sha256": {
-    "research/arithmetic/DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md": "0171cceb84ee1b2c261d71041252a05a5f2272511e2e685773e6b9426a9a0ed2",
+    "research/arithmetic/DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md": "a189da8a76fe6469884127bd1350ee249865873561b3ccdb2e34dd2534d3e7fe",
     "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
-    "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+    "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md": "4e679a083cf13da29014ab87bde631b2e2204c8253ffd45ed5fc71bfd07a6030",
     "research/arithmetic/degree12_scalar_affine_arithmetic_certificates.json": "2750d9c57b29b44751f88809b6e94a0a7b52d54c157d74a6fa381378a515cecb",
+    "research/arithmetic/degree12_scalar_affine_denominator_certificates.json": "2ca7048bc9ccd8a43ec69cca04ca65f4610c3708ae226a3cd3cfea2f8c78250b",
     "research/arithmetic/degree12_scalar_affine_reduced_system.json": "b08eb51e1b38a6cbb8c197c2a31590d165bab20ee41add878c3693fbdacefd84",
-    "research/arithmetic/verify_degree_twelve_scalar_affine_obstruction.py": "2127862c1c0690b3cd882a869ea1ee96ac9466a6ae2b164cfa88978ab7607b28"
+    "research/arithmetic/verify_degree_twelve_scalar_affine_obstruction.py": "152e7133e7016e6591dec85402af0b6ba48a2ae28a21f27ef1edf69c43e1ff1d"
   },
   "sympy": "1.14.0",
   "triangular_denominators": [

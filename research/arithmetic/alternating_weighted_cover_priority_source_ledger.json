@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
+  "assurance": "Internal written proof and exact replay, with root's completed critical proof/source/checker audit and separate Hurwitz mathematical review. Formal verification, external human review and independent external replay remain false.",
+  "proof_origin": "Numericalweightedminimum isanimmediateconsequence ofMaroti2005Theorem4.1. Theuniformequality argument extends the independentlyderivedprimehalfcostproof usingaself-contained all-imprimitiveindexcutoff. Arithmeticattainment importstheretainedAralafamily.",
+  "sources": [
+    {
+      "id": "maroti-known-covering-optimum",
+      "authors": [
+        "Attila Maroti"
+      ],
+      "title": "Covering the symmetric groups with proper subgroups",
+      "version": "Author manuscript15October2004; publishedJCTA110(2005),97--111,doi10.1016/j.jcta.2004.10.003",
+      "primary_url": "https://renyi.hu/~maroti/cover3.pdf",
+      "retained_pdf": "research/arithmetic/sources/maroti-covering-symmetric-2004.pdf",
+      "sha256": "50d5145e8ddde49eb31cacb24894ac6ef9068202351205c4eef38e6ba76aba36",
+      "bytes": 192224,
+      "direct_read": true,
+      "locator": "Theorem4.1, printedp9; explicitnormalcover and proofpp10--11; n6 reference [4] inproof",
+      "role": "mathematical_input_and_priority_overlap",
+      "statement": "For n>2 even and not divisible4, ordinary subgroup covering number sigma(An)=2^(n\u22122). The proof displays all odd subset stabilizers plus all unordered-half partition stabilizers.",
+      "application": "Since conjugacy-class size[G:N(H)]<=cosetindex[G:H], this implies the identical weighted minimum in ALLn2mod4>=6. Numeric optimum and upper family are prior work, not a new inverseGalois/group-covering theorem.",
+      "reading_limits": "Exact theorem, allsmall-degree hypotheses, cover formula and proof structure inspected. n6 included via Bryce-Fedri-Serena; odd exceptions7,9 irrelevant. The theorem is imported, not independently reproved."
+    },
+    {
+      "id": "maroti-primitive-order",
+      "authors": [
+        "Attila Maroti"
+      ],
+      "title": "On the Orders of Primitive Groups",
+      "version": "Author manuscript21February2002",
+      "primary_url": "https://renyi.hu/~maroti/primitive.pdf",
+      "retained_pdf": "research/arithmetic/sources/maroti-primitive-orders-2002.pdf",
+      "sha256": "d23aa3c23c1db474b6b7158375bdd41cecef598c5b21ef31520553c4dd85d27f",
+      "bytes": 167230,
+      "direct_read": true,
+      "locator": "Corollary1.2,printedp3; CFSGuseexplicitp2; proofSection3,pp8--9",
+      "role": "mathematical_input",
+      "statement": "Primitive H<=Sn not containingAn has order<3^n in everydegree.",
+      "application": "Factorial cutoff fromn14 excludes primitive subgroup classes from weightedoptimum families. The equality theorem importsCFSG through this bound.",
+      "reading_limits": "Exact first clause and all-degree scope inspected. Stronger2^n clause forn>24 is unnecessary."
+    },
+    {
+      "id": "bubboloni-praeger-class-covering",
+      "authors": [
+        "Daniela Bubboloni",
+        "Cheryl E. Praeger"
+      ],
+      "title": "Normal coverings of finite symmetric and alternating groups",
+      "version": "arXiv:1011.4368v1,19November2010",
+      "primary_url": "https://arxiv.org/pdf/1011.4368v1",
+      "retained_pdf": "research/arithmetic/sources/bubboloni-praeger-normal-1011.4368v1.pdf",
+      "sha256": "c368849aa5a06566e22c4e77515f5ce9f8fee45ba0f3dbf81739935b6ceab2a5",
+      "bytes": 373944,
+      "direct_read": true,
+      "locator": "Definitionssigma/gamma,pp1--2; Proposition7.6(a),(c),printedpp23--24",
+      "role": "priority_comparison",
+      "statement": "gamma(A2p)=(p+1)/2 for primep; both block stabilizersWp andW2 with oddintransitive classes give minimum-class normalcoverings.",
+      "application": "Shows exact same classes and knownclasscount; distinguishes conjugacy-class count from weighteddegree. Proposition7.6 does not state weighteduniqueness.",
+      "reading_limits": "Definitions, exact proposition, its displayedsets and proof inspected. Absence of an explicit statement here does not establish global novelty."
+    },
+    {
+      "id": "bubboloni-sonn-factor-count",
+      "authors": [
+        "Daniela Bubboloni",
+        "Jack Sonn"
+      ],
+      "title": "Intersective Sn polynomials with few irreducible factors",
+      "version": "RetainedPDFwrapper arXiv:1507.08593v1,30July2015; bodydate11October2018",
+      "primary_url": "https://arxiv.org/pdf/1507.08593v1",
+      "retained_pdf": "research/arithmetic/sources/bubboloni-sonn-intersective-1507.08593v1.pdf",
+      "sha256": "22f85bb6ed52d11f656aacb5e719ee0f4f50256a5aff434753ae54bee28906dc",
+      "bytes": 245772,
+      "direct_read": true,
+      "locator": "Abstractanddefinitionspp1--2; Proposition1.1 printedpp1--2",
+      "role": "priority_comparison",
+      "statement": "Subgroup/decomposition-group criterion for intersectivepolynomials; r(G) ands(G) measure irreducible-factor/subgroup counts.",
+      "application": "The localcriterion is establishedliterature; its optimized invariant is not totalpolynomialdegree.",
+      "reading_limits": "Exactcriterion, definitions and statedmainresults inspected. No exhaustive priority claim for other sections or sources."
+    },
+    {
+      "id": "sonn-realizable-nonsolvable",
+      "authors": [
+        "Jack Sonn"
+      ],
+      "title": "Two remarks on the inverse Galois problem for intersective polynomials",
+      "version": "JournaldeTheoriedesNombresdeBordeaux21(2009),435--437",
+      "primary_url": "https://www.numdam.org/article/JTNB_2009__21_2_435_0.pdf",
+      "retained_pdf": "research/arithmetic/sources/sonn-intersective-two-remarks-2009.pdf",
+      "sha256": "32f15a92fe3e10aef57a9d079be95355f6cb11a5204a6ad3377c19ddbf891d97",
+      "bytes": 411772,
+      "direct_read": true,
+      "locator": "Propositionandproof,p436",
+      "role": "priority_comparison",
+      "statement": "A finite nonsolvable group is realizable by an intersectivepolynomial iff it is realizable overQ.",
+      "application": "Prevents presenting broad An-intersectiveexistence as new; the proof permits allpropersubgroups and imposes no optimal totaldegree.",
+      "reading_limits": "Completeproposition/proof inspected. The rank-optimal Arala-family consequence is not attributed to this statement."
+    },
+    {
+      "id": "lenstra-chebotarev",
+      "authors": [
+        "Hendrik Lenstra"
+      ],
+      "title": "The Chebotarev Density Theorem",
+      "version": "Undatedauthorlecturenotes",
+      "primary_url": "https://websites.math.leidenuniv.nl/algebra/Lenstra-Chebotarev.pdf",
+      "retained_pdf": "research/arithmetic/sources/lenstra-chebotarev-density-notes.pdf",
+      "sha256": "695466dfe7053b18957adf0e17207bc6829cccf9b51c320fe93f93e3dbc9cd94",
+      "bytes": 112380,
+      "direct_read": true,
+      "locator": "Theorem3.1 andFact2.1,p3",
+      "role": "mathematical_input",
+      "statement": "Each conjugacy class in a finiteGaloisgroup occurs as an unramifiedFrobenius.",
+      "application": "Everywhere-local An-split etalealgebras give normal subgroupcovers; weightedminimum becomesranklowerbound.",
+      "reading_limits": "Exacttheorem andcosetcyclecriterion inspected; importednotreproved."
+    }
+  ],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
+      "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+      "locator": "Knownnumericaloptimumconsequence, completeuniformimprimitiveindex/equalityproof, exactprioritytable andoptimalHasse/Kellertransfer."
+    },
+    {
+      "path": "research/arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md",
+      "sha256": "8b3e96684255086511f4a2d8ab910c12447d6d09a43822571382da1e0ba25737",
+      "locator": "Theorem3 andCorollary4: infinite disjoint AralaHassefamilies ofrank2^(n\u22122) andwholefibres ofonefixedA4map."
+    },
+    {
+      "path": "research/arithmetic/verify_alternating_weighted_cover_priority.py",
+      "sha256": "efc5ec98ff0a2f7ce0ae6750b8b1308973f60bb5a477fa3d2383ddb2bc0f77d5",
+      "locator": "Exactfiniteinductionratio/index/rank/cycletype controls; importsrecordedexplicitly."
+    },
+    {
+      "path": "research/arithmetic/alternating_weighted_cover_priority_verification.json",
+      "sha256": "7895b7ae5284d429f6574612694c6af665990da1f6bf17d8f352499a882b88bb",
+      "locator": "Actualsuccessfulreplay, importedtheoremlocators andcurrentinputpins."
+    }
+  ],
+  "internal_critical_audit": {
+    "result": "PASS",
+    "reviewers": [
+      {
+        "reviewer": "/root",
+        "result": "PASS",
+        "scope": "Completed audit of the actual retained addendum and checker. Independently read Maroti Theorem4.1 p9 and explicit cover p10, Bubboloni-Praeger Proposition7.6, and Bubboloni-Sonn Proposition1.1. Checked ordinary count versus class count versus weighted degree; every imprimitive ratio bound; primitive cutoff; forced-witness uniqueness; and optimal Hasse/full A4 fibre transfer.",
+        "replay_receipt": ".scratch/root-weighted-cover-priority-receipt.json",
+        "receipt_comparison": "Actual root execution exactly matches retained canonical receipt."
+      },
+      {
+        "reviewer": "/root/moonshot_hurwitz",
+        "result": "PASS",
+        "scope": "Independent mathematical review of the uniform imprimitive index inequalities, labeled-group binomial injection, primitive cutoff, distinct odd two-cycle witnesses, balanced witness and equality classification, conditional only on the precisely imported Maroti primitive order bound. No nonmaximal-subgroup or split-cycle-class loophole."
+      }
+    ],
+    "pending": [],
+    "limits": "Internal agent mathematical review and exact replay only; no external or formal assurance upgrade."
+  },
+  "priority": {
+    "numerical_optimum": "KNOWN: directMaroti2005Theorem4.1consequence foralln2mod4>=6.",
+    "upper_subgroup_family": "KNOWN: exactsamefamilyinMarotiTheorem4.1proof.",
+    "classcount_primehalf": "KNOWN: Bubboloni-PraegerProposition7.6.",
+    "uniform_weighted_equality": "Separatelyprovedhere; exactpriorityunresolved; notexplicitlystatedininspectedmainstatements. Nonoveltyclaim.",
+    "optimal_Arala_Hasse_and_fixedKeller_transfer": "Mathematicallyprovedfromretainedimports; completeglobalpriorityassessmentpending."
+  },
+  "software": {
+    "python": "3.12.3",
+    "arithmetic": "Exactinteger/fractionfactorialbinomialcalculations andintegerpartitionenumeration."
+  },
+  "scope_limits": [
+    "Knownnumericalminimum holdsforalln>=6,n2mod4; equalityclassificationprovedhereforalln>=14,n2mod4.",
+    "n6 isexcludedfromtheuniformimprimitivecutoff; n10 isoutsideuniformequalitytheorem andhasseparateclassifiedfiniteevidence.",
+    "BothMarotitheorems areimported. Exactfinitecontrols donotproveclassificationresults orall-degreequantifiers bysampling.",
+    "The equalityprioritysearch isboundedtotheidentifiedsources andcitations. Nonoveltystatementfollowsfromnotfindinganexplicitclaim.",
+    "Hasseminimumrank appliesonlywhenalgebrasplitbyAn haslocalpointseverywhereandnoglobalpoint. Aralaattainmentcoversadmissiblen=m\u00b2+1,m>=3odd.",
+    "EachfixedA4HassemaphasgenericSR; rootfibres/An andambientgenericmonodromyremainseparate.",
+    "No paired-simple rationaldegree26model, genericAnKellerextension orfixedA3productcompilerisasserted."
+  ],
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}

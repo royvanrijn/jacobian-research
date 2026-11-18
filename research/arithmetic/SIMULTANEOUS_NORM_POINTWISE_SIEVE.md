@@ -848,3 +848,30 @@ fixed-prime criterion. They do not constitute external mathematical review
 or formal verification. The argument uses no new finite coverage computation;
 the pre-existing local formula checker has its own scope in the local-density
 note. No novelty claim is attached to these consequences of Henriot's bound.
+
+
+## A separate semilinear route
+
+The [asymmetric pointwise theorem](ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md)
+permits a different sufficient positivity criterion, proved in the
+[half-dimensional sieve note](ASYMMETRIC_SEMILINEAR_SIEVE.md).
+For the positive sequence
+\(w_N(b)=\tau(N-b)^2\mathbf1_{C_{12}}(N-b)\tau(b)\mathbf1_{A_3}(b)\),
+only primes \(7\bmod12\) still need removal. Their exact divisor density
+is \((2p-1)/(p^2-p+1)\) when \(p\nmid N\), and zero when \(p\mid N\).
+The sieve has dimension \(1/2\). Congruence parity makes sifting to
+\(\sqrt N\) sufficient to select precisely the second \(C_{12}\) summands.
+
+That conditional argument uses a signed lower-sieve remainder at level
+\(N^{1/2+\sigma}\), for some fixed \(\sigma>0\). The further
+[critical switching theorem](ASYMMETRIC_CRITICAL_SWITCHING.md) now suffices
+with level \(N^{1/2}(\log N)^{-B}\), by stopping at
+\(z=N^{1/2-\epsilon}\) and subtracting an unconditional
+\(O(\epsilon^{3/2}X_N\mathcal V_N(z))\) bound for the remaining bad mass.
+Its target compensation handles all prime-power factors of \(N\).
+The positive model is uniformly \(\gg N/\sqrt{\log N}\). An exact
+kernel identity compresses either remainder into mixed coefficient
+correlations, with a uniform \(O_\varepsilon(N^{1+\varepsilon}/K)\)
+small-kernel tail. The remaining large-coefficient estimate is open. This criterion proves
+neither the raw-norm lower bound nor the fixed-prime marginals in the
+present note, and is not used as an input to them.

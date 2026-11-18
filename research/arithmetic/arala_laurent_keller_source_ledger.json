@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md",
+  "assurance": "Internal written proof, exact replay, and separately performed sibling-agent critical audit/replay. No formal verification, external human review or independent external replay claimed.",
+  "proof_origin": "Known Arala rational alternating construction, explicit Laurent normalization and compiler transfer; finite-inertia fixed-set observation plus normal-subgroup coverings, Hensel progression and arithmetic HIT; index-additivity excludes smooth genus-zero DT coalescence to the pure3cycle.",
+  "sources": [
+    {
+      "id": "arala-alternating-lines",
+      "authors": [
+        "Nuno Arala"
+      ],
+      "title": "Lines of polynomials with alternating Galois group",
+      "version": "arXiv:2205.01502v1, 3 May 2022",
+      "primary_url": "https://arxiv.org/pdf/2205.01502",
+      "retained_pdf": "research/arithmetic/sources/arala-lines-2205.01502v1.pdf",
+      "sha256": "11d58f49bb3a1b8f4cc612f1dd93be7e0acc6fe774427149ca662dadb4341128",
+      "bytes": 310237,
+      "direct_read": true,
+      "locator": "Section4, Theorems1.2--1.3, pp14--16; explicit P/Q p15; equation4.4 p16",
+      "role": "mathematical_input",
+      "statement": "Even-n rational family X^n−nX^(n−1)−T(−nX+(n−2)^2), with geometric An and the displayed discriminant; arithmetic An when n−1 is an odd square.",
+      "application": "Known uniform construction, explicitly attributed; source affine translation and target scaling convert it into a moving-linear-coefficient Laurent pencil. It has high odd-cycle/3-cycle ramification rather than double transpositions.",
+      "reading_limits": "The stated locator and hypotheses were inspected. The imported theorem is not reproved by the exact checker."
+    },
+    {
+      "id": "jones-primitive-cycle",
+      "authors": [
+        "Gareth A. Jones"
+      ],
+      "title": "Primitive permutation groups containing a cycle",
+      "version": "arXiv:1209.5169v1",
+      "primary_url": "https://arxiv.org/pdf/1209.5169v1",
+      "retained_pdf": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "bytes": 106850,
+      "direct_read": true,
+      "locator": "Theorem1.1",
+      "role": "mathematical_input",
+      "statement": "A primitive permutation group containing a prime cycle fixing at least three points contains the alternating group.",
+      "application": "The transitive group with an (n−1)-cycle is primitive, and its pure3cycle fixes n−3>=3 points. All geometric inertia is even.",
+      "reading_limits": "The stated locator and hypotheses were inspected. The imported theorem is not reproved by the exact checker."
+    },
+    {
+      "id": "conrad-specialization-inertia",
+      "authors": [
+        "Brian Conrad"
+      ],
+      "title": "Inertia groups and fibers",
+      "version": "Author manuscript dated25August1999",
+      "primary_url": "https://math.stanford.edu/~conrad/papers/inertiapaper.pdf",
+      "retained_pdf": "research/arithmetic/sources/conrad-inertia-groups-fibers-1999.pdf",
+      "sha256": "c3417e7e4a89cd4b8bf17f13a7bf43d82c51117f4d7b0cbdf7ce30056b3742c7",
+      "bytes": 319131,
+      "direct_read": true,
+      "locator": "Theorem0.2, printedpage2; cover hypotheses pp1--2",
+      "role": "mathematical_input",
+      "statement": "For a finite flat generically Galois tame cover of proper curves, outside a fixed finite prime set specialization inertia is a subgroup of powers of one geometric cyclic inertia group.",
+      "application": "All nontrivial actual inertia in Arala specializations has either unique fixed letter or support3; decomposition groups normalize inertia and belong to H1 or H3.",
+      "reading_limits": "The stated locator and hypotheses were inspected. The imported theorem is not reproved by the exact checker."
+    },
+    {
+      "id": "zywina-integral-hit",
+      "authors": [
+        "David Zywina"
+      ],
+      "title": "Hilbert's irreducibility theorem and the larger sieve",
+      "version": "Author manuscript dated30November2010",
+      "primary_url": "https://pi.math.cornell.edu/~zywina/papers/Quantitative-HIT.pdf",
+      "retained_pdf": "research/arithmetic/sources/zywina-quantitative-hit-2010.pdf",
+      "sha256": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
+      "bytes": 454770,
+      "direct_read": true,
+      "locator": "Theorem1.2(Cohen,Serre), printedpage2, full arithmetic group notation pp1--2",
+      "role": "mathematical_input",
+      "statement": "For a monic irreducible polynomial over Q(t), exceptional integer specializations for the full arithmetic group are O(B^(1/2)logB). Regularity is not a hypothesis.",
+      "application": "One rational progression enforces all exceptional-prime roots; integral HIT retains full An. Apply full arithmetic HIT overQ to the compositum with previous fields to retain integer parameters and force linear disjointness.",
+      "reading_limits": "The stated locator and hypotheses were inspected. The imported theorem is not reproved by the exact checker."
+    },
+    {
+      "id": "lenstra-chebotarev",
+      "authors": [
+        "Hendrik Lenstra"
+      ],
+      "title": "The Chebotarev Density Theorem",
+      "version": "Undated author lecture notes",
+      "primary_url": "https://websites.math.leidenuniv.nl/algebra/Lenstra-Chebotarev.pdf",
+      "retained_pdf": "research/arithmetic/sources/lenstra-chebotarev-density-notes.pdf",
+      "sha256": "695466dfe7053b18957adf0e17207bc6829cccf9b51c320fe93f93e3dbc9cd94",
+      "bytes": 112380,
+      "direct_read": true,
+      "locator": "Theorem3.1 and Fact2.1, page3",
+      "role": "mathematical_input",
+      "statement": "Every conjugacy class in a finite Galois extension occurs as an unramified Frobenius, with positive natural density; cycle action on cosets gives decomposition types.",
+      "application": "Any everywhere locally soluble algebra split by an A10 extension yields a cyclic-subgroup cover; the retained classified minimum rank256 applies.",
+      "reading_limits": "The stated locator and hypotheses were inspected. The imported theorem is not reproved by the exact checker."
+    }
+  ],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md",
+      "sha256": "8b3e96684255086511f4a2d8ab910c12447d6d09a43822571382da1e0ba25737",
+      "locator": "Uniform Laurent-coordinate formulas, exact resultant derivation, fixed-map transfer, index obstruction, Hasse theorem and fixedA4 consequence."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/FIXED_KELLER_MAP_ALTERNATING_FAMILY.md",
+      "sha256": "e3154316cec111f4a7519261036268b013e58dfa6d26fcb3a19b1f801ec3e8e3",
+      "locator": "Theorem1 permits every degreeN>=3 H with some nonzero cubic Taylor coefficient; wholeA3fibres, genericSn, degree bound; Proposition2 perfect-group preservation under solvable radical pullback."
+    },
+    {
+      "path": "research/jacobian/monodromy-theory/FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md",
+      "sha256": "4702f599d59c643847c712be87882babc1d5bfd8ff8623d8d1e293fcf7656dab",
+      "locator": "Corollary2 realizes any generically finite-etale one-parameter algebra of rank>=3 as complete fibres of one fixedA4 polynomial Keller map, on a nonempty open."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_SUBGROUP_COVERS_AND_HASSE.md",
+      "sha256": "b7a267d449bfb8fbf801a222363705b7603ebc8b9073773512b57ecae2fa5e0f",
+      "locator": "Proposition4.2 gives classified minimum cyclic-cover total degree256 forA10. Theorem5 supplies the local coset interpretation and exact arithmetic-compositum HIT route."
+    },
+    {
+      "path": "research/arithmetic/verify_alternating_hasse_minimal_degree.py",
+      "sha256": "046ea05c29125f2ac57eebed1c6586e09cf50523e88b1ece1c4447940d38edd7",
+      "locator": "Classified seven-maximal-subgroup domain and exact finite action optimization underlying imported minimum256."
+    },
+    {
+      "path": "research/arithmetic/alternating_hasse_minimal_degree_verification.json",
+      "sha256": "b9dfe4d9b6740a274ec4211c12b2d432bec15065dfe9d9a2bf3e230fadbf8820",
+      "locator": "Actual classified finite replay of minimum cyclic-cover degree256; classification remains an explicit import."
+    },
+    {
+      "path": "research/arithmetic/verify_arala_laurent_keller.py",
+      "sha256": "76dc61954f894b235dfbd9bea25781733e6f4ca1e4ede803ac40f32571a616af",
+      "locator": "Full exact discriminants n6,8,10,26; allcoefficient compiler identities also n50; critical multiplicities; S6 pair index controls; even-cycletypes n10,n26; Hensel identities."
+    },
+    {
+      "path": "research/arithmetic/arala_laurent_keller_verification.json",
+      "sha256": "567494f4ef77bcadf3f9801acc5816e7b4198232862b23b6fca4ff5911154f05",
+      "locator": "Actual current exact replay, sourcepins and scope."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "arithmetic": "QQ exact polynomial identities and integer cycle-type enumeration."
+  },
+  "scope_limits": [
+    "Arala's rational square-discriminant construction is prior work; no novelty of alternating Laurent existence or inverse Galois realization is claimed.",
+    "Its critical multiplicities n−2 and2 are not paired simple critical points. The general rational paired degree26 problem remains open.",
+    "The coalescence obstruction fixes degree, infinity type and smooth genus-zero source and groups only finite branch values. Degenerations with source bubbles or degree changes are outside scope.",
+    "Rank256 optimality imports the previous classified maximal-subgroup minimum and Chebotarev; no classification-free proof is claimed.",
+    "The new Hasse family uses Arala's concentrated passport, not the original double-transposition cover; prior rank256 density/progression obstructions for that different cover remain valid.",
+    "Uniform Hasse rank2^(n−2) is an upper bound for admissible n; minimality is established here only for n10.",
+    "Each fixedA3 map carries degree-n root fields and has genericSn. Each fixedA4 Hasse map carries the rankR product family and has genericSR. A fixedA3 product-family compiler is not asserted.",
+    "Resolvent coefficients and resulting large A4 maps are not printed; the generic finite-etale family and retained compiler give their constructive existence.",
+    "All finite computations supplement the written uniform proofs. No all-degree claim follows from finite controls alone."
+  ],
+  "internal_critical_audit": {
+    "result": "PASS",
+    "reviewers": [
+      {
+        "reviewer": "/root/moonshot_knots",
+        "result": "PASS",
+        "scope": "Full retained mathematical proof and actual checker replay: Laurent/discriminant signs, critical passport and regularAn, compiler completefibres/perfect pullback, index-coalescence scope, uniform odd-subset cover/rank, allactualramified normalizers, denominator-safe Hensel progression, integralHIT product-group disjointness, optimalrank256 import and completeA4 productfamily transfer. Retained Conrad0.2 and Zywina1.2 independently inspected.",
+        "replay_receipt": ".scratch/independent_arala_laurent_keller_replay.json",
+        "receipt_comparison": "Exact equality with retained canonical receipt; all sourcepins current."
+      },
+      {
+        "reviewer": "/root",
+        "result": "PASS",
+        "scope": "Independent direct derivation of the Laurent normalization, resultant sign and multiplicities, fixed-map profile/fibre identity, index-coalescence obstruction, actual-inertia normalizers, Hensel valuations at all bad primes, integral-HIT disjointness and fixedA4 transfer. Replayed the frozen checker with explicit independent receipt output; .scratch/root-arala-explicit-receipt.json exactly equals the canonical receipt. Arala prior-work and non-paired passport limitations retained."
+      },
+      {
+        "reviewer": "/root/moonshot_hurwitz",
+        "result": "PASS",
+        "scope": "Separately completed full written proof/source-scope audit and exact checker replay; actual receipt comparison passed. No source edits or external/formal assurance upgrade."
+      }
+    ],
+    "limits": "Internal agent review only. No external or formal assurance upgrade."
+  }
+}

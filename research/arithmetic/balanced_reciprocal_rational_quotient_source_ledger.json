@@ -50,7 +50,7 @@
   "context_only": [
     {
       "path": "research/arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md",
-      "sha256": "af9ff4711660ad380e79a3c3e8cf4ed8c244167fc851b0f8d018d6b41fb037ec",
+      "sha256": "559903a88314db1f252b4742abac222bf7997a338a6ffce8dd459b2241e28d82",
       "role": "Existing local arithmetic filter, not used to prove the quotient presentation or finite length."
     }
   ],

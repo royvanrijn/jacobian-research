@@ -1,0 +1,52 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_whole_proof_replay": false,
+    "internal_exact_replay": true,
+    "internal_written_proof": true
+  },
+  "checker": "verify_bgv_critical_genus.py",
+  "receipt": "bgv_critical_genus_verification.json",
+  "result_document": "BGV_CRITICAL_GENUS_AND_RATIONAL_CORRECTIONS.md",
+  "schema_version": 1,
+  "scope": "Uniform all-odd-prime critical genus, noncontraction, and the general obstruction to rational pre/post corrections. No polynomial JC2 counterexample and no universal obstruction to every deformation of the residue map.",
+  "sources": [
+    {
+      "author": "Patrick Brosnan",
+      "imported_statement": "A rational map from a smooth projective surface to a projective variety is resolved by finitely many point blowups.",
+      "local_path": "sources/brosnan-surfaces-elimination-indeterminacy.html",
+      "locator": "Theorem 4.24 and its proof, Section 4.6",
+      "read_scope": "The exact statement and complete linear-system/self-intersection proof were inspected. Applied to a rational map from P2 to P2. Exceptional divisors of point blowups are P1.",
+      "role": "mathematical_input",
+      "sha256": "4bf7ca9ad1f1fea11126c8af66a34b22b48b9487ff0d94e9a755b5e59b1be638",
+      "title": "Algebraic Surfaces: Elimination of indeterminacy",
+      "url": "https://math.umd.edu/~pbrosnan/notes/Surfaces/sect0035.html"
+    },
+    {
+      "author": "The Stacks Project Authors",
+      "imported_statement": "For separable finite morphisms of smooth projective curves, the canonical degree formula gives Riemann-Hurwitz; in characteristic zero local different exponent is e-1.",
+      "local_path": "../../hessian/hc4-triangular-graphs/sources/stacks-0C1B-riemann-hurwitz.html",
+      "locator": "Section 53.12, Lemmas 53.12.2 and 53.12.4; preceding local tame differential calculation",
+      "read_scope": "Exact formula, assumptions, local differential discussion and lemmas were inspected. Used for Kummer genus and to exclude a rational curve dominating a positive-genus curve.",
+      "role": "mathematical_input",
+      "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+      "title": "Riemann-Hurwitz",
+      "url": "https://stacks.math.columbia.edu/tag/0C1B"
+    },
+    {
+      "authors": [
+        "Alexander Borisov",
+        "Ofer Gabber",
+        "Adrian Vasiu"
+      ],
+      "local_path": "sources/bgv-2609.05746v1.pdf",
+      "locator": "Theorem 28.6(1),(2.e)",
+      "read_scope": "Family provenance and positive-characteristic degree are recorded in the existing BGV lifting ledger. The present critical-genus calculation is in characteristic zero and does not use that degree theorem as a proof premise.",
+      "role": "context",
+      "sha256": "814c3f2572f660a47778663384077d6357e9947f1585c1e16372f6cdbe138425",
+      "title": "On endomorphisms of affine spaces and the Jacobian problem",
+      "url": "https://arxiv.org/html/2609.05746v1"
+    }
+  ]
+}

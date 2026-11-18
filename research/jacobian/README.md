@@ -20,6 +20,9 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Explicit polynomial Keller maps for every even alternating degree | Internal result | proved | [Source](monodromy-theory/UNIFORM_EVEN_ALTERNATING_CONE_KELLER_MAPS.md) |
 | Uniform odd-shear Keller maps with full alternating geometric group | Internal result | proved | [Source](monodromy-theory/UNIFORM_ALTERNATING_SHEAR_KELLER_MAPS.md) |
 | Every faithful transitive A4 plane Keller action is excluded | Internal result | proved | [Source](monodromy-theory/PLANE_A4_MONODROMY_EXCLUSION.md) |
+| Fixed rational A3 maps with infinitely many A_n whole field fibres in every admissible degree | Internal result | proved | [Source](../arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md) |
+| One fixed A4 map for each uniform alternating Hasse product family | Internal result | proved | [Source](../arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md) |
+| All-length odd-prime plane Keller lifts with a provably nonpolynomial radial limit | Internal result | proved | [Source](mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md) |
 
 **Computed obligations:** 16 unresolved; 4 resolved within their exact scope.
 
@@ -42,9 +45,8 @@ Scope limits:
 - The ordinary trace defect has an intrinsic logarithmic spectrum -i/e and normalized trace -rank/2. A generic target derivative has a non-dense maximal Bergman domain in the ramified case; dense-domain arguments cannot supply automatic integrality without proving the inverse condition.
 - Whole root charts transfer any r>1 unramified multiplicity to an actual degree-rd plane Keller map with cyclic deck subgroup and a specified affine pseudo-plane source image. The new marked ramified prime has nonpolar common coordinate, and selected opens are not full finite intermediate normalizations. This architecture remains unexcluded.
 - Alternating Laurent extensions have surjective etale Jacobian-one charts over the whole affine target, but no polynomial affine-space realization over the displayed affine base, by normalization units. This does not exclude their abstract A_n actions through different extensions.
-- Verified graded cyclic-cone maps realize every even generic geometricA_N,N>=6, in dimensionthree over numberfields. For all admissibleN=m²+1,m odd, one explicit formula has regular arithmeticA_N overfixedQ√-3. Auniform odd-shear family overQ(i) also has full geometricalternatinggroup. Published constructions are credited; plane realization/exclusion, Qdescent and fixedA3productHassefamilies remainopen.
-- Generic geometricA4 is universally excluded for polynomialplaneKeller maps in every faithfultransitiveaction: KMFI1 excludesdegrees6/12 and Domrina generalfour-sheet theorem excludesdegree4. The reported naturalA5 lowdegree theorem is not yet a sourceverified premise; its original Theorem6.12 is an explicit verificationobligation.
-- For every admissible N=m²+1,m odd, the explicit cyclic-cone map overE=Q√-3 has ambient regularA_N and infinitelymany complete degreeN A_N fieldfibres along one literal affine targetline. This is the threecyclepencil overE, distinct from the original rationalDT pencil.
+- One fixed rational determinant-one A3 map carries infinitely many whole A10 field fibres of the original paired pencil. Arala known concentrated-inertia pencils extend this root-field transfer overQ to every admissible n=m²+1, oddm>=3, with genericS_n and coordinate degree<=20n-54. Arbitrary rational finite-etale families have a fixed A4 compiler; each minimum-rank2^(n-2) alternating Hasse product family now occurs in one fixed A4 map with genericS_(2^(n-2)). A fixed A3 compiler for the product family remains open.
+- Known graded cyclic-cone constructions give polynomial A3 maps with geometricA_n for every evenn>=6; admissible degrees have regular arithmeticA_n overQ(sqrt(-3)). No novelty or plane realization is claimed. All faithful transitive planeA4 actions are excluded. The reported naturalA5 theorem remains a primary-source verification obligation here; architecture-specific obstructions do not give a universal plane exclusion.
 
 Tracked obligations (computed states):
 

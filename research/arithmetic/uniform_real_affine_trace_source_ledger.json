@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md",
+  "claims": {
+    "uniform_real_affine_trace": "For every h>=3, no good real paired even-numerator pencil N(z^2)/z ofdegree4h has theta=s+t*rho with base real scalars.",
+    "uniform_scalar_secant_corollary": "In every degree4h>=12 there is no good real scalar-secant, affine-scale model, including rational coefficients and nonreal critical roots.",
+    "sharp_boundary": "The degree8 rational model has primitive rho and theta=-1/6-2rho; its degree4 reflection polynomial satisfies the operator identity.",
+    "scope_limits": [
+      "Even numerator degree only.",
+      "No restriction that critical points be real.",
+      "Affine trace in canonical scale, not every singular elliptic spectral curve.",
+      "General nonaffine trace and nonconstant-secant models remain open.",
+      "No new rational degree26 existence claim.",
+      "No novelty or priority determination."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md",
+      "sha256": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+      "locator": "Complete theorem and corollary",
+      "role": "Self-contained uniform proof using canonical pair identities, trace square, positivity witness and reflection operator."
+    },
+    {
+      "path": "research/arithmetic/verify_uniform_real_affine_trace_obstruction.py",
+      "sha256": "75dedc95382ce962e80f4b9d2216bfb0f9a84285b4a55fab535f20a89d5f1131",
+      "locator": "run and degree_eight_control",
+      "role": "Exact finite controls and standalone sharp degree8 boundary verification."
+    },
+    {
+      "path": "research/arithmetic/uniform_real_affine_trace_verification.json",
+      "sha256": "bcae63f27d49fe8ae8280ad2ddfab3dc29ee5a38cd4708928ef742f328bac624",
+      "locator": "Actual default execution",
+      "role": "Exact retained checker receipt."
+    },
+    {
+      "path": "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md",
+      "sha256": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+      "locator": "Canonical theta,rho,a and norm identities",
+      "role": "Prior critical-algebra notation and provenance; the required identities are rederived in the new proof."
+    },
+    {
+      "path": "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md",
+      "sha256": "4e679a083cf13da29014ab87bde631b2e2204c8253ffd45ed5fc71bfd07a6030",
+      "locator": "Polynomial witness positivity and Proposition2",
+      "role": "Prior provenance for the reused B_h positivity and both-scalar endpoint, both proved again in the new note."
+    },
+    {
+      "path": "research/arithmetic/RATIONAL_ALTERNATING_PENCIL_REALIZATION.md",
+      "sha256": "50eb65960c03f54a8406620e11dbfefafdeed48c7b314d5ad13f6d82c81b7a8d",
+      "locator": "Proposition2 rational degree8 model",
+      "role": "Exact numerator for the sharp degree8 boundary control."
+    }
+  ],
+  "external_sources": [],
+  "external_import_limit": "The proof is self-contained elementary algebra and real inequalities. Prior notes supply provenance and notation. No arithmetic ideal-membership certificate or new external classification is needed.",
+  "finite_control_limit": "Bounded h1,...,16 and trace-basis j1,...,10 controls accompany the written uniform proof; they do not prove allh by sampling.",
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        {
+          "reviewer": "/root",
+          "result": "PASS",
+          "scope": "Completed separate derivation of the full uniform proof and scalar-secant affine-scale corollary: pair separation, critical jets, trace square and constant/leading terms, positivity forcing slope-2, reflection identity and nonzero operator leading coefficient. Actual .scratch/root-uniform-affine-trace-replay.json exactly equals the canonical receipt. Written quantifiers and sharp degree8 boundary checked; finite controls do not replace the uniform proof."
+        },
+        {
+          "reviewer": "/root/moonshot_hasse",
+          "result": "PASS",
+          "scope": "Completed independent critical audit of canonical pair separation, critical jets without differentiating a, trace-square constant and leading terms, gamma/B_h identity and all-real positivity, negative-intercept normalization, squarefreeness of Q, reflection double-zero count, differentiation/operator coefficient including lower terms, and the both-scalar endpoint. Fresh final checker replay .scratch/independent_uniform_real_affine_trace_replay.json exactly equals canonical receipt; all3 receipt pins and6 ledger pins match. Degree8 sharp control and even-numerator/nonreal-critical-point scope checked."
+        }
+      ],
+      "limits": "Internal agent review only; no external/formal assurance upgrade.",
+      "reviewed_note_sha256": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+      "reviewed_checker_sha256": "75dedc95382ce962e80f4b9d2216bfb0f9a84285b4a55fab535f20a89d5f1131",
+      "reviewed_receipt_sha256": "bcae63f27d49fe8ae8280ad2ddfab3dc29ee5a38cd4708928ef742f328bac624"
+    },
+    "priority_assessment": "Not performed."
+  }
+}

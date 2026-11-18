@@ -1,0 +1,29 @@
+{
+  "scope": "Exact local K, content and corrected-Henriot inequality diagnostics; BVcrit remains unproved",
+  "direct_K_cases": 507,
+  "henriot_local_inequality_cases": 507,
+  "all_valuation_euler_cases": 153,
+  "content_negative_control": {
+    "p": 13,
+    "r": 1,
+    "j": 1,
+    "true_K": "3859/936",
+    "missing_Uh_K": "3859/3744"
+  },
+  "expectation_negative_control": {
+    "actual": "1111/936",
+    "uncorrected_interpretation_E": "1255/936"
+  },
+  "source_hashes": {
+    "research/arithmetic/ASYMMETRIC_CRITICAL_SWITCHING.md": "70a4ce92a33164e5c63030eba2c0f3040ccf1a05a6e6ff2a462d52be3dc65049",
+    "research/arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md": "c7564c9069656eafcaf4ff417042dee3b3c354f76cca03e854afba1a5a085f62",
+    "research/arithmetic/ASYMMETRIC_SEMILINEAR_SIEVE.md": "7c83a78e354727e9a8a16c3daf5443eacd49668778b9c0f9ba6a94e281084ce8",
+    "research/arithmetic/sources/henriot-erratum-2014.pdf": "bd56f8f411457549c5cc53f9b24bbdec68544dca09cfe0836e35cc1b25677d6f"
+  },
+  "checker": {
+    "path": "research/arithmetic/eisenstein-restricted-prime-sums/verify_asymmetric_switching.py",
+    "sha256": "ac05c8fb31d87142d6bb90a81027a14852f496ff073790b0f622488f7d260f1a",
+    "python": "3.12.3"
+  },
+  "result": "PASS"
+}

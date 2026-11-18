@@ -1,0 +1,45 @@
+{
+  "scope": "Exact local, coefficient reduction, p7 shifted-kernel and fixed-modulus diagnostics; not a proof of dispersion",
+  "exact_local_cases": 89,
+  "exact_zero_local_cases": 32,
+  "common_coefficient_local_cases": 40,
+  "global_coefficient_reduction_cases": 6120,
+  "global_obstruction_cases": 2148,
+  "p7_shifted_kernel_cases": 1500,
+  "negative_control_mod12_support": "e_G7(7)=-1/2, so support 1 mod12 is false",
+  "small_modulus_density": [
+    [
+      1,
+      2,
+      "6"
+    ],
+    [
+      1,
+      8,
+      "6"
+    ],
+    [
+      7,
+      2,
+      "6"
+    ],
+    [
+      7,
+      8,
+      "6"
+    ]
+  ],
+  "source_hashes": {
+    "research/arithmetic/ASYMMETRIC_UNIFORM_COEFFICIENTS.md": "28fa55f597a0f485cdfe943c67a6910dc3b109daae9730ec7bd9e34f82a6f0f5",
+    "research/arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md": "c7564c9069656eafcaf4ff417042dee3b3c354f76cca03e854afba1a5a085f62",
+    "research/arithmetic/FIXED_PERIODIC_DIVISOR_BOXES.md": "8e955cbcb681f81ee8b4e3aedcd4ac40757cacad86bbbdd4799de3ef12824201",
+    "research/arithmetic/sources/blomer-grimmelt-li-rydin-myerson-2111.01601v5.pdf": "6cb425e37285b1a09aeeade57210948f885d40f1d4d7b337671cfbd0a4a4711f",
+    "research/arithmetic/sources/heath-brown-d3-progressions-1986.pdf": "7102515f18e1498eb69b5c8dcc0dc094c5c94d73b4a710ec84fefb94d91e9fd0"
+  },
+  "checker": {
+    "path": "research/arithmetic/eisenstein-restricted-prime-sums/verify_asymmetric_uniform.py",
+    "sha256": "71450a9e6ffadd30456b26ac6ae7edd0ff387a2e8ec40a2bd54ea3722ac93145",
+    "python": "3.12.3"
+  },
+  "result": "PASS"
+}

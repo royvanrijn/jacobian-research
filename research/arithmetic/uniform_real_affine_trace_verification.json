@@ -1,0 +1,148 @@
+{
+  "assurance": {
+    "external_human_review": false,
+    "formal_verification": false,
+    "independent_external_replay": false
+  },
+  "controls": [
+    {
+      "h": 1,
+      "operator_leading_coefficient": "0",
+      "pencil_degree": 4,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 2,
+      "operator_leading_coefficient": "0",
+      "pencil_degree": 8,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 3,
+      "operator_leading_coefficient": "16",
+      "pencil_degree": 12,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 4,
+      "operator_leading_coefficient": "64",
+      "pencil_degree": 16,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 5,
+      "operator_leading_coefficient": "160",
+      "pencil_degree": 20,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 6,
+      "operator_leading_coefficient": "320",
+      "pencil_degree": 24,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 7,
+      "operator_leading_coefficient": "560",
+      "pencil_degree": 28,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 8,
+      "operator_leading_coefficient": "896",
+      "pencil_degree": 32,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 9,
+      "operator_leading_coefficient": "1344",
+      "pencil_degree": 36,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 10,
+      "operator_leading_coefficient": "1920",
+      "pencil_degree": 40,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 11,
+      "operator_leading_coefficient": "2640",
+      "pencil_degree": 44,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 12,
+      "operator_leading_coefficient": "3520",
+      "pencil_degree": 48,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 13,
+      "operator_leading_coefficient": "4576",
+      "pencil_degree": 52,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 14,
+      "operator_leading_coefficient": "5824",
+      "pencil_degree": 56,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 15,
+      "operator_leading_coefficient": "7280",
+      "pencil_degree": 60,
+      "slope_witness_identity": true
+    },
+    {
+      "h": 16,
+      "operator_leading_coefficient": "8960",
+      "pencil_degree": 64,
+      "slope_witness_identity": true
+    }
+  ],
+  "critical_jet_identity": true,
+  "degree12_operator": "8*(1-2*z)*z^2*(1-z)^2",
+  "degree8_boundary_control": {
+    "N_coefficients_ascending": [
+      "-1/5488",
+      "233/5292",
+      "9/28",
+      "1",
+      "1"
+    ],
+    "canonical_rho_as_polynomial_in_M": "-268/2401-9261*M/2",
+    "critical_factorization_and_reflection_identity": true,
+    "normalized_q_coefficients_ascending": [
+      "9/49",
+      "8/7",
+      "1"
+    ],
+    "operator_vanishes_in_degree4": true,
+    "scale_is_primitive": true,
+    "secant_is_nonconstant": true,
+    "trace_intercept": "-1/6",
+    "trace_slope": "-2"
+  },
+  "finite_control_scope": "h1,...,16; trace-basis degrees1,...,10; exact degree8 boundary control.",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope_limits": [
+    "Even numerator degree only.",
+    "Trace affine in scale, not every singular spectral cubic.",
+    "No restriction that critical points be real.",
+    "Nonaffine trace/nonconstant secant general models remain open."
+  ],
+  "sha256": {
+    "research/arithmetic/RATIONAL_ALTERNATING_PENCIL_REALIZATION.md": "50eb65960c03f54a8406620e11dbfefafdeed48c7b314d5ad13f6d82c81b7a8d",
+    "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+    "research/arithmetic/verify_uniform_real_affine_trace_obstruction.py": "75dedc95382ce962e80f4b9d2216bfb0f9a84285b4a55fab535f20a89d5f1131"
+  },
+  "sympy": "1.14.0",
+  "trace_constant_and_leading_basis_identities": true,
+  "uniform_claim": "No good real even-numerator paired pencil ofdegree4h>=12 has trace affine in canonical scale.",
+  "uniform_corollary": "No such real pencil has scalar secant and affine scale.",
+  "uniform_written_proof_required": true
+}

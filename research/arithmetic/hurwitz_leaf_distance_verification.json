@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "47c9b40506a7a164e1253970561453c033d1ffb501707bce6a6d0b4d0e8960f9",
+  "source_sha256": {
+    "research/arithmetic/UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md": "95fc17c0a132473c215283e999af4218190c443a2441ac5bbddfb98af528ec28",
+    "research/arithmetic/verify_hurwitz_leaf_distance.py": "47c9b40506a7a164e1253970561453c033d1ffb501707bce6a6d0b4d0e8960f9",
+    "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+    "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+    "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57"
+  },
+  "initial_family_controls": [
+    {
+      "lobes": 2,
+      "buffer": false,
+      "degree": 9,
+      "DT_factors": 4,
+      "leaf_count": 2,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 0,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 1,
+      "protected_new_leaf_lower_bound": null
+    },
+    {
+      "lobes": 2,
+      "buffer": true,
+      "degree": 11,
+      "DT_factors": 5,
+      "leaf_count": 4,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 1,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 1,
+      "protected_new_leaf_lower_bound": 2
+    },
+    {
+      "lobes": 3,
+      "buffer": false,
+      "degree": 13,
+      "DT_factors": 6,
+      "leaf_count": 3,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 0,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 2,
+      "protected_new_leaf_lower_bound": null
+    },
+    {
+      "lobes": 3,
+      "buffer": true,
+      "degree": 15,
+      "DT_factors": 7,
+      "leaf_count": 5,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 1,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 2,
+      "protected_new_leaf_lower_bound": 3
+    },
+    {
+      "lobes": 4,
+      "buffer": false,
+      "degree": 17,
+      "DT_factors": 8,
+      "leaf_count": 4,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 0,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 3,
+      "protected_new_leaf_lower_bound": null
+    },
+    {
+      "lobes": 4,
+      "buffer": true,
+      "degree": 19,
+      "DT_factors": 9,
+      "leaf_count": 6,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 1,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 3,
+      "protected_new_leaf_lower_bound": 4
+    },
+    {
+      "lobes": 5,
+      "buffer": false,
+      "degree": 21,
+      "DT_factors": 10,
+      "leaf_count": 5,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 0,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 4,
+      "protected_new_leaf_lower_bound": null
+    },
+    {
+      "lobes": 5,
+      "buffer": true,
+      "degree": 23,
+      "DT_factors": 11,
+      "leaf_count": 7,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 1,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 4,
+      "protected_new_leaf_lower_bound": 5
+    },
+    {
+      "lobes": 12,
+      "buffer": false,
+      "degree": 49,
+      "DT_factors": 24,
+      "leaf_count": 12,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 0,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 11,
+      "protected_new_leaf_lower_bound": null
+    },
+    {
+      "lobes": 12,
+      "buffer": true,
+      "degree": 51,
+      "DT_factors": 25,
+      "leaf_count": 14,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 1,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 11,
+      "protected_new_leaf_lower_bound": 12
+    },
+    {
+      "lobes": 25,
+      "buffer": false,
+      "degree": 101,
+      "DT_factors": 50,
+      "leaf_count": 25,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 0,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 24,
+      "protected_new_leaf_lower_bound": null
+    },
+    {
+      "lobes": 25,
+      "buffer": true,
+      "degree": 103,
+      "DT_factors": 51,
+      "leaf_count": 27,
+      "all_initial_leaf_deletions_symmetric": true,
+      "removable_DT_count": 1,
+      "three_cycle_certificate": [
+        0,
+        1,
+        5
+      ],
+      "lower_bound_to_any_wreath_leaf": 24,
+      "protected_new_leaf_lower_bound": 25
+    }
+  ],
+  "complete_signed_word_balls": [
+    {
+      "lobes": 2,
+      "buffer": false,
+      "degree": 9,
+      "DT_factors": 4,
+      "protected_new_leaf": false,
+      "all_signed_word_prefixes_through_depth": 0,
+      "word_prefix_count": 1,
+      "distinct_tuples": 1,
+      "protected_leaf_endpoint_count": null,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 2,
+      "buffer": true,
+      "degree": 11,
+      "DT_factors": 5,
+      "protected_new_leaf": false,
+      "all_signed_word_prefixes_through_depth": 0,
+      "word_prefix_count": 1,
+      "distinct_tuples": 1,
+      "protected_leaf_endpoint_count": null,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 3,
+      "buffer": false,
+      "degree": 13,
+      "DT_factors": 6,
+      "protected_new_leaf": false,
+      "all_signed_word_prefixes_through_depth": 1,
+      "word_prefix_count": 11,
+      "distinct_tuples": 9,
+      "protected_leaf_endpoint_count": null,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 3,
+      "buffer": true,
+      "degree": 15,
+      "DT_factors": 7,
+      "protected_new_leaf": false,
+      "all_signed_word_prefixes_through_depth": 1,
+      "word_prefix_count": 13,
+      "distinct_tuples": 10,
+      "protected_leaf_endpoint_count": null,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 4,
+      "buffer": false,
+      "degree": 17,
+      "DT_factors": 8,
+      "protected_new_leaf": false,
+      "all_signed_word_prefixes_through_depth": 2,
+      "word_prefix_count": 211,
+      "distinct_tuples": 86,
+      "protected_leaf_endpoint_count": null,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 4,
+      "buffer": true,
+      "degree": 19,
+      "DT_factors": 9,
+      "protected_new_leaf": false,
+      "all_signed_word_prefixes_through_depth": 2,
+      "word_prefix_count": 273,
+      "distinct_tuples": 102,
+      "protected_leaf_endpoint_count": null,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 5,
+      "buffer": false,
+      "degree": 21,
+      "DT_factors": 10,
+      "protected_new_leaf": false,
+      "all_signed_word_prefixes_through_depth": 3,
+      "word_prefix_count": 6175,
+      "distinct_tuples": 854,
+      "protected_leaf_endpoint_count": null,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 5,
+      "buffer": true,
+      "degree": 23,
+      "DT_factors": 11,
+      "protected_new_leaf": false,
+      "all_signed_word_prefixes_through_depth": 3,
+      "word_prefix_count": 8421,
+      "distinct_tuples": 1052,
+      "protected_leaf_endpoint_count": null,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    }
+  ],
+  "protected_leaf_word_balls": [
+    {
+      "lobes": 2,
+      "buffer": true,
+      "degree": 11,
+      "DT_factors": 5,
+      "protected_new_leaf": true,
+      "all_signed_word_prefixes_through_depth": 1,
+      "word_prefix_count": 9,
+      "distinct_tuples": 7,
+      "protected_leaf_endpoint_count": 9,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 3,
+      "buffer": true,
+      "degree": 15,
+      "DT_factors": 7,
+      "protected_new_leaf": true,
+      "all_signed_word_prefixes_through_depth": 2,
+      "word_prefix_count": 157,
+      "distinct_tuples": 63,
+      "protected_leaf_endpoint_count": 153,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    },
+    {
+      "lobes": 4,
+      "buffer": true,
+      "degree": 19,
+      "DT_factors": 9,
+      "protected_new_leaf": true,
+      "all_signed_word_prefixes_through_depth": 3,
+      "word_prefix_count": 4369,
+      "distinct_tuples": 607,
+      "protected_leaf_endpoint_count": 4218,
+      "every_tested_target_deletion_nonwreath": true,
+      "unexposed_odd_transitive_subgroup_checks": true
+    }
+  ],
+  "negative_controls": {
+    "single_lobe_group_order": 10,
+    "wreath_detector_positive_control": true,
+    "internal_braid_preserves_unexposed_lobe": true
+  },
+  "seconds": 1.62455,
+  "uniform_scope": "Written proof, not bounded tests: every r>=4 has a full A_(2r+1) tuple with symmetric initial deletions and any Wr-leaf word has length>=floor(r/2)-1.",
+  "limitations": [
+    "No obstruction to O(r) or longer algorithms.",
+    "No all-degree Hurwitz orbit distinction.",
+    "No assumption that the wreath locus is reachable in unclassified degrees."
+  ],
+  "formal_verification": false,
+  "external_review": false,
+  "independent_external_replay": false
+}

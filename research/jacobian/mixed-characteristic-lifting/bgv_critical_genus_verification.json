@@ -1,0 +1,65 @@
+{
+  "checker_sha256": "98365dbcca6170b600cb6cc8c7364af92d9410787e3f3caca342eb9f1fd2db4d",
+  "controls": [
+    {
+      "birational_critical_identities": true,
+      "corrupted_identity_rejected": true,
+      "critical_genus": 10,
+      "kummer_degree": 5,
+      "noncontraction_order": 3,
+      "prime": 3,
+      "ramification_index": 2,
+      "source_jacobian_terms": 24,
+      "squarefree_controls": true,
+      "zero_branch_gcd": 1
+    },
+    {
+      "birational_critical_identities": true,
+      "corrupted_identity_rejected": true,
+      "critical_genus": 27,
+      "kummer_degree": 9,
+      "noncontraction_order": 5,
+      "prime": 5,
+      "ramification_index": 2,
+      "source_jacobian_terms": 56,
+      "squarefree_controls": true,
+      "zero_branch_gcd": 3
+    },
+    {
+      "birational_critical_identities": true,
+      "corrupted_identity_rejected": true,
+      "critical_genus": 54,
+      "kummer_degree": 13,
+      "noncontraction_order": 7,
+      "prime": 7,
+      "ramification_index": 2,
+      "source_jacobian_terms": 104,
+      "squarefree_controls": true,
+      "zero_branch_gcd": 1
+    }
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "independent_genus_control": {
+    "command": "Singular -q",
+    "input": "LIB \"normal.lib\";\nring R=0,(u,v),dp;\npoly H=v^4+4*v^3-2*v+1;\nideal I=3*u^5*H-2*v*(v+3);\nprint(\"BGV_GENUS_BEGIN\");\ngenus(I);\nprint(\"BGV_GENUS_END\");\nideal I0=v^2-u^3;\nprint(\"RATIONAL_GENUS_BEGIN\");\ngenus(I0);\nprint(\"RATIONAL_GENUS_END\");\nquit;\n",
+    "normal_lib_sha256": "52c291fd6ac865cf359562773cc91c48a59b8d7715b6d87ba72e6073a8b02ea1",
+    "result": "genus 10 for BGV p=3 and genus 0 for a rational cusp",
+    "stderr": "",
+    "stdout": "BGV_GENUS_BEGIN\n10\nBGV_GENUS_END\nRATIONAL_GENUS_BEGIN\n0\nRATIONAL_GENUS_END\n",
+    "version": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00"
+  },
+  "independent_implementation": false,
+  "input_sha256": {
+    "../../hessian/hc4-triangular-graphs/sources/stacks-0C1B-riemann-hurwitz.html": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+    "BGV_CRITICAL_GENUS_AND_RATIONAL_CORRECTIONS.md": "3433be75746262b52a09a6f78730671eebfeb00e02b6d67a9ec7c9d89da858f0",
+    "bgv_critical_genus_source_ledger.json": "8d3df1d929ee08de372e16c690ce5cd55d2ad4a0fab0cdb883682009b0af07a1",
+    "sources/brosnan-surfaces-elimination-indeterminacy.html": "4bf7ca9ad1f1fea11126c8af66a34b22b48b9487ff0d94e9a755b5e59b1be638",
+    "verify_bgv_odd_prime_lifting.py": "52885c8f4ea0ced814950842751b3827510562d0280aa23a76b3b905a88a464d"
+  },
+  "kind": "internal_exact_replay",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Finite exact identities at p=3,5,7 and a separate Singular genus calculation. The written proof establishes the uniform critical genus and the general rational pre/post-correction obstruction. No independent whole-proof replay, formal verification, external review or JC2 solution."
+}

@@ -52,7 +52,7 @@
     },
     {
       "path": "research/arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md",
-      "sha256": "af9ff4711660ad380e79a3c3e8cf4ed8c244167fc851b0f8d018d6b41fb037ec",
+      "sha256": "559903a88314db1f252b4742abac222bf7997a338a6ffce8dd459b2241e28d82",
       "locator": "Complete square-eta labelled F37 exclusion."
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "path": "research/arithmetic/degree_twenty_six_balanced_local_square_verification.json",
-      "sha256": "a97180edecc922664f6e9dc3e9a5700ea3adf19673ad5f90e1bbcdfe681d3d7f",
+      "sha256": "5ab985af2bb0bf5b7aa4eed842fdfe22f92af6ea1aff9b7f52d2ae76163a722e",
       "locator": "Retained square-case execution record and coefficient bindings."
     },
     {
@@ -112,7 +112,7 @@
     },
     {
       "path": "research/arithmetic/degree_twenty_six_nonsquare_reciprocal_verification.json",
-      "sha256": "5fd701b5738c6c4787d520bf118c2ad3cb99c888c3a6597bde9c5654c5236112",
+      "sha256": "33d479d3c09368ea3fc9098e618102f48174c35d756503c993b6df029b303b4e",
       "locator": "Actual successful default replay of the complete new balanced obstruction."
     },
     {
@@ -332,5 +332,6 @@
     "An unreduced-large-integer msolve prototype was rejected after a parser overflow test and supplies no evidence; every retained primary input literal is at most37.",
     "No nonexistence theorem for general nonreciprocal rational degree26 pencils or complex reciprocal models is claimed.",
     "No novelty or priority claim is made."
-  ]
+  ],
+  "root_critical_review": "Complete written descent, unit/integrality, exhaustiveeta split, allsignclass aggregation and rationalu0normalization audited. Fresh primary replay of36 exact msolve computations and the squarecase census passed. Independent Sage/Singular code/inputs and all18 ordinary outputs inspected; separate agents actually executed and independently reconstructed them. Internal assurance only."
 }

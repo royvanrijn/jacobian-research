@@ -11,7 +11,10 @@ The conclusion concerns this sublocus of the
 [paired critical trace chart](PAIRED_CRITICAL_TRACE_CHART.md). The general
 nonreciprocal locus and a nonconstant secant element remain outside the
 obstructions. For a scalar secant and affine scale rho=r_0+cM, the case
-r_0*c!=0 remains open here.
+r_0*c!=0 remains outside these uniform arguments. In degree twelve,
+the separate [rational affine-scale obstruction](DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md)
+now excludes that case over Q as well. Higher degrees and irrational
+real affine parameters are not covered by that rational result.
 
 ## Statement
 

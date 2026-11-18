@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UMD 808J: Algebraic Surfaces: Elimination of indeterminacy</title>
+<link rel="next" href="sect0036.html" title="Harthsorne Universal Property of blowing up 2" />
+<link rel="prev" href="sect0034.html" title="Some jargon about linear systems" />
+<link rel="up" href="sect0026.html" title="Blowing up and blowing down" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">UMD 808J: Algebraic Surfaces</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Overview</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0002.html"><span class="toc_ref">1.1</span> <span class="toc_entry">Main References</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">Positivity (and intersections)</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0004.html"><span class="toc_ref">2.1</span> <span class="toc_entry">The goal</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">2.2</span> <span class="toc_entry">Ample line bundles</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">2.3</span> <span class="toc_entry">Algebraic cycles</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">2.4</span> <span class="toc_entry">Nakai-Moishezon</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">2.5</span> <span class="toc_entry">The homological nature of intersection degree</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">2.6</span> <span class="toc_entry">Numerical equivalence</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">2.7</span> <span class="toc_entry">Effective cycles and numerically effective divisors</span></a>
+ </li>
+<li class="">
+  <a href="Fpairing.html"><span class="toc_ref">2.8</span> <span class="toc_entry">Rational and real coefficients</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">2.9</span> <span class="toc_entry">Ampleness of \(\mathbb {Q}\)-divisors</span></a>
+ </li>
+<li class="">
+  <a href="sect0012.html"><span class="toc_ref">2.10</span> <span class="toc_entry">Ampleness</span></a>
+ </li>
+<li class="">
+  <a href="sect0013.html"><span class="toc_ref">2.11</span> <span class="toc_entry">Convex cones and ampleness</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">2.12</span> <span class="toc_entry">Ample and nef cones</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">3</span> <span class="toc_entry">Riemann-Roch and Hodge index</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0016.html"><span class="toc_ref">3.1</span> <span class="toc_entry">Adjunction</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">3.2</span> <span class="toc_entry">Riemann-Roch for surfaces</span></a>
+ </li>
+<li class="">
+  <a href="shit.html"><span class="toc_ref">3.3</span> <span class="toc_entry">The Hodge Index Theorem</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">3.4</span> <span class="toc_entry">A tiny bit more intersection theory</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-2">
+     <li class="">
+  <a href="sect0019.html"><span class="toc_ref">3.4.1</span> <span class="toc_entry">Proper push-forward</span></a>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3.4.2</span> <span class="toc_entry">Cycles associated to closed subschemes</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">3.4.3</span> <span class="toc_entry">Flat pull back</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">3.4.4</span> <span class="toc_entry">Localization</span></a>
+ </li>
+<li class="">
+  <a href="sect0023.html"><span class="toc_ref">3.4.5</span> <span class="toc_entry">Pullback for smooth schemes and the projection formula</span></a>
+ </li>
+<li class="">
+  <a href="sect0024.html"><span class="toc_ref">3.4.6</span> <span class="toc_entry">Ring structure for smooth \(X\)</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0025.html"><span class="toc_ref">3.5</span> <span class="toc_entry">Properties of the intersection pairing related to fibers</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active">
+  <a href="sect0026.html"><span class="toc_ref">4</span> <span class="toc_entry">Blowing up and blowing down</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0027.html"><span class="toc_ref">4.1</span> <span class="toc_entry">Blowing up in general</span></a>
+ </li>
+<li class="">
+  <a href="sect0028.html"><span class="toc_ref">4.2</span> <span class="toc_entry">Monoidal transformations on surfaces</span></a>
+ </li>
+<li class="">
+  <a href="sect0029.html"><span class="toc_ref">4.3</span> <span class="toc_entry">Strict transforms and multiplicities</span></a>
+ </li>
+<li class="">
+  <a href="sect0030.html"><span class="toc_ref">4.4</span> <span class="toc_entry">Blowing Down</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-2">
+     <li class="">
+  <a href="sect0031.html"><span class="toc_ref">4.4.1</span> <span class="toc_entry">Nagata’s Example</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0032.html"><span class="toc_ref">4.5</span> <span class="toc_entry">Rational maps, linear systems and indeterminacy</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-2">
+     <li class="">
+  <a href="sect0033.html"><span class="toc_ref">4.5.1</span> <span class="toc_entry">Rational maps</span></a>
+ </li>
+<li class="">
+  <a href="sect0034.html"><span class="toc_ref">4.5.2</span> <span class="toc_entry">Some jargon about linear systems</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active current">
+  <a href="sect0035.html"><span class="toc_ref">4.6</span> <span class="toc_entry">Elimination of indeterminacy</span></a>
+ </li>
+<li class="">
+  <a href="sect0036.html"><span class="toc_ref">4.7</span> <span class="toc_entry">Harthsorne Universal Property of blowing up 2</span></a>
+ </li>
+<li class="">
+  <a href="sect0037.html"><span class="toc_ref">4.8</span> <span class="toc_entry">Beauville Universal Property</span></a>
+ </li>
+<li class="">
+  <a href="sect0038.html"><span class="toc_ref">4.9</span> <span class="toc_entry">Theorem on Formal Functions</span></a>
+ </li>
+<li class="">
+  <a href="sect0039.html"><span class="toc_ref">4.10</span> <span class="toc_entry">Castelnuovo’s Contractibility Criterion</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0040.html"><span class="toc_ref">5</span> <span class="toc_entry">Bibliography</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000036">4.6 Elimination of indeterminacy</h1>
+<p><div class="theorem_thmwrapper theorem-style-plain" id="resindet">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.24</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> Suppose \(\phi :S\dashrightarrow X\) is a rational map to a projective variety \(X\). Then there exists a compostion of a finite number of blowups of points \(\eta :S'\to S\) and a morphism \(f:S'\to X\) such that \(f=\phi \circ \eta \). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000137">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>This is&#160;<span class="cite">
+	[
+	<a href="sect0040.html#Beauville_1996" >1</a>
+	, 
+	Theorem II.7
+	]
+</span>. </p>
+<p>We can assume that \(X=\mathbb {P}^n\) (since \(X\) is projective). And, by changing coordinates, we can assume that \(\phi (S)\) is not contained in any hyperplane. Then \(\phi \) is given by a linear system \(P\subseteq |D|\) with no fixed component, where \(D\in P\) is a divisor on \(X\). Let’s prove the theorem by complete induction on \(D^2\). When \(D^2 {\lt} 0\), there’s nothing to prove. </p>
+<p>If \(P\) has no base locus, then there is also nothing to prove. So assume \(x\in \operatorname{\mathrm{bs}}P\), and let \(\epsilon :S_1\to S\) be the blowup of \(S\) at \(x\). Then we get a linear system \(\epsilon ^* P\subseteq \epsilon ^*\operatorname{\mathrm{H}}^0(S,\mathcal{O}_S(D))\) on \(S_1\). The fixed locus of \(\epsilon ^* P\) is then equal to the exceptional divisor \(E\) of \(\epsilon \) because it is empty outside of \(E\), but all sectionsin \(\epsilon ^* P\) vanish along \(E\) (as \(x\) is in the base locus of \(P\)). Let \(k\) be the minimum of the multiplicities of \(E\) occuring in the divisors \(F\in \epsilon ^* P\). So, necessarily, \(k\geq 1\), and we get a linear system \(P_1 = \epsilon ^* P - kE \subset |\epsilon ^* D|\) by subtracting \(kE\) from every element of \(\epsilon ^* P\). But then we get a rational map \(\phi _1 = \phi \circ \epsilon : S_1\dashrightarrow \mathbb {P}^n\) corresponding to the linear system \(P_1\). Moreover, \(D_1 = \epsilon ^* D - kE\) is an element of \(P_1\) and we have \(D_1^2 = D^2 - k^2 {\lt} D^2\). So, by induction, there exists a composite \(\eta _1:S'\to S_1\) of finitely many monoidal tranformations and a morphism \(f:S'\to X\) such that \(f = \phi _1\circ \eta _1\). So set \(\eta = \epsilon \circ \eta _1\). We get that \(\phi \circ \eta = \phi \circ \epsilon \circ \eta _1 = \phi _1\circ \eta _1 = f\) as desired. </p>
+
+  </div>
+</div>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0034.html" title="Some jargon about linear systems"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0026.html" title="Blowing up and blowing down"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0036.html" title="Harthsorne Universal Property of blowing up 2"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

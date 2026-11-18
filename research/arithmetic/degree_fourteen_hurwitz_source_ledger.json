@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
+  "claims": {
+    "finite_DT_polynomial": "Exactly one absolute full A13 braid orbit on all DT^6 tuples with fixed13cycle product;446265625 absolute states.",
+    "finite_T3_polynomial": "Exactly one absolute marked orbit on T3 DT^5 with fixed13cycle product;89253125 states; every tuple full A13.",
+    "original_passport": "One absolute transitive/full A14 orbit on DT^7,(13,1), by the written uniform folding and attachment imports.",
+    "remaining": "No all-r theorem, no degree16 classification, no rational-coefficient/rational-point/Hurwitz-unirationality conclusion."
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
+      "sha256": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+      "locator": "Theorems1-2; exact character bound and complete queue algorithm",
+      "role": "Finite degree13 polynomial domains and degree14 original Hurwitz orbit."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_fourteen_hurwitz_orbit.py",
+      "sha256": "3ed881ab1b52e015be9d88d82773a4dc3aa08be967770c6f1e4c4cd3c1a806ab",
+      "locator": "character_bound; seed_controls; small_independent_count; DT_CPP/T3_CPP; main",
+      "role": "Exact character inner products/counts and literal complete C++ orbit engines, with smaller controls and explicit replay/collection modes."
+    },
+    {
+      "path": "research/arithmetic/degree_fourteen_hurwitz_census_inputs.json",
+      "sha256": "b6bef8675537bada4c30ff920abf6f36e523d2d186c31a1b8e6d28d65020817a",
+      "locator": "Both actual completed foreground engine executions",
+      "role": "Exact original source/binary hashes, commands, successful exits and observed final counts. This is execution evidence, not a standalone formal connectivity certificate."
+    },
+    {
+      "path": "research/arithmetic/degree_fourteen_hurwitz_verification.json",
+      "sha256": "009545e432aee4cf61c877f26b59b2e53c63d5153a8e5c644e1931dc43c14ced",
+      "locator": "Actual collector execution with all exact Python/smaller C++ controls",
+      "role": "Pins full observed engine results and character upper bounds; explicitly distinguishes retained foreground runs from a new large wrapper run."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
+      "sha256": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+      "locator": "Uniform folding theorem; Corollaries4,5,6",
+      "role": "Exhaustive coalescence/expansion reduction, cross-type link and outside-attachment transitivity."
+    },
+    {
+      "path": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
+      "sha256": "806a421b8e2ff6081623dc4b7f7f628aaf36fcbf1446396e1d55ebb840d13c1e",
+      "locator": "Lemmas1-3; cyclic seed and literal stabilizer",
+      "role": "Full marking-stabilizer subgroup; unmarked-to-marked criterion; full-alternating cyclic seed and branch-label stabilizer."
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "jones-zvonkin-cacti-2002",
+      "authors": [
+        "Gareth A. Jones",
+        "Alexander Zvonkin"
+      ],
+      "title": "Orbits of Braid Groups on Cacti",
+      "journal": "Moscow Mathematical Journal2:1(2002),129-162",
+      "primary_url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "retained_pdf": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "locator": "Definition of rooted/unrooted cacti and centralizer quotient, printedpp129-130;Section3.2Frobenius formula(3),printedpp139-140.",
+      "inspected": true,
+      "role": "Exact primary statement of the finite group class-product formula; the note also proves that formula directly by the regular-representation trace.",
+      "read_limits": "This import supplies no transitivity theorem for our n13 passport. Section1.3GouldenJackson comparison is contextual only."
+    },
+    {
+      "id": "jones-primitive-cycle-2012",
+      "title": "Primitive permutation groups containing a cycle",
+      "retained_pdf": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "locator": "Theorem1.1, prime-cycle case with at least3fixed letters.",
+      "inspected": true,
+      "role": "Jordan prime-cycle conclusion for the two explicitly primitive degree13 seed groups.",
+      "read_limits": "Only the3cycle implication is used; no unverified primitive-DT classification is needed."
+    },
+    {
+      "id": "goulden-jackson-cacti-context",
+      "authors": [
+        "I. P. Goulden",
+        "D. M. Jackson"
+      ],
+      "title": "The combinatorial relationship between trees, cacti and certain connection coefficients for the symmetric group",
+      "journal": "European Journal of Combinatorics13:5(1992),357-365",
+      "doi": "10.1016/S0195-6698(05)80015-0",
+      "primary_pdf_url": "https://www-users.cse.umn.edu/~reiner/Classes/Math8680Fall2014Papers/GouldenJacksonOnCacti.pdf",
+      "retrieved_pdf_sha256": "a43abccf0519d4839d4c012a4990cff66c9ed4636bc459512e84a2825fc78331",
+      "retrieved_pdf_bytes": 473287,
+      "locator": "Theorems3.1-3.2printedpp361-362; final coefficient calculation printedp363.",
+      "inspected": true,
+      "role": "Context/comparison only, not a census-bound proof premise.",
+      "scope": "The printed general-m hypotheses incorrectly read sum cyclecounts=n+1. The m-cactus proof and final proof line use the correct(m-1)n+1. The exact primary typo was visually inspected. Our finite character derivation is independent of its correction."
+    }
+  ],
+  "count_derivation": {
+    "domain": "All101partitionsof13",
+    "actual_characters": "Exterior powers of the standard complex permutation representation with its trivial summand removed.",
+    "irreducibility": "Exact complete cycle-type weighted inner products form the13x13identity matrix; standard finite-group character orthogonality.",
+    "omitted_irreducibles": "The13known squared values at the13cycle sum to centralizer size13, exhausting column orthogonality.",
+    "count_formula": "Elementary central class-sum scalar action and regular-representation trace; exact Fraction arithmetic.",
+    "literal_counts": {
+      "DT6": 5801453125,
+      "T3_DT5_first_marked": 1160290625
+    },
+    "cyclic_quotient": "Free because no nonidentity power of the13cycle preserves the4sheet support of a DT."
+  },
+  "algorithm": {
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "flags": [
+      "-O3",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-UNDEBUG"
+    ],
+    "sources": "Literal C++ bodies embedded byte-for-byte in the Python checker.",
+    "source_sha256": {
+      "DT": "cd0c5b7d5fb6591bfe4b2b5c80c3332054685e0d4cb929f612b4b9bac67d9159",
+      "T3": "caeef1241343ff472fa44814ffe4277d3bd2e35317989945b268a275bae3206a"
+    },
+    "key": "Store normalized first r-1factors; last is forced by product. Exact56/54bitkeys; hash collisions resolved by full equality.",
+    "neighbors": "PositiveQi for DT; positiveQ1squared andQi(i>=2)for markedT3; queue completely exhausted.",
+    "resource": "High-memory cases sequential. DT8GiBtable and4GiBqueuereservation; measured sample RSS10502376KiB (not peak). T3 measured peak2812372KiB.",
+    "actual_large_runs": "Original foreground exec sessions81329and45144bothcompleted with exit0; no detached job and no restart.",
+    "wrapper_scope": "Actual collector invocation reran exact character arithmetic/seed checks/smaller engines and bound the original full-run source/executable hashes. It explicitly did not claim a second large census.",
+    "default_replay": "python verify_degree_fourteen_hurwitz_orbit.py --write-receipt PATH reruns both large engines sequentially; --quick does not certify n14."
+  },
+  "assurance": {
+    "exact_internal_census": "Both complete n13engines PASS, with independent exact total-bound calculation.",
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        "root agent",
+        "separate knots agent"
+      ],
+      "scope": "Root independently inspected the full written proof, finite character count formulas and C++ state logic. The separate agent inspected the complete character/packing/canonicalization/hash/generator/seed/folding arguments and executed the default checker against frozen bytes, including both full n13 domains sequentially. No correction requested.",
+      "separate_full_internal_replay": {
+        "path": ".scratch/independent_degree_fourteen_hurwitz_replay.json",
+        "sha256": "06215f89ca0108687b9da5ebe6603d314c4fc15c47f98e5614f3804cf40d41ba",
+        "result": "PASS",
+        "DT_absolute_orbit": 446265625,
+        "T3_absolute_orbit": 89253125,
+        "DT_BFS_seconds": 343.089,
+        "T3_BFS_seconds": 44.8594,
+        "mathematical_static_comparison": ".scratch/independent_degree14_replay_comparison.json",
+        "comparison_scope": "All mathematical fields, character rows, seeds, embedded C++ hashes, checker hash and imported source hashes agree with the retained collector receipt. Timing, path and execution-mode fields differ as expected.",
+        "additional_independent_encoding_control": {
+          "path": ".scratch/independent_degree14_encoding_audit.json",
+          "sha256": "836ea29db2c90f5f172b2d2a62bf87fcc1c205293cc922820275b933e445fff4",
+          "scope": "All392 degree7 DT triples canonicalize to56 absolute classes with exact last-factor reconstruction. A complete162-case degree9 control exercises first-3-cycle rotation ties and marked neighbors, with a negative witness to single-shift normalization."
+        }
+      },
+      "limits": "This is separate internal AI-assisted audit and replay, not external human review, independent external replay or formal verification."
+    },
+    "independent_external_replay": false,
+    "formal_verification": false,
+    "external_human_review": false,
+    "priority_assessment": "Not performed."
+  }
+}

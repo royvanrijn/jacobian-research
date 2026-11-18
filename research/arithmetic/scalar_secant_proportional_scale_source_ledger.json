@@ -26,7 +26,7 @@
     },
     {
       "path": "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md",
-      "sha256": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+      "sha256": "4e679a083cf13da29014ab87bde631b2e2204c8253ffd45ed5fc71bfd07a6030",
       "locator": "Complete written theorem and proof",
       "role": "Uniform real proportional-scale obstruction and complex constant-scale obstruction, with original theorem preserved."
     },
@@ -38,7 +38,7 @@
     },
     {
       "path": "research/arithmetic/scalar_secant_proportional_scale_verification.json",
-      "sha256": "a30463080f6f2096639e3b2e2a011a670da98402521eae14e4f9e39443358845",
+      "sha256": "3ab04e2b2202275e49a43afc500aa676e4f6dd2d7369d585722004674162486b",
       "locator": "All controls and witness coefficients",
       "role": "Actual exact internal checker execution; finite controls do not replace the all-h proof."
     }
@@ -66,9 +66,10 @@
       ],
       "limits": "Internal agent reviews only; no external or formal assurance upgrade.",
       "revision_note": "Original theorem/proof preserved. Added Proposition2 and updated checker received a second completed internal critical review and separate exact replay.",
-      "reviewed_note_sha256": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+      "reviewed_note_sha256": "4e679a083cf13da29014ab87bde631b2e2204c8253ffd45ed5fc71bfd07a6030",
       "reviewed_checker_sha256": "9a5b5dffa862e6e63c0b0a2f4aaabea1016d917db8a94fb8f333928b21b8a280",
-      "reviewed_receipt_sha256": "a30463080f6f2096639e3b2e2a011a670da98402521eae14e4f9e39443358845"
+      "reviewed_receipt_sha256": "3ab04e2b2202275e49a43afc500aa676e4f6dd2d7369d585722004674162486b",
+      "current_context_review": "Root updated only contextual crosslinks to the new rationaldegree12 theorem and reran the unchanged endpoint checker; all mathematical statements/proofs and code remain unchanged."
     },
     "priority_assessment": "Not performed."
   }

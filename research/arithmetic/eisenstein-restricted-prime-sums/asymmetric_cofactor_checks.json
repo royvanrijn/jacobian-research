@@ -1,0 +1,20 @@
+{
+  "scope": "Finite exact local compensation, block-sign and fibre diagnostics only; no uniform analytic estimate or unrestricted count certified",
+  "local_compensation_cases": 376,
+  "block_sign_cases": 1331,
+  "negative_control_product_of_lower_polynomials": 1,
+  "bernoulli_lower_model_at_least_half": true,
+  "fibre_cases": 5104,
+  "high_target_13_squared_common_d_cases": 5,
+  "source_hashes": {
+    "research/arithmetic/ASYMMETRIC_SEMIGROUP_SCALE.md": "0543dba3878558cc47cae197a25d6371ba6b7d2110183b6f2de738d06b58cccb",
+    "research/arithmetic/ASYMMETRIC_UNIFORM_COEFFICIENTS.md": "28fa55f597a0f485cdfe943c67a6910dc3b109daae9730ec7bd9e34f82a6f0f5",
+    "research/arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md": "c7564c9069656eafcaf4ff417042dee3b3c354f76cca03e854afba1a5a085f62"
+  },
+  "checker": {
+    "path": "research/arithmetic/eisenstein-restricted-prime-sums/verify_asymmetric_cofactors.py",
+    "sha256": "6be9d156181846e8b3e577b1c0a20ab1b3ed742890db18b9e4061767da467370",
+    "python": "3.12.3"
+  },
+  "result": "PASS"
+}

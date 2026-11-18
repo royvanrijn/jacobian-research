@@ -20,7 +20,23 @@ The separate [asymmetric pointwise theorem](ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.
 now gives a power-error weighted asymptotic for every sufficiently large
 \(N\equiv2\pmod6\), with one summand in \(C_{12}\) and the other
 in \(A_3\). Its target-dependent main term is explicit and positive.
-It proves no every-target \(C_{12}+C_{12}\) statement.
+Its [uniform coefficient extension and cofactor argument](ASYMMETRIC_SEMIGROUP_SCALE.md)
+now prove the unweighted order \(N J_E(N)/(\log N)^{5/4}\) on every
+sufficiently large compatible target. It proves no every-target
+\(C_{12}+C_{12}\) statement.
+
+The [fixed-modulus theory](ASYMMETRIC_FIXED_MODULUS_THEORY.md) now gives an
+asymmetric theorem for every fixed \(q\ge3\). Put
+\(L=\operatorname{lcm}(2,q)\), choose a nonprincipal quadratic character
+\(\chi\bmod L\), and let \(A_\chi\) contain the positive integers whose
+prime factors satisfy \(\chi(p)=1\). On every sufficiently large
+\(N\equiv2\pmod L\), the unweighted \(C_q+A_\chi\) count has order
+\(N J_\chi(N)/(\log N)^{3/2-1/\varphi(q)}\), with the explicit positive
+target factor in that proof. A separate clause reaches the full
+\(C_q+C_q\) logarithmic scale while allowing only boundedly many excluded
+prime factors in the second summand, all above some fixed power of \(N\).
+Removing those remaining factors is still necessary for full two-sided
+coverage when \(\varphi(q)>2\).
 
 ## The central binary conjecture
 
@@ -619,10 +635,27 @@ neither the shrinking window nor the count in FBS-U.
 sufficiently large \(N\equiv2\pmod6\). The positive main term retains
 a decreasing target factor at primes \(7\bmod12\). It gives many
 unweighted one-sided pairs, with no balance or explicit cutoff claimed.
-The expected unweighted logarithmic scale still requires a uniform
-coefficient and cofactor argument. The two-character second weight
-produces square-root progression moduli; replacing it by a second
-modulus-12 weight does not fit that proof. The main target remains S12U:
+[AsymSemigroupScale](ASYMMETRIC_SEMIGROUP_SCALE.md) now supplies matching
+counts of order \(N J_E(N)/(\log N)^{5/4}\), through a separately proved
+small-coefficient family and a positive cofactor construction.
+The two-character second weight produces square-root progression moduli;
+replacing it by a second modulus-12 weight does not fit that proof.
+The [semilinear criterion](ASYMMETRIC_SEMILINEAR_SIEVE.md) instead isolates
+a sufficient signed sieve remainder with level \(N^{1/2+\sigma}\),
+\(\sigma>0\). Its local model, parity reduction and small-kernel tail are
+proved; cancellation in its large-coefficient region is open.
+The [critical switching theorem](ASYMMETRIC_CRITICAL_SWITCHING.md) improves
+the sufficient distribution level to \(N^{1/2}(\log N)^{-B}\): stopping
+below \(\sqrt N\) leaves only two large forbidden factors, whose total
+weight is \(O(\epsilon^{3/2}X_N\mathcal V_N(z))\) for
+\(z=N^{1/2-\epsilon}\). This bound is unconditional and uniform in the
+target; its critical-level distribution hypothesis remains open.
+The [full auxiliary average](ASYMMETRIC_AUXILIARY_AVERAGE.md) now proves a
+weighted absolute correlation estimate through \(c\le N^\xi\), with
+\(\xi\) chosen before its smaller error saving. The exact kernel identity
+gives an \(L^1\) sieve level \(D=N^{\xi-\delta}\) for every fixed
+\(0<\delta<\xi\). This controls a larger part of the critical remainder;
+the square-root level is still open. The main target remains S12U:
 every sufficiently large \(N\equiv2\pmod{12}\) is a sum of two members of
 \(C_{12}\), without a balance restriction. Seek a pointwise lower bound for
 \[
@@ -760,7 +793,10 @@ here concern the stated clean congruence family.
 | Eisenstein power windows | EisPower gives every fixed \(\theta>2/3\), explicit onsets and many coordinate witnesses in both families; \(H=n^{3/4}\) holds above \(2^{2^{40}}\) |
 | Every-target Eisenstein counts | EisSemigroupScale proves the order \(H J(n)/\log n\) for \(q=3,2/3<\theta<1\), also for fixed central widths and unrestricted pairs |
 | Location-sensitive Eisenstein counts | EisLocationWindows proves the same order when \(H^3\ge n^{1+\varepsilon}\min(x,n-x)\) and \(H\le\min(x,n-x)\); a designated summand may have scale \(n^\theta\) for \(\theta>1/2\) |
-| Highest-priority arithmetic target | Prove S12U by resolving the global lower bound and fixed-prime distribution inputs |
+| General asymmetric counts | Every fixed \(q\) and chosen quadratic \(\chi\) have the pointwise \(C_q+A_\chi\) order \(N J_\chi/(\log N)^{3/2-1/\varphi(q)}\) on \(N\equiv2\pmod L\) |
+| Bounded excluded prime factors | Every-target counts at \(N J_q/(\log N)^{2-2/\varphi(q)}\), with the first summand in \(C_q\) and only boundedly many large excluded prime factors in the second |
+| Asymmetric distribution level | A full auxiliary-modulus average proves an \(L^1\) level at every fixed exponent below \(\xi\); the critical square-root level remains open |
+| Highest-priority arithmetic target | Prove S12U through the critical sieve remainder or the global norm lower bound and fixed-prime marginals |
 | Power-window full-count variance | VqPower proves (E) and quantitative centered variance for every fixed \(q\), \(9/10<\theta<1\); lower exponents and power-saving full variance remain open |
 | Power-saving lower-count exceptions | D12Power gives \(H/(\log X)^{3/2}\) pairs outside \(O(X^{1-10^{-6}})\) targets for \(q=12,H=X^{99/100}\) |
 | Weighted simultaneous-norm correlations | SimNormPower gives exact raw and fully sifted main terms and actual bad-prime marginals outside a power exceptional set, including fixed balance intervals and all target valuations |

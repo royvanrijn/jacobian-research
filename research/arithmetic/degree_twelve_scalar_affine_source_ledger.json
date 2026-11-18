@@ -12,7 +12,8 @@
       "Nonconstant a or general quadratic rho in the degree12 paired-value algebra remain outside this theorem.",
       "No new rational degree26 construction or obstruction for its unrestricted nonreciprocal chart.",
       "No novelty or priority claim."
-    ]
+    ],
+    "root_set_certificate": "Exact factor-product identities and19 projective root-free finite-field witnesses at primes<=41 cover every circuit denominator and triangular delta; no rational-factorization or irreducibility oracle in replay."
   },
   "proof_imports": [
     {
@@ -23,19 +24,19 @@
     },
     {
       "path": "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md",
-      "sha256": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+      "sha256": "4e679a083cf13da29014ab87bde631b2e2204c8253ffd45ed5fc71bfd07a6030",
       "locator": "Theorem and Proposition2",
       "role": "Uniform endpoint exclusions r0=0 overR and c=0 overC."
     },
     {
       "path": "research/arithmetic/DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md",
-      "sha256": "0171cceb84ee1b2c261d71041252a05a5f2272511e2e685773e6b9426a9a0ed2",
+      "sha256": "a189da8a76fe6469884127bd1350ee249865873561b3ccdb2e34dd2534d3e7fe",
       "locator": "Complete proof",
       "role": "Uniform rational normalization and square/Hermite reduction; complete rational degree12 affine-slice exclusion."
     },
     {
       "path": "research/arithmetic/verify_degree_twelve_scalar_affine_obstruction.py",
-      "sha256": "2127862c1c0690b3cd882a869ea1ee96ac9466a6ae2b164cfa88978ab7607b28",
+      "sha256": "152e7133e7016e6591dec85402af0b6ba48a2ae28a21f27ef1edf69c43e1ff1d",
       "locator": "generic_system, exceptional_system and replay",
       "role": "Rederives necessary systems and verifies five arithmetic circuits without a Groebner call."
     },
@@ -53,9 +54,15 @@
     },
     {
       "path": "research/arithmetic/degree_twelve_scalar_affine_verification.json",
-      "sha256": "d6093207cd581c78c802e659dfe3eef6c4c5f14166c3b55b456d1083375d1ef9",
+      "sha256": "f74835c2c4d68eb1fdeee5fb2d3dbd287a70bf9664ae4568f09d6f47b35a492b",
       "locator": "Actual complete replay and source hashes",
       "role": "Recorded exact checker execution."
+    },
+    {
+      "path": "research/arithmetic/degree12_scalar_affine_denominator_certificates.json",
+      "sha256": "2ca7048bc9ccd8a43ec69cca04ca65f4610c3708ae226a3cd3cfea2f8c78250b",
+      "locator": "All60 product identities and19 nonlinear prime witnesses",
+      "role": "Pure arithmetic proof of the complete rational exceptional-parameter list, including arbitrary rational denominators."
     }
   ],
   "external_sources": [],
@@ -67,12 +74,25 @@
     "independent_replay": false,
     "external_review": false,
     "internal_critical_audit": {
-      "result": "PENDING",
-      "pending": [
-        "/root",
-        "/root/moonshot_hurwitz"
+      "result": "PASS",
+      "reviewers": [
+        {
+          "reviewer": "/root",
+          "result": "PASS",
+          "scope": "Independent derivation of the exact rational normalization, C'=-1/(2M), T'=1/2, and D(-1/c)=2P(0); proposed pure-arithmetic root-set certificate method. Full new arithmetic replay not yet reported."
+        },
+        {
+          "reviewer": "/root/moonshot_hasse",
+          "result": "PASS",
+          "scope": "Completed independent critical audit of normalization/converse and scalar descent, critical jets without projection-derivative division, D=kappa*q^2 and its nonvanishing, generic necessary equations and saturation, all four direct exceptional ideals and unit products, all endpoint coverage, every arithmetic-circuit membership operation, all60 exact factor products and19 projective prime witnesses including arbitrary rational denominators. Full final checker replay .scratch/independent_degree12_scalar_affine_replay.json exactly matches retained receipt; all7 receipt pins and8 ledger pins match."
+        }
       ],
-      "limits": "Internal agent review requested; no completed review recorded yet."
+      "limits": "Internal agent review only; no external or formal assurance upgrade.",
+      "reviewed_note_sha256": "a189da8a76fe6469884127bd1350ee249865873561b3ccdb2e34dd2534d3e7fe",
+      "reviewed_checker_sha256": "152e7133e7016e6591dec85402af0b6ba48a2ae28a21f27ef1edf69c43e1ff1d",
+      "reviewed_receipt_sha256": "f74835c2c4d68eb1fdeee5fb2d3dbd287a70bf9664ae4568f09d6f47b35a492b",
+      "reviewed_arithmetic_certificate_sha256": "2750d9c57b29b44751f88809b6e94a0a7b52d54c157d74a6fa381378a515cecb",
+      "reviewed_denominator_certificate_sha256": "2ca7048bc9ccd8a43ec69cca04ca65f4610c3708ae226a3cd3cfea2f8c78250b"
     },
     "priority_assessment": "Not performed."
   }

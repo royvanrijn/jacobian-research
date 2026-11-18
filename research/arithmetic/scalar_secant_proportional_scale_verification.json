@@ -230,7 +230,7 @@
   ],
   "input_sha256": {
     "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
-    "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md": "06c1a31e43f2e6a2c9e56d737a575954b1908ec82f9ea3d94b5a435e97cd3131",
+    "research/arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md": "4e679a083cf13da29014ab87bde631b2e2204c8253ffd45ed5fc71bfd07a6030",
     "research/arithmetic/verify_scalar_secant_proportional_scale.py": "9a5b5dffa862e6e63c0b0a2f4aaabea1016d917db8a94fb8f333928b21b8a280"
   },
   "result": "PASS",

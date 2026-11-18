@@ -35,6 +35,10 @@ Consequently no all-real rational degree-twelve model lies in this
 slice. The theorem does not exclude a nonconstant a or a general
 quadratic rho in the three-dimensional paired-value algebra.
 
+Dividing a numerator by its nonzero leading coefficient scales a and M,
+and preserves the affine form of rho. Thus the monic normalization
+does not cost a rational extension.
+
 The statement uses the coefficient field's scalars. If the canonical
 elements of a rational good model become scalar/affine after extension
 to C, their coefficients in (1) are already rational: the canonical
@@ -239,11 +243,29 @@ coefficients have rational zeros only in
                        \mathcal E=\{0,-1/4,-1/3,-1/2,-1\}.   \tag{15}
 \]
 
-The checker verifies this by exact rational factorization, including
-multiplicities. For rational c outside E, every circuit coefficient
-specializes, as do the triangular equations; its final identity is
-still 1. Thus there is no solution there. This specialization argument
-has no p-adic-integrality or good-reduction premise.
+This root-set assertion has its own
+[pure arithmetic certificate](degree12_scalar_affine_denominator_certificates.json).
+For every circuit denominator and every triangular coefficient (12),
+the checker multiplies the supplied factors and verifies the exact
+polynomial product, including multiplicities. Linear factors give
+precisely the rational exceptions in (15). Each of the nineteen
+remaining nonlinear factors has a prime p<=41 such that its integer
+leading coefficient is nonzero modulo p and its value at every point
+of F_p is nonzero. All these finite evaluations are replayed.
+
+Here is the elementary denominator argument. If a primitive integer
+polynomial f has these two properties and a/b is a rational root in
+lowest terms, then p cannot divide b: after multiplying by b^deg(f),
+the leading term would be nonzero modulo p and all other terms zero.
+When p does not divide b, reduction gives a forbidden root in F_p.
+Thus f has no rational root, with arbitrary rational denominators
+covered. The factor-product and finite-evaluation verification uses no
+factorization algorithm or irreducibility claim.
+
+For rational c outside E, every circuit coefficient specializes, as do
+the triangular equations; its final identity is still 1. Thus there
+is no solution there. This specialization argument has no p-adic
+integrality or good-reduction premise.
 
 At each of c=-1/4,-1/3,-1/2,-1 use the direct trace chart instead of
 triangular inversion. Put
@@ -300,7 +322,8 @@ Run
 
 The [checker](verify_degree_twelve_scalar_affine_obstruction.py) rederives
 the trace basis, triangular inverse and five generic equations, checks
-the rational exceptional parameters, reconstructs the four direct
+the rational exceptional parameters by exact factor products and
+projective root-free prime witnesses, reconstructs the four direct
 systems, and replays every arithmetic circuit. The
 [receipt](degree_twelve_scalar_affine_verification.json) records the
 actual result and source hashes; the

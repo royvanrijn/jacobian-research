@@ -790,12 +790,19 @@ both sides. No such pointwise estimate is proved here. The every-target
 \(C+C\) theorem, its raw simultaneous-norm lower bound, and its
 pointwise bad-prime marginal estimates remain open.
 
-There is no balance restriction in (1). A uniform shifted-coefficient
-interface for a later roughness/cofactor argument is not asserted.
-Removing the divisor weights at the expected \((\log N)^{5/4}\) scale
-would need additional work. The unweighted conclusion proved here is
-the elementary \(N^{1-\varepsilon}\) corollary. No novelty, effective
-cutoff, or finite computational completion is claimed.
+There is no balance restriction in (1). The separate
+[uniform small-coefficient theorem](ASYMMETRIC_UNIFORM_COEFFICIENTS.md)
+now extends the estimate to shifted weights and divisibility tests.
+The [cofactor theorem AsymSemigroupScale](ASYMMETRIC_SEMIGROUP_SCALE.md)
+uses that extension to prove matching unweighted counts of order
+\(N J_E(N)/(\log N)^{5/4}\) on every sufficiently large compatible target.
+The elementary \(N^{1-\varepsilon}\) corollary above remains valid.
+No novelty, effective cutoff, or finite computational completion is claimed.
+
+A separate [half-dimensional sieve criterion](ASYMMETRIC_SEMILINEAR_SIEVE.md)
+reduces the two-sided \(C+C\) problem to one signed mixed dispersion
+estimate. Its exact local identities and finite-kernel tail are proved;
+the required estimate beyond the square-root level remains open.
 
 Independent internal arithmetic and analytic campaigns reviewed this
 proof on 18 November 2026. The arithmetic review reconstructed the

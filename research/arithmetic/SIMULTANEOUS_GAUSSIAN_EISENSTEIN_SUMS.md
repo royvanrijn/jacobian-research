@@ -26,8 +26,20 @@ now proves a power-error asymptotic for
 \(\sum_{a+b=N}\tau(a)^2\mathbf1_{C_{12}}(a)\tau(b)\mathbf1_{A_3}(b)\)
 on every sufficiently large \(N\equiv2\pmod6\). Its explicit positive
 singular series gives eventual \(C_{12}+A_3\) coverage and many distinct
-pairs. The second weight has a two-character expansion, so its proof does
+pairs. The [uniform coefficient and cofactor theorem](ASYMMETRIC_SEMIGROUP_SCALE.md)
+now gives matching unweighted counts of order
+\(N J_E(N)/(\log N)^{5/4}\) on every sufficiently large such target.
+The second weight has a two-character expansion, so its proof does
 not supply the four-character versus four-character correlation needed here.
+The [general fixed-modulus theory](ASYMMETRIC_FIXED_MODULUS_THEORY.md)
+also gives every sufficiently large \(N\equiv2\pmod{12}\)
+\(\gg N J_{12}(N)/(\log N)^{3/2}\) pairs with \(a\in C_{12}\),
+\(b\in A_3\), and every prime \(7\bmod12\) dividing \(b\) exceeding
+\(N^\gamma\), for some sufficiently small fixed \(\gamma>0\).
+Here \(J_{12}(N)\) is the product of \((p-1)/(p-2)\) over target
+primes \(p\ge5\) outside \(1\bmod12\). There are fewer than
+\(1/\gamma\) such excluded factors, with multiplicity.
+This does not remove them or provide the raw simultaneous-norm lower bound.
 The two-sided targets S12U and S12, and their priority audit, remain open.
 
 The general theorem FBS1 gives, for every fixed \(0<\theta<1\), at least
@@ -872,6 +884,18 @@ shrinking-window quantitative estimates or the inputs for arbitrary moduli.
   from this earlier asymptotic theorem.
 
 The immediate mathematical task is unrestricted pointwise counting for S12U.
+The separate [half-dimensional criterion](ASYMMETRIC_SEMILINEAR_SIEVE.md)
+gives another sufficient route: control one signed remainder beyond level
+\(N^{1/2}\) for the positive asymmetric sequence. Its local density,
+parity reduction and exact kernel compression are established, with
+sifted model mass \(\gg N/\sqrt{\log N}\). The required global
+remainder bound is open.
+A further [critical switching bound](ASYMMETRIC_CRITICAL_SWITCHING.md)
+now reduces the sufficient distribution obligation to square-root level
+up to logarithms. Its upper bound for the remaining two-large-prime mass
+holds on every admissible target, including arbitrary good target factors.
+The critical distribution estimate, and hence the two-sided conclusion,
+remain open.
 The balanced inputs (H1)--(H2), or the naturally normalized fixed-prime
 interface (H*), remain sufficient routes to S12. None has been established
 on every target. SimNormPower establishes both global inputs outside a

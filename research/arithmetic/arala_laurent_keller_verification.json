@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "76dc61954f894b235dfbd9bea25781733e6f4ca1e4ede803ac40f32571a616af",
+  "source_sha256": {
+    "research/arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md": "8b3e96684255086511f4a2d8ab910c12447d6d09a43822571382da1e0ba25737",
+    "research/jacobian/monodromy-theory/FIXED_KELLER_MAP_ALTERNATING_FAMILY.md": "e3154316cec111f4a7519261036268b013e58dfa6d26fcb3a19b1f801ec3e8e3",
+    "research/arithmetic/sources/arala-lines-2205.01502v1.pdf": "11d58f49bb3a1b8f4cc612f1dd93be7e0acc6fe774427149ca662dadb4341128",
+    "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+    "research/arithmetic/ALTERNATING_SUBGROUP_COVERS_AND_HASSE.md": "b7a267d449bfb8fbf801a222363705b7603ebc8b9073773512b57ecae2fa5e0f",
+    "research/jacobian/monodromy-theory/FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md": "4702f599d59c643847c712be87882babc1d5bfd8ff8623d8d1e293fcf7656dab",
+    "research/arithmetic/sources/conrad-inertia-groups-fibers-1999.pdf": "c3417e7e4a89cd4b8bf17f13a7bf43d82c51117f4d7b0cbdf7ce30056b3742c7",
+    "research/arithmetic/sources/zywina-quantitative-hit-2010.pdf": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
+    "research/arithmetic/sources/lenstra-chebotarev-density-notes.pdf": "695466dfe7053b18957adf0e17207bc6829cccf9b51c320fe93f93e3dbc9cd94"
+  },
+  "controls": [
+    {
+      "degree": 6,
+      "pole_shift": "8/3",
+      "low_coefficients": {
+        "a": "-327680/729",
+        "A": "-57344/81",
+        "c2": "-10240/27",
+        "c3": "-1280/27"
+      },
+      "critical_source_multiplicities": [
+        4,
+        2
+      ],
+      "finite_inertia_cycle_types": [
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "finite_branch_value_count": 2,
+      "paired_simple_condition": false,
+      "full_discriminant_recomputed": true,
+      "literal_square": false,
+      "compiler_degree_bound": 66,
+      "compiler_identity_all_coefficients": true
+    },
+    {
+      "degree": 8,
+      "pole_shift": "9/2",
+      "low_coefficients": {
+        "a": "-33480783/256",
+        "A": "-2657205/16",
+        "c2": "-1240029/16",
+        "c3": "-45927/4"
+      },
+      "critical_source_multiplicities": [
+        6,
+        2
+      ],
+      "finite_inertia_cycle_types": [
+        [
+          7,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "finite_branch_value_count": 2,
+      "paired_simple_condition": false,
+      "full_discriminant_recomputed": true,
+      "literal_square": false,
+      "compiler_degree_bound": 106,
+      "compiler_identity_all_coefficients": true
+    },
+    {
+      "degree": 10,
+      "pole_shift": "32/5",
+      "low_coefficients": {
+        "a": "-633318697598976/9765625",
+        "A": "-28587302322176/390625",
+        "c2": "-2473901162496/78125",
+        "c3": "-77309411328/15625"
+      },
+      "critical_source_multiplicities": [
+        8,
+        2
+      ],
+      "finite_inertia_cycle_types": [
+        [
+          9,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "finite_branch_value_count": 2,
+      "paired_simple_condition": false,
+      "full_discriminant_recomputed": true,
+      "literal_square": true,
+      "compiler_degree_bound": 146,
+      "compiler_identity_all_coefficients": true
+    },
+    {
+      "degree": 26,
+      "pole_shift": "288/13",
+      "low_coefficients": {
+        "a": "-1526800165372264672114679369228417092276290234897980507711078400/91733330193268616658399616009",
+        "A": "-7846056405385249009478213425201587835308713707114622053515264/542800770374370512771595361",
+        "c2": "-220891227629089217609183936520314972840898471484082828083200/41753905413413116367045797",
+        "c3": "-2812272573981459946413221414031787848668846280468647116800/3211838877954855105157369"
+      },
+      "critical_source_multiplicities": [
+        24,
+        2
+      ],
+      "finite_inertia_cycle_types": [
+        [
+          25,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "finite_branch_value_count": 2,
+      "paired_simple_condition": false,
+      "full_discriminant_recomputed": true,
+      "literal_square": true,
+      "compiler_degree_bound": 466,
+      "compiler_identity_all_coefficients": true
+    },
+    {
+      "degree": 50,
+      "pole_shift": "1152/25",
+      "low_coefficients": {
+        "a": "-100553583151131695086792844067924432817399847453680814406226850709438705895095401063540847542822415233657735497891186691371442610714839945663960240357376/7888609052210118054117285652827862296732064351090230047702789306640625",
+        "A": "-130038470274103843206772208350313272315585828800288751623698981395072022575502485077212334726226550312801422394877703877375908988488224844697227493376/12621774483536188886587657044524579674771302961744368076324462890625",
+        "c2": "-1818460343444945295985113644168193591171148861647873524418164979554374744919983381502113128306250275492942265225173370431341193046781683045138169856/504870979341447555463506281780983186990852118469774723052978515625",
+        "c3": "-12102021961583837328604633627276751330132067076938973108107000731988026369548500513468924175649235051023631973431419999977097060207169765636046848/20194839173657902218540251271239327479634084738790988922119140625"
+      },
+      "critical_source_multiplicities": [
+        48,
+        2
+      ],
+      "finite_inertia_cycle_types": [
+        [
+          49,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "finite_branch_value_count": 2,
+      "paired_simple_condition": false,
+      "full_discriminant_recomputed": false,
+      "literal_square": true,
+      "compiler_degree_bound": 946,
+      "compiler_identity_all_coefficients": true
+    }
+  ],
+  "collision_controls": {
+    "degree": 6,
+    "DT_count": 45,
+    "ordered_pairs": 2025,
+    "pure_3_cycle_products": 360,
+    "each_pure_3_cycle_product_has_strict_index_loss": true,
+    "scope": "Finite controls only; the uniform argument is written."
+  },
+  "hasse_controls": [
+    {
+      "degree": 10,
+      "half": 5,
+      "odd_subset_sizes": [
+        1,
+        3
+      ],
+      "rank": 256,
+      "even_cycle_types_checked": 22,
+      "types_requiring_half_partition_class": 4,
+      "all_nontrivial_long_cycle_powers_fix_exactly_one_letter": true,
+      "integer_Hensel_anchor_and_derivative": true
+    },
+    {
+      "degree": 26,
+      "half": 13,
+      "odd_subset_sizes": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "rank": 16777216,
+      "even_cycle_types_checked": 1224,
+      "types_requiring_half_partition_class": 50,
+      "all_nontrivial_long_cycle_powers_fix_exactly_one_letter": true,
+      "integer_Hensel_anchor_and_derivative": true
+    }
+  ],
+  "scope": "The note proves the uniform formula, regular alternating group, fixed A3 full-fibre transfer, rank-2^(n-2) Hasse families in one fixed A4 map, and coalescence obstruction. Exact finite controls do not prove uniformity. No paired-simple degree26 model is claimed.",
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_human_review": false
+}

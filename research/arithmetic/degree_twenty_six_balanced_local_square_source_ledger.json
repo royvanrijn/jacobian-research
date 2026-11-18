@@ -23,7 +23,7 @@
     },
     {
       "path": "research/arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md",
-      "sha256": "af9ff4711660ad380e79a3c3e8cf4ed8c244167fc851b0f8d018d6b41fb037ec",
+      "sha256": "559903a88314db1f252b4742abac222bf7997a338a6ffce8dd459b2241e28d82",
       "locator": "Whole labelled strong Q37 closure exclusion and correct global/local quadratic descent."
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "path": "research/arithmetic/degree_twenty_six_balanced_local_square_verification.json",
-      "sha256": "a97180edecc922664f6e9dc3e9a5700ea3adf19673ad5f90e1bbcdfe681d3d7f",
+      "sha256": "5ab985af2bb0bf5b7aa4eed842fdfe22f92af6ea1aff9b7f52d2ae76163a722e",
       "locator": "Actual successful default replay, exact strong polynomials, control vectors, candidate domains and empty final point sets."
     }
   ],

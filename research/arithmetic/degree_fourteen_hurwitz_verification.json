@@ -1,0 +1,876 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "full_degree14_census": true,
+  "python": "3.12.3",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "compile_flags": [
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-UNDEBUG"
+  ],
+  "CXX_sources_sha256": {
+    "DT": "cd0c5b7d5fb6591bfe4b2b5c80c3332054685e0d4cb929f612b4b9bac67d9159",
+    "T3": "caeef1241343ff472fa44814ffe4277d3bd2e35317989945b268a275bae3206a"
+  },
+  "checker_sha256": "3ed881ab1b52e015be9d88d82773a4dc3aa08be967770c6f1e4c4cd3c1a806ab",
+  "source_sha256": {
+    "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+    "research/arithmetic/verify_degree_fourteen_hurwitz_orbit.py": "3ed881ab1b52e015be9d88d82773a4dc3aa08be967770c6f1e4c4cd3c1a806ab",
+    "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+    "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md": "806a421b8e2ff6081623dc4b7f7f628aaf36fcbf1446396e1d55ebb840d13c1e",
+    "research/arithmetic/degree_fourteen_hurwitz_census_inputs.json": "b6bef8675537bada4c30ff920abf6f36e523d2d186c31a1b8e6d28d65020817a",
+    "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+    "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57"
+  },
+  "character_bounds": [
+    {
+      "polynomial_degree": 7,
+      "r": 3,
+      "cycle_types": 15,
+      "exterior_inner_product_identity": true,
+      "cycle_column_exhausted": true,
+      "dimensions": [
+        1,
+        6,
+        15,
+        20,
+        15,
+        6,
+        1
+      ],
+      "DT_characters": [
+        1,
+        2,
+        -1,
+        -4,
+        -1,
+        2,
+        1
+      ],
+      "T3_characters": [
+        1,
+        3,
+        3,
+        2,
+        3,
+        3,
+        1
+      ],
+      "cycle_type_character_table_sha256": "b5261691c4c8f648f97a9a6e9f6e38a8a883498bf5b2455f911e26ce50c2cb18",
+      "literal_DT_count": 392,
+      "literal_marked_T3_count": 196,
+      "absolute_DT_count": 56,
+      "absolute_marked_T3_count": 28
+    },
+    {
+      "polynomial_degree": 9,
+      "r": 4,
+      "cycle_types": 30,
+      "exterior_inner_product_identity": true,
+      "cycle_column_exhausted": true,
+      "dimensions": [
+        1,
+        8,
+        28,
+        56,
+        70,
+        56,
+        28,
+        8,
+        1
+      ],
+      "DT_characters": [
+        1,
+        4,
+        4,
+        -4,
+        -10,
+        -4,
+        4,
+        4,
+        1
+      ],
+      "T3_characters": [
+        1,
+        5,
+        10,
+        11,
+        10,
+        11,
+        10,
+        5,
+        1
+      ],
+      "cycle_type_character_table_sha256": "7de28f355094e2ecc3669f9e659f73c3b790208acdc48028acf6b86f35707da6",
+      "literal_DT_count": 59049,
+      "literal_marked_T3_count": 19683,
+      "absolute_DT_count": 6561,
+      "absolute_marked_T3_count": 2187
+    },
+    {
+      "polynomial_degree": 11,
+      "r": 5,
+      "cycle_types": 56,
+      "exterior_inner_product_identity": true,
+      "cycle_column_exhausted": true,
+      "dimensions": [
+        1,
+        10,
+        45,
+        120,
+        210,
+        252,
+        210,
+        120,
+        45,
+        10,
+        1
+      ],
+      "DT_characters": [
+        1,
+        6,
+        13,
+        8,
+        -14,
+        -28,
+        -14,
+        8,
+        13,
+        6,
+        1
+      ],
+      "T3_characters": [
+        1,
+        7,
+        21,
+        36,
+        42,
+        42,
+        42,
+        36,
+        21,
+        7,
+        1
+      ],
+      "cycle_type_character_table_sha256": "dfe49a92edf0d9efcbf40db0a0731f24845dacd5517ae9e51a73fe42c13df45a",
+      "literal_DT_count": 14992384,
+      "literal_marked_T3_count": 3748096,
+      "absolute_DT_count": 1362944,
+      "absolute_marked_T3_count": 340736
+    },
+    {
+      "polynomial_degree": 13,
+      "r": 6,
+      "cycle_types": 101,
+      "exterior_inner_product_identity": true,
+      "cycle_column_exhausted": true,
+      "dimensions": [
+        1,
+        12,
+        66,
+        220,
+        495,
+        792,
+        924,
+        792,
+        495,
+        220,
+        66,
+        12,
+        1
+      ],
+      "DT_characters": [
+        1,
+        8,
+        26,
+        40,
+        15,
+        -48,
+        -84,
+        -48,
+        15,
+        40,
+        26,
+        8,
+        1
+      ],
+      "T3_characters": [
+        1,
+        9,
+        36,
+        85,
+        135,
+        162,
+        168,
+        162,
+        135,
+        85,
+        36,
+        9,
+        1
+      ],
+      "cycle_type_character_table_sha256": "13e89f748f60c560f3811be4c264714135be2b23c633adde7af067a5251a395b",
+      "literal_DT_count": 5801453125,
+      "literal_marked_T3_count": 1160290625,
+      "absolute_DT_count": 446265625,
+      "absolute_marked_T3_count": 89253125
+    }
+  ],
+  "small_independent_count": {
+    "degree": 7,
+    "complete_DT_triples": 392,
+    "all_positive_neighbors_inside_domain": true,
+    "exceptional_DT_seed_group_order": 168
+  },
+  "seed_controls": [
+    {
+      "degree": 7,
+      "DT_seed_cycles": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            6
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "DT_seed_full_cycle": true,
+      "DT_three_cycle_certificate": false,
+      "T3_seed": [
+        [
+          3,
+          1,
+          2,
+          6,
+          4,
+          5,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          5,
+          4,
+          3,
+          6
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          6
+        ]
+      ],
+      "T3_seed_full_cycle": true,
+      "marked_double_move_convention_verified": true
+    },
+    {
+      "degree": 9,
+      "DT_seed_cycles": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            6
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        [
+          [
+            6,
+            8
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "DT_seed_full_cycle": true,
+      "DT_three_cycle_certificate": true,
+      "T3_seed": [
+        [
+          4,
+          1,
+          2,
+          3,
+          8,
+          5,
+          6,
+          7,
+          0
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          7,
+          5,
+          6,
+          4,
+          8
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          6,
+          5,
+          4,
+          7,
+          8
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7,
+          8
+        ]
+      ],
+      "T3_seed_full_cycle": true,
+      "marked_double_move_convention_verified": true
+    },
+    {
+      "degree": 11,
+      "DT_seed_cycles": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            6
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        [
+          [
+            6,
+            8
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            8,
+            10
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "DT_seed_full_cycle": true,
+      "DT_three_cycle_certificate": true,
+      "T3_seed": [
+        [
+          5,
+          1,
+          2,
+          3,
+          4,
+          10,
+          6,
+          7,
+          8,
+          9,
+          0
+        ],
+        [
+          4,
+          1,
+          2,
+          3,
+          0,
+          9,
+          6,
+          7,
+          8,
+          5,
+          10
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          4,
+          8,
+          6,
+          7,
+          5,
+          9,
+          10
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          4,
+          7,
+          6,
+          5,
+          8,
+          9,
+          10
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          6,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "T3_seed_full_cycle": true,
+      "marked_double_move_convention_verified": true
+    },
+    {
+      "degree": 13,
+      "DT_seed_cycles": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            6
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        [
+          [
+            6,
+            8
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            8,
+            10
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        [
+          [
+            10,
+            12
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "DT_seed_full_cycle": true,
+      "DT_three_cycle_certificate": true,
+      "T3_seed": [
+        [
+          6,
+          1,
+          2,
+          3,
+          4,
+          5,
+          12,
+          7,
+          8,
+          9,
+          10,
+          11,
+          0
+        ],
+        [
+          5,
+          1,
+          2,
+          3,
+          4,
+          0,
+          11,
+          7,
+          8,
+          9,
+          10,
+          6,
+          12
+        ],
+        [
+          4,
+          1,
+          2,
+          3,
+          0,
+          5,
+          10,
+          7,
+          8,
+          9,
+          6,
+          11,
+          12
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          4,
+          5,
+          9,
+          7,
+          8,
+          6,
+          10,
+          11,
+          12
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          4,
+          5,
+          8,
+          7,
+          6,
+          9,
+          10,
+          11,
+          12
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      ],
+      "T3_seed_full_cycle": true,
+      "marked_double_move_convention_verified": true
+    }
+  ],
+  "cases": [
+    {
+      "kind": "DT",
+      "polynomial_degree": 7,
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.scratch/degree14_absolute_census/dt.bin",
+        "7",
+        "7"
+      ],
+      "absolute_orbit": 7,
+      "literal_orbit": 49,
+      "absolute_total_bound": 56,
+      "complete": false,
+      "DT_class_size": 105,
+      "first_factor_representatives": 15,
+      "stored_key_bits": 11,
+      "hash_capacity": 128,
+      "BFS_seconds": 7.7e-07,
+      "wall_seconds": 0.001767,
+      "maximum_RSS_KiB": null,
+      "executable_sha256": "0db19103ecdbff6f07dea395dc1b2fb24c077ef480ed304e6c54cdb886a9aa89",
+      "raw_stdout": "N 7 D 105 reps 15 keybits 11 absolute_orbit 7 seconds 7.7e-07 literal 49\n"
+    },
+    {
+      "kind": "T3",
+      "polynomial_degree": 7,
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.scratch/degree14_absolute_census/t3.bin",
+        "7",
+        "8"
+      ],
+      "absolute_orbit": 28,
+      "literal_orbit": 196,
+      "absolute_total_bound": 28,
+      "complete": true,
+      "DT_class_size": 105,
+      "first_factor_representatives": 10,
+      "stored_key_bits": 11,
+      "hash_capacity": 256,
+      "BFS_seconds": 1.53e-06,
+      "wall_seconds": 0.001199,
+      "maximum_RSS_KiB": 19068,
+      "executable_sha256": "0378ef456f2c0c2d199c3aa1fb7becab0665a2d9aa2551ec5f473fb281f66737",
+      "raw_stdout": "N 7 D 105 reps 10 keybits 11 absolute_orbit 28 seconds 1.53e-06 literal 196\nmaxrss_kib 19068\n"
+    },
+    {
+      "kind": "DT",
+      "polynomial_degree": 9,
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.scratch/degree14_absolute_census/dt.bin",
+        "9",
+        "14"
+      ],
+      "absolute_orbit": 6561,
+      "literal_orbit": 59049,
+      "absolute_total_bound": 6561,
+      "complete": true,
+      "DT_class_size": 378,
+      "first_factor_representatives": 42,
+      "stored_key_bits": 24,
+      "hash_capacity": 16384,
+      "BFS_seconds": 0.000458705,
+      "wall_seconds": 0.002152,
+      "maximum_RSS_KiB": null,
+      "executable_sha256": "0db19103ecdbff6f07dea395dc1b2fb24c077ef480ed304e6c54cdb886a9aa89",
+      "raw_stdout": "N 9 D 378 reps 42 keybits 24 absolute_orbit 6561 seconds 0.000458705 literal 59049\n"
+    },
+    {
+      "kind": "T3",
+      "polynomial_degree": 9,
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.scratch/degree14_absolute_census/t3.bin",
+        "9",
+        "13"
+      ],
+      "absolute_orbit": 2187,
+      "literal_orbit": 19683,
+      "absolute_total_bound": 2187,
+      "complete": true,
+      "DT_class_size": 378,
+      "first_factor_representatives": 20,
+      "stored_key_bits": 23,
+      "hash_capacity": 8192,
+      "BFS_seconds": 0.00013471,
+      "wall_seconds": 0.003562,
+      "maximum_RSS_KiB": 19068,
+      "executable_sha256": "0378ef456f2c0c2d199c3aa1fb7becab0665a2d9aa2551ec5f473fb281f66737",
+      "raw_stdout": "N 9 D 378 reps 20 keybits 23 absolute_orbit 2187 seconds 0.00013471 literal 19683\nmaxrss_kib 19068\n"
+    },
+    {
+      "kind": "DT",
+      "polynomial_degree": 11,
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.scratch/degree14_absolute_census/dt.bin",
+        "11",
+        "22"
+      ],
+      "absolute_orbit": 1362944,
+      "literal_orbit": 14992384,
+      "absolute_total_bound": 1362944,
+      "complete": true,
+      "DT_class_size": 990,
+      "first_factor_representatives": 90,
+      "stored_key_bits": 37,
+      "hash_capacity": 4194304,
+      "BFS_seconds": 0.330857,
+      "wall_seconds": 0.346853,
+      "maximum_RSS_KiB": null,
+      "executable_sha256": "0db19103ecdbff6f07dea395dc1b2fb24c077ef480ed304e6c54cdb886a9aa89",
+      "raw_stdout": "N 11 D 990 reps 90 keybits 37 absolute_orbit 1362944 seconds 0.330857 literal 14992384\n"
+    },
+    {
+      "kind": "T3",
+      "polynomial_degree": 11,
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.scratch/degree14_absolute_census/t3.bin",
+        "11",
+        "20"
+      ],
+      "absolute_orbit": 340736,
+      "literal_orbit": 3748096,
+      "absolute_total_bound": 340736,
+      "complete": true,
+      "DT_class_size": 990,
+      "first_factor_representatives": 30,
+      "stored_key_bits": 35,
+      "hash_capacity": 1048576,
+      "BFS_seconds": 0.041899,
+      "wall_seconds": 0.058548,
+      "maximum_RSS_KiB": 19068,
+      "executable_sha256": "0378ef456f2c0c2d199c3aa1fb7becab0665a2d9aa2551ec5f473fb281f66737",
+      "raw_stdout": "N 11 D 990 reps 30 keybits 35 absolute_orbit 340736 seconds 0.041899 literal 3748096\nmaxrss_kib 19068\n"
+    },
+    {
+      "kind": "DT",
+      "polynomial_degree": 13,
+      "command": [
+        ".scratch/absolute_dt_orbit_benchmark",
+        "13",
+        "30"
+      ],
+      "original_source_path": ".scratch/absolute_dt_orbit_benchmark.cpp",
+      "original_executable_path": ".scratch/absolute_dt_orbit_benchmark",
+      "CXX_source_sha256": "cd0c5b7d5fb6591bfe4b2b5c80c3332054685e0d4cb929f612b4b9bac67d9159",
+      "executable_sha256": "cfcd6483eb4038d5e67834361d8e13920fd5875ddcf3dc022885f28ccd21c725",
+      "absolute_orbit": 446265625,
+      "literal_orbit": 5801453125,
+      "absolute_total_bound": 446265625,
+      "complete": true,
+      "DT_class_size": 2145,
+      "first_factor_representatives": 165,
+      "stored_key_bits": 56,
+      "hash_capacity": 1073741824,
+      "BFS_seconds": 343.665,
+      "maximum_RSS_KiB": null,
+      "raw_stdout": "N 13 D 2145 reps 165 keybits 56 absolute_orbit 446265625 seconds 343.665 literal 5801453125\n",
+      "foreground_exec_session": 81329,
+      "process_exit_code": 0,
+      "observed_RSS_KiB": 10502376,
+      "RSS_scope": "Sample during completed run; peak not instrumented. Eight-GiB table and four-GiB queue reservation.",
+      "full_stdout_scope": "Exact final summary; intermediate live progress retained in tool execution record."
+    },
+    {
+      "kind": "T3",
+      "polynomial_degree": 13,
+      "command": [
+        ".scratch/absolute_t3_orbit_benchmark",
+        "13",
+        "28"
+      ],
+      "original_source_path": ".scratch/absolute_t3_orbit_benchmark.cpp",
+      "original_executable_path": ".scratch/absolute_t3_orbit_benchmark",
+      "CXX_source_sha256": "caeef1241343ff472fa44814ffe4277d3bd2e35317989945b268a275bae3206a",
+      "executable_sha256": "5fe23b80a63f06f73efa02189c129f939fd2a732fc991bd15e42ec10c775eaa7",
+      "absolute_orbit": 89253125,
+      "literal_orbit": 1160290625,
+      "absolute_total_bound": 89253125,
+      "complete": true,
+      "DT_class_size": 2145,
+      "first_factor_representatives": 44,
+      "stored_key_bits": 54,
+      "hash_capacity": 268435456,
+      "BFS_seconds": 44.2615,
+      "maximum_RSS_KiB": 2812372,
+      "raw_stdout": "processed 10000000 seen 15331469 seconds 4.5071\nprocessed 20000000 seen 28532010 seconds 9.20293\nprocessed 30000000 seen 40647764 seconds 13.8395\nprocessed 40000000 seen 51851794 seconds 18.8106\nprocessed 50000000 seen 62025470 seconds 23.8324\nprocessed 60000000 seen 71103522 seconds 29.0566\nprocessed 70000000 seen 78996614 seconds 34.1471\nprocessed 80000000 seen 85354510 seconds 39.3408\nN 13 D 2145 reps 44 keybits 54 absolute_orbit 89253125 seconds 44.2615 literal 1160290625\nmaxrss_kib 2812372\n",
+      "foreground_exec_session": 45144,
+      "process_exit_code": 0
+    }
+  ],
+  "large_execution_mode": "retained completed foreground runs, checked by source/binary hashes",
+  "collected_record_sha256": "b6bef8675537bada4c30ff920abf6f36e523d2d186c31a1b8e6d28d65020817a",
+  "scope": "Finite n13 polynomial orbit classification and its written n14 transfer. No all-r connectivity claim.",
+  "formal_verification": false,
+  "external_review": false,
+  "independent_external_replay": false
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
+  "assurance": "Internal written proof and exact replay, with root critical audit of the prior p>=13 proof and sibling full proof audit plus completed p>=7 cutoff/source-clause delta and exact current replay. All formal and external assurance flags remain false.",
+  "proof_origin": "Parent and child derivation: total-degree cutoff excludes proper primitive and matching actions; odd two-cycle types force all odd-subset stabilizers, then the equal-cycle witness forces the half-partition class. Equality classifies all optimum covers.",
+  "sources": [
+    {
+      "id": "maroti-primitive-order",
+      "authors": [
+        "Attila Maroti"
+      ],
+      "title": "On the Orders of Primitive Groups",
+      "version": "Author manuscript dated21February2002",
+      "primary_url": "https://renyi.hu/~maroti/primitive.pdf",
+      "retained_pdf": "research/arithmetic/sources/maroti-primitive-orders-2002.pdf",
+      "sha256": "d23aa3c23c1db474b6b7158375bdd41cecef598c5b21ef31520553c4dd85d27f",
+      "bytes": 167230,
+      "direct_read": true,
+      "locator": "Corollary1.2, printedpage3; CFSG use stated printedpage2; proof architecture Theorem1.1 and Section3, printedpages8--9",
+      "role": "mathematical_input",
+      "statement": "A primitive subgroup G<=Sn not containingAn has order<3^n in every degree; the stronger2^n bound for n>24 is not needed.",
+      "application": "Atdegree2p>=14 every primitive proper subgroup has index greater than2^(n\u22122), so no minimum-total-degree normal cover uses one.",
+      "reading_limits": "Exact statement and hypotheses inspected. Imported result is not independently reproved; Maroti's primitive-group bound explicitly imports CFSG."
+    },
+    {
+      "id": "lenstra-chebotarev",
+      "authors": [
+        "Hendrik Lenstra"
+      ],
+      "title": "The Chebotarev Density Theorem",
+      "version": "Undated author lecture notes",
+      "primary_url": "https://websites.math.leidenuniv.nl/algebra/Lenstra-Chebotarev.pdf",
+      "retained_pdf": "research/arithmetic/sources/lenstra-chebotarev-density-notes.pdf",
+      "sha256": "695466dfe7053b18957adf0e17207bc6829cccf9b51c320fe93f93e3dbc9cd94",
+      "bytes": 112380,
+      "direct_read": true,
+      "locator": "Theorem3.1 and Fact2.1, page3",
+      "role": "mathematical_input",
+      "statement": "Every conjugacy class in a finite Galois extension occurs as an unramified Frobenius, with positive density.",
+      "application": "Local solubility of an An-split finite-etale algebra forces its fixed-subgroup classes to cover every cyclic subgroup. The group-theoretic minimum becomes a Hasse-algebra rank bound.",
+      "reading_limits": "Exact statement and hypotheses inspected. Imported result is not independently reproved; Maroti's primitive-group bound explicitly imports CFSG."
+    }
+  ],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
+      "sha256": "62c2ab86a85c1bc5512cbc02834e2a31b51a26fa3e62ff4f64b899aaf19bc572",
+      "locator": "All-prime theorem, cost cutoff induction, forced two-cycle witnesses and equality classification; Hasse-algebra corollary."
+    },
+    {
+      "path": "research/arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md",
+      "sha256": "8b3e96684255086511f4a2d8ab910c12447d6d09a43822571382da1e0ba25737",
+      "locator": "Theorem3 provides infinite disjoint Hasse families attaining the minimum in the admissible prime-half intersection; Corollary4 gives one fixedA4 family."
+    },
+    {
+      "path": "research/arithmetic/verify_minimum_alternating_prime_halves.py",
+      "sha256": "285a9dd82d88fdd593ce24f555a404428078746f0e9a8d675bd74614ddeb7a3d",
+      "locator": "Exact integer bases, finite prime-half cost/witness controls and exhaustive even-cycletype covers degrees14,22,26,34."
+    },
+    {
+      "path": "research/arithmetic/minimum_alternating_prime_halves_verification.json",
+      "sha256": "fdb8fbe921771c9a0bfd5df51e048ff583b4a8fe23f6e72a52aad64f7f797eda",
+      "locator": "Actual successful exact replay and sourcepins."
+    }
+  ],
+  "software": {
+    "python": "3.12.3",
+    "arithmetic": "Exact integer factorial/binomial arithmetic and integer-partition enumeration; no group classification software in this checker."
+  },
+  "scope_limits": [
+    "The theorem holds for every odd prime p>=7, degree2p. The primality restricts all imprimitive block sizes to2 orp and is indispensable to the proof.",
+    "The result concerns total coset degree and minimum-rank equality classification, not the unrestricted minimum number of subgroup classes.",
+    "The lower bound imports Maroti's classification-dependent primitive order bound; no classification-free proof is claimed.",
+    "Hasse-algebra rank lower bounds hold for all An-split locally soluble/no-global algebras. Infinite attainment is supplied only in the admissible intersection n=m\u00b2+1 by the separately proved Arala family.",
+    "No assertion of infinitely many primes of the form(m\u00b2+1)/2 is made or required.",
+    "The degree10 minimum uses a separate classified finite argument and is outside the present p>=7 theorem.",
+    "Exact finite controls supplement the written induction and general group proof; they do not establish the unbounded quantifier by enumeration.",
+    "No rational paired-simple degree26 pencil, generic alternatingKeller extension, or fixedA3 Hasse-product compiler is asserted."
+  ],
+  "priority_assessment": "Not completed; no novelty claim. A separate primary-source comparison addendum is in preparation.",
+  "internal_critical_audit": {
+    "result": "PASS",
+    "reviewers": [
+      {
+        "reviewer": "/root",
+        "result": "PASS",
+        "scope": "Full prior p>=13 proof and actual receipt audit: primitive/matching cost cutoff, all prime-half block types, forced odd intransitive constituents, balanced witness and equality classification; Hasse fixed-field corollary. The stronger p>=7 bound/base delta was separately audited by the sibling reviewer below."
+      },
+      {
+        "reviewer": "/root/moonshot_knots",
+        "result": "PASS",
+        "scope": "Full retained proof audit, actual Maroti Cor1.2 and CFSG source reading, plus completed p>=7 delta: all-degree3^n clause, exact base14 inequalities and all-even induction; unchanged witness/equality proof remains valid. Independent replay matches retained receipt and all sourcepins. Final comment-only code revision independently replayed; exact finalcanonicalreceipt match.",
+        "replay_receipts": [
+          ".scratch/independent_minimum_alternating_prime_halves_replay.json",
+          ".scratch/independent_minimum_alternating_prime_halves_p7_replay.json",
+          ".scratch/independent_minimum_alternating_prime_halves_p7_final_replay.json"
+        ]
+      }
+    ],
+    "pending": [],
+    "limits": "Internal agent review and replay only. No external/formal assurance upgrade."
+  },
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}

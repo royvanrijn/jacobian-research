@@ -1,0 +1,70 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_implementation": false,
+    "internal_exact_replay": true,
+    "internal_written_proof": true
+  },
+  "checker": "verify_bgv_odd_prime_lifting.py",
+  "internal_proof": "BGV_ODD_PRIME_LIFTING.md, Sections 2-7",
+  "proved_scope": "All odd primes and all Witt lengths admit the explicit compatible radial tower. Its algebraic restricted limit has coordinate functions not both rational; its polynomial reduction degrees are unbounded. Exact finite checks cover p=2,3,5,7 and radial p=3 moduli 9,27,81.",
+  "receipt": "bgv_odd_prime_lifting_verification.json",
+  "schema_version": 1,
+  "scope_exclusions": [
+    "No novelty claim",
+    "No arbitrary mod-27 lifting obstruction",
+    "No polynomial characteristic-zero Keller counterexample",
+    "No universal impossibility for all lifts of the residue map",
+    "No JC2 solution"
+  ],
+  "sources": [
+    {
+      "authors": [
+        "Alexander Borisov",
+        "Ofer Gabber",
+        "Adrian Vasiu"
+      ],
+      "imported_statement": "The specified plane maps over algebraic closures of characteristic p have determinant one, geometric degree p^2-p+1, and are surjective for every odd p.",
+      "inspected_locator": "Theorem 28.6(1), (2.e), PDF pp.131-132; complete proof pp.132-133",
+      "local_path": "sources/bgv-2609.05746v1.pdf",
+      "primary_html": "https://arxiv.org/html/2609.05746v1",
+      "read_scope": "The exact theorem, all relevant parameter restrictions, determinant argument, inverse-polynomial degree and surjectivity arguments were inspected. No independent replay of the entire source was performed.",
+      "sha256": "814c3f2572f660a47778663384077d6357e9947f1585c1e16372f6cdbe138425",
+      "specialization": {
+        "delta": -1,
+        "g(t)": "(-t)^(p-1)",
+        "h(t,w)": "t*w",
+        "j": 1,
+        "l": 1,
+        "m": 1,
+        "q": "p-1",
+        "r": 1,
+        "s": "p-1"
+      },
+      "title": "On endomorphisms of affine spaces and the Jacobian problem",
+      "url": "https://arxiv.org/abs/2609.05746v1",
+      "version": "arXiv:2609.05746v1, 4 September 2026",
+      "warning": "The older author-hosted BGV160.pdf has different statements and cannot replace the retained arXiv version."
+    },
+    {
+      "authors": [
+        "Stefan Maubach",
+        "Abdul Rauf"
+      ],
+      "read_scope": "Abstract inspected for prior-work context only. No theorem imported.",
+      "title": "A new formulation of the Jacobian Conjecture in characteristic p",
+      "url": "https://arxiv.org/abs/1507.02946"
+    },
+    {
+      "author": "Janusz Gwozdziewicz",
+      "imported_statement": "A polynomial plane Keller map over an algebraically closed characteristic-zero field which fixes a line pointwise is an automorphism.",
+      "inspected_locator": "Theorem 1.1 and Lemma 2.3; theorem and complete proof inspected in primary HTML",
+      "local_path": "../../hessian/hc4-triangular-graphs/sources/gwozdziewicz-alg-geom-9305008v1.pdf",
+      "scope": "Independent alternative nonpolynomiality proof only. The main algebraic-degree proof does not use this theorem.",
+      "sha256": "4cce6a7334640ea47036b1fb8c676e28da7946dbd15d0a48868b30d94c68585a",
+      "title": "Injectivity on one line",
+      "url": "https://arxiv.org/html/alg-geom/9305008v1"
+    }
+  ]
+}

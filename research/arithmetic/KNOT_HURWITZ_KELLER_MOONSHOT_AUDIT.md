@@ -4,9 +4,10 @@ Infinite prime augmentation-gap families now exist at every sufficiently
 large bridge number. The real paired-cover locus has
 a uniform matching-walk classification and complete real-root spectra.
 One fixed Keller map carries the degree-ten A10 pencil in dimension three;
-arbitrary rational finite-etale families, including the rank-301 Hasse
-family, have fixed-map realization in dimension four. The degree-twelve
-alternating Hurwitz passport has one absolute component. Known graded
+arbitrary rational finite-etale families have fixed-map realization in
+dimension four. A different, known alternating cover now supplies uniform
+Hasse families of rank 2^(n-2), including the minimum rank 256 in degree ten.
+The degree-fourteen alternating Hurwitz passport has one absolute component. Known graded
 Keller constructions give generic A_n in dimension three for every even
 n>=6, with an explicit fixed-field formula below. Rational paired-critical
 existence in degree 26, higher complex Hurwitz connectivity and the plane
@@ -20,12 +21,12 @@ historical priority claim.
 | Target | Smallest new case tested | Result and next unresolved case |
 | --- | --- | --- |
 | Prime augmentation gaps | Unbounded bridge number | Proved for every sufficiently large bridge number, with explicit families and non-effective thresholds; direct prime-family certificates also hold at bridge five and six. |
-| Rational square pencils | Degree 26 | Reciprocal models form finite schemes with exact lengths and controlled denominators. Both unbalanced sign splits and every rational-square reciprocal parameter are excluded. General rational existence remains open. |
-| Hurwitz classification | Degree twelve | One absolute full-A12 orbit. Chosen-leaf deletions are symmetric or a full two-block wreath group; the entire imprimitive case has one normal form and recursive extraction. The symmetric case, degree fourteen and arithmetic refinements remain open. |
-| One fixed Keller map | Degree-ten pencil | Solved uniformly for a reparametrized pencil; infinitely many complete A10 field fibres of one fixed A3 map. |
+| Rational square pencils | Degree 26 | The entire good reciprocal odd-Laurent ansatz is excluded over Q, including nonsquare balanced parameters and arbitrary denominators. General nonreciprocal rational existence remains open. |
+| Hurwitz classification | Degree fourteen | One absolute full-A14 orbit, certified through two exact degree-thirteen censuses. The entire imprimitive chosen-leaf case has a uniform normal form; symmetric deletions, degree sixteen and uniform connectivity remain open. |
+| One fixed Keller map | Every admissible degree | One fixed rational A3 map for each degree m^2+1, odd m>=3, has infinitely many complete A_n field fibres. The paired degree-ten pencil also has its own fixed map. |
 | Generic alternating Keller group | All even natural actions n>=6; the smallest plane case A4 | Polynomial A3 realizations in all even degrees; regular arithmetic A_(m^2+1) over Q(sqrt(-3)). Every plane A4 action is excluded. General plane realization or exclusion remains open. |
-| Hasse algebras | A10 subgroup covers including ramified groups | Infinite rank-301 examples in one fixed A4 map. Rank-256 local solubility has density zero after every solvable arithmetic rational base change; thinner families and nonsolvable changes remain open. |
-| Extremal real nodes | All even degrees at least eight | Uniform real-algebraic existence, matching-walk chambers and complete spectra. A rational quadratic-algebra chart has an exact Hermite-matrix test for all-real critical points. Rational models in degrees twelve and 26 remain open. |
+| Hasse algebras | Uniform admissible degrees | A different concentrated-inertia cover gives minimum-rank-2^(n-2) Hasse families and one fixed A4 map per degree. Numerical optimality follows from Maroti's prior covering theorem; the optimal subgroup family is classified uniformly. The original double-transposition pencil retains its rank-256 density obstruction after every solvable rational base change. |
+| Extremal real nodes | All even degrees at least eight | Uniform real-algebraic existence, matching-walk chambers and complete spectra. A uniform real obstruction excludes affine canonical trace in every degree 4h>=12, including the scalar-secant/affine-scale slice. General rational models in degrees twelve and 26 remain open. |
 
 ## Prime knots and augmentation rank
 
@@ -75,6 +76,17 @@ tuple lie in the same absolute Hurwitz component. Its rational point and
 unique geometric component establish the indicated Q-definition, without
 proving unirationality or classifying inner components.
 
+The known [Arala alternating lines](ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md)
+already give rational literal-square pencils with regular A_n in every
+admissible degree. In Laurent coordinates they are
+H(z)=P(z+c)-P(c), a=P(c), where P(X)=X^n-nX^(n-1) and c=(n-2)^2/n.
+Their two finite inertia types are an (n-1)-cycle and a three-cycle.
+The high critical multiplicities distinguish them from the required
+paired-simple-critical pencil. An index-additivity proof shows that
+coalescing finite values of the paired passport, with degree, pole type
+and smooth genus-zero source fixed, cannot produce its pure three-cycle.
+Thus the known construction does not close the degree-26 paired problem.
+
 The next rational literal-square degree is 26. In the normalized even-H
 locus the search is equivalent to one degree-eleven polynomial G, a
 squarefree critical polynomial S of degree twelve, and a characteristic
@@ -95,8 +107,16 @@ block. Eight short stabilizer loops connect every attachment, internal
 two-block braids connect all splittings, and the literal word (-2,1)
 joins the two coalescence types. Thus every transitive degree-twelve tuple
 lies in one absolute full-A12 orbit. The unique geometric component is
-Q-defined; no rational point is supplied. Degree fourteen is the next
-unresolved even case in this sequence.
+Q-defined; no rational point is supplied.
+The [degree-fourteen theorem](DEGREE_FOURTEEN_HURWITZ_ORBIT.md) now extends
+this finite classification by complete polynomial censuses on thirteen
+sheets. Their absolute orbit sizes are 446,265,625 for six DTs and
+89,253,125 for a marked three-cycle followed by five DTs. Exact character
+inner products over all 101 cycle types give independent total bounds,
+and collision-free breadth-first traversal reaches those bounds. The
+uniform folding, marking and attachment theorems then give one absolute
+full-A14 orbit. This supplies no rational point or unirationality result.
+Degree sixteen is the next unclassified even case in this sequence.
 Four explicit degree-seven stabilizer loops also prove attachment
 transitivity in both coalesced types uniformly, by appending paired
 leaf edges. The [unmarked polynomial reduction](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md)
@@ -105,7 +125,7 @@ tuple has a literal cyclic braid stabilizer transitive on its branch
 labels, while the other polynomial passport has a unique 3-cycle value.
 Thus two unmarked polynomial-cactus connectivity assertions suffice for
 the all-degree original passport. Neither remaining assertion is proved
-uniformly; degree fourteen remains the next complex case.
+uniformly; degree sixteen remains the next complex case.
 
 The [overlap and leaf-extraction theorem](PAIRED_HURWITZ_LEAF_EXTRACTION.md)
 now applies to arbitrary full-alternating polynomial DT input: every such
@@ -138,6 +158,17 @@ alternating cores down to degree seven. Thus the whole imprimitive case
 is closed. Reaching this locus from a tuple with only symmetric deletions
 is the remaining gate for the pure-DT polynomial problem. The separate
 mixed 3-cycle polynomial problem in the uniform reduction remains open.
+
+The [normalization-distance theorem](UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md)
+shows why a bounded local repair cannot close that gate. For every r>=4,
+explicit full-A_(2r+1) tuples have symmetric deletion at every initial leaf,
+and every word reaching a wreath leaf has length at least floor(r/2)-1.
+Independent five-sheet dihedral subgroups obstruct an invariant pairing;
+one elementary move can expose at most one such subgroup. A fresh buffer
+does not remove the growing bound. This also rules out repairs confined
+to a bounded set of original factor colors, even with unlimited internal
+braids. It permits a rule propagating through linearly many factors and
+does not distinguish unrestricted Hurwitz components.
 
 The [reciprocal ODE theorem](PAIRED_CRITICAL_RECIPROCAL_OBSTRUCTION.md)
 classifies the direct extension of the degree-ten reciprocal construction.
@@ -184,12 +215,23 @@ Both orientations of both unbalanced splits are therefore excluded over Q,
 including arbitrary denominators and bad reduction.
 
 For the [balanced split (6,6)](DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md),
-two complete censuses show that its labelled strong closure has no Q37
-point. Thus every remaining rational reciprocal degree-26 model must have
-a nonsquare reciprocal parameter lambda, with (lambda/37)=-1.
-Its signed square class is supported on primes at most 25, leaving at most
-1024 classes before this residue test. The balanced nonsquare case remains
-open. These ansatz exclusions do not exclude nonreciprocal degree-26 models.
+two complete censuses exclude every labelled Q37 point, supplying the
+square-parameter case. The
+[complete reciprocal obstruction](DEGREE_TWENTY_SIX_RECIPROCAL_GLOBAL_OBSTRUCTION.md)
+now excludes the nonsquare case too. For every one of the eighteen
+nonsquare residues of eta modulo 37, the thirteen rational-quotient
+equations generate the unit ideal. Independent direct Euler/Chebyshev
+reconstruction binds every equation, and ordinary exact Singular checks
+confirm all eighteen eliminations. Uniform integrality then excludes
+the entire strong quotient over Q37, including every denominator pattern
+and degenerate residue. It also excludes points over every finite local
+extension with residue field F37, regardless of ramification.
+
+All sign classes are therefore excluded: no good rational reciprocal
+odd-Laurent model exists in degree 26. Rational normalization of its unique
+zero-level double root loses no model. This is an obstruction to extending
+the degree-ten construction through constant-product critical pairing;
+general nonreciprocal degree-26 existence remains open.
 
 The [balanced rational quotient](BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md)
 processes all quadratic descents in one scheme over Q. For every balanced
@@ -200,8 +242,10 @@ In degree 26 this is 290400, with seven raw equations and thirteen
 strong equations in seven rational variables. Good rational points
 correspond exactly to normalized rational balanced models, including
 nonsquare reciprocal parameters. A terminating exact rational-candidate
-procedure is proved, but its degree-26 elimination and point list have
-not been computed.
+procedure is proved, but its degree-26 elimination and raw rational point
+list have not been computed. Its good rational locus is now known to be
+empty by the separate 37-adic obstruction; degenerate raw points are a
+different question.
 
 The [three-adic construction](DEGREE_TWENTY_SIX_THREE_ADIC_PENCILS.md)
 gives a five-parameter family over Z3 with literal square discriminant and
@@ -256,6 +300,14 @@ preserves its regular group under this solvable radical base change;
 Hilbert irreducibility then gives infinitely many rational p with full
 A10 field fibres. The ambient fixed map has generic arithmetic and
 geometric S10. This resolves the fourth requested target in dimension three.
+
+The [Arala transfer](ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md)
+makes this uniform over Q in every admissible degree n=m^2+1, odd m>=3.
+One fixed A3 map per degree carries infinitely many complete degree-n
+field fibres with splitting group A_n. Its coordinate degrees are at most
+20n-54, or 466 in degree 26. These are root-field fibres of the concentrated
+cover, with ambient generic group S_n. They do not realize its Laurent
+extension as the generic extension of that polynomial map.
 
 ## Generic alternating Keller realization
 
@@ -327,7 +379,8 @@ every even degree, conditional on having the required rational regular cover.
 The pinned maximal-subgroup calculation proves rank 301 optimal for covering
 the **whole abstract local-group domain**. Three classes can cover that domain
 with minimum rank 1075. These results leave room for a rank-256 arithmetic
-family with more restricted actual ramification. The
+family with more restricted actual ramification. For the original
+double-transposition pencil, the
 [zero-branch theorem](ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md) identifies
 a density-7/16 set of primes at which odd parameter valuation obstructs
 rank-256 local solubility. Its locally soluble integer parameters have density
@@ -346,6 +399,33 @@ This includes all affine power substitutions, even s=t^2, which kills
 the original zero-branch inertia. The proof supplies infinitely many
 linearly disjoint full-A10 local failures in every progression.
 
+There is now an infinite rank-256 family from a different cover. The
+[concentrated-inertia theorem](ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md)
+uses Arala's known cover and works in every admissible degree n=m^2+1.
+The odd-subset fixed fields together with the unordered middle-partition
+field have total rank 2^(n-2). Powers of the long-cycle inertia have a
+unique fixed letter; nontrivial three-cycle inertia has invariant support
+of size three. Their normalizers therefore lie in the selected stabilizers.
+A denominator-safe Hensel progression handles every exceptional prime,
+and integral Hilbert irreducibility gives infinitely many pairwise linearly
+disjoint A_n splitting fields. The product algebras have points over every
+completion and no rational point. These ranks are globally minimum in
+every admissible degree, including composite half-degrees such as fifty.
+At n=10 the minimum is 256. This different family attains it without
+contradicting the obstruction for the original cover.
+
+The [priority and equality addendum](ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md)
+identifies the exact prior result: Maroti's Theorem 4.1 already implies
+the minimum total coset degree 2^(n-2) for every n=2 modulo four, n>=6,
+and its proof gives the same upper-cover family. A separate written
+argument classifies equality for every such n>=14, extending the
+[prime-half proof](MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md).
+Every other primitive or imprimitive action exceeds the total degree
+budget; two-cycle witnesses force each constituent. This concerns total
+degree, not the number of conjugacy classes. Numerical optimality is prior
+work; priority of the uniform equality statement and the precise arithmetic
+transfer remains unresolved.
+
 There is also a conditional transfer in every degree n=2 modulo four,
 n>=10: a regular rational A_n pencil with a branch orbit of size at least
 four and residual S_(n-4) has the same obstruction for its odd-subset
@@ -355,7 +435,9 @@ stated rational cover and residual group; it constructs no degree-26 model.
 The [fixed finite-etale family theorem](../jacobian/monodromy-theory/FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md)
 places all these rank-301 algebras in complete fibres of one fixed
 Jacobian-one A4 map, with generic S301. Its rational target curve records
-the parameter. A fixed A3 map for the product family remains open.
+the parameter. The same compiler places each new rank-2^(n-2) family in
+one fixed A4 map, with generic S_(2^(n-2)). A fixed A3 map for these product
+families remains open.
 
 ## Extremal real geometry
 
@@ -395,8 +477,33 @@ the scale rho=cM is impossible over R, even when critical points are
 nonreal; a double-zero identity forces a geometric-sum equation whose
 real and unit-circle cases are impossible. If both a and rho are scalar,
 the model is impossible even over C, by Euler coefficients and the
-paired-product norm. A genuinely affine scale rho=r0+cM with both
-coefficients nonzero remains outside these exclusions.
+paired-product norm. These endpoint proofs leave a genuinely affine scale
+rho=r0+cM with both coefficients nonzero untreated.
+
+In degree twelve the
+[full rational scalar-affine theorem](DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md)
+now excludes that remaining slice over Q as well, including nonreal critical
+points. A rational normalization leads to a uniform square/Hermite
+condition. Five retained arithmetic circuits prove unit identities for
+the generic parameter and every rational exception. Exact factor-product
+identities and projective finite-field no-root certificates account for
+all parameter denominators; the replay needs no Groebner or factorization
+oracle. Thus a rational even-H degree-twelve model must have a nonconstant
+secant element or a genuinely quadratic scale in its cubic value algebra.
+The unrestricted rational real-node problem remains open.
+
+The [uniform real affine-trace theorem](UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md)
+now excludes a larger slice in every degree 4h>=12, without requiring real
+critical points. The canonical pair trace cannot satisfy theta=s+t*rho
+for real scalars s,t, even if the secant varies. The critical jets force
+a polynomial square; a positive real polynomial forces slope t=-2.
+A reflection identity then gives a difference operator whose leading
+coefficient is j(j-2)(j-4)/3. It cannot annihilate the required degree
+j=2h>=6 polynomial. The degree-eight model gives the sharp j=4 boundary.
+Scalar secant and affine scale imply affine trace, so that entire slice
+is excluded for real coefficients in these degrees. The earlier degree-twelve
+arithmetic certificates provide a separate exact check; unrestricted
+nonaffine-trace rational models remain open.
 
 The [degree-twelve reciprocal obstruction](RECIPROCAL_DEGREE_TWELVE_OBSTRUCTION.md)
 now excludes that ansatz globally over Q, using a projective modulo-31

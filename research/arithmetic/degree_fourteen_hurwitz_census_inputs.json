@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "complete_foreground_runs": true,
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "compile_flags": [
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-UNDEBUG"
+  ],
+  "execution_scope": "These two engine processes completed sequentially before the Python wrapper was assembled. Their retained source bodies are byte-for-byte embedded in that wrapper. Collection does not rerun either large census.",
+  "cases": [
+    {
+      "kind": "DT",
+      "polynomial_degree": 13,
+      "command": [
+        ".scratch/absolute_dt_orbit_benchmark",
+        "13",
+        "30"
+      ],
+      "original_source_path": ".scratch/absolute_dt_orbit_benchmark.cpp",
+      "original_executable_path": ".scratch/absolute_dt_orbit_benchmark",
+      "CXX_source_sha256": "cd0c5b7d5fb6591bfe4b2b5c80c3332054685e0d4cb929f612b4b9bac67d9159",
+      "executable_sha256": "cfcd6483eb4038d5e67834361d8e13920fd5875ddcf3dc022885f28ccd21c725",
+      "absolute_orbit": 446265625,
+      "literal_orbit": 5801453125,
+      "absolute_total_bound": 446265625,
+      "complete": true,
+      "DT_class_size": 2145,
+      "first_factor_representatives": 165,
+      "stored_key_bits": 56,
+      "hash_capacity": 1073741824,
+      "BFS_seconds": 343.665,
+      "maximum_RSS_KiB": null,
+      "raw_stdout": "N 13 D 2145 reps 165 keybits 56 absolute_orbit 446265625 seconds 343.665 literal 5801453125\n",
+      "foreground_exec_session": 81329,
+      "process_exit_code": 0,
+      "observed_RSS_KiB": 10502376,
+      "RSS_scope": "Sample during completed run; peak not instrumented. Eight-GiB table and four-GiB queue reservation.",
+      "full_stdout_scope": "Exact final summary; intermediate live progress retained in tool execution record."
+    },
+    {
+      "kind": "T3",
+      "polynomial_degree": 13,
+      "command": [
+        ".scratch/absolute_t3_orbit_benchmark",
+        "13",
+        "28"
+      ],
+      "original_source_path": ".scratch/absolute_t3_orbit_benchmark.cpp",
+      "original_executable_path": ".scratch/absolute_t3_orbit_benchmark",
+      "CXX_source_sha256": "caeef1241343ff472fa44814ffe4277d3bd2e35317989945b268a275bae3206a",
+      "executable_sha256": "5fe23b80a63f06f73efa02189c129f939fd2a732fc991bd15e42ec10c775eaa7",
+      "absolute_orbit": 89253125,
+      "literal_orbit": 1160290625,
+      "absolute_total_bound": 89253125,
+      "complete": true,
+      "DT_class_size": 2145,
+      "first_factor_representatives": 44,
+      "stored_key_bits": 54,
+      "hash_capacity": 268435456,
+      "BFS_seconds": 44.2615,
+      "maximum_RSS_KiB": 2812372,
+      "raw_stdout": "processed 10000000 seen 15331469 seconds 4.5071\nprocessed 20000000 seen 28532010 seconds 9.20293\nprocessed 30000000 seen 40647764 seconds 13.8395\nprocessed 40000000 seen 51851794 seconds 18.8106\nprocessed 50000000 seen 62025470 seconds 23.8324\nprocessed 60000000 seen 71103522 seconds 29.0566\nprocessed 70000000 seen 78996614 seconds 34.1471\nprocessed 80000000 seen 85354510 seconds 39.3408\nN 13 D 2145 reps 44 keybits 54 absolute_orbit 89253125 seconds 44.2615 literal 1160290625\nmaxrss_kib 2812372\n",
+      "foreground_exec_session": 45144,
+      "process_exit_code": 0
+    }
+  ]
+}

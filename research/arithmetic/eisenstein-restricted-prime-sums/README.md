@@ -23,6 +23,12 @@ scope; it is not a new calculation or an assurance upgrade.
 - [Power-saving exceptions for the modulus-12 semigroup lower count](../PRESCRIBED_PRIME_POWER_SAVING_EXCEPTIONS.md).
 - [Simultaneous Gaussian--Eisenstein case study](../SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md).
 - [Every-target weighted asymmetric Gaussian--Eisenstein sums](../ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md).
+- [Uniform small coefficients in the asymmetric convolution](../ASYMMETRIC_UNIFORM_COEFFICIENTS.md).
+- [Every-target unweighted asymmetric counts at the semigroup scale](../ASYMMETRIC_SEMIGROUP_SCALE.md).
+- [Asymmetric theory for every fixed modulus and quadratic character](../ASYMMETRIC_FIXED_MODULUS_THEORY.md).
+- [Averaging auxiliary coefficients and a positive distribution level](../ASYMMETRIC_AUXILIARY_AVERAGE.md).
+- [Half-dimensional criterion for two modulus-12 summands](../ASYMMETRIC_SEMILINEAR_SIEVE.md).
+- [Critical-level switching and the two-large-prime bound](../ASYMMETRIC_CRITICAL_SWITCHING.md).
 - [Fixed periodic factors in divisor boxes](../FIXED_PERIODIC_DIVISOR_BOXES.md).
 - [Fixed-prime marginals and raw dilation laws](../SIMULTANEOUS_NORM_DILATION_LAWS.md).
 - [Simultaneous-norm pointwise upper bounds and the fixed-prime sieve criterion](../SIMULTANEOUS_NORM_POINTWISE_SIEVE.md).
@@ -67,9 +73,23 @@ has not been expanded to include the new power-window theorem.
 The asymmetric theorem now gives a weighted pointwise asymptotic on EVERY
 sufficiently large target `N = 2 mod 6`, with the first summand in `C12`
 and the second in `A3`. Its positive target-dependent singular series gives
-one-sided existence and at least `N^(1-epsilon)` distinct pairs for each
-fixed positive epsilon. It does not give two `C12` summands, balance, an
-explicit cutoff or the expected unweighted logarithmic scale.
+one-sided existence. A separately proved small-coefficient extension and
+cofactor construction now give matching unweighted counts of order
+`N J_E(N)/(log N)^(5/4)`, uniformly in target valuations. This has no
+balance restriction or explicit cutoff, and does not give two `C12`
+summands. A half-dimensional sieve criterion and a further critical
+switching bound isolate a square-root-level remainder sufficient for the
+two-sided problem, up to logarithmic losses. The switching upper bound
+holds unconditionally on every target, including all target valuations.
+The local model, parity reduction and exact kernel tail are proved;
+the critical global remainder is open. The full auxiliary-modulus average
+now controls coefficients through `N^xi` before choosing its smaller error
+saving, and gives an L1 sieve level at every fixed exponent below `xi`.
+The general theory extends asymmetric counts to every fixed modulus and
+chosen quadratic splitting condition. A separate clause gives every-target
+counts at the full two-sided logarithmic scale while permitting boundedly
+many large excluded prime factors in the second summand; eliminating them
+remains open.
 
 For the simultaneous modulus-12 restriction, the new pointwise note proves
 upper bounds and a natural-scale large-prime tail. A separate elementary
@@ -167,23 +187,49 @@ to eventual balance is in the current angular note.
 
 ## Exact finite controls for the new analytic arguments
 
-From this directory, the two portable diagnostics print their results by
+From this directory, the portable diagnostics print their results by
 default and write JSON only when `--output` is supplied:
 
 ```sh
 python3 verify_joint_coset_distribution.py
 python3 verify_asymmetric_sums.py
+python3 verify_asymmetric_uniform.py
+python3 verify_asymmetric_cofactors.py
+python3 verify_asymmetric_switching.py
+python3 verify_asymmetric_auxiliary_average.py
+python3 verify_fixed_modulus_asymmetric.py
 ```
 
 The retained receipts are [joint coset controls](joint_coset_distribution_checks.json)
-and [asymmetric arithmetic controls](asymmetric_sums_checks.json). Both
-commands reject Python `-O`, because their exact finite assertions must run.
+and [asymmetric arithmetic controls](asymmetric_sums_checks.json), together
+with [uniform-family controls](asymmetric_uniform_checks.json) and
+[cofactor controls](asymmetric_cofactor_checks.json), and
+[switching controls](asymmetric_switching_checks.json),
+[auxiliary-average controls](asymmetric_auxiliary_average_checks.json), and
+[fixed-modulus controls](fixed_modulus_asymmetric_checks.json). All commands reject
+Python `-O`, because their exact finite assertions must run.
 The first checks the asymmetric singular recurrences, 240 scalar identities,
 and every invertible matrix modulo 49, with wrong-coefficient controls. The
 second checks local integrals, gcd and hyperbola identities, including
 controls that reject omitted corrections and strata. These support the
-written identities; they do not certify an unrestricted asymptotic or
-replace the imported analytic estimates.
+written identities. The uniform-family checker covers 89 exact local
+cases, 6,120 coefficient reductions, and 1,500 shifted-kernel identities,
+including the failure of a mod-12 support assertion for shifted second
+kernels. The cofactor checker covers 376 exact local compensations,
+1,331 lower-polynomial sign cases and 5,104 injective fibres, including
+higher target valuations and an invalid lower-polynomial control.
+The switching checker verifies 507 exact local integrals, 507 corrected
+Henriot inequalities and 153 Euler identities, with missing-content and
+incorrect-expectation controls. These finite checks do not certify an
+unrestricted asymptotic, prove the critical distribution hypothesis, or
+replace the imported analytic estimates. The auxiliary-average checker adds
+60 exact family cases, 40 local prime-power cases, 2,397 CRT checks,
+222 kernel/model identities and 120 cutoff cases, including 30 with a cutoff
+larger than the divisor level. The fixed-modulus checker includes even and
+odd characters, prime 3, fixed-place densities, 21,500 shifted second-kernel
+cases, 8,028 strict divisor-pairing identities, 22,612 restricted-cofactor
+fibres and nine negative controls. Their receipts identify all finite ranges
+and current input bytes.
 
 ## Java and assurance limits
 

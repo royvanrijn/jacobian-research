@@ -4,7 +4,7 @@
     "checker": "research/arithmetic/eisenstein-restricted-prime-sums/verify_asymmetric_sums.py",
     "checker_sha256": "52570e0e5d7cfbe0db3eb3aedc2aeb8583a24f3c15e1e17594e52b4035f38159",
     "source_sha256": {
-      "research/arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md": "dd1b7ca4d18b6bfb214981133c0367b541e6fb9e84900d11fb4f71908350f754",
+      "research/arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md": "c7564c9069656eafcaf4ff417042dee3b3c354f76cca03e854afba1a5a085f62",
       "research/arithmetic/FIXED_PERIODIC_DIVISOR_BOXES.md": "8e955cbcb681f81ee8b4e3aedcd4ac40757cacad86bbbdd4799de3ef12824201"
     },
     "optional_source_files_missing": [],
