@@ -1,0 +1,123 @@
+{
+  "title": "Pair-primitive quaternary local-global deduction: imported analytic source",
+  "source": {
+    "author": "Jeremy Rouse",
+    "title": "Integers represented by positive-definite quadratic forms and Petersson inner products",
+    "version": "arXiv:1802.03437v1, 9 February 2018",
+    "url": "https://arxiv.org/pdf/1802.03437v1",
+    "local_path": "sources/rouse-1802.03437v1.pdf",
+    "sha256": "db9e5b5dd29579892b2a3d332c84a706a359a7c405291d9c8fe042cb68de879a",
+    "statements_used": [
+      "Equation (1), PDF page 5: genus coefficient as product of local densities.",
+      "Theorem 3, PDF page 10: polynomial bound for Petersson norm of cuspidal part.",
+      "Start of Section 5, PDF page 15, combined PDF page 16: general all-n coefficient bound; no coprimality assumption on n."
+    ],
+    "inspection_scope": "Actual v1 PDF statements and their combination inspected internally; imported proofs have not been independently reconstructed.",
+    "normalization_note": "The real factor 4*pi^2*n/sqrt(det Gram) is derived independently from ellipsoid volume. The displayed pi^2 prefactor in Rouse Section 3 has an apparent factor-of-four discrepancy with its stated Gram convention; it is not copied."
+  },
+  "proof": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
+  "checker": "verify_primitive_norm_quaternary.py",
+  "reproduction": "python3 research/arithmetic/verify_primitive_norm_quaternary.py --output research/arithmetic/primitive_norm_quaternary_checks.json",
+  "limitations": [
+    "Priority for the two-block deduction unaudited.",
+    "Finite checker challenges normalizations and selected cases; it does not establish analytic uniformity.",
+    "No numerical cutoff is supplied for the general binary-pair theorem; the separate -8 sieve supplies 2^78 and complete prime coverage. Exact -8/-11 binary exception lists remain unresolved.",
+    "Coordinate counts are not unweighted value-pair asymptotics."
+  ],
+  "angular_sources": [
+    {
+      "author": "Lynne H. Walling",
+      "title": "The Eichler Commutation Relation for theta series with spherical harmonics",
+      "version": "Acta Arithmetica 63 (1993), 233–254",
+      "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa63/aa6335.pdf",
+      "local_path": "sources/walling-eichler-harmonics-1993.pdf",
+      "sha256": "adf7177cc791d822874c474a959671cb899fd2e23f01a589289b7561f9541dc3",
+      "statements_used": [
+        "Theorem 1, printed p.238: harmonic theta modularity with quadratic character.",
+        "Theorem 2, printed p.241: positive-degree harmonic theta cuspidality."
+      ],
+      "inspection_scope": "Actual primary PDF statements, normalizations and cuspidality argument inspected internally."
+    },
+    {
+      "author": "Lynne H. Walling",
+      "title": "Announcement of errors in The Eichler Commutation Relation for theta series with spherical harmonics",
+      "version": "Acta Arithmetica 66 (1994), 391",
+      "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa66/aa6647.pdf",
+      "local_path": "sources/walling-eichler-harmonics-correction-1994.pdf",
+      "sha256": "fcc243d836b7b15d850e8d2f37fcc77dbc7c6214e642a30b882aa41bf9201dd9",
+      "statements_used": [
+        "Correction withdraws the corollary to Theorem 3 and Section 4, neither used here."
+      ],
+      "inspection_scope": "Actual one-page correction inspected internally."
+    },
+    {
+      "author": "Rainer Schulze-Pillot and Abdullah Yenirce",
+      "title": "Petersson products of bases of spaces of cusp forms and estimates for Fourier coefficients",
+      "version": "arXiv:1602.01803v6, 24 August 2018",
+      "url": "https://arxiv.org/pdf/1602.01803v6",
+      "local_path": "sources/schulze-pillot-yenirce-1602.01803v6.pdf",
+      "sha256": "33f5d9176c8dca6bd8270aafbe0c38b7f5fc24f85cbe6f07f61a0ae40f0184f0",
+      "statements_used": [
+        "Theorem 12, PDF p.12: all-n Fourier bound for arbitrary fixed integral weight, level and character."
+      ],
+      "inspection_scope": "Actual theorem and its all-index, arbitrary-character scope inspected internally."
+    }
+  ],
+  "angular_scope": "Qualitative angular equidistribution and fixed positive-length balance intervals through all locally admissible targets; no angular power-saving error or shrinking-window claim.",
+  "method_antecedent": {
+    "author": "Jörg Brüdern",
+    "title": "Sums of Squares Coprime in Pairs",
+    "version": "Bull. Polish Acad. Sci. Math. 62 (2014), 215–231",
+    "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/85773",
+    "local_path": "sources/brudern-coprime-squares-2014.pdf",
+    "statements_inspected": "Theorem 2; Lemmas 2, 4, 5 and Sections 2–4: four-square pairwise-coprimality asymptotic, truncation and singular-series completion.",
+    "comparison": "Same proof architecture, stronger coprimality pattern for four squares; not a stated arbitrary-binary-pair theorem.",
+    "sha256": "9c8744c44fb31814ccfe62a81ce2e55f8b300b1421d4c96991449ae0b37b12f5"
+  },
+  "dyadic_sources": [
+    {
+      "author": "Yves Martin and Ken Ono",
+      "title": "Eta-quotients and elliptic curves",
+      "version": "Author PDF dated 6 May 1996",
+      "url": "https://uva.theopenscholar.com/files/ken-ono/files/026_8.pdf",
+      "local_path": "sources/martin-ono-eta-quotients-1996.pdf",
+      "sha256": "f240dc709d4b3e2a9a1a1cef1bb3beb35d0a62f6c26989beeb44f87deacbe425",
+      "statements_used": [
+        "Theorem 1, level-32 row: eta(4tau)^2 eta(8tau)^2 is a normalized weight-two newform.",
+        "Theorems 2 and 3, level-32 row: Gaussian CM identification and explicit odd-prime coefficients."
+      ],
+      "inspection_scope": "Actual primary theorem statements, normalization and prime formulas inspected internally."
+    },
+    {
+      "author": "Jacob Sturm",
+      "title": "On the Congruence of Modular Forms",
+      "version": "Lecture Notes in Mathematics 1240 (1987), 275–280; retained official two-page preview pp.275–276",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0072985",
+      "local_path": "sources/sturm-congruence-1987-theorem-preview.pdf",
+      "sha256": "3a10acc1d3d081072a1900b40cc0917ea223a6437b16f1ccfa0f6cb112edfe3d",
+      "statements_used": [
+        "Theorem 1, printed p.276: equality modulo a prime follows when the difference has order greater than k times the group index divided by 12.",
+        "Applied modulo every rational prime to integer coefficient forms, this proves equality from coefficients through floor(k times index divided by 12)."
+      ],
+      "inspection_scope": "Actual theorem statement and beginning of proof inspected in primary preview; the rest of the article is not retained or claimed inspected."
+    }
+  ],
+  "dyadic_scope": "Exact unrestricted formulas (29)–(30) count only coordinate primitivity at 2 for Q=x^2+2y^2; odd inert prime obstructions are not removed. The q^0 through q^2 and q^0 through q^8 Sturm certificates establish their completeness under the sourced modularity statements.",
+  "minus8_spectral_dependency": {
+    "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+    "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+    "scope": "Proof of the finite quaternion quotient spectral lemma, including the exact all-ideal correspondence, norm characters, Jacquet-Langlands transfer and weight-two prime-power bounds.",
+    "specialization": "Analytic note (32)–(36) verifies the replacement order, class-number-one double coset, unit normalization 4, local level at 2 and the finite 2-power operators; the cited external theorem editions are those pinned by this existing proof."
+  },
+  "minus8_effective_scope": {
+    "global_onset": 302231454903657293676544,
+    "global_statement": "Every N at least 2^78 with 16 not dividing N is a sum of two positive primitive -8 norm values.",
+    "reduced_odd_inert_core_onset": 1152921504606846976,
+    "all_prime_statement": "Every prime N at least 2 belongs to P_-8+P_-8; analytic threshold 2^22 plus exhaustive retained finite certificate.",
+    "prime_finite_bound": 4194304,
+    "remaining_exact_classification": "Equivalent to all N=2^e*m>=2, 0<=e<=3, odd m<2^60 with only primes 5 or 7 modulo 8; that finite family remains unchecked in full.",
+    "certificate": "primitive_norm_quaternary_checks.json",
+    "priority": "The dyadic identities and finite-quotient method are classical; no priority claim for these explicit specializations.",
+    "distinct_value_lower_bound": "At least N^(2/3)/4800 ordered value pairs for every N>=2^78 with16 not dividing N."
+  }
+}

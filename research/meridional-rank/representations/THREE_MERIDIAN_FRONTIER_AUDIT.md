@@ -1,8 +1,10 @@
 # The three-meridian / four-bridge obstruction
 
 Audit: 18 November 2026. This is a target audit and falsification record,
-not an unrestricted MRC theorem or a novelty claim. The concrete four-braid
-input below is now excluded by a direct finite-field trace certificate.
+not an unrestricted MRC theorem or a novelty claim. The four-braid input
+is excluded by a direct trace certificate. The trace-invariant five-braid
+input is also excluded from three-meridian generation, by a direct
+nonabelian seven-sheet branched-cover certificate.
 
 ## Precise target and known boundary
 
@@ -559,6 +561,212 @@ seeds of the stated form, since it would produce an excluded triple.
 Further conjugator or Stallings enumeration on this knot is unnecessary.
 
 
+## A trace-invariant input excluded by a seven-sheet cover
+
+The next input is fixed, rather than a family-expansion claim:
+
+    beta = sigma1*sigma2*sigma3*sigma4^(-1) in B5,
+    K = closure(beta*Delta5^(-8)),
+    Delta5^2 = (sigma1*sigma2*sigma3*sigma4)^5.
+
+Up to mirror, this is T(5,19;2,1). The exact conclusion is now
+
+    4 <= mr(K) <= 5 = b(K).
+
+Every meridional triple, every meridional-involution triple in the
+order-two orbifold group, and every inverted generating pair in the
+actual deck OUTER class is excluded below. Meridional rank four versus
+five remains unresolved here; this is not an MRC counterexample.
+
+**Exact axis identification.** Hilden--Lozano--Montesinos-Amilibia,
+Math. Proc. Cambridge Philos. Soc. 129 (2000), 477--490, Section 2,
+Corollary 2.2 and Remark 2.4, give a marked unknot-axis normal form for
+two-bridge links. The ordinary continued fraction
+
+    [2,1,-2,1,2,1,-2,-1,2] = 22/3
+
+has their sign vector (1,1,1,-1). Since all four labels have absolute
+value one, their diagram is precisely the closed braid beta with its
+axis. Lee--Seo, Bull. Aust. Math. Soc. 79 (2009), 273--284, printed
+pp.273--275, Figures 1--3, reproduce this axis diagram; printed p.274
+was rendered and visually inspected. Reversing the strand numbering
+conjugates by Delta5, and changing the cyclic cut conjugates the braid.
+A global mirror changes all crossing and surgery signs together.
+[HLM](https://doi.org/10.1017/S0305004100004679),
+[Lee--Seo](https://doi.org/10.1017/S0004972708001251).
+
+**Cover and framing.** The two components of B(22,3) are interchangeable
+unknots. The double cover branched on either component lifts the other
+to the two-bridge knot B(11,3), namely 6_2 up to mirror. One exact model
+takes the lens-space double cover L(22,3) and its index-two cover
+L(11,3); the two reflection classes downstairs give the two components.
+The residual period on B(11,3) has this B(22,3) quotient link.
+
+On preferred peripheral coordinates for that period, the map is
+mu_up -> mu_down, lambda_up -> 2*lambda_down: the knot maps with degree
+two, and the homologically zero longitude has no meridian term.
+Thus +1/2 surgery upstairs descends to +1/4 surgery on the quotient
+unknot. In the convention that +1/n surgery removes an axis by n
+negative full twists, this gives beta*Delta5^(-8). Its odd numerator
+makes the extension on the filled solid torus free, so no extra branch
+component appears. Mirror conventions may reverse the displayed surgery
+sign; the two signs are kept together.
+
+Consequently Sigma_2(K) is a numerator-one, denominator-two surgery on
+6_2, up to these sign conventions. Its H1 is zero. The upper tunnel
+splitting gives Heegaard genus and group rank at most two.
+Brittenham--Wu, Theorem 1.1 (printed p.98) and Remark 6.3 (p.112),
+show that every nonintegral surgery on a hyperbolic two-bridge knot is
+hyperbolic. Thus BOTH signs here are hyperbolic; the group is noncyclic,
+and its rank and the cover's Heegaard genus are exactly two.
+[Brittenham--Wu, published paper](https://doi.org/10.4310/CAG.2001.v9.n1.a4).
+
+Optional interval checks with SageMath 10.9 and SnapPy 3.3.2 also
+succeeded for both literal census fillings Manifold("6_2") with slopes
+(1,2) and (1,-2), using verify_hyperbolicity(bits_prec=160) on the
+original filled triangulation. These supplementary checks do not certify
+a surgery-sign convention and are not needed for the published
+hyperbolicity implication.
+
+**Independent bridge lower bound.** Put delta=sigma1*sigma2*sigma3*sigma4.
+Mirror beta*Delta5^(-8), then conjugate by Delta5, which reverses the
+generator indices. The braid becomes
+
+    (sigma4^-1*sigma3^-1*sigma2^-1*sigma1)*Delta5^8
+      = delta^-1*sigma1^2*delta^20
+      = delta^19*sigma1^2.
+
+This is the positive twisted torus braid T(5,19;2,1). Vafaee's
+published Theorem 1 (restated as Theorem 3.1) makes it an L-space knot:
+in the notation K(p,kp-1;s,r), take p=5, k=4, s=2 and r=1. The braid
+contains a positive full twist, so its braid index is five; Krishna--
+Morton's published Theorem 1.3 then gives bridge index five as well.
+Their proof uses the first Alexander-polynomial gap and Floer torsion
+for L-space knots. Thus b(K)=5 uses published premises and needs no
+general twist-positive bridge theorem. Sage's exact braid arithmetic
+also checked the displayed identities; neither numerical recognition
+nor a computed knot table supplies the lower bound.
+[Vafaee, Theorem 1](https://arxiv.org/html/1311.3711v2),
+[Krishna--Morton, Theorem 1.3](https://doi.org/10.1007/s00029-024-00996-6).
+
+**Why the trace obstruction cannot decide it.** Reid--Walsh, Section 2.4,
+proof of Lemma 2.8, mark the period by a basepoint on its axis and give
+tau(a)=b, tau(b)=a for the original upper meridians. The same swap
+descends over the filling. Since a,b remain conjugate and generate the
+filled group, every SL2 representation over every field has
+tr(a)=tr(b). Swapping them fixes all three trace coordinates
+tr(a), tr(b), tr(ab), hence fixes every word trace by (T1)--(T2).
+Thus the direct trace method that eliminated T(4,5;2,2) cannot eliminate
+this input.
+[Reid--Walsh, Section 2.4](https://web.ma.utexas.edu/users/areid/walsh_reid_final.pdf).
+
+**Direct nonabelian cover certificate.** Use the positive mirror
+T(5,19;2,1), with the literal braid delta^19*sigma1^2. Write m1,...,m5
+for its strand meridians. On sheets numbered 0,...,6 take
+
+    m1 -> (0 1)(2 3),
+    m2 -> (1 2)(4 5),
+    m3 -> (1 6)(3 4),
+    m4 -> (0 6)(2 4),
+    m5 -> (2 5)(3 6).
+
+The checker derives all five Artin closure relators by the positive
+Hurwitz update (U,V)->(U V U^-1,U) through all 78 crossings. The five
+permutations satisfy every relation and act transitively. Each has five
+cycles and permutation index two.
+
+Here is the complete small certificate for the fundamental group of
+the connected seven-sheet branched completion Y. In the right Schreier
+graph use base sheet zero and scan letters +m1,-m1,...,+m5,-m5. Its
+tree edges (start sheet, generator index) are
+
+    (0,1), (0,4), (1,2), (2,4), (2,5), (6,5).
+
+The tree transversals are
+
+    r0=1, r1=m1, r2=m1*m2, r3=m4*m5,
+    r4=m1*m2*m4, r5=m1*m2*m5, r6=m4.
+
+Order all 29 remaining positive edges lexicographically by
+(start sheet, generator index), and let yj be the corresponding
+Schreier generator r_v*m_i*r_(v.m_i)^-1. Over F13 send all yj to I
+except
+
+    y5  -> (0,12;1,3),     y8  -> (1,1;1,2),
+    y11 -> (2,12;12,1),    y13 -> (4,9;4,6),
+    y17 -> (9,10;1,7),     y18 -> (6,4;9,4),
+    y22 -> (7,3;12,9),     y28 -> (3,1;12,0).
+
+All matrices have determinant one. The checker reconstructs and
+verifies all 35 lifts of the five braid relations and all 25 branch
+fillings: one lift of m_i^length for EVERY cycle of EVERY mi, including
+fixed points. Every one of these 60 raw relations maps to I, while
+y5=m1*m3*m4^-1 maps to (0,12;1,3), not I. Thus pi1(Y) is nontrivial.
+No Tietze simplification, software-derived knot group, surgery framing,
+lens-space identification or numerical geometry enters this certificate.
+
+**Why every triple is excluded.** If any three meridians generated
+the knot group, their seven-sheet presentation graph would have seven
+vertices. Each generator's two 2-cycles and three 1-cycles are killed by
+branched filling; deleting one edge from each cycle leaves two edges
+per generator. Connectivity is preserved. The resulting graph has
+seven vertices and six edges, hence is a tree. The branched-cover group
+would be trivial, contradicting the matrix certificate. Equivalently,
+the general branched-cover rank bound gives
+
+    mr(K) >= ceil((7-1+rank(pi1(Y)))/2) >= 4.
+
+The same graph argument applies to a generating triple of conjugates
+of the meridional involution in Gamma=G/<<m1^2>>. The 2-cycle reverse
+edges are removed by the involution relations and all fixed-sheet
+loops die in the underlying branched completion. It again forces
+pi1(Y)=1. Therefore Gamma has no such triple either.
+The [general rank-bound proof](GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex)
+supplies the argument for arbitrary meridian cycle types; the proof
+above spells out this special case.
+
+**Why every deck inversion pair is excluded.** Let Pi=pi1(Sigma_2(K))
+and fix the actual meridional involution t, so Gamma=Pi semidirect <t>.
+The preceding surgery description and Brittenham--Wu give a
+contractible universal cover of the three-manifold Sigma_2(K) and Z(Pi)=1.
+
+Every order-two element s of Gamma is Pi-conjugate to t. To see this,
+Gamma acts by lifts of the branched-cover involution on that
+contractible universal cover. If s acted freely, its quotient would be
+a three-dimensional K(C2,1), impossible because
+H^n(C2;F2)=F2 for every n>=0 by the periodic resolution. Thus s fixes a
+point. Its projection lies on the one connected branch circle. Lift a
+path along that circle to the chosen branch basepoint. Uniqueness of
+path lifting makes s fix this lifted path. A Pi deck transformation
+takes its endpoint to the chosen point fixed by t; the conjugated s
+and t are then lifts of the same involution fixing the same point,
+hence equal.
+
+Suppose alpha=Inn(g)*tau inverts a generating pair (u,v) of Pi.
+Then alpha^2=id, so g*tau(g) is central and therefore is 1.
+Consequently s=g*t satisfies s^2=1 and
+
+    Gamma=<s,u*s,v*s>.
+
+These are three nontrivial involutions, all conjugate to t, contrary
+to the seven-sheet obstruction. Thus NO representative of the actual
+deck outer class inverts ANY generating pair.
+
+In particular, ordinary cover rank two and invariance of EVERY
+two-dimensional word trace are not sufficient for a deck inversion.
+This does not refute Boileau--Weidmann's inversion-realization question:
+the required inversion does not exist. Their Lemma 6 and Corollary 8
+also preserve the outer inversion class under Nielsen changes and
+generation-preserving root replacements between invertible pairs.
+[Boileau--Weidmann, pp.107--108](https://msp.org/gtm/2008/14/gtm-2008-14-007p.pdf).
+
+This input can no longer test the three-meridian premise. A proof that
+four ORIGINAL meridians generate its knot group would still contradict
+b(K)=5; a lower bound of five would instead establish MRC for this one
+knot. Neither conclusion is established. Further searches for an
+inverted pair in this deck class cannot resolve that distinction.
+
+
 ## Replay and assurance
 
 Run from the repository root:
@@ -574,6 +782,14 @@ arithmetic, closure, the even word and its unequal deck traces, and
 corrupted-colour/wrong-braid rejection controls. The written trace lemma
 (T1)--(T2) supplies the universal implication; the computation checks its
 finite certificate, rather than proving that implication by sampling.
+
+Its separate T(5,19;2,1) branch reconstructs all 78 literal braid
+crossings, the seven-sheet permutation action, all 29 Schreier
+generators, all 35 lifted closure relations and all 25 branch
+fillings. The F13 assignment above verifies nontriviality directly.
+Determinant-one corrupted matrices and the wrong braid are rejected.
+This proves only the written lower bound four; it does not certify
+meridional rank five or any original four-meridian generating tuple.
 
 It also retains the older coordinate and relator identities, trefoil
 images, five finite quotient screens, determinant/order-eight

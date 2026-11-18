@@ -7,6 +7,10 @@ sigma1^4 (sigma1 sigma2 sigma3)^5, without importing a simplified knot
 presentation or peripheral word. The universal trace argument is written
 in the audit; this script checks its finite matrix certificate.
 
+A second direct braid branch certifies mr>=4 for T(5,19;2,1) by a
+nontrivial SL_2(F_13) image of a seven-sheet irregular branched-cover
+group. It reconstructs every braid relation and branch filling.
+
 Older free-by-cyclic and subgroup controls remain exact checks for their
 literal inputs. They are not required by the direct lower bound.
 
@@ -20,6 +24,7 @@ of the meridional-rank certificate. No unrestricted MRC result is claimed.
 from __future__ import annotations
 
 import argparse
+from collections import deque
 import hashlib
 import json
 from itertools import combinations
@@ -481,6 +486,183 @@ def check_direct_braid_trace_certificate():
     }
 
 
+
+def check_t51921_seven_sheet_cover():
+    """Check nontriviality of a literal braid's irregular branched cover."""
+    braid = (1, 2, 3, 4) * 19 + (1, 1)
+    colors = (
+        (1, 0, 3, 2, 4, 5, 6),
+        (0, 2, 1, 3, 5, 4, 6),
+        (0, 6, 2, 4, 3, 5, 1),
+        (6, 1, 4, 3, 2, 5, 0),
+        (0, 1, 5, 6, 4, 2, 3),
+    )
+    prime = 13
+    identity = (1, 0, 0, 1)
+    nonidentity = {
+        5: (0, 12, 1, 3),
+        8: (1, 1, 1, 2),
+        11: (2, 12, 12, 1),
+        13: (4, 9, 4, 6),
+        17: (9, 10, 1, 7),
+        18: (6, 4, 9, 4),
+        22: (7, 3, 12, 9),
+        28: (3, 1, 12, 0),
+    }
+    images = [nonidentity.get(i, identity) for i in range(1, 30)]
+
+    def multiply(left, right):
+        return tuple(
+            sum(left[2 * i + k] * right[2 * k + j] for k in range(2)) % prime
+            for i in range(2) for j in range(2)
+        )
+
+    def matrix_inverse(matrix):
+        require((matrix[0] * matrix[3] - matrix[1] * matrix[2]) % prime == 1,
+                "seven-cover matrix determinant one")
+        return (matrix[3], -matrix[1] % prime, -matrix[2] % prime, matrix[0])
+
+    def verify(literal_braid, matrix_images):
+        # Artin word updates derive the knot group directly from the braid.
+        words = [[i] for i in range(1, 6)]
+        strand_permutation = list(range(5))
+        for crossing in literal_braid:
+            i = abs(crossing) - 1
+            left, right_word = words[i:i + 2]
+            if crossing > 0:
+                words[i:i + 2] = [
+                    reduce_word(left + right_word + inverse_word(left)), left,
+                ]
+            else:
+                words[i:i + 2] = [
+                    right_word,
+                    reduce_word(inverse_word(right_word) + left + right_word),
+                ]
+            strand_permutation[i], strand_permutation[i + 1] = (
+                strand_permutation[i + 1], strand_permutation[i]
+            )
+        orbit = {0}
+        vertex = strand_permutation[0]
+        while vertex not in orbit:
+            orbit.add(vertex)
+            vertex = strand_permutation[vertex]
+        require(len(orbit) == 5 and vertex == 0, "five-cycle: closure is a knot")
+        closure = [reduce_word(words[i] + [-(i + 1)]) for i in range(5)]
+
+        # Convert the left permutation representation to right Schreier actions.
+        right = {i: inverse_permutation(color) for i, color in enumerate(colors, 1)}
+        right.update({-i: inverse_permutation(color) for i, color in list(right.items())})
+
+        def follow(start, word):
+            for letter in word:
+                start = right[letter][start]
+            return start
+
+        for relator in closure:
+            require(all(follow(v, relator) == v for v in range(7)),
+                    "all literal braid closure relations in the seven-sheet action")
+
+        # Deterministic tree: base sheet zero, letters +1,-1,...,+5,-5.
+        representatives, tree, queue = {0: []}, set(), deque([0])
+        letters = [letter for i in range(1, 6) for letter in (i, -i)]
+        while queue:
+            start = queue.popleft()
+            for letter in letters:
+                end = right[letter][start]
+                if end not in representatives:
+                    representatives[end] = reduce_word(representatives[start] + [letter])
+                    tree.add((start, letter) if letter > 0 else (end, -letter))
+                    queue.append(end)
+        require(len(representatives) == 7 and len(tree) == 6,
+                "transitive seven-sheet action and spanning tree")
+        require(tree == {(0, 1), (0, 4), (1, 2), (2, 4), (2, 5), (6, 5)},
+                "literal tree fixes the matrix-certificate basis")
+        edges = [(v, i) for v in range(7) for i in range(1, 6) if (v, i) not in tree]
+        edge_ids = {edge: i + 1 for i, edge in enumerate(edges)}
+        require(len(edges) == len(matrix_images) == 29, "29 raw Schreier generators")
+
+        def rewrite(start, word):
+            result = []
+            for letter in word:
+                end = right[letter][start]
+                index = (edge_ids.get((start, letter), 0) if letter > 0
+                         else -edge_ids.get((end, -letter), 0))
+                if index:
+                    result.append(index)
+                start = end
+            return reduce_word(result), start
+
+        relations = []
+        for relator in closure:
+            for start in range(7):
+                word, end = rewrite(start, relator)
+                require(end == start, "closed lift of a braid relation")
+                relations.append(word)
+        require(len(relations) == 35, "all 35 braid relation lifts")
+
+        # Fill one lift of x_i^length for EVERY cycle, including fixed points.
+        branch_fills = 0
+        for generator in range(1, 6):
+            seen, lengths = set(), []
+            for start in range(7):
+                if start in seen:
+                    continue
+                cycle, vertex = [], start
+                while vertex not in seen:
+                    seen.add(vertex)
+                    cycle.append(vertex)
+                    vertex = right[generator][vertex]
+                require(vertex == start, "complete meridian cycle")
+                lengths.append(len(cycle))
+                power = [generator] * len(cycle)
+                word, end = rewrite(start, power)
+                require(end == start, "closed branch filling")
+                conjugate = (representatives[start] + power
+                             + inverse_word(representatives[start]))
+                require(rewrite(0, conjugate) == (word, 0),
+                        "transversal gives the based branch meridian")
+                relations.append(word)
+                branch_fills += 1
+            require(sorted(lengths) == [1, 1, 1, 2, 2],
+                    "each meridian has two transpositions and three fixed sheets")
+        require(branch_fills == 25 and len(relations) == 60,
+                "all 25 branch fillings and 60 total raw relations")
+        matrix_inverses = [matrix_inverse(matrix) for matrix in matrix_images]
+        for relator in relations:
+            value = identity
+            for letter in relator:
+                value = multiply(value, matrix_images[letter - 1] if letter > 0
+                                 else matrix_inverses[-letter - 1])
+            require(value == identity, "raw branched-cover relation over F13")
+        require(matrix_images[4] != identity, "nontrivial image of raw generator five")
+        return {
+            "braid_crossings": len(literal_braid),
+            "sheets": 7,
+            "meridian_cycle_lengths": [1, 1, 1, 2, 2],
+            "raw_Schreier_generators": len(edges),
+            "verified_braid_relation_lifts": 35,
+            "verified_branch_fillings": branch_fills,
+            "field_prime": prime,
+            "nontrivial_generator": 5,
+            "nontrivial_matrix": list(matrix_images[4]),
+        }
+
+    result = verify(braid, images)
+    corrupted = list(images)
+    corrupted[4] = multiply(corrupted[4], (1, 1, 0, 1))
+    require(rejects(lambda: verify(braid, corrupted)),
+            "determinant-one corrupted seven-cover matrix rejected")
+    require(rejects(lambda: verify((1, 2, 3, 4) * 18 + (1, 1), images)),
+            "wrong literal braid rejected by the seven-cover certificate")
+    result["corruption_rejections"] = 2
+    result["scope"] = (
+        "Nontrivial pi1 of the literal braid's seven-sheet branched cover; "
+        "the written graph argument excludes every meridional triple. "
+        "No presentation/peripheral software import; mr is four or five."
+    )
+    return result
+
+
 def candidate_exterior():
     """Reconstruct the literal diagram and its pinned peripheral software data."""
     import snappy
@@ -716,22 +898,23 @@ def main():
     counts["fiber_nilpotent_density_barrier"] = check_fiber_nilpotent_barrier(relator)
     counts["odd_cone_order_lifting_barrier"] = check_odd_cone_lifting_barrier()
     counts["direct_braid_deck_trace_obstruction"] = check_direct_braid_trace_certificate()
+    counts["direct_t51921_seven_sheet_cover"] = check_t51921_seven_sheet_cover()
     if args.verify_exterior:
         counts["candidate_exterior"] = check_candidate_exterior()
     if args.verify_cover:
         counts["candidate_closed_cover"] = check_candidate_closed_cover()
 
     print(json.dumps({
-        "status": "pass_exact_candidate_rank_four_no_unrestricted_MRC_resolution",
+        "status": "pass_exact_frontier_certificates_no_unrestricted_MRC_resolution",
         "python": platform.python_version(),
         "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "literal_braid": list(BETA),
         "counts": counts,
         "assurance": (
-            "Exact standard-library direct braid certificate for candidate "
-            "meridional rank and bridge number four. Older simplified-group "
-            "and optional geometry controls retain their separate software imports. "
-            "No unrestricted Meridional Rank Conjecture resolution."
+            "Exact standard-library direct braid certificates: mr=b=4 for T(4,5;2,2), "
+            "and mr>=4 for T(5,19;2,1) via a nontrivial seven-sheet branched cover. "
+            "Older simplified-group and optional geometry controls retain their "
+            "separate software imports. No unrestricted MRC resolution."
         ),
     }, indent=2, sort_keys=True))
 

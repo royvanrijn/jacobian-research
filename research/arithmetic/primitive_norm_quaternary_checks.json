@@ -1,0 +1,244 @@
+{
+  "binary_mobius_cases": 1792,
+  "checker_sha256": "a8eb817139bce21fc44ff59afbf32000b2395e2008f0eeb02991bc2df9774325",
+  "double_mobius_targets": 1020,
+  "dyadic_sturm_certificate": {
+    "completeness": "modularity plus sourced Sturm bounds proves unrestricted theta identities from the listed coefficients",
+    "dyadic_direct_comparison_through": 256,
+    "eta_coefficients_through_17": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      -2,
+      0,
+      0,
+      0,
+      -3,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      2
+    ],
+    "r_coefficients_through_bound": [
+      1,
+      4,
+      8
+    ],
+    "r_index": 12,
+    "r_level": 8,
+    "r_sturm_bound": 2,
+    "s_coefficients_through_bound": [
+      1,
+      2,
+      2,
+      4,
+      4,
+      4,
+      8,
+      8,
+      8
+    ],
+    "s_index": 48,
+    "s_level": 32,
+    "s_sturm_bound": 8
+  },
+  "four_square_normalization": {
+    "beta2_one": "1",
+    "gram_determinant": 16,
+    "r4_one": 8
+  },
+  "good_prime_formula_residues": 3282,
+  "integer_bound": 256,
+  "local_sample_checks": {
+    "-11": {
+      "exponent": 3,
+      "observed_support": "not divisible by 121",
+      "prime": 11,
+      "soluble_residues": 1320,
+      "target_residues": 1331
+    },
+    "-8": {
+      "exponent": 7,
+      "observed_support": "not divisible by 16",
+      "prime": 2,
+      "soluble_residues": 120,
+      "target_residues": 128
+    }
+  },
+  "minus8_all_prime_certificate": {
+    "bound_inclusive": 4194304,
+    "fallback_targets": [],
+    "fallback_witnesses": [],
+    "independent_norm_regression_through": 10000,
+    "norm_flags_sha256": "868207aa09bdfdf680e34e17855af2ce55be72bf374ad6e26939bf6cc00e1403",
+    "norm_membership": "E3: 2^epsilon times a product of primes 1 or 3 modulo 8, epsilon=0 or 1",
+    "prime_exceptions": [],
+    "prime_targets": 295947,
+    "scope": "exhaustive finite proof certificate for every prime target up to 2^22, combined with the analytic prime threshold for the all-prime theorem",
+    "short_summand_bound": 5000,
+    "short_summand_count": 1064,
+    "sumset_coverage_sha256": "ac10f4b7cc60f6c75c2e69fd48128cb55cf216ba670997993ecd479a75f06d16"
+  },
+  "minus8_explicit_constants": {
+    "cutoff_inequalities": {
+      "all_odd_m_at_2^75": "114820185/234881024",
+      "inert_m_at_2^60": "1015877/2097152",
+      "odd_prime_at_2^22": "5027/10240"
+    },
+    "distinct_value_lower_bound": "N^(2/3)/4800 at the global onset",
+    "factor_certificates": {
+      "k4_split": {
+        "exponent_bound": 4,
+        "local_factors": [
+          {
+            "factor": "256/27",
+            "max_exponent": 3,
+            "prime": 3
+          },
+          {
+            "factor": "16/11",
+            "max_exponent": 1,
+            "prime": 11
+          }
+        ],
+        "power_product": "4096/297",
+        "prime_cutoff_exclusive": 16,
+        "root_bound": 2
+      },
+      "k6_inert": {
+        "exponent_bound": 6,
+        "local_factors": [
+          {
+            "factor": "4096/125",
+            "max_exponent": 3,
+            "prime": 5
+          },
+          {
+            "factor": "729/49",
+            "max_exponent": 2,
+            "prime": 7
+          },
+          {
+            "factor": "64/13",
+            "max_exponent": 1,
+            "prime": 13
+          },
+          {
+            "factor": "64/23",
+            "max_exponent": 1,
+            "prime": 23
+          },
+          {
+            "factor": "64/29",
+            "max_exponent": 1,
+            "prime": 29
+          },
+          {
+            "factor": "64/31",
+            "max_exponent": 1,
+            "prime": 31
+          },
+          {
+            "factor": "64/37",
+            "max_exponent": 1,
+            "prime": 37
+          },
+          {
+            "factor": "64/47",
+            "max_exponent": 1,
+            "prime": 47
+          },
+          {
+            "factor": "64/53",
+            "max_exponent": 1,
+            "prime": 53
+          },
+          {
+            "factor": "64/61",
+            "max_exponent": 1,
+            "prime": 61
+          }
+        ],
+        "power_product": "840479776858391445504/9256403112695375",
+        "prime_cutoff_exclusive": 64,
+        "root_bound": 7
+      },
+      "k6_split": {
+        "exponent_bound": 6,
+        "local_factors": [
+          {
+            "factor": "15625/81",
+            "max_exponent": 4,
+            "prime": 3
+          },
+          {
+            "factor": "729/121",
+            "max_exponent": 2,
+            "prime": 11
+          },
+          {
+            "factor": "64/17",
+            "max_exponent": 1,
+            "prime": 17
+          },
+          {
+            "factor": "64/19",
+            "max_exponent": 1,
+            "prime": 19
+          },
+          {
+            "factor": "64/41",
+            "max_exponent": 1,
+            "prime": 41
+          },
+          {
+            "factor": "64/43",
+            "max_exponent": 1,
+            "prime": 43
+          },
+          {
+            "factor": "64/59",
+            "max_exponent": 1,
+            "prime": 59
+          }
+        ],
+        "power_product": "150994944000000/4065296411",
+        "prime_cutoff_exclusive": 64,
+        "root_bound": 6
+      }
+    },
+    "global_N_onset": 302231454903657293676544,
+    "global_surviving_shell_margin": "2620327/234881024",
+    "hurwitz_units": 24,
+    "local_hurwitz_unit_residues_mod_2H": 12,
+    "local_order_unit_residues_mod_2H": 2,
+    "odd_prime_onset": 4194304,
+    "order_units": 4,
+    "reduced_inert_odd_m_onset": 1152921504606846976,
+    "scope": "exact finite factor and local-unit certificates used by the explicit -8 Hecke sieve proof",
+    "unit_cosets": 6,
+    "wheel_primes_through_64": [
+      5,
+      7,
+      13,
+      23,
+      29,
+      31,
+      37,
+      47,
+      53,
+      61
+    ],
+    "wheel_upper_bound": "49287299505759574293/269836951018231737140"
+  },
+  "nonsingular_lift_residues": 68,
+  "python": "standard library; exact integers",
+  "rouse_pdf_sha256": "db9e5b5dd29579892b2a3d332c84a706a359a7c405291d9c8fe042cb68de879a",
+  "scope": "finite exact checks; listed Sturm certificates prove the two theta identities under sourced modularity; no computational proof of the general analytic theorem or independent mathematical review"
+}

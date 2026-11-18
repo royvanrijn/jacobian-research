@@ -1,0 +1,702 @@
+{
+  "scope": "Finite exact arithmetic checks; unrestricted local claims require the lifting proof.",
+  "python": "3.12.3",
+  "checker_sha256": "9b1cb986a6f434f014abb798498f8a8cf20aeb65f260de461e371e39bca0340f",
+  "good_prime_density_cases": 5378,
+  "dyadic_tables": [
+    {
+      "D": -8,
+      "modulus": 8,
+      "primitive_residues": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "sumset_size": 8
+    },
+    {
+      "D": -20,
+      "modulus": 8,
+      "primitive_residues": [
+        1,
+        5,
+        6
+      ],
+      "sumset_size": 5
+    },
+    {
+      "D": -8,
+      "modulus": 16,
+      "primitive_residues": [
+        1,
+        2,
+        3,
+        6,
+        9,
+        11
+      ],
+      "sumset_size": 15
+    },
+    {
+      "D": -20,
+      "modulus": 16,
+      "primitive_residues": [
+        1,
+        5,
+        6,
+        9,
+        13,
+        14
+      ],
+      "sumset_size": 10
+    },
+    {
+      "D": -8,
+      "modulus": 32,
+      "primitive_residues": [
+        1,
+        2,
+        3,
+        6,
+        9,
+        11,
+        17,
+        18,
+        19,
+        22,
+        25,
+        27
+      ],
+      "sumset_size": 30
+    },
+    {
+      "D": -20,
+      "modulus": 32,
+      "primitive_residues": [
+        1,
+        5,
+        6,
+        9,
+        13,
+        14,
+        17,
+        21,
+        22,
+        25,
+        29,
+        30
+      ],
+      "sumset_size": 20
+    },
+    {
+      "D": -8,
+      "modulus": 64,
+      "primitive_residues": [
+        1,
+        2,
+        3,
+        6,
+        9,
+        11,
+        17,
+        18,
+        19,
+        22,
+        25,
+        27,
+        33,
+        34,
+        35,
+        38,
+        41,
+        43,
+        49,
+        50,
+        51,
+        54,
+        57,
+        59
+      ],
+      "sumset_size": 60
+    },
+    {
+      "D": -20,
+      "modulus": 64,
+      "primitive_residues": [
+        1,
+        5,
+        6,
+        9,
+        13,
+        14,
+        17,
+        21,
+        22,
+        25,
+        29,
+        30,
+        33,
+        37,
+        38,
+        41,
+        45,
+        46,
+        49,
+        53,
+        54,
+        57,
+        61,
+        62
+      ],
+      "sumset_size": 40
+    },
+    {
+      "D": -8,
+      "modulus": 128,
+      "primitive_residues": [
+        1,
+        2,
+        3,
+        6,
+        9,
+        11,
+        17,
+        18,
+        19,
+        22,
+        25,
+        27,
+        33,
+        34,
+        35,
+        38,
+        41,
+        43,
+        49,
+        50,
+        51,
+        54,
+        57,
+        59,
+        65,
+        66,
+        67,
+        70,
+        73,
+        75,
+        81,
+        82,
+        83,
+        86,
+        89,
+        91,
+        97,
+        98,
+        99,
+        102,
+        105,
+        107,
+        113,
+        114,
+        115,
+        118,
+        121,
+        123
+      ],
+      "sumset_size": 120
+    },
+    {
+      "D": -20,
+      "modulus": 128,
+      "primitive_residues": [
+        1,
+        5,
+        6,
+        9,
+        13,
+        14,
+        17,
+        21,
+        22,
+        25,
+        29,
+        30,
+        33,
+        37,
+        38,
+        41,
+        45,
+        46,
+        49,
+        53,
+        54,
+        57,
+        61,
+        62,
+        65,
+        69,
+        70,
+        73,
+        77,
+        78,
+        81,
+        85,
+        86,
+        89,
+        93,
+        94,
+        97,
+        101,
+        102,
+        105,
+        109,
+        110,
+        113,
+        117,
+        118,
+        121,
+        125,
+        126
+      ],
+      "sumset_size": 80
+    }
+  ],
+  "ramified_tables": [
+    {
+      "p": 3,
+      "modulus": 9,
+      "sumset_size": 7
+    },
+    {
+      "p": 7,
+      "modulus": 49,
+      "sumset_size": 48
+    },
+    {
+      "p": 11,
+      "modulus": 121,
+      "sumset_size": 120
+    },
+    {
+      "p": 19,
+      "modulus": 361,
+      "sumset_size": 360
+    }
+  ],
+  "locally_admissible_global_counterexamples": [
+    {
+      "form": [
+        1,
+        1,
+        2
+      ],
+      "N": 7,
+      "all_positive_primitive_values_below_N": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "form": [
+        1,
+        1,
+        5
+      ],
+      "N": 4,
+      "all_positive_primitive_values_below_N": [
+        1
+      ]
+    },
+    {
+      "form": [
+        1,
+        0,
+        5
+      ],
+      "N": 3,
+      "all_positive_primitive_values_below_N": [
+        1
+      ]
+    },
+    {
+      "form": [
+        1,
+        0,
+        5
+      ],
+      "N": 4,
+      "all_positive_primitive_values_below_N": [
+        1
+      ]
+    }
+  ],
+  "individual_norm_counterexample": {
+    "D": -23,
+    "n": 2
+  },
+  "conductor_two_regressions": [
+    4,
+    8
+  ],
+  "additive_order_residue_identities": {
+    "Gaussian_modulus": 8,
+    "Gaussian_primitive_norms": [
+      1,
+      2,
+      5
+    ],
+    "Gaussian_two_sums": [
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "Gaussian_three_sums": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "Gaussian_four_sums": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "Eisenstein_modulus": 9,
+    "Eisenstein_primitive_norms": [
+      1,
+      3,
+      4,
+      7
+    ],
+    "Eisenstein_two_sums": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "exact_density_stabilization_checks": [
+    {
+      "form": [
+        1,
+        0,
+        2
+      ],
+      "prime": 2,
+      "h0": 7,
+      "next_level_target_residues": 256,
+      "normalized_counts_equal": true
+    },
+    {
+      "form": [
+        1,
+        0,
+        5
+      ],
+      "prime": 2,
+      "h0": 5,
+      "next_level_target_residues": 64,
+      "normalized_counts_equal": true
+    },
+    {
+      "form": [
+        1,
+        1,
+        1
+      ],
+      "prime": 3,
+      "h0": 3,
+      "next_level_target_residues": 81,
+      "normalized_counts_equal": true
+    },
+    {
+      "form": [
+        1,
+        0,
+        3
+      ],
+      "prime": 2,
+      "h0": 5,
+      "next_level_target_residues": 64,
+      "normalized_counts_equal": true
+    }
+  ],
+  "exact_higher_sumsets_with_proved_cutoffs": [
+    {
+      "discriminant": -3,
+      "c": 1,
+      "proved_three_cutoff": 3,
+      "all_primitive_norm_values_below_three_cutoff": [
+        1
+      ],
+      "three_summand_exceptions_at_correct_parity_above_minimum": [],
+      "proved_four_cutoff": 4,
+      "four_summand_exceptions_at_correct_parity_above_minimum": [],
+      "unrestricted_scope": "Exact by the elementary cutoff and translation proof PL5, not by an extrapolated scan."
+    },
+    {
+      "discriminant": -11,
+      "c": 3,
+      "proved_three_cutoff": 9,
+      "all_primitive_norm_values_below_three_cutoff": [
+        1,
+        3,
+        5
+      ],
+      "three_summand_exceptions_at_correct_parity_above_minimum": [],
+      "proved_four_cutoff": 12,
+      "four_summand_exceptions_at_correct_parity_above_minimum": [],
+      "unrestricted_scope": "Exact by the elementary cutoff and translation proof PL5, not by an extrapolated scan."
+    },
+    {
+      "discriminant": -19,
+      "c": 5,
+      "proved_three_cutoff": 15,
+      "all_primitive_norm_values_below_three_cutoff": [
+        1,
+        5,
+        7,
+        11
+      ],
+      "three_summand_exceptions_at_correct_parity_above_minimum": [
+        5
+      ],
+      "proved_four_cutoff": 20,
+      "four_summand_exceptions_at_correct_parity_above_minimum": [
+        6
+      ],
+      "unrestricted_scope": "Exact by the elementary cutoff and translation proof PL5, not by an extrapolated scan."
+    },
+    {
+      "discriminant": -43,
+      "c": 11,
+      "proved_three_cutoff": 33,
+      "all_primitive_norm_values_below_three_cutoff": [
+        1,
+        11,
+        13,
+        17,
+        23,
+        31
+      ],
+      "three_summand_exceptions_at_correct_parity_above_minimum": [
+        5,
+        7,
+        9,
+        11,
+        17,
+        21
+      ],
+      "proved_four_cutoff": 44,
+      "four_summand_exceptions_at_correct_parity_above_minimum": [
+        6,
+        8,
+        10,
+        12,
+        18,
+        22
+      ],
+      "unrestricted_scope": "Exact by the elementary cutoff and translation proof PL5, not by an extrapolated scan."
+    },
+    {
+      "discriminant": -67,
+      "c": 17,
+      "proved_three_cutoff": 51,
+      "all_primitive_norm_values_below_three_cutoff": [
+        1,
+        17,
+        19,
+        23,
+        29,
+        37,
+        47
+      ],
+      "three_summand_exceptions_at_correct_parity_above_minimum": [
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        23,
+        27,
+        29,
+        33,
+        45
+      ],
+      "proved_four_cutoff": 68,
+      "four_summand_exceptions_at_correct_parity_above_minimum": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        24,
+        28,
+        30,
+        34,
+        46
+      ],
+      "unrestricted_scope": "Exact by the elementary cutoff and translation proof PL5, not by an extrapolated scan."
+    },
+    {
+      "discriminant": -163,
+      "c": 41,
+      "proved_three_cutoff": 123,
+      "all_primitive_norm_values_below_three_cutoff": [
+        1,
+        41,
+        43,
+        47,
+        53,
+        61,
+        71,
+        83,
+        97,
+        113
+      ],
+      "three_summand_exceptions_at_correct_parity_above_minimum": [
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        47,
+        51,
+        53,
+        57,
+        59,
+        61,
+        65,
+        67,
+        69,
+        71,
+        75,
+        77,
+        79,
+        81,
+        93,
+        111,
+        117,
+        121
+      ],
+      "proved_four_cutoff": 164,
+      "four_summand_exceptions_at_correct_parity_above_minimum": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        48,
+        52,
+        54,
+        58,
+        60,
+        62,
+        66,
+        68,
+        70,
+        72,
+        76,
+        78,
+        80,
+        82,
+        94,
+        112,
+        118,
+        122
+      ],
+      "unrestricted_scope": "Exact by the elementary cutoff and translation proof PL5, not by an extrapolated scan."
+    }
+  ],
+  "exact_triple_sumset_regressions": [
+    {
+      "discriminant": -4,
+      "bound": 256,
+      "matches_exact_three_sumset": true
+    },
+    {
+      "discriminant": -7,
+      "bound": 256,
+      "matches_exact_three_sumset": true
+    },
+    {
+      "discriminant": -8,
+      "bound": 256,
+      "matches_exact_three_sumset": true
+    }
+  ],
+  "universal_order_four_sharpness_residues": [
+    0,
+    1,
+    4
+  ],
+  "explicit_bad_factors": {
+    "D_minus8_mod16": [
+      "0",
+      "1/2",
+      "1/2",
+      "1/2",
+      "5/4",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "5/4",
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "odd_ramified_factor_cases": 540
+  },
+  "outcome": "pass"
+}

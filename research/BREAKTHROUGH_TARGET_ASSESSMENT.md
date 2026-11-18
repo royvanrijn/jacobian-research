@@ -2,7 +2,7 @@
 
 The objective remains a result with major external mathematical impact. None of
 the five unrestricted targets below is resolved by the current repository.
-Primary target: the three-meridian Meridional Rank Conjecture frontier. No secondary target this iteration.
+Primary target: the unrestricted Strong Factorial Conjecture. MRC is deferred after the current fixed-input checkpoint, at the user's request. No secondary target.
 The other candidates are audited here, not pursued as parallel family-expansion
 programmes. Assessment date: 18 November 2026.
 
@@ -273,7 +273,7 @@ retain medium bilinear boxes but lose the existing periodic fallback.
 stated binary frontier. More density-one estimates, local identities or
 large finite searches do not remove its obstruction.
 
-## Meridional rank: primary target
+## Meridional rank: deferred after the current checkpoint
 
 **Quantifiers.** For every classical knot K, is mr(K)=b(K)? The immediate
 universal frontier is mr(K)<=3 => b(K)<=3. A certified triple generating
@@ -323,6 +323,28 @@ admits no inverted generating pair, and the least genus of a splitting
 with trivial-tangle quotients is three. The same obstruction gives
 meridional generating number four in every even-order orbifold quotient.
 The universal three-meridian implication remains open.
+
+
+The further fixed input T(5,19;2,1), up to mirror, is also excluded
+from three-meridian generation. Its cover has rank and Heegaard genus
+two and its actual deck action fixes EVERY two-dimensional word trace
+over every field. Nevertheless a direct seven-sheet branched-cover
+certificate proves mr(K)>=4: the cover group has a nontrivial F13
+matrix image, whereas three meridians would make it trivial by the
+seven-vertex, six-edge Schreier graph argument. All 60 raw relations
+are checked from the literal 78-crossing braid, with no software-derived
+group or surgery marking in that lower bound. The same obstruction
+excludes EVERY inverted generating pair in the actual deck outer class.
+Thus trace invariance and ordinary rank two are insufficient.
+
+Vafaee and Krishna--Morton give b(K)=5 using published theorems.
+Brittenham--Wu's published classification gives hyperbolicity of both
+nonintegral surgeries used to identify the double cover. The exact
+remaining distinction is mr(K)=4 versus5. Only an original four-meridian
+generation certificate would give a counterexample; none is certified.
+The frontier audit records the full small certificate. This is a
+falsification of another three-meridian input, not a breakthrough or a
+new positive family theorem.
 
 ## Gaussian safety-to-purity
 
@@ -543,7 +565,7 @@ or an implication that retains only safety and purity.
 **Impact test.** A general vacuum-rigidity principle could be substantial.
 More support or degree classifications alone fail the requested test.
 
-## Strong Factorial Conjecture
+## Strong Factorial Conjecture: primary target
 
 **Quantifiers.** For every d>=1, nonzero F in C[x1,...,xd] with s nonzero
 monomials, and every n>=1, at least one of
