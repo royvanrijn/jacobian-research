@@ -1,0 +1,183 @@
+{
+  "Euler_measure": {
+    "Euler_normalization_cases": 5,
+    "exact_prime_marginals_nu_over_q_checked": 20,
+    "negative_controls": [
+      "inverting the inert target-correction factor"
+    ],
+    "rational_log_size_Markov_half_mass_cases": 5
+  },
+  "arithmetic_envelopes": {
+    "counts": {
+      "distinct_square_factors_among_hidden_failures": 103,
+      "envelope_prefix_1": 14775,
+      "envelope_prefix_14": 1251,
+      "envelope_prefix_2": 7673,
+      "envelope_prefix_7": 2367,
+      "hidden_class_failures": 26066,
+      "individual_local_candidates": 113253,
+      "principal_primitive_values": 87187
+    },
+    "first_envelopes_n_r_d_c": [
+      [
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        7,
+        7,
+        1,
+        1
+      ],
+      [
+        9,
+        1,
+        3,
+        1
+      ],
+      [
+        25,
+        1,
+        5,
+        1
+      ],
+      [
+        46,
+        2,
+        1,
+        23
+      ],
+      [
+        71,
+        1,
+        1,
+        71
+      ],
+      [
+        79,
+        1,
+        1,
+        79
+      ],
+      [
+        113,
+        1,
+        1,
+        113
+      ],
+      [
+        126,
+        14,
+        3,
+        1
+      ],
+      [
+        161,
+        7,
+        1,
+        23
+      ],
+      [
+        162,
+        2,
+        9,
+        1
+      ],
+      [
+        169,
+        1,
+        13,
+        1
+      ]
+    ],
+    "inputs": "direct gcd-restricted coordinates and independent periodic chi_-56/psi_8 local conditions; no CN4 membership formula",
+    "negative_controls": [
+      "principal norm15 cannot be inserted as an inactive-odd-prime envelope",
+      "wrong genus admits3",
+      "hidden class failure9 cannot be erased from the local candidates",
+      "moving an O-prime square into the H-core is rejected"
+    ],
+    "range": [
+      1,
+      1000000
+    ]
+  },
+  "linear_forms_and_roots": {
+    "O_prime_zero_second_slope_cases": 2500,
+    "additional_deep_target_cases": 5376,
+    "all_combined_root_position_cases": 95200,
+    "d_samples": [
+      1,
+      3,
+      5,
+      9,
+      13,
+      15,
+      65
+    ],
+    "good_primes": [
+      3,
+      5,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43
+    ],
+    "incompatible_prefix_gcd_cases": 238,
+    "inert_target_collision_cases": 2450,
+    "negative_controls": [
+      "wrong inert target collision retains two roots",
+      "wrong omission of q|d removes the O-prime c-root",
+      "wrong coefficient claim makes the second slope a unit at q|d"
+    ],
+    "positive_progression_vs_direct_equation_cases": 1568,
+    "prefixes": [
+      1,
+      2,
+      7,
+      14
+    ]
+  },
+  "rational_Selberg": {
+    "arithmetic": "fractions.Fraction throughout; direct quadratic matrix, independent diagonal sums, and literal interval enumeration",
+    "exact_quadratic_diagonal_and_inversion_cases": 35,
+    "individual_CRT_endpoint_checks": 4275,
+    "integer_interval_sieve_upper_cases": 525,
+    "lambda_corruptions_rejected": 65,
+    "target_samples": [
+      1,
+      11,
+      17,
+      121,
+      187
+    ],
+    "toy_prime_universe": [
+      3,
+      5,
+      11,
+      17,
+      23
+    ],
+    "z_samples": [
+      1,
+      3,
+      5,
+      11,
+      17,
+      33,
+      55
+    ]
+  },
+  "schema": "primitive-norm-class4-sieve-finite-check-v1",
+  "scope": "Finite identities only. No finite extrapolation to the infinite pointwise class-error estimate, AP Mertens theorem, or eventual additive representability.",
+  "source_sha256": "d96f1659c809124450818b0cfc05bc429c7208a7415f3ab9f31d2d056a917458",
+  "status": "pass"
+}

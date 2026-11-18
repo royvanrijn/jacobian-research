@@ -614,44 +614,52 @@ forms, despite the original pair being regular. Also
 exceeding its three monomials. Thus neither those diagonal targets nor
 an ungrouped saddle count supplies the general support-size window.
 
-The next proposed certificate concerns the resultant after replacing
-exponential rows by normalized Gamma variables. Its coefficients are
-integer polynomials in the inverse shapes. Uniform coefficient
-nonnegativity, up to a fixed scalar sign, together with at least one
-positive coefficient would prove unrestricted SFC. This is an unproved
-stronger assertion, not a completed reduction to a known theorem. The
-needed global positive expansion is missing; total positivity of the
-underlying moment kernel is false even for three linear monomials.
+The proposed raw Gamma-resultant coefficient certificate is now
+**falsified**. For the primitive row A={0,1,3,7}, n=1, the exact
+resultant has degree 238, order 72 at zero, 162 positive coefficients,
+and five negative coefficients at powers 93 through 97. Thus neither
+orientation has nonnegative coefficients. Integer-only fraction-free
+elimination and a separate polynomial-matrix determinant calculation
+agree on all 239 coefficients. The replay is retained in the existing
+mechanism checker as --gamma-resultant-counterexample.
 
-The exact diagnostic for support {0,1,3} and window 2,3,4 passes:
-a full Macaulay determinant quotient and a separate quartic-invariant
-resultant agree, with all 47 nonzero dispersion coefficients positive.
-The optional Sage replay is retained in the existing mechanism checker.
-This is one falsification diagnostic, not a universal theorem. Connected
-row-permutation diagrams give nonnegative joint-cumulant coefficients
-for every support, but do not control the alternating resultant.
-Triangular moment-to-cumulant replacements retain the full block only
-when its starting index is one. The next useful step is a global
-cancellation or strictness identity that handles arbitrary starting
-indices; enlarging the diagnostic panel would not prove it.
+This is a counterexample to the proposed coefficient formula, not SFC:
+the ordinary specialization R(1) is positive. The earlier {0,1,3},
+window 2,3,4 calculation remains a positive calibration only. Connected
+row-permutation diagrams still give nonnegative joint cumulants,
+but the new calculation shows that their positivity does not survive
+resultant elimination.
 
-There is now a uniform reduction for the stronger Gamma coefficient
-assertion. Gauss grouping and a resultant degree bound preserve
-coefficient nonnegativity and nonzero under coalescing duplicate rows,
-so it is enough to treat primitive nonzero exponent rows in arbitrary
-dimension. The exact scope uses raw resultants and independent positive
-Gamma parameters. A written rigidity lemma also proves that any fixed
-finite positive Gamma-product identity on the entire moment lattice
-must keep all exponent rows parallel. For a primitive integer row,
-the factorization is completely trivial. This prevents further removal
-of arbitrary primitive profiles by that uniform factorization method.
-These are method results, not a resolution of SFC; the missing
-cancellation must handle the primitive coupled profiles directly.
+The row-coalescence identity and primitive positive-product rigidity
+lemma remain valid. They constrain that proposed method; they cannot
+repair the false coefficient assertion, whose counterexample row is
+already primitive. A general SFC argument must prove strict nonvanishing
+by a different representation or mechanism. No replacement general
+certificate is currently established.
+
+Two different general transfers have now been ruled out. Even for
+the fixed support {1,X}, no single nonzero scalar normalization sequence
+can turn the moment series of both 1+X and 2+X into algebraic germs.
+Thus a direct transfer to the credited polynomial-inverse rigidity theorem
+cannot use a common coefficient-independent moment normalization.
+Separately, an exact positive-measure example has three regular consecutive
+moment forms that cease to be regular after a factorial Borel transform.
+Both the original and transformed measures have strict polynomial Gram
+positivity. These are proof-route obstructions, not SFC counterexamples.
 
 **Single obstruction.** Exclude a common nonzero projective zero of s
 consecutive homogeneous moment forms uniformly over arbitrary exponent
-matrices and every starting n. Existing valuation arguments depend on
-support geometry.
+matrices and every starting n. A concrete discrete transfer scheme would
+suffice: preserve regularity when adjoining a row e_j to a nonconstant
+column, and when identifying two exponent rows by their sum while
+columns stay distinct. Independent affine-linear supports provide the
+base; token inflation and row identification produce every ordinary
+support. Both preservation statements remain unproved for actual factorial
+moment frames. The positive-measure counterexample inflates a constant
+feature and therefore does not refute the restricted first statement.
+The missing step must retain joint integer-toric moment structure:
+Stein conjugation of differential operators does not yet yield exactness
+of the multiplication Koszul complex after evaluation on the vacuum.
 
 **Impact test.** General SFC would imply FC in every dimension and supply
 a support-independent consecutive-window principle. The existing rigidity

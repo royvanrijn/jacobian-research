@@ -1,0 +1,446 @@
+{
+  "absorber_checks": {
+    "exact_profile_target_residues_checked": 4512,
+    "form_witnesses": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "pool": [
+      3,
+      5,
+      13,
+      19
+    ],
+    "templates": [
+      {
+        "divisibility_mask": 0,
+        "left_exact_one": [
+          3,
+          5
+        ],
+        "right_exact_one": [
+          13,
+          19
+        ]
+      },
+      {
+        "divisibility_mask": 1,
+        "left_exact_one": [
+          3,
+          5
+        ],
+        "right_exact_one": [
+          3,
+          13
+        ]
+      },
+      {
+        "divisibility_mask": 2,
+        "left_exact_one": [
+          3,
+          5
+        ],
+        "right_exact_one": [
+          5,
+          13
+        ]
+      },
+      {
+        "divisibility_mask": 3,
+        "left_exact_one": [
+          3,
+          5
+        ],
+        "right_exact_one": [
+          3,
+          5
+        ]
+      },
+      {
+        "divisibility_mask": 4,
+        "left_exact_one": [
+          3,
+          13
+        ],
+        "right_exact_one": [
+          5,
+          13
+        ]
+      },
+      {
+        "divisibility_mask": 5,
+        "left_exact_one": [
+          3,
+          13
+        ],
+        "right_exact_one": [
+          3,
+          13
+        ]
+      },
+      {
+        "divisibility_mask": 6,
+        "left_exact_one": [
+          5,
+          13
+        ],
+        "right_exact_one": [
+          5,
+          13
+        ]
+      },
+      {
+        "divisibility_mask": 7,
+        "left_exact_one": [
+          3,
+          5
+        ],
+        "right_exact_one": [
+          3,
+          5
+        ]
+      },
+      {
+        "divisibility_mask": 8,
+        "left_exact_one": [
+          3,
+          19
+        ],
+        "right_exact_one": [
+          5,
+          19
+        ]
+      },
+      {
+        "divisibility_mask": 9,
+        "left_exact_one": [
+          3,
+          19
+        ],
+        "right_exact_one": [
+          3,
+          19
+        ]
+      },
+      {
+        "divisibility_mask": 10,
+        "left_exact_one": [
+          5,
+          19
+        ],
+        "right_exact_one": [
+          5,
+          19
+        ]
+      },
+      {
+        "divisibility_mask": 11,
+        "left_exact_one": [
+          3,
+          5
+        ],
+        "right_exact_one": [
+          3,
+          5
+        ]
+      },
+      {
+        "divisibility_mask": 12,
+        "left_exact_one": [
+          13,
+          19
+        ],
+        "right_exact_one": [
+          13,
+          19
+        ]
+      },
+      {
+        "divisibility_mask": 13,
+        "left_exact_one": [
+          3,
+          13
+        ],
+        "right_exact_one": [
+          3,
+          13
+        ]
+      },
+      {
+        "divisibility_mask": 14,
+        "left_exact_one": [
+          5,
+          13
+        ],
+        "right_exact_one": [
+          5,
+          13
+        ]
+      },
+      {
+        "divisibility_mask": 15,
+        "left_exact_one": [
+          3,
+          5
+        ],
+        "right_exact_one": [
+          3,
+          5
+        ]
+      }
+    ]
+  },
+  "deliberately_corrupted_formulas_rejected": [
+    {
+      "actual_count": 0,
+      "integer": 2,
+      "name": "omit_nonprincipal_ramified_class_2",
+      "rejected_count": 2
+    },
+    {
+      "actual_count": 0,
+      "integer": 7,
+      "name": "omit_nonprincipal_ramified_class_7",
+      "rejected_count": 2
+    },
+    {
+      "actual_count": 0,
+      "integer": 9,
+      "name": "omit_even_oddclass_power_contribution",
+      "rejected_count": 4
+    },
+    {
+      "actual_count": 0,
+      "integer": 3,
+      "name": "omit_genus_parity",
+      "rejected_count": 2
+    },
+    {
+      "actual_count": 4,
+      "integer": 15,
+      "name": "double_active_orientation_count",
+      "rejected_count": 8
+    },
+    {
+      "actual_count": 4,
+      "integer": 18,
+      "name": "omit_ramified_cancellation",
+      "rejected_count": 0
+    },
+    {
+      "actual_count": 4,
+      "integer": 81,
+      "name": "reduce_prime_exponent_modulo_2_only",
+      "rejected_count": 0
+    }
+  ],
+  "first_individual_local_global_failures": [
+    2,
+    7,
+    9,
+    25,
+    46,
+    71,
+    79,
+    113,
+    126,
+    161,
+    162,
+    169,
+    191,
+    193,
+    207,
+    254,
+    263,
+    274,
+    302,
+    337,
+    350,
+    361,
+    401,
+    450,
+    457,
+    463,
+    466,
+    478,
+    562,
+    567
+  ],
+  "infinite_failure_family_tested_terms": [
+    9,
+    729,
+    59049
+  ],
+  "integer_comparison": {
+    "individual_local_global_failures": 26066,
+    "individually_locally_admissible_values": 113253,
+    "primitive_coordinate_pairs": 510420,
+    "principal_primitive_values": 87187
+  },
+  "local_residue_checks": [
+    {
+      "depth": 1,
+      "modulus": 2,
+      "prime": 2,
+      "primitive_value_residues": 2,
+      "selfsum_residues": 2
+    },
+    {
+      "depth": 2,
+      "modulus": 4,
+      "prime": 2,
+      "primitive_value_residues": 3,
+      "selfsum_residues": 4
+    },
+    {
+      "depth": 3,
+      "modulus": 8,
+      "prime": 2,
+      "primitive_value_residues": 4,
+      "selfsum_residues": 8
+    },
+    {
+      "depth": 4,
+      "modulus": 16,
+      "prime": 2,
+      "primitive_value_residues": 6,
+      "selfsum_residues": 16
+    },
+    {
+      "depth": 5,
+      "modulus": 32,
+      "prime": 2,
+      "primitive_value_residues": 12,
+      "selfsum_residues": 32
+    },
+    {
+      "depth": 6,
+      "modulus": 64,
+      "prime": 2,
+      "primitive_value_residues": 24,
+      "selfsum_residues": 64
+    },
+    {
+      "depth": 7,
+      "modulus": 128,
+      "prime": 2,
+      "primitive_value_residues": 48,
+      "selfsum_residues": 128
+    },
+    {
+      "depth": 8,
+      "modulus": 256,
+      "prime": 2,
+      "primitive_value_residues": 96,
+      "selfsum_residues": 256
+    },
+    {
+      "depth": 9,
+      "modulus": 512,
+      "prime": 2,
+      "primitive_value_residues": 192,
+      "selfsum_residues": 512
+    },
+    {
+      "depth": 1,
+      "modulus": 7,
+      "prime": 7,
+      "primitive_value_residues": 4,
+      "selfsum_residues": 7
+    },
+    {
+      "depth": 2,
+      "modulus": 49,
+      "prime": 7,
+      "primitive_value_residues": 24,
+      "selfsum_residues": 48
+    },
+    {
+      "depth": 3,
+      "modulus": 343,
+      "prime": 7,
+      "primitive_value_residues": 168,
+      "selfsum_residues": 336
+    },
+    {
+      "depth": 1,
+      "modulus": 3,
+      "prime": 3,
+      "primitive_value_residues": 3,
+      "selfsum_residues": 3
+    },
+    {
+      "depth": 2,
+      "modulus": 9,
+      "prime": 3,
+      "primitive_value_residues": 9,
+      "selfsum_residues": 9
+    },
+    {
+      "depth": 1,
+      "modulus": 5,
+      "prime": 5,
+      "primitive_value_residues": 5,
+      "selfsum_residues": 5
+    },
+    {
+      "depth": 2,
+      "modulus": 25,
+      "prime": 5,
+      "primitive_value_residues": 25,
+      "selfsum_residues": 25
+    },
+    {
+      "depth": 1,
+      "modulus": 11,
+      "prime": 11,
+      "primitive_value_residues": 10,
+      "selfsum_residues": 11
+    },
+    {
+      "depth": 1,
+      "modulus": 13,
+      "prime": 13,
+      "primitive_value_residues": 13,
+      "selfsum_residues": 13
+    }
+  ],
+  "prime_classification": {
+    "class2_split": 9772,
+    "inert": 39306,
+    "odd_class_split": 19635,
+    "principal_split": 9783
+  },
+  "schema": "primitive-norm-minus56-finite-check-v1",
+  "scope": {
+    "coordinate_and_class_formula_integer_range": [
+      1,
+      1000000
+    ],
+    "field_discriminant": -56,
+    "form": [
+      1,
+      0,
+      14
+    ],
+    "interpretation": "Finite coordinate/class-count comparison and residue/profile checks; infinite arithmetic and all-depth local statements require separate mathematical proofs.",
+    "unrestricted_additive_theorem_proved_by_this_check": false
+  },
+  "signed_orientation_class_sequences_checked": 43690,
+  "source_sha256": "7841140120a7a2a2a763f25ba295cd42df9121974f0ee4637c48fec3f6362ff1",
+  "status": "pass"
+}

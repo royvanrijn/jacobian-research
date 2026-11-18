@@ -490,7 +490,7 @@ or a parameter-discriminant count alone is not that realization.
 A possible Gamma-product Appell simplicity principle remains unproved,
 and would still need a separate bridge to arbitrary polynomial supports.
 
-A different all-support certificate can be formulated without selecting
+A proposed all-support coefficient certificate can be formulated without selecting
 a prime or saddles. Replace each exponential row by an independent
 Gamma variable of shape $1/x_i$ and scale $x_i$. Put
 \[
@@ -509,12 +509,93 @@ At $x_i=1$ it is the ordinary factorial resultant. If, for every
 distinct ordinary support $A$ and every $n\ge1$, either $R_{A,n}$ or
 $-R_{A,n}$ were coefficientwise nonnegative and not identically zero,
 then it would be nonzero at every positive $x$. This would prove full
-SFC, indeed for all positive Gamma shapes. Neither such an expansion
-nor its uniform nontriviality is proved here. Pointwise
-nonnegativity alone is weaker than the proposed coefficient assertion
-and would still permit a common zero.
+SFC, indeed for all positive Gamma shapes. The universal coefficient
+assertion, however, is false, even for one primitive integer row.
+Pointwise nonnegativity alone is weaker than that assertion and
+would still permit a common zero.
+
+\begin{proposition}\label{prop:gamma-coefficient-obstruction}
+For the ordinary support $A=\{0,1,3,7\}$ and $n=1$, the raw normalized
+Gamma resultant $R_{A,1}(x)$ has degree $238$ and order $72$ at zero.
+It has $162$ positive coefficients and five negative coefficients,
+at powers $93,94,95,96,97$. In particular neither orientation has
+nonnegative coefficients. With
+\[
+ \widehat R(x)=\frac{R_{A,1}(x)}
+                    {x^{72}[x^{72}]R_{A,1}(x)},
+\]
+one has $\widehat R(0)=1$ and
+\[
+ [x^{21}]\widehat R(x)=
+ -\frac{1192331041135587351642555956640949926657016100785429939508670133411}
+        {2435009323241678045184000}<0.
+\]
+The ordinary specialization satisfies $R_{A,1}(1)>0$.
+\end{proposition}
+\begin{proof}
+Write $F=z+Y$, $Y=bX+cX^3+dX^7$, and use raw normalized Gamma
+moments $\mu_j(x)$ as above. The determinant-one change
+$u=z+\mathbb E Y$, followed by triangular Bell row operations, gives
+\[
+ \operatorname{Res}(P_1,P_2,P_3,P_4)
+        =\operatorname{Res}_{b,c,d}(\kappa_2,\kappa_3,\kappa_4).
+\]
+A connected row-permutation tuple on $r$ factor vertices has total
+cycle defect at least $r-1$. The diagram expansion below therefore
+makes $\kappa_r$ divisible by $x^{r-1}$. The coefficient of $b^r$ is exactly
+$(r-1)!x^{r-1}$, so the only nonconstant content over $\mathbb Q[x]$
+is $x^{r-1}$. All constant integer factors remain in the forms.
+Put $f_r=\kappa_r/x^{r-1}$ for $r=2,3,4$.
+Their resultant has multidegrees $12,8,6$ in the three forms, hence
+\[
+ R_{A,1}=x^{12+16+18}\operatorname{Res}(f_2,f_3,f_4)
+        =x^{46}\operatorname{Res}(f_2,f_3,f_4).
+\]
+
+Here is the complete finite determinant construction. Order the
+$36$ monomials $b^ic^jd^k$, $i+j+k=7$, lexicographically with
+decreasing $i,j$. For each monomial choose the first dividing pure
+power in $(b^2,c^3,d^4)$. The corresponding row of $\mathsf M$ is
+the coefficient vector of that monomial divided by the pure power,
+times the corresponding form $f_2,f_3,f_4$. Let $\mathsf E$ be the
+principal submatrix on the $10$ monomials divisible by at least two
+of those powers. The classical Macaulay formula, in
+\href{sources/stagliano-classical-resultants-jsag2018.pdf}
+{Staglianò, Theorem 1.8, equation (1-4), printed p.24}, gives
+\[
+ R_{A,1}=x^{46}\frac{\det\mathsf M}{\det\mathsf E}.
+\]
+That source uses the same first-divisible rule and the same deleted
+rows and columns. Its Proposition 1.5 gives the elementary
+transformations and multidegrees used here. Theorem 1.1 fixes the pure-power normalization,
+and Remark 1.3 permits specialization to $\mathbb Q[x]$.
+Both matrices become identity matrices on $(b^2,c^3,d^4)$, fixing
+orientation and scalar. The numerator and denominator have degrees
+$198$ and $6$, and the division is exact.
+
+The retained checker constructs every raw coefficient over
+$\mathbb Z[x]$, strips only the indicated monic powers of $x$ by
+exact division, and computes these determinants by fraction-free
+elimination with every division checked. A separate polynomial-matrix
+determinant calculation gives the identical numerator and denominator.
+It verifies the entire $239$-coefficient polynomial, the two displayed
+sign witnesses, all five negative positions, and $R_{A,1}(1)>0$.
+No floating-point quantities enter this replay.
+\end{proof}
+
+The exact replay, using Sage 10.9, is
+\begin{verbatim}
+sage -python verify_unrestricted_sfc_mechanisms.py \
+    --gamma-resultant-counterexample
+\end{verbatim}
+This disproves the raw coefficient assertion, including its
+primitive-row restriction. It is not an SFC counterexample:
+mixed coefficients do not imply a common zero of the moment forms,
+and the ordinary specialization here is nonzero.
 
 \subsection{Row coalescence and its precise limit}
+The following valid identities remain structural facts about this
+failed sufficient condition.
 There is an exact positivity-preserving operation for these
 \emph{unstripped} resultants. Let
 \[
@@ -530,8 +611,8 @@ Every universal resultant monomial therefore has total coefficient-index
 weight $D$ in each $c_j$. Its degree contribution from the row is at most
 $\sum_j a_jD=B$.
 
-Replace $q$ copies of row $a$ by one row $qa$, leaving every other row
-unchanged. Grouping factors by residues modulo $q$ gives, for $u\ge0$,
+Replace $q$ copies of row $a$ by one row $qa$, for an integer $q\ge1$, leaving every other row
+unchanged. Grouping factors by residues modulo $q$ gives, for integers $u\ge0$,
 \[
  \mu_{qu}(x)=\prod_{r=0}^{q-1}
        \left[(1+rx)^u\mu_u\!\left(\frac{qx}{1+rx}\right)\right].
@@ -623,7 +704,7 @@ It shows why coalescence cannot dispose of arbitrary primitive
 profiles by a uniform positive-product factorization. It does not
 establish resultant positivity.
 
-\subsection{The remaining cancellation problem}
+\subsection{The remaining strict-nonvanishing problem}
 
 There is an exact positive diagram expansion before elimination.
 For a row with $b$ labelled legs,
@@ -652,9 +733,12 @@ For $n=1$, triangular Bell-polynomial row operations consequently give
 Each difference $P_m-\kappa_m$ belongs to the ideal of earlier
 cumulants, so the degree-preserving triangular replacements leave the
 homogeneous resultant unchanged. For $n>1$, those replacements introduce
-lower moments outside the prescribed block. Even at $n=1$,
-nonnegative diagram coefficients do not control the alternating
-resultant. A global cancellation theorem is still missing.
+lower moments outside the prescribed block. Even at $n=1$, the
+positive diagram coefficients do not survive elimination:
+the counterexample above has mixed resultant coefficients.
+Thus no cancellation argument can prove the raw coefficient assertion
+for all supports. A different representation or a direct proof of
+strict nonvanishing is needed for SFC.
 
 Ordinary moment-kernel total positivity cannot supply that theorem:
 for $(X_1,X_2,X_3)$ the Gram minor with rows $(1,2)$ and columns $(2,3)$
@@ -663,7 +747,7 @@ intersection class records multidegrees, whereas $R_{A,n}(x)$ is a
 substituted defining equation. Effectivity alone does not make equation
 coefficients nonnegative, as $ad-bc$ illustrates.
 
-One later-index falsification diagnostic is retained for reproducibility,
+A later-index positive calibration case is retained for reproducibility,
 without a family or unrestricted conclusion. For $A=\{0,1,3\}$ in one
 row and $n=2$, the actual ternary resultant is
 \[
@@ -706,11 +790,206 @@ $\operatorname{Res}(q_2,q_3,I)=\operatorname{Res}(I,T)
 the last sign being $(-1)^4=1$. Centering the constant coefficient
 has determinant one. The checker also verifies the entire polynomial
 equality by the two determinant computations.
-This diagnostic has no general coefficient-positivity implication.
+This calibration does not repair the falsified universal coefficient assertion.
 It can be replayed using Sage 10.9:
 \begin{verbatim}
 sage -python verify_unrestricted_sfc_mechanisms.py --gamma-resultant-probe
 \end{verbatim}
+
+
+\section{Limits of two direct transfer mechanisms}
+
+\subsection{No common normalization to an algebraic inverse}
+The composition-contact proof of Furter rigidity applies to algebraic
+inverse germs. A direct transfer of arbitrary factorial moments to such
+a germ cannot use a coefficient-independent scalar normalization.
+
+\begin{lemma}\label{lem:common-algebraic-normalization}
+There is no sequence $u_n\in\C^\times$, $n\ge0$, for which both
+\[
+ B_a(t)=\sum_{n\ge0}u_n\Lfac((a+X)^n)t^n,\qquad a=1,2,
+\]
+are algebraic over $\C(t)$.
+\end{lemma}
+\begin{proof}
+Put $E_n(a)=\sum_{j=0}^n a^j/j!$. Direct expansion gives
+$\Lfac((a+X)^n)=n!E_n(a)$. Set $A_n=u_n n!$.
+Algebraic power series over $\C(t)$ converge near zero, so algebraicity
+of $B_1$ gives $|A_n|\le C K^n$, since $E_n(1)\ge1$.
+For $g_n(a)=e^{-a}E_n(a)$ one has
+\[
+ g_n'(a)=-e^{-a}a^n/n!,\qquad
+ 0<g_n(1)-g_n(2)=\frac1{n!}\int_1^2 e^{-a}a^n\,da
+ \le\frac{2^n}{n!}.
+\]
+Consequently $D=e^{-1}B_1-e^{-2}B_2$ is entire, and every
+coefficient of $D$ is nonzero. But $D$ is algebraic if both $B_a$ are.
+An entire algebraic function is polynomial: a polynomial equation for
+it gives a polynomial growth bound outside a large disk by the usual
+root bound, and Cauchy's estimates then kill all sufficiently high
+Taylor coefficients. This is a contradiction.
+\end{proof}
+
+The same proof allows finitely many zero $u_n$ or omission of $n=0$.
+Multiplying either germ by its own nonzero constant or rescaling its
+time by its own nonzero constant cannot evade algebraicity.
+A selected isolated branch of a finite polynomial or rational inverse
+system, and every algebraic observable of it, is algebraic over
+$\C(t)$. For example $w_i=t c_i\phi_i(w)$ with rational $\phi_i$
+regular at zero has an identity Jacobian in $w$ at zero and an isolated
+algebraic branch. Thus these direct inverse constructions also cannot
+carry the full moment sequence through a common scalar normalization.
+The argument does not exclude a genuinely coefficient-dependent
+non-geometric normalization, a finite-window construction depending on
+$n$, or diagonal/period extraction from a multivariate inverse.
+Such an extraction still needs a separate zero-window transfer.
+The phase itself has no support-size critical-value bound:
+$z+z^q$ has two terms and $q-1$ distinct critical values for $q\ge2$.
+
+\subsection{Strict Gram positivity does not preserve regularity}
+For a homogeneous polynomial in coefficient variables define the exact
+factorial Borel operator
+\[
+ \mathcal B_0(c_0^ic_1^jc_2^k)=i!\,c_0^ic_1^jc_2^k.
+\]
+This is the operator obtained by multiplying the first random feature
+by an independent unit exponential variable. It need not preserve
+regularity even for actual positive-measure moment forms.
+
+\begin{proposition}\label{prop:positive-moment-borel-obstruction}
+There is a probability measure on the strictly positive quadrant
+whose polynomial Gram form is strictly positive definite, such that
+the three consecutive forms
+\[
+ f_m(c)=\mathbb E(c_0+c_1U+c_2V)^m,\qquad m=1,2,3,
+\]
+have only the common zero $c=0$, whereas
+$\mathcal B_0 f_1,\mathcal B_0 f_2,\mathcal B_0 f_3$ have a common
+nonzero projective zero. After the Borel operation the underlying
+three-variable measure also has a strictly positive polynomial Gram form.
+\end{proposition}
+\begin{proof}
+Start with real random variables $A,B$. Let $A=1/4$ with probability
+$4/7$ and $A=2$ with probability $3/7$. Conditional on $A$, choose
+the two signs of $B$ equally, with
+\[
+ B^2=113/48\quad(A=1/4),\qquad
+ B^2=17/18\quad(A=2).
+\]
+Then all moments odd in $B$ vanish, and direct rational arithmetic gives
+\[
+ \mathbb EA=1,\quad
+ \mathbb EA^2=\mathbb EB^2=7/4,\quad
+ \mathbb EA^3=55/16,\quad \mathbb EAB^2=55/48.
+\]
+Add an independent vector $(\xi,\eta)$ uniform on the disk of radius
+$\delta=1/100$, and write $A'=A+\xi$, $B'=B+\eta$.
+Its coordinate variance is $q=\delta^2/4=1/40000$;
+its mixed third cumulants vanish. The centered cumulants of
+$c_1A'+c_2B'$ are therefore
+\[
+ \kappa_2=(q+3/4)c_1^2+(q+7/4)c_2^2,\qquad
+ \kappa_3=\frac{c_1(3c_1^2-29c_2^2)}{16}.
+\]
+The mean is $c_0+c_1$. On the mean-zero plane the second and third
+raw moments are these cumulants. Their binary resultant is
+\[
+ \operatorname{Res}(\kappa_2,\kappa_3)
+   =4(q+7/4)(q+27/32)^2>0.
+\]
+For example this follows by factoring the second displayed polynomial
+into its factor $c_1$ and its quadratic factor. Hence the original
+three forms for $(1,A',B')$ are regular.
+
+Let $T$ be an independent unit exponential. At coefficients
+$(c_0,c_1,c_2)=(1,-1,i)$ the transformed phase is $T-A'+iB'$.
+Before adding the disk noise, its first three moments are respectively
+\[
+ 1-1=0,\qquad
+ 2-2+7/4-7/4=0,\qquad
+ 6-6-55/16+3(55/48)=0.
+\]
+Rotational invariance gives $\mathbb E(-\xi+i\eta)^k=0$ for
+every $k\ge1$, so independent addition of this noise preserves every
+holomorphic moment, including these three zeros.
+
+Finally put
+\[
+ U=(A'+B'/7)/2,\qquad V=(A'-B'/7)/2.
+\]
+All four original atoms have $A\ge1/4$ and $|B|<8/5$. Thus
+\[
+ A'-|B'|/7>1/4-\delta-(8/5+\delta)/7=1/100,
+\]
+so $U,V>1/200$. This real invertible change of features preserves
+regularity and commutes with $\mathcal B_0$. The transformed zero
+is $(1,-1+7i,-1-7i)$. The distribution of $(U,V)$ has a positive
+density on open ellipses. A nonzero polynomial cannot vanish on an
+open set, giving $\mathbb E|H(U,V)|^2>0$ for every nonzero polynomial
+$H$. Independence and the positive exponential density give the same
+property for $(T,U,V)$.
+\end{proof}
+
+This counterexample uses a different measure from the factorial
+functional. In particular it is not an ordinary SFC counterexample.
+It excludes a transfer theorem based only on actual moment coupling
+and strict Gram positivity, improving on the arbitrary Euler-factor
+test. It inflates the constant feature; the restricted proposal below
+does not require that operation.
+
+\subsection{A discrete transfer scheme, with both obligations open}
+Write $\mathcal R(A,n)$ for projective regularity of the actual $s$
+forms $\Lfac((\sum_jc_jx^{a_j})^m)$, $n\le m<n+s$.
+Two integer operations would suffice for unrestricted SFC if the
+following preservation statements were proved:
+\begin{itemize}
+\item If $a_j\ne0$, adjoining the row $e_j$ preserves $\mathcal R(A,n)$.
+Its exact coefficient multiplier on $c^k$ is $k_j!$.
+\item Replacing two rows $u,v$ by $u+v$ preserves $\mathcal R(A,n)$
+whenever the resulting columns remain distinct. Its exact multiplier is
+$\binom{(u+v)\cdot k}{u\cdot k}$.
+\end{itemize}
+Both statements refer to actual integer-toric factorial moment frames;
+neither preservation statement is established here.
+
+Here is the complete sufficiency construction. The base support is a
+set of independent coordinate monomials, with a possible constant.
+For its active coefficients put
+\[
+ G(t)=\sum_{m\ge0}\frac{\Lfac((c_0+\sum_{j=1}^r c_jx_j)^m)}{m!}t^m
+      =\frac{e^{c_0t}}{Q(t)},\qquad
+ Q(t)=\prod_{j=1}^r(1-c_jt)=\sum_{j=0}^r q_jt^j.
+\]
+If $c_0\ne0$, $(QG)'=c_0QG$ gives, with $g_m=[t^m]G$,
+\[
+ (k+1)\sum_{j=0}^r q_jg_{k+1-j}
+     =c_0\sum_{j=0}^r q_jg_{k-j}.
+\]
+An $(r+1)$-term zero block $g_n,\ldots,g_{n+r}$, at
+$k=n+r-1$, forces $c_0q_rg_{n-1}=0$. Since $c_0q_r\ne0$,
+it propagates backward to $g_0=0$, a contradiction.
+If $c_0=0$, the relation $QG=1$ similarly propagates any $r$-term
+block backward. Vanishing coefficients reduce the active term count,
+so this proves regularity of the whole base frame including its
+coefficient-boundary strata.
+
+For a target matrix $A$, inflate each nonconstant column $a_j$ by
+adjoining $|a_j|-1$ copies of row $e_j$. There are then $|a_j|$
+separate unit-row tokens for that column. Assign $a_{ij}$ of them to
+target row $i$, and identify rows within each assigned group.
+The resulting matrix is $A$, up to harmless zero rows.
+No intermediate column collision is possible during these identifications:
+equality of two columns persists under every later row sum, contradicting
+their distinctness in $A$. The constant column is never inflated.
+This proves the sufficiency of the two proposed preservation statements,
+without proving either statement.
+
+The exact finite factorial shift relations and their Stein conjugations
+transport differential operators. They do not by themselves identify the
+resulting operator Koszul complex with the multiplication complex of the
+transformed moment forms. That evaluation step is the outstanding
+obligation for this scheme; generic regularity or Gram positivity does
+not supply it.
 
 The self-contained
 \href{verify_unrestricted_sfc_mechanisms.py}{exact-control checker}
@@ -718,7 +997,8 @@ verifies 31 instances of (1), 30 of (2), the Euler counterexample,
 finite-block coefficient identities and 32 instances of the toric
 degeneration formula, the complete exceptional-prime threshold table
 and rational controls for the four-maxima example and row-coalescence
-normalizations, with corrupted-coefficient rejection. The all-index arguments, profile rigidity, minimality and automorphism
+normalizations, and the rational positive-measure Borel counterexample,
+with corrupted-coefficient rejection. The all-index arguments, profile rigidity, minimality and automorphism
 rigidity are the written proofs, not consequences of finite tests. Independent specialist
 review, formal verification and a resolution of unrestricted SFC are not
 claimed.

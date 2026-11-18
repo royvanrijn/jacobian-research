@@ -22,8 +22,8 @@ for every \(N\ge N_0\) with \(529\nmid N\),
 For every positive multiple of 529 the count is exactly zero. Thus all
 sufficiently large primitive-local admissible targets have the full
 quadratic-semigroup logarithmic counting scale. No numerical cutoff,
-unweighted leading constant or complete exact binary exception list is
-provided.
+unweighted leading constant or complete unrestricted binary exception
+classification is provided.
 
 The individual primitive norm set has genuine class-group obstructions
 invisible to local tests. The proof below bypasses those obstructions in
@@ -352,5 +352,97 @@ python3 research/arithmetic/verify_primitive_norm_class3_profiles.py \
 
 Internal agents audited the arithmetic, finite profiles and analytic
 transfer separately, and independent internal replays matched the retained
-outputs. A numerical eventual cutoff, exact finite binary exceptions,
+outputs. A numerical eventual cutoff, completeness beyond the finite checked range,
 unweighted leading constant and historical priority remain unestablished.
+
+
+## Exact bounded binary exceptions
+
+**Proposition CN3Finite.** For every \(2\le N\le2^{24}=16777216\),
+\[
+ N\in P+P\quad\Longleftrightarrow\quad
+                  529\nmid N\text{ and }N\notin E,
+\]
+where
+\[
+\begin{split}
+E=\{&
+3,4,5,6,8,10,11,15,17,21,22,23,25,43,55,61,69,73,\\
+&92,115,138,166,184,230,253,345,391,483,506,575,667,713,\\
+&943,989,1150,1265,1403,1679,1863,3818\}.
+\end{split}
+\]
+All 40 integers are actual global nonrepresentations. The assertion that
+there are no further exceptions is proved only through the displayed
+bound; the unrestricted exact-exception gap remains open.
+
+The [bounded sumset checker](verify_primitive_norm_minus23_sumset.py) and
+[receipt](primitive_norm_minus23_sumset_checks.json) establish the full
+finite assertion by two primitive membership constructions. For any form
+\(a x^2+bxy+cy^2\) of discriminant \(-23\),
+\[
+                 4aQ=(2ax+by)^2+23y^2.
+\]
+Simultaneous sign reversal permits \(y\ge0\) for value membership.
+For every \(y\le\lfloor\sqrt{4aB/23}\rfloor\), the checker enumerates
+the complete integer interval
+\[
+ \left\lceil\frac{-h-by}{2a}\right\rceil
+ \le x\le
+ \left\lfloor\frac{h-by}{2a}\right\rfloor,\qquad
+ h=\lfloor\sqrt{4aB-23y^2}\rfloor,
+\]
+retaining positive values with \(\gcd(x,y)=1\).
+It independently reconstructs every flag through \(B=2^{24}\)
+by the C3 prime-power criterion, with split classes labelled using
+the other reduced form. The flags agree everywhere, yielding 2265203
+primitive values. Trial factorization through 10000 and a separate
+signed square-box enumeration through 1000 challenge the class and
+coordinate computations.
+
+The packed flag is shifted by every one of the 876 primitive anchors
+at most 5000. Every marked sum is valid. Of the 16745501 locally
+admissible targets, 683 remain after this sweep. Each receives a
+complete search over \(1\le a\le\lfloor N/2\rfloor\), using
+the complete membership flag. The receipt stores 643 explicit residual
+witness triples; the remaining 40 are exhausted nonrepresentations.
+The final coverage mask equals the entire local mask with precisely
+\(E\) removed: 16745461 represented targets and 31714 separately
+excluded multiples of 529. Since summands are positive, none above
+\(B\) can contribute to a target in this interval.
+Controls reject deleted represented targets, injected exceptions and
+local exclusions, and corrupted individual class/exponent membership.
+This proves the finite proposition, not a numerical analytic cutoff.
+
+The ramified exceptions differ from the unit-target exceptions for an
+exact arithmetic reason. Put \(U=\{n\in P:23\nmid n\}\).
+The principal ramified generator \(\sqrt{-23}\) gives
+\[
+ P\cap23\mathbb Z=23U,\qquad
+        23M\in P+P\ \Longleftrightarrow\ M\in U+U.       \tag{CN3.8}
+\]
+The first identity follows by dividing a primitive generator of
+ramified valuation one by \(\sqrt{-23}\), and conversely multiplying
+a 23-unit primitive generator. Both preserve primitiveness at all
+other primes and change the ramified valuation between zero and one.
+For the second identity, nonsquareness of \(-1\pmod{23}\) forces
+both summands of a 23-divisible target to be ramified; division applies
+to each. These are unrestricted identities.
+
+For example \(29=6+23\in P+P\), while \(667=23\cdot29\notin P+P\)
+by the complete finite check: the representation of 29 uses a ramified
+summand, and \(29\notin U+U\). The 17 members of \(E\) coprime
+to 23 are
+\[
+3,4,5,6,8,10,11,15,17,21,22,25,43,55,61,73,166.
+\]
+The other 23 members are 23 times
+\[
+1,3,4,5,6,8,10,11,15,17,21,22,25,29,31,41,43,50,55,61,73,81,166.
+\]
+This distinguishes ramified behavior without inferring a complete
+unrestricted sumset from bounded evidence.
+
+Reproduce with:
+
+    python3 research/arithmetic/verify_primitive_norm_minus23_sumset.py --output research/arithmetic/primitive_norm_minus23_sumset_checks.json

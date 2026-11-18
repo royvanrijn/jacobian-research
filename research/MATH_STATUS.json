@@ -5810,7 +5810,7 @@
       "id": "arithmetic",
       "title": "Arithmetic fibres, discriminants and restricted-prime sums",
       "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Restricted-prime sums and primitive Eisenstein norm sumsets have a separate internally complete manuscript.",
-      "status": "The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, S12U is the first every-target goal; the new pointwise upper bounds and fixed-cutoff tail leave the natural lower count and fixed-prime marginals open. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while C12 pointwise inputs, every-target goals, effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. The exact all-target C12 assertions, norm pointwise inputs, full-count power-saving variance and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, all-target C12, unweighted residual/full power-saving variance and priority remain open. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full C12+C12 goal and its pointwise lower/marginal inputs remain open. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative, and full C12/H1/H2 remain open. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root distribution, full C12/Cq two-sided goals beyond the stated baselines, H1/H2 and priority remain open. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case also has pointwise logarithmic value counts; its exact global exception list remains open. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions.",
+      "status": "The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, S12U is the first every-target goal; the new pointwise upper bounds and fixed-cutoff tail leave the natural lower count and fixed-prime marginals open. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while C12 pointwise inputs, every-target goals, effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. The exact all-target C12 assertions, norm pointwise inputs, full-count power-saving variance and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, all-target C12, unweighted residual/full power-saving variance and priority remain open. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full C12+C12 goal and its pointwise lower/marginal inputs remain open. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative, and full C12/H1/H2 remain open. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root distribution, full C12/Cq two-sided goals beyond the stated baselines, H1/H2 and priority remain open. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case also has pointwise logarithmic value counts; its exact global exception list remains open. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis.",
       "readme": "arithmetic/README.md",
       "results": [
         {
@@ -8565,7 +8565,7 @@
           "id": "ARITH-CLASS-THREE-PRIMITIVE-NORM-COUNTS",
           "title": "Class-number-three primitive norm sums via fixed prime factors",
           "state": "proved",
-          "scope": "For P={x^2+xy+6y^2>0:gcd(x,y)=1}, the ordered value count is comparable to N J_-23(N)/logN for every sufficiently large N with529 not dividingN; J is the product_(p|N,chi_-23(p)=-1)(p-1)/(p-2). Counts vanish exactly on all positive multiples of529. Four explicit nonprincipal odd split primes3,13,29,31 assigned to exact exponent1 absorb the C3 constraint on a sufficient subset for every target. All16divisibility templates have uniformly positive local mass; fixed-profile unweighting and a period92 coefficient2 transfer use existing analytic inputs. Individual class obstructions persist, but no nonabelian prime-distribution estimate is needed for this concrete count. No numerical eventual cutoff, exact finite binary exception list, unweighted leading constant or historical priority is asserted.",
+          "scope": "For P={x^2+xy+6y^2>0:gcd(x,y)=1}, the ordered value count is comparable to N J_-23(N)/logN for every sufficiently large N with529 not dividingN; J is the product_(p|N,chi_-23(p)=-1)(p-1)/(p-2). Counts vanish exactly on all positive multiples of529. Four explicit nonprincipal odd split primes3,13,29,31 assigned to exact exponent1 absorb the C3 constraint on a sufficient subset for every target. All16divisibility templates have uniformly positive local mass; fixed-profile unweighting and a period92 coefficient2 transfer use existing analytic inputs. Individual class obstructions persist, but no nonabelian prime-distribution estimate is needed for this concrete count. No numerical eventual cutoff, complete unrestricted binary exception list, unweighted leading constant or historical priority is asserted.",
           "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
           "checker": "arithmetic/verify_primitive_norm_class3_profiles.py",
           "artifact_hash": "sha256:f53bd0cd9d52e0ca4fbfc3413082bc44918981ab19b78d6e18a534a0b1f12254",
@@ -8585,7 +8585,7 @@
           "review_status": "internal_only",
           "verification_note": "Root and separate internal agents reconstructed the ideal-class proof, exact signed-class formula, four prime certificates, profile masses/guards, uniform fixed-period analytic transfer, finite-block unweighting, ramified scaling and direct upper sieve. Root replayed both canonical checkers; independent internal outputs matched. Finite audits have their stated scopes and do not prove the imported analytic theorem. No external review, formal verification, numerical cutoff or established priority.",
           "dependency_coverage": "partial",
-          "graph_scope_note": "For P={x^2+xy+6y^2>0:gcd(x,y)=1}, the ordered value count is comparable to N J_-23(N)/logN for every sufficiently large N with529 not dividingN; J is the product_(p|N,chi_-23(p)=-1)(p-1)/(p-2). Counts vanish exactly on all positive multiples of529. Four explicit nonprincipal odd split primes3,13,29,31 assigned to exact exponent1 absorb the C3 constraint on a sufficient subset for every target. All16divisibility templates have uniformly positive local mass; fixed-profile unweighting and a period92 coefficient2 transfer use existing analytic inputs. Individual class obstructions persist, but no nonabelian prime-distribution estimate is needed for this concrete count. No numerical eventual cutoff, exact finite binary exception list, unweighted leading constant or historical priority is asserted."
+          "graph_scope_note": "For P={x^2+xy+6y^2>0:gcd(x,y)=1}, the ordered value count is comparable to N J_-23(N)/logN for every sufficiently large N with529 not dividingN; J is the product_(p|N,chi_-23(p)=-1)(p-1)/(p-2). Counts vanish exactly on all positive multiples of529. Four explicit nonprincipal odd split primes3,13,29,31 assigned to exact exponent1 absorb the C3 constraint on a sufficient subset for every target. All16divisibility templates have uniformly positive local mass; fixed-profile unweighting and a period92 coefficient2 transfer use existing analytic inputs. Individual class obstructions persist, but no nonabelian prime-distribution estimate is needed for this concrete count. No numerical eventual cutoff, complete unrestricted binary exception list, unweighted leading constant or historical priority is asserted."
         },
         {
           "id": "ARITH-CLASS-THREE-PRIMITIVE-NORM-CRITERION",
@@ -8610,6 +8610,177 @@
           "verification_note": "Root and separate internal agents reconstructed the ideal-class proof, exact signed-class formula, four prime certificates, profile masses/guards, uniform fixed-period analytic transfer, finite-block unweighting, ramified scaling and direct upper sieve. Root replayed both canonical checkers; independent internal outputs matched. Finite audits have their stated scopes and do not prove the imported analytic theorem. No external review, formal verification, numerical cutoff or established priority.",
           "dependency_coverage": "partial",
           "graph_scope_note": "For any maximal imaginary quadratic order with ideal classgroupC3, a positive integer is a primitive principal norm iff no inert prime dividesit, every ramified valuation<=1, andr!=1, where r counts distinct nonprincipal splitprime powers whose exponents are nonzero modulo3. On the first two conditions the signed coordinate count is2^(s-r+1)*(2^r+2*(-1)^r)/3, s=#distinct splitprimes. The ideal-class proof is unrestricted; the accompanying complete coefficient audit is only for discriminant-23 through1e6. There it matches145438primitivevalues and69766class obstructions among215204localcandidates. Infinitely many2^(3a+1),2^(3a+2) are individually primitive-local but globally absent. This is a classical ideal-orientation/finite-character deduction, not an additive exception classification."
+        },
+        {
+          "id": "ARITH-ODD-CLASS-PRIMITIVE-NORM-COUNTS",
+          "title": "Primitive norm sums for every negative prime discriminant -p,p>=7",
+          "state": "proved",
+          "scope": "For everyfixedprimep>=7,p=3mod4, K=Q(sqrt(-p)) hasautomaticallyoddclassgroup; no classnumberrestriction isassumed. ForP_K={x^2+xy+(p+1)y^2/4>0:gcd(x,y)=1}, orderedprimitive valuepairs havecount comparabletoN J_K(N)/logN for every sufficientlylarge targetwithp^2 notdividingN andadditionallyN evenifp3mod8. J_K isproduct_(ell|N,ell notdividing2p,chi_-p(ell)=-1)(ell-1)/(ell-2). Failedlocalclasses haveexactzero count. Elementaryambiguousfractionalideals proveoddness; fixedclassprimepools absorbclasses andtheexistingquadratic-character/finiteprofile machinery suppliescounts. Constantsdependonfield/pools, withnonumericalorfielduniformcutoff, exactglobalexceptions orleadingconstant. Classicaloddness removesaredundanthypothesis; nohistoricalnovelty isclaimed.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "checker": "arithmetic/verify_primitive_norm_odd_class_absorbers.py",
+          "artifact_hash": "sha256:0642ec24303bad014f130912cb462466f17296731cdea1d54b2222d052e55a8c",
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+            "arithmetic/verify_primitive_norm_odd_class_absorbers.py",
+            "arithmetic/primitive_norm_odd_class_absorber_checks.json",
+            "arithmetic/primitive_norm_odd_class_source_ledger.json",
+            "arithmetic/sources/milne-cft403.pdf",
+            "arithmetic/sources/milne-ant308.pdf"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Root and separate internal agents audited finite signed absorption, disjoint exact-prime assignments, complete local conditions, primary fixed-class prime existence, fixedperiod4p weighted transfer and positive profile restoration. Root replayed the canonical checker with byte-identical receipt:8721profiles,559761classpairs,260square-pair and764Gamma cases, with purposeful mode/corruption controls. Finite audits do not prove the imported infinite density or analytic theorems. No formal verification, externalreview, numerical cutoff, field-uniformity or priority assurance. Root andtwointernalreviewers reconstructedPrimeDiscriminantOdd, removingtheseparateclass-numberhypothesis; primaryMinkowski suppliesfiniteness only.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For everyfixedprimep>=7,p=3mod4, K=Q(sqrt(-p)) hasautomaticallyoddclassgroup; no classnumberrestriction isassumed. ForP_K={x^2+xy+(p+1)y^2/4>0:gcd(x,y)=1}, orderedprimitive valuepairs havecount comparabletoN J_K(N)/logN for every sufficientlylarge targetwithp^2 notdividingN andadditionallyN evenifp3mod8. J_K isproduct_(ell|N,ell notdividing2p,chi_-p(ell)=-1)(ell-1)/(ell-2). Failedlocalclasses haveexactzero count. Elementaryambiguousfractionalideals proveoddness; fixedclassprimepools absorbclasses andtheexistingquadratic-character/finiteprofile machinery suppliescounts. Constantsdependonfield/pools, withnonumericalorfielduniformcutoff, exactglobalexceptions orleadingconstant. Classicaloddness removesaredundanthypothesis; nohistoricalnovelty isclaimed."
+        },
+        {
+          "id": "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS",
+          "title": "Finite exact-prime factors absorb every odd ideal class contribution",
+          "state": "proved",
+          "scope": "For any finite odd abelian group generated by nonidentityg_i of ordersh_i, m_i=h_i-1 signs of class+-g_i cover<g_i>; all blocks cancel arbitrary residualclasses, including redundantgenerators. In a maximal imaginaryquadratic order with full odd classgroup, distinct reserved split rational primes of those classes at exactexponent1 turn any coprime inertfree cofactor with ramifiedvaluations<=1 into a primitive principalnorm. Whole splitprime powers are oriented together. Pools2m_i per generator admit positive two-sided exact0/1 profiles for everytarget divisibilitypattern; guards persist under actualrestoration. This unrestricted finite-group/ideal argument doesnot itself give an additive analytic estimate or uniformprime bound. Its canonicalchecker audits finiteexamples only.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "checker": "arithmetic/verify_primitive_norm_odd_class_absorbers.py",
+          "artifact_hash": "sha256:0642ec24303bad014f130912cb462466f17296731cdea1d54b2222d052e55a8c",
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+            "arithmetic/verify_primitive_norm_odd_class_absorbers.py",
+            "arithmetic/primitive_norm_odd_class_absorber_checks.json",
+            "arithmetic/primitive_norm_odd_class_source_ledger.json",
+            "arithmetic/sources/milne-cft403.pdf"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Root and separate internal agents audited finite signed absorption, disjoint exact-prime assignments, complete local conditions, primary fixed-class prime existence, fixedperiod4p weighted transfer and positive profile restoration. Root replayed the canonical checker with byte-identical receipt:8721profiles,559761classpairs,260square-pair and764Gamma cases, with purposeful mode/corruption controls. Finite audits do not prove the imported infinite density or analytic theorems. No formal verification, externalreview, numerical cutoff, field-uniformity or priority assurance.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For any finite odd abelian group generated by nonidentityg_i of ordersh_i, m_i=h_i-1 signs of class+-g_i cover<g_i>; all blocks cancel arbitrary residualclasses, including redundantgenerators. In a maximal imaginaryquadratic order with full odd classgroup, distinct reserved split rational primes of those classes at exactexponent1 turn any coprime inertfree cofactor with ramifiedvaluations<=1 into a primitive principalnorm. Whole splitprime powers are oriented together. Pools2m_i per generator admit positive two-sided exact0/1 profiles for everytarget divisibilitypattern; guards persist under actualrestoration. This unrestricted finite-group/ideal argument doesnot itself give an additive analytic estimate or uniformprime bound. Its canonicalchecker audits finiteexamples only."
+        },
+        {
+          "id": "ARITH-CLASS-FOUR-PRIMITIVE-NORM-COUNTS",
+          "title": "Primitive x^2+14y^2 sums at logarithmic scale with class group C4",
+          "state": "proved",
+          "scope": "For P={x^2+14y^2>0:gcd(x,y)=1}, every sufficiently largeN with49 notdividingN has ordered value-pair count comparable to N J_-56(N)/logN; J is product_(ell|N,ell notdividing14,chi_-56(ell)=-1)(ell-1)/(ell-2). Everypositive49multiple hasexactzero count. There isno dyadiclocalexclusion atanydepth. The C4genusquotient is controlledbychi8, while two exactone oddclass primes per side absorb2G={0,2g}; explicitpool3,5,13,19. Period56/112 all-sign filters and full normalizedshift/restoration interfaces reuse existinganalyticinputs. Ram2/7 bothnonprincipal; prefixmaps are on values with newidealorientations, nevernorm2or7generator scaling. No numericalcutoff, exact globalexceptionlist, leadingconstant, generalall-even-classgroup theorem or priority isasserted.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "checker": "arithmetic/verify_primitive_norm_class4_profiles.py",
+          "artifact_hash": "sha256:d65a832649c9a186017c5fef0ccbbe0696b8b39635171d1e748a29b5a5985441",
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "arithmetic/verify_primitive_norm_minus56.py",
+            "arithmetic/primitive_norm_minus56_checks.json",
+            "arithmetic/verify_primitive_norm_class4_profiles.py",
+            "arithmetic/primitive_norm_class4_profile_checks.json",
+            "arithmetic/primitive_norm_minus56_source_ledger.json",
+            "arithmetic/sources/milne-ant308.pdf"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Root read and replayed the actual canonicalcheckers with byte-identical receipts; separate internalagents reconstructed the arithmetic and challenged the proof. Finite computations have the explicit stated bounds and do not establish the imported infinite analytic inputs or globalexception completeness. No formalverification, externalreview or priorityassurance.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For P={x^2+14y^2>0:gcd(x,y)=1}, every sufficiently largeN with49 notdividingN has ordered value-pair count comparable to N J_-56(N)/logN; J is product_(ell|N,ell notdividing14,chi_-56(ell)=-1)(ell-1)/(ell-2). Everypositive49multiple hasexactzero count. There isno dyadiclocalexclusion atanydepth. The C4genusquotient is controlledbychi8, while two exactone oddclass primes per side absorb2G={0,2g}; explicitpool3,5,13,19. Period56/112 all-sign filters and full normalizedshift/restoration interfaces reuse existinganalyticinputs. Ram2/7 bothnonprincipal; prefixmaps are on values with newidealorientations, nevernorm2or7generator scaling. No numericalcutoff, exact globalexceptionlist, leadingconstant, generalall-even-classgroup theorem or priority isasserted."
+        },
+        {
+          "id": "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+          "title": "Exact C4 primitive principal norm criterion and coordinate counts",
+          "state": "proved",
+          "scope": "For the maximalorderZ[sqrt(-14)], Cl=C4 withg=[P3] and[P2]=[P7]=2g. A positiveinteger n=2^e7^f c is a primitiveprincipalnorm iff no inertfactor, e/f<=1, and r iseven with(r>=2 orb0); r=#oddclass splitprimepowers ofoddexponent, b=e+f+sumclass2 exponents+sumoddclass indicators(exponent2mod4),mod2. Ifs=#distinctsplitprimes, signedcoordinatecount is2^s forreven>=2,2^(s+1) forr0b0,otherwise0. Individual local/genusadmissibility onlyrequiresreven beyondsupport/ramification; infinitelymany3^(4a+2) are locallyadmissible butgloballyabsent. Writtenproof isunrestricted; canonicalfiniteaudit through1e6 checks87187primitivevalues,510420coordinatepairs and26066hiddenclassfailures among113253localcandidates.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "checker": "arithmetic/verify_primitive_norm_minus56.py",
+          "artifact_hash": "sha256:7841140120a7a2a2a763f25ba295cd42df9121974f0ee4637c48fec3f6362ff1",
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "arithmetic/verify_primitive_norm_minus56.py",
+            "arithmetic/primitive_norm_minus56_checks.json",
+            "arithmetic/verify_primitive_norm_class4_profiles.py",
+            "arithmetic/primitive_norm_class4_profile_checks.json",
+            "arithmetic/primitive_norm_minus56_source_ledger.json",
+            "arithmetic/sources/milne-ant308.pdf"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Root read and replayed the actual canonicalcheckers with byte-identical receipts; separate internalagents reconstructed the arithmetic and challenged the proof. Finite computations have the explicit stated bounds and do not establish the imported infinite analytic inputs or globalexception completeness. No formalverification, externalreview or priorityassurance.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For the maximalorderZ[sqrt(-14)], Cl=C4 withg=[P3] and[P2]=[P7]=2g. A positiveinteger n=2^e7^f c is a primitiveprincipalnorm iff no inertfactor, e/f<=1, and r iseven with(r>=2 orb0); r=#oddclass splitprimepowers ofoddexponent, b=e+f+sumclass2 exponents+sumoddclass indicators(exponent2mod4),mod2. Ifs=#distinctsplitprimes, signedcoordinatecount is2^s forreven>=2,2^(s+1) forr0b0,otherwise0. Individual local/genusadmissibility onlyrequiresreven beyondsupport/ramification; infinitelymany3^(4a+2) are locallyadmissible butgloballyabsent. Writtenproof isunrestricted; canonicalfiniteaudit through1e6 checks87187primitivevalues,510420coordinatepairs and26066hiddenclassfailures among113253localcandidates."
+        },
+        {
+          "id": "ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED",
+          "title": "Exact bounded primitive discriminant -23 binary exceptions",
+          "state": "proved",
+          "scope": "For every2<=N<=2^24=16777216, N belongs to P_-23+P_-23 iff529 doesnotdivideN andN isoutside the exact40-element setE inCN3Finite, largest3818. Thereare16745501localtargets,16745461represented and31714separatelyexcluded529multiples. Completecoordinate flags agree withC3ideal membershipat allindices, yielding2265203primitivevalues. A876-anchor sweep leaves683targets, each resolved byfullpairsearch:643explicit residualwitnesses and40exhaustive nonrepresentations. All40are actualglobalexceptions; absence of furtherexceptions above2^24 isnotproved. The unrestrictedramifiedidentity P_ram=23U and23M inP+P iffM inU+U explains differentunit/ramified exceptionlists.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+          "checker": "arithmetic/verify_primitive_norm_minus23_sumset.py",
+          "artifact_hash": "sha256:4d8f08e016566a4c304456020befbe6ff55b9345b4b15615120121fce5a03f8d",
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+            "arithmetic/verify_primitive_norm_minus23_sumset.py",
+            "arithmetic/primitive_norm_minus23_sumset_checks.json",
+            "arithmetic/primitive_norm_minus23_source_ledger.json"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Root read and replayed the actual canonicalcheckers with byte-identical receipts; separate internalagents reconstructed the arithmetic and challenged the proof. Finite computations have the explicit stated bounds and do not establish the imported infinite analytic inputs or globalexception completeness. No formalverification, externalreview or priorityassurance.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every2<=N<=2^24=16777216, N belongs to P_-23+P_-23 iff529 doesnotdivideN andN isoutside the exact40-element setE inCN3Finite, largest3818. Thereare16745501localtargets,16745461represented and31714separatelyexcluded529multiples. Completecoordinate flags agree withC3ideal membershipat allindices, yielding2265203primitivevalues. A876-anchor sweep leaves683targets, each resolved byfullpairsearch:643explicit residualwitnesses and40exhaustive nonrepresentations. All40are actualglobalexceptions; absence of furtherexceptions above2^24 isnotproved. The unrestrictedramifiedidentity P_ram=23U and23M inP+P iffM inU+U explains differentunit/ramified exceptionlists."
+        },
+        {
+          "id": "ARITH-D56-PRIMITIVE-NORM-SUMSET-BOUNDED",
+          "title": "Exact bounded primitive discriminant -56 binary exceptions",
+          "state": "proved",
+          "scope": "For every2<=N<=2^24, N is asum oftwo separatelyprimitive x^2+14y^2 values iff49 doesnotdivideN andN isnot inthe118-element setE56 ofCN4Finite, largest8876. Fullcoordinate/C4membership andgenus/dyadic flags agree atallindices:1344933primitivevalues,1721437individuallocalcandidates and376504classfailures.2507anchors<=25000 coverallrepresented targets; only118fullyexhaustednonrepresentations remain.16434823localtargets,16434705represented and342392separatelyexcluded49multiples. All118are actualglobalexceptions; completeness beyond2^24 isnotproved. Exactramification swapsprincipal andclass-two normforms withunit/odd guards, explaining the74ramifiedexceptions.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "checker": "arithmetic/verify_primitive_norm_minus56_sumset.py",
+          "artifact_hash": "sha256:176b2c662a51d8eae2ad0c888bc9ff223d6b2317b6a697a2eebe0ec844dda561",
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "arithmetic/verify_primitive_norm_minus56_sumset.py",
+            "arithmetic/primitive_norm_minus56_sumset_checks.json",
+            "arithmetic/primitive_norm_minus56_source_ledger.json"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Root read and replayed the canonical2^24checker, matchingthe retainedreceipt. Fullmembership andlocalgenusflags areindependentlyreconstructed; allpositiveanchor sums and118exhaustivenegatives arechecked. Coordinateidentities proveunrestrictedramifiedclass-form switching. Noall-targetexceptionclaim, numericalcutoff, formalverification, externalreview orpriorityassurance.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every2<=N<=2^24, N is asum oftwo separatelyprimitive x^2+14y^2 values iff49 doesnotdivideN andN isnot inthe118-element setE56 ofCN4Finite, largest8876. Fullcoordinate/C4membership andgenus/dyadic flags agree atallindices:1344933primitivevalues,1721437individuallocalcandidates and376504classfailures.2507anchors<=25000 coverallrepresented targets; only118fullyexhaustednonrepresentations remain.16434823localtargets,16434705represented and342392separatelyexcluded49multiples. All118are actualglobalexceptions; completeness beyond2^24 isnotproved. Exactramification swapsprincipal andclass-two normforms withunit/odd guards, explaining the74ramifiedexceptions."
+        },
+        {
+          "id": "ARITH-D56-POINTWISE-CLASS-ERROR",
+          "title": "C4 class obstructions contribute a lower-order additive term",
+          "state": "proved",
+          "scope": "LetP be primitiveprincipal x^2+14y^2 values andL the complete individualprimitive-local set S+ union2S+ union7S+ union14S+. UniformlyeveryN>=3, 0<=R_L(N)-R_P(N)<<N J_-56(N)/(logN)^(5/4), withalltargetvaluations included. Henceon every sufficientlylarge49-admissibletarget, R_P(N)=R_L(N)*(1+O((logN)^(-1/4))). Hiddenfailures haveuniquen=r d² c, d supportedoddclass splitprimes,c supportedprincipalgenus splitprimes. Aself-containedCRT/Selbergupper hasdimension5/4, exactinerttargetfactorJ, no coefficientradical loss evenq|d, anderrorsN^(7/20)+N^(9/10). WilliamsfixedAPMertens isimported; the Selberg and uniformEulertruncation proofs are writtenexplicitly. Thisisapointwiserelativecomparison, notanexplicit leadingconstant/singularseries, numericalcutoff or exactglobalexception theorem.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "checker": "arithmetic/verify_primitive_norm_class4_sieve.py",
+          "artifact_hash": "sha256:d96f1659c809124450818b0cfc05bc429c7208a7415f3ab9f31d2d056a917458",
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "arithmetic/verify_primitive_norm_class4_sieve.py",
+            "arithmetic/primitive_norm_class4_sieve_checks.json",
+            "arithmetic/primitive_norm_minus56_source_ledger.json",
+            "arithmetic/sources/williams-mertens-ap-1974.pdf"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Root and two internal agents reconstructed the actualCN4.17-CN4.29, including prefixgcds, alltarget/coefficient rootcases, optimalSelbergweights, factorialMarkovtruncation and botherror sums. Rootread/replayed the canonicalfinitechecker byte-identically; separateinternalreplay matched. The retainedWilliamsTheorem1 wasread and rendered/visuallyinspected. Finiteaudits do notprove the importedMertens theorem or infiniteclass-errorbound; those are separateproofinputs. No externalreview, formalverification, priority or evaluatedleadingconstant.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "LetP be primitiveprincipal x^2+14y^2 values andL the complete individualprimitive-local set S+ union2S+ union7S+ union14S+. UniformlyeveryN>=3, 0<=R_L(N)-R_P(N)<<N J_-56(N)/(logN)^(5/4), withalltargetvaluations included. Henceon every sufficientlylarge49-admissibletarget, R_P(N)=R_L(N)*(1+O((logN)^(-1/4))). Hiddenfailures haveuniquen=r d² c, d supportedoddclass splitprimes,c supportedprincipalgenus splitprimes. Aself-containedCRT/Selbergupper hasdimension5/4, exactinerttargetfactorJ, no coefficientradical loss evenq|d, anderrorsN^(7/20)+N^(9/10). WilliamsfixedAPMertens isimported; the Selberg and uniformEulertruncation proofs are writtenexplicitly. Thisisapointwiserelativecomparison, notanexplicit leadingconstant/singularseries, numericalcutoff or exactglobalexception theorem."
         }
       ],
       "open_questions": [
@@ -8910,8 +9081,14 @@
         {
           "node": "GAP-PRIMITIVE-NORM-EXACT-23",
           "kind": "mathematical",
-          "question": "Classify all finite admissible exceptions to P_-23+P_-23 forN>=2 with529 not dividingN. Eventual logarithmic counts are proved, but no numerical global cutoff or complete finite binary scan is supplied here. The million-index individual-norm class audit does not bound additive exceptions.",
+          "question": "Prove that the40locallyadmissible exceptions inCN3Finite areglobally complete, orfindfurtherexceptions above2^24. Everytargetthrough2^24 isclassified, largestexception3818, andeventual logarithmiccounts areproved; nonumericaleventualcutoff closes thegap. The full exactclassification remainsopen.",
           "source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md"
+        },
+        {
+          "node": "GAP-PRIMITIVE-NORM-EXACT-56",
+          "kind": "mathematical",
+          "question": "Proveorrefute globalcompleteness ofthe118admissibleexceptionsinCN4Finite. Everytarget2..2^24 isclassified, largestexception8876, andeventualN J_-56(N)/logN countsareproved; nonumericalcutoff provesabsenceoffurtherexceptionsabove2^24. Individualmillion-indexaudits donotclose thisbinarygap.",
+          "source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md"
         }
       ],
       "scope_notes": [
@@ -8991,7 +9168,12 @@
         "For every fixed pair of primitive positive-definite integral binary forms, an internally checked quaternary/Mobius deduction gives eventual pair-primitive local-global existence and a coordinate-count singular-series asymptotic with a power-saving error. All local obstructions form a finite congruence test, including conductor primes and arbitrary ideal classes. Both exact -8 and -11 self-sum identities are proved, with no exceptions through1000000; this does not resolve C12+C12 or unweighted leading constants.",
         "Principal norm sets of every imaginary quadratic order have an elementary effective at-most-four boundN>=4c and exact higher-sumset stabilization; all class-number-one k>=3 sumsets now have complete exceptions. General primitive binary pairs have qualitative angular equidistribution and fixed macroscopic balance. For -8, the exact primitive identity and both strong-core identities are proved using complete finite coverage,107analytic intervals and the independent old prime/core results. The explicit count onset remains2^78. A separate maximal-order -11 sieve now gives the explicit onset2^71 and value-pair lower boundN^(2/3)/100000; sharper bounds and a complete finite certificate now prove its exact binary identity without exceptions. C12+C12 remains open.",
         "The first class-number-two principal norm x^2+5y^2 has pointwise N J_-20(N)/logN value counts on every eventual local target, by an explicit finite-genus-filter extension of the existing asymmetric proof. Its class constraint is a periodic genus character, and both signs must travel through every cofactor/gcd operation. Complete scans through2^24 have only exceptions3,4; global completeness and a numerical cutoff remain open.",
-        "For discriminant-23, a complete C3 individual-norm criterion exhibits infinite genuine primitive local/global failures, while four fixed nonprincipal split primes at exact exponent1 give a sufficient additive subset with pointwise N J_-23(N)/logN counts on every sufficiently large529-admissible target. The analytic proof remains quadratic-character dispersion plus finite profiles; no nonabelian distribution estimate is used. Exact additive exceptions and a numerical cutoff remain open."
+        "For discriminant-23, a complete C3 individual-norm criterion exhibits infinite genuine primitive local/global failures, while four fixed nonprincipal split primes at exact exponent1 give a sufficient additive subset with pointwise N J_-23(N)/logN counts on every sufficiently large529-admissible target. The analytic proof remains quadratic-character dispersion plus finite profiles; no nonabelian distribution estimate is used. Exact additive exceptions and a numerical cutoff remain open.",
+        "For every negative prime discriminant-p,p>=7,p=3mod4 (classgroup automaticallyodd), fixed exact-prime pools absorb arbitrary residualclasses and give every sufficiently large primitive-local target the sharp value-count order N J_K(N)/logN. Localconditions arep^2 notdividingN andN even when2 is inert. Primary class-prime density only choosesfixedpools; quadratic Dirichlet-character analytic inputs remain sufficient. Constants depend onfield/pools; exact exceptions, numericalcutoffs, leadingconstants and broader even-class/nonmaximal/mixed-field claims remain open.",
+        "For classgroupC4 inK=Q(sqrt(-14)), the primitiveformx^2+14y^2 haspointwise N J_-56(N)/logN sumcounts onevery sufficientlylarge49-admissibletarget, withoutdyadicexclusions. Aperiodicchi8genuscondition plus two exactoneoddclass primes correct2G. Ram2/7 requirefreshidealorientations, notnormgenerator scaling. Exactindividualcounts exposeinfinitegenuineclassfailures3^(4a+2); noall-even-classgroups theorem or exactadditiveexceptionlist isasserted.",
+        "Discriminant-23 binarysums areclassifiedexactly through2^24:40genuineadmissibleexceptions,largest3818, withfullcoordinate-vs-classflags and643retainedresidualwitnesses. Thefullglobalexceptiongap remainsopen. The exactramifiedidentity23M inP+P iffM inU+U distinguishesunitandramifiedexceptions.",
+        "The primitive x^2+14y^2 binarysumset isexactlyclassifiedthrough2^24:118actualadmissibleexceptions,max8876, with2507shortanchors coveringallpositivecases and118exhaustivenegatives. Globalexceptioncompleteness remainsopen. Ramifiedcoordinateidentities switchprincipal/class-two forms withgcdguards; 7M liesinP0+P0 exactlywhenM liesinU2+U2.",
+        "For discriminant-56, individualclassfailures are a pointwise lower-order additive term: R_L-R_P<<N J_-56(N)/log^(5/4)N uniformlyallN>=3, henceR_P/R_L=1+O(log^(-1/4)N) on every sufficientlylarge49-admissibletarget. The proof usesathin-square envelope, exactuniformCRT, self-containedSelbergoptimization andfixedAPMertens. Thistransfersanyfuturegenusleadingasymptotic, butdoesnotcomputeone. The prime-discriminantcounttheorem also dropsitsredundantodd-class-numberhypothesis viaaclassicalfractionalideal proof."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -9065,7 +9247,8 @@
         "GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE",
         "GAP-EISENSTEIN-BALANCED-INERT-CORES",
         "GAP-PRIMITIVE-NORM-EXACT-20",
-        "GAP-PRIMITIVE-NORM-EXACT-23"
+        "GAP-PRIMITIVE-NORM-EXACT-23",
+        "GAP-PRIMITIVE-NORM-EXACT-56"
       ]
     },
     {
@@ -11414,7 +11597,7 @@
           },
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, exact reductions and counterexamples to stronger closure proposals"
           }
         ],
@@ -11439,7 +11622,7 @@
           },
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, linear-vacuum normalization and limitations of Wick-power tests"
           }
         ],
@@ -12464,7 +12647,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional corollary and cotangent-doubling converse"
           }
         ],
@@ -12482,7 +12665,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional corollary and cotangent-doubling converse"
           }
         ],
@@ -12511,7 +12694,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
           }
         ],
@@ -12539,7 +12722,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
           }
         ],
@@ -12567,7 +12750,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Giraudin’s total-degree-five theorem"
           }
         ],
@@ -12587,7 +12770,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, HC4 research priorities, priority 1"
           }
         ],
@@ -12606,7 +12789,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, HC4 research priorities, priority 1"
           }
         ],
@@ -12625,7 +12808,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, HC4 research priorities, priority 2"
           }
         ],
@@ -12644,7 +12827,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional corollary and cotangent-doubling converse"
           }
         ],
@@ -12671,7 +12854,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
           }
         ],
@@ -12697,7 +12880,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
           }
         ],
@@ -26440,7 +26623,7 @@
           },
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, linear-vacuum cubic growth obstruction"
           }
         ],
@@ -83728,7 +83911,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Moh’s inclusive degree-100 result and author summary"
           }
         ],
@@ -83748,7 +83931,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional degree-pair restriction; Guccione–Guccione–Horruitiner–Valqui arXiv:2204.14178v1 Theorem 2.1"
           }
         ],
@@ -83771,7 +83954,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional degree-pair restriction; Guccione–Guccione–Horruitiner–Valqui arXiv:2204.14178v1 Theorem 2.1"
           }
         ],
@@ -86551,7 +86734,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-            "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
             "locator": "prop:recurrence and its complete proof"
           }
         ],
@@ -86569,7 +86752,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-            "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
             "locator": "lem:derivations and its complete proof"
           }
         ],
@@ -86587,7 +86770,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-            "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
             "locator": "lem:boundary and its complete proof"
           }
         ],
@@ -86605,7 +86788,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-            "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
             "locator": "prop:automorphisms and its complete proof"
           }
         ],
@@ -86765,7 +86948,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-            "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
             "locator": "Unnumbered consequence after prop:automorphisms, finite exponential of a locally nilpotent derivation"
           }
         ],
@@ -87241,7 +87424,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, paragraphs from the Wick-pair padding formula through the cubic-image obstruction"
           }
         ],
@@ -87277,7 +87460,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, independent Wick-pair contraction and its nonzero factorials"
           }
         ],
@@ -87295,7 +87478,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, linear-vacuum normalization using the last nonzero moment"
           }
         ],
@@ -87313,7 +87496,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, Wick-pair padding, linear-vacuum normalization, and rescaling by 1/a!"
           }
         ],
@@ -87331,7 +87514,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, unrestricted complex quantifier"
           }
         ],
@@ -87349,7 +87532,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, linear-vacuum normalization and radial padding"
           }
         ],
@@ -87367,7 +87550,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, heat order and recovery of all Taylor coefficients by Hermite markers"
           }
         ],
@@ -87385,7 +87568,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, the unrestricted safety condition"
           }
         ],
@@ -87403,7 +87586,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, the Hermite-coordinate order condition"
           }
         ],
@@ -87421,7 +87604,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, transported product and the Wick-pair example"
           }
         ],
@@ -87439,7 +87622,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, imaginary-Gaussian formula, Hu–Yan Theorem 5.3"
           }
         ],
@@ -87459,7 +87642,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, canonical Wick correlation after Hu–Yan Theorem 5.3"
           }
         ],
@@ -87477,7 +87660,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, displayed S_a(R), Wick-power factorization and positive falling-factorial multiplier"
           }
         ],
@@ -87495,7 +87678,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, unresolved canonical-marker variant and exact radial padding test"
           }
         ],
@@ -87514,7 +87697,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, full original-marker identity for the independent null multiplier"
           }
         ],
@@ -87532,7 +87715,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, A=1+V and the ensuing full original-marker identity"
           }
         ],
@@ -87550,7 +87733,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, Gaussian-preserving shear and heat transform with squared gradient −10"
           }
         ],
@@ -87568,7 +87751,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, explicit coupled phase, squared gradient 35 and the fixed-k polynomiality obstruction"
           }
         ],
@@ -87586,7 +87769,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, complete-functional tilt obstruction by the evaluation span of preserving derivations"
           }
         ],
@@ -87604,7 +87787,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, independent seed and pure power, followed by the cubic raw-moment bound"
           }
         ],
@@ -87647,7 +87830,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+            "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
             "locator": "Gaussian safety-to-purity, the exact positive radial multiplier and rescaling"
           }
         ],
@@ -89685,7 +89868,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-            "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+            "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
             "locator": "Explicit Minkowski and norm6/norm8 ideal calculation afterCN3.2"
           }
         ],
@@ -89703,7 +89886,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-            "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+            "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
             "locator": "Individual local argument and Ramification, upper bound and scope section"
           }
         ],
@@ -89754,7 +89937,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-            "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+            "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
             "locator": "CN3.5-CN3.6; explicit weighted main and period92 transfer"
           },
           {
@@ -89782,7 +89965,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-            "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+            "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
             "locator": "LemmaCN3Profile and complete finite-block/normalized shift proof"
           },
           {
@@ -89805,7 +89988,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-            "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+            "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
             "locator": "CN3.4, CN3.7 and A positive profile for every target"
           }
         ],
@@ -89814,7 +89997,7 @@
       {
         "id": "GAP-PRIMITIVE-NORM-EXACT-23",
         "title": "Exact discriminant -23 primitive norm sumset exceptions",
-        "scope": "Classify all finite admissible exceptions to P_-23+P_-23 forN>=2 with529 not dividingN. Eventual logarithmic counts are proved, but no numerical global cutoff or complete finite binary scan is supplied here. The million-index individual-norm class audit does not bound additive exceptions.",
+        "scope": "Prove that the40locallyadmissible exceptions inCN3Finite areglobally complete, orfindfurtherexceptions above2^24. Everytargetthrough2^24 isclassified, largestexception3818, andeventual logarithmiccounts areproved; nonumericaleventualcutoff closes thegap. The full exactclassification remainsopen.",
         "kind": "gap",
         "status": "open",
         "topic": "arithmetic",
@@ -89823,7 +90006,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-            "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+            "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
             "locator": "TheoremCN3 and explicit final unresolved scope"
           }
         ],
@@ -89842,11 +90025,636 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-            "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
             "locator": "lem:gamma-profile-rigidity and its complete proof"
           }
         ],
         "assessment": "A uniform limitation of a proposed Gamma-factorization proof mechanism, proved by elementary logarithmic asymptotics, a rank-one entropy Hessian and integer primitivity. It proves no resultant positivity or unrestricted SFC statement. No novelty, formal verification, independent specialist review or external review is asserted."
+      },
+      {
+        "id": "EXT-ODD-IDEAL-CLASS-PRIME-POOLS",
+        "title": "Fixed split-prime pools in every odd ideal class",
+        "scope": "MilneCFTv4.03 VIII7.2 at modulus1 gives eachordinaryidealclass positive Dirichletdensity of primeideals. Removingdegree>=2 primeideals by their boundedDirichletsum leaves infinitelymany distinct degree1 rational splitprimes in eachclass, afterany finiteexclusions. This supplies fixed finite disjoint pools only; no classfield quantitative additive distribution or uniform bound is asserted.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/milne-cft403.pdf",
+            "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+            "locator": "VIIITheorem7.2 printedp258/PDFp267; VIProposition4.5 andCorollary4.6 printedpp196-197/PDFpp205-206"
+          },
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+            "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+            "locator": "Existence of the finitely many class primes"
+          }
+        ],
+        "assessment": "Written unrestricted proof with exact finite audits; classical and analytic input theorems explicitly imported. Internal review only, no formal/external/priority assurance.",
+        "evidence_type": "external_theorem"
+      },
+      {
+        "id": "ARITH-ODD-CLASS-TARGET-PRIME-PROFILES",
+        "title": "Every target admits two full odd-class absorber profiles",
+        "scope": "Disjoint pools2(h_i-1) assign exactlyh_i-1 exactexponent1 primes per side. Ifk_i>=h_i-1 targetdivisors choose enoughcommon; otherwise useallcommon and remainingexclusive nondivisors. Unusedprimes absent. Everyprofile haspositive odd split-prime unit/exactone mass uniformly at arbitrarytargetvaluation; common coefficients divide target and exclusive coefficients do not. Residuals coprime towholeF.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+            "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+            "locator": "OddClassProfiles; OC.5-OC.6 and complete targetassignment"
+          }
+        ],
+        "assessment": "Written unrestricted proof with exact finite audits; classical and analytic input theorems explicitly imported. Internal review only, no formal/external/priority assurance."
+      },
+      {
+        "id": "ARITH-ODD-CLASS-PRIME-DISCRIMINANT-LOCALS",
+        "title": "Complete local sum conditions for prime discriminants in the stated range",
+        "scope": "For primep>=7,p=3mod4, primitive selfsum targets are exactlyp^2 notdividingN, withN even ifp=3mod8. Atp the nonzero-square paircount is(p-1-2(N/p))/4>0; ramifiedvalues haveexactvaluation1 andsquareunitquotients, so two sums neverhavevaluation>=2. Inert2 permits onlyoddnorms; split2 hasno restriction. Otherprimes impose no additive obstruction.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+            "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+            "locator": "OC.2, OC.10 and Local conditions, ramification and completion"
+          }
+        ],
+        "assessment": "Written unrestricted proof with exact finite audits; classical and analytic input theorems explicitly imported. Internal review only, no formal/external/priority assurance."
+      },
+      {
+        "id": "ARITH-ODD-CLASS-FIXED-PERIOD-TRANSFER",
+        "title": "Fixedperiod4p quadratic weighted transfer and normalized density",
+        "scope": "For fixedp and t1or2, witht2 onlywhentwo splits, the period4p firstvariable filter removes the2part and preserves the originalgood varyingmodulus. Allnormalized shifts/goodcoefficients withinM^theta, gcds,targetvaluations andsmall divisibilitypredicates retain powererror. Finitedensity is(8p/(p-1)^2)*(p-1-2(M/p))/4 on appropriateparity punit targets; real factorM/(utv). No neweven-varying-modulus distribution input.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+            "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+            "locator": "OC.7-OC.10; exact character/filter/error-budget transfer"
+          },
+          {
+            "path": "arithmetic/ASYMMETRIC_SUBGROUP_SPLITTING.md",
+            "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+            "locator": "H2 and H9-H18"
+          },
+          {
+            "path": "arithmetic/ASYMMETRIC_FIXED_MODULUS_THEORY.md",
+            "sha256": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+            "locator": "FixedPeriodBoxesGeneral"
+          }
+        ],
+        "assessment": "Written unrestricted proof with exact finite audits; classical and analytic input theorems explicitly imported. Internal review only, no formal/external/priority assurance."
+      },
+      {
+        "id": "ARITH-ODD-CLASS-FINITE-PROFILE-COUNTS",
+        "title": "Fixed odd-class exact-prime profiles preserve sharp logarithmic counts",
+        "scope": "For everyfixedpositive exact0/1poolprofile, existing positive finiteblockH6 unweighting gives at least c_K M J_K(M)/logM ordered corepairs uniformlyalltargetvaluations. Factorassignedprimes andretainresidualcoprimality; forbidpoolprimes in everyactualrough/directive/commoncofactor restorationfactor, retainingtheir analytical kernellocalfactors. Roughdimension2/restoredexponent1 and recoverabilityunchanged. Fixedpoolproducts fitpowerbudgets eventually; takefinitefamily minimumconstant/maximumthreshold.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+            "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+            "locator": "OC.11-OC.12 and complete fixedblock/restoration proof"
+          },
+          {
+            "path": "arithmetic/ASYMMETRIC_SUBGROUP_SPLITTING.md",
+            "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+            "locator": "Section6 positive unweighting"
+          },
+          {
+            "path": "arithmetic/ASYMMETRIC_SEMIGROUP_SCALE.md",
+            "sha256": "0543dba3878558cc47cae197a25d6371ba6b7d2110183b6f2de738d06b58cccb",
+            "locator": "Exactpredicates, fullsplit directives and cofactorrecovery"
+          }
+        ],
+        "assessment": "Written unrestricted proof with exact finite audits; classical and analytic input theorems explicitly imported. Internal review only, no formal/external/priority assurance."
+      },
+      {
+        "id": "ARITH-ODD-CLASS-FINITE-AUDITS",
+        "title": "Finite odd-class absorber and normalized-density challenges",
+        "scope": "Canonical abstractchecker exhausts8721targetprofiles and559761residualclasspairs fortrivial,C3,C5,C7,C3xC3andredundantgenerators; C9signedblock and78unitresiduechecks included. QR/Gamma checkscoverp7,11,19,23,31,43,59,67:260square-pairtargets,764Gammatargets,184coefficientpermutations and5rejected inert2 t2modes. Eleven groupcontrols and5densitycontrols challenge failurehypotheses. Finitechecks do notprove generalprimeexistence, analyticcounts or arbitraryfield primecertificates.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_odd_class_absorbers.py",
+            "sha256": "0642ec24303bad014f130912cb462466f17296731cdea1d54b2222d052e55a8c",
+            "locator": "Full abstractsigned supports, targetprofiles, residualpair compensation, localunits and primeGamma audits"
+          },
+          {
+            "path": "arithmetic/primitive_norm_odd_class_absorber_checks.json",
+            "sha256": "d8337b525ba66a4b78a08f9d0f1bd8ce7dd4c032ae8fb63ff309f75e05bbe498",
+            "locator": "Actual rootbyteidentical replay and exact finite scopes"
+          }
+        ],
+        "assessment": "Written unrestricted proof with exact finite audits; classical and analytic input theorems explicitly imported. Internal review only, no formal/external/priority assurance."
+      },
+      {
+        "id": "ARITH-D56-IDEAL-CLASS-GROUP",
+        "title": "Elementary discriminant -56 C4 class-group calculation",
+        "scope": "Minkowskibound<5 givesnorm1,2,3,4representatives. NonprincipalramP2 hasorder2; (2+sqrt(-14))=P2 P3^2 impliesg=[P3]order4; P7=P2 inclass because(sqrt(-14))=P2P7. ThusfullCl=C4 with explicitformsQ0,Q2,Qplus/minus.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.2-CN4.3 and explicit Minkowski/ideal relations"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "ARITH-D56-PRIMITIVE-LOCAL-CRITERIA",
+        "title": "Complete primitive local norm and additive tests for discriminant -56",
+        "scope": "Individual localcandidates are2^e7^f S+,e/f0or1,S+ oddsplitcore withchi8positive. At2 primitiveimageU union2U,U=units1or7mod8. At7 unitparts are nonzerosquares andramifiedvaluation<=1. At allotherprimes inertfactors forbidden, splitvaluations unrestricted. Primitive sumlocalconditions areexactly49 notdividingN, withno2adicexclusion atanydepth; explicit2adic square-root constructions and7adic lifting prove sufficiency.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.8 and Complete primitive local conditions"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "ARITH-D56-CLASS-PARITY-CHARACTER",
+        "title": "The chi8 character measures parity of the C4 ideal class",
+        "scope": "Onodd idealspsi8(norm) iswell-defined because ratiosofoddprincipalideals have2adicunitnorm1or7mod8. It sendsg=[P3] to-1 and haskernel2G={0,2g}. For splitcorec, psi8(c)=(-1)^r. This controlsprincipalgenus, notthe residual2G obstruction; ram2/7 add2g butnogenus parity.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "Classparity proof beforeCN4.4; wholeprimepower character and localcandidate argument"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "ARITH-D56-FINITE-ARITHMETIC-PROFILE-CERTIFICATES",
+        "title": "Finite C4 arithmetic, genus-density and exact-profile certificates",
+        "scope": "Million-index coordinatecount audit agrees exactly:87187primitivevalues,510420signedpairs,113253localcandidates and26066hiddenC4failures.43690signedclass sequences, localdepthtests and7corruptcontrols challengeformula. Profileaudit checks672all-signGamma,2880coefficient and13440common-target transports,768alltargetclassesmod784,4512exactq²massidentities,16templates and1280normalizedlocalunitcounts. Exactlytwo assignedoddclassprimes per side; negative3-primegenus and450guardcontrols. These finiteaudits do not prove the infiniteanalyticinputs.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_minus56.py",
+            "sha256": "7841140120a7a2a2a763f25ba295cd42df9121974f0ee4637c48fec3f6362ff1",
+            "locator": "Complete signedcoordinate/formclass comparison, localresidue and C4orientation controls"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus56_checks.json",
+            "sha256": "cd79f1a8418487a08be31b6a1aee5f724a9192d3111f5ef9751d9b81497bccff",
+            "locator": "Root million-index replay"
+          },
+          {
+            "path": "arithmetic/verify_primitive_norm_class4_profiles.py",
+            "sha256": "d65a832649c9a186017c5fef0ccbbe0696b8b39635171d1e748a29b5a5985441",
+            "locator": "All-sign density/transport, exact masses, CRTtargetselection and prefix controls"
+          },
+          {
+            "path": "arithmetic/primitive_norm_class4_profile_checks.json",
+            "sha256": "0200cfdbda9c2dc4fdde0cc4c18efa1e36375bc4e20d5f15cf315b49f4d1af9c",
+            "locator": "Root replay afterexactlytwo-prime validator correction"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "ARITH-D56-EXACT-PRIME-CLASS-CORRECTION",
+        "title": "Two exact-one odd-class primes correct the residual subgroup2G",
+        "scope": "Pool3,5,13,19 consists ofsplit oddclass primespsi8=-1. Two distinctones at exactexponent1 cover2G={0,2g}; anS+ residual andramifiedprefix2^e7^f haveevenclass andcanbecanceled.16targetcompatible common/exclusive profilesgiveexactlytwo per side anduniformpositive masses. Allactualrestoredresiduals staycoprimetowholeF. Neither2nor7 isprincipal, so prefixvalueinjections usefreshorientations, notmultiplication ofgenerators.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "Two primes correct the subgroup; CN4.14 and ramified-prefix justification"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "ARITH-D56-GENUS-FIXED-PERIOD-TRANSFER",
+        "title": "Genus-filtered uniform weighted transfer at periods56 and112",
+        "scope": "CN4.9 isuniform in allnormalizedshifts/goodcoefficients<=T^theta,gcds,targetvaluations andsmall predicates, withpowersaving. Fixedfirst-variablechi8filter removesbad2part, leavingvka coprime112; firsttwistsstillxi,xi*chi_-56, principalreassemblyF_Bxi=F_B. ActualGamma finitecount includesall coefficientgenera/signs. Gamma=(7/18)q_t onbaseplusfamilies, includingcorrectt2liftfactor.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.9-CN4.12; explicit characterfilter, source errorbudget and finite normalization"
+          },
+          {
+            "path": "arithmetic/ASYMMETRIC_SUBGROUP_SPLITTING.md",
+            "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+            "locator": "H2 and H9-H18"
+          },
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+            "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+            "locator": "CN2Filter proof mechanism and all-sign/gcd transport"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "ARITH-D56-GENUS-EXACT-PROFILE-COUNTS",
+        "title": "Genus-filtered exact-prime profiles retain logarithmic unweighting",
+        "scope": "FixedF remainsexcludedfromeveryactualrough/directive/common-cofactor restorationfactor, butnotartificiallyfromanalytic kernelindices. Allsigns/genera travelwithactualunit substitutions; psi-negative restorationprimes areallowed. Thus originalpositiveGamma andfiniteprofilemasses factorout, roughdimension2/restoredexponent1/recoverability remain unchanged, giving at leastc T J_-56(T)/logT for everyselectedpositiveprofile. Allfixedcosts fitpowerbudgets eventually.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "Positive unweighting with the exact-prime block; CN4.13"
+          },
+          {
+            "path": "arithmetic/ASYMMETRIC_SUBGROUP_SPLITTING.md",
+            "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+            "locator": "Section6 positive fullrestoration"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "GAP-PRIMITIVE-NORM-EXACT-56",
+        "title": "Exact primitive x^2+14y^2 binary exceptions",
+        "scope": "Proveorrefute globalcompleteness ofthe118admissibleexceptionsinCN4Finite. Everytarget2..2^24 isclassified, largestexception8876, andeventualN J_-56(N)/logN countsareproved; nonumericalcutoff provesabsenceoffurtherexceptionsabove2^24. Individualmillion-indexaudits donotclose thisbinarygap.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "TheoremCN4 and final unresolvedscope"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance.",
+        "gap_kind": "mathematical"
+      },
+      {
+        "id": "ARITH-D23-BOUNDED-BINARY-CERTIFICATES",
+        "title": "Exact -23 binary masks through2^24 with exhaustive residual resolution",
+        "scope": "Completeprincipalcoordinateellipse andindependentC3primepower flags agree onall2^24indices.876anchors<=5000 producevalidcoveredmask; all683uncovered localtargets receivefulla<=N/2search:643retainedwitness triples and40nonrepresentations. Finalmask equalslocal529-free mask minusE exactly, with5corruptioncontrols. Noabsenceclaim beyondbound.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_minus23_sumset.py",
+            "sha256": "4d8f08e016566a4c304456020befbe6ff55b9345b4b15615120121fce5a03f8d",
+            "locator": "Complete flags, packedanchor shifts, exhaustive residual searches and corrupted masks"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus23_sumset_checks.json",
+            "sha256": "bf75c0d55b018ff485a4c106d82f0e352bad7da91b8a0afa82f0ea1923f3e3de",
+            "locator": "Actual rootbyteidentical2^24 replay; full residualwitness records"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "ARITH-D23-RAMIFIED-UNIT-SUM-IDENTITY",
+        "title": "Exact ramified-versus-unit primitive sum identity at discriminant -23",
+        "scope": "ForU=P_-23 intersect23-units, P intersect23Z=23U and23M inP+P iffM inU+U for everypositiveM. The principalramifiedgenerator sqrt(-23) givesprimitive valuation0/1 bijection; -1 nonsquareforcesbothsummandsramified on a23divisibletarget. Thus boundedunitandramifiedexceptionlists differ;29=6+23 isrepresented but667=23*29 isnot.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+            "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
+            "locator": "CN3.8 exactideal/generator proof and bounded29/667example"
+          }
+        ],
+        "assessment": "Unrestricted written arguments and exact finite audits have separate scopes; imported primary and analytic theorems remain inputs. Internal review only, no external/formal/priority assurance."
+      },
+      {
+        "id": "ARITH-D56-BOUNDED-BINARY-CERTIFICATES",
+        "title": "Complete -56 bounded masks and118 exhaustive binary nonrepresentations",
+        "scope": "AllprimitiveQ0values through2^24 arecoordinateenumerated andindependentlyreconstructed viaC4prime-powerclasses; a secondfull comparison checksgenusparity vsdyadicresidues.2507shortanchors<=25000 givevalidpositivecoverage;118remaininglocaltargets areall fullysearched a<=N/2. Finalmask equals49-free localmask minusE56 exactly, with6purposeful corruptedcontrols. Noassertionabovebound.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_minus56_sumset.py",
+            "sha256": "176b2c662a51d8eae2ad0c888bc9ff223d6b2317b6a697a2eebe0ec844dda561",
+            "locator": "Coordinate/C4 flags, cumulativeexponent sieve, completegenus masks, anchorcoverage and fullresidual exhaustion"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus56_sumset_checks.json",
+            "sha256": "9309caed0ddce3bea21223ec62c803a329bb5a2fab2840415621456ec4819378",
+            "locator": "Actual root2^24replay and all118exceptions"
+          }
+        ],
+        "assessment": "Exact bounded computations and unrestricted elementary coordinate identities have distinct scopes. Root replay/internal review only."
+      },
+      {
+        "id": "ARITH-D56-RAMIFIED-CLASS-FORM-SWITCH",
+        "title": "Ramified factors swap principal and class-two primitive forms at -56",
+        "scope": "ForP0 primitive x^2+14y^2 andP2 primitive2u^2+7v^2, Ui=Pi intersect7units andOi=Pi intersectodd: P0_ram7=7U2,P2_ram7=7U0,P0_even=2O2,P2_even=2O0. Directcoordinatebijections preservegcd underexactunit/odd guards. Therefore7M inP0+P0 iffM inU2+U2 by-1nonsquare7. Theseare unrestrictedidentities, neverclosure7P0or2P0. Boundedlistpartitions44unitexceptions(max349)and74ramquotients(max1268).",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.15-CN4.16; four explicit coordinate maps and all gcd/unit converses"
+          }
+        ],
+        "assessment": "Exact bounded computations and unrestricted elementary coordinate identities have distinct scopes. Root replay/internal review only."
+      },
+      {
+        "id": "SFC-GAMMA-RAW-RESULTANT-COEFFICIENT-POSITIVITY-OBSTRUCTION",
+        "title": "Raw Gamma moment resultants do not have universal coefficient one-signness",
+        "scope": "For the distinct ordinary support A={0,1,3,7}, n=1, and normalized Gamma moments mu_b(x)=product_(h=0)^(b-1)(1+h*x), the raw normalized homogeneous resultant of P1,P2,P3,P4 has degree 238 and valuation 72, with 162 positive coefficients and 5 negative coefficients at degrees 93..97. Its normalized coefficient ratio R93/R72 is the explicit negative rational in prop:gamma-coefficient-obstruction. Thus neither overall orientation has nonnegative coefficients, including on primitive-row supports. R(1)>0; this is not an ordinary SFC counterexample or a positive-shape zero certificate.",
+        "kind": "claim",
+        "status": "proved",
+        "origin": "internal",
+        "topic": "factorial",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
+            "locator": "prop:gamma-coefficient-obstruction and its full normalization/determinant proof"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_unrestricted_sfc_mechanisms.py",
+            "sha256": "eb079ad8a221556f92342f4f042c297b10e6fc19c5ae4e47a10a13be6eb42cb2",
+            "locator": "gamma_resultant_counterexample(), --gamma-resultant-counterexample; exact ZZ inputs, checked Bareiss and Singular determinant equality"
+          },
+          {
+            "path": "factorial/image-rigidity/sources/stagliano-classical-resultants-jsag2018.pdf",
+            "sha256": "5de77437ac9319f8a4896d9d5bbc07223c6c030303504120d79f7beea522e87a",
+            "locator": "Theorem 1.8 equation (1-4), printed p. 24; Theorem 1.1 normalization, Remark 1.3 specialization and Proposition 1.5 transformations/multidegrees"
+          }
+        ],
+        "assessment": "Exact finite internal countercertificate to a proposed stronger raw-coefficient formula. All 239 coefficients are reconstructed over exact integer/rational polynomial rings and internally replayed with Sage 10.9; the classical Macaulay theorem is imported at its inspected scope. No novelty, formal verification, independent specialist review, external review, or unrestricted SFC conclusion is asserted."
+      },
+      {
+        "id": "ARITH-NEGATIVE-PRIME-CLASS-NUMBER-ODD",
+        "title": "Classical oddness of imaginary quadratic class numbers for prime discriminants",
+        "scope": "For everyprimep=3mod4, includingp3, Cl(O_Qsqrt(-p))[2] istrivial andthefiniteclassnumber isodd. Conjugationisinversion; a2torsionclass has a=(alpha)bara withNalpha=+1 byimaginarypositivity. Explicitbeta=1+alpha, orexceptionalbetasqrt(-p), givesinvariantfractionalideal. Itsclassreduces to ramifiedprimeclasses evenwithnegativeexponents; theonlyramifiedprimeisprincipal(sqrt(-p)). Finiteness plusinversionpairing provesoddness. Classicalelementarylemma, nothistoricalnovelty.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+            "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+            "locator": "PrimeDiscriminantOdd complete proof; all fractional/unit/prime2 cases"
+          },
+          {
+            "path": "arithmetic/sources/milne-ant308.pdf",
+            "sha256": "24b83c789a89f25aebffb3cbe4ae5ca29edd0075acc072de093d140770630847",
+            "locator": "Theorem4.3 printedp70/PDFp72 forclassgroup finiteness"
+          }
+        ],
+        "assessment": "Written argument internally reconstructed; finite certificates and imported primary theorems have explicit separate scopes. No external review, formal verification or priority assurance."
+      },
+      {
+        "id": "ARITH-D56-HIDDEN-FAILURE-SQUARE-ENVELOPE",
+        "title": "Every hidden C4 failure lies in a unique thin square envelope",
+        "scope": "Ifa inL\\P, CN4Individualforceszeroactiveoddclasspowers. Thusuniquelya=r d² c, r1/2/7/14,d supportedO=(chi56=1,psi8=-1),c supportedH=(chi56=psi8=1). Theirprime supports aredisjoint andd hasnoinertfactors. Ignoringfixedclass2parity enlarges thisfamily forupperbounds. Everybad additivepair ischarged atmosttwice totheseenvelopes.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.19-CN4.20 and exact wholeprimepower argument"
+          }
+        ],
+        "assessment": "Written argument internally reconstructed; finite certificates and imported primary theorems have explicit separate scopes. No external review, formal verification or priority assurance."
+      },
+      {
+        "id": "ARITH-D56-CLASS-SIEVE-UNIFORM-CRT",
+        "title": "Uniform CRT roots for thin envelopes including coefficient prime divisors",
+        "scope": "Afterg=(r,s)|N, A=(r/g)d²,B=s/g arecoprime andsolutionsarec=c0+Bk,v=v0-Ak. Forgoodq inert, bothslopesareunitsandnu=2-1[q|N]; foroddclasssplitq onlycissieved andits slopeB staysunit evenq|d, sonu1; forHq nu0. CRTcountXnu(h)/h+O(nu(h)) isuniformallN,d,rootpositions andvaluationdepths. No weightedH5coefficientclaim isused.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.21-CN4.23 and explicit root collision proof"
+          }
+        ],
+        "assessment": "Written argument internally reconstructed; finite certificates and imported primary theorems have explicit separate scopes. No external review, formal verification or priority assurance."
+      },
+      {
+        "id": "ARITH-D56-SELBERG-QUADRATIC-UPPER",
+        "title": "Exact Selberg optimization with a uniform endpoint error",
+        "scope": "Forpositive-root squarefreeindices, f(h)=nu(h)/h,w(q)=nu/(q-nu),G=sum_(h<=z)mu²w. ThequadraticformdiagonalizesasQ=sum y_u²/w(u) withconstraintsum mu(u)y_u=1. MöbiusinversionconstructsoptimalweightsQ=1/G,lambda1=1, |lambda_h|<<eps h^eps. ExactCRTendpoints then giveS(X,z)<=X/G+Oeps(z^(2+eps)), uniformlycoefficients,Nandd. Thislemma isproveddirectly ratherthanimported fromaweighteddistribution theorem.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.24-CN4.25; full finitequadraticdiagonalization and inversion"
+          }
+        ],
+        "assessment": "Written argument internally reconstructed; finite certificates and imported primary theorems have explicit separate scopes. No external review, formal verification or priority assurance."
+      },
+      {
+        "id": "EXT-D56-AP-MERTENS-RESIDUE-CLASSES",
+        "title": "Williams fixed reduced-residue Mertens products modulo56",
+        "scope": "Theorem1 ofWilliams(1974), specializedtofixedk56: for eachreducedclassa, product_(q<=y,q=a mod56)(1-1/q)=C_a(logy)^(-1/24)+O((logy)^(-1/24-1)), C_a>0. Theexactretainedprimary theoremisimported; actualstatementpage inspected. Thisfullresidueclass input separatelysupports the6oddclass/12inert combination.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/williams-mertens-ap-1974.pdf",
+            "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+            "locator": "Theorem1 printedp356/PDFp4; actual fixedmodulus primary statement"
+          }
+        ],
+        "assessment": "Written argument internally reconstructed; finite certificates and imported primary theorems have explicit separate scopes. No external review, formal verification or priority assurance.",
+        "evidence_type": "external_theorem"
+      },
+      {
+        "id": "ARITH-D56-SIEVE-DIMENSION-TARGET-PRODUCT",
+        "title": "Sieve dimension5/4 and exact target product with uniform truncation",
+        "scope": "E_N(y)=E_0(y)/J_<=y(N)>=E_0(y)/J(N) exactly, E0 comparable(logy)^(5/4) from12inertclasses withtwo rootsand6oddclassclasses withone. PositiveEulermeasure marginalnu(q)/q andtheelementaryfactorialbound sumlogq/q<=2logy give at least3/4massonh<=z fory=z^(1/16). ThusG_N(z)>>log^(5/4)z/J(N), uniformlyalltargetvaluations. TargetEulerfactor directionisexplicit.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.26-CN4.28; primaryAPproducts, convergentcorrection andfactorialMarkov proof"
+          },
+          {
+            "path": "arithmetic/sources/williams-mertens-ap-1974.pdf",
+            "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+            "locator": "Theorem1 fixed residueclass products"
+          }
+        ],
+        "assessment": "Written argument internally reconstructed; finite certificates and imported primary theorems have explicit separate scopes. No external review, formal verification or priority assurance."
+      },
+      {
+        "id": "ARITH-D56-ABSOLUTE-CLASS-FAILURE-BOUND",
+        "title": "Pointwise absolute bound for C4 class-failure contributions",
+        "scope": "UniformeveryintegerN>=3,0<=R_L(N)-R_P(N)<<N J_-56(N)/log^(5/4)N. Sumthin-square CRT/Selbergupperfor d<=N^.1 withz=N^.1,epsilon.5: main sumsagainst d^-2; CRTerrorN^(7/20). Largedtail atmostN sum_(d>N^.1)d^-2<<N^.9. Finitelymanyramifiedprefixpairs andvalueorientations costconstants. AbsoluteboundusesclassarithmeticonlyplusfixedAPMertens, nottheoldlogarithmiclowerbound.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+            "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+            "locator": "CN4.17, CN4.20-CN4.29 and finalsmall/large-square summation"
+          }
+        ],
+        "assessment": "Written argument internally reconstructed; finite certificates and imported primary theorems have explicit separate scopes. No external review, formal verification or priority assurance."
+      },
+      {
+        "id": "ARITH-D56-FINITE-CLASS-SIEVE-CERTIFICATES",
+        "title": "Finite square-envelope, CRT, Selberg and Euler audit",
+        "scope": "Directcoordinates vsindependentperiodiclocalflags through1e6 find26066hiddenfailures, allwithunique r d² c envelope. Finite root coverage isexactly95200combinedcases plus5376deep targets and1568positiveprogressions.35exactFractionquadratic/diagonal/inversion cases,525literalintervalupperbounds,4275CRTendpoint checks,20Euler marginals and5rationalMarkovhalfmass casespass, with65lambdaandotherpurposefulmutantsrejected. Thesefiniteidentities do notprove theinfiniteanalytic theorem.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_class4_sieve.py",
+            "sha256": "d96f1659c809124450818b0cfc05bc429c7208a7415f3ab9f31d2d056a917458",
+            "locator": "Independent arithmeticflags, complete finite root/progression suites, rationalweights andEulermeasure"
+          },
+          {
+            "path": "arithmetic/primitive_norm_class4_sieve_checks.json",
+            "sha256": "859ba918dfb41a8ae0a7f0d2e91f1e4a77138ad2900e9563d1678257a51b753e",
+            "locator": "Actual rootreplay; boundedscopes andpurposefulcorruptcontrols"
+          }
+        ],
+        "assessment": "Written argument internally reconstructed; finite certificates and imported primary theorems have explicit separate scopes. No external review, formal verification or priority assurance."
+      },
+      {
+        "id": "SFC-COMMON-ALGEBRAIC-NORMALIZATION-OBSTRUCTION",
+        "title": "No common normalization of factorial moments to algebraic inverse germs",
+        "scope": "There is no sequence of nonzero complex scalars u_n, n>=0, such that both sum_n u_n L((1+X)^n)t^n and sum_n u_n L((2+X)^n)t^n are algebraic over C(t). The obstruction also holds for infinitely supported normalizations and phase-dependent nonzero constants or geometric time rescalings. It excludes direct whole-sequence realizations by isolated finite algebraic inverse branches under a common scalar normalization; finite-window constructions, non-geometric phase-dependent normalizations and diagonal/period extraction remain outside its scope.",
+        "kind": "claim",
+        "status": "proved",
+        "origin": "internal",
+        "topic": "factorial",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
+            "locator": "lem:common-algebraic-normalization and the exact entire-function contradiction"
+          }
+        ],
+        "assessment": "Written internal route obstruction; the proof uses the exact identity L((a+X)^n)=n! sum_(j=0)^n a^j/j!, an integral coefficient bound, and the polynomial growth of an entire algebraic function. No unrestricted SFC conclusion, novelty, formal verification, external review or independent specialist review is claimed."
+      },
+      {
+        "id": "SFC-POSITIVE-MOMENT-BOREL-PRESERVATION-OBSTRUCTION",
+        "title": "Strict positive moment Gram forms do not preserve regularity under factorial Borel transformation",
+        "scope": "A probability measure on U,V>1/200 has positive density on open ellipses and strict polynomial Gram positivity. Its actual first three forms E(c0+c1 U+c2 V)^m are projectively regular, but multiplication of each c0^i coefficient by i! yields forms with common projective zero (1,-1+7i,-1-7i). The transformed measure for independent Exp(1) T and U,V also has strict polynomial Gram positivity. Exact atom moments, isotropic disk noise with coordinate variance 1/40000, and the positive reduced resultant 4(q+7/4)(q+27/32)^2 prove the claim. This changes the measure and inflates a constant feature; it is not an ordinary SFC counterexample and does not refute the proposed nonconstant-column inflation lemma.",
+        "kind": "claim",
+        "status": "proved",
+        "origin": "internal",
+        "topic": "factorial",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
+            "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
+            "locator": "prop:positive-moment-borel-obstruction; explicit atoms, disk measure, cumulants and strict Gram proof"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_unrestricted_sfc_mechanisms.py",
+            "sha256": "eb079ad8a221556f92342f4f042c297b10e6fc19c5ae4e47a10a13be6eb42cb2",
+            "locator": "check_positive_frame_borel_controls(), default stdlib mode; exact rational raw moments, cumulants, Sylvester determinants and Borel target values"
+          }
+        ],
+        "assessment": "Written internal measure-theoretic and algebraic route counterexample. The default stdlib checker replays the finite atom/noise arithmetic; it does not prove strict Gram positivity for all polynomials or the all-q resultant formula, which use the written argument. No novelty, unrestricted SFC resolution, formal verification, external review or independent specialist review is claimed."
       }
     ],
     "implications": [
@@ -92039,7 +92847,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Nguyen, Theorem 3.6 and its appeal to Theorem 3.4; recorded in Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
         },
         "dependency_coverage": "partial"
@@ -135608,7 +136416,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds, Moh’s inclusive degree-100 result and author summary"
         },
         "dependency_coverage": "partial"
@@ -135622,7 +136430,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional degree-pair restriction; Guccione–Guccione–Horruitiner–Valqui arXiv:2204.14178v1 Theorem 2.1; the only permitted pair below 125 has maximum 108"
         },
         "dependency_coverage": "partial"
@@ -135638,7 +136446,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional degree-pair restriction; Guccione–Guccione–Horruitiner–Valqui arXiv:2204.14178v1 Theorem 2.1"
         },
         "dependency_coverage": "partial",
@@ -135655,7 +136463,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds; restriction of planar maximum component degree from at most 107 to at most 104"
         },
         "dependency_coverage": "partial"
@@ -135669,7 +136477,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds; restriction of four-variable total potential degree from at most 108 to at most 105"
         },
         "dependency_coverage": "partial"
@@ -137196,7 +138004,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-          "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+          "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
           "locator": "lem:boundary; exact algebraic argument"
         },
         "dependency_coverage": "partial"
@@ -137210,7 +138018,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-          "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+          "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
           "locator": "prop:automorphisms; exact algebraic argument"
         },
         "dependency_coverage": "partial"
@@ -137288,7 +138096,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-          "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+          "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
           "locator": "Unnumbered consequence after prop:automorphisms, finite exponential of a locally nilpotent derivation"
         },
         "dependency_coverage": "partial"
@@ -137530,7 +138338,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, displayed Wick-pair factorization and its power version"
         }
       },
@@ -137545,7 +138353,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, the −P^L/μ_L construction; safe recomposition at root zero"
         }
       },
@@ -137563,7 +138371,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, high-order padding after the linear-vacuum normalization"
         }
       },
@@ -137578,7 +138386,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, Hermite coefficient recovery; iterated Gaussian integration by parts"
         }
       },
@@ -137592,7 +138400,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, both Wick-pair powers tend to zero and their product has constant term m!"
         }
       },
@@ -137607,7 +138415,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, apply the polynomial imaginary-copy formula to (HP)^k"
         }
       },
@@ -137622,7 +138430,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, canonical Wick factorization and exact radial moment multiplier"
         }
       },
@@ -137638,7 +138446,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, normalize a safe nonpure phase to unit 1−t and use that all original Wick-power markers are polynomial under safety"
         }
       },
@@ -137653,7 +138461,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, displayed Wick contraction for all original markers and time-Weyl stability"
         }
       },
@@ -137670,7 +138478,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, unweighted seed 1−t, null multiplier, and coefficient identity Φ[A^k]=1+(k−1)t"
         }
       },
@@ -137686,7 +138494,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, displayed HP for the safe shear and selected action −5t²+O(t³)"
         }
       },
@@ -137703,7 +138511,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, safe shear, imaginary-copy period formula and the coupled critical action"
         }
       },
@@ -137718,7 +138526,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, Gaussian integration by parts, divisorial tangency and full evaluation span"
         }
       },
@@ -137734,7 +138542,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "locator": "Gaussian safety-to-purity, product of independent unit periods and Stirling comparison for raw moments"
         }
       },
@@ -138868,7 +139676,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-          "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
           "locator": "Minkowski, norm6 and norm8 ideal identities"
         },
         "dependency_coverage": "partial"
@@ -138882,7 +139690,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-          "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
           "locator": "Direct split/inert/ramified local analysis, including2 and23"
         },
         "dependency_coverage": "partial"
@@ -138898,7 +139706,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-          "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
           "locator": "CN3Individual: whole split powers, C3 character filter and infinite local/global failure families"
         },
         "dependency_coverage": "partial"
@@ -138915,7 +139723,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-          "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
           "locator": "CN3.5a; L46/t2 period92, coefficient normalization and all original source error budgets"
         },
         "dependency_coverage": "partial"
@@ -138931,7 +139739,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-          "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
           "locator": "CN3Profile; fixed pool deleted through every restoration step, positive local blocks and unchanged logarithmic exponent"
         },
         "dependency_coverage": "partial"
@@ -138946,7 +139754,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-          "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
           "locator": "CN3.4, exact valuation guard, all16templates and common/single-side assignment"
         },
         "dependency_coverage": "partial"
@@ -138962,8 +139770,393 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-          "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
           "locator": "TheoremCN3: positive templates, finite-family quantifiers, bounded23scaling and direct upper inert-prime sieve"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ODD-CLASS-SIGNED-PRIMITIVE-ABSORPTION",
+        "premises": [
+          "SRC-PRIMITIVE-NORM-LOCAL-STRUCTURE"
+        ],
+        "conclusion": "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+          "locator": "OddClassAbsorber; m_i-2j covers each oddcyclicblock, whole-power idealorientation and primitive generator"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ODD-CLASS-TARGET-POOL-ASSIGNMENT",
+        "premises": [
+          "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS"
+        ],
+        "conclusion": "ARITH-ODD-CLASS-TARGET-PRIME-PROFILES",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+          "locator": "OddClassProfiles; unrestricted cardinality assignment and localmass proof"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ODD-CLASS-PRIME-DISCRIMINANT-LOCAL-PROOF",
+        "premises": [
+          "SRC-PRIMITIVE-NORM-LOCAL-STRUCTURE"
+        ],
+        "conclusion": "ARITH-ODD-CLASS-PRIME-DISCRIMINANT-LOCALS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+          "locator": "Complete split/inert/ramified anddyadic localanalysis; elementaryQRcorrelation"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ODD-CLASS-FIXED-PERIOD-WEIGHTED-PROOF",
+        "premises": [
+          "EXT-FBS-BGLM-SIGNED-DISPERSION",
+          "ARITH-FIXED-ASYM-PERIODIC-BOXES",
+          "ARITH-SUBGROUP-CHARACTER-FILTER",
+          "ARITH-SUBGROUP-COEFFICIENT-REDUCTION"
+        ],
+        "conclusion": "ARITH-ODD-CLASS-FIXED-PERIOD-TRANSFER",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+          "locator": "OC.7-OC.10; fixedL2p transfer of existing analyticproof, not literal fixed23 theorem"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ODD-CLASS-FIXED-PROFILE-UNWEIGHTING",
+        "premises": [
+          "ARITH-ODD-CLASS-FIXED-PERIOD-TRANSFER",
+          "ARITH-SUBGROUP-UNWEIGHTING",
+          "ARITH-ODD-CLASS-TARGET-PRIME-PROFILES"
+        ],
+        "conclusion": "ARITH-ODD-CLASS-FINITE-PROFILE-COUNTS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+          "locator": "OC.11-OC.12; finiteF block throughout actualrestoration, uniform targetdepth and eventual fixedcosts"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ODD-CLASS-POINTWISE-LOGARITHMIC-COUNTS",
+        "premises": [
+          "EXT-ODD-IDEAL-CLASS-PRIME-POOLS",
+          "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS",
+          "ARITH-ODD-CLASS-TARGET-PRIME-PROFILES",
+          "ARITH-ODD-CLASS-PRIME-DISCRIMINANT-LOCALS",
+          "ARITH-ODD-CLASS-FINITE-PROFILE-COUNTS",
+          "ARITH-NEGATIVE-PRIME-CLASS-NUMBER-ODD"
+        ],
+        "conclusion": "ARITH-ODD-CLASS-PRIMITIVE-NORM-COUNTS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+          "locator": "OddClassCounts; automaticoddness plusfixedclasspools, samefinite-profileanalyticproof"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-IDEAL-CLASS-GROUP-PROOF",
+        "premises": [
+          "EXT-PRIMITIVE-NORM-MILNE-ANT308"
+        ],
+        "conclusion": "ARITH-D56-IDEAL-CLASS-GROUP",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "Minkowski<5, norm18 ideal relation and ramifiedclass equalities"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-ALL-DEPTH-PRIMITIVE-LOCALS",
+        "premises": [
+          "SRC-PRIMITIVE-NORM-LOCAL-STRUCTURE"
+        ],
+        "conclusion": "ARITH-D56-PRIMITIVE-LOCAL-CRITERIA",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "Explicit2-adic U/2U square-root constructions and7-adic norm/sum lifting"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-GENUS-PARITY-PROOF",
+        "premises": [
+          "ARITH-D56-IDEAL-CLASS-GROUP",
+          "ARITH-D56-PRIMITIVE-LOCAL-CRITERIA"
+        ],
+        "conclusion": "ARITH-D56-CLASS-PARITY-CHARACTER",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "Characteronoddidealclasses andψ8(g)=-1"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-EXACT-INDIVIDUAL-C4-NORMS",
+        "premises": [
+          "ARITH-D56-IDEAL-CLASS-GROUP",
+          "ARITH-D56-CLASS-PARITY-CHARACTER",
+          "SRC-PRIMITIVE-NORM-LOCAL-STRUCTURE"
+        ],
+        "conclusion": "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4Individual: wholeprimepower classes, evenr signcounts andunits2"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-TWO-PRIME-RESIDUAL-CLASS-CORRECTION",
+        "premises": [
+          "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+          "ARITH-D56-CLASS-PARITY-CHARACTER",
+          "ARITH-D56-FINITE-ARITHMETIC-PROFILE-CERTIFICATES"
+        ],
+        "conclusion": "ARITH-D56-EXACT-PRIME-CLASS-CORRECTION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "Explicitfourprime certificates, exacttwo-prime2Gsupport and all16profiles"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-UNIFORM-GENUS-FILTER-TRANSFER",
+        "premises": [
+          "EXT-FBS-BGLM-SIGNED-DISPERSION",
+          "ARITH-FIXED-ASYM-PERIODIC-BOXES",
+          "ARITH-SUBGROUP-CHARACTER-FILTER",
+          "ARITH-SUBGROUP-COEFFICIENT-REDUCTION"
+        ],
+        "conclusion": "ARITH-D56-GENUS-FIXED-PERIOD-TRANSFER",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4.9-CN4.12; fixed112 prooftransfer withallcoefficient genera androot phases retained"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-GENUS-FINITE-PROFILE-UNWEIGHTING",
+        "premises": [
+          "ARITH-D56-GENUS-FIXED-PERIOD-TRANSFER",
+          "ARITH-SUBGROUP-UNWEIGHTING",
+          "ARITH-D56-EXACT-PRIME-CLASS-CORRECTION"
+        ],
+        "conclusion": "ARITH-D56-GENUS-EXACT-PROFILE-COUNTS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "ExactFguardthroughallrestoration; fullsplitdensity, genusbijections andpositive finiteblocks"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-POINTWISE-LOGARITHMIC-COUNTS",
+        "premises": [
+          "ARITH-D56-EXACT-PRIME-CLASS-CORRECTION",
+          "ARITH-D56-GENUS-EXACT-PROFILE-COUNTS",
+          "ARITH-D56-PRIMITIVE-LOCAL-CRITERIA"
+        ],
+        "conclusion": "ARITH-CLASS-FOUR-PRIMITIVE-NORM-COUNTS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4.14targetstrata, freshidealprefixorientations, fixedvalueinjections anddirectinertupper"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D23-RAMIFIED-UNIT-SUM-PROOF",
+        "premises": [
+          "ARITH-D23-IDEAL-CLASS-GROUP",
+          "ARITH-D23-PRIMITIVE-LOCAL-CRITERIA"
+        ],
+        "conclusion": "ARITH-D23-RAMIFIED-UNIT-SUM-IDENTITY",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
+          "locator": "CN3.8 principalramifiedgenerator and nonsquareunit-sum anisotropy"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D23-BOUNDED-EXACT-SUMSET-PROOF",
+        "premises": [
+          "ARITH-CLASS-THREE-PRIMITIVE-NORM-CRITERION",
+          "ARITH-D23-PRIMITIVE-LOCAL-CRITERIA",
+          "ARITH-D23-BOUNDED-BINARY-CERTIFICATES"
+        ],
+        "conclusion": "ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
+          "locator": "CN3Finite completefiniteflag/maskproof with40exceptions and noall-target inference"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-RAMIFIED-CLASS-FORM-COORDINATE-PROOF",
+        "premises": [
+          "ARITH-D56-PRIMITIVE-LOCAL-CRITERIA"
+        ],
+        "conclusion": "ARITH-D56-RAMIFIED-CLASS-FORM-SWITCH",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4.15-CN4.16 coordinateequalities, exactgcd guards and ramifiedlocalanisotropy"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-BOUNDED-EXACT-BINARY-SUMSET",
+        "premises": [
+          "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+          "ARITH-D56-PRIMITIVE-LOCAL-CRITERIA",
+          "ARITH-D56-BOUNDED-BINARY-CERTIFICATES"
+        ],
+        "conclusion": "ARITH-D56-PRIMITIVE-NORM-SUMSET-BOUNDED",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4Finite: completefinite reconstruction, fulltargetmask and exhaustive118residual searches"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "NEGATIVE-PRIME-DISCRIMINANT-CLASS-ODDNESS",
+        "premises": [
+          "SRC-PRIMITIVE-NORM-LOCAL-STRUCTURE",
+          "EXT-PRIMITIVE-NORM-MILNE-ANT308"
+        ],
+        "conclusion": "ARITH-NEGATIVE-PRIME-CLASS-NUMBER-ODD",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+          "locator": "PrimeDiscriminantOdd: normpositive1, explicitquadraticHilbert90, invariantfractionalideals andsoleprincipalramifiedprime"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-HIDDEN-FAILURE-ENVELOPE-PROOF",
+        "premises": [
+          "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+          "ARITH-D56-CLASS-PARITY-CHARACTER"
+        ],
+        "conclusion": "ARITH-D56-HIDDEN-FAILURE-SQUARE-ENVELOPE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4.19-CN4.20 exactwholepower factorization"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-UNIFORM-CLASS-SIEVE-CRT-PROOF",
+        "premises": [
+          "ARITH-D56-HIDDEN-FAILURE-SQUARE-ENVELOPE"
+        ],
+        "conclusion": "ARITH-D56-CLASS-SIEVE-UNIFORM-CRT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4.21-CN4.23; d containsnoinertfactors andB isunit atallgoodprimes"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-SELBERG-QUADRATIC-UPPER-PROOF",
+        "premises": [
+          "ARITH-D56-CLASS-SIEVE-UNIFORM-CRT"
+        ],
+        "conclusion": "ARITH-D56-SELBERG-QUADRATIC-UPPER",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4.24-CN4.25; exactCauchy optimum, Möbiusinversion andboundedweights"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-UNIFORM-TARGET-MERTENS-PROOF",
+        "premises": [
+          "EXT-D56-AP-MERTENS-RESIDUE-CLASSES",
+          "ARITH-D56-CLASS-SIEVE-UNIFORM-CRT"
+        ],
+        "conclusion": "ARITH-D56-SIEVE-DIMENSION-TARGET-PRODUCT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4.26-CN4.28; 12/6classproducts, exactJ andelementaryMarkov"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-ABSOLUTE-POINTWISE-CLASS-ERROR",
+        "premises": [
+          "ARITH-D56-HIDDEN-FAILURE-SQUARE-ENVELOPE",
+          "ARITH-D56-CLASS-SIEVE-UNIFORM-CRT",
+          "ARITH-D56-SELBERG-QUADRATIC-UPPER",
+          "ARITH-D56-SIEVE-DIMENSION-TARGET-PRODUCT"
+        ],
+        "conclusion": "ARITH-D56-ABSOLUTE-CLASS-FAILURE-BOUND",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4.29 plusD=z=N^.1 andpower-tail budgets"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D56-RELATIVE-LOCAL-PRINCIPAL-COUNT-COMPARISON",
+        "premises": [
+          "ARITH-D56-ABSOLUTE-CLASS-FAILURE-BOUND",
+          "ARITH-CLASS-FOUR-PRIMITIVE-NORM-COUNTS",
+          "ARITH-D56-PRIMITIVE-LOCAL-CRITERIA"
+        ],
+        "conclusion": "ARITH-D56-POINTWISE-CLASS-ERROR",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "locator": "CN4ClassError/CN4.18; independentoldlowerbound and PsubsetL, withoutcircularity"
         },
         "dependency_coverage": "partial"
       }
@@ -139301,7 +140494,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Gaussian safety-to-purity, purity of every safe phase excludes unit 1−t"
             }
           },
@@ -139316,7 +140509,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Gaussian safety-to-purity, normalize and pad a hypothetical counterexample to the specified order"
             }
           },
@@ -139713,7 +140906,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional corollary and cotangent-doubling converse"
             },
             "dependency_coverage": "partial",
@@ -139731,7 +140924,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, unconditional cotangent-doubling converse"
             },
             "dependency_coverage": "partial"
@@ -139757,7 +140950,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
             },
             "dependency_coverage": "partial",
@@ -139775,7 +140968,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, unconditional cotangent-doubling converse"
             },
             "dependency_coverage": "partial"
@@ -139801,7 +140994,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
             },
             "dependency_coverage": "partial",
@@ -139819,7 +141012,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, unconditional cotangent-doubling converse"
             },
             "dependency_coverage": "partial"
@@ -140936,7 +142129,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Gaussian safety-to-purity, take the maximum cutoff over the finite Hermite degree packet"
             }
           },
@@ -140951,7 +142144,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Gaussian safety-to-purity, each fixed marker belongs to a finite Hermite degree packet"
             }
           }
@@ -140975,7 +142168,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Gaussian safety-to-purity, restrict the unresolved canonical-marker assertion to phases of sufficiently high order"
             }
           },
@@ -140990,7 +142183,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+              "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
               "locator": "Gaussian safety-to-purity, take Q=P(ZW)^a/a! and reflect every fixed canonical period through the nonzero multiplier"
             }
           }
@@ -150487,7 +151680,7 @@
               "nodes": [
                 "FACTORIAL-GENERAL-SFC"
               ],
-              "scope": "Frontier and significance context only; the new route-obstruction proofs are self-contained."
+              "scope": "Frontier and significance context only. The Gamma countercertificate uses the separately pinned classical Macaulay statement; no SFC conclusion is imported."
             }
           ],
           "verification": "source_read",
@@ -158092,7 +159285,7 @@
             {
               "path": "arithmetic/sources/milne-cft403.pdf",
               "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
-              "locator": "Theorems0.4 and0.8 printedpp4/9, PDF13/18"
+              "locator": "Theorems0.4 and0.8 printedpp4/9, PDF13/18; VIIITheorem7.2 printedp258/PDFp267; VIProposition4.5/Corollary4.6 printedpp196-197/PDFpp205-206"
             },
             {
               "path": "arithmetic/sources/milne-cft403.json",
@@ -158116,6 +159309,22 @@
               "nodes": [
                 "EXT-UNRAMIFIED-ARTIN-CLASS-GROUP-QUOTIENT",
                 "ARITH-ELLIPTIC-CLASS-GROUP-STRICT-SELMER"
+              ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+              "locator": "VIIITheorem7.2 printedp258/PDFp267; VIProposition4.5/Corollary4.6 printedpp196-197/PDFpp205-206",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ODD-IDEAL-CLASS-PRIME-POOLS"
+              ]
+            },
+            {
+              "path": "arithmetic/primitive_norm_odd_class_source_ledger.json",
+              "locator": "VIIITheorem7.2 printedp258/PDFp267; VIProposition4.5/Corollary4.6 printedpp196-197/PDFpp205-206",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ODD-IDEAL-CLASS-PRIME-POOLS"
               ]
             }
           ],
@@ -160841,6 +162050,38 @@
               "nodes": [
                 "ARITH-D23-FIXED-TWO-COEFFICIENT-TRANSFER"
               ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+              "locator": "OC.8; unchanged exact Proposition5.1 application at fixedperiod4p via existing H2 proof",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-ODD-CLASS-FIXED-PERIOD-TRANSFER"
+              ]
+            },
+            {
+              "path": "arithmetic/primitive_norm_odd_class_source_ledger.json",
+              "locator": "OC.8; unchanged exact Proposition5.1 application at fixedperiod4p via existing H2 proof",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-ODD-CLASS-FIXED-PERIOD-TRANSFER"
+              ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+              "locator": "CN4.9-CN4.11 prooftransfer viaexactv5Prop5.1 atfixedperiod112",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-D56-GENUS-FIXED-PERIOD-TRANSFER"
+              ]
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus56_source_ledger.json",
+              "locator": "CN4.9-CN4.11 prooftransfer viaexactv5Prop5.1 atfixedperiod112",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-D56-GENUS-FIXED-PERIOD-TRANSFER"
+              ]
             }
           ],
           "verification": "source_read",
@@ -161858,7 +163099,7 @@
               "nodes": [
                 "FACTORIAL-GENERAL-SFC"
               ],
-              "scope": "Frontier and significance context only; the new route-obstruction proofs are self-contained."
+              "scope": "Frontier and significance context only. The Gamma countercertificate uses the separately pinned classical Macaulay statement; no SFC conclusion is imported."
             }
           ],
           "verification": "citation_only",
@@ -162758,6 +163999,24 @@
               "nodes": [
                 "EXT-PAIR-PRIMITIVE-MERTENS-AP"
               ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+              "locator": "Theorem1 printedp356/PDFp4; fixedmod56 12inert/6oddclass products inCN4.27",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-D56-AP-MERTENS-RESIDUE-CLASSES",
+                "ARITH-D56-SIEVE-DIMENSION-TARGET-PRODUCT"
+              ]
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus56_source_ledger.json",
+              "locator": "Theorem1 printedp356/PDFp4; fixedmod56 12inert/6oddclass products inCN4.27",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-D56-AP-MERTENS-RESIDUE-CLASSES",
+                "ARITH-D56-SIEVE-DIMENSION-TARGET-PRODUCT"
+              ]
             }
           ],
           "resource_type": "paper",
@@ -163171,11 +164430,84 @@
               "nodes": [
                 "EXT-PRIMITIVE-NORM-MILNE-ANT308"
               ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+              "locator": "Minkowski4.3 andideal/form4.29 inactualv3.08; C4explicitnorm18 calculation",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-D56-IDEAL-CLASS-GROUP",
+                "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION"
+              ]
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus56_source_ledger.json",
+              "locator": "Minkowski4.3 andideal/form4.29 inactualv3.08; C4explicitnorm18 calculation",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-D56-IDEAL-CLASS-GROUP",
+                "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION"
+              ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+              "locator": "Theorem4.3 forclassgroupfiniteness inPrimeDiscriminantOdd; no genus/classnumbertable input",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-NEGATIVE-PRIME-CLASS-NUMBER-ODD"
+              ]
+            },
+            {
+              "path": "arithmetic/primitive_norm_odd_class_source_ledger.json",
+              "locator": "Theorem4.3 forclassgroupfiniteness inPrimeDiscriminantOdd; no genus/classnumbertable input",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-NEGATIVE-PRIME-CLASS-NUMBER-ODD"
+              ]
             }
           ],
           "resource_type": "book",
           "verification": "source_read",
           "verification_basis": "Root and internal reviewer inspected the actual retained3.08 PDF. The two classical theorems are imported; the explicit -23 class calculation and all primitive class-orientation restrictions are proved in the note. The old3.00 source is preserved separately."
+        },
+        {
+          "id": "EXT-PAPER-STAGLIANO-CLASSICAL-RESULTANTS-2018",
+          "title": "A package for computations with classical resultants",
+          "title_status": "source_title",
+          "citation": "Giovanni Staglianò, A package for computations with classical resultants, Journal of Software for Algebra and Geometry 8 (2018), 21–30. DOI: 10.2140/jsag.2018.8.21.",
+          "identifiers": {
+            "doi": "10.2140/jsag.2018.8.21"
+          },
+          "urls": [
+            "https://msp.org/jsag/2018/8-1/jsag-v8-n1-p03-s.pdf",
+            "https://doi.org/10.2140/jsag.2018.8.21"
+          ],
+          "local_sources": [
+            {
+              "path": "factorial/image-rigidity/sources/stagliano-classical-resultants-jsag2018.pdf",
+              "sha256": "5de77437ac9319f8a4896d9d5bbc07223c6c030303504120d79f7beea522e87a",
+              "locator": "Printed pp22–24, Theorems 1.1/1.8, Remark 1.3 and Proposition 1.5"
+            }
+          ],
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
+              "locator": "Proof of prop:gamma-coefficient-obstruction; classical Macaulay formula(1-4)",
+              "role": "mathematical_input",
+              "nodes": [
+                "SFC-GAMMA-RAW-RESULTANT-COEFFICIENT-POSITIVITY-OBSTRUCTION"
+              ],
+              "scope": "Positive degrees (2,3,4), critical degree 7, first-divisible rule, nonreduced principal submatrix, normalized pure powers and specialization to Q[x]. The actual extraneous determinant is nonzero and exact division is verified."
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "citation_aliases": [],
+          "verification_basis": "Official publisher PDF inspected at the exact theorem and application locators",
+          "retained_review_scope": "Theorem 1.8 equation (1-4) on printed p. 24 matches the implemented first-divisible Macaulay matrix and deletion of reduced rows/columns. Theorem 1.1 fixes normalization, Remark 1.3 permits coefficient-ring specialization, and Proposition 1.5 gives the used elementary changes and multidegrees. Classical theorem accepted at that scope; no independent reproof or new assurance for the countercertificate.",
+          "inventory_notes": [
+            "Published classical-resultant input only; it is not an SFC theorem."
+          ]
         }
       ],
       "internal_citations": [
@@ -223009,7 +224341,8 @@
           "path": "arithmetic/sources/milne-cft403.pdf",
           "role": "reference",
           "claims": [
-            "EXT-UNRAMIFIED-ARTIN-CLASS-GROUP-QUOTIENT"
+            "EXT-UNRAMIFIED-ARTIN-CLASS-GROUP-QUOTIENT",
+            "EXT-ODD-IDEAL-CLASS-PRIME-POOLS"
           ],
           "dependencies": [],
           "gaps": [],
@@ -236305,7 +237638,7 @@
         },
         {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "3de158cf20fd28b454834f2865345c0d39237d1d977026c9fcc118c3e7d912d4",
+          "sha256": "27c3c73a0cb0e5e48fd52c08ff91b543a39deef3f99e9a707e57a1125bf1b07e",
           "role": "documentation",
           "claims": [
             "HESS-HC4-JC2-DEGREE-TRANSFER",
@@ -239039,7 +240372,7 @@
         },
         {
           "path": "factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex",
-          "sha256": "c253e0b0f87b97ee9545459f68e7e6c5ffcad5fb7502a2a0312f38c93ad9fccb",
+          "sha256": "98bf87f98c029e1816d3dd71e566a27999e052e26e6b98456ef440cd3d8b8a7c",
           "role": "proof",
           "claims": [
             "SFC-SPARSE-SCALAR-RECURRENCE-ORDER-OBSTRUCTION",
@@ -239047,7 +240380,10 @@
             "SFC-INVARIANT-DERIVATION-BOUNDARY-LOCUS",
             "SFC-FACTORIAL-POLYNOMIAL-AUTOMORPHISM-RIGIDITY",
             "SFC-NO-NONZERO-FACTORIAL-PRESERVING-LOCALLY-NILPOTENT-DERIVATION",
-            "SFC-PRIMITIVE-GAMMA-PROFILE-PRODUCT-RIGIDITY"
+            "SFC-PRIMITIVE-GAMMA-PROFILE-PRODUCT-RIGIDITY",
+            "SFC-GAMMA-RAW-RESULTANT-COEFFICIENT-POSITIVITY-OBSTRUCTION",
+            "SFC-COMMON-ALGEBRAIC-NORMALIZATION-OBSTRUCTION",
+            "SFC-POSITIVE-MOMENT-BOREL-PRESERVATION-OBSTRUCTION"
           ],
           "dependencies": [],
           "gaps": [
@@ -239097,29 +240433,61 @@
             {
               "locator": "lem:gamma-profile-rigidity",
               "kind": "lemma",
-              "line": 572,
+              "line": 653,
               "title": "lem:gamma-profile-rigidity",
               "nodes": [
                 "SFC-PRIMITIVE-GAMMA-PROFILE-PRODUCT-RIGIDITY"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "prop:gamma-coefficient-obstruction",
+              "kind": "proposition",
+              "line": 517,
+              "title": "prop:gamma-coefficient-obstruction",
+              "nodes": [
+                "SFC-GAMMA-RAW-RESULTANT-COEFFICIENT-POSITIVITY-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "lem:common-algebraic-normalization",
+              "kind": "lemma",
+              "line": 807,
+              "title": "lem:common-algebraic-normalization",
+              "nodes": [
+                "SFC-COMMON-ALGEBRAIC-NORMALIZATION-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "prop:positive-moment-borel-obstruction",
+              "kind": "proposition",
+              "line": 859,
+              "title": "prop:positive-moment-borel-obstruction",
+              "nodes": [
+                "SFC-POSITIVE-MOMENT-BOREL-PRESERVATION-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
-          "explanation": "Written proofs of the recorded recurrence and functional-rigidity claims, exact route obstructions, and full-lattice positive Gamma-profile product rigidity. Raw Gamma-resultant coalescence preserves coefficient nonnegativity together with nonzero and reduces the stronger proposed coefficient assertion to primitive nonzero rows. The arbitrary-support/arbitrary-index cancellation remains unproved; the {0,1,3} window 2,3,4 calculation is only a diagnostic."
+          "explanation": "Recorded recurrence and functional-rigidity proofs, exact route obstructions, and full-lattice positive Gamma-profile rigidity. The formerly proposed universal raw Gamma-resultant coefficient formula is now falsified by the primitive row {0,1,3,7}; the exact countercertificate is separately mapped. Row coalescence remains a valid conditional identity. Unrestricted SFC and direct strict nonvanishing remain open. The common-normalization lemma rules out a direct shared-prefactor algebraic inverse transfer. The positive-measure Borel proposition separately refutes generic strict-Gram moment-frame preservation. The subsequent two integer-toric preservation statements are explicitly unproved; their token construction supplies a conditional sufficient scheme only, with unrestricted SFC still open."
         },
         {
           "path": "factorial/image-rigidity/verify_unrestricted_sfc_mechanisms.py",
-          "sha256": "e661167bed4001a70225a96cdafef6700adc20a648167bd370d885d1ae7c8c80",
+          "sha256": "eb079ad8a221556f92342f4f042c297b10e6fc19c5ae4e47a10a13be6eb42cb2",
           "role": "evidence",
           "claims": [
-            "SFC-SPARSE-SCALAR-RECURRENCE-ORDER-OBSTRUCTION"
+            "SFC-SPARSE-SCALAR-RECURRENCE-ORDER-OBSTRUCTION",
+            "SFC-GAMMA-RAW-RESULTANT-COEFFICIENT-POSITIVITY-OBSTRUCTION",
+            "SFC-POSITIVE-MOMENT-BOREL-PRESERVATION-OBSTRUCTION"
           ],
           "dependencies": [],
           "gaps": [
             "FACTORIAL-GENERAL-SFC"
           ],
           "statements": [],
-          "explanation": "Default standard-library controls cover recurrence, Euler, Gamma/Beta, arithmetic, saddle and row-grouping normalizations with corrupt inputs and a mixed-sign specialization countercontrol. They do not prove the all-index profile-rigidity lemma. Optional --gamma-resultant-probe, replayed in Sage 10.9, reconstructs one later-index resultant by two determinant methods with exact equality and coefficient/integrality checks. No unrestricted SFC or universal coefficient assertion is established."
+          "explanation": "Default standard-library normalization and corrupt-input controls. Sage --gamma-resultant-probe retains a positive calibration; --gamma-resultant-counterexample constructs exact ZZ inputs and the 36x36/10x10 Macaulay quotient, checks Bareiss against Singular coefficientwise, and verifies all 239 coefficients and mixed signs. The latter disproves raw coefficient one-signness, not SFC. All-index rigidity uses the written proof. The new default positive-frame control reconstructs exact atom/noise moments, checks both reduced Sylvester resultants and the before/after Borel values. Full Gram positivity is a written proof; this constant-feature counterexample does not refute ordinary nonconstant-column inflation."
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
@@ -240046,7 +241414,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-          "sha256": "45b3ec04c8b953d48df5e8a9f13109f0ed33e9ce37042ce62ff8d638658e5fa3",
+          "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
           "claims": [
             "ARITH-CLASS-THREE-PRIMITIVE-NORM-COUNTS",
             "ARITH-CLASS-THREE-PRIMITIVE-NORM-CRITERION",
@@ -240054,7 +241422,9 @@
             "ARITH-D23-PRIMITIVE-LOCAL-CRITERIA",
             "ARITH-D23-FIXED-TWO-COEFFICIENT-TRANSFER",
             "ARITH-D23-FIXED-PROFILE-UNWEIGHTING",
-            "ARITH-D23-EXACT-PRIME-ABSORPTION"
+            "ARITH-D23-EXACT-PRIME-ABSORPTION",
+            "ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED",
+            "ARITH-D23-RAMIFIED-UNIT-SUM-IDENTITY"
           ],
           "dependencies": [
             "ARITH-SUBGROUP-ASYM-UNIFORM",
@@ -240092,6 +241462,16 @@
               "title": "Lemma CN3Profile.** For a fixed profile whose local masses (CN3.7)",
               "nodes": [
                 "ARITH-D23-FIXED-PROFILE-UNWEIGHTING"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition CN3Finite.** For every \\(2\\le N\\le2^{24}=16777216\\),",
+              "kind": "proposition",
+              "line": 354,
+              "title": "Proposition CN3Finite.** For every \\(2\\le N\\le2^{24}=16777216\\),",
+              "nodes": [
+                "ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED"
               ],
               "mapping_kind": "exact-statement"
             }
@@ -240151,10 +241531,11 @@
         },
         {
           "path": "arithmetic/primitive_norm_minus23_source_ledger.json",
-          "sha256": "af0c3d22c552314b03c2c6f0fba8113e92aa3ed322ba07b11421840f43e99b93",
+          "sha256": "7966088ce79cc4536877363ba9390611aed8a8dec00a9633852fde02147bf285",
           "claims": [
             "ARITH-CLASS-THREE-PRIMITIVE-NORM-COUNTS",
-            "ARITH-CLASS-THREE-PRIMITIVE-NORM-CRITERION"
+            "ARITH-CLASS-THREE-PRIMITIVE-NORM-CRITERION",
+            "ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED"
           ],
           "dependencies": [
             "EXT-PRIMITIVE-NORM-MILNE-ANT308",
@@ -240176,6 +241557,351 @@
           "statements": [],
           "role": "evidence",
           "explanation": "Separates unrestricted individual C3 arithmetic, million-index coefficient audit, finite profile certificates and the eventual additive logarithmic count."
+        },
+        {
+          "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+          "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
+          "claims": [
+            "ARITH-ODD-CLASS-PRIMITIVE-NORM-COUNTS",
+            "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS",
+            "ARITH-ODD-CLASS-TARGET-PRIME-PROFILES",
+            "ARITH-ODD-CLASS-PRIME-DISCRIMINANT-LOCALS",
+            "ARITH-ODD-CLASS-FIXED-PERIOD-TRANSFER",
+            "ARITH-ODD-CLASS-FINITE-PROFILE-COUNTS",
+            "ARITH-NEGATIVE-PRIME-CLASS-NUMBER-ODD"
+          ],
+          "dependencies": [
+            "EXT-ODD-IDEAL-CLASS-PRIME-POOLS",
+            "ARITH-SUBGROUP-ASYM-UNIFORM",
+            "ARITH-SUBGROUP-UNWEIGHTING"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem OddClassCounts.** There are positive constants \\(c_K,C_K,N_K\\)",
+              "kind": "theorem",
+              "line": 20,
+              "title": "Theorem OddClassCounts.** There are positive constants \\(c_K,C_K,N_K\\)",
+              "nodes": [
+                "ARITH-ODD-CLASS-PRIMITIVE-NORM-COUNTS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma PrimeDiscriminantOdd.** If \\(p\\equiv3\\pmod4\\) is prime,",
+              "kind": "lemma",
+              "line": 49,
+              "title": "Lemma PrimeDiscriminantOdd.** If \\(p\\equiv3\\pmod4\\) is prime,",
+              "nodes": [
+                "ARITH-NEGATIVE-PRIME-CLASS-NUMBER-ODD"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma OddClassAbsorber.** Let \\(G\\) be a finite abelian group of odd",
+              "kind": "lemma",
+              "line": 110,
+              "title": "Lemma OddClassAbsorber.** Let \\(G\\) be a finite abelian group of odd",
+              "nodes": [
+                "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma OddClassProfiles.** Every target has a profile giving each",
+              "kind": "lemma",
+              "line": 185,
+              "title": "Lemma OddClassProfiles.** Every target has a profile giving each",
+              "nodes": [
+                "ARITH-ODD-CLASS-TARGET-PRIME-PROFILES"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "role": "proof",
+          "explanation": "Separates unrestricted oddclass absorption and prime-discriminant analytic deduction from its explicitly finite group/prime-density audits; no cutoff or new nonabelian additive estimate."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_odd_class_absorbers.py",
+          "sha256": "0642ec24303bad014f130912cb462466f17296731cdea1d54b2222d052e55a8c",
+          "claims": [
+            "ARITH-ODD-CLASS-FINITE-AUDITS",
+            "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS",
+            "ARITH-ODD-CLASS-TARGET-PRIME-PROFILES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Separates unrestricted oddclass absorption and prime-discriminant analytic deduction from its explicitly finite group/prime-density audits; no cutoff or new nonabelian additive estimate."
+        },
+        {
+          "path": "arithmetic/primitive_norm_odd_class_absorber_checks.json",
+          "sha256": "d8337b525ba66a4b78a08f9d0f1bd8ce7dd4c032ae8fb63ff309f75e05bbe498",
+          "claims": [
+            "ARITH-ODD-CLASS-FINITE-AUDITS",
+            "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS",
+            "ARITH-ODD-CLASS-TARGET-PRIME-PROFILES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Separates unrestricted oddclass absorption and prime-discriminant analytic deduction from its explicitly finite group/prime-density audits; no cutoff or new nonabelian additive estimate."
+        },
+        {
+          "path": "arithmetic/primitive_norm_odd_class_source_ledger.json",
+          "sha256": "3ca4cc72fa888d5505ff74d3905404b005620b23545045dd5bcdef36697bc68b",
+          "claims": [
+            "ARITH-ODD-CLASS-PRIMITIVE-NORM-COUNTS",
+            "ARITH-ODD-CLASS-FINITE-PRIME-ABSORBERS",
+            "ARITH-NEGATIVE-PRIME-CLASS-NUMBER-ODD"
+          ],
+          "dependencies": [
+            "EXT-ODD-IDEAL-CLASS-PRIME-POOLS",
+            "EXT-FBS-BGLM-SIGNED-DISPERSION"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Separates unrestricted oddclass absorption and prime-discriminant analytic deduction from its explicitly finite group/prime-density audits; no cutoff or new nonabelian additive estimate."
+        },
+        {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+          "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+          "claims": [
+            "ARITH-CLASS-FOUR-PRIMITIVE-NORM-COUNTS",
+            "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+            "ARITH-D56-IDEAL-CLASS-GROUP",
+            "ARITH-D56-PRIMITIVE-LOCAL-CRITERIA",
+            "ARITH-D56-CLASS-PARITY-CHARACTER",
+            "ARITH-D56-EXACT-PRIME-CLASS-CORRECTION",
+            "ARITH-D56-GENUS-FIXED-PERIOD-TRANSFER",
+            "ARITH-D56-GENUS-EXACT-PROFILE-COUNTS",
+            "ARITH-D56-PRIMITIVE-NORM-SUMSET-BOUNDED",
+            "ARITH-D56-RAMIFIED-CLASS-FORM-SWITCH",
+            "ARITH-D56-POINTWISE-CLASS-ERROR",
+            "ARITH-D56-ABSOLUTE-CLASS-FAILURE-BOUND",
+            "ARITH-D56-HIDDEN-FAILURE-SQUARE-ENVELOPE",
+            "ARITH-D56-CLASS-SIEVE-UNIFORM-CRT",
+            "ARITH-D56-SELBERG-QUADRATIC-UPPER",
+            "ARITH-D56-SIEVE-DIMENSION-TARGET-PRODUCT"
+          ],
+          "dependencies": [
+            "EXT-PRIMITIVE-NORM-MILNE-ANT308",
+            "ARITH-SUBGROUP-UNWEIGHTING",
+            "EXT-D56-AP-MERTENS-RESIDUE-CLASSES"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-56"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem CN4.** There are constants \\(c_1,c_2>0,N_0\\) such that every",
+              "kind": "theorem",
+              "line": 15,
+              "title": "Theorem CN4.** There are constants \\(c_1,c_2>0,N_0\\) such that every",
+              "nodes": [
+                "ARITH-CLASS-FOUR-PRIMITIVE-NORM-COUNTS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma CN4Individual.** The integer \\(n\\) is in \\(P\\) if and only if",
+              "kind": "lemma",
+              "line": 113,
+              "title": "Lemma CN4Individual.** The integer \\(n\\) is in \\(P\\) if and only if",
+              "nodes": [
+                "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition CN4ClassError.** Uniformly for integers \\(N\\ge3\\),",
+              "kind": "proposition",
+              "line": 392,
+              "title": "Proposition CN4ClassError.** Uniformly for integers \\(N\\ge3\\),",
+              "nodes": [
+                "ARITH-D56-POINTWISE-CLASS-ERROR"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition CN4Finite.** For every \\(2\\le N\\le2^{24}=16777216\\),",
+              "kind": "proposition",
+              "line": 652,
+              "title": "Proposition CN4Finite.** For every \\(2\\le N\\le2^{24}=16777216\\),",
+              "nodes": [
+                "ARITH-D56-PRIMITIVE-NORM-SUMSET-BOUNDED"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "role": "proof",
+          "explanation": "ExactC4arithmetic and finitegenus/profile evidence areseparated fromtheunrestrictedanalytic proof; boundedD23sums retainallfinitebounds."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_minus56.py",
+          "sha256": "7841140120a7a2a2a763f25ba295cd42df9121974f0ee4637c48fec3f6362ff1",
+          "claims": [
+            "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+            "ARITH-D56-FINITE-ARITHMETIC-PROFILE-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "ExactC4arithmetic and finitegenus/profile evidence areseparated fromtheunrestrictedanalytic proof; boundedD23sums retainallfinitebounds."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus56_checks.json",
+          "sha256": "cd79f1a8418487a08be31b6a1aee5f724a9192d3111f5ef9751d9b81497bccff",
+          "claims": [
+            "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+            "ARITH-D56-FINITE-ARITHMETIC-PROFILE-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "ExactC4arithmetic and finitegenus/profile evidence areseparated fromtheunrestrictedanalytic proof; boundedD23sums retainallfinitebounds."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_class4_profiles.py",
+          "sha256": "d65a832649c9a186017c5fef0ccbbe0696b8b39635171d1e748a29b5a5985441",
+          "claims": [
+            "ARITH-D56-FINITE-ARITHMETIC-PROFILE-CERTIFICATES",
+            "ARITH-D56-GENUS-FIXED-PERIOD-TRANSFER",
+            "ARITH-D56-EXACT-PRIME-CLASS-CORRECTION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "ExactC4arithmetic and finitegenus/profile evidence areseparated fromtheunrestrictedanalytic proof; boundedD23sums retainallfinitebounds."
+        },
+        {
+          "path": "arithmetic/primitive_norm_class4_profile_checks.json",
+          "sha256": "0200cfdbda9c2dc4fdde0cc4c18efa1e36375bc4e20d5f15cf315b49f4d1af9c",
+          "claims": [
+            "ARITH-D56-FINITE-ARITHMETIC-PROFILE-CERTIFICATES",
+            "ARITH-D56-GENUS-FIXED-PERIOD-TRANSFER",
+            "ARITH-D56-EXACT-PRIME-CLASS-CORRECTION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "ExactC4arithmetic and finitegenus/profile evidence areseparated fromtheunrestrictedanalytic proof; boundedD23sums retainallfinitebounds."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus56_source_ledger.json",
+          "sha256": "e63424ea67ee44565cd121dbe0ed8270a5d0cfb49d334c1aa3ce3b9b4aa12345",
+          "claims": [
+            "ARITH-CLASS-FOUR-PRIMITIVE-NORM-COUNTS",
+            "ARITH-CLASS-FOUR-PRIMITIVE-NORM-CRITERION",
+            "ARITH-D56-PRIMITIVE-NORM-SUMSET-BOUNDED",
+            "ARITH-D56-RAMIFIED-CLASS-FORM-SWITCH",
+            "ARITH-D56-POINTWISE-CLASS-ERROR",
+            "ARITH-D56-ABSOLUTE-CLASS-FAILURE-BOUND"
+          ],
+          "dependencies": [
+            "EXT-PRIMITIVE-NORM-MILNE-ANT308",
+            "EXT-FBS-BGLM-SIGNED-DISPERSION",
+            "EXT-D56-AP-MERTENS-RESIDUE-CLASSES"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "ExactC4arithmetic and finitegenus/profile evidence areseparated fromtheunrestrictedanalytic proof; boundedD23sums retainallfinitebounds."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_minus23_sumset.py",
+          "sha256": "4d8f08e016566a4c304456020befbe6ff55b9345b4b15615120121fce5a03f8d",
+          "claims": [
+            "ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED",
+            "ARITH-D23-BOUNDED-BINARY-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "ExactC4arithmetic and finitegenus/profile evidence areseparated fromtheunrestrictedanalytic proof; boundedD23sums retainallfinitebounds."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus23_sumset_checks.json",
+          "sha256": "bf75c0d55b018ff485a4c106d82f0e352bad7da91b8a0afa82f0ea1923f3e3de",
+          "claims": [
+            "ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED",
+            "ARITH-D23-BOUNDED-BINARY-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "ExactC4arithmetic and finitegenus/profile evidence areseparated fromtheunrestrictedanalytic proof; boundedD23sums retainallfinitebounds."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_minus56_sumset.py",
+          "sha256": "176b2c662a51d8eae2ad0c888bc9ff223d6b2317b6a697a2eebe0ec844dda561",
+          "claims": [
+            "ARITH-D56-PRIMITIVE-NORM-SUMSET-BOUNDED",
+            "ARITH-D56-BOUNDED-BINARY-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact2^24finitebinaryclassification; no globalcutoff inference."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus56_sumset_checks.json",
+          "sha256": "9309caed0ddce3bea21223ec62c803a329bb5a2fab2840415621456ec4819378",
+          "claims": [
+            "ARITH-D56-PRIMITIVE-NORM-SUMSET-BOUNDED",
+            "ARITH-D56-BOUNDED-BINARY-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact2^24finitebinaryclassification; no globalcutoff inference."
+        },
+        {
+          "path": "factorial/image-rigidity/sources/stagliano-classical-resultants-jsag2018.pdf",
+          "sha256": "5de77437ac9319f8a4896d9d5bbc07223c6c030303504120d79f7beea522e87a",
+          "role": "evidence",
+          "claims": [
+            "SFC-GAMMA-RAW-RESULTANT-COEFFICIENT-POSITIVITY-OBSTRUCTION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Official published source for the classical Macaulay determinant identity, first-divisible rule, normalized resultant and specialization. The exact stated scope and application are inspected internally; its proof is imported rather than independently reproduced."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_class4_sieve.py",
+          "sha256": "d96f1659c809124450818b0cfc05bc429c7208a7415f3ab9f31d2d056a917458",
+          "claims": [
+            "ARITH-D56-FINITE-CLASS-SIEVE-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact bounded arithmetic/CRT/rationalidentity audits only; infiniteMertensandthepointwiseclass-errorproof areseparate."
+        },
+        {
+          "path": "arithmetic/primitive_norm_class4_sieve_checks.json",
+          "sha256": "859ba918dfb41a8ae0a7f0d2e91f1e4a77138ad2900e9563d1678257a51b753e",
+          "claims": [
+            "ARITH-D56-FINITE-CLASS-SIEVE-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact bounded arithmetic/CRT/rationalidentity audits only; infiniteMertensandthepointwiseclass-errorproof areseparate."
         }
       ]
     },

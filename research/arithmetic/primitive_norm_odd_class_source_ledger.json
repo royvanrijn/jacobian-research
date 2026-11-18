@@ -1,0 +1,145 @@
+{
+  "title": "Primitive norm sums for every negative prime discriminant -p,p>=7",
+  "proof": "PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+  "checkers": [
+    "verify_primitive_norm_odd_class_absorbers.py"
+  ],
+  "receipts": [
+    "primitive_norm_odd_class_absorber_checks.json"
+  ],
+  "reproduction": [
+    "python3 research/arithmetic/verify_primitive_norm_odd_class_absorbers.py --output research/arithmetic/primitive_norm_odd_class_absorber_checks.json"
+  ],
+  "proof_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
+      "sha256": "b9df19e8aab65b6c074f5f92da5113c33f32a9dc731f6a6d554192a23e5914a2",
+      "scope": "Maximal-order primitive ideal orientation and local norm structure; ramified valuations."
+    },
+    {
+      "path": "ASYMMETRIC_SUBGROUP_SPLITTING.md",
+      "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+      "scope": "H2 quadratic-kernel weighted family; H9-H18 analytic proof; section6 finite-block positive unweighting and direct odd-inert-prime upper sieve."
+    },
+    {
+      "path": "ASYMMETRIC_FIXED_MODULUS_THEORY.md",
+      "sha256": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+      "scope": "FixedPeriodBoxesGeneral for arbitrary fixed period, here4p."
+    },
+    {
+      "path": "ASYMMETRIC_SEMIGROUP_SCALE.md",
+      "sha256": "0543dba3878558cc47cae197a25d6371ba6b7d2110183b6f2de738d06b58cccb",
+      "scope": "Small exact-divisibility predicates, positive finite blocks, full directive/cofactor restoration and recoverability."
+    },
+    {
+      "path": "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+      "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+      "scope": "CN2Filter proof mechanism with arbitrary fixed L2p,t2 and no genuslabels, not literal fixed20 theorem."
+    },
+    {
+      "path": "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
+      "scope": "CN3.5-CN3.5a and CN3Profile proof mechanisms; algebra replaced by arbitrary finite odd class group and finite pool."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "James S. Milne",
+      "title": "Class Field Theory",
+      "version": "v4.03,6August2020",
+      "url": "https://www.jmilne.org/math/CourseNotes/CFT.pdf",
+      "local_path": "sources/milne-cft403.pdf",
+      "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+      "statements_used": [
+        "VIIITheorem7.2, printedp258/PDFp267: positive Dirichlet density for prime ideals in each congruence class; modulus1 gives every ordinary ideal class.",
+        "VIProposition4.5 andCorollary4.6, printedpp196-197/PDFpp205-206: restriction to residue-degree1 overQ preserves prime-ideal density; also reproved here by the bounded higher-degree Dirichlet sum."
+      ],
+      "inspection_scope": "Root and analytic reviewer read the actual cached4.03 title and exact statement pages. Primary density theorem proof imported, not independently reconstructed. Only a fixed finite class-prime pool is needed; no quantitative class-field distribution input."
+    },
+    {
+      "title": "Additive problems with almost prime squares",
+      "authors": "Valentin Blomer, Lasse Grimmelt, Junxian Li, Simon L. Rydin Myerson",
+      "version": "arXiv:2111.01601v5",
+      "url": "https://arxiv.org/pdf/2111.01601v5",
+      "local_path": "sources/blomer-grimmelt-li-rydin-myerson-2111.01601v5.pdf",
+      "sha256": "6cb425e37285b1a09aeeade57210948f885d40f1d4d7b337671cfbd0a4a4711f",
+      "statements_used": [
+        "Proposition5.1, PDFp15: signed bilinear dispersion with fixed progression periodc; actual printed c0/c, coprimality, scale, auxiliary-modulus and inverse-multiplier hypotheses."
+      ],
+      "inspection_scope": "Actual cached v5 statement read by root and internal reviewers. Reused through the exact application proof; the deep source proof itself is imported."
+    },
+    {
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "version": "v3.08, 19 July 2020",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "local_path": "sources/milne-ant308.pdf",
+      "sha256": "24b83c789a89f25aebffb3cbe4ae5ca29edd0075acc072de093d140770630847",
+      "statements_used": [
+        "Theorem4.3, printedp70/PDFp72: finite Minkowski ideal-class representative bound, hence finite class group."
+      ],
+      "inspection_scope": "The exact retained3.08 Minkowski statement was read internally. Finiteness is imported; absence of2-torsion is proved directly using invariantfractional ideals in PrimeDiscriminantOdd. No classnumber table or genus theorem is assumed."
+    }
+  ],
+  "field_scope": {
+    "discriminant": "-p with fixed primep>=7,p=3mod4",
+    "order": "Maximal imaginary quadratic order",
+    "class_group": "Automatically odd by the explicit ambiguous-fractional-ideal/norm-one proof; no separate class-number hypothesis and no cyclicity assumption.",
+    "primitive_form": "x^2+xy+(p+1)y^2/4"
+  },
+  "counting_statement": {
+    "admissible_targets": "p^2 does not divideN; additionallyN even ifp=3mod8",
+    "local_complete": true,
+    "ordered_value_pairs": "Comparable to N J_K(N)/logN for every sufficiently large admissibleN",
+    "target_factor": "Product_(ell|N,ell notdividing2p,chi_-p(ell)=-1)(ell-1)/(ell-2)",
+    "constants": "Depend on fixed field and finite chosen primepools; no numerical or field-uniform bound",
+    "excluded_targets": "Exactlyzero at everypositive locally inadmissible target"
+  },
+  "finite_absorber": {
+    "block": "For generatorg_i ofoddorderh_i usem_i=h_i-1 exact-exponent-one primes; signed sums cover<g_i>",
+    "pool": "2m_i distinct odd split rational primes per generator, disjoint across all pools, avoidingp",
+    "assignment": "Usem_i common target-dividing primes if available; otherwise allk_i common andm_i-k_i exclusive nondividing primes per side",
+    "guard": "Residuals coprime to wholepool at every actual restoration stage; analytic kernelindices may contain poolprimes",
+    "arithmetic_input": "Only existence of fixed classprimes requires the class-prime density theorem",
+    "analytic_input": "Quadratic Dirichlet character with fixedperiod4p and exact finiteprofile H6transfer"
+  },
+  "verification": "Root and separate internal reviewers audited unrestricted finite-group absorption, targetcompatible profiles, complete primitive localconditions, fixedperiodweighted normalization, all-target valuationuniformity, positive finiteprofile unweighting and ramified scaling. Root replayed the finite canonical checker with a byte-identical retained receipt. No external review or formal verification. Root and two separate internal reviewers reconstructed all steps of PrimeDiscriminantOdd, including normpositivity, alpha=-1, fractional/negative exponents and unramified2; the count theorem now imposes no class-number assumption.",
+  "limitations": [
+    "Finite checker covers its recorded groups and finite prime-density identities; it does not prove infinite class-prime density, analytic estimates, or class certificates for arbitrary fields.",
+    "No numerical cutoff, exact list of finite additive exceptions, unweighted leading constant, short window or prescribed multiplicity theorem.",
+    "No uniformity as fields/class groups/auxiliary primepools vary.",
+    "Even classgroups, arbitrary discriminants, nonmaximalorders, mixedfields and simultaneous norms are outside this statement.",
+    "No historical novelty claim or resolution of C12+C12."
+  ],
+  "finite_evidence": {
+    "complete_assignment_profiles": 8721,
+    "residual_class_pairs": 559761,
+    "square_pair_target_cases": 260,
+    "Gamma_target_cases": 764,
+    "group_cases": [
+      "trivial",
+      "C3",
+      "C5",
+      "C7",
+      "C3xC3",
+      "C3xC3_redundant"
+    ],
+    "prime_cases": [
+      7,
+      11,
+      19,
+      23,
+      31,
+      43,
+      59,
+      67
+    ],
+    "scope": "Exact finite challenges only; unrestricted elementary proofs and imported infinite theorems are separate."
+  },
+  "automatic_odd_class_number": {
+    "statement": "For everyprimep=3mod4, Cl(O_Qsqrt(-p))[2] is trivial and the finite classnumber isodd, includingp3.",
+    "proof": "Conjugation inversion; normpositive1; beta=1+alpha orsqrt(-p) foralpha-1; invariantfractional idealreduces to the sole principalramifiedprime.",
+    "category": "Classical lemma reconstructed here, not a historical novelty claim.",
+    "computational_scope": "Unrestricted elementary proof; finite absorber checker does not establish class-number oddness."
+  }
+}
