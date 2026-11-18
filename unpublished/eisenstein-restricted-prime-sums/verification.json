@@ -85,7 +85,7 @@
       "scope": "The repeated ZIP contains the old unrestricted note and certificates, not the claimed mixed edition. Current mixed lemmas were reconstructed in full and new reproducible Python checks were run. No unseen mixed Java receipt is treated as verified."
     },
     "actual_extended_package": {
-      "archive": "supplied_extension.zip",
+      "archive": "../../research/arithmetic/eisenstein-restricted-prime-sums/supplied_extension.zip",
       "sha256": "9f9963b2a09c67ff7a66b253bb56dcc760899353882cb0398b3f7bda23aed8ac",
       "members": {
         "eisenstein_proof_note.tex": {
@@ -1295,10 +1295,10 @@
         "Finite theta/CM checks and the36-element quotient enumeration do not prove an unrestricted spectral/theta theorem by themselves."
       ],
       "current_bundle_path_map": {
-        "compute_mixed_certificate.py": "supplied/compute_mixed_certificate.py",
+        "compute_mixed_certificate.py": "../../research/arithmetic/eisenstein-restricted-prime-sums/supplied/compute_mixed_certificate.py",
         "other_supplied_checker_basenames": "paper directory",
-        "full_input_archive": "supplied_extension.zip",
-        "imported_receipts": "receipts/supplied-extension/"
+        "full_input_archive": "../../research/arithmetic/eisenstein-restricted-prime-sums/supplied_extension.zip",
+        "imported_receipts": "../../research/arithmetic/eisenstein-restricted-prime-sums/receipts/supplied-extension/"
       }
     },
     "blind_reader_final_extension_refresh": {
@@ -1350,6 +1350,27 @@
       "date": "2026-11-18",
       "scope": "README, metadata and this verification record now distinguish new canonical research from the unchanged PDF. All source-bundle members were compared with their current filesystem bytes; the prior LaTeX/PDF build is not relabelled as a new build.",
       "pdf_unchanged_sha256": "113afc901d365160123f8d1e85badd7c594f9bf66297ba931290c9b25c524a89"
+    },
+    "research_relocation": {
+      "date": "2026-11-18",
+      "scope": "Organization only: 43 research files moved, with all source/input bytes and SHA256 hashes preserved. Current proof and assurance scopes unchanged.",
+      "canonical_research_home": "../../research/arithmetic/eisenstein-restricted-prime-sums/",
+      "current_replay_working_directory": "research/arithmetic/eisenstein-restricted-prime-sums/ relative to the repository root; use its README instructions.",
+      "historical_records": "Imported and prior replay receipts are byte-preserved, including their historical commands and filenames.",
+      "manuscript_change": "The verifier appendix selects the canonical research source in the repository and a local copy in a standalone source archive.",
+      "numerical_replays_performed": false,
+      "pdf_validation": {
+        "pages": 17,
+        "repository_and_standalone_builds_passed": true,
+        "all_page_text_and_dimensions_match": true,
+        "all_51_Poppler_page_renders_match_reviewed_pixels_at_96_dpi": true,
+        "reviewed_pdf_sha256": "113afc901d365160123f8d1e85badd7c594f9bf66297ba931290c9b25c524a89",
+        "visual_review": "Repository-layout render contact sheet inspected; page layout and verifier appendix match the reviewed edition.",
+        "build_method": "Documented latexmk command with ignored -outdir directories, run once from the paper directory and once from an extracted standalone source archive."
+      },
+      "source_archive_members": 52,
+      "source_archive_scope": "Manuscript, paper records, fifteen verification programs and twenty-one finite-evidence receipts. Exploratory research notes, supplied duplicate checker and original input archive have their canonical home under research/.",
+      "source_archive_refresh": "Final documentary records were refreshed after the build checks; all TeX and verifier inputs remain byte-identical to the successfully built extraction."
     }
   },
   "assurance": {
@@ -1368,43 +1389,43 @@
     "Incorporate the canonical qualitative angular/balanced extension into a later manuscript revision; an effective onset and completeness of the finite balanced exception list remain open."
   ],
   "artifacts": {
-    "VerifyEisenstein.java": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/VerifyEisenstein.java": {
       "bytes": 8655,
       "sha256": "15ae478d4692ab4c8954163c15546b012354bae4d05927fb35ecd0fe3a446467"
     },
-    "VerifyMixedEisenstein.java": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/VerifyMixedEisenstein.java": {
       "bytes": 5108,
       "sha256": "2192160a950ef9d44f23877b4a403c50314d90db5c4ecbedbb7d7c91e4adf47b"
     },
-    "check_ramified_counts.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/check_ramified_counts.py": {
       "bytes": 5142,
       "sha256": "8841d1b8c071b453bc288a72fc377a9456ca1eff9f450f03441c02e1ad28ac83"
     },
-    "compute_elementary_constants.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/compute_elementary_constants.py": {
       "bytes": 3358,
       "sha256": "c2ebce0656202e1cc7bc4787d91b8476265c4389f8f3b12959e6e8e5f2c05039"
     },
-    "compute_finite_certificate.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/compute_finite_certificate.py": {
       "bytes": 6346,
       "sha256": "3a5912ef5d3bd023efc4498a05e0c627028f09b65251fb61bf3b9dc668acf4da"
     },
-    "compute_mixed_certificate.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/compute_mixed_certificate.py": {
       "bytes": 5357,
       "sha256": "462f12d15b226e621a4a2e8dee50c045e1aeefab590d2477ee82c3b86176786d"
     },
-    "compute_mixed_odd_checks.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/compute_mixed_odd_checks.py": {
       "bytes": 6165,
       "sha256": "a930b881955ef9e1062b6bb7e4e80ae748ae9ef9bf62ab5d4bc6e558fbefde3f"
     },
-    "compute_mixed_ramified_checks.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/compute_mixed_ramified_checks.py": {
       "bytes": 4009,
       "sha256": "3c98238204d3da35cc1a7ce515cf07a82fb7487e9eaca2559de29f37e4bf1fc8"
     },
-    "compute_mixed_wheel_checks.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/compute_mixed_wheel_checks.py": {
       "bytes": 3095,
       "sha256": "20fbc9faa218db5aed38ae3aa2a99e4a307ff7ec81d10cba4c711c3d4d83b746"
     },
-    "compute_theta_checks.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/compute_theta_checks.py": {
       "bytes": 4634,
       "sha256": "685666823dcc9271dfa7c41b22b3bc9a7eae89f7a45bddd485f40f85891cc487"
     },
@@ -1412,7 +1433,7 @@
       "bytes": 2706,
       "sha256": "f737b475ce526eef84fe1f16a6b88c5b481595c1498bac4bd9e88541465c4c8d"
     },
-    "mixed_spectral_check.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/mixed_spectral_check.py": {
       "bytes": 2363,
       "sha256": "cb9ad9a725bb8dd9457ce2add8433e34885bdfdb329402adb72a6663bb94c0d0"
     },
@@ -1465,30 +1486,30 @@
       "sha256": "d5c958bb8cf291aa20c92c7d3c9825d73d2b6549670b23055b5ef1261ee835e7"
     },
     "sections/standalone-verifier.tex": {
-      "bytes": 1982,
-      "sha256": "28c98f17294c58272519d266185876530313dc515437d7d1b030902f889bc5e7"
+      "bytes": 2142,
+      "sha256": "74b92f9fce6870b97d30e0ef8052328aa1f554e0826e665a52cbac2721fa4772"
     },
-    "spectral_check.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/spectral_check.py": {
       "bytes": 2703,
       "sha256": "6deeda1bb4a9f3dec26206bdf8fe295743a349c325d80de36f2b5fc14ab7478a"
     },
-    "supplied/compute_mixed_certificate.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/supplied/compute_mixed_certificate.py": {
       "bytes": 3411,
       "sha256": "770c25d86be59ab90fcb4df34072bdd2ef2798b234439483c9beef51251e60f3"
     },
-    "supplied_extension.zip": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/supplied_extension.zip": {
       "bytes": 82582,
       "sha256": "9f9963b2a09c67ff7a66b253bb56dcc760899353882cb0398b3f7bda23aed8ac"
     },
-    "verify_binary_certificates.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/verify_binary_certificates.py": {
       "bytes": 2610,
       "sha256": "afceb0850582fc0f84c7643df4aded801c7e3516289e15f74d1e645d862ba2d2"
     },
-    "verify_certificate.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/verify_certificate.py": {
       "bytes": 2221,
       "sha256": "350c03db211742733652b3c72fe13ac90530cb52b37f0b93583cd1abf9c09667"
     },
-    "verify_mixed_constants.py": {
+    "../../research/arithmetic/eisenstein-restricted-prime-sums/verify_mixed_constants.py": {
       "bytes": 3395,
       "sha256": "bed5032ca23f842389391e6893a64695570ee8b3a4fae79f7b2ea0f62ef07ef2"
     }

@@ -1,0 +1,74 @@
+{
+  "review_date": "2026-11-18",
+  "scope": "Full finite normalization and ENTIRE canonical etale completion comparison under an actual Keller whole-root transfer, r>1; r1 same-field switch separate.",
+  "retained_inputs": [
+    {
+      "path": "WHOLE_ROOT_CHARTS_CREATE_CYCLIC_KELLER_PSEUDOPLANES.md",
+      "locator": "Sections1-3 actual full-normalization transfer and polynomial Keller source W1, Section6 original source ramification; no inverse conclusion."
+    },
+    {
+      "path": "EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md",
+      "locator": "Actual common y, complete fibre divisors and component multiplicities; no target integrality."
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "locator": "Whole normalized roots, copied boundary lines, full source plane W1 and source-overlap formula."
+    },
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "locator": "Sections4-6 complete component coverage, affine U, simply connected canonical completion, Euler/Pic basis and free deck action. Applied also to actual transferred Keller map."
+    },
+    {
+      "path": "DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md",
+      "locator": "Given-replica index theorem only; its equality r|r here is a limitation, not a descent."
+    }
+  ],
+  "primary_sources": [
+    {
+      "path": "sources/stacks-07S7-finite-free-quotient.html",
+      "url": "https://stacks.math.columbia.edu/tag/07S7",
+      "sha256": "c3e944469210e81ba1d58e07e91f76dcb64b459b91160a22849b9679aa6b8a05",
+      "locator": "Lemma66.14.2, displayed hypotheses and complete proof.",
+      "inspection": "Primary displayed statement and proof read on 18 November2026; classical quotient and descent foundations adopted, not independently reproved.",
+      "application": "A free finite constant group on affine U-prime has a scheme quotient and a torsor; finite etale mu-r makes the torsor finite etale."
+    },
+    {
+      "path": "sources/stacks-02K6-etale-surjective-source.html",
+      "url": "https://stacks.math.columbia.edu/tag/02K6",
+      "sha256": "1f401f25da4253b5c714a3e22d440904ec34ce4b9ebfc1f640d15975109d53bc",
+      "locator": "Lemma29.37.20, displayed statement and complete proof.",
+      "inspection": "Primary displayed statement and proof read on 18 November2026; classical quotient and descent foundations adopted, not independently reproved.",
+      "application": "U-prime -> W0 is surjective etale, U-prime ->Y is etale, and W0->Y is finite type, so W0->Y is etale."
+    },
+    {
+      "path": "sources/stacks-02KM-etale-descent.html",
+      "url": "https://stacks.math.columbia.edu/tag/02KM",
+      "sha256": "1c5b5a9e23dcb7ec1e0fd9423678dc4b4552dfe36c3956395187d60d8dd2e317",
+      "locator": "Lemma35.14.4, displayed statement and complete proof; underlying02KL and02K6 statements/proofs inspected.",
+      "inspection": "Primary displayed statement and proof read on 18 November2026; classical quotient and descent foundations adopted, not independently reproved.",
+      "application": "Alternative source-etale descent justification; no base-descent/source-descent substitution."
+    }
+  ],
+  "new_written_arguments": [
+    "Invariant open quotient of entire U-prime is an open W0 in original full Z, and surjective-etale descent forces W0 inside original U at ALL points.",
+    "Strict henselian normalized-root model z^r=unit*f^m gives gcd(r,m) whole residue components and transverse index r/gcd(r,m); all points of each smooth original U curve are classified.",
+    "Exact quotient W removes original source line and exactly same-value boundary components with multiplicities not divisible by r.",
+    "All original ramified primes remain ramified under valuation index multiplication; quotient argument also excludes new etale points above isolated original nonetale points.",
+    "Complete new boundary count r*g-1 and common-z multiplicities include every original good copied line and subtract only the selected new-source line.",
+    "PicW derived by boundary-class localization and one relation with gcd exactly r; direct-sum isomorphism type is noncanonical.",
+    "pi1W uses actual transferred canonical U-prime simple connectivity and connected finite etale cover, separately from Euler counts.",
+    "Bare new translation does not preserve old fixed field; original translation is precisely the saturated degree-r replica."
+  ],
+  "not_claimed": [
+    "No r1 source-line deletion: U-prime equals original U in that case.",
+    "No identification of quotient W with original Z, original U or a full finite intermediate normalization.",
+    "No assertion of a Galois total extension L-prime/F.",
+    "No coefficient-degree cutoff or realization of the finite numerical divisor ledgers.",
+    "No boundary elimination, forced r1, minimal-degree descent, source-finiteness, common-coordinate target-integrality, injective line, properness or inverse.",
+    "No formal verification or external human review."
+  ],
+  "pic_and_pi1_audit": {
+    "Pic": "Only free boundary basis of smooth U, exact divisor localization, and integer Smith normal form are used; no Chern-class injection or topological Picard identification.",
+    "pi1": "U-prime is the canonical completion of an ACTUAL plane Keller map, so retained theorem gives simple connectivity; finite etale cyclic torsor over connected smooth complex W is an ordinary finite topological covering. No inference from Euler alone."
+  }
+}

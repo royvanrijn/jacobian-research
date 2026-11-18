@@ -1,0 +1,370 @@
+{
+  "status": "PASS exact uniform scalar and fixed-A8 Fox-ideal model barriers; ordinary rank unresolved",
+  "theorem_scope": "For all n>=0, scalar Fox images generate the integer Laurent ring and the fixed-A8 image generates F2[A8]. An odd nonzero integral scalar lies in the fixed-A8 ideal, excluding all unital characteristic-zero models and leaving finitely many possible odd characteristics. Nilpotent2 lifts and local rings with fixed-A8 characteristic2 residue action are also excluded.",
+  "ordinary_rank_status": "UNRESOLVED",
+  "source": {
+    "author": "Yoav Moriah",
+    "title": "Heegaard splittings of knot exteriors",
+    "bibliography": "Geometry & Topology Monographs12(2007),191\u2013232",
+    "doi": "10.2140/gtm.2007.12.191",
+    "url": "https://doi.org/10.2140/gtm.2007.12.191",
+    "primary_pdf": {
+      "path": "sources/moriah-heegaard-2007.pdf",
+      "sha256": "08b61c76d8dff1d6e6531f815dd2aed1036f4f2d10d22c3468e0a17c25ad5cba"
+    },
+    "read_locations": [
+      "printedp197/PDFp7: setup, g(g-1) derivatives, two-sided ideal I_X, commutative coefficient ring",
+      "printedp198/PDFp8: Theorem3.5 and Remark3.8"
+    ],
+    "read_evidence": "The retained published PDF printedpp197-198 was read textually and visually during the earlier audit; root reread both actual PDF pages in this update. Original upstreamLemma2.1 remains imported.",
+    "exact_import": "A nontrivial representation Z[G]/I_X into M_m(R), for a commutative ring R with unit, forces ordinary rank equal to the number g of generators in the chosen deficiency-one presentation.",
+    "unread_original_dependency": "Original Lustig\u2013Moriah[37]Lemma2.1 proof not independently audited; the published coauthor-survey theorem is the adopted source."
+  },
+  "literal_source_inputs": [
+    {
+      "path": "new_seventeen_crossing_knot_inputs.json",
+      "sha256": "5196a788147e14deeaa7d4c819f11540db3b848406282491bcdb7f87619ee182"
+    },
+    {
+      "path": "new17_generic_kch_inputs.json",
+      "sha256": "fc2e28c362974e6b2729272e44d3e36b9e8bef795a3956bf1d1e88249c7799a2"
+    }
+  ],
+  "unit_pair": {
+    "indexing": "zero-based",
+    "relator": 0,
+    "generators": [
+      1,
+      2
+    ],
+    "normalizing_t_powers": [
+      4,
+      3
+    ],
+    "identity": "A(t)*t^4*H_01(t)+B(t)*t^3*H_02(t)=1",
+    "integer_coefficients": true,
+    "normalizing_monomials_are_units": true,
+    "no_rational_gcd_inference": true,
+    "all_residual_primes_or_roots": "None for this ideal: the explicit integer identity yields1 after evaluation in every characteristic and every commutative ring."
+  },
+  "uniformity": {
+    "proof": "Exact free-group output coordinate0 is unchanged by each terminal sigma2 step, which updates only coordinates1,2. Induct on tail length. The same R0 and the same two derivatives occur for every Kn.",
+    "finite_controls_only": [
+      0,
+      1,
+      2
+    ],
+    "Burau_import_needed": false
+  },
+  "presentation_proof": "Solve each oriented Wirtinger crossing for outgoing arc, eliminating internal arcs; bind n0 to all17 canonical signed-PD relations. Ordered-product preservation makes the fourth closure relation redundant. Added6n transpositions preserve the strand4-cycle, so all closures remain knots.",
+  "coefficient_normalization": "A scalar group-ring representation into a commutative ring has one common meridian unit t; for a nonunital nonzero ring homomorphism restrict to its nonzero idempotent image(1) corner.",
+  "limitations": [
+    "No ordinaryrank<=3 or rank4 conclusion.",
+    "No proof that I_n in Z[G_n] contains1; images and generating system are specified.",
+    "The A8 exception integer is defined by an exact determinant but its numerical value/prime divisors are uncomputed.",
+    "Other quotient kernels and unrelated coefficient models/generating systems remain open.",
+    "The characteristic-zero conclusion assumes a unital model; a nonunital model could occupy a torsion component of an ambient characteristic-zero product ring.",
+    "No worldwide priority or whole-proof external/formal assurance."
+  ],
+  "replay_command": "python3 research/meridional-rank/representations/verify_uniform_fox_ideal_models.py",
+  "replay_result": "PASS canonical standard-library replay,6 rejecting controls; root separate byte-translation convolution and integer-lift parity also pass",
+  "rejected_corrupt_controls": [
+    "remove_one_left_coefficient",
+    "omit_second_term",
+    "wrong_derivative",
+    "wrong_multiplication_side",
+    "scalar_Bezout_coefficient",
+    "scalar_wrong_unit_pair"
+  ],
+  "root_independent_finite_replay": {
+    "status": "PASS root independent byte-translation convolution",
+    "first_relator_reconstructed_from_braid": true,
+    "first_relator_length": 156,
+    "coefficient_supports": [
+      9792,
+      369
+    ],
+    "derivative_mod2_supports": [
+      29,
+      57
+    ],
+    "exact_mod2_product_is_identity": true,
+    "integer_S_minus_one_has_even_coefficients": true,
+    "integer_W_nonzero_coefficients": 14618,
+    "scope": "Independent internal finite-certificate replay only; no whole-proof assurance or determinant-value computation",
+    "source_sha256": {
+      "uniform_fox_ideal_inputs.json": "29464dbf71101d8373eecc89da9065261e4689580bd741313afa240e4c7fa25b",
+      "uniform_fox_a8_char2_certificate.json": "a070353a85519beb796cc24773f6ea06fadd760005352914a0f1fc0760a7f3da"
+    }
+  },
+  "A8_certificate": {
+    "identity": "X*D00+Y*D01=1",
+    "field_prime": 2,
+    "coefficient_supports": [
+      9792,
+      369
+    ],
+    "derivative_supports": [
+      29,
+      57
+    ],
+    "group_order": 20160,
+    "tuple_convention": "Zero-based literal p[0..7], (a*b)[i]=a[b[i]]",
+    "full_module_scope": "All nonzero unital modules/coefficient ring homomorphisms through this fixed quotient; no simple-module classification, semisimplicity or matrix-dimension sampling",
+    "uniformity": "Both entries are firstrow derivatives of the literally fixed R0; one exact six-step permutation return iterates to all n."
+  },
+  "odd_characteristic_obstruction": {
+    "integer_lift": "S=X_Z*D00_Z+Y_Z*D01_Z=1+2W in Z[A8]",
+    "operator": "Right multiplication T_S on the integer free module Z[A8] rank20160",
+    "d": "det(T_S) is odd nonzero since T_S mod2=I; value not computed",
+    "ideal_membership": "c=adj(T_S)(1) gives cS=d*1",
+    "consequence": "Every unital fixed-A8 model killing derivatives has positive odd characteristic dividingabs(d); no characteristiczero model. Nonunital ambient characteristiczero claim is not made."
+  },
+  "lifting": "If2^r=0, invert1+2W by finitegeometricseries. A localmodel withchar2 residue action factoringq_n is impossible by unital residue reduction; the lifted action need not factorq_n.",
+  "tameness_followup_context": {
+    "definitions": {
+      "BDJW17": {
+        "locator": "Introduction immediately before Definition 1; retained HTML paragraphs p5.1 and Thmdefinition1.",
+        "meridional_subgroup": "U is generated by finitely many conjugates of the fixed oriented meridian m; w(U) is minimum number of ambient meridians generating U.",
+        "tame_subgroup": "For every g, U intersect gPg^-1 is trivial or exactly g<m>g^-1. In the latter case gmg^-1 belongs to a w(U)-element meridional generating set of U.",
+        "tame_knot": "Every meridional subgroup generated by fewer than b(K) meridians is tame.",
+        "freeness_required": false
+      },
+      "DUT22_definitions_only": {
+        "locator": "Section 2.4, Definitions 2.4 and 2.5.",
+        "tame_subgroup": "For the stated minimal meridional tuple m1,...,mr, where r=w(U), the tuple members are pairwise nonconjugate in U. For every g, U intersect gPg^-1 is trivial or exactly g<m>g^-1; in the latter case gmg^-1 is U-conjugate to a tuple member.",
+        "tame_knot": "Every meridional subgroup generated by fewer than b(K) meridians is tame in this sense.",
+        "freeness_required": false,
+        "do_not_use": "The gapped Whitehead-pattern main theorem and downstream conclusions are not adopted. The HTML omits inverse symbols in generator notation; conjugates are intended by its definition of a meridional subgroup."
+      }
+    },
+    "source_scope": {
+      "BDJW17": "Theorem 1 covers the class generated from meridionally tame knots by connected sums and braid-pattern satellites, including graph-manifold exteriors. Hyperbolicity of Kn excludes a nontrivial satellite or connected-sum construction, but does not exclude membership in the initial tame class.",
+      "BJW18": "Published Proposition 4.2, printed p71/PDF12: a nonfree two-meridian subgroup is a two-bridge prime-factor group. For prime four-bridge Kn, all two-meridian subgroups are free of rank at most two. Printed p63, Question 1.8 asks whether every subgroup generated by at most b(K)-1 meridians of a hyperbolic knot is free.",
+      "DUT22": "Definitions reviewed; the gapped main Whitehead theorem is not used.",
+      "GGLW26": "Its introduction footnote identifies the Dutra Lemma 3.1 gap, which its proof avoids. Theorem 1.1 concerns iterated untwisted Whitehead doubles of nontrivial two-bridge knots. General maximal-augmentation gates for other companions are separate from tameness."
+    },
+    "compatibility_controls": {
+      "augmentation_deficit": "Cornwell Corollary 1.12, p3: 8_16 has ar_C=2<mr=3. It is a standard prime three-bridge knot, hence meridionally tame by BDJW Proposition 1. A deficit alone does not imply failure.",
+      "full_A8_sharp4": "The explicit T(4,15) quotient in tameness-torus-A8-compatibility.json has full image A8 and a double-transposition meridian. BDJW Lemma 14 proves torus knots meridionally tame. This quotient alone does not imply failure.",
+      "combined_data": "These separate controls do not provide an example with the entire Kn profile. No inspected theorem implies nontameness from that combination."
+    },
+    "barriers": [
+      "Conjugacy or peripheral-looking membership in a finite image need not lift to U; an exact word witness in G is needed.",
+      "The actual A8 image distinguishes all five conditional rank-one fold equalities, so they are not identities in the knot group.",
+      "The known equality mr=b=4 makes every subgroup generated by at most three meridians proper, but proves neither tameness nor failure.",
+      "Coxeter and augmentation upper bounds do not supply a peripheral-intersection witness."
+    ],
+    "possible_next_witness_types": [
+      "An exact word in a canonical three-meridian U equal to g m^a lambda^b g^-1 with b nonzero, or a nonprimitive cyclic peripheral intersection.",
+      "An ambient meridian in U that cannot extend to a minimal meridional generating set (BDJW), or cannot be U-conjugate to a member of a specified minimal tuple (Dutra definitions).",
+      "A certified finite-index coset table for a canonical U would force a rank-two peripheral intersection. Such a coset search was not performed in this audit."
+    ],
+    "status": "UNRESOLVED; no actual subgroup/peripheral witness found. Separate compatibility controls do not settle the combined Kn profile.",
+    "canonical_three_meridian_image_orders": [
+      120,
+      120,
+      168,
+      720
+    ]
+  },
+  "bounded_literature_search": {
+    "date": "2026-11-18",
+    "queries": [
+      "Moriah Heegaard splittings knot exteriors Theorem3.5 Foxideal matrix representation rank",
+      "Foxideal knot groupalgebra",
+      "meridionally tame knots rank augmentationrank peripheral subgroups"
+    ],
+    "scope": "Three supplementary web queries plus actual retained primary pages; no worldwide search-completeness inference."
+  },
+  "assurance": {
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "note": "Independent internal finite replays and isolated PDF-only review do not establish whole-proof assurance."
+  },
+  "internal_pdf_reviews": [
+    {
+      "review_type": "isolated PDF-only blind mathematical review",
+      "source_pdf": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/pdf-build/UNIFORM_FOX_IDEAL_MODEL_BARRIERS.pdf",
+      "source_sha256": "29905bf693c3f5de94c3393d5ae1a48b7e98d1b53b295fd33d335cfd39ee816c",
+      "page_count": 4,
+      "source_bytes": 225130,
+      "scope": {
+        "read_only_source": "Frozen PDF only; no repository sources, companion certificate, verifier, manuscript, history, or external sources read. PDF skill instructions were read for the rendering workflow.",
+        "conditional_dependencies": [
+          "The stated finite identity X0*d0 + X1*d1 = 1 in F2[A8] and its supplied certificate are assumed, not independently verified.",
+          "The cited Moriah/Lustig-Moriah rank criterion is imported without external checking.",
+          "The family primeness, meridional/bridge rank, and augmentation rank from reference [2] are imported without external checking."
+        ]
+      },
+      "verdict": "No blocking mathematical defect found, conditional on the explicitly stated finite certificate and imported results. The scalar obstruction is independently reproduced from the printed braid. The quotient obstruction and its extensions follow correctly from the stated certificate; the family-uniform induction and limits of scope are sound.",
+      "blocking_issues": [],
+      "nonblocking_issues": [
+        {
+          "id": "N1",
+          "pages": [
+            3,
+            4
+          ],
+          "kind": "reproducibility",
+          "description": "The PDF names the finite certificate and verifier but does not include the certificate data, their cryptographic digests, or a stable public location. A PDF-only reader therefore cannot verify identity (5) or identify an immutable companion package. This is a dependency/distribution limitation, not a logical defect conditional on identity (5).",
+          "suggestion": "Supply a stable companion archive with certificate/verifier hashes, or state its digest and location in the paper."
+        }
+      ],
+      "independent_checks_from_printed_data": [
+        "Visually inspected every page after rendering; equations, conventions, and scope statements are legible.",
+        "Implemented the printed Artin rules independently from the printed U and three-crossing tail; obtained reduced R0 length 156.",
+        "Computed the abelianized Fox derivatives directly from R0; t^4 H01 and t^3 H02 match both printed polynomials.",
+        "Multiplied the printed integer polynomials exactly; A*f + B*g = 1.",
+        "Computed the closure strand permutation [1,3,0,2], a four-cycle.",
+        "Propagated the four printed permutations through all seventeen crossings; all four return to their top values.",
+        "Applied six further sigma2 steps; the middle pair returns exactly.",
+        "Enumerated the subgroup generated by the printed even permutations; order is 20160, hence it is A8.",
+        "Checked the algebraic implications of the unit identity for unital and nonunital scalar maps, characteristic-two actions of arbitrary dimension, nilpotent lifts of 2, and residue quotient matrix models over nonzero local rings."
+      ],
+      "reasoning_notes": [
+        "Every terminal sigma2 fixes slot 0 as a free word, so the first Fox row is uniform for all n; this is a genuine induction rather than finite sampling.",
+        "The scalar factorization through Z[t,t^-1] follows from conjugacy of oriented meridians and commutativity; the eR argument also correctly excludes nonzero nonunital scalar homomorphisms.",
+        "Identity (5) is a left-ideal identity and therefore suffices for the stated two-sided ideal conclusion; no semisimplicity or module classification is needed.",
+        "An integral lift gives 1+2W; central nilpotence of 2 makes 2W nilpotent and the finite geometric-series inverse is valid even though the group algebra is noncommutative.",
+        "Reduction of a unital positive-size matrix model over a nonzero local ring stays unital on the residue field; quotient factorization is required only after reduction as stated.",
+        "The PDF expressly leaves other quotient kernels, odd characteristic, characteristic zero noncommuting models, other generating systems, and ordinary group rank unresolved; no converse rank inference is used."
+      ]
+    },
+    {
+      "review_type": "isolated PDF-only blind mathematical follow-up",
+      "source_pdf": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/pdf-build/UNIFORM_FOX_IDEAL_MODEL_BARRIERS.pdf",
+      "source_sha256": "44f62b38c5b90271f5ab23e6cb95f80eb396b9c3216c573f8d403334b24edef0",
+      "source_bytes": 239105,
+      "page_count": 5,
+      "freeze_unchanged_during_review": true,
+      "prior_review_preserved": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/blind-pdf-review.json",
+      "prior_pdf_sha256": "29905bf693c3f5de94c3393d5ae1a48b7e98d1b53b295fd33d335cfd39ee816c",
+      "scope": "Read and visually inspected only the revised frozen PDF. No repository source, companion file, previous review file, verifier, certificate, external paper, or history was read during this follow-up.",
+      "conditional_dependencies": [
+        "Identity (5) and the stated finite certificate remain assumed, not independently replayed.",
+        "The external Moriah/Lustig-Moriah criterion and the exact-family results cited as [2] remain imported.",
+        "Characteristic-zero and characteristic restrictions in Corollary 4 are read under its explicit unital-model hypothesis; positive matrix dimension and nonzero coefficient ring are understood."
+      ],
+      "verdict": "The new determinant/adjugate argument is mathematically valid under the stated unital-model hypothesis. No blocking mathematical defect found with that scope and the stated certificate/imports. It proves a necessary finite set of positive odd coefficient-ring characteristics without computing the determinant or claiming any exceptional characteristic actually occurs.",
+      "blocking_issues": [],
+      "nonblocking_issues": [
+        {
+          "id": "F1",
+          "pages": [
+            1,
+            3
+          ],
+          "kind": "scope precision",
+          "description": "The abstract and the final characteristic-zero sentence of Corollary 4 say every characteristic-zero model without repeating unital. The proof establishes the coefficient-ring characteristic restriction for unital models, as Corollary 4 explicitly assumes. For a nonunital map the conclusion is only d*rho(1)=0, which need not force the ambient coefficient ring to have positive characteristic.",
+          "suggestion": "Write every unital characteristic-zero model in the abstract and the corresponding sentence of Corollary 4, or explicitly adopt the unital convention for matrix models throughout.",
+          "severity_if_read_with_stated_unital_scope": "nonblocking; the theorem and proof already specify unital",
+          "severity_if_intended_to_include_all_nonunital_maps": "the stronger claim is unsupported by this argument"
+        },
+        {
+          "id": "F2",
+          "pages": [
+            3
+          ],
+          "kind": "definition precision",
+          "description": "The statement calls d exactly defined, while the proof says to lift the certificate coefficients without fixing the lift. Existence of an odd nonzero d and every asserted exclusion are valid for any choice, so this does not affect the theorem.",
+          "suggestion": "If a single canonical d is intended, specify the natural 0/1 integer lifts of the two certificate coefficients."
+        }
+      ],
+      "determinant_argument_checks": [
+        "The integer Fox images are fixed for all n because the relator and top permutation images are fixed.",
+        "S is in the image of the two-sided Fox ideal and S=1+2W follows from the assumed mod-two identity.",
+        "Right multiplication T_S on the rank-20160 free abelian group Z[A8] is an ordinary integer matrix; its reduction modulo two is I.",
+        "Its determinant d is therefore congruent to 1 modulo two and hence is odd and nonzero; no numerical determinant evaluation is needed.",
+        "The integral adjugate c=adj(T_S)(1) is an integer group-ring element; T_S(c)=cS=d*1. This multiplication direction agrees with the printed right-multiplication convention.",
+        "Because S belongs to the two-sided image ideal, cS=d*1 belongs to it.",
+        "A unital homomorphism to M_m(R), m>=1, that kills the ideal sends d*1 to d*I_m=0, giving d*1_R=0.",
+        "For nonzero R this forces positive characteristic dividing |d|; since d is odd there are only finitely many possible odd characteristics. No existence of models in those characteristics follows.",
+        "The proof does not establish d=+1 or -1, and the PDF explicitly says so.",
+        "The remaining-scope paragraph correctly leaves odd exceptional characteristics for this quotient and characteristic-zero models through other quotients unresolved."
+      ],
+      "reproducibility_followup": {
+        "printed_input_sha256": "29464dbf71101d8373eecc89da9065261e4689580bd741313afa240e4c7fa25b",
+        "printed_tuple_certificate_sha256": "a070353a85519beb796cc24773f6ea06fadd760005352914a0f1fc0760a7f3da",
+        "assessment": "The added digests resolve the immutable identification part of the initial reproducibility note. The PDF still relies on distributed companion files for replay; those files and their actual hashes were not read or checked in this isolated review."
+      },
+      "visual_review": "All five pages inspected. New determinant equations and both wrapped SHA-256 strings are legible. Page 5 contains only reference [2], a layout observation without mathematical consequence."
+    },
+    {
+      "review_type": "isolated PDF-only final mathematical follow-up",
+      "source_pdf": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/pdf-build/UNIFORM_FOX_IDEAL_MODEL_BARRIERS.pdf",
+      "source_sha256": "cf4ef1963871da0b97060e16e026baabbc0eb19aa180be4ccac73c355f9248d9",
+      "source_bytes": 239149,
+      "page_count": 5,
+      "freeze_unchanged_during_review": true,
+      "scope": "Only the final frozen PDF was read and all five rendered pages were visually inspected. No sources, companions, prior review files, verifier, certificate, repository history, or external sources were read.",
+      "prior_reviews_preserved": [
+        "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/blind-pdf-review.json",
+        "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/blind-pdf-followup-review.json"
+      ],
+      "verdict": "No remaining blocking or nonblocking mathematical issues found in the final edition, conditional on the stated finite certificate and imported results. Both wording requests from the previous follow-up are implemented.",
+      "blocking_issues": [],
+      "nonblocking_mathematical_issues": [],
+      "resolved_followup_items": [
+        {
+          "id": "F1",
+          "status": "resolved",
+          "pages": [
+            1,
+            3
+          ],
+          "confirmation": "The abstract and Corollary 4 both explicitly restrict the characteristic-zero exclusion to unital models."
+        },
+        {
+          "id": "F2",
+          "status": "resolved",
+          "pages": [
+            3
+          ],
+          "confirmation": "The determinant proof explicitly lifts each binary certificate coefficient to its integer representative 0 or 1, fixing S and the canonical determinant d."
+        }
+      ],
+      "mathematical_assessment": [
+        "The determinant proof remains valid: T_S is an ordinary integer matrix of rank 20160 reducing to I modulo two, so its determinant is odd and nonzero.",
+        "With c=adj(T_S)(1), the right-multiplication convention gives cS=d*1 in the image Fox ideal.",
+        "A unital positive-size matrix model killing that ideal forces d*1_R=0, excluding every characteristic-zero coefficient ring and allowing only positive odd characteristics dividing |d|.",
+        "Neither a numerical determinant value nor existence of any exceptional characteristic is asserted.",
+        "The family-uniform use of the fixed first relator, the scalar argument, the nilpotent-lift and local-residue arguments, and the stated unresolved ordinary-rank scope remain consistent."
+      ],
+      "conditional_dependencies_not_verified_in_pdf_only_review": [
+        "Finite certificate identity (5) in F2[A8].",
+        "Imported Moriah/Lustig-Moriah rank criterion.",
+        "Imported exact-family primeness, bridge/meridional-rank and augmentation-rank results."
+      ],
+      "reproducibility_scope": "The final PDF gives SHA-256 identifiers for its frozen companion input and tuple certificate. Their contents and actual hashes were not inspected; finite-certificate verification remains outside this PDF-only review.",
+      "visual_assessment": "All five pages are legible, including the amended scope wording, 0/1 lift definition, determinant equations, and wrapped hashes. Page 5 contains only reference [2], a cosmetic pagination observation with no mathematical consequence."
+    }
+  ],
+  "main_files": [
+    {
+      "path": "UNIFORM_FOX_IDEAL_MODEL_BARRIERS.tex",
+      "sha256": "8013d206732a3bcb9f057b9332dfd43fe5f0ce5116833b08c12c691b92e591e3"
+    },
+    {
+      "path": "UNIFORM_FOX_IDEAL_MODEL_BARRIERS.pdf",
+      "sha256": "cf4ef1963871da0b97060e16e026baabbc0eb19aa180be4ccac73c355f9248d9"
+    },
+    {
+      "path": "uniform_fox_ideal_inputs.json",
+      "sha256": "29464dbf71101d8373eecc89da9065261e4689580bd741313afa240e4c7fa25b"
+    },
+    {
+      "path": "uniform_fox_a8_char2_certificate.json",
+      "sha256": "a070353a85519beb796cc24773f6ea06fadd760005352914a0f1fc0760a7f3da"
+    },
+    {
+      "path": "verify_uniform_fox_ideal_models.py",
+      "sha256": "5e59cf9c6b3fdd827d2ac43b0f5b49860eb3d6cbb7e79aab09e34ec1fd8ed72d"
+    },
+    {
+      "path": "uniform_fox_ideal_verification.json",
+      "sha256": "07a4e3e7910d87695593e6abbce8589663ae03ef4f47551d20028edd336597bb"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "passed": true,
+  "kind": "internal exact certificate replay; written arguments give every depth",
+  "scope": {
+    "ordinary_offsets_all_depths": [
+      3,
+      4,
+      5
+    ],
+    "unified_offsets_all_depths": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "offset_six_all_depths": true,
+    "generic_odd_prime_trace_parity_proved_in_written_source": true,
+    "all_index_gap_six_SFC": false,
+    "all_positive_Gamma_shapes": false,
+    "all_degree_seven_SFC": false,
+    "unrestricted_FC_or_SFC": false
+  },
+  "controls": {
+    "generic_divided_seed_coefficient_identities": 14,
+    "all_carry_degree_bound": 14,
+    "generic_zero_row_seed_identities": 4,
+    "generic_unit6_carry_A": 1,
+    "generic_unit6_carry_T": 1,
+    "certificate_ring": 1,
+    "complete_cases": 1,
+    "generic_ordinary_seed_coefficients": 24,
+    "zero_ordinary_rows_before_division": 90,
+    "all_universal_matrix_entries": 120,
+    "all_recomputed_maximal_minors": 24,
+    "all_six_minor_multipliers": 8,
+    "all_exact_necessary_relation_identities": 8,
+    "relation_targets_match_orbit_inputs": 3,
+    "quotient_monic_degree": 3,
+    "quotient_parameter_is_unit": 3,
+    "complete_period_length": 3,
+    "every_orbit_state": 84,
+    "every_target_gcd": 84,
+    "orbit_return_to_one": 3,
+    "corrupt_membership_certificate_rejected": 1,
+    "simple_linear_residue_branch": 1,
+    "local_disk_divided_difference_unit": 1,
+    "residual_point_is_compatible": 1,
+    "necessary_S_six": 1,
+    "necessary_v_one_at_S_zero": 1,
+    "residue_point_is_compatible": 1,
+    "complete_even_odd_S_at_v_one_cycle": 1,
+    "incorrect_constant_six_raising_rejected": 1,
+    "literal_global_division_integrality": 1420,
+    "all_actual_boundary_entry_polynomials": 240,
+    "exact_trace_characteristic_polynomial": 1,
+    "full_mod49_quotient_parity_identity": 1,
+    "residue_F49_quotient_identity": 1,
+    "mod49_precision_corruption_rejected": 1,
+    "minus_factorial_trace_parameter": 1,
+    "actual_H_coefficient_integrality": 68,
+    "actual_H_leading_unit": 2,
+    "three_algorithm_exact_trace_point_value": 2,
+    "odd_trace_Eisenstein_constant": 1,
+    "even_trace_disk_is_a_unit": 1,
+    "generic_upper_moment_bridge": 5,
+    "lower_moment_bridge": 33
+  },
+  "total_controls": 2279,
+  "finite_algebra_cases": [
+    {
+      "offset": 3,
+      "q_degree": 15,
+      "period": 14,
+      "exceptional_depths_mod_period": [],
+      "all_other_target_gcds_are_one": true
+    },
+    {
+      "offset": 4,
+      "q_degree": 20,
+      "period": 28,
+      "exceptional_depths_mod_period": [],
+      "all_other_target_gcds_are_one": true
+    },
+    {
+      "offset": 5,
+      "q_degree": 25,
+      "period": 42,
+      "exceptional_depths_mod_period": [
+        1,
+        7,
+        13,
+        19,
+        25,
+        31,
+        37
+      ],
+      "all_other_target_gcds_are_one": true
+    },
+    {
+      "offset": 6,
+      "necessary_residue_point": {
+        "S": 0,
+        "v": 1
+      },
+      "first_matrix_even_depth_exclusion": true,
+      "first_matrix_odd_depth_exclusion": false,
+      "full_trace_exclusion_all_depths": true
+    }
+  ],
+  "actual_boundary_profiles": [
+    {
+      "offset": 3,
+      "r": 1,
+      "terminal": 10,
+      "full_coefficient_controls": 62
+    },
+    {
+      "offset": 3,
+      "r": 2,
+      "terminal": 52,
+      "full_coefficient_controls": 244
+    },
+    {
+      "offset": 4,
+      "r": 1,
+      "terminal": 11,
+      "full_coefficient_controls": 67
+    },
+    {
+      "offset": 4,
+      "r": 2,
+      "terminal": 53,
+      "full_coefficient_controls": 256
+    },
+    {
+      "offset": 5,
+      "r": 1,
+      "terminal": 12,
+      "full_coefficient_controls": 69
+    },
+    {
+      "offset": 5,
+      "r": 2,
+      "terminal": 54,
+      "full_coefficient_controls": 266
+    },
+    {
+      "offset": 6,
+      "r": 1,
+      "terminal": 13,
+      "full_coefficient_controls": 70
+    },
+    {
+      "offset": 6,
+      "r": 2,
+      "terminal": 55,
+      "full_coefficient_controls": 210
+    }
+  ],
+  "exact_trace_profiles": [
+    {
+      "terminal": 13,
+      "trace_mod49": 7,
+      "actual_H_point_mod49": 7,
+      "point_valuation": 1
+    },
+    {
+      "terminal": 55,
+      "trace_mod49": 43,
+      "actual_H_point_mod49": 43,
+      "point_valuation": 0
+    }
+  ],
+  "c5_injective_domain": "every Cp point reducing to4; arbitrarily ramified extensions allowed",
+  "source_sha256": {
+    "GAP_SIX_SMALL_OFFSET_FAMILIES.tex": "1b83ed6d1ea139e40de35f2b236d179e743bbe2202b555deea5dad547db3620b",
+    "gap_six_small_offset_families.py": "d3ebe7d5a936e40c68850b95d31fb64d76075d0903ddd290cdf8493a064fe68d",
+    "gap_six_small_offset_families_certificate.json": "854579c5e6d099892c77058ab16b64b001995cc73b2f744a8e4c6e1440feb62b",
+    "GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex": "7c8b7be9cd416803f0d43e0f76248cb5006f94ffa9feafc5295115d9cf61ffc6",
+    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+    "gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c",
+    "GAP_SIX_POWER_PLUS_TWO_SFC.tex": "9e1a71cc23478907af3df8d62ea608f80c936846e18922a73df629d22587e426",
+    "GAP_SIX_SCALED_POWER_PLUS_ONE_SFC.tex": "5b74a52031f6bc2f43c5acc9feac50ebc616972c51c0eee923797ab0e3b6ef55"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "orbit_verifier": "pure Python coefficient lists; no Groebner or factorization input",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/gap_six_small_offset_families.py"
+}

@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{lemma}{Lemma}\newtheorem{theorem}[lemma]{Theorem}
+\begin{document}
+\title{Generic physical trace packets and a separable residue disk}
+\author{Internal research note}\date{18 November 2026}\maketitle
+Let $p$ be an odd prime,
+\[
+ H_{n,p}(Y)=p\sum_{j=0}^n\binom nj(n)_{(p-1)j}(Y/p)^j,\quad n\ge1,
+\]
+and let $K_{n,p}(Z)$ be the power sum of the $p$ roots of
+$(X-1)^p-ZX^{p-1}$, with multiplicity.
+Proposition \texttt{prop:trace} of the
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}{physical prime-total-degree note} gives
+$H_{n,p}(Y)\equiv K_{n,p}((p-1)!Y)\pmod{p^2}$,
+and its \texttt{lem:coefficients} gives unit leading coefficient
+for every $H_{n,p}$.
+
+\begin{lemma}[Every unit evaluation has a finite depth period]\label{lem:unit-period}
+Let $Z\in\mathbb Z_p^\times$ and put $a=-\bar Z\in\mathbb F_p^\times$.
+Set $d=\operatorname{ord}(a)$ if $a\ne1$, and $d=p$ if $a=1$.
+For $b\ge1,c\ge0,r\ge1$,
+\[
+ K_{bp^{r+d}+c,p}(Z)\equiv K_{bp^r+c,p}(Z)\pmod{p^2}.
+\]
+Thus for any fixed $y\in\mathbb Z_p^\times$, the analogous physical
+trace values $H_{bp^r+c,p}(y)$ have depth period
+$\operatorname{ord}(\bar y)$ when $\bar y\ne1$, and period $p$
+when $\bar y=1$.
+\end{lemma}
+\begin{proof}
+In the finite free algebra
+$\mathcal B=\mathbb Z_p[\lambda]/((\lambda-1)^p-Z\lambda^{p-1})$,
+$\lambda$ is a unit. Its inverse obeys
+$\tau^p=1+a\tau$ modulo$p$.
+Iterating gives
+$\tau^{p^d}=a^d\tau+\sum_{j=0}^{d-1}a^j=\tau$.
+The geometric sum vanishes when $a\ne1$, and equals$p=0$ when$a=1$.
+Hence $\lambda^{p^d}=\lambda+pB$ for some $B\in\mathcal B$.
+Raising to$p$ gives
+$\lambda^{p^{d+1}}\equiv\lambda^p\pmod{p^2\mathcal B}$.
+Raise to $p^{r-1}$ and then$b$, multiply by$\lambda^c$, and take
+multiplication traces. These traces are the stated power sums by
+Newton identities. Finally Wilson gives
+$-(p-1)!y\equiv\bar y\pmod p$.
+\end{proof}
+
+\begin{lemma}[A uniform prime-digit trace constant]\label{lem:prime-digit-constant}
+For $1\le b\le p-1$ and $n=p+b(p-1)$,
+\[
+ K_{n,p}(1)\equiv(p+1)\binom pb
+           \equiv p\,\frac{(-1)^{b-1}}b\pmod{p^2}.
+\]
+The same congruence holds for $K_{n,p}(Z)$ at every
+$Z\in1+p\mathbb Z_p$.
+\end{lemma}
+\begin{proof}
+In the unramified quadratic extension, let $\zeta$ run through
+$\mu_{p+1}\setminus\{-1\}$, and put $a_\zeta=1+\zeta^{-1}$.
+These are units, distinct modulo$p$.
+Because $\zeta^p=\zeta^{-1}$, their residues are exactly the roots
+of $P(X)=(X-1)^p-X^{p-1}$: modulo$p$,
+$a_\zeta^p=1+\zeta=a_\zeta\zeta$.
+Their derivatives $P'(a_\zeta)\equiv a_\zeta^{p-2}$ are units.
+The use of $\mu_{p+1}$ is elementary Hensel lifting of its distinct
+roots in $\mathbb F_{p^2}$.
+
+Write $D=a_\zeta^{p-1}-\zeta\in p\mathcal O$.
+The identity $(a_\zeta-1)^p=\zeta$ is exact, so
+$P(a_\zeta)=-D$.
+The unique root lifting it satisfies
+\[
+ \lambda_\zeta\equiv a_\zeta+D a_\zeta^{2-p}\pmod{p^2}.
+\]
+For $n=p+b(p-1)$, Taylor expansion and $n\equiv-b\pmod p$ give
+\[
+\begin{split}
+ \lambda_\zeta^n
+ &\equiv a_\zeta^n+n a_\zeta^{n-p+1}D\\
+ &\equiv a_\zeta\zeta^{b+1}
+       +(b+1+n)a_\zeta\zeta^bD\\
+ &\equiv a_\zeta\zeta^b(\zeta+D)
+  =a_\zeta^p\zeta^b \pmod{p^2}.
+\end{split}
+\]
+Sum over $\zeta$. Extending the last sum to $\zeta=-1$ adds zero.
+Expansion of $(1+\zeta^{-1})^p\zeta^b$ and the root-of-unity
+power sums leave only the term with exponent $b-b=0$.
+The result is $(p+1)\binom pb$.
+Since
+$\binom pb/p=\binom{p-1}{b-1}/b\equiv(-1)^{b-1}/b$,
+the displayed formula follows.
+
+The residue support in the physical trace proposition implies
+$ZK'_{n,p}(Z)\equiv nK_{n,p}(Z)\pmod p$.
+At $Z=1$ the right side is zero. Thus $K'_{n,p}(1)\equiv0$.
+Taylor expansion at $Z=1$ proves invariance modulo$p^2$
+under $Z\mapsto1+p\mathbb Z_p$.
+\end{proof}
+
+\begin{theorem}[The digit-sum-$p$ disk is always separable]\label{thm:local-packet}
+For every odd prime$p$, $1\le b<p$, and $r\ge0$, put
+$N=bp^r+p-b$.
+If $r$ is odd then
+\[
+ H_{N,p}(-1)\equiv p\,\frac{(-1)^{b-1}}b\pmod{p^2}.
+\]
+If $r$ is even then $H_{N,p}(-1)\equiv1\pmod p$.
+Consequently $H_{N,p}$ has no repeated root in the entire residue
+disk $v_p(Y+1)>0$, including arbitrarily ramified points.
+This is a local exclusion, not unrestricted binomial SFC.
+\end{theorem}
+\begin{proof}
+Put $w=(p-1)!$ and $Z=-w\equiv1\pmod p$.
+Lemma~\ref{lem:unit-period} gives depth period two.
+For odd$r$, reduce to$r=1$ and apply Lemma~\ref{lem:prime-digit-constant} to
+$n=bp+p-b=p+b(p-1)$.
+For even$r\ge2$, in the finite algebra modulo$p$ one has
+$\lambda^{p^2}=\lambda$. Hence the power sum at
+$bp^r+p-b$ equals that at$p$.
+It is $K_{p,p}(Z)\equiv K_{1,p}(Z)^p\equiv1$.
+The case$r=0$ is $N=p$ and gives the same residue.
+
+For even$r$, the residue disk has no root.
+For odd$r$ the displayed trace has valuation exactly one.
+Apply \texttt{lem:local-cluster} of the
+\href{GAP_SIX_SMALL_OFFSET_FAMILIES.tex}{small-offset note}.
+It applies to every prime and every integral polynomial with unit
+leading coefficient: valuation one at $-1$ makes the full
+Hensel factor with reduction $(Y+1)^e$ Eisenstein after translation.
+It is separable over $\mathbb Q_p$, and remains so over
+$\mathbb C_p$, whatever its width or the ramification of a root.
+Thus the entire residue disk is excluded.
+\end{proof}
+The checker replays exact finite-algebra period identities at several
+odd primes, the trace constants and their derivatives at every
+odd prime up to 101, and direct physical-polynomial packet values.
+It also rejects corrupted precision and constant controls.
+These are supplementary controls: the written proofs provide every
+prime, digit and depth quantifier. No finite certificate is an
+indispensable input.
+
+No all-index assertion, Gamma-shape extension, independent whole-proof
+replay, formal verification, external review or priority is claimed.
+\end{document}

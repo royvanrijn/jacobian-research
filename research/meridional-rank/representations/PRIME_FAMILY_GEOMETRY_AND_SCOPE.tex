@@ -1,0 +1,554 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\ar}{\operatorname{ar}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Sig}{\Sigma_2}
+\title{Cyclic branched-cover homology and torsion generators\protect\\
+for a prime four-bridge family}
+\author{}
+\date{18 November 2026}
+\begin{document}\maketitle
+\begin{abstract}
+An explicit prime four-bridge family with complex augmentation rank
+three has cyclic double-cover homology of order $117+366n$.
+The calculation uses one marked filling parent and an integral
+abelianization, without a sequence of sampled fillings. Every knot
+exterior is hyperbolic. Its order-two orbifold group needs exactly
+four torsion generators, although Coxeter reflection quotients give
+bounds at most three. Consequently any link whose orbifold group
+surjects onto it has at least four bridges. A current orbifold
+domination theorem also excludes every arborescent knot as a source
+of such an epimorphism. Cyclic homology rules out the nonunit
+Lustig--Moriah plat criterion uniformly, including parameters for
+which a prime cube divides the determinant. We compare only precise
+published sufficient criteria and retain their unrestricted boundaries.
+\end{abstract}
+
+For $n\in\Z_{\ge0}$, let $K_n$ be the closure of the four-braid
+\begin{equation}\label{eq:braid}
+\beta_n=\sigma_1\sigma_2\sigma_3^{-2}\sigma_2\sigma_3^{-2}
+\sigma_2\sigma_1^2\sigma_2^3\sigma_3^{-1}\sigma_2^{3+6n}.
+\end{equation}
+We use two established results for this exact family.
+The accompanying family theorem \cite[Theorem \texttt{thm:main},
+Lemma \texttt{lem:alexander}]{family} proves primeness and
+\[
+ \mr(K_n)=b(K_n)=4,\quad \ar(K_n,\mathbb C)=3,
+ \quad g(K_n)=7+3n,\quad c(K_n)=17+6n.
+\]
+It supplies a full meridional $A_8$ quotient with double-transposition
+meridians and excludes Coxeter reflection quotients of rank at least
+four, including infinite Coxeter groups.
+The accompanying cover theorem \cite[Theorems \texttt{thm:binding}
+and \texttt{thm:allcovers}]{covers} identifies the actual covers as
+\begin{equation}\label{eq:fill}
+                \Sig(K_n)\cong N(-1,2+6n)
+\end{equation}
+in one fixed peripheral basis $(m,l)$, and proves that every cover is
+closed hyperbolic. Here $N$ is the specified marked fourteen-tetrahedron
+outside-tangle cover. Its topological identification and surviving
+peripheral marking are exact; a sampled isometry does not choose them.
+These family and cover results are explicit premises throughout.
+
+The new homology calculation determines the whole integral group,
+rather than just its order. This is useful because a cyclic group can
+have order divisible by arbitrarily high prime powers while retaining
+at most one mod-$p$ generator. A second argument retains the actual
+covering involution: an invariant hyperbolic metric makes its quotient
+a cone orbifold. This both gives hyperbolic knot exteriors and identifies
+all orbifold torsion with the meridian class. The existing $A_8$ quotient
+then gives a sharp torsion-generation bound which survives arbitrary
+orbifold epimorphisms.
+
+\section{Integral homology of the fixed parent}
+
+\begin{lemma}\label{lem:parent}
+In the marking of \eqref{eq:fill}, $H_1(N;\Z)=\Z x$ and
+\[
+                         [m]=5x,\qquad [l]=61x.
+\]
+\end{lemma}
+\begin{proof}
+The exact dual-cell presentation of the marked parent has generators
+$a,b,c,d,e,f,g,h,i,j,k$ and the following ten relators:
+\[
+\begin{gathered}
+ aGG,\quad eag,\quad HddA,\quad fbD,\quad ibKJ,\\
+ biFH,\quad cJb,\quad kde,\quad ckhEf,\quad CJBi.
+\end{gathered}
+\]
+A capital letter denotes the inverse of its lowercase generator.
+The marked peripheral words are
+\[
+                       m=kDkdfbcckdfb,\qquad l=BFDKCC.
+\]
+These literal words are reconstructed from the same retained marked
+triangulation used in the cover theorem. The pinned exact cell and
+peripheral-word algorithms of SnapPy~3.3.2 are the combinatorial
+import \cite{snappy}; no presentation simplification is invoked.
+
+Here is a direct integral calculation from those words. Write the
+abelianized generators additively. Unit-coefficient eliminations give
+\[
+\begin{gathered}
+ a=2g,\quad e=-3g,\quad h=2d-2g,\quad f=d-b,\quad k=-d+3g,\\
+ j=4d-b-5g,\quad c=j-b,\quad i=3d-2b-2g.
+\end{gathered}
+\]
+The last two unused relations become
+\[
+                     g=6d-3b,\qquad 8g=5d.
+\]
+Thus the remaining presentation is
+$\langle b,d\mid 43d-24b=0\rangle$.
+Put $x=9d-5b$. The identities
+\[
+ 43x-b=9(43d-24b),\qquad 24x-d=5(43d-24b)
+\]
+give $b=43x$ and $d=24x$. Conversely the assignments $b\mapsto43$,
+$d\mapsto24$ define a homomorphism to $\Z$ sending $x$ to one.
+Hence $x$ generates an infinite cyclic group; no nonunit has been
+inverted in the elimination. The eleven generator images are
+\[
+ (30,43,-65,24,-45,-19,15,18,-44,-22,21)x.
+\]
+Substitution in the two literal peripheral words gives $5x$ and
+$61x$, as claimed.
+An exact supplement independently verifies this using mutually inverse
+integral change-of-basis matrices and a unit diagonal relation block.
+Its optional topology replay reconstructs all relators and peripheral
+words from the marked parent, and seven corrupted controls are rejected.
+The finite integer replay alone does not reprove the topological
+presentation import.
+\end{proof}
+
+\begin{theorem}\label{thm:homology}
+For every $n\ge0$,
+\[
+                H_1(\Sig(K_n);\Z)\cong\Z/(117+366n)\Z.
+\]
+Consequently $\dim_{\F_p}H_1(\Sig(K_n);\F_p)\le1$ for every prime $p$.
+\end{theorem}
+\begin{proof}
+For a connected manifold with one torus boundary, filling a primitive
+slope $\alpha$ gives $H_1(N(\alpha);\Z)=H_1(N;\Z)/\langle[\alpha]\rangle$.
+Indeed Mayer--Vietoris presents the filling homology as
+$(H_1(N)\oplus\Z[\text{core}])/\operatorname{im}H_1(T^2)$.
+Choose a complementary primitive curve to $\alpha$. Its relation
+eliminates the core generator, leaving exactly $[\alpha]=0$;
+the $H_0$ map is injective because both pieces and their intersection
+are connected. There is no extra free summand.
+By Lemma~\ref{lem:parent}, the slope in \eqref{eq:fill} has image
+\[
+                    -5x+(2+6n)61x=(117+366n)x.
+\]
+This proves the integral formula uniformly. The field statement follows
+by tensoring with $\F_p$; $H_0$ has no torsion term.
+\end{proof}
+
+\section{The actual knot exteriors and orbifold torsion}
+
+Set
+\[
+ \Gamma_n=\pi_1(S^3\setminus K_n)/
+                       \langle\!\langle\mu^2\rangle\!\rangle.
+\]
+This is the fundamental group of the orbifold $\mathcal O_n$ with
+underlying pair $(S^3,K_n)$ and branching order two. Define
+$t(G)$ to be the least number of finite-order elements generating
+$G$, whenever such a generating set exists. Identity elements do
+not reduce this number. In the present groups every nonidentity
+torsion element will have order two, so this is also the invariant
+$m_2$ discussed in \cite[Section~8]{bkn}.
+
+\begin{lemma}\label{lem:orbifold}
+For every $n\ge0$, the actual orbifold $\mathcal O_n$ is a compact
+orientable hyperbolic orbifold, with singular locus $K_n$ of order two.
+\end{lemma}
+\begin{proof}
+Let $Y_n=\Sig(K_n)$, retaining its actual smooth covering involution
+$\tau_n$. It is a closed hyperbolic manifold by the cover theorem.
+Dinkelbach--Leeb's Theorem~H \cite[pp.~1129, 1166--1167]{dl}
+conjugates this finite smooth action to an isometric action.
+The induced quotient homeomorphism preserves the branch pair, so its
+quotient is the actual $(S^3,K_n)$, rather than an unspecified knot
+with the same unmarked covering manifold. Since the action is
+orientation preserving and has order two, its local model along the
+fixed link is a half-turn. The quotient is therefore a compact
+orientable hyperbolic cone manifold with cone angle $\pi$ and singular
+locus $K_n$. This is a complete hyperbolic orbifold structure on
+$\mathcal O_n$.
+\end{proof}
+
+\begin{theorem}\label{thm:exterior}
+For every $n\ge0$, $S^3\setminus K_n$ admits a complete
+finite-volume hyperbolic metric.
+\end{theorem}
+\begin{proof}
+By Lemma~\ref{lem:orbifold}, the actual $(S^3,K_n)$ has a compact
+orientable hyperbolic cone structure of angle $\pi$.
+Kojima's Theorem~1.2.1 \cite[pp.~5--6]{kojima} states that the
+nonsingular part of an orientable finite-volume hyperbolic cone
+three-manifold has a complete finite-volume hyperbolic structure.
+Apply it to this actual quotient. Its nonsingular part is
+$S^3\setminus K_n$, proving the exterior assertion.
+The isometric-action and cone-complement theorems
+are imported at their stated scopes. This argument does not assert
+that the original quotient metric restricted to the complement is
+already complete.
+\end{proof}
+
+\begin{theorem}\label{thm:torsion}
+Every nonidentity torsion element of $\Gamma_n$ is conjugate to the
+meridian image and has order two. Moreover
+\[
+                              t(\Gamma_n)=m_2(K_n)=4.
+\]
+\end{theorem}
+\begin{proof}
+Realize $\mathcal O_n$ as $\mathbb H^3/\Gamma_n$ using the
+isometric-action argument in Lemma~\ref{lem:orbifold}.
+A finite-order isometry fixes a point of $\mathbb H^3$.
+For example, in the hyperboloid model, sum the finitely many orbit
+vectors of any future unit timelike vector and normalize the sum;
+the future timelike cone is convex, so the normalization is defined
+and fixed. All point stabilizers in this orbifold are trivial or
+cyclic of order two. A nonidentity torsion element consequently
+belongs to such a local order-two stabilizer. Since the singular
+locus is the connected knot $K_n$, all these local generators are
+conjugate to the meridian image.
+
+The four bridge meridians generate $\Gamma_n$, giving $t\le4$.
+The family theorem supplies a full $A_8$ quotient taking their images
+to double transpositions. It factors through $\Gamma_n$ because
+meridian squares vanish in $A_8$. By the first paragraph, every
+nonidentity torsion element maps to a conjugate of the same double
+transposition. If $r$ double transpositions generate a transitive
+group on eight letters, their transposition-edge graph is connected:
+its components are exactly the orbits of the group they generate.
+It needs at least seven edges, while the $r$ generators supply at
+most $2r$. Thus $r\ge4$. Any torsion generating set of $\Gamma_n$
+would map onto such a generating set of $A_8$, proving $t\ge4$.
+This argument needs neither a Coxeter quotient nor an ordinary
+rank-four bound on $A_8$.
+\end{proof}
+
+For comparison, the independent family theorem gives
+$\ar(K_n,\mathbb C)=3$ and bounds every Coxeter reflection-class
+certificate by three. The new torsion-generation statement concerns
+$\Gamma_n$; it does not compute its unrestricted ordinary group rank.
+
+\section{Orbifold epimorphisms and arborescent sources}
+
+For a link $L$, write $\Gamma(L)$ for its order-two orbifold group.
+Its canonical parity map $\nu_L:\Gamma(L)\to C_2$ sends every
+meridian image to the nontrivial element. We use the current
+Boileau--Kitano--Nozaki definition \cite[Definition~1.1]{bkn}:
+$L\succeq L'$ means there is a surjection
+$\varphi:\Gamma(L)\to\Gamma(L')$ satisfying
+$\nu_{L'}\varphi=\nu_L$. This parity condition is part of the
+version-three definition and must not be suppressed for links.
+
+\begin{corollary}\label{cor:bridge}
+For every link $L$, any abstract group epimorphism
+$\Gamma(L)\twoheadrightarrow\Gamma_n$ implies $b(L)\ge4$.
+\end{corollary}
+\begin{proof}
+A $b(L)$-bridge presentation generates $\Gamma(L)$ by that many
+meridian involutions. Their images under any homomorphism have
+finite order or are the identity. If the homomorphism is surjective,
+they generate $\Gamma_n$, so Theorem~\ref{thm:torsion} gives
+$b(L)\ge t(\Gamma_n)=4$. Parity or meridian preservation of the
+homomorphism is unnecessary here.
+\end{proof}
+
+\begin{corollary}\label{cor:arborescent}
+No arborescent link $L$ with $\det L\ne0$ satisfies $L\succeq K_n$.
+In particular there is no abstract orbifold-group epimorphism from
+any arborescent knot to $K_n$. The first assertion also holds with
+$K_n\#(\#^s3_1)$ as target, for every $s\ge0$.
+\end{corollary}
+\begin{proof}
+Boileau--Kitano--Nozaki's Theorem~1.7 \cite{bkn} says that, for an
+arborescent $L$ with nonzero determinant and a nontrivial
+$\pi$-dominated target, every prime factor of the target's double
+cover has a Seifert fibered JSJ piece. Our target cover is closed
+hyperbolic, so it has no such piece. For the trefoil sums the lifted
+sum sphere gives the prime factor $\Sig(K_n)$ in the double cover,
+which yields the same contradiction.
+For a knot $J$, $\Gamma(J)^{\rm ab}=C_2$ and $\nu_J$ is its unique
+nontrivial map to $C_2$. An epimorphism between knot orbifold groups
+induces the nontrivial map on these abelianizations, so it automatically
+commutes with parity. Knot determinants are nonzero. The link
+assertion therefore applies to every abstract epimorphism from an
+arborescent knot.
+\end{proof}
+
+The determinant condition cannot be dropped under the broad
+arborescent convention in \cite{bkn}, which includes graph prime
+sums. Let $U_4$ be the four-component unlink. Its orbifold group is
+$C_2*C_2*C_2*C_2$ and its double cover is
+$\#^3(S^2\times S^1)$, so it is arborescent in that convention and
+has determinant zero. Sending the four free involutions to the
+four bridge meridians of $K_n$ gives a parity-preserving epimorphism
+$\Gamma(U_4)\twoheadrightarrow\Gamma_n$. This also realizes equality
+in the bridge lower bound of Corollary~\ref{cor:bridge}.
+
+\section{Uniform comparison with specified equality criteria}
+
+\begin{proposition}\label{prop:elementary}
+For all $n\ge0$, $K_n$ is nonalternating and
+$s(K_n)=6+6n$. Neither chirality is positive or strongly quasipositive.
+No $K_n$ is a genuine cable on a nontrivial companion, a braid-pattern satellite of index at least two on a nontrivial companion, or a twisted or untwisted Whitehead double.
+\end{proposition}
+\begin{proof}
+The family Alexander formula is
+\[
+ \Delta_n(t)=\frac{P(t)+t^{6n+6}t^9P(t^{-1})}{1+t},\quad
+ P(t)=1-3t+4t^2-8t^4+18t^5-21t^6+15t^7-6t^8+t^9.
+\]
+The second numerator term starts in degree at least six.
+Thus the coefficients through degree five are always
+$1,-4,8,-8,0,18$. The zero is between nonzero extreme coefficients,
+contradicting Murasugi's nonvanishing theorem for alternating knots
+\cite[Theorem~1.1]{murasugi}.
+The displayed braid is homogeneous, has writhe $7+6n$, four Seifert
+circles and two components after smoothing all negative crossings.
+Abe's formula \cite[Theorem~1.2]{abe} gives
+$s=7+6n-4+4-1=6+6n$; the mirror has $s=-6-6n$.
+Since $2g=14+6n$, neither chirality has $s=2g$.
+Abe's Theorem~1.3 excludes positive and strongly quasipositive
+presentations for these homogeneous knots. Arbitrary quasipositivity
+is not excluded by this statement.
+
+Hyperbolic exteriors already exclude genuine satellites.
+There are also independent elementary checks for the displayed
+classes. A winding-$p$ cable or $p$-strand braid satellite on a
+nontrivial companion has bridge number at least $p\,b(J)$
+\cite[Theorem~1]{schultens}. Thus $p=2$; a two-strand braid pattern
+is a $(2,q)$ cable. The satellite Alexander formula
+\cite[Theorem~2 and Seifert corollary]{lm} gives
+$|q|=\det K_n=117+366n$, since the companion factor is evaluated
+at one. The torus-pattern factor alone has breadth
+$|q|-1=116+366n>14+6n=2g(K_n)$, impossible because Laurent
+polynomial breadths add under multiplication. A Whitehead pattern,
+with any twisting, bounds a once-punctured torus: take the companion
+annulus and attach its clasp band. Its genus is at most one,
+whereas $g(K_n)\ge7$. Iterated doubles are covered by their outermost
+Whitehead pattern. Primeness separately excludes nontrivial
+connected-sum constructions.
+\end{proof}
+
+\begin{lemma}\label{lem:fox}
+For any knot diagram $D$ of $K$ and prime $p$,
+\[
+ \dim_{\F_p}\operatorname{Col}_p(D)
+       =1+\dim_{\F_p}H_1(\Sig(K);\F_p).
+\]
+\end{lemma}
+\begin{proof}
+We recall the direct group calculation behind the classical core-group
+interpretation \cite{core}. In the order-two orbifold group put
+$a=\mu_0$ and rewrite the parity kernel with transversal $\{1,a\}$.
+The square relators pair the Schreier generators
+$u_i=\mu_i a^{-1}$ and $v_i=a\mu_i$ by $u_iv_i=v_iu_i=1$;
+$u_0=1$ and the base square gives $v_0=a^2=1$.
+Eliminate $v_i=u_i^{-1}$ and write $x_i=u_i=\mu_i a$, $x_0=1$.
+The crossing relator
+$\mu_{\rm out}\mu_{\rm over}\mu_{\rm in}\mu_{\rm over}$ has rewrites
+\[
+ R=x_{\rm out}x_{\rm over}^{-1}x_{\rm in}x_{\rm over}^{-1},
+ \qquad x_{\rm out}^{-1}R^{-1}x_{\rm out},
+\]
+so only the first is needed. These exhaust the rewritten relators;
+no relation $x_i^2=1$ is introduced. The parity kernel is
+$\pi_1(\Sig(K))$, so its abelianization is presented by $x_0=0$
+and $2x_{\rm over}-x_{\rm in}-x_{\rm out}=0$.
+Its homomorphisms to $\F_p$ are precisely Fox colourings with base
+colour zero. Subtracting the constant base colour splits off one
+copy of $\F_p$. The remaining dual homology space has dimension
+$\dim H_1(\Sig(K);\F_p)$, proving the formula, including $p=2$.
+\end{proof}
+
+\begin{theorem}\label{thm:criteria}
+No $K_n$, for any $n\ge0$, satisfies either of the following
+sharp-four sufficient criteria:
+\begin{enumerate}
+\item a construction supplying a rank-four Coxeter quotient with
+meridians sent to reflections;
+\item the nonunit Lustig--Moriah matrix-gcd condition in any plat presentation,
+or its geometric generalized-Montesinos criterion with nonunit
+numerator gcd.
+\end{enumerate}
+It also cannot be an output whose equality certificate requires
+ordinary complex augmentation rank four.
+\end{theorem}
+\begin{proof}
+The first and last assertions follow from the separate uniform
+Coxeter and augmentation bounds. For the second, let $R$ be the
+unreduced Burau matrix at $t=-1$ for a $2b$-plat. In the conventions
+of \cite[Proposition~5.6, pp.~186--187]{lustig}, also restated in
+\cite[Theorem~4.20]{moriah}, let the $i$th row of $L$ be
+$e_{2i-1}^{T}-e_{2i}^{T}$ and the $j$th column of $M$ be
+$e_{2j-1}+e_{2j}$. Suppose the entries of $LRM$ have nonunit gcd.
+A prime $p$ divides all entries (choose any prime if all are zero).
+Every $2b$-plat gives a bridge upper bound $b$, so any such
+presentation of $K_n$ has $b\ge4$.
+
+For completeness, the Fox-colouring consequence gives the needed
+obstruction directly. The two colours in each top cap coincide,
+so top colour vectors form $\operatorname{im}M$. The matrix $R$
+propagates them through the braid by the Fox crossing rule, and
+$L$ tests equality at the bottom cap pairs. The constraints are
+$LRM v=0$.
+If $LRM=0$ over $\F_p$, all $b$ cap colours are free, so the
+Fox-colouring space has dimension $b$. Lemma~\ref{lem:fox} would therefore give
+$\dim_{\F_p}H_1(\Sig(K_n);\F_p)=b-1\ge3$. This contradicts Theorem~\ref{thm:homology}.
+The geometric nonunit numerator-gcd criterion is a specialization
+of this matrix condition in the original construction; no claim
+is made for geometric descriptions with unit gcd.
+\end{proof}
+
+For example $n=3$ has determinant $1215=3^5\cdot5$.
+A prime-cube divisibility test alone cannot exclude it; the integral
+homology is nevertheless cyclic, and the mod-three dimension is one.
+The argument excludes the stated criterion in every possible
+presentation satisfying it, rather than only a displayed plat.
+
+The Coxeter-producing class in Theorem~\ref{thm:criteria} includes the
+precise twisted-link and even-weight bipartite arborescent theorems
+of \cite{bbk}, the many-twig arborescent theorem of \cite{twigs},
+the nonunit even-column fishnets and further maximal-rank Coxeter
+constructions of \cite{fishnet}, and any successful maximal-rank
+finite-Coxeter search of \cite{bkm}. The integer-box classical families of
+\cite{jp} also give such quotients by the written boundary-label
+transport in the accompanying single-knot comparison \cite{comparison}:
+replace the four step-cycle labels by the four simple reflections
+with adjacent exponent $2p-1$ and nonadjacent exponent two;
+the permitted two-strand twist multiples preserve the labels.
+This includes rational tangles assembled from those permitted boxes;
+it does not exclude arbitrary rational replacement without its
+noncollapsed sharp quotient. Likewise, the augmentation statement
+excludes maximal-augmentation satellite and symmetric rank-raising
+outputs at bridge number four \cite{ch,cornwell}.
+
+Every link can have a loose fishnet presentation; our obstruction is
+to the stated sharp-quotient criteria. Adding an unknot to $K_n$ is
+still allowed by \cite[Theorem~1.1]{fishnet}, which proves an equality
+for the larger link. The plain-sphere theorem \cite[Theorem~1.1]{plain}
+is a theorem for every link using restricted geometric presentations;
+it supplies no unrestricted meridional-rank lower bound that would
+be contradicted here. No exclusion of those universal statements
+is asserted. Nor is unit-gcd generalized-Montesinos membership
+classified by the argument above. The general matrix/Fox-ideal rank
+criterion of \cite[Theorem3.5]{moriah} is also separate from the
+scalar nonunit Burau condition. The class generated from arbitrary
+meridionally tame base knots in \cite[Theorem1]{bdjw} includes its
+base knots themselves. Hyperbolicity excludes its genuine satellite
+and connected-sum outputs, but it does not decide whether a $K_n$
+is meridionally tame; bridge equality alone does not imply tameness.
+
+Strict augmentation gaps already occur for three-bridge prime knots
+in \cite[Corollary~1.12]{cornwell}. The Whitehead double of the square
+knot gives another satellite example with augmentation rank
+at most five and meridional rank six \cite[Theorem~1.3]{whitehead}.
+Thus no first-prime-gap claim is made. The distinctions established
+here are the explicit four-bridge family, cyclic closed-hyperbolic
+cover homology, exact orbifold torsion-generation rank, and the
+specified uniform construction and domination obstructions.
+A bounded source comparison does not establish worldwide priority.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{99}\small\raggedright
+\bibitem{family} \emph{Prime four-bridge knots with augmentation rank
+three}, accompanying family theorem, Theorem \texttt{thm:main},
+Lemma \texttt{lem:alexander} and Corollary \texttt{cor:coxeter}.
+\bibitem{covers} \emph{Hyperbolic double covers of a prime four-bridge
+twist family}, accompanying marked-cover theorem,
+Theorems \texttt{thm:binding} and \texttt{thm:allcovers}.
+\bibitem{snappy} M. Culler, N. M. Dunfield, M. Goerner and J. R. Weeks,
+SnapPy~3.3.2; exact dual-cell presentation and marked peripheral words.
+\url{https://snappy.computop.org/}.
+\bibitem{dl} J. Dinkelbach and B. Leeb, Equivariant Ricci flow with
+surgery and applications to finite group actions on geometric
+3-manifolds, Geom. Topol. 13 (2009), 1129--1173,
+Theorem H, proof pp1166--1167.
+\url{https://doi.org/10.2140/gt.2009.13.1129}.
+\bibitem{kojima} S. Kojima, Deformations of hyperbolic 3-cone-manifolds,
+J. Differential Geom. 49 (1998), 469--516.
+Retained arXiv:math/9809034v1, Theorem1.2.1 and proofpp5--6.
+\url{https://arxiv.org/abs/math/9809034v1}.
+\bibitem{bkn} M. Boileau, T. Kitano and Y. Nozaki,
+A preorder on the set of links with applications to symmetric unions,
+arXiv:2510.12372v3 (19 April 2026), Definition1.1,
+Theorem1.7 and Section8. \url{https://arxiv.org/abs/2510.12372v3}.
+\bibitem{murasugi} K. Murasugi, On the Alexander polynomial of the
+alternating knot, Osaka Math. J. 10 (1958), 181--189, Theorem1.1.
+\bibitem{abe} T. Abe, The Rasmussen invariant of a homogeneous knot,
+Proc. AMS 139 (2011), 2647--2656; retained arXiv:1003.5392v1,
+Theorems1.2--1.3. \url{https://arxiv.org/abs/1003.5392v1}.
+\bibitem{schultens} J. Schultens, Additivity of bridge numbers of knots,
+Math. Proc. Cambridge Philos. Soc. 135 (2003), 539--544, Theorem1.
+\bibitem{lm} C. Livingston and P. Melvin, Abelian invariants of satellite
+knots, Geometry and Topology, LNM1167 (1985), 217--227, Theorem2
+and its Seifert corollaryp222.
+\bibitem{lustig} M. Lustig and Y. Moriah, Generalized Montesinos knots,
+tunnels and $N$-torsion, Math. Ann. 295 (1993), 167--189,
+Theorem0.1, Definition1.2 and Proposition5.6.
+\bibitem{moriah} Y. Moriah, Heegaard splittings of knot exteriors,
+Geom. Topol. Monographs12 (2007), 191--232, Theorem4.20.
+\bibitem{core} D. Silver, L. Traldi and S. Williams, Core groups,
+J. Knot Theory Ramifications33 (2024), 2450013, introduction
+and Section7, crediting Kelly and Wada.
+\bibitem{bbk} S. Baader, R. Blair and A. Kjuchukova,
+Coxeter groups and meridional rank of links, Math. Ann.379 (2021),
+1533--1551, Theorems1--2.
+\bibitem{twigs} S. Baader, R. Blair, A. Kjuchukova and F. Misev,
+The bridge number of arborescent links with many twigs,
+Algebraic \& Geometric Topology23 (2023), 75--85, Theorem2.
+\bibitem{fishnet} R. Blair, A. Kjuchukova and E. Pfaff, Adding a
+suitable unknot to any link equates bridge number and meridional rank,
+Math. Proc. Cambridge Philos. Soc.181 (2026), 1339--1355,
+Proposition1.4 and Section2.2.
+\url{https://doi.org/10.1017/S030500412610214X}.
+\bibitem{plain} R. Blair, A. Kjuchukova and E. Pfaff,
+The plain sphere number of a link, Pacific J. Math.342(2) (2026),
+217--233. \url{https://doi.org/10.2140/pjm.2026.342.217}.
+\bibitem{bkm} R. Blair, A. Kjuchukova and N. Morrison,
+Coxeter quotients of knot groups through 16 crossings,
+Experimental Math.34 (2025), 27--37.
+\bibitem{jp} J. Joseph and P. Pongtanapaisan, Meridional rank and
+bridge number of knotted 2-spheres, Canad. J. Math.77 (2025),282--299;
+retained arXiv:2111.09233v2, Construction3.5, Definition3.6,
+Corollary3.12 and Remark3.11.
+\bibitem{comparison} \emph{A bounded family comparison for a
+seventeen-crossing knot}, accompanying boundary-label construction,
+Proposition \texttt{prop:coxeterfamilies}.
+\bibitem{bdjw} M. Boileau, E. Dutra, Y. Jang and R. Weidmann,
+Meridional rank of knots whose exterior is a graph manifold,
+arXiv:1608.01570v1 (2016), Theorem1 and Corollary1.
+\url{https://arxiv.org/abs/1608.01570}.
+\bibitem{ch} C. R. Cornwell and D. R. Hemminger,
+Augmentation rank of satellites with braid pattern,
+Commun. Anal. Geom.24 (2016), 939--967.
+\bibitem{cornwell} C. R. Cornwell, KCH representations, augmentations,
+and $A$-polynomials, J. Symplectic Geom.15 (2017), 983--1017.
+Retained arXiv:1310.7526v3.
+\bibitem{whitehead} H. Gao, S. Gu, Z. Li and J. Wang,
+Meridional ranks of iterated Whitehead doubles,
+arXiv:2611.15673v1 (2026), Theorem1.3.
+\end{thebibliography}
+\end{document}

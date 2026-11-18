@@ -1,0 +1,62 @@
+{
+  "claim": "Actual global canonical Airy-Long cap25 matrix jet through h4; no cap25 h5 extension for these fixed lower coefficients",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Fraction full matrix Moyal products and complete covariant coefficient enumeration"
+  },
+  "cap": 25,
+  "rank": 2,
+  "delta_R4a": "-2/27",
+  "point": {
+    "all_six_relations_through_h4": true,
+    "F1_degrees": [
+      -1,
+      17,
+      25,
+      13
+    ],
+    "F2_degrees": [
+      -1,
+      17,
+      25,
+      13
+    ],
+    "F3_degrees": [
+      -1,
+      19,
+      25,
+      -1
+    ],
+    "source_global_polynomial_entries": true,
+    "graded_weights_verified": true,
+    "compositional_origin_explicit": true
+  },
+  "fixed_h5": {
+    "all_matrix_entries_and_images_allowed": true,
+    "columns": 712,
+    "rows": 7100,
+    "nonzeros": 239744,
+    "RHS_terms": 402,
+    "exact_functional_support": 274,
+    "all_columns_annihilated": true,
+    "RHS_evaluation": "1",
+    "scope": "Only these fixed F1,F2,F3; homogeneous F3 freedoms or other F2 choices not excluded"
+  },
+  "invalid_control": {
+    "corrupted_functional_rejected": true
+  },
+  "hashes": {
+    "AIRY_LONG_CAP25_MATRIX_JET_AND_FIXED_EXTENSION_OBSTRUCTION.md": "75a5bb133f24f06d8e96a9421275b021483a1e945d64b69e53900753a0990fca",
+    "check_airy_long_cap25_matrix_jet.py": "2f9941810f8c5de8410038dde6bb0cf7b62d61ed297ed85cb91b8009538ed050",
+    "airy_long_cap25_matrix_jet_witness.json": "c935ddfee0df9c60b4873af8b09b1fb4b5cc7a217db82f2d1682df645d847ed6",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "scope": "Finite admitted matrix jet, not an exact full Weyl tuple or a new noncompositional carrier. The h5 obstruction fixes every lower coefficient and does not classify all Airy matrix jets. No bounded formal-gauge or DC1/DC2 claim.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

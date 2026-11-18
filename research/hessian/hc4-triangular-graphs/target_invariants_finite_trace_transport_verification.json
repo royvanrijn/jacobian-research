@@ -1,0 +1,3087 @@
+{
+  "claim": "Target invariants and finite trace-transport obstruction",
+  "outcome": "PASS",
+  "check_count": 758,
+  "checks": [
+    {
+      "name": "critical fibre repeated in nonetale example degree2",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree2",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree2",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree2",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree3",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree3",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree3",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree3",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree4",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree4",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree4",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree4",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree5",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree5",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree5",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree5",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree6",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree6",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree6",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree6",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree7",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree7",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree7",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree7",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree8",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree8",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree8",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree8",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree9",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree9",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree9",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree9",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree10",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree10",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree10",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree10",
+      "passed": true
+    },
+    {
+      "name": "critical fibre repeated in nonetale example degree11",
+      "passed": true
+    },
+    {
+      "name": "nonetale example Jacobian degree11",
+      "passed": true
+    },
+    {
+      "name": "target power has a lower invariant factor degree11",
+      "passed": true
+    },
+    {
+      "name": "repeated single target factor is not reduced degree11",
+      "passed": true
+    },
+    {
+      "name": "every nonlinear polynomial has a critical root y**2 + y",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**2 + y, -1/2)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**2 + y, -1/2)",
+      "passed": true
+    },
+    {
+      "name": "every nonlinear polynomial has a critical root y**3 - 3*y",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**3 - 3*y, -1)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**3 - 3*y, -1)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**3 - 3*y, 1)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**3 - 3*y, 1)",
+      "passed": true
+    },
+    {
+      "name": "every nonlinear polynomial has a critical root y**4 + y**2",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**4 + y**2, -sqrt(2)*I/2)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**4 + y**2, -sqrt(2)*I/2)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**4 + y**2, sqrt(2)*I/2)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**4 + y**2, sqrt(2)*I/2)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**4 + y**2, 0)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**4 + y**2, 0)",
+      "passed": true
+    },
+    {
+      "name": "every nonlinear polynomial has a critical root y**5 - y",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**5 - y, -5**(3/4)/5)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**5 - y, -5**(3/4)/5)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**5 - y, 5**(3/4)/5)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**5 - y, 5**(3/4)/5)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**5 - y, -5**(3/4)*I/5)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**5 - y, -5**(3/4)*I/5)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted value vanishes (y**5 - y, 5**(3/4)*I/5)",
+      "passed": true
+    },
+    {
+      "name": "critical shifted derivative vanishes (y**5 - y, 5**(3/4)*I/5)",
+      "passed": true
+    },
+    {
+      "name": "actual nonlinear positive Keller control Jacobian",
+      "passed": true
+    },
+    {
+      "name": "source invariant is actually target polynomial",
+      "passed": true
+    },
+    {
+      "name": "invariant implies first velocity in target P",
+      "passed": true
+    },
+    {
+      "name": "invariant implies first velocity in target Q",
+      "passed": true
+    },
+    {
+      "name": "reduced actual Keller pullback p",
+      "passed": true
+    },
+    {
+      "name": "reduced actual Keller pullback q",
+      "passed": true
+    },
+    {
+      "name": "reduced actual Keller pullback p*q",
+      "passed": true
+    },
+    {
+      "name": "reduced actual Keller pullback p**2 - q",
+      "passed": true
+    },
+    {
+      "name": "reduced actual Keller pullback -p + q**2",
+      "passed": true
+    },
+    {
+      "name": "reduced actual Keller pullback p**2 + q**2 - 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d1q1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d1q1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d1qy",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d1qy",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d1qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d1qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d1q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d1q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d2q1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d2q1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d2qy",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d2qy",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d2q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d2q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d3q1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d3q1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d3qy",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d3qy",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d3qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d3qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d3q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d3q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d4q1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d4q1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d4qy",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d4qy",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d4qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d4qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d4q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d4q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d5q1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d5q1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d5qy",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d5qy",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d5qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d5qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d5q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d5q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d6q1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d6q1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d6qy",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d6qy",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d6qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d6qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d6q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d6q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d7q1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d7q1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d7qy",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d7qy",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d7qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d7qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d7q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d7q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d8q1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d8q1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d8qy",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d8qy",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d8qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d8qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "replica lowers x degree d8q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "noninvariant principal ideal not stable d8q(y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "invariant ideal genuinely stable y",
+      "passed": true
+    },
+    {
+      "name": "invariant ideal genuinely stable y**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "invariant ideal genuinely stable (y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e2hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e2hy - 1",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e2hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e2hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant branch admits regular replica lift e2",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e2hy - 1",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e2hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler lift preserves nonconstant discriminant e2",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler regular lift relation e2",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e3hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e3hy - 1",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e3hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e3hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant branch admits regular replica lift e3",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e3hy - 1",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e3hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler lift preserves nonconstant discriminant e3",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler regular lift relation e3",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e4hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e4hy - 1",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e4hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e4hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant branch admits regular replica lift e4",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e4hy - 1",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e4hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler lift preserves nonconstant discriminant e4",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler regular lift relation e4",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e5hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e5hy - 1",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e5hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e5hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant branch admits regular replica lift e5",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e5hy - 1",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e5hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler lift preserves nonconstant discriminant e5",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler regular lift relation e5",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e6hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e6hy - 1",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e6hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e6hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant branch admits regular replica lift e6",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e6hy - 1",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e6hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler lift preserves nonconstant discriminant e6",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler regular lift relation e6",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e7hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e7hy - 1",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e7hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e7hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant branch admits regular replica lift e7",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e7hy - 1",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e7hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler lift preserves nonconstant discriminant e7",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler regular lift relation e7",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e8hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e8hy - 1",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e8hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e8hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant branch admits regular replica lift e8",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e8hy - 1",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e8hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace connection matrix e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic discriminant e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "determinant connection identity e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic connection trace e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving branch has polar regular-lift obstruction e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis trace connection e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "changed basis determinant retains discriminant e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler lift preserves nonconstant discriminant e8",
+      "passed": true
+    },
+    {
+      "name": "nonLND Euler regular lift relation e8",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e2hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e2hx + y**2q1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e2hx + y**2qy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e2hx + y**2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e2hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e2hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e2q1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e2qy",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e2hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e2hx*yq1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e2hx*yqy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e2hx*yqy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e3hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e3hx + y**2q1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e3hx + y**2qy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e3hx + y**2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e3hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e3hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e3q1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e3qy",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e3qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e3hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e3hx*yq1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e3hx*yqy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e3hx*yqy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e4hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e4hx + y**2q1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e4hx + y**2qy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e4hx + y**2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e4hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e4hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e4q1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e4qy",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e4qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e4hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e4hx*yq1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e4hx*yqy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e4hx*yqy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e5hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e5hx + y**2q1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e5hx + y**2qy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e5hx + y**2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e5hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e5hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e5q1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e5qy",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e5qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e5hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e5hx*yq1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e5hx*yqy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e5hx*yqy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e6hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e6hx + y**2q1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e6hx + y**2qy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e6hx + y**2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e6hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e6hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e6q1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e6qy",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e6qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e6hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e6hx*yq1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e6hx*yqy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e6hx*yqy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e7hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e7hx + y**2q1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e7hx + y**2qy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e7hx + y**2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e7hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e7hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e7q1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e7qy",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e7qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e7hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e7hx*yq1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e7hx*yqy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e7hx*yqy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e8hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e8hx + y**2q1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e8hx + y**2qy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e8hx + y**2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e8hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e8hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e8q1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e8qy",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e8qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e8hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e8hx*yq1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e8hx*yqy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e8hx*yqy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e9hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e9hx + y**2",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e9hx + y**2q1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e9hx + y**2qy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e9hx + y**2qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e9hy - 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e9hy - 1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e9q1",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e9qy",
+      "passed": true
+    },
+    {
+      "name": "invariant cyclic module connection relation e9qy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic trace defect constant unit summand e9hx*y",
+      "passed": true
+    },
+    {
+      "name": "cyclic reduced support block invertible e9hx*y",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e9hx*yq1",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e9hx*yqy",
+      "passed": true
+    },
+    {
+      "name": "moving cyclic module connection obstructed e9hx*yqy**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "packet annihilator is reduced lcm",
+      "passed": true
+    },
+    {
+      "name": "packet connection relation fails at first component",
+      "passed": true
+    },
+    {
+      "name": "packet connection relation fails at second component",
+      "passed": true
+    },
+    {
+      "name": "generic symmetric connection size2",
+      "passed": true
+    },
+    {
+      "name": "generic symmetric determinant size2",
+      "passed": true
+    },
+    {
+      "name": "generic symmetric connection size3",
+      "passed": true
+    },
+    {
+      "name": "generic symmetric determinant size3",
+      "passed": true
+    },
+    {
+      "name": "generic symmetric connection size4",
+      "passed": true
+    },
+    {
+      "name": "generic symmetric determinant size4",
+      "passed": true
+    },
+    {
+      "name": "generic symmetric connection size5",
+      "passed": true
+    },
+    {
+      "name": "generic symmetric determinant size5",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k-1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k0ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k0ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k0ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k0ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k5ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k5ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k5ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k5ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k6ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k6ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k6ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k6ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k7ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k7ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k7ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e2k7ell3",
+      "passed": true
+    },
+    {
+      "name": "trace does not commute with source translation e2",
+      "passed": true
+    },
+    {
+      "name": "Laurent critical fibre has unit inverse e2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k-1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k0ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k0ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k0ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k0ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k5ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k5ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k5ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k5ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k6ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k6ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k6ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k6ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k7ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k7ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k7ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e3k7ell3",
+      "passed": true
+    },
+    {
+      "name": "trace does not commute with source translation e3",
+      "passed": true
+    },
+    {
+      "name": "Laurent critical fibre has unit inverse e3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k-1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k0ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k0ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k0ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k0ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k5ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k5ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k5ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k5ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k6ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k6ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k6ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k6ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k7ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k7ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k7ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e4k7ell3",
+      "passed": true
+    },
+    {
+      "name": "trace does not commute with source translation e4",
+      "passed": true
+    },
+    {
+      "name": "Laurent critical fibre has unit inverse e4",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k-1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k0ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k0ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k0ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k0ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k5ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k5ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k5ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k5ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k6ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k6ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k6ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k6ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k7ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k7ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k7ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e5k7ell3",
+      "passed": true
+    },
+    {
+      "name": "trace does not commute with source translation e5",
+      "passed": true
+    },
+    {
+      "name": "Laurent critical fibre has unit inverse e5",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k-1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k0ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k0ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k0ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k0ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k5ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k5ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k5ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k5ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k6ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k6ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k6ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k6ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k7ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k7ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k7ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e6k7ell3",
+      "passed": true
+    },
+    {
+      "name": "trace does not commute with source translation e6",
+      "passed": true
+    },
+    {
+      "name": "Laurent critical fibre has unit inverse e6",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k-1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k0ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k0ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k0ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k0ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k1ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k1ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k1ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k1ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k2ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k2ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k2ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k2ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k3ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k3ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k3ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k3ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k4ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k4ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k4ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k4ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k5ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k5ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k5ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k5ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k6ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k6ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k6ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k6ell3",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k7ell0",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k7ell1",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k7ell2",
+      "passed": true
+    },
+    {
+      "name": "exact finite trace divergence e7k7ell3",
+      "passed": true
+    },
+    {
+      "name": "trace does not commute with source translation e7",
+      "passed": true
+    },
+    {
+      "name": "Laurent critical fibre has unit inverse e7",
+      "passed": true
+    },
+    {
+      "name": "actual source translation has zero target divergence",
+      "passed": true
+    },
+    {
+      "name": "exact divergence identity actual positive control 1",
+      "passed": true
+    },
+    {
+      "name": "exact divergence identity actual positive control x",
+      "passed": true
+    },
+    {
+      "name": "exact divergence identity actual positive control y",
+      "passed": true
+    },
+    {
+      "name": "exact divergence identity actual positive control x*y",
+      "passed": true
+    },
+    {
+      "name": "exact divergence identity actual positive control x**2 + y**3",
+      "passed": true
+    },
+    {
+      "name": "exact divergence identity actual positive control (x + y**2)*(y + (x + y**2)**2)",
+      "passed": true
+    },
+    {
+      "name": "written scope retains EVERY polynomial source frame",
+      "passed": true
+    },
+    {
+      "name": "written scope retains B intersect C[y]=C",
+      "passed": true
+    },
+    {
+      "name": "written scope retains R tensor_B (Lambda/S)",
+      "passed": true
+    },
+    {
+      "name": "written scope retains T=R times T_other",
+      "passed": true
+    },
+    {
+      "name": "written scope retains D_R(G)=M*G+G*M^t",
+      "passed": true
+    },
+    {
+      "name": "written scope retains The lift itself was NOT assumed locally nilpotent",
+      "passed": true
+    },
+    {
+      "name": "written scope retains The two requests are different",
+      "passed": true
+    },
+    {
+      "name": "written scope retains No automatic ordinary-codifferent membership",
+      "passed": true
+    },
+    {
+      "name": "written scope retains Tr(delta f)=delta Tr(f)",
+      "passed": true
+    },
+    {
+      "name": "written scope retains regular-base projective-dimension formula",
+      "passed": true
+    },
+    {
+      "name": "written scope retains Ann_R(M)=H(P,Q)*R",
+      "passed": true
+    },
+    {
+      "name": "written scope retains M admits NO D_R-connection",
+      "passed": true
+    },
+    {
+      "name": "written scope retains It need not be locally nilpotent",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists PLINTH_IDEALS_AND_INVARIANT_REPLICA_EXTENSION.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists REDUCED_BRANCH_PAIRING_AND_SIXTH_MOMENT_DEFECT.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists LOGARITHMIC_TRACE_DEFECT_AND_NON_DENSE_DERIVATIVE_DOMAINS.md",
+      "passed": true
+    }
+  ],
+  "proof_sha256": "d09e08d606847546b5f1863b7a11296c73e1e3d9f26ef59dd7a99741f7e3bb7f",
+  "checker_sha256": "9e540affb4564e14123369246f1e9e8443d15906ff4203522bf5a9a766074c76",
+  "retained_inputs": [
+    {
+      "path": "DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md",
+      "sha256": "57e96760cbb12f8fa6a7bb6e163260c7463c52ced35a174c93dc198db1e66c09"
+    },
+    {
+      "path": "CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "sha256": "9284117aeb73df6331b0b7235a4bd9a713a9542666c45d44561c89739e77f1c8"
+    },
+    {
+      "path": "TRACE_LINKING_HALF_RAMIFICATION_AND_CUBIC_MULTIPLICATION.md",
+      "sha256": "25b988e37b87bc9e425cc190fcce7fefb4c309ce5be0abd884b808861b5a7e69"
+    },
+    {
+      "path": "CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md",
+      "sha256": "da98e9b38b2958bc5bf810776122fd58138b6bfed4bbe1d6d205a1f19f2fcdf8"
+    },
+    {
+      "path": "PLINTH_IDEALS_AND_INVARIANT_REPLICA_EXTENSION.md",
+      "sha256": "c12abba1704e3b5287f452b9e3eb758a771207b036d4995fa84335284e4b2d8d"
+    },
+    {
+      "path": "REDUCED_BRANCH_PAIRING_AND_SIXTH_MOMENT_DEFECT.md",
+      "sha256": "9a0826fe9b75ea7d7f202230a4740b0b016b8fe1a2c88e1f01f1a295b34c6051"
+    },
+    {
+      "path": "LOGARITHMIC_TRACE_DEFECT_AND_NON_DENSE_DERIVATIVE_DOMAINS.md",
+      "sha256": "21a0279a423b498c94069c58542f130d188b8ed17900ea8c439ea8829878b3c4"
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "actual_target_polynomial_invariant_forces_inverse": true,
+    "finite_source_basechange_trace_and_diagonal_factor": true,
+    "regular_trace_connection_preserves_discriminant": true,
+    "noninverse_no_regular_source_replica_lift_to_basechange": true,
+    "source_basechanged_trace_defect_admits_no_replica_connection": true,
+    "lift_itself_assumed_LND": false,
+    "original_S_replica_extension_identified_with_basechange": false,
+    "automatic_codifferent_membership_proved": false,
+    "surviving_fold_family_excluded": false
+  },
+  "assurance": "Internal written proof and exact controls. Branched covers and Laurent maps are scoped controls, not plane Keller counterexamples. No formal verification or external human review."
+}

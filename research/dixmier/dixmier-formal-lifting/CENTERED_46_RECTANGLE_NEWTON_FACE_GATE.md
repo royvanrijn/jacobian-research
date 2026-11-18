@@ -19,6 +19,25 @@ centered monomials. The extra subprincipal gate is
 then gives \(q_{11,5}=0\). These are Weyl-symbol coefficients;
 in normal PBW form the corresponding coefficients are 16 and 36.
 
+## Literature context and the role of this rectangle
+
+Guccione--Guccione--Valqui, [arXiv:1111.6100v3](https://arxiv.org/abs/1111.6100v3),
+Corollary 7.4 on printed page 42, gives a lower bound \(B>15\),
+where \(B\) is the minimum gcd of the **total degrees** over
+counterexamples. The [cached source](sources/guccione-guccione-valqui-1111.6100v3.pdf)
+and [selected inspection record](sources/guccione-guccione-valqui-1111.6100v3-source-audit.json)
+fix that scope. The present corners have total degrees \(12,18\)
+and gcd \(6\). They are a local method/control case, not a proposed
+new counterexample beyond that published bound.
+
+For general coprime \(n,m\), the gcd of the proportional corners' total
+degrees is \(d+l\). In the one-root ratio-two family \(d=2l\),
+this is \(3l\); exceeding 15 requires \(l\ge6\). Thus the first
+larger tests are substantially higher differential-order cases.
+The selected source statement and its final table were inspected;
+its full earlier proof dependencies are not imported by this note.
+The local necessary-condition proof below is independent.
+
 ## Polynomial coefficient vanishings
 
 Independently of this extra subprincipal gate, (1) forces
@@ -117,5 +136,5 @@ allowed rectangle monomial at each face and verifies all displayed
 polynomial identities with independent Fraction arithmetic.
 [The receipt](centered_46_newton_face_controls.json) pins the note
 and checker. The result is scoped to (1), with the stated extra
-subprincipal gate only for (5); no source theorem, old proof or
-shared metadata is changed.
+subprincipal gate only for (5). No source theorem is imported as a
+premise of this necessary-condition calculation.

@@ -1,0 +1,297 @@
+{
+  "status": "passed",
+  "coefficient_field": "QQ",
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "original_source_controls": {
+    "fixtures": 3,
+    "orders": [
+      1,
+      7
+    ],
+    "exact_comparisons": 21
+  },
+  "sharp_original_tail_controls": {
+    "marker": "L20(S)*sum_{j=0}^5 (-1)^j He_{2j}(Y)/(2^j*j!)",
+    "original_spatial_degree": 50,
+    "Gamma_orthogonality_orders": [
+      0,
+      20
+    ],
+    "Gaussian_evaluation_orders": [
+      0,
+      10
+    ],
+    "nonzero_tenth_marked_moment": "20!*bb^10",
+    "sharp_uniform_marked_tail": 11,
+    "exact_phase_nilpotence_index": 11
+  },
+  "generators_sha256": "f3df499b441e5e69f98d4157a96763eff87ad4b9773efbe0a06856d3c2882a7e",
+  "groebner_superset": {
+    "rows": 131,
+    "S_pairs_divided": 8126,
+    "coprime_S_pairs": 389,
+    "hilbert": [
+      1,
+      5,
+      14,
+      29,
+      49,
+      71,
+      90,
+      100,
+      95,
+      70,
+      22,
+      0
+    ],
+    "quotient_dimension": 546,
+    "degree10_standard_monomials": [
+      [
+        1,
+        1,
+        1,
+        0,
+        7
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        7
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        8
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        8
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        8
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        9
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        8
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        7
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        7
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        8
+      ],
+      [
+        0,
+        1,
+        0,
+        2,
+        7
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        8
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        9
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        8
+      ],
+      [
+        0,
+        0,
+        1,
+        2,
+        7
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        8
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        9
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        7
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        8
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        9
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    ],
+    "nonzero_nilpotence_witness": "bb^10"
+  },
+  "nonzero_macaulay_minors": [
+    {
+      "degree": 2,
+      "minor_size": 1,
+      "determinant_mod_prime": 15,
+      "quotient_dimension_upper_bound": 14
+    },
+    {
+      "degree": 3,
+      "minor_size": 6,
+      "determinant_mod_prime": 28534,
+      "quotient_dimension_upper_bound": 29
+    },
+    {
+      "degree": 4,
+      "minor_size": 21,
+      "determinant_mod_prime": 20175,
+      "quotient_dimension_upper_bound": 49
+    },
+    {
+      "degree": 5,
+      "minor_size": 55,
+      "determinant_mod_prime": 8495,
+      "quotient_dimension_upper_bound": 71
+    },
+    {
+      "degree": 6,
+      "minor_size": 120,
+      "determinant_mod_prime": 27015,
+      "quotient_dimension_upper_bound": 90
+    },
+    {
+      "degree": 7,
+      "minor_size": 230,
+      "determinant_mod_prime": 18918,
+      "quotient_dimension_upper_bound": 100
+    },
+    {
+      "degree": 8,
+      "minor_size": 400,
+      "determinant_mod_prime": 30804,
+      "quotient_dimension_upper_bound": 95
+    },
+    {
+      "degree": 9,
+      "minor_size": 645,
+      "determinant_mod_prime": 12475,
+      "quotient_dimension_upper_bound": 70
+    },
+    {
+      "degree": 10,
+      "minor_size": 979,
+      "determinant_mod_prime": 2364,
+      "quotient_dimension_upper_bound": 22
+    },
+    {
+      "degree": 11,
+      "minor_size": 1365,
+      "determinant_mod_prime": 9437,
+      "quotient_dimension_upper_bound": 0
+    }
+  ],
+  "least_prefix_separator": {
+    "nonzero_entries": 494,
+    "annihilated_degree10_products": 1286,
+    "moment10_pairing": "1",
+    "least_generating_prefix": 10
+  },
+  "proved_infinite_tail": "moment degree n>=11 lies in m^11 subset I10",
+  "ideal_equality": "I_infinity=I10 globally",
+  "nilpotence_index": 11,
+  "quotient_length": 546,
+  "least_generating_prefix": 10,
+  "rejection_controls": [
+    "wrong_source",
+    "corrupt_basis",
+    "altered_dual",
+    "duplicate_minor_row"
+  ],
+  "sha256": {
+    "GAUSSIAN_ZERO_BOUNDARY_QUINTIC_MOMENT_IDEAL.md": "48cbd8a90c5ceee2b8d188ab15a359f60f857239cda915d884840e1bf4347d63",
+    "verify_gaussian_zero_boundary_quintic_moment_ideal.py": "93f7ec402a2ced133d18a6c7088b7a6f0b5ad282d04cc7dcc8c90698e8070093",
+    "gaussian_zero_boundary_quintic_moment_ideal_certificate.json.gz": "cf92f9b8493bd65b07a9d0963bd520971c5f800f2d70a478f3ad82d155d97974",
+    "gaussian_zero_boundary_quintic_macaulay_minors.json": "4e93bb796cdcb12b6c4311c66a33f1eb790c3444a641aba485ef9cdf2cb66a87"
+  },
+  "elapsed_seconds": 142.648,
+  "scope": "Complete finite certificate replay for the stated homogeneous zero-boundary quintic slice; no ideal-prefix extrapolation, GB generation, RREF, or runtime scratch dependency.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

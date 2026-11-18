@@ -11,7 +11,7 @@
   "pdf": "paper.pdf",
   "source_bundle": "source.zip",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "Written proof of both binary identities and exact sumset consequences; new local arguments and full NumPy/standard-library finite replays are recorded in verification.json. The subgroup-orbit and uniform arithmetic hypotheses are explicit. No external specialist review, formal verification or established novelty is claimed; the current PDF retains the balanced experiment; the linked canonical research proves eventual balanced coverage with no effective onset or complete finite exception classification.",
+  "verification": "Written proof of both binary identities and exact sumset consequences; new local arguments and full NumPy/standard-library finite replays are recorded in verification.json, with canonical programs and receipts under research/arithmetic/eisenstein-restricted-prime-sums/. The subgroup-orbit and uniform arithmetic hypotheses are explicit. No external specialist review, formal verification or established novelty is claimed; the current PDF retains the balanced experiment; the linked canonical research proves eventual balanced coverage with no effective onset or complete finite exception classification.",
   "verification_record": "verification.json",
   "next_steps": [
     "Obtain specialist review of the odd-component Hecke estimate, six-point quotient at3 and the existing Jacquet-Langlands/weight-two specialization.",

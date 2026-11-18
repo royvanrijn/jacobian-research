@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "scope": "ordinary support{1,7}, all terminal N=2*7^r+c,c0..6,r>=0; uniform formal proof plus complete finite certificates",
+  "all_index_gap_six_SFC_claimed": false,
+  "Gamma_shape_extension_claimed": false,
+  "controls": {
+    "uniform_all_depth_seed_extractions": 30,
+    "all_universal_matrix_entries": 150,
+    "all_exact_maximal_minors": 30,
+    "explicit_necessary_ideal_witnesses": 13,
+    "complete_orbit_states_transitions_and_target_gcds": 9780,
+    "complete_orbit_schema_and_returns": 20,
+    "literal_full_entry_polynomial_profiles": 300,
+    "localized_and_exceptional_rank_targets": 6,
+    "actual_moment_generator_and_localized_minor": 2,
+    "corrupted_necessary_witness_rejected": 1,
+    "corrupted_complete_orbit_rejected": 1,
+    "uniform_actual_reciprocal_trace_identities": 2,
+    "literal_full_moment_residue_polynomials": 3,
+    "two_algorithm_fixed_minus_one_packet_values": 8,
+    "uniform_packet_period_and_reference_identities": 6
+  },
+  "literal_profiles": [
+    {
+      "offset": 2,
+      "r": 1,
+      "terminal": 16,
+      "entries": 30
+    },
+    {
+      "offset": 2,
+      "r": 2,
+      "terminal": 100,
+      "entries": 30
+    },
+    {
+      "offset": 3,
+      "r": 1,
+      "terminal": 17,
+      "entries": 30
+    },
+    {
+      "offset": 3,
+      "r": 2,
+      "terminal": 101,
+      "entries": 30
+    },
+    {
+      "offset": 4,
+      "r": 1,
+      "terminal": 18,
+      "entries": 30
+    },
+    {
+      "offset": 4,
+      "r": 2,
+      "terminal": 102,
+      "entries": 30
+    },
+    {
+      "offset": 5,
+      "r": 1,
+      "terminal": 19,
+      "entries": 30
+    },
+    {
+      "offset": 5,
+      "r": 2,
+      "terminal": 103,
+      "entries": 30
+    },
+    {
+      "offset": 6,
+      "r": 1,
+      "terminal": 20,
+      "entries": 30
+    },
+    {
+      "offset": 6,
+      "r": 2,
+      "terminal": 104,
+      "entries": 30
+    }
+  ],
+  "source_sha256": {
+    "GAP_SIX_TWO_DIGIT_LEADING_TWO_SFC.tex": "303013baabd9b9cf733dfd0abfeb85375797a0bee86c6958ee28b79cddcde65c",
+    "gap_six_two_digit_leading_two_sfc.py": "e4ef52302361649fb59399c81ae2866382069e8c85c35afcf7def29ebc3c6bdf",
+    "gap_six_two_digit_leading_two_certificate.json": "5cc95c99e20cf671ee3d9d1b41041b00a8d549db53919bc0ed3adfef6929b953",
+    "GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex": "7c8b7be9cd416803f0d43e0f76248cb5006f94ffa9feafc5295115d9cf61ffc6",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+    "gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c",
+    "GAP_SIX_SCALED_POWER_PLUS_ONE_SFC.tex": "5b74a52031f6bc2f43c5acc9feac50ebc616972c51c0eee923797ab0e3b6ef55",
+    "GAP_SIX_SMALL_OFFSET_FAMILIES.tex": "1b83ed6d1ea139e40de35f2b236d179e743bbe2202b555deea5dad547db3620b"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/gap_six_two_digit_leading_two_sfc.py"
+}

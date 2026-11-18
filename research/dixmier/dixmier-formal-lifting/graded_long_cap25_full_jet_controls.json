@@ -1,0 +1,783 @@
+{
+  "claim": "No arbitrary-parity graded canonical Long scalar full jet of spatial degree25 through h5",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Fraction coefficient identities, explicit ideal reductions, bare modular minors, rational functionals and one separate normal-PBW positive control"
+  },
+  "cap": 25,
+  "parity": "unrestricted",
+  "prime": 1000003,
+  "first_kernel": {
+    "counts": [
+      102,
+      141,
+      171,
+      127
+    ],
+    "unknowns": 541,
+    "rank_Q": 532,
+    "independent_kernels": 9,
+    "minor_det_modp": 930421,
+    "independence_det_Q": "-109117440",
+    "new_direction": "(R*S)^2; no cap-growing normalization used"
+  },
+  "h3": {
+    "F2_unknowns": 391,
+    "rank_Q": 387,
+    "minor_det_modp": 88338,
+    "necessity_functional_supports": [
+      369,
+      71
+    ],
+    "necessary_sufficient_over_fields": "d^2-250df+35625f^2=0; e*eta=0",
+    "full_F2_ideal_reduction_verified": true,
+    "all_four_kernel_parameters_kept": true
+  },
+  "h4": {
+    "F3_unknowns": 271,
+    "rank_Q": 270,
+    "minor_det_modp": 167431,
+    "cube_functional_supports": [
+      217,
+      49
+    ],
+    "forced_over_fields": "f=e=d=0",
+    "factor_functional_supports": [
+      209,
+      209,
+      209
+    ],
+    "ell": "a-544c/27",
+    "K": "976c^2+5184c*eta+27delta",
+    "remaining_conditions": [
+      "ell*K=0",
+      "(c+36eta)*K=0",
+      "864gamma*eta=ell^3"
+    ],
+    "full_F3_kernel": "w*K_R6"
+  },
+  "h5": {
+    "F4_counts": [
+      29,
+      47,
+      62,
+      40
+    ],
+    "all_F4_unknowns": 178,
+    "field_strata": {
+      "A_nonzero_h": {
+        "eta_nonzero": true,
+        "coordinate_order": [
+          "b",
+          "c",
+          "ell",
+          "eta",
+          "u",
+          "v",
+          "w"
+        ],
+        "F3_blocks": 21,
+        "F3_coefficients": 664,
+        "h5_RHS_monomials": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            -1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            5,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            6,
+            -2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            4,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            4,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "h5_rows": 1446,
+        "functional_support": 142,
+        "all178columns_annihilated": true,
+        "constant_evaluation": "1",
+        "all_nonconstant_evaluations": "0"
+      },
+      "A_h_zero": {
+        "eta_nonzero": false,
+        "coordinate_order": [
+          "b",
+          "c",
+          "gamma",
+          "unused",
+          "u",
+          "v",
+          "w"
+        ],
+        "F3_blocks": 8,
+        "F3_coefficients": 259,
+        "h5_RHS_monomials": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "h5_rows": 1446,
+        "functional_support": 138,
+        "all178columns_annihilated": true,
+        "constant_evaluation": "1",
+        "all_nonconstant_evaluations": "0"
+      },
+      "B_gamma_zero": {
+        "eta_nonzero": false,
+        "coordinate_order": [
+          "b",
+          "unused",
+          "delta",
+          "eta",
+          "u",
+          "v",
+          "w"
+        ],
+        "F3_blocks": 8,
+        "F3_coefficients": 231,
+        "h5_RHS_monomials": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "h5_rows": 1446,
+        "functional_support": 139,
+        "all178columns_annihilated": true,
+        "constant_evaluation": "1",
+        "all_nonconstant_evaluations": "0"
+      },
+      "B_h_zero": {
+        "eta_nonzero": false,
+        "coordinate_order": [
+          "b",
+          "unused",
+          "gamma",
+          "delta",
+          "u",
+          "v",
+          "w"
+        ],
+        "F3_blocks": 4,
+        "F3_coefficients": 67,
+        "h5_RHS_monomials": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "h5_rows": 1446,
+        "functional_support": 140,
+        "all178columns_annihilated": true,
+        "constant_evaluation": "1",
+        "all_nonconstant_evaluations": "0"
+      }
+    },
+    "all_strata_contradiction": "0=1",
+    "Laurent_eta_nonzero_branch_and_eta_zero_strata_kept": true,
+    "Pi3_F1_F1_included": true,
+    "corrupted_four_functionals_rejected": true
+  },
+  "normal_PBW_positive_control": {
+    "stratum": "A_nonzero_h",
+    "coordinate_order": [
+      "b",
+      "c",
+      "ell",
+      "eta",
+      "u",
+      "v",
+      "w"
+    ],
+    "parameter_values": [
+      "0",
+      "0",
+      "1",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "source_parameters": {
+      "a": "1",
+      "gamma": "1/864",
+      "delta": "0"
+    },
+    "all_six_relations_through_h4": true,
+    "normal_operator_terms": [
+      2,
+      126,
+      438,
+      43
+    ],
+    "scope": "One finite convention/family control; universal proof remains the exact parameter identities."
+  },
+  "hashes": {
+    "GRADED_LONG_CAP25_FULL_JET_OBSTRUCTION.md": "a2732760399921ef854d8d7224815bbed383841f1e11cd6d0d9e7e8b40436e82",
+    "check_graded_long_cap25_full_jet.py": "aa34a095e5a979056a4e3852d366d3e26ff3cf88faeec003d49f4c1077996d6e",
+    "graded_long_cap25_full_jet_witness.json": "ad37fdf1e423f57d5dc9fdfe1a69082a89670129208136ded83608711659f3a0",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_graded_long_cap23_full_jet.py": "0069e11af58e2b3a928ce1d77aaa0d7866e86cbcf028fdbbe63b884529d4d867",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete FIELD classification for the stated cap25 grading, arbitrary parity, only uniform XQ/RS first gauges. Both complex conic branches retained until exact cube obstruction; all image coefficients allowed. No nonreduced ideal equality, evenization, cap26 conclusion, full nongraded-lift or DC1/DC2 theorem.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

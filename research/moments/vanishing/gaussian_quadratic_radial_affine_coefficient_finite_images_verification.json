@@ -1,0 +1,251 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checks": {
+    "source": {
+      "S_exact_relations": 5,
+      "retained_boundary_Y_and_t_connections": true,
+      "full_triangular_connection": "nabla u=dF*u-dx*e_B; nabla e_B=dG*e_B",
+      "flatness": "all four matrix entries exact",
+      "endpoint_leading_sign": "-r/(H-r)"
+    },
+    "original": {
+      "phases": 4,
+      "original_balanced_markers": 6,
+      "moment_orders": [
+        0,
+        4
+      ],
+      "exact_original_controls": 300,
+      "common_A_H_roots_and_repeated_H_roots": true,
+      "negative_control": "D_S(1) has endpoint -1 at t=0 and is not declared exact"
+    },
+    "sectors": {
+      "closed_cover": "[-pi/6,7pi/6] and [-7pi/6,pi/6]",
+      "strict_margin": "pi/12 inside both Gaussian asymptotic sectors",
+      "positive_quadratic_bound": "sin(pi/12)",
+      "positive_linear_bound": "sin(pi/24)",
+      "exact_jump": "i*sqrt(pi)*exp(-x^2)",
+      "deck_descent": "J_minus(-x)=-J_plus(x), compensating the half-density sign",
+      "ODE": "J'=-2xJ-1",
+      "unrestricted_bound_proof": "rotated convergent Gaussian integral and integration by parts in written source"
+    },
+    "critical_and_volume": {
+      "leading_coefficient_fixtures": [
+        [
+          2,
+          "affine",
+          4
+        ],
+        [
+          2,
+          "constant",
+          3
+        ],
+        [
+          3,
+          "affine",
+          6
+        ],
+        [
+          3,
+          "constant",
+          5
+        ],
+        [
+          4,
+          "affine",
+          8
+        ],
+        [
+          4,
+          "constant",
+          7
+        ],
+        [
+          5,
+          "affine",
+          10
+        ],
+        [
+          5,
+          "constant",
+          9
+        ],
+        [
+          6,
+          "affine",
+          12
+        ],
+        [
+          6,
+          "constant",
+          11
+        ]
+      ],
+      "unrestricted_leading_formulas": "(1-2k)*alpha*h_k^2 and -2k*beta*h_k^2, written degree argument",
+      "bounded_Y_endpoint_order": "1/2 in Y, or 1/2+v(V) on V^2=A",
+      "infinite_Y_endpoint_order": "1+(k-1)N>0 for all k>=2,N>0",
+      "absolute_top_degrees": [
+        "2k (constant A)",
+        "4k-2 (affine A, V^2=A)"
+      ],
+      "descending_absolute_tail_order": "1/2+1/D>0",
+      "negative_control": "k=1 affine A has nonunit leading coefficient -4r"
+    },
+    "finite_original_markers": [
+      {
+        "c": 0,
+        "b": 0,
+        "gamma": 2,
+        "degree_Y_R": 1,
+        "R": "Z^2Y+Z^3W",
+        "original_moment_orders": [
+          0,
+          6
+        ],
+        "markers": [
+          {
+            "marker": "1",
+            "normalized_period": "1",
+            "valid_degree_bound": 0
+          },
+          {
+            "marker": "z",
+            "normalized_period": "0",
+            "valid_degree_bound": 0
+          },
+          {
+            "marker": "w",
+            "normalized_period": "0",
+            "valid_degree_bound": 0
+          },
+          {
+            "marker": "y",
+            "normalized_period": "0",
+            "valid_degree_bound": 0
+          },
+          {
+            "marker": "w**2",
+            "normalized_period": "6*t",
+            "valid_degree_bound": 1
+          },
+          {
+            "marker": "w**3",
+            "normalized_period": "0",
+            "valid_degree_bound": 1
+          },
+          {
+            "marker": "w**2*y",
+            "normalized_period": "2*t",
+            "valid_degree_bound": 1
+          }
+        ]
+      },
+      {
+        "c": 3,
+        "b": 2,
+        "gamma": 2,
+        "degree_Y_R": 1,
+        "R": "Z^2Y+Z^3W",
+        "original_moment_orders": [
+          0,
+          6
+        ],
+        "markers": [
+          {
+            "marker": "1",
+            "normalized_period": "1",
+            "valid_degree_bound": 0
+          },
+          {
+            "marker": "z",
+            "normalized_period": "0",
+            "valid_degree_bound": 1
+          },
+          {
+            "marker": "w",
+            "normalized_period": "0",
+            "valid_degree_bound": 1
+          },
+          {
+            "marker": "y",
+            "normalized_period": "2*t",
+            "valid_degree_bound": 1
+          },
+          {
+            "marker": "w**2",
+            "normalized_period": "4*t**2 + 6*t",
+            "valid_degree_bound": 4
+          },
+          {
+            "marker": "w**3",
+            "normalized_period": "0",
+            "valid_degree_bound": 5
+          },
+          {
+            "marker": "w**2*y",
+            "normalized_period": "8*t**3 + 12*t**2 + 2*t",
+            "valid_degree_bound": 5
+          }
+        ]
+      }
+    ],
+    "boundary_support": {
+      "5": [
+        "S^0Y^0",
+        "S^0Y^1",
+        "S^1Y^0",
+        "S^1Y^1",
+        "S^1Y^2",
+        "S^1Y^3",
+        "S^2Y^0",
+        "S^2Y^1"
+      ],
+      "6": [
+        "S^0Y^0",
+        "S^0Y^1",
+        "S^1Y^0",
+        "S^1Y^1",
+        "S^1Y^2",
+        "S^1Y^3",
+        "S^1Y^4",
+        "S^2Y^0",
+        "S^2Y^1",
+        "S^2Y^2",
+        "S^3Y^0"
+      ]
+    },
+    "primary_manifest_consistency": {
+      "status": "passed",
+      "sources": 3
+    }
+  },
+  "sha256": {
+    "research/moments/vanishing/verify_gaussian_quadratic_radial_affine_coefficient_finite_images.py": "d69d25f91ded16ec23750b5b5ff3eaa0187acf50346b77d4dcbea554c9769949",
+    "research/moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md": "6492beff95ab9082a49058b0805060179111a1162bf6d876de4d9a2b98baa85b",
+    "research/moments/vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
+    "research/moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+    "research/moments/vanishing/GAUSSIAN_INVARIANT_CORE_BOUNDARY_REDUCTION.md": "af83621c99fec04b27c48ee1e76d184052ea01ba8b79fb160c2aa1996f68174a",
+    "research/moments/vanishing/GAUSSIAN_AFFINE_RADIAL_INVARIANT_CORE_FINITE_IMAGES.md": "80f51332276c2361b224a501ec595e8a592b05bf460a1bd5b5667c575571654b",
+    "research/moments/vanishing/GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md": "e9b41f12cc515cf16336a3b3d41b5d665337be38cc0cb549cf0986cedd400825",
+    "research/moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+    "research/moments/vanishing/GAUSSIAN_SAFE_RECOMPOSITION_CLASSIFICATION.md": "079ee136e56674507a7d775815ba71dcd9ced518dc3fa61964e5f4a0d1748285",
+    "research/moments/vanishing/MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc",
+    "unpublished/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
+    "unpublished/gaussian-boundary/seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a",
+    "unpublished/gaussian-boundary/polynomial_stationary_balls.tex": "75a0afece58c9f0f91be3b320a32916a79ee9f28d03d72430b3a6ca4f1dd307f",
+    "unpublished/gaussian-boundary/sources/laurent_primary_manifest.json": "9be38b06bd8e04d9992cba36f65c4207627c8e5587a5c344afdb2003ddca301d",
+    "unpublished/gaussian-boundary/sources/roucairol_formal_math0604134v2.html": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
+    "unpublished/gaussian-boundary/sources/sabbah_0706_3570v2.html": "6878d0845b69730e58c4cdc64ff32737f986c0173b4873974f650b4b9d55b71e",
+    "unpublished/gaussian-boundary/sources/hien_roucairol_2008_published.pdf": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1"
+  },
+  "scope": "Bounded exact original controls and source identities. All multiplicities, complete relative comparison/gluing, scalar polynomial normalization and unrestricted full finite-image classification use the pinned written proof; no finite-prefix extrapolation.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

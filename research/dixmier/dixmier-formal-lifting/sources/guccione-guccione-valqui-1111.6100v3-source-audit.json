@@ -1,0 +1,46 @@
+{
+  "purpose": "Selected primary-source context for choosing rectangle controls, not a new import of the full degree-bound proof.",
+  "primary_source": {
+    "authors": [
+      "Jorge A. Guccione",
+      "Juan J. Guccione",
+      "Christian Valqui"
+    ],
+    "title": "The Dixmier conjecture and the shape of possible counterexamples",
+    "arxiv": "1111.6100v3",
+    "version_date": "2013-10-30",
+    "url": "https://arxiv.org/abs/1111.6100v3",
+    "pdf_url": "https://arxiv.org/pdf/1111.6100v3",
+    "cached_file": "guccione-guccione-valqui-1111.6100v3.pdf",
+    "sha256": "b74149a7d1f2e23cabb84ff5b18ae3b9d76d9d3dd6e4d05c8c68007162e971fe",
+    "bytes": 405650,
+    "pages": 43,
+    "retrieved_utc_date": "2026-11-17"
+  },
+  "selected_inspection": [
+    "Introduction printed1-3: B is the minimum gcd of total degrees over counterexamples; the result concerns total degree, not differential order.",
+    "Corollary7.4 printed42 and its displayed finite corner table: B>15, using earlier geometric propositions."
+  ],
+  "context_arithmetic": {
+    "centered_rectangle_corners": [
+      [
+        8,
+        4
+      ],
+      [
+        12,
+        6
+      ]
+    ],
+    "total_degrees": [
+      12,
+      18
+    ],
+    "gcd_total_degrees": 6,
+    "general_coprime_n_m_formula": "gcd(total degrees (d+l)n,(d+l)m)=d+l",
+    "ratio_two_family": "d=2l, so total-degree gcd is3l and exceeds15 only for l>=6."
+  },
+  "adoption_boundary": "The selected statement and final finite table were inspected. All earlier geometric/proof dependencies were not rederived here; the bound is research context only. The independently proved centered Newton-face gate does not use it as a premise. Existing older applications of this paper remain application_unverified.",
+  "formal_verification": false,
+  "external_review": false
+}

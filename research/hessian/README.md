@@ -30,6 +30,9 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 | Exact plinth ideal and invariant-replica extension | Internal result | proved | [Source](hc4-triangular-graphs/PLINTH_IDEALS_AND_INVARIANT_REPLICA_EXTENSION.md) |
 | Logarithmic trace-defect spectrum and missing derivative jets | Internal result | proved | [Source](hc4-triangular-graphs/LOGARITHMIC_TRACE_DEFECT_AND_NON_DENSE_DERIVATIVE_DOMAINS.md) |
 | Whole root charts produce actual cyclic Keller pseudo-planes | Internal result | proved | [Source](hc4-triangular-graphs/WHOLE_ROOT_CHARTS_CREATE_CYCLIC_KELLER_PSEUDOPLANES.md) |
+| Exceptional polar folds have whole plane charts and birational curve images | Internal result | proved | [Source](hc4-triangular-graphs/EXCEPTIONAL_POLAR_FOLD_WHOLE_CHARTS_AND_BIRATIONAL_IMAGES.md) |
+| Exact entire etale completions under cyclic root transfer | Internal result | proved | [Source](hc4-triangular-graphs/CYCLIC_ROOT_TRANSFER_AND_ENTIRE_ETALE_COMPLETIONS.md) |
+| Target polynomial invariants and finite trace-transport obstruction | Internal result | proved | [Source](hc4-triangular-graphs/TARGET_INVARIANTS_AND_FINITE_TRACE_TRANSPORT_OBSTRUCTION.md) |
 
 **Computed obligations:** 11 unresolved; 3 resolved within their exact scope.
 

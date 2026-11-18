@@ -15,7 +15,7 @@ The classical meridional rank conjecture remains open. It asks whether
 $\mr(K)=b(K)$ for every knot $K\subset S^3$; the usual link formulation asks
 the same equality for links. The 2026 problem list retains it as Problem
 1.18 \cite{k3}. No general proof or classical counterexample was found in
-this search. The catalogue \texttt{sources.json} records 71 sources,
+this search. The catalogue \texttt{sources.json} records 75 sources,
 their precise claimed scope and audit depth. This is a broad map of the
 main results and recent developments, with outstanding source audits
 retained rather than an assertion of exhaustive bibliographic coverage.
@@ -195,6 +195,47 @@ volume and qualitative persistence theorem remain separate proofs;
 no sampled filling recognitions or numerical isometries are premises.
 The actual software implementations and rigorous arithmetic remain
 explicit trusted imports, with no formal or external proof assurance.
+
+The further comparison \path{PRIME_FAMILY_GEOMETRY_AND_SCOPE.tex}
+derives $H_1(\Sigma_2(K_N);\mathbb Z)=\mathbb Z/(117+366N)$
+from an integral abelianization of the fixed parent, with marked
+meridian and longitude images $5$ and $61$. Cyclicity excludes the
+nonunit Lustig--Moriah matrix gcd in every possible plat
+\cite[Proposition5.6]{lustig93}, even when a prime cube divides the
+determinant. Dinkelbach--Leeb's isometric-action theorem \cite{dl09},
+applied to the actual covering involution, and Kojima's
+cone-complement theorem \cite[Theorem1.2.1]{kojima98} also prove
+that every actual knot exterior is hyperbolic. The actual order-two
+orbifold groups have torsion-generator rank four: every nontrivial
+torsion element is a meridian conjugate, so the $A_8$ double-
+transposition quotient requires four. This gives a bridge lower bound
+of four for any link whose orbifold group surjects onto one of them,
+without a marking or parity hypothesis on that epimorphism.
+The remaining prior-construction boundaries include unit-gcd
+geometric generalized-Montesinos descriptions, arbitrary meridionally
+tame base knots, and the general Fox-ideal matrix rank method.
+
+
+The exact algebraic follow-up \path{UNIFORM_FOX_IDEAL_MODEL_BARRIERS.tex}
+examines the general Fox-ideal criterion \cite[Theorem3.5,pp.197--198]{moriah}
+in the literal four-top-meridian presentation. Its first relator is
+unchanged by every terminal twist. An integer Laurent identity makes
+the scalar image ideal the whole ring, excluding scalar models over
+every commutative ring. A separate explicit identity
+$X D_{00}+Y D_{01}=1$ in $\mathbb F_2[A_8]$ excludes all models through
+that fixed quotient in every dimension, with no semisimplicity or
+simple-module classification. Integer lifting and a regular
+multiplication determinant give a nonzero odd $d$ in the integral
+image ideal: every unital model through this quotient must have
+positive odd characteristic dividing $|d|$. Thus characteristic-zero
+models through this quotient fail as well. Its value and possible odd
+prime divisors remain uncomputed. Nilpotent lifts of two and local
+models with this characteristic-two residue quotient are also
+excluded. Ordinary knot-group rank, other quotient kernels, and the
+unrestricted matrix criterion remain unresolved. Meridional tameness
+requires actual subgroup/peripheral information; neither augmentation
+deficit nor a full $A_8$ image alone determines it.
+
 
 The companion \path{ALTERNATING_TARGET_PRIME_FAMILIES.tex} gives
 unbounded prime sharp equalities using larger simple targets.
@@ -828,8 +869,31 @@ Every meridian-involution representation factors through
 $G_K/\langle\!\langle\mu^2\rangle\!\rangle$, the $\pi$-orbifold group.
 Boileau--Kitano--Nozaki explicitly formulate the stronger equality between
 bridge number and torsion-generator rank of the orbifold group for prime
-links with infinite orbifold group \cite{preorder}. Lifting a small
-generating set of the quotient need not generate the knot group.
+links with infinite orbifold group \cite[Question8.4]{preorder}.
+Their current version-three Definition1.1 requires orbifold
+epimorphisms to commute with the canonical all-meridian parity
+characters when defining $\pi$-domination; this is automatic for
+knot-source epimorphisms by Lemma2.11, but is an extra link condition.
+Their Theorem1.7 and its actual proof rule out $\pi$-domination of
+any $K_N$ or its trefoil sums by a nonzero-determinant arborescent
+link. For an arborescent knot, this excludes any abstract orbifold
+epimorphism. The four-component unlink has determinant zero and
+surjects onto every $\Gamma(K_N)$ by sending its four free
+involutions to the bridge meridians, showing that the determinant
+restriction matters. Our family has $m_2(K_N)=b(K_N)=4$ even though
+all Coxeter reflection bounds stop at three. Lifting a small
+generating set of an arbitrary quotient need not generate the knot group.
+
+For ordinary group bounds in other families, Gu--Wang--Zou's current
+version two \cite[Proposition1.3 and Corollaries2.5--2.6]{gwz26}
+uses hyperbolic JSJ pieces to bound the ranks of iterated Whitehead
+doubles. Their Lemma2.3 traces the lower-bound mechanism to
+Weidmann's Nielsen-method theorem \cite[Theorem5]{wei02}.
+Exact rank $N+2$ holds for $N$ iterated doubles of a hyperbolic
+tunnel-number-one companion. These are additional source-backed
+bounds, not ordinary-rank-four certificates for the current $K_N$.
+The actual statements and indicated proof pages were inspected;
+the full upstream Nielsen theory remains imported.
 
 Finite Coxeter quotients do not universally detect meridional rank.
 For $12a210$, an infinite triangle Coxeter quotient is sharp while no
@@ -2308,7 +2372,8 @@ Theorem 1.10 and its proof on arXiv p.~18.
 \url{https://arxiv.org/abs/2008.00763}.
 \bibitem{moriah} Moriah, Heegaard splittings of knot exteriors,
 Geometry \& Topology Monographs 12 (2007), 191--232,
-Theorems 3.6 and 4.20 (reporting Lustig--Moriah 1993).
+Theorem 3.5 with its setup on pp.~197--198, and Theorems 3.6 and 4.20
+(reporting Lustig--Moriah).
 \url{https://doi.org/10.2140/gtm.2007.12.191}.
 \bibitem{core} Silver--Traldi--Williams, Core groups,
 J. Knot Theory Ramifications 33 (2024), 2450013, introduction and
@@ -2333,8 +2398,11 @@ prime knots (2012), Theorem 1. \url{https://arxiv.org/abs/1208.4233v3}.
 \bibitem{kl} Kauffman--Lambropoulou, On the classification of rational
 tangles (2004), Theorem 1 and Lemma 2.
 \url{https://arxiv.org/abs/math/0311499v2}.
-\bibitem{preorder} Boileau--Kitano--Nozaki (2025), preprint.
-\url{https://arxiv.org/abs/2510.12372}.
+\bibitem{preorder} M. Boileau, T. Kitano and Y. Nozaki,
+A preorder on the set of links with applications to symmetric unions,
+arXiv:2510.12372v3 (19April2026), Definition1.1, Theorem1.7,
+proofp18 and Question8.4p40.
+\url{https://arxiv.org/abs/2510.12372v3}.
 \bibitem{davis25} M. W. Davis, \emph{The Geometry and Topology of
 Coxeter Groups}, second edition, Springer Monographs in Mathematics
 (2025), Section~6.12, equations~(6.32)--(6.33), Lemma~6.12.3 and
@@ -2358,6 +2426,29 @@ printedp12, proof pp17--19; ordinary cusp-length setup pp1--2.
 Geometry \& Topology 4 (2000), 431--449.
 Definition of hyperbolike p432 and Theorem6.2 p440.
 \url{https://doi.org/10.2140/gt.2000.4.431}.
+\bibitem{dl09} J. Dinkelbach and B. Leeb, Equivariant Ricci flow
+with surgery and applications to finite group actions on geometric
+3-manifolds, Geom. Topol.13 (2009),1129--1173, TheoremH,
+proofpp1166--1167. \url{https://doi.org/10.2140/gt.2009.13.1129}.
+\bibitem{kojima98} S. Kojima, Deformations of hyperbolic 3-cone-manifolds,
+J. Differential Geom.49 (1998),469--516. Retained
+arXiv:math/9809034v1, Theorem1.2.1/proofpp5--6.
+\url{https://arxiv.org/abs/math/9809034v1}.
+\bibitem{lustig93} M. Lustig and Y. Moriah, Generalized Montesinos
+knots, tunnels and $N$-torsion, Math. Ann.295 (1993),167--189.
+Original Theorem0.1p168, Definition1.2p170 and Proposition5.6p187,
+with matrix definitionsp186; official scanned pages retained.
+\url{https://doi.org/10.1007/BF01444882}.
+\bibitem{gwz26} S. Gu, J. Wang and Y. Zou, Nonembeddable contractible
+open manifolds arising from Whitehead doubling,
+arXiv:2510.06598v2 (12August2026), Proposition1.3p4/proofp8,
+Lemma2.3p7 and Corollaries2.5--2.6p9.
+\url{https://arxiv.org/abs/2510.06598v2}.
+\bibitem{wei02} R. Weidmann, The Nielsen method for groups acting
+on trees, Proc. London Math. Soc.85 (2002),93--118.
+Retained author manuscript, Theorem5p3/proofpp19--20;
+full prior Nielsen-method proof imported.
+\url{https://www.math.uni-kiel.de/algebra/de/weidmann/research/material-research/nielsen-pdf}.
 \end{thebibliography}
 }
 \end{document}

@@ -173,6 +173,14 @@ therefore do not force it away. Actual ordinary-operator reconstruction,
 string compatibility and global polynomial admission are separate
 requirements.
 
+The [centered order-(4,6) Newton-face calculation](CENTERED_46_RECTANGLE_NEWTON_FACE_GATE.md)
+provides an independent necessary-condition control at A_W=0. It
+forces a square/cube critical face but leaves the next coefficient free.
+Its total-degree gcd is 6, below the published GGV bound quoted only
+as context there; this small rectangle is not a new global-counterexample
+frontier. Generic higher-order faces and actual polynomial admission
+remain the substantive next constraints.
+
 ## Repaired indexing and a verified conditional invariance step
 
 The proof of Lemma 6.3, printed pages 70--71, first uses the order scale

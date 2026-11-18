@@ -50,7 +50,7 @@
   },
   "proof": {
     "file": "ZHEGLOV_DC1_PRIMARY_SOURCE_AUDIT.md",
-    "sha256": "98462bf89383a49268e5887919938761b0757911f6962a528d4e46be52464d0b"
+    "sha256": "45e4f5eae50653217ef73287821fd037ffb192031fe11f0ba18a6af83f31b3e7"
   },
   "independent_result": {
     "statement": "For c*g^A=g*H'-(A-1+1/d)*g'*H with c nonzero, characteristic zero, and g of degree ell with s>=2 distinct roots, g^(A-1)*rad(g) divides H, deg(H)=(A-1+1/d)*ell, d divides ell, and ell/d>=s.",
@@ -130,5 +130,22 @@
     "receipt": "scalar_gauge_admission_controls.json",
     "receipt_sha256": "0e2a799302f65bc8bad334fc8b4a1a133ee235d56a0370cc7b9481ece48c845a",
     "scope": "Formal-unit residue shifts, necessary centered corner relation, and rational scalar/matrix position-gauge admission theorems; no absolute residue-zero claim."
+  },
+  "centered_rectangle_face_control": {
+    "file": "CENTERED_46_RECTANGLE_NEWTON_FACE_GATE.md",
+    "sha256": "d2c6b82d05ee5e28d1b8954e73055352f11afd670228dd06eb240fc59315d1b4",
+    "checker": "check_centered_46_newton_face.py",
+    "checker_sha256": "3095875557bc44d37e5891c32247e8d454163b10354fa0b5c4a243743c4be69e",
+    "receipt": "centered_46_newton_face_controls.json",
+    "receipt_sha256": "532f719b2304a00a64462f717affc436759e50b2b5729bde74601eaf1ae69267",
+    "scope": "Necessary finite rectangle coefficient gates and a square/cube critical face, with the next coefficient still free. No full pair or contradiction.",
+    "literature_boundary": "The selected GGV v3 Corollary7.4 concerns gcd of total degrees. The (8,4)/(12,6) control has total-degree gcd6. No full import of the degree-bound proof is used in the independent local calculation."
+  },
+  "ggv_selected_context": {
+    "record": "guccione-guccione-valqui-1111.6100v3-source-audit.json",
+    "sha256": "dcac2339205f19e5c36a8f549599b672e48d963cf4fcc61cfd5551d5625439a6",
+    "cached_pdf": "guccione-guccione-valqui-1111.6100v3.pdf",
+    "pdf_sha256": "b74149a7d1f2e23cabb84ff5b18ae3b9d76d9d3dd6e4d05c8c68007162e971fe",
+    "scope": "Selected introduction and Corollary7.4/table inspected for context; older applications and the full proof are not independently verified here."
   }
 }

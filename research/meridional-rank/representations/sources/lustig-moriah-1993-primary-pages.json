@@ -1,0 +1,79 @@
+{
+  "schema": "retained-original-primary-page-manifest-v1",
+  "title": "Generalized Montesinos knots, tunnels and N-torsion",
+  "authors": [
+    "Martin Lustig",
+    "Yoav Moriah"
+  ],
+  "publication": "Mathematische Annalen295(1993),167-189",
+  "doi": "10.1007/BF01444882",
+  "publisher_record": "https://link.springer.com/article/10.1007/BF01444882",
+  "official_volume": "https://gdz.sub.uni-goettingen.de/id/PPN235181684_0295",
+  "official_mets": "https://gdz.sub.uni-goettingen.de/mets/PPN235181684_0295.xml",
+  "official_iiif_manifest": "https://gdz.sub.uni-goettingen.de/iiif/presentation/PPN235181684_0295/manifest",
+  "official_logical_article": "LOG_0015 / DMDLOG_0015, title matching the paper",
+  "retrieved_utc_date": "2026-11-18",
+  "scan_edition_note": "The first-page header prints1992, the same scan prints copyright Springer-Verlag1993; publisher DOI record gives January1993 and volume295. No edition identity inferred from header year alone.",
+  "pages": [
+    {
+      "printed_page": 167,
+      "path": "lustig-moriah-1993-p167.jpg",
+      "sha256": "209832fc588d1b3d4c62ac7fd717f63abbf9720d0b5d43a93af6ef6b52bf01b5",
+      "bytes": 551918,
+      "official_image_url": "https://images.sub.uni-goettingen.de/iiif/image/gdz:PPN235181684_0295:00000173/full/1400,/0/default.jpg",
+      "read_scope": "Title, author identity, conventions and bridge/rank inequalities; scan header year1992 and copyright1993 are distinguished.",
+      "visually_read": true
+    },
+    {
+      "printed_page": 168,
+      "path": "lustig-moriah-1993-p168.jpg",
+      "sha256": "488fa95c1461ed52bed445c298b88abf70b426bc0969ef8061053b7a773fcd64",
+      "bytes": 750573,
+      "official_image_url": "https://images.sub.uni-goettingen.de/iiif/image/gdz:PPN235181684_0295:00000174/full/1400,/0/default.jpg",
+      "read_scope": "Theorem0.1(1) nonunit-alpha equality and separate beta tunnel hypotheses.",
+      "visually_read": true
+    },
+    {
+      "printed_page": 170,
+      "path": "lustig-moriah-1993-p170.jpg",
+      "sha256": "d3ba3fcea21e433e2d6c5a5cd5e017f746d740775af4f16e862f38e081e9627f",
+      "bytes": 477448,
+      "official_image_url": "https://images.sub.uni-goettingen.de/iiif/image/gdz:PPN235181684_0295:00000176/full/1400,/0/default.jpg",
+      "read_scope": "Definition1.2 rational4-braid boxes, arbitrary doubled/twisted braid blocks, projection-dependent alpha,beta.",
+      "visually_read": true
+    },
+    {
+      "printed_page": 171,
+      "path": "lustig-moriah-1993-p171.jpg",
+      "sha256": "8fbe5a812c74a1eb485837ea062af4fd937f98ac184957264b99b792c5c291ff",
+      "bytes": 462504,
+      "official_image_url": "https://images.sub.uni-goettingen.de/iiif/image/gdz:PPN235181684_0295:00000177/full/1400,/0/default.jpg",
+      "read_scope": "Figure1 actual generalized-Montesinos construction.",
+      "visually_read": true
+    },
+    {
+      "printed_page": 186,
+      "path": "lustig-moriah-1993-p186.jpg",
+      "sha256": "662211f9e82d13af65157411a75dff3c179913a81c77978f11bd0723a6d0267c",
+      "bytes": 535277,
+      "official_image_url": "https://images.sub.uni-goettingen.de/iiif/image/gdz:PPN235181684_0295:00000192/full/1400,/0/default.jpg",
+      "read_scope": "Remark5.5 extensions and exact L,M,N matrix definitions.",
+      "visually_read": true
+    },
+    {
+      "printed_page": 187,
+      "path": "lustig-moriah-1993-p187.jpg",
+      "sha256": "d159a4dd67342c4ca7bc4f02303b0a3edff02e12c387d797fd8f3959d492a581",
+      "bytes": 470924,
+      "official_image_url": "https://images.sub.uni-goettingen.de/iiif/image/gdz:PPN235181684_0295:00000193/full/1400,/0/default.jpg",
+      "read_scope": "Proposition5.6, Burau evaluated at t=-1, nonunit-gcd generalization; Propositions6.1,6.2.",
+      "visually_read": true
+    }
+  ],
+  "retention": "Unchanged official IIIF JPEG response bytes at width1400; no re-encoding or image edits.",
+  "assessment": "Selected original pages visually read; complete original proof and upstream N-torsion machinery not audited. The nonunit numerical criterion is distinguished from the whole geometric generalized-Montesinos label, especially alpha1.",
+  "assurance": {
+    "formal_verification": false,
+    "external_specialist_review": false
+  }
+}

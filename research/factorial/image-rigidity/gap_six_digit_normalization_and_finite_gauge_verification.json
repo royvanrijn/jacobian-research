@@ -1,0 +1,473 @@
+{
+  "status": "PASS",
+  "controls": 43962,
+  "orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    55,
+    97,
+    118,
+    145,
+    146,
+    196,
+    197,
+    294,
+    295,
+    342,
+    343,
+    344,
+    399,
+    400
+  ],
+  "Q_powers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "tight_actual_coefficients": 11572,
+  "examples": [
+    {
+      "N": 20,
+      "digit_sum": 8,
+      "row_bounds": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "N": 26,
+      "digit_sum": 8,
+      "row_bounds": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 27,
+      "digit_sum": 9,
+      "row_bounds": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "N": 32,
+      "digit_sum": 8,
+      "row_bounds": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 33,
+      "digit_sum": 9,
+      "row_bounds": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 34,
+      "digit_sum": 10,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "N": 38,
+      "digit_sum": 8,
+      "row_bounds": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 39,
+      "digit_sum": 9,
+      "row_bounds": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 40,
+      "digit_sum": 10,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 41,
+      "digit_sum": 11,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 44,
+      "digit_sum": 8,
+      "row_bounds": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 45,
+      "digit_sum": 9,
+      "row_bounds": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 46,
+      "digit_sum": 10,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 47,
+      "digit_sum": 11,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 48,
+      "digit_sum": 12,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        5
+      ]
+    },
+    {
+      "N": 97,
+      "digit_sum": 13,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1
+      ]
+    },
+    {
+      "N": 118,
+      "digit_sum": 10,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "N": 145,
+      "digit_sum": 13,
+      "row_bounds": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "N": 146,
+      "digit_sum": 14,
+      "row_bounds": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "seed_nonzero_rows": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "N": 342,
+      "digit_sum": 18,
+      "row_bounds": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "seed_nonzero_rows": [
+        0,
+        5
+      ]
+    }
+  ],
+  "scope": "Bounded exact actual-coefficient and normalized-raising controls; the unbounded theorem is proved in the accompanying TeX.",
+  "independent_whole_proof_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "source_sha256": {
+    "research/factorial/image-rigidity/gap_six_digit_normalization_and_finite_gauge.py": "f6abf254cf6f0878d50c8ecf6ada2ec68d8fa9740d811298462485eb63ced7f7",
+    "research/factorial/image-rigidity/GAP_SIX_DIGIT_NORMALIZATION_AND_FINITE_GAUGE.tex": "c021d5b07aeda6e433cc00ac7172543792d088d920f7f744fdb911e0bfe47a47",
+    "research/factorial/image-rigidity/GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex": "7c8b7be9cd416803f0d43e0f76248cb5006f94ffa9feafc5295115d9cf61ffc6",
+    "research/factorial/image-rigidity/GAP_SIX_BOUNDARY_COUPLED_FROBENIUS.tex": "435c7a7ead7dc51a90a5c84c241ed8053c963d3fca0305c750944a3c8b09257c",
+    "research/factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "research/factorial/image-rigidity/GAP_SIX_SMALL_OFFSET_FAMILIES.tex": "1b83ed6d1ea139e40de35f2b236d179e743bbe2202b555deea5dad547db3620b",
+    "research/factorial/image-rigidity/PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f"
+  }
+}

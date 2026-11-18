@@ -742,6 +742,125 @@ class RetainedDependencyTests(unittest.TestCase):
                            "MRC-COFINITE-THM-ONEFILLING", "MRC-COFINITE-THM-COFINITE"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
 
+    def test_prime_scope_homology_source_is_not_a_geometry_or_old_family_premise(self):
+        scenario = self.graph.simulate({"SRC-MRC-PRIME-SCOPE-HOMOLOGY": "stale"})
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                           "MRC-PRIME-SCOPE-THM-CRITERIA", "MRC-PRIME-FAMILY-GEOMETRY-SCOPE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-BRIDGE",
+                           "MRC-PRIME-SCOPE-COR-ARBORESCENT", "MRC-PRIME-SCOPE-LEM-FOX",
+                           "MRC-ALL-COVERS-THM-BINDING", "MRC-ALL-COVERS-THM-ALLCOVERS",
+                           "MRC-PRIME-GAP-THM-MAIN", "MRC-PRIME-GAP-COR-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_actual_homology_requires_binding_but_parent_homology_does_not(self):
+        scenario = self.graph.simulate({"MRC-ALL-COVERS-THM-BINDING": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-SCOPE-THM-HOMOLOGY"]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-LEM-FOX",
+                           "MRC-ALL-COVERS-COMPLETE-PARENT", "MRC-ALL-COVERS-EMBEDDED-CUSP-LENGTH"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_parent_and_filling_homology_are_real_criteria_premises(self):
+        for premise in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY"):
+            with self.subTest(premise=premise):
+                scenario = self.graph.simulate({premise: "stale"})
+                for conclusion in ("MRC-PRIME-SCOPE-THM-HOMOLOGY", "MRC-PRIME-SCOPE-THM-CRITERIA"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+                for conclusion in ("MRC-PRIME-SCOPE-LEM-FOX", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                                   "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-ARBORESCENT"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+                if premise == "MRC-PRIME-SCOPE-THM-HOMOLOGY":
+                    self.assertEqual(scenario["nodes"]["MRC-PRIME-SCOPE-LEM-PARENT"]["state"], "proved")
+
+    def test_prime_scope_closed_hyperbolicity_is_not_an_integral_homology_premise(self):
+        scenario = self.graph.simulate({"MRC-ALL-COVERS-THM-ALLCOVERS": "stale"})
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-BRIDGE",
+                           "MRC-PRIME-SCOPE-COR-ARBORESCENT"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                           "MRC-PRIME-SCOPE-LEM-FOX", "MRC-PRIME-SCOPE-THM-CRITERIA"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_finite_action_import_is_not_an_arborescent_or_homology_premise(self):
+        scenario = self.graph.simulate({"EXT-DINKELBACH-LEEB-FINITE-ACTION": "stale"})
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-BRIDGE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                           "MRC-PRIME-SCOPE-COR-ARBORESCENT", "MRC-PRIME-SCOPE-LEM-FOX",
+                           "MRC-PRIME-SCOPE-THM-CRITERIA", "MRC-ALL-COVERS-THM-ALLCOVERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_cone_complement_import_is_not_a_torsion_generation_premise(self):
+        scenario = self.graph.simulate({"EXT-KOJIMA-CONE-COMPLEMENT": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-SCOPE-THM-EXTERIOR"]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-TORSION",
+                           "MRC-PRIME-SCOPE-COR-BRIDGE", "MRC-PRIME-SCOPE-LEM-PARENT",
+                           "MRC-PRIME-SCOPE-THM-HOMOLOGY", "MRC-PRIME-SCOPE-COR-ARBORESCENT",
+                           "MRC-PRIME-SCOPE-LEM-FOX", "MRC-PRIME-SCOPE-THM-CRITERIA",
+                           "MRC-ALL-COVERS-THM-ALLCOVERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_torsion_bound_requires_the_separate_a8_rank_bound(self):
+        scenario = self.graph.simulate({"MRC-PRIME-GAP-SHARP": "stale"})
+        for conclusion in ("MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-BRIDGE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                           "MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                           "MRC-PRIME-SCOPE-COR-ARBORESCENT", "MRC-PRIME-SCOPE-LEM-FOX",
+                           "MRC-ALL-COVERS-THM-ALLCOVERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_arborescent_domination_import_is_not_a_torsion_or_exterior_premise(self):
+        scenario = self.graph.simulate({"EXT-BKN3-ARBORESCENT-DOMINATION": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-SCOPE-COR-ARBORESCENT"]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                           "MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-BRIDGE",
+                           "MRC-PRIME-SCOPE-LEM-FOX", "MRC-PRIME-SCOPE-THM-CRITERIA"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_trefoil_topology_is_a_real_separate_arborescent_premise(self):
+        scenario = self.graph.simulate({"MRC-ALL-COVERS-TREFOIL-TOPOLOGY": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-SCOPE-COR-ARBORESCENT"]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-THM-HOMOLOGY", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-BRIDGE",
+                           "MRC-PRIME-SCOPE-THM-CRITERIA"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_augmentation_import_only_reaches_the_combined_criteria_claim(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        for conclusion in ("MRC-PRIME-SCOPE-THM-CRITERIA", "MRC-PRIME-FAMILY-GEOMETRY-SCOPE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                           "MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-BRIDGE",
+                           "MRC-PRIME-SCOPE-COR-ARBORESCENT", "MRC-PRIME-SCOPE-LEM-FOX",
+                           "MRC-ALL-COVERS-THM-ALLCOVERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_fox_lemma_is_not_a_homology_or_geometry_premise(self):
+        scenario = self.graph.simulate({"MRC-PRIME-SCOPE-LEM-FOX": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-SCOPE-THM-CRITERIA"]["state"], "stale")
+        for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                           "MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-BRIDGE",
+                           "MRC-PRIME-SCOPE-COR-ARBORESCENT", "MRC-PRIME-SCOPE-PROP-ELEMENTARY"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_scope_elementary_and_bridge_consequences_are_not_core_proof_premises(self):
+        for premise in ("MRC-PRIME-SCOPE-PROP-ELEMENTARY", "MRC-PRIME-SCOPE-COR-BRIDGE"):
+            with self.subTest(premise=premise):
+                scenario = self.graph.simulate({premise: "stale"})
+                self.assertEqual(scenario["nodes"]["MRC-PRIME-FAMILY-GEOMETRY-SCOPE"]["state"], "stale")
+                for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                                   "MRC-PRIME-SCOPE-LEM-ORBIFOLD", "MRC-PRIME-SCOPE-THM-EXTERIOR",
+                                   "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-COR-ARBORESCENT",
+                                   "MRC-PRIME-SCOPE-LEM-FOX", "MRC-PRIME-SCOPE-THM-CRITERIA"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
     def test_real_multistep_progress_stays_hypothetical_and_preserves_assurance(self):
         before = deepcopy(self.data)
         # Fine decomposition exposes a retained-input verification gap. A

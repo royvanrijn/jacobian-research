@@ -1,0 +1,1803 @@
+{
+  "claim": "CYCLIC-ROOT-TRANSFER-ENTIRE-CANONICAL-ETALE-COMPLETION",
+  "outcome": "PASS",
+  "check_count": 432,
+  "checks": [
+    {
+      "name": "normalized parameter solves root equation r2 m1",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r2 m1",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r2 m1",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r2 m1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r2 m1",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r2 m1",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r2 m1",
+      "passed": true
+    },
+    {
+      "name": "entire original source line has target ramification r r2 m1",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r2 m1",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r2 m2",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r2 m2",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r2 m2",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r2 m2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r2 m2",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r2 m2",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r2 m2",
+      "passed": true
+    },
+    {
+      "name": "good component has exactly r copied whole lines r2 m2",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r2 m3",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r2 m3",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r2 m3",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r2 m3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r2 m3",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r2 m3",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r2 m3",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r2 m3",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r2 m6",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r2 m6",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r2 m6",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r2 m6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r2 m6",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r2 m6",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r2 m6",
+      "passed": true
+    },
+    {
+      "name": "good component has exactly r copied whole lines r2 m6",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r3 m1",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r3 m1",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r3 m1",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r3 m1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r3 m1",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r3 m1",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r3 m1",
+      "passed": true
+    },
+    {
+      "name": "entire original source line has target ramification r r3 m1",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r3 m1",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r3 m2",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r3 m2",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r3 m2",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r3 m2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r3 m2",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r3 m2",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r3 m2",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r3 m2",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r3 m3",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r3 m3",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r3 m3",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r3 m3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r3 m3",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r3 m3",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r3 m3",
+      "passed": true
+    },
+    {
+      "name": "good component has exactly r copied whole lines r3 m3",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r3 m6",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r3 m6",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r3 m6",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r3 m6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r3 m6",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r3 m6",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r3 m6",
+      "passed": true
+    },
+    {
+      "name": "good component has exactly r copied whole lines r3 m6",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r3 m7",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r3 m7",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r3 m7",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r3 m7",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r3 m7",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r3 m7",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r3 m7",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r3 m7",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r4 m1",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r4 m1",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r4 m1",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r4 m1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r4 m1",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r4 m1",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r4 m1",
+      "passed": true
+    },
+    {
+      "name": "entire original source line has target ramification r r4 m1",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r4 m1",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r4 m2",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r4 m2",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r4 m2",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r4 m2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r4 m2",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r4 m2",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r4 m2",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r4 m2",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r4 m3",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r4 m3",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r4 m3",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r4 m3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r4 m3",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r4 m3",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r4 m3",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r4 m3",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r4 m4",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r4 m4",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r4 m4",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r4 m4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r4 m4",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r4 m4",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r4 m4",
+      "passed": true
+    },
+    {
+      "name": "good component has exactly r copied whole lines r4 m4",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r4 m6",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r4 m6",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r4 m6",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r4 m6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r4 m6",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r4 m6",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r4 m6",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r4 m6",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r4 m8",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r4 m8",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r4 m8",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r4 m8",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r4 m8",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r4 m8",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r4 m8",
+      "passed": true
+    },
+    {
+      "name": "good component has exactly r copied whole lines r4 m8",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r6 m1",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r6 m1",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r6 m1",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r6 m1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r6 m1",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r6 m1",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r6 m1",
+      "passed": true
+    },
+    {
+      "name": "entire original source line has target ramification r r6 m1",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r6 m1",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r6 m2",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r6 m2",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r6 m2",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r6 m2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r6 m2",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r6 m2",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r6 m2",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r6 m2",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r6 m3",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r6 m3",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r6 m3",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r6 m3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r6 m3",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r6 m3",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r6 m3",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r6 m3",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r6 m4",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r6 m4",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r6 m4",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r6 m4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r6 m4",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r6 m4",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r6 m4",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r6 m4",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r6 m6",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r6 m6",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r6 m6",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r6 m6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r6 m6",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r6 m6",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r6 m6",
+      "passed": true
+    },
+    {
+      "name": "good component has exactly r copied whole lines r6 m6",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r6 m9",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r6 m9",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r6 m9",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r6 m9",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r6 m9",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r6 m9",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r6 m9",
+      "passed": true
+    },
+    {
+      "name": "bad component is excluded despite being retained in full cover r6 m9",
+      "passed": true
+    },
+    {
+      "name": "normalized parameter solves root equation r6 m12",
+      "passed": true
+    },
+    {
+      "name": "normalization parameter exponents primitive r6 m12",
+      "passed": true
+    },
+    {
+      "name": "all residue sheets times transverse index recover degree r6 m12",
+      "passed": true
+    },
+    {
+      "name": "root coordinate valuation r6 m12",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative order r6 m12",
+      "passed": true
+    },
+    {
+      "name": "etale exactly at divisible multiplicity r6 m12",
+      "passed": true
+    },
+    {
+      "name": "exact factorization into ALL normalized residue branches r6 m12",
+      "passed": true
+    },
+    {
+      "name": "good component has exactly r copied whole lines r6 m12",
+      "passed": true
+    },
+    {
+      "name": "nonzero-value root linear coefficient r2",
+      "passed": true
+    },
+    {
+      "name": "nonzero-value root linear coefficient is a unit r2",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r2 m1",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r2 m2",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r2 m5",
+      "passed": true
+    },
+    {
+      "name": "nonzero-value root linear coefficient r3",
+      "passed": true
+    },
+    {
+      "name": "nonzero-value root linear coefficient is a unit r3",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r3 m1",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r3 m2",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r3 m5",
+      "passed": true
+    },
+    {
+      "name": "nonzero-value root linear coefficient r4",
+      "passed": true
+    },
+    {
+      "name": "nonzero-value root linear coefficient is a unit r4",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r4 m1",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r4 m2",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r4 m5",
+      "passed": true
+    },
+    {
+      "name": "nonzero-value root linear coefficient r6",
+      "passed": true
+    },
+    {
+      "name": "nonzero-value root linear coefficient is a unit r6",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r6 m1",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r6 m2",
+      "passed": true
+    },
+    {
+      "name": "copied nonzero fibre retains multiplicity r6 m5",
+      "passed": true
+    },
+    {
+      "name": "selected original boundary retained model0",
+      "passed": true
+    },
+    {
+      "name": "good and bad partition every original boundary model0 r2",
+      "passed": true
+    },
+    {
+      "name": "selected line belongs to good set model0 r2",
+      "passed": true
+    },
+    {
+      "name": "ALL good copied lines counted before source selection model0 r2",
+      "passed": true
+    },
+    {
+      "name": "complete new unramified boundary count model0 r2",
+      "passed": true
+    },
+    {
+      "name": "bad copied curves are all ramified model0 r2",
+      "passed": true
+    },
+    {
+      "name": "selected source line omitted exactly once from new boundary model0 r2",
+      "passed": true
+    },
+    {
+      "name": "all selected-r copies have new multiplicity one model0 r2",
+      "passed": true
+    },
+    {
+      "name": "every other-value copied line retains original multiplicity model0 r2",
+      "passed": true
+    },
+    {
+      "name": "zero-fibre mass retained under the root cover model0 r2",
+      "passed": true
+    },
+    {
+      "name": "quotient Euler subtracts whole source line and exactly bad boundaries model0 r2",
+      "passed": true
+    },
+    {
+      "name": "new canonical Euler agrees cover and source-boundary count model0 r2",
+      "passed": true
+    },
+    {
+      "name": "quotient is strictly smaller than old canonical completion model0 r2",
+      "passed": true
+    },
+    {
+      "name": "cyclic deck divisibility is exactly saturated by Euler model0 r2",
+      "passed": true
+    },
+    {
+      "name": "Pic localization Smith factors exactly ones and r model0 r2",
+      "passed": true
+    },
+    {
+      "name": "Pic quotient free rank model0 r2",
+      "passed": true
+    },
+    {
+      "name": "remaining source-line relation gcd exactly r model0 r2",
+      "passed": true
+    },
+    {
+      "name": "Pic torsion order agrees universal-cover degree model0 r2",
+      "passed": true
+    },
+    {
+      "name": "prior selected pseudo-plane is g1 case only model0 r2",
+      "passed": true
+    },
+    {
+      "name": "one original boundary transfers to all reduced added lines model0 r2",
+      "passed": true
+    },
+    {
+      "name": "selected original boundary retained model1",
+      "passed": true
+    },
+    {
+      "name": "good and bad partition every original boundary model1 r3",
+      "passed": true
+    },
+    {
+      "name": "selected line belongs to good set model1 r3",
+      "passed": true
+    },
+    {
+      "name": "ALL good copied lines counted before source selection model1 r3",
+      "passed": true
+    },
+    {
+      "name": "complete new unramified boundary count model1 r3",
+      "passed": true
+    },
+    {
+      "name": "bad copied curves are all ramified model1 r3",
+      "passed": true
+    },
+    {
+      "name": "selected source line omitted exactly once from new boundary model1 r3",
+      "passed": true
+    },
+    {
+      "name": "all selected-r copies have new multiplicity one model1 r3",
+      "passed": true
+    },
+    {
+      "name": "every other-value copied line retains original multiplicity model1 r3",
+      "passed": true
+    },
+    {
+      "name": "zero-fibre mass retained under the root cover model1 r3",
+      "passed": true
+    },
+    {
+      "name": "quotient Euler subtracts whole source line and exactly bad boundaries model1 r3",
+      "passed": true
+    },
+    {
+      "name": "new canonical Euler agrees cover and source-boundary count model1 r3",
+      "passed": true
+    },
+    {
+      "name": "quotient is strictly smaller than old canonical completion model1 r3",
+      "passed": true
+    },
+    {
+      "name": "cyclic deck divisibility is exactly saturated by Euler model1 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic localization Smith factors exactly ones and r model1 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic quotient free rank model1 r3",
+      "passed": true
+    },
+    {
+      "name": "remaining source-line relation gcd exactly r model1 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic torsion order agrees universal-cover degree model1 r3",
+      "passed": true
+    },
+    {
+      "name": "prior selected pseudo-plane is g1 case only model1 r3",
+      "passed": true
+    },
+    {
+      "name": "one original boundary transfers to all reduced added lines model1 r3",
+      "passed": true
+    },
+    {
+      "name": "selected original boundary retained model2",
+      "passed": true
+    },
+    {
+      "name": "good and bad partition every original boundary model2 r4",
+      "passed": true
+    },
+    {
+      "name": "selected line belongs to good set model2 r4",
+      "passed": true
+    },
+    {
+      "name": "ALL good copied lines counted before source selection model2 r4",
+      "passed": true
+    },
+    {
+      "name": "complete new unramified boundary count model2 r4",
+      "passed": true
+    },
+    {
+      "name": "bad copied curves are all ramified model2 r4",
+      "passed": true
+    },
+    {
+      "name": "selected source line omitted exactly once from new boundary model2 r4",
+      "passed": true
+    },
+    {
+      "name": "all selected-r copies have new multiplicity one model2 r4",
+      "passed": true
+    },
+    {
+      "name": "every other-value copied line retains original multiplicity model2 r4",
+      "passed": true
+    },
+    {
+      "name": "zero-fibre mass retained under the root cover model2 r4",
+      "passed": true
+    },
+    {
+      "name": "quotient Euler subtracts whole source line and exactly bad boundaries model2 r4",
+      "passed": true
+    },
+    {
+      "name": "new canonical Euler agrees cover and source-boundary count model2 r4",
+      "passed": true
+    },
+    {
+      "name": "quotient is strictly smaller than old canonical completion model2 r4",
+      "passed": true
+    },
+    {
+      "name": "cyclic deck divisibility is exactly saturated by Euler model2 r4",
+      "passed": true
+    },
+    {
+      "name": "Pic localization Smith factors exactly ones and r model2 r4",
+      "passed": true
+    },
+    {
+      "name": "Pic quotient free rank model2 r4",
+      "passed": true
+    },
+    {
+      "name": "remaining source-line relation gcd exactly r model2 r4",
+      "passed": true
+    },
+    {
+      "name": "Pic torsion order agrees universal-cover degree model2 r4",
+      "passed": true
+    },
+    {
+      "name": "prior selected pseudo-plane is g1 case only model2 r4",
+      "passed": true
+    },
+    {
+      "name": "one original boundary transfers to all reduced added lines model2 r4",
+      "passed": true
+    },
+    {
+      "name": "selected original boundary retained model3",
+      "passed": true
+    },
+    {
+      "name": "good and bad partition every original boundary model3 r2",
+      "passed": true
+    },
+    {
+      "name": "selected line belongs to good set model3 r2",
+      "passed": true
+    },
+    {
+      "name": "ALL good copied lines counted before source selection model3 r2",
+      "passed": true
+    },
+    {
+      "name": "complete new unramified boundary count model3 r2",
+      "passed": true
+    },
+    {
+      "name": "bad copied curves are all ramified model3 r2",
+      "passed": true
+    },
+    {
+      "name": "selected source line omitted exactly once from new boundary model3 r2",
+      "passed": true
+    },
+    {
+      "name": "all selected-r copies have new multiplicity one model3 r2",
+      "passed": true
+    },
+    {
+      "name": "every other-value copied line retains original multiplicity model3 r2",
+      "passed": true
+    },
+    {
+      "name": "zero-fibre mass retained under the root cover model3 r2",
+      "passed": true
+    },
+    {
+      "name": "quotient Euler subtracts whole source line and exactly bad boundaries model3 r2",
+      "passed": true
+    },
+    {
+      "name": "new canonical Euler agrees cover and source-boundary count model3 r2",
+      "passed": true
+    },
+    {
+      "name": "quotient is strictly smaller than old canonical completion model3 r2",
+      "passed": true
+    },
+    {
+      "name": "cyclic deck divisibility is exactly saturated by Euler model3 r2",
+      "passed": true
+    },
+    {
+      "name": "Pic localization Smith factors exactly ones and r model3 r2",
+      "passed": true
+    },
+    {
+      "name": "Pic quotient free rank model3 r2",
+      "passed": true
+    },
+    {
+      "name": "remaining source-line relation gcd exactly r model3 r2",
+      "passed": true
+    },
+    {
+      "name": "Pic torsion order agrees universal-cover degree model3 r2",
+      "passed": true
+    },
+    {
+      "name": "prior selected pseudo-plane is g1 case only model3 r2",
+      "passed": true
+    },
+    {
+      "name": "false retained-all-original-boundaries rule detected model3 r2",
+      "passed": true
+    },
+    {
+      "name": "false original-U quotient has wrong Euler model3 r2",
+      "passed": true
+    },
+    {
+      "name": "selected original boundary retained model4",
+      "passed": true
+    },
+    {
+      "name": "good and bad partition every original boundary model4 r3",
+      "passed": true
+    },
+    {
+      "name": "selected line belongs to good set model4 r3",
+      "passed": true
+    },
+    {
+      "name": "ALL good copied lines counted before source selection model4 r3",
+      "passed": true
+    },
+    {
+      "name": "complete new unramified boundary count model4 r3",
+      "passed": true
+    },
+    {
+      "name": "bad copied curves are all ramified model4 r3",
+      "passed": true
+    },
+    {
+      "name": "selected source line omitted exactly once from new boundary model4 r3",
+      "passed": true
+    },
+    {
+      "name": "all selected-r copies have new multiplicity one model4 r3",
+      "passed": true
+    },
+    {
+      "name": "every other-value copied line retains original multiplicity model4 r3",
+      "passed": true
+    },
+    {
+      "name": "zero-fibre mass retained under the root cover model4 r3",
+      "passed": true
+    },
+    {
+      "name": "quotient Euler subtracts whole source line and exactly bad boundaries model4 r3",
+      "passed": true
+    },
+    {
+      "name": "new canonical Euler agrees cover and source-boundary count model4 r3",
+      "passed": true
+    },
+    {
+      "name": "quotient is strictly smaller than old canonical completion model4 r3",
+      "passed": true
+    },
+    {
+      "name": "cyclic deck divisibility is exactly saturated by Euler model4 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic localization Smith factors exactly ones and r model4 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic quotient free rank model4 r3",
+      "passed": true
+    },
+    {
+      "name": "remaining source-line relation gcd exactly r model4 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic torsion order agrees universal-cover degree model4 r3",
+      "passed": true
+    },
+    {
+      "name": "prior selected pseudo-plane is g1 case only model4 r3",
+      "passed": true
+    },
+    {
+      "name": "false retained-all-original-boundaries rule detected model4 r3",
+      "passed": true
+    },
+    {
+      "name": "false original-U quotient has wrong Euler model4 r3",
+      "passed": true
+    },
+    {
+      "name": "selected original boundary retained model5",
+      "passed": true
+    },
+    {
+      "name": "good and bad partition every original boundary model5 r4",
+      "passed": true
+    },
+    {
+      "name": "selected line belongs to good set model5 r4",
+      "passed": true
+    },
+    {
+      "name": "ALL good copied lines counted before source selection model5 r4",
+      "passed": true
+    },
+    {
+      "name": "complete new unramified boundary count model5 r4",
+      "passed": true
+    },
+    {
+      "name": "bad copied curves are all ramified model5 r4",
+      "passed": true
+    },
+    {
+      "name": "selected source line omitted exactly once from new boundary model5 r4",
+      "passed": true
+    },
+    {
+      "name": "all selected-r copies have new multiplicity one model5 r4",
+      "passed": true
+    },
+    {
+      "name": "every other-value copied line retains original multiplicity model5 r4",
+      "passed": true
+    },
+    {
+      "name": "zero-fibre mass retained under the root cover model5 r4",
+      "passed": true
+    },
+    {
+      "name": "quotient Euler subtracts whole source line and exactly bad boundaries model5 r4",
+      "passed": true
+    },
+    {
+      "name": "new canonical Euler agrees cover and source-boundary count model5 r4",
+      "passed": true
+    },
+    {
+      "name": "quotient is strictly smaller than old canonical completion model5 r4",
+      "passed": true
+    },
+    {
+      "name": "cyclic deck divisibility is exactly saturated by Euler model5 r4",
+      "passed": true
+    },
+    {
+      "name": "Pic localization Smith factors exactly ones and r model5 r4",
+      "passed": true
+    },
+    {
+      "name": "Pic quotient free rank model5 r4",
+      "passed": true
+    },
+    {
+      "name": "remaining source-line relation gcd exactly r model5 r4",
+      "passed": true
+    },
+    {
+      "name": "Pic torsion order agrees universal-cover degree model5 r4",
+      "passed": true
+    },
+    {
+      "name": "prior selected pseudo-plane is g1 case only model5 r4",
+      "passed": true
+    },
+    {
+      "name": "false retained-all-original-boundaries rule detected model5 r4",
+      "passed": true
+    },
+    {
+      "name": "false original-U quotient has wrong Euler model5 r4",
+      "passed": true
+    },
+    {
+      "name": "selected original boundary retained model6",
+      "passed": true
+    },
+    {
+      "name": "good and bad partition every original boundary model6 r6",
+      "passed": true
+    },
+    {
+      "name": "selected line belongs to good set model6 r6",
+      "passed": true
+    },
+    {
+      "name": "ALL good copied lines counted before source selection model6 r6",
+      "passed": true
+    },
+    {
+      "name": "complete new unramified boundary count model6 r6",
+      "passed": true
+    },
+    {
+      "name": "bad copied curves are all ramified model6 r6",
+      "passed": true
+    },
+    {
+      "name": "selected source line omitted exactly once from new boundary model6 r6",
+      "passed": true
+    },
+    {
+      "name": "all selected-r copies have new multiplicity one model6 r6",
+      "passed": true
+    },
+    {
+      "name": "every other-value copied line retains original multiplicity model6 r6",
+      "passed": true
+    },
+    {
+      "name": "zero-fibre mass retained under the root cover model6 r6",
+      "passed": true
+    },
+    {
+      "name": "quotient Euler subtracts whole source line and exactly bad boundaries model6 r6",
+      "passed": true
+    },
+    {
+      "name": "new canonical Euler agrees cover and source-boundary count model6 r6",
+      "passed": true
+    },
+    {
+      "name": "quotient is strictly smaller than old canonical completion model6 r6",
+      "passed": true
+    },
+    {
+      "name": "cyclic deck divisibility is exactly saturated by Euler model6 r6",
+      "passed": true
+    },
+    {
+      "name": "Pic localization Smith factors exactly ones and r model6 r6",
+      "passed": true
+    },
+    {
+      "name": "Pic quotient free rank model6 r6",
+      "passed": true
+    },
+    {
+      "name": "remaining source-line relation gcd exactly r model6 r6",
+      "passed": true
+    },
+    {
+      "name": "Pic torsion order agrees universal-cover degree model6 r6",
+      "passed": true
+    },
+    {
+      "name": "prior selected pseudo-plane is g1 case only model6 r6",
+      "passed": true
+    },
+    {
+      "name": "false retained-all-original-boundaries rule detected model6 r6",
+      "passed": true
+    },
+    {
+      "name": "false original-U quotient has wrong Euler model6 r6",
+      "passed": true
+    },
+    {
+      "name": "selected original boundary retained model7",
+      "passed": true
+    },
+    {
+      "name": "good and bad partition every original boundary model7 r3",
+      "passed": true
+    },
+    {
+      "name": "selected line belongs to good set model7 r3",
+      "passed": true
+    },
+    {
+      "name": "ALL good copied lines counted before source selection model7 r3",
+      "passed": true
+    },
+    {
+      "name": "complete new unramified boundary count model7 r3",
+      "passed": true
+    },
+    {
+      "name": "bad copied curves are all ramified model7 r3",
+      "passed": true
+    },
+    {
+      "name": "selected source line omitted exactly once from new boundary model7 r3",
+      "passed": true
+    },
+    {
+      "name": "all selected-r copies have new multiplicity one model7 r3",
+      "passed": true
+    },
+    {
+      "name": "every other-value copied line retains original multiplicity model7 r3",
+      "passed": true
+    },
+    {
+      "name": "zero-fibre mass retained under the root cover model7 r3",
+      "passed": true
+    },
+    {
+      "name": "quotient Euler subtracts whole source line and exactly bad boundaries model7 r3",
+      "passed": true
+    },
+    {
+      "name": "new canonical Euler agrees cover and source-boundary count model7 r3",
+      "passed": true
+    },
+    {
+      "name": "quotient is strictly smaller than old canonical completion model7 r3",
+      "passed": true
+    },
+    {
+      "name": "cyclic deck divisibility is exactly saturated by Euler model7 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic localization Smith factors exactly ones and r model7 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic quotient free rank model7 r3",
+      "passed": true
+    },
+    {
+      "name": "remaining source-line relation gcd exactly r model7 r3",
+      "passed": true
+    },
+    {
+      "name": "Pic torsion order agrees universal-cover degree model7 r3",
+      "passed": true
+    },
+    {
+      "name": "prior selected pseudo-plane is g1 case only model7 r3",
+      "passed": true
+    },
+    {
+      "name": "false retained-all-original-boundaries rule detected model7 r3",
+      "passed": true
+    },
+    {
+      "name": "false original-U quotient has wrong Euler model7 r3",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old2 ext1",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old2 ext2",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old2 ext4",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old3 ext1",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old3 ext2",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old3 ext4",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old5 ext1",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old5 ext2",
+      "passed": true
+    },
+    {
+      "name": "original ramified prime never revived old5 ext4",
+      "passed": true
+    },
+    {
+      "name": "r1 preserves boundary count s1",
+      "passed": true
+    },
+    {
+      "name": "r1 must not use ramified-source-line deletion s1",
+      "passed": true
+    },
+    {
+      "name": "r1 original source line index is one s1",
+      "passed": true
+    },
+    {
+      "name": "r1 preserves boundary count s2",
+      "passed": true
+    },
+    {
+      "name": "r1 must not use ramified-source-line deletion s2",
+      "passed": true
+    },
+    {
+      "name": "r1 original source line index is one s2",
+      "passed": true
+    },
+    {
+      "name": "r1 preserves boundary count s5",
+      "passed": true
+    },
+    {
+      "name": "r1 must not use ramified-source-line deletion s5",
+      "passed": true
+    },
+    {
+      "name": "r1 original source line index is one s5",
+      "passed": true
+    },
+    {
+      "name": "whole new Keller chain factor r2",
+      "passed": true
+    },
+    {
+      "name": "old translation is precisely the replica r2",
+      "passed": true
+    },
+    {
+      "name": "new bare translation of original coordinate x r2",
+      "passed": true
+    },
+    {
+      "name": "new translation fails old fixed field by nontrivial root character r2",
+      "passed": true
+    },
+    {
+      "name": "direct replica index is saturated r2",
+      "passed": true
+    },
+    {
+      "name": "marked source line has finite simple new coordinate r2",
+      "passed": true
+    },
+    {
+      "name": "marked source line has target-volume vanishing order r2",
+      "passed": true
+    },
+    {
+      "name": "new generic map degree multiplies exactly r2",
+      "passed": true
+    },
+    {
+      "name": "no strict generic-degree descent r2",
+      "passed": true
+    },
+    {
+      "name": "whole new Keller chain factor r3",
+      "passed": true
+    },
+    {
+      "name": "old translation is precisely the replica r3",
+      "passed": true
+    },
+    {
+      "name": "new bare translation of original coordinate x r3",
+      "passed": true
+    },
+    {
+      "name": "new translation fails old fixed field by nontrivial root character r3",
+      "passed": true
+    },
+    {
+      "name": "direct replica index is saturated r3",
+      "passed": true
+    },
+    {
+      "name": "marked source line has finite simple new coordinate r3",
+      "passed": true
+    },
+    {
+      "name": "marked source line has target-volume vanishing order r3",
+      "passed": true
+    },
+    {
+      "name": "new generic map degree multiplies exactly r3",
+      "passed": true
+    },
+    {
+      "name": "no strict generic-degree descent r3",
+      "passed": true
+    },
+    {
+      "name": "whole new Keller chain factor r4",
+      "passed": true
+    },
+    {
+      "name": "old translation is precisely the replica r4",
+      "passed": true
+    },
+    {
+      "name": "new bare translation of original coordinate x r4",
+      "passed": true
+    },
+    {
+      "name": "new translation fails old fixed field by nontrivial root character r4",
+      "passed": true
+    },
+    {
+      "name": "direct replica index is saturated r4",
+      "passed": true
+    },
+    {
+      "name": "marked source line has finite simple new coordinate r4",
+      "passed": true
+    },
+    {
+      "name": "marked source line has target-volume vanishing order r4",
+      "passed": true
+    },
+    {
+      "name": "new generic map degree multiplies exactly r4",
+      "passed": true
+    },
+    {
+      "name": "no strict generic-degree descent r4",
+      "passed": true
+    },
+    {
+      "name": "whole new Keller chain factor r6",
+      "passed": true
+    },
+    {
+      "name": "old translation is precisely the replica r6",
+      "passed": true
+    },
+    {
+      "name": "new bare translation of original coordinate x r6",
+      "passed": true
+    },
+    {
+      "name": "new translation fails old fixed field by nontrivial root character r6",
+      "passed": true
+    },
+    {
+      "name": "direct replica index is saturated r6",
+      "passed": true
+    },
+    {
+      "name": "marked source line has finite simple new coordinate r6",
+      "passed": true
+    },
+    {
+      "name": "marked source line has target-volume vanishing order r6",
+      "passed": true
+    },
+    {
+      "name": "new generic map degree multiplies exactly r6",
+      "passed": true
+    },
+    {
+      "name": "no strict generic-degree descent r6",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: FULL finite normalization",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: ENTIRE etale locus",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: U'=q^(-1)(W)",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: Formula(2), which removes the",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: asserted only for r>1",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: No such descent is asserted",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: No source-finiteness or target integrality",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: not a map degree",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: pi1_top(W)=mu_r",
+      "passed": true
+    },
+    {
+      "name": "written exact scope: Pic(W)=Z^(g-1) direct-sum Z/rZ",
+      "passed": true
+    },
+    {
+      "name": "primary source pin sources/stacks-07S7-finite-free-quotient.html",
+      "passed": true
+    },
+    {
+      "name": "primary source pin sources/stacks-02K6-etale-surjective-source.html",
+      "passed": true
+    },
+    {
+      "name": "primary source pin sources/stacks-02KM-etale-descent.html",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 0.10797827102942392,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "2cbb34e3a756fde65ac545e57e756b4f2f459047ed6366421e5befa1a4a26d1c",
+  "checker_sha256": "12d8fc200ae92464a842d70fa3fe0bed8acc14d2656b5ee3b66cfcca6fcbbb5b",
+  "retained_inputs": [
+    {
+      "path": "WHOLE_ROOT_CHARTS_CREATE_CYCLIC_KELLER_PSEUDOPLANES.md",
+      "sha256": "44f070eb3d48d3b7a45cf05ee158a1110775532293c339baed7eb4201d1f3560"
+    },
+    {
+      "path": "EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md",
+      "sha256": "1a9a234f84871ecfef48bfe0644c7b5e068a382b739959ec3b4753580b77e5d7"
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "sha256": "7eb2e4439847c2a0383eca058786c1a3b5ea775749934203f5d7052c7e4e0af6"
+    },
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "sha256": "71f4782d0c7b32dd78194a4bac125f29d72045a1e07a50c0ac1fda9cabb06fa8"
+    },
+    {
+      "path": "DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md",
+      "sha256": "57e96760cbb12f8fa6a7bb6e163260c7463c52ced35a174c93dc198db1e66c09"
+    },
+    {
+      "path": "sources/stacks-07S7-finite-free-quotient.html",
+      "sha256": "c3e944469210e81ba1d58e07e91f76dcb64b459b91160a22849b9679aa6b8a05"
+    },
+    {
+      "path": "sources/stacks-02K6-etale-surjective-source.html",
+      "sha256": "1f401f25da4253b5c714a3e22d440904ec34ce4b9ebfc1f640d15975109d53bc"
+    },
+    {
+      "path": "sources/stacks-02KM-etale-descent.html",
+      "sha256": "1c5b5a9e23dcb7ec1e0fd9423678dc4b4552dfe36c3956395187d60d8dd2e317"
+    },
+    {
+      "path": "sources/root-transfer-entire-completion-source-audit.json",
+      "sha256": "c94116e792beb849e06795426a45912f36c8324f0b8fc15da7d7d2cb4617c544"
+    }
+  ],
+  "proved_scope": {
+    "starting_map_is_actual_plane_Keller": true,
+    "entire_new_completion_exactly_compared": true,
+    "all_original_full_normalization_primes_retained": true,
+    "new_etale_points_above_original_nonetale_locus": false,
+    "r_gt1_quotient": "original U minus whole selected source line minus exactly same-value boundary components whose multiplicity is not divisible by r",
+    "bad_component_transverse_index": "r/gcd(r,r_i)",
+    "good_component_whole_copies": "r disjoint A1 copies",
+    "complete_new_boundary_count": "r*g-1",
+    "quotient_Pic": "Z^(g-1) directsum Z/rZ (noncanonical splitting)",
+    "quotient_pi1": "mu_r from canonical U-prime simply connected",
+    "quotient_pi1_inferred_from_Euler_only": false,
+    "r1": "same U, original source line stays etale, unchanged boundary count",
+    "old_translation": "z^(r-1) partial_t",
+    "bare_new_translation_preserves_original_field": false,
+    "replica_index_bound": "r divides r, saturated",
+    "new_generic_degree": "r*d",
+    "forced_r1_or_degree_descent": false,
+    "quotient_identified_with_full_finite_normalization": false,
+    "source_finiteness_integrality_injectivity_or_inverse": false,
+    "finite_numerical_ledgers_claimed_Keller_realizations": false
+  },
+  "assurance": "Unrestricted written proof and exact finite controls; no formal verification or external human review."
+}

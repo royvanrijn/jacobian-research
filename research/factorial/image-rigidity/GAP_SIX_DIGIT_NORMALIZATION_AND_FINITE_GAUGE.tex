@@ -1,0 +1,296 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref,mathrsfs}
+\newtheorem{lemma}{Lemma}\newtheorem{theorem}[lemma]{Theorem}\newtheorem{corollary}[lemma]{Corollary}\newtheorem{proposition}[lemma]{Proposition}
+\title{A digit-weight normalization of every physical gap-six matrix}
+\author{Internal proof; no external-review or priority claim}\date{18 November 2026}
+\begin{document}\maketitle
+Let $s(n)=s_7(n)$ be the base-seven digit sum, with $s(0)=0$.
+The coefficient variable $v$ is formal and unweighted.
+For $f=\sum_{n\ge0}f_n(v)t^n\in\mathbb Z_7[v][[t]]$,
+write $f\in\mathcal F_j$ if every coefficient of $f_n(v)$
+has valuation at least $(s(n)-j)/6$.
+This definition is also used for integral coefficients in a finite
+extension of $\mathbb Q_7$, with $v_7(7)=1$.
+Statements about infinite sums below are coefficientwise in $t$;
+the one geometric expansion in the proof is coefficientwise
+$7$-adically convergent.
+
+\begin{lemma}[Digit filtration]\label{lem:filtration}
+For integers $i,j$ one has
+$\mathcal F_i\mathcal F_j\subseteq\mathcal F_{i+j}$,
+$7\mathcal F_j\subseteq\mathcal F_{j-6}$, and
+$\mathcal F_i\subseteq\mathcal F_j$ if $i\le j$.
+Among integral series, $\mathcal F_1$ is closed under seventh
+powers. It is closed under coefficientwise limits whenever the
+limits exist.
+\end{lemma}
+\begin{proof}
+The first assertion uses $s(a+b)\le s(a)+s(b)$.
+The other filtration rules follow directly from the definition.
+In a seventh power, a mixed multinomial term has coefficient
+divisible by seven. If its indices, with multiplicities, are
+$n_1,\ldots,n_7$, its valuation is at least
+\[
+ 1+\sum_i\frac{s(n_i)-1}{6}
+ \ \ge\ \frac{s(\sum_i n_i)-1}{6}.
+\]
+A pure term is $f_n(v)^7t^{7n}$; since the coefficients are integral,
+$7v_7(f_n)\ge v_7(f_n)$ and $s(7n)=s(n)$ give the same bound.
+This argument applies to polynomial coefficients in $v$ using
+their Gauss valuation. Limits preserve each coefficient bound.
+\end{proof}
+
+For $N\ge1$ put $c=N+5$ and $A=c-\theta_z+z$.
+Let $\Pi_N(X)=\prod_{\ell=0}^{N-1}(X+6\ell)$.
+For $Q\in\mathbb Z_7[X]$ define the normalized boundary components
+by the finite identity
+\[
+ \frac{\Pi_N(A)Q(A)1}{6^NN!}
+    =\sum_j b_{N,Q,j}z^j,\qquad
+ V_{N,a}(Q;v)=a!\sum_{\ell\ge0}
+            b_{N,Q,a+6\ell}7^\ell v^\ell,\quad 0\le a<6.
+ \tag{1}
+\]
+The finite-difference lattice in
+\href{GAP_SIX_BOUNDARY_COUPLED_FROBENIUS.tex}
+{Lemma \texttt{lem:mahler}}
+proves integrality. A fresh proof of the stronger bound follows.
+
+\begin{theorem}[Uniform all-index row divisibility]\label{thm:content}
+For every $N\ge1$, $0\le a<6$, and $Q\in\mathbb Z_7[X]$,
+\[
+ V_{N,a}(Q;v)\in7^{e_a(N)}\mathbb Z_7[v],
+ \qquad e_a(N)=
+       \left\lceil\frac{s(N)-a-1}{6}\right\rceil\ge0.
+ \tag{2}
+\]
+The same conclusion holds for polynomials $Q$ with integral
+coefficients in any extension of $\mathbb Q_7$, with the
+coefficientwise valuation interpretation of (2).
+No degree restriction on $Q$ is required.
+\end{theorem}
+\begin{proof}
+Use the exact diagonal identity in
+\href{GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex}
+{Lemma \texttt{lem:diagonal}},
+which is an identity for all diagonal indices:
+\[
+ \sum_{N\ge0}\frac{B_{N,N,6}(z)}{6^NN!}t^N
+       =\kappa(t)\exp(zH(t)),\quad
+ H=1-R,\quad R-R^7=t,\quad
+ \kappa=\frac{6R}{7R^6-1}.
+ \tag{3}
+\]
+The equation for $H$ is
+\[
+ H=\frac t6+\frac72H^2-\frac{35}6H^3
+          +\frac{35}6H^4-\frac72H^5+\frac76H^6-\frac16H^7 .
+ \tag{4}
+\]
+Its right side contracts in the $t$-adic topology on
+$t\mathbb Z_7[[t]]$. Lemma~\ref{lem:filtration} shows that it
+preserves $\mathcal F_1$: for $2\le j\le6$ the coefficient of
+$H^j$ is seven-divisible and $j-6\le1$, while $H^7$ lies in
+$\mathcal F_1$. Consequently $H\in\mathcal F_1$.
+
+Use the integral Artin--Hasse series
+$E_7(X)=\exp(\sum_{i\ge0}X^{7^i}/7^i)$, whose integrality is
+proved in
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}
+{Lemma \texttt{lem:artin-hasse-closure}}.
+Put $E_i=(7^i-1)/6$ and let $\mathscr A\in
+t\mathbb Z_7[v][[t]]$ solve
+\[
+ \mathscr A+\sum_{i\ge1}7^{E_i-i}v^{E_i}
+                   \mathscr A^{7^i}=H.                 \tag{5}
+\]
+All exponents $E_i-i$ are nonnegative. Iteration of (5) is
+$t$-adically contracting. Iterated seventh-power closure proves
+$\mathscr A\in\mathcal F_1$.
+
+At the formal boundary $z^6=7v$, equation (5) gives the exact
+formal identity $\exp(zH)=E_7(z\mathscr A)$.
+Each fixed $t$-coefficient is a finite polynomial in $z$, so no
+$p$-adic exponential is evaluated at a boundary point.
+Write $E_7(X)=\sum_{j\ge0}e_jX^j$, where $e_j\in\mathbb Z_7$.
+The $a$th normalized cyclic component is
+\[
+ a!\sum_{\ell\ge0}e_{a+6\ell}7^\ell v^\ell
+                          \mathscr A^{a+6\ell}
+                  \in\mathcal F_a.                    \tag{6}
+\]
+Every summand is in $\mathcal F_a$, by the product and seven
+rules; the sum is $t$-adically well-defined.
+
+Also
+\[
+ \kappa=-6\sum_{j\ge0}7^j(1-H)^{6j+1}\in\mathcal F_1.
+ \tag{7}
+\]
+Indeed every binomial term $7^jH^k$ has
+$k-6j\le1$. This expansion converges coefficientwise
+$7$-adically. Equations (3) and (6)--(7) prove (2) for $Q=1$.
+
+The exact raising identities, before reduction, are
+\[
+ \begin{split}
+ V_{N,a}(XQ)&=(c-a-6vD_v)V_{N,a}(Q)+aV_{N,a-1}(Q),
+                                  \quad 1\le a<6,\\
+ V_{N,0}(XQ)&=(c-6vD_v)V_{N,0}(Q)
+                         +\frac{7v}{5!}V_{N,5}(Q).
+ \end{split}                                             \tag{8}
+\]
+They follow by applying $A$ to the finite polynomial in (1).
+Now $e_{a-1}\ge e_a$ and
+\[
+ 1+e_5=1+\left\lceil\frac{s(N)-6}{6}\right\rceil
+       =\left\lceil\frac{s(N)}6\right\rceil\ge e_0 .
+\]
+Thus (8) preserves the six bounds, proving them for every
+monomial $Q=X^j$ and then every integral $Q$ by linearity.
+The extension-field assertion follows from the same finite
+linear combination, without integer-valued binomial assertions
+outside $\mathbb Z_7$.
+\end{proof}
+
+\begin{corollary}[A single cut in the normalized raising cycle]
+\label{cor:cut}
+Set $\widetilde V_{N,a}=7^{-e_a(N)}V_{N,a}$, and put
+$a_*=(s(N)-1)\bmod6=(N-1)\bmod6$.
+The reduction of (8) is an open six-row chain: all cyclic
+off-diagonal links survive except the one whose target is $a_*$.
+Explicitly, for $1\le a<6$,
+\[
+ \overline{\widetilde V_a(XQ)}
+   =(\bar c-a+vD_v)\overline{\widetilde V_a(Q)}
+       +a\,\epsilon_a\overline{\widetilde V_{a-1}(Q)},
+ \quad
+ \epsilon_a=\begin{cases}0&a=a_*,\\1&a\ne a_*,\end{cases}
+ \tag{9}
+\]
+and
+\[
+ \overline{\widetilde V_0(XQ)}
+ =(\bar c+vD_v)\overline{\widetilde V_0(Q)}
+       +v\epsilon_0\overline{\widetilde V_5(Q)}.
+ \tag{10}
+\]
+Thus the raising rule has only $42$ possibilities, indexed by
+$N\bmod7$ and $N\bmod6$. Its actual six seed polynomials
+$\overline{\widetilde V_a(1)}$ are not asserted to belong to a
+finite set or to have full rank.
+\end{corollary}
+\begin{proof}
+The exponents of seven multiplying the five internal links are
+$e_{a-1}-e_a\in\{0,1\}$; the wrap link has exponent
+$1+e_5-e_0\in\{0,1\}$. Their sum is one, and their unique
+nonzero term has target $(s(N)-1)\bmod6$.
+Finally $-6=1$ and $5!=1$ in $\mathbb F_7$.
+\end{proof}
+
+\begin{lemma}[A finite polynomial gauge and seven coupled eigensections]
+\label{lem:gauge}
+Let $\kappa=\bar N+5\in\mathbb F_7$, $t=(N-1)\bmod6$, and
+work on polynomial or Laurent-polynomial columns over
+$\overline{\mathbb F}_7$. Put $\delta=vD_v$,
+\[
+ \mathcal D=\operatorname{diag}(\delta+\kappa-a)_{a=0}^5.
+\]
+Let $\mathcal J$ have entries $\mathcal J_{a,a-1}=a$
+for $1\le a<6$, and $\mathcal J_{0,5}=v$, except that the
+entry with target row $t$ is omitted.
+The raising operator in (9)--(10) is
+$\mathcal L=\mathcal D+\mathcal J$. One has
+\[
+ \mathcal J^6=0,\qquad
+ E=\sum_{j=0}^5\frac{\mathcal J^j}{j!}\in
+              \operatorname{SL}_6(\mathbb F_7[v]),\qquad
+ \mathcal L=E\mathcal D E^{-1},\qquad
+ \mathcal L^7=\mathcal L.                              \tag{11}
+\]
+For the actual seed column
+$s_N=(\overline{\widetilde V_{N,a}(1)})_{a=0}^5$ put
+$t_N=E^{-1}s_N$. Define $t_{N,\lambda}$ by retaining in
+row $a$ precisely the monomials $v^k$ of $t_N$ with
+$k+\kappa-a=\lambda$ in $\mathbb F_7$.
+Then the entire normalized five-column matrix has the exact
+polynomial factorization
+\[
+ [s_N,\mathcal Ls_N,\ldots,\mathcal L^4s_N]
+  =E\,[t_{N,\lambda}]_{\lambda\in\mathbb F_7}
+                  [\lambda^j]_{\lambda\in\mathbb F_7,\ 0\le j\le4}.
+                                                               \tag{12}
+\]
+Thus evaluation at a residue point preserves the rank if the
+left factor $E$ is removed. All seven eigensections in the
+remaining six-by-seven matrix are still coupled.
+\end{lemma}
+\begin{proof}
+The single removed link makes $\mathcal J$ an open chain,
+so $\mathcal J^6=0$; a simultaneous ordering along that chain
+makes it strictly triangular. Consequently $E$ has determinant
+one and inverse $\sum_{j=0}^5(-\mathcal J)^j/j!$.
+For an internal link,
+$[\mathcal D,\mathcal J]_{a,a-1}=-\mathcal J_{a,a-1}$.
+For the wrap link the Euler derivative of $v$ and the diagonal
+difference contribute $1+5=6=-1$. Thus
+$[\mathcal D,\mathcal J]=-\mathcal J$, and the finite
+conjugation identity gives
+$E\mathcal D E^{-1}=\mathcal D+\mathcal J$.
+Since $\delta^7=\delta$ on Laurent monomials and every
+$\kappa-a$ belongs to $\mathbb F_7$, one has
+$\mathcal D^7=\mathcal D$, hence (11).
+
+The eigensection $t_{N,\lambda}$ is exactly the component
+with $\mathcal D t_{N,\lambda}=\lambda t_{N,\lambda}$.
+Summing these components gives $t_N$, so conjugation gives
+(12). No derivative is applied on an evaluated quotient.
+Distinct eigensections can cancel after evaluation; separate
+vanishing of them is not asserted.
+\end{proof}
+
+\begin{proposition}[The normalized residue rank can still drop]
+\label{prop:rank-obstruction}
+For $N=8$ and $\bar v=6$, the normalized five-column matrix
+has rank exactly four. Hence full rank of every normalized
+residue matrix is not an available all-index conclusion.
+\end{proposition}
+\begin{proof}
+Here $s(8)=2$ and $(e_0,\ldots,e_5)=(1,0,0,0,0,0)$.
+Direct finite recurrence (1), or the defining auxiliary recurrence,
+gives the exact reduced matrix
+\[
+ \begin{pmatrix}
+ 6&1&6&1&4\\
+ 4&5&5&3&2\\
+ 4&5&3&1&1\\
+ 0&5&1&4&4\\
+ 0&0&6&5&3\\
+ 0&0&0&2&0
+ \end{pmatrix}.
+\]
+All six maximal minors vanish in $\mathbb F_7$, while the
+upper left four-by-four minor is one.
+This point does not produce a multiple physical root:
+$Y=7t=-1/v$ reduces to one, and the actual physical polynomial
+$H_8(Y)=7T_{8,8,6}(Y/7)$ satisfies
+$H_8(1)\equiv21\pmod{49}$.
+Its leading coefficient is a unit by
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}
+{Lemma \texttt{lem:coefficients}}, so its entire residue cluster
+at one is Eisenstein and therefore separable, by
+\href{GAP_SIX_SMALL_OFFSET_FAMILIES.tex}
+{Lemma \texttt{lem:local-cluster}}.
+\end{proof}
+
+For example, $s(N)=8$ forces a second division by seven in row
+zero, while the other five rows are guaranteed one division.
+The normalization and finite gauge apply to every physical
+index. They do not prove that the actual eigensection matrix
+in (12) has rank five on the required points, that its actual
+seeds have finite Cartier closure, or that physical gap-six
+polynomials are squarefree. The remaining problem is to exploit
+their actual diagonal-series origin rather than replace them
+by arbitrary integral seeds.
+\end{document}

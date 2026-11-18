@@ -89,8 +89,12 @@
       "authors": "Lustig Moriah",
       "year": 1993,
       "url": "https://eudml.org/doc/165037",
-      "audit": "Exact numerical equality hypotheses extracted from coauthor Moriah2007 Theorems3.6 and4.20, including Burau evaluation at t=-1 visually checked in the source. Full original geometric definition and proof not audited.",
-      "scope": "Generalized Montesinos2n-plats with gcd of constituent2bridge numerators alpha!=1 have ordinary group rank=exterior Heegaard genus=bridge=n. More generally, the explicit Burau plat-matrix gcd criterion in Moriah2007 Theorem4.20 gives that equality. Extra beta determinant conditions concern distinct tunnel systems, not the equality. No all-arborescent or alpha1 claim."
+      "audit": "Original official Goettingen scanned pages now retained unchanged with complete URL/hash manifest. Root and source-audit agent visually read numericalequality, geometricconstructor, exactmatrixgcdcriterion and reduction. Complete originalproof remains imported. The α1geometriclabel and generalFox-ideal representations are not excluded.",
+      "scope": "Original generalized-Montesinos nonunit numerator-gcd criterion and nonunit Burau(-1) matrix criterion. For Kn every possibleplat has gcd1 because cyclicdouble-coverhomology gives Foxdimension<=2, whereas eachplat has>=4caps. This does not exclude every geometric generalized-Montesinos presentation or MoriahThm3.5generalrankmethod.",
+      "snapshot": "sources/lustig-moriah-1993-primary-pages.json",
+      "sha256": "fefe5e48ff30d783f2e34b364bd701ce689024bef12637a38ad62085a13e1fe5",
+      "doi": "10.1007/BF01444882",
+      "location": "OriginalTheorem0.1p168; Definition1.2p170/Figure1p171; L/M/N matricesp186; Proposition5.6p187"
     },
     {
       "id": "BRU92",
@@ -189,7 +193,17 @@
       "location": "Section 2, Proposition 1, pretzel cycle presentation; Theorems 1 and 2",
       "audit": "Published Theorem1 and disk-band bridge formula read in full HTML. Euler characteristic gives a crosscap obstruction;12 exact alternating examples fail all standard twisted diagrams. Rational-tangle extensions after Theorem1 remain separately open.",
       "scope": "twisted links; even-weight bipartite arborescent links; recovers pretzel and Montesinos cases; absent graph edges mean no added relation The introduction also records(-1)additivity of meridional rank for knots detected by Coxeter quotients, without assuming bridge equality; this conditional precedent is credited, not generalized to all knots.",
-      "snapshot": "sources/bbk-coxeter-published-2021.html"
+      "snapshot": "sources/bbk-coxeter-published-2021.html",
+      "additional_snapshots": [
+        {
+          "snapshot": "sources/bbk-coxeter-published-2021.pdf",
+          "sha256": "2aef45fa066a9d685c657218dd3f243d4c30176c90583ed671f4ccb238c4cf04",
+          "location": "Theorems1-2pp1534-1535; Lemma1/Proposition2p1540; Proposition4/proofpp1548-1550",
+          "publication": "Math.Ann.379(2021),1533-1551",
+          "scope": "Current primary statement and actual relevant proof read for the uniform precise-construction comparison; no unrestricted diagram-family exclusion."
+        }
+      ],
+      "publication": "Math.Ann.379(2021),1533-1551"
     },
     {
       "id": "SERRE80",
@@ -221,10 +235,13 @@
       "year": 2024,
       "url": "https://arxiv.org/abs/2208.09032",
       "snapshot_url": "https://arxiv.org/html/2208.09032",
-      "audit": "Primary Sections2.1 and3.1.1 classification/target and complete-coloring logic read. Current24-case exhaustive transposition/H4 searches use independent root arithmetic, rather than trusting historical workbook non-hits.",
+      "audit": "Primary Sections2.1 and3.1.1 classification/target and complete-coloring logic read. Current24-case exhaustive transposition/H4 searches use independent root arithmetic, rather than trusting historical workbook non-hits. Current primary publication/version metadata verified; fixed-diagram finite-Coxeter algorithm and exact scopes reread for allKn. The through16 table contains no Kn because crossing>=17.",
       "scope": "595515 of 1701936 knots through 16 crossings have explicit maximal rank Coxeter quotients in this computation; not all knots through 16",
       "limits": "12a210 requires an infinite rather than finite maximal rank Coxeter quotient; Ryffel theorem supplies torus knots without nontrivial Coxeter quotients",
-      "snapshot": "sources/bkm-coxeter-2208.09032v1.pdf"
+      "snapshot": "sources/bkm-coxeter-2208.09032v1.pdf",
+      "publication": "ExperimentalMathematics34(2025),no1,27-37",
+      "doi": "10.1080/10586458.2024.2309507",
+      "version_dates": "Online12March2024; retainedarXiv2208.09032v1,18August2022; currentarXivhistoryonlyv1"
     },
     {
       "id": "BKP26A",
@@ -236,7 +253,17 @@
       "location": "Theorem 1.1, Proposition 1.4, distance discussion",
       "audit": "Exact Definition1.2, Proposition1.4 and Section2.1 path quotient read; Section2.2 displayed multi-sublink and connected-sum operations separately compared. Current determinant obstruction excludes the gcd family on24 exact knots.",
       "scope": "suitable fishnets include high-distance knots; for a b-bridge position with b>1 an added unknot gives bridge=meridional rank=ordinary rank=2b-1; does not imply MRC for the original sublink",
-      "snapshot": "sources/bkp-fishnet-2411.10642.html"
+      "snapshot": "sources/bkp-fishnet-2411.10642.html",
+      "additional_snapshots": [
+        {
+          "snapshot": "sources/bkp-fishnet-published-2026.pdf",
+          "sha256": "5d5bf0c22baa24286415bd8ab0991a593263f4087da13a88f5030fb8daea1a4d",
+          "location": "Proposition1.4pp1341-1342/proofp1343; Otherfishnetspp1343-1346; addedunknotTheorem1.1p1340/proofpp1348-1350",
+          "publication": "Math.Proc.Camb.Phil.Soc.181(2026),1339-1355",
+          "scope": "Current primary statement and actual relevant proof read for the uniform precise-construction comparison; no unrestricted diagram-family exclusion."
+        }
+      ],
+      "publication": "Math.Proc.Camb.Phil.Soc.181(2026),1339-1355"
     },
     {
       "id": "BKP26B",
@@ -245,17 +272,32 @@
       "year": 2026,
       "url": "https://msp.org/pjm/2026/342-2/pjm-v342-n2-p.pdf",
       "audit": "primary abstract and introduction read",
-      "scope": "bridge number is the minimum size of presentations with relations witnessed by the specified embedded plain spheres; restriction on relations remains essential"
+      "scope": "Universal plain-sphere number equalsbridge for all links, using restricted geometric meridional presentations. It supplies no unrestricted ordinary meridional-rank lower bound or sharp Coxeter/augmentation witness; remains applicable to Kn.",
+      "additional_snapshots": [
+        {
+          "snapshot": "sources/bkp-plain-sphere-published-2026.pdf",
+          "sha256": "615b08152fc160a8135c7e6c4bf0a7594cf2f5cef1f2a34c220c84002677857b",
+          "location": "Theorem1.1p218; Definitions2.2/2.5pp219-220; Corollary3.8proofp229",
+          "publication": "PacificJ.Math.342(2)(2026),217-233",
+          "scope": "Current primary statement and actual relevant proof read for the uniform precise-construction comparison; no unrestricted diagram-family exclusion."
+        }
+      ],
+      "publication": "PacificJ.Math.342(2)(2026),217-233"
     },
     {
       "id": "BKN25",
-      "title": "A preorder on the set of links defined via orbifolds",
+      "title": "A preorder on the set of links with applications to symmetric unions",
       "authors": "Boileau Kitano Nozaki",
-      "year": 2025,
-      "url": "https://arxiv.org/html/2510.12372v1",
-      "location": "Section 8.2, Questions 8.4 and 8.7, Remarks 8.8 and 8.9",
-      "audit": "orbifold-generator inequalities and open-question scope read",
-      "scope": "stronger bridge=torsion-generator-rank question for prime links with infinite orbifold group; relation to meridional and Coxeter ranks"
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2510.12372v3",
+      "location": "Definition1.1p2; Definition1.2(3)p3; Theorem1.7pp3-4/proofp18; Lemma2.11p8; Question8.4/Remarks8.5-8.6/Lemma8.7p40",
+      "audit": "Actual current statements and Section4 proofpp12-18 read by source-audit agent; root read exact definition/theorem and proofp18. v3 adds canonical parity commutation to pi-domination, a material link-source restriction. Knot-source epimorphisms automatically preserve parity. Literal Theorem4.7 omits nontrivial in its centralizer premise; setup/Lemma4.1 and actual proof use nontrivial elements only. Adopt exact Theorem1.7/Corollary4.10, not the erroneous all-elements wording.",
+      "scope": "Nonzero-determinant arborescent source cannot pi-dominate a pi-hyperbolic prime factor. This excludes all Kn and their trefoil-sum targets; any arborescent KNOT has no abstractorbifold epimorphism to Kn. The stronger torsion-generator conjecture Question8.4 is verified for this explicit family by its own geometric/A8 proof, not solved globally.",
+      "arxiv": "2510.12372v3",
+      "snapshot": "sources/bkn-preorder-2510.12372v3.pdf",
+      "sha256": "0a835491cec5a186b4eb978569d0c3afedeccf92d4f5910986c2b115766a2916",
+      "version_dates": "Currentv3,19April2026; replaces41pagev1by44pagev3",
+      "previous_version_scope": "v1Definition1.1 allowed arbitraryorbifold epimorphisms; v3requiresparitycommutation. Oldv1Question8.7 is nowv3Question8.4. Oldv1Question8.4 is nowv3Question8.1."
     },
     {
       "id": "GGLW26",
@@ -365,7 +407,17 @@
       "snapshot": "sources/many-twigs.pdf",
       "location": "Theorems1,2; definitions of many twigs, flattening number and m(T); inductive proof architecture",
       "audit": "Exact tree and weight hypotheses read, relevant page visually checked. Not an independent full proof audit.",
-      "scope": "If weighted plane tree T is obtained from a subtree T0 by adding at least3 twigs to every vertex of T0 and all weights avoid0,+1,-1, then mr=bridge=m(T)=f(T)+2. A twig is a straight leaf-to-branch-point branch; f(T) is minimum edges deleted to leave a forest with maximum valence2. No all-arborescent theorem."
+      "scope": "If weighted plane tree T is obtained from a subtree T0 by adding at least3 twigs to every vertex of T0 and all weights avoid0,+1,-1, then mr=bridge=m(T)=f(T)+2. A twig is a straight leaf-to-branch-point branch; f(T) is minimum edges deleted to leave a forest with maximum valence2. No all-arborescent theorem.",
+      "additional_snapshots": [
+        {
+          "snapshot": "sources/bbkm-many-twigs-published-2023.pdf",
+          "sha256": "2baab7debd88556e3496a12b76b54bc1c9d272567f79f3f2aace2cf32027fd00",
+          "location": "Theorem2p76; Section2proofpp78-80",
+          "publication": "Algebraic&GeometricTopology23(2023),75-85",
+          "scope": "Current primary statement and actual relevant proof read for the uniform precise-construction comparison; no unrestricted diagram-family exclusion."
+        }
+      ],
+      "publication": "Algebraic&GeometricTopology23(2023),75-85"
     },
     {
       "id": "MORIAH07",
@@ -374,8 +426,8 @@
       "year": 2007,
       "url": "https://doi.org/10.2140/gtm.2007.12.191",
       "snapshot": "sources/moriah-heegaard-2007.pdf",
-      "location": "Theorems3.6,4.19,4.20; definitions of generalized Montesinos plats and the integral Burau matrices",
-      "audit": "Published coauthor survey PDF cached and Theorem4.20 with L,M definitions read at printedp206. Its exact nonunit matrix-gcd criterion is imported; original LM93 full proof remains unaudited. Current Fox determinant obstruction excludes it on24 exact bridge-four knots.",
+      "location": "Printedpp197-198: two-sided Foxideal setup andTheorem3.5; Theorems3.6,4.19,4.20 and integralBurau matrix definitions",
+      "audit": "Published coauthor survey PDF cached and Theorem4.20 with L,M definitions read at printedp206. Its exact nonunit matrix-gcd criterion is imported; original LM93 full proof remains unaudited. Current Fox determinant obstruction excludes it on24 exact bridge-four knots. OriginalLM93p168/170/186/187 now also read, so its scalarcriterion identity is no longer sourced only via survey. The general matrix/Fox-ideal rankcriterion Theorem3.5 setup and statement were read at printedpp197-198. For the literal Kn four-meridian presentation, an exact uniform integer-Laurent identity excludes all scalar models, and a fixed-A8 whole-group-algebra unit overF2 excludes all such char2 models in everydimension. An integer odddeterminant argument also excludes unital char0 models through that fixedA8 quotient. Other kernels, possible odd exceptional characteristics and generalmatrixmodels remainunexcluded; originalupstreamLemma2.1proof is imported.",
       "scope": "For a2n-plat braid B, let R be unreduced Burau at t=-1, L rows paired differences, M columns paired sums. If gcd entries of LRM is not1, then ordinary knot-group rank=exterior genus=bridge=n, hence MRC. Generalized Montesinos numerator-gcd condition is a specialization; beta congruences apply to additional tunnel inequivalence claims."
     },
     {
@@ -387,7 +439,14 @@
       "snapshot": "sources/core-groups-v2.html",
       "location": "Introduction; Section7 especially Theorem7.5 and Remark7.11",
       "audit": "Core-group history, free-product description and branched-complex normalization read. Full article not independently audited.",
-      "scope": "Classical core group, introduced by Kelly1991 and Wada1992, is pi1(double branched cover) free product Z. Fixing one arc to identity gives homomorphisms from the cover group. Historical credit for the r2 nonabelian lift-count method is retained."
+      "scope": "Classical core group, introduced by Kelly1991 and Wada1992, is pi1(double branched cover) free product Z. Fixing one arc to identity gives homomorphisms from the cover group. Historical credit for the r2 nonabelian lift-count method is retained.",
+      "additional_snapshots": [
+        {
+          "snapshot": "sources/core-groups-2311.02048v2.html",
+          "sha256": "029013f8e033291e430d13fe4781d8550bb2ea03751ea7d89e1b33a1ce60d5f2",
+          "location": "Introduction Kelly/Wada identity and Section7"
+        }
+      ]
     },
     {
       "id": "BC13",
@@ -617,7 +676,7 @@
       "url": "https://doi.org/10.1007/s00039-013-0247-2",
       "snapshot": "sources/kolpakov-martelli-one-cusp-1303.6122v7.pdf",
       "version_dates": "arXiv:1303.6122v7, 23 October 2013",
-      "location": "Figure 2 and Section 1.1, printed pages 5\u20136",
+      "location": "Figure 2 and Section 1.1, printed pages 5–6",
       "audit": "Exact quotient construction read and visually checked: minimally twisted six-chain exterior double-covers the punctured octahedral orbifold, all twelve edges have index two, and its six torus cusps correspond to six four-marked sphere ends. The full four-dimensional construction is not independently audited.",
       "scope": "Actual branched-cover model for arbitrary rational fillings of the punctured 6* medial core. Rational-tangle solid-torus filling and gluing identification are proved separately in the new topology note.",
       "sha256": "ca4c8aac66f01bfc56304e820a173bcb8bc933b32d0717839d4c8c132214ef12"
@@ -629,10 +688,10 @@
       "year": 2021,
       "url": "https://doi.org/10.4310/CAG.2021.v29.n7.a5",
       "snapshot": "sources/martelli-seven-chain-1808.08430v2.pdf",
-      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597\u20131641",
-      "location": "Theorem 2.7 and its proof, preprint printed pages 15\u201316; following discussion of the two mixed pieces",
+      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597–1641",
+      "location": "Theorem 2.7 and its proof, preprint printed pages 15–16; following discussion of the two mixed pieces",
       "audit": "The exact complete closed nonhyperbolic M6 filling statement, graph cases and two sporadic mixed cases were read and visually checked. The theorem's exhaustive classification and computational tables are imported; no independent enumeration replay is claimed.",
-      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer\u2013Vietoris argument. No full M7 classification is used.",
+      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer–Vietoris argument. No full M7 classification is used.",
       "sha256": "b2c8436322c80419d023d58eb8978ce7de10c9f9ad78a6c96e53b0b99685ed1f"
     },
     {
@@ -643,7 +702,7 @@
       "url": "https://dornsife.usc.edu/francis-bonahon/wp-content/uploads/sites/205/2023/06/BonSieb-compressed.pdf",
       "snapshot": "sources/bonahon-siebenmann-2016.pdf",
       "version_dates": "Author monograph, version 26 January 2016",
-      "location": "Introduction printed pages vi\u2013vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
+      "location": "Introduction printed pages vi–vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
       "audit": "The exact algebraic/arborescent correspondence and graph-manifold double-cover fact were read at their stated locations. Full proofs and the whole monograph are not independently audited. The new proper-four-vertex graph reduction is written separately and is not inferred from the canonical-projection uniqueness theorem.",
       "scope": "Classical arborescent-cover input for closures of algebraic tangles arising from explicit local graph reductions. Supplies no all-diagram preservation of a planar polyhedral core.",
       "sha256": "c887732f91421ce8bf424f32ab4c3b52b842a5c15f8bc95c62599b8d8baa88a6"
@@ -970,6 +1029,64 @@
       "audit": "Exact primary definition and theorem read independently by root and source-audit agent; root visually checked theorem page. Full proof is imported. This published edition includes word-hyperbolicity and supersedes the historical qualification in Lackenby1999v2.",
       "scope": "Independent six-theorem: a filling slope of ordinary length>6 on an embedded horocusp of a finite-volume hyperbolic manifold gives a hyperbolike filling. Attribution/background in the all-parameter proof; main adopted conclusion uses Lackenby Theorem3.1 plus geometrization.",
       "sha256": "095e93ec443037cdc71252fe78dcd8918b6ac7785a65b327414d477cd8aa8482"
+    },
+    {
+      "id": "DL09",
+      "title": "Equivariant Ricci flow with surgery and applications to finite group actions on geometric 3-manifolds",
+      "authors": "Jonathan Dinkelbach and Bernhard Leeb",
+      "year": 2009,
+      "doi": "10.2140/gt.2009.13.1129",
+      "url": "https://msp.org/gt/2009/13-2/gt-v13-n2-p15-p.pdf",
+      "snapshot": "sources/dinkelbach-leeb-equivariant-2009.pdf",
+      "publication": "Geometry&Topology13(2009),1129-1173",
+      "location": "TheoremH printedp1129; actual proofpp1166-1167/PDFpp38-39",
+      "audit": "Root read exact statement and actual proof text and visually inspected all3relevantpages. Full upstream Ricci-flow/surgery/stability machinery imported.",
+      "scope": "Finite smooth action on a closed hyperbolic3-manifold is smoothly conjugate to an isometric action. Applied to actual branched-cover involution, preserving the quotient branch pair, to obtain actual compact hyperbolic cone orbifold of anglepi.",
+      "sha256": "4bfe844481428d79598147c2eff4e2b00f4466e683030ad5467cea3f94173159"
+    },
+    {
+      "id": "KOJ98",
+      "title": "Deformations of hyperbolic 3-cone-manifolds",
+      "authors": "Sadayoshi Kojima",
+      "year": 1998,
+      "doi": "10.4310/jdg/1214461108",
+      "arxiv": "math/9809034v1",
+      "url": "https://arxiv.org/abs/math/9809034v1",
+      "snapshot": "sources/kojima-cone-math9809034v1.pdf",
+      "publication": "Journal of Differential Geometry49(1998),469-516",
+      "version_dates": "Retained exact arXivmath/9809034v1,7September1998,34pages",
+      "location": "Theorem1.2.1 and actual proof printedpp5-6",
+      "audit": "Root read exact statement and complete local proof, textually and visually. Curvature-to-topology and Haken uniformization foundations remain imported; full cone deformation theorem unnecessary.",
+      "scope": "Nonsingular part of orientable finitevolumehyperbolic cone3-manifold has a complete finitevolumehyperbolic metric. Applied to actual quotient(S3,K_n), gives all knot-exterior hyperbolicity without asserting restricted quotient metric is already complete.",
+      "sha256": "bdf766434f33f8b1ab04bc7eb75f05bc13d9341f41b291d6c5b847dc3d74ba3d"
+    },
+    {
+      "id": "GWZ26",
+      "title": "Nonembeddable contractible open manifolds arising from Whitehead doubling",
+      "authors": "Shijie Gu, Jian Wang and Yanqing Zou",
+      "year": 2026,
+      "arxiv": "2510.06598v2",
+      "url": "https://arxiv.org/abs/2510.06598v2",
+      "snapshot": "sources/gwz-whitehead-2510.06598v2.pdf",
+      "version_dates": "arXiv2510.06598v2,12August2026",
+      "location": "Proposition1.3p4/proofp8; Lemma2.3p7; Corollaries2.5-2.6p9",
+      "audit": "Internal source-audit agent read actual primary statements/proofs and upstream Weidmann Theorem5/proof. Full boundary-extension argument and Nielsen foundations not independently re-established.",
+      "scope": "Additional group-bound context only: iterated Whitehead-doubles rank grows with hyperbolic JSJpieces; exactrankN+2 for hyperbolic tunnel-number-one companions. Not a premise of new Kn results; genus and exterior topology exclude Whitehead operations for this family.",
+      "sha256": "7b58cad7f49972c462a00043e78a3e920c749fe64d2a0512e9f585126d7f76e7"
+    },
+    {
+      "id": "WEID02",
+      "title": "The Nielsen method for groups acting on trees",
+      "authors": "Richard Weidmann",
+      "year": 2002,
+      "url": "https://www.math.uni-kiel.de/algebra/de/weidmann/research/material-research/nielsen-pdf",
+      "snapshot": "sources/weidmann-nielsen-author.pdf",
+      "publication": "Proceedings of the London Mathematical Society85(2002),93-118",
+      "version_dates": "Retained25page unversioned author manuscript; published26page byte identity not asserted",
+      "location": "Theorem5p3; Corollary18p19; actual Theorem5 proofpp19-20",
+      "audit": "Internal source-audit agent read exact statement and proof, textually and visually, tracing JSJessential vertices and malnormal cusp groups to Corollary18. Full prior Nielsen-method proof remains imported.",
+      "scope": "Closed orientable3-manifold with N non-Seifert JSJpieces has group rank>=N+1. Upstream context for GWZ boundary/doubling bounds; no adopted lower bound4 for the current knot groups.",
+      "sha256": "b2796fc9075d8f9e4e9e3988cdc90f53e3336261b4488a0d160fded6de0bb57a"
     }
   ],
   "unresolved_scope_extractions": [

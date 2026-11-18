@@ -1,0 +1,1252 @@
+{
+  "claim": "EXCEPTIONAL-POLAR-FOLD-WHOLE-CHART-AND-BIRATIONAL-IMAGE",
+  "outcome": "PASS",
+  "check_count": 296,
+  "checks": [
+    {
+      "name": "five-free extraction leading pole",
+      "passed": true
+    },
+    {
+      "name": "five-free extraction logarithmic coefficient",
+      "passed": true
+    },
+    {
+      "name": "five-free extraction constant coefficient",
+      "passed": true
+    },
+    {
+      "name": "five local multiplicities match tame order",
+      "passed": true
+    },
+    {
+      "name": "independent local exceptional inverse norm",
+      "passed": true
+    },
+    {
+      "name": "exact residue parameter is affine separating",
+      "passed": true
+    },
+    {
+      "name": "exact unnormalized field chart",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue is killed exactly by A0",
+      "passed": true
+    },
+    {
+      "name": "exact source derivative has no logarithmic residue i1j0",
+      "passed": true
+    },
+    {
+      "name": "exact source derivative has no logarithmic residue i1j1",
+      "passed": true
+    },
+    {
+      "name": "exact source derivative has no logarithmic residue i2j1",
+      "passed": true
+    },
+    {
+      "name": "exact source derivative has no logarithmic residue i3j4",
+      "passed": true
+    },
+    {
+      "name": "normalized exact inverse field coordinate",
+      "passed": true
+    },
+    {
+      "name": "universal target Jacobian chain factor",
+      "passed": true
+    },
+    {
+      "name": "exact valuation source common coordinate",
+      "passed": true
+    },
+    {
+      "name": "Laurent admission iff no negative orders source common coordinate",
+      "passed": true
+    },
+    {
+      "name": "exact valuation source companion",
+      "passed": true
+    },
+    {
+      "name": "Laurent admission iff no negative orders source companion",
+      "passed": true
+    },
+    {
+      "name": "exact valuation exceptional vanishing generator",
+      "passed": true
+    },
+    {
+      "name": "Laurent admission iff no negative orders exceptional vanishing generator",
+      "passed": true
+    },
+    {
+      "name": "exact valuation w generator",
+      "passed": true
+    },
+    {
+      "name": "Laurent admission iff no negative orders w generator",
+      "passed": true
+    },
+    {
+      "name": "exact valuation k residue generator",
+      "passed": true
+    },
+    {
+      "name": "Laurent admission iff no negative orders k residue generator",
+      "passed": true
+    },
+    {
+      "name": "exact valuation l residue square",
+      "passed": true
+    },
+    {
+      "name": "Laurent admission iff no negative orders l residue square",
+      "passed": true
+    },
+    {
+      "name": "exact valuation source product",
+      "passed": true
+    },
+    {
+      "name": "Laurent admission iff no negative orders source product",
+      "passed": true
+    },
+    {
+      "name": "contracting linear-Jacobian negative control",
+      "passed": true
+    },
+    {
+      "name": "contracting control has constant zero-line image",
+      "passed": true
+    },
+    {
+      "name": "identity Keller pair does not admit exceptional valuation chart",
+      "passed": true
+    },
+    {
+      "name": "unrestricted normalized critical-line coefficient identity",
+      "passed": true
+    },
+    {
+      "name": "primitive derivative Bezout pair c0",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c0d1",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c0d1",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c0d1",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c0d2",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c0d2",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c0d2",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c0d3",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c0d3",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c0d3",
+      "passed": true
+    },
+    {
+      "name": "primitive derivative Bezout pair c1",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c1d1",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c1d1",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c1d1",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c1d2",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c1d2",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c1d2",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c1d3",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c1d3",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c1d3",
+      "passed": true
+    },
+    {
+      "name": "primitive derivative Bezout pair c2",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c2d1",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c2d1",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c2d1",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c2d2",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c2d2",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c2d2",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c2d3",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c2d3",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c2d3",
+      "passed": true
+    },
+    {
+      "name": "primitive derivative Bezout pair c3",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c3d1",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c3d1",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c3d1",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c3d2",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c3d2",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c3d2",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c3d3",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c3d3",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c3d3",
+      "passed": true
+    },
+    {
+      "name": "primitive derivative Bezout pair c4",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c4d1",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c4d1",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c4d1",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c4d2",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c4d2",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c4d2",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c4d3",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c4d3",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c4d3",
+      "passed": true
+    },
+    {
+      "name": "primitive derivative Bezout pair c5",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c5d1",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c5d1",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c5d1",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c5d2",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c5d2",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c5d2",
+      "passed": true
+    },
+    {
+      "name": "zero constant Jacobian coefficient c5d3",
+      "passed": true
+    },
+    {
+      "name": "exact hprime divisibility identity c5d3",
+      "passed": true
+    },
+    {
+      "name": "polynomial hprime factor c5d3",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d2",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d2",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d3",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d3",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d4",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d4",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d5",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d5",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d6",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d6",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d7",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d7",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d8",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d8",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d9",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d9",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d10",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d10",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d11",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d11",
+      "passed": true
+    },
+    {
+      "name": "nonbirational image forces nonconstant Jacobian coefficient d12",
+      "passed": true
+    },
+    {
+      "name": "nonbirational critical coefficient has derivative root d12",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d1low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d1low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d1low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d1low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d1low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d1low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d1low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d1low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d1low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d1low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d2low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d2low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d2low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d2low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d2low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d2low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d2low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d2low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d2low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d2low2*t",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch first order m2",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch consecutive order m2",
+      "passed": true
+    },
+    {
+      "name": "primitive tangent Wronskian nonzero m2",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d3low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d3low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d3low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d3low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d3low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d3low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d3low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d3low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d3low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d3low2*t",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch first order m3",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch consecutive order m3",
+      "passed": true
+    },
+    {
+      "name": "primitive tangent Wronskian nonzero m3",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d4low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d4low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d4low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d4low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d4low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d4low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d4low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d4low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d4low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d4low2*t",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch first order m4",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch consecutive order m4",
+      "passed": true
+    },
+    {
+      "name": "primitive tangent Wronskian nonzero m4",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d5low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d5low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d5low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d5low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d5low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d5low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d5low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d5low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d5low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d5low2*t",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch first order m5",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch consecutive order m5",
+      "passed": true
+    },
+    {
+      "name": "primitive tangent Wronskian nonzero m5",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d6low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d6low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d6low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d6low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d6low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d6low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d6low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d6low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d6low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d6low2*t",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch first order m6",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch consecutive order m6",
+      "passed": true
+    },
+    {
+      "name": "primitive tangent Wronskian nonzero m6",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d7low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d7low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d7low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d7low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d7low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d7low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d7low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d7low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d7low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d7low2*t",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch first order m7",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch consecutive order m7",
+      "passed": true
+    },
+    {
+      "name": "primitive tangent Wronskian nonzero m7",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d8low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d8low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d8low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d8low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d8low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d8low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d8low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d8low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d8low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d8low2*t",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch first order m8",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch consecutive order m8",
+      "passed": true
+    },
+    {
+      "name": "primitive tangent Wronskian nonzero m8",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d9low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d9low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d9low0",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d9low0",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d9low0",
+      "passed": true
+    },
+    {
+      "name": "retained finite family linear Jacobian d9low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family elimination d9low2*t",
+      "passed": true
+    },
+    {
+      "name": "retained finite family expected integral degree d9low2*t",
+      "passed": true
+    },
+    {
+      "name": "failure of source polynomial admission d9low2*t",
+      "passed": true
+    },
+    {
+      "name": "finite family supplies no original Keller coordinate d9low2*t",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch first order m9",
+      "passed": true
+    },
+    {
+      "name": "nonimmersive branch consecutive order m9",
+      "passed": true
+    },
+    {
+      "name": "primitive tangent Wronskian nonzero m9",
+      "passed": true
+    },
+    {
+      "name": "seven-relation source chart equation 0",
+      "passed": true
+    },
+    {
+      "name": "seven-relation whole exceptional chart equation 0",
+      "passed": true
+    },
+    {
+      "name": "seven-relation source chart equation 1",
+      "passed": true
+    },
+    {
+      "name": "seven-relation whole exceptional chart equation 1",
+      "passed": true
+    },
+    {
+      "name": "seven-relation source chart equation 2",
+      "passed": true
+    },
+    {
+      "name": "seven-relation whole exceptional chart equation 2",
+      "passed": true
+    },
+    {
+      "name": "seven-relation source chart equation 3",
+      "passed": true
+    },
+    {
+      "name": "seven-relation whole exceptional chart equation 3",
+      "passed": true
+    },
+    {
+      "name": "seven-relation source chart equation 4",
+      "passed": true
+    },
+    {
+      "name": "seven-relation whole exceptional chart equation 4",
+      "passed": true
+    },
+    {
+      "name": "seven-relation source chart equation 5",
+      "passed": true
+    },
+    {
+      "name": "seven-relation whole exceptional chart equation 5",
+      "passed": true
+    },
+    {
+      "name": "seven-relation source chart equation 6",
+      "passed": true
+    },
+    {
+      "name": "seven-relation whole exceptional chart equation 6",
+      "passed": true
+    },
+    {
+      "name": "localized D(u-1) inverse u",
+      "passed": true
+    },
+    {
+      "name": "localized D(u-1) inverse w",
+      "passed": true
+    },
+    {
+      "name": "localized D(u-1) inverse k",
+      "passed": true
+    },
+    {
+      "name": "localized D(u-1) inverse l",
+      "passed": true
+    },
+    {
+      "name": "localized D(u) inverse u",
+      "passed": true
+    },
+    {
+      "name": "localized D(u) inverse w",
+      "passed": true
+    },
+    {
+      "name": "localized D(u) inverse k",
+      "passed": true
+    },
+    {
+      "name": "localized D(u) inverse l",
+      "passed": true
+    },
+    {
+      "name": "the two smooth affine localizations cover",
+      "passed": true
+    },
+    {
+      "name": "whole marked source affine-plane opens cover",
+      "passed": true
+    },
+    {
+      "name": "whole exceptional affine-plane opens cover",
+      "passed": true
+    },
+    {
+      "name": "entire chart transition u",
+      "passed": true
+    },
+    {
+      "name": "entire chart transition w",
+      "passed": true
+    },
+    {
+      "name": "entire chart transition k",
+      "passed": true
+    },
+    {
+      "name": "entire chart transition l",
+      "passed": true
+    },
+    {
+      "name": "omitted-last-relation dual-number guard 0",
+      "passed": true
+    },
+    {
+      "name": "omitted-last-relation dual-number guard 1",
+      "passed": true
+    },
+    {
+      "name": "omitted-last-relation dual-number guard 2",
+      "passed": true
+    },
+    {
+      "name": "omitted-last-relation dual-number guard 3",
+      "passed": true
+    },
+    {
+      "name": "omitted-last-relation dual-number guard 4",
+      "passed": true
+    },
+    {
+      "name": "omitted-last-relation dual-number guard 5",
+      "passed": true
+    },
+    {
+      "name": "last relation rejects spurious infinitesimal k",
+      "passed": true
+    },
+    {
+      "name": "whole boundary is affine-line coordinate k relation 0",
+      "passed": true
+    },
+    {
+      "name": "whole boundary is affine-line coordinate k relation 1",
+      "passed": true
+    },
+    {
+      "name": "whole boundary is affine-line coordinate k relation 2",
+      "passed": true
+    },
+    {
+      "name": "whole boundary is affine-line coordinate k relation 3",
+      "passed": true
+    },
+    {
+      "name": "whole boundary is affine-line coordinate k relation 4",
+      "passed": true
+    },
+    {
+      "name": "whole boundary is affine-line coordinate k relation 5",
+      "passed": true
+    },
+    {
+      "name": "whole boundary is affine-line coordinate k relation 6",
+      "passed": true
+    },
+    {
+      "name": "opposite source line retained relation 0",
+      "passed": true
+    },
+    {
+      "name": "opposite source line retained relation 1",
+      "passed": true
+    },
+    {
+      "name": "opposite source line retained relation 2",
+      "passed": true
+    },
+    {
+      "name": "opposite source line retained relation 3",
+      "passed": true
+    },
+    {
+      "name": "opposite source line retained relation 4",
+      "passed": true
+    },
+    {
+      "name": "opposite source line retained relation 5",
+      "passed": true
+    },
+    {
+      "name": "opposite source line retained relation 6",
+      "passed": true
+    },
+    {
+      "name": "exceptional whole-chart source volume",
+      "passed": true
+    },
+    {
+      "name": "globally regular primitive exceptional db",
+      "passed": true
+    },
+    {
+      "name": "globally regular primitive exceptional dt",
+      "passed": true
+    },
+    {
+      "name": "same primitive differentiates to source volume",
+      "passed": true
+    },
+    {
+      "name": "written scope retains does NOT require that completion",
+      "passed": true
+    },
+    {
+      "name": "written scope retains OPEN IMMERSION",
+      "passed": true
+    },
+    {
+      "name": "written scope retains ENTIRE E",
+      "passed": true
+    },
+    {
+      "name": "written scope retains [C(E):C(Gamma)]=1",
+      "passed": true
+    },
+    {
+      "name": "written scope retains not an infinite formal approximation",
+      "passed": true
+    },
+    {
+      "name": "written scope retains target-finiteness step cannot be dropped",
+      "passed": true
+    },
+    {
+      "name": "written scope retains It is divisible by h'",
+      "passed": true
+    },
+    {
+      "name": "written scope retains These examples FAIL(11)",
+      "passed": true
+    },
+    {
+      "name": "written scope retains SEVEN",
+      "passed": true
+    },
+    {
+      "name": "written scope retains does not produce an unramified completion boundary",
+      "passed": true
+    },
+    {
+      "name": "written scope retains No formal verification",
+      "passed": true
+    },
+    {
+      "name": "retained local source exists RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md",
+      "passed": true
+    },
+    {
+      "name": "retained local source exists CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "retained local source exists REGULAR_SOURCE_COORDINATE_COMPLETIONS_AND_PRIMITIVE_RESIDUES.md",
+      "passed": true
+    }
+  ],
+  "controls": {
+    "five_local_multiplicities": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "coefficient_identity_degree_unrestricted": true,
+    "finite_family_sample_degrees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "affine_presentation_relations": 7
+  },
+  "proof_sha256": "5a9ff28692cd29613ac1624a276f70f869cd4bb05a65d3a84ac904d76f4027ac",
+  "checker_sha256": "cc84101f7e2d2f77833dd15e192858692acc044acdb689710a1bd2661f548829",
+  "retained_inputs": [
+    {
+      "path": "RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md",
+      "sha256": "a22741215a62465805621346938f9c93fbcdd6cd76ad0aff3aebd21ffec3a4a0"
+    },
+    {
+      "path": "CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "sha256": "9284117aeb73df6331b0b7235a4bd9a713a9542666c45d44561c89739e77f1c8"
+    },
+    {
+      "path": "REGULAR_SOURCE_COORDINATE_COMPLETIONS_AND_PRIMITIVE_RESIDUES.md",
+      "sha256": "a138ac8d2b2c749007a02776f6cf00a23a84749194daf4f1734f00244ed0e7c4"
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "actual_target_finiteness_required": true,
+    "exceptional_index_two_value_pair": [
+      -2,
+      1
+    ],
+    "whole_ramified_prime_plane_chart": true,
+    "entire_prime_smooth_affine_line": true,
+    "critical_image_residue_degree": 1,
+    "critical_image_smoothness_claimed": false,
+    "nonimmersive_branch_first_orders": "m,m+1",
+    "all_polynomial_degrees_in_written_coefficient_proof": true,
+    "original_source_admission_condition_retained": true,
+    "corrected_seven_relation_geometric_control": true,
+    "geometric_control_has_Keller_target_pair": false,
+    "nonempty_unramified_boundary_required_once_value_pair_given": false,
+    "exceptional_fold_excluded_or_inverse_proved": false
+  },
+  "assurance": "Internal written proof and exact controls only; no formal verification or external review."
+}

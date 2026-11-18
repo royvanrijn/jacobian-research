@@ -1,0 +1,575 @@
+{
+  "passed": true,
+  "kind": "internal exact supplementary replay; all quantifiers are proved in the written source",
+  "scope": {
+    "odd_primes": "every odd prime in written theorems; finite checker primes through101",
+    "unit_point_depth_period": true,
+    "uniform_prime_digit_constant": true,
+    "packet": "N=b*p^r+p-b,1<=b<p,r>=0",
+    "entire_residue_disk_including_ramified_points": true,
+    "local_exclusion_only": true,
+    "global_SFC": false,
+    "Gamma_shape_extension": false,
+    "indispensable_finite_certificate": false
+  },
+  "controls": {
+    "all_odd_primes_through_101": 1,
+    "full_mod_p_squared_unit_period_identity": 68,
+    "residue_affine_Frobenius_identity": 68,
+    "corrupted_precision_rejected": 68,
+    "exact_uniform_binomial_trace_constants": 1134,
+    "special_trace_derivative_vanishes": 1134,
+    "corrupted_prime_digit_constant_rejected": 1134,
+    "direct_principal_unit_trace_invariance": 2268,
+    "actual_physical_coefficient_integrality": 1648,
+    "actual_physical_leading_unit": 36,
+    "direct_H_and_trace_packet_agree": 36,
+    "even_packet_is_unit": 24,
+    "odd_packet_has_exact_valuation_one": 12,
+    "valuation_two_repeated_root_guard": 4,
+    "frozen_mathematical_imports": 2
+  },
+  "total_controls": 7637,
+  "finite_period_profiles": [
+    {
+      "p": 3,
+      "Z_residue": 1,
+      "depth_period": 2
+    },
+    {
+      "p": 3,
+      "Z_residue": 2,
+      "depth_period": 3
+    },
+    {
+      "p": 5,
+      "Z_residue": 1,
+      "depth_period": 2
+    },
+    {
+      "p": 5,
+      "Z_residue": 2,
+      "depth_period": 4
+    },
+    {
+      "p": 5,
+      "Z_residue": 3,
+      "depth_period": 4
+    },
+    {
+      "p": 5,
+      "Z_residue": 4,
+      "depth_period": 5
+    },
+    {
+      "p": 7,
+      "Z_residue": 1,
+      "depth_period": 2
+    },
+    {
+      "p": 7,
+      "Z_residue": 2,
+      "depth_period": 6
+    },
+    {
+      "p": 7,
+      "Z_residue": 3,
+      "depth_period": 3
+    },
+    {
+      "p": 7,
+      "Z_residue": 4,
+      "depth_period": 6
+    },
+    {
+      "p": 7,
+      "Z_residue": 5,
+      "depth_period": 3
+    },
+    {
+      "p": 7,
+      "Z_residue": 6,
+      "depth_period": 7
+    },
+    {
+      "p": 11,
+      "Z_residue": 1,
+      "depth_period": 2
+    },
+    {
+      "p": 11,
+      "Z_residue": 2,
+      "depth_period": 5
+    },
+    {
+      "p": 11,
+      "Z_residue": 3,
+      "depth_period": 10
+    },
+    {
+      "p": 11,
+      "Z_residue": 4,
+      "depth_period": 10
+    },
+    {
+      "p": 11,
+      "Z_residue": 5,
+      "depth_period": 10
+    },
+    {
+      "p": 11,
+      "Z_residue": 6,
+      "depth_period": 5
+    },
+    {
+      "p": 11,
+      "Z_residue": 7,
+      "depth_period": 5
+    },
+    {
+      "p": 11,
+      "Z_residue": 8,
+      "depth_period": 5
+    },
+    {
+      "p": 11,
+      "Z_residue": 9,
+      "depth_period": 10
+    },
+    {
+      "p": 11,
+      "Z_residue": 10,
+      "depth_period": 11
+    },
+    {
+      "p": 13,
+      "Z_residue": 1,
+      "depth_period": 2
+    },
+    {
+      "p": 13,
+      "Z_residue": 2,
+      "depth_period": 12
+    },
+    {
+      "p": 13,
+      "Z_residue": 3,
+      "depth_period": 6
+    },
+    {
+      "p": 13,
+      "Z_residue": 4,
+      "depth_period": 3
+    },
+    {
+      "p": 13,
+      "Z_residue": 5,
+      "depth_period": 4
+    },
+    {
+      "p": 13,
+      "Z_residue": 6,
+      "depth_period": 12
+    },
+    {
+      "p": 13,
+      "Z_residue": 7,
+      "depth_period": 12
+    },
+    {
+      "p": 13,
+      "Z_residue": 8,
+      "depth_period": 4
+    },
+    {
+      "p": 13,
+      "Z_residue": 9,
+      "depth_period": 6
+    },
+    {
+      "p": 13,
+      "Z_residue": 10,
+      "depth_period": 3
+    },
+    {
+      "p": 13,
+      "Z_residue": 11,
+      "depth_period": 12
+    },
+    {
+      "p": 13,
+      "Z_residue": 12,
+      "depth_period": 13
+    }
+  ],
+  "finite_prime_digit_profiles": [
+    {
+      "p": 3,
+      "digits_checked": 2
+    },
+    {
+      "p": 5,
+      "digits_checked": 4
+    },
+    {
+      "p": 7,
+      "digits_checked": 6
+    },
+    {
+      "p": 11,
+      "digits_checked": 10
+    },
+    {
+      "p": 13,
+      "digits_checked": 12
+    },
+    {
+      "p": 17,
+      "digits_checked": 16
+    },
+    {
+      "p": 19,
+      "digits_checked": 18
+    },
+    {
+      "p": 23,
+      "digits_checked": 22
+    },
+    {
+      "p": 29,
+      "digits_checked": 28
+    },
+    {
+      "p": 31,
+      "digits_checked": 30
+    },
+    {
+      "p": 37,
+      "digits_checked": 36
+    },
+    {
+      "p": 41,
+      "digits_checked": 40
+    },
+    {
+      "p": 43,
+      "digits_checked": 42
+    },
+    {
+      "p": 47,
+      "digits_checked": 46
+    },
+    {
+      "p": 53,
+      "digits_checked": 52
+    },
+    {
+      "p": 59,
+      "digits_checked": 58
+    },
+    {
+      "p": 61,
+      "digits_checked": 60
+    },
+    {
+      "p": 67,
+      "digits_checked": 66
+    },
+    {
+      "p": 71,
+      "digits_checked": 70
+    },
+    {
+      "p": 73,
+      "digits_checked": 72
+    },
+    {
+      "p": 79,
+      "digits_checked": 78
+    },
+    {
+      "p": 83,
+      "digits_checked": 82
+    },
+    {
+      "p": 89,
+      "digits_checked": 88
+    },
+    {
+      "p": 97,
+      "digits_checked": 96
+    },
+    {
+      "p": 101,
+      "digits_checked": 100
+    }
+  ],
+  "direct_physical_packet_profiles": [
+    {
+      "p": 3,
+      "b": 1,
+      "r": 0,
+      "N": 3,
+      "H_at_minus_one_mod_p_squared": 4
+    },
+    {
+      "p": 3,
+      "b": 1,
+      "r": 1,
+      "N": 5,
+      "H_at_minus_one_mod_p_squared": 3
+    },
+    {
+      "p": 3,
+      "b": 1,
+      "r": 2,
+      "N": 11,
+      "H_at_minus_one_mod_p_squared": 7
+    },
+    {
+      "p": 3,
+      "b": 2,
+      "r": 0,
+      "N": 3,
+      "H_at_minus_one_mod_p_squared": 4
+    },
+    {
+      "p": 3,
+      "b": 2,
+      "r": 1,
+      "N": 7,
+      "H_at_minus_one_mod_p_squared": 3
+    },
+    {
+      "p": 3,
+      "b": 2,
+      "r": 2,
+      "N": 19,
+      "H_at_minus_one_mod_p_squared": 1
+    },
+    {
+      "p": 5,
+      "b": 1,
+      "r": 0,
+      "N": 5,
+      "H_at_minus_one_mod_p_squared": 6
+    },
+    {
+      "p": 5,
+      "b": 1,
+      "r": 1,
+      "N": 9,
+      "H_at_minus_one_mod_p_squared": 5
+    },
+    {
+      "p": 5,
+      "b": 1,
+      "r": 2,
+      "N": 29,
+      "H_at_minus_one_mod_p_squared": 6
+    },
+    {
+      "p": 5,
+      "b": 2,
+      "r": 0,
+      "N": 5,
+      "H_at_minus_one_mod_p_squared": 6
+    },
+    {
+      "p": 5,
+      "b": 2,
+      "r": 1,
+      "N": 13,
+      "H_at_minus_one_mod_p_squared": 10
+    },
+    {
+      "p": 5,
+      "b": 2,
+      "r": 2,
+      "N": 53,
+      "H_at_minus_one_mod_p_squared": 6
+    },
+    {
+      "p": 5,
+      "b": 3,
+      "r": 0,
+      "N": 5,
+      "H_at_minus_one_mod_p_squared": 6
+    },
+    {
+      "p": 5,
+      "b": 3,
+      "r": 1,
+      "N": 17,
+      "H_at_minus_one_mod_p_squared": 10
+    },
+    {
+      "p": 5,
+      "b": 3,
+      "r": 2,
+      "N": 77,
+      "H_at_minus_one_mod_p_squared": 6
+    },
+    {
+      "p": 5,
+      "b": 4,
+      "r": 0,
+      "N": 5,
+      "H_at_minus_one_mod_p_squared": 6
+    },
+    {
+      "p": 5,
+      "b": 4,
+      "r": 1,
+      "N": 21,
+      "H_at_minus_one_mod_p_squared": 5
+    },
+    {
+      "p": 5,
+      "b": 4,
+      "r": 2,
+      "N": 101,
+      "H_at_minus_one_mod_p_squared": 6
+    },
+    {
+      "p": 7,
+      "b": 1,
+      "r": 0,
+      "N": 7,
+      "H_at_minus_one_mod_p_squared": 8
+    },
+    {
+      "p": 7,
+      "b": 1,
+      "r": 1,
+      "N": 13,
+      "H_at_minus_one_mod_p_squared": 7
+    },
+    {
+      "p": 7,
+      "b": 1,
+      "r": 2,
+      "N": 55,
+      "H_at_minus_one_mod_p_squared": 43
+    },
+    {
+      "p": 7,
+      "b": 2,
+      "r": 0,
+      "N": 7,
+      "H_at_minus_one_mod_p_squared": 8
+    },
+    {
+      "p": 7,
+      "b": 2,
+      "r": 1,
+      "N": 19,
+      "H_at_minus_one_mod_p_squared": 21
+    },
+    {
+      "p": 7,
+      "b": 2,
+      "r": 2,
+      "N": 103,
+      "H_at_minus_one_mod_p_squared": 29
+    },
+    {
+      "p": 7,
+      "b": 3,
+      "r": 0,
+      "N": 7,
+      "H_at_minus_one_mod_p_squared": 8
+    },
+    {
+      "p": 7,
+      "b": 3,
+      "r": 1,
+      "N": 25,
+      "H_at_minus_one_mod_p_squared": 35
+    },
+    {
+      "p": 7,
+      "b": 3,
+      "r": 2,
+      "N": 151,
+      "H_at_minus_one_mod_p_squared": 15
+    },
+    {
+      "p": 7,
+      "b": 4,
+      "r": 0,
+      "N": 7,
+      "H_at_minus_one_mod_p_squared": 8
+    },
+    {
+      "p": 7,
+      "b": 4,
+      "r": 1,
+      "N": 31,
+      "H_at_minus_one_mod_p_squared": 35
+    },
+    {
+      "p": 7,
+      "b": 4,
+      "r": 2,
+      "N": 199,
+      "H_at_minus_one_mod_p_squared": 1
+    },
+    {
+      "p": 7,
+      "b": 5,
+      "r": 0,
+      "N": 7,
+      "H_at_minus_one_mod_p_squared": 8
+    },
+    {
+      "p": 7,
+      "b": 5,
+      "r": 1,
+      "N": 37,
+      "H_at_minus_one_mod_p_squared": 21
+    },
+    {
+      "p": 7,
+      "b": 5,
+      "r": 2,
+      "N": 247,
+      "H_at_minus_one_mod_p_squared": 36
+    },
+    {
+      "p": 7,
+      "b": 6,
+      "r": 0,
+      "N": 7,
+      "H_at_minus_one_mod_p_squared": 8
+    },
+    {
+      "p": 7,
+      "b": 6,
+      "r": 1,
+      "N": 43,
+      "H_at_minus_one_mod_p_squared": 7
+    },
+    {
+      "p": 7,
+      "b": 6,
+      "r": 2,
+      "N": 295,
+      "H_at_minus_one_mod_p_squared": 22
+    }
+  ],
+  "source_sha256": {
+    "PHYSICAL_PRIME_TRACE_PACKETS.tex": "1962ef6e56b59e8a9b92c7d453ded82d34a5ff95de39380aa25063c24756b7bf",
+    "physical_prime_trace_packets.py": "0008aa20010c9eab851d525a791189ddddf9e94b4489343d0464fba2898ffc09",
+    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+    "GAP_SIX_SMALL_OFFSET_FAMILIES.tex": "1b83ed6d1ea139e40de35f2b236d179e743bbe2202b555deea5dad547db3620b"
+  },
+  "python": "3.12.3",
+  "arithmetic": "pure Python integer lists modulo p and p^2; no polynomial factorization or Groebner input",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/physical_prime_trace_packets.py"
+}

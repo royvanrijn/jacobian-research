@@ -37,5 +37,9 @@ program as \texttt{verify\_binary\_certificates.py}, the separate NumPy
 implementations, and the exact-constant and ramified-count checks.
 
 \begingroup\footnotesize
-\verbatiminput{verify_binary_certificates.py}
+\IfFileExists{verify_binary_certificates.py}{%
+\verbatiminput{verify_binary_certificates.py}%
+}{%
+\verbatiminput{../../research/arithmetic/eisenstein-restricted-prime-sums/verify_binary_certificates.py}%
+}
 \endgroup

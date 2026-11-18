@@ -1,0 +1,488 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{lemma}{Lemma}\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\title{Ordinary gap-six terminal families with leading digit two}
+\author{Internal proof; no priority or external-review claim}
+\date{18 November 2026}
+\begin{document}\setlength{\emergencystretch}{1em}\maketitle
+This note treats the ordinary binomial $f(X)=X(A+BX^6)$,
+where $A,B\in\mathbb C$ are not both zero.
+At terminal order $N$, the assertion is that the two moments at
+orders $N-1,N$ cannot both vanish.
+For $AB\ne0$, their phase is the nonzero complex number$t=B/A$.
+After removing nonzero scalar factors, these moments are
+\[
+ P_j(t)=\sum_{k=0}^j\binom jk(j+1)_{6k}t^k,\qquad j=N-1,N.
+\]
+If $f$ is a nonzero monomial its positive moments are nonzero,
+so this case is immediate.
+The theorem below proves all terminals $N=2\cdot7^r+c$ with
+$0\le c\le6$, $r\ge0$. It does not prove all-index gap-six SFC,
+all binomial SFC, or a Gamma-shape extension.
+
+For the new cases fix $2\le c\le6$, $r\ge1$, $L=7^r$,
+$N=2L+c$, and $C=N+5$.
+Work in $\mathbb C_7$, with valuation ring$\mathcal O$,
+maximal ideal$\mathfrak m$, and residue field$k$.
+Let $\mathcal A=C-zD_z+z$,
+$\Pi_N(X)=\prod_{\ell=0}^{N-1}(X+6\ell)$.
+For $Q\in\mathcal O[X]$, $\deg Q\le4$, define
+\[
+ \begin{gathered}
+ d_j(Q)=\sum_{i=0}^j(-1)^i\binom ji
+       \binom{(C-i)/6+N-1}{N}Q(C-i),\\
+ V_a(Q;v)=\sum_{\ell\ge0}\frac{7^\ell a!}{(a+6\ell)!}
+                 d_{a+6\ell}(Q)v^\ell,\qquad0\le a<6.
+ \end{gathered}                                                \tag{1}
+\]
+The finite formal identity
+\[
+ \frac{\Pi_N(\mathcal A)Q(\mathcal A)1}{6^NN!}
+       =\sum_{j=0}^{N+4}d_j(Q)\frac{z^j}{j!}
+\]
+identifies these as normalized cyclic rows on$z^6=7v$.
+Binomial polynomials are integer-valued on$\mathbb Z_7$ by
+continuity from nonnegative integers, so$d_j(Q)\in\mathcal O$.
+The cyclic coefficient weight has valuation
+$(s_7(a+6\ell)-a)/6\ge0$.
+Thus the rows are integral, and their basis-column matrix lies
+in$\mathbb Z_7[v]$.
+
+Put
+\[
+ S=S_r(v)=1+\sum_{i=1}^r(-1)^iv^{(7^i-1)/6},\quad
+ h_c=\min(c+1,6),\quad
+ \delta=v\partial_v+(S-1)\partial_S.
+\]
+For the physical seed set
+$T_N(t)=\sum_j\binom Nj(N)_{6j}t^j$ and $H_N(Y)=7T_N(Y/7)$.
+Rows$a<h_c$ will be divided once by7.
+Write $W_a=\overline{V_a/7}$ there, and $W_a=\bar V_a$ for
+$a\ge h_c$.
+
+\begin{lemma}[Uniform formal seeds]\label{lem:seeds}
+The indicated entire rows are seven-divisible on the five basis
+columns. Their reduced seeds, in order$a=0,\ldots,5$, are
+\begingroup\footnotesize\setlength{\arraycolsep}{3pt}
+\[
+\begin{array}{c|l}
+c&(W_0(1),\ldots,W_5(1))\\\hline
+2&(2,\ 2-S,\ 3S^2-3S+2,\ -3S^2-3S,\ -S^2,\ 0)\\
+3&(2,\ S+2,\ -2S^2-2S+2,\ 2S^2-S+2,\ -S^2-3S,\ -3S^2)\\
+4&(1-vS^2,\ 1-S,\ -2S^2+S+1,\ -3S^2+2S+1,\
+     2S^2-3S+1,\ -3S^2+2S)\\
+5&(3+vS-vS^2,\ 3+S+3vS^2,\
+                 3+S+3S^2,\ 3+S+3S^2,\ 3+S+3S^2,\ 3+S+3S^2)\\
+6&(0,\ 3vS^2+vS-S,\ S^2(1-v),\ 0,\ 0,\ 0).
+\end{array}                                                    \tag{2}
+\]
+\endgroup
+\end{lemma}
+\begin{proof}
+Use \texttt{lem:diagonal} and the formal calculation in the proof
+of \texttt{lem:first-row} of
+\href{GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex}{the two-power-plus-one note}.
+The exact diagonal series is
+\[
+ \sum_{n\ge0}\frac{B_{n,n,6}(z)}{6^nn!}t^n
+ =\kappa e^{z(1-R)},\quad R-R^7=t,\ R(0)=1,\quad
+ \kappa=\frac{6R}{7R^6-1}\equiv R-7t\pmod{49}.
+\]
+For clarity we give the complete all-depth coefficient extraction.
+Let $T=\sum_it^{7^i}$,
+\[
+ P(T)=T+3T^2+5T^3+5T^4+3T^5+T^6,\quad
+ C(T)=\frac{T^7-\sum_it^{7^{i+1}}}{7}.
+\]
+Write $R=1+T+7R_1$, $R_1\equiv C(T)+P(T)\pmod7$.
+Define integer polynomials$a_0=-1$,
+$a_i=-1-va_{i-1}^7$, and$A_0=\sum_i a_it^{7^i}$.
+Then$\bar a_r=-S_r(v)$.
+The integral Artin--Hasse series from
+\texttt{lem:artin-hasse-closure} of the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{arithmetic note}
+gives the integral formal parameter$A_*=A_0+7A_1$ with
+\[
+ e^{z(1-R)}=\mathcal E_7(zA_*),\quad z^6=7v,\qquad
+ A_1\equiv-R_1-vC(A_0).
+\]
+The existence follows by recursive formal inversion of
+$A_*+vA_*^7+7^6v^8A_*^{49}+\cdots=1-R$.
+All operations are formal$t$-adic coefficient identities;
+no exponential is evaluated at a7-adic boundary.
+
+Set$m=c+2=s_7(N)$. For a divided seed$a<h_c$,
+the leading section$(1+T)A_0^a$ uses at most$a+1<m$ selected
+powers of7, so its coefficient of$t^N$ vanishes exactly.
+The divided coefficient modulo7 is
+\[
+\begin{aligned}
+ \relax[t^N]\bigl[&
+ R_1A_0^{a-1}\{A_0-a(1+T)\}
+ -av(1+T)A_0^{a-1}C(A_0)\\
+ &+v\,a![X^{a+6}]\mathcal E_7(X)(1+T)A_0^{a+6}
+                                  -tA_0^a\bigr]
+\end{aligned}                                                \tag{3}
+\]
+interpreting the first term as$R_1$ at$a=0$ and omitting its
+second term there. The cyclic expansion has only one additional
+section modulo49. At$a=0$ its coefficient is$6v(1+T)A_0^6$.
+For$a\ge1$, it contains$A_0^{a+6}=A_0^{a-1}A_0^7$.
+
+There are no hidden intermediate-digit contributions.
+For$m\le6$, every term in a divided seed has selected degree
+at most$a+7\le m+5$; for$m=7,8$ it is at most12.
+In both cases this is less than$m+6$, the minimum degree needed
+for any carry representing$N$.
+Thus every contributing term is carry-free and selects only
+positions0 and$r$.
+The term$tA_0^a$ has too few selected powers.
+Set$U=x+y$, $B=-x-Sy$, and the integral cross polynomials
+\[
+ C_U=(U^7-x^7-y^7)/7,\qquad
+ C_B=(B^7-(-x)^7-(-Sy)^7)/7 .
+\]
+The divided zero seed is
+\[
+ [x^cy^2]\{C_U+P(U)+6v(1+U)B^6\}.                            \tag{4}
+\]
+For$1\le a<h_c$ it is
+\[
+ [x^cy^2]\bigl[
+ (C_U+P(U))B^{a-1}\{B-a(1+U)\}
+                 -av(1+U)B^{a-1}C_B\bigr].                 \tag{5}
+\]
+Indeed the additional Artin--Hasse term at$a\ge1$ contains
+$B^7=-x^7-S^7y^7$ in characteristic7 and cannot contribute
+to$x^cy^2$, whose two exponents are below7.
+The ordinary seeds$a\ge h_c$ are
+$[x^cy^2](1+U)B^a$.
+These fixed finite polynomial extractions give exactly (2).
+
+Finally the exact raising recurrence is
+\[
+\begin{aligned}
+ V_a(XQ)&=(C-a-6v\partial_v)V_a(Q)+aV_{a-1}(Q),\quad a\ge1,\\
+ V_0(XQ)&=(C-6v\partial_v)V_0(Q)+7vV_5(Q)/5!.
+\end{aligned}
+\]
+Starting with the divisible seeds, it propagates seven-divisibility
+of all rows$a<h_c$ on$1,X,\ldots,X^4$.
+\end{proof}
+
+\begin{lemma}[The actual universal matrices]\label{lem:matrices}
+The six-by-five matrix$\mathcal M_c(S,v)$ on$1,X,\ldots,X^4$
+is generated from (2) by
+\[
+\begin{aligned}
+ W_0(XQ)&=(c+5+\delta)W_0(Q)
+                   +\begin{cases}vW_5(Q),&h_c<6,\\0,&h_c=6,\end{cases}\\
+ W_a(XQ)&=(c+5-a+\delta)W_a(Q)
+                   +\begin{cases}0,&a=h_c,\\aW_{a-1}(Q),&a\ne h_c.\end{cases}
+                                                       \quad(1\le a<6).
+\end{aligned}                                                 \tag{6}
+\]
+Its specialization is exactly the reduction of the actual matrix
+after the stated global row divisions.
+For$c=6$, row zero is identically zero; its only possibly nonzero
+maximal minor is$m_0=S^5 f(S,v)$, obtained by omitting row zero.
+\end{lemma}
+\begin{proof}
+Divide the indicated exact rows and reduce their raising recurrence.
+Use$C\equiv c+5$, $-6\equiv1$, $5!\equiv1$, and$vS_r'=S_r-1$.
+The first ordinary row has zero lower term, because its preceding
+row is still seven-divisible.
+When all six rows are divided, the wrap term disappears because
+the ordinary reduction$\bar V_5$ is zero.
+The zero row and determinant factor for$c=6$ follow by (2)--(6).
+\end{proof}
+
+\begin{lemma}[The actual moment residue]\label{lem:moment-residue}
+Assume $c=6$. Set $U=S-1$ and
+\[
+ \mathcal Q(S,v)=1-v^7+2v(U+v)^6+v^2U^7(U+v)^5 .
+\]
+For every$r\ge1$, as polynomials in$v$ over$\mathbb F_7$,
+\[
+       v^N\overline H_N(-1/v)=\mathcal Q(S_r(v),v).                  \tag{7}
+\]
+\end{lemma}
+\begin{proof}
+The finite-field moment trace is \texttt{prop:trace} of the
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}
+{physical prime-total-degree note}.
+For $v\ne0$, the inverse eigenvalues$\tau$ at$Y=-1/v$ satisfy
+\[
+ P(\tau)=\tau^7+\tau/v-1=0,\qquad P'(\tau)=1/v.
+\]
+This polynomial is separable with nonzero roots.
+Induction gives
+\[
+ \tau^{7^r}=b_r(\tau+S_r(v)-1),\qquad
+ b_r=(-1)^rv^{-(7^r-1)/6}.
+\]
+Indeed $S_{r+1}=1-vS_r^7$.
+Consequently
+\[
+ \overline H_N(-1/v)
+      =b_r^{-2}\sum_{P(\tau)=0}\tau^{-6}(\tau+U)^{-2}.      \tag{8}
+\]
+Put $E=vS^7+U$.
+At an actual$S=S_r(v)$,
+\[
+ E=S_r-S_{r+1}=(-1)^rv^{(7^{r+1}-1)/6}\ne0,
+\]
+so all denominators in (8) are nonzero.
+
+Here is an explicit evaluation of the rational trace in (8).
+Apply the residue theorem for rational functions to
+\[
+       t^{-6}(t+U)^{-2}\frac{P'(t)}{P(t)}.
+\]
+There is no residue at infinity. For$U\ne0$, the two other
+residues, before multiplication by$1/v$, are
+\[
+ -\frac{(U+v)^5}{v^5U^7},\qquad
+                 \frac{v^2S^7}{U^7E^2}.
+\]
+Negating their sum and multiplying by$1/v$ gives
+\[
+ \sum_{P(\tau)=0}\tau^{-6}(\tau+U)^{-2}
+                         =\frac{\mathcal Q(S,v)}{v^6E^2}.          \tag{9}
+\]
+The cancellation uses the exact characteristic-seven identity
+\[
+ E^2(U+v)^5-v^7S^7=U^7\mathcal Q(S,v).
+\]
+After cancellation the only denominators are$v$ and$E$.
+Thus (9) also specializes to$U=0$, where both are nonzero.
+Alternatively it is a finite seven-dimensional algebra calculation:
+$\tau^{-1}=\tau^6+1/v$,
+$(\tau+U)^{-1}=
+ [v\sum_{j=0}^6(-U)^j\tau^{6-j}+1]/E$,
+and the traces of$1,\tau,\ldots,\tau^5$ are zero, while
+$\operatorname{Tr}\tau^6=1/v$.
+The checker independently evaluates this expression by reduction
+modulo$P$.
+
+Substitute the actual$E$ in (8)--(9).
+Since $(7^{r+1}-1)/6=7(7^r-1)/6+1$,
+the prefactor $b_r^{-2}/(v^6E^2)$ is exactly$v^{-N}$.
+This proves (7) for$v\ne0$, and hence as a polynomial identity.
+\end{proof}
+
+
+\begin{lemma}[Complete necessary residue certificates]\label{lem:certificates}
+The explicit arrays in
+\href{gap_six_two_digit_leading_two_certificate.json}{the coefficient certificate}
+have the following consequences over every residue extension field.
+For$c=2,3,4$, a rank drop forces$q_c(S)=0$, $v=W_c(S)$.
+The quotient recurrence$x_0=1$, $x_{j+1}=1-W_cx_j^7$ has complete
+periods$114,1254,1092$ and every target$x_j-S$ is a unit.
+The degrees of$q_c$ are$20,30,40$, respectively.
+
+For$c=5$, every rank-drop point is either$(S,v)=(0,1)$ or a
+point on$q_5(S)=0$, $v=W_5(S)$, $S\ne0$.
+Here$\deg q_5=30$, the complete orbit has period72, and every
+target is a unit.
+
+For$c=6$, impose also the actual moment equation
+$\mathcal Q(S,v)=0$ from Lemma~\ref{lem:moment-residue}.
+Then a rank-drop point is either$(S,v)=(0,1)$ or a point on a
+degree35 quotient with$v=W_6(S)$.
+Its complete orbit has period728, and its only target gcds
+are$S-1$, exactly at depths0 modulo7; also$W_6(1)=-1$.
+\end{lemma}
+\begin{proof}
+The certificate retains each entire matrix, all six maximal minors,
+every necessary relation with explicit sparse multiplier polynomials,
+and every quotient-orbit state.
+For$c=2,3,4$ the two relation targets are$q_c$ and$v-W_c$.
+The quotient target gcd is1 at every state of the complete periods.
+
+For$c=5$ the three necessary relation targets are
+\[
+ S^5q_5(S),\quad S^5v+h_5(S),\quad f_5(S,v),
+                    \qquad f_5(0,v)=(v-1)^4.
+\]
+Thus$S=0$ forces$v=1$; otherwise divide by$S^5$.
+The retained$W_5$ satisfies$S^5W_5+h_5=0$ modulo$q_5$,
+and$S$ is a unit in that quotient.
+The complete72-state record excludes$S=S_r(v)$ on this branch.
+
+For$c=6$, at$S=0$ one has
+$\mathcal Q(0,v)=-(v-1)^5$, so$v=1$.
+At$S\ne0$, the determinant$m_0=S^5f$ forces$f=0$.
+Explicit combinations of$f,\mathcal Q$ give
+\[
+ S^7q_6(S),\qquad S^7v+h_6(S).
+\]
+Here$S$ is a quotient unit and$S^7W_6+h_6=0$ modulo$q_6$.
+The complete728-state certificate gives
+\[
+ \gcd(q_6,x_j-S)=
+ \begin{cases}S-1,&j=0\pmod7,\\1,&\text{otherwise},\end{cases}
+ \qquad W_6(1)=-1.
+\]
+For all cases the record includes the return to$x_0=1$,
+which proves periodicity at every depth.
+No field quotient, irreducibility, or inferred finite-orbit bound
+is assumed.
+The replay rebuilds each matrix from (4)--(6), recomputes every
+minor by sparse permutation expansion, and verifies each
+necessary combination by exact polynomial multiplication.
+It does not trust a Groebner calculation.
+\end{proof}
+
+\begin{lemma}[The fixed residue packets]\label{lem:fixed-packets}
+For$c=5,6$, the polynomial$H_N$ has no repeated root in the
+residue disk$Y=-1$.
+For$c=6$ and$r=0$ modulo7, $r\ge1$, it also has no repeated root
+in the residue disk$Y=1$.
+\end{lemma}
+\begin{proof}
+Use \texttt{prop:trace} of the
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}{physical-prime note}:
+\[
+ H_n(Y)\equiv K_n(720Y)\pmod{49},
+\]
+where$K_n(Z)$ is the power sum of the seven roots of
+$(X-1)^7-ZX^6$.
+For$Y=-1$, $Z=-720\equiv15\pmod{49}$.
+By \texttt{lem:trace-parity} of the
+\href{GAP_SIX_SMALL_OFFSET_FAMILIES.tex}{small-offset note},
+these point values have period two in$r\ge1$.
+Newton identities give the exact representatives
+\[
+\begin{array}{c|cc}
+c&H_N(-1),\ r\text{ odd}&H_N(-1),\ r\text{ even}\\\hline
+5&21&29\\
+6&7&37
+\end{array}\qquad\pmod{49}.                                \tag{10}
+\]
+They are checked at$N=19,103,20,104$.
+For even$r$ the disk has no root; for odd$r$ the point value
+has valuation one.
+By \texttt{lem:local-cluster} of the same small-offset note,
+the full Hensel factor in that disk is Eisenstein and hence
+separable. This works for every local width and every ramified
+point, without any odd-degree assumption.
+
+For$Y=1$, work in the finite free algebra with
+\[
+ P_{34}(X)=(X-1)^7-34X^6
+ =X^7+8X^6+21X^5+14X^4+35X^3+28X^2+7X+48\pmod{49}.
+\]
+Its inverse class$\tau$ satisfies$\tau^7-\tau=1$ modulo7.
+Seven Frobenius iterations give$\tau^{7^7}=\tau$ and hence
+$X^{7^7}=X$ modulo7.
+Taking seventh powers of a lift gives$X^{7^8}=X^7$ modulo49.
+Raising to$7^{r-1}$ proves period seven in$r\ge1$ for
+$K_{2\cdot7^r+6}(34)$.
+At the reference$r=7$, the remainder of$X^{2\cdot7^7+6}$ is
+$[20,29,21,7,28,7,15]$ in ascending degree.
+Newton traces of$1,X,\ldots,X^6$ are
+$[7,41,22,48,8,34,15]$.
+Their dot product is21 modulo49.
+Thus for every positive$r$ divisible by7,
+$H_N(1)\equiv21\pmod{49}$, again giving an Eisenstein and
+separable full local factor.
+The coefficient certificate and replay verify both polynomial
+period identities and all the stated point traces.
+\end{proof}
+
+\begin{theorem}[The leading-two terminal family]\label{thm:family}
+Every nonzero ordinary binomial $X(A+BX^6)$ satisfies its consecutive
+moment test at every terminal
+\[
+                    N=2\cdot7^r+c,\qquad0\le c\le6,\quad r\ge0.
+\]
+\end{theorem}
+\begin{proof}
+For$c=0$ use \texttt{cor:pair} of the physical-prime note:
+the terminal index is in its native Eisenstein family.
+For$c=1,r\ge1$ use \texttt{thm:family} of
+\href{GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex}{the two-power-plus-one note}.
+At$r=0$, $N=2,\ldots,7$ are native; $N=8$ is covered by
+\texttt{cor:scaled-family}, with$b=1,r=1$, of
+\href{GAP_SIX_SCALED_POWER_PLUS_ONE_SFC.tex}{the scaled-family note}.
+This last endpoint is not claimed to be native.
+
+It remains to treat$2\le c\le6,r\ge1$.
+Put$T_N(t)=\sum_j\binom Nj(N)_{6j}t^j$.
+The exact lower-one bridge gives
+\[
+ P_{N-1}=T_N-\theta T_N/N,\qquad
+ P_N=T_N+6\theta T_N/N.
+\]
+The determinant is$7/N\ne0$ and$T_N(0)=1$; thus a common phase
+would be a multiple root of$T_N$.
+By \texttt{thm:radius} of the physical-prime note it has
+$u=-1/t=7v$ with$v$ a unit.
+
+The necessary cyclic rank relation is
+\texttt{lem:critical-ideal} of the
+\href{gap_three_hurwitz_structure.tex}{adjoint-structure note}.
+Its complex statement transfers at each algebraic multiple root:
+the cyclic minors for fixed rational$N,\gamma=N$ are rational
+polynomials, so apply the complex theorem and transport their
+vanishing through algebraic embeddings.
+No exponential is evaluated on the7-adic boundary.
+At the fixed shape,
+$B_{N+j}=\Pi_N(\mathcal A)
+\prod_{\ell=N}^{N+j-1}(\mathcal A+6\ell)1$.
+These five monic multiplier polynomials have consecutive degrees,
+so the columns differ from$Q=1,X,\ldots,X^4$ by a unit
+triangular change.
+Normalize a relation vector to primitive integral coefficients,
+divide the indicated entire rows, and reduce.
+This gives a nonzero kernel of$\mathcal M_c(S_r(\bar v),\bar v)$.
+
+For$c=2,3,4$, the complete unit-target cycles exclude it.
+For$c=5$ the only actual residue point is$v=1$; hence
+$Y=7t=-1/v$ lies in the disk$Y=-1$, excluded by
+Lemma~\ref{lem:fixed-packets}.
+For$c=6$, the same actual root also satisfies$H_N(-1/v)=0$,
+so Lemma~\ref{lem:moment-residue} imposes$\mathcal Q=0$.
+The complete coupled certificate leaves either$v=1$, or
+$v=-1$ with$r=0$ modulo7.
+The former enters$Y=-1$; the latter enters$Y=1$ at exactly
+the depths covered by Lemma~\ref{lem:fixed-packets}.
+Neither disk contains a repeated root.
+This contradiction proves the new cases.
+\end{proof}
+
+\begin{corollary}[The refined degree-seven frontier]
+\label{cor:degree-seven-frontier}
+Put
+\[
+\begin{aligned}
+ \mathcal U_2={}&\{b7^s:1\le b\le6,\ s\ge0\}
+ \cup\{b7^r+1:1\le b\le6,\ r\ge0\}\\
+ &{}\cup\{7^r+c:2\le c\le6,\ r\ge0\}
+ \cup\{2\cdot7^r+c:2\le c\le6,\ r\ge0\}.
+\end{aligned}
+\]
+Ordinary binomial SFC through degree seven is equivalent to
+$\gcd_{\mathbb Q[t]}(P_{N-1},P_N)=1$ for every terminal$N\ge6$
+outside$\mathcal U_2$.
+Any hypothetical common phase on those remaining tests has
+$v_7(-1/t)=1$ at every algebraic embedding.
+\end{corollary}
+\begin{proof}
+Use \texttt{cor:degree-seven-frontier} of the small-offset note
+and remove the additional terminals supplied by
+Theorem~\ref{thm:family}.
+The converse is restriction to a subset of the original tests.
+The necessary radius is retained from the prior frontier.
+Infinitely many terminal orders remain; neither degree-seven
+SFC nor all-binomial SFC is closed by this corollary.
+\end{proof}
+
+The exact replay verifies polynomial identities and complete
+finite certificates. It is not formal verification or external review.
+No Gamma-shape extension or statement for arbitrary auxiliary seeds
+is inferred.
+\end{document}

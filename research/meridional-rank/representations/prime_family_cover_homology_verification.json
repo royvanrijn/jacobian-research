@@ -1,0 +1,263 @@
+{
+  "status": "PASS exact integral homology certificate",
+  "edition_sha256": {
+    "prime_family_cover_homology_inputs.json": "e3255bfa32deab61cdaa4dd51005d66b2cf681ea465f970b557ab4b5721d2ae5",
+    "verify_prime_family_cover_homology.py": "b978638c6c359a4465f195e14307c0dabcab054c2422e100b5bdfe2a92e84014",
+    "all_parameter_cover_parent.tri": "b55ba0becce4ec41e757bd078bf02da09fcddf0aee140f9583308e363d3651e4",
+    "sources/snappy-3.3.2-fundamental_group.c": "8b5e62b703d92672100feef7a5d2dcc3406b01929c4e2faf04428263e3b29191",
+    "sources/snappy-3.3.2-fundamental_group.pyx": "2537075b91b1b3d606fd7574fce4fa6c63d899cc2b4badb1827dcfd95ea8b1f5",
+    "PRIME_FAMILY_GEOMETRY_AND_SCOPE.tex": "37184467cb533cabfe1eb940603d36caa21fc140625dc829e07e28e5f4d9e413"
+  },
+  "integer_verification": {
+    "integer_unimodular_inverse_both_products_identity": true,
+    "relation_Smith_form": "[I_10 | 0]",
+    "H1_parent": "Z",
+    "homology_generator_word": "AAAAAAAAAAbbbbbbb",
+    "generator_images": [
+      30,
+      43,
+      -65,
+      24,
+      -45,
+      -19,
+      15,
+      18,
+      -44,
+      -22,
+      21
+    ],
+    "meridian_image": 5,
+    "longitude_image": 61,
+    "all_n_integral_filling_homology": "Z/(117+366n), n>=0",
+    "determinant_prime_cube_positive_control": {
+      "n": 3,
+      "order": 1215,
+      "prime": 3,
+      "prime_cube_divides": true,
+      "factorization": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          1
+        ]
+      ]
+    },
+    "nonunit_8plat_gcd_contradiction": "For any prime p dividing all plat entries, Fox dimension4 would require H1 cover Fp dimension3; a cyclic group has dimension at most1."
+  },
+  "rejected_controls": [
+    "relator_word",
+    "relation_matrix",
+    "integer_inverse",
+    "homology_image",
+    "peripheral_orientation",
+    "parameter_direction",
+    "false_determinant_only_exclusion"
+  ],
+  "trust_boundary": [
+    "Native exact cell presentation/peripheral interpretation is an imported software contract.",
+    "Actual branched-cover identification and all-n marked filling slopes use the separate canonical written binding theorem.",
+    "Mayer-Vietoris filling quotient and Fox/core homology deduction are written mathematical arguments."
+  ],
+  "assurance": {
+    "formal_verification": false,
+    "external_specialist_review": false,
+    "whole_proof_independent_replay": false
+  },
+  "mode_replays": {
+    "standard_library": {
+      "integer_unimodular_inverse_both_products_identity": true,
+      "relation_Smith_form": "[I_10 | 0]",
+      "H1_parent": "Z",
+      "homology_generator_word": "AAAAAAAAAAbbbbbbb",
+      "generator_images": [
+        30,
+        43,
+        -65,
+        24,
+        -45,
+        -19,
+        15,
+        18,
+        -44,
+        -22,
+        21
+      ],
+      "meridian_image": 5,
+      "longitude_image": 61,
+      "all_n_integral_filling_homology": "Z/(117+366n), n>=0",
+      "determinant_prime_cube_positive_control": {
+        "n": 3,
+        "order": 1215,
+        "prime": 3,
+        "prime_cube_divides": true,
+        "factorization": [
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      "nonunit_8plat_gcd_contradiction": "For any prime p dividing all plat entries, Fox dimension4 would require H1 cover Fp dimension3; a cyclic group has dimension at most1."
+    },
+    "topology": {
+      "fresh_exact_unsimplified_presentation_and_marked_peripheral_words": true,
+      "kernel_sha256": "f4624b8b9c20a73fd86ba7b359b65deb6c2c09deb983f1f26aa2954bb88f92e9",
+      "snappy_version": "3.3.2",
+      "numerical_geometry_used": false
+    }
+  },
+  "this_invocation": {
+    "topology": true
+  },
+  "internal_pdf_reviews": [
+    {
+      "auditedSHA": "2fbb078de9c540414e6c21fd01e44bd5b57aef8f20b8049a2960ead4ab0fec10",
+      "pages": {
+        "count": 8,
+        "textRead": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "visuallyInspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "rendering": "All eight complete pages were rendered in memory from the frozen PDF and inspected. No page was omitted."
+      },
+      "findings": [],
+      "conditionalverdict": {
+        "result": "No substantive internal mathematical gap found under the explicitly imported premises.",
+        "status": "Internal AI review only; conditional mathematical assessment, not formal verification or external refereeing.",
+        "checkedDeductions": [
+          {
+            "pages": [
+              2,
+              3
+            ],
+            "topic": "Integral abelianization and filling",
+            "assessment": "The ten relators give the stated unit-coefficient eliminations and the sole relation 43d - 24b = 0. With x = 9d - 5b, both displayed integral identities are correct and the map to Z sends x to 1. The eleven generator values annihilate every literal relator; literal peripheral substitution gives m = 5x and l = 61x. The slope (-1, 2 + 6n) is primitive. Mayer-Vietoris eliminates the filling core without a free summand, giving Z/(117 + 366n), and the field bound follows from the universal coefficient theorem because H0 is torsion free."
+          },
+          {
+            "pages": [
+              3
+            ],
+            "topic": "Actual deck action and hyperbolic exterior",
+            "assessment": "The proof retains the actual smooth involution before applying the imported isometric-action theorem. Conjugating that action induces a quotient homeomorphism preserving the branch pair, so an unmarked covering-manifold identification is not substituted for the knot. The fixed-point model gives cone angle pi. Applying the imported cone-complement theorem to that quotient yields a separate complete hyperbolic structure on the nonsingular part; the text correctly does not claim the restricted cone metric is already complete."
+          },
+          {
+            "pages": [
+              3,
+              4
+            ],
+            "topic": "Torsion conjugacy and exact torsion-generation rank",
+            "assessment": "A finite-order hyperbolic isometry fixes a point; the supplied hyperboloid averaging argument is valid. The only nontrivial local stabilizers are C2, and connectedness of the singular knot makes their nontrivial generators conjugate to the meridian. The A8 quotient factors through meridian squares. In the transposition-edge graph of r double transpositions, components are exactly group orbits; transitivity on eight letters requires at least seven edges and hence r >= 4. Four bridge meridians give the reverse inequality. No ordinary group-rank conclusion is inferred."
+          },
+          {
+            "pages": [
+              4
+            ],
+            "topic": "Abstract epimorphisms, parity, and arborescent scope",
+            "assessment": "Corollary 6 requires no parity: images of bridge-meridian involutions generate the target by torsion or identities. Corollary 7 uses the explicitly parity-preserving preorder only where the imported BKN theorem requires it. For knot sources the C2 abelianization forces parity compatibility of every epimorphism. The closed hyperbolic cover is a prime factor without a Seifert JSJ piece, also in the stated trefoil-sum targets. The determinant hypothesis is retained for links; the U4 free-product map is parity preserving and realizes b(U4) = 4 under the stated broad arborescent convention."
+          },
+          {
+            "pages": [
+              5,
+              6
+            ],
+            "topic": "Fox/Burau cyclicity obstruction",
+            "assessment": "With the specified column-vector Fox convention, M injects the b top-cap colours and L imposes the bottom-cap equalities. A common prime divisor of every entry makes LRM zero over Fp, leaving a b-dimensional colouring space. Using the expressly imported reduced-colouring/H1 dimension identity gives dim H1 = b - 1 >= 3 since every such plat has b >= 4. This contradicts the integral cyclicity bound. The argument quantifies over every plat satisfying the nonunit condition and handles the all-zero matrix case. It does not classify unit-gcd generalized Montesinos descriptions or the separate general matrix/Fox-ideal criterion."
+          },
+          {
+            "pages": [
+              5,
+              6
+            ],
+            "topic": "Other construction exclusions and boundaries",
+            "assessment": "The low Alexander coefficients follow from the displayed formula, the homogeneous braid data agree with the displayed word, and the stated Rasmussen/genus comparisons are consistent. The elementary cable breadth argument is valid once bridge number forces winding two; Whitehead patterns have genus at most one. The Coxeter and augmentation exclusions are consequences of the stated family bounds only for constructions supplying the specified sharp certificates. The text preserves the universal fishnet/plain-sphere statements, arbitrary meridionally tame bases, arbitrary quasipositivity, and priority limits."
+          }
+        ]
+      },
+      "limits": [
+        "The sole research object read was the frozen eight-page PDF with the audited SHA256. No source TeX, repository history, supplementary scripts, receipts, cited papers, or other research context was read.",
+        "The family theorem, marked-cover binding and hyperbolicity theorem, topology-to-literal-presentation import, and exact named external theorem statements were accepted at the scopes asserted in the PDF. Their truth and citation fidelity were not independently verified.",
+        "The secondary construction-family inclusions, including the boundary-label transport imported from the accompanying comparison proposition [20], remain conditional on those named construction inputs; the frozen PDF does not reproduce their full proofs.",
+        "The classical reduced Fox-colouring/H1 dimension identity was treated as the stated import [13]. The internal implication from that identity and LRM divisibility to a contradiction was checked.",
+        "The U4 classification as arborescent is assessed under the broad convention explicitly stipulated in the PDF, not under every narrower use of that word.",
+        "The literal arithmetic was checked directly, including all ten relator values and both peripheral values, without running or inspecting the paper's supplementary verification code.",
+        "This review cannot certify worldwide priority, literature completeness, or external peer review."
+      ],
+      "followUpReviews": [
+        {
+          "auditedSHA": "37a8a3b0da21d4bf60a662ecd230f98d99feb13708a90fe0f6b113137d7a9696",
+          "pageCount": 8,
+          "scope": "Follow-up of the updated actual PDF only. The initial blind review above remains preserved with its original SHA256 and original premise limits.",
+          "textRead": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "visuallyInspected": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "changedMathematicsReviewed": "New Lemma 9 on page 5 and its use in Theorem 10 on page 6; reflowed conclusion and references on pages 7-8 also inspected.",
+          "findings": [],
+          "currentverdict": "No substantive internal gap found in the updated PDF under the original imported family, cover, topological-presentation, and exact external-theorem premises. The colouring/H1 dimension identity is now proved by the supplied Reidemeister-Schreier calculation rather than needed as an indispensable classical theorem import. Internal AI assessment only, not formal verification or external refereeing.",
+          "checkedRSRelators": [
+            "For the index-two parity subgroup with transversal {1,a}, s(1,mu_i) = mu_i a^-1 = u_i and s(a,mu_i) = a mu_i = v_i; u_0 is trivial and v_0 = a^2.",
+            "Rewriting each square relator mu_i^2 from the two cosets gives u_i v_i and v_i u_i. The base square kills v_0. Eliminating v_i = u_i^-1 is correct and imposes no u_i^2 = 1 relation.",
+            "After all meridians are involutions, either crossing sign admits the relator mu_out mu_over mu_in mu_over. Its first rewrite is R = x_out x_over^-1 x_in x_over^-1.",
+            "The other-coset rewrite is x_out^-1 x_over x_in^-1 x_over. This equals x_out^-1 R^-1 x_out, so it is redundant. Together with the square relators these account for the Reidemeister-Schreier relators of the given orbifold presentation."
+          ],
+          "dimensionArgument": [
+            "Identifying the parity kernel with the fundamental group of the branched double cover, the abelianized presentation has x_0 = 0 and x_out + x_in - 2x_over = 0 at each crossing.",
+            "Homomorphisms from this abelianization to Fp are exactly Fox colourings with base colour zero. Every colouring splits uniquely into its constant base colour plus a based colouring.",
+            "The Hom space is the dual of H1 of the branched cover with Fp coefficients and therefore has the same dimension. No division by 2 occurs, so the argument includes p = 2.",
+            "In the plat application, LRM = 0 mod p leaves b independent top-cap colours. Lemma 9 then forces dim H1 = b - 1 >= 3, contradicting cyclicity. The changed application is internally correct."
+          ],
+          "limits": [
+            "No source TeX, supplementary scripts, receipts, repository history, or cited sources were read for this follow-up.",
+            "The standard topological identification of the orbifold parity kernel with the fundamental group of the branched double cover remains used. The new calculation explicitly establishes its required homological-colouring consequence.",
+            "The prior review's unrelated external and topological premise limits remain in force. Its initial reference-[13] indispensability limit is superseded for this updated SHA by the explicit Lemma 9 calculation."
+          ]
+        }
+      ]
+    }
+  ],
+  "root_review": {
+    "pdf_sha256": "37a8a3b0da21d4bf60a662ecd230f98d99feb13708a90fe0f6b113137d7a9696",
+    "tex_sha256": "37184467cb533cabfe1eb940603d36caa21fc140625dc829e07e28e5f4d9e413",
+    "all8_rendered_pages_inspected": true,
+    "entire_main_checker_read": true,
+    "standard_library_and_native_topology_root_replayed": true,
+    "written_integer_elimination_independently_rederived": true,
+    "RS_square_and_crossing_relators_checked_by_second_internal_agent": true,
+    "all_whole_proof_assurance_flags_remain_false": true
+  }
+}

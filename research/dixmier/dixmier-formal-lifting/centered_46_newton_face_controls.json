@@ -69,7 +69,7 @@
   "field_condition": "(B-A\u00b2/4)\u00b2=0 implies B=A\u00b2/4 over fields",
   "next_half_face": "underzeroWeylsubprincipal,q1=(3/2)s*p1; K remainsfree",
   "hashes": {
-    "CENTERED_46_RECTANGLE_NEWTON_FACE_GATE.md": "c4e41b14b9538323bb20587f9fcb60c1e7f05a7e8c33855df0df461bdbf56192",
+    "CENTERED_46_RECTANGLE_NEWTON_FACE_GATE.md": "d2c6b82d05ee5e28d1b8954e73055352f11afd670228dd06eb240fc59315d1b4",
     "check_centered_46_newton_face.py": "3095875557bc44d37e5891c32247e8d454163b10354fa0b5c4a243743c4be69e"
   },
   "scope": "Necessary conditions and method control, no exclusion of order4/6 case, new pair, operator square/cube, general normalization or DC1 theorem. No claim to go beyond published degree bounds.",

@@ -3,11 +3,23 @@
 \usepackage{amsmath,amssymb,amsthm,mathrsfs,hyperref}
 \newtheorem{lemma}{Lemma}\newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
 \begin{document}\setlength{\emergencystretch}{1em}
 \title{Unit-digit terminal families at ordinary gap six}
 \author{Internal proof; no priority or external-review claim}\date{18 November 2026}\maketitle
-Let $3\le c\le6$, $r\ge1$, $L=7^r$, $N=L+c$, and let the
-raising operator be $\mathcal A=z-zD_z+N+5$.
+Here ordinary gap-six SFC refers only to lower exponent one:
+$f(X)=X(A+BX^6)$ with $A,B\in\mathbb C$ not both zero.
+For the ordinary factorial functional $\mathcal L(X^j)=j!$,
+the assertion at terminal $N\ge2$ means that
+$\mathcal L(f^{N-1})$ and $\mathcal L(f^N)$ are not both zero.
+
+Let $3\le c\le6$, $r\ge1$, $L=7^r$ and $N=L+c$.
+Work over $K=\mathbb C_7$, with $v_7(7)=1$, valuation ring
+$\mathcal O$, maximal ideal $\mathfrak m$, and residue field
+$k=\mathcal O/\mathfrak m$.
+The coefficient polynomial $Q$ belongs to $\mathcal O[X]$
+and has degree at most four.
+Let the raising operator be $\mathcal A=z-zD_z+N+5$.
 The six normalized cyclic rows are
 \[
  V_a(Q;v)=\sum_{\ell\ge0}
@@ -29,7 +41,7 @@ For the moment bridge write
  T_N(t)=T_{N,N,6}(t)=
              \sum_{j=0}^N\binom Nj(N)_{6j}t^j .
 \]
-They are integral, since the binomial polynomial is integer-valued
+The rows $V_a$ are integral, since the binomial polynomial is integer-valued
 on $\mathbb Z_7$ and the cyclic weights have nonnegative valuation.
 Write $S=S_r(v)=1+\sum_{i=1}^r(-1)^iv^{(7^i-1)/6}$ and
 $\mathscr D=v\partial_v+(S-1)\partial_S$.
@@ -56,7 +68,7 @@ $F_a(XQ)=(c+5-a+\mathscr D)F_a(Q)+aF_{a-1}(Q)$,
 with $F_{-1}=0$.
 The divided rows satisfy
 \[
- R_a(XQ)=(c+5-a+\mathscr D)R_a(Q)+aR_{a-1}(Q),\quad a\ge1,
+ R_a(XQ)=(c+5-a+\mathscr D)R_a(Q)+aR_{a-1}(Q),\quad1\le a<c,
 \]
 and
 $R_0(XQ)=(c+5+\mathscr D)R_0(Q)+vF_5(Q)$.
@@ -166,7 +178,7 @@ to1. Exact polynomial arithmetic verifies every entry.
 The return to the initial state proves periodicity for arbitrary$r$.
 In the $c=5$ record the only nonunit target gcd is $S-4$, exactly
 at depths1 modulo6. Evaluation gives $q_5'(4)=5$, $W_5(4)=4$.
-The last necessary relation gives $f(0,v)=(v-1)^5$ by exact
+Evaluating $f$ at $S=0$ gives $f(0,v)=(v-1)^5$ by exact
 coefficient comparison. All assertions hold over the full residue
 field, not only its seven prime-field elements.
 \end{proof}
@@ -243,29 +255,116 @@ A common zero would be a multiple root of$T_N$.
 Degenerate nonzero monomials have no zero positive moment.
 \end{proof}
 
-\begin{proposition}[An even-depth subfamily]\label{prop:even-six}
-The same SFC assertion holds at $N=7^{2j}+6$, $j\ge0$.
-For odd$r$, the first divided reduction leaves only the residue
-point $S=0,v=1$; it does not exclude an actual multiple root.
-\end{proposition}
+\begin{lemma}[A uniform trace congruence]\label{lem:trace-parity}
+Let $p$ be an odd prime, $Z\in\mathbb Z_p$, $Z\equiv1\pmod p$,
+and let $K_{n,p}(Z)$ be the power sum of the $p$ roots, with
+multiplicity, of $(\lambda-1)^p-Z\lambda^{p-1}$.
+For all integers $b\ge1$, $c\ge0$ and $r\ge1$,
+\[
+ K_{bp^{r+2}+c,p}(Z)\equiv K_{bp^r+c,p}(Z)\pmod{p^2}.    \tag{9}
+\]
+For the physical polynomials
+\[
+ H_{n,p}(Y)=p\sum_{j=0}^n\binom nj(n)_{(p-1)j}(Y/p)^j
+ \quad(n\ge1),
+\]
+the values $H_{bp^r+c,p}(-1)$ likewise depend only on the parity
+of $r\ge1$ modulo $p^2$.
+In particular, with $H_N=H_{N,7}$,
+\[
+ H_{7^r+6}(-1)\equiv
+ \begin{cases}7&r\ {\rm odd},\\43&r\ {\rm even}\end{cases}
+                      \pmod{49}.                       \tag{10}
+\]
+\end{lemma}
 \begin{proof}
-At a residual rank drop the last part of
-Lemma~\ref{lem:certificate} forces $S=0,v=1$ over every residue
-field. The actual recursion is $S_0(1)=1$,
-$S_{r+1}(1)=1-S_r(1)$, so $S_r(1)=1$ for even$r$.
-Thus even$r$ gives full residual rank and the same bridge applies.
-The case $r=0$, $N=7$, is native Eisenstein.
-For odd$r$, $S_r(1)=0$ is compatible; no further exclusion is
-claimed.
+Work in the finite free algebra
+\[
+ \mathcal B=\mathbb Z_p[\lambda]/
+                    ((\lambda-1)^p-Z\lambda^{p-1}).
+\]
+The class of $\lambda$ is a unit, since the constant coefficient
+is $-1$. Modulo $p$, its inverse $\tau$ satisfies
+$\tau^p+\tau=1$, so $\tau^{p^2}=\tau$ and
+$\lambda^{p^2}=\lambda$.
+Write $\lambda^{p^2}=\lambda+pB$ in $\mathcal B$.
+The binomial theorem gives
+$\lambda^{p^3}\equiv\lambda^p\pmod{p^2\mathcal B}$.
+Raising this congruence to $p^{r-1}$ and then to$b$,
+and multiplying by $\lambda^c$, proves equality of the corresponding
+multiplication traces.
+These traces equal $K_{n,p}$ by the characteristic polynomial
+and Newton identities, proving (9) without a separability assumption.
+
+Proposition \texttt{prop:trace} of the
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}{physical-prime note}
+gives
+$H_{n,p}(Y)\equiv K_{n,p}((p-1)!Y)\pmod{p^2}$.
+Wilson's congruence makes $Z=-(p-1)!$ equal to1 modulo$p$,
+proving the physical assertion.
+For $p=7$, $-(6!)\equiv15\pmod{49}$.
+Newton identities for
+\[
+ (\lambda-1)^7-15\lambda^6
+ =\lambda^7-22\lambda^6+21\lambda^5-35\lambda^4
+      +35\lambda^3-21\lambda^2+7\lambda-1
+\]
+give $K_{13,7}(15)\equiv7$ and $K_{55,7}(15)\equiv43$ modulo49.
+These are the two parity representatives in (10).
+The exact checker verifies both point values and the finite
+quotient identity $\lambda^{343}=\lambda^7$ modulo49.
+\end{proof}
+
+\begin{lemma}[A separable local cluster]\label{lem:local-cluster}
+Let $F\in\mathbb Z_p[Y]$ have unit leading coefficient.
+If $a\in\mathbb Z_p$ and $v_p(F(a))=1$, then $F$ has no
+multiple root $Y\in\mathbb C_p$ satisfying $v_p(Y-a)>0$.
+This is the entire residue disk, including ramified points.
+\end{lemma}
+\begin{proof}
+Normalize $F$ to be monic and write its reduction as
+$(Y-\bar a)^e\bar U(Y)$ with $\bar U(\bar a)\ne0$.
+Hensel factorization lifts these coprime factors to
+$F=Q U$ with $\bar Q=(Y-\bar a)^e$ and $U(a)$ a unit.
+Thus $Q(a)$ has valuation one, and $Q(a+X)$ is Eisenstein.
+It is irreducible over $\mathbb Q_p$ and therefore separable
+in characteristic zero. All roots in the specified residue disk
+belong to this one factor; none is repeated.
+The width $e$ need not be prime to$p$ or odd.
+\end{proof}
+
+\begin{theorem}[The sixth offset]\label{thm:offset-six}
+Ordinary gap-six Strong Factorial holds at every terminal
+$N=7^r+6$, $r\ge0$.
+\end{theorem}
+\begin{proof}
+At $r=0$, $N=7$ is native Eisenstein.
+For $r\ge1$ use the same exact cyclic identities, triangular
+column change and primitive-kernel argument above.
+The physical radius and critical-ideal implications would send
+any multiple root of $T_N$ to $u=-1/t=7v$ with $v$ a unit
+and a residual kernel of $M_6(S_r(\bar v),\bar v)$.
+Lemma~\ref{lem:certificate} forces $\bar v=1$ and $S_r(\bar v)=0$.
+
+Put $Y=7t=-1/v$, so $Y$ reduces to$-1$.
+The polynomial $H_N(Y)=7T_N(Y/7)$ is integral with unit
+leading coefficient by \texttt{lem:coefficients} of the
+physical-prime note.
+If $r$ is even, (10) makes $H_N(-1)$ a unit, so that residue
+disk contains no root.
+If $r$ is odd, (10) gives valuation exactly one and
+Lemma~\ref{lem:local-cluster} excludes multiple roots throughout
+the disk. This contradicts multiplicity of the putative root.
+The ordinary two-moment bridge then gives the asserted SFC.
 \end{proof}
 
 \begin{corollary}[A combined small-offset family]\label{cor:small-offsets}
 Ordinary gap-six SFC holds at every terminal $N=7^r+c$,
-$2\le c\le5$, $r\ge0$, and at $N=7^{2j}+6$, $j\ge0$.
+$2\le c\le6$, $r\ge0$.
 \end{corollary}
 \begin{proof}
-Theorem~\ref{thm:families} and Proposition~\ref{prop:even-six}
-supply $c=3,4,5$ and the even-depth $c=6$ case.
+Theorems~\ref{thm:families} and~\ref{thm:offset-six}
+supply $c=3,4,5,6$.
 For $c=2,r\ge1$ use \texttt{thm:family} of the
 \href{GAP_SIX_POWER_PLUS_TWO_SFC.tex}{power-plus-two note}.
 Its endpoint $r=0,N=3$ is native Eisenstein, \texttt{cor:pair}
@@ -279,8 +378,7 @@ Put
 \begin{split}
  \mathcal U={}&\{b7^s:1\le b\le6,\ s\ge0\}
  \cup\{b7^r+1:1\le b\le6,\ r\ge0\}\\
- &{}\cup\{7^r+c:2\le c\le5,\ r\ge0\}
- \cup\{7^{2j}+6:j\ge0\}.
+ &{}\cup\{7^r+c:2\le c\le6,\ r\ge0\}.
 \end{split}
 \]
 Ordinary binomial SFC through degree seven is equivalent to
@@ -297,8 +395,8 @@ Corollary~\ref{cor:small-offsets} supplies every additional omitted
 terminal. Removing already proved tests preserves sufficiency;
 necessity is immediate from inclusion among the degree-seven tests.
 \end{proof}
-The still-compatible odd-depth $N=7^r+6$ residue point is a
-limitation of this first divided reduction, not an SFC counterexample.
+The first divided matrix alone leaves an odd-depth sixth-offset
+residue point; the trace and local-cluster arguments exclude it.
 The remaining terminals, all-index gap-six and degree-seven SFC,
 and unrestricted FC/SFC remain open.
 No all-positive-Gamma-shape extension is asserted here.

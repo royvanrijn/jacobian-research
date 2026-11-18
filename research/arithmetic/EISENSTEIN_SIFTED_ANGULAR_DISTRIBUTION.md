@@ -75,6 +75,161 @@ The fixed finite inclusion-exclusion proves the same bound (with constant depend
 
 L. Walling, *The Eichler Commutation Relation for theta series with spherical harmonics*, Theorems 1 and 2, [article PDF](https://bibliotekanauki.pl/articles/1391780.pdf). Her correction concerns the corollary to Theorem 3 and Section 4. [Walling, correction](https://doi.org/10.4064/aa-66-4-391). A. O. L. Atkin and J. Lehner, *Hecke operators on \(\Gamma_0(m)\)*, Theorem 3, [DOI](https://doi.org/10.1007/BF01359701). For the arbitrary-level newform and Fourier normalizations [Barrett et al., §2](https://web.williams.edu/Mathematics/sjmiller/public_html/math/papers/GeneralN_21.pdf). The unramified estimate uses [Deligne, modular forms, Theorems 4.9 and 5.1](https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf) and [Deligne, Weil I, Theorem 1.6](https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf).
 
+## A direct finite-polynomial proof of eventual balance
+
+Full angular equidistribution is stronger than eventual balance requires.
+The preserved [degree-20 polynomial](eisenstein-restricted-prime-sums/research_notes/unfinished_balanced_notes.md)
+and its [exact certificate](eisenstein-restricted-prime-sums/research_notes/literature_balanced_polynomial_receipt.json)
+give a shorter proof, using angular moments only at fixed levels.
+
+Write \(t(v)=(N(z)-N(w))/n\) on a norm-\(n\) shell, and set
+\[
+\begin{split}
+P(Z)={}&18000(1/9-Z)(Z+1/36)\\
+&\times(Z-3/10)^2(Z-9/16)^2(Z-4/5)^2(Z-24/25)^2,\\
+W(v)={}&P(t(v)^2).
+\end{split}
+\]
+The certificate proves
+\[
+W\le\mathbf1_{|t|\le1/3}\le1,\qquad
+P(t^2)=c_0+\sum_{j=2,4,\ldots,20}c_jL_j(t),\qquad
+c_0=\frac{3824117519863}{17459442000000}>\frac7{32}.
+\tag{3}
+\]
+Only these ten nonconstant Legendre degrees are needed. The certified lower
+bound \(W\ge-1/5\) is valid but unnecessary for this proof.
+
+To identify their harmonic lifts, put \(u=|z|^2\), \(v=|w|^2\),
+\(s=u+v\), and \(t=(u-v)/s\). For each \(j>0\),
+\[
+\Phi_j(z,w)=s^jL_j(t)
+\]
+is a polynomial homogeneous of degree \(2j\) in four real coordinates.
+The Legendre differential equation gives
+\[
+\tfrac14\Delta\Phi_j
+=s^{j-1}\{(1-t^2)L_j''(t)-2tL_j'(t)+j(j+1)L_j(t)\}=0.
+\]
+Thus its theta series has weight \(2j+2\). The ten degrees in (3) correspond
+to harmonic degrees \(4,8,\ldots,40\) and modular weights
+\(6,10,\ldots,42\). The fixed-lattice estimates already proved give, for
+any set \(\mathcal S_n\) whose indicator is a fixed finite integral
+combination of lattice indicators on the shell,
+\[
+\sum_{x\in\mathcal S_n}W(x)
+=c_0|\mathcal S_n|+O_{\mathcal S,\epsilon}(n^{1/2+\epsilon}).
+\tag{4}
+\]
+Here \(0<\epsilon<1/2\) is fixed and the combination of lattices is fixed
+before \(n\) grows.
+
+**Theorem EisBalanceFinite.** Every sufficiently large \(n\equiv2\pmod6\)
+has a balanced decomposition into two members of \(A\), and every sufficiently
+large \(n\equiv4\pmod6\) into a member of \(A\) and a member of
+\(3\cdot A\), in the prescribed orientation. Both actual summands lie in
+\([n/3,2n/3]\). There are \(\gg_\epsilon n^{1-\epsilon}\) distinct ordered
+balanced value pairs for every fixed \(\epsilon>0\). The proof uses only
+(3)--(4) and the unweighted odd-prime sieve.
+
+For the pure class let \(\Omega_n\) be the odd-component shell, of size
+\(R_o(n)\), and let \(E_n=\Omega_n\setminus G_n\). Oddness is a fixed
+lattice condition, so (4) gives
+\(\sum_{\Omega_n}W=c_0R_o+o(R_o)\). Since \(W\le1\),
+\[
+\begin{split}
+\#\{\text{balanced witnesses in }G_n\}
+&\ge\sum_{G_n}W
+=\sum_{\Omega_n}W-\sum_{E_n}W\\
+&\ge\sum_{\Omega_n}W-|E_n|
+\ge\left(c_0-\frac3{20}-o(1)\right)R_o\\
+&>\left(\frac{11}{160}-o(1)\right)R_o>0.
+\end{split}\tag{5}
+\]
+This uses only EisTail's unweighted obstruction count. In particular,
+no angular moment restricted by an odd bad prime is needed.
+
+For the mixed class, first retain \(\mathcal H_n\subset\Omega_n\) with
+neither component norm divisible by \(9\), keeping both orientations.
+This is a fixed combination of sublattices at \(2\) and \(3\). EisEta gives
+\(|\mathcal H_n|=(2/3+o(1))R_o\), and (4) gives
+\(\sum_{\mathcal H_n}W=(2c_0/3+o(1))R_o\).
+Use the sharper elementary estimate for the odd-prime main loss:
+\[
+\begin{split}
+B:=\sum_{\substack{p\ge5\\p\equiv2\ (3)}}\frac2{p(p-1)}
+&\le\sum_{k=1}^{10}\frac2{(6k-1)(6k-2)}+\frac1{174}\\
+&=\frac{1172270798426263}{8207288024655720}<\frac17.
+\end{split}\tag{6}
+\]
+Indeed the summand is decreasing and its tail beyond \(k=10\) is at most
+\(\frac13\log(59/58)<1/174\). This is also checked by the retained
+polynomial checker. EisTail's summation proof gives total unweighted loss
+at most \((B+o(1))R_o\). Therefore
+\[
+\sum_{\substack{\text{fully good mixed witnesses}\\
+                 \text{both orientations}}}W
+\ge\left(\frac{2c_0}{3}-\frac17-o(1)\right)R_o
+>\left(\frac1{336}-o(1)\right)R_o>0.\tag{7}
+\]
+The weight \(P(t^2)\) is invariant under exchanging the components.
+The two orientations consequently receive exactly equal weighted totals;
+each has balanced witness count at least
+\((1/672-o(1))R_o\). The same estimate (6) sharpens the pure margin in
+(5) to \(17/224-o(1)\).
+
+Both lower bounds are \(\gg n\). Dividing by the previously established
+\(O_\epsilon(n^\epsilon)\) multiplicity of each value pair proves the
+stated count of distinct pairs.
+The subtraction uses the **union** of bad witnesses and the bound
+\(\sum_{E_n}W\le|E_n|\le\sum_p b_p^o\). It never replaces that signed
+sum by a sum of signed weights over individual bad-prime events. Thus
+negative values of \(P\) cause no issue. The older positive margin
+\(333/3200\) belongs to a different proposed weighted-sieve argument;
+(5)--(7) establish balance using the existing unweighted sieve.
+
+This proof involves finitely many fixed-level cusp forms. Their current
+coefficient estimates have no explicit constants supplied here, so these
+positive margins do not supply an explicit onset in \(n\) or prove that
+\(8,44\) are the complete ordinary balanced exception list.
+
+## Why the tail must be normalized by the shell count
+
+The fixed-cutoff proof using \(G_{n,Y}\) is also valid when its tail is
+normalized by \(R_o(n)\), as in EisTail. Replacing that denominator by
+\(n\) is false for the coordinate witnesses counted here.
+
+**Counterexample EisTailScale.** For every fixed \(Y\), already in the pure
+class,
+\[
+\limsup_{\substack{n\to\infty\\n\equiv2\ (6)}}
+\frac{|G_{n,Y}\setminus G_n|}{n}=+\infty.
+\tag{8}
+\]
+Fix an odd inert prime \(p>Y\), and put
+\[
+m_T=2\prod_{\substack{\ell\le T\\\ell\equiv1\ (3)}}\ell,
+\qquad n_T=p^2m_T.
+\]
+Scaling both coordinates of each witness in \(G_{m_T}\) by \(p\) injects
+it into \(G_{n_T,Y}\setminus G_{n_T}\): the prime \(p\) is not tested by
+the finite sieve, and no other forbidden prime is introduced. Also
+\[
+\frac{R_o(m_T)}{m_T}
+=18\prod_{\substack{\ell\le T\\\ell\equiv1\ (3)}}(1+1/\ell)
+\longrightarrow\infty.
+\]
+The divergence follows from the fixed-progression Mertens estimate, for
+example [Loughran--Matthiesen, Lemma 2.4(2)](https://arxiv.org/html/1904.12845v2#S2).
+The unweighted sieve gives
+\(|G_{m_T}|\ge(17/20-o(1))R_o(m_T)\). Hence
+\[
+\frac{|G_{n_T,Y}\setminus G_{n_T}|}{n_T}
+\ge\frac{|G_{m_T}|}{p^2m_T}\longrightarrow\infty,
+\]
+proving (8). This leaves the \(R_o\)-normalized tail unchanged and does
+not affect either proof of eventual balance.
+
 ## Proof of Theorem EisAngle
 
 The set difference \(G_{n,Y}\setminus G_n\) is bounded in size by \(\sum_{p>Y}b^o_p(n)\). For fixed \(H\), divide the fixed-lattice estimate by \(R_o\ge18n\), and bound the effect of the set difference by \(\|H\|_{\infty,S^3}\) times (2). First let \(n\to\infty\) within its admissible class, then \(Y\to\infty\). This yields \(\sum_{v\in G_n}H(v/\sqrt n)=o(R_o)=o(|G_n|)\). The constant function 1 has average one, and positive-degree spherical harmonics have spherical mean zero. Finite sums of their restrictions and constants are dense in \(C(S^3)\) by polynomial approximation and the harmonic decomposition of homogeneous polynomials. The probability measures giving equal mass to each signed, ordered witness in \(G_n\), rescaled by \(\sqrt n\), thus converge weakly to normalized surface measure on \(S^3\).
@@ -95,3 +250,17 @@ fractions and a small/large-prime split; [Dietmann and Elsholtz's answer,
 route with a possible finite completion. These are method precedents, not
 identified proofs of the Eisenstein statements here. The 2026 Gaussian release
 remains the immediate starting point of the manuscript's exposition.
+
+
+## Verification of the finite weight
+
+The unchanged retained checker was freshly replayed in an ignored directory,
+with Python 3.12.3 and SymPy 1.14.0, with assertions enabled. Its complete
+16-field JSON output matched the retained receipt, including all 64 upper
+and 256 lower Bernstein subinterval certificates, every Legendre coefficient,
+and the exact rational bound (6). A negative constant polynomial was rejected
+by the Bernstein positivity check. Separate exact symbolic differentiation
+verified all ten harmonic lifts. These diagnostics support the written
+Laplacian calculation; they do not replace it. No new finite-range binary scan, external
+replay or formal verification is claimed. The certificate proves the
+polynomial inequalities; (4)--(7) supply the analytical bridge.
