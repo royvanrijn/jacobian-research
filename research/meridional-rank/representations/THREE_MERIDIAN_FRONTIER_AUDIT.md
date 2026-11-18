@@ -108,3 +108,164 @@ bounds: https://knotinfo.org/descriptions/bridge_index.html
 This prose is not an exact versioned table audit, but means the October
 2026 deposit's 293 undecided bridge intervals should not be assumed
 current. It does not settle all thirteen-crossing meridional ranks.
+
+## Generation certificates and a fixed-tuple lifting failure
+
+A three-seed diagram-coloring search cannot produce a counterexample with
+bridge number four. Blair--Kjuchukova--Velazquez--Villanueva,
+[Theorem 1.3](https://doi.org/10.4310/CAG.2020.v28.n2.a2), prove that the
+minimum Wirtinger number over diagrams equals bridge number. A successful
+three-seed propagation already proves bridge at most three. General group
+relations, rather than only that propagation rule, must certify a putative
+counterexample's generating triple.
+
+Orbifold generation of a SPECIFIED triple is insufficient even for the
+trefoil. In its meridional presentation G=<a,b | aba=bab>, put
+
+```text
+n=a^2 b a^-2 b^-1,  b'=n b n^-1,  c=a b' a^-1.
+```
+
+The meridians a,b',c map to the three distinct transpositions in the
+order-two orbifold quotient S3. But the homomorphism
+a -> (123), b -> (134) maps G onto A4, sends n to (13)(24), and sends
+ALL THREE proposed generators to (123). Their subgroup is therefore proper.
+Both finite permutation computations were checked exactly. The trefoil
+has other generating lifts; this is not mr>m2 or a counterexample to MRC.
+
+A naive relative kernel abelianization cannot repair this issue. Put
+N=<<m1^2>>_G, H=<the proposed meridians>, K=H intersect N. Orbifold
+surjectivity gives G=HN. Modulo [N,N], every conjugate of m1^2 by an element
+of G equals one conjugated by an element of H, and that element belongs
+to K. Hence N=K[N,N], regardless of whether H=G. If N=K gamma_j(N),
+commutator collection gives [N,N] contained in [K,K] gamma_(j+1)(N),
+so induction gives G=H gamma_j(N) for every finite lower-central stage.
+The trefoil example still has H proper.
+
+A genuine positive certificate can instead give, for EVERY original
+presentation generator x_j, a word V_j in the proposed meridians and an
+explicit free-group identity
+
+```text
+x_j V_j(m1,m2,m3)^-1 = product_l u_l r_(k_l)^(epsilon_l) u_l^-1,
+epsilon_l in {1,-1}.
+```
+
+Here the r_k are ONLY original knot-group relators. Free reduction verifies
+the certificate. Such finite certificates exist exactly when the triple
+generates. Adding meridian-square relators would change the assertion.
+
+## A concrete four-bridge candidate, still unresolved
+
+The current test input is the literal four-braid knot
+
+```text
+K=T(4,5;2,2)=closure(sigma1^4 (sigma1 sigma2 sigma3)^5).
+```
+
+[Himeno, arXiv:2507.23252v2, Theorem 1.2](https://arxiv.org/html/2507.23252v2),
+gives bridge number four: this positive braid contains the full four-strand
+twist. This is a PREPRINT input, not a new bridge theorem proved here.
+[Vafaee, IMRN 2015, Section 2.1](https://arxiv.org/html/1311.3711v2), gives
+a (1,1)-presentation for T(p,kp+-1;s,r), including this knot. Lifting its
+two solid-torus trivial-arc pieces gives genus-two handlebodies, so the
+double-cover group has rank at most two. Thus the earlier cover-rank-three
+filter does not eliminate this input. No worldwide novelty or absence of
+other known meridional-rank certificates is asserted.
+
+SnapPy 3.3.2, from the literal braid/PD, supplies the simplified presentation
+
+```text
+G=<a,b | aabbbaabbbbaBBBAABBBabbbb>,  meridian mu=BA,
+```
+
+where uppercase denotes inverse. The diagram-to-cell-group and peripheral
+word identification are explicit SOFTWARE IMPORTS. Census names and
+numerical volumes are not substitute proofs. An interval-hyperbolicity
+attempt did not certify the closed cover; it supplies no negative
+geometric conclusion.
+
+For an algebraic search beyond coset enumeration, put m=ab, x=a m^-5 and
+e_i=m^(i-10) x m^(-(i-10)), 1<=i<=16. Magnus rewriting has unique extreme
+indices -9 and 7 and gives the EXACT model F16 semidirect_phi <m>:
+
+```text
+phi(e_i)=e_(i+1), i<16,
+phi(e16)=[-13,-9,10,-11,-7,8,-9,-5,-1,2,6,10,-9,8,12,16];
+
+phi^-1(e_j)=e_(j-1), j>1,
+phi^-1(e1)=[1,5,9,-8,7,11,15,-16,-12,-8,9,-10,-6,7,-8,-4].
+```
+
+The signed words use generator indices. Free reduction checked both
+coordinate substitutions, all 32 inverse-composition identities and all
+16 mapping-torus relator transports. This is an exact algebraic search
+model, not a meridional-rank bound.
+
+For w=c m^q in this normal form, (w mu w^-1)m=c phi^-1(c^-1).
+Thus mu and two conjugates generate G precisely when all iterates phi^j, j in Z, of
+the two resulting fiber words generate all F16. If they generate F16,
+each of its sixteen basis elements is a word in finitely many iterates.
+One cutoff \(J\) contains all iterates needed by those words. Folding the
+iterates with \(|j|\leq J\) then gives the full sixteen-loop rose.
+Conversely, such a finite rose proves generation. A generating triple
+can be oriented and simultaneously conjugated to have first entry mu,
+so this equivalence applies to the existence question under the
+peripheral identification. Growth of finite closures alone leaves
+generation undecided.
+
+The bounded test considered 595 pairs among 35 distinct freely reduced
+conjugate words, apart from the initial meridian word, obtained from
+conjugators of free length at most three. Distinctness in the knot group
+is not assumed.
+Explicit finite permutation quotients disprove generation for 286 triples.
+All 309 survivors remain UNRESOLVED: neither finite coset enumeration nor
+the monodromy-orbit test produced a generation certificate. The latter
+stopped at N=27--40 after graphs first exceeded 50,000 vertices; observed
+ranks 4N+2 do not prove that formula at all N. The graph implementation
+passed 300 separate slow-fold comparisons and a full-F16 positive control.
+
+A proper two-meridian subgroup also survives EVERY nilpotent quotient of
+the fiber. Put H=<m,a m a^-1> and d=e10 e9^-1. Since a=e10 m^5,
+H contains d and all its phi^j iterates. For -9<=j<=6, their
+abelianization columns are exactly I-phi_*^-1; its determinant is one.
+In any nilpotent quotient Q of F16, their subgroup J therefore satisfies
+Q=J[Q,Q], hence Q=J by successive commutator collection. Thus
+G=H gamma_j(F16) for every finite j. Nevertheless H is proper: with
+permutation composition pq(i)=p(q(i)), the zero-based arrays
+
+```text
+a=[1,0,3,4,5,2], b=[1,2,4,0,3,5]
+```
+
+satisfy the original relator and generate A6 of order 360, whereas the
+images of m and a m a^-1 generate order eight. This is a countercheck
+against a proposed method, not against MRC. Even all nilpotent fiber
+quotients cannot detect this subgroup's failure to generate.
+
+Finite reflection/transvection screens and small branched-cover homology
+also supplied no decisive lower bound. The two six-sheet involutory
+cover presentations both reduce to C3, so their ordinary group rank is
+one and cannot exclude three meridians via the graph bound. No inference
+from a failed finite representation search or a coset limit is made.
+The missing assertion remains actual three-meridian generation, or a
+new obstruction to every such triple.
+
+
+## Replay and assurance
+
+Run from the repository root:
+
+```sh
+python3 research/meridional-rank/representations/verify_three_meridian_candidate.py
+```
+
+The [self-contained checker](verify_three_meridian_candidate.py) uses only
+the Python standard library. Its literal inputs replay the coordinate and
+relator identities, the two finite trefoil images, five finite quotients
+certifying the 286 negative triples, and the determinant/order-eight
+nilpotent-fiber countercheck. It passed under Python 3.12.3, including two
+corrupted-input rejection controls. It does not replay the bounded coset
+or growing-Stallings experiments, derive the knot presentation from a
+diagram, or certify any generating triple. The 309 surviving triples and
+the unrestricted three-meridian frontier remain unresolved.

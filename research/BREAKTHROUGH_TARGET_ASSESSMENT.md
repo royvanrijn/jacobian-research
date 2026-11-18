@@ -2,7 +2,7 @@
 
 The objective remains a result with major external mathematical impact. None of
 the five unrestricted targets below is resolved by the current repository.
-Primary target: Gaussian safety-to-purity. No secondary target this iteration.
+Primary target: Meridional Rank Conjecture, three-meridian frontier. No secondary target this iteration.
 The other candidates are audited here, not pursued as parallel family-expansion
 programmes. Assessment date: 18 November 2026.
 
@@ -273,7 +273,7 @@ retain medium bilinear boxes but lose the existing periodic fallback.
 stated binary frontier. More density-one estimates, local identities or
 large finite searches do not remove its obstruction.
 
-## Meridional rank
+## Meridional rank: primary target
 
 **Quantifiers.** For every classical knot K, is mr(K)=b(K)? The immediate
 universal frontier is mr(K)<=3 => b(K)<=3. A certified triple generating
@@ -302,7 +302,18 @@ step. Dropping the marking is false, as T(4,7) demonstrates.
 meridional-rank frontier; an actual knot counterexample disproves MRC.
 Additional augmentation-gap families do neither.
 
-## Gaussian safety-to-purity: primary target
+The concrete current test is T(4,5;2,2), the closure of sigma1^4
+(sigma1 sigma2 sigma3)^5. Its (1,1)-presentation gives cover rank at most
+two, and Himeno's bridge-index PREPRINT gives bridge number four.
+The [frontier audit](meridional-rank/representations/THREE_MERIDIAN_FRONTIER_AUDIT.md)
+records exact source scopes, its free-by-cyclic model and bounded searches.
+Of 595 short-conjugator triples, 286 have finite-quotient nongeneration
+certificates and 309 remain unresolved. No three-meridian generation
+certificate or new meridional-rank bound has been found. The same audit
+gives a trefoil example showing why orbifold generation of a specified
+triple does not certify its original lifts.
+
+## Gaussian safety-to-purity
 
 **Quantifiers.** For every n>=1 and P in C[x1,...,xn], does
 [for every Q there exists M_Q such that E(QP^m)=0 for all m>=M_Q]

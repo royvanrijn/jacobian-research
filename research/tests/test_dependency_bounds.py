@@ -52,6 +52,48 @@ class BoundsTests(unittest.TestCase):
                 self.assertEqual(len(bounds_records(graph)), 3)
                 self.assertEqual(len(bound_comparisons(graph)), 1 if state == "proved" else 2)
 
+    def test_recorded_replacement_keeps_the_older_bound_as_a_fallback(self):
+        graph = self.graph([("old", "same", "lower", 4, "proved", []),
+                            ("replacement", "same", "lower", 6, "proved", [])])
+        graph.nodes["old"]["bounds"][0]["superseded_by"] = "replacement"
+
+        comparison = bound_comparisons(graph)[0]
+        self.assertEqual(comparison["opportunities"], [])
+        self.assertEqual(comparison["recorded_updates"], [
+            {"weaker_claim": "old", "sense": "lower", "old_value": 4,
+             "stronger_value": 6, "replacement": "replacement"}])
+        self.assertEqual(len(bounds_records(graph)), 2)
+
+        graph.evaluate()["replacement"]["state"] = "stale"
+        comparison = bound_comparisons(graph)[0]
+        self.assertEqual(comparison["best_lower"], 4)
+        self.assertEqual(comparison["recorded_updates"], [])
+
+    def test_recorded_replacement_does_not_hide_a_further_improvement(self):
+        graph = self.graph([("old", "same", "upper", 10, "conditional", ["H"]),
+                            ("replacement", "same", "upper", 9, "conditional", ["H"]),
+                            ("new", "same", "upper", 8, "conditional", ["H"])])
+        graph.nodes["old"]["bounds"][0]["superseded_by"] = "replacement"
+
+        comparison = bound_comparisons(graph)[0]
+        self.assertEqual(comparison["recorded_updates"], [])
+        self.assertEqual([row["weaker_claim"] for row in comparison["opportunities"]], ["old", "replacement"])
+
+        graph.evaluate()["new"]["state"] = "stale"
+        self.assertEqual(len(bound_comparisons(graph)[0]["recorded_updates"]), 1)
+        graph.evaluate()["replacement"]["assumptions"] = ["K"]
+        self.assertTrue(all(not row["recorded_updates"] for row in bound_comparisons(graph)))
+
+    def test_recorded_replacement_must_strictly_improve_an_identical_bound(self):
+        for target_domain, target_sense, target_value in (
+                ("different", "lower", 6), ("same", "upper", 6), ("same", "lower", 4)):
+            with self.subTest(domain=target_domain, sense=target_sense, value=target_value):
+                graph = self.graph([("old", "same", "lower", 4, "proved", []),
+                                    ("replacement", target_domain, target_sense, target_value, "proved", [])])
+                graph.nodes["old"]["bounds"][0]["superseded_by"] = "replacement"
+                with self.assertRaisesRegex(AssertionError, "strictly improve"):
+                    bounds_records(graph)
+
     def test_inconsistent_bounds_are_exposed(self):
         graph = self.graph([("upper", "same", "upper", 3, "proved", []),
                             ("lower", "same", "lower", 4, "proved", [])])

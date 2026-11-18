@@ -7,6 +7,27 @@ contains only paper sources, its PDF, paper records and its generated source
 archive. The relocation preserves every moved file's bytes and mathematical
 scope; it is not a new calculation or an assurance upgrade.
 
+## Research focus
+
+The primary target is the exact ordinary balanced classification: every positive
+`n = 2 mod 6`, except `8` and `44`, should be a sum of two members of `A`
+with both summands in `[n/3, 2n/3]`. The retained finite certificate covers
+`n < 10^8`; the eventual balance theorem has not yet been connected to that
+range. Work should first seek a sufficient effective estimate for this fixed
+interval and a rigorous bridge to finite verification. The full exception list
+remains a conjecture.
+
+The secondary direction is additive coverage by splitting-prime semigroups,
+starting with the existing theorem for an abelian splitting semigroup paired
+with a quadratic splitting semigroup. Its exact admissibility conditions,
+counts and proof dependencies are in the
+[subgroup splitting note](../ASYMMETRIC_SUBGROUP_SPLITTING.md). Extending both
+sides to arbitrary splitting conditions is a separate open problem.
+
+The simultaneous `C12+C12` problem and the saved sieve reductions remain open
+background work. They are no longer the primary proof-search target. This change
+of research priority does not change any theorem or review status.
+
 ## Current mathematics
 
 - [Pointwise semigroup-scale counts for Eisenstein sums](../EISENSTEIN_POINTWISE_SEMIGROUP_SCALE.md).

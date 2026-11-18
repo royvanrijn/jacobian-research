@@ -487,7 +487,9 @@ def render_bounds(data: dict, graph: DependencyGraph) -> str:
              "quantities, domains and parameter restrictions; conditional bounds stay separate. "
              "Symbolic criteria are displayed without guessing implication or asymptotic order. "
              "Bounds on an explicitly excluded domain remain visible as intermediate proof steps. "
-             "A current proof of exclusion removes those rows from comparisons.", "",
+             "A current proof of exclusion removes those rows from comparisons. "
+             "A superseded bound remains available as a fallback. Its recorded replacement must "
+             "attain the best available value under the same assumptions.", "",
              "[Dependency graph](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Exact scopes](SCOPES.md)", "",
              "| Claim | State | Quantity | Domain | Bound | Assumptions |", "|---|---|---|---|---|---|"]
     for row in rows:
@@ -511,7 +513,13 @@ def render_bounds(data: dict, graph: DependencyGraph) -> str:
                          + str(item["stronger_value"]) + " via " + ", ".join(item["stronger_claims"])
                          + "; structural consumers: " + (", ".join(item["affected"]) or "none") + ".")
     else:
-        lines.append("No weaker registered numeric bound has an available stronger bound in an identical domain.")
+        lines.append("No unrecorded improvement in an identical domain.")
+    recorded_updates = [item for row in comparisons for item in row["recorded_updates"]]
+    if recorded_updates:
+        lines += ["", "## Recorded replacements", ""]
+        for item in recorded_updates:
+            lines.append(f"- {item['weaker_claim']} has bound {item['old_value']}. "
+                         f"{item['replacement']} improves it to {item['stronger_value']} under the same assumptions.")
     for row in comparisons:
         if row["conflict"]:
             lines += ["", "**Conflicting available bounds:** " + row["quantity"] + " in " + row["domain"] + "."]

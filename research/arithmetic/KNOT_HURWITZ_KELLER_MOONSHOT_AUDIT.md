@@ -221,8 +221,8 @@ support span of all sheets by at most eight. Every endpoint block has
 two jointly occurring sheets whose original lobe positions are far apart;
 these disjoint pairs force quadratic total growth. Thus the whole family
 lies in one known orbit, but a linear adjacent-word normalization algorithm
-is impossible. Arbitrary polynomial tuples, the buffered variant and
-degree-sixteen connectivity remain separate questions.
+is impossible. Sharp distance for the buffered variant, arbitrary polynomial
+tuples and degree-sixteen connectivity remain open.
 
 The [ordered one-vertex lobe-tree theorem](NATURAL_D5_LOBE_TREE_HURWITZ_REACHABILITY.md)
 allows each adjacent natural D5 pair to attach at any one old sheet and
@@ -232,6 +232,15 @@ new pair before bounded-core absorption. For t >= 2, all these tuples
 lie in the absolute orbit of W_(2t) with full group A_(4t+1). The
 general upper bound is O(t^4). The bouquet subfamily gives a
 quadratic worst-case lower bound for the larger class.
+
+A [two-leaf absorption theorem](UNIFORM_TWO_LEAF_DT_ABSORPTION.md)
+allows one final double transposition with two fresh leaves at any pair
+of distinct old sheets. This gives reachability for the buffered bouquets
+and buffered ordered trees. The theorem applies to every canonical
+component with r ≥ 3. At r = 2, the five adjacent-anchor extensions
+stay in the other full-A7 orbit. For r ≥ 7 the pure-DT connectivity
+problem is now equivalent to reaching a representative with a removable
+two-leaf factor. The proven degree-thirteen case starts the induction.
 
 The [reciprocal ODE theorem](PAIRED_CRITICAL_RECIPROCAL_OBSTRUCTION.md)
 classifies the direct extension of the degree-ten reciprocal construction.

@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md",
+  "claims": {
+    "uniform_extension": "For every r>=3, append eta=(a,u)(b,v) to canonical Wr_r, with arbitrary distinct old anchors and two fresh sheets. The result reaches Wr_(r+1), up to common sheet relabeling.",
+    "distance_bound": "At most 446265984+r^3+r^2+5r+1 ordinary signed Hurwitz moves. The fixed finite core words are not recovered or replayed.",
+    "core_interface": "Old cyclic distance has r possibilities. Prescribed representatives isolate six fixed thirteen-sheet cores by positive selected-factor moves. Every remaining outside anchoring pair is checked against the lower core antipodal pairing. This proves an actual global wreath deletion.",
+    "sharp_boundary": "For r=2 all ten extensions generate A7. Exactly the five old-cycle-distance2 pairs reach Wr3; each distance1 orbit is a closed147-state full-A7 orbit whose every leaf deletion is symmetric.",
+    "closure": "The known canonical component is closed under any such two-fresh-sheet DT extension. The odd-factor buffered D5 bouquets and normalized ordered D5-lobe-tree extensions therefore also reach the canonical component.",
+    "limits": [
+      "No arbitrary polynomial DT tuple connectivity theorem.",
+      "No proof that an arbitrary tuple admits removable-DT extraction.",
+      "No full classification of the degree16 original passport or all-degree Hurwitz spaces.",
+      "No recovered fixed finite core word or optimal distance claim."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md",
+      "sha256": "0bb4149424eac7d246d001e3b54b49cd1c773bad0d2110c38e2ee6dcd6f95c21",
+      "locator": "Theorem1, Theorem2 and Corollary3",
+      "role": "Complete cyclic representative classification, six-core outside-pair compatibility, uniform absorption and sharp lower boundary."
+    },
+    {
+      "path": "research/arithmetic/verify_uniform_two_leaf_dt_absorption.py",
+      "sha256": "6e9bf053641f217b4a1519b42eefdc6f7f384b997a357fed44df696796e99b12",
+      "locator": "six_core_controls; normalize_prefix; rotate_pair; small_base; boundary; imported_counts",
+      "role": "Exact literal transport/extraction/normalization controls, finite-controller endpoint substitutions, and complete degree7 boundary."
+    },
+    {
+      "path": "research/arithmetic/uniform_two_leaf_dt_absorption_verification.json",
+      "sha256": "29b5b5bb7606efc3eecad51a536612aa22961501e792a9c497dcc2796bd9488f",
+      "locator": "Actual default execution",
+      "role": "72 normalized cases,490 old-pair rotations,112 finite-base cases, and all ten complete boundary orbits."
+    },
+    {
+      "path": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
+      "sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+      "locator": "Theorems1 and3; Lemma2",
+      "role": "Wreath block-tree criterion and constructive normalization; recurrence gives bound2r^2+1 for r+1 factors."
+    },
+    {
+      "path": "research/arithmetic/verify_imprimitive_leaf_normal_form.py",
+      "sha256": "23cccbea8f9a743eeb815866c4657065108dbbf8979cd2037bcef0bc98c15a3d",
+      "locator": "normal; star_word; lower_class",
+      "role": "Frozen actual global normalizer and exact deletion classification, imported read-only."
+    },
+    {
+      "path": "research/arithmetic/imprimitive_leaf_normal_form_verification.json",
+      "sha256": "6f51ff6090b8b20065636758b52401817e40635ff2d1c6eb2539ac2f4f25865c",
+      "locator": "Complete canonical/source controls",
+      "role": "Previously replayed normal-form proof support and assurance scope."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
+      "sha256": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+      "locator": "Complete degree13 polynomial orbit and character-count method",
+      "role": "Indispensable finite core controller theorem."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_fourteen_hurwitz_orbit.py",
+      "sha256": "3ed881ab1b52e015be9d88d82773a4dc3aa08be967770c6f1e4c4cd3c1a806ab",
+      "locator": "character_bounds; seed controls; complete DT cases9,11,13",
+      "role": "Independent finite totals and complete lower-degree premises, not inferred from the named degree13 theorem alone."
+    },
+    {
+      "path": "research/arithmetic/degree_fourteen_hurwitz_verification.json",
+      "sha256": "009545e432aee4cf61c877f26b59b2e53c63d5153a8e5c644e1931dc43c14ced",
+      "locator": "cases and character_bounds for degrees9,11,13",
+      "role": "Complete absolute totals6561,1362944,446265625 and literal correction bounds6656,1363143,446265984."
+    },
+    {
+      "path": "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md",
+      "sha256": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+      "locator": "Leaf deletion and product identity",
+      "role": "Deleting any chosen leaf omits that sheet from the full cycle."
+    },
+    {
+      "path": "research/arithmetic/D5_LOBE_BOUNDED_CORE_ABSORPTION.md",
+      "sha256": "e40a12316e4d096776846a050950fb52a6a0141457f5d246266caadfb6fc163f",
+      "locator": "Whole-bouquet normalization and canonical conventions",
+      "role": "Buffered-family corollary after old-prefix normalization; no conversion from a different interface is assumed."
+    },
+    {
+      "path": "research/arithmetic/NATURAL_D5_LOBE_TREE_HURWITZ_REACHABILITY.md",
+      "sha256": "cb97ce3f59c9e791a36bd87a82be5ff13239ea952711ff14eab1e67951f614b5",
+      "locator": "Theorem1",
+      "role": "Any known ordered D5-lobe-tree core can first be normalized before the arbitrary buffer is adjoined."
+    }
+  ],
+  "external_sources": [
+    {
+      "author": "Gareth A. Jones",
+      "title": "Primitive permutation groups containing a cycle",
+      "path": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "locator": "Theorem1.1",
+      "role": "Odd-degree transitive DT groups are primitive, and the retained old alternating core supplies a3cycle, proving full alternating group of the finite bases and thirteen-sheet cores.",
+      "inspected": true
+    }
+  ],
+  "proof_outline": [
+    "Partial old full twists and common cyclic relabeling preserve pair distance and choose a specified representative for every unordered old pair.",
+    "One generic and five exceptional representative types select A,D1 and three satellites. Positive bringing conjugates all outsiders in a controlled way.",
+    "The six finite core products and chosen leaves make every outside anchoring pair antipodal after deletion; fixed core controllers thus give a global full wreath action.",
+    "The existing actual normal-form algorithm reaches the canonical tuple with the explicit quadratic normalization bound.",
+    "Finite degrees9,11,13 handle old r3,4,5. Independent totals and complete BFS counts are explicitly pinned.",
+    "All ten degree7 extensions are fully explored. Positive boundary words replay, negative orbits have no wreath leaf at any state, and group closures all have order2520."
+  ],
+  "computation": {
+    "command": ".venv/bin/python research/arithmetic/verify_uniform_two_leaf_dt_absorption.py",
+    "arithmetic": "Python standard library exact permutation arrays; frozen exact normalizer imported read-only.",
+    "uniform_controls": "Every normalized distance for6<=r<=12 and nine distances at r25; all490 unordered old pairs for6<=r<=9; all112 extension endpoints for r3,4,5.",
+    "boundary": "All ten r2 inputs, each147 literal tuples and588 signed edges; all negative leaf choices tested; all ten group closures order2520; normalized positive and negative domains disjoint.",
+    "negative_control": "Choosing leaf0 for a generic core with both outside anchoring types gives a symmetric global deletion; the correct leaf8 is required.",
+    "controller_boundary": "Fixed finite N9/N11/N13 endpoint substitutions are explicitly separated from actual word replays; no new large census.",
+    "uniformity": "The written cyclic-distance representatives, conjugation ranges and fixed six-core proof establish all r."
+  },
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        "root agent",
+        "separate knots agent"
+      ],
+      "scope": "Full final proof/code/source audit: all six cyclic representatives and positive extraction conjugations, both generic outside ranges, chosen-leaf antipodality and global pair partition, finite N9/N11/N13 totals and literal correction bounds, complete normalizer recurrence2r^2+1, main uniform bound and all small bases, sharp all-leaf boundary and recursive-component corollary.",
+      "limits": "Internal AI-assisted proof/code audits and actual exact replays, not external human review, independent external replay or formal verification.",
+      "root": {
+        "result": "PASS",
+        "replay_path": ".scratch/root_uniform_two_leaf_dt_absorption_replay.json",
+        "replay_sha256": "29b5b5bb7606efc3eecad51a536612aa22961501e792a9c497dcc2796bd9488f",
+        "comparison": "Every canonical receipt field exactly equal, including all15 current source pins.",
+        "findings": "No correction requested."
+      },
+      "separate_agent": {
+        "result": "PASS",
+        "replay_path": ".scratch/independent_two_leaf_dt_absorption_replay.json",
+        "replay_sha256": "29b5b5bb7606efc3eecad51a536612aa22961501e792a9c497dcc2796bd9488f",
+        "comparison": "Every canonical receipt field exactly equal, including all15 current source pins.",
+        "findings": "No correction requested."
+      },
+      "additional_internal_controls": [
+        {
+          "reviewer": "root agent",
+          "scope": "Independent complete degree7 polynomial domain:105^2 first-pair choices and forced third give392 literal/56 absolute tuples, four closed literal orbits147,147,49,49 and group orders2520,2520,168,168. Matches the existing frozen normalizer census; recorded as additional assurance only, not a new proof-scope input.",
+          "replay_path": ".scratch/root-degree7-polynomial-census.json",
+          "replay_sha256": "f20b3d6d96a02aa3c3d16378f273f6b5ac3256baae44e18de31c0f2519cda7a2"
+        },
+        {
+          "reviewer": "separate knots agent",
+          "scope": "Independently implemented permutation/group closure: both147-state boundary orbits have fullA7; all420 negative leaf deletions have order720; positive orbit has294 symmetric order720 and126 wreath order48 deletions.",
+          "replay_path": ".scratch/independent_knots_two_leaf_boundary_control.json",
+          "replay_sha256": "3fa5b9705d395a2c432f2ff2ce9caed55b54cdb20e6d1946181d65fc48d9869c"
+        }
+      ]
+    },
+    "formal_verification": false,
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "priority_assessment": "Not performed."
+  }
+}

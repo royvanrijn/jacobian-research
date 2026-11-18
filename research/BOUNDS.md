@@ -2,7 +2,7 @@
 
 <!-- Generated from MATH_STATUS.json; run make render-navigation. -->
 
-Bounds retain their exact domains and assumptions. Numeric comparisons use identical quantities, domains and parameter restrictions; conditional bounds stay separate. Symbolic criteria are displayed without guessing implication or asymptotic order. Bounds on an explicitly excluded domain remain visible as intermediate proof steps. A current proof of exclusion removes those rows from comparisons.
+Bounds retain their exact domains and assumptions. Numeric comparisons use identical quantities, domains and parameter restrictions; conditional bounds stay separate. Symbolic criteria are displayed without guessing implication or asymptotic order. Bounds on an explicitly excluded domain remain visible as intermediate proof steps. A current proof of exclusion removes those rows from comparisons. A superseded bound remains available as a fallback. Its recorded replacement must attain the best available value under the same assumptions.
 
 [Dependency graph](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Exact scopes](SCOPES.md)
 
@@ -326,11 +326,16 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-D5-UNBUFFERED-BOUQUET-EXPOSURE-LOWER | proved | distance to a wreath-leaf endpoint | Unbuffered full-cycle D5 bouquet T_t on 4t+1 sheets, t an integer at least 2 | lower: t-1 |  |
 | HESS-HC4-COUNTEREXAMPLE-BASE-DEGREES-THROUGH-125 | conditional | maximum component total degree of the planar base map | Complex HC4 counterexamples of potential degree at most 125 in the Tang normal form | exact: 108 | Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1, OWN-TANG-STRUCTURAL-AUDIT |
 | ARITH-COUPLED-MIXED-TWO-LARGE-PRIME-BOUND | proved | coupled bad sifted-pair count | Unweighted C4+C3 targets N=2 modulo 12 with z=N^(1/2-epsilon) and fixed 0<epsilon<1/100 | upper: C0*epsilon^(5/4)*N*J_12(N)/(log N)^(3/2) |  |
+| ARITH-EISENSTEIN-BALANCED-EXPLICIT-TAIL | proved | sufficient onset for all ordinary thirds-balanced Eisenstein targets | positive integers n=2 modulo 6, ordinary A+A with both summands in [n/3,2n/3] | upper: 2^(2^15) |  |
 
 ## Comparable improvements
 
-- HESSIAN-UNRESTRICTED-NODAL-ACTION: 4 -> 8 via HESSIAN-COORDINATE-CONDUCTOR, HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION; structural consumers: HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION, HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION, HESSIAN-COORDINATE-CONDUCTOR.
-- HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION: 6 -> 8 via HESSIAN-COORDINATE-CONDUCTOR, HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION; structural consumers: HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION, HESSIAN-COORDINATE-CONDUCTOR.
-- FACTORIAL-ORDINARY-INITIAL-FOUR: 4 -> 5 via BINOMIAL-INITIAL-BOUNDARY, FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH; structural consumers: none.
-- EXT-JC2-DEGREE-100: 101 -> 105 via EXT-JC2-DEGREE-104; structural consumers: HESS-HC4-DEGREE-101, EXT-JC2-DEGREE-104, HESS-HC4-DEGREE-105.
-- HESS-HC4-DEGREE-101: 102 -> 106 via HESS-HC4-DEGREE-105; structural consumers: EXT-JC2-DEGREE-100, EXT-JC2-DEGREE-104, HESS-HC4-DEGREE-105.
+No unrecorded improvement in an identical domain.
+
+## Recorded replacements
+
+- HESSIAN-UNRESTRICTED-NODAL-ACTION has bound 4. HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION improves it to 8 under the same assumptions.
+- HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION has bound 6. HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION improves it to 8 under the same assumptions.
+- FACTORIAL-ORDINARY-INITIAL-FOUR has bound 4. FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH improves it to 5 under the same assumptions.
+- EXT-JC2-DEGREE-100 has bound 101. EXT-JC2-DEGREE-104 improves it to 105 under the same assumptions.
+- HESS-HC4-DEGREE-101 has bound 102. HESS-HC4-DEGREE-105 improves it to 106 under the same assumptions.

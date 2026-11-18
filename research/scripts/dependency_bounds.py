@@ -7,6 +7,21 @@ import math
 SENSES = {"upper", "lower", "exact", "range", "criterion"}
 
 
+def _scope_key(bound):
+    return json.dumps([bound["quantity"], bound["domain"], bound.get("parameters", {}),
+                       bound.get("units")], sort_keys=True)
+
+
+def _strictly_improves(replacement, bound):
+    sense = bound["sense"]
+    if (sense not in {"upper", "lower"} or replacement["sense"] not in {sense, "exact"}
+            or "value" not in bound or "value" not in replacement
+            or _scope_key(replacement) != _scope_key(bound)):
+        return False
+    return (replacement["value"] < bound["value"] if sense == "upper"
+            else replacement["value"] > bound["value"])
+
+
 def bounds_records(graph, evaluation=None):
     evaluated = graph.evaluate() if evaluation is None else evaluation
     rows = []
@@ -34,6 +49,16 @@ def bounds_records(graph, evaluation=None):
                          "domain_excluded": domain_excluded, "state": evaluated[node_id]["state"],
                          "assumptions": evaluated[node_id]["assumptions"],
                          "dependency_coverage": evaluated[node_id]["dependency_coverage"]})
+    by_claim = defaultdict(list)
+    for row in rows:
+        by_claim[row["id"]].append(row)
+    for row in rows:
+        replacement = row.get("superseded_by")
+        if replacement is not None:
+            assert isinstance(replacement, str) and replacement != row["id"], (
+                "invalid bound replacement: " + row["id"])
+            assert any(_strictly_improves(new, row) for new in by_claim.get(replacement, [])), (
+                "bound replacement must strictly improve the same numeric assertion: " + row["id"])
     return rows
 
 
@@ -42,6 +67,8 @@ def bound_comparisons(graph, evaluation=None):
 
     Conditional and unconditional claims are kept separate. Symbolic formulas,
     restricted families and different dimensions are never compared by guessing.
+    A recorded replacement is current only if it attains the best available
+    value in the same group.
     """
     groups = defaultdict(list)
     for row in bounds_records(graph, evaluation):
@@ -51,8 +78,7 @@ def bound_comparisons(graph, evaluation=None):
             continue
         if row["sense"] not in {"upper", "lower", "exact"}:
             continue
-        key = json.dumps([row["quantity"], row["domain"], row.get("parameters", {}),
-                          row.get("units"), row["state"], row["assumptions"]], sort_keys=True)
+        key = _scope_key(row), row["state"], tuple(row["assumptions"])
         groups[key].append(row)
     comparisons = []
     for rows in groups.values():
@@ -60,20 +86,19 @@ def bound_comparisons(graph, evaluation=None):
         lower = [row for row in rows if row["sense"] in {"lower", "exact"}]
         best_upper = min((row["value"] for row in upper), default=None)
         best_lower = max((row["value"] for row in lower), default=None)
-        opportunities = []
-        if best_upper is not None:
-            for row in upper:
-                if row["value"] > best_upper:
-                    opportunities.append({"weaker_claim": row["id"], "sense": "upper",
-                                          "old_value": row["value"], "stronger_value": best_upper,
-                                          "stronger_claims": sorted({item["id"] for item in upper if item["value"] == best_upper}),
-                                          "affected": graph.impact(row["id"])})
-        if best_lower is not None:
-            for row in lower:
-                if row["value"] < best_lower:
-                    opportunities.append({"weaker_claim": row["id"], "sense": "lower",
-                                          "old_value": row["value"], "stronger_value": best_lower,
-                                          "stronger_claims": sorted({item["id"] for item in lower if item["value"] == best_lower}),
+        opportunities, recorded_updates = [], []
+        for sense, candidates, best in (("upper", upper, best_upper), ("lower", lower, best_lower)):
+            stronger_claims = sorted({row["id"] for row in candidates if row["value"] == best})
+            for row in candidates:
+                if row["value"] == best:
+                    continue
+                replacement = row.get("superseded_by")
+                update = {"weaker_claim": row["id"], "sense": sense, "old_value": row["value"],
+                          "stronger_value": best}
+                if replacement in stronger_claims:
+                    recorded_updates.append({**update, "replacement": replacement})
+                else:
+                    opportunities.append({**update, "stronger_claims": stronger_claims,
                                           "affected": graph.impact(row["id"])})
         comparisons.append({"quantity": rows[0]["quantity"], "domain": rows[0]["domain"],
                             "parameters": rows[0].get("parameters", {}), "units": rows[0].get("units"),
@@ -82,5 +107,5 @@ def bound_comparisons(graph, evaluation=None):
                             "best_lower": best_lower,
                             "conflict": best_upper is not None and best_lower is not None and best_lower > best_upper,
                             "claims": sorted({row["id"] for row in rows}),
-                            "opportunities": opportunities})
+                            "opportunities": opportunities, "recorded_updates": recorded_updates})
     return comparisons
