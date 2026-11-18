@@ -25,6 +25,281 @@ $\mathbb F_{p^f}$ splits
 $X^p+\bar y X^{p-1}-1$. Set $m=p^f-1$ and use Gauss norms
 on the Tate algebras over $L$.
 
+
+\begin{theorem}[Uniform residue multiplicities]\label{thm:residue-multiplicity}
+For every $n\ge1$, a unit root of $\bar W_n$ has multiplicity at
+most $p-1$, and this bound is attained at every unit residue
+for some terminal indices. A unit root of $\bar H_n$ has
+multiplicity divisible by $p$. At a common unit root of
+$\bar H_n,\bar W_n$, the multiplicity in $\bar W_n$ is at
+most $p-2$.
+
+Let $y_0$ be an unramified integral lift of any nonzero residue
+in $\overline{\mathbb F}_p$. Every root of $W_n$ in its residue
+class has $v_p(Y-y_0)\ge1/(p-1)$ and tame ramification over
+$\mathbb Q_p$. For a common root of the primitive moment pair
+and $p>2$, the bound improves to $1/(p-2)$ and the ramification
+index is at most $p-2$. When $p=2$ the primitive moment pair
+has no common root.
+\end{theorem}
+\begin{proof}
+All the residue identities first take place over $\mathbb F_p(Y)$.
+The order-$p$ residue denominator for $W_n$ is
+$1+Yz-z^p$, with numerator $(1-z)^{p-1}$ by
+\texttt{prop:rational} at $K=1$.
+At a simple pole $z=1/\lambda$ the coefficient of
+$(1-\lambda z)^{-1}$ is
+\[
+ -\frac{\lambda(1-1/\lambda)^{p-1}}{Y}
+                     =(1-1/\lambda)^{-1},
+\]
+since $(1-1/\lambda)^p=-Y/\lambda$.
+Thus $\bar W_n=\sum_\lambda\lambda^n/(\lambda-1)$.
+For $\bar H_n$ the rational trace formula gives
+$\bar H_n=\sum_\lambda\lambda^n$. This last residue trace follows
+at every prime from \texttt{lem:pair} and the $K=1$ denominator:
+the generating series is $p-zD'(z)/D(z)$ in characteristic $p$,
+with $D=1+Yz-z^p$.
+
+Use a new variable $S$ and put $B=S^p-S$, $Y=B^{-(p-1)}$.
+The reciprocal roots $\tau_i=1/\lambda_i$, $i\in\mathbb F_p$,
+satisfy $\tau_i^p-Y\tau_i=1$ and are given by
+\[
+                  \tau_i=(S+i)^p/B .
+\]
+Indeed $(S+i)^{p^2}-(S+i)^p=B^p$, and the displayed
+roots are distinct. Also $\lambda_i-1=-(S+i)^{1-p}$.
+Consequently
+\[
+ \bar W_n(Y)=-B^n\sum_{i\in\mathbb F_p}(S+i)^{-pn+p-1},
+ \qquad
+ \bar H_n(Y)=B^n\left(\sum_{i\in\mathbb F_p}(S+i)^{-n}\right)^p.
+ \tag{5}
+\]
+At any $S_0$ above a unit $Y$, $B(S_0)\ne0$ and
+$Y'(S_0)=(p-1)B(S_0)^{-p}\ne0$, so multiplicities
+agree in the two coordinates.
+Write $k=-pn+p-1$. The first $p$ Taylor coefficients of
+the sum for $\bar W_n$ at $S_0$ are
+\[
+ \binom{k}{j}\sum_i (S_0+i)^k (S_0+i)^{-j},
+                  \qquad 0\le j\le p-1 .
+\]
+All $\binom{k}{j}$ are nonzero modulo $p$, since $k\equiv p-1$.
+The $p$ distinct numbers $(S_0+i)^{-1}$ form a Vandermonde
+matrix and the weights $(S_0+i)^k$ are units.
+The $p$ coefficients therefore cannot all vanish.
+The second formula in (5) gives the assertion for $\bar H_n$.
+Moreover the last Vandermonde sum, at $j=p-1$, is
+$\sum_i(S_0+i)^{-pn}$. It vanishes if $\bar H_n$ vanishes.
+Then at least one of the first $p-1$ Taylor coefficients
+is nonzero, giving the stronger common-root bound.
+
+For sharpness of the separate $\bar W_n$ bound, take $S_0$
+in $\mathbb F_{p^f}$ and choose $n$ with
+$pn\equiv1\pmod{p^f-1}$. The first $p-1$ Vandermonde sums
+are then sums of $(S_0+i)^j$ with $0\le j<p-1$.
+Each vanishes by the sums of powers in $\mathbb F_p$.
+The last sum is nonzero by the Vandermonde determinant.
+
+If the residue root of $\bar W_n$ has multiplicity $e$,
+then the coefficients of $W_n(y_0+Z)$ of degree below $e$
+are divisible by $p$ and its degree-$e$ coefficient is a unit.
+For $0<v_p(Z)<1/e$, the degree-$e$ term has strictly smaller
+valuation than every other term, so there is no root.
+Hensel factorization after monic normalization of $W_n$
+gives the factor in this residue class of degree $e$.
+Each root generates an extension of the unramified coefficient
+field of degree at most $e\le p-1$, hence with ramification
+index prime to $p$. At a common root, apply the same argument
+with $e\le p-2$. For $p=2$, the common residue bound excludes
+every unit residue, and \texttt{cor:critical} places every
+possible common root at a unit.
+\end{proof}
+
+
+\begin{theorem}[A uniform second-precision trace]\label{thm:second-trace}
+Let $p$ be odd and $S_0\in\mathbb F_{p^f}\setminus\mathbb F_p$.
+Choose a lift $S$ in the integers of the unramified extension of
+degree $f$, and put $B=S^p-S$ and $y_0=B^{-(p-1)}$.
+Write $\omega_i$ for the Teichm\"uller lift of $S_0+i$.
+Then for every $n\ge1$,
+\[
+ H_n(y_0)\equiv (-wB)^n\sum_{i\in\mathbb F_p}\omega_i^{-pn}
+                                                 \pmod{p^2}.
+ \tag{6}
+\]
+For every $1\le\ell\le p-2$ and positive integer $n$ with
+$-pn\equiv\ell\pmod{p^f-1}$, the residue of $y_0$ is a
+root of $\bar H_n,\bar W_n$ of exact multiplicity $\ell$ in
+$\bar W_n$. Nevertheless the entire residue class contains
+no common root of the actual primitive pair.
+In particular the common residue multiplicity bound is sharp
+at each unit residue.
+\end{theorem}
+\begin{proof}
+The congruence of $H_n$ modulo $p^2$ with the trace of the
+reciprocal polynomial $D_0(z)=(1-z)^p-wy_0z$ holds for all
+odd primes by \texttt{prop:trace} of the
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}{physical prime-total-degree note}.
+Its residue roots are the inverses of those used in (5).
+Choose integer representatives $0,\ldots,p-1$ of $i$ and put
+$x_i=S+i$. The element $x_i^p/(-wB)$ solves $D_0(z)=0$
+modulo $p^2$. Indeed it reduces to $x_i^p/B$ and
+$1-z\equiv-x_i/B\bmod p$ at that value.
+Taking $p$th powers modulo $p^2$ gives
+$(1-z)^p\equiv-x_i^p/B^p=w y_0z\bmod p^2$.
+The roots of $D_0$ are simple modulo $p$, so these
+representatives give all its roots modulo $p^2$ by Hensel's lemma.
+Their inverses are $-wB/x_i^p$ modulo $p^2$. Since $x_i$ and
+$\omega_i$ agree modulo $p$, their $p$th powers agree modulo
+$p^2$, proving (6).
+
+For the specified $\ell$, the $\bar H_n$ sum in (5) is a
+sum of $\ell$th powers of $S_0+i$ at the center, and vanishes
+since $\ell<p-1$. The Vandermonde exponent for $\bar W_n$
+in (5) reduces to $\ell+p-1$ modulo $p^f-1$.
+For Taylor index $j<\ell$, the sum uses
+$(S_0+i)^{p+(\ell-1-j)}$.
+Since $(S_0+i)^p=(S_0+i)+(S_0^p-S_0)$, its sum reduces
+to sums of powers of exponent at most $\ell<p-1$, and is zero.
+For $j=\ell$ the exponent is $p-1$ and the sum is $-1$.
+The binomial coefficients of the Taylor expansion are units
+for $j\le p-1$, giving the exact multiplicity.
+
+To evaluate the lift, the polynomial identity
+\[
+        \sum_{i=0}^{p-1}(S+i)^{p\ell}
+                    \equiv p(S^p-S)^\ell \pmod{p^2}
+ \tag{7}
+\]
+holds for $1\le\ell\le p-2$.
+Expand in powers of $i$. The exponent zero contributes
+$pS^{p\ell}$. An exponent $pj$, $1\le j\le\ell$, has
+$\sum_i i^{pj}\equiv0\bmod p^2$: each $i^p$ agrees
+modulo $p^2$ with its Teichm\"uller lift, and the sum of
+their $j$th powers is zero. Every exponent not divisible
+by $p$ has binomial coefficient divisible by $p$.
+Of these, only exponents $(p-1)j$ for $1\le j\le\ell$ have
+a nonzero power sum modulo $p$, equal to $-1$.
+For such an exponent,
+\[
+ \frac1p\binom{p\ell}{(p-1)j}
+    =\frac{\ell}{(p-1)j}\binom{p\ell-1}{(p-1)j-1}
+    \equiv (-1)^{j-1}\binom{\ell}{j}\pmod p
+\]
+by Lucas' formula. This proves (7).
+
+Unramified Frobenius on $\sum_i\omega_i^\ell$ gives
+$\sum_i\omega_i^{p\ell}\equiv pB^\ell\bmod p^2$ by (7).
+As $B$ is a unit, the sum has valuation one.
+Equation (6) now gives $v_p(H_n(y_0))=1$.
+Every candidate common root is $Y=y_0+Z$ with
+$v_p(Z)\ge1/(p-2)$ by Theorem~\ref{thm:residue-multiplicity}.
+In $H_n(y_0+Z)$ the coefficients of $Z^k$ for $1\le k<p$
+are divisible by $p$, because the residue multiplicity
+is a positive multiple of $p$.
+Every nonconstant term thus has valuation greater than one.
+The constant term has valuation one and prevents cancellation.
+Finally, each unit residue can be represented by choosing
+a root $S_0$ of $(S^p-S)^{p-1}=1/\bar y$ in the algebraic
+closure. The congruence classes of $n$ used above exist
+since $p$ is coprime to $p^f-1$.
+\end{proof}
+
+
+\begin{corollary}[Exclusion of maximal common multiplicity]
+\label{cor:maximal}
+Let $p$ be odd. Every common unit residue where the multiplicity
+in $\bar W_n$ is $p-2$ has an entire residue class free of
+common roots of the actual primitive pair.
+In particular the gap-two pair at $p=3$ has no common root.
+For $p\ge5$ any actual common root has ramification index at
+most $p-3$ and $v_p(Y-y_0)\ge1/(p-3)$ from its unramified lift $y_0$.
+\end{corollary}
+\begin{proof}
+Retain the variable $S_0$ and Vandermonde weights
+$A_i=(S_0+i)^{-pn+p-1}$ of (5).
+A common residue of multiplicity $p-2$ satisfies the
+$p-1$ independent homogeneous equations using rows
+$j=0,\ldots,p-3,p-1$ of that Vandermonde matrix.
+Its vector of weights is in the resulting one-dimensional kernel.
+The vector with coordinates $(S_0+i)^{2p-3}$ is in the same
+kernel by the Taylor sum calculation for $\ell=p-2$
+in Theorem~\ref{thm:second-trace}.
+Hence $(S_0+i)^{-pn}=c(S_0+i)^{p-2}$ for a fixed nonzero $c$.
+Multiplicativity of the Teichm\"uller lifts gives
+$\omega_i^{-pn}=\widetilde c\,\omega_i^{p-2}$ with a common
+unit $\widetilde c$.
+The proof of (7) shows that the sum in (6) has valuation one.
+As before this excludes actual common roots in the entire
+residue class. For $p=3$ the only positive common multiplicity
+allowed by Theorem~\ref{thm:residue-multiplicity} is now excluded.
+For $p\ge5$ the distance and degree bounds apply with $e\le p-3$.
+\end{proof}
+
+
+
+\begin{theorem}[A necessary point-value congruence]\label{thm:third-precision}
+Let $p\ge5$ and let $y_0$ be any unramified integral lift of a
+nonzero residue. If $H_n$ has a multiple root reducing to
+$\bar y_0$, then
+\[
+                    v_p(H_n(y_0))\ge 3+v_p(n).
+\]
+In particular the order-$p$ trace modulo $p^3$ gives a
+necessary test at every terminal index.
+\end{theorem}
+\begin{proof}
+Write a hypothetical common root of $H_n,W_n$ in this class
+as $Y=y_0+Z$. The case $Z=0$ gives $H_n(y_0)=0$.
+Otherwise let $e$ be the multiplicity of this residue in
+$\bar W_n$. It satisfies $1\le e\le p-3$ by
+Corollary~\ref{cor:maximal}. The distance and degree bounds
+give $v_p(Z)\ge1/e$ and place $v_p(Z)$ in the value group
+of an extension of the unramified coefficient field with
+ramification index at most $e$.
+
+By the exact primitive pair identity,
+\[
+ \frac{d}{dX}\frac{H_n(y_0+X)}{(y_0+X)^n}
+           =-pn\frac{W_n(y_0+X)}{(y_0+X)^{n+1}}.
+\]
+Write the quotient on the right without $-pn$ as
+$\sum_{j\ge0}a_jX^j$. Its coefficients are integral and
+$a_j$ is divisible by $p$ for $j<e$.
+Termwise integration and $H_n(Y)=0$ give
+\[
+ \frac{H_n(y_0)}{y_0^n}
+                =pn\sum_{k\ge1}\frac{a_{k-1}Z^k}{k}.
+ \tag{8}
+\]
+The series converges for $v_p(Z)>0$, since $v_p(k)$
+grows at most logarithmically in $k$.
+The sum belongs to the unramified coefficient field by
+the left side of (8).
+
+For $k\le e$ the valuation of the $k$th summand is greater
+than one by the divisibility of $a_{k-1}$.
+For $k>e$ and $p\nmid k$ it is at least $k/e>1$.
+For $p\mid k$ and $k\ge2p$, it is at least
+$k/e-v_p(k)>1$. Indeed for $v_p(k)=1$ use $k/e\ge2p/e>2$,
+and for $v_p(k)=j\ge2$ use $k/e>p^{j-1}\ge j+1$.
+The only remaining index is $k=p$.
+If its valuation were at most one, it would have to be
+nonintegral: $v_p(a_{p-1})$ is integral and
+$v_p(Z)\in(0,2/p]$, so $p v_p(Z)$ cannot be integral in a
+value group with ramification index at most $e<p$.
+That term would be uniquely minimal and the sum in (8)
+would have nonintegral valuation, a contradiction.
+Thus every term has valuation greater than one, and their
+valuations tend to infinity. Taking valuations in (8)
+gives $v_p(H_n(y_0))>2+v_p(n)$.
+This is the claimed bound, since the point value is unramified.
+The final trace test follows from \texttt{lem:cubic} of the
+primitive moment pair note.
+\end{proof}
+
 \begin{theorem}[Analytic functions of the terminal index]\label{thm:interpolation}
 There is an $s\ge0$, independent of the terminal order, such that
 for each $r\bmod m$ and $0\le b<p^s$ there are
@@ -57,7 +332,7 @@ Newton iteration in the complete Tate algebra gives a root with
 $\|\lambda_i-\omega_i\|<1$. The differences remain units by
 their distinct residues. Thus $D_0=\prod_i(1-\lambda_i z)$.
 
-Use $\beta$ and the elementary symmetric sums $E_j(k)$ from the
+Use the elementary symmetric sums $E_j(k)$ from the
 proof of \texttt{thm:linear} in the primitive moment pair note.
 Set $a_p=1,2,3$ for $p=2,3,\ge5$, respectively. The proof gives
 $\deg E_j\le pj$ and $E_j(\mathbb Z_p)\subseteq p^{a_pj}\mathbb Z_p$.
@@ -228,8 +503,27 @@ zero or has finitely many zeros by one-variable preparation.
 Finally use \texttt{cor:critical} of the primitive moment pair.
 \end{proof}
 
+
+\begin{corollary}[Index sets in a full unit residue class]\label{cor:full-residue}
+Fix any nonzero $\bar y\in\overline{\mathbb F}_p$.
+The set of positive terminal indices $n\ge2$ with a multiple
+root of $H_n$ reducing to $\bar y$ is a finite union of full
+arithmetic progressions within $n\ge2$ and a finite set.
+\end{corollary}
+\begin{proof}
+For $p=2,3$ the set is empty by Theorem~\ref{thm:residue-multiplicity}
+and Corollary~\ref{cor:maximal}.
+For $p\ge5$ choose an unramified lift $y_0$ of $\bar y$ and extend
+the coefficient field to contain $\alpha$ with $\alpha^{p-3}=p$.
+By \texttt{cor:critical} of the primitive moment pair, a multiple
+root of $H_n$ is a root of $W_n$.
+Corollary~\ref{cor:maximal} confines every such root in the
+full residue class to $|Y-y_0|\le|\alpha|$.
+Theorem~\ref{thm:local-set} applies to this fixed closed disk,
+which lies inside the residue class.
+\end{proof}
+
 A single index without a multiple root on a prepared branch rules
-out the identically zero resultant there. Extending the exclusion
-to every residue degree and radius, and determining the possible
-finite exceptions, are separate open steps.
+out the identically zero resultant there. The progressions and finite exceptions must still be excluded
+for all unit residues to prove all-index squarefreeness.
 \end{document}

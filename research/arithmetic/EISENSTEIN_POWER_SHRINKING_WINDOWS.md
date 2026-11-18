@@ -6,34 +6,50 @@ A=\{a\ge1:p\mid a\Longrightarrow p\equiv1\pmod3\}.
 \]
 The number \(1\) belongs to \(A\), and \(3\cdot A\) denotes dilation.
 The [fixed-interval angular theorem](EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md)
-controls a fixed fraction of a target. Here the allowed relative difference
-tends to zero as an explicit power.
+controls a fixed fraction of a target. Here the relative window shrinks as a
+power. The uniform Hecke estimate permits the entire Legendre expansion of a
+localized triangular weight, while an annulus count keeps the large-prime loss
+inside that same window.
 
-**Theorem EisPower.** Put
+**Theorem EisPower.** Fix \(0<\delta<1/3\), and define
 \[
-N_* = 2^{\,2^{411}}.
+\epsilon=\frac{1-3\delta}{8},\qquad
+\eta=\frac{1-3\delta}{4}=2\epsilon,\qquad
+r=\left\lceil\frac1\epsilon\right\rceil,\qquad
+D_r=(2r)^{2^r},
 \]
-For every integer \(n\ge N_*\):
+\[
+N_\delta=\left\lceil\max\left\{
+2^{1/\delta},\ (10000D_r)^{1/\epsilon}\right\}\right\rceil.
+\]
+For every integer \(n\ge N_\delta\):
 
 - if \(n\equiv2\pmod6\), then \(n=a+b\) with \(a,b\in A\) and
-  \(|a-b|\le n^{99/100}\);
+  \(|a-b|\le n^{1-\delta}\);
 - if \(n\equiv4\pmod6\), then \(n=a+3b\) with \(a,b\in A\) and
-  \(|a-3b|\le n^{99/100}\).
+  \(|a-3b|\le n^{1-\delta}\).
 
 In the mixed case the actual summands are \(a\) and \(3b\). In either
 prescribed orientation there are at least
-\(n^{-1/100}R_o(n)/20\) signed, ordered coordinate witnesses, where
+\(n^{-\delta}R_o(n)/20\) signed, ordered coordinate witnesses, where
 \[
 R_o(n)=12\{\sigma(n)-\sigma(n/4)\}\ge18n.
 \]
-As usual, a quantity at \(n/4\) is zero if \(4\nmid n\). For every fixed
-\(\varepsilon>0\), there are consequently
-\(\gg_\varepsilon n^{99/100-\varepsilon}\) distinct ordered value pairs.
+A quantity at \(n/4\) is zero if \(4\nmid n\). For every fixed
+\(\nu>0\), there are consequently
+\(\gg_{\delta,\nu}n^{1-\delta-\nu}\) distinct ordered value pairs.
+Equivalently, every fixed exponent \(2/3<\theta<1\) is available for the
+actual summand difference.
 
-The onset is intentionally coarse and does not connect this theorem to a
-practical finite certificate. The proof needs bounds uniform in the harmonic
-degree and sifting prime; it never substitutes a growing degree into a
-fixed-weight theta estimate with an unspecified implied constant.
+**Corollary EisPowerThreeQuarters.** Both conclusions hold with difference
+at most \(n^{3/4}\) for every admissible \(n\ge2^{2^{40}}\), with at
+least \(n^{-1/4}R_o(n)/20\) coordinate witnesses per orientation.
+
+The original \(99/100\) statement and its witness bound remain valid at
+\(n\ge2^{2^{411}}\). The general theorem in fact supplies a smaller
+explicit onset for that exponent. None of these cutoffs connects the proof to
+a practical finite certificate or identifies the complete small-exception lists.
+The pointwise semigroup-scale count remains a stronger open question.
 
 ## Quaternionic input and notation
 
@@ -249,46 +265,63 @@ has eigenvalue \(\sqrt\ell(\alpha+\beta)\) for unitary Satake parameters
 of modulus one. The bound \((r+1)\ell^{r/2}\), multiplicativity and
 self-adjointness prove (6) with no level or weight factor.
 
-## An elementary shrinking polynomial
+## The triangular weight and its Legendre coefficients
 
-Put \(h=n^{-1/100}\), \(\eta=h/100\), and let \(J\) be the least even
-integer at least \(10000h^{-4}\). Define
+**Lemma EisTriangle.** For \(0<h\le1/2\), let
 \[
-b_h(t)=\max(1-|t|/h,0),\qquad f_h(x)=b_h(2x-1),
+b_h(t)=\max(1-|t|/h,0),\qquad
+c_d=\frac{2d+1}{2}\int_{-1}^1 b_h(t)L_d(t)\,dt.
 \]
-and its Bernstein polynomial
+Then \(c_0=h/2\), all odd coefficients vanish, and
 \[
-\mathcal B_Jf_h(x)=\sum_{r=0}^Jf_h(r/J)\binom Jr x^r(1-x)^{J-r}.
+ |c_d|\le\min\left(3h\sqrt d,\frac8{h d^{3/2}}\right)\quad(d\ge1),
+ \qquad
+ \sum_{d\ge1}|c_d|\le32h^{-1/2}=:B(h).\tag{9}
 \]
-The Lipschitz constant is \(2/h\). If \(S\sim\operatorname{Bin}(J,x)\),
+Moreover
 \[
-|\mathcal B_Jf_h(x)-f_h(x)|
-\le\frac2h\mathbf E|S/J-x|
-\le\frac2h\sqrt{\frac{x(1-x)}J}
-\le\frac1{h\sqrt J}\le\eta.
+b_h(t)=\sum_{d\ge0}c_dL_d(t)\tag{10}
 \]
-Set
+converges absolutely uniformly on \([-1,1]\).
+
+For the needed interior bound, the elementary Laplace integral is
 \[
-W_h(t)=\mathcal B_Jf_h((t+1)/2)-\eta,\qquad Q_h=W_h+\eta.
+L_d(t)=\frac1\pi\int_0^\pi
+ \bigl(t+i\sqrt{1-t^2}\cos u\bigr)^d\,du.
 \]
-Then \(W_h\le b_h\le\mathbf1_{|t|\le h}\),
-\(W_h\ge-\eta\), and \(0\le Q_h\le1\). The symmetry of \(f_h\)
-makes \(W_h\) even. Write
-\(W_h=c_0+\sum_{d=2,4,\ldots,J}c_dL_d\). Its normalized mean and
-coefficient sum satisfy
+Summing in \(d\) near the origin gives the generating function
+\((1-2tz+z^2)^{-1/2}\), which proves the identity. The integrand's
+modulus is at most \(\exp[-d(1-t^2)\sin^2u/2]\). By symmetry,
+\(\sin u\ge2u/\pi\) on \([0,\pi/2]\), and the Gaussian integral,
 \[
-\frac{12h}{25}\le c_0\le\frac h2,\quad
-c_0+\eta\le\frac{51h}{100},\quad
-\sum_{d\ge2}|c_d|\le B_J:=(J+1)^2.\tag{9}
+ |L_d(t)|\le\sqrt{\frac{\pi}{2d(1-t^2)}}\le\frac2{\sqrt d}
+ \qquad(|t|\le1/2).
 \]
-The mean of \(b_h\) is \(h/2\), and uniform approximation followed by
-subtraction costs at most \(2\eta\). For the coefficient bound use
-\(|L_d|\le1\), \(|W_h|\le1\), and
-\(c_d=(2d+1)\int_{-1}^1W_hL_d/2\).
-In particular, with \(A_0=10003^2\),
+Since \(\int b_h=h\), this gives the first coefficient bound.
+
+For the second use the Legendre differential equation. In distributions,
 \[
-B_J\le A_0h^{-8}.\tag{10}
+ c_d=-\frac{2d+1}{2d(d+1)}
+       \int L_d(t)\,d\{(1-t^2)b_h'(t)\}.
 \]
+The signed measure in this formula is supported on \([-h,h]\). Its atoms
+at \(-h,0,h\) have masses \((1-h^2)/h,-2/h,(1-h^2)/h\), and its
+continuous density is \(2|t|/h\) on \((-h,h)\). Its total variation is
+exactly \(4/h\). Combining the interior bound with
+\((2d+1)/(2d(d+1))\le1/d\) proves the second estimate in (9).
+The integration by parts has no exterior boundary terms because \(b_h\)
+vanishes off its compact interior support.
+
+Split the sum at \(D=\lceil1/h\rceil\le2/h\). The first bound contributes
+at most \(3hD^{3/2}\le6\sqrt2\,h^{-1/2}\); the integral test on the
+second contributes at most \(16/(h\sqrt D)\le16h^{-1/2}\).
+Their sum is less than \(25h^{-1/2}\), so the envelope \(B(h)\) in (9)
+is sufficient and is at least one. Since \(|L_d|\le1\) on the entire
+interval, the series converges absolutely uniformly. Its Legendre
+coefficients agree with those of \(b_h\). Orthogonality and density of
+polynomials in continuous functions identify the sum with \(b_h\).
+Thus the uniform individual-degree estimates (8) may be summed over (10)
+without an uncontrolled degree limit.
 
 ## The fixed condition at 3 for mixed targets
 
@@ -338,112 +371,239 @@ Indeed the removed count is
 \(\eta(3\tau)^2\eta(9\tau)^2=\sum c_nq^n\) has
 \(|c_n|\le\tau(n)\sqrt n\) for \(3\nmid n\).
 
-## A weighted union bound with uniform errors
+## A large-prime tail inside the central window
 
-Choose \(P=n^{1/50}\). For pure targets let \(\mathcal S_n=\Omega_n\);
-for mixed targets let \(\mathcal S_n=\mathcal H_n\), initially retaining
-both orientations. All surviving positive values have the desired prime
-factors. The central good count is at least
+**Lemma EisCentralTail.** Let \(b_{p,h}^o(n)\) count points of \(\Omega_n\)
+with \(|t_\alpha|\le h\) and a component norm divisible by the odd inert
+prime \(p\). For \(0<h\le1/2\) and \(P\ge2\),
 \[
-\sum_{\mathcal S_n}W_h
--\sum_{p\le P}\sum_{\Omega_n,\ p\text{-bad}}Q_h
--\sum_{p>P}b_p^o(n).\tag{13}
+ \frac1{R_o(n)}\sum_{p>P}b_{p,h}^o(n)
+ \le64M(n)\left\{\frac hP+\frac{1+\log n}{\sqrt n}\right\}.
+ \tag{CT}
 \]
-To justify this with a signed minorant, split the bad union into the
-small-prime union and the remaining large-prime union. On the first use
-\(W_h\le Q_h\) and \(Q_h\ge0\), allowing a union bound; on the second
-use \(W_h\le1\). In the mixed case subtraction over the full odd shell
-only enlarges the loss. No angular estimate for the intersection of a
-\(p\)-condition with the condition at 3 is required.
+This estimate includes primes dividing the target and all singular coordinate
+representations.
 
-By (1) and (8), each small-prime loss is at most
+If \(p\) divides the norm of \(z\in R\), anisotropy gives \(z=p\zeta\).
+In the central window, \(\zeta\) lies in the annulus
 \[
-(c_0+\eta)\mu_pR_o
-+24\{B_J+c_0+\eta\}\tau(n)\sqrt n
-\le(c_0+\eta)\mu_pR_o+48B_J\tau(n)\sqrt n.
+ r_-^2=\frac{n(1-h)}{2p^2}\le|\zeta|^2
+ \le\frac{n(1+h)}{2p^2}=r_+^2.
 \]
-The pure candidate error is at most \(24B_J\tau(n)\sqrt n\).
-In the mixed case (11)--(12) give at most
-\((24\sqrt6 B_J+12c_0)\tau(n)\sqrt n
-\le72B_J\tau(n)\sqrt n\).
-There are at most \(P\) small primes. Since \(B_J\ge1\), \(P\ge1\)
-and \(R_o\ge18n\), a common upper bound for the total normalized
+The centered fundamental parallelogram of \(R\) has radius at most one
+and area \(\sqrt3/2>1/2\). Attach this cell to every point of the annulus.
+The cells have disjoint interiors, and their union lies between radii
+\(\max(0,r_--1)\) and \(r_++1\). If \(r_-\ge1\), the enclosing
+area is \(\pi(r_+^2-r_-^2+2r_++2r_-)\). If \(r_-<1\), discarding
+the inner hole costs at most one extra unit in squared radius. In both cases
+the lattice count is at most
+\[
+2\pi\{r_+^2-r_-^2+2(r_++r_-)+2\}
+ \le32\left\{\frac{hn}{p^2}+\frac{\sqrt n}p+1\right\}.
+\]
+Here \(r_+\le\sqrt n/p\) and \(r_-\le r_+\), and \(\pi<4\).
+For each \(\zeta\), the positive complementary norm
+\(n-p^2|\zeta|^2\) has at most \(6M(n)\) representations. Allowing
+either component to be bad and discarding the oddness restriction gives
+\[
+ b_{p,h}^o(n)\le384M(n)
+ \left\{\frac{hn}{p^2}+\frac{\sqrt n}p+1\right\}.
+\]
+Only \(p\le\sqrt n\) can occur. Sum over integers in place of primes,
+using
+\(\sum_{p>P}p^{-2}\le2/P\),
+\(\sum_{p\le\sqrt n}p^{-1}\le1+\tfrac12\log n\), and at most
+\(\sqrt n\) primes. Dividing by \(R_o\ge18n\) gives (CT).
+No residue equidistribution or restriction on \(v_p(n)\) is used here.
+
+## A nonnegative weighted sieve
+
+Put \(h=n^{-\delta}\) and \(P=n^\eta\), with the theorem's \(\eta\).
+For pure targets let \(\mathcal S_n=\Omega_n\); for mixed targets let
+\(\mathcal S_n=\mathcal H_n\), initially retaining both orientations.
+Let \(G_n\) be the subset with no odd inert prime in either component norm.
+The nonnegative weight \(b_h\) gives
+\[
+ \#\{\alpha\in G_n:|t_\alpha|\le h\}
+ \ge\sum_{\mathcal S_n}b_h
+ -\sum_{p\le P}\sum_{\Omega_n,\ p\text{-bad}}b_h
+ -\sum_{p>P}b_{p,h}^o(n).\tag{13}
+\]
+The small-prime subtraction over the full odd shell only enlarges the loss
+in the mixed case. For large primes the weight vanishes off the central
+window and is at most one there, so (CT) applies. No estimate for a joint
+\(3p\)-level space is required.
+
+By (1), (8) and absolute convergence in (10), each small-prime loss is at
+most
+\[
+ \frac h2\mu_pR_o
+ +24\{B(h)+h/2\}\tau(n)\sqrt n
+ \le\frac h2\mu_pR_o+48B(h)\tau(n)\sqrt n.
+\]
+The pure candidate error is at most \(24B(h)\tau(n)\sqrt n\).
+In the mixed case (11)--(12) give error at most
+\((24\sqrt6 B(h)+6h)\tau(n)\sqrt n\le72B(h)\tau(n)\sqrt n\).
+There are at most \(P\) small primes; \(B(h),P\ge1\) and
+\(R_o\ge18n\). Thus a common upper bound for the total normalized
 spectral error is
 \[
-8B_JP\frac{\tau(n)}{\sqrt n}.\tag{14}
+ E_{\mathrm{sp}}\le8B(h)P\frac{\tau(n)}{\sqrt n}
+ =256h^{-1/2}P\frac{\tau(n)}{\sqrt n}.\tag{14}
 \]
-Here (3) and (9) give the pure main term at least
-\(57hR_o/140\), and the mixed main term at least
-\(173hR_o/700\).
+Since \(\sum\mu_p<1/7\), the main terms in (13) are at least
+\[
+ \frac37hR_o\quad\text{in the pure case},\qquad
+ \frac{11}{42}hR_o\quad\text{in the mixed case, both orientations}.
+\]
+The normalized large-prime error is bounded by the right side of (CT).
 
-For \(P\ge2\), (2) bounds the normalized large-prime error by
-\[
-4M(n)\sum_{p>P}p^{-2}\le\frac{8M(n)}P.\tag{15}
-\]
-All prime sums here are over the odd inert primes.
+## Explicit exponents and onset
 
-## An explicit cutoff
+For every integer \(r\ge1\), the elementary divisor bound is
+\[
+ \tau(u)\le D_r u^{1/r},\qquad M(u)\le D_r u^{1/r},
+ \qquad D_r=(2r)^{2^r}.\tag{15}
+\]
+For \(p\ge2^r\), \(a+1\le2^a\le p^{a/r}\).
+For \(p<2^r\), put \(x=(\log p)/r<\log2<1\). The continuous
+maximum of \((a+1)e^{-xa}\), \(a\ge0\), is at most
+\(1/x\le r/\log2<2r\). Fewer than \(2^r\) primes occur below this
+threshold, proving the first bound. Taking the maximum over integers at
+most \(u\) proves the second.
 
-The following deliberately loose divisor estimate avoids unspecified
-constants. Put
+For \(\epsilon=(1-3\delta)/8\), \(r=\lceil1/\epsilon\rceil\),
+and \(\eta=2\epsilon\), we have \(1/r\le\epsilon\). Dividing
+(14) and (CT) by \(h\), (15) gives
 \[
-D=1024^{\,2^{400}}=2^{10\cdot2^{400}}.
+ \frac{E_{\mathrm{sp}}}{h}
+ \le256D_r n^{-1/2+3\delta/2+\eta+\epsilon}
+ =256D_r n^{-\epsilon},\tag{16}
 \]
-For every positive integer \(u\),
 \[
-\tau(u)\le D u^{1/400},\qquad M(u)\le D u^{1/400}.\tag{16}
+ \frac{E_{\mathrm{tail}}}{h}
+ \le64D_r n^{-\epsilon}
+ \left\{1+(1+\log n)n^{-(1-\delta)/4}\right\}
+ \le256D_r n^{-\epsilon}.\tag{17}
 \]
-For \(p\ge2^{400}\), \(a+1\le2^a\le p^{a/400}\).
-For \(p<2^{400}\), put \(x=(\log p)/400<\log2<1\).
-The continuous maximum of \((a+1)e^{-xa}\), \(a\ge0\), is at most
-\(1/x\le400/\log2<1024\). There are fewer than \(2^{400}\) such
-primes, proving the first bound. Taking a maximum over integers at most
-\(u\) proves the second.
+For the last inequality use \((1-\delta)/4>1/6\) and
+\[
+ \sup_{n\ge1}(1+\log n)n^{-1/6}=6e^{-5/6}<3.
+\]
+These exponents explain the range \(\delta<1/3\). There is no assertion
+at the endpoint.
 
-Combining (10), (14)--(16), the two normalized errors are bounded by
+At \(n\ge N_\delta\), we have \(h\le1/2\),
+\(n^\epsilon\ge10000D_r\), and
+\(P=n^{2\epsilon}\ge(10000D_r)^2\ge2\).
+Each normalized error in (16)--(17) is therefore less than \(h/20\).
+The surviving central weighted mass is at least
 \[
-8A_0D n^{-159/400},\qquad 8D n^{-7/400}.\tag{17}
+ \frac{23}{70}hR_o\quad\text{in the pure case},\qquad
+ \frac{17}{105}hR_o\quad\text{in the mixed case, both orientations}.
 \]
-After dividing by \(h=n^{-4/400}\), their base-two logarithms, at
-\(n\ge N_*=2^{2^{411}}\), are at most
-\[
-\begin{split}
-3+\log_2 A_0-\frac{3918}{5}\,2^{400},\\
-3-\frac{134}{25}\,2^{400}.
-\end{split}
-\]
-Both are less than \(-5\); also \(P\ge2\). Each error is therefore
-less than \(h/20\). Formula (13) is consequently at least
-\[
-\frac{43}{140}hR_o\quad\text{in the pure case},\qquad
-\frac{103}{700}hR_o\quad\text{in the mixed case, both orientations}.
-\]
-The weight \(W_h\) is even, so swapping the two components preserves
-it and interchanges the two mixed orientations. Exactly one norm is
-divisible by 3, so those orientations are disjoint and receive equal
-weighted totals. Each orientation thus has at least
-\(103hR_o/1400>hR_o/20\) central witnesses. The pure bound is also
-larger than \(hR_o/20\).
+The even weight is invariant under swapping components, which interchanges
+the two mixed orientations. Exactly one norm is divisible by 3, so those
+orientations are disjoint and have equal weighted totals. Each receives at
+least \(17hR_o/210>hR_o/20\). The pure bound also exceeds \(hR_o/20\).
 
-Every such witness has \(|t_\alpha|\le h\), proving the stated
-\(n^{99/100}\) difference bound. In the pure case, \(n\equiv2\pmod3\)
-forces both norms to be nonzero modulo 3. In the mixed case the fixed
-3-condition makes the unique divisible norm have exponent exactly one.
-Together with oddness and the exclusion of odd inert primes, this gives
-the required members of \(A\) and \(3\cdot A\).
-Each value pair has at most \(36M(n)^2\ll_\varepsilon n^\varepsilon\)
-coordinate witnesses, giving the distinct-pair conclusion. For this last
-bound use the elementary divisor argument with exponent \(\varepsilon/2\);
-its fixed exponent \(1/400\) above serves only to give the explicit onset.
+Since \(b_h\le1\), these are lower bounds for actual coordinate witness
+counts. The support of \(b_h\) gives the asserted difference bound.
+For pure targets \(n\equiv2\pmod3\) forces both norms to be nonzero
+modulo 3. For mixed targets the fixed 3-condition makes the unique divisible
+norm have exponent exactly one. Oddness and the exclusion of odd inert
+primes now give the required members of \(A\) and \(3\cdot A\).
+Each ordered value pair has at most
+\(36M(n)^2\ll_\nu n^\nu\) coordinate witnesses, proving the distinct-pair
+statement. Apply the elementary divisor estimate with exponent \(\nu/2\)
+for this last conclusion.
+
+For the explicit \(3/4\) corollary, take \(\delta=1/4\). Then
+\(\epsilon=1/32\), \(\eta=1/16\), \(r=32\), and
+\(D_r=2^{6\cdot2^{32}}\). At \(n=2^{2^{40}}\),
+\[
+ \log_2(n^\epsilon)=8\cdot2^{32}
+ >6\cdot2^{32}+\log_2(10000)=\log_2(10000D_r).
+\]
+Also \(h\le1/2\), so this target exceeds \(N_{1/4}\).
+For the original \(\delta=1/100\), \(\epsilon=97/800\), \(r=9\),
+and \(D_r=18^{512}\). Using \(18<32\), \(10000<2^{14}\), and
+\(800/97<9\), the new onset is at most \(2^{2^{15}}\), which preserves
+the original \(2^{2^{411}}\) corollary and its full witness count.
+
+## The Jackson--Parseval route also works
+
+**Lemma EisJacksonParseval.** For the same triangular bump one can construct
+even polynomials \(W_h,Q_h\) with degree \(O(h^{-2})\),
+\[
+ W_h\le b_h,\quad Q_h=W_h+h/100,\quad0\le Q_h\le1,\quad
+ \|W_h\|_{L^2(dt/2)}\ll\sqrt h.
+\]
+Their Legendre coefficients satisfy
+\(\sum|c_d|\ll h^{-3/2}\). Using the full-shell tail (2), this alone
+proves the weaker range \(\delta<1/7\), or \(\theta>6/7\).
+
+Here is a direct positive-kernel construction, so no approximation constant
+is left as an imported hypothesis. For an integer \(m\ge1\), put
+\[
+ D_m(u)=\frac{\sin(mu/2)}{\sin(u/2)},\qquad
+ A_m=\frac1{2\pi}\int_{-\pi}^{\pi}D_m(u)^4\,du
+     =\frac{2m^3+m}{3},\qquad K_m=D_m^4/A_m.
+\]
+The value at zero is interpreted by continuity. The fourth power is a
+nonnegative trigonometric polynomial of degree \(2m-2\), and \(K_m\)
+has integral one against \(du/(2\pi)\). The exact normalization follows
+from \(m^2+2\sum_{j=1}^{m-1}j^2\). Since
+\(|D_m(u)|\le\min(m,\pi/|u|)\), splitting at \(\pi/m\) gives
+\[
+ \frac1{2\pi}\int_{-\pi}^{\pi}|u|K_m(u)\,du
+ \le\frac{3\pi}{2m}<\frac5m.
+\]
+Convolve \(K_m\) with \(b_h(\cos\phi)\), whose circle Lipschitz
+constant is \(1/h\). This produces an even, \(\pi\)-periodic
+trigonometric polynomial, hence an even algebraic polynomial \(Q_h(t)\)
+of degree at most \(J=2m-2\). Positivity gives \(0\le Q_h\le1\).
+For \(m=\lceil500h^{-2}\rceil\), its uniform error is at most
+\(5/(mh)\le h/100\). Set \(W_h=Q_h-h/100\). Then its constant
+Legendre coefficient lies between \(12h/25\) and \(h/2\), and
+\[
+ \|W_h\|_2\le\sqrt{h/3}+h/50<\tfrac35\sqrt h.
+\]
+Orthogonality, Parseval and Cauchy--Schwarz give
+\[
+ \sum_{d\ge2}|c_d|
+ \le\sqrt{\sum_{d=0}^J(2d+1)}
+       \sqrt{\sum_{d=0}^J\frac{c_d^2}{2d+1}}
+ =(J+1)\|W_h\|_2\ll h^{-3/2}.
+\]
+With \(h=n^{-\delta}\), a sieve cutoff \(n^s\), and a divisor exponent
+\(\varepsilon>0\), the normalized errors from this construction and the
+old full-shell tail are
+\[
+ O_\varepsilon\left(
+ n^{-1/2+\varepsilon+s+3\delta/2}
+ +n^{\varepsilon-s}\right).
+\]
+Both are \(o(h)\) if
+\(\delta+\varepsilon<s<1/2-5\delta/2-\varepsilon\), possible for every
+\(\delta<1/7\). The nonnegative majorant controls the small-prime union;
+the bound \(W_h\le1\) controls the large-prime union. The mixed fixed-3
+estimate is unchanged. This verifies the polynomial upgrade directly. The
+stronger theorem above uses the actual triangle coefficients and the central
+annulus tail instead of this coarser pair of estimates.
 
 ## Scope and review
 
-The exponent and cutoff are explicit, but no computation through the cutoff
-is proposed. This does not identify the complete small-exception lists or
-give the conjectured pointwise semigroup-scale count. It treats the ordinary
-Eisenstein arithmetic, not the simultaneous modulus-12 restriction.
-The vector-valued finite quotient, positive-weight cuspidality, operator
-normalization, nonnegative union bound and mixed fixed-level extension
-received internal proof/source audits. No external specialist review,
-formal verification or established priority is claimed. No new large finite
-search is used in this argument.
+The exponent family and cutoffs are explicit. No computation through an onset
+is proposed. The complete small-exception lists and pointwise semigroup-scale
+counts remain open. The theorem concerns ordinary Eisenstein arithmetic; the
+simultaneous modulus-12 pointwise lower bound and fixed-prime marginals remain
+separate open inputs.
+
+The coefficient-valued Hecke normalization, simultaneous weight/level
+uniformity, positive-weight cuspidality and mixed fixed-level extension
+received renewed internal source/proof audits. The direct triangle expansion,
+annulus geometry, Jackson--Parseval construction and effective tuning also
+received separate internal derivation checks. These are internal mathematical
+reviews. No external specialist review, formal verification or established
+priority is claimed. No new finite coverage scan is used.

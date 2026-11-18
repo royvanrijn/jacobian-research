@@ -22,6 +22,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Sifted Eisenstein angular distribution and eventual balanced sums | Internal result | proved | [Source](EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md) |
 | Alternating Hurwitz pencils and maximal collinear nodes | Internal result | proved | [Source](ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md) |
 | Eisenstein binary sums in explicit power-shrinking windows | Internal result | proved | [Source](EISENSTEIN_POWER_SHRINKING_WINDOWS.md) |
+| Rational degree-ten A10 pencil with literal square discriminant | Internal result | proved | [Source](RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md) |
+| Fixed resolvents, A8/A10 fields and complete Keller-fibre transfer | Internal result | proved | [Source](ALTERNATING_PENCIL_SPECIALIZATIONS_AND_KELLER_FIBRES.md) |
 
 **Computed obligations:** 50 unresolved; 3 resolved within their exact scope.
 
@@ -57,6 +59,7 @@ Scope limits:
 - The singular arithmetic model is proved for fixed-width full counts and identified in all-power mixed moments; it is not assumed for arbitrary Frobenian sets. Dq gives lower counts outside arbitrary logarithmic exceptional sets, with a constant independent of the exceptional exponent, and does not prove full-count power variance. Eq records a proved equivalence between two open obligations. No effective cutoff, independent replay, external review or formal assurance is upgraded.
 - EisAngle is the qualitative coordinate-witness angular law for fixed intervals along all admissible pure/mixed targets. EisPower separately proves abs(a-b), or actual mixed abs(a-3b), <=n^(99/100) above2^(2^411), with the stated coordinate and distinct-pair lower counts. This does not give the conjectured H/log semigroup-scale count, an effective angular discrepancy or a complete finite exception list. Original manuscript/PDF and assurance flags are unchanged; MathOverflow2013 answers remain method context only.
 - The alternating bridge includes infinitely many rational degree-eight geometric-A8 models and a complete unique absolute Hurwitz-orbit certificate. A literal Q[s] square remains impossible. The fixed Laurent extensions are excluded from polynomial realization by normalization units. Underlying passport existence and full A_n for even n>=10 have established precedent.
+- The first rational literal-square target, degree ten, is realized with full regular A10 and five real collinear nodes. The original degree-eight model has a certified ten-letter braid word. Fixed-resolvent and Hilbert specializations transfer entire finite algebras to polynomial Keller fibres, whose separately proved generic groups are S8 or S10.
 
 Tracked obligations (computed states):
 

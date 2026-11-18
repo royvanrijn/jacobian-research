@@ -1,0 +1,668 @@
+{
+  "status": "PASS verified symmetry and filling inputs for ordinary ranks",
+  "source_sha256": {
+    "all_parameter_hyperbolic_covers_inputs.json": "6a47eb8849d6e1a42ff0e3bcb55f42bf3c93b2cca5b403d49a5ad4c30694a008",
+    "all_parameter_cover_parent.tri": "b55ba0becce4ec41e757bd078bf02da09fcddf0aee140f9583308e363d3651e4",
+    "twist_exterior_symmetry_parent.tri": "37be856958045345e32e4ed6f0b2160e732111d11e6715b83cf7450dbe1cbb04",
+    "rank_three_knot_group_inputs.json": "5617ff488fe874936b4810e4176c4cba90481499d9d1b990efd55c5b4f873ae4",
+    "prime_family_cover_homology_inputs.json": "e3255bfa32deab61cdaa4dd51005d66b2cf681ea465f970b557ab4b5721d2ae5"
+  },
+  "checker_sha256": "df70a139cf3ad779d43ae16eae8ae4540a4ff4b46994af525a8502647e3bd1d8",
+  "sage": "10.9",
+  "snappy": "3.3.2",
+  "spherogram": "2.4.1",
+  "native_kernel_sha256": "f7002569b43cfa366aab8ee5d19b4afe653478793c1db23a96dcfd621f431c8d",
+  "implementation_sha256": {
+    "verify/canonical.py": "74f1985bb5ac61eb2b6b0ba5d58fe33d31f879bcbac8c43b985abd121b30a14f",
+    "verify/cusp_translations.py": "d7a7de4ce0f94f32d368dfdc117081014e3359f5b88a040f201871b7a5c30adc",
+    "len_spec/__init__.py": "33c686f4f5e059c6ff48205e647004083f630446b8d14568c98589c0c1d3a9ee",
+    "len_spec/geometric_structure.py": "05a8f523ea48d296c7eff8183ad33a2560e58a672ac6df083a9b738051092ccc",
+    "drilling/__init__.py": "f29094034f6f7b1d9c55c375a53da2a5876836a041e78d1f61e71d33a71f40cb",
+    "geometric_structure/geodesic/add_core_curves.py": "9f1fde3fcbb6c5ddb2e20fee3f5249c1de68820723111ad77fb959ae40b8b08f",
+    "geometric_structure/cusp_neighborhood/real_cusp_cross_section.py": "31e4a117fb8d0b78e52296851464bec36d2f6fb3a74e438956be9a23756ba5d9"
+  },
+  "geometry": {
+    "parents": {
+      "exterior": {
+        "input_signature": "CLvLvLwMwLvMMzQPQQQkbfhjmoirmsprqxwtwzuvyxyAABzBBmpjkhmoagobggamomtcbadtdcsbnb_baBBbabBIj",
+        "canonical_signature": "HvLLLvwvzAPzMLzQLQMQPQQeffgllmumwouqtsBCEAvCxDCyzGEFDDGFGoiiffgopbmoscsvdeapvxhlffoufwsshct_BcbBBamb",
+        "canonical_tetrahedra": 33,
+        "tetrahedron_frame_trials": 792,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-3563889571939739648014906031619961591305355/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "7eccd7d6aa07f9ad2b90b8aaa6bb4d66afe21057df32a55a9d76a960b847a6f4",
+        "systole": {
+          "systole_interval": {
+            "low": "70914577245546812503307544348873779685/42535295865117307932921825928971026432",
+            "high": "70914577245546812503307544350061141717/42535295865117307932921825928971026432",
+            "display": "1.6671936988618202352008906400?"
+          },
+          "word": "bd",
+          "certified_lower_bound": "1/2",
+          "verified_shortest_count_result": 1
+        },
+        "length": {
+          "cusp": 0,
+          "slope": [
+            [
+              -1,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "area": {
+            "low": "552674651878919665967008331427934247866565917/44601490397061246283071436545296723011960832",
+            "high": "552674651878919665967008331427934247870561395/44601490397061246283071436545296723011960832",
+            "display": "12.3913942551869280559370312967194156412?"
+          },
+          "meridian_real": {
+            "low": "-925543131998579652912081274382711872857650439/178405961588244985132285746181186892047843328",
+            "high": "-115692891499822456614010159297838984106749971/22300745198530623141535718272648361505980416",
+            "display": "-5.1878486781439645078268243019762709051?"
+          },
+          "meridian_imag": {
+            "low": "1334760800729776022510416264009364464079357401/356811923176489970264571492362373784095686656",
+            "high": "333690200182444005627604066002341116021294347/89202980794122492566142873090593446023921664",
+            "display": "3.74079652060719662616946696478971829796?"
+          },
+          "longitude_real": {
+            "low": "590970023452877800330116634947233282176383141/178405961588244985132285746181186892047843328",
+            "high": "1181940046905755600660233269894466564356157299/356811923176489970264571492362373784095686656",
+            "display": "3.31250154530607516001593070865855604415?"
+          },
+          "projected_normalized_constant": {
+            "low": "525855681587728139429603547807144563252358187/356811923176489970264571492362373784095686656",
+            "high": "525855681587728139429603547807144563256333147/356811923176489970264571492362373784095686656",
+            "display": "1.47376151813072685050841707900168895469?"
+          },
+          "projected_normalized_step": {
+            "low": "1007294853378715284601869455721322047529451149/356811923176489970264571492362373784095686656",
+            "high": "1007294853378715284601869455721322047535982151/356811923176489970264571492362373784095686656",
+            "display": "2.8230414623237710048738889482019955766?"
+          },
+          "rational_lower_bounds": [
+            "1",
+            "5/2"
+          ]
+        }
+      },
+      "cover": {
+        "input_signature": "oLLLLALQLQccegeghklljmlmnnquqtrvatalrgwmn_Bbba",
+        "canonical_signature": "uLLPvAwwMAPwMQcccdffghlnkllnoqqrtsstqffqffaxaxcvfoaofhhrr_BBba",
+        "canonical_tetrahedra": 20,
+        "tetrahedron_frame_trials": 480,
+        "automorphisms": 2,
+        "max_face_tilt_upper": "-32840455387981094879314955905414233668334169/11417981541647679048466287755595961091061972992",
+        "raw_canonical_gluings_sha256": "8fd75cc47e3f7685d8b91bd83d0873317ff39ae8f3213c350db87439ea54152c",
+        "systole": {
+          "systole_interval": {
+            "low": "754911045188770030819081708709069559/1329227995784915872903807060280344576",
+            "high": "754911045188770030819081710599188713/1329227995784915872903807060280344576",
+            "display": "0.56793194815535857712864281?"
+          },
+          "word": "aG",
+          "certified_lower_bound": "1/2",
+          "verified_shortest_count_result": 1
+        },
+        "length": {
+          "cusp": 0,
+          "slope": [
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "area": {
+            "low": "130517392439464463233702605468110590435630223/11150372599265311570767859136324180752990208",
+            "high": "522069569757857852934810421872442361770603401/44601490397061246283071436545296723011960832",
+            "display": "11.705204581958466715440749435017493490?"
+          },
+          "meridian_real": {
+            "low": "-735073482002285521851924220269927486417977729/178405961588244985132285746181186892047843328",
+            "high": "-183768370500571380462981055067481871597750989/44601490397061246283071436545296723011960832",
+            "display": "-4.120229365982795046392916332149795686?"
+          },
+          "meridian_imag": {
+            "low": "635979507323321230869151085618210777164268291/178405961588244985132285746181186892047843328",
+            "high": "1271959014646642461738302171236421554379813003/356811923176489970264571492362373784095686656",
+            "display": "3.5647884278168951717272345256845605864?"
+          },
+          "longitude_real": {
+            "low": "1171614148394388535341761453005350435282420399/356811923176489970264571492362373784095686656",
+            "high": "36612942137324641729430045406417201103069099/11150372599265311570767859136324180752990208",
+            "display": "3.2835622138525699934557703534300532702?"
+          },
+          "projected_normalized_constant": {
+            "low": "1114602570887982818359013188684029208227065629/356811923176489970264571492362373784095686656",
+            "high": "1114602570887982818359013188684029208282042379/356811923176489970264571492362373784095686656",
+            "display": "3.123781741835646763489538854937229514?"
+          },
+          "projected_normalized_step": {
+            "low": "1027345109710581669887648307220944403586160263/178405961588244985132285746181186892047843328",
+            "high": "513672554855290834943824153610472201813818717/89202980794122492566142873090593446023921664",
+            "display": "5.758468498276195231696501526309645721?"
+          },
+          "rational_lower_bounds": [
+            "3",
+            "5"
+          ]
+        }
+      }
+    },
+    "direct_exteriors": [
+      {
+        "n": 0,
+        "input_signature": "zLLvLLLAwvMMMPPQQkcegilmmjrqusvpswxwwtyvxyvyiidvllaffcafavfamualqgovfo_bBHi",
+        "canonical_signature": "ELvvwPvLPzAwMwPQLPQQQcgfikorrqlmwttxuzxwzCDyBCBADDBCiacvblaehicakgpphxdmfisfbkchivv_BahB",
+        "canonical_tetrahedra": 30,
+        "tetrahedron_frame_trials": 720,
+        "automorphisms": 2,
+        "max_face_tilt_upper": "-10897445815121551522056724870084473613049391/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "91041971e5385e817e089a53105985073fc671fc5431255de83e3f5ae2a2752f"
+      },
+      {
+        "n": 1,
+        "input_signature": "DLLvLPLvALAzLMzQPQQPcbefkhkjpqopntuxsxwyuzwBAABBCCCxxxxvxcavvsvptlcllagcvljwtltaa_baRtb",
+        "canonical_signature": "SLLPLzwLAAvAvwvMvAAPMQLMAzQzQQcccdfgijnmmomqruyADyBFBzFGACFLEHMJLOKNNNRQPRQRqffacaaammaqamaalattloosjvbgxbbutmackgbdtfmag_BbruRv",
+        "canonical_tetrahedra": 44,
+        "tetrahedron_frame_trials": 1056,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-5261421595914352443016224789587960437735347/713623846352979940529142984724747568191373312",
+        "raw_canonical_gluings_sha256": "38af16bb033d399b3cb415bd3a7a934a39cf9b69feba3df6ae39461cc7a00e72"
+      },
+      {
+        "n": 2,
+        "input_signature": "GLLvLPvwAvQvvzwMQPQQQQcbefkhmjptopuyCzzBCFEAxECDBDABFFEDxxxxvucaxvspateeadxvsgskwwcnjxank_baRFb",
+        "canonical_signature": "9LLPwAPLwAPLwAPLwwMzvMvwLvPLwwAMzMQMAzQQQkccdfehgjilknmporqtsvuxwzACDFIJNLSRSTURY0ZSUYWXWZX3245687546878qffaaaaaaaaaaaaaaaaaaaaacaaaaaectttocfaaeormccgxotcogaeerfatfo_baRGb",
+        "canonical_tetrahedra": 61,
+        "tetrahedron_frame_trials": 1464,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-1477911528882974726370036315115121644977951/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "56e1e670f5998132424eff34859224181d6dc88adfa52e52a76f5df0075a845e"
+      },
+      {
+        "n": 3,
+        "input_signature": "JLLvLPvvAvQLzwAMPMPQPAQPcbefkhjqupqoryvwAtAzBEwCzFDGDFFHHHIIIxxxxvcaxvsvcxptlcllaxgcvljxwtltaaxxa_baRRb",
+        "canonical_signature": "-ckbLLPwAPLwAPLwAPLwAPLwAPLwAvPwzwLLvvMPLQAMPzMzwAQQQccacadafaeahagajaialakanamapaoaraqatasavauaxawazayaBaAaDaCaFaEaHaGaJaIaLaKaPaNaOaTaSaUaVa0a0a6a2a4a6a2a8a5a3a6a-a5a7aabbb-aabfbcbdbebebhbhbjbgbibjbibjbqffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaovfagbigvtjiicxifhevbrtfjaoggcfftfjanx_BbrSRT",
+        "canonical_tetrahedra": 74,
+        "tetrahedron_frame_trials": 1776,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-2135302381648847311094405079599661053607/5575186299632655785383929568162090376495104",
+        "raw_canonical_gluings_sha256": "e93eb34286ce9760867516d67cea90b4ba19372dd90bd6798b0137d64695272c"
+      }
+    ],
+    "exceptional_covers": [
+      {
+        "n": 0,
+        "filled_slope": [
+          -1,
+          2
+        ],
+        "cutoff": "29/50",
+        "core_word": "bcckdf",
+        "homology_modulus": 117,
+        "short_geodesics": [
+          {
+            "word": "bcckdf",
+            "length": {
+              "low": "54491077994568718626539782495410587227046413466638093/95780971304118053647396689196894323976171195136475136",
+              "high": "54491077994568718626539782495410587227046415145765597/95780971304118053647396689196894323976171195136475136",
+              "display": "0.5689133995264245428106985592289365869940000?"
+            },
+            "homology": 56,
+            "is_core": true
+          },
+          {
+            "word": "b",
+            "length": {
+              "low": "892781821863013885977227796404807061127928451991776736495/1569275433846670190958947355801916604025588861116008628224",
+              "high": "892781821863013885977227796404807061127928451993845376135/1569275433846670190958947355801916604025588861116008628224",
+              "display": "0.568913399526424542810698559228936586993999915443?"
+            },
+            "homology": 43,
+            "is_core": false
+          }
+        ],
+        "verified_drill_returns_parent_combinatorially": true
+      },
+      {
+        "n": 1,
+        "filled_slope": [
+          -1,
+          8
+        ],
+        "cutoff": "1/10",
+        "core_word": "bcckdf",
+        "homology_modulus": 483,
+        "short_geodesics": [
+          {
+            "word": "bcckdf",
+            "length": {
+              "low": "240172410456379008173278279128786299041852633588878917/3064991081731777716716694054300618367237478244367204352",
+              "high": "240172410456379008173278279128786299041852665286595301/3064991081731777716716694054300618367237478244367204352",
+              "display": "0.07835990515204927465789743029994132903927746?"
+            },
+            "homology": 422,
+            "is_core": true
+          }
+        ],
+        "verified_drill_returns_parent_combinatorially": true
+      }
+    ],
+    "named_cases": [
+      {
+        "knot": "13a_373",
+        "input_signature": "zLvALQwLPvzMPMPPMkbfefihhhlmlpoqutrvwvxuwyyypapmoggggfoacoadvlrgaboxks_bBIh",
+        "canonical_signature": "BLvALzPvQPwQwzLPMMQbeffhiknlknopprqrsvwvyzxAAzAhaihgfimocjfphaamtqhpaakhtur_BaeB",
+        "canonical_tetrahedra": 27,
+        "tetrahedron_frame_trials": 648,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-9180124885486219229513076182879075497789693/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "e9be91b8c4ea00d1c133775c35a6fefee1302e32cbe31f4d89a3e1ab41455ab2"
+      },
+      {
+        "knot": "13a_375",
+        "input_signature": "zLvALQwLPvvAzQLQQkbfefihhhlmlorqsrtxvuvwyxyypapmoggggfocfobvlaccovoboo_Bacb",
+        "canonical_signature": "CLvLLQAwvLAMvQvQQwQkcehhjhjijmnoqsqtsyzwzwwxAABBBqlengfjbgcbaaobgceaogbgouadan_bBdC",
+        "canonical_tetrahedra": 28,
+        "tetrahedron_frame_trials": 672,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-56123091865669842442403211953095680653191965/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "5397e51c5f8ea9f68bdfc6cabc189df4c761d5ae51870142fc2299e7eda779d6"
+      },
+      {
+        "knot": "13a_391",
+        "input_signature": "ALLzzvMPPLLPPvQMAQcccdghkimmlqrrqtpuxtwyvxzyzzhgggbaagsfdxxxgbxdkecbkajpe_Bbba",
+        "canonical_signature": "CLvLLQAwvwQvMAwMAPQkcehhjhjijnnorptrvswvxxAyBzABBqlengfjbgvbaafvgabugfbagufatf_BbCb",
+        "canonical_tetrahedra": 28,
+        "tetrahedron_frame_trials": 672,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-37899502243855852562218082245649452943102559/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "1dd11035eb9f29cf02fea36bd57e2cff33c1fbbb7115cb6e19e13bdb7e50add1"
+      },
+      {
+        "knot": "13a_392",
+        "input_signature": "zLvLLwzAPPvAzQwQQkcgefjjnmjlonousrtsuywwyxxyitdcvntuvcjbjtccbocakvqeec_bBHg",
+        "canonical_signature": "BLvALzPvQPwQwzPzAAQbeffhiknlknopprqrswvwxyzzAAAhaihgfimocjfphaamttqhakaumdn_bBEf",
+        "canonical_tetrahedra": 27,
+        "tetrahedron_frame_trials": 648,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-5142604704419710204576654909227947708441433/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "3786af424b76d07963e01ee55b127453282646071d2bfac989ff388eb13b0b5f"
+      },
+      {
+        "knot": "13a_3264",
+        "input_signature": "yLLvvLwLvQzMQPQQQcejhmjttmrosvsuxuuwxrvtwxiivvlvmaxsnflgnafridbdjgn_Baeb",
+        "canonical_signature": "CLLzPLwMLAvPvPAvQQQkccdghihkklomprrvuxuwwxzBABABAqffgcabasvplvmcvwabocaagggbkb_BbDc",
+        "canonical_tetrahedra": 28,
+        "tetrahedron_frame_trials": 672,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-190693515869196280593398103322533880044909393/5708990770823839524233143877797980545530986496",
+        "raw_canonical_gluings_sha256": "72f6a9480ea8b7385053b0a2cf4df95fa0bd9ca8314751a0b14ae82a14496a56"
+      },
+      {
+        "knot": "13a_3266",
+        "input_signature": "yLLvLvwMzQvPQMQAQceiloimpoquptsurwvwsvtxxxiimaiwdehalcpttnllihmgald_bBIh",
+        "canonical_signature": "CLLzPLwvLAMLvQAzAQQkccdghihlmonootwstuyvzxAAzBABBqffgcabvollpobavkiagsvsnsubaa_BbcD",
+        "canonical_tetrahedra": 28,
+        "tetrahedron_frame_trials": 672,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-2741435462956289679946434688766997561541903/356811923176489970264571492362373784095686656",
+        "raw_canonical_gluings_sha256": "dd56b66162ebd6c03ca0218f4fcd55fa3406643b9734c2d6cc5a7c7ea998e164"
+      },
+      {
+        "knot": "13a_3275",
+        "input_signature": "xLLvLLvPMAMLAPQQcceihmipooprqsturtwwtuvvwiimrxwexleiwiaeudaisbggk_Bajb",
+        "canonical_signature": "BLLzPLwMLwzLzMLAQQQccdghihkklooqqstzvyAyvxzzxAAqffgcabasvpcvglgacipaboqtfan_BbdE",
+        "canonical_tetrahedra": 27,
+        "tetrahedron_frame_trials": 648,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-38846910785999499955514325208144043051861169/5708990770823839524233143877797980545530986496",
+        "raw_canonical_gluings_sha256": "b33eaf620c65e9a8bb88bb54ca536f5ec1dcd1c1338407ce4e4c68ed2bc4d6b6"
+      },
+      {
+        "knot": "13a_3276",
+        "input_signature": "yLvAzMvAPPPAvPLQQbefghjlioklnopqptsvwxxwxwpmmaglmowfkgcmidipoamatip_bBdC",
+        "canonical_signature": "CLLzPLwMvQLLzLQPAzQkccdghihkkopmopquvxtuwwyABABABqffgcabaspalcfocsaocrodgakdfl_BbDc",
+        "canonical_tetrahedra": 28,
+        "tetrahedron_frame_trials": 672,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-30510654114591779367977849203514796461561165/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "92e6a7920a8b6146d89a04736c384413ae9c7eb08693aa3564447bce379b6c51"
+      },
+      {
+        "knot": "13a_304",
+        "input_signature": "zLvALQwvPPvzQAMzQkbfefihhhmlmntrsurrsvwyxxyypapmogggfobaafiabvdfildosg_Bafb",
+        "canonical_signature": "ALvALzLMQzPPwvMAAQcbfeehjlnjmklopprqvuvxwyzzyzxlxuvxlauabwplwvgcvfaaahtri_baCb",
+        "canonical_tetrahedra": 26,
+        "tetrahedron_frame_trials": 624,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-232385821020737790865323481213501685730440605/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "792e492bc9172cdab10c45b6c1201260e66a63b9b11ebd358f4759e80af9c4c2"
+      },
+      {
+        "knot": "13a_362",
+        "input_signature": "zLLLLzzLzAzPAwQPQkcefehlonqpputsorsxxyvywywxiitdviaaifvaitgugtuqnqslbu_BaaB",
+        "canonical_signature": "ALvALzLMQzPPwLMzQPcbfeehjlnjmklopprquvuwyxyzzzxlxuvxlauabwplwvgocvaaarmdx_BabB",
+        "canonical_tetrahedra": 26,
+        "tetrahedron_frame_trials": 624,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-95565241344407099009374870582389133107168581/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "1b9294f48aa4b8f1cea5dbe99c462e42f700e1a9bb9abad6cef04c4f34062b78"
+      },
+      {
+        "knot": "13a_623",
+        "input_signature": "ALLvQLwwvAwPLwQMQQccdhfghillmoprvuruvwuyxzxzyzdctaggaaoilfwaewlvjvjjuoxfh_BajB",
+        "canonical_signature": "DLvLLQAwvwQvzvwQQPQQccehhjhjijnnorqytAxzyvCwCxBCABBqlengfjbgvbaaoafapuocpclfkpvfv_bBHi",
+        "canonical_tetrahedra": 29,
+        "tetrahedron_frame_trials": 696,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-60462469765032805352825697444524989908498657/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "e593682cb93e54af3b6add7cc734bd1f4a8b9eb58baecf392c9606e1ca388ded"
+      },
+      {
+        "knot": "13a_629",
+        "input_signature": "ALvALPwzMvwPzPQzQQcbfefhhhjlmoqotxvswvuyxzxyzzpapmgggmogpamgapcaqbaaaocfb_bBLk",
+        "canonical_signature": "DLvLLQAwvLAwzLvQAQQQccehhjhjijmnoqrxtzyABvyCzxAACBCqlengfjbgcbaaoafdaevvfdockbart_bBHi",
+        "canonical_tetrahedra": 29,
+        "tetrahedron_frame_trials": 696,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-104404224202710548412062382825701391449920991/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "bf8683301f52aab2fcabb21c8b4e32cd8b253693b19f3380916f5e0554841ff4"
+      },
+      {
+        "knot": "13a_3232",
+        "input_signature": "zLLvvvLvAAQPwPQQQkcejqrlnqsrtupxqusxyvwxyywwiineahaemhbbshcffhivaualmi_BbhI",
+        "canonical_signature": "ALLzPLwMLwPvAMQwMQcccdghihkklooptuutstvwyyzyzzqffgcabasvpcgalppgcgblpavfo_baGb",
+        "canonical_tetrahedra": 26,
+        "tetrahedron_frame_trials": 624,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-339772816751819597748873940216543035310253739/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "310fd8e7fc3f50f270168f7dfd66c2e571b0f5410fa33faf74b99ac890619907"
+      },
+      {
+        "knot": "13a_3259",
+        "input_signature": "yLvLQLzLMzvAQQLPQbdeghghklmlsqqrqustvxwxwxmwahrcobcaomrcaoapgmtpgbj_BbiJ",
+        "canonical_signature": "ALLzPLwMLwPMwMPLMQcccdghihkklooprqstuvuxwyxzzzqffgcabasvpcgavaakokaagkbfo_bBHi",
+        "canonical_tetrahedra": 26,
+        "tetrahedron_frame_trials": 624,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-11813553437687257501627114181897126572662693/178405961588244985132285746181186892047843328",
+        "raw_canonical_gluings_sha256": "ec7ea506b81cc064fc48e153c52d35013fe28c2a59c0edeb03758c42e0d00e9b"
+      },
+      {
+        "knot": "13a_3374",
+        "input_signature": "zLLvLvAwLLwMPQQPQkcdilhnmplrppqtvuvswxyuvyxyicgaciaiogcbbfumuoauaawobv_Bahb",
+        "canonical_signature": "ELLzLLAMPLvzzvQPLMQQQccdhjhiklnmmsrvtyzAxvAxCCBDDBCDqffcabaacasoabehpbacbacuimeueow_BadB",
+        "canonical_tetrahedra": 30,
+        "tetrahedron_frame_trials": 720,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-2425529094955286338385793125446622774241739/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "34c3fdf658fcd1edb55ae19568fc0bdd35f0817c5dae52f928be9a6b78595bd4"
+      },
+      {
+        "knot": "13a_3375",
+        "input_signature": "zLLvLLAwMvPzMPQAQkcefiglilmotpqsvvuuswuxyxyyiixvregxewigfiltesgcswxgxm_BbhG",
+        "canonical_signature": "ELLzPLwvzAwMAzMLzQPQQccdghihmmoqoosuwvtxyBxzBBCDADCDqffgcabbolapogaaibaobcgcbuivatv_baBb",
+        "canonical_tetrahedra": 30,
+        "tetrahedron_frame_trials": 720,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-5143007683516552010799254551484061695964189/713623846352979940529142984724747568191373312",
+        "raw_canonical_gluings_sha256": "4b2894d502eca02bde17f1fc5e5950d3d03ed32dc52c22e56d465e2f20cd3ef9"
+      },
+      {
+        "knot": "13n_834",
+        "input_signature": "uLLLwzPPMvLAQQccdfejhilmklorpstqrstticeaabdhobngvfnlnbkiu_BbeF",
+        "canonical_signature": "wLvAALvzAAvAQPQkbefeghkmklmqrpsuvusvtuvhaitagvkrroaeckmqicmfpx_baFb",
+        "canonical_tetrahedra": 22,
+        "tetrahedron_frame_trials": 528,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-144848301214807143580208935079428495335452871/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "2bc0e5b645e587284ff3d66f7280504d1054b13a31e92dc235e5c5eaa3aff0c9"
+      },
+      {
+        "knot": "13n_838",
+        "input_signature": "wLLLwzPPMzwALPQkcdfejhilmklnpprusvuvtuviceaabdhobnahnahunvnfvv_baaB",
+        "canonical_signature": "yLvALzLwMzMMwLQQQbfeehjljklrpoqrwtvxwxvvxwxlxuvxlubwafoulowrqfunvdo_bBeD",
+        "canonical_tetrahedra": 24,
+        "tetrahedron_frame_trials": 576,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-47050649903289078452575999933215307613059491/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "6452a0ddc704bdf5f9b737f5af4a2c5101b8a481ed81fae4fb02b8ee957b2883"
+      },
+      {
+        "knot": "13n_839",
+        "input_signature": "tLLLwzzPvQwQQkcdfejhlnlpmqorspsrrsiceaabhondfadhujnnrn_BadB",
+        "canonical_signature": "uLvAALvzMzQLQQcbefeghkmomrqnsstrqtsthaitagvkaoaxctksrkggo_bBDe",
+        "canonical_tetrahedra": 20,
+        "tetrahedron_frame_trials": 480,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-157911575091643390579757543018410780735896613/5708990770823839524233143877797980545530986496",
+        "raw_canonical_gluings_sha256": "5fefc5eee2d4c15849393fd3e500d23f06fa90343639d4632326a8c3d9df9982"
+      },
+      {
+        "knot": "13n_991",
+        "input_signature": "vLvLLvPLzPQLQQQbfgmhjmnslosurptuttursmtpaobutjgojavoueheubf_BafB",
+        "canonical_signature": "xLvAALvzMPQvPLQQcbefeghkmomppnqruvwuvwwvuhaitagvkaoxxcxkattpttttp_BafB",
+        "canonical_tetrahedra": 23,
+        "tetrahedron_frame_trials": 552,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-215382726588202004263755030644154419732321939/5708990770823839524233143877797980545530986496",
+        "raw_canonical_gluings_sha256": "b50f732d9a7927cb96421468d0d559c06dea3e3aa824b79bd86049097ea39f11"
+      },
+      {
+        "knot": "13n_992",
+        "input_signature": "xLLLwzwvQMvMAPQQcceffijkomlmpsrstuutvwwvwiitachuabbjvlmejcjgfffsv_BbEd",
+        "canonical_signature": "yLvALzLwMzMMvAQQQbfeehjljklrpoqqsuvxuxvwwxxlxuvxlubwafoupkvnaopwfvq_BaDB",
+        "canonical_tetrahedra": 24,
+        "tetrahedron_frame_trials": 576,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-3519315206743496422754427271768991026237117/178405961588244985132285746181186892047843328",
+        "raw_canonical_gluings_sha256": "69c91aa6b8d4ec6eb20a84a3f6b781103e1106eba5dff91cb87985278addcec3"
+      },
+      {
+        "knot": "13n_993",
+        "input_signature": "uvLALLALzwAQQPcecdfihjlklrpqrssqptttcccavcbxabibpxaapbvso_BbeF",
+        "canonical_signature": "vLvAALvzMzAAAQQbefeghkmomroqrsttutsuuhaitagvkaoaqtiekkhvrxx_BbeF",
+        "canonical_tetrahedra": 21,
+        "tetrahedron_frame_trials": 504,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-49732312093002405598243143676708626029002791/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "131b830323b91b42147071727e0c2e1208ff39c965ff62d30e685a69e3c9cc89"
+      },
+      {
+        "knot": "13n_1367",
+        "input_signature": "vLLvLvPPwQAMMPQcegkjklomnloqoqsrtuutuiiidcltaattfjcktasbccb_bBDc",
+        "canonical_signature": "BvLLvwzLPwMMMQwQLQQdfgjnrljspmuoqsqvtwyvxAzzAAzoaaraaffaacaggrgwwxpbpvvbbbb_BbaB",
+        "canonical_tetrahedra": 27,
+        "tetrahedron_frame_trials": 648,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-3922638136945883828900277581673146221797159/713623846352979940529142984724747568191373312",
+        "raw_canonical_gluings_sha256": "e768b3d5d6051cb465096d8a2ab8bcd29ca3cd28ece15c57dd83a28956c9e011"
+      },
+      {
+        "knot": "13n_1370",
+        "input_signature": "wLLLLvPPLALLQMQkcefemilkoomprqutqstvtvviitdibpavjgjeaattokmrea_bBIh",
+        "canonical_signature": "FvLAvLwvwMPzLMMwMQMQQkdcfghprsnsrwuupAtCCzzACyEBADBEDEovpooauaamaabbbavxxhuaafioovoivl_baFB",
+        "canonical_tetrahedra": 31,
+        "tetrahedron_frame_trials": 744,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-5988638002610859280790014764488652694288025/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "08e2a6f78d13ee35e7164f46a55a3d10dfb52bc2bbfa25400a4843af121f4621"
+      },
+      {
+        "knot": "13n_1371",
+        "input_signature": "uLLvAvzQPLzQPQccefgikjnknoprostqsrttiiaagltaxvglaoivbssoo_baab",
+        "canonical_signature": "xvLLvvPvzAPPQQQQcdfjlkmjuorqvqsstwvuuwtwvoarvbffaaapupaobsrroofob_BaaB",
+        "canonical_tetrahedra": 23,
+        "tetrahedron_frame_trials": 552,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-55401132568637624060156306124161246834703969/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "55e901a78bf341a21bec1a508f384f377dc2c268ff544660465efac3af56687b"
+      },
+      {
+        "knot": "13n_1374",
+        "input_signature": "vLLvLvPPwMwMQQQcegkjklomloosrrturustuiiidcltaatfcdggqqodtro_BbcB",
+        "canonical_signature": "BvLLvMLLLvQwPwQQAQQdfhghpmqluoouxytwtsyvvzzAAzAoilaraiebpafnlachccmiijjngcj_BbaB",
+        "canonical_tetrahedra": 27,
+        "tetrahedron_frame_trials": 648,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-19115000375749888799372267255451904110751849/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "370ba0998939221866a33c8cfabb81161365d6ebde6cd57891d0e07d9a3466b5"
+      },
+      {
+        "knot": "13n_1375",
+        "input_signature": "yvLALzvAPMvzMQAQQcdfhiilopnmsrsrwustuxvxwxgnapacupaajauuuajvvfagubu_baDb",
+        "canonical_signature": "GvLAvLwzvzwvPPPQAMMQQQcdcfghirnyuuwqswxxvCADBBFFEAEDCDEFovpoofaaabbbovfboolaahhmtffworowj_Bagb",
+        "canonical_tetrahedra": 32,
+        "tetrahedron_frame_trials": 768,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-620140688188766028829716810918035904156255/356811923176489970264571492362373784095686656",
+        "raw_canonical_gluings_sha256": "a594bf1b61d565f1ef8e28ce98423765357bd16caa9c912b1f63e6173c1a43a3"
+      },
+      {
+        "knot": "13n_1376",
+        "input_signature": "uLLvLLLPwQzQQPccegijkloqlorpqpsrstttiiivcltaatfaggvadqasg_BbcB",
+        "canonical_signature": "wvLLvvzvwQAQQQQkdfjomjqnqospsrruuvtttvvoaraffibiaaaappmbgfjfwk_baab",
+        "canonical_tetrahedra": 22,
+        "tetrahedron_frame_trials": 528,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-41974991657792967745838591339670011499985039/2854495385411919762116571938898990272765493248",
+        "raw_canonical_gluings_sha256": "4a00dddad9cfee6817de6143fdb29115bee17788934d1b5ae720007b620cd033"
+      },
+      {
+        "knot": "13n_3814",
+        "input_signature": "sLLLwzzPwAMQQcdfejhlnmlnppqrpqrriceaabhobnwaqehffnr_BbhG",
+        "canonical_signature": "uLvAvMzvLMAQQQcbfejhhoqnlmqrtqtstrssxlxvvgaasbboflcxahfqq_BbeF",
+        "canonical_tetrahedra": 20,
+        "tetrahedron_frame_trials": 480,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-4016760959086314032724918490913756248972641/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "102ab3e48e89c4597e6a1ff7a44b12365a3161afb362dbb1dff2b1f38fed2c29"
+      },
+      {
+        "knot": "13n_3840",
+        "input_signature": "sLLLwzzPwMPQQcdfejhlnmlmopqrpqrriceaabhobnfiqllbbff_Bahb",
+        "canonical_signature": "uLvAvPLALzzQQQcbefhkilmnlqrotpsstrtshaigafilahnarpvmmaeev_abbF",
+        "canonical_tetrahedra": 20,
+        "tetrahedron_frame_trials": 480,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-77368114763402989763944792039091706417808473/1427247692705959881058285969449495136382746624",
+        "raw_canonical_gluings_sha256": "98884fb410a53ac1b9dc510ec871cbf9a8ebb19ffa99624868a5a5dfe5eb93f6"
+      },
+      {
+        "knot": "13n_3911",
+        "input_signature": "tLLvLLLPwQLQQkcegijolkmlosqsrosrqriiivcatqttwakhawttot_BbiJ",
+        "canonical_signature": "xvLLvzLMwQwAPPQQcdfilolnjrkqqssvsuvtuwvwwoaavavafqfpiavavvacsaxxx_baJb",
+        "canonical_tetrahedra": 23,
+        "tetrahedron_frame_trials": 552,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-72642343835047334454803696056199599979422679/11417981541647679048466287755595961091061972992",
+        "raw_canonical_gluings_sha256": "bcbc79ab14ad0435ce169a9e364c2067f5236219c7a09b55e8371fe9f602c72c"
+      },
+      {
+        "knot": "13n_3914",
+        "input_signature": "tLLvLvLPMQAMQkcegjklpnmnlporsqrqssiiicltatattfchloerak_BbjK",
+        "canonical_signature": "xvLLvzPvAPAPwQQQcdfijlnksomopqtwsutusvwvwoaarvakdibipmgxwgggoptdf_Balb",
+        "canonical_tetrahedra": 23,
+        "tetrahedron_frame_trials": 552,
+        "automorphisms": 1,
+        "max_face_tilt_upper": "-6879858206738172381984040121269672023268835/713623846352979940529142984724747568191373312",
+        "raw_canonical_gluings_sha256": "4a9bf8f1a22a1c7bcf4d87ac4bffdff7e3dffe2db2265a077bdb2214a9e407d5"
+      }
+    ]
+  },
+  "scope": "Verified finite geometry, exact automorphism enumeration and interval bounds. Topological filling, effective surgery and ordinary rank deductions are in the written proof.",
+  "assurance": {
+    "whole_proof_independent_replay": false,
+    "formal_verification": false,
+    "external_specialist_review": false
+  },
+  "edition_sha256": {
+    "ORDINARY_RANK_FROM_HYPERBOLIC_SYMMETRY.pdf": "1ba459aa2fdfbf98a196eef63f339f925dda7005127358370cb790df1876ebab",
+    "ORDINARY_RANK_FROM_HYPERBOLIC_SYMMETRY.tex": "a40e658bbb44dd3e949bcb12cbd158d63b45127934ec763972c4e515c491ae6a",
+    "verify_ordinary_rank_from_symmetry.py": "df70a139cf3ad779d43ae16eae8ae4540a4ff4b46994af525a8502647e3bd1d8"
+  },
+  "internal_pdf_review": {
+    "title": "Ordinary knot-group and branched-cover ranks from hyperbolic symmetry",
+    "reviewed_pdf": ".scratch/mrc-fox-frontier/rank-symmetry-build/ORDINARY_RANK_FROM_HYPERBOLIC_SYMMETRY.pdf",
+    "sha256": "1ba459aa2fdfbf98a196eef63f339f925dda7005127358370cb790df1876ebab",
+    "pages": 5,
+    "verdict": "pass_conditional",
+    "summary": "Theorem 1 and Theorem 2 follow from the stated marked companion results, verified finite geometric facts and algorithm contracts, and cited rigidity and effective filling inputs. I found no substantive gap in the deductions in the PDF.",
+    "review_scope": {
+      "method": "Reviewed the extracted text and rendered pages of the identified PDF.",
+      "independently_checked": "Mathematical deductions in the five-page PDF, including the algebra, numerical inequalities, and the stated scope of both theorems.",
+      "imported_premises": [
+        "The companion results establishing the meridional and bridge ranks, the marked surgery identifications, the hyperbolic orbifold and cover structures, the A8 torsion-generation obstruction, and the exact three-generator upper bounds for the thirty-two named knots.",
+        "The finite verified geometric outputs and the cited software contracts, including canonical tetrahedra, complete cutoff enumeration, embedded-geodesic drilling, marked core detection, and the word-to-presentation marking for the homology calculation.",
+        "Mostow-Prasad rigidity, the canonical decomposition tilt criterion, and the cited effective filling theorem in the stated form."
+      ]
+    },
+    "findings": [
+      {
+        "location": "Page 1, setup and statements",
+        "result": "The torsion-rank premise applies to the ordinary two-generation obstruction because the three elements constructed from an inversion are torsion and generate the orbifold group after any identity entry is dropped. The conclusions distinguish exact cover ranks and named-knot ranks from the bounds for the family knot and orbifold ranks."
+      },
+      {
+        "location": "Page 2, Lemma 3",
+        "result": "The two trace equations leave a nonzero traceless solution. A singular solution would be a nonzero nilpotent, which in an upper triangular normal form forces the lower-left entries of both generators to vanish. That contradicts non-elementarity. The polarized Cayley-Hamilton identity then gives simultaneous inversion, and the nonscalar matrix has a nontrivial projective class of order two. For a torsion-free lattice that class is outside the lattice, so the induced manifold isometry is nonidentity."
+      },
+      {
+        "location": "Pages 2–3, Lemma 4 and marked surgery cores",
+        "result": "The restriction of the geodesic stabilizer induces an outer action on the complement group. An inner action descends to an inner action on the filled group through the surjective filling map, so rigidity gives the stated injection. The long-slope argument uses the effective theorem for the specified marked filling. For the short fillings, the stated marked core identification and verified drilling supply an embedded geodesic with the required complement. The exact complement isomorphism suffices for the stabilizer bound, and the separate marking is needed to read geodesic words in the homology presentation."
+      },
+      {
+        "location": "Pages 2–3, Proposition 5",
+        "result": "Equal cusp areas give isometry-invariant data in the two-cusp canonical decomposition. Strictly negative tilts for the certified positive, complete triangulations give the tetrahedral cells. An isometry fixing all cells and vertex frames is trivial, and an initial frame image determines propagation through the connected face pairings. Thus the full 24T trials supply an upper bound for the full isometry group. The positive real projections of the specified slopes or their negatives give the two stated normalized-length lower bounds."
+      },
+      {
+        "location": "Pages 3–4, Lemma 6",
+        "result": "In the long ranges the length lower bounds reach 11 for X4 and 13 for Y2, both above 10.1, and 8/(10.1²−58) is below 1/2. The finite checks cover X1, X2, X3 and Y1 separately. For Y0 the core word has image 43−130+21+24−19 = −61 = 56 mod 117, and the other geodesic has image 43 mod 117. The two unoriented sets {56, 61} and {43, 74} are disjoint. Isometries with homology action −1 must preserve the core, regardless of whether the two lengths coincide. Four generating involutions yield the three parity-kernel generators u_i u_0, and conjugation by u_0 inverts them. The nonidentity deck transformation is isometric in the orbifold cover metric, and rigidity transports the marked action to the verified filling metric."
+      },
+      {
+        "location": "Page 4, proof of Theorem 1",
+        "result": "For a putative two-generator cover group, inversion is a nonidentity manifold isometry acting by −1 on homology. The normalizer quotient by the cover lattice identifies its lift with the deck coset in the orbifold lattice. For a putative two-generator orbifold group, its abelianization C2 allows a Nielsen move to odd a and even b. The index-two Schreier generators a², b, aba⁻¹ are correct. Inversion sends the third to a⁻¹b⁻¹a, which equals a⁻²(aba⁻¹)⁻¹a², so the restriction acts by −1 on cover homology at n=0 as needed. Whether the induced isometry is the identity or the deck transformation, the projective involution then lies in the orbifold lattice because the kernel of the normalizer action is the cover lattice. In both arguments (Ja)² = (Jb)² = 1 yields the torsion-generation contradiction. Noncyclicity and the stated upper bounds complete the ranks."
+      },
+      {
+        "location": "Page 4, proof of Theorem 2",
+        "result": "The 32 distinct names match the number asserted. For each marked exterior, the finite canonical enumeration with one automorphism yields trivial isometry group. The nonidentity inversion obstruction excludes rank two in the torsion-free lattice, while non-elementarity excludes smaller ranks. The three-generator upper bound and the meridional and bridge equality follow from the cited companion."
+      }
+    ],
+    "nonblocking_clarity_notes": [
+      "An explicit one-line identification of the orientation-preserving isometry group with the normalizer quotient of the cover lattice would make both projective lift arguments easier to audit.",
+      "The last sentence about open ranks can say that the precise ranks are undetermined by this paper. The blind review establishes the proved interval and provides no independent survey of global open status."
+    ]
+  },
+  "root_pdf_review": {
+    "pages": 5,
+    "all_pages_rendered_and_inspected": true,
+    "outside_page_blocks": 0,
+    "notes": "Layout, notation consistency and final written proofs checked. The PDF review is conditional on exact geometric certificates and retained sources."
+  },
+  "sources_read": {
+    "fps-effective-bilipschitz-author.pdf": "Definition1.3 p6, partial filling continuation proof p28, Lemma7.26 and Thm7.28 full proofs pp48–50",
+    "fggtv-tetrahedral-1502.00383.pdf": "arXiv1502.00383v2, §3.1–3.3 canonical equal-area cells, tilt and interval criterion",
+    "afw-3manifold-groups-author-v3.pdf": "Theorem1.10 p11 and section2.2 isometry-outer group consequence",
+    "boileau-weidmann-structure-author.pdf": "Lemma22 and its geometric proof pp34–35; new matrix proof is independent of that proof",
+    "snappy-3.3.2-manifold-doc.html": "verified canonical tetrahedra, cusp translations, verified count/cutoff geodesic coverage, generator marking and verified drilling. Corresponding installed implementation locations checked."
+  },
+  "source_read_sha256": {
+    "fps-effective-bilipschitz-author.pdf": "61233768563563f3c272d98ef880d0cd235a607d2f5d2dd06e04e1ed645fb3c8",
+    "fggtv-tetrahedral-1502.00383.pdf": "70ee099b55906edd0dfd5aeead162020de7d874b4ea8f8b104abc63f572ddc6c",
+    "afw-3manifold-groups-author-v3.pdf": "c3c897d787bb9c07681439c862dd736da7711ea4cfe539b2b014fcae17be5feb",
+    "boileau-weidmann-structure-author.pdf": "4b2a632ef6fcaf1819ef5649b36d0a14085bd693a85841195619bee8557e70b7",
+    "snappy-3.3.2-manifold-doc.html": "11f99b48e530180fbfc59372e2033dd6e3a0aabf8e2b2895c53095fbe1bf2590"
+  },
+  "bounded_screens_context": {
+    "finite_target_count": "Nine finite targets counted across full Hurwitz tail periods. Max surjection counts stay below each target’s generating-pair count. This does not constrain joint or other quotients. The symmetry proof supersedes this route for the rank-three lower bound.",
+    "positive_claim_dependencies": "Neither finite quotient counts nor numerical symmetry guesses enter the geometric proof."
+  }
+}

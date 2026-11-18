@@ -2,11 +2,13 @@
 
 This note proves an all-degree bridge from the explicit alternating tuples to
 Laurent covers and sharp collinear-node configurations. Exact degree-eight
-algebraic and rational coefficient models accompany it. The rational examples
-have geometric A8 and arithmetic S8; the literal rational-square obstruction
+and degree-ten coefficient models accompany it. The rational degree-eight models
+have geometric A8 and arithmetic S8; degree ten has both groups A10 and a
+literal rational square discriminant. The degree-dependent leading obstruction
 remains valid. The underlying passport existence is already implied by prior
-theorems, as documented below. No polynomial affine-space Keller realization or
-priority for the explicit formulas is asserted.
+theorems. The exact Laurent extensions and the compiled polynomial Keller
+fibres have separate realization results below. No priority for the explicit
+formulas is asserted.
 
 The tuple and generation input is
 [the alternating-target proof](../meridional-rank/representations/ALTERNATING_TARGET_PRIME_FAMILIES.tex),
@@ -291,6 +293,13 @@ nonisomorphic full-A8 subfamily are proved in the linked note. These examples
 settle rational-coefficient geometric realization positively. They are
 consistent with Corollary 5, which excludes a literal square over Q.
 
+The first even degree at least eight permitted by the rational leading
+square-class condition is ten. It is now realized by an
+[integer-coefficient degree-ten pencil](RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md)
+with a literal square discriminant, arithmetic and geometric A10, and five
+real ordinary nodes on the rational line t=250000. This realizes the requested
+paired-simple-critical-point mechanism, rather than index-three ramification.
+
 The earlier [quadratic-field model](DEGREE_EIGHT_ALTERNATING_PENCIL.md),
 with e=(-1009+94sqrt(-329))/10584, retains its separate no-rational-form
 statement: its coefficient invariant b_1 b_7^2/b_5^3=e is nonrational.
@@ -299,8 +308,26 @@ The [complete degree-eight Hurwitz computation](DEGREE_EIGHT_HURWITZ_ORBIT.md)
 finds 93,296 double-transposition quadruples with a fixed seven-cycle product
 and exactly one full-A8 braid orbit, of size 47,334. Consequently both the
 rational models and the earlier quadratic-field model lie in the knot tuple's
-absolute braid orbit. This is deformation equivalence of branch-cycle data,
-not isomorphism of individual covers.
+absolute braid orbit. A separate
+[exact continuation certificate](DEGREE_EIGHT_EXPLICIT_BRAID_WORD.md) now
+starts from the literal quadratic-field polynomial and supplies a ten-letter
+braid word and sheet relabeling to the knot tuple. These statements concern
+branch-cycle equivalence, not isomorphism of individual covers.
+
+## Arithmetic specializations and whole Keller fibres
+
+The [specialization and fibre theorem](ALTERNATING_PENCIL_SPECIALIZATIONS_AND_KELLER_FIBRES.md)
+records the fixed quadratic discriminant extension in every unbranched
+degree-eight splitting field, and Hilbert specializations with arithmetic S8
+over the coefficient field and A8 after adjoining sqrt(-7). The degree-ten
+pencil instead gives regular A10 over Q(s), infinitely many rational full-A10
+specializations, and an explicit full-A10 degree-ten field at s=1.
+
+The finite algebras of these specializations become entire scheme-theoretic
+fibres of the retained polynomial Keller compiler. Its generic groups are
+S8 and S10, respectively, by the quadratic-tilt theorem. The transferred
+object is the finite algebra, not the original Laurent function-field
+extension; the normalization-unit exclusion of that extension is preserved.
 
 ## Priority and remaining questions
 

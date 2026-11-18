@@ -1,0 +1,57 @@
+{
+  "arithmetic": "Z[z,s], Q[z,s] and F_13",
+  "checker_sha256": "0ee81db8789893c9bee5ac80548a4d03bfbf49b9dfa88d8a30d1a09a45aa9e9c",
+  "checks": {
+    "branch_pair_discriminant": "21114280070272604391840000000000",
+    "critical_degree": 10,
+    "critical_quartic_at_25": "-7182500",
+    "critical_quartic_discriminant": "1801825579550588085000000",
+    "critical_u_discriminant": "92953129806939475496581031250000000000",
+    "degree_discriminant_square_root": 5,
+    "five_real_branch_values": true,
+    "full_discriminant_identity": true,
+    "mod_13_cubic": "z**3 + 2*z**2 + 3*z + 1",
+    "mod_13_factor_degrees": [
+      3,
+      7
+    ],
+    "mod_13_irreducibility_method": "Rabin modular-power/gcd criterion",
+    "mod_13_s": 12,
+    "mod_13_septic": "z**7 - 2*z**6 - 4*z**5 - 3*z**3 - 3*z**2 + 4*z + 4",
+    "mod_13_squarefree": true,
+    "negative_controls": 3,
+    "rational_normalization_identity": true,
+    "square_root_squarefree": true,
+    "ten_distinct_nonzero_critical_points": true,
+    "ten_real_critical_points": true
+  },
+  "command": ".venv/bin/python research/arithmetic/verify_rational_degree_ten_pencil.py",
+  "conclusions_with_written_proof": {
+    "algebraic_constant_field": "Q",
+    "arithmetic_monodromy": "A10",
+    "collinear_ordinary_nodes": 5,
+    "finite_branch_cycle_type": "two disjoint transpositions",
+    "finite_branch_values": 5,
+    "geometric_monodromy": "A10",
+    "infinity_profile": [
+      9,
+      1
+    ]
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "input": {
+    "H": "9*z**10 - 864*z**8 + 28161*z**6 - 350150*z**4 + 1127500*z**2",
+    "a": "250000",
+    "critical_u": "81*u**5 - 6048*u**4 + 140805*u**3 - 1050450*u**2 + 1127500*u - 250000",
+    "discriminant_square_root": "129140163*s**5 - 277613788412696400000*s**3 + 149001721814877867000000000000000*s",
+    "factored_square_root": "2187*s*(59049*s**4 - 126938174857200000*s**2 + 68130645548641000000000000000)"
+  },
+  "kind": "internal_exact_replay",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "The exact identities prove the literal rational square discriminant, simple critical points and distinct paired values. Full monodromy also uses irreducibility, the nine-cycle at infinity, the Frobenius (3,7) certificate, Jordan's prime-cycle theorem and simplicity of A10, as detailed in the accompanying note. No external human review, formal verification or historical priority is asserted.",
+  "sympy": "1.14.0"
+}

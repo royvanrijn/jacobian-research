@@ -79,6 +79,12 @@ have four finite double-transposition branch values, one infinity value of type
 values, and relabeling the sheets, their branch cycles therefore belong to the
 same B4 orbit as the original knot tuple.
 
+A [literal original-model continuation certificate](DEGREE_EIGHT_EXPLICIT_BRAID_WORD.md)
+also supplies a specific ten-letter braid word after a specified sheet
+relabeling. The finite-orbit proof above applies uniformly to all covers with
+the stated passport; the continuation certificate binds that word to the
+original quadratic-field coefficient model.
+
 The conclusion concerns braid equivalence and the associated Hurwitz component.
 The quadratic-field cover's failure to have a rational form is consistent with
 rational covers elsewhere in the same component. No equality of branch values

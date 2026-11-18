@@ -284,7 +284,7 @@ def verify():
             req(len(radii)==8 and separated(roots,radii),"disjoint tracking disks")
             newroots=list(map(root_center,step["roots"]));req(len(newroots)==8,"eight endpoint anchors")
             for z,w,r in zip(roots,newroots,radii):
-                req(ANCHOR<r and rouche(z,current,r,ds),"uniform segment Rouche inequality")
+                req(2*ANCHOR<r and rouche(z,current,r,ds),"uniform segment Rouche inequality")
                 req(rouche(w,endpoint,ANCHOR),"endpoint root anchor")
                 req(norm1(sub(w,z))+ANCHOR<r,"endpoint-root inclusion")
             roots=newroots;current=endpoint;t=nextt;total+=1

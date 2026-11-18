@@ -5,9 +5,10 @@ unbranched specialization. Hilbert irreducibility supplies full-group field
 specializations. The retained finite-etale Keller compiler then realizes their
 degree-eight root algebras as complete fibres of polynomial maps. The group of
 a specialized fibre and the generic monodromy of its compiler map are different
-objects.
+objects. The rational degree-ten pencil additionally gives full A10
+specializations over Q, with generic S10 polynomial Keller compilers.
 
-The two inputs are the [quadratic-field model](DEGREE_EIGHT_ALTERNATING_PENCIL.md)
+The two degree-eight inputs are the [quadratic-field model](DEGREE_EIGHT_ALTERNATING_PENCIL.md)
 over K=Q(sqrt(-329)), and the
 [rational model](RATIONAL_ALTERNATING_PENCIL_REALIZATION.md) over Q. For either
 model, write k for its coefficient field and
@@ -278,14 +279,35 @@ is precisely Spec Q[T]/P_2. The checker verifies derivative invertibility,
 source reconstruction, target equations and extraction of S in the exact
 degree-eight quotient, together with the two Jacobian factors.
 
-## The generic-group distinction
+## Corollary 5. The compiler has full symmetric generic monodromy
 
-The splitting field and Galois action of the finite fibre are preserved
-because its algebra is unchanged. This does not prescribe the generic
-monodromy of F_(s_0). Its generic inverse polynomial is the three-target
-polynomial G_Pi(S)-(g_1/2)(BS^2+C), not the original Laurent pencil
-H(T)-sT+a. No generic A8 conclusion for the polynomial Keller map is made
-from the specialized A8 fibre.
+Every map F_(s_0) constructed in Theorem 4 has arithmetic and geometric generic
+monodromy S8. This remains true after extending the coefficient field to k^+,
+even when the distinguished fibre has splitting-field group A8 there.
+
+Proof. Work first over the coefficient field k(Pi), and set h(S)=G_Pi(S).
+It has degree eight and h'(0)=g_1 is nonzero. Its generic inverse equation is
+
+\[
+               h(S)-\frac{g_1}{2}BS^2-\frac{g_1}{2}C.
+\]
+
+The rescaled variables -(g_1/2)B and (g_1/2)C are algebraically independent
+over k(Pi). The retained
+[quadratic-tilt monodromy theorem](../jacobian/universal-keller-structure/PROOF.md),
+UAQTILT1, therefore gives arithmetic and geometric S8 for this equation.
+Its hypotheses are exactly degree at least three, characteristic different
+from two, and h'(0) nonzero. Theorem 4 identifies the equation with the actual
+source extension, so it is the compiler map's group. In particular the group
+is already S8 after extending only k to its algebraic closure: the still
+larger extension to an algebraic closure of k(Pi) has S8 and cannot enlarge
+that group. The same argument works over k^+.
+
+The splitting field and Galois action of the finite fibre are preserved because
+its algebra is unchanged. The generic group has now been determined by a
+separate theorem: it is S8, while a full fibre can have group A8. The compiler
+inverse polynomial has three independent target coordinates; it is not the
+original Laurent pencil H(T)-sT+a.
 
 There is also no conflict with the
 [normalization-unit obstruction](../jacobian/monodromy-theory/ALTERNATING_LAURENT_FEASIBILITY.md).
@@ -294,6 +316,81 @@ extension over an affine base retaining its original cover coordinate s.
 Here s_0 is a fixed scalar and a different polynomial map is constructed
 from its finite quotient algebra. The finite fibre is the transferred
 object; the original function-field extension is not.
+
+## Corollary 6. Rational A10 fields and full degree-ten Keller fibres
+
+The [rational degree-ten pencil](RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md) is
+
+\[
+ H_{10}(T)=9T^{10}-864T^8+28161T^6-350150T^4+1127500T^2,\qquad a=250000.
+\]
+
+Its arithmetic and geometric group over Q(s) is A10. Hence a Hilbert set of
+rational s_0 gives irreducible degree-ten polynomials H_10(T)-s_0 T+a with
+splitting-field group A10 over Q. Their root algebras are entire fibres of
+determinant-one polynomial maps A3_Q -> A3_Q with generic degree ten,
+coordinate degrees at most 62, and arithmetic and geometric generic
+monodromy S10.
+
+Proof. Apply Hilbert irreducibility to the monic polynomial
+(H_10(T)-sT+a)/9. The constant leading-coefficient normalization does not
+change its roots or group, and divides the discriminant by the square
+9^18. Since arithmetic and geometric groups are both A10, the generic
+splitting field is regular over Q. Apply the full Keller-fibre theorem
+with degree ten and the quadratic-tilt argument of Corollary 5, replacing
+the upper summation limit eight by ten. The polynomial degree bound is
+6*10+2=62.
+
+There is also a completely explicit full-A10 specialization: s_0=1.
+Write P_(10,1)=H_10(T)-T+250000. The reductions below are monic, namely
+reductions of P_(10,1)/9:
+
+\[
+\begin{aligned}
+ (P_{10,1}/9)\bmod11
+ &= (T-2)(T^9+2T^8-4T^7+3T^6-T^3-2T^2-4T-2),\\
+ (P_{10,1}/9)\bmod13
+ &= (T^3-2T^2+3T-1)
+       (T^7+2T^6-4T^5-3T^3+3T^2+4T-4).
+\end{aligned}
+\]
+
+All displayed factors are irreducible and the products are squarefree.
+Thus its Galois group contains permutations of types (1)(9) and (3)(7).
+The nine-cycle has two orbits, a singleton and nine letters. Any
+nontransitive subgroup containing it would have that singleton as a
+global fixed point. But the (3)(7) permutation has no fixed point, so
+the group is transitive. The nine-cycle then forces primitivity. The
+seventh power of the (3)(7) permutation is a three-cycle fixing seven
+letters, and the imported Jordan theorem puts A10 in the group. The
+literal square discriminant puts the group inside A10. Consequently
+P_(10,1) is irreducible and its group is exactly A10.
+
+This explicit field has no quadratic subfield in its splitting field:
+such a field would give an index-two subgroup of A10. Its discriminant
+resolvent is therefore trivial, in contrast to the degree-eight S8
+specializations.
+
+For an explicit full-fibre compiler, translation tau=1 gives
+
+\[
+ (g_0,\ldots,g_{10})=
+ (1054655,1016543,-574772,-884684,13675,122850,5859,-5832,-459,90,9).
+\]
+
+Both g_1 and g_3 are nonzero. The same polynomial formulas as in Theorem 4,
+with upper limit ten, give an explicit rational Jacobian-one map whose
+entire fibre over
+
+\[
+                       (1,0,-2109310/1016543)
+\]
+
+is Spec Q[T]/P_(10,1). Its generic monodromy is S10, while that full
+fibre has splitting-field group A10. The checker verifies the explicit
+degree-ten Frobenius factors, square discriminant and translation data;
+the whole-fibre and generic-group conclusions use the displayed
+general compiler proof.
 
 ## Verification and source scope
 
@@ -304,9 +401,8 @@ Run from the repository root:
 ```
 
 The [receipt](alternating_specialization_fibres_verification.json) records
-Python 3.12.3 and SymPy 1.14.0, exact modulo-11/23/47 factors, translated
-coefficients, the normalized target, Jacobian factors, quotient reconstruction
-and invalid-input controls. The Hilbert and scheme-theoretic quantified
-conclusions additionally use the written proof and the specified imported
-theorems. No formal verification of this new bridge, independent external
+Python 3.12.3 and SymPy 1.14.0, exact degree-eight modulo-11/23/47 factors, degree-ten modulo-11/13 factors,
+translated coefficients, the normalized target, Jacobian factors, quotient reconstruction
+and invalid-input controls. The Hilbert, scheme-theoretic and generic-group conclusions additionally use
+the written proof and the specified imported or retained theorems. No formal verification of this new bridge, independent external
 replay, external human review or priority is claimed.

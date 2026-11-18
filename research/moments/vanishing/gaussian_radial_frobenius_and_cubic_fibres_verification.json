@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "sympy": "1.14.0",
+  "frobenius": {
+    "primes": [
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "radial_orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_residue_comparisons": 130,
+    "triangular_recurrence_comparisons": 804,
+    "vanishing_truncations_outside_order_hypothesis": 5
+  },
+  "cubic_radial_tails": {
+    "weighted_face_checks": 50,
+    "polynomial_critical_section_checks": 10,
+    "shifted_gamma_square_checks": 50
+  },
+  "cubic": {
+    "cubic_completion": true,
+    "moving_endpoint_connections": 3,
+    "flat_curvature_entries": 9,
+    "original_seed_factor": "1/kappa"
+  },
+  "sha256": {
+    "research/moments/vanishing/verify_gaussian_radial_frobenius_and_cubic_fibres.py": "e6ef0a453b7ab3463432e30b551cbfac6a45861600e855e2f67eba67e5a37079",
+    "research/moments/vanishing/GAUSSIAN_RADIAL_FROBENIUS_AND_CUBIC_FIBRES.md": "7421d886a8f5d372d787eb198c95f62fd9893906aaa11580d458b64d92be3acd",
+    "research/moments/vanishing/GAUSSIAN_LOGARITHM_EXCLUSION_AND_RATIONAL_PRIMITIVES.md": "439d22a72625d1edb2b7d5dbaa0f19ae501e644f31568394ce08459b930afeba",
+    "research/moments/vanishing/GAUSSIAN_INVARIANT_CORE_BOUNDARY_REDUCTION.md": "af83621c99fec04b27c48ee1e76d184052ea01ba8b79fb160c2aa1996f68174a",
+    "research/moments/vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
+    "research/moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md": "21ac968e6c99e3bd9da761be35401386461426a85e2a3d36bdb14f0b91cf460c",
+    "research/moments/vanishing/GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md": "e9b41f12cc515cf16336a3b3d41b5d665337be38cc0cb549cf0986cedd400825",
+    "research/moments/vanishing/sources/stacks-054K-radial-reductions.html": "149daba8ff82e969df0d18211e95747db809633d71df03edcee995e71b8d12ea",
+    "unpublished/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b"
+  },
+  "scope": "Bounded exact controls. The fixed-marker, source and uniform fibre estimates are written proofs.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

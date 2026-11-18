@@ -580,7 +580,7 @@
     "too-small root disk rejected",
     "truncated braid rejected"
   ],
-  "checker_sha256": "3a2b32ecb9887522c080bc8cd0430a2f1570b748d5ed4af71b7aa74bf8f41292",
+  "checker_sha256": "5e430c2998bbda140cd438465cf50a328654b5fbb9d466b20e2bf97a317bfbda",
   "certificate_sha256": "6c644c4cb265d73392c0172730f72dc87185389fba8aab10eed9a1c88a32b416",
   "arithmetic": "exact rational complex arithmetic; Rouche bounds for every point of every segment",
   "scope": "Literal quadratic-field model to knot tuple, with positive meridians on rational polygon paths. Numerical centers are proposals only; all root counts, label transitions, branch disks and the braid word are checked exactly.",

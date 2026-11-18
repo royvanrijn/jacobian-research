@@ -1,6 +1,6 @@
 {
   "arithmetic": "QQ; F_11,F_23,F_47; QQ[S]/P(1+S)",
-  "checker_sha256": "908db3c86f515176b8aa0987466fd32d11800a0d92d3d4481ef435571a9ef7b1",
+  "checker_sha256": "26e32d1e0bae7fa4e431c4fecfdffc10a8d790273afdcfb07eee9f7acf5a0b01",
   "checks": {
     "all_modular_factors_irreducible": true,
     "compact_plane_jacobian": "-2D",
@@ -14,6 +14,38 @@
     "whole_fibre_reconstruction": true
   },
   "command": ".venv/bin/python research/arithmetic/verify_alternating_specialization_fibres.py",
+  "degree_ten_specialization": {
+    "discriminant_square_root": "149001721814600253211587432740163",
+    "modular_factor_degrees": {
+      "11": [
+        1,
+        9
+      ],
+      "13": [
+        3,
+        7
+      ]
+    },
+    "normalized_target": [
+      "1",
+      "0",
+      "-2109310/1016543"
+    ],
+    "polynomial": "9*z**10 - 864*z**8 + 28161*z**6 - 350150*z**4 + 1127500*z**2 - z + 250000",
+    "translated_coefficients": [
+      "1054655",
+      "1016543",
+      "-574772",
+      "-884684",
+      "13675",
+      "122850",
+      "5859",
+      "-5832",
+      "-459",
+      "90",
+      "9"
+    ]
+  },
   "discriminant": "-563251105638187602396622616788489/2671507552988560823676783",
   "external_review": false,
   "formal_verification": false,
@@ -40,7 +72,7 @@
   "python": "3.12.3",
   "result": "PASS",
   "schema_version": 1,
-  "scope": "One explicit S8 number-field specialization and exact compiler identities; the written note supplies group arguments, quantified Hilbert specialization and scheme-theoretic full-fibre proof.",
+  "scope": "Explicit S8 degree-eight and A10 degree-ten number-field specializations, and exact degree-eight compiler identities; the written note supplies group arguments, quantified Hilbert specialization and scheme-theoretic full-fibre proof.",
   "specialization_polynomial": "z**8 + z**6 + 9*z**4/28 + 233*z**2/5292 - 2*z - 1/5488",
   "sympy": "1.14.0",
   "translated_coefficients": [

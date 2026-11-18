@@ -121,6 +121,30 @@ def main():
     assert mul(root_x,d)==S
     # A deliberately altered target fails in the quotient.
     assert red(Cvalue-(target_C+1))!=0
+    # Explicit rational A10 specialization of the new degree-ten pencil.
+    P10=9*z**10-864*z**8+28161*z**6-350150*z**4+1127500*z**2-z+250000
+    ten_factors={
+      11:[z-2,z**9+2*z**8-4*z**7+3*z**6-z**3-2*z**2-4*z-2],
+      13:[z**3-2*z**2+3*z-1,z**7+2*z**6-4*z**5-3*z**3+3*z**2+4*z-4],
+    }
+    ten_degrees={}
+    for prime,factors in ten_factors.items():
+        polynomials=[sp.Poly(f,z,modulus=prime) for f in factors]
+        product=sp.Poly(1,z,modulus=prime)
+        for factor in polynomials:
+            assert factor.is_irreducible
+            product*=factor
+        assert product==modular(P10,prime).monic()
+        assert sp.gcd(product,product.diff()).degree()==0
+        ten_degrees[str(prime)]=[f.degree() for f in polynomials]
+    ten_delta=sp.discriminant(P10,z)
+    ten_square_root=2187*(59049-126938174857200000+68130645548641000000000000000)
+    assert ten_delta==ten_square_root**2 and ten_delta!=0
+    ten_g=[sp.expand(P10.subs(z,1+S)).coeff(S,j) for j in range(11)]
+    assert ten_g==[1054655,1016543,-574772,-884684,13675,122850,5859,-5832,-459,90,9]
+    assert ten_g[1]*ten_g[3]!=0
+    ten_target=-2*ten_g[0]/ten_g[1]
+
     report={
       "schema_version":1,"kind":"internal_exact_replay",
       "command":".venv/bin/python research/arithmetic/verify_alternating_specialization_fibres.py",
@@ -131,13 +155,14 @@ def main():
       "discriminant":str(delta),
       "modular_factor_degrees":factor_degrees,
       "translation":1,"translated_coefficients":[str(c) for c in g],
+      "degree_ten_specialization":{"polynomial":str(P10),"modular_factor_degrees":ten_degrees,"discriminant_square_root":str(ten_square_root),"translated_coefficients":[str(c) for c in ten_g],"normalized_target":["1","0",str(ten_target)]},
       "normalized_target":["1","0",str(target_C)],
       "checks":{"discriminant_square_class":-7,"all_modular_factors_irreducible":True,
         "compact_plane_jacobian":"-2D","source_chart_jacobian":"t",
         "normalized_full_jacobian":1,"polynomial_pullback":True,"quotient_derivative_unit":True,
         "whole_fibre_reconstruction":True,"marked_root_extraction":True,
         "invalid_controls":2},
-      "scope":"One explicit S8 number-field specialization and exact compiler identities; the written note supplies group arguments, quantified Hilbert specialization and scheme-theoretic full-fibre proof.",
+      "scope":"Explicit S8 degree-eight and A10 degree-ten number-field specializations, and exact degree-eight compiler identities; the written note supplies group arguments, quantified Hilbert specialization and scheme-theoretic full-fibre proof.",
       "independent_replay":False,"formal_verification":False,"external_review":False,
       "result":"PASS"}
     output=json.dumps(report,indent=2,sort_keys=True)+"\n"

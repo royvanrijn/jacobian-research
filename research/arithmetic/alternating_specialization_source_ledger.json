@@ -53,21 +53,32 @@
     },
     {
       "path": "research/arithmetic/verify_alternating_specialization_fibres.py",
-      "sha256": "908db3c86f515176b8aa0987466fd32d11800a0d92d3d4481ef435571a9ef7b1",
+      "sha256": "26e32d1e0bae7fa4e431c4fecfdffc10a8d790273afdcfb07eee9f7acf5a0b01",
       "locator": "Exact modulo11/23/47 certificate, polynomial pullback/Jacobian and quotient reconstruction"
     },
     {
       "path": "research/arithmetic/alternating_specialization_fibres_verification.json",
-      "sha256": "a456d021447ef316d21263fc7f496b177034dde1a59e708c48c555c3990e3035",
+      "sha256": "e0e2fcdc529a0951bceb1d77a3c058789220ce267c0a3819c603010699b0ef22",
       "locator": "Actual replay outcome and software"
+    },
+    {
+      "path": "research/jacobian/universal-keller-structure/PROOF.md",
+      "sha256": "1898b6c71619f81cca4d658409a5e804cee0fb5ad9a70bb0e40edf0a30197cb9",
+      "locator": "UAQTILT1, Section1: h(S)+B S²-C has arithmetic and geometric S_N if degree>=3, h'(0)!=0 and char!=2; apply over k(Pi) to generic compiler inverse polynomial"
+    },
+    {
+      "path": "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md",
+      "sha256": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+      "locator": "Theorem 1: literal rational square, paired real critical points and regular A10; Corollary 2: real collinear nodes"
     }
   ],
   "scope_limits": [
     "Fixed quadratic extension is in the splitting field, not generally in the degree-eight root field.",
     "Hilbert conclusions assert infinitely many parameters; no new distinct-number-field counting statement is used.",
     "The full Keller-fibre compiler transfers the finite algebra, not the original Laurent function-field extension.",
-    "No generic A8 monodromy claim for the compiled polynomial Keller map follows from the fibre group.",
-    "Existing Lean assurances are those of the retained theorem; they do not automatically certify this new application."
+    "The compiled polynomial Keller map has generic S8 by the separate quadratic-tilt theorem, even when its distinguished finite fibre has group A8 after base extension. The fibre group does not prescribe that generic group.",
+    "Existing Lean assurances are those of the retained theorem; they do not automatically certify this new application.",
+    "Degree ten has regular arithmetic/geometric A10 and hence rational A10 Hilbert specializations; its finite fibres are compiled by maps with generic S10. The explicit s=1 field is certified at primes11and13."
   ],
   "existing_primary_inputs": [
     {

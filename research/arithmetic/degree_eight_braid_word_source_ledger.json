@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/DEGREE_EIGHT_EXPLICIT_BRAID_WORD.md",
+  "assurance": "Internal exact rational continuation checks. Imported complex-analysis theorem inspected; no formal verification or independent reproof of general complex analysis.",
+  "sources": [
+    {
+      "id": "nist-dlmf-rouche",
+      "title": "NIST Digital Library of Mathematical Functions, Section 1.10: Functions of a Complex Variable",
+      "authors": [
+        "F. W. J. Olver et al., editors",
+        "National Institute of Standards and Technology"
+      ],
+      "version": "DLMF Version 1.2.8; exact HTML retrieved 18 November 2026",
+      "primary_url": "https://dlmf.nist.gov/1.10.iv",
+      "retained_html": "research/arithmetic/sources/dlmf-1.10-rouche.html",
+      "sha256": "74f4513616ebf2efe91e73d270aeeeb12b0813550ad5c6507ddfcc83283d3c85",
+      "bytes": 363257,
+      "direct_read": true,
+      "locator": "Section 1.10(iv), Rouche's Theorem immediately after equation 1.10.10; argument principle equation 1.10.9",
+      "role": "mathematical_input",
+      "statement": "A strict boundary comparison of a holomorphic perturbation with a reference function preserves the number of enclosed zeros, counted with multiplicity.",
+      "application": "Compare each Taylor polynomial on a disk boundary with its linear term; use exact uniform coefficient bounds for every point of a closed parameter segment.",
+      "reading_limits": "Inspected the exact theorem statement and argument-principle formulation. The general complex-analytic theorems are imported; the finite inequalities and continuation matching are proved and checked here."
+    }
+  ]
+}
