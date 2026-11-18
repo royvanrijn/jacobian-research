@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """Finite odd-class absorbers and listed-prime densities; no analytic claim."""
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from collections import defaultdict
 from hashlib import sha256

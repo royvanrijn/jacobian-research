@@ -70,6 +70,33 @@ eventual cutoff. Formula (2) does not determine the finite list of
 admissible exceptions or a numerical cutoff. The separate specialized
 \(-8\) sieve below supplies an explicit cutoff for that form.
 
+Dependence of the onset on the forms is necessary. For every integer
+\(r\ge1\), the primitive principal norm form of the order
+\(\mathbb Z[17^r i]\) and the target
+\[
+ Q_r(x,y)=x^2+17^{2r}y^2,\qquad N_r=17^{2r}-2
+\]
+give a locally pair-primitive exception. Indeed a positive primitive
+value below \(17^{2r}\) must have \(y=0\), hence \(x=\pm1\), so
+the only such value is 1, and \(N_r>2\) is not a sum of two positive
+primitive values.
+
+For completeness, put \(c=17^r\). At 17 take the two vectors
+\((0,1)\) and \((t,0)\), where \(t^2=-2\) in \(\mathbb Z_{17}\);
+the root \(t=7\bmod17\) lifts by Hensel. At two take
+\((1,c^{-1})\) and \((s,2c^{-1})\), where
+\(s^2=c^2-8\) in \(\mathbb Z_2\). This odd square root exists because
+\(c^2-8\equiv1\bmod8\). These pairs are primitive and their norms
+sum to \(N_r\). At each odd \(q\ne17\), every unit is represented
+primitively by \(Q_r\) over \(\mathbb Z_q\): after scaling \(y\) by
+the unit \(c\), the equation \(x^2+y^2=a\ne0\bmod q\) has
+\(q-\left(\frac{-1}{q}\right)>0\) nonsingular solutions and lifts.
+Choose a residue \(a\) different from both 0 and \(N_r\bmod q\);
+then both \(a\) and \(N_r-a\) have primitive local representations.
+Thus \(N_r\to\infty\) gives an infinite obstruction to a cutoff
+independent of the order conductor. The fixed-form quantifiers in
+(2)--(4) retain precisely this necessary dependence.
+
 ## Additive disappearance of class obstructions
 
 Here is the class-group consequence with no hypothesis on the class

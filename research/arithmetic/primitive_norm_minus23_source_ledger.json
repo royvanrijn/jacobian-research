@@ -169,5 +169,17 @@
     "exact_target_mask_equal": true,
     "scope": "Exact bounded self-sum classification only for2<=N<=bound. Complete local exclusions are separated from the listed finite global exceptions. No unrestricted exception classification is asserted."
   },
-  "ramified_unit_sum_identity": "WithU=P intersect(23-units), P intersect23Z=23U and23M inP+P iffM inU+U, by the principal ramified generator and -1 nonsquare."
+  "ramified_unit_sum_identity": "WithU=P intersect(23-units), P intersect23Z=23U and23M inP+P iffM inU+U, by the principal ramified generator and -1 nonsquare.",
+  "runtime_contract": {
+    "required": "Python assertions enabled (__debug__ is True).",
+    "optimized_execution": "Rejected by an explicit module-level RuntimeError before certificate computation/output.",
+    "rejected_modes": [
+      "-O",
+      "-OO",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "regression_test": "../tests/test_arithmetic_certificate_runtime.py",
+    "replay_scope": "Full canonical receipt domains retained; adding the guard changed only the checker source pin in each regenerated receipt.",
+    "assurance": "Runtime failure is explicit; no upgrade to finite scope, independent replay, external review or formal verification."
+  }
 }

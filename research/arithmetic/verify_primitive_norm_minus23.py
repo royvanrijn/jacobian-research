@@ -3,6 +3,13 @@
 The unrestricted criterion requires the written ideal-class and signed-class
 proof. This checker makes no additive sumset or finite-exception assertion.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from array import array
 from hashlib import sha256

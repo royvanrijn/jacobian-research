@@ -5,6 +5,13 @@ Python standard library only. Every marked value is generated from an integral
 pair with gcd 1. The short-summand bitset sweep supplies positive witnesses;
 any remaining locally admissible target is checked against *all* summands.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 import hashlib
 import json

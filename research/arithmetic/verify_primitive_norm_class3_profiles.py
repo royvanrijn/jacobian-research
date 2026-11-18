@@ -5,6 +5,13 @@ Standard library only. These checks certify finite prime witnesses,
 residue densities and assignment profiles. The class-group interpretation
 and the analytic counting theorem require the separate written proof.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from fractions import Fraction as F
 from hashlib import sha256

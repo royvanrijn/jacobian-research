@@ -157,6 +157,18 @@ Consequently f lifts to a continuous endomorphism of the hbar-adically
 completed Weyl algebra. Any compatible finite jet extends; an even jet
 admits an even extension.
 
+The full-frame formal existence assertion also follows from
+[Bezrukavnikov--Kaledin, Theorem1.8 and Remark1.6](https://arxiv.org/pdf/math/0309290v4).
+The polynomial derivations dual to the df_i commute and define the
+pulled-back Moyal product, in which the f_i satisfy the exact Weyl
+relations. This product and the original Moyal product quantize the same
+symplectic affine space. Affineness gives admissibility, and polynomial
+de Rham H^2=0 makes their quantizations isomorphic with the same classical
+marking. Applying that isomorphism to f gives a formal lift with
+polynomial coefficients. The parity, prescribed-jet extension and explicit
+fiber homotopy are retained in the direct proof; no common spatial-degree
+bound follows from this classification.
+
 Here is an elementary proof, requiring no assumption that f is invertible.
 
 Put D_i={f_i,-}. The D_i commute by (6). Moreover the identity

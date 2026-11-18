@@ -4,6 +4,13 @@
 Standard library only. This verifies finite algebra; it does not prove the
 analytic finite-filter transfer lemma or any unrestricted global count.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from fractions import Fraction
 from math import gcd

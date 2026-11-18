@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """Exact bounded primitive x^2+14y^2 self-sums; no unrestricted exception claim."""
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from hashlib import sha256
 import json

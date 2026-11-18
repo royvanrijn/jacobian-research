@@ -233,7 +233,8 @@ with \(y=z^{1/16}\),
  \tag{M.13}
 \]
 The constants are uniform in the mark set, root positions and all
-target valuations.
+target valuations. With no marked primes the same assertion holds
+without choosing any ideal-class prime family.
 
 **Proof.** At inert primes use modulus \(\ell_q=q\) and at marked
 primes use \(\ell_q=q^2\). For a squarefree prime index \(d\), let
@@ -673,6 +674,8 @@ purposeful corruptions. Its
 specifies the exact finite domains. These checks do not
 prove the imported prime-class, norm or infinite analytic
 theorems, and are not external or formal verification.
+
+Certificate verification requires active Python assertions. The checker rejects optimized execution (-O, -OO, or optimization enabled through PYTHONOPTIMIZE) before generating a receipt.
 
 Run from the repository root:
 

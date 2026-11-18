@@ -83,6 +83,17 @@ For regular f the same expression for D(u) proves (6).
 The proof uses generic divisor points to compute valuations, so neither
 smooth branch crossings nor a surface classification is required.
 
+The local ramification input is classical. [Stacks, Lemmas58.31.5--6](https://stacks.math.columbia.edu/tag/0EYH)
+give the tame form t=u^e near a regular branch divisor after etale base
+change. [Lemma49.12.6](https://stacks.math.columbia.edu/tag/0BWJ) identifies
+the different with the Jacobian, and [Lemma49.8.2](https://stacks.math.columbia.edu/tag/0BW2)
+identifies the trace-dual with the relative dualizing module. Applied at
+generic divisor points in characteristic zero, these give the inverse
+different u^(1-e) used in (4). The derivative-order calculation and the
+uniform generic-direction conclusions below are deductions here; the
+references do not assert automatic codifferent membership of a source
+velocity.
+
 ## 2. Two target derivatives recover the full finite order
 
 If f belongs to S, (6) and (4) show D_P f,D_Q f in Lambda.

@@ -33,7 +33,1088 @@
       101
     ]
   },
-  "checker_sha256": "738b83bc170a70999dee69fb3ecd38061a42e2270b97155f8552e8cf1faf205e",
+  "actual_fields": {
+    "corruption_witnesses": {
+      "cancelled_prefix_labels": [
+        -15,
+        2,
+        2,
+        2,
+        2,
+        0,
+        4
+      ],
+      "frozen_state": [
+        -15,
+        1,
+        1,
+        17,
+        2,
+        4,
+        0
+      ],
+      "missing_inflation_factor": [
+        -3,
+        1,
+        3,
+        4,
+        4,
+        12
+      ],
+      "nonprincipal_ramification": [
+        -20,
+        1,
+        2
+      ],
+      "unbounded_individual_split2": [
+        -7,
+        4
+      ]
+    },
+    "field_count": 16,
+    "fields": [
+      {
+        "both_bad_coefficients_profiles": 0,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -3,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 4,
+        "genus_state_count_on_H": 1,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "b564763fe46de89145d3f4f287733cf5b29b4c9a01f8890ec6a25e8e4cc423e2",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 573,
+        "individual_shadow_flags_sha256": "b564763fe46de89145d3f4f287733cf5b29b4c9a01f8890ec6a25e8e4cc423e2",
+        "inflation_target_or_fiber_checks": 144,
+        "level_L": 24,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "7a0c83a70e1611abd0c5b17500659e853639c868b3a58af139d88e65fef5202e",
+            "direct_selfsum_sha256": "aebf405592dd2d2a2e5b4a256e4a7167b6189b5272cd5cbced17a8ba139c2616",
+            "direct_selfsum_target_count": 64,
+            "direct_vector_image_count": 64,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 9,
+            "direct_image_sha256": "8f7f315ac2f70db8871d8cefcb1ba18bc5b296259eeeb689a70f9e5b58189b3e",
+            "direct_selfsum_sha256": "9e90245a539d2e2b78293bcc0e70c822add4a8508ea2dbdd1061fceb170996fc",
+            "direct_selfsum_target_count": 21,
+            "direct_vector_image_count": 12,
+            "full_local_modulus": 27,
+            "prime": 3,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 9
+          }
+        ],
+        "minimum_positive_Gamma": "6",
+        "prefixes": [
+          1,
+          3
+        ],
+        "primitive_global_values": 573,
+        "primitive_local_target_residue_count": 56,
+        "principal_form": [
+          1,
+          1,
+          1
+        ],
+        "profile_target_mask_sha256": "dd834bb3b7215130a7b014d7a3151a0f22f9beb16e0c86a4ece102dae8f0f48b",
+        "profiles": 4,
+        "state_transport_cases": 8,
+        "target_period_16R2": 144
+      },
+      {
+        "both_bad_coefficients_profiles": 0,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -4,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 4,
+        "genus_state_count_on_H": 1,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "8ca592b9bd1a94d8b67af294c43d7238a60fe2fa2f8880736d3e4cf16673f949",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 703,
+        "individual_shadow_flags_sha256": "8ca592b9bd1a94d8b67af294c43d7238a60fe2fa2f8880736d3e4cf16673f949",
+        "inflation_target_or_fiber_checks": 40,
+        "level_L": 8,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "82d0ba10ac372be1b29d18512ff78837ab83938019e322c6e457d209c344867b",
+            "direct_selfsum_sha256": "b7d4ee80dcea8569545fe7bdf8fa34b16e00e6414a45e6adb6eb35bc230f4747",
+            "direct_selfsum_target_count": 80,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          }
+        ],
+        "minimum_positive_Gamma": "4",
+        "prefixes": [
+          1,
+          2
+        ],
+        "primitive_global_values": 703,
+        "primitive_local_target_residue_count": 10,
+        "principal_form": [
+          1,
+          0,
+          1
+        ],
+        "profile_target_mask_sha256": "2b38c1835bb86d1f7346c85dd85cdc0e69fc1c87b41cc82aa8c7ef024bb16cda",
+        "profiles": 4,
+        "state_transport_cases": 8,
+        "target_period_16R2": 16
+      },
+      {
+        "both_bad_coefficients_profiles": 2,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -7,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 16,
+        "genus_state_count_on_H": 1,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "b003761b9586db50ee7de1217ba82dd9b378ad04055a08f6e2d511c68c82a0e3",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 869,
+        "individual_shadow_flags_sha256": "b003761b9586db50ee7de1217ba82dd9b378ad04055a08f6e2d511c68c82a0e3",
+        "inflation_target_or_fiber_checks": 2800,
+        "level_L": 56,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_target_count": 128,
+            "direct_vector_image_count": 128,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 49,
+            "direct_image_sha256": "d597f7314d2a97fa1d97a41d33abdde58126cd5811400ca029e08a8a6efb5148",
+            "direct_selfsum_sha256": "45c82e8f3f653539e6a50135a636f11ad63748903c908be97df9af744445ca45",
+            "direct_selfsum_target_count": 336,
+            "direct_vector_image_count": 168,
+            "full_local_modulus": 343,
+            "prime": 7,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 49
+          }
+        ],
+        "minimum_positive_Gamma": "14/9",
+        "prefixes": [
+          1,
+          2,
+          7,
+          14
+        ],
+        "primitive_global_values": 869,
+        "primitive_local_target_residue_count": 768,
+        "principal_form": [
+          1,
+          1,
+          2
+        ],
+        "profile_target_mask_sha256": "9f700bea8f27bf380d5ee388a4750a24bf094aa9307487b65d3659d7af8f99ca",
+        "profiles": 16,
+        "state_transport_cases": 32,
+        "target_period_16R2": 784
+      },
+      {
+        "both_bad_coefficients_profiles": 0,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -8,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 4,
+        "genus_state_count_on_H": 1,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "5e30f4b6cbe4b4ba15208b5b675eacd00d53438ee77991a2ecf5e64a7124c1d7",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 884,
+        "individual_shadow_flags_sha256": "5e30f4b6cbe4b4ba15208b5b675eacd00d53438ee77991a2ecf5e64a7124c1d7",
+        "inflation_target_or_fiber_checks": 40,
+        "level_L": 8,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "8a0d87c4c3f8318c95e79a4cb28f24692397573001bb8fa0e841609ea38c14f5",
+            "direct_selfsum_sha256": "97718699e7f05033ab1b9f3857d4a5b380acadc893fb9f631352907f882f0779",
+            "direct_selfsum_target_count": 120,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          }
+        ],
+        "minimum_positive_Gamma": "2",
+        "prefixes": [
+          1,
+          2
+        ],
+        "primitive_global_values": 884,
+        "primitive_local_target_residue_count": 15,
+        "principal_form": [
+          1,
+          0,
+          2
+        ],
+        "profile_target_mask_sha256": "6c014c89abbc90a6e18d92cca238f2cc0987918516b2bc0d164da54f99182a3a",
+        "profiles": 4,
+        "state_transport_cases": 8,
+        "target_period_16R2": 16
+      },
+      {
+        "both_bad_coefficients_profiles": 0,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -11,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 4,
+        "genus_state_count_on_H": 1,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "42aa3c420ba84f10a1fc934157ff1b0e73ad98c7eafc0bba94a00236848d106d",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 709,
+        "individual_shadow_flags_sha256": "42aa3c420ba84f10a1fc934157ff1b0e73ad98c7eafc0bba94a00236848d106d",
+        "inflation_target_or_fiber_checks": 1232,
+        "level_L": 88,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "7a0c83a70e1611abd0c5b17500659e853639c868b3a58af139d88e65fef5202e",
+            "direct_selfsum_sha256": "aebf405592dd2d2a2e5b4a256e4a7167b6189b5272cd5cbced17a8ba139c2616",
+            "direct_selfsum_target_count": 64,
+            "direct_vector_image_count": 64,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 121,
+            "direct_image_sha256": "5c769cf6bbebead5efb824f900d825f18e4f6b3720337fe8e08a75463b4dec63",
+            "direct_selfsum_sha256": "719dbd6c4e5ebc8d90afd8060a536fedf731df03269710ba14e1e74ede3c0c3d",
+            "direct_selfsum_target_count": 1320,
+            "direct_vector_image_count": 660,
+            "full_local_modulus": 1331,
+            "prime": 11,
+            "small_modulus_full_vector_crosscheck": false,
+            "stabilized_target_modulus": 121
+          }
+        ],
+        "minimum_positive_Gamma": "44/25",
+        "prefixes": [
+          1,
+          11
+        ],
+        "primitive_global_values": 709,
+        "primitive_local_target_residue_count": 960,
+        "principal_form": [
+          1,
+          1,
+          3
+        ],
+        "profile_target_mask_sha256": "e9a39b6f6d1b069e1432230e0eae4612b3c125cf9a2a302393f7d37ab1a1714d",
+        "profiles": 4,
+        "state_transport_cases": 8,
+        "target_period_16R2": 1936
+      },
+      {
+        "both_bad_coefficients_profiles": 18,
+        "complete_affine_lift_fiber_profiles": 1,
+        "discriminant": -15,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 63,
+        "genus_state_count_on_H": 2,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "8cb6633ef3e7ae478f5efbf8cf4fa99557d6b1c8ef154533f5f577e18c5c2062",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 613,
+        "individual_shadow_flags_sha256": "8cb6633ef3e7ae478f5efbf8cf4fa99557d6b1c8ef154533f5f577e18c5c2062",
+        "inflation_target_or_fiber_checks": 25230,
+        "level_L": 120,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_target_count": 128,
+            "direct_vector_image_count": 128,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 9,
+            "direct_image_sha256": "638eff4139af156a0604a96b4c5bff4181872620619a4d07f4032987995eca4c",
+            "direct_selfsum_sha256": "f06106555bf730036da3ecdcec1fd9ea4944dbcb6ffd471bdd78ff88642a4ba9",
+            "direct_selfsum_target_count": 21,
+            "direct_vector_image_count": 12,
+            "full_local_modulus": 27,
+            "prime": 3,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 9
+          },
+          {
+            "coordinate_base_modulus": 25,
+            "direct_image_sha256": "cff16b6a7b087c7abc50e41658ae0bb57e8427e1ebdd112797fe786a2b0e2341",
+            "direct_selfsum_sha256": "c7f421a7fc4a9e9ddc116db97637d3044e5cf98a65f325db832d5e10de4dae6d",
+            "direct_selfsum_target_count": 125,
+            "direct_vector_image_count": 60,
+            "full_local_modulus": 125,
+            "prime": 5,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 25
+          }
+        ],
+        "minimum_positive_Gamma": "15/8",
+        "prefixes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          10,
+          15,
+          30
+        ],
+        "primitive_global_values": 613,
+        "primitive_local_target_residue_count": 2800,
+        "principal_form": [
+          1,
+          1,
+          4
+        ],
+        "profile_target_mask_sha256": "24cd3d7fe6157f3d7d1e1bc5f90a98796dd0d15f1c2fc6a9527b6b64a721f51f",
+        "profiles": 64,
+        "state_transport_cases": 128,
+        "target_period_16R2": 3600
+      },
+      {
+        "both_bad_coefficients_profiles": 2,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -20,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 16,
+        "genus_state_count_on_H": 2,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "63408531fe1fae49e3a71264fc162eece03f76f001226ab83f5f4d6dade94ef9",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 558,
+        "individual_shadow_flags_sha256": "63408531fe1fae49e3a71264fc162eece03f76f001226ab83f5f4d6dade94ef9",
+        "inflation_target_or_fiber_checks": 1600,
+        "level_L": 40,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "695b2825c9790370c1bd3a4537f84317e651997d9de2896835adbd5c2b0bb77e",
+            "direct_selfsum_sha256": "b7d4ee80dcea8569545fe7bdf8fa34b16e00e6414a45e6adb6eb35bc230f4747",
+            "direct_selfsum_target_count": 80,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 25,
+            "direct_image_sha256": "6ab6ddc734f6becde15202623097d5fb129726680de567a94594732afe12b212",
+            "direct_selfsum_sha256": "c7f421a7fc4a9e9ddc116db97637d3044e5cf98a65f325db832d5e10de4dae6d",
+            "direct_selfsum_target_count": 125,
+            "direct_vector_image_count": 60,
+            "full_local_modulus": 125,
+            "prime": 5,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 25
+          }
+        ],
+        "minimum_positive_Gamma": "5/4",
+        "prefixes": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "primitive_global_values": 558,
+        "primitive_local_target_residue_count": 250,
+        "principal_form": [
+          1,
+          0,
+          5
+        ],
+        "profile_target_mask_sha256": "ed2c0e0f846c44e7b1e722bc88117ccdab5715fdeabaf8e73ebb5b8438b4fa87",
+        "profiles": 16,
+        "state_transport_cases": 32,
+        "target_period_16R2": 400
+      },
+      {
+        "both_bad_coefficients_profiles": 2,
+        "complete_affine_lift_fiber_profiles": 4,
+        "discriminant": -23,
+        "first_hidden_failures": [
+          2,
+          3,
+          4,
+          9,
+          13,
+          16,
+          24,
+          29,
+          31,
+          32
+        ],
+        "full_inflated_pair_profiles": 12,
+        "genus_state_count_on_H": 1,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "91dccd7b6d395d65edae7ea00756d800b72564742f723ab760bc061576c0346f",
+        "hidden_individual_class_failure_count_in_bound": 440,
+        "individual_Hilbert_shadow_values": 1164,
+        "individual_shadow_flags_sha256": "9ef6931ae628bf192d9a78b0a286a1a3b1bc494d9a6bf662ad75b9aa3a1b49fd",
+        "inflation_target_or_fiber_checks": 2875,
+        "level_L": 184,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_target_count": 128,
+            "direct_vector_image_count": 128,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 529,
+            "direct_image_sha256": "7192a3a1801104b29a617845cff572fcb25e13a40fc6f5679564f7cda38589ff",
+            "direct_selfsum_sha256": "e667ddbb27bca3b3d4f3b0f6ed104a9e151845a5b76b7b07af349c425c55e835",
+            "direct_selfsum_target_count": 12144,
+            "direct_vector_image_count": 6072,
+            "full_local_modulus": 12167,
+            "prime": 23,
+            "small_modulus_full_vector_crosscheck": false,
+            "stabilized_target_modulus": 529
+          }
+        ],
+        "minimum_positive_Gamma": "230/121",
+        "prefixes": [
+          1,
+          2,
+          23,
+          46
+        ],
+        "primitive_global_values": 724,
+        "primitive_local_target_residue_count": 8448,
+        "principal_form": [
+          1,
+          1,
+          6
+        ],
+        "profile_target_mask_sha256": "e63cebe3887d222935735a75716195e74524409447ea0263c937380fe53f4d73",
+        "profiles": 16,
+        "state_transport_cases": 32,
+        "target_period_16R2": 8464
+      },
+      {
+        "both_bad_coefficients_profiles": 2,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -24,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 16,
+        "genus_state_count_on_H": 2,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "3bc0a14eb814a0d215ddee0bc847cdd0c8784a891667a865e027b3b9e5f910d9",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 541,
+        "individual_shadow_flags_sha256": "3bc0a14eb814a0d215ddee0bc847cdd0c8784a891667a865e027b3b9e5f910d9",
+        "inflation_target_or_fiber_checks": 720,
+        "level_L": 24,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "c08d3170aad06561347893409a99339d9787650fbfe681295e29e39e2820d460",
+            "direct_selfsum_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_target_count": 128,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 9,
+            "direct_image_sha256": "638eff4139af156a0604a96b4c5bff4181872620619a4d07f4032987995eca4c",
+            "direct_selfsum_sha256": "f06106555bf730036da3ecdcec1fd9ea4944dbcb6ffd471bdd78ff88642a4ba9",
+            "direct_selfsum_target_count": 21,
+            "direct_vector_image_count": 12,
+            "full_local_modulus": 27,
+            "prime": 3,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 9
+          }
+        ],
+        "minimum_positive_Gamma": "3/2",
+        "prefixes": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "primitive_global_values": 541,
+        "primitive_local_target_residue_count": 112,
+        "principal_form": [
+          1,
+          0,
+          6
+        ],
+        "profile_target_mask_sha256": "87f33b5df835b679618deb8f6892c1d83bfce8e1f426d63385d3473b88b676d3",
+        "profiles": 16,
+        "state_transport_cases": 32,
+        "target_period_16R2": 144
+      },
+      {
+        "both_bad_coefficients_profiles": 2,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -40,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 16,
+        "genus_state_count_on_H": 2,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "188b404d58475676d7f6252eaf698867d09ea54540bd3bc4cd44f088160b7c98",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 447,
+        "individual_shadow_flags_sha256": "188b404d58475676d7f6252eaf698867d09ea54540bd3bc4cd44f088160b7c98",
+        "inflation_target_or_fiber_checks": 1600,
+        "level_L": 40,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "a88aff72c4af45cc8898cf65ec45e48fbacca91524e4061164dd2b3ed14e1651",
+            "direct_selfsum_sha256": "97718699e7f05033ab1b9f3857d4a5b380acadc893fb9f631352907f882f0779",
+            "direct_selfsum_target_count": 120,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 25,
+            "direct_image_sha256": "cff16b6a7b087c7abc50e41658ae0bb57e8427e1ebdd112797fe786a2b0e2341",
+            "direct_selfsum_sha256": "c7f421a7fc4a9e9ddc116db97637d3044e5cf98a65f325db832d5e10de4dae6d",
+            "direct_selfsum_target_count": 125,
+            "direct_vector_image_count": 60,
+            "full_local_modulus": 125,
+            "prime": 5,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 25
+          }
+        ],
+        "minimum_positive_Gamma": "5/8",
+        "prefixes": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "primitive_global_values": 447,
+        "primitive_local_target_residue_count": 375,
+        "principal_form": [
+          1,
+          0,
+          10
+        ],
+        "profile_target_mask_sha256": "2641666bc9f8057b637756278d11fa133234b63521fa0fda61733b8ca70968fe",
+        "profiles": 16,
+        "state_transport_cases": 32,
+        "target_period_16R2": 400
+      },
+      {
+        "both_bad_coefficients_profiles": 2,
+        "complete_affine_lift_fiber_profiles": 0,
+        "discriminant": -56,
+        "first_hidden_failures": [
+          2,
+          7,
+          9,
+          25,
+          46,
+          71,
+          79,
+          113,
+          126,
+          161
+        ],
+        "full_inflated_pair_profiles": 16,
+        "genus_state_count_on_H": 2,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "84d48000e11d906d572a8a58d99822b33e673a10d5e56286b3981608dab42d7e",
+        "hidden_individual_class_failure_count_in_bound": 164,
+        "individual_Hilbert_shadow_values": 609,
+        "individual_shadow_flags_sha256": "e9c7883bb8e10ddaf4c7ade5ad1dd464d7a6cc98c9c9c80a405798908d41d1f7",
+        "inflation_target_or_fiber_checks": 2800,
+        "level_L": 56,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "456cca1bad1d9205eb39fe6acfc45aa9ab82216609b5edcd6e102b5c738b9441",
+            "direct_selfsum_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_target_count": 128,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 49,
+            "direct_image_sha256": "d597f7314d2a97fa1d97a41d33abdde58126cd5811400ca029e08a8a6efb5148",
+            "direct_selfsum_sha256": "45c82e8f3f653539e6a50135a636f11ad63748903c908be97df9af744445ca45",
+            "direct_selfsum_target_count": 336,
+            "direct_vector_image_count": 168,
+            "full_local_modulus": 343,
+            "prime": 7,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 49
+          }
+        ],
+        "minimum_positive_Gamma": "7/18",
+        "prefixes": [
+          1,
+          2,
+          7,
+          14
+        ],
+        "primitive_global_values": 445,
+        "primitive_local_target_residue_count": 768,
+        "principal_form": [
+          1,
+          0,
+          14
+        ],
+        "profile_target_mask_sha256": "9f700bea8f27bf380d5ee388a4750a24bf094aa9307487b65d3659d7af8f99ca",
+        "profiles": 16,
+        "state_transport_cases": 32,
+        "target_period_16R2": 784
+      },
+      {
+        "both_bad_coefficients_profiles": 18,
+        "complete_affine_lift_fiber_profiles": 4,
+        "discriminant": -84,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 60,
+        "genus_state_count_on_H": 4,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "1202a7b8059e7ec70c4e586fb92dda9d78e6cb0ade44f0bfceed6dec4f9c2581",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 301,
+        "individual_shadow_flags_sha256": "1202a7b8059e7ec70c4e586fb92dda9d78e6cb0ade44f0bfceed6dec4f9c2581",
+        "inflation_target_or_fiber_checks": 32865,
+        "level_L": 168,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "695b2825c9790370c1bd3a4537f84317e651997d9de2896835adbd5c2b0bb77e",
+            "direct_selfsum_sha256": "b7d4ee80dcea8569545fe7bdf8fa34b16e00e6414a45e6adb6eb35bc230f4747",
+            "direct_selfsum_target_count": 80,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 9,
+            "direct_image_sha256": "8f7f315ac2f70db8871d8cefcb1ba18bc5b296259eeeb689a70f9e5b58189b3e",
+            "direct_selfsum_sha256": "9e90245a539d2e2b78293bcc0e70c822add4a8508ea2dbdd1061fceb170996fc",
+            "direct_selfsum_target_count": 21,
+            "direct_vector_image_count": 12,
+            "full_local_modulus": 27,
+            "prime": 3,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 9
+          },
+          {
+            "coordinate_base_modulus": 49,
+            "direct_image_sha256": "b6bb339017b85d323066a00c80722a18297aa18d3a7d4740eee646dc168d1914",
+            "direct_selfsum_sha256": "45c82e8f3f653539e6a50135a636f11ad63748903c908be97df9af744445ca45",
+            "direct_selfsum_target_count": 336,
+            "direct_vector_image_count": 168,
+            "full_local_modulus": 343,
+            "prime": 7,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 49
+          }
+        ],
+        "minimum_positive_Gamma": "7/12",
+        "prefixes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          14,
+          21,
+          42
+        ],
+        "primitive_global_values": 301,
+        "primitive_local_target_residue_count": 3360,
+        "principal_form": [
+          1,
+          0,
+          21
+        ],
+        "profile_target_mask_sha256": "85146ff1d17f8ed78ce033c5d74d9acb9bfb54d0e660f69402b2e1a0d3f10349",
+        "profiles": 64,
+        "state_transport_cases": 256,
+        "target_period_16R2": 7056
+      },
+      {
+        "both_bad_coefficients_profiles": 18,
+        "complete_affine_lift_fiber_profiles": 1,
+        "discriminant": -120,
+        "first_hidden_failures": [],
+        "full_inflated_pair_profiles": 63,
+        "genus_state_count_on_H": 4,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "4ca58819a15ab45fd7f95c9ae67955730f800c5fd566f28e28f0f04c8b3cc851",
+        "hidden_individual_class_failure_count_in_bound": 0,
+        "individual_Hilbert_shadow_values": 273,
+        "individual_shadow_flags_sha256": "4ca58819a15ab45fd7f95c9ae67955730f800c5fd566f28e28f0f04c8b3cc851",
+        "inflation_target_or_fiber_checks": 25230,
+        "level_L": 120,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "456cca1bad1d9205eb39fe6acfc45aa9ab82216609b5edcd6e102b5c738b9441",
+            "direct_selfsum_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_target_count": 128,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 9,
+            "direct_image_sha256": "8f7f315ac2f70db8871d8cefcb1ba18bc5b296259eeeb689a70f9e5b58189b3e",
+            "direct_selfsum_sha256": "9e90245a539d2e2b78293bcc0e70c822add4a8508ea2dbdd1061fceb170996fc",
+            "direct_selfsum_target_count": 21,
+            "direct_vector_image_count": 12,
+            "full_local_modulus": 27,
+            "prime": 3,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 9
+          },
+          {
+            "coordinate_base_modulus": 25,
+            "direct_image_sha256": "6ab6ddc734f6becde15202623097d5fb129726680de567a94594732afe12b212",
+            "direct_selfsum_sha256": "c7f421a7fc4a9e9ddc116db97637d3044e5cf98a65f325db832d5e10de4dae6d",
+            "direct_selfsum_target_count": 125,
+            "direct_vector_image_count": 60,
+            "full_local_modulus": 125,
+            "prime": 5,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 25
+          }
+        ],
+        "minimum_positive_Gamma": "15/32",
+        "prefixes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          10,
+          15,
+          30
+        ],
+        "primitive_global_values": 273,
+        "primitive_local_target_residue_count": 2800,
+        "principal_form": [
+          1,
+          0,
+          30
+        ],
+        "profile_target_mask_sha256": "6ecb1781a02f29c6675053e6835f220b99ae9c65f188a6da8ffa3d25163b63ab",
+        "profiles": 64,
+        "state_transport_cases": 256,
+        "target_period_16R2": 3600
+      },
+      {
+        "both_bad_coefficients_profiles": 2,
+        "complete_affine_lift_fiber_profiles": 4,
+        "discriminant": -164,
+        "first_hidden_failures": [
+          2,
+          5,
+          9,
+          10,
+          18,
+          21,
+          25,
+          33,
+          37,
+          49
+        ],
+        "full_inflated_pair_profiles": 12,
+        "genus_state_count_on_H": 2,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "9d3ecc8e87717d56295c2b396e2e5701adc78dd1f4796361a09f69426732d43d",
+        "hidden_individual_class_failure_count_in_bound": 347,
+        "individual_Hilbert_shadow_values": 638,
+        "individual_shadow_flags_sha256": "e1e2bf901b9a5103c6c54b7ec882493ade3fac5bc7f67f346d710b64f5cbe98a",
+        "inflation_target_or_fiber_checks": 5125,
+        "level_L": 328,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "82d0ba10ac372be1b29d18512ff78837ab83938019e322c6e457d209c344867b",
+            "direct_selfsum_sha256": "b7d4ee80dcea8569545fe7bdf8fa34b16e00e6414a45e6adb6eb35bc230f4747",
+            "direct_selfsum_target_count": 80,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 1681,
+            "direct_image_sha256": "fd98f5cc7617c1a7477df61845d1a12da346b671faaa073dbd16a1be0f118463",
+            "direct_selfsum_sha256": "1a73ce25b16cb5d6bf345c574e5994f667c1e7d287c1a4974832468324bb9cc7",
+            "direct_selfsum_target_count": 68921,
+            "direct_vector_image_count": 34440,
+            "full_local_modulus": 68921,
+            "prime": 41,
+            "small_modulus_full_vector_crosscheck": false,
+            "stabilized_target_modulus": 1681
+          }
+        ],
+        "minimum_positive_Gamma": "369/400",
+        "prefixes": [
+          1,
+          2,
+          41,
+          82
+        ],
+        "primitive_global_values": 291,
+        "primitive_local_target_residue_count": 16810,
+        "principal_form": [
+          1,
+          0,
+          41
+        ],
+        "profile_target_mask_sha256": "dacb292edc8aff6ddf6b57f4ac347b0ff8afd088b052104654499f3ee34a2908",
+        "profiles": 16,
+        "state_transport_cases": 32,
+        "target_period_16R2": 26896
+      },
+      {
+        "both_bad_coefficients_profiles": 18,
+        "complete_affine_lift_fiber_profiles": 7,
+        "discriminant": -260,
+        "first_hidden_failures": [
+          9,
+          10,
+          26,
+          29,
+          61,
+          121,
+          181,
+          185,
+          194,
+          274
+        ],
+        "full_inflated_pair_profiles": 57,
+        "genus_state_count_on_H": 4,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "31c80b32fb77c3f3742cad652d52eebd17e3b4c3a5f3e75ec0ddd3bafa95e484",
+        "hidden_individual_class_failure_count_in_bound": 93,
+        "individual_Hilbert_shadow_values": 311,
+        "individual_shadow_flags_sha256": "9992ca73942caba135563ae668f8fa3b886cf47f5f15b74e6b96bbb0c1961bbc",
+        "inflation_target_or_fiber_checks": 123643,
+        "level_L": 520,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "82d0ba10ac372be1b29d18512ff78837ab83938019e322c6e457d209c344867b",
+            "direct_selfsum_sha256": "b7d4ee80dcea8569545fe7bdf8fa34b16e00e6414a45e6adb6eb35bc230f4747",
+            "direct_selfsum_target_count": 80,
+            "direct_vector_image_count": 48,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 25,
+            "direct_image_sha256": "cff16b6a7b087c7abc50e41658ae0bb57e8427e1ebdd112797fe786a2b0e2341",
+            "direct_selfsum_sha256": "c7f421a7fc4a9e9ddc116db97637d3044e5cf98a65f325db832d5e10de4dae6d",
+            "direct_selfsum_target_count": 125,
+            "direct_vector_image_count": 60,
+            "full_local_modulus": 125,
+            "prime": 5,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 25
+          },
+          {
+            "coordinate_base_modulus": 169,
+            "direct_image_sha256": "206cca5af0b65fc97494bac1800aab8af147ad9a6980f4e4812d32eadc67a504",
+            "direct_selfsum_sha256": "3bc7eae06f81b4e9488c51e495efc48e9651e9d86749e1696163ad7372d6df45",
+            "direct_selfsum_target_count": 2197,
+            "direct_vector_image_count": 1092,
+            "full_local_modulus": 2197,
+            "prime": 13,
+            "small_modulus_full_vector_crosscheck": false,
+            "stabilized_target_modulus": 169
+          }
+        ],
+        "minimum_positive_Gamma": "65/288",
+        "prefixes": [
+          1,
+          2,
+          5,
+          10,
+          13,
+          26,
+          65,
+          130
+        ],
+        "primitive_global_values": 218,
+        "primitive_local_target_residue_count": 42250,
+        "principal_form": [
+          1,
+          0,
+          65
+        ],
+        "profile_target_mask_sha256": "df34f2a88f968c96c210786fda3906f92ee9921a0749771b9f5f09b45da30924",
+        "profiles": 64,
+        "state_transport_cases": 256,
+        "target_period_16R2": 67600
+      },
+      {
+        "both_bad_coefficients_profiles": 110,
+        "complete_affine_lift_fiber_profiles": 49,
+        "discriminant": -231,
+        "first_hidden_failures": [
+          4,
+          15,
+          16,
+          22,
+          25,
+          37,
+          42,
+          67,
+          91,
+          133
+        ],
+        "full_inflated_pair_profiles": 207,
+        "genus_state_count_on_H": 4,
+        "global_coordinate_bound": 4096,
+        "global_coordinate_flags_sha256": "cff037582fe3efa7d06da150d1a5b6d27d30a2802e72beb1b573c4ca6f328a82",
+        "hidden_individual_class_failure_count_in_bound": 172,
+        "individual_Hilbert_shadow_values": 416,
+        "individual_shadow_flags_sha256": "b0c5e4369dc5860e5c2a82cf1d8319e425a71104a3ae663af1fca5229ca76955",
+        "inflation_target_or_fiber_checks": 1633254,
+        "level_L": 1848,
+        "local_coordinate_images": [
+          {
+            "coordinate_base_modulus": 16,
+            "direct_image_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_sha256": "7eb24a18990ee4c958c89773da6cc9fbc5c278357762d02ec6ab947eb28726ff",
+            "direct_selfsum_target_count": 128,
+            "direct_vector_image_count": 128,
+            "full_local_modulus": 128,
+            "prime": 2,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 16
+          },
+          {
+            "coordinate_base_modulus": 9,
+            "direct_image_sha256": "638eff4139af156a0604a96b4c5bff4181872620619a4d07f4032987995eca4c",
+            "direct_selfsum_sha256": "f06106555bf730036da3ecdcec1fd9ea4944dbcb6ffd471bdd78ff88642a4ba9",
+            "direct_selfsum_target_count": 21,
+            "direct_vector_image_count": 12,
+            "full_local_modulus": 27,
+            "prime": 3,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 9
+          },
+          {
+            "coordinate_base_modulus": 49,
+            "direct_image_sha256": "b6bb339017b85d323066a00c80722a18297aa18d3a7d4740eee646dc168d1914",
+            "direct_selfsum_sha256": "45c82e8f3f653539e6a50135a636f11ad63748903c908be97df9af744445ca45",
+            "direct_selfsum_target_count": 336,
+            "direct_vector_image_count": 168,
+            "full_local_modulus": 343,
+            "prime": 7,
+            "small_modulus_full_vector_crosscheck": true,
+            "stabilized_target_modulus": 49
+          },
+          {
+            "coordinate_base_modulus": 121,
+            "direct_image_sha256": "6adbabae8318b59d257ba2a47dbfb654ac787c92f3fddc839c0d390efb3c3c2a",
+            "direct_selfsum_sha256": "719dbd6c4e5ebc8d90afd8060a536fedf731df03269710ba14e1e74ede3c0c3d",
+            "direct_selfsum_target_count": 1320,
+            "direct_vector_image_count": 660,
+            "full_local_modulus": 1331,
+            "prime": 11,
+            "small_modulus_full_vector_crosscheck": false,
+            "stabilized_target_modulus": 121
+          }
+        ],
+        "minimum_positive_Gamma": "77/300",
+        "prefixes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          11,
+          14,
+          21,
+          22,
+          33,
+          42,
+          66,
+          77,
+          154,
+          231,
+          462
+        ],
+        "primitive_global_values": 244,
+        "primitive_local_target_residue_count": 645120,
+        "principal_form": [
+          1,
+          1,
+          58
+        ],
+        "profile_target_mask_sha256": "27c2ee319b1d6431bb8fa727fabd08ab73a6d83482b67ed830eca80812d08bee",
+        "profiles": 256,
+        "state_transport_cases": 1024,
+        "target_period_16R2": 853776
+      }
+    ],
+    "negative_controls": [
+      "froze the genus state under a directive",
+      "replaced original prefix labels after cancelling their gcd",
+      "omitted the B-fold inflation fiber",
+      "truncated all individual split-2 valuations",
+      "assumed a ramified prime has a principal generator"
+    ],
+    "scope": "Complete stated local residue images and finite profile masks, plus bounded global coordinate-to-Hilbert-shadow inclusion. Higher local digits use exact finite Taylor lifting, independently challenged by full vector enumeration at moduli<=400. No ideal class labels or infinite prime-distribution assertion are inferred."
+  },
+  "checker_sha256": "bbb3cc1b3ed3c334c8d8cf5f1cb7fd418dc0b09fcaae6a8666451dc899271855",
   "group_saturation": {
     "cofactor_cases": 54,
     "examples": [

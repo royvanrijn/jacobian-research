@@ -762,9 +762,17 @@ computations and are not added to the main theorem.
 ### Paper 2: Primitive Norm Sums Beyond Class Number One
 
 This article centers on sharp unweighted counts of ordered
-**value pairs**, with nontrivial ideal-class constraints.
-Its organizing theorem is
-[OddClassCounts](PRIMITIVE_NORM_ODD_CLASS_GROUPS.md): for every
+**value pairs**, with nontrivial ideal-class constraints. The new
+[all-maximal-order theorem](PRIMITIVE_NORM_MAXIMAL_ORDERS.md)
+now supplies the general centerpiece: every fixed maximal imaginary
+quadratic order has the sharp \(NJ_K(N)/\log N\) scale on every
+sufficiently large admissible target, with arbitrary class group.
+The pointwise genus-shadow comparison has a logarithmic saving
+\(\delta<1/h_K\), and has zero error when \(2G=0\).
+It replaces field-specific absorbers by a generic class-deficiency
+sieve and finite genus-vector transfer. The earlier organizing result
+[OddClassCounts](PRIMITIVE_NORM_ODD_CLASS_GROUPS.md) remains a
+proved precursor: for every
 fixed prime \(p\ge7\), \(p\equiv3\pmod4\), the maximal order
 of discriminant \(-p\) has
 \[
@@ -860,18 +868,25 @@ a new upper sieve or another qualitative local-global theorem
 would not close it. Leading-constant asymptotics are a further,
 separate target.
 
-The next work should address these precise interfaces:
+The maximal-order part of this target is now proved in
+[Primitive norm sums in every maximal imaginary quadratic order](PRIMITIVE_NORM_MAXIMAL_ORDERS.md),
+including arbitrary even class groups. Its generic prime-class
+saturation and exact-prime-square class-error sieve avoid a separate
+absorber construction for each group. The remaining all-order task
+is the conductor extension; the earlier odd and cyclic-four proofs
+remain useful special cases.
+
+For conductors and any further refinement, address these interfaces:
 
 1. Check the primary literature for this unweighted two-value
    correlation, including genus and conductor restrictions.
    The completed two-block coordinate review does not settle
    historical priority of this different statement.
-2. Extend the finite genus-state/profile transfer beyond the
-   separate \(-20\) and \(-56\) cases. For arbitrary even class
-   groups, distinguish the quotient \(G/2G\), which records
-   genus constraints, from class corrections inside \(2G\).
-   The odd-group sign argument cannot simply be reused when
-   multiplication by 2 is not invertible.
+2. Reuse the now-proved full finite genus-vector transfer for maximal
+   orders. For ring class groups, first establish the correct
+   conductor-local and invertible-ideal meaning of the states.
+   The distinction between \(G/2G\) and corrections in \(2G\)
+   remains essential; no odd-order inverse of 2 is assumed.
 3. Treat nonmaximal orders at conductor primes. Separate the
    invertible ideal-class data away from the conductor from
    primitive local branches at the conductor. Primitive order
@@ -889,10 +904,10 @@ handles the full genus-character vector. Do not assume the
 \(C_{12}+C_{12}\) distribution barrier applies to this problem;
 identify any genuinely new analytic estimate as an explicit obligation.
 
-This is one all-order counting objective, with the existing odd,
-class-number-two and cyclic-four cases as proved starting points.
-It remains open in this research record; the plan does not promote
-it to a theorem.
+The all-order objective remains open for nonmaximal orders.
+Every maximal order, including arbitrary even class groups, is
+now covered by the separate internally reviewed theorem. This
+is not yet a conductor theorem or an unweighted leading asymptotic.
 
 Historical priority, specialist mathematical review and complete
 manuscript preparation remain separate publication obligations for

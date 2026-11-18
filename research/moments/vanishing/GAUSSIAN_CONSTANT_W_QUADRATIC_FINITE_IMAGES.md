@@ -246,6 +246,19 @@ The exact original quadratic source is
     C_t=(I-2tB)^-1 Gamma,
     R=tk0+(t^2/2)l^T C_t l.                              (10)
 
+The determinant kernel is classical quadratic-form calculus:
+[Lancaster, *Traces and Cumulants of Quadratic Forms in Normal Variables*
+(1954), Theorems 1-2, pp.247-248](https://doi.org/10.1111/j.2517-6161.1954.tb00167.x)
+gives the trace cumulants and the joint determinant generating function.
+Its real standardized Gaussian statement extends to this split formal
+covariance coefficientwise: each fixed moment is a polynomial identity
+in the symmetric form and covariance entries. Expanding the logarithm
+of D0 gives cumulants 2^(j-1)(j-1)! tr(B^j) for the homogeneous quadratic
+part; Newton identities identify D0=1 with nilpotence. The linear source
+completion and all-marker formula (13) are retained explicitly here.
+This classical input does not prove the nonlinear reduction in Sections
+3-4, or supply the rational-exponential argument below.
+
 Assumption (4), after squaring, implies
 
     exp(2(R-psi))=D0 p^2.                                (11)

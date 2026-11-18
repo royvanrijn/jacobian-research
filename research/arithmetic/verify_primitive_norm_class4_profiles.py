@@ -4,6 +4,13 @@
 Standard library only. The written class-group and analytic proofs remain
 separate inputs; these finite checks do not establish an eventual cutoff.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from fractions import Fraction as F
 from hashlib import sha256

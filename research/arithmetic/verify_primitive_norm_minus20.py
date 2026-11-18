@@ -2,6 +2,13 @@
 """Exact bounded x^2+5y^2 primitive norm sumset scan; no extrapolation.
 Independent gcd-coordinate values and splitting/genus values are compared.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from math import gcd, isqrt
 from pathlib import Path

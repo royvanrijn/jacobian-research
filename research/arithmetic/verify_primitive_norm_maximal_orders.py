@@ -8,6 +8,13 @@ or infinite convolution theorem. All examples and proof domains are fixed.
 """
 from __future__ import annotations
 
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
+
 import argparse
 from fractions import Fraction
 import hashlib
@@ -317,6 +324,364 @@ def selberg_and_marking_audit():
     }
 
 
+def distinct_prime_factors(n):
+    result = []
+    d = 2
+    while d * d <= n:
+        if n % d == 0:
+            result.append(d)
+            while n % d == 0:
+                n //= d
+        d += 1
+    if n > 1:
+        result.append(n)
+    return result
+
+
+def jacobi(a, n):
+    assert n > 0 and n % 2 == 1
+    a %= n
+    answer = 1
+    while a:
+        while a % 2 == 0:
+            a //= 2
+            if n % 8 in (3, 5):
+                answer = -answer
+        a, n = n, a
+        if a % 4 == n % 4 == 3:
+            answer = -answer
+        a %= n
+    return answer if n == 1 else 0
+
+
+def valuation_unit(a, p):
+    assert a != 0
+    e = 0
+    while a % p == 0:
+        a //= p
+        e += 1
+    return e, a
+
+
+def hilbert_integer(a, d, p):
+    assert a > 0 and d < 0
+    e, u = valuation_unit(a, p)
+    beta, v = valuation_unit(d, p)
+    if p == 2:
+        eps = lambda z: ((z - 1) // 2) % 2
+        omega = lambda z: ((z * z - 1) // 8) % 2
+        exponent = eps(u) * eps(v) + e * omega(v) + beta * omega(u)
+        return -1 if exponent % 2 else 1
+    answer = -1 if (e * beta * ((p - 1) // 2)) % 2 else 1
+    if beta % 2:
+        answer *= jacobi(u, p)
+    if e % 2:
+        answer *= jacobi(v, p)
+    return answer
+
+
+def splitting_sign(d, p):
+    if d % p == 0:
+        return 0
+    if p == 2:
+        return 1 if d % 8 == 1 else -1
+    return jacobi(d, p)
+
+
+def principal_form(d):
+    return (1, 1, (1 - d) // 4) if d % 4 == 1 else (1, 0, -d // 4)
+
+
+def norm_value(form, x, y):
+    a, b, c = form
+    return a * x * x + b * x * y + c * y * y
+
+
+def direct_primitive_local_image(d, p, base_exp, target_exp):
+    """Complete coordinates, compressed only by an exact finite Taylor lift.
+
+    Every target vector is (x,y)+p^base_exp*(u,v). The quadratic remainder
+    vanishes because 2*base_exp>=target_exp. For each base vector, the two
+    linear derivatives generate precisely the gcd subgroup in the lift
+    index. No Hilbert or target-residue criterion is used here.
+    """
+    assert 2 * base_exp >= target_exp
+    base = p ** base_exp
+    target = p ** target_exp
+    lift = target // base
+    a, b, c = principal_form(d)
+    cosets = set()
+    for x in range(base):
+        for y in range(base):
+            if x % p == y % p == 0:
+                continue
+            derivative_gcd = gcd(gcd(2 * a * x + b * y, b * x + 2 * c * y), lift)
+            period = base * derivative_gcd
+            cosets.add((norm_value((a, b, c), x, y) % period, period))
+    flags = bytearray(target)
+    for residue, period in cosets:
+        for value in range(residue, target, period):
+            flags[value] = 1
+    if target <= 400:
+        brute = bytearray(target)
+        for x in range(target):
+            for y in range(target):
+                if x % p or y % p:
+                    brute[norm_value((a, b, c), x, y) % target] = 1
+        assert brute == flags
+    return flags
+
+
+def cyclic_selfsum(flags):
+    modulus = len(flags)
+    bits = sum(1 << n for n, present in enumerate(flags) if present)
+    full_mask = (1 << modulus) - 1
+    covered = 0
+    for a, present in enumerate(flags):
+        if present:
+            covered |= ((bits << a) | (bits >> (modulus - a))) & full_mask
+    return bytearray((covered >> n) & 1 for n in range(modulus))
+
+
+def local_hilbert_flag(d, p, value):
+    sign = splitting_sign(d, p)
+    if sign == 1:
+        return True
+    if sign == -1:
+        return value % p != 0
+    if value == 0:
+        return False
+    e, _ = valuation_unit(value, p)
+    return e <= 1 and hilbert_integer(value, d, p) == 1
+
+
+def finite_global_primitive_flags(d, bound):
+    from math import isqrt
+    form = principal_form(d)
+    _, b, _ = form
+    flags = bytearray(bound + 1)
+    ymax = isqrt((4 * bound) // (-d))
+    for y in range(-ymax, ymax + 1):
+        h = isqrt(4 * bound + d * y * y)
+        lo = -((h + b * y) // 2)
+        hi = (h - b * y) // 2
+        for x in range(lo, hi + 1):
+            if gcd(x, y) == 1:
+                n = norm_value(form, x, y)
+                if 0 < n <= bound:
+                    flags[n] = 1
+    return flags
+
+
+def positive_shadow_flag(d, n, bad_primes):
+    assert n > 0
+    remaining = n
+    for p in distinct_prime_factors(n):
+        e, _ = valuation_unit(n, p)
+        sign = splitting_sign(d, p)
+        if sign == -1 or (sign == 0 and e > 1):
+            return False
+        while remaining % p == 0:
+            remaining //= p
+    assert remaining == 1
+    return all(hilbert_integer(n, d, p) == 1 for p in bad_primes)
+
+
+def histogram(a_values, b_values, a_coeff, b_coeff, modulus):
+    counts = [0] * modulus
+    for a in a_values:
+        for b in b_values:
+            counts[(a_coeff * a + b_coeff * b) % modulus] += 1
+    return counts
+
+
+def actual_field_audit():
+    fields = (-3, -4, -7, -8, -11, -15, -20, -23, -24, -40,
+              -56, -84, -120, -164, -260, -231)
+    records = []
+    controls = []
+    frozen_state_witness = None
+    prefix_label_witness = None
+    missing_lift_witness = None
+    split2_witness = None
+    nonprincipal_ramification_witness = None
+    for d in fields:
+        odd_ramified = [p for p in distinct_prime_factors(-d) if p != 2]
+        bad_primes = [2] + odd_ramified
+        r_product = prod(odd_ramified)
+        level = 8 * r_product
+        prefix_support = 2 * r_product
+        target_period = 16 * r_product * r_product
+        prefixes = sorted(prod(s) for s in subsets([2] + odd_ramified)
+                          if not (splitting_sign(d, 2) == -1 and 2 in s))
+        units = [a for a in range(1, level) if gcd(a, level) == 1]
+        state = lambda a: tuple(hilbert_integer(a, d, p) for p in bad_primes)
+        theta = {r: state(r) for r in prefixes}
+        h_units = [a for a in units if jacobi(d, a) == 1]
+        assert len(h_units) * 2 == len(units)
+        for a in units:
+            assert prod(state(a)) == jacobi(d, a)
+        for r in prefixes:
+            assert prod(theta[r]) == 1
+        residue_sets = {r: [a for a in units if state(a) == theta[r]] for r in prefixes}
+        assert all(residue_sets[r] and set(residue_sets[r]) <= set(h_units) for r in prefixes)
+        representatives = {}
+        for q in h_units:
+            representatives.setdefault(state(q), q)
+        representatives = sorted(set(representatives.values()) | set(h_units[1:2]))
+
+        local_records = []
+        coarse_target_flags = []
+        for p in bad_primes:
+            base_exp, target_exp, coarse = (4, 7, 16) if p == 2 else (2, 3, p * p)
+            flags = direct_primitive_local_image(d, p, base_exp, target_exp)
+            expected = bytearray(local_hilbert_flag(d, p, n) for n in range(len(flags)))
+            assert flags == expected
+            sums = cyclic_selfsum(flags)
+            for n in range(coarse):
+                assert all(sums[n + k * coarse] == sums[n]
+                           for k in range(len(sums) // coarse))
+            coarse_target_flags.append((coarse, sums[:coarse]))
+            local_records.append({'prime': p, 'coordinate_base_modulus': p ** base_exp,
+                                  'full_local_modulus': p ** target_exp,
+                                  'direct_vector_image_count': sum(flags),
+                                  'direct_selfsum_target_count': sum(sums),
+                                  'stabilized_target_modulus': coarse,
+                                  'direct_image_sha256': hashlib.sha256(flags).hexdigest(),
+                                  'direct_selfsum_sha256': hashlib.sha256(sums).hexdigest(),
+                                  'small_modulus_full_vector_crosscheck': len(flags) <= 400})
+        direct_target_mask = bytearray(all(flags[n % modulus] for modulus, flags in coarse_target_flags)
+                                      for n in range(target_period))
+        profile_mask = bytearray(target_period)
+        profile_count = 0
+        full_inflation_profiles = 0
+        affine_lift_fiber_profiles = 0
+        inflation_target_checks = 0
+        transport_cases = 0
+        bad_coefficient_profiles = 0
+        minimum_gamma = None
+        for r in prefixes:
+            for s in prefixes:
+                common = gcd(r, s)
+                a_coeff, b_coeff = r // common, s // common
+                assert gcd(a_coeff, b_coeff) == 1
+                if a_coeff > 1 and b_coeff > 1:
+                    bad_coefficient_profiles += 1
+                ar, bs = residue_sets[r], residue_sets[s]
+                counts = histogram(ar, bs, a_coeff, b_coeff, level)
+                for t, count in enumerate(counts):
+                    if count:
+                        gamma = F(level * count, len(h_units) ** 2)
+                        minimum_gamma = gamma if minimum_gamma is None else min(minimum_gamma, gamma)
+                        for n in range(common * t, target_period, common * level):
+                            profile_mask[n] = 1
+                # Independent finite inflation: every coordinate has B unit lifts.
+                ell = b_coeff * level
+                lifted_ar = [a + k * level for a in ar for k in range(b_coeff)]
+                lifted_bs = [b + k * level for b in bs for k in range(b_coeff)]
+                assert all(gcd(a, ell) == 1 and state(a) == theta[r] for a in lifted_ar)
+                assert all(gcd(b, ell) == 1 and state(b) == theta[s] for b in lifted_bs)
+                if b_coeff <= 16:
+                    inflated = histogram(lifted_ar, lifted_bs, a_coeff, b_coeff, ell)
+                    assert all(inflated[t] == b_coeff * counts[t % level] for t in range(ell))
+                    inflation_target_checks += ell
+                    full_inflation_profiles += 1
+                else:
+                    # Complete affine lift-index fiber, valid for any base root:
+                    # shifting its carry merely rotates this whole histogram.
+                    fiber = [0] * b_coeff
+                    for i in range(b_coeff):
+                        for j in range(b_coeff):
+                            fiber[(a_coeff * i + b_coeff * j) % b_coeff] += 1
+                    assert fiber == [b_coeff] * b_coeff
+                    affine_lift_fiber_profiles += 1
+                    inflation_target_checks += b_coeff
+                if b_coeff > 1 and any(counts) and missing_lift_witness is None:
+                    t = next(t for t, count in enumerate(counts) if count)
+                    missing_lift_witness = [d, r, s, t, counts[t], b_coeff * counts[t]]
+                for q in representatives:
+                    qstate = state(q)
+                    alpha = tuple(x * y for x, y in zip(theta[r], qstate))
+                    beta = tuple(x * y for x, y in zip(theta[s], qstate))
+                    new_ar = [a for a in units if state(a) == alpha]
+                    new_bs = [b for b in units if state(b) == beta]
+                    assert {(q * a) % level for a in new_ar} == set(ar)
+                    assert {(q * b) % level for b in new_bs} == set(bs)
+                    directive = histogram(new_ar, bs, a_coeff * q, b_coeff, level)
+                    assert directive == counts
+                    common_counts = histogram(new_ar, new_bs, a_coeff, b_coeff, level)
+                    inverse = pow(q, -1, level)
+                    assert all(common_counts[(t * inverse) % level] == counts[t]
+                               for t in range(level))
+                    if frozen_state_witness is None:
+                        wrong = histogram(ar, bs, a_coeff * q, b_coeff, level)
+                        if wrong != counts:
+                            t = next(t for t in range(level) if wrong[t] != counts[t])
+                            frozen_state_witness = [d, r, s, q, t, counts[t], wrong[t]]
+                    transport_cases += 1
+                if prefix_label_witness is None:
+                    wrong = histogram(residue_sets[a_coeff], residue_sets[b_coeff],
+                                      a_coeff, b_coeff, level)
+                    if wrong != counts:
+                        t = next(t for t in range(level) if wrong[t] != counts[t])
+                        prefix_label_witness = [d, r, s, common, t, counts[t], wrong[t]]
+                profile_count += 1
+        assert profile_mask == direct_target_mask
+        bound = 4096
+        primitive = finite_global_primitive_flags(d, bound)
+        shadow = bytearray(bound + 1)
+        for n in range(1, bound + 1):
+            shadow[n] = positive_shadow_flag(d, n, bad_primes)
+            assert not primitive[n] or shadow[n]
+        hidden = [n for n in range(1, bound + 1) if shadow[n] and not primitive[n]]
+        if splitting_sign(d, 2) == 1 and split2_witness is None:
+            n = next(n for n in range(4, bound + 1, 4) if shadow[n])
+            split2_witness = [d, n]
+        if d == -20:
+            assert primitive[1] and not primitive[2]
+            nonprincipal_ramification_witness = [d, 1, 2]
+        records.append({'discriminant': d, 'principal_form': list(principal_form(d)),
+                        'level_L': level, 'target_period_16R2': target_period,
+                        'prefixes': prefixes, 'genus_state_count_on_H': len({state(a) for a in h_units}),
+                        'profiles': profile_count, 'both_bad_coefficients_profiles': bad_coefficient_profiles,
+                        'full_inflated_pair_profiles': full_inflation_profiles,
+                        'complete_affine_lift_fiber_profiles': affine_lift_fiber_profiles,
+                        'inflation_target_or_fiber_checks': inflation_target_checks,
+                        'state_transport_cases': transport_cases,
+                        'minimum_positive_Gamma': str(minimum_gamma),
+                        'primitive_local_target_residue_count': sum(direct_target_mask),
+                        'profile_target_mask_sha256': hashlib.sha256(profile_mask).hexdigest(),
+                        'local_coordinate_images': local_records,
+                        'global_coordinate_bound': bound, 'primitive_global_values': sum(primitive),
+                        'individual_Hilbert_shadow_values': sum(shadow),
+                        'hidden_individual_class_failure_count_in_bound': len(hidden),
+                        'first_hidden_failures': hidden[:10],
+                        'global_coordinate_flags_sha256': hashlib.sha256(primitive).hexdigest(),
+                        'individual_shadow_flags_sha256': hashlib.sha256(shadow).hexdigest()})
+    assert frozen_state_witness is not None and prefix_label_witness is not None
+    assert missing_lift_witness is not None and split2_witness is not None
+    assert nonprincipal_ramification_witness is not None
+    reject('froze the genus state under a directive',
+           frozen_state_witness[-2] == frozen_state_witness[-1], controls)
+    reject('replaced original prefix labels after cancelling their gcd',
+           prefix_label_witness[-2] == prefix_label_witness[-1], controls)
+    reject('omitted the B-fold inflation fiber',
+           missing_lift_witness[-2] == missing_lift_witness[-1], controls)
+    reject('truncated all individual split-2 valuations', split2_witness[1] % 4 != 0, controls)
+    reject('assumed a ramified prime has a principal generator', nonprincipal_ramification_witness is None, controls)
+    return {'fields': records, 'field_count': len(records),
+            'negative_controls': controls,
+            'corruption_witnesses': {'frozen_state': frozen_state_witness,
+                                    'cancelled_prefix_labels': prefix_label_witness,
+                                    'missing_inflation_factor': missing_lift_witness,
+                                    'unbounded_individual_split2': split2_witness,
+                                    'nonprincipal_ramification': nonprincipal_ramification_witness},
+            'scope': ('Complete stated local residue images and finite profile masks, plus bounded global '
+                      'coordinate-to-Hilbert-shadow inclusion. Higher local digits use exact finite Taylor '
+                      'lifting, independently challenged by full vector enumeration at moduli<=400. '
+                      'No ideal class labels or infinite prime-distribution assertion are inferred.')}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, help='Write the deterministic JSON receipt to this path.')
@@ -332,6 +697,7 @@ def main():
         'group_saturation': group_audit(),
         'mixed_local_roots': root_audit(),
         'Selberg_and_marking': selberg_and_marking_audit(),
+        'actual_fields': actual_field_audit(),
     }
     encoded = json.dumps(report, indent=2, sort_keys=True) + '\n'
     if args.output:

@@ -1,6 +1,6 @@
 {
   "algorithm": "Integral-pair enumeration, exact integer bitset witness sweep, exhaustive residual scan.",
-  "checker_sha256": "d044be0af168c7402b71e49d81b2d28f3e4bd9639fae755c55f885bc0df0a525",
+  "checker_sha256": "ea4803cd0f486523735ef43f2f0755452f705f39f8c765981407dd2967f07bea",
   "scans": [
     {
       "discriminant": -8,

@@ -87,6 +87,19 @@ Explicitly, for a finite generating vector w of M write w=Bw with
 every entry of B in m. The adjugate identity gives det(I-B)w=0;
 det(I-B) is one modulo m and hence a local unit. This proves M=0.
 
+This jet-to-ideal step is exactly classical Nakayama, in the finite-module
+form of [Stacks, Lemma 10.20.1(2), tag 00DV](https://stacks.math.columbia.edu/tag/00DV),
+applied to the displayed M in the local ring. The adjugate proof above
+is its determinant proof. Separately, if the full moment ideal in a
+finite coefficient polynomial ring has radical m, then
+[Hilbert Nullstellensatz, tag 00FS](https://stacks.math.columbia.edu/tag/00FS),
+[Noetherianity, tag 00FM](https://stacks.math.columbia.edu/tag/00FM), and
+[the radical-power lemma, tag 00IM](https://stacks.math.columbia.edu/tag/00IM)
+give some finite prefix containing some power of m. They do not select
+N or nu, certify a chosen jet identity, or provide the mixed-degree
+bound (3). Those inputs and the intervening memberships remain the
+specific content of the certificate here.
+
 To verify (8), retain for EVERY parameter monomial u^alpha of total
 degree nu a polynomial identity
 

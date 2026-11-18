@@ -10,6 +10,13 @@ python3 research/arithmetic/verify_primitive_norm_minus56.py \
 """
 from __future__ import annotations
 
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
+
 import argparse
 from array import array
 from collections import Counter

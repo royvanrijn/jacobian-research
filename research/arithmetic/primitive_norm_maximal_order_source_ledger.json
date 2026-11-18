@@ -1,0 +1,204 @@
+{
+  "title": "All maximal imaginary quadratic orders: sharp primitive value counts and uniform class error",
+  "date": "2026-11-18",
+  "proof": {
+    "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
+    "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+    "statements": [
+      "MaximalOrderValueCounts",
+      "ClassErrorComparison",
+      "HilbertGenusKernel",
+      "ClassSaturation",
+      "MixedPrimeSquareSieve",
+      "FiniteGenusFilter",
+      "ShadowProfileCoverage",
+      "GenusShadowCounts"
+    ]
+  },
+  "scope": {
+    "orders": "Every fixed maximal imaginary quadratic order, arbitrary finite ideal class group",
+    "counts": "Ordered positive numerical value pairs, unweighted",
+    "target_uniformity": "Every sufficiently large pair-primitive locally admissible target; all permitted target valuations",
+    "class_error": "Uniform everyN>=3, error O_K,delta(N J_K(N)/log^(1+delta)N) for any0<delta<1/h when2Gnontrivial; zeroerror if2G=0",
+    "genus_profiles": "Odd ramified productR, periodL=8R and local target modulus16R^2; originalprefixlabels retained aftercommon-prefix cancellation",
+    "separate_open_scope": [
+      "Conductors/nonmaximal orders",
+      "Uniformity in varying discriminants",
+      "Numerical cutoffs",
+      "Exact global exceptions",
+      "Unweighted leading asymptotic",
+      "Mixed fields"
+    ]
+  },
+  "primary_sources": [
+    {
+      "key": "milne_cft403_norms",
+      "author": "J.S.Milne",
+      "title": "Class Field Theory",
+      "version": "v4.03,6August2020",
+      "url": "https://www.jmilne.org/math/CourseNotes/CFT.pdf",
+      "local_path": "sources/milne-cft403.pdf",
+      "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+      "role": "mathematical_input",
+      "statements_used": [
+        "IIITheorem4.4(d),printedp113/PDFp122: Hilbert-symbol local norm criterion and multiplicativity",
+        "VIIITheorem3.1,printedp234/PDFp243: Hasse norm theorem for cyclic extensions, applied only to K/Q quadratic",
+        "VIIIprintedp248/PDFp257: explicit dyadic Hilbert formula; global Hilbert reciprocity as recalled in the quadratic discussion",
+        "VIIITheorem7.2 andVIProposition4.5/Corollary4.6: degree-one primes in each class, used for nonempty finite genus states"
+      ],
+      "inspection_scope": "Actual retained statements/formulas and the norm-one-ideal application inspected internally; no independent reconstruction of the deep class-field proofs."
+    },
+    {
+      "key": "bourgain_fuchs_2011",
+      "author": "J.Bourgain and E.Fuchs",
+      "title": "On representation of integers by binary quadratic forms",
+      "version": "arXiv:1105.3698v2,23May2011",
+      "url": "https://arxiv.org/pdf/1105.3698v2",
+      "local_path": "sources/bourgain-fuchs-1105.3698v2.pdf",
+      "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9",
+      "role": "mathematical_input_and_historical_comparison",
+      "statements_used": [
+        "Section5,Lemma2,displayed5.2,PDFp15: fixed form-class prime-count estimate; nonambiguous inverse class density1/h",
+        "Partial summation of the fixed-discriminant case gives sum_(q<=y,q inOmega)1/q=(1/h)loglogy+O_K(1)",
+        "Theorems2-prime/3-prime in introduction concern squarefree within-genus failures and fixed translated primes; not the current unweighted two-norm convolution"
+      ],
+      "inspection_scope": "Actual PDF Lemma2/(5.2), definitions and introduction/theorem hypotheses read; retained exact v2. Deep Landau/Blomer prime theorem imported; no claim that the present comparison is printed verbatim."
+    },
+    {
+      "key": "williams_1974",
+      "author": "Kenneth S.Williams",
+      "title": "Mertens' Theorem for Arithmetic Progressions",
+      "version": "J.NumberTheory6(1974),353-359",
+      "url": "https://people.math.carleton.ca/~williams/papers/pdf/057.pdf",
+      "local_path": "sources/williams-mertens-ap-1974.pdf",
+      "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+      "role": "mathematical_input",
+      "statements_used": [
+        "Theorem1,printedp356/PDFp4,for any fixed reduced residue-class modulus. Multiply the odd inert classes to obtain product_(q<=y,oddinert)(1-2/q)^-1 comparable_K tology. Target-root correction is proved separately and exactly inM.15."
+      ],
+      "inspection_scope": "Exact fixed-modulus primary statement already inspected; applied at fixed field conductor, not in a varying-modulus claim."
+    },
+    {
+      "key": "bglm_v5",
+      "author": "V.Blomer,L.Grimmelt,J.Li and S.L.Rydin Myerson",
+      "title": "Additive problems with almost prime squares",
+      "version": "arXiv:2111.01601v5,21February2023",
+      "url": "https://arxiv.org/pdf/2111.01601v5",
+      "local_path": "sources/blomer-grimmelt-li-rydin-myerson-2111.01601v5.pdf",
+      "sha256": "6cb425e37285b1a09aeeade57210948f885d40f1d4d7b337671cfbd0a4a4711f",
+      "role": "mathematical_input_via_existing_fixed_period_proof",
+      "statements_used": [
+        "Proposition5.1,printedp15: exact signed dispersion hypotheses; no condition(a2,c)=1",
+        "For the fixed-bad-coefficient extension a2=A u j c0 andc=BL, varyingq andshortn areBL-units, preserving(q,a1a2d)=1 and(n,a2)=1. The size budget survives becauseA isfixed."
+      ],
+      "inspection_scope": "Actual proposition and current parameter substitution read; inherited deep dispersion proof is imported, and scalar phases/signed modulus structure are retained."
+    },
+    {
+      "key": "bredikhin_linnik_1966",
+      "author": "B.M.Bredikhin and Yu.V.Linnik",
+      "title": "Asymptotic behavior and ergodic properties of solutions of the generalized Hardy-Littlewood equation",
+      "version": "Mat.Sb.71(113):2(1966),145-161",
+      "url": "https://www.mathnet.ru/eng/sm4257",
+      "local_path": "sources/bredikhin-linnik-ergodic-1966.pdf",
+      "sha256": "e2702cd337af5fffefa22391102b50903c7d737191ac243fef9c5cbdb30899c0",
+      "role": "historical_context",
+      "statements_used": [
+        "Introductionpp145-147 andLemma5pp157-160: class mixing using sufficiently many degree-one prime ideals and conjugation at exact exponentone",
+        "Formal A-C results concern prime+norm withideal/coordinate weights; broader binary-form sequences mentioned in introduction do not provide the present unweighted pointwise theorem."
+      ],
+      "inspection_scope": "Actual retained original and exact scope inspected. Credited as a classical strategy; no first-result or exhaustive novelty claim."
+    }
+  ],
+  "canonical_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
+      "sha256": "b86c23b42944cd5831cc24cab9cd60c45525dd8a8172209f20088c2a48165888",
+      "locator": "Maximal-order primitive norm/ideal factorization and local image/lifting proofs"
+    },
+    {
+      "path": "ASYMMETRIC_SUBGROUP_SPLITTING.md",
+      "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+      "locator": "Quadratic-kernel weighted family,H9-H18 and positive section6 unweighting, coefficient/gcd hierarchy"
+    },
+    {
+      "path": "ASYMMETRIC_FIXED_MODULUS_THEORY.md",
+      "sha256": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+      "locator": "FixedPeriodBoxesGeneral: fixed-period complete-correlation transfer"
+    },
+    {
+      "path": "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+      "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+      "locator": "CN2Filter: first-variable periodic genus filter and sign transport through unweighting"
+    },
+    {
+      "path": "PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+      "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+      "locator": "CN4.9-CN4.13 finite-state genus transfer and CN4ClassError as the model; present proof extends it beyond C4"
+    },
+    {
+      "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
+      "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+      "locator": "Coordinate/value distinction and existing generic sharp upper bound; not used to infer the new lower bound"
+    }
+  ],
+  "checker": {
+    "path": "verify_primitive_norm_maximal_orders.py",
+    "sha256": "bbb3cc1b3ed3c334c8d8cf5f1cb7fd418dc0b09fcaae6a8666451dc899271855",
+    "receipt": "primitive_norm_maximal_order_checks.json",
+    "receipt_sha256": "f8ba04698d5966a0603aef98b94a1a26ded1f1be43187be5fdeb2c42e031bc68",
+    "command": "python3 research/arithmetic/verify_primitive_norm_maximal_orders.py --output research/arithmetic/primitive_norm_maximal_order_checks.json",
+    "scope": "Exact finite domains in receipt; finite algebra/normalization evidence only. Infinite class-prime, Hasse norm and analytic estimates are imported, not proved by computation.",
+    "internal_execution": "Full canonical checker replayed after the explicit assertion-runtime guard was added; all mathematical receipt fields are unchanged. Current checker bytes remained stable throughout the replay. This execution is internal, not external-independent verification.",
+    "finite_domains": "8 abstract groups; 16 imaginary quadratic fields including -164,-260,-231; exact mixed-modulus CRT, rational Selberg minimization, finite random marking, full finite local/profile masks and genus-state transport. Exact counts, moduli, bounds and mutation witnesses are in the receipt.",
+    "environment": {
+      "python": "3.12.3",
+      "dependencies": "Python standard library only",
+      "platform": "Ubuntu24.04 underWSL"
+    },
+    "assertion_mode_guard": "Current bytes add only an assertion-mode guard to the prior frozen checker. Root verified python3 -O rejects before output; default-mode replay remains byte-identical to current retained receipt. The only receipt change from the earlier replay is its self-source hash."
+  },
+  "internal_review": {
+    "arithmetic": "Complete norm-one ideal/genus kernel, primitive local valuation argument, explicit Hilbert characters and finiteprefix CRT coverage read by root and separate internal reviewers. Actual final canonical sections1,2,4,6 andmain scope reread; direct interval upper enlargement also checked.",
+    "class_error": "Complete exact-prime-square Selberg optimization, random-marking majorant, targetfactor and endpoint budget reconstructed internally; M.15 corrected to odd inert products. Complete direct-a version in actual canonical file reread independently; no coefficient/prefix summation is needed for this upper bound.",
+    "genus_transfer": "Actual BGLM coefficient conditions, all-state weighted family, finite normalization, coefficient/gcd state maps and positive unweighting reread internally. Actual canonical section5 andits finalcombination reviewed against the primary BGLM statement and existing positive-restoration proof.",
+    "assurance": "Internal written/source audits and finite replay only; no external human review or formal verification."
+  },
+  "historical_assessment": "Class mixing is classical in Bredikhin-Linnik and within-genus exceptional-integer sieving is closely related to Bourgain-Fuchs. This is an explicit all-target unweighted reconstruction/extension using existing analytic inputs. The exact theorem has not received a complete historical-priority audit; no originality certificate.",
+  "completion_audit": [
+    {
+      "requirement": "Every maximal order and arbitrary finite class group",
+      "evidence": "MaximalOrderValueCounts M.1-M.4; HilbertGenusKernel M.5-M.7; no oddness/cyclicity restriction; conductor scope explicitly excluded"
+    },
+    {
+      "requirement": "Generic deficiency contribution is lower order than the sharp count",
+      "evidence": "ClassSaturation M.8-M.9 and MixedPrimeSquareSieve M.11-M.17; every0<delta<1/h, allN>=3 andtargetvaluations; if2G=0 exactzeroerror"
+    },
+    {
+      "requirement": "Genus-shadow convolution has expected lower bound using existing fixed-period theorem",
+      "evidence": "FiniteGenusFilter M.23-M.26 supplies fullstate weightedandpositiveunweighted family; ShadowProfileCoverage M.27-M.28 coversalllocaltargets; GenusShadowCounts M.29"
+    },
+    {
+      "requirement": "No bespoke finite absorber for each class group",
+      "evidence": "Generic use of every nonambiguous inverseclasspair withm_g=ord(2g)-1; saturation of actualprimefactorsofvalues, notreserved fixedpools"
+    },
+    {
+      "requirement": "Actual finite verification with invalid variants rejected",
+      "evidence": "Canonicalchecker internallyreplayed byte-identically;16fieldlocal/profilemasks,8abstractgroups, exactrationalmixedsieve and14corruptioncontrols. Domains authoritative inreceipt; no infinite inference fromfinite tests"
+    },
+    {
+      "requirement": "Closest primary inputs and antecedents inspected",
+      "evidence": "MilneCFT actualnormtheorem/Hilbertformula statements; BFv2Lemma2(5.2) primeclassinput andscope; actualBGLMv5coefficienthypotheses; Bredikhin-Linnikclassmixing attributed. Historicalpriorityunresolved."
+    }
+  ],
+  "runtime_contract": {
+    "required": "Python assertions enabled (__debug__ is True).",
+    "optimized_execution": "Rejected by an explicit module-level RuntimeError before certificate computation/output.",
+    "rejected_modes": [
+      "-O",
+      "-OO",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "regression_test": "../tests/test_arithmetic_certificate_runtime.py",
+    "assurance": "Runtime failure is explicit; this does not upgrade the finite mathematical scope, independent replay, external review or formal assurance."
+  }
+}

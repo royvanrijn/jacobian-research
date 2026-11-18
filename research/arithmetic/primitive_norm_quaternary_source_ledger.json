@@ -790,7 +790,7 @@
     },
     "paper_2": {
       "title": "Primitive Norm Sums Beyond Class Number One",
-      "main_scope": "Sharp unweighted NJ/logN ordered value counts for the proved nontrivial-class-group families, centered on OddClassCounts",
+      "main_scope": "Sharp unweighted NJ/logN counts for every fixed maximal imaginary quadratic order with arbitrary class group, and pointwise lower-order class-error comparison; earlier odd-class and -20/-23/-56 results are special-case precursors.",
       "odd_class_scope": "Maximal orders D=-p, p>=7 prime3mod4, arbitrary occurring odd abelian class group; not all nonmaximal odd ring class groups",
       "examples": [
         "D=-20",
@@ -798,6 +798,7 @@
         "D=-56"
       ],
       "canonical_sources": [
+        "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
         "PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
         "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
         "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
@@ -808,7 +809,7 @@
     "next_target": {
       "node": "GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS",
       "status": "open",
-      "scope": "Every fixed imaginary quadratic order, arbitrary even class group and conductor; sharp unweighted ordered norm-value counts on every sufficiently large primitive-local target, uniform in target valuations",
+      "scope": "Complete the all-order sharp unweighted theorem at conductor primes/nonmaximal orders. Maximal orders and arbitrary even class groups are now proved by MaximalOrderValueCounts.",
       "missing_estimate": "Matching NJ_D/logN lower bound; generic sharp upper bound and log^(log4+epsilon) lower bound already available",
       "local_factor_obligation": "Derive actual conductor/bad-prime factors; identify any necessary additional target factor rather than assuming bounded ramified prefixes",
       "stronger_separate_tasks": [

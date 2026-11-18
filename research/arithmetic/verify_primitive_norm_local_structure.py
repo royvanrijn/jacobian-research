@@ -5,6 +5,13 @@ The unrestricted local results use the note's Hensel arguments. This checker
 verifies finite residue formulas and bounded nonrepresentation certificates.
 Run from the repository root with Python 3 (standard library only).
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 from collections import Counter
 from fractions import Fraction
 from hashlib import sha256

@@ -1,7 +1,7 @@
 {
   "scope": "Finite exact arithmetic checks; unrestricted local claims require the lifting proof.",
   "python": "3.12.3",
-  "checker_sha256": "bee4debd2e826e8714253bdca6894c627553a0e3cdb7efd2e04b5bd6eb50d389",
+  "checker_sha256": "6fea8c8ebd73575e990aa1ab2f903324444c80de6ecb5558f8960c2b6e196ab6",
   "good_prime_density_cases": 5378,
   "dyadic_tables": [
     {
