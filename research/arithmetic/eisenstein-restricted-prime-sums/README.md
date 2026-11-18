@@ -12,6 +12,7 @@ scope; it is not a new calculation or an assurance upgrade.
 - [Power-shrinking Eisenstein windows, with an explicit onset](../EISENSTEIN_POWER_SHRINKING_WINDOWS.md).
 - [Sifted angular distribution and the direct finite-polynomial balance proof](../EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md).
 - [Binary sums with prescribed prime factors](../BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md).
+- [Obstructions to very narrow central windows](../PRESCRIBED_PRIME_CENTRAL_GAPS.md).
 - [Semigroup-scale density one](../PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md).
 - [Binary variance and the remaining thin-window energy problem](../PRESCRIBED_PRIME_BINARY_VARIANCE.md).
 - [Simultaneous Gaussian--Eisenstein case study](../SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md).
@@ -22,10 +23,14 @@ whose prime divisors are `1 mod 3`, including `1`: `A+A` is precisely the
 positive `2 mod 6` class, and `A+(3·A)` is precisely the positive `4 mod 6`
 class. Its primitive-norm and higher-sumset consequences retain their original
 scope. The current angular note proves eventual balance. The separate
-power-window proof now gives difference at most `n^(99/100)` in both ordinary
-and mixed cases for every admissible `n >= 2^(2^411)`. Its explicit onset leaves
-an enormous gap above the existing finite certificate, so the complete balanced
-exception lists are still unresolved. These are research notes; the manuscript
+power-window proof gives every fixed difference exponent `theta > 2/3`, in
+both ordinary and mixed cases, with an explicit onset formula and at least
+`n^(theta-1) R_o(n)/20` coordinate witnesses per orientation. For example,
+difference at most `n^(3/4)` holds for every admissible `n >= 2^(2^40)`.
+The exact triangle expansion and central-annulus tail yield this range;
+the positive Jackson--Parseval construction also verifies the weaker `theta > 6/7`
+route. The explicit onsets leave an enormous gap above the finite certificate,
+so the complete balanced exception lists are still unresolved. These are research notes; the manuscript
 has not been expanded to include the new power-window theorem.
 
 For the simultaneous modulus-12 restriction, the new pointwise note proves

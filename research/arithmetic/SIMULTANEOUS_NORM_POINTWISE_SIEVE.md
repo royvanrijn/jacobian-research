@@ -463,10 +463,10 @@ with absolute \(0<c_1\le c_2<\infty\) for all admissible targets.
 This proves the asserted local normalization. It does not transfer the
 local densities to any global integral-point count.
 
-## A uniform bound on a common deep valuation
+## Uniform truncation of deep valuations
 
-There is a further exact truncation bound. For a fixed forbidden \(p\)
-and integer \(L\ge1\), let \(D_{p,L}(N)\) count coordinate witnesses
+First, an exact rescaling controls a common deep valuation. For a forbidden
+\(p\) and integer \(L\ge1\), let \(D_{p,L}(N)\) count coordinate witnesses
 for which \(p^{2L}\mid a,b\). This count is zero unless
 \(p^{2L}\mid N\). When the target is divisible by that power, (Eul) gives
 
@@ -477,19 +477,278 @@ for which \(p^{2L}\mid a,b\). This count is zero unless
 \]
 
 For \(p\equiv11\pmod{12}\), one has the exact identity
-\(h(p^{2L}m)=h(m)\).
-The global upper bound in (U), with its constant enlarged to cover bounded
-targets, therefore gives
+\(h(p^{2L}m)=h(m)\). The global upper bound in (U), with its constant
+enlarged to cover bounded targets, therefore gives
 
 \[
  D_{p,L}(N)\ll(2L+1)^2\frac N{p^{2L}}\mathcal T(N).
  \tag{V2}
 \]
 
-Under the natural lower bound in (H*), this is a uniformly vanishing
-relative contribution as \(L\to\infty\). This statement concerns a
-common deep valuation of the two component values. It is not a proof of
-fixed-prime equidistribution or of an unrestricted finite-level reduction.
+An individual component can also have a deep valuation while the other does
+not. The following bound controls this additional possibility uniformly.
+Let \(\widetilde D_{p,L}(N)\) count witnesses with
+\(p^{2L}\mid a\) **or** \(p^{2L}\mid b\).
+
+**Deep-component bound.** With an absolute implied constant, independent of
+\(p,L,N\),
+
+\[
+ \widetilde D_{p,L}(N)
+ \ll(2L+1)^2\frac N{p^{2L}}\mathcal T(N)
+ \qquad(N\ge p^{8L}).
+ \tag{V3}
+\]
+
+This includes every target valuation, including \(v_p(N)\) tending to
+infinity. It is an upper bound, not an equidistribution assertion.
+
+To prove it, first extend the primitive dilated correlation (C) to every
+\(k=p^{2j}\), not just \(p^2\): if \(p\nmid M\),
+\(M\equiv2\pmod{12}\), \(j\ge1\), and \(p^{2j}\le M^{1/4}\), then
+
+\[
+ \sum_{1\le m<M/p^{2j}}h(m)h(M-p^{2j}m)
+ \ll \frac M{p^{2j}}\mathcal T(M).
+ \tag{V4}
+\]
+
+Every step of the proof of (C) is uniform in this exponent. The polynomial
+\(t(M-p^{2j}t)\) remains primitive with coefficient norm \(\ll M\).
+At its exceptional leading-coefficient prime, the second factor is always
+a unit and \(h(p)=0\); the calculation \(E_p=1+O(p^{-2})\) uses only
+\(p\mid k\), not the exponent of \(p\) in \(k\). The endpoint bounds
+and interval parameters use only \(k\le M^{1/4}\). Thus the same constant
+works for all \(p,j,M\). Bounded targets can again be absorbed by increasing
+that constant.
+
+Put \(K=2L\) and \(r=v_p(N)\). If \(r\ge K\), a component divisible
+by \(p^K\) forces the other to be divisible by the same power, so (V2)
+applies. If \(r<K\) is odd, no such witness exists: a deep component
+would force the other component to have the forbidden odd valuation \(r\).
+For the remaining case \(r<K\) even, write
+
+\[
+ a=p^K m,\qquad b=p^r(M-p^{K-r}m),\qquad M=N/p^r,
+ \qquad p\nmid M.
+ \tag{V5}
+\]
+
+The second parenthesis is a unit. For \(p\equiv5,7\pmod{12}\), its
+weight is therefore exactly
+\(h(b)=(r+1)h(M-p^{K-r}m)\), while
+\(h(a)\le(K+1)h(m)\). For \(p\equiv11\pmod{12}\), both factors
+are one. The hypothesis \(N\ge p^{4K}\) ensures
+
+\[
+ p^{K-r}\le (N/p^r)^{1/4}=M^{1/4},
+\]
+
+because \(N\ge p^{4K-3r}\) is sufficient. Since \(K-r\) is even,
+(V4) bounds the count in (V5) by
+
+\[
+ \ll(K+1)(r+1)\frac{M}{p^{K-r}}\mathcal T(M)
+ \le(K+1)^2\frac N{p^K}\mathcal T(N).
+\]
+
+Reversing the two components gives the same bound for the other event.
+This proves (V3), with constants uniform in all parameters. No extra factor
+of \(L\) is introduced by the target valuation.
+
+### A precise finite-stratum sufficient condition
+
+For a fixed forbidden \(p\), one can now remove the unbounded valuation
+from the global marginal problem, at a uniformly small cost. The remaining
+finite-stratum global correlations are still open.
+
+Fix \(K=2L\), and let \(R_I^{<K}(N)\) and \(B_{p,I}^{<K}(N)\) be
+\(R_I(N),B_{p,I}(N)\) restricted to \(v_p(a),v_p(b)<K\). With the
+same restriction on the local integral, put
+
+\[
+ f_{p,K}(e)=f_p(e)\mathbf1_{e<K},\qquad
+ I_{p,r}^{<K}=\int_{\mathbb Z_p}
+ f_{p,K}(v_p(a))f_{p,K}(v_p(N-a))\,da,
+\]
+
+\[
+ \beta_p^{<K}(N)=1-\frac{g_r}{I_{p,r}^{<K}},\qquad
+ g_r=\begin{cases}1-2/p,&r=0,\\1-1/p,&r\ge1.\end{cases}
+ \tag{F1}
+\]
+
+The function \(f_p\) here is the forbidden-prime coefficient in (Eul):
+it is \((e+1)\mathbf1_{2\mid e}\) for \(p\equiv5,7\pmod{12}\),
+and \(\mathbf1_{2\mid e}\) for \(p\equiv11\pmod{12}\).
+Both local denominators contain the unit--unit contribution \(g_r\),
+which is at least \(3/5\).
+
+Formula (L3), with \(f_p\) replaced by \(f_{p,K}\), shows that (F1)
+depends only on the finite list of target strata
+
+\[
+ r=0,1,\ldots,K-1,\qquad r\ge K.
+ \tag{F2}
+\]
+
+In the last stratum its denominator is simply
+\((1-p^{-1})\sum_{e<K} f_p(e)^2p^{-e}\); in particular it does not
+require an estimate for each individual deeper target valuation.
+
+The corresponding local truncation error is uniformly bounded by
+
+\[
+ 0\le\beta_p(N)-\beta_p^{<K}(N)
+ \ll(K+1)^2p^{-K}.
+ \tag{F3}
+\]
+
+For completeness, if \(r<K\) is odd, the removed local contribution is
+zero. If \(r<K\) is even, exactly one component can have valuation at
+least \(K\), and the removed contribution to \(I_{p,r}\) is
+
+\[
+ 2f_p(r)(1-p^{-1})\sum_{e\ge K}f_p(e)p^{-e}
+ \ll(K+1)^2p^{-K}.
+\]
+
+If \(r\ge K\), the two deep events coincide. Cauchy--Schwarz on the
+ball \(p^K\mathbb Z_p\), preserved by \(a\mapsto N-a\), bounds their
+contribution by
+
+\[
+ (1-p^{-1})\sum_{e\ge K}f_p(e)^2p^{-e}
+ \ll(K+1)^2p^{-K}.
+\]
+
+The constants are absolute for \(p\ge5\). The unit--unit contribution
+is unchanged, so substituting these bounds in (F1), with denominators at
+least \(3/5\), proves (F3).
+
+Suppose the natural lower bound \(R_I(N)\ge cN\mathcal T(N)\) in
+(H*) holds. Here \(I\) is unrestricted or a fixed macroscopic balance
+interval, and \(c>0\) is fixed. For all sufficiently large \(L\), (V3)
+then implies that \(R_I^{<K}(N)>0\) for sufficiently large \(N\) and
+
+\[
+ \left|\frac{B_{p,I}(N)}{R_I(N)}-
+       \frac{B_{p,I}^{<K}(N)}{R_I^{<K}(N)}\right|
+ \ll_c(K+1)^2p^{-K}.
+ \tag{F4}
+\]
+
+Indeed, let \(A\) be the number removed from \(R_I\). Every removed
+point is also bad at \(p\), so the two truncated counts are \(R_I-A\)
+and \(B_{p,I}-A\). Their ratio difference is nonnegative and at most
+\(A/R_I\), since
+
+\[
+ \frac{B_{p,I}}{R_I}-\frac{B_{p,I}-A}{R_I-A}
+ =\frac{A(R_I-B_{p,I})}{R_I(R_I-A)}\le\frac A{R_I}.
+\]
+
+The unrestricted bound (V3) dominates \(A\), proving (F4) uniformly in
+the target valuation once \(N\ge p^{4K}\).
+
+Consequently the following is a sufficient, finite-stratum replacement for
+the fixed-prime marginal input in (H*): for each fixed sufficiently large
+\(L\), require
+
+\[
+ \frac{B_{p,I}^{<2L}(N)}{R_I^{<2L}(N)}
+       -\beta_p^{<2L}(N)\longrightarrow0
+ \tag{F5}
+\]
+
+as \(N\to\infty\) in **each** of the finitely many strata (F2).
+The final stratum includes every \(N\) divisible by \(p^{2L}\), with
+no upper bound on \(v_p(N)\). Limits along all integers in each such
+stratum, rather than just along a selected sequence, are required. A finite
+number of these limits is uniform over their union. Combining (F3)--(F5)
+and then letting \(L\to\infty\) proves the original fixed-prime marginal
+limit in (H*). It suffices to establish (F5) for an unbounded sequence of
+fixed \(L\). The order of limits is first \(N\to\infty\), then
+\(L\to\infty\).
+
+This reduction leaves a definite global problem. Define
+
+\[
+ C_{i,j,I}(N)=
+ \sum_{\substack{p^{2i}u+p^{2j}v=N\\p\nmid uv\\
+                 (p^{2i}u,p^{2j}v)\text{ satisfies }I}}
+ h(u)h(v),\qquad u,v>0.
+\]
+
+Then
+
+\[
+ R_I^{<2L}(N)=576\sum_{0\le i,j<L}
+ f_p(2i)f_p(2j)C_{i,j,I}(N),
+ \tag{F6}
+\]
+
+and \(B_{p,I}^{<2L}\) is the same sum with the term \(i=j=0\)
+omitted. Thus each fixed truncation is a finite family of binary weighted
+correlations with fixed coefficients and unit restrictions. The pointwise
+relative estimates needed for these correlations are not supplied by
+Henriot's upper bound, local densities or the deep-valuation estimate.
+In particular, (F5) remains an open global hypothesis; no fixed-prime
+marginal is proved here beyond the already exact zero at \(v_p(N)=1\).
+
+### What remains at the first fixed primes
+
+At \(p=11\), and more generally \(p\equiv11\pmod{12}\), the local
+coefficient is one on even valuations. Summing (L3) gives, for every
+\(r\ge0\),
+
+\[
+ I_{p,r}=\frac{1-p^{-r-1}}{1+p^{-1}}.
+\]
+
+For \(r\ge1\), substituting the unit--unit contribution into (F1) without
+truncation yields
+
+\[
+ \beta_p(N)=\frac{p^{-2}-p^{-r-1}}{1-p^{-r-1}}.
+ \tag{F7}
+\]
+
+Since the exact unrestricted bad count is \(B_p(N)=R(N/p^2)\) whenever
+\(r\ge2\), the desired marginal limit requires the pointwise relation
+
+\[
+ \frac{R(N/p^2)}{R(N)}
+ -\frac{p^{-2}-p^{-r-1}}{1-p^{-r-1}}\longrightarrow0.
+ \tag{F8}
+\]
+
+In particular, along targets with \(v_p(N)\to\infty\), it requires
+\(R(N/p^2)/R(N)\to p^{-2}\). Neither the local formula nor the matching
+upper and conjectural lower bounds establish this dilation regularity.
+
+At \(p=5,7\), and more generally \(p\equiv5,7\pmod{12}\), define
+
+\[
+ u_p(m)=h(m/p^e)\mathbf1_{2\mid e},\qquad e=v_p(m).
+\]
+
+Then \(h(p^2m)=h(m)+2u_p(m)\) exactly. For positive \(M\), write
+\(C_{f,g}(M)=\sum_{a+b=M}f(a)g(b)\), with positive summands and no
+balance restriction. Swapping the summands gives
+\(C_{h,u_p}=C_{u_p,h}\). When \(p^2\mid N\), exact rescaling therefore
+gives
+
+\[
+ B_p(N)=576\left\{
+ C_{h,h}(N/p^2)+4C_{h,u_p}(N/p^2)
+                    +4C_{u_p,u_p}(N/p^2)\right\}.
+ \tag{F9}
+\]
+
+These identities expose the unresolved issue already at the first fixed
+primes: a pointwise dilation law at \(11\), and additional pointwise binary
+correlations at \(5,7\). They supply no asymptotic for those correlations.
 
 ## Centered power windows: the same criterion for theta greater than one half
 
@@ -552,9 +811,10 @@ from this upper-bound argument alone.
 ## What is proved and what remains
 
 The unconditional results are (U), the fixed-cutoff tail (T), the local
-comparison (L11), the common-valuation bound (V2), and the centered-window
-upper and tail bounds (PU)--(PT). The conditional implication (H*) to (G)
-is proved as well. No pointwise lower bound for \(R_I\) or \(R_H\), and no
+comparison (L11), the common- and individual-valuation bounds (V2)--(V3),
+and the centered-window upper and tail bounds (PU)--(PT). The conditional implication (H*) to (G)
+is proved as well, as is the conditional finite-stratum reduction
+(F1)--(F6). No pointwise lower bound for \(R_I\) or \(R_H\), and no
 fixed-prime marginal limit, is supplied here. Those are indispensable open
 global inputs.
 

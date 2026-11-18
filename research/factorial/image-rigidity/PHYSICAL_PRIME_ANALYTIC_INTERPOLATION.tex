@@ -300,6 +300,113 @@ The final trace test follows from \texttt{lem:cubic} of the
 primitive moment pair note.
 \end{proof}
 
+\begin{theorem}[An Eisenstein residue test]\label{thm:eisenstein}
+Let $p\ge5$, and let $y_0$ be an unramified integral lift of a unit
+residue of $\bar W_n$ with multiplicity $2\le e\le p-3$.
+Suppose $v_p(W_n(y_0))=1$. Write $a_j$ for the coefficients of
+$W_n(y_0+X)/(y_0+X)^{n+1}$ as in \textup{(8)}.
+If $p\ne 2e+1$ or $a_{p-1}$ is divisible by $p$, then $H_n$ has
+no multiple root reducing to $\bar y_0$.
+If $p\nmid n$, multiplicity at least $2p$ in $\bar H_n$ suffices
+for the divisibility condition.
+\end{theorem}
+\begin{proof}
+Suppose $Y=y_0+Z$ is such a multiple root, hence a root of $W_n$.
+Set $w_j=[X^j]W_n(y_0+X)$. Then $w_e$ is a unit and
+$w_j$ is divisible by $p$ for $j<e$. The bound $v_p(Z)\ge 1/e$
+from Theorem~\ref{thm:residue-multiplicity} is an equality:
+otherwise $w_0$ would be uniquely least in $W_n(Y)$.
+Reducing $W_n(Y)/p$ in the residue field of the root gives
+\[
+       \overline{w_e Z^e/p}=-\overline{w_0/p}.
+\]
+Also $a_e\equiv w_e y_0^{-n-1}\pmod p$ and
+$a_0=w_0y_0^{-n-1}$. Thus the terms with $k=1,e+1$ in the
+sum in \textup{(8)} satisfy
+\[
+ \overline{\frac{a_0Z+a_eZ^{e+1}/(e+1)}{pZ}}
+    =\overline{y_0^{-n-1}(w_0/p)\frac{e}{e+1}}\ne0.
+\]
+Together they have valuation $1+1/e$.
+
+All the other terms except possibly $k=p$ have strictly greater
+valuation. For $2\le k\le e$, use $v_p(a_{k-1})\ge1$.
+For $k>e+1$ with $p\nmid k$, use $k/e>1+1/e$.
+For $k\ge 2p$ with $v_p(k)=j\ge1$, use
+$k/e-j>1+1/e$. When $j=1$ this follows from $2p>2e+1$.
+When $j\ge2$, $p^j-1>(j+1)e$ follows from
+$1+p+\cdots+p^{j-1}\ge j+1$ and $e<p-1$.
+
+For $k=p$ the valuation is at least $p/e>1+1/e$ if $a_{p-1}$
+is divisible by $p$. If $a_{p-1}$ is a unit, its valuation
+is $p/e-1$, which is nonintegral since $2\le e<p$.
+It can equal $1+1/e$ only if $p=2e+1$.
+Under the stated hypotheses the least valuation of the sum
+is therefore nonintegral, contradicting \textup{(8)} over
+the unramified field.
+
+Finally, differentiation of $H_n(y_0+X)/(y_0+X)^n$ as in
+Theorem~\ref{thm:third-precision} gives
+\[
+ [X^p]\frac{H_n(y_0+X)}{(y_0+X)^n}=-n a_{p-1}.
+\]
+If the reduction of $H_n$ vanishes to order at least $2p$,
+the left side is divisible by $p$. For $p\nmid n$ this
+implies the claimed divisibility of $a_{p-1}$.
+\end{proof}
+
+\begin{corollary}[The first 528 consecutive pairs at gap six]
+\label{cor:bounded-seven}
+For every terminal index $2\le n\le529$, every nonzero complex
+ordinary factorial phase $X(A+BX^6)$ has a nonzero moment in
+the pair of orders $n-1,n$.
+\end{corollary}
+\begin{proof}
+If one of $A,B$ vanishes, the phase is a nonzero monomial and
+both factorial moments are nonzero. For $AB\ne0$, use the
+primitive pair with $p=7$. Its common roots are units by \texttt{cor:critical} of
+the primitive moment pair. Their residues are among the roots of
+$\gcd(\bar H_n,\bar W_n)$, computed over $\mathbb F_7$.
+For each monic irreducible factor $g$ of this gcd, take a root
+$y_0$ of its monic integer lift with coefficients in $\{0,\ldots,6\}$
+apart from its leading coefficient $1$.
+The lift generates the unramified extension of degree $\deg(g)$.
+In its valuation ring, $1,y_0,\ldots,y_0^{\deg(g)-1}$
+are an integral basis, as their reductions are the power
+basis of the residue field. Hence evaluation of $H_n(y_0)$
+modulo $7^{3+v_7(n)}$ is computed by monic polynomial remainder
+in that modulus. A nonzero remainder rules out every residue
+root of $g$ by Theorem~\ref{thm:third-precision}.
+
+The accompanying exact checker forms all the gcds and remainders
+in the asserted interval using the coefficients in
+\texttt{lem:pair} of the primitive moment pair. It verifies
+that only $(n,g)=(529,Y-2\bmod7)$ has zero remainder.
+At the lift $y_0=2$ the multiplicities in $\bar W_{529}$
+and $\bar H_{529}$ are $3$ and $14$, respectively, and
+$W_{529}(2)\equiv7\pmod{49}$. Theorem~\ref{thm:eisenstein}
+applies since $7\nmid529$ and $14=2p$. This excludes the
+last residue. The equivalence with the consecutive
+factorial pair is again \texttt{cor:critical}.
+\end{proof}
+
+\begin{corollary}[The remaining ordinary degree-seven tests]
+\label{cor:frontier}
+Use the set $\mathcal U_2$ and the polynomials $P_j$ of
+\href{GAP_SIX_TWO_DIGIT_LEADING_TWO_SFC.tex}{the leading-two frontier}.
+Ordinary binomial SFC through degree seven is equivalent to
+$\gcd_{\mathbb Q[t]}(P_{N-1},P_N)=1$ at every terminal
+$N\ge530$ outside $\mathcal U_2$.
+Any hypothetical common phase there has $v_7(-1/t)=1$
+at every algebraic embedding.
+\end{corollary}
+\begin{proof}
+Apply \texttt{cor:degree-seven-frontier} of the leading-two
+frontier and remove the interval established by
+Corollary~\ref{cor:bounded-seven}. The converse follows by
+restricting the original tests. The necessary radius is inherited.
+\end{proof}
+
 \begin{theorem}[Analytic functions of the terminal index]\label{thm:interpolation}
 There is an $s\ge0$, independent of the terminal order, such that
 for each $r\bmod m$ and $0\le b<p^s$ there are

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/meridional-rank/representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_AUDIT.md",
+  "proof_imports": [
+    {
+      "path": "research/meridional-rank/representations/PRIME_AUGMENTATION_GAP_FAMILY.tex",
+      "sha256": "88c50e979202a901d4a356ff7559816a8319e166ed66b181359967d74cadabed",
+      "locator": "Theorem thm:paired, proof, displayed prefix table and equation eq:core",
+      "supports": "Four-pair local folds and their ambient-dimension-independent calculation; paired-span contradiction after Y=B."
+    },
+    {
+      "path": "research/meridional-rank/representations/GENERIC_KCH_EXTENSIONS.tex",
+      "sha256": "978cb91afcff56b4b187d2332c2b268dd2dedec182dea6eea5fca7b5517d9e6b",
+      "locator": "Lemma lem:cores, 392 case",
+      "supports": "Reduced 13a_392 core cannot have root and covector spans both three, arbitrary field and nonzero meridian parameter."
+    },
+    {
+      "path": "research/meridional-rank/representations/ALTERNATING_TARGET_PRIME_FAMILIES.tex",
+      "sha256": "76f6c14ef5decd9fdd799fa0dc7ce657412ae87dc17ba07d9e14685734c676e0",
+      "locator": "Theorem thm:targets and Theorem thm:family",
+      "supports": "A8 seed, two-new-symbol extension lemma, double-transposition class bound, and original prime powers."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/cornwell-kch-1310.7526v3.pdf",
+      "sha256": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+      "locator": "Theorems 1.2 and 1.5; Definition 1.8",
+      "supports": "Augmentation rank equals admitted irreducible KCH dimension; augmentation rank is bounded by meridional rank."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/afw-3manifold-groups-final-author-2015.pdf",
+      "sha256": "31551e1a7cb6ce01026ba33e56806bfecf2c3e4d3afbec4dbf6c6bf0b7ef28ae",
+      "locator": "Proof of Theorem 2.5.1, printed p.36",
+      "supports": "Nonidentity element centralizers in finite-volume hyperbolic 3-manifold groups are abelian; applied to rule out a connected sum."
+    }
+  ],
+  "retained_software_imports": [
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-krawczyk.py",
+      "sha256": "972e3edd0551e54a3ab51082930ddaa81248afe4b682d3c4c4a2546d3bd8c82e",
+      "locator": "KrawczykShapesEngine",
+      "supports": "Rigorous interval existence test underlying SnapPy verify_hyperbolicity."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-hyperbolicity.py",
+      "sha256": "f5e69438d31213565de8fa44246f9ccae2be1b03ce5565a9a53846cb4ed3028e",
+      "locator": "verify_hyperbolicity and check_logarithmic_gluing_equations_and_positively_oriented_tets",
+      "supports": "Verified shapes and logarithmic gluing/completeness/orientation tests."
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/new17-snappy332-shapes.py",
+      "sha256": "d7c21fe191ec63945100241e3b94faed7977eeab6b524fe32d83b37d83e9667f",
+      "locator": "SnapPy 3.3.2 source edition",
+      "supports": "Shape initialization and polishing used by analytic verification."
+    }
+  ],
+  "actual_runtime_versions": {
+    "sage": "10.9",
+    "snappy": "3.3.2",
+    "spherogram": "2.4.1",
+    "python": "3.14.7"
+  },
+  "actual_runtime_analytic_source_hashes": {
+    "snappy.verify.krawczyk_shapes_engine": "972e3edd0551e54a3ab51082930ddaa81248afe4b682d3c4c4a2546d3bd8c82e",
+    "snappy.verify.hyperbolicity": "f5e69438d31213565de8fa44246f9ccae2be1b03ce5565a9a53846cb4ed3028e",
+    "snappy.snap.shapes": "d7c21fe191ec63945100241e3b94faed7977eeab6b524fe32d83b37d83e9667f"
+  },
+  "actual_runtime_kernel_binary": {
+    "file": "SnapPy.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f7002569b43cfa366aab8ee5d19b4afe653478793c1db23a96dcfd621f431c8d"
+  },
+  "scope": {
+    "prime_five_bridge_example": "written proof plus rigorous interval computation with pinned software imports",
+    "uniform_protected_tail_bound": "written proof with exact free-group identity controls",
+    "original_W5_power_obstruction": "complete finite classification plus KCH correspondence",
+    "infinite_prime_gap_family": "open",
+    "prime_gap_at_b6": "open",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false
+  }
+}

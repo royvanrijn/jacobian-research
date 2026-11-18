@@ -14,6 +14,8 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Marked quadratic ruling closure through degree six | Internal result | proved | [Source](affine-complements/RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) |
 | A polar zero excludes a uniform ruling-six family | Internal result | proved | [Source](affine-complements/RULING_SIX_POLAR_ZERO_AND_AFFINE_RESPONSE_FAMILY.md) |
 | Full-target alternating charts and normalization-unit polynomial obstruction | Internal result | proved | [Source](monodromy-theory/ALTERNATING_LAURENT_FEASIBILITY.md) |
+| One fixed polynomial Keller map with infinitely many A10 whole fibres | Internal result | proved | [Source](monodromy-theory/FIXED_KELLER_MAP_ALTERNATING_FAMILY.md) |
+| Uniform architecture obstructions and a field-criterion counterexample | Internal result | proved | [Source](monodromy-theory/ALTERNATING_GENERIC_KELLER_AUDIT.md) |
 
 **Computed obligations:** 17 unresolved; 3 resolved within their exact scope.
 
@@ -34,6 +36,7 @@ Scope limits:
 - The ordinary trace defect has an intrinsic logarithmic spectrum -i/e and normalized trace -rank/2. A generic target derivative has a non-dense maximal Bergman domain in the ramified case; dense-domain arguments cannot supply automatic integrality without proving the inverse condition.
 - Whole root charts transfer any r>1 unramified multiplicity to an actual degree-rd plane Keller map with cyclic deck subgroup and a specified affine pseudo-plane source image. The new marked ramified prime has nonpolar common coordinate, and selected opens are not full finite intermediate normalizations. This architecture remains unexcluded.
 - Alternating Laurent extensions have surjective etale Jacobian-one charts over the whole affine target, but no polynomial affine-space realization over the displayed affine base, by normalization units. This does not exclude their abstract A_n actions through different extensions.
+- One fixed degree10 polynomial Keller map has infinitely many whole A10field fibres along a rationalcurve, with separately proved genericS10. Polynomial profile compilers remain genericS_N. A uniform non-Keller counterexample invalidates only the stated primitive-monomial degree-two auxiliary inference, not a plane Keller conclusion.
 
 Tracked obligations (computed states):
 

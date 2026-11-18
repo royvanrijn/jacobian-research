@@ -102,10 +102,11 @@ imposes no restriction on the multiplicities of other roots.
 
 ## 2. Constant-boundary cubic radial cores
 
-Take \(R_0=aS^3+A(Y)S^2+H(Y)S\), with \(a\ne0\) constant and arbitrary
-polynomials \(A,H\). **Every such core with constant boundary has
-nonfinite full original image.** This includes coefficients of any
-ordinary degree. Section 1 handles nonzero \(H\) of order zero or one,
+Take \(R_0=C_3(Y)S^3+A(Y)S^2+H(Y)S\), with \(C_3\ne0\) of degree at
+most one and arbitrary polynomials \(A,H\). **Every such core with
+constant boundary has nonfinite full original image.** There is no
+ordinary degree bound on \(A,H\). Write \(e=\operatorname{ord}_0 C_3\),
+so \(e=0\) or \(1\). Section 1 handles nonzero \(H\) of order zero or one,
 and it handles \(H=0\) if \(A=0\) or \(\operatorname{ord}_0 A\le2\).
 
 Use the same prime reductions as above, also preserving the nonzero
@@ -121,7 +122,7 @@ would have smaller weight. Its moment is its coefficient times
 
 For \(H\ne0\) of order \(m\ge3\), write \(j=\operatorname{ord}_0 A\),
 with \(j=\infty\) if \(A=0\). The only points that can support the
-minimum of a positive weight are \((1,m),(2,j),(3,0)\), omitting an
+minimum of a positive weight are \((1,m),(2,j),(3,e)\), omitting an
 absent point. For a two-point face use the table. The counts listed
 give a term with both exponents \(E=Lq\), where
 \(q=\lfloor(\ell-1)/L\rfloor\). Set \(n\) equal to the sum of the counts.
@@ -131,11 +132,12 @@ coefficient is a unit since \(n<\ell\). The same last row applies when
 
 | Hypothesis | Points in order | Positive weight on \((S,Y)\) | Counts | \(L\) |
 |---|---|---|---|---|
-| \(m<2j\), including \(A=0\) | \((1,m),(3,0)\) | \((m,2)\) | \(3q,(m-1)q\) | \(3m\) |
-| \(m>2j\), \(j\le2\) | \((1,m),(2,j)\) | \((m-j,1)\) | \((2-j)q,(m-1)q\) | \(2m-j\) |
-| \(m>2j\), \(j\ge3\), or \(H=0,\ j\ge3\) | \((2,j),(3,0)\) | \((j,1)\) | \(3q,(j-2)q\) | \(3j\) |
+| \(m+e<2j\), including \(A=0\) | \((1,m),(3,e)\) | \((m-e,2)\) | \((3-e)q,(m-1)q\) | \(3m-e\) |
+| \(m+e>2j\), \(j\le2\) | \((1,m),(2,j)\) | \((m-j,1)\) | \((2-j)q,(m-1)q\) | \(2m-j\) |
+| \(m+e>2j\), \(j\ge3\), or \(H=0,\ j\ge3\) | \((2,j),(3,e)\) | \((j-e,1)\) | \((3-e)q,(j-2)q\) | \(3j-2e\) |
 
-If \(m=2j\) with \(j\ge2\), the face is \(SY^{2j} f(S/Y^j)\), where
+If \(m+e=2j\), then \(j\ge2\). Set \(w=j-e\ge1\).
+The face is \(SY^m f(S/Y^w)\), where
 \(f\) is quadratic with nonzero constant and
 leading coefficients. Write \(f=a_0+a_1 T+a_2 T^2\) and
 \(f^n=\sum_k c_kT^k\) in the residue field. Its coefficients satisfy
@@ -145,16 +147,18 @@ leading coefficients. Write \(f=a_0+a_1 T+a_2 T^2\) and
 by \(f(f^n)'=n f'f^n\). Two consecutive zero coefficients force
 every later coefficient to vanish until the multiplier \(k\) first
 hits the characteristic. The support point for \(c_k\) is
-\((n+k,2jn-jk)\).
+\((n+k,mn-wk)\).
 
-Take \(n=\lfloor (j+1)(\ell-1)/(3j)\rfloor-1\) and
-\(k_0=2n-\lfloor(\ell-1)/j\rfloor\). For all sufficiently large primes
-the two indices \(k_0,k_0+1\) lie between zero and \(2n\). Their
-\(S\)-marker exponents lie between two and five, since
-\(\ell-1-3n+\lfloor(\ell-1)/j\rfloor\in\{3,4,5\}\).
-Their \(Y\)-marker exponents are below \(2j\). As \(2n<\ell\),
-vanishing of both coefficients would force \(c_{2n}=0\) by (6), a
-contradiction. At \(j=2\) the two markers are \(S^3,S^2Y^2\).
+Take \(n=\lfloor (w+1)(\ell-1)/(m+w)\rfloor-1\) and
+\(k_0=\lceil(mn-(\ell-1))/w\rceil\). For all sufficiently large primes
+the two indices \(k_0,k_0+1\) lie between zero and \(2n\). The first
+\(Y\)-slack is less than \(w\), the second less than \(2w\). The first
+\(S\)-slack is
+\(\lfloor ((w+1)(\ell-1)-(m+w)n)/w\rfloor\).
+It is bounded and at least two, and the second is one smaller.
+Because \(m+w\ge2(w+1)\), one has \(2n<\ell\). Vanishing of both
+coefficients would force \(c_{2n}=0\) by (6), a contradiction. At
+\(j=2,e=0\) the two markers are \(S^3,S^2Y^2\).
 
 ### A double ordinary root and a critical-section shift
 
@@ -189,18 +193,18 @@ They have a common factor over \(K(S)\) by the Bézout identity. Since
 the characteristic is zero, \(J\) has a repeated factor over \(K(S)\)
 in \(Y\). A primitive polynomial for that repeated factor has square
 dividing \(J\) in \(K[S,Y]\) by Gauss's lemma. It has positive degree in
-\(S\), since a nonconstant factor in \(Y\) alone could not divide the
-constant leading \(S\)-coefficient \(a\). As \(J\) has \(S\)-degree two,
-its repeated factor is linear in \(S\). Comparing leading coefficients
-in \(K[Y]\) makes both its leading coefficient and the remaining
-factor constant. We have
+\(S\), since its square would otherwise divide \(C_3(Y)\) of degree at
+most one. As \(J\) has \(S\)-degree two, its repeated factor is linear
+in \(S\). Its leading coefficient must be constant because its square
+divides \(C_3(Y)\). After making it monic in \(S\), we have
 \[
- R_0=aS(S+B(Y))^2,\qquad B=A/(2a),\qquad
- B(0)=0,\quad B'(0)\ne0.                                  \tag{5}
+ R_0=C_3(Y)S(S+B(Y))^2,\qquad B=A/(2C_3)\in K[Y].           \tag{5}
 \]
-The two conditions at zero follow from \(H=aB^2\) of order two.
+The order condition \(\operatorname{ord}_0 H=2\) and \(H=C_3 B^2\)
+force \(e=0\) and \(\operatorname{ord}_0 B=1\). This eliminates the
+exact square case when \(e=1\).
 
-Put \(T=S+B(Y)\) so that \(R_0=aT^2(T-B)\). For \(n=(\ell-1)/2\),
+Put \(T=S+B(Y)\) so that \(R_0=C_3 T^2(T-B)\). For \(n=(\ell-1)/2\),
 only its lowest \(T\)-layer contributes modulo \((S^\ell,Y^\ell)\),
 since \(T^\ell=0\) there. The original Gamma functional on the top
 shifted power is
@@ -209,21 +213,22 @@ shifted power is
 \]
 This is the integral binomial identity with coefficients reduced at
 the good prime. Hence the marked moment for \(Y^j\) is
-\((\ell-1)!(-a)^n L(Y^j)\), where
-\(L(Q)=E_Y[Q B^n \mathcal E_\ell(B)]\) and
+\((\ell-1)!(-1)^n L(Y^j)\), where \(D_0=C_3B\),
+\(L(Q)=E_Y[Q D_0^n \mathcal E_\ell(B)]\) and
 \(\mathcal E_\ell(v)=\sum_{k<\ell}v^k/k!\). The product inside this
 functional has lowest degree \(n<\ell\) with nonzero coefficient.
 Thus \(L\) is nonzero by the same truncated Wick pairing as before.
 
-Apply the ordinary Stein identity to \(Q B^{n+1}\mathcal E_\ell(B)\).
+Apply the ordinary Stein identity to \(Q D_0^{n+1}\mathcal E_\ell(B)\).
 The last term in the derivative of the truncated exponential is
-killed by \(B^{n+1}\), since \(B(0)=0\) and \(Y^\ell=0\) in the pairing.
+killed by \(D_0^{n+1}\), since \(D_0(0)=B(0)=0\) and \(Y^\ell=0\)
+in the pairing.
 The resulting recurrence is
 \[
- L\bigl(BQ'+((n+1)B'+B(B'-Y))Q\bigr)=0.                  \tag{6a}
+ L\bigl(D_0Q'+((n+1)D_0'+D_0(B'-Y))Q\bigr)=0.            \tag{6a}
 \]
 The polynomial \(B'-Y\) is nonzero because its constant coefficient
-is \(B'(0)\ne0\). With \(D=\deg(B(B'-Y))\), the last product for
+is \(B'(0)\ne0\). With \(D=\deg(D_0(B'-Y))\), the last product for
 \(Q=Y^j\) has strict highest degree \(D+j\). Preserve its leading
 coefficient at the good primes. If \(L\) vanished on all
 \(1,\ldots,Y^{D-1}\), (6a) would make it vanish on every monomial.
@@ -234,20 +239,19 @@ In each exclusion the marker list is finite, so the nonzero residue
 moments give a fixed original marker with an infinite tail. Constant
 boundary and strict one-sided additions are handled as in Section 1.
 
-### Safety for cubic radial cores and through invariant sextic degree
+### Safety for cubic radial cores and through original degree seven
 
-For \(P_0=aS^3+A(Y)S^2+H(Y)S+G_0(Y)\) with constant \(a\) and
-arbitrary \(A,H,G_0\), safety forces zero core, including arbitrary
+For \(P_0=C_3(Y)S^3+A(Y)S^2+H(Y)S+G_0(Y)\) with \(\deg C_3\le1\)
+and arbitrary \(A,H,G_0\), safety forces zero core, including arbitrary
 strictly one-sided additions. Indeed safety implies finite full image
 and zero boundary by the invariant boundary theorem, so \(G_0=0\).
-The constant-boundary exclusion above handles \(a\ne0\). The
+The constant-boundary exclusion above handles \(C_3\ne0\). The
 [quadratic radial theorem](GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md)
-handles \(a=0\). Conversely strict angular balance makes zero core
+handles \(C_3=0\). Conversely strict angular balance makes zero core
 safe with primitive unit. This includes every invariant core of
-original degree at most six, because a nonconstant coefficient of
-\(S^3\) raises the original degree above six. Thus safety implies
-purity on the entire invariant sextic class, retaining every original
-marker. For the full finite-image problem in original degree six,
+original degree at most seven, because \(S\) has degree two. Thus
+safety implies purity throughout that degree range, retaining every
+original marker. For the full finite-image problem in original degree six,
 the remaining case has \(a\ne0\), affine boundary \(c+bY\) with
 \(b\ne0\), and \(3\le\deg H\le4\) by the
 [quadratic ordinary-fibre theorem](GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md).

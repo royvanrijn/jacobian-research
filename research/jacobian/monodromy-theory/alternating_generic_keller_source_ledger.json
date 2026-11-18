@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Scope audit of a primitive-monomial auxiliary assertion used in a prime-degree Keller preprint; no refutation of its Keller conclusion is asserted.",
+  "primary_sources": [
+    {
+      "id": "moskowicz-prime-degree-v1",
+      "authors": ["Vered Moskowicz"],
+      "title": "There are no Keller maps having prime degree field extensions",
+      "version": "arXiv:2407.13795v1, 16 July 2024",
+      "primary_url": "https://arxiv.org/pdf/2407.13795v1",
+      "html_url": "https://arxiv.org/html/2407.13795v1",
+      "path": "research/jacobian/monodromy-theory/sources/moskowicz-prime-degree-2407.13795v1.pdf",
+      "sha256": "c468d366ed3147043adc31795d30258176d9ecea3379a03422e150dc56e32b13",
+      "inspected_locations": ["Section 2.8, Question 2.20 and Answer 2.21", "Theorem 3.2, opening proof paragraph"],
+      "use": "Context only. The stated general auxiliary implication rare primitive-monomial property implies degree two is contradicted by the uniform examples proved locally. The invertible-Jacobian main conclusion is not contradicted. No claim about the original MathOverflow answer or later versions.",
+      "verification": "source_read",
+      "imported_theorem": false
+    }
+  ],
+  "assurance": {
+    "internal_proof_and_exact_controls": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  }
+}

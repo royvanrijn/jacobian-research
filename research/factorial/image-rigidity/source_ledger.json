@@ -3352,6 +3352,98 @@
       "external_review": false,
       "novelty_claim": false,
       "priority_claim": false
+    },
+    "physical_prime_analytic_interpolation": {
+      "scope": "For every prime p, every n, and the physical lower-one gap p-1, the reduced primitive moment polynomial W_n has unit residue multiplicities at most p-1. At odd p the bound p-2 is attained at common unit residues. An explicit Teichmuller trace formula modulo p^2 excludes every common residue of maximal multiplicity p-2. At p=2,3 the actual consecutive pair is coprime at every n>=2. For p>=5 all actual common roots have ramification index at most p-3 and distance at most p^(-1/(p-3)) from an unramified lift. At every unramified lift y_0 of such a residue a multiple root forces v_p(H_n(y_0))>=3+v_p(n). A further Eisenstein test excludes roots in specified residues where the lower polynomial has a first-valuation constant term. At p=7 the two tests certify every terminal 2<=n<=529, so ordinary degree-seven SFC reduces to the previously unexcluded gap-six terminals N>=530. On every fixed closed disk inside a unit residue class the actual pair admits joint analytic interpolation in index and phase on finitely many index branches. For each fixed unit residue, the indices with a multiple root there form finitely many full progressions and a finite set. The possible persistent branches and finite exceptions remain open in the all-index problem.",
+      "canonical_source": "factorial/image-rigidity/PHYSICAL_PRIME_ANALYTIC_INTERPOLATION.tex",
+      "checker": "factorial/image-rigidity/physical_prime_analytic_interpolation.py",
+      "receipt": "factorial/image-rigidity/physical_prime_analytic_interpolation_verification.json",
+      "owned_source_sha256": {
+        "factorial/image-rigidity/PHYSICAL_PRIME_ANALYTIC_INTERPOLATION.tex": "d31fad42cab2d33abf5b3b0fc2d59766cc7b7eebbf6ea2c709d0158cca09379d",
+        "factorial/image-rigidity/physical_prime_analytic_interpolation.py": "6988142dfc4a943af6d2b97dba1653d5dd1a104ed8fce921b0c9dbc8d4ef5a04",
+        "factorial/image-rigidity/physical_prime_analytic_interpolation_verification.json": "5b072b381c4525ba5bcc56a3779314ddb74cca5ec2b1a1b3ef0aa9ecd51e83ce"
+      },
+      "declarations": {
+        "thm:residue-multiplicity": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-THM-RESIDUE-MULTIPLICITY",
+        "thm:second-trace": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-THM-SECOND-TRACE",
+        "cor:maximal": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-COR-MAXIMAL",
+        "thm:third-precision": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-THM-THIRD-PRECISION",
+        "thm:eisenstein": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-THM-EISENSTEIN",
+        "cor:bounded-seven": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-COR-BOUNDED-SEVEN",
+        "cor:frontier": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-COR-FRONTIER",
+        "thm:interpolation": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-THM-INTERPOLATION",
+        "cor:negative": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-COR-NEGATIVE",
+        "thm:local-set": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-THM-LOCAL-SET",
+        "cor:full-residue": "FACT-PHYSICAL-PRIME-ANALYTIC-INTERPOLATION-COR-FULL-RESIDUE"
+      },
+      "mathematical_dependencies": {
+        "thm:residue-multiplicity": [
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-PAIR",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-PROP-RATIONAL",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-COR-CRITICAL"
+        ],
+        "thm:second-trace": [
+          "thm:residue-multiplicity",
+          "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-PROP-TRACE"
+        ],
+        "cor:maximal": [
+          "thm:residue-multiplicity",
+          "thm:second-trace"
+        ],
+        "thm:third-precision": [
+          "cor:maximal",
+          "thm:residue-multiplicity",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-PAIR",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-COR-CRITICAL",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-CUBIC"
+        ],
+        "thm:eisenstein": [
+          "thm:third-precision",
+          "thm:residue-multiplicity",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-PAIR",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-COR-CRITICAL"
+        ],
+        "cor:bounded-seven": [
+          "thm:third-precision",
+          "thm:eisenstein",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-PAIR",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-COR-CRITICAL"
+        ],
+        "cor:frontier": [
+          "cor:bounded-seven",
+          "FACT-GAP-SIX-TWO-DIGIT-LEADING-TWO-SFC-COR-DEGREE-SEVEN-FRONTIER"
+        ],
+        "thm:interpolation": [
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-PAIR",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-THM-LINEAR"
+        ],
+        "cor:negative": [
+          "thm:interpolation",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-PAIR"
+        ],
+        "thm:local-set": [
+          "thm:interpolation",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-COR-CRITICAL"
+        ],
+        "cor:full-residue": [
+          "thm:residue-multiplicity",
+          "thm:local-set",
+          "cor:maximal",
+          "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-COR-CRITICAL"
+        ]
+      },
+      "input_sha256": {
+        "factorial/image-rigidity/PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex": "cb97627c84c07228bad42d0f5c217e71267a4057027b0da021bbbc15a3a74a20",
+        "factorial/image-rigidity/PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+        "factorial/image-rigidity/GAP_SIX_TWO_DIGIT_LEADING_TWO_SFC.tex": "303013baabd9b9cf733dfd0abfeb85375797a0bee86c6958ee28b79cddcde65c"
+      },
+      "internal_controls": 3954,
+      "all_index_squarefreeness": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
     }
   },
   "open_bridge_assessments": {

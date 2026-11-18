@@ -20,9 +20,9 @@
     "vanishing_truncations_outside_order_hypothesis": 5
   },
   "cubic_radial_tails": {
-    "weighted_face_checks": 50,
+    "weighted_face_checks": 75,
     "polynomial_critical_section_checks": 10,
-    "shifted_gamma_square_checks": 50
+    "shifted_gamma_square_checks": 55
   },
   "cubic": {
     "cubic_completion": true,
@@ -31,8 +31,8 @@
     "original_seed_factor": "1/kappa"
   },
   "sha256": {
-    "research/moments/vanishing/verify_gaussian_radial_frobenius_and_cubic_fibres.py": "e6ef0a453b7ab3463432e30b551cbfac6a45861600e855e2f67eba67e5a37079",
-    "research/moments/vanishing/GAUSSIAN_RADIAL_FROBENIUS_AND_CUBIC_FIBRES.md": "7421d886a8f5d372d787eb198c95f62fd9893906aaa11580d458b64d92be3acd",
+    "research/moments/vanishing/verify_gaussian_radial_frobenius_and_cubic_fibres.py": "97a2b5273fcd381baa516f5575921c76b3a8b2d875b4d4f1203e232d877fbaa3",
+    "research/moments/vanishing/GAUSSIAN_RADIAL_FROBENIUS_AND_CUBIC_FIBRES.md": "8663d6033840255aeb83c7fcde6f39d5e0ba018da09e74594b1e3e24c42d4103",
     "research/moments/vanishing/GAUSSIAN_LOGARITHM_EXCLUSION_AND_RATIONAL_PRIMITIVES.md": "439d22a72625d1edb2b7d5dbaa0f19ae501e644f31568394ce08459b930afeba",
     "research/moments/vanishing/GAUSSIAN_INVARIANT_CORE_BOUNDARY_REDUCTION.md": "af83621c99fec04b27c48ee1e76d184052ea01ba8b79fb160c2aa1996f68174a",
     "research/moments/vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",

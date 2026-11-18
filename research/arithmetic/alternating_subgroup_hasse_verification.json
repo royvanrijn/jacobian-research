@@ -1,0 +1,765 @@
+{
+  "DT_centralizer_even_elements": 2880,
+  "DT_generator_pair_hit_counts": {
+    "H1,H2,H3,W5": 1352,
+    "H1,H2,W5": 180,
+    "H1,W5": 288,
+    "H2": 450,
+    "H2,H3,W5": 80,
+    "H2,W5": 210,
+    "H3": 80,
+    "W5": 240
+  },
+  "DT_invariant_perfect_matchings": 45,
+  "DT_matching_cover_hit_counts": {
+    "H1": 288,
+    "H1,H3": 928,
+    "H1,H3,W2": 424,
+    "H1,W2": 180,
+    "H3,W2": 160,
+    "W2": 900
+  },
+  "arithmetic": "integer permutations and finite subsets",
+  "checker_sha256": "7733e79a67c13cf38a292647d3fe194e5f5e34b158bcc12c47940c3050c6efe3",
+  "command": "python3 research/arithmetic/verify_alternating_subgroup_hasse.py",
+  "cycle_type_cover": [
+    {
+      "cycle_type": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3",
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3",
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        5
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        4
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3",
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        1,
+        1,
+        3,
+        3
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3",
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3",
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        2,
+        6
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3",
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        3,
+        5
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        1,
+        4,
+        4
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        2,
+        2,
+        5
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        3,
+        3,
+        3
+      ],
+      "matching_cover_hits": [
+        "H1",
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        1,
+        3,
+        4
+      ],
+      "three_cover_hits": [
+        "H1",
+        "H3"
+      ]
+    },
+    {
+      "cycle_type": [
+        1,
+        9
+      ],
+      "matching_cover_hits": [
+        "H1"
+      ],
+      "natural_subset_sizes": [
+        1
+      ],
+      "three_cover_hits": [
+        "H1"
+      ]
+    },
+    {
+      "cycle_type": [
+        2,
+        2,
+        2,
+        4
+      ],
+      "matching_cover_hits": [
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        2,
+        4
+      ],
+      "three_cover_hits": [
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "matching_cover_hits": [
+        "H3",
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "three_cover_hits": [
+        "H3",
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        2,
+        8
+      ],
+      "matching_cover_hits": [
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        2
+      ],
+      "three_cover_hits": [
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        3,
+        7
+      ],
+      "matching_cover_hits": [
+        "H3"
+      ],
+      "natural_subset_sizes": [
+        3
+      ],
+      "three_cover_hits": [
+        "H3"
+      ]
+    },
+    {
+      "cycle_type": [
+        4,
+        6
+      ],
+      "matching_cover_hits": [
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        4
+      ],
+      "three_cover_hits": [
+        "W5"
+      ]
+    },
+    {
+      "cycle_type": [
+        5,
+        5
+      ],
+      "matching_cover_hits": [
+        "W2"
+      ],
+      "natural_subset_sizes": [
+        5
+      ],
+      "three_cover_hits": [
+        "W5"
+      ]
+    }
+  ],
+  "even_cycle_types": 22,
+  "external_review": false,
+  "forced_subset_size_witnesses": {
+    "1": [
+      1,
+      9
+    ],
+    "2": [
+      2,
+      8
+    ],
+    "3": [
+      3,
+      7
+    ],
+    "4": [
+      4,
+      6
+    ],
+    "5": [
+      5,
+      5
+    ]
+  },
+  "formal_verification": false,
+  "hensel_basepoint": {
+    "derivative": -38112,
+    "derivative_factorization": {
+      "2": 5,
+      "3": 1,
+      "397": 1
+    },
+    "s": 1054656,
+    "z": 1
+  },
+  "independent_replay": false,
+  "kind": "complete_finite_group_certificate",
+  "natural_subset_minimum": 5,
+  "natural_subset_rank": 637,
+  "negative_controls": [
+    "deleting H1 loses type(9,1)",
+    "deleting H3 loses type(7,3)",
+    "deleting W5 loses type(5,5)",
+    "deleting H2 loses D=C2xC6",
+    "H1,H3,W2 covers the ramified counterexample"
+  ],
+  "optimal_class_count_DT_cover": [
+    "H1",
+    "H3",
+    "W2"
+  ],
+  "optimal_class_count_DT_cover_rank": 1075,
+  "perfect_matching_action_degree": 945,
+  "python": "3.12.3",
+  "ramified_counterexample": {
+    "frobenius": [
+      1,
+      0,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      4
+    ],
+    "group_order": 12,
+    "inertia": [
+      1,
+      0,
+      3,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "orbit_sizes": [
+      2,
+      2,
+      6
+    ]
+  },
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Complete cycle-type and centralizer enumeration for A10. Infinite arithmetic existence additionally uses the written specialization-inertia, local lifting and integral Hilbert argument. Optimality of three subgroup classes for either element or DT-local coverage imports Bubboloni Theorem3.9.",
+  "tame_DT_cover": [
+    "H1",
+    "H2",
+    "H3",
+    "W5"
+  ],
+  "tame_DT_cover_rank": 301,
+  "three_cover_failures_in_DT_centralizer": 450,
+  "three_element_cover": [
+    "H1",
+    "H3",
+    "W5"
+  ],
+  "three_element_cover_rank": 256,
+  "uniform_partition_sanity_degrees8_through30": [
+    {
+      "DT_fixed_letter_cycle_type_cases": 5,
+      "cyclic_cycle_type_cases": 12,
+      "degree": 8,
+      "odd_subset_classes": [
+        1,
+        3
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 11,
+      "cyclic_cycle_type_cases": 22,
+      "degree": 10,
+      "odd_subset_classes": [
+        1,
+        3
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 22,
+      "cyclic_cycle_type_cases": 40,
+      "degree": 12,
+      "odd_subset_classes": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 42,
+      "cyclic_cycle_type_cases": 69,
+      "degree": 14,
+      "odd_subset_classes": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 77,
+      "cyclic_cycle_type_cases": 118,
+      "degree": 16,
+      "odd_subset_classes": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 135,
+      "cyclic_cycle_type_cases": 195,
+      "degree": 18,
+      "odd_subset_classes": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 231,
+      "cyclic_cycle_type_cases": 317,
+      "degree": 20,
+      "odd_subset_classes": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 385,
+      "cyclic_cycle_type_cases": 505,
+      "degree": 22,
+      "odd_subset_classes": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 627,
+      "cyclic_cycle_type_cases": 793,
+      "degree": 24,
+      "odd_subset_classes": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 1002,
+      "cyclic_cycle_type_cases": 1224,
+      "degree": 26,
+      "odd_subset_classes": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 1575,
+      "cyclic_cycle_type_cases": 1867,
+      "degree": 28,
+      "odd_subset_classes": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ]
+    },
+    {
+      "DT_fixed_letter_cycle_type_cases": 2436,
+      "cyclic_cycle_type_cases": 2811,
+      "degree": 30,
+      "odd_subset_classes": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ]
+    }
+  ]
+}

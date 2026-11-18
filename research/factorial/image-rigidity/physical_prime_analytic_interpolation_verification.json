@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "controls": 2677,
+  "controls": 3954,
   "control_counts": {
     "actual_W_reciprocal_trace": 85,
     "actual_H_reciprocal_trace": 85,
@@ -15,14 +15,28 @@
     "common_residue_cluster_trace_valuation_one": 54,
     "prescribed_H_residue": 54,
     "prescribed_exact_W_multiplicity": 255,
-    "symbolic_affine_line_power_sum": 18
+    "symbolic_affine_line_power_sum": 18,
+    "gap_six_complete_residue_factorization": 528,
+    "gap_six_irreducible_residue_factor": 374,
+    "gap_six_unramified_point_value_exclusion": 373,
+    "gap_six_eisenstein_residue": 1,
+    "gap_six_unique_zero_point_value_remainder": 1
   },
-  "scope": "Bounded exact checks of the residue, Gauss norm and two-sided identities. The analytic interpolation and resultant theorem have written proofs.",
+  "scope": "Exact controls of the written identities and complete replay of the finite gap-six interval. The analytic interpolation and resultant theorem have written proofs.",
+  "gap_six_interval": {
+    "terminal_min": 2,
+    "terminal_max": 529,
+    "eisenstein_exception_to_point_value_test": {
+      "n": 529,
+      "residue": 2
+    }
+  },
   "source_sha256": {
-    "physical_prime_analytic_interpolation.py": "40f46e7dd6264a2940e756296ed6a4546d2fedcf775444551aa8c98062962701",
-    "PHYSICAL_PRIME_ANALYTIC_INTERPOLATION.tex": "d725fc672ca8bf23020a335977ccc496785515e36336f85c54e445ea5ee65606",
+    "physical_prime_analytic_interpolation.py": "6988142dfc4a943af6d2b97dba1653d5dd1a104ed8fce921b0c9dbc8d4ef5a04",
+    "PHYSICAL_PRIME_ANALYTIC_INTERPOLATION.tex": "d31fad42cab2d33abf5b3b0fc2d59766cc7b7eebbf6ea2c709d0158cca09379d",
     "PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex": "cb97627c84c07228bad42d0f5c217e71267a4057027b0da021bbbc15a3a74a20",
-    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f"
+    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+    "GAP_SIX_TWO_DIGIT_LEADING_TWO_SFC.tex": "303013baabd9b9cf733dfd0abfeb85375797a0bee86c6958ee28b79cddcde65c"
   },
   "python": "3.12.3",
   "independent_whole_proof_replay": false,

@@ -14,7 +14,8 @@ criterion and finite certificates for the class \(1\pmod {12}\). The immediate
 arithmetic target is every-target existence for \(C_{12}+C_{12}\), initially
 without balance. In parallel, the
 [Eisenstein power-window theorem](EISENSTEIN_POWER_SHRINKING_WINDOWS.md)
-now supplies one explicit shrinking exponent for \(q=3\).
+now covers every fixed \(2/3<\theta<1\) for \(q=3\), with explicit
+cutoffs and both ordinary and mixed families.
 
 ## The central binary conjecture
 
@@ -494,21 +495,30 @@ sufficiently large compatible target. Its fixed-weight proof supplies no
 numerical onset for an arbitrary interval.
 
 The stronger [Theorem EisPower](EISENSTEIN_POWER_SHRINKING_WINDOWS.md) gives,
-for every \(n\ge2^{2^{411}}\),
+for every fixed \(0<\delta<1/3\) and every \(n\ge N_\delta\),
 \[
 \begin{array}{ll}
-n\equiv2\pmod6:&n=a+b,\quad a,b\in A,\quad |a-b|\le n^{99/100},\\
-n\equiv4\pmod6:&n=a+3b,\quad a,b\in A,\quad |a-3b|\le n^{99/100}.
+n\equiv2\pmod6:&n=a+b,\quad a,b\in A,\quad |a-b|\le n^{1-\delta},\\
+n\equiv4\pmod6:&n=a+3b,\quad a,b\in A,\quad |a-3b|\le n^{1-\delta}.
 \end{array}
 \]
-Its uniform operator bound controls the harmonic degree and prime level
-together. A shrinking Bernstein minorant then supports a nonnegative weighted
-union bound. The theorem also gives
-\(\gg_\varepsilon n^{99/100-\varepsilon}\) distinct ordered value pairs.
-This is weaker than the semigroup-scale count in FBS-U. The enormous explicit
-onset does not close the gap above the existing finite balanced certificate;
-the complete exception lists remain unresolved. External review and priority
-are separate open obligations.
+The proof gives an explicit formula for \(N_\delta\), at least
+\(n^{-\delta}R_o(n)/20\) coordinate witnesses per prescribed orientation,
+and \(\gg_{\delta,\nu}n^{1-\delta-\nu}\) distinct value pairs for each
+fixed \(\nu>0\). For example, difference at most \(n^{3/4}\) holds for
+every admissible \(n\ge2^{2^{40}}\).
+
+The uniform operator bound controls harmonic degree and prime level together.
+The exact triangular weight has an absolutely convergent Legendre series with
+coefficient sum \(O(h^{-1/2})\). Counting large-prime obstructions only in
+the central annulus supplies the additional \(h\) in the main lattice tail.
+A separate positive Jackson-kernel construction verifies the proposed
+Jackson--Parseval route, which by itself gives the weaker range
+\(\theta>6/7\). The stronger theorem gives every fixed \(\theta>2/3\);
+the endpoint is open. Its value-pair count remains weaker than FBS-U's
+semigroup-scale lower bound. The explicit cutoffs leave an enormous gap above
+the finite balanced certificate. Complete exception lists, external review
+and priority remain unresolved.
 
 ## Five complementary research campaigns
 
@@ -566,13 +576,27 @@ with varying valuations at a fixed prime. This campaign and
 Campaign A have the highest priority; neither the upper bound nor the tail
 proves every-target coverage by itself.
 
-**Campaign C: quantitative Eisenstein geometry.** EisPower completes the first
-power-shrinking existence target, with exponent \(99/100\), in both ordinary
-and mixed cases. Independent verification of its uniform-weight, uniform-level
-Hecke argument is essential. Further goals are improved angular discrepancy,
-stronger shrinking exponents and, separately, the semigroup-scale count.
-The next work is analytic and does not require a large finite scan or a smaller
-version of the already positive sieve margin.
+**Campaign C: quantitative Eisenstein geometry.** EisPower now proves every
+fixed power window \(H=n^\theta\), \(\theta>2/3\), in both ordinary and
+mixed cases, with explicit onsets. The simultaneous weight/level Hecke bound,
+triangle expansion and central-annulus tail have passed renewed internal
+adversarial checks. Further goals include the endpoint, an exponent below
+\(2/3\), the \(1/2\) scale and, separately, the semigroup-scale count.
+Any proposed polylogarithmic window must also account for arithmetic gaps.
+These improvements need further estimates; the present proof does not supply
+them. Enlarging a finite scan or reducing an already positive sieve margin
+would not settle these questions.
+
+The [central-gap theorem FBSGap](PRESCRIBED_PRIME_CENTRAL_GAPS.md)
+quantifies the polylogarithmic obstruction. For each fixed \(q\), infinitely
+many compatible targets have no pair with difference at most
+\(c_q\log N(\log\log N)^{1-2/\varphi(q)}\). For \(q=12\) this rules
+out every-target windows of order \(\log N\); for \(q=3\) it rules out
+\(o(\log N)\) and a sufficiently small constant multiple of \(\log N\).
+The same note's arithmetic-large-sieve bound shows that a density-one set
+fails when \(H=o((\log X)^{\kappa_q})\), including
+\(H=o((\log X)^{3/2})\) at \(q=12\). These obstructions leave every
+fixed positive power window in FBS-U untouched.
 
 **Campaign D: sharp four-form energy.** Fix \(q=12\), initially
 \(\theta=99/100\), and prove (E) for \(H=X^\theta\). By Eq this is
@@ -620,7 +644,7 @@ here concern the stated clean congruence family.
 | Semigroup-scale binary density one | Dq gives many unweighted pairs for every fixed \(q\), \(\theta>1/3\), outside \(O_A(X/(\log X)^A)\) targets |
 | Fixed-width full-count variance | Vq proves the explicit asymptotic outside \(o(X)\) targets for \(H=\lambda X\) |
 | Existing ternary baseline | Tq gives every-target prescribed-AP prime triples for \(\theta>2/3\) |
-| Eisenstein power windows | EisPower proves existence for \(H=n^{99/100}\) in both residue classes, above the explicit \(2^{2^{411}}\) onset |
+| Eisenstein power windows | EisPower gives every fixed \(\theta>2/3\), explicit onsets and many coordinate witnesses in both families; \(H=n^{3/4}\) holds above \(2^{2^{40}}\) |
 | Highest-priority arithmetic target | Prove S12U by resolving the global lower bound and fixed-prime distribution inputs |
 | Sharp variance target | Prove (E), initially at \(\theta=99/100\); seek a power-saving exceptional estimate afterward |
 | Main general conjecture | FBS-U asks for the semigroup-scale count on every compatible large target |

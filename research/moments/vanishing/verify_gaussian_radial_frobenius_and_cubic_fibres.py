@@ -106,6 +106,9 @@ def cubic_radial_tail_controls():
         (s**3 + y**3 * s**2 + y**7 * s, 9, 4),
         (s**3 + y**2 * s**2 + y**8 * s, 14, 7),
         (s**3 + y**4 * s**2, 12, 5),
+        (y * s**3 + y**3 * s**2 + y**4 * s, 11, 5),
+        (y * s**3 + y**3 * s**2 + y**6 * s, 7, 3),
+        (y * s**3 + y**2 * s**2 + y**4 * s, 6, 3),
     ]
     for phase, l, times in fixtures:
         for p in primes:
@@ -113,13 +116,14 @@ def cubic_radial_tail_controls():
             power = powers(phase, times * q, p)
             assert wick_mod(truncated_product(power, {(slack, slack): 1}, p), p)
             checked_faces += 1
-    for j in (2, 3, 4):
+    for j, e in ((2, 0), (3, 0), (4, 0), (2, 1), (3, 1)):
         for p in primes:
-            n = (j + 1) * (p - 1) // (3 * j) - 1
-            k0 = 2 * n - (p - 1) // j
-            marker_powers = [(p - 1 - n - k, p - 1 - 2 * j * n + j * k) for k in (k0, k0 + 1)]
-            assert all(2 <= i <= 5 and 0 <= l < 2 * j for i, l in marker_powers)
-            power = powers(s**3 + 2 * y**j * s**2 + y**(2*j) * s, n, p)
+            m, w = 2*j-e, j-e
+            n = (w + 1) * (p - 1) // (m + w) - 1
+            k0 = (m * n - (p - 1) + w - 1) // w
+            marker_powers = [(p - 1 - n - k, p - 1 - m * n + w * k) for k in (k0, k0 + 1)]
+            assert all(1 <= i <= 2*(m+w) and 0 <= l < 2 * w for i, l in marker_powers)
+            power = powers(y**e * s**3 + 2 * y**j * s**2 + y**m * s, n, p)
             assert any(wick_mod(truncated_product(power, {marker: 1}, p), p) for marker in marker_powers)
             checked_faces += 1
 
@@ -145,12 +149,12 @@ def cubic_radial_tail_controls():
 
     square_checks = 0
     for p in primes:
-        for quadratic, cubic in ((2, 0), (pow(2, -1, p), 0), (2, 1)):
+        for quadratic, cubic, leading in ((2, 0, 1), (pow(2, -1, p), 0, 1), (2, 1, 1+y)):
             b = y + quadratic * y**2 + cubic * y**3
             bp = {(0, 1): 1, (0, 2): quadratic, (0, 3): cubic}
             n = (p - 1) // 2
-            actual = powers(s * (s+b)**2, n, p)
-            b_power = powers(b, n, p)
+            actual = powers(leading * s * (s+b)**2, n, p)
+            b_power = powers(leading * b, n, p)
             exp_b = {(0, 0): 1}
             b_to_i = {(0, 0): 1}
             for i in range(1, p):
@@ -159,7 +163,7 @@ def cubic_radial_tail_controls():
                     exp_b[exponents] = (exp_b.get(exponents, 0) + c * pow(factorial(i), -1, p)) % p
             shifted = truncated_product(b_power, exp_b, p)
             first_marker_values = []
-            top_degree = 5 if cubic else 2 if 2 * quadratic % p == 1 else 3
+            top_degree = 6 if cubic else 2 if 2 * quadratic % p == 1 else 3
             for j in range(top_degree):
                 marker = {(0, j): 1}
                 expected = factorial(p - 1) * (-1)**n * wick_mod(truncated_product(shifted, marker, p), p)

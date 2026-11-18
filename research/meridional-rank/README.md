@@ -54,6 +54,7 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | Integral Fox-ideal units for the fixed alternating and parity quotients | Internal result | proved | [Source](representations/INTEGRAL_A8_FOX_IDEAL.tex) |
 | Two generators for every finite metabelian quotient of the prime twist family | Internal result | proved | [Source](representations/FINITE_METABELIAN_QUOTIENTS_OF_TWIST_FAMILY.tex) |
 | Exact ordinary ranks and uniform rank bounds from verified hyperbolic symmetry | Internal result | proved | [Source](representations/ORDINARY_RANK_FROM_HYPERBOLIC_SYMMETRY.tex) |
+| A prime bridge-five knot with complex augmentation gap | Internal result | proved | [Source](representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_AUDIT.md) |
 
 **Computed obligations:** 4 unresolved; 1 resolved within their exact scope.
 
@@ -88,6 +89,7 @@ Scope limits:
 - For every Kn, the literal first Fox row generates the whole integral group ring under the fixed quotients onto A8 and A8 x C2. Thus all coefficient models through either map fail, in every characteristic. The unit also lifts through finite normal p-group kernels over rings in which p is nilpotent. Other quotient kernels, unrestricted matrix models, and the ordinary rank remain open.
 - Every finite metabelian quotient of each Kn has ordinary rank at most two. The 2-by-2 scalar Fox minors generate Z[t,t^-1], using a fixed-row resultant -83 and a constant minor combination at t=59 modulo83. Every scalar cocycle dimension is at most two. This finite quotient bound is independent of both the integral A8 unit and the geometric rank lower bound three for the actual knot group.
 - Verified hyperbolic symmetry gives exact rank3 for the32 named knot groups and all Pi_n=pi1(Sigma2(K_n)), with 3≤rank(Gamma_n)≤rank(G_n)≤4. All positive-parameter exteriors are asymmetric. Base-cover geodesic classes -61 and43 modulo117 force inversion isometries to preserve the marked core. Precise knot and orbifold ranks inside [3,4], worldwide priority and full MRC stay open.
+- One new rigorously hyperbolic prime bridge-five knot has ar_C<=4<mr=br5. Protected-tail augmentation obstruction is uniform in b; infinite prime protected families and bridge-six prime gaps remain open. Complete S6quotient classification eliminates all old five-strand powers divisibleby2or147.
 
 **Verification:** Current exact replays include both modes of the new generic-fold/Q(phi) package; the independent symmetric unit-16 certificate; the main finite, topology and Sage interval modes; and earlier named/generic packages. Isolated internal PDF reviews retain exact edition hashes. Original theorem/software imports, formal verification and external specialist review remain separate. [Replay record](representations/new17_generic_kch_verification.json).
 

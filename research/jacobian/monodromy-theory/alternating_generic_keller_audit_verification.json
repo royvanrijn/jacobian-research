@@ -1,0 +1,44 @@
+{
+  "checker_sha256": "08f67c66de44009ff2081d46166c4849821e7e44d7876e4bf2f481de761fa931",
+  "command": ".venv/bin/python research/jacobian/monodromy-theory/verify_alternating_generic_keller_audit.py",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "kind": "internal_exact_replay",
+  "monomial_exponents_tested": "0<=i,j<=12, excluding (0,0)",
+  "prime_controls": [
+    {
+      "extension_degree": 3,
+      "jacobian": "x + 4*y**2",
+      "monomial_controls": 168,
+      "prime": 3,
+      "xy_sum_remainder_degree": 2
+    },
+    {
+      "extension_degree": 5,
+      "jacobian": "x + 6*y**4",
+      "monomial_controls": 168,
+      "prime": 5,
+      "xy_sum_remainder_degree": 4
+    },
+    {
+      "extension_degree": 7,
+      "jacobian": "x + 8*y**6",
+      "monomial_controls": 168,
+      "prime": 7,
+      "xy_sum_remainder_degree": 6
+    },
+    {
+      "extension_degree": 11,
+      "jacobian": "x + 12*y**10",
+      "monomial_controls": 168,
+      "prime": 11,
+      "xy_sum_remainder_degree": 10
+    }
+  ],
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Finite controls supplement the written uniform weighted proof. The counterexample refutes the stated field-theoretic auxiliary criterion, not a Keller conclusion. These maps have nonconstant determinant.",
+  "sympy": "1.14.0"
+}

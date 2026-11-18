@@ -1,0 +1,112 @@
+{
+  "B5_orbit_sizes": [
+    17006112
+  ],
+  "absolute_Nielsen_class_size": 1889568,
+  "arithmetic": "exact 64-bit packed permutations; no floating-point proof steps",
+  "checker_sha256": "7b7af4a9681cae5caef390ae67aa603e0a6be60fb1feb4687d8dabe04b3d99c4",
+  "compiler_flags": [
+    "-O3",
+    "-std=c++17",
+    "-UNDEBUG"
+  ],
+  "conclusion_with_seed_generation_proof": "all 17006112 transitive tuples form one A10 orbit",
+  "controls": [
+    "all class elements are double transpositions",
+    "duplicate tuple insertion rejected",
+    "wrong-product tuple excluded",
+    "unconjugated adjacent swap excluded",
+    "every Hurwitz neighbor belongs to the exhaustive domain",
+    "both positive and negative moves traversed"
+  ],
+  "cxx": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "double_transposition_class_size": 630,
+  "embedded_cpp_sha256": "fcabbe96be955a7976568c4f85edc619bd680df8453b3328a489434c7f099dcc",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "kind": "complete_finite_Hurwitz_orbit_certificate",
+  "nontransitive_tuple_count": 31886460,
+  "pair_product_count": 64144,
+  "python": "3.12.3",
+  "raw_fixed_product_tuple_count": 48892572,
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Exact finite n=10 classification only. Known generation of the literal seed and preservation of generated subgroup identify the unique orbit as full A10. Does not prove uniform braid transitivity, unirationality or a rational-point theorem in higher degree.",
+  "seed_input_sha256": "26124b3261d4966e2d885d083272fbc39318dace82f1ddba29e29bf5beff4d0c",
+  "seed_tuple": [
+    [
+      1,
+      0,
+      3,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    [
+      0,
+      4,
+      3,
+      2,
+      1,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    [
+      5,
+      6,
+      2,
+      3,
+      4,
+      0,
+      1,
+      7,
+      8,
+      9
+    ],
+    [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5,
+      7,
+      6,
+      8,
+      9
+    ],
+    [
+      0,
+      8,
+      2,
+      3,
+      4,
+      5,
+      9,
+      7,
+      1,
+      6
+    ]
+  ],
+  "target_product": [
+    5,
+    8,
+    6,
+    3,
+    0,
+    1,
+    9,
+    4,
+    2,
+    7
+  ],
+  "transitive_tuple_count": 17006112
+}

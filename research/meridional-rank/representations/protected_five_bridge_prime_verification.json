@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "python": "3.12.3",
+  "checker_sha256": "f40db45de642ec33dc73171f41af6eb40a962e6253fe76e62f44c49e943ce6d2",
+  "input_sha256": "4a9c2da36431e67d3473aa6cab2a2a6e23d718316f6c0148fa4c63dae45aa265",
+  "dependency_sha256": {
+    "verify_new_seventeen_crossing_knot.py": "b5855c6a9aaf47608b2914cf9c970225f6913ec09fcd56bfb3066962d4f27c13",
+    "verify_unbounded_prime_augmentation_gap_audit.py": "a9016599e863d51b0f98d866692da8c836b5a84c3e34d7a51ed17371e90c0914"
+  },
+  "finite_certificate": {
+    "literal_braid_and_PD_wiring": true,
+    "spherical_one_component_PD": true,
+    "presented_crossings": 30,
+    "full_A8_order": 20160,
+    "A10_extension_lemma_inputs": true,
+    "full_A10_order_by_extension_lemma": 1814400,
+    "double_transposition_lower_bound": 5,
+    "closed_braid_bridge_upper": 5,
+    "protected_tail_free_group_identity": true,
+    "augmentation_upper_via_paired_span_theorem": 4,
+    "stored_hyperbolicity_flag_is_not_used_as_a_proof": true
+  },
+  "negative_controls_rejected": 2,
+  "result": "PASS"
+}

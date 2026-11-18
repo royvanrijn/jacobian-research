@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ALTERNATING_HURWITZ_UNIFORMITY_AND_REAL_NODES.md",
+  "assurance": "Internal primary-source inspection and exact computation. No external review, formal verification or exhaustive priority claim.",
+  "sources": [
+    {
+      "id": "ellenberg-venkatesh-westerland-II",
+      "title": "Homological stability for Hurwitz spaces and the Cohen–Lenstra conjecture over function fields, II",
+      "authors": [
+        "Jordan S. Ellenberg",
+        "Akshay Venkatesh",
+        "Craig Westerland"
+      ],
+      "version": "Author-hosted EVW2arxiv.pdf bytes retrieved 18 November 2026; no internal version date found",
+      "primary_url": "https://math.stanford.edu/~akshay/research/EVW2arxiv.pdf",
+      "retained_pdf": "research/arithmetic/sources/ellenberg-venkatesh-westerland-hurwitz-II.pdf",
+      "sha256": "7602fd6da056e4d7e98f981a7706eadbfaef0179b890b0c9b41071a234493c17",
+      "bytes": 760203,
+      "pdf_pages": 70,
+      "direct_read": true,
+      "extraction": "pdftotext -layout",
+      "inspected_statements": [
+        {
+          "locator": "Section 7.1",
+          "printed_pages": "32",
+          "pdf_pages": "32",
+          "statement": "A central extension with a conjugacy-equivariant section of the specified inertia subset defines its lifting invariant by multiplying the selected lifts.",
+          "application": "The explicit commuting double transpositions in Proposition 2 have anticommuting spin lifts, so the required section does not exist for the ordinary spin cover."
+        },
+        {
+          "locator": "Theorem 7.6.1 and preceding definition of sufficiently large",
+          "printed_pages": "37",
+          "pdf_pages": "37",
+          "statement": "For a fixed finite group and fixed inertia subset, sufficiently large multiplicities give the stable component description; the stated largeness condition applies in each inertia class.",
+          "application": "This fixed-group theorem does not prove uniform transitivity for growing A_n; in the all-branch-class formulation the distinguished long-cycle multiplicity is one."
+        }
+      ],
+      "role": "Context and definition; no imported connectivity theorem is used in the finite n=10 proof.",
+      "limits": "The note proves only failure of the ordinary spin sign and the killing of its central kernel, not a classification of all reduced Schur multipliers. It does not infer higher-degree braid connectivity from the stabilization theorem."
+    }
+  ],
+  "existing_proof_inputs": [
+    {
+      "document": "research/meridional-rank/representations/ALTERNATING_TARGET_PRIME_FAMILIES.tex",
+      "role": "The b=5 literal knot tuple generates A10."
+    },
+    {
+      "document": "research/arithmetic/RATIONAL_ALTERNATING_PENCIL_REALIZATION.md",
+      "role": "The rational two-parameter degree-eight family, seed good reduction, full geometric A8 and rational-cover invariant."
+    },
+    {
+      "document": "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md",
+      "role": "The existing rational degree-ten cover and its all-real simple critical points and values."
+    },
+    {
+      "document": "research/arithmetic/alternating_hurwitz_priority_ledger.json",
+      "locator": "Jones, Characteristically simple Beauville groups I, Proposition 6.1(3)",
+      "role": "Conditional full A_n conclusion for a normalized higher-degree model satisfying the exact coefficient criterion."
+    },
+    {
+      "document": "research/arithmetic/ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md",
+      "locator": "Lemma 3 and Theorem 4",
+      "role": "Even-degree resultant identity and local discriminant normalization/node criterion."
+    }
+  ]
+}
+

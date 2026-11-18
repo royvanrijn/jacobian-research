@@ -1,0 +1,47 @@
+{
+  "checker_sha256": "b73240da6da8c29312229383e73554a9c1b6834e7cc452ebf977a216d6f0b019",
+  "checks": {
+    "compact_plane_jacobian": "-2D",
+    "coordinate_degree_bound": 146,
+    "fixed_profile_exponents": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "full_derivative_identity": true,
+    "full_polynomial_curve_identity": true,
+    "global_polynomial_jacobian": 1,
+    "invalid_controls": 2,
+    "pencil_parameter_at_p_one": 1016543,
+    "quotient_degree": 10,
+    "quotient_derivative_unit": true,
+    "source_chart_jacobian": "t",
+    "target_at_p_one": [
+      "1",
+      "-574772",
+      "-76226"
+    ],
+    "whole_fibre_reconstruction": true
+  },
+  "command": ".venv/bin/python research/jacobian/monodromy-theory/verify_fixed_keller_alternating_family.py",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "inputs": {
+    "research/arithmetic/ALTERNATING_PENCIL_SPECIALIZATIONS_AND_KELLER_FIBRES.md": "adc16619074bb204a24c919fbe61db88da6988ae64e2355e1eaaebd4f93283ed",
+    "research/arithmetic/RATIONAL_DEGREE_TEN_ALTERNATING_PENCIL.md": "fef6c3c3d6079be6ff99e56221d5e8c00ae4d04db3e4bf2222c1b34f14493f6b",
+    "research/jacobian/universal-keller-structure/PROOF.md": "1898b6c71619f81cca4d658409a5e804cee0fb5ad9a70bb0e40edf0a30197cb9",
+    "unpublished/common-arithmetic-fibers/sections/02-quadratic-gauge.tex": "d638447b90f4647fa6969600b90f771ce14594a3ba8ae09c1f9a8d2a367c9ad4",
+    "unpublished/common-arithmetic-fibers/sections/03-realization.tex": "33e6e57f4f1184fb3d678717cac6d9b043d3a5d520245ddb0d40830138fdb110"
+  },
+  "kind": "internal_exact_replay",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Exact degree-ten polynomial and quotient controls. Uniform degree, whole-scheme fullness, regular A10 pullback and infinitely many full-group fibres follow from the written proof and retained imported premises.",
+  "sympy": "1.14.0"
+}

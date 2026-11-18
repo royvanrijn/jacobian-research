@@ -1,0 +1,55 @@
+{
+  "arithmetic": "Q Clifford algebra; Q[x,s]; exact rational Sturm sequences",
+  "checker_sha256": "d629db954fff984f4fad83814b292b7b4d8805ffea0a2dee44361aec98476fc1",
+  "degree10_real_root_count_samples": [
+    6,
+    6,
+    2
+  ],
+  "degree26_shape": {
+    "LC_S": 25,
+    "degree_G": 11,
+    "degree_S": 12,
+    "generic_coefficient_derivative_identity": true
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "infinite_real_family": "c=-1,t=-(1+11/(1+121k)), integer k>=1",
+  "kind": "internal_exact_controls",
+  "odd_square_cycle_controls": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "python": "3.12.3",
+  "real_degree8_seed": {
+    "H": "z**8 - z**6 + 9*z**4/28 - 233*z**2/5292",
+    "Q": "s**4 - 5960*s**2/66706983 + 2685619/1483273860320763",
+    "a": "-1/5488",
+    "critical_signs": [
+      1,
+      -1,
+      1,
+      -1,
+      1
+    ],
+    "regular_real_root_count_samples": [
+      2,
+      6,
+      2
+    ]
+  },
+  "result": "PASS",
+  "schema_version": 1,
+  "spin": {
+    "commuting_elements_have_anticommuting_lifts": true,
+    "conjugation_changes_lift_sign": true,
+    "double_transposition_lift_square": -1
+  },
+  "sympy": "1.14.0",
+  "uniform_proof_limits": "All-degree spin, real-root-count and normal-form quantifiers use the written proof. The checker does not produce a degree26 paired-critical model or prove uniform braid transitivity."
+}

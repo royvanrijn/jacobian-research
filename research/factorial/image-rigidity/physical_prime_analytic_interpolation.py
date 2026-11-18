@@ -195,17 +195,80 @@ for prime in [3, 5, 7, 11]:
         expected = prime * (generator**prime-generator)**ell
         check("symbolic_affine_line_power_sum", left == expected)
 
+
+def prime_divisors(value):
+    divisor = 2
+    while divisor * divisor <= value:
+        if value % divisor == 0:
+            yield divisor
+            while value % divisor == 0:
+                value //= divisor
+        divisor += 1
+    if value > 1:
+        yield value
+
+
+def certify_gap_six_initial_interval():
+    prime, upper = 7, 529
+    Y = nmod_poly([0, 1], prime)
+    precisions = {n: prime**(3 + valuation(n, prime)) for n in range(2, upper+1)}
+    unit_coefficients = weights(prime, upper, max(precisions.values()))
+    zero_remainders = []
+    for n, modulus in precisions.items():
+        w_coefficients, h_coefficients = [], []
+        for k in range(n+1):
+            top = n + (prime-1)*k - 1
+            unit = unit_coefficients[k]
+            lower = unit * comb(top, prime*k)
+            upper_term = unit * comb(top, prime*k-1) if k else 0
+            w_coefficients.append(lower % modulus)
+            h_coefficients.append((prime*lower + upper_term) % modulus)
+        w = nmod_poly(w_coefficients, prime)
+        h = nmod_poly(h_coefficients, prime)
+        gcd = w.gcd(h)
+        lifted_h = nmod_poly(h_coefficients, modulus)
+        product = nmod_poly([1], prime)
+        for factor, exponent in gcd.factor()[1]:
+            degree = factor.degree()
+            check("gap_six_irreducible_residue_factor",
+                  all((pow(Y, prime**(degree//d), factor)-Y).gcd(factor).degree() == 0
+                      for d in prime_divisors(degree))
+                  and pow(Y, prime**degree, factor) == Y % factor)
+            product *= factor**exponent
+            lift = nmod_poly([int(c) for c in factor], modulus)
+            remainder = lifted_h % lift
+            if not remainder:
+                zero_remainders.append((n, factor))
+                check("gap_six_eisenstein_residue",
+                      n == 529 and factor == Y-2 and n % prime != 0
+                      and exponent == 3
+                      and not w % factor**3 and bool(w % factor**4)
+                      and not h % factor**14 and bool(h % factor**15)
+                      and nmod_poly(w_coefficients, prime**2)(2) == prime)
+            else:
+                check("gap_six_unramified_point_value_exclusion", bool(remainder))
+        check("gap_six_complete_residue_factorization", product == gcd)
+    check("gap_six_unique_zero_point_value_remainder",
+          zero_remainders == [(529, Y-2)])
+    return {"terminal_min": 2, "terminal_max": upper,
+            "eisenstein_exception_to_point_value_test": {"n": 529, "residue": 2}}
+
+
+gap_six_interval = certify_gap_six_initial_interval()
+
 files = [
     Path(__file__),
     HERE / "PHYSICAL_PRIME_ANALYTIC_INTERPOLATION.tex",
     HERE / "PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex",
     HERE / "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex",
+    HERE / "GAP_SIX_TWO_DIGIT_LEADING_TWO_SFC.tex",
 ]
 record = {
     "status": "PASS",
     "controls": sum(COUNTS.values()),
     "control_counts": COUNTS,
-    "scope": "Bounded exact checks of the residue, Gauss norm and two-sided identities. The analytic interpolation and resultant theorem have written proofs.",
+    "scope": "Exact controls of the written identities and complete replay of the finite gap-six interval. The analytic interpolation and resultant theorem have written proofs.",
+    "gap_six_interval": gap_six_interval,
     "source_sha256": {f.name: hashlib.sha256(f.read_bytes()).hexdigest() for f in files},
     "python": platform.python_version(),
     "independent_whole_proof_replay": False,
