@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{corollary}[theorem]{Corollary}
+\title{An index-independent recursion for the physical seeds}
+\author{Internal research note}\date{18 November 2026}
+\begin{document}\setlength{\emergencystretch}{1em}\maketitle
+Let $p$ be prime and $q=p-1$. Use the cyclic coefficients
+\[
+ \mathcal C_{q,a}(f;u)=\sum_{\ell\ge0}[z^{a+q\ell}]f(z)u^\ell,\qquad
+ 0\le a<q.
+\]
+As in the physical raising calculus, multiply component $a$ by
+$a!$ and take $u=pv$. In these coordinates multiplication by $z$
+is the matrix $J_*$ with $(J_*)_{a,a-1}=a$ and
+$(J_*)_{0,q-1}=pv/(q-1)!$. Thus $J_*^q=pvI$, including the
+scalar case $p=2$. Write $\delta=vD_v$ and
+\[
+ L_*=\operatorname{diag}(-a-q\delta)_{a=0}^{q-1}+J_*.
+\]
+The formal gauge and norm arguments in \texttt{lem:gauge},
+\texttt{thm:int} and \texttt{cor:continuous} of the
+\href{PHYSICAL_PRIME_RAISING_CALCULUS.tex}{physical raising calculus}
+apply to this unscaled operator. Their hypotheses use
+$J_*^q=pvI$, $[D,J_*]=-J_*$ and integral $J_*$ with nilpotent
+constant matrix, all of which hold here. The calculus therefore acts
+on $\mathbb Q_p\langle v\rangle^q$.
+
+\begin{theorem}[One measure for all physical indices]\label{thm:measure}
+Let $e_0=(1,0,\ldots,0)^{\mathsf T}$. The map
+$f\mapsto f(L_*)e_0$ is integration against a bounded vector measure
+$\mu$ on $\mathbb Z_p$. Its components are defined by their finitely
+additive values on compact open sets, with integration of continuous
+functions by uniform approximation. For every $N\ge1$, every
+$0\le a<q$, and every $Q\in\mathbb Q_p[X]$, the actual physical row is
+\[
+ V_{N,a}(Q;v)=\int_{\mathbb Z_p}
+       \binom{(x+pN-1)/q}{N}Q(x+N+q-1)\,d\mu_a(x).
+\]
+This formula gives the cyclic polynomial before its digit-content
+division by $p^{e_a(N)}$.
+\end{theorem}
+\begin{proof}
+Define the measure on a compact open set $U$ by
+$\mathbf{1}_U(L_*)e_0$. The contractive calculus gives boundedness
+and finite additivity. Indicator approximation gives the integration
+identity for continuous functions. The physical operator on whole
+$z$-polynomials is $N+q-1-\theta_z+z$.
+Cyclic extraction intertwines $-\theta_z+z$ with $L_*$,
+since $\theta_z$ contributes $a+q\delta$ in component $a$.
+The polynomial
+\[
+ \binom{(x+pN-1)/q}{N}
+    =\frac1{q^NN!}\prod_{j=0}^{N-1}(x+pN-1-qj)
+\]
+is the same polynomial as $\Pi_N(x+N+q-1)/(q^NN!)$.
+This proves the exact identity including its normalization.
+The operator bound refers to the whole Tate algebra vector,
+so the output admits evaluation at every integral $v$.
+\end{proof}
+
+\begin{theorem}[A finite recursion at every precision]\label{thm:matrix}
+Put $w=T/(1+T)$ and denote by $M(w)$ the vector whose component
+$a$ is $a!\mathcal C_{q,a}(\exp(zw);pv)$. The formal transform satisfies
+\[
+             \int_{\mathbb Z_p}(1+T)^x\,d\mu(x)=M(T/(1+T)).
+\]
+Let $E_p(X)$ be the integral Artin--Hasse series from
+\texttt{lem:artin-hasse-closure} of the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{arithmetic note}.
+Set
+\[
+ E_i=\frac{p^i-1}{q},\qquad
+ \chi(w)=-\sum_{i\ge1}p^{E_i-i}v^{E_i}w^{p^i},\qquad
+ P(w)=E_p(wJ_*).
+\]
+Then, over $\mathbb Z_p[v][[w]]$,
+\[
+                M(w)=P(w)M(\chi(w)),\qquad M(0)=e_0 .
+\]
+Modulo $p^K$, $P$ has degree at most $qK-1$ and $\chi$ is a
+polynomial. To compute $M$ through degree $m$ modulo $p^K$ one
+may use $\prod_{i=0}^{r-1}P(\chi^{\circ i}(w))e_0$, in that order,
+for any $r$ with $p^r>m$.
+\end{theorem}
+\begin{proof}
+In formal $T$ and $z$, conjugating $-\theta_z+z$ by $e^z$
+gives
+\[
+ (1+T)^{-\theta_z+z}1=e^z(1+T)^{-\theta_z}e^{-z}
+                    =\exp(zT/(1+T)).
+\]
+Each binomial moment uses finitely many $z$-coefficients.
+Legendre's formula shows that the coefficient from
+$z^{a+q\ell}$ in cyclic row $a$ has valuation
+$(s_p(a+q\ell)-a)/q\ge0$. Thus $M$ is integral.
+In the formal quotient $z^q=pv$ the defining exponential of
+$E_p(zw)$ is $\exp(zw-z\chi(w))$.
+Multiplication by this integral series is $P(w)$ in cyclic
+coordinates, proving the recursion. Only formal coefficients
+are used in both exponential identities.
+
+If $j=q\ell+b$ then $J_*^j=(pv)^\ell J_*^b$, so all the terms
+of $E_p(wJ_*)$ with $j\ge qK$ vanish modulo $p^K$. The integers
+$E_i-i$ tend to infinity, proving the assertion about $\chi$.
+Since $\chi$ starts at degree $p$, its $r$th iterate starts at
+degree at least $p^r$. Iterating the matrix equation proves the
+claimed formula.
+\end{proof}
+
+\begin{corollary}[The coupled reduction]\label{cor:reduced}
+Modulo $p$, $\chi(w)=-vw^p$ and $P_{ab}(w)=\binom ab w^{a-b}$
+for $b\le a$, with all other entries zero.
+If $\Phi\in w\mathbb F_p[v][[w]]$ solves $\Phi+v\Phi^p=w$,
+then $\bar M_a(w)=\Phi(w)^a$.
+\end{corollary}
+\begin{proof}
+Reduction kills the wrap link of $J_*$. The integral series
+$E_p(X)$ agrees with the exponential through degree $p-1$.
+Taking powers of the resulting nilpotent matrix gives
+$\binom ab w^{a-b}$ for the surviving entries.
+The series $\Phi$ exists by the formal iteration
+$\Phi=w-v\Phi^p$ and satisfies $\Phi(w)=w+\Phi(-vw^p)$.
+The vector with components $\Phi(w)^a$ therefore solves
+the reduced matrix equation by the binomial theorem. Since the
+substitution raises order by a factor of $p$, recursion and the
+constant $e_0$ uniquely determine its solution.
+\end{proof}
+
+For an integer-valued polynomial $f$, write its finite binomial
+expansion $f(x)=\sum_m c_m\binom xm$. The transforms above
+compute its integral by taking the corresponding linear
+combination of the $T$-coefficients. For the physical row
+one uses the specific test polynomial of Theorem~\ref{thm:measure}.
+Computing the content-divided row modulo $p^K$ requires this
+procedure at precision $K+e_a(N)$.
+A uniform bound excluding simultaneous critical vanishing of
+the actual normalized rows remains open.
+\end{document}

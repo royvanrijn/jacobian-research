@@ -567,8 +567,8 @@
       "doi": "10.1016/j.top.2004.10.008",
       "url": "https://doi.org/10.1016/j.top.2004.10.008",
       "snapshot": "sources/boileau-weidmann-structure-author.pdf",
-      "location": "Author manuscript42pp, Theorem2 printedp3 and all10necessary cases; Lemma2 printedp5; Section3.1 separating-torus argument printedpp16-20. Published Topology44(2)(2005),283-320; Crossref DOI metadata read.",
-      "audit": "Read every necessary type in Theorem2 and the relevant separating/no-Klein-bundle case proof. The necessary list has at most3JSJpieces; original exceptional irregular-hyperbolic-cover case10 has only2 and does not affect this consequence. Millichap-Worden2016 Cor5.4 eliminates that original type, separately recorded as current literature. This classical theorem is imported, not independently reproved or formally certified. Full42page theorem proof and full published-version comparison not claimed; publication metadata checked via Crossref. A bounded erratum/gap search found no correction to the theorem, not an exhaustive historical audit.",
+      "location": "Author manuscript42pp, Theorem2 printedp3 and all10necessary cases; Lemma2 printedp5; Section3.1 separating-torus argument printedpp16-20. Published Topology44(2)(2005),283-320; Crossref DOI metadata read. Author Lemma 22 and proof pp. 34–35: generating-pair inversion.",
+      "audit": "Read every necessary type in Theorem2 and the relevant separating/no-Klein-bundle case proof. The necessary list has at most3JSJpieces; original exceptional irregular-hyperbolic-cover case10 has only2 and does not affect this consequence. Millichap-Worden2016 Cor5.4 eliminates that original type, separately recorded as current literature. This classical theorem is imported, not independently reproved or formally certified. Full42page theorem proof and full published-version comparison not claimed; publication metadata checked via Crossref. A bounded erratum/gap search found no correction to the theorem, not an exhaustive historical audit. Read Lemma 22 and its geometric proof in the retained author version. The new symmetry rank proof includes a direct matrix argument, including lattices with torsion.",
       "scope": "A compact orientable irreducible3manifold of rank2 with nontrivial JSJ cannot have4canonical JSJpieces. Used as a necessary condition only, without rank=Heegaard-genus or sufficiency/priority assumptions."
     },
     {
@@ -605,8 +605,8 @@
       "snapshot_url": "https://www.maths.gla.ac.uk/~mpowell/Aschenbrenner-Friedl-Wilton-3-manifold-groups-final-version-031115.pdf",
       "comparison_snapshot": "sources/afw-3manifold-groups-author-v3.pdf",
       "comparison_url": "https://friedl.app.uni-regensburg.de/papers/3-manifold-groups-v3.pdf",
-      "location": "Final author book184pp, printedpp29-31/PDF33-35, Theorems2.1.1-2.1.3 and Section2.2 boundary warning; compared earlier149pp author-v3 Theorems2.1-2.3, printedpp21-22. EMS publisher metadata gives20Aug2015, DOI10.4171/154,230printed pages.",
-      "audit": "Read the prime closed rigidity theorem and full arbitrary-closed classification statement with lens/orientation exceptions and nearby attribution to geometrization, Mostow, Waldhausen and Scott. Read the Kneser converse and boundary-peripheral warning. Compared only these scopes across the two retained author versions. Full184/149page manuscripts, constituent rigidity proofs and full published-version comparison not audited; imported classical results. Additionally, Theorem1.7.6 printedp19/PDFp23 was directly read for the cofinite note: every compact orientable irreducible manifold with empty or toroidal boundary decomposes into hyperbolic or Seifert pieces. Full Geometrization proof remains imported.",
+      "location": "Final author book184pp, printedpp29-31/PDF33-35, Theorems2.1.1-2.1.3 and Section2.2 boundary warning; compared earlier149pp author-v3 Theorems2.1-2.3, printedpp21-22. EMS publisher metadata gives20Aug2015, DOI10.4171/154,230printed pages. Author v3 Theorem 1.10, p. 11, finite-volume rigidity; §2.2, isometry/outer automorphism identification.",
+      "audit": "Read the prime closed rigidity theorem and full arbitrary-closed classification statement with lens/orientation exceptions and nearby attribution to geometrization, Mostow, Waldhausen and Scott. Read the Kneser converse and boundary-peripheral warning. Compared only these scopes across the two retained author versions. Full184/149page manuscripts, constituent rigidity proofs and full published-version comparison not audited; imported classical results. Additionally, Theorem1.7.6 printedp19/PDFp23 was directly read for the cofinite note: every compact orientable irreducible manifold with empty or toroidal boundary decomposes into hyperbolic or Seifert pieces. Full Geometrization proof remains imported. Read the exact author v3 Mostow–Prasad–Marden statement and the identification of outer automorphisms with isometries for hyperbolic 3-manifolds. Full rigidity proofs remain imported.",
       "scope": "Closed orientable3manifolds with isomorphic groups differ only by orientations of prime factors and lens-space ambiguity. A closed orientable prime irreducible infinite-group graph-manifold model therefore determines any closed orientable manifold with its group up to homeomorphism and orientation; no boundary-manifold or finite lens-group rigidity shortcut."
     },
     {
@@ -1087,6 +1087,44 @@
       "audit": "Internal source-audit agent read exact statement and proof, textually and visually, tracing JSJessential vertices and malnormal cusp groups to Corollary18. Full prior Nielsen-method proof remains imported.",
       "scope": "Closed orientable3-manifold with N non-Seifert JSJpieces has group rank>=N+1. Upstream context for GWZ boundary/doubling bounds; no adopted lower bound4 for the current knot groups.",
       "sha256": "b2796fc9075d8f9e4e9e3988cdc90f53e3336261b4488a0d160fded6de0bb57a"
+    },
+    {
+      "id": "FPS22",
+      "title": "Effective bilipschitz bounds on drilling and filling",
+      "authors": "David Futer, Jessica S. Purcell and Saul Schleimer",
+      "year": 2022,
+      "doi": "10.2140/gt.2022.26.1077",
+      "url": "https://users.monash.edu/~jpurcell/papers/EffectiveBilipschitz.pdf",
+      "snapshot": "sources/fps-effective-bilipschitz-author.pdf",
+      "publication": "Geometry & Topology 26 (2022), 1077–1188",
+      "location": "Author edition, Definition 1.3 p. 6, Theorem 5.13 proof p. 28, Lemma 7.26 pp. 48–49, Theorem 7.28 and complete proof pp. 49–50",
+      "audit": "Read the normalized-length definition and the exact shortest-core statement and proof in the retained author text, including the systole inequality from Lemma 7.26 and the finite-volume argument preserving unfilled cusps. The cone-deformation estimates and the original interval bound in Lemma 7.26 are used as published inputs.",
+      "scope": "At normalized length at least 10.1 and parent systole greater than 2π/(10.1²−58), a single filled core is isotopic to the unique shortest geodesic. The application allows a complete unrelated cusp to remain unfilled. No distinct-slope or closed-manifold assumption is inferred from the cosmetic-surgery corollary."
+    },
+    {
+      "id": "FGGTV15",
+      "title": "A census of tetrahedral hyperbolic manifolds",
+      "authors": "Evgeny Fominykh, Stavros Garoufalidis, Matthias Goerner, Vladimir Tarkaev and Andrei Vesnin",
+      "year": 2015,
+      "arxiv": "1502.00383v2",
+      "url": "https://arxiv.org/abs/1502.00383v2",
+      "snapshot": "sources/fggtv-tetrahedral-1502.00383.pdf",
+      "publication": "arXiv:1502.00383v2, 15 October 2015",
+      "location": "Sections 3.1–3.3, pp. 7–12, in particular Definition 3.3 and tilt computation §3.2",
+      "audit": "Read the canonical decomposition and retriangulation definitions and interval shape/tilt derivations. The original Epstein–Penner and Weeks cell and tilt theorems are named mathematical inputs. The target inputs are general ideal tetrahedra rather than regular tessellations.",
+      "scope": "Strict negative faces after equal-area cusp normalization certify the actual canonical decomposition. Its complete combinatorial automorphism group bounds the hyperbolic isometries. No census identity or tetrahedrality assumption is used."
+    },
+    {
+      "id": "SNAPPY332-VERIFIED-MANIFOLD",
+      "title": "Manifold: the main class — SnapPy 3.3.2 documentation",
+      "authors": "Marc Culler, Nathan Dunfield, Matthias Goerner and Jeffrey Weeks",
+      "year": 2026,
+      "url": "https://snappy.computop.org/manifold.html",
+      "snapshot": "sources/snappy-3.3.2-manifold-doc.html",
+      "publication": "SnapPy 3.3.2 project documentation, retained 18 November 2026",
+      "location": "canonical_retriangulation, cusp_translations, length_spectrum_alt, length_spectrum_alt_gen and drill_word API contracts",
+      "audit": "Read the current API text and the corresponding installed canonical, length-spectrum and drilling implementation points. Verified cutoff includes all geodesics up to the bound and verified count contains a shortest. Word basis is unsimplified. The interval-only canonical route reruns strict tilts and all combinatorial automorphisms are independently enumerated. Existing native topology and complete-shape contracts remain imports.",
+      "scope": "Verified geodesic completeness, cusp/surgery-core marking and embedded-geodesic drilling behavior are mathematical software dependencies. Purely numerical symmetry searches are never used for a positive theorem."
     }
   ],
   "unresolved_scope_extractions": [

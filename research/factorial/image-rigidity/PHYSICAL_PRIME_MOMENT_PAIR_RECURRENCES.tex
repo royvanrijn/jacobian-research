@@ -1,10 +1,10 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,hyperref}
-\newtheorem{lemma}{Lemma}\newtheorem{proposition}[lemma]{Proposition}
+\newtheorem{lemma}{Lemma}\newtheorem{proposition}[lemma]{Proposition}\newtheorem{theorem}[lemma]{Theorem}\newtheorem{corollary}[lemma]{Corollary}
 \title{The primitive physical moment pair and periodic local expansions}
 \author{Internal research note}\date{18 November 2026}
-\begin{document}\maketitle
+\begin{document}\setlength{\emergencystretch}{1em}\maketitle
 For any prime $p$, put $q=p-1$ and, for $n\ge1$,
 \[
  H_n(Y)=p\sum_{k=0}^n\binom nk(n)_{qk}(Y/p)^k,\quad
@@ -29,7 +29,7 @@ For $n\ge1$,
  W_n(Y)=\frac{nH_n-YH'_n}{pn}
        =\sum_{k=0}^{n-1}U_p(k)
                   \binom{n+qk-1}{pk}Y^k\in\mathbb Z[Y],
- \quad W_n(0)=1,\quad [Y^{n-1}]W_n=U_p(n-1),
+ \quad W_n(0)=1,
  \tag{2}
 \]
 and
@@ -101,11 +101,13 @@ For every prime $p$ and $K\ge1$, put $L=p^{K-1}$ and
  -1,&\text{otherwise}.
  \end{cases}
 \]
-Then $U_p(k+L)\equiv\epsilon_{p,K}U_p(k)\pmod{p^K}$
-for all $k\ge0$. With $A_{p,K}(Q)=\sum_{j=0}^{L-1}U_p(j)Q^j$,
+\[
+ U_p(k+L)\equiv\epsilon_{p,K}U_p(k)\pmod{p^K},\quad k\ge0. \tag{5}
+\]
+With $A_{p,K}(Q)=\sum_{j=0}^{L-1}U_p(j)Q^j$,
 \[
  M_p(Q)\equiv\frac{A_{p,K}(Q)}{1-\epsilon_{p,K}Q^L}\pmod{p^K}.
- \tag{5}
+ \tag{6}
 \]
 \end{lemma}
 \begin{proof}
@@ -146,8 +148,7 @@ For a fixed specialization $Y$ in any finite unramified
 coefficient ring $\mathcal O_f/p^K$, the sequence $W_n(Y)$
 is purely periodic: its length-$p^K$ state is advanced by an
 invertible companion matrix in a finite ring.
-This is finite precision at a fixed coefficient ring, not a
-uniform finite state space for all precisions and residue degrees.
+The state space depends on both $K$ and the residue degree.
 \end{proposition}
 \begin{proof}
 Substitute (6) into (4) and clear $(1-z)^{pL}$.
@@ -206,6 +207,68 @@ The second follows from the exact rational power-sum identity
 The numerical $p=3$ control proves the stated scope limitation.
 \end{proof}
 
+
+\begin{theorem}[A recurrence of order linear in precision]\label{thm:linear}
+Set $w=(p-1)!$, and write
+\[
+ a_p=\begin{cases}1&p=2,\\ 2&p=3,\\ 3&p\ge5.\end{cases}
+ \qquad D=p\left\lfloor\frac{K-1}{a_p}\right\rfloor .
+\]
+There is a polynomial $C_K\in\mathbb Q_p[X]$ of degree at most
+$D$, integer-valued on $\mathbb Z_p$, such that
+\[
+                U_p(k)\equiv w^k C_K(k)\pmod{p^K}
+                   \qquad(k\ge0).
+\]
+Consequently $G_p$ is congruent modulo $p^K$ to a proper rational
+function with denominator $\big((1-z)^p-wYz\big)^{D+1}$.
+This gives a reversible recurrence of order $p(D+1)$
+for the actual pair from its first full state.
+\end{theorem}
+\begin{proof}
+Let
+\[
+ \beta(x)=\prod_{i=1}^{p-1}(1+px/i)-1\in\mathbb Z_p[x].
+\]
+Every coefficient is divisible by $p^{a_p}$. For $p=2$ this
+is immediate. For $p=3$ the polynomial is $9(x+x^2)/2$.
+For $p\ge5$, the coefficients through degree two have the
+divisibility proved in Lemma~\ref{lem:cubic}. Every other term
+carries an explicit factor $p^3$.
+For positive integers $k$ one has the exact product
+$U_p(k)/w^k=\prod_{\ell=0}^{k-1}(1+\beta(\ell))$.
+Let $E_j(k)$ be the $j$th elementary symmetric sum of
+$\beta(0),\ldots,\beta(k-1)$, with $E_0=1$.
+Its successive difference is
+\[
+                    E_j(k+1)-E_j(k)=\beta(k)E_{j-1}(k).
+\]
+Since $\deg\beta\le p-1$, induction and discrete summation
+show that $E_j(k)$ is a polynomial of degree at most $pj$.
+For discrete summation, a term $\binom{k}{r}$ has primitive
+$\binom{k}{r+1}$ under the forward difference, and the value
+at zero fixes the additive constant.
+Each $E_j(k)$ is an integer in the valuation ring on
+nonnegative integers and takes values in $p^{a_pj}\mathbb Z_p$
+there. These bounds extend to $\mathbb Z_p$ by continuity.
+Thus $C_K=\sum_{j=0}^{\lfloor(K-1)/a_p\rfloor} E_j$ has the
+stated degree and agrees with the product modulo $p^K$.
+
+Write $C_K(k)=\sum_{j=0}^{D}c_j\binom{k}{j}$, where
+$c_j=\Delta^j C_K(0)\in\mathbb Z_p$.
+Using (4) and the binomial series gives
+\[
+ G_p\equiv
+ \sum_{j=0}^{D}
+ \frac{c_j(wYz)^j(1-z)^{p-1}}{\big((1-z)^p-wYz\big)^{j+1}}
+                  \pmod{p^K}.
+\]
+After clearing denominators the numerator has degree at most
+$p(D+1)-1$. The denominator has constant coefficient one and
+unit leading coefficient. The recurrence for $W_n$ therefore
+starts with its first full state, and (3) transfers it to $H_n$.
+\end{proof}
+
 \begin{theorem}[Explicit periods for truncated local expansions]\label{thm:jet-period}
 Fix a prime $p$, a precision $K\ge1$, and a Taylor order $e\ge0$.
 Let $y$ be a unit in the integers $\mathcal O_E$ of a finite
@@ -221,8 +284,10 @@ $H_n(y+Z)$ and $W_n(y+Z)$, $n\ge1$, have common period
  P=m p^{K-1+\max(K-1,t_e)} .
  \tag{10}
 \]
-If $p\ge5$ and $K\le3$, the smaller bound $m p^{K-1+t_e}$
-also gives a period.
+The same conclusion holds with $K-1$ inside the maximum
+replaced by the least $u$ with $p^u\ge D+1$ from
+Theorem~\ref{thm:linear}. In particular, for $p\ge5$ and
+$K\le3$, $m p^{K-1+t_e}$ is a period.
 \end{theorem}
 \begin{proof}
 Write $L=p^{K-1}$.
@@ -244,18 +309,16 @@ the recurrence for $W_n$, from the first full length-$pL$ state.
 Therefore the shift to the $P$th power is the identity, proving
 periodicity from $n=1$. Equation (3) gives the same period for $H_n$.
 
-For $p\ge5$ and $K\le3$, use the denominator of (9) instead.
-Its reciprocal reduces to $f_{\bar y+Z}$, since $w\equiv-1\bmod p$.
-Thus the same argument uses $L=1$ at the residue step and
-$h=t_e$. The numerator in (9) has degree below the denominator
-degree, so this recurrence also starts with the first full state.
+For the other bound, use the denominator in Theorem~\ref{thm:linear}.
+Its reciprocal reduces to $f_{\bar y+Z}^{D+1}$ since $w\equiv-1\bmod p$.
+The same argument then takes $h=\max(u,t_e)$.
+For $p\ge5$ and $K\le3$ one has $D=0$.
 \end{proof}
 
 \begin{corollary}[A local exclusion in an arithmetic progression]\label{cor:145}
 For every positive integer $n\equiv145\pmod{16758}$, the polynomial
 $H_{n,7}(Y)$ has no multiple root in the full residue disk
-$v_7(Y-4)>0$. Its roots there have distances of valuations $1/5$
-and $1/9$ from $4$, in groups of five and nine. Both groups give
+$v_7(Y-4)>0$. It has five roots with $v_7(Y-4)=1/5$ and nine with $v_7(Y-4)=1/9$. Both groups give
 Eisenstein factors over $\mathbb Q_7$ after translation by $4$.
 \end{corollary}
 \begin{proof}
@@ -295,7 +358,6 @@ integer valuation. Each factor is Eisenstein over $\mathbb Q_7$,
 hence separable, and the two factors have disjoint roots.
 \end{proof}
 
-The progression concerns the residue disk at $4$.
-Excluding the remaining residue disks is required for an
-all-index squarefreeness proof.
+An all-index squarefreeness proof still requires control of the other
+residue disks and terminal congruence classes.
 \end{document}

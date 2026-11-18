@@ -3210,6 +3210,148 @@
       "external_review": false,
       "novelty_claim": false,
       "priority_claim": false
+    },
+    "physical_prime_moment_pair_recurrences": {
+      "scope": "At every prime and every index the actual consecutive lower-one moment pair at gap p-1 is the integral pair W_n,W_(n+1), with H_n=W_(n+1)+(p-1)W_n. The unit-factorial period multiplier gives rational series at every finite precision, including the dyadic sign change. The recurrence order also has a bound linear in precision. For p>=5 the order-p trace recurrence holds modulo p^3. At any unramified unit center, truncated local expansions have explicit index periods. In particular the entire disk v_7(Y-4)>0 has two separable local factors of degrees five and nine for every positive n=145 mod 16758. The disk exclusion leaves all other disks of these orders unrestricted.",
+      "canonical_source": "factorial/image-rigidity/PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex",
+      "checker": "factorial/image-rigidity/physical_prime_moment_pair_recurrences.py",
+      "receipt": "factorial/image-rigidity/physical_prime_moment_pair_recurrences_verification.json",
+      "owned_source_sha256": {
+        "factorial/image-rigidity/PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex": "cb97627c84c07228bad42d0f5c217e71267a4057027b0da021bbbc15a3a74a20",
+        "factorial/image-rigidity/physical_prime_moment_pair_recurrences.py": "90524512651209ef15bafcb537bcec7fbda5d674a1a15508da5ee0be3de989f7",
+        "factorial/image-rigidity/physical_prime_moment_pair_recurrences_verification.json": "16510c4cea8bd20da715ac81211ca63fd253a0a3b8a9a224beb41dfe93f95a53"
+      },
+      "declarations": {
+        "lem:pair": "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-PAIR",
+        "cor:critical": "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-COR-CRITICAL",
+        "lem:antiperiod": "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-ANTIPERIOD",
+        "prop:rational": "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-PROP-RATIONAL",
+        "lem:cubic": "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-LEM-CUBIC",
+        "thm:linear": "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-THM-LINEAR",
+        "thm:jet-period": "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-THM-JET-PERIOD",
+        "cor:145": "FACT-PHYSICAL-PRIME-MOMENT-PAIR-RECURRENCES-COR-145"
+      },
+      "mathematical_dependencies": {
+        "lem:pair": [],
+        "cor:critical": [
+          "lem:pair"
+        ],
+        "lem:antiperiod": [
+          "lem:pair"
+        ],
+        "prop:rational": [
+          "lem:pair",
+          "lem:antiperiod"
+        ],
+        "lem:cubic": [
+          "lem:pair"
+        ],
+        "thm:linear": [
+          "lem:pair",
+          "lem:cubic"
+        ],
+        "thm:jet-period": [
+          "prop:rational",
+          "thm:linear"
+        ],
+        "cor:145": [
+          "thm:jet-period",
+          "lem:pair"
+        ]
+      },
+      "input_sha256": {},
+      "internal_controls": 11080,
+      "all_index_squarefreeness": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
+    },
+    "physical_prime_raising_calculus": {
+      "scope": "For every prime p and physical index N with gap p-1, the actual row divisibility bound from the base-p digit sum holds for arbitrary integer-valued polynomials on Z_p. Integral formal gauges yield a contractive functional calculus for the exact raising operator on the Tate algebra, with additional powers of p for factors (X^p-X) and compatible continuous residue projectors. The gauge coefficients fail to tend to zero, while the bounded calculus uses polynomial outputs and operator norm limits. Excluding simultaneous cancellation after evaluation of the actual coupled seed remains open.",
+      "canonical_source": "factorial/image-rigidity/PHYSICAL_PRIME_RAISING_CALCULUS.tex",
+      "checker": "factorial/image-rigidity/physical_prime_raising_calculus.py",
+      "receipt": "factorial/image-rigidity/physical_prime_raising_calculus_verification.json",
+      "owned_source_sha256": {
+        "factorial/image-rigidity/PHYSICAL_PRIME_RAISING_CALCULUS.tex": "bd828f519547123c88a207eecf449600206bebc5b4837295f5ca13159de63110",
+        "factorial/image-rigidity/physical_prime_raising_calculus.py": "8fb6cdbbea1b74c98030a69fb6a91b277cfbc86315c4ed9e6ff0788510e3699d",
+        "factorial/image-rigidity/physical_prime_raising_calculus_verification.json": "0f50d15adb7c1778d71620af6eb1dbc87ee0fda0fe35d35332672c3d46e40dee"
+      },
+      "declarations": {
+        "lem:content": "FACT-PHYSICAL-PRIME-RAISING-CALCULUS-LEM-CONTENT",
+        "lem:gauge": "FACT-PHYSICAL-PRIME-RAISING-CALCULUS-LEM-GAUGE",
+        "thm:int": "FACT-PHYSICAL-PRIME-RAISING-CALCULUS-THM-INT",
+        "cor:extra-content": "FACT-PHYSICAL-PRIME-RAISING-CALCULUS-COR-EXTRA-CONTENT",
+        "cor:continuous": "FACT-PHYSICAL-PRIME-RAISING-CALCULUS-COR-CONTINUOUS"
+      },
+      "mathematical_dependencies": {
+        "lem:content": [
+          "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-ARTIN-HASSE-CLOSURE"
+        ],
+        "lem:gauge": [],
+        "thm:int": [
+          "lem:content",
+          "lem:gauge"
+        ],
+        "cor:extra-content": [
+          "thm:int"
+        ],
+        "cor:continuous": [
+          "thm:int"
+        ]
+      },
+      "input_sha256": {
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+      },
+      "internal_controls": 29040,
+      "all_index_squarefreeness": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
+    },
+    "physical_prime_actual_seed_recursion": {
+      "scope": "For every prime p and gap p-1, one bounded vector measure represents every actual physical row before digit-content division. The Amice transform has an exact Artin-Hasse matrix recursion over Z_p[v][[w]]. At precision K its multiplication matrix has degree at most (p-1)K-1, and its substitution is polynomial and raises order by at least p. After content division the coefficient calculation requires precision K+e_a(N). Uniform exclusion of simultaneous critical vanishing of the normalized rows remains open.",
+      "canonical_source": "factorial/image-rigidity/PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex",
+      "checker": "factorial/image-rigidity/physical_prime_actual_seed_recursion.py",
+      "receipt": "factorial/image-rigidity/physical_prime_actual_seed_recursion_verification.json",
+      "owned_source_sha256": {
+        "factorial/image-rigidity/PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex": "dca10b45493dc5401885950f7282aeda1cfed5b9d49b39863cc2b75d876cda87",
+        "factorial/image-rigidity/physical_prime_actual_seed_recursion.py": "dfcfe19d7545443e84592e6074b2e591fd2e8151f06c956e5fea406c326610b7",
+        "factorial/image-rigidity/physical_prime_actual_seed_recursion_verification.json": "859a7bfeb0f566a5cd2cef0e667ac3b934a53ef55a737f7496136d457337d018"
+      },
+      "declarations": {
+        "thm:measure": "FACT-PHYSICAL-PRIME-ACTUAL-SEED-RECURSION-THM-MEASURE",
+        "thm:matrix": "FACT-PHYSICAL-PRIME-ACTUAL-SEED-RECURSION-THM-MATRIX",
+        "cor:reduced": "FACT-PHYSICAL-PRIME-ACTUAL-SEED-RECURSION-COR-REDUCED"
+      },
+      "mathematical_dependencies": {
+        "thm:measure": [
+          "FACT-PHYSICAL-PRIME-RAISING-CALCULUS-LEM-GAUGE",
+          "FACT-PHYSICAL-PRIME-RAISING-CALCULUS-THM-INT",
+          "FACT-PHYSICAL-PRIME-RAISING-CALCULUS-COR-CONTINUOUS"
+        ],
+        "thm:matrix": [
+          "thm:measure",
+          "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-ARTIN-HASSE-CLOSURE"
+        ],
+        "cor:reduced": [
+          "thm:matrix"
+        ]
+      },
+      "input_sha256": {
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/PHYSICAL_PRIME_RAISING_CALCULUS.tex": "bd828f519547123c88a207eecf449600206bebc5b4837295f5ca13159de63110"
+      },
+      "internal_controls": 11408,
+      "all_index_squarefreeness": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
     }
   },
   "open_bridge_assessments": {

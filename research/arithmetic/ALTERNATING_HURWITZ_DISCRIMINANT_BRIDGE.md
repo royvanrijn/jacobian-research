@@ -1,10 +1,12 @@
 # Alternating Hurwitz tuples and square-discriminant tangent pencils
 
-This note proves an all-degree existence bridge from the explicit alternating
-tuples to Laurent covers and sharp collinear-node configurations. It records a
-separate arithmetic obstruction in degree eight. Existence over a number field
-does not assert an explicit coefficient formula or descent to the rationals.
-No priority claim or polynomial affine-space Keller realization is made.
+This note proves an all-degree bridge from the explicit alternating tuples to
+Laurent covers and sharp collinear-node configurations. Exact degree-eight
+algebraic and rational coefficient models accompany it. The rational examples
+have geometric A8 and arithmetic S8; the literal rational-square obstruction
+remains valid. The underlying passport existence is already implied by prior
+theorems, as documented below. No polynomial affine-space Keller realization or
+priority for the explicit formulas is asserted.
 
 The tuple and generation input is
 [the alternating-target proof](../meridional-rank/representations/ALTERNATING_TARGET_PRIME_FAMILIES.tex),
@@ -249,8 +251,13 @@ group tests in
 [the Keller monodromy theory](../jacobian/monodromy-theory/THEORY.md),
 Sections 3--5. The source and target are affine charts with deleted
 divisors. Their nonconstant units persist after adjoining variables;
-this construction supplies no polynomial affine-space Keller map or
-sufficiency theorem for those tests.
+the stronger [full-target chart and normalization-unit argument](../jacobian/monodromy-theory/ALTERNATING_LAURENT_FEASIBILITY.md)
+show that the same extensions have surjective etale Jacobian-one charts over
+the entire affine target. Their finite normalizations contain the nonconstant
+unit z, which excludes every polynomial affine-space realization of these
+specific extensions over the retained affine base, even without a Jacobian
+condition. The abstract alternating action through another extension remains
+a separate realization question.
 
 The braid W_b in the alternating-target construction fixes the ordered
 finite tuple under its stated Hurwitz convention. Embed B_b in B_(b+1)
@@ -262,52 +269,69 @@ for ordered branch points take a pure stabilizing power of W_b.
 This uses the usual Hurwitz-space interpretation and makes no new
 correspondence claim.
 
-## Literature and unresolved obligations
+## Explicit rational models and the degree-eight braid orbit
+
+There are now [infinitely many rational-coefficient examples](RATIONAL_ALTERNATING_PENCIL_REALIZATION.md).
+A simple member is
+
+\[
+ H(z)=z^8+z^6+\frac9{28}z^4+\frac{233}{5292}z^2,\qquad
+ a=-\frac1{5488},
+\]
+\[
+ \Delta_H(s,a)=-7^7
+ \left(s^4+\frac{5960}{66706983}s^2+
+                    \frac{2685619}{1483273860320763}\right)^2.
+\]
+
+Its four finite branch values have double-transposition inertia, its geometric
+group is A8, its arithmetic group is S8, and its constant field is
+Q(sqrt(-7)). The two-parameter coefficient family and infinite pairwise
+nonisomorphic full-A8 subfamily are proved in the linked note. These examples
+settle rational-coefficient geometric realization positively. They are
+consistent with Corollary 5, which excludes a literal square over Q.
+
+The earlier [quadratic-field model](DEGREE_EIGHT_ALTERNATING_PENCIL.md),
+with e=(-1009+94sqrt(-329))/10584, retains its separate no-rational-form
+statement: its coefficient invariant b_1 b_7^2/b_5^3=e is nonrational.
+
+The [complete degree-eight Hurwitz computation](DEGREE_EIGHT_HURWITZ_ORBIT.md)
+finds 93,296 double-transposition quadruples with a fixed seven-cycle product
+and exactly one full-A8 braid orbit, of size 47,334. Consequently both the
+rational models and the earlier quadratic-field model lie in the knot tuple's
+absolute braid orbit. This is deformation equivalence of branch-cycle data,
+not isomorphism of individual covers.
+
+## Priority and remaining questions
 
 Bilu--Strambi, *Quantitative Riemann Existence Theorem over a Number Field*,
 [arXiv:0809.0345v4](https://arxiv.org/pdf/0809.0345v4), Theorems 1.1 and
-1.2(a), pages 2--3, supply complex realization and realization over a
-number field of the same topological cover with algebraic branch points.
-These are imported theorems; their proofs have not been independently
-reproved here.
+1.2(a), pages 2--3, supply complex realization and a number-field model of
+the same topological cover for algebraic branch points. They are imported
+theorems, not independently reproved here.
 
-Peter Mueller, *Permutation groups with a cyclic two-orbits subgroup and
-monodromy groups of Laurent polynomials*, Ann. Sc. Norm. Sup. Pisa (5) 12
-(2013), 369--438,
-[Theorem 4.8, pages 416--418](https://www.numdam.org/item/ASNSP_2013_5_12_2_369_0.pdf),
-classifies the relevant indecomposable two-pole setting. Its natural
-alternating/symmetric case explicitly permits many ramification tuples.
-Broad alternating Laurent monodromy is therefore established precedent;
-the exact signature used here and its collinear-node formulation require
-a separate priority comparison.
+The [exact primary-source comparison](ALTERNATING_HURWITZ_PRIORITY.md) identifies
+the underlying passport as a direct consequence of Edmonds--Kulkarni--Stong,
+Proposition 5.3 (1984), and Pakovich, Theorem 1.1 (2009). For even degrees
+at least ten, classical primitive-group results also force full alternating
+monodromy. Thus broad cover existence is established precedent, and the
+maximal-collinear-node existence follows geometrically from that passport.
+The elementary geometric interpretation, explicit knot tuple and stabilizer,
+and exact coefficient certificates supply concrete connections; no new
+abstract existence or worldwide priority claim is made.
 
-Magaard--Voelklein, *The monodromy group of a function on a general curve*,
-[arXiv:math/0304130](https://arxiv.org/abs/math/0304130), and
-Bouw--Wewers, *Alternating groups as monodromy groups in positive
-characteristic*,
-[published article](https://msp.org/pjm/2005/222-1/pjm-v222-n1-p07-p.pdf),
-are related alternating-cover context, not premises of these proofs.
-
-The [exact degree-eight model](DEGREE_EIGHT_ALTERNATING_PENCIL.md) has
-
-\[
- H(z)=z^8+z^6+ez^2,\quad a=-625/21952,\quad
- e=\frac{-1009+94\sqrt{-329}}{10584}.
-\]
-
-Its four finite branch values have double-transposition inertia and its geometric
-group is A8. Its discriminant is a square over
-Q(sqrt(-329),sqrt(-7)). The coefficient invariant b_1 b_7^2/b_5^3=e for
-the Laurent expression proves that this specific cover has no rational form.
-Other rational-coefficient geometric realizations, exact priority, and any
-additional polynomial-Keller obstruction remain separate questions. In particular a square discriminant
-alone does not distinguish two simple critical points with one value from
-one critical point of ramification index three, and it does not establish
-that a transitive subgroup of A8 equals A8.
+The following questions remain distinct: rational-coefficient realizations in
+every even degree, polynomial Keller realization of the abstract alternating
+action through a different embedded extension, and exact historical priority
+for the displayed rational family and explicit stabilizers. The specific
+Laurent extensions are excluded from polynomial realization over their
+displayed affine bases by the normalization-unit proof.
 
 The [tuple checker](../meridional-rank/representations/verify_alternating_tuple_product.py)
 and its [receipt](../meridional-rank/representations/alternating_tuple_product_verification.json)
-replay exact controls for b=4,...,64, including bad-input controls. This is
-internal bounded evidence; the insertion argument proves Lemma 1 for all b.
-Independent replay, formal verification, external human review, and
-worldwide priority are not claimed.
+supply bounded controls for b=4,...,64; the insertion proof establishes the
+all-b theorem. The rational-family checker proves the displayed polynomial
+identities in all its parameters, while the braid checker exhausts its entire
+finite degree-eight domain. These are different evidence scopes.
+Independent external replay, formal verification and external human review
+are not claimed.

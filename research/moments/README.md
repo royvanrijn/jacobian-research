@@ -29,6 +29,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Exact zero-boundary invariant quintic moment scheme | Internal result | proved | [Source](vanishing/GAUSSIAN_ZERO_BOUNDARY_QUINTIC_MOMENT_IDEAL.md) |
 | Generic centered five-direction Gaussian moment schemes and exact two-prefix bounds | Internal result | proved | [Source](vanishing/GAUSSIAN_GENERIC_FIVE_DIRECTION_MOMENT_SCHEMES.md) |
 | Fixed logarithmic covers and quadratic radial Gaussian finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_LOGARITHMIC_COVER_FINITE_IMAGES.md) |
+| Unrestricted quadratic radial Gaussian finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md) |
 
 **Computed obligations:** 38 unresolved; 1 resolved within their exact scope.
 

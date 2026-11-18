@@ -87,6 +87,27 @@ for p in [5,7,11,13]:
    check("physical_trace_cubic_coefficient",(val-trace)%mod==0)
 check("three_adic_cubic_counterexample",units(3,2)[2]==40 and (40-2**2)%27!=0)
 
+
+for p in [2, 3, 5, 7, 11]:
+    block_exponent = min(p-1, 3)
+    for precision in range(1, 8):
+        modulus = p**precision
+        w = factorial(p-1)
+        inverse_w = pow(w, -1, modulus)
+        degree = p*((precision-1)//block_exponent)
+        sample_size = 2*degree+14
+        factorial_units = units(p, sample_size, modulus)
+        ratios = [value * pow(inverse_w,k,modulus) % modulus
+                  for k,value in enumerate(factorial_units)]
+        differences = ratios[:degree+1]
+        newton = []
+        while differences:
+            newton.append(differences[0])
+            differences = [(b-a) % modulus for a,b in zip(differences,differences[1:])]
+        for k in range(degree+1, len(ratios)):
+            predicted = sum(value*comb(k,j) for j,value in enumerate(newton))
+            check("linear_precision_Newton_degree", predicted % modulus == ratios[k])
+
 def centered_coefficients(coefficients, center, degree, modulus):
     """Reduce the Taylor coefficients without constructing a translated polynomial."""
     return [

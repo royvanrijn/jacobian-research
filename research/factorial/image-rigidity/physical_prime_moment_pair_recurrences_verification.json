@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "controls": 10406,
+  "controls": 11080,
   "source_sha256": {
-    "physical_prime_moment_pair_recurrences.py": "3168d0bb29f2fff0f72088b87d79413fb827e8a3e06f98f0631bad6afaad4d94",
-    "PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex": "d27b86e29a7dcf82654d8b4f84c799a6c4ba0c163d5010b07226138bf8008f9f"
+    "physical_prime_moment_pair_recurrences.py": "90524512651209ef15bafcb537bcec7fbda5d674a1a15508da5ee0be3de989f7",
+    "PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex": "cb97627c84c07228bad42d0f5c217e71267a4057027b0da021bbbc15a3a74a20"
   },
   "scope": "Exact coefficient and finite quotient controls. The written proof supplies the prime, index and progression quantifiers.",
   "local_progression": {

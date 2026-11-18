@@ -10,7 +10,11 @@ separate.
 
 The [simultaneous Gaussian--Eisenstein case study](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md)
 keeps the exact norm identities, lifted local densities, conditional pointwise
-criterion and finite certificates for the class \(1\pmod {12}\).
+criterion and finite certificates for the class \(1\pmod {12}\). The immediate
+arithmetic target is every-target existence for \(C_{12}+C_{12}\), initially
+without balance. In parallel, the
+[Eisenstein power-window theorem](EISENSTEIN_POWER_SHRINKING_WINDOWS.md)
+now supplies one explicit shrinking exponent for \(q=3\).
 
 ## The central binary conjecture
 
@@ -486,12 +490,27 @@ The independent [Eisenstein angular theorem](EISENSTEIN_SIFTED_ANGULAR_DISTRIBUT
 settles the macroscopic balanced instance of FBS-G at \(q=3\), and also its
 mixed dilation \(A+(3\cdot A)\) on targets \(4\pmod6\). It places the first
 summand in any prescribed fixed interval of positive relative length for every
-sufficiently large compatible target. The onset and the complete finite balanced
-exception lists remain undetermined. Shrinking share intervals require further
-estimates. The simultaneous \(q=12\) problem retains its separate global
-counting obligation.
+sufficiently large compatible target. Its fixed-weight proof supplies no
+numerical onset for an arbitrary interval.
 
-## The two binary research campaigns
+The stronger [Theorem EisPower](EISENSTEIN_POWER_SHRINKING_WINDOWS.md) gives,
+for every \(n\ge2^{2^{411}}\),
+\[
+\begin{array}{ll}
+n\equiv2\pmod6:&n=a+b,\quad a,b\in A,\quad |a-b|\le n^{99/100},\\
+n\equiv4\pmod6:&n=a+3b,\quad a,b\in A,\quad |a-3b|\le n^{99/100}.
+\end{array}
+\]
+Its uniform operator bound controls the harmonic degree and prime level
+together. A shrinking Bernstein minorant then supports a nonnegative weighted
+union bound. The theorem also gives
+\(\gg_\varepsilon n^{99/100-\varepsilon}\) distinct ordered value pairs.
+This is weaker than the semigroup-scale count in FBS-U. The enormous explicit
+onset does not close the gap above the existing finite balanced certificate;
+the complete exception lists remain unresolved. External review and priority
+are separate open obligations.
+
+## Five complementary research campaigns
 
 Retain the definitions of \(C_q,L,\kappa_q,r_{q,H}\) from FBS-U. A weaker
 existence goal remains useful for tracking implications:
@@ -502,82 +521,122 @@ large \(N\equiv2\pmod {\ell_q}\) has
 N=a+b,\quad a,b\in C_q,\qquad N/3\leq a,b\leq2N/3.
 \]
 The threshold may depend on \(q\). The congruence is necessary because every
-member of \(C_q\) is odd and \(1\pmod q\); sufficiency here is a conjecture.
-The \(q=12\) instance is the open target S12 in the case study. FBS-U implies
-FBS-G: for any fixed \(\theta\in(0,1)\), its lower bound tends to infinity,
-and eventually \(N^\theta\leq N/3\). A pair with difference at most \(N/3\)
-has both summands in \([N/3,2N/3]\). FBS-G supplies neither the shrinking
-window nor the representation-count lower bound in FBS-U.
+member of \(C_q\) is odd and \(1\pmod q\); sufficiency for the whole family
+is conjectural. The \(q=3\) instance is proved. The \(q=12\) instance is
+the open target S12 in the case study. FBS-U implies FBS-G, since its lower
+bound tends to infinity and eventually \(N^\theta\le N/3\). FBS-G supplies
+neither the shrinking window nor the count in FBS-U.
 
-**Campaign A: full-count variance in shrinking windows.** Fix \(q\) and
-\(0<\theta<1\), put \(H=X^\theta\), and prove (E), initially for \(q=12\).
-By Eq this is equivalent to the centered variance (V). The main term and its
-uniform positive lower bound are now explicit, and the mixed moments are
-established. The unresolved estimate is a four-form upper bound on a thin
-region. A full-count variance would give a semigroup-scale asymptotic outside
-\(o(X)\) targets; that is stronger than the already proved lower bound Dq in
-its range \(\theta>1/3\).
+**Campaign A: pointwise quartic correlation.** The first target is S12U:
+every sufficiently large \(N\equiv2\pmod{12}\) is a sum of two members of
+\(C_{12}\), without a balance restriction. Seek a pointwise lower bound for
+\[
+R(N)=576\sum_{a+b=N}h(a)h(b),\qquad
+h(n)=r_G(n)r_E(n)/24.
+\]
+The [pointwise sieve note](SIMULTANEOUS_NORM_POINTWISE_SIEVE.md) identifies
+the natural scale \(N\mathcal T(N)\), proves the matching upper bound, and
+compares its local product with \(\mathcal T(N)\). A positive local product
+is not a lower bound for the integer count. Neither H1 nor this stronger
+natural-scale lower bound is proved. Ideal-norm convolution, spectral methods
+and the circle method remain candidate approaches, with the obstacles recorded
+in the case study.
 
-The next quantitative milestone is a power-saving variance that yields
-\(O(X^{1-\eta})\) exceptions for some fixed \(\eta>0\). Neither the
-qualitative fixed-width result Vq nor Dq's arbitrary fixed logarithmic savings
-supplies this. Conductor/character biases have been resolved for the clean
-congruence semigroups here; an Euler product is not asserted for every
-Frobenian set. Also (F2) gives \(\#(C_q\cap[1,x])=o(x)\), so theorems
-requiring positive natural density cannot be substituted unchanged.
+The [scaling lemma S12Scale](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#the-first-pointwise-target-and-the-scaling-reduction)
+removes every allowed prime-power factor from the target and preserves existence
+and fixed-ratio balance. Its reduced core need not grow with the target.
+An eventual theorem only for large reduced cores therefore needs additional
+coverage for bounded cores; a large target can be \(14g\) with \(g\in C_{12}\).
+For thirds-balance, the seven recorded exceptional reduced cores require
+separate treatment of their multiples. The reduction does not preserve a fixed
+power window or the semigroup-scale representation count automatically.
 
-**Campaign B: remove the exceptional targets.** Seek the uniform lower bound
-(U) for every compatible large target. A proof of this lower bound need not
-establish a complete pointwise asymptotic. The two campaigns are complementary;
-Campaign A is not declared a logically necessary premise of Campaign B.
+**Campaign B: the pointwise local-to-global sieve.** Independently of a lower
+bound, the corrected Henriot theorem now gives
+\[
+R(N)\ll N\mathcal T(N),\qquad
+\sum_{p>Y}B_p(N)\ll N\mathcal T(N)/Y+N^{15/16}.
+\]
+Consequently a natural-scale lower bound and uniformly valid marginal
+asymptotics for each fixed forbidden prime suffice to complete the sieve.
+This criterion replaces growing-prime control with fixed-prime marginals
+and the natural-scale lower bound. It does not establish the original additive
+\(o(N)\) version of H2. Both global inputs remain open, including targets
+with varying valuations at a fixed prime. This campaign and
+Campaign A have the highest priority; neither the upper bound nor the tail
+proves every-target coverage by itself.
 
-For existence alone in the same target-sized window as FBS-U and Campaign A,
-define the auxiliary exceptional count
+**Campaign C: quantitative Eisenstein geometry.** EisPower completes the first
+power-shrinking existence target, with exponent \(99/100\), in both ordinary
+and mixed cases. Independent verification of its uniform-weight, uniform-level
+Hecke argument is essential. Further goals are improved angular discrepancy,
+stronger shrinking exponents and, separately, the semigroup-scale count.
+The next work is analytic and does not require a large finite scan or a smaller
+version of the already positive sieve margin.
+
+**Campaign D: sharp four-form energy.** Fix \(q=12\), initially
+\(\theta=99/100\), and prove (E) for \(H=X^\theta\). By Eq this is
+equivalent to the full-count centered variance (V). The model, its uniform
+positive lower bound, the first moment and the mixed moments are established;
+the sharp second-moment upper bound on the thin region remains open. A proof
+would give an asymptotic for the full semigroup count outside \(o(X)\) targets,
+stronger than Dq's lower bound. Dq does not prove (E), even near \(\theta=1\).
+
+A further quantitative milestone is a power-saving variance that yields
+\(O(X^{1-\eta})\) exceptions. Neither the fixed-width Vq nor Dq's arbitrary
+fixed logarithmic savings supplies this. A mean-square theorem alone also does
+not remove the last exceptional target. Campaign D is not a prerequisite for
+Campaigns A and B or for a different pointwise lower-bound mechanism.
+
+**Campaign E: proof and priority audit.** Continue independent checks of the
+Eisenstein spectral inputs and the power-window proof. Retrieve and audit the
+full main theorem of Iwaniec--Pomykała's 1993 *Sums and differences of quartic
+norms* before making any priority claim for S12U. Its introduction explicitly
+poses the relevant splitting-prime question, but the full theorem has not been
+obtained in this audit. The reproduced auxiliary proposition has extra
+hypotheses and cannot stand in for it. No every-target modulus-12 result is
+claimed here.
+
+For existence in a target-sized window, the auxiliary exceptional count
 \[
 E_{q,\theta}(X)=
-\#\{X<N\leq2X:N\equiv2\pmod {\ell_q},\quad
-r_{q,N^\theta}(N)=0\}.
+\#\{X<N\le2X:N\equiv2\pmod{\ell_q},\quad
+r_{q,N^\theta}(N)=0\}
 \]
-At the same exceptional-set rate, an existence estimate such as
-\(E_{q,\theta}(X)\ll X^{1-\eta}\) is weaker than semigroup-scale asymptotics.
-Dq already gives semigroup-scale density one for every fixed
-\(q\) and \(	heta>1/3\), even in its narrower window
-\(X^	heta\le N^	heta\). Its logarithmic exceptional bound is stronger than
-mere density one, but does not establish a full asymptotic for the count.
-The fixed-width asymptotic Vq is separate. Semigroup-scale density one for
-\(0<	heta\le1/3\) remains unresolved in this programme; that is not a
-claim that the complete literature frontier has been settled. Range-specific
-priority audits remain necessary before claiming a new result.
+is weaker than the full-count asymptotic at the same exceptional-set rate.
+Dq already proves semigroup-scale density one for every fixed \(q\) and
+\(\theta>1/3\), with its window \(X^\theta\le N^\theta\).
+Semigroup-scale density one for \(0<\theta\le1/3\) remains unresolved in
+this programme; this is not a complete literature-frontier claim.
 
 For arbitrary Frobenian sets, no blanket assertion that local conditions
-suffice is made. Loughran--Matthiesen's Remark 1.11 explicitly explains global
+suffice is made. Loughran--Matthiesen's Remark 1.11 explains global
 obstructions in its broader linear-form framework. The every-target conjectures
 here concern the stated clean congruence family.
 
 | Stage | Exact scope |
 |---|---|
 | General Frobenian baselines | FBS1 gives positive-proportion coverage, and Aq an exact first moment, in every fixed power window |
-| Semigroup-scale binary density one | Dq proves many unweighted pairs for every fixed \(q\), \(\theta>1/3\), outside \(O_A(X/(\log X)^A)\) targets |
-| Fixed-width full-count variance | Vq proves the explicit semigroup asymptotic outside \(o(X)\) targets when \(H=\lambda X\) |
+| Semigroup-scale binary density one | Dq gives many unweighted pairs for every fixed \(q\), \(\theta>1/3\), outside \(O_A(X/(\log X)^A)\) targets |
+| Fixed-width full-count variance | Vq proves the explicit asymptotic outside \(o(X)\) targets for \(H=\lambda X\) |
 | Existing ternary baseline | Tq gives every-target prescribed-AP prime triples for \(\theta>2/3\) |
-| Campaign A | Prove the sharp thin four-form upper bound (E), then quantitative centered variance |
-| Power-saving exceptions | Seek \(O(X^{1-\eta})\), beyond the logarithmic exception estimate Dq |
-| Campaign B and main conjecture | Prove FBS-U for every compatible large target; an excellent mean square alone does not eliminate every exception |
-| Weaker every-target consequence | FBS-G and its modulus-12 instance S12 remain open |
-| Effective completion | An effective pointwise cutoff, then finite verification through it or across any remaining gap |
+| Eisenstein power windows | EisPower proves existence for \(H=n^{99/100}\) in both residue classes, above the explicit \(2^{2^{411}}\) onset |
+| Highest-priority arithmetic target | Prove S12U by resolving the global lower bound and fixed-prime distribution inputs |
+| Sharp variance target | Prove (E), initially at \(\theta=99/100\); seek a power-saving exceptional estimate afterward |
+| Main general conjecture | FBS-U asks for the semigroup-scale count on every compatible large target |
+| Effective completion | Bridge an effective pointwise cutoff to finite verification; the present Eisenstein onset leaves an enormous gap |
 
-A larger first moment alone does not establish the next stages: one needs
-control of the targets with abnormally few representations. The
+A larger first moment alone does not establish the remaining stages. The
 [Iwaniec--Pomykała audit](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#literature-and-the-remaining-obligation)
-also remains necessary before claiming novelty for an every-target theorem.
+remains necessary before claiming novelty for an every-target theorem.
 
 ## Verification scope
 
 The proofs above and in the linked variance/cofactor notes use the precisely
 identified published inputs. Their applications, character factors, arithmetic
-tails and interval geometry received internal AI proof/source checks. There is
-no effective numerical cutoff, formal verification or external human review
-claimed for these results; the linked notes describe the exact scope of their
+tails and interval geometry received internal AI proof/source checks. The general-family analytic baselines have no effective numerical cutoff
+supplied here; EisPower separately gives the explicit onset stated above. No
+formal verification or external human review is claimed; the linked notes describe the exact scope of their
 diagnostic checks. The
 \(C_{12}\) computation remains finite evidence with its original scope in the
 case study. Publication and originality are separate from the mathematical

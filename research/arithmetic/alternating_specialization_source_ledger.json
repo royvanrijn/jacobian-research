@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ALTERNATING_PENCIL_SPECIALIZATIONS_AND_KELLER_FIBRES.md",
+  "assurance": "Internal exact algebra and primary-statement/application audit; no external human review, independent external replay or formal verification of this new bridge.",
+  "sources": [
+    {
+      "id": "zywina-hilbert-irreducibility",
+      "title": "Hilbert's irreducibility theorem and the larger sieve",
+      "authors": [
+        "David Zywina"
+      ],
+      "version": "Author manuscript dated 30 November 2010, 28 pages",
+      "primary_url": "https://pi.math.cornell.edu/~zywina/papers/Quantitative-HIT.pdf",
+      "retained_pdf": "research/arithmetic/sources/zywina-quantitative-hit-2010.pdf",
+      "sha256": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
+      "bytes": 454770,
+      "pdf_pages": 28,
+      "direct_read": true,
+      "extraction": "pdftotext -layout and web PDF text; Section1.1, pp1-2 inspected",
+      "locator": "Theorem1.1 and its height-density formulation, pp1-2; Theorem1.2 and discussion of regularity p2",
+      "role": "mathematical_input",
+      "statement": "For a monic irreducible polynomial over a number-field rational function field, full arithmetic specialization group occurs outside a thin exceptional set, and with height density one. Regularity of the splitting field is not a hypothesis.",
+      "application": "Apply over k=Q or Q(sqrt(-329)), where arithmetic group is S8 despite quadratic constants. The same full-group specializations have A8 after adjoining sqrt(-7). Apply separately over the larger number field if desired.",
+      "reading_limits": "The exact statement and hypotheses were inspected; the classical Hilbert theorem and quantitative proof are imported, not independently reproved."
+    }
+  ],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/DEGREE_EIGHT_ALTERNATING_PENCIL.md",
+      "sha256": "d6181d01b20d0b255aa4c08c9db6f45e4d5b6f83ac5ded3104a11ea3bde92e45",
+      "locator": "Full geometric monodromy; arithmetic S8 over K and constants K(sqrt(-7))"
+    },
+    {
+      "path": "research/arithmetic/RATIONAL_ALTERNATING_PENCIL_REALIZATION.md",
+      "sha256": "50eb65960c03f54a8406620e11dbfefafdeed48c7b314d5ad13f6d82c81b7a8d",
+      "locator": "Proposition2: rational seed, arithmetic S8 and quadratic constants"
+    },
+    {
+      "path": "unpublished/common-arithmetic-fibers/sections/01-keller-fibers.tex",
+      "sha256": "2ee4ef6da0ed0c502e9cb89ae6aa6f5bccfea6de3a95b73d9ae69b00722733b5",
+      "locator": "prop:supplied-polynomial-realization, thm:polynomial-realization and cor:finite-etale-realization"
+    },
+    {
+      "path": "unpublished/common-arithmetic-fibers/sections/02-quadratic-gauge.tex",
+      "sha256": "d638447b90f4647fa6969600b90f771ce14594a3ba8ae09c1f9a8d2a367c9ad4",
+      "locator": "eq:gauge-map, thm:localized-gauge, cor:squarefree-gauge and generic-degree proof"
+    },
+    {
+      "path": "unpublished/common-arithmetic-fibers/sections/03-realization.tex",
+      "sha256": "33e6e57f4f1184fb3d678717cac6d9b043d3a5d520245ddb0d40830138fdb110",
+      "locator": "prop:base-change, cor:fields, cor:transfer"
+    },
+    {
+      "path": "research/arithmetic/verify_alternating_specialization_fibres.py",
+      "sha256": "908db3c86f515176b8aa0987466fd32d11800a0d92d3d4481ef435571a9ef7b1",
+      "locator": "Exact modulo11/23/47 certificate, polynomial pullback/Jacobian and quotient reconstruction"
+    },
+    {
+      "path": "research/arithmetic/alternating_specialization_fibres_verification.json",
+      "sha256": "a456d021447ef316d21263fc7f496b177034dde1a59e708c48c555c3990e3035",
+      "locator": "Actual replay outcome and software"
+    }
+  ],
+  "scope_limits": [
+    "Fixed quadratic extension is in the splitting field, not generally in the degree-eight root field.",
+    "Hilbert conclusions assert infinitely many parameters; no new distinct-number-field counting statement is used.",
+    "The full Keller-fibre compiler transfers the finite algebra, not the original Laurent function-field extension.",
+    "No generic A8 monodromy claim for the compiled polynomial Keller map follows from the fibre group.",
+    "Existing Lean assurances are those of the retained theorem; they do not automatically certify this new application."
+  ],
+  "existing_primary_inputs": [
+    {
+      "path": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "primary_url": "https://arxiv.org/pdf/1209.5169v1",
+      "locator": "Theorem1.1, primitive group with prime cycle fixing at least3letters; applied in explicit number-field certificate",
+      "assurance": "Exact theorem already inspected and retained in alternating_hurwitz_source_ledger.json; imported, not reproved."
+    }
+  ]
+}

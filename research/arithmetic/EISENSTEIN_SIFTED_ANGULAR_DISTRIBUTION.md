@@ -190,8 +190,11 @@ negative values of \(P\) cause no issue. The older positive margin
 
 This proof involves finitely many fixed-level cusp forms. Their current
 coefficient estimates have no explicit constants supplied here, so these
-positive margins do not supply an explicit onset in \(n\) or prove that
-\(8,44\) are the complete ordinary balanced exception list.
+positive margins do not themselves supply an explicit onset in \(n\).
+The separate [power-window proof](EISENSTEIN_POWER_SHRINKING_WINDOWS.md)
+gives a uniform operator estimate and the explicit onset \(2^{2^{411}}\)
+for its central shrinking window. Neither argument proves that \(8,44\)
+are the complete ordinary balanced exception list.
 
 ## Why the tail must be normalized by the shell count
 
@@ -241,7 +244,14 @@ Writing \(z=e^{i\theta}\cos\phi,\ w=e^{i\psi}\sin\phi\) on \(S^3\), surface area
 \]
 Its two boundary slices have zero surface measure. Thus each sufficiently large target in either residue class has a decomposition with both actual summand values between \(n/3\) and \(2n/3\). In the mixed problem the two balanced values are \(a\) and \(3b\). Any fixed positive interval for \(a/n\) is covered. Each ordered pair of positive norm values accounts for at most \(36M(n)^2\ll_\epsilon n^\epsilon\) witnesses (use the divisor estimate with \(\epsilon/2\)). The interval therefore contains \(\gg_{I,\epsilon}n^{1-\epsilon}\) distinct ordered pairs. The limiting proportions count each value pair with its number of coordinate witnesses.
 
-The threshold in Theorem EisAngle depends on the interval. Its proof gives no numerical onset. For ordinary balanced sums the recorded finite certificate finds precisely two exceptions, \(8\) and \(44\), below \(10^8\). Determining every exception above that range remains open. The angular result has internal proof support. External review and priority remain open. [Finite balanced calculation](../../unpublished/eisenstein-restricted-prime-sums/sections/balanced-summands.tex).
+The threshold in Theorem EisAngle depends on the interval, and its fixed-weight
+proof gives no numerical onset for an arbitrary interval. The separate
+[Theorem EisPower](EISENSTEIN_POWER_SHRINKING_WINDOWS.md) proves a central
+window \(|a-b|\le n^{99/100}\), and the mixed analogue, for every admissible
+\(n\ge2^{2^{411}}\). For ordinary balanced sums the recorded finite
+certificate finds precisely two exceptions, \(8\) and \(44\), below
+\(10^8\). The range between that certificate and the new onset remains
+unchecked, so the complete exception list is still open. The angular result has internal proof support. External review and priority remain open. [Finite balanced calculation](../../unpublished/eisenstein-restricted-prime-sums/sections/balanced-summands.tex).
 
 The Gaussian sieve strategy has earlier primary precedents: [Lucia's answer,
 3 September 2013](https://mathoverflow.net/a/141096), works with local forbidden-prime

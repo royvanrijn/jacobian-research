@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,hyperref}
+\newtheorem{lemma}{Lemma}\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\title{The physical raising calculus at every prime}
+\author{Internal research note}\date{18 November 2026}
+\begin{document}\setlength{\emergencystretch}{1em}\maketitle
+Let $p$ be any prime, $q=p-1$, and $N\ge1$.
+Put$C=N+q-1$, $A=C-zD_z+z$,
+$\Pi_N(X)=\prod_{\ell=0}^{N-1}(X+q\ell)$.
+For$Q\in\mathbb Q_p[X]$ use the finite polynomial identity
+\[
+ \frac{\Pi_N(A)Q(A)1}{q^NN!}=\sum_jb_{N,Q,j}z^j,\qquad
+ V_{N,a}(Q;v)=a!\sum_{\ell\ge0}p^\ell b_{N,Q,a+q\ell}v^\ell,
+                 \quad0\le a<q .
+\]
+Write$s=s_p$ for the base-$p$ digit sum, and
+\[
+ e_a=\left\lceil\frac{s(N)-a-1}{q}\right\rceil\ge0,\qquad
+                  \widetilde V_a=p^{-e_a}V_{N,a}.
+\]
+
+\begin{lemma}[Actual all-index digit content]\label{lem:content}
+For every$Q\in\mathbb Z_p[X]$,
+$V_{N,a}(Q)\in p^{e_a}\mathbb Z_p[v]$.
+The same conclusion holds for integral coefficient polynomials
+over any finite extension, with the same integer exponent$e_a$.
+\end{lemma}
+\begin{proof}
+For integral series$f(t,v)$ define$f\in\mathcal F_j$ if every
+coefficient of$t^n$ has Gauss valuation at least$(s(n)-j)/q$.
+Then
+\[
+ \mathcal F_i\mathcal F_j\subseteq\mathcal F_{i+j},\qquad
+ p\mathcal F_j\subseteq\mathcal F_{j-q},\qquad
+ \mathcal F_i\subseteq\mathcal F_j\ (i\le j).
+\]
+Among integral series$\mathcal F_1$ is closed under$p$th powers.
+A mixed$p$th-power multinomial has a factor$p$ and valuation
+at least$1+\sum(s(n_i)-1)/q\ge(s(\sum n_i)-1)/q$.
+Pure terms use$s(pn)=s(n)$ and integrality.
+
+The exact diagonal series, obtained by formal Lagrange
+substitution, is
+\[
+ \sum_{n\ge0}\frac{B_{n,n,q}(z)}{q^nn!}t^n
+     =\kappa(t)e^{zH(t)},\quad
+ R-R^p=t,\ R(0)=1,\ H=1-R,\quad
+ \kappa=\frac{qR}{pR^q-1}.
+\]
+Here $B_{n,\gamma,q}=\Pi_n(\gamma+q-1-zD_z+z)1$. The fixed-shape series is
+$(1-u)^{-(\gamma+q-1)/q}
+ e^{z(1-(1-u)^{1/q})}$.
+For $\gamma=n$, diagonal Lagrange with $\alpha=(1-u)^{-1/q}$
+and $R=(1-u)^{1/q}$ yields
+the stated numerator and denominator.
+
+The integral series$H$ solves
+\[
+ H=\frac tq+\sum_{j=2}^p
+                 \frac{(-1)^j}{q}\binom pj H^j.
+\]
+The middle coefficients are$p$-divisible, and the top term is
+a$p$th power. Iteration is$t$-adically contracting and preserves
+$\mathcal F_1$, so$H\in\mathcal F_1$.
+This includes$p=2$, where$H=t+H^2$.
+
+Use the formal Artin--Hasse integrality statement in
+\texttt{lem:artin-hasse-closure} of the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}
+{arithmetic note}.
+For$E_i=(p^i-1)/q$, the equation
+\[
+ \mathscr A+\sum_{i\ge1}p^{E_i-i}v^{E_i}\mathscr A^{p^i}=H
+\]
+has an integral formal solution in$t\mathbb Z_p[v][[t]]$,
+because$E_i-i\ge0$ and every nonlinear term has degree at least$p$.
+Iteration and$p$th-power closure give$\mathscr A\in\mathcal F_1$.
+At$z^q=pv$, formally$e^{zH}=E_p(z\mathscr A)$.
+Every fixed$t$-coefficient is a finite polynomial in$z$:
+no exponential is evaluated at a boundary point.
+If$E_p(X)=\sum e_jX^j$, its normalized$a$th cyclic section is
+\[
+ a!\sum_{\ell\ge0}e_{a+q\ell}p^\ell v^\ell
+                         \mathscr A^{a+q\ell}\in\mathcal F_a.
+\]
+Also
+$\kappa=-q\sum_{j\ge0}p^j(1-H)^{qj+1}\in\mathcal F_1$,
+coefficientwise$p$-adically convergently:
+each term$p^jH^k$ has$k-qj\le1$.
+The product proves the asserted content for$Q=1$.
+
+The exact raising identities are
+\[
+ \begin{aligned}
+ V_a(XQ)&=(C-a-qvD_v)V_a(Q)+aV_{a-1}(Q),\quad 1\le a<q,\\
+ V_0(XQ)&=(C-qvD_v)V_0(Q)+\frac{pv}{(q-1)!}V_{q-1}(Q).
+ \end{aligned}
+\]
+Here$e_{a-1}\ge e_a$ and$1+e_{q-1}\ge e_0$.
+They preserve the content and prove it for all integral$Q$.
+The extension-field assertion follows by finite linearity.
+\end{proof}
+
+Define exact operators on$q$-component columns by
+\[
+ D=\operatorname{diag}(C-a-qvD_v),\qquad L=D+J,
+\]
+\[
+ J_{a,a-1}=a\,p^{e_{a-1}-e_a}\ (a\ge1),\qquad
+ J_{0,q-1}=\frac{p^{1+e_{q-1}-e_0}v}{(q-1)!}.
+\]
+Then$\widetilde V(XQ)=L\widetilde V(Q)$.
+For$p=2$ these are one-by-one operators$D=N-vD_v$, $J=2v$.
+
+\begin{lemma}[A formal integral gauge]\label{lem:gauge}
+One has$J^q=pvI$ and$[D,J]=-J$.
+The formal matrices
+\[
+ E_\pm=\sum_{j\ge0}\frac{(\pm J)^j}{j!}
+                    \in\operatorname{GL}_q(\mathbb Z_p[[v]])
+\]
+are inverse and$L=E_+DE_-$.
+Their coefficients fail to tend to zero for every prime $p$.
+\end{lemma}
+\begin{proof}
+The link exponents of$p$ are zero or one and sum to one.
+The internal constants multiply to$(q-1)!$, cancelling the wrap
+denominator. Hence$J^q=pvI$.
+An internal diagonal difference gives$-1$; the wrap difference
+$q-1$ and Euler contribution$-q$ also sum to$-1$.
+
+For$j=q\ell+r$, $0\le r<q$, each nonzero matrix entry of$J^j$
+has valuation$\ell+\epsilon$, $\epsilon\in\{0,1\}$.
+Legendre's formula gives
+\[
+ v_p(J^j/j!)=\epsilon+\frac{s_p(j)-r}{q}\ge0.
+\]
+The digit sum is congruent to$r$ modulo$q$ and at least$r$;
+for$r=0,j>0$ it is positive.
+Each fixed$v$-coefficient receives only finitely many terms.
+The constant matrices are triangular unipotent, so the two
+formal series are invertible.
+The exponential product and conjugation identities hold
+coefficientwise, using$[J,D]=J$.
+
+For$p>2$ choose any link of valuation zero and$j=p^m$.
+It contributes a unit coefficient at arbitrarily high degree,
+with no other$j$ contributing to that same entry and degree.
+For$p=2$, the scalar coefficient$(2v)^j/j!$ has valuation
+$s_2(j)=1$ along$j=2^m$.
+In both cases the coefficients fail to tend to zero.
+The identities are coefficientwise formal identities.
+\end{proof}
+
+\begin{theorem}[Contractive integer-valued calculus]\label{thm:int}
+If$Q\in\mathbb Q_p[X]$ is integer-valued on$\mathbb Z_p$,
+then$Q(L)$ preserves$\mathbb Z_p[v]^q$ and
+$\mathbb Z_p\langle v\rangle^q$. On the Tate algebra
+\[
+ \|Q(L)\|\le\sup_{x\in\mathbb Z_p}|Q(x)|_p.
+\]
+Consequently the actual content assertion of
+Lemma~\ref{lem:content} holds for every such$Q$, even with
+rational polynomial coefficients.
+\end{theorem}
+\begin{proof}
+On row$a$, degree$k$, the operator$\binom Dm$ multiplies by
+$\binom{C-a-qk}{m}\in\mathbb Z_p$.
+Thus it preserves integral formal series.
+The formal gauge gives
+$\binom Lm=E_+\binom Dm E_-$ with the same property.
+On polynomial vectors this is a finite differential-polynomial
+operator, so its output is both polynomial and integral.
+
+The finite Newton expansion
+$Q(X)=\sum_m b_m\binom Xm$ has
+$b_m=\Delta^mQ(0)\in\mathbb Z_p$, and
+$\max_m|b_m|_p=\sup_{\mathbb Z_p}|Q|_p$.
+One inequality follows from differences of values at integers;
+the other follows from the binomial expansion on$\mathbb Z_p$.
+It gives the norm bound on polynomial vectors.
+Their Gauss-norm density extends it to the Tate algebra.
+Apply$Q(L)$ to the actual integral seed$\widetilde V(1)$.
+This argument evaluates no formal gauge at$|v|_p=1$.
+\end{proof}
+
+\begin{corollary}[Additional divisibility]\label{cor:extra-content}
+For $m\ge0$ and every integer-valued $Q\in\mathbb Q_p[X]$ on $\mathbb Z_p$,
+\[
+ V_{N,a}((X^p-X)^m Q;v)\in p^{e_a+m}\mathbb Z_p[v].
+\]
+\end{corollary}
+\begin{proof}
+By Fermat's congruence, $(X^p-X)/p$ is integer-valued on $\mathbb Z_p$.
+Apply Theorem~\ref{thm:int} to its $m$th power times $Q$, then
+multiply by $p^m$.
+\end{proof}
+
+\begin{corollary}[Continuous calculus and the residue tree]
+\label{cor:continuous}
+The polynomial calculus extends uniquely to a contractive
+unital algebra homomorphism
+\[
+ C(\mathbb Z_p,\mathbb Q_p)\longrightarrow
+       \mathcal B(\mathbb Q_p\langle v\rangle^q),\qquad f\mapsto f(L).
+\]
+The characteristic functions of residue classes give bounded
+orthogonal projectors$P_{a,r}$, summing to one and satisfying
+$P_{a,r}=\sum_{b\bmod p^{r+1},\,b\equiv a\bmod p^r}P_{b,r+1}$.
+\end{corollary}
+\begin{proof}
+For$a=\sum_{i<r}a_ip^i$ set
+\[
+ \rho_{a,r}(X)=\prod_{i=0}^{r-1}
+       \left[1-\left(\binom X{p^i}-a_i\right)^{p-1}\right].
+\]
+Lucas' identity and continuity show that$\rho$ is1 modulo$p$
+on that residue class and0 elsewhere.
+The polynomials$\rho^{p^m}$ converge uniformly to its indicator:
+on the class$v_p(\rho^{p^m}-1)\ge m+1$; off it
+$v_p(\rho^{p^m})\ge p^m$.
+These bounds also hold at$p=2$.
+Finite linear combinations approximate every locally constant
+function; such functions are uniformly dense in
+$C(\mathbb Z_p,\mathbb Q_p)$ by compactness.
+Thus polynomials are dense, with an explicit approximation.
+
+The preceding theorem applies after scalar scaling to every
+polynomial, and bounds the operator norm by its uniform scalar norm.
+Completeness gives the continuous extension; multiplication
+and the projector identities pass to operator-norm limits.
+Evaluated projector components of the actual seed can cancel.
+An exclusion of their simultaneous cancellation remains open.
+\end{proof}
+\end{document}

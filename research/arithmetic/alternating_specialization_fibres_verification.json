@@ -1,0 +1,58 @@
+{
+  "arithmetic": "QQ; F_11,F_23,F_47; QQ[S]/P(1+S)",
+  "checker_sha256": "908db3c86f515176b8aa0987466fd32d11800a0d92d3d4481ef435571a9ef7b1",
+  "checks": {
+    "all_modular_factors_irreducible": true,
+    "compact_plane_jacobian": "-2D",
+    "discriminant_square_class": -7,
+    "invalid_controls": 2,
+    "marked_root_extraction": true,
+    "normalized_full_jacobian": 1,
+    "polynomial_pullback": true,
+    "quotient_derivative_unit": true,
+    "source_chart_jacobian": "t",
+    "whole_fibre_reconstruction": true
+  },
+  "command": ".venv/bin/python research/arithmetic/verify_alternating_specialization_fibres.py",
+  "discriminant": "-563251105638187602396622616788489/2671507552988560823676783",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "kind": "internal_exact_replay",
+  "modular_factor_degrees": {
+    "11": [
+      3,
+      5
+    ],
+    "23": [
+      1,
+      7
+    ],
+    "47": [
+      8
+    ]
+  },
+  "normalized_target": [
+    "1",
+    "0",
+    "-54125/990836"
+  ],
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "One explicit S8 number-field specialization and exact compiler identities; the written note supplies group arguments, quantified Hilbert specialization and scheme-theoretic full-fibre proof.",
+  "specialization_polynomial": "z**8 + z**6 + 9*z**4/28 + 233*z**2/5292 - 2*z - 1/5488",
+  "sympy": "1.14.0",
+  "translated_coefficients": [
+    "54125/148176",
+    "35387/2646",
+    "237995/5292",
+    "541/7",
+    "2389/28",
+    "62",
+    "29",
+    "8",
+    "1"
+  ],
+  "translation": 1
+}

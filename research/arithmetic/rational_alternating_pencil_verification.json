@@ -1,0 +1,42 @@
+{
+  "arithmetic": "Q[c,t,s], Q and F_11",
+  "checker_sha256": "d39278cf90ee462c396ec52f95ea99eb60bee23ee56f8a7cb473d4a0b8084496",
+  "checks": {
+    "all_t_equal_1_mod_11_have_same_reduction": true,
+    "branch_pair_discriminant_factorization": "-t**6*(-2*c + t)**5*(c + t)**3/10806531246",
+    "critical_discriminant_factorization": "t**2*(-2*c + t)**6*(c + t)**2*(48*c**2 + 56*c*t + 35*t**2)/1259712",
+    "family_discriminant_identity": true,
+    "mod_11_cubic": "z**3 + z**2 - 3*z - 4",
+    "mod_11_factor_degrees": [
+      3,
+      5
+    ],
+    "mod_11_factors_irreducible": true,
+    "mod_11_quintic": "z**5 - z**4 + 5*z**3 - 4*z**2 - 3",
+    "mod_11_s": 2,
+    "negative_controls": 3,
+    "seed_branch_squarefree": true,
+    "seed_critical_discriminant": "139/314928"
+  },
+  "command": ".venv/bin/python research/arithmetic/verify_rational_alternating_pencil.py",
+  "kind": "internal_exact_replay",
+  "parameter_family": {
+    "H": "c*z**6 + z**8 + z**4*(47*c**2/168 + t**2/24) + z**2*(379*c**3/21168 + 17*c*t**2/1008 + t**3/108)",
+    "Q": "s**4 + s**2*(32*c**7/2470629 - 4*c**5*t**2/151263 + 2*c**4*t**3/194481 + 25*c**3*t**4/1555848 - c**2*t**5/74088 + 13*c*t**6/222264 + t**7/31752) + (-3*c**2 + 7*t**2)**2*(4*c**2 - 7*c*t + 7*t**2)**2*(48*c**2 + 56*c*t + 35*t**2)**3/379718108242115328",
+    "a": "-(-3*c**2 + 7*t**2)**2/87808",
+    "infinite_A8_subfamily": "c=1, t=1+11k, integer k>=0",
+    "rational_nondegenerate_domain": "t != 0, t != 2c, t != -c"
+  },
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Exact all-parameter polynomial identities, nondegeneracy factors and a finite-field Frobenius certificate. The companion written proof uses Jordan's theorem and simplicity of A8 for monodromy, and a coefficient invariant for infinitely many cover classes. No human external review or formal verification is asserted.",
+  "seed": {
+    "H": "z**8 + z**6 + 9*z**4/28 + 233*z**2/5292",
+    "Q": "s**4 + 5960*s**2/66706983 + 2685619/1483273860320763",
+    "a": "-1/5488",
+    "c": 1,
+    "t": 1
+  },
+  "sympy": "1.14.0"
+}

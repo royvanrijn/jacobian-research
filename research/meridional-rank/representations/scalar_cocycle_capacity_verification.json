@@ -1,0 +1,368 @@
+{
+  "status": "PASS exact scalar determinantal unit over all parameters",
+  "source_sha256": {
+    "uniform_fox_ideal_inputs.json": "29464dbf71101d8373eecc89da9065261e4689580bd741313afa240e4c7fa25b",
+    "verify_uniform_fox_ideal_models.py": "5e59cf9c6b3fdd827d2ac43b0f5b49860eb3d6cbb7e79aab09e34ec1fd8ed72d"
+  },
+  "checker_sha256": "d7818480cf4caacae67861a14aa9f601d6083810a0f642b5470e04879a6254c2",
+  "fixed_rows_zero_based": [
+    0,
+    3
+  ],
+  "normalized_pairs": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "polynomials_ascending": [
+    [
+      1,
+      -6,
+      15,
+      -21,
+      18,
+      -8,
+      0,
+      4,
+      -3,
+      1
+    ],
+    [
+      -2,
+      10,
+      -25,
+      40,
+      -45,
+      36,
+      -22,
+      9,
+      -2
+    ]
+  ],
+  "resultant": -83,
+  "exceptional_characteristic": 83,
+  "exceptional_t": 59,
+  "mod_83_gcd_ascending": [
+    24,
+    1
+  ],
+  "R0": [
+    10,
+    12,
+    60,
+    1
+  ],
+  "R1_base": [
+    51,
+    66,
+    7,
+    42
+  ],
+  "R1_next": [
+    1,
+    26,
+    55,
+    1
+  ],
+  "mod_83_minors_base_and_next": [
+    [
+      48,
+      81
+    ],
+    [
+      82,
+      75
+    ]
+  ],
+  "minor_combination": {
+    "weights": [
+      77,
+      -34
+    ],
+    "constant": 29,
+    "tail_nontrivial_eigenvalue": 81
+  },
+  "all_n_reason": "The normalized two-strand derivative has distinct eigenvalues 1 and -t^{-1} at t=59. Six-step powers are affine linear in 81^n, so the verified two values force the minor combination to be the constant 29.",
+  "rejected_control": "Change constant term of the first normalized minor.",
+  "assurance": {
+    "whole_proof_independent_replay": false,
+    "formal_verification": false,
+    "external_specialist_review": false
+  },
+  "edition_sha256": {
+    "FINITE_METABELIAN_QUOTIENTS_OF_TWIST_FAMILY.tex": "fe2d97d2bcce43d8ff81bfce59260125f99acec726c58a019ab51a4d0f6e8cc2",
+    "FINITE_METABELIAN_QUOTIENTS_OF_TWIST_FAMILY.pdf": "75154ab2fc8bc8e6329bafbdc920500132a11a7b3fe9db8f1b3bda2d3476517a",
+    "verify_scalar_cocycle_capacity.py": "d7818480cf4caacae67861a14aa9f601d6083810a0f642b5470e04879a6254c2"
+  },
+  "separate_finite_replay": {
+    "status": "PASS separate internal replay",
+    "method": "Compose scalar crossing Jacobians directly over the Laurent ring, use SymPy resultant and modular gcd, and replay all 41 states of the fixed specialization.",
+    "n_period_control": 41,
+    "exceptional_minors": [
+      [
+        48,
+        81
+      ],
+      [
+        82,
+        75
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        67,
+        63
+      ],
+      [
+        44,
+        28
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        81,
+        41
+      ],
+      [
+        16,
+        72
+      ],
+      [
+        63,
+        10
+      ],
+      [
+        52,
+        51
+      ],
+      [
+        74,
+        52
+      ],
+      [
+        30,
+        50
+      ],
+      [
+        35,
+        54
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        45,
+        62
+      ],
+      [
+        5,
+        30
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        8,
+        49
+      ],
+      [
+        79,
+        56
+      ],
+      [
+        20,
+        42
+      ],
+      [
+        55,
+        70
+      ],
+      [
+        68,
+        14
+      ],
+      [
+        42,
+        43
+      ],
+      [
+        11,
+        68
+      ],
+      [
+        73,
+        18
+      ],
+      [
+        32,
+        35
+      ],
+      [
+        31,
+        1
+      ],
+      [
+        33,
+        69
+      ],
+      [
+        29,
+        16
+      ],
+      [
+        37,
+        39
+      ],
+      [
+        21,
+        76
+      ],
+      [
+        53,
+        2
+      ],
+      [
+        72,
+        67
+      ],
+      [
+        34,
+        20
+      ],
+      [
+        27,
+        31
+      ],
+      [
+        41,
+        9
+      ],
+      [
+        13,
+        53
+      ],
+      [
+        69,
+        48
+      ],
+      [
+        40,
+        58
+      ],
+      [
+        15,
+        38
+      ],
+      [
+        65,
+        78
+      ]
+    ],
+    "checker_sha256": "d7818480cf4caacae67861a14aa9f601d6083810a0f642b5470e04879a6254c2"
+  },
+  "initial_pdf_review": {
+    "review_type": "isolated PDF-only blind mathematical review",
+    "source_pdf": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/metabelian-build/FINITE_METABELIAN_QUOTIENTS_OF_TWIST_FAMILY.pdf",
+    "source_sha256": "f5c57b5cf7ea39729e171bf2cb27bb33dd83a15f9cab70eea844cb810041b379",
+    "pages_reviewed": [
+      1,
+      2,
+      3
+    ],
+    "review_scope": "All three pages, including abstract, stated braid and conventions, Lemma 2, Theorem 1, Corollary 3, the closing scope statement, and visual layout. The frozen PDF was the sole source for the mathematical review. Independent computations used only the data printed in the PDF. The companion proof, companion verifier, source files, and other mathematical sources were outside the review.",
+    "hardest_step": "The uniform exclusion of the lone surviving rank-drop specialization in Lemma 2. At t=59 in characteristic 83, the two middle bottom derivative rows are acted on by the sixth power of the crossing matrix for each extra twist block. The eigenvalues of that sixth power are 1 and 81. Subtracting the closure identity row preserves affine dependence on 81^n, and taking a minor with one fixed row preserves it as well. The two listed input values are distinct, so agreement of the linear combination at n=0 and n=1 proves it is constantly 29.",
+    "findings": [
+      {
+        "severity": "verified",
+        "location": "Pages 1 and 2, Lemma 2",
+        "finding": "A fresh implementation of free-word crossing updates and Fox differentiation reproduced the two displayed Laurent minors after multiplying by t^5. A fraction-free Sylvester determinant returned -83, and modular Euclidean division returned the monic gcd t+24. Evaluation at a common root supplies a nonzero Sylvester kernel vector, so this leaves exactly the candidate t=59 over characteristic 83."
+      },
+      {
+        "severity": "verified",
+        "location": "Page 2, Lemma 2",
+        "finding": "Direct free-word recomputation gave h0=(10,12,60,1), h1(0)=(51,66,7,42), and h1(1)=(1,26,55,1) at the candidate. The minor pairs (48,81) and (82,75) each give 29 in the claimed combination. The inverse of 59 is 38 and the second crossing eigenvalue is 45, whose sixth power is 81. The maximal ideal reduction then proves the unit ideal statement."
+      },
+      {
+        "severity": "verified",
+        "location": "Pages 1 and 2, family and Theorem 1",
+        "finding": "The braid permutation read from the printed word is the four-cycle (0 1 3 2) in bottom-slot-to-top-slot form. The appended six crossings per step preserve this permutation. Thus the closure is a knot, and the four relators identify all meridians in abelianization, which is infinite cyclic. The Alexander module presentation uses the rank-three sum-zero edge submodule computed over the Laurent ring before passage to residue fields, so it remains valid at t=1. Its residue-field dimension bound transfers to A=Q'. The finite image ring, the Chinese remainder construction, and the simple-quotient argument give one module generator for A. Together with the meridian image it generates Q as a group."
+      },
+      {
+        "severity": "verified",
+        "location": "Page 2, Corollary 3",
+        "finding": "The crossed-homomorphism product rule gives the specialized Fox equations on the four meridian values, so Lemma 2 bounds the kernel dimension by two for every field and nonzero scalar."
+      },
+      {
+        "severity": "scope",
+        "location": "Page 1 title and abstract, and page 3 reference",
+        "finding": "Primeness and exact bridge number four are external family claims. The frozen PDF does not establish them. The finite metabelian generator theorem and the cocycle bound do not use them."
+      },
+      {
+        "severity": "minor",
+        "location": "Page 1, Lemma 2",
+        "finding": "The unnamed companion verifier is not identified in the bibliography. The exact arithmetic can be recovered from the printed braid and crossing rules, as in this review, but a verifier identifier would improve reproducibility for readers."
+      },
+      {
+        "severity": "minor",
+        "location": "Page 3",
+        "finding": "The first two pages have clear theorem hierarchy, readable displayed equations, and consistent margins and folios. All three rendered pages were visually inspected. Text and mathematical glyphs are legible, with no clipping or overlap seen. Page 3 is mostly blank and contains only the closing scope sentence, AI disclosure, and one reference."
+      }
+    ],
+    "conditional_verdict": "Pass on the mathematical content within scope. Using the braid-closure presentation stated in the PDF, I found no gap in Lemma 2, Theorem 1, or Corollary 3 and independently verified the central exact calculations. The title and abstract's claims that the family is prime and has bridge number four remain conditional on the companion result. This review makes no determination about ordinary rank of the knot groups or generation of nonmetabelian quotients."
+  },
+  "final_pdf_review": {
+    "review_type": "isolated PDF-only blind mathematical review of the final edition",
+    "source_pdf": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/metabelian-build/FINITE_METABELIAN_QUOTIENTS_OF_TWIST_FAMILY.pdf",
+    "source_sha256": "75154ab2fc8bc8e6329bafbdc920500132a11a7b3fe9db8f1b3bda2d3476517a",
+    "pages_reviewed": [
+      1,
+      2
+    ],
+    "review_scope": "Both complete pages of the final frozen PDF, including the abstract, braid and presentation conventions, Lemma 2, Theorem 1, Corollary 3, the closing scope statement, and the rendered layout. Only the PDF was used as the mathematical source. I checked that the printed data used in the independent calculations match the final edition. The companion proof, named verifier, source files, and external sources were outside the review.",
+    "hardest_step": "Lemma 2 has to exclude the sole remaining specialization uniformly in n. At t=59 over F_83, Fox differentiation of the printed positive crossing rule gives B. Applying six additional crossings advances the two middle derivative rows by B^6, which has distinct eigenvalues 1 and 81. Subtracting the closure identity row and taking a minor against a fixed row both preserve affine dependence on 81^n. Therefore the linear combination has constant value 29 by its evaluations at the distinct inputs 1 and 81.",
+    "findings": [
+      {
+        "severity": "verified",
+        "location": "Pages 1 and 2, Lemma 2",
+        "finding": "Independent literal free-word Fox differentiation reproduced the two printed fixed polynomials. A fraction-free integer Sylvester determinant gives -83. Euclidean division in F_83[t] gives monic gcd t+24. Thus any field map killing every minor has characteristic 83 and sends t to 59. This reasoning also covers extension fields."
+      },
+      {
+        "severity": "verified",
+        "location": "Pages 1 and 2, Lemma 2",
+        "finding": "Independent evaluation gave h0=(10,12,60,1), h1(0)=(51,66,7,42), and h1(1)=(1,26,55,1). The minor pairs are (48,81) and (82,75). The nontrivial eigenvalue of B is 45, with sixth power 81 modulo 83, and the printed combination gives 29 at both input values. The argument rules out every maximal ideal containing the minors and proves they generate the Laurent ring."
+      },
+      {
+        "severity": "verified",
+        "location": "Pages 1 and 2, family definition and Theorem 1",
+        "finding": "Tracking only swaps gives the four-cycle (0 1 3 2) in bottom-slot-to-top-slot form. Six extra swaps preserve it, so the braid closure is a knot for every n. The indicated meridian relators give infinite cyclic abelianization. Over the Laurent ring the cyclic cover edge kernel has the sum-zero basis e_i-e_0, and the proof specializes this free module before quotienting by the specialized relation rows. The dimension bound holds even when t specializes to 1. The finite ring and Chinese remainder argument then makes Q' cyclic as a module, and the meridian plus its module generator generate Q as a group."
+      },
+      {
+        "severity": "verified",
+        "location": "Page 2, Corollary 3",
+        "finding": "Fox equations express exactly the conditions on four meridian values for a crossed homomorphism with the stated scalar action. The unit ideal of minors bounds the dimension of their solution space by two."
+      },
+      {
+        "severity": "scope",
+        "location": "Page 1 title and abstract, and page 2 reference",
+        "finding": "Primeness and exact bridge number four are family properties that require the companion proof. They play no role in the finite metabelian quotient theorem or the cocycle bound. The named verification program was outside scope and the numerical checks were independent of it."
+      },
+      {
+        "severity": "visual pass",
+        "location": "Both pages",
+        "finding": "Both rendered pages are legible. The theorem, lemma, corollary, displays, disclosure, reference, and page numbers have clear placement. The page break follows the two sample minor pairs and the next page starts a new paragraph giving the crossing matrix. No clipping, overlapping text, or broken mathematical glyphs were observed."
+      }
+    ],
+    "conditional_verdict": "Pass for Lemma 2, Theorem 1, and Corollary 3 given the braid-closure presentation stated in the paper. I found no mathematical gap and independently confirmed the central arithmetic. The title and abstract's prime and exact four-bridge family description remains conditional on the companion proof. The proof settles the finite metabelian generation bound and the stated crossed-homomorphism dimension bound."
+  }
+}

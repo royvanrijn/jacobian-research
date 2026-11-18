@@ -1,0 +1,235 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Analytic interpolation of the physical moment pair on closed disks}
+\author{Internal research note}\date{18 November 2026}
+\begin{document}\setlength{\emergencystretch}{1em}\maketitle
+Fix a prime $p$ and put $q=p-1$ and $w=(p-1)!$.
+Use the polynomials $W_n,H_n$ of
+\href{PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex}
+{the primitive moment pair}, \texttt{lem:pair}.
+In particular $H_n=W_{n+1}+qW_n$ and $W_n(0)=1$.
+For $n\ge2$, their \texttt{cor:critical} identifies a common
+root of $W_n,W_{n+1}$ with a multiple root of $H_n$.
+
+Let $F/\mathbb Q_p$ be finite, let $y\in\mathcal O_F^\times$ and choose
+$0\ne\alpha\in\mathfrak m_F$. We study the fixed closed disk
+\[
+ \mathbb D=\{y+\alpha X:X\in\mathbb C_p,\ |X|_p\le1\}.
+\]
+The disk lies inside the residue class of $y$.
+Enlarge $F$ unramifiedly to a field $L$ whose residue field
+$\mathbb F_{p^f}$ splits
+$X^p+\bar y X^{p-1}-1$. Set $m=p^f-1$ and use Gauss norms
+on the Tate algebras over $L$.
+
+\begin{theorem}[Analytic functions of the terminal index]\label{thm:interpolation}
+There is an $s\ge0$, independent of the terminal order, such that
+for each $r\bmod m$ and $0\le b<p^s$ there are
+$F_0,F_1\in L\langle U,X\rangle$ with
+\[
+ F_i\!\left((n-b)/p^s,X\right)=W_{n+i}(y+\alpha X)
+ \qquad (i=0,1)
+\]
+for all positive integers $n\equiv r\pmod m$, $n\equiv b\pmod{p^s}$.
+The linear combination $\mathsf H=F_1+qF_0$ satisfies
+\[
+ (b+p^sU)\mathsf H-
+ \frac{y+\alpha X}{\alpha}\partial_X\mathsf H
+                   =p(b+p^sU)F_0 .
+\]
+\end{theorem}
+\begin{proof}
+Set $Y=y+\alpha X$ and $A^\circ=\mathcal O_L\langle X\rangle$.
+The denominator $D_0=(1-z)^p-wYz$ has reciprocal
+$(\lambda-1)^p-wY\lambda^{p-1}$. Its reduction at the disk
+is $f_{\bar y}(\lambda)=\lambda^p+\bar y\lambda^{p-1}-1$.
+Every residue root is a unit and simple since
+$f_{\bar y}'=-\bar y\lambda^{p-2}$.
+The reciprocal polynomial splits into $p$ analytic roots
+$\lambda_i\in A^\circ$, all units with unit differences.
+Indeed, start at the Teichm\"uller lift $\omega_i\in\mathcal O_L$ of
+each residue root. Then the reciprocal polynomial has norm less
+than one at $\omega_i$ and its derivative is a unit there.
+Newton iteration in the complete Tate algebra gives a root with
+$\|\lambda_i-\omega_i\|<1$. The differences remain units by
+their distinct residues. Thus $D_0=\prod_i(1-\lambda_i z)$.
+
+Use $\beta$ and the elementary symmetric sums $E_j(k)$ from the
+proof of \texttt{thm:linear} in the primitive moment pair note.
+Set $a_p=1,2,3$ for $p=2,3,\ge5$, respectively. The proof gives
+$\deg E_j\le pj$ and $E_j(\mathbb Z_p)\subseteq p^{a_pj}\mathbb Z_p$.
+Write
+\[
+ Q=\frac{Yz}{(1-z)^p},\qquad
+ G_j(z)=\frac{1}{1-z}\sum_{k\ge0}E_j(k)(wQ)^k.
+\]
+For each coefficient of $z$, $\sum_jG_j$ is finite and agrees
+with the generating function of $W_n$ because $E_j(k)=0$ for $j>k$.
+
+The binomial coefficients of $E_j(k)$ in its Newton expansion
+are divisible by $p^{a_pj}$ by the finite difference formula.
+Therefore $G_j$ is proper rational with denominator
+$D_0^{pj+1}$ and numerator in $p^{a_pj}A^\circ[z]$.
+Partial fractions give
+\[
+ G_j(z)=\sum_{i=1}^{p}\sum_{h=1}^{pj+1}
+                           \frac{c_{j,i,h}}{(1-\lambda_i z)^h},
+ \qquad c_{j,i,h}\in p^{a_pj}A^\circ .
+ \tag{1}
+\]
+To see the bound, expand the numerator and the other factors
+at $z=(1-T)/\lambda_i$. Each other reciprocal factor has a
+unit constant term and integral Taylor coefficients there.
+The principal part in $T$ gives the asserted coefficients.
+The rational function is proper, so its principal parts give
+the whole function.
+
+Write $\lambda_i=\omega_i\kappa_i$ with $\|\kappa_i-1\|<1$.
+Choose $s$ with all
+$\|\kappa_i^{p^s}-1\|<p^{-1/(p-1)}$ and
+\[
+                  a_p-\frac{p}{p^s(p-1)}>0.
+ \tag{2}
+\]
+Such an $s$ exists since a $p$th power increases any positive
+lower valuation bound $\eta$ to at least $\min(1+\eta,p\eta)$.
+For $N=b+p^sU$, interpolation of the power $\lambda_i^{n+i'-1}$
+for $i'\in\{0,1\}$ is
+\[
+ \omega_i^{r+i'-1}\kappa_i^{b+i'-1}
+             \exp\bigl(U\log(\kappa_i^{p^s})\bigr).
+\]
+The chosen bound gives convergence in the Tate algebra and
+norm one. This agrees with the power for every integer $n$
+in the given congruence class.
+
+The coefficient of $z^{n+i'-1}$ in a term of (1) is its power
+$\lambda_i^{n+i'-1}$ times
+$\binom{n+i'+h-2}{h-1}c_{j,i,h}$.
+For any integer $B$ and $t\ge0$, the Gauss norm bound
+\[
+ \left\|\binom{B+p^sU}{t}\right\|
+ \le p^{\sum_{\ell>s}\lfloor t/p^\ell\rfloor}
+ \le p^{t/(p^s(p-1))}
+ \tag{3}
+\]
+holds. For each $\ell\le s$, at least $\lfloor t/p^\ell\rfloor$
+of the $t$ consecutive numerator factors contribute a factor
+of $p^\ell$ to the count of their valuations at level $\ell$.
+Subtracting these counts from the valuation of $t!$ proves (3).
+Consequently the whole $j$th contribution to each interpolant
+has norm at most $p^{-j(a_p-p/(p^s(p-1)))}$.
+Its sum over $j$ converges in $L\langle U,X\rangle$ and agrees
+with the finite coefficient calculation at every prescribed $n$.
+The differential identity holds at all such $n$ by the primitive
+pair formula. The corresponding $U$ are dense in $\mathbb Z_p$.
+An analytic function over $L$ vanishing at those $U$ vanishes
+identically, coefficient by coefficient in $X$.
+\end{proof}
+
+\begin{corollary}[The same branches have explicit nonpositive values]
+\label{cor:negative}
+For an integer $u\ge0$ and the branch containing $n=-u$,
+the continuation satisfies
+\[
+ F_0\bigl((-u-b)/p^s,X\bigr)=
+ \sum_{0\le k\le u/q}(-1)^{pk}U_p(k)\binom{u+k}{pk}(y+\alpha X)^k .
+ \tag{4}
+\]
+In particular $W_0$ in this continuation is one.
+\end{corollary}
+\begin{proof}
+For a summand $(1-\lambda z)^{-h}$ in (1), the coefficient
+of $z^{-u-1}$ in its expansion at infinity is
+$(-1)^h\lambda^{-u-1}\binom{u}{h-1}$.
+Its negative is exactly
+$\lambda^{-u-1}\binom{-u+h-2}{h-1}$, the interpolated value.
+At infinity $Q=O(z^{-q})$, so the coefficient of $z^{-u-1}$ in
+the total series involves only $k\le u/q$. Since $E_j(k)$
+vanishes for $j>k$, this also uses finitely many $j$.
+Expansion of
+$Y^k z^k(1-z)^{-pk-1}$ at infinity gives the negative of the
+summand in (4), with weight $U_p(k)$.
+\end{proof}
+
+\begin{theorem}[Index sets for a fixed closed disk]\label{thm:local-set}
+The set of integers $n\ge2$ for which $H_n$ has a multiple root
+in $\mathbb D$ is the union of finitely many full arithmetic
+progressions within $n\ge2$ and a finite set.
+More precisely, on a finite refinement of the branches of
+Theorem~\ref{thm:interpolation}, this set is the zero set of
+a single analytic resultant in the branch coordinate. A full
+progression occurs precisely when that resultant vanishes
+identically on the branch.
+\end{theorem}
+\begin{proof}
+Here are the required preparation and finiteness facts.
+Over a Tate algebra in $U$, a series in $X$ of the form
+$P_0+G$, where $P_0$ is monic of degree $d$ with lower coefficients
+of norm at most one and $\|G\|<1$, is a unit times a monic
+polynomial of degree $d$ with integral coefficients.
+Division by $P_0$ on polynomials has quotient and remainder
+of norm at most the input norm, by the monic division algorithm.
+It extends by continuity to restricted series. To divide
+$X^d$ by $P_0+G$, solve for the quotient by the iteration
+$Q\mapsto\operatorname{quot}_{P_0}(X^d-GQ)$.
+This is a contraction, and the fixed point differs from one
+by norm less than one. The resulting remainder $R$ has
+degree below $d$ and norm at most one. Thus $X^d-R=Q(P_0+G)$
+with $Q$ a unit. In one variable this also proves the needed
+zero finiteness: normalize a nonzero restricted series by its
+last coefficient of maximal norm and apply the same argument.
+
+Now fix an initial branch. Take $F_0$ from
+Theorem~\ref{thm:interpolation}. It is nonzero since each
+$W_n(0)=1$ and a nonzero polynomial remains nonzero after
+the change of variable $Y=y+\alpha X$.
+There are only finitely many $u\in\mathbb Z_p$ with
+$F_0(u,X)$ identically zero, since any fixed nonzero
+$X$-coefficient of $F_0$ has finitely many zeros.
+At each such $u$ remove the maximal common power of $U-u$
+from $F_0$. This division remains in the Tate algebra:
+if $f(u)=0$ then $\sum_k a_k(U^k-u^k)/(U-u)$ converges
+in norm when $f=\sum_k a_kU^k$, including with coefficients
+in $L\langle X\rangle$. The common powers are bounded by the
+multiplicities of the chosen nonzero coefficient. None of these
+removed index points corresponds to an actual positive integer
+on the branch. The quotiented function $F_0^*$ is nonzero as a
+function of $X$ at every $u\in\mathbb Z_p$.
+
+For each such $u$, normalize $F_0^*(u,X)$ by its last coefficient
+of maximal norm, of index $d$. On a small enough residue
+class of $u$ in $U$, the same constant scalar normalization
+has all coefficients through degree $d$ of norm at most one,
+the $d$th within norm less than one of one, and the tail
+of norm less than one. This follows by substituting
+$U=u+p^tV$, since the difference from evaluation at $u$
+is bounded in Gauss norm by $p^{-t}\|F_0^*\|$ before
+normalization. Compactness gives a finite refinement by
+residue classes on which the preparation just proved applies.
+Each refined class still corresponds to one arithmetic progression
+of positive $n$.
+
+On each refined class, let $P$ be the prepared monic polynomial
+and let $R_1$ be the remainder of $F_1$ modulo $P$.
+The determinant of multiplication by $R_1$ on the free module
+with basis $1,X,\ldots,X^{d-1}$ modulo $P$ is analytic in the
+refined index variable. For $d=0$ use determinant one.
+After specialization, this determinant vanishes exactly when
+$P$ and $R_1$ have a common root. All roots of $P$ are
+in $|X|_p\le1$ since its coefficients are integral and it is monic.
+The units and the removed index factors preserve common roots
+at every actual positive integer on the branch. The determinant
+thus has the asserted common-root interpretation. It is identically
+zero or has finitely many zeros by one-variable preparation.
+Finally use \texttt{cor:critical} of the primitive moment pair.
+\end{proof}
+
+A single index without a multiple root on a prepared branch rules
+out the identically zero resultant there. Extending the exclusion
+to every residue degree and radius, and determining the possible
+finite exceptions, are separate open steps.
+\end{document}

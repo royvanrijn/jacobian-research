@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "controls": {
+    "actual_integer_valued_binomial_column_content": 7176,
+    "formal_gauge_coefficient_integral": 10000,
+    "formal_gauge_digit_formula": 10000,
+    "dyadic_nonrestricted_tail": 5,
+    "exact_one_weighted_link": 750,
+    "Lucas_class_indicator": 272,
+    "uniform_off_class_projector_bound": 438,
+    "uniform_on_class_projector_bound": 378,
+    "odd_prime_unit_tail": 20,
+    "reject_wrong_dyadic_unit_tail": 1
+  },
+  "total_controls": 29040,
+  "profiles": [
+    {
+      "p": 2,
+      "N": 1,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 2,
+      "N": 2,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 2,
+      "N": 3,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 3,
+      "N": 1,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 3,
+      "N": 2,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 3,
+      "N": 3,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 3,
+      "N": 4,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 3,
+      "N": 5,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 3,
+      "N": 8,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 5,
+      "N": 1,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 5,
+      "N": 2,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 5,
+      "N": 4,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 5,
+      "N": 5,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 5,
+      "N": 6,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 5,
+      "N": 9,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 5,
+      "N": 24,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 7,
+      "N": 1,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 7,
+      "N": 2,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 7,
+      "N": 6,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 7,
+      "N": 7,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 7,
+      "N": 8,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 7,
+      "N": 13,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 7,
+      "N": 48,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 11,
+      "N": 1,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 11,
+      "N": 2,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 11,
+      "N": 10,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 11,
+      "N": 11,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 11,
+      "N": 12,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 11,
+      "N": 21,
+      "binomial_degrees": 13
+    },
+    {
+      "p": 11,
+      "N": 120,
+      "binomial_degrees": 13
+    }
+  ],
+  "scope": "Bounded normalization/formal-coefficient/projector controls; unbounded all-prime calculus proof in TeX. No noncollision or finite spectral closure claim.",
+  "source_sha256": {
+    "physical_prime_raising_calculus.py": "8fb6cdbbea1b74c98030a69fb6a91b277cfbc86315c4ed9e6ff0788510e3699d",
+    "PHYSICAL_PRIME_RAISING_CALCULUS.tex": "bd828f519547123c88a207eecf449600206bebc5b4837295f5ca13159de63110",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+  },
+  "independent_whole_proof_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

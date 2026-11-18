@@ -3,7 +3,8 @@
 The general framework is developed in
 [Binary sums with prescribed prime factors](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md).
 This case study retains the norm-specific proofs and certificates for modulus 12.
-The main quantitative research target is now the
+The immediate arithmetic target is the unbalanced every-target statement S12U
+below. The longer-term quantitative target is the
 [uniform binary lower bound FBS-U](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#the-central-binary-conjecture);
 S12 below is its weaker macroscopic existence consequence.
 
@@ -67,6 +68,51 @@ The [Eisenstein manuscript](../../unpublished/eisenstein-restricted-prime-sums/R
 proves binary coverage with only the restriction \(p\equiv1\pmod3\).
 Requiring both quadratic splitting conditions selects the single class
 \(1\pmod {12}\). The target is not a consequence of that manuscript.
+
+## The first pointwise target and the scaling reduction
+
+**Unbalanced target S12U.** Every sufficiently large \(N\equiv2\pmod{12}\)
+has \(N=a+b\) with positive \(a,b\in C_{12}\), without a balance restriction.
+This remains open here. S12 implies S12U; the converse has not been proved.
+The first global counting target is the unrestricted positive correlation
+\(R_{\mathrm{tot}}(N)\), followed by its versions with fixed local conditions.
+
+**Scaling lemma S12Scale.** Factor uniquely
+\[
+N=gN_0,\qquad
+g=\prod_{p\equiv1\ (12)}p^{v_p(N)}\in C_{12}.
+\]
+Then \(N_0\equiv2\pmod{12}\) has no prime divisor \(1\pmod{12}\).
+A representation \(N_0=a+b\), \(a,b\in C_{12}\), gives
+\(N=ga+gb\). It preserves each relative share, since
+\(ga/N=a/N_0\), and is injective on value pairs. These facts follow directly
+from multiplicative closure of \(C_{12}\).
+
+There is an important quantifier limitation. A large target can have a bounded
+reduced core: \(N=14g\) with arbitrarily large \(g\in C_{12}\) always has
+core 14. A theorem for sufficiently large reduced cores does not on its own
+cover these targets. For unbalanced existence, the finite certificate covers
+all admissible cores through \(10^8\). To complete this reduction, the eventual
+core theorem must overlap that range or the remaining smaller cores must be
+covered by another argument.
+
+For balanced existence, the known exceptional cores are an additional issue:
+\[
+14,38,50,62,86,230,242
+\]
+all have no prime factor \(1\pmod{12}\), and none has a thirds-balanced
+representation. Scaling their existing witnesses cannot prove balance for
+the infinitely many targets with one of those cores. Those multiplier
+families require separate treatment even if every larger reduced core is
+settled. This is one reason to pursue S12U first.
+
+Scaling also changes a power-window estimate. If
+\(|a-b|\le N_0^\theta\), its scaled difference is at most
+\[
+gN_0^\theta=g^{1-\theta}N^\theta.
+\]
+Thus the reduction alone does not preserve a target-sized power window or
+its conjectured semigroup-scale count.
 
 ## Unconditional coverage for a positive proportion of targets
 
@@ -315,6 +361,48 @@ A lower bound for \(R_{\mathrm{tot}}(N)\) does not establish (H1). Even knowing
 bad-count bound \((\pi^2-9+o(1))R_{\mathrm{tot}}(N)\): that bound can exceed
 the entire balanced count. Both inputs of C12 concern \(R_I\) and \(B_{p,I}\).
 
+## Pointwise upper bounds and a fixed-prime sieve interface
+
+The [pointwise sieve note](SIMULTANEOUS_NORM_POINTWISE_SIEVE.md) supplies an
+unconditional upper bound at the natural target-dependent scale. Put
+\[
+\mathcal T(N)=
+\prod_{\substack{p\mid N\\p\equiv1\ (12)}}(1+9/p)
+\prod_{\substack{p\mid N\\p\ge5,\ p\not\equiv1\ (12)}}(1+1/p).
+\]
+Theorems in that note prove
+\[
+R_{\mathrm{tot}}(N)\ll N\mathcal T(N),\qquad
+B_p(N)\ll \frac N{p^2}\mathcal T(N)
+\quad(p\le N^{1/8},\ p\text{ forbidden}),
+\]
+\[
+\sum_{p>Y}B_p(N)
+\ll \frac{N\mathcal T(N)}Y+N^{15/16}.
+\]
+They use Henriot's corrected 2014 New Theorem 5. The exact rescaling of a
+bad component leads to dilated correlations
+\(\sum_mh(m)h(N-p^2m)\); the proof includes primes dividing the target.
+The predicted local singular product is uniformly comparable to
+\(\mathcal T(N)\), so this scale has a uniform positive lower bound.
+A positive singular product is not a proof of a global representation count.
+
+An alternative sufficient interface is now precise: establish
+\[
+R_I(N)\gg N\mathcal T(N),\qquad
+B_{p,I}(N)/R_I(N)-\beta_p(N)\longrightarrow0
+\quad\text{for every fixed forbidden }p.
+\tag{H*}
+\]
+Both assertions remain open. The marginal convergence must hold along all
+admissible targets, including varying \(v_p(N)\). The upper tail then permits
+fixing a prime cutoff before taking \(N\to\infty\), and gives the same
+survival margin \(10-\pi^2\). This route avoids an asymptotic uniform in a
+growing prime range. It uses a stronger, naturally normalized lower bound
+than bare (H1), and does not prove the original additive-\(o(N)\) assertion
+(H2). The note gives an analogous tail for centered \(N^\theta\) windows
+when \(\theta>1/2\); their pointwise lower bounds and marginals remain open.
+
 ## What the global correlation actually is
 
 The divisor formulas also identify the arithmetic weight explicitly. Set
@@ -399,6 +487,52 @@ Our real balanced region avoids those surfaces but does not repair the failed
 hypotheses of a generic circle-method theorem. Rational parametrization gives
 denominators; clearing them replaces \(N\) by \(d^2N\), so it does not solve
 the integral fixed-target problem.
+
+## Why the one-ring shortcut reaches a sieve barrier
+
+Starting with an Eisenstein shell and excluding prime factors
+\(p\equiv7\pmod{12}\) produces a nonsummable local loss.
+The Eisenstein form is split modulo this prime. Write the determinant shell
+as \(xy+uv=N\) with \(p\nmid N\). It contains
+\(p(p-1)(p+1)\) points. The events \(xy=0\) and \(uv=0\) are disjoint,
+and together contain \(2(2p-1)(p-1)\) points. Hence the forbidden fraction is
+\[
+\frac{4p-2}{p(p+1)}\sim\frac4p.
+\]
+This prime class has density \(1/4\), so its sieve dimension is one.
+After imposing component values \(1\pmod{12}\), sieving these primes through
+\(\sqrt N\) excludes every such prime factor: a larger one would force a
+smaller one by the residue class of the remaining factor. But the classical
+lower linear sieve at a natural level \(D\le N\) then has
+\(\log D/\log\sqrt N\le2\), where its lower sieve function gives no positive
+main term. This diagnoses that route; it is not an impossibility theorem for
+stronger analytic input.
+
+A seemingly simpler quadratic replacement is also incorrect.
+\(133=11^2+12\) is represented by \(x^2+12y^2\), but
+\(133=7\cdot19\) has odd Gaussian-inert exponents, so \(h(133)=0\).
+The theta series of that binary form cannot replace the simultaneous weight
+\(h\) in the pointwise correlation.
+
+A fixed finite major-arc calculation also needs additional cancellation.
+Let \(h_6(n)=h(n)\mathbf1_{(n,6)=1}\). The Frobenian mean theorem
+[Loughran--Matthiesen, Lemma 2.8](https://arxiv.org/html/1904.12845v2#S2)
+applies both to \(h_6\) and to \(h_6^2\). Their prime means are respectively
+\(1\) and \(4\), since the split-prime values are \(4\) and \(16\),
+on a prime set of density \(1/4\). Thus
+\[
+\sum_{n\le X}h_6(n)\asymp X,\qquad
+\sum_{n\le X}h_6(n)^2\asymp X(\log X)^3.
+\]
+For \(F_X(\alpha)=\sum_{n\le X}h_6(n)e(n\alpha)\), Parseval gives the
+second quantity as its squared \(L^2\) norm, while \(\|F_X\|_\infty\ll X\).
+Any fixed finite collection of rational arcs of total length \(O_Q(X^{-1})\)
+therefore captures at most \(O_Q(X)\) of that energy. The complementary
+absolute integral remains \(\gg X(\log X)^3\). Bounding the binary minor-arc
+coefficient only by this absolute integral cannot prove an \(o(X)\) error.
+A successful circle-method approach needs signed cancellation, growing arc
+resolution or another stronger input. This rules out that particular
+fixed-arc absolute-value estimate, not the circle method itself.
 
 ## An unconditional global count averaged over targets
 
@@ -697,9 +831,10 @@ shrinking-window quantitative estimates or the inputs for arbitrary moduli.
   The new Gaussian paper's explicit all-positive result should be distinguished
   from this earlier asymptotic theorem.
 
-The next mathematical task is to prove the pointwise balanced lower bound (H1)
-and the summed bad-prime estimate (H2), or find another argument for the
-positivity of (7). The local margin, sharper large-prime tail, and averaged
+The immediate mathematical task is unrestricted pointwise counting for S12U.
+The balanced inputs (H1)--(H2), or the naturally normalized fixed-prime
+interface (H*), remain sufficient routes to S12. None has been established
+by the local calculations or the pointwise upper bounds alone. The local margin, sharper large-prime tail, and averaged
 counts before and after the full sieve have complete arguments with the stated
 ideal-counting input. The linked general theory now gives unweighted
 semigroup-scale density one for \(\theta>1/3\), fixed-width variance, and

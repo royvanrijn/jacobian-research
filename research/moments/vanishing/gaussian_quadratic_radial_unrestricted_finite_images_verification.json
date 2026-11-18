@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "sympy": "1.14.0",
+  "source": {
+    "A_H_G0": "arbitrary symbolic functions of Y",
+    "psi": "arbitrary symbolic time function",
+    "exact_relative_relations": 5,
+    "full_Y_and_t_connection": true,
+    "endpoint_retained": true,
+    "curvature_entries": 4
+  },
+  "scaled_faces": {
+    "nonresonant_and_resonant_faces": 3,
+    "moving_root_coordinate": true,
+    "genuine_double_resonant_root": 3,
+    "double_root_second_derivative": "-b^2/12"
+  },
+  "volume_orders": {
+    "zero_slope_truncated_orders": [
+      "1/m-epsilon*(1/2-1/m)",
+      "1/n-epsilon/2"
+    ],
+    "nonzero_slope_resonant_order_after_shrink": "1/n-epsilon/2",
+    "descending_phase_power": "-1/2-1/m",
+    "descending_tail_scalar_orders": [
+      "1-1/m",
+      "1/m"
+    ]
+  },
+  "original": {
+    "phases": 4,
+    "orders": [
+      0,
+      3
+    ],
+    "original_endpoint_controls": 80
+  },
+  "sha256": {
+    "research/moments/vanishing/verify_gaussian_quadratic_radial_unrestricted_finite_images.py": "f3c2d3b697d5d1b2029cd8d8a05d2581b9a14481efac73fbf2471fcb71b42002",
+    "research/moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md": "21ac968e6c99e3bd9da761be35401386461426a85e2a3d36bdb14f0b91cf460c",
+    "research/moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_LOGARITHMIC_COVER_FINITE_IMAGES.md": "533bd8e4569bf4b229090a3329b2d5913253bfc5c43e03987537aa2c7b0e373a",
+    "research/moments/vanishing/verify_gaussian_quadratic_radial_logarithmic_cover_finite_images.py": "ba3e092af1546a8715c4b83541f646bfc4148047d64727a7d55b44bb3e7920ad",
+    "research/moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md": "363ecc1004d88431949f5956d00362102dd61075482affb482f9ec7e247d8ee1",
+    "research/moments/vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
+    "research/moments/vanishing/GAUSSIAN_INVARIANT_CORE_BOUNDARY_REDUCTION.md": "af83621c99fec04b27c48ee1e76d184052ea01ba8b79fb160c2aa1996f68174a",
+    "research/moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+    "research/moments/vanishing/GAUSSIAN_SAFE_RECOMPOSITION_CLASSIFICATION.md": "079ee136e56674507a7d775815ba71dcd9ced518dc3fa61964e5f4a0d1748285",
+    "research/moments/vanishing/GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md": "e9b41f12cc515cf16336a3b3d41b5d665337be38cc0cb549cf0986cedd400825",
+    "research/moments/vanishing/sources/sabbah_stokes_0912.2762v5.pdf": "1bc0b14b82757bd41bc6342077b263c08be8a6d97f2697ba1483eea3d3b7e078",
+    "unpublished/gaussian-boundary/sources/laurent_primary_manifest.json": "9be38b06bd8e04d9992cba36f65c4207627c8e5587a5c344afdb2003ddca301d",
+    "unpublished/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
+    "unpublished/gaussian-boundary/sources/roucairol_formal_math0604134v2.html": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
+    "unpublished/gaussian-boundary/sources/sabbah_0706_3570v2.html": "6878d0845b69730e58c4cdc64ff32737f986c0173b4873974f650b4b9d55b71e",
+    "unpublished/gaussian-boundary/sources/hien_roucairol_2008_published.pdf": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1"
+  },
+  "scope": "Exact finite controls of local identities. The proof supplies the uniform chain estimates and the Stokes filtration argument.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

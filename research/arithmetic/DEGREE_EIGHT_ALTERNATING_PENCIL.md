@@ -2,10 +2,12 @@
 
 This is an exact algebraic example with four finite double-transposition branch
 values and geometric monodromy A8. Its coefficients lie in a quadratic number
-field. The displayed cover has no form over Q; existence of a different rational
-coefficient example up to a constant discriminant factor remains a separate
-question. No identification with the braid orbit of the particular knot tuple
-is claimed.
+field. The displayed cover has no form over Q. Different
+[rational-coefficient examples](RATIONAL_ALTERNATING_PENCIL_REALIZATION.md)
+have now been constructed. The
+[complete degree-eight braid computation](DEGREE_EIGHT_HURWITZ_ORBIT.md)
+places both types of examples in the original knot tuple's absolute Hurwitz
+orbit; this does not make the individual covers isomorphic.
 
 ## The polynomial and its discriminant
 
@@ -181,8 +183,8 @@ is not rational. A rational form would give a rational value of I, a
 contradiction. In fact the field of moduli is exactly K, since e generates K
 and the cover is already defined over K.
 
-This does not rule out other degree-eight Laurent polynomials over Q with
-discriminant a constant times a square. A literal square in Q[s] is impossible
+Other degree-eight Laurent polynomials over Q with discriminant a constant
+times a square are given by the linked rational family. A literal square in Q[s] is impossible
 for every rational degree-eight pencil H(z)-sz+a: the leading coefficient in s
 of its discriminant is -7^7 h_8^6, a negative nonsquare. The distinction between
 a literal square and a constant times a square is essential.
@@ -218,4 +220,5 @@ squarefreeness, the prime-11 factorization and factor irreducibility, and three
 negative controls. The monodromy and descent conclusions use the arguments
 above and their stated imported theorems. This is internal exact replay and
 internal mathematical checking, without a claim of formal verification,
-external review, novelty, or a certified braid-orbit match to the knot tuple.
+external review or novelty. Braid-orbit matching uses the separate complete
+finite certificate linked above.

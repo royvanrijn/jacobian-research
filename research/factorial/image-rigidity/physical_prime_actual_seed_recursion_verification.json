@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "controls": 11408,
+  "source_sha256": {
+    "physical_prime_actual_seed_recursion.py": "dfcfe19d7545443e84592e6074b2e591fd2e8151f06c956e5fea406c326610b7",
+    "PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex": "dca10b45493dc5401885950f7282aeda1cfed5b9d49b39863cc2b75d876cda87",
+    "PHYSICAL_PRIME_RAISING_CALCULUS.tex": "bd828f519547123c88a207eecf449600206bebc5b4837295f5ca13159de63110",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+  },
+  "scope": "Direct cyclic coefficients checked against the finite Artin\u2013Hasse recursion.",
+  "independent_whole_proof_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

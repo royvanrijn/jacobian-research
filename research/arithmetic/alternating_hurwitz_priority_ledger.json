@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ALTERNATING_HURWITZ_PRIORITY.md",
+  "scope": "Bounded exact primary-source comparison. Exact passport existence has established precedent; fullA_n follows from prior results for even n>=10. Explicit coefficient family and braid-orbit priority remain separate.",
+  "assurance": "Internal source statement/application checking. No independent reproof of imported theorems, external review, or exhaustive worldwide priority search.",
+  "sources": [
+    {
+      "id": "edmonds-kulkarni-stong-1984",
+      "title": "Realizability of branched coverings of surfaces",
+      "authors": [
+        "Allan L. Edmonds",
+        "Ravi S. Kulkarni",
+        "Robert E. Stong"
+      ],
+      "version": "Transactions of the American Mathematical Society 282 no.2 (April1984),773-790",
+      "primary_url": "https://courses.mai.liu.se/GU/TA1022/Edmonds-Branched%20coverings.pdf",
+      "retained_pdf": "research/arithmetic/sources/edmonds-kulkarni-stong-branched-1984.pdf",
+      "sha256": "7239b7c28c08e9743022dd60c16f236a37509cd9fc2a2cd01934d3105d1d6dc9",
+      "bytes": 1800785,
+      "pdf_pages": 18,
+      "direct_read": true,
+      "extraction": "pdftotext -layout",
+      "locator": "Proposition5.3, printed pp784-785, PDFpp12-13",
+      "role": "mathematical_input",
+      "statement": "A branch datum containing(d-1,1) is realizable iff its total defect is even and at least2d-2, excluding the two listed exceptional families.",
+      "application": "Our n=2b>=8,q=b+1>=5 passport has defect2n-2 and avoids both exceptions; hence it is already realizable.",
+      "reading_limits": "Read statement and its reduction proof; no independent proof of all preliminary permutation lemmas."
+    },
+    {
+      "id": "pakovich-hurwitz-laurent-2009",
+      "title": "Solution of the Hurwitz problem for Laurent polynomials",
+      "authors": [
+        "Fedor Pakovich"
+      ],
+      "version": "Journal of Knot Theory and Its Ramifications18 no.2 (2009),271-302; accepted31August2007",
+      "primary_url": "https://pakovich.github.io/lau.pdf",
+      "retained_pdf": "research/arithmetic/sources/pakovich-hurwitz-laurent-2009.pdf",
+      "sha256": "080942d30be2381eeeb1a012eb05e936c9bc0c3e6c1a8cfe62dd5b626471f978",
+      "bytes": 1090025,
+      "pdf_pages": 32,
+      "direct_read": true,
+      "extraction": "pdftotext -layout",
+      "locator": "Theorem1.1, p273; Theorem3.7,p291; attribution onp272",
+      "role": "mathematical_input",
+      "statement": "Every genus-zero Laurent passport with more than three branch values is realizable.",
+      "application": "Exact passport DT^b,(2b-1,1) has b+1>=5 values and a length-two partition; it is a direct specialization.",
+      "reading_limits": "Read definitions and theorem; inspected proof architecture and final deduction inSection3. Does not prescribe arithmetic field, geometric group, or a particular tuple."
+    },
+    {
+      "id": "jones-beauville-2013",
+      "title": "Characteristically simple Beauville groups, I: cartesian powers of alternating groups",
+      "authors": [
+        "Gareth A. Jones"
+      ],
+      "version": "arXiv:1304.5444v1,19April2013",
+      "primary_url": "https://arxiv.org/pdf/1304.5444v1",
+      "retained_pdf": "research/arithmetic/sources/jones-beauville-1304.5444v1.pdf",
+      "sha256": "1cc4341c3c4285894a3aecc2a9c7156f9bc322cee58fc7a45f77f237142a20e3",
+      "bytes": 236422,
+      "pdf_pages": 21,
+      "direct_read": true,
+      "extraction": "pdftotext -layout",
+      "locator": "Proposition6.1(3), printed/PDFp9; proof immediately following",
+      "role": "mathematical_input",
+      "statement": "A primitive finite permutation group of degree n>=9 containing a double transposition contains A_n.",
+      "application": "For even n>=10, any transitive realization of our passport is primitive by its(n-1)-cycle and all branch cycles are even, hence its group equalsA_n.",
+      "reading_limits": "Jones imports the classical small-support result and cites Cameron's proof sketch. This audit imports that exact theorem; no independent reproof of its classification."
+    },
+    {
+      "id": "magaard-voelklein-2003",
+      "title": "The monodromy group of a function on a general curve",
+      "authors": [
+        "Kay Magaard",
+        "Helmut Voelklein"
+      ],
+      "version": "arXiv:math/0304130v1,9April2003; Israel Journal of Mathematics141(2004),355-368",
+      "primary_url": "https://arxiv.org/pdf/math/0304130v1",
+      "retained_pdf": "research/arithmetic/sources/magaard-voelklein-0304130v1.pdf",
+      "sha256": "47516c329b6a8766c59a107d21cec97c3833908cd32f7be0579fbb2465d62035",
+      "bytes": 162861,
+      "pdf_pages": 10,
+      "direct_read": true,
+      "extraction": "pdftotext -layout",
+      "locator": "DefinitionDTA(n,g),Lemma3.1(i) and proof, p5; Theorem3.3,p6",
+      "role": "context",
+      "statement": "For each n>=6 there exist fullA_n genus-zero covers with all n-1 branch cycles double transpositions.",
+      "application": "Shows prior genus-zero DT alternating covers; does not prescribe the long-cycle(n-1,1) pole fiber.",
+      "reading_limits": "Read exact genus-zero statement and degree-raising proof; its n6 base delegates to GAP/direct check, not independently replayed here."
+    },
+    {
+      "id": "wewers-bouw-2005",
+      "title": "Alternating groups as monodromy groups in positive characteristic",
+      "authors": [
+        "Stefan Wewers",
+        "Irene I. Bouw"
+      ],
+      "version": "Pacific Journal of Mathematics222 no.1 (2005),185-200",
+      "primary_url": "https://msp.org/pjm/2005/222-1/pjm-v222-n1-p07-p.pdf",
+      "retained_pdf": "research/arithmetic/sources/wewers-bouw-alternating-2005.pdf",
+      "sha256": "8e739a1162e3e7c6949f1fc44c4945bac5f93547afd5e536acad9861722e18e9",
+      "bytes": 177709,
+      "pdf_pages": 18,
+      "direct_read": true,
+      "extraction": "pdftotext -layout",
+      "locator": "Proposition7,pp193-194; Theorem10,p197; introductionpp185-187",
+      "role": "context",
+      "statement": "Alternating covers of generic curves with all3-cycle or allDT inertia in the exact characteristic and degree ranges stated.",
+      "application": "Related prescribed-ramification covers; not a statement about a single long(n-1)-cycle or denominatorz.",
+      "reading_limits": "Read the listed theorem statements and genus-zero construction. Positive-characteristic ranges are not extended to unlisted cases."
+    },
+    {
+      "id": "mestre-icm-1994",
+      "title": "Constructions polynomiales et theorie de Galois",
+      "authors": [
+        "Jean-Francois Mestre"
+      ],
+      "version": "ProceedingsICMZurich1994,Vol1(1995),318-323",
+      "primary_url": "https://www.imj-prg.fr/wp-content/uploads/2020/prix/mestre1994.pdf",
+      "retained_pdf": "research/arithmetic/sources/mestre-icm-1994.pdf",
+      "sha256": "8e32d3d66cc530afa4c288ba72511dddae6b142eff0bd338bee76c718c6f6458",
+      "bytes": 1681902,
+      "pdf_pages": 6,
+      "direct_read": true,
+      "extraction": "pdftotext -layout",
+      "locator": "Section2,printedp319,PDFp2; introductory even-degree deduction,p318",
+      "role": "context",
+      "statement": "For odd n and general rationalP, constructs rationalQ,R with P'Q-PQ'=R², and Disc(P-tQ)=Disc(P)S(t)²; branch specializations have one triple root.",
+      "application": "Prior square-discriminant pencil mechanism with general denominator and3-cycle branching, distinct from paired simple critical points of our fixedlinear-denominator pencil.",
+      "reading_limits": "Read construction and proof explanation; this comparison does not assert rational descent of the DT passport."
+    },
+    {
+      "id": "muller-laurent-2013-existing",
+      "title": "Permutation groups with a cyclic two-orbits subgroup and monodromy groups of Laurent polynomials",
+      "authors": [
+        "Peter Mueller"
+      ],
+      "version": "Ann.Sc.Norm.Super.PisaCl.Sci.(5)12(2013),369-438",
+      "primary_url": "https://www.numdam.org/item/ASNSP_2013_5_12_2_369_0.pdf",
+      "retained_pdf": "research/arithmetic/sources/muller-laurent-monodromy-2013.pdf",
+      "sha256": "fa17635dfb34b9e486a83ea1642357c922e89ce93fec897bc57a707ef91dc972",
+      "bytes": 1945573,
+      "pdf_pages": 70,
+      "direct_read": true,
+      "locator": "Theorem4.8,printedpp416-418",
+      "role": "context",
+      "statement": "Natural alternating/symmetric monodromy is retained with many ramification possibilities in the indecomposable two-pole classification.",
+      "application": "Does not certify a particular passport or arithmetic field; more exact realizability precedent is EKS1984 and Pakovich2009.",
+      "reading_limits": "Reused existing retained PDF; no change to the earlier ledger or source."
+    }
+  ]
+}
