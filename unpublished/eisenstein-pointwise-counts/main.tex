@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[hmargin=26mm,vmargin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,microtype}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\hypersetup{pdftitle={Pointwise representation counts for Eisenstein restricted sums},pdfauthor={Roy van Rijn}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\A}{\mathcal A}
+\newcommand{\Oq}{\mathcal O}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\F}{\mathbb F}
+\newcommand{\nrd}{\operatorname{nrd}}
+\newcommand{\PGL}{\operatorname{PGL}}
+\newcommand{\SU}{\operatorname{SU}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\title{Pointwise representation counts for Eisenstein restricted sums}
+\author{Roy van Rijn}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let \(A\) consist of the positive integers supported on primes
+\(1\bmod 3\), including \(1\). We count distinct ordered representations
+\(n=a+b\) for \(n\equiv2\bmod6\) and \(n=a+3b\) for \(n\equiv4\bmod6\),
+with \(a,b\in A\). In either family prescribe an interval of length
+\(H\) centered at \(x\) for one actual summand. Put \(M=\min(x,n-x)\).
+For every fixed \(0<\varepsilon<1\), if \(H\le M\) and
+\(H^3\ge n^{1+\varepsilon}M\), the count has order \(HJ(n)/\log n\)
+for every sufficiently large admissible \(n\). Here \(J(n)\) is the
+product of \((p-1)/(p-2)\) over the odd primes \(p\equiv2\bmod3\)
+dividing \(n\). In particular, central windows of width \(n^\theta\)
+are allowed for \(2/3<\theta<1\), and windows at a prescribed small
+summand of size comparable to their width are allowed for
+\(1/2<\theta<1\). The lower bound combines angular Hecke estimates
+with a sieve that prescribes small split factors in both summands.
+\end{abstract}
+\input{introduction}
+\input{angular}
+\input{local}
+\input{sieve}
+\input{count}
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+\input{references}
+\end{document}

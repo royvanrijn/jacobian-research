@@ -1,0 +1,189 @@
+\section{The rank-one obstruction}\label{sec:rank}
+
+We prove an upper bound for every knot obtained by following \(U\)
+with a braid in the subgroup acting on \eqref{eq:framed}. This
+allows the same local argument for every \(b\) and every exponent.
+
+\begin{lemma}\label{lem:spans}
+Suppose that \(\tau\) belongs to
+\(\langle\sigma_2,g,\sigma_5,\ldots,\sigma_{b-1}\rangle\) and
+\(\cl{U\tau}\) is a knot. Let its group act on a finite-dimensional
+space \(V\) over a field so that each meridian has displacement
+of rank one. Write each meridian as \(M=I-u f\), where \(u\in V\)
+and \(f\in V^*\). Then at least one of the spans of all the \(u\)'s
+and all the \(f\)'s has dimension at most \(b-1\), and both
+dimensions are at most \(b\).
+\end{lemma}
+
+\begin{proof}
+Each of the two spans is already spanned by its \(b\) top-strand
+vectors or covectors. The root span of the generating meridians is
+invariant under those generators and their inverses, and the
+covector span is invariant under right multiplication by the same
+matrices. Conjugating a generator therefore introduces neither a
+new root direction nor a new covector direction.
+
+Suppose both spans have dimension \(b\). In particular both
+families of four vectors and covectors on the first four strands
+are separately independent. Set
+\[
+ \mu=\det M\ne0,\qquad f(u)=1-\mu,\qquad
+ M^{-1}=I+\mu^{-1}u f.
+\]
+The first two identities hold for every meridian, with one common
+\(\mu\). When \(M_a=I-u_a f_a\), conjugation by a matrix \(J\)
+replaces its pair by \((Ju_a,f_aJ^{-1})\). Two pairs for the same
+nonzero displacement differ by reciprocal scaling.
+
+Here is the crossing trace through \(U\). We use arc subscripts on
+the matrices \(M_i\) in this proof. A row \((o,a,c,\epsilon)\)
+represents \(M_c=M_o^\epsilon M_aM_o^{-\epsilon}\).
+The input labels are \((1,0,8,13)\) and the output labels are
+\((1,6,16,13)\).
+\begin{equation}\label{eq:prefix}
+\begin{array}{c|rrrr@{\qquad}c|rrrr}
+0&0&1&2&-&1&8&2&3&-\\
+2&3&13&14&+&3&14&3&4&+\\
+4&4&8&9&-&5&9&14&15&+\\
+6&15&9&10&+&7&10&4&5&-\\
+8&10&0&1&-&9&1&10&11&-\\
+10&5&11&12&-&11&12&5&6&-\\
+12&6&12&13&-&13&13&15&16&+
+\end{array}
+\end{equation}
+The repeated outer labels express closure, since \(\tau\) fixes
+the first and fourth entries. Each row is obtained by \(T\) or
+\(T^{-1}\) in the order of the letters in \(U\).
+
+Put \(A=M_2,\ B=M_8,\ C=M_{13},\ D=M_0\).
+Replacing \(M_1\) by \(A=D^{-1}M_1D\) changes the root by a
+multiple of the root of \(D\) and the covector by a multiple of
+its covector, preserving both independent families.
+Let \(H\) and \(F\) denote the root and covector spans of
+\(A,B,C\), respectively. Both have dimension three, and in the
+pair \((v,\nu)\) of \(D\) one has \(v\notin H\) and \(\nu\notin F\).
+Rows \(1\) through \(7\) and row \(13\) propagate pairs in \(H,F\).
+
+Rows \(0\) and \(8\) give \(DAD^{-1}=X^{-1}DX\) for
+\(X=M_{10}\). If \(A,X\) have pairs \((a,f)\) and \((x,\xi)\)
+in \(H,F\), comparing the pairs on both sides gives
+\[
+ \begin{aligned}
+ a-\nu(a)v &= \lambda\bigl(v+\mu^{-1}\xi(v)x\bigr),\\
+ f+\mu^{-1}f(v)\nu &= \lambda^{-1}\bigl(\nu-\nu(x)\xi\bigr)
+ \end{aligned}
+\]
+for some \(\lambda\ne 0\). The coefficients on \(v,\nu\)
+give \(\lambda=-\nu(a)\) and \(f(v)=\mu\lambda^{-1}\).
+The other components give
+\(a=\lambda\mu^{-1}\xi(v)x\) and \(f=-\lambda^{-1}\nu(x)\xi\).
+Applying \(\nu\) to the expression for \(a\) gives
+\(\nu(x)\xi(v)=-\mu\). Thus \(af=x\xi\) and \(X=A\).
+The relation is now \(DAD=ADA\).
+Row \(9\), together with \(M_1=DAD^{-1}\), gives \(M_{11}=D\).
+
+Next, rows \(10\)--\(12\) send \((D,P)\) to \((P,N)\),
+then \((N,Q)\), then \((Q,C)\), where \(P=M_5,\ N=M_{12}\)
+and \(Q=M_6\). Write the pair of \(P\) as \((p,\pi)\) in
+\(H,F\), and put \(x_1=\pi(v),\ y_1=\nu(p),\
+h_1=1+x_1y_1/\mu\). Conjugating at each step gives
+\[
+\begin{array}{c|cc}
+ &\text{root}&\text{covector}\\ \hline
+N&v+(x_1/\mu)p&\nu-y_1\pi\\
+Q&y_1v+h_1p&-(x_1/\mu)\nu+h_1\pi\\
+C&h_1v+(x_1/\mu)(1+h_1)p&h_1\nu-y_1(1+h_1)\pi.
+\end{array}
+\]
+For example \(N=P^{-1}DP\); the next row uses \(Q=N^{-1}PN\).
+The last pair lies in \(H,F\), so \(h_1=0\) and
+\(x_1y_1=-\mu\). The pairs then give \(Q=D\) and \(P=C\).
+
+Thus at the end of \(U\) the middle two labels are \((D,Y)\)
+for \(Y=M_{16}\), and closure requires them to return to
+\((D,B)\) with the other framed entries also restored.
+The ordered product in \eqref{eq:framed} gives
+\(DY\prod_{j=5}^b (CE_jC^{-1})=DB\prod_{j=5}^b (CE_jC^{-1})\),
+where \(E_j\) is the matrix on top strand \(j\).
+Cancellation yields \(Y=B\).
+The eight relations left on \(H,F\) now contradict
+Lemma~\ref{lem:eight}, since the resulting matrices include
+\(A,B,C\). This proves the span bound.
+\end{proof}
+
+\begin{lemma}\label{lem:eight}
+Take the relations in rows \(1\)--\(7\) and \(13\) of
+\eqref{eq:prefix}, with \(M_{10}=M_2,\ M_5=M_{13}\) and
+\(M_{16}=M_8\). The root and covector spans of these meridian
+matrices cannot both have dimension three.
+\end{lemma}
+
+\begin{proof}
+Reorder the crossings so that the propagation comes first:
+\[
+\begin{gathered}
+ (9,14,15,+),\ (15,9,2,+),\ (8,2,3,-),\
+ (14,3,4,+),\ (3,14,13,-),\\
+ (4,9,8,+),\qquad (2,13,4,+).
+\end{gathered}
+\]
+Here the rows with over-arcs \(3,4,2\) and output arcs
+\(13,8,4\), respectively, solve the corresponding prefix relations
+for the other under-arc. The first five crossings propagate all the
+matrices from \(M_8,M_{14},M_9\). If both spans have dimension three,
+the corresponding pairs \((u,f),(v,g_0),(w,j)\)
+are separately independent. Set
+\[
+\begin{gathered}
+ x=f(v),\quad X=g_0(u),\quad y=f(w),\quad Y=j(u),\quad
+ z=g_0(w),\quad Z=j(v),\qquad \eta=1-\mu,\\
+ h=1+zZ/\mu,\qquad t=-zx/\mu+hy,\qquad \ell=ZX+hY,\\
+ \kappa=tX/\mu+z(h-\eta/\mu),\qquad
+ \Lambda=-\ell x+(\eta+h)Z .
+\end{gathered}
+\]
+In the bases \((u,v,w)\) and \((f,g_0,j)\), propagation gives
+\[
+\begin{array}{c|cc}
+ i&u_i&f_i\\\hline
+ 2&(0,-z/\mu,h)&(0,Z,h)\\
+ 3&(t/\mu,-z/\mu,h)&(-\ell,Z,h)\\
+ 4 &(t/\mu,-z/\mu-\kappa,h)&(-\ell,Z+\Lambda/\mu,h)\\
+ 13&(\Lambda t/\mu^2,1-\Lambda z/\mu^2,\Lambda h/\mu)
+       &(\kappa\ell,1-\kappa Z,-\kappa h).
+\end{array}
+\]
+For the first row, \(M_{15}=M_{9}M_{14}M_{9}^{-1}\) has pair
+\((v-Zw,g_0+(z/\mu)j)\), and \(M_{2}=M_{15}M_{9}M_{15}^{-1}\).
+The next two rows conjugate by \(M_{8}^{-1}\) and \(M_{14}\),
+respectively, with \(t=f(u_{2}),\ \ell=f_{2}(u)\) and
+\(\kappa=g_0(u_{3}),\ \Lambda=f_{3}(v)\).
+The last row uses \(M_{13}=M_{3}^{-1}M_{14}M_{3}\).
+
+At the crossing \((4,9,8,+)\), put \(P=f_{4}(w)\) and
+\(Q=j(u_{4})\). The first and third coefficients of
+\((M_{4}w,jM_{4}^{-1})=(\gamma u,\gamma^{-1}f)\) give
+\[
+ -Pt/\mu=\gamma,\qquad Ph=1,\qquad
+ -Q\ell/\mu=\gamma^{-1},\qquad Qh/\mu=-1.
+\]
+Thus \(P,Q,t,\ell,h\) are nonzero. The middle coefficients
+give \(\kappa=-z/\mu\) and \(\Lambda=-\mu Z\).
+At \((2,13,4,+)\) the \(M_{2}\) pair has zero first
+coefficients. Comparing the first coefficients of the pairs
+of \(M_{13}\) and \(M_{2}^{-1}M_{4}M_{2}\) therefore gives
+\[
+ \Lambda t/\mu^2=\beta t/\mu,\qquad
+ \kappa\ell=-\beta^{-1}\ell
+\]
+with \(\beta\ne0\). Cancelling \(t,\ell\) yields
+\(zZ=\kappa\Lambda=-\mu\). This makes \(h=0\), contrary to
+\(Ph=1\).
+\end{proof}
+
+For an irreducible representation in Cornwell's correspondence,
+the root span is nonzero and invariant, hence equals \(V\).
+The common kernel of the covectors is the fixed subspace and
+is zero, so the covectors span \(V^*\).
+Lemma~\ref{lem:spans} bounds the dimension by \(b-1\) and
+proves the augmentation inequality in Theorem~\ref{thm:main}.

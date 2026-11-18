@@ -5,14 +5,15 @@ Run with Python 3 and no third-party packages:
     python3 research/meridional-rank/representations/verify_three_meridian_candidate.py
 
 Candidate: closure(sigma1^4 (sigma1 sigma2 sigma3)^5) = T(4,5;2,2).
-The literal braid identifies the intended input; this script does NOT derive
-its group from a diagram. The presentation and meridian below were imported
-from SnapPy 3.3.2's diagram/cell-group and peripheral calculations. Their
-identification with that knot is a SOFTWARE IMPORT, not certified here.
+The default replay treats the presentation and meridian as software inputs.
+The optional --verify-exterior flag, run with Sage and SnapPy 3.3.2,
+reconstructs the literal braid exterior, compares its presentation/meridian
+and verifies hyperbolic gluing equations with interval arithmetic. The
+diagram/cell-group and peripheral identification remains a SOFTWARE IMPORT.
 Bridge number and the (1,1)-presentation are separate literature inputs.
 
 The checks prove exact identities for the displayed presentation and the
-trefoil permutations. They exhibit no generating meridian triple, do not
+trefoil permutations and the odd-cone-order countercheck. They exhibit no generating meridian triple, do not
 replay the monodromy/coset searches, and prove no meridional-rank bound.
 Five finite quotients replay the negative part of the bounded 595-triple
 screen. All words use signed generator indices; permutation products act
@@ -22,6 +23,7 @@ file itself for the reported SHA-256.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from itertools import combinations
@@ -283,7 +285,130 @@ def check_fiber_nilpotent_barrier(relator):
     }
 
 
+def check_odd_cone_lifting_barrier():
+    """Exact controls for the written all-odd-order trefoil countercheck."""
+    identity = ((1, 0), (0, 1))
+    t = ((1, 1), (0, 1))
+    b = ((1, 0), (-1, 1))
+    v4 = ((1, 0), (4, 1))
+
+    def matrix_multiply(left, right):
+        return tuple(
+            tuple(sum(left[i][k] * right[k][j] for k in range(2)) for j in range(2))
+            for i in range(2)
+        )
+
+    def matrix_inverse(matrix):
+        a, b0 = matrix[0]
+        c, d = matrix[1]
+        require(a * d - b0 * c == 1, "determinant-one matrix")
+        return ((d, -b0), (-c, a))
+
+    # q=(b^-1*a)*b*(b^-1*a)^-1 and q*a=-V4.
+    v = matrix_multiply(matrix_inverse(b), t)
+    q = matrix_multiply(matrix_multiply(v, b), matrix_inverse(v))
+    require(q == ((-1, 1), (-4, 3)), "odd-cone second meridian matrix")
+    require(matrix_multiply(q, t) == tuple(tuple(-x for x in row) for row in v4),
+            "Gamma0(4) generators")
+    require(matrix_multiply(matrix_multiply(t, b), t)
+            == matrix_multiply(matrix_multiply(b, t), b), "matrix braid relation")
+    require(matrix_multiply(t, matrix_inverse(t)) == identity, "matrix inverse control")
+
+    lines = ((1, 0), (0, 1), (1, 1), (2, 1), (3, 1), (1, 2))
+
+    def normalize_line(vector):
+        vector = tuple(x % 4 for x in vector)
+        require(any(x % 2 for x in vector), "primitive projective line")
+        return min(vector, tuple(3 * x % 4 for x in vector))
+
+    line_ids = {normalize_line(vector): i for i, vector in enumerate(lines)}
+    primitive_lines = {
+        normalize_line((x, y))
+        for x in range(4) for y in range(4) if x % 2 or y % 2
+    }
+    require(set(line_ids) == primitive_lines and len(line_ids) == 6,
+            "all six primitive projective lines modulo four")
+
+    def projective_action(matrix):
+        return tuple(
+            line_ids[normalize_line(tuple(sum(matrix[r][k] * vector[k] for k in range(2))
+                                         for r in range(2)))]
+            for vector in lines
+        )
+
+    ta, tb, tq = (projective_action(matrix) for matrix in (t, b, q))
+    full = {tuple(range(6))}
+    queue = list(full)
+    for element in queue:
+        for generator in (ta, tb):
+            product = compose(element, generator)
+            if product not in full:
+                full.add(product)
+                queue.append(product)
+    require(len(full) == 24 and subgroup_order([ta, tq]) == 4,
+            "six-line full/stabilizer image orders")
+    require(ta[0] == tq[0] == 0, "subgroup fixes the distinguished line")
+    require(power_permutation(ta, 4) == tuple(range(6))
+            and power_permutation(ta, 2) != tuple(range(6)), "meridian image order four")
+    for residue in (1, 3):
+        element = power_permutation(ta, residue)
+        require(subgroup_order([conjugate_permutation(g, element) for g in full]) == 24,
+                "normal closure at odd residue modulo four")
+
+    # Properness is detected in the original trefoil's S3 quotient.
+    a3, b3 = (1, 0, 2), (0, 2, 1)
+    v3 = compose(inverse_permutation(b3), a3)
+    q3 = conjugate_permutation(v3, b3)
+    require(q3 == a3 and subgroup_order([a3, b3]) == 6
+            and subgroup_order([a3, q3]) == 2, "proper two-meridian subgroup in S3")
+
+    # Literal single braid rewrites certify Delta*a=b*Delta,
+    # Delta*b=a*Delta and (ab)^3=Delta^2, hence centrality.
+    def braid_rewrite(word, index, old, new):
+        require(word[index:index + 3] == old and {old, new} == {"aba", "bab"},
+                "valid single application of the original braid relator")
+        return word[:index] + new + word[index + 3:]
+
+    require(braid_rewrite("baba", 0, "bab", "aba") == "abaa", "Delta*a rewrite")
+    require(braid_rewrite("abab", 1, "bab", "aba") == "aaba", "Delta*b rewrite")
+    require(braid_rewrite("ababab", 3, "bab", "aba") == "abaaba", "central element rewrite")
+    return {
+        "proper_S3_full_and_subgroup_orders": [6, 2],
+        "mod_four_projective_full_and_subgroup_orders": [24, 4],
+        "meridian_projective_order": 4,
+        "odd_residues_checked": [1, 3],
+        "scope": "finite controls of the written all-odd-order proof; no MRC counterexample",
+    }
+
+
+def check_candidate_exterior():
+    """Optional software-import replay; requires Sage with SnapPy 3.3.2."""
+    import snappy
+
+    require(snappy.__version__ == "3.3.2", "pinned SnapPy version")
+    snappy.set_rand_seed(0)
+    exterior = snappy.Link(braid_closure=list(BETA)).exterior()
+    group = exterior.fundamental_group()
+    require(group.generators() == ["a", "b"], "original presentation generators")
+    require(group.relators() == [RELATOR_AB], "original presentation relator")
+    require(group.meridian() == "BA", "original peripheral meridian")
+    verified, _shapes = exterior.verify_hyperbolicity()
+    require(verified, "interval hyperbolicity of the literal exterior")
+    return {
+        "snappy_version": snappy.__version__,
+        "random_seed": 0,
+        "triangulation_isosig": exterior.triangulation_isosig(),
+        "presentation_and_meridian_match": True,
+        "interval_hyperbolicity": True,
+        "scope": "exterior only; diagram/peripheral software import; no closed-cover claim",
+    }
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--verify-exterior", action="store_true",
+                        help="also replay SnapPy 3.3.2 imports and interval hyperbolicity in Sage")
+    args = parser.parse_args()
     counts = {}
     require(len(BETA) == 19 and set(BETA) == {1, 2, 3}, "literal braid input")
     relator = [{"a": 1, "b": 2, "A": -1, "B": -2}[c] for c in RELATOR_AB]
@@ -414,6 +539,9 @@ def main():
     counts["corruption_rejection_controls"] = 2
     counts["bounded_negative_generation_certificates"] = check_bounded_negative_certificates(relator)
     counts["fiber_nilpotent_density_barrier"] = check_fiber_nilpotent_barrier(relator)
+    counts["odd_cone_order_lifting_barrier"] = check_odd_cone_lifting_barrier()
+    if args.verify_exterior:
+        counts["candidate_exterior"] = check_candidate_exterior()
 
     print(json.dumps({
         "status": "pass_exact_algebra_only_no_MRC_resolution",

@@ -327,6 +327,9 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HESS-HC4-COUNTEREXAMPLE-BASE-DEGREES-THROUGH-125 | conditional | maximum component total degree of the planar base map | Complex HC4 counterexamples of potential degree at most 125 in the Tang normal form | exact: 108 | Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1, OWN-TANG-STRUCTURAL-AUDIT |
 | ARITH-COUPLED-MIXED-TWO-LARGE-PRIME-BOUND | proved | coupled bad sifted-pair count | Unweighted C4+C3 targets N=2 modulo 12 with z=N^(1/2-epsilon) and fixed 0<epsilon<1/100 | upper: C0*epsilon^(5/4)*N*J_12(N)/(log N)^(3/2) |  |
 | ARITH-EISENSTEIN-BALANCED-EXPLICIT-TAIL | proved | sufficient onset for all ordinary thirds-balanced Eisenstein targets | positive integers n=2 modulo 6, ordinary A+A with both summands in [n/3,2n/3] | upper: 2^(2^15) |  |
+| ARITH-EISENSTEIN-BALANCED-INERT-TAIL | proved | sufficient onset for ordinary thirds balance on all-inert targets | positive n=2 modulo 6 with every prime divisor 2 modulo 3 | upper: 2^60 |  |
+| GAUSSIAN-TERNARY-CUBIC-GEOMETRIC-PREFIX-AT-LEAST-SIX | proved | geometric pure-moment prefix | Complex polynomials of total degree at most three in three variables with standard Gaussian Wick moments | lower: 6 |  |
+| GAUSSIAN-TERNARY-CUBIC-ORDINARY-PREFIX-AT-LEAST-TEN | proved | ordinary pure-moment ideal prefix | Complex polynomials of total degree at most three in three variables with standard Gaussian Wick moments | lower: 10 |  |
 
 ## Comparable improvements
 

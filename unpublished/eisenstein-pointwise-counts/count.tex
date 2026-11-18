@@ -1,0 +1,107 @@
+\section{From coordinates to distinct pairs}\label{sec:count}
+For each \(d\) fix \(\rho_d\in R\) of norm \(d\), obtained by
+multiplying one factor above each split prime of \(d\).
+Embed the residual shell at \(m=n/d\) in the original shell
+by \((z,y)\mapsto(\rho_d z,\rho_d y)\). This preserves the
+fractional norm coordinate, the prescribed orientation at \(3\),
+and inert divisibility above \(Z\).
+
+Each original value pair recovers its triple \(d,u,v\).
+At split primes up to \(Y\), the only possible positive valuation
+is one, occurring in both norms at the primes of \(d\), only
+in the first at \(u\), and only in the second at \(v\).
+The images for distinct triples are consequently disjoint.
+This makes it possible to bound the remaining losses on the
+original shell without summing an error over the triples.
+
+\subsection{Large inert primes}
+If an inert prime \(p>Z\) divides the first component norm,
+that component is \(p\beta\). The norm of \(\beta\) belongs to
+\([(x-H/2)/p^2,(x+H/2)/p^2]\). For the other component use
+\(n-x\) in place of \(x\). Each resulting annulus has
+squared-radius width \(H/p^2\) and outer radius at most
+\(\sqrt n/p\). Covering each lattice point by a translated
+fundamental cell, of fixed area and bounded radius, gives
+\(O(H/p^2+\sqrt n/p+1)\) possible \(\beta\). Indeed the cells
+lie in the annulus obtained by moving the two boundaries by
+a fixed distance, truncating the inner radius at zero.
+The complementary positive norm has at most
+\(6\max_{a\le n}\tau(a)=n^{o(1)}\) coordinate choices.
+
+Since all weights are at most one, summing on the original
+shell over the two components and \(Z<p\le\sqrt n\) bounds
+the lost weight by
+\[
+ n^{o(1)}\left(\frac H Z+\sqrt n(1+\log n)\right)
+             =o_\varepsilon(H/\log n).
+\]
+Here \(Z\) is a fixed power of \(n\), and the hypothesis
+\(H^3\ge n^{1+\varepsilon}M\) with \(M\ge H\) gives
+\(H\ge n^{(1+\varepsilon)/2}\). Thus \eqref{eq:weight}
+persists after removing every inert prime. Oddness and the
+condition at \(3\) now give the required norm values.
+
+\subsection{The weight of one value pair}
+On the residual shell write \(A_1=uk_1\) and \(A_2=vk_2\).
+All split prime factors of \(k_1,k_2\) exceed \(Z=n^\eta\).
+Each of these two numbers has at most \(1/\eta\) split factors
+counted with multiplicity, and the possible single factor \(3\)
+has no effect on coordinate multiplicity.
+The split primes in \(uv\) occur to valuation one. By the
+multiplicity formula in Section~\ref{sec:angular}, the weighted
+coordinate multiplicity, after division by \(\tau(uv)\),
+is at most
+\[
+ 36f(k_1)f(k_2)\le36\cdot 2^{2/\eta}.
+\]
+Each original pair determines its triple and residual pair.
+Dividing the surviving weight by this constant proves the lower
+bound of Theorem~\ref{thm:main}.
+
+\subsection{The upper bound on integers}
+For the upper bound, write \(s=s_1\) in the interval of length
+\(H\). At every inert \(p\ge5\) we must exclude the residues
+\(0,n\bmod p\). Let \(\nu(p)\) be their number, namely one if
+\(p\mid n\) and two otherwise, and extend \(\nu\)
+multiplicatively to squarefree products of these primes.
+The Chinese remainder theorem and the count in a residue
+class give \(H\nu(\ell)/\ell+O(\nu(\ell))\) integers in
+all the excluded sets for \(p\mid\ell\), uniformly in the
+interval location and endpoint convention.
+
+Use the upper polynomials of Section~\ref{sec:sieve} with
+probabilities \(\nu(p)/p\), sieving to \(Z'=n^{c_1}\) for a
+sufficiently small fixed \(c_1>0\).
+The block probability bounds hold as before. Choose \(c_1\)
+so that the corresponding divisor level is \(D'\le n^{1/4}\).
+The total error is \(O(D'\log(2D'))=o(H/\log n)\), since
+\(\nu(\ell)\le\tau(\ell)\)
+and \(\sum_{\ell\le D'}\tau(\ell)\ll D'\log(2D')\).
+The upper main term is at most a constant times \(H\) times
+\[
+ \prod_{\substack{5\le p\le Z'\\ p\ {\rm inert}}}(1-2/p)
+ \prod_{\substack{5\le p\le Z',\ p\mid n\\ p\ {\rm inert}}}
+                        \frac{p-1}{p-2}
+ \ll \frac{J(n)}{\log n}.
+\]
+This proves the upper bound and completes Theorem~\ref{thm:main}.
+The argument for this upper bound in fact works in any interval
+whose length is at least a fixed positive multiple of \(\sqrt n\).
+
+\begin{proof}[Proof of Corollary~\ref{cor:ranges}]
+In a fixed interval of shares, take a smaller fixed interval
+of length at most the distance of its center from the nearest
+endpoint of \([0,1]\). This satisfies the hypotheses with
+\(H\asymp n\) for large \(n\), giving the lower bound. Use the
+upper sieve on the full interval and on \([0,n]\) for the
+unrestricted count.
+At \(x=\lambda n\) with \(0<\lambda<1\), a width \(H=n^\theta\)
+satisfies the condition for any fixed
+\(0<\varepsilon<3\theta-2\).
+Finally, inside \([a n^\theta,b n^\theta]\) take a subinterval
+of width comparable to \(n^\theta\) and at most its midpoint.
+Its distance to the nearer endpoint of \([0,n]\) is comparable
+to \(n^\theta\), so one can use \(0<\varepsilon<2\theta-1\).
+The upper sieve on the full interval gives the matching bound,
+also for \(a=0\).
+\end{proof}

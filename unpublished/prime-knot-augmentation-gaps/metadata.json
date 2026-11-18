@@ -1,0 +1,23 @@
+{
+  "title": "Prime Knots with Augmentation-Rank Gaps at Unbounded Bridge Number",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Constructs infinitely many hyperbolic prime knots whose complex augmentation rank is strictly below meridional rank at bridge numbers five and six and every sufficiently large bridge number.",
+  "published": false,
+  "status": "ready-for-review",
+  "source": "main.tex",
+  "pdf": "prime_knot_augmentation_gaps.pdf",
+  "abstract": "We construct explicit braid families containing infinitely many distinct\nhyperbolic prime knots of each bridge number \\(b=5,6\\) and each sufficiently\nlarge \\(b\\), with complex augmentation rank at most \\(b-1\\) and meridional\nrank \\(b\\). Alternating-group colorings force \\(b\\) meridional generators,\nwhile two fixed meridians and an invariant ordered product carry a local\nrank-one obstruction through the growing braid. An oriented diagram\nisotopy realizes the associated two-cusped exteriors as fillings of a\nsingle three-cusped exterior. Rigorous interval certificates establish\nhyperbolicity of that exterior and the two small-bridge exteriors used\nin the filling argument.",
+  "abstract_source": "main.tex",
+  "abstract_format": "latex",
+  "certificate_supplement": "prime_knot_certificates.zip",
+  "build": "SOURCE_DATE_EPOCH=1794960000 latexmk -pdf -jobname=prime_knot_augmentation_gaps -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "Written algebra and oriented diagram induction, with fresh internal rigorous interval replays of the three parent exteriors. See verification.json for the PDF-only reader review, exact edition and replay scope. Independent specialist review remains pending.",
+  "next_steps": [
+    "Have a knot theorist independently review the rank-one crossing reductions, framed disk surgeries and marked insertion-band induction.",
+    "Independently replay the braid-to-triangulation bindings and the three interval certificates with their pinned software."
+  ],
+  "catalogued_on": "2026-11-18"
+}

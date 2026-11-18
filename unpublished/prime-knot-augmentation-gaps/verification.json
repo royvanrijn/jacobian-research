@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-18",
+  "edition_sha256": {
+    "coloring.tex": "57449e559beee61a1ae1ebe30cfbf6ad07f243f18cb452773b1ec81554f4924b",
+    "diagram-isotopy.tex": "25361194a1380129a5e080fbbc2a7d843e77f00514a2d1e5d21d546bbcd37c9c",
+    "geometry.tex": "0aa4b103229847e8b0a836a9f46cce5bc498818030163d0449ddc2307945f3a5",
+    "main.tex": "db6f61b39d6f5444d1ef0f501307b9d4ff2cff7e2c76687501fbef25ef955af9",
+    "representations.tex": "9f019b3f3ad14620112030300c7abee4efca8d98f022d90a2f9b3a4c305f1431",
+    "prime_knot_augmentation_gaps.pdf": "70983d0d1a8cf4828c87b247153205b83ed6fa9f246210a5e556845bfd2c51d8",
+    "prime_knot_certificates.zip": "b459d355dc9e31e765a2aad271d33ee7d23c1032e2b62f2aafce6dde7f038d22"
+  },
+  "build": {
+    "toolchain": "TeX Live 2023/Debian, pdfTeX 1.40.25, latexmk 4.83",
+    "pdf_pages": 12,
+    "pdf_review": "Rendered every page with Poppler 24.02.0 and inspected layout, fonts, equations, tables, diagram, links and page breaks. Checked the final wording on the affected appendix pages.",
+    "clean_build": "Built from only the five LaTeX sources in a separate directory; PDF bytes matched and the log had no unresolved citations or warnings."
+  },
+  "theorem_and_dependencies": {
+    "algebra": "The alternating coloring and span obstruction are proved for all integers b >= 5 and k >= 0. The span obstruction also holds for the stated subgroup of tails with a knot closure, over any field and for any nonzero determinant.",
+    "geometry": "The oriented isotopy and disk markings are written proofs. The exterior types at b = 5, b = 6, and all sufficiently large b use the three finite rigorous hyperbolicity certificates, Thurston filling and rigidity, and the strict volume comparison.",
+    "scope": "The four-bridge family uses separate geometry and stays in its research record. This paper gives an augmentation-rank upper bound and no explicit bridge or parameter cutoff. Infinite distinctness is for each covered bridge number."
+  },
+  "source_audit": [
+    {
+      "edition": "Cornwell, J. Symplectic Geom. 15 (2017), 983–1017",
+      "url": "https://doi.org/10.4310/JSG.2017.v15.n4.a2",
+      "inspected": "Definition 1.1, Theorem 1.2 and its representation construction, Definition 1.8; Corollary 1.12 and Section 5.2, Theorem 5.3",
+      "use": "The cord-algebra correspondence applies for meridian value different from one. The rank-gap classification has crossing number at most ten and braid index and bridge number both three, so it does not specialize to the ranks in the manuscript."
+    },
+    {
+      "edition": "Gao–Gu–Li–Wang, arXiv:2611.15673v1, 11 November 2026",
+      "url": "https://arxiv.org/html/2611.15673v1",
+      "inspected": "Theorem 1.3, Proposition 6.1, Lemma 6.2 and the computation and final deduction in Section 6.2",
+      "use": "Comparison only. One bridge-six satellite has the same inequality via its peripheral structure and a finite quotient with a cocycle estimate. The hyperbolic families use different algebra and geometry and are not examples of the Whitehead-double construction."
+    },
+    {
+      "edition": "Thurston, The Geometry and Topology of Three-Manifolds, electronic edition 1.1, March 2002",
+      "url": "https://library.slmath.org/nonmsri/gt3m/",
+      "inspected": "Theorems 5.8.2 (p. 104), 6.5.6 (p. 138) and the adjoining proofs",
+      "use": "Leave the unfilled cusps complete in both filling steps. A proper filling that is hyperbolic has strictly smaller volume."
+    },
+    {
+      "edition": "Futer–Kalfagianni–Purcell, author version 18 December 2006, published in J. Differential Geom. 78 (2008), 429–464",
+      "url": "https://arxiv.org/abs/math/0612138",
+      "inspected": "Theorem 1.1 and Section 2 volume comparison",
+      "use": "Apply to one filled cusp at a time, whose slope lengths diverge. The fillings are already hyperbolic for large k, so the geometrization hypothesis is satisfied."
+    },
+    {
+      "edition": "Hoffman–Ichihara–Kashiwagi–Masai–Oishi–Takayasu, Exp. Math. 25 (2016), 66–78",
+      "url": "https://doi.org/10.1080/10586458.2015.1029599",
+      "inspected": "Sections 2–4, the complete gluing and argument conditions, square subsystem reduction, and Krawczyk enclosure",
+      "use": "The analytic hyperbolicity criterion. The replay inputs also pin the actual SnapPy shape and gluing implementation, Spherogram topology binding and kernel binary."
+    }
+  ],
+  "computations": {
+    "replay": "All four commands in the supplement README passed after extracting the ZIP outside the repository, using the pinned SageMath 10.9 / Python 3.14.7 / SnapPy 3.3.2 / Spherogram 2.4.1 runtime for interval checks.",
+    "interval": "M_5 (31 tetrahedra, 2 cusps), M_6 (34 tetrahedra, 2 cusps) and N (35 tetrahedra, 3 cusps) verified at 100 bits, with both the fresh PD exterior and the reloaded triangulation tested for each. The retained rational boxes, gluing and topology bindings were checked. No randomizations.",
+    "diagram": "Both oriented local moves and the fixed band passed. Bounded literal diagram comparisons passed at b = 5 through 64 with every port of U fixed. Two corrupted controls were rejected.",
+    "review_scope": "These are internal replays, and the bounded comparisons supplement the written uniform induction. No external replay or formal verification has been performed."
+  },
+  "pdf_only_reader": {
+    "reviewer": "ChatGPT, fresh isolated PDF reader",
+    "supplied_context": "Only the specified PDF and the five review questions. The reader used PDF extraction and its own bounded recalculations. It received no repository, research history, or computational supplement.",
+    "first_pdf_sha256": "3bd1cab18fdc0cd2dacf49437c35e0646a97f2c7629cfe43e9cfa8c2f8aeae95",
+    "reread_pdf_sha256": "88f45acbc868e2c5743f60242e4216eb59893516a12ccd0c525e7ef5c83b15ae",
+    "contribution_and_mechanism": "The reader recovered the all-parameter rank inequality, the prime tails at the specified bridge numbers, the ordered-product and alternating-support arguments, the two fillings, and the fixed-bridge volume limit.",
+    "hard_steps": "It identified the marked insertion band and its induction in Appendix A and the incompatible coefficient constraints in Lemma 3. From the PDF it reproduced the prefix crossing trace, and bounded replays of the coloring and diagram rewrites for b = 5 through 25.",
+    "limitations": "The reader identified the missing exact augmentation ranks and exceptional thresholds, the distinction between infinitely many distinct types and pairwise distinctness at every parameter, and the need for the supplement to check the three interval certificates.",
+    "revisions": "Corrected the first target bigon edge to 6.0–25.2. Kept the original arc numbers in Lemma 3, removing the aliases. Added the comparison with the Whitehead-double preprint. The reread confirmed the endpoint binding and core crossing trace. Two remaining wording changes about the six endpoints and the first endpoint of each arc were incorporated and rechecked in the final PDF. Adjusted the crossing-label placement in Figure 1 and re-rendered the appendix.",
+    "assurance": "Internal AI review. Independent specialist review remains outstanding."
+  }
+}

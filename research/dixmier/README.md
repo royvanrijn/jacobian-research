@@ -15,7 +15,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Cubic/quintic models and universal matrix admission obstructions | Internal result | proved | [Source](dixmier-formal-lifting/VALUED_MATRIX_LATTICE_AND_SHIFTED_ADMISSION.md) |
 | Global Laurent admission and closed quartic scalar faces | Internal result | proved | [Source](dixmier-formal-lifting/GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md) |
 
-**Computed obligations:** 22 unresolved; 1 resolved within their exact scope.
+**Computed obligations:** 25 unresolved; 1 resolved within their exact scope.
 
 
 Scope limits:
@@ -60,6 +60,9 @@ Scope limits:
 - Actual polynomial Ore intertwiners are bijective on k[x] and obey a strict mixed-corner shift in the stated monomial rectangle. This constrains admitted polynomial normalizations; it neither fixes the corner of an unknown Weyl pair nor covers arbitrary division-ring or matrix gauges.
 - The admitted Airy matrix point satisfies the relations through h4 at degree 25. The entire prescribed-first-coefficient family fails at h5 through degree 26, including all three new traceless second-coefficient directions. A separate degree-25 corollary concerns all scales of only the displayed lower family; other first data remain unclassified.
 - Current scalar bounds are 27 for arbitrary-parity canonical graded Long lifts and 28 for even graded Moyal lifts. Degree 27 is the exact scalar minimum for compatibility through h5. Complete degree-26 field strata retain both complex conic signs until proved zero and every declared Laurent boundary; this gives no normalization of nongraded lifts.
+- The rank-two bounded lift question allows ramified parameters. In that scope it is equivalent to horizontal membership of a noninvertible classical point in some finite-degree relation scheme.
+- In the exact positional Long slice QEP1 makes both actual individual mates equivalent to a bounded full lift. The degree-nonincreasing normalized fourth image tests boundedness of a fixed completing triple. Arbitrary deformed first positions still require a bounded comparison.
+- DC2 implies bounded inversion of arbitrary finite-PBW identity assignments. On cotangent rescalings bounded inversion is equivalent to JC2, by differential-order detection and rescaling the polynomial inverse.
 
 Tracked obligations (computed states):
 

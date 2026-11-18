@@ -364,6 +364,17 @@ Thus none of the tested places obstructs the rational affine-trace
 problem. Rational nonemptiness and local solubility at larger primes
 remain undecided.
 
+The [uniform denominator theorem](Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md)
+adds an arithmetic restriction on every local point. Its general
+valuation criterion accounts for all relative denominator orders of
+the canonical trace parameters s,t. At prime 43, both parameters are
+integral at every affine Q43 point; a joint Frobenius certificate gives
+the same conclusion at a positive-natural-density set of primes.
+There are nevertheless infinitely many good Q43 models.
+The smooth projective normalization has no Q43 or rational point at a
+pole of either coordinate. This concerns s and t, rather than all
+reconstructed coefficients, and it leaves rational existence undecided.
+
 The [balanced rational quotient](BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md)
 processes all quadratic descents in one scheme over Q. For every balanced
 degree 8k+2, the sign-exchange involution has a unit anti-invariant r;

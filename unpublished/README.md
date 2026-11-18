@@ -6,6 +6,8 @@ The Gaussian boundary paper has a standalone proof and internal checks, but stil
 
 | Paper | Status |
 |---|---|
+| [Prime Knots with Augmentation-Rank Gaps at Unbounded Bridge Number](prime-knot-augmentation-gaps/) | ready for review |
+| [Pointwise representation counts for Eisenstein restricted sums](eisenstein-pointwise-counts/) | ready for review |
 | [From Euler's restricted-prime sums to Eisenstein norms](eisenstein-restricted-prime-sums/) | draft |
 | [Cubic sphere moments and the two-pair Image problem](cubic-sphere-image/) | ready for review |
 | [The Dimension-Degree Boundary for Gaussian Moment Vanishing](gaussian-boundary/) | ready for review |

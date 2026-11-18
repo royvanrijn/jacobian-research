@@ -1,0 +1,145 @@
+\section{The lower sieve and the split factors}\label{sec:sieve}
+Fix \(\kappa,\xi>0\) with \(4\kappa+\frac52\xi<\varepsilon/2\).
+We use a divisor level \(D=n^\xi\) and prime bounds \(Z=n^\eta\)
+and \(Y=n^{\lambda_0}\), with \(0<\lambda_0<\eta\) chosen below.
+Consider triples of pairwise coprime squarefree integers \(d,u,v\),
+supported on split primes at most \(Y\), satisfying
+\begin{equation}\label{eq:triples}
+ d\mid n,\qquad (uv,n)=1,\qquad duv\le n^\kappa .
+\end{equation}
+On the shell \(m=n/d\) use the prescriptions of Lemma~\ref{lem:joint}
+at \(u,v\), and require \(p\nmid A_1A_2\) at every other prime
+\(5\le p\le Z\), including the primes of \(d\).
+Since \(d\equiv1\bmod6\), the target \(m\) belongs to the same
+family. The weight on the shell is
+\(W(t)=\phi((dA_1-x)/H)\), so after rescaling the norm values by
+\(d\) the original window is enforced.
+
+\subsection{Finite inclusion-exclusion}
+We give the sieve weights together with the level they require.
+Partition the sieving primes into blocks
+\(Z^{2^{-j-1}}<p\le Z^{2^{-j}}\) for \(j\ge0\).
+For the main-term probabilities \(g_m(p)\), the sum in each block
+is bounded by an absolute \(C\) and
+\(v_j=\prod_{p\text{ in block }j}(1-g_m(p))\) is bounded below
+by an absolute \(c>0\). In fact the formulas in
+Section~\ref{sec:local} lie uniformly below one and are \(O(1/p)\).
+Prime harmonic Mertens gives a bounded sum of \(1/p\) in each block.
+Omitting primes, including the primes of \(uv\), preserves these
+bounds. We also use the progression version of Mertens modulo \(3\),
+\(\sum_{p\le T,\ p\equiv a\ (3)}1/p=\tfrac12\log\log T+O(1)\)
+for \(a=1,2\); see \cite[Lemma~2.4]{LM}.
+
+In block \(j\) truncate inclusion-exclusion at consecutive orders
+\(k_j=2\lceil(K+j)/2\rceil\) and \(k_j-1\), where \(K\) is a fixed
+large integer. Denote the resulting polynomials in the bad-prime
+indicators by \(U_j,L_j\). Bonferroni gives
+\(0\le\mathbf1_j\le U_j\) and \(L_j\le\mathbf1_j\), where
+\(\mathbf1_j\) indicates avoidance in the block. Telescoping
+\(\prod_j U_j-\prod_j\mathbf1_j\) gives the lower polynomial
+\begin{equation}\label{eq:lower-poly}
+ \prod_j\mathbf1_j\ge
+ \prod_j U_j-\sum_j(U_j-L_j)\prod_{i\ne j}U_i .
+\end{equation}
+Under independent bad events with probabilities \(g_m(p)\),
+\[
+ \mathbf E U_j\ge v_j,\qquad
+ \mathbf E(U_j-L_j)\le \frac{C^{k_j}}{k_j!}.
+\]
+Choose \(K\) so that the sum over \(j\) of \(C^{k_j}/(c k_j!)\)
+is at most \(1/2\). The expectation of the lower polynomial is
+at least \(\frac12\prod_j v_j\). Also
+\(0\le \mathbf E U_j-v_j\le\mathbf E(U_j-L_j)\), so the expectation
+of the upper polynomial \(\prod_j U_j\) is \(O(\prod_j v_j)\).
+We will use this upper estimate later with integer-sieve
+probabilities.
+
+Put \(S=\sum_{j\ge0}k_j2^{-j}<\infty\) and \(\eta=\xi/S\).
+Every divisor in either polynomial is at most \(Z^S=D\).
+The upper coefficients have absolute value at most one, and
+the lower coefficients at most one plus the number of nonempty
+blocks, which is \(O(\log\log(3n))\). Apply \eqref{eq:joint}
+to the lower polynomial with the nonnegative shell weights.
+For each triple the main contribution is at least
+\begin{equation}\label{eq:lower-main}
+ \tfrac12 X_m V_m(Z)\prod_{p\mid uv}a_p,\qquad
+ V_m(Z)=\prod_{5\le p\le Z}(1-g_m(p)).
+\end{equation}
+Here \(a_p=t_p/(2B_p)\) accounts for replacing the ordinary
+sieve factor at a prime of \(uv\) by the exact-valuation factor.
+Summing the remainders over all divisors uses
+\(\sum_{\ell\le D}\ell^{3/2}\ll D^{5/2}\). There are at most
+\(n^{\kappa+o(1)}\) triples because a fixed product \(duv\)
+has at most \(\tau(duv)^2\) decompositions. The total absolute
+remainder, for any \(\zeta>0\), is
+\[
+ O_{\phi,\zeta}\!\left(
+       n^{1/2+4\kappa+(5/2)\xi+\zeta}\sqrt{M/H}\right)
+   =o_\varepsilon(H/\log n).
+\]
+The equality uses
+\(\sqrt{nM/H}\le Hn^{-\varepsilon/2}\)
+and the strict choice of \(\kappa,\xi\), with \(\zeta\) small
+enough. All of these estimates are uniform in \(x,H\).
+
+\subsection{The logarithm gained from small factors}
+The target-independent product
+\[
+ V_*(Z)=
+ \prod_{\substack{5\le p\le Z\\ p\ {\rm split}}}B_p
+ \prod_{\substack{5\le p\le Z\\ p\ {\rm inert}}}b_p,
+ \qquad b_p=1-\frac2{p(p-1)}
+\]
+satisfies \(V_*(Z)\asymp(\log Z)^{-2}\), since
+\(B_p=1-4/p+O(p^{-2})\) and the inert factors have a convergent
+positive product. To compare this with \(V_m(Z)\), include the
+shell factor \(R_o(m)/m\) from \eqref{eq:odd-shell}.
+For \(p^e\Vert m\) split and \(p\le Z\),
+\[
+ \frac{\sigma(p^e)}{p^e}(1-g_m(p))
+       =\frac{(p-1)^2}{p(p+1)}=B_p E_p,\qquad
+ E_p=\frac{p-1}{p-2}.
+\]
+For \(p^e\Vert m\) inert and \(p\le Z\) the combined factor
+is \(1+1/p=b_p E_p\), by \eqref{eq:inert}, including \(e=1\).
+The inert primes dividing \(m\) and \(n\) are the same.
+For the inert primes dividing \(m\) beyond \(Z\), the shell
+factor is at least \(1+1/p=b_pE_p\), and the product of the
+extra factors \(b_p\) is bounded below. All split enhancements
+are at least one. Using \(h m=(H/n)m=H/d\), we get
+\begin{equation}\label{eq:target-gain}
+ X_m V_m(Z)\gg_\phi
+     \frac H d J(n)V_*(Z)
+     \prod_{\substack{p\le Y,\ p\ {\rm split}\\ p\mid m}}E_p .
+\end{equation}
+
+Temporarily drop the product bound in \eqref{eq:triples}.
+The sum of the cofactor weights in \eqref{eq:lower-main}
+and \eqref{eq:target-gain} factors over split \(p\le Y\).
+For \(p\nmid n\) the three options of absence, inclusion in
+\(u\), or inclusion in \(v\) have weights \(1,a_p,a_p\).
+If \(p^e\Vert n\), the two options of absence or inclusion in
+\(d\) have weights \(E_p,E'_p/p\), where \(E'_p=1\) for \(e=1\)
+and \(E'_p=E_p\) for \(e\ge2\).
+The compensation at target divisors is the identity
+\[
+ E_p+\frac{E'_p}{p}\ge E_p+\frac1p=1+2a_p .
+\]
+Thus the full cofactor sum is at least
+\(\prod_{p\le Y,\ p\ {\rm split}}(1+2a_p)\asymp\log Y\),
+since \(a_p=1/p+O(p^{-2})\).
+
+Normalize the local weights to independent probabilities.
+At \(p\nmid n\) the probability of \(p\mid duv\) is
+\(2a_p/(1+2a_p)\ll p^{-1}\), and at \(p\mid n\) it is at most
+\(1/p\). Hence \(\mathbf E\log(duv)\le C'\log Y\), uniformly
+in \(n\), by \(\sum_{p\le Y}(\log p)/p\ll\log Y\).
+Take \(0<\lambda_0<\min(\eta,\kappa/(3C'))\). Markov's inequality
+then retains at least half the weight on \(duv\le n^\kappa\).
+Inserting \eqref{eq:target-gain} into \eqref{eq:lower-main}
+and subtracting the aggregate remainder proves that the total
+retained weight is
+\begin{equation}\label{eq:weight}
+ \gg_\varepsilon H J(n)\frac{\log Y}{(\log Z)^2}
+       \gg_\varepsilon \frac{HJ(n)}{\log n}.
+\end{equation}

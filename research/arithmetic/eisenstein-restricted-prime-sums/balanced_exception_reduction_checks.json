@@ -1,0 +1,152 @@
+{
+  "result": "PASS",
+  "scope": "Exact finite coefficient, normalization, envelope and inequality checks. No new target scan, no Hecke theorem verification, no inert-core interval coverage and no complete exception theorem.",
+  "provenance": {
+    "checker_sha256": "1aaed579e0be56f957280539f887de3889f8143f973d208e14d958d73fff1b78",
+    "source_sha256": {
+      "research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md": "c176ed7db7dbd72712a602ac7d58c64949d8e36abba9382b610188916cd47328",
+      "research/arithmetic/EISENSTEIN_POWER_SHRINKING_WINDOWS.md": "a48b5c151a947f6eeb88bca1b0d2dbb8059da63e4fc273d893e2cf8258b02a60",
+      "unpublished/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex": "ebfaf83394592ee9b2e929dd5f82bd19118a535807fb69bccd3e0d23b2ba890c",
+      "unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex": "6b29022871991b8e061fd3f0c16c9b515da30820f1e0222e1ad58eb9dbf06e3b",
+      "research/arithmetic/eisenstein-restricted-prime-sums/research_notes/literature_balanced_polynomial_receipt.json": "c97f24de35754528a527881372bea75262311d53be1c8e1232764d654efd710c",
+      "research/arithmetic/eisenstein-restricted-prime-sums/receipts/elementary_constants_receipt.json": "db4331593f09f3a42dd761d97e7145827a7a51cc9956b94cfb8d3d94e4bdc1f9",
+      "research/arithmetic/eisenstein-restricted-prime-sums/receipts/python_finite_receipt.json": "49315747aa0f2b536ce5fc6d67314465a882f948764e12d5c4a4006a27937a2e"
+    },
+    "python_version": "3.12.3"
+  },
+  "trapezoid": {
+    "mean": "7/24",
+    "degrees": "even 0 through100",
+    "coefficient_sha256": "b036178161dd816233bac529eff3a7b7ec2a4292c35548f20cbd80d1ab652119",
+    "nonconstant_partial_l1": "5869951147421220646318129990895261819098336966986702704868630985880733796496526058082706661324896717776724035935235018840946059751485135839/1049842551125179546021301887427834534139954896920382640195321695650341043912948075247181280540841272710881848006350370824412817910845669376",
+    "partial_l1_upper_bound": "23/4",
+    "even_tail_upper_bound": "27/4",
+    "total_nonconstant_l1_upper_bound": "25/2"
+  },
+  "elementary_envelopes": {
+    "tau_product_fifth_power": "1150265160430735441400000000/13572063869456406973631499",
+    "tau_maxima": [
+      [
+        2,
+        6,
+        6
+      ],
+      [
+        5,
+        2,
+        2
+      ],
+      [
+        11,
+        1,
+        1
+      ],
+      [
+        17,
+        1,
+        1
+      ],
+      [
+        23,
+        1,
+        1
+      ],
+      [
+        29,
+        1,
+        0
+      ]
+    ],
+    "M_product_fifth_power": "7962624/375193",
+    "M_maxima": [
+      [
+        7,
+        2,
+        2
+      ],
+      [
+        13,
+        1,
+        1
+      ],
+      [
+        19,
+        1,
+        1
+      ],
+      [
+        31,
+        1,
+        1
+      ]
+    ]
+  },
+  "thin_families": {
+    "prime_cutoff": 10000,
+    "odd_inert_prime_count": 616,
+    "wheel_tail_bound": "2503/187500000",
+    "blocks": [
+      {
+        "L": 100000000,
+        "U": 200000000,
+        "a_upper": "11/7500",
+        "M_upper": "345/4",
+        "margin_lower_bound": "13713/1000000"
+      },
+      {
+        "L": 200000000,
+        "U": 400000000,
+        "a_upper": "22/21213",
+        "M_upper": "795/8",
+        "margin_lower_bound": "3419/100000"
+      },
+      {
+        "L": 400000000,
+        "U": 800000000,
+        "a_upper": "11/15000",
+        "M_upper": "915/8",
+        "margin_lower_bound": "6377/125000"
+      },
+      {
+        "L": 800000000,
+        "U": 1600000000,
+        "a_upper": "11/21213",
+        "M_upper": "525/4",
+        "margin_lower_bound": "16171/250000"
+      }
+    ],
+    "global_tail_onset": 1000000000,
+    "global_tail_margin": "192331/25987500"
+  },
+  "inert_onsets": {
+    "fixed_polynomial_onset": 9094947017729282379150390625,
+    "fixed_polynomial_margin": "167978323631023/272803781250000000",
+    "conservative_trapezoid_onset": 19004963774880799438801,
+    "conservative_margin": "8487883/2432711736",
+    "refined_scalar_onset": 1152921504606846976,
+    "refined_scalar_margin": "1207853/110100480"
+  },
+  "checks": {
+    "trapezoid_mean": 1,
+    "finite_legendre_l1_bound": 1,
+    "derivative_measure_variation": 1,
+    "even_degree_tail_bound": 1,
+    "total_legendre_l1_bound": 1,
+    "corrected_inert_tau_constant": 1,
+    "split_divisor_constant": 1,
+    "candidate_20_over_3_normalization": 1,
+    "integer_root_bracket": 4,
+    "positive_uniform_prime_family_block": 4,
+    "certified_margin_rounding": 4,
+    "control_old_polynomial_does_not_certify_first_block": 1,
+    "thin_family_spectral_normalization": 10,
+    "global_power_lower_bound": 1,
+    "global_square_root_lower_bound": 1,
+    "global_three_twentieths_coefficient": 1,
+    "global_half_power_coefficient": 1,
+    "positive_global_thin_family_tail": 1,
+    "fixed_polynomial_inert_onset_25_power20": 1,
+    "trapezoid_inert_onset_13_power20": 1,
+    "refined_scalar_inert_onset_8_power20": 1
+  }
+}

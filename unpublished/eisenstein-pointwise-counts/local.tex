@@ -1,0 +1,181 @@
+\section{Local densities at all target valuations}\label{sec:local}
+On a shell at \(m\), put \(A_1=N(z)\) and \(A_2=N(y)\).
+The bump \(W\) restricts both norms to be positive. At a variable
+prime \(p\ge5\) write \(g_m(p)\) for the density of the bad test
+\(p\mid A_1A_2\). For \(p\nmid m\) this is the conditional mean in
+\eqref{eq:angular}. At \(p\mid m\) we derive its analogue by reducing
+to coprime Hecke indices.
+
+\subsection{Coprime target and level}
+At \(3\) the ordinary family requires no test, since \(m\equiv2\bmod3\)
+forces both norms to be units modulo \(3\). In the mixed family
+\(m\equiv1\bmod3\), and we require the prescribed component to have
+\(3\)-adic valuation exactly one. Among the nine elements of \(R/3R\)
+there are six units, two nonzero nonunits, and zero. The nonzero
+nonunits have norm valuation one, since \(1-\omega\) has norm \(3\)
+and its square is associated to \(3\). Norm one modulo \(3\)
+requires one unit and one nonunit, giving \(2\cdot6\cdot3=36\)
+raw quaternion residues. Exactly \(6\cdot2\) have a unit in one
+prescribed component and a nonzero nonunit in the other. Passing to projective classes preserves the ratio,
+so either mixed orientation has mean \(1/3\).
+
+At an inert \(p\nmid m\), by anisotropy a bad point has one
+component zero modulo \(pR\). Its image in
+\(\PGL_2(\F_p)\) lies in the normalizer of the nonsplit torus
+\((R/pR)^\times/\F_p^\times\). This is the union of that torus and
+its translate by \(j\), with \(2(p+1)\) elements out of
+\(p(p^2-1)\). The norms of the torus elements cover the squareclasses
+equally, so \(g_m(p)=2/[p(p-1)]\) in either class.
+
+At a split \(p\nmid m\), the two factors of the Eisenstein
+subalgebra occupy the diagonal of \(M_2(\F_p)\). The other
+Eisenstein component occupies the off-diagonal. Their norms are
+the products of the respective entries, up to sign.
+For a fixed nonzero determinant, the first row is uniform on
+nonzero rows, each with \(p\) completions. Thus a given entry is
+zero with probability \(1/(p+1)\). Two zero entries are possible
+only when they form an opposite pair. For either such pair there
+are \(p-1\) matrices of the given determinant, giving probability
+\(1/[p(p+1)]\). Inclusion-exclusion gives
+\begin{equation}\label{eq:B}
+1-g_m(p)=B_p:=1-\frac4{p+1}+\frac2{p(p+1)}
+             =\frac{(p-1)(p-2)}{p(p+1)}.
+\end{equation}
+For the exact condition \(v_p(A_i)=1\) at either one prescribed
+component, exactly one of its two entries is zero modulo \(p\),
+and this entry must be nonzero modulo \(p^2\). All matrix lifts of
+an invertible residue are invertible, and determinant squareclasses
+are determined modulo \(p\). The conditional probability of the
+last lift condition is \((p-1)/p\). Therefore the mean of
+\(v_p(A_i)=1\) at level \(p^2\) is
+\begin{equation}\label{eq:t}
+ t_p=\frac{2(p-1)^2}{p^2(p+1)},\qquad
+ a_p:=\frac{t_p}{2B_p}=\frac{p-1}{p(p-2)} .
+\end{equation}
+These means hold on projective groups as well, since all tests
+are unchanged by a unit scalar.
+
+\subsection{Primes dividing the target}
+For inert \(p\mid m\), divisibility of one norm by \(p\) forces
+the other to be divisible by \(p\) as well, so both components
+are in \(pR\). The bad set is empty if \(v_p(m)=1\).
+Otherwise it is obtained by multiplying both coordinates by \(p\)
+from the shell at \(m/p^2\). This preserves \(W\) and the other
+prime tests. Hence for \(e=v_p(m)\) the scalar density is
+\begin{equation}\label{eq:inert}
+g_m(p)=0\ (e=1),\qquad
+g_m(p)=\frac{\sigma(p^{e-2})}{\sigma(p^e)}\ (e\ge2).
+\end{equation}
+
+Now let \(p=\pi\bar\pi\) be split in \(R\), and fix \(r\) prime
+to \(p\). At target \(p^e r\), let \(U_e\) be the weighted count
+with no restriction at \(p\), and \(G_e\) the count with both
+norms units at \(p\). Carry along \(W\) and the other prime
+tests. At target \(r\), let \(L_0\) count with the additional
+test
+\[
+ \frac12\bigl(\mathbf1_{\pi\mid z}+\mathbf1_{\bar\pi\mid z}
+        +\mathbf1_{\pi\mid y}+\mathbf1_{\bar\pi\mid y}\bigr).
+\]
+It has mean \(2/(p+1)\) by the single-entry calculation.
+If one norm has valuation \(v>0\), the \(v+1\) allocations of its
+two prime factors are equally frequent. The average of the test
+at that pair of norms is \(v/(v+1)\). The conditions at other
+primes are unchanged on reallocating these factors. Indeed,
+dividing out or inserting factors above \(p\) acts by units at
+every other prime, preserving all the norm valuations and the
+individual split-prime divisibilities used in the tests.
+
+Classify a pair of norms on the shell \(p^e r\) by the minimum
+\(j\) of its two \(p\)-adic valuations. If \(j<e\), both valuations
+are \(j\); removing \(p^j\) from each norm gives a \(G_{e-j}\)
+pair with allocation multiplier \((j+1)^2\). If \(j=e\), the
+residual target is \(r\). When both residual norms are units
+the multiplier is \((e+1)^2\); if one has valuation \(v>0\),
+the ratio of allocation counts is
+\((e+1)(v+e+1)/(v+1)=(e+1)^2-e(e+1)v/(v+1)\).
+In either reduction the normalized norm coordinate stays fixed.
+This proves
+\begin{equation}\label{eq:recurrence}
+ U_e=\sum_{j=0}^{e-1}(j+1)^2 G_{e-j}+(e+1)^2 U_0-e(e+1)L_0
+ \qquad(e\ge1).
+\end{equation}
+
+The generating series for \((j+1)^2\) is
+\(A(T)=(1+T)/(1-T)^3\), and that for \(e(e+1)\) is
+\(C(T)=2T/(1-T)^3\). Thus
+\[
+ \sum_{e\ge1}G_eT^e=\frac{\sum_{e\ge0}U_eT^e}{A(T)}
+                     -U_0+\frac{C(T)}{A(T)}L_0 .
+\]
+The coefficients of \(1/A(T)\) have absolute value at most eight,
+and those of \(C(T)/A(T)\) at most two. The bad count \(U_e-G_e\)
+is therefore a combination of unrestricted counts at lower
+\(p\)-exponents and the \(L_0\) count at the unit target, with
+coefficient absolute sum at most \(8e+2\). Applying the same
+identity to the scalar prediction from \eqref{eq:angular} uses
+\(U_e=\sigma(p^e)\), \(U_0=1\), and \(L_0=2/(p+1)\) after
+factoring out the other local factors. Substitution gives
+\(\sum_{e\ge1}G_e T^e=\frac{(p-1)^2}{p+1}\frac{T}{1-pT}\)
+for those scalar values. In particular
+\begin{equation}\label{eq:split}
+ 1-g_m(p)=\frac{(p-1)^2p^{e-1}}{(p+1)\sigma(p^e)}
+                 \qquad(e=v_p(m)\ge1,\ p\text{ split}).
+\end{equation}
+
+\subsection{The joint estimate}
+Fix squarefree coprime \(u,v\) made of split primes coprime to
+\(m\). Place the condition \(v_p(A_1)=1\) at \(p\mid u\) and
+\(v_p(A_2)=1\) at \(p\mid v\). Give each coordinate pair weight
+\(W(t)/\tau(uv)\). Here and below \(m\) is even and prime to \(3\).
+Keep the odd-component condition and the prescribed condition
+at \(3\). For any squarefree \(\ell\) coprime to \(6uv\), let
+\(S_m(\ell)\) be the weighted count additionally bad at every
+prime dividing \(\ell\), and put
+\[
+ X_m=I_\phi h R_o(m)\beta_m,\qquad
+ \beta_m=\begin{cases}1,&m\equiv2\bmod6,\\1/3,&m\equiv4\bmod6.\end{cases}
+\]
+Extend \(g_m\) multiplicatively on squarefree products.
+
+\begin{lemma}\label{lem:joint}
+For \(m\le n\) as above and any fixed \(\zeta>0\),
+\begin{equation}\label{eq:joint}
+ S_m(\ell)=X_m\prod_{p\mid uv}(t_p/2)\,g_m(\ell)
+   +O_{\phi,\zeta}\!\left((uv)^3\ell^{3/2}n^{1/2+\zeta}
+                                           \sqrt{M/H}\right).
+\end{equation}
+\end{lemma}
+\begin{proof}
+First omit oddness. If the level is coprime to \(m\), apply
+\eqref{eq:angular}. A factor at \(p\mid uv\) has size
+\(p^3|\PGL_2(\F_p)|<p^6\) and a factor at \(p\mid\ell\)
+has size less than \(p^3\). Thus the norm cost is
+\(O((uv)^3\ell^{3/2})\), the fixed factor at \(3\) being bounded.
+
+For \(p\mid(\ell,m)\), eliminate the test by inert scaling or
+\eqref{eq:recurrence}. Each time, the remaining test at the
+eliminated prime is present only at a reduced target coprime to it.
+The allocation calculation works with any of the other tests
+still imposed. In particular the test at a split prime produced
+by an earlier elimination is an average of individual
+divisibilities, all invariant under changes of allocation at
+another prime. The coprime conditional means are independent of
+the nonzero determinant class at those other primes. Extracting
+split powers and inert squares does not change the target class
+modulo \(3\), and the prescribed orientation is preserved. Hence
+the scalar terms factor, with local factors
+\eqref{eq:inert} and \eqref{eq:split}. The total coefficient variation
+in the elimination is at most \(\tau(m)^4\), because
+\(8e+2\le(e+1)^4\). Each resulting target divides \(m\), and the
+remaining level divides the original level. The product of these
+losses with the divisor factor in \eqref{eq:angular} is absorbed
+by \(O_\zeta(n^\zeta)\).
+
+Finally subtract the shell at \(m/4\) if it exists. Rescaling its
+coordinates by \(2\) preserves the normalized angle, the odd-prime
+tests and the orientation at \(3\). The valuations at all odd
+primes agree with those for \(m\), so the scalar \(\sigma(m)\)
+is replaced by \(\sigma(m)-\sigma(m/4)\). This gives
+\eqref{eq:joint}.
+\end{proof}

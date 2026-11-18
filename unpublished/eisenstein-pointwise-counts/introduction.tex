@@ -1,0 +1,101 @@
+\section{The pointwise count}
+Let \(\A=\{a\in\Z_{>0}:p\mid a\Rightarrow p\equiv1\bmod3\}\), where \(p\)
+always denotes a prime. Write \(3\!\cdot\!\A=\{3a:a\in\A\}\).
+We count ordered pairs \((s_1,s_2)\) of positive integers summing to
+\(n\), with
+\[
+(s_1,s_2)\in
+\begin{cases}
+\A\times\A,&n\equiv2\pmod6,\\
+\A\times(3\!\cdot\!\A)\text{ or }(3\!\cdot\!\A)\times\A,
+ &n\equiv4\pmod6.
+\end{cases}
+\]
+In the second line one orientation is prescribed in advance.
+For \(0<x<n\) let \(r(n;x,H)\) count these pairs with
+\(|s_1-x|\le H/2\). In particular, if the first summand is \(3a\),
+it is \(3a\) that lies in the interval.
+
+\begin{theorem}\label{thm:main}
+Fix \(0<\varepsilon<1\) and put \(M=\min(x,n-x)\). Uniformly for
+every sufficiently large admissible \(n\) and every real \(x,H\) with
+\[
+0<x<n,\qquad 1\le H\le M,\qquad H^3\ge n^{1+\varepsilon}M,
+\]
+one has, in each of the prescribed families,
+\begin{equation}\label{eq:main}
+r(n;x,H)\asymp_\varepsilon \frac{HJ(n)}{\log n},
+\qquad
+J(n)=\prod_{\substack{p\mid n,\ p\ge5\\p\equiv2\ (3)}}
+             \frac{p-1}{p-2}.
+\end{equation}
+The constants in the two bounds and the threshold for \(n\) depend
+only on \(\varepsilon\).
+\end{theorem}
+
+The product has a direct interpretation. At \(p=5\), for example,
+the two conditions \(5\nmid s_1\) and \(5\nmid n-s_1\) forbid two
+residues when \(5\nmid n\), and one when \(5\mid n\). The ratio of
+the allowed proportions is \((4/5)/(3/5)=4/3\). The same calculation
+explains every factor of \(J(n)\) and yields an upper bound by an
+ordinary sieve on integers.
+
+The lower bound begins with a larger family that can be counted
+spectrally. Write \(N(z)=z\bar z\) for the Eisenstein norm on
+\(\Z[\omega]\), with \(\omega^2+\omega+1=0\). The equation
+\(N(z)+N(w)=n\) is a quaternion norm equation. At an inert prime
+\(p\equiv2\bmod3\), \(p\mid N(z)\) forces \(z\in p\Z[\omega]\).
+It is therefore possible to remove the large inert primes by a
+lattice count within the prescribed window.
+
+A separate issue is that many coordinate pairs can give the same
+two norm values. Sifting out small split primes bounds this
+multiplicity, with a baseline coordinate count of size
+\(H/(\log n)^2\) before the target factors. To gain a factor of \(\log n\)
+we allow small split primes to occur to exponent one in one
+summand, or in both summands when they divide the target.
+For instance, \(7\nmid n\) permits placing \(7\) in either summand.
+If \(7\mid n\), its use as a common factor reduces the target to
+\(n/7\). The split-prime local factors for these two situations
+supply the same logarithmic gain. The prescribed factors can
+be read off the resulting values, and each pair then has bounded
+weighted coordinate multiplicity.
+
+The angular estimate costs \(\sqrt{M/H}\) in the Hecke remainder.
+Multiplying by the square-root error from the norm shell gives
+\(\sqrt{nM/H}\). Comparing this with the main-term width \(H\)
+explains \(H^3\ge n^{1+\varepsilon}M\). The proof below treats
+the finite level and the angular variable together, which lets
+us prescribe the mixed orientation at any center.
+
+\paragraph{Relation to earlier work.}
+Dietmann and Elsholtz \cite{DietmannElsholtz} prove eventual
+binary existence for the Gaussian prime restriction \(p\equiv1\bmod4\)
+and obtain \(\gg_\delta n^{1-\delta}\) pairs for every \(\delta>0\)
+without restricting the summand sizes. Howe, Huffman, Kohlmeyer and
+Kruer \cite[Theorem~1.1]{Euler} prove existence for every positive
+target \(2\bmod4\), using quaternionic norm counts and a sieve on the
+representing vectors. The prime sets used here and in the Gaussian
+problem are incomparable, as \(7\) and \(17\) show.
+We use the same norm-counting principle for the Eisenstein ring.
+The new estimates needed here are angular localization with prescribed
+residue conditions, the densities when a sieving prime divides the
+target, and a lower bound that counts distinct value pairs at the
+integer-sieve scale. Ramar\'e and Viswanadham
+\cite[Introduction and Theorem~1.6]{RV} discuss the split-prime
+Eisenstein set in their sieve framework and prove a ternary
+additive theorem for primitive Gaussian values.
+
+\begin{corollary}\label{cor:ranges}
+The count in every fixed interval of positive length for \(s_1/n\)
+inside \((0,1)\) is of order \(nJ(n)/\log n\). In particular the
+unrestricted count has this order. At any fixed interior share,
+windows of width \(n^\theta\) have count of order
+\(n^\theta J(n)/\log n\) for \(2/3<\theta<1\).
+For \(1/2<\theta<1\) and fixed \(0\le a<b\), the same count holds
+with \(s_1\in[a n^\theta,b n^\theta]\).
+\end{corollary}
+
+The results give two-sided order bounds. A leading constant and
+a numerical onset are open here, as are the central and
+small-summand endpoint exponents \(2/3\) and \(1/2\).

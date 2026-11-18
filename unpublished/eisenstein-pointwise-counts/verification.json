@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "scope": "Uniform matching bounds of order H J(n)/log n for distinct ordered pairs, in the ordinary family and either prescribed mixed orientation, under the window hypotheses in Theorem 1.1. Corollary 1.2 gives fixed shares, central power windows, prescribed small summands and the unrestricted count.",
+  "proof_route": [
+    {
+      "location": "Sections 2.1–2.4, equations (2)–(7)",
+      "role": "Class-number-one quaternion norm shells, normalized coefficient-valued Hecke operators, directional projection and uniform Legendre localization."
+    },
+    {
+      "location": "Section 3, equations (8)–(13)",
+      "role": "Exact prime-square densities, the split allocation recurrence at arbitrary target valuations and the joint level estimate."
+    },
+    {
+      "location": "Section 4, equations (14)–(18)",
+      "role": "Lower block weights, summable level remainders, target-divisor compensation and the truncated Euler product over the split factors."
+    },
+    {
+      "location": "Section 5",
+      "role": "Shifted annulus tail, bounded multiplicity for each value pair and the upper sieve on integers."
+    }
+  ],
+  "literature_comparison": {
+    "Dietmann–Elsholtz": "Published unnumbered theorem on p. 177 and quantitative argument on p. 178. Eventual existence for Gaussian restricted sums, with a lower bound of order at least n^(1-delta) for each delta>0 over unrestricted summand sizes.",
+    "Howe–Huffman–Kohlmeyer–Kruer": "Hexagon 2611.00370v1, Theorem 1.1. Gaussian restricted binary existence for all positive n=2 mod 4. The quaternionic norm-counting method is attributed.",
+    "Ramaré–Viswanadham": "arXiv:2509.23260v1, introduction and Theorem 1.6. The introduction discusses the split-prime Eisenstein set. The additive theorem concerns three primitive Gaussian values.",
+    "comparison": "The Gaussian and Eisenstein allowed prime sets are incomparable. The paper gives a uniform two-sided count in translated windows, using a directional coefficient projection, exact local formulas, and a cofactor sum that recovers the sieve logarithm. A wider priority review remains open."
+  },
+  "checks": {
+    "analytic": "The principal theorem and corollaries were checked against the complete manuscript proof and the four research source notes. The proof uses classical automorphic inputs. The verification scope remains internal.",
+    "local_control_replay": {
+      "checker": "../../research/arithmetic/eisenstein-restricted-prime-sums/verify_joint_coset_distribution.py",
+      "receipt": "../../research/arithmetic/eisenstein-restricted-prime-sums/joint_coset_distribution_checks.json",
+      "outcome": "Byte-identical replay with Python 3.12.3. 74 single-prime recurrence tests, five multiple-singular-prime examples, 240 scalar density checks, and 4,840,416 invertible matrices modulo 49. Both negative controls rejected the perturbation.",
+      "scope": "Selected exact local identities. The pointwise theorem is analytic and has no finite coverage step."
+    },
+    "pdf_only_reading": {
+      "reviewer": "Fresh internal AI with no inherited research context",
+      "supplied_context": "Only the PDF and the five blind-reader questions.",
+      "initial_pdf_sha256": "9857e5bc18d08ec078d63888839931cdddb015b6d8055d5daed434109c5b04a1",
+      "reviewed_revision_sha256": "962ff2bc55f36b367091dfd4071d78dccc7565456a8430f853ff17a27567999d",
+      "answers": {
+        "contribution": "Matching pointwise bounds for distinct ordered pairs in a moving window, including either mixed orientation.",
+        "mechanism": "Sieve the quaternion shell with a directional bump. Recover one logarithm by prescribing small split factors. Uniqueness of the prescription and bounded weighted norm multiplicity convert the shell count into a value count.",
+        "hardest_step": "Uniform Hecke bound in Section 2.2 and the split-prime recurrence in Section 3.2.",
+        "limitations": "Existential onset and constants, order of magnitude, strict endpoint exponents.",
+        "verification_barrier": "Full independent verification requires checking the cited transfer and eigenvalue inputs and their application at the stated levels."
+      },
+      "revisions": "Clarified baseline sieve scale, corrected the finite-test symbol, expanded the shell rescaling and stated the all-ideal recurrence. The isolated reader passed all four changes and the strengthened finite-congruence argument. The final PDF also writes the same squarefree weight as W(t)/tau(uv) to match Section 5.2."
+    },
+    "build": {
+      "tools": "LaTeXmk 4.83, pdfTeX 1.40.25, Poppler",
+      "scope": "Repository and extracted archive builds passed without LaTeX warnings. The seven packed source files match the repository. All 11 pages were inspected, and the text and 100 dpi page renders from the two builds agree."
+    }
+  },
+  "assurance": {
+    "external_specialist_review": false,
+    "independent_whole_proof_replay": false,
+    "formal_verification": false,
+    "public_deposit": false,
+    "priority_established": false
+  },
+  "artifacts": {
+    "angular.tex": "78cedea12b714c954035f83ac7f1da5b3d07c498c2c43d5c6fd4e3df1083aea0",
+    "count.tex": "62664255b3f99f54e778d4f4c8a1e4c5e767df0d3a5ee98450d02d820ad9f419",
+    "introduction.tex": "b15be6afbae930d418eab846c54471d8e8249faa23f1b3ed4a086942a7cde98d",
+    "local.tex": "e56c0e0551c86fa97f508fc0037841b022334a8b9d2b1566d91a7c0a4fa27fba",
+    "main.tex": "8f2cbb4829a298c9bfab745350461c6295474a4ab7b3f290a51edf9eed311241",
+    "paper.pdf": "b22a3dadb94b530c7f141c3fe4a14af75779d68e5d88f8b79f486f90609a9f15",
+    "references.tex": "327a3574925d7a4bfa9b20cbff3f906dd213eb7e52c634e2676cbb1e9c35afc6",
+    "sieve.tex": "b0df80b544aa322a1a025c2458140f6707723d38bde00bd3dea4d83798410bf9",
+    "source.zip": "98bf88c7d0d7ce38615a7df14743707748e96d8e54bfd25913c2147a52480b2e"
+  }
+}

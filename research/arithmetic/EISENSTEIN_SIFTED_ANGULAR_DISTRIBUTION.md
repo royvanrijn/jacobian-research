@@ -197,6 +197,243 @@ gives a uniform operator estimate, every fixed central power window
 For \(\theta=3/4\), the onset \(2^{2^{40}}\) is sufficient. Neither argument proves that \(8,44\)
 are the complete ordinary balanced exception list.
 
+## Exact balanced exceptions: prime families and reduced targets
+
+Let \(B(n)\) mean that \(n=a+b\), \(a,b\in A\), with both values
+in \([n/3,2n/3]\). The retained exact finite result proves that the
+exceptions among \(n\equiv2\pmod6\), \(n<10^8\), are precisely
+\(8,44\). Its [Python receipt](eisenstein-restricted-prime-sums/receipts/python_finite_receipt.json)
+and [Java receipt](eisenstein-restricted-prime-sums/receipts/java_finite_receipt.json)
+record the same balanced witness hash. Their centered searches exhaust
+the balanced interval independently of their unrestricted small-summand
+searches. This is retained finite evidence, not a new target scan.
+
+**Theorem EisBalancedReduction.** The following statements hold.
+
+1. If \(p\equiv1\pmod3\) is prime, then \(B(8p)\) and \(B(44p)\).
+2. If \(n\equiv2\pmod6\) has no prime divisor \(1\pmod3\) and
+   \(n\ge2^{60}\), then \(B(n)\).
+3. The complete exception conjecture is equivalent to \(B(n)\) for
+   every integer in the finite set
+   \[
+   10^8\le n<2^{60},\qquad n\equiv2\pmod6,\qquad
+   q\mid n\Longrightarrow q\equiv2\pmod3. \tag{EB1}
+   \]
+
+Part 1 below \(10^8\) and part 3 use the retained balanced finite
+certificate. All other coverage in this theorem follows from the explicit
+estimates below. The set in (EB1) has not been checked; the complete
+exception list remains open.
+
+### A fixed-interval witness criterion
+
+Put \(S(n)=\sigma(n)-\sigma(n/4)\), \(R_o(n)=12S(n)\), and
+\[
+ \alpha(n)=\frac{24\tau(n)\sqrt n}{R_o(n)}
+           =\frac{2\tau(n)\sqrt n}{S(n)}.
+\]
+A term at \(n/4\) is zero when \(4\nmid n\). The uniform
+positive-weight Hecke estimate, proved in the
+[power-window note](EISENSTEIN_POWER_SHRINKING_WINDOWS.md#uniform-archimedean-weight-and-finite-level),
+gives for every even \(d>0\)
+\[
+ \left|\sum_{\Omega_n}L_d(t)\right|\le24\tau(n)\sqrt n.
+\]
+The unweighted bad-prime estimates in that note give, for every odd
+inert prime \(q\), including \(q\mid n\),
+\[
+ \frac{b_q^o(n)}{R_o(n)}
+ \le\min\left\{\mu_q+\alpha(n),\frac{4M(n)}{q^2}\right\},
+ \qquad \mu_q=\frac2{q(q-1)}. \tag{EB2}
+\]
+Here \(M(n)\) is the split-divisor maximum from the
+[elementary estimates](../../unpublished/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex).
+The bounds used below are
+\[
+ M(n)\le\frac{15}{8}n^{1/5},\qquad
+ \#\{q\le P\}\le\frac{2P}{15}+\frac{17}{15},\qquad
+ \sum_{q>P}q^{-2}\le\frac2{15P}+\frac8{5P^2}\quad(P\ge5),
+ \tag{EB3}
+\]
+and \(\sum_q\mu_q<1/7\). All prime sums in this section concern
+odd inert primes.
+
+Suppose \(f\) is continuous, \(0\le f\le\mathbf1_{|t|\le1/3}\),
+with an absolutely convergent Legendre expansion of mean \(m\) and
+nonconstant coefficient norm \(B_f\). The candidate weighted count
+is at least \((m-B_f\alpha(n))R_o(n)\). Removing the union of bad
+witnesses costs at most its unweighted cardinality, because \(f\le1\).
+Thus the number of balanced good coordinate witnesses, divided by
+\(R_o(n)\), is at least
+\[
+ m-B_f\alpha(n)-\sum_{q\le\sqrt n}
+       \min\left\{\mu_q+\alpha(n),\frac{4M(n)}{q^2}\right\}.
+ \tag{EB4}
+\]
+The norm-divisibility implication \(q\mid N(z)\Rightarrow q^2\mid N(z)\)
+justifies the upper cutoff. No archimedean moment restricted to a bad
+prime is used. Since \(n\equiv2\pmod3\), both surviving odd norms
+are nonzero modulo 3, and exclusion of all inert factors places both
+values in \(A\).
+
+### A flat-topped central weight
+
+Use the even continuous function
+\[
+ f(t)=
+ \begin{cases}
+ 1,&|t|\le1/4,\\
+ 12(1/3-|t|),&1/4<|t|<1/3,\\
+ 0,&|t|\ge1/3.
+ \end{cases}
+\]
+Its mean is \(m=7/24\). If
+\(c_d=(2d+1)\int_{-1}^1f(t)L_d(t)\,dt/2\), all odd coefficients
+vanish. The distributional derivative \(d\{(1-t^2)f'(t)\}\) has
+total variation 45. Its four atoms have total variation
+\(24\{1-(1/4)^2+1-(1/3)^2\}=263/6\), and its continuous part
+has total variation \(24\{(1/3)^2-(1/4)^2\}=7/6\).
+
+The Laplace-integral bound in Lemma EisTriangle gives
+\[
+ |L_d(t)|\le\sqrt{\frac{\pi}{2d(1-t^2)}}
+      <\frac3{2\sqrt d}\qquad(|t|\le1/3).
+\]
+Twice integrating the Legendre equation, with the second derivative
+interpreted as that finite signed measure, therefore gives
+\[
+ |c_d|\le\frac{135}{2}d^{-3/2}.
+\]
+Consequently the even-degree tail above 100 is less than \(27/4\):
+\(\sum_{j\ge51}(2j)^{-3/2}<1/10\). Exact rational integration
+in the [checker](eisenstein-restricted-prime-sums/verify_balanced_exception_reduction.py)
+gives
+\[
+ \sum_{2\le d\le100}|c_d|=5.59126808218055\ldots<23/4,
+ \qquad B_f<25/2. \tag{EB5}
+\]
+The coefficient bound gives absolute uniform convergence, and orthogonality
+and polynomial density identify the sum with \(f\). Thus the uniform
+Hecke bounds may be summed over the whole expansion.
+
+### Closing the two prime-multiplier families
+
+If \(n=8p\), then \(\tau(n)=8\), \(S(n)=12(p+1)\). If \(n=44p\),
+then \(\tau(n)=12\), \(S(n)=72(p+1)\). Therefore both families satisfy
+\[
+ \alpha(n)\le\frac{44}{3\sqrt n}.
+\]
+For an integer interval \([L,U]\), put
+\[
+ a_L=\frac{44}{3\lfloor\sqrt L\rfloor},\qquad
+ m_U=\frac{15}{8}\lceil U^{1/5}\rceil,\qquad R=10000.
+\]
+A uniform rational lower bound for (EB4) throughout the interval is
+\[
+ \mathcal C(L,U)=\frac7{24}-\frac{25}{2}a_L
+ -\sum_{q\le R}\min\left\{\mu_q+a_L,\frac{4m_U}{q^2}\right\}
+ -4m_U\left(\frac2{15R}+\frac8{5R^2}\right). \tag{EB6}
+\]
+Extending the sum beyond \(\sqrt n\) only increases the loss.
+The checker enumerates all 616 odd inert primes through \(10000\)
+and proves these exact rational lower bounds:
+
+| \(L\) | \(U\) | Lower bound for \(\mathcal C(L,U)\) |
+|---|---|---|
+| \(10^8\) | \(2\cdot10^8\) | \(13713/10^6\) |
+| \(2\cdot10^8\) | \(4\cdot10^8\) | \(3419/10^5\) |
+| \(4\cdot10^8\) | \(8\cdot10^8\) | \(6377/125000\) |
+| \(8\cdot10^8\) | \(16\cdot10^8\) | \(16171/250000\) |
+
+These interval envelopes require no new target scan. For all \(n\ge10^9\),
+take \(P=n^{7/20}\) in (EB3). The complete candidate spectral error
+plus bad-prime loss is less than
+\[
+ \frac17+\frac{133}{45}n^{-3/20}
+              +\frac{9538}{45}n^{-1/2}.
+\]
+Indeed, with \(A=44/3\), the two error coefficients are
+\(2A/15+1=133/45\) and \(17A/15+12+25A/2=9538/45\).
+Since \(22^{20}<10^{27}\) and \(30000^2<10^9\), the difference
+between the weight mean and this loss is at least
+\[
+ \frac7{24}-\frac17-\frac{133}{45\cdot22}
+                  -\frac{9538}{45\cdot30000}
+   =\frac{192331}{25987500}>0.
+\]
+This proves both prime-family assertions for \(n\ge10^8\). The
+retained finite balanced certificate supplies the smaller targets;
+none of \(8p,44p\) with \(p\equiv1\pmod3\) prime equals \(8\) or \(44\).
+
+### An explicit onset for all-inert targets
+
+For an integer supported only on inert primes,
+\[
+ \frac{\tau(n)n}{\sigma(n)}<\frac52 n^{1/5}.
+\]
+To check the constant, maximize
+\((e+1)^5p^{4e}/\sigma(p^e)^5\) at each prime. All primes \(p\ge32\)
+have local factor at most one by \(e+1\le2^e\). For the remaining
+inert primes \(2,5,11,17,23,29\), maxima occur at exponents
+\(6,2,1,1,1,0\). Once \((e+2)^5\le p(e+1)^5\), all subsequent
+successive ratios are at most one. The product of the local maxima is
+\[
+ \frac{1150265160430735441400000000}{13572063869456406973631499}
+       <(5/2)^5.
+\]
+This exact inequality is checked along with the split-divisor bound.
+For \(n=2^e m\), \(m\) odd and \(e\ge1\),
+\(S(n)=3\cdot2^{e-1}\sigma(m)\) and \(\sigma(n)/S(n)<4/3\).
+It follows that
+\[
+ \alpha(n)<\frac{20}{3}n^{-3/10}.
+\]
+The [refined odd scalar estimate](../../unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex),
+equation `odd-local`, gives the sharper bad-prime bound
+\(b_q^o(n)/R_o(n)\le\mu_q+(9/4)n^{-3/10}\) on these targets.
+For \(q\mid n\), the exact scaling estimate in (EB2)'s source is
+already stronger. Taking \(P=2n^{1/4}\) and applying (EB3) gives total
+bad-prime loss less than
+\[
+ \frac17+\frac{11}{10}n^{-1/20}+\frac{111}{20}n^{-3/10}.
+\]
+The candidate spectral loss is at most \((250/3)n^{-3/10}\).
+At \(n=8^{20}=2^{60}\), the remaining normalized margin is at least
+\[
+ \frac{25}{168}-\frac{11}{80}
+       -\frac{111/20+250/3}{8^6}
+       =\frac{1207853}{110100480}>0.
+\]
+The error terms decrease thereafter. This proves part 2.
+
+### Multiplicative descent and the residual finite problem
+
+If \(B(m)\) holds and \(g\in A\), multiplying both summands by \(g\)
+proves \(B(gm)\). Every admissible target factors uniquely as \(n=gm\),
+where \(g\in A\) contains all split prime powers of \(n\), and \(m\)
+has only inert prime factors. The core \(m\) is again \(2\pmod6\).
+If \(m\notin\{8,44\}\) is balanced, scaling covers \(n\). If
+\(m\in\{8,44\}\) and \(g>1\), choose a split prime \(p\mid g\).
+Part 1 covers \(mp\), and scaling by \(g/p\) covers \(n\).
+
+The two exceptional cores themselves fail: the balanced interval for
+8 contains no integer \(1\pmod6\); the balanced interval for 44
+contains only 19 and 25 among such integers, and \(25\notin A\).
+Combining the finite certificate, part 2 and scaling proves the
+claimed equivalence with (EB1). Equivalently, a least additional
+counterexample, if one exists, is an all-inert target in (EB1).
+Finite-seed multiplication alone cannot eliminate the remaining cores:
+if an all-inert integer is \(sg\) with \(g\in A\), then \(g=1\).
+
+The [exact receipt](eisenstein-restricted-prime-sums/balanced_exception_reduction_checks.json)
+certifies the finite coefficient, normalization, interval-envelope and
+inequality calculations. The written argument supplies the infinite-degree
+coefficient tail and analytic bridge. The checker does not prove the
+uniform Hecke estimate, replay the balanced target scan, or check the
+remaining inert-core interval. Separate internal derivations checked the
+coefficient integral and rational margins; external specialist review,
+external replay and formal verification are not claimed.
+
 ## Why the tail must be normalized by the shell count
 
 The fixed-cutoff proof using \(G_{n,Y}\) is also valid when its tail is
@@ -266,8 +503,9 @@ window \(|a-b|\le n^\theta\), and the mixed analogue, for every fixed
 \(2/3<\theta<1\) and all admissible targets above its explicit onset.
 In particular \(\theta=3/4\) is valid at \(n\ge2^{2^{40}}\). For ordinary balanced sums the recorded finite
 certificate finds precisely two exceptions, \(8\) and \(44\), below
-\(10^8\). The range between that certificate and the new onset remains
-unchecked, so the complete exception list is still open. The angular result has internal proof support. External review and priority remain open. [Finite balanced calculation](../../unpublished/eisenstein-restricted-prime-sums/sections/balanced-summands.tex).
+\(10^8\). The explicit reduction above now isolates all-inert cores in
+\(10^8\le n<2^{60}\); that interval remains unchecked, so the complete
+exception list is still open. The angular result has internal proof support. External review and priority remain open. [Finite balanced calculation](../../unpublished/eisenstein-restricted-prime-sums/sections/balanced-summands.tex).
 
 The Gaussian sieve strategy has earlier primary precedents: [Lucia's answer,
 3 September 2013](https://mathoverflow.net/a/141096), works with local forbidden-prime

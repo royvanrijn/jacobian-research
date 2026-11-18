@@ -1,0 +1,226 @@
+\section{Hyperbolicity from two successive fillings}\label{sec:geometry}
+
+\subsection{A circle around the moving strands}
+
+Set \(\rho_b=\sigma_{b-1}\cdots\sigma_4\) and
+\(\theta_d=\sigma_2\cdots\sigma_{b-2}\). The braid relation gives
+\(\rho_b\delta_b\rho_b^{-1}=\theta_d\). For instance,
+conjugation of \(\sigma_3\) by \(\sigma_4^{-1}\) gives
+\(\sigma_3\sigma_4\sigma_3^{-1}\) when \(b=5\).
+In the step from \(b\) to \(b+1\), the new letter
+\(\sigma_{b-1}\) of \(\theta_{d+1}\) is conjugated by
+\(\rho_b^{-1}\sigma_b^{-1}\), giving \(\sigma_b\) because
+\(\sigma_b^{-1}\sigma_{b-1}\sigma_b
+=\sigma_{b-1}\sigma_b\sigma_{b-1}^{-1}\).
+The earlier letters are unchanged by \(\sigma_b\) before conjugating
+by \(\rho_b^{-1}\). It follows that the two braid words
+\[
+ Q_b=\rho_bU\rho_b^{-1}\theta_d^{d+1},
+ \qquad Q'_b=\rho_bU\rho_b^{-1}\theta_d
+\]
+are convenient starting points for a twist on the \(d\) consecutive
+strands in positions \(2,\ldots,b-1\).
+
+Add strand \(b+1\) and append
+\[
+       P_b=\sigma_b\sigma_{b-1}\cdots\sigma_3\sigma_2^2
+                         \sigma_3\cdots\sigma_{b-1}\sigma_b^{-1}.
+\]
+The last strand closes to an unknot \(C\), bounding a disk pierced
+once by each strand in positions \(2,\ldots,b-1\) and missing the
+other strands. One way to see the disk is to factor \(P_b\) as
+\(A_{2,b+1}\cdots A_{b-1,b+1}\), where
+\[
+  A_{i,b+1}=\sigma_b\cdots\sigma_{i+1}\sigma_i^2
+                          \sigma_{i+1}^{-1}\cdots\sigma_b^{-1}.
+\]
+Each factor pushes the last puncture once around puncture \(i\).
+The stems in this ordered product run along the same side of the
+adjacent punctures, so their concatenation bounds an oval around
+precisely those punctures. Equivalently, in the closure of the last
+strand, its two opposite crossings across strand \(b\) make a
+cancelling detour. The remaining oval passes over the selected strands
+on the outward trip and under them on the return. This gives the claimed
+disk in the slab of \(P_b\), including the two outside positions.
+The knot component of \(\cl{Q_bP_b}\) has the permutation already
+computed in Section~\ref{sec:color}; the same is true for \(Q'_b\).
+
+For a disk-bounding circle with this marking, filling along
+\((1,-q)\) means killing \(\mu_C-q\lambda_C\), where \(\mu_C\)
+is a positive meridian and \(\lambda_C\) the preferred disk
+longitude. A disk twist on the solid torus obtained by removing \(C\)
+takes this slope to \(\mu_C\). Localizing the twist to the slab
+inserts \(q\) full twists on the disk-piercing strands. To check the
+sign, put \(w=a_1\cdots a_d\) for the selected meridians and \(c\)
+for the circle meridian. Tracing the outward and return crossings
+of the oval gives the selected outputs \(c^{-1}a_i c\) and circle
+output \((wc)^{-1}c(wc)\). The return has crossed the whole ordered
+tuple, which contributes \(w\). The two outside crossings conjugate
+the outside meridian by inverse powers of the initial and final
+circle labels and cancel after closure. The closure relation is
+\([c,w]=1\), and \(\lambda_C\) is represented by \(w\), the
+boundary of the punctured disk. Filling gives \(c=w^q\).
+By the Hurwitz formula, \(\theta_d^d\) conjugates the whole
+selected tuple by \(w^{-1}\), so the geometric disk twist inserts
+\(\theta_d^{dq}\) in our convention.
+
+Let \(M_b=\Ext(\cl{Q_bP_b})\) and \(M'_b=\Ext(\cl{Q'_bP_b})\),
+where \(\Ext(L)\) denotes the link exterior. The preceding disk
+twist identifies \(M_b\) with \(M'_b\) as exteriors without a
+fixed peripheral basis, since their knot braids differ by one full
+twist on the disk. In the original marking of \(M_b\) we have
+\begin{equation}\label{eq:kfilling}
+      M_b\bigl(C:(1,-d(d+1)k)\bigr)\cong \Ext(K_{b,k}).
+\end{equation}
+Indeed, the inserted power of \(\theta_d\) is \(d^2(d+1)k\).
+Conjugating the resulting braid by \(\rho_b^{-1}\) gives the word
+defining \(K_{b,k}\).
+
+\subsection{A single exterior for the first filling}
+
+Consider the six-strand braid
+\[
+ R=\sigma_4\sigma_3\sigma_2^2\sigma_3\sigma_4\sigma_5^{-1}
+                 \sigma_4 U\sigma_4^{-1}\sigma_2\sigma_3\sigma_5
+\]
+and the seven-strand suffix \(D=\sigma_6\sigma_5\sigma_4^2
+\sigma_5\sigma_6^{-1}\). Set \(N=\Ext(\cl{RD})\).
+The closure of \(R\) has two components, a knot component containing
+\(U\) and a circle. The fourth and fifth closure arcs lie on these
+different components. These assignments also follow by tracing the
+strand permutation of \(R\), which fixes position five and cycles
+the other five positions. The new last component \(D_0\) bounds a
+disk around positions four and five, by the same oval
+construction as for \(P_b\). Thus \(N\) has three boundary tori,
+and filling the new circle along the disk-marked slope gives
+\begin{equation}\label{eq:nfilling}
+      N\bigl(D_0:(1,-q)\bigr)\cong\Ext(\cl{R\sigma_4^{2q}})
+                         \qquad(q\in\mathbb Z).
+\end{equation}
+
+\begin{lemma}\label{lem:isotopy}
+For every \(b\ge5\), the oriented link \(\cl{Q'_bP_b}\) is isotopic to
+\(\cl{R\sigma_4^{2(b-5)}}\), with the knot and circle components
+identified.
+\end{lemma}
+
+Here is how the isotopy works. After braid conjugation and
+commutation,
+\[
+  \sigma_3^{-1}(U\delta_b)\sigma_3
+    =(\sigma_3^{-1}U\sigma_2\sigma_3)\sigma_4\sigma_5\cdots\sigma_{b-1}.
+\]
+On the knot component alone this is an iterated positive
+stabilization. In the link, the disk of \(C\) meets the additional
+strands, so the corresponding curls cannot simply be removed.
+First cancel the detour of the circle and the two sides of the
+conjugating braid. The outer crossings then form a ladder along the
+circle. Slide each successive triangle through the already formed
+clasps by two Reidemeister III moves per clasp. At its end a
+Reidemeister III move exposes a curl, and a Reidemeister I move
+leaves one more two-crossing positive clasp. Repeating this leaves
+the \(b=5\) diagram with \(b-5\) clasps in the band of the fourth and
+fifth closure arcs of \(R\). Appendix~\ref{app:ports} proves the
+isotopy by specifying the moves, the induction on the ladder,
+and the identification of that band.
+
+By Lemma~\ref{lem:isotopy} and \eqref{eq:nfilling},
+\[
+       M_b\cong N\bigl(D_0:(1,-(b-5))\bigr)
+                    \quad\text{as exteriors}.
+\]
+This homeomorphism is used to transfer hyperbolicity. The second
+filling \eqref{eq:kfilling} uses the original disk marking of
+\(M_b\). Twisting around either circle can change the expression
+of the other circle's longitude, so no common longitude basis is
+required for the two fillings.
+
+\subsection{Three finite hyperbolicity certificates}\label{sec:certificates}
+
+The computation certifies the complete hyperbolic structures of
+\(N,M_5,M_6\), where \(M_5,M_6\) use \(Q_b\), with its full disk
+twist, in the literal braid \(\cl{Q_bP_b}\). Table~\ref{tab:cert}
+records the sizes of the input diagrams and certified triangulations.
+The two direct tests for \(M_5,M_6\) give explicit bridge numbers
+covered by the theorem regardless of the threshold obtained from \(N\).
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Exterior & Diagram crossings & Cusps & Tetrahedra\\
+\midrule
+\(N\)   & 32 & 3 & 35\\
+\(M_5\) & 32 & 2 & 31\\
+\(M_6\) & 43 & 2 & 34\\
+\bottomrule
+\end{tabular}
+\caption{Literal braid diagrams and complete ideal triangulations
+for the three hyperbolicity certificates. Crossings are counted
+in the given projection.}
+\label{tab:cert}
+\end{table}
+
+Each exact input binds a planar-diagram code and its components
+to the braid, checking every crossing port and every closure
+identification. The exterior of that diagram is constructed in
+Spherogram 2.4.1 and SnapPy 3.3.2. Its decorated triangulation
+signature is checked against the retained one with the component
+marking, and the face pairings and gluing equations of the
+reloaded triangulation are checked. SnapPy under SageMath 10.9
+then applies a Krawczyk interval test at 100 bits to both the
+fresh exterior and the retained triangulation. For the analytic
+criterion, a Krawczyk inclusion certifies a solution to a
+square subsystem of the shape equations in the interval box.
+The logarithmic edge and cusp equations are checked in the
+correct branches, and every shape has positive imaginary part.
+Together with the subsystem reduction, the positivity, gluing and
+completeness checks give a complete
+hyperbolic structure on the triangulated exterior
+\cite[Sections 2--4]{HIKMOT}. Exact inputs, software pins,
+rational interval bounds and the replay procedure are supplied
+in the computational supplement. The proof uses these three
+finite certificates and the written diagram induction.
+
+\subsection{Proof of the prime-family conclusion}
+
+Since \(N\) is complete and finite-volume hyperbolic, Thurston's
+hyperbolic Dehn filling theorem
+\cite[Theorem 5.8.2]{Thurston} applies to the \(D_0\) cusp with
+the other two cusps unfilled. The slopes \((1,-(b-5))\) escape
+every finite set as \(b\) grows. Thus \(M_b\) is hyperbolic for
+every sufficiently large \(b\), as well as for \(b=5,6\) by
+the direct certificates. For any such \(b\), apply the theorem
+to \(M_b\) on the \(C\) cusp. The slopes in \eqref{eq:kfilling}
+escape every finite set as \(k\) grows, so all sufficiently
+large \(K_{b,k}\) are hyperbolic. A hyperbolic knot is prime.
+Indeed, a composite knot group is the amalgam of the nontrivial
+summand groups over their meridian, and the two summand longitudes
+lie outside that amalgamating subgroup by peripheral injectivity.
+They commute with the common meridian and fail to commute with
+one another by amalgam normal form. The centralizer of a nonidentity
+element of a torsion-free discrete subgroup of
+\(\operatorname{PSL}_2(\mathbb C)\) is abelian, as is seen by
+putting the element in parabolic or loxodromic normal form.
+
+For a fixed such \(b\), the lengths \(\ell_k\) of the second
+filling slopes on an embedded horotorus tend to infinity, since
+they are the norms of \(\mu_C-d(d+1)k\lambda_C\) in a flat
+lattice with \(\lambda_C\ne0\). For sufficiently large \(k\)
+the fillings are hyperbolic and \(\ell_k>2\pi\).
+The volume inequality of Futer, Kalfagianni and Purcell
+\cite[Theorem 1.1]{FKP} and strict volume decrease under proper
+hyperbolic filling \cite[Theorem 6.5.6]{Thurston} give
+\[
+ \left(1-\left(\frac{2\pi}{\ell_k}\right)^2\right)^{3/2}\!
+     \operatorname{vol}(M_b)
+   \ \le\ \operatorname{vol}\bigl(\Ext(K_{b,k})\bigr)
+   \ <\ \operatorname{vol}(M_b).
+\]
+The volumes converge to \(\operatorname{vol}(M_b)\), and by
+Mostow--Prasad rigidity each hyperbolic exterior type has
+one volume. A finite set of exterior types would have a
+maximum volume strictly below \(\operatorname{vol}(M_b)\).
+Thus there are infinitely many knot types for that \(b\).
+Together with the algebraic bounds, this proves
+Theorem~\ref{thm:main}.

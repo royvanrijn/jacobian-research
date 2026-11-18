@@ -13,9 +13,12 @@ The primary target is the exact ordinary balanced classification: every positive
 `n = 2 mod 6`, except `8` and `44`, should be a sum of two members of `A`
 with both summands in `[n/3, 2n/3]`. The retained finite certificate covers
 `n < 10^8`; the eventual balance theorem has not yet been connected to that
-range. Work should first seek a sufficient effective estimate for this fixed
-interval and a rigorous bridge to finite verification. The full exception list
-remains a conjecture.
+range. The new
+[fixed-interval reduction](../EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md#exact-balanced-exceptions-prime-families-and-reduced-targets)
+covers every `8p` and `44p` with `p = 1 mod 3` prime, and all-inert targets
+above `2^60`. The residual task is now to cover the all-inert admissible cores
+in `[10^8, 2^60)`, by sharper estimates or an effective finite bridge. This is
+equivalent to the full conjecture; the residual interval remains unresolved.
 
 The secondary direction is additive coverage by splitting-prime semigroups,
 starting with the existing theorem for an abelian splitting semigroup paired
@@ -30,6 +33,7 @@ of research priority does not change any theorem or review status.
 
 ## Current mathematics
 
+- [Exact balanced exceptions: prime-family closure and the remaining inert cores](../EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md#exact-balanced-exceptions-prime-families-and-reduced-targets).
 - [Pointwise semigroup-scale counts for Eisenstein sums](../EISENSTEIN_POINTWISE_SEMIGROUP_SCALE.md).
 - [Pointwise Eisenstein counts in moving summand windows](../EISENSTEIN_MOVING_WINDOWS.md).
 - [Power-shrinking Eisenstein windows, with an explicit onset](../EISENSTEIN_POWER_SHRINKING_WINDOWS.md).
@@ -93,8 +97,10 @@ whose two permitted parts each have a bounded number of prime factors, all
 exceeding a fixed positive power of the target. The exact triangle expansion and central-annulus tail yield
 the power-window range;
 the positive Jackson--Parseval construction also verifies the weaker `theta > 6/7`
-route. The explicit onsets leave an enormous gap above the finite certificate,
-so the complete balanced exception lists are still unresolved. These are research notes; the manuscript
+route. The fixed-interval argument separately closes the prime-multiplier
+families and proves balance on all-inert targets above `2^60`. It reduces the
+ordinary exact-exception conjecture to the all-inert interval `[10^8, 2^60)`,
+which remains unresolved. These are research notes; the manuscript
 has not been expanded to include the new power-window theorem.
 
 The asymmetric theorem now gives a weighted pointwise asymptotic on EVERY
@@ -240,6 +246,7 @@ default and write JSON only when `--output` is supplied:
 
 ```sh
 python3 verify_joint_coset_distribution.py
+python3 verify_balanced_exception_reduction.py
 python3 verify_asymmetric_sums.py
 python3 verify_asymmetric_uniform.py
 python3 verify_asymmetric_cofactors.py
@@ -252,7 +259,14 @@ python3 verify_coupled_gaussian_eisenstein_sieve.py
 python3 verify_asymmetric_well_factorable_switch.py
 ```
 
-The retained receipts are [joint coset controls](joint_coset_distribution_checks.json)
+The [balanced-exception controls](balanced_exception_reduction_checks.json)
+certify 39 finite coefficient, normalization, interval-envelope and onset
+checks. They enumerate 616 inert primes through `10000`, without scanning
+any new target range or verifying the remaining inert-core interval. The
+written proof supplies the uniform moment input, infinite coefficient tail
+and descent. The checker does not certify those analytic statements.
+
+The other retained receipts are [joint coset controls](joint_coset_distribution_checks.json)
 and [asymmetric arithmetic controls](asymmetric_sums_checks.json), together
 with [uniform-family controls](asymmetric_uniform_checks.json) and
 [cofactor controls](asymmetric_cofactor_checks.json), and

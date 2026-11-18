@@ -1,0 +1,171 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.13in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage{microtype,tikz}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem*{example}{Example}
+\newcommand{\ar}{\operatorname{ar}_{\mathbb C}}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\br}{\operatorname{br}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\cl}[1]{\widehat{#1}}
+\newcommand{\port}[2]{#1.#2}
+\title{Prime Knots with Augmentation-Rank Gaps\\ at Unbounded Bridge Number}
+\author{Roy van Rijn}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We construct explicit braid families containing infinitely many distinct
+hyperbolic prime knots of each bridge number \(b=5,6\) and each sufficiently
+large \(b\), with complex augmentation rank at most \(b-1\) and meridional
+rank \(b\). Alternating-group colorings force \(b\) meridional generators,
+while two fixed meridians and an invariant ordered product carry a local
+rank-one obstruction through the growing braid. An oriented diagram
+isotopy realizes the associated two-cusped exteriors as fillings of a
+single three-cusped exterior. Rigorous interval certificates establish
+hyperbolicity of that exterior and the two small-bridge exteriors used
+in the filling argument.
+\end{abstract}
+
+\section{Introduction}
+
+How far can one get in determining the bridge number of a knot using
+rank-one meridian representations? For a knot \(K\subset S^3\), the
+meridional rank \(\mr(K)\) is the least number of positive meridians
+generating its group, and the bridge number \(\br(K)\) is the least
+number of maxima in a bridge presentation. The conventional complex
+augmentation rank \(\ar(K)\) uses the cord algebra with \(U=1\) and
+meridian parameter different from \(1\). By Cornwell's correspondence it
+is the maximum dimension of an irreducible complex representation in
+which a meridian is diagonalizable with eigenvalues \(1,\ldots,1,\mu\),
+where \(\mu\ne 0,1\) \cite[Theorem 1.2 and Definition 1.8]{Cornwell}.
+Meridians are conjugate, so this condition holds for every meridian.
+The inequalities
+\[
+                 \ar(K)\le \mr(K)\le\br(K)
+\]
+give two ways to bound bridge number from below. We construct prime
+knots of arbitrarily large bridge number for which the first bound
+falls short and the second is an equality.
+
+Read braid words from left to right, from top to bottom, and write
+\(\sigma_i\) for the positive crossing at positions \(i,i+1\).
+Let
+\[
+ U=\sigma_1\sigma_2\sigma_3^{-2}\sigma_2\sigma_3^{-2}
+          \sigma_2\sigma_1^2\sigma_2^3\sigma_3^{-1}\in B_4.
+\]
+For \(b\ge5\), put \(d=b-2\) and embed \(U\) in \(B_b\) on the first
+four strands. Define
+\[
+ \delta_b=\sigma_2(\sigma_3\sigma_4\sigma_3^{-1})
+                  \sigma_5\cdots\sigma_{b-1},\qquad
+ K_{b,k}=\cl{U\delta_b^{(d+1)(1+d^2 k)}}\quad (k\ge0).
+\]
+An empty product is the identity.
+
+\begin{theorem}\label{thm:main}
+For every integer \(b\ge5\) and \(k\ge0\), \(K_{b,k}\) is a knot and
+\[
+              \ar(K_{b,k})\le b-1<\mr(K_{b,k})=\br(K_{b,k})=b.
+\]
+For each \(b=5,6\) and each sufficiently large \(b\), all sufficiently
+large \(k\) give hyperbolic prime knots, and infinitely many distinct
+knot types occur for that fixed \(b\).
+\end{theorem}
+
+Cornwell proved \(2=\ar(K)<\mr(K)=3\) for the four knots
+\(8_{16},8_{17},10_{91},10_{94}\) and their mirrors. His rank-gap
+classification assumes crossing number at most ten and bridge number
+and braid index both equal to three, and its augmentation upper bounds
+use Gröbner bases of braid-specific equations
+\cite[Corollary 1.12 and Theorem 5.3]{Cornwell}. Theorem~\ref{thm:main}
+gives infinite hyperbolic prime families at unbounded bridge number.
+Gao, Gu, Li and Wang prove \(\ar\le5<\mr=\br=6\) for the
+untwisted Whitehead double of the square knot, using its satellite
+presentation for the augmentation bound and a finite quotient and
+cocycle calculation for the meridional bound
+\cite[Theorem 1.3 and Section 6]{GGLW}.
+Here the rank-one obstruction persists under a family of braid tails,
+and the diagram isotopy produces hyperbolic examples without taking
+satellites or connected sums. The theorem gives an upper
+bound on augmentation rank. Its hyperbolicity cutoffs are existential,
+and the cutoff in \(k\) is allowed to depend on \(b\).
+
+The algebraic construction uses the same braid action in two ways.
+The braid after \(U\) fixes the first and fourth meridians. After
+conjugating the labels on strands five through \(b\) by the fourth
+label, this part of the braid acts by ordinary Hurwitz moves on the
+remaining entries. These moves preserve their ordered product. In an
+alternating group we can compute the order of this product explicitly
+and use it to close up a coloring that needs \(b\) generators. In a
+rank-one representation, independence of all \(b\) displacement
+directions forces a local simplification inside \(U\). The product
+identity then recovers a middle closure relation, reducing the
+obstruction to a system of eight crossings.
+
+For the geometry, put a circle around the strands carrying the
+Hurwitz moves. Varying \(k\) amounts to filling that circle. The
+number of strands through the circle varies with \(b\), so a separate
+argument is needed to control the exteriors before filling. The
+diagram isotopy in Section~\ref{sec:geometry} trades each extra
+threaded curl for a full twist between a knot arc and a circle arc.
+This identifies all the two-cusped exteriors with fillings of a
+single three-cusped manifold, to which we apply hyperbolic Dehn
+filling twice.
+
+\input{coloring}
+\input{representations}
+\input{geometry}
+
+\paragraph{Computational supplement.}
+The accompanying supplement supplies the exact planar diagrams,
+decorated triangulations, face pairings, gluing equations, rational
+interval enclosures, and replay scripts for the hyperbolicity
+certificates in Section~\ref{sec:certificates}. It also supplies the
+finite diagram moves and checks of the port conventions used in
+Appendix~\ref{app:ports}. The algebraic and diagram inductions in the
+article establish the unrestricted parameter statements.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\appendix
+\input{diagram-isotopy}
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{Cornwell}
+C.~R. Cornwell, \emph{KCH representations, augmentations, and
+\(A\)-polynomials}, J. Symplectic Geom. \textbf{15} (2017), 983--1017.
+\href{https://doi.org/10.4310/JSG.2017.v15.n4.a2}{doi:10.4310/JSG.2017.v15.n4.a2}.
+
+\bibitem{FKP}
+D. Futer, E. Kalfagianni, and J.~S. Purcell, \emph{Dehn filling, volume,
+and the Jones polynomial}, J. Differential Geom. \textbf{78} (2008),
+429--464. \href{https://doi.org/10.4310/jdg/1207834551}{doi:10.4310/jdg/1207834551}.
+
+\bibitem{GGLW}
+H. Gao, S. Gu, Z. Li, and J. Wang, \emph{Meridional ranks of iterated
+Whitehead doubles}, preprint, 2026.
+\href{https://arxiv.org/abs/2611.15673v1}{arXiv:2611.15673v1}.
+
+\bibitem{HIKMOT}
+N. Hoffman, K. Ichihara, M. Kashiwagi, H. Masai, S. Oishi, and
+A. Takayasu, \emph{Verified computations for hyperbolic \(3\)-manifolds},
+Exp. Math. \textbf{25} (2016), 66--78.
+\href{https://doi.org/10.1080/10586458.2015.1029599}{doi:10.1080/10586458.2015.1029599}.
+
+\bibitem{Thurston}
+W.~P. Thurston, \emph{The Geometry and Topology of Three-Manifolds},
+Princeton lecture notes, electronic edition 1.1, 2002.
+\href{https://library.slmath.org/nonmsri/gt3m/}{Electronic edition}.
+\end{thebibliography}
+\end{document}

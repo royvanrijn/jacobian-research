@@ -32,7 +32,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Unrestricted quadratic radial Gaussian finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md) |
 | Cubic radial Gaussian safety and the relative Airy source | Internal result | proved | [Source](vanishing/GAUSSIAN_RADIAL_FROBENIUS_AND_CUBIC_FIBRES.md) |
 
-**Computed obligations:** 38 unresolved; 1 resolved within their exact scope.
+**Computed obligations:** 35 unresolved; 1 resolved within their exact scope.
 
 
 Scope limits:
@@ -44,6 +44,9 @@ Scope limits:
 - The retained two-pair Image cubic proof covers exact bihomogeneous bidegree (3,3), with sharp mixed cutoff and minimum failing balanced degree four. Independent review and formal coverage are separate obligations.
 - Theorem 5.5 extends the retained primitive Image family to every even balanced degree d>=4. Odd height powers are allowed: for odd k the fixed marker survives at every even m, which already violates eventual mixed vanishing. The next primitive frontier is odd degree five, with F mod R nonzero required from the start; invariant padding cannot settle it. This internal deduction has no independent review, formal verification or novelty claim; unrestricted Image failure was already known in the retained results.
 - The real signed-height one-affine-profile class is classified: q=r gives primitive failures only in even minimal degree, while q<r is safe for all original multipliers. A separate four-moment certificate excludes every bilinear multiple of the retained quartic from primitive degree five. Neither restriction decides arbitrary primitive odd degree five. The DAG separates angular identities, the contraction bridge, primitivity, Image membership, quartic specialization and padding. The full geometric nullcone interpretation retains a definition/application audit obligation.
+- The pointwise safety decision has an exact-source Hom route and checked original integration-by-parts and Wick-jet certificates. The latter certify the actual decision without a completeness assumption for the relation matrix.
+- For ternary phases of degree at most three, the axial restrictions force a universal geometric pure-moment prefix of at least six and an ordinary ideal prefix of at least ten. The exact global thresholds remain open.
+- For rational polynomial phases and polynomial differential symbols, graph-elimination generation and checked nonnegative-power specialization support the actual-power selector. Its safe outputs have sufficient cutoffs, with a separate premise for pure-linear bounds.
 
 Tracked obligations (computed states):
 
