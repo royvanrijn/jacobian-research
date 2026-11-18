@@ -198,7 +198,7 @@
     "date": "2026-11-18",
     "report": "PRIMITIVE_NORM_NOVELTY.md",
     "scope": "General pair-primitive theorem and exact -8 classification; -11 supplementary context only.",
-    "verdict": "Method and principal analytic inputs are classical. Full arbitrary-pair statement not located verbatim: useful deduction, priority unverified. Exact -8 classification is main candidate contribution; whole-vector primitive support and shell formulas are already Liouville1860. Both eventual -8 strong cores and all eventual P8+P8 existence already follow from the inspected classical Plaksin theorem via the Gaussian parity lift; exact all-target completion remains the candidate contribution. The subsequent exact two-block historical review identifies a full Gaussian power-saving asymptotic as a short Brudern-Fouvry1994 deduction, direct Schinzel2013 Gaussian existence, full eventualD20 existence from Plaksin, and earlier class-mixing mechanisms. It found no exact arbitrary-pair antecedent in its inspected primary corpus, without a priority certificate.",
+    "verdict": "Method and principal analytic inputs are classical. The targeted review verifies a short Baker2006 adaptation yielding the full arbitrary-pair separately primitive power-saving asymptotic and eventual local-global existence. This scope alone is not a standalone novelty claim. Sharper7/8, explicit local arithmetic and exact -8/-11/-7 results need separate priority assessments. Liouville whole-vector formulas and Plaksin eventual routes remain classical.",
     "applications": [
       "WaibelLemma15 plus target-gcd averaging: O_epsilon(N^(7/8+epsilon)), every eta<1/8, explicit1/9.",
       "Corrected HenriotNewTheorem5 plus fractional Holder: V(N)>>N/(logN)^(log4+epsilon); upper V(N)<<NJ12(N)/logN, uniformly all valuations.",
@@ -206,7 +206,7 @@
       "Fixed-content binary forms also covered after dividing bounded h|lcm(c1,c2)."
     ],
     "limits": "No exhaustive MathSciNet/zbMATH review, author consultation, external human review, or priority certification; no arbitrary-form unweighted leading asymptotic.",
-    "targeted_review_status": "Completed for the explicitly recorded primary corpus; full arbitrary-pair priority unresolved."
+    "targeted_review_status": "Positive classical deduction found for the central full arbitrary-pair theorem; priority of remaining refinements unresolved."
   },
   "novelty_primary_sources": [
     {
@@ -487,9 +487,11 @@
       "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/83715",
       "role": "comparison",
       "statements_used": [
-        "Definition1.2 printedpp101-102: product of individual coordinate Mobius functions, vanishing on coordinate hyperplanes. Theorem1 p104: arbitrary fixed nonsingular quadratic forms in n>=4 and nonzero varying target; Theorem5 local positivity. No general graph/gcd interface."
+        "Definition1.2 printedpp101-102: product of individual coordinate Mobius functions, vanishing on coordinate hyperplanes. Theorem1 p104: arbitrary fixed nonsingular quadratic forms in n>=4 and nonzero varying target; Theorem5 local positivity. No general graph/gcd interface.",
+        "Proof-level comparison: Section4pp112-114, equations4.7-4.12,Lemmas9-10 and Section6equations6.2-6.6 give polynomial scaling bounds. Published family uses squared coordinate divisors; first-power block-divisor adaptation is close but not a literal plug-in. No intrinsic uniformity barrier is claimed.",
+        "Superseding checked deduction: Sections4/6 first-power block adaptation gives full raw R* asymptotic with conservative power saving1/16384, arbitrary positive targets and permitted valuations; radial weight and zero-block handling recorded in canonical review. The statement is not printed verbatim."
       ],
-      "inspection_scope": "Actual primary theorem, definitions and relevant sieve setup inspected. The explicit Q=x^2+16y^2 local-range counterexample in the review prevents a direct specialization claim.",
+      "inspection_scope": "Actual primary definitions, Theorem1, Sections3-4 analytic lemmas/scaling proofs and Section6 remainder summation inspected. Complete first-power two-block adaptation written in analytic bridge B.1-B.12 and checked internally, including full-shell weight, zero blocks, overlap factors and safe exponent1/16384. This is not printed verbatim in the source; deep circle-method estimates remain imported.",
       "local_path": "sources/baker-squarefree-points-2006.pdf",
       "sha256": "7ce84242c84b800711ede223eaafab27668b93589f360347f2829671e5c98767",
       "doi": "10.4064/aa124-2-1"
@@ -586,7 +588,7 @@
       "key": "estermann_1951_firstpage",
       "author": "T.Estermann",
       "title": "On Sums of Squares of Square-Free Numbers",
-      "version": "Proc.London Math.Soc.(2)53(1951),125-144; opening page received/read1948",
+      "version": "Proc.London Math.Soc.(2)53(1951),125-137; opening page received/read1948",
       "doi": "10.1112/plms/s2-53.2.125",
       "url": "https://londmathsoc.onlinelibrary.wiley.com/cms/asset/480fe45c-09af-4cf0-975d-752bd4bdcd13/plms_s2-53.2.125.fp.png",
       "inspection_scope": "Actual publisher FIRST-PAGE image read. Full PDF, later numbered results, error estimates and proof remain uninspected.",
@@ -638,12 +640,13 @@
     "locator": "Targeted historical review of the two-block theorem",
     "comparison_target": "Arbitrary fixed positive primitive binary pairs, prescribed gcd in each block, all locally admissible varying targets and allowed valuations, local main term with a positive power saving. Older relative asymptotics/existence are also material antecedents even without our exact exponent or printed local modulus.",
     "verified_overlap": [
+      "The FULL raw arbitrary-binary-pair two-block coordinate asymptotic with some positive power saving follows by a short first-power adaptation of Baker2006 Sections4/6, elementary block-gcd tails and local completion. A radial fixed smooth weight handles the full shell; zero blocks cost O(H N^epsilon). Safe conservative saving1/16384 is written in the canonical review.",
       "Full Gaussian pair-primitive coordinate asymptotic with some positive power saving follows shortly from Brudern-Fouvry1994 Theorem3 by divisor vectors(d,d,e,e), elementary tails and local completion.",
       "Schinzel2013 p111 directly states eventual Gaussian designated-pair existence on the full local range.",
       "Plaksin1984/1985 implies the full eventual primitive x^2+5y^2 selfsum range by regrouping and a square-root gcd deletion.",
       "Bredikhin-Linnik1966 supplies a prior exact-v1 prime-orientation class-mixing lemma with a direct primitive-residual specialization."
     ],
-    "verdict": "No exact arbitrary-pair antecedent or verified short deduction was identified in the inspected primary corpus. This is a bounded targeted comparison, not a certificate that the full theorem was historically unknown. Its method and the listed special cases are classical; priority remains unresolved.",
+    "verdict": "Positive classical deduction found: the general separately primitive arbitrary-binary-pair power-saving asymptotic and eventual primitive-local existence follow by a short Baker2006 proof adaptation. The general theorem alone is insufficient as a central standalone novelty claim. Exact printed designated-block statement not located; sharper7/8, explicit local tables/conductor criteria and exact exceptions require their own priority comparisons.",
     "public_database_access": {
       "MathSciNet": "No live result set: institutional-authentication page.",
       "zbMATH": "No live result set: web403 and API timeouts.",
@@ -716,7 +719,7 @@
         "key": "estermann_1951_firstpage",
         "author": "T.Estermann",
         "title": "On Sums of Squares of Square-Free Numbers",
-        "version": "Proc.London Math.Soc.(2)53(1951),125-144; opening page received/read1948",
+        "version": "Proc.London Math.Soc.(2)53(1951),125-137; opening page received/read1948",
         "doi": "10.1112/plms/s2-53.2.125",
         "url": "https://londmathsoc.onlinelibrary.wiley.com/cms/asset/480fe45c-09af-4cf0-975d-752bd4bdcd13/plms_s2-53.2.125.fp.png",
         "locator": "Printedp125 only: Theorems1-2, individually squarefree positive coordinates; s>=5 under modulo32 condition A, all large targets when s>=8.",
@@ -746,6 +749,18 @@
       }
     ],
     "james_1938_scope": "Original article inaccessible. Later primary Dietmann-Elsholtz authorpp1-2 attributes exact three-summand Gaussian split support and a binary approximation allowing at most two bad prime factors per summand. This confirms relevance but neither excludes the full original nor supplies the arbitrary-form two-block asymptotic.",
-    "squarefree_finite_sieve_diagnostic": "Fixed SL2 block basis changes can arrange coordinate-unit solutions at finitely many bad primes, so the direct local-range counterexample alone does not exclude an indirect deduction. However the available elementary large-gcd tail is O_epsilon(N^(1+epsilon)/P), not uniform O(N/P); a fixed cutoff followed by N tending to infinity does not suffice. Growing cutoffs require coefficient/progression uniformity beyond the cited fixed-form statements. No impossibility of adapting their proofs is asserted."
+    "squarefree_finite_sieve_diagnostic": "Theorem1 alone has different restrictions; fixed-cutoff inversion is insufficient. However actual Sections4/6 provide the polynomial uniformity needed for growing first-power block divisors, repairing the fixed-form black-box gap. It is not an actual analytic barrier.",
+    "baker_proof_level_comparison": "Checked first-power adaptation: gradient kernel bound, Lemma10 nonzero-target average (all target valuations), integral scaling, H=P^(1/1024), c cutoffP^(1/64), rapid order512, q splitP^(3/4), radial weight1 on entire positive shell, zero-block error O(H N^epsilon), existing alpha1/2 local completion. Full raw R* main term with conservative saving1/16384; not printed verbatim, no new analytic estimate.",
+    "written_adaptation": {
+      "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
+      "locator": "Explicit first-power adaptation of Baker, equationsB.1-B.12",
+      "status": "Complete internal written adaptation, not a theorem printed verbatim in Baker",
+      "checks": [
+        "First-power gradient kernel and averaged sums, common divisors and arbitrary target valuations",
+        "Explicit full-shell error budget with safe saving1/16384",
+        "Jacobian B^-1 and primitive-block local factors including overlap and dyadic rescaling",
+        "Scalar squarefree Euler completion not reused; canonical absolute local moment applied instead"
+      ]
+    }
   }
 }

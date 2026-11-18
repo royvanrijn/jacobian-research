@@ -1562,3 +1562,356 @@ revision, the exact analytic hypotheses, source normalization issues,
 the independent spectral specialization, the exponent improvement and
 the exact-classification completion and remaining priority obligations. It is an
 internal mathematical audit, not external human review.
+
+## Explicit first-power adaptation of Baker
+
+This gives a second proof of the full coordinate asymptotic with a
+small positive power saving. It does not recover the stronger
+\(7/8+\epsilon\) error above. The input is the analytic estimates
+and displayed proofs in R.C.Baker, The values of a quadratic form
+at square-free points, Acta Arith.124(2006),101--137:
+[retained primary edition](sources/baker-squarefree-points-2006.pdf).
+The relevant locations are p.102 (weight scope), (3.1)--(3.4),
+Lemmas 2--10, (4.7)--(4.12), and Section 6.
+His Theorem 1 imposes individual coordinate squarefreeness.
+The first-power lattice changes and local completion below are
+an adaptation, not an invocation of that theorem.
+
+### Fixed shell weight and scaled lattice
+
+Put \(F=Q_1\oplus Q_2\). To avoid a half-integral matrix take
+\(f=2F=\mathbf x^{\mathsf T}M\mathbf x\), where
+\(M=\operatorname{diag}(A_1,A_2)\) is fixed integral nonsingular.
+Let \(m=2N>0\) and \(P=\sqrt m\).
+Choose a fixed smooth \(\phi\), supported in \((1/2,3/2)\)
+and equal to one near 1, and put \(w(\mathbf z)=\phi(f(\mathbf z))\).
+Its support is compact and avoids zero; on \(f(\mathbf x)=m\)
+we have \(w(\mathbf x/P)=1\) exactly.
+
+This weight includes coordinate axes. Baker's p.102 first states
+the underlying Heath-Brown analytic weight class, smooth compact
+support avoiding zero, and then adds coordinate-plane vanishing
+for his scalar-squarefree inversion. Only that inversion and its
+tail use the extra restriction. The analytic integral and
+exponential-sum estimates used below remain in the original
+weight class, and we replace the inversion.
+
+For positive integers \(\mathbf s=(s_1,\ldots,s_4)\), let
+\(D_{\mathbf s}=\operatorname{diag}(s_i)\), \(B=\prod_i s_i\), and
+\[
+ f_{\mathbf s}(\mathbf x)=f(D_{\mathbf s}\mathbf x),\qquad
+ w_{\mathbf s}(\mathbf z)=w(D_{\mathbf s}\mathbf z).
+\]
+Define the complete sums, with \(e_q(t)=\exp(2\pi it/q)\), by
+\[
+ S_q(\mathbf s,\mathbf c)=
+ \sum_{\substack{a\bmod q\\(a,q)=1}}\ \sum_{\mathbf b\bmod q}
+ e_q\!\left(a(f_{\mathbf s}(\mathbf b)-m)+\mathbf c\cdot\mathbf b\right).
+\]
+The delta-symbol and Poisson identity (Baker (3.4)) is
+\[
+ r_{f_{\mathbf s}}(m)
+ =c_P P^{-2}\sum_{\mathbf c\in\mathbb Z^4}\sum_{q\ge1}
+ q^{-4}S_q(\mathbf s,\mathbf c)I_q(\mathbf s,\mathbf c),
+ \qquad c_P=1+O_L(P^{-L}).
+ \tag{B.1}
+\]
+The support of the kernel in (3.1) restricts \(q\) to \(q\le P\)
+for this radial weight. All counts on the left are raw coordinate
+counts, because \(w_{\mathbf s}(\mathbf x/P)=1\) on the shell.
+
+### First-power gradient and complete-sum estimates
+
+The source uses \(s_i=d_i^2\). For first powers, write
+\(g_i=(s_i,q)\). The gradient congruence is
+\[
+                      2D_{\mathbf s}MD_{\mathbf s}\mathbf u=0\bmod q.
+\]
+For \(\mathbf v=MD_{\mathbf s}\mathbf u\), each condition
+\(2s_iv_i=0\bmod q\) permits at most \(2g_i\) values.
+The fixed matrix \(M\) has at most \(|\det M|\) preimages
+of any vector modulo \(q\), by its Smith form.
+Each possible \(D_{\mathbf s}\mathbf u\) then has at most
+\(\prod_i g_i\) preimages \(\mathbf u\).
+Thus the gradient kernel contains at most
+\(C_M\prod_i g_i^2\) vectors. Applying Baker's Lemma 7 proves
+the first-power version of Lemma 9:
+\[
+                  |S_q(\mathbf s,\mathbf c)|
+                       \ll_M q^3\prod_i(s_i,q).
+ \tag{B.2}
+\]
+This includes common primes among the \(s_i\); neither their
+squarefreeness nor pairwise coprimality was used.
+
+Here is the corresponding target-uniform version of Lemma 10:
+\[
+ \sum_{q\le X}|S_q(\mathbf s,\mathbf c)|
+ \ll_{f,\epsilon}
+ B^{2+\epsilon}X^{7/2+\epsilon}(m+|\mathbf c|+1)^\epsilon.
+ \tag{B.3}
+\]
+To check it, split \(q=uv\), where \(u\) is the product of the
+primes occurring exactly once in \(q\) and outside
+\(2\det(M)B\); \(v\) is squarefull away from that prime set.
+Chinese remaindering is legitimate even when the entries of
+\(\mathbf s\) overlap, since \((u,v)=1\).
+At primes dividing \(u\), the entries \(s_i\) are units.
+Changing variables there and applying Baker's Lemma 8 bounds
+the good part by
+\[
+                  C^{\omega(u)}u^{5/2}(u,m)^{1/2}.
+\]
+The transformed dual value need not equal the unscaled dual
+value; bounding the exceptional gcd by \((u,m)\) removes that
+issue. Since \(m>0\),
+\[
+ \sum_{u\le Y}(u,m)^{1/2}
+ \le\sum_{u\le Y}(u,m)\le Y\tau(m).
+\]
+For the bad part, (B.2) gives at most \(Bv^3\).
+The sum of \(v^{-1/2}\) is
+\(O_{f,\epsilon}(B^\epsilon X^\epsilon)\):
+primes dividing \(2\det(M)B\) contribute their elementary
+Euler factors, and a squarefull number is \(r^2t^3\) with
+\(t\) squarefree, giving a logarithmic bound for the remainder.
+These estimates prove (B.3), even with a smaller power of \(B\).
+No condition on \((m,B)\) or on any \(v_p(m)\) was imposed.
+The zero-target/zero-dual exception in Baker's Lemma 10 cannot
+occur when \(m>0\).
+
+### First-power oscillatory integrals
+
+The exact change of variables behind (4.7) now gives
+\[
+ I_q(\mathbf s,\mathbf c)
+       =B^{-1}I_q(c_1/s_1,\ldots,c_4/s_4).
+ \tag{B.4}
+\]
+In particular the Jacobian is \(B^{-1}\), not the
+\(B^{-2}\) appearing for squared coordinate divisors.
+Let \(J_f=\pi^2/\sqrt{\det M}\).
+Baker's Lemmas 2--5 imply the following deliberately loose bounds:
+\[
+ \begin{aligned}
+ I_q(\mathbf s,0)
+   &=\frac{P^4}{B}\left(J_f+O_L((q/P)^L)\right),\\
+ |I_q(\mathbf s,\mathbf c)|
+   &\ll_L B^L P^5q^{-1}|\mathbf c|^{-L}
+                  &&(\mathbf c\ne0),\\
+ |I_q(\mathbf s,\mathbf c)|
+   &\ll_\epsilon B^2P^{3+\epsilon}q
+                         (1+|\mathbf c|)^\epsilon
+                  &&(\mathbf c\ne0,\ q\le P).
+ \end{aligned}                                                   \tag{B.5}
+\]
+The fixed-form integral estimates apply to real frequencies;
+integrality is not needed after (B.4), just as the source itself
+uses the rational frequencies \(c_i/d_i^2\).
+Since \(|(c_i/s_i)_i|\ge|\mathbf c|/\max s_i\) and
+\(\max s_i\le B\), enlarging the powers of \(B\) gives (B.5).
+All implied constants depend only on the fixed forms, weight,
+chosen decay order and epsilon.
+
+### A complete growing-divisor error budget
+
+Take
+\[
+ \mathbf s=(d,d,e,e),\quad d,e\le H,\quad
+ H=P^{1/1024},\quad C=P^{1/64},\quad Q_0=P^{3/4}.
+\]
+Use weights \(\mu(d)\mu(e)\); they are bounded by one in all
+absolute analytic estimates. Now \(B=d^2e^2\), and
+\[
+ B\le H^4,\qquad
+ \sum_{d,e\le H}B^2\ll H^{10},\qquad
+ \sum_{d,e\le H}B^4\ll H^{18}.
+\]
+From (B.3), a dyadic interval \(R<q\le2R\) has
+\(q^{-4}|S_q|\) sum
+\(\ll B^{2+\epsilon}R^{-1/2+\epsilon}
+(m+|\mathbf c|+1)^\epsilon\).
+Combining this with (B.5) gives the following bounds,
+all including the \(P^{-2}\) in (B.1):
+
+| Terms | Bound before arbitrarily small epsilon losses | Exponent of \(P\) |
+|---|---|---|
+| \(|\mathbf c|>C\), decay order \(L=512\) | \(P^3H^{4L+10}C^{4-L}\) | \(-2.927734375\) |
+| \(0<|\mathbf c|\le C\) | \(P^{3/2}H^{18}C^4\) | \(1.580078125\) |
+| \(\mathbf c=0,\ q>Q_0\), including series extension | \(P^2H^{10}Q_0^{-1/2}\) | \(1.634765625\) |
+| Integral-expansion error at \(\mathbf c=0,\ q\le Q_0\), order \(16\) | \(P^2H^{10}(Q_0/P)^{16}\) | less than \(-1.99\) |
+
+For the first row, sum
+\(\sum_{|\mathbf c|>C}|\mathbf c|^{-L+\epsilon}
+\ll C^{4-L+\epsilon}\); the additional \(q^{-1}\) makes
+the dyadic modulus sum convergent. For the second row,
+the factor \(q\) in (B.5) changes the dyadic sum to
+\(O(P^{1/2+\epsilon})\), and there are \(O(C^4)\) frequencies.
+For the third row, sum the dyadic \(R^{-1/2+\epsilon}\) tail.
+For the last row, bounding \(q/P\) by \(Q_0/P\) already suffices.
+Thus all analytic errors are \(O(P^{1.7})\) after choosing
+epsilon losses sufficiently small. The factor \(c_P-1\)
+is negligible by taking its fixed decay order sufficiently large.
+
+The retained main term is
+\[
+ J_fm\sum_{d,e\le H}
+  \frac{\mu(d)\mu(e)}{d^2e^2}
+          \sum_{q\ge1}q^{-4}S_q((d,d,e,e),0).
+ \tag{B.6}
+\]
+This is an absolute remainder budget for the new lattice.
+It does not use Baker's scalar-squarefree inclusion-exclusion
+or his completed squarefree-point singular series.
+
+### Local normalization and the new Euler factors
+
+Let \(\beta_p(f_{\mathbf s};m)\) be the usual unrestricted
+density of the scaled equation. By (B.3), its additive-character
+series is absolutely convergent and
+\[
+              \sum_{q\ge1}q^{-4}S_q(\mathbf s,0)
+                    =\prod_p\beta_p(f_{\mathbf s};m).
+\]
+This identity is the unrestricted local-count identity in
+Baker's Section 5; the scalar-squarefree Euler product in
+that section is not used.
+
+The lattice Jacobian must be tracked locally as well.
+For \(h>\max_i v_p(s_i)\), the map
+\(\mathbf b\mapsto D_{\mathbf s}\mathbf b\bmod p^h\)
+has kernel \(p^{\sum_i v_p(s_i)}\). Hence the density in
+the original shell with the prescribed coordinate divisibilities is
+\[
+        \gamma_{p,\mathbf s}
+          =p^{-\sum_i v_p(s_i)}\beta_p(f_{\mathbf s};m).
+ \tag{B.7}
+\]
+Multiplying these identities over the primes recovers exactly
+the factor \(B^{-1}\) in (B.6).
+
+For squarefree \(d,e\), a prime occurs with exponents
+\(a,b\in\{0,1\}\) in the two blocks. Write \(\gamma_p^{ab}\)
+for the ambient surface mass with the first block divisible
+by \(p^a\) and the second by \(p^b\). Signed local inversion gives
+\[
+             \beta_p^*(N)=
+          \gamma_p^{00}-\gamma_p^{10}
+                         -\gamma_p^{01}+\gamma_p^{11}.
+ \tag{B.8}
+\]
+This includes the overlap \(p\mid(d,e)\).
+In the original \(F,N\) convention that overlap is
+\[
+ \gamma_p^{11}=
+ \begin{cases}
+ p^{-2}\beta_p(F;N/p^2),&p^2\mid N,\\
+ 0,&p^2\nmid N.
+ \end{cases}                                                     \tag{B.9}
+\]
+It cannot be discarded by assuming \((d,e)=1\).
+Equations (B.7)--(B.9) hold at every prime, including two,
+ramified primes and conductor primes, with unrestricted target
+valuations.
+
+For completeness, the good-prime factors are explicitly
+recomputed. Put \(\varepsilon_i=(-\det A_i/p)\) for
+\(p\nmid2\det A_1\det A_2\). A nondegenerate binary form has
+\(p-\varepsilon_i\) vectors of norm \(a\ne0\), and
+\(p+(p-1)\varepsilon_i-1\) nonzero vectors of norm zero.
+Convolving these two functions over \(\mathbb F_p\), and
+dividing by \(p^3\), gives
+\[
+ \beta_p^*(N)=
+ \begin{cases}
+ 1-\dfrac{2+\varepsilon_1\varepsilon_2}{p^2}
+        +\dfrac{\varepsilon_1+\varepsilon_2}{p^3},&p\nmid N,\\[5pt]
+ 1+\dfrac{\varepsilon_1\varepsilon_2}{p}
+  -\dfrac{2+\varepsilon_1+\varepsilon_2+\varepsilon_1\varepsilon_2}{p^2}
+  +\dfrac{1+\varepsilon_1+\varepsilon_2}{p^3},&p\mid N.
+ \end{cases}                                                     \tag{B.10}
+\]
+Every retained root is nonsingular, so each has \(p^3\) lifts
+per further power. These factors therefore depend on divisibility
+by \(p\), not the size of \(v_p(N)\). At bad primes the exact
+factor is the primitive-block limit (1), equivalently (B.8).
+The finite lifting criterion and uniform density bounds (6)--(7)
+apply without alteration.
+
+### Möbius tails, zero blocks and absolute completion
+
+Perform exact double Möbius inversion only on nonzero binary
+blocks, as in (10). The fixed-binary bound (11) gives
+\[
+                       O_\epsilon(N^{1+\epsilon}/H)
+ \tag{B.11}
+\]
+for the large-block-gcd tails, by summing
+\(O(N/g^2)\) vectors in a block with gcd multiple of \(g>H\)
+and applying (11) to the other positive norm.
+
+The unrestricted circle counts include a zero block.
+For first block zero the \(d\)-sum costs at most \(H\), and
+\(\sum_{e^2\mid N}r_{Q_2}(N/e^2)\ll_\epsilon N^\epsilon\).
+Consequently removing both possible zero blocks costs
+\(O_\epsilon(HN^\epsilon)\); both cannot vanish when \(N>0\).
+Individual-coordinate axes remain included.
+
+The absolute genus/local moment argument in (15)--(19), with
+moment \(1/2\), depends on local lattice masses, not on the
+chosen theta estimate. It therefore applies to (B.6):
+\[
+ \sum_{d,e\ge1}\mu(d)^2\mu(e)^2(de)^{1/2}E_{d,e}(N)
+                    \ll_\epsilon N^{1+\epsilon}.
+\]
+Here \(E_{d,e}(N)\) is the nonnegative real-times-local main
+coefficient for the scaled lattice in the original convention.
+Thus completing either divisor sum costs
+\(O_\epsilon(N^{1+\epsilon}H^{-1/2})\).
+This absolute moment includes the overlap (B.9);
+no division by a possibly zero local density is used.
+Signed completion gives (B.8), rather than Baker's
+coordinate-squarefree factors.
+
+Finally clear the initial factor two. At odd primes the
+equations \(2F=2N\) and \(F=N\) have the same density.
+At two the former has twice the density: reduction from
+modulo \(2^h\) to modulo \(2^{h-1}\) gives 16 lifts,
+against the normalization factor 8.
+This applies with every divisibility/primitive-block condition.
+Together with
+\(J_f=\pi^2/\sqrt{\det A_1\det A_2}\) and \(m=2N\),
+the total main term becomes
+\[
+ \frac{4\pi^2N}{\sqrt{\det A_1\det A_2}}\prod_p\beta_p^*(N).
+\]
+The largest pre-epsilon error is the completion
+\(N^{1-1/4096+\epsilon}\), since \(H\asymp N^{1/2048}\).
+Choosing all epsilon losses sufficiently small proves the
+conservative full-shell bound
+\[
+ R^*(N)=JN\prod_p\beta_p^*(N)+O_{Q_1,Q_2}(N^{1-1/16384}).
+ \tag{B.12}
+\]
+All target valuations and all overlaps between the two divisors
+are included.
+
+### What this adaptation establishes historically
+
+The new lattice is not a literal instance of Baker's squared
+coordinate lattice. Equations (B.2)--(B.5) give the needed
+first-power reconstruction, and (B.7)--(B.10) replace his
+squarefree-point Euler factors. The analytic input and the
+proof strategy are classical; the modification is short and
+uses no new coefficient estimate. It is reasonable to describe
+this as a short adaptation of a published convergent-sieve proof,
+rather than an immediate application of his stated Theorem 1.
+Whether someone previously printed this exact adaptation remains
+a separate bibliographic question.
+
+In particular, an unspecified-power-saving general two-block
+theorem, qualitative class-obstruction disappearance and genus
+invariance alone do not support a strong claim of a new analytic
+breakthrough. The sharper \(7/8+\epsilon\) error, explicit local
+classification and exact exception theorems must be evaluated
+on their own statements and arithmetic content.

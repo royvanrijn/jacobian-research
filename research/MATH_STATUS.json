@@ -9227,7 +9227,7 @@
         "The primitive x^2+14y^2 binarysumset isexactlyclassifiedthrough2^24:118actualadmissibleexceptions,max8876, with2507shortanchors coveringallpositivecases and118exhaustivenegatives. Globalexceptioncompleteness remainsopen. Ramifiedcoordinateidentities switchprincipal/class-two forms withgcdguards; 7M liesinP0+P0 exactlywhenM liesinU2+U2.",
         "For discriminant-56, individualclassfailures are a pointwise lower-order additive term: R_L-R_P<<N J_-56(N)/log^(5/4)N uniformlyallN>=3, henceR_P/R_L=1+O(log^(-1/4)N) on every sufficientlylarge49-admissibletarget. The proof usesathin-square envelope, exactuniformCRT, self-containedSelbergoptimization andfixedAPMertens. Thistransfersanyfuturegenusleadingasymptotic, butdoesnotcomputeone. The prime-discriminantcounttheorem also dropsitsredundantodd-class-numberhypothesis viaaclassicalfractionalideal proof.",
         "Discriminant-7 now has the exact binary identity P+P={N>=2:49 not dividingN} minus{7,77,203}; its split core has exceptions11,29. Complete finite/infinite quaternionic sieve certificates and exceptional-quotient descent establish global completeness, with at leastN^(2/3)/20000 ordered value pairs on every eligibleN>=2^69. Internal proof review and byte-identical finite replay do not assert external review, formal verification or priority.",
-        "Targeted historical comparison credits the full Gaussian primitive-block asymptotic to a short Brudern-Fouvry1994 deduction, explicit Gaussian existence to Schinzel2013 and eventual discriminant -20 existence to Plaksin. No exact arbitrary-binary-pair antecedent was identified in the inspected primary corpus; historical priority remains open, with named unread leads and genuine database-access limits. This changes the novelty scope, not the mathematical theorem or its assurance."
+        "Targeted historical review verifies that the full arbitrary-binary-pair separately primitive power-saving coordinate asymptotic and eventual local-global theorem are short deductions from Baker2006 uniform analytic lemmas/proofs plus elementary tails/local completion. Gaussian cases have still earlier antecedents. No standalone novelty claim for central generality alone is warranted; sharper7/8, explicit local arithmetic and exact exceptions require separate priority checks. The mathematical theorem and assurance remain unchanged."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -88911,7 +88911,7 @@
           },
           {
             "path": "arithmetic/primitive_norm_quaternary_source_ledger.json",
-            "sha256": "8892b0780bbf9e50940b5a4af5eb4cb4e89ba660788ee34863fd642ca9ac24a4",
+            "sha256": "438913f832ceac80073e8d220a2e38de21c4d3f2189a206c214c732123eb80b8",
             "locator": "Exact v1 source, checksum, statements and application scope"
           }
         ],
@@ -88948,12 +88948,12 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+            "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
             "locator": "Mobius truncation equations10-14; Absolute completion equations15-20; real-volume normalization"
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "31012f4cee8d9cdd318a83f3bc9107a76f2c597f45e2db682e0460c3aa6d2451",
+            "sha256": "6628ac74ec8d61c62e5fa0b55e0bd7df59241fbd2db51cfece41bb16940b3fef",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           }
         ],
@@ -89120,7 +89120,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+            "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
             "locator": "Appended named declarations pending review; existing mapped claims do not acquire these conclusions"
           },
           {
@@ -89265,7 +89265,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+            "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
             "locator": "Exact dyadic shell formulas29-31 and modular/Sturm proof"
           }
         ],
@@ -89306,7 +89306,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+            "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
             "locator": "Equations32-36; class number one double coset, dyadic factorization and spectral hypothesis checks"
           },
           {
@@ -89543,7 +89543,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+            "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
             "locator": "Equations20b-20f: exact mixed target ratios, Mertens lower bound, ideal cubic moment and Holder conversion"
           },
           {
@@ -89808,7 +89808,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "31012f4cee8d9cdd318a83f3bc9107a76f2c597f45e2db682e0460c3aa6d2451",
+            "sha256": "6628ac74ec8d61c62e5fa0b55e0bd7df59241fbd2db51cfece41bb16940b3fef",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -89822,7 +89822,7 @@
       {
         "id": "SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON",
         "title": "Targeted primary-source comparison of the separately primitive two-block theorem",
-        "scope": "Exact arbitrary-binary-pair comparison, including nonprincipal classes, nonfundamental orders, target valuations and a local-density coordinate asymptotic. Brudern-Fouvry1994 Theorem3 already yields the full Gaussian primitive-block power-saving asymptotic by a short deduction; Schinzel2013 p111 directly states full eventual Gaussian existence; Plaksin gives all eventual -8 and -20 existence by explicit transformations and gcd deletion. Earlier class-mixing mechanisms and squarefree-coordinate theorems are credited with their precise interfaces. No full arbitrary-pair antecedent or short deduction was identified in the inspected primary corpus. Priority remains unresolved: actual MathSciNet/zbMATH result sets were unavailable and named uninspected leads remain. Exact -8 is a separate candidate, not a priority certificate.",
+        "scope": "Targeted proof-level historical comparison finds a short Baker2006 Sections4/6 first-power adaptation yielding the FULL raw arbitrary-binary-pair separately primitive coordinate asymptotic with a positive power saving, all positive targets/valuations, elementary block-gcd tails and local completion. A radial weight and zero-block bound complete the full-shell deduction. Gaussian results have earlier Brudern-Fouvry/Schinzel antecedents; Plaksin gives eventual -8/-20 existence. Thus central general existence/unspecified-power-saving scope is a classical deduction, insufficient alone as a standalone novelty claim. Sharper7/8, explicit local arithmetic and exact exceptions remain separate priority questions. Named access limits remain, without weakening the positive deduction found.",
         "kind": "source",
         "status": "proved",
         "topic": "arithmetic",
@@ -89831,7 +89831,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "31012f4cee8d9cdd318a83f3bc9107a76f2c597f45e2db682e0460c3aa6d2451",
+            "sha256": "6628ac74ec8d61c62e5fa0b55e0bd7df59241fbd2db51cfece41bb16940b3fef",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -89948,9 +89948,14 @@
             "path": "arithmetic/sources/estermann1962-firstpage.gif",
             "sha256": "3557b6aacfa264878eb66bb58298f66deb05c104c86f35c51dd4c18fe85ce328",
             "locator": "Printedp425 only: main problem(1.1)-(1.2), fixed nonzero coefficients and target, mixed-sign coefficients, growing positive boxes; no separate block gcd."
+          },
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
+            "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
+            "locator": "Explicit first-power adaptation of Baker, B.1-B.12: lattice changes, overlap, target dependence, full error budget and recomputed Euler factors"
           }
         ],
-        "assessment": "Actual primary theorem statements, restrictions and short deductions inspected internally. The targeted corpus narrows the possible contribution; no new theta technique, exhaustive historical search, external human review or priority certification is claimed."
+        "assessment": "Primary analytic lemmas, their displayed scaling proofs and the complete first-power/shell adaptation checked internally. Conservative saving1/16384 recorded; no claim Baker printed the exact designated-block statement. No new theta technique, external human review or first-result certification."
       },
       {
         "id": "EXT-PRIMITIVE-NORM-MILNE-ANT308",
@@ -90917,24 +90922,24 @@
       },
       {
         "id": "GAP-PAIR-PRIMITIVE-HISTORICAL-PRIORITY",
-        "title": "Historical priority of the arbitrary separately primitive binary-pair theorem",
+        "title": "Historical priority of remaining quantitative and exact primitive-norm refinements",
         "kind": "gap",
         "status": "open",
-        "scope": "Determine whether the exact arbitrary positive binary-pair theorem, or a short deduction covering every primitive-local target with a coordinate asymptotic, already occurs in the remaining primary genealogy. The inspected corpus settles classical Gaussian and discriminant -20 overlaps but does not certify priority. This is a publication/history obligation, not a missing premise of the proved mathematical theorem.",
+        "scope": "The central arbitrary-pair separately primitive power-saving asymptotic is a checked short classical Baker deduction. Determine priority only for the remaining sharper7/8 bound, explicit conductor/ramification/local tables and exact exception classifications. Named primary-source and database-access limits remain. This historical workflow obligation is not a missing premise of any mathematical theorem.",
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "31012f4cee8d9cdd318a83f3bc9107a76f2c597f45e2db682e0460c3aa6d2451",
+            "sha256": "6628ac74ec8d61c62e5fa0b55e0bd7df59241fbd2db51cfece41bb16940b3fef",
             "locator": "Targeted historical review: exact comparison, verified overlaps, access limitations and qualified verdict"
           },
           {
             "path": "arithmetic/primitive_norm_quaternary_source_ledger.json",
-            "sha256": "8892b0780bbf9e50940b5a4af5eb4cb4e89ba660788ee34863fd642ca9ac24a4",
+            "sha256": "438913f832ceac80073e8d220a2e38de21c4d3f2189a206c214c732123eb80b8",
             "locator": "targeted_two_block_review: named unread leads and actual database access"
           }
         ],
         "dependency_coverage": "partial",
-        "assessment": "No exact arbitrary-pair antecedent identified in the inspected primary corpus; no exhaustive negative search or first-result claim. Actual MathSciNet/zbMATH result sets unavailable.",
+        "assessment": "Central standalone novelty claim narrowed by a positive classical deduction; priority of remaining refinements unresolved.",
         "topic": "arithmetic",
         "gap_kind": "workflow",
         "evidence_type": "workflow_obligation",
@@ -139579,7 +139584,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+          "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
           "locator": "Theorem2; equations10-20a and Sharper power saving from Waibel: squarefree scaled-form invariant comparison and target-gcd averaging"
         },
         "dependency_coverage": "partial"
@@ -139593,7 +139598,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+          "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
           "locator": "Two quadratic splitting kernels: H=ker chi1, kappa=2"
         },
         "dependency_coverage": "partial"
@@ -139668,7 +139673,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+          "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
           "locator": "Formula29 modular identities from complete finite Sturm coefficient lists; formula30 inclusion-exclusion"
         },
         "dependency_coverage": "partial"
@@ -139684,7 +139689,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+          "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
           "locator": "CorollaryPairPrimitiveAngle23-28; uniform positive finite-sieve tail and fixed harmonic theta estimates"
         },
         "dependency_coverage": "partial"
@@ -139825,7 +139830,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+          "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
           "locator": "Equations20b-20i: local ratios, Mertens, corrected-Henriot fractional moments/Holder and sharp upper-sieve scale"
         },
         "dependency_coverage": "partial"
@@ -139839,7 +139844,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+          "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
           "locator": "Order-specific class number one, adelic quotient, strong-approximation/JL bridge and equations32-36"
         },
         "dependency_coverage": "partial"
@@ -139946,7 +139951,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "31012f4cee8d9cdd318a83f3bc9107a76f2c597f45e2db682e0460c3aa6d2451",
+          "sha256": "6628ac74ec8d61c62e5fa0b55e0bd7df59241fbd2db51cfece41bb16940b3fef",
           "locator": "Plaksin specialization, finite local prime-unit test and elementary O(N^(1/2+epsilon)) gcd deletion"
         },
         "dependency_coverage": "partial"
@@ -140513,7 +140518,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+          "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
           "locator": "AdditiveClassDisappearance CG.1-CG.3; GenusInvariantConvolution CG.4; determinant and primitive-block isometries; direct genus cancellation"
         }
       }
@@ -165081,7 +165086,7 @@
             {
               "path": "arithmetic/sources/baker-squarefree-points-2006.pdf",
               "sha256": "7ce84242c84b800711ede223eaafab27668b93589f360347f2829671e5c98767",
-              "locator": "Definition1.2 printedpp101-102: product of individual coordinate Mobius functions, vanishing on coordinate hyperplanes. Theorem1 p104: arbitrary fixed nonsingular quadratic forms in n>=4 and nonzero varying target; Theorem5 local positivity. No general graph/gcd interface."
+              "locator": "Definition1.2 printedpp101-102: product of individual coordinate Mobius functions, vanishing on coordinate hyperplanes. Theorem1 p104: arbitrary fixed nonsingular quadratic forms in n>=4 and nonzero varying target; Theorem5 local positivity. No general graph/gcd interface. Proof-level comparison also Section4pp112-114,equations4.7-4.12,Lemmas9-10 and Section6equations6.2-6.6."
             }
           ],
           "uses": [
@@ -165100,11 +165105,19 @@
               "nodes": [
                 "SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON"
               ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
+              "locator": "Explicit first-power adaptation of Baker,B.1-B.12; published proofs adapted to new lattice, not literal Theorem1",
+              "role": "mathematical_input",
+              "nodes": [
+                "SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON"
+              ]
             }
           ],
           "resource_type": "paper",
           "verification": "source_read",
-          "verification_basis": "Actual primary theorem, definitions and relevant sieve setup inspected. The explicit Q=x^2+16y^2 local-range counterexample in the review prevents a direct specialization claim. Primary comparison inspected internally; analytic proofs imported rather than independently reproved. No historical-priority certification."
+          "verification_basis": "Actual primary definitions, Theorem1, Section4pp112-114 equations4.7-4.12/Lemmas9-10 and Section6equations6.2-6.6 inspected. Full first-power block-divisor adaptation, radial shell weight and zero-block correction checked internally in the canonical review; conservative saving1/16384. No claim the exact two-block statement appears verbatim; no external human review or priority certification."
         },
         {
           "id": "EXT-PAIR-PRIMITIVE-TARGETED-BREDIKHIN-1965",
@@ -165465,7 +165478,7 @@
         {
           "id": "EXT-PAIR-PRIMITIVE-TARGETED-ESTERMANN-1951-FIRSTPAGE",
           "title": "On Sums of Squares of Square-Free Numbers",
-          "citation": "T.Estermann, On Sums of Squares of Square-Free Numbers, Proc.London Math.Soc.(2)53(1951),125-144; opening page received/read1948",
+          "citation": "T.Estermann, On Sums of Squares of Square-Free Numbers, Proc.London Math.Soc.(2)53(1951),125-137; opening page received/read1948",
           "identifiers": {
             "doi": "10.1112/plms/s2-53.2.125"
           },
@@ -241678,7 +241691,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+          "sha256": "ba4cc6132e6fdf9d7d3657c62432920d876e447f851f23521ea77180826852f5",
           "claims": [
             "ARITH-PAIR-PRIMITIVE-QUATERNARY-LOCAL-GLOBAL",
             "ARITH-PAIR-PRIMITIVE-ANGULAR-BALANCE",
@@ -241849,7 +241862,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_quaternary_source_ledger.json",
-          "sha256": "8892b0780bbf9e50940b5a4af5eb4cb4e89ba660788ee34863fd642ca9ac24a4",
+          "sha256": "438913f832ceac80073e8d220a2e38de21c4d3f2189a206c214c732123eb80b8",
           "claims": [
             "EXT-ROUSE-QUATERNARY-UNIFORM-CUSP",
             "ARITH-PRIMITIVE-NORM-CLASS-DISAPPEARANCE"
@@ -242328,7 +242341,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "31012f4cee8d9cdd318a83f3bc9107a76f2c597f45e2db682e0460c3aa6d2451",
+          "sha256": "6628ac74ec8d61c62e5fa0b55e0bd7df59241fbd2db51cfece41bb16940b3fef",
           "claims": [
             "SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON",
             "ARITH-D8-CLASSICAL-PRIME-COORDINATE-SUBCASES",

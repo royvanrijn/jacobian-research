@@ -6,14 +6,9 @@ This index maps the retained current research and paper sources to graph stateme
 
 Generated navigation, tooling guides and immutable deposited archives are excluded from this current-source inventory. Archived publication integrity is checked separately.
 
-**Inventory:** 2463/2463 documents; 3164 explicit source declarations indexed. 2 coverage issues.
+**Inventory:** 2463/2463 documents; 3164 explicit source declarations indexed. Current mappings pass.
 
 [Dependency graph](DEPENDENCIES.md) · [Exact scopes](SCOPES.md) · [Maintenance guide](DEPENDENCY_GUIDE.md)
-
-## Coverage issues
-
-- coverage document outside current inventory: arithmetic/sources/estermann1951-firstpage.png
-- coverage document outside current inventory: arithmetic/sources/estermann1962-firstpage.gif
 
 | Source | Role | Statements | Mapped claims / gaps | Assessment |
 |---|---|---|---|---|

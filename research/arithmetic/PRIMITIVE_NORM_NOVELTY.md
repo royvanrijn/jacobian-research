@@ -6,10 +6,14 @@ retain the earlier comparison of quantitative corollaries and the exact
 discriminant -8 classification. This does not establish priority for
 the separate exact -7 or -11 classifications.
 
-The general proof is best presented as a structured deduction from
-classical quaternary estimates and a known coprimality sieve. No exact
-published antecedent for its full arbitrary-binary-pair statement was
-located, but that does not make the method or analytic estimates new.
+The general theorem is a structured deduction from classical estimates.
+The proof-level comparison below shows that its full arbitrary-pair
+power-saving asymptotic already follows by a short adaptation of
+Baker 2006, Sections 4 and 6, together with elementary two-block
+Möbius tails and local-series completion. This is stronger historical
+overlap than a matching special case. The exact designated-block
+statement was not found printed there, but its central analytic
+conclusion should not carry a standalone novelty claim.
 All eventual -8 existence, including both strong cores, also follows
 from Plaksin by the parity transformation below. The exact all-target
 classification is a separate candidate contribution.
@@ -59,7 +63,7 @@ phrase separately primitive.
 | Plaksin, 1984/1985, two binary forms with prime arguments | Main theorem, printed p.562, equations (17)--(18); the second form has fundamental discriminant. Only the first pair is constrained to positive primes; the free pair is unrestricted. | Genuine short primitive-existence deductions include the complete eventual discriminant -20 range. It does not state the arbitrary two-block coordinate asymptotic. |
 | Bredikhin, 1965; Bredikhin--Linnik, 1966; A.I.Vinogradov, 1967 | The actual formal results concern prime plus one quadratic form or ideal norm. The 1966 and 1967 papers advertise a broader well-distributed-sequence mechanism. | Important prior genus/class-mixing methods, including a primitive-ideal specialization of the 1966 good-trajectory lemma. They do not state the required two-block main term and error; see the precise interface below. |
 | Podsypanin, 1975 | Theorem 1, printed p.459, for arbitrary positive forms of rank at least four; rank-four error \(O(N^{19/20+\epsilon})\). Theorem 2, p.487, gives local positivity. | The restriction is squarefreeness of each scalar coordinate, not either designated block gcd. Its exact local range can omit infinitely many represented two-block targets. |
-| Baker, 2006, The values of a quadratic form at square-free points | Definition (1.2), pp.101--102; Theorem 1, p.104, arbitrary fixed nonsingular forms in at least four variables with nonzero varying target. | A close arbitrary-form convergent-sieve antecedent, but again each coordinate is squarefree. There is no stated arbitrary coprimality-graph interface. |
+| Baker, 2006, The values of a quadratic form at square-free points | Definition (1.2), pp.101--102; Theorem 1, p.104, arbitrary fixed nonsingular forms in at least four variables with nonzero varying target. | The main theorem has different restrictions, but Sections 4 and 6 yield the full arbitrary-pair two-block power-saving asymptotic by the short checked adaptation below. |
 | Pall, 1949, Representation by Quadratic Forms | Definition on p.346; Theorem 2 p.349; binary embedding discussion p.353. | Primitive means gcd of maximal minors. For a represented number this is whole-vector primitivity, not two prescribed block gcds. |
 | Alaca--Pehlivan--Williams, 2014, sum of two binary forms | Definition on p.1396; Theorem 1.1, pp.1397--1399. | It counts unrestricted four-tuples and gives reductions/evaluations for selected coefficient families. It has no designated gcd condition or arbitrary-pair primitive asymptotic. |
 | [Jancevskis, 2009](https://pcwww.liv.ac.uk/~karpenk/JournalUDT/vol04/no2/8Jancev09.pdf), Waring with convergent sieve sequences | Theorem 1, pp.133--134, under \(s>2^k\), with independent scalar sequence restrictions. | For squares this requires at least five variables and does not impose joint block gcds. |
@@ -214,21 +218,38 @@ do not even cover the full local target set for this allowed
 nonmaximal-order pair. A new sieve adaptation could work; an
 application of their stated theorems is insufficient.
 
-A more flexible deduction would first change each block basis by a
-fixed element of \(\mathrm{SL}_2(\mathbb Z)\), using CRT to arrange coordinate-unit local
-solutions at the finitely many bad primes, and then sieve out common
-block divisors. Such basis changes avoid the preceding example's
-particular squarefree-coordinate obstruction; that example does not
-exclude this strategy. The necessary uniform tail is still missing
-from this short deduction. The available elementary estimate is
-\(O_\epsilon(N^{1+\epsilon}/P)\), rather than \(O(N/P)\) uniformly in N.
-A fixed finite cutoff P therefore does not make the tail smaller
-than the fixed-form squarefree main term as N tends to infinity.
-A growing cutoff needs coefficient/progression uniformity beyond
-the cited fixed-form statements. Thus neither the basis change
-nor finite local filtering alone proves the general existence
-corollary. This records a gap in the proposed deduction, not an
-impossibility theorem for adapting those classical proofs.
+Fixed block changes of basis can repair the finitely many
+squarefree-coordinate local obstructions in that example. Thus the
+example excludes a literal use of the fixed-form theorem, rather
+than every indirect deduction. A fixed-cutoff argument alone fails
+with the tail \(O_\epsilon(N^{1+\epsilon}/P)\).
+The polynomial estimates in Baker's actual proof allow a growing
+cutoff and repair this issue, as written out next.
+
+### The general theorem has a short, explicit Baker adaptation
+
+Baker's main Theorem 1 imposes a different restriction. A literal
+substitution into its squared-coordinate divisor family is invalid.
+The complete replacement is written in
+[the explicit first-power proof](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md#explicit-first-power-adaptation-of-baker),
+equations (B.1)--(B.12).
+
+The proof reconstructs Lemmas 9--10 for \((d,d,e,e)\), including
+common primes, two and all target valuations. It tracks the
+first-power Jacobian, gives a full exponent budget with
+\(H=P^{1/1024}\), and replaces the squarefree-point Euler product
+by the exact primitive-block factors. A fixed radial smooth
+weight equals one on the full shell, so the conclusion concerns
+raw coordinate counts, with zero blocks separately removed.
+The conservative resulting saving is \(1/16384\).
+
+The underlying estimates and strategy are classical. This is a
+short proof adaptation, not an immediate application of Baker's
+printed Theorem 1 and not a claim that he printed the two-block
+statement. Under the review's standard, it substantially weakens
+a standalone novelty claim for generality and separate
+primitiveness alone. The sharper \(7/8+\epsilon\) bound, explicit
+local arithmetic and exact exceptions require their own comparisons.
 
 ### Search coverage, access limitations and verdict
 
@@ -262,17 +283,18 @@ The precise first-page inspections and retained images are recorded
 in the ledger. None of these sources is excluded merely from a title
 or an inaccessible search result.
 
-**Targeted verdict.** No exact arbitrary-binary-pair theorem, or
-verified short published-theorem deduction with all its hypotheses,
-was identified in the primary corpus inspected here. The Gaussian
-asymptotic is already a short 1994 deduction; Gaussian existence is
-explicit in Schinzel, and the full eventual -20 existence follows
-from Plaksin. The remaining candidate contribution is the explicit
-arbitrary-form two-block asymptotic and its quantitative arithmetic
-consequences. This is a useful application of classical estimates,
-with historical priority still unresolved. The review supports that
-narrow scope; it does not certify a first-result claim or resolve
-the remaining bibliographic access limits.
+**Targeted verdict.** The full arbitrary-binary-pair power-saving
+asymptotic is obtainable by the short Baker adaptation above. Gaussian
+existence and its asymptotic have still earlier antecedents, and
+Plaksin also gives the full eventual -20 existence result. Thus the
+general separately primitive theorem alone is insufficient as the
+central novelty claim of a standalone paper. The potential remaining
+contribution is the sharper quantitative error, explicit ramification
+and conductor criteria, and exact exception classifications.
+Genus invariance is an immediate consequence, rather than a separate
+analytic breakthrough. Priority for those refinements remains
+unresolved; the remaining access limits do not erase the positive
+classical deduction already found.
 
 ## Assessment of each claim
 
@@ -281,7 +303,7 @@ the remaining bibliographic access limits.
 | Primitive norm prime-factor criterion | Classical quadratic ideal factorization; Euclidean argument in the class-one cases | Classical ingredient. |
 | Full -8 shell and whole-vector primitive counts | Liouville 1860; Deutsch 2004/2005 and 2008 | Explicitly classical, including the whole-vector dyadic obstruction 16. |
 | Möbius truncation, large-factor tail and singular-series completion | Brüdern--Fouvry 1994 Theorem 3; Brüdern 2014 Theorem 2 and Lemmas 2,4,5 | Classical architecture; the full Gaussian two-block power-saving asymptotic is already a short deduction. |
-| Arbitrary fixed binary pair, each block primitive, every locally admissible target | Rouse/Waibel coefficient estimates plus the two-block sieve; no exact statement antecedent located | A useful application/deduction, with priority unresolved; no new theta theorem. |
+| Arbitrary fixed binary pair, each block primitive, every locally admissible target | Short first-power adaptation of Baker 2006, Sections 4 and 6, plus elementary two-block tails and local completion | The central power-saving theorem is a classical deduction; no standalone novelty claim for this scope alone. |
 | All imaginary quadratic orders and invariance within fixed genera | The preceding arbitrary-binary-pair theorem and integral local isometries | Explicit class-group consequence, with no class-number restriction; an immediate corollary, not a new analytic input. |
 | Power saving | Waibel 2021 v2, published 2022, is stronger than the previously used Rouse bound | Now improved to \(O_\epsilon(N^{7/8+\epsilon})\), by specialization and target-gcd averaging. |
 | Linear same-field coordinate lower bound and mixed-field envelope | Exact local factors plus fixed-character Mertens | Immediate consequences once the asymptotic is proved. |
@@ -396,7 +418,7 @@ Schinzel's On Sums of Four Coprime Squares (2013), cited by Brüdern, goes furth
 
 Rouse's 2018 preprint/2019 article gives uniform all-index coefficient estimates and eventual representation under whole-vector primitive local solubility. That primitivity means p does not divide all four coordinates. It does not impose both binary gcd conditions. Thus Rouse's representation theorem is not by itself an antecedent implying the desired statement. The two-block sieve is required.
 
-Waibel improves the usable imported estimate, as proved in the canonical source. The strongest defensible description is therefore a separately primitive deduction from classical quaternary estimates, with a new application/summation if no exact antecedent is identified. It should not be presented as a new general theta estimate.
+Waibel improves the usable imported estimate, as proved in the canonical source. Baker already supplies a weaker power-saving route by the checked adaptation above. The present sharper exponent is a specialization and summation of classical estimates; it is not a new general theta estimate.
 
 ### 3 Browning--Heath-Brown geometric sieve
 
@@ -680,14 +702,13 @@ No general every-target distinct-value leading asymptotic was identified in the 
 
 ## Publication scope
 
-For a paper centered on the arbitrary-binary-pair theorem, the
-candidate contribution is its precise general separately primitive
-statement, quantitative error and arithmetic consequences. The
-targeted comparison above controls that claim: Gaussian existence
-and the Gaussian asymptotic have classical antecedents. Present
-the theorem as a deduction from classical estimates, with historical
-priority unresolved; the absence of an identified exact match is
-not a first-result certificate.
+A paper cannot responsibly lead with the general separately primitive
+existence or unspecified-power-saving asymptotic as its central new
+analytic theorem: the checked Baker adaptation already supplies it.
+A self-contained contribution would have to identify and support
+the additional content, such as the sharper quantitative bound,
+a useful explicit local classification or an exact exception theorem.
+The genus-invariant conclusion is a corollary of the classical route.
 
 A separate paper centered on the exact -8 theorem could lead with
 its two strong-core identities if historical checking continues to
@@ -707,8 +728,8 @@ described as deductions, not as independent new analytic methods.
 
 A cautious contribution sentence is:
 
-> We deduce a pair-primitive local-global asymptotic for fixed positive
-> binary quadratic forms from classical quaternary estimates, and give
+> Using classical convergent-sieve and theta estimates, we obtain an
+> explicit pair-primitive local criterion and quantitative refinements, and give
 > a complete effective proof of the exact primitive discriminant -8
 > norm sumset, including its two strong-core identities.
 
@@ -742,7 +763,8 @@ fractional-moment lower bound, and upper bound were separately
 reread internally after integration. They are written deductions;
 a finite experiment is not used to prove the analytic uniformity.
 
-The negative novelty finding is limited: **no exact antecedent was
-identified**, rather than a claim that none exists. No exhaustive
-bibliographic database review, external human assessment, formal
-verification or publication priority is asserted.
+The review found a positive classical deduction for the general
+two-block asymptotic. It did not identify an exact printed designated-block
+statement, and it does not certify priority of the remaining quantitative
+or exact arithmetic refinements. No exhaustive bibliographic database
+review, external human assessment or formal verification is asserted.
