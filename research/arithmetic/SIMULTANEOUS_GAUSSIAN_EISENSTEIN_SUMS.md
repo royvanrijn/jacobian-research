@@ -11,7 +11,7 @@ S12 below is its weaker macroscopic existence consequence.
 The every-target assertion S12 is **open in this work**. Unconditional results
 include semigroup-scale density-one coverage for fixed power exponents above
 \(1/3\), full unweighted variance in fixed-width balanced windows and in
-power windows with \(\theta>9/10\),
+power windows with \(\theta>5/6\),
 positive-proportion coverage for every fixed positive power exponent,
 a uniform local sieve margin,
 a large-prime tail bound, averaged coordinate counts before and after the full
@@ -57,7 +57,7 @@ also gives a target-dependent unweighted asymptotic for almost all compatible
 targets when \(H=\lambda X\), with fixed \(0<\lambda\le1\). The
 [power-window theorem VqPower](PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md)
 now gives the full main term \(c_{12}^2H(\log X)^{-3/2}S_{12}(N)\) for
-\(H=X^\theta\), \(9/10<\theta<1\), with a normalized mean-square
+\(H=X^\theta\), \(5/6<\theta<1\), with a normalized mean-square
 saving \((\log X)^{-1/4}\). The initial sharp four-form energy target
 \(\theta=99/100\) is therefore resolved. These are different statements
 from the weighted coordinate average A12G. The separate
@@ -905,9 +905,9 @@ further pointwise information. The local margin, sharper large-prime tail, and a
 counts before and after the full sieve have complete arguments with the stated
 ideal-counting input. The linked general theory now gives unweighted
 semigroup-scale density one for \(\theta>1/3\), fixed-width variance,
-quantitative full-count variance for \(9/10<\theta<1\), and exact first
+quantitative full-count variance for \(5/6<\theta<1\), and exact first
 moments in every fixed power window. The sharp four-form energy is proved in
-that upper range; it remains an obligation for \(0<\theta\le9/10\). The required
+that upper range; it remains an obligation for \(0<\theta\le5/6\). The required
 every-target binary estimates, an effective cutoff, and the uniform
 semigroup-scale family conjecture remain open here. D12Power supplies
 power-saving exceptions for the lower count at \(H=X^{99/100}\); a

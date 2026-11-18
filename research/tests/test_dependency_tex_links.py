@@ -7,7 +7,7 @@ import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from dependency_tex_links import tex_proof_link_report, tex_proof_links
+from dependency_tex_links import tex_proof_link_report, tex_proof_links, tex_proof_registration_issues
 
 
 class TexProofLinksTests(unittest.TestCase):
@@ -57,6 +57,25 @@ Use Lemma~\ref{lem:input}.
         self.assertEqual(link["source_path"], "paper/main.tex")
         self.assertIn("line 5", link["locator"])
         self.assertEqual((self.data, self.nodes), baseline)
+
+    def test_resolved_reference_still_requires_registration_to_its_own_route(self):
+        link = {"source_path": "p/main.tex", "locator": "line 5",
+                "conclusion": "MOM-MAIN", "dependency": "MOM-INPUT"}
+        graph = self.graph()
+
+        def issues():
+            return [item["kind"] for item in tex_proof_registration_issues(self.data, graph, [link])]
+
+        self.assertEqual(issues(), ["unregistered_proof_implication"])
+        record = dict(link)
+        self.data["graph"]["proof_links"] = {"links": [record]}
+        self.assertEqual(issues(), ["missing_proof_route"])
+
+        record["routes"] = ["PROVE-MAIN"]
+        graph.rules["PROVE-MAIN"] = {"conclusion": "MOM-OTHER", "premises": ["MOM-INPUT"]}
+        self.assertEqual(issues(), ["proof_route_missing_prerequisite"])
+        graph.rules["PROVE-MAIN"]["conclusion"] = "MOM-MAIN"
+        self.assertEqual(issues(), [])
 
     def test_forward_reference_and_included_proof_body(self):
         self.write("p/main.tex", r"""\documentclass{article}

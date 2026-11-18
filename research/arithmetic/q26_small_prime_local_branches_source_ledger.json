@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md",
+  "assurance": "Internal written local-solubility proof and exact coefficient/Sturm replay. Root and Hurwitz completed separate full audits and exact final replays; Hurwitz also used a separate rational Sturm implementation. No formal or external assurance claim.",
+  "claims": {
+    "Q2": "The full integral chart G(X,2V) reduces exactly to X^11(X+1), giving a unique X=1mod2 for every V in Z2 and infinitely many good Q2 models.",
+    "Q3": "The full chart 3^18*G(X/9,9V) is integral and reduces exactly to X^11(X+1), giving a unique X=2mod3 for every V in Z3 and infinitely many good Q3 models. Unit V gives valuations v3(t)=-2,v3(s)=-4.",
+    "real": "The leading infinity polynomial is squarefree of degree12 and has exactly two simple real roots by a complete exact Sturm chain. Both yield real implicit branches and infinitely many good real models.",
+    "normalization_guard": "The naive degree144 projective plane closure always contains the singular rational point(1:0:0), so primitive homogeneous residue exclusion cannot settle local normalization solubility. The new positive charts give genuine smooth branches."
+  },
+  "external_sources": [
+    {
+      "id": "milne-simple-root-hensel",
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "version": "Version3.00, 11February2008",
+      "primary_url": "https://www.jmilne.org/math/CourseNotes/ANT300.pdf",
+      "path": "research/arithmetic/sources/milne-ant300.pdf",
+      "direct_read": true,
+      "locator": "Proposition7.31, printedp113",
+      "application": "For every fixed V in Zp, the displayed polynomial in X has a simple residue root; Hensel gives the unique lift and unit derivative.",
+      "reading_limits": "Exact primary proposition inspected. It supplies local points, not rational descent or a Hasse principle.",
+      "sha256": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819",
+      "bytes": 1328468
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path": "research/arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md",
+      "role": "Uniform toric Hensel criterion, exact two-chart application, projective normalization guard, real proof and arithmetic scope.",
+      "sha256": "424697fc2d4e9babe4a27443086904e5d824c0e0121a9ac5aafab9badd8e5643",
+      "bytes": 7021
+    },
+    {
+      "path": "research/arithmetic/verify_q26_small_prime_local_branches.py",
+      "role": "Every transformed coefficient and exact integer division; full residue polynomials, unique Hensel digit controls, complete exact Sturm chain.",
+      "sha256": "f50fa38d94c2549538c55fa6e91efe35dd9679a0f32d423552082e552b54eb1f",
+      "bytes": 6116
+    },
+    {
+      "path": "research/arithmetic/q26_small_prime_local_branches_verification.json",
+      "role": "Actual complete successful replay with all dependency pins.",
+      "sha256": "7eafd3a9ccd0118b2bb485fa53915c499d81a8213ddc397d2d7749e16827feb0",
+      "bytes": 5155
+    },
+    {
+      "path": "research/arithmetic/q26_high_genus_affine_trace_curve_inputs.json",
+      "role": "Frozen full primitive accessory coefficient input, already exactly bound to the uniform curve over Q[t].",
+      "sha256": "0eb9334c67dfdd44a8646e7854e32e1336e226ab14ef6f9b8956bf177a0bafe0",
+      "bytes": 147392
+    },
+    {
+      "path": "research/arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md",
+      "locator": "Theorem2",
+      "role": "Geometric integrality of the accessory curve and distinction between accessory S12 and Laurent A26.",
+      "sha256": "8505d90746b31273284436c3783df398c68315a3596c503a721c91863a0d2ea2",
+      "bytes": 11567
+    },
+    {
+      "path": "research/arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md",
+      "locator": "Theorem3 and Section6",
+      "role": "Exact good-open converse and one good Q29/number-field point; hence the geometric good open is nonempty and its complement on the integral curve is finite.",
+      "sha256": "8d53cd8b940e25ee11d2cd817d9356e7f8ce79692c40d68af5d0d06b80a03978",
+      "bytes": 15101
+    }
+  ],
+  "internal_critical_audit": {
+    "result": "PASS",
+    "reviewers": [
+      {
+        "reviewer": "/root",
+        "result": "PASS",
+        "scope": "Completed full note and checker audit. Checked all1807 monomial valuations and reductions, uniform-parameter Hensel lifting and smoothness, the birational coordinate map, finite bad locus and nonempty good open, the exact valuation table, both simple real Sturm roots and real implicit branches, and the naive singular-projective-point warning. No rational-Q or all-critical-real inference was made; no correction requested.",
+        "replay_receipt": ".scratch/root-q26-small-prime-local-replay.json",
+        "receipt_comparison": "Actual final full root replay matches every canonical receipt field exactly."
+      },
+      {
+        "reviewer": "/root/moonshot_hurwitz",
+        "result": "PASS",
+        "scope": "Completed independent full proof/code/input/source audit. Checked all1807 terms, both scalings, exact divisions and global residue polynomials; arbitrary-V Hensel uniqueness and unit derivative; coordinate valuations, smooth normalization versus the naive singular projective point; finite bad locus and nonempty good open; and all real/slice/descent scope limits. Separately computed the rational Sturm chain in Sympy: its degrees and signs at both infinities exactly match the checker's FLINT implementation, giving7-5=2 real roots and disjoint simple-root intervals(-1,-1/2),(-1/2,0). No correction requested.",
+        "independent_real_control": ".scratch/independent_q26_infinity_real_control.json",
+        "replay_receipt": ".scratch/independent_q26_small_prime_local_branches_replay.json",
+        "comparison_record": ".scratch/independent_q26_small_prime_local_branches_comparison.json",
+        "receipt_comparison": "Actual final full independent internal replay matches every canonical receipt field exactly."
+      }
+    ],
+    "limits": "Internal agent review only; no external or formal assurance upgrade."
+  },
+  "computation": {
+    "command": ".venv/bin/python research/arithmetic/verify_q26_small_prime_local_branches.py",
+    "python": "3.12.3",
+    "python_flint": "0.9.0",
+    "arithmetic": "Exact integers, rational Euclidean/Sturm arithmetic, full coefficient reductions; no approximate roots or numerical inference.",
+    "finite_control_limit": "The precision8 digits at V1 supplement the written all-V Hensel proof; they do not establish uniformity by sampling. Every chart coefficient is checked, and the Sturm sequence is complete."
+  },
+  "scope_limits": [
+    "Local good models over Q2,Q3 and R do not imply any Q-rational model or local solubility at every other prime.",
+    "No all-critical-real statement, real-root-count spectrum or global real-component classification.",
+    "No complete classification of small-prime normalization branches is needed or claimed: the result is positive existence by explicit smooth charts.",
+    "The exact singular rational point on the plane closure does not by itself yield a rational point on the normalization.",
+    "Accessory S12 and reconstructed Laurent A26 act over different parameter lines.",
+    "The already frozen operator, high-genus, spectral and holonomy proof packages remain unchanged.",
+    "No rational parametrization, Hasse principle, effective rational-point determination, novelty claim, formal verification or external review."
+  ],
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}

@@ -25,7 +25,8 @@ Scope limits:
 
 Tracked obligations (computed states):
 
-- **formalization / open:** [Complete the binary GVC formal theorem and the full generic tangent-pencil geometric theorem.](README.md) — FORMAL-BINARY-GVC-COMPLETE
+- **formalization / open:** [Formalize the complete binary GVC proof, including the moving-envelope argument.](formal/gvc/README.md) — FORMAL-BINARY-GVC-COMPLETE
+- **formalization / open:** [Formalize the full generic tangent-pencil geometric theorem beyond the checked tangent, contact and collision algebra.](formal/discriminant-pencils/README.md) — FORMAL-DISCRIMINANT-COMPLETE
 - **verification / open:** [Respect the named imported theorem inputs and the analytic statements outside the focused finite-etale certificate.](README.md) — GAP-FOUNDATIONS-2
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -2,13 +2,13 @@
 
 Mathematical research by Roy van Rijn, developed with AI research assistants, especially OpenAI Codex. This repository brings together written proofs, exact computations and Lean formalizations around the Jacobian Conjecture, polynomial maps and moment-vanishing problems.
 
-Start with the released papers below. Each paper directory opens with the best current source and PDF; its `published/` archive preserves the exact Zenodo edition, submission metadata and checksums. Current revisions can differ from Zenodo or Hexagon and do not inherit their public-deposit status. Independent review and the scope of formal verification are stated separately.
+Start with the released papers below. Each paper directory opens with the best current source and PDF. Its `published/` archive preserves deposited files, submission metadata and checksums. Current revisions can differ from Zenodo or Hexagon and do not inherit their public-deposit status. Independent review and the scope of formal verification are stated separately.
 
 ## Released papers
 
 | Paper | Main result | Read |
 |---|---|---|
-| **Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification** | Classifies the reductive homogeneous spaces with the Mathieu property and constructs fixed-multiplier counterexamples. | [Paper and verification](results/mathieu-reductive-homogeneous-spaces/) · [Zenodo](https://zenodo.org/records/24310836) · Hexagon pending |
+| **Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification** | Classifies the reductive homogeneous spaces with the Mathieu property and constructs fixed-multiplier counterexamples. | [Paper and verification](results/mathieu-reductive-homogeneous-spaces/) · [Zenodo](https://zenodo.org/records/24310836) · [Hexagon](https://hexagonmath.org/2611.00556v1) |
 | **The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension** | Proves GVC in two variables and constructs a homogeneous failure in dimension three. | [Paper and verification](results/generalized-vanishing-two-variables/) · [Zenodo](https://zenodo.org/records/21803325) · [Hexagon](https://hexagonmath.org/2610.00580v2) |
 | **A Filtered Frobenius Proof of the Two-Variable Gaussian Moments Conjecture** | An alternative proof of the known binary classification and sharp cutoff; Lean coverage has two explicit mathematical inputs. | [Paper and verification](results/gaussian-moments-two-variables/) · [Zenodo](https://zenodo.org/records/21534699) |
 | **A Four-Term Counterexample to the Special Image Conjecture in Three Pairs** | An explicit four-term three-pair construction, with the later two-pair boundary proved in the current edition. | [Paper and verification](results/three-pair-image-counterexample/) · [Zenodo](https://zenodo.org/records/21634058) |

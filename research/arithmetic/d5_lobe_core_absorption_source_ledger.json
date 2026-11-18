@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/D5_LOBE_BOUNDED_CORE_ABSORPTION.md",
+  "claims": {
+    "one_lobe": "For everyr>=4, canonicalWr_r plus one root0D5lobe reaches canonicalWr_(r+2) up to a relabelingFIXING0 using at most446265984+14r-38ordinary signed Hurwitzmoves.",
+    "fixed_core": "Two secondary-edge sweeps and a three-factor bring isolate the same13-sheet fullA13core with all outsideDTs anchoredat{2,7}. A certified finite controller sends it to a root-preservingWrstar; four commuting crossings and one inverse slide per outsidefactor restore the wholecanonicalstar.",
+    "whole_bouquet": "The unbuffered t-lobe bouquet reachesWr_(2t), with commonroot0 retained through allstages, in at most6656+(t-2)*446265984+14t^2-52t+48moves.",
+    "controller_assurance": "The fixedN9/N13literalwords are NOT recovered or replayed. Their existence and explicit lengthbounds follow from frozen completefiniteorbit theorems and one final cyclic fulltwist correction.",
+    "limits": [
+      "No arbitrary-input polynomialDTconnectivity theorem.",
+      "No arbitraryold-root absorption statement.",
+      "No linear totalbouquet bound.",
+      "No useofcoalesced attachmentholonomy as ifit controlled anotherextension interface.",
+      "No optimalcontroller length claim."
+    ],
+    "explicit_N9_premise": "Retained independent literal total59049 and free C9 action give absolute total6561; complete BFS6561 from fullA9 cyclicseed matches it. B4 fulltwist length12 gives basecontroller bound6560+8*12=6656."
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/D5_LOBE_BOUNDED_CORE_ABSORPTION.md",
+      "sha256": "e40a12316e4d096776846a050950fb52a6a0141457f5d246266caadfb6fc163f",
+      "locator": "Theorem1 and Corollary2",
+      "role": "Complete uniform rewrites, fixed-core literalcontroller existence, root-preserving final adjustment and all-bouquet upperbound."
+    },
+    {
+      "path": "research/arithmetic/verify_d5_lobe_core_absorption.py",
+      "sha256": "ae3a84953a951263f0573794960d0f78c86d177dfc95459a6d5bb28e6410f393",
+      "locator": "prefix_word; canonical_target; final_word; normalize_star; base_control; bouquet_control",
+      "role": "Exact identities, endpoints and controlled sequential normalizations; controller endpoint substitutions explicitly marked."
+    },
+    {
+      "path": "research/arithmetic/d5_lobe_core_absorption_verification.json",
+      "sha256": "c30883467a62015edaa0b30a26e5d290db9bcb29a3964d9dbcf775b2afea5018",
+      "locator": "Actual default execution",
+      "role": "One-lobe controlsr4..12,25,50 and whole-bouquet endpointcontrolst2,3,4,5,8,12PASS."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
+      "sha256": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+      "locator": "Complete polynomialD^6 degree13orbit; retained small-degreecontrols",
+      "role": "Indispensable completefinite connectivity for fixed13and9sheetcontrollers."
+    },
+    {
+      "path": "research/arithmetic/degree_fourteen_hurwitz_verification.json",
+      "sha256": "009545e432aee4cf61c877f26b59b2e53c63d5153a8e5c644e1931dc43c14ced",
+      "locator": "cases DT polynomial_degree9and13",
+      "role": "Frozen completeabsoluteorbit sizes6561and446265625; no new censusperformed."
+    },
+    {
+      "path": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
+      "sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+      "locator": "Theorem3 and Corollary4",
+      "role": "CanonicalWr_rtuple and its fullalternating group."
+    },
+    {
+      "path": "research/arithmetic/UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md",
+      "sha256": "95fc17c0a132473c215283e999af4218190c443a2441ac5bbddfb98af528ec28",
+      "locator": "Explicit unbufferedfamily and Proposition2",
+      "role": "OriginalD5bouquet family and fullalternating group."
+    },
+    {
+      "path": "research/arithmetic/verify_uniform_hurwitz_attachment.py",
+      "sha256": "00f250ed5d1c31ee38ba2279aec32dd877f6fff7e8907f94d87e5af255388bf2",
+      "locator": "compose; conjugate; hurwitz; permutation; product",
+      "role": "Exact importedpermutation andordinaryHurwitz conventions."
+    },
+    {
+      "path": "research/arithmetic/verify_degree_fourteen_hurwitz_orbit.py",
+      "sha256": "3ed881ab1b52e015be9d88d82773a4dc3aa08be967770c6f1e4c4cd3c1a806ab",
+      "locator": "character_bounds; complete DT cases at polynomialdegrees9and13; cyclic seed controls",
+      "role": "Exact complete N9 premise as well as N13 theorem: independent character totals59049and5801453125, free cyclic quotients, and matching complete BFS counts."
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Primitive permutation groups containing a cycle",
+      "author": "GarethA.Jones",
+      "path": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "locator": "Theorem1.1",
+      "role": "The transitive odddegree13DTcore is primitive and containsa3cycle; hencefullA13.",
+      "inspected": true
+    }
+  ],
+  "computation": {
+    "command": ".venv/bin/python research/arithmetic/verify_d5_lobe_core_absorption.py",
+    "arithmetic": "Pythonstandardlibrary exactpermutation arrays.",
+    "actual_replays": "All degree-independent7letterlocal exchanges, prefixrewrites, finaloutsidecommutations/inverse slides andcanonicallabelings; boundedcontrols bind genericlabel formulas.",
+    "imported_controllers": "The checker checks their2endpoints and frozenfinitecensus sizes; it doesNOT pretend to replaysome unrecoveredword.",
+    "uniformity": "Written localidentities plus a singlefixed finitecontroller proveallr; root-preserving induction provesallt."
+  },
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        "root agent",
+        "separate knots agent"
+      ],
+      "scope": "Complete final upper proof/code audit: exact local exchange and both sweeps, fixed13core and product, explicit N9 total/free quotient/full seed premise, fixed-controller existence and literal bound, target leaf and root0 compatibility, commuting outside moves/final inverse slide, canonical labeling and repeated whole-bouquet bound; endpoint substitutions distinguished from unrecovered literal words.",
+      "root": {
+        "result": "PASS",
+        "replay_path": ".scratch/root-d5-absorption-final-replay.json",
+        "replay_sha256": "c30883467a62015edaa0b30a26e5d290db9bcb29a3964d9dbcf775b2afea5018",
+        "comparison": "Every canonical receipt field exactly equal; final proof/code/source pins match.",
+        "findings": "No correction remaining."
+      },
+      "separate_agent": {
+        "result": "PASS",
+        "replay_path": ".scratch/independent_knots_d5_core_absorption_replay.json",
+        "replay_sha256": "c30883467a62015edaa0b30a26e5d290db9bcb29a3964d9dbcf775b2afea5018",
+        "comparison": "Every canonical receipt field exactly equal; final proof/code/source pins match.",
+        "findings": "No correction requested."
+      },
+      "limits": "Separate internal AI-assisted proof/code audits and exact replays, not external human review, independent external replay or formal verification."
+    },
+    "formal_verification": false,
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "priority_assessment": "Notperformed."
+  }
+}

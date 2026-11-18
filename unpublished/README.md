@@ -2,7 +2,7 @@
 
 Manuscripts and smaller standalone notes without a public deposit, awaiting further work or publication. Every paper directory has a PDF, source, metadata and a short statement of its result. The linked metadata records the next review tasks.
 
-The Gaussian boundary paper has a standalone proof and internal checks, but still needs independent mathematical review before submission. Its presence here does not record a public deposit. The released [Mathieu paper](../results/mathieu-reductive-homogeneous-spaces/) now lives in `results/`, with its exact Zenodo edition in `published/`; Hexagon is pending.
+The Gaussian boundary paper has a standalone proof and internal checks, but still needs independent mathematical review before submission. Its presence here does not record a public deposit. The released [Mathieu paper](../results/mathieu-reductive-homogeneous-spaces/) now lives in `results/`, with the Zenodo and Hexagon deposits in its [publication archive](../results/mathieu-reductive-homogeneous-spaces/published/).
 
 | Paper | Status |
 |---|---|

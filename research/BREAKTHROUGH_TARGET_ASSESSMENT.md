@@ -2,11 +2,11 @@
 
 The objective remains a result with major external mathematical impact. None of
 the five unrestricted targets below is resolved by the current repository.
-Primary target: JC2. Secondary alternative: every-target C12+C12 coverage.
+Primary target: Gaussian safety-to-purity. No secondary target this iteration.
 The other candidates are audited here, not pursued as parallel family-expansion
 programmes. Assessment date: 18 November 2026.
 
-## Plane Jacobian conjecture: primary target
+## Plane Jacobian conjecture
 
 **Quantifiers.** For every characteristic-zero field k and every P,Q in k[x,y],
 does Jac(P,Q) in k* force k[P,Q]=k[x,y]? One verified noninvertible pair
@@ -52,6 +52,120 @@ normalization of that seed cannot resolve JC2.
 would settle the remaining characteristic-zero conjecture. The radial
 lifting theorem is useful route evidence, not achievement of that impact.
 Further digits or optimal finite-lift degrees are not the next objective.
+
+### Four-variable Hessian conjecture and planar degree bounds
+
+**Tang's structural alternative.** For a complex four-variable polynomial
+$f$ with nonzero constant Hessian determinant, Tang's Theorem 1.1 gives
+either an invertible gradient or constant linear coordinates in which
+
+$$
+f=R(x,y)+zA(x,y)+wB(x,y),\qquad \det D(A,B)\in\mathbb C^\times.
+$$
+
+The repository's v1 reproduction records this alternative as HCTANG2, and
+the Ricci-flat HC4 theorem uses it. The extracted v1 and v2 PDF texts agree
+after normalizing the version stamps.
+[Tang v1](https://hexagonmath.org/2611.00156v1),
+[Tang v2](https://hexagonmath.org/2611.00156v2),
+[HCTANG2](hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md),
+[Ricci-flat HC4](hessian/hc4-triangular-graphs/RICCI_FLAT_HC4_AND_ONE_DIMENSIONAL_JACOBIAN_IMAGES.md).
+
+**Conditional corollary (HC4 through total degree 101).** Assume Tang's
+structural alternative. An invertible linear change preserves total degree
+and gradient invertibility, since $\nabla(f\circ L)=L^T(\nabla f)\circ L$.
+For a hypothetical counterexample of degree at most 101, the alternative
+therefore gives $\max(\deg A,\deg B)\le\deg f-1\le100$, since the
+$zA$ and $wB$ monomials cannot cancel. The classical planar bound
+implies that $G=(A,B)$ has a polynomial inverse. The last two gradient
+outputs recover $b=(x,y)$ by $G^{-1}$. The first two recover
+$v=(z,w)^T$ by solving
+
+$$
+D G(b)^T v=(f_x,f_y)^T-\nabla R(b).
+$$
+
+The matrix has a nonzero constant determinant, so its inverse has
+polynomial entries. This contradicts the assumed counterexample.
+[Tang v2, Lemma 1.2](https://hexagonmath.org/pdf/2611.00156v2),
+[Moh's degree-100 result](https://doi.org/10.1515/crll.1983.340.140),
+[Moh's statement of the bound](https://www.math.purdue.edu/~ttm/jacobian),
+[Wang's revision of Moh's algorithm](https://doi.org/10.11650/twjm/1500407850).
+
+The transfer takes any planar component-degree bound $d$ to potential
+degree $d+1$. In particular, Nguyen's published degree-104 theorem
+gives a conditional HC4 bound of 105 using Tang. The degree-108 lower
+bound claimed in the Guccione–Guccione–Horruitiner–Valqui preprint would
+give HC4 through 108, since it excludes planar counterexamples of degree
+at most 107. In the reverse direction, cotangent doubling
+$f=zA+wB$ gives a potential of degree exactly $1+\max(\deg A,\deg B)$
+whose gradient is invertible exactly when $G$ is. Under Tang's
+structural alternative, HC4 through degree $d+1$ and JC2 through
+degree $d$ are equivalent over $\mathbb C$ for each $d\ge 1$.
+The same reduction identifies JC2 as the remaining unrestricted
+problem for HC4.
+
+**Conditional degree-pair restriction.** Assume Tang's structural
+alternative and Theorem 2.1 of the Guccione–Guccione–Horruitiner–Valqui
+preprint. If a complex HC4 counterexample has total degree at most 125,
+the base Keller map in Tang coordinates has maximum component degree
+at most 124. Its invertibility would give an inverse to the gradient
+by the displayed linear system. The planar degree-pair restriction
+therefore forces the unordered degrees of $A,B$ to be $72,108$.
+Since $zA$ and $wB$ have distinct transverse variables, the potential
+has degree at least 109. The term $R(x,y)$ still allows a higher degree
+within the stated range.
+[Nguyen, Theorem 3.6](https://doi.org/10.2989/16073606.2025.2482655),
+[Guccione–Guccione–Horruitiner–Valqui preprint](https://arxiv.org/abs/2204.14178).
+
+**Giraudin's total-degree-five theorem.** The unrefereed preprint gives a
+separate low-degree argument using weighted Hessian-determinant layers,
+Schur complements, partial Legendre transforms, and exact Gröbner-basis
+and radical-membership certificates. Its five ancillary verifiers report
+247 checks, with the ternary top handled in a separate preprint. The
+dead-direction lemma treats $f=P(u_1,u_2,w)+sR(u_1,u_2)$. If $P_{ww}\ne0$
+as a polynomial, constant Hessian
+determinant forces $R$ to be affine after a linear change in the base,
+and the proof uses fibrewise HC2. If $P_{ww}=0$, write $P=P_0+wP_1$.
+Then $\det\operatorname{Hess} f=\det D(R,P_1)^2$, and the proof uses
+planar inversion through degree four. The repository already records
+the preprint's scope. In the exact quintic Meng–Yang graph exclusion,
+the graph has degree five and the pulled-back potential has total
+degree sixteen, outside the preprint's hypothesis.
+[Giraudin v1, Lemma 4 and Section 6](https://hexagonmath.org/pdf/2611.00161v1),
+[ternary-top preprint](https://hexagonmath.org/2611.00134),
+[graph-degree comparison](jacobian/affine-complements/NORMAL_FORM_COVERAGE_AND_COMMON_LEADING_DIVISORS.md#8-the-november-preprint-and-the-graph-degree-convention),
+[quintic graph exclusion](jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md).
+
+**Four-body central configurations.** Tomar's mass map is proper and its
+critical loci include folds and cusps. The interval certificates,
+reported Lean formalization, and treatment of exceptional parameter
+strata may inform certification at the boundary of compactified Keller
+maps. A complex Keller map is étale on the affine source. If it were
+proper, it would be a finite étale cover of a simply connected target
+and hence an automorphism. For HC4, the potential application is to
+certification within the existing work on nonproperness at infinity.
+[Tomar v1](https://hexagonmath.org/2611.00378v1).
+
+**HC4 research priorities**
+
+1. Independently audit Tang v2, concentrating on the weighted-wall
+   termination and the exceptional cases in Sections 3–4. Formalize
+   the degree-bound transfer with the structural theorem as an explicit
+   hypothesis.
+2. Independently reproduce Giraudin's quintic proof. Replay the ancillary
+   verifiers, including the separate ternary-top verifier, and check that
+   the unary, binary and ternary normal forms cover every complex coefficient
+   stratum, including the exceptional branches.
+3. Keep global polynomial termination and nonproper planar Keller maps
+   as the main breakthrough targets for this programme. The live
+   implications are automatic first-velocity membership in the ordinary
+   codifferent in a source-finite frame, automatic sixth-moment trace
+   perfection, and elimination or realization of the remaining ramified
+   polar folds with the full finite target normalization and trace pairing.
+   [Codifferent criterion](hessian/hc4-triangular-graphs/CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md),
+   [trace criterion](hessian/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md),
+   [ramified polar folds](hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md).
 
 ### Rejected transfer shortcuts: formal boundary data
 
@@ -122,7 +236,7 @@ the author withdrew it in 2019 because the main argument was incomplete.
 Any use of a valid rational-fibration inversion theorem must retain its
 additional hypotheses.
 
-## Restricted-prime sums: secondary alternative
+## Restricted-prime sums
 
 **Quantifiers.** Let C={n>=1: every prime divisor of n is 1 mod 12}, including 1.
 Does there exist N0 such that every integer N>=N0 with N=2 mod 12 has
@@ -188,7 +302,7 @@ step. Dropping the marking is false, as T(4,7) demonstrates.
 meridional-rank frontier; an actual knot counterexample disproves MRC.
 Additional augmentation-gap families do neither.
 
-## Gaussian safety-to-purity
+## Gaussian safety-to-purity: primary target
 
 **Quantifiers.** For every n>=1 and P in C[x1,...,xn], does
 [for every Q there exists M_Q such that E(QP^m)=0 for all m>=M_Q]
@@ -212,6 +326,142 @@ f(t)=E(exp(tP)); the remaining assertion is f=1.
 unweighted Gaussian model. Polynomial tilts do not preserve the desired
 conclusion: the known positive tilted model has vacuum 1+t/2.
 Thus module finiteness and positivity of tilted integrals are insufficient.
+
+A selected-saddle approach also fails the universal significance test.
+Let Z,W be an independent Wick pair with E[Z^a W^b]=delta_ab a!,
+and put R=P(X) ZW. For every original marker A(X)Z^a W^b,
+
+```text
+E[A Z^a W^b R^m]=delta_ab (m+a)! E[A P^m].
+```
+
+Expansion of an arbitrary marker into these monomials proves that P and R
+have EXACTLY equivalent safety and purity. The factorials are nonzero in
+characteristic zero; the converse uses a=b=0. Over C this stays within
+ordinary real Gaussian variables with complex polynomial coefficients,
+using Z=(U+iV)/sqrt(2), W=(U-iV)/sqrt(2).
+
+The known necessary condition P(0)=0 for safety makes R vanish to order
+at least three. Its selected critical branch g=t C grad R(g), g(0)=0,
+is then identically zero and I-t C Hess R(g)=I. Thus an EQUIVALENT
+unrestricted problem already has trivial selected critical branch, action
+and quadratic response. Multiplication by (ZW)^k raises the vanishing
+order arbitrarily with the same equivalence. Correct universal saddle
+constraints cannot by themselves remove the nonconstant-vacuum gap.
+The reviewed exploratory saddle packet is not promoted to a DAG result.
+
+The vacuum can first be normalized WITHOUT weakening the unrestricted
+question. If a safe nonpure P has last nonzero pure moment mu_L, then
+R=-P^L/mu_L remains safe and has unit period 1-t. Thus it suffices to
+exclude this linear-vacuum case; higher multiplicities are not essential.
+
+Even Wick powers of an ARBITRARY Stein eigenmarker do not supply that
+exclusion. Start with the actual
+[unweighted seed R](moments/vanishing/POLYNOMIAL_SEEDS_AND_PURE_MARKER_DELAY.md)
+with f_R=1-t. Add an independent null pair U,V and set S=(1-U)R, A=1+V.
+Exact Wick contraction gives, for EVERY k>=0,
+
+```text
+Phi_S[exp(sV)]=f_R(t(1-s))=1-t+st,
+Phi_S[A^k]=1+(k-1)t.
+```
+
+Since A is affine in a null variable, its Gaussian Wick powers equal its
+ordinary powers. Phi_S[A]=1 is a genuine marked Stein eigenclass with
+eigenvalue one, but the full Stein orbit of ALL these Wick powers stays
+in span{1,t}. Other old markers still have poles, so S is unsafe.
+This is an all-order counterexample to the proposed eigenmarker-power
+construction, not a safe nonpure Gaussian example.
+
+The same reparametrization preserves the complete actual image and safety:
+for an old original marker B, the exact general identity is
+
+```text
+Phi_S[B U^a V^b]
+  = b!/(b-a)! (-t)^(b-a) D_t^(b-a) Phi_R[B]   if b>=a,
+  = 0                                        if b<a.
+```
+
+Both inclusions follow because the old image is a time-Weyl module and old
+markers are retained. Consequently this construction also equips ANY
+hypothetical safe linear-vacuum counterexample with such a bounded-Wick
+eigenmarker. A useful global theorem must use further source correlations,
+or a distinguished canonical marker, rather than powers of an arbitrary
+supplied eigenmarker. Direct exact controls at m<=5,k<=8 confirm the
+displayed moment identities and retain an old bad marker with moment m!;
+the all-order conclusion uses the contraction formulas above.
+
+The canonical-marker variant remains a separate, unresolved sufficient
+lemma: does f=1-t force some Phi[P^(Wick k)] to be nonpolynomial?
+The null wrapper does not refute it. For G(X,U) independent of V,
+Gaussian heat commutes with evaluation U=0, so
+Phi_G[G^(Wick k)]=Phi_(G|U=0)[(G|U=0)^(Wick k)] for every k.
+Finite successful examples do not prove this universal assertion.
+
+The same test survives radial padding, unlike the earlier saddle
+constraints. Write R=ZW, H_R=exp(partial_Z partial_W), and for a>=1 put
+
+```text
+S_a(R)=H_R(R^a)
+      =sum_(j=0)^a (a!)^2/[j!^2(a-j)!] R^j.
+```
+
+For Q=P R^a, heat factorization gives
+Q^(Wick k)=P^(Wick k) H_R^-1(S_a^k). The corresponding m-th correlation
+is the old canonical correlation multiplied by
+
+```text
+(am)! sum_j [R^j]S_a^k (am)_j,
+```
+
+where (n)_j is falling factorial, zero for j>n. This multiplier is strictly
+positive for EVERY integer m>=0: all coefficients are nonnegative and the
+constant term is (a!)^k. Hence polynomiality of each fixed canonical
+response is preserved and reflected. Rescaling Q by 1/a! keeps its vacuum
+1-t when the old vacuum is 1-t. The test therefore retains its full
+unrestricted content even on phases with arbitrarily high vanishing order.
+Exact controls at a<=4,k<=5,m<=6 checked 168 multipliers; the formula
+proves the unbounded assertion.
+
+For standard covariance, the classical imaginary-Gaussian formula
+([Hu--Yan, Theorem 5.3](https://arxiv.org/html/0901.4911v1)) gives, with
+H=exp(Delta/2) and an independent Gaussian copy Y,
+
+```text
+Phi_P[P^(Wick k)]
+  =E[(HP)(X+iY)^k exp(tP(X))].
+```
+
+All expressions are finite polynomial Wick operations before extracting
+the time coefficients; no analytic Wick exponential is needed.
+
+A tempting closure shortcut fails. Even when P is safe, one cannot infer
+safety of S=P(X)-(HP)(X+iY) from polynomiality of the fixed-k responses.
+For an explicit safe input use a Witt pair Z,W and an ordinary Gaussian T,
+put q=2ZW+T^2 and P=W-qT-q^2 Z/2. It is the image of W under the
+Gaussian-preserving polynomial automorphism exp(q(Z partial_T-T partial_W)).
+Direct heat calculation gives
+
+```text
+HP=W-(q+5)T-(q^2+14q+35)Z/2.
+```
+
+For the coupled phase S, the squared Gaussian gradient at the origin is
+35, so its selected critical action starts 35t^2/2. The retained
+[critical-action obstruction](moments/vanishing/GAUSSIAN_G_FUNCTIONS_AND_GLOBAL_REGULAR_CORE.md)
+therefore makes its UNIT period nonpolynomial. This proves unsafety
+without assuming the target reverse implication. Fixed-k polynomiality
+cannot be promoted to polynomiality of the coupled diagonal series.
+The special hypothesis f_P=1-t, rather than that invalid closure, must
+supply any proof of the canonical detection claim.
+
+The ordinary marked Cauchy transform C_B=sum_m E[B P^m]t^m has the same
+polynomiality condition as the exponential transform. With
+B_0(h)=(h-h(0))/t and L_0=t^2 D_t+t, one has [B_0,L_0]=1 and the exact
+unweighted source relation C_((X_i-partial_i)B)=L_0 C_(P_i B) in standard
+covariance. The abstract Weyl relation alone also holds for the positive
+tilted model with nonpure vacuum. It does not replace these full spatial
+relations or prove that the distinguished unit is primitive.
 
 **Impact test.** A general vacuum-rigidity principle could be substantial.
 More support or degree classifications alone fail the requested test.

@@ -19,7 +19,7 @@ from dependency_sources import missing_source_closure
 from dependency_coverage import CoverageError, check_coverage, coverage_state, render_coverage, declarations
 from dependency_bounds import bounds_records, bound_comparisons
 from dependency_references import check_references, reference_state, render_references
-from dependency_tex_links import tex_proof_link_report
+from dependency_tex_links import tex_proof_link_report, tex_proof_registration_issues
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parent
@@ -475,19 +475,9 @@ def check_links() -> tuple[int, int]:
 def check_tex_proof_links(data: dict, graph: DependencyGraph) -> dict:
     report = tex_proof_link_report(data, graph)
     assert not report["issues"], "unresolved current TeX proof references: " + json.dumps(report["issues"][:20])
-    stored = data.get("graph", {}).get("proof_links", {}).get("links", [])
-    indexed = {(item["source_path"], item["locator"], item["conclusion"], item["dependency"]): item
-               for item in stored}
-    for link in report["links"]:
-        key = (link["source_path"], link["locator"], link["conclusion"], link["dependency"])
-        assert key in indexed, "unregistered TeX proof implication: " + json.dumps(link)
-        routes = indexed[key].get("routes", [])
-        assert routes, "TeX proof implication lacks an attached route: " + json.dumps(link)
-        for rule_id in routes:
-            assert rule_id in graph.rules and link["dependency"] in graph.rules[rule_id]["premises"], (
-                "TeX prerequisite bypassed: " + rule_id + " needs " + link["dependency"])
+    registration_issues = tex_proof_registration_issues(data, graph, report["links"])
+    assert not registration_issues, "unregistered or unattached TeX proof links: " + json.dumps(registration_issues[:20])
     return report
-
 
 def render_bounds(data: dict, graph: DependencyGraph) -> str:
     rows = bounds_records(graph)
@@ -824,7 +814,9 @@ def main() -> None:
                            if row["opportunities"] or row["conflict"]]
             stale = graph.stale_evidence(evaluated)
             report = {"changed_evidence": stale, "coverage_issues": covered["errors"],
-                      "reference_issues": cited["errors"], "proof_link_issues": linked["issues"],
+                      "reference_issues": cited["errors"],
+                      "proof_link_issues": linked["issues"]
+                      + tex_proof_registration_issues(data, graph, linked["links"]),
                       "bound_improvements_or_conflicts": comparisons,
                       "pending_external_applications": [
                           {"id": paper["id"], "title": paper["title"], "verification": paper["verification"]}

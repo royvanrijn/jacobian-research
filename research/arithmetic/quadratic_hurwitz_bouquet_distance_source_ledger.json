@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/QUADRATIC_HURWITZ_BOUQUET_DISTANCE.md",
+  "claims": {
+    "lower_bound": "For each unbuffered t-lobe bouquet, ANY ordinary signed Hurwitzword ending at ANY wreathleaf has length at least ceil((2t-1)*max(0,2ceil(t/2)-3)/8), even permitting common sheet relabelings for free.",
+    "metric_obstruction": "Each ordinary adjacent move increases total historical support-interval span by at most8. At a wreath endpoint, every lower two-sheet block has a common DTfactor, so antipodal pairs with distant initial lobe supports force quadratic total interval growth.",
+    "upper_bound": "The root-preserving bounded-core theorem gives at most6656+(t-2)*446265984+14t^2-52t+48 moves to the canonical wreath tuple.",
+    "conclusion": "The ordinary-word distance of this explicit full-alternating family to the wreath-leaf locus is Theta(t^2), with r=2t factors.",
+    "limits": [
+      "No all-degree braid orbit distinction.",
+      "No universal arbitrary-input connectivity theorem.",
+      "No claim for the buffered odd-factor variant.",
+      "No sharp leading constant or minimal controller recovery.",
+      "Arbitrary branch-position permutations are not allowed for free."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/QUADRATIC_HURWITZ_BOUQUET_DISTANCE.md",
+      "sha256": "d3c68619d26798d0c92f20feb04da235474bb51403462d2d3e732f62af09f436",
+      "locator": "Theorem1 and Lemmas2-3; Sections2-4",
+      "role": "Complete historical-interval bound, every-endpoint-leaf pairing argument, quadratic gap and matching upper bound."
+    },
+    {
+      "path": "research/arithmetic/verify_quadratic_hurwitz_bouquet_distance.py",
+      "sha256": "48035ce063455cbbf543f6dc008a04912827a43d819bcadcbc5adaf29c528e5b",
+      "locator": "exact_local_lemma; all_deleted_sheet_control; word_ball",
+      "role": "Complete local DT-pair support patterns and bounded exact global/all-leaf historical controls."
+    },
+    {
+      "path": "research/arithmetic/quadratic_hurwitz_bouquet_distance_verification.json",
+      "sha256": "4d4ab9246bfc3363321fb5d0b8ac759112b86ac868ec7e8b50e02185a0efcf0d",
+      "locator": "Actual default execution",
+      "role": "88200 local moves; every deleted sheet for2<=t<=40; complete historical word balls and source pins."
+    },
+    {
+      "path": "research/arithmetic/D5_LOBE_BOUNDED_CORE_ABSORPTION.md",
+      "sha256": "e40a12316e4d096776846a050950fb52a6a0141457f5d246266caadfb6fc163f",
+      "locator": "Corollary2",
+      "role": "Root-preserving uniform quadratic upper bound, with exact fixed finite-controller imports."
+    },
+    {
+      "path": "research/arithmetic/d5_lobe_core_absorption_verification.json",
+      "sha256": "c30883467a62015edaa0b30a26e5d290db9bcb29a3964d9dbcf775b2afea5018",
+      "locator": "Endpoint controls and fixed-controller bounds",
+      "role": "Bound constants6656and446265984; no literal controller word replay inferred."
+    },
+    {
+      "path": "research/arithmetic/UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md",
+      "sha256": "95fc17c0a132473c215283e999af4218190c443a2441ac5bbddfb98af528ec28",
+      "locator": "Explicit family and Proposition2",
+      "role": "Full A_(4t+1) unbuffered D5bouquet and original linear exposure bound, preserved unchanged."
+    },
+    {
+      "path": "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md",
+      "sha256": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+      "locator": "Deletion identity",
+      "role": "Deleting any endpoint leaf gives the full cycle with that sheet omitted."
+    },
+    {
+      "path": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
+      "sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+      "locator": "Theorem1",
+      "role": "Wreath deletion projects the nonowner DTs to a connected block tree; every block occurs jointly in some DT."
+    },
+    {
+      "path": "research/arithmetic/verify_uniform_hurwitz_attachment.py",
+      "sha256": "00f250ed5d1c31ee38ba2279aec32dd877f6fff7e8907f94d87e5af255388bf2",
+      "locator": "compose; hurwitz; permutation; product",
+      "role": "Exact permutation and ordinary signed Hurwitz conventions."
+    }
+  ],
+  "external_sources": [],
+  "proof_outline": [
+    "An adjacent move affects at most8sheets and moves a new occurrence of each at most one branch position away from an existing occurrence.",
+    "At any wreathleaf endpoint, full-cycle block index minimality forces all nonowner DTs to be block swaps in a connected tree.",
+    "Every lower block is thus jointly present in a DT, forcing its sheets' historical intervals to intersect.",
+    "The lower blocks are exactly the antipodal pairs after deleting any chosen sheet from the fixed original fullcycle.",
+    "Four-letter lobe clusters in that cycle imply at least2t-1 nonroot pairs start with interval gap at least max(0,2ceil(t/2)-3).",
+    "Disjoint-sheet contributions add and give quadratic historical growth, hence quadratic ordinary word length.",
+    "The independently proved root-preserving controller construction supplies a quadratic upper bound for the same whole family."
+  ],
+  "computation": {
+    "command": ".venv/bin/python research/arithmetic/verify_quadratic_hurwitz_bouquet_distance.py",
+    "arithmetic": "Python standard library, exact permutation arrays and integer intervals.",
+    "complete_local_patterns": "All210 DTs on8letters, all ordered pairs and both signs:88200cases, including the disjoint-support maximum growth8.",
+    "all_leaf_controls": "Every deleted sheet and lower antipodal pair for every2<=t<=40; exact product, cyclic distances, lobe separations and gap sums.",
+    "historical_word_balls": [
+      {
+        "lobes": 2,
+        "complete_signed_word_depth": 3,
+        "prefixes_by_length": {
+          "0": 1,
+          "1": 6,
+          "2": 36,
+          "3": 216
+        },
+        "total_prefixes": 259,
+        "wreath_leaf_endpoint_occurrences": 0
+      },
+      {
+        "lobes": 3,
+        "complete_signed_word_depth": 2,
+        "prefixes_by_length": {
+          "0": 1,
+          "1": 10,
+          "2": 100
+        },
+        "total_prefixes": 111,
+        "wreath_leaf_endpoint_occurrences": 0
+      }
+    ],
+    "uniformity": "Written local-support and cycle-spacing arguments prove all t and arbitrary word length; finite controls supplement them.",
+    "positive_detector_control": "CanonicalWr degree9 accepted at leaf8; original two-lobe bouquet rejected. The bounded history balls have no wreath endpoints and do not imply a shortest-word claim."
+  },
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        "root agent",
+        "separate knots agent"
+      ],
+      "scope": "Complete final lower proof/code audit: historical growth<=8 for arbitrary past, any-owner/any-leaf deletion, unique antipodal pair system and connected projected blocktree, joint DT occurrences, original2t/2t+1 arcs and4q+4 lobe bound, disjoint pair-gap summing, free common labels versus ordinary branch metric, full finite controls and imported matching upper.",
+      "root": {
+        "result": "PASS",
+        "replay_path": ".scratch/root-quadratic-bouquet-final-replay.json",
+        "replay_sha256": "4d4ab9246bfc3363321fb5d0b8ac759112b86ac868ec7e8b50e02185a0efcf0d",
+        "comparison": "Every canonical receipt field exactly equal; final proof/code/source pins match.",
+        "findings": "No correction remaining."
+      },
+      "separate_agent": {
+        "result": "PASS",
+        "replay_path": ".scratch/independent_knots_quadratic_bouquet_replay.json",
+        "replay_sha256": "4d4ab9246bfc3363321fb5d0b8ac759112b86ac868ec7e8b50e02185a0efcf0d",
+        "comparison": "Every canonical receipt field exactly equal; final proof/code/source pins match.",
+        "findings": "No correction requested."
+      },
+      "limits": "Separate internal AI-assisted proof/code audits and exact replays, not external human review, independent external replay or formal verification."
+    },
+    "formal_verification": false,
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "priority_assessment": "Not performed."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "record": "https://hexagonmath.org/2611.00556v1",
+  "retrieved": "2026-11-18",
+  "files": [
+    {
+      "file": "paper.pdf",
+      "md5": "80f0fce9c7558a2ea1fa2c8d27b8d3b3",
+      "sha256": "84177cd2be9299eec06cb87ca6bc92222c54f8dbfa1c12ca4456d3aefb696f08"
+    },
+    {
+      "file": "source.zip",
+      "md5": "dcd6d902107ce59778bacf048b2ab9c6",
+      "sha256": "72e8718febe2d6a1be0d656b61f66d58f9f8d7dad0f61d59c648e08231cf94f1"
+    },
+    {
+      "file": "hexagon-metadata.json",
+      "md5": "ba74f1864c766d8c00adced894fdc3e7",
+      "sha256": "f73566869e1e209a28a92a3f03db949f41b9cfea509ba0cfe236bc2532d365eb"
+    }
+  ]
+}

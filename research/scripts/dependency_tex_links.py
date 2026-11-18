@@ -338,3 +338,25 @@ def tex_proof_link_report(data: dict, graph) -> dict:
 def tex_proof_links(data: dict, graph) -> list[dict]:
     """Return links only; use tex_proof_link_report for every review issue."""
     return tex_proof_link_report(data, graph)["links"]
+
+
+def tex_proof_registration_issues(data: dict, graph, links: list[dict]) -> list[dict]:
+    """Find missing registrations and routes that do not use the cited premise."""
+    stored = data.get("graph", {}).get("proof_links", {}).get("links", [])
+    key_fields = ("source_path", "locator", "conclusion", "dependency")
+    indexed = {tuple(item[field] for field in key_fields): item for item in stored}
+    issues = []
+    for link in links:
+        registered = indexed.get(tuple(link[field] for field in key_fields))
+        if registered is None:
+            issues.append({**link, "kind": "unregistered_proof_implication"})
+            continue
+        routes = registered.get("routes", [])
+        if not routes:
+            issues.append({**link, "kind": "missing_proof_route"})
+        for rule_id in routes:
+            rule = graph.rules.get(rule_id)
+            if (rule is None or rule["conclusion"] != link["conclusion"]
+                    or link["dependency"] not in rule["premises"]):
+                issues.append({**link, "kind": "proof_route_missing_prerequisite", "route": rule_id})
+    return issues

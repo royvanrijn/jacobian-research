@@ -5,8 +5,10 @@ fixed power window. It derives both from published results, without claiming
 priority for the corollaries. It reduces power-window variance to one sharp
 four-form energy estimate. The separate
 [power-window proof VqPower](PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md)
-now establishes that estimate for every fixed \(9/10<\theta<1\), with a
-quantitative full-count variance bound. A separate [large-prime cofactor
+now establishes that estimate for every fixed \(5/6<\theta<1\), with a
+quantitative full-count variance bound. The
+[Eisenstein Hecke transfer audit](EISENSTEIN_HECKE_TRANSFER_AUDIT.md) gives
+the completed-row comparison and the exponent budgets. A separate [large-prime cofactor
 argument](PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md) gives semigroup-scale
 density-one lower bounds for every fixed power exponent above \(1/3\). The [general theory note](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md)
 contains the every-target conjecture, the positive-proportion theorem and the
@@ -391,12 +393,12 @@ constant. The independent
 \[
  \sum_{X<N\le2X}|r_{q,H}(N)-H\mu_X^2S(N)|^2
  \ll_{q,\theta}XH^2\mu_X^4(\log X)^{-1/4}
- \qquad(9/10<\theta<1).
+ \qquad(5/6<\theta<1).
 \]
 Its sharp energy coefficient is
 \(\mathcal K_q+O_{q,\theta}((\log X)^{-1/8})\). In particular the
 initial target \(\theta=99/100\) is resolved. The sharp upper bound for
-\(0<\theta\le9/10\) remains open here.
+\(0<\theta\le5/6\) remains open here.
 
 The fixed-width proof uses a fixed positive-volume convex body. At
 \(H=X^\theta\), its volume after scaling by \(X\) tends to zero. The stated

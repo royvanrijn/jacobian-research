@@ -1,0 +1,88 @@
+{
+  "result": "PASS",
+  "scope": "Finite exact support, target-pair, Rosser-switch and rational parameter controls only; no infinite proposition, source theorem, asymptotic prime sum, critical remainder or binary coverage is verified.",
+  "provenance": {
+    "checker": "research/arithmetic/eisenstein-restricted-prime-sums/verify_asymmetric_well_factorable_switch.py",
+    "checker_sha256": "ce6769d501d7e87a6cf3b82373300b53151c5d874752467ec626a1c9e1bb2b9f",
+    "source_sha256": {
+      "research/arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+      "research/arithmetic/ASYMMETRIC_SEMILINEAR_SIEVE.md": "7c83a78e354727e9a8a16c3daf5443eacd49668778b9c0f9ba6a94e281084ce8",
+      "research/arithmetic/ASYMMETRIC_CRITICAL_SWITCHING.md": "70a4ce92a33164e5c63030eba2c0f3040ccf1a05a6e6ff2a462d52be3dc65049",
+      "research/arithmetic/ASYMMETRIC_AUXILIARY_AVERAGE.md": "8cfafca142b954118e9c2a325ed2a54df5dc46739cd9813aba326c18cdc7ac94",
+      "research/arithmetic/ASYMMETRIC_SIGN_TRANSFER.md": "c3f85d1ce426018ca1c17450e17d7d6a1992b5115790095cb48f15475c194967",
+      "research/arithmetic/sources/iwaniec-half-dimensional-sieve-1976.pdf": "ca6e84aafb32ee62dcd5ce76679c65652bf677ccd4e36d200576024fac1eca67",
+      "research/arithmetic/sources/fouvry-bombieri-vinogradov-II-1987.pdf": "13dec04a3f215c0b5809dcefe77cd11fcad8a8982ddb9c471f1b6b08fad61c7f",
+      "research/arithmetic/sources/wu-chens-double-sieve-2004.pdf": "ebe75ef36478213bde937dce7d163bdd14b5b0352be54e085c9f696afc6e8a30"
+    },
+    "python_version": "3.12.3"
+  },
+  "checks": {
+    "actual_pair_admissible_target": 8,
+    "actual_pair_alpha_interval": 3,
+    "actual_pair_balanced_candidate_coefficients": 8,
+    "actual_pair_even_forbidden_parity": 8,
+    "actual_pair_forbidden_prime": 8,
+    "actual_pair_good_cofactor": 8,
+    "actual_pair_only_sieve_divisors_1_p": 8,
+    "actual_pair_power_separation": 3,
+    "actual_pair_second_in_A3": 8,
+    "actual_pair_sqrtD_less_p_less_z": 8,
+    "alpha_ceiling_gives_13": 8,
+    "arbitrary_weight_beyondhalf_endpoint": 1,
+    "arbitrary_weight_optimal_exponent": 1,
+    "balanced_large_prime_support": 213,
+    "clamped_C2_source_conditions": 5,
+    "clamped_factors_at_least_one": 5,
+    "clamped_total_level_unchanged": 5,
+    "control_lower_weight_not_balanced_factorable": 1,
+    "control_missing_division_by_p_fails": 1,
+    "control_missing_switch_sign_fails": 1,
+    "control_non_strict_boundary_fails": 1,
+    "control_padding_at_or_above_z_squared_fails": 1,
+    "control_positive_lambda1_fails_bad_pair": 8,
+    "control_short_factor_too_long": 1,
+    "control_single_prime_parity_test_not_actual": 1,
+    "control_three_quarters_outside_source": 4,
+    "control_unclamped_endpoint_gives_S_below_one": 1,
+    "fixed_alpha_epsilon_range": 1,
+    "fouvry_C2_boundary_factorization": 4,
+    "fouvry_large_residue_ceiling": 4,
+    "immutable_primary_pin": 3,
+    "large_prime_composite_inside_level": 1,
+    "large_prime_composite_no_balanced_factors": 1,
+    "large_prime_rosser_switch": 1426,
+    "local_L1_ratio_positive": 3,
+    "lp_C1_nu_coefficient": 1,
+    "lp_C2_nu_coefficient": 1,
+    "lp_r_coefficient": 1,
+    "lp_s_coefficient": 1,
+    "strict_support_boundary": 1,
+    "switch_case_count": 1,
+    "upper_cofactor_prime_bound": 184,
+    "upper_cofactor_product_bound": 184
+  },
+  "switch_parameters": [
+    [
+      1000,
+      300
+    ],
+    [
+      10000,
+      700
+    ],
+    [
+      1000000,
+      2000
+    ]
+  ],
+  "negative_controls": [
+    "lower prime coefficient lies outside balanced WF support",
+    "single forbidden prime does not satisfy the actual target parity",
+    "positive lambda1 fails the actual bad even-parity pair",
+    "three-quarters modulus exponent exceeds the primary C1/C2 range",
+    "short exponent 1/10 loses the arbitrary-weight beyond-half range",
+    "padding at or above z squared destroys the alpha interval",
+    "omitting the switch sign or the level division by p fails",
+    "replacing strict source inequalities by non-strict ones fails"
+  ]
+}

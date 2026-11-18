@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/Q26_LOCAL_SOLUBILITY_THROUGH_PRIME_TWENTY_NINE.md",
+  "assurance": "Internal written local-solubility proof and actual exact replay. Root, Knots and Hurwitz completed separate full proof/code/source audits and final exact replays. The direct5-adic coefficients also have independent integer binomial derivations. Formal verification, external human review and independent external replay remain false.",
+  "claims": {
+    "direct_Q5": "The exact integer polynomial 5^-40 F(1056+1200X,238) reduces to3X+4X^2. Both roots0,3 are simple.",
+    "uniform_Q5": "For every V in Z5, the integral polynomial 5^-40 F(1056+1200X,238+5^41 V) has the same reduction. The integer binomial expansion proves this uniformly; the two Hensel branches give infinitely many smooth points, with all but finitely many good.",
+    "six_additional_primes": "Exact residues and gradients at7,11,13,17,19,23 give simple affine Hensel arcs. The finite bad locus can be removed even if the initial fixed-residue point is bad.",
+    "complete_tested_range": "Together with frozen Q2,Q3,Q29 and real-place results, every prime at most29 and the real place has infinitely many good local models. This is not an all-prime local-solubility theorem or rational descent."
+  },
+  "external_sources": [
+    {
+      "id": "milne-simple-root-hensel",
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "version": "Version3.00, 11February2008",
+      "primary_url": "https://www.jmilne.org/math/CourseNotes/ANT300.pdf",
+      "path": "research/arithmetic/sources/milne-ant300.pdf",
+      "direct_read": true,
+      "locator": "Proposition7.31, printedp113",
+      "application": "Simple roots of the explicit integral5-adic family and simple affine residues at the six displayed primes lift uniquely after fixing the other parameter.",
+      "reading_limits": "Exact primary statement inspected. It gives local roots, not Q-rational descent or a Hasse principle.",
+      "sha256": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819",
+      "bytes": 1328468
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path": "research/arithmetic/Q26_LOCAL_SOLUBILITY_THROUGH_PRIME_TWENTY_NINE.md",
+      "locator": "Theorem1, Proposition2, complete scope of tested places",
+      "role": "Direct coefficient identity, uniform Hensel proof, finite-prime table and exact local/global scope.",
+      "sha256": "c0dfbab1c60ef2973df1664308bd62bcf00d45d88864abb8526764aca3858ae4",
+      "bytes": 5953
+    },
+    {
+      "path": "research/arithmetic/verify_q26_local_solubility_through_29.py",
+      "role": "Reconstructs all direct specialized coefficients, valuations and reductions; checks both Hensel roots, all affine gradients and exact complete prime list.",
+      "sha256": "de3c49debe6c07ff780134c9c15aabf84599acbf63ff46bbd275c68e4be73d3e",
+      "bytes": 5591
+    },
+    {
+      "path": "research/arithmetic/q26_local_solubility_through_29_inputs.json",
+      "role": "All thirteen normalized integer coefficients and valuations, residue factors, exact affine table and imported-place list.",
+      "sha256": "c227177aadf079250efa3ffa792c06eb97c58d4f10f71a9d2858dca8d93ab8f9",
+      "bytes": 5905
+    },
+    {
+      "path": "research/arithmetic/q26_local_solubility_through_29_verification.json",
+      "role": "Actual final checker replay and current dependency pins.",
+      "sha256": "42f003468261c35d1746c194348c9f1a5fb94dc52f1081ee409c7840438246a1",
+      "bytes": 5132
+    },
+    {
+      "path": "research/arithmetic/q26_high_genus_affine_trace_curve_inputs.json",
+      "role": "Frozen complete primitive accessory polynomial, exactly reconstructed over Q[t] in the earlier package.",
+      "sha256": "0eb9334c67dfdd44a8646e7854e32e1336e226ab14ef6f9b8956bf177a0bafe0",
+      "bytes": 147392
+    },
+    {
+      "path": "research/arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md",
+      "locator": "Theorem2",
+      "role": "Geometric integrality and high-genus arithmetic finiteness; these do not preclude infinitely many local points.",
+      "sha256": "8505d90746b31273284436c3783df398c68315a3596c503a721c91863a0d2ea2",
+      "bytes": 11567
+    },
+    {
+      "path": "research/arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md",
+      "locator": "Theorem2 and Proposition3",
+      "role": "Frozen good Q2,Q3 and real branches, with the finite bad-complement argument.",
+      "sha256": "424697fc2d4e9babe4a27443086904e5d824c0e0121a9ac5aafab9badd8e5643",
+      "bytes": 7021
+    },
+    {
+      "path": "research/arithmetic/q26_small_prime_local_branches_verification.json",
+      "role": "Earlier exact toric coefficient and independent real Sturm certificate.",
+      "sha256": "7eafd3a9ccd0118b2bb485fa53915c499d81a8213ddc397d2d7749e16827feb0",
+      "bytes": 5155
+    },
+    {
+      "path": "research/arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md",
+      "locator": "Theorem3 and Section6",
+      "role": "Exact good-open converse and nonempty geometric good open via a Q29/number-field point; the known point is also rechecked on the primitive equation.",
+      "sha256": "8d53cd8b940e25ee11d2cd817d9356e7f8ce79692c40d68af5d0d06b80a03978",
+      "bytes": 15101
+    }
+  ],
+  "internal_critical_audit": {
+    "result": "PASS",
+    "reviewers": [
+      {
+        "reviewer": "/root",
+        "result": "PASS",
+        "scope": "Completed full proof/code critical audit. Independently reconstructed the direct polynomial with integer binomial arithmetic, verified exponent40, all13 valuations and both simple roots to12digits, and checked uniform5^41 parameter divisibility, smoothness, good-open avoidance and local/global qualifications. Requested only the implemented zero-valuation robustness guard.",
+        "independent_direct_control": ".scratch/root-q26-p5-direct-hensel-replay.json",
+        "replay_receipt": ".scratch/root_q26_local_through29_replay.json",
+        "receipt_comparison": "Actual final full replay exactly matches every canonical receipt field. Primary Milne Proposition7.31 physically reinspected on PDFpage121/printed113."
+      },
+      {
+        "reviewer": "/root/moonshot_hurwitz",
+        "result": "PASS",
+        "scope": "Completed full proof/code/input/source audit. Independently expanded frozen F(1056+1200X,238) with integer binomial/Horner arithmetic, verifying every one of the13 normalized coefficients, all valuations and the full3X+4X^2 reduction. Checked the all-V exponent41 argument, both Hensel branches, smoothness and finite bad locus, fixed-t qualification, each residue/gradient, exact prime<=29 coverage and every rational/global/real scope distinction. No correction requested.",
+        "independent_direct_control": ".scratch/independent_q26_p5_direct_hensel.json",
+        "replay_receipt": ".scratch/independent_q26_local_through29_replay.json",
+        "comparison_record": ".scratch/independent_q26_local_through29_comparison.json",
+        "receipt_comparison": "Actual final full replay exactly matches every canonical receipt field; all13 normalized coefficients independently match the separate binomial derivation."
+      },
+      {
+        "reviewer": "/root/moonshot_knots",
+        "result": "PASS",
+        "scope": "Completed full proof/code audit. Independently expanded the exact integer specialization and verified exponent40, both simple roots and the full residue polynomial. Checked all-V integrality at step5^41, unique lifts, distinct smooth branches, finite bad complement without assuming fixed-t roots good, every table gradient including the p19 t-coordinate lift, imported-place scopes, harmless p29 leading-degree drop for local lifting and exact prime list. No correction requested.",
+        "independent_direct_control": ".scratch/independent_q26_q5_direct_hensel.json",
+        "replay_receipt": ".scratch/independent_knots_q26_local_through29_replay.json",
+        "receipt_comparison": "Actual final full replay exactly matches every canonical receipt field."
+      }
+    ],
+    "limits": "Internal agent mathematical review only; no formal or external assurance upgrade."
+  },
+  "computation": {
+    "command": ".venv/bin/python research/arithmetic/verify_q26_local_solubility_through_29.py",
+    "python": "3.12.3",
+    "python_flint": "0.9.0",
+    "arithmetic": "Exact integer polynomial composition, valuations, residue evaluations and Hensel digits. No approximate roots, discovery-tree exhaustion or local nonexistence inference.",
+    "uniformity": "All-V integrality and reduction follow from the integer coefficient binomial expansion and41j-40>=1 for every positive V-degreej. Finite digits only supplement the written Hensel proof."
+  },
+  "scope_limits": [
+    "Only primes at most29 and the real place are covered; no solubility at every larger prime or adelic-solubility claim.",
+    "No Q-rational model, Hasse principle, effective point list or rational nonexistence theorem.",
+    "The fixed-slope5-adic point itself is not assumed good; varying the slope and removing the finite bad locus proves infinitely many good points.",
+    "The two displayed Q5 branches are not asserted to exhaust the normalization's Q5 points.",
+    "Accessory S12, reconstructed Laurent A26, normalized cover parameters and the independent pencil parameter remain distinct.",
+    "Real coefficients and real points do not imply that all critical points are real.",
+    "All earlier frozen proof packages and metadata remain unchanged. No novelty or priority claim."
+  ],
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}

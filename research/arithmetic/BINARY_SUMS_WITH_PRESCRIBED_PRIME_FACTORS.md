@@ -523,7 +523,7 @@ the only remaining input for (V) at \(H=X^\theta\) is the sharp upper bound
 \]
 The matching lower bound and both mixed main-term moments are already proved.
 The [power-window theorem VqPower](PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md)
-now proves (E) for every fixed \(9/10<\theta<1\), including
+now proves (E) for every fixed \(5/6<\theta<1\), including
 \(\theta=99/100\), and gives
 \[
  \sum_{X<N\le2X}|r_{q,H}(N)-\mathcal M_q(N,H)|^2
@@ -533,7 +533,7 @@ The new proof uses short arithmetic progression means and a Type I/II
 factorization covering the entire semigroup. It supplies a full-count
 asymptotic outside \(O(X/(\log X)^{1/8})\) targets with relative error
 \(O((\log X)^{-1/16})\). Its constants are ineffective. The sharp energy
-for \(0<\theta\le9/10\), a power-saving full-count variance and every-target
+for \(0<\theta\le5/6\), a power-saving full-count variance and every-target
 binary counts remain open. D12Power separately gives power-saving exceptions
 for the lower count at \(q=12,\theta=99/100\). Dq still gives a lower bound in its wider range
 \(\theta>1/3\), with stronger logarithmic exception estimates; these are
@@ -654,13 +654,23 @@ residue density is 3 on these four classes and zero elsewhere. This does
 not force both summands into \(C_{12}\): even at \(N\equiv2\pmod{12}\),
 \(25+49=74\) has \(25\in C_4\) and \(49\in C_3\), with neither in
 \(C_{12}\). The extra prime exclusions are \(5\bmod12\) on the first
-side and \(7\bmod12\) on the second. In the R2 local model, either event
+side and \(7\bmod12\) on the second. In the tau-weighted R2 local model, either event
 has density \((2p-1)/(p^2-p+1)\) when \(p\nmid N\), and zero when
 \(p\mid N\). Each family has sieve dimension \(1/2\), so together they
 have dimension 1. Starting with \(C_{12}+C_3\) imposes the first
 restriction before the final sieve and leaves one half-dimensional family.
 This compares the two routes; it does not provide their missing joint
 large-coefficient distribution estimate.
+The [unweighted coupled sieve](COUPLED_GAUSSIAN_EISENSTEIN_SIEVE.md) has a
+half-dimensional Haar model instead: each excluded prime has density
+\(1/(p-1)\) away from target divisors. Its bare proposed main
+\(g_N(d)R_0(N)\) fails at every positive power level, because power-size
+cofactors change the logarithmic density by a nonvanishing factor. This
+failure does not refute the weighted R2 model or two-sided coverage. The
+same note proves an unconditional two-large-prime upper bound of order
+\(\epsilon^{5/4}N J_{12}(N)/(\log N)^{3/2}\); a sufficient sifted lower
+bound with a corrected distribution model remains open. Thus the weighted
+R2 dimension is not intrinsic to the underlying mixed sumset.
 The [semilinear criterion](ASYMMETRIC_SEMILINEAR_SIEVE.md) instead isolates
 a sufficient signed sieve remainder with level \(N^{1/2+\sigma}\),
 \(\sigma>0\). Its local model, parity reduction and small-kernel tail are
@@ -687,7 +697,14 @@ second weight. Replacing the remaining prime-supported coefficient by any
 fixed-periodic function has full-order mean-square error, even before the
 Rosser selector becomes nontrivial. These are specific simplification
 obstructions, not a cancellation estimate or a counterexample to binary
-coverage. The main target remains S12U:
+coverage. The [well-factorability analysis](ASYMMETRIC_WELL_FACTORABLE_SWITCH.md)
+proves that pure well-factorable divisor lower weights cannot replace the
+critical Rosser weight, even on infinitely many actual target supports.
+It also switches the branch above \(\sqrt D\) exactly to upper Rosser
+weights at level \(D/p\), without asserting those upper weights are well
+factorable. Fouvry's large-residue theorem controls some boxes satisfying
+its precise Siegel--Walfisz hypothesis; neither it nor the switch estimates
+the full critical remainder. The main target remains S12U:
 every sufficiently large \(N\equiv2\pmod{12}\) is a sum of two members of
 \(C_{12}\), without a balance restriction. Seek a pointwise lower bound for
 \[
@@ -765,8 +782,17 @@ shows that positivity and the present separate Legendre bounds cannot force
 an exponent below \(2/3\): an abstract positive measure with an empty
 central interval already satisfies those bounds. Further progress needs
 additional information, such as joint cancellation across degrees. This
-barrier is not an arithmetic counterexample. Enlarging a finite scan or reducing an already positive sieve margin
-would not settle these questions.
+barrier is not an arithmetic counterexample. The stronger
+[single-index operator relaxation](EISENSTEIN_SINGLE_INDEX_OPERATOR_BARRIER.md)
+retains self-adjoint convolution by a nonnegative measure and the finite
+prime-to-index conditional coset means while leaving the same angular gap.
+Positivity means preservation of nonnegative functions; the operator has
+negative eigenvalues. This continuous model is not an arithmetic shell or
+a multiplicative Hecke family: using it as a prime kernel would make the
+prime-square recurrence require a negative identity atom. Relations between indices and arithmetic
+discreteness remain possible ways beyond this information barrier.
+Enlarging a finite scan or reducing an already positive sieve margin would
+not settle these questions.
 
 The [central-gap theorem FBSGap](PRESCRIBED_PRIME_CENTRAL_GAPS.md)
 quantifies the polylogarithmic obstruction. For each fixed \(q\), infinitely
@@ -781,11 +807,11 @@ fixed positive power window in FBS-U untouched.
 
 **Campaign D: sharp four-form energy.** The initial \(q=12\),
 \(\theta=99/100\) target is resolved by VqPower, which covers every fixed
-\(q\ge3\) and \(9/10<\theta<1\). It gives the full target-dependent
+\(q\ge3\) and \(5/6<\theta<1\). It gives the full target-dependent
 main term and the sharp second-moment coefficient, with a logarithmic rate.
 D12Power now gives a power-saving exceptional set for a lower count at
 \(q=12,\theta=99/100\). The next tasks are to lower the full-variance
-exponent to \(\theta\le9/10\), obtain a power-saving full-count variance,
+exponent to \(\theta\le5/6\), obtain a power-saving full-count variance,
 extend the lower-count exception result and develop a separate pointwise
 mechanism. A mean-square theorem does not eliminate the last exceptional
 target. Campaign D is not a prerequisite for Campaigns A and B.
@@ -829,7 +855,7 @@ here concern the stated clean congruence family.
 | Bounded excluded prime factors | Every-target counts at \(N J_q/(\log N)^{2-2/\varphi(q)}\), with the first summand in \(C_q\) and only boundedly many large excluded prime factors in the second |
 | Asymmetric distribution level | A full auxiliary-modulus average proves an \(L^1\) level at every fixed exponent below \(\xi\); the critical square-root level remains open |
 | Highest-priority arithmetic target | Prove S12U through the critical sieve remainder or the global norm lower bound and fixed-prime marginals |
-| Power-window full-count variance | VqPower proves (E) and quantitative centered variance for every fixed \(q\), \(9/10<\theta<1\); lower exponents and power-saving full variance remain open |
+| Power-window full-count variance | VqPower proves (E) and quantitative centered variance for every fixed \(q\), \(5/6<\theta<1\); lower exponents and power-saving full variance remain open |
 | Power-saving lower-count exceptions | D12Power gives \(H/(\log X)^{3/2}\) pairs outside \(O(X^{1-10^{-6}})\) targets for \(q=12,H=X^{99/100}\) |
 | Weighted simultaneous-norm correlations | SimNormPower gives exact raw and fully sifted main terms and actual bad-prime marginals outside a power exceptional set, including fixed balance intervals and all target valuations |
 | Main general conjecture | FBS-U asks for the semigroup-scale count on every compatible large target |

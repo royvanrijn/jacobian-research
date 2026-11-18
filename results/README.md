@@ -4,7 +4,7 @@ Each of these five papers has a verified public deposit. The paper directory con
 
 | Current paper | Result | Published edition |
 |---|---|---|
-| [Counterexamples to the Mathieu Property](mathieu-reductive-homogeneous-spaces/) | General reductive homogeneous-space classification and fixed-multiplier counterexamples. | [17 November 2026; Hexagon pending](mathieu-reductive-homogeneous-spaces/published/) |
+| [Counterexamples to the Mathieu Property](mathieu-reductive-homogeneous-spaces/) | General reductive homogeneous-space classification and fixed-multiplier counterexamples. | [Zenodo · 17 November 2026](mathieu-reductive-homogeneous-spaces/published/) · [Hexagon · 18 November 2026](https://hexagonmath.org/2611.00556v1) |
 | [Generalized Vanishing Conjecture](generalized-vanishing-two-variables/) | Binary theorem, support certificates and sharp cutoff; homogeneous failure in dimension three. | [5 August 2026; also Hexagon](generalized-vanishing-two-variables/published/) |
 | [Four-term Special Image counterexample](three-pair-image-counterexample/) | Four-term three-pair construction, plus the two-pair dimension boundary. | [28 July 2026](three-pair-image-counterexample/published/) |
 | [Sparse minimality in dimension three](sparse-minimality-gaussian-moments-dimension-three/) | No failure with both degree at most four and at most four Witt monomials. | [24 July 2026](sparse-minimality-gaussian-moments-dimension-three/published/) |

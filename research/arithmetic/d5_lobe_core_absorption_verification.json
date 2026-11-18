@@ -1,0 +1,793 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "source_sha256": {
+    "research/arithmetic/verify_d5_lobe_core_absorption.py": "ae3a84953a951263f0573794960d0f78c86d177dfc95459a6d5bb28e6410f393",
+    "research/arithmetic/D5_LOBE_BOUNDED_CORE_ABSORPTION.md": "e40a12316e4d096776846a050950fb52a6a0141457f5d246266caadfb6fc163f",
+    "research/arithmetic/verify_uniform_hurwitz_attachment.py": "00f250ed5d1c31ee38ba2279aec32dd877f6fff7e8907f94d87e5af255388bf2",
+    "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+    "research/arithmetic/degree_fourteen_hurwitz_verification.json": "009545e432aee4cf61c877f26b59b2e53c63d5153a8e5c644e1931dc43c14ced",
+    "research/arithmetic/verify_degree_fourteen_hurwitz_orbit.py": "3ed881ab1b52e015be9d88d82773a4dc3aa08be967770c6f1e4c4cd3c1a806ab",
+    "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09"
+  },
+  "fixed_core_cycles": [
+    [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        8
+      ]
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        10,
+        11
+      ]
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        11,
+        12
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    [
+      [
+        9,
+        10
+      ],
+      [
+        1,
+        3
+      ]
+    ]
+  ],
+  "fixed_core_product_cycle": [
+    0,
+    9,
+    11,
+    12,
+    10,
+    8,
+    2,
+    4,
+    6,
+    1,
+    3,
+    5,
+    7
+  ],
+  "fixed_core_three_cycle": [
+    0,
+    1,
+    6
+  ],
+  "fixed_target_conjugator": [
+    0,
+    4,
+    11,
+    6,
+    12,
+    1,
+    10,
+    3,
+    8,
+    5,
+    2,
+    7,
+    9
+  ],
+  "fixed_target_cycles": [
+    [
+      [
+        0,
+        4
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        4,
+        7
+      ]
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        4,
+        6
+      ]
+    ]
+  ],
+  "fixed_core_antipodal_pairs_after_leaf9": [
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      12
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      6,
+      11
+    ]
+  ],
+  "imported_absolute_core_orbit_size": 446265625,
+  "existential_literal_controller_word_bound": 446265984,
+  "controller_word_recovered_or_replayed": false,
+  "exact_bounded_controls": [
+    {
+      "old_factor_count": 4,
+      "new_factor_count": 6,
+      "new_degree": 13,
+      "outside_DT_count": 0,
+      "prefix_moves": 18,
+      "final_commuting_bring_and_inverse_slide_moves": 0,
+      "moves_outside_imported_fixed_controller": 18,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        1,
+        9,
+        3,
+        11,
+        8,
+        12,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 5,
+      "new_factor_count": 7,
+      "new_degree": 15,
+      "outside_DT_count": 1,
+      "prefix_moves": 27,
+      "final_commuting_bring_and_inverse_slide_moves": 5,
+      "moves_outside_imported_fixed_controller": 32,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        1,
+        11,
+        3,
+        13,
+        8,
+        14,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 6,
+      "new_factor_count": 8,
+      "new_degree": 17,
+      "outside_DT_count": 2,
+      "prefix_moves": 36,
+      "final_commuting_bring_and_inverse_slide_moves": 10,
+      "moves_outside_imported_fixed_controller": 46,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        1,
+        13,
+        3,
+        15,
+        8,
+        16,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 7,
+      "new_factor_count": 9,
+      "new_degree": 19,
+      "outside_DT_count": 3,
+      "prefix_moves": 45,
+      "final_commuting_bring_and_inverse_slide_moves": 15,
+      "moves_outside_imported_fixed_controller": 60,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        16,
+        13,
+        1,
+        15,
+        3,
+        17,
+        8,
+        18,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 8,
+      "new_factor_count": 10,
+      "new_degree": 21,
+      "outside_DT_count": 4,
+      "prefix_moves": 54,
+      "final_commuting_bring_and_inverse_slide_moves": 20,
+      "moves_outside_imported_fixed_controller": 74,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        16,
+        13,
+        18,
+        15,
+        1,
+        17,
+        3,
+        19,
+        8,
+        20,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 9,
+      "new_factor_count": 11,
+      "new_degree": 23,
+      "outside_DT_count": 5,
+      "prefix_moves": 63,
+      "final_commuting_bring_and_inverse_slide_moves": 25,
+      "moves_outside_imported_fixed_controller": 88,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        16,
+        13,
+        18,
+        15,
+        20,
+        17,
+        1,
+        19,
+        3,
+        21,
+        8,
+        22,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 10,
+      "new_factor_count": 12,
+      "new_degree": 25,
+      "outside_DT_count": 6,
+      "prefix_moves": 72,
+      "final_commuting_bring_and_inverse_slide_moves": 30,
+      "moves_outside_imported_fixed_controller": 102,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        16,
+        13,
+        18,
+        15,
+        20,
+        17,
+        22,
+        19,
+        1,
+        21,
+        3,
+        23,
+        8,
+        24,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 11,
+      "new_factor_count": 13,
+      "new_degree": 27,
+      "outside_DT_count": 7,
+      "prefix_moves": 81,
+      "final_commuting_bring_and_inverse_slide_moves": 35,
+      "moves_outside_imported_fixed_controller": 116,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        16,
+        13,
+        18,
+        15,
+        20,
+        17,
+        22,
+        19,
+        24,
+        21,
+        1,
+        23,
+        3,
+        25,
+        8,
+        26,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 12,
+      "new_factor_count": 14,
+      "new_degree": 29,
+      "outside_DT_count": 8,
+      "prefix_moves": 90,
+      "final_commuting_bring_and_inverse_slide_moves": 40,
+      "moves_outside_imported_fixed_controller": 130,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        16,
+        13,
+        18,
+        15,
+        20,
+        17,
+        22,
+        19,
+        24,
+        21,
+        26,
+        23,
+        1,
+        25,
+        3,
+        27,
+        8,
+        28,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 25,
+      "new_factor_count": 27,
+      "new_degree": 55,
+      "outside_DT_count": 21,
+      "prefix_moves": 207,
+      "final_commuting_bring_and_inverse_slide_moves": 105,
+      "moves_outside_imported_fixed_controller": 312,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        16,
+        13,
+        18,
+        15,
+        20,
+        17,
+        22,
+        19,
+        24,
+        21,
+        26,
+        23,
+        28,
+        25,
+        30,
+        27,
+        32,
+        29,
+        34,
+        31,
+        36,
+        33,
+        38,
+        35,
+        40,
+        37,
+        42,
+        39,
+        44,
+        41,
+        46,
+        43,
+        48,
+        45,
+        50,
+        47,
+        52,
+        49,
+        1,
+        51,
+        3,
+        53,
+        8,
+        54,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "old_factor_count": 50,
+      "new_factor_count": 52,
+      "new_degree": 105,
+      "outside_DT_count": 46,
+      "prefix_moves": 432,
+      "final_commuting_bring_and_inverse_slide_moves": 230,
+      "moves_outside_imported_fixed_controller": 662,
+      "literal_core_and_outside_formula": true,
+      "endpoint_is_canonical_Wr_after_explicit_relabeling": true,
+      "marked_common_root0_preserved": true,
+      "normalizing_relabeling": [
+        0,
+        5,
+        10,
+        7,
+        12,
+        9,
+        14,
+        11,
+        16,
+        13,
+        18,
+        15,
+        20,
+        17,
+        22,
+        19,
+        24,
+        21,
+        26,
+        23,
+        28,
+        25,
+        30,
+        27,
+        32,
+        29,
+        34,
+        31,
+        36,
+        33,
+        38,
+        35,
+        40,
+        37,
+        42,
+        39,
+        44,
+        41,
+        46,
+        43,
+        48,
+        45,
+        50,
+        47,
+        52,
+        49,
+        54,
+        51,
+        56,
+        53,
+        58,
+        55,
+        60,
+        57,
+        62,
+        59,
+        64,
+        61,
+        66,
+        63,
+        68,
+        65,
+        70,
+        67,
+        72,
+        69,
+        74,
+        71,
+        76,
+        73,
+        78,
+        75,
+        80,
+        77,
+        82,
+        79,
+        84,
+        81,
+        86,
+        83,
+        88,
+        85,
+        90,
+        87,
+        92,
+        89,
+        94,
+        91,
+        96,
+        93,
+        98,
+        95,
+        100,
+        97,
+        102,
+        99,
+        1,
+        101,
+        3,
+        103,
+        8,
+        104,
+        6,
+        2,
+        4
+      ]
+    }
+  ],
+  "degree_nine_base_control": {
+    "degree": 9,
+    "absolute_orbit_size": 6561,
+    "literal_controller_bound": 6656,
+    "target_conjugator": [
+      0,
+      1,
+      7,
+      3,
+      8,
+      4,
+      6,
+      2,
+      5
+    ],
+    "target_root0_preserved": true,
+    "literal_base_controller_replayed": false
+  },
+  "complete_bouquet_endpoint_controls": [
+    {
+      "lobes": 2,
+      "final_factor_count": 4,
+      "final_degree": 9,
+      "moves_outside_finitely_imported_controllers": 0,
+      "base_controller_count": 1,
+      "thirteen_sheet_controller_count": 0,
+      "marked_root0_preserved_at_every_stage": true,
+      "final_tuple_canonical": true
+    },
+    {
+      "lobes": 3,
+      "final_factor_count": 6,
+      "final_degree": 13,
+      "moves_outside_finitely_imported_controllers": 18,
+      "base_controller_count": 1,
+      "thirteen_sheet_controller_count": 1,
+      "marked_root0_preserved_at_every_stage": true,
+      "final_tuple_canonical": true
+    },
+    {
+      "lobes": 4,
+      "final_factor_count": 8,
+      "final_degree": 17,
+      "moves_outside_finitely_imported_controllers": 64,
+      "base_controller_count": 1,
+      "thirteen_sheet_controller_count": 2,
+      "marked_root0_preserved_at_every_stage": true,
+      "final_tuple_canonical": true
+    },
+    {
+      "lobes": 5,
+      "final_factor_count": 10,
+      "final_degree": 21,
+      "moves_outside_finitely_imported_controllers": 138,
+      "base_controller_count": 1,
+      "thirteen_sheet_controller_count": 3,
+      "marked_root0_preserved_at_every_stage": true,
+      "final_tuple_canonical": true
+    },
+    {
+      "lobes": 8,
+      "final_factor_count": 16,
+      "final_degree": 33,
+      "moves_outside_finitely_imported_controllers": 528,
+      "base_controller_count": 1,
+      "thirteen_sheet_controller_count": 6,
+      "marked_root0_preserved_at_every_stage": true,
+      "final_tuple_canonical": true
+    },
+    {
+      "lobes": 12,
+      "final_factor_count": 24,
+      "final_degree": 49,
+      "moves_outside_finitely_imported_controllers": 1440,
+      "base_controller_count": 1,
+      "thirteen_sheet_controller_count": 10,
+      "marked_root0_preserved_at_every_stage": true,
+      "final_tuple_canonical": true
+    }
+  ],
+  "uniform_bound": "446265984+14r-38 ordinary signed Hurwitz moves, then one explicit sheet relabeling fixing0; canonicalWr_r plus ONE root0 D5lobe, r>=4.",
+  "bouquet_uniform_bound": "6656+(t-2)*446265984+14t^2-52t+48 moves, t>=2; common-root0 preserved after every stage.",
+  "scope": "Complete root-preserving one-lobe conversion and quadratic total upper bound for the unbuffered bouquet, using frozen finite n9/n13 connectivity. No all-tuple connectivity, arbitrary old-root absorption, linear total bouquet bound or unproved interface substitution.",
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}

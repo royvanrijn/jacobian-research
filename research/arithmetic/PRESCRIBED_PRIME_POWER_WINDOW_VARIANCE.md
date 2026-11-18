@@ -20,7 +20,7 @@ S_q(N)=L\mathbf1_{N\equiv2\bmod L}\prod_{p\in\mathcal B}
 The primes in \(\mathcal B\) are odd. This product is bounded below by a
 positive \(q\)-dependent constant on the compatible progression.
 
-**Theorem VqPower.** Fix \(9/10<\theta<1\) and \(H=X^\theta\). For ordered
+**Theorem VqPower.** Fix \(5/6<\theta<1\) and \(H=X^\theta\). For ordered
 positive summands, put
 \[
 r_{q,H}(N)=\sum_{\substack{a+b=N\\ |a-b|\le H}}f(a)f(b).
@@ -43,11 +43,15 @@ factorization treats every supported integer. Parseval then estimates the
 difference between two local binary convolutions. Averaging over interval
 starts gives the sharp balanced-pair cutoff of (P1).
 
+The companion audit derives a conditional number-field prime-ideal estimate
+and identifies the additional hypotheses needed for the other proposed
+transfers. [Eisenstein Hecke transfer audit](EISENSTEIN_HECKE_TRANSFER_AUDIT.md).
+
 ## A short-interval estimate for character twists
 
 Throughout the proof choose fixed real numbers satisfying
 \[
-4/5<\gamma<2\theta-1,\qquad 1-\gamma<\tau<1/5,\qquad
+2/3<\gamma<2\theta-1,\qquad 1-\gamma<\tau<1/3,\qquad
 1-\tau<\gamma_0<\gamma .
 \]
 For every fixed \(A,B>0\), \(t^{\gamma_0}\le y\le t\), \(d\le(\log t)^B\)
@@ -96,13 +100,18 @@ edges it is also \(O(t^\sigma/T)\).
 For \(Q_0\ll_q(\log t)^B\), the number of product zeros with
 \(\Re\rho\ge v,\ |\Im\rho|\le T\), counted with multiplicity, satisfies
 \[
- N(v,T)\ll_q (Q_0^2T)^{3(1-v)/(2-v)}\log^{13}(2Q_0T),\qquad 1/2\le v\le1 .
+ N(v,T)\ll_q (Q_0^2T)^{(5/2)(1-v)}\log^{13}(2Q_0T),\qquad 1/2\le v\le1 .
 \]
-Montgomery's estimate sums over all primitive characters with conductor
-at most \(Q_0\). Our list repeats each at most \(\varphi(L)\) times, and
-imprimitive Euler factors have zeros only on \(\Re s=0\).
-[Montgomery, *Zeros of L-functions*, Theorem 1](https://doi.org/10.1007/BF01404638)
-and [Inoue, Lemma 1, p. 282](https://www.numdam.org/item/10.5802/jtnb.1162.pdf).
+For \(v\le4/5\) use Montgomery's exponent \(3(1-v)/(2-v)\), since
+\(3/(2-v)\le5/2\). For \(v\ge4/5\) use Jutila's exponent
+\((2+\varepsilon)(1-v)\) with \(\varepsilon=1/4\). Both sum over primitive
+characters with conductor at most \(Q_0\), including the zeta factor via
+the conductor-one character. Reflection gives the bound at negative heights.
+Our list repeats each inducing primitive character at most \(\varphi(L)\)
+times, and imprimitive Euler factors have zeros only on \(\Re s=0\).
+[Montgomery, Theorem 1](https://doi.org/10.1007/BF01404638),
+[Jutila, Theorem 1, (1.8)](https://journals.msp.org/mscand/article/download/1943/1942/1974),
+and [Inoue, Lemma 1](https://www.numdam.org/item/10.5802/jtnb.1162.pdf).
 
 All zeros in the rectangle have \(\Re\rho\le1-\delta\), with
 \(\delta\gg_{q,B}(\log t)^{-3/4}\) for large \(t\). For heights at least
@@ -119,13 +128,23 @@ On the rectangle, away from a fixed small disk about \(1\) in the untwisted
 case, every branch satisfies
 \[
  |F_\chi(\sigma+iu)|\ll_q(\log t)^{O(1)}
- (Q_0(T+2))^{2\max(0,1-\sigma)}. \tag{P4}
+ (Q_0(T+2))^{\max(0,1-\sigma)/2}. \tag{P4}
 \]
-For nonprincipal \(L\)-functions truncate the defining sum at
-\(M=\lceil(Q_0(T+2))^2\rceil\). The tail is \(O(Q_0(1+|s|)M^{-\sigma})\)
-by partial summation and periodic character cancellation. The head is
-\(O(\log(2M)M^{\max(0,1-\sigma)})\). Euler summation for the fixed principal
-factor adds \(M^{1-s}/(s-1)\), covered away from the disk.
+Here convexity needs only logarithmic losses. For a primitive factor of
+conductor \(Q\), fix the output height \(u\) and set
+\(\rho=1/\log(10Q(3+|u|))\). On the line \(1+\rho\) the Euler series costs
+\(O(\rho^{-1})\). On the line \(-\rho\) the functional equation and
+Stirling give \(O(\rho^{-1}(Q(3+|v|))^{1/2+\rho})\) at height \(v\).
+For \(\zeta\) apply these bounds to \((s-1)\zeta(s)/(s+1)\) to remove the
+pole. Multiply by \(\exp((s-iu)^2)\) and apply the three-lines theorem.
+The Gaussian bounds the left-edge height factor by a constant times
+\((3+|u|)^{1/2+\rho}\), using \(3+|v|\le(3+|u|)(1+|v-u|)\).
+For \(\sigma\le1+\rho\) the resulting exponent is
+\((1+\rho-\sigma)/2\). The \(\rho/2\) costs an absolute constant.
+For \(\sigma>1+\rho\) the Euler-series bound suffices. On the rectangle
+the finite Euler factors cost at most \(2^{\omega(Q_0)}\le Q_0\), a log
+power. The principal pole multiplier is bounded away from zero outside
+the disk. Taking the geometric mean gives (P4) on every branch.
 
 Cut horizontally leftward from each distinct zero to the edge \(\sigma_0\),
 taking the union of overlapping slits. In the untwisted case cut also from
@@ -136,19 +155,24 @@ integral on the two sides of all zero slits is bounded by
 \[
  \ll y(\log t)^{O(1)}
  \int_{\sigma_0}^{1-\delta}
- t^{-(1-v)}(Q_0(T+2))^{2(1-v)}(Q_0^2T)^{3(1-v)}\,dv
+ t^{-(1-v)}(Q_0(T+2))^{(1-v)/2}(Q_0^2T)^{(5/2)(1-v)}\,dv
  \ll_{q,A,B,\theta} y(\log t)^{-A}. \tag{P5}
 \]
 At each \(v\) the number of banks is at most twice the number of zeros
-with real part at least \(v\). The net power of \(t\) in the integrand is
-at most \(-(1-5\tau-o(1))(1-v)\), and \(\delta\log t\gg(\log t)^{1/4}\).
+with real part at least \(v\). Absorbing all \(Q_0\) factors into the log
+loss leaves the power \(t^{-(1-3\tau)(1-v)}\). The saving is positive and
+\(\delta\log t\gg(\log t)^{1/4}\).
 For the fixed untwisted product choose \(r>0\) so small that all its factors
 are zero-free in \(|s-1|\le4r\). No zero slit can meet \(|s-1|<r\):
 a zero to its right with \(|\Im\rho|<r\) would lie in the larger disk.
 The part of the pole slit to the left of \(1-r\) costs \(O_q(yt^{-c})\)
 for some \(c>0\) by (P4). The left vertical edge costs at most
-\(y t^{-0.40+1.82\tau+o(1)}\). The horizontal edges and Perron truncation
-cost \(O(t^{1-\tau}(\log t)^{O(1)})\). All are absorbed by (P5).
+\(y t^{-2/5+(6/5)\tau}(\log t)^{O(1)}\), using
+\(\sigma_0\le3/5\) in \(-(1-\sigma_0)+\tau(1+(1-\sigma_0)/2)\).
+The horizontal edges cost \(O(t^{1-\tau}(\log t)^{O(1)})\) by the second
+kernel bound and \(\tau<1/3\). The same bound covers Perron truncation.
+Since \(\gamma_0>1-\tau\), these edge and truncation errors are
+\(O(y(\log t)^{-A})\) for every fixed \(A\).
 
 For (P3), \(B_0(s)=(s-1)^\alpha F(s)\) extends holomorphically across
 \(|s-1|\le2r\) with \(B_0(1)>0\). The remaining two sides of the real slit
@@ -250,7 +274,7 @@ fixed divisor moment by a higher divisor function and summing its convolution.
 
 First consider a sum \(B_{II}\) of \(a_m b_k e(\beta mk)\) over
 \(M<m\le2M,\ K<k\le2K,\ mk\in I\), with both coefficients bounded in this
-sense and \(M,K\gg X^{0.12}\). Interchange the variables to arrange
+sense and \(M,K\gg X^{1/6}\). Interchange the variables to arrange
 \(M\le K\), so \(M\ll\sqrt X\). Apply Cauchy–Schwarz in \(k\).
 Two values \(m,m+j\) can then contribute only for \(|j|\ll hM/X\).
 For each such pair the remaining \(k\) range is an interval of length
@@ -270,10 +294,10 @@ since points within one block are \(1/(2d)\)-separated. With
  \left\{\frac{X}{hM}+\frac1d+\frac{M\log X}{h}
                          +\frac{Xd\log X}{h^2}\right\}. \tag{P10}
 \]
-Here \(X/(hM)\ll X^{0.88-\theta}\). Each term admits the saving needed in
+Here \(X/(hM)\ll X^{5/6-\theta}\). Each term admits the saving needed in
 (P9) when \(B\) is sufficiently large.
 
-For a linear inner sum, suppose the small index \(\ell\ll X^{0.39}\) has a
+For a linear inner sum, suppose the small index \(\ell\ll X^{1/2}\) has a
 divisor-bounded coefficient. The other variable ranges over \(I/\ell\)
 with weight \(1\), a fixed character modulo \(L\), or such a character times
 \(\log k\). Remove the logarithm by partial summation. Splitting into classes
@@ -299,14 +323,15 @@ It remains to produce precisely these sums for the full function \(f\).
 Write \(P^+(n)\) and \(P^-(n)\) for the largest and smallest prime
 factors of \(n>1\).
 
-1. **When \(P^+(n)\le X^{0.85}\)**, list the prime factors of \(n\) in
+1. **When \(P^+(n)\le X^{5/6}\)**, list the prime factors of \(n\) in
    decreasing order, with multiplicity. Let \(m\) be the shortest initial
-   product exceeding \(X^{0.12}\), and \(k=n/m\). If the product uses at
+   product exceeding \(X^{1/6}\), and \(k=n/m\). If the product uses at
    least two factors, both the preceding product and the last factor are
-   at most \(X^{0.12}\). Thus \(X^{0.12}<m\le X^{0.85}\) and
-   \(k\gg X^{0.15}\). Conversely the conditions
-   \(m>X^{0.12}\), \(m/P^-(m)\le X^{0.12}\),
-   \(P^+(m)\le X^{0.85}\) and \(P^+(k)\le P^-(m)\) select that unique
+   at most \(X^{1/6}\), so \(m\le X^{1/3}\) in that case.
+   Thus \(X^{1/6}<m\le X^{5/6}\) and
+   \(k\gg X^{1/6}\). Conversely the conditions
+   \(m>X^{1/6}\), \(m/P^-(m)\le X^{1/6}\),
+   \(P^+(m)\le X^{5/6}\) and \(P^+(k)\le P^-(m)\) select that unique
    factorization, including at repeated primes. The coefficients are
    \(f(m)f(k)\). Separate the last inequality by expanding the indicator
    of \([0,\lceil2X\rceil]\) on a cyclic group of order greater than
@@ -316,22 +341,22 @@ factors of \(n>1\).
    separate factors on \(m\) and \(k\). Apply (P10) on \(O(\log^2 X)\)
    dyadic blocks.
 
-2. **When \(P^+(n)>X^{0.85}\)** this prime is unique and has exponent one.
-   Write \(n=up\), \(f(u)=1,\ p\equiv1\bmod L\). Keep \(u\le x/X^{0.85}\).
-   On this range \(up\in I\) already enforces \(p>X^{0.85}\). The omitted
-   band \(x/X^{0.85}<u\le(x+h)/X^{0.85}\) contributes at most
-   \(O((h/X^{0.85}+1)(h/X^{0.15}+1))\). Replace the prime indicator by
+2. **When \(P^+(n)>X^{5/6}\)** this prime is unique and has exponent one.
+   Write \(n=up\), \(f(u)=1,\ p\equiv1\bmod L\). Keep \(u\le x/X^{5/6}\).
+   On this range \(up\in I\) already enforces \(p>X^{5/6}\). The omitted
+   band \(x/X^{5/6}<u\le(x+h)/X^{5/6}\) contributes at most
+   \(O((h/X^{5/6}+1)(h/X^{1/6}+1))\). Replace the prime indicator by
    \(\Lambda(p)/\log(x/u)\), keeping its congruence. On primes,
    \(\log p=\log(x/u)+O(h/X)\), and
-   \(\sum_{u\ll X^{0.15}}(h/u+1)\ll h\log X\), so this replacement
+   \(\sum_{u\ll X^{1/6}}(h/u+1)\ll h\log X\), so this replacement
    costs \(O(h^2(\log X)^{O(1)}/X)\). The extra prime powers cost
-   \(O(X^{0.575}(\log X)^{O(1)})\), by summing
-   \(O((X/u)^{1/2}\log X)\) over \(u\ll X^{0.15}\). All three errors
+   \(O(X^{7/12}(\log X)^{O(1)})\), by summing
+   \(O((X/u)^{1/2}\log X)\) over \(u\ll X^{1/6}\). All three errors
    are \(O(hZ^{-J_0})\) for fixed \(\theta<1\).
 
    Detect the progression by characters modulo \(L\). Let
    \(\mu_{\rm M}\) denote the Möbius function, \(*\) Dirichlet convolution
-   in this paragraph, and take \(U_0=V_0=X^{0.12}\). At arguments
+   in this paragraph, and take \(U_0=V_0=X^{1/6}\). At arguments
    exceeding \(V_0\), Vaughan's identity takes the form
    \[
    \Lambda=(\mu_{\rm M})_{\le U_0}*\log
@@ -341,9 +366,9 @@ factors of \(n>1\).
    This follows from \(\mu_{\rm M}*1=\mathbf1_{\{1\}}\) and
    \(1*\Lambda=\log\). Each fixed character factors over the convolution
    variables. In the first two terms combine \(u\) with the bounded small
-   product to obtain \(\ell\ll X^{0.15}U_0V_0=X^{0.39}\).
+   product to obtain \(\ell\ll X^{1/6}U_0V_0=X^{1/2}\).
    The remaining variable has the linear weight treated above. In the last
-   term both displayed convolution indices exceed \(X^{0.12}\). Combine
+   term both displayed convolution indices exceed \(X^{1/6}\). Combine
    \(u\) with the first and apply (P10). The cutoff on \(u\) and the
    factor \(1/\log(x/u)\) belong to its coefficient. All resulting
    coefficients are bounded by fixed divisor and logarithm powers.

@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "scope": "finite exact diagnostics only; no analytic asymptotic, UBV, eventual coverage, cutoff or external review certified",
+  "limit": 2400,
+  "checks": {
+    "separate_residues": 2529,
+    "separate_even_parities": 2529,
+    "exact_coefficient_identity": 1100,
+    "supported_squarefree_input": 1600,
+    "target_prime_zero": 180,
+    "two_large_prime_structure": 272,
+    "good_cofactor_bound": 272,
+    "exact_good_content_drop": 2772,
+    "local_g0_all_target_depths": 16,
+    "good_local_all_valuation_depths": 64,
+    "bad_local_exact_target_correction": 144,
+    "exact_averaged_rectangle": 4,
+    "exact_power_cofactor_domain": 16,
+    "exact_averaged_target_correction": 16,
+    "target_correction_nonnegative": 16,
+    "residue_does_not_imply_intersection": 1,
+    "weighted_density_is_different": 1,
+    "bad_content_drop_rejected": 1,
+    "unsifted_four_prime_control": 1
+  },
+  "total_checks": 11534,
+  "source_sha256": {
+    "research/arithmetic/COUPLED_GAUSSIAN_EISENSTEIN_SIEVE.md": "c695e02149be931167e5b79f6c537e4961bc8258b35b536e18ef351865c3e757",
+    "research/arithmetic/ASYMMETRIC_SUBGROUP_SPLITTING.md": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+    "research/arithmetic/sources/henriot-erratum-2014.pdf": "bd56f8f411457549c5cc53f9b24bbdec68544dca09cfe0836e35cc1b25677d6f",
+    "research/arithmetic/sources/granville-koukoulopoulos-1710.01389v3.pdf": "8dd052fd0a3cc0167058a678450d0c70f999a7ed42aa8542025f840570d58187",
+    "research/arithmetic/sources/loughran-matthiesen-1904.12845v2.pdf": "ffbb0c2e6a6a39e090ebd6102f2a3b8936208df33c11bdf7c892744756c10203"
+  },
+  "checker_sha256": "96b1f11dc7e9c6d95eccd2eedb4303cc75c2234fcb73b12e5117bc967e72e059"
+}

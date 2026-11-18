@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "toric_charts": [
+    {
+      "prime": 2,
+      "m": 0,
+      "a": 0,
+      "b": 1,
+      "root": 1,
+      "G_terms": 1807,
+      "transformed_coefficients_all_integral": true,
+      "minimum_transformed_coefficient_valuation": 0,
+      "full_reduction_terms_i_k_coefficient": [
+        [
+          11,
+          0,
+          1
+        ],
+        [
+          12,
+          0,
+          1
+        ]
+      ],
+      "partial_X_at_residue_root": 1,
+      "transformed_coefficients_sha256": "0d9faa1887b512e7d84b8f6d53ea58cb6a78b4191c451321d2b7de6963838391",
+      "unit_parameter_valuations": {
+        "t": -1,
+        "s": -1
+      },
+      "V1_unique_Hensel_controls": [
+        {
+          "precision": 1,
+          "X_mod_p_power": 1
+        },
+        {
+          "precision": 2,
+          "X_mod_p_power": 1
+        },
+        {
+          "precision": 3,
+          "X_mod_p_power": 5
+        },
+        {
+          "precision": 4,
+          "X_mod_p_power": 5
+        },
+        {
+          "precision": 5,
+          "X_mod_p_power": 5
+        },
+        {
+          "precision": 6,
+          "X_mod_p_power": 5
+        },
+        {
+          "precision": 7,
+          "X_mod_p_power": 5
+        },
+        {
+          "precision": 8,
+          "X_mod_p_power": 5
+        }
+      ],
+      "uniformity": "For every V in Zp, one unique X congruent root modp; finite tests supplement written Hensel proof."
+    },
+    {
+      "prime": 3,
+      "m": 18,
+      "a": -2,
+      "b": 2,
+      "root": 2,
+      "G_terms": 1807,
+      "transformed_coefficients_all_integral": true,
+      "minimum_transformed_coefficient_valuation": 0,
+      "full_reduction_terms_i_k_coefficient": [
+        [
+          11,
+          0,
+          1
+        ],
+        [
+          12,
+          0,
+          1
+        ]
+      ],
+      "partial_X_at_residue_root": 2,
+      "transformed_coefficients_sha256": "2dd4e81cf92ee23cf1b5f7aa95270e2dccbbfeab96b92117895b79862b398cad",
+      "unit_parameter_valuations": {
+        "t": -2,
+        "s": -4
+      },
+      "V1_unique_Hensel_controls": [
+        {
+          "precision": 1,
+          "X_mod_p_power": 2
+        },
+        {
+          "precision": 2,
+          "X_mod_p_power": 5
+        },
+        {
+          "precision": 3,
+          "X_mod_p_power": 23
+        },
+        {
+          "precision": 4,
+          "X_mod_p_power": 77
+        },
+        {
+          "precision": 5,
+          "X_mod_p_power": 158
+        },
+        {
+          "precision": 6,
+          "X_mod_p_power": 158
+        },
+        {
+          "precision": 7,
+          "X_mod_p_power": 1616
+        },
+        {
+          "precision": 8,
+          "X_mod_p_power": 1616
+        }
+      ],
+      "uniformity": "For every V in Zp, one unique X congruent root modp; finite tests supplement written Hensel proof."
+    }
+  ],
+  "real_infinity": {
+    "primitive_leading_polynomial_ascending": [
+      3516552,
+      5171400,
+      8166600,
+      14469000,
+      32478600,
+      207017160,
+      -117119800,
+      26033800,
+      79781000,
+      234304200,
+      1527631560,
+      -1769265225,
+      4846248225
+    ],
+    "coefficient_content_removed": 9,
+    "degree": 12,
+    "gcd_with_derivative_degree": 0,
+    "Sturm_chain_degrees": [
+      12,
+      11,
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "signs_at_negative_infinity": [
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      -1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      -1
+    ],
+    "signs_at_positive_infinity": [
+      1,
+      1,
+      -1,
+      -1,
+      -1,
+      1,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "variations_negative": 7,
+    "variations_positive": 5,
+    "simple_real_roots": 2
+  },
+  "naive_projective_point": {
+    "S_T_U": [
+      1,
+      0,
+      0
+    ],
+    "exact_root": true,
+    "minimum_local_T_U_degree": 132,
+    "normalization_point_not_inferred_from_this_alone": true
+  },
+  "conclusion": "Infinitely many smooth good normalized affine-trace models over Q2,Q3,R; no Q-rational point or all-critical-real claim.",
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false,
+  "source_sha256": {
+    "research/arithmetic/verify_q26_small_prime_local_branches.py": "f50fa38d94c2549538c55fa6e91efe35dd9679a0f32d423552082e552b54eb1f",
+    "research/arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md": "424697fc2d4e9babe4a27443086904e5d824c0e0121a9ac5aafab9badd8e5643",
+    "research/arithmetic/q26_high_genus_affine_trace_curve_inputs.json": "0eb9334c67dfdd44a8646e7854e32e1336e226ab14ef6f9b8956bf177a0bafe0",
+    "research/arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md": "8505d90746b31273284436c3783df398c68315a3596c503a721c91863a0d2ea2",
+    "research/arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md": "8d53cd8b940e25ee11d2cd817d9356e7f8ce79692c40d68af5d0d06b80a03978",
+    "research/arithmetic/sources/milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819"
+  }
+}

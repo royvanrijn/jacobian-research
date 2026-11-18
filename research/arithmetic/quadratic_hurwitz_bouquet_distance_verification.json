@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "source_sha256": {
+    "research/arithmetic/verify_quadratic_hurwitz_bouquet_distance.py": "48035ce063455cbbf543f6dc008a04912827a43d819bcadcbc5adaf29c528e5b",
+    "research/arithmetic/QUADRATIC_HURWITZ_BOUQUET_DISTANCE.md": "d3c68619d26798d0c92f20feb04da235474bb51403462d2d3e732f62af09f436",
+    "research/arithmetic/verify_uniform_hurwitz_attachment.py": "00f250ed5d1c31ee38ba2279aec32dd877f6fff7e8907f94d87e5af255388bf2",
+    "research/arithmetic/D5_LOBE_BOUNDED_CORE_ABSORPTION.md": "e40a12316e4d096776846a050950fb52a6a0141457f5d246266caadfb6fc163f",
+    "research/arithmetic/d5_lobe_core_absorption_verification.json": "c30883467a62015edaa0b30a26e5d290db9bcb29a3964d9dbcf775b2afea5018",
+    "research/arithmetic/UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md": "95fc17c0a132473c215283e999af4218190c443a2441ac5bbddfb98af528ec28",
+    "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+    "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09"
+  },
+  "complete_local_span_control": {
+    "degree8_DT_class_size": 210,
+    "all_ordered_pairs_both_signs": 88200,
+    "maximum_minimal_historical_growth": 8,
+    "nonadjacent_swap_not_allowed_free": true
+  },
+  "all_deleted_sheet_controls": [
+    {
+      "lobes": 2,
+      "factor_count": 4,
+      "degree": 9,
+      "all_deleted_sheets_checked": 9,
+      "minimum_exact_sum_of_initial_pair_gaps": 3,
+      "uniform_pair_gap": 0,
+      "proved_total_gap_bound": 0,
+      "ordinary_word_lower_bound": 0
+    },
+    {
+      "lobes": 3,
+      "factor_count": 6,
+      "degree": 13,
+      "all_deleted_sheets_checked": 13,
+      "minimum_exact_sum_of_initial_pair_gaps": 9,
+      "uniform_pair_gap": 1,
+      "proved_total_gap_bound": 5,
+      "ordinary_word_lower_bound": 1
+    },
+    {
+      "lobes": 4,
+      "factor_count": 8,
+      "degree": 17,
+      "all_deleted_sheets_checked": 17,
+      "minimum_exact_sum_of_initial_pair_gaps": 22,
+      "uniform_pair_gap": 1,
+      "proved_total_gap_bound": 7,
+      "ordinary_word_lower_bound": 1
+    },
+    {
+      "lobes": 5,
+      "factor_count": 10,
+      "degree": 21,
+      "all_deleted_sheets_checked": 21,
+      "minimum_exact_sum_of_initial_pair_gaps": 36,
+      "uniform_pair_gap": 3,
+      "proved_total_gap_bound": 27,
+      "ordinary_word_lower_bound": 4
+    },
+    {
+      "lobes": 6,
+      "factor_count": 12,
+      "degree": 25,
+      "all_deleted_sheets_checked": 25,
+      "minimum_exact_sum_of_initial_pair_gaps": 57,
+      "uniform_pair_gap": 3,
+      "proved_total_gap_bound": 33,
+      "ordinary_word_lower_bound": 5
+    },
+    {
+      "lobes": 7,
+      "factor_count": 14,
+      "degree": 29,
+      "all_deleted_sheets_checked": 29,
+      "minimum_exact_sum_of_initial_pair_gaps": 79,
+      "uniform_pair_gap": 5,
+      "proved_total_gap_bound": 65,
+      "ordinary_word_lower_bound": 9
+    },
+    {
+      "lobes": 8,
+      "factor_count": 16,
+      "degree": 33,
+      "all_deleted_sheets_checked": 33,
+      "minimum_exact_sum_of_initial_pair_gaps": 108,
+      "uniform_pair_gap": 5,
+      "proved_total_gap_bound": 75,
+      "ordinary_word_lower_bound": 10
+    },
+    {
+      "lobes": 9,
+      "factor_count": 18,
+      "degree": 37,
+      "all_deleted_sheets_checked": 37,
+      "minimum_exact_sum_of_initial_pair_gaps": 138,
+      "uniform_pair_gap": 7,
+      "proved_total_gap_bound": 119,
+      "ordinary_word_lower_bound": 15
+    },
+    {
+      "lobes": 10,
+      "factor_count": 20,
+      "degree": 41,
+      "all_deleted_sheets_checked": 41,
+      "minimum_exact_sum_of_initial_pair_gaps": 175,
+      "uniform_pair_gap": 7,
+      "proved_total_gap_bound": 133,
+      "ordinary_word_lower_bound": 17
+    },
+    {
+      "lobes": 11,
+      "factor_count": 22,
+      "degree": 45,
+      "all_deleted_sheets_checked": 45,
+      "minimum_exact_sum_of_initial_pair_gaps": 213,
+      "uniform_pair_gap": 9,
+      "proved_total_gap_bound": 189,
+      "ordinary_word_lower_bound": 24
+    },
+    {
+      "lobes": 12,
+      "factor_count": 24,
+      "degree": 49,
+      "all_deleted_sheets_checked": 49,
+      "minimum_exact_sum_of_initial_pair_gaps": 258,
+      "uniform_pair_gap": 9,
+      "proved_total_gap_bound": 207,
+      "ordinary_word_lower_bound": 26
+    },
+    {
+      "lobes": 13,
+      "factor_count": 26,
+      "degree": 53,
+      "all_deleted_sheets_checked": 53,
+      "minimum_exact_sum_of_initial_pair_gaps": 304,
+      "uniform_pair_gap": 11,
+      "proved_total_gap_bound": 275,
+      "ordinary_word_lower_bound": 35
+    },
+    {
+      "lobes": 14,
+      "factor_count": 28,
+      "degree": 57,
+      "all_deleted_sheets_checked": 57,
+      "minimum_exact_sum_of_initial_pair_gaps": 357,
+      "uniform_pair_gap": 11,
+      "proved_total_gap_bound": 297,
+      "ordinary_word_lower_bound": 38
+    },
+    {
+      "lobes": 15,
+      "factor_count": 30,
+      "degree": 61,
+      "all_deleted_sheets_checked": 61,
+      "minimum_exact_sum_of_initial_pair_gaps": 411,
+      "uniform_pair_gap": 13,
+      "proved_total_gap_bound": 377,
+      "ordinary_word_lower_bound": 48
+    },
+    {
+      "lobes": 16,
+      "factor_count": 32,
+      "degree": 65,
+      "all_deleted_sheets_checked": 65,
+      "minimum_exact_sum_of_initial_pair_gaps": 472,
+      "uniform_pair_gap": 13,
+      "proved_total_gap_bound": 403,
+      "ordinary_word_lower_bound": 51
+    },
+    {
+      "lobes": 17,
+      "factor_count": 34,
+      "degree": 69,
+      "all_deleted_sheets_checked": 69,
+      "minimum_exact_sum_of_initial_pair_gaps": 534,
+      "uniform_pair_gap": 15,
+      "proved_total_gap_bound": 495,
+      "ordinary_word_lower_bound": 62
+    },
+    {
+      "lobes": 18,
+      "factor_count": 36,
+      "degree": 73,
+      "all_deleted_sheets_checked": 73,
+      "minimum_exact_sum_of_initial_pair_gaps": 603,
+      "uniform_pair_gap": 15,
+      "proved_total_gap_bound": 525,
+      "ordinary_word_lower_bound": 66
+    },
+    {
+      "lobes": 19,
+      "factor_count": 38,
+      "degree": 77,
+      "all_deleted_sheets_checked": 77,
+      "minimum_exact_sum_of_initial_pair_gaps": 673,
+      "uniform_pair_gap": 17,
+      "proved_total_gap_bound": 629,
+      "ordinary_word_lower_bound": 79
+    },
+    {
+      "lobes": 20,
+      "factor_count": 40,
+      "degree": 81,
+      "all_deleted_sheets_checked": 81,
+      "minimum_exact_sum_of_initial_pair_gaps": 750,
+      "uniform_pair_gap": 17,
+      "proved_total_gap_bound": 663,
+      "ordinary_word_lower_bound": 83
+    },
+    {
+      "lobes": 21,
+      "factor_count": 42,
+      "degree": 85,
+      "all_deleted_sheets_checked": 85,
+      "minimum_exact_sum_of_initial_pair_gaps": 828,
+      "uniform_pair_gap": 19,
+      "proved_total_gap_bound": 779,
+      "ordinary_word_lower_bound": 98
+    },
+    {
+      "lobes": 22,
+      "factor_count": 44,
+      "degree": 89,
+      "all_deleted_sheets_checked": 89,
+      "minimum_exact_sum_of_initial_pair_gaps": 913,
+      "uniform_pair_gap": 19,
+      "proved_total_gap_bound": 817,
+      "ordinary_word_lower_bound": 103
+    },
+    {
+      "lobes": 23,
+      "factor_count": 46,
+      "degree": 93,
+      "all_deleted_sheets_checked": 93,
+      "minimum_exact_sum_of_initial_pair_gaps": 999,
+      "uniform_pair_gap": 21,
+      "proved_total_gap_bound": 945,
+      "ordinary_word_lower_bound": 119
+    },
+    {
+      "lobes": 24,
+      "factor_count": 48,
+      "degree": 97,
+      "all_deleted_sheets_checked": 97,
+      "minimum_exact_sum_of_initial_pair_gaps": 1092,
+      "uniform_pair_gap": 21,
+      "proved_total_gap_bound": 987,
+      "ordinary_word_lower_bound": 124
+    },
+    {
+      "lobes": 25,
+      "factor_count": 50,
+      "degree": 101,
+      "all_deleted_sheets_checked": 101,
+      "minimum_exact_sum_of_initial_pair_gaps": 1186,
+      "uniform_pair_gap": 23,
+      "proved_total_gap_bound": 1127,
+      "ordinary_word_lower_bound": 141
+    },
+    {
+      "lobes": 26,
+      "factor_count": 52,
+      "degree": 105,
+      "all_deleted_sheets_checked": 105,
+      "minimum_exact_sum_of_initial_pair_gaps": 1287,
+      "uniform_pair_gap": 23,
+      "proved_total_gap_bound": 1173,
+      "ordinary_word_lower_bound": 147
+    },
+    {
+      "lobes": 27,
+      "factor_count": 54,
+      "degree": 109,
+      "all_deleted_sheets_checked": 109,
+      "minimum_exact_sum_of_initial_pair_gaps": 1389,
+      "uniform_pair_gap": 25,
+      "proved_total_gap_bound": 1325,
+      "ordinary_word_lower_bound": 166
+    },
+    {
+      "lobes": 28,
+      "factor_count": 56,
+      "degree": 113,
+      "all_deleted_sheets_checked": 113,
+      "minimum_exact_sum_of_initial_pair_gaps": 1498,
+      "uniform_pair_gap": 25,
+      "proved_total_gap_bound": 1375,
+      "ordinary_word_lower_bound": 172
+    },
+    {
+      "lobes": 29,
+      "factor_count": 58,
+      "degree": 117,
+      "all_deleted_sheets_checked": 117,
+      "minimum_exact_sum_of_initial_pair_gaps": 1608,
+      "uniform_pair_gap": 27,
+      "proved_total_gap_bound": 1539,
+      "ordinary_word_lower_bound": 193
+    },
+    {
+      "lobes": 30,
+      "factor_count": 60,
+      "degree": 121,
+      "all_deleted_sheets_checked": 121,
+      "minimum_exact_sum_of_initial_pair_gaps": 1725,
+      "uniform_pair_gap": 27,
+      "proved_total_gap_bound": 1593,
+      "ordinary_word_lower_bound": 200
+    },
+    {
+      "lobes": 31,
+      "factor_count": 62,
+      "degree": 125,
+      "all_deleted_sheets_checked": 125,
+      "minimum_exact_sum_of_initial_pair_gaps": 1843,
+      "uniform_pair_gap": 29,
+      "proved_total_gap_bound": 1769,
+      "ordinary_word_lower_bound": 222
+    },
+    {
+      "lobes": 32,
+      "factor_count": 64,
+      "degree": 129,
+      "all_deleted_sheets_checked": 129,
+      "minimum_exact_sum_of_initial_pair_gaps": 1968,
+      "uniform_pair_gap": 29,
+      "proved_total_gap_bound": 1827,
+      "ordinary_word_lower_bound": 229
+    },
+    {
+      "lobes": 33,
+      "factor_count": 66,
+      "degree": 133,
+      "all_deleted_sheets_checked": 133,
+      "minimum_exact_sum_of_initial_pair_gaps": 2094,
+      "uniform_pair_gap": 31,
+      "proved_total_gap_bound": 2015,
+      "ordinary_word_lower_bound": 252
+    },
+    {
+      "lobes": 34,
+      "factor_count": 68,
+      "degree": 137,
+      "all_deleted_sheets_checked": 137,
+      "minimum_exact_sum_of_initial_pair_gaps": 2227,
+      "uniform_pair_gap": 31,
+      "proved_total_gap_bound": 2077,
+      "ordinary_word_lower_bound": 260
+    },
+    {
+      "lobes": 35,
+      "factor_count": 70,
+      "degree": 141,
+      "all_deleted_sheets_checked": 141,
+      "minimum_exact_sum_of_initial_pair_gaps": 2361,
+      "uniform_pair_gap": 33,
+      "proved_total_gap_bound": 2277,
+      "ordinary_word_lower_bound": 285
+    },
+    {
+      "lobes": 36,
+      "factor_count": 72,
+      "degree": 145,
+      "all_deleted_sheets_checked": 145,
+      "minimum_exact_sum_of_initial_pair_gaps": 2502,
+      "uniform_pair_gap": 33,
+      "proved_total_gap_bound": 2343,
+      "ordinary_word_lower_bound": 293
+    },
+    {
+      "lobes": 37,
+      "factor_count": 74,
+      "degree": 149,
+      "all_deleted_sheets_checked": 149,
+      "minimum_exact_sum_of_initial_pair_gaps": 2644,
+      "uniform_pair_gap": 35,
+      "proved_total_gap_bound": 2555,
+      "ordinary_word_lower_bound": 320
+    },
+    {
+      "lobes": 38,
+      "factor_count": 76,
+      "degree": 153,
+      "all_deleted_sheets_checked": 153,
+      "minimum_exact_sum_of_initial_pair_gaps": 2793,
+      "uniform_pair_gap": 35,
+      "proved_total_gap_bound": 2625,
+      "ordinary_word_lower_bound": 329
+    },
+    {
+      "lobes": 39,
+      "factor_count": 78,
+      "degree": 157,
+      "all_deleted_sheets_checked": 157,
+      "minimum_exact_sum_of_initial_pair_gaps": 2943,
+      "uniform_pair_gap": 37,
+      "proved_total_gap_bound": 2849,
+      "ordinary_word_lower_bound": 357
+    },
+    {
+      "lobes": 40,
+      "factor_count": 80,
+      "degree": 161,
+      "all_deleted_sheets_checked": 161,
+      "minimum_exact_sum_of_initial_pair_gaps": 3100,
+      "uniform_pair_gap": 37,
+      "proved_total_gap_bound": 2923,
+      "ordinary_word_lower_bound": 366
+    }
+  ],
+  "complete_historical_word_balls": [
+    {
+      "lobes": 2,
+      "complete_signed_word_depth": 3,
+      "prefixes_by_length": {
+        "0": 1,
+        "1": 6,
+        "2": 36,
+        "3": 216
+      },
+      "total_prefixes": 259,
+      "wreath_leaf_endpoint_occurrences": 0
+    },
+    {
+      "lobes": 3,
+      "complete_signed_word_depth": 2,
+      "prefixes_by_length": {
+        "0": 1,
+        "1": 10,
+        "2": 100
+      },
+      "total_prefixes": 111,
+      "wreath_leaf_endpoint_occurrences": 0
+    }
+  ],
+  "detector_controls": {
+    "canonical_Wr_leaf8_accepted": true,
+    "initial_two_lobe_bouquet_rejected": true
+  },
+  "uniform_lower_bound": "ceil((2t-1)*max(0,2ceil(t/2)-3)/8), for every endpoint leaf",
+  "uniform_upper_bound": "6656+(t-2)*446265984+14t^2-52t+48",
+  "distance_order": "Theta(t^2) for unbuffered t-lobe bouquets to the wreath-leaf locus",
+  "scope": "Ordinary signed adjacent Hurwitz generators, allowing only common sheet relabelings for free. Uniform lower bound from historical intervals; upper imports frozen finite controllers. No general braid-orbit distinction or arbitrary-input connectivity theorem.",
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}

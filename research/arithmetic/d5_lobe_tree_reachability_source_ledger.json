@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/NATURAL_D5_LOBE_TREE_HURWITZ_REACHABILITY.md",
+  "claims": {
+    "family": "Ordered adjacent naturalD5 pairs, starting on5sheets and adding exactlyfour fresh sheets while sharing one arbitrary existing sheet at each step. The shared sheet may be interior in the new path.",
+    "local_pair": "For every naturalD5 pair and any shared sheet, a unique signedQ power|j|<=2 makes the second reflection fix that sheet; fresh-sheet labeling gives the standard rooted pair.",
+    "old_root": "A partial fulltwist on oldcanonicalWr_r, repeated a signedk with|k|<=r, followed by a common relabeling, sends any oldattachment to0 and restores the oldcanonical tuple. Extra cost<=r^2(r-1).",
+    "reachability": "For everyt>=2 all orderedone-vertex naturalD5 lobe trees lie in the canonicalWr_(2t) absolute orbit and have fullA_(4t+1).",
+    "bound": "6656+(t-2)*446265984+sum_{j=2}^{t-1}[(2j)^2(2j-1)+14(2j)-38+2] ordinary signed moves, then common relabeling; O(t^4).",
+    "controller_scope": "The fixedN9/N13controller words are not recovered or replayed. Existing completefinite connectivity proves their existence/bounds; actual controls substitute only those endpoints.",
+    "limits": [
+      "No arbitraryDTtuple or arbitraryDTtree connectivity theorem.",
+      "No several-old-sheet lobe overlap or arbitrary untracked branch interleaving.",
+      "No classification of the original degree16passport or uniform all-tuple Hurwitz problem.",
+      "Quartic cost is coarse; no optimality claim."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/NATURAL_D5_LOBE_TREE_HURWITZ_REACHABILITY.md",
+      "sha256": "cb97ce3f59c9e791a36bd87a82be5ff13239ea952711ff14eab1e67951f614b5",
+      "locator": "Theorem1; Lemmas2-3; induction",
+      "role": "Complete reflection-pair normalization, fulltwist conjugation, future-attachment closure and uniform reachability."
+    },
+    {
+      "path": "research/arithmetic/verify_d5_lobe_tree_reachability.py",
+      "sha256": "34f0787c537a0115837a4f4ecfae1a5485f1738953bc10618d345427f4ee677a",
+      "locator": "local_controls; rotate_old; standardize_pair; full_control",
+      "role": "All600 local shared-sheet cases; exact partialfulltwist signs/all65old-sheet cases;24whole branching/chain constructions with transported future labels."
+    },
+    {
+      "path": "research/arithmetic/d5_lobe_tree_reachability_verification.json",
+      "sha256": "c33832993a8a022e645febf870da6457a440dc1f909708d7965499aabf28af10",
+      "locator": "Actual default execution",
+      "role": "Exact controls, source pins and explicit finite-controller endpoint substitution scope."
+    },
+    {
+      "path": "research/arithmetic/D5_LOBE_BOUNDED_CORE_ABSORPTION.md",
+      "sha256": "e40a12316e4d096776846a050950fb52a6a0141457f5d246266caadfb6fc163f",
+      "locator": "Theorem1 and explicitN9premise in Corollary2",
+      "role": "Root0 one-lobe absorption boundM+14r-38 and complete finite9sheet base normalization."
+    },
+    {
+      "path": "research/arithmetic/verify_d5_lobe_core_absorption.py",
+      "sha256": "ae3a84953a951263f0573794960d0f78c86d177dfc95459a6d5bb28e6410f393",
+      "locator": "prefix_word; CORE_CYCLES; canonical_target; final_word; normalize_star",
+      "role": "Frozen exact noncontroller absorption implementation, imported read-only."
+    },
+    {
+      "path": "research/arithmetic/d5_lobe_core_absorption_verification.json",
+      "sha256": "c30883467a62015edaa0b30a26e5d290db9bcb29a3964d9dbcf775b2afea5018",
+      "locator": "Fixed-controller bounds and endpoint controls",
+      "role": "M446265984 and base6656, with no claimed literal controller recovery."
+    },
+    {
+      "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
+      "sha256": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+      "locator": "Complete N13 theorem and finite-count derivation",
+      "role": "Finite13sheet connectivity import preserved with its assurance boundary."
+    },
+    {
+      "path": "research/arithmetic/degree_fourteen_hurwitz_verification.json",
+      "sha256": "009545e432aee4cf61c877f26b59b2e53c63d5153a8e5c644e1931dc43c14ced",
+      "locator": "CompleteN9/N13cases and independent totals",
+      "role": "N9 count6561 and N13 count446265625; cyclic fulltwist correction to literal paths."
+    },
+    {
+      "path": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
+      "sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+      "locator": "Theorem3 and Corollary4",
+      "role": "CanonicalWr tuple and full alternating group."
+    },
+    {
+      "path": "research/arithmetic/verify_uniform_hurwitz_attachment.py",
+      "sha256": "00f250ed5d1c31ee38ba2279aec32dd877f6fff7e8907f94d87e5af255388bf2",
+      "locator": "hurwitz; conjugate; product; permutation",
+      "role": "Exact ordinary permutation/Hurwitz conventions."
+    },
+    {
+      "path": "research/arithmetic/QUADRATIC_HURWITZ_BOUQUET_DISTANCE.md",
+      "sha256": "d3c68619d26798d0c92f20feb04da235474bb51403462d2d3e732f62af09f436",
+      "locator": "Theorem1",
+      "role": "Context: the included bouquet family already forbids a universal linear ordinary-word bound."
+    }
+  ],
+  "external_sources": [
+    {
+      "author": "GarethA.Jones",
+      "title": "Primitive permutation groups containing a cycle",
+      "path": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "locator": "Theorem1.1",
+      "role": "The first two lobes have transitiveprimitive degree9DT group containing a3cycle, hence fullA9.",
+      "inspected": true
+    }
+  ],
+  "proof_outline": [
+    "Each naturalD5 pair has a five-state Hurwitz orbit of reflections; distinct reflections fix distinct sheets, so any shared vertex can be made the endpoint fixed by the second factor.",
+    "Partial old fulltwists conjugate only the oldprefix by powers of its fullcycle; an inverse global cyclic relabeling restoresWr and moves any chosen attachment to0.",
+    "Fresh relabeling of the new four sheets gives the exact root0absorption domain.",
+    "The established fixed13core theorem returnsWr_(r+2). Unused sheets remain fixed and future overlaps stay one-existing/four-fresh.",
+    "The first two lobes are a fullA9 polynomial tuple; complete finite9sheet connectivity supplies the base.",
+    "Summing r^2(r-1)+2+M+14r-38 over r=2j gives the stated quartic uniform bound."
+  ],
+  "computation": {
+    "command": ".venv/bin/python research/arithmetic/verify_d5_lobe_tree_reachability.py",
+    "arithmetic": "Python standard library and exact permutation arrays; no floating-point tests.",
+    "local_exhaustion": "All120 naturalD5 ordered pairs on5sheets and all5shared-sheet choices:600cases; exact period5 and unique signed normalization.",
+    "root_transport_controls": "Every oldsheet for4<=r<=8:65cases, with both signs of the literal partialfulltwist.",
+    "whole_tree_controls": "Four bouquet/chain/branching patterns at t=2,3,4,5,8,12, including internal shared vertices and arbitrary future attachments;24cases.",
+    "uniformity": "Written reflection/fulltwist identities and construction-preserving induction prove allt. Bounded controls supplement the proof."
+  },
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        "root agent",
+        "separate Hasse agent"
+      ],
+      "scope": "Complete final proof/code audit: exact ordered one-existing/four-fresh naturalD5 class, all600local shared-sheet cases and reflection/path proof, signed old partial fulltwist/root transport, future-incidence preservation, completeN9base and fixedN13controller imports, exact absorption interface, quartic cost sum, all65root and24whole-construction controls, and endpoint-substitution assurance boundary.",
+      "limits": "Internal AI-assisted proof/code audits and actual exact replays, not external human review, independent external replay or formal verification.",
+      "root": {
+        "result": "PASS",
+        "replay_path": ".scratch/root-d5-tree-reachability-replay.json",
+        "replay_sha256": "c33832993a8a022e645febf870da6457a440dc1f909708d7965499aabf28af10",
+        "comparison": "Every canonical receipt field exactly equal, including final note/checker/import/source pins.",
+        "findings": "No correction requested."
+      },
+      "separate_agent": {
+        "result": "PASS",
+        "replay_path": ".scratch/independent_d5_tree_reachability_replay.json",
+        "replay_sha256": "c33832993a8a022e645febf870da6457a440dc1f909708d7965499aabf28af10",
+        "comparison": "Every canonical receipt field exactly equal, including final note/checker/import/source pins.",
+        "findings": "No correction requested."
+      }
+    },
+    "formal_verification": false,
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "priority_assessment": "Not performed."
+  }
+}

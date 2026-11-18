@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "local": {
+    "natural_pairs": 120,
+    "shared_sheet_cases": 600,
+    "signed_power_frequencies": {
+      "2": 120,
+      "1": 120,
+      "-2": 120,
+      "0": 120,
+      "-1": 120
+    }
+  },
+  "old_cycle_rotation_controls": [
+    {
+      "r": 4,
+      "v": 0,
+      "k": 0,
+      "rotation_moves": 0,
+      "local_moves": 1
+    },
+    {
+      "r": 4,
+      "v": 1,
+      "k": -4,
+      "rotation_moves": 48,
+      "local_moves": 0
+    },
+    {
+      "r": 4,
+      "v": 2,
+      "k": 2,
+      "rotation_moves": 24,
+      "local_moves": 1
+    },
+    {
+      "r": 4,
+      "v": 3,
+      "k": -3,
+      "rotation_moves": 36,
+      "local_moves": 2
+    },
+    {
+      "r": 4,
+      "v": 4,
+      "k": 3,
+      "rotation_moves": 36,
+      "local_moves": 2
+    },
+    {
+      "r": 4,
+      "v": 5,
+      "k": -2,
+      "rotation_moves": 24,
+      "local_moves": 1
+    },
+    {
+      "r": 4,
+      "v": 6,
+      "k": 4,
+      "rotation_moves": 48,
+      "local_moves": 0
+    },
+    {
+      "r": 4,
+      "v": 7,
+      "k": -1,
+      "rotation_moves": 12,
+      "local_moves": 1
+    },
+    {
+      "r": 4,
+      "v": 8,
+      "k": 1,
+      "rotation_moves": 12,
+      "local_moves": 2
+    },
+    {
+      "r": 5,
+      "v": 0,
+      "k": 0,
+      "rotation_moves": 0,
+      "local_moves": 0
+    },
+    {
+      "r": 5,
+      "v": 1,
+      "k": -5,
+      "rotation_moves": 100,
+      "local_moves": 1
+    },
+    {
+      "r": 5,
+      "v": 2,
+      "k": 2,
+      "rotation_moves": 40,
+      "local_moves": 2
+    },
+    {
+      "r": 5,
+      "v": 3,
+      "k": -4,
+      "rotation_moves": 80,
+      "local_moves": 2
+    },
+    {
+      "r": 5,
+      "v": 4,
+      "k": 3,
+      "rotation_moves": 60,
+      "local_moves": 1
+    },
+    {
+      "r": 5,
+      "v": 5,
+      "k": -3,
+      "rotation_moves": 60,
+      "local_moves": 0
+    },
+    {
+      "r": 5,
+      "v": 6,
+      "k": 4,
+      "rotation_moves": 80,
+      "local_moves": 1
+    },
+    {
+      "r": 5,
+      "v": 7,
+      "k": -2,
+      "rotation_moves": 40,
+      "local_moves": 2
+    },
+    {
+      "r": 5,
+      "v": 8,
+      "k": 5,
+      "rotation_moves": 100,
+      "local_moves": 2
+    },
+    {
+      "r": 5,
+      "v": 9,
+      "k": -1,
+      "rotation_moves": 20,
+      "local_moves": 1
+    },
+    {
+      "r": 5,
+      "v": 10,
+      "k": 1,
+      "rotation_moves": 20,
+      "local_moves": 0
+    },
+    {
+      "r": 6,
+      "v": 0,
+      "k": 0,
+      "rotation_moves": 0,
+      "local_moves": 1
+    },
+    {
+      "r": 6,
+      "v": 1,
+      "k": -6,
+      "rotation_moves": 180,
+      "local_moves": 2
+    },
+    {
+      "r": 6,
+      "v": 2,
+      "k": 2,
+      "rotation_moves": 60,
+      "local_moves": 2
+    },
+    {
+      "r": 6,
+      "v": 3,
+      "k": -5,
+      "rotation_moves": 150,
+      "local_moves": 1
+    },
+    {
+      "r": 6,
+      "v": 4,
+      "k": 3,
+      "rotation_moves": 90,
+      "local_moves": 0
+    },
+    {
+      "r": 6,
+      "v": 5,
+      "k": -4,
+      "rotation_moves": 120,
+      "local_moves": 1
+    },
+    {
+      "r": 6,
+      "v": 6,
+      "k": 4,
+      "rotation_moves": 120,
+      "local_moves": 2
+    },
+    {
+      "r": 6,
+      "v": 7,
+      "k": -3,
+      "rotation_moves": 90,
+      "local_moves": 2
+    },
+    {
+      "r": 6,
+      "v": 8,
+      "k": 5,
+      "rotation_moves": 150,
+      "local_moves": 1
+    },
+    {
+      "r": 6,
+      "v": 9,
+      "k": -2,
+      "rotation_moves": 60,
+      "local_moves": 0
+    },
+    {
+      "r": 6,
+      "v": 10,
+      "k": 6,
+      "rotation_moves": 180,
+      "local_moves": 1
+    },
+    {
+      "r": 6,
+      "v": 11,
+      "k": -1,
+      "rotation_moves": 30,
+      "local_moves": 2
+    },
+    {
+      "r": 6,
+      "v": 12,
+      "k": 1,
+      "rotation_moves": 30,
+      "local_moves": 2
+    },
+    {
+      "r": 7,
+      "v": 0,
+      "k": 0,
+      "rotation_moves": 0,
+      "local_moves": 2
+    },
+    {
+      "r": 7,
+      "v": 1,
+      "k": -7,
+      "rotation_moves": 294,
+      "local_moves": 2
+    },
+    {
+      "r": 7,
+      "v": 2,
+      "k": 2,
+      "rotation_moves": 84,
+      "local_moves": 1
+    },
+    {
+      "r": 7,
+      "v": 3,
+      "k": -6,
+      "rotation_moves": 252,
+      "local_moves": 0
+    },
+    {
+      "r": 7,
+      "v": 4,
+      "k": 3,
+      "rotation_moves": 126,
+      "local_moves": 1
+    },
+    {
+      "r": 7,
+      "v": 5,
+      "k": -5,
+      "rotation_moves": 210,
+      "local_moves": 2
+    },
+    {
+      "r": 7,
+      "v": 6,
+      "k": 4,
+      "rotation_moves": 168,
+      "local_moves": 2
+    },
+    {
+      "r": 7,
+      "v": 7,
+      "k": -4,
+      "rotation_moves": 168,
+      "local_moves": 1
+    },
+    {
+      "r": 7,
+      "v": 8,
+      "k": 5,
+      "rotation_moves": 210,
+      "local_moves": 0
+    },
+    {
+      "r": 7,
+      "v": 9,
+      "k": -3,
+      "rotation_moves": 126,
+      "local_moves": 1
+    },
+    {
+      "r": 7,
+      "v": 10,
+      "k": 6,
+      "rotation_moves": 252,
+      "local_moves": 2
+    },
+    {
+      "r": 7,
+      "v": 11,
+      "k": -2,
+      "rotation_moves": 84,
+      "local_moves": 2
+    },
+    {
+      "r": 7,
+      "v": 12,
+      "k": 7,
+      "rotation_moves": 294,
+      "local_moves": 1
+    },
+    {
+      "r": 7,
+      "v": 13,
+      "k": -1,
+      "rotation_moves": 42,
+      "local_moves": 0
+    },
+    {
+      "r": 7,
+      "v": 14,
+      "k": 1,
+      "rotation_moves": 42,
+      "local_moves": 1
+    },
+    {
+      "r": 8,
+      "v": 0,
+      "k": 0,
+      "rotation_moves": 0,
+      "local_moves": 2
+    },
+    {
+      "r": 8,
+      "v": 1,
+      "k": -8,
+      "rotation_moves": 448,
+      "local_moves": 1
+    },
+    {
+      "r": 8,
+      "v": 2,
+      "k": 2,
+      "rotation_moves": 112,
+      "local_moves": 0
+    },
+    {
+      "r": 8,
+      "v": 3,
+      "k": -7,
+      "rotation_moves": 392,
+      "local_moves": 1
+    },
+    {
+      "r": 8,
+      "v": 4,
+      "k": 3,
+      "rotation_moves": 168,
+      "local_moves": 2
+    },
+    {
+      "r": 8,
+      "v": 5,
+      "k": -6,
+      "rotation_moves": 336,
+      "local_moves": 2
+    },
+    {
+      "r": 8,
+      "v": 6,
+      "k": 4,
+      "rotation_moves": 224,
+      "local_moves": 1
+    },
+    {
+      "r": 8,
+      "v": 7,
+      "k": -5,
+      "rotation_moves": 280,
+      "local_moves": 0
+    },
+    {
+      "r": 8,
+      "v": 8,
+      "k": 5,
+      "rotation_moves": 280,
+      "local_moves": 1
+    },
+    {
+      "r": 8,
+      "v": 9,
+      "k": -4,
+      "rotation_moves": 224,
+      "local_moves": 2
+    },
+    {
+      "r": 8,
+      "v": 10,
+      "k": 6,
+      "rotation_moves": 336,
+      "local_moves": 2
+    },
+    {
+      "r": 8,
+      "v": 11,
+      "k": -3,
+      "rotation_moves": 168,
+      "local_moves": 1
+    },
+    {
+      "r": 8,
+      "v": 12,
+      "k": 7,
+      "rotation_moves": 392,
+      "local_moves": 0
+    },
+    {
+      "r": 8,
+      "v": 13,
+      "k": -2,
+      "rotation_moves": 112,
+      "local_moves": 1
+    },
+    {
+      "r": 8,
+      "v": 14,
+      "k": 8,
+      "rotation_moves": 448,
+      "local_moves": 2
+    },
+    {
+      "r": 8,
+      "v": 15,
+      "k": -1,
+      "rotation_moves": 56,
+      "local_moves": 2
+    },
+    {
+      "r": 8,
+      "v": 16,
+      "k": 1,
+      "rotation_moves": 56,
+      "local_moves": 1
+    }
+  ],
+  "tree_controls": [
+    {
+      "lobes": 2,
+      "mode": 0,
+      "noncontroller_moves_replayed": 0,
+      "noncontroller_upper_bound": 0,
+      "local_pair_normalization_moves": 0,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 2,
+      "mode": 1,
+      "noncontroller_moves_replayed": 0,
+      "noncontroller_upper_bound": 0,
+      "local_pair_normalization_moves": 0,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 2,
+      "mode": 2,
+      "noncontroller_moves_replayed": 0,
+      "noncontroller_upper_bound": 0,
+      "local_pair_normalization_moves": 0,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 2,
+      "mode": 3,
+      "noncontroller_moves_replayed": 0,
+      "noncontroller_upper_bound": 0,
+      "local_pair_normalization_moves": 0,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 3,
+      "mode": 0,
+      "noncontroller_moves_replayed": 19,
+      "noncontroller_upper_bound": 68,
+      "local_pair_normalization_moves": 1,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 3,
+      "mode": 1,
+      "noncontroller_moves_replayed": 54,
+      "noncontroller_upper_bound": 68,
+      "local_pair_normalization_moves": 0,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 3,
+      "mode": 2,
+      "noncontroller_moves_replayed": 55,
+      "noncontroller_upper_bound": 68,
+      "local_pair_normalization_moves": 1,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 3,
+      "mode": 3,
+      "noncontroller_moves_replayed": 32,
+      "noncontroller_upper_bound": 68,
+      "local_pair_normalization_moves": 2,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 4,
+      "mode": 0,
+      "noncontroller_moves_replayed": 66,
+      "noncontroller_upper_bound": 296,
+      "local_pair_normalization_moves": 2,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 4,
+      "mode": 1,
+      "noncontroller_moves_replayed": 192,
+      "noncontroller_upper_bound": 296,
+      "local_pair_normalization_moves": 2,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 4,
+      "mode": 2,
+      "noncontroller_moves_replayed": 163,
+      "noncontroller_upper_bound": 296,
+      "local_pair_normalization_moves": 3,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 4,
+      "mode": 3,
+      "noncontroller_moves_replayed": 199,
+      "noncontroller_upper_bound": 296,
+      "local_pair_normalization_moves": 3,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 5,
+      "mode": 0,
+      "noncontroller_moves_replayed": 142,
+      "noncontroller_upper_bound": 820,
+      "local_pair_normalization_moves": 4,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 5,
+      "mode": 1,
+      "noncontroller_moves_replayed": 435,
+      "noncontroller_upper_bound": 820,
+      "local_pair_normalization_moves": 3,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 5,
+      "mode": 2,
+      "noncontroller_moves_replayed": 461,
+      "noncontroller_upper_bound": 820,
+      "local_pair_normalization_moves": 3,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 5,
+      "mode": 3,
+      "noncontroller_moves_replayed": 610,
+      "noncontroller_upper_bound": 820,
+      "local_pair_normalization_moves": 4,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 8,
+      "mode": 0,
+      "noncontroller_moves_replayed": 535,
+      "noncontroller_upper_bound": 6248,
+      "local_pair_normalization_moves": 7,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 8,
+      "mode": 1,
+      "noncontroller_moves_replayed": 2040,
+      "noncontroller_upper_bound": 6248,
+      "local_pair_normalization_moves": 6,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 8,
+      "mode": 2,
+      "noncontroller_moves_replayed": 2465,
+      "noncontroller_upper_bound": 6248,
+      "local_pair_normalization_moves": 7,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 8,
+      "mode": 3,
+      "noncontroller_moves_replayed": 3786,
+      "noncontroller_upper_bound": 6248,
+      "local_pair_normalization_moves": 8,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 12,
+      "mode": 0,
+      "noncontroller_moves_replayed": 1452,
+      "noncontroller_upper_bound": 34280,
+      "local_pair_normalization_moves": 12,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 12,
+      "mode": 1,
+      "noncontroller_moves_replayed": 7122,
+      "noncontroller_upper_bound": 34280,
+      "local_pair_normalization_moves": 12,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 12,
+      "mode": 2,
+      "noncontroller_moves_replayed": 18838,
+      "noncontroller_upper_bound": 34280,
+      "local_pair_normalization_moves": 12,
+      "canonical_endpoint": true
+    },
+    {
+      "lobes": 12,
+      "mode": 3,
+      "noncontroller_moves_replayed": 25678,
+      "noncontroller_upper_bound": 34280,
+      "local_pair_normalization_moves": 12,
+      "canonical_endpoint": true
+    }
+  ],
+  "uniform_bound": "6656+(t-2)*446265984+sum_{j=2}^{t-1}[(2j)^2(2j-1)+14(2j)-38+2]",
+  "source_sha256": {
+    "research/arithmetic/verify_d5_lobe_tree_reachability.py": "34f0787c537a0115837a4f4ecfae1a5485f1738953bc10618d345427f4ee677a",
+    "research/arithmetic/NATURAL_D5_LOBE_TREE_HURWITZ_REACHABILITY.md": "cb97ce3f59c9e791a36bd87a82be5ff13239ea952711ff14eab1e67951f614b5",
+    "research/arithmetic/verify_uniform_hurwitz_attachment.py": "00f250ed5d1c31ee38ba2279aec32dd877f6fff7e8907f94d87e5af255388bf2",
+    "research/arithmetic/verify_d5_lobe_core_absorption.py": "ae3a84953a951263f0573794960d0f78c86d177dfc95459a6d5bb28e6410f393",
+    "research/arithmetic/D5_LOBE_BOUNDED_CORE_ABSORPTION.md": "e40a12316e4d096776846a050950fb52a6a0141457f5d246266caadfb6fc163f",
+    "research/arithmetic/d5_lobe_core_absorption_verification.json": "c30883467a62015edaa0b30a26e5d290db9bcb29a3964d9dbcf775b2afea5018",
+    "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+    "research/arithmetic/degree_fourteen_hurwitz_verification.json": "009545e432aee4cf61c877f26b59b2e53c63d5153a8e5c644e1931dc43c14ced",
+    "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+    "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57"
+  },
+  "scope": "Ordered one-vertex naturalD5 pair trees only, with arbitrary existing attachment and arbitrary shared vertex inside the new lobe. Fixed-controller endpoints are substituted, not unrecovered literal words replayed. Uniform reachability uses the written proof. No all-DT connectivity, n16 classification or arbitrary pair-attachment theorem.",
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}

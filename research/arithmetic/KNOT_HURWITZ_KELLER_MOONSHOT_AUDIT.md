@@ -22,7 +22,7 @@ historical priority claim.
 | --- | --- | --- |
 | Prime augmentation gaps | Unbounded bridge number | Proved for every sufficiently large bridge number, with explicit families and non-effective thresholds; direct prime-family certificates also hold at bridge five and six. |
 | Rational square pencils | Degree 26 | The reciprocal ansatz is excluded over Q. The complete affine-trace slice lies on an explicit curve of genus at least 1051, so its normalized rational models form a finite set; their existence remains undecided. A good number-field point of degree at most twelve is certified. Normalized rational even-numerator degree-ten models also form a finite set. General rational degree-26 existence remains open. |
-| Hurwitz classification | Degree fourteen | One absolute full-A14 orbit. Imprimitive leaf deletion has a uniform normal form, and specified coalesced bases have full symmetric or alternating attachment holonomy with one Klein-four exception. Degree sixteen and arbitrary-tuple uniform connectivity remain open. |
+| Hurwitz classification | Degree fourteen and an infinite D5-lobe family | One absolute full-A14 orbit. Ordered one-vertex D5 lobe trees reach the canonical wreath-leaf form in at most quartic cost. The distance grows quadratically for the common-root bouquets. Imprimitive leaf deletion and specified coalesced attachment holonomy are classified. Degree sixteen and arbitrary-tuple uniform connectivity remain open. |
 | One fixed Keller map | Every admissible degree | One fixed rational A3 map for each degree m^2+1, odd m>=3, has infinitely many complete A_n field fibres. The paired degree-ten pencil also has its own fixed map. |
 | Generic alternating Keller group | All even natural actions n>=6; the smallest plane case A4 | Polynomial A3 realizations in all even degrees; regular arithmetic A_(m^2+1) over Q(sqrt(-3)). Every plane A4 action is excluded. General plane realization or exclusion remains open. |
 | Hasse algebras | Uniform admissible degrees | A different concentrated-inertia cover gives minimum-rank-2^(n-2) Hasse families and one fixed A4 map per degree. Numerical optimality follows from Maroti's prior covering theorem; the optimal subgroup family is classified uniformly. The original double-transposition pencil retains its rank-256 density obstruction after every solvable rational base change. |
@@ -138,9 +138,10 @@ leaf edges. The [unmarked polynomial reduction](UNMARKED_POLYNOMIAL_HURWITZ_REDU
 then removes the marking condition itself. An explicit full-A_(2r+1)
 tuple has a literal cyclic braid stabilizer transitive on its branch
 labels, while the other polynomial passport has a unique 3-cycle value.
-Thus two unmarked polynomial-cactus connectivity assertions suffice for
-the all-degree original passport. Neither remaining assertion is proved
-uniformly; degree sixteen remains the next complex case.
+For each remaining original degree n=2r+2≥16, it suffices to prove both
+unmarked polynomial connectivity assertions on 2r+1 sheets. Marked
+and unmarked connectivity are equivalent for each polynomial space.
+This gives a sufficient criterion for the original passport.
 
 The [overlap and leaf-extraction theorem](PAIRED_HURWITZ_LEAF_EXTRACTION.md)
 now applies to arbitrary full-alternating polynomial DT input: every such
@@ -169,10 +170,10 @@ a lifted transposition-star braid and a root adjustment normalize the
 entire tuple, including all attachments, while retaining the chosen leaf.
 For fixed product and leaf, every such input reaches the same literal
 endpoint. Its r-2 removable factors give an exact recursion with full
-alternating cores down to degree seven. Thus the whole imprimitive case
-is closed. Reaching this locus from a tuple with only symmetric deletions
-is the remaining gate for the pure-DT polynomial problem. The separate
-mixed 3-cycle polynomial problem in the uniform reduction remains open.
+alternating cores down to degree seven. For the residual pure-DT problem
+with r≥7, transitivity is equivalent to every orbit having a representative
+with an imprimitive chosen-leaf deletion. Each such representative reaches
+the same normal form. The residual mixed 3-cycle problem also remains open.
 
 The [full coalesced holonomy theorem](FULL_COALESCED_ATTACHMENT_HOLONOMY.md)
 classifies the attachment action of the specified polynomial bases.
@@ -195,6 +196,42 @@ does not remove the growing bound. This also rules out repairs confined
 to a bounded set of original factor colors, even with unlimited internal
 braids. It permits a rule propagating through linearly many factors and
 does not distinguish unrestricted Hurwitz components.
+
+The [root-preserving absorption theorem](D5_LOBE_BOUNDED_CORE_ABSORPTION.md)
+now closes this reachability question for the entire unbuffered D5 bouquet
+family. Two sweeps isolate one fixed thirteen-sheet core; a finite
+connectivity theorem and a final slide restore the canonical wreath star
+while retaining the common root. The construction can therefore absorb
+every successive lobe. The finite controller words are proved to exist
+with explicit length bounds; their literal words have not been recovered.
+
+The [quadratic-distance theorem](QUADRATIC_HURWITZ_BOUQUET_DISTANCE.md)
+gives matching asymptotic bounds. For a bouquet with t lobes and 2t factors,
+let d_t be the least ordinary signed adjacent Hurwitz word length reaching
+any wreath leaf, allowing common sheet relabelings for free. Then
+
+\[
+ \left\lceil\frac{(2t-1)\max(0,2\lceil t/2\rceil-3)}8\right\rceil
+ \le d_t\le
+ 6656+(t-2)\,446265984+14t^2-52t+48.
+\]
+
+In particular d_t=Theta(t^2). Each move enlarges the total historical
+support span of all sheets by at most eight. Every endpoint block has
+two jointly occurring sheets whose original lobe positions are far apart;
+these disjoint pairs force quadratic total growth. Thus the whole family
+lies in one known orbit, but a linear adjacent-word normalization algorithm
+is impossible. Arbitrary polynomial tuples, the buffered variant and
+degree-sixteen connectivity remain separate questions.
+
+The [ordered one-vertex lobe-tree theorem](NATURAL_D5_LOBE_TREE_HURWITZ_REACHABILITY.md)
+allows each adjacent natural D5 pair to attach at any one old sheet and
+to share any vertex of its own path. A full twist on the old prefix
+moves that sheet to the canonical root, and at most two moves root the
+new pair before bounded-core absorption. For t >= 2, all these tuples
+lie in the absolute orbit of W_(2t) with full group A_(4t+1). The
+general upper bound is O(t^4). The bouquet subfamily gives a
+quadratic worst-case lower bound for the larger class.
 
 The [reciprocal ODE theorem](PAIRED_CRITICAL_RECIPROCAL_OBSTRUCTION.md)
 classifies the direct extension of the degree-ten reciprocal construction.
@@ -295,6 +332,28 @@ have A26 monodromy over their independent parameter w. The finiteness
 theorem allows infinitely many w-specializations of any rational cover
 that is eventually found. Non-affine canonical trace remains outside
 this arithmetic restriction.
+
+The [small-prime branch theorem](Q26_SMALL_PRIME_LOCAL_BRANCHES.md)
+rules out local obstruction at two, three and the real place.
+Its integral infinity charts are G(X,2V) and 3^18G(X/9,9V), both reducing
+to X^11(X+1) at their respective primes. Simple roots give infinitely
+many good local models, including nonintegral three-adic parameters.
+Two simple real infinity roots also give good real coefficient models.
+This supplies neither a rational point nor an all-real critical-point
+model. Solubility at every prime remains undetermined.
+
+The [local companion through prime 29](Q26_LOCAL_SOLUBILITY_THROUGH_PRIME_TWENTY_NINE.md)
+extends these necessary-condition tests to every prime at most 29.
+The direct identity
+\[
+ 5^{-40}F(1056+1200X,238)\equiv3X+4X^2\pmod5
+\]
+has two simple roots. Replacing 238 by 238+5^41V preserves the entire
+reduction for every V in Z5, giving two families with infinitely many
+good models. Six nonsingular affine residues handle the other new primes.
+Thus none of the tested places obstructs the rational affine-trace
+problem. Rational nonemptiness and local solubility at larger primes
+remain undecided.
 
 The [balanced rational quotient](BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md)
 processes all quadratic descents in one scheme over Q. For every balanced

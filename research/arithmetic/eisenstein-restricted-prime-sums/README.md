@@ -20,6 +20,7 @@ scope; it is not a new calculation or an assurance upgrade.
 - [Semigroup-scale density one](../PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md).
 - [Binary variance and the remaining thin-window energy problem](../PRESCRIBED_PRIME_BINARY_VARIANCE.md).
 - [Quantitative full-count variance in power windows](../PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md).
+- [Eisenstein Hecke transfer audit](../EISENSTEIN_HECKE_TRANSFER_AUDIT.md).
 - [Power-saving exceptions for the modulus-12 semigroup lower count](../PRESCRIBED_PRIME_POWER_SAVING_EXCEPTIONS.md).
 - [Simultaneous Gaussian--Eisenstein case study](../SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md).
 - [Every-target weighted asymmetric Gaussian--Eisenstein sums](../ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md).
@@ -28,6 +29,9 @@ scope; it is not a new calculation or an assurance upgrade.
 - [Asymmetric theory for every fixed modulus and quadratic character](../ASYMMETRIC_FIXED_MODULUS_THEORY.md).
 - [Abelian subgroup splitting with nonnested allowed sets](../ASYMMETRIC_SUBGROUP_SPLITTING.md).
 - [Exact sign transfer and its periodic-replacement obstruction](../ASYMMETRIC_SIGN_TRANSFER.md).
+- [Cofactor drift and two-large-prime bounds in the unweighted mixed sieve](../COUPLED_GAUSSIAN_EISENSTEIN_SIEVE.md).
+- [Well-factorability obstructions and the exact large-prime Rosser switch](../ASYMMETRIC_WELL_FACTORABLE_SWITCH.md).
+- [The positive single-index operator information barrier](../EISENSTEIN_SINGLE_INDEX_OPERATOR_BARRIER.md).
 - [Averaging auxiliary coefficients and a positive distribution level](../ASYMMETRIC_AUXILIARY_AVERAGE.md).
 - [Half-dimensional criterion for two modulus-12 summands](../ASYMMETRIC_SEMILINEAR_SIEVE.md).
 - [Critical-level switching and the two-large-prime bound](../ASYMMETRIC_CRITICAL_SWITCHING.md).
@@ -109,7 +113,7 @@ marginals outside one power-sized exceptional set, including arbitrary target
 valuations and full moving balance intervals. Its fully sifted weighted
 proportion has an exact target-dependent Euler product. The all-target
 versions and every-target binary coverage remain open. The full semigroup variance is now proved for every fixed modulus
-and `9/10 < theta < 1`, including the original `.99` energy target. Every-target
+and `5/6 < theta < 1`, including the original `.99` energy target. Every-target
 counts and power-saving full-count variance remain open. The separate
 modulus-12 lower-count theorem now gives `H/(log X)^(3/2)` pairs outside
 `O(X^(1-10^(-6)))` compatible targets for `H=X^(99/100)`. The general note records the
@@ -194,6 +198,20 @@ invalid-input checks under `python3 -O`. Some supplied diagnostics use
 rational inequalities only. The harmonic-theta argument linking that weight
 to eventual balance is in the current angular note.
 
+The unweighted mixed sieve has half-dimensional local density, but its bare
+Haar main fails at every positive power level through cofactor density
+drift. Its unconditional two-large-prime bound leaves a sifted lower bound
+open. This is distinct from the correct tau-weighted R2 model. Pure
+well-factorable lower weights cannot reproduce the critical Rosser sieve;
+the exact large-prime switch leaves a global remainder to estimate.
+
+For Eisenstein windows, a continuous single-index operator can preserve
+nonnegative functions and all finite prime-to-index coset means while
+avoiding a central band on the two-thirds scale. It is not positive
+semidefinite, an arithmetic shell or a multiplicative Hecke family. No
+arithmetic exponent or every-target modulus-12 conclusion follows from
+these obstruction results.
+
 ## Exact finite controls for the new analytic arguments
 
 From this directory, the portable diagnostics print their results by
@@ -209,6 +227,8 @@ python3 verify_asymmetric_auxiliary_average.py
 python3 verify_fixed_modulus_asymmetric.py
 python3 verify_subgroup_asymmetric.py
 python3 verify_asymmetric_sign_transfer.py
+python3 verify_coupled_gaussian_eisenstein_sieve.py
+python3 verify_asymmetric_well_factorable_switch.py
 ```
 
 The retained receipts are [joint coset controls](joint_coset_distribution_checks.json)
@@ -219,7 +239,9 @@ with [uniform-family controls](asymmetric_uniform_checks.json) and
 [auxiliary-average controls](asymmetric_auxiliary_average_checks.json), and
 [fixed-modulus controls](fixed_modulus_asymmetric_checks.json),
 [subgroup controls](subgroup_asymmetric_checks.json), and
-[sign-transfer controls](asymmetric_sign_transfer_checks.json). All commands reject
+[sign-transfer controls](asymmetric_sign_transfer_checks.json),
+[coupled-sieve controls](coupled_gaussian_eisenstein_sieve_checks.json), and
+[well-factorability controls](asymmetric_well_factorable_switch_checks.json). All commands reject
 Python `-O`, because their exact finite assertions must run.
 The first checks the asymmetric singular recurrences, 240 scalar identities,
 and every invertible matrix modulo 49, with wrong-coefficient controls. The
@@ -248,7 +270,12 @@ odd index, 144 local integrals at 3, 5 and 7, and recoverable directives on
 the recorded finite ranges. The sign-transfer checker covers finite
 convolutions, exact signs, Rosser support and least-squares projection
 identities. These diagnostics do not establish asymptotic means or the
-critical remainder.
+critical remainder. The coupled-sieve receipt contains 11,534 finite exact
+controls for coefficient identities, residues, parity, content and local
+factors. The well-factorability receipt contains 2,145 finite controls,
+including 1,426 exact large-prime switch cases. The operator barrier is
+analytic and has no finite checker. These receipts support only their
+stated finite ranges, not the unrestricted analytic conclusions.
 
 ## Java and assurance limits
 

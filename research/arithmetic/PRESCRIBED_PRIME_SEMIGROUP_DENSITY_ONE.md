@@ -283,13 +283,13 @@ mean-square estimate bounds their number by
 Taking \(B\) sufficiently large in terms of \(A\) proves (D).
 
 The separate [power-window variance proof VqPower](PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md)
-now gives a full-count asymptotic for \(9/10<\theta<1\). The cofactor
+now gives a full-count asymptotic for \(5/6<\theta<1\). The cofactor
 argument here supplies a lower bound over the wider range \(\theta>1/3\),
 with stronger logarithmic exception estimates, and does not itself determine
 the full count. The separate [D12Power proof](PRESCRIBED_PRIME_POWER_SAVING_EXCEPTIONS.md)
 strengthens the exceptional count to \(O(X^{1-10^{-6}})\) for the lower
 bound at \(q=12,H=X^{99/100}\), using a bounded weighted rough kernel.
-Variance for \(0<\theta\le9/10\) and a lower bound for
+Variance for \(0<\theta\le5/6\) and a lower bound for
 every sufficiently large compatible target remain open. Historical priority
 for (D) has not been established. The fixed-shape variance and the broader
 binary conjecture are recorded in the companion notes.
